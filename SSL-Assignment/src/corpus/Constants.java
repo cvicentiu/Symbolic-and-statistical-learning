@@ -7,6 +7,6 @@ public interface Constants {
 	public static final String RAW_FOLDER = "raw/";
 	
 	
-	public static boolean DEBUG = true;
+	public static boolean DEBUG = false;
 	public static boolean DEBUG_DEEP = false;
 }
