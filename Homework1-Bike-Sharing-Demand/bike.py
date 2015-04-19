@@ -34,6 +34,7 @@ def transform_row(row):
   date = datetime.strptime(row[0], '%Y-%m-%d %H:%M:%S')
   result.append(date.year)
   result.append(date.day)
+#  result.append(date.month)
   result.append(date.hour)
   for i in range(1, len(row)):
     result.append(float(row[i]))
