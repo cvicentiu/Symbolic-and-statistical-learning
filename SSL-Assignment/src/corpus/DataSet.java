@@ -7,10 +7,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DataSet {
-	public List<PersonSearch> searchResults;
+	public List<PersonSearch> searches;
 	
 	public DataSet() {
-		searchResults = new ArrayList<>();
+		searches = new ArrayList<>();
 	}
 	
 	public int readPersonSearches(String path) throws IOException {
@@ -34,7 +34,7 @@ public class DataSet {
 			PersonSearch ps = new PersonSearch(personName);
 			ps.readSearchResults(path);
 			ps.readTrueClustering(path);
-			searchResults.add(ps);
+			searches.add(ps);
 		}
 		
 		
