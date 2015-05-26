@@ -3,6 +3,7 @@ import math
 import numpy
 from numpy.linalg import norm
 from scipy.spatial.distance import pdist
+import scipy
 from numpy import clip
 
 class TokenFeatureSet:
@@ -32,49 +33,64 @@ class TokenFeatureSet:
     return tokens_dict
 
 
-def get_all_words_frequencies(parsed_documents):
-  freq = {}
-  for document in parsed_documents:
-    for word in document.words:
-      freq[word] = freq.get(word, 0) + 1
-  return freq
-
-def get_all_query_words_frequencies(token_feature_sets):
-  freq = {}
-  for tfs in token_feature_sets:
-    doc_freq = tfs.queryname_tokens
-    for k in doc_freq.keys():
-      freq[k] = freq.get(k, 0) + doc_freq[k]
-  return freq
-
 
 class PersonSearchFeatures:
   def __init__(self, person_search):
     self.person_search = person_search
     self.parsed_docs = []
     self.token_feature_sets = []
+    # Go through all documents for that person search
     for d in person_search.documents:
+      # Parse them to obtain the useful information
       self.parsed_docs.append(corpus.ParsedDocument(d))
+      # Obtain the feature sets based on tokens for that particular document.
       self.token_feature_sets.append(TokenFeatureSet(person_search.name, self.parsed_docs[-1]))
-    self.all_words = get_all_words_frequencies(self.parsed_docs)
-    self.all_query_words = get_all_query_words_frequencies(self.token_feature_sets)
-    self.feature_vector = sorted(self.all_query_words.keys())
 
+    self.all_words = PersonSearchFeatures.get_all_words_frequencies(self.parsed_docs)
+    self.all_query_words = PersonSearchFeatures.get_all_query_words_frequencies(self.token_feature_sets)
+    self.features = sorted(self.all_query_words.keys())
+
+    #print self.features
+    #print '----'
+    self.clean_features()
+    #print self.features
+    #print '----'
+
+    #exit(1)
+    # Clean up the feature vector
+
+    # One row within the matrix represents the features describing the document.
     self.feature_matrix = []
     for i in range(len(self.token_feature_sets)):
       self.feature_matrix.append(self.compute_feature_vector(i))
-#    self.distance_matrix = pdist(self.feature_matrix, 'correlation'), 1)
 
-    self.distance_matrix = []
-    for i in range(len(self.token_feature_sets)):
-      row = []
-      for j in range(len(self.token_feature_sets)):
-        row.append(1 - self.compute_similarity(i, j))
-      self.distance_matrix.append(row)
+    self.distance_matrix = pdist(numpy.array(self.feature_matrix), 'correlation')
+    self.distance_matrix = scipy.spatial.distance.squareform(self.distance_matrix)
+    self.distance_matrix = numpy.nan_to_num(self.distance_matrix)
+
+
+  @staticmethod
+  def get_all_words_frequencies(parsed_documents):
+    freq = {}
+    for document in parsed_documents:
+      for word in document.words:
+        freq[word] = freq.get(word, 0) + 1
+    return freq
+
+
+  @staticmethod
+  def get_all_query_words_frequencies(token_feature_sets):
+    freq = {}
+    for tfs in token_feature_sets:
+      doc_freq = tfs.queryname_tokens
+      for k in doc_freq.keys():
+        freq[k] = freq.get(k, 0) + doc_freq[k]
+    return freq
+
 
   def compute_feature_vector(self, doc_idx):
     result = []
-    for word in self.feature_vector:
+    for word in self.features:
       query_dict = self.token_feature_sets[doc_idx].queryname_tokens
       tf = query_dict.get(word, 0)
       n_docs = len(self.token_feature_sets)
@@ -86,25 +102,18 @@ class PersonSearchFeatures:
       result.append(tf * idf)
     return result
 
-  def compute_similarity(self, p1, p2):
-    if p1 == p2:
-      return 1
-    v1 = self.feature_matrix[p1]
-    v2 = self.feature_matrix[p2]
-#    numpy.seterr(all='call')
-#    numpy.seterrcall(f1)
-#    prod = 0
-#    for i in range(len(v1)):
-#      prod += v1[i] * v2[i]
-#    if (math.isnan(n)):
-#      return 0
-#    if (math.isnan(prod)
-    dot = numpy.dot(v1, v2)
-    n = norm(v1) * norm(v2)
-    if math.isnan(dot):
-      return 0
-    result = dot / n
-    if math.isnan(result):
-      return 0
-    return result
+  def clean_features(self):
+    new_features = []
+    FORBIDDEN_CHARS=['/', 'www', '-', '%']
+    for i in xrange(len(self.features)):
+      if len(self.features[i]) < 3:
+        continue
+      found = False
+      for seq in FORBIDDEN_CHARS:
+        if seq in self.features[i]:
+          found = True
+          break
+      if not found:
+        new_features.append(self.features[i])
 
+    self.features = new_features

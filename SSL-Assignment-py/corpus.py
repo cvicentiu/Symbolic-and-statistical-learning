@@ -37,9 +37,13 @@ class ParsedDocument(Document):
 #    st = PorterStemmer()
     s_words = set(stopwords.words('english'))
     for i in range(len(self.paragraphs)):
-      self.paragraphs[i] = self.paragraphs[i].replace('\n', " ")
-      self.paragraphs[i] = self.paragraphs[i].replace('\r', " ")
-      self.paragraphs[i] = self.paragraphs[i].replace('\t', " ")
+      self.paragraphs[i] = self.paragraphs[i].replace(u'\u201c', '')
+      self.paragraphs[i] = self.paragraphs[i].replace(u'\u201d', '')
+      self.paragraphs[i] = self.paragraphs[i].replace('*', '')
+      self.paragraphs[i] = self.paragraphs[i].replace('\'', '')
+      self.paragraphs[i] = self.paragraphs[i].replace('\n', ' ')
+      self.paragraphs[i] = self.paragraphs[i].replace('\r', ' ')
+      self.paragraphs[i] = self.paragraphs[i].replace('\t', ' ')
       self.paragraphs[i] = ' '.join(self.paragraphs[i].split())
       self.paragraphs[i] = nltk.sent_tokenize(self.paragraphs[i])
       for j in range(len(self.paragraphs[i])):
@@ -54,6 +58,7 @@ class ParsedDocument(Document):
 #          stemmed_words.append(st.stem(word))
 
 
+        # Remove stop words
         filtered_words = [w for w in words if not w.lower() in s_words]
         self.paragraphs[i][j] = filtered_words
 
@@ -100,7 +105,7 @@ class Corpus:
     self.path = path
 
   def read_person_searches(self):
-    person_names = get_person_names(self.path)
+    person_names = Corpus.get_person_names(self.path)
     for name in person_names:
       if "." in name:
         continue
@@ -108,10 +113,11 @@ class Corpus:
       ps.read_person_search_results()
       self.person_searches.append(ps)
 
-def get_person_names(path):
-  description_files_path = path + '/' + Corpus.DESCRIPTION_FILES + '/'
-  desc_files = os.listdir(description_files_path)
-  names = []
-  for f in desc_files:
-    names.append(f[:-4].replace('_', ' '))
-  return names
+  @staticmethod
+  def get_person_names(path):
+    description_files_path = path + '/' + Corpus.DESCRIPTION_FILES + '/'
+    desc_files = os.listdir(description_files_path)
+    names = []
+    for f in desc_files:
+      names.append(f[:-4].replace('_', ' '))
+    return names
