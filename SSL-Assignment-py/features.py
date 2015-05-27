@@ -106,7 +106,9 @@ class PersonSearchFeatures:
     new_features = []
     FORBIDDEN_CHARS=['/', 'www', '-', '%']
     for i in xrange(len(self.features)):
-      if len(self.features[i]) < 3:
+      if self.all_words[self.features[i]] < 3:
+        continue
+      if len(self.features[i]) < 5:
         continue
       found = False
       for seq in FORBIDDEN_CHARS:

@@ -7,16 +7,26 @@ from tester import Tester
 from scipy.cluster.hierarchy import linkage, dendrogram
 from scipy.cluster.hierarchy import fcluster
 from matplotlib import pylab
+from attributes import Attributes
 import matplotlib.pyplot as plt
 
+from nltk.tag.stanford import NERTagger
 
 TRAINING_DATA_PATH = os.path.dirname(os.path.abspath(__file__)) + \
-                        '/weps2007_data_1.1/training/'
+                        '/weps2007_data_1.1/training2/'
+
+NER_CLASSIFIER = os.path.dirname(os.path.abspath(__file__)) + \
+                        '/stanford-ner-2015-04-20/classifiers/english.all.3class.distsim.crf.ser.gz'
+NER_JAR = os.path.dirname(os.path.abspath(__file__)) + \
+                        '/stanford-ner-2015-04-20/stanford-ner.jar'
+
 
 corpus = Corpus(TRAINING_DATA_PATH)
 corpus.read_person_searches()
 
 t = Tester(TRAINING_DATA_PATH)
+
+classifier = NERTagger(NER_CLASSIFIER, NER_JAR)
 
 results = [0, 0]
 results2 = [0, 0]
@@ -48,6 +58,7 @@ for ps in corpus.person_searches:
   clusters = []
   for v in clusters_dict.values():
     clusters.append(v)
+    attr = Attributes(ps, v, classifier)
 
 
 

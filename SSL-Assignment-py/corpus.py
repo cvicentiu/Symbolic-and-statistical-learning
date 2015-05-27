@@ -18,13 +18,13 @@ class Document:
     return 'Raw Doc: ' + str(self.rank)
 
 class ParsedDocument(Document):
-  def __init__(self, document):
+  def __init__(self, document, perform_tokenization=True):
     Document.__init__(self, document.rank, document.contents)
     self.title = ''
     self.paragraphs = []
     self.words = {}
     self.parse_document_()
-    self.perform_tokenization_()
+    self.perform_tokenization_(perform_tokenization)
 
   def parse_document_(self):
     soup = BeautifulSoup(self.contents)
@@ -33,7 +33,7 @@ class ParsedDocument(Document):
     if soup.title:
       self.title = soup.title.get_text()
 
-  def perform_tokenization_(self):
+  def perform_tokenization_(self, perform_tokenization=True):
 #    st = PorterStemmer()
     s_words = set(stopwords.words('english'))
     for i in range(len(self.paragraphs)):
@@ -45,22 +45,23 @@ class ParsedDocument(Document):
       self.paragraphs[i] = self.paragraphs[i].replace('\r', ' ')
       self.paragraphs[i] = self.paragraphs[i].replace('\t', ' ')
       self.paragraphs[i] = ' '.join(self.paragraphs[i].split())
-      self.paragraphs[i] = nltk.sent_tokenize(self.paragraphs[i])
-      for j in range(len(self.paragraphs[i])):
-        sentence = self.paragraphs[i][j]
-#        words = sentence
-        words = nltk.word_tokenize(sentence)
-        for w in words:
-          lower_word = w.lower()
-          self.words[lower_word] = self.words.get(lower_word, 0) + 1
-#        stemmed_words = []
-#        for word in words:
-#          stemmed_words.append(st.stem(word))
+      if perform_tokenization == True:
+        self.paragraphs[i] = nltk.sent_tokenize(self.paragraphs[i])
+        for j in range(len(self.paragraphs[i])):
+          sentence = self.paragraphs[i][j]
+  #        words = sentence
+          words = nltk.word_tokenize(sentence)
+          for w in words:
+            lower_word = w.lower()
+            self.words[lower_word] = self.words.get(lower_word, 0) + 1
+  #        stemmed_words = []
+  #        for word in words:
+  #          stemmed_words.append(st.stem(word))
 
 
-        # Remove stop words
-        filtered_words = [w for w in words if not w.lower() in s_words]
-        self.paragraphs[i][j] = filtered_words
+          # Remove stop words
+          filtered_words = [w for w in words if not w.lower() in s_words]
+          self.paragraphs[i][j] = filtered_words
 
 
 
