@@ -1,0 +1,89 @@
+User-agent: *
+Disallow: /assist.html		
+Disallow: /headlines.html	# why? Testing only
+Disallow: /headlines.txt	# why? Testing only
+Disallow: /headlines_pre.html	# why? Testing only
+Disallow: /headlinessum.html	# why? Testing only
+Disallow: /POP.html			# why? Testing only
+Disallow: /preview.html		# why? Testing only
+Disallow: /coldwell.html   	# why? Because it gets index within the context of HometownAnnapolis.com
+#Disallow: /gifts.html
+Disallow: /index_test.html	# why? Testing only
+Disallow: /magothygames.html
+Disallow: /mcmillan.html	# why? Because it gets index within the context of HometownAnnapolis.com
+Disallow: /newpoll_q.html	# why? Test page for new poll.
+#Disallow: /opfminieri.html	# why? Shouldn't even exist, but if it does...
+Disallow: /politics1.html.10Nov2000
+Disallow: /politics2.html.10Nov2000
+Disallow: /politics2.html.17Mar2000
+Disallow: /politics2.html.24Mar2000
+Disallow: /pol_newpol.html
+Disallow: /poll_sep11poll.html
+Disallow: /shelby.html		# why? Because it gets index within the context of HometownAnnapolis.com
+Disallow: /spanishdemo.html
+Disallow: /surferkit.html
+Disallow: /temptop.html
+Disallow: /test.html		# why? Testing only
+Disallow: /tmpl_sports.html
+Disallow: /webcam.html
+#Disallow: /art/
+Disallow: /art/form_cache/
+Disallow: /admin/
+#Disallow: /annapolisgifts/
+Disallow: /candles/			# why? Because it gets index within the context of HometownAnnapolis.com
+Disallow: /coupons/
+Disallow: /healthdept/		# why? Because it gets index within the context of HometownAnnapolis.com
+#Disallow: /images/
+#Disallow: /includes/
+Disallow: /inserts/
+Disallow: /java/
+Disallow: /magothygames/
+Disallow: /mdhall/			# why? Because it gets index within the context of HometownAnnapolis.com
+Disallow: /murry/			# why? Because it gets index within the context of HometownAnnapolis.com
+#Disallow: /online_mirror/
+#Disallow: /opfannapolis/	# why? Because it gets index within the context of HometownAnnapolis.com
+Disallow: /upload/
+Disallow: /extras/images/
+Disallow: /extras/whitbread/images/
+Disallow: /vhosts/
+#Disallow: /*.jpg$
+#Disallow: /*.gif$
+#Disallow: /*.png$
+#Disallow: /*.psd$
+#Disallow: /*.doc$
+#Disallow: /*.pdf$
+#Disallow: /*.txt$
+Disallow: /*.dat$
+Disallow: /*.info$
+Disallow: /*.conf$
+
+#User-agent: Googlebot-Image
+#Disallow: /
+
+#User-agent: Teoma			# The Ask-Jeeves/ask.com crawler (pictures.ask.com)
+#Disallow: /art
+#Disallow: /*.gif
+#Disallow: *.jpg
+#Disallow: *.png
+
+User-agent: EmailSiphon
+Disallow: /
+
+User-agent: psbot
+Disallow: /
+
+User-agent: Webclipping.com
+Disallow: /
+
+User-agent: Webinator-indexer.cyberalert.com
+Disallow: /
+
+User-agent: http://www.almaden.ibm.com/cs/crawler
+Disallow: /
+
+User-agent: ia_archiver
+Disallow: /
+
+User-agent: imagesearch.naver.co.jp
+Disallow: /
+

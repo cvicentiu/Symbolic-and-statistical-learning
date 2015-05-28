@@ -1,0 +1,361 @@
+
+<HTML>
+<HEAD>
+<TITLE>William Dickson's Works - New Music Jukebox</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function SortBySubmit ()
+{
+	document.SortByForm.submit();
+}
+
+function popUp(URL) {
+day = new Date();
+// id = day.getTime();
+id = 'CompositionDescription';
+eval("page" + id + " = window.open(URL, '" + id + "', 'scrollbars,resizable,width=290,height=320');");
+}
+
+function popUpMedia(URL) {
+day = new Date();
+// id = day.getTime();
+id = 'MediaPlayer';
+eval("page" + id + " = window.open(URL, '" + id + "', 'scrollbars,resizable,width=290,height=320');");
+}
+
+function popUpChooseMedia(URL) {
+day = new Date();
+// id = day.getTime();
+id = 'ChooseMedia';
+eval("page" + id + " = window.open(URL, '" + id + "', 'scrollbars,resizable,width=300,height=400');");
+}
+</script>
+<STYLE TYPE="text/css">
+	BODY {
+		font-family : Arial, Helvetica, sans-serif;
+	}
+	TD {
+		font-family : Arial, Helvetica, sans-serif;
+	}
+	.NarrowColumnInput {
+		width : 150px;
+	}
+	.InstrCountInput {
+		font-family : "Courier New", Courier, monospace;
+		width : 20px;
+		text-align : right;
+	}
+	.LoginInput {
+		width : 200px;
+	}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+image1 = new Image();
+image1.src = "/images/HeaderASO.gif";
+image2 = new Image();
+image2.src = "/images/HeaderComposersO.gif";
+image3 = new Image();
+image3.src = "/images/HeaderJoinO.gif";
+image4 = new Image();
+image4.src = "/images/HeaderLegalGuideO.gif";
+image5 = new Image();
+image5.src = "/images/HeaderTOSO.gif";
+image6 = new Image();
+image6.src = "/images/HeaderTechHelpO.gif";
+image7 = new Image();
+image7.src = "/images/HeaderFAQsO.gif";
+image8 = new Image();
+image8.src = "/images/HeaderAboutO.gif";
+image9 = new Image();
+image9.src = "/images/HeaderHomeO.gif";
+
+function popUpRadio(URL) {
+day = new Date();
+// id = day.getTime();
+id = 'NMJRadio';
+eval("page" + id + " = window.open(URL, '" + id + "', 'resizable,width=300,height=300');");
+}
+// End -->
+</SCRIPT>
+</HEAD>
+
+<BODY LINK="Navy" VLINK="Black" ALINK="Silver" LEFTMARGIN=5 TOPMARGIN=5 BGCOLOR="White">
+<div id="overDiv" style="position:absolute; visibility:hidden; z-index:1000;"></div>
+<script language="JavaScript" src="overlib.js">
+<!-- overLIB (c) Erik Bosrup -->
+</script>  
+<TABLE WIDTH="745" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+<TD COLSPAN="5">
+	<TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+	<TR>
+	<TD COLSPAN="18">
+		<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0">
+		<TR>
+		<TD><A HREF="http://www.newmusicjukebox.org/" TARGET="_top"><IMG SRC="SiteHeader.gif" ALT="NewMusicJukebox" WIDTH="657" HEIGHT="37" BORDER="0"></A></TD>
+		<TD><IMG SRC="header_radio.gif" ALT="NewMusicRadio" WIDTH="88" HEIGHT="37" BORDER="0"></TD></TR>
+		</TABLE>
+	</TD></TR>
+
+	<TR>
+	<TD WIDTH="36"><A HREF="http://www.newmusicjukebox.org/default.asp" onmouseover="image9.src='/images/HeaderHomeO.gif';"
+ONMOUSEOUT="image9.src='/images/HeaderHomeB.gif';" TARGET="_top"><IMG SRC="HeaderHomeB.gif" ALT="" NAME="image9" ID="image9" WIDTH="36" HEIGHT="16" BORDER="0"></A></TD>
+	<TD WIDTH="9"><IMG BORDER="0" SRC="bluedot.gif" WIDTH="9" HEIGHT="20"></TD>
+	<TD WIDTH="96"><A HREF="http://www.newmusicjukebox.org/AS3/" onmouseover="image1.src='/images/HeaderASO.gif';"
+ONMOUSEOUT="image1.src='/images/HeaderASB.gif';" TARGET="_top"><IMG SRC="HeaderASB.gif" ALT="" NAME="image1" ID="image1" WIDTH="96" HEIGHT="16" BORDER="0"></A></TD>
+	<TD WIDTH="9"><IMG BORDER="0" SRC="bluedot.gif" WIDTH="9" HEIGHT="20"></TD>
+	<TD WIDTH="64"><A HREF="http://www.newmusicjukebox.org/composers/" onmouseover="image2.src='/images/HeaderComposersO.gif';"
+ONMOUSEOUT="image2.src='/images/HeaderComposersB.gif';" TARGET="_top"><IMG SRC="HeaderComposersB.gif" ALT="" NAME="image2" ID="image2" WIDTH="64" HEIGHT="16" BORDER="0"></A></TD>
+	<TD WIDTH="9"><IMG BORDER="0" SRC="bluedot.gif" WIDTH="9" HEIGHT="20"></TD>
+	<TD WIDTH="58"><A HREF="http://www.newmusicjukebox.org/technology.asp" onmouseover="image6.src='/images/HeaderTechHelpO.gif';"
+ONMOUSEOUT="image6.src='/images/HeaderTechHelpB.gif';" TARGET="_top"><IMG SRC="HeaderTechHelpB.gif" ALT="Plug-Ins" NAME="image6" ID="image6" WIDTH="58" HEIGHT="16" BORDER="0"></A></TD>
+	<TD WIDTH="9"><IMG BORDER="0" SRC="bluedot.gif" WIDTH="9" HEIGHT="20"></TD>
+	<TD WIDTH="35"><A HREF="http://www.newmusicjukebox.org/FAQ.asp" onmouseover="image7.src='/images/HeaderFAQsO.gif';"
+ONMOUSEOUT="image7.src='/images/HeaderFAQsB.gif';" TARGET="_top"><IMG SRC="HeaderFAQsB.gif" ALT="" NAME="image7" ID="image7" WIDTH="35" HEIGHT="16" BORDER="0"></A></TD>
+	<TD WIDTH="9"><IMG BORDER="0" SRC="bluedot.gif" WIDTH="9" HEIGHT="20"></TD>
+	<TD WIDTH="69"><A HREF="http://www.newmusicjukebox.org/rights.asp" onmouseover="image4.src='/images/HeaderLegalGuideO.gif';"
+ONMOUSEOUT="image4.src='/images/HeaderLegalGuideB.gif';" TARGET="_top"><IMG SRC="HeaderLegalGuideB.gif" ALT="" NAME="image4" ID="image4" WIDTH="69" HEIGHT="16" BORDER="0"></A></TD>
+	<TD WIDTH="9"><IMG BORDER="0" SRC="bluedot.gif" WIDTH="9" HEIGHT="20"></TD>
+	<TD WIDTH="37"><A HREF="http://www.newmusicjukebox.org/about.asp" onmouseover="image8.src='/images/HeaderAboutO.gif';"
+ONMOUSEOUT="image8.src='/images/HeaderAboutB.gif';" TARGET="_top"><IMG SRC="HeaderAboutB.gif" ALT="" NAME="image8" ID="image8" WIDTH="37" HEIGHT="16" BORDER="0"></A></TD>
+	<TD WIDTH="9"><IMG BORDER="0" SRC="bluedot.gif" WIDTH="9" HEIGHT="20"></TD>
+	<TD WIDTH="94"><A HREF="http://www.newmusicjukebox.org/TOS.asp" onmouseover="image5.src='/images/HeaderTOSO.gif';"
+ONMOUSEOUT="image5.src='/images/HeaderTOSB.gif';" TARGET="_top"><IMG SRC="HeaderTOSB.gif" ALT="Terms of Service" NAME="image5" ID="image5" WIDTH="94" HEIGHT="16" BORDER="0"></A></TD>
+	<TD WIDTH="9"><IMG BORDER="0" SRC="bluedot.gif" WIDTH="9" HEIGHT="20"></TD>
+	<TD WIDTH="55"><A HREF="http://www.amc.net/participate/membership/index.html" onmouseover="image3.src='/images/HeaderJoinO.gif';"
+ONMOUSEOUT="image3.src='/images/HeaderJoinB.gif';" TARGET="_new"><IMG SRC="HeaderJoinB.gif" ALT="Join AMC" NAME="image3" ID="image3" WIDTH="55" HEIGHT="16" BORDER="0"></A></TD>
+	<TD WIDTH="138">&nbsp;</TD></TR>
+	</TABLE>
+</TD></TR>
+
+<TR>
+<TD><IMG SRC="clear.gif" WIDTH="160" HEIGHT="5" BORDER="0" ALT=""></TD>
+<TD><IMG SRC="clear.gif" WIDTH="5" HEIGHT="5" BORDER="0" ALT=""></TD>
+<TD><IMG SRC="clear.gif" WIDTH="415" HEIGHT="5" BORDER="0" ALT=""></TD>
+<TD><IMG SRC="clear.gif" WIDTH="5" HEIGHT="5" BORDER="0" ALT=""></TD>
+<TD><IMG SRC="clear.gif" WIDTH="160" HEIGHT="5" BORDER="0" ALT=""></TD></TR>
+
+<!-- BEGIN left side navigation -->
+<TR>
+<TD WIDTH="160" ALIGN="center" VALIGN="top">
+
+	<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0">
+	<TR>
+	<TD><IMG SRC="ComposerTab160W.gif" ALT="Composer" WIDTH="160" HEIGHT="25" BORDER="0"></TD></TR>
+
+	
+	<TR>
+	<TD BGCOLOR="#E5E5E5"><IMG SRC="clear.gif" ALT="" WIDTH="1" HEIGHT="5" BORDER="0"></TD></TR>
+
+	<TR>
+	<TD ALIGN="center" BGCOLOR="#E5E5E5">
+		
+		
+		
+		
+		<TABLE WIDTH="152" BORDER="0" CELLSPACING="1" CELLPADDING="0">
+		<TR>
+		<TD BGCOLOR="#00529B" STYLE="font-size: smaller; color: White;">
+		<FONT SIZE="2" COLOR="#FFFFFF"><STRONG>
+		William Dickson</STRONG></FONT></TD></TR>
+
+
+
+
+<tr>
+<td ALIGN="CENTER" BGCOLOR="#FFFFFF"  STYLE="font-size: smaller;"><A HREF="http://www.newmusicjukebox.org/composers/c_bio_new.asp?ComposerID=21179&amp;ActorID=47419">Bio<a>
+</td>
+</tr>
+		</TABLE>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		</TD></TR>
+
+
+
+<!--
+
+	<TR>
+	<TD BGCOLOR="#E5E5E5"><IMG SRC="/images/clear.gif" ALT="" WIDTH="1" HEIGHT="5" BORDER="0"></TD></TR>
+
+	<TR>
+	<TD><IMG SRC="/images/DrkBlueBot160W.gif" ALT="" WIDTH="160" HEIGHT="25" BORDER="0"></TD></TR>
+
+	<TR>
+	<TD BGCOLOR="#E5E5E5"><IMG SRC="/images/clear.gif" ALT="" WIDTH="1" HEIGHT="5" BORDER="0"></TD></TR>
+
+	<TR>
+	<TD><IMG SRC="/images/ComposerMoreInfoTab160W.gif" ALT="For more information" WIDTH="160" HEIGHT="25" BORDER="0"></TD></TR>
+
+	<TR>
+	<TD ALIGN="center" BGCOLOR="#E5E5E5">
+		<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0">
+		<TR>
+		<TD BGCOLOR="#E5E5E5"><IMG SRC="/images/clear.gif" ALT="" WIDTH="1" HEIGHT="5" BORDER="0"></TD></TR>
+
+		<TR>
+		<TD STYLE="font-size: smaller;"><FONT SIZE="2"></FONT></TD></TR>
+
+		<TR>
+		<TD BGCOLOR="#E5E5E5"><IMG SRC="/images/clear.gif" ALT="" WIDTH="1" HEIGHT="5" BORDER="0"></TD></TR>
+		</TABLE>
+	</TD></TR>
+-->
+	<TR>
+	<TD><IMG SRC="DrkBlueBot160W.gif" ALT="" WIDTH="160" HEIGHT="25" BORDER="0"></TD></TR>
+
+	</TABLE>
+
+</TD>
+
+<!-- spacer -->
+<TD WIDTH="5"><IMG SRC="clear.gif" WIDTH="5" HEIGHT="1" BORDER="0" ALT=""></TD>
+<FORM ACTION="http://www.newmusicjukebox.org/composers/c_works.asp" NAME="SortByForm" ID="SortByForm">
+<input type="hidden" name="actorid" value="47419">
+<input type="hidden" name="composerid" value="21179">
+<!-- Main Area (right side of table) -->
+<TD WIDTH="580" COLSPAN="3" VALIGN="top">
+	<TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+	<TR>
+	<TD><TABLE WIDTH="580" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+		<TR>
+		<TD WIDTH="47" BGCOLOR="#4D90CD">
+		  <A HREF="http://www.newmusicjukebox.org/composers/c_bio_new.asp?ComposerID=21179&amp;ActorID=47419">
+		  <IMG SRC="works_on_a.gif" ALT="Bio" WIDTH="47" HEIGHT="23" BORDER="0"></A>
+		</TD>
+		<TD WIDTH="64" BGCOLOR="#4D90CD">
+		  <IMG SRC="works_on_b.gif" ALT="Works" WIDTH="64" HEIGHT="23" BORDER="0">
+		</TD>
+		<TD WIDTH="292" ALIGN="right" BGCOLOR="#4D90CD" STYLE="font-size: smaller; color: White;">
+		  <IMG SRC="sortby.gif" ALT="" WIDTH="57" HEIGHT="23" BORDER="0">
+		</TD>
+		<TD WIDTH="150" ALIGN="right" BGCOLOR="#4D90CD" STYLE="font-size: smaller;">
+		  <FONT SIZE="-1"><SELECT NAME="SortBy" CLASS="NarrowColumnInput" onChange="SortBySubmit();">
+		  <OPTION VALUE="EnsembleType" SELECTED>Ensemble Type</OPTION>
+		  <OPTION VALUE="Alphabetic">Title</OPTION>
+		  <OPTION VALUE="Duration">Duration</OPTION>
+		  <OPTION VALUE="YearComposed">Year Composed</OPTION>
+		  </SELECT></FONT>
+		</TD>
+		<TD WIDTH="27" BGCOLOR="#4D90CD">
+		  <IMG SRC="ltblu_toprcorner.gif" ALT="" WIDTH="27" HEIGHT="23" BORDER="0">
+		</TD>
+		</TR>
+		</TABLE>
+	</TD></TR>
+
+	<TR>
+	<TD>
+		<TABLE WIDTH="100%" BORDER="0" CELLSPACING="2" CELLPADDING="0">
+		
+		
+		<TR>
+		  <TD BGCOLOR="#E5E5E5" colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FONT SIZE="1"><b>Title</b></font></TD>
+		  
+		<TD BGCOLOR="#E5E5E5"><FONT SIZE="1"><b>Ensemble Type</b></FONT></TD>
+		  		
+		<TD BGCOLOR="#E5E5E5"><FONT SIZE="1"><b>Composed</b></FONT></TD>
+		<TD BGCOLOR="#E5E5E5"><FONT SIZE="1"><b>Duration</b></FONT></TD>
+		<TD BGCOLOR="#E5E5E5"><FONT SIZE="1"><b>Media</b></FONT></TD>
+		</TR>
+		
+		
+		
+
+		<!-- BEGINNING OF RECORDSET ITERATION -->
+		<TR>
+		<td BGCOLOR="#E5E5E5" valign="top">&nbsp;<IMG SRC="bullet.gif" WIDTH="10" HEIGHT="12" BORDER="0" ALT="">&nbsp;<FONT SIZE="2"></td>
+		<TD STYLE="font-size: smaller;" BGCOLOR="#E5E5E5" valign="top">
+		<A HREF="http://www.newmusicjukebox.org/composers/c_composition.asp?ComposerID=21179&amp;ActorID=47419&amp;CompositionID=%09%0987394">Frontier Women</FONT></A>
+		</TD>
+		<TD BGCOLOR="#E5E5E5" STYLE="font-size: smaller;"><FONT SIZE="1">
+		 Voice, Solo or With Chamber or Jazz Ensemble</FONT></TD>
+		<TD WIDTH="44" ALIGN="center" BGCOLOR="#E5E5E5" STYLE="font-size: smaller;" >
+		<FONT SIZE="1">
+		  1989</FONT>
+		</TD>
+		<TD WIDTH="44" ALIGN="right" BGCOLOR="#E5E5E5" STYLE="font-size: smaller;" >
+		<FONT SIZE="1">
+		      
+		      
+		      00:00:00
+		      
+		      
+		      
+		       </FONT>
+		</TD>
+	
+	
+		<td BGCOLOR="#E5E5E5" COLSPAN="2"><FONT SIZE="1">
+		
+		
+		</FONT>
+		</td>
+	
+	
+		</TR>
+		<!--
+		<TR>
+		<TD COLSPAN="2" BGCOLOR="#E5E5E5" STYLE="font-size: smaller;">
+		&nbsp;<IMG SRC="/images/clear.gif" WIDTH="10" HEIGHT="1" BORDER="0" ALT="">
+		&nbsp;<FONT SIZE="2">Version: </FONT></TD>
+		
+		
+		
+		
+		</TR>
+-->
+	
+		</TABLE>
+	</TD></TR>
+	
+	<TR>
+	<TD><IMG SRC="ltbluebot580.gif" WIDTH="580" HEIGHT="23" BORDER="0" ALT=""></TD></TR>	  
+
+	<TR>
+	<TD>
+		<TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+		<TR>
+		
+		<TD STYLE="font-size: smaller;">&nbsp;&nbsp;&nbsp;<FONT SIZE="2"></FONT></TD>
+		<TD ALIGN="right" STYLE="font-size: smaller;"><FONT SIZE="2">
+		<!--
+		<B>Go to page:</B>
+-->
+</FONT>&nbsp;&nbsp;&nbsp;</TD></TR>
+		<!-- End recordset page navigation -->
+		</TABLE>
+	</TD></TR>	  
+	</TABLE>
+</TD></TR>
+
+</FORM>
+
+<TR>
+<TD COLSPAN="5"><BR><A HREF="mailto: coordinator@newmusicjukebox.org"><IMG SRC="footer.gif" ALT="" WIDTH="745" HEIGHT="16" BORDER="0"></A></TD></TR>
+
+</TABLE>
+
+</BODY>
+</HTML>

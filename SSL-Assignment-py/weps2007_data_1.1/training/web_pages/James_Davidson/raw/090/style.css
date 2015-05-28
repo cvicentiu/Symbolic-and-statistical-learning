@@ -1,0 +1,547 @@
+/*
+*OKIMC changes:
+* colors: 
+   body-bg #ffffff to #6D8CAB
+*  #006633 to #3C0005 cept links
+*  #e5ffe5 to #F1E8D9
+*  all #996633 to #996633
+* 
+*/
+BODY {
+	MARGIN: 0 0 0 0; PADDING: 0 0 0 0; COLOR: #000000; FONT-FAMILY: arial, sans-serif; BACKGROUND-COLOR: #6D8CAB
+}
+ADDRESS {
+	FONT-SIZE: 12px; FONT-FAMILY: arial, sans-serif
+}
+CAPTION {
+	FONT-SIZE: 12px; FONT-FAMILY: arial, sans-serif
+}
+DIV {
+	FONT-SIZE: 12px; FONT-FAMILY: arial, sans-serif
+}
+DL {
+	FONT-SIZE: 12px; FONT-FAMILY: arial, sans-serif
+}
+LI {
+	FONT-SIZE: 12px; FONT-FAMILY: arial, sans-serif
+}
+OL {
+	FONT-SIZE: 12px; FONT-FAMILY: arial, sans-serif
+}
+P {
+	FONT-SIZE: 12px; FONT-FAMILY: arial, sans-serif; margin-top: 5px; margin-bottom: 0;
+}
+UL {
+	FONT-SIZE: 12px; FONT-FAMILY: arial, sans-serif
+}
+TD {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: arial, sans-serif
+}
+TH {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: arial, sans-serif
+}
+INPUT {
+	FONT-SIZE: 12px; FONT-FAMILY: arial, sans-serif
+}
+SELECT {
+	FONT-SIZE: 12px; FONT-FAMILY: arial, sans-serif
+}
+OPTION {
+	FONT-SIZE: 12px; FONT-FAMILY: arial, sans-serif
+}
+TEXTAREA {
+	FONT-SIZE: 12px; FONT-FAMILY: arial, sans-serif
+}
+A:link {
+	COLOR: #3C0005
+}
+A:visited {
+	COLOR: #560007
+}
+A:hover {
+	COLOR: #560007; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #560007; TEXT-DECORATION: none
+}
+A.headline-text:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.headline-text:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A.headline-text:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+A.headline-text:active {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+
+A.summary-title:link {
+	COLOR: #560007; font-size: 14px;
+}
+A.summary-title:visited {
+	COLOR: #560007; font-size: 14px;
+}
+A.summary-title:hover {
+	COLOR: #560007; font-size: 14px;
+}
+A.summary-title:active {
+	COLOR: #560007; font-size: 14px;
+}
+.summary-details {
+	COLOR: #666666; font-size: 12px; 
+}
+IMG.summary-thumbnail {
+	border : 1px solid #000000; margin-left: 5px; float: right;
+}
+IMG.featurized-thumbnail {
+	border : 1px solid #000000; 
+}
+IMG.gallery-thumbnail {
+	border : 1px solid #000000; 
+}
+IMG.standard-image {
+	border : 1px solid #000000; 
+}
+IMG.summary-image {
+	border : 1px solid #000000;
+}
+A.category-text:link {
+	COLOR: #666666; TEXT-DECORATION: none
+}
+A.category-text:visited {
+	COLOR: #666666; TEXT-DECORATION: none
+}
+A.category-text:hover {
+	COLOR: #666666; TEXT-DECORATION: underline
+}
+A.category-text:active {
+	COLOR: #666666; BACKGROUND-COLOR: #000000; TEXT-DECORATION: none
+}
+A.newswire-rsscreator:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 8px; COLOR: #666666; FONT-FAMILY: "MS Sans Serif", helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.newswire-rsscreator:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 8px; COLOR: #666666; FONT-FAMILY: "MS Sans Serif", helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.newswire-rsscreator:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 8px; COLOR: #666666; FONT-FAMILY: "MS Sans Serif", helvetica, sans-serif; TEXT-DECORATION: underline
+}
+A.newswire-rsscreator:active {
+	FONT-WEIGHT: bold; FONT-SIZE: 8px; COLOR: #666666; FONT-FAMILY: "MS Sans Serif", helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.navbar:link {
+	FONT-SIZE: 11px; COLOR: #ffffff; TEXT-DECORATION: none; TEXT-TRANSFORM: uppercase; LETTER-SPACING: 0.1em
+}
+A.navbar:visited {
+	FONT-SIZE: 11px; COLOR: #ffffff; TEXT-DECORATION: none; TEXT-TRANSFORM: uppercase; LETTER-SPACING: 0.1em
+}
+A.navbar:hover {
+	FONT-SIZE: 11px; COLOR: #ffffff; TEXT-DECORATION: underline; TEXT-TRANSFORM: uppercase; LETTER-SPACING: 0.1em
+}
+A.navbar:active {
+	FONT-SIZE: 11px; COLOR: #ffffff; TEXT-TRANSFORM: uppercase; LETTER-SPACING: 0.1em
+}
+A.newswire:link {
+	FONT-WEIGHT: bold; TEXT-DECORATION: none; TEXT-TRANSFORM: uppercase;
+}
+A.newswire:visited {
+	FONT-WEIGHT: bold; color: #666666; TEXT-DECORATION: none;  TEXT-TRANSFORM: uppercase;
+}
+A.newswire:hover {
+	TEXT-DECORATION: underline;  TEXT-TRANSFORM: uppercase;	
+}
+A.newswire:active {
+	 TEXT-TRANSFORM: uppercase;
+}
+A.publink:link {
+	COLOR: #cc3300
+}
+A.publink:visited {
+	COLOR: #cc3300
+}
+A.publink:hover {
+	
+}
+A.publink:active {
+	COLOR: #ffffff; BACKGROUND-COLOR: #cc3300; TEXT-DECORATION: none
+}
+BIG {
+	FONT-SIZE: 14px
+}
+SMALL {
+	FONT-SIZE: 8px; FONT-FAMILY: "MS Sans Serif", helvetica, sans-serif
+}
+SMALL.featurelist {
+	FONT-SIZE: 11px; COLOR: #003399; FONT-FAMILY: arial, sans-serif
+}
+CODE {
+	FONT-FAMILY: "Courier New", monospace
+}
+PRE {
+	FONT-FAMILY: "Courier New", monospace
+}
+
+DIV.frontpagenotice {
+color: #CC3300;
+font-size: 130%;
+	
+}
+DIV.mast {
+	FONT-WEIGHT: bold; FONT-SIZE: 24px; FONT-FAMILY: arial, sans-serif
+}
+.heading {
+margin: 10px 0;	
+}
+.subheading {
+	
+}
+.bgfilterbar {
+	BACKGROUND-COLOR: #F1E8D9
+}
+SELECT.filterbar {
+	BACKGROUND-COLOR: #F1E8D9
+}
+TH.storycomments {
+	FONT-WEIGHT: bold; COLOR: #ffffff; BACKGROUND-COLOR: #996633; TEXT-ALIGN: left
+}
+TD.storycomments {
+	COLOR: #000000; BACKGROUND-COLOR: #F1E8D9; TEXT-ALIGN: left
+}
+TH.latestcomments {
+	FONT-WEIGHT: bold; COLOR: #ffffff; BACKGROUND-COLOR: #8D5C33; TEXT-ALIGN: left
+}
+TD.latestcomments {
+	COLOR: #000000; BACKGROUND-COLOR: #F1E8D9; TEXT-ALIGN: left
+}
+TH.admin {
+	FONT-WEIGHT: bold; COLOR: #ffffff; BACKGROUND-COLOR: #996633; TEXT-ALIGN: center
+}
+TD.admin {
+	COLOR: #000000; BACKGROUND-COLOR: #F1E8D9
+}
+TABLE.publish {
+	BORDER-RIGHT: #996633 1px solid; BORDER-TOP: #996633 1px solid; BORDER-LEFT: #996633 1px solid; BORDER-BOTTOM: #996633 1px solid
+}
+TH.publish {
+	FONT-WEIGHT: bold; COLOR: #ffffff; BACKGROUND-COLOR: #996633; TEXT-ALIGN: left
+}
+TD.publish {
+	COLOR: #000000; BACKGROUND-COLOR: #E6E6E6
+}
+TABLE.eventcalendar {
+	BORDER-RIGHT: #cccc99 1px solid; BORDER-TOP: #cccc99 1px solid; BORDER-LEFT: #cccc99 1px solid; BORDER-BOTTOM: #cccc99 1px solid
+}
+TH.eventcalendar {
+	BORDER-RIGHT: #996633 1px solid; BORDER-TOP: #996633 1px solid; FONT-WEIGHT: bold; VERTICAL-ALIGN: bottom; BORDER-LEFT: #996633 1px solid; COLOR: #000000; BORDER-BOTTOM: #996633 1px solid; BACKGROUND-COLOR: #F1E8D9; TEXT-ALIGN: left
+}
+TH.eventcalendarhighlighted {
+	BORDER-RIGHT: #996633 1px solid; BORDER-TOP: #996633 1px solid; FONT-WEIGHT: bold; VERTICAL-ALIGN: bottom; BORDER-LEFT: #996633 1px solid; COLOR: #000000; BORDER-BOTTOM: #996633 1px solid; BACKGROUND-COLOR: #dddddd; TEXT-ALIGN: left
+}
+TD.eventcalendar {
+	BORDER-RIGHT: #996633 1px solid; BORDER-TOP: #996633 1px solid; VERTICAL-ALIGN: top; BORDER-LEFT: #996633 1px solid; COLOR: #000000; BORDER-BOTTOM: #996633 1px solid; BACKGROUND-COLOR: #ffffff
+}
+TD.eventcalendarpast {
+	background-color : #FFFFDE;
+	color : #000000;	
+	vertical-align : top;
+	border : 1px solid #CCCC99;
+}
+TD.eventcalendarfuture {
+	background-color : #FFDEDE;
+	color : #000000;	
+	vertical-align : top;
+	border : 1px solid #CCCC99;
+}
+TD.eventcalendarhighlighted {
+	BORDER-RIGHT: #cccc99 1px solid; BORDER-TOP: #cccc99 1px solid; VERTICAL-ALIGN: top; BORDER-LEFT: #cccc99 1px solid; COLOR: #000000; BORDER-BOTTOM: #cccc99 1px solid; BACKGROUND-COLOR: #eeeeee
+}
+TR.calendarhighlighted {
+	BACKGROUND-COLOR: #F1E8D9
+}
+TABLE.headlines {
+	BORDER-RIGHT: #996633 1px solid; 
+	BORDER-TOP: #996633 1px solid; 
+	BORDER-LEFT: #996633 1px solid; 
+	BORDER-BOTTOM: #996633 1px solid; 
+	BACKGROUND-COLOR: #F1E8D9
+}
+CAPTION.headlines {
+	FONT-WEIGHT: bold; 
+	VERTICAL-ALIGN: top; COLOR: #ffffff; 
+	BACKGROUND-COLOR: #996633
+}
+TH.headlines {
+	VERTICAL-ALIGN: top; 
+	COLOR: #ffffff; 
+	BACKGROUND-COLOR: #996633
+}
+TD.headlines {
+	VERTICAL-ALIGN: top;
+}
+TD.eventheadlines {
+	BORDER-RIGHT: #996633 1px solid; 
+	BORDER-TOP: #996633 1px solid; 
+	VERTICAL-ALIGN: top; 
+	BORDER-LEFT: #996633 1px solid; 
+	BORDER-BOTTOM: #996633 1px solid; 
+	BACKGROUND-COLOR: #F1E8D9;
+}
+A.headlinesheader:link {
+	FONT-WEIGHT: bold; COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.headlinesheader:visited {
+	FONT-WEIGHT: bold; COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.headlinesheader:hover {
+	FONT-WEIGHT: bold; COLOR: #ffffff; TEXT-DECORATION: underline
+}
+A.headlinesheader:active {
+	FONT-WEIGHT: bold; COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.headlines:link {
+	TEXT-DECORATION: none
+}
+A.headlines:visited {
+	TEXT-DECORATION: none
+}
+A.headlines:hover {
+	TEXT-DECORATION: underline
+}
+A.headlines:active {
+	TEXT-DECORATION: none
+}
+P.photo {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; FONT-STYLE: italic; FONT-FAMILY: arial, sans-serif; TEXT-ALIGN: center
+}
+.hed {
+	FONT-WEIGHT: bold; FONT-SIZE: 16px; FONT-FAMILY: arial, sans-serif; margin-bottom: 5px; clear: both
+}
+H1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 24px; FONT-FAMILY: arial, sans-serif
+}
+DIV.h1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 24px; FONT-FAMILY: arial, sans-serif
+}
+H2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 19px; FONT-FAMILY: arial, sans-serif
+}
+DIV.h2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 19px; FONT-FAMILY: arial, sans-serif
+}
+H3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 15px; FONT-FAMILY: arial, sans-serif
+}
+DIV.h3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 15px; FONT-FAMILY: arial, sans-serif
+}
+H4 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; FONT-FAMILY: arial, sans-serif
+}
+DIV.h4 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; FONT-FAMILY: arial, sans-serif
+}
+H5 {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; FONT-FAMILY: "MS Sans Serif", helvetica, sans-serif
+}
+DIV.h5 {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; FONT-FAMILY: "MS Sans Serif", helvetica, sans-serif
+}
+H6 {
+	FONT-WEIGHT: bold; FONT-SIZE: 9px; FONT-FAMILY: "MS Sans Serif", helvetica, sans-serif
+}
+DIV.h6 {
+	FONT-WEIGHT: bold; FONT-SIZE: 9px; FONT-FAMILY: "MS Sans Serif", helvetica, sans-serif
+}
+.blurb {
+	FONT-FAMILY: arial, sans-serifsu
+}
+.newswirehead {
+	FONT-SIZE: 18px;
+	FONT-WEIGHT: bold; COLOR: #333333
+}
+.mast {
+	BACKGROUND-COLOR: #000000 
+}
+.bg3 {
+	BACKGROUND-COLOR: #ffffff
+}
+.bgult {
+	BACKGROUND-COLOR: #333333;
+}
+.bgcentercol {
+	BACKGROUND-COLOR: #ffffff; 
+}
+.bgnavbar {
+	BACKGROUND-COLOR: #996633; padding: 3px 0;
+}
+.bgnewswire {
+	BACKGROUND-COLOR: #ececec; padding: 3px;
+}
+.bgleftcol {
+	BACKGROUND-COLOR: #ffffff
+}
+.bgcities {
+	BACKGROUND-COLOR: #ffffff
+}
+.bgpenult {
+	COLOR: #333333; BACKGROUND-color: #ffffff;
+}
+.date {
+	FONT-WEIGHT: bold; FONT-SIZE: 8px; COLOR: #898989; FONT-FAMILY: "MS Sans Serif", helvetica, sans-serif
+}
+.calendar {
+	FONT-SIZE: 10px; FONT-FAMILY: "MS Sans Serif", helvetica, sans-serif
+}
+.calendarHeader {
+	FONT-SIZE: 10px; FONT-FAMILY: "MS Sans Serif", helvetica, sans-serif
+}
+.calendarToday {
+	FONT-SIZE: 10px; FONT-FAMILY: "MS Sans Serif", helvetica, sans-serif
+}
+.calendarHighlightWeek {
+	BACKGROUND-COLOR: #cccccc
+}
+.error {
+	COLOR: #ff0000
+}
+.editornotice {
+	COLOR: #ff0000
+}
+.menuobject {
+	FONT-SIZE: 9px; FONT-FAMILY: futura, "MS Sans Serif", helvetica, sans-serif
+}
+SMALL.menuobject {
+	FONT-SIZE: 8px; FONT-FAMILY: "MS Sans Serif", helvetica, sans-serif
+}
+DIV.menuobject {
+	BORDER-RIGHT: #996633 2px solid; BORDER-TOP: #f1e8d9 1px solid; MARGIN: 0.4em 0.2em; BORDER-LEFT: #f1e8d9 1px solid; COLOR: #996633; BORDER-BOTTOM: #996633 2px solid; BACKGROUND-COLOR: #f1e8d9
+}
+IMG.menuobject {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+P.menuobject {
+	PADDING-RIGHT: 0.3em; MARGIN-TOP: 0.2em; PADDING-LEFT: 0.3em; MARGIN-BOTTOM: 0.1em; PADDING-BOTTOM: 0.3em; PADDING-TOP: 0.3em; 
+}
+H4.menuobject {
+	PADDING-RIGHT: 0.3em; MARGIN-TOP: 0.1em; PADDING-LEFT: 0.3em; FONT-WEIGHT: bold; FONT-SIZE: 125%; MARGIN-BOTTOM: 0.1em; PADDING-BOTTOM: 0.3em; COLOR: #996633; PADDING-TOP: 0.3em; FONT-FAMILY: arial, sans-serif; BACKGROUND-COLOR: #ffffff; TEXT-DECORATION: none; text-transform: uppercase
+}
+H5.menuobject {
+	PADDING-RIGHT: 0.3em; MARGIN-TOP: 0.1em; PADDING-LEFT: 0.3em; FONT-WEIGHT: bold; FONT-SIZE: 110%; MARGIN-BOTTOM: 0.1em; PADDING-BOTTOM: 0.3em; COLOR: #996633; PADDING-TOP: 0.3em; FONT-FAMILY: arial, sans-serif; TEXT-DECORATION: none
+}
+H2.menuobject {
+	PADDING-RIGHT: 0.3em; MARGIN-TOP: 0.1em; PADDING-LEFT: 0.3em; FONT-WEIGHT: bold; FONT-SIZE: 150%; MARGIN-BOTTOM: 0.1em; PADDING-BOTTOM: 0.3em; COLOR: #996633; PADDING-TOP: 0.3em; FONT-FAMILY: arial, sans-serif; BACKGROUND-COLOR: #ffffff
+}
+
+SPAN.menuobject {
+	PADDING-RIGHT: 0.3em; PADDING-LEFT: 0.3em; PADDING-BOTTOM: 0.3em; PADDING-TOP: 0.3em
+}
+A.menuobjectheader:link {
+	FONT-WEIGHT: bold; COLOR: #996633; TEXT-DECORATION: none; 
+}
+A.menuobjectheader:visited {
+	FONT-WEIGHT: bold; COLOR: #996633; TEXT-DECORATION: none; 
+}
+A.menuobjectheader:hover {
+	FONT-WEIGHT: bold; COLOR: #996633; TEXT-DECORATION: underline; 
+}
+A.menuobjectheader:active {
+	FONT-WEIGHT: bold; COLOR: #996633; TEXT-DECORATION: none
+}
+A.menuobjectentry:link {
+	TEXT-DECORATION: none
+}
+A.menuobjectentry:visited {
+	TEXT-DECORATION: none
+}
+A.menuobjectentry:hover {
+	TEXT-DECORATION: underline
+}
+A.menuobjectentry:active {
+	TEXT-DECORATION: none
+}
+/* DIV.festival {
+	MARGIN-TOP: 1em; MARGIN-BOTTOM: 1em; BACKGROUND-COLOR: #dfdfdf
+}
+P.festival {
+	FONT-SIZE: 115%; MARGIN-LEFT: 0.5em; MARGIN-RIGHT: 0.5em
+}
+P.festival-item {
+	FONT-SIZE: 100%
+}
+H2.festival {
+	PADDING-RIGHT: 0.3em; MARGIN-TOP: 0.5em; PADDING-LEFT: 0.3em; FONT-WEIGHT: bold; FONT-SIZE: 175%; MARGIN-BOTTOM: 0.5em; PADDING-BOTTOM: 0.3em; COLOR: #333333; PADDING-TOP: 0.3em; FONT-FAMILY: arial, sans-serif; TEXT-ALIGN: center
+}
+DIV.festival-item {
+	PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; PADDING-BOTTOM: 0.5em; MARGIN: 1.5em 1em 1em; COLOR: #000000; PADDING-TOP: 0.5em; BACKGROUND-COLOR: #ffffff
+}
+H3.festival-item {
+	MARGIN-TOP: 0.1em; FONT-SIZE: 135%; MARGIN-BOTTOM: 0em; COLOR: #996633
+}
+P.festival-details {
+	MARGIN-TOP: 0.05em; MARGIN-BOTTOM: 0.3em; COLOR: #996633
+}
+SPAN.festival-details {
+	FONT-SIZE: 100%
+}
+.festival-date {
+	FONT-WEIGHT: bold; FONT-SIZE: 110%; FONT-STYLE: italic
+}
+.festival-space {
+	FONT-SIZE: 110%; FONT-STYLE: italic
+}
+IMG.festival-item {
+	MARGIN: 0.1em 0.5em
+}
+.festival-item {
+	FONT-SIZE: 100%
+}
+DIV.festival-panel {
+	FONT-SIZE: 110%; MARGIN: 0.4em 0.3em; COLOR: #996633
+} 
+*/
+
+/*
+*  OKIMC customizations
+*/
+img {border:none}
+
+img.left {
+border: 1px solid black;
+float: left;
+margin: 0 10px 10px 0;
+}
+
+A.imagelink {
+ text-decoration: none;
+}
+
+A.imagelink:hover {
+text-decoration: underline;
+}
+
+td.bgnavbar tbody.editbar a {
+font-size: 11px;
+}
+
+.bgnewswire #date {
+FONT-SIZE: 11px;; color: #666666;
+}
+
+.bgnewswire p{
+margin-top: 5px; margin-bottom: 0; font-size: 11px; 
+}
+
+
+#rsscreator {
+font-size: 11px; color: #666666;
+}
+
+.bgnewswire .date  {
+font-size: 8px;
+}
+
+.addcomment {
+margin: 10px 0;
+}

@@ -1,0 +1,265 @@
+/* 
+**	guides.css - contains all 'content' styles for the guides pages
+**
+**
+*/
+
+
+.content_bottom-toc { padding-right: 20px; } 
+.title-img { padding: 10px 0px 3px 10px; }
+
+
+.toc { }
+
+.toc-spc { padding-bottom: 7px; }
+.page-spc { padding-bottom: 5px; }
+.outdent { margin-left: 15px; text-indent: -15px; }
+
+.toc .chapter, .toc .analysis  { vertical-align: top; padding: 0px 0px 0px 14px; line-height: 16px; }
+.analysis a, .analysis a:visited, .analysis a:active { text-decoration: none; font-size: 10px; color: #0095D8; font-weight: bold; }
+.analysis a:hover { text-decoration: underline; color: #0095D8; }
+
+.chapter a, .chapter a:visited, .chapter a:active { text-decoration: none; font-size: 10px; color: #525252; font-weight: bold; }
+.chapter a:hover { text-decoration: underline; color: #525252; }
+.septdots { line-height: 1px; }
+
+.toc .chapter, .toc .chapter-last { vertical-align: top; padding: 0px 0px 0px 14px; line-height: 15px; }
+.chapter a, .chapter a:visited, .chapter a:active, .chapter-last a, .chapter-last a:visited, .chapter-last a:active { text-decoration: none; font-size: 10px; color: #525252; font-weight: bold; }
+.chapter a:hover, .chapter-last a:hover { text-decoration: underline; color: #525252; }
+.citation { line-height: 24px; background: #4D535C; text-align: center; color: #FFFFFF; font-size: 9px; }
+.citation a, .citation a:visited, .citation a:active, .citation a:hover { color: #FFFFFF; font-size: 9px; }
+.col-list { vertical-align: top; padding: 10px 0px 10px 0px; }
+.col-right { background: no-repeat url('http://img.sparknotes.com/content/notes/icons/head-sparkit.gif') bottom; vertical-align: top; }
+.results-spc { padding-left: 10px; }
+
+/** Interior pages (all styles associated with snc3, output.pm) **/
+.text-padding, #pd-output { padding: 0px 0px 0px 10px; }
+.chapt_body { padding: 0px 10px 0px 0px; font-family: georgia, times, serif; font-size: 14px; color: #333333; }
+.para { padding-bottom: 20px; }
+.chapt_title  { padding: 0px 0px 3px 0px; font-family: georgia, times, serif; font-size: 20px; color: #0095d8; }
+.chapt_title .chapt_body_italic { font-family: georgia, times, serif; font-size: 20px; color: #0095d8; font-style: italic; }
+.chapt_subtitle, .chapt_subsubtitle { letter-spacing: 0px; font-family: georgia, times, serif; font-size: 16px; color: #666666; font-weight: bold; }
+.chapt_subtitle { padding-bottom: 10px; }
+
+.body_text, .verse_text, .chapt_body_bold { color: #333333; font-family: georgia, times, serif; font-size: 14px; padding: 0px 0px 20px 0px; }
+.body_text a, .body_text a:visited, .body_text a:hover, .body_text a:active  { line-height: 19px; font-family: georgia, times, serif; font-size: 14px; border-bottom-width: 1px; border-bottom-style: dotted; text-decoration: none; }
+.body_text li { margin-left: 15px; list-style-image: url('http://img.sparknotes.com/css_bg/circle-bullet.gif');  }
+.body_text ul { margin-left: 15px; list-style-image: url('http://img.sparknotes.com/css_bg/circle-bullet.gif');  }
+.body_text ol { margin-left: 15px; }
+
+/* psych101 'sidebar' styles */ 
+.p_sidebar_title { color: #666666; font-family: Verdana; font-size: 10px; font-weight: bold;  } 
+.p_sidebar { color: #666666; font-family: Verdana; font-size: 10px; margin-bottom: 20px; padding: 10px 30px 10px 20px;  } 
+.p_sidebar a. .p_sidebar a:visited, .p_sidebar a:hover, .p_sidebar a:active { font-size: 10px; }
+
+.verse_text a, .verse_text a: visited, .verse_text a:hover, .verse_text a:active, .calloutattribution a, calloutattribution a:visited, calloutattribution a:hover, calloutattribution a:active { line-height: 19px; font-family: georgia, times, serif; font-size: 14px; border-bottom-width: 1px; border-bottom-style: dotted; text-decoration: none; }
+.verse_text { white-space: pre; }
+.chapt_body_bold { font-weight: bold; }
+.chapt_body_italic { font-style: italic; }
+.callout { padding: 20px 0px 20px 20px;  }
+.chapt_subsubtitle { font-size: 14px; }
+.mla_citation { font: 10pt Courier, Courier New, _mono; margin-left: 30px; text-indent: -30px; }
+.small-caps { font-variant: small-caps; }
+
+/* specific to Math & Science notes: */
+.code { font: 8pt Courier, Courier New, fixed; }
+table.figure { border-collapse: collapse; margin-bottom: 15px; width: 410px; color: #333333; font-family: georgia, times, serif; font-size: 14px; }
+.figure a, .figure a:visited, .figure a:hover, .figure a:active { font-family: georgia, times, serif; font-size: 14px; border-bottom-width: 1px; border-bottom-style: dotted; text-decoration: none; }
+table.figure td, table.figure th { color: #333333; font-family: georgia, times, serif; font-size: 14px; }
+table.figure td, table.figure th { border: 1px solid #333333; padding: 5px; text-align: center; }
+table.figure th { font-weight: bold; }
+table.figure li { text-align: left; }
+
+
+/* output filers - "heada" => chapt_subtitle 
+** - plotoverview, Themesms, studyandessay pages will take on the smaller gray font
+** - sections, quiz, suggestions pages will take on the larger blue font (chapt_title)
+**
+
+.chapt_subsubtitle { font-family: georgia, times, serif; font-size: 14px; color: #666666; font-weight: bold; }
+#plotoverview .chapt_subtitle, #themesms .chapt_subtitle, #studyandessay .chapt_subtitle { font-family: georgia, times, serif; font-size: 18px; color: #666666; font-weight: bold; }
+#quiz .chapt_subtitle, #bibliography .chapt_subtitle { padding: 0px 0px 10px 0px; font-family: georgia, times, serif; font-size: 22px; color: #0095d8 }
+**/
+
+
+/* individual page overrides */
+#keyfacts .callout { padding: 5px 0px 0px 10px; } /* space between the word and its definition */
+#section { padding: 0px 10px 0px 0px; }
+#plotoverview #section, #themesms #section { padding: 0px; }
+.small_ucase { }
+.scrunch { }
+.quizsubmit { margin: 0px 0px 10px 0px; }
+
+/* classicbook page overrides */
+#pd-output { padding-right: 20px; }
+#pd-output .body_text { padding-bottom: 0px; }
+#pd-output-toc .chapter a, #pd-output-toc .chapter a:visited, #pd-output-toc .chapter a:hover, #pd-output-toc .chapter a:active { color: #525252; }
+
+.chapt-xref { text-transform: uppercase; vertical-align: top; font-family: Trebuchet MS, Tahoma; font-size: 10px; color: #4D535C; padding: 7px 0px 0px 10px; }
+.chapt-xref a, .chapt-xref a:visited, .chapt-xref a:hover, .chapt-xref a:active { border-bottom-width: 1px; border-bottom-style: dotted; text-decoration: none; font-family: Trebuchet MS, Tahoma; font-size: 10px; color: #003366; }
+
+
+/* OLD NAMES **/
+.m-text { padding: 0px 20px 0px 10px; }
+.chapt-header { padding: 0px 0px 1px 0px; font-family: georgia, times, serif; font-size: 22px; color: #0095d8 }
+.chapt-subheader { padding: 0px 0px 5px 0px; font-family: georgia, times, serif; font-size: 14px; color: #666666; font-weight: bold; }
+.chapt-text { padding: 0px 0px 20px 0px; font-family: georgia, times, serif; font-size: 14px; color: #333333; }
+.chapt-text a, .chapt-text a:visited, .chapt-text a:hover, .chapt-text a:active { font-size: 14px; border-bottom-width: 1px; border-bottom-style: dotted; text-decoration: none; }
+.in-text-ad { margin-right: 15px; }
+
+/** Popup Pages **/
+.popup-body { padding: 0px 10px 0px 10px; }
+.popup-banner { text-align: center; }
+.popup-button { text-align: center; }
+
+/** More Resources **/
+.tcontent td { vertical-align: top; }
+	
+/** Notes Navigation (defaults to guides, otherwise if it's cb, append "-cb" to style name **/
+.book-nav .left { padding: 0px 0px 0px 10px; background: #66CCFF; }
+.book-nav .left-cb { padding-left: 10px; background: #D64A00; }
+.book-nav .right { text-align: right; padding: 0px 3px 0px 3px; background: #F2F4F7; }
+.book-nav a, .book-nav a:visited, .book-nav a:hover , .book-nav a:active { color: #454545; font-size: 10px; }
+.goto-top { background: #F2F4F7; text-align: right; }
+.goto-top a, .goto-top a:visited, .goto-top a:hover , .goto-top a:active { color: #737474; font-size: 10px; }
+
+/** Letter Navigation for Guides Page **/
+
+a.testx { font-size: 25px; }
+
+.letter-nav { background: #4A525A; }
+.letter-nav td { font-family: Trebuchet MS, Tahoma, Verdana; font-size: 9px; text-transform: uppercase; color: #FFFFFF; letter-spacing: 2px; }
+.sort-row a, .sort-row a:visited, .sort-row a:hover, .sort-row a:active { color: #FFFFFF; border-bottom-width: 1px; border-bottom-style: dotted; text-decoration: none; font-family: Trebuchet MS, Tahoma, Verdana; font-size: 9px; text-transform: uppercase; letter-spacing: 2px; }
+.letter-nav .rtext { font-weight: normal; font-family: Trebuchet MS, Tahoma, Verdana; font-size: 9px; text-transform: uppercase; color: #FFFFFF; letter-spacing: 2px; }
+.letter-nav .sort-row { padding: 5px 0px 1px 10px; }
+.letter-nav .goto-row { padding: 3px 0px 6px 10px; font-size: 10px; font-weight: bold; color: #E8E8E8; font-family: Verdana; }
+.letter-nav .goto { padding-bottom: 3px; font-size: 10px; font-weight: bold; color: #E8E8E8; font-family: Verdana; }
+
+.goto a, .goto a:visited, .goto a:active, .goto a:hover, .goto .active, .goto .inactive, a.letter, a.letter:visited, a.letter:active, a.letter:hover { letter-spacing: 0px; font-size: 10px; font-weight: bold; color: #E8E8E8; font-family: Verdana; border-bottom-width: 1px; border-bottom-style: dotted; text-decoration: none; }
+.goto, .inactive { text-transform: none; font-weight: normal }
+td.compact, td.compact a a:active a:hover a:visited { text-transform: none; font-weight: normal; font-size: 9px; }
+.goto, .active { text-transform: none }
+.goto .active, .letter-nav .active { color: #66CCFF; }
+.goto .inactive { color: #999999; border-bottom-width: 0px; }
+.letter-nav .large-letter { text-align: center; font-size: 36px; font-weight: bold; font-family: Trebuchet MS, Tahoma, Verdana;  }
+
+/* Ultimate Style subchapter table of contents */
+.sub-toc-spc { padding: 0px 0px 5px 5px; }
+.sub-toc td { font-size: 9px; vertical-align: top; padding: 2px 0px 3px 0px; }
+.sub-toc a.subname, .sub-toc a.subname:visited, .sub-toc a.subname:active { font-size: 9px; color: #000000; text-transform: uppercase; font-weight: bold; text-decoration: none; }
+.sub-toc a.subname:hover { text-decoration: underline; }
+.sub-toc a.subname-on, .sub-toc a.subname-on:visited, .sub-toc a.subname-on:active { font-size: 9px; color: #FF4200; text-transform: uppercase; font-weight: bold; text-decoration: none; }
+.sub-toc a.subname-on:hover { text-decoration: underline; }
+.sub-toc td.num-on { color: #FF4200; }
+.sub-toc td.bar-sep { padding: 0px; background: repeat-x url('http://img.sparknotes.com/css_bg/x-dots.gif'); line-height: 1px; }
+.sub-toc td.left { padding: 0px 0px 0px 10px; }
+.sub-toc td.right { padding: 0px; line-height: 15px; }
+
+/* Ultimate Style interior page definitions */
+.ult-topper { padding: 0px 0px 5px 0px; }
+.ult-wrapper { width: 540px; }
+.ult-indent { padding: 0px 0px 0px 10px;}
+.book-nav .left-ult { background: #E53816; padding-left: 10px; }
+.ult-header { font-size: 16px; text-transform: uppercase; letter-spacing: 2px; border-bottom-style: solid; border-bottom-color: #000000; border-bottom-width: 5px;  }
+.ult-subheader { padding: 8px 0px 2px 0px; font-size: 9px; letter-spacing: 1px; font-weight: bold; text-transform: uppercase; border-bottom-style: dotted; border-bottom-color: #000000; border-bottom-width: 1px;}
+.ult-x-dots-black { line-height: 1px; background: repeat-x url('http://img.sparknotes.com/css_bg/x-dots-black.gif') top; }
+.ult-text { font-family: verdana, sans-serif; font-size: 10px; line-height: 14px; margin: 2px 0px 10px 0px;}
+.ult-mini-title { font-size: 9px; letter-spacing: 1px; font-weight: bold; text-transform: uppercase; }
+.ult-example { padding: 8px 0px 8px 10px; color: #4e4e4e; }
+.ult-note { margin: 8px 10px 8px 10px; padding-left: 3px; border-left-style: solid; border-left-color: #000000; border-left-width: 5px; }
+table.ult-figure { border-collapse: collapse; margin-bottom: 15px; margin-top: 10px; font-family: verdana, sans-serif; border: 0px; }
+table.ult-figure td, table.ult-figure th { color: #333333; font-size: 10px; padding: 5px; text-align: center; }
+table.ult-figure td { border: 1px solid #333333; }
+table.ult-figure th { font-weight: bold; }
+
+/** DotDir override; for Ultimate Style only: **/
+.dotdir-list-ult td.guide-title-1, .dotdir-list-ult td.guide-title-2, .dotdir-list-ult td.dl-print-1, .dotdir-list-ult td.dl-print-2  { padding: 5px 0px 5px 10px }
+
+/** DotDir (guides) **/
+.dotdir-list { }
+.guide-title-1 a, .guide-title-1 a:visited, .guide-title-1 a:hover, .guide-title-1 a:active, .guide-title-2 a, .guide-title-2 a:visited, .guide-title-2 a:hover, .guide-title-2 a:active { text-transform: none; font-family: Verdana; letter-spacing: 0px; color: #0095D8; font-size: 12px; font-weight: bold; border-color: #404040; border-bottom-width: 1px; border-bottom-style: dotted; text-decoration: none; }
+.guide-title-1, .guide-title-2 { padding: 2px 0px 2px 0px; font-family: Trebuchet MS, Tahoma, Verdana; font-size: 9px; color: #4D535C; text-transform: uppercase; letter-spacing: 3px; }
+.guide-title-1, .dl-print-1 { padding: 2px 0px 2px 10px; background: #F7F7F7; }
+.guide-title-2, .dl-print-2 { padding: 2px 0px 2px 10px; background: #FFFFFF; }
+.dl-print-1, .dl-print-2 {  text-align: center; }
+.dl-print-1 a, .dl-print-1 a:visited, .dl-print-1 a:active, .dl-print-1 a:hover, .dl-print-2 a, .dl-print-2 a:visited, .dl-print-2 a:active, .dl-print-2 a:hover { text-decoration: none; text-align: center; font-family: Trebuchet MS, Tahoma, Verdana; font-size: 9px; text-transform: uppercase; color: #6E6D6D; line-height: 12px;  }
+
+/** DotDir (cb's) **/
+.dotdir-list-cb { font-family: Trebuchet MS, Tahoma, Verdana; font-size: 9px; color: #D04900; text-transform: uppercase; letter-spacing: 3px; }
+.full_text-1, .full_text-2 { padding: 3px 0px 3px 5px; }
+.cb-title-1, .cb-title-2 { font-family: Trebuchet MS, Tahoma, Verdana; font-size: 9px; color: #D04900; text-transform: uppercase; letter-spacing: 3px; }
+.cb-title-1 a, .cb-title-1 a:visited, .cb-title-1 a:active, .cb-title-1 a:hover, .cb-title-2 a, .cb-title-2 a:visited, .cb-title-2 a:active, .cb-title-2 a:hover { text-transform: none; font-family: Verdana; letter-spacing: 0px; color: #404040; font-size: 12px; font-weight: bold; border-color: #404040; border-bottom-width: 1px; border-bottom-style: dotted; text-decoration: none; }
+.cb-title-1, .full_text-1 { background: #F7F7F7; }
+.cb-title-2, .full_text-2 { background: #FFFFFF; }
+.dotdir-list-boards .x-dots, .dotdir-list-cb .x-dots, .dotdir-list .x-dots { line-height: 1px; background: repeat-x url('http://img.sparknotes.com/css_bg/x-dots.gif') top; }
+
+/** Dotdir Boards **/
+.jumpto { background: #4D535C; padding: 0px 0px 0px 10px; }
+.jumpto td { font-family: Trebuchet MS, Tahoma, Verdana; font-size: 10px; text-transform: uppercase; color: #FFFFFF; letter-spacing: 2px; }
+.jumpto .active { color: #66CCFF; }
+.jumpto a, .jumpto a:visited, .jumpto a:active, .jumpto a:hover { font-family: Trebuchet MS, Tahoma, Verdana; font-size: 9px; text-transform: uppercase; color: #FFFFFF; letter-spacing: 2px; border-bottom-width: 1px; border-bottom-style: dotted; text-decoration: none; }
+
+.dotdir-list-boards { }
+.dotdir-list-boards .boards-left { vertical-align: top; }
+.dotdir-list-boards .boards-right { padding-left: 10px; vertical-align: top; }
+.board-note { padding: 5px 0px 0px 10px; font-family: Trebuchet MS, Tahoma, Verdana; color: #CC0000; font-size 9px; text-transform: uppercase; letter-spacing: 1px; }
+.board-note a, .board-note a:visited, .board-note a:active, .board-note a:hover { line-height: 18px; font-family: Trebuchet MS, Tahoma, Verdana; color: #CC0000; font-size 9px; text-transform: uppercase; letter-spacing: 1px; border-color: #CC0000; border-bottom-width: 1px; border-bottom-style: dotted; text-decoration: none; }
+.board-header { background: #000000; padding: 0px 0px 0px 10px; }
+.board-spc { line-height: 5px; }
+.board-title-1 a, .board-title-1 a:visited, .board-title-1 a:active, .board-title-1 a:hover, .board-title-2 a, .board-title-2 a:visited, .board-title-2 a:hover, .board-title-2 a:active { font-family: Verdana; letter-spacing: 0px; color: #0095D8; font-size: 12px; font-weight: bold; border-color: #0095D8; border-bottom-width: 1px; border-bottom-style: dotted; text-decoration: none; }
+.board-title-1 { padding: 4px 0px 4px 10px; background: #F2F4F7; }
+.board-title-2 { padding: 4px 0px 4px 10px; background: #FFFFFF; }
+
+
+
+/** SAT Novels **/
+.book-nav .left-satn { background: #DF007B;  padding-left: 10px; }
+.satn .col-cover { padding: 10px 0px 10px 10px; }
+.satn .col-list { padding: 10px 0px 10px 22px; }
+.satn div.intro-text { font-size: 10px; padding: 15px 0px 10px 0px; }
+.satn .caption-text { font-size: 14px; font-weight: bold; color: #666666; }
+.satn-toc td { padding: 0px 0px 0px 15px; line-height: 18px; background: bottom repeat-x url('http://img.sparknotes.com/content/notes/backgrounds/dot-row-gray.gif'); }
+.satn td.gray-bar { line-height: 5px; background: #666666; }
+
+.satn .intro-text a { color: #3399CC; }
+.satn-toc td a, .satn-toc td a:visited, .satn-toc td a:active { color: #3399CC; font-size: 10px; font-weight: bold; text-decoration: none; }
+.satn-toc td a:hover { color: #3399CC; font-size: 10px; font-weight: bold; text-decoration: underline; }
+
+/** NO FEAR **/
+.book-nav .left-nf { background: #404040; }
+.title-img-nf { padding: 10px 0px 6px 10px; }
+div.nf-bottom-spc { padding-bottom: 30px; }
+.nf .col-cover { text-align: right; padding: 10px 0px 0px 0px; vertical-align: top; }
+.nf .col-list { padding: 10px 0px 10px 22px; }
+.nf .header { font-weight: bold; color: #666666; font-size: 14px; padding-bottom: 15px; }
+.nf div.intro-text { font-size: 10px; padding: 0px 0px 10px 0px; }
+.nf td.gray-bar { line-height: 5px; background: #666666; }
+.nf-dropdown { margin-bottom: 2px; }
+.nf-int .head-l { Font-family: Georgia, Times, Serif; font-size: 20px; color: #0095D8; padding: 10px 0px 10px 10px; }
+.nf-int .head-r { Font-family: Georgia, Times, Serif; font-size: 20px; color: #0095D8; padding: 10px 0px 10px 40px; }
+.nf-int .orig { background: #F2F4F7;  padding: 5px 15px 3px 10px; vertical-align: top; line-height: 14px; }
+.nf-int .orig-sep {  background: #F2F4F7; padding: 10px 10px 10px 10px; }
+.nf-int .mod { padding: 5px 25px 10px 40px;  vertical-align: top; line-height: 14px; }
+.nf-int .mod-sep { padding: 10px 0px 10px 40px; }
+.nf-int .cname { font-size: 12px; Font-family: Georgia, Times, Serif; color: #000000; font-weight: bold; }
+
+/*  iPod page */
+.more_link { color: #3399CC; font-size: 10px; font-weight: bold; text-decoration: none; }
+.more_link a, .more_link a:visited, .more_link a:active { color: #3399CC; font-size: 10px; font-weight: bold; text-decoration: none; }
+.more_link a:hover {  color: #3399CC; font-size: 10px; font-weight: bold; text-decoration: underline; }
+
+.aud {  background: bottom repeat-x url('http://img.sparknotes.com/content/notes/backgrounds/dot-row-gray.gif');  line-height: 18px; color: #666d76; font-size: 9px; font-weight: normal; text-decoration: none; }
+.aud a, .aud a:visited, .aud a:active { color: #666d76; font-size: 9px; font-weight: normal; text-decoration: none; }
+.aud a:hover { color: #666d76; font-size: 9px; font-weight: normal; text-decoration: underline; }
+
+
+.ipod-aud { padding: 0px 0px 0px 15px; line-height: 18px; background: bottom repeat-x url('http://img.sparknotes.com/content/notes/backgrounds/dot-row-gray.gif'); }
+.ipod-aud a, .ipod-aud a:visited, .ipod-aud a:active { color: #3399CC; font-size: 10px; font-weight: bold; text-decoration: none; }
+.ipod-aud a:hover { color: #3399CC; font-size: 10px; font-weight: bold; text-decoration: underline; }
+
+#ipod_sponsor  { position: absolute; top: 243px; left: 220px; }
+.ipod_sponsor { color: #e1001a; font-size: 10px; font-weight: bold; text-decoration: none; line-height: 10px; }
+.ipod_sponsor a:link, .ipod_sponsor a:visited { color: #e1001a; font-size: 10px; font-weight: bold; text-decoration: none; }
+.ipod_sponsor a:hover, .ipod_sponsor a:active {  color: #e1001a; font-size: 10px; font-weight: bold; text-decoration: underline; }
+
+

@@ -1,0 +1,133 @@
+#navcontainer {
+	display: none;
+}
+
+#navcontainer_side {
+	font-size: 11px;
+	line-height: normal;
+	position: relative;
+	width: 200px;
+	margin-top: 20px;
+}
+
+* html #navcontainer_side {
+}
+
+* html #sidebar {
+	position: relative;
+	left: 0px;
+}
+
+* html #sidebarContainer {
+	position: relative;
+	
+}
+
+
+#navcontainer_side .current {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+
+
+/* MAIN - MENU 0 */
+
+
+
+#navcontainer_side ul
+{
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+	width: 200px;
+}
+
+#navcontainer_side li { 
+	margin: 0 0 0 0px;
+	padding: 0px;
+}
+
+
+#navcontainer_side a
+{
+	display: block;
+	text-decoration: none;
+	text-indent: 17px;
+	border-bottom: 1px solid #D1D1D1;
+	height: 20px;
+	padding: 5px 5px 0 5px;
+}
+
+#navcontainer_side a:hover
+{
+	text-decoration: none;
+}
+
+
+
+/* SUBLEVEL - MENU 1 */
+
+
+
+#navcontainer_side ul ul li { margin: 0 0 0 0;}
+
+#navcontainer_side ul ul a
+{
+	
+	display: block;
+	text-decoration: none;
+	text-indent: 30px;
+}
+
+#navcontainer_side ul ul a:hover
+{
+	text-decoration: none;
+}
+
+
+
+/* SUBLEVEL - MENU 2 */
+
+
+
+#navcontainer_side ul ul ul li { margin: 0 0 0 0;}
+
+#navcontainer_side ul ul ul a
+{
+	display: block;
+	text-decoration: none;
+	text-indent: 40px;
+}
+
+#navcontainer_side ul ul ul a:hover
+{
+	text-decoration: none;
+}
+
+
+
+/* SUBLEVEL - MENU 3 */
+
+
+
+#navcontainer_side ul ul ul ul li { margin: 0 0 0 0;}
+
+#navcontainer_side ul ul ul ul a
+{
+	display: block;
+	text-decoration: none;
+	text-indent: 50px;
+}
+
+#navcontainer_side ul ul ul ul a:hover
+{
+	text-decoration: none;
+}
+
+#logo_side {
+	display: block;
+	text-align: center;
+	margin-bottom: 10px;
+	margin-top: 20px;
+}

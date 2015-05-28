@@ -1,0 +1,172 @@
+
+body { color: #003000; background-color: #FFFFDD; font-size: 10pt; font-family: Arial, Helvetica; background-image: url("images/background.jpg"); margin-top:5px;  }
+#detail {background-image: none}
+table{ font-size: 10pt; empty-cells:show;}
+h1 { color: #330077; font-size: 14pt; }
+h2 { color: #330077; font-size: 12pt; } 
+h3 { color: #330077; font-size: 11pt }
+
+a:link { color: #330077; text-decoration: none; }
+a:visited { color: #660088; text-decoration: none; }
+a:active { color: #660088; text-decoration: none; }
+a:hover { color: #663388; text-decoration: underline; }
+
+a:link img {border-style:none; border-width:0px;}
+a:visited img {border-style:none; border-width:0px;}
+a:active img {border-style:none; border-width:0px;}
+a:hover img {border-style:none; border-width:0px;}
+a:focus img {border-style:none; border-width:0px;}
+
+.bold {font-weight: bold;}
+.boldu {font-weight: bold; text-decoration: underline;}
+h1.heading { font-size: 18pt; text-align:center; }
+h1.h0 { font-size: 20pt; }
+h1.h2 { font-size: 12pt; }
+
+ul { margin-top:2px;margin-bottom:2px }
+
+.aligncenter {text-align:center;}
+
+.alignright {text-align:right;}
+
+.alignmiddle {vertical-align:middle;}
+
+.buttonicon {width:32px;height:32px;border-style:none;border-width:0px; cursor:pointer;}
+
+.buttonicon2 {width:24px;height:24px;border-style:none;border-width:0px; cursor:pointer;}
+
+.buttontoc {clear:left; float:left;margin-right: 5px; cursor:pointer;}
+
+.buttontoc2 {clear:right; float:right;margin-left: 10px; cursor:pointer;}
+
+.caption {font-size: smaller;}
+
+.childrenindent {margin-left: 15px; }
+
+.citation {margin: 5px; border:1px; border-color:black; background: #ccc;}
+
+.citationpic {margin: 5px 275px 5px 5px; border:1px; border-color:black; background: #ccc;}
+
+.clear {clear: both;}
+
+.clearright {clear: right;}
+
+.clearleft {clear: left;}
+
+.customtagtable td {border:thin inset #330077;padding:0px 5px 0px 5px;}
+
+.floatright {clear: right;float: right;}
+
+.floatleft  {clear:left; float:left;}
+
+.googlemap {text-align:center; width:90%; height:80%; margin-left: auto; margin-right: auto; position: relative;}
+
+.heading { font-size: 18pt; }
+
+.hide {display: none; }
+
+.icon {vertical-align:middle;width:16px;height:16px;border:0px;}
+
+.iconsmall {vertical-align:middle;width:12px;height:12px;border:0px;}
+
+.indent {text-indent: 20px;}
+
+.infoWindow {text-align: left; font-size: smaller;}
+
+.infoScroll {width:400px; height:150px; overflow:auto;}
+
+.inline {display: inline;}
+
+.footnote {font-size: smaller; font-style:italic;}
+
+.nobr { white-space: nowrap; }
+
+.note {font-size: smaller; font-style:italic;}
+
+.nowrap { white-space: nowrap;}
+
+.std {font-size:10pt;font-style:normal;margin-left:0px;}
+
+.pic {border-style:groove;cursor:pointer;text-align:left;}
+
+.picright {border-style:groove;cursor:pointer;text-align:left;}
+
+.picleft {border-style:groove;cursor:pointer;float:left;}
+
+.table1 td {vertical-align:top;}
+
+.show {display: inline;}
+
+.small {font-size: smaller;}
+
+.subhead {color: #330077;}
+
+.widthlarge {width: 250px;}
+
+.widthpaddedsmall {width: 115px;}
+
+.widthpaddedlarge {width: 265px;}
+
+.widthsmall {width: 100px;}
+
+.box { display: inline; }
+.m { background: #FFCCCC; }
+.f { background: #9999FF; }
+.iM { background: deepskyblue;}
+.iF { background: deeppink;}
+.iP { background: green; }
+#text { border: none; position: relative; left: -3px; top: -3px; }
+#box { margin-left: 4px; margin-right: 4px; position: relative; background: #666; margin: 4px; }
+.chart img { margin: 0px; border: 0px; padding: 0px; vertical-align: middle; }
+
+/* see http://www.positioniseverything.net/easyclearing.html for an explanation of the following */
+
+.clearfix:after {
+    content: "."; 
+    display:block; 
+    height: 0px; 
+    clear: both; 
+    visibility: hidden;
+}
+
+.clearfix {display: -moz-inline-block;}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display:block;}
+/* End hide from IE-mac */
+
+/* end clearfix */
+
+/*
+Explorer Tree 1.4
+=================
+by Andrew Gregory <andrew@scss.com.au>
+http://www.scss.com.au/family/andrew/webdesign/explorertree/
+
+This work is licensed under the Creative Commons Attribution License. To view a
+copy of this license, visit http://creativecommons.org/licenses/by/1.0/ or send
+a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305,
+USA.
+
++ Minor amendment by Ron to add list images, cursor styling & 2nd set of images
+*/
+
+/* Get the bullets inside their LI's, so they're clickable. */
+ul.xT, ul.xT ul, ul.xT li { margin: 0px; padding: 0px; text-indent:0px; }
+ul.xT li { list-style-position: inside; cursor: pointer; }
+ul.xT ul { padding-left: 14px; } /* sublist indentation */
+/* Set the bullet images */
+ul.xT li { list-style-image: url(images/space.gif); list-style-type: square; }
+ul.xT li.xT-o { list-style-image: url("images/arrow.hide.gif"); list-style-type: circle; }
+ul.xT li.xT-c { list-style-image: url("images/arrow.show.gif"); list-style-type: disc; }
+ul.xT li.xT2-o {list-style-position: inside; list-style-image: url("images/arrow2.hide.gif"); list-style-type: circle; }
+ul.xT li.xT2-c {list-style-position: inside; list-style-image: url("images/arrow2.show.gif"); list-style-type: disc; }
+ul.xT li.xT3-o {list-style-position: inside; list-style-image: url("images/arrow3.hide.gif"); list-style-type: circle; }
+ul.xT li.xT3-c {list-style-position: inside; list-style-image: url("images/arrow3.show.gif"); list-style-type: disc; }
+ul.Xt li.xT-b   { list-style-image: url("images/blank14.gif"); list-style-type: circle; }
+/* Actually show and hide sublists */
+ul.xT li.xT-o ul, ul.xT li.xT2-o ul, ul.xT li.xT3-o ul { display: block; }
+ul.xT li.xT-c ul, ul.xT li.xT2-c ul, ul.xT li.xT3-c ul { display: none; }
+ul.xT ul.xT-n li.xT-n { color:black; cursor: default;}
+ul.XT li.xT-h { color: #330077;}

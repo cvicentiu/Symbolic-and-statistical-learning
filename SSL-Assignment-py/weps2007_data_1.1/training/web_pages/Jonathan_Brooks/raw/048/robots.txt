@@ -1,0 +1,27 @@
+User-agent: *
+Allow: / 
+Disallow: /cgi-bin/
+Disallow: /newsletter/data/
+
+User-agent: msnbot
+Crawl-delay: 15
+
+User-agent: Teoma
+Crawl-delay: 10
+
+User-agent: Slurp
+Crawl-delay: 20
+
+User-agent: aipbot
+Disallow: /
+
+User-agent: BecomeBot
+Disallow: /
+
+User-agent: psbot
+Disallow: /
+
+User-agent: UbiCrawler
+Disallow: /
+
+

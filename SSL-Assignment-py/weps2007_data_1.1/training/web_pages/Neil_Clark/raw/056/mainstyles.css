@@ -1,0 +1,2453 @@
+/* CSS Document */
+
+* {
+margin:0;
+padding:0;
+
+}
+
+img {
+padding:0;
+margin:0;
+border:0;}
+
+
+
+
+
+a img {
+border:0;}
+
+a:hover img {
+text-decoration:none;}
+
+
+.randompic {
+margin:0;
+padding:0;
+}
+
+img.audioarchive {
+margin-top:3px;
+margin-bottom:3px;
+}
+
+
+.gulogo{
+padding-right:5px;}
+
+
+/* Color Formatting for adhoc colours
+
+.blue { color: #284f77; }
+.darkgrey { color: #333; }
+.black {color: #000000; }
+.bold {font-weight: bold;}
+
+*/
+
+body {
+font-size:62.5%;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+width:940px;
+color:#333;
+background-color:#fff;
+margin-top:8px;
+margin-left:25px;
+margin-bottom:10px;
+
+}
+
+/*\*//*/ 
+body {
+font-size:72%;
+} 
+/**/ 
+
+a{color:#284f77;
+color:#CC2800;
+color:#CC2800;
+text-decoration:none;}
+
+a:link{color:#284f77;
+color:#CC2800;
+color:#CC2800;
+text-decoration:none;}
+
+a:visited{
+color:#CC2800;
+text-decoration:none;}
+
+
+a:hover{color:#CC2800;
+text-decoration:underline;}
+
+a:active{color:#173151;
+color:#CC2800;
+text-decoration:none;}
+
+p {
+margin-bottom: 10px;
+}
+
+
+h1 {
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:2.8em;
+line-height:1.1em;
+font-weight: normal;
+color: #333;
+}
+
+
+h1.search {
+color:#999999;
+}
+
+
+
+
+h2 {
+font-size:1.2em;
+color:#999;
+}
+
+
+
+
+
+/* Regpss */
+
+
+#regpss {
+height:24px;
+font-size:0.9em;
+line-height:1.25em;
+
+
+width:940px;
+}
+
+#regpss img {
+display:inline;
+vertical-align:middle;
+border:0;
+}
+
+
+#regpssstatus {
+width:640px;
+
+float:left;}
+
+
+#regpssstatusform {
+
+top:12px;
+width:270px;
+height:24px;
+display:inline;
+float:right;
+text-align:right;
+
+}
+
+#headersuperbanner {
+text-align:center;
+margin-top:8px;
+border-top:1px solid #ccc;
+border-bottom:1px solid #ccc;
+padding-top:8px;
+padding-bottom:8px;
+background-color:#fff;
+}
+
+
+
+
+
+
+
+#logoheader {
+height:20px;
+width:620px;
+margin-top:20px;
+float:left;
+}
+
+#logoheaderleftcolumn {
+height:20px;
+width:620px;
+margin-right:0px;
+float:left;
+
+}
+
+
+#logoheaderleftcolumn img {
+vertical-align:middle;
+display:inline;
+margin-right:120px;
+float:left;
+}
+
+
+#logoheaderrightcolumn {
+height:20px;
+width:295px;
+text-align:right;
+vertical-align:middle;
+float:right;
+margin-top:20px;
+}
+
+#logoheaderrightcolumn form {
+height:20px;
+color:#333;
+vertical-align:middle;
+}
+
+
+
+
+
+#top_navigation_menu {
+width:940px;
+float:left;
+display:inline;
+text-align:left;
+margin-top:10px;
+background-color:#ccc;
+}
+
+#top_navigation_menu ul {
+list-style:none;
+padding: 0; 
+margin: 0; 
+}
+
+#top_navigation_menu li {
+float: left; 
+
+}
+
+
+#top_navigation_menu li a {
+height: 24px; 
+line-height: 2.2em; 
+float: left;
+ margin:0;
+padding: 0 5px; 
+display: block; 
+
+text-decoration: none; 
+text-align: center;
+color:#333;
+}
+
+#top_navigation_menu li a:hover {
+background-color:#CC2800;
+color:#fff;
+}
+
+
+/* and so begins the serving to ie mac 5.0 */
+
+
+/*\*//*/  
+#top_navigation_menu li a {
+float: none;
+
+}
+
+li.home{
+width:42px;
+}
+
+
+
+li.contributors{
+width:106px;
+}
+
+li.subjects{
+width:84px;
+}
+
+li.editors{
+width:85px;
+}
+
+li.stevebellx{
+width:122px;
+}
+
+li.danchung{
+width:140px;
+}
+
+li.audio{
+width:110px;
+}
+
+li.about{
+width:95px;
+}
+
+li.webfeeds{
+width:65px;}
+
+li.otherblogs{
+width:78px;
+}
+
+
+
+/*this rule makes the nav a state, in a good way*/
+
+#home li.home a, #contributors li.contributors a, #subjects li.subjects a, #editorsblog li.editors a,  #stevebellx li.stevebellx a, #danchung li.danchung a, #audio li.audio a, #about li.about a, #webfeeds li.webfeeds a, #otherblogs li.otherblogs a
+{
+color:#fff;
+background-color:#a39e94;
+}
+
+
+
+
+
+
+/*the date rule below applies to all inside pages - but not the front, because the spacing is different */
+
+#date {
+font-family:Verdana, Arial, Helvetica, sans-serif;
+text-align:right;
+float:right;
+font-size:0.9em;
+line-height:1.25em;
+color:#333;
+border:0px solid green;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#breadcrumbs {
+
+padding-top:6px;
+height:32px;
+background-color:#FFFFFF;
+float:left;
+width:900px;
+}
+
+#breadcrumbs ul {
+list-style:none;
+margin-top:10px;
+margin-left:5px;
+}
+
+#breadcrumbs li {
+display:inline;
+margin-right:12px;
+
+}
+
+
+
+
+
+
+/*
+
+All the pages bar the Main Index and the About this page are made of the heads plus two columns.
+
+twocolumnleftcolumn and twocolumnrightcolumn
+
+the twocolumnleftcolumn can have a thinborder in the editors' blog, audio and webfeeds pages - where it's called #twocolumnleftcolumnthinborder
+
+*/
+
+#pancolumnheader {
+width: 940px;
+border-top: 10px solid #CCC9C2;
+padding-top: 8px;
+height: 70px;
+float:left;
+margin:0;
+}
+
+#pansubcolumnheader {
+width: 940px;
+border-top: 10px solid #CCC9C2;
+padding-top: 8px;
+height: 50px;
+float:left;
+margin:0;
+}
+
+
+#pansubcolumnheader h1{
+font-size:1.8em;
+}
+
+.wrapper{
+float:left;
+background: #fff url(http://commentisfree.guardian.co.uk/site_imagery/linebg.gif) 0 0 repeat-y;
+width:940px;
+}
+
+
+
+
+
+#twocolumnleftcolumn {
+width:620px;
+float:left;
+border-top: 10px solid #ccc;
+/*march 24 */
+padding-top:10px;
+
+}
+
+
+#twocolumnleftcolumn h2{
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:2.8em;
+line-height:1.1em;
+font-weight: normal;
+color: #999;
+}
+
+
+
+#twocolumnleftcolumn h2.about{
+padding-top: 2px;
+height: 70px;
+margin:0;
+border-bottom:1px solid #ccc;
+margin-bottom:10px;
+}
+
+#twocolumnleftcolumn h2.contact{
+padding-top: 2px;
+height: 70px;
+margin:0;
+border-bottom:1px solid #ccc;
+border-top:10px solid #ccc;
+margin-bottom:10px;
+margin-top:20px;
+}
+
+#twocolumnleftcolumn p{
+font-size:1.2em;
+line-height:1.3em;
+
+}
+address{
+font-size:1.2em;
+line-height:1.3em;
+
+}
+
+
+
+
+#twocolumnleftcolumnthinborder {
+width:620px;
+float:left;
+border-top:1px solid #ccc;
+padding-top: 10px;
+margin:0;
+}
+
+/*=chung */
+
+#twocolumnleftcolumnthinborderchung {
+width:620px;
+float:left;
+border-top:0px solid #ccc;
+padding-top: 0px;
+margin:0;
+margin-top:-5px;
+}
+
+
+
+
+.danchunggallerylistingitem img{
+float:right;
+}
+
+
+.danchunggallerylistingitem{
+margin:0;
+height:60px;
+padding:10px;
+margin-bottom:10px; 
+padding-top:0px;
+}
+
+
+
+
+
+
+.yellowcolumnwidgetchung {
+margin:0;
+padding:0;
+width:300px;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+background-color: #fff;
+border-top: 1px solid #ccc;
+margin-bottom: 10px;
+padding-bottom: 5px;
+}
+
+.yellowcolumnwidgetchung h2 {
+background-color: #fff;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:1.1em;
+line-height:1.2em;
+color:#333;
+padding-bottom:15px;
+padding-top:2px;
+padding-left: 10px;
+border-bottom: 1px solid #ccc;
+margin-bottom: 8px;
+
+}
+
+
+/* Dan Chung Galleries Sidebar */
+
+.galleryentry {
+height: 70px;
+padding-top: 10px;
+padding-bottom: 5px;
+padding-right: 10px;
+border-bottom: 1px solid #ccc;
+}
+
+.galleryentry img {
+float: right;
+vertical-align: top;
+}
+
+.galleryentry h3 {
+padding-left: 10px;
+font-weight: bold;
+float: left;
+width: 190px;
+font-size:1.1em;
+}
+
+.galleryentry p {
+padding-left: 10px;
+
+clear: left;
+float: left; 
+width: 190px;
+}
+
+
+
+
+
+#twocolumnleftcolumnthinborderthisweeks {
+width:620px;
+float:left;
+border-top:1px solid #ccc;
+margin:0;
+padding-top: 0px;
+
+}
+
+
+
+#twocolumnrightcolumn {
+float:right;
+width:300px;
+border-left: 1px #ccc solid;
+padding-left: 10px;
+
+}
+
+
+
+/* The top of the twocolumnleftcolumn 
+
+The top of the twocolumnleftcolumn can be either split into two, as in the author pages, or one panheadline, as in every other page
+
+*/
+
+#twocolumnleftcolumninsideleftcolumntop {
+width:140px;
+float:left;
+height:160px;
+margin:0;
+padding:0;
+border:0;
+border-bottom:1px solid #ccc;
+
+
+}
+
+
+
+
+
+#twocolumnleftcolumninsiderightcolumntop {
+/*ports in a storm ABABA*/
+width:460px;
+float:right;
+height:140px;
+padding-bottom: 20px;
+border-bottom:1px solid #ccc;
+}
+
+
+
+
+
+
+
+
+#twocolumnleftcolumninsiderightcolumntop h1{
+/*march 24*/
+margin-top:-4px;
+padding-bottom:0px;}
+
+
+#twocolumnleftcolumnpancolumntop {
+padding-bottom:20px;
+width: 600px;
+height: 140px;
+}
+
+#twocolumnleftcolumnpansub2columntop {
+padding-bottom:20px;
+width: 600px;
+height: 90px;
+
+}
+
+
+#twocolumnleftcolumntopbaselinetext {
+position: relative;
+margin-top:-43px;
+color:#666;
+margin-bottom:23px;
+font-size:1.2em;
+}
+
+
+
+
+
+/* The main body of the twocolumnleftcolumn 
+
+*/
+
+#twocolumnleftcolumninsideleftcolumn {
+/* ppp latest posts*/
+width:140px;
+float:left;
+padding-top:6px;
+
+
+}
+
+#twocolumnleftcolumninsideleftcolumn h3 {
+font-weight: bold;
+font-family: verdana;
+font-size: 1.2em;
+}
+
+#twocolumnleftcolumninsideleftcolumn h2 {
+font-weight: bold;
+font-family: verdana;
+font-size: 1.3em;
+color:#333333;
+padding-bottom:2px;
+}
+
+#twocolumnleftcolumninsideleftcolumn h2.editor{
+margin:0;
+font-size: 1.1em;
+margin-bottom:7px;
+padding-top:6px;
+
+}
+
+#twocolumnleftcolumninsideleftcolumn p{
+margin-bottom:0;}
+
+
+.standfirst{
+/*used in article */
+font-size:1.3em;
+color:#666;
+padding-top:4px;
+}
+
+
+#twocolumnleftcolumninsiderightcolumn {
+/*article body */
+width:460px;
+float:right;
+padding-top:10px;
+margin-bottom:30px;
+}
+
+
+
+#twocolumnleftcolumninsiderightcolumn p{
+padding:0;
+margin:0;
+font-size:1.2em;
+line-height:1.4em;
+margin-bottom:7px;
+
+}
+
+#twocolumnleftcolumninsiderightcolumn p.namedate{
+padding:0;
+margin:0px;
+
+font-size:1.1em;
+}
+
+
+
+
+#twocolumnleftcolumninsiderightcolumn h2{
+margin-bottom: 8px;
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:1.8em;
+line-height:1.1em;
+font-weight: normal;
+color: #333;
+}
+
+
+#twocolumnleftcolumninsiderightcolumn h2.subheadtop{
+/*used in profile page */
+padding:0;
+margin:0;
+font-size:1.1em;
+margin-top:-4px;
+padding-bottom:14px;
+margin-bottom:5px;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-weight: bold;
+
+}
+
+
+#twocolumnleftcolumninsiderightcolumn h2.subhead{
+/*used in profile page */
+padding:0;
+margin:0;
+font-size:1.1em;
+border-top:1px solid #ccc;
+
+padding-bottom:14px;
+margin-bottom:10px;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-weight: bold;
+padding-top:4px;
+margin-top:20px;
+
+}
+
+
+
+
+/*= Comments Styling */
+
+
+
+
+
+
+#twocolumnleftcolumn #twocolumnleftcolumninsideleftcolumn #comments div.commentheader p{
+font-size:1.0em;
+}
+
+
+#twocolumnleftcolumn #twocolumnleftcolumninsideleftcolumn #comments div.commentheader2 p{
+font-size:1.0em;
+}
+
+
+
+
+
+#comments {
+clear:both;
+border-top:10px solid #CECECE;
+padding-top:5px;
+margin-top:35px;
+
+}
+
+#comments h3 {
+padding:0;
+margin:0;
+margin-left:160px;
+margin-bottom: 20px;
+font-size:1.3em;
+
+}
+#comments hr{
+border: none 0; 
+border-top: 1px solid #ccc;/*the border*/ 
+
+height: 1px;/*whatever the total width of the border-top and border-bottom equal*/ 
+}
+
+.commentheader p.closed {
+padding-bottom:10px;
+border-bottom:1px solid #ccc;
+clear:left;
+width:620px;
+
+padding-left:161px;
+margin-top:-18px;
+ 
+voice-family: "\"}\""; 
+voice-family: inherit; 
+width: 459px; 
+
+}
+
+
+
+
+.commentheader {
+padding-bottom:10px;
+
+}
+
+.commentheader2 {
+margin-top:10px;
+float:left;
+border-top:1px solid #ccc;
+width:620px;
+}
+
+
+.commentheader2 p {
+width: 455px;
+float: right;
+margin-top: -25px;
+padding-top:35px;
+}
+
+
+.commentheader p {
+padding-top:35px;
+float: right;
+margin-top: -25px;
+font-size:1.0em;
+width: 455px;
+}
+
+#comments form {
+padding-top:10px;
+margin-left:160px;
+
+}
+
+.individualcomment {
+clear:both;
+margin-top:10px;
+border-top:1px solid #ccc;
+
+}
+
+.commentsleft {
+padding-top:5px;
+width:140px;
+float:left;
+
+}
+
+.commentsright {
+margin-top:5px;
+margin-bottom:5px;
+padding-bottom: 20px;
+width:460px;
+float:right;
+
+}
+
+.commentsright p {
+padding-left:5px;
+padding:0;
+font-size:1.2em;
+margin-bottom:7px;
+}
+
+.reportthiscomment {
+padding-left:5px;
+padding-top:3px;
+color:#999;
+}
+
+#commentsubmissionform {
+width: 600px;
+clear: both;
+}
+
+
+#commentsformleft {
+margin-top:70px;
+width:130px;
+float:left;
+}
+
+#commentsformright {
+margin-top:20px;
+margin-bottom:5px;
+padding-bottom: 20px;
+width:450px;
+float:right;
+}
+
+#commentsformright form {
+width: 450px;
+margin-top: 20px;
+}
+
+#commentsformright input {
+margin-top: 20px;
+}
+
+#commentsformright textarea {
+width: 420px;
+}
+
+
+#comments .commentheader p.note{
+font-size:1.0em;
+
+}
+
+#comments .commentheader2 p.note{
+font-size:1.0em;
+
+}
+
+
+
+
+/* The Yellow Column Widgets */
+
+.yellowcolumnwidget {
+margin:0;
+padding:0;
+width:300px;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+background-color: #eec;
+border-top: 1px solid #ccc;
+margin-bottom: 10px;
+padding-bottom: 5px;
+}
+
+
+.yellowcolumnwidgetfeed {
+margin:0;
+padding:0;
+width:300px;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+background-color: #eec;
+border-top: 1px solid #ccc;
+padding-bottom: 5px;
+}
+
+
+
+.yellowcolumnwidgetfeed h2 {
+background-color: #eec;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:1.1em;
+line-height:1.2em;
+color:#333;
+padding-bottom:15px;
+padding-top:2px;
+padding-left: 10px;
+
+border-bottom: 1px solid #ccc;
+margin-bottom: 8px;
+
+}
+
+
+.yellowcolumnwidget h2 {
+background-color: #eec;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:1.1em;
+line-height:1.2em;
+color:#333;
+padding-bottom:15px;
+padding-top:2px;
+padding-left: 10px;
+
+border-bottom: 1px solid #ccc;
+margin-bottom: 8px;
+
+}
+
+.yellowcolumnwidgettwocolumnlistingleft {
+width:130px;
+padding-left:10px;
+margin-right:9px;
+float:left;
+
+}
+
+
+
+
+
+
+.yellowcolumnwidgettwocolumnlistingright {
+background-color: #eec;
+width:130px;
+padding-left:10px;
+
+/*for some reason ie6 pc sees this as 10 (double whatever you put in it */
+float:right;
+
+
+padding-right:10px;
+
+}
+
+
+
+.yellowcolumnwidgettwocolumnlistingleft h2 {
+margin-left: -10px;
+}
+
+.yellowcolumnwidgettwocolumnlistingleft h3, p {
+font-size:1.0em;
+}
+.yellowcolumnwidgettwocolumnlistingleft p {
+margin:0;
+padding:0;
+padding-bottom:8px;
+}
+
+
+
+.yellowcolumnwidgettwocolumnlistingright h2 {
+margin-left: -10px;
+margin-right: -10px;
+}
+
+.yellowcolumnwidgettwocolumnlistingright h3 {
+font-size:1.0em;
+}
+
+.yellowcolumnwidgettwocolumnlistingright p {
+margin:0;
+padding:0;
+padding-bottom:8px;
+}
+
+
+.yellowcolumnwidgettwocolumnlistingpicture {
+margin-bottom:8px;
+
+}
+
+.yellowcolumnwidgettwocolpicture{
+margin-left:10px;
+margin-bottom:8px;}
+
+.yellowcolumnwidgetfooterlink {
+clear: both;
+font-weight:bold;
+padding-top:10px;
+margin-left:10px;
+margin-bottom:10px;
+}
+
+
+.yellowcolumnwidgetfooterlinkclean {
+clear: both;
+padding:0;
+margin-top:0px;
+margin-left:10px;
+margin-bottom:10px;
+}
+
+
+/* = yellow lists */
+
+.yellowcolumnwidgettwocolumnlistingleft ol {
+margin-top:8px;
+padding:0;
+margin:0;
+
+padding-left:15px;
+padding-right:5px;
+
+}
+
+.yellowcolumnwidgettwocolumnlistingright ol {
+margin-left:0px;
+margin-top:8px;
+padding-left:15px;
+margin-right:5px;
+
+}
+
+
+
+.yellowcolumnwidgettwocolumnlistingleft li {
+margin-bottom:5px;
+padding-right:5px;
+background:none;
+}
+
+.yellowcolumnwidgettwocolumnlistingright li {
+margin-bottom:5px;
+padding-right:5px;
+}
+
+
+
+
+/* Contributors A-Z */
+
+ul.contributorsaz {
+margin-top: 28px;
+padding-bottom: 9px;
+border-bottom: 1px solid #ccc;
+list-style: none;
+}
+
+ul.contributorsaz li{
+list-style: none;
+display: inline;
+margin-right: 0px;
+font-size:1.1em;
+
+}
+
+/*Author entry */
+
+.authorazentry {
+/*
+*/
+padding:0;
+padding-bottom:20px;
+
+border-top:1px solid #ccc;
+margin:0;
+border-top:0;
+
+
+}
+
+.letter {
+clear:both;
+border-top:1px solid #ccc;
+}
+#letterA {
+border:0;}
+
+
+.letter img{
+padding-top:5px;
+}
+
+
+.authorazentry h1{
+margin:0;
+padding:0;
+font-size:2.0em;
+line-height:1.2em;
+margin-bottom:6px;
+
+}
+
+#twocolumnleftcolumninsiderightcolumn .authorazentry p{
+padding:0;
+margin:0px;
+}
+
+.authorbio{
+padding:0;
+margin:0;}
+
+.authorbio p{
+padding:0;
+margin:0;
+border:0;
+}
+
+/* Subjects A-Z */
+#twocolumnleftcolumninsiderightcolumn .subjectazentry ul{
+list-style:none;}
+
+#twocolumnleftcolumninsiderightcolumn .subjectazentry ul{
+font-size:1.2em;
+line-height:1.4em;
+}
+
+.subjectazentry {
+border-top:0;
+padding-top:4px;
+padding-bottom:20px;
+margin-top:-10px;
+
+margin:0;
+}
+
+/* Weekly Archive */
+
+.weeklyarchive ul {
+margin-top:20px;
+border-top: 1px solid #ccc;
+padding-top: 8px;
+list-style: none;
+}
+
+.weeklyarchive ul li{
+list-style: none;
+}
+
+.archivedateheader {
+border-top:1px solid #ccc;
+padding-top:4px;
+height:30px;
+}
+
+
+#twocolumnleftcolumninsideleftcolumn h3.archivedateheaderthisweeks{
+margin-top:-6px;
+border-top:0;
+}
+
+
+/* The Main Index Page Styles */
+
+#mainindexlogoheader {
+height:35px;
+width:620px;
+margin-top:20px;
+float:left;
+margin-bottom:0;
+background-color:#fff;
+}
+
+
+
+#mainindexlogoheaderleftcolumn {
+height:35px;
+width:620px;
+margin-right:20px;
+}
+
+#todaysdate {
+font-family:Verdana, Arial, Helvetica, sans-serif;
+text-align:right;
+float:right;
+font-size:1.0em;
+line-height:1.25em;
+color:#333;
+
+padding-top:20px;
+
+
+
+}
+
+#mainindexlogoheaderleftcolumn img {
+vertical-align:middle;
+display:inline;
+margin-right:120px;
+float:left;
+}
+
+
+#mainindexlogoheaderrightcolumn {
+height:35px;
+padding:0;
+text-align:right;
+
+float:right;
+margin-top:20px;
+background-color:#fff;
+
+}
+
+#mainindexlogoheaderrightcolumn form {
+height:35px;
+padding-top:16px;
+color:#333;
+vertical-align:middle;
+}
+
+
+#mainindexcolumnleft {
+width:220px;
+float:left;
+margin-top:20px;
+
+/*background-color:green;*/
+}
+
+#mainindexcolumnleft h2{
+width:220px;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:1.1em;
+line-height:1.2em;
+font-weight: bold;
+color:#333;
+padding-bottom:15px;
+padding-top:2px;
+border-top: 1px solid #ccc;
+border-bottom: 1px solid #ccc;
+margin-bottom: 8px;
+}
+
+.entryinindex {
+border-bottom:1px solid #ccc;
+margin-bottom:10px;
+padding-bottom: 20px;
+padding-right:10px;
+
+padding-top:0;
+margin-top:0;
+}
+
+
+.entryinindex h3{
+font-size:1.3em;
+line-height:1.2em;
+margin-bottom:8px;
+margin-top:0;
+padding-top:0;
+
+}
+
+.entryinindex p{
+font-size:1.2em;
+line-height:1.3em;
+padding:0;
+padding-bottom:1px;
+margin:0;
+}
+
+
+
+
+.entryinindex em{
+font-style:normal;
+color:#999999;
+}
+
+em{font-style:normal;
+color:#999999;}
+
+
+.entryinindex a{
+font-style:normal;
+
+}
+
+.technorati{
+vertical-align:middle;
+padding-right:2px;
+}
+
+
+#mainindexcolumnright {
+border-left:1px solid #ccc;
+width:700px;
+float:right;
+margin-top:20px;
+padding-left:9px;
+margin-bottom:10px;
+
+}
+
+#mainindexcolumnrightinnerleft {
+height:100%;
+width:380px;
+float:left;
+}
+
+#mainindexcolumnrightinnerleft h2 {
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:1.1em;
+line-height:1.2em;
+font-weight: bold;
+color:#333;
+padding-bottom:15px;
+padding-top:2px;
+border-top: 1px solid #ccc;
+border-bottom: 1px solid #ccc;
+margin-bottom: 8px;
+}
+
+
+
+
+
+
+
+#mainindexcolumnrightinnerright {
+margin:0;
+padding:0;
+border-left:1px solid #ccc;
+padding-left:9px;
+float:right;
+width:300px;
+}
+
+
+
+
+
+
+
+#frontpagefooter {
+width:940px;
+height:69px;
+clear:both;
+border-top:10px solid #ccc;
+border-bottom:1px solid #ccc;
+padding-top:5px;
+
+}
+
+#frontpagefooter img {
+float:left;
+margin-top:10px;
+}
+
+
+
+
+
+
+
+
+#twocolumnleftcolumninsideleftcolumn h3{
+margin:0;
+padding:0;
+padding-top:4px;
+padding-bottom:1px;
+margin-top:14px;
+border-top:solid 1px #ccc;
+font-size:1.0em;
+}
+
+
+#twocolumnleftcolumninsideleftcolumn p{
+line-height:1.3em;
+}
+
+
+/*list */
+
+#twocolumnleftcolumninsideleftcolumn ul{
+list-style:none;
+
+}
+
+#twocolumnleftcolumninsideleftcolumn li{
+line-height:1.3em;
+background: url(http://commentisfree.guardian.co.uk/site_imagery/listbullet.gif) no-repeat 2px 7px;
+padding-left:6px;
+}
+
+
+.webfeed{
+border-top:solid 1px #ccc;
+padding-top:4px;
+margin-top:14px;
+}
+
+.webfeed img{
+padding-bottom:6px;}
+
+.webfeedimg{
+padding-bottom:6px;}
+
+
+
+
+
+.byline {
+width:140px;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-weight:bold;
+font-size:1.2em;
+line-height:1.1em;
+padding-bottom:30px;
+}
+
+.dateline {
+/*used in comments */
+width:140px;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-weight: normal;
+color:#999;
+
+padding-top:2px;
+}
+
+
+
+
+
+#authorwidgets {
+margin-top:10px;
+border-top:1px solid #ccc;
+padding-top:5px;
+width:140px;
+}
+
+#authorwidgets li {
+margin-top:5px;
+}
+
+
+.caption{
+font-size:0.9em;
+margin:0;
+padding:0;
+color:#999;
+text-align:right;
+padding-top:2px;
+}
+
+
+.caption em{
+font-style:normal;
+color:#666;}
+
+
+#twocolumnleftcolumninsiderightcolumn p.caption{
+font-size:0.9em;
+margin:0;
+padding:0;
+color:#999;
+text-align:left;
+padding-top:2px;
+padding-bottom:20px;
+}
+
+#twocolumnleftcolumninsiderightcolumn .caption strong{
+font-weight:normal;
+color:#333;
+}
+
+
+
+
+
+
+#topstory {
+border-top:10px solid #ccc;
+padding-top:5px;
+padding-bottom:5px;
+margin-bottom:19px;
+padding-right:10px;
+}
+
+#topstory p{
+margin-bottom:2px;
+margin-top:10px;
+font-size:1.3em;
+line-height:1.3em;
+}
+
+
+#topstory h3 {
+padding:0;
+margin:0;
+font-size:1.1em;
+width:380px;
+border-bottom:1px solid #ccc;
+padding-bottom:14px;
+margin-bottom:5px;
+
+
+
+
+}
+
+
+
+.pickentry {
+border-top:10px solid #ccc;
+ padding-top:5px;
+padding-bottom:0px;
+width:380px;
+margin-bottom:24px;
+/*background-color:#00FFCC;
+
+AB hack 
+width:370px;
+voice-family: "\"}\""; 
+  voice-family:inherit;
+  width:360px;
+
+*/
+}
+
+.pickentry h3 {
+padding:0;
+margin:0;
+font-size:1.1em;
+width:380px;
+border-bottom:1px solid #ccc;
+padding-bottom:14px;
+margin-bottom:5px;
+
+
+
+
+}
+
+.pickentry p{
+margin-bottom:2px;
+margin-top:10px;
+
+font-size:1.3em;
+line-height:1.3em;
+
+}
+
+
+.pickentrytitle {
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:2.8em;
+line-height:1.1em;
+color:#284f77;
+font-weight: normal;
+font-size:2.4em;
+}
+
+.pickentrypermalink {
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-weight: normal;
+font-size:1.1em;
+}
+
+
+.entryinarchive {
+/*applies to: all articles in archive format all articles, edi blog*/
+margin-top:0;
+padding-bottom:25px;
+
+margin-bottom:5px;
+padding-right:10px;
+padding-top:5px;
+border-top:1px solid #ccc;
+}
+
+.entryinarchivetop {
+/*applies to: all articles in archive format*/
+margin-top:0;
+padding-bottom:25px;
+margin-bottom:5px;
+padding-right:10px;
+margin-top:-5px;
+}
+
+
+.entryinarchive h3 {
+border-bottom:1px solid #ccc;
+padding-bottom:20px;
+margin-bottom:5px;
+}
+
+.entryinarchive a{
+padding:0;
+margin:0;}
+
+
+.entryinarchiveexcerpt {
+font-size:1.2em;
+line-height:1.3em;
+
+}
+
+#twocolumnleftcolumninsiderightcolumn  p {
+font-size:1.2em;
+line-height:1.3em;
+color:#444;
+}
+
+
+
+#twocolumnleftcolumninsiderightcolumn p.entryinarchivedateline{
+color:#999999;
+font-size:1.1em;
+padding:0;
+margin:0;}
+
+
+/* Author Profile Widgets */
+
+#AuthorAmazonListing ul{
+list-style: none;
+}
+
+
+#AuthorAmazonListing li{
+display: inline;
+margin-right: 20px;
+margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+/* Sidebar adverts */
+
+#mpu {
+background-color:#eec;
+width:300px;
+height:250px;
+clear:both;
+margin-bottom:10px;
+}
+
+#overturetextadswrapper {
+background-color:#ccb;
+margin-bottom:10px;
+font-size:1.0em;
+line-height:1.2em;
+padding-bottom:10px;
+}
+
+
+
+
+
+#overturetextadswrapper h2 {
+border-top:1px solid #aaa;
+border-bottom:1px solid #aaa;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:1.1em;
+line-height:1.4em;
+color:#333;
+padding-left:10px;
+padding-top:2px;
+height:30px;
+margin-bottom:8px;
+
+}
+
+#overturetextads {
+margin-left:10px;
+padding-right:10px;
+}
+
+#overturetextads .bigadurl a {
+font-weight:bold;
+color:#CC2800;
+}
+
+
+
+
+
+#copyright {
+font-size:0.9em;
+color:#333;
+text-align:left;
+width:300px;
+float:right;
+
+}
+
+
+.copyrightsub{
+height:60px;
+font-size:0.9em;
+color:#333;
+text-align:left;
+width:940px;
+float:left;
+padding-top:5px;
+margin-top:10px;
+border-top:1px solid #ccc;
+padding-bottom:20px;
+padding-left:640px;
+voice-family: "\"}\""; 
+  voice-family:inherit; 
+  width:300px;
+
+}
+
+
+
+
+
+#flickr_badge_source_txt {
+padding:0; 
+font: 1.1em Arial, Helvetica, Sans serif; 
+color:#666666;}
+
+#flickr_badge_icon {
+display:block !important; margin:0 !important; border: 1px solid rgb(0, 0, 0) !important;}
+#flickr_icon_td {padding:0 5px 0 0 !important;}
+.flickr_badge_image {text-align:center !important;}
+.flickr_badge_image img {border: 1px solid black !important;}
+#flickr_www {
+display:block; 
+padding:0 0px 0 0px !important; 
+font: 1.1em Arial, Helvetica, Sans serif !important; 
+color:#3993ff !important;
+}
+#flickr_badge_uber_wrapper a:hover,
+#flickr_badge_uber_wrapper a:link,
+#flickr_badge_uber_wrapper a:active,
+#flickr_badge_uber_wrapper a:visited {text-decoration:none !important; background:inherit !important;color:#3993ff;}
+
+#flickr_badge_wrapper {}
+
+#flickr_badge_source {
+padding:0 !important; 
+font: 1.1em Arial, Helvetica, Sans serif !important; 
+color:#666666 !important;
+}
+
+
+#lightbox{
+	background-color:#eee;
+	padding: 10px;
+	border-bottom: 2px solid #666;
+	border-right: 2px solid #666;
+	}
+#lightboxDetails{
+	font-size: 0.8em;
+	padding-top: 0.4em;
+	}	
+#lightboxCaption{ 
+float: left;
+ }
+#keyboardMsg{ float: right; }
+
+#lightbox img{ border: none; } 
+
+#overlay img{
+border: none; 
+}
+
+#overlay{ background-image: url(http://commentisfree.guardian.co.uk/site_imagery/overlay.png); }
+
+* html #overlay{
+	background-color: #000;
+	back\ground-color: transparent;
+	background-image: url(http://commentisfree.guardian.co.uk/site_imagery/blank.gif);
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://commentisfree.guardian.co.uk/site_imagery/overlay.png", sizingMethod="scale");
+	}
+
+#twocolumnleftcolumnpansub2columntop h2.search  {
+color:#333;
+}
+
+#twocolumnleftcolumnpansub2columntop h2.thisweek {
+color:#999;
+font-size:1.8em;
+}
+
+
+
+
+/* =search  */
+#searchresult h1 {
+font-size:1.8em;
+line-height:1.1em;
+font-weight:normal;
+margin-bottom:8px;}
+
+#searchresulttop h1 {
+font-size:1.8em;
+line-height:1.1em;
+font-weight:normal;
+margin-bottom:8px;}
+
+#searchresult p {
+font-size:1.2em;
+line-height:1.2em;
+font-weight:normal;
+margin-bottom:8px;}
+
+#searchresulttop p {
+font-size:1.2em;
+line-height:1.2em;
+font-weight:normal;
+margin-bottom:8px;}
+
+
+#searchresulttop{
+margin-top:0;
+padding-bottom:25px;
+margin-bottom:5px;
+padding-right:10px;
+margin-top:-5px;
+
+}
+
+
+
+#searchresult{
+padding-bottom:25px;
+
+margin-bottom:5px;
+padding-right:10px;
+padding-top:5px;
+border-top:1px solid #ccc;
+}
+
+
+/* = steve Bell on front */
+
+
+
+#stevebell{
+border-top:10px solid #ccc;
+clear:both;
+margin-left:5px;
+margin-bottom:10px;
+
+padding-top:5px;
+margin-top: 10px;
+
+width:940px;
+margin:0;
+margin-bottom:20px;
+}
+
+
+#stevebell h3{
+font-size:1.2em;
+}
+
+
+#stevebell img{
+margin-left:0px;
+padding-left:0px;
+margin-top:20px;
+
+margin-bottom:10px;
+}
+
+
+/* =GU cif middle ground */
+
+#twocolumnleftcolumninsiderightcolumntopGU {
+/*ports in a storm ABABA*/
+width:460px;
+float:right;
+height:140px;
+padding-bottom: 20px;
+border-bottom:1px solid #fff;
+}
+
+#twocolumnleftcolumninsiderightcolumnGU{
+width:460px;
+float:right;
+padding-top:0px;
+margin-bottom:30px;
+
+margin-top:-164px;
+}
+
+
+#GuardianArticleBody{
+font-size:1.2em;}
+
+
+#GuardianArticleBody p{
+font-size:1.0em;
+}
+
+
+#twocolumnleftcolumninsideleftcolumngu{
+font-size:62.5%;
+font-size:76%;
+width:140px;
+float:left;
+padding-top:6px;
+border:0;
+}
+
+
+#twocolumnleftcolumninsideleftcolumngu h3 {
+
+font-family: verdana;
+font-size: 1.2em;
+font-weight: bold;
+color:#333;
+
+padding-top:2px;
+border-top: 1px solid #ccc;
+margin-top:15px;
+
+}
+
+#twocolumnleftcolumninsideleftcolumngu h2 {
+font-weight: bold;
+font-family: verdana;
+font-size: 1.4em;
+color:#333333;
+padding-bottom:2px;
+}
+#twocolumnleftcolumninsideleftcolumngu a {
+
+font-family: verdana;
+font-size: 1.2em;
+
+}
+
+
+
+#twocolumnleftcolumninsideleftcolumngu h2.editor{
+margin:0;
+font-size: 1.2em;
+margin-bottom:7px;
+padding-top:6px;
+
+}
+
+#twocolumnleftcolumninsideleftcolumngu p{
+margin-bottom:0;}
+
+
+#twocolumnleftcolumninsideleftcolumngu ul{
+list-style:none;
+
+}
+
+#twocolumnleftcolumninsideleftcolumngu li{
+font-size: 1.0em;
+
+line-height:1.3em;
+background: url(http://commentisfree.guardian.co.uk/site_imagery/listbullet.gif) no-repeat 2px 7px;
+padding-left:6px;
+}
+
+
+/* = steve Bell site */
+#twocolumnleftcolumnthinborderbell {
+width:940px;
+float:left;
+border-top:1px solid #ccc;
+padding-top: 10px;
+margin:0;
+}
+
+
+/*bell stuff I'll think about deleting */
+
+#cartoonholder {
+	width: 940px;
+	height: 400px;
+	padding: 20px;
+
+}
+
+#cartoonholder img {
+	/*border: 1px solid black;*/
+	float:left;
+}
+
+#cartoonselector {
+float:right;
+width:295px;
+}
+
+
+#cartoonselector h3{
+padding-bottom:14px;
+font-size:1.2em;
+}
+
+
+#cartoonselector ul{
+list-style:none;}
+
+#track {
+margin-top: 20px;
+width:640px;
+background-color:#ccc;
+height:10px;
+}
+
+#handle {
+width:10px;
+height:20px;
+background-color:#f00;
+cursor:move;
+}
+
+
+
+#track{
+padding:0;
+margin:0;
+
+}
+
+#handle{
+padding:0;
+margin:0;
+}
+
+#twocolumnleftcolumnthinborderbell #cartoonholder {
+padding:0;
+margin:0;
+height:260px;
+width:940px;
+background-color:#fff;
+border-bottom:1px solid #ccc;
+margin-bottom:10px;
+}
+
+.frontbell{
+width:620px;
+
+float:left;
+
+}
+
+.aboutbell{
+width:300px;
+margin:0;
+padding:0;
+float:left;
+
+}
+
+
+.aboutbell p{
+margin:0;
+padding:0;
+float:left;
+}
+
+.bellinfo {
+width:130px;
+float:left;
+padding-left:10px;}
+
+
+
+.aboutbell img{
+margin:0;
+padding-bottom:10px;
+float:left;
+
+}
+
+.frontbell p{
+padding:0;
+margin:0;
+font-size:1.2em;
+line-height:1.4em;
+margin-bottom:7px;
+}
+
+
+.frontbell h2{
+margin-bottom: 8px;
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:1.8em;
+line-height:1.1em;
+font-weight: normal;
+color: #333;
+}
+
+
+#twocolumnleftcolumnthinborderbell .aboutbell h2{
+font-weight: bold;
+font-family: verdana;
+font-size: 1.3em;
+color:#333333;
+padding-bottom:2px;
+}
+
+
+#twocolumnleftcolumnthinborderbell .aboutbell p{
+
+font-size: 1.2em;
+padding-bottom:10px;
+}
+/*
+#twocolumnleftcolumnthinborderbell .aboutbell h3{
+font-weight: bold;
+font-family: verdana;
+font-size: 1.0em;
+}
+*/
+
+#twocolumnleftcolumnthinborderbell .aboutbell h3{
+margin:0;
+padding:0;
+padding-top:4px;
+padding-bottom:1px;
+margin-top:8px;
+font-size:1.0em;
+}
+
+
+#twocolumnleftcolumnthinborderbell .aboutbell ul{
+list-style:none;
+}
+
+#twocolumnleftcolumnthinborderbell .aboutbell li{
+line-height:1.3em;
+background: url(http://commentisfree.guardian.co.uk/site_imagery/listbullet.gif) no-repeat 2px 7px;
+padding-left:6px;
+}
+
+
+.right {
+float:right;
+padding-left:5px;}
+
+.aboutholder{
+width:620px;
+float:left;
+margin-top:10px;
+}
+
+
+.aboutbell {
+float:left;
+border-top:0px solid #ccc;
+width:300px;
+}
+
+
+.aboutcharacter{
+float:left;
+border-top:1px solid #ccc;
+padding-top:5px;
+width:300px;
+}
+
+.aboutright {
+float:right;
+border-top:1px solid #ccc;
+padding-top:5px;
+width:300px;
+}
+
+.aboutcharacter h3 {
+font-size:1.1em;
+line-height:1.3em;}
+
+.aboutright h3 {
+font-size:1.1em;
+line-height:1.3em;}
+
+
+.bellsliver {
+padding-bottom:35px;
+border-bottom:1px solid #ccc;
+}
+
+
+/*= Bell article */
+#pansubcolumnheaderbell {
+width: 940px;
+border-top: 10px solid #ccc;
+border-bottom: 1px solid #ccc;
+padding-top: 8px;
+height: 50px;
+float:left;
+margin:0;
+}
+
+#pansubcolumnheaderbell h1{
+font-size:1.8em;
+}
+
+#twocolumnleftcolumnthinborderbell {
+width:620px;
+float:left;
+border:0;
+padding-top: 10px;
+margin:0;
+width:940px;
+}
+
+#twocolumnleftcolumninsiderightcolumnbell {
+
+width:780px;
+float:right;
+padding-top:10px;
+margin-bottom:30px;
+
+
+}
+
+
+#twocolumnleftcolumninsiderightcolumntopbell {
+width:460px;
+float:right;
+height:140px;
+padding-bottom: 20px;
+border-bottom:1px solid #ccc;
+width:780px;
+}
+
+#twocolumnleftcolumninsiderightcolumntopbell p.standfirst{
+/*used in article */
+font-size:1.3em;
+color:#666;
+padding-top:4px;
+width:460px;
+}
+
+
+
+#twocolumnleftcolumninsiderightcolumnbell p{
+padding:0;
+margin:0;
+font-size:1.2em;
+line-height:1.4em;
+margin-bottom:7px;
+width:460px;
+}
+
+#twocolumnleftcolumninsiderightcolumnbell p.caption{
+font-size:0.9em;
+margin:0;
+padding:0;
+color:#999;
+text-align:left;
+padding-top:2px;
+padding-bottom:20px;
+width:460px;
+}
+
+
+
+
+#twocolumnleftcolumninsiderightcolumnbell .caption strong{
+font-weight:normal;
+color:#333;
+}
+
+
+.commentsrightbell {
+margin-top:5px;
+margin-bottom:5px;
+padding-bottom: 20px;
+width:460px;
+float:left;
+margin-left:20px;
+
+}
+
+
+
+.commentheader2bell {
+margin-top:10px;
+float:left;
+border-top:1px solid #ccc;
+width:940px;
+}
+
+.commentheader2bell p {
+width: 200px;
+float: right;
+margin-top: -25px;
+}
+
+
+.paper{
+height:200px;
+
+background: #fff url(http://commentisfree.guardian.co.uk/site_imagery/paperbg.gif) 0 0 no-repeat;}
+
+
+.amazonbook {
+width: 460px;
+clear: both;
+border-bottom: 1px solid #ccc;
+}
+
+.bookimage {
+padding-bottom: 10px;
+padding-top: 10px;
+width: 100px;
+float: left;
+}
+
+.bookdetails {
+padding-bottom: 10px;
+padding-top: 10px;
+width: 300px;
+float: right;
+}
+
+/*.category_davos_07
+{
+      background-image: url(http://commentisfree.guardian.co.uk/site_imagery/wef.gif);
+      background-repeat: no-repeat;
+      background-position: 320px 0px;
+}
+
+
+div.category_davos_07 .pickentrytitle
+{
+      padding-right:70px;
+}
+
+.wef
+{
+      background-image: url(wef.gif);
+      background-repeat: no-repeat;
+      background-position: 320px 0px;
+}
+
+
+div.wef .pickentrytitle a
+{
+      padding-right:70px;
+}
+*/

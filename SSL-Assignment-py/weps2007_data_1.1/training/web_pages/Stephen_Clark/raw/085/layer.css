@@ -1,0 +1,640 @@
+
+/*
+		 CREATED: 
+		 AUTHORS: WDS
+		 LAST DATE MODIFIED: 5/06/03
+
+
+	
+*/
+
+/*  
+	By default all hyper-links will change color and decoration with a mouseover to green and underline respectively.
+*/
+a:hover{
+	color: #014C37;		/*green*/
+	text-decoration: underline;
+}
+
+
+
+/*  Classes  */
+
+
+
+/*  
+	This gives a background color of blue underneath the green titlebar
+
+*/
+.blueBarBackground{
+   background-color: #094071;
+}
+
+
+
+/*  
+	Sets the spacing from the bottom, font, font-size, weight, and alignment of text
+	NOT FOUND ON PAGES
+
+*/
+.bottomFourLinks{
+   padding-bottom: 10px;
+   font-family:  Arial, Verdana,Helvetica, sans-serif;
+   font-size: 10pt;
+   font-weight: bold;
+   text-align: center;
+}
+
+
+/*	Sets the font and position of the Report Errors Here for each page
+
+*/
+.reportErrors{
+   font-size: 10px;
+   padding-top: 0px;
+}
+
+/*  
+	Sets the spacing from the bottom, font, font-size, weight, and alignment of text
+	NOT FOUND ON PAGES
+
+*/
+.bottomInfoConstraints{
+   padding-bottom: 10px;
+   font-family: Arial, Verdana, Helvetica, sans-serif;
+   font-size: 9pt;
+   text-align: center;
+}
+
+
+
+/*  
+	forces text within elements to hug the left side with an overall width of 185
+	used in: template/2col3col.html (anywhere a 3 column area is used)
+*/
+/*Three columns for bottom links*/
+.bottomLink3Column{
+   float: left;
+   width: 185px;
+}
+
+
+
+
+
+
+/*Two columns for bottom links*/
+/*  
+	forces text within elements to hug the left side with an overall width of 279
+	used in: template/2col2col.html (anywhere a bottom 2 column area is used)
+*/
+.bottomLink2Column{
+   float: left;
+   width: 279px;
+}
+
+
+
+/*One column for bottom links*/
+/*  
+	forces text within elements to hug the center (there is only left or right; NO CENTER)
+	side with an overall width of 279
+	used in: template/2col1col.html (anywhere a bottom 1 column area is used)
+*/
+.bottomLink1Column{
+   float: center;
+   width: 559px;
+}
+
+
+/*  
+	Gives the cell a background of green, along with centering the text.
+	used in: template/2col1col.html (anywhere a bottom 1 column area is used)
+*/
+.bottomTableCell{
+	background-color: #20604E;	/*dark green*/
+	text-align: center;
+}
+
+
+/*  
+	defined by a series of fonts, moves the element text right 20px (padding on left), 
+	white color text of bold (weight), and a size of 12.  This has no decoration as to offset 
+	decoration from other classes.
+	used in: template/2col1colNavBar.html (should be used in almost all tables)
+*/
+.bottomTableTitle{
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	padding-left: 20px;
+	color:#FFFFFF; /*white*/
+	font-weight: bold;
+	font-size: 12pt;
+	text-decoration: none;
+}
+
+
+
+/*  
+	font-family is the list of fonts of size 9 with center alignment	
+	used in: not used anywhere (I thought it would be used on every page, but it isn't)
+*/
+.copyright{
+   font-family: Arial, Verdana, Helvetica, sans-serif;
+   font-size: 8pt;
+   text-align: center;
+	 color: #666666
+}
+
+.footer{
+   font-family: Arial, Verdana, Helvetica, sans-serif;
+   font-size: 11px;
+   text-align: center;
+	 color: black;
+}
+/*  
+	goal is to have image using this class to float to the right with NO margin (a margin of 0)	
+	used in: used anywhere and everywhere
+*/
+.curvedYellowLinePlacement{
+   float: right;
+   margin-right: 0px;
+}
+
+
+/*  
+	The date string receives spacing on top/bottom, 4 font families are used, along with a color.
+	The text is centered with a bold font of size 8.  In addition, the background image is set in upper-right corner
+	with no-repeat value set.
+	used in: everypage (in the upper-right hand corner)
+*/
+.date {
+   padding-bottom: 15px;
+   padding-top: 10px;
+   font-family: Arial, Verdana, Helvetica, sans-serif;
+   color: #014C37;
+   font-weight: bold;
+   font-size: 8pt;
+   text-align: center;
+   background-image:   url(/images/blueCurve3.jpg);
+   background-repeat: no-repeat;
+   background-color: #CCCCCC;
+}
+
+/* This class is to give a blue background to the date java script. */
+.dateBlueBkd {
+   padding-bottom: 15px;
+   padding-top: 10px;
+   font-family: Arial, Verdana, Helvetica, sans-serif;
+   color: #FFFFFF;
+   font-weight: bold;
+   font-size: 8pt;
+   text-align: center;
+   background-color: #094071; /*blue*/
+}
+
+
+/*  
+	font-size of 8 with dark-green font color is built with center alignment	
+	used in: all pages which have the gray right-side navigation.
+*/
+.events{
+   color: #014C37;
+   font-size: 8pt;
+   text-align: center;
+   text-decoration: none;
+}
+
+/*  
+	allows for spacing between text element and left border, in addition to text and bottom border.	
+	used in: all pages which have the gray right-side navigation. (used for links below the "events" image)
+*/
+.eventsMain{
+   padding-left: 15px;
+   padding-bottom: 10px;
+}
+
+
+/*  
+	allows for spacing between text element and left border, in addition to text and bottom border.	
+	used in: all pages which have the gray right-side navigation. (used for links above the "events" image)
+*/
+.firstNewsSpacing{
+   padding-left: 15px;
+   padding-bottom: 10px;
+   padding-before: 10px;
+}
+
+
+
+/*  BOTTOM NAVIGATION */
+/*  
+	allows for spacing between text element and TOP border, standard font family, size and weight, along with centered text.	
+	used in: all pages which have the standard UVSC footer. (/visitors.html, index.html, etc.)
+*/
+.generalNavigationBottom{
+	padding-bottom: 2px;
+	font-family:  Arial, Verdana,Helvetica, sans-serif;
+	font-size: 8pt;
+	font-weight: bold;
+	text-align: center;
+	}
+
+
+/*  
+	allows for spacing between text element and TOP border, standard font family, size and weight, along with centered text.
+	used in: all pages which have the standard UVSC footer. (/visitors.html, index.html, etc.)
+*/	
+.generalTextWithPadding{
+	padding-bottom: 10px;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 9pt;
+	text-align: center;
+}	
+	
+
+/*  
+	allows for spacing between text element and TOP border, standard font family, size and weight, along with centered text.
+	used in: all pages which have the standard UVSC footer. (/visitors.html, index.html, etc.)
+*/	
+.generalTextWithoutPadding{
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 9pt;
+	text-align: center;
+}
+	
+/*  
+	allows for spacing (20px) between text element and TOP border, color of dark-green, font-size of 8, and no text-decoration.
+	used in: all pages which have the standard UVSC footer. (/visitors.html, index.html, etc.)
+*/	
+.graphicHyperlinks{
+   padding-top: 20px;
+   color: #014C37;
+   font-size: 8pt;
+   text-decoration: none;
+}
+
+/*  
+	allows for bgcolor of grey, 
+	used in: all pages which use the grey side-bar navigation. (/visitors.html, index.html, etc.)
+*/	
+.grayBarBackground{
+   background-color: #CCCCCC;
+}
+
+
+/*  
+	allows for padding between text element and top border, font-family and font size of 9 along with text being centered. 
+	used in: (NOT USED ANYWHERE)
+*/	
+.horizontalLineConstraints{
+   padding-bottom: 10px;
+   font-family: Arial, Verdana, Helvetica, sans-serif;
+   font-size: 9pt;
+   text-align: center;
+}
+
+
+/*  
+	provides standard font-family and font size of 12 along with text being boldened, centered and no decoration. 
+	used in: (every page which has bottom links(all second layer templates))
+*/	
+.linksTitle{
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 12pt;
+	font-weight: bold;
+	color: #014C37;		/*green*/
+	text-decoration: none;
+}
+
+
+
+
+/*Three columns for main body*/
+
+/*  
+	provides spacing for center image of 294, which will be hugging left side. 
+	used in: (template/3col3col.html)
+*/	
+.mainBodyCenterThreeColumnConstraints{
+   float: left;
+   width: 294px;
+}
+
+
+
+/*  
+	provides spacing for left text of 130, which will be hugging left side. 
+	used in: (template/3col3col.html)
+*/	
+.mainBodyLeftThreeColumnConstraints{
+   float: left;
+   width: 130px;
+   padding-left: 10px;
+}
+
+
+/*  
+	provides spacing for right text of 135, which will be hugging left side. 
+	used in: (template/3col3col.html)
+*/	
+.mainBodyRightThreeColumnConstraints{
+   float: left;
+   width: 135px;
+   padding-left: 5px;
+}
+
+
+
+/*Two columns for main body*/
+/*  
+	provides spacing for left image of 300, which will be hugging left side. 
+	used in: (template/2col1col.html)
+*/	
+.mainBodyLeftTwoColumnConstraints{
+   float: left;
+   width: 300px;
+
+}
+
+
+
+/*  
+	provides spacing for right text of 259, which will be hugging left side with a space of 1px. 
+	used in: (template/2col1col.html)
+*/	
+.mainBodyRightTwoColumnConstraints{
+   float: left;
+   width: 259px;
+   padding-left: 1px;
+}
+
+
+
+/*One column for main body*/
+/*  
+	provides spacing for text/image of 440, which will be hugging center(not supported in CSS2). 
+	used in: (template/1col1col.html)
+*/	
+.mainBody1Column{
+   float: center;
+   width: 440px;  
+
+}
+
+
+
+/*  
+	aligns selected text, characters, etc with the lowest characters on the same line. 
+	used in: (not used)
+*/	
+.mainBodyCenterImageAlignment{
+   vertical-align: bottom;
+}
+
+
+/*  
+	sets the row with a certain height; in this particular case it is the main row of the body of page. 
+	used in: (template/1col1col.html)
+*/	
+.mainBodyHeight{
+   height: 200px;
+}
+
+
+
+
+/*  
+	sets the td/cell with a certain width; the font size is 8 and the font-family is standardized. 
+	used in: (template/1col1col.html)
+*/	
+.mainBodyText{
+   font-size: 8pt;
+   font-family: Arial, Verdana, Helvetica, sans-serif;
+   width: 575px;
+}
+
+
+/*  
+	sets the div tag with a spacing of 15px from the top border; 
+	used in: (template/1col1col.html)
+*/	
+.mainBodyTopSpacing{
+   padding-top: 15px;
+}
+
+
+
+/*  
+	sets the row height to be 25px high; 
+	used in: (template/1col1col.html)
+*/	
+.middleGreenBarHeight{
+   height: 25px;
+}
+
+
+
+/*  
+	sets the font, size, weight and color (in this case to a div tag); 
+	used in: (template/1col1col.html)
+*/	
+.news{
+   font-family: Arial, Verdana, Helvetica, sans-serif;
+   font-size: 8pt;
+   font-weight: bold;
+   color: #014C37; /* dark-green*/
+} 
+
+/*  
+	sets the alignment to center; 
+	used in: (not used anywhere)
+*/	
+.objectCenter{
+   align: center;
+} 
+
+
+
+/*  
+	sets a single-space; 
+	used in: (template/1col1col.html)
+*/	
+.oneSpace{
+   padding-left: 5px;
+}
+
+
+
+/*  
+	allows for spacing between text element and left border, in addition to text and bottom border.	
+	used in: all pages which have the gray right-side navigation. (used for links above the "events" image)
+*/	
+.secondNewsSpacing{
+   padding-left: 15px;
+   padding-bottom: 30px;
+}
+
+/*  NEEDS TO BE CODED
+	allows for font size of 8, line-height of 120%, text color of green and no decoration(offsets defaults).	
+	used in: all pages 
+*/
+.spacing{
+	font-size: 8pt;
+	line-height: 120%;
+	color: #014C37;		/*green*/
+	text-decoration: none;
+}
+
+/*  
+	sets the links within the bottom-half portion of template pages;  
+	standard font family, size of 10 with space of 10 pixels from left border 
+	used in: (template/1col1col.html)
+*/	
+.subLink{
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 9pt;
+	padding-left: 10px;
+}
+
+/* The following two classes are for blue bar backgrounds on the right side menu bar   */
+.sublinkBlueBar{ 
+font-family: Arial, Verdana, Helvetica, sans-serif;
+font-size: 10pt; 
+font-weight: bold;
+padding-left:5px;
+color: #FFFFFF; /*WHITE*/
+text-decoration: none; 
+}
+
+.sublinkBlueBar:hover{
+text-decoration: underline;
+color: #FFFFFF; /*WHITE*/
+}
+
+
+/*  
+	gives spacing between element and left border;  
+	used in: (NOT USED)
+*/	
+.topMostNavigationSpacing{
+   padding-left:0px;
+}
+
+
+
+/*  
+	mainly used for the main UVSC homepage image-the image is shifted to the right
+	with a valign in the middle of element;  
+	used in: (template/1col1col.html (and all other pages))
+*/	
+.topRowSpacing{
+	float: right;
+	vertical-align: middle;
+}
+
+
+/*  
+	used for top navigation links to contain consistency for font-family, size, weight, 
+	and the color green, offsetting decoration declarations
+	used in: (template/1col1col.html (and all other pages))
+*/	
+.topNavigation{
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-weight: bold;
+	color: #014C37;		/*green*/
+	text-decoration: none;
+}
+
+
+
+/*  
+	used for top navigation links to provide multiple spaces between links.  may be used other places as well.
+	used in: (template/1col1col.html (and all other pages))
+*/	
+.twoSpaces{
+   padding-left: 10px;
+}
+
+
+
+
+/* The following five classes are the new ones that vadra rowley created */
+
+
+/*  
+	standardized font with size of 10, padding which gives space of 10 from left border with a color of RED.
+	used in: (facultyStaff.cfm)
+*/	
+.urgentSubLink{
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 10pt;
+	padding-left: 10px;
+	color: #CC0000; /*red*/
+}
+
+
+/*  
+	The text is aligned in the middle with the standardized font of padding to the left 20px from the border,
+	with a color of white, bold font, 20 pt.  The text decoration is NONE, alignment center, and margin of 140 to the right.  	
+	used in: (facultyStaff.cfm)
+*/	
+.topBlueBarText{
+	float: middle;
+	font-family: Times, Arial, Verdana, Helvetica, sans-serif;
+	padding-left: 20px;
+	color:#FFFFFF;
+	font-weight: bold;
+	font-size: 20pt;
+	text-decoration: none;
+	text-align: center;
+	margin-right: 140px;
+}
+
+
+/*  
+	used to arrange middle-body links with text size of 8, standard font-family, 187px wide and left-aligned 	
+	used in: (facultyStaff.cfm)
+*/	
+.middleSubcolumn{
+   font-size: 8pt;
+   font-family: Arial, Verdana, Helvetica, sans-serif;
+   width: 187px;
+   float: left;
+}
+
+
+/*  
+	used in td/cell for alignment of picture and placement of text.  
+	included is fontsize of 8, standard font-family and width of 375.	
+	used in: (facultyStaff.cfm)
+*/	
+.middleColumnText{
+   font-size: 8pt;
+   font-family: Arial, Verdana, Helvetica, sans-serif;
+   width: 375px;
+}
+
+
+/*  
+	used in td/cell for alignment of text.  
+	included is fontsize of 8, standard font-family and width of 200.	
+	used in: (facultyStaff.cfm)
+*/	
+.leftColumnText{
+   font-size: 8pt;
+   font-family: Arial, Verdana, Helvetica, sans-serif;
+   width: 200px;
+   background-color: #E1E1E1;
+
+}
+
+
+
+/*  
+	don't repeat the background.	
+	used in: (facultyStaff.cfm)
+*/	
+.uvscBackGroundImage{
+	background-repeat: no-repeat;
+}

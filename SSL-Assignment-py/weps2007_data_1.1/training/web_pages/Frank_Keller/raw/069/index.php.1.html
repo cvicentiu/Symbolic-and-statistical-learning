@@ -1,0 +1,469 @@
+
+<html>
+<head>
+<link rel="SHORTCUT ICON" href="http://www.lib.ndsu.nodak.edu/favicon.gif">
+<title>NDSU Library: /index.php</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="http://www.lib.ndsu.nodak.edu/scripts/css/library.css"/><script language="JavaScript">
+<!--
+
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+///////////////////////////////////////////
+//CUSTOM JAVASCRIPT FUNCTIONS BY WL GARDNER
+///////////////////////////////////////////
+
+//THIS SCRIPT IS CALLED BY A CLICK ON THE IMAGE NAMED "mySearch"
+//TOGGLES "SWAPS" THE IMAGE AND SETS VARIABLE "search_options".
+//"search_options=false" INDICATES TO SEARCH SITE, TRUE SEARCHES BOOKS.
+var search_options=false;
+
+function toggle(){
+ if(search_options){
+  document.mySearch.src= "/images/gui/ver2-8/header_website.gif";
+  search_options=false;
+ }
+ else{
+  document.mySearch.src= "/images/gui/ver2-8/header_books.gif";
+  search_options=true;
+ }
+}
+
+//CREATED BY: WL GARDNER 07/22/02
+//SEARCH OPTIONS: DETECT WHETHER TO SEARCH WEBSITE OR WEBPALS
+//THIS SCRIPT CHANGES THE VARIABLE "searchType"
+function setAction(){
+var searchingFor = document.mySearchForm.words.value;
+
+ //A CRAPPY WAY OF CONVERTING SPACES TO '+' IN A SEARCH QUERY
+ searchingFor = searchingFor.replace(' ', '+');
+ searchingFor = searchingFor.replace(' ', '+');
+ searchingFor = searchingFor.replace(' ', '+');
+ searchingFor = searchingFor.replace(' ', '+');
+ searchingFor = searchingFor.replace(' ', '+');
+ searchingFor = searchingFor.replace(' ', '+');
+ searchString = searchingFor.replace(' ', '+');
+
+ if(search_options){
+   searchSource="http://www.pals.msus.edu/cgi-bin/pals-cgi?palsAction=search&searchBy=te&searchFor=" + searchString + "&setWeb=TRNCAT____"
+ }
+ else{
+   searchSource="http://dp3.lib.ndsu.nodak.edu/search/index.cgi?cmd=Search%21&q=" + searchString
+ }
+ location.href = searchSource
+ return 1;
+}
+//-->
+</script>
+<style type="text/css">
+<!--
+.Title {
+	font-size: 16pt;
+	margin: 0 0 5px 0;
+	font-weight: bold;
+}
+
+.Subtitle {
+	margin: 0 0 5px 0;
+	font-weight: bold;
+}
+
+.style12 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+.style13 {
+	font: 1.0em Arial, Helvetica, sans-serif;
+	font-weight: inherit;
+}
+.style15 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+.style16 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+}
+.style17 {
+	color: #FF0000;
+	font-weight: bold;
+}
+.style18 {color: #990000}
+ul {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	/*padding: 5px 5px 0 1em;*/
+	padding-left: 1em;
+	padding-right: 5px;
+	margin: 0;
+}
+ul li {
+	margin-left: 5px;
+	margin-bottom: 10px;
+	font-size: 0.9em;
+}
+
+a#feedback {
+	display: block;
+	width: 80%;
+	padding: 5px;
+	border: 2px solid #ddd;
+	background: #ff9;
+	font: bold 0.8em Verdana, Helvetica, sans-serif;
+	margin-bottom: 10px;
+/*
+	text-decoration: none;
+*/
+}
+a#feedback:hover {
+	background: #ff3;
+	text-decoration: underline;
+	border-color: #bbb;	
+}
+
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" text="#000000" link="#336633" vlink="#336633" alink="#336633" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('/images/gui/ver2-8/books.jpg','/images/gui/bison_nod.gif','/images/gui/bisarian.gif','/images/gui/ver2-4-8/showcase-older_over.gif','/images/gui/ver2-4-8/showcase-newer_over.gif')">
+
+<table width="615" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+      <td valign="bottom">
+<table width="600" height="140" border="0" cellpadding="0" cellspacing="0">
+        <form name="mySearchForm" onsubmit="setAction(); return false;">
+          <tr> 
+            <td width="474"><img src="http://www.lib.ndsu.nodak.edu/images/gui/ver2-8/header_top.gif" width="474" height="90" hspace="0" vspace="0" border="0" usemap="#menu"></td>
+            <td rowspan="2" valign="top"><a href="index.php.1.html#" onclick="MM_swapImage('bison','','/images/gui/bisarian.gif',1)" onmouseover="MM_swapImage('bison','','/images/gui/bison_nod.gif',1)" onmouseout="MM_swapImgRestore()"><img src="http://www.lib.ndsu.nodak.edu/images/gui/bison.gif" name="bison" width="84" height="137" border="0" id="bison"></a><a href="
+https://www.lib.ndsu.nodak.edu/portal"><img src="http://www.lib.ndsu.nodak.edu/images/gui/log_in.gif" name="log" width="42" height="137" border="0" id="log"></a></td>
+          </tr>
+          <tr> 
+            <td align="left" valign="top"><table width="474" height="49" border="0" cellpadding="0" cellspacing="0">
+                <tr background="/images/gui/ver2-8/header_back.gif"> 
+                  <td valign="top" background="http://www.lib.ndsu.nodak.edu/images/gui/ver2-8/header_back.gif"><img src="http://www.lib.ndsu.nodak.edu/images/gui/ver2-8/header_bar.gif" width="307" height="50" hspace="0" vspace="0" border="0" usemap="#subnav"><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><br>
+                  </font></td>
+                  <td valign="top" background="http://www.lib.ndsu.nodak.edu/images/gui/ver2-8/header_back.gif"><table border="0" align="right" cellpadding="3" cellspacing="0">
+                      <tr>
+                        <td><font size="3" face="Verdana, Arial, Helvetica, sans-serif">
+                          <input name="words" size="8" value="Search!" onfocus="if(this.value=='Search!') {this.value='';}" onblur="if(this.value=='') {this.value='Search!';}">
+                        </font></td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td width="20" valign="top" background="http://www.lib.ndsu.nodak.edu/images/gui/ver2-8/header_back.gif"> 
+                    <table border="0" cellpadding="3" cellspacing="0">
+                      <tr>
+                        <td>                          <input type="button" onclick="setAction()" value="Go!">                        </td>
+                      </tr>
+                    </table>
+                    </td>
+                </tr>
+              </table></td>
+          </tr>
+        </form>
+      </table>
+<map name="subnav">
+  <area shape="rect" coords="22,3,115,35" href="http://www.odinlibrary.org/nwq.html">
+  <area shape="rect" coords="131,2,214,36" href="http://www.ndsu.edu" target="_blank">
+  <area shape="rect" coords="227,3,298,35" href="http://www.lib.ndsu.nodak.edu/reference/help.php">
+</map>
+	  </td>
+  </tr>
+
+<tr>
+<td align="center"><a id="feedback" 
+href="http://www.lib.ndsu.nodak.edu/scripts/php/comment.php?comment_return=/index.php&amp;full_path=/home/wwwroot/index.php&amp;id=6281&amp;feedback=1">Tell us how our website can serve you better!</a></td>
+</tr>
+
+  <tr>
+    <td>
+      <table width="628" border="0" cellpadding="0" cellspacing="0">
+        <tr valign="top">
+          <td>
+            <table border="0" width="428" align="right" cellpadding="5" cellspacing="0">
+              <tr>
+                <td>
+<!--
+				 <div align="center">
+                    <table width="325" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td rowspan="3"></td>
+                        <td valign="bottom"><a href="/index.php?showcase_image=-1" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','/images/gui/ver2-4-8/showcase-newer_over.gif',1)"><img src="/images/gui/ver2-4-8/showcase-newer.gif" width="45" height="57" border="0" name="Image1"></a></td>
+                      </tr>
+                      <tr>
+                        <td><img src="/images/gui/ver2-4-8/showcase_news.jpg" width="45" height="84"></td>
+                      </tr>
+                      <tr>
+                        <td><a href="/index.php?showcase_image=1" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','/images/gui/ver2-4-8/showcase-older_over.gif',1)"><img src="/images/gui/ver2-4-8/showcase-older.gif" width="45" height="63" border="0" name="Image2"></a></td>
+                      </tr>
+                    </table>
+                  </div>
+-->
+                  <table width="390" border="0" cellspacing="0" cellpadding="0" align="right" name="showcase">
+                    <tr>
+                      <td>
+						<p class="Title">News</p>
+<!-- TODAY'S EVENTS
+						<div style="border: 2px solid #eee; padding: 5px; background: #ffe;">
+						<p class="Subtitle"><strong>Today's Events</strong></p>
+						<ul>
+>>>>>
+						</ul>
+						</div><br>
+-->
+
+<!-- IMPORTANT EVENTS
+						<div style="border: 2px solid #eee; padding: 5px; background: #ffe;">
+						<p class="Subtitle"><strong>Important Events</strong></p>
+						<ul>
+>>>>>
+						</ul>
+						</div><br>
+-->
+
+<!--
+						<li><strong>NDSU Library Catalog (ODIN) Planned Outage</a>:</strong> DAY MON DATE&ndash;DAY MON DATE, REASON.</li>
+
+						<li><strong>NDSU Library Catalog (ODIN) Planned Outage</a>:</strong> Wed Feb 22, 12:15 AM&ndash;3:45 AM and Thu Feb 22, Midnight&ndash;8:00 AM, the online library catalog will be inaccessible. A new server will be added to the system with the goal of improving response time.
+</li>
+
+-->
+
+<!--
+						<li><strong><a href="/grhc/media/newspapers/intouch/2007/intouch0701.html">In Touch with Prairie Living</a>:</strong> A monthly column from Michael Miller, Director and Bibliographer of the Germans from Russia Heritage Collection.</li>
+-->
+<!--
+						<li><strong><a href="/news#2007-DATE-ANCHORTEXT">TITLE</a>:</strong> SUMMARY</li>
+-->
+
+						<ul>
+						<li><strong><a href="http://www.lib.ndsu.nodak.edu/news#20070216-vita">Free Tax Assistance at the Library</a>:</strong> Wed evenings from Feb 21&ndash;Mar 28, VITA is offering free tax preparation in the Library.</li>
+
+						<li><strong><a href="http://www.lib.ndsu.nodak.edu/news#20070122-tax">Tax Information at the Main Library and website</a>:</strong> Free copies of basic income tax forms available in the lobby (federal and ND only) and <a href="http://www.lib.ndsu.nodak.edu/research/faq.php#tax">online (federal and all states)</a>.</li>
+
+						<li><strong><a href="http://www.lib.ndsu.nodak.edu/news/">Previous news&hellip;</a></strong></li>
+						</ul>
+						<br />
+
+						<p class="Title">Hours</p>
+						
+<!--	HOURS
+-->
+
+						<a href="http://www.lib.ndsu.nodak.edu/about_us/hours/hrsmain.php"><strong class="style12">Main and Branch Library Regular Hours</strong></a>
+                      </td>
+                    </tr>
+                </table></td>
+              </tr>
+            </table>
+            <table border="0" cellpadding="5" width="240" cellspacing="0">
+              <form name="login" method="post" action="http://www.lib.ndsu.nodak.edu/authenticate.php">
+                <tr>
+                  <td width="5" valign="top"><img src="http://www.lib.ndsu.nodak.edu/images/gui/login_spacer.gif" width="1" height= "1" align="left"></td>
+                  <td width="220" valign="top"><p class="Title" style="margin-bottom: 0;">My Library</p>
+				  <p>
+                      					     &nbsp;<img src="http://www.lib.ndsu.nodak.edu/images/news_bullets.jpg" width="11" height="12" align="absmiddle"><font size="2" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;&nbsp;<a href="https://www.lib.ndsu.nodak.edu/portal?requestAuth=true"><b><font color="red">LOGIN</font></b></a></font>                  </p>
+                    <p><font color="#000066" size="2" face="Verdana, Arial, Helvetica, sans-serif"><b>&nbsp;<img src="http://www.lib.ndsu.nodak.edu/images/news_bullets.jpg" width="11" height="12" align="absmiddle"></b></font>
+                      &nbsp;&nbsp;<font face="Verdana, Arial, Helvetica, sans-serif" size="2"><a href="http://www.lib.ndsu.nodak.edu/research/general_research.php"><b>Research Tools</b></a></font><br>
+<img src="http://www.lib.ndsu.nodak.edu/images/gui/ver2-8/spacer.gif" width="1" height="5"><br>
+					   &nbsp;&nbsp;-&nbsp;<a href="http://www.odinlibrary.org/nwq.html" class="style17"><font face="Verdana, Arial, Helvetica, sans-serif" size="2">NDSU Library Catalog</font></a>
+<span class="style16">
+<br>
+<img src="http://www.lib.ndsu.nodak.edu/images/gui/ver2-8/spacer.gif" width="1" height="5"><br>
+&nbsp;&nbsp;- <a href="http://www.lib.ndsu.nodak.edu/reference/odinbasic.php"><b>Basic ODIN Guide</b></a>
+<br>
+<img src="http://www.lib.ndsu.nodak.edu/images/gui/ver2-8/spacer.gif" width="1" height="5"><br>
+&nbsp;&nbsp;- <b><a href="http://www.lib.ndsu.nodak.edu/reference/ODINGuide.pdf">Renewing Items on ODIN</a></b>
+<br>
+<img src="http://www.lib.ndsu.nodak.edu/images/gui/ver2-8/spacer.gif" width="1" height="5"><br>
+&nbsp;&nbsp;- <b><a href="http://www.lib.ndsu.nodak.edu/research/ODINbasic_viewlet_swf.html">Searching ODIN</a></b> (tutorial)
+<br>
+<img src="http://www.lib.ndsu.nodak.edu/images/gui/ver2-8/spacer.gif" width="1" height="5"><br>
+</span>
+                      &nbsp; - <a href="http://www.lib.ndsu.nodak.edu/reference/otherlibs.php" class="style15 style18"><font size="2">Other
+                      Library Catalogs</font></a><br>
+                      <br>
+                      
+
+				      <p>
+                    </p>
+</p>
+                    <p><span class="Subtitle">Other Links</span></p>
+                    <p>
+                      &nbsp;<font size="2" face="Verdana, Arial, Helvetica, sans-serif"><img src="http://www.lib.ndsu.nodak.edu/images/news_bullets.jpg" width="11" height="12" align="absmiddle"></font><font color="#FF0000" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+                      <a href="http://www.lib.ndsu.nodak.edu/research/us189.php">Skills for Academic<br> 
+                      Success 189</a></font>
+                      <br>
+                      <font color="#FF0000" size="2" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;<br>
+                      &nbsp;</font><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><img src="http://www.lib.ndsu.nodak.edu/images/news_bullets.jpg" width="11" height="12" align="absmiddle"></font><font color="#FF0000" size="2" face="Verdana, Arial, Helvetica, sans-serif">
+                      &nbsp;<a href="http://www.lib.ndsu.nodak.edu/scripts/php/gotourl.php?dbid=48" class="Body">SciFinder
+                      Scholar</a><br>
+                      <br>
+                      &nbsp;<img src="http://www.lib.ndsu.nodak.edu/images/news_bullets.jpg" width="11" height="12" align="absmiddle">
+                      &nbsp;<a href="http://134.129.201.49:86/" class="Body">Docutek
+                  E-Reserves</a> </font></p>
+			      <p><font color="#FF0000" size="2" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;<img src="http://www.lib.ndsu.nodak.edu/images/news_bullets.jpg" width="11" height="12" align="absmiddle"> &nbsp;<a href="http://www.ndsu.edu/bisonmail" target="_blank" class="Body">NDSU
+			            WebMail</a></font></p>
+			      <p><font color="#FF0000" size="2" face="Verdana, Arial, Helvetica, sans-serif"> &nbsp;<img src="http://www.lib.ndsu.nodak.edu/images/news_bullets.jpg" width="11" height="12" align="absmiddle"> &nbsp;<a href="http://www.lib.ndsu.nodak.edu/download_software" class="Body">Download Software</a></font></p>
+			      <p>&nbsp;</p>
+			      <p>&nbsp;</p>
+			      <p>&nbsp;</p>
+			      <p>&nbsp;                  </p></td>
+                </tr>
+              </form>
+            </table></td>
+        </tr>
+        <tr>
+          <td>
+            <table width="100%" border="0" cellspacing="5">
+
+              <tr> 
+
+                <td bgcolor="#F8F8F8"><strong class="style12">Quick Links</strong></td>
+
+              </tr>
+
+              <tr> 
+
+                
+
+    <td><font size="2" face="Verdana, Arial, Helvetica, sans-serif"><a href="http://www.lib.ndsu.nodak.edu/databases/newspapers.php">Newspapers</a>&nbsp;&nbsp;&nbsp;<a href="https://www.lib.ndsu.nodak.edu/ejourn/">E-Journals</a>&nbsp;&nbsp;&nbsp;<a href="http://www.lib.ndsu.nodak.edu/databases/ebooks.php">E-Books</a>&nbsp;&nbsp;&nbsp;<a href="http://www.lib.ndsu.nodak.edu/reference/encyndsu.php">Encyclopedias</a>&nbsp;&nbsp;&nbsp;<a href="http://www.odin.nodak.edu/authgate/?db=EL1" target="_blank">Electric 
+      Library</a> &nbsp;<a href="http://www.lib.ndsu.nodak.edu/services/dist-ed-services.php" target="_blank">Distance 
+      Education</a></font></td>
+
+              </tr>
+
+              <tr>
+                
+    <td><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif"> 
+      <a href="http://www.lib.ndsu.nodak.edu/services/">Services</a>:</font><font size="1" face="Verdana, Arial, Helvetica, sans-serif"> 
+      <a href="http://www.lib.ndsu.nodak.edu/peri/"><font color="#666666">Pull Service Form</font></a>&nbsp;&nbsp;&nbsp;<strong>ILL:</strong> 
+      <a href="http://www.lib.ndsu.nodak.edu/ill/ill-book.php"><font color="#666666">Book Request</font></a> / <a href="http://www.lib.ndsu.nodak.edu/ill/ill-periodical.php"><font color="#666666">Periodical Request</font></a>&nbsp;&nbsp;&nbsp;<a href="http://www.lib.ndsu.nodak.edu/services/Copying.php"><font color="#666666">Copy 
+      Services</font></a>&nbsp;&nbsp;&nbsp;<a href="http://www.lib.ndsu.nodak.edu/services/Delivery.php"><font color="#666666">Document 
+      Delivery </font></a></font></td>
+              </tr>
+              <tr> 
+    <td><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif"> 
+      <a href="http://www.lib.ndsu.nodak.edu/databases/">Databases</a>:</font><font size="1" face="Verdana, Arial, Helvetica, sans-serif"> 
+      <a href="https://www.lib.ndsu.nodak.edu/ejourn/ebsco/" target="_blank"><font color="#666666">EBSCO</font></a>&nbsp;&nbsp;&nbsp;<a href="https://www.lib.ndsu.nodak.edu/ejourn/proquest/" target="_blank"><font color="#666666">ProQuest</font></a>&nbsp;&nbsp;&nbsp;<a href="http://www.lib.ndsu.nodak.edu/scripts/php/gotourl.php?dbid=188" target="_blank"><font color="#666666">WebSpirs</font></a>&nbsp;&nbsp;&nbsp;<a href="https://www.lib.ndsu.nodak.edu/research/camsciabs/" target="_blank"><font color="#666666">Cambridge
+       Scientific Abstracts</font></a>
+	&nbsp;&nbsp;&nbsp;<a href="https://www.lib.ndsu.nodak.edu/research/scopus/" target="_blank"><font color="#666666">Scopus</font></a></font>
+	  <font size="1" face="Verdana, Arial, Helvetica, sans-serif"> &nbsp;&nbsp;&nbsp;<a href="http://www.lib.ndsu.nodak.edu/scripts/php/gotourl.php?dbid=90" target="_blank"><font color="#666666">FirstSearch</font></a></font></td>
+
+              </tr>
+
+              
+
+              <tr> 
+
+                <td><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif"><a href="http://www.lib.ndsu.nodak.edu/ejourn/">E-Journals</a>:</font><font size="1" face="Verdana, Arial, Helvetica, sans-serif"> 
+
+                  <a href="http://www.lib.ndsu.nodak.edu/scripts/php/gotourl.php?dbid=173" target="_blank"><font color="#666666">Project
+                  
+
+                  Muse</font></a>&nbsp;&nbsp;&nbsp;<a href="http://www.lib.ndsu.nodak.edu/scripts/php/gotourl.php?dbid=275" target="_blank"><font color="#666666">BioOne</font></a>&nbsp;&nbsp;&nbsp;<a href="http://www.lib.ndsu.nodak.edu/scripts/php/gotourl.php?dbid=121" target="_blank"><font color="#666666">JSTOR</font></a>&nbsp;&nbsp;&nbsp;<a href="http://www.lib.ndsu.nodak.edu/scripts/php/gotourl.php?dbid=3" target="_blank"><font color="#666666">ABI/INFORM</font></a>&nbsp;&nbsp;&nbsp;<a href="https://www.lib.ndsu.nodak.edu/ejourn/urlgo.cgi?tkey=9700" target="_blank"><font color="#666666">Elsevier</font></a>&nbsp;&nbsp;&nbsp;<a href="http://www.gateway.ingenta.com/nodaksu" target="_blank"><font color="#666666">Ingenta
+                  
+
+                  Uncover</font></a> </font></td>
+
+              </tr>
+
+              <tr valign="top"> 
+
+                
+
+    <td><font color="#333333" size="1" face="Verdana, Arial, Helvetica, sans-serif">Local:</font><font size="1" face="Verdana, Arial, Helvetica, sans-serif"> 
+
+      &nbsp;<a href="http://www.lib.ndsu.nodak.edu/reference/ndakota.php"><font color="#666666">ND Links</font></a>&nbsp;&nbsp;&nbsp;<a href="http://www.lib.ndsu.nodak.edu/collections/recent_ndsu_pubs.php"><font color="#666666">NDSU 
+
+      Publications</font></a>&nbsp;&nbsp;&nbsp;<a href="http://www.lib.ndsu.nodak.edu/scripts/php/gotourl.php?dbid=86"><font color="#666666">Fargo 
+
+      Forum</font></a>&nbsp;&nbsp;&nbsp;<a href="http://www.lib.ndsu.nodak.edu/ndirs/bio&amp;genealogy/ndbioindex.html"><font color="#666666">ND 
+
+      Biography</font></a>&nbsp;&nbsp;&nbsp;<a
+
+
+
+      href="http://dp3.lib.ndsu.nodak.edu/specarch/"><font color="#666666">Spectrum</font></a>&nbsp;&nbsp;&nbsp;<a
+
+
+
+      href="http://www.lib.ndsu.nodak.edu/research/subjects/ag/NDBib/index.php"><font color="#666666">ND Ag 
+
+      &amp; Rural Bib.</font></a></font></td>
+
+              </tr>
+
+              <tr> 
+
+                <td bgcolor="#F8F8F8"> <div align="center"><font size="1">&nbsp; 
+
+                    </font></div></td>
+
+              </tr>
+
+            </table>
+
+          </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <!-- Begin Insert Header -->
+            <table width="600" height="68" border="0" cellpadding="0" cellspacing="0">
+  <tr> 
+    <td width="417" valign="top" background="http://www.lib.ndsu.nodak.edu/images/gui/ver2-8/footer_left.gif">
+      <div align="right">&nbsp;</div></td>
+    <td width="183" valign="top" background="http://www.lib.ndsu.nodak.edu/images/gui/ver2-8/footer_right.gif"><a href="http://www.lib.ndsu.nodak.edu/images/gui/ver2-8/footer_right.gif"></a><br><font size="1" face="verdana">&nbsp;<a href="http://www.lib.ndsu.nodak.edu/scripts/php/comment.php?comment_return=/index.php&full_path=/home/wwwroot/index.php&id=6281"><font color="gray">John Schulz</font></a><br>&nbsp;<font color="gray">February 25, 2007</font></td>
+  </tr>
+</table>
+
+            <!-- End Insert Header -->
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+ <map name="Map2">
+  <area shape="rect" coords="22,3,115,35" href="http://www.odinlibrary.org/nwq.html">
+  <area shape="rect" coords="131,2,214,36" href="http://www.ndsu.edu" target="_blank">
+  <area shape="rect" coords="230,3,298,34" href="http://www.lib.ndsu.nodak.edu/services/resource_access.php">
+</map>
+<map name="menu" id="menu">
+  <area shape="rect" coords="9,58,77,79" href="http://www.lib.ndsu.nodak.edu/services/index.php">
+  <area shape="rect" coords="86,57,170,78" href="http://www.lib.ndsu.nodak.edu/collections/index.php">
+  <area shape="rect" coords="177,61,262,79" href="http://www.lib.ndsu.nodak.edu/databases/index.php">
+  <area shape="rect" coords="268,56,339,80" href="http://www.lib.ndsu.nodak.edu/research/index.php">
+  <area shape="rect" coords="346,56,420,82" href="http://www.lib.ndsu.nodak.edu/about_us/index.php">
+  <area shape="rect" coords="7,19,200,51" href="index.php.1.html">
+  <area shape="rect" coords="7,3,211,19" href="http://www.ndsu.edu">
+</map>
+</body>
+</html>

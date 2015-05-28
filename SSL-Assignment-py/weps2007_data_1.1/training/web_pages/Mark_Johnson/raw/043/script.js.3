@@ -1,0 +1,73 @@
+
+/* NewsNet5.com scripts */
+// Begin national js scripts
+
+
+var head=document.getElementsByTagName('head');
+if (head) head=head[0];
+
+/* private function only called in this context to add a <meta> tag to <head> */
+function addMeta(name, content) {
+    if (head) {
+        var meta=document.createElement('meta');
+        meta.setAttribute('name',name);
+        meta.setAttribute('content',content);
+        head.appendChild(meta);
+    }
+}
+
+/* public function called from WebTrends code to scan the page for custom <span> tags and add the info to <head> as <meta> tags.*/
+function ib_WTCustomTags() {
+    var spans=document.getElementsByTagName('span');
+    if (spans && spans.length > 0) {
+        for (var i=0; i<spans.length;i++) {
+            var span=spans[i];
+            if (span) {
+                var tag=span.getAttribute('WT_tag');
+                if (tag) {
+                    var val=span.getAttribute(tag);
+                    if (val) {
+                        addMeta(tag,val);
+                    }
+                }
+            }
+        }
+    }
+}
+
+function ib_WTFlashEvent() {
+	dcsMultiTrack(arguments);
+	// ad refresh portion goes here
+}
+
+/* custom function for video players to call when a video is played from an embedded player */
+function ib_WTPlayEvent() {
+	var url = window.location;
+	if (url == null || url == '') return; // not likely to be happening ;-)
+
+	var parsed_url = String(url).split('/'); // [0]='http:', [1]='', [2]='www.wnbc.com', ...
+	var video = parsed_url[3]; // check if this one is video (indicates main player page)
+	if (video.toLowerCase() != 'video')
+		dcsMultiTrack(arguments);
+}
+
+/* custom function for SigAlert tracking to set parameters based on url */
+function ib_WTSigAlert(url) {
+	// Topic=Traffic
+	// Section=maps,traveltimes,incidents, etc.
+	// MediaType=SigAlert
+	
+	if (url == null || url == '') return;
+
+	// parse the url to figure out the topic and section for SigAlert pages (example: http://www.sigalert.com/traveltimes.asp?Region=Bay+Area&partner=ktvu)
+	var parsed_url = String(url).split('/'); // [0]='http:', [1]='', [2]='www.sigalert.com', ...
+	var section = parsed_url[3]; // parse this one out to get just the name of the asp file minus the '.asp'
+	section = String(section).split('.'); // this should give [0]=traveltimes without the .asp extension
+	WT.cg_n = 'Traffic';
+	WT.cg_s = section[0];
+	DCSext.mtype = 'SigAlert';
+}
+
+
+// End national_js scripts
+

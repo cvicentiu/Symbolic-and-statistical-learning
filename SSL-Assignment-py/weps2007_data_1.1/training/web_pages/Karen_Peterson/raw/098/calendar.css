@@ -1,0 +1,120 @@
+/* .cld {	background-image: url(../images/bgmenu.jpg); } */
+
+.cld_textboxlabelstyle { BORDER-RIGHT: #5c6a8f 1px solid; PADDING-RIGHT: 0px; 
+BORDER-TOP: #5c6a8f 1px solid; PADDING-LEFT: 0px; FONT-WEIGHT: normal; FONT-SIZE: 8pt; 
+PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: #5c6a8f 1px solid; WIDTH: 100px; 
+COLOR: #000000; PADDING-TOP: 0px; BORDER-BOTTOM: #5c6a8f 1px solid; FONT-STYLE: 
+normal; FONT-FAMILY: trebuchet ms; HEIGHT: 18px; BACKGROUND-COLOR: #FFFFFF }
+
+SPAN { PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; 
+PADDING-TOP: 0px }
+
+.cld_buttonstyle { BORDER-RIGHT: medium none; PADDING-RIGHT: 0px; BORDER-TOP: medium none; 
+PADDING-LEFT: 0px; BACKGROUND: url(../images/calendar.gif); PADDING-BOTTOM: 0px; 
+MARGIN: 0px 0px 0px 4px; BORDER-LEFT: medium none; WIDTH: 17px; PADDING-TOP: 0px; 
+BORDER-BOTTOM: medium none; HEIGHT: 18px }
+
+.cld_monthheaderstyle { FONT-WEIGHT: bold; FONT-SIZE: 10pt; BACKGROUND: #C00000; 
+COLOR: #FFFFFF; FONT-STYLE: normal; font-family: tahoma, sans-serif; TEXT-DECORATION: none }
+
+.cld_dayheaderstyle { PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: bold; 
+FONT-SIZE: 8pt; BACKGROUND: #EFEFEF; PADDING-BOTTOM: 5px; MARGIN: 10px; color: #C00000; 
+PADDING-TOP: 5px; FONT-STYLE: normal; font-family: tahoma, sans-serif; TEXT-DECORATION: none }
+
+.cld_gototodaystyle { PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: normal; 
+FONT-SIZE: 8pt; BACKGROUND: #EFEFEF; PADDING-BOTTOM: 5px; COLOR: black; PADDING-TOP: 5px; 
+FONT-STYLE: normal; 	font-family: tahoma, sans-serif; TEXT-DECORATION: none }
+
+.cld_cleardatestyle { PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: normal; 
+FONT-SIZE: 8pt; BACKGROUND: #FFFFFF; PADDING-BOTTOM: 5px; COLOR: black; PADDING-TOP: 5px; 
+FONT-STYLE: normal; 	font-family: tahoma, sans-serif; TEXT-DECORATION: none }
+
+.cld_holidaystyle { PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: normal; 
+FONT-SIZE: 8pt; BACKGROUND: #FFFFFF; PADDING-BOTTOM: 5px; COLOR: maroon; 
+PADDING-TOP: 5px; FONT-STYLE: normal; 	font-family: tahoma, sans-serif; TEXT-DECORATION: none }
+
+.cld_offmonthstyle { PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: normal; 
+FONT-SIZE: 8pt; BACKGROUND: #EFEFEF; PADDING-BOTTOM: 5px; COLOR: #ffffff; 
+PADDING-TOP: 5px; FONT-STYLE: normal; 	font-family: tahoma, sans-serif; TEXT-DECORATION: none }
+
+.cld_selecteddatestyle { PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: bold; 
+FONT-SIZE: 8pt; BACKGROUND: #FFFFFF; PADDING-BOTTOM: 5px; COLOR: blue; PADDING-TOP: 5px;
+ FONT-STYLE: normal; 	font-family: tahoma, sans-serif; TEXT-DECORATION: none }
+ 
+.cld_todaydaystyle { PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: normal; 
+FONT-SIZE: 8pt; BACKGROUND: #EFEFEF; PADDING-BOTTOM: 5px; COLOR: green; PADDING-TOP: 5px; 
+FONT-STYLE: normal; 	font-family: tahoma, sans-serif; TEXT-DECORATION: none }
+
+.cld_weekdaystyle { PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: normal; 
+FONT-SIZE: 8pt; BACKGROUND: #FFFFFF; PADDING-BOTTOM: 5px; COLOR: black; PADDING-TOP: 5px; 
+FONT-STYLE: normal; font-family: tahoma, sans-serif; TEXT-DECORATION: none }
+
+.cld_weekendstyle { PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: normal; 
+FONT-SIZE: 8pt; BACKGROUND: #FFFFFF; PADDING-BOTTOM: 5px; COLOR: navy; PADDING-TOP: 5px; 
+FONT-STYLE: normal; font-family: tahoma, sans-serif; TEXT-DECORATION: none }
+
+
+.Calendar 
+{
+
+}
+
+.CalendarDayHeader {
+	font-family: tahoma, sans-serif;
+	font-size: 9px;
+	font-weight: bold;
+	color: #207575;
+}
+
+.CalendarDay {
+	font-family: tahoma, sans-serif;
+	font-size: 12px;
+}
+
+.CalendarNextPrev  {
+	font-family: tahoma, sans-serif;
+	font-size: 12px;
+	color: #207575;
+}
+
+.CalendarOtherMonth {
+	font-family: tahoma, sans-serif;
+	font-size: 10px;
+	color: #ffffff;
+    cursor	: none;
+}
+
+.CalendarSelectedDay {
+	font-family: tahoma, sans-serif;
+	font-size: 11px;
+	color: #ff0000;
+}
+
+.CalendarSelector {
+	font-family: tahoma, sans-serif;
+	font-size: 10px;
+	color: #00ff00;
+}
+
+.CalendarTitle {
+	font-family: tahoma, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #207575;
+	background-color: #DDD9B6;
+	height: 23px;
+	text-decoration:none
+}
+
+.CalendarTodayDay {
+	font-family: tahoma, sans-serif;
+	font-size: 10px;
+	color: #207575;
+	font-weight: bold;
+	background-color: #DDD9B6;
+}
+
+.CalendarWeekEndDay {
+	font-family: tahoma, sans-serif;
+	font-size: 12px;
+}

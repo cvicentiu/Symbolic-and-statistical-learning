@@ -1,0 +1,18 @@
+/*
+CSS Profile Assets
+Notes: 
+I attach these DIV elements to body with com.adobe.htmltempalte.loadCondAssets
+Then I generate a profile with com.adobe.cssprofile
+$Revision: 1.5 $
+*/
+#testelem0{position:absolute;left:-9999px;top:0;height:1px;width:1px;visibility:hidden;overflow:hidden;font:normal 1px/1 monospace}  
+#testelem1{height:2px}
+#testelem2{width:2px;height:10px;padding:0 1px}
+#testelem3:after{content:".";display:block;height: 5px;clear: both}
+#testelem4:before{content:".";display:block;height: 4px;clear: both}
+#testelem4{float: left}
+*[id="testelem1"]{cursor/**/:crosshair} 
+#testelem1>*{overflow:hidden} 
+#testelem1 div+div{clear: right} 
+#testelem1 *:first-child{direction:rtl} 
+#testelem1 *:last-child{direction:rtl} 

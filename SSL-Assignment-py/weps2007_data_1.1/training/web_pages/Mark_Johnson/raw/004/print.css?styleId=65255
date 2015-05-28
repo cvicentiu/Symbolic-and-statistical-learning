@@ -1,0 +1,29 @@
+/* ------------------------------------------------------------------------------------------------
+
+   squarespace printer friendly stylesheet
+
+------------------------------------------------------------------------------------------------ */
+
+body { background: white; font-size: 12pt; }
+
+h1 { font-size: 24pt; margin-bottom: 0; padding-bottom: 0; }
+.h1subtitle { font-size: 9pt; font-weight: normal; margin-bottom: 25px; border-bottom: 1px solid #ccc; padding-bottom: 10px; text-decoration: none; }
+#pageFooter { font-size: 9pt; margin-top: 28px; border-top: 1px solid #ccc; padding-top: 8px; }
+img { border: 0px; }
+
+a:link, a:visited { 
+	color: #520;
+	background: transparent;
+	font-weight: bold;
+	text-decoration: underline;
+	}
+
+#siteTitle a:link, #siteTitle a:visited {
+	color: black;
+	background: transparent;
+	font-weight: bold;
+	text-decoration: none;
+	}
+
+.journal-navigation, #sidebarWrapper, #sidebar, .notice-box, .inline-icon, .journal-entry-navigation { display: none; }
+

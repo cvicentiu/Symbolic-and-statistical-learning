@@ -1,0 +1,64 @@
+.shadetabbing{
+padding: 3px 0;
+margin-left: 0;
+margin-top: 1px;
+margin-bottom: 0;
+font: bold 12px Verdana;
+list-style-type: none;
+text-align: center; /*set to left, center, or right to align the menu as desired*/
+}
+
+.shadetabbing li{
+display: inline;
+margin: 0;
+}
+
+.shadetabbing li a{
+text-decoration: none;
+padding: 3px 7px;
+margin-right: 3px;
+border: 1px solid #778;
+color: #2d2b2b;
+background: white url(/App_Themes/simcoe/js/shade.gif) top left repeat-x;
+}
+
+.shadetabbing li a:visited{
+color: #2d2b2b;
+}
+
+.shadetabbing li a:hover{
+text-decoration: underline;
+color: #2d2b2b;
+}
+
+.shadetabbing li.selected{
+position: relative;
+top: 1px;
+}
+
+.shadetabbing li.selected a{ /*selected main tab style */
+background-image: url(/App_Themes/simcoe/js/shadeactive.gif);
+border-bottom-color: white;
+}
+
+.shadetabbing li.selected a:hover{ /*selected main tab style */
+text-decoration: none;
+}
+
+.tabcontentstyling{ /*style of tab content oontainer*/
+border-top: 1px solid gray;
+width: 565px;
+margin-bottom: 1em;
+padding: 10px;
+text-align: left;
+}
+
+.tabcontenting{
+display:none;
+}
+
+@media print {
+.tabcontenting {
+display:block!important;
+}
+}

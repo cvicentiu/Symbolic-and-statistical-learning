@@ -1,0 +1,184 @@
+/* default.css
+**
+*/
+
+/* tag overrides */
+body { background: #FFFFFF; margin: 0px; }
+img { border: 0px; }
+a, a:visited, a:hover, a:active { font-size: 10px; color: #003399; text-decoration: underline; font-family: Verdana; }
+td { font-family: Verdana; font-size: 10px; color: #000000; }
+input, select, textarea { font-family: Verdana; font-size: 9px; color: #000000; }
+form { padding: 0px; margin: 0px; }
+
+
+
+/* Template Styles */
+.content { vertical-align: top; }
+.right_bar { vertical-align: top; background: #F4F7FA; }
+.right_bar-toc { vertical-align: top; text-align: right; background: right url('http://img.sparknotes.com/right_bar/more_resources/bg-toc.gif'); }
+.content_bottom { vertical-align: top; }
+.content_bottom-toc { vertical-align: top; }
+.right_bar_bottom { vertical-align: bottom; text-align: right; background: #F4F7FA; }
+.right_bar_bottom-toc { vertical-align: bottom; text-align: right; background: right url('http://img.sparknotes.com/right_bar/more_resources/bg-toc.gif'); }
+.footer { padding: 14px 14px 0px 0px; text-align: right; vertical-align: top; background: #2E3040; height: 48px; color: #C9C9C9; font-family: Verdana; font-size: 9px; }
+.branding { }
+div.crumb  { color: #4D535C; font-size: 9px; margin-left: 5px; text-indent: -11px; line-height: 13px; padding: 8px 0px 5px 10px; }
+
+.crumb, .crumb a, .crumb a:visited crumb a:hover, crumb a:active { color: #4D535C; font-size: 9px; }
+
+
+/* Main Top Navigation */
+.studying { background: #9EEDFF; padding: 1px 0px 0px 13px; white-space: nowrap; }
+.main-nav { background: #9EEDFF; white-space: nowrap; }
+.nav-on { background: #FFFFFF; }
+.nav-space { padding-bottom: 2px; }
+.subnav, .subnav-sl, .subnav-col { vertical-align: top; padding-left: 9px; white-space: nowrap; }
+.subnav-buttons img { margin-right: 2px; }
+.subnav-sl { background: #424242; }
+.subnav-col { background: #575F4F; }
+.search { background: #9EEDFF; white-space: nowrap; vertical-align: middle; }
+.search input { width: 145px; }
+.search-head { font-family: Lucida Grande, Trebuchet MS; font-weight: bold; font-size: 14px; text-transform: uppercase; text-align: center; margin-bottom: 15px;}
+
+
+
+/******* nav definition elements *********/
+#section-his .eng, #section-ms .his, #section-os .ms, #section-tp .os, #section-col .tp, #section-sl .col { background: #FFFFFF; }
+/******* END nav definition elements *********/
+
+.welcome { color: #9EEDFF; font-weight: bold; }
+.nav-user-l, .nav-user-r { font-size: 9px; color: #FFFFFF; }
+.nav-user-r a, .nav-user-r a:visited, .nav-user-r a:hover, .nav-user-r a:active, .nav-user-l a, .nav-user-l a:visited, nav-user-l a:hover, nav-user-l a:active { color: #FFFFFF; font-size: 9px; }
+.nav-user-r { color: #FFFFFF; text-align: right; padding-right: 10px; }
+
+.shoppingcart a, .shoppingcart a:visited, .shoppingcart a:hover, .shoppingcart a:active { color: #cbf4fd; font-size: 9px; }
+.shoppingcart { color: #cbf4fd; text-align: right; padding-right: 10px; }
+
+
+
+/* content_bottom */
+.front-ad { padding: 0px 0px 10px 5px; }
+.spc { padding-bottom: 8px; }
+.cs-nav { text-align: center; padding: 5px 0px 8px 0px; background: #9EEDFF; }
+.cs-nav td { font-size: 9px; color: #FFFFFF; white-space: nowrap; }
+.cs-nav a, .cs-nav a:visited, .cs-nav a:hover, .cs-nav a:active { color: #454545; font-size: 9px; }
+
+/* AdBroker */
+.adbroker .x-dots { line-height: 10px; }
+.adbroker a, .adbroker a:visited, adbroker a:hover, adbroker a:active { font-size: 9px; }
+.content_bottom-toc .adbroker { padding: 0px; }
+.adbroker td { font-size: 9px; }
+.content_bottom .adbroker .left { padding: 0px 0px 0px 20px; }
+.content_bottom .adbroker .right { padding: 0px 10px 0px 10px; }
+.content_bottom-toc .adbroker .left { padding-left: 5px; }
+.content_bottom-toc .adbroker .right { padding-left: 3px; }
+
+
+/* Branding Styles */
+.branding .b-left { padding: 0px 0px 0px 7px; vertical-align: top; background: #0095D8; }
+.branding .b-right { padding: 0px 12px 6px 0px; text-align: right; vertical-align: bottom; }
+
+
+
+
+
+/* Footer Styles */
+.footer a, .footer a:visited, .footer a:hover, .footer a:active { color: #FFFFFF; font-size: 9px; }
+
+/* right_bar */
+.bntab { background: repeat-x url('http://img.sparknotes.com/content/home/bg-shadow.gif') top; }
+.more_resources-int { padding-bottom: 5px; }
+.more_resources-int a, .more_resources-toc a, .more_resources-int a:visited, .more_resources-int a:hover, .more_resources-int a:active, .more_resources-toc a:visited, .more_resources-toc a:hover, .more_resources-toc a:active { color: #0051C3; font-size: 9px; }
+.more_resources-int .header, .more_resources-toc .header { letter-spacing: 1px;  text-transform: uppercase;  font-weight: bold; color: #000000; font-size: 9px; }
+.more_resources-int .trow { font-size: 9px; background: bottom center no-repeat url('http://img.sparknotes.com/right_bar/more_resources/x-dots.gif'); padding: 6px 5px 8px 8px; }
+.more_resources-int .trow-l { padding: 6px 5px 10px 8px; }
+.more_resources-int .endbar { background: #4D535C; line-height: 5px; }
+
+.more_resources-toc { }
+.more_resources-toc .ybox { background: #FDBC48; }
+.more_resources-toc input.zipbox { width: 55px; margin: 7px 0px 0px 5px; font-size: 9px; }
+.more_resources-toc .topcorner { line-height: 5px; background: no-repeat url('http://img.sparknotes.com/right_bar/more_resources/tab-topcorner.gif'); }
+.more_resources-toc .botcorner { line-height: 14px; background: no-repeat url('http://img.sparknotes.com/right_bar/more_resources/tab-botcorner.gif'); }
+.more_resources-toc .midedge { vertical-align: top; padding: 3px 0px 0px 3px; text-align: center; background: repeat-y url('http://img.sparknotes.com/right_bar/more_resources/tab-edge.gif'); }
+.more_resources-toc .trow { font-size: 9px; vertical-align: top; background: #F4F7FA; padding: 5px 5px 10px 13px; }
+.more_resources-toc .tab-sep { background: no-repeat url('http://img.sparknotes.com/right_bar/more_resources/tab-sep.gif'); }
+
+.tp-panel td { font-size: 9px; }
+.tp-panel a, .tp-panel a:visited, .tp-panel a:hover, .tp-panel a:active { font-size: 9px; color: #CB4C39; }
+
+/* Universal Styles */
+.subtitle { font-size: 9px; letter-spacing: 2px; text-transform: uppercase; font-weight: bold; }
+.dek { font-family: Trebuchet MS; font-size: 9px; color: #E21F1F; line-height: 14px; letter-spacing: 3px; }
+.sm, .sm a, .sm a:visited, .sm a:hover, .sm a:active, a.sm, a:visited.sm, a:hover.sm, a:active.sm { font-size: 9px; }
+.x-dots { background: repeat-x url('http://img.sparknotes.com/css_bg/x-dots.gif') top; }
+.y-dots { background: repeat-y url('http://img.sparknotes.com/css_bg/y-dots.gif') top; }
+.bg-zebra { background: url('http://img.sparknotes.com/css_bg/bg-zebra.gif'); }
+
+
+td.gen-colored { vertical-align: top; padding: 5px 3px 2px 5px; line-height: 16px; background: repeat-x url('http://img.sparknotes.com/css_bg/st-colored-bg.gif'); }
+td.gen-white { vertical-align: top; padding: 5px 3px 2px 5px; line-height: 16px; background: repeat-x url('http://img.sparknotes.com/css_bg/st-white-bg.gif'); }
+td.gen-colored-bar { background: repeat-y url('http://img.sparknotes.com/css_bg/st-colored-bar.gif'); }
+td.gen-white-bar { background: repeat-y url('http://img.sparknotes.com/css_bg/st-white-bar.gif'); }
+
+.verisign { padding-top: 45	px; padding-right: 15px;}
+
+/* content home */
+.home .banner { vertical-align: top; }
+.home .sitemap  { vertical-align: top; }
+.home .tp { padding-bottom: 17px; vertical-align: bottom; }
+
+
+/* errata popup */
+.errata_popup .top-bg { background: #0095D8; height: 15px; }
+.errata_popup .close-window { background: #2E3040; text-align: right; padding-right: 3px; height: 20px; }
+.close-window a, .close-window a:visited, .close-window a:hover, .close-window a:active { color: #FFFFFF; }
+.errata-title { margin: 10px 0px 10px 0px; }
+.errata-content { vertical-align: top; padding-left: 10px; background: no-repeat bottom right url('http://img.sparknotes.com/content/errata/icons/sparkit.gif'); }
+.errata-content a, .errata-content a:visited, .errata-content a:hover, .errata-content a:active { }
+.errata-content input.ebox { width: 165px; font-size: 10px; margin: 2px 0px 2px 0px; }
+.errata-content select { margin: 2px 0px 2px 0px; }
+.errata-content .etxtarea { width: 245px; }
+.errata-content div.btn-area { padding-top: 5px; }
+.errata-errors {color: red;}
+
+/* minifaft (repeated in pref.css as well) */
+.no-spc td { padding: 0px; vertical-align: top; }
+td.st-colored { white-space: nowrap; padding: 0px 3px 2px 5px; line-height: 16px; background: repeat-x url('http://img.sparknotes.com/content/pref/icons/st-colored-bg.gif'); }
+td.st-white { white-space: nowrap; padding: 0px 3px 2px 5px; line-height: 16px; background: repeat-x url('http://img.sparknotes.com/content/pref/icons/st-white-bg.gif'); }
+td.st-header { padding-left: 5px; color: #E21F1F; text-transform: uppercase; font-size: 9px; font-weight: bold; letter-spacing: 2px; line-height: 16px; }
+div.st-bot-nav { padding: 20px 0px 0px 0px; }
+.ftaft_msg-box { width: 245px; height: 109px; }
+.ftaft_tbox { width: 180px; margin-top: 2px; }
+
+/* one-click login/signup boxes */
+.nick-text { color: #82868D; font-size: 9px;}
+.ls-header{ font-family: Lucida Grande, Trebuchet MS; font-weight: bold; font-size: 12px; color: #0095D8; text-transform: uppercase; }
+
+/* search results */
+.search-tbox   { margin: 0px 0px 4px 10px; }
+.search-clump  { margin: 5px 0px 10px 0px; }
+
+.search-navbar { padding: 4px 0px 4px 0px; }
+.search-navbar, .search-navbar a, .search-navbar a:visited, .search-navbar a:hover, .search-navbar a:active {
+	background: #F2F4F7; color: #000000;
+	font-family: Verdana; font-size: 12px;
+}
+
+.search-header, .search-header a, .search-header a:visited, .search-header a:hover, .search-header a:active { font-family: Verdana; font-size: 12px; font-weight: bold; }
+.search-header { color: #000000; }
+
+.search-result, .search-result a, .search-result a:visited, .search-result a:hover, .search-result a:Active { font-family: Verdana; font-size: 10px; }
+.search-result { color: #000000; }
+
+.search-results { margin-left: 15px; }
+
+/* ADS STYLES */
+div.floatingad { float: left; margin: 0px 20px 10px 0px; }
+div.floatingad-right { float: right; margin: 0px 0px 10px 20px; }
+
+div.floatingad a, div.floatingad a:visited, div.floatingad a:hover, div.floatingad a:active,
+div.floatingad-right a, div.floatingad-right a:visited, div.floatingad-right a:hover, div.floatingad-right a:active { border: 0px; border-bottom-width: 1px; }
+
+#search_ad { position: absolute; top: 230px; left: 580px; }
+
+#nfs_ad { position: absolute; top: 460px; left: 775px; }

@@ -1,0 +1,69 @@
+/* This Stylesheet is used by Commerce, Checkout and the Store Locator (http://parable.know-where.com). */
+a					{color: #036}
+a:hover				{text-decoration:none}
+a.inverse			{color: #036;text-decoration:none}
+a.inverse:hover		{text-decoration:underline;}
+body, h2.itemSubTitle	{font-size: 11px; margin: 0;}
+hr					{color: #CCC;height: 1px;}
+form				{margin: 0}
+select, textarea, input	{font-family:verdana,san-serif;font-size:11px;}
+
+/* the "button" class is called only by checkout */
+input.button 		{background-color:#FFF; border:solid 1px #97141A; cursor:pointer; font-family:Arial; font-size:11px; font-weight:bold; height:18px; letter-spacing:1px;}
+input.buttonNext	{background-color:#97141A; border:solid 1px #000; color:#FFF; cursor:pointer; font-family:Arial; font-size:11px; font-weight:bold; height:18px; letter-spacing:1px;}
+
+td.itemCell			{padding:2px 20px}
+td.itemCellB			{padding:2px 20px;border-bottom:solid 1px #000}
+td.crumbCell 		{padding:2px 20px 2px 0; color:#FFF}		/* the "crumbcell" classes are called only by checkout. */
+td.crumbCellNum 	{padding:2px 5px 2px 0}
+td.standardPad		{padding:6px 2px 6px 8px}
+div.standardPad		{padding:6px 2px 6px 10px; margin: 0;}
+
+h1.crumbTrail		{color: #FFF;margin:3px 0 4px 5px;padding:0;font-size:11px;font-weight:normal;}
+h1.productTitle		{font-size:16px;font-weight: bold;margin: 0 0 0 10px;}
+h2.contributors		{font-size:12px;font-weight: normal;margin:0 0 8px 10px;}
+h2.prodTitle			{margin:0;padding:0;font-size:11px;}
+h2.subSection		{font-size: 13px;font-weight: bold;padding:2px 0 2px 5px;margin:0;}
+
+.redtext 			{color: #A00}
+.saleprice			{color: #900}
+.yousave			{color:#606060;}
+.copyright			{font-size: 11px;font-family: Arial}
+.add				{margin-top: 3px;}
+
+.extrasmallfont		{font-size: 9px;}
+td, .smallfont		{font-size: 11px}
+.mediumfont			{font-size: 13px}
+.mediumfontPlus		{font-size: 14px}
+.mediumfontPlus2	{font-size: 15px}
+.largefont			{font-size: 16px}
+.maintop			{font-size: 12px}
+
+.bgGray			{background-color:#E5E5E5;}
+.blackBorder	{border:solid 1px #000}
+.white			{color: #FFF;}
+.faq				{background-color:#97141A;color:#FFF;font-weight:bold;padding:2px 20px}
+div.faq			{background-color:#97141A;color:#FFF;float:left;font-weight:bold;margin-top:10px;padding:2px 20px}
+div.faqContent	{clear:both;border-bottom:1px #000000 solid;border-top:1px #000000 solid;padding:5px 20px 10px 20px}
+.grayBorder		{border:solid 1px #E5E5E5}
+.group			{font-weight: bold;font-size: 13px}
+.inverseText	{font-weight: bold;font-size: 13px;text-transform: uppercase;color: #FFF;}
+
+.itemSubTitle	{padding:4px 4px 4px 8px; font-weight: bold;}
+
+.LocalStocking		{width:291px;border:solid 1px #CCCC98;margin:12px 0 0 0;background-color:#EEEEE4;}
+.LocalStocking h2	{text-align:center;font-family: Times New Roman;font-size: 19px;color: #FFF;background-color: #706549;padding: 6px;margin: 0;}
+.LocalStocking div	{padding: 5px;}
+
+.mainheader	{font-weight: bold;font-size: 13px;text-transform: uppercase;color: #666;}
+
+.navTitles	{font-family: arial,sans-serif;font-size: 12px;font-weight: bold;color: #FFF;padding: 2px 2px 2px 6px;}
+
+.navContent				{font-family: Verdana,sans-serif;font-size: 11px;color: #036;text-decoration:none;}
+.navContent:hover		{text-decoration:underline;}
+
+.productMoreInfo		{text-decoration:none;color:#000;}
+.productMoreInfo:hover	{text-decoration:underline;}
+
+.sectionTitle				{text-decoration:none;color:#000;}
+.sectionTitle:hover		{text-decoration:none;}

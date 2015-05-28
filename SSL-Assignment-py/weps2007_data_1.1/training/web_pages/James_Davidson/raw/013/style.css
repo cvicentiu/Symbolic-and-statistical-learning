@@ -1,0 +1,181 @@
+/* Logo to display when printing */
+
+#printLogo {
+  display: none;
+}
+
+@media print {
+  #printLogo {
+    display: inline;
+  }
+}
+
+#edittool ul {
+  width: 14em;
+  right: 5em;
+  position: absolute;
+  top: 1.3em;
+  list-style-type: none;
+  margin: 0px;
+  display: none;
+  padding: 2px;
+  background-color: Menu;
+  border: 1px solid ThreeDShadow;
+  border-right: 2px solid ThreeDShadow;
+  border-bottom: 2px solid ThreeDShadow;
+  text-align: left;
+  
+  z-index: 100;
+}
+
+#edittool ul form {
+  display: inline;
+  margin: 0px;
+  padding: 0px;
+}
+
+#edittool:hover ul,
+#edittool ul:hover,
+#edittool.sfhover ul {
+  display: block;
+}
+
+#edittool ul li {
+  line-height: 18px;
+  margin: 0px;
+  padding: 0px;
+}
+
+#edittool ul li.separator hr {
+  height: 1px;
+  border: none;
+  border-top: 1px solid ThreeDShadow;
+}
+
+#edittool ul li a,
+#edittool ul li a:link,
+#edittool ul li a:visited {
+  text-decoration: none;
+  color: #444;
+  display: block;
+  padding: 1px;
+  margin: 0px;
+  padding-left: 24px;
+}
+
+
+#edittool ul .disabled {
+  padding: 1px;
+  padding-left: 24px;
+  color: #aaa;
+}
+
+#edittool ul li a:hover,
+#edittool ul li a.hover {
+  color: HighlightText;
+  background-color: Highlight;
+}
+
+#edittool ul li a,
+#edittool ul li .disabled {
+  background-repeat: no-repeat;
+  background-position: 2px center;
+}
+#editMenumain, .editMenumain {
+  background-image: url(/static_war/edit/images/editcontentlink.gif);
+}
+#editMenurhs, .editMenurhs {
+  background-image: url(/static_war/edit/images/editrightcontentlink.gif);
+}
+#editMenuProperties {
+  background-image: url(/static_war/edit/images/propertieslink.gif);
+}
+#editMenuPermissions {
+  background-image: url(/static_war/edit/images/permissionslink.gif);
+}
+#editMenuUploadFile {
+  background-image: url(/static_war/edit/images/uploadfilelink.gif);
+}
+#editMenuCreatePage {
+  background-image: url(/static_war/edit/images/createpagelink.gif);
+}
+
+/* IE overrides */
+
+* html #edittool ul {
+  margin-left: -14em;
+}
+* html #edittool ul form {
+  float: left;
+}
+* html #edittool ul a,
+* html #edittool ul a:link,
+* html #edittool ul a:visited {
+ height: 1em;
+}
+
+/* images for links that open in a new window */
+a img.targetBlank {
+  border: 0px;
+  width: 12px;
+  height: 13px;
+  background: url(/static_war/images/newwindow.gif) right 3px no-repeat;
+}
+a:hover img.targetBlank {
+  background-position: right -125px;
+}
+
+/* IE7 list whitespace bug */
+#edittool li a,
+#edittool li form{
+  display:block;
+  height:1em;
+}
+html>body #edittool li a,
+html>body #edittool li form{
+  height:auto;
+  min-height:1em;
+}
+/* end IE7 */
+
+#edittool ul li.separator {
+  /*min-height: auto;*/
+  height: 8px;
+  line-height: 8px;
+}
+
+/* email page owner div */
+
+#emailOwnerDiv .user_error {
+	display: block;
+	color: red;
+}
+
+#emailOwnerForm td, #emailOwnerForm input, #emailOwnerForm select, #emailOwnerForm textarea {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+
+#emailOwnerForm input, #emailOwnerForm select, #emailOwnerForm textarea {
+	border: 1px solid #808080;
+}
+
+#emailOwnerForm .textfield {
+	width: 95%;
+}
+
+#emailOwnerForm table {
+	width: 100%;
+}
+
+#emailOwnerForm td.label {
+	width: 10em;
+}
+
+#emailOwnerDivInner h1 {
+	margin-top: 0px;
+}
+
+.rssicon {
+    float: right;	
+}

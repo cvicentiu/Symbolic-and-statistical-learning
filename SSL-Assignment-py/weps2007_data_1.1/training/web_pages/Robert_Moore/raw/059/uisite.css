@@ -1,0 +1,230 @@
+/* HTML elements redefined */
+
+
+
+/* This sets the default font properties for the site */
+
+body, td, th { font-family: verdana, helvetica, sans-serif; font-size: 90%; text-decoration: none; color: #000; }
+body { margin: 0; padding: 0 !important; }
+td.column_left, td.column_middle, td.column_right { padding: 0; margin: 0; }
+.column_subHolder td.column_right { padding-bottom: 100px !important; }
+table#idLayout2 td.CS_Layout_TD { padding: 0; margin: 0; }
+body { background-color: #fff; }
+/* Removed content area line-height, margin, and padding to address concern that content area contains too much space TA 10/21/2005 */
+/* .column_subHolder .CS_Textblock_Text { font-size: 1.1em; margin: 0; padding: 0; line-height: 1.2em; } */
+.column_subHolder .CS_Textblock_Text { font-size: 1.1em; } 
+
+/* Redefine standard HTML elements */
+
+a { color: #000; text-decoration: underline; }
+b, strong { font-weight: bold; }
+
+hr { border: solid #69c !important; border-width: 1px 0 0 !important; height:1px !important; width:100% !important; margin: .5em 0 .5em 0; } /* HR important styles override inline styles set on <hr>s pulled in from the reports database TDA 08/2005.  Removed 1em top and bottom margins on the hr to address concern that content area contains too much space TA 10/21/2005 
+Changed margin properties as there was not enough space around hr. Previously TA had margins set as margin: 0; (RD 11.23.05) */
+img { border: none; padding: 0; margin: 0; }
+
+ul { margin-top: .3em; margin-bottom: .3em; padding: 0; margin-left: 1.5em; list-style-type: disc; }
+h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-family: arial, verdana, sans-serif; text-decoration: none; color: #47a; font-weight: bold; margin: 0; padding: 0; }
+h1, td h1 { font-size: 1.35em; padding: 0; margin: .5em 0 1em 0; } /* was margin: .5em 0 .2em 0 RD 11/01/05 */
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover	{ text-decoration: underline; }
+h1.linkOnly a:hover	{ text-decoration: none; }
+h2, td h2	{ font-size: 1.2em; }
+h2 a	{ text-decoration: underline; }
+h3, td h3, h3 a	{ font-size: 1em; }
+form { padding: 0; margin: 0; }
+input, option { font-family: verdana, arial, sans-serif; font-size: 1em; }
+select { font-family: verdana, arial, sans-serif; font-size: .8em; }
+textarea { font-family: verdana, arial, sans-serif; font-size: 1em; }
+#search input, #search option, #search select { font-size: .8em; }
+submit, .submit { background-color: #f93; color: #fff; border: 1px #f93 solid; padding: 0; margin: 0 0 0 .2em; }
+submit:hover, .submit:hover { background-color: #c60; }
+small, .small { font-size: .8em; }
+subnavlist {font-size: 11px; color: red; }
+descrip, .descrip { font-size: 11px; }
+
+/* ************** */
+/* ************** */
+/* Custom  styles */
+/* ************** */
+/* ************** */
+
+#main, #mainSub { width: 740px; padding: 0; margin: 0; border-top: 20px #69f solid; }
+
+/* Position the search box.  Changes to this also need to be applied to the IE Hack below so that the conform */
+#search { left: 365px; position: absolute; z-index: 1; overflow: hidden; padding: .2em 0 .2em .2em; width: 370px; background-color: #c60; color: #fff; border-top: 2px #fff solid; border-bottom: 2px #fff solid; border-left: 2px #fff solid; }
+
+/* Set different top margins for homepage and content page */
+#main #search { top: 145px; }
+#mainSub #search { top: 75px; }
+
+#search .searchLinks { font-size: .65em; padding: 0; margin: 10px 0 0 0; }
+#search form { width: 200px; float: left; }
+#search .searchLinks div { display: inline; float: right; }
+
+
+/* IE Hack */
+* html #search  { width: 415px; display: inline; left: 315px; padding-right: 5px; }
+* html #search form  { width: 250px; }
+/* End IE hack */	
+
+#search a { color: #fff; font-weight: normal; }
+#mainlogo  { position: absolute; top: 35px; left: 25px; z-index: 1; }
+#mainSub #tagline img { border-bottom: 2px #fff solid; }
+#headerTable, #mainTable { width: 740px; }
+#headerTable { border-top: 2px #fff solid; padding: 0; margin: 0; }
+
+td.column_left { width: 174px; padding: 0; margin: 0; border-right: 2px #fff solid; }
+td.column_left img { padding: 0; margin: 0; }
+#headerTable td.column_left { background-color: #c60; }
+#headerTable td.column_middle { width: 285px; }
+#headerTable td.column_right { width: 288px; padding: 0; background-color: #b2ccff; }
+#headerTable td.column_right p.quote { font-family: arial, verdana, helvetica, sans serif; color: #369; font-weight: bold; padding: 10px 5px 0 10px; margin: 0; font-size: 11px; }
+#headerTable td.column_right p.quote .attribution { font-family: verdana; color: #546869; font-size: 10px; } 
+#headerTable td.column_right p.quote .quotespacer { padding: 0; font-size: 6px; } 
+/* p.quote .attribution font size was 10.5px; changed to 11px because text was not showing up bold in IE. 02/08/06 RD */
+
+/* **************************************************************************************************** */	
+/* **************************************************************************************************** */	
+/* Start mainTable and subTable styles (mainTable is only on the homepage, subTable on all other pages) */
+/* **************************************************************************************************** */	
+/* **************************************************************************************************** */	
+
+#mainTable { border-top: 2px #fff solid; }
+#subTable { width: 100%; }
+
+#mainTable td.column_left, #mainTable td.column_right, #subTable td.column_right { background-color: #69c; }
+#subTable td.column_right, #mainTable td.column_right { width: 288px; border-left: 2px #fff solid; }
+#mainTable td.column_middle { background-color: #edf3ff; }
+#mainTable td.column_subHolder { background-color: #edf3ff; }
+/* set header photo for internal pages (except pubs) here */
+#mainTable td.column_subHolder #header { height: 66px; background: #b2ccff url(/images/header_subpage_friends.jpg) left top no-repeat; }
+
+/* Top-right section title.  The second style applies only to accomodate longer filenames of the Policy Centers */
+#mainTable td.column_subHolder #header h1 { font-size: 1.5em; color: #fff; padding: 1em 0 0 300px; margin: 0; }
+#policyCenters #mainTable td.column_subHolder #header h1 { padding-top: .2em; }
+#mainTable td.column_subHolder #header h2 { font-size: 1.5em; color: #fff; padding: 1em 0 0 300px; margin: 0; padding-top: .2em;} /* This style applied by Doug Murray to accomodate longer filenames for use on the Projects pages */
+
+
+#mainTable td.column_right, #subTable td.column_right { width: 170px; }
+#breadcrumbs { color: #888; padding: 10px 1em 10px 1em; border-bottom: 2px #fff solid; }
+#breadcrumbs a { color: #888; font-weight: normal; }
+
+/* ******** */	
+/* ******** */	
+/* Left Nav */	
+/* ******** */	
+/* ******** */	
+
+/* Some widths and defaults */
+#mainTable td.column_left .holder { padding: 0; }
+#mainTable td.column_left a { font-size: 1em; font-weight: normal; color: #fff; margin-bottom: .3em; text-decoration: none; }
+
+/* Top Level */
+#mainTable td.column_left h1, #mainTable td.column_left .holder h1 { font-family: Univers, arial, verdana, sans-serif; font-size: 1.3em; letter-spacing: .3em; color: #000; margin-left: .5em; padding-left: .8em; background: url(/images/bullet_navParent-regular.gif) top left no-repeat }
+#mainTable td.column_left h1.on { background: url(/images/bullet_navParent-selected.gif) top left no-repeat }
+#mainTable td.column_left h1 a, #mainTable td.column_left h1.on a { color: #000; font-weight: bold; }
+#mainTable td.column_left h1 a:hover, #mainTable td.column_left h1.on a:hover { color: #fff; text-decoration: none; background: none !important; }
+
+/* Selected 2nd level */
+#mainTable td.column_left .section .on { background-color: #369; padding: .5em 0 .5em 0; }
+
+/* Make hrefs block level elements and set padding */
+#mainTable td.column_left .chief a, #mainTable td.column_left .section a, #mainTable td.column_left .section .subsection a { display: block; padding: 0 0 0 12px; margin: 0 0 .5em 1em; }
+
+#mainTable td.column_left .section .on a { background: url(/images/bullet_nav-selected.gif) top left no-repeat; }
+#mainTable td.column_left .chief a, #mainTable td.column_left .section .off a { background: url(/images/bullet_nav-regular.gif) top left no-repeat; }
+#mainTable td.column_left .subsection a { background: url(/images/bullet_nav-selected.gif) top left no-repeat; }
+#mainTable td.column_left .subsection a.on  { font-weight: bold; background-color: #b2cce5; }
+#mainTable td.column_left .subsection { background-color: #b2cce5; padding: .5em 0 .5em 1.5em; margin: 0 0 1em 0; }
+#mainTable td.column_left .subsection a { font-size: .9em; display: block; color: #369; padding-left: 1em; background: url(/images/bullet_nav-sub.gif) top left no-repeat; }
+
+/* Since the hrefs are now block level elements, there is no need for the <br> tags to do anything.  In case CommonSpot adds them, we want to turn them off in the left nav */
+#mainTable td.column_left .chief br, #mainTable td.column_left .subnav br, #mainTable td.column_left .subsection br { display: none; }
+#mainTable td.column_left a:hover { text-decoration: underline; background-color: inherit; background: inherit; }
+
+/* ********* */	
+/* ********* */	
+/* Right nav */
+/* ********* */	
+/* ********* */	
+
+td.column_right { padding-top: 12px; }
+* html td.column_right { padding-top: 15px; }  /* Fix IE */
+#mainTable .column_right p, #subTable .column_right p { line-height: 1.2em; } /*changed line-height from 1.5em to 1.2em (RD 10/20/05) */
+#mainTable .column_right p { font-size: .9em; }
+#subTable .column_right p { font-size: 1em; }
+
+#mainTable td.column_right, #mainTable td.column_right h1, #mainTable td.column_right a, #mainTable td.column_right ul, #mainTable td.column_right li, #mainTable td.column_right li a { color: #fff !important; font-size: 1em; }
+
+#subTable td.column_right, #subTable td.column_right h1, #subTable td.column_right a, #subTable td.column_right ul, #subTable td.column_right li, #subTable td.column_right li a { color: #fff !important; font-size: 1em; }
+
+td.column_right a.morelink { display: block; margin-top: 1em; font-weight: bold; }
+td.column_right li a { font-weight: normal; }
+
+.column_right #column_bookstore, .column_right #column_policyCenters, .column_right #column_toolkit, .column_right #column_newsletters, .column_right #column_contact, .column_right #column_experts, .column_right #column_resources, .column_right #media_contact, .column_right #media_experts { color: #fff; padding: 0 .5em .5em .5em; font-size: .9em; }
+
+#mainTable td.column_right #column_bookstore, #mainTable td.column_right #column_policyCenters, #mainTable td.column_right #column_toolkit, #mainTable td.column_right #column_newsletters, #mainTable td.column_right #column_contact, #mainTable td.column_right #column_experts, #mainTable td.column_right #column_resources, .column_right #media_contact, .column_right #media_experts { margin: 0; padding: 0 1.5em 2em 1em; }
+
+#mainTable td.column_right ul { list-style-type: square; margin-bottom: 0; padding-bottom: 0; }
+#mainTable td.column_right li { font-size: 1em; font-weight: normal; color: #9cf; margin-bottom: .2em; } /* changed margin-bottom from .3em to .2em (RD 10/20/05) */
+#mainTable td.column_right { padding-bottom: 20px; }
+#mainTable td.column_right h1 a { text-decoration: underline; }
+#mainTable td.column_right h1 a:hover { text-decoration: none; }
+
+/* ************** */	
+/* ************** */	
+/* Content styles */
+/* ************** */	
+/* ************** */	
+
+#subTable td.column_middle { border-top: 10px #999 solid; }
+#subTable td.column_middle td { font-size: 1em; }
+#mainTable td.column_middle .holder { padding: 1em; }
+#mainTable td.column_middle .holder li { padding: .5em; }
+#mainTable td.column_middle .holder img { padding: .5em; }
+#subTable td.column_middle #tools td { border: 5px #edf3ff solid; }
+#pubsauthors, #pubsentiretext { margin-top: 1em; }
+.paragraphlift { margin-top: -3pt; }
+p.abstract { font-size: .9em; margin: 1em 0 0 1em; }
+h3.pubsrelatedresearch, h3.pubsrelatedtopics, h3.pubsrelatedauthors { margin-top: 2em; }
+/* #pubsentiretext br { display: none; } */
+#pubsdisclaimer { margin-top: 2em; font-size: 1em; }
+#pubsdisclaimer hr { margin-bottom: 2em; }
+.fade, .fade a { font-size: .9em; color: #666666; }
+
+
+/* Legacy pubs styles (not currently in use) */
+td.column_middle #author, td.column_middle #author a { font-weight: bold; color: #036; margin-bottom: 1.5em; }
+td.column_middle #pullquote { font-weight: bold; }
+td.column_middle #attribution { margin-bottom: 1.5em; font-style: italic; width: 50%; }
+
+/* ************ */	
+/* ************ */	
+/* Print styles */
+/* ************ */	
+/* ************ */	
+
+#print { padding-top: 50px; margin: 50px; background: url(/images/mainlogo.gif) top left no-repeat }
+#print h1 { color: #000; }
+
+/* ****** */	
+/* ****** */	
+/* Footer */
+/* ****** */	
+/* ****** */	
+
+#footer { background-color: #fff; width: 740px; text-align: center; font-size: .7em; padding: 1em 0 1em 0; }
+#footer a { font-weight: normal; }
+
+/* ******* */
+/* ******* */
+/* Spacers */
+/* ******* */
+/* ******* */
+
+.spacer { margin: 0; padding: .5em; clear: both; }
+.bigspacer { margin: 0; padding: 1em; clear: both; }
+.bigspacer2 { margin: 0; padding: .5em .5em 1em .5em; clear: both; }
+.hidden { display: none; }
+.CS_Layout_SpacingHeight { line-height: 1em !important; }
+.divline {	border-bottom: 1px solid #ddd; }

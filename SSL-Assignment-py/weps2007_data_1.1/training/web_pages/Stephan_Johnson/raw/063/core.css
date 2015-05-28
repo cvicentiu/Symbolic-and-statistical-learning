@@ -1,0 +1,532 @@
+
+
+
+	td {
+		font-size:8pt; 
+		font-family: Arial, Helvetica, sans-serif;
+		color: black;	
+	}	
+
+	.faculty {
+
+		color: black;
+	}
+	
+	.facultybold {
+
+		color: #000000;
+		font-weight: bold
+	}	
+	
+	.calcell {
+		color: #000000;font-style:normal; font-variant:normal; font-weight:normal; font-size:10pt; font-family:Arial	
+	}
+	
+	.NewsHeading
+{
+	font-weight: bold;
+	font-size: 9pt;
+	line-height: 15pt;
+	font-family: Arial, Helvetica, sans-serif;
+}	
+
+	.NewsCategoryTitles
+{
+	font-weight: bold;
+	font-size: 9pt;
+	line-height: 15pt;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: underline;
+}	
+	
+
+	
+	a hover.prof {
+		/* Was '1.em'; corrected 2006-09-06 mzanon@noctrl.edu*/
+		font: 1em Arial, Helvetica, sans-serif;
+		color: black;
+		background : transparent;		
+	}	
+
+	.dates {
+		font: 1.0em Arial, Helvetica, sans-serif;
+		color: white;
+		font-weight: bold
+	}
+	
+	body {
+		background: #fff;
+		margin : 0;
+		padding : 0;
+		font-family : Arial, Helvetica, sans-serif;
+		min-width : 770px;
+	}
+
+	img {
+		border : 0;
+	}
+	
+	a {
+		color : #3a496b;
+		text-decoration : underline;
+	}
+
+	a:hover, a:active {
+		text-decoration : none;
+		background : transparent;
+		color : #3d5374;
+	}
+
+	a:visited {
+		color : #697c57;
+		text-decoration : underline;
+	}
+
+	a:visited:hover {
+		text-decoration : none;
+		background : transparent;
+		color : #3d5374;
+	}
+	
+	a.ECcell {
+		color : #ef1500;
+		text-decoration : none;
+		background : transparent;
+
+	}
+
+	a:hover.ECcell , a:active.ECcell  {
+		text-decoration : underline;
+		background : transparent;
+		color : #ef1500;
+	}
+
+	a:visited.ECcell  {
+		color : #ef1500;
+		text-decoration : none;
+		background : transparent;
+	}
+
+	a:visited:hover.ECcell  {
+		text-decoration : underline;
+		background : transparent;
+		color : #ef1500;
+	}	
+	
+	a.EC {
+		color : #EF1500;
+		text-decoration : none;
+		/* Attribute-less 'background' declaration commented out 2006-09-06 mzanon@noctrl.edu */
+	/*	background : ; 
+	*/	font-size:9pt	
+	}
+
+	a:hover.EC , a:active.EC {
+		text-decoration : underline;
+		background : transparent;
+		color : #ef1500;
+	}
+
+	a:visited.EC {
+		color : #ef1500;
+		text-decoration : none;
+		background : transparent;
+	}
+
+	a:visited:hover.EC {
+		text-decoration : underline;
+		background : transparent;
+		color : #ef1500;
+	}	
+	
+	#alerthide {
+		display : none;
+	}
+	
+	#containment {
+		background: #ffffff;
+		float : left;
+	}
+
+/* Header information */
+
+		
+	#headerTitleC
+{
+	padding-right: 20px;
+	padding-left: 31px;
+	float: left;
+	padding-bottom: 0px;
+	margin: 0px;
+	width: auto;
+	padding-top: 20px;
+}
+
+
+	
+	#headerLocale
+{
+	/*	padding-right dropped by 8px (21 -> 13) mzanon@noctrl.edu 
+		2006-09-12 to accomodate 8px wider US News logo	*/
+	padding-right: 13px;
+	padding-left: 0px;
+	float: left;
+	padding-bottom: 0px;
+	margin: 0px;
+	width: auto;
+	padding-top: 28px;
+}
+	
+
+
+/* Main branding area stage for navigation and Where You Are Central branding */
+	/* #navBrandStage Style handled in coreTestimonial#.css files */
+
+	#mainNavList {
+		float : left;
+		width : 625px;
+  		voice-family : "\""; 
+	}
+	
+	.dummystyleforIE5fix0 {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+	
+	#navBrandStage>#mainNavList {
+		/* commented backslash hack to hide float from Mac IE5 \*/
+		margin-top : -5px; /* hides margin from IE, to fix Moz display issue with navigation graphics */
+	}
+	
+	.dummystyleforMacIE5fix {
+		display : none; /* this unused style here to solve Mac IE5 because of the hack above */
+	}
+			
+	
+	#mainNavList a:hover {
+		background : transparent; /* corrects any background color set to A for Firefox to display rollover correctly */
+	}
+	
+	/* END Main Menu Styles for drop down */
+	#coreDate
+{
+	padding-right: 15px;
+	padding-left: 0px;
+	float: right;
+	padding-bottom: 0px;
+	margin: 0px;
+	font: 8pt Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	color: #000;
+	padding-top: 8px;
+}
+	
+
+	#coreApplyNow {
+	 	margin : 0 0 0 666px;
+		padding: 14px 0 0 0;
+		clear : left;		
+		height : 14px;
+	}
+	
+	
+/* Subnav area for Information For section column */
+	#subNavColumn {
+		margin : 0;
+		padding: 0 79px 0 36px;
+		float : left;
+		clear : left;
+		width : 225px;
+  		voice-family : "\"}\""; 
+  		voice-family :inherit;
+		width : 110px; /* box model/voice family trick/hack to get field height closer for IE5+ */
+	}
+	
+	.dummystyleforIE5fix0 {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+	
+	
+	/* #subNavCol is container for subnavigation */
+ 	#subNavCol {
+		margin : 5px 0 0 0;
+		padding : 0;
+		float : left;
+		background : transparent;
+		display : block;
+		background : transparent; /* reset from coreV4.css */
+} 
+
+	#subNavCol img {
+		display: block; /* required for Gecko and KHTML rendering engines. Images are default ``[=display: inline]'', meaning that they sit on the text baseline with a little space above and below like normal text.  This style removes the space around the image so proper alignment of images will occur. Thanks kryten. */
+	}
+	
+	/* .subnav for individual links in subnav */
+	.subNav {
+		margin : 10px 0 0 0;
+		padding : 0;
+	}
+
+	.resourcesFor {
+		margin : 15px 0 0 0;
+		padding : 0;
+	}
+	
+/* Where You Are Central Title and Quote */
+	#wyac {
+		margin : 0;
+		padding : 19px 0 0 0;
+		float : left;
+		background : transparent; /* reset from coreV4.css */
+	}	
+
+	#wyacTitle {
+		margin : 0;
+		padding : 0;
+	}	
+	
+	#wyacQuote {
+		margin : 0;
+		padding : 18px 0 0 42px;
+	}		
+/* Main Content Area Stage */	
+	#contentStage {
+		margin : 0;
+		padding : 0;
+		background : #fff url(../Images/mainContentBg.gif) repeat-y;
+		float : left;
+		width : 775px;
+	}
+
+/* Left side column with Search, Quick Links, Directories and Logo */
+
+	#infoCol {
+		margin-bottom : 10px;;
+		padding : 0 0 150px 21px;
+		background : transparent;
+		float : left;
+		clear: left;
+		background: transparent url(../Images/nccLogoBg.gif) no-repeat center bottom;
+
+		width : 168px;
+  		voice-family : "\"}\""; 
+  		voice-family :inherit;
+		width : 147px; /* box model/voice family trick/hack to get field height closer for IE5+ */
+	}
+	
+	#infoCol:after
+	{
+	content: "."; display: block; line-height: 1px; font-size: 1px; clear: both;
+	}	
+
+	
+	.dummystyleforIE5fix01 {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+	
+	#coreForm {
+		margin : 11px 0 0px 15px;
+		padding : 0;
+	}
+	
+	
+	
+	#coreForm p {
+		margin : 0;
+		padding : 0;
+		width : auto; /* reset from coreV4.css */
+		border : 0; /* reset from coreV4.css */
+	} /* to help moz align search area better */
+	
+	.searchbox {
+		border-top : solid 2px #a1a1a1;
+		border-right : solid 1px #8b8b8b;
+		border-bottom : solid 1px #b6b6b6;
+		border-left : solid 2px #303030;
+		margin : 0;
+		padding : 0;
+		width : 98px;
+		height : 18px;
+  		voice-family : "\"}\""; 
+  		voice-family :inherit;
+		height : 14px; /* box model/voice family trick/hack to get field height closer for IE5+ */
+	}
+	
+	.dummystyleforIE5fix1 {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+	
+	#quicklinksLink {
+		margin : 11px 0 0px 15px;
+		padding : 0;
+	}
+	
+	#quicklinksLink img {
+		display: block;
+	}
+	
+	#directoriesLink {
+		margin : 0;
+		padding : 11px 0 0 15px;
+	}
+	
+	#directoriesLink img {
+		display: block;
+	}
+	
+	#nccLogo {
+		margin : 60px 6px 20px 15px;
+		padding-left : 20px;
+	}
+	
+	#nccLogo img {
+		display: block;
+	}
+	
+/* Center column with News and Events Column Styles */
+	#newsEventsCol {
+		margin : 0;
+		padding : 0 0 0 0;
+		float : left;
+	}
+	
+	#newsEventsTitle {
+		margin :  0;
+		padding : 11px 2px 10px 20px;
+		border-bottom : dashed 1px #7f7f7f;
+		width : 297px;
+		voice-family : "\"}\""; 
+  		voice-family :inherit;
+		width : 275px; /* box model/voice family trick/hack to get width correct */
+	}
+	
+
+
+
+
+	
+	.dummystyleforIE5fix2 {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+	
+	#newsEventsTitle img {
+		display: block;
+		
+	}
+	
+	
+	#newsEventsContent 
+	{
+		margin-left:20px;
+		width : 265px;
+		padding :15px 10px 0px 0;
+  		voice-family : "\""; 
+	}
+	
+	.dummystyleforIE5fix3 {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+	
+	#newsEventsContent p {
+		margin : 0;
+		padding : 0px 0 15px 0;
+		font: .7em Arial, Helvetica, sans-serif;
+		color : #3f3f3f;
+	}
+	
+
+	.newsEventsHeader {
+		margin : 0;
+		padding : 0;
+		color : #cc0000;
+		background-color:#ffffff;
+		font: bold 1.1em Arial, Helvetica, sans-serif;
+	}
+	
+/*  Highlight column including picture and text */
+	#highlightsCol {
+		margin : 0;
+		padding : 0;
+		float : left;
+		clear : right;
+		width : 305px;
+		background : transparent ;
+	}
+	
+	#highlightsTitle {
+		margin :  0;
+		padding : 1px 7px 0px 10px;
+		border-bottom : dashed 1px #7f7f7f;
+		border-left : dashed 1px #7f7f7f;
+		background-color: #ffffff;
+		width : 305px;
+		voice-family : "\"}\""; 
+  		voice-family :inherit;
+		width : 288px; /* box model/voice family trick/hack to get width correct */
+	}
+	
+	
+	.dummystyleforIE5fix4 {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+	
+	#highlightsTitle img
+{
+	display: block;
+	margin: 10px 10px 8px;
+}
+		#dashnews2
+{
+	background: url(../Images/coreDashLineBg.gif) repeat-x bottom left;
+	width: 305px;
+	height: 2px;
+	padding-bottom: 1px;
+}
+	#highlightsPic {
+		margin : 0;
+		padding : 0;
+		
+	}
+	
+	#highlightsPic img {
+		display: block;
+	}
+	
+	#highlightsContent{
+		width : 305px;
+  		voice-family : "\""; 
+  		padding:10px;
+	}
+	
+	.dummystyleforIE5fix5 {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+	
+
+	#highlightsContent p
+{
+	margin: 10px;
+	font: 0.7em Arial, Helvetica, sans-serif;
+	color: #333333;
+	background-color: transparent;
+}
+	
+
+	.highlightsHeader {
+		color : #333333;
+		background-color : transparent;
+		font: bold 1.1em Arial, Helvetica, sans-serif;
+		text-transform : uppercase;
+	}
+
+/* Footer styles */
+	
+	.dummystyleforIE5fix6 {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+	
+/* sitemap layers */
+
+#SitemapContainer
+{
+	padding:10px;
+}

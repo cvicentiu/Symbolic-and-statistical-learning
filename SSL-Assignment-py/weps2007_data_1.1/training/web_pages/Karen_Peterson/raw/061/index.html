@@ -1,0 +1,772 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+      <title>New Technologies Driving Supply Chain Management</title>
+
+      <META NAME="DESCRIPTION" CONTENT="">
+      <META NAME="Summary" CONTENT="">
+      <META NAME="KEYWORDS" CONTENT="">
+
+	<link rel=stylesheet href="homepage.css" type="text/css">
+	<style type="text/css">
+	.sectionHeadGray {  font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 11pt; color: #767676; text-decoration: none;}
+	.TitleLarge {  font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 16pt; color: #666666; text-decoration: none;}
+	.WhiteHead {  font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 10pt; color: #FFFFFF; text-decoration: none; cursor:default;}
+	.smallDarkGrayText {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; color: #666666; text-decoration: none; cursor:default;}
+
+	.smallThinBlueLinkNew {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 100%; color: #3399CC; text-decoration: none; cursor:default;}
+
+	.smallThinBlueLinkNew:hover {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 100%; color: #3399CC; text-decoration: underline; cursor:hand;}
+
+	</style>
+
+
+
+<LINK href="content.css" rel=stylesheet>
+<META HTTP-EQUIV="Expires" CONTENT="-1">
+
+ <!-- This include sets gartner.com time out -->
+<link rel=stylesheet href="menu.css" type="text/css">
+<link href="g1_header_footer.css" rel="stylesheet" type="text/css">
+
+<!-- used for regionals Text -->
+<script src="regionalsText.js" type="text/javascript"></script>
+<script src="optionsArray.jsp.1.html" type="text/javascript"></script>
+
+<style>
+
+.gradgray { background:#DDE0E2; background-image:url(/images/header/grad_gray566.gif); }
+input.field1 { vertical-align:middle; }
+img.down1 { position:relative;top:4;left:0; }
+img.down2 { position:relative;top:6;left:0; }
+
+</style>
+
+
+  <script type="text/javascript">
+  <!--
+  if (((navigator.appVersion.toLowerCase().indexOf('msie') !=-1) && (navigator.appVersion.toLowerCase().indexOf('mac') ==-1)) || (navigator.appVersion.toLowerCase().indexOf('windows') !=-1))
+  {
+    document.write('<link rel=stylesheet href="/css/win/main.css" type="text/css">');
+    document.write('<link rel=stylesheet href="/css/win/navigation.css" type="text/css">');
+    document.write('<link rel=stylesheet href="/css/win/homepage.css" type="text/css">');
+  }
+  else
+  {   if (navigator.appVersion.toLowerCase().indexOf('hp-ux') !=-1)
+    {
+      document.write('<link rel=stylesheet href="/css/hp/main.css" type="text/css">');
+      document.write('<link rel=stylesheet href="/css/hp/navigation.css" type="text/css">');
+      document.write('<link rel=stylesheet href="/css/hp/homepage.css" type="text/css">');
+    }
+    else
+    { if (navigator.appVersion.toLowerCase().indexOf('sunos') !=-1)
+      {
+        document.write('<link rel=stylesheet href="/css/sun/main.css" type="text/css">');
+        document.write('<link rel=stylesheet href="/css/sun/navigation.css" type="text/css">');
+        document.write('<link rel=stylesheet href="/css/sun/homepage.css" type="text/css">');
+      }
+      else
+      {  if ((navigator.appVersion.toLowerCase().indexOf('mac') !=-1)  || (navigator.appVersion.toLowerCase().indexOf('x11') !=-1))
+        {
+          document.write('<link rel=stylesheet href="/css/mac/main.css" type="text/css">');
+          document.write('<link rel=stylesheet href="/css/mac/navigation.css" type="text/css">');
+          document.write('<link rel=stylesheet href="/css/mac/homepage.css" type="text/css">');
+        }
+        else
+        {   if (navigator.appVersion.toLowerCase().indexOf('linux') !=-1)
+          {
+            document.write('<link rel=stylesheet href="/css/linux/main.css" type="text/css">');
+            document.write('<link rel=stylesheet href="/css/linux/navigation.css" type="text/css">');
+            document.write('<link rel=stylesheet href="/css/linux/homepage.css" type="text/css">');
+          }
+          else
+          { if (navigator.appVersion.toLowerCase().indexOf('win') !=-1)
+            {
+              document.write('<link rel=stylesheet href="/css/netscape/main.css" type="text/css">');
+              document.write('<link rel=stylesheet href="/css/netscape/navigation.css" type="text/css">');
+              document.write('<link rel=stylesheet href="/css/netscape/homepage.css" type="text/css">');
+            }
+          }
+
+        }
+      }
+    }
+  }
+  -->
+  </script>
+
+  <script src="navigation.js"></script>
+  <script src="menu.js"></script>
+  <script src="utility.js"></script>
+  <script src="utils.js"></script>
+  <script src="cookie.js"></script>
+  <script src="mouseevents.js"></script>
+  <script src="layerapi.js"></script>
+  <script src="Options.js"></script>
+  <script type="text/javascript">
+
+    var readyState = null
+    var calendar = null
+    var formDivs = new Array()
+    var zIndex = 2
+    var textFocus = 0
+    var content = self
+    var footer = parent.footer
+    var winCTR = 0 ;
+    var childWindow = new Array(20);
+    var REGISTEREDUSER =0
+    var CLIENTADM = 0
+    var GARTADM = 0
+    var INQACCESS = 0
+    var EVENTREG = 0
+    var CLIENTUSER = 0
+    var sleeperInc = 1
+    var myTimer
+    var usercookie=GetCookie("UserType");
+    var unForRegionalsCookie = GetCookie("unForRegionals");
+    var objSearchForm = document.frmSearch
+    var mystrng ;
+
+    if (usercookie != null) {
+      REGISTEREDUSER = parseInt(Mid(usercookie,0,1));
+      CLIENTADM = parseInt(Mid(usercookie,1,1));
+      GARTADM = parseInt(Mid(usercookie,2,1));
+      INQACCESS = parseInt(Mid(usercookie,3,1));
+      EVENTREG = parseInt(Mid(usercookie,4,1));
+
+
+      // Check to see if length is greater than 5.(Not checking for length == 6 bcoz it may be greater than 6 also).
+      // Also check if 6th digit is 1, then user is a client user.
+      if(usercookie.length > 5) {
+	      CLIENTUSER = parseInt(usercookie.substring(5,6));
+      }
+
+    }
+
+    /*********************************************/
+   // Check for logged in User, If true then execute the timmer.
+   // If the user is not logged in do not execute the timmer.
+   var tID;
+   if ( unForRegionalsCookie != null && unForRegionalsCookie != "userLoggedOut" ) {
+      if (!tID) {
+         tID = setTimeout('executeTimer()',7500000);
+      }
+   }
+
+   function resetTimer() {
+     clearTimeout(tID); // reset the timer
+     tID = setTimeout('executeTimer()',7500000);
+   }
+
+   function executeTimer() {
+     location.href = '/Terminate?src=timeout&url='+top.location.href;
+     clearTimeout(tID);
+     tID = null;
+   }
+   /***********************************************/
+
+
+    function Mid(str, start, len) {
+      if (start < 0 || len < 0) {
+        return "";
+      }
+      var iEnd, iLen = String(str).length;
+      if (start + len > iLen) {
+        iEnd = iLen;
+      } else {
+        iEnd = start + len;
+      }
+      return String(str).substring(start,iEnd);
+    }
+
+
+    function keydown(e) {
+      if (bw.ns4 || bw.ns6) {
+        intKey=e.which;
+      } else {
+        intKey=event.keyCode;
+      }
+      if (intKey==13) {
+        switch (textFocus){
+          case 0: submitSearch(); break;
+          case 1: submitSignin(); break;
+          case 2: submitEmail(); break;
+          case 3: break;
+        }
+      }
+    }
+
+
+      //  specify character(s) in the url
+      var sectionNumber     = location.pathname.substring(1, 2);
+      var sectionNews       = location.pathname.substring(1, 13);
+      var sectionEvents     = location.pathname.substring(1, 3);
+      var sectionExp        = location.pathname.substring(1, 38);
+      var sectionFocus2     = location.pathname.substring(1, 6);
+      var sectionPrivacy    = location.pathname.substring(1, 6);
+      var sectionPrinciples = location.pathname.substring(1, 24);
+
+
+
+    /*
+       determine browser type based on ability to use
+       document.layers, document.all or document.getElementByID
+       this is also done in the layerapi.js... doh
+    */
+    var ns4 = (document.layers);
+    var ie4 = (document.all && !document.getElementById);
+    var ie5 = (document.all && document.getElementById);
+    var ns6 = (!document.all && document.getElementById);
+
+
+	// get regional locale information
+    var userLocaleCookie = GetCookie("userLocaleCookie");
+    if (userLocaleCookie == null || userLocaleCookie == 'null')
+    {
+      userLocaleCookie = 'wcw';
+    }
+
+
+   var mirt = new RegionalsText(userLocaleCookie);
+
+</script>
+
+<script type="text/javascript">
+if (location.pathname.substring(1, 3) != "it") {
+   document.write('</head><body marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" bgcolor="#bbbbbb">\n');
+}
+</script>
+
+
+<map name="Map"><area shape="rect" coords="7,0,109,12" href="javascript:void(null)" onclick="footer.advancedSearch()"></map>
+
+<script type="text/javascript">
+websiteDropDown = new OptionsArray();
+
+document.write('<!-- Gartner logo, search box -->\n\n');
+document.write('<table id="g1_header" width="766" border="0" cellspacing="0" cellpadding="0" align="center">\n');
+document.write('<tr>\n');
+document.write('<td>\n');
+document.write('<div id="logoleft">\n');
+document.write('<a href="http://www.gartner.com/silentlocalechooser.jsp?locale='+mirt.getRegion()+'"><img src="http://www.gartner.com/pages/'%20+%20mirt.getGartnerLogo()%20+%20'" alt="" border="0" /></a>\n');
+document.write('</div>\n');
+document.write('<div id="searchresearch"><strong>' + mirt.getSearchResearchText() + '</strong></div>\n');
+document.write('<div id="searchright">\n');
+document.write('<form id="frmSearch"  method="post" name="frmSearch" onsubmit="submitSearch(); return false;" action="story.php.id.3297.s.8.jsp.1.html">\n');
+document.write('<input class="formField" type="text" name="txtSearch" size="14" maxlength="400" style="width:244px;"  />\n');
+document.write('<input type="image" name="search"  class="bluebutton" src="blue_arrow18.gif"  alt="Submit" value="Submit" />\n');
+document.write('<div class="advanced">\n');
+document.write('<a href="story.php.id.3297.s.8.jsp.1.html#" class="search1" onclick="javascript:advancedSearch(); return false;">' + mirt.getAdvancedSearchText() + '</a>\n');
+document.write('<a href="story.php.id.3297.s.8.jsp.1.html#" class="search2" onclick="javascript:browse(); return false;">' + mirt.getBrowseText() + '</a>\n');
+
+if (CLIENTUSER) {
+	document.write('<a href="story.php.id.3297.s.8.jsp.1.html#" class="search3" onclick="javascript:openPreferences(&quot;/7_search/UserPreferences.jsp&quot;, &quot;searchPreferences&quot;); return false;">' + mirt.getPreferencesText() + '</a>\n');
+}
+document.write('<a href="story.php.id.3297.s.8.jsp.1.html#" class="search4" onclick="javascript:openBasicSearchHelp(); return false;">' + mirt.getSearchHelpText() + '</a>\n');
+if (REGISTEREDUSER){
+    document.write('<a href="story.php.id.3297.s.8.jsp.1.html#" onclick="javascript:clickBetaSearchLink()" class="betasearch">' + mirt.getTryBetaSearchText() + '</a>\n');
+}
+document.write('</div>\n');
+document.write('</form>\n');
+document.write('</div>\n');
+document.write('</td>\n');
+document.write('</tr>\n');
+
+
+document.write('<!-- Tabs and Gartner Websites dropdown -->\n\n');
+document.write('<tr>\n');
+document.write('<td id="menubar">\n');
+
+// Check for Registered User, If true then execute the timmer.
+// If the user is not Registered User do not execute the timmer.
+if (!REGISTEREDUSER)
+{
+   document.write('<a class="menu" href="http://www.gartner.com/it/about/why_use_gartner.jsp">&nbsp;' + mirt.getWhyUseGartnerText() + '</a>\n');
+}
+else
+{  if (!tID) {
+      tID = setTimeout('executeTimer()',7500000);
+    }
+   document.write('<a class="menu" href="http://www.gartner.com/it/client_services.jsp">&nbsp;' + mirt.getClientServicesText() + '</a>\n');
+}
+
+document.write('<a class="menu" href="http://www.gartner.com/it/products_services.jsp">' + mirt.getProductsAndServicesText() + '</a>\n');
+document.write('<a class="menu" href="http://www.gartner.com/it/analysts_consultants.jsp">' + mirt.getAnalystsAndConsultantsText() + '</a>\n');
+document.write('<a class="menu" href="http://www.gartner.com/it/products/events/events.jsp">' + mirt.getEventsText() + '</a>\n');
+document.write('<a class="menu" href="http://www.gartner.com/it/about_gartner.jsp">' + mirt.getAboutGartnerText() + '</a>\n');
+
+
+<!-- websites dropdown -->
+document.write('<form id="formName3" method="post" name="formName10" action="story.php.id.3297.s.8.jsp.1.html" >\n');
+document.write('<select class="formPopup" name="newloc" onchange="homepageJumper(this.form.newloc)" size="1" style="width:200px">\n');
+
+websiteDropDown.writeOptionsArray();
+
+document.write('</select>\n');
+document.write('</form>\n');
+document.write('</td>\n');
+document.write('</tr>\n');
+document.write('<tr bgcolor="#BBBBBB"><td><img src="x.gif" width="1" height="2" alt="" border="0" /></td></tr>\n');
+document.write('</table>\n');
+
+if (location.pathname.substring(1, 3) != "it") {
+   document.write('<table border="0" cellspacing="0" cellpadding="0" width="766" align="center"><tr><td width="766" bgcolor="FFFFFF">');
+}
+</script>
+<!-- end main_init.inc-->
+
+
+
+<table width="766" bgcolor="#FFFFFF" border="0" cellspacing="0" cellpadding="0" align="center">
+
+<tr>
+<td height="25" bgcolor="#FFFFFF"><img src="x.gif.1" width="1" height="25" /></td>
+</tr>
+
+
+<tr>
+<td height="2" bgcolor="#BBBBBB"><img src="x.gif.1" width="1" height="2" /></td>
+</tr>
+
+<!-- begin feature -->
+
+<tr>
+<td>
+		<table bgcolor="#FFFFFF" width="766" height="162" border="0" cellspacing="0" cellpadding="0" align="center">
+	<tr>
+	<td>
+		
+		<table bgcolor="#EEEDDD" align="center" border="0" cellspacing="0" cellpadding="0" width="762" height="158">
+		<tr>
+		<td align="left" width="232" height="158"><a href="http://www.gartner.com/DisplayDocument?doc_cd=113034" onclick="openResult('/DisplayDocument?doc_cd=113034'); return false;"><img src="5245_ett_lfte.jpg" width="232" height="158"  alt="New Technologies Driving Supply Chain Management"  border="0"></a></td>
+		<td align="left" width="36" height="158"><img src="x.gif.2" width="36" height="1" border="0"><br></td>
+
+
+<!-- HEADLINE -->
+		
+		<td align="left" width="494" height="158"><span class="TitleLarge">New Technologies Driving Supply Chain Management</span><br><br>
+<span class="sectionHeadGray">7 February 2003</span></td>
+		</tr>
+		</table>
+		
+	</td>
+	</tr>
+	</table>
+	
+</td>
+</tr>
+
+<tr>
+<td height="2" bgcolor="#BBBBBB"><img src="x.gif.1" width="1" height="2"><br></td>
+</tr>
+</table>
+	
+<table bgcolor="#FFFFFF" align="center" border="0" cellspacing="0" cellpadding="0" width="766">
+<tr>
+	<td colspan="5" align="left"><img src="lfte.gif" width="201" height="60" border="0"><br></td>
+</tr>
+	
+<tr>
+	<td width="15" height="1" align="left"><img src="x.gif.1" width="15" height="1" border="0"><br></td>
+	<td width="472" valign="top" align="left"><span class="smallGrayText">Tremendous increases in efficiency can be achieved by improving supply chain management: better choice of goods, more competitive prices, faster execution and better resource allocation.
+<br/><br/>
+Obviously ideas like these contributed to the meteoric rise of the subject in 1999. And then people realized that the problems were actually far more complex than anticipated. In </span><a class="smallBlueLink" href="http://www.gartner.com/DisplayDocument?doc_cd=113033" onclick="openResult('/DisplayDocument?doc_cd=113033'); return false;"  target="_new">"Supply Chain Management: Evolving Beyond Linear Interactions"</a><span class="smallGrayText"> Karen Peterson and her team show how improvements in supply chain management are built on three pillars: 
+<ul><li>Managing many kinds of data (in particular, better information awareness)</li>
+<li>Exchanging data to ease integration with the processes of trading partners</li>
+<li>Controlling processes within the organization</li></ul>
+&nbsp;&nbsp;</span><a href="http://www.gartner.com/DisplayDocument?doc_cd=113034" target="_new" onclick="openResult('/DisplayDocument?doc_cd=113034'); return false;" class="smallThinBlueLink">Read&nbsp;more</a><br><br></td>
+	
+	<td width="33" height="1"><img src="x.gif.1" width="33" height="1" border="0"><br></td>
+
+	<!-- ANALYST GRAY BOX -->
+
+	<td width="232" height="100" valign="top">
+		<table bgcolor="#F5F5F5" valign="top" border="0" cellspacing="0" cellpadding="0" width="232" height="100">
+		<tr>
+		<td colspan="6"><img src="x.gif.1" width="1" height="10"><br></td>
+		</tr>
+				<tr>
+		<td><img src="x.gif.1" width="10" height="1" border="0"><br></td>
+		<td valign="top" align="left">
+		<a href="http://www.gartner.com/AnalystBiography?authorId=6543" onclick="openBio('/AnalystBiography?authorId=6543'); return false;" target="_new"><img src="5251_6543.jpg" width="80" height="100" border="0"></a>
+		<br><img src="x.gif.1" width="1" height="10" border="0"><br></td>
+		<td><img src="x.gif.1" width="10" height="1" border="0"><br></td>
+		<td valign="top">
+			  <a href="http://www.gartner.com/AnalystBiography?authorId=6543" class="smallThinBlueLink" onclick="openBio('/AnalystBiography?authorId=6543'); return false;" target="_new"><b>Jackie  Fenn</b><br></a>
+<span class="smallGrayText">vice president and research fellow,<br>Gartner Research<br></span><br></td>
+		<td><img src="x.gif.1" width="10" height="1" border="0"><br></td>
+		</tr>
+				<tr>
+		<td><img src="x.gif.1" width="10" height="1" border="0"><br></td>
+		<td valign="top" align="left">
+		<a href="http://www.gartner.com/AnalystBiography?authorId=12496" onclick="openBio('/AnalystBiography?authorId=12496'); return false;" target="_new"><img src="4798_LInden.jpg" width="80" height="100" border="0"></a>
+		<br><img src="x.gif.1" width="1" height="10" border="0"><br></td>
+		<td><img src="x.gif.1" width="10" height="1" border="0"><br></td>
+		<td valign="top">
+			  <a href="http://www.gartner.com/AnalystBiography?authorId=12496" class="smallThinBlueLink" onclick="openBio('/AnalystBiography?authorId=12496'); return false;" target="_new"><b>Alexander  Linden</b><br></a>
+<span class="smallGrayText">Editor in Chief<br>Emerging Trends and Technologies<br></span><br></td>
+		<td><img src="x.gif.1" width="10" height="1" border="0"><br></td>
+		</tr>
+				</table>
+		<br>
+	</td>
+	
+	<td width="15" height="1"><img src="x.gif.1" width="15" height="1" border="0"><br></td>
+</tr>
+
+<tr>
+<td colspan="5" height="2" bgcolor="#BBBBBB"><img src="x.gif.1" width="1" height="2"><br></td>
+</tr>
+</table>
+<!-- end feature test -->
+
+
+   
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- begin overview -->
+  
+  
+
+ <!-- 96 == "article top view" -->
+  
+<table bgcolor="#FFFFFF" align="center" border="0" cellspacing="0" cellpadding="0" width="766">
+
+
+<tr>
+<td colspan="5" width="91" height="60" align="left"><img src="overview.gif" width="91" height="60" border="0"><br></td>
+</tr>
+
+<tr>
+<td width="15" height="1"><img src="x.gif.1" width="15" height="1" border="0"><br></td>
+
+<!-- ATV IMAGE -->
+<td><a href="http://www.gartner.com/DisplayDocument?doc_cd=113033" onclick="openResult('/DisplayDocument?doc_cd=113033'); return false;" target="_new"><img src="5246_ett_ATV.jpg" width="200" height="125" alt="Supply Chain Management: Evolving Beyond Linear Interactions"  border="0"></a><p /></td>
+
+
+<td width="45" height="1"><img src="x.gif.1" width="45" height="1" border="0"><br></td>
+<td width="491"><a href="http://www.gartner.com/DisplayDocument?doc_cd=113033" class="largeBlueLink" onclick="openResult('/DisplayDocument?doc_cd=113033'); return false;" target="_new">Supply Chain Management: Evolving Beyond Linear Interactions</a><br><font class="smallGrayText">7 February 2003</font><br>
+					  <a href="http://www.gartner.com/AnalystBiography?authorId=13700" class="smallThinBlueLink"   onclick="openBio('/AnalystBiography?authorId=13700'); return false;" target="_new">Karen  Peterson</a>&nbsp; 
+				    <br><br><span class="smallGrayText">
+									New supply chain management technology allows companies to move toward real-time operation by sharing information and interlacing processes with trading partners. The chain is broadening into an ecosystem.
+							  </span></td>
+			  <td width="15" height="15" nowrap><br></td>
+</tr>
+
+<tr>
+<td width="1" height="40" align="left"><img src="x.gif.1" width="1" height="40" border="0"><br></td>
+</tr>
+
+<tr>
+<td colspan="6" height="2" bgcolor="#BBBBBB"><img src="x.gif.1" width="1" height="2"><br></td>
+</tr>
+</table>
+
+
+
+
+
+
+
+
+<!-- end overview -->
+
+<!-- RESEARCH -->
+
+
+
+<table bgcolor="#FFFFFF" valign="top" align="center" border="0" cellspacing="0" cellpadding="0" width="766">
+<tr>
+<td colspan="5" width="91" height="60" align="left"><img src="research.gif" width="91" height="60" border="0"><br></td>
+</tr>
+
+
+
+
+
+
+
+
+	<!-- if this is not Article Top View or Letter From the Editor -->
+
+																			
+<tr>
+
+<td width="15" height="1"><img src="x.gif.1" width="15" height="1" border="0"><br></td>
+
+
+<td valign="top" align="left" width="343"><a class="largeBlueLink" href="http://gartnerg2.com/rpt/rpt-0103-0007.asp"   target="_new">View From 2012: Supply Chains Evolve to Ecosystems</a><br>
+<font class="smallGrayText">5 February 2003</font><br>
+
+		    			  <a href="http://www.gartner.com/AnalystBiography?authorId=20865" class="smallThinBlueLink"   onclick="openBio('/AnalystBiography?authorId=20865'); return false;" target="_new">Jorge&nbsp;Lopez</a>&nbsp; 
+		    			  <a href="http://www.gartner.com/AnalystBiography?authorId=19346" class="smallThinBlueLink"   onclick="openBio('/AnalystBiography?authorId=19346'); return false;" target="_new">Cathy&nbsp;Spencer</a>&nbsp; 
+		    		    <br><span class="smallGrayText">
+									Today&#8217;s consolidation strategies will be ineffective as companies struggle to differentiate and sustain pricing.  To optimize the value of goods and services, leading enterprises must tightly control entire business ecosystems.
+
+				<br><br><br>
+		</span><p/></td>
+
+<td width="50" height="1"><img src="x.gif.1" width="50" height="1" border="0"><br></td>
+
+
+  			
+
+
+
+
+
+	<!-- if this is not Article Top View or Letter From the Editor -->
+
+
+<td valign="top" align="left" width="343"><a class="largeBlueLink" href="http://www.gartner.com/DisplayDocument?doc_cd=112706" onclick="openResult('/DisplayDocument?doc_cd=112706'); return false;"  target="_new">Multienterprise SCM Solutions Will Come of Age by 2012</a><br>
+<font class="smallGrayText">23 January 2003</font><br>
+
+		    			  <a href="http://www.gartner.com/AnalystBiography?authorId=13700" class="smallThinBlueLink"   onclick="openBio('/AnalystBiography?authorId=13700'); return false;" target="_new">Karen&nbsp;Peterson</a>&nbsp; 
+		    		    <br><span class="smallGrayText">
+									Enterprise solutions are evolving from systems that support point-to-point linear integration with trading partners to multienterprise supply chain management solutions that can handle the breadth and depth of SCM process flexibility.
+				<br><br><br>
+		</span><p/></td>
+
+<td width="15" height="1"><img src="x.gif.1" width="15" height="1" border="0"><br></td></tr>
+
+
+  		  
+
+
+
+
+
+	<!-- if this is not Article Top View or Letter From the Editor -->
+
+																			
+<tr>
+
+<td width="15" height="1"><img src="x.gif.1" width="15" height="1" border="0"><br></td>
+
+
+<td valign="top" align="left" width="343"><a class="largeBlueLink" href="http://www.gartner.com/DisplayDocument?doc_cd=112865" onclick="openResult('/DisplayDocument?doc_cd=112865'); return false;"  target="_new">Maturing Open RFID Applications Will Reshape SCM</a><br>
+<font class="smallGrayText">30 January 2003</font><br>
+
+		    			  <a href="http://www.gartner.com/AnalystBiography?authorId=13700" class="smallThinBlueLink"   onclick="openBio('/AnalystBiography?authorId=13700'); return false;" target="_new">Karen&nbsp;Peterson</a>&nbsp; 
+		    			  <a href="http://www.gartner.com/AnalystBiography?authorId=14742" class="smallThinBlueLink"   onclick="openBio('/AnalystBiography?authorId=14742'); return false;" target="_new">Clare&nbsp;Hirst</a>&nbsp; 
+		    			  <a href="http://www.gartner.com/AnalystBiography?authorId=20203" class="smallThinBlueLink"   onclick="openBio('/AnalystBiography?authorId=20203'); return false;" target="_new">Jeff&nbsp;Woods</a>&nbsp; 
+		    		    <br><span class="smallGrayText">
+									The first open, standards-based radio frequency identification applications will mature by 2007. Coupled with new business applications, RFID will radically change supply chain management business strategies by 2012.
+				<br><br><br>
+		</span><p/></td>
+
+<td width="50" height="1"><img src="x.gif.1" width="50" height="1" border="0"><br></td>
+
+
+  			
+
+
+
+
+
+	<!-- if this is not Article Top View or Letter From the Editor -->
+
+
+<td valign="top" align="left" width="343"><a class="largeBlueLink" href="http://www.gartner.com/DisplayDocument?doc_cd=112868" onclick="openResult('/DisplayDocument?doc_cd=112868'); return false;"  target="_new">Configuring the Logistics Network for Volatile Environments</a><br>
+<font class="smallGrayText">30 January 2003</font><br>
+
+		    			  <a href="http://www.gartner.com/AnalystBiography?authorId=13700" class="smallThinBlueLink"   onclick="openBio('/AnalystBiography?authorId=13700'); return false;" target="_new">Karen&nbsp;Peterson</a>&nbsp; 
+		    			  <a href="http://www.gartner.com/AnalystBiography?authorId=20203" class="smallThinBlueLink"   onclick="openBio('/AnalystBiography?authorId=20203'); return false;" target="_new">Jeff&nbsp;Woods</a>&nbsp; 
+		    		    <br><span class="smallGrayText">
+									The evolution of supply chain management &#151; coupled with developments in dynamic value networks, customization and personalization, and outsourcing &#151; is moving SCM vendors toward mature logistics network configurations.
+				<br><br><br>
+		</span><p/></td>
+
+<td width="15" height="1"><img src="x.gif.1" width="15" height="1" border="0"><br></td></tr>
+
+
+  		  
+
+
+
+
+
+	<!-- if this is not Article Top View or Letter From the Editor -->
+
+																			
+<tr>
+
+<td width="15" height="1"><img src="x.gif.1" width="15" height="1" border="0"><br></td>
+
+
+<td valign="top" align="left" width="343"><a class="largeBlueLink" href="http://www.gartner.com/DisplayDocument?doc_cd=112921" onclick="openResult('/DisplayDocument?doc_cd=112921'); return false;"  target="_new">The Public vs. Private Debate Continues in E-Marketplaces</a><br>
+<font class="smallGrayText">3 February 2003</font><br>
+
+		    			  <a href="http://www.gartner.com/AnalystBiography?authorId=13700" class="smallThinBlueLink"   onclick="openBio('/AnalystBiography?authorId=13700'); return false;" target="_new">Karen&nbsp;Peterson</a>&nbsp; 
+		    			  <a href="http://www.gartner.com/AnalystBiography?authorId=20582" class="smallThinBlueLink"   onclick="openBio('/AnalystBiography?authorId=20582'); return false;" target="_new">Andrew&nbsp;White</a>&nbsp; 
+		    		    <br><span class="smallGrayText">
+									When assessing e-marketplace participation, you need to determine which business processes will be public and which will be private. As multienterprise business processes evolve, no single solution will address them all.
+				<br><br><br>
+		</span><p/></td>
+
+<td width="50" height="1"><img src="x.gif.1" width="50" height="1" border="0"><br></td>
+
+
+  			
+
+
+
+
+
+	<!-- if this is not Article Top View or Letter From the Editor -->
+
+
+<td valign="top" align="left" width="343"><a class="largeBlueLink" href="http://www.gartner.com/DisplayDocument?doc_cd=112909" onclick="openResult('/DisplayDocument?doc_cd=112909'); return false;"  target="_new">New P2P Solutions Will Redefine the B2B Supply Chain</a><br>
+<font class="smallGrayText">1 February 2003</font><br>
+
+		    			  <a href="http://www.gartner.com/AnalystBiography?authorId=12543" class="smallThinBlueLink"   onclick="openBio('/AnalystBiography?authorId=12543'); return false;" target="_new">Benoit&nbsp;Lheureux</a>&nbsp; 
+		    			  <a href="http://www.gartner.com/AnalystBiography?authorId=13700" class="smallThinBlueLink"   onclick="openBio('/AnalystBiography?authorId=13700'); return false;" target="_new">Karen&nbsp;Peterson</a>&nbsp; 
+		    			  <a href="http://www.gartner.com/AnalystBiography?authorId=20582" class="smallThinBlueLink"   onclick="openBio('/AnalystBiography?authorId=20582'); return false;" target="_new">Andrew&nbsp;White</a>&nbsp; 
+		    		    <br><span class="smallGrayText">
+									As multienterprise business processes evolve on a large scale, application architectures based on peer-to-peer computing will emerge. These solutions will have a major impact on the business-to-business supply chain.
+				<br><br><br>
+		</span><p/></td>
+
+<td width="15" height="1"><img src="x.gif.1" width="15" height="1" border="0"><br></td></tr>
+
+
+  		  
+
+
+
+
+
+	<!-- if this is not Article Top View or Letter From the Editor -->
+
+																			
+<tr>
+
+<td width="15" height="1"><img src="x.gif.1" width="15" height="1" border="0"><br></td>
+
+
+<td valign="top" align="left" width="343"><a class="largeBlueLink" href="http://www.gartner.com/DisplayDocument?doc_cd=112721" onclick="openResult('/DisplayDocument?doc_cd=112721'); return false;"  target="_new">Prepare for Web Services in Supply Chain Planning</a><br>
+<font class="smallGrayText">23 January 2003</font><br>
+
+		    			  <a href="http://www.gartner.com/AnalystBiography?authorId=10102" class="smallThinBlueLink"   onclick="openBio('/AnalystBiography?authorId=10102'); return false;" target="_new">Larry&nbsp;Perlstein</a>&nbsp; 
+		    			  <a href="http://www.gartner.com/AnalystBiography?authorId=13700" class="smallThinBlueLink"   onclick="openBio('/AnalystBiography?authorId=13700'); return false;" target="_new">Karen&nbsp;Peterson</a>&nbsp; 
+		    			  <a href="http://www.gartner.com/AnalystBiography?authorId=16534" class="smallThinBlueLink"   onclick="openBio('/AnalystBiography?authorId=16534'); return false;" target="_new">Whit&nbsp;Andrews</a>&nbsp; 
+		    		    <br><span class="smallGrayText">
+									Web services and a global-class mind-set will aid in certain facets of supply chain management. Prepare to use Web services to address the sophisticated interactions that electronic data interchange can't handle.
+				<br><br><br>
+		</span><p/></td>
+
+<td width="50" height="1"><img src="x.gif.1" width="50" height="1" border="0"><br></td>
+
+
+  			
+
+
+
+
+
+	<!-- if this is not Article Top View or Letter From the Editor -->
+
+
+<td valign="top" align="left" width="343"><a class="largeBlueLink" href="http://www.gartner.com/DisplayDocument?doc_cd=113026" onclick="openResult('/DisplayDocument?doc_cd=113026'); return false;"  target="_new">Product Content and Data Management Promises Savings</a><br>
+<font class="smallGrayText">7 February 2003</font><br>
+
+		    			  <a href="http://www.gartner.com/AnalystBiography?authorId=7024" class="smallThinBlueLink"   onclick="openBio('/AnalystBiography?authorId=7024'); return false;" target="_new">David&nbsp;Hope-Ross</a>&nbsp; 
+		    			  <a href="http://www.gartner.com/AnalystBiography?authorId=13700" class="smallThinBlueLink"   onclick="openBio('/AnalystBiography?authorId=13700'); return false;" target="_new">Karen&nbsp;Peterson</a>&nbsp; 
+		    			  <a href="http://www.gartner.com/AnalystBiography?authorId=14353" class="smallThinBlueLink"   onclick="openBio('/AnalystBiography?authorId=14353'); return false;" target="_new">David&nbsp;Ackerman</a>&nbsp; 
+		    			  <a href="http://www.gartner.com/AnalystBiography?authorId=20582" class="smallThinBlueLink"   onclick="openBio('/AnalystBiography?authorId=20582'); return false;" target="_new">Andrew&nbsp;White</a>&nbsp; 
+		    		    <br><span class="smallGrayText">
+									By 2013, standardized ways of describing products will prevent errors and help manufacturers, distributors and retailers cut costs. Implementation will not be cheap, but the payoffs will be too big to ignore.
+				<br><br><br>
+		</span><p/></td>
+
+<td width="15" height="1"><img src="x.gif.1" width="15" height="1" border="0"><br></td></tr>
+
+
+  		  
+
+
+
+
+
+</table>
+
+
+
+
+
+
+
+<!-- begin main_virtual.inc-->
+<script type="text/javascript">
+if (location.pathname.substring(1, 3) != "it") { 
+   document.write('</td></tr></table>');
+}
+</script>
+
+
+
+<!-- THIS CREATES THE 5 PIXEL SPACER THAT IS BETWEEN THE PAGE BODY AND THE FOOTER ON ALL PAGES -->
+<table border="0" cellspacing="0"  class="gray_table">
+	<tr><td width="766"><img src="trans_pixel.gif" width="1" height="4" alt="" border="0"></td></tr>
+</table>
+
+
+<script type="text/javascript">
+
+  linkString = '&nbsp;<a class="linkTextSmall" href="http://www.gartner.com/RecognizedUser">Home</a>&nbsp;&nbsp;'
+
+</script>
+
+
+<!-- BEGIN FOOTER INCLUDE -->
+<script src="g1_footer.js" type="text/javascript"></script>
+<!-- END FOOTER INCLUDE -->
+
+<table border="0" cellpadding="0" cellspacing="0" width="766" align="center">
+	<tr>
+		<td width="766" align="left" class="resIdText">
+		<script type="text/javascript">
+		var ResId
+        if (ResId == null) { ResId = " " }
+        document.write(ResId)
+		</script>
+		</td>
+	</tr>
+</table>
+
+<!-- <script src="/include/webtrends.js" type="text/javascript"></script> -->
+
+
+<SCRIPT SRC="webtrendsCookies.js" LANGUAGE="JavaScript"></SCRIPT>
+<SCRIPT SRC="webtrends.jsp.1.html" LANGUAGE="JavaScript"></SCRIPT>
+ 
+<NOSCRIPT>
+<IMG ALT= "" BORDER="0" NAME="DCSIMG" WIDTH="1" HEIGHT="1" SRC="http://wtssdc.gartner.com/dcs2kf7dq10000sddxi7bvt9i_6o7e/njs.gif?dcsuri=/nojavascript&WT.js=No">
+</NOSCRIPT>
+
+
+</body>
+</html>
+
+

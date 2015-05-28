@@ -1,0 +1,278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>NIPS : Conferences : 2006 : Program : Adaptor Grammars: A Framework for Specifying Compositional Nonparametric Bayesian Mod</title>
+		<link rel="stylesheet" href="common.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="nips.css" media="all" type="text/css" />
+<script type="text/javascript">
+	// Has the page finished loading?
+	var bLoaded = false;
+
+	function rollover( imageName, newImage ) {
+		document.images[imageName].src = eval(newImage + ".src")
+	}
+
+	function menu_rollover( menuName, imageName, newImage ) {
+		if ( document.all ) {
+			rollover( imageName, newImage );
+		}
+	}
+
+	function createimage( path ) {
+		var theImage = new Image();
+		theImage.src = path;
+		return theImage;
+	}
+</script>
+<script type="text/javascript" src="menus.js"></script>
+<script type="text/javascript">
+	// This array defines the popup-menus, they must be in the same order as the navigation
+	// Each item is formatted as "Menu Name,Pixel X Location,Pixel Y Location,Level"
+
+	// Level 2 Menus
+	var aMenus = [
+		"NIPS_2006,184,140,2",
+	];
+
+	// This array defines all the menu items in the navigation
+	// Each item is formatted as: "Level 1 Menu,Title,URL,Level 3 Menu"
+	// No commas in menu names (use HTML encoding)
+
+	// Level 2 Menu Items
+	var aMenuItems = [
+		"NIPS_2005,NIPS 2005,/Conferences/2005/,",
+		"NIPS_2005,Registration Information,/Profile/,",
+		"NIPS_2005,Program Highlights,/Conferences/2005/ProgramHighlights.html,",
+		"NIPS_2005,Scheduled Events,/Conferences/2005/index.html#ScheduledEvents,",
+		"NIPS_2005,Program,/Conferences/2005/Program/,",
+		"NIPS_2005,Tutorials,/Conferences/2005/Tutorials/,",
+		"NIPS_2005,Tutorial Speakers,/Conferences/2005/Tutorials/Speakers.html,",
+		"NIPS_2005,Poster Sessions,/Conferences/2005/Posters/,",
+		"NIPS_2005,Demonstrations,/Conferences/2005/Demonstrations/,",
+		"NIPS_2005,Workshops,/Conferences/2005/Workshops/,",
+		"NIPS_2005,Workshop Abstracts,/Conferences/2005/Workshops/WorkshopAbstracts.html,",
+		"NIPS_2005,Authors and Presenters,/Conferences/2005/AuthorsAndPresenters.html,",
+		"NIPS_2005,Hotels,/Conferences/2005/Hotels.html,",
+		"NIPS_2005,Computer Services,/Conferences/2005/ComputerServices.html,",
+		"NIPS_2005,Travel Support,/Conferences/2005/TravelSupport.html,",
+		"NIPS_2005,Exhibitors,/Conferences/2005/Exhibitors.html,",
+		"NIPS_2005,Conference Speakers,/Conferences/2005/ConferenceSpeakers.html,",
+		"NIPS_2004,NIPS 2004,/Conferences/2004/,",
+		"NIPS_2004,Registration Information,/Profile/,",
+		"NIPS_2004,Program Highlights,/Conferences/2004/ProgramHighlights.php,",
+		"NIPS_2004,Scheduled Events,/Conferences/2004/index.php#ScheduledEvents,",
+		"NIPS_2004,Program,/Conferences/2004/Program/,",
+		"NIPS_2004,Tutorials,/Conferences/2004/Tutorials/,",
+		"NIPS_2004,Tutorial Speakers,/Conferences/2004/Tutorials/Speakers.php,",
+		"NIPS_2004,Poster Sessions,/Conferences/2004/Posters/,",
+		"NIPS_2004,Demonstrations,/Conferences/2004/Demonstrations/Demonstrations.php,",
+		"NIPS_2004,Workshops,/Conferences/2004/Workshops/,",
+		"NIPS_2004,Workshop Abstracts,/Conferences/2004/Workshops/WorkshopAbstracts.php,",
+		"NIPS_2004,Authors and Presenters,/Conferences/2004/AuthorsAndPresenters.php,",
+		"NIPS_2004,Hotels,/Conferences/2004/Hotels.php,",
+		"NIPS_2004,Computer Services,/Conferences/2004/ComputerServices.php,",
+		"NIPS_2004,Travel Support,/Conferences/2004/TravelSupport.php,",
+		"NIPS_2004,Exhibitors,/Conferences/2004/Exhibitors.php,",
+		"NIPS_2003,NIPS 2003,/Conferences/2003/,",
+		"NIPS_2003,Registration Information,/Profile/,",
+		"NIPS_2003,Program Highlights,/Conferences/2003/ProgramHighlights.php,",
+		"NIPS_2003,Scheduled Events,/Conferences/2003/index.php#ScheduledEvents,",
+		"NIPS_2003,Program,/Conferences/2003/Program/,",
+		"NIPS_2003,Tutorials,/Conferences/2003/Tutorials/,",
+		"NIPS_2003,Tutorial Speakers,/Conferences/2003/Tutorials/Speakers.php,",
+		"NIPS_2003,Poster Sessions,/Conferences/2003/Posters/,",
+		"NIPS_2003,Demonstrations,/Conferences/2003/Demonstrations/,",
+		"NIPS_2003,Workshops,/Conferences/2003/Workshops/,",
+		"NIPS_2003,Authors and Presenters,/Conferences/2003/AuthorsAndPresenters.php,",
+		"NIPS_2003,Hotels,/Conferences/2003/Hotels.php,",
+		"NIPS_2003,Computer Services,/Conferences/2003/ComputerServices.php,",
+		"NIPS_2003,Travel Support,/Conferences/2003/TravelSupport.php,",
+		"NIPS_2003,Exhibitors,/Conferences/2003/Exhibitors.php,",
+		"NIPS_2006,NIPS 2006,/Conferences/2006/,",
+		"NIPS_2006,NIPS 2006 Overview,/Conferences/2006/Program/,",
+		"NIPS_2006,Exhibitor Information,/Conferences/2006/Exhibitors,",
+		"NIPS_2006,Authors And Presenters,/Conferences/2006/AuthorsAndPresenters,",
+		"NIPS_2006,Hotels,/Conferences/2006/Hotels,",
+		"NIPS_2006,Buses And Driving Directions,/Conferences/2006/BusesDrivingDirections,",
+		"NIPS_2006,Travel Support,/Conferences/2006/TravelSupport,",
+		"NIPS_2006,Volunteering,/Conferences/2006/Volunteering,",
+		"NIPS_2006,Lift Tickets,/Conferences/2006/LiftTickets,",
+		"NIPS_2006,Wireless,/Conferences/2006/Wireless,",
+		"NIPS_2006,Workshops,/Conferences/2006/Workshops,",
+		"NIPS_2006,Tutorials,/Conferences/2006/Tutorials,",
+		"NIPS_2006,Posters,/Conferences/2006/Posters,",
+		"NIPS_2006,Demonstrations,/Conferences/2006/Demonstrations,",
+		"NIPS_2006,Tutorial Slides,/Conferences/2006/TutorialSlides,",
+		"NIPS_2006,Registration Prices,/Conferences/2006/Program/prices.php,",
+		"NIPS_2006,Cancellation Policy,/Contact/Cancellation%20Policy,",
+	];
+
+	// Create the menus
+	CreateMenus();
+</script>
+<script type="text/javascript">
+	// Site Map
+	var sitemap_off = createimage( "/SNL-Lab-Template/images/site-map_off.gif" );
+	var sitemap_on = createimage( "/SNL-Lab-Template/images/site-map_on.gif" );
+
+	// Directory
+	var Directory_off = createimage( "/images/Directory_off.png" );
+	var Directory_on = createimage( "/images/Directory_on.png" );
+
+	// Contact
+	var Contact_off = createimage( "/images/Contact_off.png" );
+	var Contact_on = createimage( "/images/Contact_on.png" );
+
+	// Menu Line
+	var menu_line_off = createimage( "/SNL-Lab-Template/images/menu-line_off.gif" );
+	var menu_line_on = createimage( "/SNL-Lab-Template/images/menu-line_on.gif" );
+
+	// Bullets
+	var bullet_off = createimage( "/SNL-Lab-Template/images/bullet.gif" );
+	var bullet_on = createimage( "/SNL-Lab-Template/images/bullet_on.gif" );
+
+	// Side Navigation Rollovers
+			var nav_NIPS_Home_off = createimage("/images/nav_NIPS_Home_off.png");
+			var nav_NIPS_Home_on = createimage("/images/nav_NIPS_Home_on.png");
+
+			var nav_NIPS_2006_off = createimage("/images/nav_NIPS_2006_off.png");
+			var nav_NIPS_2006_on = createimage("/images/nav_NIPS_2006_on.png");
+
+			var nav_My_Account_off = createimage("/images/nav_My_Account_off.png");
+			var nav_My_Account_on = createimage("/images/nav_My_Account_on.png");
+
+			var nav_Previous_Meetings_off = createimage("/images/nav_Previous_Meetings_off.png");
+			var nav_Previous_Meetings_on = createimage("/images/nav_Previous_Meetings_on.png");
+
+			var nav_Proceedings_off = createimage("/images/nav_Proceedings_off.png");
+			var nav_Proceedings_on = createimage("/images/nav_Proceedings_on.png");
+
+			var nav_Workshop_Series_off = createimage("/images/nav_Workshop_Series_off.png");
+			var nav_Workshop_Series_on = createimage("/images/nav_Workshop_Series_on.png");
+
+			var nav_Awards_off = createimage("/images/nav_Awards_off.png");
+			var nav_Awards_on = createimage("/images/nav_Awards_on.png");
+
+			var nav_Sponsors_off = createimage("/images/nav_Sponsors_off.png");
+			var nav_Sponsors_on = createimage("/images/nav_Sponsors_on.png");
+
+			var nav_Directory_off = createimage("/images/nav_Directory_off.png");
+			var nav_Directory_on = createimage("/images/nav_Directory_on.png");
+
+			var nav_Foundation_Office_off = createimage("/images/nav_Foundation_Office_off.png");
+			var nav_Foundation_Office_on = createimage("/images/nav_Foundation_Office_on.png");
+
+			var nav_Board_Members_off = createimage("/images/nav_Board_Members_off.png");
+			var nav_Board_Members_on = createimage("/images/nav_Board_Members_on.png");
+
+			var nav_Committees_2006_off = createimage("/images/nav_Committees_2006_off.png");
+			var nav_Committees_2006_on = createimage("/images/nav_Committees_2006_on.png");
+
+			var nav_Contact_Us_off = createimage("/images/nav_Contact_Us_off.png");
+			var nav_Contact_Us_on = createimage("/images/nav_Contact_Us_on.png");
+
+			var nav_Author_Reviewer_Login_off = createimage("/images/nav_Author_Reviewer_Login_off.png");
+			var nav_Author_Reviewer_Login_on = createimage("/images/nav_Author_Reviewer_Login_on.png");
+
+</script>
+</head>
+<body onload="bLoaded=true;">
+
+<!-- open master table //-->
+<table width="750" border="0" cellspacing="0" cellpadding="0" id="LabTemplate">
+	<tr id="Logo">
+		<!-- logo and section photo //-->
+		<td colspan="5">
+			<table width="750" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td><a href="http://www.nips.cc/"><img src="nips_logo.conference.jpg" width="225" height="72" border="0" alt="Salk Institute for Biological Studies" /></a></td>
+					<td><img src="header.submissions.jpg" width="525" height="72" border="0" alt="Header"/></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+
+	<tr id="SubNavigation">
+		<!-- subnavigation bar //-->
+		<td colspan="5">
+			<table width="750" border="0" cellspacing="0" cellpadding="0" bgcolor="#006699">
+				<tr>
+					<td width="32"><img src="spacer.gif" width="32" height="18" border="0" alt="spacer"/></td>
+					<td width="456" align="left" valign="middle" class="trail"><a href="http://nips.cc/" class="trail">NIPS</a> : <a href="http://nips.cc/Conferences" class="trail">Conferences</a> : <a href="http://nips.cc/Conferences/2006" class="trail">2006</a> : <a href="http://nips.cc/Conferences/2006/Program" class="trail">Program</a></td>
+					<td width="98" class="Links"><!-- <a href="/sitemap/" onmouseover="rollover('sitemap','sitemap_on');" onmouseout="rollover('sitemap','sitemap_off');"><img src="/SNL-Lab-Template/images/site-map_off.gif" width="75" height="18" border="0" name="sitemap"></a> --></td>
+					<td width="82" class="Links"><a href="http://nips.cc/Directory/" onmouseover="rollover('Directory','Directory_on');" onmouseout="rollover('Directory','Directory_off');"><img src="Directory_off.png" width="82" height="18" border="0" name="Directory" alt="directory" /></a></td>
+					<td width="82" class="Links"><a href="http://nips.cc/Contact/" onmouseover="rollover('Contact','Contact_on');" onmouseout="rollover('Contact','Contact_off');"><img src="Contact_off.png" width="82" height="18" border="0" name="Contact" alt="contact" /></a></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+
+	<tr>
+		<!-- spacer //-->
+		<td width="16"><img src="spacer.gif" width="16" height="1" border="0" alt="spacer"/></td>
+
+		<!-- left channel //-->
+		<td width="209" valign="top" id="SideNavigation">
+			<table width="209" border="0" cellspacing="0" cellpadding="0">
+
+				<!-- spacer //-->
+				<tr>
+					<td><img src="spacer.gif" width="209" height="30" border="0" alt="spacer"/></td>
+				</tr>
+
+				<!-- navigation //-->
+				<tr>
+					<td>
+						<table width="168" border="0" cellspacing="0" cellpadding="0"><tr><td><a href="http://nips.cc/" onmouseover="if ( bLoaded ) { rollover('nav_NIPS_Home','nav_NIPS_Home_on'); Roll('NIPS_Home',true); }" onmouseout="if ( bLoaded ) { rollover('nav_NIPS_Home','nav_NIPS_Home_off'); Roll('NIPS_Home',false); }"><img src="nav_NIPS_Home_off.png" width="168" height="21" border="0" name="nav_NIPS_Home" alt="NIPS Home"/></a></td></tr>
+<tr><td><a href="http://nips.cc/Conferences/2006/" onmouseover="if ( bLoaded ) { rollover('nav_NIPS_2006','nav_NIPS_2006_on'); Roll('NIPS_2006',true); }" onmouseout="if ( bLoaded ) { rollover('nav_NIPS_2006','nav_NIPS_2006_off'); Roll('NIPS_2006',false); }"><img src="nav_NIPS_2006_off.png" width="168" height="21" border="0" name="nav_NIPS_2006" alt="NIPS 2006"/></a></td></tr>
+<tr><td><a href="http://nips.cc/Profile/" onmouseover="if ( bLoaded ) { rollover('nav_My_Account','nav_My_Account_on'); Roll('My_Account',true); }" onmouseout="if ( bLoaded ) { rollover('nav_My_Account','nav_My_Account_off'); Roll('My_Account',false); }"><img src="nav_My_Account_off.png" width="168" height="21" border="0" name="nav_My_Account" alt="My Account"/></a></td></tr>
+<tr><td><a href="http://nips.cc/Conferences/" onmouseover="if ( bLoaded ) { rollover('nav_Previous_Meetings','nav_Previous_Meetings_on'); Roll('Previous_Meetings',true); }" onmouseout="if ( bLoaded ) { rollover('nav_Previous_Meetings','nav_Previous_Meetings_off'); Roll('Previous_Meetings',false); }"><img src="nav_Previous_Meetings_off.png" width="168" height="21" border="0" name="nav_Previous_Meetings" alt="Previous Meetings"/></a></td></tr>
+<tr><td><a href="http://nips.cc/Proceedings/" onmouseover="if ( bLoaded ) { rollover('nav_Proceedings','nav_Proceedings_on'); Roll('Proceedings',true); }" onmouseout="if ( bLoaded ) { rollover('nav_Proceedings','nav_Proceedings_off'); Roll('Proceedings',false); }"><img src="nav_Proceedings_off.png" width="168" height="21" border="0" name="nav_Proceedings" alt="Proceedings"/></a></td></tr>
+<tr><td><a href="http://nips.cc/WorkshopSeries/" onmouseover="if ( bLoaded ) { rollover('nav_Workshop_Series','nav_Workshop_Series_on'); Roll('Workshop_Series',true); }" onmouseout="if ( bLoaded ) { rollover('nav_Workshop_Series','nav_Workshop_Series_off'); Roll('Workshop_Series',false); }"><img src="nav_Workshop_Series_off.png" width="168" height="21" border="0" name="nav_Workshop_Series" alt="Workshop Series"/></a></td></tr>
+<tr><td><a href="http://nips.cc/Awards/" onmouseover="if ( bLoaded ) { rollover('nav_Awards','nav_Awards_on'); Roll('Awards',true); }" onmouseout="if ( bLoaded ) { rollover('nav_Awards','nav_Awards_off'); Roll('Awards',false); }"><img src="nav_Awards_off.png" width="168" height="21" border="0" name="nav_Awards" alt="Awards"/></a></td></tr>
+<tr><td><a href="http://nips.cc/Sponsors/" onmouseover="if ( bLoaded ) { rollover('nav_Sponsors','nav_Sponsors_on'); Roll('Sponsors',true); }" onmouseout="if ( bLoaded ) { rollover('nav_Sponsors','nav_Sponsors_off'); Roll('Sponsors',false); }"><img src="nav_Sponsors_off.png" width="168" height="21" border="0" name="nav_Sponsors" alt="Sponsors"/></a></td></tr>
+<tr><td><a href="http://nips.cc/Directory" onmouseover="if ( bLoaded ) { rollover('nav_Directory','nav_Directory_on'); Roll('Directory',true); }" onmouseout="if ( bLoaded ) { rollover('nav_Directory','nav_Directory_off'); Roll('Directory',false); }"><img src="nav_Directory_off.png" width="168" height="21" border="0" name="nav_Directory" alt="Directory"/></a></td></tr>
+<tr><td><a href="http://nips.cc/Office" onmouseover="if ( bLoaded ) { rollover('nav_Foundation_Office','nav_Foundation_Office_on'); Roll('Foundation_Office',true); }" onmouseout="if ( bLoaded ) { rollover('nav_Foundation_Office','nav_Foundation_Office_off'); Roll('Foundation_Office',false); }"><img src="nav_Foundation_Office_off.png" width="168" height="21" border="0" name="nav_Foundation_Office" alt="Foundation Office"/></a></td></tr>
+<tr><td><a href="http://nips.cc/Board/" onmouseover="if ( bLoaded ) { rollover('nav_Board_Members','nav_Board_Members_on'); Roll('Board_Members',true); }" onmouseout="if ( bLoaded ) { rollover('nav_Board_Members','nav_Board_Members_off'); Roll('Board_Members',false); }"><img src="nav_Board_Members_off.png" width="168" height="21" border="0" name="nav_Board_Members" alt="Board Members"/></a></td></tr>
+<tr><td><a href="http://nips.cc/Conferences/2006/Committees/" onmouseover="if ( bLoaded ) { rollover('nav_Committees_2006','nav_Committees_2006_on'); Roll('Committees_2006',true); }" onmouseout="if ( bLoaded ) { rollover('nav_Committees_2006','nav_Committees_2006_off'); Roll('Committees_2006',false); }"><img src="nav_Committees_2006_off.png" width="168" height="21" border="0" name="nav_Committees_2006" alt="Committees 2006"/></a></td></tr>
+<tr><td><a href="http://nips.cc/Contact/" onmouseover="if ( bLoaded ) { rollover('nav_Contact_Us','nav_Contact_Us_on'); Roll('Contact_Us',true); }" onmouseout="if ( bLoaded ) { rollover('nav_Contact_Us','nav_Contact_Us_off'); Roll('Contact_Us',false); }"><img src="nav_Contact_Us_off.png" width="168" height="21" border="0" name="nav_Contact_Us" alt="Contact Us"/></a></td></tr>
+<tr><td><a href="http://papers.nips.cc" onmouseover="if ( bLoaded ) { rollover('nav_Author_Reviewer_Login','nav_Author_Reviewer_Login_on'); Roll('Author_Reviewer_Login',true); }" onmouseout="if ( bLoaded ) { rollover('nav_Author_Reviewer_Login','nav_Author_Reviewer_Login_off'); Roll('Author_Reviewer_Login',false); }"><img src="nav_Author_Reviewer_Login_off.png" width="168" height="21" border="0" name="nav_Author_Reviewer_Login" alt="Author Reviewer Login"/></a></td></tr>
+</table>					</td>
+				</tr>
+
+				<!-- spacer //-->
+				<tr>
+					<td><img src="spacer.gif" width="209" height="32" border="0" alt="spacer"/></td>
+				</tr>
+				<tr>
+					<td id="SideText"></td>
+				</tr>
+
+			</table>
+		</td>
+
+		<!-- spacer //-->
+		<td width="27"><img src="spacer.gif" width="27" height="1" border="0" alt="spacer"/></td>
+
+		<!-- contents //-->
+		<td width="482" valign="top">
+			<table width="482" border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td>
+											</td>
+				</tr>
+				<tr>
+					<td class="body" id="DocumentBody">
+						<div class="NavLinks noPrint"><a href="http://nips.cc/Conferences/2006/">NIPS 2006</a> | <a href="http://nips.cc/Conferences/2006/Program/">NIPS 2006 Overview</a> | <a href="http://nips.cc/Conferences/2006/Exhibitors">Exhibitor Information</a> | <a href="http://nips.cc/Conferences/2006/AuthorsAndPresenters">Authors And Presenters</a> | <a href="http://nips.cc/Conferences/2006/Hotels">Hotels</a> | <a href="http://nips.cc/Conferences/2006/BusesDrivingDirections">Buses And Driving Directions</a> | <a href="http://nips.cc/Conferences/2006/TravelSupport">Travel Support</a> | <a href="http://nips.cc/Conferences/2006/Volunteering">Volunteering</a> | <a href="http://nips.cc/Conferences/2006/LiftTickets">Lift Tickets</a> | <a href="http://nips.cc/Conferences/2006/Wireless">Wireless</a> | <a href="http://nips.cc/Conferences/2006/Workshops">Workshops</a> | <a href="http://nips.cc/Conferences/2006/Tutorials">Tutorials</a> | <a href="http://nips.cc/Conferences/2006/Posters">Posters</a> | <a href="http://nips.cc/Conferences/2006/Demonstrations">Demonstrations</a> | <a href="http://nips.cc/Conferences/2006/TutorialSlides">Tutorial Slides</a> | <a href="http://nips.cc/Conferences/2006/Program/prices.php">Registration Prices</a> | <a href="http://nips.cc/Contact/Cancellation%20Policy">Cancellation Policy</a></div><div class="vevent Event  Poster"><p class="Speakers"><a href="http://nips.cc/Directory/user.php?ID=3162">Mark Johnson</a>, <a href="http://nips.cc/Directory/user.php?ID=3163">Thomas Griffiths</a>, <a href="http://nips.cc/Directory/user.php?ID=2592">Sharon Goldwater</a></p><p class="Affiliation">Brown University, , Brown University</p><p class="Name summary"><a href="event.php%3FID=257.1.html" class="url">Adaptor Grammars: A Framework for Specifying Compositional Nonparametric Bayesian Mod</a></p><p class="Notice">This is part of the <a href="http://nips.cc/Conferences/2006/Program/event.php?ID=21" class="Name">Poster Session</a> which begins at <span class="Time">19:30 on Tuesday December 5, 2006</span></p></div>							</td>
+						</tr>
+					</table>
+				</td>
+				<td width="16"><img src="spacer.gif" width="16" height="1" border="0" alt="spacer"/></td> 
+			</tr>
+			<tr>
+				<td colspan="5"><img src="spacer.gif" width="750" height="30" border="0" alt="spacer"/></td>
+			</tr>
+		</table>
+	</body>
+</html>
+<!-- Do not remove: This comment is monitored to verify that the site is working properly -->

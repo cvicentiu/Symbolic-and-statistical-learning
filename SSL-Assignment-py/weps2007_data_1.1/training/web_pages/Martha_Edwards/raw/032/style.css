@@ -1,0 +1,126 @@
+.id {
+	<!-- Used for Ahnentafel number.-->;
+	font-weight : bold;
+	font-size : 8pt;
+	color : 666666;
+	vertical-align : top;
+	text-align : right;
+}
+.hang{
+	text-indent : -25px;
+	padding-left : 30px;
+	vertical-align : top;
+}
+.dot{
+	<!-- Generation number for each individual. -->;
+	font-size : 8pt;
+	font-weight : bold;
+	color : 996633;
+	vertical-align : top;
+}
+.cell{
+	<!-- Cells used in tables. -->
+	border: solid;
+	border-color: white;
+	border-width: 1px;
+	border-bottom-width : 1px;
+	border-bottom-color : #e4e4c9;
+	text-indent : -30px;
+	padding-left : 30px;
+}
+.pagecaption{
+	<!--Caption at the top of each page-->;
+	font-family : Arial Narrow, Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #385c60;
+	font-weight : bold;
+	font-size : 17px;
+}
+.box{
+<!--	Documents and gravestones	-->;
+	border: solid;
+	border-color: #a36a32;
+	border-width: 1px;
+	background-image : url(images/paper.gif);
+}
+.heading{
+<!--	Use in a Box	-->;
+	color :#885522;
+	font : bold;
+}
+.title{
+	color : #996633;
+	font-weight : bold;
+	border: solid;
+	border-color: white;
+	border-width: 1px;
+	border-bottom-width : 1px;
+	border-bottom-color : #996633;
+	letter-spacing : 2px;
+}
+.title2{
+<!--	Header for lower generations. 	-->;
+	color : #996633;
+	font-style : italic;
+}
+.story{
+	border: solid;
+	border-color: #996633;
+	border-width: 1px;
+}
+.border {
+	border: solid;
+	border-color: #7A9E9E;
+	border-width: 1px;
+}
+I {
+	color : #004848;
+}
+CODE {
+	<!--Use for Lineage IDs-->;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color : #005959;
+	font-size : 8pt;
+	vertical-align : middle;
+}
+a{
+	text-decoration: none;
+	color : #990000;
+	 font-weight : bold;
+}
+a:hover {
+	color : #005959;
+	text-decoration: none;
+	font-weight : bold;
+}
+BODY{
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+ 	font-size : 12pt; 
+	background : #E1F0F0;
+	scrollbar-face-color: #A0BABA;
+	scrollbar-shadow-color: #999999;
+	scrollbar-highlight-color: white;
+	scrollbar-3dlight-color: #dddddd;
+	scrollbar-track-color:  #BCCECC;
+	scrollbar-arrow-color: maroon;
+}
+TD {
+	 font-size : 10pt;
+}
+B {
+	color : #005959;
+}
+p {
+	font-size : 10pt;
+}
+HR {
+	height : 1px;
+	color : #996633;
+	border : solid;
+}
+EM {
+	color : #A52A2A;
+}
+PRE {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 8pt;
+}

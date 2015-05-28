@@ -1,0 +1,219 @@
+/* styles for the main row of links across the top */
+
+#topnav td a {
+	text-align: center;
+	background: #CCCCCC;
+	height: 20px;
+	border-left: 1px none;
+	border-bottom: 1px solid #993333;
+	border-right: 1px none;
+	color: #993333;
+	text-decoration: none;
+	display: block;
+	font: bold 11px/20px verdana, geneva, sans serif;
+	}
+#topnav td a:hover {
+	color: #993333;
+	background: #ffffff;
+	border-bottom: 1px solid #333366;
+	}
+#subtop td a {
+	text-align: center;
+	background: #993333;
+	height: 19px;
+	color: #FFFFFF;
+	text-decoration: none;
+	display: block;
+	font: 11px/19px verdana, arial, geneva, helvetica, sans-serif;
+	}
+#subtop td a:hover {
+	text-decoration: underline;	
+	}
+#subtop td a:visited {
+	color: #CCCCCC;	
+	}	
+#topbar td {
+	text-align: center;
+	background: #CCCCCC;
+	height: 20px;
+	border-left: 1px none;
+	border-bottom: 1px solid #993333;
+	border-right: 1px none;
+	color: #993333;
+	text-decoration: none;
+	display: block;
+	font: bold 12px/20px verdana, geneva, sans serif;
+	}
+
+/* styles set by body tag to activate a top link */
+
+body#home_on #topnav td#home a,
+body#action_on #topnav td#action a,
+body#events_on #topnav td#events a,
+body#press_on #topnav td#press a,
+body#news_on #topnav td#news a,
+body#about_on #topnav td#about a,
+body#join_on #topnav td#join a
+ {
+	color: #CCCCCC;
+	background: #993333;
+	text-decoration:none;
+	}
+	
+body#home_on #topnav td#home a:hover,
+body#action_on #topnav td#action a:hover,
+body#events_on #topnav td#events a:hover,
+body#press_on #topnav td#press a:hover,
+body#news_on #topnav td#news a:hover,
+body#about_on #topnav td#about a:hover,
+body#join_on #topnav td#join a:hover
+ {
+	color: #FFFFFF;
+	border-bottom: 1px solid #993333;
+	}
+
+
+/* styles for the links on the lefthand side */
+
+#leftnav {
+	width:163px;
+	border:1px solid #333366;
+	background-color:#FFFFFF;
+}
+
+.leftlink a {
+	font: 11px/12px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	text-align:left;
+	color: #993333;
+	text-decoration:none;
+	display:block;
+	padding:3px 3px 4px 8px;
+
+}
+
+.leftlink a:hover {
+	color:#EEEEEE;
+	background-color:#993333;
+}
+
+.leftlink a.sti:hover {
+	color:#000;
+	background-color:#f90;
+}
+
+.leftlink a.sbm:hover {
+	color:#fa0;
+	background-color:#333;
+}
+
+.leftgap {
+	width:163px;
+	height:8px;
+	line-height:0px;
+}
+
+#headlines_on #headlines a,
+#publicbroadcasting_on #publicbroadcasting a,
+#netfreedom_on #netfreedom a,
+#foxnews_on #foxnews a,
+#propaganda_on #propaganda a,
+#communityinternet_on #communityinternet a,
+#defendlocalaccess_on #defendlocalaccess a,
+#spectrum_on #spectrum a,
+#payola_on #payola a,
+#rules_on #rules a,
+#lpfm_on #lpfm a,
+#tools_on #tools a,
+#hallofshame_on #hallofshame a,
+#ownership_on #ownership a,
+#internet_on #internet a,
+#tvcable_on #tvcable a,
+#radio_on #radio a,
+#consolidation_on #consolidation a,
+#noncommercial_on #noncommercial a,
+#iproperty_on #iproperty a,
+#journalism_on #journalism a,
+#commercialism_on #commercialism a,
+#congress_on #congress a,
+#global_on #global a,
+#fcc_on #fcc a,
+#action_on #action a,
+#guide_on #guide a,
+#whoowns_on #whoowns a,
+#orgs_on #orgs a,
+#library_on #library a,
+#links_on #links a,
+#mediaminutes_on #mediaminutes a,
+#support_on #support a,
+#tellafriend_on #tellafriend a,
+#linktous_on #linktous a
+{
+	color: #333366;
+	text-decoration:underline;
+}
+
+.graynav {
+	width:550px;
+	margin:0px;
+	padding:0px;
+}
+
+.graynav td.nolink {
+	background-color:#FFFFFF;
+	font: bold 12px Arial, Helvetica, sans-serif; 
+	text-decoration: none;
+	margin:0px;
+	padding:3px;
+	border:1px solid #993333;
+	text-align:center;
+	display:block;
+}
+
+.graynav td.empty {
+	background-color:#CCCCCC;
+	font: bold 12px Arial, Helvetica, sans-serif;
+	color:#EEEEEE;
+	text-decoration: none;
+	margin:0px;
+	padding:3px;
+	border:1px solid #CCCCCC;
+	text-align:center;
+	display:block;
+}
+
+.graynav tr td a {
+	background-color:#CCCCCC;
+	font: 12px Arial, Helvetica, sans-serif; 
+	text-decoration: none;
+	margin:0px;
+	padding:3px;
+	border:1px solid #999999;
+	text-align:center;
+	display:block;
+}
+
+.graynav tr td a:hover {
+	color: #993333; 
+	text-decoration: none;
+	background:#EEEEEE;
+	border:1px solid #993333;
+}	
+
+#actionsquadhome {
+	position:relative;
+	background:#ffd url(/images/home/action_squad_bkgnd.gif);
+	width:168px;
+	height:133px;
+	overflow:hidden;
+}
+
+#actionsquadhome P {
+	text-align:left;
+	font:11px/14px Verdana,Geneva,sans-serif;
+	padding:50px 5px 0 12px;
+	margin:0;
+}
+
+#actionsquadhome img {
+	margin:0 8px 7px 0;
+}

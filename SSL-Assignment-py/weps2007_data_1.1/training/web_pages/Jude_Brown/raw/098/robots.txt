@@ -1,0 +1,10 @@
+# Robots.txt file
+# restrict what search engines index of the site
+# Last line is a mailgrabber bot trap.
+User-agent: *
+Disallow: /cgi-bin
+Disallow: /includes
+Disallow: /logs
+Disallow: /pgp
+Disallow: /search
+Disallow: /mailbottrap/

@@ -1,0 +1,300 @@
+/* basic style sheet for www.stat.auckland.ac.nz site */
+
+/* ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **
+ * Fonts
+ * ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **/
+
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: small; 
+}
+/*
+td.header span#pg-header {
+	font-size: 1.2em; /* 13px *
+}
+*/
+td.header a {
+	font-size: 1.0em;
+}
+.footer {
+	font-size: xx-small;
+}
+div.footer {
+	text-align: center;
+}
+h1 {
+	font-size: 1.5em; /* 18px */
+	font-weight: 900;
+}
+h2 {
+	font-size: 1.1em; /* 12px */
+}
+h3 {
+	font-size: 1.0em;
+}
+h4 {
+	font-size: 0.9em;
+	font-style: italic;
+}
+td, p {
+	/*font-size: 1em;*/ /* 11px */
+}
+a, a.selected {  
+	font-weight: bold; 
+}
+.content, .submenu, .sidebox, .widesidebox {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 1em; /* 11px */
+}
+input, option, select, form {  
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 1em; /* 11px */
+}
+.help {
+	font-family: Verdana, Helvetica, Sans-Serif;
+	font-size: small; /* 8pt */
+}
+address {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: x-small;
+	font-style: normal;
+}
+acronym {
+	font-weight: bold;
+}
+.alert {
+	font-weight: bold;
+}
+.inset {
+	font-size: small; /* 8pt */
+}
+q	{
+	font-style: italic;
+}
+
+/* ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **
+ * Color, Padding, etc
+ * ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **/
+
+body {
+	color: black;
+	background-color: #eee;
+	/*padding: 0;
+	margin: 10px;*/
+}
+.header {
+	line-height: 1.3em;  /* 15px */
+	background-color: #dcdcdc;
+	border: black;
+	border-style: solid;
+	border-width: 1px 0;
+	margin: 0;
+	padding: 5px 10px;
+}
+td.header form {
+	margin: 0;
+	padding: 0;
+}
+.footer {
+	background-color: #dcdcdc;
+	border: black;
+	border-style: solid;
+	border-width: 1px 0;
+	margin: 1px 2px 10px 2px;
+	padding: 5px;
+	line-height: 1.5em; /* 15px */
+}
+h1 {
+	margin-bottom: 15px;
+	margin-top: 0;
+}
+h2 {
+	margin-bottom: 5px;
+	margin-top: 0;
+}
+h3 {
+}
+td, p {
+}
+td {
+	border: 1px black;
+}
+p {
+	margin-top: 0;
+	margin-bottom: 15px
+}
+a {  
+	color: #0077CC; 
+	text-decoration: none
+}
+a:hover {  
+	text-decoration: underline;
+}
+a.selected { 
+	color: #FF0000; 
+	text-decoration: none
+}
+a.selected:hover { 
+	text-decoration: underline;
+}
+.content {
+	background-color: white;
+	border: 1px solid black;
+	vertical-align: top;
+	padding: 10px;
+}
+.submenu {
+	background-color: #dcdcdc;
+	border:1px dashed black;
+	vertical-align: top;
+	/* clip:    rect(   ); */
+	width: 165px;
+	padding: 10px;
+}
+.sidebox {
+	background-color: #dcdcdc;
+	border:1px dashed black;
+	vertical-align: top;
+	/* clip:    rect(   ); */
+	width: 20%;
+	padding: 10px;
+}
+.widesidebox {
+	background-color: #dcdcdc;
+	border:1px dashed black;
+	vertical-align: top;
+	/* clip:    rect(   ); */
+	width: 30%;
+	padding: 10px;
+}
+ul {  
+	list-style-position: outside; 
+	list-style-type: square; 
+	text-indent: 0pt
+}
+li {
+	padding: 2px;
+	vertical-align: top;
+}
+.bordered { 
+	border: black;
+	border-style: solid; 
+	border-width: 1px
+}
+.help {
+	background-color: #FEFFC0;
+	color: black;
+	padding: 10px;
+	border: 1px dashed #659ACC;
+}
+address {
+	color: black;
+	white-space: normal;
+}
+
+acronym {
+	cursor: help;
+}
+.alert {
+	color: #CC0000;
+}
+
+div.float {
+	float: left;
+	margin: 5px;
+}
+
+.inset {
+	background-color: white;
+	color: black;
+	border: 1px dashed black;
+	text-align: center;
+}
+
+ol.nobullet, ul.nobullet {
+	list-style-type: none;
+	list-style-position: inside;
+	padding: 0 0 0.5em 0;
+	margin: 0;
+}
+ol.nobullet li, ul.nobullet li {
+	list-style: none;
+	padding: 0.25em;
+	margin: 0;
+}
+ol.unlist li { 
+	display: inline; 
+	vertical-align: middle;
+}
+ol.unlist li img {
+	padding: 2pt 0;
+	border: none;
+}
+ul.linklist {
+	padding: 0;
+	list-style: none;
+}
+ul.linklist li { display: inline; }
+ul.linklist li:after { content: " |"; }
+
+/* ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **
+ * FEEDBACK FORM ON SOME PAGES (using footer-feedback.php)
+ * ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **/
+form#feedback { 
+	padding: 4px 4px 4px 8px; margin: 1px 10px 10px 10px; border: 1px solid black; color: black; background-color: #fdffe2;
+}
+form#feedback h2 {
+	color: #9fb448; background-color: #fdffe2;
+}
+form#feedback h3 {
+	color: #1f4084; background-color: #fdffe2; margin-top: 0.4em; margin-bottom: 0.3em; font-size: 1em;
+}
+form#feedback p { margin: 0; padding: 0; }
+form#feedback p input { vertical-align: middle; }
+form#feedback textarea { width: 98%; }
+
+/* ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **
+ * THAT DARN HEADER
+ * ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **/
+
+#dos-internal-nav {
+line-height: 13px;
+color: black;
+background-color: #dcdcdc;
+border: black;
+border-style: solid;
+border-width: 1px 0;
+margin: 0;
+padding: 5px 10px;
+}
+#dos-internal-nav a {
+color: #0077CC;
+background-color: #dcdcdc;
+text-decoration: none;
+font-size: small;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-weight: bold;
+}
+
+/* ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **
+ * SEMINARS
+ * ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **/
+
+div.seminardetail p { margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0; }
+div.seminardetail { margin-bottom: 0.8em; }
+
+/* ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **
+ * UPDATES FOR 2005 WEB STYLE GUIDE
+ * ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** **/
+
+body { margin: 0; padding: 0; background-color: white; }
+
+#banner { margin: 2px 2px 1px 2px; padding: 0; border: 1px solid #999; color: white; background-color: #004487; }
+#banner img { border: none; display: block; }
+
+a { color: #004487; }
+#nav a { color: white; border-right: 1px solid white; padding-right: 1ex; font-weight: normal; }
+#nav a.lastnav { border-right: none; }
+#nav { position: absolute; top: 20px; left: 320px; color: white; background-color: #004487; margin: 0 3px 0 0; }
+
+/* EOF */

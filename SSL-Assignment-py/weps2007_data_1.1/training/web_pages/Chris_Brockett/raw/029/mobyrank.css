@@ -1,0 +1,88 @@
+div.mobyrank {
+}
+
+div.scoreBoxBig {
+  font-size: 19pt; 
+  width: 2.75em; 
+  padding: 0.50em 0 0.75em 0; 
+  height: 1em; 
+  text-align: center; 
+  font-weight: bold; 
+}
+
+div.scoreBoxMed {
+  font-size: 15pt; 
+  width: 2.75em; 
+  padding: 0.50em 0 0.75em 0; 
+  height: 1em; 
+  text-align: center; 
+  font-weight: bold; 
+}
+
+div.scoreHi {
+  color: white; 
+  background-color: #0033FF;
+}
+
+div.scoreBorderHi {
+  border-bottom: 2px solid #0033ff;
+}
+
+div.scoreMed {
+  color: white; 
+  background-color: #FF6600;
+}
+
+div.scoreBorderMed 
+{
+  border-bottom: 2px solid #FF6600;
+}
+
+div.scoreLow {
+  color: white; 
+  background-color: #333333;
+}
+
+div.scoreBorderLow 
+{
+  border-bottom: 2px solid #333333;
+}
+
+
+div.scoreNone {
+  background-color: #330000;
+  color: white; 
+}
+
+
+div.scoresource {
+  margin-top: 2em;
+  padding-top: 5px;
+/*  border-bottom: 1px solid black; */
+}
+
+div.mobyrank div.scoreBoxMed { margin-right: 1em; }
+
+div.mobyrank div.holder {
+  border: 1px solid darkgreen;
+}
+
+div.mobyrank div.source {
+  font-size: 10pt;
+  font-weight: bold;
+}
+
+div.mobyrank div.citation {
+  margin-left: 0em;
+}
+
+div.mobyrank div.score {
+  float: left;
+  width: 4em;
+  text-align: center;
+  font-size: 16pt;
+}
+
+div.mobyrank div.url {
+  text-align: right;
+}

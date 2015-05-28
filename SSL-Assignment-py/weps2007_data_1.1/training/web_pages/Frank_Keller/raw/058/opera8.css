@@ -1,0 +1,9 @@
+input.file {
+	/* hide file upload area hack */
+	clip:rect(0px, 0px, 0, 0px);
+}
+.modal-background {
+	/* use interlaced background for semitransparent areas*/
+	background-image: url(/img/xing/bg_interlace.gif) !important;
+	background-color:transparent !important;
+}

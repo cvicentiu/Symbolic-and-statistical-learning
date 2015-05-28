@@ -1,0 +1,146 @@
+/* Ver 2.61 */
+body {  
+	font-family:verdana,helvetica,arial,sans-serif;
+	color:#000000;
+	background-color:#ffffff;
+}
+A {
+	color:#003300;
+}
+A:active {
+	color:#5d3C1f;
+}
+A:visited {
+	color:#003366;
+}
+
+.headlineText, .deckText {
+	font-family:verdana,arial,helvetica,sans-serif;
+}
+.headlineText {
+	font-size:18pt;
+	color:#660000;
+}
+.authorText, .deckText, #storyText {
+	font-size:12pt;
+	color:#000000;
+}
+#storyText {
+	font-family:georgia,verdana,sans-serif;
+}
+/* IE Only - no mac \*/
+* html #storyText {
+	font-size:small;
+}
+/* */
+.anmText {
+	font-family:arial,helvetica,sans-serif;
+	font-size:11px;
+}
+.textHeadline {
+   font-family:verdana,arial,helvetica,sans-serif;
+   font-size:11pt;
+}
+/* IE Only - no mac \*/
+* html .textHeadline {
+font-size:small;
+}
+/* */
+.textSummary, .storyDate, .weekHeader, .weekHeadline, .datedHeadline {
+   font-family:verdana,arial,helvetica,sans-serif;
+   font-size:10pt;
+}
+.weekHeadline, .datedHeadline {
+	line-height:1.4;
+}
+pre, code {
+	font-family:'courier new',courier,monospace;
+	font-size:10pt;
+	color:#000000;
+}
+/* IE Only - no mac \*/
+* html pre, code {
+	font-size:x-small;
+}
+/* */
+/* IE Only - no mac \*/
+* html .textSummary {
+	font-size:x-small;
+	line-height:1.2;
+}
+/* */
+/* IE Only - no mac \*/
+* html .weekHeader {
+	font-size:x-small;
+}
+/* */
+/* IE Only - no mac \*/
+* html .weekHeadline {
+	font-size:x-small;
+	line-height:1.2;
+}
+/* */
+/* IE Only - no mac \*/
+* html .datedHeadline {
+	font-size:x-small;
+	line-height:1.2;
+}
+/* */
+.storyDate {
+	text-align:right;
+	vertical-align:bottom;
+}
+.extras {  
+	font-family:geneva,verdana,helvetica,arial,sans-serif;
+	font-size: 9pt;
+	line-height: 15pt;
+}
+.leftindexnb, .leftIndex {
+   font-family:verdana,arial,helvetica,sans-serif;
+   font-size:9pt;
+}
+.sbLabel, .sbText, .sidebars {  
+	font-family:geneva,'ms sans serif',verdana,helvetica,arial,sans-serif;
+	font-size:9pt;
+	line-height:11pt;
+}
+.sublink, .footerText, .correctionText, .tagText, .columnPics {
+	font-family:verdana,arial,helvetica,sans-serif;
+	font-size:8pt;
+	color:#000000;
+}
+/* */
+/* IE Only - no mac \*/
+* html .tagText {
+	font-size:xx-small;
+}
+/* */
+.picCap, .tagLine {
+	font-family:geneva,verdana,arial,helvetica,sans-serif;
+	font-size:8pt;
+	color:#4d303e;
+	font-style:normal;
+}
+.picCred {
+	line-height:7pt;
+	font-family:verdana,arial,helvetica,sans-serif;
+	font-size:7pt;
+	font-style:italic;
+	color:#4d303e;
+}
+.picStoryLink {
+	text-align:right;
+	line-height:7pt;
+	font-family:geneva,sans-serif;
+	font-size:7pt;
+	font-style:normal;
+}
+.weekHeader, .tagText {
+	color:#666666;
+}
+.boldText, .tagLine, .leftIndex, .sbLabel, .textHeadline, .headlineText, .deckText, .weekHeader, .weekHeadline, .datedHeadline {
+	font-weight:bold;
+}
+.authorText, #storyText, .textSummary, .storyDate, .sbText, .sublink, .footerText, .correctionText, .tagText {
+	font-weight:normal;
+}

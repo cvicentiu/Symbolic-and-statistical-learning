@@ -1,0 +1,341 @@
+/**** Lists reset *****/
+
+#navigation ul,
+#navigation li {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  line-height: 1.25em; /* Fixes peek-a-boo bug in IE6/7 rendering engine */
+}
+
+
+
+.navExpandLink {
+  display: block;
+  overflow: hidden;
+  width: 8px;
+  height: 8px;
+  background: url(/static_war/render/images/nav_expand_right.gif) top left no-repeat;
+
+  position: absolute;
+  margin-left: -8px;
+  margin-top: 3px;
+  
+  opacity: 0.3;
+  -moz-opacity: 0.3;
+  filter:alpha(opacity=30);
+}
+
+.navExpandLink.expanded {
+  background-image: url(/static_war/render/images/nav_expand_down.gif);
+}
+
+
+
+
+
+/**** Tab Curves ****/
+
+#navigation .rtop, .rbottom{display:block}
+#navigation .r1,
+#navigation .r2,
+#navigation .r3,
+#navigation .r4 {
+	display: block; 
+	height: 1px; 
+	overflow: hidden;
+	margin-right: 0px; /* in case REAL nifty corners turns up */	
+}
+#navigation .r1{margin-left: 4px}
+/* #navigation .r2{margin-left: 3px} */
+#navigation .r3{margin-left: 2px}
+#navigation .r4{margin-left: 1px}
+
+
+
+/* reverse the curve for children menu, and make it a nice gradient */
+#navigation .children .rtop .r1 {margin-left: -5px;}
+#navigation .children .rtop .r3 {margin-left: -2px;}
+#navigation .children .rtop .r4 {margin-left: -1px;}
+
+
+
+/**** Spacing ********/
+
+#outerNavigation {
+  border: 1px solid #cccccc;
+  border-left: none;
+  border-top: none;
+}
+
+#navigation { 
+  clear: right;
+  margin: 0px;
+  padding: 0px;
+  font-size: 90%;
+  margin-left: 10px;
+  margin-right: -1px; /* overflow onto the border */
+  
+  min-height: 240px;
+}
+
+#navigation li {
+  list-style-type: none;
+  margin: 0px;
+  margin: 4px 0px 11px 0px;
+  border-right: 1px solid #ccc;
+  height: 100%;
+}
+
+#navigation .submenu li {
+  height: auto; 
+}
+#navigation li.selected { 
+  border-right: 1px solid white;
+  height: 100%;
+}
+
+#navigation .submenu li.selected div {
+  padding-bottom: 2px;
+}
+
+#navigation .selected ul.submenu {
+  padding-bottom: 3px; 
+}
+
+#navigation li ul.submenu { padding: 0px; margin: 0px; }
+
+#navigation li ul.submenu li { 
+  line-height: 100%; 
+  padding: 4px 0px 1px 0px; 
+  margin: 0px;
+  border: none; 
+}
+
+#navigation li.selectedSection ul { padding-bottom: 1px; }
+
+
+/** list indents **/
+
+/* padding for text in rounded boxes */
+#navigation div {
+  padding-left: 4px;
+}
+
+/* regular indent */
+#navigation li ul.submenu li
+{ padding-left: 12px; }
+
+/* less indent for selected item so the text lines up */
+#navigation li ul.submenu li.selected
+{ padding-left: 6px; }
+
+/* less indent for children of the current page */
+#navigation li ul.submenu .children li 
+{ padding-left: 6px; }
+
+/* very little indent if the submenu is really at the top-level */
+#navigation li ul.submenu.faux li.selected
+{ padding-left: 2px; }
+
+/** end list indents **/
+
+
+
+div.children {
+  margin-top: 0px;
+  margin-left: 12px; 
+  padding-bottom: 4px;
+  
+  /* shift children left a pixel, so they
+    don't appear to dangle off the right */
+  position: relative;
+  right: 1px;
+}
+
+#navigation .submenu li.selected { position:relative; left:1px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***** MISC :) *****/
+
+#navigation li.selected  { 
+  border-right: 1px solid white;
+  height: 100%;
+}
+
+
+
+
+
+
+
+/**** Colours (worth customising) ****/
+
+
+/* border */
+#outerNavigation 
+{ border-color: #cccccc; }
+
+/* main background */
+#outerNavigation, .navigationBackground 
+{ background-color: #ECEFF6; }
+
+
+/* section tab */
+#navigation .rtop *,
+#navigation .rbottom *,
+#navigation div
+{ background-color: #D4DBE7; }
+
+/* current section */
+#navigation li.selectedSection div,
+#navigation li.selectedSection .rtop *,
+#navigation li.selectedSection .rbottom *,
+#navigation li.selectedSection ul
+{ background-color: #B2BDD0; }
+
+/* selected page */
+#navigation .submenu li.selected div, 
+#navigation .submenu li.selected .rtop *,
+#navigation .submenu li.selected .rbottom *,
+ul#navigation li.selectedSection.selected div, 
+ul#navigation li.selectedSection.selected .rtop *,
+ul#navigation li.selectedSection.selected .rbottom *
+{ background-color: white; }
+
+/* selected page text (not a link) */
+#navigation .selected div
+{ color: #293F60; }
+
+/* children */
+#navigation .submenu li.selected div.children 
+{ background: none; }
+#navigation .submenu li.selected div.children .rtop *,
+#navigation .submenu li.selected div.children .rbottom *,
+#navigation .submenu li.selected div.children ul
+{ background: #D4DBE7; }
+
+
+
+
+
+
+
+
+
+/**** Links ****/
+
+#navigation li a:link, 
+#navigation li a:visited 
+{ text-decoration: none; }
+
+/* section colour */
+#navigation li a:link, 
+#navigation li a:visited 
+{ color: #293F60; }
+
+/* selected section */
+#navigation .selectedSection a:link,
+#navigation .selectedSection a:visited
+{ color: #293F60; }
+
+/* page children */
+#navigation .children a:link,
+#navigation .children a:visited
+{ color: #293F60; }
+
+#main #navigation a:visited:hover, 
+#main #navigation a:link:hover { 
+  color: #3366CC; 
+  text-decoration: underline; 
+}
+
+
+
+
+
+
+/**** Handles and Curve Images ****/
+
+#navigationHandle {
+  width:16px;
+  height: 11px;
+  float: right;
+  position:relative;
+  bottom: 4px;
+  overflow: hidden;
+  background: url(/static_war/render/images/nav_resizer.gif);
+  margin-bottom: 0px;
+  cursor: w-resize;
+  clear: both;
+  
+  /* hide by default, show only if we have javascript */
+  visibility: hidden;
+}
+
+#navigationCorner {
+  background: url(/static_war/render/images/navigation_br.gif) bottom right no-repeat;
+  height: 40px;
+  position: relative;
+  top: 1px;
+  left: 1px;
+  
+  clear: left;
+}
+
+/*
+  This is no longer for the minimum height stuff, but is now
+  in here just to trigger IE6 to keep rendering the top bit of the
+  navigation background, even when scrolling. [SBTWO-1274]
+*/
+#navigationMinHeight {
+  display: block;
+  height: 1px;
+  overflow: hidden;
+  width: 120px;
+}
+
+#navigationTopCorner {
+  background-image: url(/static_war/render/images/navigation_tr.gif);
+  background-position: top right;
+  background-repeat: no-repeat;
+  height: 22px;
+  width: 22px;
+  float: right;
+  position: relative;
+  left: 22px;
+}
+
+
+img.padlock {
+  margin-left: 4px;
+  height: 11px;
+  width: 8px;
+  background: url(/static_war/render/images/padlock.png) top left no-repeat;
+  position: relative;
+  top: 2px;
+  
+  opacity: 0.7;
+  -moz-opacity: 0.7;
+  filter:alpha(opacity=70);
+}
+
+
+
+/**** Small print ****/
+
+#leftContent #leftUtility { font-size: 9px;  color: #999; margin: 0px 10px 10px 10px; padding-top: 30px}
+#leftContent #leftUtility a, #leftContent .smallprint a:visited { color: #999; }
+#leftContent #leftUtility a:hover { color: #666; }
+

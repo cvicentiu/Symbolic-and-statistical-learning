@@ -1,0 +1,74 @@
+<HTML>
+<HEAD>
+  <TITLE>Dieter Jaksch Theory Group</TITLE>
+  <!-- Ensure all frame links load the entire page. -->
+  <BASE TARGET="_top">  
+</HEAD>
+<STYLE>
+  SPAN.headertext {font: 8pt "Arial";color:black;font-weight:bold;text-align:right;vertical-align:top}
+  TD.filler {background:rgb(0,0,102)}
+  A.link:link {color:rgb(0,0,102);text-decoration:none;border-style:none}
+  A.link:visited {color:rgb(0,0,102);text-decoration:none;border-style:none}
+  A.link:hover {color:rgb(255,255,255);text-decoration:none;border-style:none}
+</STYLE>
+<SCRIPT LANGUAGE="JAVASCRIPT" TYPE="TEXT/JAVASCRIPT">
+  <!-- 
+    // Neccessary Arrays for Date conversion :
+    dayName = new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+    monName = new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+    FormatStr = "<SPAN CLASS=headertext>";
+    now = new Date;
+
+    function Dwrite() {
+      // Handle the different postfixes for 1,2,3,..,21,..31 etc
+      if (eval(now.getDate()) > 20 && eval(now.getDate()) < 31) {
+        numdate = eval(now.getDate())-20;
+      }
+      else if (eval(now.getDate()) == 31) {
+        numdate = 1;
+      }
+      else {
+        numdate = eval(now.getDate());
+      }
+      // Write the appropriate prefix :
+      if (numdate == 1) {
+        document.write(FormatStr + dayName[now.getDay()] + ", " + monName[now.getMonth()] + " " + now.getDate() + "st");
+      }
+      else if (numdate == 2) {
+        document.write(FormatStr + dayName[now.getDay()] + ", " + monName[now.getMonth()] + " " + now.getDate() + "nd");
+      }
+      else if (numdate == 3) {
+        document.write(FormatStr + dayName[now.getDay()] + ", " + monName[now.getMonth()] + " " + now.getDate() + "rd");
+      }
+      else {
+        document.write(FormatStr + dayName[now.getDay()] + ", " + monName[now.getMonth()] + " " + now.getDate() + "th");
+      }
+    }
+
+  //-->
+</SCRIPT>
+<BODY BGCOLOR="#E5E5E5">
+ <TABLE WIDTH="800" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+  <TR>
+   <TD CLASS="filler" WIDTH="83" HEIGHT="100" ALIGN="RIGHT"><A CLASS="link" HREF="http://www.ox.ac.uk"><IMG BORDER="0" SRC="header_left.png"></A></TD>
+   <TD CLASS="filler" WIDTH="597" ALIGN="CENTER"><IMG BORDER="0" SRC="header_middle.png"></TD>
+   <TD CLASS="filler" WIDTH="120" ALIGN="LEFT"><A CLASS="link" HREF="http://www.physics.ox.ac.uk"><IMG BORDER="0" SRC="header_right.png"></A></TD>
+  </TR>
+ </TABLE>
+ <TABLE WIDTH="800" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+  <TR>
+   <TD>
+    &nbsp&nbsp <SPAN CLASS="headertext">Clarendon Laboratory, University of Oxford |</SPAN>
+   </TD>
+   <TD ALIGN="RIGHT"> 
+    <SPAN CLASS="headertext">|</SPAN>
+    <SCRIPT LANGUAGE="JAVASCRIPT" TYPE="TEXT/JAVASCRIPT">
+     <!-- 
+      Dwrite();
+     //-->
+    </SCRIPT>&nbsp&nbsp&nbsp&nbsp 
+   </TD>
+  </TR>
+ </TABLE>
+</BODY>
+</HTML>

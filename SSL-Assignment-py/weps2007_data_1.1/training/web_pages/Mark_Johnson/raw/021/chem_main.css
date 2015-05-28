@@ -1,0 +1,319 @@
+/* Styles for Yale Chemistry  
+   see "import" style sheet for adjustments for newer browsers
+   CSS styles by Victor Velt <victor.velt@yale.edu>, WDD 
+   Web Design + Development, Yale School of Medicine
+   8-11-04, version 1 (VV)
+============================================================= */
+
+body { background-color: #FFFFFF; margin: 0px; padding: 0px;}
+
+a { color: #0033CC; text-decoration: underline;}
+a:hover { color: #390; text-decoration: underline;}
+a:active { color: #F00;}
+
+
+img.block { display: block;} /* apply to sliced images for Gecko browsers */
+
+td.vertical-rule {  /* makes printable line going down table column */
+border-left: 1px solid #339;
+}
+
+/* Body Fonts ------------------------------------------- */
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote, td, .info { 
+font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h1 {
+font-size: 20px;
+font-weight: bold;
+color: #039;
+line-height: 0.9em;	/* limits amount of line spacing */
+margin-top: 0.1em;	/* fixes extra top space in Gecko browsers */
+}
+
+h2 {
+font-size: 19px;
+font-weight: bold;
+color: #039;
+line-height: 0.9em;
+margin-top: 0.1em;
+}
+
+h3 {
+font-size: 18px;
+font-weight: bold;
+color: #039;
+line-height: 0.9em;
+margin-top: 0.1em;
+margin-bottom: -0.8em;
+}
+
+h4 {
+font-size: 16px;
+font-weight: bold;
+color: #000;
+line-height: 0.9em;
+margin-top: 0.1em;
+margin-bottom: -0.8em;
+}
+
+h5 { 
+font-size: 14px; 
+font-weight: bold; 
+color: #000;
+line-height: 0.9em;
+margin-top: 0.1em;
+margin-bottom: -0.8em;
+}
+
+h6 { 
+font-size: 14px; 
+font-weight: bold; 
+color: #000;
+line-height: 0.9em;
+margin-top: 0.1em;
+margin-bottom: -0.2em;
+}
+
+blockquote, p, ul, ol {
+font-size: 14px;
+line-height: 1.3em;
+color: #000;
+}
+
+ul { list-style-type: square;}
+
+td { 	/* default small type size for table cells with data */
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 11px;
+line-height: normal;
+color: #000;
+}
+
+td.bullet { 	/* default larger type size for table cell square bullets */
+font-family: Georgia, "Times New Roman", Times, serif;
+font-size: 20px;
+line-height: normal;
+color: #000;
+}
+
+
+<!--					/* special styles just for the faculty table */
+#faculty td {			/* puts a gray line under each row */
+border-bottom: 1px solid #ccc;
+}
+
+#faculty td.bullet {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 20px;
+	line-height: normal;
+	color: #000;
+	}
+-->
+
+.info {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 10px;
+line-height: 14px;
+color: #666;
+}
+
+p.breadcrumb {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 9px;
+color: #4D4D4D;
+line-height: normal;
+margin-bottom: 0.8em;
+}
+
+div.fac-breadcrumb {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 9px;
+color: #4D4D4D;
+line-height: 16px;
+}
+
+p.news {
+font-family: Georgia, "Times New Roman", Times, serif;
+font-size: 12px;
+line-height: 16px;
+margin-bottom: -0.5em;
+}
+
+.blue {
+color:#339;
+}
+
+/* top right global links -------------------------------------- */
+
+#global-chem td.rule {
+border-right: 2px solid #9F6;
+}
+
+#global-chem a {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 11px; 
+font-weight: bold;
+text-decoration: none;
+color: #FFF;
+padding: 0px 10px;
+}
+
+#global-chem a:hover {
+text-decoration: underline;
+color: #DDF;
+}
+
+#global-chem a:active {
+color: #9F9;
+}
+
+/* ------------------ */
+
+#global-grad td.rule {
+border-right: 2px solid #390;
+}
+
+#global-grad a {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 11px; 
+font-weight: bold;
+text-decoration: none;
+color: #339;
+padding: 0px 10px;
+}
+
+#global-grad a:hover {
+text-decoration: underline;
+color: #933;
+}
+
+#global-grad a:active {
+color: #F00;
+}
+
+
+/* left side nav menu -------------------------------------- */
+
+#menu {
+font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#menu a {
+color: #000;
+text-decoration: none;
+}
+
+#menu a:hover {
+text-decoration: underline;
+color: #390;
+}
+
+#menu a:active { color: #F00;}
+
+#menu h6 {
+font-size: 14px;
+line-height: 17px;
+font-weight: bold;
+margin: 0 0 -0.3em 0;
+}
+
+#menu p {
+font-size: 14px;
+line-height: normal;
+margin-bottom: -0.3em;
+}
+
+#menu p:first-letter {
+color: #D9E0FE;
+font-weight: bold;
+}
+
+#menu p.on {
+color: #339;
+font-weight: bold;
+}
+
+#menu .on a {
+color: #339;
+}
+
+#menu p.on:first-letter {
+color: #339;
+font-weight: bold;
+}
+
+#menu p.norm:first-letter {
+color: #000;
+}
+
+
+/* search box -------------------------------------- */
+
+#search {
+font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#search input {			/* for all browsers */
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 11px;
+color: #000;
+}
+
+
+/* faculty info column -------------------------------------- */
+
+#fac-info {
+margin-top: 15px;
+}
+
+#fac-info p {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 10px;
+line-height: 14px;
+color: #000;
+margin-top: 0.5em;
+}
+
+/* ------------------------------------------------------------------ */
+
+.horizrule {	/* use between faculty bio tables */
+width: 100%; 
+border: #CCCCCC solid; 
+border-width: 0px 0px 2px 0px;
+margin-top: -0.2ems;
+margin-bottom: 1.1ems;
+}
+
+/* ------------------------------------------------------------------ */
+
+/* footer -------------------------------------- */
+.date {
+padding-top: 10px;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 10px;
+color: #333333;
+}
+
+.footer {
+padding-top: 10px;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 10px;
+color: #FFF;
+}
+
+.footer a {
+text-decoration: none;
+color: #FFF;
+}
+
+.footer a:hover {
+text-decoration: underline;
+color: #DDF;
+}
+
+.footer a:active {
+color: #9F9;
+}
+

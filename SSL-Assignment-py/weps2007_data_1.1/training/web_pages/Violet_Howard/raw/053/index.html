@@ -1,0 +1,196 @@
+<HTML>
+<HEAD>
+<SCRIPT LANGUAGE = "JavaScript">
+
+<!-- 
+
+//      - - - - - - - - Get Decoded Value of Cookie - - - - - - - -      
+
+
+function getCookieVal (offset) {
+        var endstr = document.cookie.indexOf (";", offset);
+               if (endstr == -1)
+               endstr = document.cookie.length;
+        return unescape(document.cookie.substring(offset, endstr));
+        }
+
+
+//      - - - - - - - - Get Value of Cookie - - - - - - - -      
+
+
+function GetCookie (name) {
+        var arg = name + "=";
+        var alen = arg.length;
+        var clen = document.cookie.length;
+        var i = 0;
+        while (i < clen) {
+        var j = i + alen;
+                if (document.cookie.substring(i, j) == arg)
+                return getCookieVal (j);
+        i = document.cookie.indexOf(" ", i) + 1;
+                if (i == 0) break; 
+        }
+
+return null;
+}
+
+
+//      - - - - - - - - Set Value of Cookie - - - - - - - -      
+
+function SetCookie (name, value) {
+        var argv = SetCookie.arguments;
+        var argc = SetCookie.arguments.length;
+
+        var expires = (argc > 2) ? argv[2] : null;
+       var path = (argc > 3) ? argv[3] : null;
+        var domain = (argc > 4) ? argv[4] : null;
+        var secure = (argc > 5) ? argv[5] : false;
+        document.cookie = name + "=" + escape (value) +
+        ((expires == null) ? "" : ("; expires=" + expires.toGMTString())) +
+        ((path == null) ? "" : ("; path=" + path)) +
+        ((domain == null) ? "" : ("; domain=" + domain)) +
+        ((secure == true) ? "; secure" : "");
+}
+
+
+//      - - - - - - - - SmartCart(tm) Shopping Cart System JavaScript - Bizcom International 1995-2002 - - - - - - - -      
+
+var cookiepath = "/lifeisamovie";
+var custid = ""+GetCookie("custid")+"";
+var cartstatus = ""+GetCookie("cartstatus")+"";
+
+if (cartstatus != "temp") cartstatus = "";
+
+if ((custid == null) || (custid == "null")) {
+                SetCookie("custid","734766.7514", null,cookiepath);
+                SetCookie("cartstatus","temp", null,cookiepath);
+                SetCookie("auth","ff5c40668687784e6523a17d99006cee", null,cookiepath);
+                var custid = ""+GetCookie("custid")+"";
+                var cartstatus = ""+GetCookie("cartstatus")+"";
+}
+
+
+    browserName = navigator.appName; 
+    	browserVer = parseInt(navigator.appVersion); 
+    
+         if ((browserName == "Netscape" && browserVer >= 3) || (browserName == "Microsoft Internet Explorer" && browserVer >= 4)) version = "n3";
+         else version = "n2";
+
+function grab_account() {
+        if((custid) && (GetCookie("cartstatus") == null))
+        document.write("<p class=inform align=right>Account: <a href=http://www.smartcart.com/lifeisamovie/members/"+custid+"/index.html>"+GetCookie('custid')+"</a></p>");
+}
+
+
+function confirm() {  
+ }	
+
+function pricing() {
+
+	if (version == "n3") {
+
+	ap = document.item_form.avail.selectedIndex;
+
+
+
+	} // end of if n3 statement
+
+} // end of pricing function
+
+function which_browser() {
+
+ document.write('<input type=hidden name=avail value="oneitemonly::0.7::::606f57336ba6aebd14e279b07bc5e6bb">'); 
+ document.write('<td valign=top><font class="small"><b>PRICE:</b></font><br><font size=-1>$14.99<input type=hidden name=price value="14.99" size=7></font></td>'); 
+
+
+}
+
+        if(GetCookie("custid") == null) { 
+// SetCookie("test","pass"); 
+//	   if (GetCookie('test') == null) alert('You do not have your "cookies" enabled. You need to have a cookie compatible browser to shop our site. To fix this you need to go to your preferences and enable your browser to "accept all cookies", then reload/refresh this entire frameset. This message will not appear when your browser\'s settings are set correctly.\n\nInternet Explorer 6 Users: If you are seeing this message you must click on the privacy alert icon in your task bar, below. A pop-up window will come up. Then double click on any of the www.smartcart.com lines, then select "Always allow this site to use cookies". Then click OK. You need to do this before you begin shopping so you do not loose any items in your cart.');	
+        }
+
+// -->
+
+</SCRIPT>
+<title>Item #: 100226-01 - CHALLENGE, THE </title>
+
+<style type="text/css">
+.small { font-size: 8pt; }
+</style>
+<LINK REL=STYLESHEET TYPE="text/css" HREF="master.css" MEDIA="screen" >
+
+
+</head>
+<body>
+<script language=javascript>
+grab_account();</script>
+<form method=post name=item_form action=http://www.smartcart.com/lifeisamovie/cgi/add2cart.cgi>
+<noscript><br><center><table width=80% border=1 cellpadding=5 cellspacing=1><tr>
+<td><img src="alert.gif" align=left hspace=5>
+You must have a JavaScript compatible browser to shop our site.  If you 
+are using a JavaScript compatible browser, then you must have your JavaScript enabled.  
+You will need to go to your browser's
+preferences and select to "Enable JavaScript", then simply reload/refresh this entire frameset.
+This message will not appear when your browser's settings are set correctly.   
+If you need to obtain a JavaScript compatible 
+browser, you can <a href=http://www.netscape.com/download>download one for free</a>.</td></tr></table></center><br>
+</noscript>
+<!-- Begin Item -->
+<center><table border=0 cellspacing=0 cellpadding=0 width=90%><tr><td><center>
+<img class=large  src="http://www.lifeisamovie.com/images/100226-01.jpg" align=RIGHT vspace=3 hspace=5>
+
+
+<center>&nbsp;<p>
+<table width=330><tr><td colspan=2><FONT FACE="arial" SIZE=4><B>CHALLENGE, THE (<a href=http://www.smartcart.com/lifeisamovie/cgi/search.cgi?terms=1938&category=1938>1938</a>)</b></font></td></tr>
+<tr><td colspan=2 align=right><FONT FACE="arial" color=480091 SIZE=4>VHS</font></td></tr>
+<tr><td colspan=2><hr size=1 noshade width=330></td></tr>
+<tr><td><FONT FACE="arial" SIZE=-1><B>item# 100226-01</b></td>
+<td align=right><FONT FACE="arial" SIZE=-1><B>price: $14.99</b></font></td></tr>
+
+<tr><td colspan=2 align=left><spacer type=horizontal size=200><br>
+<FONT FACE="arial" SIZE=-1>
+<a href="display.cgi%3Fitem_num=100226-01.1.html#cart"><img src="cart.gif" border=0> Click here to order</a><p>A guide endeavors to prove that a climber didn't kill his companions as of two expeditions race to be the first to conquer the Matterhorn<p>Black and White, 90 minutes VHS  1938 <!-- -1930- --><p><br><b>Starring:</b> <a href="http://www.smartcart.com/lifeisamovie/cgi/search.cgi?terms3=Robert+Douglas">Robert Douglas</a>, <a href="http://www.smartcart.com/lifeisamovie/cgi/search.cgi?terms3=Luis+Trenker">Luis Trenker</a>, <a href="http://www.smartcart.com/lifeisamovie/cgi/search.cgi?terms3=Robert+Douglas">Robert Douglas</a>, <a href="http://www.smartcart.com/lifeisamovie/cgi/search.cgi?terms3=Joan+Gardner">Joan Gardner</a>, <a href="http://www.smartcart.com/lifeisamovie/cgi/search.cgi?terms3=Mary+Clare">Mary Clare</a>, <a href="http://www.smartcart.com/lifeisamovie/cgi/search.cgi?terms3=Frank+Birch">Frank Birch</a>, <a href="http://www.smartcart.com/lifeisamovie/cgi/search.cgi?terms3=Geoffrey+Wardwell">Geoffrey Wardwell</a>, <a href="http://www.smartcart.com/lifeisamovie/cgi/search.cgi?terms3=Moran+Caplat">Moran Caplat</a>, <a href="http://www.smartcart.com/lifeisamovie/cgi/search.cgi?terms3=Lyonel+Watts">Lyonel Watts</a>, <a href="http://www.smartcart.com/lifeisamovie/cgi/search.cgi?terms3=Fred+Groves">Fred Groves</a>, <a href="http://www.smartcart.com/lifeisamovie/cgi/search.cgi?terms3=Laurence+Baskcomb">Laurence Baskcomb</a>, <a href="http://www.smartcart.com/lifeisamovie/cgi/search.cgi?terms3=Ralph+Truman">Ralph Truman</a>, <a href="http://www.smartcart.com/lifeisamovie/cgi/search.cgi?terms3=Reginald+Jarman">Reginald Jarman</a>, <a href="http://www.smartcart.com/lifeisamovie/cgi/search.cgi?terms3=Tony+Sympson">Tony Sympson</a>, <a href="http://www.smartcart.com/lifeisamovie/cgi/search.cgi?terms3=Cyril+Smith">Cyril Smith</a>, <a href="http://www.smartcart.com/lifeisamovie/cgi/search.cgi?terms3=Lloyd+Pearson">Lloyd Pearson</a>, <a href="http://www.smartcart.com/lifeisamovie/cgi/search.cgi?terms3=Violet+Howard">Violet Howard</a>, <a href="http://www.smartcart.com/lifeisamovie/cgi/search.cgi?terms3=Babita+Soren">Babita Soren</a>, <a href="http://www.smartcart.com/lifeisamovie/cgi/search.cgi?terms3=Luis+Gerold">Luis Gerold</a>, <a href="http://www.smartcart.com/lifeisamovie/cgi/search.cgi?terms3=Max+Holzbo">Max Holzbo</a><p><b>Director:</b> <a href="http://www.smartcart.com/lifeisamovie/cgi/search.cgi?terms3=Milton+Rosmer">Milton Rosmer</a><p><b>Vendor:</b> TVI<br><b>Medium:</b> Feature Film<br><b>Our Price:</b> $14.99<br><b>Package:</b> Printed Sleeve
+
+
+
+<p>
+<center><font color=red face=arial size=-1><b>We ship worldwide.  All tapes are in the NTSC VHS format used in the United
+States.  No tapes are available in the PAL format.</b></font></center>
+<p>
+</td></tr></table>
+</center>
+<!-- IMAGE DOWN -->
+
+<input type=hidden name=category value="A_-_Z::C Action-Adventure::Man_against_Nature Foreign_Films::Great_Britain">
+
+<input type=hidden name=add_ship value="">
+
+<input type=hidden name=onSale value="">
+<input type=hidden name=taxable value="">
+<input type=hidden name=item_num value="100226-01">
+<input type=hidden name=item_name value="CHALLENGE, THE">
+<input type=hidden name=action value="add">
+
+<a name=cart>
+<center><table border=0 cellspacing=10 cellpadding=1>
+<tr>
+<td valign=top>
+
+<script language=javascript>
+which_browser();
+</script>
+
+<td valign=top><font class="small"><b>QTY:</b></font><br>
+<input name="quant" maxlength=5 size=1 value="1" ></td>
+<td valign=bottom>
+<input type="image" src="addcart.gif" border=0 alt="Click to add to cart"></td></tr></table></center>
+<input type=hidden name=which>
+</form>
+<center><table width=75%>
+<tr><td class=right><a href=javascript:history.back()>Continue Shopping</a>
+</td></tr></table></center>
+<p>
+
+</body>
+</html>

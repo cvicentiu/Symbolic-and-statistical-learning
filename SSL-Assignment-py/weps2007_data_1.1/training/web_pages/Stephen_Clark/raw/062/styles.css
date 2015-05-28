@@ -1,0 +1,93 @@
+/* styles.css from Reston for homepage redesign 9/2002 */
+
+a.link01:link {text-decoration: none;}
+a.link01:visited {text-decoration: none;}
+a.link01:active {text-decoration: underline;}
+a.link01:hover {text-decoration: underline;}
+
+a.link02:link {text-decoration: none;}
+a.link02:visited {text-decoration: none;}
+a.link02:active {text-decoration: underline;}
+a.link02:hover {text-decoration: underline;}
+
+a.link03:link {text-decoration: underline;}
+a.link03:visited {text-decoration: underline;}
+a.link03:active {text-decoration: none;}
+a.link03:hover {text-decoration: none;}
+
+.head01 {font-weight: bold; color: #FFFFFF;font-family: Verdana; font-size: 11px;}
+.head02 {font-weight: bold; color: #990000;font-family: Verdana; font-size: 12px;}
+
+.copytxt01 {color: #000000;font-family: Verdana; font-size: 11px;}
+.disctxt01 {color: #7E7E7E;font-family: Verdana; font-size: 11px;}
+
+.link01 {color: #000000;font-family: Verdana; font-size: 11px;}
+.link02 {font-weight: bold; color: #000000;font-family: Verdana; font-size: 11px;}
+.link03 {font-weight: bold; color: #28287E;font-family: Verdana; font-size: 11px;}
+
+.search {font-family: Verdana; font-size: 10px; color: #000000;}
+
+/* added for new left nav on tier3 9/2002 by cbiesemeyer */
+
+.lftnavtt3 {
+	font-family: "Times New Roman", serif;
+	font-size: 12px;
+	color: #000000;
+	font-weight: bold;
+	left-margin: 5%;
+	text-decoration: none;
+	}
+.lftnavbtn {
+	font-family: Verdana;
+	font-size: 10px;
+	color: #ffffff;
+	font-weight: bold;
+	left-margin: 5px;
+	text-decoration: none;
+	}
+.lftnavabove {
+	font-family: Verdana;
+	font-size: 10px;
+	color: #000000;
+	font-weight: bold;
+	left-margin: 5%;
+	}
+.lftnavbelow {
+	font-family: Verdana;
+	font-size: 10px;
+	color: #000000;
+	font-weight: normal;
+	}
+.t2links {
+	font-family: Verdana, sans-serif;
+	font-size: 11px;
+	color: #0000ff;
+	font-weight: normal;
+	}	
+a.lftnavabove:link, a.lftnavabove:visited, a.lftnavbelow:link, a.lftnavbelow:visited,
+a.t2links:visited, a.t2links:link {
+	text-decoration: none;
+	}
+a.lftnavabove:active, a.lftnavabove:hover, a.lftnavbelow:active, a.lftnavbelow:hover,
+a.t2links:active, a.t2links:hover {
+	text-decoration: underline;
+	}
+
+td#secytravels a:hover, td#secytravels a:active 
+	{text-decoration: underline;
+	font-family: Arial, sans-serif;
+	font-size: 13px;
+	color: #ffffff;
+	font-weight: bold;}
+td#secytravels a:link, td#secytravels a:visited 
+	{text-decoration: underline;
+	font-family: Arial, sans-serif;
+	font-size: 13px;
+	color: #ffffff;
+	font-weight: bold;}
+
+
+a.nohref {
+	color: #000000;
+	text-decoration: none;
+	}

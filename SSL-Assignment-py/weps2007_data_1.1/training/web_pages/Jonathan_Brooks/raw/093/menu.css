@@ -1,0 +1,17 @@
+/* default styles - do not edit */
+.clCMEvent{position:absolute; width:99%; height:99%; clip:rect(0,100%,100%,0); left:0; top:0; visibility:visible}
+.clCMAbs{position:absolute; visibility:hidden; left:0; top:0; line-height: normal}
+/* default styles - end */
+  
+/*Style for the background-bar*/
+.clBar{position:absolute; width:10; height:10; visibility:hidden}
+
+/*Styles for level 0*/
+.clLevel0,.clLevel0over{position:absolute}
+.clLevel0over{cursor:pointer; cursor:hand}
+.clLevel0border{position:absolute; visibility:hidden}
+
+/*Styles for level 1*/
+.clLevel1, .clLevel1over{position:absolute; padding:0px}
+.clLevel1over{cursor:pointer; cursor:hand}
+.clLevel1border{position:absolute; z-index:500; visibility:hidden}

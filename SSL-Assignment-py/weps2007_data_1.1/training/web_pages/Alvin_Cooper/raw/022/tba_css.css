@@ -1,0 +1,291 @@
+/*************  CSS for main table on TechBoston main site 
+*************/
+
+
+td.menuh
+{
+border-right: 1px solid #000066;
+vertical-align: top;
+padding: 0px 0px;
+}
+
+td.mainh 
+{
+padding: 10px 35px;
+vertical-align: top
+}
+
+td.eventsh
+{
+vertical-align: top;
+padding: 0px 0px
+}
+td.quote
+{
+font-size: 10 pt;
+color: #000000;
+vertical-align: top;
+padding: 5px 5px
+}
+td.graphicsh
+{
+vertical-align: bottom;
+padding: 0px 0px
+}
+
+td.footerh
+{
+padding: 10px 35px;
+vertical-align: top;
+text-align: center
+}
+
+/*************  CSS for the Main Area Links *****************/
+/* Background color is in the page. */
+
+
+a:link
+{
+font-family: "Tahoma, Arial, Courier, default";
+font-size: 10 pt;
+color: #0000ff;
+text-decoration: underline;
+
+}
+
+a:visited
+{
+font-family: "Tahoma, Arial, Courier, default";
+font-size: 10 pt;
+color: #0000ff;
+text-decoration: underline;
+
+}
+
+a:hover
+{
+font-family: "Tahoma, Arial, Courier, default";
+font-size: 10 pt;
+color: #0000ff;
+text-decoration: none;
+
+}
+
+a:active
+{
+font-family: "Tahoma, Arial, Courier, default";
+font-size: 10 pt;
+color: #0000ff;
+text-decoration: underline;
+
+}
+
+/*************  CSS for the Main Area Text *****************/
+/* Background color is in the page. */
+
+
+.headertext
+{
+font-family: "Tahoma, Arial, Courier, default";
+font-size: 12 pt;
+color: #000066;
+text-decoration: none;
+font-weight: 600
+}
+
+
+/*************  CSS for the menu items  *****************/
+/* Background color is in the page. */
+
+.menucell
+{
+
+padding: 0px 5px;
+vertical-align: center;
+height: 20px;
+border-bottom: 1px solid #FFFFFF
+}
+
+a.menutext:link
+{
+font-family: "Tahoma, Arial, Courier, default";
+font-size: 10 pt;
+color: #FFFFFF;
+text-decoration: none;
+font-weight: 600
+}
+
+a.menutext:visited
+{
+font-family: "Tahoma, Arial, Courier, default";
+font-size: 10 pt;
+color: #FFFFFF;
+text-decoration: none;
+font-weight: 600
+}
+
+a.menutext:hover
+{
+font-family: "Tahoma, Arial, Courier, default";
+font-size: 10 pt;
+color: #FFFFFF;
+text-decoration: underline;
+font-weight: 600
+}
+
+a.menutext:active
+{
+font-family: "Tahoma, Arial, Courier, default";
+font-size: 10 pt;
+color: #FFFFFF;
+text-decoration: none;
+font-weight: 600
+}
+/*************  CSS for the submenu items *****************/
+/* Background color is in the page. */
+
+.submenucell
+{
+padding: 0px 5px;
+vertical-align: center;
+height: 20px;
+border-bottom: 1px solid #000066
+}
+
+a.submenutext:link
+{
+font-family: "Tahoma, Arial, Courier, default";
+font-size: 8 pt;
+color: #000066;
+text-decoration: none;
+font-weight: 600
+}
+
+a.submenutext:visited
+{
+font-family: "Tahoma, Arial, Courier, default";
+font-size: 8 pt;
+color: #000066;
+text-decoration: none;
+font-weight: 600
+}
+
+a.submenutext:hover
+{
+font-family: "Tahoma, Arial, Courier, default";
+font-size: 8 pt;
+color: #000066;
+text-decoration: underline;
+font-weight: 600
+}
+
+a.submenutext:active
+{
+font-family: "Tahoma, Arial, Courier, default";
+font-size: 8 pt;
+color: #000066;
+text-decoration: none;
+font-weight: 600
+}
+
+/********  News and Events Box styles  *************/
+
+/*  For title bar.  */
+.newshead
+{
+padding: 0px 5px;
+vertical-align: center;
+height: 20px;
+border-right: 1px solid #000066;
+border-left: 1px solid #000066
+}
+
+
+
+/*  For text, the same font and color as the p tag, but smaller. */
+.newstextbox
+{
+padding: 5px 5px;
+border: 1px solid #000066
+}
+
+.newstext
+{
+font-family: "Tahoma, Arial, Courier, default";
+color: "#960000";
+font-size: 9 pt
+}
+
+
+/********** Main text area *************/
+
+p
+{
+font-family: "Tahoma, Arial, Courier, default";
+color: "#000066";
+font-size: 10 pt
+}
+
+/*********  Footer links and copyright ********/
+
+a.footer:link
+{
+font-family: "Tahoma, Arial, Courier, default";
+font-size: 9 pt;
+color: #960000;
+text-decoration: underline;
+font-weight: 600
+}
+
+a.footer:visited
+{
+font-family: "Tahoma, Arial, Courier, default";
+font-size: 9 pt;
+color: #960000;
+text-decoration: underline;
+font-weight: 600
+}
+
+a.footer:hover
+{
+font-family: "Tahoma, Arial, Courier, default";
+font-size: 9 pt;
+color: #960000;
+text-decoration: none;
+font-weight: 600
+}
+
+a.footer:active
+{
+font-family: "Tahoma, Arial, Courier, default";
+font-size: 9 pt;
+color: #960000;
+text-decoration: underline;
+font-weight: 600
+}
+
+.footertext
+{
+font-family: "Tahoma, Arial, Courier, default";
+color: "#960000";
+font-size: 9 pt;
+font-weight: 600
+}
+
+.copyright
+{
+font-family: "Tahoma, Arial, Courier, default";
+color: "#666666";
+font-size: 9 pt;
+}
+th.tabletext {
+	font-family: "Tahoma, Arial, Courier, default";
+	font-size: 9 pt;
+	color: #FFFFFF;
+}
+li {
+	font-family: "Tahoma, Arial, Courier, default";
+	color: "#000066";
+	font-size: 9 pt;
+	list-style-type: disc;
+}

@@ -1,0 +1,379 @@
+/*======= BANNER ELEMENTS ========= */
+
+#unilogo {
+	background: #4c70b7;
+	}
+	
+#title {
+	background: #4c70b7;
+	}
+	
+#bannerphoto {
+	background: #013299;	
+	}	
+
+#utilitylinks {
+	background: #013299;	
+	}
+
+#utilitylinks a {	
+	color: #ffffff;
+	}
+#searchbar {
+	background: #013299;	
+	}
+
+/*======== MAIN MENU ========*/
+
+#navigation ul a:hover {
+	background: #4c70b7;
+	color: #ffffff;
+	text-decoration: none;
+	}
+
+#navigation li.selected {
+	padding-left: 5px;
+	background: #013299;
+	color: #ffffff;
+}
+
+/*======== RIGHT HAND COLUMN ========*/
+
+#latest {	
+	background-color: #dddddd;
+	}
+	
+#latest p {
+	color: #000000;
+	}
+
+#latest h1 {
+	color: #000000;
+	clear: both;
+}
+
+#latest h2 {
+	color: #000000;
+}
+	
+#latest h3 {
+	color: #000000;
+}
+	
+#latest a {
+	color: #0000ee;
+}	
+
+#latest h2 {
+	border-top: 1px solid #cccccc;
+}
+
+#latest .focus {
+	border-top: 0px;
+}
+
+/*======== HOMEPAGE ========*/
+
+#mainpic {	
+	background-image: url("../images/home/panels/rotate.php");
+}
+
+#panes_container {
+	margin: 0px;
+	padding: 0px;
+}
+
+#panes {
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+}
+
+#panes h2, #panes p {
+	padding: 10px;
+	margin: 0px;
+}
+
+#panes h2 a, #panes p a {
+	text-decoration: none;
+	color: #000000;
+}
+
+#panes h2 a:hover, #panes p a:hover {
+	text-decoration: underline;
+	color: #0000cc;
+}
+
+#research_pane, #undergrad_pane, #postgrad_pane, #exec_pane {
+	width: 50%;
+	margin: 2px;
+	padding: 0px;
+}
+
+#undergrad_pane { border-bottom: 2px solid #d6a3ff; }
+#undergrad_pane h2 { background: #d6a3ff; }
+#undergrad_pane { background: #e4d2f3; }
+#postgrad_pane { border-bottom: 2px solid #ffa3ac; }
+#postgrad_pane h2 { background: #ffa3ac; }
+#postgrad_pane { background: #f9d7da; }
+#exec_pane { border-bottom: 2px solid #76e898; }
+#exec_pane h2 { background: #76e898; }
+#exec_pane { background: #c9e9d3; }
+#research_pane { border-bottom: 2px solid #a3afff; }
+#research_pane h2 { background: #a3afff; }
+#research_pane { background: #c8cef2; }
+
+#research_pane h2 a, #undergrad_pane h2 a, #postgrad_pane h2 a, #exec_pane h2 a {
+}
+
+/*======== TWEAKS FOR MAIN CONTENT ========*/
+
+#content img {
+	display: inline;
+}
+
+div.image {
+	border: 0px solid #000000;
+	background: #eeeeee;
+	padding: 5px;
+	margin: 5px;
+	text-align:center;
+	float:left;
+	clear:left;
+	max-width:260px;
+}
+
+div.image p{
+	padding: 0px;
+	margin: 0px;
+	font-weight: bold;
+    font-size: x-small;
+}
+
+p.alert {
+	color: #CC0000;
+}
+
+blockquote {
+	background: #efefff;
+	border: 1px solid #9999cb;	
+	padding:10px;
+}
+
+/*======== FORMS ========*/
+
+form fieldset {
+	clear: both;
+	border-color: #000000;
+	border-width: 1px 0px 0px 0px;
+	border-style: solid none none none;
+	padding: 10px;
+}
+
+form fieldset legend {
+	font-weight: bold;
+	color: #000000;
+}
+
+input, select, textarea {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 90%;
+	color: #000000;
+}
+
+textarea {
+	overflow: auto;
+}
+
+form fieldset fieldset {
+	clear: none;
+	border: 1px solid #999999;
+	width: 60%;
+	background: #f8f8ff;
+	margin: 10px 0px 10px 10px;
+	padding: 10px;
+}
+
+label.text {
+	display: block;
+	width: 150px;
+	float: left;
+	text-align: right;
+	margin: 0px 10px 10px 0px;
+}
+
+label.radio, label.checkbox {
+	margin: 0px 0px 10px 10px;
+}
+
+input.text {
+	width: 60%;
+}
+
+input.small_text {
+	width: 50px;
+}
+
+input.vsmall_text {
+	width: 30px;
+}
+
+textarea {
+	width: 60%;
+	height: 200px;
+}
+
+textarea.smaller{
+	width: 60%;
+	height: 80px;
+}
+
+input.radio, input.checkbox, input.button {
+	margin-left: 170px;
+}
+
+fieldset fieldset input.radio, fieldset fieldset input.checkbox {
+	margin-left: 0px;
+}
+
+form br {
+	clear: left;
+}
+
+span.input_group {
+	float:left;
+	margin-left: 3px;
+}
+
+/*======== PANELS ========*/
+#panel {
+	float: right;
+	clear: right;
+	border: 0px;
+	width: 202px;
+	margin: 20px 15px 20px 20px;
+	padding: 5px 5px 0px 5px;
+}
+
+#panel.bordered {
+	background: #efefff;
+	border: 1px solid #000000;	
+}
+
+#panel img{
+	border: 1px solid #000000;
+	margin: 0px 0px 5px 0px;
+	padding: 0px;
+}
+
+#panel p, #panel li, #panel td {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: x-small;
+}
+
+/*======== STAFF LISTS ========*/
+
+ul.stafflist {
+	list-style-type: none;
+	padding-left: 0px;
+	margin-left: 0px;
+}
+
+ul.stafflist li {
+	border-top: 1px solid #cccccc;
+	padding-left: 0px;
+	margin-left: 0px;
+	clear: both;
+}
+
+ul.stafflist li.noimage {
+	padding-left: 88px;
+}
+
+ul.stafflist li img{
+	float: left;
+	padding: 0px 10px 0px 0px;
+}
+
+ul.stafflist li p{
+	float: left;
+	padding: 5px;
+	margin: 0px;
+}
+
+/*======== ADMIN SECTION ========*/
+
+tr.odd {
+	background: #e0e3ef;
+}
+
+tr.even {
+	background: #f2f7ff;
+}
+
+p.error {
+	color: #CC0000;
+	font-weight: bold;
+}
+
+/*======== TAB BAR ========*/
+
+#tabBar {
+	background-color: #EEEEEE;
+	border-bottom-color: #003399; /* same colour as utilitylinks background */
+}
+
+#tabBar a {
+	border-color: #003399 #003399 #003399 #003399; /* same colour as utilitylinks background */
+	background-color: #4C70B7; /* same colour as title background */
+}
+
+#tabBar a:hover {
+	background-color: #003399; /* same colour as utilitylinks background */
+}
+
+#tabBar a.selected {
+	border-top-color: #003399; /* same colour as utilitylinks background */
+	border-right-color: #003399; /* same colour as utilitylinks background */
+	border-left-color: #003399; /* same colour as utilitylinks background */
+	color: #003399; /* same colour as utilitylinks background */
+}
+
+#tabBar a.selected:hover {
+	border-top-color: #003399; /* same colour as utilitylinks background */
+	border-right-color: #003399; /* same colour as utilitylinks background */
+	border-left-color: #003399; /* same colour as utilitylinks background */
+	color: #003399; /* same colour as utilitylinks background */	
+}
+
+/*======== MODULE TEMPLATE ========*/
+
+table.mod_template {
+	width: 90%;
+	border-collapse: collapse;
+}
+
+table.mod_template td {
+	border: 1px solid #000000;
+}
+
+table.mod_template td.header {
+	font-weight: bold;
+	text-transform: uppercase;
+	background-color: #f1f1f1;
+}
+
+/*======== PROGRAMME FACT FILE ======== */
+
+table.fact_file {
+	border-collapse: collapse;
+	background-color: #efefff;
+}
+
+table.fact_file td {
+	background-color: #efefff;
+}
+
+table.fact_file td.header {
+	font-weight: bold;
+}

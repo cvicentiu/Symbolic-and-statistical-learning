@@ -1,0 +1,609 @@
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>NS Library - Neil Clark</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<meta name="robots" content="noarchive" />
+
+<style media="all" type="text/css">
+   @import url(http://www.newstatesman.com/style/main.css);   
+</style>
+<!--[if IE]><link rel="stylesheet" type="text/css" href="http://www.newstatesman.com/style/ie.css" /><![endif]-->
+<link href="print.css" media="print" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="yui.js"></script>
+<script type="text/javascript" src="default.js"></script>
+<script type="text/javascript">
+
+function navTo(obj) {
+	var opt = document.getElementById(obj);
+	var loc = opt.options[opt.selectedIndex].value;
+	if(loc.length == 0) return false;
+	window.location = loc;
+
+	return false;
+}
+
+function validate() {
+	var frm = document.getElementById('pollform');
+	var valid = false;
+	
+	for(i=0;i<frm.length;i++) {
+		if (frm[i].checked) {
+			frm.submit();
+			valid = true;
+		}
+	}
+	if(valid != true) {
+		alert('Please select a poll option.');
+		return false;
+	} else {
+		return true;
+	}
+}
+
+function printable(url) {
+	var newwindow=window.open('print/'+url,'printable','resizable=yes,scrollbars=yes,height=450,width=600');
+	if (window.focus) {newwindow.focus()}
+	return false;
+}
+
+
+</script>
+</head>
+
+<body class="three-fixed generic">
+
+<div id="container-outer">
+
+<center><IFRAME BORDER='0' WIDTH='728' HEIGHT='90' VSPACE='0' HSPACE='0' SCROLLING='NO' frameborder="0" marginwidth="0" marginheight="0" SRC='http://ads.newstatesman.com/advert.php?ConsiderAction=HTML&SourceSection=M_NewStatesman&SourcePage=nslibrary'>
+<SCRIPT LANGUAGE='JavaScript' SRC='http://ads.newstatesman.com/advert.php?ConsiderAction=Javascript&SourceSection=M_NewStatesman&SourcePage=nslibrary'></SCRIPT><NOSCRIPT><A TARGET='_top' HREF='http://ads.newstatesman.com/advert.php?ConsiderAction=Adlink&SourceSection=M_NewStatesman&SourcePage=nslibrary'><IMG BORDER='0' SRC='http://ads.newstatesman.com/advert.php?SourceSection=M_NewStatesman&SourcePage=nslibrary'></A></NOSCRIPT></IFRAME></center>
+  
+ <div id="container-inner"> 
+   		<div class="topband">	 
+		<ul>
+			<li class="first"><a href="http://www.newstatesman.com/nscontactus.htm">Contact us</a></li>
+						<li><a href="http://www.newstatesman.com/nsabout.htm">About New Statesman</a></li>
+			<li><a href="http://www.newstatesman.com/nsmagadvertising.htm">Advertising</a></li>
+
+			<li><a href="http://www.newstatesman.com/sponsorship.htm">Sponsorship</a></li>		
+		</ul>
+
+		
+		<ul class="right">
+			<li class="first"><a href="http://www.newstatesman.com/register">Register</a></li>
+			<li><a href="http://www.newstatesman.com/login-page" id="login-link">Login</a></li>
+		</ul>
+	</div><!-- /.topband -->
+ 
+ 	
+<a href="http://www.newstatesman.com/"><img src="http://images.newstatesman.com/logos/new_statesman.gif" width="510" height="62" alt="New Statesman" id="logo" /></a>
+	
+  <div id="login-wrapper">
+<form action="http://www.newstatesman.com/script/user_process.php" id="login" method="POST">
+
+		<input type="hidden" name="action" value="login" />
+	<input type="hidden" name="redirect_url" value="http://www.newstatesman.com/" />
+	<fieldset>
+		<p>Registered user login:</p>			
+		<div><label for="username">Email</label><input type="text" id="username" name="username"/></div>
+		<div><label for="password">Password</label><input type="password" id="password" name="password"/></div>
+
+		<input type="image" src="http://images.newstatesman.com/buttons/login.gif" alt="Log in" class="submit" />			
+		<ul>
+
+			<li class="first"><a href="http://www.newstatesman.com/register">Only have a subscriber number?</a></li>
+			<li><a href="http://www.newstatesman.com/register/password-reminder">Forgotten password?</a></li>
+		</ul>
+	</fieldset>		
+</form>
+</div> 
+    <div id="breadcrumb">
+	<p>Return to: 						<a href="http://www.newstatesman.com/">Home</a> | 					<a href="http://www.newstatesman.com/archive">Archive</a>				</p>
+
+							
+	<form action="http://www.newstatesman.com/nslibrary" method="get" id="search">
+	      <fieldset>
+
+		    <label for="qs" class="hidden">Search</label>
+		    <input type="text" id="qs" name="qs" value="" />
+		    <input type="image" src="http://images.newstatesman.com/buttons/search.gif" alt="Search" />
+	      </fieldset>
+	</form>
+	
+  </div><!-- /#breadcrumb -->
+
+<!--
+if the writer is a columnist
+  <div id="breadcrumb">	
+	<p>Return to: <a href="/">Home</a> / <a href="index.html">Columnists</a> / <a href="column-index.html">Columnists & Columns</a></p>
+
+otherwise
+  <div id="breadcrumb">	
+	<p>Return to: <a href="/">Home</a> / <a href="index.html">Archive</a> / <a href="#">Writers ?</a></p>
+
+-->  
+  <div class="container-content-main">
+
+    <div class="content-main">
+	
+<h1>Archive</h1>
+
+
+
+
+<FONT COLOR='#000044' FACE='metabold, Verdana, arial, helvetica, sans' SIZE='-1'>
+Articles by <font color='AAAAAA'>»</font><font color='220088'>Neil Clark</font><font color='AAAAAA'>«</font> </FONT>
+<FONT COLOR='#000000' FACE='metabold, Verdana, arial, helvetica, sans' SIZE='-2'>
+Results 1 to 10 of 32.</FONT><br />
+<FONT COLOR='#000000' FACE='metabold, Verdana, arial, helvetica, sans' SIZE='-2'>
+</FONT>
+
+<table width='100%'>
+<tr><td>
+<FONT COLOR='#000000' FACE='metabold, Verdana, arial, helvetica, sans' SIZE='-2'>
+Results are <b>sorted by date</b> (oldest first).<br />
+			Sort options: <a href='http://www.newstatesman.com/nslibrary?w=Neil+Clark'>newest first</a> </FONT>
+</td>
+<tr><td align='center'>
+<FONT COLOR='#000000' FACE='metabold, Verdana, arial, helvetica, sans' SIZE='-2'>
+	<a href='http://www.newstatesman.com/nslibrary/article_search'>Advanced Search</a> |
+	<a href='http://www.newstatesman.com/writers'>Search Writers</a> |
+	<a href='http://www.newstatesman.com/nslibrary/issue_search'>Back Issues</a> |
+	<a href='http://www.newstatesman.com/nslibrary/about'>About</a> |
+	<a href='http://www.newstatesman.com/nslibrary/tips'>Tips</a>
+</FONT>
+</td></tr>
+</table>
+
+<p>
+<table width='100%'><tr><td><FONT COLOR='#000000' FACE='metabold, Verdana, arial, helvetica, sans' SIZE='-1'> </FONT></td>
+
+<td width='100%' align='center' valign='bottom'>
+	<FORM ACTION='http://www.newstatesman.com/nslibrary' METHOD='GET' ENCTYPE='application/x-www-form-urlencoded'>
+	<table><tr>
+	<td><div class='nsverdanared11' align='center'>Quick Search &raquo; </div></td>
+	<td><INPUT TYPE='TEXT' NAME='qs' VALUE="Neil Clark"></td>
+	<td><input type='image' src='http://www.newstatesman.com/images/quick_nav_button.gif' width='20' height='20' alt='search'></td></tr></table>
+	</FORM>
+</td>
+<td align='right'><FONT COLOR='#000000' FACE='metabold, Verdana, arial, helvetica, sans' SIZE='-1'><a href='http://www.newstatesman.com/nslibrary?s=11&amp;w=Neil+Clark&amp;sb=Oldest'>Next</a></FONT></td></tr></table>
+
+</p>
+<br />
+
+<FONT COLOR='#000000' FACE='metabold, Verdana, arial, helvetica, sans' SIZE='2'><B>
+<A HREF='http://www.newstatesman.com/200001240026'>Plenty of mobile phones, but where's the good life?</A></B></FONT>
+<BR>
+
+<TABLE WIDTH='100%' BORDER='0' CELLSPACING='0' CELLPADDING='3'>
+<TR>
+<TD ALIGN='LEFT' VALIGN='TOP'>
+<FONT COLOR='#000000' FACE='metabold, Verdana, arial, helvetica, sans' SIZE='-2'>
+24th January, 2000
+</FONT>
+</TD>
+<TD VALIGN='TOP' ALIGN='RIGHT'>
+<FONT COLOR='#000000' FACE='metabold, Verdana, arial, helvetica, sans' SIZE='-2'>
+<I><a href='http://www.newstatesman.com/writers/Neil_Clark'>
+				Neil Clark</a></I>
+</FONT>
+</TD>
+</TR>
+</TABLE>
+<div class='nsverdana11'><B>Neil Clark</B> moved to Hungary in 1994, hoping for a society that would avoid the perils of both Thatcherism and communism. But his adopted country has taken on the worst, not the best, aspects of the west</div>
+<BR><BR>
+</I></B>
+<FONT COLOR='#000000' FACE='metabold, Verdana, arial, helvetica, sans' SIZE='2'><B>
+<A HREF='http://www.newstatesman.com/200101290013'>Auberon Waugh, hero of the left</A></B></FONT>
+<BR>
+
+<TABLE WIDTH='100%' BORDER='0' CELLSPACING='0' CELLPADDING='3'>
+<TR>
+<TD ALIGN='LEFT' VALIGN='TOP'>
+<FONT COLOR='#000000' FACE='metabold, Verdana, arial, helvetica, sans' SIZE='-2'>
+29th January, 2001
+</FONT>
+</TD>
+<TD VALIGN='TOP' ALIGN='RIGHT'>
+<FONT COLOR='#000000' FACE='metabold, Verdana, arial, helvetica, sans' SIZE='-2'>
+<I><a href='http://www.newstatesman.com/writers/Neil_Clark'>
+				Neil Clark</a></I>
+</FONT>
+</TD>
+</TR>
+</TABLE>
+<div class='nsverdana11'>Polly Toynbee is wrong. The writer she reviled as a "ghastly man" should be celebrated alongside George Lansbury and Fidel Castro, argues<B> Neil Clark</B></div>
+<BR><BR>
+</I></B>
+<FONT COLOR='#000000' FACE='metabold, Verdana, arial, helvetica, sans' SIZE='2'><B>
+<A HREF='http://www.newstatesman.com/200202110019'>Milosevic, prisoner of conscience</A></B></FONT>
+<BR>
+
+<TABLE WIDTH='100%' BORDER='0' CELLSPACING='0' CELLPADDING='3'>
+<TR>
+<TD ALIGN='LEFT' VALIGN='TOP'>
+<FONT COLOR='#000000' FACE='metabold, Verdana, arial, helvetica, sans' SIZE='-2'>
+11th February, 2002
+</FONT>
+</TD>
+<TD VALIGN='TOP' ALIGN='RIGHT'>
+<FONT COLOR='#000000' FACE='metabold, Verdana, arial, helvetica, sans' SIZE='-2'>
+<I><a href='http://www.newstatesman.com/writers/Neil_Clark'>
+				Neil Clark</a></I>
+</FONT>
+</TD>
+</TR>
+</TABLE>
+<div class='nsverdana11'><B>Neil Clark</B> raises a lone voice for a man whose worst crime was to carry on being socialist</div>
+<BR><BR>
+</I></B>
+<FONT COLOR='#000000' FACE='metabold, Verdana, arial, helvetica, sans' SIZE='2'><B>
+<A HREF='http://www.newstatesman.com/200206030011'>Left turn</A></B></FONT>
+<BR>
+
+<TABLE WIDTH='100%' BORDER='0' CELLSPACING='0' CELLPADDING='3'>
+<TR>
+<TD ALIGN='LEFT' VALIGN='TOP'>
+<FONT COLOR='#000000' FACE='metabold, Verdana, arial, helvetica, sans' SIZE='-2'>
+3rd June, 2002
+</FONT>
+</TD>
+<TD VALIGN='TOP' ALIGN='RIGHT'>
+<FONT COLOR='#000000' FACE='metabold, Verdana, arial, helvetica, sans' SIZE='-2'>
+<I><a href='http://www.newstatesman.com/writers/Neil_Clark'>
+				Neil Clark</a></I>
+</FONT>
+</TD>
+</TR>
+</TABLE>
+<div class='nsverdana11'>The Hungarians have always liked to do things differently. They say "hello" when we say "goodbye"; they introduce surnames first. Now they have voted contrary to the rest of Europe.
+Although the Hungarian elections coincided with those in France, it was no surprise that Le Pen and not Peter Medgyessy stole the headlines. And even though we shouldn't expect...</div>
+<BR><BR>
+</I></B>
+<FONT COLOR='#000000' FACE='metabold, Verdana, arial, helvetica, sans' SIZE='2'><B>
+<A HREF='http://www.newstatesman.com/200206240011'>Fight against the clock</A></B></FONT>
+<BR>
+
+<TABLE WIDTH='100%' BORDER='0' CELLSPACING='0' CELLPADDING='3'>
+<TR>
+<TD ALIGN='LEFT' VALIGN='TOP'>
+<FONT COLOR='#000000' FACE='metabold, Verdana, arial, helvetica, sans' SIZE='-2'>
+24th June, 2002
+</FONT>
+</TD>
+<TD VALIGN='TOP' ALIGN='RIGHT'>
+<FONT COLOR='#000000' FACE='metabold, Verdana, arial, helvetica, sans' SIZE='-2'>
+<I><a href='http://www.newstatesman.com/writers/Neil_Clark'>
+				Neil Clark</a></I>
+</FONT>
+</TD>
+</TR>
+</TABLE>
+<div class='nsverdana11'>Observations on slow movement by <B>Neil Clark</B></div>
+<BR><BR>
+</I></B>
+<FONT COLOR='#000000' FACE='metabold, Verdana, arial, helvetica, sans' SIZE='2'><B>
+<A HREF='http://www.newstatesman.com/200207290007'>The return of the slum landlord</A></B></FONT>
+<BR>
+
+<TABLE WIDTH='100%' BORDER='0' CELLSPACING='0' CELLPADDING='3'>
+<TR>
+<TD ALIGN='LEFT' VALIGN='TOP'>
+<FONT COLOR='#000000' FACE='metabold, Verdana, arial, helvetica, sans' SIZE='-2'>
+29th July, 2002
+</FONT>
+</TD>
+<TD VALIGN='TOP' ALIGN='RIGHT'>
+<FONT COLOR='#000000' FACE='metabold, Verdana, arial, helvetica, sans' SIZE='-2'>
+<I><a href='http://www.newstatesman.com/writers/Neil_Clark'>
+				Neil Clark</a></I>
+</FONT>
+</TD>
+</TR>
+</TABLE>
+<div class='nsverdana11'>Observations on van Hoogstraten by <B>Neil Clark</B></div>
+<BR><BR>
+</I></B>
+<FONT COLOR='#000000' FACE='metabold, Verdana, arial, helvetica, sans' SIZE='2'><B>
+<A HREF='http://www.newstatesman.com/200209160010'>Peace talks could see off the IMF</A></B></FONT>
+<BR>
+
+<TABLE WIDTH='100%' BORDER='0' CELLSPACING='0' CELLPADDING='3'>
+<TR>
+<TD ALIGN='LEFT' VALIGN='TOP'>
+<FONT COLOR='#000000' FACE='metabold, Verdana, arial, helvetica, sans' SIZE='-2'>
+16th September, 2002
+</FONT>
+</TD>
+<TD VALIGN='TOP' ALIGN='RIGHT'>
+<FONT COLOR='#000000' FACE='metabold, Verdana, arial, helvetica, sans' SIZE='-2'>
+<I><a href='http://www.newstatesman.com/writers/Neil_Clark'>
+				Neil Clark</a></I>
+</FONT>
+</TD>
+</TR>
+</TABLE>
+<div class='nsverdana11'>Observations on Sri Lanka by <B>Neil Clark</B></div>
+<BR><BR>
+</I></B>
+<FONT COLOR='#000000' FACE='metabold, Verdana, arial, helvetica, sans' SIZE='2'><B>
+<A HREF='http://www.newstatesman.com/200211250039'>Devil's advocate. Neil Clark challenges "one of the most effective demonisation campaigns of modern times"</A></B></FONT>
+<BR>
+
+<TABLE WIDTH='100%' BORDER='0' CELLSPACING='0' CELLPADDING='3'>
+<TR>
+<TD ALIGN='LEFT' VALIGN='TOP'>
+<FONT COLOR='#000000' FACE='metabold, Verdana, arial, helvetica, sans' SIZE='-2'>
+25th November, 2002
+</FONT>
+</TD>
+<TD VALIGN='TOP' ALIGN='RIGHT'>
+<FONT COLOR='#000000' FACE='metabold, Verdana, arial, helvetica, sans' SIZE='-2'>
+<I><a href='http://www.newstatesman.com/writers/Neil_Clark'>
+				Neil Clark</a></I>
+</FONT>
+</TD>
+</TR>
+</TABLE>
+<div class='nsverdana11'>Milosevic: a biography
+Adam LeBor <I>Bloomsbury, 386pp, £20</I>
+ISBN 0747560900</div>
+<BR><BR>
+</I></B>
+<FONT COLOR='#000000' FACE='metabold, Verdana, arial, helvetica, sans' SIZE='2'><B>
+<A HREF='http://www.newstatesman.com/200302170011'>Doves fly high in the east</A></B></FONT>
+<BR>
+
+<TABLE WIDTH='100%' BORDER='0' CELLSPACING='0' CELLPADDING='3'>
+<TR>
+<TD ALIGN='LEFT' VALIGN='TOP'>
+<FONT COLOR='#000000' FACE='metabold, Verdana, arial, helvetica, sans' SIZE='-2'>
+17th February, 2003
+</FONT>
+</TD>
+<TD VALIGN='TOP' ALIGN='RIGHT'>
+<FONT COLOR='#000000' FACE='metabold, Verdana, arial, helvetica, sans' SIZE='-2'>
+<I><a href='http://www.newstatesman.com/writers/Neil_Clark'>
+				Neil Clark</a></I>
+</FONT>
+</TD>
+</TR>
+</TABLE>
+<div class='nsverdana11'>Observations on protest in Europe by <B>Neil Clark</B></div>
+<BR><BR>
+</I></B>
+<FONT COLOR='#000000' FACE='metabold, Verdana, arial, helvetica, sans' SIZE='2'><B>
+<A HREF='http://www.newstatesman.com/200303170009'>Why left and right should unite and fight</A></B></FONT>
+<BR>
+
+<TABLE WIDTH='100%' BORDER='0' CELLSPACING='0' CELLPADDING='3'>
+<TR>
+<TD ALIGN='LEFT' VALIGN='TOP'>
+<FONT COLOR='#000000' FACE='metabold, Verdana, arial, helvetica, sans' SIZE='-2'>
+17th March, 2003
+</FONT>
+</TD>
+<TD VALIGN='TOP' ALIGN='RIGHT'>
+<FONT COLOR='#000000' FACE='metabold, Verdana, arial, helvetica, sans' SIZE='-2'>
+<I><a href='http://www.newstatesman.com/writers/Neil_Clark'>
+				Neil Clark</a></I>
+</FONT>
+</TD>
+</TR>
+</TABLE>
+<div class='nsverdana11'>There is nothing to lose but the chains of political correctness. <B>Neil Clark</B>, unashamedly old Labour, proposes a permanent anti-war alliance with the forces of conservatism</div>
+<BR><BR>
+</I></B>
+
+
+<table width='100%'><tr><td><FONT COLOR='#000000' FACE='metabold, Verdana, arial, helvetica, sans' SIZE='-1'> </FONT></td>
+<td width='100%'>&nbsp;</td>
+<td align='right'><FONT COLOR='#000000' FACE='metabold, Verdana, arial, helvetica, sans' SIZE='-1'><a href='http://www.newstatesman.com/nslibrary?s=11&amp;w=Neil+Clark&amp;sb=Oldest'>Next</a></FONT></td></tr></table>
+
+
+  
+  
+  
+
+	 </div><!-- /#content-main -->
+  </div><!-- /#container-content-main -->
+  
+    
+   <!-- left column -->
+  <div class="box-a">
+   
+  
+    <div class="mag-this-week">
+		  <h2><a href="http://www.newstatesman.com/subscribe">Subscribe</a></h2>
+
+		  <a href="http://www.newstatesman.com/subscribe" alt="subscribe" class="img"><img src="http://images.newstatesman.com/covers/thisissue_130.jpg" width="130" height="162" alt="This week's New Statesman" /></a>
+
+    </div>
+	
+  
+ 	<ul class="subject-nav">
+
+				<li><a href="http://www.newstatesman.com/contents">This week's magazine</a></li>
+
+
+		<li><a href="http://www.newstatesman.com/politics">Politics</a>
+		</li>
+
+		
+		<li><a href="http://www.newstatesman.com/arts-and-culture">Arts & Culture</a>
+		</li>
+
+		<li><a href="http://www.newstatesman.com/books">Books</a>
+		</li>
+
+		<li><a href="http://www.newstatesman.com/life-and-society">Life & Society</a>
+
+		</li>
+
+		<li><a href="http://www.newstatesman.com/world-affairs">World Affairs</a>
+		</li>
+
+		<li><a href="http://www.newstatesman.com/columnists">Columnists</a>
+		</li>
+	</ul>
+
+	
+  	<ul class="section-nav">
+		<li><a href="http://www.newstatesman.com/blogs">Blogs</a></li>
+
+		<li><a href="http://www.newstatesman.com/community">Community & Action</a></li>
+
+		<li><a href="http://www.newstatesman.com/offers">Competitions & Offers</a></li>
+
+	</ul>	
+  	<ul class="secondary-nav">
+		<li class="title">Awards & Campaigns</li>
+
+		<li><a href="http://www.edgeupstarts.org/">Edge Upstarts</a></li>
+		<li><a href="http://www.newstatesman.co.uk/newmedia">New Media Awards</a></li>
+		<li><a href="http://www.policyforum.co.uk/">Policy Forum for Health</a></li>
+
+	</ul>
+	
+  	<ul class="secondary-nav">
+		<li class="title">Tools & Services</li>
+
+		<li><a href="http://www.newstatesman.com/pdfedition">PDF version</a></li>
+		<li><a href="http://www.newstatesman.com/roundpoint.htm">PDA version</a></li>
+
+		<li><a href="http://www.newstatesman.com/nsrss.htm">RSS</a></li>
+		<li><a href="http://www.newstatesman.com/mailing">Email updates</a></li>
+		<li><a href="http://www.newstatesman.com/nssupplements.htm">Special Supplements</a></li>
+		<!--// <li><a href="#">Podcasts</a></li> //-->
+	</ul>
+	
+  	<div class="ad-border">
+		<p class="section-label">Archive</p>
+
+		<p>Access 10 years of New Statesman insight and wisdom<br /><a href="http://www.newstatesman.com/archive/">Search the Archive</a></p>
+		<img src="http://images.newstatesman.com/promos/archives.gif" width="105" height="50" alt="" class="left"/>
+	</div>
+	
+  </div> <!-- /.box-a (end left column) -->
+  
+
+    
+    <!-- right column -->
+
+  <div class="box-b">
+
+    
+
+	<div class="quickaccess_box">
+	  <h2 class="quickaccess">Quick Access to</h2>
+	  <form action="nslibrary%3Fw=Neil+Clark&amp;sb=Oldest.1.html" onsubmit="return navTo('blog');">
+		<fieldset>
+		<label for="blog" class="hidden">Select a blog</label>
+		<select name="blog" id="blog">
+			<option selected="selected">Select a blog</option>
+
+			<option value="/blogs/a-different-way-of-thinking">A Different Way Of Thinking</option>
+			<option value="/blogs/ask-marina">Ask Marina</option>
+			<option value="/blogs/bens-blog">Ben's Blog</option>
+			<option value="/blogs/brights-blog">Bright's Blog</option>
+			<option value="/blogs/campus-radicals">Campus Radicals</option>
+			<option value="/blogs/crips-column">Crip's Column</option>
+
+			<option value="/blogs/human-writes">Human Writes</option>
+			<option value="/blogs/life-at-findhorn">Life at Findhorn</option>
+			<option value="/blogs/oliver-postgate">Oliver Postgate</option>
+			<option value="/blogs/richard-herring">Richard Herring</option>
+			<option value="/blogs/sian-berry">Sian Berry</option>
+			<option value="/blogs/the-faith-column">The Faith Column</option>
+		</select>
+
+		<input type="image" src="http://images.newstatesman.com/buttons/go_to_blog.gif" alt="Go to blog" />
+		</fieldset>
+	  </form>
+
+	  
+	  <form action="nslibrary%3Fw=Neil+Clark&amp;sb=Oldest.1.html" onsubmit="return navTo('column');">
+		<fieldset>
+		<label for="column" class="hidden">Select a column</label>
+		<select name="column" id="column">
+			<option selected="selected">Select a column</option>
+
+			<option value="/columns/africa">Africa</option>
+			<option value="/columns/backward-glance">Backward glance</option>
+			<option value="/columns/beliefs">Beliefs</option>
+			<option value="/columns/despatches">Despatches</option>
+			<option value="/columns/diary">Diary</option>
+			<option value="/columns/dress-code">Dress Code</option>
+
+			<option value="/columns/drink">Drink</option>
+			<option value="/columns/film">Film</option>
+			<option value="/columns/food">Food</option>
+			<option value="/columns/global-thinking">Global Thinking</option>
+			<option value="/columns/green-thinking">Green Thinking</option>
+			<option value="/columns/human-rights">Human Rights</option>
+
+			<option value="/columns/ideas">Ideas</option>
+			<option value="/columns/julians-week">Julians Week</option>
+			<option value="/columns/letter-from-china">Letter From China</option>
+			<option value="/columns/media">Media</option>
+			<option value="/columns/neighbours-from-hell">Neighbours from hell</option>
+			<option value="/columns/new-statesman-leader">New Statesman Leader</option>
+
+			<option value="/columns/politics">Politics</option>
+			<option value="/columns/radio">Radio</option>
+			<option value="/columns/reboot">Reboot</option>
+			<option value="/columns/reportage">Reportage</option>
+			<option value="/columns/sport">Sport</option>
+			<option value="/columns/television">Television</option>
+
+			<option value="/columns/the-american-scene">The American Scene</option>
+			<option value="/columns/theatre">Theatre</option>
+			<option value="/columns/this-england">This England</option>
+			<option value="/columns/undercurrents">Undercurrents</option>
+			<option value="/columns/urban-life">Urban Life</option>
+			<option value="/columns/village-life">Village Life</option>
+
+		</select>
+		<input type="image" src="http://images.newstatesman.com/buttons/go_to_column.gif" alt="Go to Column"  />
+		</fieldset>
+	  </form>
+	</div><!-- /.quickaccess_box  -->	  
+    
+
+
+
+	  
+    	  <div class="skyscraper">
+<IFRAME BORDER='0' WIDTH='120' HEIGHT='600' VSPACE='0' HSPACE='0' SCROLLING='NO' frameborder="0" marginwidth="0" marginheight="0" SRC='http://ads.newstatesman.com/advert.php?ConsiderAction=HTML&SourceSection=M_Tower1&SourcePage=nslibrary'><SCRIPT LANGUAGE='JavaScript' SRC='http://ads.newstatesman.com/advert.php?ConsiderAction=Javascript&SourceSection=M_Tower1&SourcePage=nslibrary'></SCRIPT><NOSCRIPT><A TARGET='_top' HREF='http://ads.newstatesman.com/advert.php?ConsiderAction=Adlink&SourceSection=M_Tower1&SourcePage=nslibrary'><IMG BORDER='0' SRC='http://ads.newstatesman.com/advert.php?SourceSection=M_Tower1&SourcePage=nslibrary'></A></NOSCRIPT></IFRAME>
+	  </div>
+	  
+  </div><!-- /.box-b (end right column) -->
+  
+  	<ul id="footer">
+		<li>© <strong>New Statesman 1913–2007</strong></li>
+
+		<li><a href="http://www.newstatesman.com/nsjobs.htm">Jobs & Opportunities</a></li>
+		<li><a href="http://www.newstatesman.com/nstandc.htm">Terms & conditions</a></li>
+		<li><a href="http://www.newstatesman.com/nsprivacy.htm">Privacy Policy</a></li>
+		<li><a href="http://www.newstatesman.com/nscontactus.htm">Contact us</a></li>
+		<li><a href="http://www.newstatesman.com/subscribe">Subscribe</a></li>
+
+		<li><a href="http://www.newstatesman.com/nsmagadvertising.htm">Advertise</a></li>
+		<li><a href="http://www.newstatesman.com/nsabout.htm">About us</a></li>
+		<li><a href="http://www.newstatesman.com/nsstockrequest.htm">Newsagents</a></li>
+		<li><a href="http://www.newstatesman.com/accessibility.htm">Accessibility</a></li>
+	</ul>
+	
+	</div>  <!--/.container-inner-->
+
+<p class="design-credit" >Designed by <a href="http://www.wilsonfletcher.com/">Wilson Fletcher</a><br />Redesign consultant: Sheila Sang, <a href="http://www.powwowinteractive.com" target="_blank">PowWow Interactive</a></p>
+</div>  <!-- /.container-outer-->
+
+
+
+
+
+</body>
+</html>
+

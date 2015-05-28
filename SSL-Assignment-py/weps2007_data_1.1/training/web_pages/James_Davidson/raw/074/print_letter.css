@@ -1,0 +1,67 @@
+/* Printable */
+
+@page {
+	margin: 1in;
+	size: 8.5in 11in;
+}
+body {
+	font: normal 10pt/12pt Arial,Helvetica,sans-serif;
+	padding: 0;
+}
+form {
+	display: none;
+}
+h2 {
+	border-bottom: 1px dotted #666666;
+	font-size: 14pt;
+}
+.article h1 {
+	font: bold 14pt/18pt Arial,Helvetica,sans-serif;
+}
+.article h3 {
+	border-bottom: 1px solid #666666;
+	border-top: 1px solid #666666;
+	font-size: 9pt;
+}
+div.caption {
+	font-size: 10pt;
+}
+.editoptions {
+	display: none;
+}
+.notleftbar {
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+}
+.summary {
+	padding: 0.25in 0.5in;
+}
+div.toolbar {
+	display: none;
+}
+div#leftbar {
+	display: none;
+}
+div#notleftbar {
+	width: 95%;
+}
+div#pagebanner {
+	display: none;
+}
+div#printheader {
+	display: block;
+	font-weight: bold;
+	margin-bottom: .25in;
+	padding: 4px;
+	width: 100%;
+}
+div#quickcomment {
+	display: none;
+}
+div#root {
+	margin-bottom: .25in;
+}
+div#toprow {
+	display: none;
+}

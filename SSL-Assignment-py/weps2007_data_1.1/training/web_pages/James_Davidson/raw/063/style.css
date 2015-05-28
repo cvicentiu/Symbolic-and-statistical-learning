@@ -1,0 +1,120 @@
+body          {font-family: verdana, helvetica, arial, geneva, sans-serif; font-size: 10pt}
+th            {font-family: verdana, helvetica, arial, geneva, sans-serif; font-size: 10pt; font-weight: bold; background-color: #D3DCE3}
+.other      {font-family: verdana, helvetica, arial, geneva, sans-serif; font-size: 8pt; text-align: right}
+.other2      {font-family: verdana, helvetica, arial, geneva, sans-serif; font-size: 10pt; text-align: left}
+.smheadline   {font-family: verdana, helvetica, arial, geneva, sans-serif; font-size: 9px; font-weight: normal; color: #0000ff}
+form          {font-family: verdana, helvetica, arial, geneva, sans-serif; font-size: 10pt}
+h1            {font-family: verdana, helvetica, arial, geneva, sans-serif; font-size: 14pt; font-weight: bold; color: #003366}
+h2            {font-family: verdana, helvetica, arial, geneva, sans-serif; font-size: 12pt; font-weight: bold; color: #003366}
+h3            {font-family: verdana, helvetica, arial, geneva, sans-serif; font-size: 10pt; font-weight: bold; color: #c0c0c0}
+.nav          {font-family: verdana, helvetica, arial, geneva, sans-serif; font-size: 8pt; font-weight: normal; color: #000000}
+li	          {font-family: verdana, helvetica, arial, geneva, sans-serif; font-size: 9pt; text-align: left}
+td	          {font-family: verdana, helvetica, arial, geneva, sans-serif; font-size: 9pt; text-align: left}
+td.title            {font-family: verdana, helvetica, arial, geneva, sans-serif; font-size: 12pt; font-weight: bold; color: #003366}
+tr.even	          {font-family: verdana, helvetica, arial, geneva, sans-serif; font-size: 9pt; background-color: #ffffff}
+tr.odd	          {font-family: verdana, helvetica, arial, geneva, sans-serif; font-size: 9pt; background-color: #c0c0c0}
+pre          {font-family: courier, monospace, terminal, sans-serif; font-size: 8pt}
+
+
+
+#side-nav {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #5976b2;
+	border-top: 0;
+	background-color: #ECE9D8; /*#22437f;*/
+}
+#side-navb {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #E1D1BC;
+	border-top: 0;
+        border-bottom: 0;
+	border-left: 0;
+	background-color: #DFD4C8; /*#22437f;*/
+}
+#side-navbon {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border: 2px solid #E1D1BC;
+	border-right: 0;
+	border-left: 0;
+	background-color: #F2F0EC; /*#22437f;*/
+}
+#side-nav li {
+	margin: 0;
+	padding: 0;
+	border-top: 1px solid #5976b2;
+	/* IE/Win gets upset if there is no bottom border... Go figure. */
+	border-bottom: 1px solid #22437f;
+}
+#side-nav a {
+	margin: 0;
+	color: #003366; /* #c5ccdb; */
+	display: block;
+	text-decoration: none;
+	padding: 4px 6px;
+}
+#side-nav a:hover {
+	background-color: #336699; /* #34548f; */
+	color: #fff;
+}
+#side-navb a {
+	margin: 0;
+	color: #003366; /* #c5ccdb; */
+	display: block;
+	text-decoration: none;
+	padding: 4px 6px;
+}
+#side-navb a:hover {
+	background-color: #F2F0EC; /* #34548f; */
+	color: #003366;
+}
+#side-navbon a {
+	margin: 0;
+	color: #003366; /* #c5ccdb; */
+	display: block;
+	text-decoration: none;
+	padding: 4px 6px;
+}
+#side-navbon a:hover {
+	background-color: #F2F0EC; /* #34548f; */
+	color: #003366;
+}
+#side-nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#side-nav ul li {
+	border-top: 1px solid #34548e;
+	background-color: #ECE9D8  /* #34548e;*/
+	/* IE/Win gets upset if there is no bottom border... Go figure. */
+	border-bottom: 1px solid #34548e;
+}
+#side-nav ul li:hover {
+	border-bottom: 1px solid #ffffff; /*#34548f;*/
+}
+#side-nav ul li a {
+	padding-left: 6px;
+	padding-right: 6px;
+	color: #003366; /* #a7b2c9; */
+}
+#side-nav ul li a:hover {
+	background-color: #ffffff; /*#46659e;*/
+}
+#side-nav ul ul li a {
+	padding-left: 9px;
+	padding-right: 9px;
+}
+#side-nav strong a {
+	font-weight: normal;
+	color: #fff !important;
+	background-color: #000033;
+}
+#side-nav strong a:hover {
+	background-color: #003366 !important;
+}

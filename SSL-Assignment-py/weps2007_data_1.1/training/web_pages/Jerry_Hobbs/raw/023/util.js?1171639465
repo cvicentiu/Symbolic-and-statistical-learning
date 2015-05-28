@@ -1,0 +1,499 @@
+
+	 var BrowserDetect = {
+	init: function () {
+		this.browser = this.searchString(this.dataBrowser) || "An unknown browser";
+		this.version = this.searchVersion(navigator.userAgent)
+			|| this.searchVersion(navigator.appVersion)
+			|| "an unknown version";
+		this.OS = this.searchString(this.dataOS) || "an unknown OS";
+	},
+	searchString: function (data) {
+		for (var i=0;i<data.length;i++)	{
+			var dataString = data[i].string;
+			var dataProp = data[i].prop;
+			this.versionSearchString = data[i].versionSearch || data[i].identity;
+			if (dataString) {
+				if (dataString.indexOf(data[i].subString) != -1)
+					return data[i].identity;
+			}
+			else if (dataProp)
+				return data[i].identity;
+		}
+	},
+	searchVersion: function (dataString) {
+		var index = dataString.indexOf(this.versionSearchString);
+		if (index == -1) return;
+		return parseFloat(dataString.substring(index+this.versionSearchString.length+1));
+	},
+	dataBrowser: [
+		{
+			string: navigator.vendor,
+			subString: "Apple",
+			identity: "Safari"
+		},
+		{
+			prop: window.opera,
+			identity: "Opera"
+		},
+		{
+			string: navigator.vendor,
+			subString: "iCab",
+			identity: "iCab"
+		},
+		{
+			string: navigator.vendor,
+			subString: "KDE",
+			identity: "Konqueror"
+		},
+		{
+			string: navigator.userAgent,
+			subString: "Firefox",
+			identity: "Firefox"
+		},
+		{	 string: navigator.userAgent,
+			subString: "Netscape",
+			identity: "Netscape"
+		},
+		{
+			string: navigator.userAgent,
+			subString: "MSIE",
+			identity: "Explorer",
+			versionSearch: "MSIE"
+		},
+		{
+			string: navigator.userAgent,
+			subString: "Gecko",
+			identity: "Mozilla",
+			versionSearch: "rv"
+		},
+		{ 	 string: navigator.userAgent,
+			subString: "Mozilla",
+			identity: "Netscape",
+			versionSearch: "Mozilla"
+		}
+	],
+	dataOS : [
+		{
+			string: navigator.platform,
+			subString: "Win",
+			identity: "Windows"
+		},
+		{
+			string: navigator.platform,
+			subString: "Mac",
+			identity: "Mac"
+		},
+		{
+			string: navigator.platform,
+			subString: "Linux",
+			identity: "Linux"
+		}
+	]
+
+};
+BrowserDetect.init();
+
+var isie6 = (BrowserDetect.browser=='Explorer'&&BrowserDetect.version<7);
+var isie7 = (BrowserDetect.browser=='Explorer'&&BrowserDetect.version==7);
+
+function getElementStyle(e,p) {
+	//var e = $s(i);
+	if(document.defaultView) {
+		return document.defaultView.getComputedStyle(e, null).getPropertyValue(p);
+	} else if(e.currentStyle) {
+		var p = p.replace(/-\D/gi, function(toCamelCase)
+		{
+			return toCamelCase.charAt(toCamelCase.length - 1).toUpperCase();
+		});
+		return e.currentStyle[p];
+	}
+	else return null;
+}
+
+function appendEventListener(obj,evt,fun,cap) {//usage like window,"load",f,false
+	cap = cap?true:false;
+
+	// W3C Event Model
+	if (obj.addEventListener) {
+		obj.addEventListener(evt,fun,cap);
+		return true;
+	}
+	// IE Event Model
+	if (obj.attachEvent) {
+		obj.attachEvent("on"+evt,fun);
+		return true;
+	}
+	return false;
+}
+
+function getParent(e) {
+	return e.parentNode?e.parentNode:(e.parentElement?e.parentElement:null);
+}
+
+function getUpdatedTime(d) {
+	var now = new Date();
+	now.setHours(now.getHours()+(now.getTimezoneOffset()-300)/60);
+	var frc = (now.getTime()-Date.parse(d))/60000;
+	var udt = Math.floor(frc);
+	var def = new Date(d).formatDate('n/d g:i A \E\T');
+	return udt<0?def:(udt==0?Math.floor(frc*60)+' secs ago':(udt==1?udt+' min ago':(udt<60?udt+' mins ago':def)));
+}
+
+Object.extend(Event, {
+	observe: function(element, name, observer, useCapture) {
+		var element = $(element);
+		useCapture = useCapture || false;
+		if (name == 'keypress' && (navigator.appVersion.match(/Konqueror|Safari|KHTML/) || element.attachEvent)) {
+			name = 'keydown';
+		}
+		if (name == 'load' && element.screen) {
+			this._observeLoad(element, name, observer, useCapture);
+		} else {
+			this._observeAndCache(element, name, observer, useCapture);
+		}
+	},
+	_observeLoad : function(element, name, observer, useCapture) {
+		if (!this._readyCallbacks) {
+			var loader = this._onloadWindow.bind(this);
+			if (document.addEventListener) {
+				document.addEventListener("DOMContentLoaded", loader, false);
+			}
+			/*@cc_on @*/
+			/*@if (@_win32)
+			if (! $("__ie_onload")) {
+				document.write("<scr"+"ipt id='__ie_onload' defer='true' src='://'><\/scr"+"ipt>");
+				var script = $("__ie_onload");
+				script.onreadystatechange = function() { if (this.readyState == "complete") loader(); };
+			} else {
+				loader();
+			}
+			/*@end @*/
+			if (navigator.appVersion.match(/Konqueror|Safari|KHTML/i)) {
+				Event._timer = setInterval(function() {if(/loaded|complete/.test(document.readyState))loader();}, 10);
+			}
+			Event._readyCallbacks =  [];
+			this._observeAndCache(element, name, loader, useCapture);
+		}
+		Event._readyCallbacks.push(observer);
+	},
+	_onloadWindow : function() {
+		if (arguments.callee.done) {return;}
+		arguments.callee.done = true;
+		if (this._timer) {clearInterval(this._timer);}
+		this._readyCallbacks.each(function(f) { f() });
+		this._readyCallbacks = null;
+	}
+});
+
+function Cookie(document, name, hours, path, domain, secure)
+{
+	this.$document = document;
+	this.$name = name;
+	this.$expiration = hours?new Date((new Date()).getTime() + hours*3600000):null;
+	this.$path = path?path:null;
+	this.$domain = domain?domain:null;
+	this.$secure = secure?true:false;
+}
+
+Cookie.prototype.store = function() {
+	var cookieval = "";
+	for(var prop in this) {
+		// Ignore properties with names that begin with '$' and also methods
+		if ((prop.charAt(0) == '$') || ((typeof this[prop]) == 'function')) {
+			continue;
+		}
+		if (cookieval != "") cookieval += '&';
+		cookieval += prop + ':' + escape(this[prop]);
+	}
+
+	var cookie = this.$name + '=' + cookieval;
+		cookie += this.$expiration?'; expires=' + this.$expiration.toGMTString():'';
+		cookie += this.$path?'; path=' + this.$path:'';
+		cookie += this.$domain?'; domain=' + this.$domain:'';
+		cookie += this.$secure?'; secure':'';
+
+	this.$document.cookie = cookie;
+}
+
+Cookie.prototype.load = function() { 
+	var allcookies = this.$document.cookie;
+	if (allcookies == "") return false;
+
+	var start = allcookies.indexOf(this.$name + '=');
+	if (start == -1) return false;
+	start += this.$name.length + 1;
+	var end = allcookies.indexOf(';', start);
+	if (end == -1) end = allcookies.length;
+	var cookieval = allcookies.substring(start, end);
+
+	var a = cookieval.split('&');
+	for(var i=0; i < a.length; i++) {
+		a[i] = a[i].split(':');
+	}
+
+	for(var i = 0; i < a.length; i++) {
+		this[a[i][0]] = unescape(a[i][1]);
+	}
+
+	return true;
+}
+
+Cookie.prototype.remove = function() {
+	var cookie;
+	cookie = this.$name + '=';
+	cookie += this.$path?'; path=' + this.$path:'';
+	cookie += this.$domain?'; domain=' + this.$domain:'';
+	cookie += '; expires=Fri, 02-Jan-1970 00:00:00 GMT';
+
+	this.$document.cookie = cookie;
+}
+
+function getCookieValue(n) {
+	if (!document.cookie) {
+		return '';
+	}
+	c = document.cookie;
+	var v = "";
+	index = c.indexOf(n + "=" );
+	if (index<0) {
+		return '';
+	}
+	var countbegin = (c.indexOf("=", index)+1);
+	if (0<countbegin){
+		var countend = c.indexOf(";", countbegin);
+		if (countend < 0 ) {
+			countend = c.length;
+		}
+		return c.substring(countbegin, countend);
+	}
+	return '';
+}
+
+function trim(s){
+	while(s.charAt(0)==" "){
+		s = s.replace(s.charAt(0),"");
+	}
+	while(s.charAt((s.length -1))==" "){
+		s = s.substring(0,s.length-1);
+	}
+	return s;
+}
+
+function getVelocityValue(x) {
+	return 20+((x-1)*5);
+}
+
+function checkSliderButtons(i,p,o) {
+	var headroom = 20;
+	if (p>o+headroom) {
+		$('next_'+i).className='next';
+	} else {
+		$('next_'+i).className='next off';
+	}
+	if (p<0) {
+		$('prev_'+i).className='prev';
+	} else {
+		$('prev_'+i).className='prev off';
+	}
+}
+
+function moveNext(i,t,f,x){
+	var x=x?x:0;
+	var o = $(t+'_content_'+i);
+	var offst = $('clipper_'+i).offsetWidth-o.offsetWidth;
+	var pleft = parseInt(o.style.left); if (t=='gallery') {
+		var headroom = 0;
+		if (pe_nav_type=='numeric') {
+			var headroom = 5;
+		}
+	} else {
+		var headroom = 20;
+	}
+	if (pleft>offst+headroom) { o.style.left=pleft-(speed/f)+"px";
+		x++;
+		var ti;
+		if (x<(speed/(speed/f))) {
+			ti = getVelocityValue(x);
+			setTimeout("moveNext("+i+",'"+t+"',"+f+","+x+")",ti);
+		}
+	}
+	checkSliderButtons(i,parseInt(o.style.left),offst);
+	updateCount(t+'_counter_'+i,Math.floor((Math.abs(pleft-(speed/f))/speed)+1),Math.floor(o.offsetWidth/speed),"/");
+}
+
+function movePrev(i,t,f,x){
+	var x=x?x:0;
+	var o = $(t+'_content_'+i);
+	var pleft = parseInt(o.style.left);
+	if (pleft<0) {
+		o.style.left=pleft+(speed/f)+"px";
+		x++;
+		var ti;
+		if (x<(speed/(speed/f))) {
+			ti = getVelocityValue(x);
+			setTimeout("movePrev("+i+",'"+t+"',"+f+","+x+")",ti);
+		}
+	}
+	checkSliderButtons(i,parseInt(o.style.left),$('clipper_'+i).offsetWidth-o.offsetWidth);
+	updateCount(t+'_counter_'+i,Math.floor((Math.abs(pleft-(speed/f))/speed)+1),Math.floor(o.offsetWidth/speed),"/");
+}
+
+function updateCount(e,n,t,s){
+	//var m = '<span style="font-size:.9166em;font-weight:bold;color:#444;">Scroll for more stories</span> - ';
+	var exist=typeof($(e))=="undefined"?false:true;
+	if(exist){ $(e).innerHTML = n + s + t; }
+}
+
+function pop(mypage, myname, w, h, scroll, menu) {
+	var winl = Math.floor(((screen.width - w) / 2) - 5);
+	var wint = Math.floor(((screen.height - h) / 2) - 25);
+	winprops = 'height='+h+',width='+w+',top='+wint+',left='+winl+',scrollbars='+scroll+',resizable=no';
+	if (menu=='yes') {winprops += ',menubar=yes,toolbar=yes,locationbar=yes';}
+	 win = window.open(mypage, myname, winprops);
+	if (win) {win.focus();}
+}
+
+// Pop for Business Portfolio
+function popPort() {
+	var height = ((screen.width>800) && (screen.height>600)) ? 680 : 520;
+	pop("/business/tools/portfolio.html?page=portfolio",'portfolio','750',height,'no','no');
+}
+// Pop for Cashin' In Challenge Game
+function popGame() {
+	popPort();
+}
+
+function popTracker() {
+	pop("/politics/youdecide2006/tracker/index.html", "tracker", 790, 451, 0, 0);
+}
+
+// Map Pop Script to launch daughter win w/ image
+function mapPop(imageUrl,title,w,h) {
+	var dimensions = "width="+w+",height="+h;
+	var winName = title.replace(/ /g,"");
+	var title = title+" -- FOXNews.com";
+	var win = window.open("",winName,dimensions);
+	if (win) {
+		var d = win.document;
+		d.writeln('<html><head><title>'+title+'</title></head>');
+		d.writeln('<body style="margin:0;padding:0;" onload="window.focus();">');
+		d.writeln('<img src="'+imageUrl+'" style="border:0;">');
+		d.writeln('</body></html>');
+		d.close(); 
+	}
+}
+
+// Video Player Launch Scripts
+var vidUrlFile = "";
+function videoPlayer(vidFile,headline,format,hd,category,relID,channel,duration) {
+	var category = category.replace(/'/g, "&#39;");
+	var channel = typeof(channel) == "undefined" ? "" : channel.replace(/'/g, "&#39;");
+	var duration = typeof(duration) == "undefined" ? 180 : duration;
+	if(!hd || hd == "") {hd = "acc";}
+	if(format == "Campaign_Carl" || format == "5_-_You_Decide") hd = "elec";
+	if(vidUrlFile == "") {vidUrlFile = "resize05.html";}
+	var h = (screen.width > 1000 && BrowserDetect.browser != "Opera") ? 655 : 510;
+	var winState = (screen.width > 1000 && BrowserDetect.browser != "Opera") ? "exp" : "col";
+	var vidUrl = fnDomain+"/video2/"+vidUrlFile+"?"+vidFile+"&"+escape(format)+"&"+escape(headline)+"&"+escape(hd)+"&"+escape(category)+"&"+relID+"&"+escape(channel)+"&"+duration+"&"+winState;
+	var winl = ((screen.width - 700) / 2) - 5;
+	winprops = 'height='+h+',width=700,top=5,left='+winl;
+	fncVidWin = window.open(vidUrl, 'fncVidPlayer', winprops);
+	if (fncVidWin) {fncVidWin.focus();}
+}
+
+// Live Site Stream
+function siteStreamPlayer(){
+	videoPlayer('liveSiteStream','Live%20Stream','Live_Site_Stream','acc','Live%20Stream','-1','News',180);
+}
+
+// Live Radio Stream
+function radioStreamPlayer(){
+	videoPlayer('liveRadioStream','FOX%20News%20Talk%20Live%20Stream','Live_Radio_Stream','acc','FOX News Talk','-1',180);
+}
+
+// Fish Bowl Cam
+function fishBowlPlayer(){
+	videoPlayer('fishBowlStream','Fish%20Bowl%20Cam','Fish_Bowl_Stream','acc','FOX & Friends','-1','Shows',180);
+}
+function siteSearch(s) {
+	var sch = s.replace(/&amp;#39;/g, "'");
+	window.open("http://search2.foxnews.com/search?client=my_frontend&proxystylesheet=my_frontend&proxyreload=1&output=xml_no_dtd&site=default_collection&q=" + escape(sch));
+}
+
+function accessVideo(file,head,deck,vidHead,img,thumb,related,format,playerHead,category,channel,duration) {
+	this.file = file;
+	this.head = head;
+	this.deck = deck;
+	this.vidHead = vidHead;
+	this.img = img;
+	this.thumb = thumb;
+	this.related = related;
+	this.format = format;
+	this.playerHead = playerHead;
+	this.category = category;
+	this.channel = typeof(channel) == "undefined" ? "" : channel;
+	this.duration = typeof(duration) == "undefined" ? 180 : duration;	
+}
+
+function isBlank(v){
+	return v.replace(/^s*|s*$/g,"").length == 0 ? true : false;
+}
+
+function checkZip(t){
+	if(isBlank(t) || parseInt(t) != t || t.length != 5){
+		alert("Please submit a valid zip code");
+		return false;
+	} else {
+		return true;
+	}
+}
+
+function stockSearch(s) {
+    window.location = fnDomain + "/business/quote/index.html?searchString="+s+"&story=tickerLookup";
+}
+
+function writeSearch(){
+	var s = '<div style="position:relative;background-color:#000;padding:0.25em;width:37.5em;margin:0 auto 0.83em;">';
+	s += '<form method="get" action="http://search2.foxnews.com/search" style="padding:0;margin:0;">';
+	s += '<input type="hidden" name="ie" value="UTF-8" />';
+	s += '<input type="hidden" name="oe" value="UTF-8" />';
+	s += '<input type="hidden" name="client" value="my_frontend" />';
+	s += '<input type="hidden" name="proxystylesheet" value="my_frontend" />';
+	s += '<input type="hidden" name="output" value="xml_no_dtd" />';
+	s += '<input type="hidden" name="site" value="story" />';
+	s += '<input type="hidden" name="getfields" value="*" />';
+	s += '<input type="hidden" name="filter" value="0" />';
+	s += '<input type="hidden" name="sort" value="date:D:S:d1" />';
+	s += '<p style="color:#fff;margin:0;padding:0 0.87em 0 0.17em;display:inline;font-size:0.92em;"><strong>SEARCH</strong></p>';
+	s += '<input type="text" name="q" value="" style="width:27.08em;font-size:1.08em;border:0;display:inline;" />';
+	s += '<input type="submit" name="submit" value="GO" style="position:absolute;right:0.42em;bottom:0.35em;border:0;font-size:0.92em;font-weight:bold;margin-left:0.71em;width:3em;height:1.5em;"/>';
+	s += '</form></div>';
+	document.write(s);
+}
+
+function footer() {
+	var f = '<div class="capblack">';
+	f += '<a href="'+fnDomain+'/rss/index.html" style="font-size:12px; font-weight:bold;">Click here for FOX News RSS Feeds</a><br><br>'
+	f += '<a href="#" onclick="pop(\''+fnDomain+'/mediakit/ad_firstpage.html\',\'mediaWin\',650,485,\'no\',\'no\');" style="font-size:12px; font-weight:bold;">Advertise on FOX News Channel, FOXNews.com and FOX News Radio</a>';
+	f += '<br><a href="'+fnDomain+'/story/0,2933,27906,00.html">Jobs at FOX News Channel.</a>';
+	f += '<br><a href="#" onclick="pop(\''+fnDomain+'/projects/internships\',\'internsWin\',640,480,\'no\',\'no\');">Internships At Fox News (Summer Application Deadline is March 15, 2007)</a>';
+	f += '<br><a href="'+fnDomain+'/other/termsofuse.html">Terms of use.</a>&nbsp;&nbsp;<a href="'+fnDomain+'/other/privacy.html">Privacy Statement.</A>&nbsp;&nbsp;For FOXNews.com comments write to';
+	f += '<br><a href="mailto:foxnewsonline@foxnews.com">foxnewsonline@foxnews.com</a>;&nbsp;&nbsp;For FOX News Channel comments write to';
+	f += '<br><a href="mailto:comments@foxnews.com">comments@foxnews.com</a><br>&copy; Associated Press.  All rights reserved.';
+		
+	if (section_id == 3 || section_id == 0) {
+		f += '<br><br><a href="http://www.smartmoney.com" target="_blank">SMARTMONEY &reg;</a> &copy; 2006 SmartMoney. SmartMoney is a joint publishing venture of Dow Jones & Company, Inc. and Hearst SM Partnership. All Rights Reserved.';
+		f += '<br>All quotes delayed by 20 minutes. Delayed quotes provided by <a href="http://www.comstock-interactivedata.com/" target="_blank">ComStock</a>.';
+		f += '<br>Historical prices and fundamental data provided by <a href="http://www.hemscottdata.com" target="_blank">Hemscott, Inc.</a>'
+		f += '<br>Mutual fund data provided by <a href="http://www.lipperleaders.com/" target="_blank">Lipper</a>. Mutual Fund NAVs are as of previous day\'s close.';
+		f += '<br>Earnings estimates provided by <a href="http://www.zacks.com/" target="_blank">Zacks Investment Research</a>.';
+		f += '<br>Upgrades and downgrades provided by <a href="http://www.briefing.com/" target="_blank">Briefing.com</a>.<br>';
+	}
+	
+	f += '<br>This material may not be published, broadcast, rewritten, or redistributed.';
+	var curdate = new Date();
+	var year = curdate.getFullYear();
+	f += '<br><br>Copyright '+ year +' FOX News Network, LLC.  All rights reserved.<br>All market data delayed 20 minutes.';
+	f += '</div>';
+	return f;
+}

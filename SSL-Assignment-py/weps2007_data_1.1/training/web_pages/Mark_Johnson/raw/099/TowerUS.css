@@ -1,0 +1,427 @@
+body
+{
+	background-color: white;
+	margin: 0px;
+}
+
+body, td
+{
+	font-family: Verdana, Trebuchet, Trebuchet MS, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: black;
+}
+
+.left { text-align: left; }
+.right { text-align: right; }
+.center { text-align: center; }
+.top { vertical-align: top; }
+.middle { vertical-align: middle; }
+.bottom { vertical-align: bottom; }
+
+a
+{
+	text-decoration:underline;
+	color: #ED1C24;
+}
+a:hover
+{
+	text-decoration:underline;
+	color: #666666;
+}
+a:visited
+{
+	text-decoration:underline;
+	color: #CC6666;
+}
+
+.alert
+{
+	font-family: Verdana, Trebuchet, Trebuchet MS, Geneva, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000099;
+	font-weight: bold;
+	text-align: center;
+}
+
+.alertSmall
+{
+	font-family: Verdana, Trebuchet, Trebuchet MS, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000099;
+	font-weight: bold;
+	text-align: center;
+}
+
+.alertSub
+{
+	font-family: Verdana, Trebuchet, Trebuchet MS, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: black;
+	text-align: center;
+}
+
+.errorMessageBox
+{
+	width: 600px; 
+	margin: 10px; 
+	padding: 5px; 
+	border: 1px solid #000099; 
+	font: bold 11px Verdana; 
+	background-color: #FFF2BF; 
+	color: #000099; 
+	text-align: left; 
+}
+
+.errorMessageText
+{
+	font: bold 11px Verdana;
+	color: #000099;
+}
+
+.boxOptions
+{
+	font-family: Verdana, Trebuchet, Trebuchet MS, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: black;
+	text-align: right;
+	margin-right: 15px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.emphasis
+{
+	font-weight: bold;
+}
+
+.formField
+{
+	font-family: Verdana, Trebuchet, Trebuchet MS, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: black;
+	text-align: right;
+}
+
+.note
+{
+	font-family: Verdana, Trebuchet, Trebuchet MS, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: black;
+}
+
+.noteEmphasis
+{
+	font-family: Verdana, Trebuchet, Trebuchet MS, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: black;
+}
+
+.suggestArtist, .suggestProduct, .suggestTitle
+{
+	font-family: Verdana, Trebuchet, Trebuchet MS, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: black;
+}
+.suggestArtist { }
+.suggestProduct { }
+.suggestTitle
+{
+	font-style: italic;
+}
+
+.required
+{
+	font-family: Verdana, Trebuchet, Trebuchet MS, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #ED1C24;
+}
+
+.right
+{
+	text-align: right;
+}
+
+table.box
+{
+	border-left: solid 2px #CCCCCC;
+	border-right: solid 2px #CCCCCC;
+	border-bottom: solid 2px #CCCCCC;
+	margin: 0px;
+	spacing: 0px;
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+
+.boxHeading, .boxSubHeading, .wishBoxHeading
+{
+	font-family: Verdana, Trebuchet, Trebuchet MS, Geneva, Helvetica, sans-serif;
+	font-weight: bold;
+	color: black;
+	background: #DDDDDD;
+	border: 0px;
+	margin: 0px;
+	padding: 2px;
+	padding-left: .5em;
+}
+
+.boxHeading
+{
+	font-size: 14px;
+	height: 20px;
+}
+
+.boxSubHeading
+{
+	font-size: 11px;
+	height: 18px;
+	padding: 4px;
+}
+
+.wishBoxHeading
+{
+	font-size: 14px;
+	height: 30px;
+	vertical-align: middle;
+}
+
+table.box td.content
+{
+	font-family: Verdana, Trebuchet, Trebuchet MS, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: black;
+}
+
+table.column
+{
+	border-collapse: collapse;
+}
+table.column td.heading
+{
+	font-family: Verdana, Trebuchet, Trebuchet MS, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: black;
+	background: #DDDDDD;
+	height: 20px;
+	border: 1px solid white;
+	vertical-align: center;
+	padding: 2px;
+}
+
+tr.divider
+{
+	background: #DDDDDD;
+	height: 1px;
+	padding: 13px;
+	spacing: 5px;
+}
+
+
+table.error
+{
+	color: black;
+	background: #FFCC00;
+	border-spacing: 0px;
+	border-collapse: collapse;
+	margin-bottom: 10px;
+}
+
+table.error td.errorAlert
+{
+	font-family: Verdana, Trebuchet, Trebuchet MS, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: black;
+	background: #FFCC00;
+	padding-left: 5px;
+}
+
+table.error td.errorSpecific
+{
+	font-family: Verdana, Trebuchet, Trebuchet MS, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: black;
+	background: #FFCC00;
+	padding-left: 20px;
+}
+
+.heading
+{
+	font-family: Verdana, Trebuchet, Trebuchet MS, Geneva, Helvetica, sans-serif;
+	font-size: 14px;
+	color: black;
+	background: #DDDDDD;
+	border: 0px;
+	height: 20px;
+	font-weight: bold;
+	margin: 0px;
+}
+
+/* MC label for form field, keeps labels aligned with input fields when <br> stuff under field */
+.fieldLabel
+{
+	font-family: Verdana, Trebuchet, Trebuchet MS, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: black;
+	text-align: right;
+	padding-top: 5px;
+	padding-right: 3px;	
+	vertical-align:top;	
+}
+/* MC note underneath form field using <br>*/
+.fieldNote
+{
+	font-family: Verdana, Trebuchet, Trebuchet MS, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-weight: normal;
+	text-align: left;
+	height: 17px;
+}
+/* MC */
+.basketSubtotal
+{
+	font: bold 11pt Verdana, Trebuchet, Trebuchet MS, Geneva, Arial, Helvetica, sans-serif;
+	color: black;
+	text-align: right;
+}
+
+/* ControlBasket */
+
+.listPrice
+{
+	font: bold 11px verdana;
+	display: block;
+}
+.salePrice
+{
+	font: bold 14px verdana;
+	color: #ed1c24;
+}
+.savePrice
+{
+	font: 11px verdana;
+	display: block;
+}
+
+
+table.column td.bag
+{
+	font-family: Verdana, Trebuchet, Trebuchet MS, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	border:0px;
+	vertical-align: top;
+	padding: 2px;
+}
+
+table.column td.bagQuantity
+{
+	font-family: Verdana, Trebuchet, Trebuchet MS, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	border:0px;
+	text-align: center;
+	vertical-align: top;
+	padding: 2px;
+}
+
+table.column td.bag
+{
+	font-family: Verdana, Trebuchet, Trebuchet MS, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	border:0px;
+	text-align: left;
+	vertical-align: top;
+	padding: 2px;
+}
+
+table.column td.bagMoney
+{
+	font-family: Verdana, Trebuchet, Trebuchet MS, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	border:0px;
+	text-align: right;
+	vertical-align: top;
+}
+
+.bagTotal
+{
+	font: bold 14px verdana;
+	text-align: right;
+	vertical-align: middle;
+}
+.bagAppliedMoney
+{
+	font: bold 14px verdana;	
+}
+
+
+.bagTitle
+{
+	font: italic bold 9pt Verdana, Trebuchet, Trebuchet MS, Geneva, Arial, Helvetica, sans-serif;
+}
+a .bagTitle
+{
+	text-decoration: underline;
+	color: #ED1C24;
+}
+a:hover .bagTitle
+{
+	text-decoration: underline;
+	color: #666666;
+}
+a:visited .bagTitle 
+{
+	text-decoration: underline;
+	color: #CC6666;
+}
+
+.bagProduct
+{
+	font-family: Verdana, Trebuchet, Trebuchet MS, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: black;
+}
+
+.bagSubtotal
+{
+	font: bold 12px verdana;
+}
+
+.bagOrderTotal
+{
+	font: bold 14px Verdana, Trebuchet, Trebuchet MS, Geneva, Arial, Helvetica, sans-serif;
+}
+.bagOrderMoney
+{
+	font: bold 15px verdana;
+}
+
+.divHidden 
+{
+	display: none;
+}
+.divShown
+{
+	display: block;
+}
+
+.inputLabel
+{
+	font-weight: bold;
+	padding-right: 10px;
+}
+.inputField
+{
+}
+.labelColumn
+{
+}
+.helpColumn { }
+.emphasis
+{
+	font: bold 11px Verdana, Trebuchet, Trebuchet MS, Geneva, Arial, Helvetica, sans-serif;
+	color: #000099;
+}

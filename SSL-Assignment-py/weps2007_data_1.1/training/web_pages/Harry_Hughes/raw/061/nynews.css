@@ -1,0 +1,1160 @@
+body {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	margin: 0px;
+	padding: 0px;
+	background-color: #FFFFFF;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #000000;
+	margin: 0px;
+}
+
+h1 {	color: #7E1034;
+	font: bold 24px Verdana, sans-serif;;
+	width: 100%;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #991A38;}
+	
+h2  {
+	font-family: Times, serif;
+	font-size: 24px;
+	font-weight: bold; }
+	
+h4 {
+	font-family: Times, serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: bold; }
+
+ul {	font-size: 10px;
+	list-style-type: none !important;
+	margin: 2px 0 0 1px;
+	padding: 0;
+}
+li { 	
+	background: url(http://www.newsday.com/images/nynews/3bullet.jpg) no-repeat 0px 4px;
+	padding-left: 7px;
+	line-height: 1.2em;
+}
+       
+ a:link, a:visited, a:active  {
+	color:#336699;
+	text-decoration: none;
+}
+
+a:hover {
+	color :#336699;
+	text-decoration: underline;
+}
+               
+#main { width: 980px; }
+
+/* header styles */
+#header {
+	width: 980px; 
+	background: url(http://www.newsday.com/images/nynews/header-bg.jpg) repeat-x; 
+	}
+td.topAd {
+	vertical-align: middle;
+	height: 90px;
+	padding-left: 8px;
+}
+td.headerLogoMain {
+		height: 90px;
+		width: 567px;
+		padding-left: 40px;
+		padding-right: 50px;}
+td.headerLogo {
+	width: 201px;
+	height: 88px;
+	padding-right: 10px;
+}		
+				
+td#graybar {
+ 	background: #F5F5F5 url(http://www.newsday.com/images/nynews/gradient-gray.jpg) repeat-x; 
+	width: 980px;
+	height: 22px;
+	}
+td.barWhite {
+	color: #ffffff;
+	font-size: 11px;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	}	
+td.barWhite a:link, .barWhite a:visited, td.barWhite a:hover {	
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 11px;
+	font-family: Arial, sans-serif;
+	font-weight: bold;	
+	}
+barWhite a:active {	
+	color: #ffffff;
+	text-decoration: underline;
+	font-size: 11px;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	}
+input.siteSearch {
+   color: #000;
+   font: bold 11px Arial, sans-serif;
+   background-color: #fff;
+   border: 1px solid;
+   height: 15px; 
+   margin-bottom: 1px;
+}
+td.barRed { padding-right: 20px;}
+td.barRed a:link, .barRed a:visited, .barRed a:active {	
+	color: #9D2A00;
+	text-decoration: none;
+	font-size: 11px;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+}
+td.barRed a:hover {	
+	color: #9D2A00;
+	text-decoration: underline;
+	font: bold 11px Arial, sans-serif;
+}
+
+td.headerLinks { width: 250px; color: #fff;}
+.headerLinks ul {list-style: none !important;}
+.headerLinks li { 	
+	padding-left: 9px;
+	font: bold 11px Arial, sans-serif;	}
+.headerLinks  a:link, .headerLinks  a:visited, .headerLinks  a:hover {	
+	color: #ffffff;
+	text-decoration: none;
+	font: bold 11px Arial, sans-serif;	}
+.headerLinks a:hover {	
+	color: #ffffff;
+	text-decoration: underline;
+	font: bold 11px Arial, sans-serif;	}
+
+
+#nav {
+	width: 120px;
+	border: 1px solid #7E1034;
+	border-top: none;
+	border-bottom: none;
+	font-size: 9px;
+}          
+#nav img {
+	padding: 0;
+	 margin: 0;
+}
+.navimage {
+ 	background: #F5F5F5 url(http://www.newsday.com/images/nynews/navimage.gif) no-repeat; /*remove absolute URL*/
+	color: #333067;
+	padding: 2px 0 4px 4px;
+	font: bold 11px Arial, sans-serif;
+	text-transform: uppercase;
+	width: 120px;
+}
+.navimage a:link, .navimage  a:visited, .navimage a:active  {	
+	color: #333067;
+	text-decoration: none;
+}
+.navimage a:hover {	
+	color: #333067;
+	text-decoration: underline;
+}
+
+.navtop {
+	color: #9D2A00;
+	background-color: #fff;
+	border-bottom: solid 1px #cccccc;
+	padding: 4px 0 4px 4px;
+	font: normal 11px Arial, sans-serif;
+	width: 120px;
+}
+
+.navtop  a:link, .navtop   a:visited{	
+	color: #9D2A00;
+	text-decoration: none;
+	font-weight: bold;
+}
+.navtop  a:hover, .navtop  a:active  {	
+	color: #9D2A00;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.navblue {
+	color: #333067;
+	background-color: #f5f5f5;
+	border-bottom: solid 1px #ccc;
+	padding: 4px 0 4px 4px;
+	font: bold 11px Arial, sans-serif;
+	width: 120px;
+}
+
+.navblue a:link, .navblue  a:visited, .navblue a:active {	
+	color: #333067;
+	text-decoration: none;
+}
+.navblue a:hover {	
+	color: #333067;
+	text-decoration: underline;
+}
+
+.navexplore {
+	color: #333067;
+	background-color: #CDD0B3;
+	border-bottom: solid 1px #fff;
+	padding: 4px;
+	font-size: 11px;
+	font-family: Arial, sans-serif;
+	font-weight: normal;
+	width: 120px;
+}
+
+.navexplore a:link, .navexplore a:visited, .navexplore a:hover{	
+	color: #333067;
+	text-decoration: none;
+	font-weight: bold;
+}
+ .navexplore a:active {	
+	color: #333067;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+#mainContent {
+	width: 100%;
+	margin-left: 8px;
+	margin-top: 5px;
+	font: normal 12px Arial, Helvetica, sans-serif;
+	line-height: 1.3em;
+}
+
+#sectionFront {
+	width: 100%;
+	margin-left: 8px;
+	margin-top: 5px;
+	font: normal 12px Arial, Helvetica, sans-serif;
+	line-height: 1.3em;
+}
+
+td#adrail{	width: 160px; 
+	margin-top: 5px;
+	padding-left: 8px;}       
+	
+.wideRight {
+	width: 330px;
+	padding-top: 8px;
+	font: normal 12px Arial, Helvetica, sans-serif;
+}
+td.wideRight {
+	padding-top: 8px;
+}
+
+td.wideRight1 {
+	padding-top: 8px;
+	padding-right: 6px;
+	width: 160px;
+}
+td.wideRight2 {
+	padding-top: 8px;
+	width: 164px;
+}  
+
+/* Footer */
+#footer {
+	width: 980px;
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	border-top: 1px solid #ccc;
+	text-align: center;
+	padding: 8px 0 20px 0;
+	margin-top: 6px;}
+#siteIndex {	
+	width: 100%;
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	border: 1px solid #ccc;
+	padding: 4px;
+	margin: 8px;}
+td.index {
+	width: 138px;
+	vertical-align: top;
+	float: left;}
+td.index ul {
+	font-size: 11px;
+	list-style-type: square;
+	padding: 0;}
+td.index li {line-height: 1.2em;}
+.partners {
+	width: 980px;
+	text-align: left;
+	border: 1px solid #ccc;
+	font-size: 11px;
+	padding: 4px;
+	margin: 8px;}
+
+#deckhead {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+#headline {
+	font-family: Times, serif;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+#subhead {
+	font-family: Times, serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#byline {
+	font: bold 11px Arial, Helvetica, sans-serif;
+	padding-top: 8px;
+}
+
+#titleline {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+#date {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333333;
+}
+
+#source-credit {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333333;
+}
+
+.text {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+#caption {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333333;
+}
+
+#credit {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #666666;
+}
+
+#rail-item {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	
+}
+
+#poll-question {
+	font-weight: normal;
+}
+
+#poll-choice {
+	color: gray;
+}
+
+.poll-margin {
+	margin-left: 5px;
+}
+
+#quiz-question {
+	font-weight: normal;
+}
+
+#quiz-choice {
+}
+
+#quiz-correct {
+	color: green;
+}
+
+#quiz-incorrect {
+	color: red;
+}
+
+#quiz-score {
+}
+
+#quiz-explanation {
+	color: gray;
+}
+
+#quiz-selected {
+	font-weight: normal;
+	color: blue;
+}
+
+#graffiti-topic {
+	font-weight: normal;
+}
+
+#graffiti-comment {
+	color: gray;
+}
+
+#form-label {
+	font-weight: normal;
+	color: gray;
+}
+
+#form-select {
+	font-weight: normal;
+	font-family: Arial;
+	font-size: 11px; 
+	color: #003366;
+	background-color:#D6D6D8; 
+}
+
+#form-submit {
+	font-weight: normal;
+	font-family: Arial;
+	font-size: 11px; 
+	color: #003366;
+}
+
+#column-title {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #336699;
+	text-transform: uppercase;
+}
+
+#columnist-name {
+	font-size: large;
+	color: #990000;
+}
+
+#columnist-email {
+}
+
+#date-heading {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #003366;
+}
+
+#list-bullet {
+	font-family: Arial, sans-serif; 
+	font-size: 11px; 
+	font-style: normal;  
+	text-transform: none; 
+	color: #000000;
+	text-align: left;
+}
+
+#navbar-item {
+	margin-left: 11px;
+	text-indent: -11px;
+}
+
+a.navbar:link, a.navbar:visited, a.navbar:active  {
+	font-family: Arial, Helvetica, sans-serif;
+	color:#FFFFFF;
+	text-decoration: none;
+}
+
+a.navbar:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	color:#FFFFCC;
+	text-decoration: underline;
+}
+
+pre {
+	white-space: pre;
+	font-family: monospace;
+	font-size: 10px;
+}
+
+.textlinks { 
+	font: normal 10px Arial, sans-serif; 
+	color: #991A38; }
+	
+.textlinks ul {	font-size: 10px;
+	list-style: none !important;
+	margin: 2px 0 0 1px;
+	padding: 0;
+}
+	
+.textlinks li {
+	background: url(/images/nynews/3bullet.jpg) no-repeat 0;
+	line-height: 1.1em;
+	display: inline;}	
+	
+.searchfrom {
+	background-color: #FFFFFF; 
+	border: 3px double #336699; 
+	font-family: Verdana; 
+	font-size: 10px; 
+	color: #336699}
+	
+.searchbutton {
+	background-color: #CCCCCC; 
+	border:1px double #336699; 
+	font-family: Verdana; 
+	font-size: 10px; 
+	color: #000000}
+	
+.navbottom {
+         background: #CCCCCC;
+	padding: 4px;
+	font-size: 11px;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	width: 120px;}
+	
+#related-rail {
+	width: 140px;
+	float: right;
+	margin-left: 4px;
+	padding: 3px;
+}
+#related-rail a {}
+#related-rail a:hover {}
+
+td#topStories {
+	width: auto;}
+td#deckSub  {
+	width: 366px;
+	padding: 0 8px 8px 0;}
+	
+.moreLink {
+	color: #991a38;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: italic;
+	text-align: right;
+	padding-bottom: 8px;}
+	
+.moreLink img {margin: 0;}
+	
+.moreLink a:link, .moreLink a:visited, .moreLink a:active {color: #991a38; font-weight: normal; font-style: italic; font-family: Arial, Helvetica, sans-serif; font-size: 12px;}
+
+.searchResults {
+	font: 12px Arial, Helvetica, sans-serif;
+	padding: 8px 8px 8px 0;
+	border-bottom: 3px solid #ccc;
+	line-height: 1.3em;}
+.searchResults a:link {
+		color:#336699;
+	text-decoration: none;
+}	
+	
+#searchNav {font-size: 11px;
+	padding-top: 8px;}
+
+#cubePage {width: 542px;}
+	
+td#cubeStory {
+	width: 542px;
+	padding-right: 8px;
+	font: normal 12px Arial, Helvetica, sans-serif;
+	line-height: 1.3em;
+}
+
+td#topRail {
+	width: 140px;
+	font: normal 12px Arial, Helvetica, sans-serif;
+	line-height: 1.3em; 
+	padding: 0;
+	margin: 0;
+}	
+
+td#topRail img {
+	margin-right: 0;
+}
+td#briefRail {
+	width: 140px;
+	font: normal 12px Arial, Helvetica, sans-serif;
+	line-height: 1.3em; 
+	padding: 0;
+	margin: 0;
+}
+
+td#briefRail img {
+	margin-right: 0;
+}
+
+td#briefRail ul {	
+	font-size: 12px;
+	list-style: none !important;
+	margin: 2px 0 0 1px;
+	padding: 0;
+}
+td#briefRail li { 	
+	background: url(/images/nynews/3bullet.jpg) no-repeat 2px 4px;
+	padding-left: 9px;
+	line-height: 1.2em;
+}
+td#rightRail {
+	width: 164px;
+	padding: 5px 0 0 8px;
+	font: normal 11px Arial, Helvetica, sans-serif;
+	line-height: 1.3em;
+}
+
+td#rightRail ul {	
+	list-style: none !important;
+	margin: 2px 0 0 1px;
+	padding: 0;
+}
+td#rightRail li { 	
+	background: url(/images/nynews/3bullet.jpg) no-repeat 2px 4px;
+	padding-left: 9px;
+	line-height: 1.2em;
+	font-size: 12px;
+	line-height: 1.3em;}
+
+#storyPage {width: 674px;}		
+td#deckStory, td#deckColumnist, td#deckGallery {
+	width: 576px; 
+	padding-right: 8px;
+	font: normal 12px Arial, Helvetica, sans-serif;}
+td#deckStory div {
+	font: normal 12px Arial, Helvetica, sans-serif;
+	color: #000;
+	line-height: 1.3em;
+	padding-bottom: 1em;}
+td#deckStory p {
+	font: normal 12px Arial, Helvetica, sans-serif;
+	color: #000;
+	line-height: 1.3em;}
+td#deckStory h2, td#cubeStory h2, td#deckGallery h2	{
+	font: bold 24px Times, serif;
+	margin: 4px 0 8px 0; }
+td#deckStory h3, td#cubeStory h3 {
+	font: bold 16px Times, serif; 
+	margin-bottom: 8px;}
+td#deckStory h3 a:link, td#deckStory h3 a:visited, td#deckStory h3 a:active {
+	text-decoration: none; }
+ td#deckStory h3 a:hover {
+	text-decoration: underline; }
+td#deckStory h4, td#cubeStory h4 {
+	font: normal 11px Arial, Helvetica, sans-serif;
+	color: #000000;
+	text-transform: uppercase;
+	margin: 4px 0 2px 0;}
+td#deckStory h4 a:link, td#deckStory h4 a:visited, td#deckStory h4 a:active {
+	text-decoration: none; }
+td#deckStory h4 a:hover {
+	text-decoration: underline; }
+td#deckStory ul {
+	font: normal 12px Arial, Helvetica, sans-serif;
+ }
+#htmlPage {width: 100%;
+	font: normal 12px Arial, Helvetica, sans-serif;
+	color: #000;
+	line-height: 1.3em;}		
+td#deckHtml {
+	width: auto; 
+	padding-right: 8px;}	
+td#deckHTML h2 	{
+	font: bold 24px Times, serif;
+	margin: 4px 0 8px 0; }
+
+td#search {
+	width: 160px;
+	padding-right: 5px;}
+
+#search div{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000;
+	line-height: 1.3em;
+}
+#venuePhotos {
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 4px;
+	margin-left: 2px;
+	vertical-align: bottom}
+#venuePhotos img {border: 1px solid #000;}
+
+/* Rail Ads on Story Page  */
+#icons {margin: 0 0 20px; padding-top: 0px;}
+#icons img {margin-right: 4px !important;}
+
+.columnist {
+	font-family: Times, serif;
+	font-size: 24px;
+	font-weight: bold; }
+.columnist img {
+	margin: 2px 6px 5px 6px;
+	}
+
+.deckhead {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+td.briefPhoto {
+	padding-bottom: 12px;
+}
+td.briefPhoto img {
+	width: 140px;
+	height: auto;
+	margin-right: 8px;}
+	
+#front {
+	width: 506px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+}
+#front h2 {
+	font-family: Arial, Helvetica, serif;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: bold;
+}
+#front h3 {
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	font-style: normal;
+}
+#front h4 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+#front ul {	font-size: 10px;
+	list-style: none !important;
+	margin: 2px 0 0 1px;
+	padding: 0;
+}
+#front li {	
+	background: url(/images/nynews/3bullet.jpg) no-repeat 0px 4px;
+	padding-left: 7px;
+	line-height: 1.2em;
+	font: normal 12px Arial, Helvetica, sans-serif; 
+}
+
+td#downPage {
+	width: 358px;
+	font: normal 12px Arial, Helvetica, sans-serif;
+	padding: 0 8px 8px 0;
+}
+
+td#centerContent {
+	padding-right: 8px;
+	width: 358px;
+	font: normal 12px Arial, Helvetica, sans-serif;
+}
+
+.spanHead {
+	font: bold 22px Arial, Helvetica, serif;
+	margin: 0;
+	padding: 0;
+}
+
+td#centerContent h2, td#pageContent h2, td#downPage h2, #midFront h2, td#deckColumnist h2, td#deckMid  h2 {
+	font: bold 18px Arial, Helvetica, serif;
+}
+
+td#centerContent h3, td#pageContent h3, td#downPage h3, #midFront h3, td#deckColumnist h3, td#deckGallery h3, td#deckMid h3  {
+	font: bold 12px Arial, sans-serif;
+}
+
+td#centerContent h4, td#pageContent h4, td#downPage h4, #midFront h4, #briefRail h4, td#deckColumnist h4,td#deckGallery h4, td#deckMid h4 {
+	font: bold 11px Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+}
+
+td#centerContent ul, td#pageContent ul, td#downPage ul, #midFront ul, #bizTable ul, td#deckColumnist ul, td#deckGallery ul, td#deckMid ul  {	
+	font-size: 12px;
+	list-style: none !important;
+	margin: 2px 0 0 1px;
+	padding: 0;
+}
+td#centerContent li, td#pageContent li, td#downPage li, #midFront li, #bzTable li, td#deckColumnist li, td#deckGallery li, td#deckMid li  { 	
+	background: url(http://www.newsday.com/images/nynews/3bullet.jpg) no-repeat 4px left;
+	padding-left: 9px;
+	line-height: 1.2em;
+}
+
+td#pageContent {
+	padding-right: 8px;
+	width: 522px;
+	font: normal 12px Arial, Helvetica, sans-serif;
+}
+
+td#deckLt {
+	width: 232px; 
+	padding-bottom: 8px;
+}
+#deckLt li {
+	line-height: 1.1em; }	
+	
+td#deckMid {
+	width: 268px; 
+	padding: 0 0 8px 8px;
+	font: normal 12px Arial, Helvetica, sans-serif;	
+	line-height: 1.3em;
+}
+
+td#deckRt  {
+	font: normal 12px Arial, Helvetica, sans-serif;	
+	line-height: 1.3em;
+	padding: 0 0 8px 8px;}
+
+#mezz {
+		width: 506px;
+		margin: 10px 0;
+		font: normal 11px Arial, Helvetica, sans-serif;}
+}
+ #mezz img {margin: 2px 8px;}
+ #mezz h4 {
+	font: normal 12px Arial, Helvetica, sans-serif;
+	color: #000000;
+	text-transform: none;}
+ 
+.mezzHeader {
+	  	border-top: 1px solid #991A38; 
+		border-left: 1px solid #991A38;
+		width: 33%;
+		height: 14px;
+		color: #666666;
+		font-weight: bold; 
+		background-color: #ccc;
+		padding: 1px 0 1px 0;
+		text-align: center;}
+ .mezzHeader2 {
+	  	border-top: 1px solid #991A38; 
+		border-left: 1px solid #991A38;
+		border-right: 1px solid #991A38;
+		width: 33%;
+		height: 14px;
+		color: #666666;
+		font-weight: bold;
+		background-color: #ccc;
+		padding: 1px 0 1px 0;
+		text-align: center;}
+.mezzBox {
+	  	padding: 2px 6px;
+	  	border-top: 1px solid #991A38; 
+		border-left: 1px solid #991A38;
+		border-bottom: 1px solid #991A38;
+		width: 33%;
+		font: normal 11px Arial, Helvetica, sans-serif;}
+.mezzBox2 {
+	  	padding: 2px 6px;
+	  	border-top: 1px solid #991A38; 
+		border-left: 1px solid #991A38;
+		border-right: 1px solid #991A38;
+		border-bottom: 1px solid #991A38;
+		width: 33%;
+		font: normal 11px Arial, Helvetica, sans-serif;}	
+		
+.page-title {
+	 color: #000;
+ 	font-family: Times, serif;
+ 	font-size: 24px;
+ 	font-weight: bold; 
+	border: none;}
+
+.twinCol {
+	width: 372px;
+}
+td.twinCol1 {
+	width: 50%;
+	padding-right: 8px;
+	padding-bottom: 8px;
+}
+td.twinCol2 {
+	width: 50%;
+	padding-bottom: 8px;
+}
+
+.brief {
+	font: normal 12px Arial, Helvetica, sans-serif;
+}	
+
+.list-date {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #999999;
+}
+
+.rail-head {
+	color: #666666;
+	font: bold 11px Arial, Helvetica, sans-serif;
+	text-transform: none;
+	background-color: #CCCCCC;
+	padding: 1px 0;
+	text-align: center;
+	border-bottom: 1px solid #7E1034;
+	margin-bottom: 4px;
+}
+
+.contentHeader {
+	width: 358px;
+}
+.frontHeader {
+	width: 248px;
+}
+.contentHeader, .frontHeader { 
+	font-weight: bold;
+	border-bottom: 1px solid #7E1034;
+	margin-bottom: 4px;	
+	padding: 0;
+	}
+
+td.contentHeaderGray  {	
+    width: 60%;
+    color: #666;
+	font: bold 11px Arial, Helvetica, sans-serif;
+	background: #ccc;
+	padding: 1px 0;
+	height: 12px;
+	text-align: center;
+	 }
+td.contentHeaderWhite  {
+    width: 40%;
+	background: #FFFFFF;
+	height: 12px; }
+	
+.timeStamp {
+	font-size: 10px;
+	font-family: Arial, Helvetica, sans-serif; 
+	font-weight: normal;
+	color: #991A38;
+}
+
+#midFront {
+	width: 468px;
+	margin-right: 8px;
+}
+.midFront1 {
+	width: 230px;
+	padding-right: 6px;}
+.midFront2 {
+	width: 230px;}
+	
+#bizTable {
+	width: 506px;
+	margin-right: 8px;
+}
+
+/* image styles */
+.bigPix  {
+	border: 1px solid #000000;
+	width: 230px;
+	height: 230px;
+	}	
+.tintPix  {
+	border: 1px solid #000000;
+	width: 226px;
+	height: 226px;
+	margin: 2px;
+	}
+.briefpix {
+	width: 100px;
+	height: auto;
+	float: left;
+	margin: 0 4px 8px 4px;
+}
+
+.briefpixRight {
+	width: 100px;
+	height: auto;
+	float: right;
+	margin: 0 4px 8px 4px;
+}
+
+.ledepix {
+	width: 140px;
+	height: auto;
+	float: left;
+	margin: 0 4px 8px 4px;
+	border: 1px solid #000;}
+
+.ledepixRight {
+	width: 140px;
+	height: auto;
+	float: right;
+	margin: 0 4px 8px 4px;
+	border: 1px solid #000;
+}
+
+.thumbnail {
+	float: left;
+}
+
+.smallpix {
+	width: 70px;
+	height: 70px;
+}
+
+.thumbnailRight {
+	float: right;
+}
+
+#exploreTop { 
+	width: 320px;
+	font: bold italic 18px Verdana, san-serif;
+	margin-bottom: 0;
+	color: #006699;
+	width: 100%;
+	background-color: #fc0;
+	padding-bottom: 2px; 
+	border-bottom: 4px solid #fff; 
+	border-top: 4px solid #fff;  }
+#exploreBottom {
+	width: 320px;
+	background-color: #CDD0B3;}
+	
+.townLabel {
+	color:  #991A38;
+}
+
+#calHeader {
+	background-color: #CCD2B0;
+	font: bold 12px Arial, Helvetica, sans-serif;}
+	
+#calendar {
+	background-color: #fff;
+	margin-bottom: 4px;}
+#calendar td {width: 33px;
+	text-align: center;
+	border: 1px solid #CCD2B0;}
+	
+.specialsLabel {
+	padding-left: 4px;
+	font: bold 12px Helvetica, Verdana, Arial, sans-serif; 
+	background-color: #F0F2E4;
+	border-top: solid 4px #CED1B4;
+	border-bottom: solid 1px #CED1B4;}
+.specialsLabel a:link, .specialsLabel a:visited {color: #075B7F; }
+.specialsLabel a:hover, .specialsLabel a:active {color: #F5C711;  }
+.specialsBlurb {background-color: #F0F2E4; 
+	padding: 4px 0 4px 4px; 
+	font: normal 11px Helvetica, Verdana, Arial, sans-serif; 
+	color: #000;
+	line-height: 1.1em;
+}
+.specialsBlurb ul {
+    font-size: 10px;
+	list-style: none !important;
+	margin: 2px 0 0 1px;
+	padding: 0;
+}
+.specialsBlurb li {	
+    font: normal 11px Helvetica, Verdana, Arial, sans-serif;
+	display: inline;
+	background: url(http://www.newsday.com/images/nynews/3bullet.jpg) no-repeat 4px left;
+	line-height: 1.1em; 
+}
+.specialsBlurb img {margin-right: 4px; 
+	width: 90px; 
+	height: 120px; 
+	border: 0; 
+	float: left;
+}
+
+.RAILLABELWHITE { 
+	font: bold 11px Arial, sans-serif; 
+	text-transform: none; 
+	color: #FFFFFF}
+	
+.RAILLINKS { 
+	font-family: bold 11px Arial, sans-serif; 
+	text-transform: none; 
+	color: #003366}
+	
+.PHOTOCREDIT { 
+	font: normal 9px Arial, Helvetica, sans-serif; 
+	text-transform: none; 
+	color: #999999 }
+	
+.video {
+	background-color: #eee;
+		padding: 4px;
+	
+}
+ 
+ .videoThumb {
+	width: 235px;
+	height: 100px;
+	border: 1px solid #000;
+}
+
+#copyright {
+	font: normal 11px Arial, Helvetica, sans-serif;
+	color: #333333;
+}
+
+#icons {margin: 0 0 20px; padding-top: 0px;}
+#icons img {margin-right: 4px !important;}
+
+.RAILLINKS { 
+	font-family: Arial, sans-serif; 
+	font-size: 11px; 
+	font-style: normal; 
+	font-weight: bold; 
+	text-transform: none; 
+	color: #003366}
+	
+.mastNav a:link, .mastNav a:visited  {
+	color: #fff;
+	font: normal 12px Arial, Helvetica, sans-serif;}
+	
+/* Topix styles */
+	
+ .topix_postform .disclaimerText { 
+        color: #000 !important 
+}
+.topix_postform { 
+        border: 1px solid #7E1034 !important;
+		background-color: #eee !important;
+        padding: 4px !important;
+}
+.headerText, .fieldHeader, .captchaText {
+		font: bold 12px Arial, sans-serif;
+}
+.headerText {padding-bottom: 8px;}
+.submitButton {
+		font: normal 12px Arial, sans-serif;
+}
+.topix_postform submit {
+		font: normal 12px Arial, sans-serif;
+}
+.topixPromo {
+	background-color: #eee;
+	font: normal 12px Arial, sans-serif;
+	width: 165px;
+	margin: 8px 0;
+	padding: 2px 0;
+	text-align: center;
+}
+.funBook { 
+ font: normal 9px Arial, Helvetica, sans-serif;
+ text-align: right;
+}
+.emailprint {
+	text-align: left;
+	width: 100px;
+}

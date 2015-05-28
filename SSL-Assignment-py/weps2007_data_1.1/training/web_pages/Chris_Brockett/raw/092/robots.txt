@@ -1,0 +1,7 @@
+# I do not know the use of this file yet, but to reduce the number of File Not Found errors on the server, I'm suppying this blank file. Paul Flint 2003-02-28 
+
+# learned a thing or two about robots.txt! IP address 195.174.107.32 was hitting everything on the meta tag index script, so I'm trying to block that behavior. It may be a malicious bot, and may need htaccess blocking.
+
+User-agent: *
+Disallow: /cgi-jat/
+Disallow: /cgi-bin/

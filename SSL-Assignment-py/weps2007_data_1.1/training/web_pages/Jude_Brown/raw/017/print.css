@@ -1,0 +1,71 @@
+
+
+#content {
+	overflow: visible !important;
+	width: auto !important;
+}
+
+#page {
+	width: auto !important;
+	padding-right: 1em !important;
+}
+
+#global_links2,
+#side_menu,
+#site_nav,
+.back_to_top,
+#search_link {
+	display: none;
+}
+
+#une_logo img {
+	visibility: visible !important;
+	height:40px;
+}
+#une_logo a {
+	background: transparent !important;
+}
+#global_links, #une_logo {
+	background: white !important;
+	color: black !important;
+}
+#une_logo {
+	top: -.5em;
+}
+
+
+#site_title {
+	top: .7em !important;
+	color: black !important;
+}
+#site_title a {
+	color: black !important;
+}
+
+#global_links a:hover {
+	color: black !important;
+}
+
+
+#side_menu, 
+#footer_CRICOS_ABN {
+	float: none !important;
+}
+#main {
+	border: none !important;
+	margin: 0 !important;
+	width: auto !important;
+}
+
+address#location {
+	margin-top: -5.5em;
+}
+
+#side_menu,
+#site_nav, 
+#main {
+	position: static !important;
+}
+
+
+/* EOF print.css */

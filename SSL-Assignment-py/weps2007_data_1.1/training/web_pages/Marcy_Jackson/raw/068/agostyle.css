@@ -1,0 +1,275 @@
+
+/* ==================================================== */
+/*     This site developed and hosted with bx.com.      */
+/*     http://www.bx.com/                               */
+/*     info@bx.com                                      */
+/*     800-344-8487 or 401-274-8991                     */
+/*     All contents contained herein                    */
+/*     Copyright (c)2004                                */
+/* ==================================================== */
+
+body {background:#E3E7EA;
+  color:#7A93AF;
+  font:10px Verdana,Geneva,Helvetica,sans-serif;
+  margin:0px;
+  text-align:center}
+  
+  
+#outercontainer {width:765px;
+  position:relative;  
+  margin:0px auto 0px auto;}
+
+  
+h1 {font:bold 12px Verdana,Geneva,Helvetica,sans-serif;
+  text-transform:uppercase}
+  
+a:link {color:#7A93AF}
+a:visited {color:#A7A9AB}
+a:hover, a:active{color:#C4D1DE;text-decoration:none}
+  
+h2,h3,h4,h5,h6,.head2,th {font:bold 11px Verdana,Geneva,Helvetica,sans-serif;}
+
+hr {color:#006; background:#006; border-style:none;padding:0px}
+
+hr.thin {height:1px}
+
+hr.subsection {color:silver; background:silver;}
+
+p, td {font:10px Verdana,Geneva,Helvetica,sans-serif;}
+
+.newstable th{font:bold 11px Verdana,Geneva,Helvetica,sans-serif;
+  text-align:left;
+  color:#006}
+
+#lastupdate,#copyright {font-size:9px}
+
+#lastupdate a:link,#lastupdate a:visited {background:#E3E7EA;
+  color:#7A93AF; text-decoration:none}
+  
+#lastupdate a:active,#lastupdate a:hover {background:#E3E7EA;
+  color:#006; text-decoration:none}
+
+#sitenav {vertical-align:bottom;
+  text-align:right;
+  white-space:nowrap}
+  
+#skipnav{display:none} 
+
+#banner td {background:#282D80; color:#FFF; 
+  vertical-align:bottom; height:131px}
+  
+#topbanner {width:100%}
+#sealimg {width:264px}
+#bannerimg{width:499px}
+#headbanner img {width:280px}
+  
+  
+#banner #headbanner {background:#7791AD;
+  height:43px; color:#006; 
+  margin:15px 0px 10px 0px;
+  width:100%}
+  
+#bannerright {border-top:5px solid #7791AD}
+
+#bannerbottom {background:#FFF url(../images/ago2sp/stripebg.gif) repeat-x}
+
+#navcontainer {background:#AFC0D2; color:#006; width:132px}
+
+#mainnav {background:#6081A6; color:#FFF;
+  padding:14px 0px 27px}
+  
+#mainnav img {width:132px; border-style:none}
+  
+#contentcell,#expandedcontentcell {background:#FFFFFF}
+  
+#subnavcontainer {width:132px; background:#FFFFFF}
+
+#subnavcontainer p {font:bold 11px Verdana,Geneva,Helvetica,sans-serif;
+  margin: 18px 0px 5px 10px; 
+  color:#282D80; background:#FFF;
+  text-transform:lowercase; }
+  
+.stripped #subnavcontainer p {text-transform:none; font-size:14px}
+
+#subnavcontainer ul {margin-left:-40px;
+  font:bold 11px Verdana,Geneva,Helvetica,sans-serif;
+  margin-top:2px}
+  
+
+
+#subnavcontainer ul li {font:11px Verdana,Geneva,Helvetica,sans-serif;
+  padding-bottom:9px;
+  color:#282D80}
+  
+.stripped #subnavcontainer li {font-size:14px}
+  
+#subnavcontainer ul li a, #subnavcontainer p a {display:block;
+  padding:0px 2px 2px 1px;
+  margin-right:3px}
+  
+#maincontent {font:11px Verdana,Geneva,Helvetica,sans-serif;
+  margin:10px;
+  color:#006; height:400px}
+
+#maincontent[id]{height:auto; min-height:400px}
+  
+#maincontent p, #maincontent div, #maincontent td {font:11px Verdana,Geneva,Helvetica,sans-serif;
+  background:#FFF; color:#006}
+  
+#maincontent .xl p, #maincontent .xl div, #maincontent .xl td {font:14px Verdana,Geneva,Helvetica,sans-serif;}
+  
+.stripped #maincontent p,.stripped #maincontent div,.stripped #maincontent td,.stripped #maincontent li {font-size:14px; color:#000}
+  
+#maincontent a {font-weight:bold}
+
+  
+#sitesearch {margin:15px 0px 13px 11px;}
+  
+#search {width:110px}
+
+#enter {display:block;
+  margin: 5px 11px 0px 72px}
+
+.topalign td {vertical-align:top}
+  
+#sidebarcontainer {background:#96AAC2; color:#282D80;
+  width:154px;
+  font:11px Verdana,Geneva,Helvetica,sans-serif;}
+  
+
+  
+#sidebarcontainer #sidebar h1,#sidebarcontainer #sidebar h2,#sidebarcontainer #sidebar h3,#sidebarcontainer #sidebar h4,#sidebarcontainer #sidebar h5,#sidebarcontainer #sidebar h6
+  {background:#C4D1DE;
+   color:#006; text-align:center;
+   font-weight:bold;
+   padding:2px 0px;
+   margin-top:0px; margin-bottom:0px}
+   
+ #sidebarcontainer #sidebar p,#sidebarcontainer #sidebar ul {padding:0px 7px;
+  color:#006}  
+ 
+.navlinks2 li {font-family:Verdana,Geneva,Helvetica,sans-serif;}
+ 
+ #sidebarcontainer #sidebar td {color:#006} 
+ 
+ #breadcrumb {margin:0px 10px}
+ #contentcell #breadcrumb {margin-top:30px}
+ #breadcrumb h2 {font-size:9px; color:#006}
+ #breadcrumb h2 a:link,#breadcrumb h2 a:visited {color:#006; text-decoration:none; font-size:10px; white-space:nowrap}
+ #breadcrumb h2 a:active,#breadcrumb h2 a:hover {color:#6081A6; text-decoration:underline; font-size:10px; white-space:nowrap}
+ #breadcrumb h2 span {font-size:10px; white-space:nowrap}
+ p.warning, #maincontent p.warning {color:red}
+ 
+ #maincontent #popuptop,#popuptop {background:#282D81 url(/images/ago2sp/popupseal.jpg) no-repeat;
+  color:#FFF;
+  text-align:right;
+  height:50px}
+  
+  #popuptop h1 {margin:10px 30px auto auto}
+  
+ #maincontent #popuptop h1 {margin:10px 10px auto auto}
+ 
+ 
+ .slideleft {background:#7A94AF; color:#006}
+ 
+  .linknum {
+      float:left;
+      width:17px;
+      border:1px solid #006;
+      background:#7A94AF;
+      color:#FFF;
+      font-size:10px;
+      margin-right:2px;
+      height:17px;
+      line-height:14px;
+      text-align:center}
+      
+      .linknum a:link {color:#fff}
+      .linknum a:visited {color:#eee}
+      .linknum a:active, .linknum a:hover {color:#006}
+      
+fieldset, .fieldset {border:1px solid #7A94AF; padding:10px;margin-bottom:18px}
+legend, .legend {background:#AFC0D2;
+  padding:0px 5px;
+  border:1px solid #7A94AF;
+  font-weight:bold;
+  color:#282D80;}
+  
+pre {text-align:left; font-size:12px; color:#000}
+
+.nobullet {list-style:none; margin-left:0px; padding-left:0px}
+
+.nobullet li {padding-bottom:9px}
+
+.indent {margin-left:20px}
+
+.bordertable {border:1px solid #6080A6;
+    border-width: 1px 0px 0px 1px}
+    
+.bordertable td, .bordertable table .bordertable td, .bordertable table .bordertable th{border:1px solid #6080A6;
+    border-width: 0px 1px 1px 0px}
+    
+.bordertable table td, .bordertable table .bordertable td table td {border-width: 0px 0px 0px 0px}
+
+th {text-align:left; color:#000366; font-size:11px}
+
+.bordertable th {font-size:13px; color:#000366}
+
+.subtable th {font-size:10px}
+
+.datatable th {font-size:11px; color:#FFF; background:#6080A6}
+
+
+
+.datatable td {vertical-align:top; border-bottom:1px solid #f0f0f0}
+#maincontent .datatable .alt td {background:#f8f8f8}
+
+
+.datatable th.county{border-bottom:12px solid #FFF}
+
+
+.textlinks {padding:0px 20px 10px 20px; word-spacing: .5em; text-align:center}
+.textlinks a{word-spacing: 0em}
+
+#maincontent .label {background:#f0f0f0; color:#282D80;
+    font-weight:bold;}
+    
+#maincontent .reqlabel {background:#f0f0f0; color:#74152B;
+    font-weight:bold;}
+    
+caption {font:bold 10px Verdana,Geneva,sans-serif;
+   color:#282D80;}
+   
+   
+#searchresults {font-size:12px;padding:3px; border-bottom:3px double #282D80;
+  margin:40px 0px 15px; background: #f0f0f0}
+  
+.searchtype {font-size:12px;border-bottom:1px solid #6080A6;
+  padding:3px; margin:30px 0px 15px;}
+  
+  
+#eldersearch .label {width:120px}
+  
+
+
+.stripped #maintable {height:80%;}
+.stripped #maintable[id] {height:auto; min-height:300px}
+
+.stripped #innercontainer {height:80%;}
+.stripped #innercontainer[id] {height:auto; min-height:300px;}
+
+.phone, .nobr {white-space:nowrap}
+     
+    
+     
+ 
+
+ 
+ 
+ 
+  
+
+  
+
+
+ 

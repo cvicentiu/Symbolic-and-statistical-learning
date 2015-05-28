@@ -1,0 +1,196 @@
+<!-- Vignette StoryServer 4 Mon Jul 31 19:42:47 2000 -->
+<HTML>
+<HEAD>
+<TITLE>Alfonte, James Morehead</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#330099" VLINK="#990033">
+
+<center>
+<table cellpadding=0 cellspacing=0 border=0 width="500" height="100%">
+<tr valign=center>
+<td>
+<!-- Vignette StoryServer 4 Sun Jun 11 23:20:53 2000 -->
+<SCRIPT LANGUAGE="JavaScript">
+<!-- HIDE FROM OTHER BROWSERS
+
+function genfocusMe(obj)
+{
+        obj.select();
+}
+var     searchStrVal = "";
+var     cookieName = "_cwpsearch";
+
+var defexpires = new Date();
+defexpires.setTime (defexpires.getTime() + 24 * 60 * 60 * 365 * 1000);
+
+//
+//
+function getCookieVal (offset) {
+  var endstr = document.cookie.indexOf (";", offset);
+  if (endstr == -1)
+    endstr = document.cookie.length;
+  return unescape(document.cookie.substring(offset, endstr));
+}
+//
+//  Function to return the value of the cookie specified by "name".
+//
+function GetCookie (name) {
+  var arg = name + "=";
+  var alen = arg.length;
+  var clen = document.cookie.length;
+  var i = 0;
+  while (i < clen) {
+    var j = i + alen;
+    if (document.cookie.substring(i, j) == arg)
+      return getCookieVal (j);
+    i = document.cookie.indexOf(" ", i) + 1;
+    if (i == 0) break;
+  }
+  return null;
+}
+//
+//  Function to create or update a cookie.
+//
+function SetCookie (name, value) {
+  var argv = SetCookie.arguments;
+  var argc = SetCookie.arguments.length;
+  var expires = (argc > 2) ? argv[2] : null;
+  //var path = (argc > 3) ? argv[3] : null;
+  var path = "/";
+  var domain = (argc > 4) ? argv[4] : null;
+  var secure = (argc > 5) ? argv[5] : false;
+  document.cookie = name + "=" + escape (value) +
+    ((expires == null) ? ("; expires=" + defexpires.toGMTString()) : ("; expires=" + expires.toGMTString())) +
+    ((path == null) ? "" : ("; path=" + path)) +
+    ((domain == null) ? ".west-point.org" : ("; domain=" + domain)) +
+    ((secure == true) ? "; secure" : "");
+}
+
+function init(fm)
+{
+    searchStrVal = GetCookie( cookieName );
+    if(searchStrVal != null){
+        fm.QueryText.value = searchStrVal;
+    }
+    genfocusMe( fm.QueryText );
+}
+
+function submitCheckPoint(fm)
+{
+    SetCookie(cookieName, fm.QueryText.value );
+    return true;
+}
+
+// STOP HIDING HERE -->
+</SCRIPT>
+<STYLE TYPE="text/css"> 
+<!--
+	.search {
+		text-decoration: none; 
+		font-size: 8pt; 
+		font-family: Arial, Helvetica; 
+		font-weight: bold;
+	}
+// -->
+</STYLE>
+<STYLE TYPE="text/css"> 
+<!--
+	.shortcut {
+		text-decoration: none; 
+		font-size: 8pt; 
+		font-family: Arial, Helvetica; 
+		font-weight: normal;
+	}
+	.asc {
+		text-decoration: none; 
+		font-size: 8pt; 
+		font-family: Arial, Helvetica; 
+		font-weight: normal;
+		color: blue
+	}
+
+// -->
+</STYLE>
+<table cellspacing=0 cellpadding=0 border=0 width="100%">
+<tr><td>
+<table cellspacing=0 cellpadding=0 border=0 width="100%">
+<tr>
+<td bgcolor="#000000" align=right colspan=3><IMG SRC="wporg_menu.gif" ALIGN="BOTTOM" NOSAVE ISMAP USEMAP="#wporg_menuMap1" WIDTH="398" HEIGHT="20" border=0><MAP NAME="wporg_menuMap1">
+
+<AREA SHAPE="rect" COORDS="82,1,131,18" HREF="http://www.west-point.org/society/" ALT="West Point Societies">		
+	
+<AREA SHAPE="rect" COORDS="266,1,315,18" HREF="http://www.west-point.org/service" ALT="WP-ORG Services">		
+	
+<AREA SHAPE="rect" COORDS="2,1,35,18" HREF="http://www.west-point.org/" ALT="WP-ORG Home">		
+	
+<AREA SHAPE="rect" COORDS="131,1,175,18" HREF="http://defender.west-point.org/parent/" ALT="West Point Parents">		
+	
+<AREA SHAPE="rect" COORDS="36,1,81,18" HREF="http://www.west-point.org/class/" ALT="USMA Class Year Groups">		
+	
+<AREA SHAPE="rect" COORDS="176,1,265,18" HREF="http://www.west-point.org/family/" ALT="Greater West Point Family and Friends">		
+	
+<AREA SHAPE="rect" COORDS="316,1,395,18" HREF="http://www.west-point.org/about.html" ALT="About WP-ORG">		
+	</MAP>
+</td>
+</tr>
+</table>
+		</td></tr>
+<tr><td>		
+<FORM 
+	METHOD="POST" 
+	NAME="searchForm" 
+	ACTION="http://lazarus.west-point.org/cgi-bin/texis/webinator/search"
+	ENCTYPE="x-www-form-urlencoded" 
+	onSubmit="return submitCheckPoint(searchForm);">	
+<table cellpadding=0 cellspacing=0 border=0 width="100%">
+<tr><td width="90%" bgcolor="gold" nowrap class=search>
+<b><font FACE="Arial,Helvetica,sans-serif" >&nbsp;&nbsp;Search</font></b>&nbsp;<INPUT NAME="query" SIZE="14" TYPE="text" OnFocus="genfocusMe(this);">&nbsp;<b><font FACE="Arial,Helvetica,sans-serif" >in</font></b> <select name="db" size=1>
+	<option value=wporg> WP-ORG </option>
+</select>
+&nbsp;<font FACE="Arial,Helvetica,sans-serif" ><input type=submit name=butact value=GO></font></td>
+<td align=right nowrap bgcolor="gold">&nbsp;
+</td>
+</tr>
+</table>
+</form>
+		</td></tr>
+</table>
+<table cellpadding=0 cellspacing=0 border=0 width="100%">
+<tr valign=top>
+<td><table cellpadding=0 cellspacing=0 border=0><tr><th align=left><font COLOR="maroon" FACE="Arial,Helvetica,sans-serif" SIZE="+2" >14957 Alfonte, James Morehead</font></th></tr></table></td>
+<td align=right><table cellpadding=0 cellspacing=0 border=0><tr><th align=left><font COLOR="maroon" FACE="Arial,Helvetica,sans-serif" SIZE="+2" >usma1945-H1</font></th></tr></table></td>
+</tr>
+<tr>
+<td height=80 align=center colspan=2>
+	<table border=0 width="98%">
+	<tr><td>
+	
+			  </td></tr>
+	</table>
+</td>
+</tr>
+</table>
+
+<br>
+<TABLE  WIDTH="100%" CELLSPACING=0 CELLPADDING=0 BORDER=0 >
+<TR>
+<TD bgcolor=#ddaa5f>
+<TABLE WIDTH="100%" CELLSPACING=1 CELLPADDING=2 BORDER=0 >
+<TD nowrap><p class="asc">&nbsp;<a href="mailto:feedback@west-point.org"><IMG SRC="tiny4.gif" NOSAVE BORDER=0 WIDTH=14 HEIGHT=10 ALT="Email Feedback" NOSAVE></a>&nbsp;<a href="mailto:feedback@west-point.org"><font FACE="Arial,Helvetica,sans-serif" >FEEDBACK</font></a>&nbsp;</p></TD>
+
+<td><center><table cellpadding=0 cellspacing=0 border=0><tr><td class=asc><a href="http://www.west-point.org/users/usma1945/14957/admin"><img src=http://defender.west-point.org/images/padlock.gif NOSAVE border=0 width=21 height=21></a></td><td class=asc><a href="http://www.west-point.org/users/usma1945/14957/admin"><i><font FACE="Verdana,Arial,Helvetica" >ADMIN</font></i></a></td></tr></table></center></td>
+<TD nowrap align=right><p class="group"><a href="http://www.west-point.org/"><img src="backwporg.gif" BORDER="0" HEIGHT="23" WIDTH="90" NATURALSIZEFLAG="0" ALT="Return Home" NOSAVE></a></p></TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE></center>
+
+</td>
+</tr>
+</table>
+</center>
+
+</BODY>
+</HTML>
+<!-- Copyright West Point Connection 1999 -->

@@ -1,0 +1,193 @@
+/* Stylesheet concepts borrowed from Andrew Mutch, w3.org, Zeldman, et al. */
+/* Updated November 6, 2005 */
+/* Robert G. Sullivan, Schenectady County Public Library */
+
+html, body {
+font-family: "Times New Roman", Times, serif;
+background-color: #ffffff;
+color: #000000;
+margin-top: 0;
+margin-left: 5%;
+margin-right: 5%;
+}
+
+h1, h2, h3, h4, h5, h6, address {text-align: center;}
+
+cite {font-style: italic;}
+
+img {border-style: none;}
+
+.indent {text-indent: 3em;}
+
+.cen {text-align: center;}
+
+.right {text-align: right;}
+
+.goto {font-weight: bold; text-align: center;}
+
+.info {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-weight: bold;
+font-size: 80%;
+background-color: #ffff99;
+color: #000000;
+margin-left: 5%;
+margin-right: 5%;
+border: solid 1px;
+padding: .5em;
+}
+
+/* library name along the top */
+
+/* ccffff will give you bright yellow */
+/* ffff00 will give you pale blue */
+
+#library {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-weight: bold;
+background-color: #ffcc00;
+color: #000000;
+margin-left: 3%;
+margin-right: 3%;
+text-align: center;
+}
+
+#masthead {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-weight: bold;
+background-color: #ffcc00;
+color: #000000;
+margin-left: 3%;
+margin-right: 3%;
+text-align: center;
+}
+
+#sitename {
+font-size: 125%;
+margin-bottom: 0;
+}
+
+#sponsor {
+font-size: 80%;
+font-style: italic;
+margin-top: 0;
+}
+
+/* Main menu bar formatting */
+
+/* 00ff00 will give you light green */
+/* 99ffff will give you light blue */
+
+.navigate {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-weight: bold;
+font-size: 80%;
+background-color: #00ffff;
+color: #000000;
+margin-top: 1em;
+margin-left: 3%;
+margin-right: 3%;
+text-align: center;
+border-style: solid;
+border-width: 1px;
+}
+
+/* Navigation menu */
+
+.navigate a {
+background-color: #00ffff;
+color: #000000;
+text-decoration: none;
+}
+
+.navigate a:hover {
+background-color: #000000;
+color: #00ffff;
+}
+
+/* for browsers which don't support style sheets */
+
+.hide {
+display: none;
+}
+
+.pic {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 90%;
+font-weight: bold;
+margin-left: 2em;
+text-align: center;
+}
+
+.plain {list-style-type: none;}
+
+.updated {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 70%;
+font-weight: bold;
+margin: 1em 0 1em 0;
+}
+
+/* Adapted from the w3button classes created by Marek Prokop <http://www.sovavsiti.cz/css/> */
+
+.footer {
+  margin: 0 1em 0 0;
+  width: 29em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 70%;
+  font-weight: bold;
+  display: inline;
+}
+
+.valid-xhtml {width: 12em;}
+
+.valid-css {width: 9em;}
+
+.wai-wcag {width: 16em;}
+
+.footer a {
+  display: inline;
+  width: 100%;
+}
+
+.footer a:link,
+.footer a:visited,
+.footer a:hover {
+  background-color: #ffcc66;
+  color: #000;
+  text-decoration: none;
+}
+
+.footer a:link,
+.footer a:visited {
+  border-top: 1px solid #cecece;
+  border-bottom: 2px solid #4a4a4a;
+  border-left: 1px solid #cecece;
+  border-right: 2px solid #4a4a4a;
+}
+
+.footer a:hover {
+  border-bottom: 1px solid #cecece;
+  border-top: 2px solid #4a4a4a;
+  border-right: 1px solid #cecece;
+  border-left: 2px solid #4a4a4a;
+}
+
+.footer span.w3c {
+  padding: 0 0.4em;
+  background-color: #fff;
+  color: #0c479d;
+}
+
+.footer span.spec {
+  padding: 0 0.4em;
+  background-color: #ffcc66;
+  color: #000000;
+}
+
+.footer span.valid {
+  padding: 0 0.4em;
+  background-color: #ffcc66;
+  color: #990000;
+}
+

@@ -1,0 +1,75 @@
+@import url("/sites/www-dev.couragerenewal.org/themes/CCR/menu/hmenu/hmenu.css");
+/*@import url("/themes/CCR/menu/hmenu/ccr-menu.css");*/
+
+#top-menu {
+	display: none;
+}
+.submenu {
+	margin-left: 10px;
+}
+div.dynarch-popup-menu tr.item td.icon img, div.dynarch-popup-menu tr.item td.icon div {
+  width: 0;
+}
+div.dynarch-popup-menu tr.item td.icon {
+	display: none;
+  	width: 0;
+}
+div.dynarch-popup-menu td.end {
+	width: 0;
+}
+
+div.dynarch-popup-menu td {
+	text-align: left;
+}
+
+/* custom menus */
+div.dynarch-popup-menu { border: 1px solid #fff; color: #fff ; background-color: #000; padding: 0; }
+
+.hover, .active {
+  color: #000;
+}
+
+div.about-menu {
+  background-color: #ac4336;
+}
+
+div.about-menu .hover, div.about-menu .active {
+  background-color: #f2d2ac;
+	position: relative;
+}
+
+div.programs-menu {
+  background-color: #30268a;
+}
+
+div.programs-menu .hover, div.programs-menu .active  {
+  background-color: #99FFFF;
+}
+
+div.resources-menu {
+  background-color: #875b07;
+}
+
+div.resources-menu .hover ,
+div.resources-menu .active 
+{
+  background-color: #FFFFCC;
+}
+
+/* remove any paddings from the top menu bar.
+Also, note that the main menu bar is embedded in a div with
+style="float: left" in order to make the menu have the
+minimum width (otherwise it'll take all the available
+horizontal space).
+*/
+div.dynarch-horiz-menu { padding: 0; }
+div.dynarch-horiz-menu table { padding: 0; border-collapse: collapse; }
+div.dynarch-horiz-menu table tr td.item table td.icon,
+div.dynarch-horiz-menu table tr td.item,
+div.dynarch-horiz-menu table tr td.hover,
+div.dynarch-horiz-menu table tr td.active,
+div.dynarch-horiz-menu table tr td.pressed { padding: 0 0 0px 0; border: none; }
+
+/* uncomment the following line if you wish to remove the border too */
+div.dynarch-horiz-menu { border: none; }
+

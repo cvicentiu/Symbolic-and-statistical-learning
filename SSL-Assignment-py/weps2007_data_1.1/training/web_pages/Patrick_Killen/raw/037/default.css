@@ -1,0 +1,2745 @@
+/*  Start Default Advocacy Styles */
+ 
+#ad_wrapper {width:100%;position:relative;background-color:white;text-align:left;
+font:arial;}
+
+form#frmAdvocacy {position:relative;margin:0px;padding:0px;border:0px;}
+
+#ad_wrapper fieldset {border:0;}
+
+div#ad_wrapper input.ad_chk {width:auto;}
+/* default button style */
+input.ad_sbt {
+      margin:-3px 0px 0px 8px;
+      width:65px;
+      height:26px;
+      background:transparent url(/siteapps/advocacy/images/voc_Btn_Go.gif) top left no-repeat;
+      cursor:pointer;
+      cursor:hand;}
+
+#ad_wrapper label.ad_radio,#ad_wrapper label.ad_chk {
+position:relative;
+top:0px;
+/top:3px;/* IE/NS8 hack helps align checkboxes and radiobuttons with label text*/}
+
+#ad_wrapper label, #ad_wrapper input {
+display:block;
+float:left;}
+
+#ad_wrapper h2 {
+font-size:140%;
+line-height:160%;} 
+
+#ad_wrapper h3.legend  {
+font-size:120%;
+line-height:125%;
+font-weight:bold;
+color:#004BD9;}
+
+/*CHANGED 12-14-05, rp */
+#ad_wrapper textarea {
+width:90%;
+float:none;}
+
+.ad_Item h2 {border-bottom:1px solid #CCCCCC;}  
+
+div#ad_Reg input.ad_sbt {position:static;padding-bottom:10px;}
+
+#switcher_template_EmailFriend_pnlEmailFriend {position:relative;}
+
+  /* start find legislators section */
+  #ad_Find_Leg {
+  position:absolute;
+  right:0px;
+  top:190px;
+  /top:200px;
+  width:180px;
+  margin:0px 0px 0px 0px;}
+  
+  #ad_Find_Leg fieldset {
+  background-color:#EDECEA;
+  border:none;
+  padding:15px;}
+  
+  #ad_Find_Leg h4 {
+  font-size:110%;
+  margin:0 0 5px 0;
+  padding:0;}
+  
+  #ad_Find_Leg p {
+  font-size:102%;
+  font-weight:normal;
+  margin:0px 0 10px 0;
+  padding:1;} 
+
+  #ad_Find_Leg label {width:35%;margin:5px 0;}
+  
+  #ad_Find_Leg input {width:55%;margin:5px 0;}
+  
+  #ad_Find_Leg select {width:57%;margin:5px 0;}
+  
+    #ad_Find_Leg label.ad_sbt {visibility:hidden;}
+  
+    #ad_Find_Leg input.ad_sbt     { 
+    margin:4px 0px 0px 0px;
+    width:65px;
+    height:26px;
+    background: transparent url(/siteapps/advocacy/images/voc_Btn_Find.gif) top left no-repeat;
+    cursor: pointer;
+    cursor: hand;}    
+  /* end find legislators section */  
+
+
+  /* start main loginbox  */  
+    #ad_Main_Lgn_wrpr {width:auto;}
+  
+  #ad_Main_Lgn_H2 {
+  font-size:120%;
+  padding-bottom:0px;
+  margin:0;}
+
+  div#ad_Main_Lgn {
+  margin:0px 0px 25px 0px;
+  padding-bottom:15px;
+  background-color:#FEF5CC;}
+
+    #ad_Main_Lgn fieldset.ad_Main_Lgn {
+    padding:11px 11px 0px 11px;
+    border:0px;
+    margin:0px;}
+
+      #ad_Main_Lgn p#ad_Main_Lgn_p {display:none;}
+
+      #ad_Main_Lgn fieldset.ad_Main_Lgn label {
+      width:auto;
+      padding:0px 0px 0px 0px;
+      margin:0px 4px 0px 3px;
+      text-align:right;
+      vertical-align:none;}
+
+      #ad_Main_Lgn fieldset.ad_Main_Lgn input {
+      width:85px;
+      height:17px;
+      padding:0px;
+      margin:0px;}
+
+      #ad_Main_Lgn #ad_pwd {margin-bottom:8px;} 
+            
+      #ad_Main_Lgn fieldset.ad_Main_Lgn br.ad_pwd {display:block;clear:left;}
+      
+      #ad_Main_Lgn fieldset.ad_Main_Lgn label.ad_sbmt {
+      display:none;}
+
+      #ad_Main_Lgn fieldset.ad_Main_Lgn input.ad_sbt {
+      clear:left;
+      display:inline;
+      margin:10px 0 10px 67px;
+      /margin-left:70px;
+      width:65px;
+      height:26px;
+      background: transparent url(/siteapps/advocacy/images/voc_Btn_Sgnin_sml.gif) top right no-repeat;
+      cursor: pointer;
+      cursor: hand;}    
+
+      #ad_Main_Lgn fieldset.ad_Main_Lgn input.ad_chk {
+      display:inline;
+      margin:0px 0px 7px 72px;
+      padding:0px;
+      width:auto;
+      height:auto;}
+
+      #ad_Main_Lgn fieldset.ad_Main_Lgn label.ad_chk {
+      width:auto;
+      text-align:left;}
+
+      #ad_Main_Lgn br {display:none;}
+      #ad_Main_Lgn br.sbt {clear: both;display:inline;}
+      #ad_Main_Lgn br.rmbrMe {clear: both;display:inline;}
+
+      #ad_Main_Lgn a.ad_forgot{
+      margin:0px 0px 0px 82px;
+      padding:10px 5px 10px 12px;
+      background: transparent url(/siteapps/advocacy/images/voc_Brkt_RmbrMe.gif) center left no-repeat;}      
+      
+      #ad_Main_Lgn a.ad_join {
+      margin:0px 0px 0px 0px;
+      padding:10px 0px 10px 12px;
+      background: transparent url(/siteapps/advocacy/images/voc_Brkt_RmbrMe.gif) center left no-repeat;}      
+  /* end main loginbox  */ 
+
+  /* start main action item list */
+  #ad_Items_wrpr {width:auto;margin-right:200px;}
+    
+    h2#ad_Items_H2 {
+    margin:0;
+    padding:1px;}
+    
+    div#ad_Items {
+    border:1px solid #CCC;
+    padding:16px;}
+      
+    div.ad_Item {
+    margin:0;
+    padding:10px 0px;
+    vertical-align:top;
+    clear:left;
+    width:100%;}
+      
+    a.ad_Item {
+    font-size:130%/145%;
+    font-weight:bold;
+    color:#FF6600;
+    float:left;
+    padding:0px 5px 7px 0px;
+    clear:left;}
+      
+    div.ad_Item span.ad_urgent {
+    background: transparent url(/siteapps/advocacy/images/voc_urgent.gif) top left no-repeat;
+    width:72px;
+    height:20px;
+    display:block;
+    float:left;}
+    
+    div.ad_Item span.ad_urgent span {
+    visibility:hidden;}
+    
+    div.ad_Item span.ad_myActions {
+    background: transparent url(/siteapps/advocacy/images/voc_myActions.gif) top left no-repeat;
+    width:77px;
+    height:20px;
+    display:block;
+    float:left;}
+    
+    div.ad_Item span.ad_myActions span {
+    visibility:hidden;}
+    
+    div.ad_Item br {clear:left;}
+    
+    img.ad_Item {
+    margin:0 10px 0px 0px;
+    padding:0;
+    float:left;
+    display:inline;}
+      
+    p.ad_Item {
+    font-size:110%;
+    line-height:130%;
+    padding:0;
+    margin:0;}
+    
+    ul#ad_ItemNav {
+    list-style:none;
+    margin:0;
+    padding:25px 0 35px 0;}
+            
+    #ad_ItemNav li {
+    float:left;
+    padding:3px 6px 3px 0px;}
+    
+    #ad_ItemNav li a {
+    color:#FF6600;}
+  /* end action item list */
+  
+p#ad_Main_1 {display:none;}
+div#ad_Main_2 {display:none;}
+div#ad_Main_3 {display:none;}
+
+  /* start legislators/previous actions section */
+  #ad_Leg_Prev {
+  position:absolute;
+  right:0px;
+  top:0px;
+  width:180px;
+  margin:70px 0px 0px 190px;}
+  
+  #ad_Leg_Prev h4 {
+  font-size:110%;
+  margin:0 0 5px 0;
+  padding:0;}
+  
+  #ad_Leg_Prev h5 {
+  font-size:102%;
+  font-weight:normal;
+  margin:0px 0 5px 0;
+  padding:0;} 
+  
+  #ad_Leg_Prev ul  {
+  list-style:none outside none;
+  margin:0;
+  padding:0;}
+  
+  #ad_Leg_Prev li {
+  display:inline;
+  list-style:none outside none;
+  margin:0;
+  padding:0;} 
+  
+  #ad_Leg_Prev a {
+  display:block;
+  margin:2px 0 4px 0;
+  padding:0px;}
+  
+  #ad_Leg, #ad_Prev {
+  background-color:#EFF8FF;
+  margin:10px;
+  padding:10px;}
+  /* end legislators/previous actions section */    
+    
+  /* start welcome user section */
+  #ad_Wlcm_wrpr {
+  margin:0 0 25px 0;
+  color:#999999;}
+  
+  #ad_Wlcm_wrpr span {
+  font-size:120%;
+  font-weight:bold;
+  color:black;}
+  
+  #ad_Wlcm_wrpr a,#ad_Wlcm_wrpr a:visited,#ad_Wlcm_wrpr a:active {
+  font-size:105%;
+  padding-left:5px;
+  padding-right:5px;
+  text-decoration:none;
+  font-weight:bold;}
+  #ad_Wlcm_wrpr a:hover {
+  text-decoration:underline;} 
+  /*end welcome user section */
+  
+  
+  /* start *logged in* action item section  */
+  #ad_Items_LgdIn_wrpr {
+  width:280px;
+  margin:0px 200px 0px 0px;}
+    
+    h2#ad_Items_LgdIn_H2 {
+    font-size:200%;
+    margin:0;
+    padding:0;}
+    
+    div#ad_Items_LgdIn {
+    border:1px solid #CCC;
+    padding:16px;
+    margin:0;}
+    
+    ul#ad_ItemNav_LgdIn {
+    list-style:none;
+    margin:0;
+    padding:25px 0 35px 0;}       
+    
+    #ad_ItemNav_LgdIn li {
+    float:left;
+    padding:3px 6px 3px 0px;}
+    
+    #ad_ItemNav_LgdIn li a {
+    color:#FF6600;}
+      
+  /* end *logged in* action item section  */
+    
+p#ad_Main_LgdIn_1 {display:none;}
+div#ad_Main_LgdIn_2 {display:none;}
+div#ad_Main_LgdIn_3 {display:none;}
+
+
+  /* start identification loginbox  */  
+  
+  #ad_Lgn_H2 {
+  font-size:120%;
+  padding-bottom:0px;
+  margin:0;}
+
+  div#ad_Lgn {
+  margin:0px 0px 25px 0px;
+  padding-bottom:15px;
+  background-color:#FEF5CC;}
+  
+  h3.legend {
+  padding:11px 11px 0px 11px;
+  border:0px;
+  margin:0px;}
+  
+  #ad_Lgn p#ad_Lgn_p2 {
+  padding:11px 11px 0px 11px;
+  border:0px;
+  margin:0px;}
+
+    #ad_Lgn fieldset.ad_Lgn {
+    padding:11px 11px 0px 11px;
+    border:0px;
+    margin:0px;}
+
+      #ad_Lgn p#ad_Lgn_p2 {display:none;}
+
+      #ad_Lgn fieldset.ad_Lgn label {
+      width:67px;
+      padding:0px 0px 0px 0px;
+      margin:0px 0px 0px 3px;
+      text-align:right;
+      vertical-align:none;}
+
+      #ad_Lgn fieldset.ad_Lgn input {
+      width:120px;
+      height:17px;
+      padding:0px;
+      margin:0px 7px 4px 3px;}
+
+      #ad_Lgn #ad_pwd {margin-bottom:8px;}  
+      
+      #ad_Lgn fieldset.ad_Lgn label.ad_sbmt {
+      display:none;}
+
+      #ad_Lgn fieldset input.ad_sbt {
+      margin:-4px 0px 0px 0px;
+      width:65px;
+      height:26px;
+      background: transparent url(/siteapps/advocacy/images/voc_Btn_Sgnin_sml.gif) top left no-repeat;
+      cursor: pointer;
+      cursor: hand;}    
+
+      #ad_Lgn fieldset.ad_Lgn input.ad_chk {
+      display:inline;
+      margin:0px 0px 7px 72px;
+      padding:0px;
+      width:auto;
+      height:auto;}
+
+      #ad_Lgn fieldset.ad_Lgn label.ad_chk {
+      width:auto;
+      text-align:left;}
+
+      #ad_Lgn br  {display:none;}
+      #ad_Lgn br.sbt {clear: both;display:inline;}
+      #ad_Lgn br.rmbrMe {clear: both;display:inline;}
+
+      #ad_Lgn a.ad_forgot{
+      margin:0px 0px 0px 82px;
+      padding:10px 12px 10px 12px;
+      background: transparent url(/siteapps/advocacy/images/voc_Brkt_RmbrMe.gif) center left no-repeat;}      
+      
+      #ad_Lgn a.ad_join {
+      margin:0px 0px 0px 0px;
+      padding:10px 12px 10px 12px;
+      background: transparent url(/siteapps/advocacy/images/voc_Brkt_RmbrMe.gif) center left no-repeat;}           
+  /* end identification loginbox  */ 
+  
+  
+  /* start zip code box  */   
+  
+  /*CHANGED 12-14-05, rp */
+  #ad_Zip_wpr {padding:20px;}
+  #ad_Zip_H2 {
+  font-size:120%;
+  font-weight:normal;
+  padding-bottom:0px;
+  margin:0;}
+
+  div#ad_Zip {
+  margin:0px 0px 25px 0px;
+  background-color:#FEF5CC;}
+
+    /*CHANGED 12-14-05, rp */
+    #ad_Zip fieldset.ad_Zip {   
+    padding:20px;
+    border:0px;
+    margin:0px;}
+
+      #ad_Zip legend {
+      display:none;}  
+
+      #ad_Zip p#ad_Zip_p {display:none;}
+
+      #ad_Zip fieldset.ad_Zip label {
+      width:98px;
+      padding:0;
+      margin:0px 5px 0px 0px;
+      text-align:right;}
+
+      #ad_Zip fieldset.ad_Zip input {
+      width:162px;
+      height:17px;
+      padding:0px;}
+      
+      #ad_Zip fieldset.ad_Zip label.ad_sbmt {
+      display:none;}
+
+      #ad_Zip fieldset input.ad_sbt {
+      margin:-3px 0px 0px 8px;
+      width:65px;
+      height:26px;
+      background: transparent url(/siteapps/advocacy/images/voc_Btn_Go.gif) top left no-repeat;
+      cursor: pointer;
+      cursor: hand;}
+
+      br.ad_zip {display:none;}
+           
+  /* end zip box  */  
+  
+  
+  /* start Email box  */  
+  
+  /*CHANGED 12-14-05, rp */
+  #ad_Email_H2 {
+  font-size:120%;
+  padding-bottom:0px;
+  font-weight:normal;
+  margin:20px 0 0 0;}
+
+  div#ad_Email {
+  margin:0px 0px 25px 0px;
+  background-color:#FEF5CC;}
+
+    #ad_Email fieldset.ad_Email {
+    padding:11px;
+    padding-bottom:13px;
+    border:0px;
+    margin:0px;}
+
+      #ad_Email legend {
+      display:none;}  
+
+      #ad_Email p#ad_Email_p {display:none;}
+
+      #ad_Email fieldset.ad_Email label {
+      width:118px;
+      padding:0;
+      margin:0px 5px 0px 0px;
+      text-align:right;}
+
+      #ad_Email fieldset.ad_Email input {
+      width:162px;
+      height:17px;
+      padding:0px;}
+      
+      /*CHANGED 12-14-05, rp */
+      div#ad_Email_wrpr div#ad_Email fieldset.ad_Email label.ad_sbmt, div#ad_Email_wpr div#ad_Email fieldset.ad_Email label.ad_sbmt {
+      display:none;}
+
+      #ad_Email fieldset input.ad_sbt {
+      margin:-3px 0px 0px 8px;
+      width:65px;
+      height:26px;
+      background:transparent url(/siteapps/advocacy/images/voc_Btn_Go.gif) top left no-repeat;
+      cursor:pointer;
+      cursor:hand;}
+
+      br.ad_email {display:none;}        
+  /* end zip box  */  
+  
+  /* start Identification Item Area */
+  
+  #ad_Id_Item_wpr h2 {margin:0;padding:0;border-bottom:1px solid #CCC;}
+  
+  /* end Identification Item Area */
+  
+  /* start  registration area ---------------------
+  -----------------------------------------------*/
+  /* CHANGED 12-14-05, rp */
+  #ad_Reg_wpr {
+  background-color:#E9E9E9;
+  padding:20px 20px 0px 20px;}
+  
+  /*CHANGED 12-14-05, rp */
+  #frmAdvocacy #ad_Reg_H2 {
+  color:#800000;
+  padding:12px 15px 15px 0px;
+  margin:0px 0px 0px 0px;}  
+  
+  div#ad_Reg {padding-bottom:25px;padding-top:1px;margin-top:5px;}
+    
+  /*CHANGED 12-14-05, rp */
+  #ad_Reg h3.legend {
+  padding:0;
+  border:0px;
+  margin:20px 0px 5px 0px;} 
+  
+  /* CHANGED 12-14-05, rp */
+  #ad_RegInfo_p {
+  margin:0px 0px 5px 0px;
+  padding:0 0 0 20px;
+  clear:both; }
+  
+  /* CHANGED 12-14-05, rp */
+  #ad_Reg fieldset {
+  margin:0;
+  padding:20px 10px;
+  border:0;
+  background-color:#DEDEDE;}
+  
+      span.ad_label {
+      display: block;
+      width: 117px;
+      margin:0px 9px 0px 0px;
+      text-align:left;
+      float: left;}
+  
+      p#ad_Reg_p {margin:0px;padding:0;}    
+    
+      #ad_Reg label {
+      width: 117px;
+      padding:0;
+      margin:0px 9px 0px 0px;}
+            
+      #ad_Reg input {
+      width: 188px;
+      margin: 0 0 6px 0;
+      padding:0;}   
+            
+      #ad_Reg select {margin-bottom:6px;width: 188px;}  
+      
+      #ad_Reg input.ad_chk {
+      width:auto;
+      padding:0px;
+      margin:0px 10px 3px 0px;}
+      
+      #ad_Reg input.ad_chkbx {
+      width:auto;
+      float:left;
+      padding:0px;
+      margin:0px 10px 3px 0px;}
+    
+      #ad_Reg label.ad_chk {
+      width:auto;
+      padding:0px;} 
+      
+        #ad_Reg fieldset.ad_RegInfo input.ad_radio {
+        padding:0px;
+        margin:0px 2px 0px 0px;
+        width:auto;}
+      
+        #ad_Reg fieldset.ad_RegInfo label.ad_radio {
+        width:auto;
+        padding:0px;
+        margin:0px 20px 0px 0px;} 
+
+                        div#ad_Reg fieldset.ad_RegInfo label {
+        width:120px;}     
+        
+      #ad_Reg br {clear: left;}
+                
+    /* start information fieldset */ 
+        #ad_Reg fieldset.ad_RegInfo input.ad_radio {
+        padding:0px;
+        margin:0px 2px 0px 0px;
+        width:auto;}
+      
+        #ad_Reg fieldset.ad_RegInfo label.ad_radio {
+        width:auto;
+        padding:0px;
+        margin:0px 20px 0px 0px;}
+    /* end information fieldset */
+    
+    
+    /* start topics fieldset */     
+    #ad_Reg fieldset.ad_Topc {padding:10px 0;}
+    
+    #ad_Reg fieldset.ad_Topc span {display:block;padding:18px 0 2px 6px;font-weight:bold;}
+    
+    #ad_Reg fieldset.ad_Topc input {display:inline;margin-left:10px;}
+
+      
+      p#ad_Topc_p {
+      visbility:hidden;
+      clear:both;}                
+    /* end topics fieldset */     
+    
+    /* start newsletter fieldset */         
+    #ad_Reg fieldset.ad_Nwsltr {padding:10px 0;}
+    
+    #ad_Reg fieldset.ad_Nwsltr input {margin-left:10px;display:inline;}
+
+    /* end Newsletter fieldset*/  
+    .ad_ltr_page_prev,.ad_ltr_page_next {
+    float:left;
+    display:block;
+    cursor: pointer;
+      cursor: hand;}  
+      
+    div#ad_Reg div.ad_counter input {width:160px;margin:0 5px;}
+    
+    div#ad_wrapper div#ad_Reg fieldset.ad_Ltr input.ad_chk {width:auto;}
+    /* CHANGED 12-14-05, rp */
+    fieldset.ad_Ltr span {display:block;padding:0;margin:0;}
+    
+    /* added 12-20-05, jec */
+    fieldset.ad_Ltr label span.alert
+    {
+    display:inline;
+    padding-right:5px;
+    }
+    
+    #ad_Reg fieldset.ad_Ltr input.ad_subject {width:250px; }
+
+    #ad_Reg fieldset.ad_Ltr input.ad_subject_RdOnly {width:250px; }
+    
+    #ad_Reg fieldset.ad_Ltr textarea.ad_message {}
+
+    #ad_Reg fieldset.ad_Ltr textarea.ad_message_RdOnly {  }       
+    /* start Create Login fieldset  */  
+    #ad_Reg fieldset.ad_MkLgn {
+    padding-bottom:20px;
+    margin-bottom:20px;}  
+              
+      p#ad_MkLgn_p {
+      padding:0px 00px 9px 0px;
+      clear:both;}  
+              
+      #ad_Reg fieldset.ad_MkLgn label {
+      width: 118px; 
+      margin-right:9px;}
+                
+      #ad_Reg fieldset.ad_MkLgn input {
+      width: 160px; 
+      margin-bottom:16px;}
+                
+      #ad_Reg fieldset.ad_MkLgn input.pwd {
+      margin-bottom:1px;}
+                
+      #ad_Reg fieldset.ad_MkLgn #ad_Mk_pwd2 {
+      margin-bottom:8px;}           
+                  
+      #ad_Reg fieldset.ad_MkLgn input.ad_chk {
+      display:inline;
+      margin:0px 3px 4px 140px;  
+      /margin-left:147px; 
+      padding:0px;
+      width:auto;
+      float:left;}
+            
+      #ad_Reg fieldset.ad_MkLgn label.ad_chk {
+      display:inline; 
+      text-align:left;
+      float:left;}        
+    /* end Create Login fieldset  */      
+    
+    #ad_Reg input.ad_preview {
+    margin:0 15px 0 0px;    
+    width:auto;
+    background: transparent url(/siteapps/advocacy/images/voc_Btn_Preview.gif) top left no-repeat;
+    cursor: pointer;
+      cursor: hand;
+    height:33px;
+    width:80px;   }         
+            
+    #ad_Reg label.ad_sbmt {display:block;visibility:hidden;}
+
+    #ad_Reg input.ad_sbt {
+    height:25px;
+    width:100px;
+    margin:0px 0 0 0;
+    padding:0px;
+    background: transparent url(/siteapps/advocacy/images/voc_Btn_Cont.gif) top left no-repeat;
+    cursor: pointer;
+      cursor: hand;}  
+    /* end registion area */  
+
+p#ad_Id_1 {display:none;} 
+div#ad_Id_2 {display:none;} 
+div#ad_Id_3 {display:none;}   
+
+#ad_Ltr_wpr {padding:1px 0 40px 0;margin:0;}
+
+  #ad_Ltr_wpr #ad_Reg_H2, #ad_Ltr_wpr #ad_Reg_p {display:none;}
+
+  #ad_Ltr_wpr #ad_Reg_wpr {
+  padding:0 20px 30px 20px;
+  margin:0;}
+  
+  #ad_Ltr_wpr #ad_Reg {
+  padding:0;
+  margin:0;
+  padding-bottom:40px;}
+  
+  #ad_Ltr_wpr #ad_Reg h3 {
+  padding:15px 0 5px 0;
+  margin:0;}
+  
+  #ad_Ltr_wpr #ad_Reg fieldset {
+  padding:10px 10px 20px 20px;
+  margin:0;}
+  
+  #ad_Ltr_wpr #ad_Reg fieldset input {
+  padding:0;
+  margin:0 3px 0 0;}        
+        
+  /* start recipients fieldset */
+    h5.ad_Recp,div.ad_Recp {padding:8px 0 2px 0;clear:left;}
+    
+    fieldset.ad_Recp {
+    margin-left:0px;
+    padding-left:0;}
+    
+    span.ad_chk {display:block;clear:left;}
+    
+    fieldset.ad_LtrFriend span  input {width:auto;}
+    
+    fieldset.ad_Recp select {width:40%;}
+    
+    #ad_Reg_wpr  fieldset.ad_Recp input.ad_radio, #ad_Reg_wpr  fieldset.ad_Recp label {
+    width:auto;}
+    
+    br.ad_Recp_print,br.ad_Recp_email {display:none;}
+  
+    .ad_wrong {text-align:right;padding-top:11px;}
+  /* end recipients fieldset */
+          
+  /* start letter fieldset */
+  /* CHANGED 12-14-05, rp */
+  #ad_Ltr_wpr fieldset.ad_Ltr {padding:20px 0;}
+  
+    #ad_Ltr_wpr fieldset.ad_Ltr label {
+    margin:0;
+    padding:0;  
+    width:auto;   
+    clear:left;
+    float:none;}
+    
+    #ad_Ltr_wpr fieldset.ad_Ltr input {
+    margin:0;
+    padding:0;    
+    clear:left;
+    float:none;}
+            
+    #ad_Ltr_wpr fieldset.ad_Ltr textarea {
+    width:85%;
+    height:250px;
+    margin:0 0 10px 0;
+    padding:0;
+    clear:left;
+    float:none;
+    display:block;}
+    
+    #ad_Ltr_wpr fieldset.ad_Ltr select {
+    width:75%;}
+    
+    #ad_Ltr_wpr fieldset.ad_Ltr input.ad_chkbx {
+    width:auto;
+    float:left;}      
+  /* end letter fieldset */ 
+    
+    /* start information fieldset */  
+    #ad_Ltr_wpr  fieldset.ad_RegInfo {
+    padding:15px 0 0 0;
+    margin:0;}        
+      
+    #ad_Ltr_wpr .ad_label,  #ad_Ltr_wpr  fieldset.ad_RegInfo label {
+    margin:5px 0 8px 0;
+    padding:0;  }
+    
+    #ad_Ltr_wpr #ad_RegInfo_p {
+    margin:0px 0px 5px 0px;
+    padding:0;
+    clear:both;
+    position:relative;
+    top:-5px; }
+    
+      #ad_Ltr_wpr  fieldset.ad_RegInfo input.ad_radio {
+      padding:0px;
+      margin:0px 2px 0px 0px;
+      width:auto;}
+        
+      #ad_Ltr_wpr  fieldset.ad_RegInfo label.ad_radio {
+      width:auto;
+      padding:0px;
+      margin:0px 20px 0px 0px;}
+    /* end information fieldset */    
+              
+    /* start topics fieldset */   
+      #ad_Ltr_wpr  p#ad_Topc_p {
+      visibility:hidden;
+      clear:both;}                
+    /* end topics fieldset */       
+  
+    #ad_Ltr_wpr input.ad_preview {
+    height:33px;
+    width:80px;
+    margin:15px 10px 0px 0px;   
+    background: transparent url(/siteapps/advocacy/images/voc_Btn_Preview.gif) top left no-repeat;
+    cursor: pointer;
+      cursor: hand;
+    float:left;}
+  
+    #ad_Ltr_wpr  input.ad_sbt {
+    position:static;
+    height:35px;
+    width:150px;
+    margin:15px 10px 0px 0px;
+    cursor: pointer;
+      cursor: hand;   
+    background: transparent url(/siteapps/advocacy/images/voc_Btn_SendNow.gif) top left no-repeat;} 
+          
+#ad_Ltr_1 {display:none;}
+#ad_Ltr_2 {display:none;}
+#ad_Ltr_3 {display:none;}
+
+
+#ad_FrFo_wpr #ad_Wlcm_wrpr {
+margin:0 0 15px 0;
+padding:0;}
+
+div#ad_FrFo_wpr  div#ad_Item {}
+
+div#ad_wrapper div#ad_FrFo_wpr  h2.ad_Item {
+margin:0;
+padding:0;
+border-bottom:1px solid #CCCCCC;}
+
+#ad_FrFo_wpr #ad_Reg_wpr {
+background-color:transparent;}
+
+#ad_FrFo_wpr #ad_Reg_wpr #ad_Reg_H2 {
+padding:0;
+margin:0;
+font-size:135%}
+
+#ad_FrFo_wpr #ad_Reg {
+padding:10px 0 60px 0;
+background-color:#F1F1F1;}
+
+#ad_FrFo_wpr p#ad_Reg_p {display:none;}
+
+  /* start recipient section */
+  #ad_FrFo_wpr fieldset.ad_Recp br {display:none;}
+  
+  #ad_FrFo_wpr div .ad_Recp div label {padding:0 0 0 3px;;margin:0;text-align:left;}
+ 
+  #ad_FrFo_wpr fieldset.ad_Recp .ad_wrong {width:auto;clear:left;}
+
+  #ad_FrFo_wpr .ad_Recp {clear:left;}
+  /* end recipient section */
+
+  #ad_Reg fieldset.ad_LtrFriend {margin-left:0;}
+  
+#ad_FrFo_wpr fieldset.ad_LtrFriend label {width:auto;}
+#ad_Reg fieldset.ad_LtrFriend label {width:auto;}
+#ad_Reg  fieldset.ad_LtrFriend input {margin:0;padding:0;}
+
+#ad_FrFo_wpr fieldset.ad_LtrFoe label {width:auto;}
+
+#ad_FrFo_wpr fieldset.ad_RegInfo label {width:100px;padding-left:0;margin-left:0;}
+
+#ad_FrFo_wpr input.ad_chk {width:auto;}
+
+div.ad_label_foe {margin:7px 0 0 112px;}
+
+#ad_FrFo_wpr div.ad_label_foe p {
+padding:7px 0 0 0;
+margin:0;}
+
+#ad_FrFo_wpr div.ad_label_foe label {
+width:auto;
+margin-top:10px;}
+
+    /* start Create Login fieldset  */  
+                    
+      #ad_FrFo_wpr p#ad_MkLgn_p {
+      padding:0px 20px 9px 15px;
+      clear:both;}  
+      
+      #ad_FrFo_wpr fieldset.ad_MkLgn {
+      margin:0 20px;padding:15px; }
+              
+      #ad_FrFo_wpr #ad_Reg fieldset.ad_MkLgn label {
+      width: 118px; 
+      margin-right:9px;}
+                
+      #ad_FrFo_wpr #ad_Reg fieldset.ad_MkLgn input {
+      width: 160px; 
+      margin-bottom:16px;}
+      
+      #ad_Reg textarea {width:85%;}
+                
+      #ad_FrFo_wpr #ad_Reg fieldset.ad_MkLgn input.pwd {
+      margin-bottom:1px;}
+                
+      #ad_FrFo_wpr #ad_Reg fieldset.ad_MkLgn #ad_Mk_pwd2  {
+      margin-bottom:8px;}           
+                  
+      #ad_FrFo_wpr #ad_Reg fieldset.ad_MkLgn input.ad_chk {
+      display:inline;
+      margin:0px 3px 4px 140px;  
+      /margin-left:147px; 
+      padding:0px;
+      width:auto;
+      float:left;}
+      
+    /* end Create Login fieldset  */    
+
+    #ad_FrFo_wpr  input.ad_preview {
+    height:33px;
+    width:80px;
+    margin:15px 10px 0px 0px;
+    padding:0px;    
+    background: transparent url(/siteapps/advocacy/images/voc_Btn_Preview.gif) top left no-repeat;
+    cursor: pointer;
+      cursor: hand;
+    float:left;
+    position:static;}
+  
+    #ad_FrFo_wpr  input.ad_sbt {
+    height:35px;
+    width:150px;
+    margin:15px 10px 0px 0px;
+    padding:10px;
+    cursor: pointer;
+      cursor: hand;   
+    background: transparent url(/siteapps/advocacy/images/voc_Btn_SendNow.gif) top left no-repeat;
+    position:static;}         
+    
+#ad_FrFo_LgdIn_wpr #ad_Wlcm_wrpr {
+margin:0 0 15px 0;
+padding:0;}
+
+div#ad_FrFo_LgdIn_wpr  div#ad_Item {}
+
+div#ad_wrapper div#ad_FrFo_LgdIn_wpr  h2.ad_Item {
+margin:0;
+padding:0;
+border-bottom:1px solid #CCCCCC;}
+
+#ad_FrFo_LgdIn_wpr #ad_Reg {margin-bottom:40px;}
+  
+  #ad_FrFo_LgdIn_wpr  input.ad_radio {padding:0;margin:0;}
+
+  /* start recipient section */
+  #ad_FrFo_LgdIn_wpr fieldset.ad_Recp br {display:none;}
+  
+  fieldset.ad_Recp div.ad_left,fieldset.ad_Recp div.ad_right {float:left;width:48%;}
+  
+  #ad_FrFo_LgdIn_wpr div .ad_Recp div label {padding:0 0 0 3px;;margin:0;text-align:left;}
+ 
+  #ad_FrFo_LgdIn_wpr fieldset.ad_Recp .ad_wrong {width:auto;clear:left;}
+
+  #ad_FrFo_LgdIn_wpr .ad_Recp {clear:left;}
+  /* end recipient section */
+    
+    
+    #ad_FrFo_LgdIn_wpr #ad_Reg div.ad_LtrFriend_Nav, #ad_FrFo_LgdIn_wpr div.ad_LtrFoe_Nav {margin:0;padding:0 0 8px 20px;font-size:85%;}
+    
+    #ad_FrFo_LgdIn_wpr fieldset.ad_LtrFriend label {width:auto;}
+    
+    
+    #ad_FrFo_LgdIn_wpr textarea {width:85%;}
+
+    #ad_FrFo_LgdIn_wpr fieldset.ad_LtrFoe label {width:auto;}
+
+    #ad_FrFo_LgdIn_wpr fieldset.ad_RegInfo label {width:100px;padding-left:0;margin-left:0;}
+
+    #ad_FrFo_LgdIn_wpr input.ad_chk {width:auto;}
+
+  div.ad_label_foe {margin:7px 0 0 112px;}
+
+  #ad_FrFo_LgdIn_wpr div.ad_label_foe p {
+  padding:7px 0 0 0;
+  margin:0;}
+
+  #ad_FrFo_LgdIn_wpr div.ad_label_foe label {
+  width:auto;
+  margin-top:10px;}
+  
+  #ad_FrFo_LgdIn_wpr input.ad_preview {
+  height:33px;
+  width:80px;
+  margin:15px 10px 0px 0px;
+  padding:0px;    
+  background: transparent url(/siteapps/advocacy/images/voc_Btn_Preview.gif) top left no-repeat;
+  cursor: pointer;
+  cursor: hand;
+  float:left;
+  position:static;}
+  
+  #ad_FrFo_LgdIn_wpr  input.ad_sbt {
+  height:35px;
+  width:150px;
+  margin:15px 10px 0px 0px;
+  padding:10px;
+  cursor: pointer;
+  cursor: hand;   
+  background: transparent url(/siteapps/advocacy/images/voc_Btn_SendNow.gif) top left no-repeat;
+  position:static;}     
+
+#ad_Ltr_Personal_wpr {
+padding:1px;
+margin:0;}
+
+  #ad_Ltr_Personal_wpr #ad_Reg_H2, #ad_Ltr_Personal_wpr #ad_Reg_p {display:none;}
+
+  #ad_Ltr_Personal_wpr #ad_Reg_wpr {
+  padding:0 20px 0 20px;
+  margin:0;}
+  
+  #ad_Ltr_Personal_wpr #ad_Reg {
+  padding:0;
+  margin:0;
+  padding-bottom:50px;}
+  
+  #ad_Ltr_Personal_wpr #ad_Reg h3 {
+  padding:15px 0 5px 0;
+  margin:0;}
+  
+  #ad_Ltr_Personal_wpr #ad_Reg fieldset {
+  padding:10px 10px 20px 20px;
+  margin:0;}
+  
+  #ad_Ltr_Personal_wpr #ad_Reg fieldset input {
+  padding:0;
+  margin:0 3px 0 0;}  
+      
+  /* end Item section */
+  #ad_Ltr_Personal_wpr h2 {
+  border-bottom: #CCCCCC solid 1px ;
+  padding:0;
+  margin:0;}      
+  /* end Item section */
+        
+  /* start recipients fieldset */
+    div.ad_Recp {padding-bottom:5px;}
+    
+    #ad_Reg_wpr  fieldset.ad_Recp input.ad_radio, #ad_Reg_wpr  fieldset.ad_Recp label {
+    width:auto;}
+    
+    br.ad_Recp_print,br.ad_Recp_email {display:none;}
+  
+    .ad_wrong {text-align:right;padding-top:11px;}
+  /* end recipients fieldset */
+          
+  /* start letter fieldset */
+  #ad_Ltr_Personal_wpr fieldset.ad_Ltr {padding:1px;}
+  
+    #ad_Ltr_Personal_wpr fieldset.ad_Ltr label {
+    margin:0;
+    padding:0;  
+    width:auto;   
+    clear:left;
+    float:none;}
+    
+    #ad_Ltr_Personal_wpr fieldset.ad_Ltr input {
+    margin:0;
+    padding:0;    
+    clear:left;
+    float:none;}
+    
+    fieldset.ad_LtrFriend label.ad_message {width:auto;}
+    
+    #ad_Ltr_Personal_wpr fieldset.ad_Ltr textarea {
+    width:85%;
+    height:250px;
+    margin:0 0 10px 0;
+    padding:0;
+    clear:left;
+    float:none;
+    display:block;}
+    
+    div#ad_Reg fieldset.ad_Ltr input.ad_chkbx, div#ad_Reg fieldset.ad_Ltr label {
+    width:auto;
+    clear:none;
+    float:left;}      
+  /* end letter fieldset */
+  
+    
+    /* start information fieldset */  
+    #ad_Ltr_Personal_wpr  fieldset.ad_RegInfo {
+    padding:15px 0 0 0;
+    margin:0;}
+      
+    #ad_Ltr_Personal_wpr .ad_label,  #ad_Ltr_Personal_wpr  fieldset.ad_RegInfo label {
+    margin:5px 0 8px 0;
+    padding:0;  }
+    
+    #ad_Ltr_Personal_wpr #ad_RegInfo_p {
+    margin:0px 0px 5px 0px;
+    padding:0;
+    clear:both;
+    position:relative;
+    top:-5px; }
+    
+      #ad_Ltr_Personal_wpr  fieldset.ad_RegInfo input.ad_radio {
+      padding:0px;
+      margin:0px 2px 0px 0px;
+      width:auto;}
+        
+      #ad_Ltr_Personal_wpr  fieldset.ad_RegInfo label.ad_radio {
+      width:auto;
+      padding:0px;
+      margin:0px 20px 0px 0px;}
+      
+    div#ad_Reg_wpr fieldset.ad_RegInfo span input, div#ad_Reg_wpr fieldset.ad_RegInfo span label {width:auto;}
+    /* end information fieldset */    
+    
+    /* start topics fieldset */     
+    #ad_Ltr_Personal_wpr  #ad_Reg fieldset.ad_Topc {}
+              
+      #ad_Ltr_Personal_wpr  p#ad_Topc_p {
+      visibility:hidden;
+      clear:both;}                
+    /* end topics fieldset */       
+  
+    #ad_Ltr_Personal_wpr input.ad_preview {
+    height:33px;
+    width:80px;
+    margin:15px 10px 0px 0px;
+    padding:0px;    
+    background: transparent url(/siteapps/advocacy/images/voc_Btn_Preview.gif) top left no-repeat;
+    cursor: pointer;
+      cursor: hand;
+    float:left;}
+  
+    #ad_Ltr_Personal_wpr  input.ad_sbt {
+      height:35px;
+      width:150px;
+      margin:15px 10px 0px 0px;
+      padding:0px;
+      background: transparent url(/siteapps/advocacy/images/voc_Btn_SendNow.gif) top left no-repeat;
+      cursor: pointer;
+      cursor: hand;   
+      float:left;
+    } 
+          
+    #ad_YrAcct_wpr {
+      padding:1px;
+      margin:0;
+    }
+
+  #ad_YrAcct_wpr #ad_Reg_p {display:none;}
+   
+  #ad_YrAcct_wpr  div#ad_Reg_wpr H2#ad_Reg_H2 { 
+  padding:0 0 5px 0;
+  margin:0 0 13px 0;
+  color:#000;
+  border-bottom:1px solid #ccc;}
+
+  #ad_YrAcct_wpr #ad_Reg_wpr {
+  padding:1px;
+  margin:0;
+  background-color:transparent;}
+  
+  #ad_YrAcct_wpr #ad_Reg {
+  padding:20px;
+  margin:0;
+  padding-bottom:50px;
+  background-color:#F1F1F1;}
+  
+  #ad_YrAcct_wpr #ad_Reg h3 {
+  padding:15px 0 5px 0;
+  margin:0;}
+  
+  #ad_YrAcct_wpr #ad_Reg fieldset {
+  padding:10px 10px 20px 20px;
+  margin:0;}
+  
+  #ad_YrAcct_wpr #ad_Reg fieldset input {padding:0;margin:0 3px 0 0;} 
+      
+  /* end Item section */
+  #ad_YrAcct_wpr h2 {
+  border-bottom: #CCCCCC solid 1px ;
+  padding:0;
+  margin:0;}      
+  /* end Item section */
+        
+  /* start recipients fieldset */
+    div.ad_Recp {padding-bottom:5px;}
+    
+    #ad_Reg_wpr  fieldset.ad_Recp input.ad_radio, #ad_Reg_wpr  fieldset.ad_Recp label {
+    width:auto;}
+    
+    br.ad_Recp_print,br.ad_Recp_email {display:none;}
+  
+    .ad_wrong {text-align:right;padding-top:11px;}
+  /* end recipients fieldset */
+          
+  /* start letter fieldset */
+  fieldset.ad_Ltr {padding:0;margin:0;}
+  
+    #ad_Reg fieldset.ad_Ltr label {margin:0;padding:0;  width:auto;}
+    
+    div#ad_wrapper div#ad_Reg fieldset.ad_Ltr input {
+    width:188px;
+    margin:0px;
+    margin-left:0px;
+    padding:0px;}
+    
+    fieldset.ad_Ltr select {width:60%;margin:0;padding:0; }   
+    
+    div#ad_wrapper #ad_Reg fieldset.ad_Ltr textarea {
+    width:85%;
+    height:250px;
+    margin:0 0 10px 0;
+    margin-left:0px;
+    padding:0;}
+    
+    div#ad_wrapper #ad_Reg fieldset.ad_Ltr input.ad_chkbx {width:auto;position:static;}         
+  /* end letter fieldset */
+      
+    /* start information fieldset */  
+    #ad_YrAcct_wpr  fieldset.ad_RegInfo {
+    padding:15px 0 0 0;
+    margin:0;}
+      
+    #ad_YrAcct_wpr .ad_label,  #ad_YrAcct_wpr  fieldset.ad_RegInfo label {
+    margin:5px 0 8px 0;
+    padding:0;  }
+    
+    #ad_YrAcct_wpr #ad_RegInfo_p {
+    margin:0px 0px 5px 0px;
+    padding:0;
+    clear:both;
+    position:relative;
+    top:-5px; }
+    
+      #ad_YrAcct_wpr  fieldset.ad_RegInfo input.ad_radio {
+      padding:0px;
+      margin:0px 2px 0px 0px;
+      width:auto;}
+        
+      #ad_YrAcct_wpr  fieldset.ad_RegInfo label.ad_radio {
+      width:auto;
+      padding:0px;
+      margin:0px 20px 0px 0px;}
+    /* end information fieldset */    
+    
+    /* start topics fieldset */     
+    #ad_YrAcct_wpr  #ad_Reg fieldset.ad_Topc {}
+              
+      #ad_YrAcct_wpr  p#ad_Topc_p {
+      visibility:hidden;
+      clear:both;}                
+    /* end topics fieldset */       
+  
+    #ad_YrAcct_wpr input.ad_preview {
+    height:33px;
+    width:80px;
+    margin:15px 10px 0px 0px;
+    padding:0px;    
+    background: transparent url(/siteapps/advocacy/images/voc_Btn_Preview.gif) top left no-repeat;
+    cursor: pointer;
+      cursor: hand;
+    float:left;}
+  
+    #ad_YrAcct_wpr  input.ad_sbt {
+    height:35px;
+    width:150px;
+    margin:15px 10px 0px 0px;
+    padding:0px;
+    background: transparent url(/siteapps/advocacy/images/voc_Btn_SendNow.gif) top left no-repeat;
+    cursor: pointer;
+      cursor: hand;   
+    float:left;} 
+          
+  
+h2#ad_Thk_H2 {
+  font-size:130%;
+  padding-bottom:5px;
+  margin:0 0 10px 0;
+  border-bottom:1px solid #CCC;}
+
+#ad_Thk_wpr .ad_Back {
+    height:28px;
+    width:158px;
+    margin:10px 0px 0px 0px;
+    padding:0px;
+    background: transparent url(/siteapps/advocacy/images/voc_Btn_Back.gif) top left no-repeat;
+    float:left;}
+    
+#ad_Thk_mesg_H2 {margin:5px 0 8px 0;} 
+
+#ad_Thk_mesg p {
+margin:0;
+padding:8px 0 0 0;
+border-top:1px solid #CCCCCC;}
+  
+#ad_Thk_mesg {padding-bottom:10px; }
+
+#ad_Card_wpr {background-color:#E9E9E9;padding-bottom:50px;}
+  
+#ad_Card_Image {text-align:center; padding:15px;}
+  
+#ad_Card fieldset {
+  margin:0px 15px;
+  padding:15px;
+  background:#DEDEDE;}
+  
+#ad_Card fieldset.ad_CardInfo div#ad_left {width:50%; float:left;}
+#ad_Card fieldset.ad_CardInfo input {width:170px;}
+#ad_Card fieldset.ad_CardMsg label {width:100%; padding:5px 0px 5px 0px;}
+#ad_Card fieldset.ad_CardMsg input {width:50%;}
+br.ad_CardMsg_br {clear:left;}
+
+div#ad_Friends_left {width:20px; float:left; padding-top:24px;}
+div#ad_Friends_middle {width:200px; float:left;}
+div#ad_Friends_right {width:200px }
+
+span#ad_Friends_Txt {margin-left:12px; margin-bottom:5px;}
+
+
+table.ad_Thk_Card {width:450px;}
+table.ad_Thk_Card td {width:220px;}
+table.ad_Thk_Card td input {width:180px;}
+
+br.ad_CardMsg {clear:left;}
+
+    #ad_Card_wpr input.ad_preview {
+    height:33px;
+    width:80px;
+    margin:15px 10px 0px 0px;
+    padding:0px;    
+    background: transparent url(/siteapps/advocacy/images/voc_Btn_Preview.gif) top left no-repeat;
+    cursor: pointer;
+      cursor: hand;
+    float:left;}
+  
+    #ad_Card_wpr  input.ad_sbt {
+    height:35px;
+    width:150px;
+    margin:15px 10px 0px 0px;
+    padding:0px;
+    background: transparent url(/siteapps/advocacy/images/voc_Btn_SendNow.gif) top left no-repeat;
+    position:relative;
+    top:0;
+    left:0;
+    float:left;} 
+
+div#ad_Stw_wpr {
+  background:#E9E9E9;
+  padding-bottom:0;
+  margin-bottom:0;}
+  
+div#ad_Stw   {
+  padding-bottom:0px;
+  margin-bottom:0px;}
+  
+#ad_Stw fieldset {
+  margin:0px 15px 0px 15px;
+  padding:13px 15px 15px 15px;
+  border:0;
+  background-color:#DEDEDE;}
+  
+  #ad_Stw fieldset.ad_Friends {
+  margin:0px 15px 0px 15px;
+  padding:13px 15px 0px 15px;}
+      
+#ad_Stw fieldset.ad_StwInfo div#ad_left {width:50%; float:left;}
+#ad_Stw fieldset.ad_StwInfo input {width:170px;}
+#ad_Stw fieldset.ad_StwMsg label {width:auto; float:left; padding:5px 0px;}
+#ad_Stw fieldset.ad_StwMsg input {width:60%;padding:0;margin:0;}
+
+fieldset.ad_Friends label {display:none;}
+
+br.ad_StwMsg_br {clear:left;}
+
+span#ad_Friends_Txt {margin-left:12px; margin-bottom:5px;}
+
+#ad_Stw_submit div input {float:left; width:170px;}
+#ad_Stw_submit div label {float:left; width:170px;}
+
+br.ad_StwMsg {clear:left;}
+
+#ad_Stw_wpr table.ad_Thk_Card {width:100%;
+border:0;
+padding:0;
+margin:0; }
+#ad_Stw_wpr table.ad_Thk_Card td {width:190px;}
+#ad_Stw_wpr table.ad_Thk_Card td input {width:160px;}
+
+/* start position extra friend fields */
+#switcher_template_EmailFriend_pnlButtonPanel {
+background-color:#E9E9E9;
+padding:0 15px ; 
+margin:0;
+clear:left;}
+
+#ad_BtnPnl {
+background:#DEDEDE;
+padding:0 5px 15px 5px; 
+/padding:0 15px 15px 15px; 
+margin:0;}
+
+table.ad_Thk_2 {width:100%;
+border:0;
+padding:0;
+margin:0;}
+table.ad_Thk_2 td {width:190px;}
+table.ad_Thk_2 td input {width:160px;}
+
+div.ad_Stw_submit {
+height:65px;
+margin:0;
+padding:1px 15px;
+background-color:#E9E9E9;}
+
+div.ad_Stw_submit div {background:#DEDEDE;}
+
+.ad_total_text {
+margin-top:15px;
+margin-left:15px;
+/margin-left:0px;}
+
+.ad_total {margin-bottom:15px;}
+/* end position extra friend fields */
+
+    div.ad_Stw_submit input.ad_preview {
+    height:35px;
+    width:100px;
+    margin:15px 10px 15px 0px;
+    padding:0px;    
+    background: transparent url(/siteapps/advocacy/images/voc_Btn_Preview.gif) top left no-repeat;
+    cursor: pointer;
+      cursor: hand;
+    float:left;}
+  
+    div.ad_Stw_submit input.ad_sbt {
+    height:35px;
+    width:150px;
+    margin:15px 10px 15px 0px;
+    padding:0px;
+    background: transparent url(/siteapps/advocacy/images/voc_Btn_SendNow.gif) top left no-repeat;} 
+
+  #ad_Zip_lte_wrpr {}
+  
+  #ad_Zip_lte_H2 {
+  padding-bottom:0px;
+  margin:0;}
+
+  #ad_Zip_lte {
+  text-align:left;
+  padding:10px 10px 0px 10px;
+  background-color:#FEF5CC;}
+
+    #ad_Zip_lte fieldset {
+    padding:0px;
+    padding-bottom:13px;
+    border:0px;
+    margin:0px;}
+
+      #ad_Zip_lte label {
+      width:60px;
+      padding:0;
+      margin:3px 3px 0px 0px;
+      text-align:left;}
+
+      #ad_Zip_lte input {
+      width:162px;
+      height:17px;
+      padding:0px;}
+      
+      #ad_Zip_lte label.ad_sbmt {
+      display:none;}
+
+      #ad_Zip_lte fieldset input.ad_sbt {
+      margin:0px 3px 0px 8px;
+      width:65px;
+      height:28px;
+      background: transparent url(/siteapps/advocacy/images/voc_Btn_Go.gif) top left no-repeat;
+      cursor: pointer;
+      cursor: hand;}
+
+      br.ad_zip {display:none;}       
+
+#ad_Thk_Zip_H2 {
+  padding-bottom:0px;
+  margin:0;
+  border-bottom:1px solid #CCCCCC; } 
+  
+#ad_Thk_Zip_wpr #ad_Thk_Zip_write {padding:1px 15px 5px 15px; margin:10px 0; background-color:#FEF5CC;}
+
+#ad_Thk_Zip_wpr #ad_Thk_Zip_send  {padding:1px 15px 15px 15px; margin:10px 0; background-color:#FEF5CC;}
+
+#ad_Thk_Zip_send fieldset {
+    padding:0px;
+    border:0px;
+    margin:0px;}
+    
+#ad_Thk_Zip_send select {width:150px; float:left; font-size:90%}
+    
+#ad_Thk_Zip_send input.ad_go {
+    padding:0px;
+    border:0px;
+    margin:0px;
+    background: transparent url(/siteapps/advocacy/images/voc_Btn_Go.gif) top left no-repeat;
+    }
+
+#ad_Thk_Zip_send label {display:none}
+
+#ad_Thk_Zip_rec { padding:0;margin:3px 3px 0px 0px;text-align:left;}
+  
+  #ad_Unable_p {
+  padding:10px 0;
+  color:#800000;
+  font-weight:bold;}
+  
+  #ad_Unable_wpr div {
+  margin:0;
+  background-color:#F1F1F1;}
+  
+  #ad_Unable_wpr fieldset {
+  margin:0;
+  padding:10px;
+  background-color:transparent;}
+  
+    #ad_Unable_wpr div#ad_Lgn_wpr fieldset label {text-align:right;width:130px;}
+    
+    #ad_Unable_wpr br {display:block;clear:left;}
+  
+    #ad_Unable_wpr div#ad_Lgn_wpr,#ad_Unable_wpr div#ad_Zip_wpr,#ad_Unable_wpr div#ad_Reg_wpr {
+    margin:10px 0;}
+    
+    #ad_wrapper #ad_Unable_wpr h3 {
+    color:#000000;
+    margin:0 0 10px 0;
+    padding:0;}
+    
+    /* start login section */
+    #ad_Unable_wpr  #ad_Lgn fieldset.ad_Lgn label {
+    width:65px;
+    padding:0;
+    margin:0 10px 0 0;}
+    
+    #ad_Unable_wpr  fieldset.ad_Lgn input {
+    width:170px;
+    padding:0;
+    margin:4px 0;}  
+    
+    #ad_Unable_wpr  #ad_Lgn fieldset.ad_Lgn label.ad_sbt {
+    display:block;
+    visibility:hidden;}
+      
+    #ad_Unable_wpr  #ad_Lgn fieldset.ad_Lgn input.ad_sbt  {   background-image:url(/siteapps/advocacy/images/voc_Btn_Sgnin_Blue.gif); 
+    position:static;
+    padding:0;
+    margin:5px 0 0 0;   }
+    
+    #ad_Unable_wpr #ad_Lgn  fieldset.ad_Lgn label.ad_chk {
+    width:auto;
+    padding:0;}
+    
+    #ad_Unable_wpr  #ad_Lgn    fieldset.ad_Lgn input.ad_chk  {
+    width:auto;
+    padding:0;
+    margin:0 0 0 75px;
+    /margin-left:72px;  } 
+    
+    #ad_Unable_wpr  #ad_Lgn fieldset.ad_Lgn  a.ad_forgot    {
+    margin:0 0 0 75px;
+    /margin-left:72px}
+    /* end login section */ 
+    
+    /* start zip section */         
+    #ad_Unable_wpr   #ad_Lgn fieldset.ad_Zip label {
+    width:100px;
+    padding:0;
+    margin:0 5px 0 0;
+    float:none;
+    clear:left;}
+    
+    #ad_Unable_wpr   #ad_Lgn fieldset.ad_Zip input {
+    width:170px;
+    padding:0;
+    margin:4px 0;
+    float:none;
+    clear:left;   } 
+    
+    div#ad_wrapper  #ad_Unable_wpr div .ad_Zip input.ad_sbt {   background-image:url(/siteapps/advocacy/images/voc_Btn_go_Blue.gif);  
+    position:static;
+    padding:0;
+    margin:0 0 0 8px; }
+    /* end zip section */
+        
+    /* start address section */
+    #ad_wrapper #ad_Unable_wpr div fieldset.ad_RegInfo label {
+    width:112px;
+    padding:0;
+    margin:0 12px 0 0;
+    text-align:right;}
+    
+    #ad_Unable_wpr #ad_Lgn fieldset.ad_RegInfo input {
+    width:170px;
+    padding:0;
+    margin:4px 0;
+    clear:left;   } 
+              
+    #ad_Unable_wpr fieldset.ad_RegInfo input.ad_sbt {   background-image:url(/siteapps/advocacy/images/voc_Btn_go_Blue.gif);
+    position:static;
+    padding:0;
+    /margin:0 0 0 -2px; }   
+    /* end address section */
+    
+      
+    /* post-integration edits */  
+      /* new class added to reg form for 'Finished' button */
+      /*CHANGED 12-14-05, rp */
+      #ad_Reg input.ad_sbt_fnsh {
+      height:25px;
+      width:100px;
+      margin:0px 0 0 0;
+      padding:0px;
+      background: transparent url(/siteapps/advocacy/images/button_finish.gif) top left no-repeat;
+        cursor: pointer;
+        cursor: hand;}  
+    /* end registion area */
+    
+/* ---------------------------------------------------
+------------    Start 191B     -----------------------
+--------------------------------------------------- */
+
+/* state, address, and zip leg. search, common styles */
+  #ad_Ele_search_H2 { border-bottom: #B2B2B2 1px solid; padding:0 0 15px 0;}
+  #ad_Ele_search_P { margin: 0; padding: 0 0 10px 0; color: #999;}
+
+  .ad_search{
+    padding-left:10px;
+    width:100%;
+  }
+  .ad_search fieldset{
+    border: none;
+    padding:10px;
+    margin:0;
+  }
+  .ad_search H3 { color: #933; font: bold 120%/130%; margin: 0; padding: 15px 0 5px 0;}
+  .ad_search select {float:left;display:block;}
+  #ad_wrapper .ad_search label.ad_sbt{display:none;}
+  #ad_wrapper .ad_search input.ad_sbt { 
+     background: transparent url(/siteapps/advocacy/images/voc_Btn_go.gif) top left no-repeat; 
+     width: 50px; 
+     height: 27px;
+  }
+  #ad_wrapper .ad_search label.ad_sbtMap { visibility: hidden;} 
+  #ad_wrapper .ad_search div.ad_sbtMap {
+    background: transparent url(/siteapps/advocacy/images/voc_Btn_Map.gif) 0px 10px no-repeat; 
+    margin-top:10px;
+    padding-right:0px;
+    padding-top:10px;
+    border-top:1px solid #FFF;
+    height:246px;
+  }
+  #ad_wrapper .ad_search div.ad_sbtMap img{
+    height:100%;
+    width:100%;
+  }
+  
+  #ad_Ele_state label{
+    display:none;
+  }
+  .ad_search p{
+    padding:0;
+    margin:0 0 0 5px;
+    color:#999;
+  }
+  .ad_search p strong{
+    color:#000;
+   }
+  .clearall{
+    clear:both;
+  }
+  #ad_Ele_addr label{
+  	width:100px;
+  }
+  #ad_Ele_addr input.ad_sbt{
+      margin:0px 0px 0px 100px;
+      /margin:0px 0px 0px 50px;  /*IE hack */
+  }
+  #ad_Ele_zip div{
+    height:50px;  
+    display:inline;
+    float:left;
+  }
+  #ad_Ele_left label, #ad_Ele_right label{
+    float:left;
+  }
+  #ad_Ele_left input, #ad_Ele_right input{
+    float:left;
+    clear:left;
+  }
+  #ad_Ele_zip #ad_emdash{
+    position:relative;
+    top:20px;
+    padding:0px 5px;
+  }
+  #ad_Ele_zip a{
+    float:left;
+    clear:both;
+  }
+  #ad_Ele_zip input.ad_sbt{
+    display:inline;
+    float:left;
+    position:relative;
+    top:20px;
+  }
+
+  .ad_search fieldset{
+    background-color: #F1F1F1; 
+  }
+/* Election Results */
+  #ad_Ele_results_H2 {
+    border-bottom: #B2B2B2 1px solid;
+    padding:0 0 15px 0;
+  }
+  #ad_Ele_results_P {
+    margin: 0;
+    padding: 0 0 10px 0;
+    color: #999;
+  }
+
+/* Federal Officials */
+  #ad_Ele_fedoff {
+    margin: 0;
+    padding: 20px;
+    border: none;
+    background: #F1F1F1;
+  }
+  #ad_Ele_fedoff_H3 {
+    color: #933;
+    font: bold 120%/130%;
+    margin: 0;
+    padding: 5px 0 0px 0;
+  }
+
+  #ad_Ele_fedoff ul{
+    padding:0 0 20px 0px;
+    margin:0;
+    list-style-type:none;
+    line-height:1.5;
+  }
+/* End Federal Officials */
+
+/* State Officials */
+  #ad_Ele_steoff_H3{
+    color: #933;
+    font: bold 120%/130%;
+    margin: 0;
+    padding: 5px 0 0px 0;
+  }
+  #ad_Ele_steoff{
+    margin: 0;
+    padding: 20px;
+    border: none;
+    background: #F1F1F1;
+  }
+
+  #ad_Ele_steoff ul{
+    padding:0 0 20px 0px;
+    margin:0;
+    list-style-type:none;
+    line-height:1.5;
+    font-weight:bold;
+  }
+  #ad_Ele_steoff ul a{
+    font-weight:normal;
+  }
+/* End State Officials */
+
+  /* State Agency */
+  fieldset#ad_Ele_stagncy{
+    border-top:1px solid #FFF;
+    border-bottom:1px solid #FFF;
+    margin:5px -20px 5px -20px;
+    padding:5px 20px 5px 20px;
+    width:100%;
+  }
+
+  #ad_Ele_stagncy h4{
+    border:0px solid red;
+  }
+
+  #ad_Ele_stagncy select
+    {float:left;display:block;clear:left;}
+
+
+  #ad_Ele_stagncy label.ad_sbt{
+    display:none;
+  }
+
+  #ad_Ele_stagncy input.ad_sbt {
+    width:100px;
+    height: 30px;
+    background: transparent url('/siteapps/advocacy/images/voc_Btn_go.gif') top left no-repeat;
+    float:left;
+  }
+/* End State Agency */
+
+/* State Offices */
+
+  #ad_Ele_steoff table{
+    border:1px solid #E1E1E1;
+    margin:10px auto;
+    background-color:#FFF;
+    padding:0px;
+    width:100%;
+    clear:both;
+  }
+  #ad_Ele_steoff tr{
+    padding:0;
+    margin:0;
+  }
+
+  #ad_Ele_steoff a.btt{
+    float:right;
+  }
+
+  #ad_Ele_steoff td{
+    border-right:1px solid #F1F1F1;
+    padding:4px;
+  }
+  #ad_Ele_steoff tr.alt{
+    background:#ECF2FE;
+  }
+/* End State Offices */
+
+  #ad_Ele_results_back{
+    padding:10px 0px;
+    }
+    
+ /* Election Results Details */   
+    
+      #ad_Ele_title{
+        border-bottom: #B2B2B2 1px solid;
+        padding:0 0 15px 0;
+      }
+      #ad_Ele_name{
+        margin: 0px;
+        padding: 10px;
+        background-color: #E0ECF8;
+      }
+      .ad_Ele_label{
+        color:#933;
+        padding:10px 0 5px 0;
+        margin:0px;
+      }
+      .ad_Ele_details{
+        background-color:#F0F0F0;
+        list-style-type:none;
+        padding:10px;
+        margin:0;
+        line-height:1.5;
+      }
+      table.ad_Ele_details{
+        width:100%;
+   
+      }
+      table.ad_Ele_details caption{
+        font-style:italic;
+        font-weight:bold;
+        text-align:left;
+        padding:5px;
+        width:100%;
+        background-color:#F0F0F0;
+      }
+      .ad_Ele_details th{
+        display:none;
+      }
+      table.ad_Ele_details td{
+        vertical-align:top;
+      }
+      .ad_Ele_details address{
+        font-style:normal;
+    }
+  /*End  Election Results Details */   
+ /* Search */
+ 
+    #ad_adsearch_title{
+        border-bottom: #B2B2B2 1px solid;
+        padding:0 0 15px 0;
+      }
+      .ad_adsearch{
+        background-color:#F0F0F0;
+        padding-left:15px;
+      }
+      #ad_adsearch_1 h3{
+        color:#800000;
+        margin-bottom:2px;
+      }
+      #ad_adsearch_1 p{
+        font-weight:bold;
+        padding:0;
+        margin:2px;
+      }
+      #ad_adsearch_2 h3{
+        color:#800000;
+        margin-bottom:2px;
+      }
+      #ad_adsearch_2 p{
+        margin:0px;
+    
+      }
+      #ad_adsearch_name{
+        width:15em;
+        margin-bottom:1px;
+      }
+      #ad_adsearch_name label{
+        width:5em;
+        float:left;
+        clear:left;
+      }
+      #ad_adsearch_name input{
+        display:block;
+    
+      }
+      #ad_adsearch_name p{
+        clear:left;
+        height:1%;
+      }
+      #ad_adsearch_pos{
+        padding:0;
+        margin:0;
+      }
+      #ad_adsearch_pos input{
+        margin-top:10px;
+        padding-bottom:10px;
+      }
+      #ad_adsearch_pos select{
+        margin-right:30px;
+        margin-bottom:15px;
+      }
+      #ad_adsearch_lead, #ad_adsearch_com{
+        border:1px solid #F0F0F0;
+        margin:15px 0px;
+        vertical-align:top;
+      }
+      #ad_adsearch_lead select, #ad_adsearch_com select,
+      #ad_adsearch_lead input, #ad_adsearch_com input{
+        margin-bottom:15px;
+        float:none;
+        display:inline;
+  }
+  
+  /* End Search */
+  
+  /* State Agency */
+        #ad_stag_title{
+          border-bottom: #B2B2B2 1px solid;
+          padding:0 0 15px 0;
+        }
+        p.ad_stag_title{
+        }
+        ad_stag_label{
+          color:#933;
+          padding:10px 0 5px 0;
+        }
+        .ad_stag_details{
+          background-color:#F0F0F0;
+          list-style-type:none;
+          padding:10px;
+          margin:0;
+          line-height:1.5;
+        }
+        table.ad_stag_details{
+          width:100%;
+  
+        }
+        table.ad_stag_details caption{
+          font-weight:bold;
+          text-align:left;
+          padding:15px 5px 0 5px;
+          width:100%;
+          color:#800000;
+          margin:0px;
+        }
+        .ad_stag_details th{
+          display:none;
+        }
+        table.ad_stag_details td{
+          vertical-align:top;
+        }
+        .ad_stag_details address{
+          font-style:normal;
+        }
+        .ad_back_to{
+          position:relative;
+          top: 20px;
+      }
+    /*End State Agency */
+    
+    /* ScoreCard */  
+      h4.ad_score{
+        margin-bottom:5px;
+      }
+      address.ad_score{
+        font-style:normal;
+        font-size:80%;
+        font-weight:500;
+      }
+      a.ad_score{
+        padding:0px 3px;
+        color;#0669CE;
+      }
+      table.ad_score{
+        border:2px solid #CCC;
+        border-collapse:collapse;
+        margin:10px 0px;
+        width:100%;
+      }
+      table.ad_score tr.ad_score td{
+        background-color:#013E7D;
+        color:#FFF;
+        padding:7px 5px;
+        font-weight:bolder;
+        white-space: nowrap;
+
+      }
+      table.ad_score td{
+        border:1px solid #FFF;
+        background-color:#ECF2FE;
+        font-size:76%;
+        padding:5px; 
+      }
+      tr.ad_thead a{
+        font-weight:bold;
+        color:#000;
+      }
+      tr.ad_thead td{
+        border-right:1px solid #E1E1E1;
+        background-color:#F1F1F1;
+        padding:4px;
+        margin:0px;
+      }  
+      table.ad_score tr.alt td{
+        background-color:#FFF;
+      }
+      tr.ad_score a{
+        font-weight:bold;
+        color:#FFF;
+      }
+/* End ScoreCard */      
+
+/* Fig 35 Media Results */
+  .ad_media{}
+  .ad_media h3{
+    color:#800000;
+    padding-bottom:0px;
+    margin-bottom:5px;
+  
+  }
+  .ad_media table{
+    width:100%;
+    border-collapse:collapse;
+    border:1px solid #CCC;
+    background-color:#ECF2FE;
+  }
+  .ad_media td{
+    border:1px solid #CCC;
+    padding:7px 5px;
+  }
+  .ad_media td a{
+    color:#3E7BD6;
+  }
+  tr.ad_media{
+    background-color:#013E7D;
+  }
+  tr.ad_media td{
+    border:1px solid #CCC;
+    padding:5px;
+  }
+  tr.ad_media td a{
+    color:#FFF;
+    font-weight:bold;
+    font-size:80%;
+  }
+  .ad_media tr.alt td{
+    background-color:#FFF;
+  }    
+  .ad_media a.btt{
+    float:right;
+    color:#666;
+    font-size:75%;
+  } 
+  /* End Fig 35 Media guide */
+  
+  /* Fig 36 Media guide Detail*/
+  h2.ad_pagetitle{
+        border-bottom: #B2B2B2 1px solid;
+        padding:0 0 15px 0;
+      }
+  h3.ad_media_detail{
+        margin: 0px;
+        padding: 10px;
+        background-color: #E0ECF8;
+    }
+    
+  .ad_media_label{
+      color:#933;
+      padding:10px 0 5px 0;
+      margin:10px 0 0 0;
+   }
+   .ad_media_details{
+      background-color:#F0F0F0;
+      list-style-type:none;
+      padding:5px 10px;
+      margin:0;
+      line-height:1.5;
+    }
+    
+    ul.ad_media_details ul{
+      padding:0px 0px;
+      margin:10px 0px 0px 0px;
+      /margin:-5px 0px;
+    }
+    ul.ad_media_details li{
+      list-style-type:none;
+      margin:0;
+      padding:0;
+    }
+    
+    
+/*  End Fig 36 Media guide Detail*/
+
+
+/* ---------------------------------------------------
+------------    End 191B    -----------------------
+--------------------------------------------------- */    
+    
+/* ---------------------------------------------------
+------------    start 191c    -----------------------
+--------------------------------------------------- */ 
+
+/* vote search */ 
+#ad_Vote_search 
+{
+	width: 600px;
+}
+
+.ad_votesH2 {
+font-size:90%;
+margin-bottom: 5px;
+}
+
+#ad_Vote_search label {
+width: 70px;
+margin:0px 9px 0px 0;
+font-weight: bold;
+}
+
+#ad_Vote_search input {
+width: 188px;
+margin-bottom:6px;
+}
+
+#ad_Vote_search select {
+float: left;
+margin-bottom:6px;
+}
+
+#ad_Vote_search br {
+clear: left;
+}
+
+#ad_Vote_search fieldset {
+border: 0;
+background-color: #F0F0F0;
+padding: 10px;
+}
+
+#ad_Vote_search input.ad_sbmt {
+height:26px;
+width:64px;
+padding:0px;
+background: transparent url('/siteapps/advocacy/images/voc_Btn_Search.gif') top left no-repeat;
+cursor: pointer;
+cursor: hand;
+position:relative;
+}
+
+#ad_votes Table,#ad_votesTable {
+table-layout: fixed;
+border-collapse: collapse;
+}
+
+#ad_votes Table td,#ad_votesTable td {
+padding: 10px;
+background-color: #ECF2FE;
+border: 1px solid #FFF;
+}
+
+#ad_votes Table .th td,#ad_votesTable .th td{
+text-align: center;
+color: #FFF;
+white-space: nowrap;
+padding: 5px;
+border: 1px solid #96B0CA;
+background-color: #003E7D;
+}
+
+#ad_votes Table .th a:link,#ad_votes Table .th a:visited,#ad_votesTable .th a:link, #ad_votesTable .th a:visited  {
+color: #FFF;
+}
+
+#ad_votes Table td.first,#ad_votesTable td.first{
+text-align: left;
+width: 260px;
+}
+
+#ad_Vote_search label.ad_sbmt {
+visibility:hidden;
+width: 70px;	
+}
+
+.ad_agree 
+{
+	line-height:62px;
+    background: transparent url(/siteapps/advocacy/images/voc_Img_Agree.gif) top left no-repeat;
+}
+.ad_agree span{
+   display:none;
+}
+.ad_disagree {
+	line-height:62px;
+    background: transparent url(/siteapps/advocacy/images/voc_Img_Disagree.gif) top left no-repeat;
+}
+.ad_disagree span{
+   display:none;
+}
+.ad_NA {
+	line-height:62px;
+    background: transparent url(/siteapps/advocacy/images/bill_na.gif) center center no-repeat;
+}
+.ad_NA span{
+   display:none;
+}
+#ad_votesTitleText();
+
+div#ad_votes2 {display: none;}
+div#ad_votes3 {display: none;}
+/*end vote search*/
+/*vote results*/
+
+#ad_allVoteResults {
+width: 540px;
+}
+
+.ad_voteDetailsH2 {
+font-size:90%;
+margin-bottom:5px;
+}
+
+
+#ad_voteDetailsTitleText{}
+
+#ad_voteDetailsDesc2 {
+padding: 5px 10px 0px 0px;
+background-color: #ECF2FE;
+}
+
+#ad_voteDetailsDesc2 p, #ad_voteDetailsPosition p {
+margin: 0px 0px 0px 0px;
+}
+
+#ad_voteDetailsFor div, #ad_voteDetailsAgainst div, #ad_voteDetailsNotVoting div{
+background-color: #F0F0F0;
+}
+
+#ad_allVoteResults div{
+width: 540px;
+padding-top:6px;
+padding-bottom:6px;
+padding-left:10px;
+margin-bottom:10px;
+position:relative;
+	display:block;
+	float:left;
+}
+#ad_allVoteResults input.ad_sbmt{
+height:26px;
+width:54px;
+padding:0px 0px 0px 0px;
+background: transparent url('/siteapps/advocacy/images/voc_Btn_View.gif') top left no-repeat;
+cursor: pointer;
+cursor: hand;
+position:relative;
+	display:block;
+}
+
+#ad_voteResults  
+{
+	width:600px;
+}
+
+
+
+#ad_votes Table tr.ad_voteHeading td,#ad_votesTable tr.ad_voteHeading td{
+background-color: #FFF;
+white-space: nowrap;
+ 
+}
+
+
+/*end vote results*/
+/*vote details -----------------------------------------------*/
+
+div#ad_Vote_details {
+width: 600px;
+}
+.ad_voteDetailsH2 {
+font-size:90%;
+margin-bottom: 5px;
+}
+
+div#ad_Vote_details div{
+  margin-bottom: 10px;
+}
+#ad_Vote_details h3{
+  padding-left: 0px;
+}
+
+#ad_voteDetailsTitleText{}
+
+div#ad_voteDetailsDesc p{
+padding: 5px 10px;
+background-color: #ECF2FE;
+}
+
+div#ad_voteDetailsDesc p, div#ad_voteDetailsPosition p {
+margin:0;
+}
+
+div#ad_voteDetailsOTA div {
+padding: 5px 10px;
+background-color: #F0F0F0;
+}
+
+div#ad_voteDetailsPosition div {
+padding: 5px 10px;
+background-color: #F0F0F0;
+}
+
+div#ad_voteDetailsResults div {
+background-color: #F0F0F0;
+}
+
+div#ad_voteDetailsResults p {
+	position: relative;
+	margin:0;
+	padding: 5px 10px;
+}
+p#ad_voteDetailsResultText{
+	border-bottom: 2px solid #FFF;
+}
+p#ad_voteDetailsResultText{
+	border-bottom: 2px solid #FFF;
+}
+p#ad_voteDetailsVotes {
+	border-bottom: 2px solid #FFF;
+}
+p#ad_voteDetailsMapSelect{
+	position: relative;
+	margin-bottom:1px;
+	padding-bottom: 1px;
+}
+p#ad_voteDetailsMap{
+	margin-top:1px;
+	padding-top:20px;
+	border-top: 2px solid #FFF;
+}
+p#ad_voteDetailsMap span{
+	margin-left:40px;
+}
+div#ad_voteDetailsResults select{
+	display:block;
+	float:left;
+	position:static;
+	margin-left:10px;
+}
+div#ad_voteDetailsResults input.ad_vsbt{
+	position:static;
+	display:block;
+	float:left;
+     background: transparent url('/siteapps/advocacy/images/voc_Btn_ViewResults.gif') top left no-repeat; 
+     width: 96px; 
+     height: 26px;
+}
+
+
+.ad_Legend_voted{
+	list-style-type:none;
+}
+.ad_Legend_voted_img{
+	height:8px;
+	width:8px;
+	border:2px solid #000000;
+	overflow:hidden;
+	padding:0px;
+	margin-right:5px;
+	margin-bottom:0px;
+}
+.ad_VoteGraph { 
+	width: 200px; 
+	padding: 0px; 		
+	position:static;
+	display:block;
+	float:left;		
+	overflow:hidden;	 
+	height:12px;	
+}
+.ad_VoteGraph .ad_VoteBar { 
+	position:static;
+	text-align: center; 
+	color: #333; 	
+	display:block;
+	float:left;		
+	border: 1px solid #000000; 	
+	height:10px;	
+	overflow:hidden;							
+}
+/*end vote details*/
+/*bills search */
+#ad_congressionalBills {
+width: 600px;
+}
+
+.ad_congressionalBillsH2 {
+font-size:90%;
+margin-bottom: 5px;
+}
+
+#ad_searchForBills label {
+width: 70px;
+margin:0px 9px 0px 0;
+font-weight: bold;
+}
+
+#ad_searchForBills label.labelKeywords,  #ad_searchForBills label.labelBillNumber {
+width: 100%;
+margin:0px 9px 3px 0;
+font-weight: bold;
+display: block;
+font-size: 0.83em;
+}
+
+#ad_searchForBills input {
+width: 188px;
+margin-bottom:6px;
+}
+
+#ad_searchForBills select {
+float: left;
+margin-bottom:6px;
+}
+
+#ad_congressionalBills br ,#ad_searchForBills br{
+clear: left;
+}
+
+#ad_searchForBills fieldset {
+width: 100%;
+border: 0;
+background-color: #F0F0F0;
+padding: 10px;
+}
+#ad_searchForBills 
+{
+width: 568px;
+}
+#ad_searchForBills fieldset.keywordsFieldset {
+border-bottom: 2px solid #FFF;
+}
+
+#ad_searchForBills input.ad_sbmt{
+height:26px;
+width:64px;
+padding:0px;
+background: transparent url('/siteapps/advocacy/images/voc_Btn_Search.gif') top left no-repeat;
+cursor: pointer;
+cursor: hand;
+position:relative;
+margin-top: -2px;
+}
+
+#ad_congressionalBills table , #ad_congressionalBillsTable {
+width: 100%;
+table-layout: fixed;
+border-collapse: collapse;
+}
+
+#ad_congressionalBills table , #ad_congressionalBillsTable {
+padding: 10px;
+background-color: #ECF2FE;
+border: 1px solid #FFF;
+}
+
+#ad_congressionalBills table .th td, #ad_congressionalBillsTable .th td {
+text-align: center;
+color: #FFF;
+white-space: nowrap;
+padding: 5px;
+border: 1px solid #96B0CA;
+background-color: #003E7D;
+}
+
+#ad_congressionalBills table .th a:link, #ad_congressionalBills table .th a:visited, #ad_congressionalBillsTable .th a:link, #ad_congressionalBillsTable .th a:visited  {
+color: #FFF;
+}
+
+#ad_congressionalBills table td.first, #ad_congressionalBillsTable td.first {
+text-align: left;
+width: 230px;
+}
+
+#ad_congressionalBills label.ad_sbmt {
+visibility:hidden;
+width: 70px;	
+}
+
+
+#ad_congressionalBillsTitleText();
+
+label.labelKeywords {}
+label.labelBillNumber {}
+
+input#ad_congressionalBills_keywords {}
+input#ad_congressionalBills_billNumber{}
+select#ad_congressionalBills_Search {}
+select#ad_congressionalBills_BillNumberType {}
+select#ad_congressionalBills_BillNumberCongress {}
+/*end bills search */
+/*bill detail */
+
+#ad_conLegDetails {
+width: 600px;
+}
+
+.ad_conLegDetailsH2 {
+font-size:90%;
+margin-bottom: 5px;
+}
+
+#ad_conLegDetails div{
+margin-bottom: 10px;
+}
+
+#ad_conLegDetailsTitleText{}
+
+#ad_conLegDetailsTitle div{
+padding: 5px 10px;
+background-color: #ECF2FE;
+}
+
+#ad_conLegDetailsTitle p, #ad_conLegDetailsPosition p, #ad_conLegDetailsBillNum p, #ad_conLegDetailsDesc p, #ad_conLegDetailsBillSponsor p, #ad_conLegDetailsCoSponsors p, #ad_conLegDetailsStatus p {
+margin:0;
+}
+
+
+#ad_conLegDetailsPosition div, #ad_conLegDetailsBillNum div, #ad_conLegDetailsDesc div, #ad_conLegDetailsBillSponsor div, #ad_conLegDetailsCoSponsors div, #ad_conLegDetailsStatus div{
+	padding: 5px 10px;
+	background-color: #F0F0F0;
+	position:static;
+	display:block;
+	float:left;
+	width:600px;
+}
+
+
+#ad_conLegDetails input.ad_sbmt {
+height:26px;
+width:54px;
+padding:0px 0px 0px 0px;
+background: transparent url('/siteapps/advocacy/images/voc_Btn_View.gif') top left no-repeat;
+cursor: pointer;
+cursor: hand;
+position:relative;
+margin-top: -2px;
+}
+
+select #coSponsorsSelect {}
+/*end bill detail */
+
+/* ---------------------------------------------------
+------------    end 191c    -----------------------
+--------------------------------------------------- */    
+    
+/* ---------------------------------------------------
+------------    start 160.219    -----------------------
+--------------------------------------------------- */    
+	/* shared 'Wrong Address' CSS */
+	#ad_wrongAdd_wpr {background:#f0f0f0;padding:20px;}
+	#ad_wrongAdd {background:#dedede;padding:20px;}	
+	#ad_wrongAdd input.ad_sbt { 
+     background: transparent url(http://www.kintera.org/siteapps/advocacy/images/ad_Btn_go.gif) top left no-repeat; 
+     width: 50px; 
+     height: 22px;
+	 display:block;}
+	 
+	 /* page-specific 'Wrong Address' CSS */
+	 #ad_wrongAdd label {display:block;width:100px;}
+	 
+	#ad_print_wpr {position:relative;background-color:#F0F0F0;padding:20px;}
+	#ad_print {background-color:#DEDEDE;padding:20px;}
+	#ad_print h2, #ad_print h3 {margin-top:5px;}
+	.ad_popWarning {margin-top:0;color:red;}
+
+	#ad_forgot { BORDER-RIGHT: #f0f0f0 5px solid; BORDER-TOP: #f0f0f0 5px solid; BORDER-LEFT: #f0f0f0 5px solid; BORDER-BOTTOM: #f0f0f0 5px solid; BACKGROUND-COLOR: #ccc }	  	   
+	#ad_forgot H3 { PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px }	  	   
+	#ad_forgot DIV { PADDING-LEFT: 10px; WIDTH: 100% }	  	   
+	#ad_forgot BR { }	  	   
+	#ad_forgot INPUT.ad_sbmt { PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: url(/siteapps/advocacy/images/ad_Btn_Go.gif) no-repeat left top; PADDING-BOTTOM: 0px; WIDTH: 47px; CURSOR: hand; PADDING-TOP: 0px; HEIGHT: 25px }	  	   
+
+
+/* ---------------------------------------------------
+------------    end 160.219    -----------------------
+--------------------------------------------------- */    
+
+    
+
+/* error message text */
+.text-small {margin:10px 0;}
+
+
+/* ---------------------------------------------------------------------------
+------------- Default Planner Calendar Styles ------------------------------------
+/* ------------------------------------------------------------------ ------*/  
+
+#cal_area {width:478px}
+
+#cal_subarea {padding:5px; width:215px; float:left}
+#instruction_area {padding:0; width:240px; float:left}
+TD.searchbutton_selected {
+	BORDER-TOP: #999999 2px solid; FONT-WEIGHT: bold; VERTICAL-ALIGN: middle; WIDTH: 33%; COLOR: #3366cc; BORDER-BOTTOM: #999999 2px solid; BACKGROUND-COLOR: #dddddd; TEXT-ALIGN: center
+}
+#instruction_area UL {margin:5px 5px 5px 10px}
+TD.searchbutton {
+	BORDER-TOP: #999999 2px solid; FONT-WEIGHT: bold; VERTICAL-ALIGN: middle; WIDTH: 33%; COLOR: #3366cc; BORDER-BOTTOM: #999999 2px solid; BACKGROUND-COLOR: #eeeeee; TEXT-ALIGN: center
+}
+A.searchbutton_text {
+	FONT-WEIGHT: bold; COLOR: #3366cc; TEXT-DECORATION: none
+}
+#category_area {
+	border:1px solid #999; WIDTH: 450px; padding:10px
+}
+.DirectoryBox {
+	PADDING-RIGHT: 15px; PADDING-LEFT: 15px; PADDING-BOTTOM: 15px; WIDTH: 90%; PADDING-TOP: 15px
+}
+.DirectorySelectedItem {
+	FONT-WEIGHT: bold; WIDTH: 50%; COLOR: black; LINE-HEIGHT: 150%
+}
+.DirectoryItem {
+	WIDTH: 50%
+}
+.DirAnchor {
+	COLOR: #3366cc; LINE-HEIGHT: 150%; TEXT-DECORATION: none
+}
+LI.instruction_li {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px
+}
+.instruction_hilight {
+	FONT-WEIGHT: bold; COLOR: red
+}
+#search_area {
+	PADDING-BOTTOM: 5px; WIDTH: 100%
+}
+table#EventList1_DataList1 {background-color:#dddddd}
+.textSm, .brnTitle {background-color:#dddddd}
+.event_icon, .event_outlook {background-color:#cccccc}
+.event_data {background-color:#eeeeee}    
+/* ---------------------------------------------------------------------------
+------------- End Default Advocacy Styles ------------------------------------
+/* ------------------------------------------------------------------ ------*/  
+
+.doubleCell
+{
+	colspan:2;
+}
+
+.ad_voteDetailsMap{
+	background-color: #F0F0F0;
+}
+
+
+    #ad_Reg_wpr .ad_label,  #ad_Reg_wpr  fieldset.ad_RegInfo label {
+    margin:5px 0 8px 0;
+    padding:0;  }	
+	
+	
+    #ad_Reg fieldset.ad_MkLgn span {float:left;display:block;}

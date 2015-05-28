@@ -1,0 +1,33 @@
+/*
+printed article style
+*/
+
+/* square ad ---------------------------------------------------------------- */
+
+#container {
+padding:0;
+}
+
+#adpos3, #header, #objecthumbs a.more, #google_container1, .google, #footer, {
+    display: none;
+}
+
+#printheader {
+display: block;
+}
+
+#printheader  img.brandlogo {
+    width:100px;
+    height:14px;
+}
+
+
+h1 a, h1 a:visited, p.byline a, p.byline a:visited {
+    color: #000;
+}
+
+#url, #pageno {
+    color: #000;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-style: normal;
+}

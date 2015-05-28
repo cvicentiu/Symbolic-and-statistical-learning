@@ -1,0 +1,1241 @@
+ 
+	<base href="">
+
+
+
+
+ 
+ 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+
+<html>
+<head>
+    <title>
+        Hughes & Related Families
+    </title>
+    <link rel="STYLESHEET" type="text/css" href="hughes.css">
+<script language=javascript>
+<!--
+	function openWin(URL){aWindow=window.open(URL,"thewindow","width=500,height=300,scrollbars=yes,resizable=yes");}
+// -->
+</script>
+
+
+<script language="JavaScript" type="text/Javascript">
+function validate(form)
+	{
+		if (SearchHughes.Criteria.value=="" )
+			{
+				alert("Please type in some search criteria!")
+			return false
+			}
+			
+		if (SearchHughes.FuseAction.value=="" )
+			{
+				alert("You must select a Topic to search by!")
+			return false
+			}			
+		return true
+	}	
+</script>
+
+<script language="JavaScript" type="text/Javascript">
+function validateSearchDatabase(form)
+	{
+		if (SearchDatabase.Criteria.value=="" )
+			{
+				alert("Please type in some search criteria!")
+			return false
+			}		
+		
+		return true
+	}	
+</script>
+
+<script language="JavaScript" type="text/Javascript">
+function validateLogin(form)
+	{
+		if (Login.LoginName.value=="" )
+			{
+				alert("Please type in a User ID!")
+			return false
+			}
+		if (Login.LoginPassword.value=="" )
+			{
+				alert("Please type in a Password to go with the User ID!")
+			return false
+			}	
+		
+	}	
+</script>
+
+<script language="JavaScript" type="text/Javascript">
+function validateMembership(form)
+	{
+		if (MemberShip.txtFirstName.value=="" )
+			{
+				alert("Please add First Name!")
+			return false
+			}
+		if (MemberShip.txtLastName.value=="" )
+			{
+				alert("Please Add Last Name!")
+			return false
+			}	
+					
+		txt=document.MemberShip.txtEmailAddress.value;
+		if (txt.indexOf("@")<3){
+				alert("I'm sorry. This email address seems wrong. Please"
+					+" check the prefix and '@' sign.");
+			return false;
+			}
+		if ((txt.indexOf(".com")<5)&&(txt.indexOf(".org")<5)
+			&&(txt.indexOf(".gov")<5)&&(txt.indexOf(".net")<5)
+			&&(txt.indexOf(".mil")<5)&&(txt.indexOf(".edu")<5)
+            &&(txt.indexOf(".co.uk")<7)){
+				alert("I'm sorry. This email address seems wrong. Please"
+						+" check the suffix for accuracy. (It should include a "
+						+".com, .edu, .net, .org, .gov or .mil)");
+			return false;
+			}
+		 if (MemberShip.txtLogon.value=="" )
+			{
+				alert("Please Add Logon Name!")
+			return false
+			}	
+			 if (MemberShip.txtPassword.value=="" )
+			{
+				alert("Please Add Password!")
+			return false
+			}	
+			 if (MemberShip.txtComments.length < 20 )
+			{
+				alert("Please Add some comments about your research!")
+			return false
+			}	
+			
+		return true;
+	}	
+</script>
+<script language="JavaScript" type="text/Javascript">
+function validateDescendant(form)
+	{
+		if (Descendant.txtFirstName.value=="" )
+			{
+				alert("Please add First Name!")
+			return false
+			}
+		if (Descendant.txtLastName.value=="" )
+			{
+				alert("Please Add Last Name!")
+			return false
+			}	
+			txt=document.Descendant.txtEmailAddress.value;
+		if (txt.indexOf("@")<3){
+				alert("I'm sorry. This email address seems wrong. Please"
+					+" check the prefix and '@' sign.");
+			return false;
+			}
+		if ((txt.indexOf(".com")<5)&&(txt.indexOf(".org")<5)
+			&&(txt.indexOf(".gov")<5)&&(txt.indexOf(".net")<5)
+			&&(txt.indexOf(".mil")<5)&&(txt.indexOf(".edu")<5)
+            &&(txt.indexOf(".co.uk")<7)){
+				alert("I'm sorry. This email address seems wrong. Please"
+						+" check the suffix for accuracy. (It should include a "
+						+".com, .edu, .net, .org, .gov or .mil)");
+			return false;
+			}
+return true;
+	}	
+</script>
+
+<script language="JavaScript" type="text/Javascript">
+function validateReunion(form)
+	{
+		if (Reunion.txtReunionName.value=="" )
+			{
+				alert("Please add Reunion Title!")
+			return false
+			}
+		if (Reunion.txtReunionInformation.value=="" )
+			{
+				alert("Please Add Reunion Information!")
+			return false
+			}	
+			if (Reunion.txtReunionCity.value=="" )
+			{
+				alert("Please Add Reunion City!")
+			return false
+			}	
+			if (Reunion.txtReunionState.value=="" )
+			{
+				alert("Please Add Reunion State!")
+			return false
+			}	
+			if (Reunion.txtReunionContactLName.value=="" )
+			{
+				alert("Please Add Reunion Contact Last Name!")
+			return false
+			}	
+			if (Reunion.txtReunionContactFName.value=="" )
+			{
+				alert("Please Add Reunion Contact First Name!")
+			return false
+			}	
+			txt=document.Reunion.txtReunionContactEmail.value;
+		if (txt.indexOf("@")<3){
+				alert("I'm sorry. This email address seems wrong. Please"
+					+" check the prefix and '@' sign.");
+			return false;
+			}
+		if ((txt.indexOf(".com")<5)&&(txt.indexOf(".org")<5)
+			&&(txt.indexOf(".gov")<5)&&(txt.indexOf(".net")<5)
+			&&(txt.indexOf(".mil")<5)&&(txt.indexOf(".edu")<5)
+            &&(txt.indexOf(".co.uk")<7)){
+				alert("I'm sorry. This email address seems wrong. Please"
+						+" check the suffix for accuracy. (It should include a "
+						+".com, .edu, .net, .org, .gov or .mil)");
+			return false;
+			}
+return true;
+	}	
+</script>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function emailCheck() {
+	txt=document.EmailCheck.txtEmailAddress.value;
+	if (txt.indexOf("@")<3){
+		alert("I'm sorry. This email address seems wrong. Please"
+		+" check the prefix and '@' sign.");
+		return false;
+			}
+			if ((txt.indexOf(".com")<5)&&(txt.indexOf(".org")<5)
+			&&(txt.indexOf(".gov")<5)&&(txt.indexOf(".net")<5)
+			&&(txt.indexOf(".mil")<5)&&(txt.indexOf(".edu")<5)){
+		alert("I'm sorry. This email address seems wrong. Please"
+		+" check the suffix for accuracy. (It should include a "
+		+".com, .edu, .net, .org, .gov or .mil)");
+	return false;
+	   }
+	//alert("Verification successful!  Your form would not have been submitted.");
+	return true;
+}
+// End -->
+</SCRIPT>
+
+</head>
+<body>
+   
+
+	
+	
+	
+	
+	
+
+	
+		
+<form action="http://www.hughesfamilies.com/index.cfm" method="post" name="SearchHughes" enctype="multipart/form-data" onsubmit="return validate(this)">
+   <table align="center" width="90%">
+   		<tr>
+			<td align="left"><img src="hnrbanner.gif" width="512" height="51" alt="" border="0"></td>
+		</tr>
+   </table>
+
+  <table align="center" width="90%" cellpadding="4" cellspacing="2">
+  	<tr bgcolor="ffffff">
+		<td>						  
+				<table align="center" width="95%" border="0" cellspacing="0" cellpadding="0">
+				  <tr>
+				    <td colspan="5">
+				      <table border="0" cellspacing="0" cellpadding="0" width="100%">
+				        <tr>
+				          <td width="1%" align="center" nowrap></td>
+				          <td rowspan="2" width="99%" align="right"></td>
+				        </tr>
+				        <tr>
+				          <td valign="bottom">
+				            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+				              <tr>
+							  	<td colspan="2"></td>
+								<td colspan="13" class="line"></td>
+							  </tr>
+				              <tr>
+				                <td>&nbsp;</td>
+				                <td class="line"><img src="UHP-Index.html.1.1.html" width="1" height="1"></td>
+				                <td class="Tab" style="cursor:hand;" height="19">
+				                  <nobr><img src="UHP-Index.html.1.1.html" width="4" height="1"><a href="http://www.hughesfamilies.com/index.cfm?Fuseaction=Main" class="hnouline"><b>Home</b></a><img src="UHP-Index.html.1.1.html" width="4" height="1"></nobr>
+				                </td>
+								
+				                <td class="line"><img src="UHP-Index.html.1.1.html" width="1" height="1"></td>
+				                <td class="Tab" style="cursor:hand;">
+				                  <nobr><img src="UHP-Index.html.1.1.html" width="4" height="1"><a href="http://www.hughesfamilies.com/index.cfm?Fuseaction=Membership" class="hnouline" ><b>Membership</b></a><img src="UHP-Index.html.1.1.html" width="4" height="1"></nobr>
+				                </td>
+								
+				                <td class="line"><img src="UHP-Index.html.1.1.html" width="1" height="1"></td>
+				                <td class="Tab" style="cursor:hand;">
+				                  <nobr><img src="UHP-Index.html.1.1.html" width="4" height="1"><a href="http://www.hughesfamilies.com/index.cfm?Fuseaction=Database" class="hnouline"><b>Database</b></a><img src="UHP-Index.html.1.1.html" width="4" height="1"></nobr>
+				                </td>
+								
+				                <td class="line"><img src="UHP-Index.html.1.1.html" width="1" height="1"></td>
+				                <td class="Tab" style="cursor:hand;">
+				                  <nobr><img src="UHP-Index.html.1.1.html" width="4" height="1"><a href="http://www.hughesfamilies.com/messageboard/index.cfm?Fuseaction=Main" class="hnouline"><b>Messages</b></a><img src="UHP-Index.html.1.1.html" width="4" height="1"></nobr>
+				                </td>
+								
+								 <td class="line"><img src="UHP-Index.html.1.1.html" width="1" height="1"></td>
+				                <td class="Tab" style="cursor:hand;">
+				                  <nobr><img src="UHP-Index.html.1.1.html" width="4" height="1"><a href="http://www.hughesfamilies.com/index.cfm?Fuseaction=News" class="hnouline"><b>News</b></a><img src="UHP-Index.html.1.1.html" width="4" height="1"></nobr>
+				                </td>
+								
+								 <td class="line"><img src="UHP-Index.html.1.1.html" width="1" height="1"></td>
+				                <td class="Tab" style="cursor:hand;">
+				                  <nobr><img src="UHP-Index.html.1.1.html" width="4" height="1"><a href="http://www.hughesfamilies.com/index.cfm?Fuseaction=ReunionMain" class="hnouline"><b>Reunions</b></a><img src="UHP-Index.html.1.1.html" width="4" height="1"></nobr>
+				                </td>
+								
+								 <td class="line"><img src="UHP-Index.html.1.1.html" width="1" height="1"></td>
+				                <td class="Tab" style="cursor:hand;">
+				                  <nobr><img src="UHP-Index.html.1.1.html" width="4" height="1"><a href="http://www.hughesfamilies.com/index.cfm?Fuseaction=FirstFamilies" class="hnouline"><b>1st Families</b></a><img src="UHP-Index.html.1.1.html" width="4" height="1"></nobr>
+				                </td>
+								
+				                <td class="line"><img src="UHP-Index.html.1.1.html" width="1" height="1"></td>
+				              </tr>
+				              
+				            </table>
+				          </td>
+				        </tr>      
+					  </table>
+				    </td>   
+				  </tr> 
+				</table>
+			   	<table background="smallback.gif" cellpadding="0" cellspacing="0" width="100%" border="0" align="center" bgcolor="000000">
+			   		<tr valign="middle">			   			
+			   			<td  align="left" class="white" nowrap>   			      
+			   			   &nbsp;&nbsp;<b>Search:</b>
+			   			        <input type="text" name="Criteria" value="" size="10" maxlength="30">   		 
+			   			  &nbsp;&nbsp;			      
+			   			  <b> Topics:</b>
+			                	<select name="FuseAction">
+			                		<option value="">--    Search   --</option>
+									<option value="DescendantSearch"selected>Database</option>
+									<option value="MessageSearch">Messages</option>
+			                		<option value="NewsSearch">News</option>
+			                	</select>
+								<input type="Submit" value="Go &raquo;" onClick="if(this.value == 'Submit Form') this.form.submit(); this.value = 'Searching!';" >
+							
+			   			</td>
+						<td width="350" align="right" height="30" class="white">&nbsp;&nbsp;February 26, 2007&nbsp;&nbsp; 2:01 PM CST&nbsp;&nbsp; </td>
+			   		</tr>
+			   	</table>  
+		</td>
+	</tr>  
+ </table> 
+</form>
+
+
+<table align="center" border="0" width="90%"  cellpadding="0" cellspacing="0">
+	<tr>
+		<td bgcolor="ffffff" width="15%" valign="top">	
+					
+						
+			<table cellspacing="1" cellpadding="0" width="100%" bgcolor="000000" border="0">
+					<tr align="middle" bgcolor="25791C">
+						<td background="smallback2.gif" valign="middle" class="white" height="20"><b>More Links</b></td>
+					</tr>
+                    <tr>
+						<td valign="top" width="100%">
+						   <table border="0" width="100%" bgcolor="ffffff" cellpadding="0" cellspacing="1">                            
+                            <tr>
+                            	<td height="20" nowrap><a href="http://www.hughesfamilies.com/index.cfm?Fuseaction=Cemeteries" class="lnouline">Cemeteries</a></td>
+                            </tr>
+                            <tr>
+                            	<td height="20" nowrap><a href="http://www.hughesfamilies.com/index.cfm?Fuseaction=HughesInHistory" class="lnouline">Famous Hughes'</a></td>
+                            </tr>
+                            <tr>
+                            	<td height="20" nowrap><a href="http://www.hughesfamilies.com/index.cfm?Fuseaction=Origin" class="lnouline">Hughes Origin</a></td>
+                            </tr>
+                            <tr>
+                            	<td height="20" nowrap><a href="http://www.hughesfamilies.com/index.cfm?Fuseaction=Immigration" class="lnouline">Immigration</a></td>
+                            </tr>
+                            <tr>
+                            	<td height="20" nowrap><a href="http://www.hughesfamilies.com/index.cfm?Fuseaction=links" class="lnouline">Great Links</a></td>
+                            </tr>
+                            <tr>
+                            	<td height="20" nowrap><a href="http://www.hughesfamilies.com/index.cfm?Fuseaction=OurMembers" class="lnouline">Our Members</a></td>
+                            </tr>
+                            <tr>
+                            	<td height="20" nowrap><a href="http://www.hughesfamilies.com/index.cfm?Fuseaction=Officers" class="lnouline">Officers & Board</a></td>
+                            </tr>
+                            <tr>
+                            	<td height="20" nowrap><a href="http://www.hughesfamilies.com/index.cfm?Fuseaction=Population" class="lnouline">Population</a></td>
+                            </tr>
+                            <tr>
+                            	<td height="20" nowrap><a href="http://www.hughesfamilies.com/index.cfm?Fuseaction=Research" class="lnouline">Research</a></td>
+                            </tr>
+                        </table>	
+						</td>
+					</tr>
+			</table>
+			<br>
+    <table cellspacing="1" cellpadding="0" width="100%" bgcolor="000000" border="0">
+	    <tr align="middle">
+		    <td background="smallback2.gif" class="white" height="20"><b>Member Login</b></td>
+	    </tr>
+		<tr>
+			<td bgcolor="E0E6D8" valign="top" width="100%">
+				<form action="http://www.hughesfamilies.com/hugheslogin/act_authenticate.cfm" method="POST" name="Login" onsubmit="return validateLogin(this)">
+					<table width="100%" border="0" cellpadding="1" cellspacing="1">
+						
+							<tr>
+							
+							    <td>&nbsp;</td>
+							    <td align="left">User ID:</td>
+							</tr>
+							<tr>
+							
+								<td>&nbsp;</td>
+								<td align="left">
+								<input type="Text" name="LoginName" size="10"  maxlength="20"></td>
+							</tr>
+							<tr>
+							
+								<td>&nbsp;</td>
+								<td align="left">Password:</td>
+							</tr>
+							<tr>
+							
+								<td>&nbsp;</td>
+								<td align="left"><input type="Password" name="LoginPassword"  size="10" maxlength="20"></td>
+							</tr>
+							<tr>
+								  <td align="right" colspan="2" height="20">
+								  	<input type="Submit" value="Login &raquo;" onClick="if(this.value == 'Submit Form') this.form.submit(); this.value = 'Checking!';"  >
+									<hr size="1" width="100%">
+								  </td>
+							</tr>
+							<tr>
+									<td align="center" colspan="2" height="20"><a href="http://www.hughesfamilies.com/index.cfm?FuseAction=ForgotPword">Forgot Password</a></td>
+							</tr>	
+							<tr>
+									<td align="center" colspan="2" height="20"><a href="http://www.hughesfamilies.com/index.cfm?FuseAction=Membership">Join</a>
+									</td>
+							</tr>
+						</table>
+					</form>
+							</td>
+						</tr>
+				</table>
+				<br>
+				<table cellspacing="1" cellpadding="0" width="100%" bgcolor="000000" border="0">
+					<tr align="middle"bgcolor="25791C">
+						<td background="smallback2.gif" class="white" height="20"><b>Hughes News</b></td>
+					</tr>
+					<tr>
+						<td valign="top" width="100%">
+								<table cellspacing="0" cellpadding="2" width="100%" bgcolor="E0E6D8" border="0">
+										<tr>
+											<td valign="top" align="left" width="100%">
+												<form action="http://www.hughesfamilies.com/act_email.cfm" name="EmailCheck" method="POST"  onSubmit="return emailCheck()">
+												<table width="100%">
+													<tr>
+														<td align="center" class="small">Free Newsletter via E-Mail. Sign-Up today to receive Hughes News via email</td>
+													</tr>
+													
+													<tr>
+														<td align="center"><input type="text" name="txtEmailAddress" value="myemail@email.com" size="12" maxlength="60" onfocus="javascript:document.EmailCheck.txtEmailAddress.value = '';"></td>
+													</tr>
+													<tr>
+														<td align="center" colspan="2">
+															<input type="Submit" value="Subscribe &raquo;"  onClick="if(this.value == 'Submit Form') this.form.submit(); this.value = 'Please Wait!';">
+															<hr size="1" width="100%">
+														</td>
+													</tr>
+												</table>
+												</form>								
+												</td>
+											</tr>
+									</table>
+								</td>
+							</tr>
+					</table>
+					<br>		
+					<table width="100%">
+						<tr>
+							<td align="center">
+								<img src="godbless.jpg" width="148" height="182" alt="" border="0">
+							</td>
+						</tr>
+					</table>
+		</td>
+		
+		<td>&nbsp;</td>
+
+
+
+<td width="100%" valign="top"> 
+
+<table border="0" align "center" width="90%"> 
+    <tr> 
+      <td align="left" height="20">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:history.go(-1);" class="nouline">&laquo; Search
+          Again</a></td> 
+      <td align="left" class="standard" nowrap> 90 Records found for your search of
+           
+            <b>H</b> 
+           </td> 
+    </tr> 
+  </table> 
+<table align="center" border="0" bgcolor="666666" cellspacing="1" cellpadding="3" width="90%">  
+          <tr> 
+            <td align="center" bgcolor="25791C" height="25" class="white" nowrap> <b>Name</b> </td> 
+            <td align="center" bgcolor="25791C" class="white" nowrap> <b>Birth</b> </td> 
+            <td align="center" bgcolor="25791C" class="white" nowrap> <b>Death</b> </td> 
+            <td align="center" bgcolor="25791C" class="white" nowrap> <b>Date Added</b> </td> 
+          </tr> 
+         
+      <tr	
+				    bgcolor="ffffff" onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuRow';" > 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=1335');"> Hamilton&nbsp;&nbsp;Hughes</a> </td> 
+              <td class="standard"> abt 1855 in IN&nbsp; </td> 
+              <td class="standard"> &nbsp; </td> 
+              <td class="standard"> 09/26/2001&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				     bgcolor="efefef"  onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuGreyRow';"> 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=1410');"> Hamilton&nbsp;S&nbsp;Hughes</a> </td> 
+              <td class="standard"> abt 1821&nbsp; </td> 
+              <td class="standard"> &nbsp; </td> 
+              <td class="standard"> 09/28/2001&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				    bgcolor="ffffff" onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuRow';" > 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=1160');"> Hampton (Ham) &nbsp;Mason&nbsp;Hughes</a> </td> 
+              <td class="standard"> March 4, 1842, Graves County, KY&nbsp; </td> 
+              <td class="standard"> January 16,1909, Cadiz, Trigg Co, KY&nbsp; </td> 
+              <td class="standard"> 09/16/2000&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				     bgcolor="efefef"  onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuGreyRow';"> 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=1322');"> Hannah&nbsp;&nbsp;Hughes</a> </td> 
+              <td class="standard"> abt 1790 in NC&nbsp; </td> 
+              <td class="standard"> &nbsp; </td> 
+              <td class="standard"> 09/24/2001&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				    bgcolor="ffffff" onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuRow';" > 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=1342');"> Hannah&nbsp;&nbsp;Hughes</a> </td> 
+              <td class="standard"> abt 1835 in NC&nbsp; </td> 
+              <td class="standard"> in Charleston, IL&nbsp; </td> 
+              <td class="standard"> 09/26/2001&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				     bgcolor="efefef"  onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuGreyRow';"> 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=1326');"> Hannah&nbsp;&nbsp;Hughes</a> </td> 
+              <td class="standard"> abt 1836 in IN&nbsp; </td> 
+              <td class="standard"> &nbsp; </td> 
+              <td class="standard"> 09/26/2001&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				    bgcolor="ffffff" onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuRow';" > 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=1281');"> Hannah&nbsp;Gummere&nbsp;Hughes</a> </td> 
+              <td class="standard"> Aug 21, 1884/Hamilton Co NE&nbsp; </td> 
+              <td class="standard"> Feb 8, 1905/Ogallala, Keith Co NE&nbsp; </td> 
+              <td class="standard"> 06/06/2001&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				     bgcolor="efefef"  onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuGreyRow';"> 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=118');"> Hardeman&nbsp;&nbsp;Hughes</a> </td> 
+              <td class="standard"> 1770/1780&nbsp; </td> 
+              <td class="standard"> aft 1830&nbsp; </td> 
+              <td class="standard"> 09/25/1998&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				    bgcolor="ffffff" onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuRow';" > 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=1792');"> Harlan (Mike)&nbsp;&nbsp;Hughes</a> </td> 
+              <td class="standard"> December 7, 1929 El Paso, TX (I believe)&nbsp; </td> 
+              <td class="standard"> Not Provided&nbsp; </td> 
+              <td class="standard"> 08/28/2006&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				     bgcolor="efefef"  onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuGreyRow';"> 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=1150');"> Harold&nbsp;Carlin&nbsp;Hughes</a> </td> 
+              <td class="standard"> Jun 2, 1902/ Ogallala, Keith Co, NE&nbsp; </td> 
+              <td class="standard"> Nov 1977/ Dayton, Yamhill Co, OR&nbsp; </td> 
+              <td class="standard"> 09/04/2000&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				    bgcolor="ffffff" onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuRow';" > 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=585');"> harold&nbsp;leslie&nbsp;Hughes,</a> </td> 
+              <td class="standard"> 19-Jul-29&nbsp; </td> 
+              <td class="standard"> Mar-90&nbsp; </td> 
+              <td class="standard"> 05/29/1999&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				     bgcolor="efefef"  onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuGreyRow';"> 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=1447');"> Harold&nbsp;Loyd&nbsp;Hughes</a> </td> 
+              <td class="standard"> November 06, 1923--Valliant, Oklahoma&nbsp; </td> 
+              <td class="standard"> March 04,1987--Valliant,Oklahoma&nbsp; </td> 
+              <td class="standard"> 10/17/2001&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				    bgcolor="ffffff" onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuRow';" > 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=192');"> Harold&nbsp;Harrison&nbsp;Hughes</a> </td> 
+              <td class="standard"> 2/23/1892, Indianapolis, Marion County, In&nbsp; </td> 
+              <td class="standard"> 1/5/1930, Plainfield, Hendricks County, Indiana&nbsp; </td> 
+              <td class="standard"> 10/25/1998&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				     bgcolor="efefef"  onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuGreyRow';"> 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=1404');"> Harriet&nbsp;Maria&nbsp;Harlan</a> </td> 
+              <td class="standard"> abt 1842 in IN&nbsp; </td> 
+              <td class="standard"> &nbsp; </td> 
+              <td class="standard"> 09/28/2001&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				    bgcolor="ffffff" onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuRow';" > 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=1446');"> Harriet&nbsp;&nbsp;Hughes</a> </td> 
+              <td class="standard"> abt 1849 in IN&nbsp; </td> 
+              <td class="standard"> bef 1860&nbsp; </td> 
+              <td class="standard"> 10/15/2001&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				     bgcolor="efefef"  onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuGreyRow';"> 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=1331');"> Harriet&nbsp;&nbsp;Hughes</a> </td> 
+              <td class="standard"> abt 1846 in IN&nbsp; </td> 
+              <td class="standard"> &nbsp; </td> 
+              <td class="standard"> 09/26/2001&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				    bgcolor="ffffff" onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuRow';" > 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=705');"> Harrison&nbsp;&nbsp;Hughes</a> </td> 
+              <td class="standard"> ABT 1775 in Amherst Co, Va&nbsp; </td> 
+              <td class="standard"> UNK&nbsp; </td> 
+              <td class="standard"> 07/07/1999&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				     bgcolor="efefef"  onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuGreyRow';"> 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=1209');"> Harrison &nbsp;Irby&nbsp;Hughes</a> </td> 
+              <td class="standard"> March 15, 1840, Gentry, Jackson/Putnam Co., TN&nbsp; </td> 
+              <td class="standard"> March 07, 1885&nbsp; </td> 
+              <td class="standard"> 12/27/2000&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				    bgcolor="ffffff" onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuRow';" > 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=397');"> Harrison&nbsp;&nbsp;Hughes</a> </td> 
+              <td class="standard"> About 1820 Tennessee&nbsp; </td> 
+              <td class="standard"> Unknown&nbsp; </td> 
+              <td class="standard"> 01/23/1999&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				     bgcolor="efefef"  onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuGreyRow';"> 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=702');"> Harrison&nbsp;&nbsp;Hughes</a> </td> 
+              <td class="standard"> ABT 1775 in Amherst Co, Va&nbsp; </td> 
+              <td class="standard"> UNK&nbsp; </td> 
+              <td class="standard"> 07/07/1999&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				    bgcolor="ffffff" onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuRow';" > 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=396');"> Harrison&nbsp;&nbsp;Hughes</a> </td> 
+              <td class="standard"> 1820 Tennessee&nbsp; </td> 
+              <td class="standard"> Unknown&nbsp; </td> 
+              <td class="standard"> 01/23/1999&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				     bgcolor="efefef"  onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuGreyRow';"> 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=260');"> Harrison&nbsp;Irby&nbsp;Hughes</a> </td> 
+              <td class="standard"> August 25, 1778, Bedford Co., VA&nbsp; </td> 
+              <td class="standard"> June 25, 1846, Tennessee&nbsp; </td> 
+              <td class="standard"> 11/14/1998&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				    bgcolor="ffffff" onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuRow';" > 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=1450');"> Harry&nbsp;Bloomfield&nbsp;Hughes</a> </td> 
+              <td class="standard"> September 18, 1882/Kilbourne, Illinois&nbsp; </td> 
+              <td class="standard"> 1957/Davao city, Philippines&nbsp; </td> 
+              <td class="standard"> 11/01/2001&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				     bgcolor="efefef"  onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuGreyRow';"> 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=1233');"> Harry&nbsp;Augustus&nbsp;Hughes</a> </td> 
+              <td class="standard"> 10-15-1913  Harmon Co OK?&nbsp; </td> 
+              <td class="standard"> Plainview, TX cremated&nbsp; </td> 
+              <td class="standard"> 01/21/2001&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				    bgcolor="ffffff" onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuRow';" > 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=906');"> Harry&nbsp;&nbsp;Hughes</a> </td> 
+              <td class="standard"> 1879, Hants Co., Nova Scotia, Canada&nbsp; </td> 
+              <td class="standard"> unknown, but prob. MA or ME, USA&nbsp; </td> 
+              <td class="standard"> 10/25/1999&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				     bgcolor="efefef"  onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuGreyRow';"> 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=442');"> Harry&nbsp;Gilbert&nbsp;Hughes</a> </td> 
+              <td class="standard"> 26-Jul-16&nbsp; </td> 
+              <td class="standard"> 28-Mar-95&nbsp; </td> 
+              <td class="standard"> 02/11/1999&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				    bgcolor="ffffff" onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuRow';" > 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=374');"> Harvey&nbsp;Lee&nbsp;Hughes</a> </td> 
+              <td class="standard"> 1879 (?)&nbsp; </td> 
+              <td class="standard"> 1968&nbsp; </td> 
+              <td class="standard"> 01/04/1999&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				     bgcolor="efefef"  onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuGreyRow';"> 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=1647');"> Harvey &nbsp;Edward&nbsp;Hughes</a> </td> 
+              <td class="standard"> July 16, 1879  Johnson Co., MO&nbsp; </td> 
+              <td class="standard"> March 14, 1956  Holden, Johnson Co., MO&nbsp; </td> 
+              <td class="standard"> 03/04/2003&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				    bgcolor="ffffff" onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuRow';" > 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=1646');"> Harvey &nbsp;Edward&nbsp;Hughes</a> </td> 
+              <td class="standard"> July 16, 1879  Johnson Co., MO&nbsp; </td> 
+              <td class="standard"> March 14, 1956  Holden, Johnson Co., MO&nbsp; </td> 
+              <td class="standard"> 03/04/2003&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				     bgcolor="efefef"  onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuGreyRow';"> 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=1645');"> Harvey&nbsp;Young&nbsp;Hughes</a> </td> 
+              <td class="standard"> June 27, 1827  Jackson Co., TN&nbsp; </td> 
+              <td class="standard"> May 31, 1899  Warrensburg, Johnson Co., MO&nbsp; </td> 
+              <td class="standard"> 03/04/2003&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				    bgcolor="ffffff" onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuRow';" > 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=1734');"> Harvey&nbsp;Gerard&nbsp;Hughes</a> </td> 
+              <td class="standard"> 02/26/1920&nbsp; </td> 
+              <td class="standard"> 12/1985 - Ocean Springs, MS&nbsp; </td> 
+              <td class="standard"> 02/27/2004&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				     bgcolor="efefef"  onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuGreyRow';"> 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=259');"> Harvey&nbsp;Hughs&nbsp;Hughes</a> </td> 
+              <td class="standard"> 1820 Schoharie County, NY&nbsp; </td> 
+              <td class="standard"> Unknown&nbsp; </td> 
+              <td class="standard"> 11/14/1998&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				    bgcolor="ffffff" onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuRow';" > 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=675');"> Haskell&nbsp;William&nbsp;Hughes</a> </td> 
+              <td class="standard"> 9-17-1913 AR&nbsp; </td> 
+              <td class="standard"> 10-21-1971 Bur. Muskogee, OK&nbsp; </td> 
+              <td class="standard"> 07/03/1999&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				     bgcolor="efefef"  onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuGreyRow';"> 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=52');"> Hays&nbsp;&nbsp;Hughes</a> </td> 
+              <td class="standard"> 7 Aug, 1804, Jefferson Co. TN&nbsp; </td> 
+              <td class="standard"> 2 March 1864 or 8,&nbsp; </td> 
+              <td class="standard"> 09/13/1998&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				    bgcolor="ffffff" onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuRow';" > 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=641');"> Hazel&nbsp;Dell&nbsp;Hughes</a> </td> 
+              <td class="standard"> 1897&nbsp; </td> 
+              <td class="standard"> Dec. 1970&nbsp; </td> 
+              <td class="standard"> 06/19/1999&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				     bgcolor="efefef"  onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuGreyRow';"> 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=387');"> Heather&nbsp;Lynn&nbsp;Hughes</a> </td> 
+              <td class="standard"> November 19,1968&nbsp; </td> 
+              <td class="standard"> NA&nbsp; </td> 
+              <td class="standard"> 01/16/1999&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				    bgcolor="ffffff" onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuRow';" > 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=388');"> Heather&nbsp;Lynn&nbsp;Hughes</a> </td> 
+              <td class="standard"> November 19,1968&nbsp; </td> 
+              <td class="standard"> NA&nbsp; </td> 
+              <td class="standard"> 01/16/1999&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				     bgcolor="efefef"  onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuGreyRow';"> 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=1582');"> Heather&nbsp;Martin&nbsp;Hughes</a> </td> 
+              <td class="standard"> Nov 4, 1969  Houston, Texas&nbsp; </td> 
+              <td class="standard"> &nbsp; </td> 
+              <td class="standard"> 06/11/2002&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				    bgcolor="ffffff" onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuRow';" > 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=1791');"> Heidi&nbsp;Lynnette&nbsp;Hughes Stephens</a> </td> 
+              <td class="standard"> April 3, 1976 Salinas, CA&nbsp; </td> 
+              <td class="standard"> Not Provided&nbsp; </td> 
+              <td class="standard"> 08/28/2006&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				     bgcolor="efefef"  onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuGreyRow';"> 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=1378');"> Helen&nbsp;Louise&nbsp;Stringfellow</a> </td> 
+              <td class="standard"> 01/01/1913 in Princeton, NJ&nbsp; </td> 
+              <td class="standard"> 11/08/1991 in Park Rapids, MN&nbsp; </td> 
+              <td class="standard"> 09/27/2001&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				    bgcolor="ffffff" onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuRow';" > 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=1451');"> Henrietta&nbsp;Elizabeth&nbsp;Hughes</a> </td> 
+              <td class="standard"> 1886 Rockwall Co TX&nbsp; </td> 
+              <td class="standard"> unk&nbsp; </td> 
+              <td class="standard"> 11/06/2001&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				     bgcolor="efefef"  onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuGreyRow';"> 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=40');"> Henrietta&nbsp;&nbsp;Hughes</a> </td> 
+              <td class="standard"> 23 Oct 1853, Washington Co., MO&nbsp; </td> 
+              <td class="standard"> unk&nbsp; </td> 
+              <td class="standard"> 09/13/1998&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				    bgcolor="ffffff" onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuRow';" > 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=1750');"> Henry&nbsp;Allen&nbsp;Hughes</a> </td> 
+              <td class="standard"> 1923? MO?&nbsp; </td> 
+              <td class="standard"> 1991&nbsp; </td> 
+              <td class="standard"> 10/07/2004&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				     bgcolor="efefef"  onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuGreyRow';"> 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=1633');"> Henry&nbsp;Freeman&nbsp;Hughes</a> </td> 
+              <td class="standard"> 1723/wales&nbsp; </td> 
+              <td class="standard"> 1791/east haven, conn&nbsp; </td> 
+              <td class="standard"> 12/14/2002&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				    bgcolor="ffffff" onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuRow';" > 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=1803');"> Henry&nbsp;&nbsp;Hughes</a> </td> 
+              <td class="standard"> 1833/Canada&nbsp; </td> 
+              <td class="standard"> Not Provided&nbsp; </td> 
+              <td class="standard"> 10/15/2006&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				     bgcolor="efefef"  onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuGreyRow';"> 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=298');"> Henry&nbsp;&nbsp;Hughes</a> </td> 
+              <td class="standard"> 14 Feb 1809, &nbsp; </td> 
+              <td class="standard"> Apr 1911, Northfield, Hants County, Nova Scotia, Canada&nbsp; </td> 
+              <td class="standard"> 11/21/1998&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				    bgcolor="ffffff" onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuRow';" > 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=441');"> Henry&nbsp;Thompson&nbsp;Hughes</a> </td> 
+              <td class="standard"> 09-16-1822&nbsp; </td> 
+              <td class="standard"> 03-16-1888&nbsp; </td> 
+              <td class="standard"> 02/11/1999&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				     bgcolor="efefef"  onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuGreyRow';"> 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=551');"> Henry&nbsp;T.&nbsp;Hughes</a> </td> 
+              <td class="standard"> 6-8-1861/63; MO&nbsp; </td> 
+              <td class="standard"> 5-17-1937; MO&nbsp; </td> 
+              <td class="standard"> 05/01/1999&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				    bgcolor="ffffff" onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuRow';" > 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=76');"> Henry&nbsp;&nbsp;Hughes</a> </td> 
+              <td class="standard"> 1784>Scafford Wales&nbsp; </td> 
+              <td class="standard"> 1864>Wales&nbsp; </td> 
+              <td class="standard"> 09/14/1998&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				     bgcolor="efefef"  onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuGreyRow';"> 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=1400');"> Henry&nbsp;L&nbsp;Shepard</a> </td> 
+              <td class="standard"> &nbsp; </td> 
+              <td class="standard"> &nbsp; </td> 
+              <td class="standard"> 09/28/2001&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				    bgcolor="ffffff" onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuRow';" > 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=509');"> Henry&nbsp;P.&nbsp;Hughes</a> </td> 
+              <td class="standard"> 1800-1804 ? VA.&nbsp; </td> 
+              <td class="standard"> 07/09/1880 Franklin co., Illinois&nbsp; </td> 
+              <td class="standard"> 04/05/1999&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				     bgcolor="efefef"  onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuGreyRow';"> 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=542');"> Henry&nbsp;Thompson&nbsp;Hughes</a> </td> 
+              <td class="standard"> 9-15-1822; North Carolina&nbsp; </td> 
+              <td class="standard"> 3-16-1888&nbsp; </td> 
+              <td class="standard"> 05/01/1999&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				    bgcolor="ffffff" onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuRow';" > 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=306');"> Henry&nbsp;&nbsp;Hughes</a> </td> 
+              <td class="standard"> 1862 in Wales&nbsp; </td> 
+              <td class="standard"> Pennsylvania&nbsp; </td> 
+              <td class="standard"> 11/22/1998&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				     bgcolor="efefef"  onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuGreyRow';"> 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=727');"> Henry&nbsp;&nbsp;Hughes</a> </td> 
+              <td class="standard"> July 6, 1915?  Pennsylvania&nbsp; </td> 
+              <td class="standard"> 1981 New Port Richey, FL&nbsp; </td> 
+              <td class="standard"> 07/18/1999&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				    bgcolor="ffffff" onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuRow';" > 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=1067');"> HENRY &nbsp;B.&nbsp;HUGHES</a> </td> 
+              <td class="standard"> ABT. 1785  UNKNOWN WHERE&nbsp; </td> 
+              <td class="standard"> UNKNOWN&nbsp; </td> 
+              <td class="standard"> 06/15/2000&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				     bgcolor="efefef"  onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuGreyRow';"> 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=991');"> Henry&nbsp;&nbsp;Hughes</a> </td> 
+              <td class="standard"> 4/23/1858, Ashipun, Dodge Co. Wisc&nbsp; </td> 
+              <td class="standard"> 7/4/1949, Emmetsburg Iowa&nbsp; </td> 
+              <td class="standard"> 01/29/2000&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				    bgcolor="ffffff" onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuRow';" > 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=1270');"> Henry &nbsp;Thompson&nbsp;Hughes</a> </td> 
+              <td class="standard"> 1822,north carolina&nbsp; </td> 
+              <td class="standard"> march 16th 1888 holt county missouri&nbsp; </td> 
+              <td class="standard"> 05/14/2001&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				     bgcolor="efefef"  onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuGreyRow';"> 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=1785');"> Herbert&nbsp;Lee&nbsp;Hughes</a> </td> 
+              <td class="standard"> November 27,1913 Saint Joseph, MO&nbsp; </td> 
+              <td class="standard"> December 7, 1999 Kansas City, MO&nbsp; </td> 
+              <td class="standard"> 08/13/2006&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				    bgcolor="ffffff" onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuRow';" > 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=157');"> Herman&nbsp;Francis&nbsp;Hughes</a> </td> 
+              <td class="standard"> August 27, 1890&nbsp; </td> 
+              <td class="standard"> 19-Mar-41&nbsp; </td> 
+              <td class="standard"> 10/18/1998&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				     bgcolor="efefef"  onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuGreyRow';"> 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=158');"> Herman&nbsp;Francis&nbsp;Hughes</a> </td> 
+              <td class="standard"> 31-Jul-15&nbsp; </td> 
+              <td class="standard"> 19-Apr-89&nbsp; </td> 
+              <td class="standard"> 10/18/1998&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				    bgcolor="ffffff" onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuRow';" > 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=584');"> HERSHEL&nbsp;&nbsp;Hughes</a> </td> 
+              <td class="standard"> ??&nbsp; </td> 
+              <td class="standard"> ??&nbsp; </td> 
+              <td class="standard"> 05/29/1999&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				     bgcolor="efefef"  onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuGreyRow';"> 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=619');"> HERSHEL&nbsp;&nbsp;Hughes</a> </td> 
+              <td class="standard"> ??&nbsp; </td> 
+              <td class="standard"> ??&nbsp; </td> 
+              <td class="standard"> 05/29/1999&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				    bgcolor="ffffff" onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuRow';" > 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=621');"> HERSHEL&nbsp;&nbsp;Hughes</a> </td> 
+              <td class="standard"> ??&nbsp; </td> 
+              <td class="standard"> ??&nbsp; </td> 
+              <td class="standard"> 05/29/1999&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				     bgcolor="efefef"  onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuGreyRow';"> 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=1333');"> Hester&nbsp;Ann&nbsp;Hughes</a> </td> 
+              <td class="standard"> abt 1849 in IN&nbsp; </td> 
+              <td class="standard"> &nbsp; </td> 
+              <td class="standard"> 09/26/2001&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				    bgcolor="ffffff" onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuRow';" > 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=1205');"> Hilda &nbsp;Hughes&nbsp;Bankston</a> </td> 
+              <td class="standard"> 30 Aug 1956  Harlingen, Texas&nbsp; </td> 
+              <td class="standard"> &nbsp; </td> 
+              <td class="standard"> 12/10/2000&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				     bgcolor="efefef"  onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuGreyRow';"> 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=148');"> Hiram&nbsp;&nbsp;Hughes</a> </td> 
+              <td class="standard"> 1793 McMinn Co TN&nbsp; </td> 
+              <td class="standard"> 7/6/1872&nbsp; </td> 
+              <td class="standard"> 10/08/1998&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				    bgcolor="ffffff" onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuRow';" > 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=802');"> Hiram&nbsp;S.&nbsp;Hughes</a> </td> 
+              <td class="standard"> December 14, 1828, Durham, Greene County, N.Y.&nbsp; </td> 
+              <td class="standard"> March 9, 1926, Cainsville, Harrison County, Missouri&nbsp; </td> 
+              <td class="standard"> 09/03/1999&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				     bgcolor="efefef"  onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuGreyRow';"> 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=710');"> Hiram&nbsp;&nbsp;Hughes</a> </td> 
+              <td class="standard"> 1821 TN&nbsp; </td> 
+              <td class="standard"> ca1882 Wood County, TX&nbsp; </td> 
+              <td class="standard"> 07/11/1999&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				    bgcolor="ffffff" onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuRow';" > 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=596');"> hiram&nbsp;corinth&nbsp;Hughes</a> </td> 
+              <td class="standard"> may 15,1865&nbsp; </td> 
+              <td class="standard"> ca. 1933 indiana&nbsp; </td> 
+              <td class="standard"> 06/05/1999&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				     bgcolor="efefef"  onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuGreyRow';"> 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=597');"> hiram&nbsp;&nbsp;Hughes</a> </td> 
+              <td class="standard"> ca.1836  ky.&nbsp; </td> 
+              <td class="standard"> 1867  pike county,indiana&nbsp; </td> 
+              <td class="standard"> 06/05/1999&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				    bgcolor="ffffff" onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuRow';" > 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=612');"> hiram&nbsp;hugh&nbsp;Hughes</a> </td> 
+              <td class="standard"> 1910 pike county,indiana&nbsp; </td> 
+              <td class="standard"> 1990's vincenes,indiana&nbsp; </td> 
+              <td class="standard"> 06/05/1999&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				     bgcolor="efefef"  onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuGreyRow';"> 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=1583');"> Hollis&nbsp;Ann&nbsp;Hughes</a> </td> 
+              <td class="standard"> Nov 28, 1971  Houston, Texas&nbsp; </td> 
+              <td class="standard"> &nbsp; </td> 
+              <td class="standard"> 06/11/2002&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				    bgcolor="ffffff" onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuRow';" > 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=1071');"> Holly&nbsp;&nbsp;Hughes</a> </td> 
+              <td class="standard"> 1879 abt Jackson Co,WV&nbsp; </td> 
+              <td class="standard"> 1962 Columbus,Franklin Co,Ohio&nbsp; </td> 
+              <td class="standard"> 06/18/2000&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				     bgcolor="efefef"  onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuGreyRow';"> 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=1463');"> Homer&nbsp;Baxter&nbsp;Hughes</a> </td> 
+              <td class="standard"> December 18, 1905, Johnson Co., MO&nbsp; </td> 
+              <td class="standard"> November 25, 2000, DeSota, KS&nbsp; </td> 
+              <td class="standard"> 12/27/2001&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				    bgcolor="ffffff" onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuRow';" > 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=270');"> Horace&nbsp;Estalee&nbsp;Hughes</a> </td> 
+              <td class="standard"> 21-Sep-13&nbsp; </td> 
+              <td class="standard"> 30-Sep-00&nbsp; </td> 
+              <td class="standard"> 11/14/1998&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				     bgcolor="efefef"  onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuGreyRow';"> 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=773');"> Horatio&nbsp;&nbsp;Hughes</a> </td> 
+              <td class="standard"> 20 Oct 1885&nbsp; </td> 
+              <td class="standard"> Sep-80&nbsp; </td> 
+              <td class="standard"> 08/20/1999&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				    bgcolor="ffffff" onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuRow';" > 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=63');"> Hoyell&nbsp;&nbsp;Hughes</a> </td> 
+              <td class="standard"> 6-Apr-15&nbsp; </td> 
+              <td class="standard"> Jan/1995  Hebron, Porter Co., IN&nbsp; </td> 
+              <td class="standard"> 09/13/1998&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				     bgcolor="efefef"  onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuGreyRow';"> 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=391');"> Hubert&nbsp;Jessie&nbsp;Hughes</a> </td> 
+              <td class="standard"> 14-Oct-10&nbsp; </td> 
+              <td class="standard"> 12-Sep-84&nbsp; </td> 
+              <td class="standard"> 01/19/1999&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				    bgcolor="ffffff" onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuRow';" > 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=1296');"> Hudson&nbsp;Canaday&nbsp;Hughes</a> </td> 
+              <td class="standard"> April 4, 1800&nbsp; </td> 
+              <td class="standard"> November 3, 1857&nbsp; </td> 
+              <td class="standard"> 06/20/2001&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				     bgcolor="efefef"  onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuGreyRow';"> 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=732');"> Hudson&nbsp;Hutson B.&nbsp;Hughes</a> </td> 
+              <td class="standard"> October 1830&nbsp; </td> 
+              <td class="standard"> Between 1900-1910&nbsp; </td> 
+              <td class="standard"> 07/25/1999&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				    bgcolor="ffffff" onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuRow';" > 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=950');"> Hudson&nbsp;&nbsp;Hughes</a> </td> 
+              <td class="standard"> Salisbury, N.C.&nbsp; </td> 
+              <td class="standard"> Salisbury, N.C.&nbsp; </td> 
+              <td class="standard"> 12/09/1999&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				     bgcolor="efefef"  onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuGreyRow';"> 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=207');"> Hugh&nbsp;&nbsp;Hughes</a> </td> 
+              <td class="standard"> Dec. 28, 1856 near Cameas, Anglesey, N. Wales&nbsp; </td> 
+              <td class="standard"> Feb. 10, 1929 in Tacoma, Pierce County, WA&nbsp; </td> 
+              <td class="standard"> 10/30/1998&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				    bgcolor="ffffff" onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuRow';" > 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=344');"> hugh&nbsp;arden&nbsp;Hughes</a> </td> 
+              <td class="standard"> 31 july 1893&nbsp; </td> 
+              <td class="standard"> date unknown buried in fence wi.&nbsp; </td> 
+              <td class="standard"> 12/18/1998&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				     bgcolor="efefef"  onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuGreyRow';"> 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=434');"> Hugh&nbsp;&nbsp;Hughes</a> </td> 
+              <td class="standard"> ca1740&nbsp; </td> 
+              <td class="standard"> ca1829 Sussex County, New Jersey&nbsp; </td> 
+              <td class="standard"> 02/07/1999&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				    bgcolor="ffffff" onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuRow';" > 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=1230');"> Hugh&nbsp;&nbsp;Hughes</a> </td> 
+              <td class="standard"> b. 1790 Montgomeryshire, North Wales&nbsp; </td> 
+              <td class="standard"> d. 1866 place unknown&nbsp; </td> 
+              <td class="standard"> 01/17/2001&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				     bgcolor="efefef"  onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuGreyRow';"> 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=342');"> hugh&nbsp;&nbsp;Hughes</a> </td> 
+              <td class="standard"> 21 nov. 1867&nbsp; </td> 
+              <td class="standard"> 23 sept. 1900&nbsp; </td> 
+              <td class="standard"> 12/18/1998&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				    bgcolor="ffffff" onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuRow';" > 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=204');"> Hugh&nbsp;&nbsp;Hughes</a> </td> 
+              <td class="standard"> 1847 Morfa, Llandudno, Wales&nbsp; </td> 
+              <td class="standard"> ?&nbsp; </td> 
+              <td class="standard"> 10/29/1998&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				     bgcolor="efefef"  onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuGreyRow';"> 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=285');"> HUGHES&nbsp;Thomas&nbsp;Hughes</a> </td> 
+              <td class="standard"> 14-Apr-1790&nbsp; </td> 
+              <td class="standard"> 18-Mar-1879&nbsp; </td> 
+              <td class="standard"> 11/18/1998&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				    bgcolor="ffffff" onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuRow';" > 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=628');"> Hughes,&nbsp;Samuel&nbsp;Hughes</a> </td> 
+              <td class="standard"> abt. 1780&nbsp; </td> 
+              <td class="standard"> Unknown&nbsp; </td> 
+              <td class="standard"> 06/13/1999&nbsp; </td> 
+            </tr> 
+           
+      <tr	
+				     bgcolor="efefef"  onMouseOver="this.className='HMenuOverRow';" onMouseOut="this.className='HMenuGreyRow';"> 
+       <td class="standard" height="20"> <a href="javascript:openWin('dsp_detail.cfm?RecordID=465');"> Humphrey&nbsp;&nbsp;Hughes</a> </td> 
+              <td class="standard"> 07-Feb-1792 Arklow, Co Wicklow, Ireland&nbsp; </td> 
+              <td class="standard"> 25 Jul 1889, George's Lake, ON, Canada&nbsp; </td> 
+              <td class="standard"> 02/23/1999&nbsp; </td> 
+            </tr> 
+           
+        </table>
+	</td>
+		
+		
+	</tr>
+</table>
+
+<table width="90%">
+<tr>
+	<td colspan="2" width="100%" valign="top" align="left"><br>
+		<table border="0" width="100%">
+			<tr>
+				<td align="center" class="standard" colspan="3">	<br><br>				
+					For more information send an email to <a href="MAILTO:bandbhughes@webtv.net">Hughes & Related Families</a><br>
+					For comments or suggestions in regards to the web site send an email to <a href="Mailto:webmaster@hughesfamilies.com">Webmaster</a><br><br>
+					<font color="000080">&copy; 1997-2007 Hughes & Related Families</font>
+				</td>
+			</tr>
+		</table>
+	</td>
+</tr>
+</table> 
+
+
+</body>
+</html>
+

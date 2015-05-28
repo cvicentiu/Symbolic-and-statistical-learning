@@ -1,0 +1,60 @@
+/* 
+   スタイルシート
+*/
+
+H1 {
+  color: #000099; /* 文字の色 */
+  padding-left: 10px; /* 左の余白 */
+  border-width: 0px 0px 2px 20px; /* 枠の幅 */
+  border-style: solid; /* 枠の種類 */
+  border-color: #9999ff; /* 枠の色 */
+  color: #ffffff; /* 文字の色 */
+  background-color: #666699; /* 背景色 */
+  line-height: 130%; /* 行の高さ */
+}
+
+H2 {
+  color: #000099; /* 文字の色 */
+  padding-left: 10px; /* 左の余白 */
+  border-width: 0px 0px 2px 15px; /* 枠の幅 */
+  border-style: solid; /* 枠の種類 */
+  border-color: #9999ff; /* 枠の色 */
+  line-height: 100%; /* 行の高さ */
+}
+H3 {
+  color: #000099; /* 文字の色 */
+  padding-left: 10px; /* 左の余白 */
+  border-width: 0px 0px 2px 10px; /* 枠の幅 */
+  border-style: solid; /* 枠の種類 */
+  border-color: #9999ff; /* 枠の色 */
+  line-height: 100%; /* 行の高さ */
+}
+
+/* 標準のリンク */
+A:link {
+  color: #0000ff; /* リンクの色 */
+  text-decoration: none; /* 文字装飾 */
+}
+
+/* 訪問済みリンク */
+A:visited { 
+  color: #006666; /* リンクの色 */
+  text-decoration: none; /* 文字装飾 */
+/* 現在開いているリンク */
+
+A:active { 省略(A:linkと同じ形式) }
+/* マウスカーソルが上に来た時のリンク */
+
+A:hover {
+  color: #0000ff; /* リンクの色 */
+  background-color: #ccccff; /* 背景の色 */
+  text-decoration: underline overline; /* 文字装飾 */
+}
+
+P {                            /* 段落の余白 */
+  margin-top: 40px;            /* 上の余白 */
+  margin-bottom: 20px;         /* 下の余白 */
+  margin-left: 30px;           /* 左の余白 */
+  margin-right: 10px;          /* 右の余白 */
+  background-color: #cc0000
+}

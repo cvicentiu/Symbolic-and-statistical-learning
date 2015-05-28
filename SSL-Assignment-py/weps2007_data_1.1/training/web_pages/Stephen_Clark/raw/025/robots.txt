@@ -1,0 +1,23 @@
+# robots.txt for http://www.le.state.ut.us/
+
+User-agent: Slurp
+Crawl-delay: 20
+Disallow: /templates/ # This is an infinite virtual URL space
+Disallow: /displays/ # these will soon disappear
+Disallow: /ASP/
+Disallow: /asp/
+Disallow: /includes/
+Disallow: /JSP/
+Disallow: /RSS/
+
+User-agent: *
+Disallow: /templates/ # This is an infinite virtual URL space
+Disallow: /displays/ # these will soon disappear
+Disallow: /ASP/
+Disallow: /asp/
+Disallow: /includes/
+Disallow: /JSP/
+Disallow: /RSS/
+
+
+

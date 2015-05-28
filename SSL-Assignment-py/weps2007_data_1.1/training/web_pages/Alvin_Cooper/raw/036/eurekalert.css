@@ -1,0 +1,549 @@
+/* define tags for basic display of content elements */
+
+body, p, td, center, ul, dl, dt, dd {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+body.eurekalert {	background-color: #fff;	margin: 0px;}
+
+/* define links to have no underline/be blue */
+
+A { color: #2C56AC; text-decoration: none; }
+A:visited { color: #666666; text-decoration: none; }
+
+a.blacklink {
+	color: black;
+	text-decoration: none;
+}
+a.blacklink:visited { color: black; text-decoration: none; }
+
+a.redlink { 
+    color: #CC0001;
+	text-decoration : none;
+}
+a.redlink:visited { color: #CC0001; text-decoration: none; }
+
+.redhead { color: #CC0001; }
+
+body.release {
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-size: 12px;
+   background: #ffffff;
+   color: #000000;
+   margin-left: 50px;
+   margin-right: 50px;
+}
+
+body.release A { text-decoration: none; }
+body.release A:link { 
+	color: #2C56AC; 
+	background: transparent; }
+	
+body.release A:active { 
+	color: #2C56AC; 
+	background: transparent; }
+body.release A:visited { 
+	color: #666666;
+    background: transparent; }
+    
+body.release A:hover { text-decoration: none; }
+
+h1.title { font-size: 18px; }
+h2.title { font-size: 14px;}
+h2.subtitle { font-size: 12px;
+              font-style: italic; }
+
+/* for the subscriber list */
+span.unpaid { color: #ff0000; }
+
+/* define tags for input elements */
+
+form {
+	margin: 0px;
+}
+
+/*
+input, select, textarea {
+	font-family: Courier New, Courier, mono;
+	font-size: 12px;
+}
+*/
+
+input, select, textarea {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+/* define styles (classes) for general type styling */
+
+.required { color: #CC0001; }
+
+.imagecaption {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+
+.AA_Headline {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0px;
+	margin-top: 9px;
+	margin-bottom: 9px;
+}
+
+.BA_Subhead {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0px;
+	margin-bottom: 9px;
+}
+
+.BB_SubheadNoSpace {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0px;
+}
+
+.CA_Body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin: 0px;
+	margin-bottom: 9px;
+}
+
+.CB_BodyIndent {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin: 0px;
+	margin-left: 12px;
+	margin-bottom: 9px;
+}
+
+.CC_BodyHanging {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin: 0px;
+	margin-bottom: 9px;
+	margin-left: 12px;
+	text-indent: -12px;
+}
+
+.DM_DisplayMoreRed {
+    color: #CC0001;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	margin: 0px;
+	margin-bottom: 9px;
+}
+
+.FA_Footer {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	margin: 0px;
+	margin-bottom: 9px;
+}
+
+.FB_FooterReverseSmall {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FFFFFF;
+	margin: 0px;
+	margin-bottom: 9px;
+}
+
+/* define styles (classes) for block header */
+
+.HA_HeaderHeadline {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.HB_HeaderBody {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.HC1_HeaderSmall {
+	font-family: Monaco, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	line-height: 10px;
+}
+
+.HC2_HeaderSmallReverse {
+	font-family: Monaco, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FFFFFF;
+	margin: 0px;
+	padding: 0px;
+	line-height: 10px;
+}
+
+/* define styles (classes) for inputs */
+
+/*
+.IA_InputNormal {
+	font-family: Courier New, Courier, mono;
+	font-size: 12px;
+}
+
+.IB_InputMedium {
+	font-family: Courier New, Courier, mono;
+	font-size: 11px;
+}
+
+.IC_InputSmall {
+	font-family: Courier New, Courier, mono;
+	font-size: 10px;
+}
+*/
+
+.IA_InputNormal {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.IB_InputMedium {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+.IC_InputSmall {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+
+/* define styles (classes) for navigation block */
+
+.NA_NavigationHeadline {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	margin: 0px;
+	margin-left: 16px;
+	margin-right: 8px;
+}
+
+.NB_NavigationText {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin: 0px;
+	margin-left: 16px;
+	margin-right: 8px;
+}
+
+.NC_NavigationTextSpace {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 16px;
+	margin: 0px;
+	margin-left: 16px;
+	margin-right: 8px;
+}
+
+.ND_NavigationTextHanging {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin: 0px;
+	margin-left: 28px;
+	margin-right: 8px;
+	text-indent: -12px;
+}
+
+.ND_NavigationTextHangingNS {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin: 0px;
+	margin-left: 16px;
+	margin-right: 8px;
+}
+
+.NE_NavigationTextHangingSpace {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	margin: 0px;
+	margin-left: 28px;
+	margin-right: 8px;
+	text-indent: -12px;
+}
+
+.NE_NavigationTextHangingSpaceNS {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	margin: 0px;
+	margin-left: 16px;
+	margin-right: 8px;
+}
+
+.NR_NavigationRule {
+	margin: 0px;
+}
+
+.NX_NavigationTextReverse {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	margin: 0px;
+	margin-left: 16px;
+	margin-right: 8px;
+}
+
+/* define styles (classes) for call-out styling */
+
+.OA_CalloutHeadline {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0px;
+}
+
+.OB_CalloutText {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin: 0px;
+	margin-left: 16px;
+	margin-right: 8px;
+	margin-bottom: 3px;
+	margin-top: 3px;
+}
+
+.OD_CalloutTextBold {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0px;
+	margin-left: 16px;
+	margin-right: 8px;
+	margin-bottom: 3px;
+	margin-top: 3px;
+}
+
+.OC_CalloutTextHanging {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin: 0px;
+	margin-left: 28px;
+	margin-right: 8px;
+	text-indent: -12px;
+	margin-bottom: 3px;
+	margin-top: 3px;
+}
+
+.OE_CalloutTextHangingBold {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0px;
+	margin-left: 28px;
+	margin-right: 8px;
+	text-indent: -12px;
+	margin-bottom: 3px;
+	margin-top: 3px;
+}
+
+.OR_CalloutRule {
+	margin: 0px;
+}
+
+.OS1_CalloutSpecial {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	margin: 0px;
+	margin-left: 16px;
+	margin-right: 8px;
+	margin-bottom: 3px;
+	margin-top: 3px;
+}
+
+.OS2_CalloutSpecialRed {
+    color: #CC0001;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	margin: 0px;
+	margin-left: 16px;
+	margin-right: 8px;
+	margin-bottom: 3px;
+	margin-top: 3px;
+}
+
+.SR_SpecialRed {
+    color: #CC0001;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	margin: 0px;
+}
+
+.SS_SpecialSmall {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	margin: 0px;
+}
+
+
+/* define generic classes for sizing */
+
+.XX_Smallest {
+	font-size: 10px;
+}
+
+.XX_Small {
+	font-size: 11px;
+}
+
+.XX_Medium {
+	font-size: 12px;
+}
+
+.XX_Large {
+	font-size: 14px;
+}
+
+.XX_Largest {
+	font-size: 18px;
+}
+
+
+/* For In Context Essays */
+span.headingtext    { color: #575858; font-weight: bold; }
+span.navlinkessay    { color: #000000; font-size: 12px;   }
+span.navlinkessaysel { color: #000000; font-size: 12px; font-weight: bold; }
+span.biglinkessay    { color: #000000; font-weight: bold; }
+span.navlinka_Essays { font-size: 11px; color: #CCCCCC; }
+span.navlinka_Essay_TITLE { font-size: 11px; color: #FFFFFF; }
+
+ul.expertmedia { margin-top: 0em;
+                 margin-bottom: 0em;
+				 list-style-type: none;}
+
+li.expertmedia { padding: 3px; }
+
+
+/* E-merging Topics pages */
+
+ a.emerging_sidebar:link    { color: #cccccc; }
+ a.emerging_sidebar:visited { color: #cccccc; }
+ a.emerging_sidebar:active  { color: #cccccc; }
+ a.emerging_sidebar_a:link    { color: #cccccc; font-weight: bold; }
+ a.emerging_sidebar_a:visited { color: #cccccc; font-weight: bold; }
+ a.emerging_sidebar_a:active  { color: #cccccc; font-weight: bold; }
+ a.emerging_body:link       { color: #575858; }
+ a.emerging_body:visited    { color: #575858; }
+ a.emerging_body:active     { color: #575858; }
+
+ ul.emerging_resources { margin-top: 0em;
+                         margin-bottom: 0em;
+				         list-style-type: square;}
+
+ li.emerging_resources { padding: 1px;
+                         list-style-type: square;}
+
+/* NIH pages */
+
+ a.nih_sidebar:link    { color: #cccccc; }
+ a.nih_sidebar:visited { color: #cccccc; }
+ a.nih_sidebar:active  { color: #cccccc; }
+ a.nih_sidebar_a:link    { color: #cccccc; font-weight: bold; }
+ a.nih_sidebar_a:visited { color: #cccccc; font-weight: bold; }
+ a.nih_sidebar_a:active  { color: #cccccc; font-weight: bold; }
+
+
+/* Marine Science Portal */
+
+ td.marine_sidebar    { color: #333333; font-size: 11px; }
+
+ a.marine_topmenu:link    { font-family: Helvetica, Verdana, Arial, sans-serif;
+                            color: #336666; font-size: 11px; font-weight: bold; }
+ a.marine_topmenu:visited { font-family: Helvetica, Verdana, Arial, sans-serif;
+                            color: #336666; font-size: 11px; font-weight: bold; }
+ a.marine_topmenu:active  { font-family: Helvetica, Verdana, Arial, sans-serif;
+                            color: #336666; font-size: 11px; font-weight: bold; }
+
+ a.marine_sidemenu:link    { color: #666666; font-size: 11px; }
+ a.marine_sidemenu:visited { color: #666666; font-size: 11px; }
+ a.marine_sidemenu:active  { color: #666666; font-size: 11px; }
+
+ a.marine_sidemenu_hl:link    { color: #666666; font-size: 11px; font-weight: bold; }
+ a.marine_sidemenu_hl:visited { color: #666666; font-size: 11px; font-weight: bold; }
+ a.marine_sidemenu_hl:active  { color: #666666; font-size: 11px; font-weight: bold; }
+
+ a.marine_blacklink:link    { color: #333333; font-size: 11px; font-weight: bold; }
+ a.marine_blacklink:visited { color: #333333; font-size: 11px; font-weight: bold; }
+ a.marine_blacklink:active  { color: #333333; font-size: 11px; font-weight: bold; }
+
+ a.marine_blacklink_small:link    { color: #333333; font-size: 10px; font-weight: bold; }
+ a.marine_blacklink_small:visited { color: #333333; font-size: 10px; font-weight: bold; }
+ a.marine_blacklink_small:active  { color: #333333; font-size: 10px; font-weight: bold; }
+
+ a.marine_bluelink:link    { color: #003C67; font-size: 11px; font-weight: bold; }
+ a.marine_bluelink:visited { color: #003C67; font-size: 11px; font-weight: bold; }
+ a.marine_bluelink:active  { color: #003C67; font-size: 11px; font-weight: bold; }
+
+ .marine_browntext { color: #d2d1bf; font-size: 11px; }
+
+
+/* Science For Kids - 125th Anniversary of Science */
+
+a.blacklink125 {
+	font-size: 14px;
+	font-weight: bold;
+	color: black;
+	text-decoration: none;}
+
+a.blacklink125:visited {
+	font-size: 14px;
+	font-weight: bold;
+	color: black;
+	text-decoration: none;}
+
+a.redlink125 { 
+    color: #CC0001;
+	font-weight: bold;
+	text-decoration : underline;}
+
+a.redlink125:visited { 
+    color: #CC0001;
+	font-weight: bold;
+	text-decoration : underline;}
+
+/* Styles for new release submission form */
+
+a.bluelink_submit { 
+	font-size: 16px;
+	font-weight: bold;
+	color: #2C56AC;
+	text-decoration: none;
+}
+
+a.bluelink_submit:visited { 
+	font-size: 16px;
+	font-weight: bold;
+	color: #2C56AC;
+	text-decoration: none;
+}
+
+
+a.redlink_submit { 
+	font-size: 14px;
+	font-weight: bold;
+	color: #CC0000;
+	text-decoration: none;
+}
+
+a.redlink_submit:visited { 
+	font-size: 14px;
+	font-weight: bold;
+	color: #CC0000;
+	text-decoration: none;
+}
+
+.redlink_inactive { 
+	font-size: 14px;
+	font-weight: bold;
+	color: black;
+}

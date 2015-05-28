@@ -1,0 +1,76 @@
+/* MAIN MENU SETTINGS*/
+.MENU {
+    font-family : Verdana; 
+    font-size : 12px;
+	text-decoration: none;
+	color: white;
+	}
+	
+td.menuOver {
+	background-image: url("../images/green-over.gif");
+	background-repeat: repeat-x;
+	background-color: #1F3000; 
+}
+
+td.menuOut {
+	background-image: url("../images/green.gif");
+	background-repeat: repeat-x;
+	background-color: #406300; 
+}
+
+A.MENU { text-decoration: none; color: #FFFFFF;}
+A.MENU:visited{ text-decoration: none; color: #FFFFFF;}
+A.MENU:link { text-decoration: none; color: #FFFFFF;}
+A.MENU:hover { text-decoration: none; color: #FFFFFF;}
+
+/* VERTICAL WORD*/
+.VMENU {
+    font-family : Verdana; 
+    font-size : 11px;
+	text-decoration: none;
+	color: Black;
+	}
+
+td.vmenu {
+	width: 15;
+	background-image: url("../images/green-vertical.gif");
+	background-repeat: repeat-y;
+	background-color: #406300; 
+	vertical-align: top; 
+	text-align: center;
+	padding:0,0,0,0;
+	border-color:black;
+	border-style:solid; 
+	border-right:0;
+	border-width:1;
+}
+
+/* SUBMENU SETTINGS */
+.SUBMENU {
+    font-family : Verdana; 
+    font-size : 11px;
+    color : Black; 
+	text-decoration: none;
+	}
+
+	
+/* SUBMENU SETTINGS FOR OPERA, IE6 */
+.nolink, A.SUBMENU { 
+	font-family : Verdana; 
+	font-size : 11px ; 
+	text-decoration : none ; 
+	width : 100% ; 
+	color : black ; }
+
+A.SUBMENU:hover { 	
+	text-decoration: underline; }
+
+A.SUBMENU:visited { color : black ; }
+
+td.submenuOver { 
+	background-color:#FFFFFF;
+}
+
+td.submenuOut {
+	background-color:#FFFFFF;
+}

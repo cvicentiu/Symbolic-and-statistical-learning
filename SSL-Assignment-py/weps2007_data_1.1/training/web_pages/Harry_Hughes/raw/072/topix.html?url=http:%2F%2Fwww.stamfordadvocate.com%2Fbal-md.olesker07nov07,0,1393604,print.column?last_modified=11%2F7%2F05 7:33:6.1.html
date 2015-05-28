@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<head>
+<title>Topix Links</title>
+
+<base target="_parent" />
+
+<script type="text/javascript">
+<!--
+function setFrameSize () {
+	if (window.frameElement && window.topixcats && window.topixcats.length > 0) {
+		if (document.body.scrollHeight == 0) {
+			setTimeout("setFrameSize()", 50);
+		} else {
+			if (window.frameElement.height) {
+				window.frameElement.height = document.body.scrollHeight;
+			}
+		}
+	}
+}
+
+function getRequestParameter (name) {
+	if (RegExp) {
+		var url = (window.frameElement ? window.frameElement.src : window.location);
+		var exp = new RegExp("[?|&]" + name + "=([^&]+)");
+		var match = exp.exec(url);
+		if (match == null) {
+			return null;
+		} else {
+			return unescape(match[1].replace(/\+/, " "));
+		}
+	}
+}
+//-->
+</script>
+
+
+<style type="text/css">
+<!--
+	@import url(/stylesheets/topix.css);
+-->
+</style>
+
+</head>
+
+<body onload="setFrameSize()" style="margin:0px; padding:0px;">
+
+<script type="text/javascript">
+<!--
+document.write('<scr' + 'ipt type="text/javascript" src="http://ctx.topix.net/ctx/program.js?P=6011&ref=' + escape(getRequestParameter("url")) + '"></scr' + 'ipt>');
+//-->
+</script>
+
+<script type="text/javascript">
+<!--
+if (topixcats && topixcats.length > 0) {
+	document.write('<div class="related-rail-item">');
+
+	document.write('<div class="glyph-heading">');
+	document.write('Related News from the Web');
+	document.write('</div>');
+
+	document.write('<ul>');
+	for( i = 0; i < topixcats.length; i++ ) {
+		document.write('<li><a href="http://www.topix.net/' + topixcats[i].node + '&P=6011&co=1&s=PB">' + topixcats[i].name + '</a></li>' );
+	}
+	document.write('</ul>');
+	document.write('<div class="topixpromo">Powered by Topix.net</div>');
+	document.write('</div>');
+}	
+
+//-->
+</script>
+
+</body>
+</html>

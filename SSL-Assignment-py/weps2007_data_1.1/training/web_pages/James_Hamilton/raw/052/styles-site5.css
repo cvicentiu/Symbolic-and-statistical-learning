@@ -1,0 +1,386 @@
+	body {
+		margin:0px 0px 10px 0px;
+		background:#ffffff;		
+		}
+	A               { color: #0000cc; text-decoration: underline; }
+	A:link		{ color: #0000cc; text-decoration: none; }
+	A:visited	{ color: #626878; text-decoration: none; }
+	A:active	{ color: #eecc00;  text-decoration: none; background-color: #ababab;}
+	A:hover		{ text-decoration: underline; }
+
+
+
+P {
+        color: black;
+	}
+TD {
+        color: black;
+	}
+
+h1, h2, h3, h4, h5, h6 {
+color: #0000cc;
+margin: 0px;
+	}
+
+blockquote {
+		font-family:verdana, arial, helvetica; 
+		margin-left:50px; 
+		margin-right:80px; 
+text-align: justify; 
+font-size: x-small; 
+		padding: 0px;
+	}
+
+
+INPUT.small { font-size:xx-small;  }
+SELECT.small { font-size:xx-small;  }
+
+#logo {
+		font-family: verdana, arial, helvetica;
+		color:#0000cc;
+		bgcolor:#abcdef;
+		font-size:x-small;
+		font-weight:bold;	
+  		margin:0px 0px 0px 0px;
+                }
+
+	#logo A         { color: #0000cc; text-decoration: underline; }
+	#logo A:link	{ color: #0000cc; text-decoration: none; }
+	#logo A:visited	{ color: #0000cc; text-decoration: none; }
+	#logo A:active	{ color: #0000cc;  text-decoration: none; background-color: #aaaaaa;}
+	#logo A:hover	{ text-decoration: none; background-color: #aaaaaa;}
+
+.banner {
+		font-family: verdana, arial, helvetica;
+		color:#000000;
+		font-size:xx-small;
+		font-weight:normal;	
+             margin:0px 0px 10px 0px;
+               }
+
+	.banner A         { color: #0000cc; text-decoration: underline; }
+	.banner A:link	{ color: #0000cc; text-decoration: none; }
+	.banner A:visited	{ color: #0000cc; text-decoration: none; }
+	.banner A:active	{ color: #0000cc;  text-decoration: none; background-color: #eeeeee;}
+	.banner A:hover	{ text-decoration: none; }
+
+        .banner h1 {
+		font-family:"times new roman", times, verdana, arial, helvetica;
+                font-size:x-large;
+  		font-weight:bold;
+                color: #4444be;
+                margin: 0px;
+		padding: 0px; }
+
+        .banner h2 {
+		font-family:"times new roman", times, verdana, arial, helvetica;
+                font-size:large;
+  		font-weight:bold;
+                color: #4444be;
+                margin: 0px;
+		padding: 0px; }
+
+	.banner IMG { border: thin solid black; }
+
+.imagerule IMG { border: thin solid black; }
+
+.noimagerule IMG { border: none; }
+
+.maintext {background-color: #ffffff; }
+
+.maintext h4      { color: #4444be; }
+.maintext A         { color: #4444be; text-decoration: underline; }
+.maintext A:link	{ color: #4444be; text-decoration: none; }
+.maintext A:visited	{ color: #626878; text-decoration: none; }
+.maintext A:active	{ color: #4444be;  text-decoration: none; background-color: #ababab;}
+.maintext A:hover	{ text-decoration: underline;}
+
+
+.description {
+		font-family:verdana, arial, helvetica;
+  		font-weight:normal;
+		color:#000000;
+		font-size:x-small;
+                font-style:italic;
+		}
+
+.byline {
+		font-family:verdana, arial, helvetica;
+		font-size:xx-small;
+  		color:#626878;
+		margin-bottom:10px;
+  		background:#ffffff;
+  		}	
+
+.byline h4      { color: #626878; }
+.byline A         { color: #626878; text-decoration: underline; }
+.byline A:link	{ color: #626878; text-decoration: none; }
+.byline A:visited	{ color: #626878; text-decoration: none; }
+.byline A:active	{ color: #626878;  text-decoration: none; background-color: #ababab;}
+.byline A:hover	{ text-decoration: underline;}
+
+.sidetext {background-color: #dedede; }
+.sidetextlight {background-color: #b4b6d5; }
+
+.sidetitle {
+		font-family:"times new roman", times;
+		font-size:small;
+  		text-transform:uppercase;
+		color:#4245bc;
+		margin-bottom:10px;
+		margin-top:10px;
+  		border-bottom:1px solid #4245bc;
+  		background-color: #b4b6d5; 
+                background:#ffffff;
+  		}		
+
+
+.specialside {
+		font-family:verdana, arial, helvetica;
+		color:#000000;
+		font-size:x-small;
+		font-weight:bold;
+  		margin-top:8px;
+  		background:#d6d8f7;
+  		line-height:140%;
+  		padding:0px;				
+		}	
+		
+.specialsidelight {
+		font-family:verdana, arial, helvetica;
+		color:#000000;
+		font-size:x-small;
+		font-weight:normal;
+  		margin-top:8px;
+  		background:#d6d8f7;
+  		line-height:140%;
+  		padding:0px;				
+		}	
+		
+.specialsidelight A         { color: #0000cc; text-decoration: underline; }
+.specialsidelight A:link	{ color: #0000cc; text-decoration: none; }
+.specialsidelight A:visited	{ color: #0000cc; text-decoration: none; }
+.specialsidelight A:active	{ color: #0000cc;  text-decoration: none; background-color: #ababab;}
+.specialsidelight A:hover	{ text-decoration: underline;}
+
+.datetitle {
+		font-family:verdana, arial, helvetica;
+		font-size:xx-small;
+  		text-transform:uppercase;
+  		color:#4245bc;
+		margin-bottom:10px;
+  		border-bottom:1px solid #4245bc;
+  		background:#ffffff;
+  		}	
+
+.datetitle h4    { color: #626878; }
+
+.monthtitle      { font-family:"times new roman", times;
+		font-size:small;
+  		text-transform:uppercase;
+		color:#4444be;
+		margin-bottom:10px;
+		margin-top:10px;
+  		border-bottom:1px solid #4444be;
+                background:#ffffff;
+  		}	
+
+
+.posted	{ 
+		font-family:verdana, arial, helvetica; 
+		font-size: x-small; 
+		color: #000000; 
+		margin-bottom:25px;
+		}
+		
+		
+.posted	A         { color: #4444be; text-decoration: underline; }
+.posted	A:link	{ color: #4444be; text-decoration: none; }
+.posted	A:visited	{ color: #626878; text-decoration: none; }
+.posted	A:active	{ color: #4444be;  text-decoration: none; background-color: #ababab;}
+.posted	A:hover	{ text-decoration: underline;}
+
+.postmenu	{ 
+		font-family:verdana, arial, helvetica; 
+		font-size: x-small; 
+		color: #000000; 
+		margin-bottom:25px;
+		text-align:center;
+		}
+.postmenu	h4      { color: #4444be; }
+.postmenu	A         { color: #4444be; text-decoration: underline; }
+.postmenu	A:link	{ color: #4444bd; text-decoration: none; }
+.postmenu	A:visited	{ color: #626878; text-decoration: none; }
+.postmenu	A:active	{ color: #4444be;  text-decoration: none; background-color: #ababab;}
+.postmenu	A:hover	{ text-decoration: underline;}
+
+.comments-head	{ 
+		font-family:palatino, georgia, verdana, arial, helvetica; 
+		font-size:small; 
+		color: #666; 
+		border-bottom:1px solid #999;
+		margin-top:20px;
+		font-weight:bold;
+  		background:#FFF;		
+		}
+
+.comments-body {
+		font-family:"times new roman", times;
+		color:#676767;
+		font-size:small;
+		font-weight:normal;
+  		background:#FFF;
+ 		padding-bottom:10px;
+  		padding-top:0px;		
+ 		border-bottom:1px dotted #999; 					
+		}	
+.comments-body p{
+		color:#676767;
+}
+	
+.comments-body A         { color: #4444be; text-decoration: underline; }
+.comments-body A:link	{ color: #4444be; text-decoration: none; }
+.comments-body A:visited	{ color: #626878; text-decoration: none; }
+.comments-body A:active	{ color: #4444be;  text-decoration: underline; background-color: #ababab;}
+.comments-body A:hover	{ text-decoration: underline;}
+
+.comments-post {
+		font-family:verdana, arial, helvetica;
+		color:#676767;
+		font-size:x-small;
+		font-weight:normal;
+  		background:#FFF;			
+		}	
+
+.comments-post A         { color: #4444be; text-decoration: underline; }
+.comments-post A:link	{ color: #4444be; text-decoration: none; }
+.comments-post A:visited	{ color: #626878; text-decoration: none; }
+.comments-post A:active	{ color: #4444be;  text-decoration: underline; background-color: #ababab;}
+.comments-post A:hover	{ text-decoration: underline;}
+
+
+#banner-commentspop {
+		font-family:palatino, georgia, verdana, arial, helvetica;
+		color:#000000;
+		font-size:large;
+		font-weight:bold;
+		border-left:1px solid #FFF;	
+		border-right:1px solid #FFF;  		
+		border-top:1px solid #FFF;  		
+  		background:#dedede;
+  		padding-left:15px;
+  		padding-right:15px;
+  		padding-top:5px;
+  		padding-bottom:5px;  		  		  			 	}
+
+.banner-commentspop A         { color: #4444be; text-decoration: underline; }
+.banner-commentspop A:link	{ color: #4444be; text-decoration: none; }
+.banner-commentspop A:visited	{ color: #4444be; text-decoration: none; }
+.banner-commentspop A:active	{ color: #626878;  text-decoration: underline; background-color: #ababab;}
+.banner-commentspop A:hover	{ text-decoration: underline;}
+
+#banner-pop {
+		font-family:palatino, georgia, verdana, arial, helvetica;
+		color:#000000;
+		font-size:large;
+		font-weight:bold;
+		border-left:1px solid #FFF;	
+		border-right:1px solid #FFF;  		
+		border-top:1px solid #FFF;  		
+  		background:#dedede;
+  		padding-left:15px;
+  		padding-right:15px;
+  		padding-top:5px;
+  		padding-bottom:5px;  		  		  			 	}
+
+.pop-body {
+ 		padding-left:10px;
+		}	
+
+
+	.trackback-url {
+		font-family:palatino, georgia, verdana, arial, helvetica;
+		color:#666;
+		font-size:small;
+		font-weight:normal;
+  		background:#FFF;
+  		line-height:140%;
+ 		padding:5px;		
+ 		border:1px dotted #999; 					
+		}
+	
+	.trackback-body {
+		font-family:palatino, georgia, verdana, arial, helvetica;
+		color:#666;
+		font-size:small;
+		font-weight:normal;
+  		background:#FFF;
+		padding-bottom:10px;
+  		padding-top:10px;		
+ 		border-bottom:1px dotted #999; 					
+		}		
+
+	.trackback-post {
+		font-family:verdana, arial, helvetica;
+		color:#666;
+		font-size:x-small;
+		font-weight:normal;
+  		background:#FFF;		
+		}	
+
+
+
+/* used for comments formatting buttons */
+#toolbar {
+ width: 125px;
+ margin: 0px;
+ padding: 0px;
+ background: #fff;
+ text-align:left;
+}
+
+.button {
+ background: #fff;
+ border: 1px solid #669;
+ margin: 1;
+}
+
+.raised {
+ border-top: 1px solid #669;
+ border-left: 1px solid #669;
+ border-bottom: 1px solid #669;
+ border-right: 1px solid #669;
+ background: #fff;
+ margin:1;
+}
+
+.pressed {
+ border-top: 1px solid #936;
+ border-left: 1px solid #936;
+ border-bottom: 1px solid #936;
+ border-right: 1px solid #936;
+ background: #fff;
+ margin:1;
+}
+
+	
+
+
+.footer	{       font-family:verdana, arial, helvetica; 
+		font-size: x-small; 
+		text-align:center;
+		color: #000000; 
+  		margin:10px 10px 10px 10px;
+		}
+		
+		
+.footer	A               { color: #0000cc; text-decoration: underline; }
+.footer	A:link		{ color: #0000cc; text-decoration: none; }
+.footer	A:visited	{ color: #626878; text-decoration: none; }
+.footer	A:active	{ color: #eecc00;  text-decoration: none; background-color: #ababab;}
+.footer	A:hover		{ text-decoration: underline; }
+
+
+
+
+/* */

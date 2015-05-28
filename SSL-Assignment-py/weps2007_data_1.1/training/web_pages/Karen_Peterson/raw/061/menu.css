@@ -1,0 +1,41 @@
+
+.borderCell {background-color:#999999;}
+.menuGray {background-color:#bbbbbb;}
+/*.contentCell {background-color:#bbbbbb;}*/
+
+
+#logo {position:absolute; top:1px; left:163px; height:30px; width:130px; clip:rect(0px,130px,30px,0px); z-index:1; }
+#tagline {position:absolute; top:21px; left:293px; height:15px; width:195px; clip:rect(0px,195px,15px,0px); z-index:1; }
+#underline {position:absolute; top:32px; left:0px; height:1px; width:287px; clip:rect(0px,287px,1px,0px); z-index:1; background-color:#003399; layer-background-color:#003399; }
+#logoCover {position:absolute; top:0px; left:0px; height:36px; width:780px; clip:rect(0px,780px,36px,0px); z-index:2; }
+
+#cover1 {position:absolute; top:53px; left:53px; height:20px; width:70px; z-index:1000; }
+#cover2 {position:absolute; top:53px; left:122px; height:20px; width:80px; z-index:1000; }
+#cover3 {position:absolute; top:53px; left:201px; height:20px; width:100px; z-index:1000; }
+#cover4 {position:absolute; top:53px; left:305px; height:20px; width:77px; z-index:1000; }
+#cover5 {position:absolute; top:53px; left:387px; height:20px; width:53px; z-index:1000; }
+	
+#tooltip {position:absolute; top:360px; left:50px; height:100px; width:150px; clip:rect(0px,150px,100px,0px); z-index:1000; background-color:#FFFFDF; layer-background-color:#FFFFDF; visibility:hidden; }
+#tooltipBorder {position:absolute; top:0px; left:0px; height:100px; width:150px; clip:rect(0px,150px,100px,0px); z-index:2;}
+#tooltipText {position:absolute; top:2px; left:2px; height:96px; width:146px; z-index:1;}
+
+
+
+.gradgray { background:#DDE0E2; background-image:url(/images/header/grad_gray566.gif); }
+ 
+input.field1 { vertical-align:middle; } 
+img.down1 { position:relative;top:4;left:0; } 
+img.down2 { position:relative;top:6;left:0; } 
+
+
+/*  regional footers start */
+#reg_footercontainer    	{  width: 766px; margin: auto;   }
+.reg_footer	        	    {  margin: auto; 	padding: 0; 	padding-top: 5px; padding-bottom: 8px;  	background-color: #DDE0E2;  	background-image:url(http://www.gartner.com/images/header/footer_grad.gif);  	background-repeat: repeat-y;  	border: 2px solid #fff; 	margin: 0; 	padding: 0;  	}
+.reg_footerlist         	{  margin: 0; padding: 1px 0 1px 5px;  }
+.reg_footerlist ul      	{  margin: 0 5px; padding: 0; }
+.reg_footerlist li      	{  display: inline; list-style-type: none; padding-left: 8px;  }
+.reg_footerlist a       	{  font-family: verdana, arial, helvetica, sans-serif; 	font-size: 10px; 	font-weight: bold; 	color: #666; 	text-decoration: none;  	}
+.reg_footerlist a:hover 	{  color: #3088CC; text-decoration: none;  }
+.reg_copyright          	{  font-family: verdana, arial, helvetica, sans-serif; 	font-size: 10px; 	color: #4d4d4d; 	vertical-align: bottom; 	text-align: right; 	padding-right:3px;  	}
+.reg_inline             	{  display: inline;  }
+/*  regional footers end */

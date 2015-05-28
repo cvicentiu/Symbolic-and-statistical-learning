@@ -1,0 +1,404 @@
+/* --Begin Header Content-- */
+
+ a.head:link      { color: #ffffff; text-decoration: none; }
+ a.head:visited   { color: #ffffcc; text-decoration: none; }
+ a.head:hover     { color: #ffff00; text-decoration: underline;}
+ a.head:active    { color: #ffffcc; text-decoration: none; }
+
+
+.header_table_nav {
+	font-size: xx-small;
+	padding: 2px;
+	text-align: center;
+	background-color: #333399;
+	border:1px solid #333399;
+}
+
+.header_table_corner {
+	color: #ffffff;
+	background-color: #000066;
+	border:1px solid #000066;
+	padding: 0px;
+}
+
+input.press { 
+	border-bottom: #3300cc 2px solid;
+	border-left: #0099ff 2px solid;
+	border-right: #3300cc 2px solid;
+	border-top: #0099ff 2px solid;
+	background-color: #0066cc;
+	color: #ffffff;
+ 	font-weight: bold;
+	font-size: xx-small;
+	cursor: pointer;
+}
+
+/* --End Header Content-- */
+
+/* --Beg Common Header/Footer Elements-- */
+
+.head_foot_table_data {
+	color: #ffffff;
+	font-family: Times New Roman, Times, serif;
+	font-size: small;
+	background-color: #000066;
+	border:1px solid #000066;
+	padding: 0px;
+	text-align: center;
+}
+
+.head_foot_table {
+	width: 100%;
+	color: #ffffff;
+	font-size: medium;
+	border-collapse: collapse;
+}
+
+/* --End Common Header/Footer Elements-- */
+/* --Begin Footer Content-- */
+
+a.foot:link     { color: #ffffcc; text-decoration: none }
+a.foot:visited  { color: #ffffcc; text-decoration: none }
+a.foot:hover    { color: #ffff00; text-decoration: underline}
+a.foot:active   { color: #ffffcc; text-decoration: none }
+
+.footer_table_nav {
+	font-size: x-small;
+	padding: 0px;
+	text-align: center;
+	background-color: #000066;
+	border:1px solid #000066;
+}
+
+.footer_table_data {
+	color: #ffffff;
+	font-size: x-small;
+	background-color: #000066;
+	border:1px solid #000066;
+	padding: 0px;
+	text-align: center;
+}
+
+.footer_table_corner {
+	color: #ffffff;
+	background-color: #000066;
+	border:1px solid #000066;
+	padding: 0px;
+	vertical-align: bottom;
+}
+
+/* --End Footer Content-- */
+/* --Required for Short Content Footer--***DO NOT MODIFY*** */
+
+html, body { 
+margin: 0; 
+padding: 0; 
+height: 100%; /* Required */ 
+}
+
+#container-page { 
+width: 100%; 
+position: relative; 
+min-height: 100%; /* For Modern Browsers */ 
+height: auto !important; /* For Modern Browsers */ 
+height: 100%; /* For IE */ 
+}
+
+#container-content { 
+padding-bottom: 103px; 
+}
+
+#container-foot { 
+width: 100%; 
+position: absolute; 
+bottom: 0 !important; 
+bottom: 0px; /* For Certain IE widths */ 
+height: 103px; 
+} 
+
+.footer_height {
+height: 103px;
+}
+
+/* --End for Short Content Footer-- */
+/* --Begin Main Content-- */
+
+body {
+	display: block;	
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	color: #000;
+	background-color: #ffffff;
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	background-image: url('/static/images/dot_logo_transparent4.gif');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+h4 {
+color:#000000;
+font-size:16px;
+text-align: center;
+}
+
+h4.left {
+color:#000000;
+font-size:16px;
+text-align: left;
+}
+
+
+h4.navy {
+color:#333399;
+}
+
+h4.pagetitle {
+color:#333399;
+font-size:16px;
+text-align: center;
+}
+
+
+
+
+ .footnote {  
+   color: #ffffff;
+   font-size: xx-small; 
+}
+
+ .footnote2 {  
+   color: #000000;
+   font-size: xx-small; 
+}
+
+.ctr {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+.left {
+	text-align: left;
+}
+
+.bolder {
+	font-weight: bold;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.title {
+	font-size: medium;
+	font-weight: bold;
+	color:	#333399;
+	background:	inherit;
+	text-align: center;
+}
+
+/* --End Main Content-- */
+
+/* --BEG--OLD STANDARD CSS FILE FOR BACKWARD COMPATIBILITY-- */
+
+ A:link      { color: #b30100; TEXT-DECORATION: none }
+ A:visited   { color: #b30100; TEXT-DECORATION: none }
+ A:hover     { color: #0000ff; TEXT-DECORATION: underline }
+ A:active    { color: #b30100; TEXT-DECORATION: none }
+
+ A.NAV:link      { FONT-FAMILY: Arial, Tahoma, Trebuchet MS, Verdana, Comic Sans MS; FONT-SIZE: 9pt; color: #b30100; FONT-WEIGHT: bold; TEXT-DECORATION: none }
+ A.NAV:visited   { FONT-FAMILY: Arial, Tahoma, Trebuchet MS, Verdana, Comic Sans MS; FONT-SIZE: 9pt; color: #b30100; FONT-WEIGHT: bold; TEXT-DECORATION: none }
+ A.NAV:hover     { FONT-FAMILY: Arial, Tahoma, Trebuchet MS, Verdana, Comic Sans MS; FONT-SIZE: 9pt; color: #0000ff; FONT-WEIGHT: bold; TEXT-DECORATION: underline}
+ A.NAV:active    { FONT-FAMILY: Arial, Tahoma, Trebuchet MS, Verdana, Comic Sans MS; FONT-SIZE: 9pt; color: #b30100; FONT-WEIGHT: bold; TEXT-DECORATION: none }
+
+ A.NEW:link      { FONT-FAMILY: Arial, Tahoma, Trebuchet MS, Verdana, Comic Sans MS; color: #ffffff; TEXT-DECORATION: none; FONT-WEIGHT: normal }
+ A.NEW:visited   { FONT-FAMILY: Arial, Tahoma, Trebuchet MS, Verdana, Comic Sans MS; color: #ffffcc; TEXT-DECORATION: none; FONT-WEIGHT: normal }
+ A.NEW:hover     { FONT-FAMILY: Arial, Tahoma, Trebuchet MS, Verdana, Comic Sans MS; color: #ffff00; TEXT-DECORATION: underline; FONT-WEIGHT: normal }
+ A.NEW:active    { FONT-FAMILY: Arial, Tahoma, Trebuchet MS, Verdana, Comic Sans MS; color: #ffffcc; TEXT-DECORATION: none; FONT-WEIGHT: normal }
+ 
+ A.PROJ:link      { FONT-FAMILY: Arial, Tahoma, Trebuchet MS, Verdana, Comic Sans MS; color: #9b0000; TEXT-DECORATION: none; FONT-WEIGHT: bold }
+ A.PROJ:visited   { FONT-FAMILY: Arial, Tahoma, Trebuchet MS, Verdana, Comic Sans MS; color: #9b0000; TEXT-DECORATION: none; FONT-WEIGHT: bold }
+ A.PROJ:hover     { FONT-FAMILY: Arial, Tahoma, Trebuchet MS, Verdana, Comic Sans MS; color: #0000ff; TEXT-DECORATION: underline; FONT-WEIGHT: bold}
+ A.PROJ:active    { FONT-FAMILY: Arial, Tahoma, Trebuchet MS, Verdana, Comic Sans MS; color: #9b0000; TEXT-DECORATION: none; FONT-WEIGHT: bold }
+ 
+ a.dark:link     { color: #ffffff; TEXT-DECORATION: none }
+ a.dark:visited  { color: #ffffff; TEXT-DECORATION: none }
+ a.dark:hover    { color: #FFFF00; TEXT-DECORATION: underline}
+ a.dark:active   { color: #ffffff; TEXT-DECORATION: none }
+ 
+ td.lowerbody { FONT-FAMILY: Arial, Tahoma, Trebuchet MS, Verdana, Comic Sans MS; FONT-SIZE: 8pt; FONT-WEIGHT: normal; TEXT-ALIGN: justify; color: #000000; TEXT-DECORATION: none }
+ td.heading { FONT-FAMILY: Arial, Tahoma, Trebuchet MS, Verdana, Comic Sans MS; FONT-SIZE: 9pt; color: #ffffff; FONT-WEIGHT: bold }
+ td.whatsnew { FONT-FAMILY: Arial, Tahoma, Trebuchet MS, Verdana, Comic Sans MS; FONT-SIZE: 8pt; color: #ffffff; FONT-WEIGHT: normal; }
+
+ td.footer { FONT-FAMILY: Arial, Tahoma, Trebuchet MS, Verdana, Comic Sans MS; FONT-SIZE: 8pt; FONT-WEIGHT: normal; TEXT-ALIGN: center; color: #ffffff; TEXT-DECORATION: none }
+ 
+ div.rollover { FONT-FAMILY: Arial, Tahoma, Trebuchet MS, Verdana, Comic Sans MS; FONT-SIZE: 8pt; FONT-WEIGHT: normal; TEXT-ALIGN: center; color: #000000; TEXT-DECORATION: none }
+ 
+ div.whatsnew { FONT-FAMILY: Arial, Tahoma, Trebuchet MS, Verdana, Comic Sans MS; FONT-SIZE: 8pt; color: #ffffff; FONT-WEIGHT: normal; }
+
+ p.footer { FONT-FAMILY: Arial, Tahoma, Trebuchet MS, Verdana, Comic Sans MS; FONT-SIZE: 8pt; FONT-WEIGHT: normal; TEXT-ALIGN: center; color: #ffffff; TEXT-DECORATION: none }
+
+
+
+ p.indent { margin-left: 4px; }
+
+ .hot {font-family: arial, tahoma, verdana, sans-serif; 
+ 	    font-size: 9pt;
+	    font-weight: bold;
+        text-decoration: underline overline; 
+        color: white;
+	    background-color: transparent; }
+	    
+/* --BEG--DO NOT MODIFY--ESSENTIAL FOR DYNAMIC CONTENT-- */
+   
+TABLE.SectionTable {
+	border-color:#033F21;
+	border-style:solid;
+}
+
+TABLE.SectionTableHilite {
+	background: #ADD8E6;
+}
+		
+TD.SectionTableHeader {
+	font-weight: bold;
+	font-size: 10pt;
+	color: White;
+	background: #333399;
+	text-align:center;
+}
+
+TD.SectionTableCellHeader {
+	font-weight: bold;
+	font-size: 10pt;
+	color: White;
+	background: #333399;
+	text-align:center;
+}
+
+TD.SectionTableCell {
+	font-size: 9pt;
+	color: #000000;
+	background: #FFFFFF;
+}
+
+TD.SectionTableCell {
+	font-size: 			9pt;
+	color: 			#000000;
+	background: 		#FFFFFF; 
+}
+
+TD.SectionTableCellHilite {
+	font-size: 			9pt;
+	background: #EEEEEE;
+}
+
+TD.SectionTableCellLolite {
+	font-size: 			9pt;
+	background: White;
+}
+
+TD.DarkTableHeader {
+	background: #000066;
+}
+
+.SectionTitle {
+	font-weight: 		bold;
+	font-size: 			13pt;
+	color : Black;
+	}
+
+.SectionSubTitle {
+	font-size: 			10pt;
+}
+
+.SectionNormalCell {
+	font-size: 			9pt;
+}
+
+.bullet {
+	list-style: disc;
+	color: #ffffff;
+}	    
+
+.variinputbutton {border-bottom : thin solid Gray;
+border-left : thin solid White;
+border-right : thin solid Gray;
+border-top : thin solid White;
+background-color : Silver;
+color : Black;
+font-weight : bolder;
+font-size : 9pt;
+cursor: pointer; }
+
+.inputbutton {border-bottom : thin solid Gray;
+border-left : thin solid White;
+border-right : thin solid Gray;
+border-top : thin solid White;
+background-color : Silver;
+color : Black;
+font-weight : bolder;
+font-size : 9pt;
+cursor : pointer;
+width : 120px; }
+
+
+/* --END--DO NOT MODIFY--ESSENTIAL FOR DYNAMIC CONTENT-- */
+/* --END--OLD STANDARD CSS FILE FOR BACKWARD COMPATIBILITY-- */
+
+/* --BEG--NEW TABLE LAYOUT STANDARD-- */
+
+table.navy_blue {
+	border-width: 1px;
+	border-color: #03016C;
+	border-style: solid;
+	border-collapse: collapse;
+}
+
+td.table_data {
+	font-weight: bold;
+	color: #ffffff;
+	background: #03016C;
+}
+	
+tr.alt_row {
+	color: #000000;
+	background: #e8e8e8;
+	font-size: x-small;
+	}
+
+tr.normal_row {
+	color: #000000;
+	font-size: x-small;
+	}
+
+	
+td.table_data a:link {color: #ffffff; text-decoration: none;}
+td.table_data a span {display: none; text-decoration: none;}
+td.table_data a:visited {color: #ffffff; text-decoration: none;}
+td.table_data a:hover {display: block; color: #03016C; background: #ffffff; text-decoration: none;}
+
+td.table_data a:hover span {
+   display: block;
+   position: absolute;
+   top: 75%;
+   left: 43%;
+   width: 125px;
+   padding: 5px;
+   margin-left: auto;
+   margin-right: auto;
+   z-index: 100;
+   color: #ffffff;
+   background: #03016C;
+   text-decoration: none;
+   text-align: center;
+}
+td.table_data a:active {color: #ffffff; text-decoration: none;}
+.error { font-family: verdana, "Lucida Grande", arial; font-weight: bold; font-size:10pt; color: #FF0000; }
+
+/* --END--NEW TABLE LAYOUT STANDARD-- */

@@ -1,0 +1,392 @@
+A:LINK {color : #000066; text-decoration : none;}
+A:VISITED {color : #000099; text-decoration : none;}
+A:ACTIVE {color : #000099; text-decoration : underline;}
+A:HOVER {color : #000099; text-decoration : underline;}
+
+.navigation A:LINK {color : #AAAAAA; text-decoration : none;}
+.navigation A:VISITED {color : #AAAAAA; text-decoration : none;}
+.navigation A:ACTIVE {color : #AAAAAA; text-decoration : underline;}
+.navigation A:HOVER {color : #0066FF; text-decoration : underline;}
+
+.currentarchive A:LINK {color : #E3801E; font-weight: bold; text-decoration : none;}
+.currentarchive A:VISITED {color : #E3801E; font-weight: bold; text-decoration : none;}
+.currentarchive A:ACTIVE {color : #E3801E; font-weight: bold; text-decoration : underline;}
+.currentarchive A:HOVER {color : #E3801E; font-weight: bold; text-decoration : underline;}
+
+B { font-weight : bold; }
+H1{ font-family: Georgia,Garamond,'Times New Roman', Times, Roman, serif; font-size: 26px; color: #333333; line-height : 32px; margin-left : 0px; margin-right : 8px; margin-top : 10px; margin-bottom : 18px; }
+H2{ font-family: Georgia,Garamond,'Times New Roman', Times, Roman, serif; font-size: 20px; color: #333333; line-height : 26px; margin-left : 0px; margin-right : 8px; margin-top : 10px; margin-bottom : 18px; }
+H3{ font-family: Georgia,Garamond,'Times New Roman', Times, Roman, serif; font-size: 16px; color: #333333; line-height : 20px; margin-left : 0px; margin-right : 8px; margin-top : 10px; margin-bottom : 18px; }
+H4{ font-family: Georgia,Garamond,'Times New Roman', Times, Roman, serif; font-size: 12px; color: #333333; line-height : 16px; margin-left : 0px; margin-right : 8px; margin-top : 8px; margin-bottom : 8px; }
+H5{ font-family: Georgia,Garamond,'Times New Roman', Times, Roman, serif; font-size: 10px; color: #333333; line-height : 14px; margin-left : 0px; margin-right : 8px; margin-top : 8px; margin-bottom : 8px; }
+H6{ font-family: Georgia,Garamond,'Times New Roman', Times, Roman, serif; font-size: 8px; color: #333333; line-height : 12px; margin-left : 0px; margin-right : 8px; margin-top : 8px; margin-bottom : 8px; }
+HR{
+    border-style : none;
+    background-color : #999999;
+    height : 1px;
+}
+
+P {
+    font-family:    Verdana, Arial, Helvetica, sans-serif;
+    font-size:      13px;
+	line-height:    20px;
+    font-weight:    normal;
+    font-style:     normal;
+    color:          #333333;
+	margin-left:    0px;
+	margin-right:   8px;
+	margin-top:     8px;
+	margin-bottom:  10px;
+    text-indent:    25px;
+    text-align:     left;
+}
+
+TD {
+    font-family:    Verdana, Arial, Helvetica, sans-serif;
+    font-size:      13px;
+	line-height:    20px;
+    font-weight:    normal;
+    font-style:     normal;
+    color:          #333333;
+    text-align:     left;
+}
+
+LI {
+    font-family:    Verdana, Arial, Helvetica, sans-serif;
+    font-size:      13px;
+	line-height:    20px;
+    font-weight:    normal;
+    font-style:     normal;
+    color:          #333333;
+	margin-top:     5px;
+	margin-bottom:  5px;
+}
+
+P.caption {
+	font-family:Georgia,Garamond,'Times New Roman', Times, Roman, serif;
+	font-style:	italic;
+	text-align:	center;
+
+}
+
+P.homesummary {
+	line-height:    18px;
+}
+
+P.datehead {
+    font-family:    Arial, Helvetica, sans-serif;
+    font-size:      12px;
+	line-height:    15px;
+    font-weight:    normal;
+    font-style:     italic;
+    text-align:     center;
+    text-indent:    0px;
+}
+
+P.morelink {
+    font-family:    Arial, Helvetica, sans-serif;
+    font-size:      12px;
+	line-height:    14px;
+    font-weight:    bold;
+    font-style:     italic;
+	margin-top:     8px;
+	margin-bottom:  6px;
+    text-indent:    0px;
+    text-align:     right;
+}
+
+P.home-recentdate {
+    font-family:    Arial, Helvetica, sans-serif;
+    font-size:      14px;
+	line-height:    18px;
+    font-weight:    bold;
+    font-style:     italic;
+	margin-top:     10px;
+	margin-bottom:  10px;
+    text-indent:    0px;
+}
+
+P.home-recentheadline {
+    font-family:    'Trebuchet MS',Verdana,Arial, Helvetica, sans-serif;
+    font-size:      13px;
+	line-height:    16px;
+	margin-top:     6px;
+	margin-bottom:  6px;
+    text-indent:    0px;
+}
+
+P.navigation {
+    font-family:    Arial, Helvetica, sans-serif;
+    font-size:      13px;
+	line-height:    16px;
+    text-indent:    0px;
+    color:          #AAAAAA;
+	margin-top:     5px;
+    margin-bottom:  20px;
+}
+
+IMG.storyphoto {
+    border:         1px solid #000000;
+}
+
+P.headline {
+    font-family:    Georgia,Garamond,'Times New Roman', Times, Roman, serif;
+    font-size:      20px;
+	line-height:    25px;
+    font-weight:    bold;
+    font-style:     normal;
+    color:          #333333;
+	margin-left:    0px;
+	margin-right:   8px;
+	margin-top:     0px;
+	margin-bottom:  10px;
+    text-indent:    0px;
+    text-align:     left;
+}
+
+P.photographer {
+    font-family:    Verdana,Arial, Helvetica, sans-serif;
+    font-size:      10px;
+	line-height:    10px;
+    font-weight:    normal;
+    font-style:     normal;
+    color:          #555555;
+	margin-left:    0px;
+	margin-right:   0px;
+	margin-top:     5px;
+	margin-bottom:  15px;
+    text-indent:    0px;
+    text-align:     right;
+}
+
+P.byline {
+    font-family:    Arial, Helvetica, sans-serif;
+    font-size:      12px;
+	line-height:    14px;
+    font-weight:    bold;
+    font-style:     normal;
+    color:          #000000;
+	margin-left:    0px;
+	margin-right:   0px;
+	margin-top:     8px;
+	margin-bottom:  1px;
+    text-indent:    0px;
+    text-align:     left;
+}
+
+P.pressdate {
+    font-family:    Arial, Helvetica, sans-serif;
+    font-size:      12px;
+	line-height:    14px;
+    font-weight:    normal;
+    font-style:     normal;
+    color:          #000000;
+	margin-left:    0px;
+	margin-right:   0px;
+	margin-top:     5px;
+	margin-bottom:  15px;
+    text-indent:    0px;
+    text-align:     left;
+}
+
+DIV.sidebar{
+    border-left:    1px solid #E3801E;
+    border-right:   1px solid #E3801E;
+    border-bottom:  1px solid #E3801E;
+    background-color: #D9E6F4;
+	padding-left:   8px;
+	padding-right:  8px;
+	padding-top:    5px;
+	padding-bottom: 5px;
+}
+
+DIV.sidebararchive{
+    border-left:    1px solid #E3801E;
+    border-right:   1px solid #E3801E;
+    border-top:     1px solid #E3801E;
+    border-bottom:  1px solid #E3801E;
+    background-color: #D9E6F4;
+	padding-left:   8px;
+	padding-right:  8px;
+	padding-top:    5px;
+	padding-bottom: 5px;
+	margin-top:     15px;
+}
+
+P.sidebar{
+    font-family:    Arial, Helvetica, sans-serif;
+    font-size:      13px;
+	line-height:    16px;
+    font-weight:    normal;
+    font-style:     normal;
+    color:          #000000;
+	margin-left:    0px;
+	margin-right:   0px;
+	margin-top:     3px;
+	margin-bottom:  6px;
+    text-indent:    0px;
+    text-align:     left;
+}
+
+P.sidebarsection{
+    font-family:    Arial, Helvetica, sans-serif;
+    font-size:      13px;
+	line-height:    16px;
+    font-weight:    bold;
+    font-style:     italic;
+    color:          #000000;
+	margin-left:    0px;
+	margin-right:   0px;
+	margin-top:     3px;
+	margin-bottom:  6px;
+    text-indent:    0px;
+    text-align:     left;
+}
+
+#menucolumn{
+    width:          130px;
+    border-right:   1px solid #000066;
+}
+
+#menugroup{
+    width:          100%;
+    background-color: #D9E6F4;
+    border-top:  1px solid #2244AA;
+    border-bottom:  1px solid #2244AA;
+    margin-bottom:  12px;
+}
+
+#menugroup a{
+    font-family:    Arial, Helvetica, sans-serif;
+    font-size:      12px;
+    font-weight:    bold;
+    color:          #D9E6F4;
+    display:        block;
+    border-left:    7px solid #2244AA;
+    background-color: #2175BC;
+	padding:        5px 2px 5px 5px;
+	margin:         1px 1px 1px 0px;
+}
+
+#menugroup a:hover {
+    /*/*/
+    border-left:    7px solid #999999;
+    background-color:#2586D7;
+    text-decoration:none;
+    /* */
+}
+
+P.nodent{
+    text-indent:    0px;
+}
+
+P.indented{
+	margin-left:    25px;
+    text-indent:    0px;
+}
+
+P.blocked{
+	margin-left : 25px;
+	margin-right : 25px;
+	margin-top : 15px;
+	margin-bottom : 25px;
+    text-indent : 0px;
+}
+
+P.attribution{
+    font-size: 11px;
+    font-style: italic;
+	margin-left : 25px;
+    text-indent : 0px;
+    color: #444444;
+}
+
+P.copyright{
+    font-family:    Arial, Helvetica, sans-serif;
+    font-size:      12px;
+	line-height:    14px;
+    font-weight:    normal;
+    font-style:     italic;
+    color:          #666666;
+	margin-left:    0px;
+	margin-right:   0px;
+	margin-top:     3px;
+	margin-bottom:  6px;
+    text-indent:    0px;
+    text-align:     left;
+}
+
+.results {
+	font-family:    Arial, Helvetica, sans-serif;
+	font-size:      12px;
+	line-height:    17px;
+    text-indent:    0px;
+}
+
+.results a {
+	font-family:    Verdana, Arial, Helvetica, sans-serif;
+	font-size:      13px;
+	text-decoration:underline;
+}
+
+.quote{
+    font-family:    Georgia,Garamond,'Times New Roman', Times, Roman, serif;
+    font-style:     italic;
+    color:          #666666;
+}
+
+P.quote{
+    font-family:    Georgia,Garamond,'Times New Roman', Times, Roman, serif;
+    font-style:     italic;
+    color:          #666666;
+	margin-left:    25px;
+	margin-right:   25px;
+	margin-top:     15px;
+	margin-bottom:  25px;
+    text-indent:    0px;
+}
+
+.highlight{
+    font-weight:    bold;
+    border-bottom:  1px dashed #F3801E
+}
+
+.footer {
+    font-family:    Arial, Helvetica, sans-serif;
+    font-size:      13px;
+	line-height:    16px;
+    text-indent:    0px;
+    text-align:     center;
+    width:          750px;
+    color:          #AAAAAA;
+	padding-top:    8px;
+	margin-top:     15px;
+    margin-bottom:  15px;
+    border-top:     1px solid #AAAAAA;
+}
+
+.dropcap {font : bold italic 24px Georgia,'Times New Roman', Times, Roman, serif;}
+
+H2.center
+{ 
+	font-family: Georgia,Garamond,'Times New Roman', Times, Roman, serif; 
+	font-size: 20px; 
+	color: #333333; 
+	line-height : 26px; 
+	margin-left : 0px; 
+	margin-right : 8px; 
+	margin-top : 10px; 
+	margin-bottom : 18px; 
+	text-align:     center;
+	}
+	
+	P.top {
+    font-family:    Verdana, Arial, Helvetica, sans-serif;
+    font-size:      10px;
+	font-weight:    normal;
+    font-style:     normal;
+	margin-left : 0px; 
+	margin-right : 0px;
+    text-indent:    0px;
+    text-align:     right;
+}

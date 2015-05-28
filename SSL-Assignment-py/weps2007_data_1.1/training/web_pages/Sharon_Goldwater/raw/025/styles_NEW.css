@@ -1,0 +1,194 @@
+body {
+	background-image: url(../interface/template_images/bg_panel.gif);
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+	background-color: #666666;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	font-size: 12px;
+}
+a:link {
+	color: #006699;
+	text-decoration:none;
+}
+a:visited {
+	color: #006699;
+	text-decoration:none;
+}
+a:hover {
+	color: #006699;
+	text-decoration:underline;
+}
+p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #2C4156;
+}
+h1 {
+	font-size: 14px;
+	line-height: 1.2em;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 4px;
+	color: #009;
+	}
+h2 {
+	font-size: 13px;
+	line-height: 1.2em;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 6px;
+	color: #006;
+	}
+h3 {
+	font-size: 12px;
+	line-height: 1.1em;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 0;
+	color: #006;
+	}
+.PhotoCaption {
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #003366;
+}
+.TextMain {
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #2C4156;
+}
+.TextMain10pt {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #2C4156;
+}
+.TextMain12pt {
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #2C4156;
+}
+.Headline {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #2C4156;
+	font-weight: bold;
+	}
+.HeadlineWhite {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.HeadlineSmaller {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #003366;
+	font-weight: bold;
+}
+.TextMainHighlight {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #003366;
+	font-weight: bold;
+}
+.breadcrumb {
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #2C4156;
+	text-align: right;
+	position: relative;
+	margin-top: -60px;
+	margin-bottom: 65px;
+	voice-family: "\"}\"";
+	voice-family:inherit;
+}
+.tiny {
+	font-size: 11px;
+	line-height: 12px;
+	}
+#menubar {
+	background-image: url(/css/tab2_bg.gif);
+	background-repeat: repeat-x;
+	background-color: #8a9ba7;
+	border-bottom: 1px solid #3F474C;
+	text-align: center;
+	position: absolute;
+	top: 125px;
+	width: 800px;
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	height: 21px;
+}
+.personal {
+	background-color: #8a9ba7;
+	width: 600px;
+	}	
+	
+.personal TD {
+	background-color: #fff;
+	padding: 12px; 
+	vertical-align: top;
+	}
+	
+.personal TD P {
+	line-height: 1.2;
+	}
+	
+.personal TH {
+	background-color: #8a9ba7;
+	text-align: left;
+	vertical-align: bottom;
+	padding-left: 12px;
+	}
+	
+.personal IMG {
+	margin-bottom: 12px;
+	}
+	
+.personal H2 {
+	margin-bottom: 0;
+	}
+.calendarBorder { border-right: 1px solid #A3B180; border-bottom: 2px solid #A3B180; border-left: 2px solid #A3B180; }
+.calendarHead { background-color: #A3B180; padding: 1px 3px 0px 3px; color: #4B5238; font-family: "Trebuchet MS", arial, sans-serif; font-size: 12px; text-transform: uppercase; font-weight: bold; }
+.cellOff, .cellOn { border-top: 1px solid #A3B180; border-right: 1px solid #A3B180; padding-top: 2px; padding-bottom: 2px; color: #A3B180; text-align: center; font-family: "Trebuchet MS", arial, sans-serif; font-size: 21px; font-weight: bold; }
+.cellOn { background-color: #DAE0CC; color: #67714F; }
+a.calendarLink { color: #67714F; text-decoration: none; }
+a.calendarLink:hover { color: #963927; text-decoration: none; }
+.monthList { font-family: arial, sans-serif; font-size: 11px; color:#9C9B9B; }
+.monthList a { color:#6B6B6B; }
+.monthList a:hover { color:#6B6B6B; text-decoration: none; }
+.yearHeader { font-family: arial, sans-serif; font-weight:bold; color:#94A075; font-size: 11px; }
+.currMonth { font-weight:bold; color:#94A075; }
+.monthHeader { font-family: arial, sans-serif; font-size:18px; color:#67714F; }
+.personal {
+	background-color: #8a9ba7;
+	width: 600px;
+	}	
+	
+.personal TD {
+	background-color: #fff;
+	padding: 12px; 
+	vertical-align: top;
+	}
+	
+.personal TD P {
+	line-height: 1.2;
+	}
+	
+.personal TH {
+	background-color: #8a9ba7;
+	text-align: left;
+	vertical-align: bottom;
+	padding-left: 12px;
+	}
+	
+.personal IMG {
+	margin-bottom: 12px;
+	}
+	
+.personal H2 {
+	margin-bottom: 0;
+	}

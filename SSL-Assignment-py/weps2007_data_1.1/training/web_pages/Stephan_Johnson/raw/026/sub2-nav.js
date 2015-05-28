@@ -1,0 +1,15 @@
+document.writeln("<div class='nav-heading'><A HREF='../../index.html' class='nav-heading'>HOME</a></div>");
+document.writeln("<div class='nav-heading'><A HREF='../../genealogy.html' class='nav-heading'>GENEALOGY</a></div>");
+document.writeln("<div class='nav-list'><A HREF='../../genealogy-news.html' class='nav-list'>Genealogy News</a></div>");
+document.writeln("<div class='nav-list'><A HREF='../../genealogy/index.htm' class='nav-list'>Surname/Family List</a></div>");
+document.writeln("<div class='nav-list'><A HREF='../../genealogy/nindex.htm' class='nav-list'>Full Name Index</a></div>");
+document.writeln("<div class='nav-list'><A HREF='../../handfasting.html' class='nav-list'>Our Handfasting</a></div>");
+document.writeln("<div class='nav-heading'><A HREF='../../web/index.html' class='nav-heading'>WEB DESIGN</a></div>");
+document.writeln("<div class='nav-list'><A HREF='../../web/html.html' class='nav-list'>HTML</a></div>");
+document.writeln("<div class='nav-list'><A HREF='../../web/css.html' class='nav-list'>Style Sheets</a></div>");
+document.writeln("<div class='nav-list'><A HREF='../../web/graphics.html' class='nav-list'>Graphics</a></div>");
+document.writeln("<div class='nav-list'><A HREF='../../web/perl.html' class='nav-list'>CGI/Perl</a></div>");
+document.writeln("<div class='nav-heading'><A HREF='../../work.html' class='nav-heading'>MY WORK</a></div>");
+document.writeln("<div class='nav-list'><A HREF='../../work-graphics.html' class='nav-list'>Graphics</a></div>");
+document.writeln("<div class='nav-list'><A HREF='../../siteinsight.html' class='nav-list'>SiteInsight</a></div>");
+document.writeln("<div class='nav-heading'><A HREF='../../cgi-bin/yabb/YaBB.pl' class='nav-heading'>MESSAGE FORUMS</a></div>");

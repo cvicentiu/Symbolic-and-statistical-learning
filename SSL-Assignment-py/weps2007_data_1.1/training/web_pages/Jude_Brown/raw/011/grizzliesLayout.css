@@ -1,0 +1,545 @@
+/* =TEST
+----------------------------------------------- */
+
+
+/* =BASE
+----------------------------------------------- */
+
+* { margin: 0; padding: 0; }
+
+body { min-width: 760px; /* for Netscape 6 (Leftside spilling in reduced window) */ background: #555555 url(/media/grizzlies/slate-body_background.gif); background-position: left top; background-repeat: repeat-y; font-family: Verdana, sans-serif; font-size: 62.5%; }
+
+img { display: block; margin: 0; border: 0; }
+.bodyImage { float: right !important; padding: 0 0 10px 10px !important; }
+
+
+/* =STRUCTURE
+----------------------------------------------- */
+.clear { clear: both; height: 0; line-height: 0px; font-size: 0; }
+#leftLock { float: left; margin-left: -1000px; display: inline; }
+#wrapper { width: 941px; margin: 0; margin-left: 40px; text-align: left; /* for IE auto margin fix */}
+#grizzliesClear { clear: both; }
+
+
+
+
+
+/* =NAVIGATION
+----------------------------------------------- */
+
+
+#wrapper #contentPrimary #pageHeader #pageNavigation #grizzliesNav { padding: 0; margin: 0; list-style: none !important; padding-left: 8px; }
+#wrapper #contentPrimary #pageHeader #pageNavigation #grizzliesNav div { padding: 0; margin: 0; }
+#wrapper #contentPrimary #pageHeader #pageNavigation #grizzliesNav ul { padding: 0; margin: 0; list-style: none !important; }
+#grizzliesNav a { display: block; }
+#grizzliesNav li { float: left; /* this needs to be there for opera width: 5em; */ padding: 0px 5px; }
+#grizzliesNav li ul { position: absolute; left: -999em; background: #374674; border-right: 1px solid #fff; border-bottom: 1px solid #fff; border-left: 1px solid #fff; }
+#grizzliesNav li:hover ul, #grizzliesNav li.sfhover ul { left: auto; }
+#grizzliesNav li li { float: none; text-align: left; padding-bottom: 5px; }
+#grizzliesNav li li a { display: block; font-weight: normal; color: #becfdb; font-size: 11px; text-decoration: none; padding: 5px; }
+#grizzliesNav li li a:hover { text-decoration: underline; }
+#grizzliesNav li#last ul { margin-left: -70px !important; width: 150px; }
+
+/* =PRIMARY CONTENT
+----------------------------------------------- */
+#contentPrimary { width: 752px; padding: 0; float: left; }
+#homepageWrapper { width: 752px; background: #7b7d8c url(/media/grizzlies/slate-top_story-background.gif) repeat-y left top; }
+#homepageContent { padding: 20px; width: 470px; float: left; }
+* html #homepageContent { width: 510px; w\idth: 470px; }
+#contentWrapper { width: 752px; background: #7b7d8c; }
+
+#sectionWrapper .sectionHeaderImage { margin: -20px -20px 0px -20px; padding-bottom: 20px; }
+#sectionWrapper .sectionHeaderImageDancer { margin: -20px 20px -20px -20px; float: left; }
+#sectionWrapper .sectionTitleImage { padding-bottom: 20px; }
+#sectionWrapper a { color: #f5b112; }
+
+#pageWrapper { background: #ffffff; width: 670px; padding: 20px; border: 1px solid #222222; margin-top: 20px; margin-right: 20px; margin-bottom: 0px; margin-left: 20px; font-color: #12173f; }
+* html #pageWrapper { width: 712px; w\idth: 670px; }
+
+#articleContent { background: #FFFFFF; width: 348px; font-color: #12173f; margin: 0; padding-top: 0px; padding-right: 10px; padding-bottom: 0px; padding-left: 0px; float: left; }
+* html #articleContent { width: 358px; w\idth: 348px; }
+
+#homepageTopStory { width: 468px; border: 1px solid #222222; margin-bottom: 20px; }
+* html #homepageTopStory { width: 470px; w\idth: 468px; }
+
+#homepageBoxContainer { width: 464px; border: 1px solid #222222; background: #ffffff url(/media/grizzlies/slate-box_header-grizzlies_news_and_features.gif); background-position: left top; background-repeat: no-repeat; padding-top: 0px; padding-right: 0px; /* fudged because math does not work out */padding-bottom: 10px; padding-left: 4px; /* fudged because math does not work out */}
+* html #homepageBoxContainer { width: 474px; w\idth: 464px; }
+#homepageBoxContainer h2 { display: none; }
+#homepageBoxContainer .homepageBox { width: 105px; float: left; padding: 5px; font-size: 1.0em; color: #5d76a9; line-height: 1.4em; margin-top: 5px; }
+#homepageBoxContainer .homepageBox img { border: 1px solid #222222; }
+#homepageBoxContainer .homepageBox a { color: #5d76a9; text-decoration: underline; }
+#homepageBoxContainer .homepageBox a:hover { color: #5d76a9; text-decoration: none; }
+#homepageBoxContainer .homepageMore { padding-top: 10px; padding-right: 7px; font-size: 1.0em; color: #5d76a9; clear: both; text-align: right; }
+#homepageBoxContainer .homepageMore a { color: #5d76a9; text-decoration: underline; font-weight: bold; margin-left: 10px; }
+#homepageBoxContainer .homepageMore a:hover { color: #5d76a9; text-decoration: none; font-weight: bold; margin-left: 10px; }
+
+#homepageSecondary { background: #222222 url(/media/grizzlies/slate-tix_featuresBG.gif) repeat-x; width: 202px; padding: 20px; padding-bottom: 0px; float: right; }
+* html #homepageSecondary { width: 242px; w\idth: 202px; }
+#homepageSecondary img { border: 1px solid #222222; }
+
+#grizzliesFeaturesInner img { padding-top: 40px; }
+
+#pageHeader { background: #12173f url(/media/grizzlies/slate-header_background.gif); width: 752px; text-align: left; }
+#pageHeader h1 { display: none; }
+#pageHeader .pageHeaderLogo { float: left; margin: 10px; }
+#pageHeader object { float: left; }
+#pageHeader .pageHeaderImage { float: right; }
+#pageHeader #pageNavigation { float: right; text-align: right; width: 580px; }
+#pageHeader #underHeader { clear: both; padding-bottom: 0px; background: url(/media/grizzlies/slate-navbreak_background.gif); }
+
+#pageWrapper h2, #pageWrapperLegacy h2 { margin: 0 0 4px 0; font-size: 2.0em; color: #5D76A9; font-weight: bold; font-family: Tahoma, Arial, sans-serif; }
+#pageWrapper h3, #pageWrapperLegacy h3 { margin: 0 0 4px 0; font-size: 1.8em; color: #5D76A9; font-weight: normal; }
+#pageWrapper h4, #pageWrapperLegacy h4 { margin: 0 0 8px 0; font-size: 1.4em; color: #5D76A9; font-weight: bold; }
+#pageWrapper h5, #pageWrapperLegacy h5 { font-size: 1.4em; color: #383940; font-weight: bold; margin-bottom: 10px; }
+#wrapper #contentPrimary #contentWrapper #pageWrapper h7, #wrapper #contentPrimary #contentWrapper #pageWrapperLegacy h7 { margin: 0 0 0 0; font-size: 1.2em; color: #555555; font-weight: bold; padding: 0 0 10px 0; display: block; }
+#wrapper #contentPrimary #contentWrapper #pageWrapper h8, #wrapper #contentPrimary #contentWrapper #pageWrapperLegacy h8 { margin: 0 0 5px 0; font-size: 1.4em; color: #5D76A9; font-weight: bold; display: block; font-family: Tahoma, Arial, sans-serif; }
+
+#pageWrapper p { margin: 0 0 1em 0; font-size: 1.2em; line-height: 1.3em; text-align: justify; color: #12173f; }
+
+#pageWrapper a { color: #5d76a9; text-decoration: underline; }
+#pageWrapper a:hover { color: #5d76a9; text-decoration: none; }
+
+#pageWrapper ul { margin-left: 2em; margin-bottom: 10px; }
+#pageWrapper ol { margin-left: 2em; margin-bottom: 10px; }
+#pageWrapper li { font-size: 1.2em; padding-bottom: 1em; }
+#pageWrapper li a { font-weight: normal; }
+
+#pageWrapperLegacy ul { margin-left: 2em; margin-bottom: 10px; }
+#pageWrapperLegacy li { font-size: 1.2em; padding-bottom: 1em; }
+#pageWrapperLegacy li a { font-weight: normal; }
+
+
+/* rollover */
+.homepageMoreImg { position: relative; background: url(/media/grizzlies/slate-homepage-more-on.gif) no-repeat; white-space: nowrap; display: block; width: 59px; height: 20px; margin: 0; padding: 0; margin-left: 405px; }
+.homepageMoreImg a { display: block; width: 59px; height: 20px; display: block; float: right; }
+.homepageMoreImg img { width: 59px; height: 20px; border: 0; }
+* html .homepageMoreImg a:hover { visibility: visible; }
+.homepageMoreImg a:hover img { visibility: hidden; }
+/* end rollover */
+
+/* =ARTICLE
+----------------------------------------------- */
+
+#articleSecondary .imageBlock .articlePhoto table.emailPhotoTable tr td.ePhotoBorder { background: #f00; display: none; }
+#articleSecondary .imageBlock .articlePhoto table.emailPhotoTable tr td.ePhotoBox { background: #f00; display: none;}
+.articleImage { float: right; padding: 5px 0 10px 10px; }
+.aLLeadHeadlineTS { font-size: 14px; font-weight: bold; }
+
+/* =UNSORTED
+----------------------------------------------- */
+
+#wrapper #contentSecondary .secondaryBox .calTable .date { padding-bottom: 0 !important; margin-bottom: 0 !important; font-weight: bold !important; font-size: 1.1em; font-style: normal !important; }
+#wrapper #contentSecondary .secondaryBox .calTable BR { clear: both; line-height: 0; display: block; }
+#wrapper #contentSecondary .secondaryBox .calTable .eventH, #wrapper #contentSecondary .secondaryBox .calTable .eventV { padding-bottom: 20px !important; }
+#wrapper #contentSecondary .secondaryBox .calTable img { padding-bottom: 0 !important; margin-bottom: 0 !important; }
+
+
+
+.secondaryBox .eventH img { margin-left: 0px; }
+
+
+
+#articleSecondary { background: #FFFFFF; width: 302px; color: #12173f; margin: 0; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 20px; float: right; }
+* html #articleSecondary { width: 322px; w\idth: 302px; }
+
+.imageBlock { margin-bottom: 20px; }
+.imageBlock img { border: 1px solid #fff; margin-bottom: 6px; }
+
+#pageWrapper .photocaption { margin: 0 0 20px 20px; float: right; font-size: 1.0em !important; color: #555 !important; display: block !important; line-height: 1.3em !important; margin-bottom: 5px !important; }
+#pageWrapper .photocaption img { display: block; border: 0; }
+
+.caption { font-size: 1.0em !important; color: #555 !important; display: block !important; line-height: 1.3em !important; margin-bottom: 5px !important; }
+.credit { font-size: 1.0em !important; color: #555 !important; font-style: italic !important; display: block !important; line-height: 1.3em !important; text-align: right !important; }
+.relatedBlock { border: 0px solid #DDDDDD !important; border-top-width: 1px !important; border-bottom-width: 1px !important; padding-bottom: 10px !important; margin-bottom: 20px !important; }
+.relatedBlock h2 { font-size: 1.2em !important; color: #5d76a9 !important; font-weight: bold !important; margin-top: 10px !important; margin-bottom: 10px !important; }
+.relatedBlock ul { margin-left: 20px !important; }
+.relatedBlock li { font-size: 1.0em !important; color: #5d76a9 !important; font-weight: normal !important; }
+.relatedBlock a { text-decoration: underline !important; color: #5d76a9 !important; font-weight: normal !important; }
+.relatedBlock a:hover { text-decoration: none !important; color: #5d76a9 !important; font-weight: normal !important; }
+
+#pagePartners { background: #41424a; width: 712px; clear: both; padding: 20px; text-align: center; }
+#pagePartners { width: 752px; w\idth: 712px; }
+#pagePartners img { display: inline; margin: 0 10px; vertical-align: middle; }
+
+#pageSponsor { background: #7b7d8c; text-align: center; margin: 0 auto; clear: both; }
+#pageSponsor img { text-align: center; margin: 0 auto; padding-bottom: 20px; }
+
+#pageFooter { background: #7b7d8c; width: 712px; clear: both; padding: 20px; align: center; color: #dddddd; padding-bottom: 30px; line-height: 150%; }
+* html #pagefooter { width: 752px; w\idth: 712px; }
+
+#pageFooter p { text-align: center; font-size: 1.0em; }
+
+#pageFooter ul { margin: 0 0 10px 0; padding: 0; list-style: none; text-align: center; }
+#pageFooter ul li { display: inline; }
+#pageFooter ul a { padding: 0 10px; line-height: 2.1em; text-decoration: underline; color: #dddddd; }
+#pageFooter ul a:hover { text-decoration: none; color: #ffffff; }
+
+#pageFooter a:link { text-decoration: underline; color: #dddddd; }
+#pageFooter a:visited { text-decoration: underline; color: #dddddd; }
+#pageFooter a:hover { text-decoration: none; color: #ffffff; }
+#pageFooter a:active { text-decoration: none; color: #ffffff; }
+
+#pageFooter .termsofuse:link { text-decoration: underline; color: #becfdb; }
+#pageFooter .termsofuse:visited { text-decoration: underline; color: #becfdb; }
+#pageFooter .termsofuse:hover { text-decoration: none; color: #ffffff; }
+#pageFooter .termsofuse:active { text-decoration: none; color: #ffffff; }
+
+#pageFooter .advertisecareer:link { text-decoration: underline; color: #ffffff; }
+#pageFooter .advertisecareer:visited { text-decoration: underline; color: #ffffff; }
+#pageFooter .advertisecareer:hover { text-decoration: none; color: #dddddd; }
+#pageFooter .advertisecareer:active { text-decoration: none; color: #dddddd; }
+
+#contentSecondary { width: 150px; float: left; background-color: transparent; }
+
+.secondaryBox { font-size: 1.0em; color: #ffffff; line-height: 1.4em; margin-bottom: 20px; margin-left: 0px; width: 120px; padding-left: 20px; padding-right: 20px; }
+
+* html .secondaryBox { w\idth: 160px; width: 120px; }
+
+/*.secondaryBox table { padding: 0; margin-left:20px; _margin-left:0px; }
+
+.secondaryBox table table { margin-left:0px; }
+
+*/.secondaryBox h3 { display: none; }
+
+.secondaryBox img { margin-bottom: 10px; margin-left: -20px; display: block; }
+
+.secondaryBox .pollImage { margin-bottom: 0px; display: block; }
+
+.secondaryBox .calDate, .date { font-style: italic; display: block; }
+
+.secondaryBox .calTitle, { font-weight: bold; display: block; }
+
+.secondaryBox .calContent, .event, .eventV, .eventH { display: block; }
+
+.secondaryBox p { margin-left: 0px; margin-bottom: 10px; }
+
+.secondaryBox a { text-decoration: underline; color: #f5b112; }
+
+.secondaryBox a:hover { text-decoration: none; xcolor: #f5b112; }
+
+.secondaryBox .searchform { margin-top: -5px; margin-left: 20px; margin-bottom: -5px; }
+
+.secondaryBox input[type="text"], .secondaryBox input[type="password"], textarea { background: #DDDDDD; border: 1px solid; border-color: #222; width: 94px; padding: 1px; }
+
+* html .secondaryBox input[type="text"], * html .secondaryBox input[type="password"], * html textarea { width: 100px; w\idth: 94px; }
+
+.secondaryBox .button { margin-bottom: -4px; }
+
+.secondaryBox input[type="radio"] { margin-bottom: -2px; margin-right: 5px; }
+
+.secondaryElement { margin-left: 20px; margin-bottom: 20px; }
+
+.secondaryFEF { margin-top: 10px; margin-left: 20px; margin-bottom: 10px; }
+
+#searchBox { margin-left: 20px; padding-bottom: 10px; }
+
+#searchBox h3 { margin-left: -2000px; height: 0; line-height: 0; font-size: 0; }
+
+.searchform { padding-top: 10px; }
+
+#searchBox img { margin-left: -20px; }
+
+#searchBox .button { margin-bottom: -3px; }
+
+#partnerBanner { width: 728px; background: #7b7d8c; text-align: center; clear: both; align: center; padding: 12px; }
+
+* html #partnerBanner { width: 752px; w\idth: 728px; }
+
+#partnerBanner img { border: 1px solid #222222; }
+
+#sectionWrapper { background: #222222 url(/media/grizzlies/slate-indexpageBG.gif) no-repeat top left; width: 672px; margin: 20px 20px 20px 20px; color: #ffffff; padding: 20px; }
+
+* html #sectionWrapper { width: 712px; w\idth: 672px; }
+
+#pageContent { background: #ffffff; width: 670px; font-color: #12173f; margin: 0; padding-top: 0px; padding-right: 10px; padding-bottom: 0px; padding-left: 0px; float: left; }
+
+* html #pageContent { width: 680px; w\idth: 670px; }
+
+/* BEGIN ROSTER CSS */#pageWrapper div.cBTitle { font-size: 11px; color: #383940; font-weight: bold; display: none; }
+
+#pageWrapper div.gSGSectionTitle { font-size: 16px; color: #383940; font-weight: bold; }
+
+#pageWrapper .gSGSectionColumnHeadings { font-size: 11px; font-weight: bold; }
+
+#pageWrapper .gSGTable td { padding: 3px; }
+
+#pageWrapper .gSGRowEven { font-size: 11px; background: #f4f4f4; }
+
+#pageWrapper .gSGRowOdd { font-size: 11px; background: #ffffff; }
+
+#pageWrapper .gSGPlayerLink { font-size: 11px; color: #5d76a9; text-decoration: underline; }
+
+#pageWrapper .gSGPlayerLink:hover { font-size: 11px; color: #5d76a9; text-decoration: none; }
+
+#pageWrapper .coachRow { line-height: 1.6em; }
+
+#pageWrapper .gSGRowHighlight { font-size: 11px; }
+
+#pageWrapper .gSGPlayerLink { font-size: 11px; color: #5d76a9; text-decoration: underline; }
+
+#pageWrapper .gSGPlayerLink:hover { font-size: 11px; color: #5d76a9; text-decoration: none; }
+
+/* END ROSTER CSS */.archiveColumn { width: 210px; float: left; }
+
+.archiveColumn ul { margin-top: -5px; margin-left: 20px; color: #5d76a9; margin-right: 20px; line-height: 150%; }
+
+.archiveColumn li { font-size: 1.0em; }
+
+.archiveColumn li a { color: #5d76a9; text-decoration: underline; }
+
+.archiveColumn li a:hover { color: #5d76a9; text-decoration: none; }
+
+.tNBLinkInsideNav { font-size: 1.2em; }
+
+/*emailphoto*/table.emailPhotoTable { width:300px; display:block; }
+
+table.emailPhotoTable img { border:0px; }
+
+#wrapper #contentPrimary #contentWrapper #pageWrapperLegacy a.emailStoryLink, #wrapper #contentPrimary #contentWrapper #pageWrapper a.emailStoryLink { font-size: 12px; color: #aaaaaa; }
+
+#pageWrapperLegacy { background: #ffffff; width: 670px; padding: 20px; border: 1px solid #222222; margin-top: 20px; margin-right: 20px; margin-bottom: 0px; margin-left: 20px; font-color: #12173f; }
+
+* html #pageWrapperLegacy { width: 680px; w\idth: 670px; }
+
+#pageWrapperLegacy p { margin: 0 0 1em 0; font-size: 1.2em; line-height: 1.3em; text-align: justify; }
+
+#pageWrapperLegacy a { color: #5d76a9; text-decoration: underline; }
+
+#pageWrapperLegacy a:hover { color: #5d76a9; text-decoration: none; }
+
+#pageWrapperLegacy #articleSecondary { background: #FFFFFF; width: 182px; color: #12173f; margin: 0; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 20px; float: right; }
+
+* html #pageWrapperLegacy #articleSecondary { width: 202px; w\idth: 182px; }
+
+/* Homepage Poll */.pollSpacing { height: 0; width: 0; padding: 0; margin: 0; }
+
+td .pollSpacing { height: 0; width: 0; padding: 0; margin: 0; }
+
+.pollWidth { }
+
+.pollTop { }
+
+.pollTopTitle { }
+
+.pollSide { }
+
+.pollComp { }
+
+.pollTitle { font-size: 1.0em; padding-bottom: 5px; }
+
+.pollResultsLink { font-size: 1.0em; }
+
+.pollSide { height: 0; width: 0; padding: 0; margin: 0; }
+
+.pollBottom { }
+
+.pollSpacingOuter { }
+
+.pollBody { font-size: 0.9em; line-height: 1.4em; padding-bottom: 5px; }
+
+.poll { background: #222222; padding: 10px; width: 100px; }
+
+* html .poll { w\idth: 120px; width: 100px; }
+
+.GlobalLegal { padding: 0; margin: 0; }
+
+#sectionWrapper #danceWrapper { width: 552px; float: left; }
+
+#sectionWrapper #danceWrapper p { padding-right: 20px; }
+
+#sectionWrapper .sipInfoBox { margin-right: 20px; margin-bottom: 30px; }
+
+#sectionWrapper .sipInfoBox img { display: block; padding-bottom: 6px; /* pad more from baseline than the tops of the highest characters */}
+
+#sectionWrapper .sipInfoBox h2 { margin-left: -1000px; font-size: 0.1em; height: 0; visibility: none; float: left; }
+
+#sectionWrapper .sipInfoBox p, #sectionWrapper #danceWrapper .sipInfoBox p { margin: 0; padding: 0; margin-left: 20px; font-size: 1.2em; text-align: justify; }
+
+/* rollover */.sipMoreImg { position: relative; background: url(/media/grizzlies/slate-sip-more-on.gif) no-repeat; white-space: nowrap; display: block; width: 38px; height: 7px; margin: 0; padding: 0; margin-top: 5px; float: right; }
+
+.sipMoreImg a { display: block; width: 38px; height: 7px; display: block; }
+
+.sipMoreImg img { width: 38px; height: 7px; border: 0; }
+
+* html .sipMoreImg a:hover { visibility: visible; }
+
+.sipMoreImg a:hover img { visibility: hidden; }
+
+.sipInsetMoreImg { position: relative; background: url(/media/grizzlies/inset-sip-more-on.gif) no-repeat; white-space: nowrap; display: block; width: 38px; height: 7px; margin: 0; padding: 0; margin-top: 5px; float: right; }
+
+.sipInsetMoreImg a { display: block; width: 38px; height: 7px; display: block; }
+
+.sipInsetMoreImg img { width: 38px; height: 7px; border: 0; }
+
+* html .sipInsetMoreImg a:hover { visibility: visible; }
+
+.sipInsetMoreImg a:hover img { visibility: hidden; }
+
+/* end rollover */.tickets120x90 { margin-bottom: 20px; }
+
+#pageWrapper .innerBox
+{
+float: right;
+width: 304px;
+border: 1px solid #222222;
+padding: 10px;
+margin: 0 0 10px 10px;
+}
+
+* html #pageWrapper .innerBox
+{
+w\idth: 326px;
+width: 304px;
+}
+
+#pageWrapper .innerBox img
+{
+margin: -11px  -11px 10px  -11px;
+}
+
+#sectionWrapper h2 { margin-left: -1000px; height: 0; font-size: 0em; visibility: none; float: left; }
+
+#sectionWrapper p { font-size: 1.2em; text-align: justify; margin-bottom: 20px; margin-top: -4px; /* line height messes with spacing on top */}
+
+#sectionWrapper .innerBox { width: 326px; background: #ffffff; float: left; padding-bottom: 10px; }
+
+#sectionWrapper .innerBox .sipInnerInfoBox { padding: 10px; margin-right: 10px; }
+
+#sectionWrapper .innerBox .sipInnerInfoBox a { color: #5d76a9; text-decoration: underline; }
+
+#sectionWrapper .innerBox .sipInnerInfoBox a:hover { color: #5d76a9; text-decoration: none; }
+
+#sectionWrapper .innerBox .sipInnerInfoBox h3 { font-size: 0; line-height: 0; height: 0; visibility: hidden; margin-left: -1000px; clear: both; }
+
+#sectionWrapper .innerBox p { margin: 0; padding: 0; font-size: 1.2em; text-align: justify; color: #000000; padding-top: 6px; /* pad more from baseline than the tops of the highest characters */margin-left: 20px; }
+
+#dancerMenu ul { background: #ffffff url(/media/grizzlies/inset-header-the_dancers.gif) no-repeat; padding: 25px 10px 15px 10px; list-style: none; width: 100px; }
+
+* html #dancerMenu ul { w\idth: 120px; width: 100px; }
+
+#dancerMenu ul li { }
+
+#dancerMenu ul a { line-height: 1.8em; text-decoration: none; color: #5d76a9; font-weight: bold; font-size: 1.2em; }
+
+#dancerMenu ul a:hover { text-decoration: underline; }
+
+ul.dancerBio { font-size: 1.4em; list-style: none; padding: 20px 10px 20px 20px; margin-bottom: -20px; }
+
+ul.dancerBio li { margin-bottom: 20px; }
+
+.danceBackLink { float: right; padding-top: 10px; }
+
+.backLink { float: right; font-size: 1.4em; margin-left: 20px; margin-bottom: 20px; }
+
+#pageWrapper #tertiaryNav ul { list-style: none; padding: 0px 0 10px 0; margin: 0; }
+
+#pageWrapper #tertiaryNav li { display: inline; padding-right: 0.8em; }
+
+#pageWrapper #tertiaryNav a { line-height: 1.8em; text-decoration: none; color: #5d76a9; font-weight: bold; line-height: 0; }
+
+#pageWrapper #tertiaryNav a:hover { text-decoration: underline; }
+
+#whiteSectionMain { width: 468px; float: left; }
+
+#whiteSectionSecondary { width: 160px; float: left; margin-left: 20px; }
+
+#whiteSectionSecondary h4 { font-size: 1.2em; font-style: normal; font-weight: bold; font-color: #222222; }
+
+#whiteSectionSecondary ul { list-style: none; margin: 0; }
+
+#whiteSectionSecondary ul li { }
+
+#whiteSectionSecondary ul a { line-height: 1.2em; text-decoration: underline; color: #5d76a9; }
+
+#whiteSectionSecondary ul a:hover { text-decoration: none; }
+
+#whiteSectionLogin { width: 160px; border: 1px solid #222222; padding: 10px; margin-bottom: 20px; }
+
+* html #whiteSectionLogin { w\idth: 182px; width: 160px; }
+
+#whiteSectionSecondary fieldset { width: 160px; border: 1px solid #222222; padding: 30px 10px 10px 10px; margin-bottom: 20px; background: url(/media/grizzlies/inset-header-mvp_login.gif) no-repeat; }
+
+#whiteSectionSecondary label { text-align: left; }
+
+#whiteSectionSecondary p { text-align: left; }
+
+#whiteSectionInset { background: #222222; padding: 10px; width: 448px; margin-bottom: 20px; }
+
+* html #whiteSectionInset { w\idth: 468px; width: 448px; }
+
+#whiteSectionInset p { color: #ffffff; }
+
+#whiteSectionInset h2 { color: #f5b112; margin-bottom: 10px; }
+
+#whiteSectionInset img { float: right; border: 1px solid #ffffff; margin: 0 0 20px 20px; }
+
+#pageWrapper .whiteSectionHeader { margin: -21px -21px 10px -21px; }
+
+#wrapperGametime { background: #12173F; width: 670px; padding: 10px 20px 20px 20px; margin: -20px; line-height: 14px; }
+
+* html #wrapperGametime { w\idth: 710px; width: 670px; }
+
+#wrapperGametime img { display: inline; }
+
+#wrapperGametime a { color: #fff; }
+
+#wrapperGametime a img { border: 0; }
+
+#wrapperGametime a:hover { color: #F5B112; }
+
+#wrapperGametime #gametimeHeader { width: 640px; height: 30px; background: #12173F url(http://www.nba.com/media/grizzlies/header-2006-2007-gametime.gif) no-repeat 15px 15px; padding: 15px; }
+
+* html #wrapperGametime #gametimeHeader { w\idth: 670px; h\eight: 60px; width: 640px; height: 30px; vertical-position: middle; }
+
+#wrapperGametime #gametimeHeader h2 { margin-left: -9000px; float: left; visibility: none; }
+
+#gametimeHeader ul { float: right; color: #BECFDB; margin-top: 7px; }
+
+#gametimeHeader li { font-size: 0.9em; display: inline; }
+
+#wrapperGametime .gametimeSubhead { width: 640px; height: 18px; padding: 0 10px; border-left: 5px solid #12173F; border-right: 5px solid #12173F; border-top: 1px solid #12173F; background: #5D76A9; }
+
+* html #wrapperGametime .gametimeSubhead { w\idth: 670; width: 640px; }
+
+#wrapperGametime .gametimeSubhead h3 { font-size: 0.9em; line-height: 1.7em; color: #fff; font-weight: bold; }
+
+#wrapperGametime .gametimeNextGame { width: 640px; padding: 0px 10px 11px 10px; background: #374674; border-left: 5px solid #12173F; border-right: 5px solid #12173F; border-top: 1px solid #12173F; }
+
+* html #wrapperGametime .gametimeNextGame { w\idth: 660px; width: 640px; }
+
+#wrapperGametime .gametimeNextGame .gametimeGameInfo { width: 366px; float: left; }
+
+#wrapperGametime .gametimeNextGame .gametimeGameInfo h3 { font-size: 1.8em; color: #F5B112; padding-top: 7px; }
+
+#wrapperGametime .gametimeNextGame .gametimeGameInfo p { font-size: 1.1em; color: #BECFDB; }
+
+#wrapperGametime .gametimeNextGame .gametimeGameInfo ul { color: #BECFDB; padding: 0; margin: 0; }
+
+#wrapperGametime .gametimeNextGame .gametimeGameInfo li { font-size: 1.1em; display: inline; }
+
+#wrapperGametime .gametimeTuneIn { background: url(http://www.nba.com/media/grizzlies/gametime-dots01.gif) no-repeat 0px 11px; float: right; padding: 10px 15px 0 15px; }
+
+#wrapperGametime .gametimeTuneIn img { padding-bottom: 3px; }
+
+#wrapperGametime .gametimeTickets { background: url(http://www.nba.com/media/grizzlies/gametime-dots01.gif) no-repeat 0px 11px; float: right; padding: 10px 15px 0 15px; }
+
+#wrapperGametime .gametimeComma { margin-bottom: -2px; }
+
+#wrapperGametime .gametimePreviousGames { width: 660px; padding: 0px 0 0px 0; background: #374674; border-left: 5px solid #12173F; border-right: 5px solid #12173F; background: #12173F; margin-bottom: 1px; }
+
+* html #wrapperGametime .gametimePreviousGames { w\idth: 670px; width: 660px; }
+
+#wrapperGametime .gametimePreviousGames .gametimeGameInfo { width: 640px; border-top: 1px solid #12173F; padding: 0 10px 10px 10px; background: #374674; }
+
+#wrapperGametime .gametimePreviousGames .gametimeGameInfo { w\idth: 660px; width: 640px; }
+
+#wrapperGametime .gametimePreviousGames .gametimeGameInfo h3 { font-size: 1.4em; color: #ffffff; padding-top: 7px; font-weight: bold; }
+
+#wrapperGametime .gametimePreviousGames .gametimeGameInfo p { font-size: 1.1em; color: #BECFDB; }
+
+#wrapperGametime .gametimePreviousGames .gametimeGameInfo a { color: #BECFDB; }
+
+#wrapperGametime .gametimePreviousGames .gametimeGameInfo ul { color: #BECFDB; padding: 0; margin: 0; }
+
+#wrapperGametime .gametimePreviousGames .gametimeGameInfo li { font-size: 1.1em; display: inline; }
+

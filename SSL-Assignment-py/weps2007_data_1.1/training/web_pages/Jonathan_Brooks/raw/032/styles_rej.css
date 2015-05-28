@@ -1,0 +1,292 @@
+body { margin:0px 0px 0px 0px;}
+input, textarea, select {font-family: Verdana; font-size: 11px; color: #4B4F52; font-weight:normal;}
+table, td, tr {font-family: Verdana; font-size: 10px; font-weight:bold; color: #4B4F52;}
+
+.page_header_text {font-family: Verdana; color: #4B4F52; font-size: 18px; font-weight:bold;}
+.err { position:relative; width:450px; font-size: 11px; font-family: Tahoma; color: #FF0000; text-decoration: underline; text-align:center; }
+.shoutbg1 { background-color:#D1D2D3; color:#454545; font-size:10px;font-family: verdana;}
+.shoutbg2 {background-color:#BDC8D2; color:#000000; font-size:10px;font-family: verdana;}
+/*Styles of Text */
+.head {font-family: Georgia; font-size: 14px; color:#417792; text-transform:lowercase;}
+.text {font-family: Verdana; font-size: 12px; font-style: normal; font-weight: normal; color: #4B4F52;}
+.text2 { font-size: 11px; font-family:Verdana; color: #4B4F52;font-style: normal; font-weight: normal;}
+
+/*.text {font-family: Verdana; font-size: 12px; font-style: normal; font-weight: normal;}*/
+.small { font-size:10px; font-family:Verdana; color: #000000;}
+.small1 { font-size:10px; font-family:Verdana; color: #ffffff;}
+.small2 { font-size: 11px; font-family:Verdana; color: #4B4F52; font-weight: bold;}
+
+/*stiles for promo text*/
+.promo {font-family: Georgia, "Times New Roman", Times, serif; font-size: 24px; color:#ffffff; font-weight: bold;}
+.promo_text { font-family: verdana, "Times New Roman", Times, serif; font-size: 12px; color:#000000; font-weight: bold;}
+.promo1 { font-size: 16px; font-family: Verdana; color: #ffffff; font-weight: bold;}
+
+
+/*Stiles For Borders*/
+
+/*stile for top menu*/
+.lang {font-family: Verdana; font-size:11px; font-weight:normal; color: #000000; text-decoration:none;}
+a.lang:link, a.lang:visited {font-family: Verdana; font-size:11px; font-weight:normal; color: #000000; text-decoration:underline;}
+a.lang:active, a.lang:hover {font-family: Verdana; font-size:11px; font-weight:normal; color: #000000; text-decoration:none;}
+
+.white {font-family: Verdana; font-size:11px; font-weight:normal; color: #ffffff; text-decoration:none;}
+a.white:link, a.white:visited {font-family: Verdana; font-size:11px; font-weight:normal; color: #ffffff; text-decoration:underline;}
+a.white:active, a.white:hover {font-family: Verdana; font-size:11px; font-weight:normal; color: #ffffff; text-decoration:none;}
+
+.join_now {font-family: Georgia, "Times New Roman", Times, serif; font-size: 38px; color:#ffffff; font-weight: bold;}
+a.join_now:link, a.join_now:visited {font-family: Georgia, "Times New Roman", Times, serif; font-size: 38px; color:#ffffff; font-weight: bold; text-decoration:none;}
+a.join_now:active, a.join_now:hover {font-family: Georgia, "Times New Roman", Times, serif; font-size: 38px; color:#ffffff; font-weight: bold; text-decoration:none;}
+
+.box_border {
+	border-top-color: #000000;
+	border-top-style: solid;
+	border-top-width: 0px;
+	border-right-color: #000000;
+	border-right-style: solid;
+	border-right-width: 3px;
+	border-bottom-color: #000000;
+	border-bottom-style: solid;
+	border-bottom-width: 0px;
+	border-left-color: #000000;
+	border-left-style: solid;
+	border-left-width: 3px;
+
+}
+	
+	
+
+/* class for links*/
+
+a:link, a:visited {font-family: Verdana; font-size:11px; font-weight:normal; color: #000000; text-decoration:underline;}
+a:active, a:hover {font-family: Verdana; font-size:11px; font-weight:normal; color: #000000; text-decoration:none;}
+
+/* class for forms in login area */
+.login {padding-left:8px; color:#000000; font: 10px Arial; text-align:left;}
+.input_fld {color:#000000; font: 10px Verdana; border:1px solid #305997; height:19px; width:90px;}
+
+/*style pf quick search area*/
+.qs_text { font-family:Georgia, "Times New Roman", Times, serif; font-size:11px; color:#FFFFFF;}
+
+.bottommenu {font-family: Verdana; font-size: 10px;	font-weight:normal;	color: #4B4F52;	text-decoration:none;}
+a.bottommenu:link, a.bottommenu:visited {font-family: Verdana; font-size: 10px; font-weight:bold; color: #4B4F52; text-decoration:none;}
+a.bottommenu:active, a.bottommenu:hover {font-family: Verdana; font-size: 10px; font-weight:bold; color: #4B4F52; text-decoration:underline;}
+
+.logout {font-family: Verdana; font-size: 12px;	font-weight:normal;	color: #639AB6;	text-decoration:none;}
+a.logout:link, a.logout:visited {font-family: Verdana; font-size: 12px; font-weight:bold; color: #639AB6; text-decoration:none;}
+a.logout:active, a.logout:hover {font-family: Verdana; font-size: 12px; font-weight:bold; color: #437791; text-decoration:underline;}
+
+
+.membermenu
+    {
+	font-family: Verdana;
+	font-size:10px;
+	font-weight:bold;
+	color: #F41C1C;
+	text-decoration:none;
+	}	
+a.membermenu:link, a.membermenu:visited {
+    font-family: verdana;
+	font-size: 10px;
+	font-weight:bold;
+	color: #000000;
+	text-decoration:none;
+    }	
+a.membermenu:active, a.membermenu:hover {
+    font-family: verdana;
+	font-size: 10px;
+	font-weight:bold;
+	color: #cccccc;
+	text-decoration:none;
+    }
+
+
+/* Classes for pages*/
+/* Join Form*/
+.join_table {
+    font-size: 11px;
+    font-family:Verdana;
+    color: #333366;
+}
+.join_header_first {
+    font-size: 11px;
+    font-family:Verdana;
+    color: #4B4F52;
+    font-weight: bold;
+    padding-top: 5px;
+}
+.join_header {
+    font-size: 11px;
+    font-family:Verdana;
+    color: #333366;
+	font-weight: bold;
+    padding-top: 5px;
+}
+.join_td_1_first {
+    background-color: #EEEEEE;
+    border: 1px solid #FFFFFF;
+    padding: 2px;
+    font-weight: bold;
+	text-align:left;	
+}
+.join_td_2_first {
+    background-color: #EEEEEE;
+    border: 1px solid #FFFFFF;
+    padding: 2px;
+	text-align:left;
+}
+.join_td_1 {
+    background-color: #EEEEEE;
+    border: 1px solid #FFFFFF;
+    padding: 2px;
+    font-weight: bold;
+	text-align:left;
+}
+.join_td_2 {
+    background-color: #EEEEEE;
+    border: 1px solid #FFFFFF;
+    padding: 2px;
+	text-align:left;
+}
+/*Control Panel*/
+.control_panel_table {
+	font-size: 11px; font-family:arial;
+	color: #336699;
+}
+
+.control_panel_td_1_first {
+	border: 1px solid #EEEEEE;
+	padding: 2px;
+}
+.control_panel_td_2_first {
+	border: 1px solid #EEEEEE;
+	padding: 2px;
+}
+.control_panel_td_1 {
+	border: 1px solid #EEEEEE;
+	padding: 2px;
+}
+.control_panel_td_2 {
+	border: 1px solid #EEEEEE;
+	padding: 2px;
+}
+
+.top_rated_0 { border-right:  1px solid #ABABAB; }
+.table {}
+.panel {}
+.brd {border:1px solid #000000;}
+
+
+.profile_table {
+	font-size: 11px;
+	font-family:Verdana;
+    color: #333366;
+}
+
+.profile_header_first
+{
+    font-size: 11px;
+    font-family:Verdana;
+    color: #4B4F52; 
+	height:30px;
+}
+
+.profile_header {
+    font-size: 11px;
+    font-family:Verdana;
+    color: #4B4F52;
+}
+
+.profile_td_1_first {
+	text-align:left;
+    padding: 2px;
+	font-weight: bold;
+	color:4B4F52;
+}
+
+.profile_td_2_first {
+text-align:left;
+    padding: 2px;
+	color:4B4F52;
+}
+
+.profile_td_1 {
+text-align:left;
+    padding: 2px;
+	font-weight: bold;
+	color:4B4F52;
+}
+
+.profile_td_2 {
+text-align:left;
+	padding: 2px;
+	color:4B4F52;
+}
+.profile_desc_header { font-size:11px; font-weight: bold; padding: 2px; height:30px;}
+.rate_image { border:1px solid #ABABAB; background-color:#EEEEEE; font: bold 14px Verdana; color: #4B4F52;}
+
+.prof_stat_Unconfirmed { background-color: #ffd7d7; }
+.prof_stat_Approval { background-color: #b9ddb9; }
+.prof_stat_Active { background-color: #d2d2d2; }
+.prof_stat_Rejected { background-color: #ff3333; }
+.prof_stat_Suspended { background-color: #cccccc; }
+/*
+*
+*Blog Styles 
+*
+*/
+.blog_table_brd { border:1px solid #000000;}
+.blog_tr_bg {background-color:#D2D2D2; padding:0px; margin:0px;}
+.blog_trbot_bg {background-color:#D2D2D2;}
+.blog_subject  {font:bold 14px Tahoma; color:#4B4F52; text-transform:capitalize;}
+.blog_clock {font:bold 11px Verdana, Arial, Helvetica, sans-serif; color:#4B4F52;}
+.blog_content { background-color:#DEDEDE; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; color:#4B4F52;}
+.blog_prof { background-color:#ffffff; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; color:#4B4F52;}
+
+.blink {font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; color:#000000;}
+a.blink:link, a.blink:visited {font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; color:#000000;}
+a.blink:active, a.blink:hover {font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; color:#000000;}
+
+.links {font:bold 11px Verdana, Arial, Helvetica, sans-serif; color:#000000; text-decoration:underline}
+a.links:link, a.links:visited {font:bold 11px Verdana, Arial, Helvetica, sans-serif; color:#000000; text-decoration:underline}
+a.links:active, a.links:hover {font:bold 11px Verdana, Arial, Helvetica, sans-serif; color:#000000; text-decoration:underline}
+/*
+*
+* End Blog Styles 
+*
+*/
+
+.featured {border:1px solid #305997; background-color:#FFFFFF;}
+
+/**
+*Style for tables 
+**/
+.table_bg {background-color:#F2F6FD;}
+.out_td { background-image:url(images_rej/out_td_bg.jpg); background-repeat:repeat-x; background-position:top;}
+
+.mmenu_head { background-color:#999C9D; font-family:verdana, "Times New Roman", Times, serif; font-size:18px; color:#FFFFFF;} 
+
+a.linkopacity img       {
+filter:alpha(opacity=75);
+ -moz-opacity: 0.75; 
+ opacity: 0.75;
+ -khtml-opacity: 0.75;
+ }
+a.linkopacity:hover img {
+filter:alpha(opacity=100);
+-moz-opacity: 1.0;
+opacity: 1.0;
+-khtml-opacity: 1.0;
+}
+
+a.linkopacity75 img       {
+filter:alpha(opacity=75) ;
+-moz-opacity: 0.75;
+opacity: 0.75;
+-khtml-opacity: 0.75; 
+}
+a.linkopacity75:hover img {
+filter:alpha(opacity=100); 
+-moz-opacity: 1.0; 
+opacity: 1.0;
+-khtml-opacity: 1.0; 
+}

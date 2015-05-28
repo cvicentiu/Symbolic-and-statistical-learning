@@ -1,0 +1,145 @@
+//****************************************************************************/
+//   CONFIDENTIAL AND PROPRIETARY PROPERTY OF GENEALOGY.COM (510) 794-6850   */
+//                        PO Box 7865, FREMONT, CA 94537                     */
+// THIS PROGRAM IS AN UNPUBLISHED WORK FULLY PROTECTED BY THE UNITED STATES  */
+// COPYRIGHT LAWS AND IS CONSIDERED A TRADE SECRET BELONGING TO THE COPY-    */
+// RIGHT HOLDER.                                                             */
+//****************************************************************************/
+
+
+	//--------------START OF REAL MEDIA CODE ----------
+
+	// These need to be global for multiple ads on the same page to work correctly
+	var RN = new String(Math.random());
+	var RNS= RN.substring(2,11);
+
+	var ad = ((typeof dynad) != 'undefined' ) ? dynad : '';
+
+	if (document.location.href.indexOf("debugads=1") != -1)
+	{
+
+		var pageURL = document.location.href;
+		var pageURLArray = pageURL.substring(7).split("/")
+		var currentDomain = pageURLArray[0].toLowerCase();
+		var currentTab = pageURLArray[1].split("?")[0];
+		var currentLinks = ((pageURLArray.length > 2) ? pageURLArray[2].split("?")[0] : "");
+
+		alert('domain = ' + currentDomain)
+		alert('tab = ' + currentTab)
+		alert('link = ' + currentLinks)
+		alert('ad value = ' + ad);
+	}
+
+	function ShowAdOnPage()
+	{
+		if (ad == "noad")
+		{
+			return false;
+		}
+		return true;
+	}
+
+	function GetDefaultCampaign()
+	{
+		var adArea = "";
+			
+		if (ad != "") {adArea = ad}
+		else {adArea = "default"};
+		
+		// Add trailing slash
+		if (adArea != ""){
+			adArea = adArea + '/';
+		}
+		else //if all else has failed set to the default campaign
+		{
+			adArea = "default/";
+		}
+		
+		if (document.location.href.indexOf("debugads=1") != -1)
+		{
+			alert('adArea = ' + adArea)
+		}		
+		
+		return adArea;
+	}
+		
+	function getCampaignString (strPosition, strCampaign)
+	{
+		var adCampaign = (strCampaign == "") ? GetDefaultCampaign() : strCampaign;
+		var sitepage = ((typeof g_sitepage) != 'undefined' ) ? g_sitepage : '/';
+
+		var oaspage= sitepage + adCampaign + '1' + RNS + '@' + strPosition + '?';
+
+		return (oaspage);	
+	}
+
+	function GetAdBannerSrc(strPosition, nWidth, nHeight, strCampaign)
+	{
+		var oas='http://a\dserver.ancestry.com/RealMedia/a\ds/';
+		var oaspage = getCampaignString(strPosition, strCampaign);
+
+		if (navigator.userAgent.indexOf('Mozilla/3') != -1) 
+		{
+			return (oas + 'adstream_nx.a\ds/' + oaspage);
+		}
+		else 
+		{
+			return (oas + 'adstream_jx.a\ds/' + oaspage);
+		}
+	}
+
+	function DisplayAdBanner(strPosition, nWidth, nHeight, strCampaign)
+	{
+		g_sitepage = 'www.genealogy.com/';
+
+		var oas='http://a\dserver.ancestry.com/RealMedia/a\ds/';
+		var oaspage = getCampaignString(strPosition, strCampaign);
+
+		if (document.location.href.indexOf("debugads=1") != -1)
+		{
+			alert(GetAdBannerSrc(strPosition, nWidth, nHeight, strCampaign));
+
+		}
+		if (navigator.userAgent.indexOf('Mozilla/3') != -1) 
+		{
+			document.write ('<A HREF="http://genforum.genealogy.com/3/'%20+%20oas%20+%20'click_nx.a%5Cds/'%20+%20oaspage%20+%20'" TARGET="_top"><IMG SRC="http://genforum.genealogy.com/3/'%20+%20oas%20+%20'adstream_nx.a%5Cds/'%20+%20oaspage%20+%20'" BORDER="0" WIDTH="' + nWidth + '" HEIGHT="' + nHeight + '"></a>');
+		}
+		else 
+		{
+			document.write ('<SCR' + 'IPT LANGUAGE="JavaScript1.1" SRC="' + oas + 'adstream_jx.a\ds/' + oaspage + '"><\/SCRIPT>');
+		}
+
+		document.close();
+
+	}
+
+
+	//THIS FUNCTION IS SPECIFICALLY FOR THE SPOTS ON PREDEFINED PAGES (SpotA, SpotB, ...SpotH)
+	function DisplaySpot(strPosition, nWidth, nHeight, strCampaign)
+	{
+		g_sitepage = 'www.genealogy.com/';
+
+		var oas='http://a\dserver.ancestry.com/RealMedia/a\ds/';
+		var oaspage = getCampaignString(strPosition, strCampaign);
+
+		if (document.location.href.indexOf("debugads=1") != -1)
+		{
+			alert(GetAdBannerSrc(strPosition, nWidth, nHeight, strCampaign));
+
+		}
+		if (navigator.userAgent.indexOf('Mozilla/3') != -1) 
+		{
+			document.write ('<A HREF="http://genforum.genealogy.com/3/'%20+%20oas%20+%20'click_nx.a%5Cds/'%20+%20oaspage%20+%20'" TARGET="_top"><IMG SRC="http://genforum.genealogy.com/3/'%20+%20oas%20+%20'adstream_nx.a%5Cds/'%20+%20oaspage%20+%20'" BORDER="0" WIDTH="' + nWidth + '" HEIGHT="' + nHeight + '"></a>');
+		}
+		else 
+		{
+			document.write ('<SCR' + 'IPT LANGUAGE="JavaScript1.1" SRC="' + oas + 'adstream_jx.a\ds/' + oaspage + '"><\/SCRIPT>');
+		}
+
+		document.close();
+
+	}
+
+
+	//--------------END OF REAL MEDIA CODE ------------
+

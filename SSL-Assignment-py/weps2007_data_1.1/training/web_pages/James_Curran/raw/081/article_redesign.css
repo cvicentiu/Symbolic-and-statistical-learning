@@ -1,0 +1,352 @@
+/* ----------------------------------- newArticle.css ------------------------------------- */
+
+a.articleLnkAction, a.articleLnkAction:visited, a.articleLnkAction:active
+{
+	color: #000;
+	font-weight: normal;
+	font-size: 10px;
+}
+
+
+
+
+a.articleLnkAction:hover
+{
+	color: #000;
+	font-weight: normal;
+	font-size: 10px;
+	text-decoration: underline;
+}
+
+div.floatLeft,
+div.floatLeft18px{
+	float: left;
+}
+
+div.noFloat
+{
+	float: none;
+}
+
+
+
+
+/* ---------------------------- further reading / further links ---------------------------------- */
+
+div.articleFurtherLinksTitleBar, 
+div.articleFurtherReadingTitleBar
+{
+	padding-left: 5px;
+	padding-top: 3px;
+	height: 22px;
+	color: #fff;
+	font-size: 11px;
+
+}
+
+div.articleFurtherLinksTitleBar
+{
+	background-color: #3399cc;
+}
+
+div.articleFurtherLinksTitleBarImage
+{
+	padding-left: 5px;
+	padding-top: 3px;
+	height: 22px;
+
+	color: #fff;
+	font-size: 11px;
+	background-color: #3399cc;
+	background: url('/pix/articles/articleFurtherLinksText.gif') no-repeat;
+}
+
+div.articleFurtherReadingTitleBarImage
+{
+	padding-left: 5px;
+	padding-top: 3px;
+	height: 22px;
+
+	color: #fff;
+	font-size: 11px;
+	background-color: #3399cc;
+	background: url('/pix/articles/articleReadOnText.gif') no-repeat;
+}
+
+
+div.articleFurtherReadingTitleBar
+{
+
+	background: url('/pix/articles/amazon_title_bar.jpg');
+}
+
+div.articleFurtherLinksHolder, 
+div.articleFurtherReadingHolder
+{
+	padding: 3px;
+	font-size: 11px;
+	line-height: 20px;
+
+}
+
+div.articleFurtherLinksHolder
+{
+	/*background-color: #e3f2f9;*/
+}
+
+div.articleFurtherReadingHolder
+{
+	/*background-color: #d9d9d9;*/
+
+}
+
+td.articleTableCellFurtherLinks
+{
+	background-color: #e3f2f9;
+	
+}
+td.articleTableCellFurtherReading
+{
+	background-color: #d9d9d9;
+}
+
+
+div.articleFurtherLinksHolder a,
+div.articleFurtherReadingHolder a
+{
+	font-weight: normal;
+}
+
+div.articleFurtherReadingHolder a
+{
+	color: #777;
+}
+
+div.articleFurtherLinksHolder a:hover,
+div.articleFurtherReadingHolder a:hover
+{
+	
+	text-decoration: underline;
+	font-weight: normal;
+}
+
+
+div.articleFurtherReadingHolder a:hover
+{
+	color: #777;
+}
+
+
+
+
+
+div.articleJoinDiscussion,
+div.articleMoreByAuthor
+{
+	margin: 0px;
+	padding: 0px;
+	height: 24px;
+	width: 565px;
+	background-color: #3399cc;
+	color: #fff;
+}
+
+div.articleJoinDiscussion,
+div.articleMoreByAuthor
+{
+	line-height: 20px;
+	position: relative;
+	padding-right:1px;
+	height: 24px;
+}
+
+div.articleWrapper
+{
+	position: absolute;
+	left: 1px;
+	top: 1px;
+}
+
+div.articleMoreByAuthor td
+{
+color: #fff;
+}
+
+select.articleMoreByAuthorSelect
+{
+	width:340px;
+}
+
+
+
+div.articleJoinDiscussion td
+{
+	color: #fff;
+	font-size: 12px;
+}
+
+a.articleWhiteLink
+{
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+a.articleWhiteLink:hover
+{
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+
+div.articleSpacer_5px
+{
+	position: relative;
+	font-size: 0px;
+	line-height: 1px;
+	height: 5px;
+	width: 200px;
+
+}
+
+
+div.articleOptionsTable
+{
+	margin-top : 5px;
+	margin-bottom : 5px;
+	border : none;
+	/*position:relative; */
+	
+}
+/* -------------------------- pullquote ------------------------------------ */
+td.articlePullQuoteTop 
+{
+	height: 12px;
+	background-image: url('/pix/pullout/pullquoteShadowTop.jpg');
+	background-repeat: no-repeat;
+}
+
+td.articlePullQuoteBot
+{
+	height: 12px;
+	background-image: url('/pix/pullout/pullquoteShadowBot.jpg');
+	background-repeat: no-repeat;
+}
+td.articlePullQuote
+{
+	background-image: url('/pix/pullout/pullquoteShadowMid.jpg');
+	background-repeat: repeat-y;
+}
+
+td.articlePullQuote p
+{
+
+	font-weight: normal;
+	color: #fff;
+}
+
+td.articlePullQuote p a
+{
+
+	font-weight: bold;
+	color: #fff;
+}
+
+
+
+div.articlePullQuoteContent
+{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	
+	position: relative;
+	left: 5px;
+	top: 0px;
+	width: 167px;
+        color: #fff;
+font-size: 12px;
+}
+
+
+div.articlePullQuoteContent p
+{
+	font-size: 12px;
+	font-weight: bold;
+	color: #fff;
+}
+
+div.articlePullQuoteContent p a
+{
+	
+	color: #006699;
+	/**/
+}
+
+
+/* -------------- image divs ------------------ */
+div.articleImageHolder
+{
+	
+
+}
+
+
+img.sideImage,
+div.articleImageHolder img
+{
+	border: solid 1px #006699;
+}
+
+div.sideImageCaption,
+div.articleImageInfo
+{
+	
+	text-align: left;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	font-size: 10px;
+	color: #006699;
+	background-color: #D7EBF6;
+}
+
+
+div.articleImageInfo font
+{
+	font-size: 10px;
+	color: #006699;
+}
+
+
+
+/* ------ more legible text ------ */
+
+
+font.articleTxtBody p
+{
+	font-size: 12px;
+	line-height: 20px;
+}
+
+
+td font.articleTxtBody{
+	line-height: 20px;
+}
+
+
+
+
+/**********LISTS*************/
+ul {
+	list-style-type: disc;
+	list-style-position: outside;
+	line-height: 20px;
+	}
+
+ul li{
+	margin-bottom: 7px;
+	line-height: 20px;
+}
+

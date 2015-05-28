@@ -1,0 +1,843 @@
+.crossout
+   { text-decoration: line-through
+   }
+.WES
+  { padding-left: 0.5em;
+    padding-right: 0.5em;
+    color: white;
+    background-color: blue;
+    border-style: solid;
+    border-color: black;
+    border-width: thin
+  }
+.ALK
+  { padding-left: 0.5em;
+    padding-right: 0.5em;
+    color: white;
+    background-color: green;
+    border-style: solid;
+    border-color: black;
+    border-width: thin
+  }
+.MH
+  { background-color: #FF00FF;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    color: white;
+    border-style: solid;
+    border-color: black;
+    border-width: thin
+  }
+.MER
+  { padding-left: 0.5em;
+    padding-right: 0.5em;
+    color: white;
+    background-color: navy;
+    border-style: solid;
+    border-color: black;
+    border-width: thin
+  }
+.JCP
+  { padding-left: 0.5em;
+    padding-right: 0.5em;
+    color: white;
+    background-color: #FF8040;
+    border-style: solid;
+    border-color: black;
+    border-width: thin
+  }
+.SMB
+  { padding-left: 0.5em;
+    padding-right: 0.5em;
+    color: white;
+    background-color: #FAAFBE;
+    border-style: solid;
+    border-color: black;
+    border-width: thin
+  }
+.JB
+  { padding-left: 0.5em;
+    padding-right: 0.5em;
+    color: white;
+    background-color: red;
+    border-style: solid;
+    border-color: black;
+    border-width: thin
+  }
+.EW
+  { padding-left: 0.5em;
+    padding-right: 0.5em;
+    color: white;
+    background-color: teal;
+    border-style: solid;
+    border-color: black;
+    border-width: thin
+  }
+.yellow
+  { padding-left: 0.5em;
+    padding-right: 0.5em;
+    background-color: yellow;
+    border-style: solid;
+    border-color: black;
+    border-width: thin
+  }
+.yell
+  { background-color: yellow;
+  }
+.FFF
+  { color: white;
+    background-color: blue;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-weight: bold
+  }
+.MMF
+  { color: white;
+    background-color: green;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-weight: bold
+  }
+.MFM
+  { color: white;
+    background-color: #FF00FF;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-weight: bold
+  }
+.FFM
+  { color: white;
+    background-color: navy;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-weight: bold
+  }
+.FMF
+  { color: white;
+    background-color: #FF8040;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-weight: bold
+  }
+.MMM
+  { color: white;
+    background-color: #FAAFBE;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-weight: bold
+  }
+.MFF
+  { color: white;
+    background-color: red;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-weight: bold
+  }
+.FMM
+  { color: white;
+    background-color: teal;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-weight: bold
+  }
+
+P.center
+  { text-align: center
+  }
+
+P.clear
+  { clear: both
+  }
+
+TABLE.ringone
+  { color: #E4DAD2;
+    background-color: #c49899;
+    font-family: "Comic Sans MS"
+  }
+TABLE.ringtwo
+  { color: #99CCFF;
+    background-color: black;
+    font-family: "Comic Sans MS"
+  }
+TABLE.ringthree
+  { background-color: #663300
+  }
+DIV.banner
+  { float: left;
+    vertical-align: 50%
+  }
+DIV.bottom
+  { vertical-align: bottom
+  }
+DIV.center
+  { text-align: center
+  }
+DIV.clear
+  { clear: both
+  }
+DIV.float
+  { float: left
+  }
+DIV.left
+  { text-align: left
+  }
+DIV.floatright
+  { text-align: right;
+    float: left
+  }
+DIV.justify
+  { text-align: justify
+  }
+DIV.left
+  { text-align: left;
+    white-space: NoWrap
+  }
+DIV.right
+  { text-align: right;
+    white-space: NoWrap
+  }
+DIV.WES
+  { color: white;
+    background-color: blue;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-left: 5em;
+    font-weight: bold
+  }
+DIV.ALK
+  { color: white;
+    background-color: green;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-left: 5em;
+    font-weight: bold
+  }
+DIV.MH
+  { color: white;
+    background-color: #FF00FF;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-left: 5em;
+    font-weight: bold
+  }
+DIV.MER
+  { color: white;
+    background-color: navy;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-left: 5em;
+    font-weight: bold
+  }
+DIV.JCP
+  { color: white;
+    background-color: #FF8040;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-left: 5em;
+    font-weight: bold
+  }
+DIV.SMB
+  { color: white;
+    background-color: #FAAFBE;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-left: 5em;
+    font-weight: bold
+  }
+DIV.JB
+  { color: white;
+    background-color: red;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-left: 5em;
+    font-weight: bold
+  }
+DIV.EW
+  { color: white;
+    background-color: teal;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-left: 5em;
+    font-weight: bold
+  }
+
+A:link
+  { color: #0000A0
+  }
+A:active
+  { color: #0000A0
+  }
+A:visited
+  { color: #0000A0
+  }
+A:hover
+  { color: white;
+    background-color: #0000A0
+  }
+A.red
+  { color: red;
+    white-space: NoWrap
+  }
+A.green
+  { color: green;
+    white-space: NoWrap
+  }
+A.white
+  { color: white
+  }
+A.black
+  { color: black
+  }
+A.smallwhite
+  { color: white;
+    vertical-align: middle;
+    font-size: 0.5em
+  }
+A.small
+  { font-size: 0.5em;
+    vertical-align: middle
+  }
+A.ringsurf
+  { font-size: 0.5em
+  }
+A.ringone
+  { color: #E4DAD2
+  }
+A.ringtwo
+  { color: #99CCFF
+  }
+BODY
+  { background-color: white;
+    color: black;
+    font-family: Verdana;
+    font-size: 1em;
+  }
+
+H1
+  { text-align: center;
+    white-space: NoWrap
+  }
+H2.center
+  { text-align: center
+  }
+H3.center
+  { text-align: center
+  }
+H4.center
+  { text-align: center
+  }
+H5.center
+  { text-align: center
+  }
+H6.center
+  { text-align: center
+  }
+
+IMG.none
+  { border-style: none;
+    vertical-align: middle
+  }
+IMG.border
+  { border-style: solid;
+  }
+IMG.left
+  { float: left;
+    margin: 10px 10px 10px 10px
+  }
+IMG.bottom
+  { vertical-align: bottom
+  }
+IMG.top
+  { vertical-align: top
+  }
+IMG.right
+  { float: right;
+    margin: 10px 10px 10px 10px
+  }
+
+LI.small
+  { font-size: small
+  }
+
+OL.A { list-style-type: decimal; color: red }
+OL.B { list-style-type: lower-roman; color: blue }
+OL.C { list-style-type: lower-alpha; color: black }
+OL.D { list-style-type: lower-greek; color: red }
+OL.E { list-style-type: upper-roman; color: blue }
+OL.F { list-style-type: upper-alpha; color: black }
+OL.G { list-style-type: lower-roman; color: red }
+OL.H { list-style-type: lower-alpha; color: blue }
+OL.I { list-style-type: lower-greek; color: black }
+OL.J { list-style-type: upper-roman; color: red }
+OL.K { list-style-type: upper-alpha; color: blue }
+OL.L { list-style-type: decimal; color: black }
+OL.M { list-style-type: lower-alpha; color: red }
+OL.N { list-style-type: lower-greek; color: blue }
+OL.O { list-style-type: upper-roman; color: black }
+OL.P { list-style-type: upper-alpha; color: red }
+OL.Q { list-style-type: decimal; color: blue }
+OL.R { list-style-type: lower-roman; color: black }
+
+UL.A { list-style-type: decimal; color: red }
+UL.B { list-style-type: lower-roman; color: blue }
+UL.C { list-style-type: lower-alpha; color: black }
+UL.D { list-style-type: lower-greek; color: red }
+UL.E { list-style-type: upper-roman; color: blue }
+UL.F { list-style-type: upper-alpha; color: black }
+UL.G { list-style-type: lower-roman; color: red }
+UL.H { list-style-type: lower-alpha; color: blue }
+UL.I { list-style-type: lower-greek; color: black }
+UL.J { list-style-type: upper-roman; color: red }
+UL.K { list-style-type: upper-alpha; color: blue }
+UL.L { list-style-type: decimal; color: black }
+UL.M { list-style-type: lower-alpha; color: red }
+UL.N { list-style-type: lower-greek; color: blue }
+UL.O { list-style-type: upper-roman; color: black }
+UL.P { list-style-type: upper-alpha; color: red }
+UL.Q { list-style-type: decimal; color: blue }
+UL.R { list-style-type: lower-roman; color: black }
+
+TD.EEEEEE
+  { background-color: #EEEEEE
+  }
+TD.small
+  { text-align: center;
+    font-size: small
+  }
+TD.right
+  { text-align: right
+  }
+TD.up
+  { text-align: right;
+    font-size: small
+  }
+TD.center
+  { text-align: center
+  }
+TD.aqua
+  { background-color: aqua;
+    font-size: small
+  }
+TD.bluebold
+  { color: blue;
+    font-weight: bold
+  }
+TD.bluetext
+  { color: blue
+  }
+TD.lightblue
+  { background-color: #87CEFA
+  }
+TD.lime
+  { background-color: lime;
+    font-size: small
+  }
+TD.pinkright
+  { background-color: #FAAFBE;
+    text-align: right;
+    font-size: small
+  }
+TD.redbold
+  { color: red;
+    font-weight: bold
+  }
+TD.red
+  { background-color: red
+  }
+TD.yell
+  { background-color: yellow
+  }
+TD.whyte
+  { background-color: white
+  }
+TD.redtext
+  { color: red
+  }
+TD.top
+  { vertical-align: top
+  }
+TD.tnr
+  { font-size: small;
+    vertical-align: top
+  }
+TD.total
+  { text-align:right;
+    white-space: NoWrap;
+    font-weight: bold;
+    font-variant: small-caps
+  }
+TD.WES
+  { color: white;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    background-color: blue;
+    white-space: NoWrap;
+    font-weight: bold;
+    font-variant: small-caps
+  }
+TD.ALK
+  { color: white;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    background-color: green;
+    white-space: NoWrap;
+    font-weight: bold;
+    font-variant: small-caps
+  }
+TD.MH
+  { color: white;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    background-color: #FF00FF;
+    white-space: NoWrap;
+    font-weight: bold;
+    font-variant: small-caps
+  }
+TD.MER
+  { color: white;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    background-color: navy;
+    white-space: NoWrap;
+    font-weight: bold;
+    font-variant: small-caps
+  }
+TD.JCP
+  { color: white;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    background-color: #FF8040;
+    white-space: NoWrap;
+    font-weight: bold;
+    font-variant: small-caps
+  }
+TD.SMB
+  { color: white;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    background-color: #FAAFBE;
+    white-space: NoWrap;
+    font-weight: bold;
+    font-variant: small-caps
+  }
+TD.JB
+  { color: white;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    background-color: red;
+    white-space: NoWrap;
+    font-weight: bold;
+    font-variant: small-caps
+  }
+TD.EW
+  { color: white;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    background-color: teal;
+    white-space: NoWrap;
+    font-weight: bold;
+    font-variant: small-caps
+  }
+TD.nwrp
+  { white-space: NoWrap;
+    text-align: center;
+    font-size: small
+  }
+TD.nowrap
+  { white-space: NoWrap;
+    font-weight: bold;
+    font-variant: small-caps
+  }
+TD.white
+  { font-weight: bold;
+    font-variant: small-caps
+  }
+TD.yellow
+  { background-color: yellow;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    font-weight: bold;
+    font-variant: small-caps
+  }
+TD.banner
+  { font-size: 200%
+  }
+TD.bannerWES
+  { color: white;
+    background-color: blue;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-align: right;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    width: 2%;
+    border-style: solid;
+    border-color: black;
+    border-width: thin
+  }
+TD.bannerALK
+  { color: white;
+    background-color: green;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-align: right;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    width: 2%;
+    border-style: solid;
+    border-color: black;
+    border-width: thin
+  }
+TD.bannerMH
+  { color: white;
+    background-color: #FF00FF;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-align: right;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    width: 2%;
+    border-style: solid;
+    border-color: black;
+    border-width: thin
+  }
+TD.bannerMER
+  { color: white;
+    background-color: navy;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-align: right;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    width: 2%;
+    border-style: solid;
+    border-color: black;
+    border-width: thin
+  }
+TD.bannerJCP
+  { color: white;
+    background-color: #FF8040;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-align: right;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    width: 2%;
+    border-style: solid;
+    border-color: black;
+    border-width: thin
+  }
+TD.bannerSMB
+  { color: white;
+    background-color: #FAAFBE;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-align: right;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    width: 2%;
+    border-style: solid;
+    border-color: black;
+    border-width: thin
+  }
+TD.bannerJB
+  { color: white;
+    background-color: red;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-align: right;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    width: 2%;
+    border-style: solid;
+    border-color: black;
+    border-width: thin
+  }
+TD.bannerEW
+  { color: white;
+    background-color: teal;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-align: right;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    width: 2%;
+    border-style: solid;
+    border-color: black;
+    border-width: thin
+  }
+TD.banneryellow
+  { background-color: yellow;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-align: right;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    width: 1%;
+    border-style: solid;
+    border-color: black;
+    border-width: thin
+  }
+TD.top
+  { vertical-align: top
+  }
+
+TH 
+  { text-align: center
+  }
+TH.left
+  { text-align: left
+  }
+TH.right
+  { text-align: right
+  }
+TH.up
+  { text-align: right;
+    font-size: small
+  }
+TH.DNA
+  { text-align: right;
+    font-size: small
+  }
+TH.top
+  { text-align: right;
+    vertical-align: top
+  }
+TH.white
+  { background-color: white
+  }
+TH.aqua
+  { background-color: aqua
+  }
+TH.black
+  { background-color: gray
+  }
+TH.blackwhite
+  { color: black;
+    background-color: white;
+    border-style: none 
+  }
+TH.blacklime
+  { color: black;
+    background-color: lime;
+    border-style: none
+  }
+TH.blue
+  { background-color: blue
+  }
+TH.lightblue
+  { background-color: #87CEFA
+  }
+TH.bluelime
+  { color: blue;
+    background-color: lime
+  }
+TH.gray
+  { color: gray
+  }
+TH.green
+  { background-color: green
+  }
+TH.lime
+  { background-color: lime;
+    font-size: small
+  }
+TH.limenone
+  { color: lime;
+    background-color: lime;
+    border-style: none
+  }
+TH.magenta
+  { background-color: #FF00FF
+  }
+TH.navy
+  { background-color: navy
+  }
+TH.none
+  { color: white;
+    background-color: white;
+    border-style: none
+  }
+TH.orange
+  { background-color: #FF8040
+  }
+TH.pink
+  { background-color: #FAAFBE
+  }
+TH.red
+  { background-color: red
+  }
+TH.teal
+  { background-color: teal
+  }
+TH.silver
+  { background-color: silver
+  }
+TH.silverleft
+  { background-color: silver;
+    text-align: left
+  }
+TH.silverright
+  { background-color: silver;
+    text-align: right
+  }
+TH.yellow
+  { background-color: yellow
+  }
+TH.WES
+  { color: white;
+    background-color: blue
+  }
+TH.ALK
+  { color: white;
+    background-color: green
+  }
+TH.MH
+  { color: white;
+    background-color: #FF00FF
+  }
+TH.MER
+  { color: white;
+    background-color: navy
+  }
+TH.JCP
+  { color: white;
+    background-color: #FF8040
+  }
+TH.SMB
+  { color: white;
+    background-color: #FAAFBE
+  }
+TH.JB
+  { color: white;
+    background-color: red
+  }
+TH.EW
+  { color: white;
+    background-color: teal
+  }
+
+TR.top
+  { vertical-align: top
+  }
+TR.middle
+  { text-align: center
+  }
+TR.bottom
+  { vertical-align: bottom
+  }
+TR.censusheader
+  { background-color: lime
+  }
+TR.red
+  { background-color: red;
+    text-align: center
+  }
+TR.lime
+  { background-color: lime;
+    font-size: small
+  }
+TR.yellow
+  { background-color: yellow
+  }
+

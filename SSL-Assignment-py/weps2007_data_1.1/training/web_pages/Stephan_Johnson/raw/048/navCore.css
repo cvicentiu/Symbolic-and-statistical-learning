@@ -1,0 +1,270 @@
+/* Main Menu Styles for drop down */
+	#menu1Container {
+		border : 0; /* to visualize total height of menu containment box assign border : solid 1px; */
+	}	
+	#menu1Container img {
+		 vertical-align: top;
+	}
+		
+	#menu2Container {
+		border : 0;
+	}
+	#menu2Container img {
+		 vertical-align: top;
+	}
+	
+	#menu3Container {
+		border : 0;
+	}
+	#menu3Container img {
+		 vertical-align: top;
+	}
+	
+	#menu4Container {
+		border : 0;
+	}
+	#menu4Container img {
+		 vertical-align: top;
+	}
+	
+	#menu5Container {
+		border : 0;
+	}
+	#menu5Container img {
+		 vertical-align: top;
+	}
+	
+	#menu6Container {
+		border : 0;
+	}
+	#menu6Container img {
+		 vertical-align: top;
+	}
+	
+	#menu7Container {
+		border : 0;
+	}
+	#menu7Container img {
+		 vertical-align: top;
+	}
+	
+	#menu8Container {
+		border : 0;
+	}
+	#menu8Container img {
+		 vertical-align: top;
+	}
+	
+	#menu9Container {
+		border : 0;
+	}
+		
+	#menu10Container {
+		border : 0;
+	}
+	
+/* global drop-down alignment & font attributes */
+	.menu .options {
+		margin:0;
+		padding:0;
+		border: 0;
+		background-color:#ccc;
+		font: 11px Arial, Helvetica, sans-serif;
+		text-transform : capitalize;
+	}
+	
+	.menuQuicklinks .options {
+		margin:0;
+		padding:0;
+		border: 0;
+		background-color:#a10f0f;
+		font: 11px Arial, Helvetica, sans-serif;
+		text-transform : capitalize;
+	}
+	
+	.menuDirectories .options {
+		margin:0;
+		padding:0;
+		border: 0;
+		background-color:#a10f0f;
+		font: 11px Arial, Helvetica, sans-serif;
+		text-transform : capitalize;
+	}
+
+	/*About Us drop-down menu attributes */	
+	#aboutUsLinks a {
+		color: #666;
+		padding: 5px 0 5px 7px;
+		border-bottom: solid 1px #e6e6e6;
+		text-decoration:none;
+		text-transform : capitalize;
+		background-color: #ccc;
+		display : block;
+	}
+	#aboutUsLinks a:hover {
+		background-color:#ccc;
+		color:#cc0000;
+	}
+	
+	/* Admission drop-down menu attributes */	
+	#admissionLinks a {
+		color: #666;
+		padding: 5px 0 5px 7px;
+		border-bottom: solid 1px #e6e6e6;
+		text-decoration:none;
+		text-transform : capitalize;
+		background-color: #ccc;
+		display : block;
+	}
+	#admissionLinks a:hover {
+		background-color:#ccc;
+		color:#cc0000;
+	}
+	
+	/* Academics drop-down menu attributes */	
+	#academicsLinks a {
+		color: #666;
+		padding: 5px 0 5px 7px;
+		border-bottom: solid 1px #e6e6e6;
+		text-decoration:none;
+		text-transform : capitalize;
+		background-color: #ccc;
+		display : block;
+	}
+	#academicsLinks a:hover {
+		background-color:#ccc;
+		color:#cc0000;
+	}
+		
+	/* Athletics drop-down menu attributes */	
+	#athleticsLinks a {
+		color: #666;
+		padding: 5px 0 5px 7px;
+		border-bottom: solid 1px #e6e6e6;
+		text-decoration:none;
+		text-transform : capitalize;
+		background-color: #ccc;
+		display : block;
+	}
+	#athleticsLinks a:hover {
+		background-color:#ccc;
+		color:#cc0000;
+	}
+	
+	/* Grad Studies drop-down menu attributes */	
+	#gradStudiesLinks a {
+		color: #666;
+		padding: 5px 0 5px 7px;
+		border-bottom: solid 1px #e6e6e6;
+		text-decoration:none;
+		text-transform : capitalize;
+		background-color: #ccc;
+		display : block;
+	}
+	#gradStudiesLinks a:hover {
+		background-color:#ccc;
+		color:#cc0000;
+	}
+	
+	/* Student Life drop-down menu attributes */	
+	#studentLifeLinks a {
+		color: #666;
+		padding: 5px 0 5px 7px;
+		border-bottom: solid 1px #e6e6e6;
+		text-decoration:none;
+		text-transform : capitalize;
+		background-color: #ccc;
+		display : block;
+	}
+	#studentLifeLinks a:hover {
+		background-color:#ccc;
+		color:#cc0000;
+	}
+	
+	/* Alumni drop-down menu attributes */	
+	#alumniLinks a {
+		color: #666;
+		padding: 5px 0 5px 7px;
+		border-bottom: solid 1px #e6e6e6;
+		text-decoration:none;
+		text-transform : capitalize;
+		background-color: #ccc;
+		display : block;
+	}
+	#alumniLinks a:hover {
+		background-color:#ccc;
+		color:#cc0000;
+	}
+	
+	/* Location drop-down menu attributes */	
+	#locationLinks a {
+		color: #666;
+		padding: 5px 0 5px 7px;
+		border-bottom: solid 1px #e6e6e6;
+		text-decoration:none;
+		text-transform : capitalize;
+		background-color: #ccc;
+		display : block;
+	}
+	#locationLinks a:hover {
+		background-color:#ccc;
+		color:#cc0000;
+	}
+	
+	
+	
+	/*Quicklinks drop-down menu attributes */	
+	#quicklinksLinks .qlLink {
+		color: #fff;
+		padding: 5px 0 5px 10px;
+		border-bottom: solid 1px #d08787;
+		text-decoration:none;
+		text-transform : capitalize;
+		background-color: #a10f0f;
+		display : block;
+	}
+	
+	#quicklinksLinks a:hover {
+		background-color:#a10f0f;
+		color:#000;
+	}
+
+	#quicklinksLinks img {
+		margin-left:-10px;
+	}
+	
+	body > #menu9Container { 
+		top:82px; /* hidden from IE, to fix position alignment of dhtml menu for quicklinks */
+	}
+	
+	#quicklinksLinks a img {
+		 vertical-align: bottom;
+	}
+	
+	/*Directories drop-down menu attributes */	
+	#directoriesLinks .dLink {
+		color: #fff;
+		padding: 5px 0 5px 10px;
+		border-bottom: solid 1px #d08787;
+		text-decoration:none;
+		text-transform : capitalize;
+		background-color: #a10f0f;
+		display : block;
+	}
+	
+	#directoriesLinks a:hover {
+		background-color:#a10f0f;
+		color:#000;
+	}
+
+	#directoriesLinks img {
+		margin-left:-10px;
+	}
+	
+	body > #menu10Container { 
+		top:378px; /* hidden from IE, to fix position alignment of dhtml menu for quicklinks */
+	} 
+	
+	#directoriesLinks a img {
+		 vertical-align: top;
+	}

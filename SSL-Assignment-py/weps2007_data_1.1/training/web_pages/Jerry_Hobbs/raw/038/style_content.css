@@ -1,0 +1,32 @@
+/* CSS Document */
+#picture{
+	position: relative;
+	float: left;
+	width: 100px;
+	height: 130px;
+}
+#rightOfPic{
+	position: relative;
+	float: right;
+	width: 435px;
+	height: 130px;
+}
+#withoutPic{
+	position: relative;
+	clear: both;
+}
+
+h1 {font-size: 16px; font-weight: bold;}
+/* for faculty info */
+#facInfo {	font-size: 14px;
+	font-family: "trebuchet ms", Helvetica, Arial, sans-serif;
+	line-height: 105%;
+	TEXT-DECORATION: none; padding-bottom: 4px;}
+/* for faculty interest */
+#facInterest {	font-size: 14px;
+	font-family: "trebuchet ms", Helvetica, Arial, sans-serif;
+	line-height: 105%;
+	TEXT-DECORATION: none; padding-bottom: 12px;}
+
+li {LIST-STYLE-TYPE: square; /*font-weight: bold;*/}
+ol {LIST-STYLE-TYPE: roman;}

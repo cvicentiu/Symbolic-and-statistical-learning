@@ -1,0 +1,177 @@
+﻿/*****************
+*  players.css
+*  Author: Doug Ramsay
+*  Date: 8/30/2006
+***********************/
+
+a { color: #463b8f; text-decoration: none; }
+
+a:hover { text-decoration: underline; }
+
+#main {
+    width: 500px;
+    float: left;
+    margin-left: 10px;
+	display: inline;
+}
+
+#sidebar {
+    width: 255px;
+    float: left;
+    margin: 40px 0 0 10px;
+	overflow: hidden;
+	font-size: 90%;
+}
+
+/* =Player Nav
+------------------------*/
+
+#pnavcontainer ul {
+    padding-left: 0;
+    margin-left: 0;
+    background-color: #ffd600;
+    color: #000;
+    float: left;
+    width: 100%;
+    font-weight: bold;
+}
+
+#pnavcontainer ul li { display: inline; }
+
+#pnavcontainer ul li a {
+    font-size: 100%;
+    padding: 0.2em 1em;
+    background-color: #ffd600;
+    color: #000;
+    text-decoration: none;
+    float: left;
+}
+
+#pnavcontainer ul li a:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+/* selected */
+#pmainnav a.selected {
+    color: #fff;
+    background-color: #000;
+}
+
+/* =header
+**************************/
+
+#playerHeader {
+    margin-top: -12px;
+}
+
+#playerName {
+    font-weight: bold;
+    font-size: 150%;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 3px;
+}
+
+#headerWrapper 
+{
+    width: 500px;
+    float: left;
+    /* background-color: #000; */
+    color: #fff;
+    position: relative;
+}
+
+#headshot {
+    float: left;
+    width: 125px;
+    height: 139px;
+}
+
+#colorWrapper {
+    width: 375px;
+    position: absolute;
+    left: 125px;
+}
+
+
+#tblInfo {
+    width: 185px;
+    height: 139px;
+    position: absolute;
+    top: 0;
+    left: 0;  
+    z-index: 5;
+}
+
+#tblInfo td {
+    padding: 0 4px 0 4px;
+    line-height: 1.3em;
+    white-space: nowrap;
+    z-index: 5;
+}
+
+#teamLogo {
+    /* float: left;
+    overflow: hidden;
+    */
+    position: absolute;
+    top: 0;
+    left: 185px;
+    z-index: 0;
+}
+
+#teamImg {
+    margin-left: -28px;
+}
+
+/* Main page */
+
+div.main-item {
+    width: 245px;
+    float: left;
+    margin-bottom: 20px;
+}
+    
+
+/* =Sidebar
+*****************************/
+
+#sidebar h3 {
+    margin-top: 20px;
+}
+
+#h3-byname { background-image: url(../images/bg/players_byname.png); background-repeat: no-repeat; }
+#h3-byposition { background-image: url(../images/bg/players_byposition.png); background-repeat: no-repeat; }
+#h3-byteam { background-image: url(../images/bg/players_byteam.png); background-repeat: no-repeat; }
+#h3-bycollege { background-image: url(../images/bg/players_bycollege.png); background-repeat: no-repeat; }
+#h3-byhometown { background-image: url(../images/bg/players_byhometown.png); background-repeat: no-repeat; }
+
+.position {
+    width: 82px;
+    float: left;
+}
+
+#offense, #defense, #specialteams {
+    padding-left: 3px;
+} 
+
+.conference {
+    width: 49%;
+    float: left;
+}
+
+#afclist, #nfclist {
+    padding-left: 10px;
+
+}
+
+.entry {
+    width: 235px;
+}
+
+.fullText {
+    font-size: 105%;
+}
+
+#h3-profile-int, #h3-journals, #h3-poll, #h3-video-int { width: 245px; }

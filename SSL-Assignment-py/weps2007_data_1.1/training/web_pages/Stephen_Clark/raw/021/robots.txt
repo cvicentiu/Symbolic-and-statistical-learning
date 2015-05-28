@@ -1,0 +1,30 @@
+# robots.txt file for web.comlab.ox.ac.uk
+#
+# This file indicates to compliant web robots/spiders which parts
+# of this web site should not be traversed
+# [see http://info.webcrawler.com/mak/projects/robots/norobots.html]
+
+# Allow htdig to construct our own search database
+
+User-agent: htdig
+Disallow: /cgi-bin/
+
+# Allow OUCS googlebox to see parts of /internal
+
+User-agent: gsa-crawler
+Disallow: /cgi-bin/
+Disallow: /internal/courses/
+Disallow: /internal/PACK/
+Disallow: /internal/private/
+Disallow: /test/
+Disallow: /webmgt/
+Disallow: /README
+
+# Restrict other robots to /oucl and /oxinfo
+
+User-agent: *
+Disallow: /cgi-bin/
+Disallow: /internal/
+Disallow: /test/
+Disallow: /webmgt/
+Disallow: /README

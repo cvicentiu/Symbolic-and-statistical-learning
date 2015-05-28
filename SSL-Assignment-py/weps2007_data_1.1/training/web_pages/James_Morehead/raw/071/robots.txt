@@ -1,0 +1,25 @@
+#
+# Added /servlet/ /product_guide/xml/ /products/xml/ to blocking, and copied 
+# to /infoworld.com and /redesign/infoworld/weblog - KMR 10/27/2005
+#
+# Prevent MSNbot from doing a DoS attack on our dynamic pages - KMR 10/26/2005
+User-agent: msnbot
+Crawl-delay: 60
+Disallow: /cgi-bin/
+Disallow: /SSI/
+Disallow: /servlet/
+Disallow: /product_guide/xml/
+Disallow: /product_guide/archive/
+Disallow: /products/xml/
+Disallow: /rss/
+
+# User-agent: * goes last - bots stop at their first user-agent match
+User-agent: *
+Disallow: /cgi-bin/
+Disallow: /SSI/
+Disallow: /servlet/
+Disallow: /product_guide/xml/
+Disallow: /product_guide/archive/
+Disallow: /products/xml/
+
+

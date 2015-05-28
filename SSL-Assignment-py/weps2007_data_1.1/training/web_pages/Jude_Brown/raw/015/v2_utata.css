@@ -1,0 +1,677 @@
+/*master css (for) utata.org, 2006 */
+body{
+margin-top: 0px;
+margin-bottom: 0px;
+background-color:#d0d4bb;
+background-image: url(g/back.gif);
+background-position:center;
+background-repeat:repeat-y;
+}
+
+/* -----------------------------------------------------------#menubar------------*/
+
+#menubar{
+width:930px;
+margin: auto;
+margin-top: 0px;
+margin-bottom: 0px;
+text-align: center;
+display: block;
+padding-top: 9px;
+background: url(g/menu_top.gif)  top center no-repeat;
+border-bottom: 1px dashed #ffffff;
+background-color:#d0d4bb;
+overflow: hidden;
+border-right: 1px solid #d0d4bb;
+}
+
+*html #menubar .content{
+padding-bottom: 5px;
+text-align: center;
+background-image: none;
+}
+
+#menubar .content{
+background-image:none;
+margin: 0;
+padding: 0;
+height: 22px;
+border-bottom: 1px solid #d1d5bc;
+}
+
+/*----------------------------------------------------------contentwrapper-------*/
+
+#contentwrapper{
+display: block;
+width: 930px;
+margin: auto;
+margin-top: 0px;
+margin-bottom: 0px;
+padding: 0px;
+font-family:Arial, Helvetica, sans-serif;
+font-size: 0.80em;
+font-weight: normal;
+background-color:transparent;
+min-height: 830px;
+height:expression(
+    this.scrollHeight < 830? "830px" : "auto" );
+}
+
+/*-------------------------------------------------------------------------left-------*/
+
+#left, #leftblack{
+float: left;
+margin-top: 0px;
+margin-right: 10px;
+width: 300px;
+padding: 0px;
+padding-left: 30px;
+text-align: center;
+color:#333333;
+}
+
+#left .logo { 
+height: 70px;
+margin-top: 10px;
+}
+
+#left .logo img{
+border: 0px;
+padding: 0px;
+background-color: transparent;
+}
+
+*html #left{	
+margin-left: 0px;
+}
+
+/*----------------------------------------------------------------------right------*/
+
+#right, #rightblack{
+width: 568px;
+float: right;
+margin-right: 0px;
+margin-top: 20px;
+text-align: center;
+background-color: #ffffff;
+min-height: 830px;
+height:expression(
+    this.scrollHeight < 830? "810px" : "auto" );
+}
+
+*html #right{	
+margin-right: 0px;
+}
+
+#rightcontent{
+width: 510px;
+margin: auto;
+display: block;
+padding-bottom: 20px;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+
+#rightblack{
+background-color: #000000;
+}
+
+/* -----------------------------------------------------------------#bottombar------------*/
+
+#bottombar{
+width:930px;
+margin: auto;
+margin-top: 0px;
+text-align: right;
+padding: 0px;
+display: block;
+height: 30px;
+background-image: url(g/page_bottom.gif);
+background-position:bottom;
+background-repeat:no-repeat;
+border-top: 1px dashed #ffffff;
+font-family:Arial, Helvetica, sans-serif;
+font:Arial, Helvetica, sans-serif;
+font-size:small;
+padding-top: 6px;
+color:#FFFFCC;
+}
+
+#bottombar img{
+margin-right: 20px;!important;
+border: 0px; !important;
+float: right;
+margin-left: 20px;!important;
+padding: 0px; !important;
+}
+
+#bottombar a, #bottombar a:hover, #bottombar a:active, #bottombar a:visited{
+border: 0px; !important;
+margin: 0px;!important;
+color:#FFCC99;
+}
+
+#bottombar a:hover{
+color:#FFCC33;
+}
+
+/*-------------------------------------------------------------------------------H1------*/
+
+h1{display: none;}
+
+/*--------------------------------------------------------------------------------H2------*/
+
+ul h2{
+margin-bottom: 8px;
+}
+
+#rightblack h2, #right h2, .poll-title{
+color: #990000;
+font-family:Georgia, "Times New Roman", Times, serif;
+font-weight: normal;
+font-size: 1.68em;
+margin-bottom: 2px;
+text-align: right;
+}
+
+.poll-title{
+margin-top: 30px;
+text-align: center;
+font-size: 2.0em;
+}
+
+
+#left h2, #left .leftheader{
+margin-top: 15px;
+text-align: left;
+border-bottom: 1px dashed #990000;
+font-family:Arial, Helvetica, sans-serif;
+font-size: .90em;
+font-weight: bold;
+margin-bottom: 4px;
+padding-bottom: 2px;
+border-bottom: 1px dotted #990000;
+color: #990000;
+}
+
+#left .leftheader{
+border-bottom: 0px;
+}
+
+.linklist h2{
+margin-bottom: 10px;
+}
+
+/*-------------------------------------------------------------------------------H3------*/
+
+h3{ 
+margin-top: 0px; 
+margin-bottom: 15px; 
+font-weight:normal;
+}
+
+#left h3{
+font-size: 1.1em;
+color:#999900;
+text-align: left;
+letter-spacing: .25em;
+text-transform:uppercase;
+}
+
+#rightblack h3, #right h3{
+font-size: 1.3em;
+font-weight: bold;
+padding-bottom: 2px;
+color: #838671;
+text-align: right;
+}
+
+.poll-logged-in{
+font-size: 1.3em;
+padding-bottom: 2px;
+color: #838671;
+text-align: center;
+}
+/*-------------------------------------------------------------------------------------H4------*/
+
+#left h4, #right h4, #rightblack h4{
+color: #707046;
+text-align: left;
+}
+
+#right h4, #rightblack h4{
+margin-top: 10px;
+margin-bottom: 0px;
+font-size: 1.25em; !important;
+font-weight:700; !important;
+text-align: left;
+}
+
+#left .itemholder  h4{
+font-size: 10px;
+margin-top: 0px;
+padding-top: 0px;
+padding-bottom: 0px;
+margin-bottom: 1px;
+font-weight:bold;
+text-transform:uppercase;
+color: #990000;
+}
+/*----------------------------------------------------------------------------------H5------*/
+
+h5{
+text-align: left;
+font-size: 1.0em;
+color: #990000;
+margin-top: 0px;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+#right h5, #rightblack h5{
+text-align: left;
+font-size: .85em;
+color: #990000;
+margin-top: 0px;
+font-weight: normal;
+margin-bottom: 0px;
+}
+
+/*-----------------------------------------------------------------------------------H6------*/
+
+#left h6{
+margin-top: 0px;
+color: #990000;
+font-size: .85em;
+font-weight: normal;
+text-transform:uppercase;
+margin-bottom: 6px;
+letter-spacing: .16em;
+}
+
+#right h6, #rightblack h6{
+margin-top: 20px;
+color: #838671;
+font-size: 1.22em;
+font-weight: normal;
+border-bottom: 1px dotted #838671;
+margin-bottom: 2px;
+text-align: left;
+letter-spacing: .09em;
+text-transform:uppercase;
+}
+
+/*--------------------------------------------------------------------------------H7------*/
+h7{
+
+}
+
+
+/*-------------------------------------------------------------standard body elements------*/
+
+.divide{
+background: url(g/dotted_divide.gif) repeat-x;
+height: 3px;
+font-size: 0.06em;
+margin: auto;
+margin-top: 2px;
+margin-bottom: 2px;
+width: 100%;
+}
+
+#left p, #rightblack p, #right p, #rightblack li, #right li, #rightblack ul, #right ul, #left li, #left ul{
+color: #555555;
+padding-right: 0px;
+text-align: left;
+line-height: 1.23em;
+font-size: 1.06em;
+}
+
+#left li, #left ul{
+margin-right: 25px;
+margin-left: 25px;
+text-align: left;
+line-height: 1.23em;
+font-size: 1.00em;
+}
+
+#right .linkbarright, #rightblack .linkbarright {
+text-align: right;
+}
+
+
+#right .right, #rightblack .right{
+text-align: right;
+}
+
+#right .left, #rightblack .left{
+text-align: left;
+}
+
+
+.indexholder{
+margin: 10px 20px 0px 20px;
+font-size: .92em;
+}
+
+.poll-description{
+	margin: 15px;
+    line-height: 1.23em;
+    font-size: 1.4em;
+	text-transform:none;
+	color:#666666;
+	font-weight: normal;
+}
+
+.poll-instructions {
+display: none;
+}
+/*---------------------------------------------------------------------------------lists------*/
+
+ul, ol{
+margin-left: 0px;
+margin-bottom: 4px;
+list-style: none;
+list-style-image: url(g/icondot.gif);
+}
+
+li{
+margin-left: 0px;
+margin-bottom: 6px;
+list-style-image: url(g/icondot.gif);
+}
+
+/*--------------------------------------------------------------------pagination holder-------*/
+
+.pages{
+text-align:center;
+margin-top: 10px; 
+margin-bottom: 10px; 
+font-size: 13px;
+color: #999999;
+}
+
+/*-----------------------------------------------------------------------images -----------*/
+
+#right p img, #rightblack p img{
+float: right; 
+margin-left: 10px;
+margin-bottom: 6px;
+}
+
+
+.imageright, .rightimage{
+float: right;
+margin: 20px 0px 10px 20px;
+text-align: right;
+}
+
+.imageleft, .leftimage{
+float: left;
+margin: 20px 20px 10px 0px;
+text-align: left;
+}
+
+
+.rightimage .photocredit, .leftimage .photocredit, .photocredit
+{
+	display: block;
+	padding: 5px;
+	margin-top: 1px;
+	padding-top: 0px;
+	font-size: 0.9em;
+	color: #777777;
+	text-align: center;
+}
+
+.leftimage .photocredit
+{
+	text-align: left;
+}
+
+.rightimage .photocredit
+{
+	text-align: right;
+}
+
+img, #rightblack img, .imageright img, .rightimage img, .imageleft img, .leftimage img,   #rightblack .memberthumbs img{
+border: 3px solid #dddddd;
+margin: auto;
+background-color: #ffffff;
+padding: 1px;
+float: none;
+}
+
+#rightblack img
+{
+border: 3px solid #000000;
+background-color: #000000;
+}
+
+#rightblack .memberthumbs img{
+margin: 0px;
+}
+/*---------------------------------------------------------- RIGHT itemholder-----------*/
+
+#right .itemholder,  #right .utataitemholder, .poll{
+margin: 2px 0px 2px 0px;
+text-align: center; !important;
+font-family:Arial, Helvetica, sans-serif;
+font-size: 10px;
+padding-bottom: 5px;
+font-weight:bold;
+text-transform: uppercase;
+color: #990000;
+}
+
+#right .utataitemholder{
+margin-top: 0px; 
+margin-bottom: 0px; 
+width: 500px; 
+display: block; 
+float: none; 
+text-align: right; 
+height: 36px; 
+margin-right: 0px; 
+padding-right: 0px;
+}
+
+#right .itemholder .inside p, #right .itemholder .inside li{
+text-align: center; !important;
+font-family:Arial, Helvetica, sans-serif;
+font-size: 11px;
+padding-bottom: 5px;
+font-weight:normal;
+text-transform: none;
+color:#666666;
+}
+
+#right .itemholder .inside li{
+text-align: left; !important;
+padding-bottom: 0px;
+}
+
+
+#right .itemholder img{
+margin: 7px;
+float: none;
+}
+
+#right .itemholder a{
+text-align:right;
+background-color: transparent;
+}
+
+
+/*---------------------------------------------------------- LEFT itemholder-----------*/
+#left .itemholder{
+margin-top: 20px;
+width: 272px;
+padding-left: 3px;
+height: auto;
+min-height: 85px;
+height:expression(
+    this.scrollHeight < 85? "85px" : "auto" );
+display: block;
+padding-left: 14px;
+}
+
+#left .itemholder p{
+padding: 0px 10px 0px 10px;
+font-size: .93em;
+text-transform:none;
+font-variant:normal;
+margin-bottom: 10px;
+}
+
+#left .itemholder .inside{
+padding-top: 0px;
+padding-bottom: 6px;
+min-height: 80px;
+border-bottom: 1px dotted #990000;
+display: block;
+}
+
+#left .itemholder .inside p{
+font-size: .80em;
+margin-left: 0px;
+padding-top: 2px;
+margin-top: 0px;
+margin-bottom: 2px;
+}
+
+#left .itemholder h2{
+font-weight: bold;
+text-align: left;
+border-bottom: 1px dotted #990000;
+margin-top: 2px;
+font-size: .90em;
+}
+
+#left .itemholder .inside h2{
+margin-bottom: 2px;
+}
+
+#left .itemholder img{
+float: left;
+margin: 5px;
+width: 50px;
+height: 50px;	
+}
+
+#left .itemholder .largeimg img{
+width: auto; !important;
+height: auto;	 !important;
+float: none;
+}
+
+#left .itemholder .largeimg{
+text-align: center;
+}
+
+#left .itemholder .inside img, #right .itemholder .inside img{
+width: 48px;
+height: 48px;
+float: left;
+margin-right: 4px;
+margin-left: 2px;
+margin-top: 2px;
+}
+
+#right .itemholder .inside img{
+float: right;
+margin-left: 15px;
+}
+
+#right .utataitemholder img{
+margin: 0px;
+float: none;
+width: 30px; !important;
+height: 30px; !important;
+}
+
+/*-------------------------------------------------------------------------links --------------*/
+
+.linklist{
+margin-top: 15px;
+width: 250px;
+margin-left: 10px;
+margin-right: 10px;
+}
+
+a:link, a:visited, a:active{
+font-weight: inherit;
+text-decoration:none;
+color: #999900;
+}
+
+a:hover{ 
+color:#990000;
+}
+
+#menubar a:link, #menubar a:visited, #menubar a:active {
+font-family:Arial, Helvetica, sans-serif;
+font-size: .76em; !important;
+text-decoration:none;
+height: 22px;
+margin-right: 19px;
+color:#ededd4;
+}
+
+#menubar a:hover{
+background-color: transparent;
+}
+
+#left .archivelink a, #left .linklist .archivelink a{
+color: #999999;
+background: url(g/list_icon.gif) no-repeat left;
+padding-left: 16px;
+}
+
+#left .linklist a{
+display: block;
+text-align: left;
+line-height: 1.4em;
+background: url(g/icon.gif) no-repeat left;
+padding-left: 18px;
+font-size: .96em;
+}
+
+#left .linklist a:hover{
+color: #ffffff;
+background-color: #999900;
+font-size: .96em;
+}
+
+a:hover img{
+padding: 2px; !important;
+border: 2px dotted  #990000; !important;
+background-color:transparent; !important;
+color: #990000; !important;
+}
+
+.footnote
+{
+vertical-align:super;
+font-size: .65em;
+padding-top: 0px;
+margin-top: 0px;
+}
+
+#right #rightcontent .projectbody{
+min-height: 400px;
+height:expression(
+    this.scrollHeight < 400? "400px" : "auto" );
+}
+
+
+/*-----------------------miscellaneous add on stuff ---------*/
+
+.bb{
+margin-left: 16px;
+margin-right: 16px;
+font-size: .88em; !important;
+margin-top: 4px;
+margin-bottom: 30px;
+}
+

@@ -1,0 +1,91 @@
+function qas_errHandler() {
+	return true;
+}
+function qas_appendParam(n,v) {
+	var w = window;
+	if (v && !(v === 'undefined')){
+		if(n=="placementId"){
+			 w.srcUrl += (n + '=' + v);				
+		} else{
+			 w.srcUrl += ('&' + n + '=' + v);				
+		}
+	}
+}
+
+function qas_appendAttr(n,v) {
+	var w = window;
+	if (v && !(v === 'undefined')) w.wFrmStr += (' ' + n + '="' + v + '"');
+}
+
+function qas_writeAdIFrame() {
+	var w = window;
+	var jspServ = w.adsonar_jv;
+	w.srcUrl = 'http://' + jspServ +'/adserving/getAds.jsp?';
+	w.wFrmStr = '';
+	var wrand = Math.round(Math.random() * 1000000);
+	qas_appendAttr('name',('adsonar_serve' + wrand));
+	qas_appendAttr('id',('adsonar_serve' + wrand));
+	qas_appendAttr('scrolling','no');
+	qas_appendAttr('frameborder','0');
+	qas_appendAttr('marginwidth','0');
+	qas_appendAttr('marginheight','0');
+	qas_appendAttr('vspace','0');
+	qas_appendAttr('hspace','0');
+ qas_passParams();
+	qas_appendAttr('src',w.srcUrl);
+	w.wFrmStr = '<iframe' + w.wFrmStr + '>' + '</iframe>';
+	document.write(w.wFrmStr);
+}
+function qas_passParams() {
+	//alert("adsonar_pid: " +adsonar_pid+ "adsonar_ps: " +adsonar_ps+ "adsonar_zw: " +adsonar_zw+ "dsonar_zh: " +dsonar_zh+"adsonar_jv: " + adsonar_jv);
+	var w = window;
+	qas_appendParam('placementId',w.adsonar_placementId);	
+	qas_appendParam('pid',w.adsonar_pid);
+	qas_appendParam('ps',w.adsonar_ps);
+	qas_appendParam('kc',escape(w.adsonar_kc));
+	qas_appendParam('gw',w.adsonar_gw);
+	qas_appendParam('gh',w.adsonar_gh);
+	qas_appendParam('zw',w.adsonar_zw);
+	qas_appendParam('zh',w.adsonar_zh);
+	qas_appendParam('tc',escape(w.adsonar_tc));
+	qas_appendParam('bc',escape(w.adsonar_bc));
+	qas_appendParam('uc',escape(w.adsonar_uc));
+	qas_appendParam('tl',w.adsonar_tl);
+	qas_appendParam('ul',w.adsonar_ul);
+	qas_appendParam('ts',w.adsonar_ts);
+	qas_appendParam('bs',w.adsonar_bs);
+	qas_appendParam('us',w.adsonar_us);
+	qas_appendParam('tm',w.adsonar_tm);
+	qas_appendParam('xb',w.adsonar_xb);
+	qas_appendParam('xbc',escape(w.adsonar_xbc));
+	qas_appendParam('xp',w.adsonar_xp);
+	qas_appendParam('xpc',escape(w.adsonar_xpc));
+	qas_appendParam('pb',w.adsonar_pb);
+	qas_appendParam('pbc',escape(w.adsonar_pbc));
+	qas_appendParam('ib',w.adsonar_ib);
+	qas_appendParam('ibc',escape(w.adsonar_ibc));
+	qas_appendParam('dbg',w.adsonar_dbg);
+	qas_appendParam('fr',w.adsonar_fr);
+	qas_appendParam('tp',w.adsonar_tp);
+	qas_appendParam('zip',escape(w.adsonar_zip));
+	qas_appendParam('topic',escape(w.adsonar_topic));
+	qas_appendParam('tcu',escape(w.adsonar_tcu));
+	var u = w.adsonar_rfu;
+	if ((!(u && !(u === 'undefined'))) || (u == '')) {
+		u = document.referrer;
+		if (window.top.location == document.location)
+			u = document.location;
+	}
+	qas_appendParam('url',escape(u));
+	qas_appendParam('v','5');
+
+}
+
+function qas_writeAd() {
+	var w = window;
+	var adType = '';
+	if (w.adsonar_tp && !(w.adsonar_tp === 'undefined'))
+		adType = w.adsonar_tp;
+		qas_writeAdIFrame();
+}
+function qas_cfrm() {}

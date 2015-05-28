@@ -1,0 +1,26 @@
+# robots.txt for http://www.example.com/
+
+User-agent: * 
+disallow: /cgi-bin # This is an infinite virtual URL space
+disallow: /scripts # This is an infinite virtual URL space
+disallow: /test # This is an infinite virtual URL space
+disallow: /events # speed up searching.
+disallow: /vision2000 # retired.
+disallow: /light/news/doc # exclude per Dana
+disallow: /light/includes # exclude per Dana
+disallow: /light/printdocs # exclude per Dana
+disallow: /seattle # exclude as duplicate linking path
+disallow: /mayor/special_docs # old per Nate
+disallow: /light/accounts/assistance # exclude per Nate... infinite loops spiders
+disallow: /light/sclbusiness # exclude per Dana
+disallow: /personnel/includes # exclude test directory for printing files
+
+User-agent: NPBot
+disallow: /
+
+User-agent: EmailSiphon
+disallow: /
+
+
+
+

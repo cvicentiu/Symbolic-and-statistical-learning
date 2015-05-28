@@ -1,0 +1,549 @@
+a {
+        color: #900;
+        text-decoration: none;
+}
+a:visited {
+        color: #0E2461;
+        text-decoration: none;
+}
+a:hover {
+        color: #006;
+        text-decoration: underline;
+}
+a:active {
+        color: #900;
+        text-decoration: none;
+}
+form {padding: 0; margin: 0;}
+select.country{ width: 120px; font-size: 9px; margin-bottom: 5px;}
+
+option.gray {color: #C0C0C0; }
+.border1 {
+        border-bottom: #900 thin solid;
+        text-indent: 5pt;
+        font-size: 18px;
+}
+
+.border2 {
+        text-indent: 5pt;
+        font-size: 18px;
+        color: #000;
+}
+.border2 a, .border2 a:visited {
+        color: #000;
+}
+.highlighttop {
+        padding-top: 3px;
+        padding-bottom: 6px;
+}
+.highlightssub {
+        padding-bottom: 6px;
+        color: #900;
+        font: 13px Arial, Helvetica, sans-serif;
+}
+.quote {
+        margin-top: 2px;
+        margin-left: 5px;
+        color: #000;
+        margin-right: 4px;
+        padding-top: 2px;
+        font: 15px Arial, Helvetica, sans-serif;
+}
+.quoteauthor {
+        text-align: right;
+        padding-top: 3px;
+        font: 15px Arial, Helvetica, sans-serif;
+		color: #000;
+}
+.quote22 {
+        margin-top: 2px;
+        margin-left: 5px;
+        color: #000;
+        margin-right: 4px;
+        padding-top: 2px;
+        font: 11px Arial, Helvetica, sans-serif;
+}
+.quoteauthor22, .quoteauthor22 a{
+        text-align: right;
+        padding-top: 3px;
+        font: 11px Arial, Helvetica, sans-serif;
+		color: #000;
+}
+
+.quoteauthor a , .quoteauthor a:visited {color: #000;}
+.rightside {
+        display: block;
+        padding-left: 5px;
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+        margin-left: 5px;
+        color: #00c;
+        font: 12px Verdana, Arial, Helvetica, sans-serif;
+}
+.rightside:link {
+        color: #00c;
+        text-decoration: none;
+}
+.rightside:visited {
+        color: #00c;
+        text-decoration: none;
+}
+.rightside:hover {
+        color: #900;
+        text-decoration: underline;
+}
+.righty {
+        color: #369;
+        font: bold 12px Arial, Helvetica, sans-serif;
+}
+.righty a {
+        color: #900;
+        text-decoration: none;
+}
+.righty a:visited {
+        color: #0E2461;
+        text-decoration: none;
+}
+
+.righty a:hover {
+        color: #006;
+        text-decoration: underline;
+}
+.righty span {
+margin: 0;
+padding: 0; 
+	font-size: 10px;
+}
+.sidenavd:hover {
+        color: #900;
+        text-decoration: none;
+}
+.hotspot {
+        padding-top: 4px;
+        color: #000;
+        border-bottom: #900 thin solid;
+        font: bold 14px Verdana, Arial, Helvetica, sans-serif;
+}
+.hotspottext {
+        margin-left: 2px;
+        padding-top: 2px;
+        padding-left: 2px;
+        padding-right: 2px;
+        display: block;
+        margin-right: 2px;
+        font: 12px Verdana, Arial, Helvetica, sans-serif;
+}
+.hotspottext p {font: 9px Arial, Helvetica, sans-serif; margin: 0; padding:0;}
+.hotspottext:link {
+        color: #900;
+        text-decoration: none;
+}
+.hotspottext:visited {
+        color: #620000;
+        text-decoration: none;
+}
+.hotspottext:hover {
+        color: #006;
+        text-decoration: underline;
+}
+.spotheadlines {
+        color: #000;
+        text-indent: 5pt;
+        border-bottom: #900 thin solid;
+        text-align: left;
+        background: #fff;
+        font: italic 18px Verdana, Arial, Helvetica, sans-serif;
+}
+.spotheadlines, .headlines a {
+        color: #000;
+}
+.spotheadlines, .headlines a:visited {
+        color: #000;
+}
+.spotheadlines1 {
+        color: #000;
+        text-indent: 5pt;
+        padding-top: 3px;
+        border-bottom: #900 thin solid;
+        text-align: left;
+        background: #fff;
+        font: italic 18px Verdana, Arial, Helvetica, sans-serif;
+}
+.smalltext {
+        font-weight: normal;
+}
+.click {
+        padding-top: 5px;
+        margin-top: 5px;
+}
+.taglineblog {
+        text-align: right;
+        padding-right: 7px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        color: #900;
+        display: block;
+        font: italic bold 12px Verdana, Arial, Helvetica, sans-serif;
+}
+.tagline {
+        text-align: right;
+        padding-right: 7px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        color: #900;
+        display: block;
+        font: italic bold 12px Arial, Helvetica, sans-serif;
+}
+.tagline1 {
+        padding-right: 7px;
+        padding-bottom: 3px;
+        color: #900;
+        font: italic bold 12px Georgia, "Times New Roman", Times, serif;
+}
+.showauthor {
+        margin-left: 5px;
+        color: #000;
+        font: 18px Georgia, "Times New Roman", Times, serif;
+}
+.spotlight {
+        display: block;
+        margin-left: 5px;
+        color: #900;
+        font: bold 14px Arial, Helvetica, sans-serif;
+}
+.spotlightbyline {
+        display: block;
+        padding-left: 5px;
+        margin-bottom: 6px;
+        margin-left: 5px;
+        color: #000;
+        font: normal 10px Arial;
+}
+.imagetext {
+        color: #fff;
+        text-align: center;
+        font: 10px Verdana, Arial, Helvetica, sans-serif;
+}
+.imagetext a {
+        color: #fff;
+        text-decoration: none;
+}
+.imagetext a:visited {
+        color: #fff;
+        text-decoration: none;
+}
+.imagetext a:hover {
+        color: #fff;
+        text-decoration: underline;
+}
+.imagetext a:active {
+        color: #fff;
+        text-decoration: none;
+}
+#archives {
+        display: block;
+        padding-left: 4px;
+        padding-right: 4px;
+        margin-bottom: 4px;
+        padding-bottom: 2px;
+        margin-left: 4px;
+        font: bold 10px Verdana, Arial, Helvetica, sans-serif;
+}
+#archives a:visited {
+        color: #050042;
+}
+#archives a:hover {
+        color: #00c;
+}
+#archives li {
+        list-style-type: none;
+        padding: 2px;
+}
+.date {
+        padding: 9px;
+        color: black;
+        text-align: right;
+        font: 19px Georgia, "Times New Roman", Times, serif;
+}
+#columntext {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 13px;
+}
+#columntext p {
+        font-size: 100%;
+	    font-family: Georgia, "Times New Roman", Times, serif;
+	    color: #000;
+}
+#columntext span {
+        display: none;
+}
+.columntexthead {
+        color: #900;
+        padding-left: 3px;
+        padding-right: 3px;
+        font: bold 28px Georgia, "Times New Roman", Times, serif;
+}
+.columntexthead:link, .columntexthead a {
+        color: #FF0000;
+}
+.columntexthead span {
+        font-size: 20px;
+        font-variant: normal;
+        padding-left: 3px;
+        padding-right: 3px;
+        padding-bottom: 4px;
+        margin-bottom: 4px;
+}
+#columntext ul, #columntext ul li { color: #000; font-family: Georgia, "Times New Roman", Times, serif; }
+.home {
+        margin-left: 133px;
+        color: #fff;
+        text-decoration: none;
+        font: bold 11px Verdana, Arial, Helvetica, sans-serif;
+}
+.home:link {
+        color: #fff;
+        text-decoration: none;
+}
+.home:visited {
+        color: #fff;
+        text-decoration: none;
+}
+.home:hover {
+        color: #900;
+        text-decoration: none;
+}
+.home:active {
+        color: #fff;
+        text-decoration: none;
+}
+.author {
+        display: none;
+}
+.imgcol {
+        padding-top: 5px;
+        margin-top: 5px;
+}
+#bio {
+        margin: 2px;
+        padding: 2px;
+        padding-bottom: 115px;
+        font: 10px Verdana, Arial, Helvetica, sans-serif;
+}
+#backtalk {
+        text-align: center;
+        margin: 2px;
+        padding: 2px;
+        font: bold 13px Verdana, Arial, Helvetica, sans-serif;
+}
+.headlines {
+        color: #000;
+        text-indent: 5pt;
+        padding-top: 5px;
+        border-bottom: #900 thin solid;
+        text-align: left;
+        background: #fff;
+        font: italic 18px Verdana, Arial, Helvetica, sans-serif;
+}
+.rightheadlines {
+        color: #000;
+        padding-top: 5px;
+        text-indent: 5pt;
+        border-bottom: #900 thin solid;
+        text-align: left;
+        background: #fff;
+        font: italic 18px Verdana, Arial, Helvetica, sans-serif;
+}
+.topnav {
+        margin-left: 32px;
+        color: #fff;
+        text-decoration: none;
+        font: bold 11px Verdana, Arial, Helvetica, sans-serif;
+}
+.topnav:link {
+        color: #fff;
+        text-decoration: none;
+}
+.topnav:visited {
+        color: #fff;
+        text-decoration: none;
+}
+.topnav:hover {
+        color: #900;
+        text-decoration: none;
+}
+.topnav:active {
+        color: #fff;
+        text-decoration: none;
+}
+.topnav1 {
+        display: inline;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        margin-left: 50px;
+        color: #fff;
+        text-decoration: none;
+        font: bold 11px Verdana, Arial, Helvetica, sans-serif;
+}
+.topnav1:link {
+        color: #fff;
+        text-decoration: none;
+}
+.topnav1:visited {
+        color: #fff;
+        text-decoration: none;
+}
+.topnav1:hover {
+        color: #900;
+        text-decoration: none;
+}
+.topnav1:active {
+        color: #fff;
+        text-decoration: none;
+}
+.blogheadlines {
+        margin: 5px;
+        padding-left: 3px;
+        padding-right: 3px;
+        color: #900;
+        font: bold 14px Georgia, "Times New Roman", Times, serif;
+}
+#navcontainer {
+        width: 130px;
+	padding: 0;
+	margin: 0;
+}
+#navcontainer ul {
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+        border-bottom: 1px solid #eee;
+        font: bold 11px Verdana, Arial, Helvetica, sans-serif;
+}
+#navcontainer a {
+        color: #fff;
+        display: block;
+        padding-left: 3px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        width: 100%;
+        border-top: 1px solid #eee;
+}
+#navcontainer a img, #navcontainer img {
+        border-top: 1px solid #eee;
+		padding-left: 0;
+		margin: 0;
+}
+#navcontainer i {
+        font-size: 10px;
+}
+#navlist {
+margin: 0; 
+padding: 0;
+}
+#navlist li.red a { color: #900;}
+#navcontainer a:link, #navlist a:visited {
+        color: #fff;
+        text-decoration: none;
+}
+#navcontainer a:hover {
+        color: #900;
+        text-decoration: none;
+}
+.updated {
+        text-align: right;
+        padding-top: 13px;
+        padding-right: 2px;
+        color: #000;
+        border-bottom: #900 thin solid;
+        font: 10px Verdana, Arial, Helvetica, sans-serif;
+}
+.bottom {
+         font: 10px Arial, Helvetica, sans-serif;
+                 margin-bottom: 3px; 
+}
+.headregion {
+        color: #000;
+        text-indent: 5pt;
+        padding-top: 5px;
+        border-bottom: #900 thin solid;
+        text-align: left;
+        background: #fff;
+        font: italic 20px Verdana, Arial, Helvetica, sans-serif;
+}
+.headregion:link {
+        color: #900;
+        text-decoration: none;
+}
+.headregion:hover {
+        color: #006;
+        text-decoration: underline;
+}
+.regiontext {
+        padding: 3px;
+        margin: 3px;
+        font: 14px Georgia, "Times New Roman", Times, serif;
+}
+.regiontitle {
+        padding-top: 6px;
+        padding-bottom: 4px;
+        text-align: center;
+        color: #900;
+        font: bold 29px Georgia, "Times New Roman", Times, serif;
+}
+#regions {
+        display: block;
+        margin: 2px;
+        font: bold 10px/120% Arial, Helvetica, sans-serif;
+}
+#regions li {
+        list-style: none;
+        list-style-position: outside;
+        padding: 1px;
+        margin: 1px 1px 5px;
+}
+#regions a {
+        font-size: 12px;
+}
+#regions a:hover {
+        color: #006;
+}
+#regions form, input {
+        padding: 0;
+        margin: 0;
+}
+.staff {
+        padding: 4px;
+        margin: 4px;
+}
+.latest {
+        padding-left: 3px;
+        padding-bottom: 5px;
+        font: bold 15px Arial, Helvetica, sans-serif;
+}
+.latest span {
+        font-size: 11px;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+}
+#others a, .headlinessub a {
+        text-decoration: none;
+        color: #900;
+        font: 15px Georgia, serif;
+}
+#others a:visited, .headlinessub a:visited {
+        color: #0E2461;
+}
+#others a:hover, .headlinessub a:hover {
+        text-decoration: underline;
+        color: #00c;
+}
+#digg {
+font: bold 15px Arial, Helvetica, sans-serif;
+margin-bottom: 10px;
+}
+#digg small { font-size: 8px; }
+
+h7 { font: 9px Arial, Helvetica, sans-serif; margin-top:-3px; padding-top: -3px;}

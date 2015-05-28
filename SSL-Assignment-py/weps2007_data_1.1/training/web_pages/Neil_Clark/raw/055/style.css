@@ -1,0 +1,1286 @@
+/* Version 1.00  Consolidate FP Styles - KM */
+
+body {
+	color: black;
+	font: 12px/16px  Verdana, Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0 0 0 3px;
+}
+A {
+	text-decoration: none;
+}
+P {
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	text-indent: 10px;
+}
+.form {
+	margin: 0;
+}
+.formElements {
+	color: #d00;
+	font-style: normal;
+	font: 11px Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	width: 150px;
+}
+img {
+	border: 0 none;
+}
+strong {
+	font-weight: bold;
+}
+em {
+	font-style: italic;
+}
+p {
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+ul {
+	padding: 0;
+	margin-left: 12px;
+}
+h1 {
+	color: #000;
+	font: 35px Georgia, "Times New Roman", Times, serif;
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+h2 {
+	color: #000;
+	font: 19px Georgia, "Times New Roman", Times, serif;
+	margin: 0;
+	padding: 0 0 5px;
+	font-weight: normal;
+}
+.sans58Red {
+	color: #d00;
+	font: 58px Georgia, "Times New Roman", Times, serif;
+}
+.sans50Red {
+	color: #d00;
+	font: 50px/54px  Georgia, "Times New Roman", Times, serif;
+}
+.sans50 {
+	font: 50px/54px Georgia, "Times New Roman", Times, serif;
+}
+.sans35Black {
+	color: #000;
+	font: 35px Georgia, "Times New Roman", Times, serif;
+}
+.sans30Red {
+	color: #d00;
+	font: 30px Georgia, "Times New Roman", Times, serif;
+}
+.sans30Black {
+	color: #000;
+	font: 34px Georgia, "Times New Roman", Times, serif;
+}
+.sans30Grey {
+	color: #666;
+	font: 20px/25px Georgia, "Times New Roman", Times, serif;
+}
+.sans30GreyCen {
+	color: #666;
+	font: 30px Georgia, "Times New Roman", Times, serif;
+	text-align: center;
+}
+.sans25Grey {
+	color: #666;
+	font: 25px Georgia, "Times New Roman", Times, serif;
+}
+.sans25 {
+	color: black;
+	font: 25px Georgia, "Times New Roman", Times, serif;
+	padding: 0;
+	margin: 0;
+}
+.sans25Red {
+	color: #d00;
+	font: 25px Georgia, "Times New Roman", Times, serif;
+}
+.sans25Caps {
+	color: black;
+	font: small-caps 25px Georgia, Times New Roman, Times, serif;
+}
+.sans23 {
+	font: 23px/25px Georgia, "Times New Roman", Times, serif;
+}
+.sans23Red {
+	color: #d00;
+	font: 23px/25px Georgia, "Times New Roman", Times, serif;
+}
+.sans23Caps {
+	color: black;
+	font: small-caps 23px/25px  Georgia, Times New Roman, Times, serif;
+	font-variant: small-caps;
+}
+.sans21Blk {
+	font: 21px Georgia, "Times New Roman", Times, serif;
+}
+.sans20wot {
+	font: small-caps 18px Georgia, "Times New Roman", Times, serif;
+	color: black;
+	margin-right: 5px;
+	height: 28px;
+	padding: 3px 5px;
+	background: #ddd;
+}
+.sans20Bog {
+	font: small-caps 18px Arial, Helvetica, sans-serif;
+	color: black;
+	margin-right: 5px;
+	height: 28px;
+	padding: 3px 5px;
+	background: #ddd;
+}
+.sans20Grey {
+	color: #666;
+	font: 20px/25px Georgia, "Times New Roman", Times, serif;
+}
+.sans20Caps {
+	color: black;
+	font: 20px/25px Georgia, "Times New Roman", Times, serif;
+	font-variant: small-caps;
+}
+.sans20Blk {
+	color: black;
+	font: 20px/25px Georgia, "Times New Roman", Times, serif;
+}
+.sans20Red {
+	color: #d00;
+	font: 20px/25px Georgia, "Times New Roman", Times, serif;
+}
+.sans19Blk {
+	color: #000;
+	font: 19px Georgia, "Times New Roman", Times, serif;
+}
+.sans19Red {
+	color: #d00;
+	font: 19px Georgia, "Times New Roman", Times, serif;
+}
+.sans19Caps {
+	color: black;
+	font: small-caps 19px Georgia, "Times New Roman", Times, serif;
+}
+.sans16Red {
+	color: #d00;
+	font: 16px Georgia, "Times New Roman", Times, serif;
+	font-variant: small-caps;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+.sans16Redpq {
+	color: #d00;
+	font: 16px Georgia, "Times New Roman", Times, serif;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+.sans16Blk {
+	color: #000;
+	font: 16px/20px/25px Georgia, "Times New Roman", Times, serif;
+}
+.sans16Caps {
+	font: 16px Georgia, "Times New Roman", Times, serif;
+	font-variant: small-caps;
+}
+.sans13Red {
+	color: #d00;
+	font: 13px Georgia, "Times New Roman", Times, serif;
+	margin-bottom: 5px;
+	margin-top: 0;
+	padding-top: 0;
+}
+.sans13 {
+	color: black;
+	font: 13px Georgia, "Times New Roman", Times, serif;
+	margin-top: 5px;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.sans13Blk {
+	color: #000;
+	font: 13px Georgia, "Times New Roman", Times, serif;
+}
+.sans13Box {
+	color: #fff;
+	font: 13px Georgia, "Times New Roman", Times, serif;
+	padding: 4px;
+	background: #666;
+}
+.sans13Grey {
+	color: #666;
+	font: 13px Georgia, "Times New Roman", Times, serif;
+}
+.sans13Caps {
+	font: 13px Georgia, "Times New Roman", Times, serif;
+	font-variant: small-caps;
+}
+.sans10 {
+	color: black;
+	font: 10px Georgia, "Times New Roman", Times, serif;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.sans12 {
+	color: black;
+	font: 12px Georgia, "Times New Roman", Times, serif;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.sans12Red {
+	color: #d00;
+	font: 12px Georgia, "Times New Roman", Times, serif;
+	font-variant: small-caps;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.ver20 {
+	font: small-caps 20px/25px Verdana, Arial, Helvetica, sans-serif;
+}
+.ver20Red {
+	color: #d00;
+	font: 20px/25px Verdana, Arial, Helvetica, sans-serif;
+}
+.ver14 {
+	color: black;
+	font: 14px Verdana, Arial, Helvetica, sans-serif;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.arts16 {
+	color: black;
+	font: 16px  Arial, Helvetica, sans-serif;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.ver16 {
+	color: black;
+	font: 16px Verdana, Arial, Helvetica, sans-serif;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.ver14Grey {
+	color: #666;
+	font: 14px Verdana, Arial, Helvetica, sans-serif;
+}
+.ver12Grey {
+	color: #666;
+	font: 12px/16px Verdana, Arial, Helvetica, sans-serif;
+}
+.ver12 {
+	color: black;
+	font: 12px/16px  Verdana, Arial, Helvetica, sans-serif;
+	text-indent: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.ver12Red {
+	color: #d00;
+	font: 12px/16px  Verdana, Arial, Helvetica, sans-serif;
+	text-indent: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.ver12ind {
+	color: black;
+	font: 12px/16px  Verdana, Arial, Helvetica, sans-serif;
+	text-indent: 10px;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.ver12Bd {
+	color: black;
+	font: bold 12px/16px Verdana, Arial, Helvetica, sans-serif;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.ver12ink {
+	color: black;
+	font: 12px/16px  Verdana, Arial, Helvetica, sans-serif;
+	text-indent: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.ver11ital {
+	font: 11px/16px Verdana, Arial, Helvetica, sans-serif;
+	font-style: italic;
+}
+.ver11 {
+	font: 11px/16px Verdana, Arial, Helvetica, sans-serif;
+}
+.ver11italGrey {
+	color: #666;
+	font: 11px/16px Verdana, Arial, Helvetica, sans-serif;
+	font-style: italic;
+}
+.ver10 {
+	font: 10px/16px Verdana, Arial, Helvetica, sans-serif;
+}
+.ver10Red {
+	color: #d00;
+	font: 10px/16px Verdana, Arial, Helvetica, sans-serif;
+}
+.ver10Grey {
+	color: #666;
+	font: 10px/16px Verdana, Arial, Helvetica, sans-serif;
+}
+.ver10White {
+	color: white;
+	font: 10px/16px  Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.ver14 a:link {
+	color: black;
+	font: 14px Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+.ver14 a:visited {
+	color: black;
+	text-decoration: none;
+	font: 14px Verdana, Arial, Helvetica, sans-serif;
+}
+.ver14 a:hover {
+	color: #d00;
+	font: 14px Verdana, Arial, Helvetica, sans-serif;
+}
+.ver14 a:active {
+	font: 14px Verdana, Arial, Helvetica, sans-serif;
+	color: black;
+	text-decoration: none;
+}
+.ver12 a:link {
+	color: #d00;
+	font: 12px/16px Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+.ver12 a:visited {
+	color: #d00;
+	text-decoration: none;
+	font: 12px/16px Verdana, Arial, Helvetica, sans-serif;
+}
+.ver12 a:hover {
+	color: black;
+	text-decoration: none;
+	font: 12px/16px Verdana, Arial, Helvetica, sans-serif;
+}
+.ver12 a:active {
+	color: #d00;
+	text-decoration: none;
+	font: 12px/16px Verdana, Arial, Helvetica, sans-serif;
+}
+.ver12Red a:link {
+	color: #d00;
+	font: 12px/16px Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+.ver12Red a:visited {
+	color: #d00;
+	text-decoration: none;
+	font: 12px/16px Verdana, Arial, Helvetica, sans-serif;
+}
+.ver12Red a:hover {
+	color: black;
+	text-decoration: none;
+	font: 12px/16px Verdana, Arial, Helvetica, sans-serif;
+}
+.ver12Red a:active {
+	color: #d00;
+	text-decoration: none;
+	font: 12px/16px Verdana, Arial, Helvetica, sans-serif;
+}
+.ver12ind a:link {
+	color: #d00;
+	font: 12px/16px Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+.ver12ind a:visited {
+	color: #d00;
+	text-decoration: none;
+	font: 12px/16px Verdana, Arial, Helvetica, sans-serif;
+}
+.ver12ind a:hover {
+	color: black;
+	text-decoration: none;
+	font: 12px/16px Verdana, Arial, Helvetica, sans-serif;
+}
+.ver12ind a:active {
+	color: #d00;
+	text-decoration: none;
+	font: 12px/16px Verdana, Arial, Helvetica, sans-serif;
+}
+.ver12ink a:link {
+	color: black;
+	font: 12px/16px Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+.ver12ink a:visited {
+	color: black;
+	text-decoration: none;
+	font: 12px/16px Verdana, Arial, Helvetica, sans-serif;
+}
+.ver12ink a:hover {
+	color: black;
+	text-decoration: none;
+	font: 12px/16px Verdana, Arial, Helvetica, sans-serif;
+}
+.ver12ink a:active {
+	color: black;
+	text-decoration: none;
+	font: 12px/16px Verdana, Arial, Helvetica, sans-serif;
+}
+.ver10 a:link {
+	color: black;
+	font: 10px/16px Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+.ver10 a:visited {
+	color: black;
+	text-decoration: none;
+	font: 10px/16px Verdana, Arial, Helvetica, sans-serif;
+}
+.ver10 a:hover {
+	color: #d00;
+	text-decoration: none;
+	font: 10px/16px Verdana, Arial, Helvetica, sans-serif;
+}
+.ver10 a:active {
+	color: black;
+	text-decoration: none;
+	font: 10px/16px Verdana, Arial, Helvetica, sans-serif;
+}
+.ver10Red a:link {
+	color: #d00;
+	font: 10px/16px Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+.ver10Red a:visited {
+	color: black;
+	text-decoration: none;
+	font: 10px/16px Verdana, Arial, Helvetica, sans-serif;
+}
+.ver10Red a:hover {
+	color: black;
+	text-decoration: none;
+	font: 10px/16px Verdana, Arial, Helvetica, sans-serif;
+}
+.ver10Red a:active {
+	color: #d00;
+	text-decoration: none;
+	font: 10px/16px Verdana, Arial, Helvetica, sans-serif;
+}
+.subNav a:link {
+	color: black;
+	font: 10px Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+.subNav a:visited {
+	font-size: 10px;
+	color: black;
+	text-decoration: none;
+}
+.subNav a:hover {
+	font-size: 10px;
+	color: #d00;
+	text-decoration: none;
+}
+.subNav a:active {
+	font-size: 10px;
+	color: black;
+	text-decoration: none;
+}
+.sans50 a:link {
+	color: black;
+	font: 50px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+.sans50 a:visited {
+	color: black;
+	font: 50px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+.sans50 a:hover {
+	color: #d00;
+	font: 50px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+.sans50 a:active {
+	color: black;
+	font: 50px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+.sans25 a:link {
+	color: black;
+	font: 25px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+.sans25 a:visited {
+	color: black;
+	font: 25px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+.sans25 a:hover {
+	color: #d00;
+	font: 25px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+.sans25 a:active {
+	color: black;
+	font: 25px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+.sans23 a:link {
+	color: black;
+	font: 23px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+.sans23 a:visited {
+	color: black;
+	font: 23px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+.sans23 a:hover {
+	color: #d00;
+	font: 23px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+.sans23 a:active {
+	color: black;
+	font: 23px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+.sans23Red a:link {
+	color: #d00;
+	font: 23px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+.sans23Red a:visited {
+	color: #d00;
+	font: 23px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+.sans23Red a:hover {
+	color: #d00;
+	font: 23px Georgia, "Times New Roman", Times, serif;
+	text-decoration: underline;
+}
+.sans23Red a:active {
+	color: #d00;
+	font: 23px Georgia, "Times New Roman", Times, serif;
+	text-decoration: underline;
+}
+.sans23Caps a:link {
+	color: black;
+	font: 23px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+	font-variant: small-caps;
+}
+.sans23Caps a:visited {
+	color: black;
+	font: 23px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+	font-variant: small-caps;
+}
+.sans23Caps a:hover {
+	color: #d00;
+	font: 23px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+	font-variant: small-caps;
+}
+.sans23Caps a:active {
+	color: black;
+	font: 23px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+	font-variant: small-caps;
+}
+.sans20Red a:link {
+	color: #d00;
+	font: 20px/25px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+.sans20Red a:visited {
+	color: #d00;
+	font: 20px/25px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+.sans20Red a:hover {
+	color: #d00;
+	font: 20px/25px Georgia, "Times New Roman", Times, serif;
+	text-decoration: underline;
+}
+.sans20Red a:active {
+	color: #d00;
+	font: 20px/25px Georgia, "Times New Roman", Times, serif;
+	text-decoration: underline;
+}
+.sans20blk a:link {
+	color: black;
+	font: 20px/25px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+.sans20blk a:visited {
+	color: black;
+	font: 20px/25px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+.sans20blk a:hover {
+	color: #d00;
+	font: 20px/25px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+.sans20blk a:active {
+	color: black;
+	font: 20px/25px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+.sans20Caps a:link {
+	color: black;
+	font: 20px/25px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+	font-variant: small-caps;
+}
+.sans20Caps a:visited {
+	color: black;
+	font: 20px/25px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+	font-variant: small-caps;
+}
+.sans20Caps a:hover {
+	color: #d00;
+	font: 20px/25px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+	font-variant: small-caps;
+}
+.sans20Caps a:active {
+	color: black;
+	font: 20px/25px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+	font-variant: small-caps;
+}
+.sans16Blk a:link {
+	color: black;
+	font: 16px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+.sans16Blk a:visited {
+	color: black;
+	font: 16px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+.sans16Blk a:hover {
+	color: red;
+	font: 16px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+.sans16Blk a:active {
+	color: black;
+	font: 16px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+.sans16Red a:link {
+	color: #d00;
+	font: 16px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+	font-variant: small-caps;
+}
+.sans16Red a:visited {
+	color: #d00;
+	font: 16px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+	font-variant: small-caps;
+}
+.sans16Red a:hover {
+	color: #d00;
+	font: 16px Georgia, "Times New Roman", Times, serif;
+	text-decoration: underline;
+	font-variant: small-caps;
+}
+.sans16Red a:active {
+	color: #d00;
+	font: 16px Georgia, "Times New Roman", Times, serif;
+	text-decoration: underline;
+	font-variant: small-caps;
+}
+.sans13 a:link {
+	color: black;
+	font: 13px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+.sans13 a:visited {
+	color: black;
+	font: 13px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+.sans13 a:hover {
+	color: #d00;
+	font: 13px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+.sans13 a:active {
+	color: black;
+	font: 13px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+.sans13Red a:link {
+	color: #d00;
+	font: 13px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+.sans13Red a:visited {
+	color: #d00;
+	font: 13px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+.sans13Red a:hover {
+	color: #d00;
+	font: 13px Georgia, "Times New Roman", Times, serif;
+	text-decoration: underline;
+}
+.sans13Red a:active {
+	color: #d00;
+	font: 13px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+.sans12 a:link {
+	color: black;
+	font: 12px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+.sans12 a:visited {
+	color: black;
+	font: 12px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+.sans12 a:hover {
+	color: #d00;
+	font: 12px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+.sans12 a:active {
+	color: black;
+	font: 12px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+.sans12Red a:link {
+	color: #d00;
+	font: 12px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+.sans12Red a:visited {
+	color: #d00;
+	font: 12px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+.sans12Red a:hover {
+	color: #d00;
+	font: 12px Georgia, "Times New Roman", Times, serif;
+	text-decoration: underline;
+}
+.sans12Red a:active {
+	color: #d00;
+	font: 12px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+.sans10 a:link {
+	color: black;
+	font: 10px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+.sans10 a:visited {
+	color: black;
+	font: 10px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+.sans10 a:hover {
+	color: #d00;
+	font: 10px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+.sans10 a:active {
+	color: black;
+	font: 10px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+.vertLine {
+	background: url("../images/vertLine.gif") repeat-y 8px 0;
+}
+.vertLineSol {
+	background: url("../images/vertLine_sol.gif") repeat-y 8px 0;
+}
+.vertLineNarrow {
+	background: url("../images/vertLine.gif") repeat-y 4px 0;
+}
+.hr {
+	background: url("../images/hr.gif") repeat-x 0 2px;
+}
+.hrSol {
+	background: url("../images/hr_sol.gif") repeat-x 0 2px;
+}
+a.subNavItem {
+	padding-top: 2px;
+	color: black;
+	font: small-caps 14px/18px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+a.subNavItem:link {
+	text-decoration: none;
+	font: small-caps 14px/18px Georgia, "Times New Roman", Times, serif;
+}
+a.subNavItem:active {
+	text-decoration: none;
+	font: small-caps 14px/18px Georgia, "Times New Roman", Times, serif;
+}
+a.subNavItem:visited {
+	text-decoration: none;
+	font: small-caps 14px/18px Georgia, "Times New Roman", Times, serif;
+}
+a.subNavItem:hover {
+	color: #d00;
+	text-decoration: none;
+	font: small-caps 14px/18px Georgia, "Times New Roman", Times, serif;
+}
+a.subNavItem2 {
+	color: #d00;
+	font: small-caps 14px/18px Georgia, "Times New Roman", Times, serif;
+	text-decoration: none;
+}
+a.subNavItem2:link {
+	text-decoration: none;
+	font: small-caps 14px/18px Georgia, "Times New Roman", Times, serif;
+}
+a.subNavItem2:active {
+	text-decoration: none;
+	font: small-caps 14px/18px Georgia, "Times New Roman", Times, serif;
+}
+a.subNavItem2:visited {
+	text-decoration: none;
+	font: small-caps 14px/18px Georgia, "Times New Roman", Times, serif;
+}
+a.subNavItem2:hover {
+	color: #d00;
+	text-decoration: none;
+	font: small-caps 14px/18px Georgia, "Times New Roman", Times, serif;
+}
+a.subNavItem3 {
+	color: #666;
+	font: 11px/11px Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+a.subNavItem3:link {
+	color: #666;
+	font: 11px/11px Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+a.subNavItem3:active {
+	color: #666;
+	font: 11px/11px Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+a.subNavItem3:visited {
+	color: #666;
+	font: 11px/11px Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+a.subNavItem3:hover {
+	color: #d00;
+	font: 11px/11px Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+#navlist {
+	position: relative;
+	width: 192px;
+}
+#navlist H1 {
+	color: #d00;
+	font: 30px Georgia, "Times New Roman", Times, serif;
+}
+#navlist UL {
+	list-style-type: none;
+	margin: 0;
+	margin-bottom: 35px;
+	padding: 0;
+}
+#navlist  LI {
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+	border-bottom: 1px dotted #999;
+}
+.opinion {
+	font: 12px Verdana, Arial, Helvetica, sans-serif;
+	background: #F0E68C;
+	padding: 10px 5px 10px 10px;
+}
+.life {
+	font: 12px Verdana, Arial, Helvetica, sans-serif;
+	background: #F0E68C;
+	padding: 10px 5px 10px 10px;
+}
+.features {
+	font: 12px Verdana, Arial, Helvetica, sans-serif;
+	background: #F0E68C;
+	padding: 10px 5px 10px 10px;
+}
+.arts {
+	font: italic 14px/18px Georgia, "Times New Roman", Times, serif;
+	background: #F0E68C;
+	padding: 10px 5px 10px 10px;
+}
+.artscred {
+	font: bold 14px/18px Georgia, "Times New Roman", Times, serif;
+	background: #F0E68C;
+}
+.box {
+	font: italic 14px/18px Georgia, "Times New Roman", Times, serif;
+	padding-left: 10px;
+	padding-right: 5px;
+	padding-bottom: 10px;
+	background: #d7C582;
+}
+.boxcred {
+	font: 14px/18px Georgia, "Times New Roman", Times, serif;
+}
+.smallcaps {
+	font-variant: small-caps;
+}
+.frontimage {
+	border: 1px solid #000;
+	margin: 0;
+	padding: 0;
+}
+.menuborder {
+	border: 12px solid  #d00;
+	margin: 0;
+	padding: 0;
+}
+.health {
+	background: #e4c36b;
+}
+.aerobox {
+	height: 400px;
+	width: 236px;
+	background: #f9f;
+}
+.aerotext {
+	font: 19px Verdana, Arial, Helvetica, sans-serif;
+	color: white;
+	overflow: hidden;
+	padding: 5px 20px 10px 10px;
+}
+.pollbox {
+	font: 12px/16px  Verdana, Arial, Helvetica, sans-serif;
+	margin-top: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	display: block;
+	background: #d00;
+}
+.polltext {
+	color: white;
+	font: 12px/16px  Verdana, Arial, Helvetica, sans-serif;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	text-decoration: none;
+}
+.ver12name {
+	font: bold 12px/16px Verdana, Arial, Helvetica, sans-serif;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 5px;
+	padding-bottom: 0;
+	vertical-align: top;
+}
+.ver12atoz {
+	font: 12px/16px  Verdana, Arial, Helvetica, sans-serif;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 5px;
+	padding-bottom: 0;
+	vertical-align: top;
+}
+.cellatoz {
+	color: white;
+	font: bold 40px Verdana, Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-align: right;
+	background: #d00;
+	border-spacing: 0;
+	margin: 0;
+	vertical-align: top;
+	padding-right: 10px;
+}
+.aboutus {
+	color: white;
+	font: 12px Verdana, Arial, Helvetica, sans-serif;
+	vertical-align: top;
+	padding: 10px 20px;
+	background: #d00;
+}
+#atoz {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+#atoz h1 {
+	text-align: right;
+	display: block;
+	padding: 0 20px 0 0;
+	margin: 0;
+	font: 30px Verdana, Arial, Helvetica, sans-serif;
+}
+a#atoz:link {
+	color: black;
+	text-decoration: none;
+	font: 30px Verdana, Arial, Helvetica, sans-serif;
+}
+#atoz a:visited {
+	color: black;
+	text-decoration: none;
+}
+#atoz a:hover {
+	color: red;
+	text-decoration: none;
+}
+#atoz a:active {
+	color: black;
+	text-decoration: none;
+}
+.bigpic {
+	float: left;
+	border-width: 0;
+	margin-right: 12px;
+	height: 400px;
+}
+.bigpicright {
+	float: right;
+	border-width: 0;
+	margin-left: 12px;
+	height: 400px;
+}
+.bpbackright {
+	width: 752px;
+	height: 400px;
+	background: black;
+	padding-left: 10px;
+}
+.bptext {
+	color: white;
+	font: 12px/16px Verdana, Arial, Helvetica, sans-serif;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	text-align: left;
+	vertical-align: bottom;
+}
+.bptext a {
+	color: #c00;
+	text-decoration: none;
+}
+.bptext a:link {
+	color: #c00;
+	text-decoration: none;
+}
+.bptext a:visited {
+	color: #c00;
+	text-decoration: none;
+}
+.bptext a:hover {
+	color: #c00;
+	text-decoration: underline;
+}
+.bptext a:active {
+	color: #c00;
+	text-decoration: none;
+}
+.bpback {
+	width: 752px;
+	height: 400px;
+	background: black;
+	padding-right: 10px;
+}
+#email {
+	height: 400px;
+	width: 900px;
+	background: #d00;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	padding-left: 20px;
+}
+#email h1 {
+	color: #fff200;
+	font: 60px  Verdana, Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	padding-top: 10px;
+}
+#email h2 {
+	color: white;
+	font: 30px  Verdana, Arial, Helvetica, sans-serif;
+	padding-bottom: 10px;
+}
+.screen {
+	position: relative;
+	float: right;
+	top: -200px;
+	right: 40px;
+}
+.condits {
+	font-size: 20px;
+	color: white;
+}
+.fashpix {
+	padding-left: 7px;
+}
+.dropcap {
+	float: left;
+	padding-top: 0;
+	padding-right: 2px;
+	font: 60px/45px Georgia, "Times New Roman", Times, serif;
+}
+.dropcaparts {
+	float: left;
+	padding-top: 0;
+	padding-right: 1px;
+	font: 55px/45px Arial, Helvetica, sans-serif;
+}
+.jobhead {
+	color: #fff;
+	font: 24px/28px Verdana, Arial, Helvetica, sans-serif;
+}
+.jobtitle {
+	color: #fff;
+	font: bold 14px/20px Verdana, Arial, Helvetica, sans-serif;
+}
+.jobcopy {
+	color: #fff;
+	font: 12px/20px Verdana, Arial, Helvetica, sans-serif;
+}
+.auback {
+	width: 990px;
+	height: 375px;
+	color: white;
+	font: 14px/18px Verdana, Arial, Helvetica, sans-serif;
+	background: #d00;
+	padding: 10px;
+}
+.lhcopy {
+	width: 480px;
+	height: 375px;
+	float: left;
+	padding-right: 20px;
+}
+.ybullet {
+	color: #fff200;
+	font: 14px/16px Wingdings;
+}
+.auhead {
+	color: white;
+	font: 20px/24px Verdana, Arial, Helvetica, sans-serif;
+}
+#arthead {
+	color: black;
+}
+#arthead h1 {
+	newfp.css (line 666)
+	color: black;
+	font-size-adjust: none;
+	font-stretch: normal;
+	margin: 0;
+	padding-bottom: 3px;
+	font: normal normal normal 35px/40px Arial, Helvetica, sans-serif;
+}
+#artintro {
+	color: black;
+}
+#artintro h2 {
+	font-size-adjust: none;
+	font-stretch: normal;
+	font: normal normal normal 23px/24px Arial, Helvetica, sans-serif;
+}
+#artintroX h2 {
+	font: 18px Arial, Helvetica, sans-serif;
+}
+#artintro a:link {
+	color: black;
+	font: 23px Arial, Helvetica, sans-serif;
+	font-variant: small-caps;
+	text-decoration: none;
+}
+#artintro a:visited {
+	color: black;
+	font-variant: small-caps;
+	text-decoration: none;
+}
+#artintro a:hover {
+	color: black;
+	font-variant: small-caps;
+	text-decoration: none;
+}
+#artintro a:active {
+	color: black;
+	font-variant: small-caps;
+	text-decoration: none;
+}
+#artsfirst {
+	color: black;
+}
+#artsfirst h2 {
+	font: 19px Arial, Helvetica, sans-serif;
+}
+#artsfirst a:link {
+	color: black;
+	font: bold 19px Arial, Helvetica, sans-serif;
+	font-variant: small-caps;
+	text-decoration: none;
+}
+#artsfirst a:visited {
+	color: black;
+	font: bold 19px Arial, Helvetica, sans-serif;
+	font-variant: small-caps;
+	text-decoration: none;
+}
+#artsfirst a:hover {
+	color: black;
+	font: bold 19px Arial, Helvetica, sans-serif;
+	font-variant: small-caps;
+	text-decoration: none;
+}
+#artsfirst a:active {
+	color: black;
+	font: bold 19px Arial, Helvetica, sans-serif;
+	font-variant: small-caps;
+	text-decoration: none;
+}

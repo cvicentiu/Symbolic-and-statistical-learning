@@ -1,0 +1,581 @@
+@import "top_nav.css";
+/*The above import command imports styles for global top nav, they can be found in www.lonelyplanet.com/css */
+
+body {font-size:70%;margin-left: 0;margin-top: 0;margin-right: 0;margin-bottom: 0;background-color:#FFF;background: #C5C5C5 url(/rcl/includes/images/main_bg.gif);}
+
+/* SUB NAV */
+
+.navtext1 {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;font-size: 11px;color: #043498;line-height: 11px;font-weight: bold;text-transform: uppercase;background-color: #C2D6EB;}
+
+.navtext1 a, .navtext1 a:visited {line-height: 11px;text-decoration: none;color: #043498;}
+
+.navtext1 a:hover {color: #999999;line-height: 11px;text-decoration: none;background-color: #C2D6EB;}
+
+.navtext2 {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;font-size: 11px;color: #043498;line-height: 10px;font-weight: bold;text-transform: capitalize;background-color: #FFFFFF;}
+
+.navtext2 a, .navtext2 a:visited {line-height: 10px;text-decoration: none;color: #043498;}
+
+.navtext2 a:hover  {color: #999999;line-height: 10px;text-decoration: none;}
+
+.navtext3 {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;font-size: 11px;color: #043498;line-height: 11px;font-weight: normal;text-transform: capitalize;background-color: #FFFFFF;}
+
+.navtext3 a, .navtext3 a:visited {line-height: 11px;text-decoration: none;color: #043498;}
+
+.navtext3 a:hover {color: #999999;line-height: 11px;text-decoration: none;}
+
+.navactive3 {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;font-size: 11px;color: #043498;line-height: 11px;font-weight: normal;text-transform: capitalize;background-color: #DAECFE;}
+
+.navactive3 a, .navactive3 a:visited {color: #043498;line-height: 11px;text-decoration: none;background-color: #DAECFE;}
+
+.navactive3 a:hover {color: #999999;line-height: 11px;text-decoration: none;background-color: #DAECFE;}
+
+.navbackground {background-color: #F7F7F7;}
+
+
+ul {margin: 15px;padding: 0;list-style-type: circle;}
+	
+	
+address { font-family:Arial, Helvetica, sans-serif; font-size:1em; padding-left:18px; font-style:normal; line-height: 1.55em;}
+
+	
+	
+/* Search Link */
+
+a.search {text-decoration: none;font-family: Verdana, Arial, Helvetica, sans-serif;font-weight: bold;font-size: 1em;line-height: normal;color: #0066CC;text-align: left;}
+
+a.search:hover {text-decoration: underline;line-height: normal;}
+
+/* LHS Primary Nav */
+	
+	
+#sideMenuList{background:#FFF;padding: 0;margin: 0;}
+
+#sideMenuList li
+{list-style: none;margin: 0;display: block;width: 135px;background-image: url(http://www.lonelyplanet.com/rcl/includes/modules/images/bg_horiz2.gif);background-repeat:repeat-x;padding: 7px 7px 6px 16px;}
+
+#sideMenuList a{text-decoration: none;font-family: Arial, Helvetica, sans-serif;font-weight: bold;font-size: 1em;font-style: normal;line-height: normal;color: #254FA6;text-align: left;vertical-align: middle;height: auto;display: block;width: 135px;cursor: hand;margin: 0;background-color: #FFF;}
+
+#sideMenuList a:hover{	color: #999;}
+
+#sideMenuListGen{background:#F5F5F5;padding: 0;margin: 0;}
+
+#sideMenuListGen li
+{list-style: none;margin: 0;display: block;width: 135px;background-image: url(http://www.lonelyplanet.com/rcl/includes/modules/images/bg_horiz2.gif);background-repeat:repeat-x;padding: 7px 7px 6px 16px;}
+
+#sideMenuListGen a{text-decoration: none;font-family: Arial, Helvetica, sans-serif;font-weight: bold;font-size: 1em;font-style: normal;line-height: normal;color: #666;text-align: left;vertical-align: middle;height: auto;display: block;width: 135px;cursor: hand;margin: 0;background-color: #F5F5F5;
+}
+
+#sideMenuListGen a:hover{	color: #999;}
+
+#sideMenuBottom{background:#E7E7E7;padding: 0;margin: 0;}
+
+#sideMenuBottom li{list-style: none;margin: 0;background-image: url(http://www.lonelyplanet.com/rcl/includes/modules/images/bg_horiz2.gif);background-repeat:repeat-x;}
+
+
+/* BODY */
+
+p, li {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;color: #333333;line-height: 1.55em;}
+
+p.intro {font-family: Tahoma, Arial, Helvetica, sans-serif;font-size: 1.3em;color: #666666;line-height: 1.3em;font-weight: normal;text-transform: none;}
+
+a {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 1em; color: #0066CC; text-decoration: none;	}
+
+a:hover { text-decoration: underline;	}
+
+a:visited {color: #6C4899;}
+
+.bodyhead {font-family: Arial, Helvetica, sans-serif;font-size: 1em;color: #000000;line-height: 1.55em;font-weight: bold;text-transform: uppercase;}
+
+.bodyhead a, .bodyhead a:visited {color: #333333;}
+
+.bodyhead a:hover {color: #999999;text-decoration: none;}
+
+
+
+a#h1_link {font-family: Tahoma, Arial, Helvetica, sans-serif;font-size: 1em;color: #999999;line-height: 1.55em;font-weight: normal;text-decoration: none;}
+
+a#h1_link:hover {color: #999999;line-height: 1.55em;font-weight: normal;}
+
+h1 { font-weight:normal; font-family: Tahoma, Arial, Helvetica, sans-serif;font-size: 1.7em;color: #999999;line-height: 1.55em;	}
+
+h2 {font-family: Tahoma, Arial, Helvetica, sans-serif;font-size: 1.2em;color: #333333;line-height: 1.55em;}
+
+h3 {font-family: Tahoma, Arial, Helvetica, sans-serif;font-size: 1.3em;color: #999999;line-height: 1.55em;}
+
+h1.normal {font-weight: normal;text-transform: none;}
+
+h2.normal {text-transform: none;}
+
+h3.normal { }
+
+.headingModule {font-family: Tahoma, Arial, Helvetica, sans-serif;font-size: 1.2em;color: #999999;font-weight: bold;/*text-transform: capitalize; - removed  this class*/}
+
+.bodymodule {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;font-size: 1em;color: #333333;line-height: 1.55em;text-decoration: none; }
+
+.bodymoduleBL { clear: both; background-color:#F0F9FF; border:1px solid #ADDDFF; padding:10px; margin-bottom: 10px; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;font-size: 1em;color: #333333;line-height: 1.55em;text-decoration: none; }
+.bodymoduleBL .big_blue_text {font-family: Tahoma,Arial,sans-serif;font-size: 1.3em;font-weight:bold;color: #0066CC;}
+.bodymoduleBL img { border: 1px solid #666666; float: left; margin-right:10px; margin-bottom:3px; } 
+.bodymoduleBL img.right { border: 1px solid #666666; float: right; margin-left:10px; margin-bottom:3px; } 
+.bodymodule a:hover {color: #0066CC;text-decoration: underline;	}
+
+.bodymodule a:visited {font-size: 1em;color: #6C4899;}
+
+strong {
+	/*font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	color: #333333;
+	line-height: 1.55em;
+	font-weight: bold;*/
+}
+
+
+em {
+	/*font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	color: #333333;
+	line-height: 1.55em;
+	font-weight: normal;*/
+}
+
+.runningHead {font-family: Tahoma, Arial, Helvetica, sans-serif;font-size: 1em;color: #666666;line-height: 1.55em;font-style: normal;font-weight: bold;text-transform: uppercase;float:left;margin:0 5px 0 0;}
+
+.alert {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;font-size: 1em;color: #CC0000;line-height: 1.55em;}
+
+.alert a { text-decoration: none;	}
+
+.contentMain {width:410px; padding:15px;}
+
+.contentMain h1 {font-weight:normal; }
+
+.contentMain {width:410px; padding:15px;}
+
+.contentMainNoPadding {width:410px}
+
+.contentMargin {width:1px; padding:0}
+
+.bodytextsmall {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;font-size: 10px;color: #666666;line-height: 1.55em;}
+
+.bodytextsmall a {color: #000000;line-height: 1.55em;text-decoration: none;}
+
+.bodytextsmall a:hover {color: #000000;}
+
+.feature { background-color: #F7F3F0;}
+
+.feature_mod { background-color: #F5FCF5;margin:10px 5px; padding:5px 10px 15px 10px; width:410px;font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;font-size: 1em;color: #333;line-height: 1.55em;}
+
+.featurebox { background-color: #F5FCF5;border:1px dashed #666;padding:10px;float: right; position: relative; top:5px ;margin-left:10px; margin-bottom:10px; display:block;}
+
+.feature_block {  background-color: #F7F3F0; padding:10px;  border-top: 1px solid #f5f5f5;  border-bottom: 1px solid #f5f5f5; }
+
+.feature_block2 {  background-color: #F7F3F0; padding:15px;  border-top: 1px solid #C5C5C5;  border-bottom: 1px solid #C5C5C5;  font-family: Verdana, Arial, Helvetica, sans-serif;  font-size: 10px;  color: #666;  }
+
+
+
+
+/* BOOKING NAV */
+
+
+a.bookingDull { display: block; width: auto; height: 100px; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 1em; text-decoration: none;	 color:#6385C1;   line-height: 1.2em; }
+
+a.bookingDull:hover { line-height: 1.2em; text-decoration: none;	 color:#011C55; }
+
+a.bookingDull:visited { line-height: 1.2em; text-decoration: none;	 color:#6385C1; }
+
+a.bookingDull:visited:hover { line-height: 1.2em; text-decoration: none;	 color:#011C55; }
+
+
+
+a.booking { font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 1em; text-decoration: none;	 color:#043498;   line-height: 1.2em; display: block; width: auto; }
+
+a.booking:hover { line-height: 1.2em; text-decoration: none;	 color:#011C55; }
+
+a.booking:visited { line-height: 1.2em; color: #043498; }
+
+a.booking:visited:hover { line-height: 1.2em; color: #011C55; }
+
+
+
+/* PODS/MODS */
+
+
+
+.sidetext { font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 1em; color: #666666; line-height: 1.3em; }
+
+.sidetext a { font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 1em; color: #0066CC; line-height: 1.3em; text-decoration: none; }
+
+ .sidetext a:hover { color: #0066CC; text-decoration: underline; }
+
+
+a.sidetext#thorntree  { font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 1em; color: #0066CC; text-decoration: none; display: block; width: 130px; }
+
+.sidetextTThead { font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 1em; color: #666666; line-height: 1.3em; display: block; margin-bottom: 10px; }
+
+a.featureLink { font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 1em; color: #666; text-decoration: none; display: block; height: 115px; width: 125px; margin-top: 10px; }
+
+a.featureLink:hover { color: #666; text-decoration: none; }
+
+.goto { font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 1em; color: #0066CC; }
+
+.CellCallAction { margin-top: 25px; margin-right: 2px; }
+
+.modTTfeature { font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 1em; color: #636363; line-height: 1.3em; display: block; margin-left: 15px; margin-top: 3px; margin-bottom: 3px; }
+
+a.thorntreemod  { font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 1em; color: #0066CC; text-decoration: none; display: block; width: 350px; }
+
+a.thorntreemod:hover  { color: #0066CC; text-decoration: none; display: block; width: 350px; }
+
+a.thorntreemodgrey  { font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 1em; color: #666; text-decoration: none; display: block; width: 350px; }
+
+a.thorntreemodgrey:hover  { color: #666; text-decoration: none; display: block; width: 350px; }
+
+
+a.thorntreemod2  { font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 1em; color: #0066CC; text-decoration: none; display: block; width: 215px; }
+
+a.thorntreemod2:hover  { color: #0066CC; text-decoration: none; display: block; width: 215px; }
+
+a.thorntreemodgrey2  { font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 1em; color: #666; text-decoration: none; display: block; width: 200px; }
+
+a.thorntreemodgrey2:hover  { color: #666; text-decoration: none; display: block; width: 200px; }
+
+
+.TTWrap{ height: 17px; width: auto; border-top: 1px solid #BDD6F3; margin-top: 0; padding-top: 3px; display: block; }
+	
+.TTWrapOver{ height: 17px; width: auto; border-top: 1px solid #BDD6F3; margin-top: 0; padding-top: 3px; display: block; background-color:#E6EFF1; }
+
+	
+.TTWrapBott{ height: 1px; width: 100%; display: block; border-top: 1px solid #BDD6F3; margin-top: 0; margin-bottom: 8px; }
+ 
+.TTLink{ float: left; }
+	
+.TTReply{ float: left; display:block; width:225px; }
+
+.TTArrow{ float: right; margin:0; color: #0066CC; }
+
+.TTCell{ height: 115px; width: 125px; display: block; padding: 0 5px 0 5px; background-color: #F0F9EE; border-top: 1px solid #BDD6F3; border-bottom: 1px solid #BDD6F3; }
+	
+.TTCellOver{ height: 115px; width: 125px; display: block; padding: 0 5px 0 5px; background-color: #E9F4E6; border-top: 1px solid #BDD6F3; border-bottom: 1px solid #BDD6F3; }
+	
+
+.TTWrapMod{ height: 38px; width: auto; border-top: 1px solid #BDD6F3; margin-top: 0; padding-top: 3px; display: block; }
+	
+.TTWrapOverMod{ height: 38px; width: auto; border-top: 1px solid #BDD6F3; margin-top: 0; padding-top: 3px; display: block; background-color:#F7F7F7; }
+
+	
+.TTWrapBott2#mod{ height: 1px; width: 100%; display: block; border-top: 1px solid #BDD6F3; margin-top: 0; margin-bottom: 8px; } 
+
+.TTWrapMod2{ height: 38px; width: auto; border-top: 1px solid #BDD6F3; margin-top: 0; padding-top: 3px; padding-left: 5px; display: block; background-color:#F7F7F7; }
+	
+.TTWrapOverMod2{ height: 38px; width: auto; border-top: 1px solid #BDD6F3; margin-top: 0; padding-top: 3px; display: block; padding-left: 5px; background-color:#E6EFF1; }
+
+	
+.TTWrapBott2#mod{ height: 1px; width: 100%; display: block; border-top: 1px solid #BDD6F3; margin-top: 0; margin-bottom: 8px; }
+
+.sidehead { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 1em; color: #666;    line-height: 1.55em; font-weight: bold; text-transform: none; }
+
+.sidehead a { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 1em; color: #0066CC;     line-height: 1.55em; font-weight: bold; text-transform: none; }
+
+.sidehead a:hover { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 1em; color: #0066CC;    line-height: 1.55em; font-weight: bold; text-transform: none; }
+
+.primaryhead { /*background-color: #FFFFFF;     original*/ background-image: url('/rcl/includes/pods/images/img_bg_header.gif');
+}
+
+.primarybody { background-color: #FFFFFF; }
+
+.secondaryhead { background-image: url('/rcl/includes/pods/images/img_bg_header.gif'); } 
+
+.secondarybody { background-color: none; }
+
+.topline { background-color: #999999; }
+
+
+
+/*PODS*/
+
+/*SWAG POD*/
+#recent ul { list-style:none; margin:0;}
+#recent ul li.light {
+	background-color:#EDECEA; border-top: 2px solid #fff; border-bottom: 1px solid #C2C2C2; }
+#recent ul li.dark {
+	background-color:#E3DEDB; border-top: 2px solid #fff; border-bottom: 1px solid #C2C2C2; }
+#recent a.light {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 1em; display: block; width: 148px; padding: 0 0 0 10px;  margin:0; }
+#recent a.light:hover { background-color:#E3DEDB; text-decoration:none; }
+#recent a.dark {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 1em; display: block; width: 148px; padding-left: 10px; }
+#recent a.dark:hover { background-color:#EDECEA; text-decoration:none }
+#recent .country { color:#666666; margin:0 0 0 0; padding:0; }
+	
+
+
+
+/*END SWAG POD*/
+
+
+/* START: Styles for responsible travel pod */
+#pod_rhs_responsible_travel{width:inherit; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; padding-bottom:10px;}
+#pod_rhs_responsible_travel a.rt_pod_header{border-top:1px solid #5B8D56; border-bottom:1px solid #EFFFED; font-size: .9em; color: #FFF; font-weight: bold; padding-left: 10px; margin-bottom: 6px; display: block;  height: 17px; line-height: 1.55em; text-decoration: none; background:#7CD672;}
+#pod_rhs_responsible_travel a.rt_pod_header:visted{color: #FFF; text-decoration: none;}
+#pod_rhs_responsible_travel a.rt_pod_header:hover{text-decoration: none; background:#97C692;}
+#pod_rhs_responsible_travel p{ font-size: 1em; color: #666666; line-height: 1.35em; margin: 0 5px 7px 10px;}
+#pod_rhs_responsible_travel p a{ color:#4FC644;}
+/* END: Styles for responsible travel pod */
+
+
+a.podHeaderLink { font-family: Verdana, Arial, Helvetica, sans-serif; border-top:1px solid #837364; border-bottom:1px solid #B5A99D; font-size: .9em; color: #FFF; font-weight: bold; padding-left: 10px; margin-bottom: 6px; display: block; width: 148px; height: 17px; line-height: 1.55em; text-decoration: none;	 background:#A89889; }
+
+a.podHeaderLink:hover { text-decoration: none; background:#C4B1A0;	 }
+
+a.podHeaderLink:visited { color: #FFF; text-decoration: none; }
+
+
+a.podHeaderLink:visited:hover { text-decoration: none; font-size: .9em; }
+
+
+.podHeader { font-family: Verdana, Arial, Helvetica, sans-serif; border-top:1px solid #837364; border-bottom:1px solid #E5E1DF; font-size: .9em; color: #E2DEDC; font-weight: bold; padding-left: 10px; margin-bottom: 6px; padding-top: 3px; display: block; width: 148px; height: 15px; background:#A89889; }
+
+.podHeaderSwag { font-family: Verdana, Arial, Helvetica, sans-serif; border-top:1px solid #837364; border-bottom:1px solid #E5E1DF; font-size: .9em; color: #E2DEDC; font-weight: bold; padding-left: 10px; margin-bottom: 0; padding-top: 3px; display: block; width: 148px; height: 15px; background:#A89889; }
+
+.podHeaderTwoLines { font-family: Verdana, Arial, Helvetica, sans-serif; border-top:1px solid #837364; border-bottom:1px solid #E5E1DF; font-size: .9em; color: #E2DEDC; font-weight: bold; padding-left: 10px; margin-bottom: 6px; padding-top: 3px; display: block; width: 148px; height: 30px; background:#A89889; }
+
+.podTopLine{ width: inherit; } 
+
+.podHeader#image { margin-bottom: 0; height: 16px; }
+
+.podBodyText { font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 1em; color: #666666; line-height: 1.35em; margin: 0 5px 7px 10px; }
+
+.podBodyText#strong { font-weight:600; margin: 0 5px 2px 10px; }
+
+.podBodyText a { line-height: 1.35em; font-size: 1em; }
+
+.podBodyText a:hover { line-height: 1.35em; font-size: 1em; }
+
+
+.podBodyText a:visited { line-height: 1.35em; font-size: 1em; }
+
+.podBodyText2 { font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 1em; color: #666666; line-height: 1.35em; margin: 0 5px 0 10px; }
+
+.podBodyText2 a { line-height: 1.35em; font-size: 1em; }
+
+.podBodyText2 a:hover { line-height: 1.35em; font-size: 1em; }
+
+.podBodyText2 a:visited { line-height: 1.35em; font-size: 1em; }
+.podLink { margin: 0 5px 15px 10px; }
+.podLink a { line-height: 1.35em; }
+.podLink a:hover { line-height: 1.35em; }
+.podLink a:visited { line-height: 1.35em; }
+
+.podListBlock { margin: 0 5px 10px 10px; }
+.podListBlock ul { margin: 0; padding: 0; list-style-type:none; }
+.podListBlock li { background:url(http://www.lonelyplanet.com.au/rcl/includes/pods/images/img_pod_sq_bullet.gif) top left no-repeat; background-position:0 .8em; padding-left: 7px; list-style-type:none;  }
+
+.podLink2 { margin: 0 5px 3px 10px; }
+.podLink2 a { line-height: 1.35em; }
+.podLink2 a:hover { line-height: 1.35em; }
+.podLink2 a:visited { line-height: 1.35em; }
+
+.podLink3 { margin: 0 5px 10px 10px; }
+.podLink3 a { line-height: 1.35em; text-decoration: underline;}
+
+.podLink3 a:hover {
+	line-height: 1.35em;text-decoration: underline;}
+
+.podLink3 a:visited {line-height: 1.35em;text-decoration: underline;}
+
+.podLinkClear {margin: 0 5px 15px 10px;clear: both;}
+
+.shopPod {background-image:url(http://www.lonelyplanet.com/rcl/includes/pods/images/img_pod_shop.jpg); background-position:bottom; background-repeat:no-repeat;padding-bottom: 25px;}
+
+
+
+.TTPodContent {padding-left: 10px;display: block;width: 130px;}
+
+
+.podImage {margin: 3px 7px 10px 3px;padding-left: 5px;float: left;}
+
+.podImage2 {margin: 0 7px 10px 3px;padding-left: 5px;float: left;}
+
+ul.podList {list-style-type: none;padding: 0;margin: 0;}
+
+
+li.arrowBullet {background-image:url(http://www.lonelyplanet.com/rcl/includes/pods/images/img_pod_arrow.gif);background-repeat: no-repeat;background-position: 0 top;padding-left: 20px;color: #666666;}
+
+
+.travelWrap {display: block;height: 65px;}
+
+.podWrap {display: block;width: 158px;height: auto;background-color:#F7F7F7;padding-bottom: 5px;}
+
+input#podInput {margin-top:2px;font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;font-size: 10px;color: #666666;}
+
+form#podForm {margin: 0 0 15px 0;}
+
+
+/* FORM ELEMENTS */
+
+.formheading {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;font-size: 10px;color: #666666;font-weight: bold;text-transform: uppercase;}
+
+.formtext {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;font-size: 10px;color: #666666;}
+
+.formtext a {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;font-size: 10px;color: #0066CC;text-decoration: none;}
+
+.formtext a:hover {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;font-size: 10px;color: #0066CC;text-decoration: underline;	}
+
+.formhighlight {background-color: #F0F9EE;}
+
+.forminvalid {background-color: #FBDBDC;}
+
+.formbackground {background-color: #F5F5F5;}
+
+.formbackground2 {background-color: #E7E7E7;}
+
+
+/* FOOTER OLD */
+
+.footertext {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;font-size: 10px;color: #666666;line-height: 13px;}
+
+.footertext a, .footertext a:visited {color: #000000;line-height: 13px;text-decoration: none;}
+
+.footertext a:hover {color: #666666;line-height: 13px;}
+
+.footerlinks {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;font-size: 10px;color: #FFFFFF;line-height: 13px;}
+
+.footerlinks a, .footerlinks a:visited {color: #FFFFFF;line-height: 13px;text-decoration: none;}
+
+.footerlinks a:hover {color: #CCCCCC;line-height: 13px;}
+
+/* FOOTER NEW */
+
+#footer { clear: both; padding: 0; margin:0; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9px;}
+#footer a, #footer a:visited { color:#3A9FE9; text-decoration:none; padding: 5px 4px 5px 8px; }
+#footer a:hover { color: black; background:white; }
+#footer .f_line_1 { color: #81807C; background: white; border-top: 1px solid #c5c5c5; margin:0; padding: 5px 8px 5px 0; }
+#footer .f_line_1 a:hover { background: #f3f3f3;}
+#footer .f_line_2 { color: #81807C; background: #f3f3f3; border-top: 1px solid #c5c5c5; margin:0; padding: 5px 8px 5px 0; }
+
+#footer .f_line_2 a.responsibletravel{ color:#0BCF14; background: #f3f3f3; margin:0; padding: 5px 8px 5px 10px;}
+#footer .f_line_2 a:hover.responsibletravel{ color: #06730B; background: #fff;}
+
+#footer .f_line_3 { color: #81807C; background: white; border-top: 1px solid #c5c5c5; margin:0; padding: 5px 8px 5px 0; }
+#footer .f_line_3 a:hover { background: #f3f3f3;}
+#footer .disc { color: #81807C; background: #EBE9E5; border-top: 1px solid #c5c5c5; margin:0; padding: 5px 8px 8px 8px; }
+
+
+ 
+
+/* IMAGES & PULL QUOTES */
+.imagecaption {border: 1px solid #666666; }
+
+.imagepad {float: left; position: relative; top:5px ;margin-right:15px; margin-bottom:10px; display:block;}
+
+.imagepadright {float: right; position: relative; top:5px ;margin-left:15px; margin-bottom:10px; display:block;}
+
+.image {border: 1px solid #666666;float: left; position: relative; top:5px ;margin-right:15px; margin-bottom:10px; display:block;}
+
+.imagenopad {border: 1px solid #666666;}
+
+.imageright {border: 1px solid #666666;float: right; position: relative; top:5px ;margin-left:15px; margin-bottom:10px; display:block;
+}
+
+.pullquote {font-family: Georgia, "Times New Roman", Times, serif;font-size: 1.3em;color: #666666;line-height: 1.3em;font-weight: bold;text-transform: none;float: left; position: relative; top: 5px; margin-right:15px; margin-bottom:10px; display:block;}
+
+.pullquoteright {font-family: Georgia, "Times New Roman", Times, serif;font-size: 1.3em;color: #666666;line-height: 1.3em;font-weight: bold;text-transform: none;float: right; position: relative; top: 5px; margin-left:15px; margin-bottom:10px; display:block;}
+
+.pullquotetext {font-family: Georgia, "Times New Roman", Times, serif;font-size: 1em;color: #666666;line-height: 1.3em;font-weight: bold;text-transform: none;float: right; position: relative; top: 5px; display:block;padding-top: 4px;padding-bottom: 7px;margin-bottom: 7px;	}
+
+
+
+/* BLUELIST */
+
+
+.listAmount {color: #10A8EA; font-family: Verdana, Arial, sans-serif; font-size: 1em}
+
+.listType {color: #707070; font-family: Verdana, Arial, sans-serif; font-size: .85em}
+
+.big_blue_text{font-family: Tahoma,Arial,sans-serif;font-size: 1.7em;font-weight:bold;color: #0066CC;}
+
+.big_blue_text a{font-family: Tahoma,Arial,sans-serif;font-size: 1em;font-weight:bold;color: #0066CC;}
+
+.big_blue_text a:hover{color: #0066CC;text-decoration:underline;}
+
+.big_blue_text a:visited{color: #0066CC;}
+
+.med_blue_text{color: #3A9FE9; font-family: Verdana, Arial, sans-serif; font-weight:bold;font-size: 1.1em}
+
+.list {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;font-size: 1em;color: #0066CC;line-height: 1.55em;background-color:#F0F9FF;margin-bottom: 1px;border:1px solid #A9DDFF;width:408px;}
+
+
+.listDark {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;font-size: 1em;color: #0066CC;line-height: 1.55em;background-color:#E7F6FF;margin-bottom: 1px;border:1px solid #A9DDFF;width:408px;}
+
+
+.listOver {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;font-size: 1em;color: #0066CC;line-height: 1.55em;background-color:#fff;margin-bottom: 1px;border:1px solid #CDF347;width:408px;cursor: pointer;cursor: hand;}
+
+
+
+/*Home page blulist module*/
+#bluelist_list{width:250px;margin-top: 5px;margin-left: 0;padding-left:0;list-style: none;}
+
+#bluelist_list li{padding-left: 15px;background-image: url(/rcl/includes/modules/images/lp_bluelist_star.gif);background-repeat: no-repeat;background-position: 0 .5em;}
+
+#bluelist_list2{margin-left: 0;padding-left:0;list-style: none;border: 1px solid #DCF0FF; height: 30px; width:568px; background:#EEF7FC;}
+#bluelist_list2 ul{margin: 7px 0 0 5px;}
+#bluelist_list2 li{background-image: url(/rcl/includes/modules/images/lp_bluelist_star.gif);background-repeat: no-repeat;display:inline; background-position: .5em; padding-left: 25px;}
+
+
+#bluelist_list3{margin: 7px 0 0 0; padding-left:0;list-style: none;border: 1px solid #DCF0FF; height: 30px; background:#EEF7FC;}
+#bluelist_list3 ul{margin: 7px 0 0 5px;}
+#bluelist_list3 li{background-image: url(/rcl/includes/modules/images/lp_bluelist_star.gif);background-repeat: no-repeat;display:inline; background-position: .5em; padding-left: 25px;}
+
+/* CSS For Secondary Nav on LP.com */
+
+#secondary_menu { font-family: Verdana, Arial, Helvetica, sans-serif; margin:10px 0 0 3px; padding:0; font-weight:bold;  }
+#secondary_menu ul {  margin: 0;  padding:0;  list-style-type:none;  font-size:11px; }
+#secondary_menu li { margin: 0; color: #666; }
+#secondary_menu a { border:1px solid #e7e7e7; display: block; padding: 0 5px; width: 140px; color: #666; text-decoration: none; }
+#secondary_menu a:hover { border:1px solid #ccc; background: #3A9FE9; color: #FFF; }
+#secondary_menu ul ul li { margin: 1px 0 0 0; }
+#secondary_menu ul ul li a { font-weight:normal; padding-left:10px; width: 135px; line-height:1.3em; }
+#secondary_menu ul ul { display:none;  }
+#secondary_menu .smaller { font: 11px Verdana, Arial, Helvetica, sans-serif; margin: 0px; padding-top:3px; color: #666; font-weight:normal;}
+
+#secondary_menu .head a { background: #A89889; color: white; text-transform:uppercase; }
+#secondary_menu .head a:hover { background: #3A9FE9; color: #FFF; }
+
+#secondary_menu .navactive a { background-color: #C3B5A8; color: white; }
+#secondary_menu .navactive a:hover { background: #3A9FE9; color: #FFF; }
+
+#secondary_menu .navactiveSub { display:block; }
+#secondary_menu .navactiveSub a { color: #666;  display:block; background:#e7e7e7; }
+#secondary_menu .navactiveSub a:hover { background: #3A9FE9; color: #FFF; }
+
+#secondary_menu .navactiveSubHighlight a { color: #444; background-color:#CEC7C4; }
+
+#secondary_menu ul li a.alt { border-bottom: 1px solid #d0d0d0; padding_bottom: 3px; }
+
+#secondary_menu ul li span.non { padding: 0 5px; }
+
+#secondary_menu a.themeHeads  { }
+/*//////////////////////////////////////////*/
+/* CSS For Secondary Nav on Bluelist winners */
+#bl_menu { background:white; font-family: Verdana, Arial, Helvetica, sans-serif; margin:10px 0 0 0; padding:0; }
+#bl_menu ul {  margin: 0;  padding:0;  list-style-type:none;  font-size:11px; }
+#bl_menu li { margin: 0; color: #043498; }
+#bl_menu a { border:1px solid #e7e7e7; display: block; padding: 3px 5px; color: #043498; text-decoration: none; }
+#bl_menu a:hover { color: #666; }
+#bl_menu ul ul li { margin: 0;  }
+#bl_menu ul ul li a { font-weight:normal; padding: 3px 5px 2px 23px; }
+#bl_menu ul ul {  }
+#bl_menu .smaller { font: 11px Verdana, Arial, Helvetica, sans-serif; margin: 0px; padding-top:3px; color: #666; font-weight:normal;}
+
+#bl_menu .head a { background: #C2D6EB; color: #043498; text-transform:uppercase; font-weight:bold;  }
+#bl_menu .head a:hover { color: #666; }
+
+#bl_menu .navactive a { background-color: #fff; }
+#bl_menu .navactive a:hover { color: #999; }
+
+#bl_menu .navactiveSub { display:block; }
+#bl_menu .navactiveSub a { color: #043498;  display:block; background:#fff url(http://www.lonelyplanet.com/bluelist/images/small_blue_star.gif) top left no-repeat; background-position: 5px 6px; }
+#bl_menu .navactiveSub a:hover { color: #999; }
+
+#bl_menu .navactiveSubHighlight a { font-weight:bold; }
+
+
+
+
+.headertagline {color: #666666;font-weight:bold;}

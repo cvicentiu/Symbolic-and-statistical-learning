@@ -1,0 +1,129 @@
+<!--
+function xGetElementById(e) {
+    if (typeof(e) != 'string') return e;
+    if (document.getElementById) e = document.getElementById(e);
+    else if (document.all) e = document.all[e];
+    else if (document.layers) e = xLayer(e);
+    else e = null;
+    return e;
+}
+        
+function openNewWindow(url, name, width, height, scrollbars) {
+	var left = (screen.width - width) / 2;
+	var top = (screen.height - height) / 2;
+	return window.open(url, name, 'width='+width+',height='+height+',menubar=no,scrollbars='+scrollbars+',toolbar=no,location=no,directories=no,resizable=no,left='+left+',top='+top);
+}
+
+// setStyleById: given an element id, style property and 
+// value, apply the style.
+// args:
+//  i - element id
+//  p - property
+//  v - value
+//
+function setStyleById(i, p, v) {
+    var n = xGetElementById(i);
+    n.style[p] = v;
+}
+
+function getStyleById(i, p) {
+    var n = xGetElementById(i);
+    var s = eval("n.style." + p);
+
+    // try inline
+    if((s != "") && (s != null)) {
+            return s;
+    }
+
+    // try currentStyle
+    if(n.currentStyle) {
+        var s = eval("n.currentStyle." + p);
+        if((s != "") && (s != null)) {
+                return s;
+        }
+    }
+    
+    return null;
+}
+
+var gameWin = null;
+function launchGame(game, room, type, width, height, ccode, type) {
+
+	var url = '/games/play.php?game=' + game;
+	if (room) {
+	    if (room <= 6) url += '&tab=' + room;
+	    else url += '&room=' + room;
+	}
+	if (ccode) url += '&ccode=' + ccode;
+	if (type) url += '&type=1';
+
+	if (type == 'clo') {
+		nwidth = 400;
+		nheight = 150;
+	}
+
+	else {nwidth = 780;
+		nheight = 583;
+	
+	}
+	gameWin = openNewWindow(url, 'swe', nwidth, nheight, false);
+	gameWin.focus();
+}
+
+function getElement(id) {
+	if (document.getElementById) {
+		return document.getElementById(id);
+	}
+	if (document.layers && document.layers[id]) {
+		return document.layers[id]
+	}
+	if (document.all && document.all[id]) {
+		return document.all[id]
+	}
+}
+
+function rateGame(game) {
+	openNewWindow('/games/rate.php?game=' + game, 'rate', '300', '250', 'no');
+}
+
+function gameInstructions(game) {
+	openNewWindow('/games/instructions.php?game=' + game, 'rate', '600', '400', 'yes');
+}
+
+function viewImage(url, width, height) {
+    if (!width) width = 680;
+    if (!height) height = 540;
+    
+	imgWin = openNewWindow('/games/screenshot.php?i=' + url, 'image', width, height, "no");
+	imgWin.focus();
+}
+
+function xPageY(e) {
+    if (!(e=xGetElementById(e))) return 0;
+    if (xDef(e.pageY)) return e.pageY;
+    var y = 0;
+    while (e) {
+        if (xDef(e.offsetTop)) y += e.offsetTop;
+        e = xDef(e.offsetParent) ? e.offsetParent : null;
+    }
+    return y;
+}
+
+function xPageX(e) {
+    if (!(e=xGetElementById(e))) return 0;
+    if (xDef(e.pageX)) return e.pageX;
+    var x = 0;
+    while (e) {
+    if (xDef(e.offsetLeft)) x += e.offsetLeft;
+    e = xDef(e.offsetParent) ? e.offsetParent : null;
+    }
+    return x;
+}
+
+function xDef() {
+    for(var i=0; i<arguments.length; ++i){if(typeof(arguments[i])=='undefined') return false;}
+    return true;
+}
+
+
+//-->

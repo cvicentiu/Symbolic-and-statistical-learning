@@ -1,0 +1,558 @@
+/*  
+Theme Name: Fabolog Theme
+Theme URI: http://fablog.ehrensteinland.com/
+Description: The Fablog Theme based loosley on the famous <a href="http://binarybonsai.com/kubrick/">Kubrick</a>.
+Version: 1.0
+Author: "Evil" Jimi Smith
+Author URI: http://www.eviljimi.com/
+*/
+body { /* not surprisingly, does the body of the entire screen; overall font size, colour and family where not controlled by other tags but does control the font used in the posts. Also controls certain element alignments  BG-color has no effect b/c it, and the BG images, are controlled by the header.php file.*/
+	font-size: 62.5%; /* Resets 1em to 10px */
+	font-family: arial, helvetica, Sans-Serif;
+	color: #F2F2F2;
+	text-align: center;
+	margin: 0;
+	padding: 0; 
+}
+ /* Start main links - is controlling bulk of the linking but the calendar and sidebar have their own definitions*/
+a 
+{
+	color: #ffcc33;
+	font-size: 12px/14px;
+	font-family: arial, helvetica, sans-serif;
+	text-decoration: none;
+	background: transparent;
+}
+a:link 
+{
+	color: #ffcc33;
+	text-decoration: none;
+	background: transparent;
+}
+a:visited 
+{
+	color: #b0b0b0;
+	text-decoration: none; 
+	background: transparent
+}
+a:hover 
+{
+	color : #000000; 
+	background-color: #BBAA72; 
+	text-decoration: none; 
+	border-top: 1px dotted #c0c0c0; 
+	border-bottom: 1px dotted #c0c0c0; 
+}
+/* End main links */
+#page { /*controls date and post title placement, plus elements in the sidebar. No effect on post or meta. Also controls width of page. BG-color has no effect.*/
+	background-color: transparent;
+	text-align: left;
+	margin: 5px auto;
+	padding: 0px;
+	width: 760px;
+}
+#header { /*controls the header placements.  BG-color has no effect.*/
+	background-color: transparent;
+	padding: 0px;
+	margin: 0px auto;
+	height: 196px;
+	width: 100%;
+}
+#headerimg { /*controls header image placement*/
+	margin: 0;
+	height: 199px;
+	width: 100%;
+	background-color: transparent;
+}
+#footer { /*controls footer placement.  BG-color has no effect.*/
+	padding: 0 0 0 1px;
+	margin: 0 auto;
+	width: 760px;
+	clear: both;
+	background-color: transparent;
+}
+#footer p {  /*controls the paragraph tag within the footer element. BG-color has no effect.*/
+	margin: 0;
+	padding: 35px 0;
+	text-align: center;
+	background-color: transparent;
+}
+#content { /*controls the font size for everything within the post ... title, post text, post meta, post links*/
+	font-size: 1.4em;
+	background-color: transparent;
+}
+
+/* Start all the WIDECOLUMN stuff*/
+
+.widecolumn .entrytext p 
+{  /*controls font size in the single page post*/
+	font-size: 1.05em;
+	background-color: transparent;
+	text-align: justify;
+}
+.widecolumn .entrytext 
+{ /*controls bg color and border of posts, along with line height and padding*/
+	line-height: 1.4em;
+	background-color: #313431;
+	border-right: dotted 1px #707070;
+	border-bottom: dotted 1px #707070;
+	border-left: dotted 1px #707070;
+	padding-left: 10px;
+	padding-right: 8px;
+	padding-top: 5px;
+	text-align: justify;
+}
+.widecolumn 
+{ /*controls things on the single page. bg-color has no effect but a border does*/
+	line-height: 1.6em;
+	background-color: transparent;
+	padding-left: 10px;
+	padding-right: 8px;
+}
+.widecolumn .postmetadata { /*controls border and bg of the widecolum postmetadata*/
+	margin: 10px 0;
+	background-color: #313431;
+	border: double 4px #000;
+	padding: 5px;
+}
+.widecolumn { /*controls border*/
+	padding: 10px 0 20px 0;
+	margin: 5px 0 0 50px;
+	width: 650px;
+	background-color: transparent;
+}
+.widecolumn .post {
+	margin: 0;
+}
+
+/* End all the WIDECOLUMN stuff*/
+
+/* Start all the NARROWCOLUMN stuff*/
+
+.narrowcolumn .entry 
+{ /*controls bg color and border of posts, along with line height and padding*/
+	line-height: 1.4em;
+	background-color: #313431;
+	border: dotted 1px #707070;
+	padding: 0 8px 0 10px; /* top, right, bottom, left*/
+	text-align: justify;
+}
+/* .narrowcolumn .entry p
+{
+	line-height: 1.4em;
+	background-color: transparent;
+	
+} */
+.narrowcolumn .postmetadata 
+{ /*controls alignment bg color and border of postmeta on the index page*/
+	text-align: center;
+	background: #313431;
+	border: #bbaa72 dashed 1px;
+	padding: 3px;
+	font-size: 0.9em;
+}
+.narrowcolumn 
+{
+	float: left;
+	padding: 0 10px 20px 0;/*  top, right, bottom, left */
+	margin: 0 .5em 0 3em; /* top, right, bottom, left */
+	width: 475px;
+}
+.narrowcolumn .postmetadata 
+{
+	padding: 4px;
+}
+
+/* End all the NARROWCOLUMN stuff*/
+.post {
+	margin: 0;
+	text-align: justify;
+}
+.alt 
+{ /*controls layout of every alternate comment post*/
+	background-color: #313431;
+	border-top: 2px solid #bbaa72;
+	border-bottom: 2px solid #bbaa72;
+}
+small 
+{
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 0.9em;
+	line-height: 1.5em;
+}
+.postdate:hover {
+	background-color: #bbaa72;
+	color: black;
+}
+h1, h3 { /*plays a part in post title look*/
+	font-family: Arial, helvetica, Sans-Serif;
+	font-weight: bold;
+}
+h1 {
+	font-size: 1.8em;
+	text-align: center;
+}
+h2
+{
+	font-family: Arial, helvetica, Sans-Serif;
+	font-weight: bold;
+	font-size: 1.6em;
+}
+h3 {
+	font-size: 1.3em;
+}
+.date { /* section controls look of the date header */
+	margin: .1em 0 0 0; /* top, right, bottom, left*/
+	padding: 2px 0 2px 10px;
+	font: bold 1.7em 'courier new', arial, helvetica, sans-serif;
+	color: #FDFDFD;
+	position: relative; /* Position is declared "relative" to gain control of stacking order (z-index). */
+	width: auto;
+	min-width: 120px;
+	background-color: #313431;
+	/*z-index: 3;  This allows the content to overlap the right menu in narrow windows in good browsers. */
+	border: 1px solid #BBAA72;
+}
+.storytitle { /*controls look of post titles*/
+	color: #000;
+	border: 6px #000000 double;
+	padding: 5px;
+	background: #bbaa72;
+	text-transform: uppercase;
+	font-size:1.3em;
+	font-family: arial, helvetica, sans-serif;
+	font-weight: bold;
+}	
+h1 {
+	padding-top: 70px;
+	margin: 0;
+}
+.description {
+	text-align: center;
+}
+h2 {
+	margin: 30px 0 0;
+}
+
+h2.pagetitle {
+	margin-top: 30px;
+	text-align: center;
+	border: 4px double #bbaa72;
+}
+h3 {
+	padding: 0;
+	margin: 30px 0 0;
+}
+.description {
+	font-size: 1.2em;
+	text-align: center;
+}
+.commentlist li, #commentform input, #commentform textarea {
+	font: 0.9em Arial, Helvetica, Sans-Serif;
+}
+.commentlist li {
+	font-weight: bold;
+}
+.commentlist cite, .commentlist cite a {
+	font-weight: bold;
+	font-style: normal;
+	font-size: 1.1em;
+}
+.commentlist p {
+	font-weight: normal;
+	line-height: 1.5em;
+	text-transform: none;
+}
+#commentform p {
+	font-family: Arial, helvetica, Sans-Serif;
+}
+.commentmetadata {
+	font-weight: normal;
+}
+small, .nocomments, .postmetadata, strike {
+	color: #F2F2F2;
+}
+code {
+	font: 1.1em fixedsys, Courier, Fixed;
+}
+acronym, abbr, span.caps {
+	font-size: 0.9em;
+	letter-spacing: .07em;
+}
+/* End Typography & Colors */
+/* Begin Structure */
+
+
+p img {
+	padding: 0;
+	max-width: 100%;
+}
+/*	Using 'class="alignright"' on an image will (who would've
+	thought?!) align the image to the right. And using 'class="centered',
+	will of course center the image. This is much better than using
+	align="center", being much more futureproof (and valid) */
+img.centered {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+img.alignright {
+	padding: 4px;
+	margin: 0 0 2px 7px;
+	display: inline;
+}
+img.alignleft {
+	padding: 4px;
+	margin: 0 7px 2px 0;
+	display: inline;
+}
+.alignright {
+	float: right;
+}
+.alignleft {
+	float: left
+}
+/* End Images */
+/* Begin Lists */
+
+.entry ol {
+	padding: 0;
+	margin: 0;
+}
+.entry ol li {
+	margin: 0;
+	padding: 0;
+}
+.postmetadata ul, .postmetadata li {
+	display: inline;
+	list-style-type: none;
+	list-style-image: none;
+}
+/* End Entry Lists */
+/* Begin Form Elements */
+.entry form { /* This is mainly for password protected posts, makes them look better. */
+	text-align:center;
+}
+select {
+	width: 130px;
+}
+#commentform input {
+	width: 170px;
+	padding: 2px;
+	margin: 5px 5px 1px 0;
+	background-color: #c0c0c0;
+}
+#commentform textarea {
+	width: auto;
+	padding: 2px;
+	background-color: #c0c0c0;
+}
+#commentform #submit {
+	margin: 0;
+	float: left;
+	background-color: #bbaa72;
+}
+.alt {
+	margin: 0;
+	padding: 10px;
+}
+.commentlist {
+	padding: 0;
+	text-align: justify;
+}
+.commentlist li {
+	margin: 1em;
+	padding: 0;
+	list-style: none;
+}
+.commentlist p {
+	margin: 10px 5px 10px 0;
+}
+#commentform p {
+	margin: 5px 0;
+}
+.nocomments {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+.commentmetadata {
+	margin: 0;
+	display: block;
+}
+h3.comments {
+	padding: 0;
+	margin: 40px auto 20px;
+	font-family: 'tempus sans itc', arial, helvetica, sans-serif;
+}
+/* End Comments */
+/* Begin Sidebar -- pretty much everything to do with it has been moved here */
+
+#sidebar { /*controls font type and size, plus bg-colour and border for the whole sidebar*/
+	font: 1em Arial, helvetica, Sans-Serif;
+	background-color: #000;
+	border: 1px dashed #414141;
+	padding: 5px 5px/*left*/ 10px 5px/*right*/;
+	margin-left: 530px;
+	width: 185px;
+}
+#navcontainer ul
+{
+	margin: 0em;
+	padding: 0;
+	list-style-type: none;
+	background-color: transparent;
+}
+#navcontainer li
+{
+	margin: 0 0 .4em 0;
+}
+#navcontainer a
+{
+	display: block;
+	color: #FFF;
+	background-color: #313431;
+	width: 96%;
+	padding: 5px 0 5px 5px;
+	text-decoration: none;
+	border: 1px solid #bbaa72;
+}
+#navcontainer a:hover
+{
+	background-color: #bbaa72;
+	border: 1px solid #313431;
+	color: #000;
+}
+#navcontainer a:visited
+{
+	background-color: #1E201E;
+	color: #9B9B9B;
+}
+#top-ten li
+{
+	margin: 0 3em .4em 0;
+	background-color: transparent;
+}
+
+/* Sidebar search form*/
+
+#sidebar form 
+{
+	margin: 0;
+}
+#searchform 
+{
+	margin: 10px auto;
+	padding: 5px 3px; 
+	text-align: center;
+	background-color: #313431;
+	border: solid 1px #bbaa72;
+}
+#sidebar #searchform #s 
+{
+	width: 80px;
+	padding: 2px;
+	background-color: #A2A2A2;
+	vertical-align: middle;
+}
+#sidebar #searchsubmit { /*the button*/
+	padding: 0 0 0 0;
+	background-color: #bbaa72;
+	vertical-align: middle;
+}
+/*End Sidebar Search form*/
+
+/* End Sidebar */
+
+/* Begin Calendar */
+#wp-calendar
+{
+	width: 100%;
+	background: black;
+	border: 1px solid #BBAA72;
+}
+#wp-calendar caption
+{
+	background-color: #bbaa72;
+	color: #000;
+}
+#wp-calendar a
+{
+	border: none;
+	padding: 0;
+	margin: 0;
+	width: auto;
+}
+#wp-calendar a:hover
+{
+	width: auto;
+	border: none;
+	background-color: #bbaa72;
+	color: #000;
+}
+#wp-calendar #next a
+{
+	width: auto;
+	padding-right: 5px;
+	text-align: right;
+}
+#wp-calendar #prev a
+{
+	width: auto;
+	padding-left: 5px;
+	text-align: left;
+}
+#wp-calendar td 
+{
+	width: auto;
+	background: black;
+	border: 1px solid #494949;
+	text-align: center;
+}
+/* End Calendar */
+/* Begin Various Tags & Classes */
+acronym, abbr, span.caps {
+	cursor: help;
+}
+acronym, abbr {
+	border-bottom: 1px dashed #fff;
+}
+blockquote {
+	margin: 10px 0 10px 0;
+	padding-left: 5px;
+	padding-right: 5px;
+	border: 1px dashed #bbaa72;
+	background-color: #383D38;
+}
+div.quote {
+	margin: 15px 0 15px 0;
+	padding: 5px;
+	border: 1px dashed #bbaa72;
+	background-color: #383D38;
+}
+.blockquote cite {
+	margin: 5px 0 0;
+	display: block;
+}
+.center {
+	text-align: center;
+}
+a img {
+	border: none;
+}
+#menu {
+	color : #ffffff;
+	margin-bottom : 5px;
+	background-color : #000;
+	border: 1px dotted #414141;
+	text-align:center;
+	padding : 5px;
+}
+.title {
+	color: #bbaa72;
+	font: arial, helvetica, sans-serif 120%;
+	font-weight: bolder;
+	border-top: 2px #606060 dotted;
+	border-bottom: 2px #606060 dotted;
+	padding: 1px;
+}

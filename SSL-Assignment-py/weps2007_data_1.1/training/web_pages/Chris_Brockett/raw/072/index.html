@@ -1,0 +1,1156 @@
+<!--
+wwwstats - php web statistic
+Copyright (C) 2006  Arjan Topolovec, www.timeprog.com
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+--><html>
+<head>
+<title>North Bristol RFC - All Time Stats</title>
+<link rel="stylesheet" type="text/css" href="main.css">
+<script language="javascript" type="text/javascript">
+<!-- 
+
+// rollovers
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+// IMAGES WIN SCRIPT - ABOUT PAGE
+
+function About1() {
+var ImgWin = window.open("blank.html", null, "height=300, width=440, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='css/main.css'><center><img src='images/page/about/about_club.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function About2() {
+var ImgWin = window.open("blank.html", null, "height=300, width=440, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='css/main.css'><center><img src='images/page/about/about_bar1.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function About3() {
+var ImgWin = window.open("blank.html", null, "height=300, width=440, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='css/main.css'><center><img src='images/page/about/about_bar2.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function About4() {
+var ImgWin = window.open("blank.html", null, "height=300, width=440, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='css/main.css'><center><img src='images/page/about/about_bar3.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function About5() {
+var ImgWin = window.open("blank.html", null, "height=300, width=440, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='css/main.css'><center><img src='images/page/about/about_bar4.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function About6() {
+var ImgWin = window.open("blank.html", null, "height=300, width=440, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='css/main.css'><center><img src='images/page/about/about_bar5.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+
+
+// IMAGES WIN SCRIPT - JUNIORS PAGE
+
+function Juniors1() {
+var ImgWin = window.open("blank.html", null, "height=300, width=440, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/juniors_team1.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function Juniors2() {
+var ImgWin = window.open("blank.html", null, "height=300, width=440, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/juniors_team2.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function Juniors3() {
+var ImgWin = window.open("blank.html", null, "height=300, width=440, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/juniors_team3.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function Juniors4() {
+var ImgWin = window.open("blank.html", null, "height=300, width=440, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/juniors_team4.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+
+
+// IMAGES WIN SCRIPT - PICTURES PAGE
+
+function Pictures1() {
+var ImgWin = window.open("blank.html", null, "height=300, width=440, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_team1.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function Pictures2() {
+var ImgWin = window.open("blank.html", null, "height=300, width=440, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_team2.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function Pictures3() {
+var ImgWin = window.open("blank.html", null, "height=300, width=440, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_team3.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function Pictures4() {
+var ImgWin = window.open("blank.html", null, "height=300, width=440, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_team4.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function Pictures5() {
+var ImgWin = window.open("blank.html", null, "height=300, width=440, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_team5.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function Pictures6() {
+var ImgWin = window.open("blank.html", null, "height=300, width=440, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_team6.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function Pictures7() {
+var ImgWin = window.open("blank.html", null, "height=300, width=440, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_team7.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function Pictures8() {
+var ImgWin = window.open("blank.html", null, "height=300, width=440, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_team8.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function Pictures9() {
+var ImgWin = window.open("blank.html", null, "height=300, width=440, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_team9.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+
+function Benidorm1() {
+var ImgWin = window.open("blank.html", null, "height=335, width=440, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_team10.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function Benidorm2() {
+var ImgWin = window.open("blank.html", null, "height=320, width=440, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_benidorm1.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function Benidorm3() {
+var ImgWin = window.open("blank.html", null, "height=320, width=440, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_benidorm2.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function Benidorm4() {
+var ImgWin = window.open("blank.html", null, "height=320, width=440, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_benidorm3.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function Benidorm5() {
+var ImgWin = window.open("blank.html", null, "height=320, width=440, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_benidorm4.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function Benidorm6() {
+var ImgWin = window.open("blank.html", null, "height=320, width=440, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_benidorm5.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function Benidorm7() {
+var ImgWin = window.open("blank.html", null, "height=320, width=440, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_benidorm6.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function Benidorm8() {
+var ImgWin = window.open("blank.html", null, "height=320, width=440, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_benidorm7.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function Benidorm9() {
+var ImgWin = window.open("blank.html", null, "height=320, width=440, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_benidorm8.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function Benidorm10() {
+var ImgWin = window.open("blank.html", null, "height=320, width=440, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_benidorm9.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function Benidorm11() {
+var ImgWin = window.open("blank.html", null, "height=320, width=440, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_benidorm10.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+
+function Awards1() {
+var ImgWin = window.open("blank.html", null, "height=470, width=320, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_awards1.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function Awards2() {
+var ImgWin = window.open("blank.html", null, "height=370, width=440, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_awards2.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function Awards3() {
+var ImgWin = window.open("blank.html", null, "height=470, width=320, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_awards3.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function Awards4() {
+var ImgWin = window.open("blank.html", null, "height=370, width=440, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_awards4.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function Awards41() {
+var ImgWin = window.open("blank.html", null, "height=370, width=440, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_awards41.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function Awards5() {
+var ImgWin = window.open("blank.html", null, "height=370, width=440, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_awards5.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function Awards6() {
+var ImgWin = window.open("blank.html", null, "height=370, width=440, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_awards6.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function Awards7() {
+var ImgWin = window.open("blank.html", null, "height=470, width=340, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_awards7.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function Awards8() {
+var ImgWin = window.open("blank.html", null, "height=370, width=440, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_awards8.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function Awards9() {
+var ImgWin = window.open("blank.html", null, "height=370, width=440, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_awards9.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function Awards10() {
+var ImgWin = window.open("blank.html", null, "height=370, width=440, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_awards10.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function Awards11() {
+var ImgWin = window.open("blank.html", null, "height=370, width=440, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_awards11.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function Awards12() {
+var ImgWin = window.open("blank.html", null, "height=370, width=440, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_awards12.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function Awards13() {
+var ImgWin = window.open("blank.html", null, "height=370, width=440, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_awards13.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function Awards14() {
+var ImgWin = window.open("blank.html", null, "height=370, width=440, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_awards14.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function Awards15() {
+var ImgWin = window.open("blank.html", null, "height=370, width=440, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_awards15.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function Awards16() {
+var ImgWin = window.open("blank.html", null, "height=370, width=440, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_awards16.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function Awards17() {
+var ImgWin = window.open("blank.html", null, "height=370, width=440, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_awards17.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+
+function ODRFC1() {
+var ImgWin = window.open("blank.html", null, "height=310, width=450, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_odrfc01.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function ODRFC2() {
+var ImgWin = window.open("blank.html", null, "height=405, width=260, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_odrfc02.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function ODRFC3() {
+var ImgWin = window.open("blank.html", null, "height=450, width=450, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_odrfc03.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function ODRFC4() {
+var ImgWin = window.open("blank.html", null, "height=325, width=450, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_odrfc04.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function ODRFC5() {
+var ImgWin = window.open("blank.html", null, "height=300, width=450, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_odrfc05.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function ODRFC6() {
+var ImgWin = window.open("blank.html", null, "height=400, width=285, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_odrfc06.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function ODRFC7() {
+var ImgWin = window.open("blank.html", null, "height=335, width=450, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_odrfc07.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function ODRFC8() {
+var ImgWin = window.open("blank.html", null, "height=425, width=450, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_odrfc08.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function ODRFC9() {
+var ImgWin = window.open("blank.html", null, "height=300, width=450, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_odrfc09.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function ODRFC10() {
+var ImgWin = window.open("blank.html", null, "height=400, width=320, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_odrfc10.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function ODRFC11() {
+var ImgWin = window.open("blank.html", null, "height=330, width=450, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_odrfc11.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+function ODRFC12() {
+var ImgWin = window.open("blank.html", null, "height=440, width=450, status=no, tootlbar=no, menubar=no, location=no");
+ImgWin.document.writeln("<link rel='STYLESHEET' type='text/css' href='nbrfc.css'><center><img src='images/pictures_odrfc12.jpg' border=0>"+
+"<table width=100% border=0 cellpadding=5 cellspacing=5><tr><td><center><a href='JavaScript:window.close()' class='h1'><b>Close Window</b></a></td></tr></table>")
+}
+
+
+-->
+</script></head>
+<body leftmargin="0" topmargin="0" rightmargin="0" marginheight="0" marginwidth="0" onLoad="MM_preloadImages('images/menu/n_home2.gif','images/menu/n_about2.gif','images/menu/n_fixtures2.gif','images/menu/n_match_report2.gif','images/menu/n_noticeboard2.gif','images/menu/n_newsletter2.gif','images/menu/n_juniors2.gif','images/menu/n_contact2.gif','images/menu/n_stats2.gif','images/menu/n_history2.gif','images/menu/n_pictures2.gif','images/menu/n_charles_hill2.gif')">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+  <tr valign="top">
+    <td bgcolor="#aa0000" height="6" colspan="3"></td>
+  </tr>
+  <tr valign="top">
+    <td bgcolor="#ffffff" height="3" colspan="3"></td>
+  </tr>
+  <tr valign="top">
+    <td height="53"><img src="nbrfc1.gif" border="0" alt="NBRFC"><img src="nbrfc2.jpg" border="0" alt="NBRFC"><img src="nbrfc_pitch.jpg" border="0" alt="NBRFC"></td>
+    <td width="100%"><img src="nbrfc_spacer.gif" border="0" width="100%" height="53"></td>
+    <td><div align="right">
+      <img src="nbrfc_logo.gif" border="0" alt="North Bristol RFC"></td>
+  </tr>
+  <tr valign="top">
+    <td colspan="3" height="3" bgcolor="#000074"></td>
+  </tr>
+</table>
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+  <tr valign="top">
+    <td>
+	<table cellpadding="0" cellspacing="0" border="0" width="100%">
+        <tr valign="top">
+          <td height="33"><img src="nav1.gif" border="0"></td>
+        </tr>
+        <tr valign="top">
+          <td height="25"><a href="http://www.northbristolrfc.co.uk/index.php?page=main.home&amp;PHPSESSID=5cc9f3aa7a8b19216f30f66bf8762223"><img src="n_home1.gif" alt="Home" name="home" border="0" onmouseover="MM_swapImage('home','','images/menu/n_home2.gif',1)" onmouseout="MM_swapImgRestore()"></a></td>
+        </tr>
+        <tr valign="top">
+          <td height="25"><a href="http://www.northbristolrfc.co.uk/index.php?page=main.about&amp;PHPSESSID=5cc9f3aa7a8b19216f30f66bf8762223"><img src="n_about1.gif" alt="About Us" name="about_" border="0" onmouseover="MM_swapImage('about_','','images/menu/n_about2.gif',1)" onmouseout="MM_swapImgRestore()"></a></td>
+        </tr>
+        <tr valign="top">
+          <td height="25"><a href="http://www.northbristolrfc.co.uk/index.php?page=fixtures.home&amp;PHPSESSID=5cc9f3aa7a8b19216f30f66bf8762223"><img src="n_fixtures1.gif" alt="Fixtures & Results" name="fixtures_" border="0" onmouseover="MM_swapImage('fixtures_','','images/menu/n_fixtures2.gif',1)" onmouseout="MM_swapImgRestore()"></a></td>
+        </tr>
+        <tr valign="top">
+          <td height="25"><a href="http://www.northbristolrfc.co.uk/index.php?page=main.matchreport&amp;PHPSESSID=5cc9f3aa7a8b19216f30f66bf8762223"><img src="n_match_report1.gif" alt="Match Report" name="mreport_" border="0" onmouseover="MM_swapImage('mreport_','','images/menu/n_match_report2.gif',1)" onmouseout="MM_swapImgRestore()"></a></td>
+        </tr>
+        <tr valign="top">
+          <td height="25"><a href="http://www.northbristolrfc.co.uk/index.php?page=main.news&amp;PHPSESSID=5cc9f3aa7a8b19216f30f66bf8762223"><img src="n_noticeboard1.gif" alt="News" name="notice_" border="0" onmouseover="MM_swapImage('notice_','','images/menu/n_noticeboard2.gif',1)" onmouseout="MM_swapImgRestore()"></a></td>
+        </tr>
+        <tr valign="top">
+          <td height="25"><a href="http://www.northbristolrfc.co.uk/index.php?page=main.newsletter&amp;PHPSESSID=5cc9f3aa7a8b19216f30f66bf8762223"><img src="n_newsletter1.gif" alt="Newsletter" name="newsletter_" border="0" onmouseover="MM_swapImage('newsletter_','','images/menu/n_newsletter2.gif',1)" onmouseout="MM_swapImgRestore()"></a></td>
+        </tr>
+        <tr valign="top">
+          <td height="25"><a href="http://www.northbristoljuniors.co.uk/" target="JNR"><img src="n_juniors1.gif" alt="Juniors" name="juniors_" border="0" onmouseover="MM_swapImage('juniors_','','images/menu/n_juniors2.gif',1)" onmouseout="MM_swapImgRestore()"></a></td>
+        </tr>
+        <tr valign="top">
+          <td height="25"><a href="http://www.northbristolrfc.co.uk/index.php?page=main.contact&amp;PHPSESSID=5cc9f3aa7a8b19216f30f66bf8762223"><img src="n_contact1.gif" alt="Contact Us" name="contact_" border="0" onmouseover="MM_swapImage('contact_','','images/menu/n_contact2.gif',1)" onmouseout="MM_swapImgRestore()"></a></td>
+        </tr>
+        <tr valign="top">
+          <td height="25"><a href="http://www.northbristolrfc.co.uk/index.php?page=stats.home&amp;PHPSESSID=5cc9f3aa7a8b19216f30f66bf8762223"><img src="n_stats3.gif" alt="Stats" name="stats_" border="0" onmouseover="MM_swapImage('stats_','','images/menu/n_stats2.gif',1)" onmouseout="MM_swapImgRestore()"></a></td>
+        </tr>
+        <tr valign="top">
+          <td height="25"><a href="http://www.northbristolrfc.co.uk/index.php?page=main.history&amp;PHPSESSID=5cc9f3aa7a8b19216f30f66bf8762223"><img src="n_history1.gif" alt="History" name="history_" border="0" onmouseover="MM_swapImage('history_','','images/menu/n_history2.gif',1)" onmouseout="MM_swapImgRestore()"></a></td>
+        </tr>
+        <tr valign="top">
+          <td height="25"><a href="http://www.northbristolrfc.co.uk/index.php?page=main.pictures&amp;PHPSESSID=5cc9f3aa7a8b19216f30f66bf8762223"><img src="n_pictures1.gif" alt="Pictures" name="pictures_" border="0" onmouseover="MM_swapImage('pictures_','','images/menu/n_pictures2.gif',1)" onmouseout="MM_swapImgRestore()"></a></td>
+        </tr>
+        <tr valign="top">
+          <td height="25"><a href="http://www.northbristolrfc.co.uk/index.php?page=main.charles&amp;PHPSESSID=5cc9f3aa7a8b19216f30f66bf8762223"><img src="n_charles_hill1.gif" alt="Charles Hill" name="charles_" border="0" onmouseover="MM_swapImage('charles_','','images/menu/n_charles_hill2.gif',1)" onmouseout="MM_swapImgRestore()"></a></td>
+        </tr>
+        <tr valign="top">
+          <td height="27"><img src="nav2.gif" border="0"></td>
+        </tr>
+</table>	<table cellpadding="0" cellspacing="0" border="0" width="170">
+        <tr valign="top">
+          <td height="10" colspan="2"></td>
+        </tr>
+        <tr valign="top">
+          <td width="20"></td>
+          <td><p><b>Latest at North Bristol RFC</b></td>
+        </tr>
+        <tr valign="top">
+          <td></td>
+          <td><hr></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><p>5 in Bristol Combination U20s - See News<br />
+<br />
+Loukas Paraskeva representing Cyprus in European Bowls Championship - See News<br />
+<br />
+Musical Curry Night 17th March 2007 - See News<br />
+<br />
+Bar Staff Wanted - See News</p>
+          </td>
+        </tr>
+      </table>    </td>
+    <td width="100%"><img src="head_shadow.gif" border="0" width="100%" height="24">
+      <p> <img src="stats_alltime.gif" border="0" alt="Welcome to North Bristol RFC's website"><br>
+        <br>
+      <table border="0" cellpadding="5" cellspacing="5" width="550">
+        <tr valign="top">
+          <td>
+<p>
+<b>Below are statistics of the top all time records up to season ending
+2005/06including top appearances, try scorers and point scorers. This area is updated at the end of each season to show player performances.<br>
+<br>
+<br>
+<table width=470 border=0 cellpadding=0 cellspacing=0>
+<tr valign="top">
+    <td>
+	<table width=220 border=0 cellpadding=0 cellspacing=0>
+    <tr>
+          <td colspan="4"><p><b><font color="#990000">All Time Top 50 Appearances</font></b><br><hr></td>
+    </tr>
+    <tr valign="top">
+          <td><p><b>Name</b></td>
+          <td width=20>&nbsp;</td>
+          <td><p align="center"><b>App's</b></td>
+          <td width=20>&nbsp;</td>
+    </tr>
+    <tr valign="top">
+          <td><p>
+              John Harris<br />
+Dennis Vittle<br />
+Haydn Jones<br />
+Martin Green<br />
+Chris Bold<br />
+John Millard<br />
+Ken Rendell<br />
+John Cottle<br />
+Robin Olorenshaw<br />
+Steve Arthur<br />
+Chris Grigg<br />
+Mike Croft<br />
+Derek Miles<br />
+Alan Chilcott<br />
+Mike Golesworthy<br />
+Brian Taylor<br />
+Pete Cockle<br />
+Gary Clark<br />
+Nick Tatum<br />
+Paul Carter<br />
+Martyn Cottle<br />
+Mark Edgerley<br />
+Glyn Williams<br />
+Steve Bold<br />
+Pete Spratt<br />
+M Davies<br />
+Chris Brockett<br />
+P Welch<br />
+Steve Derrick<br />
+Richard Peirce<br />
+B Clarke<br />
+Dave Cockle<br />
+Robert Hawkes<br />
+Lyndon Cheal<br />
+Paul Thompson<br />
+Adrian Wilkins<br />
+Loukas Paraskeva<br />
+A Dobbs<br />
+Dave Boyes<br />
+Steve Morris<br />
+Bobby Kempster<br />
+Bruce Nash<br />
+Rodney Nethercote<br />
+Paul Moody<br />
+Neil Bowden<br />
+M Kenway<br />
+Andy Tyrrell<br />
+Reg Muldoon<br />
+D Hambly<br />
+Bob Evans<br />
+Neil Hamer<br />
+Mark Smith<br />
+Lloyd Sutherland          </td>
+          <td width=20>&nbsp;</td>
+          <td><p align="center">
+              1031<br />
+855<br />
+854<br />
+823<br />
+780<br />
+718<br />
+696<br />
+652<br />
+651<br />
+632<br />
+618<br />
+593<br />
+577<br />
+569<br />
+555<br />
+551<br />
+537<br />
+526<br />
+526<br />
+524<br />
+523<br />
+513<br />
+487<br />
+476<br />
+470<br />
+457<br />
+450<br />
+439<br />
+435<br />
+422<br />
+417<br />
+412<br />
+412<br />
+411<br />
+402<br />
+398<br />
+395<br />
+378<br />
+366<br />
+362<br />
+360<br />
+355<br />
+351<br />
+343<br />
+335<br />
+331<br />
+319<br />
+317<br />
+316<br />
+307<br />
+307<br />
+307<br />
+307          </td>
+		  <td>&nbsp;</td>
+     </tr>
+     </table>
+	 </td>
+    <td width=50>&nbsp;</td>
+    <td><table width=220 border=0 cellpadding=0 cellspacing=0>
+        <tr>
+          <td colspan=4><p><b><font color="#990000">All Time Top 50 Try Scorers</font></b><br>
+            <hr></td>
+        </tr>
+        <tr valign="top">
+          <td><p><b>Name</b></td>
+          <td width=20></td>
+          <td><p align="center"><b>Tries</b></td>
+          <td width=20></td>
+        </tr>
+        <tr valign="top">
+          <td><p>John Harris<br />
+Nick Tatum<br />
+Mike Golesworthy<br />
+Derek Miles<br />
+Bobby Kempster<br />
+Lloyd Sutherland<br />
+Mark Edgerley<br />
+Ted Morris<br />
+Pete Paraskeva<br />
+Pete Spratt<br />
+Reg Muldoon<br />
+Mike Ward<br />
+Steve Arthur<br />
+Paul Carter<br />
+Alan Chilcott<br />
+Robin Olorenshaw<br />
+Neil Rideout<br />
+Russ Lee<br />
+Phil Weyman<br />
+Adrian Wilkins<br />
+Pete Cockle<br />
+Neil Bowden<br />
+Steve Morris<br />
+Brian Taylor<br />
+Paul Thompson<br />
+K Davies<br />
+D Webb<br />
+Lyndon Cheal<br />
+Tony Nohel<br />
+John Millard<br />
+Chris Bold<br />
+P Williams<br />
+Richard Barton<br />
+R Issacs<br />
+Loukas Paraskeva<br />
+Andy Hodges<br />
+Rodney Nethercote<br />
+Dave Cheal<br />
+Mike Lewis<br />
+C Lewis<br />
+John Veasey<br />
+C Metherell<br />
+Dean Gardner<br />
+Phil Holman<br />
+Stuart Colquhoun<br />
+Clive Hicks<br />
+Dave Boyes<br />
+Dave Cockle<br />
+Martyn Cottle<br />
+Jamie Walters</td>
+          <td width=20>&nbsp;</td>
+          <td><p align="center">324<br />
+243<br />
+220<br />
+219<br />
+184<br />
+171<br />
+170<br />
+166<br />
+160<br />
+158<br />
+156<br />
+137<br />
+116<br />
+116<br />
+111<br />
+110<br />
+109<br />
+109<br />
+107<br />
+106<br />
+104<br />
+102<br />
+101<br />
+100<br />
+100<br />
+97<br />
+97<br />
+92<br />
+88<br />
+82<br />
+80<br />
+79<br />
+77<br />
+77<br />
+75<br />
+75<br />
+72<br />
+72<br />
+72<br />
+72<br />
+71<br />
+71<br />
+69<br />
+68<br />
+67<br />
+67<br />
+66<br />
+65<br />
+63<br />
+63</td>
+          <td width=20>&nbsp;</td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<br />
+<br />
+<table width=220 border=0 cellpadding=0 cellspacing=0>
+  <tr>
+    <td colspan=5><p><b><font color="#990000">All Time Top 50 Points Scorers</font></b><br>
+    <hr></td>
+  </tr>
+  <tr valign="top">
+    <td><p><b>Name</b></td>
+    <td width=20></td>
+    <td><p align="center"><b>Points</b></td>
+  </tr>
+  <tr valign="top">
+    <td><p>
+        Mike Golesworthy<br />
+John Harris<br />
+Mike Croft<br />
+Glyn Williams<br />
+Nick Tatum<br />
+Derek Miles<br />
+Loukas Paraskeva<br />
+Richard Peirce<br />
+Dave Cockle<br />
+Pete Cockle<br />
+Dean Gardner<br />
+Dave Cheal<br />
+Mark Edgerley<br />
+Bobby Kempster<br />
+Paul Thompson<br />
+Rodney Nethercote<br />
+Lloyd Sutherland<br />
+Dave Hull<br />
+Lyndon Cheal<br />
+Mike Lewis<br />
+Pete Paraskeva<br />
+Reg Muldoon<br />
+Adrian Wilkins<br />
+Pete Spratt<br />
+D Iles<br />
+Clive Hicks<br />
+Mike Ward<br />
+Russ Lee<br />
+Robin Whittingham<br />
+Neil Bowden<br />
+Neil Rideout<br />
+Martin Lambourne<br />
+Ted Morris<br />
+Steve Arthur<br />
+Robin Olorenshaw<br />
+Steve Maggs<br />
+Paul Carter<br />
+Chris Thomas<br />
+Brian Taylor<br />
+Phil Weyman<br />
+Alan Chilcott<br />
+Steve Morris<br />
+M Plummer<br />
+D Webb<br />
+Richard Barton<br />
+K Davies<br />
+Paul Fackrell<br />
+Andy Hodges<br />
+John Shorland<br />
+John Veasey<br />
+Tony Nohel    </td>
+    <td width=20></td>
+    <td><p align="center">
+        2382<br />
+2351<br />
+2350<br />
+2014<br />
+1717<br />
+1602<br />
+1524<br />
+1369<br />
+1288<br />
+1060<br />
+948<br />
+836<br />
+772<br />
+769<br />
+690<br />
+688<br />
+684<br />
+659<br />
+658<br />
+653<br />
+642<br />
+627<br />
+622<br />
+591<br />
+556<br />
+545<br />
+542<br />
+526<br />
+525<br />
+511<br />
+504<br />
+503<br />
+500<br />
+498<br />
+481<br />
+473<br />
+469<br />
+435<br />
+433<br />
+430<br />
+429<br />
+427<br />
+399<br />
+390<br />
+390<br />
+388<br />
+383<br />
+375<br />
+363<br />
+361<br />
+352    </td>
+  </tr>
+</table>
+<br>
+<br>
+<table width=450 border=0 cellpadding=0 cellspacing=0>
+  <tr>
+    <td colspan=11><p><b><font color="#990000">All Time Top 25 Kickers</font></b><br>
+      <hr></td>
+  </tr>
+  <tr valign="top">
+    <td><p><b>Name</b></td>
+    <td width=20></td>
+    <td><p align="center"><b>Points</b></td>
+    <td width=20></td>
+    <td><p align="center"><b>Conv.</b></td>
+    <td width=20></td>
+    <td><p align="center"><b>Pen</b></td>
+    <td width=20></td>
+    <td><p align="center"><b>D.G's</b></td>
+  </tr>
+  <tr valign="top">
+    <td><p>
+        Mike Croft<br />
+Glyn Williams<br />
+Mike Golesworthy<br />
+Loukas Paraskeva<br />
+Richard Peirce<br />
+Dave Cockle<br />
+John Harris<br />
+Pete Cockle<br />
+Dave Hull<br />
+Dean Gardner<br />
+Derek Miles<br />
+Nick Tatum<br />
+Dave Cheal<br />
+Martin Lambourne<br />
+Rodney Nethercote<br />
+D Iles<br />
+Chris Thomas<br />
+Robin Whittingham<br />
+Steve Maggs<br />
+Mike Lewis<br />
+Clive Hicks<br />
+Lyndon Cheal<br />
+M Plummer<br />
+Mark Fudge<br />
+Brian Pollard    </td>
+    <td width=20></td>
+    <td><p align="center">
+        2110<br />
+1886<br />
+1531<br />
+1223<br />
+1170<br />
+1028<br />
+987<br />
+682<br />
+647<br />
+608<br />
+604<br />
+554<br />
+528<br />
+473<br />
+400<br />
+370<br />
+361<br />
+361<br />
+331<br />
+293<br />
+277<br />
+276<br />
+255<br />
+242<br />
+242    </td>
+    <td width=20></td>
+    <td><p align="center">
+        557<br />
+565<br />
+428<br />
+256<br />
+327<br />
+289<br />
+312<br />
+125<br />
+169<br />
+166<br />
+170<br />
+142<br />
+138<br />
+70<br />
+122<br />
+92<br />
+98<br />
+89<br />
+119<br />
+76<br />
+83<br />
+84<br />
+51<br />
+49<br />
+73    </td>
+    <td width=20></td>
+    <td><p align="center">
+        332<br />
+230<br />
+225<br />
+235<br />
+164<br />
+147<br />
+106<br />
+66<br />
+101<br />
+85<br />
+84<br />
+89<br />
+84<br />
+104<br />
+45<br />
+58<br />
+55<br />
+61<br />
+31<br />
+47<br />
+31<br />
+36<br />
+45<br />
+46<br />
+30    </td>
+    <td width=20></td>
+    <td><p align="center">
+        0<br />
+22<br />
+0<br />
+2<br />
+8<br />
+3<br />
+15<br />
+78<br />
+2<br />
+7<br />
+4<br />
+1<br />
+0<br />
+7<br />
+7<br />
+4<br />
+0<br />
+0<br />
+0<br />
+0<br />
+6<br />
+0<br />
+6<br />
+2<br />
+2    </td>
+  </tr>
+</table>
+<br>
+<br>
+<table width=450 border=0 cellpadding=0 cellspacing=0>
+  <tr>
+    <td colspan=11><p><b><font color="#990000">All Time Top 25 Try Rate (minimum 70 games)</font></b><br>
+      <hr></td>
+  </tr>
+  <tr valign="top">
+    <td><p><b>Name</b></td>
+    <td width=20></td>
+    <td><p align="center"><b>Tries</b></td>
+    <td width=20></td>
+    <td><p align="center"><b>Games</b></td>
+    <td width=20></td>
+    <td><p align="center"><b>Try Rate</b></td>
+  </tr>
+  <tr valign="top">
+    <td><p>
+        Tony Nohel<br />
+D Webb<br />
+Ted Morris<br />
+Mike Ward<br />
+K Davies<br />
+Andy Muldoon<br />
+C Metherell<br />
+G Payne<br />
+Pete Paraskeva<br />
+Huw Rees<br />
+Lloyd Sutherland<br />
+C Lewis<br />
+John Veasey<br />
+John Shorland<br />
+Bobby Kempster<br />
+Ian Shorland<br />
+Mike Lewis<br />
+Russ Lee<br />
+Reg Muldoon<br />
+Steve Clark<br />
+Neil Rideout<br />
+M Hopkins<br />
+D Warren<br />
+Nick Tatum<br />
+Phil Taylor    </td>
+    <td width=20></td>
+    <td><p align="center">
+        88<br />
+97<br />
+166<br />
+137<br />
+97<br />
+55<br />
+71<br />
+42<br />
+160<br />
+49<br />
+171<br />
+72<br />
+71<br />
+41<br />
+184<br />
+55<br />
+72<br />
+109<br />
+156<br />
+58<br />
+109<br />
+37<br />
+37<br />
+243<br />
+50    </td>
+    <td width=20></td>
+    <td><p align="center">
+        90<br />
+115<br />
+199<br />
+175<br />
+135<br />
+81<br />
+114<br />
+70<br />
+272<br />
+85<br />
+307<br />
+133<br />
+137<br />
+80<br />
+360<br />
+108<br />
+142<br />
+215<br />
+317<br />
+118<br />
+222<br />
+76<br />
+78<br />
+526<br />
+109    </td>
+    <td width=20></td>
+    <td><p align="center">
+        97.78<br />
+84.35<br />
+83.42<br />
+78.29<br />
+71.85<br />
+67.90<br />
+62.28<br />
+60.00<br />
+58.82<br />
+57.65<br />
+55.70<br />
+54.14<br />
+51.82<br />
+51.25<br />
+51.11<br />
+50.93<br />
+50.70<br />
+50.70<br />
+49.21<br />
+49.15<br />
+49.10<br />
+48.68<br />
+47.44<br />
+46.20<br />
+45.87    </td>
+  </tr>
+</table>
+</td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr valign="bottom">
+    <td colspan="2" height="25"></td>
+  </tr>
+  <tr valign="bottom">
+    <td bgcolor="#cccccc" height="1" colspan="2"></td>
+  </tr>
+  <tr valign="top">
+    <td width="100%" colspan="2"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr valign="top">
+          <td width="33%"><img src="nbrfc_rugby_ball.gif" width="126" height="55" vspace="14" border="0">
+          <td width="33%"><p align="center">North Bristol RFC is proud to be sponsored by:<br>
+              <a href="http://www.abbeylaw.net" target="_blank"><img src="abbey-law.gif" width="150" height="38" hspace="4" vspace="4" border="0"></a><a href="http://www.marble-mosaic.co.uk" target="_blank"><img src="marble_mosaic.gif" width="61" height="42" hspace="4" vspace="4" border="0"></a><br>
+			<a href="http://www.aspira-ifa.co.uk" target="_blank"><img src="aspira.gif" width="128" height="35" hspace="4" vspace="4" border="0"></a><a href="http://www.goodviewing.co.uk" target="_blank"><img src="good_viewing.gif" width="177" height="42" hspace="4" vspace="4" border="0"></a>
+          </td>
+          <td width="33%" align="right">
+            <a href="http://www.mbacreative.co.uk" target="_blank"><img src="mba.gif" width="98" height="60" hspace="10" vspace="14" border="0"></a></td>
+        </tr>
+      </table></td colspan="2">
+    </td>
+  </tr>
+</table>
+<!--
+wwwstats - php web statistic
+Copyright (C) 2006  Arjan Topolovec, www.timeprog.com
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+-->
+</body>
+</html>

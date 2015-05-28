@@ -1,0 +1,513 @@
+<html><!-- #BeginTemplate "/Templates/cvcclassicnews.dwt" --><!-- DW6 -->
+<head>
+<!-- #BeginEditable "doctitle" --> 
+<title>2001 IKON Classic Recognition Award Recipients Named</title>
+<!-- #EndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+<!-- Hide from JavaScript-Impaired Browsers
+/* First, if you load fewer or more than 6 sponsors
+   into your rotator, change the "sponnr" variable
+   to the actual number of sponsor .gifs you plan to
+   load. */
+   number_of_sponsors=7;
+
+var sctr=0;
+var halt=0;
+var isn=new Array();
+for (i=0;i<number_of_sponsors;i++){
+ isn[i]=new Image();
+}
+
+/* The sponsor .gif names are loaded into the isn[x]
+   sponsor images array.  You may load any number of
+   sponsor images (.gif or .jpg or both) into this
+   array. They must all be the same size, however.
+   Substitute your own .gif filenames for the ones
+   shown here. Note that the first .gif must appear
+   in the isn[0] array element. */
+isn[0].src="chevy.jpg";
+isn[1].src="footlocker.gif";
+isn[2].src="american.gif";
+isn[3].src="tiaacref.gif";
+isn[4].src="whitecastle.jpg";
+isn[5].src="rotorooter.gif";
+isn[6].src="royalcarib.gif";
+
+
+/* Finally, replace the URL's below with those of
+   your sponsors IN THE SAME ORDER. */
+var durl=new Array();
+durl[0] = "http://www.chevrolet.com";
+durl[1] = "http://www.footlocker.com";
+durl[2] = "http://www.americanairlines.com";
+durl[3] = "http://www.tiaa-cref.org";
+durl[4] = "http://www.whitecastle.com";
+durl[5] = "http://www.rotorooter.com";
+durl[6] = "http://www.royalcaribbean.com";
+
+
+
+
+/* This script is set to rotate every 10 seconds.
+   (5000=5 seconds, so 30000 would equal 30, etc)
+   You should change the number in the setTimeout()
+   call below for the number of seconds you wish. */
+function rotateIt(){
+ if (halt!=1){
+  sctr++;
+  if (sctr>number_of_sponsors-1){
+   sctr=0;
+   }
+  document.sponsor.src=isn[sctr].src;
+  setTimeout("rotateIt()",5000);
+  }
+ }
+
+/* This code will work just fine with or without
+   frames.  However, if you are in frames and wish
+   to replicate the TARGET="_top" call to remove
+   frames, change the location.href call to:
+    parent.location.href=durl[sctr];
+   below. */
+function doIt(){
+ halt=1;
+ window.open(durl[sctr]);
+ }
+
+function dispIt(){
+ parent.window.status=durl[sctr];
+ }
+// End Hiding -->
+
+</SCRIPT>
+<!-- -->
+<SCRIPT LANGUAGE="JavaScript">
+
+<!-- Hide from JavaScript-Impaired Browsers
+/* First, if you load fewer or more than 6 sponsors
+   into your rotator, change the "sponnr" variable
+   to the actual number of sponsor .gifs you plan to
+   load. */
+   number_of_sponsorsb=10;
+
+var sctrb=0;
+var haltb=0;
+var isnb=new Array();
+for (j=0;j<number_of_sponsorsb;j++){
+ isnb[j]=new Image();
+}
+
+/* The sponsor .gif names are loaded into the isn[x]
+   sponsor images array.  You may load any number of
+   sponsor images (.gif or .jpg or both) into this
+   array. They must all be the same size, however.
+   Substitute your own .gif filenames for the ones
+   shown here. Note that the first .gif must appear
+   in the isn[0] array element. */
+isnb[0].src="ikon.jpg";
+isnb[1].src="footlocker.gif";
+isnb[2].src="american.gif";
+isnb[3].src="tiaacref.gif";
+isnb[4].src="chevy.jpg";
+isnb[5].src="nabc.gif";
+isnb[6].src="whitecastle.jpg";
+isnb[7].src="royalcarib.gif";
+isnb[8].src="rotorooter.gif";
+isnb[9].src="acs.jpg";
+
+/* Finally, replace the URL's below with those of
+   your sponsors IN THE SAME ORDER. */
+var durlb=new Array();
+durlb[0] = "http://www.ikon.com";
+durlb[1] = "http://www.footlocker.com";
+durlb[2] = "http://www.americanairlines.com";
+durlb[3] = "http://www.tiaa-cref.org";
+durlb[4] = "http://www.chevrolet.com";
+durlb[5] = "http://www.nabc.com";
+durlb[6] = "http://www.whitecastle.com";
+durlb[7] = "http://www.royalcaribbean.com";
+durlb[8] = "http://www.rotorooter.com";
+durlb[9] = "http://www.cancer.org";
+
+
+
+/* This script is set to rotate every 10 seconds.
+   (5000=5 seconds, so 30000 would equal 30, etc)
+   You should change the number in the setTimeout()
+   call below for the number of seconds you wish. */
+function rotateItb(){
+ if (haltb!=1){
+  sctrb++;
+  if (sctrb>number_of_sponsorsb-1){
+   sctrb=0;
+   }
+  document.events.src=isnb[sctrb].src;
+  setTimeout("rotateItb()",5000);
+  }
+ }
+
+/* This code will work just fine with or without
+   frames.  However, if you are in frames and wish
+   to replicate the TARGET="_top" call to remove
+   frames, change the location.href call to:
+    parent.location.href=durl[sctr];
+   below. */
+function doItb(){
+ haltb=1;
+ window.open(durlb[sctrb]);
+ }
+
+function dispItb(){
+ parent.window.status=durlb[sctrb];
+ }
+// End Hiding -->
+//-->
+</script>
+</head>
+<body bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" background="ikonbkgd.gif" onLoad="MM_preloadImages('../ikonnavfw_r1_c2_f2.gif','../ikonnavfw_r3_c2_f2.gif','../ikonnavfw_r5_c2_f2.gif','../ikonnavfw_r7_c2_f2.gif','../ikonnavfw_r9_c2_f2.gif','../ikonnavfw_r11_c2_f2.gif','../ikonnavfw_r13_c2_f2.gif','../ikonnavfw_r15_c2_f2.gif','../cvcheader_r2_c2_f2.gif','../cvcheader_r2_c4_f2.gif','../cvcheader_r2_c6_f2.gif','../cvcheader_r2_c8_f2.gif','../cvcheader_r2_c10_f2.gif','../cvcheader_r2_c12_f2.gif','../cvcheader_r2_c14_f2.gif')">
+<table width="800" border="0" cellpadding="0" cellspacing="0">
+  <tr> 
+    <td colspan="3" height="46" valign="top"><table border="0" cellpadding="0" cellspacing="0" width="800">
+        <!-- fwtable fwsrc="cvcheaderfw.png" fwbase="cvcheader.gif" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="0" -->
+        <tr> 
+          <td><img src="spacer.gif" alt="" name="undefined_2" width="141" height="1" border="0"></td>
+          <td><img src="spacer.gif" alt="" name="undefined_2" width="39" height="1" border="0"></td>
+          <td><img src="spacer.gif" alt="" name="undefined_2" width="7" height="1" border="0"></td>
+          <td><img src="spacer.gif" alt="" name="undefined_2" width="59" height="1" border="0"></td>
+          <td><img src="spacer.gif" alt="" name="undefined_2" width="6" height="1" border="0"></td>
+          <td><img src="spacer.gif" alt="" name="undefined_2" width="92" height="1" border="0"></td>
+          <td><img src="spacer.gif" alt="" name="undefined_2" width="6" height="1" border="0"></td>
+          <td><img src="spacer.gif" alt="" name="undefined_2" width="82" height="1" border="0"></td>
+          <td><img src="spacer.gif" alt="" name="undefined_2" width="7" height="1" border="0"></td>
+          <td><img src="spacer.gif" alt="" name="undefined_2" width="76" height="1" border="0"></td>
+          <td><img src="spacer.gif" alt="" name="undefined_2" width="6" height="1" border="0"></td>
+          <td><img src="spacer.gif" alt="" name="undefined_2" width="73" height="1" border="0"></td>
+          <td><img src="spacer.gif" alt="" name="undefined_2" width="6" height="1" border="0"></td>
+          <td><img src="spacer.gif" alt="" name="undefined_2" width="73" height="1" border="0"></td>
+          <td><img src="spacer.gif" alt="" name="undefined_2" width="127" height="1" border="0"></td>
+          <td><img src="spacer.gif" alt="" name="undefined_2" width="1" height="1" border="0"></td>
+        </tr>
+        <tr> 
+          <td colspan="15"><img name="cvcheader_r1_c1" src="cvcheader_r1_c1.gif" width="800" height="6" border="0" alt=""></td>
+          <td><img src="spacer.gif" alt="" name="undefined_2" width="1" height="6" border="0"></td>
+        </tr>
+        <tr> 
+          <td rowspan="2"><img name="cvcheader_r2_c1" src="cvcheader_r2_c1.gif" width="141" height="39" border="0" alt=""></td>
+          <td><a href="http://www.gazellegroup.com" target="_blank" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('cvcheader_r2_c2','','../cvcheader_r2_c2_f2.gif',1)"><img name="cvcheader_r2_c2" src="cvcheader_r2_c2.gif" width="39" height="18" border="0" alt=""></a></td>
+          <td rowspan="2"><img name="cvcheader_r2_c3" src="cvcheader_r2_c3.gif" width="7" height="39" border="0" alt=""></td>
+          <td><a onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('cvcheader_r2_c4','','../cvcheader_r2_c4_f2.gif',1)"><img name="cvcheader_r2_c4" src="cvcheader_r2_c4.gif" width="59" height="18" border="0" alt=""></a></td>
+          <td rowspan="2"><img name="cvcheader_r2_c5" src="cvcheader_r2_c5.gif" width="6" height="39" border="0" alt=""></td>
+          <td><a href="http://www.gazellegroup.com/guardians" target="_self" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('cvcheader_r2_c6','','../cvcheader_r2_c6_f2.gif',1)"><img name="cvcheader_r2_c6" src="cvcheader_r2_c6.gif" width="92" height="18" border="0" alt=""></a></td>
+          <td rowspan="2"><img name="cvcheader_r2_c7" src="cvcheader_r2_c7.gif" width="6" height="39" border="0" alt=""></td>
+          <td><a href="http://www.gazellegroup.com/bcainvite" target="_self" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('cvcheader_r2_c8','','../cvcheader_r2_c8_f2.gif',1)"><img name="cvcheader_r2_c8" src="cvcheader_r2_c8.gif" width="82" height="18" border="0" alt=""></a></td>
+          <td rowspan="2"><img name="cvcheader_r2_c9" src="cvcheader_r2_c9.gif" width="7" height="39" border="0" alt=""></td>
+          <td><a href="http://www.gazellegroup.com/bcabbclassic/index.html" target="_self" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('cvcheader_r2_c10','','../cvcheader_r2_c10_f2.gif',1)"><img name="cvcheader_r2_c10" src="cvcheader_r2_c10.gif" width="76" height="18" border="0" alt=""></a></td>
+          <td rowspan="2"><img name="cvcheader_r2_c11" src="cvcheader_r2_c11.gif" width="6" height="39" border="0" alt=""></td>
+          <td><a href="http://www.gazellegroup.com/bcafbclassic/index.html" target="_self" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('cvcheader_r2_c12','','../cvcheader_r2_c12_f2.gif',1)"><img name="cvcheader_r2_c12" src="cvcheader_r2_c12.gif" width="73" height="18" border="0" alt=""></a></td>
+          <td rowspan="2"><img name="cvcheader_r2_c13" src="cvcheader_r2_c13.gif" width="6" height="39" border="0" alt=""></td>
+          <td><a href="http://www.gazellegroup.com/cvcchallenge" target="_self" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('cvcheader_r2_c14','','../cvcheader_r2_c14_f2.gif',1)"><img name="cvcheader_r2_c14" src="cvcheader_r2_c14.gif" width="73" height="18" border="0" alt=""></a></td>
+          <td rowspan="2"><img name="cvcheader_r2_c15" src="cvcheader_r2_c15.gif" width="127" height="39" border="0" alt=""></td>
+          <td><img src="spacer.gif" alt="" name="undefined_2" width="1" height="18" border="0"></td>
+        </tr>
+        <tr> 
+          <td><img name="cvcheader_r3_c2" src="cvcheader_r3_c2.gif" width="39" height="21" border="0" alt=""></td>
+          <td><img name="cvcheader_r3_c4" src="cvcheader_r3_c4.gif" width="59" height="21" border="0" alt=""></td>
+          <td><img name="cvcheader_r3_c6" src="cvcheader_r3_c6.gif" width="92" height="21" border="0" alt=""></td>
+          <td><img name="cvcheader_r3_c8" src="cvcheader_r3_c8.gif" width="82" height="21" border="0" alt=""></td>
+          <td><img name="cvcheader_r3_c10" src="cvcheader_r3_c10.gif" width="76" height="21" border="0" alt=""></td>
+          <td><img name="cvcheader_r3_c12" src="cvcheader_r3_c12.gif" width="73" height="21" border="0" alt=""></td>
+          <td><img name="cvcheader_r3_c14" src="cvcheader_r3_c14.gif" width="73" height="21" border="0" alt=""></td>
+          <td><img src="spacer.gif" alt="" name="undefined_2" width="1" height="21" border="0"></td>
+        </tr>
+      </table> </td>
+  </tr>
+  <tr> 
+    <td width="158" height="570" valign="top"> 
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <!--DWLayoutTable-->
+        <tr> 
+          <td width="158" height="50" valign="top"><img src="cvclogo.jpg" width="145" height="70"></td>
+        </tr>
+        <tr> 
+          <td height="1"></td>
+        </tr>
+        <tr> 
+          <td height="186" valign="top"> <table border="0" cellpadding="0" cellspacing="0" width="145">
+              <!--DWLayoutTable-->
+              <!-- fwtable fwsrc="ikonnavfw.png" fwbase="ikonnavfw.gif" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="0" -->
+              <tr> 
+                <td><img src="spacer.gif" width="28" height="1" border="0" name="undefined_3"></td>
+                <td><img src="spacer.gif" width="85" height="1" border="0" name="undefined_3"></td>
+                <td><img src="spacer.gif" width="32" height="1" border="0" name="undefined_3"></td>
+                <td><img src="spacer.gif" width="1" height="1" border="0" name="undefined_3"></td>
+              </tr>
+              <tr> 
+                <td rowspan="16"><img name="ikonnavfw_r1_c1" src="ikonnavfw_r1_c1.gif" width="28" height="185" border="0"></td>
+                <td><a href="http://www.gazellegroup.com/cvcclassic/index.html" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('ikonnavfw_r1_c2','','../ikonnavfw_r1_c2_f2.gif',1)" ><img name="ikonnavfw_r1_c2" src="ikonnavfw_r1_c2.gif" width="85" height="16" border="0"></a></td>
+                <td rowspan="16"><img name="ikonnavfw_r1_c3" src="ikonnavfw_r1_c3.gif" width="32" height="185" border="0"></td>
+                <td><img src="spacer.gif" width="1" height="16" border="0" name="undefined_3"></td>
+              </tr>
+              <tr> 
+                <td><img name="ikonnavfw_r2_c2" src="ikonnavfw_r2_c2.gif" width="85" height="7" border="0"></td>
+                <td><img src="spacer.gif" width="1" height="7" border="0" name="undefined_3"></td>
+              </tr>
+              <tr> 
+                <td><a href="http://www.gazellegroup.com/cvcclassic/tickets.html" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('ikonnavfw_r3_c2','','../ikonnavfw_r3_c2_f2.gif',1)" ><img name="ikonnavfw_r3_c2" src="ikonnavfw_r3_c2.gif" width="85" height="16" border="0"></a></td>
+                <td><img src="spacer.gif" width="1" height="16" border="0" name="undefined_3"></td>
+              </tr>
+              <tr> 
+                <td><img name="ikonnavfw_r4_c2" src="ikonnavfw_r4_c2.gif" width="85" height="8" border="0"></td>
+                <td><img src="spacer.gif" width="1" height="8" border="0" name="undefined_3"></td>
+              </tr>
+              <tr> 
+                <td><a href="http://www.gazellegroup.com/cvcclassic/history.html" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('ikonnavfw_r5_c2','','../ikonnavfw_r5_c2_f2.gif',1)" ><img name="ikonnavfw_r5_c2" src="ikonnavfw_r5_c2.gif" width="85" height="16" border="0"></a></td>
+                <td><img src="spacer.gif" width="1" height="16" border="0" name="undefined_3"></td>
+              </tr>
+              <tr> 
+                <td><img name="ikonnavfw_r6_c2" src="ikonnavfw_r6_c2.gif" width="85" height="8" border="0"></td>
+                <td><img src="spacer.gif" width="1" height="8" border="0" name="undefined_3"></td>
+              </tr>
+              <tr> 
+                <td><a href="http://www.gazellegroup.com/cvcclassic/purpose.html" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('ikonnavfw_r7_c2','','../ikonnavfw_r7_c2_f2.gif',1)" ><img name="ikonnavfw_r7_c2" src="ikonnavfw_r7_c2.gif" width="85" height="16" border="0"></a></td>
+                <td><img src="spacer.gif" width="1" height="16" border="0" name="undefined_3"></td>
+              </tr>
+              <tr> 
+                <td><img name="ikonnavfw_r8_c2" src="ikonnavfw_r8_c2.gif" width="85" height="8" border="0"></td>
+                <td><img src="spacer.gif" width="1" height="8" border="0" name="undefined_3"></td>
+              </tr>
+              <tr> 
+                <td><a href="http://www.gazellegroup.com/cvcclassic/news.html" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('ikonnavfw_r9_c2','','../ikonnavfw_r9_c2_f2.gif',1)" ><img name="ikonnavfw_r9_c2" src="ikonnavfw_r9_c2.gif" width="85" height="16" border="0"></a></td>
+                <td><img src="spacer.gif" width="1" height="16" border="0" name="undefined_3"></td>
+              </tr>
+              <tr> 
+                <td><img name="ikonnavfw_r10_c2" src="ikonnavfw_r10_c2.gif" width="85" height="8" border="0"></td>
+                <td><img src="spacer.gif" width="1" height="8" border="0" name="undefined_3"></td>
+              </tr>
+              <tr> 
+                <td><a href="http://www.gazellegroup.com/cvcclassic/media.html" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('ikonnavfw_r11_c2','','../ikonnavfw_r11_c2_f2.gif',1)" ><img name="ikonnavfw_r11_c2" src="ikonnavfw_r11_c2.gif" width="85" height="16" border="0"></a></td>
+                <td><img src="spacer.gif" width="1" height="16" border="0" name="undefined_3"></td>
+              </tr>
+              <tr> 
+                <td><img name="ikonnavfw_r12_c2" src="ikonnavfw_r12_c2.gif" width="85" height="8" border="0"></td>
+                <td><img src="spacer.gif" width="1" height="8" border="0" name="undefined_3"></td>
+              </tr>
+              <tr> 
+                <td><a href="http://www.gazellegroup.com/cvcclassic/sponsor.html" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('ikonnavfw_r13_c2','','../ikonnavfw_r13_c2_f2.gif',1)" ><img name="ikonnavfw_r13_c2" src="ikonnavfw_r13_c2.gif" width="85" height="16" border="0"></a></td>
+                <td><img src="spacer.gif" width="1" height="16" border="0" name="undefined_3"></td>
+              </tr>
+              <tr> 
+                <td><img name="ikonnavfw_r14_c2" src="ikonnavfw_r14_c2.gif" width="85" height="8" border="0"></td>
+                <td><img src="spacer.gif" width="1" height="8" border="0" name="undefined_3"></td>
+              </tr>
+              <tr> 
+                <td><a href="http://www.gazellegroup.com/cvcclassic/contact.html" onMouseOut="MM_swapImgRestore()"  onMouseOver="MM_swapImage('ikonnavfw_r15_c2','','../ikonnavfw_r15_c2_f2.gif',1)" ><img name="ikonnavfw_r15_c2" src="ikonnavfw_r15_c2.gif" width="85" height="16" border="0"></a></td>
+                <td><img src="spacer.gif" width="1" height="16" border="0" name="undefined_3"></td>
+              </tr>
+              <tr> 
+                <td><img name="ikonnavfw_r16_c2" src="ikonnavfw_r16_c2.gif" width="85" height="2" border="0"></td>
+                <td><img src="spacer.gif" width="1" height="2" border="0" name="undefined_3"></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td height="3"></td>
+        </tr>
+        <tr> 
+          <td height="185" valign="top"> <table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <!--DWLayoutTable-->
+              <tr> 
+                <td width="146" height="12" valign="top"><img src="events_01.jpg" width="145" height="40"></td>
+              </tr>
+              <tr> 
+                <td valign="top" height="14"><img src="events_02.jpg" width="10" height="55"><a href="http://www.gazellegroup.com/cvcclassic/3on3.html"><img src="events_03.jpg" width="110" height="55" border="0"></a><img src="events_04.jpg" width="25" height="55"></td>
+              </tr>
+              <tr> 
+                <td height="12" valign="top"><img src="events_05.jpg" width="145" height="15"></td>
+              </tr>
+              <tr> 
+                <td height="15" valign="top"><img src="events_06.jpg" width="10" height="55"><a href="http://www.gazellegroup.com/cvcclassic/vip.html"><img src="events_07.jpg" width="110" height="55" border="0"></a><img src="events_08.jpg" width="25" height="55"></td>
+              </tr>
+              <tr> 
+                <td height="13" valign="top"><img src="events_09.jpg" width="145" height="20"></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr> 
+          <td height="85" valign="top"> <table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <!--DWLayoutTable-->
+              <tr> 
+                <td width="158" height="45" align="center" valign="top"><a href="http://www.nabc.com" target="_blank"><img src="leftsidelogo_01.jpg" width="80" height="45" border="0"></a><a href="http://www.cancer.org" target="_blank"><img src="leftsidelogo_02.jpg" width="65" height="45" border="0"></a></td>
+              </tr>
+              <tr> 
+                <td height="40" valign="top"><a href="http://www.gazellegroup.com" target="_blank"><img src="leftsidelogo_03.jpg" width="145" height="40" border="0"></a></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr>
+          <td height="22">&nbsp;</td>
+        </tr>
+      </table>
+    </td>
+    <td width="580" rowspan="2" valign="top"> <!-- #BeginEditable "text" --> 
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr> 
+          <td valign="top" height="91" width="526"> 
+            <p align="right"><b><font face="Arial, Helvetica, sans-serif" size="3">FOR 
+              IMMEDIATE RELEASE<br>
+              </font></b><font face="Arial, Helvetica, sans-serif" size="1"><a href="http://www.gazellegroup.com/cvcclassic/news/ikon110801a.pdf">Printable 
+              Adobe PDF Document here </a></font></p>
+            <p><font face="Arial, Helvetica, sans-serif"><b><font size="5">2001 
+              IKON Classic Recognition Award Recipients Named</font></b></font></p>
+            <p><b><font face="Arial, Helvetica, sans-serif" size="2">Princeton, 
+              NJ (November 8, 2001) &#150; </font></b><font face="Arial, Helvetica, sans-serif" size="2">The 
+              sixth annual IKON Classic, featuring Arizona, Florida, Maryland 
+              and Temple will tip-off the college basketball season November 8th 
+              &amp; 9th in&#147;The World&#146;s Most Famous Arena,&#148; Madison 
+              Square Garden in New York City. Since the tournament&#146;s inception 
+              in 1996, close to $2 million has been raised for the American Cancer 
+              Society. Last year, the IKON Classic began honoring local heroes 
+              for their outstanding work in the fight against cancer. This year&#146;s 
+              honorees include:</font></p>
+            <p><font face="Arial, Helvetica, sans-serif" size="2"><b>Dr. Avi Barbasch 
+              MD<br>
+              </b>Dr. Barbasch currently serves on the American Cancer Society&#146;s 
+              National Research and Medical Affairs Committee, where he works 
+              to establish screening policies and therapeutic guidelines, and 
+              is on the Board of Directors of the American Cancer Society&#146;s 
+              Eastern Division. Dr. Barbasch was instrumental in the development 
+              of a CD prototype for interactive breast cancer education. In 1999, 
+              he was given the St. George Award, the highest national award an 
+              ACS volunteer can receive.</font></p>
+            <p><font face="Arial, Helvetica, sans-serif" size="2"> <b>Stephan 
+              Johnson, Esq.<br>
+              </b>For more than 25 years, Stephan Johnson has served on more than 
+              20 ACS boards, committees and work groups and has contributed to 
+              a number of significant accomplishments, including the passage of 
+              New York State&#146;s Clean Indoor Air Act and the reorganization 
+              of the ACS Eastern Division. Now, as a cancer survivor himself, 
+              Johnson has a whole new perspective on the importance of ACS patient 
+              service programs and leadership on quality of life issues for cancer 
+              patients and their families.</font></p>
+            <p><font face="Arial, Helvetica, sans-serif" size="2"><b>Marguerite 
+              Schlag RN, MSN, EdD<br>
+              </b>A 23-year volunteer with the ACS, Dr. Schlag has had an integral 
+              role in developing and carrying out the Eastern Division&#146;s 
+              training program. She has also been a driving force in cultivating 
+              both the Division&#146;s breast cancer program and an outreach program 
+              that aids medically underserved New Jerseyans. Dr. Schlag has served 
+              as chairperson for the organization&#146;s former New Jersey Division 
+              Board of Directors and Executive Committee, as well as its Public 
+              Issues and Breast Cancer Task Force.</font></p>
+            <p><font face="Arial, Helvetica, sans-serif" size="2">All three honorees 
+              will be recognized at the Tip-Off reception at the New York Stock 
+              Exchange and during a ceremony on the court at Madison Square Garden 
+              during the Championship Game of the IKON CLASSIC.</font></p>
+            <p><font face="Arial, Helvetica, sans-serif" size="2">Match-Ups and 
+              television information for the IKON Classic are as follows:</font></p>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td><font face="Arial, Helvetica, sans-serif" size="2"><b>Thursday, 
+                  November 8th, 6:30 p.m. EST</b></font></td>
+                <td><font face="Arial, Helvetica, sans-serif" size="2"><b>Friday, 
+                  November 9th, 6:30 p.m. EST</b></font></td>
+              </tr>
+              <tr> 
+                <td><font face="Arial, Helvetica, sans-serif" size="2">Temple 
+                  vs. Florida &#150; ESPN2</font></td>
+                <td><font face="Arial, Helvetica, sans-serif" size="2">Consolation 
+                  Game &#150; ESPN2</font></td>
+              </tr>
+              <tr> 
+                <td><font face="Arial, Helvetica, sans-serif" size="2">Arizona 
+                  vs. Maryland &#150; ESPN2 </font></td>
+                <td><font face="Arial, Helvetica, sans-serif" size="2">Championship 
+                  Game &#150; ESPN</font></td>
+              </tr>
+            </table>
+            <p><font face="Arial, Helvetica, sans-serif" size="2">Tickets are 
+              now available through the Madison Square Garden Box Office or by 
+              calling TicketMaster at (212) 307-7171.</font></p>
+            <p><font face="Arial, Helvetica, sans-serif" size="2"> IKON Office 
+              Solutions (<a href="http://www.ikon.com">www.ikon.com</a>) is the 
+              title sponsor of the IKON Classic. One of the world&#146;s leading 
+              providers of products and services that help businesses communicate, 
+              IKON offers customers total business solutions for every office, 
+              production and outsourcing need. </font></p>
+            <p><font face="Arial, Helvetica, sans-serif" size="2">The Coaches 
+              vs. Cancer &reg; program, created by the American Cancer Society 
+              and the National Association of Basketball Coaches, exists to leverage 
+              the strength, community leadership and celebrity of our country&#146;s 
+              basketball coaches to raise awareness and in turn, reduce cancer 
+              risk through education programs while raising funds for the American 
+              Cancer Society.</font></p>
+            <p><font face="Arial, Helvetica, sans-serif" size="2"> For more information, 
+              please visit (<a href="http://www.ikonclassic.com" target="_blank">www.ikonclassic.com</a>) 
+              or contact Tim O&#146;Donnell at 609-921-1300 or <a href="mailto:todonnell@gazellegroup.com">todonnell@gazellegroup.com</a>. 
+              For American Cancer Society information contact Lee Ann Broussard 
+              at (404) 417-5829.</font></p>
+    </td>
+          <td width="54"></td>
+        </tr>
+        <tr> 
+          <td valign="top" height="131"> 
+            <table width="100%" border="0" cellpadding="15" cellspacing="0">
+              <tr> 
+                <td width="140" height="101" valign="top"><img src="acslogo.gif" width="140" height="90"></td>
+                <td width="136" valign="top"> 
+                  <div align="center"><font face="Arial, Helvetica, sans-serif" size="2">The 
+                    Gazelle Group<br>
+                    475 Wall Street<br>
+                    Princeton, NJ 08540<br>
+                    phone &#149; 609.921.1300<br>
+                    fax &#149; 609.921.2332<br>
+                    <a href="http:www.gazellegroup.com">www.GazelleGroup.com </a></font></div>
+                </td>
+                <td width="160" valign="top"><img src="nabclogo.gif" width="160" height="75"></td>
+              </tr>
+            </table>
+          </td>
+          <td></td>
+        </tr>
+      </table>
+      <!-- #EndEditable --></td>
+    <td width="63"></td>
+  </tr>
+  <tr> 
+    <td height="78"></td>
+    <td></td>
+  </tr>
+</table>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Hide JavaScript from Java-Impaired Browsers
+sctr=Math.floor(Math.random()*number_of_sponsors);
+sctrb=0;
+rotateIt();
+rotateItb();
+// End Hiding -->
+</SCRIPT>
+</body>
+<!-- #EndTemplate --></html>

@@ -1,0 +1,222 @@
+	
+/* Masthead Starts */
+	
+div#shell div#page div#masthead {
+	position: relative;
+	overflow: hidden;
+	_overflow: visible;
+	border-bottom: 1px solid black;
+	clear: both;
+	} 
+
+
+/* tabz */
+	
+div#shell ul.tabz {
+	display: block;
+	padding: 0px;
+	margin: 0px;
+	white-space: nowrap;
+	text-transform: uppercase;
+	z-index: 5500;
+/*\*/	vertical-align: middle;/*\*/
+	font-family: Arial, sans-serif;
+	}
+		
+div#shell ul.tabz li {
+	margin: 0px;
+	display: block;
+	float: left;
+	background-color: #f0f4f5;
+	border: 1px solid #cccccc;
+	border-width: 1px 1px 1px 0px;
+	white-space: nowrap;
+	padding: 4px 7px 3px 7px;
+	z-index: 6000;
+	background-image: none;
+	}
+
+	
+/* Navigation Starts */
+
+div#shell div#page div#navigation {
+	display: block;
+	position: relative;
+	clear: both;
+	text-align: center;
+	overflow: visible;
+	_height: 53px;
+	border-bottom: 1px solid #d3d3d3;
+	border-right: 1px solid #ccc;
+	}     
+	
+	* html div#shell div#page div#navigation.nochild {
+      height: 27px!important;
+		border-bottom: none!important;
+		}
+		
+	div#shell div#page div#navigation a {
+	color: #333333;
+	}          
+
+	div#shell div#page div#navigation ul li {
+	text-align: center;
+	background-color: white;
+	font-family: arial, serif;
+	font-size: 11px !important;
+	border-width: 0px 0px 1px 1px;
+	border-color: #d3d3d3;
+	/*\*/vertical-align: top;/*\*/
+	padding: 7px 0px 0px 0px;
+	min-height: 18px; 
+	_height: 18px; 
+	overflow: visible;
+	background-image: none;
+	border-left-width: expression( this == this.parentNode.firstChild ? "0px" : "1px" );
+	}
+
+	div#shell div#page div#navigation ul li:first-child {
+	border-left: none;
+	}
+
+	div#shell div#page div#navigation ul li.selected {
+	background-color: #E1E1EF;
+	border-bottom: 1px solid #E1E1EF;
+	}
+
+	div#shell div#page div#navigation ul.tabz li ul {
+	display: none;
+	}
+
+	div#shell div#page div#navigation div#subNavigation ul,
+	div#shell div#page div#navigation ul.tabz li.selected ul {
+	border-top: none;
+	position: absolute;
+	min-width: 948px; _width: 948px;
+	display: block;
+	left: 0px;
+	top: 26px;
+	min-height: 19px; 
+	_height: 20px;
+	padding: 8px 15px 0px 15px;
+	_padding-top: 7px;
+	text-align: center;
+	background-color: #E1E1EF;
+	list-style: none;
+	margin: 0px;
+	white-space: nowrap;
+	border-left:#ccc 1px solid;
+	/*\*/vertical-align: top;/*\*/
+	font-weight: normal;
+	}
+
+	div#shell div#page div#navigation div#subNavigation ul {
+	position: static;
+	clear: both;
+	text-transform: uppercase;
+	white-space: normal;
+	}
+
+
+	div#shell div#page div#navigation div#subNavigation ul li,
+	div#shell div#page div#navigation ul.tabz li.selected ul li {
+	border: none;
+	font-family: Arial, sans-serif;
+	background-color: #E1E1EF;
+	text-align: center;
+	display: inline;
+	padding: 0px 6px 0px 6px;
+	margin: 0px;
+	float: none;
+	font-weight: normal;
+	}
+
+	div#shell div#page div#navigation div#subNavigation ul li.selected.children,
+	div#shell div#page div#navigation ul.tabz li.selected ul li.selected.children {
+	background: white;
+	border: 1px solid #cccccc;
+	padding: 4px 10px 3px 10px;
+	font-weight: bold;
+	}
+
+	div#shell div#page div#navigation div#subNavigation ul li.selected.children ul,
+	div#shell div#page div#navigation ul.tabz li.selected ul li.selected ul {
+	border-top: none;
+	display: inline;
+	position: static;
+	width: auto;
+	margin: 0px;
+	padding: 0px;
+	/*\*/vertical-align: top;/*\*/
+	background: none;
+	font-weight: normal;
+	}
+
+	div#shell div#page div#navigation div#subNavigation ul li.selected.children ul li,
+	div#shell div#page div#navigation ul.tabz li.selected ul li.selected ul li {
+	position: static;
+	margin: 0px;
+	background: none;
+	text-transform: none;
+	}
+
+	div#shell div#page div#navigation div#subNavigation ul li.selected.children ul li a,
+	div#shell div#page div#navigation ul.tabz li.selected ul li.selected.children ul li a {
+	color: #004276;
+	}
+
+	div#shell div#page div#navigation div#subNavigation ul li.selected.nochildren,
+	div#shell div#page div#navigation ul.tabz li.selected ul li.selected.nochildren {  
+		 font-weight: bold;   
+	   }   
+
+	div#shell div#page div#navigation div#subNavigation ul li.selected.children ul li.selected,
+	div#shell div#page div#navigation ul.tabz li.selected ul li.selected.children ul li.selected {  
+		 font-weight: bold!important;
+	   background-color: white;
+	   padding: 0px 6px 0px 6px;
+	   }	
+
+	div#shell div#page div#navigation ul li#navNews			{ min-width: 45px; _width: 46px; _border-left-width: 0px;border-left:#ccc 1px solid; }
+	div#shell div#page div#navigation ul li#navFeatured		{ min-width: 71px; _width: 67px; }
+	div#shell div#page div#navigation ul li#navFinance		{ min-width: 60px; _width: 61px; }
+	div#shell div#page div#navigation ul li#navAE			{ min-width: 45px; _width: 44px; }
+	div#shell div#page div#navigation ul li#navHF			{ min-width: 97px; _width: 96px; }
+	div#shell div#page div#navigation ul li#navSA			{ min-width: 105px; _width: 104px; }
+	div#shell div#page div#navigation ul li#navClife		{ min-width: 86px; _width: 89px; }
+	div#shell div#page div#navigation ul li#navprayers		{ min-width: 64px; _width: 62px; }
+	div#shell div#page div#navigation ul li#navCommunity		{ min-width: 74px; _width: 76px; }
+	div#shell div#page div#navigation ul li#navForum		{ min-width: 51px; _width: 55px; }
+	div#shell div#page div#navigation ul li#navStyle		{ min-width: 42px; _width: 43px; }
+	div#shell div#page div#navigation ul li#navYCV			{ min-width: 37px; _width: 39px; }
+	div#shell div#page div#navigation ul li#navBooks		{ min-width: 50px; _width: 52px; }
+	div#shell div#page div#navigation ul li#navServices		{ min-width: 66px; _width: 64px; }
+	div#shell div#page div#navigation ul li#navPRWire		{ min-width: 55px; _width: 55px; }
+	div#shell div#page div#navigation ul li#navAdvertise		{ min-width: 58px; _width: 54px; }
+
+	div#shell div#page div#navigation div#subNavigation ul#subnavNews,
+	div#shell div#page div#navigation div#subNavigation ul#subnavFeatured,
+	div#shell div#page div#navigation div#subNavigation ul#subnavFinance,
+	div#shell div#page div#navigation div#subNavigation ul#subnavAE,
+	div#shell div#page div#navigation div#subNavigation ul#subnavHF,
+	div#shell div#page div#navigation ul li#navNews.selected ul,
+	div#shell div#page div#navigation ul li#navFeatured.selected ul,
+	div#shell div#page div#navigation ul li#navFinance.selected ul,
+	div#shell div#page div#navigation ul li#navAE.selected ul,
+	div#shell div#page div#navigation ul li#navHF.selected ul {text-align: left;}
+
+	div#shell div#page div#navigation div#subNavigation ul#subnavCommunity,	
+	div#shell div#page div#navigation ul li#navCommunity.selected ul { text-align: center; }
+
+	div#shell div#page div#navigation ul li#navStyle.selected ul#subnavStyle,
+	div#shell div#page div#navigation ul li#navServices.selected ul#subnavServices,
+	div#shell div#page div#navigation ul li#navAdvertise.selected ul#subnavAdvertise ,
+	div#shell div#page div#navigation ul li#navStyle.selected ul,
+	div#shell div#page div#navigation ul li#navServices.selected ul,
+	div#shell div#page div#navigation ul li#navPRWire.selected ul,
+	div#shell div#page div#navigation ul li#navAdvertise.selected ul,
+	div#shell div#page div#navigation div#subNavigation ul#subnavBooks,	
+	div#shell div#page div#navigation ul li#navBooks.selected ul,
+	div#shell div#page div#navigation div#subNavigation ul#subnavYCV,	
+	div#shell div#page div#navigation ul li#navYCV.selected ul {  text-align: right;  }
+	

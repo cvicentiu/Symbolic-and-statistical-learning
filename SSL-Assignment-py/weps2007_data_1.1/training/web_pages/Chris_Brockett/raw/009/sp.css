@@ -1,0 +1,240 @@
+/*************** Original vz.css styles *******/
+A.sbar {
+color : white
+}
+
+SPAN.text   {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+}
+
+SPAN.SBtitle   {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 13px;
+color : red;
+font-weight : bold
+}
+
+SPAN.SBtext   {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 13px;
+color : white;
+line-height : 16px
+}
+
+SPAN.SBtextextend   {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 13px;
+color : white;
+line-height : 19px
+}
+
+SPAN.title1   {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+font-weight : bold;
+color : white
+}
+
+SPAN.title2   {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+font-weight : bold;
+color : black
+}
+
+SPAN.help   {
+font-family: Geneva, Arial, Helvetica;
+font-size: 13px;
+color : black
+}
+
+SPAN.titleHelp   {
+font-family: Geneva, Arial, Helvetica;
+font-size: 16px;
+font-weight : bold;
+color : black
+}
+form { margin-top: 0px; }
+
+/*** Begin original yp.advanced.css content ***/
+
+.para {
+	display: none;
+	position: relative;}
+
+.openpara {
+	position: relative;}
+	
+.page {
+	visibility: hidden;
+	position: relative;}
+
+.nopage {
+	visibility: visible;
+	position: relative;}
+	
+			
+/************ BEGIN TEXT STYLES */
+
+.bodytext {font-family: Geneva, Arial, Helvetica; font-size: 13px; } 
+/* Main body text */
+
+.bldbodytext {font-family: Geneva, Arial, Helvetica; font-size: 13px; font-weight: bold; }
+/* Main body text with bold */
+
+.errortext {font-family: Geneva, Arial, Helvetica; color: #0066CC; font-weight: bold; font-size: medium; text-decoration: none; }
+/* Error text */
+
+.bodytexttlt {font-family: Geneva, Arial, Helvetica; font-size: 13px; vertical-align: top; text-align: left; }
+/* Main body text with top, left alignment */
+
+.bodytextmlt {font-family: Geneva, Arial, Helvetica; font-size: 13px; vertical-align: middle; text-align: left; }
+/* Main body text with middle, left alignment */
+
+.bodytextblt {font-family: Geneva, Arial, Helvetica; font-size: 13px; vertical-align: bottom; text-align: left; }
+/* Main body text with bottom, left alignment */
+
+.bldbodytexttlt {font-family: Geneva, Arial, Helvetica; font-size: 13px; font-weight: bold; vertical-align: top; text-align: left; }
+/* Main body text with bold and top, left alignment */
+
+.bldbodytextmlt {font-family: Geneva, Arial, Helvetica; font-size: 13px; font-weight: bold; vertical-align: middle; text-align: left; }
+/* Main body text with bold and middle, left alignment */
+
+.bldbodytextblt {font-family: Geneva, Arial, Helvetica; font-size: 13px; font-weight: bold; vertical-align: bottom; text-align: left; }
+/* Main body text with bold and bottom, left alignment */
+
+.ltltext {font-family: Geneva, Arial, Helvetica; font-size: xx-small; }
+/* Small body text */
+
+/************ END TEXT STYLES */
+
+
+
+
+/************ BEGIN ALIGNMENT STYLES */
+
+.tlt {vertical-align: top; text-align: left; }
+.trt {vertical-align: top; text-align: right; }
+.tctr {vertical-align: top; text-align: center; }
+
+.mlt {vertical-align: middle; text-align: left; }
+.mrt {vertical-align: middle; text-align: right; }
+.mctr {vertical-align: middle; text-align: center; }
+
+.blt {vertical-align: bottom; text-align: left; }
+.brt {vertical-align: bottom; text-align: right; }
+.bctr {vertical-align: bottom; text-align: center; }
+
+/************ END ALIGNMENT STYLES */
+
+
+
+
+/************ BEGIN STYLES FOR ADVANCED SEARCH TAB MENU */
+
+A.navlc:link {font-family: Geneva, Arial, Helvetica; color: #FFFFFF; font-weight: bold; font-size: 11px; text-decoration: none; }
+A.navlc:visited {font-family: Geneva, Arial, Helvetica; color: #FFFFFF; font-weight: bold; font-size: 11px; text-decoration: none; }	
+
+A.nounderline:link {text-decoration: none; }
+A.nounderline:visited {text-decoration: none; }	
+
+.nav {font-family: Geneva, Arial, Helvetica; color: #000066; font-weight: bold; font-size: 13px; text-decoration: none; }
+.navlc {font-family: Geneva, Arial, Helvetica; color: #000066; font-weight: bold; font-size: 13px; text-decoration: none; }	
+
+.nav2 {font-family: Geneva, Arial, Helvetica; color: #FFFFFF; font-weight: bold; font-size: 13px; text-decoration: none; }
+.navlc2 {font-family: Geneva, Arial, Helvetica; color: #FFFFFF; font-weight: bold; font-size: 13px; text-decoration: none; }	
+
+.nav3 {font-family: Geneva, Arial, Helvetica; color: #FFFFFF; font-weight: bold; font-size: 13px; text-decoration: none; }
+.navlc3 {font-family: Geneva, Arial, Helvetica; color: #FFFFFF; font-weight: bold; font-size: 13px; text-decoration: none; }	
+
+.activeformstabheadermctr {BACKGROUND-COLOR: #FFFFCC; vertical-align: middle; text-align: center; }
+.b2bactiveformstabheadermctr {BACKGROUND-COLOR: #D4D393; vertical-align: middle; text-align: center; }
+.activeformstabheadertctr {BACKGROUND-COLOR: #FFFFCC; vertical-align: top; text-align: center; }
+.b2bactiveformstabheadertctr {BACKGROUND-COLOR: #D4D393; vertical-align: top; text-align: center; }
+.formstabheadermctr {BACKGROUND-COLOR: #000066; vertical-align: middle; text-align: center; }
+.formstabheadertctr {BACKGROUND-COLOR: #000066; vertical-align: top; text-align: center; }
+
+/************ END STYLES FOR ADVANCED SEARCH TAB MENU */
+
+
+
+
+
+/************ BEGIN LIST ITEM STYLES */
+
+LI.sp {margin: 0px 0px 0px -20px; list-style-type: disc; }
+
+LI.inner {margin: 0px 0px 0px -20px; list-style-type: circle; }
+
+LI.padded {margin: 0px 3px 10px -20px; list-style-type: disc; }
+
+/************ END LIST ITEM STYLES */
+
+
+
+
+/************ BEGIN HR STYLES */ 
+
+.ruler {BACKGROUND-COLOR: #666699; }
+.hrruler {BACKGROUND-COLOR: #999999; }
+
+/************ END LIST ITEM STYLES */
+
+
+
+
+/************ BEGIN BACKGROUND COLOR STYLES */
+
+.topmenubtm {BACKGROUND-COLOR: #CCCCCC; } 
+/* Background color for the bottom part of the tab menus */
+
+.leftmenubkgrd {BACKGROUND-COLOR: #000000; }
+/* Background color for the left menu */
+
+.footerbkgrd {BACKGROUND-COLOR: #666699; }
+/* Background color for the footer */
+
+.maintableheader {BACKGROUND-COLOR: #000066; vertical-align: middle; text-align: center; }
+/* Main table header background color with middle, center alignment */
+
+.maintableheadertlt {BACKGROUND-COLOR: #000066; vertical-align: top; text-align: left; }
+/* Main table header background color with top, left alignment */
+
+.maintableheadermlt {BACKGROUND-COLOR: #000066; vertical-align: middle; text-align: left; }
+/* Main table header background color with middle, left alignment */
+
+.maintablebkgrd {BACKGROUND-COLOR: #FFFFCC; }
+/* Main table background color */
+
+.maintablebkgrdtlt {BACKGROUND-COLOR: #FFFFCC; vertical-align: top; text-align: left; }
+/* Main table background color with top, left alignment */
+
+.b2bmaintablebkgrd {BACKGROUND-COLOR: #D4D393; }
+/* B2B table background color */
+
+.b2bmaintablebkgrdtlt {BACKGROUND-COLOR: #D4D393; vertical-align: top; text-align: left; }
+/* B2B table background color with top, left alignment */
+
+.pagebkgrd {BACKGROUND-COLOR: #FFFFFF; }
+/* Page background color */
+
+.formstableborder {BACKGROUND-COLOR: #000066; }
+/* Background color for borders */
+
+/************ END BACKGROUND COLOR STYLES */
+
+
+
+/************ ACCESSIBILITY-SKIP TO MAIN CONTENT STYLE */
+
+.hidden
+	{
+	position:absolute;
+ 	left:0px;
+ 	top:-500px;
+ 	width:1px;
+ 	height:1px;
+ 	overflow:hidden;
+ 	}
+

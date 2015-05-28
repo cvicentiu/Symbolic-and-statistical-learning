@@ -1,0 +1,597 @@
+/* GLOBAL ELEMENTS ------------------------------------------------------------------- */
+body {
+     font: 100.01% Verdana, Arial, Helvetica, sans-serif; /* Sets default font family options and default font size. This odd value compensates for several browser bugs. First, setting a default font size in percent (instead of em) eliminates an WinIE problem with growing or shrinking fonts out of proportion if they are later set in ems in other elements. Additionally, some versions of Opera will draw a default font-size of 100% too small compared to other browsers. Safari, on the other hand, has a problem with a font-size of 101%. Current "best" suggestion is to use the 100.01% value for this property. */
+     background: #A00402; /* Sets background color of page. */
+     margin: 0; /* Gets rid of default margin on body that most browsers add. */
+     padding: 0; /* Gets rid of default padding on body that Opera adds. */
+     text-align: center; /* Centers the page contents in WinIE5.x. */
+	 scrollbar-arrow-color:#FFFFFF; 
+	 scrollbar-face-color:#FF0000;
+	 scrollbar-shadow-color: #0000AA; 
+	 scrollbar-highlight-color: #0000FF; 
+	 scrollbar-track-color: #AECFEC;
+	 
+}
+
+/* Main div for all other content on page. A main wrapper div allows us to easily center everything in the viewport. */
+#holder {
+     margin: 10px auto 0 auto; /* The auto margin on the left and right center the holder div in standard compliant browsers. The 10px top margin adds space between the top of the holder div and the edge of the viewport. */
+     width: 767px; /* Sets width of main container to fit within most maximized 800x600 windows. */
+     text-align: left; /* Overwrites the center-aligned text set on the body. */
+	  z-index: 10;
+}
+
+/* Needed to hold link to main content in compliance with Section 508, rule o. */
+#skipnav {
+	position: absolute; /* Sets the div to be positioned in a precise spot in relation to its nearest postioned ancestor, or barring that, the body. Also removes it from the flow, so it will not push down the header image. */
+	top: 0; /* Places the div at the top of body. */
+	left: 0; /* Places the div at the left side of body. */
+	margin-left: -1000px; /* Moves the div off the left side of the screen, making it invisible to those using visual browsers but accessible to those using screen readers and other user agents. */
+	}
+
+/* Global navigation area. */
+#nav {
+	position: relative;
+	width: 767px; /* Sets width to fill holder div. */
+	background:   url("/Assets/images/nav.jpg") repeat-y; /* Sets background image on nav div and tiles it downward so that if it grows or the items wrap the background will continue. */
+	padding: 5px 0px; /* Adds space within the nav div on the top and bottom so the nav list doesn't butt up against its edges. */
+	z-index: 300;
+}
+
+
+/* Wrapper for all content between nav and footer. */
+#contentwrapper {
+	background:  url("/Assets/images/repeat.jpg") repeat-y; /* Adds strip showing three columns as background image to wrapper div. It is tiled downward to create the appearance of three columns. Also given a background color in case images are not available. */
+	z-index: 10;
+}
+
+/* Another wrapper for the content is needed because we need two background images for the content area -- the repeating column part, and the top curved part. Since each div can only have one background image, we need to use two layered divs to create the effect. */
+#content {
+	background:   url("/Assets/images/inner_top.jpg") no-repeat; /* Adds top curved part of content area rectangle image, which lays over the repeating background image of the contentwrapper div to create the appearance of a single image. Set to only show once. */
+	padding: 15px 0 0 0; /* Adds space between top of box and start of content so it doesn't cover up curved area. */
+	position: relative; /* Allows the absolutely positioned #subnav div to base its position off #content. */
+	color: #000; /* Sets color of text to black. */
+	font-size: 11px; /* Sets font size smaller than default. We can use ems safely in IE because we've set a percentage font size on the body. */
+	z-index: 10;
+}
+#contentbigtxt {
+	background:   url("/Assets/images/inner_top.jpg") no-repeat; /* Adds top curved part of content area rectangle image, which lays over the repeating background image of the contentwrapper div to create the appearance of a single image. Set to only show once. */
+	padding: 15px 0 0 0; /* Adds space between top of box and start of content so it doesn't cover up curved area. */
+	position: relative; /* Allows the absolutely positioned #subnav div to base its position off #content. */
+	color: #000; /* Sets color of text to black. */
+	font-size: 14px; /* Sets font size smaller than default. We can use ems safely in IE because we've set a percentage font size on the body. */
+	z-index: 10;
+}
+/* WinIE5 needs the following selector to display the padding in #content. This comment cannot be in the selector or it will trigger the end of the MacIE hide. */
+/* hide from MacIE \*/
+* html #content {
+	height: 1%;
+	}
+/* end hide */
+
+/* Left column for extra info, feature items, news, etc. */
+#info {
+	float: left; /* Moves div to left side of #content. */
+	width: 140px; /* Sets width. */
+	margin: 0 15px 10px 15px; /* Moves div away from edges of container and surrounding content. */
+	display: inline; /* Prevents WinIE from doubling the left margin, which it will do on left floats. */
+	font-size: .9em; /* Sets font size smaller than default. */
+	z-index: 10;
+}
+
+
+/* Center column for main text. */
+#main {
+	margin: 0 200px 0 180px; /* Sets left and right margins to leave space for floated left column and absolutely positioned right column. */
+	padding: 0px 10px 10px; /* Adds large space at top of div for background to display in without text overlapping. Also adds 10px space to left, right, and bottom. */
+	z-index: 10;
+}
+
+/* Right column for info  */
+#rinfo{
+ 	float: right;
+	width: 155px;	
+	margin: 5px 15px 10px 10px; /* Moves div away from edges of container and surrounding content. */
+   display:inline;  /* Prevents WinIE from doubling the left margin, which it will do on left floats. */
+   font-size: 11px; /* Sets font size smaller than default. */
+	z-index: 10;
+}
+
+#rinfo a:link, #rinfo a:visited {
+	color: #424E85; /* Sets link color of unvisited and visited links to navy. */
+	text-decoration: none; /* Removes default link underlines. */
+	}
+#rinfo a:hover, #rinfo a:active, #rinfo a:focus {
+	
+	background: #AECFEC; /* Sets background color to blue on hover, activation, and focus. */
+}
+
+
+
+/* Right column for sub-navigation list. */
+#subnav {
+	position: absolute; /* Positions div in a precise spot in relation to its nearest positioned ancestor, which is #content. */
+	width: 190px; /* Sets width. */
+	top: 10px; /* Moves div down 35px from the top of #content. */
+	right:-15px; /* Moves div 33px over from the right of #content. */
+}
+#subnav ul {
+	margin: 0; /* Removes default list margin added by some browsers. */
+	padding: 0; /* Removes default list padding added by some browsers. */
+	list-style-type: none; /* Removes default list bullets. */
+}
+#subnav li {
+	margin-top: 8px; /* Spaces list items out from each other. */
+}
+#subnav ul a:link, #subnav ul a:visited {
+	color: #424E85; /* Sets link color of unvisited and visited links to dark purple. */
+	text-decoration: none; /* Removes default link underlines. */
+	padding: 2px 4px; /* Creates space around links so that background color set in selector below does not so tightly enclose link text. */
+}
+#subnav ul a:hover, #subnav ul a:active, #subnav ul a:focus {
+	color: #DD0101; /* Sets link color to brighter blue on hover, activation, and focus. */
+	background: #AECFEC; /* Sets background color to light gray on hover, activation, and focus. */
+}
+
+/* Footer for page. */
+#footer1 {
+	background:   url("/Assets/images/over_bott.jpg") no-repeat; /* Sets curved bottom part of background image of div above. Since #footer butts up against #contentwrapper, it creates the appearance of a single image. Image set to appear only once. */
+	/*background-color: #424E85; */
+	padding: 10px 10px 10px 10px; /* Creates room for background image to display, so text starts below end of image. */
+	color: #FFFFFF; /* Sets text color to white. */
+	font-size: 0.7em; /* Sets font size smaller than default and smaller than content text. */
+}
+#footer {
+	background-color: #424E85; 
+	padding: 20px 10px 10px 10px; /* Creates room for background image to display, so text starts below end of image. */
+	color: #FFFFFF; /* Sets text color to white. */
+	font-size: 0.7em; /* Sets font size smaller than default and smaller than content text. */
+}
+#footer p {
+	/*float: left; /* Moves paragraph to left side of #footer. */
+	margin: 0; /* Removes default margin added to paragraphs. */
+	
+}
+#footer ul {
+	/*float: right; /* Moves list to right side of #footer. */
+	margin: 0 6px 20px 0; /* 6px right margin aligns edge of text with border of content div instead of the edge of its shadow. 20px bottom margin provides space between end of footer and edge of window. */
+	padding: 0; /* Removes default padding added to lists by some browsers. */
+	background-color: #424E85;
+}
+#footer p, #footer ul {
+	display: inline-block; /* Prevents MacIE from expanding the floats to 100%, which would keep them from sitting on the same line. */
+}
+/* The following selector overwrites the display value of the paragraph and list back to the correct value, but is hidden from MacIE so it still gets the value it needs. */
+/* hide from MacIE \*/
+#footer p, #footer ul {
+	display: block;
+}
+/* end hide */
+#footer li {
+	display: inline; /* Makes list items display horizontally. */
+	margin: 0; /* Removes default margin some browsers add to list items. */
+	padding: 0; /* Removes default padding some browsers add to list items. */
+}
+#footer a {
+	color: #fff; /* Sets color of links to slightly darker gray than surrounding text. */
+	}
+#footer a:hover {
+	color: #fff; /* Sets color of links on hover to white. */
+	background: #A00402;
+	}
+
+
+/* CONTAINING FLOATS ----------------------------------------------------------------- */
+/* The following selectors keep floats from overflowing out of their parent elements. This is done by generating a character within the parent but after the float, so that the parent must expand to hold the generated character, appearing to contain the floats in the process. */
+.clearfix:after {
+  content: "."; /* This dot is the actual content that will be appended to the end any div this class is applied to. */
+  clear: both; /* Makes the generated content appear after the floats. */
+  height: 0; /* Sets its height to zero so it doesn't show. */
+  visibility: hidden; /* Sets its visibility to hidden so it doesn't show. */
+  display: block; /* Overwrites the default inline display of the generated content. Needed because only blocks can have clear set on them. */
+}
+ 
+.clearfix {
+	display: inline-block; /* Makes it work in MacIE. MacIE does not support generated content but will automatically contain a float if the container has this display property. */
+	}
+
+/* The first selector below makes it work in WinIE. WinIE does not support generated content, but will automatically contain a float if the container has a width or height assigned. "height: 1%" can be used because WinIE will not honor this height and will expand the div to whatever height necessary to show the content. */
+/* The second selector below overwrites the inline-block display used to help MacIE. */
+/* Hides from MacIE \*/
+* html .clearfix {
+	height: 1%;
+	}
+.clearfix {
+	display: block;
+	}
+/* End hide from MacIE */
+
+
+/* LINKS -------------------------------------------------------------------------------------- */
+a {
+	color: #424E85; /* Sets color of links within main content to blue used on body background. */
+}
+ a:hover {
+	color: #A00402; 
+ text-decoration: none;
+  background-color:  #AECFEC; /* Sets color of visited, hovered, and active links within main content to dark purple. */
+}
+a:active, a:visited   {
+	color: #A00402; 
+
+ }
+
+
+/* HEADINGS ------------------------------------------------------------------------- */
+h1 {
+	font-size: 1.3em; /* Sets font size of top level headings to larger than default. */
+	}
+h2 {
+	font-size: 1.1em; /* Sets font size of second level headings to larger than default but smaller than h1. */
+	}
+h3, h4, h5, h6 {
+	font-size: 1em; /* Sets font size for other headings to same size as default. Headings are bold by default, so they will still be distinguishable. */
+	}
+
+
+/* CONTACT PAGE -------------------------------------------------------------------- */
+/* The following four selectors all apply only when the body has an id of contactpg. */
+body#contactpg #contentwrapper {
+	background:   url("/Assets/images/repeat2.jpg") repeat-y; /* Overwrites the background image used on #contentwrapper in order to create a two-column look instead of three. */
+}
+body#contactpg #content {
+	background:   url("/Assets/images/inner_top2.jpg") no-repeat; /* Overwrites the background image used on #content in order to create a two-column look instead of three. */
+}
+body#contactpg #main {
+	margin-right:20px; /* Removes the space previously reserved for #info, because it has been removed on the contact page. */
+	padding-top: 0; /* Removes the space at the top of the container, because there is no longer any background image to accommodate. */
+}
+body#contactpg #footer1  {
+	background:   url("/Assets/images/over_bott2.jpg") no-repeat; /* Overwrites the background image used on #footer in order to create a two-column look instead of three. */
+}
+body#contactpg #footer{
+	
+	background-color: #424E85;
+}
+/* oONE PAGE -------------------------------------------------------------------- */
+/* The following four selectors all apply only when the body has an id of onepg. */
+body#onepg #contentwrapper {
+	background:   url("/Assets/images/repeat3.jpg") repeat-y; /* Overwrites the background image used on #contentwrapper in order to create a two-column look instead of three. */
+}
+body#onepg #content {
+	background:   url("/Assets/images/inner_top3.jpg") no-repeat; /* Overwrites the background image used on #content in order to create a two-column look instead of three. */
+}
+body#onepg #main {
+	margin-right:20px; /* Removes the space previously reserved for #info, because it has been removed on the contact page. */
+	margin-left: 20px;
+	padding-top: 0; /* Removes the space at the top of the container, because there is no longer any background image to accommodate. */
+}
+
+body#onepg #footer1  {
+	background:   url("/Assets/images/over_bott3.jpg") no-repeat; /* Overwrites the background image used on #footer in order to create a two-column look instead of three. */
+}
+body#onepg #footer{
+	
+	background-color: #424E85;
+}
+
+
+/*  P7 menus ----*/
+
+.p7tbsub {background-color: #AECFEC; border: .1px solid #FFFFFF; font-size: 12px; font-family: Arial, Helvetica, sans-serif; layer-background-color: #DFECEC;}
+.p7tbsub p {margin: 0px 2px; padding: 2px 2px 2px 2px;}
+.p7tbsub a:link {
+  color: #424E85;
+  text-decoration: none;
+	background-color: #AECFEC;	
+	display: block;	
+	width: 120px;
+  
+ }
+.p7tbsub a:visited {color: #424E85; text-decoration: none;}
+.p7tbsub a:hover {
+ color: #A00402; 
+ text-decoration: none;
+  background-color:  #AECFEC;
+	padding: 1px 2px 1px 3px;	
+	 display: block;	
+	width: 120px;
+	}
+.p7tbsub a:active {color: #424E85; text-decoration: none;}
+.p7tbdn {color:  #A00402 !important; font-weight: bold;}
+
+#p7TBtrig10 { position:absolute; left: 42px; top: 2px; width: 49px; z-index: 300; visibility: visible}
+ #p7TBsub10 { position:absolute; left: 42px; top: 23px; width: 120px; z-index: 400; visibility: hidden}
+ #p7TBtrig20 { position:absolute; left: 91px; top: 2px; width: 113px; z-index: 300; visibility: visible}
+ #p7TBsub20 { position:absolute; left: 91px; top: 23px; width: 120px; z-index: 400; visibility: hidden}
+ #p7TBtrig30 { position:absolute; left: 204px; top: 2px; width: 91px; z-index: 300; visibility: visible}
+ #p7TBsub30 { position:absolute; left: 204px; top: 23px; width: 120px; z-index: 400; visibility: hidden}
+ #p7TBtrig40 { position:absolute; left: 295px; top: 2px; width: 117px; z-index: 300; visibility: visible}
+ #p7TBsub40 { position:absolute; left: 295px; top: 23px; width: 120px; z-index: 400; visibility: hidden}
+ #p7TBtrig50 { position:absolute; left: 412px; top: 2px; width: 78px; z-index: 300; visibility: visible}
+ #p7TBsub50 { position:absolute; left: 412px; top: 23px; width: 120px; z-index: 400; visibility: hidden}
+ #p7TBtrig60 { position:absolute; left: 490px; top: 2px; width: 73px; z-index: 300; visibility: visible}
+ #p7TBsub60 { position:absolute; left: 490px; top: 23px; width: 120px; z-index: 400; visibility: hidden}
+ #p7TBtrig70 { position:absolute; left: 563px; top: 2px; width: 74px; z-index: 300; visibility: visible}
+ #p7TBsub70 { position:absolute; left: 563px; top: 23px; width: 120px; z-index: 400; visibility: hidden}
+ #p7TBtrig80 { position:absolute; left: 637px; top: 2px; width: 75px; z-index: 300; visibility: visible}
+ #p7TBsub80 { position:absolute; left: 637px; top: 23px; width: 120px; z-index: 400; visibility: hidden}
+ #P7TabH { position:absolute; left: 0px; top: 0px; z-index: 200; visibility: hidden}
+
+
+
+/*----------------------------------------------------------*/
+
+.content{
+  font: Verdana, Arial, Helvetica, sans-serif;	
+  color: #000;
+	font-size: 12px;}
+	
+.content a:link {
+	color: #DD0101;
+	text-decoration: none;
+	 }
+.content a:visited  {
+	color: #DD0101; }
+	
+.content a:hover {
+	color: #FFFFFF;
+	background-color: #AECFEC;
+	
+	}
+.content a:active {
+	color: #DD0101; }
+	
+
+.smtext{
+  font:  Verdana, Arial, Helvetica, sans-serif;	  
+	font-size: 10px;}
+	
+.smtext a:link {
+	color: #424E85;
+	text-decoration: none;
+	 }
+.smtext a:visited  {
+	color: #424E85 }
+	
+.smtext a:hover {
+	color: #DD0101;
+	background-color: #AECFEC; 
+	display: block;
+	padding: 2px 2px;
+	
+	
+	}
+.smtext a:active {
+	color: #424E85; }
+
+.navyhead{
+color: #424E85;
+font-weight:bold;}
+.redhead{
+color: #DD0101;
+font-weight:bold;}
+.tableheadblue{
+    font-size: 13px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #424E85;
+	background-color: #AECFEC;
+	padding: 2px;
+	border: 1px ;
+	border-color: #424E85;
+}
+.headblueW{
+    font-size: 13px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #AECFEC;
+	padding: 2px;
+	border: 1px ;
+	border-color: #424E85;
+}
+.tableheadnavy{
+    font-size: 13px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #000098;
+	margin: 1px 1px;
+}
+.tableheadnavy a:link{
+    font-size: 13px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+	color: #FF0000;
+	background-color: #000080;
+	margin: 1px1px ;
+	
+}.tableheadnavy a:visited{
+    font-size: 13px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+	color: #FFFFFF;
+	background-color: #000080;
+	margin: 1px1px ;
+}
+.tableheadred {
+    font-size: 13px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #FF0000;
+	margin: 1px1px ;
+	display: block;
+	padding: 2px 0px 2px 2px;
+	width: 138px;	
+	border: 1px solid #000080;
+}.tableheadred a:link{
+    font-size: 13px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+	background-color: #FF0000;
+	margin: 1px1px ;
+	display: block;
+	padding: 2px 0px 2px 2px;
+	width: 138px;	
+	border: 1px solid #000080;
+}.tableheadred a:visited{
+    font-size: 13px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+	color: #FFFFFF;
+	background-color: #FF0000;
+	margin: 1px1px ;
+	display: block;
+	padding: 2px 0px 2px 2px;
+	width: 138px;	
+	border: 1px solid #000080;
+}.tableheadred a:hover, .tableheadred a:active {
+    font-size: 13px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+	color: #FF0000;
+	background-color: #000080;
+	margin: 1px1px ;
+	display: block;
+	padding: 2px 0px 2px 2px;
+	width: 138px;	
+	border: 1px solid #000080;
+}
+p.rnavsubs {
+	font-size: 9px;
+	font-weight:bold;
+	margin: 2px 0px 2px;
+}
+p.rnavsubs a:link {
+	color: #424E85;
+	text-decoration: none;
+	display: block;
+	padding: 2px 0px 0px 4px;
+	width: 130px;
+	
+}
+
+p.rnavsubs a:hover {
+	color: #424E85;
+	background-color: #AECFEC;
+	text-decoration: none;
+	display: block;
+	padding: 2px 0px 0px 4px;
+	width: 130px;
+}
+ p.rnavsubs a:active {
+	color: #424E85;	
+	text-decoration: none;
+	display: block;
+	padding: 2px 0px 0px 4px;
+	width: 130px;
+}
+p.rnavsubs a:visited {
+	color: #424E85;
+	text-decoration: none;
+	display: block;
+	padding: 2px 0px 0px 4px;
+	width: 130px;
+	
+}
+.navysmtext{
+  font:  Verdana, Arial, Helvetica, sans-serif;
+   color: #3B4C82;
+   background-color: #FFFFFF;  
+	font-size: 10px;}
+	
+.whitesmtext h3{
+ font: Verdana, Arial, Helvetica, sans-serif;
+  color: #FFFFFF;
+  font-weight: bold; 	  
+	font-size: 11px;}
+	
+.navysmtext a:link {
+	color: #3B4C82;
+	text-decoration: none;
+	 }
+.navysmtext a:visited  {
+	color: #3B4C82 }
+	
+.navysmtext a:hover {
+	color: #3B4C82;
+	background-color: #FF0000;
+	display:block; 
+	}
+.navysmtext a:active {
+	color: #3B4C82; }
+	/* TABLES -------------------------------------------------- */
+/* --------------------------------------------------------- */
+.tableinfo {    
+	margin: 0 0 1.5em 0;
+	border-collapse: collapse;
+	}
+ .tableinfo td {
+	font-size: 12px;
+	padding: 2px 2px;
+	border-bottom: 1px solid #2A567F;
+	}
+.tableinfo td a:{
+	font-size: 12px;
+	padding: 2px 2px;	
+	color: #A72018;
+	
+	}
+	
+.tableinfo td a:hover,
+.tableinfo td a:focus {
+	font-size: 12px;		
+	background-color:#E0E0E0;
+	display:block;
+	
+		}
+.tableinfo th {
+   font-size: 12px;
+	padding: 2px 2px 2px 2px;
+	border-bottom: 1px solid #2A567F;
+	background: #ADCBF1;
+	color: #000000;
+	text-align: center;
+	}
+/* TABLES LgTxt -------------------------------------------------- */
+
+.tableinfoLgTxt {    
+	margin: 0 0 1.5em 0;
+	border-collapse: collapse;
+	}
+ .tableinfoLgTxt td {
+	font-size: 14px;
+	padding: 2px 2px;
+	border-bottom: 1px solid #2A567F;
+	}
+.tableinfoLgTxt td a:{
+	font-size: 14px;
+	padding: 2px 2px;	
+	color: #A72018;
+	
+	}
+	
+.tableinfoLgTxt td a:hover,
+.tableinfoLgTxt td a:focus {
+	font-size: 14px;		
+	background-color:#E0E0E0;
+	display:block;
+	
+	}
+	
+.tableinfoLgTxt th {
+   font-size: 14px;
+	padding: 2px 2px 2px 2px;
+	border-bottom: 1px solid #2A567F;
+	background: #ADCBF1;
+	color: #000000;
+	text-align: center;
+	}

@@ -1,0 +1,126 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<!-- #BeginTemplate "sitetemplate.dwt" -->
+<head>
+	<!-- #BeginEditable "doctitle" -->
+<title>BDBC Home</title>
+<!-- #EndEditable -->
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript">
+
+function init() {
+  if (!document.getElementById) return
+  var imgOriginSrc;
+  var imgTemp = new Array();
+  var imgarr = document.getElementsByTagName('img');
+  for (var i = 0; i < imgarr.length; i++) {
+    if (imgarr[i].getAttribute('hsrc')) {
+        imgTemp[i] = new Image();
+        imgTemp[i].src = imgarr[i].getAttribute('hsrc');
+        imgarr[i].onmouseover = function() {
+            imgOriginSrc = this.getAttribute('src');
+            this.setAttribute('src',this.getAttribute('hsrc'))
+        }
+        imgarr[i].onmouseout = function() {
+            this.setAttribute('src',imgOriginSrc)
+        }
+    }
+  }
+}
+onload=init;
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+</script>
+</head>
+
+<body style="text-align:center;" topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" onload="FP_preloadImgs(/*url*/'images/Template%20Images/button81.gif', /*url*/'images/Template%20Images/button82.gif', /*url*/'images/Template%20Images/button84.gif', /*url*/'images/Template%20Images/button85.gif', /*url*/'images/Template%20Images/button90.gif', /*url*/'images/Template%20Images/button91.gif', /*url*/'images/Template%20Images/button93.gif', /*url*/'images/Template%20Images/button94.gif', /*url*/'images/Template%20Images/button96.gif', /*url*/'images/Template%20Images/button97.gif', /*url*/'images/Template%20Images/button9C.gif', /*url*/'images/Template%20Images/button9D.gif', /*url*/'images/Template%20Images/buttonB7.gif', /*url*/'images/Template%20Images/buttonB8.gif')" bgcolor="#000000">
+<!--Start Top-->
+<table width="770" cellpadding="0" cellspacing="0" border="0" height="152">
+<tr>
+<td bgcolor="#7A8BA3" valign="top" align="left" width="161">
+<p align="center" style="margin-left: 0px; margin-top: 3px; margin-bottom: 3px">
+<img border="0" src="BDBC_CHR&#32;Color&#32;Button&#32;Resized&#32;2.jpg" width="154" height="146" align="right">&nbsp;&nbsp;&nbsp;&nbsp; </td>
+<td bgcolor="#7A8BA3" valign="top" align="left">
+<p align="center" style="margin-right: 3px">
+<a name="PageTop"></a>
+<object classid="clsid:D27CDB6E-AE6D-11CF-96B8-444553540000" id="obj1" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" border="0" width="574" height="148">
+	<param name="movie" value="flash/DESIGNING2.swf">
+	<param name="quality" value="High">
+	<param name="wmode" value="transparent">
+	<embed src="DESIGNING2.swf" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" name="obj1" width="574" height="148" quality="High" wmode="transparent"></object>
+</td>
+</tr>
+</table>
+<!--End Top-->
+<!--Start Menu-->
+<table width="770" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td bgcolor="#B4B4B4">
+<p align="center" style="margin-top: 2px; margin-bottom: 2px">
+<a title="BDBC Home Page" href="index.htm">
+<img border="0" id="img2" src="button80.gif" height="21" width="109" alt="Home" fp-style="fp-btn: Metal Rectangle 5; fp-transparent: 1; fp-proportional: 0" fp-title="Home" onmouseover="FP_swapImg(1,0,/*id*/'img2',/*url*/'images/Template%20Images/button81.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img2',/*url*/'images/Template%20Images/button80.gif')" onmousedown="FP_swapImg(1,0,/*id*/'img2',/*url*/'images/Template%20Images/button82.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img2',/*url*/'images/Template%20Images/button81.gif')"></a><a href="http://www.brooksdesignbuildcorp.com/About_Us.htm"><img border="0" id="img3" src="button83.gif" height="21" width="109" alt="About Us" fp-style="fp-btn: Metal Rectangle 5; fp-transparent: 1; fp-proportional: 0" fp-title="About Us" onmouseover="FP_swapImg(1,0,/*id*/'img3',/*url*/'images/Template%20Images/button84.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img3',/*url*/'images/Template%20Images/button83.gif')" onmousedown="FP_swapImg(1,0,/*id*/'img3',/*url*/'images/Template%20Images/button85.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img3',/*url*/'images/Template%20Images/button84.gif')"></a><a href="http://www.brooksdesignbuildcorp.com/Design.htm"><img border="0" id="img4" src="button9B.gif" height="21" width="109" alt="Design" fp-style="fp-btn: Metal Rectangle 5; fp-transparent: 1; fp-proportional: 0" fp-title="Design" onmouseover="FP_swapImg(1,0,/*id*/'img4',/*url*/'images/Template%20Images/button9C.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img4',/*url*/'images/Template%20Images/button9B.gif')" onmousedown="FP_swapImg(1,0,/*id*/'img4',/*url*/'images/Template%20Images/button9D.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img4',/*url*/'images/Template%20Images/button9C.gif')"></a><a href="http://www.brooksdesignbuildcorp.com/Build.htm"><img border="0" id="img5" src="button95.gif" height="21" width="109" alt="Build" fp-style="fp-btn: Metal Rectangle 5; fp-transparent: 1; fp-proportional: 0" fp-title="Build" onmouseover="FP_swapImg(1,0,/*id*/'img5',/*url*/'images/Template%20Images/button96.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img5',/*url*/'images/Template%20Images/button95.gif')" onmousedown="FP_swapImg(1,0,/*id*/'img5',/*url*/'images/Template%20Images/button97.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img5',/*url*/'images/Template%20Images/button96.gif')"></a><a href="http://www.brooksdesignbuildcorp.com/Portfolio.htm"><img border="0" id="img6" src="button92.gif" height="21" width="109" alt="Portfolio" fp-style="fp-btn: Metal Rectangle 5; fp-transparent: 1; fp-proportional: 0" fp-title="Portfolio" onmouseover="FP_swapImg(1,0,/*id*/'img6',/*url*/'images/Template%20Images/button93.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img6',/*url*/'images/Template%20Images/button92.gif')" onmousedown="FP_swapImg(1,0,/*id*/'img6',/*url*/'images/Template%20Images/button94.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img6',/*url*/'images/Template%20Images/button93.gif')"></a><a href="http://www.brooksdesignbuildcorp.com/Contact_Us.htm"><img border="0" id="img7" src="button8F.gif" height="21" width="109" alt="Contact Us" fp-style="fp-btn: Metal Rectangle 5; fp-transparent: 1; fp-proportional: 0" fp-title="Contact Us" onmouseover="FP_swapImg(1,0,/*id*/'img7',/*url*/'images/Template%20Images/button90.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img7',/*url*/'images/Template%20Images/button8F.gif')" onmousedown="FP_swapImg(1,0,/*id*/'img7',/*url*/'images/Template%20Images/button91.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img7',/*url*/'images/Template%20Images/button90.gif')"></a><a href="http://www.brooksdesignbuildcorp.com/Project_Central.htm"><img border="0" id="img8" src="buttonB6.gif" height="21" width="109" alt="Project Central" fp-style="fp-btn: Metal Rectangle 5; fp-transparent: 1; fp-proportional: 0" fp-title="Project Central" onmouseover="FP_swapImg(1,0,/*id*/'img8',/*url*/'images/Template%20Images/buttonB7.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img8',/*url*/'images/Template%20Images/buttonB6.gif')" onmousedown="FP_swapImg(1,0,/*id*/'img8',/*url*/'images/Template%20Images/buttonB8.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img8',/*url*/'images/Template%20Images/buttonB7.gif')"></a></td>
+</tr>
+<tr>
+<td><img src="http://www.brooksdesignbuildcorp.com/images/dot.gif" width="1" height="1" alt="" border="0"></td>
+</tr>
+</table>
+<!--End Menu-->
+<table width="770" cellpadding="7" cellspacing="0" border="0">
+<tr valign="top">
+<td width="200" bgcolor="#E4E4E7">
+<!-- #BeginEditable "sidebar" --><p align="center" style="margin-top: 10px; margin-bottom: 3px">&nbsp; <img border="0" src="GMB.jpg" width="105" height="68"></p><p align="center" style="margin-top: 10px; margin-bottom: 3px"><img border="0" src="CGR.jpg" width="105" height="127"></p><p align="center" style="margin-top: 10px; margin-bottom: 1px"><u><font color="#000000">First Place</font></u></p><p align="center" style="margin-top: 1px; margin-bottom: 1px"><b><font color="#000000"><i>&nbsp;</i> Best Custom Home</font></b></p><p align="center" style="margin-top: 1px; margin-bottom: 1px"><font color="#000000"><b>Under 5,000 Square Fee</b>t</font></p><p align="center" style="margin-top: 0; margin-bottom: 0"><i><font color="#000000">Professional Builder's Council</font></i></p><p align="center" style="margin-top: 0; margin-bottom: 0"><i><font color="#000000">2006 Builder's Excellence Awards</font></i></p>
+<!-- #EndEditable -->
+<p>
+<br>
+</td>
+<td style="border-left:1px solid #B4B4B4;" width="570" bgcolor="#C7C7C7">
+<!--Start Welcome-->
+<table width="570" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td style="padding:15px;">
+<!-- #BeginEditable "(Body)" --><p style="margin-right: 10px; margin-top: 0; margin-bottom: 0" align="justify">&nbsp;</p><p style="margin-right: 10px; margin-top: 0; margin-bottom: 0" align="justify">&nbsp;</p><p style="margin-right: 10px; margin-top: 0; margin-bottom: 0" align="justify">&nbsp;</p><p style="margin-right: 10px; margin-top: 0; margin-bottom: 0" align="justify">&nbsp;</p><p style="margin-right: 10px; margin-top: 0; margin-bottom: 0" align="justify"><font color="#000000"><b><span style="font-size: 10pt">&nbsp;</span></b></font></p><p style="margin-right: 10px; margin-top: 0; margin-bottom: 0" align="justify">&nbsp;</p><p style="margin-right: 10px; margin-top: 0; margin-bottom: 0" align="justify"><font color="#000000"><b><span style="font-size: 10pt">&nbsp;&nbsp;&nbsp; </span><font style="font-size: 10pt">&nbsp;&quot;We provide our clients with award-winning custom&nbsp; homes and renovations.&nbsp; You will experience a richly interactive design-build process, during which our goal is to exceed your expectations. We accomplish this by adhering to strict quality standards, and focusing on excellence and professionalism in design, planning, and production.&quot;</font></b></font></p>
+<p style="margin-right: 10px; margin-top:0; margin-bottom:0" align="right"><b><font style="font-size: 9pt" color="#000000">Jonathan Brooks - President</font></b></p>&nbsp;<p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+<p>&nbsp;<!-- #EndEditable --></td>
+</tr>
+</table>
+<!--End Welcome-->
+<!--Start Image-->
+<br>
+</td>
+</tr>
+</table>
+<!--Start Foolter-->
+<table width="770" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td bgcolor="#7A8BA3" style="padding:10px;">
+<p align="left">
+<font color="#FFFFFF">&copy;2007 Brooks Design-Build Corporation. All rights reserved.&nbsp;&nbsp;<a href="http://www.brooksdesignbuildcorp.com/Contact_Us.htm">&nbsp;&nbsp;<u><font color="#FFFFFF">E-mail 
+BDBC</font></u></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Site Design by SRC Designs&nbsp;
+<a href="mailto:info@srcdesigns.org?subject=BDBC Web Site">
+<font color="#FFFFFF">&nbsp;<u>info@srcdesigns.org</u></font></a></font></td>
+</tr>
+</table>
+<!--End Foolter-->
+</body>
+<!-- #EndTemplate -->
+</html>

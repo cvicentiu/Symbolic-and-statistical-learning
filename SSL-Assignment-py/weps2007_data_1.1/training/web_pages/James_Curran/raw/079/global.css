@@ -1,0 +1,1770 @@
+/* Created by Rick Cecil | rick@hesketh.com */
+
+/* Composition Styles */ 
+
+	.advancedSearch {}
+		
+	.advertising{
+		margin: 0 0 20px;
+		}
+		.advertising h1 {
+			color: #5A4726;
+			margin: 0 0 5px;
+			padding: 0;
+			font-size: 105%;
+			}
+		.advertising .crossSell {
+			border-top: 1px dashed #B8C8DE;
+			padding: 15px 0 10px;
+			margin: 0;
+			}
+			.advertising .crossSell.first {
+				border: 0;
+				margin: 0; 
+				padding: 0; 
+				margin: 0 0 10px; 
+				}
+			.advertising.crossSellContainer .crossSell h2 {
+				font-size:100%;	
+				}
+			.advertising .crossSell p {
+				margin: 10px 0 0;			
+				}
+			.advertising .crossSell img {
+				float: left;
+				margin: 0 10px 0 0;			
+				}
+		.advertising .upsell {
+			border-top: 1px dashed #B8C8DE;
+			padding: 15px 0 0;
+			margin: 0 0 20px;
+			}
+			.advertising .upsell.first {
+				border-top: none;
+				padding: 10px 0 0;	
+				}
+
+	.boxes {}
+		.outlineBlue {
+			border: 1px solid #B8C8DE;
+			margin: 3px 0 0 0;
+			padding: 5px;			
+			}
+		.outlineTanRoundedTopContainer {
+			background:   url("/us/assets/images/bgRightSidebar2.gif") no-repeat left top;	
+			padding: 4px 0 0 0;
+			}
+			.outlineTanRoundedTop {
+				border: 1px solid #BDBD89; 
+				border-top: none;
+				padding: 5px 5px 8px; 			
+				}
+		.solidDarkTan {
+			background-color: #DFDFC6;
+			border: 1px solid #DADAB5; 		
+			}
+		.solidLightTan {
+			background: #F7F7EF;
+			border: 1px solid #BDBD89;
+			padding: 5px;
+			}
+		.solidLightTanOutlineBlueRoundedCornerContainer {
+			background:   url("/us/assets/images/bgBlueOutline.gif") no-repeat left top;
+			padding: 3px 0 0 0;
+			}
+			.solidLightTanOutlineBlueRoundedCorner {
+				background: #F7F7EF;
+				border: 1px solid #B8C8DE;
+				border-top: none;
+				padding: 5px;
+				}
+		.solidBlueOutlineDashedBlue {
+			background: #DCE4EF;
+			border-top: 1px dashed #DADAB5;
+			border-bottom: 1px dashed #DADAB5;
+			padding: 5px;
+			}
+			.navBrowse .solidBlueOutlineDashedBlue {
+				border: 0;
+				border-top: 0;
+				}
+		.solidLightTanOutlineBlue {
+			background: #F7F7EF;
+			border: 1px solid #B8C8DE;
+			padding: 5px;
+			}
+		.solidMediumTanRoundedTopContainer {
+			background: url("/us/assets/images/bgDarkTanCurvedTop.gif") no-repeat left top;
+			padding: 3px 0 0 0;
+			}
+			.two .solidMediumTanRoundedTopContainer {
+				background: url("/us/assets/images/bgTwoDarkTanCurvedTop.gif") no-repeat left top;
+				padding: 3px 0 0 0;
+				}
+			.corporate .two .solidMediumTanRoundedTopContainer {
+				background: url("/us/assets/images/bgTwoDarkTanCurvedTop.gif") no-repeat left top;
+				padding: 3px 0 0 0;
+				}
+			.solidMediumTanRoundedTop {
+				background: #EAEACF; 
+				border: 1px solid #BDBD89;
+				border-top: none;
+				padding: 5px;
+				}
+		.solidMediumTan {
+			background: #EAEACF; 
+			border: 1px solid #BDBD89;
+			padding: 5px;
+			}
+
+#bizRateSurvey {
+		position: absolute;
+			left: 0px;
+			top: 0;		
+			}
+
+#breadcrumbContainer {
+		background: #F7F7EF url("/us/assets/images/bgMainPromoDropShadow.gif") repeat-x left bottom;
+		border-top: 1px solid #7A7AAA;		
+		padding-bottom: 9px;
+		}
+		#breadcrumb {
+			font-size: 86%;
+			padding: 3px 5px;
+			}
+			#breadcrumb.promo {
+				float: left;
+				padding: 5px;
+				width: 78%;
+				}
+			#breadcrumb a {
+				text-decoration: none;
+				}
+				#breadcrumb a:hover {
+					text-decoration: underline;
+					}
+			#breadcrumb #here {
+				font-weight: bold;
+				}
+		#breadcrumb .breadcrumbItem {
+			white-space:nowrap;
+			}
+
+	.button {
+		background:   url("/us/assets/images/bgButton.gif");
+		border: 1px outset #fff;
+		color: #fff;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 90%;
+		font-weight: bold;
+		margin: 0 0 0 5px;
+		padding: 1px 5px;
+		}
+		.searchBar .button {
+			width: 4.8em;
+			}
+
+	.cartStep {
+		border: 0;
+		}
+
+	#content {}
+		#content h1 {
+			margin: 0;
+			padding: 0;
+			}
+
+	#copyright {}
+		#copyright .smallText{
+			clear: both;
+			display: block;
+			font-size: 90%;
+			}
+
+	.corporatePublishingContainer {
+		margin: 3px 0 10px;
+		}
+		#corporatePublishing {}
+			#corporatePublishing a {
+				text-decoration: none;
+				}
+			#corporatePublishing a:hover {
+				text-decoration: underline;
+				}
+			#corporatePublishing form {
+				padding: 0;
+				margin: 0 0 5px;
+				}
+				#corporatePublishing select {
+					width: 11.25em;	
+					float: left;
+					margin-right: 1px;
+					}
+			#corporatePublishing h1 {
+				font-size: 90%;
+				font-weight: bold;
+				margin: 0 0 3px 0;
+				}
+			#corporatePublishing li {
+				line-height: 100%;
+				padding: 0 0 4px 0;
+				}
+			#corporatePublishing ul {
+				margin: 0 0 10px 15px;
+				padding: 0;
+				list-style: none url("/us/assets/images/bullet.gif");
+				}
+		.internal .corporatePublishingContainer {
+			background-image: none;
+			margin-top: 0;
+			}
+			.internal #corporatePublishing {
+				border: 1px solid #BDBD89;
+				}
+
+	#deptHeader {
+		background: #ccc;
+		padding: 10px;
+		}
+		#deptHeader img {
+			float: left;
+			margin-right: 10px;
+			}
+		#deptHeader p {
+			margin-left: 90px;
+			}
+
+	.drillDownContainer {
+		margin: 0 0 10px 0;
+		padding: 0;
+		}
+		#drillDown{
+			border-top: none;
+			margin: 0;		
+			padding: 5px 0 0;
+			/* clear: both;  <--- this was breaking FF 1.0 - see also: .subjectsList, #subjectHeading */
+			}
+			.advancedSearch #drillDown {
+				padding: 5px 0 0;
+				}
+			#subjects #drillDown h1 {
+				display: block;
+				float: none;
+				}
+			#drillDown h1 {
+				font-size: 100%; 
+				font-weight: bold;
+				margin: 0;
+				padding: 0 0 5px 10px;
+				}
+			#drillDown li {
+				padding: 0 0 5px 3px;
+				line-height: 105%;
+				margin: 0;
+				}
+			#drillDown ul {
+				list-style: none url(none);
+				margin: 0 0 0 10px;
+				padding: 0 3px 0 5px;
+				}
+			#drillDown ul li.currentSubject {
+				background:  url(/us/assets/images/arrowDoubleBlue.gif) no-repeat -3px 0;
+				margin-left: -11px;
+				padding-left: 12px;
+				}
+				#drillDown ul li.parent ul li.currentSubject {
+					background:  url(/us/assets/images/arrowDoubleBlue.gif) no-repeat -3px 0;
+					margin-left: 0;
+					padding-left: 15px;		
+					}
+				#drillDown ul li.currentSubject a, 
+				#drillDown ul li.parent a,
+				#drillDown ul li.parent ul li.currentSubject a {
+					font-weight: bold;
+					}
+				#drillDown ul li.currentSubject ul li a, 
+				#drillDown ul li.parent ul li a {
+					font-weight: normal;
+					}
+				#drillDown ul li ul {
+					margin: 3px 0 0;
+					padding: 0;
+					}
+				#drillDown ul li li{
+					padding-left: 15px;
+					position: relative;
+					zoom: 100%;
+					}
+				#drillDown ul li ul li a {
+					font-weight: normal;
+					}
+
+	.featureTopContainer {
+		background:   url("/us/assets/images/bgMainPromoDropShadow.gif") repeat-x left bottom;
+		padding-bottom: 9px;
+		}
+		#featureTop {
+			background: #F7F7EF url("/us/assets/images/bgMainPromo.gif") repeat-y right top;				
+			border-top: 1px solid #7A7AAA;
+			margin-top: 0;
+			}
+		#featureMain {
+			padding: 0 10px 0;
+			font-size: 90%;
+                        }
+			#featureMain img {
+				float: left;
+				margin-right: 30px;
+                                margin-top: 5px;
+                                border: 0;
+				}
+			#featureMain .linkMore {
+				float: right;
+				font-size: 100%;
+				margin-right: 15px;
+				}
+				#featureMain .linkMore a {
+					background:   url("/us/assets/images/arrowRed.gif") no-repeat left center;	
+					padding: 0 0 0 15px;
+					}
+
+	#features h1 { 
+		color: #5A4726;
+		margin:0 0 10px;
+		padding: 0;
+		}
+
+
+	.form {}
+		#bookSearch {
+			border-top: 1px dashed #7A7AAA;
+			padding: 10px 0 0;
+			}
+		#seriesSearch {
+			border-top: 1px dashed #7A7AAA;
+			padding: 10px 0 0;
+			}
+		#subject {
+			margin: 10px 0 0;
+			}
+		.field {
+			margin: 0 0 15px;
+			position: relative;
+			}
+			.fieldGroup .field { 
+				display: block;
+				margin: 0 0 5px 0;
+				}
+		.fieldGroup{}
+			.fieldGroup#otherOptions {
+				clear: both;
+				}
+		.formButton {
+			clear: both;
+			margin: 10px 10px 10px 0;
+			padding: 0 0 10px; 
+			text-align: right;
+			width: 100%;
+			}
+			.formButton input {
+				width: 6em;
+				}
+			.formButton#buttonFirst {
+				margin-top: 0;
+				}
+		input {}
+			.fieldText input {
+				width: 100%;
+				}
+		.form label{
+			display: block;
+			font-size: 85%;
+			font-weight: bold;
+			text-align: left;
+			}
+			.fieldGroup .field label {
+				display: inline;
+				font-size: 100%;
+				font-weight: normal;
+				width: auto;
+				}
+			#format label {
+				display: inline;
+				}
+		select {
+			display: inline;
+			}
+			#pubDate.fieldGroup select {
+				font-size: 75%; 
+				}
+
+	#footer {
+		padding: 20px 0 0;
+		}
+		#footer #copyright {
+			font-size: 100%;
+			padding: 30px 20px 10px;
+			}
+		#footerNav a {
+			border-right: 1px solid #333;
+			display: block;
+			float: left;
+			margin: 10px 0;
+			padding: 1px 20px;
+			text-decoration: none;
+			}
+		#footer .last {
+			border-right: none;		
+			}
+
+	#header {
+		background: #000066 url("/us/assets/images/bgHeader.jpg") no-repeat 100% 0;
+		left: 0;
+		position: absolute;
+		top: -1px; /* Cover the border-top on body */
+		width: 100%;
+		}
+		#header #logo{
+			border: 0;
+			margin: 15px 0 15px 15px;
+			}
+		.print #header {
+			background: #fff url(none);
+			position: static;
+			}
+
+	#headingNewNoteWorthy {
+		margin: 0 0 15px 0;
+		}
+
+	#hebf-overview {
+		font-family: "Times New Roman", Times, serif;
+		font-size: 125%;
+		}
+	#hebf-instructors h2,
+	#hebf-customPublishing h2,
+	#hebf-students h2, 
+	#hebf-authors h2,
+	#hebf-bookstores h2{
+		font-family: "Times New Roman", Times, serif;
+		font-size: 125%;
+	
+		}
+	
+	
+	#highlight {}
+		.internal #highlight {
+			background: #F7F7EF;
+			border: 1px solid #B8C8DE;
+			padding: 5px;
+			}
+		#featureTop #highlight {
+			float: right;
+			margin-left: 30px;
+			padding: 8px 3px;
+			width: 229px;
+			}
+		#highlight form {
+			margin: 0;
+			padding: 0;
+			}
+		#highlight h2 {
+			margin: 0;
+			padding: 0;
+			}
+
+	#isbnDetails {
+		clear: both;
+		border-top: 1px dashed #DBDBB7; 
+		margin: 0 0 0;
+		padding: 0 15px 0 0;
+		position: relative;
+		top: 15px;
+		}
+		#isbnDetails h2 {
+			color: #5A4726;
+			font-size: 110%;
+			font-style: normal;
+			}
+		#isbnDetails ul {
+			margin: 0 0 0 25px;
+			padding: 0;
+			list-style: url("/us/assets/images/bullet.gif");					
+			}
+		#isbnDetails .addToCartButton {
+			border: 0;
+			margin: 10px 0 20px;
+			}
+		#isbnDetails .merchandisingWrapper{
+			margin: 10px 0 0 0;
+			border-bottom: 1px dashed #DBDBB7;
+			}
+			#isbnDetails .merchandisingContainer {
+				margin: 0 198px 10px 0;
+				}
+			#isbnDetails .merchandising{
+				float: left;
+				padding: 0 0 20px;
+				width: 95%;  
+				}
+				#isbnDetails .merchandising li {
+					padding: 0 0 5px;
+					}
+	
+	#isbnOnPageLinks {
+		clear: both;
+		padding: 15px 0 0;
+		}
+		#isbnOnPageLinks a {
+			color: #036;
+			background: transparent url("/us/assets/images/btnISBNOnPageLink.gif") no-repeat 3px 4px;
+			display: block;
+			font-size: 85%;
+			padding: 2px 5px 2px 18px;
+			text-decoration: none;
+			}
+		#isbnOnPageLinks a:hover {
+			background-color: #C3D1E4;
+			}		
+		#isbnOnPageLinks li {
+			background: #B9CADF url("/us/assets/images/bgISBNOnPageLink.gif") repeat-x left top;
+			border-bottom: 1px solid #AFBAD6;
+			border-right: 1px solid #AFBAD6;					
+			float: left;
+			margin: 0 4px 4px 0;						
+			position: relative;
+			width: 32%;					
+			}
+		#isbnOnPageLinks ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			}
+				
+	.isbnProperties{}
+		.isbnProperties h1 {
+			font-size: 110%;
+			}
+			.isbn .isbnProperties h1 {
+				font-size: 135%;
+				font-weight: bold;
+				}
+			.isbnList .isbnProperties h1 {
+				margin: 0;
+				padding: 0;
+				}
+			.isbn .advertising.isbnProperties h1,
+			.isbn .merchandising.isbnProperties h1  {
+				font-size: 110%;
+				}
+		.isbnProperties h2 {
+			font-size: 105%;
+			font-weight: bold;
+			margin: 0;
+			padding: 0;
+			}
+			.isbn .isbnProperties h2 {
+				font-size: 105%;
+				}
+			.advertising .isbnProperties h2, 
+			.isbnProperties .advertising h2,
+			.merchandising h2,
+			.advertising  h2{
+				font-size: 100%;
+				font-weight: bold;
+				margin: 0;
+				padding: 0;
+				}
+			.results.inline .isbnProperties .result h2 {
+				display: inline;
+				font-size: 100%;
+				}
+		.isbnProperties h3, 
+		.isbn .isbnProperties h2 {
+			display: inline;
+			font-size: 100%;
+			font-style: normal;
+			font-weight: bold;	
+			}
+		.isbnProperties .addToCart {
+			margin: 5px 0 0;
+			white-space:nowrap;
+			}
+			.isbnProperties .addToCart a, .isbnProperties .reqGratisCopy a {
+					background:  #E9CA00;
+					border: 2px outset #F8D10E;
+					color: #000000;
+					display: block;
+					font-size: 90%;
+					margin: 5px auto 0;
+					padding: 1px 3px;
+					text-decoration: none;
+					width: 5.8em;
+					}
+			.isbnProperties .reqGratisCopy a {
+				background: #EAEACF;
+				border: 2px outset #ECE7C9;
+				padding: 1px 3px;
+				width: 6.5em;
+				}
+			.results.inline .isbnProperties .addToCart a {
+				display: inline;
+				}				
+		.isbnProperties .alsoAvailable {
+			text-align: left;
+			font-size: 100%;
+			margin: 10px 0 0 15px;
+			}
+			.isbn .isbnProperties .alsoAvailable {
+				clear: right;
+				margin: 0 0 10px;
+				}
+			.isbnProperties .alsoAvailable h3 {
+				font-size: 90%;
+				color: #333;
+				}
+			.isbnProperties .alsoAvailable ul {
+				list-style: none url(none);
+				margin: 0;
+				padding: 0;
+				}
+		.isbnProperties .author {
+			font-style: normal;
+			font-variant: small-caps;
+			white-space: nowrap;
+			}
+			.results.inline .isbnProperties .result .author {
+				padding: 0;
+				margin: 0;
+				}
+		.isbnProperties .availability {
+			display: block;	 
+			float: left;
+			}
+			.results .isbnProperties .availability  {
+				display: inline;
+				float: none;
+				}
+		.isbnProperties .byline {
+			font-style: italic;
+			}
+			.advertising .byline { /* RWH:  Added to address layout issue in IE */
+				display: block;
+				}
+/*			.results .isbnProperties .byline {
+				margin: 0 0 5px;
+				} */
+			.results.inline .isbnProperties .result .byline {
+				display: inline;
+				padding: 0;
+				margin: 0;
+				}
+
+		.isbnProperties .cost {}
+			.results .isbnProperties .cost {
+				margin: 10px 0 0;
+				}
+			.isbn .isbnProperties .cost {
+				margin: 25px 0 0;
+				}
+			.results.inline .isbnProperties .result .cost {
+				display: inline;
+				clear: none;
+				}
+			.isbnProperties .cost h2 {
+				font-weight: bold;
+				}
+		.isbnSummary .cover {
+			margin: 0 0 0 -100px;
+			text-align: center;
+			width: 100px;
+			}
+			.advertising .cover {
+				float: left;
+				margin: 0 0 10px;
+				text-align: center;
+				width: 85px;
+				}
+			.isbn .isbnSummary .cover {
+				float: left;
+				margin: 20px 0 0;
+				width: 90px;
+				}
+			.isbnProperties .cover img,	
+			.isbnProperties .upsell .cover img {
+				border: 0;
+				margin: 0 auto;
+				}
+			.advertising .cover .bookShot {
+				display: block;
+				}
+				.advertising .cover .bookShot img {
+					border: 0;
+					}
+		.isbnProperties .description {
+			display: block;
+			margin: 8px 0 0;
+			}
+			.advertising .description {
+				clear: both;
+				} 
+		.isbnProperties .discountCode {
+			display: inline;
+			}
+		.isbnProperties .edition {
+			display: block;
+			font-size: 85%;
+			padding: 0;
+			margin: -2px 0 0;
+			}
+		.isbnProperties .editor {
+			font-style: normal;
+			font-variant: small-caps;
+			white-space: nowrap;
+			}
+		.isbnProperties .format {
+			display: inline;
+			text-transform: capitalize;
+			}
+			.advertising .format {
+				display: block;	
+				}
+		.isbnProperties .isbnNumber {
+			display: block;
+      font-size: 80%;
+      color: #666666;
+		}
+		.isbnProperties .isbnNumber .formattedHyphISBN13 {
+			display: block;
+		}
+		.isbnProperties .isbnNumber .formattedHyphISBN10 {
+			display: block;
+		}
+		.isbnProperties .bookIsbnHyphens {
+			display: block;
+		}
+		.isbnProperties .bookIsbnHyphens .formattedHyphISBN13 {
+			display: block;
+		}
+		.isbnProperties .bookIsbnHyphens .formattedHyphISBN10 {
+			display: block;
+		}
+		.isbnProperties .linkMore {
+			font-size: 100%;
+			}
+			.advertising .linkMore {
+				clear: both;
+				display: block;
+				margin: 5px 0 0;
+				}
+			.advertising .linkMore a {
+				background:   url("/us/assets/images/arrowRed.gif") no-repeat left center;
+				padding: 0 0 0 12px;
+				}
+			.isbn .isbnSummaryDetails .linkMore a {
+				background:   url("/us/assets/images/arrowRed.gif") no-repeat right center;
+				padding: 0 11px 0 0;
+				}
+		.isbnProperties .moreSeries {
+			font-size: 90%;
+			}
+			.isbn .isbnProperties .moreSeries {
+				clear: right;
+				margin: 10px 0 15px 0;
+				}
+			.isbnProperties .moreSeries h3 {
+				color: #333;
+				display: block;	
+				font-size: 100%;
+				font-style:normal;
+				padding: 0;
+				}
+			.isbnProperties .moreSeries ul {				
+				margin: 0 0 0 20px;
+				padding: 0;
+				}
+			.isbnProperties .moreSeries.redArrow ul {
+				margin: 0 0 0 20px;
+				padding: 0;
+				}
+		.isbnProperties .otherFormats {
+			display: block;	
+			}
+		.isbnProperties .oldPrice {
+			text-decoration: line-through;					
+			}
+		.isbnProperties .pages {
+			display: inline;
+			}
+		.isbnProperties .price {
+			display: block;
+			color: #9C0000;
+			}
+			.isbn .isbnProperties .price {
+				display: inline;
+				color: #9C0000;
+				font-weight: bold;				
+				}
+			.advertising .price {	
+				font-weight: normal;
+				margin: 5px 0 0;
+				}
+			.results .isbnProperties .price {
+				display: inline;
+				}
+			.results.inline .isbnProperties .result .price {
+				display: inline;
+				clear: none;
+				}
+		.isbnProperties .publicationDate {}
+			.isbn .isbnProperties .publicationDate {
+				display: block;
+				float: left;
+				}
+		.isbnProperties .related {
+			display: block;
+			margin: 10px 0 0;
+			}
+			.isbnProperties .related h2 {
+				display: inline;	
+				font-size: 100%;
+				font-weight: bold;
+				}
+			.advertising .related {
+				display: block;
+				clear: both;
+				}
+		.isbnProperties .result {
+			font-size: 90%;
+			margin: 0;
+			padding: 5px;
+			}
+		.isbnProperties .set {
+			display: block;
+			font-size: 85%;
+			padding: 0;
+			margin: 0;
+			}
+		.isbnProperties .shipping {
+			font-size: 85%;
+			margin-bottom: 5px;
+			}
+			.isbnProperties .shipping h2 {
+				font-weight: normal;
+				}
+		.isbnProperties .subTitle {	
+			display: block;		
+			}
+			.isbn .isbnProperties .subTitle {
+				font-size: 105%;
+				font-weight: bold;
+				}
+			
+	.isbnSummary {}
+		.isbnList .isbnSummary {
+			border-bottom: 1px dashed #DBDBB7;
+			margin-bottom: 15px;
+			padding: 0 20px;
+			}
+		.subject .isbnList .isbnSummary {
+			padding: 0;
+			}
+		.isbnList .isbnSummary.last {
+			border-bottom: none;
+			}
+
+		.isbnList .isbnSummary .clear {
+			margin-bottom: 15px;
+			} 
+			
+	.isbnSummaryWrap {}
+		.isbnList .isbnSummaryWrap {
+			margin: 0 0 0 65px;
+			}
+		.internal .isbnList .isbnSummaryWrap {
+			margin: 0 0 0 95px;
+			}
+		#features .isbnSummary .isbnSummaryWrap {
+			width: auto;
+			}
+
+	.isbnSummaryDetails {}
+		.isbnSummary .isbnSummaryDetails {}
+			.isbn .isbnSummaryDetails {
+				margin: 10px 0 0 95px;
+				}
+			.isbnList .isbnSummaryDetails {
+				float: right;
+				width: 98%;
+				min-width: 98%;
+				}
+
+	#linksOfInterest{
+		margin: 0 0 3px;	
+		}
+		#linksOfInterest h1 {
+			color: #5A4726;
+			font-size: 110%;
+			margin: 0;
+			padding: 0;
+			}
+		#linksOfInterest li {
+			padding: 0 0 5px;
+			}
+		#linksOfInterest ul  {
+			margin: 0;
+			padding: 0 0 0 15px;
+			}
+
+.mailingListGraphicSmall {
+			width: 195px;
+			float: right;
+			margin: 0;
+			padding-bottom: 3px;
+			}
+
+.mailingListGraphicLarge {
+			width: 211px;
+			}
+			
+	#mailingListSubscribe {
+		margin: 20px 0 0;
+		padding-bottom: 5px;
+		}
+		#mailingListSubscribe.alignRight {
+			width: 190px;
+			float: right;
+			margin: 0;
+			padding-bottom: 3px;
+			}
+			.isbn #mailingListSubscribe.alignRight {
+				width: auto;
+				float: none;
+				text-align:left;
+				}
+
+		#highlight #mailingListSubscribe {
+			padding-bottom: 0;
+			margin: 0;
+			}
+		#isbnHeading #mailingListSubscribe {
+			text-align: left;
+			margin: 0;
+			}
+		#mailingListSubscribe h2 {
+			color: #9C0000;
+			margin: 0;
+			}
+		#mailingListSubscribe .button {
+			font-size: 80%;
+			margin: 0 2px 2px 0;
+			padding: 1px;	
+			width: 6em;
+			}
+			.internal #mailingListSubscribe .button {
+				float: right;
+				}
+			/* See also .button */
+		#mailingListSubscribe #fieldMailingListSubscribe{}
+			.internal #mailingListSubscribe #fieldMailingListSubscribe{
+				width: 95%;
+				}
+			#highlight #mailingListSubscribe #fieldMailingListSubscribe{
+				width: 61%;
+				}
+		#mailingListSubscribe .linkMore {}
+			.internal .advertising #mailingListSubscribe .linkMore {
+				clear: none;
+				display: inline;
+				float: left;
+				margin: 0;
+				}
+				.internal .advertising #mailingListSubscribe .linkMore a {
+					background: url(none);
+					padding: 0;
+					}
+			#highlight #mailingListSubscribe .linkMore {	
+				display: block;
+				margin-right: 80px;
+				text-align: right;
+				}
+				.corporate #mailingListSubscribe .linkMore {	
+					margin-right: 0;
+					}
+
+	.merchandising{
+		padding: 5px;
+		}
+		.merchandising h1 {
+			color: #5A4726;
+			margin: 0 0 5px;
+			padding: 0;
+			font-size: 105%;
+			}
+		.merchandising h1 a {
+			color: #5A4726;
+			}
+		.merchandising ul {
+			list-style: none url(none);
+			margin: 0;
+			padding: 0;
+			}
+		.merchandisingBook,
+		.merchandising li {
+			margin: 0 0 10px 0;
+			}
+		.merchandising .upsell {
+			border-bottom: 1px dashed #B8C8DE;
+			padding: 0 0 15px;
+			margin: 0 0 10px;
+			}
+			.merchandising .upsell.first {
+				border-top: none;
+				padding: 0 0 10px;	
+				}
+			.merchandising .upsell.last {
+				border-bottom: none;
+				padding: 0 0 10px;	
+				}
+
+	.navBrowse {
+		margin: 0;
+		padding: 0;
+		}
+		.navBrowse.bottom {
+			border: none;
+			margin: 10px 0 0;
+			}
+		.navBrowse h2 {
+			display: inline;
+			}
+		.navBrowse .inputButton {
+			display: inline;
+			position: relative;
+			left: 10px;
+			}
+		.navBrowse .sortSearch {}
+			.results .navBrowse .sortSearch {
+				height: 4em;
+				}
+			.navBrowse .sortSearch form {
+				margin:0;
+				padding: 0;
+				}
+			.navBrowse .sortSearch label {
+				color: #333;
+				font-weight: bold;
+				font-size: 90%;
+				}
+			.navBrowse .sortSearch .button{
+				margin: -2px 0 0;
+				}			
+				.results .navBrowse .sortSearch .button{
+					margin: 8px 0 0 10px;
+					}
+			.navBrowse .sortSearch .display{
+				padding: 6px 10px 0 0;
+				float: left;
+				}			
+				.navBrowse .sortSearch .display input {
+					margin-bottom: -3px;
+					}
+			.navBrowse .sortSearch .formField {
+				margin: 5px 0 0;
+				}
+				.navBrowse .sortSearch .formField select {
+					font-size: 90%;
+					}
+			.navBrowse .sortSearch .navNumberResults {
+				float: left;
+				margin: 10px 10px 20px 0;
+				}
+			.navBrowse .sortSearch .navResults {
+				padding: 0;
+				margin: 0;
+				}
+			.navBrowse .sortSearch .navSort {
+				float: left;
+				margin: 0;
+				padding:0;
+				}
+				.results .navBrowse .sortSearch .navSort {
+					float: none;
+					}
+		.navBrowse .next,
+		.navBrowse .previous {
+			font-size: 110%;
+			font-weight: bold;
+			}
+		.navBrowse .radioFieldGroup {
+			display: inline;
+			}
+			.navBrowse .radioFieldGroup .radioField label {
+				font-weight: normal;
+				}
+		.navBrowse .resultsNumber {
+			display: block;
+			margin: 0;
+			}
+		.navBrowse .resultsSort {
+			display: block;
+			margin: 0 0 15px;
+			}
+			.navBrowse .resultsSort .sortCurrent {
+				font-weight: bold;
+				}
+		.navBrowse .sortSearch {
+			margin: 10px 0;
+			}
+		.internal .navBottomBrowse {
+/*			border-top: 1px dashed #DADAB5;  */
+			padding: 15px 0 0;
+			margin: 10px 0 15px;
+			}
+
+	.navResults {
+		font-size: 90%;
+		}
+
+	#navUtility {
+		background: #F7F7EF url("/us/assets/images/navUtility/bgCorner.gif") no-repeat left bottom;
+		padding-left: 20px;
+		position: absolute;
+		right: 0; 
+		top: -1px; /* Cover the border-top on .wrapper */
+		/* width: 23.1em; */
+		}
+		#navUtility a {
+			display: block;
+			float: left;
+			font-size: 80%;
+			font-weight: bold;
+			padding: 5px;
+			margin-right: 10px;
+			text-decoration: none;
+			}
+			#navUtility a:hover {
+				text-decoration: underline;
+				}
+		#navUtility #cart a {
+			background:   url("/us/assets/images/navUtility/iconCart.gif") no-repeat left center;
+			padding-left: 20px;
+			}
+		#navUtility #help a {
+			background:   url("/us/assets/images/navUtility/iconHelp.gif") no-repeat left center;			
+			padding-left: 18px;		
+			}
+		#navUtility #checkOut a {
+			background:   url("/us/assets/images/navUtility/iconCheckout.gif") no-repeat left center;
+			padding-left: 17px;
+			white-space: nowrap;			
+			}
+		#navUtility a #cartItems {
+			color: #333333;
+			}
+
+	.newsTickerContainer {}
+		#newsTicker h1 {
+			font-size: 100%;
+			margin: 0;
+			padding: 0 5px 5px;
+			}
+			#newsTicker a {
+				text-decoration: none;
+				}
+			#newsTicker a:hover {
+				text-decoration: underline;
+				}
+		#newsTicker {
+			margin: 0 0 3px;
+			padding: 0;
+			}
+		#newsTicker .newsItem {
+			display: block; 
+			margin: 0 0 10px 0; 
+			padding: 0 10px 0 5px;
+			}
+	.pages {}
+		.pages a {
+			text-decoration: none;
+			}
+		.pages a:hover {
+			text-decoration: underline;
+			}
+		.pages .selected {
+			font-size: 110%;
+			font-weight: bold;
+			}
+
+	#printerFriendly {
+		display: block;
+		margin: 0 0 10px 5px;
+		text-align: left;
+		}
+		#printerFriendly a {
+			background:   url("/us/assets/images/print.gif") no-repeat left center;			
+			padding: 1px 0 1px 25px;
+			}
+
+	#promoCode{}
+		#highlight #promoCode {
+			padding-bottom: 20px;
+			}
+		#purchase #promoCode {
+			text-align: left;
+			margin: 0;
+			}
+		#promoCode h2 {
+			margin: 0;
+			padding: 0;
+			}
+		#promoCode .button {}
+			#highlight #promoCode .button {
+				margin: 0 2px 0 0;
+				}
+			.internal #promoCode .button {
+				float: left;		
+				} 
+			.isbn #promoCode .button{	
+				margin: 0;
+				}
+		#promoCode #fieldPromoCode {
+			width: 69%;
+			}
+			#highlight #promoCode #fieldPromoCode {
+				width: 69%;
+				}
+			.internal #promoCode #fieldPromoCode {
+				float: left;
+				}
+			.isbn #promoCode #fieldPromoCode {
+				width: 69%;
+				}
+		#promoCode .linkMore {}
+			#highlight #promoCode .linkMore {	
+				display: block;
+				margin: 0 65px 0 0;
+				text-align: right;
+				}
+		.searchBarContainer #promoCode{
+			width: 200px;
+			margin: 0 0 0 -10px;
+			}
+			.searchBarContainer #promoCode img {
+				float: left;
+				display: block;
+				margin: 5px 2px 0 0;
+				}
+			.searchBarContainer #promoCode .button {
+				margin-top: -1px;
+				}
+			.searchBarContainer #promoCode .linkMore{
+				float: right;
+				margin-right: 35px;
+				}
+			.searchBarContainer #promoCode #fieldPromoCode {
+				color: #5A4726;
+				font-size: 75%;
+				width: 15em;
+				}
+
+
+	#purchase {
+		text-align: center;
+		}
+		#purchase img {
+			border: 0;
+			float: none;
+			margin: 0 0 10px 0;
+			}
+
+
+	#recentSearches {
+		margin: 10px 0 10px 1px;
+		min-height: 100px;
+		padding: 0 0 20px;
+		position: relative;
+		}
+		#recentSearches h2 {
+			margin: 0;
+			padding: 5px 10px 0;
+			}
+		#recentSearches ul {
+			margin: 5px 0 0 30px;
+			padding: 0;
+			}
+		#recentSearches .smallText {
+			display: block;
+			left: 0;
+			bottom: 0;
+			position: absolute;
+			text-align: center;
+			width: 100%;
+			}
+
+	.redArrow{
+		margin: 0;
+		padding: 0;
+		text-align: left;	
+		}
+		.redArrow ul {
+			list-style:   url("/us/assets/images/arrowRed.gif");
+			margin: 0 0 0;
+			padding: 0 0 0 25px;
+			}
+	
+	#relatedLinks{
+/*	background: #F4F8FB;
+		border: 1px solid #DFDFC6;	*/
+		clear: both;
+		margin: 0 0 15px;
+/*	padding: 5px; */
+		}
+		#relatedLinks h2 {
+			margin: 0;
+			padding: 0;
+			}
+		#relatedLinks ul {
+			margin: 0;
+			}
+		#relatedLinks li {
+			padding-bottom: 20px;
+			}
+		#relatedLinks .solidBlueOutlineDashedBlue {
+			margin-bottom: 10px;
+			padding-bottom: 0;
+			}
+			
+  .requiredAsterisk {
+		color: #cc0000;
+		}
+		
+  #returnToHE {
+  
+  	}
+	#returnToHE p a {
+		background: transparent url(/us/assets/images/btnReturnToHE.jpg) no-repeat 0 0;
+		display: block;
+		font-size: 110%;
+		margin-left: -2px;
+		padding: 8px 10px 10px;
+		}
+		#returnToHE p a:hover {
+			text-decoration: none;
+			}
+		#returnToHE p a span {
+			display: block;
+			font-weight: bold;
+			white-space: nowrap;
+			}
+			
+  #sampleChapterInfo {
+		/* used on us_view_isbn.jsp */
+		padding-top: 10px;
+		}
+
+	.seriesIndex .crossSellContainer {
+		margin-top: 20px;
+		}
+	.seriesIndex .two-col-index-table {
+		width: 95%;
+		}
+		.seriesIndex .two-col-index-table th {
+			padding-top: 10px;
+			}
+		.seriesIndex .two-col-index-table td {
+			width: 50%;
+			}
+
+	.searchBarContainer {
+		background: #B7BFC9 url("/us/assets/images/bgSearch.gif") repeat-y right top;
+		padding: 4px 0 3px 3px;
+		}
+		#searchBarBottom {
+			border-bottom: 1px solid #7F7FB2;			
+			border-top: 1px solid #7F7FB2;
+			}
+		#searchBarTop {
+			margin-top: 78px;
+			border-top: 1px solid #003;
+			}
+		.searchAd {
+			float: right; 
+			margin: 0 0 0 10px;  
+			padding: 0; 
+			width: 209px; 
+			}
+
+/* May need to remove */
+			.internal .searchAd form {
+				padding: 0;
+				margin: 2px 0 0;
+				}
+/* */
+			.searchAd span {
+				border: none;
+				margin: 0;
+				padding: 0;
+				}
+			.searchAd a {
+				text-decoration: none; /* Force Mozilla to underline the link */
+				display: block;
+				}
+				.searchAd a:hover {
+					text-decoration: none;
+					}
+			.searchAd #promoCode {
+				padding: 0;
+				}
+			.searchAd .title {
+				display: block;
+				font-weight: bold;
+				margin: 0;
+				padding: 0;
+				}
+		.searchBar {
+			padding: 2px 0 0 0;
+			margin: 0 0 0 -4px;
+			width: 70%;
+			text-align:center;
+			}
+			.searchBar form {
+				margin: 0;
+				padding: 0;
+				}
+		.searchBookField{ 
+			width: 57%;
+			}
+		.searchBar .linkMore {
+			/* clear: both; */  /* RWH:  Does not appear to be needed.  Is causing spacing issue in FF */
+			display: block;
+			text-align: right;
+			margin-right: 15%;
+			}
+			.searchBar .linkMore a {
+				text-decoration: none;
+				}
+			.searchBar .linkMore a:hover {
+				text-decoration: underline;
+				}
+
+	.subject {}
+		.subject #content h1 {
+			margin: 0;
+			padding: 0 0 10px;
+			}
+
+	#subjects {
+		border: 1px solid #fff;
+		margin: 0 0 10px;
+		padding: 0;
+		}
+		#subjectHeading {
+			background:   url("/us/assets/images/bgSubjectHeading.gif") repeat-x left bottom;
+			height: 1.5em; /* added to compensate for removal of clear:both from #drillDown and .subjectsList */
+			}
+		#subjects h1 {
+			color: #333;
+			display: inline;
+			float: left;
+			font-size: 90%;
+			font-weight: bold;
+			margin: 3px 7px 0 3px;
+			padding: 0;
+			}
+		#subjects ul {
+			list-style: none;
+			}
+		#subjects #mainSubjects {}
+			#subjects #mainSubjects li {
+				margin: 0 0 2px 0;
+				} 
+			#subjects #mainSubjects ul {
+				margin: 0;
+				padding: 0 8px 8px;
+				}  
+
+	.subjectsList {
+		border-top: none;
+		/* clear: both;  <--- this was breaking FF 1.0. see also: #drillDown, #subjectHeading */
+		margin: 0 0 10px;
+		}
+		.search .subjectsList, 
+		#home .subjectsList {
+			padding: 3px 0 0;
+			}
+
+
+	.tabs {
+		margin: 0;
+		padding: 0;
+		}
+		.tabsContainer {
+			margin: 0 0 -10px;
+			width: 100%;
+			}
+		.tabsContainer .tabs {
+			font-size: 80%;
+			list-style: none;
+			margin-left: 10px;
+			}
+		.tabs li {
+			float: left;  
+			margin: 0 5px 0 0; 
+			}
+			.tabsContainer .tabs li {
+				margin: 0 3px 0 0;
+				}
+			.tabs li a {
+				display: block;
+				font-weight: bold;
+				text-decoration: none;
+				background: url("/us/assets/images/browseTabs/right.gif") no-repeat 100% -150px;
+				padding: 0;
+				margin: 0;
+				}
+				#content .tabs li a {
+					background: url("/us/assets/images/browseTabs/rightAlt.gif") no-repeat 100% -150px;
+					}
+
+				.tabs li a span {
+					background: url("/us/assets/images/browseTabs/left.gif") no-repeat 0 -150px;
+					display: block;
+					padding: 2px 3px 1px 3px;
+					margin: 0;
+					}
+				#content .tabs li a span {
+					background: url("/us/assets/images/browseTabs/leftAlt.gif") no-repeat 0 -150px;				
+					}
+				.tabsContainer .tabs li a span {
+					padding: 4px 8px 2px;
+					margin-top: 6px;
+					}
+			.tabs li.current a {
+				background-position: right top;
+				}
+				#content .tabs li.current a {
+					background-position: right top;
+					}
+			.tabs li.current a span {
+				background-position: left top;
+				padding-bottom: 2px;
+				margin: 0;
+				}
+				#content .tabsContainer .tabs li.current a span {
+					background-position: left top;
+					font-size: 120%;
+					padding: 6px 12px 4px;
+					}
+		.tabs a:hover {
+			text-decoration: none;
+			}
+
+
+	.textAdSingle {}
+		.textAdSingle h2 {
+			margin: 0;
+			padding: 0;
+			}
+			
+	.textAdMulti {
+		margin: 3px 0 0 0;
+		padding: 10px;
+		}
+		.textAdMulti li {
+			padding: 0 0 7px 0;
+			}
+		.textAdMulti ul {
+			margin: 0;
+			padding: 0 0 0 15px;
+			list-style:   url("/us/assets/images/arrowRed.gif") none;
+			}
+		.textAdMulti .heading {
+			font-weight: bold;
+			}
+
+
+/* Structural Styles */
+/* Version 1.9 */
+/* Last updated 07.21.2004 */
+
+	html, body {
+		height:100%;
+		margin:0;
+		padding:0;
+		}
+	
+	.clear {
+		clear: both;
+		display: block;
+		height: 1px;
+		overflow:hidden; /*Forces IE to show only the 1px height */
+		margin-top: -1px;
+		}
+
+	.wrapper {
+		background: #fff;
+		border: 1px solid #fff; /* #E0E9F4; */
+		max-width: 1000px;
+		min-width: 770px;
+		position: relative; /* Resets 0,0 for nested absolute positioned divs; also fixes bugs in IE*/
+		}
+
+	.outer {
+		border: 1px solid #fff; /* Solves some bugs in Mozilla based browsers */
+		}
+
+		/* 213 Styles */
+			.layout213 .middle {
+				min-height:100%;
+				margin-left: 205px;	
+				margin-right: 198px;
+				}
+			.layout213 .inner {
+				float: left;
+				width: 99%;
+				}
+			.layout213 .oneContainer {
+				float: left;
+				margin: 0;
+				padding: 0;
+				width: 98%;
+				}
+			.layout213 .one{
+				padding: 10px;
+				}
+				.layout213.internal .one{
+					padding: 0 5px 0 15px;
+					}
+			.layout213 .twoContainer {
+				margin-left: -205px;
+				width: 204px;
+				}
+			.layout213 .two {
+				padding: 0 0 0 5px;
+				}
+				.layout213.internal .two {
+					padding: 0;
+					}
+				.layout213.corporate .two{
+					padding: 0 0 0 3px;
+					}
+			.layout213 .threeContainer {
+				float: right;
+				margin-right: -199px;
+				width: 200px;
+				}
+			.layout213 .three {
+				padding-right: 5px;
+				}
+
+
+		/* 21 */
+			.layout21 .middle {
+				margin-left: 202px;
+				min-height:100%;
+				}
+			.layout21 .inner {
+				float: left;
+				width: 100%;
+				} 
+			.layout21 .oneContainer {
+				float:left;
+				margin: 0;
+				padding: 0;
+				width: 100%;
+				}
+			.layout21 .twoContainer {
+				margin-left:-202px;	/*must be 1px greater than width */
+				width:201px;
+				}
+			.layout21.internal .one {
+				padding: 0 5px 0 15px;
+				}
+
+		/*1*/
+		
+			.layout1 .one {
+				padding: 0 15px;
+				}
+
+		
+		
+		/* Two column layout in one div */
+		.leftRightContainer {
+			margin-right: 198px;
+			}
+			.form .leftRightContainer {
+				margin-right: 249px;
+				max-width: 400px; 
+				}
+
+		.left {
+			width:95%;
+			float: left;
+			}
+
+		.right {
+			float: right;
+			margin-right: -199px;
+			width: 200px;
+			}
+			.form .right {
+				background: #F7F7EF;
+				border: 1px solid #B8C8DE;
+				margin-right: -249px;
+				padding: 10px;
+				width: 230px;
+				}
+/* Added By Kurt for EmailLabs subscription forms */
+.emailSelections {
+	padding: 0px 0px 10px;
+	border: 1px solid #EEEECC;
+	margin: 5px 10px 15px 5px;
+}
+.emailSelections H2 {
+	color: #999966;
+	background-color: #EEEEDD;
+	padding: 3px;
+	margin: 0px 0px 5px;
+}
+.emailSelections P {
+	padding: 5px 10px;
+	margin: 0px;
+}
+
+/* added by Brent for catalog node layout */
+.catalogNodeTextAbove {
+  margin: 5px 210px 20px 5px;
+}
+.catalogNodeTextBelow {
+  margin: 5px 210px 20px 10px;
+}
+
+/* added by Brant to format ISBN-10 and ISBN-13 layout */
+span.formattedISBN10, span.formattedISBN13, span.formattedHyphISBN13, span.formattedHyphISBN10 {
+	display: block;
+}
+
+/* added by Ben for whitesaleLink box */
+#whitesaleLinkBox {
+background: #B9CADF url("/us/assets/images/bgISBNOnPageLink.gif") repeat-x left top;
+	margin: 3px 0px 5px 0px;
+	border-bottom: 1px solid #7F7FB2;
+}
+
+#whitesaleLinkBox H2 {
+	color: #000000;
+	padding: 1px;
+	margin: 0px;
+	margin: 0px 0px 0px 5px;
+}
+
+#whitesaleLinkBox A {
+color: #C00000;
+	font-size: 120%;
+}
+#whitesaleLinkBox A:hover {
+text-decoration: underline;
+color: red;
+}

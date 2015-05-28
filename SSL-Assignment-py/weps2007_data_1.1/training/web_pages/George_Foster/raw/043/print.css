@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* Print CSS for the STRONG Family Web Site */
+
+body {
+	color: black;
+	background: white;
+	font-size: 12pt;
+    margin: 0px 0px 0px 0px;
+	}
+#Header {
+	display: none;
+	}
+#navlist {
+	display: none;
+	}
+#Footer{
+	display: none;
+}
+#content{
+    margin: 0px 0px 0px 0px;
+	width: auto;
+	padding-top : 0;
+	padding-bottom : 0;
+	padding-left : 0;
+	padding-right : 0;
+	float:none; 
+	}
+	
+a:link, a:visited {
+	color: #0000FF; background: white;
+	font-weight: normal;
+	text-decoration: underline;
+	}
+	
+	/*Fixes IE bug to allow repetition of header & footer
+	when printing long tables. www.jehia.com*/
+	
+	thead {display: table-header-group;}
+	tfoot {display:table-footer-group;}
+

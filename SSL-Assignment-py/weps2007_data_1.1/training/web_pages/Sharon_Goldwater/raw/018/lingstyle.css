@@ -1,0 +1,155 @@
+BODY { margin-left: 0px; margin-top: 0px; width: 600px; background: white; font-family: arial, helvetica, geneva, sans-serif}
+
+DIV.maintext {width: 580px; margin-left:20px; margin-top:30px; margin-bottom:30px; font-size:16px }
+DIV.fronttext { line-height:1.2; font-size:16px}
+DIV.side {color: #707070; font-size: 11px }
+DIV.bottom {color: #707070; font-size: 12px }
+
+H1 {font-size: 25px; margin-top:10px; margin-bottom:10px}
+
+H2 {font-size: 18px; margin-top:8px; margin-bottom:8px}
+
+A.bottom:link, 
+A.bottom:visited, 
+A.side:link, 
+A.side:visited 
+{color: #707070}
+
+A:link { color: #000099 }
+A:visited { color: #0033FF }
+
+B.alumni { color: #000099}
+
+TABLE.main,
+TABLE.people,
+TABLE.graduate,
+TABLE.undergraduate,
+TABLE.courses,
+TABLE.events,
+TABLE.research,
+TABLE.news
+{ background: #812017; color: white; font-size: 11px; font-family: arial, helvetica, geneva, sans-serif }
+
+TD.nav { color: white; text-align: center; font-weight: bold; font-size: 14px; font-family: arial, helvetica, geneva, sans-serif }
+TD.navcorner { color: white; background: black; font-weight: bold; font-size: 14px; font-family: arial, helvetica, geneva, sans-serif }
+TD.roundcorner { background-position: center; background-repeat: no-repeat; background-image: url(/icons/corner.gif)}
+TD.sidetitle { color: white; background: #a0a0a0; font-size: 14px; font-family: arial, helvetica, geneva, sans-serif}
+
+TD.main { background-position: center; background-repeat: no-repeat; background-image: url(/icons/lingtab-50.gif)}
+TD.people { background-position: center; background-repeat: no-repeat; background-image: url(/icons/lingtab-65.gif) }
+TD.graduate { background-position: center; background-repeat: no-repeat; background-image: url(/icons/lingtab-80.gif) }
+TD.undergraduate { background-position: center; background-repeat: no-repeat; background-image: url(/icons/lingtab-130.gif) }
+TD.courses { background-position: center; background-repeat: no-repeat; background-image: url(/icons/lingtab-80.gif) }
+TD.events { background-position: center; background-repeat: no-repeat; background-image: url(/icons/lingtab-65.gif) }
+TD.research { background-position: center; background-repeat: no-repeat; background-image: url(/icons/lingtab-80.gif) }
+TD.news { background-position: center; background-repeat: no-repeat; background-image: url(/icons/lingtab-50.gif) }
+
+A.corner:link,
+A.corner:visited,
+A.navmain:link,
+A.navmain:visited,
+A.navgraduate:link,
+A.navgraduate:visited,
+A.navundergraduate:link,
+A.navundergraduate:visited,
+A.navcourses:link,
+A.navcourses:visited,
+A.navpeople:link,
+A.navpeople:visited,
+A.navevents:link,
+A.navevents:visited,
+A.navresearch:link,
+A.navresearch:visited,
+A.navnews:link,
+A.navnews:visited
+{ color: white; text-decoration: none; font-size: 14px; font-family: arial, helvetica, geneva, sans-serif }
+
+A.navsl:link, 
+A.navsl:visited,
+A.navmabout:link, 
+A.navmabout:visited,
+A.navmgeneral:link, 
+A.navmgeneral:visited,
+A.navmprograms:link,
+A.navmprograms:visited,
+A.navmrelated:link,
+A.navmrelated:visited,
+A.navgoverview:link,
+A.navgoverview:visited,
+A.navgadmissions:link,
+A.navgadmissions:visited,
+A.navgdegrees:link,
+A.navgdegrees:visited,
+A.navgguidelines:link,
+A.navgguidelines:visited,
+A.navgpictures:link,
+A.navgpictures:visited,
+A.navgresources:link,
+A.navgresources:visited,
+A.navuwelcome:link,
+A.navuwelcome:visited,
+A.navumajor:link,
+A.navumajor:visited,
+A.navuhonors:link,
+A.navuhonors:visited,
+A.navuminor:link,
+A.navuminor:visited,
+A.navuopp:link,
+A.navuopp:visited,
+A.navuwhy:link,
+A.navuwhy:visited,
+A.navuresources:link,
+A.navuresources:visited,
+A.navupictures:link,
+A.navupictures:visited,
+A.navchide:link,
+A.navchide:visited,
+A.navcshow:link,
+A.navcshow:visited,
+A.navcwebpages:link,
+A.navcwebpages:visited,
+A.navcpdf:link,
+A.navcpdf:visited,
+A.navctime:link,
+A.navctime:visited,
+A.navccalendar:link,
+A.navccalendar:visited,
+A.navpfaculty:link,
+A.navpfaculty:visited,
+A.navpvisitors:link,
+A.navpvisitors:visited,
+A.navpgraduate:link,
+A.navpgraduate:visited,
+A.navpundergraduates:link,
+A.navpundergraduates:visited,
+A.navpphdalumni:link,
+A.navpphdalumni:visited,
+A.navpmaalumni:link,
+A.navpmaalumni:visited,
+A.navpbaalumni:link,
+A.navpbaalumni:visited,
+A.navpstaff:link,
+A.navpstaff:visited,
+A.navpcommittees:link,
+A.navpcommittees:visited,
+A.navppictures:link,
+A.navppictures:visited,
+A.navestanford:link,
+A.navestanford:visited,
+A.naveother:link,
+A.naveother:visited,
+A.navrprojects:link,
+A.navrprojects:visited,
+A.navrrelated:link,
+A.navrrelated:visited,
+A.navrresources:link,
+A.navrresources:visited,
+A.navrcollaborations:link,
+A.navrcollaborations:visited,
+A.navrexperiments:link,
+A.navrexperiments:visited,
+A.navnothing:link,
+A.navnothing:visited
+{ color: white; text-decoration: none; font-size: 11px; font-family: arial, helvetica, geneva, sans-serif }
+
+

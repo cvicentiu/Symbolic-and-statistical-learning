@@ -1,0 +1,10 @@
+# wildcards are not part of the robots.txt spec.
+# however ...
+
+# googlebot supports wildcards
+User-agent: Googlebot
+Disallow: *&vote=*
+
+# so does yahoo
+User-agent: Yahoo! Slurp
+Disallow: *&vote=*

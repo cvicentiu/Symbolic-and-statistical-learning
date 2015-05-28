@@ -1,0 +1,51 @@
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+/***************************
+  User Ratings Control
+***************************/
+#ccRatings {
+  width:35%;
+  float:right;
+}
+/** Rating block with star images**/
+#ccRatings .ratings {
+  margin-right:11px;
+}
+#ccRatings img {
+  display:inline;
+}
+#ccRatings .ratings label {
+  font:normal 16px "Arial", "Helvetica" sans-serif;
+}
+#ccRatings .ratings a {
+  color:#333;
+  font-size:11px;
+}
+#ccRatings .ratings span {
+   margin-right:5px;
+}
+/** Options block */
+#ccRatings .options {
+  margin-top:10px;
+}
+#ccRatings .options span{
+  margin:0 15px 0 3px; 
+}
+#ccRatings .options a
+{
+	color:#887;
+	font-size:11px;
+	text-decoration:none;
+	cursor:default;
+}
+#ccRatings .options a:link,
+#ccRatings .options a:visited {
+  color:#333;
+  font-size:11px;
+  text-decoration:none;
+}
+#ccRatings .options a:link:hover, 
+#ccRatings .options a:active
+{
+  text-decoration:underline;
+  cursor:pointer;
+}

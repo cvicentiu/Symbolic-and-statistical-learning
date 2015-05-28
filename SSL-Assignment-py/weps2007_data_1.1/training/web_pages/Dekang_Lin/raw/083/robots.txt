@@ -1,0 +1,32 @@
+#
+# robots.txt for http://www.sims.berkeley.edu/
+#
+# last modified: 19-Mar-2001 by KH
+#
+# This configuration denies all robots access to specified document
+# trees in this document space. See the following URL for more details:
+#
+#    http://www.robotstxt.org/wc/exclusion.html
+#
+User-agent: *
+# disallow everything in /cgi-bin (including calendar and woa stats)
+Disallow: /cgi-bin/
+# disallow internal website
+Disallow: /internal/
+# disallow mailing list archives
+Disallow: /resources/mailing-lists/
+# disallow calday site
+Disallow: /calday/
+# disallow spambot trap
+Disallow: /mordor/
+# disallow user-requested URLs
+Disallow: /~jmcd/HTML/
+Disallow: /~acquisti/rimedio/
+Disallow: /~chuang/tmp/
+Disallow: /academics/courses/is213/s04/projects/Paparazzi/
+Disallow: /courses/is213/s04/projects/Paparazzi/
+Disallow: /academics/courses/is255/f04/readings/
+Disallow: /courses/is255/f04/readings/
+Disallow: /academics/courses/is146/s05/lectures/
+Disallow: /courses/is146/s05/lectures/
+Disallow: /~lnw/

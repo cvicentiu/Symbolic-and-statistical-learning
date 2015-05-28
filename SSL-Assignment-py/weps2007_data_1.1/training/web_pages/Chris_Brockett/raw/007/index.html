@@ -1,0 +1,192 @@
+<html><head>
+<script src="index_files/utility.txt"></script>
+<script src="index_files/popup.txt"></script>
+<style>
+.popupLink { outline: none }
+.popup { POSITION: absolute; VISIBILITY: hidden; BACKGROUND-COLOR: #d0ddee; width: 250; BORDER-LEFT: 1px solid black; BORDER-TOP: 1px solid black; BORDER-BOTTOM: 3px solid black; BORDER-RIGHT: 3px solid black; PADDING: 3px; z-index: 10 }
+</style><title>Robust Segmentation of Japanese Text into a Lattice for Parsing - Gary, Brockett, Suzuki (ResearchIndex)</title>
+
+
+<meta name="keywords" content="Gary Kacmarcik, Chris Brockett, Hisami Suzuki http acl ldc upenn edu pdf Robust Segmentation of Japanese Text into a Lattice for Parsingand 2000 Proceedings COLING">
+<meta name="description" content="We describe a segmentation component that utilizes minimal syntactic knowledge to produce a lattice of word candidates for a broad coverage Japanese NL parser. The segmentor is a finite state morphological analyzer and text norrealizer designed to handle the orthographic variations characteristic of">
+<style type="text/css">
+<!--
+body { font-family: arial, Helvetica, sans-serif; font-size: 10pt; }
+.l { font-family: arial, Helvetica, sans-serif; font-size: 11pt; }
+.m { font-family: arial, Helvetica, sans-serif; font-size: 10pt; }
+.s { font-family: arial, Helvetica, sans-serif; font-size: 9pt; }
+.t { font-family: arial, Helvetica, sans-serif; font-size: 8pt; }
+.h { font-family: arial, Helvetica, sans-serif; font-size: 10pt; }
+.tl:link { color: #0000ff; text-decoration:none; }
+.cl:link { color: #6666ff; text-decoration:none; }
+.tl:visited { color: #0000ff; text-decoration:none; }
+.cl:visited { color: #6666ff; text-decoration:none; }
+.tl:hover { color: #0000ff; text-decoration:underline; }
+.cl:hover { color: #6666ff; text-decoration:underline; }
+.c { color: #777777; text-decoration:none; }
+.i { color: #777777; }
+-->
+</style></head><body alink="#7700ff" bgcolor="#ffffff" link="#0000ff" vlink="#7700ff">
+
+<span class="m">
+<table class="h" border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td bgcolor="#d0ddee"><center><span class="l"><b>Robust Segmentation of Japanese Text into a Lattice for Parsing (2000)</b></span>&nbsp;&nbsp;<span class="l"><a href="http://citeseer.ist.psu.edu/correct/585724"><font color="gray">(Make Corrections)</font></a></span>&nbsp;&nbsp;<span class="l"><a href="http://citeseer.ist.psu.edu/context/1676676/585724">(1&nbsp;citation)</a></span><br>   Gary Kacmarcik, Chris Brockett, Hisami Suzuki</center><br>
+<center><a href="http://citeseer.ist.psu.edu/cs"><img src="index_files/cssmall.gif" align="middle" border="0"></a> &nbsp; <a href="http://citeseer.ist.psu.edu/cs">Home/Search</a><script language="JavaScript">
+<!--
+if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) {
+var url="http://citeseer.ist.psu.edu/kacmarcik00robust.html"; var title="Robust Segmentation of Japanese Text int.. (ResearchIndex)";
+document.write(' &nbsp; <A HREF="javascript:window.ext');
+document.write('ernal.AddFavorite(url,title);" ');
+document.write('onMouseOver=" window.status=');
+document.write("'Bookmark'; return true ");
+document.write('"onMouseOut=" window.status=');
+document.write("' '; return true ");
+document.write('">Bookmark</a>');
+}
+else {
+}
+// -->
+</script>
+ &nbsp; <a href="http://citeseer.ist.psu.edu/context/1676676/585724">Context</a> &nbsp; <a href="http://citeseer.ist.psu.edu/nrelated/1676676/585724">Related</a>
+<br><br><b>Links: &nbsp; <a href="http://citeseer.ist.psu.edu/ACMLINK/http://portal.acm.org/citation.cfm?coll=GUIDE&amp;dl=GUIDE&amp;id=990877">ACM</a>&nbsp;&nbsp;&nbsp;<a href="http://citeseer.ist.psu.edu/DBLPLINK/http://www.informatik.uni-trier.de/%7Eley/db/conf/coling/coling2000.html#KacmarcikBS00">DBLP</a></b><br><br></center>
+</td><td bgcolor="#d0ddee" width="2"><font size="-1">&nbsp;</font></td><td bgcolor="#d0ddee"></td><td bgcolor="#d0ddee"><center>View or download:<br><font size="-1"><a href="http://citeseer.ist.psu.edu/rd/0%2C585724%2C1%2C0.25%2CDownload/http%3AqSqqSqacl.ldc.upenn.eduqSqCqSqC00qSqC00-1057.pdf" onmouseover="self.status='http://acl.ldc.upenn.edu/C/C00/C00-1057.pdf'; return true" onmouseout="self.status=''; return true">upenn.edu/C/C00/C001057.pdf</a><br>
+Cached:&nbsp;&nbsp;<a href="http://citeseer.ist.psu.edu/rd/0%2C585724%2C1%2C0.25%2CDownload/http://citeseer.ist.psu.edu/cache/papers/cs/27803/http:zSzzSzacl.ldc.upenn.eduzSzCzSzC00zSzC00-1057.ps.gz/kacmarcik00robust.ps.gz" onmouseover="self.status='http://citeseer.ist.psu.edu/cache/papers/cs/27803/http:zSzzSzacl.ldc.upenn.eduzSzCzSzC00zSzC00-1057.ps.gz/kacmarcik00robust.ps.gz'; return true" onmouseout="self.status=''; return true">PS.gz</a>&nbsp;&nbsp;<a href="http://citeseer.ist.psu.edu/rd/0%2C585724%2C1%2C0.25%2CDownload/http://citeseer.ist.psu.edu/compress/0/papers/cs/27803/http:zSzzSzacl.ldc.upenn.eduzSzCzSzC00zSzC00-1057.ps.gz/kacmarcik00robust.ps" onmouseover="self.status='http://citeseer.ist.psu.edu/compress/0/papers/cs/27803/http:zSzzSzacl.ldc.upenn.eduzSzCzSzC00zSzC00-1057.ps.gz/kacmarcik00robust.ps'; return true" onmouseout="self.status=''; return true">PS</a>&nbsp;&nbsp;<a href="http://citeseer.ist.psu.edu/rd/0%2C585724%2C1%2C0.25%2CDownload/http://citeseer.ist.psu.edu/cache/papers/cs/27803/http:zSzzSzacl.ldc.upenn.eduzSzCzSzC00zSzC00-1057.pdf/kacmarcik00robust.pdf" onmouseover="self.status='http://citeseer.ist.psu.edu/cache/papers/cs/27803/http:zSzzSzacl.ldc.upenn.eduzSzCzSzC00zSzC00-1057.pdf/kacmarcik00robust.pdf'; return true" onmouseout="self.status=''; return true">PDF</a></font><div onclick="event.cancelBubble = true;" class="popup" id="NameFieldPopup"><font size="-1"><font align="left">This document uses <a href="http://codeen.cs.princeton.edu/coblitz/">CoBlitz</a>
+to cache paper downloads. If your firewall is blocking outgoing
+connections to port 3125, you can use these links to download local
+copies.<br>&nbsp;&nbsp;<a href="http://citeseer.ist.psu.edu/rd/0%2C585724%2C1%2C0.25%2CDownload/http://citeseer.ist.psu.edu/cache/papers/cs/27803/http:zSzzSzacl.ldc.upenn.eduzSzCzSzC00zSzC00-1057.ps.gz/kacmarcik00robust.ps.gz" onmouseover="self.status='http://citeseer.ist.psu.edu/cache/papers/cs/27803/http:zSzzSzacl.ldc.upenn.eduzSzCzSzC00zSzC00-1057.ps.gz/kacmarcik00robust.ps.gz'; return true" onmouseout="self.status=''; return true">PS.gz</a>&nbsp;&nbsp;<a href="http://citeseer.ist.psu.edu/rd/0%2C585724%2C1%2C0.25%2CDownload/http://citeseer.ist.psu.edu/compress/0/papers/cs/27803/http:zSzzSzacl.ldc.upenn.eduzSzCzSzC00zSzC00-1057.ps.gz/kacmarcik00robust.ps" onmouseover="self.status='http://citeseer.ist.psu.edu/compress/0/papers/cs/27803/http:zSzzSzacl.ldc.upenn.eduzSzCzSzC00zSzC00-1057.ps.gz/kacmarcik00robust.ps'; return true" onmouseout="self.status=''; return true">PS</a>&nbsp;&nbsp;<a href="http://citeseer.ist.psu.edu/rd/0%2C585724%2C1%2C0.25%2CDownload/http://citeseer.ist.psu.edu/cache/papers/cs/27803/http:zSzzSzacl.ldc.upenn.eduzSzCzSzC00zSzC00-1057.pdf/kacmarcik00robust.pdf" onmouseover="self.status='http://citeseer.ist.psu.edu/cache/papers/cs/27803/http:zSzzSzacl.ldc.upenn.eduzSzCzSzC00zSzC00-1057.pdf/kacmarcik00robust.pdf'; return true" onmouseout="self.status=''; return true">PDF</a></font></font></div>
+<font size="-1">&nbsp;&nbsp;<a href="http://citeseer.ist.psu.edu/cachedpage/585724/1">Image</a>&nbsp;&nbsp;<a href="http://citeseer.ist.psu.edu/updatecache/585724">Update</a>&nbsp;&nbsp;<a href="http://citeseer.ist.psu.edu/viewers.html">Help</a><br><br>
+From:&nbsp;&nbsp;<a href="http://citeseer.ist.psu.edu/rd/0%2C585724%2C1%2C0.1%2CSource/http%3AqSqqSqacl.ldc.upenn.eduqSqCqSqC00qSq" onmouseover="self.status='http://acl.ldc.upenn.edu/C/C00/'; return true" onmouseout="self.status=''; return true">upenn.edu/C/C00/</a> <a href="http://citeseer.ist.psu.edu/site/585724">(more)</a><br>
+<a href="http://citeseer.ist.psu.edu/update/585724">(Enter author homepages)</a>
+</font></center></td></tr></tbody></table><br>
+<script language="JavaScript"><!--
+function rs(pos) { if (document.images) { document.images['r'+pos].src='/rs'+pos+'.gif'; document.images['r'+pos].src='/rd/0%2C585724%2C1%2C'+pos+'%2Crate/http%253A%252F%252Ftractatus.ist.psu.edu/icon/rs'+pos+'.gif'; if (pos != 1) { document.images['r1'].src='/r1.gif'; } if (pos != 2) { document.images['r2'].src='/r2.gif'; } if (pos != 3) { document.images['r3'].src='/r3.gif'; } if (pos != 4) { document.images['r4'].src='/r4.gif'; } if (pos != 5) { document.images['r5'].src='/r5.gif'; } } }
+//--></script>
+<table align="right" bgcolor="#cccccc" border="0" cellpadding="3" cellspacing="0" hspace="3" vspace="2">
+<tbody><tr valign="top"><td align="center"><font face="Arial,Helvetica,Geneva" size="2">Rate this article: <a href="javascript:rs(1)"><img src="index_files/r1.gif" name="r1" align="bottom" border="0"></a><a href="javascript:rs(2)"><img src="index_files/r2.gif" name="r2" align="bottom" border="0"></a><a href="javascript:rs(3)"><img src="index_files/r3.gif" name="r3" align="bottom" border="0"></a><a href="javascript:rs(4)"><img src="index_files/r4.gif" name="r4" align="bottom" border="0"></a><a href="javascript:rs(5)"><img src="index_files/r5.gif" name="r5" onclick="javascript:rs(5);" align="bottom" border="0"></a> (best)<br>
+&nbsp; <a href="http://citeseer.ist.psu.edu/addcomment/585724">Comment on this article</a> &nbsp; </font></td></tr>
+</tbody></table>
+<center><a href="http://citeseer.ist.psu.edu/update/585724">(Enter summary)</a></center><br>
+<script language="JavaScript">
+<!--
+var k = new Array();
+k['n'] = "http://citeseer.ist.psu.edu/context/1676676/585724";
+k['1'] = "javascript:rs(1)";
+k['2'] = "javascript:rs(2)";
+k['3'] = "javascript:rs(3)";
+k['4'] = "javascript:rs(4)";
+k['r'] = "/nrelated/1676676/585724";
+k['5'] = "javascript:rs(5)";
+k['c'] = "http://citeseer.ist.psu.edu/correct/585724";
+k['u'] = "http://citeseer.ist.psu.edu/update/585724";
+k['v'] = "/cachedpage/585724/1";
+k['h'] = "http://citeseer.ist.psu.edu/cs";
+k['i'] = "/cachedpage/585724/1";
+browser = navigator.appName;
+version = parseInt(navigator.appVersion);
+n4 = (document.layers) ? true:false;
+mozilla = (browser=="Netscape" && version>=5) ? true:false;
+ie4 = (navigator.userAgent.indexOf("MSIE 4")!=-1) ? true:false;
+ie5 = (navigator.userAgent.indexOf("MSIE 5")!=-1) ? true:false;
+ie6 = (navigator.userAgent.indexOf("MSIE 6")!=-1) ? true:false;
+ie = (navigator.userAgent.indexOf("MSIE")!=-1) ? true:false;
+function GetKey(key) {
+        eventChooser = (!ie) ? key.which : event.keyCode;
+        if (document.all) { key = window.event; }
+        if (n4) { if (key.modifiers && Event.ALT_MASK || key.modifiers && Event.CTRL_MASK) { return; } }
+        if (mozilla) { if (key.altKey || key.ctrlKey) { return; } }
+        which = String.fromCharCode(eventChooser).toLowerCase();
+        for (var i in k) { if (which == i) { window.location = k[i]; } }
+        }
+document.onkeypress = GetKey;
+// -->
+</script>
+<b>Abstract:</b> We describe a segmentation component that
+utilizes minimal syntactic knowledge to produce a
+lattice of word candidates for a broad coverage
+Japanese NL parser. The segmentor is a finite
+state morphological analyzer and text norrealizer
+designed to handle the orthographic variations
+characteristic of written Japanese, inclading
+alternate spellings, script variation, vowel
+extensions and word-intemtl parenthetical
+material. This architecture differs from con-
+ventional Japanese wordbreakers in... <a href="http://citeseer.ist.psu.edu/update/585724">(Update)</a><br><br>
+<font color="#907050" size="-1"><b> Context of citations to this paper: &nbsp; <a href="http://citeseer.ist.psu.edu/context/1676676/585724">More</a></b></font><br><br>...implausible, the word breaking analysis is correct. <b> The word breaking component of our system is described in detail in <!--cite--><font color="green">Kacmarcik et al. 2000)</font>.</b> For the purpose of robust parsing, the component is expected to solve the following two problems: ##Lemmatization: Find...<br><br><font color="#907050" size="-1"><b> Cited by: &nbsp; <a href="http://citeseer.ist.psu.edu/context/1676676/585724">More</a></b></font><br>
+<a class="tl" href="http://citeseer.ist.psu.edu/430483.html">Using a Broad-Coverage Parser for Word-Breaking in Japanese - Hisami Suzuki Chris (2000)</a>
+ 
+ &nbsp; <a href="http://citeseer.ist.psu.edu/correct/430483"><font color="#6f6f6f">(Correct)</font></a><br>
+<br>
+<font color="#907050" size="-1"><b> Active bibliography (related documents): &nbsp; <a href="http://citeseer.ist.psu.edu/cs?q=dbnum%3D1%2CDID%3D585724%2Ccluster%3Dnone%2Cqtype%3Dactive:kacmarcik%5E00%5Erobust">More</a> &nbsp; <a href="http://citeseer.ist.psu.edu/nrelated/1676676/585724">All</a></b></font><br>
+<b><i>0.5</i></b>: &nbsp; <a class="tl" href="http://citeseer.ist.psu.edu/574360.html">Pattern Matching in the TEXTRACT Information Extraction System - Kitani, Eriguchi, Hara (1994)</a>
+ 
+ &nbsp; <a href="http://citeseer.ist.psu.edu/correct/574360"><font color="#6f6f6f">(Correct)</font></a><br>
+<b><i>0.0</i></b>: &nbsp; <a class="tl" href="http://citeseer.ist.psu.edu/sornlertlamvanich99building.html">Building A Thai Part-Of-Speech Tagged Corpus (ORCHID) - Sornlertlamvanich.. (1999)</a>
+ 
+ &nbsp; <a href="http://citeseer.ist.psu.edu/correct/303297"><font color="#6f6f6f">(Correct)</font></a><br>
+<b><i>0.0</i></b>: &nbsp; <a class="tl" href="http://citeseer.ist.psu.edu/354699.html">Mostly-Unsupervised Statistical Segmentation of Japanese.. - Ando, Lee (2000)</a>
+ 
+ &nbsp; <a href="http://citeseer.ist.psu.edu/correct/354699"><font color="#6f6f6f">(Correct)</font></a><br>
+<br>
+<font color="#907050" size="-1"><b> Similar documents based on text: &nbsp; <a href="http://citeseer.ist.psu.edu/cs?q=dbnum%3D1%2CDID%3D585724%2Ccluster%3Dnone%2Cqtype%3Dtextsim:kacmarcik%5E00%5Erobust">More</a> &nbsp; <a href="http://citeseer.ist.psu.edu/nrelated/1676676/585724">All</a></b></font><br>
+<b><i>0.3</i></b>: &nbsp; <a class="tl" href="http://citeseer.ist.psu.edu/brill01automatically.html">Automatically Harvesting Katakana-English Term Pairs.. - Brill, Kacmarcik.. (2001)</a>
+ 
+ &nbsp; <a href="http://citeseer.ist.psu.edu/correct/554623"><font color="#6f6f6f">(Correct)</font></a><br>
+<b><i>0.2</i></b>: &nbsp; <a class="tl" href="http://citeseer.ist.psu.edu/garris96componentbased.html">Component-Based Handprint Segmentation Using Adaptive Writing.. - Garris (1996)</a>
+ 
+ &nbsp; <a href="http://citeseer.ist.psu.edu/correct/15829"><font color="#6f6f6f">(Correct)</font></a><br>
+<b><i>0.2</i></b>: &nbsp; <a class="tl" href="http://citeseer.ist.psu.edu/551738.html">Practical Experience with Grammar Sharing in Multilingual NLP - Michael Gamon Carmen (1997)</a>
+ 
+ &nbsp; <a href="http://citeseer.ist.psu.edu/correct/551738"><font color="#6f6f6f">(Correct)</font></a><br>
+<br>
+<font color="#907050" size="-1"><b> BibTeX entry: &nbsp; <a href="http://citeseer.ist.psu.edu/update/585724">(Update)</a></b></font><br>
+<br>
+<font size="-1"> Kacmarcik, Gary, Chris Brockett and Hisami Suzuki.
+2000. Robust Segmentation of Japanese Text into a Lattice for Parsing.
+Proceedings of COLING 2000.
+http://citeseer.ist.psu.edu/kacmarcik00robust.html &nbsp; <a href="http://citeseer.ist.psu.edu/check/1676676">More</a></font><br><!--gbr--><br><!--gbr2--><pre>@misc{ gary00robust,
+  author = "K. Gary and C. Brockett and H. Suzuki",
+  title = "Robust Segmentation of Japanese Text into a Lattice for Parsing",
+  text = "Kacmarcik, Gary, Chris Brockett and Hisami Suzuki. 2000. Robust Segmentation
+    of Japanese Text into a Lattice for Parsing. Proceedings of COLING 2000.",
+  year = "2000",
+  url = "citeseer.ist.psu.edu/kacmarcik00robust.html" }</pre>
+<!--kbr--><!--kbr2--><font color="#907050" size="-1"><b> Citations (may not include all citations):</b></font><br>
+14 &nbsp;
+<a class="cl" href="http://citeseer.ist.psu.edu/context/271970/0">Natural Language Processing: The PLNLP Approach (context)</a> - Jensen, lqeidom et al.<br>
+11 &nbsp;
+<a class="cl" href="http://citeseer.ist.psu.edu/context/362390/0">A Stochastic Japanese Morphological Analyzer Using a Forward.. (context)</a> - Nagata&nbsp;&nbsp;<a href="http://citeseer.ist.psu.edu/DBLPLINK/http://www.informatik.uni-trier.de/%7Eley/db/conf/coling/coling1994.html#Nagata94">DBLP</a><br>
+2 &nbsp;
+<a class="cl" href="http://citeseer.ist.psu.edu/context/2199408/0">A Japanese Preprocessor for Syntactic and Semantic Parsing (context)</a> - Kitani, Mitamura<br>
+2 &nbsp;
+<a class="cl" href="http://citeseer.ist.psu.edu/context/1676678/0">Word Segmentation in Sentence Analysis (context)</a> - Wu, Zixin<br>
+1 &nbsp;
+<a class="cl" href="http://citeseer.ist.psu.edu/context/2227487/0">hnprovements of Japanese Morphological Analyzer JUMAN (context)</a> - Kurohashi, Nakamum et al.<br>
+1 &nbsp;
+<a class="cl" href="http://citeseer.ist.psu.edu/context/2227488/0">Building a Japanese Parsed Corpus while hnproving the Parsin.. (context)</a> - Kurohashi, Nagao<br>
+1 &nbsp;
+<a class="tl" href="http://citeseer.ist.psu.edu/586900.html">Japanese Morphological Analyzer using Word Co-occurrence</a>
+ - Fuchi, Takagi&nbsp;&nbsp;<a href="http://citeseer.ist.psu.edu/ACMLINK/http://portal.acm.org/citation.cfm?coll=GUIDE&amp;dl=GUIDE&amp;id=980915">ACM</a><br>
+1 &nbsp;
+<a class="cl" href="http://citeseer.ist.psu.edu/context/2227489/0">MindNet: Acquiring and Strncturing Semantic luformation fi'o.. (context)</a> - Richardson, Dolan et al.<br>
+1 &nbsp;
+<a class="cl" href="http://citeseer.ist.psu.edu/context/2227490/0">Using a broad-coverage parsel' for word-breaking in Japanese (context)</a> - if, Kacmarcik - 2000<br>
+1 &nbsp;
+<a class="cl" href="http://citeseer.ist.psu.edu/context/2227486/0">Morphological Analyis by Minimum Connective-Cost Method (context)</a> - Hisamitsu, Nitta<br><br><font color="#907050" size="-1"><b> Documents on the same site (http://acl.ldc.upenn.edu/C/C00/):  &nbsp; <a href="http://citeseer.ist.psu.edu/site/585724">More</a></b></font><br>
+<a class="tl" href="http://citeseer.ist.psu.edu/osborne00estimation.html">Estimation of Stochastic Attribute-Value Grammars using an.. - Osborne (2000)</a>
+  &nbsp; <a href="http://citeseer.ist.psu.edu/correct/575765"><font color="#6f6f6f">(Correct)</font></a><br>
+<a class="tl" href="http://citeseer.ist.psu.edu/thorsten00probabilistic.html">Probabilistic Parsing and Psychological Plausibility - Brants, Crocker (2000)</a>
+  &nbsp; <a href="http://citeseer.ist.psu.edu/correct/575850"><font color="#6f6f6f">(Correct)</font></a><br>
+<a class="tl" href="http://citeseer.ist.psu.edu/sarkar00automatic.html">Automatic Extraction of Subcategorization Frames for Czech - Sarkar, Zeman (2000)</a>
+  &nbsp; <a href="http://citeseer.ist.psu.edu/correct/576150"><font color="#6f6f6f">(Correct)</font></a><br>
+<br>
+
+<!-- ddv: 0.1 did: 585724 -->
+<!-- rcm: activebib: 430483 574360 303297 354699 citedby: 430483 onsamesite: 575765 575850 576150 cites: 586900 text: 430483 554623 15829 551738 --><!--kbr--><!--kbr2--><!-- abs --><font size="-1"><a href="http://citeseer.ist.psu.edu/rd/0/http%3AqSqqSqciteseer.ist.psu.eduqSqonline-nature01qSq" onmouseover="self.status='http://citeseer.ist.psu.edu/online-nature01/'; return true" onmouseout="self.status=''; return true">Online articles have much greater impact</a> &nbsp; <a href="http://citeseer.ist.psu.edu/rd/0/http%3AqSqqSqciteseer.ist.psu.eduqSqlawrence99digital.html" onmouseover="self.status='http://citeseer.ist.psu.edu/lawrence99digital.html'; return true" onmouseout="self.status=''; return true">More about CiteSeer.IST</a> &nbsp; <a href="http://citeseer.ist.psu.edu/rd/0/http%3AqSqqSqciteseer.ist.psu.eduqSqcs%3Fsf%3D1" onmouseover="self.status='http://citeseer.ist.psu.edu/cs?sf=1'; return true" onmouseout="self.status=''; return true">Add search form to your site</a> &nbsp; <a href="http://citeseer.ist.psu.edu/rd/0/http%3AqSqqSqciteseer.ist.psu.eduqSqsubmitDocument.html" onmouseover="self.status='http://citeseer.ist.psu.edu/submitDocument.html'; return true" onmouseout="self.status=''; return true">Submit documents</a> &nbsp; <a href="http://citeseer.ist.psu.edu/feedback.html">Feedback</a> &nbsp; <!-- exs --><!-- exe --><br></font><!-- abe --><!--kbr--><!--kbr2--><br><font size="-1">CiteSeer.IST - Copyright <a href="http://www.psu.edu/">Penn State</a> and <a href="http://www.nec-labs.com/">NEC</a></font><br>
+<script language="JavaScript">
+<!--
+if (window != top) top.location.href = location.href;
+// -->
+</script>
+<!--done-->
+<!-- Cached -->
+<!-- Time: 0.149 Browser: Netscape 5; Host: 62.204.207.53 UID: 50260713 Request ID: 42507 LM: Mon, 26 Feb 2007 17:16:40 GMT E: Mon, 26 Feb 2007 17:16:40 GMT Cached: 1 -->
+</span></body></html>

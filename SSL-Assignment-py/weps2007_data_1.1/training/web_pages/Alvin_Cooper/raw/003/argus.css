@@ -1,0 +1,287 @@
+/* ARGUS-COURIER */
+* {
+font: 13px Georgia, "Times New Roman", Times, serif
+}
+
+
+/* PAGE DEFAULTS */
+table#masthead {
+background: url("/img/masthead-back.gif") repeat-y;
+}
+
+td.mottobox{
+background: url("/img/masthead-bottom.gif") no-repeat;
+text-align:center;
+}
+
+a:link, a:visited {
+	color: #253e6c;
+}
+
+a:hover {
+	color: #435e8f;
+}
+
+
+
+
+/* PAGE REGIONS */
+
+/* Define Feature Headline Region */
+td#weather {
+	font: normal 9px Verdana, Arial, Helvetica, sans-serif;
+	padding: 5px 10px 5px 10px;
+}
+
+td#weathersponsor {
+	font: normal 9px Verdana, Arial, Helvetica, sans-serif;
+	padding: 5px 0px 0px 10px;
+}
+
+td#weather a {
+	font-weight: bold;
+	color: #0000CC;
+}
+
+/* Navigation */
+div#navs {
+	padding: 0px 0px 0px 0px;
+	background: #E6CEB5;
+}
+
+/* Date Region */
+table#dateregion {
+	border: 1px solid #CC9C6A;
+}
+
+table#dateregion td{
+	font-size: 11px;
+}
+
+table#dateregion a {
+	color: #0000CC;
+}
+
+/* Calendar Styles */
+	.LNK {font-size: 12px; font-family : Arial; color: #000000; font-weight:bold;text-decoration : underline;}
+	.LNKMonth {font-size: 12px; font-family : Arial; color: #000000; font-weight:bold;text-decoration : none;}
+	.blueLNK {font-size: 12px; font-family : Arial; color: #003399; font-weight:bold;text-decoration : underline;}
+	.blueLNK:hover {font-size: 12px; font-family : Arial; color: #ffffff; font-weight:bold;text-decoration : underline;}
+	.DNK {font-size:12px; font-family : Arial; color: #FFDDDD; font-weight:bold;text-decoration : underline;}
+	.DNK:hover {text-decoration : underline;  color: white;font-weight:bold;}
+	.ink {font-size: 12px; font-family : Arial; color: #000000; font-weight:bold;text-decoration : underline;}
+	.ink:hover{text-decoration : underline;  color:#6699cc; font-weight:bold;}
+	table#caltable {
+		width: 100px;
+		height: 102px;
+		margin: 0 0 1em 0;
+		border: 1px solid #7E6041;
+	}
+	
+/* Main article */
+
+h3 {
+	font: 12px Georgia,"Times New Roman",Times,serif;
+	font-weight: bold;
+	margin: 0 0 5px 0;
+	color: #435e8f;
+	text-decoration:none;
+}
+h3 a:link, h3 a:visited {
+	font: 12px Georgia,"Times New Roman",Times,serif;
+	font-weight: bold;
+	margin: 0 0 5px 0;
+	text-decoration:none;
+}
+h3.hot{
+color:#990000;
+}
+
+h1,  h1 a:link, h1 a:visited {
+	font: 22px Georgia,"Times New Roman",Times,serif;
+	font-weight: bold;
+	top-padding: 5px;
+	margin: 0 0 5px 0;
+	text-decoration:none;
+}
+
+#election h1 {
+	font: 20px Georgia,"Times New Roman",Times,serif;
+	font-weight: bold;
+	top-padding: 5px
+}
+
+h2, h2 a:link, h2 a:visited {
+	font: 18px Georgia,"Times New Roman",Times,serif;
+	font-weight: bold;
+	top-padding: 5px;
+	margin: 0 0 5px 0;
+	text-decoration:none;
+}
+h1 a:hover, h2 a:hover, h3 a:hover {
+	text-decoration:none;
+}
+
+div.mainarticle h1 {
+	font: 20px Georgia,"Times New Roman",Times,serif;
+	font-weight: bold;
+	margin: 5px 0 8px 0;
+}
+div.mainarticle h2 {
+	font: 16px Georgia,"Times New Roman",Times,serif;
+	font-weight: bold;
+	font-style:italic;
+	color:#333333;
+	margin: 8px 0 8px 0;
+}
+h1.motto, h1.motto a:link, h1.motto a:visited {
+color:#FFFFFF;
+font-size:11px;
+margin: 1px 0 0 0;
+}
+h1.motto a:hover {
+color:#990000;
+font-size:11px;
+margin: 1px 0 0 0;
+}
+
+
+.archivehead {
+	font: 11px Georgia,"Times New Roman",Times,serif;
+}
+
+	.credit {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 10px;
+		line-height: 1.2em;
+		text-align: right;
+		color: #663300;
+	}
+
+	.cutline, .cutline a {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 10px;
+		line-height: 1.2em;
+	}
+	
+		.brown_bold_text {
+		color: #7E6041;
+		font-weight: bold;
+		font-size: 16px;
+		text-decoration: underline;
+		margin: 5px 0 5px 0;
+	}
+	
+			.pmsponsor {
+		color: blue;
+		font-weight: bold;
+		font-size: 10px;
+		text-decoration: none;
+		top-padding: 5px
+	}
+
+/* REGION CLASSES */
+
+
+/* Navigation */
+div#navs div.mainnavs {
+	font: normal 14px  Arial, Helvetica, sans-serif;
+	padding: 5px 5px 5px 5px;
+	margin: 2px 0px 0px 0px;
+	background: #7E6041;
+}
+
+div#navs div.mainnavs a {
+	color: #ffffff;
+	font: normal 14px  Arial, Helvetica, sans-serif;
+}
+
+div#navs div.subnavs {
+	font: normal 12px  Arial, Helvetica, sans-serif;
+	padding: 5px 5px 5px 5px;
+}
+
+div#navs div.subnavs a {
+	color: #000000;
+	font: normal 12px  Arial, Helvetica, sans-serif;
+} 
+
+/* Sidebar Titles */
+div.sidetitle {
+	font: normal 14px  Arial, Helvetica, sans-serif;
+	color: #ffffff;
+	padding: 5px 5px 5px 5px;
+	background: #7E6041;
+	font-weight: bold;
+	margin: 0px 0px 10px 0px;
+}
+
+/* Search Boxes */
+form.searchbox {
+	font: normal 12px  Arial, Helvetica, sans-serif;
+	padding: 0px 5px 0px 15px;
+}
+
+
+/* Featured Story */
+div.featuredstory {
+	padding: 5px 5px 5px 5px;
+	border: 1px solid #9A9191;
+	background: #E4D7D7;
+}
+div.featuredstory h1, div.featuredstory h2 {
+	margin: 0px 0px 0px 0px;
+}
+
+/* Text Ads */
+div.textads {
+	font: 9pt Arial, Helvetica, sans-serif;
+	border: 1px solid blue;
+	padding: 2px;
+	margin: 0 0 5 0;
+}
+
+div.textads p {
+	font: 8pt Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+div.textads a:link, div.textads a:link a:hover, div.textads a:link a:visited {
+	text-decoraton: none;
+	color: blue;
+}
+
+table.articlephoto{
+margin: 0 0 10px 10px;
+padding: 0 0 0 10px;
+}
+table.articlephoto td.box{
+background: #fef3e8;
+padding: 0 10px 10px 10px;
+border: 1px solid #f3dec9;
+}
+table.articlephoto td.box h3 {
+	font: 12px Georgia,"Times New Roman",Times,serif;
+	font-weight: bold;
+	margin: 0 -10px 5px -10px;
+	padding: 0 10px 0 10px;
+	color: #7e6041;
+	background: #f3dec9;
+	text-decoration:none;
+}
+
+ul {
+list-style:none;
+margin: 0px;
+padding: 0px;
+}
+ul li{
+text-align:left;
+/*margin: 0 0 3px 0;*/
+padding-left: .7em;
+line-height: 15px;
+background:   url(http://go.pressdemocrat.com/img/arrow_gray.gif) no-repeat 0 5px;
+}
+
+

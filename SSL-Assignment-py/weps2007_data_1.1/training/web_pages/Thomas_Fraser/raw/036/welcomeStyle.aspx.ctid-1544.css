@@ -1,0 +1,1304 @@
+.newspic a img {width: 100px !important;}
+body {
+font-family: Arial, Verdana, Arial, Helvetica, sans-serif;
+}
+
+a.alphabet-list {color:blue;!important}
+a.alphabet-list:visited {color:red;!important}
+a.alphabet-list:hover {color:blue;!important}
+a.alphabet-list:active {color:red;!important}
+acronym
+{cursor: help; border-bottom: #000 1px dotted}
+.megaphone {
+display:block;float:right;
+}
+
+a {text-decoration:underline;}
+/************************  Nav Style ************************/
+
+.hi-nav {
+background-color: #EDEFFA; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px; border-right: solid 1px #00428C; border-left: solid 1px #00428C;}
+
+.nav-int2 {background-color: #EDEFFA; border-right: solid 1px #00428C; border-left: solid 1px #00428C;
+}
+
+.hi-nav td.nav2 img,
+.hi-nav td.nav2 br,
+.hi-nav td.nav3 img,
+.hi-nav td.nav3 br,
+.hi-nav td.nav4 img,
+.hi-nav td.nav4 br {display: none;}
+
+.hi-nav .homepage #homelink {
+background-color: #CCD1EE !important; 
+}
+
+.hi-nav #homelink {
+display: block;
+font-size: 100%;
+color: #003684;
+border-bottom: solid 1px #00428C; 
+border-top: solid 1px #FFFFFF; 
+font-weight: bold;
+padding: 5px 0px 5px 10px; 
+background-color: #EDEFFA; 
+}
+
+.hi-nav .grandparent .navlevel2,
+.hi-nav .parent .navlevel2
+{ 
+background-color: #CCD1EE!important ;
+display: block!important;
+border: none;
+}
+
+.hi-nav .nav table { margin: 0px 0px 0px 0px;}
+
+.hi-nav .navlevel3,
+.hi-nav .navlevel4,
+.hi-nav .navlevel5
+{
+text-decoration: none; font-weight: normal;
+}
+
+.hi-nav .navsellevel3,
+.hi-nav .navsellevel4,
+.hi-nav .navsellevel5
+{
+text-decoration: underline; font-weight: normal;
+}
+
+.hi-nav a:hover.navlink .navlevel3,
+.hi-nav a:hover.navlink .navlevel4,
+.hi-nav a:hover.navlink .navlevel5
+
+{
+text-decoration: underline !important; font-weight: normal;
+}
+
+.hi-nav .navlevel1,
+.hi-nav .navsellevel1,
+.hi-nav .navlevel2
+{
+border-bottom: solid 1px #00428C; border-top: solid 1px #FFFFFF; font-weight: bold;
+}
+
+.hi-nav .navlevel1,
+.hi-nav .navsellevel1,
+.hi-nav .navlevel2,
+.hi-nav .navsellevel2,
+.hi-nav .navlevel3,
+.hi-nav .navsellevel3,
+.hi-nav .navlevel4,
+.hi-nav .navsellevel4,
+.hi-nav .navlevel5,
+.hi-nav .navsellevel5 { font-size: 70%; padding: 3px 0px 3px 10px; display: block; }
+
+.hi-nav .navlevel1,
+.hi-nav .navsellevel1 { background-color: #EDEFFA;}
+
+.hi-nav .navlevel2 
+{ 
+padding: 5px 0px 5px 10px; 
+background-color: #EDEFFA; 
+}
+
+.hi-nav .navsellevel2 
+{ 
+padding: 5px 0px 5px 10px; 
+background-color: #CCD1EE; 
+}
+
+.hi-nav .navlevel3, 
+.hi-nav .navsellevel3,
+.hi-nav .navlevel4, 
+.hi-nav .navsellevel4,  
+.hi-nav .navlevel5, 
+.navsellevel5
+{ 
+padding-left: 20px; 
+background-color: #CCD1EE; 
+}
+
+.hi-nav .navlevel4, 
+.hi-nav .navsellevel4
+{ 
+padding-left: 30px; 
+background-color: #CCD1EE; 
+}
+
+.hi-nav .navlevel5, 
+.hi-nav .navsellevel5
+{ 
+padding-left: 35px; 
+background-color: #CCD1EE; 
+}
+
+.hi-nav .navweight {font-weight: bold;}
+
+.hi-nav a.navlink:hover b .navlevel2
+{ background-color: #CCD1EE !important; }
+
+.hi-nav a.navlink {font-weight: bold; text-decoration: none; color: #003684;}
+.hi-nav a.navlink:hover .navlevel2,
+.hi-nav a.navlink:hover {font-weight: bold; text-decoration: none; color: #003684; background-color: #CCD1EE !important;}
+.hi-nav a.navlink:visited {font-weight: bold; text-decoration: none; color: #003684 !important;}
+
+.crafts-div
+{
+padding: 0px;
+margin: 0px;
+background-color: #333333;
+width: 100%;
+height: 100%;
+}
+
+
+/******************** CSS Document **************************/
+*:hover, *:link, *:active, *:visited
+ {text-decoration:none!important;}
+/* removal of hyperlinks added by ama 24/05/04 on request from client*/
+
+
+ 
+body
+{
+margin: 0px;
+padding: 0px;
+background-color: #EEEEF7;
+}
+
+.xsl
+{
+width: 530px;
+font-size: 80%;
+}
+
+.xsl2 { font-size: 90%; }
+
+.xsltop
+{
+background-color: #7A7A52;
+color: #ffffff;
+}
+
+/************************  Content Style ************************/
+
+.content-padding
+{
+padding: 10px;
+}
+
+p
+{ font-size: 100%; color: #00438C; letter-spacing: 0; 
+               vertical-align: top; word-spacing: 0; 
+               line-height: 130%; text-indent: 0; padding: 1; 
+font-family: Arial, Verdana,  Helvetica, sans-serif;}
+
+.content   { 
+font-size: 85%; color: #00438C; letter-spacing: 0; 
+               vertical-align: top; word-spacing: 0; 
+                text-indent: 0; padding-left: 3; }
+td { color: #00438C; }
+
+a { color: #990066; text-decoration:underline;}
+a:hover{color: #00438c !important; text-decoration:underline;}
+a:visited:hover { color: #00438c !important; text-decoration:underline;}
+a:visited {color: #990066; text-decoration:underline;}
+a:active {color: #990066; text-decoration:underline;}
+
+
+.main-content-padding
+{
+padding: 10px;
+}
+
+.SiteMapTable
+{
+font-size: 80%;
+}
+
+.sitemaplink
+{
+font-size: 90%;
+}
+
+div.picture td.content  /** For Image Captions **/
+{
+font-size: 60%;
+color: #000000;
+text-align: center;
+}
+
+div.picture table { text-align: center; }
+
+td.content small
+{
+text-align: center !important;
+}
+
+		
+/************************  Body Style ************************/
+
+.nav-footer
+{
+font-size: 70%;
+}
+
+.sitemap
+{
+display: none;
+}
+
+.newstable
+{
+font-size: 90% !important;
+}
+
+.newsarticledate { font-style: italic; }
+
+.breadcrumb-row
+{
+border-bottom: solid 1px #E4E4F1;
+margin: 10px 10px 3px 10px;
+}
+
+.breadcrumb
+{
+    color: #3F94BC!important;
+    font-size: 71%;
+text-decoration: none;	
+padding: 2px;
+}
+
+a.breadcrumb
+{
+    color: #3F94BC !important;
+    font-size: 100%;
+text-decoration: underline;
+
+}
+
+a.breadcrumb:hover{
+	color: #0066CC !important;
+	padding: 2px; 
+        text-decoration: underline;
+	}
+
+
+h3 
+{ 
+font-size: 14px; 
+color: #990066; 
+padding: 0; 
+}
+
+.screen-pic-padding
+{
+padding: 3px 0px 3px 0px;
+}
+
+.pagetitle,
+.cfttitle
+{
+  font-size: 13pt;
+  color: #990066;
+  font-weight: bold;
+}
+
+.cfttitle
+{
+padding: 5px 0px 10px 2px;
+}
+
+.SubmitButtonelement {background-color: #990066 ! important; font-size: 10pt ! important; color: #FFFFFF ! important; border: 2 outset #BD5D9C ! important; 
+
+padding: 0 ! important;}
+
+input, textarea, option { color: #00438C;}
+
+.searchHeading
+{
+    color: #990066;
+    font-weight: bold;
+
+}
+
+a.craftlink,
+a.craftlink:hover
+{
+color: #ffffff !important;
+}
+
+a.toplinks,
+a.toplinks:visited
+{
+  font-size: 60%;
+  color: #333333 !important;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a.toplinks:hover
+{
+color: #00438C !important;
+}
+
+.footer {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #4A7AAD;
+	border-right-color: #000066;
+	border-bottom-color: #000066;
+	border-left-color: #4A7AAD;
+}
+
+.content-int 
+{
+	border-right-width: 0px;
+	border-left-width: 0px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-left-color: #BCBCDE;
+	border-right-color: #BCBCDE;
+}
+
+.content-table-left {
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #990066;
+        background-color: #DEDEEF;
+}
+.content-table-right {
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #990066;
+        background-color: #DEDEEF;
+}
+.content-date {
+	font-size: 10px;
+	font-style: normal;
+	font-weight: normal;
+	color: #990066;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #990066;
+	background-image: url(/getimage.aspx.id-19994.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+        background-color: #DEDEEF;
+}
+
+.content-top {
+
+	background-image: url(/getimage.aspx.id-19996.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: bold;
+        color: #ffffff;
+        padding-left: 5px;
+}
+.content-table-bottom {
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #990066;
+	border-bottom-color: #990066;
+	border-left-color: #990066;
+        background-color: #DEDEEF;
+}
+.content-table-footer {
+	background-attachment: fixed;
+	background-color: #FFFFFF;
+	background-image: url(/getimage.aspx.id-19995.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+.screenmachine-divide {
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #CCCCCC;
+}
+
+td.otherdaycell a {
+text-transform: uppercase;
+}
+
+td.journalcontent
+{
+	font-size: 12px;
+	font-weight: normal;
+        color: #00438C;
+        padding-left: 10px;
+}
+
+td.formcontent {
+	font-size: 12px;
+	font-weight: normal;
+        color: #00438C;
+}
+
+.journal { font-size: 13pt; color: #990066; letter-spacing: 0; vertical-align: 0; 
+
+word-spacing: 0; font-style: bold; line-height: 100%; text-indent: 0; padding: 5; }
+
+/*** BBC News feed ***/
+
+.BBClink
+{
+font-weight: bold;
+font-size: 80%;
+padding-left: 5px;
+}
+
+.BBCdescription
+{
+font-size: 80%;
+padding: 0px 5px 10px 5px;
+}
+
+.BBCfooter
+{
+font-size: 70%;
+padding: 5px;
+}
+
+/*** End of BBC News feed ***/
+
+/*** Gallery Guide classing ***/
+
+.event-venue-table_top
+{
+background-color: #990066;
+color: #ffffff;
+font-weight: bold;
+text-align: center;
+padding: 2px 0px 2px 0px;
+}
+
+.moreinfo
+{
+	background-color: #990066;
+        font-size: 90%;
+	font-weight: bold;
+	color: #ffffff;
+        border-color: #FFFFFF;
+border-style: none
+border-width: 0x 0x 0px 0x;
+        padding: 2px;
+}
+
+.event-venue-header
+{
+	background-color: #990066;
+        font-size: 90%;
+	font-weight: bold;
+	color: #ffffff;
+        border-color: #FFFFFF;
+border-style: solid; 
+border-width: 8px 1px 0px 1px;
+        padding: 2px;
+}
+
+.event-venue-table_lhs,
+.event-venue-title
+{
+padding: 5px 2px 5px 2px;
+font-size: 85%;
+background-color: #E7C9F0;
+border: solid 1px #ffffff;
+width: 40%;
+}
+
+.event-venue-table_lhs
+{
+padding: 2px 0px 2px 5px;
+width: 100px;
+font-weight: bold;
+}
+
+.event-venue-info
+{
+background-color: #E7C9F0;
+border: solid 1px #ffffff;
+font-size: 90%;
+padding: 5px;
+}
+
+.back-venue
+{
+float: right;
+font-size: 80%;
+}
+
+/*** End of Gallery Guide classing ***/
+
+/********************** New Forum Styles ***********************/
+
+td.f_messageTableHeader
+{
+    color:#ffffff;
+    font-size: 78%;
+    font-weight: bold;
+    vertical-align: middle;
+    text-align: center;
+    height:25px;
+}     /*title header for forum table */
+
+td.f_cell_messagesubject
+{
+    vertical-align: top;
+}     /* cell style for subject in sub messages in the thread */  
+
+td.f_cell_messageNum
+{
+    color:#013d73;
+    font-size: 70%;
+    vertical-align: top;
+    text-align: center;
+}     /* cell style for nyumber in sub messages in the thread */  
+
+
+table.f_threadblocktableHL
+{
+    border: 1px #013DA4 solid;
+}     /* message table definition for the selected message*/  
+
+td.f_cell_THmessagesubject
+{
+    font-size: 78%;
+    vertical-align: top;
+}     /* cell style for  subject in the thread */  
+
+.f_div_subject
+{
+    color:#000000;
+    font-size: 78%;
+    font-weight: bold;
+}     /* span style for  subject in thread view */  
+
+f_div_date
+{
+    font-size: 78%;
+}      /* span style for  date in thread view */ 
+
+f_div_shortbody
+{
+    font-size: small;
+}      /* span style for  date in thread view */ 
+
+.f_div_auth
+{
+    font-size: 78%;
+}      /* span style for  author in thread view */  
+
+td.f_cell_messageBody
+{
+    font-size: 78%;
+    vertical-align: top;
+}     /* cell style for  body in the thread */
+
+/*  posting form  */
+
+td.f_cell_formtitle
+{
+    font-size: 78%;
+    vertical-align: top;
+    font-weight: bold;
+}                        /* cell style for form titles  */ 
+
+td.f_cell_formelement
+{
+    font-size: 78%;
+    vertical-align: top;
+}    /* cell style for form inputs  */    
+
+.f_divFailpost
+{
+    font-size: 78%;
+    font-weight: bold;
+}      /* post validation failure */  
+
+/*** Business Directory Details and Events Details(XSL) Styles ***/
+
+.event-desc-title {
+Text-transform: uppercase;
+}
+
+.event-open-times
+{
+	font-weight: normal;
+	color: #990066;
+        background-color: #E3E7F2;
+}
+
+.event-facilities
+{
+background-color: #EEf0F7;
+border-top: 1px solid #BAc1E0;
+}
+
+.bus-details-title,
+.event-desc-field-title
+{
+width: 20%;
+background-color: #E0E3F1;
+font-weight: bold;
+padding: 7px;
+text-align: right;
+border: 1px solid #BAc1E0;
+border-width: 1px 1px 0px 0px;
+}
+
+.bus-details-entry,
+.bus-address-entry,
+.event-desc-field-entry
+{
+background-color: #EEF0F7;
+padding: 7px;
+border: 1px solid #BAc1E0;
+border-width: 1px 0px 0px 0px;
+}
+
+.event-search-field
+{
+background-color: #f8f8e9;
+padding: 7px;
+font-weight: bold;
+color: #993333;
+}
+
+a.event-title
+{
+color: #013D73;
+font-weight: bold;
+}
+
+a.event-title-link
+{
+color: #013D73;
+}
+
+.event-search-title
+{
+background-color: #D4D9EC;
+border: 3px solid #BAC1E0;
+border-width: 3px 3px 0px 3px;
+font-weight: bold;
+color: #993333;
+padding: 7px;
+}
+
+.bus-address-entry { padding-left: 11px; }
+
+.bus-details-header-cell,
+.event-desc-title
+{
+height: 30px;
+background-color: #D4D9EC;
+border-top: #BAC1E0 solid 3px;
+font-weight: bold;
+}
+
+.bus-details-bottom
+{
+padding: 3px;
+border-bottom: #BAC1E0 solid 3px;
+background-color: #D4D9EC;
+}
+
+.drop-down
+{
+    color: #013d73 !important;
+    font-size: 90% !important;
+}
+
+/* End of Business Directory Details and Events Details(XSL) Styles */
+
+/** Journal News **/
+
+.journal-news
+{
+font-size: 70% !important; 
+}
+
+.journal-links
+{
+font-size: 70%;
+font-weight: bold;
+}
+
+.journal-news-title
+{
+font-weight: bold;
+}
+
+.journal-posted
+{
+font-weight: normal !important;
+}
+
+/** End of Journal News **/
+
+/** Services page News (XSL)**/
+
+.newsheader {
+    background-color: #3C93C1;
+    text-align: left;
+    font-size: 80%;
+    font-weight: bold;
+    color: #FFFFFF;
+    border: solid #013D83;
+    border-width: 1px 0px 1px 0px;
+    padding: 2px 5px 2px 8px;
+    margin-top: 10px;
+}
+
+.newstable{
+   background-color:#ECF4F9;
+   border-bottom: 1px solid #013D83;
+   font-size: 120%;
+}
+.news-item-title 
+{
+   background-color: #BEDBEB; 
+   text-align: left;
+   font-size: 86%;
+   font-weight: bold;
+   color: #003359;
+   border: solid #013D83;
+   border-width: 1px 0px 0px 0px;
+   padding: 2px 5px 2px 8px;
+
+}
+ 
+.newspic {
+   background-color:#ECF4F9;
+   border-top: 1px solid #FFFFFF;
+   padding: 8px 8px 4px 8px;
+   font-size: 75%;
+   font-weight: bold;
+}
+
+.newscontent {
+   background-color:#ECF4F9;
+   text-align: left;
+   font-size: 86%;
+   font-weight: normal;
+   color: #003359;
+   border-top: 1px solid #FFFFFF;
+   padding: 8px 8px 4px 0px;
+}
+ 
+.news-link{
+    float:right !important;
+    font-size: 75% !important;
+    font-weight: bold ; 
+    color: #006699;
+    padding: 0px 8px 4px 0px; 
+ 
+}
+.news-link:hover{
+   color: #62B0FF;
+   padding: 0px 0px 4px 0px; 
+ 
+}
+.news-link:visited{
+   color: #0099CC;
+   padding: 0px 8px 4px 0px; 
+}
+ 
+.posted 
+{
+    float: right;
+	font-size: 80%;
+   	font-style:italic;
+	color:#0099CC;
+	padding: 0px 10px 5px 0px;	
+}
+
+/** End of Services page News**/
+
+/** PAN styles **/
+
+.pantable
+{
+border-right: 1px solid #A86296;
+border-top: 1px solid #BCBCDE;
+border-left: 1px solid #BCBCDE;
+}
+
+.pannav
+{
+width: 170px;
+padding: 10px 0px 0px 0px;
+border-right: 1px solid #E4E4F1;
+}
+
+td.pannav td
+{
+font-size: 130%;
+}
+
+.pancontent
+{
+padding: 10px;
+width: 560px;
+}
+
+.hitncontent
+{
+padding: 10px;
+width: 560px;
+background-color: #ffffff;
+}
+
+.pantext
+{
+font-weight: bold;
+}
+
+/********************** Calendar pages **********************/
+
+.event-desc-title {
+Text-transform: Uppercase }
+
+
+TABLE.EventsTable {
+        background-color: #EEF0F7;
+		padding: 5px;
+		line-height: 20px;
+		border-top: 1px dashed #0099CC;
+        border-bottom: 1px dashed #0099CC;
+        border-left: 1px dashed #0099CC;
+        border-right: 1px dashed #0099CC;
+}
+
+TD.TableHeaderCell {
+	FONT-WEIGHT: bold;
+        FONT-SIZE: 80%;
+        VERTICAL-ALIGN: top;
+        BACKGROUND-COLOR: #D4D9EC;
+        TEXT-ALIGN: center;
+        padding: 4px;
+        color: #003359
+}
+
+TD.TableFooterCell {
+	FONT-SIZE: 75%;
+        VERTICAL-ALIGN: top;
+        BACKGROUND-COLOR: #D4D9EC;
+        TEXT-ALIGN: left;
+        Color: #003359;
+		padding: 4px;
+}
+
+TD.TablecommentCell {
+	FONT-SIZE: 75%;
+        VERTICAL-ALIGN: top;
+        BACKGROUND-COLOR: #E6EAF2;
+        TEXT-ALIGN: left;
+        Color: #990066;
+		padding: 4px;
+}
+
+TD.weekendCell {
+	FONT-WEIGHT: bold;
+        FONT-SIZE: 75%;
+        VERTICAL-ALIGN: top;
+        BACKGROUND-COLOR: #D4D9EC;
+        TEXT-ALIGN: left;
+        Color:#003359;
+		padding: 4px;
+}
+
+TD.weekdayCell {
+	FONT-WEIGHT: bold;
+        FONT-SIZE: 75%;
+        VERTICAL-ALIGN: top;
+        BACKGROUND-COLOR: #E0E3F1;
+        TEXT-ALIGN: left;
+        Color: #003359;
+      	padding-top: 4px;
+		padding-right: 4px;
+		padding-left: 4px;	
+}
+
+TD.otherdayCell {
+	FONT-SIZE: 70%;
+        VERTICAL-ALIGN: top;
+        BACKGROUND-COLOR: #F7F8FB;
+        TEXT-ALIGN: left;
+        color: #0099CC;
+		padding: 4px;
+}
+
+TD.todayCell {
+	FONT-SIZE: 70%;
+        VERTICAL-ALIGN: top;
+        BACKGROUND-COLOR: #BAC1E0;
+        TEXT-ALIGN: left;
+        color: #ffffff;
+		padding: 4px;
+}
+
+.areaFilter,
+.typeFilter 
+{
+ background-color: #F4f9fb;
+ font-size: 75%;
+ color: #003359;
+ border: 1px dashed #0099CC;
+ border-width: 1px 0px 1px 0px;
+ margin: 0px 0px 20px 0px;
+padding: 5px;
+}
+
+.areaFilter
+{
+margin: 0px;
+padding: 5px;
+}
+
+.filterunselected { padding: 0px 2px 0px 2px; }
+
+.filterSelected
+{
+background-color: #327BA3;
+padding: 0px 2px 0px 2px;
+font-weight: bold;
+color: #ffffff;
+text-decoration: none;
+}
+
+TD.webstatstableheader
+{
+	FONT-SIZE: 85%;
+color: #ffffff;
+        VERTICAL-ALIGN: top;
+        BACKGROUND-COLOR: #990066;
+        TEXT-ALIGN: left;
+        		padding: 2px;
+}
+
+TD.webstatstable
+{
+	FONT-SIZE: 85%;
+        VERTICAL-ALIGN: top;
+                
+        TEXT-ALIGN: left;
+        		padding: 2px;
+}
+
+
+table.calendarBlock{width:150px;
+text-align: center }
+td.tableHeaderCell{FONT-SIZE: 70%;
+background-color: #00438c;
+color:#bcbcde;
+}
+.tableHeaderCell a:link {color: #ffffff;}
+.tableHeaderCell a:visited {color: #ffffff;}
+.tableHeaderCell a:hover {color: #ffffff;}
+
+
+tr.calendarTopRow{}
+td.CalendarHeader{FONT-SIZE: 70%;font-weight : bold;color:#00438c;
+}
+tr.calendarWeek{}
+td.calendarThisDay{FONT-SIZE: 70%;
+border-width: thin;
+border-color: #00438c;
+border-style:solid;
+}
+td.calendarOtherDay{FONT-SIZE: 70%;
+}
+
+/*SK1803 The following are for body, downloads, internal, external links and sitemap and were appended via 
+
+batch process on 26/03/2004 16:43:20*/
+
+img.downloadIcon{
+float: left;
+vertical-align: middle;
+}
+
+
+#childlinks a:link,
+#childlinks a:visited,
+#childlinks a:hover
+{
+font-size: 80%;
+margin: 10px 0px 0px 10px;
+text-decoration: none;
+display: block;
+font-weight: bold; 
+}
+
+
+#internalLinks a:link, 
+#internalLinks a:visited,
+#internalLinks a:hover,
+#internalLinks a:active,
+#externalLinks a:link, 
+#externalLinks a:visited,
+#externalLinks a:hover
+#externalLinks a:active
+{
+display: block;
+font-size: 100%;
+margin: 5px 0px 5px 0px;
+text-decoration: none;
+}
+
+/* .internallink,
+.internalSummary,
+.externalLink,
+.externalLinkDescription {
+font-size: 100%;
+font-style: normal;
+text-indent: 5px ;
+text-decoration: none !important;} */
+
+
+.downloadlink
+{
+font-size: 90%;
+}
+
+.childSummary,
+{
+display: block;
+padding: 0px 0px 5px 10px;
+font-size: 80%;
+}
+
+.downloadSize{ 
+font-size: 90%;
+font-style: italic;
+text-indent: 5px ;
+text-decoration: none !important;
+color: #00438C !important;
+}
+
+
+.downloadTime28{ 
+ font-size: 90%;
+ font-style: normal;
+text-indent: 5px ;
+text-decoration: none !important;
+color: #00438C !important;
+}
+
+.PDFdownloadIcon
+{
+display: none;
+}
+
+.downloadTime56,
+.downloadTime512,
+.downloadTime128
+{
+display: none;
+font-size: 90%;
+}
+
+.downloadfoot, 
+.downloadhead,
+.referencehead,
+.referencefoot
+{
+color: #00438C;
+font-size: 85%;
+font-weight: bold;
+padding: 5px 0px 15px 5px;
+}
+
+/*** background-image: url(/getimage.aspx.id-21015.gif);
+background-repeat: no-repeat;
+background-position: 3px top; ***/
+
+.linkAreaInsert,
+.related-head
+{
+background-color: #00438C;
+border-top: 1px solid #4576AB;
+border-left: 1px solid #4576AB;
+border-bottom: 1px solid #001F42;
+border-right: 1px solid #001F42;
+color: #BCBCDE;
+font-size: 68%;
+font-weight: bold;
+height: 21px;
+width: 140px;
+text-align: center;
+margin: 0px 0px 5px 8px;
+padding: 3px 0px 0px 0px;
+}
+
+td.linkInsert
+{
+font-size: 85%;
+padding: 0px 2px 0px 12px;
+color: #00438C;
+text-align: center;
+}
+
+a.linkinsert
+{
+text-decoration: none !important;
+color: #00438C !important;
+text-align: center;
+}
+
+a.linkinsert:hover
+{
+color: #990066 !important;
+}
+
+.related-pic
+{
+margin: 1px;
+}
+
+.SKNewsPicture
+{
+font-size: 80%;
+text-align: center;
+}
+
+/*** Makers, Venues and Area Search Classing ***/
+
+table.customsearchresults
+{
+width: 550px;
+font-size: 70%;
+color: #000000;
+padding-top: 20px !important;
+margin-top: 20px !important;
+}
+
+.search-results-top-row
+{
+background-color: #d6d699;
+color: #ffffff !important;
+}
+
+.customsearchimage
+{
+font-size: 100%;
+}
+
+table.customsearchresults a
+{
+color: #000000;
+font-size: 100%;
+}
+
+td.customsearchresults
+{
+padding: 5px;
+}
+
+p.customsearchresults
+{
+font-size: 75%;
+background-color: #c9c9ae;
+border: 1px dashed #666666;
+border-width: 1px 0px 1px 0px;
+padding: 5px 0px 5px 0px;
+width: 100%;
+}
+
+span.showing
+{
+font-size: 75%;
+color: #000000;
+background-color: #c9c9ae;
+border: 1px dashed #666666;
+border-width: 1px 0px 1px 0px;
+padding: 5px 0px 5px 0px;
+width: 55%;
+}
+
+h2.customsearchresults
+{
+margin: 5px 3px 10px 0px;
+font-size: 90%;
+}
+
+span.customsearchresults
+{
+font-size: 75%;
+background-color: #c9c9ae;
+border: 1px dashed #666666;
+border-width: 1px 0px 1px 0px;
+padding: 6px 0px 5px 0px;
+width: 45%;
+}
+
+p.customsearchresults a,
+span.customsearchresults a
+{
+font-weight: bold !important;
+color: #B42C13 !important;
+}
+
+.strong-titles
+{
+font-weight: bold;
+}
+
+.searchtype,
+.searchresultlink,
+.searchlastupdated,
+.searchsummary
+{
+font-size: 75% !important;
+padding: 3px 0px 3px 0px;
+}
+
+/*** End of Makers, Venues and Area Search Classing ***/
+
+/*** HOME BOX ADDED 28/10/2005 - JL ***/
+
+.home-box-b {background-image: url(/getimage.aspx.id-53425); background-position: bottom; background-repeat: repeat-x; background-color: #EDEFFB;}
+.home-box-bl {background-image: url(/getimage.aspx.id-53426); background-repeat: no-repeat; background-position: bottom;}
+.home-box-bmr {background-image: url(/getimage.aspx.id-53427); background-position: bottom; background-repeat: no-repeat; background-color: #EDEFFB;}
+.home-box-br {background-image: url(/getimage.aspx.id-53428); background-repeat: no-repeat; background-position: bottom;}
+.home-box-l {background-image: url(/getimage.aspx.id-53429); background-repeat: repeat-y;}
+.home-box-r {background-image: url(/getimage.aspx.id-53430); background-repeat: repeat-y;}
+.home-box-t {background-image: url(/getimage.aspx.id-53431); background-repeat: repeat-x;)}
+.home-box-tl {background-image: url(/getimage.aspx.id-53432); background-repeat: no-repeat;}
+.home-box-tr {background-image: url(/getimage.aspx.id-53433); background-repeat: no-repeat;}
+
+/*** END OF HOME BOX STYLE ***/
+
+#home-review-box {background-color: #EDEFFB; border: solid 2px #BEBEE4}
+
+.journalcontent h3, 
+.journalcontent p, 
+.journalcontent ul 
+{margin-top: 0px !important;
+margin-bottom: 0px !important;}
+
+.journalcontent ul {margin-left: 20px;}
+
+
+.main-content p 
+{
+font-size: 0.8em;
+}
+

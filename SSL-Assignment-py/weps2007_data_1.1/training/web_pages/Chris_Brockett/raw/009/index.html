@@ -1,0 +1,241 @@
+<HTML>
+<HEAD>
+<TITLE>SuperPages.com: E-mail a Business</TITLE> 
+
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<META NAME="ROBOTS" CONTENT="NOINDEX">
+<LINK href="sp.css" rel="stylesheet" type="text/css">
+
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+function isEmail(string) {
+	if (string.search(/^\w+((-\w+)|(\.\w+))*\@\w+((\.|-)\w+)*\.\w+$/) != -1)
+		return true;
+	else
+		return false;
+}
+function validateform(f) {
+	
+	if (f.realname.value == "") {
+		alert("Please enter your name");
+		return false;
+	}
+	if (f.feedback.value == "") {
+		alert("Please enter a note");
+		return false;
+	}
+
+	if (f.email.value == "") {
+		alert("Please enter either an e-mail address for this business to contact you.");
+		return false;
+	}
+	
+	if (f.email.value != "" && isEmail(f.email.value) == false) {
+		alert("Your email address does not appear to be valid.");
+		f.email.focus();
+		return false;
+	}
+
+
+	if (f.accesscode.value == "") {
+		alert("Please enter the Access Code");
+		return false;
+	}
+	return true;
+}
+function textCounter(field,cntfield,maxlimit) {
+	if (field.value.length > maxlimit) // if too long...trim it!
+		field.value = field.value.substring(0, maxlimit);
+	// otherwise, update 'characters left' counter
+	else
+		cntfield.value = maxlimit - field.value.length;
+}
+// -->
+</SCRIPT>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" LEFTMARGIN="0" TOPMARGIN="0" MARGINWIDTH="0" MARGINHEIGHT="0" VLINK="#666666" LINK="#0000FF">
+<!--masterheader-->
+<!--masterheader-->
+<TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0" BGCOLOR="#000000">
+<TR>
+<TD WIDTH="770" ALIGN="LEFT" BGCOLOR="#000000"><IMG SRC="http://img.superpages.com/images-yp/sp/images/header_sptagidearc_v3.gif" WIDTH="770" HEIGHT="57" ALT="SuperPages.com - we know around here" BORDER="0" USEMAP="#spmap"></TD>
+<TD WIDTH="100%" ALIGN="LEFT" BGCOLOR="#000000"><IMG SRC="http://img.superpages.com/images-yp/sp/images/header_singlepixelblack.gif" WIDTH="100%" HEIGHT="57" ALT="" ALIGN="left"></TD>
+</TR>
+<TR>
+<TD ALIGN="LEFT" BGCOLOR="#8AAB7C"><IMG SRC="http://img.superpages.com/images-yp/sp/images/header_nav_noselect2005v4.gif" WIDTH="770" HEIGHT="23" ALT="navigation" BORDER="0" USEMAP="#navmap"></TD>
+<TD WIDTH="100%" ALIGN="LEFT" BGCOLOR="#8AAB7C"><IMG SRC="http://img.superpages.com/images-yp/sp/images/header_singlepixelgreen.gif" WIDTH="100%" HEIGHT="23" ALT=""></TD>
+</TR>
+</TABLE>
+<MAP NAME="spmap">
+<AREA SHAPE="RECT" COORDS="17,11,258,44" HREF="http://www.superpages.com" ALT="SuperPages.com">
+<AREA SHAPE="RECT" COORDS="675,4,749,53" HREF="http://www.idearcmedia.com" ALT="Idearc Media">
+</MAP>
+<MAP NAME="navmap">
+<AREA SHAPE="RECT" COORDS="7,0,89,23" HREF="http://www.superpages.com" ALT="Home Page">
+<AREA SHAPE="RECT" COORDS="102,0,200,23" HREF="http://yellowpages.superpages.com/profiler/abook.jsp" ALT="My Directory">
+<AREA SHAPE="RECT" COORDS="214,0,308,23" HREF="http://www.superpages.com/" ALT="Yellow Pages">
+<AREA SHAPE="RECT" COORDS="320,0,414,23" HREF="http://find.person.superpages.com" REL="nofollow" ALT="People Pages">
+<AREA SHAPE="RECT" COORDS="425,0,502,23" HREF="http://www.superpages.com/cities/" ALT="City Pages">
+<AREA SHAPE="RECT" COORDS="516,0,629,23" HREF="http://www.superpages.com/consumercenter/" ALT="Consumer Center">
+<AREA SHAPE="RECT" COORDS="642,0,760,23" HREF="http://www.superpages.com/advertisewithus/" ALT="Advertise With Us">
+</MAP>
+<!--/masterheader--><!--/masterheader-->
+<BR>
+<TABLE WIDTH="700" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+	<TD WIDTH="50">&nbsp;</TD>
+	<TD>
+		<IMG src="http://img.superpages.com/about/head_email_business.gif"><BR><BR>
+	</TD>
+</TR>
+<TR> 
+	<TD WIDTH="50">&nbsp;</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP"> 
+				<TABLE WIDTH="400"  border="0" cellpadding="0" cellspacing="0">
+			<TR BGCOLOR="#E6E6E6">
+				<TD valign="baseline"><FONT SIZE="2" FACE="Arial, Helvetica, sans-serif"><STRONG>Send your commment to:</STRONG> Brockett, Christopher D. Attorney</FONT><BR>
+				<FORM ACTION="http://www.superpages.com/about/email-form.php?" onSubmit="return validateform(this);" METHOD="post" NAME="feedbackform">
+					<INPUT TYPE="hidden" NAME="bizEmail" VALUE="UgYj3HuhDdEDhK0ZUUkGgYkBUcjDSfEQUuZSy8YtprE=">
+					<INPUT TYPE="hidden" NAME="bizName" VALUE="Brockett, Christopher D. Attorney">
+					<INPUT TYPE="hidden" NAME="subject" VALUE="Verizon superpages.com - Comment/Request from Consumer">
+					<INPUT TYPE="hidden" NAME="SRC" VALUE="listing">				
+					<INPUT TYPE="hidden" NAME="UsersPriorPage" size="50" VALUE="">
+					<INPUT TYPE="hidden" NAME="ReferingPage" size="50" VALUE="bizName%3DBrockett%252C%2BChristopher%2BD.%2BAttorney%26bizEmail%3DUgYj3HuhDdEDhK0ZUUkGgYkBUcjDSfEQUuZSy8YtprE%253D">
+					<INPUT TYPE="hidden" NAME="listingpage" VALUE="">
+					<INPUT TYPE="hidden" NAME="bizfeedback" VALUE="sp">
+					<INPUT TYPE="hidden" NAME="type" VALUE="biz">
+                    <INPUT TYPE="hidden" NAME="submission" VALUE="1">
+				<TABLE width="100%"  border="0" cellspacing="0" cellpadding="3">
+						<TR>
+							<TD colspan="2">
+								<DIV align="left"><FONT SIZE="2" FACE="Arial, Helvetica, sans-serif"><STRONG>Contact Information</STRONG> (Phone not required)</FONT></DIV>
+							</TD>
+						</TR>
+						<TR>
+							<TD width="15%">
+								<DIV align="right"><FONT SIZE="2" FACE="Arial, Helvetica, sans-serif">Name:&nbsp;</FONT></DIV>
+							</TD>
+							<TD width="85%">
+								<FONT SIZE="2" FACE="Arial, Helvetica, sans-serif">
+								<INPUT value="" type="text" name="realname" size="39" maxlength="50">
+								</FONT>
+							</TD>
+						</TR>
+						<TR>
+							<TD>
+								<DIV ALIGN="RIGHT"><FONT SIZE="2" FACE="Arial, Helvetica, sans-serif">E-mail:&nbsp;</FONT></DIV>							</TD>
+							<TD>
+								<FONT SIZE="2" FACE="Arial, Helvetica, sans-serif">
+								<INPUT value="" type="text" name="email" size="39" maxlength="50">
+								</FONT>
+							</TD>
+						</TR>
+						<TR>
+                            <TD>
+                                <DIV ALIGN="RIGHT"><FONT SIZE="2" FACE="Arial, Helvetica, sans-serif">Phone:&nbsp;</FONT></DIV></TD>
+                            <TD> <FONT SIZE="2" FACE="Arial, Helvetica, sans-serif">
+                                <INPUT value="" type="text" name="phone" size="39" maxlength="50">
+                            </FONT> </TD>
+						    </TR>
+						<TR>
+							<TD VALIGN="TOP" nowrap>
+								<DIV align="right"><FONT SIZE="2" FACE="Arial, Helvetica, sans-serif">Note:&nbsp; </FONT></DIV>
+							</TD>
+							<TD>
+								<FONT SIZE="2" FACE="Arial, Helvetica, sans-serif">
+								<TEXTAREA NAME="feedback" COLS="35" ROWS="5" ID="feedback" onKeyDown="textCounter(this,document.feedbackform.text1_remLen,600);" onKeyUp="textCounter(this,document.feedbackform.text1_remLen,600); "></TEXTAREA>
+								<BR>
+                                <INPUT style="font-size:10px" disabled name="text1_remLen" type="text" id="text1_remLen" value="600" size="2" maxlength="3" readonly>
+characters left</FONT></TD>
+						</TR>
+						<TR>
+						    <TD VALIGN="TOP" nowrap>&nbsp;</TD>
+						    <TD>&nbsp;</TD>
+						    </TR>
+						<TR>
+						    <TD colspan="2" VALIGN="TOP" nowrap><TABLE width="100%"  border="0" cellspacing="1" cellpadding="1">
+                                <TR valign="middle">
+                                    <TD width="50%" align="right" nowrap><FONT SIZE="2" FACE="Arial, Helvetica, sans-serif">Access Code: </FONT></TD>
+                                    <TD width="50%"><IMG src="randomimage.php" width="100" height="30"></TD>
+                                </TR>
+                                <TR>
+                                    <TD align="right"><FONT SIZE="2" FACE="Arial, Helvetica, sans-serif">Please type the Access Code: </FONT></TD>
+                                    <TD><INPUT name="accesscode" type="text" id="accesscode" size="13"></TD>
+                                </TR>
+                            </TABLE></TD>
+						    </TR>
+						<TR>
+						    <TD VALIGN="TOP" nowrap>&nbsp;</TD>
+						    <TD VALIGN="TOP" nowrap>&nbsp;</TD>
+						</TR>
+						<TR>
+						    <TD VALIGN="TOP" nowrap>&nbsp;</TD>
+						    <TD VALIGN="TOP" nowrap><INPUT TYPE="submit" NAME="Submit" VALUE="Submit"></TD>
+						    </TR>
+					</TABLE>
+				</Form>
+				</TD>
+			</TR>
+		</TABLE>
+	    	    <P><FONT size="2" face="Arial, Helvetica, sans-serif">Please note that this form is not intended for unsolicited advertisements or donations.<BR>
+	        Violators will be banned from contacting businesses in the future.
+</FONT></P></TD>
+	</TR>
+</TABLE>
+<BR>
+<!--master footer-->
+<!--master footer-->
+<TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR>
+<TD WIDTH="770" BGCOLOR="#FFFFFF" align="center" HEIGHT="60">  
+<font face="Arial, Helvetica, sans-serif" size="1">
+	<a href="http://www.superpages.com">Home</a> |
+	<a href="http://espanol.superpages.com">Superpages Espa&ntilde;ol</a> |
+	<a href="http://yellowpages.superpages.com/yp.basic.jsp?STYPE=S">Yellow Pages</a> |
+	<a href="http://find.person.superpages.com" rel="nofollow">People Pages</a> |
+	<a href="http://shopping.superpages.com">Shopping</a>			
+	<BR>
+	<a href="http://shopping.superpages.com/products-categories">Products</a> |
+	<a href="http://shopping.superpages.com/auctions-categories">eBay Search</a> |
+	<a href="http://yellowpages.superpages.com/web">Web Search</a> |
+	<a href="http://yellowpages.superpages.com/profiler/abook.jsp">My Directory</a> | 
+	<a href="http://www.superpages.com/cities">City Pages</a> | 
+	<a href="http://www.superpages.com/consumercenter/">Consumer Center</a>
+	
+	<BR>
+	<a href="http://www.superpages.com/advertisewithus/">Advertise With Us</a>	 |
+	<a href="http://www.superpages.com/about/">About Us</a> |
+	<a href="http://yellowpages.superpages.com/help/help.jsp?">Help</a> |
+	<a href="http://www.superpages.com/about/new_chg_listing.html">Add / Change Listing</a> |
+	<a href="http://www.superpages.com/about/contact.html">Contact Us</a> | 
+	<a href="http://www.superpages.com/about/feedback.html">Feedback</a> |
+	<a href="http://www.superpages.com/about/privacy.html">Privacy Policy</a>
+	 
+	<BR>
+	<a href="http://www.superpages.com/about/sitemap.html">Site Index</a> |
+	<A href="http://www.superpages.com/supertips/">SuperTips</A> | 
+	<A href="http://www.superpages.com/homeimprovement/">Home Improvement</A> | 
+	<a href="http://www.superpages.com/about/copyright.html">Copyright / Web Site Use Agreement</a> | 
+	<a href="http://www.idearc.com/careers.jsp">Careers at Superpages</a>	
+</font> 
+<!-- Copyright IBM Corporation, 2001, 2003 -->
+<script language="JavaScript1.1" type="text/javascript">var SA_ID="verpix;verpix";</script>
+<script language="JavaScript1.1" type="text/javascript" src="http://stats.surfaid.ihost.com/sacdcg3p_verpix_verpix.js?verpix"></script>
+<noscript><img src="http://stats.surfaid.ihost.com/crc/images/uc.GIF?1.9&verpix&verpix&noscript" height="1" width="1" alt="" border="0"/></noscript>
+<DIV style="font-family:Arial, sans-serif; padding:5px 0px 5px 0px;"><font size="2">Superpages provides yellow pages and business information for: Lawyers, Hotels, Restaurants, Florists, Mortgages, and more.</font></DIV><IMG SRC="http://img.superpages.com/images-yp/sp/images/spacer.gif" WIDTH="770" HEIGHT="1" ALT=""><BR> </TD>
+<TD BGCOLOR="#FFFFFF" WIDTH="100%" NOWRAP>&nbsp;</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="#8AAB7C" ALIGN="center" WIDTH="770" VALIGN="MIDDLE" HEIGHT="20">
+<FONT COLOR="#FFFFFF" FACE="Arial, Helvetica, sans-serif" SIZE="1"> &copy; 2007 Idearc Media Corp. All rights reserved. <BR>
+</FONT>
+</TD>
+
+<TD BGCOLOR="#8AAB7C" WIDTH="100%" NOWRAP HEIGHT="20">&nbsp;</TD>
+
+</TR>
+</TABLE> 
+<!--master footer-->
+<!--master footer-->
+</BODY>
+</HTML>

@@ -1,0 +1,259 @@
+.body {font-family:Arial, Helvetica, sans-serif; color:#999; font-size:11px; margin:0px; padding:0px; text-align:center; background-color:#FFF;}
+
+*{margin:0px; padding:0px;}
+
+a:link {color:#003399; text-decoration:none; font-size:11px;}
+
+a:visited {color:#333333; text-decoration:none; font-size:11px;}
+
+a:hover, a:active {color:#333; text-decoration:underline; font-size:11px;}
+
+div#rightcolumn a:visited {color:#F89734;}
+
+div#mainwrap {width:760px; margin-left:0; margin-right:auto; text-align:left; background-color:#F8F8F8; background-repeat:no-repeat;}
+
+div#headerwrap {width:760px; background-color:#FFF;}
+
+div#header {width:760px;text-align:left; background-color:#FFF;}
+
+div#contentarea {width:760px; background-color:#FFFFFF;}
+
+div#navdiv {width:110px; float:left; text-align:left; border-right:3px solid white; background-color:#FFF;}
+
+div#content {width:355px; float:left; text-align:left; background-repeat:no-repeat; background-color:#FFF; border-left:1px solid gray; border-right:1px solid gray; margin:0;}
+
+div#rightcolumn {width:250px; float:left; background-color:#FFF;}
+
+div#footer {width:760px; border-top:1px solid white; background-color:#FFF;  border-top:1px dotted #039;}
+
+div.clearfloats {clear:both;}
+div.clearfloats2 {clear:both;}
+
+#logo {
+	position:absolute;
+	top:0;
+	left:0;
+	}
+
+div#content ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 137px;
+	font-family: Arial, Helvetica, sans-serif;
+	color:#333333;
+	}
+
+/*Start Left Column Navigation*/
+
+div#navdiv ul {
+	text-align:left;
+	font-size:11px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 110px;
+	font-family: Arial, Helvetica, sans-serif;
+	border-bottom: 0;
+	}
+	
+div#navdiv ul li {
+	text-align:left;
+	position: relative;
+	font:11px Arial, Helvetica, sans-serif;
+	background: #D9E5FF;
+	}
+div#navdiv li ul {
+	text-align:left;
+	position: absolute;
+	left: 109px;
+	font: 11px Arial, Helvetica, sans-serif;
+	top: 0;
+	display: none;
+	}
+	
+div#navdiv ul li a {
+	text-align:left;
+	display: block;
+	text-decoration: none;
+	color: #000;
+	font:11px Arial, Helvetica, sans-serif;
+	padding: 3px;
+	border-bottom: 0;
+	}
+
+div#navdiv ul li a:link {color:#000;font-size:11px;}
+div#navdiv ul li a:visited {color:#000;font-size:11px;}
+div#navdiv ul li a:hover {text-decoration:none; font-size:11px;}
+
+div#navdiv ul li ul a {
+	text-align:left;
+	display: block;
+	text-decoration: none;
+	color: #777777;
+	font-family:  Arial, Helvetica, sans-serif;
+	background: #FFFFFF;
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-bottom: 0;
+	}
+div#navdiv ul li ul a:link {color:#777777;}
+div#navdiv ul li ul a:visited {color:#777777;}
+div#navdiv ul li ul a:hover {text-decoration:none;color:#777777;}
+	
+/* Fix IE. Hide from IE Mac \*/
+* html ul li { float: left; }
+* html ul li a { height: 1%; }
+/* End */
+
+
+div#navdiv li:hover ul, div#navdiv li.over ul {display: block;}
+
+/*End Left Column Navigation*/
+
+h1{font-family:Arial, Helvetica, sans-serif; color:#000; font-size:16px; letter-spacing:-.05em; margin-left:5px; padding:0;}
+
+h2{font-family:Arial, Helvetica, sans-serif; color:#333; font-size:13px; font-variant:small-caps; letter-spacing:-.03em; margin-top:2em; margin-left:2em; padding:0px;}
+
+p {text-indent:0; font-family:Arial, Helvetica, sans-serif; color:#000; font-size:12px; margin:10px 5px 0 8px; padding:0px;}
+
+span img {float:left; margin:10px 10px 10px 10px;}
+
+div#content p {text-indent:0; font-family:Arial, Helvetica, sans-serif; color:#000; font-size:12px; margin:25px 5px 10px 8px; padding:0px;}
+
+div#rightcolumn p {text-indent:0; font-family:Arial, Helvetica, sans-serif; color:#000; font-size:11px; margin:10px 5px 0 8px; padding:0px;}
+
+div#footer p {font-family:Arial, Helvetica, sans-serif; color:#000; text-align:center; font-size:9px; margin:5px 5px 5px 5px; padding:0px;}
+
+.tabletext {font-family:Arial, Helvetica, sans-serif; color:#000; font-size:12px;  text-indent:0;}
+.tabletextbold {font-family:Arial, Helvetica, sans-serif; color:#333; font-weight:bold; font-size:12px;  text-indent:0;}
+div#content .footnote {font-family:Arial, Helvetica, sans-serif; color:#FFFFFF; text-align:center;font-size:9px; }
+.smalltabletext {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	text-indent:0;
+}
+
+.imagespace{margin:0 10px 0 5px;}
+
+div#content a:link {color:#003399; text-decoration:none; font-size:11px;}
+
+div#content a:visited {color:#003399; text-decoration:none; font-size:11px;}
+
+div#content a:hover, a:active {color:#333399; text-decoration:underline; font-size:11px;}
+
+.departments{border-bottom: 2px solid #FFF; padding-bottom:8px; padding-top:8px; padding-left:4px; color:#6699FF;}
+
+/*Horizontal Menu*/
+div#topmenu {
+
+	width:100%; 
+	float:left; 
+	font-family:Arial, Helvetica, sans-serif; 
+	color:#333; 
+	font-size:11px; 
+	border-bottom: 1px solid white;
+	background:#69F;
+	clear:both;
+	}
+	
+div#topmenu a{
+	text-align:left;
+	background-image:url("graphics/tab_l.jpg");
+	background-position:top left;
+	background-repeat:no-repeat;
+	padding:5px 15px 5px 15px;
+	text-decoration: none;
+	}
+
+
+div#topmenu ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+	}
+
+div#topmenu li{
+	float:left;
+	list-style-type:none;
+	background-color:#FFF;
+	background-image:url("graphics/tab_r.jpg");
+	background-position:top right;
+	background-repeat:no-repeat;
+	padding:5px 0 10px 0;
+	margin:0;
+	}
+	
+div#topmenu li .datebar{
+	text-align:right;
+	}
+	
+	
+.fronthead {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#039;
+	font-weight:bold;
+	}
+	
+.fronttease {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#000;
+	margin-top:3px;
+
+	}
+	
+.fullstory {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#039;
+	margin-top:3px; 
+	}
+	
+	
+div#rightcolumn .sectionheads{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#039;
+	font-weight:bold;
+	border-bottom:1px #039 dotted;
+	border-top:1px #039 dotted;
+	margin-top:5px;
+	background: #D9E5FF;
+	}
+
+div#rightcolumn .calendardate{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#039;
+	font-weight:bold;
+	
+	}	
+	
+.logospace{
+	margin:4px 7px 4px 0px;
+	}
+	
+.subscribe {
+	margin-right:8px;
+	padding-right:8px;
+
+	}
+.storyLink a{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	color:#039;
+	font-weight:bold;
+	}
+div#holiday {background-image:url("holidayads/ornaments.jpg"); background-repeat:no-repeat;}
+
+.holiday {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 18px;
+	font-style: italic;
+	font-weight: bold;
+	color: #FF0000;
+}
+
+.ad a{text-decoration:none; outline-style:none;}

@@ -1,0 +1,615 @@
+/*
+	COMMON styles
+*/
+
+a:active { color: #669999; }
+a:hover { color: #669999; }
+a:link { color: #336699; }
+a:visited { color: #336699; }
+body { background-color: #eeeeee; }
+img.preview, img.thumb { border: 1px solid #666666; }
+
+/* breadcrumb and also used for At-A-Glance righthand boxes */
+.bc
+{
+	font-family: arial;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.bc A
+{
+	font-family: arial;
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 12px;
+}
+
+.bcc, 
+.bcc A
+{
+	margin-top: 5px;
+	margin-left: 5px;
+	font-size: 10px;
+	font-family: verdana, arial,sans-serif;
+}
+
+.bold { font-weight: bold; }
+H1, 
+H2 { font-family: arial; }
+
+.button
+{
+	font-family: verdana;
+	font-weight: normal;
+	font-size: 11px;
+}
+
+.boldbutton
+{
+	font-family: verdana;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.head
+{
+	font-family: arial;
+	font-weight: bold;
+	font-size: 12px;
+	color: #333333;
+}
+
+.name
+{
+	font-family: arial;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.H2
+{
+	font-family: arial;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+/*
+TD 
+UL 
+LI {	font-family:arial; 
+	font-weight:normal; 
+	font-size:12px;}
+*/
+
+.H
+{
+	font-size: 20px;
+	font-family: arial,helvetica,geneva;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.prop
+{
+	font-family: arial;
+	font-weight: normal;
+	font-size: 10px;
+}
+
+.l
+{
+	font-family: arial;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.med
+{
+	font-family: arial;
+	font-weight: normal;
+	font-size: 11px;
+}
+
+.small
+{
+	font-family: arial;
+	font-weight: normal;
+	font-size: 10px;
+}
+
+.tiny
+{
+	font-family: arial;
+	font-weight: normal;
+	font-size: 6px;
+}
+
+/* most body text */
+.text
+{
+	font-family: arial;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+/* property page other properties */
+.otherproperties
+{
+	font-family: arial;
+	font-weight: normal;
+	font-size: 11px;
+	text-align: left;
+}
+
+/* property description */
+.pd
+{
+	font-family: arial;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 14px;
+}
+
+A.cl
+{
+	font-family: helvetica;
+	font-size: 14px;
+}
+
+;
+     
+li.list,
+ul.list
+{
+	list-style-image: url(/images/bullet.gif);
+	font-family: arial;
+	list-style-type: square;
+	margin-left: 15px;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+.list a
+{
+	font-family: arial;
+	font-size: 12px;
+}
+
+.boldgrey
+{
+	font-weight: bold;
+	color: 333333;
+	font-size: 12px;
+	font-family: arial;
+	text-decoration: none;
+}
+
+/* normally used in property page as section header */
+H3
+{
+	font-weight: bold;
+	color: #999966;
+	font-family: verdana;
+	font-size: 13px;
+}
+
+/* locale description -- large readable text */
+.ld
+{
+	font-family: arial;
+	font-weight: normal;
+	font-size: 14px;
+}
+
+/* propertylist lineitem feature */
+.feature
+{
+	margin-top: 1px;
+	margin-bottom: 1px;
+	font-size: 10px;
+	font-family: verdana;
+	padding-left: 1px;
+	padding-right: 1px;
+	background: #999966;
+	color: white;
+}
+
+.localeteaser
+{
+	font-family: arial;
+	font-size: 11px;
+}
+
+/* 
+	MENUBAR elements 
+*/
+
+.box
+{
+	float: left;
+	text-align: center;
+	width: 75px;
+	height: 75px;
+}
+
+#italy { background-color: #333333; }
+#journal { background-color: #666666; }
+#archive { background-color: #999999; }
+#aboutus { background-color: #CCCCCC; }
+
+.md, 
+.md a:visited,
+.md a:active,
+.md a:link
+{
+	margin-top: 25px;
+	color: white;
+	font-family: verdana;
+	font-size: 13px;
+	text-decoration: none;
+}
+
+.md a:hover { font-weight: bold; }
+
+/* masthead container  */
+#vtd
+{
+	height: 75px;
+	width: 348px;
+	background-color: #999966;
+	text-align: center;
+}
+
+#vtdtext
+{
+	font-family: arial;
+	font-size: 23px;
+	color: white;
+	margin-top: 21px;
+}
+
+/*
+	JOURNAL styles
+*/
+
+#journal h1, #journal h2, #journal h3
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+.description
+{
+	font-family: verdana, arial, sans-serif;
+	color: #CCC;
+	font-size: x-small;
+	font-weight: bold;
+	background: #FFF;
+	text-transform: none;
+	letter-spacing: none;
+}
+
+#content
+{
+	float: left;
+	width: 400px;
+	background: #FFF;
+	margin-right: 15px;
+	margin-bottom: 20px;
+}
+
+#links
+{
+	background: #FFF;
+	color: #CCC;
+	margin-top: 35px;
+}
+
+.blog
+{
+	padding-left: 15px;
+	padding-top: 15px;
+	padding-right: 15px;
+}
+
+.blogbody
+{
+	font-family: arial, sans-serif;
+	color: #666;
+	font-size: 12px;
+	font-weight: normal;
+	background: #FFF;
+	line-height: 140%;
+	border-left: 1px dotted #666;
+	border-right: 1px dotted #666;
+	border-bottom: 1px dotted #666;
+	padding: 10px;
+}
+
+.blogbody a,
+.blogbody a:link,
+.blogbody a:visited,
+.blogbody a:active,
+.blogbody a:hover
+{
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+.title
+{
+	font-family: arial;
+	font-size: 12px;
+	color: #333333;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.date
+{
+	font-family: verdana, arial, sans-serif;
+	font-size: 13px;
+	color: #666;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 10px;
+	border-bottom: 1px dotted #666;
+}
+
+.posted
+{
+	font-family: verdana, arial, sans-serif;
+	font-size: x-small;
+	color: #666;
+}
+
+.calendar
+{
+	font-family: verdana, arial, sans-serif;
+	color: #666;
+	font-size: x-small;
+	font-weight: normal;
+	padding: 2px;
+}
+
+.calendarhead
+{
+	font-family: arial, sans-serif;
+	color: #999966;
+	font-size: x-small;
+	font-weight: bold;
+	background: #FFF;
+	line-height: 140%;
+}
+
+.side
+{
+	font-family: verdana, arial, sans-serif;
+	color: #999;
+	font-size: x-small;
+	font-weight: normal;
+	background: #FFF;
+	line-height: 140%;
+}
+
+.sidetitle
+{
+	font-family: verdana, arial, sans-serif;
+	color: #999;
+	font-size: x-small;
+	font-weight: bold;
+	background: #FFF;
+	line-height: 140%;
+	padding: 2px;
+	margin-top: 10px;
+	border-bottom: 1px dotted #666;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+}
+
+.comments-body
+{
+	font-family: arial, sans-serif;
+	color: #666;
+	font-size: 12px;
+	font-weight: normal;
+	background: #FFF;
+	line-height: 140%;
+	padding-bottom: 10px;
+}
+
+.comments-post
+{
+	font-family: arial, sans-serif;
+	color: #999;
+	font-size: x-small;
+	font-weight: normal;
+	background: #FFF;
+	margin-top: 0px;
+}
+
+.comments-head
+{
+	font-family: arial, sans-serif;
+	font-size: 12px;
+	color: #999;
+	font-weight: bold;
+	margin-top: 10px;
+	text-transform: uppercase;
+	border-bottom: 1px dotted #666;
+}
+
+.trackback-body
+{
+	font-family: verdana, arial, sans-serif;
+	color: #333;
+	font-size: small;
+	font-weight: normal;
+	background: #FFF;
+	line-height: 140%;
+	padding-top: 15px;
+}
+
+.trackback-url
+{
+	font-family: verdana, arial, sans-serif;
+	color: #666;
+	font-size: small;
+	font-weight: normal;
+	background: #FFF;
+	line-height: 140%;
+	padding: 5px;
+	border: 1px dashed #666;
+}
+
+.trackback-post
+{
+	font-family: verdana, arial, sans-serif;
+	color: #999;
+	font-size: x-small;
+	font-weight: normal;
+	background: #FFF;
+	margin-bottom: 20px;
+}
+
+#banner-commentspop
+{
+	font-family: verdana, arial, sans-serif;
+	color: #CC9933;
+	font-size: large;
+	font-weight: bold;
+	background: #FFF;
+	padding-left: 15px;
+}
+
+/*
+	SAVED VILLAS 
+*/
+
+#ss_links
+{
+	position: relative;
+	font-family: arial, verdana, geneva;
+	font-size: 9pt;
+}
+
+#ss_links_list
+{
+	position: absolute;
+	top: 20px;
+	left: -70px;
+	width: 200px;
+	color: black;
+	padding: 0;
+	border: 1px solid #CCC;
+	border-top-style: none;
+	background-color: #EFEFEF;
+	visibility: hidden;
+}
+
+#ss_links_list a:link, #ss_links_list a:visited
+{
+	text-decoration: none;
+	color: black;
+	padding: 3px 5px 3px 10px;
+	margin: 0;
+	display: block;
+}
+
+#ss_links_list a:hover { text-decoration: underline; }
+
+#ss_options
+{
+	position: relative;
+	font-size: 9pt;
+	border-top: 1px dashed #CCC;
+	padding: 5px;
+	margin-top: 5px;
+}
+
+#ss_options a:link, #ss_options a:visited { padding: 3px 0; }
+
+#ss_options a:hover
+{
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+#ss_gif { position: relative; }
+
+.ss_prop
+{
+	font-family: arial;
+	font-size: 11px;
+}
+
+.ss_locale
+{
+	font-family: arial;
+	font-size: 10px;
+	font-variant: italic;
+}
+
+/* Locale Browser */
+div.LB
+{
+	margin-left: 5px;
+	margin-top: 7px;
+	margin-bottom: 2px;
+}
+
+div.LBin
+{
+	margin-left: 11px;
+	font-size: 11px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+
+div#listtestimonial
+{
+	font-family: arial;
+	font-size: 11px;
+	font-style: italic;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 0px;
+	margin-top: 5px;
+}
+
+div#listlocationdescription
+{
+	font-family: arial;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+div#propertylocationdescription
+{
+	font-family: arial;
+	font-weight: normal;
+	font-size: 14px;
+}
+
+/* container for location description and testimonials */
+div#propertytop
+{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+div#propertytestimonial
+{
+	font-family: arial;
+	font-size: 12px;
+	font-style: italic;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 0px;
+	margin-top: 5px;
+	background-color: beige;
+}

@@ -1,0 +1,591 @@
+#playvideoblock {
+  position: absolute; 
+  overflow: visible;
+  left:8px;
+  right: 17.5em;
+  height:100%; /* for FF 1.0.7 (linux only) */
+}
+
+#flashobjectplaceholder {
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#VideoPlayback {  
+   height: 100%; 
+   width: 100%; 
+   text-align:center; 
+} 
+
+#playrightblock {
+  display: inline;
+  position: absolute;
+  bottom: 0px;
+  right: 0px; 
+  width: 17em;
+  border-top:1px solid #6F559D;
+}
+
+#summary {
+  position: absolute;
+  overflow: auto;
+  overflow-x: hidden; 
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+#videoflagging {
+  margin-top: 0.7em;
+  font-size: 80%;
+  width: 17em;  /* to prevent UI changes when scroll appears */
+}
+
+#description {
+  margin-top: 0.7em;
+  font-size: 80%;
+  margin-right: 6%; 
+}
+
+#prevnextlinks {
+  text-align: right; 
+  margin-top: 0.5em;
+  margin-right: 5%; 
+}
+
+#upnextmenu {
+  margin-bottom: 0.5em; 
+  margin-top:0.5em; 
+  padding-top: 3px; 
+  padding-bottom: 3px; 
+  border-top: 1px solid #DADADA; 
+  border-bottom: 1px solid #DADADA;
+}
+
+#bottomrightcorner {
+  overflow: hidden;
+}
+
+
+#upnexttable {
+  background-color: white;
+  width: 96%;
+}
+
+#autoplaylink {
+  font-size: 80%;
+  padding-bottom: 0.4em;
+}
+
+.playlistentry {
+  font-size: 80%;
+}
+
+
+#morefrom,#related {
+  width: 96%; /* to fit results in IE */
+}
+
+.selectedlink {
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+
+.unselectedlink {
+  font-weight: normal;
+}
+
+#popularvids {
+  margin-bottom: 0px;
+}
+
+#popularmorelink {
+  font-size: 80%;
+  font-weight: bold;
+}
+
+#playlisttable {
+  margin-top: 12px;
+}
+
+.sendlink {
+  margin-top: 1em;  
+  font-size: 80%;
+}
+
+#sendlink img {
+ border:0px;
+ margin-right:5px;
+ position:relative;
+ top:3px;
+}
+
+#embed {
+  margin-bottom: 10px;
+}
+
+#matches {
+  overflow: auto;
+}
+  
+#nummatches {
+  margin-top:6px;
+  font-size:80%;
+  float:right;
+}
+
+#backlink {
+  margin-top:5px;
+  font-size:80%;
+}
+
+#pvprogtitle {
+  margin-top:5px;
+  font-size:larger;
+  font-weight:bold;
+}
+
+#videowebsite {
+  color: #7777CC;
+}
+
+#googlelogo {
+  position:absolute;
+  left:6px;
+  top:5px;
+}
+
+#topform {
+  position:absolute;
+  left:170px;
+  top:12px;
+}
+
+#topform td {
+  font-size:80%;
+}
+
+#topform a {
+ font-size:80%;
+}
+
+#durationetc {
+  color:green;
+  font-size:80%;
+}
+
+.unsupportedos {
+  font-size: 80%;
+}
+
+.toomanydownloads {
+  font-size: 80%;
+}
+
+#platformtext {
+  font-size: 80%;
+}
+
+#platform {
+  font-size: 70%;
+}
+
+div.playsectiontranscript {
+  clear:both;
+  padding-right: 1em;
+}
+
+div.playresultimage {
+  text-align: center;
+  font-size: 80%
+}
+
+div.playresultimage img {
+  margin-bottom: 4px;
+  border:solid blue 1px;
+  width:160px;
+}
+
+div.playresulttext {
+  font-size: 80%;
+}
+
+div.timestamp {
+  color:green;
+  margin-bottom: 2em;
+}
+
+.detailsimage {
+  border: 1px blue solid;
+  width: 43%;
+  margin: 2px;
+}
+
+td.creditrole {
+  text-align: right;
+  vertical-align:top;
+  font-size:80%;
+}
+
+td.creditname {
+  font-size:80%;
+  vertical-align:top;
+}
+
+.infoline {
+  font-size:80%;
+}
+
+.videoplaycorner {
+  width: 99%;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.smallnav {
+  font-size: 64%;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+/* used for invactive playlist links: next, prev, next10 */
+#inactivelink {
+  color: gray;
+}
+
+#errormessageblock {
+  position: absolute; 
+  overflow: visible;
+  left:8px;
+  top: 9ex;  
+}
+
+#adbannerblock {
+  background-color: #2d2d2d; 
+  padding: 0px;
+  border-bottom: 2px solid #808080;
+  height: 62px;
+}
+
+#adbannerblock2 {
+  background-color: #2d2d2d; 
+  padding: 0px;
+  border-bottom: 2px solid #808080;
+}
+
+#adbannertable {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+}
+
+#adbannerleft {
+  vertical-align: middle;
+  width: 5px;
+}
+
+#adbannermiddle {
+  vertical-align: middle;
+  text-align: left;
+  padding-left: 3px;
+  font-size: smaller;
+  color: white;
+}
+
+#adbannerright {
+  width: 5px;
+  white-space: nowrap;
+  vertical-align: middle;
+  text-align: right;
+  padding-right: 1em;
+  font-size: smaller;
+  color: white;
+}
+
+.adbannerlink {
+  font-weight: bold;
+}
+
+.adbannerlink a:link    { color:white; }
+.adbannerlink a:visited { color:white; }
+.adbannerlink a:active  { color:white; }
+.adbannerlink a:hover   { color:white; }
+
+.adbannerviewadlink {
+}
+
+.adbannerviewadlink a:link    { color:white; }
+.adbannerviewadlink a:visited { color:white; }
+.adbannerviewadlink a:active  { color:white; }
+.adbannerviewadlink a:hover   { color:white; }
+
+
+.star {
+  border:0;
+  padding: 0;
+  margin: 0 ;
+}
+
+.ratingsInfo {
+  color:gray;
+  font-size:small;
+}
+
+.ratingsError {
+  color:red;
+  font-size:small;
+}
+
+.addlabellink a {
+  font-weight:bold;
+  font-family:arial,sans-serif;
+  font-size:small;
+}
+.removetaglink {
+  color: #FF6F29;
+  text-decoration: none;
+}
+
+.removetaglink img{
+  border-width:0;
+  text-decoration: none;
+}
+
+.striketaglink {
+  color: rgb(150,150,150);
+  text-decoration: line-through;
+
+}
+
+.striketaglink img{
+  border-width:0;
+  text-decoration: none;
+}
+
+.taglink a:link {
+  color: rgb(119, 119, 204);
+}
+
+.taglink a:visited { 
+  color: rgb(119, 119, 204);
+}
+
+.taglink a:link {
+  color: rgb(119, 119, 204);
+}
+
+.taglink a:hover {
+  color: rgb(119, 119, 204);
+}
+
+.removetag {
+  display:block;
+  font-family:arial,sans-serif;
+  font-size:small;
+  margin:2px 0px 5px 0px;
+  width:93%;
+  border:1px solid black;
+}
+.removemessage {
+  display:block;
+  font-family:arial,sans-serif;
+  font-size:small;
+  margin:2px 0px 0px 0px;
+  background-color:#FFFFCC;
+}
+
+.editlabeldivnormal{
+  display:none;
+}
+
+.editlabeldivactive{
+  display:block;
+  width:93%;
+  font-family:arial,sans-serif;
+  font-size:small;
+  padding: 2px 2px 3px 2px;
+  margin:2px 0px 5px 0px;
+  background-color:#EEEDF1;
+  border:1px solid black;
+}
+
+.tagdisplay {
+  display:block;
+  font-family:arial,sans-serif;
+  font-size:small;
+  margin:2px 0px 5px 0px;
+  width:93%;
+  background-color:white;
+}
+
+.taginputbox {
+  width:50%;
+  margin-right:1px;
+  color:gray;
+  font-size:12px;
+  font-family:arial;
+  background-color:white;
+}
+
+.tagDoneRow {
+}
+
+.bloglinktable {
+  font-size: 100%;
+  text-align: left;
+}
+
+#communityRating {
+  white-space: nowrap;	
+}
+.abouttable {
+  width:100%;
+  margin-left:auto;
+  margin-right:auto;
+}
+td.videoboxheader {
+  border-top:1px solid #6f559d;
+  background-color: #eeedf1;
+  padding: 3px 5px 4px;
+  margin: 0 0.1em 0.4em;
+  font-weight:bold;
+  font-size:small;
+}
+td.videoboxcontent {
+  font-size:small;
+  padding-left:3px;
+  padding-right:3px;
+}
+p.gpadding {
+  margin-top:1em;
+  margin-bottom:1em
+}
+
+#sharebuttonspan {
+  text-align: center;
+  font-size: 12px;
+  background-image: url('/common/sharebutton_span.gif'); 
+  background-color: #6699DD;
+  background-repeat: repeat-x;
+  background-position: center; 
+  height: 21px;
+}
+.sharebuttonside {
+  width: 9px;
+}
+
+.handcursor { 
+  cursor: pointer; 
+}
+table.playcontent{
+  margin: 0 auto; /* center align for non IE */
+  margin-top:3px;
+}
+td.playcontent-left{
+  width:59%;
+}
+td.playcontent-mid{
+  width:3%;
+}
+td.playcontent-right{
+  width:38%;
+}
+div.playheader{
+  margin: 0 auto; /* center align for non IE */
+  text-align: left; /* counter the text align cnter in body-home */
+  width: 760px; 
+  min-width: 740px; 
+}
+div.playleft{
+  width:480px;
+  margin-left:auto;
+  border-top:1px solid #CCCCCC;
+}
+div.playmid{
+  border-top:1px solid #CCCCCC;
+  width:100%;
+}
+div.playright{
+  border-top:1px solid #CCCCCC;
+  width:17em;
+  padding-top:5px;
+  margin-right:auto;
+  padding-left:3px;
+}
+.thumbsection {
+  margin-top:.5em;
+  margin-bottom:1em;
+  margin-left:auto;
+  margin-right:auto;
+}
+.detailsimage {
+  border: 1px blue solid;
+  width: 80px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  padding: 0px;
+}
+table.videoplayheader {
+  width:100%;
+}
+td.videoplayheadertitle {
+  padding:4px;
+  padding-bottom:0px;
+  font-size:1.9ex;
+  font-weight:bold;
+}
+td.videoplayheadermetadata {
+  font-size:small;
+}
+div.playmetadataarea {
+  padding:4px;
+  padding-top:0px;
+  vertical-align:bottom;
+}
+span.playmetadata {
+  color:green;
+  white-space:nowrap;
+}
+td.customlogo {
+  width:55px;
+  padding:4px;
+  margin-right:.5em;
+}
+#flashobjectplaceholder2 {
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 480px;
+  height: 386px;
+}
+.playpagelink {
+  padding:4px;
+  font-size:small;
+  background:#ffff99;
+}
+.playpagelinkcontainer {
+  margin-top:8px;
+  margin-bottom:8px;
+  width:100%;
+}
+
+.markcomment {
+  color: #777ccc;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.share-label {
+  white-space:nowrap;
+}
+

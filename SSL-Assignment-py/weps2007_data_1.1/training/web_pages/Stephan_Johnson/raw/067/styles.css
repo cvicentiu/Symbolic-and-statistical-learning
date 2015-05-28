@@ -1,0 +1,35 @@
+.leftNave {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.Irates {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+	/* Sample Monthly Payment Rate Box Calculator Styles */
+	.rateBoxCalc {border-collapse:collapse; font-family:verdana; 
+	              font-size:10pt; width:250px; border: 2px outset #eee}
+	.rateBoxCalc TD {border: 1px solid #aaa; text-align:center;}
+	.rateBoxCalc TD.result {font-weight:bold; text-align:center;}
+	.rateBoxCalc TD.inputRow {text-align:center;}
+	.rateBoxCalc TH {background-color: #0000FF; color:#fff}
+	.rateBoxCalc TH.subHeading {border: 1px solid #aaa; color:#000;
+	                            background-color:#EEE;}	
+	.rateBoxCalc INPUT {font-size: 8pt;}
+	.rateBoxCalc INPUT.text {border: 1px solid #aaa;}	
+	.rateBoxCalc INPUT.button {background-color: #eee;}	
+
+	/* Sample Rate Box Styles */
+	.rateBox {border-collapse:collapse; font-family:verdana; font-size:8pt;text-align:center;margin-left:auto;margin-right:auto;}
+	.rateBox TD {border: 1px solid #aaa; text-align:center; 
+	             background-color: #FFF; color: #000; padding:2px;}
+	.rateBox TH { background-color:#ccc; color: #FFF; border: 1px solid #aaa;}
+	
+	/* You can also alternating row colors: */
+	.rateBox TD.odd {}
+	.rateBox TD.even {}

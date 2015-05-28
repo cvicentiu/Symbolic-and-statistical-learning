@@ -1,0 +1,739 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="http://www.typepad.com/" />
+	
+	
+	
+	<link rel="stylesheet" href="styles.css" type="text/css" />
+	<link rel="alternate" type="application/atom+xml" title="Atom" href="http://blog.duncandavidson.com/atom.xml" />
+	<link rel="alternate" type="application/rss+xml" title="RSS 1.0" href="http://blog.duncandavidson.com/index.rdf" />
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://blog.duncandavidson.com/rss.xml" />
+
+
+	<title>James Duncan Davidson: Deploying Rails with LightTPD</title>
+	<link rel="start" href="http://blog.duncandavidson.com/" title="Home" />
+	<link rel="prev" href="http://blog.duncandavidson.com/2005/12/real_lessons_fo.html" title="Real Lessons for Rails Deployment" />
+	<link rel="next" href="http://blog.duncandavidson.com/2006/01/virtual_hosting.html" title="Virtual Hosting Rails Applications with LightTPD" />
+        
+	<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://blog.duncandavidson.com/2005/12/deploying_rails.html"
+    trackback:ping="http://www.typepad.com/t/trackback/5730089"
+    dc:title="Deploying Rails with LightTPD"
+    dc:identifier="http://blog.duncandavidson.com/2005/12/deploying_rails.html"
+    dc:description="I&#39;ve said that Rails deployment can get complicated. And that it was a DIY situation. Both are true, but it doesn&#39;t have to be complicated. To help you learn how to DIY your Rails deployment and show you the easiest..."
+    dc:creator="James Duncan Davidson"
+    dc:date="2005-12-26T23:36:00-08:00" />
+</rdf:RDF>
+-->
+
+</head>
+
+<body class="layout-two-column-right">
+	
+	<div id="container">
+		<div id="container-inner" class="pkg">
+			
+			<!-- banner -->
+<div id="banner">
+	<div id="banner-inner" class="pkg">
+		
+		<h1 id="banner-header"><a href="http://blog.duncandavidson.com/" accesskey="1">James Duncan Davidson</a></h1>
+		<h2 id="banner-description">blog |bläg| &bull; noun &bull; an ongoing narrative. my narrative.</h2>
+	</div>
+</div>
+
+			<div id="pagebody">
+				<div id="pagebody-inner" class="pkg">
+					<div id="alpha">
+						<div id="alpha-inner" class="pkg">
+							<!-- content nav -->
+<p class="content-nav">
+	<a href="http://blog.duncandavidson.com/2005/12/real_lessons_fo.html">&laquo; Real Lessons for Rails Deployment</a> |
+	<a href="http://blog.duncandavidson.com/">Main</a>
+	| <a href="http://blog.duncandavidson.com/2006/01/virtual_hosting.html">Virtual Hosting Rails Applications with LightTPD &raquo;</a>
+</p>
+						
+<!-- entry -->
+
+
+<div class="entry" id="entry-12274354">
+			<h3 class="entry-header">Deploying Rails with LightTPD</h3>
+	
+	<div class="entry-content">
+		<div class="entry-body">
+			<p>I've said that <a href="http://duncandavidson.com/essay/2005/12/railsdeployment">Rails deployment can get complicated</a>. And that it was a DIY situation. Both are true, but it doesn't <em>have</em> to be complicated. To help you learn how to DIY your Rails deployment and show you the easiest way to get going, here's my recipe for deploying onto a server with <a href="http://lighttpd.net">LightTPD</a>. </p>
+
+<p></strong>Prerequisites and Assumptions</strong></p>
+
+<p>This recipe assumes a bit of prep work has already been done and that you have a server set up somewhere. I'm going to assume that it's already got the following items on it:</p>
+
+<ul>
+<li>sshd </li>
+<li>Ruby </li>
+<li>Rails </li>
+<li>FastCG </li>
+<li>ruby-fcgi </li>
+<li>LightTPD </li>
+<li>Your database of choice</li>
+<li>A Subversion client</li>
+</ul>
+
+<p>On Mac OS X, see Hivelogic's guide to <em>Building Ruby, Rails, LightTPD, and MySQL on Tiger</em> if you need some pointers. On other platforms, well, I'm going to assume that one way or another you've got things squared away.</p>
+
+<p>I'm also going to assume that this is the only web application that you're going to be running on your server. In other words, this box does nothing but serve your application to the world. I'll tackle showing you how to set up multiple Rails applications, as well as co-existing with other things on the server, in later recipes. For now, let's keep things as simple as possible.</p>
+
+<p>On your client machine, the one on which you do development, you have already by necessity set up Ruby and Rails and a database or else we wouldn't be having this conversation. There's one more thing that you'll need to make sure you have set up: Capistrano. If you don't have it on your system, do this:</p>
+
+<pre>gem install capistrano</span></pre>
+
+<p>And last, I'm assuming your code is in Subversion. You do have your code under version control don't you?</p>
+
+<p><strong>Why LightTPD?</strong></p>
+
+<p>Why am I using lighty for this recipe? The answer is that it's lightweight, fast, and easy to configure. As well, it already has support for FastCGI built in. There's no need to add it by using a third-party module. It can either manage a set of FastCGI dispatcher processes itself (which is what I'll show in this recipe), or load balance between a set of external FastCGI processes either on the same machine or remote machines. </p>
+
+<p>Lighty is also well loved by the Rails community. If you have it installed on your local development machine, then `script/server` will use it instead of WEBrick. With the attention it gets from the Rails community, you can be sure that things will work well now and into the future.</p>
+
+<p>But wait! If lighty already supports FastCGI, why do you need the FastCGI library installed on your machine as specified in the prerequisites above? Well, the FastCGI library isn't there for lighty's sake. It's there for the ruby-fcgi bindings to work well. That said, the ruby-fcgi bindings will work in a pure ruby mode, but there are problems when using the pure ruby mode, especially with file uploads and other large HTTP POST requests. </p>
+
+<p><strong>Where Things Will End Up</strong></p>
+
+<p>Before deploying onto a server, you should have a clear strategy for where things are going to be located. For this recipe, we're going to use the following:</p>
+
+<ul>
+<li>Lighty's config file  at <tt>/etc/lighttpd/lighttpd.conf</tt></li>
+<li>Lighty's runtime pid file at <tt>/var/run/lighttpd.pid</tt></li>
+<li>Lighty's access logs written to <tt>/var/log/lighttpd/access_log</tt></li>
+<li>Lighty's error logs written to <tt>/var/log/lighttpd/error_log</tt></li>
+<li>Rails application deployed to <tt>/Library/Rails/mycoolapp</tt></li>
+</ul>
+
+<p>That last path is a Mac OS X-biased one. If you're using Linux or FreeBSD, you'll probably want to use something like `/usr/local/rails/myapplication` to deploy your Rails application to.</p>
+
+</pre>Testing Your Server Setup</pre>
+
+<p>Now that we've covered the prerequisites and assumptions, let's make sure everything is in place on your server. Call me paranoid, but... The machine name I'll be using in this recipe is `Luna.local`.</p>
+
+<pre>ssh Luna.local
+Password: <span class="userinput">*******
+Last login: Sun Dec 25 00:07:38 2005 from incognita.local
+Welcome to Darwin!
+Luna:~ duncan$ lighttpd -v
+lighttpd-1.4.8 (ssl) - a light and fast webserver
+Build-Date: Dec  7 2005 15:22:51
+Luna:~ duncan$ rails --version
+Rails 1.0.0
+Luna:~ duncan$ svn --version
+svn, version 1.2.3 (r15833)
+  compiled Dec  7 2005, 13:23:49</pre>
+
+<p>Next, we need to make sure that that fcgi bindings are a-ok. To test this out, fire up irb:</p>
+
+<pre>Luna:~ duncan$ irb
+irb(main):001:0> require 'fcgi.so'
+=> true</pre>
+
+<p>This tells us that the native adapter for the ruby-fcgi library is in place. If you get a load error here, the native bindings aren't happy. You can see if your ruby-fcgi bindings will work in in pure Ruby mode:</p>
+
+<pre>irb(main):001:0> require 'fcgi'
+=> true</pre>
+
+<p>If you get a load error for <tt>fcgi.so</tt>, but not for <tt>fcgi</tt>, then you can continue on with the recipe, but make sure that you either fix the issue or understand the potential problems.</p>
+
+<p>You should also test to make sure that your database adapter is happy. For example, if you are using MySQL, you can test for the existence of the mysql-ruby bindings with the following:</p>
+
+<pre>irb(main):001:0> require 'mysql'
+=> true</pre>
+
+<p>In the case of MySQL, you can get away without using the mysql-ruby bindings. There's a pure Ruby adapter in rails. However, for performance reasons, you will want to be use the mysql-ruby bindings if at all possible.</p>
+
+<p>Next, let's make sure that you can reach the Subversion code repository that your project is in. Sometimes firewalls and what not, especially if your server is in a DMZ which restricts outbound access, can get in your way. If this is the first time you've hooked up to the repository from your server, you'll see a lot of stuff:</p>
+
+<pre>
+Luna:~ duncan$ svn ls https://svn.server.com/mycoolapp/trunk
+Certificate information:
+- Hostname: svn.server.com
+- Valid: from Dec  7 12:05:21 2005 GMT until Dec  8 12:05:21 2006 GMT
+- Issuer: Equifax Secure Inc., US
+- Fingerprint: da:00:**:**:**:**:**:**:**:**:**:**:**:**:**:**:**:**:**:71
+(R)eject, accept (t)emporarily or accept (p)ermanently? p
+Authentication realm: &lt;https://svn.server.com:443&gt; svn.server.com
+Password for 'duncan': *******
+README
+Rakefile
+app/
+components/
+config/
+db/
+doc/
+lib/
+log/
+public/
+script/
+test/
+vendor/
+</pre>
+
+<p>Seeing this directory listing of your project tells you all is well.</p>
+
+<p><strong>Note:</strong> Testing out your Subversion access here also means that you've already ensured that you've accepted the certificate for an https based Subversion repository and already handled the authentication bits. This means that you won't have it happening during a deployment which Capistrano isn't too friendly about.</p>
+
+<p><strong>Annoyance:</strong> Some versions of the <tt>svn</tt> client don't seem to save authentication information against <tt>https</tt> based repositories the first time around. I've seen this issue intermittently. Executing <tt>svn ls</tt> a few times in a row will clear this up. Very annoying.</p>
+
+<p>Once you've validated all is happy on the server, it's time to focus back on your development machine and on your code tree.</p>
+
+<p><srong>Capistrano Setup</strong></p>
+
+<p>In order to use Capistrano on a Rails application, you'll need to have Capistrano to install a few things into your codebase:</p>
+
+<pre>Incognita:~ duncan$ cd mycoolapp
+Incognita:~/mycoolapp duncan$ cap --apply-to  `pwd` mycoolapp
+      exists  config
+      create  config/deploy.rb
+      exists  lib/tasks
+      create  lib/tasks/capistrano.rake
+</pre>
+
+<p>As you can see from the output, Capistrano has places two files into your project. The first of these, <tt>deploy.rb</tt>, contains the configuration information for your application's deployment. The second, <tt>capistrano.rake</tt>, adds some rake tasks which allow you to interact with Capistrano.</p>
+
+<p><strong>Editing deploy.rb</strong></p>
+
+<p>Now, we're ready to edit the <tt>config/deploy.rb</tt> file. First, in the section marked <strong>REQUIRED VARIABLES</strong>, you'll need to let Capistrano know where the source code repository for your project is:</p>
+
+<pre>set :application, "mycoolapp"<br />
+set :repository, "https://svn.server.com/mycoolapp/trunk"</pre>
+
+<p>Next, you'll need to edit the <strong>ROLES</strong> section to let Capistrano know what server it should deploy your application to. Since we're using a single server for all tasks in this recipe, set all three roles to your server name:</p>
+
+<pre>role :web, "Luna.local"
+role :app, "Luna.local"
+role :db,  "Luna.local", :primary => true</pre>
+
+<p>Next, we need to tell Capistrano where on the server we want the application deployed to. To do this, set the <tt>:deploy_to</tt> variable:</p>
+
+<pre>set :deploy_to, "/Library/Rails/mycoolapp/"</pre>
+
+<p>Last, if your <tt>svn</tt> executable on the server isn't on the default path that the SSH environment gives you (typically <tt>/usr/bin:/bin:/usr/sbin:/sbin</tt>), you'll need to set up the <tt>:svn</tt> variable:</p>
+
+<pre>set :svn, "/usr/local/bin/svn"</pre>
+
+<p><strong>The First Deployment</strong></p>
+
+<p>Now that the <tt>config/deploy.rb</tt> is configured, the next thing to do is have Capistrano set up things on the server. To do this, execute the following command:</p>
+
+<pre>Incognita:~/mycoolapp duncan$ rake remote:setup</pre>
+
+<p>Unless you have set up SSH public/private key authentication, you'll be challenged for your password for the remote server. After authenticating, this sets up the deployment directory and a few directories inside of it. Next, let's do the first deployment:</p>
+
+<pre>Incognita:~/mycoolapp duncan$ rake remote:deploy</pre>
+
+<p>This deploys the application into the <tt>/Library/Rails/mycoolapp/current</tt> directory. At the end of the output from the command, you'll probably see the following:</p>
+
+<pre>[out :: Luna.local] Couldn't find any process matching: /Library/Rails/mycoolapp/current/public/dispatch.fcgi
+command finished</pre>
+
+<p>This error message tells us that Capistrano couldn't restart the remote Rails application. Since we haven't configured and started up the server, this is expected output. Well get that set up soon, but first...</p>
+
+<pre>Interlude: Set up Your Database</pre>
+
+<p>At this point, you should make sure that your production database is set up and that the correct settings appear in the production section of <tt>config/database.yml</tt>. Since everyone's database set up is different, I can't help you too much with this. But, once you thing you're set up, there's an easy way to check up to see if everything is working. On your production server in the <tt>current</tt> deployment directory, start up the console in production mode:</p>
+
+<pre>Luna:~ duncan$ script/console production
+Loading production environment.
+&gt;&gt;</pre>
+
+<p>Now, do a find on one of your model classes. Here's an example from my application:</p>
+
+<pre>&gt;&gt; Content.find(1)
+=&gt; #&lt;Content:0x8e451d0 @attributes={"last_modified"=&gt;"2005-12-25 00:43:13", "title"=&gt;"European Open Source Convention Photos", "date"=&gt;"2005-10-17 12:00:00", "url"=&gt;"http://www.flickr.com/photos/x180/sets/1145208/", "datapath"=&gt;"2005/10/euroosconphotos", "id"=&gt;"1", "summary"=&gt;"The photos I'm taking for the Open Source Convention in Amsterdam are all going up onto Flickr. Of course."}&gt;</pre>
+
+<p>Once you've verified that your production database connection works, you're ready to set up lighty.</p>
+
+<p><strong>LightTPD Configuration</strong></p>
+
+<p>Here's a simple, yet still realistic Lighty configuration that we can use on a production server to run a Rails app:</p>
+
+<pre>var.appname = "mycoolapp"
+server.modules = ("mod_rewrite", "mod_accesslog", "mod_fastcgi")
+server.port = 80<
+server.username = "www"
+server.groupname = "www"
+server.pid-file = "/var/run/lighttpd.pid"
+accesslog.filename = "/var/log/lighttpd/access_log"
+server.errorlog = "/var/log/lighttpd/error_log"
+server.indexfiles = ( "index.html" )
+url.rewrite = ( "^/$" => "index.html", "^([^.]+)$" => "$1.html" )
+server.document-root = "/Library/Rails/" + var.appname + "/current/public"
+server.error-handler-404 = "/dispatch.fcgi"
+ 
+mimetype.assign = (  
+  ".css"        =&gt;  "text/css",
+  ".gif"        =&gt;  "image/gif",
+  ".html"       =&gt;  "text/html",
+  ".jpeg"       =&gt;  "image/jpeg",
+  ".jpg"        =&gt;  "image/jpeg",
+  ".js"         =&gt;  "text/javascript",
+  ".pdf"        =&gt;  "application/pdf",
+  ".png"        =&gt;  "image/png",
+  ".txt"        =&gt;  "text/plain",
+)
+ 
+fastcgi.server = ( ".fcgi" =>
+  ( "localhost" =>
+    ( "min-procs" =&gt; 1, 
+      "max-procs" =&gt; 1,
+      "socket"    =&gt; "/tmp/mycoolapp.fcgi.socket",
+      "bin-path"  =&gt; "/Library/Rails/" + var.appname + "/current/public/dispatch.fcgi",
+      "bin-environment" =&gt; ( "RAILS_ENV" => "production" )
+    ;)
+  ;)
+)</pre>
+
+<p>Create this configuration at <tt>/etc/lighttpd/lighttpd.conf</tt>. </p>
+
+<p><strong>Note:</strong> Don't use the <tt>lighttpd.conf</tt> file that Rails will automatically generate in the <tt>config</tt> directory of your application. This configuration is set up for development use and uses relative paths which is only appropriate when running Lighty using the <tt>script/server</tt> command. </p>
+
+<p>After ensuring that the <tt>/var/log/lighttpd</tt> directory exists and is writable by the <tt>www</tt> user, you are ready to start up Lighty.</p>
+
+<pre>Luna:~ duncan$ sudo lighttpd -f /etc/lighttpd/lighttpd.conf</pre>
+
+<p>Now, if all has been configured correctly&mdash;including your database and database connection&mdash;you'll be able to point a browser at your production server and see your application running.</p>
+
+<p><strong>Troubleshooting Tip:</strong> If the first thing you see when you hit your production server is a big <em>Application error (Rails)</em> notice, then the safe hunch is that your application can't find its way to the database. Verify that your application can access the database using the `script/console` command mentioned above. Once you've ruled database connection problems out, then dive through the various log files to figure out what may be going on.</p>
+
+<p><strong>Subsequent Capistrano Deployments</strong></p>
+
+<p>Once you've verified that your application is up and running on the production server, you're ready to deploy as often as you like. All you need to do is to make your changes, test (you are are writing unit tests aren't you?), commit your changes, and redeploy using:</p>
+
+<pre>Luna:~ duncan$ rake remote:deploy</pre>
+
+<p>Now that Lighty is up and running, what happens when you execute this command is:</p>
+
+<ul>
+<li>Capistrano pushes up the latest copy of your application into the <tt>current</tt> directory</li>
+<li>Capistrano executes <tt>script/process/reaper</tt> to restart your application.</li>
+</ul>
+
+<p>The <tt>reaper</tt> script looks for currently running instances <tt>dispatch.fcgi</tt> and send a <tt>USR2</tt> signal to them. This causes the your running Rails processes to restart using your newly deployed codebase. This happens gracefully as each process finishes up processing requests already in progress. You can see this in action in the output from Capistrano. At the end of the output stream, you'll see something like the following:</p>
+
+<pre>[Luna.local] executing command
+[out :: Luna.local] Restarting [20210] ruby /Library/Rails/mycoolapp/current/public/dispatch.fcgi
+[out :: Luna.local] Restarting [20211] ruby /Library/Rails/mycoolapp/current/public/dispatch.fcgi</pre>
+
+<p>Now, this doesn't restart Lighty. If you make changes to your <tt>lighttpd.conf</tt> file, you'll need to bump the server manually. To do this, use the <tt>INT</tt> signal to gracefully terminate lighty after all pending requests have finished being processed.</p>
+
+<pre>Luna:~ duncan$ sudo kill -INT `cat /var/run/lighttpd.pid`</pre>
+
+<p>Wait a second or two or three, then:</p>
+
+<pre>Luna:~ duncan$ sudo lighttpd -f /etc/lighttpd/lighttpd.conf</pre>
+
+<p>Unfortunately, Lighty doesn't have a graceful way to reload it's configuration without this complete shutdown. It'd be nice to have something similar to Apache httpd's <tt>apachectl -k graceful</tt> command. Fortunately, since you can update your Rails app gracefully without restarting Lighty, this issue isn't a deal-breaker.</p>
+
+<p><strong>Note:</strong> Capistrano updates your production copy of your application based on what is committed into Subversion&mdash;not what is in your local workspace. If you make some changes and deploy, but don't see the changes up on the server, remember, you need to commit first!</p>
+
+<p><strong>Finishing Touches</strong></p>
+
+<p>At this point, you should take a few minutes and make sure that Lighty will be started up at system startup in a manner appropriate for your system. Otherwise, you'll be in for a rude surprise when you're server restarts at 4AM for whatever reason and your application doesn't come back up.</p>
+
+<p>If you are running Mac OS X 10.4, Hivelogic has a post showing you <a href="http://www.hivelogic.com/articles/2005/12/29/lighttpd_launchd_item">how to setup Lighty with Launchd</a>. Highly recommended.</p>
+
+<p><strong>Potential Gotchas</strong></p>
+
+<p>I've covered a lot of ground in this essay. In doing so, I hope that I've demystified how to deploy a Rails application onto Lighty. However, in preparing this recipe, there's no way I can cover every possibility. You may run into issues along the way. Most issues are path or environment related. For example, you'll want to make sure that your <tt>ruby</tt> and <tt>rake</tt> commands are on the environment provided when you remotely executed a command on your server via <tt>ssh</tt>. As well, you may need to set the PATH, RUBYLIB, or GEM_HOME environment variables in your <tt>~/.ssh/environment</tt> file on the server.</p>
+		</div>
+		
+		<!-- technorati tags -->
+            <p class="entry-technorati-tags">
+            <a href="http://www.technorati.com/search/http://blog.duncandavidson.com/2005/12/deploying_rails.html" title="Find related items at Technorati.">Technorati Tags</a>:
+            <a href="http://technorati.com/tag/lighttpd" rel="tag">lighttpd</a>, <a href="http://technorati.com/tag/rails" rel="tag">rails</a>
+        </p>
+    
+
+
+		
+	</div>
+	<p class="entry-footer">
+		<span class="post-footers">December 26, 2005 at 23:36 in <a href="http://blog.duncandavidson.com/code/index.html">Code</a> </span> <span class="separator">|</span> <a class="permalink" href="deploying_rails.html">Permalink</a>
+	</p>
+</div>
+
+	<div class="trackbacks">
+		<a id="trackback"></a>
+		<h3 class="trackbacks-header">TrackBack</h3>
+		<div class="trackbacks-info">
+			<p>TrackBack URL for this entry:<br />http://www.typepad.com/t/trackback/5730089</p>
+			<p>Listed below are links to weblogs that reference <a href="deploying_rails.html">Deploying Rails with LightTPD</a>:</p>
+		</div>
+		<div class="trackbacks-content">
+			
+		</div>
+	</div>
+
+
+	<a id="comments"></a>
+	<div class="comments">
+		<h3 class="comments-header">Comments</h3>
+		<div class="comments-content">
+			<!-- comment list -->
+	<a id="c22455314"></a>
+	<div class="comment" id="comment-22455314">
+		<div class="comment-content">
+			<p>James,</p>
+
+<p>The formatting for this page is pretty broken in Safari and FIrefox.  No paragraph wrapping.</p>
+
+<p>Thanks</p>
+		</div>
+		<p class="comment-footer">
+			Posted by:
+			<a rel="nofollow" target="_blank" title="http://profile.typekey.com/andrewc/" href="http://www.typepad.com/t/comments?__mode=red&amp;id=22455314">Andrew Carter</a> |
+			<a href="deploying_rails.html#comment-22455314">September 15, 2006 at 10:39</a>
+		</p>
+	</div>
+
+
+		</div>
+	</div>
+
+	<!-- comment form -->
+	<script type="text/javascript" src="comments.js"></script>
+	<script type="text/javascript">hostName = '.duncandavidson.com';</script>
+	
+	<form id="comment-form"
+		method="post" action="http://www.typepad.com/t/comments">
+		<input type="hidden" name="entry_id" value="12274354" />
+		<input type="hidden" name="user_id" value="235689" />
+		
+		<div class="comments-open">
+			<h2 class="comments-open-header">Post a comment</h2>
+			<div class="comments-open-content">
+				
+				
+									<script type="text/javascript" src="http://www.typepad.com/t/comments?__mode=check_login"></script>
+					<script type="text/javascript">
+						checkLocal();
+					</script>
+					
+					<p id="comments-open-login" style="display: block;">
+													If you have a TypeKey or TypePad account, please
+							<a href="http://www.typepad.com/t/comments?__mode=signin_redir&amp;user_id=235689&amp;entry_id=12274354">Sign In</a>
+						
+					</p>
+					
+					<p id="comments-open-logout" style="display: none;">
+						You are currently signed in as
+						<span id="commenter-name">(nobody)</span>.
+						<a href="http://www.typepad.com/t/comments?__mode=signout&amp;user_id=235689&amp;entry_id=12274354">Sign Out</a>
+					</p>
+				
+				
+									<div id="comments-open-data">
+						<p>
+							<label for="comment-author">Name:</label>
+							<input id="comment-author" name="author" size="30" />
+						</p>
+						<p>
+							<label for="comment-email">Email Address:</label>
+							<input id="comment-email" name="email" size="30" />
+						</p>
+						<p>
+							<label for="comment-url">URL:</label>
+							<input id="comment-url" name="url" size="30" />
+						</p>
+						<p>
+							<label for="comment-bake-cookie"><input type="checkbox"
+								id="comment-bake-cookie" name="bakecookie" value="1" />
+								Remember personal info?</label>
+						</p>
+					</div>
+				
+
+	<p id="comments-open-text">
+
+
+					<label for="comment-text">Comments:</label>
+					<textarea id="comment-text" name="text" rows="10" cols="30" onkeyup="maxTextarea(this, 64000)"></textarea>
+				</p>
+			</div>
+
+	<div id="comments-open-footer" class="comments-open-footer">
+
+
+				<input type="submit" name="preview" id="comment-preview" value="&nbsp;Preview&nbsp;" />
+				<input type="submit" name="post" id="comment-post" value="&nbsp;Post&nbsp;" />
+			</div>
+		</div>
+	</form>
+	
+			<script type="text/javascript">
+			commentSignIn();
+		</script>
+	
+
+
+
+
+
+						</div>
+					</div>
+					<div id="beta">
+						<div id="beta-inner" class="pkg">
+							<!-- sidebar -->
+
+
+<div class="module-typelist module">
+	<h2 class="module-header">About the Author</h2>
+	<div class="typelist-plain module-content">
+		<ul class="module-list">
+							<li class="module-list-item"><div class="typelist-note"><p><img src="http://x180.typepad.com/headshot.jpg" style="float: right; border: none; margin-left: 4px;" border="0" />Welcome to my weblog. I'm James Duncan Davidson—36 years old, photographer, author, and software engineer. I live in Portland Oregon and regularly travel all over the United States and the rest of the world. I worry about Global Warming. My Inbox is way too full.</p>
+
+<p>You can find out more about me at <a href="http://duncandavidson.com/">duncandavidson.com</a>. You can also follow my photostream at <a href="http://flickr.com/photos/x180">flickr.com/photos/x180</a>.</p></div></li>
+			
+		</ul>
+	</div>
+</div>
+
+<div class="module-typelist module">
+	<h2 class="module-header">Sponsored By</h2>
+	<div class="typelist-plain module-content">
+		<ul class="module-list">
+							<li class="module-list-item"><div class="typelist-note"><script type="text/javascript"><!--
+  amazon_ad_tag = "x180-20";  amazon_ad_width = "180";  amazon_ad_height = "150";  amazon_color_border = "CCCCCC";  amazon_color_text = "666666";  amazon_color_link = "333333";//--></script>
+<script type="text/javascript" src="http://www.assoc-amazon.com/s/ads.js"></script></div></li>
+							<li class="module-list-item"><div class="typelist-note"><script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-355193-2";
+urchinTracker();
+</script></div></li>
+							<li class="module-list-item"><div class="typelist-note"><script type="text/javascript"><!--
+google_ad_client = "pub-7034602323663626";
+google_ad_width = 180;
+google_ad_height = 150;
+google_ad_format = "180x150_as";
+google_ad_type = "text_image";
+//2006-10-06:  Blog
+google_ad_channel ="4766343490";
+google_color_border = "CCCCCC";
+google_color_bg = "FFFFFF";
+google_color_link = "666666";
+google_color_text = "333333";
+google_color_url = "666666";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div></li>
+			
+		</ul>
+	</div>
+</div>
+
+<div class="module-typelist module">
+	<h2 class="module-header">Search</h2>
+	<div class="typelist-plain module-content">
+		<ul class="module-list">
+							<li class="module-list-item"><div class="typelist-note"><!-- SiteSearch Google -->
+<form method="get" action="http://www.google.com/custom" target="google_window">
+<table border="0" bgcolor="#ffffff">
+<tr><td nowrap="nowrap" valign="top" align="left" height="32">
+
+<br/>
+<input type="hidden" name="domains" value="blog.duncandavidson.com"></input>
+<input type="text" name="q" size="20" maxlength="255" value=""></input>
+</td></tr>
+<tr>
+<td nowrap="nowrap">
+<table>
+<tr>
+<td>
+<input type="radio" name="sitesearch" value="" checked="checked"></input>
+<font size="-1" color="#000000">Web</font>
+</td>
+<td>
+<input type="radio" name="sitesearch" value="blog.duncandavidson.com"></input>
+<font size="-1" color="#000000">blog.duncandavidson.com</font>
+</td>
+</tr>
+</table>
+<input type="submit" name="sa" value="Google Search"></input>
+<input type="hidden" name="client" value="pub-7034602323663626"></input>
+<input type="hidden" name="forid" value="1"></input>
+<input type="hidden" name="ie" value="ISO-8859-1"></input>
+<input type="hidden" name="oe" value="ISO-8859-1"></input>
+<input type="hidden" name="flav" value="0000"></input>
+<input type="hidden" name="sig" value="SUJIB6qpk0FuSw5v"></input>
+<input type="hidden" name="cof" value="GALT:#008000;GL:1;DIV:#336699;VLC:663399;AH:center;BGC:FFFFFF;LBGC:336699;ALC:0000FF;LC:0000FF;T:000000;GFNT:0000FF;GIMP:0000FF;FORID:1"></input>
+<input type="hidden" name="hl" value="en"></input>
+</td></tr></table>
+</form>
+<!-- SiteSearch Google --></div></li>
+			
+		</ul>
+	</div>
+</div>
+
+<div class="module-recent-comments module">
+	<h2 class="module-header">Recent Comments</h2>
+	<div class="module-content">
+		<ul class="module-list">
+							<li class="module-list-item"><a href="http://blog.duncandavidson.com/2007/02/welcome_to_port.html#comment-61476416">Jake McKee</a> on <a href="http://blog.duncandavidson.com/2007/02/welcome_to_port.html">Welcome To Portland, Now Sit Tight</a></li>
+							<li class="module-list-item"><a href="http://blog.duncandavidson.com/2007/02/macworld_2007_a.html#comment-61307898">Brad Schneider</a> on <a href="http://blog.duncandavidson.com/2007/02/macworld_2007_a.html">Macworld 2007 ADC Developer Pavilion</a></li>
+							<li class="module-list-item"><a href="http://blog.duncandavidson.com/2007/02/leaky_dishwashe.html#comment-61300278">foresmac</a> on <a href="http://blog.duncandavidson.com/2007/02/leaky_dishwashe.html"> Leaky Dishwasher Joy</a></li>
+							<li class="module-list-item"><a href="http://blog.duncandavidson.com/2006/04/sandboxing_rail.html#comment-61278970">Evan Thompson</a> on <a href="http://blog.duncandavidson.com/2006/04/sandboxing_rail.html">Sandboxing Rails With MacPorts</a></li>
+							<li class="module-list-item"><a href="http://blog.duncandavidson.com/2006/09/aperture_vs_lig.html#comment-61261576">Tom</a> on <a href="http://blog.duncandavidson.com/2006/09/aperture_vs_lig.html">Aperture vs Lightroom</a></li>
+							<li class="module-list-item"><a href="http://blog.duncandavidson.com/2006/09/aperture_vs_lig.html#comment-61247160">somebody</a> on <a href="http://blog.duncandavidson.com/2006/09/aperture_vs_lig.html">Aperture vs Lightroom</a></li>
+							<li class="module-list-item"><a href="http://blog.duncandavidson.com/2007/02/macworld_2007_a.html#comment-61246008">Mike Zornek</a> on <a href="http://blog.duncandavidson.com/2007/02/macworld_2007_a.html">Macworld 2007 ADC Developer Pavilion</a></li>
+							<li class="module-list-item"><a href="http://blog.duncandavidson.com/2007/02/macworld_2007_a.html#comment-61155944">Manton Reece</a> on <a href="http://blog.duncandavidson.com/2007/02/macworld_2007_a.html">Macworld 2007 ADC Developer Pavilion</a></li>
+							<li class="module-list-item"><a href="http://blog.duncandavidson.com/2006/06/conditional_rai.html#comment-61147540">Keenan Brock</a> on <a href="http://blog.duncandavidson.com/2006/06/conditional_rai.html">Conditional Rails Database Configuration</a></li>
+							<li class="module-list-item"><a href="http://blog.duncandavidson.com/2006/06/conditional_rai.html#comment-61144934">Keenan Brock</a> on <a href="http://blog.duncandavidson.com/2006/06/conditional_rai.html">Conditional Rails Database Configuration</a></li>
+			
+		</ul>
+	</div>
+</div>
+	<div class="module-archives module">
+		<h2 class="module-header">Recent Posts</h2>
+		<div class="module-content">
+			<ul class="module-list">
+														<li class="module-list-item"><a href="http://blog.duncandavidson.com/2007/02/macworld_2007_a.html">Macworld 2007 ADC Developer Pavilion</a></li>
+					
+														<li class="module-list-item"><a href="http://blog.duncandavidson.com/2007/02/lightroom_backg.html">Lightroom: Background Export</a></li>
+					
+														<li class="module-list-item"><a href="http://blog.duncandavidson.com/2007/02/mark_hamburg_in.html">Mark Hamburg Interview, Pt 2</a></li>
+					
+														<li class="module-list-item"><a href="http://blog.duncandavidson.com/2007/02/lightroom_selec.html">Lightroom: Select Photos by Lens</a></li>
+					
+														<li class="module-list-item"><a href="http://blog.duncandavidson.com/2007/02/inside_aperture.html">Inside Aperture: Changing Time Zones</a></li>
+					
+														<li class="module-list-item"><a href="http://blog.duncandavidson.com/2007/02/leaky_dishwashe.html"> Leaky Dishwasher Joy</a></li>
+					
+														<li class="module-list-item"><a href="http://blog.duncandavidson.com/2007/02/welcome_to_port.html">Welcome To Portland, Now Sit Tight</a></li>
+					
+														<li class="module-list-item"><a href="http://blog.duncandavidson.com/2007/02/making_full_use.html">Making Full Use of Full Screen Mode in Aperture</a></li>
+					
+														<li class="module-list-item"><a href="http://blog.duncandavidson.com/2007/02/using_rgb_auto_.html">Using RGB Auto Levels</a></li>
+					
+														<li class="module-list-item"><a href="http://blog.duncandavidson.com/2007/02/the_hivelogic_i.html">The Hivelogic Interview</a></li>
+					
+				
+			</ul>
+		</div>
+	</div>
+
+	<div class="module-archives module">
+		<h2 class="module-header"><a
+			href="http://blog.duncandavidson.com/archives.html">Archives</a></h2>
+		<div class="module-content">
+			<ul class="module-list">
+									<li class="module-list-item"><a href="http://blog.duncandavidson.com/2007/02/index.html">February 2007</a></li>
+									<li class="module-list-item"><a href="http://blog.duncandavidson.com/2007/01/index.html">January 2007</a></li>
+									<li class="module-list-item"><a href="http://blog.duncandavidson.com/2006/12/index.html">December 2006</a></li>
+									<li class="module-list-item"><a href="http://blog.duncandavidson.com/2006/11/index.html">November 2006</a></li>
+									<li class="module-list-item"><a href="http://blog.duncandavidson.com/2006/10/index.html">October 2006</a></li>
+									<li class="module-list-item"><a href="http://blog.duncandavidson.com/2006/09/index.html">September 2006</a></li>
+									<li class="module-list-item"><a href="http://blog.duncandavidson.com/2006/08/index.html">August 2006</a></li>
+									<li class="module-list-item"><a href="http://blog.duncandavidson.com/2006/07/index.html">July 2006</a></li>
+									<li class="module-list-item"><a href="http://blog.duncandavidson.com/2006/06/index.html">June 2006</a></li>
+									<li class="module-list-item"><a href="http://blog.duncandavidson.com/2006/04/index.html">April 2006</a></li>
+				
+			</ul>
+		</div>
+	</div>
+
+<div class="module-categories module">
+	<h2 class="module-header">Categories</h2>
+	<div class="module-content">
+		<ul class="module-list">
+												<li class="module-list-item"><a href="http://blog.duncandavidson.com/art/index.html">Art</a></li>
+				
+				
+												<li class="module-list-item"><a href="http://blog.duncandavidson.com/business/index.html">Business</a></li>
+				
+				
+												<li class="module-list-item"><a href="http://blog.duncandavidson.com/code/index.html">Code</a></li>
+				
+				
+												<li class="module-list-item"><a href="http://blog.duncandavidson.com/computing/index.html">Computing</a></li>
+				
+				
+												<li class="module-list-item"><a href="http://blog.duncandavidson.com/conferences/index.html">Conferences</a></li>
+				
+				
+												<li class="module-list-item"><a href="http://blog.duncandavidson.com/current_affairs/index.html">Current Affairs</a></li>
+				
+				
+												<li class="module-list-item"><a href="http://blog.duncandavidson.com/environment/index.html">Environment</a></li>
+				
+				
+												<li class="module-list-item"><a href="http://blog.duncandavidson.com/food_and_drink/index.html">Food and Drink</a></li>
+				
+				
+												<li class="module-list-item"><a href="http://blog.duncandavidson.com/games/index.html">Games</a></li>
+				
+				
+												<li class="module-list-item"><a href="http://blog.duncandavidson.com/humor/index.html">Humor</a></li>
+				
+				
+												<li class="module-list-item"><a href="http://blog.duncandavidson.com/life/index.html">Life</a></li>
+				
+				
+												<li class="module-list-item"><a href="http://blog.duncandavidson.com/music/index.html">Music</a></li>
+				
+				
+												<li class="module-list-item"><a href="http://blog.duncandavidson.com/photography/index.html">Photography</a></li>
+				
+				
+												<li class="module-list-item"><a href="http://blog.duncandavidson.com/politics/index.html">Politics</a></li>
+				
+				
+												<li class="module-list-item"><a href="http://blog.duncandavidson.com/television/index.html">Television</a></li>
+				
+				
+												<li class="module-list-item"><a href="http://blog.duncandavidson.com/travel/index.html">Travel</a></li>
+				
+				
+												<li class="module-list-item"><a href="http://blog.duncandavidson.com/weather/index.html">Weather</a></li>
+				
+				
+												<li class="module-list-item"><a href="http://blog.duncandavidson.com/weblogs/index.html">Weblogs</a></li>
+				
+				
+												<li class="module-list-item"><a href="http://blog.duncandavidson.com/webtech/index.html">Web/Tech</a></li>
+				
+				
+			
+		</ul>
+	</div>
+</div>
+<div class="module-syndicate module">
+	<div class="module-content">
+		<a href="http://blog.duncandavidson.com/index.rdf">Subscribe to this blog's feed</a>
+	</div>
+</div>
+
+
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+<script type="text/javascript">
+<!--
+document.write('<img src="http://www.typepad.com/t/stats?blog_id=490726&amp;user_id=235689&amp;page=' + escape(location.href) + '&amp;referrer=' + escape(document.referrer) + '" width="1" height="1" alt="" style="position: absolute; top: 0; left: 0;" />');
+// -->
+</script>
+
+</body>
+</html>

@@ -1,0 +1,255 @@
+/*************************
+	ELEMENTS
+*************************/
+p, td {
+	font-family: verdana, arial, helvetica;
+	font-size: 12px;
+}
+
+/*************************
+	CLASSES
+*************************/
+
+.bold {font-weight: bold;}
+
+.hdr {
+	font-size: 17px;
+	color: #934220;
+	font-weight: bold;
+}
+
+.topicHdr {
+	font-size: 10pt;
+	color: #934220;
+	font-weight: bold;
+}
+
+.storeSearchField {
+	font-size: 10px;
+	color: #4D585C;
+}
+
+div.lobbyTopics {
+	padding: 6px 6px 6px 14px;
+	background: #F0F3F6;
+	border-bottom: 1px solid #ffffff;
+}
+
+div.lobbyTopicsFirstTopic {
+	padding: 6px 6px 6px 14px;
+	background: #F0F3F6;
+	border-bottom: 1px solid #ffffff;
+	border-top: 1px solid #ffffff;
+}
+
+div.topicDivider {
+	background: #F0F3F6;
+	border-bottom: 1px solid #ffffff;
+}
+
+.mpFeature {
+	color: #858585;
+	font-size: 10px;	
+}
+
+.topicDescription {
+	color: #666769;
+	font-style: italic;
+	font-size: 12px;
+}
+
+.topicBullet {
+	font-size: 10px;
+	color: #106D62;
+}
+
+.price {
+	color: #903622;
+	font-weight: bold;
+}
+
+.regularPrice 
+{
+	text-decoration: line-through;
+}
+
+.regularPriceBold
+{
+	font-weight: bold;
+	text-decoration: line-through;
+}
+
+.pagesDivider {
+	color: #5D6979;
+	font-size: 11px;
+}
+
+.title {
+	font-size: 16px;
+	font-weight: bold;
+	color: #934220;	
+}
+
+.author {
+	font-weight: bold;
+	font-size: 10px;
+}
+
+.itemType {
+	font-size: 11px;
+	font-style: italic;
+}
+
+.leftIndent {
+	padding-left: 25px;
+}
+
+.bgHdr {
+	font-size: 15px;
+	font-weight: bold;
+	color: #006855;
+	background: #ECECD9;
+	padding: 3px;
+	border: 1px solid #E2E2C7;
+}
+
+/*************************
+	ANCHOR
+*************************/
+
+a:link {
+	color: #0E7057;
+}
+
+a:visited {
+	color: #0E7057;
+}
+
+a:hover {
+	color: #276B5C;
+	text-decoration: none;
+}
+
+a.x10b:link {
+	color: #276B5C;
+	font-weight: bold;
+	font-size: 10px;
+}
+
+a.x10b:visited {
+	color: #276B5C;
+	font-weight: bold;
+	font-size: 10px;
+}
+
+a.x10b:hover {
+	color: #276B5C;
+	font-weight: bold;
+	font-size: 10px;
+}
+
+a.lobbyTopic:link {
+	font-size: 12px;
+	font-weight: bold;
+	color: #5D6979;
+}
+
+a.lobbyTopic:visited {
+	font-size: 12px;
+	font-weight: bold;
+	color: #5D6979;
+}
+
+a.lobbyTopic:hover {
+	font-size: 12px;
+	font-weight: bold;
+	color: #494F56;
+}
+
+a.lobbyTopicSub:link {
+	font-size: 11px;
+	color: #5D6979;
+}
+
+a.lobbyTopicSub:visited {
+	font-size: 11px;
+	color: #5D6979;
+}
+
+a.lobbyTopicSub:hover {
+	font-size: 11px;
+	color: #494F56;
+	text-decoration: none;
+}
+
+a.mpFLToday:link {
+	color: #276B5C;
+	font-weight: bold;
+	font-size: 10px;
+}
+
+a.mpFLToday:visited {
+	color: #276B5C;
+	font-weight: bold;
+	font-size: 10px;
+}
+
+a.mpFLToday:hover {
+	color: #389C86;
+	font-weight: bold;
+	font-size: 10px;
+}
+
+a.mpDB:link {
+	color: #995C57;
+	font-weight: bold;
+	font-size: 10px;
+}
+
+a.mpDB:visited {
+	color: #995C57;
+	font-weight: bold;
+	font-size: 10px;
+}
+
+a.mpDB:hover {
+	color: #B47E7A;
+	font-weight: bold;
+	font-size: 10px;
+}
+
+a.mpConfres:link {
+	color: #575B40;
+	font-weight: bold;
+	font-size: 10px;
+}
+
+a.mpConfres:visited {
+	color: #575B40;
+	font-weight: bold;
+	font-size: 10px;
+}
+
+a.mpConfres:hover {
+	color: #828860;
+	font-weight: bold;
+	font-size: 10px;
+}
+
+a.pages:link {
+	color: #995C57;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+a.pages:visited {
+	color: #995C57;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+a.pages:hover {
+	color: #B47E7A;
+	font-size: 11px;
+	font-weight: bold;
+}

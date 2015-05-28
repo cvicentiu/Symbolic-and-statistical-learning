@@ -1,0 +1,149 @@
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color:#E6E6E6;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #4D4D4D;
+}
+.headline {
+	font-size: 1.25em;
+	line-height: 1.25em;
+}
+.subhead {
+	font-size: 0.75em;
+	line-height: 1.25em;
+	font-weight: bold;
+}
+.bodyText {
+	font-size: .75em;
+	line-height: 1.25em;
+}
+.caption {
+	font-size: .75em;
+	line-height: 1.5em;
+}
+a:link {
+	color: #BECFFA;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #D9E4FF;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:active {
+	color: #D9E3FA;
+	text-decoration: none;
+}
+p {
+	margin-bottom: 0.5em;
+}
+.projectBlock {
+	position:relative;
+	left:0px;
+	top: 0px;
+	width: 744px;
+	margin-left: 16px;
+	margin-bottom: 2em;
+	clear: left;
+	}
+.projects {
+	position: absolute;
+	width: 760px;
+	left: 0px;
+	top: 56px;
+	margin-top: 2em;
+}
+.content {
+	position:absolute;
+	left:16px;
+	top:56px;
+	width:760px;
+	padding-top:2em;
+	z-index:2;
+}	
+.thumbnail {
+	margin-right: 18px;
+	margin-bottom: 18px;
+	float: left;
+	background-color: #CCCCCC;
+	text-align: center;
+	width: 130px;
+	height: 130px;
+}
+
+.thumbBlock {
+	float: left;
+	margin-bottom: 32px;
+	width: 128px;
+	position: relative;
+	z-index: 2;
+	margin-right: 18px;
+}
+.subheadList {
+	font-size: 14px;
+	line-height: 1.25em;
+	position: relative;
+	width: 7.5em;
+	float: left;
+}
+.thumbnailBig {
+	float: left;
+	margin-right: 32px;
+	margin-bottom: 32px;
+	background-color: #CCCCCC;
+	width: 196px;
+	height: 148px;
+	text-align: center;
+}
+.indent {
+	position: relative;
+	left: 2em;
+}
+.skillBlurb {
+	position: relative;
+	float: none;
+}
+.expBlurb {
+	margin-right: 1em;
+	position: relative;
+	width: 16em;
+	float: left;
+	margin-bottom: 1em;
+}
+.toolsBlurb {
+	position: relative;
+	width: 11em;
+	float: left;
+	margin-bottom: 2em;
+}
+.piecenav {
+	position: absolute;
+	z-index: 9;
+	left: 768px;
+	top: 8px;
+}
+.piece {
+	position: absolute;
+	z-index: 1;
+	left: 8px;
+	top: 8px;
+	width: 760px;
+	height: 570px;
+	background-color: #E6E6E6;
+	text-align: center;
+}
+img	{
+	border-color: #000000;
+}
+.thumbFloat {
+	float: left;
+	position: relative;
+}

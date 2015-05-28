@@ -1,0 +1,313 @@
+/* Default stylesheet for CommonSpot - generated 2005-01-04 09:01:52
+Copyright 2002-2005, PaperThin, Inc.  */
+
+/* Document-level styles */
+.CS_Document { margin-top:0;margin-left:0;margin-right:0;margin-bottom:0;font-family:Verdana,Arial,sans-serif;color:#000000; }
+
+/* Image Grid */
+.CS_BBar_Image { text-decoration:none;border-style:none; }
+
+/* Bulleted List */
+.CS_BL_Bullet { text-decoration:none;border-style:none;font-size:xx-small; }
+.CS_BL_Header { text-align:left; }
+.CS_BL_HeaderCaption { text-align:left;font-weight:bold;text-decoration:none; }
+.CS_BL_HeaderText { text-align:left;text-decoration:none;xx-small; }
+.CS_BL_Item { list-style-position:outside; }
+.CS_BL_ItemCaption { text-align:left;font-weight:bold;text-decoration:none; }
+.CS_BL_ItemText { text-align:left;text-decoration:none;xx-small; }
+
+/* Custom Script */
+/* Simple Form */
+.CS_Form_Label { text-align:right;vertical-align:text-top; }
+.CS_Form_Tree { }
+.CS_Form_RichText { }
+.CS_Form_Date { }
+.CS_Form_Image { text-decoration:none;border-style:none; }
+.CS_Form_URL { }
+.CS_Form_Email { }
+.CS_Form_DropDown { align:bottom; }
+.CS_Form_DropDown_Item { }
+.CS_Form_SectionLabel { font-weight:bold; }
+.CS_Form_Number { text-align:right; }
+.CS_Form_Text { }
+.CS_Form_Description { }
+.CS_Form_Button { text-align:center; }
+.CS_Form_Required { font-weight:bold;text-align:right;vertical-align:text-top; }
+.CS_Form_ResultText { }
+.CS_Form_Label_Baseline { text-align:right;vertical-align:baseline; }
+.CS_Form_Required_Baseline { font-weight:bold;text-align:right;vertical-align:baseline; }
+.CS_Form_Form { padding:0;margin:0; }
+.CS_Form_SummaryMessage { }
+
+/* Data Sheet */
+.CS_DataSheet_Caption { text-decoration:none;text-align:center;font-weight:bold; }
+.CS_DataSheet_Alphabet { text-decoration:none;color:#0000FF;padding:4; }
+.CS_DataSheet_Alphabet_Selected { text-decoration:none;color:#880088;padding:4; }
+.CS_DataSheet_Table { padding:0;margin:0; }
+.CS_DataSheet_Header_Row { background-color:#888888; }
+.CS_DataSheet_HeaderItem_First_Column { background-color:#EEEEEE;font-weight:bold;color:#CC6600;padding:4;text-align:left; }
+.CS_DataSheet_HeaderItem_Column { background-color:#EEEEEE;font-weight:bold;color:#CC6600;padding:4;text-align:left; }
+.CS_DataSheet_Data_First_Column { padding:4; }
+.CS_DataSheet_Data_Column { padding:4; }
+.CS_DataSheet_Data_Cell { text-align:left; }
+.CS_DataSheet_Data_Cell_Numeric { text-align:right; }
+.CS_DataSheet_Data_Cell_Action { text-align:center;text-decoration:underline;color:#0000FF; }
+.CS_DataSheet_Data_Row_Alternate { background-color:#E5E5E5; }
+.CS_DataSheet_Summary_Row { text-align:center; }
+.CS_DataSheet_Summary_Links { font-size:x-small;text-decoration:none; }
+.CS_DataSheet_Summary_Current_Page { font-size:x-small; }
+.CS_DatasheetExport_Link { text-decoration:none;color:#0000FF;padding:5; }
+
+/* Date */
+.CS_Date_Label { font-size:x-small; }
+.CS_Date_Date { font-size:x-small; }
+.CS_Date_Time { font-size:x-small; }
+
+/* Pop-up menus */
+/* Microsoft Word,Imported HTML */
+/* Image */
+.CS_Image_Caption { text-decoration:none;text-align:center;font-weight:bold; }
+.CS_Image_IMG { text-decoration:none;border-style:none;text-align:center; }
+
+/* Label */
+.CS_Label_Item { color:#FFFFFF;text-decoration:none;font-weight:bold; }
+.CS_Label_Current_Item { color:#FFFFFF;text-decoration:none;font-weight:bold; }
+.CS_Label_FirstLetter { color:#FFFFFF;font-size:medium;text-decoration:none;font-weight:bold; }
+
+/* Tabular Layout */
+.CS_Layout_Table { border-style:none; }
+.CS_Layout_TH { text-align:center;font-weight:bold;text-decoration:none; }
+.CS_Layout_TD { text-align:left;vertical-align:top; }
+
+/* Link Bars,BreadCrumbs,PageSet Navigation */
+.CS_LinkBar_Item { font-size:x-small; }
+.CS_LinkBar_BeforeLabel { font-size:x-small; }
+.CS_LinkBar_Separator { font-size:x-small; }
+.CS_LinkBar_AfterLabel { font-size:x-small; }
+.CS_LinkBar_Image { text-decoration:none;border-style:none; }
+.CS_LinkBar_CurrentItem { font-size:x-small; }
+.CS_LinkBar_HighlightedItem { font-size:x-small; }
+
+/* Link List */
+.CS_LinkList_Caption { text-decoration:none;text-align:center;font-weight:bold; }
+.CS_LinkList_ListBox { align:bottom; }
+.CS_LinkList_Item { font-size:x-small; }
+.CS_LinkList_Button { text-align:center;font-weight:bold;font-size:x-small; }
+
+.CS_LinkList_Form { padding:0;margin:0; }
+
+
+
+/* Multi-Section */
+
+.CS_MS_Header { text-align:left; }
+
+.CS_MS_Header_Caption { text-decoration:none;text-align:center;font-weight:bold; }
+
+.CS_MS_Header_Text { font-size:x-small; }
+
+.CS_MS_Index_Table { background-color:#000000; }
+
+.CS_MS_Index_Column { background-color:#000000; }
+
+.CS_MS_Index_Item { text-align:left;font-size:x-small; }
+
+.CS_MS_Item { font-size:x-small; }
+
+
+
+/* Embedded Object (video, etc.) */
+
+.CS_Object_Caption { text-decoration:none;text-align:center;font-weight:bold; }
+
+
+
+/* Page Index, PageSet Index */
+
+.CS_PgIndex_Header { text-align:left;font-weight:bold; }
+
+/* Added CS_PgIndex_Item_BookModules to take care of Book Module left navbar page index text. Assign this class to 'individual item' and 'item (alternate rows)' in the Element Style list in Commonspot (RD 04/13/06) */
+.CS_PgIndex_Item_BookModules  { text-decoration:none;font-size:100%;padding-top: .5em; }
+
+.CS_PgIndex_Item_Title { text-decoration:none;font-size:180%; }
+
+.CS_PgIndex_Item_Description { text-decoration:none;font-size:xx-small; }
+
+.CS_PgIndex_Item_Category { text-decoration:none;font-size:xx-small; }
+
+.CS_PgIndex_Item_Author { text-decoration:none;font-size:xx-small; }
+
+.CS_PgIndex_Item_LastMod { text-decoration:none;font-size:xx-small; }
+
+.CS_PgIndex_Item_PubDate { text-decoration:none;font-size:xx-small; }
+
+.CS_PgIndex_Item_SubSite { text-decoration:none;font-size:xx-small; }
+
+.CS_PgIndex_Primary_Category { text-decoration:none;font-weight:bold;font-size:180%; }
+
+.CS_PgIndex_Secondary_Category { text-decoration:none;font-weight:bold; }
+
+.CS_PgIndex_Bullet { text-decoration:none;border-style:none; }
+
+.CS_PgIndex_Item_Owner { font-size:xx-small; }
+
+.CS_PgIndex_Item_CreationDate { text-decoration:none;font-size:xx-small; }
+
+.CS_PgIndex_Item_LastMajor { text-decoration:none;font-size:xx-small; }
+
+.CS_PgIndex_Item_MoreLink { font-size:x-small;border-style:none; }
+
+.CS_PgIndex_NoRecords { font-size:xx-small; } 
+
+
+
+/* PowerPoint Presentation */
+
+.CS_Pres_Caption { text-decoration:none;text-align:center;font-weight:bold; }
+
+.CS_Pres_Image { text-decoration:none;border-style:none; }
+
+
+
+/* Scheduled Content */
+
+
+
+/* Search Form */
+
+.CS_SF_Label { font-weight:bold;font-size:xx-small;text-decoration:none; }
+
+.CS_SF_Input { font-size:xx-small;text-decoration:none; }
+
+.CS_SF_Select { text-decoration:none;font-size:xx-small; }
+
+.CS_SF_Checkbox { font-size:xx-small;text-decoration:none; }
+
+.CS_SF_Button { font-size:xx-small;text-decoration:none; }
+
+.CS_SF_Image { text-decoration:none;border-style:none; }
+
+.CS_SF_Link { font-size:xx-small; }
+
+.CS_SF_AdvLink { font-size:xx-small; }
+
+.CS_SF_SubSiteLabel { font-weight:bold;font-size:xx-small;text-decoration:none; }
+
+.CS_SF_AdvImage { text-decoration:none;border-style:none; }
+
+.CS_SF_Form { padding:0;margin:0; }
+
+
+
+/* Search Results */
+
+.CS_SR_Results_Header { font-size:x-small;color:#808080; }
+
+.CS_SR_Category { font-weight:bold; }
+
+.CS_SR_PageNav { font-size:x-small;text-align:left; }
+
+.CS_SR_Prev { font-size:x-small; }
+
+.CS_SR_Next { font-size:x-small; }
+
+.CS_SR_Page { font-size:x-small; }
+
+.CS_SR_Item { font-size:x-small; }
+
+.CS_SR_Item_Alternate { color:#88FF00;text-decoration:none; }
+
+.CS_SR_Item_Title { font-size:x-small; }
+
+.CS_SR_Item_Description { font-size:x-small; }
+
+.CS_SR_Item_SubSite { font-size:x-small;text-decoration:none; }
+
+.CS_SR_Item_Author { font-size:x-small;text-decoration:none; }
+
+.CS_SR_Item_LastMod { font-size:x-small;text-decoration:none; }
+
+.CS_SR_Item_PubDate { font-size:x-small;text-decoration:none; }
+
+.CS_SR_Item_Score { font-size:x-small;text-decoration:none; }
+
+.CS_SR_Item_Owner { font-size:x-small;text-decoration:none; }
+
+.CS_SR_Item_BreadCrumbs { font-size:x-small;text-decoration:none; }
+
+
+
+/* Tab Bar */
+
+.CS_TBar_Item { color:#FFFFFF;font-size:x-small;text-decoration:none;font-weight:bold; }
+
+.CS_TBar_Item_Selected { color:#FFFFFF;font-size:x-small;text-decoration:none;font-weight:bold; }
+
+.CS_TBar_SpacingCell { background-color:#000000; }
+
+.CS_TBar_ItemCell { background-color:#000000; }
+
+.CS_TBar_ItemCell_Selected { font-size:x-small;text-decoration:none;font-weight:bold;text-align:center; }
+
+
+
+/* Tasks */
+
+
+
+/* Text Around Image */
+
+.CS_TAI_Caption { text-decoration:none;text-align:center;font-weight:bold; }
+
+.CS_TAI_Image { text-align:center;text-decoration:none; }
+
+
+
+/* Textblock, Simple Link */
+
+.CS_Textblock_Caption { text-decoration:none;text-align:left;font-weight:bold; }
+
+
+
+/* External Content (Web Process) */
+
+
+
+/* Any Formatted Textblock */
+
+.CS_RT_TABLE { padding:0;margin:0; }
+
+.CS_RT_TH { text-align:center;font-weight:bold; }
+
+.CS_RT_TD { text-align:left;vertical-align:top; }
+
+.CS_RT_UL { list-style-type:circle; }
+
+.CS_RT_OL { list-style-type:decimal; }
+
+.CS_RT_LI { list-style-position:outside; }
+
+.CS_RT_Image { text-decoration:none;border-style:none; }
+
+
+
+/* Forums element */
+
+
+
+/* Query by Example */
+
+.CS_QBE_Form { padding:0;margin:0; }
+
+.CS_QBE_Label { text-align:right;font-size:x-small;vertical-align:text-top; }
+
+.CS_QBE_Label_Baseline { text-align:right;font-size:x-small;vertical-align:baseline; }
+
+.CS_QBE_DropDown { align:bottom; }
+
+.CS_QBE_DropDown_Item { font-size:x-small; }
+
+.CS_QBE_Description { font-size:xx-small; }
+
+.CS_QBE_Button { text-align:center;font-size:x-small; }
+

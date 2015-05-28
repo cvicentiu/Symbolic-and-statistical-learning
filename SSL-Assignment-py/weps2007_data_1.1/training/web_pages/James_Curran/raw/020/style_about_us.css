@@ -1,0 +1,280 @@
+body {
+margin: 0; 
+padding: 0; 
+}
+
+a:link {
+	text-decoration:underline;
+	font-family: Verdana, Arial, Helvetica;
+	font-size:11px;
+	color:#38326A
+ }
+a:visited { 
+	text-decoration:underline;
+	font-family: Verdana, Arial, Helvetica;
+	font-size:11px;
+	color:#38326A
+}
+a:active { 
+	text-decoration:underline;
+	font-family: Verdana, Arial, Helvetica;
+	font-size:11px;
+	color:#38326A
+}
+a:hover { 
+	text-decoration:none;
+	font-family: Verdana, Arial, Helvetica;
+	font-size:11px;
+	color:#38326A
+}
+
+a.large:link {
+	text-decoration:underline;
+	font-family: Verdana, Arial, Helvetica;
+	font-size:12px;
+	color:#38326A
+ }
+a.large:visited { 
+	text-decoration:underline;
+	font-family: Verdana, Arial, Helvetica;
+	font-size:12px;
+	color:#38326A
+}
+a.large:active { 
+	text-decoration:underline;
+	font-family: Verdana, Arial, Helvetica;
+	font-size:12px;
+	color:#38326A
+}
+a.large:hover { 
+	text-decoration:none;
+	font-family: Verdana, Arial, Helvetica;
+	font-size:12px;
+	color:#38326A
+}
+
+a.leftNav:link {
+	text-decoration:none;
+	font-family: Arial, Verdana, Helvetica;
+	font-size:11px;
+	color:#38326A
+ }
+a.leftNav:visited { 
+	text-decoration:none;
+	font-family: Arial, Verdana, Helvetica;
+	font-size:11px;
+	color:#38326A
+}
+a.leftNav:active { 
+	text-decoration:none;
+	font-family: Arial, Verdana, Helvetica;
+	font-size:11px;
+	color:#38326A
+}
+a.leftNav:hover { 
+	text-decoration:underline;
+	font-family: Arial, Verdana, Helvetica;
+	font-size:11px;
+	color:#38326A
+}
+
+a.small:link {
+	text-decoration:none;
+	font-family: Arial, Verdana, Helvetica;
+	font-size:10px;
+	color:#38326A
+ }
+a.small:visited { 
+	text-decoration:none;
+	font-family: Arial, Verdana, Helvetica;
+	font-size:10px;
+	color:#38326A
+}
+a.small:active { 
+	text-decoration:none;
+	font-family: Arial, Verdana, Helvetica;
+	font-size:10px;
+	color:#38326A
+}
+a.small:hover { 
+	text-decoration:underline;
+	font-family: Arial, Verdana, Helvetica;
+	font-size:10px;
+	color:#38326A
+}
+
+a.light:link {
+	text-decoration:none;
+	font-family: Arial, Verdana, Helvetica;
+	font-size:11px;
+	color:#A8A3C4
+ }
+a.light:visited { 
+	text-decoration:none;
+	font-family: Arial, Verdana, Helvetica;
+	font-size:11px;
+	color:#A8A3C4
+}
+a.light:active { 
+	text-decoration:none;
+	font-family: Arial, Verdana, Helvetica;
+	font-size:11px;
+	color:#A8A3C4
+}
+a.light:hover { 
+	text-decoration:underline;
+	font-family: Arial, Verdana, Helvetica;
+	font-size:11px;
+	color:#A8A3C4
+}
+
+img {/* border style for all images */
+  border: 0;
+  }
+
+body { 
+	font-family: Verdana, Arial, Helvetica;
+	font-size:11px;
+	color:#333333;
+	background-color:#8982AF
+}
+td { 
+	font-family: Verdana, Arial, Helvetica;
+	font-size:11px;
+	color:#333333
+}
+b {
+	font-weight: 600;
+}
+OL{
+	text-indent: 0px;
+	margin-top : 2px;
+	margin-bottom : 2px;
+}
+UL {
+	list-style : url("../_images/g_bulletArrow_academics.gif");
+	text-indent: 0px;
+	margin-top : 2px;
+	margin-bottom : 0px;
+	/*font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-style : normal;
+	font-variant : normal;
+	font-weight : normal;
+	font-size : 12px;
+	color : #333333;*/
+	vertical-align : top;
+}
+UL.leftNav {
+	list-style: url("../_images/g_bulletArrow_trans.gif");
+	text-indent: 0px;
+	margin-top: 2px;
+	margin-bottom: 0px;
+	vertical-align: top;
+	//padding-left: 10px;
+}
+/*LI {
+	text-indent: 0px;
+	margin-left: 0px;
+	padding-left: 0px;
+	border-left-width: 0px;
+	border-width: 0;
+	padding: 0px;
+}*/
+.lightCopy { 
+	font-family: Arial, Verdana, Helvetica;
+	font-size:11px;
+	color:#A8A3C4;
+        background-color:#000000
+}
+
+.linkCopy { 
+	font-family: Verdana, Arial, Helvetica;
+	font-size:11px;
+	color:#38326A
+}
+
+.whiteCopy { 
+	font-family: Arial, Verdana, Helvetica;
+	font-size:10px;
+	color:#FFFFFF;
+        background-color:#000000
+}
+.subheader {
+	font-family: Verdana, Arial, Helvetica;
+	font-size:12px;
+	font-style : normal;
+	font-variant : normal;
+	font-weight : bold;
+	color:#A8A3C4
+}
+
+.pageTitle {
+        font-family: Verdana, Helvetica;
+        font-size:23px;
+        font-style : normal;
+        font-variant : normal;
+        font-weight : normal;
+        color:#8982AF
+}
+
+.pageSubTitle {
+        font-family: Verdana, Helvetica;
+        font-size:14px;
+        font-style : normal;
+        font-variant : normal;
+        font-weight : normal;
+        color:#8982AF
+}
+
+.pageSubTitle2 {
+        font-family: Verdana, Helvetica;
+        font-size:14px;
+        font-style : normal;
+        font-variant : normal;
+        font-weight : normal;
+        color:#8982AF
+}
+
+
+.dkGrayCopy { 
+	font-family: Arial, Verdana, Helvetica;
+	font-size:10px;
+	color:#333333
+}
+
+.mediumBkg { 
+	background-color:#A8A3C4
+}
+
+.darkBkg { 
+	background-color:#8982AF
+}
+
+.lightBkg { 
+	background-color:#C3C0D6
+}
+
+.lighterBkg { 
+	background-color:#E1DFEA
+}
+.red { /*use this to highlight development notes*/
+	color:#FF0000
+}
+
+.headBkg {
+     background-color:#000000
+}
+
+.content {
+     background-color:#FFFFFF
+}
+
+.imgRSPH {   
+     margin-right: 5px;
+     margin-left: 5px  
+}
+ 
+.imgEmory {
+     margin-right: 25px;
+     margin-left: 25px
+}       

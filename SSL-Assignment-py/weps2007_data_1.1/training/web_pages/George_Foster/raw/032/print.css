@@ -1,0 +1,457 @@
+/*
+ * $Header: /cvs_eng/DestinationSearch/client/dex/web/css/print.css,v 1.5.4.8 2007/01/08 18:01:22 jvinding Exp $
+ * dex DS print styles
+ */
+body {
+  font-size: 9pt;
+  font-family: helvetica,arial,sans-serif;
+}
+/* header */
+div#hdr {
+   margin-bottom: 16pt;
+   background: white;
+   color: black;
+}
+div#hdr div#searchBar,
+div#hdr img#hdrTabs {
+    display: none;
+}
+div#hdr div.hdrLinks, div#hdr #dexPageHdrAd {
+    display: none;
+}
+div#foot {
+    margin-left: 0;
+    margin-right: 100%;
+    white-space: nowrap;
+}
+#wwwHatContCont,
+#wwwHatCont,
+#www,
+#www div.clearer {
+  background:transparent;
+  margin: 0;
+  padding: 0;
+}
+#www {
+  line-height: 1.6em;
+  height: 1.6em;
+  border: 1pt solid black;
+}
+#www p.wwwTitle a {
+    text-decoration: none;
+    color: black;
+}
+
+th.cb,
+td.cb,
+a.login,
+#panMap,
+a.return,
+td.cbrow,
+div.debug,
+td.resNav,
+div.resNav,
+div.flyout,
+div#foot ul,
+div#sidebar,
+div#wwwInput,
+div#hdrLinks,
+tr.rtOPTIONS,
+div.hoopText,
+td.resLinks a,
+div#mapFooter,
+a#qiExpandAll,
+#mapSearchHat,
+mapSearchBoot,
+#detailsPrint,
+span.hoopArrow,
+div.pagination,
+#detailsAdHat,
+#detailsMapHat,
+#detailsAdBoot,
+a.mapDirections,
+#detailsMapBoot,
+div#mapControls,
+div#resultCtrls,
+a.addToMyPlaces,
+div#compareCtrls,
+div#mylistMapCont,
+div#www p.wwwLink,
+div.resCont input,
+#mylistTbl div.note a,
+#mylist td.editLoc a,
+div.resCont li.skip,
+div.resultDetails a,
+#compareTbl .colTop a,
+div#mylist td.busInfo p,
+#resPagination span.prev,
+#resPagination span.next,
+#searchResultsTbl td p.qi,
+div#mylist div.header img,
+#detailsMapCont #getDirsLink
+{
+    display: none;
+}
+
+/* results page section */
+
+#searchResultsTbl th p {
+    font-size: 120%;
+}
+#searchResultsTbl th {
+    color: black;
+    text-align: left;
+    background:white;
+}
+dl.addrBlock dd.phone {
+    font-weight: bold;
+    font-size: 120%;
+}
+#foot,
+#searchResultsTbl td,
+#mylistTbl dl.addrBlock,
+#searchResultsTbl dl.addrBlock,
+#resultSpace div.resultDetails
+{
+  color: black;
+}
+#foot {
+  text-align: left;
+}
+#searchResultsTbl td.resNum span.resultNumber {
+    color: black;
+    background: white;
+    text-align: center;
+    font-weight: bold;
+}
+#searchResultsTbl th.headHrs {
+    text-align: left;
+}
+/* turning off borders at print */
+#searchResultsTbl th,
+#searchResultsTbl th p,
+#searchResultsTbl th.headDist  {
+    border:none;
+}
+#searchResultsTbl thead {
+    border-bottom: 1pt solid black;
+}
+#searchResultsTbl tbody.resultBody {
+    border-bottom-width: 1pt;
+}
+#searchResultsTbl tr.quick td {
+    padding-bottom: 16pt;
+}
+#searchResultsTbl tr.quick td table td{
+    padding-bottom: 0;
+}
+#searchResultsTbl tr.firstRow td {
+    border-top: 1pt solid #000;
+    padding-top: .5em;
+}
+div.hoopCont { width: auto; }
+div.hoopCont div {
+    text-indent: 0;
+    overflow: visible;
+    height: auto;
+    width: auto;
+    float: none;
+}
+div.hoopCont p {
+    display: inline;
+    padding-right: .3em;
+}
+.hoopClosed,
+.hoopOpen {
+    background-image: none;
+}
+
+/* make the notes div visible  */
+#searchResultsTbl div.notes {
+     display: block;
+     border:.5pt solid #aaa;
+     height: 72pt;
+     margin-top: 1.5em;
+}
+#searchResultsTbl div.notes h4 {
+     line-height: 1em;
+     margin-top: -1.2em;
+     font-weight: normal;
+}
+
+/* map results page section */
+#mapSearch {
+    width: auto;
+    background: #fff;
+    border: none;
+    float: none;
+}
+#mapSearch h2{
+    font-weight: bold;
+    font-size: 120%;
+    float: none;
+    margin: 0px;
+}
+.bigMap {
+    border: 1pt solid black;
+}
+#mapImage {
+    float: left;
+}
+#mapImage div img { display: none; } /* pan controls */
+#mapImage div div img { display: block; } /* map tiles and pois */
+#bigMapCont {
+   padding: 0;
+   border: none;
+   margin: 0;
+   float: none;
+}
+#mapSearchResults {
+    width: 50%;
+    margin-left: 15px;
+    float: left;
+    font-size: .95em;
+    color: black;
+    border: none;
+}
+#mapSearchResults h2 {
+    float: none;
+    background: url(img/map_icon_blank.png) no-repeat 0px 3px;
+    font-weight: bold;
+    min-height: 23px;
+    font-size: 1.3em;
+    padding: 3px 0 0 30px;
+    text-transform: none;
+    color: black;
+}
+#mapSearchResults span.listPre {
+    color: #000;
+    float: left;
+    width: 1.5em;
+    height: 100%;
+}
+#mapSearchResults span.listEntry {
+    line-height: 1.3em;
+    float: left;
+}
+#mapSearchResults li {
+    border-bottom: .5pt solid #aaa;
+}
+#resPagination span.numRes { text-align: left;  }
+#resPagination span.numRes strong {font-weight: normal}
+
+/* My Dex page */
+#mylist #mapImage {
+    position: static;
+    float: none;
+    margin-bottom: 10px;
+}
+#mylist .list .calloutCont,
+#mylist .top,
+#mylist .bottom,
+.list h2 img {
+    display: none;
+}
+.list h2 {
+    clear: none;
+}
+#mylist .boxHdr h2 {
+    color: #000;
+}
+#mylist .boxHdr {
+    background: none;
+}
+#mylist .list .listContents {
+    height: auto;
+    overflow: visible;
+}
+#mylist .boxHdr h2 {
+    padding-left: 0;
+}
+#mylist #myrecent h3 {
+    text-align: left;
+    padding-left: 10px;
+}
+/* compare page */
+#resCont #compare h3 {
+    color: black;
+    background: white;
+    border: none;
+    font-weight: bold;
+    font-size: 140%;
+    line-height: normal;
+    padding: 0;
+    margin: 0 0 16pt;
+}
+#compareTbl { border: 1pt solid black; } /*  should be 1pt or 2pt */
+#compareTbl tr.rtLINK td a.busName {font-weight: bold;}
+#compareTbl a.busName {font-weight: bold; font-size: 120%;}
+#compareTbl th {
+    width: 5%;
+    font-weight: bold;
+    text-align: right;
+    padding-right: .25em;
+    background-color: white;
+    color: black;
+    vertical-align: top;
+    border: 1px solid #bed2d8;
+    border: none;
+    border-right: 1.5pt solid black; /*  should be 1pt or 2pt */
+}
+#compareTbl td {
+    background-color: white;
+    border: none;
+    width: 20%;
+    vertical-align: top;
+    padding-bottom: .25em;
+    padding-left: .25em;
+    border-left: .5pt solid #aaa; /*  should be .5pt or 2pt */
+}
+/* bottom of rows */
+#compareTbl th,
+#compareTbl td {
+   border-bottom: .5pt solid #aaa; /*  should be .5pt or 2pt */
+}
+#compareTbl div.hoopExtra {
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+    font-size: 100%;
+}
+#compareTbl span.day {
+    font-size: 100%;
+    font-weight: normal;
+}
+#compareTbl span.hrs {
+    font-size: 100%;
+}
+#compareTbl span.propTerm {
+    display: block;
+    color: black;
+}
+#compareTbl .colTop  {background: #fff;}
+/* make the notes div visible  */
+#compareTbl tr.rtLINK div.notes {
+     display: block;
+     border:.5pt solid #aaa;
+     height: 72pt;
+     margin-top: 1.5em;
+     margin-right: 5pt;
+}
+#compareTbl div.notes h4 {
+     line-height: 1em;
+     margin-top: -1.2em;
+     font-weight: normal;
+}
+
+/* directions page */
+#routeMap {
+    border: 1pt solid black;
+    width: 600px;
+    margin: 0 auto;
+    float: none;
+}
+#routeResults #routeResPanel table td {
+   border: .5pt solid #aaa;
+   padding-left: 2pt;
+}
+#routeResults h1,
+#routeResults #routeResPanel {
+    margin: 0 auto;
+    width: 90%;
+}
+#routeResults #routeResPanel table tr.addrs td,
+#routeResults #routeResPanel table tr.summary td {
+    background-color: white;
+    border: none;
+}
+#routeResults th {
+    color: black;
+    height: 2em;
+    border-bottom: 1pt solid black;
+    padding: 0;
+    text-align: left;
+}
+#routeResults th.number p {
+    margin-left: 0;
+    background: transparent;
+}
+#routeResults th p {
+    line-height: normal;
+    height: auto;
+    background: white;
+    border: none;
+}
+#routeResults  div.notes {clear: both; margin-top: 100px;}
+
+/* business details page */
+#detailsAdCont,
+#detailsMapCont {
+    padding: 0 10px 0 10px;
+    border: 1pt solid black;
+}
+div.detailsHoop div.hoopExtra {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 100%;
+}
+div.detailsHoop {
+    font-size: 100%;
+}
+#detailsCont #propList li {
+    color: black;
+}
+#detailsCont #propList h3 {font-size: 105%}
+#detailsInfo p {color: black;}
+#detailsInfo #phoneList {font-size: 125%;}
+#detailsInfo #phoneList p {font-weight: bold;}
+
+/* common sections */
+
+/* make the notes div visible  */
+div.notes {
+    display: block;
+    border:.5pt solid #aaa;
+    height: 72pt;
+    margin-top: 1.5em;
+}
+div.notes h4 {
+    line-height: 1em;
+    margin-top: -1.2em;
+    font-weight: normal;
+}
+#contentWrap { margin-left: 0; }
+#resultSpace { margin-left: 0; }
+
+/* make links black and non-underlined */
+#mylistTbl a,
+#compareTbl tr th a,
+#compareTbl tr td a,
+#searchResultsTbl a,
+#mapSearchResults div.resCont a
+{
+    text-decoration: none;
+    color: #000;
+}
+#mylist h3,
+#compareHdr h3,
+#resultSpace div.resultDetails {
+    font-size: 120%;
+    font-weight: bold;
+    margin: 0 0 2em 0;
+    text-align: center;
+}
+/* large ad print styles */
+#adContTbl td.hdr a,
+#adContTbl td.ctrls a,
+#adContTbl td.ctrls span.zoomBtns {
+    display: none;
+}
+#adContTbl,
+#adContTbl td {
+    border: 0;
+}
+
+#fastFacts dl.addrBlock {
+    display: block;
+}

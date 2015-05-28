@@ -1,0 +1,20 @@
+/* 	Copyright St.Jude Children's Research Hospital 
+	CSS Document  */
+	
+/* print stylesheet */
+
+body {	background: white;	font-size: 12pt !important;}
+a:link, a:visited {	color: #520;	background: transparent;	font-weight: bold;	text-decoration: underline;	}
+#contentWell a:link:after, #contentWell a:visited:after {   content: " (" attr(href) ") ";   font-size: 90%;   }
+h2 span, .heading{ font-size: 14pt;}
+h3 span, .subHeading{font-size: 13pt;}
+#topMenuContainer, #mainMenuContainer, #relatedTopicsContainer, #leftColumn, #searchBox, #breadCrumbs, #logo, #logo a {	display: none; }
+#container, #pageBody, #contentWell, table{	width: auto; margin: 0;	padding: 0; border: 0;	float: none !important;	color: black; 	background: transparent;	}
+#contentWell { margin: 0; padding: 0; margin-left: 5%;}
+html>body #contentWell{margin-top: 40px;}
+#footer {padding-top: 15px; margin-left: 20px;}
+#printIcon {display: none;}
+#popup{margin: 0;	margin-top: 70px; border: 0; float: none !important; background: transparent; color: black;}
+#popup ul {width: 625px; margin: 0; padding:0;}
+#popup li {padding: 5px 0;}
+#extra { position: absolute; top: 0; left:0; width: 546px; height: 63px; display: block; }

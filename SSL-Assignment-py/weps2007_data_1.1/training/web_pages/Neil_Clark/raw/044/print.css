@@ -1,0 +1,9 @@
+#container-inner {border: none !Important;}
+.topband, #breadcrumb, .box-a, .box-b, #footer { display: none}
+.content-main {margin: 0 !Important; border: 5px solid #d6d0af; float: left; width: 680px; padding: 5px}
+* html .content-main { width: 627px; } /* ie6- */
+*:first-child+html .content-main {width: 627px;}  /* ie7 */
+
+
+
+

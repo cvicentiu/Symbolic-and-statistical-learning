@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>Nav</title>
+<script language="JavaScript">
+<!--
+
+function newImage(arg) {
+	if (document.images) {
+		rslt = new Image();
+		rslt.src = arg;
+		return rslt;
+	}
+}
+
+function changeImages() {
+	if (document.images && (preloadFlag == true)) {
+		for (var i=0; i<changeImages.arguments.length; i+=2) {
+			document[changeImages.arguments[i]].src = changeImages.arguments[i+1];
+		}
+	}
+}
+
+var preloadFlag = false;
+function preloadImages() {
+	if (document.images) {
+		button_01_over = newImage("366/images/01b.jpg");
+		button_02_over = newImage("366/images/02b.jpg");
+		button_03_over = newImage("366/images/03b.jpg");
+		button_04_over = newImage("366/images/04b.jpg");
+		button_05_over = newImage("366/images/05b.jpg");
+		button_06_over = newImage("366/images/06b.jpg");
+		button_07_over = newImage("366/images/07b.jpg");
+		button_08_over = newImage("366/images/08b.jpg");
+		button_09_over = newImage("366/images/09b.jpg");
+		button_10_over = newImage("366/images/10b.jpg");
+		preloadFlag = true;
+	}
+}
+
+// -->
+</script>
+<link rel="stylesheet" href="master.css">
+<script language="JavaScript" src="user.js"></script>
+</head>
+<body  bgcolor=#FFFFFF background="back_nav.jpg" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0"><script language="JavaScript">preloadImages();</script>
+<table width="130" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign="top">
+      <table width="101" height="260" border="0" cellpadding="0" cellspacing="0" background="nav_back.jpg">
+        <tr>
+          <td valign="top">
+            <table width="101" border="0" cellpadding="0" cellspacing="0" background="spacer.gif">
+              <!-- Start buttons section -->							<tr>
+									<td height="26"><a href="http://pattiandmarkjohnson.com/home.html"
+									onMouseOver="changeImages('/home.html', '366/images/01b.jpg'); return true;"
+									onMouseOut="changeImages('/home.html', '366/images/01a.jpg'); return true;" target="_parent">
+									<img name="/home.html" src="01a.jpg" width="101" height="26" border="0"></a></td>
+							</tr>							<tr>
+									<td height="26"><a href="http://pattiandmarkjohnson.com/sculpture.html"
+									onMouseOver="changeImages('/sculpture.html', '366/images/02b.jpg'); return true;"
+									onMouseOut="changeImages('/sculpture.html', '366/images/02a.jpg'); return true;" target="_parent">
+									<img name="/sculpture.html" src="02a.jpg" width="101" height="26" border="0"></a></td>
+							</tr>							<tr>
+									<td height="26"><a href="http://pattiandmarkjohnson.com/glass.html"
+									onMouseOver="changeImages('/glass.html', '366/images/03b.jpg'); return true;"
+									onMouseOut="changeImages('/glass.html', '366/images/03a.jpg'); return true;" target="_parent">
+									<img name="/glass.html" src="03a.jpg" width="101" height="26" border="0"></a></td>
+							</tr>							<tr>
+									<td height="26"><a href="http://pattiandmarkjohnson.com/jewelry.html"
+									onMouseOver="changeImages('/jewelry.html', '366/images/04b.jpg'); return true;"
+									onMouseOut="changeImages('/jewelry.html', '366/images/04a.jpg'); return true;" target="_parent">
+									<img name="/jewelry.html" src="04a.jpg" width="101" height="26" border="0"></a></td>
+							</tr>							<tr>
+									<td height="26"><a href="http://pattiandmarkjohnson.com/aboutus.html"
+									onMouseOver="changeImages('/aboutus.html', '366/images/05b.jpg'); return true;"
+									onMouseOut="changeImages('/aboutus.html', '366/images/05a.jpg'); return true;" target="_parent">
+									<img name="/aboutus.html" src="05a.jpg" width="101" height="26" border="0"></a></td>
+							</tr>	<tr><td height="26"><img name="spacer" src="spacer.gif" width="101" height="26" border="0"></td></tr>	<tr><td height="26"><img name="spacer" src="spacer.gif" width="101" height="26" border="0"></td></tr>	<tr><td height="26"><img name="spacer" src="spacer.gif" width="101" height="26" border="0"></td></tr>	<tr><td height="26"><img name="spacer" src="spacer.gif" width="101" height="26" border="0"></td></tr>	<tr><td height="26"><img name="spacer" src="spacer.gif" width="101" height="26" border="0"></td></tr><!-- End buttons section -->
+            </table>
+          </td>
+        </tr>
+      </table></td>
+    <td> <img src="index_04.jpg" width="29" height="260"></td>
+  </tr>
+  <tr>
+    <td> <img src="index_18.jpg" width="101" height="135"></td>
+    <td> <img src="index_19.jpg" width="29" height="135"></td>
+  </tr>
+</table>
+<!-- Template Design by Network Solutions, LLC  -->
+</body>
+</html>

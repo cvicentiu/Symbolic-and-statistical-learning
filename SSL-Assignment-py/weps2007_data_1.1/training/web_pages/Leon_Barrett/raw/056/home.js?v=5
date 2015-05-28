@@ -1,0 +1,223 @@
+<!--
+
+function sportSwitch(showDay) {
+	var sportTitles = document.getElementById('SelectSport').getElementsByTagName('li');	
+	for (i=1; i<=sportTitles.length; i++) {
+		document.getElementById('Sport' + i).style.display = "none";
+		
+	}
+	// show day titles de-highlighted
+	for (i=0; i<sportTitles.length; i++) {
+		sportTitles[i].className = "";
+	}
+	
+	// show this day's races
+	if (showDay) {
+		document.getElementById('Sport' + showDay).style.display = "block";
+		document.getElementById('SelectSport' + showDay).className = "s";
+	}
+}
+
+
+function topMastResize() {
+var topMast = document.getElementById("topMast");
+if (topMast.innerHTML.length > 50) document.getElementById("topMastClear").style.height = "62px";
+}
+
+
+
+function getQueryVariable(variable) {
+var query = window.location.search.substring(1);
+var vars = query.split("&");
+for (var i=0;i<vars.length;i++) {
+	var pair = vars[i].split("=");
+		 if (pair[0] == variable) {
+	 return pair[1];
+}
+else {}
+	} 
+}
+
+
+
+/* ----------------set the flash badges and resize them--------------- */
+
+//function loadFlashBadges(){
+//var badgeCon=document.getElementById('badgeID')
+//flobSrc='http://images.skysports.com/images/swf/badges/badges0607.swf?v=1'
+//flobStr='<object type="application/x-shockwave-flash" data="'+flobSrc+'" height="24px" width="623px"><param name="wmode" value="opaque"><param name="movie" value="'+flobSrc+'"><param name="menu" value="false"><param name="FlashVars" value="leagueID='+getQueryVariable("cpid")+'"></object>'
+
+//badgeCon.innerHTML='<object type="application/x-shockwave-flash" data="'+flobSrc+'" height="24px" width="623px"><param name="wmode" value="opaque"><param name="movie" value="'+flobSrc+'"><param name="menu" value="false"><param name="FlashVars" value="leagueID='+getQueryVariable("cpid")+'"></object>'}
+
+/* ----------------set the flash badges and resize them--------------- */
+
+
+function setFlashHeight(height){
+
+if (is_ie){
+document.getElementById('badgeID').getElementsByTagName('object')[0].style.height=height+'px'}
+else{
+document.getElementById('badgeID').getElementsByTagName('embed')[0].style.height=height+'px'
+}
+}
+
+
+function formValidate(){
+	if(document.frmComment.sFName.value ==''){
+		alert('You must enter your First name.');
+		document.frmComment.sFName.focus();
+	return false;
+	}
+	
+	if(document.frmComment.sSName.value == ''){
+		alert('You must enter your Last name.');
+		document.frmComment.sSName.focus();
+	return false;
+	}
+	
+	if(document.frmComment.sTown.value == ''){
+		alert('You must enter your Town.');
+		document.frmComment.sTown.focus();
+	return false;
+	}
+	
+	return true;
+}
+
+function surfto(url) {
+
+if (url.charAt(0) != '0') {document.location.href = url};
+}
+
+
+getWidth = function() {
+  if (document.getElementById("rightArea")) {
+    var iWidth = document.body.clientWidth;
+    if (iWidth > 890)
+        {document.getElementById("rightArea").style.display = "block";}
+	  else
+       {document.getElementById("rightArea").style.display = "none";}
+  }
+}
+	 
+var agt=navigator.userAgent.toLowerCase();
+var is_ie     = ((agt.indexOf("msie") != -1) && (agt.indexOf("opera") == -1));
+var is_aol   = (agt.indexOf("aol") != -1);
+var is_nav  = ((agt.indexOf('mozilla')!=-1) && (agt.indexOf('spoofer')==-1) && (agt.indexOf('compatible') == -1) && (agt.indexOf('opera')==-1) && (agt.indexOf('webtv')==-1) && (agt.indexOf('hotjava')==-1) && (agt.indexOf('firefox')==-1));
+var is_ffx = (agt.indexOf("firefox") != -1);
+var is_saf = (agt.indexOf("safari") != -1) 
+var is_opera = (agt.indexOf("opera") != -1);
+
+var is_mac    = (agt.indexOf("mac")!=-1);
+var is_win   = ( (agt.indexOf("win")!=-1) || (agt.indexOf("16bit")!=-1) );
+
+ 
+ 
+function popUp(strURL,strType,strWidth,strHeight,winName) {
+	var strOptions="";
+	if (strType=="console") strOptions="resizable=no,scrollbars=no,toolbar=no,menubar=no,statusbar=0,statusbar=false,statusbar=no,height="+strHeight+",width="+strWidth;
+	if (strType=="fixed") strOptions="status,height="+strHeight+",width="+strWidth;
+	if (strType=="elastic") strOptions="toolbar,menubar,scrollbars,resizable,location,height="+strHeight+",width="+strWidth;
+	if (strType=="bars") strOptions="scrollbars,height="+strHeight+",width="+strWidth;
+	window.open(strURL, winName, strOptions);
+}
+
+function initPage() {
+	imgLinksShow();
+	//loadFlashBadges();
+	//topMastResize();
+	
+}
+
+function clearDefault(el) {
+	  if (el.defaultValue==el.value) el.value = ""
+	}
+
+function imgLinksShow() {
+	if (document.getElementById("articleRHS") && document.getElementById("articleRHS").getElementsByTagName("div").length == 0) {
+		document.getElementById("articleRHS").style.display = "none";
+	}
+}
+
+if (window.attachEvent) window.attachEvent("onresize", getWidth);
+window.onresize = getWidth;  
+
+function setActiveStyleSheet(title) {
+  var i, a, main;
+  for(i=0; (a = document.getElementsByTagName("link")[i]); i++) {
+    if(a.getAttribute("rel").indexOf("style") != -1 && a.getAttribute("title")) {
+      a.disabled = true;
+      if(a.getAttribute("title") == title) a.disabled = false;
+    }
+  }
+}
+
+function getActiveStyleSheet() {
+  var i, a;
+  for(i=0; (a = document.getElementsByTagName("link")[i]); i++) {
+    if(a.getAttribute("rel").indexOf("style") != -1 && a.getAttribute("title") && !a.disabled) return a.getAttribute("title");
+  }
+  return null;
+}
+
+function getPreferredStyleSheet() {
+  var i, a;
+  for(i=0; (a = document.getElementsByTagName("link")[i]); i++) {
+    if(a.getAttribute("rel").indexOf("style") != -1
+       && a.getAttribute("rel").indexOf("alt") == -1
+       && a.getAttribute("title")
+       ) return a.getAttribute("title");
+  }
+  return "Default";
+}
+
+function createCookie(name,value,days) {
+  if (days) {
+    var date = new Date();
+    date.setTime(date.getTime()+(days*24*60*60*1000));
+    var expires = "; expires="+date.toGMTString();
+  }
+  else expires = "";
+  document.cookie = name+"="+value+expires+"; path=/";
+}
+
+function readCookie(name) {
+  var nameEQ = name + "=";
+  var ca = document.cookie.split(';');
+  for(var i=0;i < ca.length;i++) {
+    var c = ca[i];
+    while (c.charAt(0)==' ') c = c.substring(1,c.length);
+    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+  }
+  if (name=="style") {
+    return "Default";
+  } else {
+    return null;
+  }
+  
+}
+
+
+window.onload = function(e) {
+ // var cookie = readCookie("style");
+  //var title = cookie ? cookie : getPreferredStyleSheet();
+  //setActiveStyleSheet(title);
+  initPage();
+}
+
+window.onunload = function(e) {
+  var title = getActiveStyleSheet();
+  createCookie("style", title, 365);
+}
+
+
+var cookie = readCookie("style");
+var title = cookie ? ( (""+cookie == "null") ? getPreferredStyleSheet() : cookie ) : getPreferredStyleSheet();
+setActiveStyleSheet(title);	 
+
+
+function MPUpop(theURL,winName,features) { //v2.0
+  window.open('http://home.skysports.com/livescores/cricket','cricket','width=760,height=545');
+}
+
+//-->

@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+		"http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html lang="en">
+<head>
+<title>Latest News</title>
+<style type="text/css">
+body { background: #000; color: #fff;}
+div#datacontainer { position:absolute; left:0; top:0; width:100%; padding-top: 100%; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; }
+div#datacontainer a { color: #fff; text-decoration: none; }
+</style>
+</head>
+<body onload='setTimeout("initialize()",10000);'>
+
+<div id="datacontainer" onMouseover="scrollspeed=0" onMouseout="scrollspeed=cache">
+<p><a href="http://sinnfein.ie/news/detail/18007" target="_top">Sinn F&eacute;in establish Ard Chomhairle sub committee to campaign for a yes vote on the constitutional referendum on children's rights...</a></p>
+<p><a href="http://sinnfein.ie/news/detail/18003" target="_top">Bairbre de Br&uacute;n MEP to launch Sinn F&eacute;in&rsquo;s North West Charter...</a></p>
+<p><a href="http://sinnfein.ie/news/detail/18004" target="_top">North West Action Plan On Poverty Needed...</a></p>
+<p><a href="http://sinnfein.ie/news/detail/18005" target="_top">&lsquo;Lets Make History&rsquo; - South Antrim - Lagan Valley...</a></p>
+</div>
+
+<script language="JavaScript1.2" type="text/javascript">
+
+//<iframe> script by Dynamicdrive.com
+//Modified by T to work with DOCTYPE
+
+//Specify speed of scroll. Larger=faster (ie: 5)
+var scrollspeed=cache=1
+
+function initialize(){
+//marqueeheight=document.all? parent.document.all.datamain.height : parent.document.getElementById("datamain").getAttribute("height")
+dataobj=document.all? document.all.datacontainer : document.getElementById("datacontainer")
+dataobj.style.top='5px'
+thelength=dataobj.offsetHeight
+scrolltest()
+}
+
+function scrolltest(){
+dataobj.style.top=(parseInt(dataobj.style.top)-scrollspeed)+'px'
+if (parseInt(dataobj.style.top)<thelength*(-1))
+dataobj.style.top='5px'
+setTimeout("scrolltest()",50)
+}
+
+//window.onload=initialize
+//window.onload=setTimeout("initialize()",3000);
+
+</script>
+</body>
+</html>

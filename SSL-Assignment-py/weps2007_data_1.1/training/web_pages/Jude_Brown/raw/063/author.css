@@ -1,0 +1,21 @@
+body, p, h1, table, tr, td {font-family:verdana,futura,arial,sans-serif}
+table {border-collapse:collapse;border-style:none;text-align:left}
+th {padding-left:1.5em}
+td {padding-left:1.5em}
+td.icev, td.icod {padding-left:2px;padding-right:0px;padding-top:0px;padding-bottom:0px}
+td.isbnev, td.isbnod {white-space:nowrap}
+img.lic {border-style:none;border-width:0px}
+tr.bookev {background-color:#EEEEEE;padding-top:1em;padding-bottom:1em}
+tr.bookod {background-color:#FFFFFF;padding-top:1em;padding-bottom:1em}
+.icde {background-image:url(/img/lang-de-28x13.gif);background-repeat:no-repeat;border-style:none;border-width=0px;width:28px;height:13px;margin:0px;padding:0px}
+.icen {background-image:url(/img/lang-en-28x13.gif);background-repeat:no-repeat;border-style:none;border-width=0px;width:28px;height:13px;margin:0px;padding:0px}
+p.possdiffpersen:before{content:"Note: This page was generated from database entries on the base of the author name; there is a possibility that the works listed here were created by different persons/entities of the same name."}
+p.possdiffpersde:before{content:"Hinweis: Diese Seite wurde datenbankbasiert erstellt; es kann nicht ausgeschlossen werden, daß diese Bücher von verschiedenen Autoren des gleichen Namens verfaßt wurden."}
+p.possdiffpersen, p.possdiffpersde {font-style:italic;font-size:0.9em}
+p.nextautarrow:before{content:"> "}
+p.othernamesen:before{content:"See also: "}
+p.othernamesde:before{content:"Siehe auch: "}
+p.pubnamessinen:before{content:"Author name found for publisher: "}
+p.pubnamessinde:before{content:"Name gefunden bei Verlag: "}
+p.pubnamesmulen:before{content:"Author name found for publishers: "}
+p.pubnamesmulde:before{content:"Name gefunden bei Verlagen: "}

@@ -1,0 +1,30 @@
+#robots.txt for http://www.cs.sfu.ca/CC/TAOfficeHours
+
+User-agent: *
+Disallow: /gallery/
+Disallow: /CC/Hypermail/
+Disallow: /CourseCentral/Hypermail/
+Disallow: /CC/tabooking/
+Disallow: /CourseCentral/tabooking/
+Disallow: /CC/adbooking/
+Disallow: /CourseCentral/adbooking/
+
+# this robot has hit us a couple of times, re-retrieves the same files
+# repeatedly, hits multiple times per second, etc etc... not welcome.
+
+User-agent: NetAnts
+Disallow: /
+
+# this also seems to be a stupid web site grabber, thousands of hits
+# on a single file, all of them 403 denied.
+
+User-agent: GetRight
+Disallow: /
+
+# tried to slurp adbooking March 2006
+
+User-agent: WorldIndexer
+Disallow: /
+
+User-agent: OmniExplorer_Bot
+Disallow: /

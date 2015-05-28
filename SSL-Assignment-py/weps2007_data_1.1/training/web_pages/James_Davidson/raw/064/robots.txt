@@ -1,0 +1,14 @@
+# exclude IBM Crawler
+User-agent: http://www.almaden.ibm.com/cs/crawler
+Disallow: /
+
+User-agent: TurnitinBot
+Disallow: /
+
+User-agent: Slurp
+Crawl-delay: 60
+
+User-agent: *
+Disallow: /print.php
+Disallow: /mail.php
+Crawl-delay: 15 

@@ -1,0 +1,151 @@
+var qString = location.search.substring(1), passedSP = "";
+if (qString.indexOf("sPage") > -1) {var passedSP = qString.split("&")[0].substring(6,qString.split("&")[0].length);}
+
+var d_domain = "http://ad.doubleclick.net/", d_path = (location.pathname).substr(1).split("/").join("_");
+d_path = (d_path.split(".")[0]);
+var d_position = "", d_tile = "1", d_nameValue = "";
+var d_rsci = segQS.replace(/&/g,";");
+var d_ist = "", adid = "", d_s1 = "",d_s2 = "", d_tripFunc1 = 0, d_tripFunc2 = 0;
+var subCalled = 0, tabClicked = false;
+
+
+var sponsorsbyids = [], subsponsorsbyids = [], colsponsorsbyids = [], posArray = [], sponArray = []; 
+sponsorsbyids[69]=["sponsor_sechead"];sponsorsbyids[5]=["sponsor_sechead"];sponsorsbyids[3]=["sponsor_sechead"];sponsorsbyids[4]=["sponsor_sechead"];subsponsorsbyids[168]=["sponsor_sechead"];subsponsorsbyids[224]=["sponsor_sechead"];subsponsorsbyids[310]=["sponsor_sechead"];subsponsorsbyids[370]=["sponsor_sechead"];subsponsorsbyids[358]=["sponsor_sechead"];colsponsorsbyids[66]=["col_header"];var sectnotchecked="true";
+
+function get_a(w,h,nv) {
+	var d_qs, d_ist = "";
+	if(d_tripFunc1 == 0){getDParams();}
+	if(d_tile == "1")d_ist = "dcopt=ist;";
+	d_ist += "comp="+adid+";";
+	d_url = d_domain+"adj"+"\/"+removeDots(d_sitezone)+";"+d_ist+d_nameValue+";s1="+d_s1+";s2="+d_s2+";pos="+nv+";url="+d_path+";fnc=ad;"+d_rsci+";sz="+w+"x"+h+";tile="+d_tile+";ord="+ranNum;		
+	if(d_tripFunc2 == 0) {checkDURL();}
+	d_url = d_url.replace(/ /g,'_').replace(/,/g,'_').toLowerCase();
+	d_url = d_url.split(";;").join(";");
+	document.write("<scr"+"ipt type=\"text\/javascript\" src=\""+d_url+"?\"><\/scr"+"ipt>");
+	d_tile++;
+	d_ist = "";
+}
+
+function getDParams(){
+	if (passedSP)d_sitezone = passedSP;
+	d_sitezone = unescape(d_sitezone).split(" ").join("");
+	zoneArray = new Array();
+	zoneArray = d_sitezone.split(".")[1].split("/");
+	if (zoneArray.length == 2) {
+		d_sitezone += "/";
+		d_s1 = zoneArray[1];
+	} else if (zoneArray.length == 3) {
+		d_s2 = zoneArray[2];
+	}		
+	d_tripFunc1 = 1;
+}
+
+function checkDURL(){
+	if(d_url.length >= 511){
+		 d_url = d_domain+"adj"+"\/"+d_sitezone+";"+d_ist+d_nameValue+";s1="+d_s1+";s2="+d_s2+";pos="+nv+";url="+d_path+";fnc=ad;sz="+w+"x"+h+";tile="+d_tile+";ord="+ranNum;
+		if (d_url.length >= 511) {
+			d_nameValue = d_nameValue.split(";kw=")[0];
+			 d_url = d_domain+d_typ+"\/"+d_sitezone+";"+d_ist+d_nameValue+";s1="+d_s1+";s2="+d_s2+";pos="+nv+";url="+d_path+";fnc=ad;sz="+w+"x"+h+";tile="+d_tile+";ord="+ranNum;
+		}
+	}
+	d_tripFunc2 = 1;
+}
+
+function removeDots(d_sitezone){
+	d_sitezone = d_sitezone.substring(d_sitezone.indexOf('.'));
+	d_sitezone = d_sitezone.replace(/\./g,"");
+	d_sitezone = "fnc."+d_sitezone;
+	return d_sitezone;
+}
+
+function loadSponsor(){  
+		
+			siteToolSponsored = "T";
+		  if(siteToolSponsored == "T" && pageType != ""){
+			if(document.getElementsByClassName('tools_container', '*').length){
+				sponsortools();
+			}		
+		}
+
+	 assignSponsor();
+	if(typeof(column_id) != "undefined"){assignColumnSponsor();}
+}
+function assignSponsor(){
+	 if(typeof(subsponsorsbyids[subsection_id]) != "undefined"){
+		return activateSponsor(subsponsorsbyids[subsection_id], subsection_id, 0);
+	}	
+	 if(typeof(sponsorsbyids[section_id]) != "undefined"){
+		return activateSponsor(sponsorsbyids[section_id], section_id, 0);
+	}
+}
+
+function assignColumnSponsor(){
+	if(typeof(colsponsorsbyids[column_id]) != "undefined"){
+
+		return activateSponsor(colsponsorsbyids[column_id], column_id, 0);
+	}	
+}
+
+function activateSponsor(d_sponsor, id, x) {
+
+	 if(typeof(subsection_id)=="undefined"){subsection_id="";}
+	var sponsortext = "", positionparam = "";
+	if(section_id == 69 && subsection_id==""){
+		 sponsortext = "<em>brought to you by</em>";	
+	} else if(section_id == 69 && subsection_id!=""){
+		 sponsortext = "<em></em>";		
+	} else{
+		 sponsortext = "<em>sponsored by</em>";
+	}
+	if (x==10) {return;}
+	if(d_sponsor!="col_header"){
+		positionparam = "title";
+	} else{
+		positionparam = "coltitle";	
+	}
+	if (document.getElementById(d_sponsor)) {
+		if(d_sponsor =="col_header"){
+			d_url = d_domain+"adi/"+d_sitezone+";pos="+positionparam+";sec="+section_id+";sub="+subsection_id+";col="+column_id+";url="+d_path+";fnc=ad;sz=88x31;ord="+ranNum;		
+		} else{
+			d_url = d_domain+"adi/"+d_sitezone+";pos="+positionparam+";sec="+section_id+";sub="+subsection_id+";url="+d_path+";fnc=ad;sz=88x31;ord="+ranNum;		
+		}
+		d_url = d_url.replace(/ /g,'_').replace(/,/g,'_').toLowerCase();
+		var objNew = document.createElement('iframe');
+		objNew.frameBorder="0";
+		objNew.scrolling="no";
+		objNew.setAttribute("name",d_sponsor + "Iframe");
+		objNew.setAttribute("id",d_sponsor + "Iframe");						
+		objNew.setAttribute("src", d_url + "?");
+		objNew.width = "88px";
+		objNew.height = "31px";
+		document.getElementById(d_sponsor).style.display = "inline";		
+		if(d_sponsor!="col_header"){
+			if (BrowserDetect.browser=='Explorer'&&BrowserDetect.OS=='Windows') {		
+				document.getElementById(d_sponsor).innerHTML = sponsortext;
+				document.getElementById(d_sponsor).appendChild(objNew);
+			} else {
+				setTimeout(function(){document.getElementById(d_sponsor).innerHTML = sponsortext;document.getElementById(d_sponsor).appendChild(objNew);}, 300);
+			}
+		} else{
+			var divNew = document.createElement('div');
+			divNew.setAttribute("id","sponsor_column");
+			document.getElementById(d_sponsor).appendChild(divNew);						
+			document.getElementById("sponsor_column").innerHTML = sponsortext;
+			document.getElementById("sponsor_column").appendChild(objNew);
+		}
+	} else {
+		setTimeout("activateSponsor('"+d_sponsor+"','"+id+"',"+(i+1)+")",500);
+	}
+}
+
+function sponsortools(){
+	var stoolcontent = '<p>Story tools<br/><em>sponsored by</em></p><iframe src="http://ad.doubleclick.net/adi/fnc.sitetools;pos=sitetools;fnc=ad;sz=88x31;ord='+ranNum+'?" marginwidth="0" marginheight="0" frameborder="0" height="31" scrolling="no" width="88"></iframe>';
+	var toolcontainer = document.getElementsByClassName('tools_container', '*');
+	var toolsdiv1 = document.createElement('div'), toolsdiv2 = document.createElement('div');	
+	toolsdiv1.className = "sponsor sponsor_tools";
+	toolsdiv2.className = "sponsor sponsor_tools";	
+	toolsdiv1.innerHTML = stoolcontent;
+	toolsdiv2.innerHTML = stoolcontent;
+	toolcontainer[0].appendChild(toolsdiv1);
+	toolcontainer[toolcontainer.length - 1].appendChild(toolsdiv2);
+}

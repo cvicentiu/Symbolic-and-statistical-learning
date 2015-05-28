@@ -1,0 +1,378 @@
+.hpColumns
+{
+	padding: 0px 8px 0px 0px;
+}
+
+.hpLastColumn
+{
+	padding:0px;
+}
+
+.componentFrame
+{
+	padding: 0px;
+	margin-bottom: 12px;
+	background-color: white;
+//	min-width:250;
+//	width:expression(document.body.clientWidth < 800 ? "250" : "100%" );
+}
+
+.componentEditBox
+{
+	margin: 0px;
+	padding: 3px;
+}
+
+.editForm
+{
+	margin: 0px;
+}
+
+.editOption
+{
+	padding: 2px;
+	font-size: 11px;
+	font-family: 'Tahoma',sans-serif;
+}
+
+#cTypeChildDivSettings td
+{
+	font-size: 10px;
+	font-family: 'Verdana','Arial','Helvetica',sans-serif;
+	white-space: nowrap;
+}
+
+#cTypeChildDivSettings select
+{
+	font-size: 10px;
+	font-family: 'Verdana','Arial','Helvetica',sans-serif;
+}
+
+#cTypeChildDivSettings .hrDiv
+{
+	border-top: 1px solid #888888;
+	height: 1px;
+	align: center;
+	width: 90%;
+	margin: 5px 0px 5px 0px;
+}
+
+.editOption .colorBox
+{
+font-size: 14px;
+}
+
+.editOption select
+{
+font-size: 11px;
+}
+
+.componentTop
+{
+	padding: 0px; 
+	white-space: nowrap;
+}
+
+.componentTitle
+{
+	color: #0053a0;
+	font-family: 'Tahoma',sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	max-width: 30em;
+	padding:3px;
+}
+
+.componentContent
+{
+	font-family: 'Tahoma',sans-serif;
+	font-size: 11px;
+	padding: 7px;
+}	
+
+.componentContent a
+{
+	color: #0053a0;
+	text-decoration: none;
+}
+
+.componentContent a:hover
+{
+	color: #0053a0;
+	text-decoration: underline;
+}
+
+.componentContent li
+{
+	list-style-image: url("/shared/images/mod_hp/rightarrow-gray.gif");
+}
+
+.hpEditButtons
+{
+	font-size: 10px;
+	white-space: nowrap;
+	font-family: 'Tahoma',sans-serif;
+}
+
+.hpEditButtons a
+{
+	color: #898989;
+	text-decoration: none;
+}
+
+.hpEditButtons a:hover
+{
+	color: #0053a0;
+	text-decoration: underline;
+}
+
+.personalizeYourHpBox p
+{
+	font-size: 11px;
+	font-family: 'Tahoma',sans-serif;
+}
+
+.personalizeYourHpBox
+{
+	background-color: #f3f3f3;
+	margin: 0px 8px 8px 8px;
+	padding: 0px;
+	color: #0053a0;
+}
+
+.personalizeYourHpBox h3
+{
+	font-size: 11px;
+	font-family: 'Tahoma',sans-serif;
+	margin:5px 0px 0px 0px;
+	text-align: center;
+}
+
+.personalizeYourHpBox hr
+{
+	color: #d4d4d4;
+	background-color: #d4d4d4;
+	height: 1px;
+	align: center;
+}
+
+.personalizeYourHpBox .expandLink
+{
+	padding:3px; 
+	margin:0px;
+	font-size: 11px;
+	font-family: 'Tahoma',sans-serif;
+}
+
+.personalizeYourHpBox a
+{
+	color: #0053a0;
+	text-decoration: none;
+	font-family: 'Tahoma',sans-serif;
+	font-size: 11px;	
+}
+
+.personalizeYourHpBox a:visited
+{
+	color: #0053a0;
+	text-decoration: none;
+}
+
+.personalizeYourHpBox a:hover
+{
+	color: #0053a0;
+	text-decoration: underline;
+}
+
+.myFeedsDeleteLink
+{
+	font-family: 'Tahoma',sans-serif;
+	font-size: 10px;
+	color: black;
+}
+	
+#personalFeedList
+{
+	margin: 0px;
+	padding: 0px;
+	list-style-position: outside;
+	font-size: 11px;
+	font-family: 'Tahoma',sans-serif;
+}
+
+#personalFeedList li
+{
+	margin: 0px 0px 0px 20px;
+	cursor: pointer;
+	color: #00479F;
+}
+
+.hpAddList
+{
+	margin: 0px;
+	padding: 0px;
+	list-style-position: outside;
+	font-size: 11px;
+	font-family: 'Tahoma',sans-serif;
+}
+
+.hpAddList li
+{
+	margin: 0px 0px 0px 20px;
+	cursor: pointer;
+	color: #00479F;
+}
+
+#rssAddForm
+{
+	border: 1px solid #898989;
+	background-color: #cce1ff;
+	text-align: center;
+	font-size: 11px;
+	color: #0053a0;
+	font-weight: bold;
+	font-family: 'Tahoma',sans-serif;
+	margin: 2px;
+	padding: 3px;
+}
+
+#rssAddForm form
+{
+	margin: 0px;
+	padding: 0px;
+	display: inline;
+}
+
+.rssAddForm input[type=text] {
+	font-weight:normal
+}
+
+.rssList
+{
+	margin: 0px;
+	padding: 0px;
+	list-style-position: outside;
+	list-style: disc;
+	font-size: 11px;
+	font-family: 'Tahoma',sans-serif;
+}
+
+.rssList li
+{
+	margin: 3px 0px 0px 20px;
+}
+
+.componentColumns {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.componentItem {
+	position: relative;
+	float: left;
+}
+
+.componentContent table.border, .componentContent table.outerborder, .componentContent table.rows, .componentContent table.columns
+{
+	border:1px solid #ccc;
+	border-collapse:collapse;
+}
+
+.componentContent table td, .componentContent table th
+{
+	font-size:10pt;
+	font-family: 'Tahoma',sans-serif;
+	color:black;
+}
+.componentContent table.border td, .componentContent table.outerborder td, .componentContent table.rows td, .componentContent table.columns td
+{
+	font-size:8.5pt
+}
+
+
+.componentContent table tr.titlerow td, .componentContent table tr.titlerow th
+{
+	background-color: #ddd;
+}
+
+.componentContent table tr.evenrow td, .componentContent table tr.evenrow th
+{
+	background-color: #eee;
+}
+.componentContent table tr.oddrow td, .componentContent table tr.oddrow th
+{
+	background-color: white;
+}
+.componentContent table.border th, .componentContent table.border td
+{
+	border:1px solid #ccc;
+}
+.componentContent table.rows th, .componentContent table.rows td
+{
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	border-left:none;
+	border-right:none;
+}
+.componentContent table.columns th, .componentContent table.columns td
+{
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+	border-top:none;
+	border-bottom:none;
+}
+
+.hphelpdiv
+{
+    word-wrap: break-word;
+    overflow: hidden;
+    z-index: 99;
+    padding: 5px;
+	margin: 0px 0px 0px 10px;
+	font-size: 10px;
+}
+
+.hp_wlsgal_button {
+	margin:10px 20px;
+	padding:10px;
+	text-align:center;
+	border:1px solid black;
+	background-color:#999;
+	color:white;
+	font-size:14px;
+	font-weight:bold;
+	vertical-align:middle;
+	cursor:hand; cursor:pointer;
+}
+
+.hp_wlsgal_button:hover {
+	background-color:#e0e0e0;
+	color:black;
+}
+
+.myFeedAddLink
+{
+	border: 0px;
+	cursor: pointer;
+	margin: 3px 4px 0px 18px;
+}
+
+.hpHorizCustomizeList
+{
+	cursor: pointer;
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	font-size: 11px;
+	font-family: 'Tahoma',sans-serif;
+	color: #3480BC;
+	width:150px;
+}
+
+.hpHorizCustomizeList li { padding: 2 2 2 10; font-size:11px; font-family:tahoma, sans-serif; }
+
+.hpHorizCustomizeList li:hover { color: white; background-color: #67A4D6; } 
+.hpHorizCustomizeList li.selected { color: white; background-color: #3480BC; }
+
+.hpCustBox { background:#ffffff; overflow: auto; border-left: 1px solid #3480BC; padding: 4px; font-size:11px; height:109px;}

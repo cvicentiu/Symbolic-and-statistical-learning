@@ -1,0 +1,27 @@
+/* 
+this file contains styles that are independent of the selected theme
+*/
+#calendarDiv {z-index:10001;position:absolute;visibility:hidden;background:#fff;}
+
+/* MOVE THESE */
+table#weekViewPopup { border: 2px outset #aaa; } 
+.weekViewDay {border:1px solid #ccc; border-right:0 !important; cursor:pointer;} /* borders around the td cells instead of calBoxOutline divs */
+.eventEntryWeekView { text-align:left; text-indent:-20px; padding:2px 0 2px 20px; -moz-border-radius:4px; } /* no width, causes divs to overlap */
+#weekViewHeader {  background-image: url(/theme/default/headerGradient.gif); padding: 4px;}
+/* END MOVE THESE */
+
+
+#weekViewPopup {top:0;left:0;width:98%;z-index:500;position:absolute;display:none;background:#fff; border: 2px outset #aaa;;}
+#weekViewTable {width:100%;table-layout:fixed;background:#fff;}
+#monthsOnWeekViewMsg {display:none; position:absolute; background-color:#fff; 
+	padding:20px; margin-top:25px; filter:alpha(opacity=80); -moz-opacity:.8;}
+
+#colorPickerPopup {padding: 10px; visibility:hidden; text-align: left; position:absolute; top:0; left:0; z-index:1030; background: #fff; border: 1px #aaa outset; width: 100px; }
+.colorPickerColor {width: 24px; height: 24px; border: 1px outset #aaa;}
+.colorInMenu {width: 12px; height: 12px; border: 1px outset #aaa;}
+
+.weightNormal {font-weight:normal;}
+
+/* some shade properties should not be set by themes*/
+div.veryDarkShade, div.darkShade, div.lightShade, div.upperDarkShade {cursor: pointer; display:none; position:absolute; left:0; top:0; margin:0;}
+div.index400 {z-index:400;}

@@ -1,0 +1,1877 @@
+/* old blue 
+/* Default Blue & Whte Theme */
+
+body {
+  margin: 0px;
+  padding: 0px;
+/*  width: 980px;  */
+}
+
+body, table, tr, td, th {
+  font-size: 9pt; 
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+p {
+  margin: 0 0 1em 0;
+}
+
+
+/* bbddff  changed to ==> C7D1E5 */
+
+.left { text-align: left; }
+.right { text-align: right; }
+.center { text-align: center; }
+.small { font-size: 90%; }
+.big { font-size: 110%; }
+.nowrap { white-space: nowrap; }
+
+/* we have 4 basic sets of fg/bg colors that are used through-out */
+
+/* set up default link behaviour */
+A:link  { color: black; }
+A:visited  { color: black; }
+A:hover  { color: #111111; }
+A:active  { color: #111111; }
+
+/* black on white */
+.color1 {
+  color: black;
+  background-color: white; 
+}
+.color1 > A:link  { color: black; }
+.color1 > A:visited  { color: black; }
+.color1 > A:hover  { color: #111111; }
+.color1 > A:active  { color: #111111; }
+.border1 { border: 1px solid #ffffff; }
+
+/* black on almost white */
+.color2 {
+  color: black;
+  background-color: #eeeeee; 
+}
+.color2 > A:link  { color: black; }
+.color2 > A:visited  { color: black; }
+.color2 > A:hover  { color: #111111; }
+.color2 > A:active  { color: #111111; }
+.border2 { border: 1px solid #eeeeee; }
+
+/* black on light blue-ish */
+.color3 {
+  color: black;
+  background-color: #C7D1E5; 
+}
+.color3 > A:link  { color: black; }
+.color3 > A:visited  { color: black; }
+.color3 > A:hover  { color: #111111; }
+.color3 > A:active  { color: #111111; }
+.border3 { border: 1px solid #C7D1E5; }
+
+/* silver on dark blue-ish */
+.color4 {
+  color: #dddddd;
+  background-color: #0F6BC0; 
+}
+.color4 > A:link  { color: #dddddd; }
+.color4 > A:visited  { color: #dddddd; }
+.color4 > A:hover  { color: white; }
+.color4 > A:active  { color: white; }
+.border4 { border: 1px solid #0F6BC0; }
+
+DIV.buttonPanel {
+  border: 1px solid #EEEEEE;
+  background-color: #F8F8F8;
+  padding: 0.5em 1em;
+  text-align: center;
+  margin: 1em 0em 0em 0em;
+}
+
+.noSelect {
+  -moz-user-select: none; 
+  -khtml-user-select: none;
+  user-select: none; 
+}
+
+UL {
+  margin: 1em 0 1em 0;
+  padding: 0px 0px 0px 40px;
+}
+
+h1 { font-size: 13pt; }
+h2 { font-size: 11pt; }
+h3 { font-size: 10pt; }
+h4 { font-size: 9pt; }
+
+div.platformGroupName {
+  text-align: center;
+  font-size: 13pt; 
+  font-weight: normal; 
+  margin-bottom: 1em;
+}
+
+h1.m5 { 
+  font-size: 13pt;
+  font-weight: normal;
+  text-align: center; 
+  border: 0;
+  background-color: inherit;
+  margin: 0px 0px 1.5em 0px;  /* was 2px top/bottom */
+  padding: 0px 0px 0px 0px;
+}
+
+h2.m5 {
+  font-size: 11pt;
+  font-weight: bold; /* was normal; */
+  text-align: left; 
+  border-bottom: 1px solid #ccc;
+/*  border-bottom: 2px solid #0A1C5B; */
+  color: #0A1C5B; /* #0C2065; */
+
+  margin: 0px 0px 1em 0px;
+  padding: 0px 2px 1px 0px;
+}
+
+h3.m5 {
+  font-size: 9pt; 
+  font-weight: normal;
+  text-align: left;
+  border-bottom: 1px solid #0A1C5B; /* #6699cc; */
+  margin: 1em 0px 0.5em 0px;  /* was 2px top/bottom */
+  padding: 0px 2px 0px 2px;
+}
+
+div.m5 {
+  margin: 1em 0px 0.5em 0px;  /* was 2px top/bottom */
+  border: 1px solid #031465;
+  padding: 0;
+}
+
+div.m5 h4 {
+  padding: 0.25em 0.5em;
+  margin: 0;
+  font-size: 10pt; 
+  font-weight: normal;
+  text-align: left;
+  border: 1px solid #dae1ef;
+  background-color: #C7D1E5;
+}
+
+blockquote {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  border: 0;
+}
+
+DIV.formContents {
+  border: 0;
+  padding: 0; 
+  margin: 0;
+}
+
+
+form {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+table.pct100
+{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+
+table.pct100 thead tr td
+{
+  padding: 0;
+  margin: 0;
+}
+
+/* if a table has empty cells, we still want the borders to show 
+   we also want to collapse all borders. */
+table {
+  border: 0; /* 4px solid yellow; */
+  border-collapse: separate;
+  border-spacing: 0px; /* not supperted by IE6, table needs cellspacing set = 0 */
+  empty-cells: show;
+}
+
+tfoot th {
+  font-weight: normal;
+}
+
+th, td { 
+  text-align: left;
+}
+
+
+.clearBoth {
+  clear: both;
+}
+
+
+DIV.mmhBorder
+{
+  margin: 0px 0px 1em 0px;
+  padding: 0px 0px 0px 0px;
+  border-top: 1px solid #043690;
+}
+
+SPAN.mmhIndent
+{
+  margin: 0px;
+  padding-left: 15px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+div.mmhSubHeading
+{ 
+  color: black;
+  font-size: 8pt;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 6px;
+  padding-right: 6px;
+  border-width: 0px;
+  border-style: none;
+}
+
+
+div.mmhBullet
+{
+  display: none; 
+}
+
+div.bulletMenu
+{
+  border-top: 1px solid #dae1ef;
+}
+
+div.bulletMenu A 
+{ 
+  display: block;
+  color: black;
+  font-size: 8pt;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 6px;
+  padding-right: 6px;
+  border-width: 0px;
+  border-style: none;
+  border-color: #C7D1E5;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+DIV.bulletMenu A:link,
+DIV.bulletMenu A:visited,
+DIV.bulletMenu A:active { color: black; }  
+DIV.bulletMenu A:hover 
+{
+  background-color: #0F6BC0;
+  color: #DDDDDD;
+  border-color: black;
+  border-width: 1px;
+  margin-right: 3px;
+  margin-left: 3px;
+  border-style: solid;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 2px;
+  padding-right: 2px; 
+  white-space: nowrap;
+/*  clear: both; */
+}
+
+div.mmhInactive
+{
+  color: #888;
+  border-color: #C7D1E5;
+  border-style: solid;
+  border-width: 1px;
+
+  font-size: 8pt;
+  padding-right: 3px;
+  padding-left: 6px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+div.mmhSelected A
+{
+  border: 1px solid #C7D1E5;
+  margin-right: 3px;
+  margin-left: 3px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+DIV.mmhHeading
+{
+  background-color: transparent;
+  color: black;
+  text-align: left;
+  font-weight: bold;
+  padding: 2px 2px 0px 2px;
+  margin-bottom: 0px;
+}
+
+DIV.mmhBody
+{
+  overflow: hidden;
+  padding: 0 0 0 1em;
+  margin: 0;
+}
+
+.dottedRule {
+  border-top: 1px dotted #ccc;
+  height: 0px;
+  overflow: hidden;
+  margin: 0.25em 0;
+  padding: 0;
+}
+
+hr {
+  height: 1px;
+
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 0px;
+  margin-left: 0px;
+
+  padding: 0px;
+
+  color: black;
+  border: 0px none;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: black;
+
+}
+
+.sb
+{
+border-width: 1px;
+border-style: solid;
+border-color: black;
+}
+
+div#coreGameInfo {
+  margin-top: 1em;
+}
+
+div#coreGameCover {
+  padding-right: 0.5em;
+}
+
+div#coreGameRelease {
+  min-height: 160px; 
+  padding: 3px 0.5em 0 0.5em; 
+  border-left: 1px dotted #ccc;
+}
+
+div#coreGameGenre {
+  min-height: 160px; 
+  padding: 3px 0.5em 0 0.5em; 
+  border-left: 1px dotted #ccc;
+}
+
+div#coreGameScore {
+  border-top: 1px dotted #ccc;
+  margin: 1em 0 0 0;
+  padding: 1em 0 0 0;
+}
+
+div#coreGameRank {
+  min-width: 240px;
+  min-height: 160px; 
+  padding-left: 0.5em; 
+  border-left: 1px dotted #ccc;
+}
+
+.sbL
+{
+border-width: 1px;
+border-left-style: solid;
+border-color: black;
+}
+
+.sbR
+{
+border-width: 1px;
+border-right-style: solid;
+border-color: black;
+}
+
+tr.sbT th,
+tr.sbT td,
+.sbT
+{
+border-width: 1px;
+border-top-style: solid;
+border-color: black;
+}
+
+tr.sbB th,
+tr.sbB td,
+.sbB
+{
+border-width: 1px;
+border-bottom-style: solid;
+border-color: black;
+}
+
+.offsetBG { background-color: #000000; }
+
+td.rightPanelAd {
+  border: 0px;
+  vertical-align: top;
+}
+
+div.rightPanelHeader {
+  text-align: left;
+  padding-bottom: 1em;
+}
+
+div.rightPanelFooter {
+  text-align: left;
+  border-top: 1px dotted #ccc;
+  padding: 1em 1em 0.5em 1em;
+  margin: 0;
+} 
+
+div.rightPanelBody {
+ margin: auto;
+}
+
+div.leftPanel {
+  width: 145px;
+  max-width: 145px;
+  min-width: 145px;
+  overflow: hidden;
+  background-image: url(/images/s/1/lp-t.gif);
+  background-position: top right;
+  background-repeat: no-repeat;
+  /* background-size: 100% 100%; */
+  padding: 20px 1px 0 0; /* 1px for vertical border in td.leftPanel */
+}
+
+td.leftPanel {
+  text-align: left;
+  color: black;
+  background-color: #C7D1E5; 
+  padding: 0;
+  margin: 0;
+  vertical-align: top; 
+  background-image: url(/images/s/1/vb.png);
+  background-position: top right;
+  background-repeat: repeat-y; 
+} 
+
+td.rightPanel {
+  width: 100%;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+  background-image: url(/images/s/1/rp-tb.png);
+  background-position: top left;
+  background-repeat: repeat-x; 
+}
+
+div.rightPanel {
+  background-image: url(/images/s/1/rp-tl.gif);
+  background-position: top left;
+  background-repeat: no-repeat;
+
+  text-align: left;
+  padding: 1em 1em 2em 1em;
+  margin: 0;
+  border: 0;
+} 
+
+div.rightPanelMain {
+  padding-top: 1em;
+}
+
+div.rightPanelSide {
+  padding-top: 1em;
+  padding-left: 1em;
+}
+
+
+td.rightSideBar {
+/*  border-top: 1px solid black; */
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+}
+
+div.rightSideBar {
+  text-align: left;
+  margin: 1em 1em 0em 0em;
+  padding: 0;
+  border: 0;
+} 
+
+
+
+DIV.docContents {
+  max-width: 165em; /* 110em =~ 2250px on most systems at default font size/dpi  <= IE6 ignores max-width */
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+IMG#mobylogo { 
+  border: 0px;
+  padding: 0px;
+  margin: 0px 3px 0px 3px;
+}
+
+div.topPanelNavLinks {
+  margin: 0;
+  border: 0; /* 1px solid black; */
+  height: 28px;
+  padding: 0;
+/*  padding: 6px 3px 0px 0px; */
+  background-color: transparent;
+  text-align: right;
+  clear: both;
+  overflow: hidden;
+  font-size: 8pt;
+  color: black;
+}
+
+div.topPanelNavLinks p {
+  margin: 0;
+  padding: 0;
+  line-height: 28px;
+}
+
+/* #if _IE5_ _IE55_
+div.topPanelNavLinks { height: 30px; }
+   #end */
+
+div.topPanelNavLinks A { font-size: 8pt; text-decoration: none }
+div.topPanelNavLinks A:hover,
+div.topPanelNavLinks A:active { color: #111; text-decoration: underline; }
+
+div.topPanel {
+  border: 0px;
+  overflow:hidden;
+  height:90px;
+  background-image: url(/images/s/1/tp.gif);
+  background-position: bottom left;
+  background-repeat: repeat-x; 
+  background-color: #C7D1E5;
+  padding: 0px;
+  margin: 0px;
+}
+
+div.topPanelAcctLinks {
+  padding: 0px 0px 3px 0px; 
+  margin: 0px 0px 5px 0px; 
+  border-bottom: 2px solid #1E73c1;
+}
+
+TD.topPanelMiddle { 
+  vertical-align: top; 
+}
+DIV.topPanelAcct * A:link { color: silver; }
+DIV.topPanelAcct * A:visited { color: silver; }
+DIV.topPanelAcct * A:hover { color: white; }
+DIV.topPanelAcct * A:active { color: white; }
+DIV.topPanelAcct {
+  width: 23em;
+  height: 55px; 
+  background-color: transparent;
+  vertical-align: middle;
+  text-align: left;
+
+  color: silver;
+  border: 0px;
+  float: right;
+  padding: 5px 3px 0px 0px;
+  margin: 0;
+
+  overflow: hidden; 
+}
+
+
+td.topPanelLeft {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+div.topPanelLeft {
+  width: 225px;
+  height: 90px;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background-image: url(/images/s/1/tpl.gif);
+  background-position: bottom right;
+  background-repeat: repeat-x;
+}
+
+div.topPanelLogo {
+  padding: 20px 0px 0px 5px;
+  margin: 0;
+}
+
+TD.topPanelRight IMG {
+  vertical-align: bottom;
+  border: 1px solid white; 
+  margin: 2px 0px;
+  padding: 0; 
+}
+
+TD.topPanelRight A {
+  border: 0;
+  margin: 0; 
+  padding: 0; 
+  overflow: hidden;
+  font-size: 9px; 
+  text-decoration: none; 
+  color: silver; 
+}
+
+TD.topPanelRight A:link { color: black; }
+TD.topPanelRight A:visited { color: black; }
+TD.topPanelRight A:hover { color: silver; }
+TD.topPanelRight A:active { color: silver; }
+
+TD.topPanelRight {
+  padding-right:5px;
+  padding-bottom:0px;
+  padding-top:5px;
+  padding-left:5px;
+  margin: 0px;
+  border: 0px;
+  text-align: center;
+  border-color: black;
+  color: white;
+}
+
+DIV.break
+{
+  height: 0px;
+  overflow: hidden;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  border: 0; 
+  clear: both;
+}
+
+TD.topPanelLogo {
+  border: 0px;
+  padding: 1px 0px 0px 10px;
+  margin: 0px;
+/*  background-color: #0F6BC0;  */
+}
+
+DIV.bottomPanel {
+  border-color: black;
+  border-width: 1px;
+  border-top-style: solid;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 8pt;
+}
+
+.windowTitleBG { 
+  background-color: #0F6BC0; 
+}
+
+.windowTitle {
+  color: #DDDDDD;
+  font-size: 8pt;
+  font-weight: bold;
+}
+
+.sectionSeparator {
+  font-weight: bold;
+  border-bottom: 1px solid #6ED567;
+}
+
+.curveUpperRight {
+  background:url("/images/s/1/ul.gif") no-repeat left top;
+  border: 0px;
+  border-right: 2px solid #6ED567; 
+  white-space: nowrap;
+
+  padding-right: 1em;
+  padding-left: 3em;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  background-color: #C7D1E5; 
+}
+
+.curveUpperLeft {
+  background:url("/images/s/1/ur.gif") no-repeat right top;
+  border: 0px;
+  border-left: 2px solid #6ED567;
+  white-space: nowrap;
+
+  padding-right: 3em;
+  padding-left: 1em;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  background-color: #C7D1E5; 
+}
+
+.windowContents { text-align: left; }
+
+DIV.boxAd {
+  width: 310px;
+  border: 0px;
+  background-color: white;
+  float:right;
+  clear:both;
+  padding: 12px 5px 5px 5px;
+  margin: 5px 0px 0px 2em;
+  font-size: 8pt;
+  margin-bottom: 1em;
+}
+
+/* at default settings and 8 points theres are about 200 and 250 */
+.width125 { max-width: 12em; min-width: 12em; width: 12em; }
+.width200 { max-width: 18em; min-width: 18em; width: 18em; }
+.width250 { max-width: 23em; min-width: 23em; width: 23em; }
+.width325 { max-width: 310px; min-width: 310px; width: 310px; }
+
+
+/* 18em @ 8pt is about = 195 on IE6, Safari and Firefox which is right about 
+   what we want.  This assumes the default windows DPI.  A higher dpi would 
+   would be about 242
+  
+    <div sidebar><div sidebartitle></div><div sidebarcontent></div></div>
+
+   FYI: don't float inside here, do that outsize.  
+*/
+DIV.sideBar {
+  overflow: hidden;
+/*  border: 1px solid #0F6BC0; */
+  padding: 0px;
+  margin: 0 0 1em 0;
+  font-size: 8pt;
+}
+
+div.links {
+  padding-top: 0.5em;
+  font-size: 8pt;
+}
+
+div.sideBarLinks {
+  text-align: right;
+  padding-top: 0.5em;
+  font-size: 8pt;
+}
+
+DIV.sideBarContent {
+  text-align: left;
+  padding: 5px;
+  border: 1px solid #12348f;
+}
+
+.sideBarContent ul {
+  margin: 0;
+  padding: 5px 0 5px 20px;
+  list-style-type: square;
+}
+
+div.sideBarTitle {
+  background-image: url(/images/s/1/sbt.gif);
+  background-position: top right;
+  background-repeat: no-repeat;
+/*  background-color: #002164; */
+  margin: 0;
+  padding: 0 10px 0 0;  /* 10px right allows right curved corner to show up */
+}
+
+div.sideBarTitle h2 {
+  background-image: url(/images/s/1/sbt.gif);
+  background-position: top left;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 125%;
+  margin: 0;
+  padding: 0;
+}
+
+.googleBuyBoxAd {
+  height: 70px;
+  margin-left: 0px;
+  margin-right: 10px;
+  border: 1px solid #0F6BC0;
+  padding: 0px;
+}
+
+DIV.googleRightSideAd {
+  padding: 0px;
+  margin: 2px;
+  border: 0px;
+}
+
+.windowPadding { padding: 4px; }
+
+/* alternating colors for message board */
+.mb1 { background-color: #dddddd; }
+.mb2 { background-color: #eeeeee; }
+.mb3 { color: #000000; }
+
+table.reviewList {
+  border-collapse: collapse;
+}
+
+table.reviewList tbody {
+  border: 1px solid #c2c2c2;
+}
+
+table.reviewList td {
+  border: 1px solid #c2c2c2;
+  padding-left: 2px;
+}
+
+table.reviewList tfoot td {
+  border: 0;
+  padding-left: 2px;
+}
+
+
+DIV.thumbnailContainer {
+  margin: 0;
+  width: 100%;
+  border: 0;
+  padding: 0;
+}
+
+DIV.thumbnailContainer DIV {
+  float: left;
+  overflow: hidden;
+  border: 0;
+  margin: 0.5em 2em 0.5em 0em;
+  padding: 0;  /* even when you set, won't render in IE5/EI5.5, so use margin if you can */
+}
+
+/* this one contains the actual image */
+DIV.thumbnailContainer DIV DIV {
+  border: 0;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  float: none;
+}
+
+/* this one is the image */
+/* w3 approved: http://www.w3.org/Style/Examples/007/center.html */
+DIV.thumbnailContainer DIV IMG {
+  display: block;
+  padding: 0;
+  margin: 0 auto;
+}
+
+/* this one is the image caption */
+DIV.thumbnailContainer DIV P {
+    padding: 1px 2px 1px 2px;
+    margin: 1px 0px 1px 0px;
+    border: 0;
+    font-size: 90%;
+    overflow: hidden;
+    text-align: left;
+}
+
+DIV.lc90 {
+  width: 90%;
+  padding: 0 5% 0 5%;
+  margin: 0;
+}
+
+
+.coverHeading {
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-color: #6699cc;
+  border-style: solid;
+  border-width: 1px;
+  background-color: #ffffff;
+}
+
+div.browseTableList {
+  overflow: auto;
+  height: 30em; 
+  padding: 2px;
+  margin: 0px 0px 0px 1em;
+  border-color: #6699cc;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.browseTableList UL {
+  margin-top: 0px;
+  margin-left: 1.5em; /* ok safari1.1, ie6, opera7.23, mozilla 1.6 */
+  margin-bottom: 0px;
+  padding: 0px;
+  list-style-type: disc;
+}
+
+.browseTableList LI {
+  padding-top: 0px;
+  padding-bottom: 1px;
+  padding-right: 3px;
+  padding-left: 3px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.browseTableList A {
+  color: black;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.browseTableList A:hover, 
+.browseTableList A:active {
+  color: darkblue;
+  text-decoration: underline;
+}
+
+.browseTable {
+/*  font-size: 9pt; */
+  padding-left: 1em;
+  padding-right: 0;
+}
+
+.browseTable A {
+  color: black;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.browseTable A:link, .browseTable A:visited {
+  color: black;
+}
+
+.browseTable A:hover, .browseTable A:active {
+  color: darkblue;
+  text-decoration: underline;
+}
+
+TD.creditPanel {
+  width: 125px;
+  border-width: 0px 0px 0px 1px;
+  text-align: center;
+  padding: 5px;
+  border-left-style: solid;
+  border-color: black;
+}
+
+DIV.moBrowse {
+  width: 100%;  
+  background-color: white;
+  border: 1px solid #0F6BC0;
+  padding: 0px;
+  margin: 0px;
+}
+
+DIV.mobList {
+/*  overflow: auto;
+  height: 25em;   */
+  border: 0px none;
+  margin: 0px;
+  padding: 0px;
+} 
+
+div.molistGroupHeading {
+  color: black;
+  font-size: 12pt;
+  font-weight: bold;
+  margin: 0px 0px 0px 0px;
+  padding-top: 6px;
+  padding-bottom: 1px;
+  border-bottom: 2px solid black;
+}
+
+span.molistGroupComment {
+  font-size: 9pt;
+  font-weight: normal;
+}
+
+div.molist table {
+  width: 100%; 
+  border-width: 0px;
+  border-style: none;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+div.molist table tr:hover {
+  background-color: #dddddd;
+}
+
+div.mobFooter {
+  color: black;
+  font-size: 90%;
+  background-color: #C7D1E5; 
+  font-weight: normal; 
+/*  background-color: #0F6BC0;   */
+  border-top: 1px solid #0F6BC0;
+  border-bottom: 0px none;
+  border-left: 0px none;
+  border-right: 0px none; 
+  margin: 0px;
+  padding: 3px 0.5em 3px 0.5em;
+}
+
+div.mobIndexHeader {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+div.mobIndexHeader span {
+  font-size: 8pt;
+  padding: 2px 10px 0px 0px; 
+  float: left;
+  white-space: nowrap;
+}
+
+ul.mobIndexItem {
+  margin: 0px;
+  padding: 0px;
+  display: inline;
+  list-style:none;
+}
+
+ul.mobIndexItem * a {
+  padding: 1px 3px; 
+  font-size: 8pt;
+  margin: 0px;
+  display: block;
+}
+
+ul.mobIndexItem * a:link, ul.mobIndexItem * a:visited {
+  border: 1px solid #0F6BC0; 
+  text-decoration: none; 
+}
+
+ul.mobIndexItem * a:hover,
+ul.mobIndexItem * a:active {
+  background-color: #FFC;
+  text-decoration: underline;
+  border: 1px solid black;
+}
+
+/* the current link is white background */
+ul.mobIndexItem * a:link.current, ul.mobIndexItem * a:visited.current { 
+  background-color: #fff;
+}
+
+ul.mobIndexItem li {
+  border: none;
+  padding: 1px 2px;
+  float: left; 
+  white-space: nowrap;
+  display: inline; 
+}
+
+.mobFooter SPAN {
+  padding: 0px;
+  margin: 0px;
+}
+
+.mobFooter A { 
+  text-decoration: none; 
+}
+
+.mobFooter A:visited, 
+.mobFooter A:link { 
+  color: black; 
+}
+
+.mobFooter A:active, .mobFooter A:hover { 
+  text-decoration: underline;
+  color: darkblue;
+}
+
+
+TABLE.molist TBODY TR TD {
+  margin: 0px 0px 0px 0px;
+  padding: 0in 0.5em 0in 0.5em;
+  border-top: 0px none;
+  border-bottom: 1px solid #dddddd;
+  border-left: 0px none; 
+  border-right: 0px none;
+}
+
+DIV.mobTitle {
+  margin: 0px 0px 0px 0px;
+  padding: 0.2em 0.5em 0.2em 0.5em; 
+  color: black;
+  color: black;
+  background-color: #C7D1E5;
+  font-weight: normal; 
+  text-align: center; 
+  font-size: 110%;
+
+  border-right: 0px none;
+  border-left: 0px none;
+  border-top: 0px none;
+  border-bottom: 1px solid black;
+}
+
+DIV.mobHeader {
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  color: black;
+  background-color: #C7D1E5;
+  font-weight: normal; 
+
+  border-right: 0px none;
+  border-left: 0px none;
+  border-top: 0px none;
+  border-bottom: 0px none;
+}
+
+/* define links list */
+DIV.mobHeader TABLE {
+  margin: 0px;
+  padding: 0px;
+  background-color: #C7D1E5;
+  width: 100%;
+  border: 0px none;
+}
+
+
+DIV.mobHeader TABLE TR TD{
+  color: black;
+  padding: 0.2em 0.5em 0.2em 0.5em;  
+}
+
+TD.mobHeaderPage {
+  text-align: left;
+}
+
+TD.mobHeaderItems {
+  text-align: center;
+}
+
+TD.mobHeaderNav {
+  text-align: right;
+}
+
+.mobHeader A, 
+TABLE.molist * A { 
+  text-decoration: none; 
+}
+
+.mobHeader A:visited, 
+.mobHeader A:link, 
+TABLE.molist * A:visited,
+TABLE.molist * A:link {
+  color: black; 
+}
+
+.mobHeader A:hover, 
+.mobHeader A:active, 
+TABLE.molist * A:hover,
+TABLE.molist * A:active { 
+  text-decoration: underline; 
+  color: darkblue; 
+}
+
+
+/* define links in the header row */
+TABLE.molist THEAD * A:visited { color: #dddddd; }
+TABLE.molist THEAD * A:link { color: #dddddd; }
+TABLE.molist THEAD * A:hover { color: white; }
+TABLE.molist THEAD * A:active { color: white; }
+
+
+/* define the header row */
+TABLE.molist THEAD TR TD {
+  padding: 0in 0.5em 0in 0.5em;
+  margin: 0px 0px 0px 0px;
+  background-color: #0F6BC0; 
+  border-top: 1px solid black;
+  color: #DDDDDD;
+  white-space: nowrap;
+  font-weight: bold; 
+}
+
+
+img.aSheetLI {
+  border: 0px;
+  margin: 0px 10px 2px 0px;
+}
+
+.aSheetPM {
+  border-left: 1px dotted #ccc;
+  padding: 0px 0px 1em 1em;
+  margin: 0;
+}
+
+
+.aSheetAD {
+  border: 0px none;
+  padding: 0px 1em 1em 0px;
+  margin: 0;
+}
+
+
+DIV.mofSimpleError
+{
+  background-image: url(/images/warning.gif);
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  background-color: #FFCC00; 
+
+  min-height: 50px;
+  padding-left: 50px;
+  padding-right: 10px;
+  padding-top: 0.5em;
+  padding-bottom: 0.25em;
+
+  margin: 0px 0px 0px 0px;
+  border: 3px solid #DDAA00;
+
+  text-align: left;
+  color: #000000;
+}
+
+DIV.mofSimpleError *
+{
+  color: black;
+}
+
+.PADDED { 
+  padding: 4px 
+}
+
+.smallFont { 
+  font-size: 8pt; 
+  font-weight: normal; 
+}
+
+.bigFont {
+  font-size: 13pt; 
+  font-weight: normal; 
+}
+
+SPAN.darksep {
+  color: black;
+  font-size: 100%; 
+  font-weight: normal; 
+}
+
+DIV.bigTitle {
+  font-size: 13pt; 
+  font-weight: normal; 
+  text-align: center;
+}
+
+#qsearchButton {
+  vertical-align: middle;
+  margin: 0;
+  padding: 0px 0px 3px 4px;
+}
+
+#qsearch {
+  margin: 0;
+  padding: 0;
+  font-family: arial, sans-serif; 
+  font-size: 8pt; 
+/*  width: 12em; */
+  width: 125px;
+  font-weight: normal; 
+  color: #999;
+}
+
+#qsearch:focus {
+  color: #000;
+}
+
+
+.redRow {
+  background-color: red;
+  color: black;
+}
+
+.greenRow {
+  background-color: green;
+  color: black;
+}
+
+/*textarea, input {
+  background-color: blue;
+  color: red;
+} */
+
+.FormLt3 { 
+  margin: 0;
+  padding: 0;
+  font-family: arial, sans-serif; 
+  font-size: 10pt; 
+  font-weight: normal; 
+}
+
+.FormLt2 { 
+  font-family: arial, sans-serif; 
+  font-size: 11px; 
+  font-weight: normal; 
+}
+
+.FormLt1 { 
+  font-family: arial, sans-serif; 
+  font-size: 11px; 
+  font-weight: normal; 
+}
+
+UL.wipReminders {
+  list-style:none;
+}
+
+
+/* screen name class */
+SPAN.sn {
+  font-size: 8pt; 
+  font-weight: normal; 
+  white-space: nowrap; 
+}
+
+SPAN.sn A {
+  font-size: 8pt; 
+  font-weight: normal; 
+}
+
+UL.nobr {
+  margin: 0px;
+  padding: 0px;
+  border-style: none;
+}
+  
+UL.nobr LI {
+  white-space: nowrap;
+  display: inline;
+}
+  
+.techinfo A {
+  white-space: nowrap;
+}
+
+TABLE.techInfo {
+  margin: 0px;
+  width: 500px; 
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+}
+
+TABLE.techInfo TD {
+  padding-left: 1em;
+  padding-right: 1em;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+}
+
+TABLE.techInfo TR {
+  vertical-align: top;
+}
+
+TABLE.techInfo THEAD TR TD {
+  background-color: black;
+  text-align: center;
+  font-weight: bold;
+  font-size: 110%;
+  color: white;
+}
+
+TABLE.techInfoChild {
+  margin: 0.5em 0 0 0;
+  padding: 0 0 0 0;
+  border: 0;
+  background-color: white;
+  color: black;
+}
+
+TABLE.techInfoChild TD {
+  padding: 0px 1em 0px 0px;
+  margin: 0px 0px 0px 0px;
+  border: 0;
+  font-size: 90%;
+  background-color: white;
+  color: black;
+}
+
+TABLE.techInfoChild TR {
+  vertical-align: top;
+}
+
+
+DIV.gameSheetScoreName {
+  margin-bottom:0px; 
+  margin-top:0.5em; 
+  margin-right:0px; 
+  margin-left:0px; 
+  padding:0; 
+  color: black;
+  border:1px solid #eeeeee; /* IE6 HACK #1000 */
+}
+
+DIV.gameSheetScoreContainer {
+  height: 7px;  
+  margin-bottom:0px;
+  margin-top:0px; 
+  margin-right:0px; 
+  margin-left:0px; 
+  padding:0; 
+  clear: both;
+  border: 1px solid black;
+}
+
+SPAN.gameSheetScoreBar {
+  background-color: #6ED567; 
+  border-right: 1px solid black;
+  border-top: 0; 
+  overflow: hidden;
+  display: block;
+  border-left: 0; 
+  border-bottom: 0; 
+  padding:0px; 
+  margin:0px; 
+  font-weight: normal;
+  white-space: nowrap;
+  line-height: 7px;
+  font-size: 7px;
+  height: 7px; 
+}
+
+TABLE.scoreWindow {
+  border: 1px solid black;
+}
+
+TABLE.scoreWindow TD {
+  padding-right: 5px;
+  padding-left: 5px;
+  border-right: 1px solid black;
+}
+
+TABLE.gspsel {
+  border: 1px solid black;
+}
+
+SPAN.gspselSelected {
+  background-color: #C7D1E5; 
+  border: 1px solid #0F6BC0;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 1.75em;
+
+  padding-top: 1px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+SPAN.gspselSelectable {
+  border-width: 0px; 
+  text-align: center;
+  white-space: nowrap;
+  line-height: 1.75em;
+
+  margin: 0px;                                                
+  padding-top: 1px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+
+
+/* News CSS */
+
+DIV.newsItem {
+  border: 1px solid black;
+  background-color: white;
+  padding: 0;
+  margin: 0em 0em 1.5em 0em;
+}
+
+/* BUG: don't put fractional padding-bottom, causes wierd firefox render error
+   https://bugzilla.mozilla.org/show_bug.cgi?id=295486 */
+DIV.newsTitle {
+  font-size: 110%;
+  background-color: #C7D1E5;
+  padding-top: 2px;
+  padding-right: 0.25em;
+  padding-bottom: 2px;
+  padding-left: 0.25em;
+  margin: 0em 0em 0em 0em;
+  border-bottom: 1px solid #bbbbbb;
+  color: black;
+}
+
+DIV.newsStatusBar {
+  background-color: #eeeeee;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  padding-right: 0.25em;
+  padding-left: 0.25em;
+  margin: 0em 0em 0em 0em;
+  border-top: 1px solid #bbbbbb;
+}
+
+DIV.newsTime {
+  background-color: #eeeeee;
+  padding-right: 0.25em;
+  padding-left: 0.25em;
+  border-bottom: 1px solid #bbbbbb;
+}
+
+
+DIV.newsAbstract {
+  border: 0px;
+  padding-right: 0.25em;
+  padding-left: 0.25em;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  margin: 0em 0em 0em 0em;
+  background-color: #ffffff;
+}
+
+
+/* javascript select */
+DIV.jsSelectBox {
+  overflow: auto;
+  overflow-x: hidden;  /* IE6 box model bug */
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  border: 1px solid black;
+}
+
+TR.jsSelectGroup {
+  padding: 0;
+  border: 0;
+}
+
+TR.jsSelectGroup TD {
+  border-top: 0;
+  border-bottom: 1px solid black;
+  border-right: 0;
+  border-left: 0;
+  padding: 2px 0px 2px 2px;
+  margin: 0px;
+
+  font-weight: bold;
+
+  background-color: #eeeeee;
+}
+
+SPAN.jsSelectLabel {
+  display: block;
+  border: 0;
+  padding: 0;
+}
+
+TR.jsSelectSelected TD {
+  background-color: #ffffd9;
+  padding: 0px 0px 0px 10px;
+  color: black;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+TR.jsSelectSelectable TD {
+  background-color: #ffffff;
+  padding: 0px 0px 0px 10px;
+  color: black;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+DIV.gameReviewContents {
+  border: 0px;
+  max-width: 800px;
+  padding: 0px;
+  margin: 0px;
+}
+
+DIV.noCoverArt {
+  width: 115px;
+  height: 140px;
+  padding: 5px;
+  text-align: center;
+}
+
+div.adLeader {
+  color: white; 
+  background-color: #010F6D; 
+  border: 0;
+  margin: 0;
+  padding: 2px;
+  text-align: center;
+}
+
+.button1 {
+  overflow: hidden;
+  position: relative;
+  font-size: 90%;
+  margin: 0em 0.75em;
+}
+
+div.button1 {
+  max-height: 35px;
+}
+
+div.button1 a {
+  display: block;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+}
+
+.button1 a {
+  color: #000;
+  text-align: center;
+  font-size: 90%;
+  padding-left: 1em;
+  padding-right: 1em;
+  border-top: 1px solid #cecece;
+  border-left: 1px solid #cecece;
+  border-bottom: 2px solid #4a4a4a;
+  border-right: 2px solid #4a4a4a;
+  background-image: url(/images/s/2/button1-bg.gif);
+  background-position: center left;
+  background-repeat: repeat-x;
+}
+
+
+.button1 a:link,
+.button1 a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+.button1 a:active,
+.button1 a:hover {
+  color: #000;
+  background-color: #ddd;
+  text-decoration: underline;
+  background-image: url(/images/s/2/button1-active-bg.gif);
+  background-position: center left;
+  background-repeat: repeat-x;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+/* easy clear: http://www.positioniseverything.net/easyclearing.html */
+/* proper css2 browers use :after */
+
+/*  Can't use "overflow: hidden;", it will break firefox 1.0, but without 
+    overflow: hidden, opera 9 will expand the height of the div, even with visibility 
+    hidden -- sucks.  The workaround is to use max-height: 0px; which doesn't break
+    Firefox and is supported by Opera 9 */
+
+.floatholder:after {
+  content: "."; 
+  display: block; 
+  max-height: 0px; 
+  height: 0px; 
+  clear: both; 
+  visibility: hidden; 
+}
+
+
+
+
+
+.diffPlus {
+  background-color: #bdf;
+  color: black;
+}
+
+.diffMinus {
+  background-color: #500;
+  color: silver;
+}
+
+.diffChange {
+  background-color: #0A0;
+  color: black;
+}
+
+div.diffLegend {
+  border: 1px solid black;
+  width: 10em;
+  padding: 0;
+  float: right;
+}
+
+div.relInfo {
+  padding: 0 0 0 10em;
+  border: 0;
+  margin: 0;
+}
+
+div.relInfoTitle {
+  float: left;
+  width: 10em;
+  font-size: 90%;
+}
+
+div.relInfoDetails {
+  margin-left: 10em;
+  font-size: 90%;
+}
+
+div.relInfoDetails span {
+  white-space: nowrap;
+}
+
+
+
+ul.hpbtPub,
+ul.hpbtYear,
+ul.hpbtPlatform,
+ul.hpbtGenre {
+  margin: 0 1em;
+  padding: 0;
+}
+
+ul.hpbtPub li {
+  float: left;
+  width: 18em;
+  height: 1.25em;
+  overflow: hidden;
+}
+
+ul.hpbtYear li {
+  float: left;
+  width: 6em;
+  height: 1.25em;
+  overflow: hidden;
+}
+
+ul.hpbtPlatform li {
+  float: left;
+  width: 12em;
+  height: 1.25em;
+  overflow: hidden;
+}
+
+div.hpbtContainer {
+  padding-left: 40px;
+}
+
+ul.hpbtGenre li {
+  float: left;
+  width: 12em;
+  height: 1.25em;
+  overflow: hidden;
+}
+
+h1.gameHeader {
+  margin: 0 0 0.5em -10px; /* extend area for easy text selection in IE6 */
+  padding: 0;
+  font-size: 150%;
+  font-weight: normal;
+}
+
+h1.gameHeader A:link,
+h1.gameHeader A:visited,
+h1.gameHeader A:active,
+h1.gameHeader A:hover,
+h1.gameHeader A {
+  text-decoration: none;
+}
+
+div#gameTitle {
+  padding-left: 10px; /* compensate for -10px in gameHeader */
+}
+
+div#gamePlatform {
+  float: right;
+  padding-left: 3em;
+}
+
+div.faImageLeft {
+  float: left;
+  overflow: hidden;
+  margin-right: 1em;
+  margin-top: 0.25em;
+  margin-bottom: 0.5em;
+  margin-left: 0em;
+  clear: both;
+  background-color: #eee;
+  border: 1px solid #ddd;
+}
+
+div.faImageRight {
+  float: right;
+  overflow: hidden;
+  margin-top: 0.25em;
+  margin-left: 1em;
+  margin-bottom: 0.5em;
+  margin-right: 0em; 
+  clear: both;
+  background-color: #eee;
+  border: 1px solid #ddd;
+}
+
+div.faImageLeft img,
+div.faImageRight img {
+  display: block;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+div.faImageRight p,
+div.faImageLeft p {
+  text-align: center;
+  font-size: 90%;
+  padding-right: 1em;
+  padding-left: 1em;
+  padding-bottom: 5px
+  font-weight: bold;
+}
+
+
+
+div.pastNewsYearMonth div.pastNewsYear {
+  font-weight: bold;
+}
+
+div.pastNewsYearMonth div.pastNewsMonth {
+  margin-right: 1em;
+  margin-left: 1em;
+  margin-bottom: 1em;
+}

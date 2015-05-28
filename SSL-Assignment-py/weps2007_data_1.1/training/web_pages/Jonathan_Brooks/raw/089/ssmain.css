@@ -1,0 +1,130 @@
+body {BACKGROUND-COLOR: #FFFFFF;PADDING-RIGHT: 0px;PADDING-LEFT: 0px;PADDING-TOP: 0px;PADDING-BOTTOM: 0px;MARGIN: 0px;
+
+/*blue slider
+scrollbar-face-color: #0068BD; scrollbar-shadow-color: #2c1762; scrollbar-highlight-color:#E6EFF8; 
+scrollbar-3dlight-color:#818fbe; scrollbar-darkshadow-color: #ffffff; scrollbar-track-color: #ffffff; 
+scrollbar-arrow-color: #2c1762; */
+}
+
+
+.main {FONT-SIZE:80%;COLOR:#000000;FONT-FAMILY: verdana, helvetica, sans-serif}
+.blue {FONT-SIZE:80%;COLOR:#0068BD;FONT-FAMILY: verdana, helvetica, sans-serif;FONT-WEIGHT:Bold}
+.bold{FONT-SIZE:80%;COLOR:#000000;FONT-FAMILY: verdana, helvetica, sans-serif}
+.footer {FONT-SIZE:70%;COLOR:#000000;FONT-FAMILY: verdana, helvetica, sans-serif}
+.trail {FONT-SIZE:80%;COLOR:#0068BD;FONT-FAMILY: verdana, helvetica, sans-serif}
+
+
+/*form-submit buttons */
+.buttons{
+	font-size: 100%;
+	color: Black;
+	FONT-FAMILY: verdana, helvetica, sans-serif;
+	background-color: #E6EFF8;
+	width: auto;
+	border : outset #0E6EFF8
+} 
+
+/*form dropdowns */
+.dropdown{
+	color: Black;
+	FONT-FAMILY: verdana, helvetica, sans-serif;
+	background-color: #E6EFF8;
+	width: auto;
+	border : outset #0E6EFF8;
+	font-size : 80%;
+} 
+
+/*text-search box */
+.searchbox{
+	color: Black;
+	FONT-FAMILY: verdana, helvetica, sans-serif;
+	background-color: #E6EFF8;
+	width: auto;
+	border : inset #0E6EFF8;
+	font-size : 80%;
+} 
+
+ /*paleblue box with darkblue border */
+.bluebox {
+	background: #E6EFF8;
+	border: 1px solid #0068BD;
+}
+.bluebox td {
+	padding: 6px 6px 6px 6px;
+	cursor: auto
+}
+
+ /*paleblue box with NO border */
+.palebluebox {
+	background: #E6EFF8;
+}
+.palebluebox td {
+	padding: 6px 6px 6px 6px;
+	cursor: auto
+}
+ /*white box with darkblue border */
+.whitebox {
+	background: White;
+	border: 1px solid #0068BD;
+}
+.whitebox td {
+	padding: 6px 6px 6px 6px;
+	cursor: auto
+}
+
+ /*COMPACT white box with darkblue border */
+.whiteboxcompact {
+	background: White;
+	border: 1px solid #0068BD;
+}
+.whiteboxcompact td {
+	padding: 1px 1px 1px 1px;
+	cursor: auto
+}
+
+ /*paleblue box with darkblue top-only border */
+.dbluetoppedbox {
+	background: #E6EFF8;
+	border-top : 1px solid #0068BD;
+}
+.dbluetoppedbox td {
+	padding: 6px 6px 6px 6px;
+}
+
+.minimal {
+	background: #FFFFFF;
+	padding: 0px;
+	border: 0px;
+}
+.minimal td {
+	font-size: 80%;
+	padding: 0px;
+	border: 0px;
+}
+
+.head{FONT-SIZE:80%;COLOR:#FFFFFF;FONT-FAMILY: verdana, helvetica, sans-serif;FONT-WEIGHT:Bold}
+
+a {COLOR:#000000;FONT-FAMILY: verdana, helvetica, sans-serif;FONT-DECORATION:none}
+
+/* REM jh 20041011
+a:link.head{FONT-SIZE:80%;COLOR:#FFFFFF;FONT-FAMILY: verdana, helvetica, sans-serif;FONT-WEIGHT:Bold;TEXT-DECORATION:none}
+a:visited.head{FONT-SIZE:80%;COLOR:#FFFFFF;FONT-FAMILY: verdana, helvetica, sans-serif;FONT-WEIGHT:Bold;TEXT-DECORATION:none}
+a:hover.head{FONT-SIZE:80%;COLOR:#FFFFFF;FONT-FAMILY: verdana, helvetica, sans-serif;FONT-WEIGHT:Bold;TEXT-DECORATION:underline}
+a:active.head{FONT-SIZE:80%;COLOR:#FFFFFF;FONT-FAMILY: verdana, helvetica, sans-serif;FONT-WEIGHT:Bold;TEXT-DECORATION:none}
+*/
+A:link {
+	color: Black
+}
+A:visited {
+	color: #0068BD
+}
+
+
+td.vert {background-image: url(1/vert.gif)}
+td.hori {background-image: url(1/hori.gif)}
+tr.bluel {background: #E6EFF8}
+tr.blued {background: #0068BD}
+
+h1 {FONT-SIZE:130%;COLOR:#0068BD;FONT-FAMILY: verdana, helvetica, sans-serif;FONT-WEIGHT:Bold}
+h2 {FONT-SIZE:140%;COLOR:#0068BD;FONT-FAMILY: verdana, helvetica, sans-serif;FONT-WEIGHT:Bold}
+h3 {FONT-SIZE:110%;COLOR:#000000;FONT-FAMILY: verdana, helvetica, sans-serif;FONT-WEIGHT:Bold}

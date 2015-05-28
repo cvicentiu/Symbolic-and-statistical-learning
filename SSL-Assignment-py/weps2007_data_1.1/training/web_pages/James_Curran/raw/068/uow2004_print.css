@@ -1,0 +1,71 @@
+body { 
+    background-color: white; 
+    font-size: 10pt; 
+    color: black; 
+    float: none;
+    width: auto;
+    padding: 0mm 0mm 0mm 2mm; 
+    margin: 0;
+	border: 1px solid #cc0000;    
+	}
+
+@page {
+}
+
+ .mainbody{
+        margin:0px;
+		padding:0px;
+}  
+table#uowcontent {width: 17cm;}
+div.mainbody table#uowcontent
+{width: 16cm;}
+
+.txttopnav{ border:0;
+ padding: 0px;
+  margin: 2px;
+}
+
+
+
+
+.noprint{display:none;} /*to turn off content that should not print*/
+.printerOnly{display:inline;}  /*to turn on content that should only print*/
+
+table{width: auto;}
+
+a:link, a:visited {
+	color: #552200;
+	background: transparent;
+	font-weight: bold;
+	text-decoration: underline;
+	}
+	
+.highlightmenutitle {
+	Letter-spacing: normal;
+	}
+	
+h1.banner,h1.Wbanner{
+    width: 10cm;
+	font-size: 16pt; 
+    color: black; 
+	margin:0in;
+	padding-top:9mm;
+	padding-bottom:9mm;
+}
+
+h1.Tbanner,h1.mbanner{ /*textonly and minimal h1s no crest so don't need so much padding*/
+ width: 10cm;
+	font-size: 16pt; 
+    color: black; 
+	margin:0in;
+	padding:1mm;
+
+}
+
+
+.sidemenu,.sidemenu p, p.sidemenutitle{ 
+	/*masks out all content using sidemenu class - should only be used for navigation*/
+display:none;
+}
+
+

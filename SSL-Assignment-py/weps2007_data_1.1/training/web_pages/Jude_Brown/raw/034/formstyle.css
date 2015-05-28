@@ -1,0 +1,168 @@
+/* CSS Document */
+
+body {
+	font-size:12px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+#form {
+	width:530px;
+}
+.field, .field_inner {
+	padding:10px 5px;
+	float:left;
+	width:48%;
+	min-height:20px;
+	_height:20px;
+	font-size:10px;
+}
+
+.field_inner {
+padding:3px 5px;
+}
+
+.field_long, {
+	padding:10px 5px;
+	float:left;
+	width:505px ;
+	min-height:30px;
+	_height:30px;
+	font-size:10px;
+}
+
+.field strong, #quiz_main strong {
+	font-size:12px;
+}
+
+.row, .row2 {
+	float:left;
+	width:522px;
+	padding:0px, 0px;
+}
+
+.sub_header {
+	font-weight:bold;
+	font-size:13px;
+}
+
+.row2 {
+	background-color:#B4CDCD;
+	padding:0px, 0px;
+}
+
+.optionsDivInvisible, .optionsDivVisible {
+	position:absolute;
+	margin-top:-1px;
+	margin-left:3px;
+	width:172px;
+	background:#CFD0D6;
+	padding:2px;
+	font-size:11px;
+	z-index:20;
+}
+.optionsDivInvisible {
+	display:none;
+}
+.optionsDivVisible {
+	display:block;
+}
+.optionsDivVisible p {
+	margin:0;
+	padding:0;
+}
+.optionsDivVisible a {
+	color:#000;
+	text-decoration:none;
+	display:block;
+	padding:1px 4px;
+	border:1px solid #CFD0D6;
+}
+.optionsDivVisible a:hover {
+	color:#000;
+	background:#5F6062;
+	border-color:#CFD0D6;
+}
+
+/*Button*/
+.buttonSubmit, .buttonSubmitHovered {
+	width:69px;
+	height:26px;
+	color:#FFF;
+	font-weight:bold;
+	padding:2px 5px;
+	background:url(/images/forms/button.gif) no-repeat left top;
+	cursor:pointer;
+	border:none;
+}
+.buttonSubmitHovered {
+	background-position:left bottom;
+}
+
+/*Test div - testing if stylesheets are enabled*/
+#stylesheetTest {
+	position:absolute;
+	left:-999px;
+	width:10px;
+	height:10px;
+}
+
+/*Text areas*/
+.textarea, .textareaHovered {
+	width:336px;
+	height:125px;
+	background:url(images/forms/textarea.gif) no-repeat left top;
+	border:none;
+	padding:4px 8px;
+}
+.textareaHovered {
+	background-position:left bottom;
+}
+
+/*Radio buttons*/
+.Checkbox, .CheckboxChecked {
+	margin: 2px 0px;
+	display:block;
+	_display:compact;
+	width:15px;
+	height:15px;
+	float:left;
+}
+
+.Radiobox, .RadioboxChecked {
+	margin: 2px 0px;
+	width:15px;
+	height:15px;
+	display:block;
+	_display:compact;
+	float:left;
+}
+
+.list a:hover {
+	background-color:#CCD024;
+}
+
+.listlink {
+	display:block;
+}
+
+.submitButton {
+	background: url(/images/submit_bttn.gif);
+	width:95px;
+	height:34px;
+}
+
+#applyView {
+	top:0px;
+	left:0px;
+	position:absolute;
+	width:100%;
+	height:34px;
+	line-height:50px;
+	text-align:center;
+	background-color:#FFFFFF;
+	color:#000000;
+}
+
+#applyView a {
+	font-weight:bold;
+	color:#FF0000;
+}

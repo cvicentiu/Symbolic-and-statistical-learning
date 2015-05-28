@@ -1,0 +1,201 @@
+/* CSS Document */
+
+/* 
+------------------------------- 
+ Some default page settings 
+------------------------------
+*/
+body {
+	margin:0px auto;
+	padding:0px;
+	background:#575739;
+	text-align:center;
+	width:100%;
+	height:100%;
+	font-family:verdana, arial, "sans-serif";	color: #ffffff;}
+
+a:link {
+	color: #D8E2EB;
+}
+a:visited {
+	color: #D8E2EB;
+}
+a:hover {
+	color: #D8E2EB;
+}
+a:active {
+	color: #D8E2EB;
+}
+
+/* 
+------------------------------- 
+  Main box around whole site
+------------------------------
+*/
+#main_box{
+	background:#76764E no-repeat right bottom;
+	margin:0px auto;
+	padding:0px;
+	text-align:left;
+  	width:750px;
+	border-left:1px solid #999999;
+	border-right:1px solid #999999;
+	border-top:1px solid #999999;
+	border-bottom:1px solid #999999;
+}
+
+/* 
+------------------------------- 
+  Flash Intro
+------------------------------
+*/
+#flash_box{
+	margin:0px auto;
+	padding:0px;
+	text-align:left;
+  	width:750px;
+}
+
+/* 
+------------------------------- 
+	Page Header
+	Global Header
+------------------------------
+*/
+#header{
+	background:#76764E no-repeat right bottom;
+	margin:0px auto;
+	padding:0px;
+	text-align:center;
+  	width:750px;
+	border-left:1px solid #999999;
+	border-right:1px solid #999999;
+	/*border-top:1px solid #999999;
+	/*border-bottom:1px solid #999999;*/
+}
+
+
+/* 
+------------------------------- 
+  Site Footer 
+  Global Footer
+------------------------------
+*/
+#footer{
+	background:#76764E no-repeat right bottom;
+	margin:0px auto;
+	padding:0px;
+	text-align:center;
+  	width:750px;
+	font-size:10px;
+	font-weight:normal;
+	border-left:1px solid #999999;
+	border-right:1px solid #999999;
+	border-bottom:1px solid #999999;
+}
+
+/* 
+------------------------------- 
+  Site Text Areas
+  Place all text in this box.
+------------------------------
+*/
+
+#body{
+	background:#76764E no-repeat right bottom;
+	margin:0px auto;
+	padding:0px;
+	text-align:left;
+	font-size:12px;
+	font-weight:normal;
+  	width:710px;
+}
+
+#body2{
+	background:#76764E no-repeat right bottom;
+	margin:0px 0px 0px 170px;
+	padding:15px;
+	text-align:left;
+	font-size:12px;
+	font-weight:normal;
+  	width:510px;
+	border-left:1px solid #999999;
+}
+
+.floatleft
+{
+	float: left;
+	width: 130px;
+	height: 200px;
+	margin: 30px 10px 0px 10px; 
+	padding: 2px;
+	text-align:left;
+	font-size:12px;
+	font-weight:normal;
+}
+
+#body_centred{
+	background:#76764E no-repeat right bottom;
+	margin:0px auto;
+	padding:0px;
+	text-align:center;
+	font-size:12px;
+	font-weight:normal;
+  	width:710px;
+}
+
+/* 
+------------------------------- 
+	Site Menu
+------------------------------
+*/
+#menu_space{
+	background:#575739;
+	text-align:left;
+	height:20px;
+	padding:0px;
+	font-size:10px;
+	font-weight:normal;
+	margin:0px 0px 0px 0px;
+	padding:0px;
+  	width:750px;	
+	border-top:1px solid #999999;
+	/*background:#6F6F48 no-repeat right bottom;*/
+}
+
+/* 
+------------------------------- 
+		Menu 
+------------------------------
+*/
+#menu{
+	/*background:url(menu.jpg) no-repeat 0px 0px;*/
+	background:#575739 no-repeat right bottom;
+	text-align:left;
+	font-size:12px;
+	font-weight:bold;
+	height:20px;
+	padding-top:7px;
+	/*border-top: 1px solid #FFFFFF;
+	border-bottom:1px solid #FFFFFF;
+}
+
+#menu ul{
+ 	padding:0px;
+	margin:0px;
+	white-space:nowrap;
+
+}
+ 
+#menu ul li{
+	display:inline;
+}
+
+#menu a{
+	text-decoration:none;
+	padding:10px 2px 7px 5px;
+}
+
+#menu a:hover{
+	color:#76764E;
+}

@@ -1,0 +1,31 @@
+<HTML><HEAD>
+<!-- These scripts are provided under the terms of the BrowserHawk license
+agreement and may not be copied or used otherwise. [10.0.1.4 Professional; BDD ver 10.00]
+See cyscape.com for details.
+Copyright (C) 1999-2007 cyScape, Inc. All rights reserved.
+-->
+<noscript><meta http-equiv="refresh" content="0; URL=http://www.afi.com/members/catalog/'/members/catalog/AbbrView.aspx?s=1&amp;Movie=15017&amp;bhjs=0'"><a href="http://www.afi.com/members/catalog/AbbrView.aspx?s=1&amp;Movie=15017&amp;bhjs=-1">Please click here to continue</a></noscript>
+<script language="JavaScript">
+<!--
+function bhawkTest() {
+  var hashIndex = self.location.href.indexOf("#");
+  if (hashIndex == -1) {
+    hash = "";
+  } else {
+    hash = self.location.href.substring(hashIndex);
+    hash = "&bhhash=1" + hash;
+  }
+  var rs = "bhjs=1";
+  if (document.cookie.indexOf("bhCookieSess=1") != -1) {
+    document.cookie = "bhResults="+rs+"; path=/";
+    if (document.cookie.indexOf("bhResults") != -1)
+      self.location.replace("/members/catalog/AbbrView.aspx?s=1&Movie=15017&bhcp=1"+hash);
+    else self.location.replace("/members/catalog/AbbrView.aspx?s=1&Movie=15017&"+rs+"&bhqs=1"+hash);
+  }
+  else self.location.replace("/members/catalog/AbbrView.aspx?s=1&Movie=15017&"+rs+"&bhqs=1"+hash);
+}
+// -->
+</script>
+<title></title></head><noscript><body   onLoad="bhawkTest();"></noscript>
+<script>document.write('<body   onLoad="bhawkTest();">');</script>
+</body></html>

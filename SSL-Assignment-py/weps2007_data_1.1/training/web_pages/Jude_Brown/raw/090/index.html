@@ -1,0 +1,308 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML>
+<HEAD>
+<TITLE>Interactive Design Annual 7</TITLE>
+<SCRIPT LANGUAGE="JavaScript" src="insert.js"></script>
+<SCRIPT LANGUAGE="JavaScript" src="browsercheck.js"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+<!--
+window.onerror = null;
+//-->
+
+</SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+<!--
+ function go(x) {
+     value = x.options[x.selectedIndex].value;
+     if (value == '') return;
+     if (value.indexOf('http://') == 0)
+         top.location.href = value;
+     else
+         self.location.href = value;         
+ }
+ //-->
+ 
+
+</SCRIPT>
+ 
+ <SCRIPT LANGUAGE="JavaScript">
+
+<!--
+function resetForms() {
+        document.IA_dropMenu.reset();
+ }
+ //-->
+ 
+
+</SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+<!--
+function showNext(direction) { 
+        restofURL = "_ia01.html";
+        var y;
+        temp = unescape(parent.frames['main'].location.pathname);
+        x = temp.substring(temp.lastIndexOf("/")+1,temp.lastIndexOf("/")+3);
+        x = parseFloat(x);
+        if (direction == "forward") {      
+        x = x + 1;
+        if (x == 43) 
+                x = 0;
+        } else {
+        x = x - 1;
+                if (x == -1)
+                x = 42;
+                }
+        x = x + ""
+        if (x.length == 1) {                                            
+        x = "0" + x;
+        } 
+        self.location = x + restofURL;
+}
+
+// -->
+
+</SCRIPT>
+
+<LINK REL="STYLESHEET" TYPE="text/css" HREF="ia01_web.css">
+
+<STYLE TYPE="text/css">
+<!--
+                
+        #bkg { position: absolute;
+                top: 130px;
+                        left: 10px;
+                        z-index: 1;
+                }
+
+    #overbkg { position: absolute;
+                                top: 1px;
+                                left: 1px;
+                                z-index: 2;
+                
+        }
+   -->
+</STYLE>
+</HEAD>
+
+
+<BODY BGCOLOR=white TEXT="#333333" LINK="#58619A" ALINK="#999999" VLINK="#006699" onLoad="frameTest()"><!-- -->
+
+
+
+<MAP NAME="arrows_map">
+	<AREA SHAPE="RECT" COORDS="3, 0, 13, 20"
+		 HREF="javascript:showNext('back');">
+	<AREA SHAPE="RECT" COORDS="18, 0, 28, 20"
+		HREF="javascript:showNext('forward')">
+</MAP>
+
+<map name="ca_map">
+			<area shape="rect" coords="248, 3, 366, 14"
+				href="http://www.commarts.com"
+				alt="Communication Arts Network" target="_top">
+			<area shape="poly" coords="18, 4, 18, 68, 286, 68, 286, 15, 246, 15, 246, 4, 18, 4"
+				href="http://www.commarts.com/CA/"
+				alt="Communication Arts magazine" target="_top">
+</map>
+
+<DIV ID="bkg">
+<img src="bkg_int.gif" alt="Interactive" width="60" height="244" hspace="0" vspace="0" border="0" align="left">
+ </DIV>
+ 
+  <DIV ID="overbkg">
+
+
+
+
+<TABLE BGCOLOR="#564685" BORDER="0" WIDTH="770" CELLPADDING="0" CELLSPACING="0">
+<TR BGCOLOR="#564685" VALIGN=middle>
+
+<TD VALIGN=middle WIDTH="370" HEIGHT=77><IMG SRC="logo.gif" ALT="Communication Arts" WIDTH="367" HEIGHT="77" HSPACE="0" VSPACE="0" BORDER="0" ALIGN=middle USEMAP="#ca_map"></TD>
+<FORM ACTION="http://www.commarts.com/ca/search/ca/query_CA.asp" METHOD="post">
+		<INPUT TYPE=hidden NAME="FreeText" value="on">
+		<INPUT TYPE=hidden NAME="key" value="go">
+<TD VALIGN=middle WIDTH="210" HEIGHT=77>
+<BR><INPUT TYPE=TEXT NAME="SearchString" VALUE="" size="20" maxlength="155">
+<input type="image" src="go.gif" BORDER="0" WIDTH="35" HEIGHT="20"  name="image" ALIGN="top" VSPACE=0 HSPACE=0></TD>
+</FORM>
+<!-- dynamic JS content here -->
+<TD VALIGN=middle BGCOLOR="#9283BE" WIDTH=190>
+<!-- JavaScript here -->
+
+<SCRIPT LANGUAGE="javascript">
+<!--
+document.write(strToInsert);
+// -->
+</SCRIPT>
+
+</TD>
+<!-- end -->
+</TR>
+<TR>
+<TD WIDTH="580" COLSPAN=2>
+<!-- main navigation -->
+<TABLE BORDER="0" WIDTH="580" CELLPADDING="0" CELLSPACING="0" HEIGHT="23">
+<TR BGCOLOR="#47404A">
+<TD ALIGN="center" VALIGN="middle"><P CLASS=header4><A HREF="http://www.commarts.com/CA/features/" TARGET="_top"><FONT COLOR="#FFFFFF">features</FONT></A></P></TD>
+<TD ALIGN="center" VALIGN="middle"><P CLASS=header4><A HREF="http://www.commarts.com/CA/exhibit/" TARGET="_top"><FONT COLOR="#FFFFFF">exhibit online</FONT></A></P></TD>
+<TD ALIGN="center" VALIGN="middle"><P CLASS=header4><A HREF="http://www.commarts.com/CA/interactive/" TARGET="_top"><FONT COLOR="#FFFFFF">interactive design annual</FONT></A></P></TD>
+<TD ALIGN="center" VALIGN="middle"><P CLASS=header4><A HREF="http://www.commarts.com/CA/columns/" TARGET="_top"><FONT COLOR="#FFFFFF">columns</FONT></A></P></TD>
+<TD ALIGN="center" VALIGN="middle"><P CLASS=header4><A HREF="http://www.commarts.com/CA/resources/" TARGET="_top"><FONT COLOR="#FFFFFF">resources</FONT></A></P></TD>
+<TD ALIGN="center" VALIGN="middle"><P CLASS=header4><A HREF="http://www.commarts.com/CA/forums/" TARGET="_top"><FONT COLOR="#FFFFFF">forums</FONT></A></P></TD>
+</TR>
+</TABLE>
+
+</TD><TD WIDTH=190>
+
+<TABLE BORDER="0" WIDTH="190" CELLPADDING="0" CELLSPACING="0" HEIGHT="23">
+<TR><TD BGCOLOR="#403464" VALIGN="middle" WIDTH=190 nowrap><P CLASS=header4>&nbsp; &nbsp;<A HREF="http://www.commarts.com/CA/magazine/index.html" TARGET="_top"><FONT COLOR="#FFFFFF">the magazine</FONT></A></P></TD></TR></TABLE>
+
+</TD></TR>
+</TABLE>
+
+<!-- replace ia6 page content-->
+
+<TABLE border="0" WIDTH="770"  CELLSPACING=0 CELLPADDING=4>
+
+<TR VALIGN=top><FORM NAME="IA_dropMenu">
+<TD ALIGN=right VALIGN=middle WIDTH=710>
+<SELECT NAME="menu1" onChange="go(this);resetForms()">
+<OPTION VALUE="">Go Directly To:
+<OPTION VALUE="">------------------
+<OPTION VALUE="index.html">Interactive Design Annual 7
+<OPTION VALUE="overview.html">Annual Overview
+<OPTION VALUE="http://www.commerce.commarts.com/">Purchase Interactive Design Annual 7
+<OPTION VALUE="">------------------
+<OPTION VALUE="00_ia01.html">African Voices
+<OPTION VALUE="01_ia01.html">Aniluxe
+<OPTION VALUE="02_ia01.html">The Apartment
+<OPTION VALUE="03_ia01.html">Baby Smartronics 
+<OPTION VALUE="04_ia01.html">Barbie Pet Rescue
+<OPTION VALUE="05_ia01.html">Barneys New York
+<OPTION VALUE="06_ia01.html">Blank + Cables
+<OPTION VALUE="07_ia01.html">Blind
+<OPTION VALUE="08_ia01.html">Brand&#149;New
+<OPTION VALUE="09_ia01.html">The Chopping Block
+<OPTION VALUE="10_ia01.html">Classic Motown
+<OPTION VALUE="11_ia01.html">Contentfree 
+<OPTION VALUE="12_ia01.html">Driveway Demo
+<OPTION VALUE="13_ia01.html">Fusion
+<OPTION VALUE="14_ia01.html">G4 Cube In-Store Demo
+<OPTION VALUE="15_ia01.html">Gourmet Settings 
+<OPTION VALUE="16_ia01.html">hillmancurtis, inc.
+<OPTION VALUE="17_ia01.html">Inventions and Inspirations
+<OPTION VALUE="18_ia01.html">Laramara Foundation
+<OPTION VALUE="19_ia01.html">Mercedes-Benz A-Klasse
+<OPTION VALUE="20_ia01.html">Mia2 Romaine's New Hat
+<OPTION VALUE="21_ia01.html">Microbus
+<OPTION VALUE="22_ia01.html">Nike iD
+<OPTION VALUE="23_ia01.html">NYC2012
+<OPTION VALUE="24_ia01.html">On The American Trail
+<OPTION VALUE="25_ia01.html">The Remedi Project
+<OPTION VALUE="26_ia01.html">Restaurant.com
+<OPTION VALUE="27_ia01.html">REVOLVOLUTION
+<OPTION VALUE="28_ia01.html">Scout
+<OPTION VALUE="29_ia01.html">Shorn
+<OPTION VALUE="30_ia01.html">Sub:Division
+<OPTION VALUE="31_ia01.html">Sutter Home's Moodmaker
+<OPTION VALUE="32_ia01.html">TANK
+<OPTION VALUE="33_ia01.html">Target
+<OPTION VALUE="34_ia01.html">They Might be Giants
+<OPTION VALUE="35_ia01.html">300FeetOut
+<OPTION VALUE="36_ia01.html">Timex I-Control
+<OPTION VALUE="37_ia01.html">Unwrapped
+<OPTION VALUE="38_ia01.html">Weightlifting Biomechanics
+<OPTION VALUE="39_ia01.html">WDDG.v8.Brown
+<OPTION VALUE="40_ia01.html">Williams-Sonoma 
+<OPTION VALUE="41_ia01.html">The World Body
+<OPTION VALUE="42_ia01.html">010101: Art in Technological Times
+</SELECT>
+</TD></FORM>
+<TD ALIGN=RIGHT VALIGN=middle><IMG SRC="arrows.gif" ALT="Go" WIDTH=49 HEIGHT=20 BORDER=0 USEMAP="#arrows_map">
+</TD></TR>
+</TABLE>
+
+<TABLE WIDTH="770" border="0" CELLSPACING="0" CELLPADDING="5">
+<TR><TD VALIGN=top><P CLASS=header><SPAN class=indent2>Interactive Design Annual 7: Williams-Sonoma</span></P>
+</TD></TR></TABLE>
+
+
+<DIV CLASS=indent1>
+<TABLE WIDTH="680" border="0" CELLSPACING="0" CELLPADDING="10">
+<TR><TD VALIGN="top" ALIGN="center">
+
+<TABLE border="0" CELLSPACING="0" CELLPADDING="0">
+<TR><TD WIDTH="220" valign=top align=center><img src="wsonoma_ani.gif" alt="Williams-Sonoma" width="200" height="143" vspace="6" border="0"><br><span class=header3><A HREF="http://www.williams-sonoma.com" TARGET="projectwindow">www.williams-sonoma.com</A></span></td></TR>
+
+
+<TR>
+<TD align=center valign=top WIDTH="240">
+<img src="wsonoma.jpg" alt="Williams-Sonoma" width="220" height="280" border="0" vspace="20"></td></tr>
+<TR>
+<TD valign=top>
+<P CLASS=credits>Tim Kain, creative director;<br>
+Laurie Davison Kanes/Cathy Muma/<br>Katherine Doumani/
+    C.J. Bradford/<br>Laura Bruder/Julie Montgomery, 
+    <br>Williams-Sonoma, Internet <br>creative services team;<br>
+George Humpreys/Roy <br>Sablosky, art directors;<br>
+Brian Friezen, interface designer;<br>
+Daniel Stephens/Ed <br>Storm, programmers;<br>
+Laura Martin-Bacon/<br>Jackie Mallorca/
+    <br>John Carroll, writers;<br>
+Kris Balloun/Don <br>Roberts, editors;<br>
+Quentin Bacon/Bob Barclay/<br>Paul Berg/
+    Susan Burdick/<br>Jim Hildreth/Ken <br>Smith, 
+    photographers;<br>
+Paul Miller/Jude Brown/<br>Brooke Dubray/
+    Julie Connolly, <br>Williams-Sonoma, Internet
+    business team;<br>
+marchFIRST, site design <br>and development;<br>
+Williams-Sonoma Inc., client
+</P>
+</td></tr></table>
+
+</td>
+<TD Valign=TOP  WIDTH="215"><P CLASS=quote>
+  &#147;Beyond the gorgeous photography is expert interactive art direction. This site is tasteful-and just plain tasty.&#148;</P><P CLASS=attribute>&#151;Laura Kampo</P>
+
+<P CLASS=quote>&#147;A flawless translation of the catalog shopping environment and a perfect example of interpreting a well-known shopping experience and &#230;sthetic for the Web.&#148;</P><P CLASS=attribute>&#151;Gregg Heard </P>
+
+<P><SPAN CLASS=header1>Overview:</SPAN> The design for the Williams-Sonoma site was inspired from the catalog and store experiences. The result is a user-friendly and graceful approach to e-commerce. The site has a simple, clear interface of beautiful photographs, easy-to-read graphics and navigation alternatives for different shopping styles. It&#146;s hard to improve on a site that&#146;s so accurately branded and well-designed. But a number of additional commerce features, added this year, allow people to track purchases, receive advance notice of products and sales, obtain personalized recipes and product information based on past purchases and eliminate the need to enter a charge card number each visit.
+</P></TD>
+
+<TD BGCOLOR="#ced1bd" VALIGN=TOP  WIDTH="215"><P CLASS=none> <SPAN CLASS=header1>Creator's Comments:</SPAN> &#147;During this past year, our goal for the site was to present the same seasonal merchandise to our customers that&#146;s in the stores and the catalog. We also wanted to offer, whenever possible, an in-depth product assortment, more product information and ideas for entertaining.<br><br>
+ &#147;Because the concept is to have as much coordination as possible between the three selling channels, there are times when the site has more content. During Thanksgiving the site included multiple menu choices, including a traditional Thanksgiving meal, recipes from New England inns and a Southern Thanksgiving menu. We also offered a comprehensive checklist and timeline, tips on how to roast and carve a turkey and pointers on table settings and garnishing soups. Rather than trying to fit heavily-edited versions of all of this information into our catalog, we printed urls in the catalog that linked customers to corresponding site content.&#148;<br><br>
+ &#147;Creating and loading this much customized, seasonal content online required that we make the site as easy to maintain as possible. The marchFIRST and Williams-Sonoma technical teams worked closely to integrate a content management tool, developed by Spectra, that allowed the in-house creative team at Williams-Sonoma to swap-out images and copy. 
+ &#147;The site&#146;s entire recipe section was built and maintained using this in-house system. It&#146;s supported by a content manager who acquires and develops content, a production assistant who enters images and copy into customized database fields and an e-commerce technical developer who pushes the builds live to the site. Williams-Sonoma now has the flexibility to update the site on a weekly basis without having too heavy a reliance on an outside supplier to make every little change.<br><br>
+ &#147;For the Holiday 2001 build, Williams-Sonoma will be using the content management tool to help build and maintain some of the site&#146;s commerce areas. The more the internal creative team is able to develop and maintain the site, the more creative control they have in presenting a unified brand experience to our customers.&#148; 
+	</P><P CLASS=attribute>&#151;Tim Kain/Laurie Davison Kanes</P>
+</TD></TR>
+
+</TABLE></DIV>
+<!--end replace ia6 content-->
+
+
+<!-- Footer -->
+
+<TABLE BORDER="0" CELLPADDING="10" CELLSPACING="0" WIDTH="770">
+<TR><TD><HR NOSHADE size=1 COLOR=black>
+<P CLASS=smtxt>
+<a href="http://www.commarts.com/CA/index.html" target="_top">Home</a> &#149; 
+<a href="http://www.commarts.com/CA/search/CA/query.htm" target="_top">Search</a> &#149; 
+<a href="http://www.commarts.com/CA/info/aboutus.html" target="_top">About Us</a> &#149; 
+<a href="http://www.commarts.com/CA/info/contactus.html" target="_top">Contact Us</a> &#149; 
+<a href="http://www.commarts.com/mediakit/index.html" target="_top">Advertise with Us</a><BR>&copy;2001 Coyne &amp; Blanchard, Inc. All Rights Reserved.</p>
+<BR><BR></TD></TR>
+</TABLE>
+<!--end footer -->
+
+</BODY>
+</HTML>
+

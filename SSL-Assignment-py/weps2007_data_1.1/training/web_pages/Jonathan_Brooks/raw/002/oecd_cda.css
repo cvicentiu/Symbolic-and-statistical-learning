@@ -1,0 +1,438 @@
+/* OECD LINK Styles */
+
+a {
+	font-weight 	: bold; 
+	font-size 		: 12px; 
+	font-family 	: Arial; 
+	color 			: #3e658b;
+  	text-decoration : underline;	
+}
+
+a:VISITED:Hover {
+  color		  : #7A9BBC;
+}
+
+a.nav2_level_1 { 
+	font-weight 	: bold; 
+	font-size 		: 11px; 
+	font-family		: Arial; 
+	color 			: #900000;
+	text-decoration : underline;  
+}
+
+a.nav2_level_1:VISITED:Hover {
+	color 			: #900000;
+	text-decoration : none;		
+}
+
+a.page_title_lev_1 {
+	font-weight : bold; 
+	font-size 	: 16px; 
+	color 	 : #223152;
+	text-decoration :none; 
+}
+
+a.page_title_lev_1:VISITED:Hover 
+{
+	color 	 : #223152;	
+	text-decoration :underline; 
+}
+
+
+a.content 
+{
+	font-weight : normal; 
+	color 	 : #223152; 
+	font-size : 13px; 
+	text-decoration :none; 
+}
+
+a.content:VISITED:Hover 
+{
+	color 	 : #223152; 
+	text-decoration :none; 
+}
+
+a.content_bold { 
+	font-weight : bold; 
+	color 	 : #223152; 
+	font-size : 13px; 
+	text-decoration :none; 
+} 
+
+a.content_bold:VISITED:Hover { 
+	color 	 : #223152; 
+	text-decoration :none; 
+} 
+
+a.link_title {
+	font-weight 	 : bold; 
+	font-size 	 : 12px; 
+	font-family 	 : Arial; 
+	color 		 : #3e658b;
+  	text-decoration : underline;	
+}
+
+a.link_title:VISITED:Hover 
+{
+	text-decoration : underline;	
+    color		  : #7A9BBC;
+}
+
+a.link_title_normal {
+	font-weight 	 : normal; 
+	font-size 	 : 12px; 
+	font-family 	 : Arial; 
+	color 		 : #3e658b;
+  	text-decoration : underline;	
+}
+
+a.link_title_normal:VISITED:Hover 
+{
+	text-decoration : underline;	
+	color		  : #3e658b;
+}
+
+a.related_link {
+	font-weight 	 : normal; 
+	font-size 	 : 11px; 
+	font-family 	 : Arial; 
+	color 		 : #3e658b;
+  	text-decoration : underline;	
+}
+
+
+a.related_link:VISITED:Hover 
+{
+	text-decoration : underline;	
+	color		  : #7A9BBC;
+}
+
+a.edit_content {
+	font-size: 8 pt;
+	font-weight: bold;
+	color: #666666;
+	text-decoration: underline;
+}
+
+a.edit_content:VISITED:Hover 
+{
+	color: #666600;
+	text-decoration: underline;	
+}
+
+H3 {
+	
+}
+
+TD {
+	font-size : 13px; 
+	color 	 : #223152; 	
+	font-family : Arial; 
+} 
+
+.nav2_portletHeadLeft {
+	background-color: #A74620;
+	height: 20px;
+	padding-left: 3px;
+	padding-bottom: 1px;
+}
+
+.nav2_portletHeadRight {
+	background-color: #A74620;
+	background-image: url(/dataoecd/img/common/corner_white2.gif);
+	background-position: right;
+	background-repeat: no-repeat;
+	height: 20px;
+	padding-bottom: 1px;
+	text-align: right;
+	vertical-align: bottom;
+}
+
+.nav2_portletBody {
+	border-left: 2px solid #990033;
+	border-right: 2px solid #990033;
+	border-bottom: 2px solid #990033;
+	vertical-align: top;
+	padding: 2px;
+}
+
+
+
+
+
+
+/* TEASER STYLE  */
+.nolink_title {
+	font-weight 	 : bold; 
+	font-size 	 : 12px; 
+	font-family 	 : Arial; 
+	color 		 : #000000;
+  	text-decoration : none;	
+}
+
+
+/* COMM AREA STYLE */
+.commarea_portletHead { 
+	background-color : #E5CFBD; 
+	border: 2px solid #A74620;
+	padding: 2px;	
+} 
+
+
+
+.commarea_portletBodyTop {
+	border-top: 2px solid #A74620;
+	border-left: 2px solid #A74620;
+	border-right: 2px solid #A74620;
+	vertical-align: top;
+	padding: 2px;
+	background-color : #FFFFFF; 
+}
+
+.commarea_portletBodyBottom {
+	border-bottom: 2px solid #A74620;
+	border-left: 2px solid #A74620;
+	border-right: 2px solid #A74620;
+	vertical-align: top;
+	padding: 2px;
+	background-color : #FFFFFF; 
+}
+
+.commarea_portletbody {
+	border-left: 2px solid #A74620;
+	border-right: 2px solid #A74620;
+	vertical-align: top;
+	padding: 2px;
+	background-color : #FFFFFF; 
+}
+
+
+.commarea_image { 
+	background-color : #E5CFBD; 
+	border-left: 1px solid #A74620;
+	border-right: 1px solid #A74620;
+	border-top: 1px solid #A74620;
+	border-bottom: 1px solid #A74620;
+} 
+.commarea_title { 
+	font-weight 	  : normal; 
+	font-size 		  : 12px; 
+	font-family      : Arial; 
+	color 			  : #462A24; 
+	text-decoration : none;
+} 
+
+/* HEADER STYLE **/
+
+.header_title { 
+	font-weight : bold; 
+	font-size : 13px; 
+	color 	 : #223152;
+}
+
+.header_front_line { 
+	font-weight : bold; 
+	font-size : 13px; 
+	color 	 : #3e658b;
+}
+
+.header_navigation {
+	font-weight 	 : normal; 
+	font-size 	 : 12px; 
+	font-family 	 : Arial; 
+	color 		 : #3e658b;
+  	text-decoration : underline;	
+}
+
+
+.header_navigation:VISITED:Hover {
+  color		  : #7A9BBC;
+  text-decoration : underline;	
+}
+
+/* SEARCH STYLE ***/
+
+
+/* CONTENT STYLE **/
+.content { 
+	font-weight : normal; 
+	color 	 : #223152; 
+	font-size : 13px; 
+	text-decoration :none; 
+} 
+
+.content_bold { 
+	font-weight : bold; 
+	color 	 : #223152; 
+	font-size : 13px; 
+	text-decoration :none; 
+} 
+
+.link_header {
+	color 	 : #223152; 
+	font-size : 12px; 
+	font-family 	 : Arial; 	
+}
+
+.link_small_header {
+	font-weight 	: normal; 
+	font-size 	: 10px; 
+	font-family 	: Arial; 
+	color 		: #462A24; 
+}
+
+.txt { 
+	font-weight 	: normal; 
+	font-size 	: 11px; 
+	font-family 	: Arial; 
+	color 		: #223152; 
+}
+
+.nav_center_selected_level_1 {  
+	font-weight 	: bold; 
+	font-size 	 : 12px; 
+	font-family 	 : Arial; 
+	color 		 : #223152;
+	text-decoration : none;	
+}
+
+.page_title_lev_1 {
+	font-weight : bold; 
+	font-size 	: 16px; 
+	color 	 : #223152;
+	text-decoration :none; 
+}
+
+.page_title_lev_2 {
+	font-weight : bold; 
+	font-size 	: 15px; 
+	color 	 : #223152;
+	text-decoration : none;	
+}
+
+.txt_bold { 
+	font-weight 	: bold; 
+	font-size 	: 11px; 
+	font-family 	: Arial; 
+	color 		: #223152; 
+} 
+
+.txt_red { 
+	font-weight 	: normal; 
+	font-size 	: 11px; 
+	font-family 	: Arial; 
+	color 		: #FF0000; 
+}
+
+.breadcrumbs_level_1 {  
+	font-weight 	: normal; 
+	font-size 	 : 12px; 
+	font-family 	 : Arial; 
+	color 		 : #598AB3;
+	text-decoration : none;	
+} 
+
+
+.breadcrumbs_level_1:visited:hover {
+	text-decoration : none;
+	color 		 : #598AB3;		
+}
+
+.edit_content {
+	font-size: 8 pt;
+	font-weight: bold;
+	color: #666666;
+	text-decoration: underline;
+}
+
+.edit_content_black {
+	font-size: 8 pt;
+	font-weight: bold;
+	color: #FF0000;
+	text-decoration : none;
+}
+
+.navigation_level_3 {  
+	font-family: Arial;
+	font-size: 13px;
+	font-weight: normal;
+	text-decoration:underlined;
+	color: #000066;
+} 
+
+.navigation_level_3:visited:hover {
+	text-decoration : underlined;	
+	color: #000066;	
+}
+
+.navigation_level_4 {  
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: normal;
+	text-decoration:underlined;
+	color: #000066;
+} 
+
+.navigation_level_4:visited:hover {
+	text-decoration : underlined;	
+	color: #000066;	
+}
+
+.nav_topic {
+	border-bottom: 1px solid #3E617E;
+	background-color: #cddbe7;
+}
+
+/* OECD TITle Styles 
+	if these are changed also change in oecd_CDS.css */
+
+p.OECDTitle1, li.OECDTitle1, div.OECDTitle1, a.OECDTitle1 {
+ caption  : Title 1;
+ font-size : 15px;
+ font-family : Arial;
+ font-weight : bold;
+ 
+ color  : #023a96;
+}
+ 
+p.OECDTitle2, li.OECDTitle2, div.OECDTitle2, a.OECDTitle2 {
+ caption  : Title 2;
+ font-size : 15px;
+ font-family : Arial;
+ font-weight : bold;
+ text-decoration : none;	
+ color  :#5F5F5F;
+}
+ 
+
+p.OECDTitle3, li.OECDTitle3, div.OECDTitle3, a.OECDTitle3
+ {
+ caption  : Title 3;
+ font-size : 15px;
+ font-family : Arial;
+ font-weight : bold;
+ text-decoration : none;	
+ color  : #1059ac;
+}
+ 
+
+p.OECDTitle4, li.OECDTitle4, div.OECDTitle4, a.OECDTitle4 {
+ caption  : Title 4;
+ font-size : 13  px;
+ font-family : Arial;
+ font-weight : bold;
+ text-decoration : none;	
+ color  : #023a96;
+}
+ 
+ 
+ 
+p.OECDTitle5, li.OECDTitle5, div.OECDTitle5, a.OECDTitle5 {
+ caption  : Title 5;
+ font-size : 13  px;
+ font-family : Arial;
+ font-weight : bold;
+ text-decoration : none;	
+ color  : #1059ac;
+}

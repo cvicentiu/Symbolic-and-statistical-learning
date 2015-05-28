@@ -1,0 +1,123 @@
+body{margin:0; padding:0; font:70% Verdana, Arial, Helvetica, sans-serif; color:#003366; background:#d3e1f0}
+td, table {font-size:100%}
+a, a:visited {color:#009;}
+a:hover{color:#000;	text-decoration:none;}
+form{margin:0; padding:0}
+img {border:0}
+p {	margin: 0 20px 7px 0px;	line-height:17px;	position:relative;}
+h1{ color:#069; font-size:170%; margin:0 0 5px 0; font-family:"Trebuchet MS", Verdana; line-height:normal; font-weight:normal;}
+h2{color:#fff; 	margin:0; 	font:normal 140% "trebuchet ms", Arial, Helvetica, sans-serif;	border:1px solid #B5B5B5;	border-bottom: 0; 	padding:5px 0 5px 7px ;	font-size: 140%;	font-weight:bold; background-color:#025179; background-image:url(../IMAGE/listhead-bar-bg.gif); background-repeat:repeat-x; line-height:normal;}
+h2, h2 a,h2 a:visited{color:#fff;}
+h2 small{font-size:75%}
+h3{	margin:0px;	padding: 2px 0 4px 0px;	height:19px; font-size: 115%; font-weight: bold; color: #666; }
+h4{	margin:0px;	padding:0px; font-weight:normal; font-size:90%;	color: #666; margin-bottom:5px;}
+blockquote{margin:5px 0 0 10px;font:110%/1.6em "Trebuchet MS", Verdana;}
+ol{	margin:0 0 0 20px;	list-style-image: url(../image/tick.gif); padding:0;}
+ul{	margin:10px 0 10px 20px;list-style-type:disc; padding:0; position:relative;}
+li{ line-height:17px; margin-bottom:5px; position:relative;}
+
+#skip{visibility:hidden; display:none;}
+#bannerad{width:998px;text-align:center; padding:3px;}
+
+#all {background-color:#fff; clear:both}
+#head{height:83px; background:url(../IMAGE/statusbar-bg.gif); background-position:bottom; background-repeat:repeat-x;background-color:#069;}
+.w1004 {width:1000px;}
+#main{width:610px; float:left; margin:10px 10px 10px 5px;}
+#w760{width:760px; margin:10px 10px 10px 5px;} 
+.cup{  padding:8px; margin-bottom:15px; padding-bottom:15px; 	border:1px solid #B5B5B5;	border:1px solid #B5B5B5; border-top:0;  background-color:#eff9ff;}
+#right {width:345px; float:left; margin:10px 0 0 10px;}
+#right p{margin-bottom:0}
+#right h2{	padding:2px 0 2px 7px ;	font:normal 120% "trebuchet ms", Arial, Helvetica, sans-serif;	background-image:none;	color:#036;	background-color:#dde9ea;	border:1px solid #B5B5B5;	border-bottom: 0; }#right .cup{ padding-bottom:3px; background:#F5FBF9;}
+#right ul{list-style-type:none; margin:0}
+#right .advert{padding:10px}
+#right .cup{padding-bottom:3px;}
+#topbar {width:750px; float:left; }
+#logo {margin:0; float:left; width:250px;height:83px;  background:url(../IMAGE/curve-inflation.gif); background-repeat:no-repeat; background-position:bottom right;}
+#namesearch{ width:607px; float:left; margin:17px 0 15px 0; padding: 0; color:#fff;}
+#accountnav{ font-family:Arial, Helvetica, sans-serif; padding:8px 1px 0 0; width:748px; float:left;}
+#welcome{float:right; padding:0 0 0 0; font-size:85%; }
+#welcome b {width:200px; overflow:hidden;}
+.find {font-size:85%; font-weight:normal; float:right; text-decoration:underline; cursor:pointer;}
+.find a, .find a:visited{text-decoration:underline; line-height:normal; color:#fff;}
+.find a:hover{color:#fff;}
+#topnav, #botnav {margin:3px 0px 3px 3px;}
+#botnav{margin:0; width:100%; font-size:90%; padding:200px 0 0 0; clear:both}
+#topnav ul, #topnav li, #botnav ul, #botnav li{ list-style:none; margin:0; padding:0;}
+#topnav li, #botnav li{float:left; margin:0 1px 0 0; height:21px; background:url(../IMAGE/TEMPLATE/topnav-bg.gif); border:1px solid #ccc; border-bottom:1px solid #666; border-left:1px solid #666; }
+#topnav img{margin:3px 7px 2px 3px;}
+#topnav a, #topnav a:visited, #botnav a, #botnav a:visited, #topnav b{ padding:6px; margin:3px 0; text-decoration:none; color:#003366; font-weight:bold }
+#topnav form{ display:inline;}
+#topnav input{ }
+#topnav select{font-size:95%;  width:234px; padding:0; margin:0 0 0 7px;}
+.topnavbutton{background:url(../IMAGE/TEMPLATE/topnav-bg.gif);margin:1px; border:1px solid #999; margin:0 0 0 5px; padding:0; font-size:90%;}
+#allplaces{display:none; visibility:hidden; position:absolute; border:1px solid #069; left:75px;  width:200px; z-index:10; background:#d1effd; float:left; padding:3px 0 2px 3px}
+#allplaces a, #allplaces a:visited{padding:3px 0; font-weight:normal;}
+#allplaces a:hover{width:170px; background:#fff;padding:0;}
+#allplaces ul{padding:0 0 0 20px; margin:0; }
+#allplaces li{background:none; float:none; border:0; list-style-image:none}
+.placesli{background-image:none; width:274px; margin:0 0 0 7px;}
+#topnav .mpschool{ background:#eff9ff;  border:1px solid #d1effd}
+#topnav .mpcollege{background:#eff9ff;  border:1px solid #d1effd}
+#topnav .mpwork{background:#eff9ff; border:1px solid #d1effd}
+#topnav .mpstreet{background:#eff9ff; border:1px solid #d1effd}
+#topnav .mpteam{background:#eff9ff;  border:1px solid #d1effd}
+#topnav .mpforce{background:#eff9ff;  border:1px solid #d1effd}
+#topnav .mpdofe{background:#eff9ff;  border:1px solid #d1effd}
+#right .mpschool{background:url(../IMAGE/ICONS/icon-nav-secondary-wh.gif) no-repeat;}
+#right .mpcollege{ background:url(../IMAGE/ICONS/icon-nav-secondary-wh.gif) no-repeat;}
+#right .mpwork{background:url(../IMAGE/ICONS/icon-nav-work-wh.gif) no-repeat;}
+#right .mpstreet{background:url(../IMAGE/ICONS/icon-nav-street-wh.gif) no-repeat;}
+#right .mpteam{background:url(../IMAGE/ICONS/icon-nav-team-wh.gif) no-repeat;}
+#right .mpforce{background:url(../IMAGE/ICONS/icon-nav-forces-wh.gif) no-repeat;}
+#right .mpdofe{background:url(../IMAGE/ICONS/icon-nav-dofe-wh.gif) no-repeat;}
+#right .places a, #right .places a:visited {margin:0 0 0 20px; }
+#right blockquote{margin:0 0 0 5px}
+#right blockquote img{float:left;}
+#right textarea{width:90%; color:#036; clear:both; margin:0 0 0 10px;}
+.categories{margin:0 0 5px 15px; padding:3px 0 0 0; clear:both;}
+.categories ul, .categories li{padding:0; margin:0; list-style-image:none; display:inline}
+.categories a, .categories a:visited{margin: 0 22px 0 0;}
+.content ul{padding:0; margin:0}
+.content li{padding:0; margin:0}
+#topnav small {font-weight:normal;}
+#content{padding:8px; }
+#bottom{background-color:#069; clear:both; color:#333; font-size:90%;}
+#bottom .links,  #bottom .footer {text-align:center; color:#fff;}
+#bottom .links a, #bottom .links a:visited{color:#fff;}
+.fieldDD { width:215px; font:105% Verdana, Arial, Helvetica, sans-serif; color:#003366;}
+.fieldsearch { width:78px;  }
+#namesearch select{ width:110px;}
+.leftbanner{margin:10px; text-align:center; color:#CCC; font-size:85%}
+.success{margin: 20px 8px; color:#ddd; font-size:85%}
+.left{float:left;}
+.right{float:right;}
+.clear{clear:both;}
+.sponbar{margin:0 0 0 15px;}
+.content{float:left; width:100%;}
+.contentsky{float:left; width:150px;}
+.ad{float:right; text-align:center; width:100%; margin:0 0 10px 0; padding:5px;}
+.adsky{float:right; text-align:center; width:50%; margin:0 0 10px 0;}
+.abovenet{text-align:center;}
+.comment{margin:0 0 5px 0; border:2px solid #dadada; background:#fbfbf5;}
+.comment img{float:left; margin:2px 0 0 0}
+
+.formline{padding:0 0 10px 0;clear:both;}
+.formname{float:left; width:35%; padding-top:2px; margin-right:2%;}
+.formitem{float:left; width: 35%;}
+.formhelp{float:left; width: 22%; color:#666666; font-size:90%;}
+.nohelp .formname{width:100px;}
+.nohelp .formitem{width:100px;}
+select {border: 1px solid #999;	font-family: Arial, Helvetica, sans-serif; color:#336;}
+.field, .fieldsm, .fieldmin, .fieldlg, .fieldfull{font:100% Trebuchet MS, Arial, Helvetica, sans-serif; border: 1px solid #999; background-color: #ffffff; padding-left: 2px;}
+.fielddate{width:60px}
+.fieldsm {width:74px}
+.fieldmid{width:140px;}
+.fieldlg{width:90%;}
+.fieldfull{width:500px;}
+button, .buttonall, .buttonlink{color:#009;	height:23px; background:none; background-image: url(../image/buttonall.gif);	border:1px solid #5BA2A3; font:bold 120% Trebuchet MS, verdana;	cursor:pointer;	padding: 1px 2px; margin-top:10px;}
+.buttonlink{padding: 2px 10px 3px 10px;	text-align:center;	text-decoration:none; height:22px;	margin:0}
+#namesearch .buttonall{font-weight:bold; margin:0}
+.buttonhollow{border:0; background:none; margin:0; padding:0 0 0 14px; text-decoration:underline; font-weight:bold; color:#009; font:80% Verdana, Arial; width:137px; height:23px; cursor:pointer; background-image:url(../IMAGE/addfriend.gif); background-repeat:no-repeat}
+.buttonposition{text-align:center; clear:both; margin:10px  0}
+
+#banner, #sky, #leftsquare, #button120, #button120b, #bottomad, #itv1, #itv2, #itv3, #itv4, #mpu{ overflow:hidden; width:0; height:0; border:0; margin:0; padding:0}

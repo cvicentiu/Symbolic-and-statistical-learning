@@ -1,0 +1,83 @@
+/*  TemplateName=CustomStyle.tpt */
+/*  $Header: /home/cvs/cvsroot/site_data/001/00000001/static_data/css/CustomStyle_Hot.css,v 1.13 2003/11/07 05:47:56 jeffm Exp $  */
+/* User Customized Style Sheet - Hot */
+
+p.cstmText, p.PaddedEntry, p.lc_Text, p.cstmBtnText,
+	.cstmFrame, .BlogBody, .controlArea,
+	a.cstmBtnText:link, a.cstmBtnText:visited
+{
+	color: #000;
+}
+
+p.cstmTitle, p.cstmHeading, span.cstmHeading, .Divider, p.dividerHeading,
+	.BlogHeader, a.cstmBtnText:hover
+{
+	color: #f30;
+}
+
+.cstmBack, th.lc_Heading, th.lc_HeadingSort {
+	background-color: #f60;
+}
+
+.cstmFrame, .controlArea, .addBorder, table.NSscrollArea {
+	background-color: #fc0;
+}
+
+td.cstmBtnBack {
+	background-color: #ff0;
+}
+
+.addBorder{
+	color: #fc0;
+	background-color: #fc0;
+}
+
+tr.lc_Row0 {
+	background-color: #fff9f0;
+}
+
+tr.lc_Row1 {
+	background-color: #fff;
+}
+
+td.lc_Cell {
+	border-top: 0px;
+	border-right: 0px;
+	border-left: 1px solid #fc6;
+	border-bottom: 0px;
+}
+
+th.lc_Heading, th.lc_HeadingSort {
+	border-width: 0px;
+}
+
+table.lc_Table {
+	border-top-color: #f60;
+	border-bottom-color: #fc6;
+	border-right-color: #fc6;
+}
+
+.lc_FilterTable .SmallButton {
+	padding-right : 2px;
+	padding-left : 2px;
+	background-color: #ff0;
+   border: 2px outset;
+	font-family: Arial;
+	font-size: small;
+	font-weight: bold;
+	color: #000;
+	text-decoration:none;
+}
+
+.Divider, p.dividerHeading {
+	background-color: #fff9f0;
+	border-bottom: 1px solid #fc6;
+}
+/* Blogs */
+.BlogHeader {
+	border-color: #c90;
+}
+.BlogSummary {
+	color: #c90;
+	border-color: #c90;
+}

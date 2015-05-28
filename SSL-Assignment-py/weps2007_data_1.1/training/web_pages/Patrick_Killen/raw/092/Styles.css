@@ -1,0 +1,932 @@
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	bgcolor: "#ffffff";
+}
+.textSml {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: small;
+	color: #666666;
+}
+
+A:hover
+{
+	color: #649DE7;
+}
+
+.PageHeader
+{
+	margin: 0px 0px 0px 0px;
+}
+
+.PageHeader .Main
+{
+	padding-right: 10px;
+	padding-left: 20px;
+	font-weight: bold;
+	font-size: 20px;
+	padding-bottom: 10px;
+	color: #3E7CD1;
+	padding-top: 10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	height: 60px;
+	background-color: #3466A5;
+}
+
+.PageHeader .Main A
+{
+	color: white;
+	text-decoration: none;
+}
+
+.PageHeader .Menu
+{
+	text-align: right;
+	background-color: #3466A5;
+	color: #AFC8F1;
+	padding: 10px;
+}
+
+.PageHeader .Menu A
+{
+	color: White;
+	text-decoration: none;
+}
+
+.PageHeader .Bar
+{
+	height: 1px;
+	background-color: #AFC8F1;
+}
+
+.PageFooter
+{
+	background-color: #f4f4f4;
+	border-top: lightblue 1px solid;
+}
+
+.PageFooter TD
+{
+	FONT-SIZE: 10px;
+	TEXT-ALIGN: center;
+	padding: 10px 10px 10px 10px;
+}
+
+.PageFooter .PoweredBy
+{
+	color: Gray;
+}
+
+
+ul
+{
+	margin: 0px 20px 0px 20px;
+}
+
+a
+{
+	color: #3D77C9;
+}
+
+
+/* Default text font settings */
+body, td, p
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: 6D6D6D;
+	vertical-align: top;	
+	line-height:14px
+}
+
+/* Container settings */
+.GlobalContainer
+{
+	/* I.E */
+	text-align:center
+}
+
+.PageContainer
+{
+	width: 736px;
+	border-collapse: collapse;
+	height: 100%;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	border-left: 1px #B6C5E6 solid;
+	border-right: 1px #B6C5E6 solid;
+	border-bottom: 1px #B6C5E6 solid;
+
+	/* Netscape */
+	margin-left:auto; margin-right:auto;
+
+}
+
+.HeaderContainer
+{
+	vertical-align: top;
+	padding: 0px;
+}
+
+.BodyContainer
+{
+	vertical-align: top;
+	height: 100%;
+	padding: 0px 0px 0px 0px;
+}
+
+.FooterContainer
+{
+	vertical-align: bottom;
+	padding: 0px;
+}
+
+/* Page columns */
+TABLE.BodyColumns
+{
+	border-collapse: collapse;
+	margin: 0px 0px 0px 0px;
+}
+
+TD.LeftColumn
+{
+	background-color: #FFFFFF;
+	padding: 0px;
+	vertical-align: top;
+	width: 198;
+}
+
+TD.RightColumn
+{
+	padding: 0px;
+	vertical-align: top;
+	width: 0%;
+}
+
+TD.CentreColumn
+{
+	vertical-align: top;
+	padding: 20px 20px 20px 20px;
+	border-left: solid 1px #CCCCCC;
+	/* height: 500px; */
+}
+
+TD.CentreRow
+{
+	background-color: #FFFFFF;
+	height: 0px;
+	border-right: solid 1px #FFFFFF;
+	border-left: solid 1px #CCCCCC;
+}
+
+/* Left column panels */
+.LeftColumn .Panel
+{
+	border-collapse: collapse;
+	width: 100%;
+	margin: 0px;
+}
+
+.LeftColumn .Heading
+{
+	font-weight: bold;
+	background-image:url(/images/but-2.jpg);
+	background-repeat:no-repeat;
+	background-position:top;
+	height:21;
+	color: #666666;
+	font-weight:bold;
+	text-transform:uppercase;
+	padding-left:18px;
+	padding-top:4px;
+	width: 100%;
+}
+
+.LeftColumn .Content
+{
+	padding: 10px 10px 20px 10px;
+}
+
+.CentreColumn .Panel
+{
+	border-collapse: collapse;
+}
+
+.CentreColumn .Panel TD
+{
+	padding: 3px;
+}
+
+.CentreColumn .Heading
+{
+	font-weight: bolder;
+	font-size: 18px;
+	color: #666666;
+	padding: 10px 10px 10px 0px;
+	height: 22px;
+}
+
+.CentreColumn .SmallText
+{
+	color: Gray;
+	font-size: 11px;
+}
+
+.CentreColumn .SmallText A
+{
+	color: Gray;
+	font-size: 11px;
+}
+
+.CentreColumn .Box
+{
+	border-right: #cccccc 1px solid;
+	padding-right: 5px;
+	border-top: #cccccc 1px solid;
+	padding-left: 5px;
+	padding-bottom: 5px;
+	border-left: #cccccc 1px solid;
+	padding-top: 5px;
+	border-bottom: #cccccc 1px solid;
+	background-color: #eeeeee;
+}
+
+.CentreColumn .Required
+{
+	color: Red;
+}
+
+.CentreColumn .Message
+{
+	background-color: #f4f4f4;
+	width: 98%;
+	border: #cccccc 1px solid;
+	padding: 5px 5px 5px 5px;
+	font-size: 11px;
+	margin: 10px 0px 10px 0px;
+}
+
+.CentreColumn .HorizontalRule
+{
+	height: 1px;
+	font-size: 1px;
+	border-bottom: solid 1px #cccccc;
+	margin: 5px 0px 5px 0px;
+}
+
+/* Form styles */
+.Field
+{
+	font-size: 11px;
+	margin-top: 5px;
+}
+
+.FieldFull
+{
+	width: 100%;
+	font-size: 11px;
+	margin-top: 5px;
+}
+
+.Field120
+{
+	width: 120px;
+	font-size: 11px;
+	margin-top: 5px;
+}
+
+.Field150
+{
+	width: 150px;
+	font-size: 11px;
+	margin-top: 5px;
+}
+
+.Field200
+{
+	width: 200px;
+	font-size: 11px;
+	margin-top: 5px;
+}
+
+.Field300
+{
+	width: 300px;
+	font-size: 11px;
+	margin-top: 5px;
+}
+
+.Field400
+{
+	width: 400px;
+	font-size: 11px;
+	margin-top: 5px;
+}
+
+.Field500
+{
+	width: 500px;
+	font-size: 11px;
+	margin-top: 5px;
+}
+
+.FormButton
+{
+	font-size: 11px;
+	width: 100px;
+}
+
+.FieldLabel
+{
+	white-space: nowrap;
+}
+
+
+/* Right column panels */
+.RightColumn .Panel
+{
+	border-collapse: collapse;
+	width: 100%;
+	margin: 0px;
+}
+
+.RightColumn .Panel .Heading
+{
+	font-weight: bold;
+	background-color: #3E7CD1;
+	color: White;
+	padding: 5px 8px 5px 8px;
+	width: 100%;
+}
+
+.RightColumn .Panel .Content
+{
+	padding: 10px 10px 20px 10px;
+}
+
+.RightColumn .Panel .Content .Message
+{
+	font-size: 11px;
+	color: Green;
+}
+
+/* Misc Styles */
+.HelpLink
+{
+	cursor: help;
+}
+
+DIV.ListItem
+{
+	padding:0px 0px 0px 10px;
+    background-image: url(Images/BlueBullet.gif); 
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+DIV.Trail
+{
+	background-color: #eeeeee;
+	margin: 0px 0px 15px 0px;
+	width: 100%;
+	border: #cccccc 1px solid;
+	padding: 5px 5px 5px 5px;
+	font-size: 11px;
+}
+
+/* ViewArticlePanel styles */
+.ViewArticlePanel
+{
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.ViewArticlePanel .Title
+{
+	font-weight: bolder;
+	font-size: 12px;
+	color: #006699;
+	/*font-style: italic;*/
+	padding: 0px 0px 10px 0px;
+}
+
+.ViewArticlePanel .content
+{
+	line-height:18px;
+}
+
+.ViewArticlePanel .PageTitle
+{
+	font-weight: bold;
+	font-size: 14px;
+	margin: 0px 0px 10px 0px;
+}
+
+.ViewArticlePanel .Details
+{
+	color: Gray;
+	font-size: 10px;
+	padding: 5px;
+}
+
+.ViewArticlePanel .Details A
+{
+	color: gray;
+}
+
+.AuthorSummary
+{
+	background-color: #EEEEEE;
+	float: right;
+	border: #CCCCCC 1px solid;
+	padding: 8px 8px 8px 8px;
+	margin: 0px 0px 15px 15px;
+	width: 180px;
+}
+
+.AuthorSummary .Name
+{
+	font-weight: bold;
+	margin: 2px 0px 8px 0px;
+	font-size: 11px;
+}
+
+.AuthorSummary .Biography
+{
+	line-height: 18px;
+	font-size: 11px;
+}
+
+.AuthorSummary .Picture
+{
+	float: right;
+	margin: 10px 10px 10px 10px;
+}
+
+.ArticleFeedbackPanel
+{
+	background-color: #f4f4f4;
+	margin: 5px 0px 5px 0px;
+	width: 100%;
+	text-align: left;
+	border: lightblue 1px solid;
+	padding: 10px;
+}
+
+.ArticleFeedbackPanel textarea
+{
+	width:100%;
+}
+
+.ArticleFeedbackPanel .Heading
+{
+	font-size: 12px;
+}
+
+.RatingDisplay .Label
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	margin-right: 5px;
+}
+
+.RatingDisplay .Rating
+{
+	padding: 0px 0px 0px 0px;
+}
+
+.RatingDisplay .Rating IMG
+{
+	margin: 0px 2px 0px 2px;
+}
+
+/* ArticleSummariesPanel styles */
+.ArticleSummariesPanel .Title
+{
+	background-color: #EEEEEE;
+	border-bottom: solid 1px #CCCCCC;
+	font-weight: bold;
+	padding: 3px;
+	width: 100%;
+	display:block;
+}
+
+.ArticleSummariesPanel .Title A
+{
+	text-decoration: none;
+}
+
+.ArticleSummariesPanel .Title A:hover
+{
+	text-decoration: underline;
+}
+
+.ArticleSummariesPanel .Details
+{
+	color: Gray;
+	font-size: 10px;
+	padding: 5px;
+}
+
+.ArticleSummariesPanel .Details A
+{
+	color: gray;
+}
+
+.ArticleSummariesPanel .Status
+{
+	background-color: #FFFFCC;
+}
+
+.ArticleSummariesPanel .Status TABLE TD
+{
+	font-size: 11px;
+}
+
+.ArticleSummariesPanel .Status .Notes
+{
+	font-style: italic;
+}
+
+.ArticleSummariesPanel .Content
+{
+	line-height: 18px;
+}
+
+.ArticleSummariesPanel .SmallLinks
+{
+	margin: 10px 10px 20px 10px;
+}
+
+.ArticleSummariesPanel .SmallLinks A
+{
+	text-decoration: none;
+}
+
+.ArticleSummariesPanel .SmallLinks .IMG
+{
+	vertical-align: super;
+}
+
+.ArticleSummariesPanel IMG.AuthorPicture
+{
+	margin: 0px 10px 10px 0px;
+}
+
+/* ArticleOptionsPanel styles */
+.ArticleOptionsPanel DIV
+{
+	margin: 5px 5px 5px 5px;
+	font-size: 11px;
+}
+
+/* SiteMenuPanel styles */
+.SiteMenuPanel .Content DIV
+{
+	margin: 5px 5px 5px 5px;
+	font-size: 11px;
+}
+
+/* ArticleHistoryPanel styles */
+.ArticleHistoryPanel .Content
+{
+	font-size: 11px;
+}
+
+.ArticleHistoryPanel ol
+{
+	margin-bottom: 0px;
+}
+
+.ArticleHistoryPanel li
+{
+	margin: 5px 0px 0px -10px;
+}
+
+/* RootArticleCategoryPanel */
+.RootArticleCategoriesPanel DIV.ListItem
+{
+	margin: 5px 0px 5px 10px;
+}
+
+/* ArticlesToReadPanel styles */
+.ArticlesToReadPanel .Content
+{
+	font-size: 11px;
+}
+
+.ArticlesToReadPanel .ListItem
+{
+	margin: 5px 0px 0px 0px;
+}
+
+/* SmallArticleFavouritesPanel styles */
+.SmallArticleFavouritesPanel .Content
+{
+	font-size: 11px;
+}
+
+.SmallArticleFavouritesPanel .ListItem
+{
+	margin: 5px 0px 0px 0px;
+}
+
+/* MyArticlesPanel styles */
+.MyArticlesPanel .Info .StatusDisapproved
+{
+	color: Blue;
+	text-decoration: underline;
+	cursor: help;
+}
+
+/* PopularAuthorsPanel styles */
+.PopularAuthorsPanel .Content
+{
+	font-size: 11px;
+}
+
+.PopularAuthorsPanel ol
+{
+	margin-bottom: 0px;
+}
+
+.PopularAuthorsPanel li
+{
+	margin: 5px 0px 0px -10px;
+}
+
+/* PopularArticlesPanel styles */
+.PopularArticlesPanel .Content
+{
+	font-size: 11px;
+}
+
+.PopularArticlesPanel ol
+{
+	margin-bottom: 0px;
+}
+
+.PopularArticlesPanel li
+{
+	margin: 5px 0px 0px -10px;
+}
+
+/* CategoryArticleMapPanel styles */
+.CategoryArticleMapPanel .Content div
+{
+	margin: 5px 0px 5px 0px;
+}
+
+/* ViewCategoryAdvancedPanel styles */
+.ViewCategoryAdvancedPanel A.Unread, .ViewCategoryAdvancedPanel A.Unread:visited
+{
+	color: #3D77C9;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.ViewCategoryAdvancedPanel A.Read, .ViewCategoryAdvancedPanel A.Read:visited
+{
+	color: gray;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+/* RecentNewsPanel styles */
+.RecentNewsPanel SPAN
+{
+	width: 100%;
+	display: block;
+}
+
+.RecentNewsPanel .Item
+{
+	margin-bottom: 20px;
+}
+
+.RecentNewsPanel .Title
+{
+	background-color: #ECF4FF;
+	border-bottom: solid 1px #B6C5E6;
+	font-weight: bold;
+	padding: 3px;
+}
+
+.RecentNewsPanel .Date
+{
+	color: Gray;
+	font-size: 10px;
+	padding: 5px 0px 3px 0px;
+}
+
+.RecentNewsPanel .Content
+{
+	line-height: 18px;
+}
+
+.RecentNewsPanel .SmallLinks
+{
+	margin: 10px 10px 20px 10px;
+}
+
+.RecentNewsPanel .SmallLinks A
+{
+	text-decoration: none;
+}
+
+.RecentNewsPanel .SmallLinks .IMG
+{
+	vertical-align: super;
+}
+
+/* SmallSearchPanel styles */
+.SmallSearchPanel .Button
+{
+	font-size: 11px;
+	color: #333333;
+	width: 30px;
+}
+
+/* SyndicatePanel styles */
+.SyndicatePanel .Title
+{
+	font-weight: bold;
+	font-size: 14px;
+	margin: 0px 0px 10px 0px;
+}
+
+.SyndicatePanel .Content DIV
+{
+	margin-bottom: 5px;
+	margin-left: 10px;
+}
+
+/* RecentBlogsPanel styles */
+.RecentBlogsPanel
+{
+	background-color: #f4f4f4;
+	float: right;
+	border: #cccccc 1px solid;
+	padding: 2px 8px 8px 8px;
+	margin: 35px 0px 5px 15px;
+	width: 180px;
+	font-size: 11px;
+}
+
+.RecentBlogsPanel .Title
+{
+	line-height: 18px
+}
+
+.RecentBlogsPanel .Details
+{
+	font-size: 10px;
+	color: Gray;
+	padding-bottom: 10px;
+}
+
+.RecentBlogsPanel .Details A
+{
+	color: Gray;
+}
+
+.RecentBlogsPanel .Heading
+{
+	color: black;
+	font-weight: bold;
+	font-size: 11px;
+}
+
+.RecentBlogsPanel .Link
+{
+	text-align: right;
+}
+
+.ArticleRelatedArticlesPanel .Heading
+{
+	font-size:12px;
+}
+
+.ArticleSeriesPanel .Heading
+{
+	font-size: 12px;
+}
+
+.ArticleCommentsPanel .Heading
+{
+	font-size: 12px;
+}
+
+.ArticleRelatedLinksPanel .Heading
+{
+	font-size: 12px;
+}
+
+.ViewBlogEntryPanel .Details
+{
+	color: Gray;
+	font-size: 10px;
+}
+
+.ViewBlogEntryPanel .Details A
+{
+	color: gray;
+}
+
+.ViewBlogEntryPanel .Content
+{
+	margin-top: 10px;
+}
+
+/* BlogSummariesPanel styles */
+.BlogSummariesPanel .Title
+{
+	background-color: #EEEEEE;
+	border-bottom: solid 1px #CCCCCC;
+	font-weight: bold;
+	padding: 3px;
+	width: 100%;
+	display:block;
+}
+
+.BlogSummariesPanel .Title A
+{
+	text-decoration: none;
+}
+
+.BlogSummariesPanel .Title A:hover
+{
+	text-decoration: underline;
+}
+
+.BlogSummariesPanel .Details
+{
+	color: Gray;
+	font-size: 10px;
+	padding: 5px;
+}
+
+.BlogSummariesPanel .Details A
+{
+	color: gray;
+}
+
+.BlogSummariesPanel .Status
+{
+	background-color: #FFFFCC;
+}
+
+.BlogSummariesPanel .Status TABLE TD
+{
+	font-size: 11px;
+}
+
+.BlogSummariesPanel .Status .Notes
+{
+	font-style: italic;
+}
+
+.BlogSummariesPanel .Content
+{
+	line-height: 18px;
+	margin-bottom: 10px;
+}
+
+.BlogSummariesPanel .Content .SmallLinks
+{
+	margin: 10px 10px 20px 10px;
+}
+
+.BlogSummariesPanel .Content .SmallLinks A
+{
+	text-decoration: none;
+}
+
+.BlogSummariesPanel .Content .SmallLinks .IMG
+{
+	vertical-align: super;
+}
+
+.BlogEntryCommentsPanel .Heading
+{
+	font-size: 12px;
+}
+
+.SearchResultsPanel .Content
+{
+	line-height: 18px;
+}
+
+/* ViewAuthorPanel styles */
+.ViewAuthorPanel .AuthorPicture
+{
+	margin: 0px 10px 10px 0px;
+}
+
+/* ViewAccountPanel styles */
+.ViewAccountPanel .AuthorPicture
+{
+	margin: 0px 10px 10px 0px;
+}

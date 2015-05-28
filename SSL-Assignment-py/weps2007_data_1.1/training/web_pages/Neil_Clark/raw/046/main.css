@@ -1,0 +1,247 @@
+/********************************************************************************************************************************************
+comment: This section declares the general css properties of the page.
+********************************************************************************************************************************************/
+BODY
+{
+   background-image: url(/images/bg_long.gif);
+   background-repeat: repeat-x;
+   margin: 0px;
+   padding: 0px;
+   font-family: Verdana, Arial, Georgia, Times New Roman;
+   font-size: 11px;
+}
+A, A:link, a:visited {text-decoration: none; color: blue}
+A:hover 
+{
+   color: Red;
+   text-decoration: underline;
+}
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+
+A.white, A.white:hover, A.white:visited 
+{
+    FONT-SIZE: 11px;
+    COLOR: #ffffff;
+}
+.style1  {  FONT-SIZE: 9px;   }
+.style3  {  FONT-SIZE: 12px;  }
+a.style5:hover
+{
+    FONT-SIZE: 11px;
+    TEXT-ALIGN: left
+}
+.style5  {  TEXT-ALIGN: left  }
+.style16 {  COLOR: #ffffff;   }
+.style17
+{
+    FONT-WEIGHT: bold;
+    TEXT-ALIGN: left
+}
+.style18
+{
+    FONT-SIZE: 10px
+}
+.style19
+{
+    FONT-SIZE: 11px;
+}
+a.style19:hover
+{
+    FONT-SIZE: 11px;
+}
+.style21
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 9px;
+}
+.style22
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 16px
+}
+.style23
+{
+    FONT-SIZE: 12px;
+    COLOR: #FFFFFF;
+	FONT-WEIGHT:bold
+}
+a.style23:hover, a.style23:Link, a.style23:visited
+{
+    FONT-SIZE: 12px;
+    COLOR: #FFFFFF;
+	FONT-WEIGHT:bold
+}
+.style25
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;
+}
+.style26
+{
+    FONT-WEIGHT: bold;
+    COLOR: #666666;
+}
+
+/********************************************************************************************************************************************
+comment: This section defines the css properties used by most of the pages like artist, composer, series, labels.
+********************************************************************************************************************************************/
+#heading h1 {
+margin: 0; padding: 0;
+width: 127; height: 76px;
+text-indent: -999em;
+}
+
+.content-title  {  font-size: 11px;  }
+.content-title2  {  font-size: 14px;  }
+.content
+{
+    TEXT-ALIGN: left
+}
+.content-link
+{
+    FONT-SIZE: 11px;
+}
+a.content-link:hover
+{
+    FONT-SIZE: 11px;
+}
+.h1
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 16px
+}
+h2.title
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 14px;
+	PADDING:0;
+	MARGIN:0
+}
+div.shadow
+{float: left;padding: 0 4px 4px 0;
+    background: url(/images/dropshadow.png) no-repeat bottom right}
+div.shadow img{display: block;position: relative;
+    top: -2px;left:-2px;padding:0px;background:#FFF;
+    border:1px solid;border-color: #666 #666 #666 #666} 
+div.award
+{float: left;padding: 0 4px 4px 0;
+    background: url(/images/dropshadow.png) no-repeat bottom right; z-index:100;}
+div.award img{display: block;position: relative;
+    top: -2px;left:-2px;padding:0px;background:#FFF;
+    border:1px solid;border-color: #666 #666 #666 #666} 
+/********************************************************************************************************************************************
+comment: This section defines the css properties used by the search page.
+********************************************************************************************************************************************/
+.search-title {font-size: 9px; font-weight: bold; }
+.search-cd {font-size: 11px; }
+
+/********************************************************************************************************************************************
+comment: This section defines the css properties used by the catalogue page.
+********************************************************************************************************************************************/
+H1.cdtitle  {  margin-top: 0px; font-size: 16px;  }
+OL.tracks
+{
+   margin-top: 2px;
+   margin-bottom: 2px;
+}
+P.discnumber
+{
+   font-weight: bold;
+   margin-bottom: 1px;
+}
+P.composers
+{
+   margin-top: 8px;
+   margin-bottom: 3px;
+   font-weight: bold;
+}
+P.vspacing
+{
+   margin-top: 0px;
+   margin-bottom: 3px;
+}
+DIV.works
+{
+   font-weight: bold;
+   color: #ff6600;
+   /*color: #9d8613;*/
+}
+DIV.performers 
+{
+   margin-left: 0px;
+}
+
+/********************************************************************************************************************************************
+comment: This section defines the css properties used by the reviews page.
+********************************************************************************************************************************************/
+.revhead
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 16px;
+}
+ul.revcd
+{
+	margin-top: 0; 
+	margin-left: 2px;
+	padding-left: 15px
+}
+a.revcdlist:link, a.revcdlist:visited
+{
+	text-decoration: underline;
+	color: #000;
+}
+a.revcdlist:hover
+{
+	text-decoration: underline;
+	color: red;
+}
+/********************************************************************************************************************************************
+comment: This section defines the css properties used by warning msg in default
+*******************************************************************************************************************************************/
+a.warnblk, a.warnblk:visited, a.warnblk:hover
+{
+	text-decoration: none;
+	color: #000000;
+}
+/********************************************************************************************************************************************
+comment: This section defines the css properties used by the licensing page.
+*******************************************************************************************************************************************/
+li.license
+{
+	padding: 2px
+}
+
+/********************************************************************************************************************************************
+comment: This section defines the css properties used by blurbs
+********************************************************************************************************************************************/
+td.blurbs p
+{
+ margin-top:15px;
+ padding-top:0;
+ margin-bottom:0px;
+}
+/********************************************************************************************************************************************
+comment: This section defines the css properties used by bestsellers
+********************************************************************************************************************************************/
+.sellerhead 
+{
+font-family: Georgia, "Times New Roman", Times, serif; 
+font-size: 24px; 
+color: #666666;
+font-size: 22px
+}
+.sellerdate 
+{
+font-family: Georgia, "Times New Roman", Times, serif;
+font-size: 16px;
+font-weight: bold;
+color: #999999;
+}
+.sellertitle
+{
+font-family: Georgia, "Times New Roman", Times, serif; 
+color: #999999; 
+}
+
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+

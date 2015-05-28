@@ -1,0 +1,198 @@
+BODY {
+	font-family: arial, geneva, helvetica, verdana, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	background-color : #192B2B;
+	margin-top : 0px;
+	margin-left : 0px;
+	margin-right : 0px;
+	color: #55D3D3;
+	SCROLLBAR-FACE-COLOR: #336666;
+	SCROLLBAR-HIGHLIGHT-COLOR: #339999;
+	SCROLLBAR-SHADOW-COLOR: #000000;
+	SCROLLBAR-3DLIGHT-COLOR: #146060;
+	SCROLLBAR-ARROW-COLOR: #3A9F9F;
+	SCROLLBAR-TRACK-COLOR: #254444;
+	SCROLLBAR-DARKSHADOW-COLOR: #263333;
+}
+
+TABLE {
+	font-family: arial, geneva, helvetica, verdana, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+}
+
+.light {
+	background-color : #146060;
+	border : medium double #235454;
+	font-size : larger;
+	color:  #000000;
+}
+.menu {
+	background-color: 235454;
+	color: #cccc66;
+	border-color : #339999 Black Black #339999;
+	border-style : groove groove groove groove;
+	border-width : thin thin thin thin;
+}
+.nav {
+
+border-color : #1E7373 Black Black #1E7373
+	border-style : groove groove groove groove;
+	border-width : thin thin thin thin;
+	font-size : xx-small;
+	color: #ffffff;
+	border-bottom : thick dotted #263333;	
+}
+.data {
+	background-color : #235454;
+	border : thin solid #146060;
+	color:  #cccc99;
+}
+.title {
+	color: #cccc66;
+	border-style : none none dashed none;
+	font-size : 22px;
+	font-variant : small-caps;
+	border-color : #235454;
+	color: #000000;
+}
+th {
+	background-color: 235454;
+	color: #cccc66;
+	border-color : #339999 Black Black #339999;
+	border-style : groove groove groove groove;
+	border-width : thin thin thin thin;
+}
+.small {
+	font-family: arial, geneva, helvetica, verdana, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-size: x-small;
+}
+.pagebanner {
+    FONT-SIZE: 20pt;
+    FONT-FAMILY: arial, helvetica;
+	color: #000000;
+}
+.rowbar {
+	FONT-SIZE: larger;
+	FONT-FAMILY: arial, helvetica;
+	color: #cccc99;
+	font-stretch : wider;
+	font-style : oblique;
+	font-weight : bolder;
+	border-top : thick dotted #263333;
+	row-height : 10px;
+		background-color : #235454;
+}
+A {
+	text-decoration: none
+}
+A:Visited {
+	color : #cccccc;
+}
+A:Link {
+	color : #cccc99;
+}
+A:hover {
+	color: #ffffff;
+	TEXT-DECORATION: underline;
+}
+H2 {
+	font-family: verdana, geneva, helvetica, arial, sans-serif;
+	font-weight: bold;
+	font-style: italic;
+	font-variant: normal;
+	font-size: large;
+	color: #235454;
+}
+.H2 {
+	font-family: verdana, geneva, helvetica, arial, sans-serif;
+	font-weight: bold;
+	font-style: italic;
+	font-variant: normal;
+	font-size: large;
+	color: #235454;
+}
+.lighttext {
+	color : #66CCCC;
+}
+.comment{
+	color : #66CCCC;
+	font-size : x-small;
+	font-style : italic;
+}
+.instructions {
+	color : #66CCCC;
+	font-size : xx-small;
+}
+.footer {
+	font-size : xx-small;
+	font-weight : bold;
+	font-style : normal;
+}
+HR {
+	color : #235454;
+	border-style : dotted;
+}
+.error {
+	font-size : larger;
+	font-style : oblique;
+	font-variant : small-caps;
+	font-weight : bold;
+	color : #ffcc00;
+}
+.fminput {
+	background-color : #3A6565;
+	color: #ffffff;
+	border-color : Black #339999 #339999 Black;
+	border-style : ridge ridge ridge ridge;
+	border-width : thin thin thin thin;
+}
+.button {
+	background-color : #192B2B;
+	color: #66CCCC;
+	border-color : #7A8485 black #364645 #4D5959;
+	border-style : double double double double;
+	border-width : thin thin thin thin;
+}
+.accent {
+	font-weight : bolder;
+	font-size : larger;
+}
+.photolist {
+	list-style-image : url(images/photolistbullet.gif);
+	margin-top : 2px;
+	margin-right : 2px;
+}
+.caldate {
+	font-family: arial, geneva, helvetica, verdana, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-size: large;
+	}
+.menuletter {
+	font-family: arial, geneva, helvetica, verdana, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-size: large;
+	}
+.menuselected {
+	background-color: 235454;
+	color: #cccc66;
+	border-color : #339999 Black Black #339999;
+	border-style : groove groove groove groove;
+	border-width : thin thin thin thin;
+	font-size : x-small;
+}
+.records {
+	color: #cccc66;
+background-color : #146060;
+	font-size : x-small;
+}

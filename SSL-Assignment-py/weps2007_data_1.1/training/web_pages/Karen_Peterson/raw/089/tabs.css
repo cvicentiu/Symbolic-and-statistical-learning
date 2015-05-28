@@ -1,0 +1,169 @@
+#menu {
+ z-index: 150;
+}
+
+#showh {
+	position: relative;
+	width: 45em;
+	height: 3em;
+	width: 45em;
+	font-size: 10px;
+	margin-top:10px;
+}
+
+#showh #primary {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	bottom: -1px;
+	width: 45em;
+}
+
+#showh #primary li  {
+	display: inline;
+	list-style: none;
+
+}
+
+#showh #primary a,#primary span,#primary a.current {
+	width: 9em;
+	display: block;
+	float: left;
+	padding: 8px 0;
+	margin: 1px 2px 0 0;
+	text-align: center;
+	font-family: tahoma, verdana, sans-serif;
+	font-size: 90%;
+	text-decoration: none;
+	color: #333;
+height: 21px;
+
+	
+}
+
+#showh #primary span,#primary a.current,#primary a.current:hover {
+	border: 1px solid;
+	border: none;
+	
+	padding-bottom: 8px;
+	margin-top: 0;
+	background-image: url(/tresources/en/images/backgrounds/tabs_roll.jpg);
+	background-repeat: no-repeat;
+	height: 21px;
+	
+}
+
+#showh #primary a {
+	background: #ffffff;
+	border: none;
+	border-bottom: none;
+	background-image: url(/tresources/en/images/backgrounds/tabs.jpg);
+	background-repeat: no-repeat;
+	
+height: 21px;
+	
+}
+
+#showh #primary a:hover {
+	margin-top: 0;
+	border-color: #666;
+	padding-bottom: 8px;
+background-image: url(/tresources/en/images/backgrounds/tabs_hover.jpg);
+	background-repeat: no-repeat;
+	height: 21px;
+}
+
+#showh #secondary {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	bottom: -1.6em;
+	left: 1px;
+	width: 50em;
+}
+
+#showh #secondary li a,#secondary li span {
+	width: auto;
+	display: block;
+	float: left;
+	padding: 0 6px; /* Padding changed 3/23/06 from 10px to 7px by Derrick to prevent wrap */
+	margin: 0;
+	text-align: auto;
+	border: none;
+	border-right: 1px dotted #AAA;
+	background: none;
+height: 12px;
+
+
+
+}
+
+#showh #secondary li a {
+	color: #06C;
+	text-decoration: underline;
+height: 12px;
+
+
+}
+
+#showh #secondary li a:hover {
+	color: #333;
+	background: transparent;
+	padding: 0 6px; /* Padding changed 3/23/06 from 10px to 7px by Derrick to prevent wrap */
+	border: none;
+	border-right: 1px dotted #AAA;
+height: 12px;
+
+}
+
+#showh #secondary li a:active {
+	color: #000;
+	background: transparent;
+height: 12px;
+}
+
+#showh #secondary li:last-child a { border: none; }
+
+
+#showh #secondarysub {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	bottom: -1.6em;
+	left: 0%;
+	width: 50em;
+	right: 0%;
+}
+
+#showh #secondarysub li a,#secondarysub li span {
+	width: auto;
+	display: block;
+	float: left;
+	padding: 0 6px; /* Padding changed 3/23/06 from 10px to 7px by Derrick to prevent wrap */
+	margin: 0;
+	text-align: auto;
+	border: none;
+	border-right: 1px dotted #AAA;
+	background: none;
+
+}
+
+#showh #secondarysub li a {
+	color: #06C;
+	text-decoration: underline;
+}
+
+#showh #secondarysub li a:hover {
+	color: #333;
+	background: transparent;
+	padding: 0 6px; /* Padding changed 3/23/06 from 10px to 7px by Derrick to prevent wrap */
+	border: none;
+	border-right: 1px dotted #AAA;
+}
+
+#showh #secondarysub li a:active {
+	color: #000;
+	background: transparent;
+}
+
+#showh #secondarysub li:last-child a { border: none; }

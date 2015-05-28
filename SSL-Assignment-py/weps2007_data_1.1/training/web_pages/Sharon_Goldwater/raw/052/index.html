@@ -1,0 +1,1939 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us">
+<head>
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type" />
+  <title>Morphology &amp; MT</title>
+  <meta content="Ed Kenschaft" name="author" />
+  <link rel="stylesheet" href="default.css" type="text/css" />
+  <link rel="stylesheet" href="academic.css" type="text/css" />
+  <script src="default.js"></script>
+  <script src="links.js"></script>
+</head>
+<body>
+<script type="text/javascript">setRoot('..')</script>
+<div id="Title">
+<script type="text/javascript">document.write(document.title)</script>
+<noscript>Ed Kenschaft</noscript>
+</div>
+<div class="NavigationBar">
+<ul>
+  <script type="text/javascript">
+  topLinks();
+  localLinks();
+  endLink();
+  </script>
+</ul>
+<hr />
+</div>
+<div class="Content">
+<noscript>
+<p class="Annotation">This site requires Javascript to be enabled in order to display properly.</p>
+</noscript>
+<h1>Improving Lexical Selection using Morphological <span class="Hidden">Analysis</span></h1>
+<script type="text/javascript">progress();</script>
+<p class="FlushLeft">Edward Kenschaft<br />
+LING895 Doctoral Candidacy Research</p>
+<p class="FlushLeft Annotation">See also <a href="http://www.umiacs.umd.edu/users/kensch/papers/morphology_RG.htm">reading group notes</a>.</p>
+<ul class="Columns Smaller">
+  <li><a href="morphology.htm#Abstract">Abstract</a></li>
+  <li><a href="morphology.htm#Introduction">Introduction</a></li>
+  <li><a href="morphology.htm#Related_Work">Related Work</a></li>
+  <ul>
+    <li><a href="morphology.htm#Related-PBSMT">PBSMT</a></li>
+    <ul>
+    </ul>
+    <li><a href="morphology.htm#Intro-WSD">Crosslingual WSD</a></li>
+    <ul>
+    </ul>
+    <li><a href="morphology.htm#WSD__MT_">WSD &amp; MT</a></li>
+    <ul>
+    </ul>
+    <li><a href="morphology.htm#Related-Morph_Unsup">Unsupervised Morphological Induction (UMI)</a></li>
+    <ul>
+    </ul>
+    <li><a href="morphology.htm#Related-Morph_WSD">Morphology &amp; WSD</a></li>
+    <li><a href="morphology.htm#Related-Morph_MT">Morphology &amp; MT</a></li>
+    <ul>
+    </ul>
+    <li><a href="morphology.htm#Related-Factored_LM">Factored Language Models</a></li>
+    <li><a href="morphology.htm#Corpus_Linguistics">Corpus Linguistics</a></li>
+  </ul>
+  <li><a href="morphology.htm#Task_Formulation">Task Formulation</a></li>
+  <ul>
+    <li><a href="morphology.htm#Intro-Hypothesis">Hypothesis</a></li>
+    <li><a href="morphology.htm#Resources">Resources</a></li>
+    <ul>
+    </ul>
+    <li><a href="morphology.htm#Evaluation">Evaluation</a></li>
+    <ul>
+    </ul>
+  </ul>
+  <ul>
+    <li><a href="morphology.htm#Agenda">Agenda</a></li>
+  </ul>
+  <li><a href="morphology.htm#Results">Observations &amp; Results</a></li>
+  <ul>
+    <li><a href="morphology.htm#Results_WSD">WSD</a></li>
+    <ul>
+      <li><a href="morphology.htm#Table_WSD_Results">Table: WSD results on Vickrey English data</a></li>
+    </ul>
+    <li><a href="morphology.htm#Results_Morphology">Morphology</a></li>
+    <li><a href="morphology.htm#Results_MT">Machine Translation</a></li>
+    <ul>
+    </ul>
+  </ul>
+  <li><a href="morphology.htm#Conclusions">Conclusions</a></li>
+  <li><a href="morphology.htm#Future_Work">Appendices</a></li>
+  <ul>
+    <li><a href="morphology.htm#Future_Work">Future Work</a></li>
+    <li><a href="morphology.htm#Glossary">Terminology</a></li>
+    <li><a href="morphology.htm#Resources">Additional Resources</a></li>
+    <li><a href="morphology.htm#References">References</a></li>
+  </ul>
+  <ul>
+  </ul>
+</ul>
+<h1 id="Abstract">Abstract</h1>
+<p>Word sense disambiguation (WSD) is the process of determining which sense of an ambiguous word is intended in context. The task has received considerable study, typically in a monolingual environment.</p>
+<p>Crosslingual WSD treats each possible translation of a word into a target language as a distinct sense. WSD techniques can then be used to aid in the process of translation &ndash; specifically, in lexical selection.</p>
+<p>Morphological analysis is the process of breaking a word into its component parts. This has also been studied in depth, but rarely in the context of WSD or translation. Unsupervised morphological induction can be used to induce morphological structure in any language where written text is available, regardless of what else is known about the language.</p>
+<p>We demonstrate that unsupervised morphological induction can improve crosslingual WSD, which in turn improves lexical selection for machine translation.</p>
+<h1 id="Introduction">Introduction</h1>
+<p>???</p>
+<h1 id="Related_Work">Related Work</h1>
+<h2 id="Related-PBSMT">Phrase-Based Statistical Machine Translation (PBSMT)</h2>
+<h4 id="Chiang_2005">Chiang 2005</h4>
+<p>The University of Maryland currently boasts the state-of-the-art PBSMT system, Hiero (<a href="morphology.htm#chiang2005">Chiang&nbsp;2005</a>).</p>
+<p>Previous PBSMT systems (e.g.&nbsp;<a href="morphology.htm#koehn2004">Koehn 2004</a>; <a href="morphology.htm#och-ney2004">Och &amp; Ney 2004</a>) generated translation candidates at two levels, word-level and phrase-level, where a&nbsp;<em>word</em> is any contiguous sequence of characters delimited by white space (i.e.&nbsp;a token), and a&nbsp;<em>phrase</em> is any contiguous sequence of words. The primary innovation of Hiero is to generate translation candidates from a hierarchy of phrases of arbitrary depth.</p>
+<p>One effect of PBSMT in general, and hierarchical PBSMT in particular, is to mitigate the impact of overzealous tokenization. Two "words" which should not have been separated are simply grouped together by the system into functional phrases. Thus, we expect to benefit by using the most aggressive morphological analysis available.</p>
+<p class="Annotation">Caveat: Both Pharaoh and Hiero use a configurable maximum number of "words". Breaking words into their component morphemes will increase the length of any given "phrase". The phrase-length limit will therefore need to be increased, which is likely to increase processing time.</p>
+<p>Hiero, like Pharaoh before it (Koehn 2004), provides a probabilistic lexical selection mechanism. The preprocessor can specify one or more proposed translations for a word or phrase, each with a feature label (e.g.&nbsp;"WSD") and a specified probability or cost. For any group of identical feature labels, the MERT process <span class="Annotation">(explain???)</span> then determines empirically how much weight to assign to that feature. The result is a better-informed system, where the worst that can happen is that the weight of this new&nbsp;feature is reduced to 0.</p>
+<h2 id="Intro-WSD">Crosslingual WSD</h2>
+<p class="Annotation">Do we need a separate section for WSD???</p>
+<p>Crosslingual word sense disambiguation (WSD) uses words of the target language as the sense inventory for words of the source language. For instance, if the source language word <em>bank</em> can translate to either <em>banque</em> or <em>encaisser</em> in the target language, then [<em>banque</em>, <em>encaisser</em>] are considered to be possible senses for <em>bank</em>. This nicely solves theoretical questions in WSD such as what level of granularity to use for word senses. If it leads to a different translation, it's a different sense; if it doesn't, it's not.</p>
+<h4>Vickrey et&nbsp;al. 2005</h4>
+<p>Vickrey et&nbsp;al. (2005) describe crosslingual WSD results for data taken from the English&rarr;French Europarl parallel corpus (<a href="file:///c:/Documents%20and%20Settings/Ed/My%20Documents/website/papers/morphology.htm#koehn2002">Koehn 2002</a>). Their baseline always guesses the most common sense for a given word, yielding an accuracy of 51.1%. Their logistic regression model yields an accuracy of 62.0%, a considerable improvement.</p>
+<h4 id="Kenschaft_2005">Kenschaft 2005</h4>
+<p>Experiments suggest that one of the major obstacles to widespread implementation of crosslingual WSD is the morphological complexity of either or both languages (<a href="morphology.htm#kenschaft2005">Kenschaft 2005</a>). A morphologically complex source language leads to data sparseness by exploding the lexicon. A morphologically complex target language leads to data sparseness by exploding the sense inventory. For instance, looking at English-French translation, a na&iuml;ve system considers the English <em>student</em> to have four senses [<em>&eacute;tudiant</em>, <em>&eacute;tudiante</em>, <em>&eacute;tudiants</em>, <em>&eacute;tudiantes</em>], even though a human observer can easily see there is only one.</p>
+<p>We anticipate the greatest benefit to WSD will result from breaking down both source language and target language into morphemes and throwing away inflectional affixes, looking only at the stems. Thus <em>student</em> has only one sense [<em>&eacute;tudiant</em>] and the French affixes <em>-e</em> and <em>-s</em> are ignored.</p>
+<h2 id="WSD__MT_">WSD &amp; MT<br />
+</h2>
+<h4 id="Carpuat__Wu_2005">Carpuat &amp; Wu&nbsp;2005</h4>
+<p>Carpuat &amp; Wu (2005) concluded, "Even state-of-the-art WSD does not help BLEU score." Their experiments used WSD to constrain the possible translations, in contrast to our approach of providing probabilistic lexical selection recommendations.</p>
+<h4 id="Cabezas__Resnik_2005">Cabezas &amp; Resnik&nbsp;2005</h4>
+<p>Cabezas &amp; Resnik (2005) attempted to use crosslingual WSD to improve Spanish&rarr;English MT. They found no significant effect. They performed no lemmatization or morphological analysis of any sort; nor did they limit their attempts to content words.</p>
+<h2 id="Related-Morph_Unsup">Unsupervised Morphological Induction (UMI)</h2>
+<p>Morphological analysis is the process of parsing a word into its component morphemes. This can be done manually, which is obviously quite time-consuming, or automatically, using either a <a href="morphology.htm#Related-Morph_Rule-Based">rule-based</a>&nbsp;or <a href="morphology.htm#Related-Morph_Unsup">statistical</a> system. Many of the most commonly studied languages have commercially available rule-based systems which achieve greater than 95% accuracy (???). However, developing such a system for a new language is understandably time-intensive, as is annotating data for use by a supervised statistical system. We will therefore be focusing our attention on unsupervised&nbsp;(or semi-supervised???) induction of morphological structure, an area which has been studied in depth for many years (e.g.&nbsp;<a href="morphology.htm#koskenniemi1983a">Koskenniemi 1983;</a> <a href="morphology.htm#kay1987">Kay&nbsp;1987</a>; <a href="morphology.htm#Koehn__Knight">Koehn &amp; Knight 2003</a>).</p>
+<p class="Annotation">Side note: The name Kenschaft would fit nicely with this list of contributors.</p>
+<h4 id="Related-Freitag">Freitag 2005</h4>
+<p>Freitag (<a href="morphology.htm#freitag2005">2005</a>) offers a methodology for inferring morphosyntactic transformation rules, as opposed to morphemes <em>per se</em>. In a nutshell, his method involves the following steps, explained in more detail below???.</p>
+<ol>
+  <li>Group all tokens into cooccurrence classes.</li>
+  <li>Identify Perl-like transformations between members of one cooccurrence class to members of another.</li>
+  <li>Cull transforms to minimal set.</li>
+</ol>
+<p class="FlushLeft">Some advantages of Freitag's system are as follows.</p>
+<ul>
+  <li>It provides a motivated distinction between stems and affixes.</li>
+  <li>It rates affixes according to frequency, and allows configurable admissibility threshold.</li>
+  <li>It can readily be adapted for more complicated transformations, such as reduplication and deletion.</li>
+</ul>
+<h4 id="Related-Baldwin">Baldwin 2005</h4>
+<p>Morphological analysis is related to a task known in the literature as <em>(deep) lexical acquisition (DLA)</em> (<a href="morphology.htm#baldwin2005">Baldwin&nbsp;2005</a>). Baldwin assumes a seed database, and describes a variety of methods for augmenting that database. His method for identifying morphemes is summarized as follows.</p>
+<ol>
+  <li>Generate all 1- to 6-grams.</li>
+  <li>Filter out n-grams with fewer than (n=3) occurrences.</li>
+  <li>Filter out any n-gram with same frequency as supersequence.</li>
+  <li>Select (k=3900) n-grams with highest saturation (= most complete coverage?).</li>
+</ol>
+<p>This method, I suspect, is inferior to Freitag's, since it does not share any of the advantages listed above. However, it should be significantly faster to implement.</p>
+<p>Baldwin's non-morphological features depend on deeper semantic knowledge, which I do not presume to have.</p>
+<h2 id="Related-Morph_WSD">Morphology &amp; WSD</h2>
+<p>To the best of my knowledge, no one has researched the effects of morphological analysis on word sense disambiguation (WSD), either monolingual or crosslingual. As noted <a href="morphology.htm#Intro-WSD">above</a>, previous experiments provide anecdotal evidence that it should help dramatically.</p>
+<h2 id="Related-Morph_MT">Morphology &amp; MT</h2>
+<h4 id="Related-Niessen_Ney">Nie&szlig;en &amp; Ney 2000, 2001a, 2001b, 2004</h4>
+<p>Nie&szlig;en &amp; Ney (<a href="morphology.htm#niessen2000">2000</a>, <a href="morphology.htm#niessen2001b">2001b</a>, <a href="morphology.htm#niessen2004">2004</a>) explore morphosyntactic restructuring to improve English-German alignment. Their experiments show significant improvement in translation quality, although the most effective techniques were syntactic rather than morphological. Their techniques are specific to this language pair.</p>
+<p>Nie&szlig;en &amp; Ney (<a href="morphology.htm#niessen2001a">2001a</a>) introduce the idea of a hierarchical lexicon, where a word is represented at various levels of inflectional specificity, starting with the bare stem. The technique yielded a slight reduction in subjective semantic error rate. The technique was further developed by various later researchers</p>
+<h4 id="Related-Koehn_Knight">Koehn &amp; Knight 2003</h4>
+<p>Koehn &amp; Knight (<a href="morphology.htm#koehn-knight2003">2003</a>) experiment with heuristics for dividing German compounds into their component parts, evaluating the effect on alignment (German-English), word-based MT, and phrase-based MT. The technique produced satisfying improvements (0.026 BLEU) with word-based MT, and impressive improvements (0.039 BLEU) with phrase-based MT. This is explained by the observation that overzealousness in dividing a word into alleged morphemes is no problem for phrase-based MT, which simply regroups morphemes into phrases as necessary.</p>
+<p class="Annotation">I expect Hiero to show even greater improvements, particularly with overzealous tokenization.</p>
+<p>Improvements in alignment were most dramatic when information from the parallel text was taken into account. Basically, every possible split is checked against the aligned text to see if it corresponds with English words, and discarded if it does not.</p>
+<h4 id="Related-Lee">Young-Suk Lee 2004</h4>
+<p>Lee (<a href="morphology.htm#lee2004">2004</a>) observes that in Arabic-English translation, one Arabic word freqently aligns with multiple English words, owing to functional affixes in Arabic, e.g.&nbsp;<em>llmEArDp</em> &harr; <em>of the opposition</em>. This 1-many alignment poses technical challenges to PBSMT systems.</p>
+<p>Lee addresses this problem with a several-step process:</p>
+<ol>
+  <li>POS tag Arabic and English parallel text.</li>
+  <li>Segment Arabic words into prefix(es)-stem-suffix(es).</li>
+  <li>Align segmented Arabic text with English text.</li>
+  <li>Determine translation probability of each Arabic stem/affix and POS into English POS.</li>
+  <li>Evaluate each Arabic affix.</li>
+  <ol>
+    <li>If the affix robustly translates to an English POS, keep it as a token.</li>
+    <li>If the most common translation for the affix is NULL, delete it.</li>
+    <li>Else, merge the affix back into the stem.</li>
+  </ol>
+</ol>
+<p>He evaluates the effects on BLEU score for corpora ranging from 3.5K to 3.3M words, using either Model 1 or phrase-based alignment. For Model 1, he consistently approximately doubles the BLEU score. For PBSMT, the improvements are more modest, but significant, e.g.&nbsp;0.36&rarr;0.39 for the 3.3M corpus.</p>
+<p class="Annotation">The PBSMT scores include a manual deletion of multiple definite determiners in a single Arabic phrase.</p>
+<h4 id="Related-Popovic">Popovi&#263; &amp; Ney 2004a, 2004b, 2005</h4>
+<p>Popovi&#263; &amp; Ney (<a href="morphology.htm#popovic2004a">2004a</a>) build on the concept of the hierarchical lexicon (<a href="morphology.htm#niessen2001a">Nie&szlig;en &amp; Ney 2001a</a>). They first parse German words into stems and artificial inflectional morphemes, e.g.&nbsp;<em>PRES</em> for present tense. They then use a modified EM alignment algorithm to treat each of these complex "words" as a hierarchy, with alignment possible at any level. They evaluate effects on a variety of baseline systems, producing at least modest improvements in every case.</p>
+<p>Popovi&#263; et&nbsp;al. (<a href="morphology.htm#popovic2004b">2004b</a>, <a href="morphology.htm#popovic2005">2005</a>) use knowledge of the specific language pair to remove inflectional morphemes or function words that are not translatable, leading to a significantly reduced lexicon, and reduced AER.</p>
+<p class="Annotation">I presume the alignment of function words to NULL has been handled in the mainstream alignment literature, although I haven't read up on it. Removing inflectional morphemes by hand seems (a) ad hoc, and (b) potentially detrimental to translation due to loss of information. Splitting apart but retaining all morphemes should provide the same benefits, without these objections.</p>
+<h4 id="Related-Schrader">Bettina Schrader 2004, 2006</h4>
+<p>Schrader (<a href="morphology.htm#schrader2004">2004</a>) performed experiments to determine the impact of morphological analysis (among other things) on German-English alignment &amp; translation. In experiments on three different data sets, she removed inflectional affixes from the German, and aligned/translated only the roots (lemmas). She evaluated on translation candidates generated from tokens of interest in new sentences, using a bag-of-words dictionary generator (<a href="morphology.htm#hiemstra1996">Hiemstra&nbsp;1996</a>).</p>
+<p>With all three data sets, recall went up with lemmatization. However, with the exception of one data set (Patente), precision went down. Schrader attributes this to a na&iuml;ve precision metric, which unduly penalizes the system for generating multiple translation candidates for the same term.</p>
+<p>Using only the Patente data set, Schrader tried another experiment where she broke long compounds into component morphemes before alignment, e.g.&nbsp;<em>D&auml;mpfungsscheibenanordnung</em> ('dampening disk assembly') &rarr; <em>D&auml;mpfung scheibe anordnung</em>. Recall improved somewhat, but precision did not change significantly.&nbsp;&nbsp;Schrader noted that the system was severely hindered by its inability to handle alignments involving multi-word units. This suggests that results should be significantly better with a modern <a href="morphology.htm#Related-PBSMT">PBSMT</a> system.</p>
+<p>Schrader (<a href="morphology.htm#schrader2006">2006</a>) addresses the problem of aligning German noun compounds with English multi-word units. She identifies a compound as any word of 12 or more characters, marked by a POS tagger as a noun. When a compound noun is identified, she invokes a special procedure for identifying potential English multi-word units with which it might align. Overall, the process resulted in 70% recall.</p>
+<p class="Annotation">No baseline for comparison exists, confirmed in email from Bettina.</p>
+<p>Schrader argues that compounds should not be broken into components, since the meaning of the compound may not be compositional. However, a modern PBSMT system will take this into account, translating the sequence as a unit when possible, and as individual components when not.</p>
+<h4 id="Related-Goldwater_McClosky">Goldwater &amp; McClosky 2005</h4>
+<p>Goldwater &amp; McClosky (<a href="morphology.htm#goldwater-mcclosky2005">2005</a>) provide a good summary of the issues motivating morphology in MT, and the history of related research. They also set up a variety of experiments in Czech-English MT, resulting in a BLEU score improvement from 0.270 to 0.333.</p>
+<p>Their last experimental setup is supposed to use full morphemes. However, they are not what I conceive of as morphemes. First they lemmatize each word and attach pseudowords (<em>cars</em> &rarr; <em>car+PL</em>), then they fiddle with the alignment algorithm to treat the word as a complex structure. As discussed <a href="morphology.htm#Intro-SMT">above</a>, this has potential advantages over treating morphemes as words (<em>cars</em> &rarr; <em>car +s</em>) and using GIZA++ for alignment, but is also more challenging to implement.</p>
+<p>A quick glance at their sample Czech data suggests that it is highly fusional and suppletive. This suggests that I would be better off postponing work with Czech until I have made progress with a cleaner agglutinative language, such as German.</p>
+<h4>Isbihani et&nbsp;al. 2006</h4>
+<p>Isbihani et&nbsp;al. (2006) compared the impact on MT of various methods for segmenting Arabic source text. They found that the best results came from an unsupervised method using an FSA augmented with a memory of word properties.</p>
+<h2 id="Related-Factored_LM">Factored Language Models</h2>
+<p>???</p>
+<h2 id="Corpus_Linguistics">Corpus Linguistics</h2>
+<h4 id="Babych__Hartley">Babych &amp; Hartley 2003</h4>
+<p>As part of a paper on ???, Babych &amp; Hartley (<a href="morphology.htm#babych-hartley2003">2003</a>) introduced the s-score heuristic for identifying content words in a large corpus.</p>
+<h1 id="Task_Formulation">Task Formulation</h1>
+<h2>Hypothesis</h2>
+<p>This set of experiments is intended to support the following (complex) hypothesis:</p>
+<ol class="Emphasis">
+  <li>Unsupervised morphological induction (UMI) can improve the quality of crosslingual WSD.</li>
+  <li>Crosslingual WSD can improve the quality of phrase-based statistical MT.</li>
+</ol>
+<h2 id="Resources">Resources</h2>
+<h4 id="Res-Languages_of_Interest">Software</h4>
+<p>For WSD we will use the system described in (Kenschaft 2005).</p>
+<p>For MT we will use Hiero for original experiments. The WSD system will provide lexical selection recommendations.</p>
+<h4 id="Res-Languages_of_Interest">Languages of Interest</h4>
+<p>Choices of language are driven by several factors:</p>
+<ol>
+  <li>morphological complexity &amp; variation</li>
+  <li>ease of experimentation</li>
+  <ol>
+    <li>availability of&nbsp;<a href="morphology.htm#Res-Parallel_Text">parallel text</a></li>
+    <li>readability to native English speaker (me)</li>
+  </ol>
+  <li>demand within the broader research community</li>
+</ol>
+<p>We mostly limit our experiments to language pairs with English as the target language, because English is relatively simple morphologically. We can therefore hope to get away with doing morphological analysis only on the source side, postponing various challenges introduced by doing similar analysis on the target side.</p>
+<p>For source languages, we will include high-resource languages covering all the major <a href="morphology.htm#Intro-Language_Types">language&nbsp;types</a>.</p>
+<ul>
+  <li>analytic &ndash; e.g.&nbsp;Chinese, Bulgarian</li>
+  <li>agglutinative &ndash; e.g.&nbsp;German, Turkish, Inuktitut</li>
+  <li>fusional &ndash; e.g.&nbsp;Spanish, French</li>
+  <li>suppletive &ndash; e.g.&nbsp;Czech</li>
+  <li>templatic &ndash; e.g.&nbsp;Arabic</li>
+</ul>
+<p class="Annotation">The types are presented in order of the expected degree of challenge to an <a href="morphology.htm#Related-Morph_Unsup">unsupervised morphological induction</a> system.</p>
+<h4 id="Preprocessing_Methods">Preprocessing Methods</h4>
+<p>Several different preprocessing heuristics and algorithms will be evaluated. The simplest will be to truncate each word to <em>n</em> characters, with <em>n</em> ranging from 4 to 7, a la (Och ???). Other simple heuristics will include stripping off inflectional endings known to be common, such as <em>-e</em> and <em>-s</em> in French.</p>
+<p>A more sophisticated UMI algorithm will be based on&nbsp;(<a href="morphology.htm#Koehn__Knight">Koehn &amp; Knight 2003</a>). In a nutshell, we will use known root words to posit structure for longer words containing those roots. Koehn &amp; Knight successfully used this approach with German complex nouns. We predict that it will also be of benefit for more inflectional, less agglutinative languages, such as the Romance languages.</p>
+<p>If we have time, we will also implement other sophisticated heuristics, such as those described in (<a href="morphology.htm#Freitag">Frietag 2005</a>) and (<a href="morphology.htm#Baldwin">Baldwin 2005</a>).</p>
+<h2 id="Evaluation">Evaluation</h2>
+<p>We will evaluate our approaches against the following&nbsp;state-of-the-art systems.</p>
+<h4>Vickrey et&nbsp;al. 2005</h4>
+<p>Vickrey et&nbsp;al. (2005) describe crosslingual WSD results for data taken from the English&rarr;French Europarl parallel corpus (<a href="morphology.htm#koehn2002">Koehn 2002</a>). They graciously sent us a copy of their data so we could replicate their baseline experiment and compare our results to theirs. We will also show results for all other Europarl languages translating into English.</p>
+<p>Vickrey et&nbsp;al. also describe an experiment with filling in a missing ambiguous word in a target sentence. This was intended to prove the potential usefulness of WSD in machine translation. We will repeat their experiment using our own WSD system.</p>
+<h4 id="Cabezas__Resnik_2005_">Cabezas &amp; Resnik 2005</h4>
+<p>Cabezas &amp; Resnik (2005) attempted to use crosslingual WSD to improve Spanish&rarr;English MT, without significant success. We will use the same data, but using morphological analysis, and limiting our efforts to content words.</p>
+<h4 id="Koehn__Knight_2003_">Koehn &amp; Knight 2003</h4>
+<p>Koehn &amp; Knight (2003) used morphological analysis of German compound nouns to improve German&rarr;English MT, with significant success. We will attempt to get a copy of their data, or else construct a comparable framework from the Europarl corpus. We may use Pharaoh instead of Hiero for this set of experiments, in order to most closely mimic their environment. We will show results using:</p>
+<ol>
+  <li> just the original text (baseline)</li>
+  <li>morphological analysis alone</li>
+  <li>morphological analysis and lexical selection using crosslingual WSD</li>
+</ol>
+<p class="FlushLeft">Since our focus is on lexical selection rather than morphology alone, we will be less concerned with whether our result (2) improves upon (Koehn &amp; Knight 2003), and more concerned with the improvement from (2) to (3).</p>
+<p>If time permits, we will also implement Koehn &amp; Knight's algorithm for identifying crosslingually relevant morphology.</p>
+<h4 id="Hiero">Hiero</h4>
+<p>The UMD MT team continues to develop and enhance Hiero. We will evaluate using a recent stable version of the system, Europarl language data, and GALE Arabic&rarr;English data. We will compare results using:</p>
+<ol>
+  <li> Hiero alone</li>
+  <li>morphological analysis on source text</li>
+  <li>WSD for lexical selection.</li>
+</ol>
+<p class="FlushLeft">Again, we will be more interested in the improvement from (2) to (3).</p>
+<h4>Isbihani et&nbsp;al. 2006</h4>
+<p>I am not inclined to pursue any comparisons with this paper, except perhaps as a follow-up exercise.</p>
+<h2 id="Agenda">Agenda</h2>
+<p>Our experiments will follow roughly the following plan.</p>
+<ol class="Roman">
+</ol>
+<p class="Annotation">The complete long-term agenda can be found under&nbsp;<a href="morphology.htm#Future_Work">Future Work</a>.</p>
+<h1 id="Results">Observations and Results</h1>
+<h3 id="Results_WSD">WSD</h3>
+<h4>Preliminary</h4>
+<p>The number of possible experiments based on (<a href="morphology.htm#I">I</a>) above is obviously huge. We ran several representative experiments on small data sets with various languages, using English translations as a sense inventory. Some results are listed in <em>Table 1</em>, using the following key.</p>
+<ul>
+  <li>Source</li>
+  <ul>
+    <li>Lang : source-target language pair, using standard abbreviations (e.g.&nbsp;<em>de-en</em> for <em>German-English</em>)</li>
+    <li>Process: text preprocessing, according to the following options</li>
+    <ul>
+      <li>none : no preprocessing</li>
+    </ul>
+    <ul>
+      <li>truncN : truncate to N characters</li>
+      <li>lc : lowercase all</li>
+      <li>diac : eliminate diacritics</li>
+      <li>suffix : strip common inflectional endings (-e and -s)</li>
+    </ul>
+  </ul>
+  <li>Evaluation</li>
+  <ul>
+    <li>Dev : accuracy on dev set</li>
+  </ul>
+  <li>Statistics</li>
+  <ul>
+    <li>Types : number of distinct types (i.e.&nbsp;word forms) being disambiguated</li>
+    <li>Senses : total number of distinct senses (i.e.&nbsp;translations) for all types</li>
+    <li>Examples : total number of training examples for all types</li>
+    <li>S/T : average number of senses per type</li>
+    <li>E/T : average number of examples per type</li>
+    <li>E/S : average number of examples per sense</li>
+  </ul>
+</ul>
+<p>Experiments are sorted by language in decreasing order of accuracy. Blue is the baseline.</p>
+<table class="ColGrid FlushLeft Small">
+   <caption>Table 1: Na&iuml;ve WSD results</caption>
+   <tbody>
+    <tr class="BottomBorder">
+      <th style="text-align: center;">Lang</th>
+      <th style="text-align: center;">Process</th>
+      <th style="text-align: right;" class="Column">Dev</th>
+      <th style="text-align: right;">Types</th>
+      <th style="text-align: right;">Senses</th>
+      <th style="text-align: right;">Examples</th>
+      <th style="text-align: right;">S/T</th>
+      <th style="text-align: right;">E/T</th>
+      <th style="text-align: right;">E/S</th>
+    </tr>
+		<tr class="BorderTop">
+			<td colspan="1" rowspan="5" class="SoftHighlight" style="font-style: italic; text-align: center;" height="17">de-en</td>
+			<td style="text-align: center;" sdval="6" sdnum="1033;">trunc6</td>
+			<td style="text-align: right;" class="Highlight" sdval="0.575" sdnum="1033;0;0.000">0.575</td>
+			<td style="text-align: right;" sdval="99" sdnum="1033;">99</td>
+			<td style="text-align: right;" sdval="1505" sdnum="1033;">1505</td>
+			<td style="text-align: right;" sdval="127071" sdnum="1033;">127071</td>
+			<td style="text-align: right;" sdval="15.2020202020202" sdnum="1033;0;0.00">15.20</td>
+			<td style="text-align: right;" sdval="1283.54545454545" sdnum="1033;0;0.00">1283.55</td>
+			<td style="text-align: right;" sdval="84.4325581395349" sdnum="1033;0;0.00">84.43</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;" sdval="5" sdnum="1033;">trunc5</td>
+			<td style="text-align: right;" class="Highlight" sdval="0.574" sdnum="1033;0;0.000">0.574</td>
+			<td style="text-align: right;" sdval="96" sdnum="1033;">96</td>
+			<td style="text-align: right;" sdval="1961" sdnum="1033;">1961</td>
+			<td style="text-align: right;" sdval="155221" sdnum="1033;">155221</td>
+			<td style="text-align: right;" sdval="20.4270833333333" sdnum="1033;0;0.00">20.43</td>
+			<td style="text-align: right;" sdval="1616.88541666667" sdnum="1033;0;0.00">1616.89</td>
+			<td style="text-align: right;" sdval="79.1540030596634" sdnum="1033;0;0.00">79.15</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">diac </td>
+			<td style="text-align: right;" class="Highlight" sdval="0.559" sdnum="1033;0;0.000">0.559</td>
+			<td style="text-align: right;" sdval="101" sdnum="1033;">101</td>
+			<td style="text-align: right;" sdval="598" sdnum="1033;">598</td>
+			<td style="text-align: right;" sdval="45048" sdnum="1033;">45048</td>
+			<td style="text-align: right;" sdval="5.92079207920792" sdnum="1033;0;0.00">5.92</td>
+			<td style="text-align: right;" sdval="446.019801980198" sdnum="1033;0;0.00">446.02</td>
+			<td style="text-align: right;" sdval="75.3311036789298" sdnum="1033;0;0.00">75.33</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;" bgcolor="#99ccff">none<br />
+      </td>
+			<td style="text-align: right;" sdval="0.558" sdnum="1033;0;0.000" bgcolor="#99ccff">0.558</td>
+			<td style="text-align: right;" sdval="101" sdnum="1033;" bgcolor="#99ccff">101</td>
+			<td style="text-align: right;" sdval="587" sdnum="1033;" bgcolor="#99ccff">587</td>
+			<td style="text-align: right;" sdval="44330" sdnum="1033;" bgcolor="#99ccff">44330</td>
+			<td style="text-align: right;" sdval="5.81188118811881" sdnum="1033;0;0.00" bgcolor="#99ccff">5.81</td>
+			<td style="text-align: right;" sdval="438.910891089109" sdnum="1033;0;0.00" bgcolor="#99ccff">438.91</td>
+			<td style="text-align: right;" sdval="75.5195911413969" sdnum="1033;0;0.00" bgcolor="#99ccff">75.52</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">lc </td>
+			<td style="text-align: right;" class="Highlight" sdval="0.558" sdnum="1033;0;0.000">0.558</td>
+			<td style="text-align: right;" sdval="101" sdnum="1033;">101</td>
+			<td style="text-align: right;" sdval="587" sdnum="1033;">587</td>
+			<td style="text-align: right;" sdval="44330" sdnum="1033;">44330</td>
+			<td style="text-align: right;" sdval="5.81188118811881" sdnum="1033;0;0.00">5.81</td>
+			<td style="text-align: right;" sdval="438.910891089109" sdnum="1033;0;0.00">438.91</td>
+			<td style="text-align: right;" sdval="75.5195911413969" sdnum="1033;0;0.00">75.52</td>
+		</tr>
+		<tr class="BorderTop">
+			<td colspan="1" rowspan="6" class="SoftHighlight" style="font-style: italic; text-align: center;" height="17">es-en</td>
+			<td style="text-align: center;" sdval="6" sdnum="1033;">trunc6</td>
+			<td style="text-align: right;" class="Highlight" sdval="0.614" sdnum="1033;0;0.000">0.614</td>
+			<td style="text-align: right;" sdval="99" sdnum="1033;">99</td>
+			<td style="text-align: right;" sdval="1006" sdnum="1033;">1006</td>
+			<td style="text-align: right;" sdval="101280" sdnum="1033;">101280</td>
+			<td style="text-align: right;" sdval="10.1616161616162" sdnum="1033;0;0.00">10.16</td>
+			<td style="text-align: right;" sdval="1023.0303030303" sdnum="1033;0;0.00">1023.03</td>
+			<td style="text-align: right;" sdval="100.675944333996" sdnum="1033;0;0.00">100.68</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;" sdval="5" sdnum="1033;">trunc5</td>
+			<td style="text-align: right;" class="Highlight" sdval="0.608" sdnum="1033;0;0.000">0.608</td>
+			<td style="text-align: right;" sdval="98" sdnum="1033;">98</td>
+			<td style="text-align: right;" sdval="1490" sdnum="1033;">1490</td>
+			<td style="text-align: right;" sdval="136166" sdnum="1033;">136166</td>
+			<td style="text-align: right;" sdval="15.2040816326531" sdnum="1033;0;0.00">15.20</td>
+			<td style="text-align: right;" sdval="1389.44897959184" sdnum="1033;0;0.00">1389.45</td>
+			<td style="text-align: right;" sdval="91.3865771812081" sdnum="1033;0;0.00">91.39</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">diac </td>
+			<td style="text-align: right;" class="Highlight" sdval="0.604" sdnum="1033;0;0.000">0.604</td>
+			<td style="text-align: right;" sdval="104" sdnum="1033;">104</td>
+			<td style="text-align: right;" sdval="618" sdnum="1033;">618</td>
+			<td style="text-align: right;" sdval="50637" sdnum="1033;">50637</td>
+			<td style="text-align: right;" sdval="5.94230769230769" sdnum="1033;0;0.00">5.94</td>
+			<td style="text-align: right;" sdval="486.894230769231" sdnum="1033;0;0.00">486.89</td>
+			<td style="text-align: right;" sdval="81.9368932038835" sdnum="1033;0;0.00">81.94</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;" bgcolor="#99ccff">none </td>
+			<td style="text-align: right;" sdval="0.598" sdnum="1033;0;0.000" bgcolor="#99ccff">0.598</td>
+			<td style="text-align: right;" sdval="104" sdnum="1033;" bgcolor="#99ccff">104</td>
+			<td style="text-align: right;" sdval="610" sdnum="1033;" bgcolor="#99ccff">610</td>
+			<td style="text-align: right;" sdval="46811" sdnum="1033;" bgcolor="#99ccff">46811</td>
+			<td style="text-align: right;" sdval="5.86538461538462" sdnum="1033;0;0.00" bgcolor="#99ccff">5.87</td>
+			<td style="text-align: right;" sdval="450.105769230769" sdnum="1033;0;0.00" bgcolor="#99ccff">450.11</td>
+			<td style="text-align: right;" sdval="76.7393442622951" sdnum="1033;0;0.00" bgcolor="#99ccff">76.74</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">lc </td>
+			<td style="text-align: right;" class="Highlight" sdval="0.598" sdnum="1033;0;0.000">0.598</td>
+			<td style="text-align: right;" sdval="104" sdnum="1033;">104</td>
+			<td style="text-align: right;" sdval="610" sdnum="1033;">610</td>
+			<td style="text-align: right;" sdval="46811" sdnum="1033;">46811</td>
+			<td style="text-align: right;" sdval="5.86538461538462" sdnum="1033;0;0.00">5.87</td>
+			<td style="text-align: right;" sdval="450.105769230769" sdnum="1033;0;0.00">450.11</td>
+			<td style="text-align: right;" sdval="76.7393442622951" sdnum="1033;0;0.00">76.74</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">strip </td>
+			<td style="text-align: right;" class="Highlight" sdval="0.575" sdnum="1033;0;0.000">0.575</td>
+			<td style="text-align: right;" sdval="97" sdnum="1033;">97</td>
+			<td style="text-align: right;" sdval="825" sdnum="1033;">825</td>
+			<td style="text-align: right;" sdval="93046" sdnum="1033;">93046</td>
+			<td style="text-align: right;" sdval="8.50515463917526" sdnum="1033;0;0.00">8.51</td>
+			<td style="text-align: right;" sdval="959.237113402062" sdnum="1033;0;0.00">959.24</td>
+			<td style="text-align: right;" sdval="112.78303030303" sdnum="1033;0;0.00">112.78</td>
+		</tr>
+		<tr class="BorderTop">
+			<td colspan="1" rowspan="5" class="SoftHighlight" style="font-style: italic; text-align: center;" height="17" width="91">fi-en</td>
+			<td style="text-align: center;" sdval="6" sdnum="1033;" width="56">trunc6</td>
+			<td style="text-align: right;" class="Highlight" sdval="0.56" sdnum="1033;0;0.000" width="52">0.560</td>
+			<td style="text-align: right;" sdval="60" sdnum="1033;" width="59">60</td>
+			<td style="text-align: right;" sdval="522" sdnum="1033;" width="69">522</td>
+			<td style="text-align: right;" sdval="37618" sdnum="1033;" width="89">37618</td>
+			<td style="text-align: right;" sdval="8.7" sdnum="1033;0;0.00" width="52">8.70</td>
+			<td style="text-align: right;" sdval="626.966666666667" sdnum="1033;0;0.00" width="69">626.97</td>
+			<td style="text-align: right;" sdval="72.0651340996169" sdnum="1033;0;0.00" width="60">72.07</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;" sdval="5" sdnum="1033;">trunc5</td>
+			<td style="text-align: right;" class="Highlight" sdval="0.557" sdnum="1033;0;0.000">0.557</td>
+			<td style="text-align: right;" sdval="58" sdnum="1033;">58</td>
+			<td style="text-align: right;" sdval="755" sdnum="1033;">755</td>
+			<td style="text-align: right;" sdval="55885" sdnum="1033;">55885</td>
+			<td style="text-align: right;" sdval="13.0172413793103" sdnum="1033;0;0.00">13.02</td>
+			<td style="text-align: right;" sdval="963.534482758621" sdnum="1033;0;0.00">963.53</td>
+			<td style="text-align: right;" sdval="74.0198675496689" sdnum="1033;0;0.00">74.02</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">lc </td>
+			<td style="text-align: right;" class="Highlight" sdval="0.539" sdnum="1033;0;0.000">0.539</td>
+			<td style="text-align: right;" sdval="63" sdnum="1033;">63</td>
+			<td style="text-align: right;" sdval="347" sdnum="1033;">347</td>
+			<td style="text-align: right;" sdval="25411" sdnum="1033;">25411</td>
+			<td style="text-align: right;" sdval="5.50793650793651" sdnum="1033;0;0.00">5.51</td>
+			<td style="text-align: right;" sdval="403.349206349206" sdnum="1033;0;0.00">403.35</td>
+			<td style="text-align: right;" sdval="73.2305475504323" sdnum="1033;0;0.00">73.23</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;" bgcolor="#99ccff">none </td>
+			<td style="text-align: right;" sdval="0.539" sdnum="1033;0;0.000" bgcolor="#99ccff">0.539</td>
+			<td style="text-align: right;" sdval="63" sdnum="1033;" bgcolor="#99ccff">63</td>
+			<td style="text-align: right;" sdval="347" sdnum="1033;" bgcolor="#99ccff">347</td>
+			<td style="text-align: right;" sdval="25411" sdnum="1033;" bgcolor="#99ccff">25411</td>
+			<td style="text-align: right;" sdval="5.50793650793651" sdnum="1033;0;0.00" bgcolor="#99ccff">5.51</td>
+			<td style="text-align: right;" sdval="403.349206349206" sdnum="1033;0;0.00" bgcolor="#99ccff">403.35</td>
+			<td style="text-align: right;" sdval="73.2305475504323" sdnum="1033;0;0.00" bgcolor="#99ccff">73.23</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">diac </td>
+			<td style="text-align: right;" class="Highlight" sdval="0.538" sdnum="1033;0;0.000">0.538</td>
+			<td style="text-align: right;" sdval="63" sdnum="1033;">63</td>
+			<td style="text-align: right;" sdval="347" sdnum="1033;">347</td>
+			<td style="text-align: right;" sdval="25411" sdnum="1033;">25411</td>
+			<td style="text-align: right;" sdval="5.50793650793651" sdnum="1033;0;0.00">5.51</td>
+			<td style="text-align: right;" sdval="403.349206349206" sdnum="1033;0;0.00">403.35</td>
+			<td style="text-align: right;" sdval="73.2305475504323" sdnum="1033;0;0.00">73.23</td>
+		</tr>
+		<tr class="BorderTop">
+			<td colspan="1" rowspan="6" class="SoftHighlight" style="font-style: italic; text-align: center;" height="17">fr-en</td>
+			<td style="text-align: center;" sdval="6" sdnum="1033;">trunc6</td>
+			<td style="text-align: right;" class="Highlight" sdval="0.598" sdnum="1033;0;0.000">0.598</td>
+			<td style="text-align: right;" sdval="75" sdnum="1033;">75</td>
+			<td style="text-align: right;" sdval="930" sdnum="1033;">930</td>
+			<td style="text-align: right;" sdval="79461" sdnum="1033;">79461</td>
+			<td style="text-align: right;" sdval="12.4" sdnum="1033;0;0.00">12.40</td>
+			<td style="text-align: right;" sdval="1059.48" sdnum="1033;0;0.00">1059.48</td>
+			<td style="text-align: right;" sdval="85.441935483871" sdnum="1033;0;0.00">85.44</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;" sdval="5" sdnum="1033;">trunc5</td>
+			<td style="text-align: right;" class="Highlight" sdval="0.593" sdnum="1033;0;0.000">0.593</td>
+			<td style="text-align: right;" sdval="74" sdnum="1033;">74</td>
+			<td style="text-align: right;" sdval="1338" sdnum="1033;">1338</td>
+			<td style="text-align: right;" sdval="111140" sdnum="1033;">111140</td>
+			<td style="text-align: right;" sdval="18.0810810810811" sdnum="1033;0;0.00">18.08</td>
+			<td style="text-align: right;" sdval="1501.89189189189" sdnum="1033;0;0.00">1501.89</td>
+			<td style="text-align: right;" sdval="83.0642750373692" sdnum="1033;0;0.00">83.06</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">diac </td>
+			<td style="text-align: right;" class="Highlight" sdval="0.586" sdnum="1033;0;0.000">0.586</td>
+			<td style="text-align: right;" sdval="80" sdnum="1033;">80</td>
+			<td style="text-align: right;" sdval="485" sdnum="1033;">485</td>
+			<td style="text-align: right;" sdval="36139" sdnum="1033;">36139</td>
+			<td style="text-align: right;" sdval="6.0625" sdnum="1033;0;0.00">6.06</td>
+			<td style="text-align: right;" sdval="451.7375" sdnum="1033;0;0.00">451.74</td>
+			<td style="text-align: right;" sdval="74.5134020618557" sdnum="1033;0;0.00">74.51</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;" bgcolor="#99ccff">none </td>
+			<td style="text-align: right;" sdval="0.584" sdnum="1033;0;0.000" bgcolor="#99ccff">0.584</td>
+			<td style="text-align: right;" sdval="80" sdnum="1033;" bgcolor="#99ccff">80</td>
+			<td style="text-align: right;" sdval="478" sdnum="1033;" bgcolor="#99ccff">478</td>
+			<td style="text-align: right;" sdval="35857" sdnum="1033;" bgcolor="#99ccff">35857</td>
+			<td style="text-align: right;" sdval="5.975" sdnum="1033;0;0.00" bgcolor="#99ccff">5.98</td>
+			<td style="text-align: right;" sdval="448.2125" sdnum="1033;0;0.00" bgcolor="#99ccff">448.21</td>
+			<td style="text-align: right;" sdval="75.0146443514644" sdnum="1033;0;0.00" bgcolor="#99ccff">75.01</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">lc </td>
+			<td style="text-align: right;" class="Highlight" sdval="0.583" sdnum="1033;0;0.000">0.583</td>
+			<td style="text-align: right;" sdval="80" sdnum="1033;">80</td>
+			<td style="text-align: right;" sdval="478" sdnum="1033;">478</td>
+			<td style="text-align: right;" sdval="35857" sdnum="1033;">35857</td>
+			<td style="text-align: right;" sdval="5.975" sdnum="1033;0;0.00">5.98</td>
+			<td style="text-align: right;" sdval="448.2125" sdnum="1033;0;0.00">448.21</td>
+			<td style="text-align: right;" sdval="75.0146443514644" sdnum="1033;0;0.00">75.01</td>
+		</tr>
+		<tr class="BorderBottom">
+			<td style="text-align: center;">strip </td>
+			<td style="text-align: right;" class="Highlight" sdval="0.568" sdnum="1033;0;0.000">0.568</td>
+			<td style="text-align: right;" sdval="77" sdnum="1033;">77</td>
+			<td style="text-align: right;" sdval="650" sdnum="1033;">650</td>
+			<td style="text-align: right;" sdval="66794" sdnum="1033;">66794</td>
+			<td style="text-align: right;" sdval="8.44155844155844" sdnum="1033;0;0.00">8.44</td>
+			<td style="text-align: right;" sdval="867.454545454546" sdnum="1033;0;0.00">867.45</td>
+			<td style="text-align: right;" sdval="102.76" sdnum="1033;0;0.00">102.76</td>
+		</tr>
+  </tbody>
+</table>
+<p>graphs???</p>
+<p>Certain observations jump out across all languages tested.</p>
+<ol>
+  <li>Of these na&iuml;ve heuristics, only truncation has a significant positive effect. This suggests that truncation alone might help MT, as suggested in (Och ???).</li>
+  <li>Lowercasing and removing diacritics have negligible effect. We held these constant for later experiments.</li>
+  <li>Stripping common inflectional endings has a significant negative effect. This suggests that those endings carry more semantic weight than we may have thought. The final -s, in particular, might carry information of benefit to lexical selection.</li>
+  <li>There is no obvious correlation of accuracy with any of the statistics noted, unless we throw out "strip" experiments as an outlier. In that case, there is a correlation with E/S, the average number of examples per sense. In other words, if we can increase the amount of available data without losing important information or increasing the complexity of the problem, we win.</li>
+</ol>
+<h2 id="Results_Morphology">Morphology</h2>
+<p>It is difficult to evaluate a system for morphological analysis directly without a large annotated corpus. However, it is possible to produce anecdotal evidence to highlight the potential benefits, and to demonstrate its impact on downstream applications where evaluation metrics are available.</p>
+<p class="Annotation">It should also be possible to compare results against rule-based systems for well-studied languages, but I have not tried this.</p>
+<h3 id="Results_Rare_Events">Rare Events</h3>
+<p>Schrader (<a href="morphology.htm#schrader2006">2006</a>) observes that compounding languages such as German have an inordinately high proportion of rare events. Indeed, roughly half of the token types are <a href="http://en.wikipedia.org/wiki/Hapax_legomenon">hapax</a>. Presumably, a statistical system has a zero-percent chance of translating these correctly, since the ones that occur in the test set never occur in training. Likewise, the frequency of rare events (however defined) will adversely affect the quality of translation. While most languages are not as bad as German, Zipf's law suggests that rare events will always have a comparatively high frequency. Morphological analysis can have a potentially profound impact by reducing these impossible or nearly impossible cases to component morphemes which the system recognizes.</p>
+<p>The problem may not be as bad as it seems at first. Even if half the token <em>types</em> are hapax, the percentage of singleton <em>tokens</em> will be considerably fewer, often less than one percent of all tokens. On the other hand, these hapax tokens are likely to be critical to the adequacy of translation, where the highest frequency types are most likely to be function words.</p>
+<p class="Annotation">In other words, rare events are far more critcal to correct translation than is captured by their relative impact on BLEU score or other automated measures. Note for future work: Develop an evaluation metric for MT which weights the contribution of a word on the overall score based on its s-score.</p>
+<p>We performed analysis similar to that in Schrader (2006) for German, English, French, Spanish, and Finnish corpora, both before and after breaking words into component morphemes. For the purpose of analysis, we considered "rare" any word that occurs 10 or fewer times in the corpus. The results are in <em>Table 2</em>.</p>
+<table class="Border FlushLeft Small">
+   <caption>Table 2: Rare events</caption>
+    <tbody>
+    <tr>
+      <th></th>
+      <th><br />
+      </th>
+      <th class="BorderLeft" style="text-align: center;" colspan="2" rowspan="1">Total<br />
+      </th>
+      <th style="text-align: center;" class="BorderLeft" colspan="3" rowspan="1">Frequency 1</th>
+      <th class="BorderLeft" style="text-align: center;" colspan="3" rowspan="1">Frequency 1-10</th>
+    </tr>
+    <tr class="BottomBorder BorderBottom">
+      <th></th>
+      <th><br />
+      </th>
+      <th class="BorderLeft" style="text-align: right;">#&nbsp;Types</th>
+      <th style="text-align: right;">#&nbsp;Tokens</th>
+      <th class="BorderLeft" style="text-align: right;">#&nbsp;Tokens</th>
+      <th style="text-align: right;">%&nbsp;Types</th>
+      <th>%&nbsp;Tokens</th>
+      <th class="BorderLeft">#&nbsp;Tokens</th>
+      <th>%&nbsp;Types</th>
+      <th>%&nbsp;Tokens</th>
+    </tr>
+		<tr>
+			<th class="Label">English</th>
+      <th class="Label">Words</th>
+			<td class="BorderLeft" style="text-align: right;">34,827</td>
+      <td style="text-align: right;">10,648,289</td>
+      <td style="text-align: right;" class="BorderLeft">9,361</td>
+			<td style="text-align: right;">26.88%<br />
+      </td>
+      <td style="text-align: right;">0.088%</td>
+      <td class="BorderLeft" style="text-align: right;">21,350</td>
+      <td style="text-align: right;">61.82%</td>
+      <td style="text-align: right;">0.587%</td>
+		</tr>
+		<tr class="BorderBottom SoftHighlight">
+			<th class="Label"></th>
+      <th class="Label">Morphemes</th>
+			<td class="BorderLeft" style="text-align: right;">18,955<br />
+      </td>
+      <td style="text-align: right;">10,659,570</td>
+      <td style="text-align: right;" class="BorderLeft">3,991</td>
+			<td style="text-align: right;">21.06%<br />
+      </td>
+      <td style="text-align: right;">0.038%</td>
+      <td class="BorderLeft" style="text-align: right;">9,817</td>
+      <td style="text-align: right;">51.79%</td>
+      <td style="text-align: right;">0.285%</td>
+		</tr>
+    <tr>
+      <th class="Label">Finnish</th>
+      <th class="Label">Words</th>
+      <td class="BorderLeft Highlight" style="text-align: right;">301,597</td>
+      <td style="text-align: right;">7,835,581</td>
+      <td style="text-align: right;" class="BorderLeft">155,994</td>
+      <td style="text-align: right;">51.72%</td>
+      <td style="text-align: right;">1.990%</td>
+      <td class="BorderLeft Highlight" style="text-align: right;">259,890</td>
+      <td style="text-align: right;">86.17%</td>
+      <td style="text-align: right;">7.102%</td>
+    </tr>
+    <tr class="BorderBottom SoftHighlight">
+      <th class="Label"></th>
+      <th class="Label">Morphemes</th>
+      <td class="BorderLeft Highlight" style="text-align: right;">38,019</td>
+      <td style="text-align: right;">8,085,040</td>
+      <td style="text-align: right;" class="BorderLeft">12,238</td>
+      <td style="text-align: right;">32.19%</td>
+      <td style="text-align: right;">0.151%</td>
+      <td class="BorderLeft Highlight" style="text-align: right;">24,095</td>
+      <td style="text-align: right;">63.38%</td>
+      <td style="text-align: right;">0.788%</td>
+    </tr>
+		<tr>
+			<th class="Label">French</th>
+      <th class="Label">Words</th>
+			<td class="BorderLeft" style="text-align: right;">55,985</td>
+      <td style="text-align: right;">12,036,764</td>
+      <td style="text-align: right;" class="BorderLeft">16,404 </td>
+			<td style="text-align: right;">29.30%</td>
+      <td style="text-align: right;">0.136%</td>
+      <td class="BorderLeft" style="text-align: right;">37,045</td>
+      <td style="text-align: right;">66.17%</td>
+      <td style="text-align: right;">0.875%</td>
+		</tr>
+    <tr class="BorderBottom SoftHighlight">
+      <th class="Label"></th>
+      <th class="Label">Morphemes</th>
+      <td class="BorderLeft" style="text-align: right;">25,880</td>
+      <td style="text-align: right;">12,058,591</td>
+      <td style="text-align: right;" class="BorderLeft">5,756</td>
+      <td style="text-align: right;">22.24%</td>
+      <td style="text-align: right;">0.048%</td>
+      <td class="BorderLeft" style="text-align: right;">13,524</td>
+      <td style="text-align: right;">52.26%</td>
+      <td style="text-align: right;">0.334%</td>
+    </tr>
+    <tr>
+      <th class="Label">German</th>
+      <th class="Label">Words</th>
+      <td class="BorderLeft Highlight" style="text-align: right;">170,402</td>
+      <td style="text-align: right;">13,233,854</td>
+      <td style="text-align: right;" class="BorderLeft">81,052</td>
+      <td style="text-align: right;">47.57%</td>
+      <td style="text-align: right;">0.613%</td>
+      <td class="BorderLeft Highlight" style="text-align: right;">140,464</td>
+      <td style="text-align: right;">82.43%</td>
+      <td style="text-align: right;">2.377%</td>
+    </tr>
+    <tr class="BorderBottom SoftHighlight">
+      <th class="Label"></th>
+      <th class="Label">Morphemes</th>
+      <td class="BorderLeft Highlight" style="text-align: right;">30,898</td>
+      <td style="text-align: right;">13,348,182</td>
+      <td style="text-align: right;" class="BorderLeft">9,836</td>
+      <td style="text-align: right;">31.83%</td>
+      <td style="text-align: right;">0.074%</td>
+      <td class="BorderLeft Highlight" style="text-align: right;">19,507</td>
+      <td style="text-align: right;">63.13%</td>
+      <td style="text-align: right;">0.385%</td>
+    </tr>
+    <tr>
+      <th class="Label">Spanish</th>
+      <th class="Label">Words</th>
+      <td class="BorderLeft" style="text-align: right;">77,526</td>
+      <td style="text-align: right;">12,495,786</td>
+      <td class="BorderLeft" style="text-align: right;">25,772</td>
+      <td style="text-align: right;">33.24%</td>
+      <td style="text-align: right;">0.201%</td>
+      <td class="BorderLeft" style="text-align: right;">54,908</td>
+      <td style="text-align: right;">70.83%</td>
+      <td style="text-align: right;">1.182%</td>
+    </tr>
+    <tr class="SoftHighlight">
+      <th class="Label"></th>
+      <th class="Label">Morphemes</th>
+      <td class="BorderLeft" style="text-align: right;">32,407</td>
+      <td style="text-align: right;">12,530,435</td>
+      <td class="BorderLeft" style="text-align: right;">8,102</td>
+      <td style="text-align: right;">25.00%</td>
+      <td style="text-align: right;">0.065%</td>
+      <td class="BorderLeft" style="text-align: right;">18,334</td>
+      <td style="text-align: right;">56.57%</td>
+      <td style="text-align: right;">0.425%</td>
+    </tr>
+  </tbody>
+</table>
+<p>bar graphs ???</p>
+<p>As expected, the results are dramatic for German, a compounding language, where the number of distinct types drops 82% from 170,402 to 30,898, and the number of rare tokens drops 86% from 140,464 to 19,507. The results are even more dramatic for Finnish, a highly inflected language, where the number of distinct types drops 87%
+from 301,597 to 38,019, and the number of rare tokens drops 91% from 259,890 to 24,095. We expect to see the most impact on translation quality in these languages.</p>
+<p>However, the reduction in complexity is considerable for all languages, even English, a mostly isolating language. We can reasonably expect improvements in translation and other downstream applications in all these languages.</p>
+<p>Note that the number of tokens necessarily goes up as words are broken into component morphemes, but the amount of increase is not as significant as one might expect. Presumably, this reflects the characteristic of language that the most common words are likely to be morphological simple (or irregular, in the case of common verbs).</p>
+<p class="Annotation">To be honest, the amount of increase seems ridiculously low. You would expect the increase in tokens to be at least the same magnitude as the decrease in types, but this is not always the case. I will need to double check the code, in case I missed something in the counting. But I expect the conclusions to remain essentially the same.</p>
+<p class="Annotation">Schrader (2006) used a totally different approach, both to simplification and evaluation. It is difficult to compare results.</p>
+<h3 id="Results_Morphology_WSD">Morphology &amp; WSD</h3>
+<p> For the impact of morphological analysis on WSD, I have so far have only investigated the Vickrey en-fr data. The corpus is much smaller than the full Europarl corpora, and uses morphologically poor English as the source language. It is therefore difficult to predict how the results will correllate with similar experiments on the full Europarl corpora.</p>
+<p>The analysis involves six systems:</p>
+<ol>
+  <li>baseline &ndash; always choose the most common sense</li>
+  <li>sgt.unmod &ndash; run the WSD system on unmodified data</li>
+  <li>sgt.trunc5 &ndash; run the WSD system with all words truncated to 5 characters</li>
+  <li>sgt.trunc6 &ndash; run the WSD system with all words truncated to 6 characters</li>
+  <li>sgt.morph &ndash; run the WSD system using full morphological analysis</li>
+  <li>best &ndash; for each word, evaluate each of the above 5 systems on a dev set, and use the best-performing system to make predictions on the test set</li>
+  <li>best (no morph) &ndash; same as (6), but omitting sgt.morph</li>
+</ol>
+<table id="Table_WSD_Results" class="Border Inset FloatRight">
+   <caption>Table&nbsp;3:&nbsp;WSD&nbsp;results&nbsp;on&nbsp;Vickrey&nbsp;English&nbsp;data (as&nbsp;of&nbsp;9/27/06)</caption>
+    <tbody>
+    <tr class="BottomBorder BorderBottom">
+      <th class="BorderRight"><br />
+      </th>
+      <th style="text-align: right;">Precision</th>
+      <th class="BorderLeft" style="text-align: right;"># Best</th>
+    </tr>
+		<tr>
+      <th class="Label BorderRight">baseline</th>
+      <td style="text-align: right;">52.94%</td>
+      <td style="text-align: right;" class="BorderLeft">595</td>
+		</tr>
+		<tr>
+      <th class="Label BorderRight">sgt.unmod</th>
+      <td style="text-align: right;">55.59%</td>
+      <td style="text-align: right;" class="BorderLeft">540</td>
+		</tr>
+    <tr>
+      <th class="Label BorderRight">sgt.trunc5</th>
+      <td style="text-align: right;">49.96%</td>
+      <td style="text-align: right;" class="BorderLeft">214</td>
+    </tr>
+    <tr>
+      <th class="Label BorderRight">sgt.trunc6</th>
+      <td style="text-align: right;">51.53%</td>
+      <td style="text-align: right;" class="BorderLeft">228</td>
+    </tr>
+		<tr>
+      <th class="Label BorderRight">sgt.morph</th>
+      <td style="text-align: right;">54.66%</td>
+      <td style="text-align: right;" class="BorderLeft">294 </td>
+		</tr>
+  <tr>
+      <th class="Label BorderRight">best</th>
+      <td style="text-align: right;">57.73%</td>
+      <td style="text-align: right;" class="BorderLeft">&ndash;</td>
+    </tr>
+    <tr class="BorderTop">
+      <th class="Label BorderRight">Vickrey baseline</th>
+      <td style="text-align: right;">52.6%</td>
+      <td style="text-align: right;" class="BorderLeft">&ndash;</td>
+    </tr>
+    <tr>
+      <th class="Label BorderRight">Vickrey best</th>
+      <td style="text-align: right;">62.0%</td>
+      <td style="text-align: right;" class="BorderLeft"></td>
+    </tr>
+  </tbody>
+</table>
+<p>The overall results of applying morphological analysis were negative. <em>Table 3</em> shows the overall precision of each the above methods, and the number of words for which each method proved to be the best system.</p>
+<p> In the WSD experiments reported in <em>Table 1</em>, all systems markedly outperformed baseline. As suggested above, there are several reasons why these new results in <em>Table 3</em> may not be indicative. For one, it is an unusually small training set, with very sparse data &ndash; more than 25% of words have 60 or fewer examples, with the median at 164 examples. Also, this example uses English, which we know to be morphologically poor. It will be useful to compare results on other data sets.</p>
+<p>The second column provides useful insights. Although the unmodified WSD system is the best overall performer, the baseline is the best performer on more words. Each of the other three systems is the best performer on a non-neglible minority. This suggests there might be significant benefits from using a dev set to determine which system performs the best on a given word, and using that system on the actual test data.</p>
+<p>Eyeballing a word-by-word breakdown of results (not included) does not shed much light. The ultra-high-frequency words tend to work best with either the baseline or unmodified WSD, which helps explain the high overall scores of those systems. Beyond this, it is not immediately clear how results are correllated. It's not even clear that the words where the morphological system performs best are those with the most morphological variation. For instance, <em>love</em> is one of these words, where no other morphologically similar words occur in the corpus.</p>
+<ul>
+  <li>Source</li>
+  <ul>
+    <li>Lang : the source-target language pair, using common abbreviations (e.g.&nbsp;<em>de-en</em> for <em>German-English</em>)</li>
+    <li>Alg : algorithm used, taken from the following options</li>
+    <ul>
+      <li>base : baseline, always guess the most common sense</li>
+      <li>wsd : WSD techniques</li>
+    </ul>
+    <li>Process: text preprocessing, according to the following options</li>
+    <ul>
+      <li>none : no preprocessing</li>
+      <li>truncN : truncate to N characters</li>
+      <li>morph : break into (alleged) component morphemes</li>
+      <li>best : use whichever of above methods perfoms best on development data</li>
+    </ul>
+  </ul>
+  <li>Evaluation</li>
+  <ul>
+    <li>Dev : accuracy on dev set</li>
+  </ul>
+  <li>Statistics</li>
+  <ul>
+    <li>Types : number of distinct types (i.e.&nbsp;word forms) being disambiguated</li>
+    <li>Senses : total number of distinct senses (i.e.&nbsp;translations) for all types</li>
+    <li>Examples : total number of training examples for all types</li>
+    <li>S/T : average number of senses per type</li>
+    <li>E/T : average number of examples per type</li>
+    <li>E/S : average number of examples per sense</li>
+  </ul>
+</ul>
+<p></p>
+<table class="ColGrid FlushLeft Small">
+   <caption>Table 3: WSD results on large data sets</caption>
+   <tbody>
+    <tr class="BottomBorder">
+      <th style="text-align: center;">Lang</th>
+      <th style="text-align: center;">Alg</th>
+      <th style="text-align: center;">Process</th>
+      <th style="text-align: right;" class="Column">Dev</th>
+      <th style="text-align: right;">Types</th>
+      <th style="text-align: right;">Senses</th>
+      <th style="text-align: right;">Examples</th>
+      <th style="text-align: right;">S/T</th>
+      <th style="text-align: right;">E/T</th>
+      <th style="text-align: right;">E/S</th>
+    </tr>
+		<tr class="BorderTop">
+			<td class="SoftHighlight" style="font-style: italic; text-align: center;" height="17">de-en</td>
+			<td style="text-align: center;" sdval="6" sdnum="1033;">base</td>
+			<td style="text-align: center;"><br />
+      </td>
+			<td style="text-align: right;" class="Highlight" sdval="0.575" sdnum="1033;0;0.000">0.575</td>
+			<td style="text-align: right;" sdval="99" sdnum="1033;">99</td>
+			<td style="text-align: right;" sdval="1505" sdnum="1033;">1505</td>
+			<td style="text-align: right;" sdval="127071" sdnum="1033;">127071</td>
+			<td style="text-align: right;" sdval="15.2020202020202" sdnum="1033;0;0.00">15.20</td>
+			<td style="text-align: right;" sdval="1283.54545454545" sdnum="1033;0;0.00">1283.55</td>
+			<td style="text-align: right;" sdval="84.4325581395349" sdnum="1033;0;0.00">84.43</td>
+		</tr>
+		<tr>
+			<td class="SoftHighlight" style="font-style: italic; text-align: center;" height="17"></td>
+			<td style="text-align: center;" sdval="5" sdnum="1033;">wsd</td>
+			<td style="text-align: center;">none<br />
+      </td>
+			<td style="text-align: right;" class="Highlight" sdval="0.574" sdnum="1033;0;0.000">0.574</td>
+			<td style="text-align: right;" sdval="96" sdnum="1033;">96</td>
+			<td style="text-align: right;" sdval="1961" sdnum="1033;">1961</td>
+			<td style="text-align: right;" sdval="155221" sdnum="1033;">155221</td>
+			<td style="text-align: right;" sdval="20.4270833333333" sdnum="1033;0;0.00">20.43</td>
+			<td style="text-align: right;" sdval="1616.88541666667" sdnum="1033;0;0.00">1616.89</td>
+			<td style="text-align: right;" sdval="79.1540030596634" sdnum="1033;0;0.00">79.15</td>
+		</tr>
+		<tr>
+			<td class="SoftHighlight" style="font-style: italic; text-align: center;" height="17"></td>
+			<td style="text-align: center;"><br />
+      </td>
+			<td style="text-align: center;">trunc5<br />
+      </td>
+			<td style="text-align: right;" class="Highlight" sdval="0.559" sdnum="1033;0;0.000">0.559</td>
+			<td style="text-align: right;" sdval="101" sdnum="1033;">101</td>
+			<td style="text-align: right;" sdval="598" sdnum="1033;">598</td>
+			<td style="text-align: right;" sdval="45048" sdnum="1033;">45048</td>
+			<td style="text-align: right;" sdval="5.92079207920792" sdnum="1033;0;0.00">5.92</td>
+			<td style="text-align: right;" sdval="446.019801980198" sdnum="1033;0;0.00">446.02</td>
+			<td style="text-align: right;" sdval="75.3311036789298" sdnum="1033;0;0.00">75.33</td>
+		</tr>
+		<tr>
+			<td class="SoftHighlight" style="font-style: italic; text-align: center;" bgcolor="#99ccff" height="17"></td>
+			<td style="text-align: center; background-color: rgb(255, 255, 255);" bgcolor="#99ccff"><br />
+      </td>
+			<td style="text-align: center; background-color: rgb(255, 255, 255);" bgcolor="#99ccff">trunc6<br />
+      </td>
+			<td style="text-align: right; background-color: rgb(255, 255, 255);" sdval="0.558" sdnum="1033;0;0.000" bgcolor="#99ccff">0.558</td>
+			<td style="text-align: right; background-color: rgb(255, 255, 255);" sdval="101" sdnum="1033;" bgcolor="#99ccff">101</td>
+			<td style="text-align: right; background-color: rgb(255, 255, 255);" sdval="587" sdnum="1033;" bgcolor="#99ccff">587</td>
+			<td style="text-align: right; background-color: rgb(255, 255, 255);" sdval="44330" sdnum="1033;" bgcolor="#99ccff">44330</td>
+			<td style="text-align: right; background-color: rgb(255, 255, 255);" sdval="5.81188118811881" sdnum="1033;0;0.00" bgcolor="#99ccff">5.81</td>
+			<td style="text-align: right; background-color: rgb(255, 255, 255);" sdval="438.910891089109" sdnum="1033;0;0.00" bgcolor="#99ccff">438.91</td>
+			<td style="text-align: right; background-color: rgb(255, 255, 255);" sdval="75.5195911413969" sdnum="1033;0;0.00" bgcolor="#99ccff">75.52</td>
+		</tr>
+		<tr>
+      <td class="SoftHighlight" style="font-style: italic; text-align: center;" bgcolor="#99ccff" height="17"></td>
+      <td style="text-align: center; background-color: rgb(255, 255, 255);" bgcolor="#99ccff"><br />
+      </td>
+      <td style="text-align: center; background-color: rgb(255, 255, 255);" bgcolor="#99ccff">morph<br />
+      </td>
+      <td style="text-align: right; background-color: rgb(255, 255, 255);" sdval="0.558" sdnum="1033;0;0.000" bgcolor="#99ccff">0.558</td>
+      <td style="text-align: right; background-color: rgb(255, 255, 255);" sdval="101" sdnum="1033;" bgcolor="#99ccff">101</td>
+      <td style="text-align: right; background-color: rgb(255, 255, 255);" sdval="587" sdnum="1033;" bgcolor="#99ccff">587</td>
+      <td style="text-align: right; background-color: rgb(255, 255, 255);" sdval="44330" sdnum="1033;" bgcolor="#99ccff">44330</td>
+      <td style="text-align: right; background-color: rgb(255, 255, 255);" sdval="5.81188118811881" sdnum="1033;0;0.00" bgcolor="#99ccff">5.81</td>
+      <td style="text-align: right; background-color: rgb(255, 255, 255);" sdval="438.910891089109" sdnum="1033;0;0.00" bgcolor="#99ccff">438.91</td>
+      <td style="text-align: right; background-color: rgb(255, 255, 255);" sdval="75.5195911413969" sdnum="1033;0;0.00" bgcolor="#99ccff">75.52</td>
+    </tr>
+    <tr>
+			<td class="SoftHighlight" style="font-style: italic; text-align: center;" height="17"></td>
+			<td style="text-align: center;"><br />
+      </td>
+			<td style="text-align: center;">best</td>
+			<td style="text-align: right;" class="Highlight" sdval="0.558" sdnum="1033;0;0.000">0.558</td>
+			<td style="text-align: right;" sdval="101" sdnum="1033;">101</td>
+			<td style="text-align: right;" sdval="587" sdnum="1033;">587</td>
+			<td style="text-align: right;" sdval="44330" sdnum="1033;">44330</td>
+			<td style="text-align: right;" sdval="5.81188118811881" sdnum="1033;0;0.00">5.81</td>
+			<td style="text-align: right;" sdval="438.910891089109" sdnum="1033;0;0.00">438.91</td>
+			<td style="text-align: right;" sdval="75.5195911413969" sdnum="1033;0;0.00">75.52</td>
+		</tr>
+		<tr class="BorderTop">
+			<td class="SoftHighlight" style="font-style: italic; text-align: center;" height="17">es-en</td>
+			<td style="text-align: center;" sdval="6" sdnum="1033;">6</td>
+			<td style="text-align: center;"><br />
+      </td>
+			<td style="text-align: right;" class="Highlight" sdval="0.614" sdnum="1033;0;0.000">0.614</td>
+			<td style="text-align: right;" sdval="99" sdnum="1033;">99</td>
+			<td style="text-align: right;" sdval="1006" sdnum="1033;">1006</td>
+			<td style="text-align: right;" sdval="101280" sdnum="1033;">101280</td>
+			<td style="text-align: right;" sdval="10.1616161616162" sdnum="1033;0;0.00">10.16</td>
+			<td style="text-align: right;" sdval="1023.0303030303" sdnum="1033;0;0.00">1023.03</td>
+			<td style="text-align: right;" sdval="100.675944333996" sdnum="1033;0;0.00">100.68</td>
+		</tr>
+		<tr>
+			<td class="SoftHighlight" style="font-style: italic; text-align: center;" height="17"></td>
+			<td style="text-align: center;" sdval="5" sdnum="1033;">5</td>
+			<td style="text-align: center;">lc</td>
+			<td style="text-align: right;" class="Highlight" sdval="0.608" sdnum="1033;0;0.000">0.608</td>
+			<td style="text-align: right;" sdval="98" sdnum="1033;">98</td>
+			<td style="text-align: right;" sdval="1490" sdnum="1033;">1490</td>
+			<td style="text-align: right;" sdval="136166" sdnum="1033;">136166</td>
+			<td style="text-align: right;" sdval="15.2040816326531" sdnum="1033;0;0.00">15.20</td>
+			<td style="text-align: right;" sdval="1389.44897959184" sdnum="1033;0;0.00">1389.45</td>
+			<td style="text-align: right;" sdval="91.3865771812081" sdnum="1033;0;0.00">91.39</td>
+		</tr>
+		<tr>
+			<td class="SoftHighlight" style="font-style: italic; text-align: center;" height="17"></td>
+			<td style="text-align: center;"><br />
+      </td>
+			<td style="text-align: center;"><br />
+      </td>
+			<td style="text-align: right;" class="Highlight" sdval="0.604" sdnum="1033;0;0.000">0.604</td>
+			<td style="text-align: right;" sdval="104" sdnum="1033;">104</td>
+			<td style="text-align: right;" sdval="618" sdnum="1033;">618</td>
+			<td style="text-align: right;" sdval="50637" sdnum="1033;">50637</td>
+			<td style="text-align: right;" sdval="5.94230769230769" sdnum="1033;0;0.00">5.94</td>
+			<td style="text-align: right;" sdval="486.894230769231" sdnum="1033;0;0.00">486.89</td>
+			<td style="text-align: right;" sdval="81.9368932038835" sdnum="1033;0;0.00">81.94</td>
+		</tr>
+		<tr>
+			<td class="SoftHighlight" style="font-style: italic; text-align: center;" bgcolor="#99ccff" height="17"></td>
+			<td style="text-align: center; background-color: rgb(255, 255, 255);" bgcolor="#99ccff"><br />
+      </td>
+			<td style="text-align: center; background-color: rgb(255, 255, 255);" bgcolor="#99ccff"><br />
+      </td>
+			<td style="text-align: right; background-color: rgb(255, 255, 255);" sdval="0.598" sdnum="1033;0;0.000" bgcolor="#99ccff">0.598</td>
+			<td style="text-align: right; background-color: rgb(255, 255, 255);" sdval="104" sdnum="1033;" bgcolor="#99ccff">104</td>
+			<td style="text-align: right; background-color: rgb(255, 255, 255);" sdval="610" sdnum="1033;" bgcolor="#99ccff">610</td>
+			<td style="text-align: right; background-color: rgb(255, 255, 255);" sdval="46811" sdnum="1033;" bgcolor="#99ccff">46811</td>
+			<td style="text-align: right; background-color: rgb(255, 255, 255);" sdval="5.86538461538462" sdnum="1033;0;0.00" bgcolor="#99ccff">5.87</td>
+			<td style="text-align: right; background-color: rgb(255, 255, 255);" sdval="450.105769230769" sdnum="1033;0;0.00" bgcolor="#99ccff">450.11</td>
+			<td style="text-align: right; background-color: rgb(255, 255, 255);" sdval="76.7393442622951" sdnum="1033;0;0.00" bgcolor="#99ccff">76.74</td>
+		</tr>
+		<tr>
+			<td class="SoftHighlight" style="font-style: italic; text-align: center;" height="17"></td>
+			<td style="text-align: center;"><br />
+      </td>
+			<td style="text-align: center;">lc</td>
+			<td style="text-align: right;" class="Highlight" sdval="0.598" sdnum="1033;0;0.000">0.598</td>
+			<td style="text-align: right;" sdval="104" sdnum="1033;">104</td>
+			<td style="text-align: right;" sdval="610" sdnum="1033;">610</td>
+			<td style="text-align: right;" sdval="46811" sdnum="1033;">46811</td>
+			<td style="text-align: right;" sdval="5.86538461538462" sdnum="1033;0;0.00">5.87</td>
+			<td style="text-align: right;" sdval="450.105769230769" sdnum="1033;0;0.00">450.11</td>
+			<td style="text-align: right;" sdval="76.7393442622951" sdnum="1033;0;0.00">76.74</td>
+		</tr>
+		<tr>
+			<td class="SoftHighlight" style="font-style: italic; text-align: center;" height="17"></td>
+			<td style="text-align: center;"><br />
+      </td>
+			<td style="text-align: center;"><br />
+      </td>
+			<td style="text-align: right;" class="Highlight" sdval="0.575" sdnum="1033;0;0.000">0.575</td>
+			<td style="text-align: right;" sdval="97" sdnum="1033;">97</td>
+			<td style="text-align: right;" sdval="825" sdnum="1033;">825</td>
+			<td style="text-align: right;" sdval="93046" sdnum="1033;">93046</td>
+			<td style="text-align: right;" sdval="8.50515463917526" sdnum="1033;0;0.00">8.51</td>
+			<td style="text-align: right;" sdval="959.237113402062" sdnum="1033;0;0.00">959.24</td>
+			<td style="text-align: right;" sdval="112.78303030303" sdnum="1033;0;0.00">112.78</td>
+		</tr>
+		<tr class="BorderTop">
+			<td class="SoftHighlight" style="font-style: italic; text-align: center;" height="17" width="91">fi-en</td>
+			<td style="text-align: center;" sdval="6" sdnum="1033;" width="56">6</td>
+			<td style="text-align: center;" width="33"><br />
+      </td>
+			<td style="text-align: right;" class="Highlight" sdval="0.56" sdnum="1033;0;0.000" width="52">0.560</td>
+			<td style="text-align: right;" sdval="60" sdnum="1033;" width="59">60</td>
+			<td style="text-align: right;" sdval="522" sdnum="1033;" width="69">522</td>
+			<td style="text-align: right;" sdval="37618" sdnum="1033;" width="89">37618</td>
+			<td style="text-align: right;" sdval="8.7" sdnum="1033;0;0.00" width="52">8.70</td>
+			<td style="text-align: right;" sdval="626.966666666667" sdnum="1033;0;0.00" width="69">626.97</td>
+			<td style="text-align: right;" sdval="72.0651340996169" sdnum="1033;0;0.00" width="60">72.07</td>
+		</tr>
+		<tr>
+			<td class="SoftHighlight" style="font-style: italic; text-align: center;" height="17"></td>
+			<td style="text-align: center;" sdval="5" sdnum="1033;">5</td>
+			<td style="text-align: center;"><br />
+      </td>
+			<td style="text-align: right;" class="Highlight" sdval="0.557" sdnum="1033;0;0.000">0.557</td>
+			<td style="text-align: right;" sdval="58" sdnum="1033;">58</td>
+			<td style="text-align: right;" sdval="755" sdnum="1033;">755</td>
+			<td style="text-align: right;" sdval="55885" sdnum="1033;">55885</td>
+			<td style="text-align: right;" sdval="13.0172413793103" sdnum="1033;0;0.00">13.02</td>
+			<td style="text-align: right;" sdval="963.534482758621" sdnum="1033;0;0.00">963.53</td>
+			<td style="text-align: right;" sdval="74.0198675496689" sdnum="1033;0;0.00">74.02</td>
+		</tr>
+		<tr>
+			<td class="SoftHighlight" style="font-style: italic; text-align: center;" height="17"></td>
+			<td style="text-align: center;"><br />
+      </td>
+			<td style="text-align: center;">lc</td>
+			<td style="text-align: right;" class="Highlight" sdval="0.539" sdnum="1033;0;0.000">0.539</td>
+			<td style="text-align: right;" sdval="63" sdnum="1033;">63</td>
+			<td style="text-align: right;" sdval="347" sdnum="1033;">347</td>
+			<td style="text-align: right;" sdval="25411" sdnum="1033;">25411</td>
+			<td style="text-align: right;" sdval="5.50793650793651" sdnum="1033;0;0.00">5.51</td>
+			<td style="text-align: right;" sdval="403.349206349206" sdnum="1033;0;0.00">403.35</td>
+			<td style="text-align: right;" sdval="73.2305475504323" sdnum="1033;0;0.00">73.23</td>
+		</tr>
+		<tr>
+			<td class="SoftHighlight" style="font-style: italic; text-align: center;" bgcolor="#99ccff" height="17"></td>
+			<td style="text-align: center; background-color: rgb(255, 255, 255);" bgcolor="#99ccff"><br />
+      </td>
+			<td style="text-align: center; background-color: rgb(255, 255, 255);" bgcolor="#99ccff"><br />
+      </td>
+			<td style="text-align: right; background-color: rgb(255, 255, 255);" sdval="0.539" sdnum="1033;0;0.000" bgcolor="#99ccff">0.539</td>
+			<td style="text-align: right; background-color: rgb(255, 255, 255);" sdval="63" sdnum="1033;" bgcolor="#99ccff">63</td>
+			<td style="text-align: right; background-color: rgb(255, 255, 255);" sdval="347" sdnum="1033;" bgcolor="#99ccff">347</td>
+			<td style="text-align: right; background-color: rgb(255, 255, 255);" sdval="25411" sdnum="1033;" bgcolor="#99ccff">25411</td>
+			<td style="text-align: right; background-color: rgb(255, 255, 255);" sdval="5.50793650793651" sdnum="1033;0;0.00" bgcolor="#99ccff">5.51</td>
+			<td style="text-align: right; background-color: rgb(255, 255, 255);" sdval="403.349206349206" sdnum="1033;0;0.00" bgcolor="#99ccff">403.35</td>
+			<td style="text-align: right; background-color: rgb(255, 255, 255);" sdval="73.2305475504323" sdnum="1033;0;0.00" bgcolor="#99ccff">73.23</td>
+		</tr>
+		<tr>
+			<td class="SoftHighlight" style="font-style: italic; text-align: center;" height="17"></td>
+			<td style="text-align: center;"><br />
+      </td>
+			<td style="text-align: center;"><br />
+      </td>
+			<td style="text-align: right;" class="Highlight" sdval="0.538" sdnum="1033;0;0.000">0.538</td>
+			<td style="text-align: right;" sdval="63" sdnum="1033;">63</td>
+			<td style="text-align: right;" sdval="347" sdnum="1033;">347</td>
+			<td style="text-align: right;" sdval="25411" sdnum="1033;">25411</td>
+			<td style="text-align: right;" sdval="5.50793650793651" sdnum="1033;0;0.00">5.51</td>
+			<td style="text-align: right;" sdval="403.349206349206" sdnum="1033;0;0.00">403.35</td>
+			<td style="text-align: right;" sdval="73.2305475504323" sdnum="1033;0;0.00">73.23</td>
+		</tr>
+		<tr class="BorderTop">
+			<td class="SoftHighlight" style="font-style: italic; text-align: center;" height="17">fr-en</td>
+			<td style="text-align: center;" sdval="6" sdnum="1033;">6</td>
+			<td style="text-align: center;"><br />
+      </td>
+			<td style="text-align: right;" class="Highlight" sdval="0.598" sdnum="1033;0;0.000">0.598</td>
+			<td style="text-align: right;" sdval="75" sdnum="1033;">75</td>
+			<td style="text-align: right;" sdval="930" sdnum="1033;">930</td>
+			<td style="text-align: right;" sdval="79461" sdnum="1033;">79461</td>
+			<td style="text-align: right;" sdval="12.4" sdnum="1033;0;0.00">12.40</td>
+			<td style="text-align: right;" sdval="1059.48" sdnum="1033;0;0.00">1059.48</td>
+			<td style="text-align: right;" sdval="85.441935483871" sdnum="1033;0;0.00">85.44</td>
+		</tr>
+		<tr>
+			<td class="SoftHighlight" style="font-style: italic; text-align: center;" height="17"></td>
+			<td style="text-align: center;" sdval="5" sdnum="1033;">5</td>
+			<td style="text-align: center;"><br />
+      </td>
+			<td style="text-align: right;" class="Highlight" sdval="0.593" sdnum="1033;0;0.000">0.593</td>
+			<td style="text-align: right;" sdval="74" sdnum="1033;">74</td>
+			<td style="text-align: right;" sdval="1338" sdnum="1033;">1338</td>
+			<td style="text-align: right;" sdval="111140" sdnum="1033;">111140</td>
+			<td style="text-align: right;" sdval="18.0810810810811" sdnum="1033;0;0.00">18.08</td>
+			<td style="text-align: right;" sdval="1501.89189189189" sdnum="1033;0;0.00">1501.89</td>
+			<td style="text-align: right;" sdval="83.0642750373692" sdnum="1033;0;0.00">83.06</td>
+		</tr>
+		<tr>
+			<td class="SoftHighlight" style="font-style: italic; text-align: center;" height="17"></td>
+			<td style="text-align: center;"><br />
+      </td>
+			<td style="text-align: center;"><br />
+      </td>
+			<td style="text-align: right;" class="Highlight" sdval="0.586" sdnum="1033;0;0.000">0.586</td>
+			<td style="text-align: right;" sdval="80" sdnum="1033;">80</td>
+			<td style="text-align: right;" sdval="485" sdnum="1033;">485</td>
+			<td style="text-align: right;" sdval="36139" sdnum="1033;">36139</td>
+			<td style="text-align: right;" sdval="6.0625" sdnum="1033;0;0.00">6.06</td>
+			<td style="text-align: right;" sdval="451.7375" sdnum="1033;0;0.00">451.74</td>
+			<td style="text-align: right;" sdval="74.5134020618557" sdnum="1033;0;0.00">74.51</td>
+		</tr>
+		<tr>
+			<td class="SoftHighlight" style="font-style: italic; text-align: center;" bgcolor="#99ccff" height="17"></td>
+			<td style="text-align: center; background-color: rgb(255, 255, 255);" bgcolor="#99ccff"><br />
+      </td>
+			<td style="text-align: center; background-color: rgb(255, 255, 255);" bgcolor="#99ccff"><br />
+      </td>
+			<td style="text-align: right; background-color: rgb(255, 255, 255);" sdval="0.584" sdnum="1033;0;0.000" bgcolor="#99ccff">0.584</td>
+			<td style="text-align: right; background-color: rgb(255, 255, 255);" sdval="80" sdnum="1033;" bgcolor="#99ccff">80</td>
+			<td style="text-align: right; background-color: rgb(255, 255, 255);" sdval="478" sdnum="1033;" bgcolor="#99ccff">478</td>
+			<td style="text-align: right; background-color: rgb(255, 255, 255);" sdval="35857" sdnum="1033;" bgcolor="#99ccff">35857</td>
+			<td style="text-align: right; background-color: rgb(255, 255, 255);" sdval="5.975" sdnum="1033;0;0.00" bgcolor="#99ccff">5.98</td>
+			<td style="text-align: right; background-color: rgb(255, 255, 255);" sdval="448.2125" sdnum="1033;0;0.00" bgcolor="#99ccff">448.21</td>
+			<td style="text-align: right; background-color: rgb(255, 255, 255);" sdval="75.0146443514644" sdnum="1033;0;0.00" bgcolor="#99ccff">75.01</td>
+		</tr>
+		<tr>
+			<td class="SoftHighlight" style="font-style: italic; text-align: center;" height="17"></td>
+			<td style="text-align: center;"><br />
+      </td>
+			<td style="text-align: center;">lc</td>
+			<td style="text-align: right;" class="Highlight" sdval="0.583" sdnum="1033;0;0.000">0.583</td>
+			<td style="text-align: right;" sdval="80" sdnum="1033;">80</td>
+			<td style="text-align: right;" sdval="478" sdnum="1033;">478</td>
+			<td style="text-align: right;" sdval="35857" sdnum="1033;">35857</td>
+			<td style="text-align: right;" sdval="5.975" sdnum="1033;0;0.00">5.98</td>
+			<td style="text-align: right;" sdval="448.2125" sdnum="1033;0;0.00">448.21</td>
+			<td style="text-align: right;" sdval="75.0146443514644" sdnum="1033;0;0.00">75.01</td>
+		</tr>
+		<tr class="BorderBottom">
+			<td class="SoftHighlight" style="font-style: italic; text-align: center;" height="17"></td>
+			<td style="text-align: center;"><br />
+      </td>
+			<td style="text-align: center;"><br />
+      </td>
+			<td style="text-align: right;" class="Highlight" sdval="0.568" sdnum="1033;0;0.000">0.568</td>
+			<td style="text-align: right;" sdval="77" sdnum="1033;">77</td>
+			<td style="text-align: right;" sdval="650" sdnum="1033;">650</td>
+			<td style="text-align: right;" sdval="66794" sdnum="1033;">66794</td>
+			<td style="text-align: right;" sdval="8.44155844155844" sdnum="1033;0;0.00">8.44</td>
+			<td style="text-align: right;" sdval="867.454545454546" sdnum="1033;0;0.00">867.45</td>
+			<td style="text-align: right;" sdval="102.76" sdnum="1033;0;0.00">102.76</td>
+		</tr>
+  </tbody>
+</table>
+<p><br />
+</p>
+<h2 id="Results_MT">Machine Translation</h2>
+<p>Training and test data are those used for the <a href="http://www.statmt.org/wmt06/shared-task/results.html">NAACL 2006 Workshop Shared Task: Exploiting Parallel Texts for Statistical Machine Translation</a> (WMT06) (Koehn &amp; Monz 2006).&nbsp;&nbsp;<em>Table&nbsp;4: WMT06</em> results lists the WMT06 results (test data only) for comparison, including:</p>
+<ul>
+  <li>Highest: the highest reported score.</li>
+  <li>Lowest: the lowest reported score.</li>
+  <li>Mean, all:&nbsp;the mean of all scores.</li>
+  <li>Mean, pack: the mean of all scores except the lowest two. </li>
+</ul>
+<p>Columns indicate results on the following data sets:</p>
+<ul>
+  <li>Dev: WMT06 development test set.</li>
+  <li>In: WMT06 test set, in-domain.</li>
+  <li>Out: WMT06 test set, out-of-domain.</li>
+</ul>
+<table class="Border FlushLeft Small">
+   <caption>Table&nbsp;4: WMT06 results&nbsp;(as&nbsp;of 11/14/06)</caption>
+    <tbody>
+    <tr>
+      <th></th>
+      <th class="BorderRight"></th>
+      <th style="text-align: center;" class="BorderLeft" colspan="3" rowspan="1">Fr-En</th>
+      <th style="text-align: center;" class="BorderLeft" colspan="3" rowspan="1">Es-En</th>
+      <th style="text-align: center;" class="BorderLeft" colspan="3" rowspan="1">De-En</th>
+      <th style="text-align: center;" class="BorderLeft" colspan="3" rowspan="1">En-Fr</th>
+      <th style="text-align: center;" class="BorderLeft" colspan="3" rowspan="1">En-Es</th>
+      <th style="text-align: center;" class="BorderLeft" colspan="3" rowspan="1">En-De</th>
+    </tr>
+    <tr class="BorderBottom">
+      <th></th>
+      <th class="BorderRight"></th>
+      <th style="text-align: center;" class="BorderLeft">Dev</th>
+      <th>In</th>
+      <th style="text-align: center;">Out</th>
+      <th style="text-align: center;" class="BorderLeft">Dev</th>
+      <th>In</th>
+      <th style="text-align: center;">Out</th>
+      <th style="text-align: center;" class="BorderLeft">Dev</th>
+      <th>In</th>
+      <th style="text-align: center;">Out</th>
+      <th style="text-align: center;" class="BorderLeft">Dev</th>
+      <th>In</th>
+      <th style="text-align: center;">Out</th>
+      <th style="text-align: center;" class="BorderLeft">Dev</th>
+      <th>In</th>
+      <th style="text-align: center;">Out</th>
+      <th style="text-align: center;" class="BorderLeft">Dev</th>
+      <th>In</th>
+      <th style="text-align: center;">Out</th>
+    </tr>
+		<tr>
+      <th class="Label">WMT06</th>
+		<th class="BorderRight" style="font-style: italic;">Highest</th>
+		<td style="text-align: center;" class="BorderLeft"></td>
+      <td>31.94</td>
+      <td style="text-align: center;">22.50</td>
+      <td style="text-align: center;" class="BorderLeft"></td>
+      <td>32.37</td>
+      <td style="text-align: center;">28.35</td>
+      <td style="text-align: center;" class="BorderLeft"></td>
+      <td>27.30</td>
+      <td style="text-align: center;">18.87</td>
+      <td style="text-align: center;" class="BorderLeft"></td>
+      <td>33.66</td>
+      <td style="text-align: center;">25.26</td>
+      <td style="text-align: center;" class="BorderLeft"></td>
+      <td>31.85</td>
+      <td style="text-align: center;">27.76</td>
+      <td style="text-align: center;" class="BorderLeft"></td>
+      <td>18.85</td>
+      <td style="text-align: center;">11.82</td>
+		</tr>
+    <tr>
+      <th class="Label"></th>
+      <th class="BorderRight" style="font-style: italic;">Lowest</th>
+      <td style="text-align: center;"></td>
+      <td>21.44</td>
+      <td style="text-align: center;" class="BorderRight">19.42</td>
+      <td style="text-align: center;"></td>
+      <td>23.91</td>
+      <td style="text-align: center;">19.17</td>
+      <td style="text-align: center;" class="BorderLeft"></td>
+      <td>15.86</td>
+      <td style="text-align: center;">11.78</td>
+      <td style="text-align: center;" class="BorderLeft"></td>
+      <td>25.07</td>
+      <td style="text-align: center;">21.44</td>
+      <td style="text-align: center;" class="BorderLeft"></td>
+      <td>23.17</td>
+      <td style="text-align: center;">16.83</td>
+      <td style="text-align: center;" class="BorderLeft"></td>
+      <td>9.84</td>
+      <td style="text-align: center;">6.55</td>
+    </tr>
+    <tr>
+      <th class="Label"></th>
+      <th class="BorderRight" style="font-style: italic;">Mean, all</th>
+      <td style="text-align: center;"></td>
+      <td>29.33</td>
+      <td style="text-align: center;" class="BorderRight">20.70</td>
+      <td style="text-align: center;"></td>
+      <td>29.99</td>
+      <td style="text-align: center;">25.77</td>
+      <td style="text-align: center;" class="BorderLeft"></td>
+      <td>23.75</td>
+      <td style="text-align: center;">16.47</td>
+      <td style="text-align: center;" class="BorderLeft"></td>
+      <td>31.04</td>
+      <td style="text-align: center;">23.45</td>
+      <td style="text-align: center;" class="BorderLeft"></td>
+      <td>29.36</td>
+      <td style="text-align: center;">24.47</td>
+      <td style="text-align: center;" class="BorderLeft"></td>
+      <td>16.62</td>
+      <td style="text-align: center;">10.43</td>
+    </tr>
+    <tr>
+      <th class="Label"></th>
+      <th class="BorderRight" style="font-style: italic;">Mean, pack</th>
+      <td style="text-align: center;"></td>
+      <td>30.42</td>
+      <td style="text-align: center;" class="BorderRight">21.23</td>
+      <td style="text-align: center;"></td>
+      <td>30.65</td>
+      <td style="text-align: center;">26.51</td>
+      <td style="text-align: center;" class="BorderLeft"></td>
+      <td>25.10</td>
+      <td style="text-align: center;">17.07</td>
+      <td style="text-align: center;" class="BorderLeft"></td>
+      <td>31.74</td>
+      <td style="text-align: center;">23.74</td>
+      <td style="text-align: center;" class="BorderLeft"></td>
+      <td>30.10</td>
+      <td style="text-align: center;">25.39</td>
+      <td style="text-align: center;" class="BorderLeft"></td>
+      <td>18.87</td>
+      <td style="text-align: center;">10.90</td>
+    </tr>
+    <tr class="BorderTop">
+			<th style="font-style: italic;" class="Label">Baseline</th>
+      <th style="font-style: italic;" class="Label BorderRight">Hiero/base</th>
+			<td style="text-align: center;" class="BorderLeft"><br />
+      </td>
+      <td></td>
+      <td style="text-align: center;" class="BorderRight"></td>
+      <td style="text-align: center;" class="BorderLeft">25.77</td>
+			<td></td>
+      <td style="text-align: center;"></td>
+      <td style="text-align: center;" class="BorderLeft">21.01</td>
+      <td></td>
+      <td style="text-align: center;"></td>
+      <td style="text-align: center;" class="BorderLeft"></td>
+      <td></td>
+      <td style="text-align: center;"></td>
+      <td style="text-align: center;" class="BorderLeft"></td>
+      <td></td>
+      <td style="text-align: center;"></td>
+      <td style="text-align: center;" class="BorderLeft"></td>
+      <td></td>
+      <td style="text-align: center;"></td>
+    </tr>
+		<tr class="BorderTop">
+      <th style="font-style: italic;" class="Label">Truncation</th>
+      <th style="font-style: italic;" class="Label BorderRight">Hiero/trunc5</th>
+      <td style="text-align: center;"></td>
+      <td></td>
+      <td style="text-align: center;" class="BorderRight"></td>
+      <td style="text-align: center;"></td>
+      <td></td>
+      <td style="text-align: center;"></td>
+      <td style="text-align: center;" class="BorderLeft"></td>
+      <td></td>
+      <td style="text-align: center;"></td>
+      <td style="text-align: center;" class="BorderLeft"></td>
+      <td></td>
+      <td style="text-align: center;"></td>
+      <td style="text-align: center;" class="BorderLeft"></td>
+      <td></td>
+      <td style="text-align: center;"></td>
+      <td style="text-align: center;" class="BorderLeft"></td>
+      <td></td>
+      <td style="text-align: center;"></td>
+    </tr>
+    <tr>
+			<th style="font-style: italic;" class="Label"></th>
+      <th style="font-style: italic;" class="Label BorderRight">Hiero/trunc6</th>
+			<td style="text-align: center;" class="BorderLeft"></td>
+      <td></td>
+      <td style="text-align: center;" class="BorderRight"></td>
+      <td style="text-align: center;" class="BorderLeft"></td>
+			<td></td>
+      <td style="text-align: center;"></td>
+      <td style="text-align: center;" class="BorderLeft"></td>
+      <td></td>
+      <td style="text-align: center;"></td>
+      <td style="text-align: center;" class="BorderLeft"></td>
+      <td></td>
+      <td style="text-align: center;"></td>
+      <td style="text-align: center;" class="BorderLeft"></td>
+      <td></td>
+      <td style="text-align: center;"></td>
+      <td style="text-align: center;" class="BorderLeft"></td>
+      <td></td>
+      <td style="text-align: center;"></td>
+    </tr>
+    <tr class="BorderTop">
+      <th style="font-style: italic;" class="Label">Morphology</th>
+      <th style="font-style: italic;" class="Label BorderRight">Hiero/morph</th>
+      <td style="text-align: center;" class="BorderLeft"></td>
+      <td></td>
+      <td style="text-align: center;" class="BorderRight"></td>
+      <td style="text-align: center;" class="BorderLeft"></td>
+      <td></td>
+      <td style="text-align: center;"></td>
+      <td style="text-align: center;" class="BorderLeft"></td>
+      <td></td>
+      <td style="text-align: center;"></td>
+      <td style="text-align: center;" class="BorderLeft"></td>
+      <td></td>
+      <td style="text-align: center;"></td>
+      <td style="text-align: center;" class="BorderLeft"></td>
+      <td></td>
+      <td style="text-align: center;"></td>
+      <td style="text-align: center;" class="BorderLeft"></td>
+      <td></td>
+      <td style="text-align: center;"></td>
+    </tr>
+		<tr class="BorderTop">
+			<th style="font-style: italic;" class="Label">WSD</th>
+      <th style="font-style: italic;" class="Label BorderRight">Hiero/wsd</th>
+			<td style="text-align: center;" class="BorderLeft"></td>
+      <td></td>
+      <td style="text-align: center;" class="BorderRight"></td>
+      <td style="text-align: center;" class="BorderLeft"></td>
+			<td></td>
+      <td style="text-align: center;"></td>
+      <td style="text-align: center;" class="BorderLeft"></td>
+      <td></td>
+      <td style="text-align: center;"></td>
+      <td style="text-align: center;" class="BorderLeft"></td>
+      <td></td>
+      <td style="text-align: center;"></td>
+      <td style="text-align: center;" class="BorderLeft"></td>
+      <td></td>
+      <td style="text-align: center;"></td>
+      <td style="text-align: center;" class="BorderLeft"></td>
+      <td></td>
+      <td style="text-align: center;"></td>
+    </tr>
+    <tr>
+      <th style="font-style: italic;" class="Label"></th>
+      <th style="font-style: italic;" class="Label BorderRight">Hiero/morph/wsd<br />
+      </th>
+      <td style="text-align: center;" class="BorderLeft"></td>
+      <td></td>
+      <td style="text-align: center;" class="BorderRight"></td>
+      <td style="text-align: center;" class="BorderLeft"></td>
+      <td></td>
+      <td style="text-align: center;"></td>
+      <td style="text-align: center;" class="BorderLeft"></td>
+      <td></td>
+      <td style="text-align: center;"></td>
+      <td style="text-align: center;" class="BorderLeft"></td>
+      <td></td>
+      <td style="text-align: center;"></td>
+      <td style="text-align: center;" class="BorderLeft"></td>
+      <td></td>
+      <td style="text-align: center;"></td>
+      <td style="text-align: center;" class="BorderLeft"></td>
+      <td></td>
+      <td style="text-align: center;"></td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<h1 id="Conclusions">Conclusions</h1>
+<p>.</p>
+<div class="Appendix">
+<hr />
+<h1 id="Appendices">Appendices</h1>
+<h2 id="Future_Work">Long-Term Agenda</h2>
+<p class="Annotation">out of date ???</p>
+<ol class="FlushLeft Roman">
+  <li id="I">Determine the impact of unsupervised morphological induction (UMI) on crosslingual WSD.&nbsp;</li>
+  <ol>
+    <li id="I">Parameters</li>
+    <ol>
+      <li>Language alternatives</li>
+      <ol>
+        <li>Target language</li>
+        <ol>
+          <li>Use consistently preprocessed English unless specified otherwise.</li>
+        </ol>
+        <li>Source languages</li>
+        <ol>
+          <li>All EU languages.</li>
+          <li>Arabic.</li>
+          <li><em>(optional)</em> Other languages as available.</li>
+        </ol>
+      </ol>
+      <li>Preprocessing alternatives</li>
+      <ol>
+        <li>Heuristics</li>
+        <ol>
+          <li>None (baseline).</li>
+          <li>Truncate to n characters, 4 &le; n &le; 7.</li>
+          <li>Lowercase all.</li>
+          <li>Eliminate diacritics.</li>
+          <li>Strip common inflectional endings (e.g.&nbsp;-e-s in French).</li>
+          <li>Tokenize common inflectional endings into distinct tokens.</li>
+          <li>Representative combinations of the above.</li>
+        </ol>
+        <li>Algorithms</li>
+        <ol>
+          <li>Universal (i.e.&nbsp;non-language-specific) morphological analyzer based on (<a href="morphology.htm#Koehn__Knight">Koehn &amp; Knight 2003</a>).</li>
+          <li><em>(optional)</em> Universal MA based on (<a href="morphology.htm#Freitag">Frietag 2005</a>).</li>
+          <li><em>(optional)</em> Universal MA based on (<a href="morphology.htm#Baldwin">Baldwin 2005</a>).</li>
+          <li>Language-specific <a href="morphology.htm#Res-Morphology">MA tools</a>, at least for Arabic, optionally other languages.</li>
+        </ol>
+      </ol>
+      <li>Feature analysis</li>
+      <ol>
+        <li>No preprocessing (baseline).</li>
+        <li>Apply preprocessing to all tokens in source text.</li>
+        <li>Apply preprocessing to all content words.</li>
+        <li>Apply&nbsp;preprocessing to head word only.</li>
+      </ol>
+    </ol>
+    <li>Evaluation</li>
+    <ol>
+      <li>WSD framework (<a href="morphology.htm#kenschaft2005">Kenschaft 2005</a>).</li>
+      <ol>
+        <li>Evaluate using consistent dev/test sets derived automatically from <a href="morphology.htm#Babych__Hartley">content words</a> in parallel corpora.</li>
+        <li>Establish accuracy baselines using:</li>
+        <ol>
+          <li>Always select most common sense.</li>
+          <li>WSD without morphological analysis.</li>
+        </ol>
+        <li>Establish results using representative UMI options.</li>
+        <li>Correlate results with observable characteristics of data, e.g.</li>
+        <ol>
+          <li>Number of distinct types (i.e.&nbsp;word forms) being disambiguated.</li>
+          <li>Number of distinct types in entire corpus.</li>
+          <li>Number of possible senses for each type.</li>
+          <li>Number of training examples for each type.</li>
+        </ol>
+      </ol>
+      <li>English&rarr;French Word Translation task (Vickrey et&nbsp;al.&nbsp;2005).<br />
+      </li>
+      <ol>
+        <li>Replicate the baseline experiment using their data, always choosing the most common sense.</li>
+        <li>Train and test our system on precisely the same data using representative UMI options.</li>
+        <li>Train and test our system using the same data augmented with further training samples from the Europarl corpus made possible by the specific preprocessing alternative.</li>
+        <li>Compare results.</li>
+      </ol>
+    </ol>
+  </ol>
+  <li>Determine the impact of crosslingual WSD (lexical selection) on MT.</li>
+  <ol>
+    <li>Parameters</li>
+    <ol>
+      <li>Language alternatives</li>
+      <ol>
+        <li>Target language</li>
+        <ol>
+          <li>Consistently preprocessed English.</li>
+        </ol>
+        <li>Source languages</li>
+        <ol>
+          <li>Arabic.</li>
+          <li>At least one romance language.</li>
+          <li>At least one largely agglutinative language.</li>
+          <li><em>(optional)</em> Other languages as available.</li>
+        </ol>
+      </ol>
+      <li>Preprocessing alternatives&nbsp;&ndash; same as in I.A.2.</li>
+      <li>Feature analysis &ndash; same as in I.A.3.</li>
+      <li>Lexical selection</li>
+      <ol>
+        <li>No lexical selection (baseline).</li>
+        <li>Apply lexical selection to all words.</li>
+        <li>Apply lexical selection to all content words.</li>
+        <li>Apply lexical selection to all content words for which a dev set predicts positive results.</li>
+      </ol>
+    </ol>
+    <li>Evaluation</li>
+    <ol>
+      <li>English&rarr;French Blank-Filling task (Vickrey et&nbsp;al.&nbsp;2005).</li>
+      <ol>
+        <li>Establish accuracy baseline using language model alone.</li>
+        <li>Train and test our system using their data.</li>
+        <li>Compare results.</li>
+      </ol>
+      <li>Spanish&rarr;English WSD &amp; MT (Cabezas &amp; Resnik 2005).</li>
+      <ol>
+        <li>Establish BLEU baseline&nbsp;running Pharaoh on their data.</li>
+        <li>Use best WSD system to provide lexical selection recommendations to Pharaoh.</li>
+        <li>Compare results.</li>
+      </ol>
+      <li>German&rarr;English MT (Koehn &amp; Knight 2003).</li>
+      <ol>
+        <li>Establish BLEU baseline&nbsp;running Pharaoh on their data.</li>
+        <li>Run morphological analysis on source text.</li>
+        <li>Use best WSD system to provide lexical selection recommendations to Pharaoh.</li>
+        <li>Compare results.</li>
+      </ol>
+      <li>Hiero MT, various language pairs.</li>
+      <ol>
+        <li>Establish&nbsp;baseline (BLEU? TER?) running Hiero alone.</li>
+        <li>Run morphological analysis on source text.</li>
+        <li>Use best WSD system to provide lexical selection recommendations to Hiero.</li>
+        <li>Compare results.</li>
+      </ol>
+    </ol>
+  </ol>
+  <li id="Phase_I">Determine the impact of supervised morphological analysis (SMA) on WSD, alignment and translation.</li>
+  <ol>
+    <li>Determine the impact of SMA on monolingual and crosslingual WSD.</li>
+    <ol>
+      <li>Identify <a href="morphology.htm#Res-Languages_of_Interest">languages of interest</a> with SMA available.</li>
+      <li>Evaluate effect of SMA on monolingual WSD for each language that has <a href="morphology.htm#Res-Senseval">Senseval-3</a> test data available.</li>
+      <ol>
+        <li>Run baselines.</li>
+        <ol>
+          <li>Run monolingual WSD with no morphological analysis, using unmodified tokens (<a href="morphology.htm#kenschaft2005">Kenschaft&nbsp;2005</a>).</li>
+          <li>Run monolingual WSD using head words truncated to first 4 characters. (Och???)</li>
+          <li>Run monolingual WSD using truncated words (head and otherwise).</li>
+        </ol>
+        <li>Run tests.</li>
+        <ol>
+          <li>Run monolingual WSD using SMA constituent morphemes in place of head words.</li>
+          <li>Run monolingual WSD using SMA constituent morphemes in place of all words.</li>
+        </ol>
+        <li>Compare all scores.</li>
+      </ol>
+      <li>Evaluate effect of SMA on crosslingual WSD for representative language pairs with <a href="morphology.htm#Res-Parallel_Text">parallel&nbsp;text</a> available.</li>
+      <ol>
+        <li>Run baselines.</li>
+        <ol>
+          <li>Run crosslingual WSD with no morphological analysis, using unmodified tokens (<a href="morphology.htm#kenschaft2005">Kenschaft 2005</a>).</li>
+          <li>Run crosslingual WSD using truncated source language head words.</li>
+          <li>Run crosslingual WSD using truncated source language words (head and otherwise).</li>
+          <li>Run crosslingual WSD using truncated source language/target language words.</li>
+        <p class="Annotation">This should yield higher scores, since the number of target language senses will be reduced.</p>
+        </ol>
+        <li>Run tests.</li>
+        <ol>
+          <li>Run crosslingual WSD using SMA constituent morphemes in place of source language head words.</li>
+          <li>Run crosslingual WSD using SMA constituent morphemes in place of all source language words.</li>
+          <li>Run crosslingual WSD using SMA constituent morphemes in place of all source language/target language words.</li>
+        <p class="Annotation">This should yield scores comparable with Baseline iv.</p>
+        </ol>
+        <li>Compare all scores.</li>
+        <li>Perform cursory error analysis.</li>
+      </ol>
+    </ol>
+    <li>Determine the impact of SMA on alignment and translation.</li>
+    <ol>
+      <li>Evaluate effect of SMA on alignment for representative language pairs.</li>
+      <ol>
+        <li>Run baselines.</li>
+        <ol>
+          <li>Run alignment with no morphological analysis, using unmodified tokens.</li>
+          <li>Run alignment using truncated source language words.</li>
+          <li>Run alignment using truncated source language/target language words.</li>
+        </ol>
+        <li>Run tests.</li>
+        <ol>
+          <li>Run alignment using just SMA root words in place of all source language/target language words.</li>
+          <li>Run alignment using SMA constituent morphemes in place of all source language/target language words.</li>
+        <p class="Annotation">Effect on scores???</p>
+        </ol>
+        <li>Compare all AER scores.</li>
+        <li>Perform cursory error analysis.</li>
+      </ol>
+      <li>Evaluate effect of SMA and WSD on Pharaoh MT for representative language pairs.</li>
+    <p class="Annotation">Hiero is currently too slow to run many successive experiments, so we will do most of our testing with Pharaoh. If Hiero's performance speed improves sufficiently, this step could be skipped.</p>
+      <ol>
+        <li>Run baselines.</li>
+        <ol>
+          <li>Run Pharaoh translation with no morphological analysis, using unmodified tokens.</li>
+          <li>Run Pharaoh translation using truncated source language words.</li>
+          <li>Run Pharaoh translation using truncated source language/target language words.</li>
+        <p class="Annotation">Rebuild target language language model with truncated stems??? Effect on scores???</p>
+          <li>Run Pharaoh translation using SMA constituent morphemes in place of all source language/target language words.</li>
+        </ol>
+        <li>Test SMA &amp; MT.</li>
+        <ol>
+          <li>Run Pharaoh translation using SMA constituent morphemes in place of all source language words.</li>
+          <li>Run Pharaoh translation using SMA constituent morphemes in place of all source language/target language words.</li>
+        <p class="Annotation">Rebuild target language language model with morphemes??? Effect on scores???</p>
+        </ol>
+        <li>Test WSD &amp; MT.</li>
+        <ol>
+          <li>Run Pharaoh translation with no morphological analysis, using WSD to prime lexical selection.</li>
+          <li>Run Pharaoh translation using SMA constituent morphemes in place of all source language words, and using WSD to prime lexical selection.</li>
+          <li>Run Pharaoh translation using SMA constituent morphemes in place of all source language/target language words, and using WSD to prime lexical selection.</li>
+        </ol>
+        <li>Compare all scores.</li>
+        <li>Perform cursory error analysis.</li>
+      </ol>
+      <li>Evaluate effect of SMA &amp; WSD on Hiero MT for a few indicative language pairs.</li>
+      <ol>
+        <li>Run baselines.</li>
+        <ol>
+          <li>Run Hiero translation with no morphological analysis, using unmodified tokens.</li>
+          <li>Run Hiero translation using truncated source language words.</li>
+          <li>Run Hiero translation using truncated source language/target language words.</li>
+        </ol>
+        <li>Test SMA &amp; MT.</li>
+        <ol>
+          <li>Run Hiero translation using SMA constituent morphemes in place of all source language words.</li>
+          <li>Run Hiero translation using SMA constituent morphemes in place of all source language/target language words.</li>
+        </ol>
+        <li>Test WSD &amp; MT.</li>
+        <ol>
+          <li>Run Hiero translation with no morphological analysis, using WSD to prime lexical selection.</li>
+          <li>Run Hiero translation using SMA constituent morphemes in place of all source language words, and using WSD to prime lexical selection.</li>
+          <li>Run Hiero translation using SMA constituent morphemes in place of all source language/target language words, and using WSD to prime lexical selection.</li>
+        </ol>
+        <li>Compare all scores.</li>
+        <li>Perform cursory error analysis.</li>
+      </ol>
+    </ol>
+  </ol>
+  <li id="Phase_II">Determine the impact of unsupervised morphological induction (UMI) on WSD, alignment and translation.</li>
+  <ol>
+    <li>Determine the impact of using UMI on monolingual and crosslingual WSD.</li>
+    <ol>
+      <li>Identify representative <a href="morphology.htm#Res-Languages_of_Interest">languages of interest</a>, including at least those languages from (I.A.1).</li>
+      <li>Develop unsupervised morphological analyzer.</li>
+      <ol>
+        <li>Implement UMI, probably based on (<a href="morphology.htm#freitag2005">Freitag&nbsp;2005</a>).</li>
+        <li>Evaluate against output of SMA where available.</li>
+        <li>If necessary, compare to other UMI proposals.</li>
+      </ol>
+      <li>Repeat (I.A.2) monolingual WSD experiments with UMI.</li>
+      <li>Repeat&nbsp;(I.A.3) crosslingual WSD experiments with UMI.</li>
+    </ol>
+    <li>Determine the impact of UMI on alignment and translation.</li>
+    <ol>
+      <li>Repeat&nbsp;(I.B.1) alignment experiments with UMI.</li>
+      <li>Repeat&nbsp;(I.B.2) Pharaoh MT experiments with UMI.</li>
+      <li>Repeat&nbsp;(I.B.3) Hiero MT experiments with UMI.</li>
+    </ol>
+  </ol>
+  <li id="Phase_III">Determine the impact of alternative resources.</li>
+  <ol>
+    <li>Introduce other source language resources, and evaluate their effects, in the spirit of (<a href="http://www.umiacs.umd.edu/users/kensch/journal/resources.htm#yarowsky2002">Yarowsky &amp; Florian 2002</a>). e.g.:<br />
+      <ol>
+        <li>POS tagging</li>
+        <li>semantic role labeling</li>
+        <li>syntactic relationships</li>
+      </ol>
+    </li>
+    <li>Perform representative experiments using bilingual sense clustering (<a href="morphology.htm#och2999">Och&nbsp;1999</a>) in place of crosslingual WSD.</li>
+  </ol>
+</ol>
+<h2>Terminology</h2>
+<h3 id="Intro-Morphology">Morphology</h3>
+<h4 id="Intro-Morpheme">Morphemes</h4>
+<p>Informally, a <em>morpheme</em> can be understood&nbsp;as "the smallest unit of meaning". A word is typically composed of one or more morphemes.</p>
+<p>Morphemes can be loosely classified into <em>roots</em> and <em>affixes</em>. Generally speaking, a root can stand alone, while an affix must be attached to a root.</p>
+<p>So, for instance, the English word <em>farmers</em> can be decomposed into three morphemes: <em>farm +er +s</em>, where <em>farm</em> is the root, and <em>+er</em> and <em>+s</em> are affixes.</p>
+<p class="Annotation">There is evidence that morphemes are composed of yet smaller units of meaning. However, just as many scientists are happy to act as though atoms are the smallest units of matter, so we will maintain our happy delusion that morphemes are atomic.</p>
+<p>Affixes are often differentiated between <em>inflectional</em> and <em>derivational</em> types.</p>
+<p>Inflectional affixes are highly productive and regular, generally add only grammatical information, and rarely change the part of speech. For instance, the <em>+s</em> affix in English is inflectional.</p>
+<p>Derivational affixes are less productive, may produce idosyncratic changes in meaning, and often change the part of speech. For instance, the <em>+er</em> affix in English is derivational. The derived meanings of <em>farm&rarr;farmer</em> and <em>ministry&rarr;minister</em> are not predictable.</p>
+<p>Inflectional affixes can often be discarded without relevant loss of meaning. Discarding derivational affixes almost always results in significant loss or change of meaning.</p>
+<p>While the use of the word <em>stem</em> varies, in this discussion we will use it to refer to (root + derivational affixes), with inflectional affixes discarded. So, for the English word <em>farmers</em>, its root is <em>farm</em>, and its stem is <em>farmer</em>.</p>
+<h4 id="Intro-Language_Types">Language Types</h4>
+<p>Languages are often grouped into three main classes.</p>
+<p class="Annotation">examples of each???</p>
+<ul>
+  <li>An <em>analytic</em> (or <em>isolating</em>) language typically only has one morpheme per word.</li>
+  <li>An <em>agglutinative</em> (or <em>polysynthetic</em>) language typically has words made up of many distinct roots and affixes, where each root or affix carries a single unit of meaning.<br />
+Example: German [<em>D&auml;mpfungsscheibenanordnung</em>] 'dampening disk assembly'</li>
+<p class="Annotation">Technically, a polysynthetic language often has a single word representing a whole sentence, while an agglutinative language does not. However, this discussion will not employ this distinction.</p>
+  <li>A <em>fusional</em> language typically has words made up of a root and one or more affixes, where a single affix can carry several units of meaning.<br />
+Example: French [<em>&eacute;tudiant</em>, <em>&eacute;tudiante</em>, <em>&eacute;tudiants</em>, <em>&eacute;tudiantes</em>]&nbsp;'student'.</li>
+</ul>
+<p class="FlushLeft">I will use these additional subclassifications in my discussion.</p>
+<ul>
+  <li>An <em>inflectional</em> language in an agglutinative language which typically only has one root per word, but possibly many inflectional affixes.</li>
+  <li>A <em>suppletive</em> language is a fusional language with a high proportion of words which take on a whole new form when inflected, as in English [<em>go</em> <em>+PAST</em>] &rarr; <em>went</em>.</li>
+  <li>A <em>templatic</em> language is a fusional language where the root is a sequence of characters (typically consonants) and the affix is another sequence of characters/diacritics (typically vowels) which are interweaved into the root.</li>
+</ul>
+<p class="FlushLeft">In reality, a language rarely fits precisely into one class. For instance, English is predominately analytic ("have been going"), but has some fusional ("he dance+s"), suppletive ("he went"), and even agglutinative ("garbage truck windshield wiper cleaner"), characteristics.</p>
+<h3 id="Intro-Lexicon">Lexicon</h3>
+<p>A lexicon for a language typically consists of all the words attested in a training corpus. Failure to account for morphological complexity results in an artificially large lexicon, hence unnecessary problems with data sparseness.</p>
+<p>For instance, a romance language such as French shows productive and regular inflection for both gender and number. A na&iuml;ve lexicon, ignoring morphology, will contain the four words [<em>&eacute;tudiant</em>, <em>&eacute;tudiante</em>, <em>&eacute;tudiants</em>, <em>&eacute;tudiantes</em>]&nbsp;'student'. Breaking the words into morphemes yields instead the single word [<em>&eacute;tudiant</em>] and the two inflectional affixes [<em>+e</em>, <em>+s</em>]. For this single example, the savings is slight &ndash; 3 lexemes instead of 4. The reduction will be much more dramatic when once we add all the words that use these same affixes, and even greater when dealing with highly inflectional languages.</p>
+<p class="Annotation">Czech example??? Quantify savings???</p>
+<p>Agglutinative languages typically allow productive compounding of nouns. For instance, German allows the compound noun [<em>D&auml;mpfungsscheibenanordnung</em>] 'dampening disk assembly', constructed from the three morphemes [<em>D&auml;mpfung Scheibe Anordnung</em>] (<a href="morphology.htm#schrader2004">Schrader&nbsp;2004</a>). A long compound is likely to be exceedingly rare, even unique (a.k.a.&nbsp;<a href="http://en.wikipedia.org/wiki/Hapax_legomenon">hapax</a>), even though its component morphemes are quite common.</p>
+<p>Schrader (<a href="morphology.htm#schrader2006">2006</a>) analyzed the Europarl English-German parallel corpus, and discovered that German has almost three times as many lexemes as English (286,330 vs. 101,967), and well over three times as many hapax legomena (140,826 vs. 39,200). Roughly two-thirds of these are compound nouns aligning to English multi-word units.</p>
+<p class="Annotation">Quantify improvements, particularly in number of hapax legomena ???</p>
+<h3 id="Intro-Alignment">Word Alignment</h3>
+<p>In word alignment, source language text is compared to target language text to find statistically frequent cooccurrences of words (or multi-word units), which are then considered to be aligned. Since accuracy in alignment depends on frequency of cooccurrence, data sparseness is a major problem.</p>
+<p class="Annotation">This is a gross oversimplification, of course. For more detailed exposition, see, e.g.&nbsp;(<a href="morphology.htm#och-ney2003">Och &amp; Ney 2003</a>).</p>
+<p>With agglutinative languages, drastic improvements should be realized by breaking down compounds, thus eliminating many hapax legomena. With inflectional or fusional languages, we might anticipate at first that the greatest benefit would result from&nbsp;throwing away inflectional affixes and aligning only root words and/or derivational affixes. However,&nbsp;Goldwater &amp; McClosky (<a href="morphology.htm#goldwater-mcclosky2005">2005</a>) point out that inflectional affixes often align with function words in a more analytic language, such as&nbsp;<em>of</em> or&nbsp;<em>to</em> in English. Retaining the affixes may therefore provide value.</p>
+<p class="Annotation">quantify???</p>
+<br />
+<p class="Annotation">confirm???</p>
+<h3 id="Intro-SMT">Statistical Machine Translation</h3>
+<p>Statistical MT systems look at aligned text to predict translations of source language phrases, and use these predictions to translate previously unobserved sentences.</p>
+<p class="Annotation">Again, this is a gross simplification. See, e.g.&nbsp;(<a href="morphology.htm#koehn-etal2003">Koehn et&nbsp;al. 2003</a>) for a lengthier discussion.</p>
+<p>MT relies heavily on <a href="morphology.htm#Intro-Alignment">word alignment</a>, and likewise suffers from data sparseness introduced by complex morphology. We predict significant gains in translation accuracy, through:</p>
+<ul>
+  <li>reducing the size of the lexicon(s), hence reducing data sparseness</li>
+  <li>allowing (potentially null) translation of inflectional morphemes</li>
+</ul>
+<p>However, using morphological analysis on the target language will also produce new challenges. Inflectional morphemes cannot simply be discarded, since they carry information which must be realized in the translation. This meansour translation system will be generating morphemes, which must then be combined in a postprocessor into complete words. This introduces all the problems of <a href="http://www.aaai.org/aitopics/html/nlunder.html">natural language generation</a>, a whole separate subdiscipline.</p>
+<p>Another challenge will be reconstructing complex morphology in a target language that does not exist in the source language. For instance, in translating <em>student</em> from English to French, morphological analysis should make the system more reliable at identifying the French root&nbsp;<em>&eacute;tudiant</em>, but it will still need to determine the appropriate inflectional affixes. We might anticipate a larger proportion of errors where the inflectional affix is simply omitted, but this remains to be seen empirically.</p>
+<p>Depending on the model we adopt, we might also introduce reordering errors which end up attaching an affix to the wrong root. For instance, let's say we're translating into English a sentence that means, "My dog has fleas." Presumably, the individual morphemes would translate into "My dog has flea +PL". If the +PL morpheme were somehow reordered into the wrong position, we might end up with the translation, "My dogs have (a) flea."</p>
+<p>Yuval Marton (personal communication) and others have suggested aligning and translating <a href="morphology.htm#Related-Factored_LM">feature vectors</a> rather than atomic tokens. This would require nontrivial enhancements to existing PBSMT systems, but would avoid the reordering problems, and would allow for inclusion of any number of additional features, such as syntactic or semantic labels. This will, in fact, be the subject of the JHU 2006 Summer Workshop.</p>
+<h2>Additional Resources</h2>
+<h4>Rule-Based Morphological Analysis</h4>
+<p>Off-the-shelf morphological tools are available to the research community for a variety of common languages. These systems are mostly rule-based and language-specific. We would expect them to outperform anything we could induce automatically.</p>
+<ul>
+  <li>English</li>
+  <ul>
+    <li><a href="morphology.htm#daciuk2004">Daciuk 2004</a></li>
+    <li><a href="file:///fs/nlp/Programs/multext_morph">file:///fs/nlp/Programs/multext_morph</a></li>
+  </ul>
+  <li>Arabic</li>
+  <ul>
+    <li>Habash &amp; Rambow (<a href="morphology.htm#habash-rambow2005">2005</a>) ???</li>
+  </ul>
+  <li>Bulgarian</li>
+  <ul>
+    <li><a href="http://www.uni-plovdiv.bg/hdk/hdk.htm">HRISTO DIMITROV KRUSHKOV</a></li>
+  </ul>
+  <li>Czech</li>
+  <ul>
+    <li><a href="file:///fs/nlp/Programs/morph_czech">file:///fs/nlp/Programs/morph_czech</a></li>
+    <li><a href="http://ufal.mff.cuni.cz/pdt/Morph_and_Tagging/Morphology/index.html">FMorph</a></li>
+  </ul>
+  <li>French</li>
+  <ul>
+    <li><a href="morphology.htm#daciuk2004">Daciuk 2004</a></li>
+    <li><a href="http://humanities.uchicago.edu/orgs/ARTFL/forms_unrest/analyze.query.html">ARTFL</a></li>
+  </ul>
+  <li>German</li>
+  <ul>
+    <li><a href="file:///fs/nlp/Programs/german_morph">file:///fs/nlp/Programs/german_morph</a></li>
+    <li><a href="file:///fs/nlp/Programs/german_tools">file:///fs/nlp/Programs/german_tools</a></li>
+    <li><a href="file:///fs/nlp/Programs/multext_morph">file:///fs/nlp/Programs/multext_morph</a></li>
+    <li><a href="morphology.htm#daciuk2004">Daciuk 2004</a></li>
+  </ul>
+  <li>Hindi</li>
+  <ul>
+    <li><a href="http://ccat.sas.upenn.edu/plc/tamilweb/hindi.html">Vasu Renganathan</a></li>
+    <li><a href="http://www.iiit.net/ltrc/morph/index.htm">Language Technologies Research Centre</a></li>
+  </ul>
+  <li>Italian</li>
+  <ul>
+    <li><a href="file:///fs/nlp/Programs/morph_italian">file:///fs/nlp/Programs/morph_italian</a></li>
+  </ul>
+  <li>Japanese</li>
+  <ul>
+    <li><a href="file:///fs/nlp/Programs/morphology/programs">file:///fs/nlp/Programs/morphology/programs</a></li>
+  </ul>
+  <li>Kannada</li>
+  <ul>
+    <li><a href="http://www.iiit.net/ltrc/morph/index.htm">Language Technologies Research Centre</a></li>
+  </ul>
+  <li>Marathi</li>
+  <ul>
+    <li><a href="http://www.iiit.net/ltrc/morph/index.htm">Language Technologies Research Centre</a></li>
+  </ul>
+  <li>Polish</li>
+  <ul>
+    <li><a href="morphology.htm#daciuk2004">Daciuk 2004</a></li>
+  </ul>
+  <li>Punjabi</li>
+  <ul>
+    <li><a href="http://www.iiit.net/ltrc/morph/index.htm">Language Technologies Research Centre</a></li>
+  </ul>
+  <li>Spanish</li>
+  <ul>
+    <li><a href="file:///fs/nlp/Programs/morphology/programs">file:///fs/nlp/Programs/morphology/programs</a></li>
+  </ul>
+  <li>Telagu</li>
+  <ul>
+    <li><a href="http://www.iiit.net/ltrc/morph/index.htm">Language Technologies Research Centre</a></li>
+  </ul>
+  <li>general <ul>
+      <li><a href="file:///fs/nlp/Programs/SIL">file:///fs/nlp/Programs/SIL</a></li>
+    </ul>
+  </li>
+</ul>
+<h4 id="Res-Parallel_Text">Parallel Text</h4>
+<p>Parallel corpora are crucial for both MT and crosslingual WSD.</p>
+<ul>
+  <li>Europarl (<a href="morphology.htm#koehn2002">Koehn 2002</a>) [<a href="http://www.umiacs.umd.edu/clip2/Corpora/Europarl/corpora">file:///fs/clip2/Corpora/Europarl/corpora</a>]</li>
+  <ul>
+    <li>Danish-English</li>
+    <li>Dutch-English</li>
+    <li>Finnish-English</li>
+    <li>French-English</li>
+    <li>German-English</li>
+    <li>Greek-English</li>
+    <li>Italian-English</li>
+    <li>Portugese-English</li>
+    <li>Spanish-English</li>
+    <li>Swedish-English</li>
+  </ul>
+  <li><a href="http://clipwiki.umiacs.umd.edu/twiki/bin/viewauth/MTEval/WebHome">MTEval</a></li>
+  <ul>
+    <li>Chinese-English</li>
+  </ul>
+  <ul>
+    <li>Arabic-English</li>
+  </ul>
+  <li>LDC</li>
+  <ul>
+    <li>Czech-English (<a href="morphology.htm#cmejreketal2004">Cmejrek 2004</a>) [<a href="http://www.umiacs.umd.edu/clip2/Corpora/PCEDT_v1.0_build">file:///fs/clip2/Corpora/PCEDT_v1.0_build</a>]</li>
+  </ul>
+</ul>
+<h4 id="Res-Senseval">Senseval Data</h4>
+<p>Monolingual WSD experiments are not essential, but since the data is available, we might as well take advantage of it.</p>
+<ul>
+  <li>Senseval-3 (<a href="morphology.htm#mihalcea-edmonds2004">Mihalcea &amp; Edmonds, ed., 2004</a>)</li>
+  <ul>
+    <li>Basque</li>
+    <li>Catalan</li>
+    <li>Chinese</li>
+    <li>English</li>
+    <li>Italian</li>
+    <li>Romanian</li>
+    <li>Spanish</li>
+    <li>English-Hindi</li>
+  </ul>
+</ul>
+<h4 id="Res-Alignment">Alignment</h4>
+<p>UMD has a couple of people working on improved word alignment. However, until they have packaged their work for common use, the best I know of is still Pharaoh (<a href="morphology.htm#koehn2004">Koehn&nbsp;2004</a>) wrapping GIZA++. It might be worth experimenting with a few different heuristics, such as INTERSECTION vs. GROW_DIAG_FINAL_AND.</p>
+<h4 id="Res-MT">Machine Translation</h4>
+<ul>
+  <li>Pharaoh</li>
+  <li>Hiero</li>
+</ul>
+<h4 id="Res-MT_Metrics">MT Metrics</h4>
+<ul>
+  <li>BLEU</li>
+  <li>METEOR</li>
+  <li>TER</li>
+</ul>
+</div>
+</div>
+<div class="References">
+<hr />
+<h2 id="References">References</h2>
+<p>See additional <a href="http://www.umiacs.umd.edu/users/kensch/papers/resources.htm">resources</a>.</p>
+<h3 id="Ref-Factored_LM">Factored Translation Models</h3>
+<p>J Bilmes &amp; K Kirchhoff&nbsp;(2003).&nbsp;"<cite class="Plain"><a href="http://ssli.ee.washington.edu/people/bilmes/mypapers/hlt03.pdf" class="external text" title="http://ssli.ee.washington.edu/people/bilmes/mypapers/hlt03.pdf">Factored Language Models and Generalized Parallel Backoff</a>".&nbsp;<em>Human Language Technology Conference</em></cite>.</p>
+<p> K. Kirchhoff and M. Yang, "Improved Language Modeling for Statistical Machine Translation", <em>Proceedings of the ACL Workshop on Building and Using Parallel Texts</em>, 2005. [<a href="http://acl.ldc.upenn.edu/W/W05/W05-0821.pdf">pdf</a>]</p>
+<h3 id="Ref-Morph_Language">Morphology &ndash; Language-Specific</h3>
+<p id="cmejrek-etal2004">Martin &#268;mejrek, Jan Cu&#345;&iacute;n, Ji&#345;&iacute; Havelka, Jan Haji&#269;, Vladislav Kubo&#328;. 2004. <span class="Article">Prague Czech-English Dependency Treebank: Syntactically Annotated Resources for Machine Translation</span>. In <span class="Publication">4th International Conference on Language Resources and Evaluation</span>. Lisbon, Portugal. [<a href="http://ufal.mff.cuni.cz/pcedt/doc/papers/lrec2004_pcedt.pdf">pdf</a>, <a href="http://ufal.mff.cuni.cz/pcedt/doc/papers/lrec2004_pcedt.ps">ps</a>, <a href="http://www.ldc.upenn.edu/Catalog/CatalogEntry.jsp?catalogId=LDC2004T25">download</a>]</p>
+<p id="habash-rambow2005"><span class="Author">Nizar</span> <span class="Author">Habash</span>, <span class="Author">Owen Rambow</span>. <span class="Article">Arabic Tokenization, Part-of-Speech Tagging and Morphological Disambiguation in One Fell Swoop</span>. <span class="Publication">ACL-05</span>. [<a href="http://acl.ldc.upenn.edu/P/P05/P05-1071.pdf">pdf</a>]</p>
+<p id="lee-etal2003">Young-Suk Lee, Kishore Papineni, Salim Roukos, Ossama Emam, Hany Hassan. 2003. <span class="Article">Language Model Based Arabic Word Segmentation</span>. In <span class="Publication">Proceedings of the 41<span class="Super">st</span> Annual Meeting of the ACL</span>, 399-406. Sapporo, Japan. [<a href="http://acl.ldc.upenn.edu/acl2003/main/pdfs/LeePapineni.pdf">pdf</a>]</p>
+<h3 id="Ref-Morph_Sup">Morphology &ndash; Supervised</h3>
+<p id="daciuk2004"><a href="http://www.pg.gda.pl/%7Ejandac/">Jan Daciuk</a>. <span class="Article">Finite-State Lexical Tools</span>. <a class="Publication" href="http://bis.kie.ae.poznan.pl/">BIS 2004, 7th International Conference on Business Information Systems</a>, pp.&nbsp;373-380. Witold Abramowicz (ed.), Wydawnictwo Akademii Ekonomicznej w Poznaniu, Pozna&#324;, Poland, 21-23 April, 2004. [<a href="http://www.eti.pg.gda.pl/katedry/kiw/pracownicy/Jan.Daciuk/personal/fsa.html">download</a>, <a href="http://www.umiacs.umd.edu/users/kensch/software/fsa-nlp.htm">mirror</a>]</p>
+<p id="daciuk-vannoord2001"><a href="http://www.pg.gda.pl/%7Ejandac/">Jan Daciuk</a>, <a href="http://odur.let.rug.nl/%7Evannoord/">Gertjan van Noord</a>. <span class="Article">A Finite-State Library for NLP</span>. <span class="Publication">CLIN 2001</span>. University of Twente, Enschede, the Netherlands, November 2001.</p>
+<p id="kay1987"><span class="Author">Martin Kay</span>: <span class="Article">Nonconcatenative Finite-State Morphology</span>. <a class="Publication" href="http://www.informatik.uni-trier.de/%7Eley/db/conf/eacl/eacl1987.html#Kay87">EACL 1987</a>: 2-10. [<a href="http://acl.ldc.upenn.edu/E/E87/E87-1002.pdf">pdf</a>]</p>
+<p id="koskenniemi1983a"><span class="Author">Koskenniemi, Kimmo</span>. <span class="Article">Two-level Morphology: A General Computational Model for Word-Form Recognition and Production</span><em>,</em> <span class="Publication">Publications</span>, p.&nbsp;160, University of Helsinki, Department of General Linguistics (1983).</p>
+<h3 id="Ref-Morph_Unsup">Morphology &ndash; Unsupervised</h3>
+<p id="baldwin2005"><a class="Author" href="http://www.cs.mu.oz.au/%7Etim/publications.html">Baldwin, Timothy</a> (2005) <span class="Article">Bootstrapping Deep Lexical Resources: Resources for Courses</span>, In <span class="Publication">Proceedings of the ACL-SIGLEX 2005 Workshop on Deep Lexical Acquisition</span>, Ann Arbor, USA, pp.&nbsp;67&ndash;76. [<a href="http://acl.ldc.upenn.edu/W/W05/W05-1008.pdf">pdf</a>]</p>
+<p id="freitag2005"><span class="Author">Dayne Freitag</span>. <span class="Article">Morphology Induction from Term Clusters</span>. <span class="Publication">Proceedings of the Ninth Conference on Computational Natural Language Learning</span> (CoNLL-2005), pp.&nbsp;128-135. Ann Arbor, MI, June 2005. [<a href="http://acl.ldc.upenn.edu//W/W05/W05-0617.pdf">pdf</a>]</p>
+<h3 id="Ref-Morph_MT">Morphology &amp; MT</h3>
+<p><span class="Author">de Gispert, A</span>. <span class="Article">Phrase Linguistic Classification and Generalization for Improving Statistical Machine Translation</span>. <span class="Publication">Proc. of the ACL Student Research Workshop (ACL'05/SRW)</span>, pp.&nbsp;67-72. Ann Arbor (Michigan), June 2005. [<a href="http://gps-tsc.upc.es/veu/research/pubs/download/deG_Phr_05.pdf">pdf</a>]</p>
+<p id="goldwater-mcclosky2005"><a href="http://www.cog.brown.edu:16080/%7Esgwater/"><span class="Author">Sharon Goldwater</span></a>, <span class="Author">David McClosky</span>. <span class="Article">Improving Statistical MT through Morphological Analysis</span><em>.</em> <span class="Publication">Proceedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP)</span>. Vancouver, 2005. [<a href="http://www.cog.brown.edu:16080/%7Esgwater/papers/emnlp05.pdf">pdf</a>, <a href="http://www.cog.brown.edu:16080/%7Esgwater/papers/emnlp05.ps">ps</a>]</p>
+<p id="koehn-knight2003"><span class="Author">Philipp Koehn</span>, <span class="Author">Kevin Knight.</span> <span class="Article">Empirical Methods for Compound Splitting</span>. <span class="Publication">EACL 2003</span>. [<a href="http://www.iccs.informatics.ed.ac.uk/%7Epkoehn/publications/compound2003.pdf">pdf</a>, <a href="http://www.iccs.informatics.ed.ac.uk/%7Epkoehn/publications/compound2003.ps">ps</a>, <a href="http://www.iccs.informatics.ed.ac.uk/%7Epkoehn/publications/compound2003.html">abstract</a>]</p>
+<p id="lee2004"><span class="Author">Young-Suk Lee</span>. <span class="Article">Morphological Analysis for Statistical Machine Translation</span>. In Susan Dumais, Daniel Marcu, Salim Roukos, eds., <span class="Publication">HLT-NAACL 2004: Short Papers</span>, 57&ndash;60, Boston, Massachusetts, May 2004. [<a href="http://acl.ldc.upenn.edu/hlt-naacl2004/shorts/pdf/227_Paper.pdf">pdf</a>, <a href="http://acl.ldc.upenn.edu/hlt-naacl2004/shorts/ps/227_Paper.ps">ps</a>]</p>
+<p id="niessen2000"><span class="Author">Sonja Nie</span>&szlig;<span class="Author">en</span>, <a class="Author" href="http://www.informatik.uni-trier.de/%7Eley/db/indices/a-tree/n/Ney:Hermann.html">Hermann Ney</a>. 2000. <span class="Article">Improving SMT Quality with Morpho-Syntactic Analysis</span>. In <span class="Publication">Proceedings of the 20</span><span class="Super Book">th</span><span class="Publication"> International Conference on Computational Linguistics</span>, 1081-1085. Saarbrucken, Germany23.329.132.6</p>
+<p id="niessen2001b"><span class="Author">Sonja Nie</span>&szlig;<span class="Author">en</span>, <span class="Author">Hermann Ney</span>. <span class="Article">Morpho-syntactic analysis for Reordering in Statistical Machine Translation</span>. In <span class="Publication">Proceedings of the MT Summit VIII</span>, pp.&nbsp;247-252. Santiago de Compostela, Galicia, Spain, September 2001. [<a href="http://www.eamt.org/summitVIII/papers/niessen.pdf">pdf</a> (45 kb), <a href="http://www-i6.informatik.rwth-aachen.de/PostScript/InterneArbeiten/Paper_2001/Niessen_MorphoReorder_MTsummit_2001.ps">ps</a>]</p>
+<p id="niessen-ney_cl2004"><span class="Author">Sonja Nie</span>&szlig;<span class="Author">en</span>, <span class="Author">Hermann Ney</span>. <span class="Article">Statistical Machine Translation with Scarce Resources Using Morpho-Syntactic Information</span>. In <span class="Publication">Computational Linguistics</span>, Volume 30, Number 2, pp.&nbsp;181-204, June 2004. [<a href="http://cognet.mit.edu/library/journals/issue?issue_id=1726">CogNet</a>]</p>
+<p id="popovic2004a"><span class="Author">M. Popovi&#263;</span>, <span class="Author">Hermann Ney</span>. <span class="Article">Improving Word Alignment Quality using Morpho-syntactic Information</span>. <span class="Publication">COLING04</span>. [<a href="http://www.lc-star.com/Popovic_alignment-trainingMorphosyntax_COLING04.pdf">pdf</a>]</p>
+<p id="popovic2004b"><span class="Author">M. Popovi&#263;</span> and <span class="Author">Hermann Ney</span>. <span class="Article">Towards the Use of Word Stems and Suffixes for Statistical Machine Translation</span>. In <span class="Publication">Proceedings of the 4th International Conference on Language Resources and Evaluation (LREC)</span>, 1585-1588. Lisbon, Portugal, May 2004. [<a href="http://www-i6.informatik.rwth-aachen.de/PostScript/InterneArbeiten/Popovic_Stem+SuffixforSMT_LREC04.ps.gz">ps</a>]</p>
+<p id="popovic-etal_acl2005"><a href="http://www-i6.informatik.rwth-aachen.de/%7Epopovic/"><span class="Author">M. Popovi&#263;</span></a>, <span class="Author">D. Vilar</span>, <span class="Author">Hermann Ney</span>, <span class="Author">S. Jovi&#269;i&#263;</span>, <span class="Author">Z. &Scaron;ari&#263;</span>. <span class="Article">Augmenting a Small Parallel Text with Morpho-syntactic Language Resources for Serbian-English Statistical Machine Translation</span>. In <span class="Publication">Proceedings of the ACL Workshop on Building and Using Parallel Texts: Data-Driven Machine Translation and Beyond</span>, 41-48. Ann Arbor, Michigan, June 2005. [<a href="http://www-i6.informatik.rwth-aachen.de/ps/InterneArbeiten/Popovic_Corpus+Morphosyntax_for_SerbianEnglish_SMT.pdf">pdf</a>]</p>
+<p id="schrader_lrec2006"><a href="http://www.cogsci.uni-osnabrueck.de/%7Egraduate/members/Bettina.Schrader.html"><span class="Author">Bettina Schrader</span></a>. <span class="Article">Non-Probabilistic Alignment of Rare German and English Nominal Expressions</span>. To appear in: <span class="Publication">Proceedings of the Fifth International Conference on Language Resources and Evaluation (LREC)</span>, May 2006, Genoa, Italy.</p>
+<p id="schrader_lrec2004"><a href="http://www.cogsci.uni-osnabrueck.de/%7Egraduate/members/Bettina.Schrader.html"><span class="Author">Bettina Schrader</span></a>. <span class="Article">Improving Word Alignment Quality Using Linguistic Knowledge</span>. <span class="Publication">Proceedings of the Workshop on</span> <span class="Publication">The Amazing Utility of Parallel and Comparable Corpora</span> (LREC 2004 satellite event). pp 46-49. May 2004, Lisbon, Portugal. [<a href="http://www.lrec-conf.org/lrec2004/doc/ws/prg_parallel-corpora.pdf">pdf</a>]</p>
+<h3 id="Ref-SMT">Translation &ndash; Statistical</h3>
+<p id="chiang2005"><span class="Author">Chiang, David</span>. <span class="Article">A Hierarchical Phrase-Based Model for Statistical Machine Translation</span>. In <span class="Publication">Proceedings of ACL 2005</span>, pages 263&ndash;270. Best paper award. [<a href="http://www.isi.edu/%7Echiang/papers/chiang-acl05.pdf">pdf</a>]</p>
+<p id="koehn2004"><span class="Author">Philipp Koehn</span>. <span class="Article">Pharaoh: A Beam Search Decoder for Phrase-Based Statistical Machine Translation Models</span>. <span class="Publication">AMTA 2004</span>. [<a href="http://people.csail.mit.edu/people/koehn/publications/pharaoh-amta2004.pdf">pdf</a>, <a href="http://people.csail.mit.edu/people/koehn/publications/pharaoh-amta2004.ps">ps</a>, <a href="http://people.csail.mit.edu/people/koehn/publications/pharaoh-amta2004-slides.pdf">slides</a>]</p>
+<p id="koehn-etal2003"><span class="Author">Philipp Koehn, Franz Josef Och, Daniel Marcu</span>. <span class="Article">Statistical Phrase-Based Translation</span>. In <span class="Publication">Proceedings of the Human Language Technology Conference 2003 (HLT-NAACL 2003)</span>, Edmonton, Canada, May 2003. [<a href="http://www.isi.edu/%7Ekoehn/publications/phrase2003.pdf">pdf</a>]</p>
+<p id="och-ney2004"><span class="Author">Franz Josef Och</span> and <span class="Author">Hermann Ney</span>. 2004. <span class="Article">The Alignment Template Approach to Statistical Machine Translation</span>. <span class="Publication">Computational Linguistics</span> 30:417&ndash;449.</p>
+<h3 id="Ref-Alignment">Word Alignment</h3>
+<p id="hiemstra1996"><span class="Author">D. Hiemstra</span>. 1996. <span class="Article">Using Statistical Methods to Create a Bilingual Dictionary</span>. Master's thesis, Universiteit Twente.</p>
+<p id="koehn2002"><span class="Author">Philipp</span> <span class="Author">Koehn</span>. <span class="Article">Europarl: A Multilingual Corpus for Evaluation of Machine Translation</span>. Draft, Unpublished 2002. [<a href="http://people.csail.mit.edu/%7Ekoehn/publications/europarl.ps">ps</a><span>, <a href="http://people.csail.mit.edu/koehn/publications/europarl/">data</a>]</span></p>
+<p id="och-ney2003">Franz Josef Och, Hermann Ney. A Systematic Comparison of Various Statistical Alignment Models. <em>Computational Linguistics</em>, volume 29, number 1, pp.&nbsp;19-51. March 2003.</p>
+<h3 id="Ref-WSD">WSD</h3>
+<p id="kenschaft2005"><span class="Author">Edward Kenschaft</span>. <span class="Article">Improving Crosslingual Word Sense Disambiguation using Unlabeled Monolingual Corpora</span>. (unpublished ms) December 2005. [<a href="http://www.umiacs.umd.edu/users/kensch/career/papers/wsd.htm">html</a>]</p>
+<p id="mihalcea-edmonds2004"><span class="Author">Rada Mihalcea</span> and <span class="Author">Phil Edmonds</span>, ed. <span class="Publication">Proceedings of Senseval-3: The Third International Workshop on the Evaluation of Systems for the Semantic Analysis of Text</span>. Association for Computational Linguistics: Barcelona, Spain, July, 2004. [<a href="http://www.senseval.org/senseval3/proceedings">website</a>, <a href="http://www.senseval.org/senseval3/data.html">data</a>]</p>
+<p id="och2999"><a class="Author" href="http://www.fjoch.com/">Franz Josef Och</a>. <span class="Article">An Efficient Method for Determining Bilingual Word Classes</span>. <span class="Publication">Ninth Conf. of the Europ.&nbsp;Chapter of the Association for Computational Linguistics (EACL'99)</span>, 71-76. Bergen, Norway, June 1999. [<a href="http://www-i6.informatik.rwth-aachen.de/Colleagues/och/EACL99.ps">ps</a>]</p>
+<h3>Misc</h3>
+<p id="babych-hartley2003">Babych &amp; Hartley 2003.</p>
+</div>
+<script type="text/javascript">footer(0);</script>
+</body>
+</html>

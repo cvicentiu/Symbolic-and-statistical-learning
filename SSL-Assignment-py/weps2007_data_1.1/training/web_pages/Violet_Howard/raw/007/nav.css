@@ -1,0 +1,139 @@
+.navKader {
+	position: relative;
+	border: 1px solid white;
+}
+
+.infoKader { 
+	border: 1px solid #aaaaaa; 
+	width: 100%;
+	line-height: 15px;
+	background-position: right; 
+	background-color: white; 
+	background-image: url(/nav_dropdown/down.gif); 
+	background-repeat: no-repeat;
+	font-size: 10px;
+	font-weight: normal;
+	position: absolute; 
+	right: 0px;
+	padding: 0px;
+}
+
+.infoJumpKader { 
+	border: 1px solid #aaaaaa; 
+	width: 210;
+	line-height: 15px;
+	background-position: right; 
+	background-color: white; 
+	background-image: url(/nav_dropdown/down.gif); 
+	background-repeat: no-repeat;
+	font-size: 10px;
+	font-weight: normal;
+	position: absolute; 
+	padding: 0px;
+}
+
+.infoKader SPAN { 
+	padding: 0px;
+	padding-left: 2px;
+	text-align: left;
+	display: block;
+}
+
+.infoKader:hover { 
+	cursor: default; 
+}
+
+.linkKader {
+	background-color:#FFFFFF; 
+	border: 1px solid #aaaaaa; 
+	width: 100%;
+	height: 100px; 
+	overflow: auto; 
+	position: absolute; 
+	right: 0px;
+	top: -99px;
+	padding: 0px;
+	text-align: left;
+}
+
+.linkKader A { 
+	font-size: 10px;
+	color: #000000; 
+	display: block; 
+	text-decoration: none !important;
+	font-weight: normal;
+	padding: 0px;
+	padding-left: 0px;
+} 
+
+.linkKader A:hover {
+	color:#FFFFFF; 
+	background-color: #000000; 
+	text-decoration: none;
+}
+
+.linkKader A:visited {
+	text-decoration: none;
+}
+
+.linkKader A:active {
+	text-decoration: none; 
+}
+
+.dropdown-nav {
+	color: #000000;
+	font-size: 10px;
+	xborder: 1px solid red;
+}
+
+TD.dropdown-nav {
+	xborder: 1px solid green;
+	padding: 0px;
+}
+
+.dropdown-nav A {
+	color: #000000;
+	text-decoration: underline;
+	font-size: 10px;
+}
+
+.dropdown-nav-disabled {
+	color: #aaaaaa;
+	font-size: 10px;
+	text-decoration: underline;
+}
+
+.linkJumpKader {
+	background-color:#FFFFFF; 
+	border: 1px solid #aaaaaa; 
+	width: 210;
+	height: 100px; 
+	overflow: auto; 
+	position: absolute; 
+	top: -99px;
+	padding: 0px;
+}
+
+.linkJumpKader A { 
+	font-size: 10px;
+	color: #000000; 
+	display: block; 
+	text-decoration: none !important;
+	font-weight: normal;
+	padding: 0px;
+	padding-left: 0px;
+} 
+
+.linkJumpKader A:hover {
+	color:#FFFFFF; 
+	background-color: #000000; 
+	text-decoration: none;
+}
+
+.linkJumpKader A:visited {
+	text-decoration: none;
+}
+
+.linkJumpKader A:active {
+	text-decoration: none; 
+}

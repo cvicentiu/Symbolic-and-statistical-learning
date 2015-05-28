@@ -1,0 +1,3171 @@
+body {
+	background: #fff url(/img/bg-body.jpg) repeat-x top left;
+	font: normal small Verdana, Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+#wrap {
+	background: #fff url(/img/bg-wrap2.gif) no-repeat top left;
+	font-size: 95%;
+	margin: 0 auto;
+	padding: 0 3px;
+	position: relative;
+	text-align: left;
+	width: 838px;
+}
+#header {
+	background: #000 url(/img/bg-header2.gif) no-repeat top left;
+	border-bottom: 5px solid #FF55A9;
+	height: 61px;
+	position: relative;
+} 
+#header #logo {
+	background: url(/img/logo-odeo.gif) no-repeat;
+	height: 39px;
+	left: 10px;
+	position: absolute;
+	top: 10px;
+	width: 124px;
+}
+#header #logo a {
+	display: block;
+	height: 45px;
+	width: 129px;
+}
+#header #logo img {
+	display: none;
+}
+#header #tabs {
+	position:relative;
+	top:35px;
+	left:200px;
+	width:300px;
+}
+#header #member {
+	color: #666;
+	font-size: 90%;
+	position: absolute;
+	right: 27px;
+	text-align: right;
+	top: 23px;
+	z-index: 1100;
+}
+#header #member a {
+	color: #999;
+	font-size:1.1em;
+	text-decoration: underline;
+}
+#header #member a:hover {
+	color: #ccc;
+	text-decoration: underline;
+}
+#header #member #head-user-box {
+	background-color: transparent;
+	position: absolute;
+	right: 10px;
+	text-align: left;
+	visibility: hidden;
+	width: 314px;
+}
+#header #member #head-user-box div.top {
+	background: transparent url(/img/bg-login-blue-top.png) no-repeat top left;  
+	height: 23px;
+}
+#header #member #head-user-box ul {
+	list-style: none;
+	margin: 0 2px;
+	padding: 0;
+}
+#header #member #head-user-box ul li {
+	background: url(/img/bullet-dot-1.gif) no-repeat 0 5px;
+	margin: 0;
+	padding: 0 0 0 13px;
+}
+#header #member #head-user-box div.btm {   
+	background: transparent url(/img/bg-login-blue-btm.png) no-repeat bottom left;
+	padding: 0 25px 23px 13px;
+	text-align: left;
+}
+#header #member #head-user-box a {
+	color: #f39;
+	font-weight: normal;
+	text-decoration: none;
+}
+#header #member #head-user-box a:hover {
+	color: #C3156C;
+	text-decoration: underline;
+}
+#header #member a.top-crnt {
+	font-weight: bold;
+	text-decoration:none;
+	cursor:default;
+}
+
+#sub-nav {
+	border-bottom:solid 1px #D0E6EC;
+}
+
+#sub-nav a {
+	padding:5px;
+	padding-bottom:0px;
+	padding-top:3px;
+	border-left:solid 1px #D0E6EC;
+}
+
+#sub-nav a.selected {
+	font-weight:bold;
+	background:#E9F3F6;
+	color:#666;
+	border-top:solid 1px #D0E6EC;
+	padding-bottom:2px;
+}
+
+
+img.icon {width:24px;height:24px;border: solid 1px #000; float:left; margin-top:1px;margin-right:5px;}
+
+
+#main {
+	background-color: #fff;
+	color: #333;
+	float: left;
+	margin-bottom: 20px;
+	width: 600px;            
+}
+
+body.audio #main {
+	width: 820px; 
+}
+
+body.audio #report {
+	width: 820px; 
+}
+
+
+#main #main-title {
+  	background: url(/img/blendy.gif) no-repeat bottom left;
+	clear: both;
+	margin-bottom: 15px;
+	padding: 15px 30px 15px 20px;
+	position: absolunte;
+}
+#main #main-title h1 {
+	clear: left;
+	color: #333;
+	font: normal 190%/1em Arial, sans-serif;
+	letter-spacing: -1px;
+	margin: 0;
+	padding: 0;
+}
+body.audio #main #main-title h1 {
+	font-size:210%;
+}	
+
+#main #main-title p {
+	clear: left;
+	font: normal 120%/1em Arial, sans-serif;
+	margin: 5px 0 5px 0;
+}
+#main #main-body {
+	color: #333;
+	font-size: 95%;
+	margin: 15px 10px 20px 20px;
+}
+#main #main-body h2 {
+	color: #333;
+	font: bold 120%/1.5em Arial, sans-serif;
+	margin: 15px 0 .5em;
+	padding: 0;                   
+}
+body.audio h2 {
+	margin-top:0;
+}
+
+
+#main #main-body h3 {
+	color: #3176AF;
+	font: bold 110%/1.2em Arial, sans-serif;
+	margin: 20px 0 .5em;
+	padding: 0;                   
+}
+#main #main-body h4 {
+	color: #3176AF;
+	font: bold 100%/1.1em Arial, sans-serif;
+	margin: 20px 0 .5em;
+	padding: 0;                   
+}
+
+
+
+#nav-tab {
+	border-bottom: 1px solid #BDD7E2;
+	border-top: 1px solid #fff;
+	font-size: 10.5px;
+	margin: 15px -5px 15px -5px;
+	padding: 0 0 0 2px;
+}
+#nav-tab li {
+	display: inline;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+ul#nav-tab li a, 
+ul#nav-tab li a:link, 
+ul#nav-tab li a:visited, 
+ul#nav-tab li span {
+	background: #fff url(/img/bg-nav-tab.gif) repeat-x top left;
+	border: 1px solid #BDD7E2;
+	color: #5A789F;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	line-height: 20px;
+	margin: 0 2px;
+	padding: 4px 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+ul#nav-tab li a:hover {
+	background-image: none;
+}
+body#index.sync ul#nav-tab li.queue a, 
+ul#nav-tab li span.active {
+	background-image: none;
+	border-bottom: 1px solid #fff;
+	color: #334864;
+	cursor: default;
+}
+#side {
+	float: right;
+	font-size: 90%;
+	margin-bottom: 15px;
+	padding: 10px 5px;
+	width: 210px;
+}
+#footer {
+	background: url(/img/bg-footer.gif) no-repeat top left; 
+	border-top: 1px solid #D3E1E7;
+	clear: both;
+	font-size: 90%;
+	line-height: 1.6em;
+	margin: 20px;
+	padding: 8px 0 70px 0;
+}
+#footer p {
+	color: #334864;
+	margin: 0;
+	padding: 0;
+}
+#footer p.one {
+	float: left;
+}
+#footer p.two {
+	float: right;
+}
+#footer p.three {
+	clear: both;
+}
+
+a:link {
+	color: #3878AF;
+	text-decoration: none;
+}
+a:visited {
+	color: #7494AD;
+	text-decoration: none;
+}
+a:hover {
+	color: #C3156C;
+	text-decoration: underline;
+}
+#header a, 
+#member a, 
+#side a, 
+#footer a {
+	text-decoration: none;
+}
+
+#header a:hover, 
+#member a:hover, 
+#footer a:hover {
+	text-decoration: underline;
+}
+/*********************************************************/
+
+
+
+
+/****( @common Common reusable CSS )*****************************************************/
+/****( Misc CSS )*************************/
+hr, 
+.hide {
+	display: none;
+}
+table, 
+tr, 
+th, 
+td, 
+img, 
+fieldset {
+	border: 0;
+}
+.white-fade23 {background-color: #FFFFFF;}
+.white-fade22 {background-color: #FFFFF7;}
+.white-fade21 {background-color: #FFFFEE;}
+.white-fade20 {background-color: #FFFFE6;}
+.white-fade19 {background-color: #FFFFDD;}
+.white-fade18 {background-color: #FFFFD5;}
+.white-fade17 {background-color: #FFFFCC;}
+.white-fade16 {background-color: #FFFFC4;}
+.white-fade15 {background-color: #FFFFBB;}
+.white-fade14 {background-color: #FFFFB3;}
+.white-fade13 {background-color: #FFFFAA;}
+.white-fade12 {background-color: #FFFFA2;}
+.white-fade11 {background-color: #FFFFAA;}
+.white-fade10 {background-color: #FFFFB3;}
+.white-fade9 {background-color: #FFFFBB;}
+.white-fade8 {background-color: #FFFFC4;}
+.white-fade7 {background-color: #FFFFCC;}
+.white-fade6 {background-color: #FFFFD5;}
+.white-fade5 {background-color: #FFFFDD;}
+.white-fade4 {background-color: #FFFFE6;}
+.white-fade3 {background-color: #FFFFEE;}
+.white-fade2 {background-color: #FFFFF7;}
+.white-fade1 {background-color: #FFFFFF;}
+#side .box-2 ul li.all-tags {
+	font-style: italic;
+}
+/*****************/
+
+
+/****( Wait box )*************************/
+/*
+DESCRIPTION: the little popup "please wait" message people get when they check a feed for updates
+URL: any channel page
+ */
+#wait-outer {
+	background-color: transparent;
+	height: 1px;
+	left: 0;
+	margin-top: -108px;
+	overflow: visible;
+	position: fixed;
+	top: 50%;
+	width: 100%;
+	z-index: 2000;
+}
+#wait-inner {
+	background: transparent url(/img/bg-wait.png) no-repeat top left;
+	cursor: help;
+	height: 149px;
+	margin: 0 auto;
+	padding: 34px;
+	position: relative;
+	width: 92px;
+}
+#wait-inner img {
+	background-color: #fff;
+}
+/*****************/
+
+
+/****( Loginout box )*************************/
+/* DESCRIPTION: the little popup login box */
+#member #head-loginout-box {
+	background-color: transparent;
+	position: absolute;
+	right: 160px;
+	text-align: left;
+	visibility: hidden;
+	width: 314px;
+	z-index: 1050;
+}
+#member #head-loginout-box div.top {
+	background: transparent url(/img/bg-login-blue-top.png) no-repeat top left;  
+	height: 23px;
+}
+#member #head-loginout-box div.btm {   
+	background: transparent url(/img/bg-login-blue-btm.png) no-repeat bottom left;
+	padding: 0 25px 23px 13px;
+}
+#member form {
+	margin: -3px 0 0;
+	padding: 0;
+}
+#member form table {
+	border: 0;
+	padding: 0;
+}
+#member form table th {
+	border-right: 2px solid #D2E5EF;
+	font-weight: bold;
+	padding: 0 10px 0 0;
+	text-align: right;
+	vertical-align: top;
+	width: 110px;
+}
+#member form table tr.pad-top th {
+	padding-top: 10px;
+}
+#member form table span.help {
+	color: #888;
+	display: block;
+	font-size: .9em;
+	font-style: italic;
+	font-weight: normal;
+}
+#member form table td {
+	padding: 0 0 0 10px;
+	vertical-align: top;
+}
+#member form table tr.pad-top td {
+	padding-top: 10px;
+}
+#member form table td span.help {
+	margin-top: 3px;
+}
+#member form input {
+	margin: 0;
+	padding: 0;
+	width: 97%;
+} 
+#member form input[type="checkbox"], 
+#member form input[type="image"], 
+#member form input[type="submit"] {
+	width: auto;
+}
+#member form a {
+	color: #888;
+}
+#member form a:hover {
+	color: #444;
+	text-decoration: underline;
+}
+#member form img#head-user-cancel {
+	cursor: pointer;
+	margin-left: 5px;
+}
+/*****************/
+
+
+/****( Sidebar boxes )*************************/
+/* DESCRIPTION: the main styles for the boxes in the sidebar */
+#side li {
+	font-size: 110%;
+}
+
+#side .box-2 {
+	background: #D5E3B9 url(/img/bg-sidebar-btm.gif) no-repeat bottom right;
+	color: #668B1D;
+	font-weight: normal;
+	margin: 15px 0;
+}
+#side .box-2 h2 {
+	background: #86B034 url(/img/bg-sidebar-green-top.gif) no-repeat top left;
+	color: #fff;
+	font: bold 110% Arial, sans-serif;
+	margin: 0 0 10px 0;
+	padding: 6px 12px;
+	text-transform: uppercase; 
+}
+#side .box-2 h3 {
+	font: bold 110% Arial, sans-serif;
+	margin: 0;
+	padding: 0 15px 0; 
+}
+#side .box-2 p {
+	color: #606352;
+	margin: 0;
+	padding: 0 15px 15px;
+}
+#side .box-2 ul {
+	line-height: 1em;
+	list-style: none;
+	margin: 0;
+	padding: 0 15px 15px;
+}
+#side .box-2 ul li {
+	background: url(/img/bullet-dot-1.gif) no-repeat 0 7px;
+	margin: 0;
+	padding: 0 0 0 13px;
+}
+#side .box-2 ul li.crnt {
+	background-image: url(/img/bullet-dot-1-on.gif);
+	font-weight: bold;
+}
+#side .box-2 a, 
+#side .box-2 span {
+	border-bottom: 1px solid #CBD8B0;
+	color: #606352;
+	display: block;    
+	padding: 4px 2px;
+	text-decoration: none;
+}
+#side .box-2 span {
+	background-color: transparent;
+	color: #AAB494;
+}
+#side .box-2 a.normal {
+	border-bottom: none;
+	color: #606352;
+	display: inline;
+	padding: 0;   
+	text-decoration: underline;
+} 
+#side .box-2 a:visited {
+	color: #606352;
+}
+#side .box-2 a:hover, 
+
+/*
+DESCRIPTION: the 'create!' box in the sidebar
+URL: any page when you're signed in
+*/
+#side .box-3 {
+	background: #FDE7FF url(/img/bg-sidebar-btm.gif) no-repeat bottom right;
+	color: #668B1D;
+	font-weight: normal;
+	margin: 15px 0;
+}
+#side .box-3 h2 {
+	background: #e04381 url(/img/bg-sidebar-pink-top.gif) no-repeat top left;
+	color: #fff;
+	font: bold 110% Arial, sans-serif;
+	margin: 0 0 10px 0;
+	padding: 6px 12px;
+	text-transform: uppercase; 
+}
+#side .box-3 h3 {
+	font: bold 110% Arial, sans-serif;
+	margin: 0;
+	padding: 0 15px 0; 
+}
+#side .box-3 p {
+	color: #606352;
+	margin: 0;
+	padding: 0 15px 15px;
+}
+#side .box-3 ul {
+	line-height: 1em;
+	list-style: none;
+	margin: 0;
+	padding: 0 15px 15px;
+}
+#side .box-3 ul li {
+	background: url(/img/bullet-dot-1.gif) no-repeat 0 7px;
+	margin: 0;
+	padding: 0 0 0 13px;
+}
+#side .box-3 ul li.crnt {
+	background-image: url(/img/bullet-dot-1-on.gif);
+	font-weight: bold;
+}
+
+#side .box-3 a, 
+#side .box-3 span {
+	border-bottom: 1px solid #FAD4F0;
+	color: #606352;
+	display: block;    
+	padding: 4px 2px;
+	text-decoration: none;
+}
+#side .box-3 span {
+	background-color: transparent;
+	color: #AAB494;
+}
+#side .box-3 a.normal {
+	border-bottom: none;
+	color: #aaa;
+	display: inline;
+	padding: 0;   
+	text-decoration: underline;
+} 
+#side .box-3 a:visited {
+	color: #606352;
+}
+#side .box-3 a:hover, 
+ul#tag-list li a.narrow.just-added:hover {
+	background-color: #EFDBF2; 
+	color: #333;
+}
+
+/*
+DESCRIPTION: new sidebar style 
+URL: practically any page
+*/
+#side .box-6 {
+	color: #668B1D;
+	font-weight: normal;
+	margin: 25px 0;
+	text-align:left;
+    padding-right:5px;
+	padding-left:5px;
+}
+#side .box-6 h2 {
+	color: #4682B5;
+	font: 100% Arial, sans-serif;
+	margin: 0 0 10px 0;
+	padding: 0 0;
+	text-transform: uppercase; 
+}
+#side .box-6 ul {
+	line-height: 1em;
+	list-style: none;
+	margin: 0;
+	padding: 0 0 5px;
+}
+#side .box-6 li {
+	margin-bottom:5px;
+}
+
+#side #tag-help {
+	color:#333;
+}
+#side #tag-help h3 {
+	margin-bottom:0px;
+}	
+#side #tag-help p {
+	margin-top:0;
+}
+
+ul#tag-list li a.narrow.just-added:hover {
+	background-color: #EFDBF2; 
+	color: #333;
+}
+
+/*
+DESCRIPTION: adding in an icon for the "add a feed" box
+URL: any channel page
+*/
+#side .box-2 ul li#help-add-feed {
+	background-image: url(/img/icon-create-channel-mini-green.gif);
+	background-position: 0 4px;
+	padding: 0 0 0 17px;
+}
+
+/* DESCRIPTION: Browse By Tag sidebar
+URL: any Listen page
+*/
+
+#side div.box-4 {
+	margin-top: 10px; 
+	margin-bottom: 15px;
+	width:184px;
+}
+#side div.box-4-inner {
+	border-right: solid 1px #3476AE; 
+	border-left: solid 1px #3476AE; 
+	border-bottom: solid 1px #fff; 
+	padding: 2px; 
+	padding-top: 6px;
+	
+}
+#side .box-4-inner h2 {
+	color: #4682B5;
+	font: 100% Arial, sans-serif;
+	margin: 0 0 10px 0;
+	padding: 0 0;
+	text-transform: uppercase; 
+}
+
+
+#side .box-4-inner p#more {
+	text-align: center;
+	margin: 0px;
+}
+#side .box-4-inner td {
+	padding: 2px;
+	border: solid 1px #3476AE;
+	width: 50%; 
+	font-size: 12px; 
+	font-family: Arial,sans-serif;
+	cursor: pointer;
+}
+#side .box-4-inner img.create {
+	border: 1px solid #000;
+	margin-bottom: 4px;
+}
+
+
+/*
+DESCRIPTION: styling the claim page
+URL: /claim/channel/:id
+*/
+body.claim hr.show {
+	background-color: #D6EAF0;
+	border: 0;
+	display: block;
+	height: 1px;
+	margin: 40px 0;
+}
+body.claim #snippet h2 {
+	margin-top: 0;
+	padding-top: 0;
+}
+body.claim p.figure {
+}
+body.claim p.figure.left {
+	float: left;
+	margin: 0 10px 10px 0;
+}
+body.claim p.figure img {
+	border: 1px solid #CCCCCC;
+	margin: 0;
+	padding: 5px;
+}
+body.claim p.figure span {
+	background-color: #F9F9F9;
+	display: block;
+	font-size: .85em;
+	font-style: italic;
+	margin: 2px 0 0 0;
+	padding: 1px 6px;
+}
+/*****************/
+
+
+/****( Search forms )*************************/
+/* DESCRIPTION: this styles the search form at the top of each page */
+body div#member form#search-form {
+	display: inline; 
+	margin: 0;
+	padding: 0;
+	z-index: 1;           
+}
+body div#member input#search-input {
+	background-color: #ccc;
+	border: 0;
+	color: #333;
+	font-size: 1.1em;
+	margin: 0 3px 0 0;
+	padding: 2px;
+	width: 77px;
+}
+body div#member input#search-submit {
+	margin-top: -4px;
+	vertical-align: middle;
+}
+/*****************/
+
+
+/****( Forms )*************************/
+/* 
+DESCRIPTION: this is for styling forms in tables, it's the style we use in most cases on the site
+URL EG: /create/channel/
+*/
+form.form-style1 {
+	margin: 20px 0;
+}
+form.form-style1 fieldset {
+	border-bottom: 3px solid #D0E6EC;
+	border-top: 3px solid #D0E6EC;
+	margin: 20px 0;
+	padding: 10px;
+}
+form.form-style1 fieldset legend {
+	color: #3176AF;
+	font-weight: bold;
+	padding: 0 5px;
+}
+form.form-style1 table {
+	border: 0;
+	padding: 0;
+}
+form.form-style1 table th {
+	border-right: 2px solid #E5F1F5;
+	font-weight: bold;
+	padding: 10px 10px 10px;
+	text-align: right;
+	vertical-align: top;
+	width: 130px;
+}
+form.form-style1 table th span.help {
+	color: #888;
+	display: block;
+	font-size: .9em;
+	font-style: italic;
+	font-weight: normal;
+}
+form.form-style1 table td {
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-top: 10px;
+	vertical-align: top;
+}
+form.form-style1 table td span.help {
+	color: #888;
+	display: block;
+	font-size: .9em;
+	font-style: italic;
+	font-weight: normal;
+	margin-top: 3px;
+}
+form.form-style1 input, 
+form.form-style1 select, 
+form.form-style1 textarea {
+	margin: 0;
+	width: 100%;
+}
+form.form-style1 input[type="checkbox"], 
+form.form-style1 input[type="image"], 
+form.form-style1 input[type="submit"], 
+form.form-style1 input[type="radio"], 
+form.form-style1 .normal {
+	width: auto;
+}
+form.form-style1 ul, 
+form.form-style1 ol {
+	margin: 0;
+	padding-left: 2.2em;
+}
+form.form-style1 ul.plain, 
+form.form-style1 ol.plain {
+	list-style-type: none;
+	padding-left: 0;
+}
+form.form-style1 ul.plain li, 
+form.form-style1 ol.plain li {
+	padding-left: 0;
+}
+form.form-style1 li {
+	padding-left: 0;
+}
+form.form-style1 li+li {
+	margin-top: 5px;
+}
+form.form-style1 a {
+	display: inline;
+}
+/*****************/
+
+
+/****( @table )*************************/
+/*
+DESCRIPTION: table styling
+URL EG: /listen/
+*/
+table.table-style1 {
+	background-color: #F6FAFC;
+	border-bottom: 1px solid #D0E6EC;
+	border-left: 2px solid #D0E6EC;
+	border-right: 2px solid #D0E6EC;
+	border-top: 2px solid #D0E6EC;
+	color: #4C5456;
+	width: 100%;
+}
+table.table-style1 caption {
+	color: #333;
+	display: none;
+	margin: 0 0 15px;
+	text-align: left;
+}
+table.table-style1 thead th {
+	background-color: #DDEDF1;
+	border-bottom: 2px solid #D0E6EC;
+	font-weight: normal;
+}
+table.table-style1 tfoot th {
+	background-color: #DDEDF1;
+	border-bottom: 1px solid #D0E6EC;
+	border-top: 1px solid #D0E6EC;
+	font-weight: normal;
+}
+table.table-style1 thead th.chnl, 
+table.table-style1 thead th.show,  
+table.table-style1 thead th.date, 
+table.table-style1 thead th.edit, 
+table.table-style1 thead th.promote,  
+table.table-style1 thead th.upload {
+	text-align: left;
+}
+table.table-style1 tbody th {
+	background-color: #E5F1F4;
+	border-bottom: 1px solid #D0E6EC;
+	font-size: .9em;
+	font-weight: normal;
+	text-align: left;
+}
+table.table-style1 tbody td {
+	border-bottom: 1px solid #D0E6EC;
+	line-height: 1.3em;
+	margin: 0;
+	padding: 0;
+}
+table.table-style1 tbody tr.even td {
+	background-color: #F2F8FA;
+}
+table.table-style1 tbody td.num {
+	padding: 0 5px;
+	text-align: right;
+}
+table.table-style1 tbody td img.icon {
+	border: 1px solid #999;
+	height: 20px;
+	margin: 0;
+	padding: 0;
+	width: 20px;
+}
+table.table-style1 tbody td.empty {
+	color: #888;
+	padding: 5px;
+}
+table.table-style1 tbody tr:hover td {
+	background-color: #FFECF6;
+}
+table.table-style1 tbody td.shows, 
+table.table-style1 tbody td.subs, 
+table.table-style1 tbody td.cmnts {
+	text-align: center;
+} 
+table.table-style1 tbody td.date {
+	font-size: .9em;
+	padding: 0 5px;
+	width: 110px;
+}
+table.table-style1 tbody a {
+	display: block;
+	padding: 3px;
+	text-decoration: none;
+}
+table.table-style1 tbody a:hover {
+	text-decoration: none;
+}
+/*****************/
+
+
+/****( Audio and Channel admin controls )*************************/
+/*
+DESCRIPTION: the admin controls that appear on pages a user can edit
+URL: find a channel or audio you can edit!
+*/
+p.admin-control {
+	color: #EFB4B4;
+
+}
+p.admin-control a {
+	color: #FF3399;
+	text-decoration: none;
+}
+p.admin-control a:hover {
+	color: #C3156C;
+	text-decoration: underline;
+}
+
+/*****************/
+
+
+/****( @Feedback )*************************/
+/*
+DESCRIPTION: styles the feedback messages 
+URL: 
+*/
+div.warning-top {
+	background: #FAE79A url(/img/icon-alert-warning-orange.gif) no-repeat 10px 10px;
+	border-bottom: 2px solid #F4CA21;
+	border-top: 2px solid #F4CA21;
+	clear: both;
+	color: #7A5511;
+	margin: 0 10px 0 20px;
+	padding: 0 10px 0 39px;
+	opacity: 0.999;
+}
+div.success-top {
+	background: #E5F1B4 url(/img/icon-alert-success-green.gif) no-repeat 12px 11px;
+	border-bottom: 2px solid #C2D577;
+	border-top: 2px solid #C2D577;
+	clear: both;
+	color: #49541C;
+	margin: 0 10px 0 20px;
+	padding: 0 10px 0 39px;
+	opacity: 0.999;
+}
+div.info-top {
+	background: #E8F3F6 url(/img/icon-alert-info-blue.gif) no-repeat 12px 11px;
+	border-bottom: 2px solid #C4DFE6;
+	border-top: 2px solid #C4DFE6;
+	clear: both;
+	color: #3176AF;
+	margin: 0 10px 0 20px;
+	padding: 0 10px 0 39px;
+	opacity: 0.999;
+}
+div.warning-top a, 
+div.success-top a, 
+div.info-top a {
+	color: #f39;
+	text-decoration: none;
+}
+div.warning-top a:hover, 
+div.success-top a:hover, 
+div.info-top a:hover {
+	color: #C3156C;
+	text-decoration: underline;
+}
+/*****************/
+
+.tag-ind {
+	display:none;
+}
+
+#see-also-bar {
+	width:100%;background:#FCFEBB;border-bottom:solid 1px #89B1C6;
+	padding:5px 0 5px 0;
+	text-align:center;
+	color:#333;
+	font-size:90%;
+}
+#see-also-bar a:link {
+	font-weight:bold;
+	color:#f39;
+}
+#see-also-bar a:visited {
+	color:#f39;
+	font-weight:bold;	
+}
+
+#invite-promo {
+	font-size:100%;cursor:pointer;
+	margin:12px 0 20px 12px;
+}
+
+#invite-promo #invite-promo-btn {
+	width:94px;height:24px;background-image:url(/img/pink_button.gif);
+		float:left;text-align:center;padding-top:9px;font-weight:bold;color:white;margin-right:8px;
+}
+
+/*
+DESCRIPTION: new tag sidebar style on audio and podcast pages
+URL: view any audio or channel
+*/
+
+ul#tag-list { 
+	margin: 0 0 10px 0;
+	padding-bottom: 0;
+	padding:0;
+}
+ul#tag-list li {
+	position: relative;
+	margin-top:3px;      
+	list-style:none;
+}
+ul#tag-list li.no-tags {
+	background-image: none;
+	color: #606352;
+	margin: 0 -15px 0;
+	padding: 0 15px 0;      
+}
+ul#tag-list li a.delete {
+	border: 0;
+}
+ul#tag-list li a.narrow {
+	width: 120px;     
+}
+ul#tag-list li a.narrow.just-added {
+	background-color: #FFFFE8;
+	color: #384D0D;
+}
+form#tag-list-form {
+	margin: 0;
+	padding: 3px 0 10px;	 
+}
+form#tag-list-form div {
+	padding: 0;
+}
+form#tag-list-form input#tag-list-input {
+	margin: 0 3px 0 0;
+	width: 118px;	 
+}
+form#tag-list-form input#tag-list-submit {
+	height: 19px;
+	margin-top: -3px;
+	vertical-align: middle;  
+}
+
+#side div#play-next {
+	text-align: center;
+	margin-top: 5px;
+}
+#side div#play-next button {
+	background:none;
+	border:none;
+	cursor:pointer;
+}	
+
+
+.add-tag-fade23 {background-color: #D5E3B9;}
+.add-tag-fade22 {background-color: #D9E6B7;}
+.add-tag-fade21 {background-color: #DDE8B5;}
+.add-tag-fade20 {background-color: #E0EBB3;}
+.add-tag-fade19 {background-color: #E4EDB1;}
+.add-tag-fade18 {background-color: #E8F0AF;}
+.add-tag-fade17 {background-color: #ECF2AC;}
+.add-tag-fade16 {background-color: #F0F5AA;}
+.add-tag-fade15 {background-color: #F4F7A8;}
+.add-tag-fade14 {background-color: #F7FAA6;}
+.add-tag-fade13 {background-color: #FBFCA4;}
+.add-tag-fade12 {background-color: #FFFFA2;}
+.add-tag-fade11 {background-color: #FBFCA4;}
+.add-tag-fade10 {background-color: #F7FAA6;}
+.add-tag-fade9 {background-color: #F4F7A8;}
+.add-tag-fade8 {background-color: #F0F5AA;}
+.add-tag-fade7 {background-color: #ECF2AC;}
+.add-tag-fade6 {background-color: #E8F0AF;}
+.add-tag-fade5 {background-color: #E4EDB1;}
+.add-tag-fade4 {background-color: #E0EBB3;}
+.add-tag-fade3 {background-color: #DDE8B5;}
+.add-tag-fade2 {background-color: #D9E6B7;}
+.add-tag-fade1 {background-color: transparent;}
+
+
+
+/****( Comments on the Channel and Show pages )*************************/
+/*
+DESCRIPTION: styles the list of a Show's or Channel's comments
+URL: view any show or channel
+*/
+
+#main-body p.cmnt-login-notice {
+	clear: left; 
+	padding: 10px 0 0 10px;
+}
+
+ol#cmnt-list {
+	color: #444;
+	list-style: none;
+	padding: 2px;
+	margin-left:0;
+}
+ol#cmnt-list li {
+	margin: 0 0 0 auto;
+	padding: 10px;
+	padding-left:0;
+	padding-top:0;
+	clear: both;
+}
+ol#cmnt-list li#no-cmnts {
+	list-style: none;
+}
+ol#cmnt-list li img.profile {
+	border: 1px solid #aaa;
+	float: left;
+	margin-right: 10px;
+	margin-top:2px;
+}
+ol#cmnt-list li p.cmnt-user {
+	display: inline; /* fixes FF wrapping bug */
+	margin: 0 0 10px;
+}
+ol#cmnt-list li p.cmnt-cmnt {
+	margin: 10px 0 0;
+}
+ol#cmnt-list li p.cmnt-time span {
+	cursor: help;
+	font-size: .9em;
+	font-style: italic;
+}
+ol#cmnt-list li p.cmnt-plyr {
+	position: relative;
+	top: 1px;
+}
+ol#cmnt-list li#adding-cmnt p {
+	display: inline;
+	margin: 0 0 10px;
+}
+
+.add-cmnt-fade23 {background-color: #ECF2DF;}
+.add-cmnt-fade22 {background-color: #EEF3D9;}
+.add-cmnt-fade21 {background-color: #EFF4D4;}
+.add-cmnt-fade20 {background-color: #F1F6CE;}
+.add-cmnt-fade19 {background-color: #F3F7C9;}
+.add-cmnt-fade18 {background-color: #F5F8C3;}
+.add-cmnt-fade17 {background-color: #F6F9BE;}
+.add-cmnt-fade16 {background-color: #F8FAB8;}
+.add-cmnt-fade15 {background-color: #FAFBB3;}
+.add-cmnt-fade14 {background-color: #FCFDAD;}
+.add-cmnt-fade13 {background-color: #FDFEA8;}
+.add-cmnt-fade12 {background-color: #FFFFA2;}
+.add-cmnt-fade11 {background-color: #FDFEA8;}
+.add-cmnt-fade10 {background-color: #FCFDAD;}
+.add-cmnt-fade9 {background-color: #FAFBB3;}
+.add-cmnt-fade8 {background-color: #F8FAB8;}
+.add-cmnt-fade7 {background-color: #F6F9BE;}
+.add-cmnt-fade6 {background-color: #F5F8C3;}
+.add-cmnt-fade5 {background-color: #F3F7C9;}
+.add-cmnt-fade4 {background-color: #F1F6CE;}
+.add-cmnt-fade3 {background-color: #EFF4D4;}
+.add-cmnt-fade2 {background-color: #EEF3D9;}
+.add-cmnt-fade1 {background-color: transparent;}
+form#cmnt-form span.help {
+	color: #888;
+	display: block;
+	font-size: .9em;
+	font-style: italic;
+	font-weight: normal;
+}
+form#cmnt-form #cmnt-textarea {
+	height: 45px;
+	width:210px;
+	font-family:sans-serif;
+	font-size:100%;
+	padding:3px;
+}
+
+
+/*****************/
+
+
+#meta-info strong {color:#5C5B5B}
+
+
+/****( h1 )*************************/
+body#newaudio #main #main-title h1, 
+body#view.audio #main #main-title h1 {
+	background: transparent url(/img/icon-title-show-1.gif) no-repeat 0 3px;
+	padding: 0 0 3px 28px;
+}
+body#category #main #main-title h1, 
+body#newchannels #main #main-title h1, 
+body#view.channel #main #main-title h1, 
+body#featuredchannels #main #main-title h1 {
+	background: transparent url(/img/icon-title-channel.gif) no-repeat 0 0;
+	padding: 0 0 0 28px;
+} 
+body#profile #main #main-title h1 {
+	background: transparent url(/img/icon-title-user.gif) no-repeat 0 0;
+	padding: 0 0 0 28px;
+} 
+body#profile #main #main-title h1 a {
+	font-size: 60%;
+}
+body.search #main #main-title h1 {
+	background: transparent url(/img/icon-title-search.gif) no-repeat 0 0;
+	padding: 0 0 0 28px;
+}
+/*****************/
+
+
+/****( Popup bubbles )*************************/
+/*
+DESCRIPTION: This section styles the little popup bubbles which appear when you mouseover any of the subscribe or queue links on the site. In most instances subscribe or queue button lives inside a div called div.controller-action, but in a few cases (on some Show pages) it lives inside a div called div.show-subs.
+OUTLINE: 
+<div class="controller-action">
+	<a class="subs-channel"><img /></a>
+	<!-- inserted using js
+	<div class="bubble(0)">
+		<div class="top"><img /></div>
+		<div class="btm"><img /></div>
+	</div>
+	-->
+</div>
+
+or:
+
+<div class="controller-action">
+	<a class="subs-show"><img /></a>
+	<!-- inserted using js
+	<div class="bubble(0)">
+		<div class="top"><img /></div>
+		<div class="btm"><img /></div>
+	</div>
+	-->
+</div>
+
+or sometimes:
+
+<div class="show-subs">
+	<a class="subs-show"><img /></a>
+	<!-- inserted using js
+	<div class="bubble(0)">
+		<div class="top"><img /></div>
+		<div class="btm"><img /></div>
+	</div>
+	-->
+</div>
+*/
+div.controller-action, 
+div.show-subs, 
+div.channel-subs, 
+div.controller-play {
+	position: relative;
+}
+div.controller-action img, 
+div.show-subs img, 
+div.channel-subs img,
+div.controller-play img {
+	display: inline;
+}        
+div.bubble-hover, 
+div.bubble-click, 
+div.bubble-flash {
+	color: #333;
+	position: absolute;
+	text-align: left;
+	top: 0;
+	width: 190px;
+	z-index: 1000;
+	opacity: 0.999;
+}
+div.channel-cont div.bubble-flash {
+	width: 170px;
+}
+div.bubble-hover span {
+	background-color: #E7F3F7;
+} 
+div.bubble-click span, 
+div.bubble-flash span {
+	background-color: #FCE1F3;
+}
+div.channel-cont div.bubble-hover, 
+div.channel-cont div.bubble-click {
+	left: 61px;        
+}
+div.channel-cont div.bubble-flash {
+	left: 66px;
+}
+div.show-cont div.bubble-hover, 
+div.show-cont div.bubble-click {
+	left: 35px;
+}
+div.show-cont div.bubble-flash {
+	left: 20px;
+}
+body#view.channel div.show-subs div.bubble-hover, 
+body#view.channel div.show-subs div.bubble-click, 
+body#pastdownloads.sync div.show-subs div.bubble-hover, 
+body#pastdownloads.sync div.show-subs div.bubble-click {
+	left: 35px;
+}
+body#subscriptions.sync div.channel-subs div.bubble-hover, 
+body#subscriptions.sync div.channel-subs div.bubble-click {
+	left: 58px;        
+}
+div.bubble-hover div.top {   
+	background: transparent url(/img/bg-bubble-blue-top.png) no-repeat top left;
+	padding: 10px 20px 0;
+}
+div.bubble-hover div.bot {
+	background: transparent url(/img/bg-bubble-blue-btm.png) no-repeat top left;  
+	height: 26px;
+}
+div.bubble-click div.top {   
+	background: transparent url(/img/bg-bubble-pink-top.png) no-repeat top left;
+	padding: 10px 20px 0;
+}
+div.bubble-click div.bot {
+	background: transparent url(/img/bg-bubble-pink-btm.png) no-repeat top left;  
+	height: 26px;
+}
+div.channel-cont div.bubble-flash div.top {   
+	background: transparent url(/img/bg-bubble2-pink-top.png) no-repeat top left;
+	padding: 10px 20px 0;
+}
+div.show-cont div.bubble-flash div.top {   
+	background: transparent url(/img/bg-bubble-pink-top.png) no-repeat top left;
+	padding: 10px 20px 0;
+}
+div.channel-cont div.bubble-flash div.bot {
+	background: transparent url(/img/bg-bubble2-pink-btm-sq.png) no-repeat top left;  
+	height: 26px;
+}
+div.show-cont div.bubble-flash div.bot {
+	background: transparent url(/img/bg-bubble-pink-btm.png) no-repeat top left;  
+	height: 26px;
+}
+/*****************/
+
+
+/****( Channel blocks )*************************/
+/*
+OUTLINE:
+<div class="channel-style1">
+	<div class="row">
+		<div class="channel-cont">
+			<div class="controller-cont">
+				<div class="controller-img">
+					<img />
+				</div>
+				<div class="controller-action">
+					<img />
+				</div>
+				<div class="controller-play">
+					<flash />
+				</div>
+			</div>
+			
+			<div class="info-cont">
+				various channel-specific info in here
+			</div>
+		</div>
+		// repeat as many times as needed for multiple channels per row
+	</div>
+	// repeat as many times as needed for multiple rows
+</div> 
+
+DESCRIPTION: one channel to a row
+URL: /listen/new-channels
+*/
+.channel-style1 {
+	border-top: 1px solid #C8D9DF;	
+}
+.channel-style1 .row {
+	background-color:#EFF6F8;
+	border-bottom: 1px solid #C8D9DF;
+	clear: left;
+	padding: 1px 10px 10px;
+}
+.channel-style1 .row:after {
+	clear: left;
+	content: " ";
+	display: block;
+	height: 0;
+}
+.channel-style1 .row .channel-cont {
+	margin-top: 10px;
+}
+.channel-style1 .row .channel-cont:after {
+	clear: both;
+	content: " ";
+	display: block;
+	height: 0;
+}
+.channel-style1 .row .channel-cont .controller-cont {
+	float: left;
+	width: 66px;
+}
+.channel-style1 .row .channel-cont .controller-cont .controller-img {
+	height: 66px;
+	margin-bottom: 2px;
+	position: relative;
+}
+.channel-style1 .row .channel-cont .controller-cont .controller-img img {
+	border: 1px solid #555;
+	bottom: 0;
+	position: absolute;
+}
+.channel-style1 .row .channel-cont .info-cont {
+	margin: 0 0 0 80px;
+	padding: 0;
+}
+.channel-style1 .row .roundup-img img {
+	border: 1px solid #555;
+	float: left;
+	padding: 1px;
+	margin: 0 5px 0 0;
+}
+#main #main-body .channel-style1 .row .channel-cont .info-cont h3 {
+	font-size: 1.2em;
+	margin-top: 0;
+}
+
+/*
+DESCRIPTION: two channels to a row
+URL: /listen/featured
+*/
+.channel-style2 {
+	border-top: 1px solid #C8D9DF;	
+}
+.channel-style2 .row {
+	background-color:#EFF6F8;
+	border-bottom: 1px solid #C8D9DF;
+	clear: left;
+	padding: 10px 10px 5px;
+}
+.channel-style2 .row:after {
+	clear: left;
+	content: " ";
+	display: block;
+	height: 0;
+}
+.channel-style2 .row .channel-cont {
+	float: left;
+	margin-right: 12px;
+	width: 230px;
+}
+.channel-style2 .row .channel-cont:after {
+	clear: both;
+	content: " ";
+	display: block;
+	height: 0;
+}
+.channel-style2 .row .channel-cont .controller-cont {
+	float: left;
+	width: 66px;
+}
+.channel-style2 .row .channel-cont .controller-cont .controller-img {
+	height: 66px;
+	margin-bottom: 2px;
+	position: relative;
+}
+.channel-style2 .row .channel-cont .controller-cont .controller-img img {
+	border: 1px solid #555;
+	bottom: 0;
+	position: absolute;
+}
+.channel-style2 .row .channel-cont .info-cont {
+	margin: 0 0 0 80px;
+	padding: 0;
+}
+#main #main-body .channel-style2 .row .channel-cont .info-cont h3 {
+	font-size: 1.2em;
+	margin-top: 0;
+}                   
+
+/*
+DESCRIPTION: one channel per row with a description. used in roundup pages and individual channel pages
+URL EG: /roundup/opensource
+URL EG: /channel/3212/view
+*/
+.channel-style3 .row .channel-cont .controller-cont {
+	float: left;
+	width: 66px;
+}
+.channel-style3 .row .channel-cont:after {
+	clear: both;
+	content: " ";
+	display: block;
+	height: 0;
+}
+.channel-style3 .row .channel-cont .controller-cont .controller-img {
+	height: 66px;
+	margin-bottom: 2px;
+	position: relative;
+}
+.channel-style3 .row .channel-cont .controller-cont .controller-img img {
+	border: 1px solid #555;
+	bottom: 0;
+	position: absolute;
+}
+.channel-style3 .row .channel-cont .info-cont {
+	margin: 0 0 0 80px;
+	padding: 0;
+}
+.channel-style3 .row .channel-cont .info-cont .info-desc {
+	font-size:100%;
+}
+#main #main-body .channel-style3 .row .channel-cont .info-cont h3 {
+	font-size: 1.2em;
+	margin-top: 0;
+}                  
+/*****************/
+
+
+/*
+DESCRIPTION: one channel per row with big picture, no player. used for channel pages
+URL EG: /channel/3212/view
+*/
+.channel-style4 .row .channel-cont .controller-cont {
+	float: left;
+	width: 66px;
+}
+.channel-style4 .row .channel-cont:after {
+	clear: both;
+	content: " ";
+	display: block;
+	height: 0;
+}
+.channel-style4 .row .channel-cont .controller-cont .controller-img {
+	height: 66px;
+	margin-bottom: 2px;
+	position: relative;
+}
+.channel-style4 .row .channel-cont .controller-cont .controller-img img {
+	border: 1px solid #555;
+	bottom: 0;
+	position: absolute;
+}
+.channel-style4 .row .channel-cont .info-cont {
+	margin: 0 0 0 80px;
+	padding: 0;
+}
+.channel-style4 .row .channel-cont .info-cont .info-desc {
+	font-size:120%;
+}
+#main #main-body .channel-style4 .row .channel-cont .info-cont h3 {
+	font-size: 1.2em;
+	margin-top: 0;
+}
+
+
+.channel-style5 td.channel a {display:block;padding:3px; font-weight:bold;border:solid 1px #fff;}
+.channel-style5 td.channel a:hover {background-color:#FFECF6;text-decoration:none;border:solid 1px #C3156C;}
+.channel-style5 td.channel div.title {font-weight:bold;}
+.channel-style5 td.channel div.desc {color:#666;margin-top:5px;font-weight:normal;}
+.channel-style5 td.channel img {margin:7px;margin-left:0;margin-top:2px;width:100px;height:100px}
+
+
+/*****************/
+/*********************************************************/
+
+
+/****( @section Section-specific CSS )*****************************************************/
+/****( @about )*************************/
+/*
+DESCRIPTION: the contact form
+URL: /about/contact/
+*/
+body#contact #main-body form select, 
+body#contact #main-body form input[type='text'], 
+body#contact #main-body form textarea {
+	width: 100%;
+}
+
+/*
+DESCRIPTION: the terms and conditions
+URL: /about/terms/
+*/
+body#terms #main-body h2 {
+	border-bottom: 1px solid #D0E6EC;
+}
+body#terms #main-body ul ul {
+	margin-top: 6px; 
+}
+body#terms #main-body li {
+	margin-bottom: 6px;
+}
+
+/*
+DESCRIPTION: the job page
+URL: /about/jobs/
+*/
+body#jobs #main-body div.job {
+	margin-left: -10px;
+	padding: 10px;
+}
+body#jobs #main-body h2 {
+	border-bottom: 1px solid #D0E6EC;
+	margin-top: 0;
+}
+body#jobs #main-body h2#job-list-title {
+	float: right;
+	margin: 10px -194px 10px 0;
+	padding: 0;
+	position: relative;
+	width: 164px;
+}
+body#jobs #main-body ol#job-list {
+	clear: right;
+	float: right;
+	list-style-position: inside;
+	margin: 0 -194px 0 0;
+	padding: 0;
+	position: relative;
+	width: 164px;
+}
+body#jobs #main-body ol#job-list li {
+	margin: 0 0 5px 0;
+}
+body#jobs #main-body pp {
+	margin-left: 20px;
+}
+.job-fade19 {background-color: #FFFFFF;}
+.job-fade18 {background-color: #FFFFF7;}
+.job-fade17 {background-color: #FFFFEE;}
+.job-fade16 {background-color: #FFFFE6;}
+.job-fade15 {background-color: #FFFFDD;}
+.job-fade14 {background-color: #FFFFD5;}
+.job-fade13 {background-color: #FFFFCC;}
+.job-fade12 {background-color: #FFFFC4;}
+.job-fade11 {background-color: #FFFFBB;}
+.job-fade10 {background-color: #FFFFB3;}
+.job-fade9 {background-color: #FFFFAA;}
+.job-fade8 {background-color: #FFFFA2;}
+.job-fade7 {background-color: #FFFFAA;}
+.job-fade6 {background-color: #FFFFB3;}
+.job-fade5 {background-color: #FFFFBB;}
+.job-fade4 {background-color: #FFFFC4;}
+.job-fade3 {background-color: #FFFFCC;}
+.job-fade2 {background-color: #FFFFD5;}
+.job-fade1 {background-color: #FFFFDD;}
+/*****************/
+
+
+/****( @channel )*************************/
+/*
+DESCRIPTION: list of shows in a channel
+URL: view any channel with shows in it
+*/
+body#view.channel ol#show-list {
+	list-style: none;
+	padding: 0;
+}
+body#view.channel ol#show-list li {
+	margin: 0;
+	padding: 10px 65px 10px 10px;
+	position: relative;
+	border-top: 1px solid #D0E6EC;
+	background: url(/img/blue-fade.png) repeat-y top left;
+}
+body#view.channel ol#show-list li.even {
+	background: #fff;
+}	
+body#view.channel ol#show-list li#no-shows {
+	list-style: none;
+}
+body#view.channel ol#show-list li p.show-title {
+	margin: 0;
+	font-size:120%;
+}
+body#view.channel ol#show-list li p.show-title strong {
+	color: #111;
+	font-weight: normal;
+	margin-right: 5px;
+}
+body#view.channel ol#show-list li div.show-subs {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+body#view.channel ol#show-list li p.show-desc {
+	font-size: .95em;
+	margin-top:5px;
+	margin-bottom: 0;
+}
+
+/*
+DESCRIPTION: promo badges page
+URL EG: http://odeo.com/channel/3000/badges
+*/
+body#badges.channel table {
+	width: 504px;
+}
+body#badges.channel table thead th {
+	color: #fff;
+	margin: 0;
+	padding: 0;
+}
+body#badges.channel table thead th.badge {
+	width: 96px;
+}
+body#badges.channel table td {
+	vertical-align: top;
+}
+body#badges.channel table td textarea {
+	margin: 0;
+	width: 100%;
+}
+body#badges.channel table tr.top td {
+	padding-top: 15px;
+}
+
+/*  
+DESCRIPTION: styles the "share with a friend" form in the sidebar
+URL EG: any channel page  
+*/  
+#side .box-6 form#shareaudio-form {
+	margin-bottom:10px;
+}
+#side .box-6 form#shareaudio-form input#shareaudio-input {  
+	margin: 0 3px 0 0;  
+	width: 107px;    
+}  
+#side .box-6 form#shareaudio-form input#shareaudio-submit {  
+	height: 17px;  
+	margin-top: -3px;  
+	vertical-align: middle;  
+	width: 37px; 
+}
+/*****************/
+
+/*  
+DESCRIPTION: various sidebars
+URL EG: most pages
+*/  
+#side #studio-promo {
+	margin-top:15px;
+	text-align:center;
+}
+#side #studio-promo  {
+	padding-top:4px;
+	padding-bottom:3px;
+}
+
+#side #referrers {
+	margin-top:20px;
+}
+/*****************/
+
+
+/*  
+DESCRIPTION: styles the "share this audio" sidebar
+URL EG: any audio page  
+*/  
+#side #share-form {width:90%}
+#side #share-form #contact-list #display-all {
+	color:#FF3399;
+	cursor:pointer;
+}
+#side #share-form #contact-list {
+	list-style: none;
+	margin: 0;
+	margin-top:10px;
+	margin-bottom:10px;
+	padding:0;
+	color:#333;
+}
+
+
+
+/****( @audio )*************************/
+/*
+DESCRIPTION: the stuff for displaying an audio
+URL EG: any audio page
+*/
+div.audio-cont {
+	background-color: #FFF;
+	padding: 15px;
+	z-index: 100;
+}
+div.audio-cont div.a-top {
+	background: transparent url(/img/bg-tray-top.gif) no-repeat top right;
+	margin-left: 12px;
+	/*position: relative;*/ /* dunstan: commented this out to fix ie loginbox bug */
+	width: 360px;
+}
+div.audio-cont div.a-top div.img {
+	padding: 13px 15px;
+	text-align: center;
+}
+div.audio-cont div.a-top div.img p {
+	margin: 0;
+	padding: 0;
+}
+div.audio-cont div.a-top div.btns {
+	height:45px;
+	left: 365px;
+	position: relative;
+	margin-top:-50px;
+	top: -5px;
+	width:150px;
+}
+
+div.audio-cont div.a-plyr {
+	padding-bottom: 3px;
+}
+div.audio-cont div.bubble-click {
+	left: 35px;
+}
+div.audio-cont div.a-btm {
+	background: transparent url(/img/bg-tray.gif) repeat bottom right;
+	margin: -8px 0 0 12px;
+	padding: 5px 10px 1px 10px;
+	width: 431px;
+}
+div.audio-cont div.a-btm-btm {
+	background: transparent url(/img/bg-tray-btm.gif) no-repeat top right;
+	margin: 0 0 0 12px;
+	padding: 10px 10px 10px 10px;
+	width: 431px;
+}
+div.actn ul#actn-nav {
+	list-style: none;
+	float:right;
+	width: 265px;
+	margin: 0;
+	margin-left:23px;
+	padding: 0;
+}
+.audio div.actn ul#actn-nav li {
+	float: left;
+	margin: 0 10px 0 0;
+}
+.audio div.actn ul#actn-nav a {
+	display: block;
+	font-size: 120%;
+	padding: 1px 5px 7px;
+	text-decoration: none;
+}
+.audio div.actn ul#actn-nav a.selected {
+	background-color: #eee;
+}
+.audio div.actn ul#actn-nav a:hover {
+}
+.audio div.actn div.actn-form {
+	background-color: #eee;
+	clear: both;
+	margin: 0 0 10px;
+	padding: 0 10px 12px 0;
+}
+
+.audio div.actn {
+	float:right;
+}
+
+.audio div.actn form {
+	margin: 0;
+	padding: 0;
+}
+.audio div.actn fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+.audio div.actn table {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+.audio div.actn th {
+	border: 0;
+}
+.audio div.actn td {
+	padding-top: 13px;
+	width: 100%;
+}
+.audio div.actn th label {
+	font-weight: normal;
+}
+
+div.audio-cont div.a-btm div.desc {
+	clear: both;
+}
+div.audio-cont div.a-btm div.desc p {
+	margin-top: 0;
+}
+div.main-body div.actn ul#actn-nav a#audio-delete-nav {
+	font-size: 97%;
+}
+
+div#meta-info {
+	padding-left: 30px; 
+	color: #3476AE; 
+	line-height: 120%; 
+	margin-bottom: 7px;
+}
+
+div#meta-info-right {
+	float: right;
+	text-align: right;
+	padding-right: 25px;
+}
+
+
+#playnext-box {
+	text-align:center;
+	margin-top:5px;
+}
+
+
+#side #playnext-box #scan-div {
+	text-align:left;
+	margin-top:5px;
+	padding-left:8px;
+	color:#666;
+	font-size:100%
+}	
+
+#side #playnext-box #scan-div img#scan_tog {
+	margin-bottom:2px;
+	cursor:pointer;
+}
+
+#side #playnext-box img#playnext {
+	margin:10px;
+	cursor:pointer;
+}
+
+#side #playnext-box  {
+	padding:0;
+	text-align:center;
+	color:#666
+}
+
+#side #playnext-box div.box-4-inner {
+	border:solid 1px #F6FAFB; 
+}
+
+
+#side #playnext-box div.box-4-inner {
+	border-bottom:solid 1px #F6FAFB; 
+ 	border-right:solid 1px #D1E6EC;
+	border-left:solid 1px #D1E6EC;
+	border-top:solid 1px #fff;
+}
+
+#side #playnext-box div.box-4-inner select {
+  font-size:10px
+}
+
+
+#side #playnext-extra-box-tag div.box-4-inner {
+	text-align:center;
+	color:#666
+}
+
+#side #playnext-extra-box {
+	margin-top:5px;
+}
+#playnext-extra-box .box-4-inner {
+	text-align:center;
+	padding:7px;
+	padding-top:10px;
+	padding-bottom:10px;
+	color:#6E6F62;
+}
+#playnext-extra-box .box-4-inner img {
+	margin:5px
+}	
+#playnext-extra-box .box-4-inner p {
+	margin-top:5px;
+	margin-bottom:0;
+}
+
+/*****************/
+
+
+/****( @create )*************************/
+/*
+DESCRIPTION: styles the two columns on the create page
+URL: /create/
+*/
+body#create #col-1 {
+	float: left;
+	padding: 0 5px 0 0;
+	width: 241px;
+}
+body#create #col-2 {
+	border-left: 1px solid #D0E6EC;
+	float: right;
+	padding: 0 5px 0 10px;
+	width: 236px;
+}
+body#create #col-1 h2, 
+body#create #col-2 h2 {
+	border-bottom: 1px solid #D0E6EC;
+	border-top: 1px solid #D0E6EC;
+	margin-top: 0;
+	padding: 3px 0;
+}
+body#create #col-1 ol, 
+body#create #col-2 ol  {
+	margin: 0 0 0 5px;
+	padding: 0;
+}
+body#create #col-1 ol li, 
+body#create #col-2 ol li {
+	background-position: top left;
+	background-repeat: no-repeat;
+	list-style-type: none;
+	margin: 0 0 10px 0;
+	padding: 0 0 0 23px;
+}
+body#create #col-1 ol li.channel {
+	background-image: url(/img/icon-create-channel-small-pink.gif);
+}
+body#create #col-1 ol li.feed {
+	background-image: url(/img/icon-create-feed-small-pink.gif);
+}
+body#create #col-2 ol li.studio {
+	background-image: url(/img/icon-create-studio-small-pink.gif);
+}
+body#create #col-2 ol li.phone {
+	background-image: url(/img/icon-create-phone-small-pink.gif);
+}
+body#create #col-2 ol li.upload {
+	background-image: url(/img/icon-create-upload-small-pink.gif);
+}
+body#create dl dd {
+	margin-left: 0;
+}
+body#create.create div#your-channels {
+	clear: both;
+	padding-top: 10px;
+}
+body#create.create div#your-channels h2 {
+	margin-top: 0;
+	padding-top: 0;
+}
+
+/*
+DESCRIPTION: nudging the studio contents over so it fits on the page
+URL: /create/studio/
+*/
+body#studio.create #odeostudio {
+	margin-left: -20px;
+}
+
+/*
+DESCRIPTION: the phone record page
+URL: /create/phone/
+*/
+body#phonerecord.create span.phone-num {
+	font-size: 1.4em;
+}
+/*****************/
+
+
+/****( @help )*************************/
+/*
+DESCRIPTION: styles the faq and issues pages
+URL: /help/faq/, /help/issues/
+*/
+body#faq #main-body div.faq, 
+body#issues #main-body div.issue {
+	margin-left: -10px;
+	padding: 10px;
+}
+body#faq #main-body h2, 
+body#issues #main-body h2 {
+	border-bottom: 1px solid #D0E6EC;
+	margin-top: 0;
+}
+body#faq #main-body h2#faq-list-title, 
+body#issues #main-body h2#issue-list-title {
+	float: right;
+	margin: 10px -194px 10px 0;
+	padding: 0;
+	position: relative;
+	width: 164px;
+}
+body#faq #main-body ol#faq-list, 
+body#issues #main-body ol#issue-list {
+	clear: right;
+	float: right;
+	list-style-position: inside;
+	margin: 0 -194px 0 0;
+	padding: 0;
+	position: relative;
+	width: 164px;
+}
+body#faq #main-body ol#faq-list li, 
+body#issues #main-body ol#issue-list li {
+	margin: 0 0 5px 0;
+}
+body#faq #main-body p, 
+body#issues #main-body p {
+	margin-left: 20px;
+}
+.help-fade19 {background-color: #FFFFFF;}
+.help-fade18 {background-color: #FFFFF7;}
+.help-fade17 {background-color: #FFFFEE;}
+.help-fade16 {background-color: #FFFFE6;}
+.help-fade15 {background-color: #FFFFDD;}
+.help-fade14 {background-color: #FFFFD5;}
+.help-fade13 {background-color: #FFFFCC;}
+.help-fade12 {background-color: #FFFFC4;}
+.help-fade11 {background-color: #FFFFBB;}
+.help-fade10 {background-color: #FFFFB3;}
+.help-fade9 {background-color: #FFFFAA;}
+.help-fade8 {background-color: #FFFFA2;}
+.help-fade7 {background-color: #FFFFAA;}
+.help-fade6 {background-color: #FFFFB3;}
+.help-fade5 {background-color: #FFFFBB;}
+.help-fade4 {background-color: #FFFFC4;}
+.help-fade3 {background-color: #FFFFCC;}
+.help-fade2 {background-color: #FFFFD5;}
+.help-fade1 {background-color: #FFFFDD;}
+/*****************/
+
+
+/****( @inbox )*************************/
+/*
+DESCRIPTION: list of shows in a users inbox
+URL: /account/inbox/, /
+*/
+.paginate {
+	border-top: 1px solid #D6E3E7;
+	border-bottom: 1px solid #D6E3E7;	
+	padding:5px;
+}
+#inbox .paginate #delete-all {
+	font-size:10px;
+	border:solid 1px gray;
+}
+#inbox .played a {
+	font-weight:normal;
+}	
+#profile-info img {
+	margin:3px;margin-left:0;margin-right:10px;margin-top:2px;border:solid 1px #000
+}
+
+
+/*****************/
+
+
+/***( @search )***********************/  
+/* DESCRIPTION: the search results */  
+body#find.find ul#search_users li {
+	display: inline;
+	list-style-type: none;
+}  
+body#find.find #main-body dt {
+	margin: 0;
+	padding: 0;
+}
+body#find.find #main-body .controller-action {
+	float: right;
+	padding: 2px 5px 0 0;
+}
+body#find.find #main-body .show-subs {
+	float: right;
+	padding: 2px 5px 0 0;
+}
+body#find.find #main-body dl dd {
+	margin: 0 0 1em 0;
+	padding: 5px 0 0 10px;
+}
+body#find.find #main-body dl dt a {
+	font-weight: bold;
+}
+body#find.find #main-body ul li a {
+	font-weight: bold;
+}
+body#find.find #main-body label,
+body#find.find #main-body input,
+body#find.find #main-body p {
+	color: #3176AF;
+	font-size: 120%;
+	margin: 0;
+	padding: 6px;
+}
+body#find.find #main-body p {
+	color: #395A86;
+}
+body#find.find #main-body label {
+	color: #395A86;
+	padding-right: 4px;
+}
+/*****************/
+
+
+/****( @account )*************************/
+/*
+DESCRIPTION: list channels a user is subscribed to
+URL: /account/subscriptions/
+*/
+body#subscriptions.account ol#sync-subs {
+	clear: left;
+	padding-left:0;
+
+}
+body#subscriptions.account ol#sync-subs li {
+	line-height: 1.3em;
+	padding-right: 76px;
+	position: relative;
+	list-style:none;
+}
+body#subscriptions.account ol#sync-subs li a {
+	display: block;
+	padding: 5px 5px;
+	text-decoration: none;
+	font-size:115%;
+	border-bottom: 1px solid #D0E6EC;
+
+}
+body#subscriptions.account ol#sync-subs li div.channel-subs a {
+	border-bottom: none;
+	display: inline;
+	padding: 0;
+	text-decoration: none;
+}
+body#subscriptions.account ol#sync-subs li a:hover {
+	background-color: #FFECF6;
+}
+body#subscriptions.account ol#sync-subs li div.channel-subs a:hover {
+	background-color: transparent;
+}
+body#subscriptions.account ol#sync-subs li div.channel-subs {
+	height: 19px;
+	position: absolute;
+	right: 0;
+	top: 5px;
+	width: 66px;            
+}
+body#subscriptions.account ol#sync-subs li span a {
+ 	border-bottom: none;
+	display: inline;
+	padding: 0;
+}
+
+/*
+DESCRIPTION: list of a user's contacts
+URL: /account/contacts/
+*/
+.account ul#contact-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.account ul#contact-list li {
+	border-bottom: 1px solid #D0E6EC;
+	line-height: 2em;
+	padding: 0 5px;
+	font-size:120%;
+}
+.account ul#contact-list li img.del {
+	float: right;
+	padding-top: 8px;
+}
+
+.account ul#contact-list li .desc {
+	font-size:85%;
+	color:#666
+}
+.account ul#contact-list li img.prof {
+	border:solid 1px #D6E3E7;
+	margin:2px;
+}
+.account ul#contact-list li.potential {
+	background-color: #F6FAFC;
+}
+.account ul#contact-list li span.mutual {
+	color: #777;
+	font-size: .85em;
+}
+.account ul#contact-list li span.potential {
+	color: #063;
+	font-size: .85em;
+}
+.account ul#contact-list li:hover {
+	background: #FFECF6;
+}
+.account ul#contact-list li a {
+	display: block;
+}
+.account ul#contact-list li a:hover {
+	text-decoration: none;
+}
+
+/* 
+DESCRIPTION: List of things in a sidebar. Can be used for various things.
+URL: e.g., /profile/evhead (peeps and podcasts) 
+*/
+#side ul.sidebar-list {
+	list-style: none;
+	margin: 0;
+	margin-right:7px;
+	padding: 0;
+}
+#side ul.sidebar-list li {
+	padding: 2px 0 2px 0;
+}
+#side ul.sidebar-list li+li {
+	border-top: 1px solid #D0E6EC;
+}
+#side ul.sidebar-list li img.icon {
+	border:solid 1px #D6E3E7;
+	margin:1px 0 2px 0;
+	width:16px;
+	height:16px;
+	float:none;
+}
+#side ul.sidebar-list li:hover {
+	background: #FFECF6;
+}
+#side ul.sidebar-list li a {
+	display: block;
+}
+#side ul.sidebar-list li a:hover {
+	text-decoration: none;
+}
+#side .sidebar-list .more {
+	margin-top:0;
+	font-size:90%;
+}
+
+#side div.list h2 {
+	padding-left:20px;
+	background:url(/img/blue-arrow-right.gif) no-repeat left 3px;
+	cursor:pointer;
+}
+
+
+/*
+DESCRIPTION: the config table
+URL: /sync/config/
+*/
+/*
+dunstan says: todelete?
+*/
+body#config.sync #main #main-body form {
+	clear: left;
+}
+
+/*
+DESCRIPTION: the syncr client page
+URL: /sync/client/
+*/
+/*
+dunstan says: todelete?
+*/
+body#widget #col-1,
+body#client #col-1 {
+	float: left;
+	margin-right: 28px;
+	width: 158px;
+}
+body#widget #col-2,
+body#client #col-2 {
+	float: left;
+	width: 313px;
+}
+body#widget #col-1 h2,
+body#widget #col-2 h2,
+body#client #col-1 h2,
+body#client #col-2 h2 {
+	border-bottom: 1px solid #D0E6EC; 
+	margin: 0 0 15px;     
+	padding-bottom: 5px;
+}
+body#widget #col-2 h3,
+body#client #col-2 h3 {
+	color: #3176AF;
+	font: bold 105% Arial, sans-serif;
+	margin: 0 0 3px;
+	padding: 0;                   
+}
+body#widget #col-2 h3 span,
+body#client #col-2 h3 span {
+	font-size: .85em;                   
+}
+body#widget #col-2 div.img,
+body#client #col-2 div.img {
+	float: right;
+	margin-left: 10px;
+	text-align: right;
+	width: 153px; 
+}
+body#widget #col-2 div.img span,
+body#client #col-2 div.img span {
+	color: #888;
+	display: block;
+	font-size: .85em;
+	margin-top: 3px;
+}
+body#widget #col-2 p,
+body#client #col-2 p {
+	margin: 0 0 20px;
+}
+body#widget #col-2 p.download img,
+body#client #col-2 p.download img  {
+	vertical-align: middle;
+}
+body#widget #col-2 p.download em,
+body#client #col-2 p.download em {
+	font-size: .85em;
+}
+
+
+/****( @tags )*************************/
+/*
+DESCRIPTION: the three columns of tags at the top of the tags page
+URL: /tags/
+*/
+body#tags ul.tag-col {
+	background-color: transparent;
+	font-size: 1.5em;
+	list-style: none;
+	margin-top: -5px;
+	padding: 0 5px 5px;
+	position: relative;
+}
+body#tags ul.tag-col li {
+	background-color: transparent;
+	line-height: 1.5em;
+	padding: 0;
+	width: 180px;
+	border-bottom: 1px solid #D0E6EC;
+}  
+body#tags ul.tag-col li a {
+	display:block;
+}
+body#tags ul.tag-col li a.play-next {
+	float:right;border:none;margin-top:8px;
+}
+body#tags ul.tag-col li.col2 {
+	left: 200px;
+	margin-top: 1px;
+	position: absolute;
+	top: 0;
+	width:175px;
+}
+body#tags ul.tag-col li.col3 {
+	left: 390px;
+   	margin-top: 1px;
+	position: absolute;
+	top: 0;
+	width:172px;
+
+}
+body#tags ul.tag-col li.item2 {top: 1.5em;}
+body#tags ul.tag-col li.item3 {top: 3em;}
+body#tags ul.tag-col li.item4 {top: 4.5em;}
+body#tags ul.tag-col li.item5 {top: 6em;}
+body#tags ul.tag-col li.item6 {top: 7.5em;}
+body#tags ul.tag-col li.item7 {top: 9em;}
+body#tags ul.tag-col li.item8 {top: 10.5em;}
+body#tags ul.tag-col li.item9 {top: 12em;}
+body#tags ul.tag-col li.item10 {top: 13.5em;}
+body#tags ul.tag-col li a {
+	text-decoration: none;
+}
+body#tags ul.tag-col li a:hover {
+	background-color: #FFECF6;
+}
+
+/*
+DESCRIPTION: the popular tags list
+URL: /tags/
+*/
+body#tags table.tag-pop {
+	background-color: transparent;
+	list-style: none;
+	margin:8px;
+	margin-right:20px;
+	margin-top:0;
+}
+body#tags table.tag-pop td {
+	background-color: transparent;
+	color: #FEA6D1;
+	font-size: 1.5em;
+	padding-right:15px;
+	width:176px;
+}
+body#tags table.tag-pop td div {
+	border-bottom: 1px solid #D0E6EC;
+}
+body#tags table.tag-pop td a:hover {
+	background-color: #FFECF6;
+	text-decoration: none;       
+}
+body#tags table.tag-pop td a.play-next {
+	float:right;border:none;margin-top:5px;
+}
+
+
+/*
+DESCRIPTION: the tag soup list
+URL: /tags/
+*/
+body#tags ul.tag-soup {
+	background-color: transparent;
+	list-style: none;
+	padding: 0 0 0 10px;
+}
+body#tags ul.tag-soup li {
+	color: #FEA6D1;
+	background-color: transparent;
+	display: inline;       
+}
+body#tags ul.tag-soup li span {
+	background-color: transparent;
+	color: #333;
+	font-size: 1.3em;
+}
+body#tags ul.tag-soup li span:before {
+	content: "(";       
+}
+body#tags ul.tag-soup li span:after {
+	content: ")";       
+} 
+body#tags ul.tag-soup li ul {
+	background-color: transparent;
+	display: inline;
+	padding: 0;
+}
+body#tags ul.tag-soup li ul li {
+	background-color: transparent;
+	line-height: 2em;      
+}
+body#tags ul.tag-soup li:hover ul li {
+	background-color: #FFFFCC;       
+}
+body#tags ul.tag-soup li ul li a {
+	background-color: transparent;
+	padding: .75em 5px;
+	text-decoration: none;                
+}
+body#tags ul.tag-soup li ul li a span {
+	background-color: transparent;
+	color: #FEA6D1;
+	font-size: inherit;       
+}
+body#tags ul.tag-soup li ul li a span:before {
+	content: "";       
+}
+body#tags ul.tag-soup li ul li a span:after {
+	content: "";       
+} 
+body#tags ul.tag-soup li ul li a:hover {
+	background-color: #FFECF6;
+	text-decoration: underline;    
+}
+body#tags ul.tag-soup li ul li a:hover span {
+	color: #D088AB;
+}
+
+/*
+DESCRIPTION: styling a tag-specific page
+URL EG: /tag/activism/ 
+*/
+body#view.tags ol.audio-list div.tags a {
+	color: #888;
+}
+body#view.tags ol.audio-list div.tags a:hover {
+	color: #C3156C;
+}
+
+body#view.tags div.paginate {
+	background-color: #EDFBFE;
+	border-bottom: 1px solid #D0E6EC;
+	border-top: 1px solid #D0E6EC;
+	color: #666;
+	padding: 5px 10px;
+}
+body#view.tags div.paginate:hover {
+	color: #333;
+}
+body#view.tags div.paginate a {
+	color: #E595C6;
+}
+body#view.tags div.paginate:hover a:link {
+	color: #f39;
+}
+body#view.tags div.paginate:hover a:visited {
+	color: #FF84C1;
+}
+body#view.tags div.paginate:hover a:hover {
+	color: #C3156C;
+	text-decoration: underline;
+}
+body#view.tags div.tag-results-paging {
+	margin: 3px 0;
+}
+body#view.tags .channel-style2 {
+	margin: 15px 0;
+}
+/*****************/
+/*********************************************************/
+
+/*
+DESCRIPTION: styling the profile page
+URL EG: /profile/USERNAME
+*/
+body#profile a#profile-edit-link {
+	float: right;
+}
+body#profile #profile-edit fieldset {
+	border: 0;
+}
+body#profile #profile-image {
+	width: 200px;
+	float: left;
+	margin: 5px 15px 10px 0;
+	border:solid 1px #3476AE;
+}
+body#profile #profile-image img.default {
+	float: right;
+}
+body#profile #starred {
+	clear: both;
+}
+body#profile #links {
+	margin-top:20px;
+}
+body#profile #links img {
+	margin-right:3px;
+}	
+body#profile p {
+	margin-top:4px;
+}
+/**************About Page Styling********/
+
+body#about #contacts {
+	clear: both;
+}
+body#about #contacts ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+body#about #contacts li {
+	float: left;
+}
+body#about #contacts li a {
+	border: 1px dashed #ddd;
+	color: #f39;
+	display: block;
+	font-size: 90%;
+	height: 80px;
+	margin: 3px 3px;
+	padding: 2px;
+	text-align: center;
+	width: 50px;
+}
+body#about #contacts li a img {
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+body#about #contacts li a:hover {
+	background-color: #F6FAFC;
+	border: 1px solid #aaa;
+	text-decoration: none;
+}
+body#about #contacts li a:hover img {
+	opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+
+/******************************/
+
+body#promo,
+body#success {
+	margin-top: 33px;
+	text-align: center;
+}
+body#promo p.description {
+	text-align: left;
+}
+body#promo ol#promo-list {
+	color: #f39;
+	font-size: 170%;
+	font-weight: bold;
+	letter-spacing: -3px;
+	line-height: .9em;
+	margin-left: 150px;
+	text-align: left;
+	text-transform: uppercase;
+}
+body.send_me_a_message a.text_button {
+	background-color: #eee;
+	border: 1px solid #333;
+	display: block;
+	font-size: 200%;
+	font-weight: bold;
+	letter-spacing: -3px;
+	margin: 13px 0;
+	padding: 13px;
+}
+body.send_me_a_message a.text_button:hover {
+	background-color: #ddd;
+	text-decoration: none;
+}
+body.send_me_a_message {
+	background: #fff;
+	font-size: medium;
+	margin: 0 auto 0 auto;
+	width: 564px;
+}
+body.send_me_a_message #feedback-message-fade {
+	font-size: small;
+	margin: 10px 0;
+}
+body.send_me_a_message #foot {
+	color: #777;
+	font-size: 80%;
+	margin-top: 33px;
+}
+body.send_me_a_message h1 {
+	color: #f39;
+	font-size: 170%;
+	letter-spacing: -3px;
+	line-height: .9em;
+	margin: 0;
+	padding: 10px 0;
+	text-transform: uppercase;
+}
+body.send_me_a_message h1 img {
+	border: 1px solid #aaa;
+	float: left;
+	margin: 0 7px 13px 0;
+}
+body.send_me_a_message ul.fieldlist {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+body.send_me_a_message ul.fieldlist li {
+	clear: both;
+}
+body.send_me_a_message ul.fieldlist li+li {
+	padding-top: 13px;
+}
+body.send_me_a_message ul.fieldlist li label {
+	color: #963;
+	display: block;
+	font-size: 90%;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+body.send_me_a_message ul.fieldlist li input,
+body.send_me_a_message ul.fieldlist li textarea {
+	font-size: 160%;
+	font-weight: bold;
+	padding: 3px;
+	width: 100%;
+}
+body.send_me_a_message ul.fieldlist li input.text {
+	border: 0;
+	border-bottom: 1px dotted #aaa;
+	color: #630;
+}
+body.send_me_a_message ul.fieldlist #msg_text {
+	border: 1px solid #aaa;
+	color: #630;
+	height: 85px;
+	margin: 0;
+	width: 340px;
+}
+body.send_me_a_message #msg_rcdr {
+	border: 1px solid #f39;
+	float: left;
+	height: 141px;
+	margin-right: 5px;
+	width: 217px;
+}
+body.send_me_a_message #msg_submit {
+	height: 45px;
+	margin-top: 4px;
+	width: 100%;
+}
+body.send_me_a_message #text_and_submit {
+	vertical-align: top;
+}
+
+/*
+DESCRIPTION: styling for first-timer sidebar 
+URL EG: any audio page
+*/
+.info-box {
+  width: 173px;
+  float:left;
+  background: url(/img/shadowAlpha.png) no-repeat bottom right !important;
+  background: url(/img/shadow.gif) no-repeat bottom right;
+  margin: 15px 0 20px 15px !important;
+  margin: 15px 0 15px 10px;
+  }
+
+.info-box div {
+  background: none !important;
+  background: url(/img/shadow2.gif) no-repeat left top;
+  padding: 0 !important;
+  padding: 0 6px 6px 0;
+  }
+
+.info-box p {
+  background-color: #FCFEBB;
+  border: solid 1px #EAC635;
+  padding: 8px;
+  padding-right: 6px;
+  margin: -6px 6px 6px -6px !important;
+  margin: 0;
+  line-height: 130%;
+  }
+
+/*
+DESCRIPTION: styling for a list of audios
+URL EG: /listen (popular lists)
+*/
+/* not needed?
+.audio-list {list-style: none;padding: 0px; margin:0; }
+.audio-list li {background: url(/img/blue-fade.png) repeat-y top left; border-top: 1px solid #D6E3E7;  padding:6px;} 
+.audio-list li.even {background:#fff }
+.audio-list li .show-title {font-size:115%; margin-bottom:2px; font-weight:bold; font-family: sans-serif; letter-spacing:90%}
+.audio-list li .show-src a {margin-top:0px; color:#4A85B6; }
+.audio-list .play-btn {float:right;margin-top:3px}
+.audio-list input {float:left;margin-top:7px;margin-right:6px;}
+.audio-list .date {font-size:90%}
+*/
+
+.audio-list2 {list-style: none;padding: 0px; margin:0; }
+.audio-list2 li {background: url(/img/blue-fade.png) repeat-y top left; border-top: 1px solid #D6E3E7;  } 
+.audio-list2 li.even {background:#fff }
+.audio-list2 li .show-title {font-size:115%; margin-bottom:2px; font-family: sans-serif; letter-spacing:90%}
+.audio-list2 li .show-src {margin-top:0px; color:#666666; font-weight:normal;}
+.audio-list2 .play-btn {float:right;margin-top:3px}
+.audio-list2 input {float:left;margin-top:8px;margin-right:14px;margin-left:4px; }
+.audio-list2 .date {font-size:90%; color:#666; font-weight:normal;}
+.audio-list2 a {display:block;padding:6px; font-weight:bold;}
+.audio-list2 a:hover {background-color:#FFECF6;text-decoration:none;}
+
+
+
+#people {
+	width:100%;
+	margin:0;
+	font-size:90%;
+	color:#4C4C4C;
+	font-weight:bold;
+}
+
+#people div.audio-title {
+	margin-top:3px;
+}
+#people div.audio-title a {
+	color:#5598CC;
+}
+#people div.audio-title a:hover {
+	text-decoration:none;
+	color:#C3156C
+}
+#people a.name {
+	font-size:115%;
+}
+#people img.peep-icon {
+	border: solid 1px #9BBDCF;
+	margin-right:6px;
+}
+
+
+#side #browse_by_topic div.box-4-inner {
+	padding-left:2px;padding-top:0;padding-bottom:0
+}
+#side #browse_by_topic h2 {
+	margin-left:4px;margin-bottom:4px
+}
+
+
+
+div#right {
+	float:right;width:265px;
+}
+div#related ul {
+	padding:0;
+	margin:0;
+}
+div#related ul li {
+	list-style:none;
+	background: url(/img/blue-fade-short.gif) repeat-y top left; 
+	font-size:110%;
+}
+div#related ul li.even {background:#fff }
+
+div#related img.play {
+	width:21px;float:right;
+	vertical-align:middle;
+	margin-bottom:1px;
+}
+div#related ul li a {
+	display:block;
+	padding:6px;
+}
+div#related img.icon {
+	margin-top:5px;
+}
+
+div#related ul li a:hover {
+	text-decoration:none;
+	background:#FFECF6;
+}
+
+
+div#desc {
+	width:495px;
+	font-size:110%;
+}
+div#desc-meta p {
+	margin:0;
+	margin-bottom:3px;
+	font-size:90%;
+}
+div#desc-meta {
+	margin-bottom:20px;
+}
+
+#responses {
+	margin-top:15px;width:510px
+}
+div#tags {
+	margin-top:25px;
+	width:268px;
+	margin-left:2px;
+}
+
+img.big-channel {
+	width:130px;
+	height:130px;
+}
+div#channels {
+	margin-top:15px;
+	margin-bottom:15px;
+	text-align:center;
+}
+div#channels img {
+	margin:3px;
+	border:solid 1px black;
+}
+
+
+#side #featured-icons {
+	text-align:center;
+}
+#side #featured-icons a {
+	display:block;
+	border:solid 1px #fff;
+	padding:4px;
+	margin-top:4px;
+}
+#side #featured-icons a:hover {
+	background-color:#EFF6F8;
+	border:solid 1px #BFDCE4;
+}
+#side #featured-icons img {
+	width:85px;
+	border:solid 1px #000;
+	margin-bottom:3px;
+}
+
+img.act-btn {
+	width:86px;
+	height:31px;
+}
+
+
+
+/*
+DESCRIPTION: general help style. put it in p tags
+*/
+.help {
+	color: #888;
+	display: block;
+	font-size: 1em;
+	font-style: italic;
+	font-weight: normal;
+}
+
+
+.more {
+	border-top: 1px solid #D6E3E7;
+	text-align:right;
+	padding-top:3px;
+	margin-top:0px;
+	text-transform:uppercase;	
+}
+
+img.audio-img {
+	float:left;
+	margin-right:12px;
+	margin-bottom:5px;
+	margin-top:2px;
+	border:solid 1px #000;
+	max-width:300px;
+}
+
+#player-link {float:right;width:113px;text-align:right;}
+
+.juicy-text {
+	font-size:170%;letter-spacing:-1px;
+}
+
+ul#hplist {
+	margin: 15px 0 0 0;
+	padding: 0;
+	list-style: none;
+	}
+ul#hplist li {
+	margin: 0 0 5px 0;
+	padding: 10px 0 15px 0px;
+	line-height: 1.5em;
+	color: #3176AF;
+	background-repeat: no-repeat;
+	background-position: center left;
+	font-size: 115%
+	}
+ul#hplist li input {
+	font-size:160%;
+	display: block;
+	width: 277px;
+}
+ul#hplist li.hpfield strong, ul#hplist li.hpfield label {
+	color: #395A86;
+	font-weight: bold;
+}
+ul#hplist li strong, ul#hplist li label {
+	display: block;
+	margin: 0 0 5px 0;
+	padding: 0;
+	font-size: 160%;
+	color: #000;
+	}
+
+
+#blog_this_frame {
+	width:268px;height:240px;display:none;
+}
+	
+#blog_form {
+	width:268px;
+	clear:all;
+}
+
+#blog_form div.form-label {
+	margin-top:5px;
+	font-weight:bold;
+	font-size:90%;
+}
+
+#blog_form input#post_title {
+	width:260px;
+}
+
+#blog_form textarea {
+	width:260px;
+	height:100px;
+}
+	
+#head-ad {
+	padding:10px;
+	padding-left:55px;
+}
+
+
+div#actions {
+	float:right;
+	width:270px;
+	margin-top:5px;
+	text-align:center;
+}
+
+a#add2ch {
+	display:block;
+	margin-top:5px;
+}
+
+div#signup {
+
+	margin: 0 auto;
+	position: absolute;
+	top:100px;
+	left:100px;
+	text-align: left;
+	width:600px;
+	height:520px;
+	z-index:100;
+	background:#fff;
+	border:solid 2px #D0E6EC;
+	padding:10px;
+}
+
+div#signup #login {
+	float:right;width:155px;border:solid 1px #666;color:#666;padding:15px;
+	padding-top:10px;margin-right:10px;margin-top:30px;
+}
+
+p.yellow-note {padding:7px;background-color: #FCFEBB;border: solid 1px #EAC635;}
+
+
+/****( @testing Test CSS )*****************************************************/
+/*
+testing things?
+put them below here along with your name and a description of what it is.
+*/
+
+/*********************************************************/
+
+
+
+.podcast-icon-small {width:26px; height:26px; border:solid 1px #000; float:left; margin-right:5px; margin-top:1px}
+
+
+/********* Audio Players footer branding ***************/
+
+div#main-body table tr td a.branding-footer-pink {
+	font-size: 9px; 
+	padding-left: 40px; 
+	color: #f39; 
+	letter-spacing: -1px;
+}
+div#main-body table tr td a.branding-footer-blue {
+	font-size: 9px; 
+	padding-left: 40px; 
+	color: #6a99fe; 
+	letter-spacing: -1px;
+}

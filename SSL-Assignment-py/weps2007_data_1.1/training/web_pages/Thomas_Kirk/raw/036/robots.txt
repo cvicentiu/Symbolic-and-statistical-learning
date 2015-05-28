@@ -1,0 +1,64 @@
+#
+# This is the robots.txt file.  It should be in the root (/)
+# of your web site.
+#
+# This file is used to tell search engine crawlers what
+# directories they should ignore when indexing.
+#
+# Lines beginning with # are comments, and are not processed
+# by crawlers.
+#
+# The format is a series of records.  Each record begins with
+# a User-agent: statement, and is followed by at least one
+# Disallow: statement.  The preset records below demonstrate
+# this format.
+#
+# Records are separated by blank lines
+#
+# For further information, visit
+# http://info.webcrawler.com/mak/projects/robots/norobots.html
+#
+
+# Leave these records intact:
+User-agent: stress-agent
+Disallow: /
+
+# Edit this record as appropriate for your site.  Add any
+# other directories you want crawlers to ignore.
+User-agent: *
+
+user-agent: shs-crawler
+disallow:
+
+Disallow: /images/
+Disallow: /scripts/
+Disallow: /_
+
+
+
+User-agent: *
+Disallow: /dbs/
+
+User-agent: *
+Disallow: /redirect.asp
+
+User-agent: *
+Disallow: /2003/redirect.asp
+
+User-agent: *
+Disallow: /2004/redirect.asp
+
+User-agent: *
+Disallow: /email/
+
+user-agent: msnbot
+crawl-delay: 172800
+
+user-agent: usa.gov Search - POC:usagov.webmasters@gsa.gov
+crawl-delay: 172800
+
+user-agent: HHSGoogle (Enterprise; GEX-01058; rich.morey@hhs.gov,david.baker@hhs.gov)
+crawl-delay: 172800
+
+user-agent: Mozilla/5.0 (compatible; Yahoo! Slurp; http://help.yahoo.com/help/us/ysearch/slurp)
+crawl-delay: 172800

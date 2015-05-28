@@ -1,0 +1,290 @@
+.printonly
+{
+	display:	block;	/* normal */
+}
+
+body
+{
+	color:		black;
+	background:	white none;
+	font-family:	Georgia, Times New Roman, serif;
+	font-size:	85%;
+}
+
+ul
+{
+	list-style-type: disc;
+	font-family:	Helvetica, Arial, sans-serif;
+}
+
+li.spaced
+{
+	margin-bottom:	0.5em;
+}
+
+
+a, a:visited
+{
+	color:		#008;
+	background:	transparent none;
+	border-style:	none none none none;
+	border-width:	0px 0px 1px 0px;
+
+	text-decoration: underline;
+	font-weight:	normal;
+
+}
+
+
+span.accesskey
+{
+	border-style:	none none none none;
+	border-width:	0px 0px 1px 0px;
+	border-color:	transparent;
+}
+
+div.blockindent
+{
+	position:	relative;
+	width:		90%;
+	margin-left:	auto;
+	margin-right:	auto;
+	margin-bottom:	1em;
+}
+
+
+span.highlighted
+{
+	display:	inline;
+	color:		black;
+	background:	#FF9 none !important;
+	padding:	0.1em 0.25em;
+	margin:		0.2em 0.4em;
+	
+}
+
+
+/*** DOCUMENT ***/
+
+
+div#docBody
+{
+	position:	relative;
+	top:		1.2em;
+}
+
+div#docBody p.indented:first-letter
+{
+	margin-left:	2em;
+}
+
+div#docBody h1
+{
+	color:		#369;
+	background:	transparent none;
+	font-family:	Helvetica, Arial, sans-serif;
+	font-style:	normal;
+	font-weight:	bold;
+}
+
+div#docBody h2
+{
+	color:		#444;
+	background:	transparent none;
+	font-family:	Helvetica, Arial, sans-serif;
+	font-style:	normal;
+	font-weight:	bold;
+
+	border-style:	none none ridge none;
+	border-width:	0px 0px 3px 0px;
+	border-color:	#369;
+}
+
+div#docBody h3
+{
+	color:		#444;
+	background:	transparent none;
+	font-family:	Helvetica, Arial, sans-serif;
+	font-style:	normal;
+	font-weight:	bold;
+	font-size:	150%;
+
+	border-style:	none none none none;
+	border-width:	0px 0px 0px 0px;
+	border-color:	#369;
+}
+
+div#docBody abbr, div#docBody acronym, div#docBody dfn
+{
+	border-style:	none none dashed none;
+	border-width:	0px 0px 1px 0px;
+	border-color:	gray;
+}
+
+div#docBody abbr a, div#docBody acronym a, div#docBody a abbr, div#docBody a acronym, div#docBody a dfn
+{
+	border-style:	none none dashed none;
+	border-width:	0px 0px 1px 0px;
+	border-color:	#369;
+}
+
+div#docBody span.highlighted
+{
+	color:		black;
+	background:	#FF9 none;
+	padding:	0.1em 0.25em;
+}
+
+div#docBody .boxed
+{
+	color:		black;
+	background:	#DDD none;
+	border-style:	dashed;
+	border-width:	1px;
+	border-color:	#444;
+	margin:		1em 0.5em;
+	padding:	0.2em 0.4em;
+}
+
+div#docBody div.FloatLeft
+{
+	float:		left;
+	position:	relative;
+	clear:		none;
+	padding:	0.5em;
+
+	text-align:	center;
+}
+
+div#docBody div.FloatRight
+{
+	float:		right;
+	position:	relative;
+	clear:		none;
+	padding:	0.5em;
+
+	text-align:	center;
+}
+
+div#Footer
+{
+	position:	relative;
+	float:		none;
+	clear:		both;
+	color:		black;
+	background:	transparent none;
+	text-align:	center;
+	border-style:	solid;
+	border-color:	#369;
+	border-width:	1px 0px 0px 0px;
+	font-family:	Helvetica, Arial, sans-serif;
+	font-style:	normal;
+	font-weight:	normal;
+	font-size:	80%;
+	
+}
+
+
+/*** BANNER ***/
+div#bannerContainer
+{
+	/* DO NOT SET TO DISPLAY-NONE >> THIS DIV CONTAINS LOCATION BAR */
+	color:		black;
+	background:	transparent none;
+}
+
+
+div#bannerImage
+{
+	display:	none;
+}
+
+div#bannerSearch
+{
+	display:	none;
+}
+
+
+/*** LOCATION BAR ***/
+div#Location
+{
+	position:	relative;
+	top:		0px;
+	left:		0px;
+	right:		0px !important;
+	height:		auto;
+	min-height:	0.7em;
+	padding:	0.2em 0.4em;
+
+	color:		black;
+	background: 	#AAA none;
+	border-style:	solid none;
+	border-width:	1px 0px;
+	border-color:	gray;
+
+	font-family:	Helvetica, Arial, sans-serif;
+	font-size:	80%;
+	font-weight:	bold;
+}
+
+div#Location span#LocationName
+{
+	font-weight:	normal;
+}
+
+
+/*** SIDEBAR & MENU ***/
+div#Sidebar
+{
+	display:	none !important;
+}
+
+
+/* ===== SAME-PAGE JUMPBAR ELEMENTS ===== */
+/* >>>>>     ORDER IS IMPORTANT!    <<<<< */
+
+div.JumpBar
+{
+	float: right;
+	width: 98.8%;
+	clear: none;
+	padding: 0.2em 0.5em;
+	margin: 0.1em 0em 0.1em;
+	color: #222;
+	background: #AAA none;
+	border: solid 1px black;
+	
+	font-family: Verdana, Helvetica, Arial, Sans-Serif;
+	font-size: 75%;
+	font-weight: bold;
+	font-style: normal;
+	text-align: left;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+div.JumpBar span.Active a, div.JumpBar span.Active a:visited, div.JumpBar span.Active a:hover
+{
+	color: White;
+	background: #555;
+	padding: 0em;
+	white-space: nowrap;
+	font-weight: bold;
+}
+
+div.JumpBar span a, div.JumpBar span a:visited
+{
+	color: #222;
+	background: transparent none;
+	border: none 0px transparent;
+	padding: 0.2em 0.1em;
+	white-space: nowrap;
+}
+
+div.JumpBar span.Active
+{
+	color: White;
+	background: #555 none;
+	padding: 0.2em 0.1em;
+	white-space: nowrap;
+}

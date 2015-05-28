@@ -1,0 +1,33 @@
+.TooltipSource {
+    cursor: help;
+}
+
+.ToolTip {
+    border: 1px solid #333333;
+    padding: 2px;
+    background-color: #ffffcc;
+    layer-background-color:#ffffcc;
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 8pt;
+    width:200px; 
+    z-index: 5;
+    top:5px; 
+    right:5px; 
+    visibility:hidden;
+    position: absolute;
+	text-align:left;
+}
+
+.TooltipFixed {
+    border: 1px solid #333333;
+    padding: 2px;
+    background-color: #ffffcc;
+    layer-background-color:#ffffcc;
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 8pt;
+    width:200px; 
+    z-index: 5;
+    top:5px; 
+    right:5px; 
+    visibility:hidden;
+}

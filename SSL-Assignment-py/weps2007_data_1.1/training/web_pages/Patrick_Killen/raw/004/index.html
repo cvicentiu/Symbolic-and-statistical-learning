@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+		
+	 
+	<head>
+<!-- VERSION 1 -->
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+		<link rel="shortcut icon" href="http://admin.brightcove.com/destination/images/favicon.ico" type="image/x-icon" />
+		<style type="text/css">
+			@import "http://admin.brightcove.com/destination/css/global.css";				
+			@import "http://admin.brightcove.com/destination/css/horizontalMenu.css";			
+			@import "http://admin.brightcove.com/destination/css/title.css";		
+		</style>
+		<script type="text/javascript" src="http://admin.brightcove.com/destination/js/ajax/prototype.js"></script>
+		<script type="text/javascript" src="http://admin.brightcove.com/destination/js/matching_columns.js"></script>
+		<script type="text/javascript" src="http://admin.brightcove.com/destination/js/main.js"></script>
+		<script type="text/javascript" src="http://admin.brightcove.com/destination/js/ajax/jsonrpc.js"></script>
+		<script type="text/javascript" src="http://admin.brightcove.com/destination/js/registration.js"></script>
+		<script type="text/javascript" src="http://admin.brightcove.com/destination/js/swfobject.js"></script>
+		<script type="text/javascript" src="http://admin.brightcove.com/destination/js/player.js"></script>	
+		<script type="text/javascript" src="http://admin.brightcove.com/destination/js/ajax/behaviour.js"></script>		
+        <script type="text/javascript" src="http://admin.brightcove.com/destination/js/behaviourRulesTitle.js"></script>
+		<script type="text/JavaScript">
+			//Pay Media flow JS 
+			var swf;
+			var gIsRental;
+			function showPMF(isRental){		
+				var e = document.getElementById("flashPay");
+				e.style.display = 'block';	
+				gIsRental = isRental;	
+				loadPayMedia();	
+				getMovieName("bcPlayer").pauseVideo(); 
+			}
+			
+			function closePaidMediaFlow(){
+				var e = document.getElementById("flashPay");
+				e.style.display = 'none';	
+				document.getElementById("payFlow").innerHTML = "";
+			}
+			
+			function getMovieName(movieName) {
+			   	 if (navigator.appName.indexOf("Microsoft") != -1) {
+			   	 	return window[movieName]
+			    }
+			   	 else {
+			    	return document[movieName]
+			    }
+			}
+			
+			function fbs_click() {
+				u=location.href;
+				t=document.title;
+				
+				window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');
+				
+				return false;
+			}
+		</script>
+	
+        <style type="text/css">
+			<!--
+			#flashPay {
+				background-image:url("http://admin.brightcove.com/destination/images/layer-trans.png");
+				position:absolute;
+				width:100%;
+				height:100%;
+				z-index:1;
+				left: 0px;
+				top: 0px;
+				font-size: xx-large;
+				color: #FF0000;
+				display:none;
+				z-index: 999;
+				padding-top:200px;				
+			}
+			
+			#flashPay2 {
+				z-index: 1;
+			}
+			-->
+		</style>
+		<!--[if lt IE 7]> 
+			<script language="JavaScript" src="http://admin.brightcove.com/destination/js/correctPNG.js"></script>
+			<style>
+				@import "http://admin.brightcove.com/destination/css/globalIE.css";
+				@import "http://admin.brightcove.com/destination/css/horizontalMenuIE.css";
+				@import "http://admin.brightcove.com/destination/css/titleIE.css";
+			</style>
+		<![endif]-->
+		<script type="text/javascript">
+		if(isIE7){
+			document.writeln('<style type="text/css">');
+			document.writeln('	@import "http://admin.brightcove.com/destination/css/globalIE7.css";');				
+			document.writeln('	@import "http://admin.brightcove.com/destination/css/horizontalMenuIE7.css";');
+			document.writeln('	@import "http://admin.brightcove.com/destination/css/titleIE7.css";');	
+			document.writeln('</style>');
+		}	
+		if(isSafari){
+			document.writeln('<style type="text/css">#addToMyChannel{margin-top:0px;}</style>');
+		}
+		</script> 
+		
+		
+		
+
+		<title>Brightcove - Online Broadcasting Service - Patrick Killen at CRCM makes the case for pot reform</title>
+	</head>
+
+	<body id="title">	
+		<div id="main">
+			<!-- Begin Navigation -->
+	<div id="navigation">
+		<div id="mainNav">
+			Brightcove.com<span class="divider">|</span><a href="http://corp.brightcove.com">Company</a><span class="divider">|</span><a href="http://studio.brightcove.com">The Studio</a>
+		</div>
+		<div id="loginTools">
+			<span id="helloUser">Hello, <span id="helloUserAnchor"></span><span class="divider">|</span></span>
+			<span id="myAccount"><a id="myAccountAnchor">My Brightcove</a><span class="divider">|</span></span>
+			<a href="http://blog.brightcove.com/addict/">Blog</a><span class="divider">|</span>
+			<a href="http://www.brightcove.com/help/">Help</a><span class="divider">|</span>
+			<a href="title.jsp%3Ftitle=301794121&amp;channel=27638673.1.html#" id="signInLink" onclick="return linkLogin()">Sign In/Register</a>			
+		</div>
+	</div>
+<!-- End of Navigation -->	
+	<div class="contentWrapper">	    
+		<div class="innerBoundry">
+			<div id="logoSearch">
+				<div id="logo"><a href="http://www.brightcove.com"><img alt="" border="0" src="http://admin.brightcove.com/destination/images/bc_logo_beta.gif"/></a></div>
+				<div id="searchSection">
+					<div id="searchBox">
+						<input style="color:#3B3B3B;" id="searchField" type="text" value="" onkeypress="entsubSearch(event);"/><a href="title.jsp%3Ftitle=301794121&amp;channel=27638673.1.html#" id="searchMagnifyingGlass"><img alt="" src="http://admin.brightcove.com/destination/images/search_button.gif"/></a>					
+					</div>
+					<!-- <div id="presearch">Try These: <a id="preSearch1" href="http://www.brightcove.com/search.jsp?query=hogfather&firstVideo=0">hogfather</a>, <a id="preSearch2" href="http://www.brightcove.com/search.jsp?query=danity%20kane&firstVideo=0">danity kane</a>, <a id="preSearch3" href="http://www.brightcove.com/search.jsp?query=gifts&firstVideo=0">gifts</a></div> -->
+				</div>
+				<div id="logoRight">
+					<span id="launchChannel"><a href="http://www.brightcove.com/registration.jsp"  onclick="setOmniture(3)" id="launchButton"><img alt="" class="launchButtonOverlay" src="http://admin.brightcove.com/destination/images/button_launch_a_channel_over.gif"/><img src="http://admin.brightcove.com/destination/images/button_launch_a_channel.gif" alt="" border="0"/></a></span>
+					<span id="uploadVideo"><a href="http://www.brightcove.com/upload_video.jsp" id="uploadVideoButton"><img alt="" class="launchButtonOverlay" src="http://admin.brightcove.com/destination/images/button_upload_a_video_over.gif"/><img src="http://admin.brightcove.com/destination/images/button_upload_a_video.gif" alt="" border="0"/></a></span>
+				</div>
+			</div>
+			<script type="text/javascript">
+			<!--
+			var preloaded = new Array();
+			function preload_images() {
+			    for (var i = 0; i < arguments.length; i++){
+			        preloaded[i] = document.createElement('img');
+			        preloaded[i].setAttribute('src',arguments[i]);
+			    };
+			};
+			preload_images(
+			    'http://admin.brightcove.com/destination/images/nav_home_over.gif',
+			    'http://admin.brightcove.com/destination/images/nav_buzz_over.gif',
+			    'http://admin.brightcove.com/destination/images/nav_music_over.gif',
+			    'http://admin.brightcove.com/destination/images/nav_celebs_over.gif',
+			    'http://admin.brightcove.com/destination/images/nav_tvfaves_over.gif',
+			    'http://admin.brightcove.com/destination/images/nav_news_over.gif',
+			    'http://admin.brightcove.com/destination/images/nav_food_over.gif',
+			    'http://admin.brightcove.com/destination/images/nav_funny_over.gif',
+			    'http://admin.brightcove.com/destination/images/syndicate_videos_over.gif',
+			    'http://admin.brightcove.com/destination/images/nav_seeAll_over.gif'
+			);
+			-->
+			</script>
+			<div class="hovermenu" >
+				<ul>
+					<li><a href="http://www.brightcove.com/"><img src="http://admin.brightcove.com/destination/images/nav_home.gif" alt="Home" border="0"/></a></li>
+					<li><a href="http://www.brightcove.com/buzz.jsp"><img src="http://admin.brightcove.com/destination/images/nav_buzz.gif" alt="Buzz" border="0"/></a></li>
+					<li><a href="http://www.brightcove.com/category.jsp?category=200000"><img src="http://admin.brightcove.com/destination/images/nav_music.gif" alt="Music" border="0"/></a></li>
+					<li><a href="http://www.brightcove.com/category.jsp?category=200015"><img src="http://admin.brightcove.com/destination/images/nav_celebs.gif" alt="Celebs" border="0"/></a></li>
+					<li><a href="http://www.brightcove.com/category.jsp?category=200001"><img src="http://admin.brightcove.com/destination/images/nav_tvfaves.gif" alt="TV Faves" border="0"/></a></li>
+					<li><a href="http://www.brightcove.com/category.jsp?category=200012"><img src="http://admin.brightcove.com/destination/images/nav_news.gif" alt="News" border="0"/></a></li>
+					<li><a href="http://www.brightcove.com/category.jsp?category=200009"><img src="http://admin.brightcove.com/destination/images/nav_food.gif" alt="Food &amp; Drink" border="0"/></a></li>					
+					<li id="secondToLast"><a href="http://www.brightcove.com/category.jsp?category=200005"><img src="http://admin.brightcove.com/destination/images/nav_funny.gif" alt="Funny" border="0"/></a></li>
+					<li class="syndicateMenu"><a href="http://studio.brightcove.com/affiliates/syndication-marketplace.cfm" onclick="setOmniture(4)"><img src="http://admin.brightcove.com/destination/images/syndicate_videos_over.gif" alt="Syndicate, Get Videos for your Website" border="0" class="syndicateMenuOverlay"/><img src="http://admin.brightcove.com/destination/images/syndicate_videos.gif" alt="Syndicate, Get Videos for your Website" border="0" class="syndicateMenuImg"/></a></li>
+					<li id="lastMenuItem"><a href="title.jsp%3Ftitle=301794121&amp;channel=27638673.1.html#" onclick="return false;"><img src="http://admin.brightcove.com/destination/images/nav_seeAll.gif" alt="See All" border="0"/></a><div id="test" style="height:0px;width:0px;visibility:hidden;"></div>
+						<ul id="dropdownul">  
+							<li class="submenuli"><a href="http://www.brightcove.com/category.jsp?category=200013">Action</a></li>
+							<li class="submenuli"><a href="http://www.brightcove.com/category.jsp?category=200015">Celebs</a></li>
+							<li class="submenuli"><a href="http://www.brightcove.com/category.jsp?category=200008">Educational</a></li>
+							<li class="submenuli"><a href="http://www.brightcove.com/category.jsp?category=200004">Family</a></li>
+							<li class="submenuli"><a href="http://www.brightcove.com/category.jsp?category=200002">Films &amp; Shorts</a></li>
+							<li class="submenuli"><a href="http://www.brightcove.com/category.jsp?category=200009">Food &amp; Drink</a></li>
+							<li class="submenuli"><a href="http://www.brightcove.com/category.jsp?category=200005">Funny</a></li>
+							<li class="submenuli"><a href="http://www.brightcove.com/category.jsp?category=200011">Health</a></li>
+							<li class="submenuli"><a href="http://www.brightcove.com/category.jsp?category=200010">Living</a></li>
+							<li class="submenuli"><a href="http://www.brightcove.com/category.jsp?category=200000">Music</a></li>
+							<li class="submenuli"><a href="http://www.brightcove.com/category.jsp?category=200012">News</a></li>
+							<li class="submenuli"><a href="http://www.brightcove.com/category.jsp?category=200014">Sexy</a></li>
+							<li class="submenuli"><a href="http://www.brightcove.com/category.jsp?category=200006">Sports</a></li>
+							<li class="submenuli"><a href="http://www.brightcove.com/category.jsp?category=200007">Travel</a><br/></li>
+							<li class="submenuli"><a href="http://www.brightcove.com/category.jsp?category=200001">TV Faves</a></li>
+							<li class="submenuli"><a href="http://www.brightcove.com/category.jsp?category=200003">Underground</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<script>firstSignedIn()</script>
+			<div id="row">
+
+					<!-- Begin Content -->
+						<div id="content" class="column">
+							<div id="shadowRight" class="column"><img src="http://admin.brightcove.com/destination/images/shadow_right.jpg" alt="" /></div>
+							<div id="shadowLeft" class="column"><img src="http://admin.brightcove.com/destination/images/shadow_left.jpg" alt="" /></div>
+														
+							<div>
+							<div id="rightColumn">
+								<div id="about">
+																				
+									<div class="truncDesc aboutRow">
+										<div class="aboutThumbnails">
+											<div class="aboutFloatSmallTN">
+												<a href="http://www.brightcove.com/channel.jsp?channel=27638673">
+												
+												<img alt="" src="http://brightcove.vo.llnwd.net/o2/unsecured/media/27638673/27638673_29784135_938690e5011f125265dfae8781f6685e6567143a.jpg" class="aboutSmallImg"/></a>
+											</div>
+										</div>
+										<div>
+											<a href="http://www.brightcove.com/channel.jsp?channel=27638673" class="channelTitle">Online Broadcasting Service
+</a>											
+											
+											
+												<div class="videosDescriptionDescription">The Online Broadcasting Service (OBS) offers viewers the best and latest in news and interviews about technology, politics, entertainment, medicine, books, and science
+</div>
+											
+											
+                      <div id="channelLinks">
+                        
+                          <div class="channelLink" style="background-image:url(http://admin.brightcove.com/destination/images/icon_visitChannel_trans.png);"><span class="secondaryLink"><a href="http://www.etopiamedia.net" target="_blank">Visit Website</a></span>
+                          </div>
+                        
+											
+												<div class="channelLink" style="background-image:url(http://admin.brightcove.com/destination/images/icon_see_more.gif);"><span class="secondaryLink"><a href="http://www.brightcove.com/channel.jsp?channel=27638673">View Channel</a></span>
+												</div>
+												
+												<div class="channelLink" id="addFavoriteDiv" title="Add this channel to your My Brightcove page">
+				                      				<a href="title.jsp%3Ftitle=301794121&amp;channel=27638673.1.html#" id="addToFavChannel">
+				                      					<img src="http://admin.brightcove.com/destination/images/graphic_plusonly_graybg.gif" border="0"/> 
+				                      					<span class="secondaryLink" id="addToFavChannelSpan">	                      				
+					                      					Add to Favorites
+					                      					<script>
+						                      					var a = new Object();
+						                      					a.channel = 27638673;	 
+						                      					$("addToFavChannel").onclick = function(){addChannelToFavorites(a,$("addToFavChannel")); return false;}                    				
+						                      				</script>
+				                      					</span>
+				                      				</a>
+				                      			
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+									
+								<div id="more">										
+									<div class="moduleTitle"><span class="moreFromChannel">More From This Channel</span> <span class="seeAll"><a href="http://www.brightcove.com/channel.jsp?channel=27638673&lineup=474425215">See All <img src="http://admin.brightcove.com/destination/images/icon_see_more.gif" alt="" border="0"/> </a></span></div>
+									
+									<div class="moreRow">
+										<div class="moreThumbnails">
+											<div class="moreFloatSmallTN">
+											
+												<a href="http://www.brightcove.com/title.jsp?title=474425212&channel=27638673&lineup=474425215" ><img alt="" src="http://admin.brightcove.com/destination/images/rollover_thumb_play_small_trans.png" class="moreSmallImgOverlaySmall"/>
+												
+												
+												<img alt="" src="http://brightcove.vo.llnwd.net/o2/unsecured/media/27638673/27638673_477539765_d794f220c8f8de7ceab455853764a3ff0ee251b5.jpg" class="moreSmallImg"/></a>
+											</div>
+										</div>
+										<div>
+											<a class="moreLink" href="http://www.brightcove.com/title.jsp?title=474425212&channel=27638673&lineup=474425215" >Antonio Villariagosa talks about bird flu preparedness in LA</a> <span class="moreLength">(<script type="text/javascript">document.write(milToMin(78800));</script>)</span>
+                      
+                      						<p class="moreLength">&nbsp;</p>
+                      
+										</div>
+									</div>
+									
+									<div class="moreRow">
+										<div class="moreThumbnails">
+											<div class="moreFloatSmallTN">
+											
+												<a href="http://www.brightcove.com/title.jsp?title=474534420&channel=27638673&lineup=474425215" ><img alt="" src="http://admin.brightcove.com/destination/images/rollover_thumb_play_small_trans.png" class="moreSmallImgOverlaySmall"/>
+												
+												
+												<img alt="" src="http://brightcove.vo.llnwd.net/o2/unsecured/media/27638673/27638673_477718581_d95784719eb677e24d7f4bde9f9316531c746571.jpg" class="moreSmallImg"/></a>
+											</div>
+										</div>
+										<div>
+											<a class="moreLink" href="http://www.brightcove.com/title.jsp?title=474534420&channel=27638673&lineup=474425215" >Rick Greenwood downplays avian influenza threat</a> <span class="moreLength">(<script type="text/javascript">document.write(milToMin(1654500));</script>)</span>
+                      
+                      						<p class="moreLength">&nbsp;</p>
+                      
+										</div>
+									</div>
+									
+									<div class="moreRow">
+										<div class="moreThumbnails">
+											<div class="moreFloatSmallTN">
+											
+												<a href="http://www.brightcove.com/title.jsp?title=474534417&channel=27638673&lineup=474425215" ><img alt="" src="http://admin.brightcove.com/destination/images/rollover_thumb_play_small_trans.png" class="moreSmallImgOverlaySmall"/>
+												
+												
+												<img alt="" src="http://brightcove.vo.llnwd.net/o2/unsecured/media/27638673/27638673_477732601_e496bcb63a27d6310318e82e28b0f72591a3af40.jpg" class="moreSmallImg"/></a>
+											</div>
+										</div>
+										<div>
+											<a class="moreLink" href="http://www.brightcove.com/title.jsp?title=474534417&channel=27638673&lineup=474425215" >Jonathan Fielding on LA Country bird flu preparedness</a> <span class="moreLength">(<script type="text/javascript">document.write(milToMin(389900));</script>)</span>
+                      
+                      						<p class="moreLength">&nbsp;</p>
+                      
+										</div>
+									</div>
+																			
+								</div>
+																											
+							</div>
+							<div id="leftColumn">				
+								<div id="flash">
+									<div id="flashPlayer">
+										
+										
+										
+										<!-- Start of Brightcove Player -->
+											<div id="flashcontent">
+												<table width='486' height='412' border='0'>
+													<tr>
+														<td align='center' valign='middle'>
+															You need Flash Player version 8 or higher to view this video.<br/><br/>
+															<a href='http://www.macromedia.com/go/getflashplayer/' target='_blank'>
+																Click here to get the latest Flash Player.
+															</a>
+														</td>
+													</tr>
+												</table>
+											</div>
+											<script type="text/javascript">
+												var so = new SWFObject("http://admin.brightcove.com/destination/player/player.swf", "bcPlayer", "486", "412", "8.0.0.0","#ffffff");	
+												so.addVariable("initVideoId", "301794121"); 
+												so.addVariable("cdnURL", "http://admin.brightcove.com");
+												so.addVariable("servicesURL", "http://services.brightcove.com/services"); 
+												so.addVariable("viewerSecureGatewayURL", "https://services.brightcove.com/services/amfgateway");
+												so.addVariable("autoStart", "true");
+												so.addParam("allowScriptAccess", "always");
+												
+												so.addParam("allowFullScreen", "true");
+												so.addVariable("allowFullScreen", "true");
+												
+												so.write("flashcontent");						
+											</script>
+										<!-- End of Brightcove Player -->
+										
+										<div class="socialBookmarks">
+												<a href="http://www.facebook.com/share.php?u=<url>" onclick="setOmniture('6',s.prop5);return fbs_click();" target="_blank"><img src="http://admin.brightcove.com/destination/images/icon_facebook.gif" border="0" alt="Facebook"/> <span class="socialLinkText">Facebook</span></a>
+												<a href="http://digg.com/submit" onclick="setOmniture('7',s.prop5);window.open('http://digg.com/submit?phase=2&url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title), '',''); return false;" target="_blank"><img src="http://admin.brightcove.com/destination/images/icon_digg.gif" border="0" alt="Digg"/> <span class="socialLinkText">Digg</span></a>
+												<a href="http://del.icio.us/post" onclick="setOmniture('8',s.prop5);window.open('http://del.icio.us/post?v=4&noui&jump=close&url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title), 'delicious','toolbar=no,width=700,height=400'); return false;" target="_blank"><img src="http://admin.brightcove.com/destination/images/icon_del.icio.us.gif" border="0" alt="Del.icio.us"/> <span class="socialLinkText">Del.icio.us</span></a>
+												<div id="addToMyChannel">
+												
+													<img id="addToMyChannelImage" src="http://admin.brightcove.com/destination/images/add-to-my-brightcove_title-view.gif" border="0" alt="My Channel" onclick="addVideoToFavoritesTitlePage('301794121');"/><span class="secondaryLink" onclick="addVideoToFavoritesTitlePage('301794121');">Add to Favorites</span>
+																								
+										</div>	</div>
+											<!-- <span style="float:right;">
+												<a href="http://www.facebook.com/share.php?u=<url>" onclick="return fbs_click()" target="_blank"><img src="http://admin.brightcove.com/destination/images/facebook_share_icon.gif" border="0" alt="My Channel"/> <span class="socialLinkText">Add to My Channel</span></a>
+											</span> -->
+										
+										<div class="title">
+										Patrick Killen at CRCM makes the case for pot reform
+
+										</div>
+										<div class="titleDate">Added Nov 7</div>
+									</div>
+									<div>										
+										<div id="flashDesc">
+											<!-- <div id="titleBuzz"><img alt="" src="http://admin.brightcove.com/destination/images/old/bmlogo.jpg" width="90px"/></div> -->
+											<div id="titleDesc" class="truncDesc">a remotely-recorded video interview with Nevada's Committee to Regulate and Control Marijuana (CRCM)/Ballot Question No. 7 spokesperson Patrick Killen, conducted on October 27, 2006
+</div>
+												
+											<script type="text/javascript">
+												var headID = document.getElementsByTagName("head")[0]; 
+												var thumbnailURL = document.createElement("link");
+												thumbnailURL.rel="videothumbnail";
+												thumbnailURL.href="http://brightcove.vo.llnwd.net/o2/unsecured/media/27638673/27638673_303883295_b94f30ed02a10f96c17b81e4830b40d29cabbd0c.jpg";
+												thumbnailURL.type="image/jpeg";
+												headID.appendChild(thumbnailURL);												
+											</script>
+											
+											<div id="titleStats">
+												<table>
+                         
+													<tr><td class="alignRight">26</td><td class="alignLeft">Views</td></tr>
+													
+													<tr><td class="alignRight">4%</td><td class="alignLeft">Finished</td></tr>
+                        
+													<tr><td class="alignRight"><script type="text/javascript">document.write(milToMin(1806965));</script></td><td class="alignLeft">Duration</td></tr>
+												</table>												
+											</div>
+                      											
+										</div>									
+									</div>
+								</div>
+							</div>
+							
+							<div id="flashPay" align="center">
+								<div id="payFlow">								
+									
+								</div>
+							</div>
+							<script type="text/javascript">
+							function loadPayMedia(){
+								swf = new SWFObject("http://admin.brightcove.com/paidMedia/paidMediaUI.swf", "bcPaidMediaUI", "502", "499", "8.0.0.0","#ffffff");	
+								swf.addParam("wmode", "transparent");
+								swf.addParam("allowScriptAccess", "always");
+								swf.addVariable("cdnURL", "http://admin.brightcove.com");
+								swf.addVariable("viewerSecureGatewayURL", "https://services.brightcove.com/services/amfgateway");
+								swf.addVariable("servicesURL", "http://services.brightcove.com/services");
+								swf.addVariable("pmfVideoId","301794121");
+								swf.addVariable("pmfIsRental",gIsRental);
+								swf.addVariable("pmfHideFade","true");	
+								$("payFlow").innerHTML = "<table width='326' height='292' border='0'><tr><td align='center' valign='middle'>You need Flash Player version 8 or higher to view this video.<br/><br/><a href='http://www.macromedia.com/go/getflashplayer/' target='_blank'>Click here to get the latest Flash Player.</a></td></tr></table>";
+								swf.write("payFlow");	
+							}							
+							</script>
+							</div>
+							
+						</div>
+				<!-- End Content -->	       
+					</div>
+		<div class="innerFooter">
+			<span class="innerFooterLeft"><a href="http://www.brightcove.com/">Home</a> | <a href="http://www.brightcove.com/buzz.jsp">The Buzz</a> | <a href="http://www.brightcove.com/category.jsp?category=200000">Music</a> | <a href="http://www.brightcove.com/category.jsp?category=200015">Celebs</a> | <a href="http://www.brightcove.com/category.jsp?category=200001">TV Faves</a> | <a href="http://www.brightcove.com/category.jsp?category=200012">News</a> | <a href="http://www.brightcove.com/category.jsp?category=200009">Food &amp; Drink</a> | <a href="http://www.brightcove.com/category.jsp?category=200005">Funny</a></span>					
+			<span class="innerFooterRight"><a href="http://www.brightcove.com/site_feedback.jsp">Feedback</a> | <a href="http://www.brightcove.com/help/">Help</a></span>
+		</div>
+	</div>	<!-- End InnerBoundry -->     
+</div><!-- End of ContentWrapper -->
+<div class="footer">
+	<div class="footerText">
+		<span class="footerLeft"><a href="http://www.brightcove.com/">Brightcove.com</a> | <a href="http://corp.brightcove.com">Company</a> | <a href="http://studio.brightcove.com">The Studio</a>	</span>
+		<span class="footerRight"><a href="http://corp.brightcove.com/termsandconditions.cfm">Terms &amp; Conditions</a> | <a href="http://corp.brightcove.com/privacy.cfm">Privacy</a> | &copy;2007 Brightcove, Inc.</span>
+	</div>
+</div>
+
+		</div>
+		<!-- SiteCatalyst code version: H.7.
+		Copyright 1997-2006 Omniture, Inc. More info available at
+		http://www.omniture.com -->
+		<script language="JavaScript" src="http://admin.brightcove.com/destination/js/s_code.js"></script>
+		<script language="JavaScript"><!--
+		/* You may give each page an identifying name, server, and channel on
+		the next lines. */
+		if(window.location.hostname.indexOf("brightcove")== -1){
+			s.prop11="brightcovedev"
+		}
+    
+		s.pageName=document.body.id+": Online Broadcasting Service(27638673): Patrick Killen at CRCM makes the case for pot reform(301794121)";
+    	s.prop5="Online Broadcasting Service(27638673): Patrick Killen at CRCM makes the case for pot reform(301794121)"
+    
+		s.server=window.location.hostname
+		s.channel=""
+		s.pageType=""
+		s.prop1=""
+		s.prop2=""
+		s.prop3=""
+		s.prop4=""
+		
+		s.prop6=""
+		s.prop7=""
+		s.prop8=""
+		
+		/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+		var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+		<script language="JavaScript"><!--
+		if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+		//--></script><noscript><img
+		src="http://brightcoveactionsource.112.2O7.net/b/ss/brightcoveactionsource/1/H.7--NS/0"
+		height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
+		<!-- End SiteCatalyst code version: H.7. -->
+	
+		<!-- Start Quantcast tag -->
+			<script type="text/javascript" src="http://quantserve.com/quant.js"></script>
+			<script type="text/javascript">
+			_qacct="p-81oWBo0_66b4w";quantserve();</script>
+			<noscript>
+			<img src="http://quantserve.com/pixel/p-81oWBo0_66b4w.gif" style="display: none" height="1" width="1"></noscript>
+		<!-- End Quantcast tag -->	
+		
+	</body>
+</html>

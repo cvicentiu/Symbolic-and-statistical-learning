@@ -1,0 +1,45 @@
+# Disallow directory /images-2/
+User-agent: *
+Disallow: /images-2/
+
+# Disallow directory /images/
+User-agent: *
+Disallow: /images/
+
+# Disallow directory /sounds/
+User-agent: *
+Disallow: /sounds/
+
+# Disallow Collectors and Spam
+User-agent: atSpider
+Disallow: /
+
+User-agent: cherrypicker
+Disallow: /
+
+User-agent: DSurf
+Disallow: /
+
+User-agent: EliteSys Entry
+Disallow: /
+
+User-agent: EmailCollector
+Disallow: /
+
+User-agent: EmailSiphon
+Disallow: /
+
+User-agent: EmailWolf
+Disallow: /
+
+User-agent: Mail Sweeper
+Disallow: /
+
+User-agent: munky
+Disallow: /
+
+User-agent: Roverbot
+Disallow: /
+
+User-agent: WebEmailExtrac
+Disallow: / 

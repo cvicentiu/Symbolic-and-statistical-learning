@@ -1,0 +1,26 @@
+.ac-renderer  {
+  font-family: Arial;
+  font-size: 80%;
+  border: 1px solid #666;
+  background: #E0ECFF;
+  color: #00C;
+  margin: 0px 0px;
+  padding: 0px 0px 1px 0px;
+  z-index: 10;
+  position: absolute;
+}
+
+.ac-renderer  div {
+  margin: 2px; cursor: pointer; padding: 0px 10px;
+  border-bottom: 1px solid #A3C0FF;
+ }
+
+.ac-renderer  div b {
+  color: #00F;
+ }
+
+
+.ac-renderer  div.active {
+    background: #C3D9FF;
+}
+

@@ -1,0 +1,19 @@
+User-agent: Ultraseek
+Disallow: /cgi-bin
+Disallow: /pnp/temp3
+
+User-agent: Googlebot
+Allow: /cgi-bin/query/h?
+Allow: /cgi-bin/ampage
+Disallow: /cgi-bin
+Crawl-Delay: 2
+
+User-agent: *
+Disallow: /cgi-bin/
+Disallow: /ammem/wpa/
+Disallow: /ammem/0
+Disallow: /ammem/1
+Disallow: /phpdata/
+Disallow: /pnp/temp3
+Disallow: /ammem/techdocs/digform/
+

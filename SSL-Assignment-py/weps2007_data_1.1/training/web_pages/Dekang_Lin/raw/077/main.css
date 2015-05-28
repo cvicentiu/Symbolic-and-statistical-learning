@@ -1,0 +1,109 @@
+img { border-width:0px; }
+body { margin:0px; padding:0px; }
+
+/* title banner, impressum link, DFKI logo, language switch */
+
+#title { width:100%; height:200px; }
+#title #banner { width:100%; height:103px; background-color:#b9b9b9; }
+#title #banner #impressum { position:absolute; top:89px; right:20px; width:180px; height:14px; text-align:right;
+                            font-family:arial,helvetica,sans-serif; font-size:10px; color:#ffffff; }
+#title #banner #impressum a { text-decoration:none; color:#ffffff; text-transform:uppercase; }
+#title #banner #impressum a:hover { color:#db791a; }
+#title #dfkilogo { position:absolute; top:130px; left:0px; width:214px; height:40px; }
+#title #language { position:absolute; top:130px; right:20px; width:200px; height:40px; text-align:right;
+                   font-family:arial,helvetica,sans-serif; font-size:10pt; font-weight:normal; color:#000000; line-height:20px; }
+#title #language a { color:#928c8c; text-decoration:none; }
+#title #language a:hover { color:#db791a; text-decoration:underline; }
+
+/* left menu */
+
+#menu { position:absolute; left:0px; top:200px; width:175px; height:235px;
+        background-image:url('images/menu/background.gif'); background-position:0px 0px; background-repeat:no-repeat;
+        font-family:arial,helvetica,sans-serif; font-size:11px; color:#ffffff; text-decoration:none; 
+        padding:0px; margin:0px; vertical-align:top; padding-top:30px; 
+        text-transform:uppercase; text-align:right; }
+#menu #item { height:25px; padding-right: 20px; padding-top:5px;  voice-family: "\"}\""; voice-family:inherit; height:20px; }
+html>body #menu #item { height:20px; }
+#menu #item a { font-family:arial,helvetica,sans-serif; font-size:11px; color:#ffffff; 
+                text-align:right; text-decoration:none; }
+#menu #item a:hover { color:#eabe92; }
+#menu #selected { height:25px; padding-right:20px; padding-top:5px;
+                  background-image:url('images/menu/active.png'); background-repeat:no-repeat; background-position:right;
+                  voice-family: "\"}\""; voice-family:inherit; height:20px; }
+html>body #menu #selected { height:20px; }
+   
+/* right menu */
+
+#submenu { float:right; width:184px; background-color:#ffffff;
+           margin-left:20px; padding-left:10px; padding-right:10px; 
+           border-left:1px solid #bcb8b8; 
+           font-family:arial,helvetica,sans-serif; font-size:10pt; color:#000000; }
+#submenu h1 { font-size:12pt; font-weight:bold; padding:0px; margin-top:0px; margin-bottom:20px; margin-left:0px; }
+#submenu h1 a { text-decoration:none; color:#928c8c; padding-right:10px;
+                voice-family: "\"}\""; voice-family: inherit;
+                background-image:url('images/left.png'); background-position:right; background-repeat:no-repeat; }
+html>body #content h1 a { background-image:url('images/left.png'); background-position:right; background-repeat:no-repeat; }
+#submenu h1 a:hover { text-decoration:underline; color:#db791a; }
+#submenu #link { margin-left:8px; padding-left:12px; 
+                 background-image:url('images/menu/topright.png'); background-position:0px 5px; background-repeat:no-repeat; }
+#submenu #link.selected { background-image:url('images/menu/topright-active.png'); }
+#submenu #link a { color:#000000; text-decoration:none; font-weight:bold; }
+#submenu #link.selected a { color:#db791a; }
+#submenu #link p { margin-left:0px; margin-top:2px; margin-bottom:20px; padding-left:0px; 
+                   color:#928c8c; font-weight:normal; }
+#submenu #link a:hover { color:#db791a; }
+
+/* content */
+
+#content { margin-left:175px; padding-right:224px;
+           font-family:arial,helvetica,sans-serif; font-size:10pt; font-weight:normal; 
+           text-align:left; }
+#content .decoimage-small { float:left; margin-left:1px; margin-right:20px; margin-bottom:20px; }
+#content .decoimage-large { float:none; margin-right:20px; margin-bottom:20px; }
+#content h1 { margin-left:30px; margin-top:0px; text-align:left;
+              font-family:arial,helvetica,sans-serif; font-size:12pt; font-weight:bold; }
+#content h2 { margin-left:30px; margin-top:0px; text-align:left; 
+              font-family:arial,helvetica,sans-serif; font-size:11pt; font-weight:bold; }
+#content h3 { margin-left:30px; margin-top:0px; text-align:left; 
+              font-family:arial,helvetica,sans-serif; font-size:10pt; font-weight:bold; }
+#content p { margin-left:0px; }
+#content .leftaligned { text-align:left; }
+#content ul { margin-left:30px; padding-left:30px; text-indent:0pt; list-style-position:inside;  }
+#content ol { margin-left:30px; padding-left:30px; text-indent:0pt; list-style-position:inside; }
+#content table { margin-left:30px; }
+#content a { color:#928c8c; text-decoration:none; }
+#content a:hover { color:#db791a; text-decoration:underline; }
+#content h1 a { margin-left:20px; padding-right:10px;
+                voice-family: "\"}\""; voice-family: inherit;
+                background-image:url('images/left.png'); background-position:right; background-repeat:no-repeat; }
+html>body #content h1 a { background-image:url('images/left.png'); background-position:right; background-repeat:no-repeat; }
+
+#content h1.searchresult { margin-left:0px; margin-top:0px; }
+#content h2.searchresult { margin-left:30px; }
+#content p.searchresult { margin-left:40px; }
+
+#content #vcard { margin-left:30px; padding:10px; border:1px solid black; }
+#content #vcard img { float:right; }
+#content #vcard h1 { margin:0px; padding:0px; margin-bottom:0px; }
+#content #vcard p.status { margin-left:0px; font-weight:bold; margin-top:5px; }
+#content #vcard table { margin-left:0px;
+                        voice-family: "\"}\""; voice-family: inherit;
+                        width:99%; }
+html>body #content #vcard table { width:99%;  }
+
+#content #vcard tr { vertical-align:bottom; }
+#content #vcard .address { margin-left:0px; font-weight:bold; margin-top:5px; font-size:10pt; }
+#content #vcard .contact { padding:0px; text-align:right; vertical-align:bottom; font-size:10pt; }
+
+/* forms */
+
+#content td.label { font-size:10pt; font-weight:bold; text-align:right; }
+
+/* footer */
+
+#footer { width:100%; text-align:right; padding:0px;
+          font-family:arial,helvetica,sans-serif; font-size:9pt; font-weight:normal; 
+          color:#ffffff; background-color:#6f6a6e; }
+#footer p { padding:3px; margin:0px; }
+#footer p a { color:#b0b0b0; text-decoration:none; }
+#footer p a:hover { color:#db791a; text-decoration:underline; }

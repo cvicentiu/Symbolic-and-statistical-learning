@@ -1,0 +1,77 @@
+/* Table Classes */
+TABLE.datagrid {
+	background-color: #666666;
+}
+
+TABLE.datagrid TD {
+	padding: 3px;
+}
+
+TABLE.datagrid TR.title_row TH {
+	font-weight: bold;
+	background-color: #666666;
+	font-size: 10px;
+	color: #dddddd;
+}
+
+TABLE.datagrid TR.title_row TH.sorted {
+	background-color: #999999;
+}
+
+TABLE.datagrid TR.title_row {
+	background-color: #D1F0FF;
+}
+
+TABLE.datagrid TR.action_row {
+	background-color: #D1F0FF;
+}
+
+
+TABLE.datagrid TR.title_row A {
+	color: white;
+}
+
+TABLE.datagrid TR.data_row TD {
+	vertical-align: top;
+	background-color: white;
+}
+
+TABLE.datagrid TR.data_row TD IMG{
+	border: none;
+}
+
+TABLE.datagrid TR.data_row TD.action {
+	vertical-align: middle;
+	text-align: center;
+}
+
+TABLE.datagrid TR.title_row TD A {
+	color: black;
+}
+
+/* Type Classes*/
+TABLE.datagrid TR.data_row TD.currency
+{
+	text-align: right;
+}
+
+TABLE.datagrid TR.data_row TD.js_action {
+	cursor: hand;
+}
+
+TABLE.datagrid TR.data_row TD.boolean
+{
+	vertical-align: middle;
+	text-align: center;
+}
+
+TABLE.datagrid TR.data_row TD.number
+{
+	text-align: right;
+}
+
+TABLE.datagrid TR.data_row TD.image
+{
+	vertical-align: middle;
+	text-align: center;
+}

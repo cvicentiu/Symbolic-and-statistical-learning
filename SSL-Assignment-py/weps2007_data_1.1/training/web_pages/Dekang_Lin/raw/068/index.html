@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+<html>
+<head>
+	<title>Events Calendar</title>
+	<link rel="stylesheet" type="text/css" href="http://cs.stanford.edu/common/styles/cs.css" />
+	<link rel="stylesheet" type="text/css" media="print" href="http://cs.stanford.edu/common/styles/print.css" />
+	<!--Comment line to allow pmwiki to inject things into head-->
+	<!--HTMLHeader-->
+</head>
+
+<!-- Note that the following link is relative, so that it will work in IE
+     when the user is pointed to http://cs and http://cs.stanford.edu
+-->
+
+<!--[if lte IE 6]>
+<style type="text/css">
+   body { behavior:url("/common/styles/csshover.htc"); }
+</style>
+<![endif]-->
+
+
+<body>
+
+<!-- phpdigExclude -->
+
+<script type="text/javascript" src="http://cs.stanford.edu/common/scripts/functions.js"></script>
+
+<div id="cs-title">
+
+<!--
+<div id="cs-toplinks">
+	<a href="http://cs.stanford.edu/">CS Home</a>
+	<br /><a href="http://cs.stanford.edu/Admissions" >Admissions</a>
+	<br /><a href="http://cs.stanford.edu/Courses">Courses</a>
+	<br /><a href="http://cs.stanford.edu/research">Research</a>
+</div>
+-->
+
+<div id="cs-logo">
+	<a href="http://cs.stanford.edu"><img id="cs-logo-screen" align="left" src="http://cs.stanford.edu/common/images/CS_black.png" alt="Stanford Computer Science" border="0" /><img id="cs-logo-print" align="left" src="http://cs.stanford.edu/common/images/CS_orig.png" alt="Stanford Computer Science" border="0" /></a>
+</div>
+
+<div id="cs-searchbox">
+		<form method="get" action="http://cs.stanford.edu/phpdig">
+		<input type="text" name="query_string" size="15" maxlength="100" value="" />&nbsp;<input type="submit" name="sa" value="Search" />
+		</form>
+		</div>
+
+
+<div id="cs-topmenu">
+<ul>
+<li><a href="http://cs.stanford.edu/info">About</a>
+	<ul>
+		<li><a href="http://cs.stanford.edu/info">About the Department</a></li>
+		<li><a href="http://cs.stanford.edu/info/contact">Contact Info</a></li>
+		<li><a href="http://cs.stanford.edu/info/jobs">Jobs</a></li>
+		<li><a href="http://cs.stanford.edu/wiki/gates-internal">Gates Internal</a></li>
+		<li><a href="http://cs.stanford.edu/forum">Computer Forum</a></li>
+		<li><a href="http://cs.stanford.edu/phpdig/">Search</a></li>
+	</ul>
+</li>
+<li><a href="http://cs.stanford.edu/calendar/">Events</a>
+	<ul>
+		<li><a href="http://cs.stanford.edu/calendar/">Calendar</a></li>
+		<li><a href="http://cs.stanford.edu/info/announce">Announcements</a></li>
+		<li><a href="http://cs.stanford.edu/News/">Newsletter</a></li>
+	</ul>
+</li>
+<li><a href="http://cs.stanford.edu/People/">People</a>
+	<ul>
+		<li><a href="http://cs.stanford.edu/People/faculty">Faculty</a></li>
+		<li><a href="http://cs.stanford.edu/">Students...</a>
+			<ul>
+				<li><a href="http://cs.stanford.edu/People/undergraduate_students">Undergrads</a></li>
+				<li><a href="http://cs.stanford.edu/People/masters_students">Masters</a></li>
+				<li><a href="http://cs.stanford.edu/People/phd_students">PhDs</a></li>
+			</ul>		
+		</li>
+		<li><a href="http://cs.stanford.edu/">Alumni...</a>
+			<ul>
+				<li><a href="http://cs.stanford.edu/People/undergraduate_alumni">Undergrads</a></li>
+				<li><a href="http://cs.stanford.edu/People/masters_alumni">Masters</a></li>
+				<li><a href="http://cs.stanford.edu/People/phd_alumni">PhDs</a></li>
+			</ul>		
+		</li>
+		<li><a href="http://cs.stanford.edu/People/staff">Staff</a></li>
+		<li><a href="http://cs.stanford.edu/info/jobs">Jobs</a></li>
+	</ul>
+</li>
+<li><a href="http://cs.stanford.edu/education">Education</a>
+	<ul>
+		<li><a href="http://cs.stanford.edu/admissions">Admissions...</a>
+			<ul>
+			<li><a href="http://cs.stanford.edu/wiki/admissions/Main/ContactInformation">Contact</a></li>
+			<li><a href="http://cs.stanford.edu/wiki/admissions/Applying/Deadlines">Deadlines</a></li>
+			<li><a href="http://cs.stanford.edu/admissions/faq">FAQs</a></li>
+			</ul>
+		</li>
+		<li><a href="http://cs.stanford.edu/courses">Courses</a></li>
+		<li><a href="http://cs.stanford.edu/degrees/undergrad">Undergraduate</a></li>
+		<li><a href="http://cs.stanford.edu/degrees/mscs">Masters</a></li>
+		<li><a href="http://cs.stanford.edu/degrees/phd.html">PhD</a></li>
+	</ul>
+</li>
+<li><a href="http://cs.stanford.edu/research">Research</a>
+	<ul>
+		<li><a href="http://cs.stanford.edu/research/spotlight">Project Spotlights</a></li>
+		<li><a href="http://cs.stanford.edu/research">Research Areas</a></li>
+		<li><a href="http://cs.stanford.edu/research/faculty">Faculty Profiles</a></li>
+		<li><a href="http://library.stanford.edu/depts/mathcs/research_help/guides/techreports.html">Publications</a></li>
+	</ul>
+</li>
+<li><a href="http://cs.stanford.edu/tools">Tools</a>
+	<ul>
+		<li><a href="http://cs.stanford.edu/pedit">Pedit</a></li>
+		<li><a href="http://cs.stanford.edu/medit">Medit</a></li>
+		<li><a href="http://cs.stanford.edu/spam">Spam Filter</a></li>
+		<li><a href="http://cf.stanford.edu/ip">Register Computer</a></li>
+		<li><a href="http://cs.stanford.edu/csid">Apply for CS ID</a></li>
+		<li><a href="http://cf.stanford.edu/status">System Status</a></li>
+	</ul>
+</li>
+<li><a href="http://cf.stanford.edu/help">Help</a>
+	<ul>
+		<li><a href="http://cf.stanford.edu/">Computer Facilities</a></li>
+		<li><a href="http://cf.stanford.edu/ip">Register Computer</a></li>
+		<li><a href="http://cs.stanford.edu/csid">Apply for CS ID</a></li>
+		<li><a href="http://cs.stanford.edu/doc">Online Documentation</a></li>
+		<li><a href="http://cf.stanford.edu/help">Contact</a></li>
+	</ul>
+</li>
+<!--
+<li><a href="http://cs.stanford.edu/">Login</a></li>
+-->
+</ul>
+
+</div><!-- topmenu -->
+
+<div id="cs-topshadow"></div>
+</div><!-- title -->
+
+
+<!-- phpdigInclude -->
+<div id="body">
+
+<div class="calendar">		<script type="text/javascript">			function popUp(URL) {			day = new Date();			id = day.getTime();			eval("page" + id + " = window.open(URL, '" + id + "', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=1,width=500,height=500');");			}			</script>		<table width="580" border="0" cellpadding="3" cellspacing="1">							<tr height="30">								<td valign="top">										<h3>Event Details</h3>								</td>								<td valign="top" align="right">								<a href="javascript:popUp('http://forum.stanford.edu/events/calendar/sendevent.php?id=886');"><img src="http://forum.stanford.edu/graphics/email.gif" border=0> email article</a>								View 
+<a href="http://www-cs.stanford.edu/calendar/week.php?calYear=2005&amp;calMonth=03&amp;calDay=09">Week</a> :: 
+<a href="http://www-cs.stanford.edu/calendar/month.php?calYear=2005&amp;calMonth=03">Month</a>
+								</td>							</tr>						</table>						<br>	<table width="580" border="0" cellpadding="3" cellspacing="1" bgcolor="#a1a5a9">							<tr>								<td align="left" valign="top" bgcolor="#E2E2E2" width="75"><font size="2" ><b>Wednesday<br>					03.09.2005</b></font></td>								<td valign="top" align="left" bgcolor="#F1F1F1" width="75">16:30 - 17:30<br>										<a href="http://campus-map.stanford.edu/campus_map/results.jsp?bldg=460&dept=&addr=">Bldg. 460, Rm. 200-205</a><br>									</font></td>								<td valign="top" align="left" bgcolor="#F1F1F1" width="300"><b><a href="http://nlp.stanford.edu/events.shtml">NLaSP</a> - Colloquium</b><br>										<a href="http://www.cs.ualberta.ca/~lindek/">Dekang Lin</a>,  Professor, Department of Computing Science,  <a href="http://www.cs.ualberta.ca">University of Alberta</a> &#151; <i> <a href="http://nlp.stanford.edu/nlaspAbs/lin.shtml">Unsupervised Learning from Text</a></i><br>									</td>							</tr>							<tr>								<td align="left" valign="top" bgcolor="#FFFFFF" width="157" colspan="2"></td>								<td valign="top" align="left" bgcolor="#FFFFFF" colspan="1"><p>Text is arguably the richest repository of human knowledge. Two  approaches have commonly been adopted in knowledge acquisition from  text. One is to define specific patterns and extract instances matching  these patterns from a text collection. This has been used to find  relationships between words, such as is-a and part-whole. Another  approach is based on indirect associations between words in text, as  exemplified by many methods for computing word similarity. I will  present several extensions and generalizations of the previous algorithms  and show that seemingly deep linguistic or world knowledge may be  acquired with superficial statistics.</p>					</td>				</tr>	</table></div></div>
+</body>
+</html>

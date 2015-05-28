@@ -1,0 +1,559 @@
+<style>
+.note-header-text {font-family: Times, Times New Roman, serif;
+		color:#ff0000; font-size: .95em;
+		margin-left: .75em; margin-right: .75em;}
+</style>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<LINK REL=STYLESHEET TYPE="text/css" HREF="http://widit.slis.indiana.edu/irpub/KDD/2001/css/dl.css">
+<title>KDD: KDD '01, DIRT @SBT@discovery of inference ...</title>
+<style type="text/css"><!--
+ body {margin-left: 0em; margin-top: 0}
+ a:link {text-decoration: underline; 	Color: #006699;}
+ a:visited { color: #990033; text-decoration: underline;}
+ a:hover {color: red; text-decoration: none}
+ a.dLink1:link {color:#336699}
+ a.dLink1:visited {color:#666666}
+	a.isblack:link {text-decoration: underline; 	Color: #000000;}
+ a.isblack:visited { color: #000000; text-decoration: underline;}
+ a.isblack:hover {color: #000000; text-decoration: none}
+ h1 {font-size: 140%; margin-bottom: 0}
+	ul {margin-top: .25em; list-style-type: disc}
+	ol {margin-top: .25em;}
+	li {padding-bottom: .25em}
+ h2 {color: white; background-color: #069;
+ font-size: 100%; padding-left: 1em;
+		margin: 0}
+	h3 {color: black; background-color: yellow;
+ 	font-size: 100%;
+		margin: 0}
+	 h4 {color: black; background-color: #99c5e8;
+ font-size: 100%;
+		margin: 0}
+ hr {color: #39176d;}
+ form {margin-top: 10}
+	a {text-decoration: none; }
+	input {font-size: 1em;}
+	.chevron {color: #ff0000;}
+	.light-blue {color:#336699;}
+	.black {color:#000000;}
+	/* ### standard text styles, smallest to largest ### */
+	.footer-link-text {font-family: Arial, Helvetica, sans-serif;
+		color:#336699; font-size: .75em; line-height: 1.33em;
+		text-indent: -.75 em; margin-left: 2em; margin-right: .75em;}
+	.footer-copy-text {font-family: Arial, Helvetica, sans-serif;
+		color:#000000; font-size: .75em; line-height: 1.3em;
+		margin-left: .75em; margin-right: .75em;}
+	.small-link-text {font-family: Arial, Helvetica, sans-serif;
+		color:#000000; font-size: .83em; padding-bottom : 2px;
+	 	padding-top : 2px;}
+	.smaller-text {font-family: Arial, Helvetica, sans-serif;
+		color:#000000; font-size: .75em;}
+	.small-text {font-family: Arial, Helvetica, sans-serif;
+		color:#000000; font-size: .83em;}
+	.medium-text {font-family: Arial, Helvetica, sans-serif;
+		color:#000000; font-size: 1em;}
+	.mediumb-text {font-family: Arial, Helvetica, sans-serif;
+		color:#000000; font-size: 1em; font-weight: bold;}
+	.large-text {font-family: Arial, Helvetica, sans-serif;
+		color:#000000; font-size: 1.3em;}
+	.list-link-text {font-family: Arial, Helvetica, sans-serif;
+		color:#336699; font-size: .83em; line-height: 1.3em;}
+	.list-link-btext {font-family: Arial, Helvetica, sans-serif;
+		color:#000000; font-size: .83em; line-height: 1.3em;}
+	.searchbox-text {font-family: Arial, Helvetica, sans-serif;
+		color:#000066; font-size: 1em; font-weight: bold;}
+	.footer-header-text {font-family: Arial, Helvetica, sans-serif;
+		color:#000066; font-size: 1em; font-weight: bold;
+		margin-left: .75em; margin-right: .75em;}
+	.medium-link-text {font-family: Arial, Helvetica, sans-serif;
+		color:#000066; font-size: 1em; font-weight: bold; line-height: 1em;
+		text-indent: -1.25em; margin-left: 2em; margin-right: .75em;}
+	.small-copy-text {font-family: Times, Times New Roman, serif;
+		color:#000066; font-size: .75em; line-height: 1.2em;
+		margin-left: .75em; margin-right: .75em;}
+	.medium-copy-text {font-family: Times, Times New Roman, serif;
+		color:#000066; font-size: 1em; line-height: 1.2em;
+		margin-left: .75em; margin-right: .75em;}
+	.large-copy-text {font-family: Times, Times New Roman, serif;
+		color:#000066; font-size: 1.3em; line-height: 1.5em;
+		margin-left: .75em; margin-right: .75em;}
+	.medium-header-text {font-family: Times, Times New Roman, serif;
+		color:#ff0000; font-size: 1em;
+		margin-left: .75em; margin-right: .75em;}
+	.large-header-text {font-family: Times, Times New Roman, serif;
+		color:#ff0000; font-size: 1.5em;
+		margin-left: .75em; margin-right: .75em;}
+ --></style>
+<SCRIPT LANGUAGE="JavaScript">
+ /* <!-- Begin
+	if(document.layers || document.all) {
+	a = 1;
+	setInterval("Jump()", 10);
+	}
+	function Jump() {
+	a = a + 1;
+	//self.moveBy((Math.random() * a * 2 - a), (Math.random() * a * 2) - a);
+	}
+// End --> */
+</script>
+<script LANGUAGE=JAVASCRIPT TYPE="text/javascript" >
+<!--
+function _CF_onError(form_object, input_object, object_value, error_message)
+ {
+	alert(error_message);
+ 	return false;
+ }
+function _CF_hasValue(obj, obj_type)
+ {
+ if (obj_type == "TEXT" || obj_type == "PASSWORD")
+	{
+ 	if (obj.value.length == 0)
+ 		return false;
+ 	else
+ 		return true;
+ 	}
+ else if (obj_type == "SELECT")
+	{
+ for (i=0; i < obj.length; i++)
+	 	{
+		if (obj.options[i].selected)
+			return true;
+		}
+ 	return false;
+	}
+ else if (obj_type == "SINGLE_VALUE_RADIO" || obj_type == "SINGLE_VALUE_CHECKBOX")
+	{
+		if (obj.checked)
+			return true;
+		else
+ 		return false;
+	}
+ else if (obj_type == "RADIO" || obj_type == "CHECKBOX")
+	{
+ for (i=0; i < obj.length; i++)
+	 	{
+		if (obj[i].checked)
+			return true;
+		}
+ 	return false;
+	}
+	}
+function _CF_checkqiksearch(_CF_this)
+ {
+ if (!_CF_hasValue(_CF_this.query, "TEXT" ))
+ {
+ if (!_CF_onError(_CF_this, _CF_this.query, _CF_this.query.value, "Please enter your Search Criteria"))
+ {
+ return false;
+ }
+ }
+ return true;
+ }
+//-->
+</script>
+</head>
+<body bgcolor="#ffffff" onload="window.focus()">
+<div align="center">
+<a name="CIT"></a>
+<table border="0" width="85%" cellspacing="0" cellpadding="0">
+<tr>
+<td>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<col width="1%"><col width="99%">
+			</td>
+		</tr>
+		<tr>
+			<td height="6"><img src="blanks.gif" width=1 height=1 alt="" border="0"></td>
+		</tr>
+		<tr>
+			<td colspan="2" valign="top" height="1" background="http://widit.slis.indiana.edu/irpub/KDD/2001/images/horiz-bar-long.jpg"></td>
+		</tr>
+		<tr>
+			<td height="6"><img src="blanks.gif" width=1 height=1 alt="" border="0"></td>
+		</tr>
+		</table>
+</td>
+</tr>
+<tr>
+	<td colspan="3" valign="top" height="1" background="http://widit.slis.indiana.edu/irpub/KDD/2001/images/horiz-bar-long.jpg"></td>
+</tr>
+<tr>
+<td class="small-text">
+	<table border="0" width="100%" cellpadding="2">
+		<col width="1%">
+		<col width="8%">
+		<col width="91%">
+	<tr>
+		<td class="medium-text" colspan="3"><strong>DIRT @SBT@discovery of inference rules from text</strong></td>
+	</tr>
+			<tr valign="top">
+			</tr>
+			<tr valign="top">
+					<td class="small-text"><strong>Full text</strong></td>
+				<td class="smaller-text" colspan="2" >
+									 <A NAME="FullText" href="http://widit.slis.indiana.edu/irpub/KDD/2001/pdf47.pdf" target="_blank"><img src="pdf_logo.gif" width="16" height="16" alt="pdf format" border="0" hspace="1" align="texttop">Pdf</A>
+									 (485&nbsp;KB)
+				</td>
+			</tr>
+		<tr valign="top">
+			<td class="small-text"><strong>Source</strong></td>
+			<td class="small-text" colspan="2">
+														<SPAN class="mediumb-text">Conference on Knowledge Discovery in Data</span>
+																			<a href="http://widit.slis.indiana.edu/irpub/KDD/2001/toc.cfm?id=SERIES939&amp;type=series&amp;coll=GUIDE&amp;dl=ACM&amp;idx=SERIES939&amp;part=Proceedings&amp;WantType=Proceedings&amp;title=Conference%20on%20Knowledge%20Discovery%20in%20Data&amp;CFID=13720957&amp;CFTOKEN=832591" target="_self" class="small-link-text">archive</a><br>
+													<SPAN class="mediumb-text">Proceedings of the seventh ACM SIGKDD international conference on Knowledge discovery and data mining </span>
+										 								 <a href="http://widit.slis.indiana.edu/irpub/KDD/2001/toc.cfm?id=502512&amp;type=proceeding&amp;coll=GUIDE&amp;dl=ACM&amp;idx=SERIES939&amp;part=Proceedings&amp;WantType=Proceedings&amp;title=Conference%20on%20Knowledge%20Discovery%20in%20Data&amp;CFID=13720957&amp;CFTOKEN=832591" target="_self" class="small-link-text">table of contents</a><br>
+												<DIV class="small-text">
+													 San Francisco, California
+												</div>
+		<div class="medium-text">
+		</div>
+			<div class="small-text">
+				 Pages: 323 - 328&nbsp;&nbsp;
+			</div>
+				<div class="small-text">
+					Year of Publication:&nbsp;2001
+				</div>
+				<div class="small-text">
+					ISBN:1-58113-391-x
+				</div>
+			</td>
+		</tr>
+			<tr valign="top">
+				<td class="small-text">
+										 	<strong>Authors</strong>
+				</td>
+				<td colspan="2">
+				<div class="authors">
+					<table cellpadding="0" cellspacing="0">
+							<tr>
+								<td class="small-text">
+ 									<a href="http://widit.slis.indiana.edu/irpub/KDD/2001/results.cfm?query=author%3AP65297&amp;querydisp=author%3ADekang%20%20Lin&amp;coll=GUIDE&amp;dl=ACM&amp;CFID=13720957&amp;CFTOKEN=832591" target="_self">Dekang Lin</a>
+								</td>
+								<td class="small-text">
+										<small>&nbsp;University of Alberta, Edmonton, Alberta T6H 2E1 Canada</small>
+								</td>
+							</tr>
+							<tr>
+								<td class="small-text">
+ 									<a href="http://widit.slis.indiana.edu/irpub/KDD/2001/results.cfm?query=author%3AP339951&amp;querydisp=author%3APatrick%20%20Pantel&amp;coll=GUIDE&amp;dl=ACM&amp;CFID=13720957&amp;CFTOKEN=832591" target="_self">Patrick Pantel</a>
+								</td>
+								<td class="small-text">
+										<small>&nbsp;University of Alberta, Edmonton, Alberta T6H 2E1 Canada</small>
+								</td>
+							</tr>
+					</table>
+				</div>
+				</td>
+			</tr>
+				<tr valign="top">
+					<td class="small-text"><strong>Sponsors</strong></td>
+					<td>
+						<div class="sponsors">
+										<a href=" http://www.acm.org/sigmod/" target="sponsor" title="Sponsor">SIGMOD</a>:
+									 ACM Special Interest Group on Management of Data <br>
+									 	AAAI :
+									 American Association for Artificial Intelligence <br>
+						</div>
+					 </td>
+				</tr>
+					<tr valign="top">
+						<td class="small-text"><strong>Publisher</strong></td>
+						<td colspan="2">
+							<div class="publishers">
+									 	ACM Press &nbsp;
+										<small> New York, NY, USA </small>
+							</div>
+						</td>
+					</tr>
+		</table>
+</td>
+</tr>
+<tr>
+<td>
+<!-- third main table: main content START -->
+	<table border="0" width="100%" cellspacing="0" cellpadding="0">
+	<tr>
+		<td height="6"><img src="blanks.gif" width=1 height=1 alt="" border="0"></td>
+	</tr>
+	<tr>
+		<td colspan="4" valign="top" height="1" background="http://widit.slis.indiana.edu/irpub/KDD/2001/images/horiz-bar-long.jpg"></td>
+	</tr>
+	<tr>
+		<td height="6"><img src="blanks.gif" width=1 height=1 alt="" border="0"></td>
+	</tr>
+	<tr valign="top">
+	<!-- buttons -->
+		<td width="100%" colspan="4">
+	 <table border="0" cellspacing="0" cellpadding="0" width="100%">
+		<col width="22%">
+	 <col width="78%">
+		<tr>
+			<td class="small-text"><b>Additional Information:</b></td>
+			<td>
+			<p class="small-text">
+					<a href="cite47.htm#abstract">abstract</a>&nbsp;&nbsp;
+					<a href="cite47.htm#references">references</a>&nbsp;&nbsp;
+						<a href="cite47.htm#collab">collaborative colleagues</a>&nbsp;&nbsp;
+					<a href="cite47.htm#peers">peer to peer</a>&nbsp;&nbsp;
+				</p>
+			</td>
+		</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td height="6"><img src="blanks.gif" width=1 height=1 alt="" border="0"></td>
+	</tr>
+	<tr valign="top">
+	<!-- buttons -->
+		<form name="popbinder">
+		<td width="100%" colspan="4">
+		<table border="0" cellspacing="0" cellpadding="2" width="100%" >
+		 <col width="22%">
+		 <col width="78%">
+		 <tr valign="top">
+		 	<td class="small-text"><b>Tools and Actions:</b></td>
+			<td>
+				 <a href="https://portal.acm.org/poplogin.cfm?dl=ACM&coll=GUIDE&comp_id=COMPONENT032&want_href=ocr%5Fdiscuss%2Ecfm%3Fid%3D502559&CFID=13720957&CFTOKEN=832591" class="small-link-text">
+			Discussions</a>
+			&nbsp;&nbsp;
+			<a href="http://widit.slis.indiana.edu/irpub/KDD/2001/results.cfm?query=502559&amp;querydisp=Similar%20to%3A%20DIRT%20%40SBT%40discovery%20of%20inference%20rules%20from%20text&amp;coll=GUIDE&amp;dl=ACM&amp;CFID=13720957&amp;CFTOKEN=832591" target="_self" class="small-link-text">Find similar Articles</a>&nbsp;&nbsp;
+			<a href="http://www.reviews.com/reviewer/quickreview/frameset_toplevel.cfm?bib_id=502559" target="reviews" class="small-link-text">Review this Article</a>&nbsp;&nbsp;
+			 	<br><a href="cite47.htm#" onClick="window.alert('To use this Feature, you must login with your personal ACM Web Account.');" class="small-link-text">
+				Save this Article to a Binder</a><img src="blanks.gif" border="0" name="saved">
+			&nbsp;&nbsp;
+			<a href="cite47.htm#" onClick="window.open('popBibTex.cfm?id=502559&ids=SERIES939.502512.502559&types=series.proceeding.article&reqtype=article&coll=GUIDE&dl=ACM&CFID=13720957&CFTOKEN=832591','BibTex','width=800,height=100,top=100,left=100,scrollbars=Yes,resizable=yes');" class="small-link-text">
+			Display in BibTex Format</a>
+			&nbsp;&nbsp;
+			</td>
+		</tr>
+		<tr>
+			<td height="10"><img src="blanks.gif" width=1 height=1 alt="" border="0"></td>
+		</tr>
+		<tr valign="top">
+			<td class="small-text"><b>DOI Bookmark:</b></td>
+			<td class="small-text">
+				<small>Use this link to bookmark this Article:&nbsp;</small><a href="http://doi.acm.org/10.1145/502512.502559">http://doi.acm.org/10.1145/502512.502559</a><br><small><a href="http://www.doi.org/">What is a DOI?</a></small>
+			</td>
+		</tr>
+		</table>
+		</td>
+		</form>
+	</tr>
+	<tr>
+		<td height="6"><img src="blanks.gif" width=1 height=1 alt="" border="0"></td>
+	</tr>
+	<tr>
+		<td colspan="4" valign="top" height="1" background="http://widit.slis.indiana.edu/irpub/KDD/2001/images/horiz-bar-long.jpg"></td>
+	</tr>
+	<tr>
+		<td height="6"><img src="blanks.gif" width=1 height=1 alt="" border="0"></td>
+	</tr>
+	</table>
+<!-- third main table: main content END -->
+		 	<div class="abstract">
+			</div>
+			<br>
+			<div class="abstract">
+			<A HREF="cite47.htm#CIT"><img name="top" src="arrowu.gif" hspace="10" border="0"></A><SPAN class=heading><A NAME="abstract">ABSTRACT</A></span>
+				<p class="abstract">
+				 In this paper, we propose an unsupervised method for discovering inference rules from text, such as "<i>X is author of Y &ap; X wrote Y</i>", "<i>X solved Y &ap; X found a solution to Y</i>", and "<i>X caused Y &ap; Y is triggered by X</i>". Inference rules are extremely important in many fields such as natural language processing, information retrieval, and artificial intelligence in general. Our algorithm is based on an extended version of Harris' Distributional Hypothesis, which states that words that occurred in the same contexts tend to be similar. Instead of using this hypothesis on words, we apply it to paths in the dependency trees of a parsed corpus.
+				</p>
+			</div>
+			<br>
+			<div class="abstract">
+			<A HREF="cite47.htm#CIT"><img name="top" src="arrowu.gif" hspace="10" border="0"></A><SPAN class=heading><A NAME="references">REFERENCES</A></span>
+			<p class="abstract"><font color="Red">Note: OCR errors may be found in this Reference List extracted from the full text article. ACM has opted to expose the complete List rather than only correct and linked references.</font></p>
+				<p class="abstract">
+				 1&nbsp;&nbsp;
+		 			 <a href="http://widit.slis.indiana.edu/irpub/KDD/2001/citation.cfm?id=312670&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=13720957&amp;CFTOKEN=832591">
+				 Peter G. Anick , Suresh Tipirneni, The paraphrase search assistant: terminological feedback for iterative information seeking, Proceedings of the 22nd annual international ACM SIGIR conference on Research and development in information retrieval, p.153-159, August 15-19, 1999, Berkeley, California, United States
+				 </a>
+				</p>
+				<p class="abstract">
+				 2&nbsp;&nbsp;
+		 			 <a href="http://widit.slis.indiana.edu/irpub/KDD/2001/citation.cfm?id=307031&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=13720957&amp;CFTOKEN=832591">
+				 A. T. Arampatzis , T. Tsoris , C. H. A. Koster , Th. P. Van Der Weide, Phase-based information retrieval, Information Processing and Management: an International Journal, v.34 n.6, p.693-707, Nov. 1998
+				 </a>
+				</p>
+				<p class="abstract">
+				 3&nbsp;&nbsp;
+				 Barzitay, R., McKeewn, K., and Elhadad, M. 1999. Information Fusion in the Context of Multi-Document Summarization. In Proceedings of ACL-99. College Park, Maryland.
+				</p>
+				<p class="abstract">
+				 4&nbsp;&nbsp;
+				 Dras, M. 1999. A meta-level Grammar: Redefining Synchronous TAGs for Translation and Paraphrase. In Proceedings of ACL-99. pp. 80-97. College Park, Maryland.
+				</p>
+				<p class="abstract">
+				 5&nbsp;&nbsp;
+				 Feldman, R., Fresko, M., Kinar, Y., Lindell, Y., Liphstat, O., Rajman, M., Schler, Y., and Zamir, O. 1998. Text Mining at the Term Level. In Proceedings of the 2nd European Symposiura on Principles of Data Mining and Knowledge Discovery. pp. 65-73. Nantes, France.
+				</p>
+				<p class="abstract">
+				 6&nbsp;&nbsp;
+		 			 <a href="http://widit.slis.indiana.edu/irpub/KDD/2001/citation.cfm?id=295728&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=13720957&amp;CFTOKEN=832591">
+				 Udo Hahn , Klemens Schnattinger, Towards text knowledge engineering, Proceedings of the fifteenth national/tenth conference on Artificial intelligence/Innovative applications of artificial intelligence, p.524-531, July 1998, Madison, Wisconsin, United States
+				 </a>
+				</p>
+				<p class="abstract">
+				 7&nbsp;&nbsp;
+				 Harris, Z. 1985. Distributional Structure. In: Katz, J. J. (ed.) The Philosophy of Linguistics. New York: Oxford University Press. pp. 26-47.
+				</p>
+				<p class="abstract">
+				 8&nbsp;&nbsp;
+				 Hays, D. 1964. Dependency Theory: A Formalism and Some Observations. Language, 40:511-525.
+				</p>
+				<p class="abstract">
+				 9&nbsp;&nbsp;
+				 Hearst, M. 1992. Automatic Acquisition of Hyponyms from Large Text Corpora. In Proceedings of A CL-92. Nantes, France.
+				</p>
+				<p class="abstract">
+				 10&nbsp;&nbsp;
+				 Hindle, D. 1990. Noun Classification from Predicate-Argument Structures. In Proceedings of ACL-90. pp. 268-275. Pittsburgh.
+				</p>
+				<p class="abstract">
+				 11&nbsp;&nbsp;
+				 Iordanskaja, L, Kittredge, R., and Polguere, A. 1991. Natural Language Generation in Artificial Intelligence and Computational Linguistics. Kluwer. Boston, MA.
+				</p>
+				<p class="abstract">
+				 12&nbsp;&nbsp;
+				 Jacquemin, C., Klavans, J. L., and Tzoukermann, E. 1999. NLP for Term Variant Extraction: A Synergy of Morphology, Lexicon, and Syntax. Natural Language Information Retrieval, T. Strzalkowski, editor, pp. 25-74. Kluwer. Boston, MA.
+				</p>
+				<p class="abstract">
+				 13&nbsp;&nbsp;
+		 			 <a href="http://widit.slis.indiana.edu/irpub/KDD/2001/citation.cfm?id=312186&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=13720957&amp;CFTOKEN=832591">
+				 Bjornar Larsen , Chinatsu Aone, Fast and effective text mining using linear-time document clustering, Proceedings of the fifth ACM SIGKDD international conference on Knowledge discovery and data mining, p.16-22, August 15-18, 1999, San Diego, California, United States
+				 </a>
+				</p>
+				<p class="abstract">
+				 14&nbsp;&nbsp;
+		 			 <a href="http://widit.slis.indiana.edu/irpub/KDD/2001/citation.cfm?id=291001&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=13720957&amp;CFTOKEN=832591">
+				 Shian-Hua Lin , Chi-Sheng Shih , Meng Chang Chen , Jan-Ming Ho , Ming-Tat Ko , Yueh-Ming Huang, Extracting classification knowledge of Internet documents with mining term associations: a semantic approach, Proceedings of the 21st annual international ACM SIGIR conference on Research and development in information retrieval, p.241-249, August 24-28, 1998, Melbourne, Australia
+				 </a>
+				</p>
+				<p class="abstract">
+				 15&nbsp;&nbsp;
+				 Lin, D. 1998. Extracting Collocations from Text Corpora. Workshop on Computational Terminology. pp. 57-63. Montreal, Canada.
+				</p>
+				<p class="abstract">
+				 16&nbsp;&nbsp;
+				 Lin, D. 1993. Principle-Based Parsing Without OverGeneration. In Proceedings of A CL-93. pp. 112-120. Columbus, OH.
+				</p>
+				<p class="abstract">
+				 17&nbsp;&nbsp;
+		 			 <a href="http://widit.slis.indiana.edu/irpub/KDD/2001/citation.cfm?id=347123&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=13720957&amp;CFTOKEN=832591">
+				 Andrew McCallum , Kamal Nigam , Lyle H. Ungar, Efficient clustering of high-dimensional data sets with application to reference matching, Proceedings of the sixth ACM SIGKDD international conference on Knowledge discovery and data mining, p.169-178, August 20-23, 2000, Boston, Massachusetts, United States
+				 </a>
+				</p>
+				<p class="abstract">
+				 18&nbsp;&nbsp;
+				 Mercer, M. M. and Shaked, V. 1988. Strategies for Effective Paraphrasing. In Proceedings of COLING-88. pp. 431-436 Budapest.
+				</p>
+				<p class="abstract">
+				 19&nbsp;&nbsp;
+				 Pereira, F., Tishby, N., and Lee, L. 1993. Distributional Clustering of English Words. In Proceedings of ACL-93. pp. 183-190. Columbus, Ohio.
+				</p>
+				<p class="abstract">
+				 20&nbsp;&nbsp;
+				 Rajman, M. and Besancon, R. 1997. Text Mining: Natural Language Techniques and Text Mining Applications. In Proceedings of the seventh IFIP 2.6 Working Conference on Database Semantics (DS-7).
+				</p>
+				<p class="abstract">
+				 21&nbsp;&nbsp;
+		 			 <a href="http://widit.slis.indiana.edu/irpub/KDD/2001/citation.cfm?id=266710&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=13720957&amp;CFTOKEN=832591">
+				 Stephen D. Richardson, Determining similarity and inferring relations in a lexical knowledge base, City University of New York, New York, NY, 1997
+				 </a>
+				</p>
+				<p class="abstract">
+				 22&nbsp;&nbsp;
+		 			 <a href="http://widit.slis.indiana.edu/irpub/KDD/2001/citation.cfm?id=220797&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=13720957&amp;CFTOKEN=832591">
+				 Jacques Pierre Robin, Revision-based generation of natural language summaries providing historical background: corpus-based analysis, design, implementation and evaluation, Columbia University, New York, NY, 1995
+				 </a>
+				</p>
+				<p class="abstract">
+				 23&nbsp;&nbsp;
+				 Sampson, G. 1995. English for the Computer - The SUSANNE Corpus and Analytic Scheme. Clarendon Press. Oxford, England.
+				</p>
+				<p class="abstract">
+				 24&nbsp;&nbsp;
+				 Sparek Jones, K. and Tait, J. 1. 1984. Automatic Search Term Variant Generation. Journal of Documentation, 40(1):50-66.
+				</p>
+			</div>
+			<div class="abstract">
+				<A HREF="cite47.htm#CIT"><img name="top" src="arrowu.gif" hspace="10" border="0"></A><SPAN class=heading><A NAME="collab">Collaborative Colleagues:</A></span>
+				<table border="0" style="margin-left: 2em" cellpadding="2">
+						<tr valign="top"><td><div class="abstract"><a href="http://widit.slis.indiana.edu/irpub/KDD/2001/results.cfm?query=%2Bauthor%3AP65297&amp;querydisp=author%3ADekang%20Lin&amp;coll=GUIDE&amp;dl=GUIDE&amp;CFID=13720957&amp;CFTOKEN=832591" target="_self">Dekang Lin</a>:</div></td><td>
+						<div class="abstract"><a href="http://widit.slis.indiana.edu/irpub/KDD/2001/results.cfm?query=%2Bauthor%3AP31561%20author%3AP65297&amp;querydisp=author%3ABonnie%20J%2E%20Dorr&amp;coll=GUIDE&amp;dl=GUIDE&amp;CFID=13720957&amp;CFTOKEN=832591" target="_self">Bonnie J. Dorr</a></div>
+						<div class="abstract"><a href="http://widit.slis.indiana.edu/irpub/KDD/2001/results.cfm?query=%2Bauthor%3AP239198%20author%3AP65297&amp;querydisp=author%3ARandy%20Goebel&amp;coll=GUIDE&amp;dl=GUIDE&amp;CFID=13720957&amp;CFTOKEN=832591" target="_self">Randy Goebel</a></div>
+						<div class="abstract"><a href="http://widit.slis.indiana.edu/irpub/KDD/2001/results.cfm?query=%2Bauthor%3AP151696%20author%3AP65297&amp;querydisp=author%3AJye%2Dhoon%20Lee&amp;coll=GUIDE&amp;dl=GUIDE&amp;CFID=13720957&amp;CFTOKEN=832591" target="_self">Jye-hoon Lee</a></div>
+						<div class="abstract"><a href="http://widit.slis.indiana.edu/irpub/KDD/2001/results.cfm?query=%2Bauthor%3AP97777%20author%3AP65297&amp;querydisp=author%3AGina%2DAnne%20Levow&amp;coll=GUIDE&amp;dl=GUIDE&amp;CFID=13720957&amp;CFTOKEN=832591" target="_self">Gina-Anne Levow</a></div>
+						<div class="abstract"><a href="http://widit.slis.indiana.edu/irpub/KDD/2001/results.cfm?query=%2Bauthor%3AP339951%20author%3AP65297&amp;querydisp=author%3APatrick%20Pantel&amp;coll=GUIDE&amp;dl=GUIDE&amp;CFID=13720957&amp;CFTOKEN=832591" target="_self">Patrick Pantel</a></div>
+						<div class="abstract"><a href="http://widit.slis.indiana.edu/irpub/KDD/2001/results.cfm?query=%2Bauthor%3AP271586%20author%3AP65297&amp;querydisp=author%3ASungki%20Suh&amp;coll=GUIDE&amp;dl=GUIDE&amp;CFID=13720957&amp;CFTOKEN=832591" target="_self">Sungki Suh</a></div>
+						</td>
+						</tr>
+						<tr valign="top"><td><div class="abstract"><a href="http://widit.slis.indiana.edu/irpub/KDD/2001/results.cfm?query=%2Bauthor%3AP339951&amp;querydisp=author%3APatrick%20Pantel&amp;coll=GUIDE&amp;dl=GUIDE&amp;CFID=13720957&amp;CFTOKEN=832591" target="_self">Patrick Pantel</a>:</div></td><td>
+						<div class="abstract"><a href="http://widit.slis.indiana.edu/irpub/KDD/2001/results.cfm?query=%2Bauthor%3AP65297%20author%3AP339951&amp;querydisp=author%3ADekang%20Lin&amp;coll=GUIDE&amp;dl=GUIDE&amp;CFID=13720957&amp;CFTOKEN=832591" target="_self">Dekang Lin</a></div>
+						</td>
+						</tr>
+				</table>
+			</div>
+			<br>
+			<div class="abstract">
+				<A HREF="cite47.htm#CIT"><img name="top" src="arrowu.gif" hspace="10" border="0"></A><SPAN class=heading><A NAME="peers">Peer to Peer - Readers of this Article have also read:</cite></A></span>
+		<ul type="disc">
+			<li>
+				<A HREF="http://widit.slis.indiana.edu/irpub/KDD/2001/citation.cfm?id=166086&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=13720957&amp;CFTOKEN=832591" target="_self">		 	 Constructing reality</a>
+				<br>
+					 <b>Proceedings of the 11th annual international conference on Systems documentation</b><br>
+					Douglas A. Powell
+					, &nbsp;Norman R. Ball
+					, &nbsp;Mansel W. Griffiths
+				<br>
+			<br>
+			</li>
+			<li>
+				<A HREF="http://widit.slis.indiana.edu/irpub/KDD/2001/citation.cfm?id=159731&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=13720957&amp;CFTOKEN=832591" target="_self">		 	 Inferring constraints from multiple snapshots</a>
+				<br>
+						<b>ACM Transactions on Graphics (TOG)</b>&nbsp;&nbsp;
+						<font size="-1">12,&nbsp;4</font><br>
+					David Kurlander
+					, &nbsp;Steven Feiner
+				<br>
+			<br>
+			</li>
+			<li>
+				<A HREF="http://widit.slis.indiana.edu/irpub/KDD/2001/citation.cfm?id=581405&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=13720957&amp;CFTOKEN=832591" target="_self">		 	 Distributed component technologies and their software engineering implications</a>
+				<br>
+					 <b>Proceedings of the 24th international conference on Software engineering</b><br>
+					Wolfgang Emmerich
+				<br>
+			<br>
+			</li>
+			<li>
+				<A HREF="http://widit.slis.indiana.edu/irpub/KDD/2001/citation.cfm?id=255524&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=13720957&amp;CFTOKEN=832591" target="_self">		 	 Toward a real-time Ada design methodology</a>
+				<br>
+					 <b>Proceedings of the conference on TRI-ADA '90</b><br>
+					Norman R. Howes
+				<br>
+			<br>
+			</li>
+			<li>
+				<A HREF="http://widit.slis.indiana.edu/irpub/KDD/2001/citation.cfm?id=255523&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=13720957&amp;CFTOKEN=832591" target="_self">		 	 Fashioning conceptual constructs in Ada</a>
+				<br>
+					 <b>Proceedings of the conference on TRI-ADA '90</b><br>
+					Robert C. Shock
+				<br>
+			<br>
+			</li>
+		</ul>
+		</div>
+<br>
+<DIV class=footer-copy-text align="center">
+</DIV>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html></html>

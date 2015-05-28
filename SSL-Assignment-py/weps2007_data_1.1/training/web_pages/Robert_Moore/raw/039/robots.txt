@@ -1,0 +1,9 @@
+# This user agent showed up in the logs during a heavy network overload...
+# see if we can block this robot (if it exists that is)
+User-agent: Javal 4.0
+Disallow: /
+
+User-agent: TurnitinBot
+Disallow: /
+User-agent: Gigabot 
+Disallow: /

@@ -1,0 +1,339 @@
+<!--
+	DESCRIPTION:
+
+	- '1', '2', '3' etc. at the end (no underscore) it denotes the main level position, e.g. 
+		'td.cMenu2' defines a class used in the second main menu pages, to wit 'Authors' and 
+		all it's descendents
+
+	- '_0' mean off, '_1' mean on, e.i. for anchor
+-->
+
+body.cBodyIndex {
+	background-color: #999999;
+	margin: 10px 10px 10px 10px;
+	scrollbar-face-color : #C9C9C9;
+	scrollbar-shadow-color : #C9C9C9;
+	scrollbar-highlight-color : #C9C9C9;
+	scrollbar-3dlight-color : #E0DEDE;
+	scrollbar-darkshadow-color : #9E9D9D;
+	scrollbar-track-color : #AFAFAF;
+	scrollbar-arrow-color : #333333;
+}
+
+.cMainFrame {
+	background-color: #fbfbfb;
+	border : 1px solid #383838;
+}
+
+
+<!-- ---------- -->
+<!-- Title belt -->
+<!-- ---------- -->
+
+td.cTitleBelt {
+	color: white;
+	background-color: #3A657D;
+}
+
+span.cQuickLogin {
+	color: #dddddd;
+	font-size: 10px;
+}
+
+input.cQuickLogin {
+	color: #94228B;
+	font-size: 10px;
+	font-weight: bold;
+	background-color: #EAE3C3;
+	border: 1px solid #333333;
+}
+
+a.cQuickLogin {
+	color: #9EC78D;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+
+<!-- --------- -->
+<!-- Main menu -->
+<!-- --------- -->
+
+table.cMenu {
+	background-color: #437272;
+	border-bottom: 1px solid #003A3E;
+}
+
+td.cMenu1 {
+	background-color: #417C99;
+	border-right: 1px solid #E5E5E5;
+}
+
+td.cMenu2 {
+	background-color: #4F7B83;
+	border-right: 1px solid #E5E5E5;
+}
+
+td.cMenu3 {
+	background-color: #437272;
+	border-right: 1px solid #E5E5E5;
+}
+
+td.cMenu4 {
+	background-color: #437272;
+}
+
+td.cMenu5 {
+	background-color: #437272;
+	border-left: 1px solid #E5E5E5;
+}
+
+a.cMenu {
+	color: #9EC78D;
+	font-size: 10px;
+}
+
+a.cMenu_0 {
+	color: white;
+	font-size: 10px;
+}
+
+a.cMenu_1 {
+	color: #fde482;
+	font-size: 10px;
+}
+
+span.cMenuBullet {
+	color: white;
+}
+
+
+<!-- --------- -->
+<!-- Work area -->
+<!-- --------- -->
+
+img.cWelcomeImg {
+	border: 1px solid #333333;
+}
+
+hr.cDiscrete {
+	color: #eeeeee;
+}
+
+<!-- Table -->
+
+table.cLstTable {
+	border: 1px solid #666666;
+}
+
+td.cLstTableHead1 {
+	font-size: 11px;
+	font-weight: bold;
+	color: #F8F8F8;
+	background-color: #417C99;
+}
+
+td.cLstTableHead2 {
+	font-size: 11px;
+	font-weight: bold;
+	color: #F8F8F8;
+	background-color: #4F7B83;
+}
+
+td.cLstTableHead3 {
+	font-size: 11px;
+	font-weight: bold;
+	color: #F8F8F8;
+	background-color: #437272;
+}
+
+a.cHeadLnk {
+	color: #F8F8F8;
+}
+
+td.cLstTableOdd {
+}
+
+td.cLstTableEven {
+	background-color: #F4F4F4;
+}
+
+td.cArticlesLstTitle {
+	background-color: #E7E7E7;
+}
+
+td.cArticlesLstAuthors {
+	border-bottom: 1px solid #AAAAAA;
+	background-color: #F4F4F4;
+}
+
+td.cArticlesLstImg {
+	border-right: 1px dashed #BBBBBB;
+	border-bottom: 1px solid #AAAAAA;
+	background-color: #EEEDED;
+}
+
+a.cArticleAuthor {
+	font-size: 9px;
+	color: #5889A1;
+}
+
+span.cHugeLetter {
+	font-size: 120px;
+	font-weight: bold;
+	color: #EEEEEE;
+}
+
+<!-- Forms -->
+
+table.cForm {
+	background-color: #F2F2F2;
+	border: 1px solid #bbbbbb;
+}
+
+td.cFormButtons {
+	background-color: #E4E4E4;
+	border-top: 1px dashed #bbbbbb;
+}
+
+td.cFormFieldName {
+	color: #444444;
+	font-weight: bold;
+}
+
+input.cForm {
+	color: #94228B;
+	font-size: 11px;
+	font-weight: bold;
+	background-color: white;
+	border: 1px solid #666666;
+}
+
+input.cFormS {
+	width: 80px;
+}
+
+input.cFormM {
+	width: 200px;
+}
+
+input.cFormL {
+	width: 400px;
+}
+
+select.cForm {
+	font-size: 11px;
+	background-color: white;
+	border: 1px solid #555555;
+}
+
+textarea.cForm {
+	font-size: 11px;
+	background-color: white;
+	border: 1px solid #555555;
+	width: 400px;
+	height: 80px;
+}
+
+input.cFormButton1 {
+	font-size: 10px;
+	font-weight: bold;
+	color: white;
+	background-color: #417C99;
+	border: 1px solid #333333;
+}
+
+input.cFormButton2 {
+	font-size: 10px;
+	font-weight: bold;
+	color: white;
+	background-color: #4F7B83;
+	border: 1px solid #333333;
+}
+
+input.cFormButton3 {
+	font-size: 10px;
+	font-weight: bold;
+	color: white;
+	background-color: #437272;
+	border: 1px solid #333333;
+}
+
+sup.cRequired {
+	font-size: 10px;
+	font-weight: bold;
+	color: #444444;
+}
+
+span.cFormFieldExample {
+	font-size: 9px;
+	color: #777777;
+}
+
+<!-- Other -->
+
+span.cPageTitle {
+	font-size: 13px;
+	font-weight: bold;
+	color: #938A4E;
+}
+
+span.cPageSubtitle {
+	font-size: 11px;
+	font-weight: bold;
+	color: #938A4E;
+}
+
+span.cH2 {
+	font-weight: bold;
+	font-size: 13px;
+	color: #858484;
+}
+
+table.cAuthorInfo {
+	background-color: #F4F4F4;
+	border: 1px solid #E0E0E0;
+}
+
+td.cAuthorInfoHeader {
+	background-color: #E8E8E8;
+	border: 1px solid #E8E8E8;
+}
+
+td.cAuthorInfoField {
+}
+
+td.cAuthorInfoValue {
+	font-weight: bold;
+	color: #444444;
+}
+
+<!-- ----------- -->
+<!-- Footer belt -->
+<!-- ----------- -->
+
+table.cFooterBelt {
+	background-color: #437272;
+	border-top: 1px solid #3C6565;
+}
+
+td.cFooterBelt {
+	color: white;
+}
+
+.cCopyrights {
+	color: white;
+	font-size: 9px;
+}
+
+a.cCopyrights {
+	font-weight: bold;
+	color: #9EC78D;
+	font-size: 9px;
+}
+
+
+<!-- ----- -->
+<!-- Other -->
+<!-- ----- -->
+

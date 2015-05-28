@@ -1,0 +1,969 @@
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- Calculate total documents returned -->
+ 
+ 
+ 
+ 
+
+
+
+
+<!-- templateok -->
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>cbs4denver.com: Search</title>
+<meta name="MSSmartTagsPreventParsing" content="TRUE" />
+<meta http-equiv="expires" content="-1" />
+<meta http-equiv=" pragma" content="no-cache" />
+<meta name="author" content="CBS" />
+<meta name="description" content="cbs4denver.com, the Web site for CBS4 (KCNC-TV) in Denver, Colorado, has the latest breaking news, video, Colorado news and Denver news. Watch CBS4 for the latest weather forecasts for Colorado's Front Range and the Rocky Mountains. CBS4 is the official television partner of the Denver Broncos. Watch CBS4 Sports for full coverage of the Denver Broncos, Colorado Avalanche, Colorado Rockies and Denver Nuggets. cbs4denver.com is the recipient of the 2005 Edward R. Murrow award for Best Web site." />
+<meta name="keywords" content="CBS4, KCNC, cbs4denver.com, Colorado, Denver, Colorado News, Denver News, Breaking News, CBS, Video, Blogs, Thornton, Aurora, Lakewood, Arvada, Boulder, Broomfield, Westminster, Castle Rock, Lone Tree, Highlands Ranch, Littleton, Fort Collins, Commerce City, Englewood, Jefferson County, Arapahoe County, Weld County, Larimer County, Morrison, Golden, Vail, Silverthorne, Greeley, Frisco, Aspen, Denver Broncos, Oprah Winfrey, Dr. Phil, Colorado Avalanche, Denver Nuggets, Walt DeHaven, Tim Wieland, Jim Benemann, Ed Greene, Larry Green, Jodi Brooks, Dr. Dave Hnida, Greg Moody, Jesse Sarles, Luan Akin, Marcia Neville, Vic Lombardi, Mike Shanahan, Jake Plummer, John Lynch, Bill Owens, John Hickenlooper, Tom Tancredo, Wayne Allard, Diana DeGette, Mark Udall, Cherry Creek, Clear Creek, Coors, Lockheed Martin, Qwest, Denver International Airport, Frontier Airlines, United Airlines, Estes Park, Glenwood Springs, Grand Junction, Greenwood Village, Idaho Springs, Loveland, Nederland, Northglenn, Rocky Mountain, Viacom" />
+<meta name="copyright" content="2006" />
+<script type="text/javascript" src="http://static.viacomlocalnetworks.com/js/cbs.js"></script>
+<script type="text/javascript" src="http://static.viacomlocalnetworks.com/js/ads.js"></script>
+<script type="text/javascript" src="http://static.viacomlocalnetworks.com/js/progLayout.js"></script>
+<link rel="stylesheet" type="text/css" href="http://static.viacomlocalnetworks.com/css/ypscreen.css" media="screen, projection" />
+
+<link href="http://cbs4denver.com/resources_rss.xml" rel="alternate" type="application/rss+xml" title="homepage rss" />
+<style type="text/css">
+ @import url("http://static.viacomlocalnetworks.com/css/local.css");
+ @import url("http://static.viacomlocalnetworks.com/css/search.css");
+ </style>
+<style type="text/css">
+/* station specific graphics */
+body {background: url(http://static.viacomlocalnetworks.com/kcbs/bg_blue/news_bgr.gif) top repeat-x #e6e6e6;}
+
+
+.block {
+ padding:10px;
+ background-color:#fff;
+ border:1px solid #DBDCDC;
+ margin-bottom:5px;
+ _height:1%;
+}
+.ap li {
+ line-height: 1.5em;
+ font-size: 1.1em;
+ list-style-type: disc;
+ margin-left: 14px;
+}
+h2 span {
+ font-size:0.6em;
+ font-weight:normal;
+ letter-spacing:0em;
+ }
+#right a:hover,
+#middle a:hover,
+#footer a:hover,
+#resultsbox a:hover {
+ text-decoration: underline;
+}
+.outer h2,
+body#search .searchleft h2,
+body#search .searchright h2 {
+ color:#666;
+ background:#fff url(http://static.viacomlocalnetworks.com/img/swatches.gif) 0px 0px no-repeat;
+ padding-left:15px;
+ margin-bottom:6px;
+ letter-spacing:-0.1em;
+ font-size:1.9em;
+ line-height:1.0em;
+ }
+/* = this counteracts a search-page only layout issue = */
+#search .outer {
+ border-left-color:#cedefa;
+ border-right-color:#cedefa;
+ }
+body#local .outer h2,
+body#search .searchleft h2,
+body#search .searchright h2 {
+ background:url(http://static.viacomlocalnetworks.com/img/swatches.gif) 0px 0px no-repeat;
+ }
+.nopadblock {
+ background-color:#fff;
+ border:1px solid #DBDCDC;
+ margin-bottom:5px;
+ }
+#searchbox {
+ width:75px;
+ margin:0 0 0 5px;
+ }
+
+</style>
+
+<script type="text/javascript">
+var SiteName = "kcnc.dayport.com";
+var VLNFlag = 0;
+var VLNParent = "";
+
+
+function LaunchSyndicateArticle(ArtId,template,CustId,ContId)
+{
+  var SiteRegExp = new RegExp('@' + SiteName.replace(/\//g,"\\/"),"gi");
+  var ArtString=ArtId.toString().replace(SiteRegExp,"");
+  var TemplateFile="";
+  var Customer_ID="";
+  var Contract_ID="";
+  var ParentFile="kcnc4player.htm";
+  var kWidth = 0;
+  var kHeight = 0;
+  var winName = "KCNCViewer";
+  var page;
+
+  if ((template != '') && (typeof template != "undefined"))
+  {
+     TemplateFile = '&tf='+template;
+     switch (template)
+     {
+        case "weatherviewer.tpl":
+          ParentFile = "";
+          kWidth = 470;
+          kHeight = 497;
+          winName = "KCNCWeatherViewer";
+          break;
+
+        case "kcncviewer_noads.tpl":
+          ParentFile = "kcnc4player_noads.htm";
+          break;
+
+        case "investigatesviewer.tpl":
+          ParentFile = "investigatesplayer.htm";
+          break;
+
+        case "healthviewer.tpl":
+          ParentFile = "healthplayer.htm";
+          break;
+		  
+        case "moodyviewer.tpl":
+          ParentFile = "moodyplayer.htm";
+          break;
+
+        case "wednesdayviewer.tpl":
+          ParentFile = "wednesdayplayer.htm";
+          break;
+
+        case "kobebryantviewer.tpl":
+          ParentFile = "kobebryantplayer.htm";
+          break;
+
+        case "rockyvideo.tpl":
+          ParentFile = "rockyvideoplayer.htm";
+          break;
+
+        case "c2004viewer.tpl":
+          ParentFile = "c2004player.htm";
+          break;
+		  
+		case "webcastviewer.tpl":
+          ParentFile = "webcastplayer.htm";
+          kHeight = 560;
+          break;
+     }
+  }
+  
+  if ((CustId != '') && (typeof CustId != "undefined"))
+  {
+    if (CustId.charAt(0) == "-")
+      Customer_ID = '&ExCust='+CustId.slice(1);
+    else      
+      Customer_ID = '&Customer_ID='+CustId;
+  }
+  
+  if ((ContId != '') && (typeof ContId != "undefined") && (ContId == "0"))
+    Contract_ID = '&NoAds=true';
+  else if ((ContId != '') && (typeof ContId != "undefined")) 
+    Contract_ID = '&Contract_ID='+ContId;
+  
+  if (ParentFile == "")
+    page = "http://kcnc.dayport.com/viewer/viewerpage.php?Art_ID=" + ArtString + TemplateFile + Customer_ID + Contract_ID;
+  else
+    page = "http://kcncimg.dayport.com/htm/"+ParentFile+"?Art_ID=" + ArtString + TemplateFile + Customer_ID + Contract_ID;
+
+  if (VLNFlag == 1)
+  {
+    if (VLNParent == "")
+       page = "http://vln.dayport.com/viewer/viewerpage.php?Refer=" + SiteName + "&Art_ID=" + ArtString + TemplateFile + Customer_ID + Contract_ID;
+    else
+       page = "http://vlnimg.dayport.com/htm/"+VLNParent+"?Refer=" + SiteName + "&Art_ID=" + ArtString + TemplateFile + Customer_ID + Contract_ID;
+  }
+
+  if (kWidth == 0)
+    kWidth = 620;  
+  
+  if (kHeight == 0) 
+    kHeight = 356;
+
+  var xPosition = screen.width/2-(kWidth/2);
+  var yPosition = screen.height/2-(kHeight/2);
+  var Params = "height=" + kHeight + ",width=" + kWidth + ",left=" + xPosition + ",top=" + yPosition + ",screenX=" + xPosition + ",screenY=" + yPosition;
+  //window.scrollTo(0,0);
+  var kWin=window.open(page,winName,Params); 
+  kWin.opener = self;
+  kWin.focus();
+
+}
+</script>
+</head>
+<body id="search" style="margin:0; padding:0;">
+<!-- START Insight XE-->
+
+<script language="javascript">content_headline='Search';content_section='search';</script>
+<script language="JavaScript">
+
+var if_Site_ID = "viacom";
+
+var if_sid="7";
+
+var if_protocol=window.location.protocol;
+
+
+var mep1="&amp;Division=CBS&amp;City=Denver&amp;Station_ID=KCNC&amp;Section="+content_section+"&amp;Headline="+content_headline;
+
+</script>
+
+<script language="javascript" src="http://a248.e.akamai.net/7/836/1132/102403/viacom.247realmedia.com/scripts/viacom_if.js">
+</script>
+<!-- END Insight XE-->
+<!--shared body here-->
+<!-- START Hitbox-->
+<script language="javascript">accID='DM5307037KAZ78EN3';</script>
+<script language="javascript">content_title='Search';content_group='/search;/cbs4denver.com/search;/cbs4denver.com/search';</script>
+<script language="javascript">
+//remove illegal characters 
+function hbxStrip(a) { 
+   a = a.split("|").join(""); 
+   a = a.split("&").join(""); 
+   a = a.split("'").join(""); 
+   a = a.split("#").join(""); 
+   a = a.split("$").join(""); 
+   a = a.split("%").join(""); 
+   a = a.split("^").join(""); 
+   a = a.split("*").join(""); 
+   a = a.split(":").join(""); 
+   a = a.split("~").join(""); 
+   a = a.split(";").join(""); 
+   a = a.split(" ").join("+"); 
+   return a; 
+} 
+</script>
+<!--WEBSIDESTORY CODE HBX1.0 (Universal)-->
+<!--COPYRIGHT 1997-2005 WEBSIDESTORY,INC. ALL RIGHTS RESERVED. U.S.PATENT No. 6,393,479B1. MORE INFO:http://websidestory.com/privacy-->
+<script language="javascript">
+var _hbEC=0,_hbE=new Array;function _hbEvent(a,b){b=_hbE[_hbEC++]=new Object();b._N=a;b._C=0;return b;}
+var hbx=_hbEvent("pv");hbx.vpc="HBX0100u";hbx.gn="ehg-viacom.hitbox.com";
+
+//BEGIN EDITABLE SECTION
+//CONFIGURATION VARIABLES
+hbx.acct=accID + ';DM5307034LFA78EN3;DM5507269ICE78EN3';//ACCOUNT NUMBER(S)
+hbx.pn=content_title;//PAGE NAME(S)
+hbx.mlc=content_group;//MULTI-LEVEL CONTENT CATEGORY
+hbx.pndef="title";//DEFAULT PAGE NAME
+hbx.ctdef="current";//DEFAULT CONTENT CATEGORY
+
+//OPTIONAL PAGE VARIABLES
+//ACTION SETTINGS
+hbx.fv="";//FORM VALIDATION MINIMUM ELEMENTS OR SUBMIT FUNCTION NAME
+hbx.lt="auto";//LINK TRACKING
+hbx.dlf="n";//DOWNLOAD FILTER
+hbx.dft="n";//DOWNLOAD FILE NAMING
+hbx.elf="n";//EXIT LINK FILTER
+
+//SEGMENTS AND FUNNELS
+hbx.seg="";//VISITOR SEGMENTATION
+hbx.fnl="";//FUNNELS
+
+//CAMPAIGNS
+hbx.cmp="";//CAMPAIGN ID
+hbx.cmpn="";//CAMPAIGN ID IN QUERY
+hbx.dcmp="";//DYNAMIC CAMPAIGN ID
+hbx.dcmpn="";//DYNAMIC CAMPAIGN ID IN QUERY
+hbx.dcmpe="";//DYNAMIC CAMPAIGN EXPIRATION
+hbx.dcmpre="";//DYNAMIC CAMPAIGN RESPONSE EXPIRATION
+hbx.hra="";//RESPONSE ATTRIBUTE
+hbx.hqsr="";//RESPONSE ATTRIBUTE IN REFERRAL QUERY
+hbx.hqsp="";//RESPONSE ATTRIBUTE IN QUERY
+hbx.hlt="";//LEAD TRACKING
+hbx.hla="";//LEAD ATTRIBUTE
+hbx.gp="";//CAMPAIGN GOAL
+hbx.gpn="";//CAMPAIGN GOAL IN QUERY
+hbx.hcn="";//CONVERSION ATTRIBUTE
+hbx.hcv="";//CONVERSION VALUE
+hbx.cp="null";//LEGACY CAMPAIGN
+hbx.cpd="";//CAMPAIGN DOMAIN
+
+//CUSTOM VARIABLES
+hbx.ci="";//CUSTOMER ID
+hbx.hc1="";//CUSTOM 1
+hbx.hc2="";//CUSTOM 2
+hbx.hc3="";//CUSTOM 3
+hbx.hc4="";//CUSTOM 4
+hbx.hrf="";//CUSTOM REFERRER
+hbx.pec="";//ERROR CODES
+
+//INSERT CUSTOM EVENTS
+hbx.lvm="300";
+var ev1 = new _hbEvent("search"); // required definition to create custom event  --POPULATE ON THE SEARCH 
+ev1.keywords = "GEORGE+FOSTER"; // required value
+ev1.results = "9"; // optional value, any integer number of result
+ev1.attr1 = "KCNC"; // optional, can be any string search attribute
+ev1.attr2 = "NEWS"; // optional, can be any string search attribute
+ev1.attr3 = ""; // optional, can be any string search attribute
+ev1.attr4 = ""; // optional, can be any string search attribute
+//END EDITABLE SECTION
+
+//REQUIRED SECTION. CHANGE "YOURSERVER" TO VALID LOCATION ON YOUR WEB SERVER (HTTPS IF FROM SECURE SERVER)
+</script><script language="javascript1.1"
+                 src="http://cbs4denver.com/content/content/file_file_173111616">
+</script><script language="javascript">if(navigator.appName!='Netscape'&&parseInt(
+navigator.appVersion)==4)document.write("<\!"+"--")</script><noscript>
+<img src="http://ehg-viacom.hitbox.com/HG?hc=we09&amp;cd=1&amp;hv=6&amp;ce=u&amp;hb=DM530703JMCE78EN3&amp;n=PUT+PAGE+NAME+HERE&amp;vcon=CONTENT+CATEGORY&amp;seg=&amp;cmp=&amp;gp=&amp;fnl=&amp;pec=&amp;dcmp=&amp;ra=&amp;gn=&amp;cv=&amp;ld=&amp;la=&amp;c1=&amp;c2=&amp;c3=&amp;c4=" border="0" width="1" height="1">
+</noscript><!--//-->
+<!-- END WEBSIDESTORY CODE -->
+<!-- END Hitbox-->
+
+<div style="font-size: 10px; width: 780px;">
+ <div style="width:98%; margin: 0; height:30px; ">
+ <div style="float:left; display:block; width:300px; height:30px; font-size:1px; margin:0; padding:0;">
+ <a href="http://cbs4denver.com" style="display:block; width:300px; height:30px;">
+ <img src="http://static.viacomlocalnetworks.com/kcnc/bg_blue/sub.jpg" border="0" />
+ </a>
+ </div>
+
+ <div style="float:right; margin:0; padding: 3px 0 0 0; ">
+ <form id="searchform" action="http://search.cbs4denver.com/" method="get" style="margin:0; padding:0;">
+ <b style="color: #ffffff; font-family:georgia,arial,helvetica; font-size:14px;">Search</b>
+ <input name="__LOGIC" value="911" type="hidden">
+ <input name="HOSTNAME" value="search.cbs4denver.com" type="hidden">
+ <select name="section" onclick="this.options[selectedIndex].value;" style="font-family:arial; font-size:10px; padding:1px; margin:0; border:none;">
+ <option value="News">News</option>
+ <option value="Video">Video</option>
+ <option value="The Web">The Web</option>
+ <option value="Restaurants">Dining</option>
+ <option value="Yellow Pages">Yellow Pages</option>
+ </select>
+ <input name="SearchString" type="text" class="tbox" style="padding:2px; font-family: 'Lucida Grande', verdana, arial, sans; font-size:1.0em; color:#3140ad; border:none; background-color:#fff; width:60px; margin:2px 5px 0 5px;" id="searchbox" value="" onfocus="if (this.value == this.defaultValue) this.value = ''" onblur="if (this.value == '') this.value = this.defaultValue" />
+ <input type="submit" onclick="document.forms['searchform'].submit();" style="width:23px; margin: 0; padding: 0; border:none; font-family:verdana, san-serif;" value="Go" />
+ </form>
+ </div>
+ </div>
+ <!-- <div style="clear:both; height:1px; font-size:1px; border:none; background:transparent;">&nbsp;</div> -->
+</div>
+
+
+<!-- NAV -->
+<div style="font-size: 10px">
+<div style="font-size: 100%; margin: 0; padding: 0;">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+ <tr>
+ <td class="cbs_wrapper_topnav_td"><!-- News -->
+ <div style="font-size: default;">
+ <div style="display:none; float:left; font-size: default;">
+ <ul id="imenus0">
+ <li style="width:90px;"><a href="index.html%3F__LOGIC=911&amp;section=News&amp;SearchString=george+foster.1.html#">News <img src="http://static.viacomlocalnetworks.com/img/partnerwrapper_header/arrow_main.gif" width="7" height="5" alt="expand" style="margin-left:15px; border: none;"/></a>
+ <div style="font-size: default;">
+ <div style="width:100px; font-size: default;">
+ <ul style="margin: 0; padding: 0;">
+ <li><a href="http://cbs4denver.com/local" onMouseOver="this.style.background='#4889FF';" onMouseOut="this.style.background='#808080';">Local News</a></li>
+ <li><a href="http://cbs4denver.com/national" onMouseOver="this.style.background='#4889FF';" onMouseOut="this.style.background='#808080';">U.S. &amp; World</a></li>
+ <li><a href="http://cbs4denver.com/sports" onMouseOver="this.style.background='#FF4A03';" onMouseOut="this.style.background='#808080';">Sports</a></li>
+ <li><a href="http://cbs4denver.com/business" onMouseOver="this.style.background='#009D00';" onMouseOut="this.style.background='#808080';">Business</a></li>
+ <li><a href="http://cbs4denver.com/consumer" onMouseOver="this.style.background='#943C94';" onMouseOut="this.style.background='#808080';">Consumer</a></li>
+ <!-- <li><a href="http://cbs4denver.com/politics" onMouseOver="this.style.background='#C69C6C';" onMouseOut="this.style.background='#808080';">Politics</a></li>-->
+ <li><a href="http://cbs4denver.com/health" onMouseOver="this.style.background='#009999';" onMouseOut="this.style.background='#808080';">Health</a></li>
+ <li><a href="http://cbs4denver.com/entertainment" onMouseOver="this.style.background='#633CD6';" onMouseOut="this.style.background='#808080';">Entertainment</a></li>
+ <!--<li><a href="http://cbs4denver.com/education?cid=853" onMouseOver="this.style.background='#912690';" onMouseOut="this.style.background='#808080';">Education</a></li>-->
+ <!-- <li><a href="http://cbs4denver.com/technology" onMouseOver="this.style.background='#005E1F';" onMouseOut="this.style.background='#808080';">Technology</a></li>-->
+ <!--<li><a href="http://cbs4denver.com/food" onMouseOver="this.style.background='#CF3F5D';" onMouseOut="this.style.background='#808080';">Food</a></li>-->
+ <li><a href="http://cbs4denver.com/pets" onMouseOver="this.style.background='#866F4A';" onMouseOut="this.style.background='#808080';">Pets</a></li>
+ <li><a href="http://cbs4denver.com/watercooler" onMouseOver="this.style.background='#74B3D6';" onMouseOut="this.style.background='#808080';">Water Cooler</a></li>
+ <li><a href="http://reg.cbs4denver.com/">E-mail Newsletters</a></li>
+ <li><a href="http://cbs4denver.com/xml" onMouseOver="this.style.background='#FF6600';" onMouseOut="this.style.background='#808080';">XML Feeds</a></li>
+ </ul>
+ </div>
+ </div>
+ </li>
+ </ul>
+ </div>
+ </div>
+ <script type="text/javascript" language="JavaScript">
+	  list7 = true
+	  function imenus_data0(){
+		this.enable_visual_design_mode = false
+		this.main_is_horizontal = true
+		this.menu_showhide_delay = 0
+	
+		//Main Menu
+		this.main_container_styles = "background-image:url(http://static.viacomlocalnetworks.com/img/partnerwrapper_header/nav_bgd.jpg); border-style:none; border-color:#6a6a6a; border-width:1px; padding:0px; margin:0px 0px 0px 0px; height: 19px; "
+		this.main_item_styles = "color:#333333; text-align:center; font-family:Arial; font-size:12px; font-weight:bold; font-style:normal; text-decoration:none; border-style:none; border-color:#dddddd; border-width:1px; padding:2px 8px; "
+		this.main_item_hover_styles = "background-color:#4889FF; color:#ffffff; text-decoration:none; border-style:none; border-color:#dfdfdf; "
+		this.main_item_active_styles = ""
+	
+		//Sub Menu
+		this.subs_container_styles = "filter:progid:DXImageTransform.Microsoft.Fade(duration=0.30000001192092895); background-color:#808080; border-style:solid; border-color:#0f0f0f; border-width:1px; padding:0px; margin:0px; "
+		this.subs_item_styles = "color:#ffffff; text-align:left; font-family:arial; font-size:11px; font-weight:bold; font-style:normal; text-decoration:none; border-style:none; border-color:#000000; border-width:1px; padding:3px 8px; margin:0px; "
+		this.subs_item_hover_styles = "background-color:#2f2f2f; color:#ffffff; text-decoration:none; "
+		this.subs_item_active_styles = "background-color:#ffffff; color:#2f2f2f; "
+	  }
+	  </script>
+ <br />
+ <img src="http://static.viacomlocalnetworks.com/img/partnerwrapper_header/trans.gif" alt="" height="1" width="90" /></td>
+ <td class="cbs_wrapper_topnav_td"><!-- Weather -->
+ <div style="font-size: default;">
+ <div style="display:none; float:left; font-size: default;">
+ <ul id="imenus1">
+ <li style="width:100px;"><a href="index.html%3F__LOGIC=911&amp;section=News&amp;SearchString=george+foster.1.html#" style="border-left: 1px solid #6a6a6a;">Weather <img src="http://static.viacomlocalnetworks.com/img/partnerwrapper_header/arrow_main.gif" width="7" height="5" alt="expand" style="margin-left:15px; border: none;"/></a>
+ <div style="font-size: default;">
+ <div style="width:110px; font-size: default;">
+ <ul style="margin: 0; padding: 0;">
+ <li><a href="http://weather.cbs4denver.com">Weather Main</a></li>
+ <li><a href="http://weather.cbs4denver.com/US/Region/Southwest/2xRadar.html">Latest Radar</a></li>
+ <li><a href="http://weather.cbs4denver.com">Extended Forecast</a></li>
+ <li><a href="http://weather.cbs4denver.com">Current Conditions</a></li>
+ <li><a href="http://weather.cbs4denver.com">Video Forecast</a></li>
+ <li><a href="http://weather.cbs4denver.com/US/Region/Southwest/2xRadar.html">Map Center</a></li>
+ <li><a href="http://weather.cbs4denver.com/severe.asp">Severe Weather</a></li>
+ <li><a href="http://weather.cbs4denver.com/auto/news4coloradoV2/ski/CO/">Ski Report</a></li>
+ </ul>
+ </div>
+ </div>
+ </li>
+ </ul>
+ </div>
+ </div>
+ <script type="text/javascript" language="JavaScript">
+	  list7 = true
+	  function imenus_data1(){
+		this.enable_visual_design_mode = false
+		this.main_is_horizontal = true
+		this.menu_showhide_delay = 0
+		
+		//Main Menu
+		this.main_container_styles = "background-image:url(http://static.viacomlocalnetworks.com/img/partnerwrapper_header/nav_bgd.jpg); border-style:none; border-color:#6a6a6a; border-width:1px; padding:0px; margin:0px 0px 0px 0px; height: 19px; "
+		this.main_item_styles = "color:#333333; text-align:center; font-family:Arial; font-size:12px; font-weight:bold; font-style:normal; text-decoration:none; border-style:none; border-color:#dddddd; border-width:1px; padding:2px 8px; "
+		this.main_item_hover_styles = "background-color:#FFA800; color:#ffffff; text-decoration:none; border-style:none; border-color:#dfdfdf; "
+		this.main_item_active_styles = ""
+	
+		//Sub Menu
+		this.subs_container_styles = "filter:progid:DXImageTransform.Microsoft.Fade(duration=0.30000001192092895); background-color:#808080; border-style:solid; border-color:#0f0f0f; border-width:1px; padding:0px; margin:0px; "
+		this.subs_item_styles = "color:#ffffff; text-align:left; font-family:arial; font-size:11px; font-weight:bold; font-style:normal; text-decoration:none; border-style:none; border-color:#000000; border-width:1px; padding:3px 8px; margin:0px; "
+		this.subs_item_hover_styles = "background-color:#2f2f2f; color:#ffffff; text-decoration:none; "
+		this.subs_item_active_styles = "background-color:#ffffff; color:#2f2f2f; "
+	  }
+	  </script>
+ <br />
+ <img src="http://static.viacomlocalnetworks.com/img/partnerwrapper_header/trans.gif" alt="" height="1" width="100" /></td>
+ <td class="cbs_wrapper_topnav_td"><!-- Traffic -->
+ <div style="font-size: default;">
+ <div style="display:none; float:left; font-size: default;">
+ <ul id="imenus2">
+ <li style="width:100px;"><a href="index.html%3F__LOGIC=911&amp;section=News&amp;SearchString=george+foster.1.html#" style="border-left: 1px solid #6a6a6a;">Traffic <img src="http://static.viacomlocalnetworks.com/img/partnerwrapper_header/arrow_main.gif" width="7" height="5" alt="expand" style="margin-left:15px; border: none;"/></a>
+ <div style="font-size: default;">
+ <div style="width:110px; font-size: default;">
+ <ul style="margin: 0; padding: 0;">
+ <li><a href="http://cbs4denver.com/traffic">Live Traffic Incidents</a></li>
+ <li><a href="http://cbs4denver.com/traffic?frm=routing">Routing</a></li>
+ <li><a href="http://cbs4denver.com/traffic?frm=personal">Personal Alerts</a></li>
+ </ul>
+ </div>
+ </div>
+ </li>
+ </ul>
+ </div>
+ </div>
+ <script type="text/javascript" language="JavaScript">
+	  list7 = true
+	  function imenus_data2(){
+		this.enable_visual_design_mode = false
+		this.main_is_horizontal = true
+		this.menu_showhide_delay = 0
+			
+		//Main Menu
+		this.main_container_styles = "background-image:url(http://static.viacomlocalnetworks.com/img/partnerwrapper_header/nav_bgd.jpg); border-style:none; border-color:#6a6a6a; border-width:1px; padding:0px; margin:0px 0px 0px 0px; height: 19px; "
+		this.main_item_styles = "color:#333333; text-align:center; font-family:Arial; font-size:12px; font-weight:bold; font-style:normal; text-decoration:none; border-style:none; border-color:#dddddd; border-width:1px; padding:2px 8px; "
+		this.main_item_hover_styles = "background-color:#CC0000; color:#ffffff; text-decoration:none; border-style:none; border-color:#dfdfdf; "
+		this.main_item_active_styles = ""
+	
+		//Sub Menu
+		this.subs_container_styles = "filter:progid:DXImageTransform.Microsoft.Fade(duration=0.30000001192092895); background-color:#808080; border-style:solid; border-color:#0f0f0f; border-width:1px; padding:0px; margin:0px; "
+		this.subs_item_styles = "color:#ffffff; text-align:left; font-family:arial; font-size:11px; font-weight:bold; font-style:normal; text-decoration:none; border-style:none; border-color:#000000; border-width:1px; padding:3px 8px; margin:0px; "
+		this.subs_item_hover_styles = "background-color:#2f2f2f; color:#ffffff; text-decoration:none; "
+		this.subs_item_active_styles = "background-color:#ffffff; color:#2f2f2f; "
+	  }
+	  </script>
+ <br />
+ <img src="http://static.viacomlocalnetworks.com/img/partnerwrapper_header/trans.gif" alt="" height="1" width="100" /></td>
+ <td class="cbs_wrapper_topnav_td"><!-- Other -->
+ <div style="font-size: default;">
+ <div style="display:none; float:left; font-size: default;">
+ <ul id="imenus3" >
+ <li style="width:140px;"><a href="index.html%3F__LOGIC=911&amp;section=News&amp;SearchString=george+foster.1.html#" style="border-left: 1px solid #6a6a6a;">Seen on CBS4 <img src="http://static.viacomlocalnetworks.com/img/partnerwrapper_header/arrow_main.gif" width="7" height="5" alt="expand" style="margin-left:15px; border: none;"/></a>
+ <div style="font-size: default;">
+ <div style="width:150px; font-size: default;">
+ <ul style="margin: 0; padding: 0;">
+ <li><a href="http://cbs4denver.com/linksnumbers">Links &amp; Info</a></li>
+ <li><a href="http://cbs4denver.com/programming">TV Schedule</a></li>
+ <li><a href="http://docs4you.cbs4denver.com/">Docs4You</a></li>
+ <li><a href="http://cbs4denver.com/investigates">Investigates</a></li>
+ <li><a href="http://cbs4denver.com/politics">Politics</a></li>
+ <li><a href="http://cbs4denver.com/education">Education</a></li>
+ <li><a href="http://cbs4denver.com/getaways">Colorado Getaways</a></li>
+ <li><a href="http://cbs4denver.com/community">Community</a></li>
+ <li><a href="http://cbs4denver.com/news">News@Your Desk</a></li>
+ <li><a href="http://cbs4denver.com/video?cid=27">Super Preps</a></li>
+ <li><a href="http://cbs4denver.com/gavel">Gavel to Gavel</a></li>
+ <li><a href="http://cbs4denver.com/contests">Contests</a></li>
+ </ul>
+ </div>
+ </div>
+ </li>
+ <li style="width:110px;"><a href="index.html%3F__LOGIC=911&amp;section=News&amp;SearchString=george+foster.1.html#" style="border-left: 1px solid #6a6a6a;">Services <img src="http://static.viacomlocalnetworks.com/img/partnerwrapper_header/arrow_main.gif" width="7" height="5" alt="expand" style="margin-left:15px; border: none;"/></a>
+ <div style="font-size: default;">
+ <div style="width:120px; font-size: default;">
+ <ul style="margin: 0; padding: 0;">
+ <li><a href="http://cbs.monster.com/?WT.mc_n=cbsid;DEN">Careers</a></li>
+ <li><a href="http://kcnc.viacom.bizrate.com/index__rf--cnc000.html">Shopping</a></li>
+ <li><a href="http://www.match.com/viacom/index.aspx?channel=kcnc">Dating</a></li>
+ <li><a href="http://tripadvisor.cbs4denver.com">Travel</a></li>
+ <li><a href="http://kcnc.autobytel.com">Autos</a></li>
+ <li><a href="http://www.livingchoices.com/home/search.aspx?refer=vcomkcnc&amp;mid=2080">Real Estate</a></li>
+ <li><a href="http://search.cbs4denver.com/?__LOGIC=911&amp;CITY=Denver&amp;STATE=CO&amp;section=Yellow+Pages">Yellow Pages</a></li>
+ <li><a href="http://search.cbs4denver.com/?__LOGIC=911&amp;SearchString=&amp;section=Dining">Restaurants</a></li>
+ <li><a href="http://www.movietickets.com/default.asp?afid=KCNC">Movie Listings</a></li>
+ <li><a href="http://cbs4denver.com/coupons">Coupons</a></li>
+ </ul>
+ </div>
+ </div>
+ </li>
+ <li style="width:120px;"><a href="index.html%3F__LOGIC=911&amp;section=News&amp;SearchString=george+foster.1.html#" style="border-left: 1px solid #6a6a6a;">Collections <img src="http://static.viacomlocalnetworks.com/img/partnerwrapper_header/arrow_main.gif" width="7" height="5" alt="expand" style="margin-left:15px; border: none;"/></a>
+ <div style="font-size: default;">
+ <div style="width:130px; font-size: default;">
+ <ul style="margin: 0; padding: 0;">
+ <li><a href="http://cbs4denver.com/video">Video</a></li>
+ <li><a href="http://cbs4denver.com/slideshows">Slideshows</a></li>
+ <li><a href="http://cbs4denver.com/webcams/local_slideshow_171165845">Cams</a></li>
+ <li><a href="http://cbs4denver.com/blogs">Blogs</a></li>
+ </ul>
+ </div>
+ </div>
+ </li>
+ <li style="width:110px;"><a href="index.html%3F__LOGIC=911&amp;section=News&amp;SearchString=george+foster.1.html#" style="border-left: 1px solid #6a6a6a;">About Us <img src="http://static.viacomlocalnetworks.com/img/partnerwrapper_header/arrow_main.gif" width="7" height="5" alt="expand" style="margin-left:15px; border: none;"/></a>
+ <div style="font-size: default;">
+ <div style="width:120px; font-size: default;">
+ <ul style="margin: 0; padding: 0;">
+ <li><a href="http://cbs4denver.com/info">Station Info</a></li>
+ <li><a href="http://cbs4denver.com/bios">CBS4 Bios</a></li>
+ <li><a href="http://cbs4denver.com/contact">Contact Us</a></li>
+ <li><a href="http://cbs4denver.com/contactgm">Ask the GM</a></li>
+ <li><a href="http://cbs4denver.com/sponsoredevents">Sponsored Events</a></li>
+ </ul>
+ </div>
+ </div>
+ </li>
+ </ul>
+ </div>
+ </div>
+ <script type="text/javascript" language="JavaScript">
+	  list7 = true
+	  function imenus_data3(){
+		this.enable_visual_design_mode = false
+		this.main_is_horizontal = true
+		this.menu_showhide_delay = 0
+
+	
+		//Main Menu
+		this.main_container_styles = "background-image:url(http://static.viacomlocalnetworks.com/img/partnerwrapper_header/nav_bgd.jpg); border-style:none; border-color:#6a6a6a; border-width:1px; padding:0px; margin:0px 0px 0px 0px; height: 19px; "
+		this.main_item_styles = "color:#333333; text-align:center; font-family:Arial; font-size:12px; font-weight:bold; font-style:normal; text-decoration:none; border-style:none; border-color:#dddddd; border-width:1px; padding:2px 8px; "
+		this.main_item_hover_styles = "background-color:#666666; color:#ffffff; text-decoration:none; border-style:none; border-color:#dfdfdf; "
+		this.main_item_active_styles = ""
+	
+		//Sub Menu
+		this.subs_container_styles = "filter:progid:DXImageTransform.Microsoft.Fade(duration=0.30000001192092895); background-color:#808080; border-style:solid; border-color:#0f0f0f; border-width:1px; padding:0px; margin:0px; "
+		this.subs_item_styles = "color:#ffffff; text-align:left; font-family:arial; font-size:11px; font-weight:bold; font-style:normal; text-decoration:none; border-style:none; border-color:#000000; border-width:1px; padding:3px 8px; margin:0px; "
+		this.subs_item_hover_styles = "background-color:#2f2f2f; color:#ffffff; text-decoration:none; "
+		this.subs_item_active_styles = "background-color:#ffffff; color:#2f2f2f; "
+	  }
+	  </script>
+ <br />
+ <img src="http://static.viacomlocalnetworks.com/img/partnerwrapper_header/trans.gif" alt="" height="1" width="480" /></td>
+ <td style="background: url(http://static.viacomlocalnetworks.com/img/partnerwrapper_header/nav_bgd.jpg) top left repeat-x;"><img src="http://static.viacomlocalnetworks.com/img/partnerwrapper_header/trans.gif" alt="" width="1" height="1" /></td>
+ </tr>
+</table>
+</div>
+</div>
+<!-- END NAV -->
+
+
+
+ <div style="clear:both; height: 1px; overflow: hidden;"></div>
+ <!-- Search HTML Mod Start -->
+ <div id="middle" style="float:left; padding-left:15px; width:600px;">
+ <div id="bread">
+ <h1 class="stitle" style="float:none; width:300px;">Local Search</h1>
+ <ul id="searchnav">
+ <li>News</li>
+ <li><a href="http://search.cbs4denver.com/?HOSTNAME=search.cbs4denver.com&SearchString=george+foster&section=Video">Video</a></li>
+ <li><a href="http://search.cbs4denver.com/?HOSTNAME=search.cbs4denver.com&section=The+Web&SearchString=george+foster">Web</a></li>
+ <li><a href="http://search.cbs4denver.com/?HOSTNAME=search.cbs4denver.com&SearchString=george+foster&section=Dining">Dining</a></li>
+ <li><a href="http://tripadvisor.cbs4denver.com/">Travel</a></li>
+  <li><a href="http://search.cbs4denver.com/?HOSTNAME=search.cbs4denver.com&vzmkcode=viacom_kcnc&vzaidcode=137191&SearchString=george+foster&CITY=Denver&STATE=CO&section=Yellow+Pages">Yellow Pages</a></li>
+  </ul>
+ </div><!--bread-->
+
+ <form name="searchForm" style="padding-top:4px;" action="http://search.cbs4denver.com" method="get">
+ <input name="__LOGIC" value="911" type="hidden">
+ <input name="HOSTNAME" value="search.cbs4denver.com" type="hidden">
+ <table summary="Search Navigation" id="search_head">
+ <tr>
+ <td><h4>Search:</h4></td>
+ <td width="120"> <!-- pulldown starts here -->
+ <select style="width:115px;" name="section">
+ <option value="News" selected>News</option>
+ <option value="Video">Video</option>
+ <option value="The Web">Web</option>
+ <option value="Dining">Dining</option>
+  <option value="Yellow Pages">Yellow Pages</option>
+  </select>
+ </td>
+ <td><label for="searchbox">for</label></td>
+ <td><input name="SearchString" type="text" value="george foster" id="searchbox" /></td>
+ <td width="30"><input type="submit" onclick="document.forms['searchForm'].submit();" style="width:23px; margin: 0; padding: 0; border:none; font-family:verdana, san-serif;" value="Go" /></td>
+ </tr>
+ </table><!--searchform-->
+ </form>
+ </div><!--middle-->
+<div class="cleaner">&nbsp;</div>
+<!-- Search HTML Mod End -->
+<table border="1" cellpadding="0" cellspacing="0" width="790">
+<tr><td>
+<div id="resultsbox">
+<div class="searchcols">
+ <div class="searchright">
+
+
+
+ 
+
+
+ 
+  
+  
+  <div class="block" id="cityguide">
+ <h2>Yellow Pages</h2>
+ 
+ <form name="search_form" action="http://search.cbs4denver.com" method="get">
+ <input name="__LOGIC" value="911" type="hidden">
+ <input name="HOSTNAME" value="search.cbs4denver.com" type="hidden">
+ <input name="vzmkcode" value="viacom_kcnc_ppc" type="hidden">
+ <input name="vzaidcode" value="" type="hidden">
+ <input name="section" value="Yellow Pages" type="hidden">
+ <table>
+ <tbody>
+ <tr>
+ <td>Keyword</td>
+ <td><input style="border-right: #ccc 1px solid; border-top: #ccc 1px solid; border-left: #ccc 1px solid; border-bottom: #ccc 1px solid" name="SearchString" size="12" value="george foster"></td>
+ </tr>
+ <tr>
+ <td>or</td>
+ </tr>
+ <tr>
+ <td>Business Name</td>
+ <td><input style="border-right: #ccc 1px solid; border-top: #ccc 1px solid; border-left: #ccc 1px solid; border-bottom: #ccc 1px solid" name="CGBUSINESS" size="12" value=""></td>
+ </tr>
+ <tr>
+ <td>City</td>
+ <td><input style="border-right: #ccc 1px solid; border-top: #ccc 1px solid; border-left: #ccc 1px solid; border-bottom: #ccc 1px solid" name="CITY" size="12" value="Denver"></td>
+ </tr>
+ <tr>
+ <td>State</td>
+ <td><input style="border-right: #ccc 1px solid; border-top: #ccc 1px solid; border-left: #ccc 1px solid; border-bottom: #ccc 1px solid" name="STATE" size="12" value="CO"></td>
+ </tr>
+ <tr>
+ <td><input style="border-right: #ccc 1px solid; border-top: #ccc 1px solid; border-left: #ccc 1px solid; border-bottom: #ccc 1px solid" type="submit" name="Search" value="Search"></td>
+ </tr>
+ <tr>
+ <td colspan="2">Provided by Superpages.com</td>
+ </tr>
+ </tbody>
+ </table>
+ </form>
+ </div>
+  
+
+ 
+
+
+ 
+
+
+
+ 
+
+ 
+  <div class="block">
+ <h2>Web Results</h2>
+ <ul class="ap" style="font-size:0.9em; word-wrap:break-word;">
+ 
+ <li><a href="http://www.baseball-almanac.com/players/player.php?p=fostege01" class="cliplink" title="George Foster Baseball Stats by Baseball Almanac">George Foster Baseball Stats by Baseball Almanac</a></li>
+ 
+ <li><a href="http://www.baseball-reference.com/f/fostege01.shtml" class="cliplink" title="George Foster Statistics - Baseball-Reference.com">George Foster Statistics - Baseball-Reference.com</a></li>
+ 
+ <li><a href="http://www.npr.org/about/press/000330.peabody.html" class="cliplink" title="Peabody Awards for Morning Edition and Lost and Found Sound">Peabody Awards for Morning Edition and Lost and Found Sound</a></li>
+ 
+ <li><a href="http://www.peabody.uga.edu/" class="cliplink" title="The Peabody Awards, administered by University of Georgia's Grady College of...">The Peabody Awards, administered by University of Georgia's Grady College of...</a></li>
+ 
+ <li><a href="http://www.foxnews.com/wires/2006Dec19/0,4670,FosterParentsCharged,00.html" class="cliplink" title="FOXNews.com - Ohio Woman Described Foster Son's Death - Local News | News Articles | National News |">FOXNews.com - Ohio Woman Described Foster Son's Death - Local News | News Articles | National News |</a></li>
+   <li><a href="http://search.cbs4denver.com/?HOSTNAME=search.cbs4denver.com&SearchString=george+foster&section=The Web">More Web results</a></li>
+  </ul>
+ </div>
+  <div class="nopadblock" id="skyad">
+ <h4>Advertisement</h4>
+ <script language="JavaScript"> 
+			<!--
+			dcAd('cbs.kcnc','partner.search','skyscraper','','',false);
+			//--> 
+		</script>
+ </div>
+ </div><!--searchright-->
+ <div class="searchleft">
+ <div id="searchheader">
+ <div id="searchheadwrapper" style="height:20px;">
+  <h2>News Results for &ldquo;george foster&rdquo;</h2>
+  </div><!--searchheadwrapper-->
+ </div><!--searchheader-->
+ <dl id="searchoptionsnav">
+ <dt style="color:#666;">Refine by category:</dt>
+ 
+
+ <dt>From CBS4</dt>
+ <dd><a href="http://search.cbs4denver.com/?HOSTNAME=search.cbs4denver.com&section=News">All News Results</a></dd>
+ 
+ <dd><a href="http://search.cbs4denver.com/?HOSTNAME=search.cbs4denver.com&SearchString=george+foster&section=News&Single=1&Restrict=%1FSports">Sports (7)</a></dd>
+ 
+ 
+ <dd><a href="http://search.cbs4denver.com/?HOSTNAME=search.cbs4denver.com&SearchString=george+foster&section=News&Single=1&Restrict=%1FEntertainment">Entertainment (2)</a></dd>
+ 
+  <dt>Other Sources</dt>
+
+ 
+  <dd><a href="http://search.cbs4denver.com/?HOSTNAME=search.cbs4denver.com&SearchString=george+foster&section=News&Other=1">Find Articles (550)</a></dd>
+  </dl>
+ <!-- Search HTML Mod Start -->
+
+ <div id="topicheader">
+ <form name="areasearchForm" action="http://search.cbs4denver.com" style="padding-top:4px;" method="get">
+ <input name="HOSTNAME" value="search.cbs4denver.com" type="hidden">
+ <input name="SearchString" value="george foster" type="hidden">
+ <!-- yes, this is a table for presentation, other methods just wouldn't work here -->
+ <table summary="Sort Results by Area">
+ <tr><td><label for="newsbyzip">Sort these results by:</label></td>
+ <td width="120">
+ <!-- pulldown starts here -->
+ <select style="width:120px;" onChange="location = this.options[this.selectedIndex].value;">
+ <option value="">Area</option>
+ 
+ <option value="http://search.cbs4denver.com/?HOSTNAME=search.cbs4denver.com&SearchString=george+foster&asection=Arvada">Arvada</option>
+ 
+ <option value="http://search.cbs4denver.com/?HOSTNAME=search.cbs4denver.com&SearchString=george+foster&asection=Aurora">Aurora</option>
+ 
+ <option value="http://search.cbs4denver.com/?HOSTNAME=search.cbs4denver.com&SearchString=george+foster&asection=Boulder">Boulder</option>
+ 
+ <option value="http://search.cbs4denver.com/?HOSTNAME=search.cbs4denver.com&SearchString=george+foster&asection=Brighton">Brighton</option>
+ 
+ <option value="http://search.cbs4denver.com/?HOSTNAME=search.cbs4denver.com&SearchString=george+foster&asection=Broomfield">Broomfield</option>
+ 
+ <option value="http://search.cbs4denver.com/?HOSTNAME=search.cbs4denver.com&SearchString=george+foster&asection=Castle+Rock">Castle Rock</option>
+ 
+ <option value="http://search.cbs4denver.com/?HOSTNAME=search.cbs4denver.com&SearchString=george+foster&asection=Centennial">Centennial</option>
+ 
+ <option value="http://search.cbs4denver.com/?HOSTNAME=search.cbs4denver.com&SearchString=george+foster&asection=Commerce+City">Commerce City</option>
+ 
+ <option value="http://search.cbs4denver.com/?HOSTNAME=search.cbs4denver.com&SearchString=george+foster&asection=Denver">Denver</option>
+ 
+ <option value="http://search.cbs4denver.com/?HOSTNAME=search.cbs4denver.com&SearchString=george+foster&asection=Federal+Heights">Federal Heights</option>
+ 
+ <option value="http://search.cbs4denver.com/?HOSTNAME=search.cbs4denver.com&SearchString=george+foster&asection=Golden">Golden</option>
+ 
+ <option value="http://search.cbs4denver.com/?HOSTNAME=search.cbs4denver.com&SearchString=george+foster&asection=Glendale">Glendale</option>
+ 
+ <option value="http://search.cbs4denver.com/?HOSTNAME=search.cbs4denver.com&SearchString=george+foster&asection=Highlands+Ranch">Highlands Ranch</option>
+ 
+ <option value="http://search.cbs4denver.com/?HOSTNAME=search.cbs4denver.com&SearchString=george+foster&asection=Lafayette">Lafayette</option>
+ 
+ <option value="http://search.cbs4denver.com/?HOSTNAME=search.cbs4denver.com&SearchString=george+foster&asection=Lakewood">Lakewood</option>
+ 
+ <option value="http://search.cbs4denver.com/?HOSTNAME=search.cbs4denver.com&SearchString=george+foster&asection=Littleton">Littleton</option>
+ 
+ <option value="http://search.cbs4denver.com/?HOSTNAME=search.cbs4denver.com&SearchString=george+foster&asection=Longmont">Longmont</option>
+ 
+ <option value="http://search.cbs4denver.com/?HOSTNAME=search.cbs4denver.com&SearchString=george+foster&asection=Louisville">Louisville</option>
+ 
+ <option value="http://search.cbs4denver.com/?HOSTNAME=search.cbs4denver.com&SearchString=george+foster&asection=Morrison">Morrison</option>
+ 
+ <option value="http://search.cbs4denver.com/?HOSTNAME=search.cbs4denver.com&SearchString=george+foster&asection=Northglenn">Northglenn</option>
+ 
+ <option value="http://search.cbs4denver.com/?HOSTNAME=search.cbs4denver.com&SearchString=george+foster&asection=Parker">Parker</option>
+ 
+ <option value="http://search.cbs4denver.com/?HOSTNAME=search.cbs4denver.com&SearchString=george+foster&asection=Westminster">Westminster</option>
+ 
+ <option value="http://search.cbs4denver.com/?HOSTNAME=search.cbs4denver.com&SearchString=george+foster&asection=Wheat+Ridge">Wheat Ridge</option>
+  </select>
+ </td>
+ <td width="20"><strong id="or">or</strong></td>
+ <td><input name="nbZip" type="text" value="ZIP" id="newsbyzip" /></td>
+ <td><input type="submit" onclick="document.forms['areasearchForm'].submit();" style="width:23px; margin: 0; padding: 0; border:none; font-family:verdana, san-serif;" value="Go" /></td>
+  </table>
+ </form>
+ </div><!--topicheader-->
+<!-- Search HTML Mod End -->
+
+ <div class="sponsorresults">
+  <p id="howtoad"><a href="http://cbs4denver.com/advertise">How to advertise</a></p>
+ <hr style="color:#fff;" />
+ </div><!--sponsorresults-->
+ <div id="results">
+   
+ 
+ 
+ <!-- IF ( __CATEGORY_SELECTED ) -->
+  <dl>
+ <dt style="font-size: larger; text-align: center;"><a href="http://search.cbs4denver.com/?HOSTNAME=search.cbs4denver.com&SearchString=george+foster&section=News&Single=1&Restrict=%1FSports">Sports (7)</a></dt>
+ 
+ <!-- AP NATIONAL DYNAMIC LINKS -->
+  <!-- HEALTHOLOGY ARTICLES DYNAMIC LINKS -->
+    <!-- US/WORLD RSS FEED FROM CBS -->
+   <dd class="resultimg"><a href="http://cbs4denver.com/broncos/local_story_331071145.html" class="border" title="Quarterback Jay Cutler #6 of the Denver Broncos rolls out and looks for a receiver as DaShon Polk #51 of the Houston Texans pursues him as the Broncos defeated the Texans 17-14 during preseason NFL action at Invesco Field at Mile High on August 27, 2006, in Denver. (Photo by Doug Pensinger/Getty Images)"><img src="http://cbs4denver.com/broncos/images_sizedimage_331101613/sm" alt="Quarterback Jay Cutler #6 of the Denver Broncos rolls out and looks for a receiver as DaShon Polk #51 of the Houston Texans pursues him as the Broncos defeated the Texans 17-14 during preseason NFL action at Invesco Field at Mile High on August 27, 2006, in Denver. (Photo by Doug Pensinger/Getty Images)" width="75" height="57" /></a></dd>
+   <dt>
+  <a href="http://cbs4denver.com/broncos/local_story_331071145.html" class="vidlink" title="Cutler Era Expected To Start, Plummer Out">Cutler Era Expected To Start, Plummer Out</a>
+  </dt>
+   <dt>Nov 27, 2006 5:06 am MT</dt>
+  <dd>The on Dec. 3, and the rookie from Vanderbilt will almost assuredly be the one taking snaps from center Tom Nalen instead of was planning to meet with his staff Sunday, but the soonest he would ...</dd>
+ <dd><a href="http://cbs4denver.com/broncos/local_story_331071145.html"> http://cbs4denver.com/broncos/local_story_331... </a></dd>
+ <dd><br></dd>
+      
+ <!-- AP NATIONAL DYNAMIC LINKS -->
+  <!-- HEALTHOLOGY ARTICLES DYNAMIC LINKS -->
+    <!-- US/WORLD RSS FEED FROM CBS -->
+   <dd class="resultimg"><a href="http://cbs4denver.com/sports/local_story_331071145.html" class="border" title="Quarterback Jay Cutler #6 of the Denver Broncos rolls out and looks for a receiver as DaShon Polk #51 of the Houston Texans pursues him as the Broncos defeated the Texans 17-14 during preseason NFL action at Invesco Field at Mile High on August 27, 2006, in Denver. (Photo by Doug Pensinger/Getty Images)"><img src="http://cbs4denver.com/sports/images_sizedimage_331101613/sm" alt="Quarterback Jay Cutler #6 of the Denver Broncos rolls out and looks for a receiver as DaShon Polk #51 of the Houston Texans pursues him as the Broncos defeated the Texans 17-14 during preseason NFL action at Invesco Field at Mile High on August 27, 2006, in Denver. (Photo by Doug Pensinger/Getty Images)" width="75" height="57" /></a></dd>
+   <dt>
+  <a href="http://cbs4denver.com/sports/local_story_331071145.html" class="vidlink" title="Cutler Era Expected To Start, Plummer Out">Cutler Era Expected To Start, Plummer Out</a>
+  </dt>
+   <dt>Nov 27, 2006 5:06 am MT</dt>
+  <dd>The on Dec. 3, and the rookie from Vanderbilt will almost assuredly be the one taking snaps from center Tom Nalen instead of was planning to meet with his staff Sunday, but the soonest he would ...</dd>
+ <dd><a href="http://cbs4denver.com/sports/local_story_331071145.html"> http://cbs4denver.com/sports/local_story_3310... </a></dd>
+ <dd><br></dd>
+      
+ <!-- AP NATIONAL DYNAMIC LINKS -->
+  <!-- HEALTHOLOGY ARTICLES DYNAMIC LINKS -->
+    <!-- US/WORLD RSS FEED FROM CBS -->
+   <dd class="resultimg"><a href="http://cbs4denver.com/broncos/local_story_317073831.html" class="border" title="Damien Nash (file)"><img src="http://cbs4denver.com/broncos/images_sizedimage_230234205/sm" alt="Damien Nash (file)" width="75" height="57" /></a></dd>
+   <dt>
+  <a href="http://cbs4denver.com/broncos/local_story_317073831.html" class="vidlink" title="Shanahan Changes Broncos' Line-Up In Oakland">Shanahan Changes Broncos' Line-Up In Oakland</a>
+  </dt>
+   <dt>Nov 13, 2006 5:41 am MT</dt>
+  <dd>Running back and tight end eight inactives. Those were just part of the alterations the Broncos unveiled Sunday. Some were by necessity, such as Nate Webster starting at linebacker in Ian Gold's ...</dd>
+ <dd><a href="http://cbs4denver.com/broncos/local_story_317073831.html"> http://cbs4denver.com/broncos/local_story_317... </a></dd>
+ <dd><br></dd>
+       </dl>
+  <p id="howtoad"><a href="http://search.cbs4denver.com/?HOSTNAME=search.cbs4denver.com&SearchString=george+foster&section=News&Single=1&Restrict=%1FSports">view all results in Sports</a></p>
+   <!-- ENDIF -->
+ 
+ 
+ <!-- IF ( __CATEGORY_SELECTED ) -->
+  <dl>
+ <dt style="font-size: larger; text-align: center;"><a href="http://search.cbs4denver.com/?HOSTNAME=search.cbs4denver.com&SearchString=george+foster&section=News&Single=1&Restrict=%1FEntertainment">Entertainment (2)</a></dt>
+ 
+ <!-- AP NATIONAL DYNAMIC LINKS -->
+  <!-- HEALTHOLOGY ARTICLES DYNAMIC LINKS -->
+    <!-- US/WORLD RSS FEED FROM CBS -->
+    <dt>
+  <a href="http://cbs4denver.com/entertainment/entertainment_story_341121622.html" class="cliplink" title="2007 Grammy Award Nominations">2007 Grammy Award Nominations</a>
+  </dt>
+   <dt>Dec 7, 2006 8:01 am MT</dt>
+  <dd>Here is the complete list of 2007 Grammy Award nominations. General FieldCategory 1 - Record Of The Year (Award to the Artist and to the Producer(s), Recording Engineer(s) and/or Mixer(s), if ...</dd>
+ <dd><a href="http://cbs4denver.com/entertainment/entertainment_story_341121622.html"> http://cbs4denver.com/entertainment/entertain... </a></dd>
+ <dd><br></dd>
+      
+ <!-- AP NATIONAL DYNAMIC LINKS -->
+  <!-- HEALTHOLOGY ARTICLES DYNAMIC LINKS -->
+    <!-- US/WORLD RSS FEED FROM CBS -->
+   <dd class="resultimg"><a href="http://cbs4denver.com/moviereviews/movies_story_113003832.html" class="border" title="Kiefer Sutherland, Eva Longoria and Michael Douglas in 20th Century Fox's The Sentinel"><img src="http://cbs4denver.com/moviereviews/images_sizedimage_113004000/sm" alt="Kiefer Sutherland, Eva Longoria and Michael Douglas in 20th Century Fox's The Sentinel" width="75" height="57" /></a></dd>
+   <dt>
+  <a href="http://cbs4denver.com/moviereviews/movies_story_113003832.html" class="cliplink" title="'The Sentinel'">'The Sentinel'</a>
+  </dt>
+   <dt>Apr 22, 2006 10:37 pm MT</dt>
+  <dd>In "The Sentinel," Michael Douglas stars as Kiefer Sutherland in a big-screen clone of "24," playing a fed caught up in a lurid tale of illicit passion, presidential assassination and an agent on ...</dd>
+ <dd><a href="http://cbs4denver.com/moviereviews/movies_story_113003832.html"> http://cbs4denver.com/moviereviews/movies_sto... </a></dd>
+ <dd><br></dd>
+       </dl>
+   <!-- ENDIF -->
+ 
+ 
+     
+
+
+
+ 
+   
+  
+ 
+ <br>
+ 
+ 
+ <br>
+ 
+ 
+ <br>
+ 
+  
+    </div><!--results-->
+ </div><!--searchleft-->
+
+
+
+ <div style="background-color:#fff; padding:10px; width: 780px; margin-right: 0pt; font-size:1.1em; margin-bottom:10px; border:1px solid #dbdcdc;">
+ <p><a href="http://www.furl.net/">Furl it!</a> Save a personal copy of any page on the Web and quickly find it again with <a href="http://www.furl.net/">Furl.net</a>.</p>
+ </div><!--searchleft-->
+
+ <div style="background-color:#fff; padding:10px; width: 780px; margin-right: 0pt; font-size:1.1em; margin-bottom:10px; border:1px solid #dbdcdc;">
+ <p><a href="http://www.looksmart.com"><img src="http://static.viacomlocalnetworks.com/img/looksmart.gif"></a> &nbsp; <a href="http://www.sliccware.com"><img src="http://static.viacomlocalnetworks.com/img/search_sliccware.gif"></a></p>
+ </div><!--searchleft-->
+<div class="cleaner">&nbsp;</div>
+</div><!--searchcols-->
+</div><!--resultsbox-->
+</td></tr>
+</table>
+<div style="clear:both; height: 1px; overflow: hidden;"></div>
+
+
+
+
+
+<div id="cbs_footer" style="font-size: 10px; margin-bottom:20px; line-height: 15px; font-family:verdana, san-serif; font-size: 10px;">
+<ul id="footnav" style="list-style-type:none; background-color:#C7D0D5; padding:4px 10px; font-size: 10px; margin-left:105px; margin:10px;">
+<li style="display:inline; padding-right: 5px; margin-right: 5px; border-right:1px solid #333;"><a href="http://cbs4denver.com/advertise" style="text-decoration: none;font-weight:bold;color:#3140ad;">Advertise</a></li>
+<li style="display:inline; padding-right: 5px; margin-right: 5px; border-right:1px solid #333;"><a href="http://cbs4denver.com/copyright" style="text-decoration: none;font-weight:bold;color:#3140ad;">Copyright</a></li>
+<li style="display:inline; padding-right: 5px; margin-right: 5px; border-right:1px solid #333;"><a href="http://cbs4denver.com/privacy" style="text-decoration: none;font-weight:bold;color:#3140ad;">Privacy Policy</a></li>
+<li style="display:inline; padding-right: 5px; margin-right: 5px; border-right:1px solid #333;"><a href="http://cbs4denver.com/eeo" style="text-decoration: none;font-weight:bold;color:#3140ad;">EEO Public File</a></li>
+<li style="display:inline; padding-right: 5px; margin-right: 5px; border-right:1px solid #333;"><a href="http://www.v-chip.org/" target="_blank" style="text-decoration: none;font-weight:bold;color:#3140ad;">A Parent's Guide to TV Ratings</a></li>
+<li style="display:inline; padding-right: 5px; margin-right: 5px; border-right:1px solid #333;"><a href="http://www.cbslocal.com" style="text-decoration: none;font-weight:bold;color:#3140ad;">CBS Television Stations Digital Media</a></li>
+<li style="display:inline; padding-right: 5px; margin-right: 5px; border-right:1px solid #333;"><a href="http://cbs4denver.com/resources_spidermap" style="text-decoration: none;font-weight:bold;color:#3140ad;">Site Map</a></li>
+</ul>
+<p id="copyright" style="margin:10px; margin-left:0; padding-left:10px; color:#444;">&copy; MMVI, CBS Broadcasting Inc. All Rights Reserved.</p>
+</div>
+
+
+<!-- NAV JAVASCRIPT -->
+<!-- Note: This must be included at the bottom of the code - right before the </body> -->
+<script type="text/javascript" src="http://static.viacomlocalnetworks.com/js/wrapper_topnav.js"></script>
+<!-- END NAV JAVASCRIPT -->
+</div>
+</body>
+
+</html>
+

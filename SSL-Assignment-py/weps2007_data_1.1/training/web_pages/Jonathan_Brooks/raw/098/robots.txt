@@ -1,0 +1,14 @@
+# All robots will spider the domain
+User-agent: *
+Disallow: 
+
+# Disallow Internet Archive and Wayback Machine
+User-agent: ia_archiver
+Disallow: /
+
+# Slow down the crawling of MSN
+User-agent: msnbot 
+Crawl-delay: 300
+
+ 
+ 

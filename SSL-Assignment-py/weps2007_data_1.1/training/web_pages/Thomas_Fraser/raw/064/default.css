@@ -1,0 +1,80 @@
+/* Default SiteMaker 5.0 Style Sheets */
+
+
+/* *************** */
+/*  Header Styles  */
+/* *************** */
+
+H1 {
+	font-size: 160%;
+	font-style: italic;
+	font-weight: normal;
+	font-family: verdana;
+	color: #000000;
+}
+H2 {
+	font-size: 140% ;
+	font-style: normal;
+	font-weight: bold;
+	font-family: verdana;
+	color: #000000;
+}
+H3 {
+ font-size: 120%;
+ font-family:arial;
+ font-weight:bold;
+ color:335098;
+ text-decoration:none;
+}
+H4 {
+	font-family: verdana;
+	font-style: normal;
+	color: #000000;
+}
+H9
+{
+ font-size: 14px;
+ font-family:arial;
+ font-weight:bold;
+ color:335098;
+ text-decoration:none;
+}
+
+/* *************** */
+/*   Link Styles   */
+/* *************** */
+
+A:link {
+	color: #335098;
+}
+A:visited {
+	color: #335098;
+}
+A:hover {
+	color: #000000;
+}
+A:hover.teaser {
+	color: #000000;
+}
+A:visited:hover {
+	color: #000000;
+}
+
+/* ***************************************************** */
+/*   Custom Styles (feel free to add new styles below)   */
+/* ***************************************************** */
+
+body {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 80%;
+	text-align: left;
+}
+
+table,tr,td,p,li{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+}

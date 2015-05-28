@@ -1,0 +1,123 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Doctors Hospital Health System</title>
+ 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+function StatusBar_Update()
+{
+	if (this.loc < this.width)
+	{
+		window.status = this.spaces.substring(0,this.width-this.loc)+this.text.substring(0,this.loc);
+	}
+	else
+	{
+		var len = (this.loc-this.width > this.text.length) ? (this.loc-this.width - this.text.length) : this.width;
+		window.status = this.text.substr(this.loc-this.width,len);
+	}
+	this.loc++;
+	if (this.loc > this.text.length+this.width)
+		this.loc = 0;
+}
+
+function StatusBar_Start()
+{
+	for (var i=0;i<this.width;i++)
+		this.spaces +=" ";
+
+	setInterval("gStatus.Update()",this.speed);
+}
+
+function StatusBar()
+{
+	this.width = 100;
+	this.text = "";
+	this.speed = 100;
+	
+	this.loc = 0;
+	this.spaces = "";
+
+	this.Update = StatusBar_Update;
+	this.Start = StatusBar_Start;
+}
+
+var gStatus = new StatusBar();
+
+// Customize the following settings as desired
+gStatus.width = 100;
+gStatus.text = "Happy Holidays from Doctors hospital                  Baby Pictures added to the Baby Nursery.                    Press releases updated.                    Doctors Hospital - * We Care *                    Happy 2004 from the staff of Doctors Hospital";
+gStatus.speed = 100;    
+
+// Start the ticker
+gStatus.Start();
+
+</script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+
+
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+//-->
+//-->
+</SCRIPT>
+
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgcolor="#FFFFFF">
+<table width="100%" border="0" cellspacing="2" cellpadding="1">
+  <tr>
+    <td>
+      <div align="center">
+        <p><font size="2"><strong>DOCTORS HOSPITAL GUEST SERVICES <br>
+          EMPLOYEES RECEIVE RECOGNITION</strong></font></p>
+      </div>
+      <p align="justify"><font size="2"> <img src="http://www.doctorshosp.com/images/buttons/Press/images/Reception.JPG" width="250" height="188" align="left">Doctors Hospital celebrated its Guest Services Week under the theme &#8220;Exceeding Customer Service&#8221;. Debbie Ferguson, Director of Human Resources and Training at the British Colonial was the guest speaker for the opening ceremony; Jeffrey Beckles, CEO Excellence in Motion and Nassau Cruises Ltd facilitated a customer service workshop; Philip Simon, Executive Director of the Bahamas Chamber of Commerce was the guest speaker for the awards luncheon; and Gamal Newry and Sandra Dean Patterson facilitated a security education seminar. Guest Services comprises of Security, Reception, and Volunteers, an integral part of Doctors Hospital. The following were singled out as Doctors Hospital Superstars recognized for their valuable contribution of providing excellent customer service.</font></p>
+      <table width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr valign="top">
+          <td width="33%"><font size="2"><strong>Special Performance Award</strong><br>
+            Tameka Rolle<br>
+            Perry Smith<br>
+            <strong>Outstanding Performance</strong><br>
+            Wilmore Bowe<br>
+            Nicholas Huyler<br>
+            <strong>Most Improved Associate</strong><br>
+            Coleman Bain<br>
+            Anthonia Colebrooke</font></td>
+          <td width="2%">&nbsp;</td>
+          <td width="27%"><font size="2"><strong>Certificate of Appreciation</strong><br>
+            Charles Ambrose<br>
+            Anthony Browne<br>
+            Stephan Johnson<br>
+            Gregory Neymour<br>
+            Tracy Phillips<br>
+            Monique Taylor<br>
+            Melodie Walkine</font></td>
+          <td width="1%">&nbsp;</td>
+          <td width="37%"><font size="2"><strong>Volunteers<br>
+            Certificate of Appreciation:</strong><br>
+            Gwen Bain<br>
+            Miffy Drummond<br>
+            Ivy Gates<br>
+            Monica Hennessey<br>
+            Thelma Johnson<br>
+            Margurite Leyland<br>
+            Marilyn Lightbourne<br>
+            Helena Petty</font></td>
+        </tr>
+      </table>
+      <p align="center"><font size="2"><img src="http://www.doctorshosp.com/images/buttons/Press/images/Security.JPG" width="250" height="188"></font></p>
+      <p align="center"><font size="2"><img src="http://www.doctorshosp.com/images/buttons/Press/images/Volunteers.JPG" width="250" height="188"></font></p></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>

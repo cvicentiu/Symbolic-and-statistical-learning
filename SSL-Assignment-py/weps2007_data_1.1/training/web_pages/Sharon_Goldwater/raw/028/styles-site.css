@@ -1,0 +1,106 @@
+body  {background: #001900; color: #ffffff; font: medium "Comic Sans MS"}
+
+a:visited       {color: #CC99ff; text-decoration: none}
+a:active        {color: #FF0000; text-decoration: none}
+a:link          {color: #99ccff; text-decoration: none}
+
+h1              {font-family: Georgia}
+h2              {font-family: Georgia}
+h3              {font-family: Georgia}
+h4              {font-family: Georgia}
+h5              {font-family: Georgia}
+h6              {font-family: Georgia}
+
+p               {text-align: justify}
+p.footnote      {font-size: 90%; border-top: 1px dotted #cccccc}
+em		{font-style: italic}
+strong		{font-weight: bolder}
+
+img		{margin: 4px}
+                        
+form		{font-family: Georgia}
+                
+#banner		{font-family: Georgia; background: #003300;
+        margin: 3%; padding: 4px}
+  #banner a	{color: #ffffff} 
+#welcome        {text-align: center; margin: 3%}
+#access         {text-align: left; margin: 3%; font-family: Georgia;
+	width: 94%; line-height: 4ex}
+#access form	{ display: inline }
+#menu		{text-align: center; font-family: Georgia}
+
+    .eqheight { display: table }
+    .eqheight > div { display: table-cell; border-left: 1em }
+    .eqheight > div:first-child { border-left: none }
+
+
+#links-and-content {margin: 3%}
+
+foo {
+	position: absolute; top: 0px; left: 0px;
+margin-left: 33%;
+}
+
+#links		{width: 30%; height: 100%; padding: 4px;
+	float: left;
+	font-family: Georgia; background: #003300}
+  .sidetitle	{font-weight: bold;
+	text-align: center; background: #001900}
+  .side		{font-size: 90%}
+  .sidebar-comments-head	{}
+  .sidebar-comments-body	{font-family: "Comic Sans MS"; margin: 5%}
+  .syndicate	{text-align: center; background: #001900;
+	margin: 5px; margin-top: 20px}
+
+#content	{width: 67%;
+	float: right;
+	background: #003300}
+
+#container	{margin: 3%}
+.blogbody	{margin: 3% 0%; padding: 4px; background: #003300}
+.blog h3.title	{margin: 0px}
+#container .blog h2.date	{margin: 3% 0%; border-top: 2px groove #ffffff}
+
+#index		{width: 80%; margin-left: 10%;
+		font-family: Georgia;  font-size: 120%;  text-align:center}
+
+
+.dateline	{font-size: 80%; font-style: italic; color: #cccccc;
+	text-align: right }
+
+.qotd		{font-size: 80%; font-style: italic; color: #cccccc;
+	margin: inherit 3%}
+.qotd em	{font-weight: bolder}
+.qotd cite	{text-decoration: underline}
+
+.posted      	{display: block; text-align: right;
+	font-family: Georgia; font-size: 80%}
+
+.spoiler	{background: #006600; color: #006600;
+		padding: 2px; border: thin solid white}
+.spoiler big	{color: #000000}
+
+#footer		{font-family: Georgia; background: #003300;
+        margin: 3%; padding: 4px; clear: both}
+  address	{font-family: Georgia; font-style: italic
+	position: relative; left: 4px; vertical-align: middle}
+  #power	{position: relative; right: 4px; vertical-align: middle}
+
+#banner-commentspop     {font-family: Georgia; font-size: 175%; 
+        background: #003300; margin: 3%}
+#popup-container	{margin: 3%}
+.comments-head		{font-family: Georgia; font-size: 125%;
+	margin: 3% 0%; border-top: 2px groove #ffffff}
+.comments-body		{font-family: "Comic Sans MS";
+	margin: 2px 0px 0px 0px; padding: 4px 2px;
+        background: #003300}
+.comments-post		{display: block; text-align: right;
+	font-family: Georgia; font-size: 80%}
+
+div#validated	{ margin: 0px; padding: 3px;
+	text-align: right; background: #003300 }
+
+.trackback-url		{font-family: Georgia; font-size: 125%;
+	margin: 3% 0%; border-top: 2px groove #ffffff}
+.trackback-body		{margin: 2px 3%; padding: 4px 2px;
+        background: #003300}

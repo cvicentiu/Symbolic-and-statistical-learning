@@ -1,0 +1,559 @@
+@import url("content.css");
+
+@media print {
+	.noPrint,.Commands,.Command
+	{
+	display:none;
+	}
+}
+
+@media screen {
+	.noScreen
+	{
+	display:none;
+	}
+}
+
+body,td
+{
+	font-size:10pt;
+	text-align:left;
+	vertical-align:top;
+}
+
+a
+{
+	color:blue !important;
+	text-decoration:underline;
+}
+
+a:visited
+{
+	color:purple !important;
+	text-decoration:underline;
+}
+
+table
+{
+	border-collapse:collapse;
+}
+
+td,th
+{
+	vertical-align:top;
+}
+
+h1.PageTitle
+{
+	font-family:"Arial Black", Arial, sans-serif;
+	font-weight:bold;
+}
+
+.Warning,.Warning a
+{
+	color:red !important;
+}
+
+p.Warning
+{
+	border:solid red 2px;
+	font-variant:small-caps;
+	font-weight:bold;
+	margin-left:auto;
+	margin-right:auto;
+	padding:2px;
+	text-align:center;
+}
+
+.Notice
+{
+	border:solid #CC6600 2px;
+	margin-left:auto;
+	margin-right:auto;
+	padding:2px;
+	text-align:center;
+}
+
+form table .Notice
+{
+	background-color:#BBBBEE;
+	border:none;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+	color:#003366;
+	font-family:"Times New Roman";
+	text-decoration:none;
+}
+
+h1
+{
+	color:#993300;
+	font-family:"Times New Roman", "Times", serif;
+	font-size:14pt;
+}
+
+h2
+{
+	font-size:12pt;
+}
+
+ul
+{
+	list-style-type:square;
+}
+
+ul.inline
+{
+	list-style-type:none;
+	padding:0;
+}
+
+ul.compact
+{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+ul.inline li
+{
+	display:block;
+	margin:0;
+	padding:0;
+}
+
+address
+{
+	font-family:monospace;
+	font-style:normal;
+	padding-left:3em;
+	padding-top:4pt;
+}
+
+.vcard address
+{
+	font-family:inherit;
+	font-style:normal;
+	padding:inherit;
+}
+
+tr.SubTotal
+{
+	border-top:solid black 1px;
+}
+
+tr.SubTotal td
+{
+	padding-bottom:10px;
+	text-align:right;
+}
+
+div.NavLinks
+{
+	font-family:Helvetica, Arial, sans-serif;
+	padding-bottom:2em;
+}
+
+.Commands
+{
+	border:solid black 2pt;
+	font-size:larger;
+	font-variant:small-caps;
+	margin-left:auto;
+	margin-right:auto;
+	padding:2pt;
+	text-align:center;
+}
+
+.Commands form
+{
+	clear:none;
+	display:inline;
+}
+
+tr.Commands,td.Commands
+{
+	border:inherit !important;
+	text-align:left;
+}
+
+.Commands a,a.Command
+{
+	color:blue !important;
+	font-weight:bold;
+	padding-left:2pt;
+	padding-right:2pt;
+	text-decoration:underline;
+	white-space:nowrap;
+}
+
+table.FileList
+{
+	border-left:solid black 1px;
+	border-top:solid black 1px;
+	margin-bottom:15px;
+	margin-top:10px;
+}
+
+table.FileList tr
+{
+	margin:0;
+	padding:0;
+}
+
+p.DownloadLink
+{
+	padding:2pt 5pt 5pt;
+	text-align:center;
+}
+
+form table
+{
+	width:100%;
+}
+
+td.FieldName,td.RequiredFieldName
+{
+	background-color:#E6E6E6;
+	text-align:right;
+	white-space:nowrap;
+}
+
+td.RequiredFieldName
+{
+	color:red;
+	white-space:nowrap;
+}
+
+td.RequiredFieldName:after
+{
+	color:red;
+	content:"*";
+}
+
+.Note
+{
+	font-size:small;
+	font-style:italic;
+}
+
+.subhead
+{
+	color:#993300;
+	font-family:"Times New Roman", serif;
+	margin-bottom:0;
+	margin-top:0;
+	text-align:center;
+}
+
+.subhead .bullet
+{
+	color:#003366;
+	font-size:70%;
+	vertical-align:bottom;
+}
+
+table.FileList tr td,table.FileList tr td a,table.FileList tr td img,p.DownloadLink a,p.DownloadLink img
+{
+	vertical-align:middle;
+}
+
+div.infobox
+{
+	border:1pt solid #993300;
+	margin-left:2pt;
+	margin-right:2pt;
+	padding:3pt;
+}
+
+.Report
+{
+	page-break-inside:avoid;
+}
+
+table.Report
+{
+	margin-bottom:2em;
+	min-width:600px;
+	width:100%;
+}
+
+tr.Even
+{
+	background:#90EE90;
+}
+
+.Report caption,form caption
+{
+	background-color:#666699;
+	color:white;
+	font-weight:bold;
+	text-align:center;
+	white-space:nowrap;
+}
+
+.Report th
+{
+	background-color:#D3D3D3;
+	color:black;
+	padding:2pt;
+	text-align:center;
+	white-space:nowrap;
+}
+
+.Report .SectionHeader th a,.Report caption a
+{
+	color:white;
+}
+
+.SectionHeader th
+{
+	background-color:#AAAADD;
+	color:black;
+	padding:2pt;
+	text-align:center;
+	white-space:nowrap;
+}
+
+.Amount
+{
+	font-family:monospace;
+	white-space:nowrap;
+}
+
+.NegativeAmount
+{
+	color:red;
+	font-family:monospace;
+	white-space:nowrap;
+}
+
+/* A definition to make usage errors stand out more */
+.SectionHeader td:before,td.SectionHeader:before
+{
+	background-color:red;
+	color:black;
+	content:"BUG: ";
+	font-weight:bold;
+}
+
+.ReportPager
+{
+	width:600px;
+}
+
+.ReportPager td a
+{
+	color:black;
+	text-decoration:none;
+}
+
+.ReportPager td a:hover
+{
+	color:blue;
+}
+
+.Program,.Overview
+{
+	font-family:Helvetica, Arial, sans-serif;
+}
+
+table.Program
+{
+	border-bottom:solid gray 1pt;
+	border-left:none;
+	border-right:none;
+}
+
+.Program tr
+{
+	border-bottom:solid gray 1pt;
+}
+
+.Program tr.Event.Child
+{
+	border-bottom:none;
+	border-top:none;
+}
+
+.Program .TopEvent .Name
+{
+	font-style:normal;
+}
+
+.Overview .Time
+{
+	color:#003366;
+	margin-top:0;
+}
+
+.vevent abbr {
+	text-decoration: none;
+	border: none;
+}
+
+.Event
+{
+	margin:1em;
+}
+
+.Event td:first-child
+{
+	margin:0;
+	padding-left:1em;
+}
+
+.Event .Abstract:before
+{
+	color:#003366;
+	content:"Abstract: ";
+	font-weight:bold;
+}
+
+.Event .Bio:before
+{
+	color:#003366;
+	content:"Bio: ";
+	font-weight:bold;
+}
+
+.Event .location:before
+{
+	color:#003366;
+	content:"Location: ";
+	font-weight:bold;
+}
+
+.Event.Placeholder
+{
+	color:#808080;
+}
+
+.Session
+{
+	background-color:inherit;
+	color:#003366;
+	font-family:"Times", "Times New Roman", serif;
+	font-size:12pt;
+	font-weight:bold;
+	margin-bottom:.25em;
+	margin-top:.8em;
+}
+
+img,.Program .ChairName
+{
+	border:none;
+}
+
+.Commands a:hover,a.Action:hover,.SectionHeader a:hover,caption a:hover,.Program a:hover
+{
+	text-decoration:underline;
+}
+
+form caption,form th,.Report caption,.Report th,.Program td
+{
+	padding:4pt;
+}
+
+form td,.Report td
+{
+	padding:2pt;
+}
+
+.Program .Name,.Event .Name
+{
+	font-style:oblique;
+}
+
+.Transaction .Status
+{
+	background-color:inherit;
+	color:red;
+	font-weight:bold;
+}
+
+.Transaction .Status.Approved
+{
+	color:green;
+}
+
+.Transaction .Message.Approved
+{
+	display:none;
+}
+
+.SectionHeader a,.SectionHeader a:visited,caption a,caption a:visited,.Program a,.Program a:visited,.Event a,.Event a:visited
+{
+	color:inherit !important;
+	text-decoration:none;
+}
+
+.Event .URL a
+{
+	color:blue !important;
+	text-decoration:underline !important;
+}
+
+.Program tr.Day th
+{
+	color:#003366;
+	font-family:"Times New Roman","Times", Serif;
+	font-size:12pt;
+	padding-top:4pt;
+	text-align:left;
+}
+
+.RegistrationStatus .Deleted
+{
+	color:red;
+	text-decoration:line-through;
+}
+
+.RegistrationStatus .Paid
+{
+	color:black;
+}
+
+td.RegistrationStatus
+{
+	text-align:center;
+}
+
+.formErrors,.Errors,.RegistrationStatus .Refunded
+{
+	color:red;
+}
+
+.Transaction .Status.Pending,.RegistrationStatus .Pending
+{
+	color:yellow;
+}
+
+.Program .Time,.Overview .Time,.ChairName,.ChairTitle,.TopEvent,.Program .Invited_Talk .Speaker,.Event .Speakers
+{
+	font-weight:bold;
+}
+
+#LastModified
+{
+	margin:2em;
+	text-align:center;
+}
+
+input.Amount,td.Amount,td.NegativeAmount
+{
+	text-align:right;
+}
+
+.label,.RegistrationStatus
+{
+	font-weight:bold;
+	white-space:nowrap;
+}
+
+ul.compact li,.Date,.personName,.Name
+{
+	white-space:nowrap;
+}

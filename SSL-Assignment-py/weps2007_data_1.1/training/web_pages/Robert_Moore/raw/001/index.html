@@ -1,0 +1,395 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<html>
+	<head>
+		
+	<meta name="keywords" content="">
+
+		<link type='text/css' rel='Stylesheet' href='http://research.microsoft.com/library/mnp/2/aspx/css.aspx?locale=en-us&amp;name=Menu&amp;static=Page' />
+<script type='text/javascript' language='Javascript' src='menujs%3Fmnpshell=%252FConfiguration.xml&amp;clicktrax=False'></script>
+<link rel='stylesheet' type='text/css' href='http://research.microsoft.com/library/toolbar/3.0/css.aspx?c=/Configuration.xml'/><script language='JavaScript'>var doImage=doImage;var TType=TType;
+function mhHover(tbl,idx,cls){var t,d;if(document.getElementById)t=document.getElementById(tbl);else t=document.all(tbl);if(t==null)return;if(t.getElementsByTagName)d=t.getElementsByTagName("TD");else d=t.all.tags("TD");if(d==null)return;if(d.length<=idx)return;d[idx].className=cls;}
+function footerjs(doc){if(doImage==null){var tt=TType==null?"PV":TType;doc.write('<layer visibility="hide"><div style="display:none"><img src="http://c.microsoft.com/trans_pixel.asp?source=research&TYPE=' + tt + '&p=~bobmoore&URI=%2f%7ebobmoore%2fdefault.aspx&GUID=1F4FC18C-F71E-47FB-8FC9-612F8EE59C61&lc=en-us" width=0 height=0 hspace=0 vspace=0 border=0 alt=""/></div></layer>');}}</script><script language='JavaScript' src='http://js.microsoft.com/library/svy/broker.js'></script>
+		<link type="text/css" rel="Stylesheet" href="rmcstyle.css">
+		<link type="text/css" rel="Stylesheet" href="groupStyle.css">
+
+		<meta name="author" content="Robert Moore">
+		<title>Robert C. Moore - Natural Language Processing Group</title>
+		<meta name="keywords" content=" ">
+		<meta name="description" content=" ">
+		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+		
+		
+	</head>
+	<body topmargin="0" leftmargin="0">
+		
+		<!--NOINDEX_START--><script language="Javascript">
+				if (self.name == "MNPMainFrame") top.location.href = self.location.href;
+			</script><div id="msviMasthead"><table cellpadding="0" cellspacing="0" width="100%" border="0"><tr><td width="100%"><table cellpadding="0" cellspacing="0" width="100%" height="22" border="0"><tr><td id="msviRegionIdGraphic" bgcolor="#4B92D9"></td><td width="100%" bgcolor="#1E77D3"><img src="http://research.microsoft.com/library/toolbar/3.0/gradient.aspx?a=4B92D9&amp;b=1E77D3&amp;w=250&amp;h=22&amp;d=ltr&amp;c=eFLbOmyDquZL7nbgTLBSftxozLo%3d" width="250" height="22" alt="*" title=""></td></tr></table></td><td align="right" id="msviGlobalToolbar" bgcolor="#1E77D3" height="22" nowrap="" dir="ltr"><table cellpadding="0" cellspacing="0" border="0"><tr><td id="panelTd" class="gt0" nowrap onmouseover="this.className='gt1'" onmouseout="this.className='gt0'"><a href="http://go.microsoft.com/?linkid=4412889">Quick Links</a></td><td class="gtsep">|</td><td class="gt0" nowrap onmouseover="this.className='gt1'" onmouseout="this.className='gt0'"><a href="http://go.microsoft.com/?linkid=4412890">Home</a></td><td class="gtsep">|</td><td class="gt0" nowrap onmouseover="this.className='gt1'" onmouseout="this.className='gt0'"><a href="http://go.microsoft.com/?linkid=4412891">Worldwide</a></td><td class="msviPPSpace"></td></tr></table></td></tr></table><table cellpadding="0" cellspacing="0" width="100%" border="0"><tr valign="top"><td width="100%"><table cellpadding="0" cellspacing="0" width="100%" height="42" border="0" style="height:expression(parentElement.parentElement.parentElement.parentElement.offsetHeight)"><tr valign="top"><td id="msviBrandBanner" bgcolor="0A6CCE"><a href="http://research.microsoft.com/"><img src="http://research.microsoft.com/library/toolbar/3.0/images/banners/ms_masthead_ltr.gif" width="136" height="42" alt="Microsoft" title="" border="0"></a></td><td width="100%" bgcolor="#FFFFFF"><img src="http://research.microsoft.com/library/toolbar/3.0/gradient.aspx?a=0A6CCE&amp;b=FFFFFF&amp;w=250&amp;h=42&amp;d=ltr&amp;c=NAbKOqnrunJiULJyhm6k3VulBy4%3d" width="250" height="42" alt="*" title=""></td></tr></table></td><td id="msviGlobalSearch" bgcolor="#FFFFFF"><br><form id="msviSearchForm" action="http://research.microsoft.com/search/search.aspx"><input type="hidden" name="View" value="en-us"><input type="hidden" name="charset" value="iso-8859-1"><nobr><div style="height: 18px">Search: <select onchange="document.forms[0].action=msviSearchList.options[msviSearchList.selectedIndex].value;" id="msviSearchList" style="font-family:tahoma;font-size:11px;"><option value="/search/search.aspx" selected="true">All Research Online</option><option value="/library/toolbar/3.0/search.aspx">All Microsoft.com</option></select><span width="8" style="width:8px;"></span><input name="qu" id="msviSearchBox" maxlength="255" style="width:165px;"><input id="msviGoButton" type="submit" value="Go"></div></nobr></form></td></tr></table><div id="msviMastheadHR"></div></div>
+			<table cellpadding="0" cellspacing="0" border="0" width="100%" dir="LTR">
+				<tr valign="top">
+		<td height="100%" style="overflow-x: hidden" width="181">
+  <div id="mnpMenuTop" class="mnpMenuTop" style="overflow-x: hidden; width: 181px" url="/~bobmoore/default.aspx" dir="LTR"><div class="mnpInherit"><div class="mnpMenuRow" style="border-color: #F1F1F1; background: #F1F1F1; width: 153px; overflow-x: hidden"><img width="4" height="7" border="0" alt="*" title="" class="mnpMenuArrow" src="http://research.microsoft.com/library/mnp/2/gif/arrowLTR.gif" style="left: 166px; visibility: hidden"><a href="http://research.microsoft.com/default.aspx">Microsoft Research Home</a></div><div class="mnpMenuRow" style="border-color: #F1F1F1; background: #F1F1F1; width: 153px; overflow-x: hidden" menu="m02cfd67f589541d4873944d16d639a82"><img width="4" height="7" border="0" alt="*" title="" class="mnpMenuArrow" src="http://research.microsoft.com/library/mnp/2/gif/arrowLTR.gif" style="left: 166px; visibility: hidden"><a href="http://research.microsoft.com/aboutmsr/overview/default.aspx">About Microsoft Research</a></div><div class="mnpMenuRow" style="border-color: #F1F1F1; background: #F1F1F1; width: 153px; overflow-x: hidden" menu="m8ac5d500787c47caa05cdcfa13eb26ad"><img width="4" height="7" border="0" alt="*" title="" class="mnpMenuArrow" src="http://research.microsoft.com/library/mnp/2/gif/arrowLTR.gif" style="left: 166px; visibility: hidden"><a href="http://research.microsoft.com/research/default.aspx">Research Areas</a></div><div class="mnpMenuRow" style="border-color: #F1F1F1; background: #F1F1F1; width: 153px; overflow-x: hidden"><img width="4" height="7" border="0" alt="*" title="" class="mnpMenuArrow" src="http://research.microsoft.com/library/mnp/2/gif/arrowLTR.gif" style="left: 166px; visibility: hidden"><a href="http://research.microsoft.com/research/people/default.aspx">People</a></div><div class="mnpMenuRow" style="border-color: #F1F1F1; background: #F1F1F1; width: 153px; overflow-x: hidden" menu="mb43f81415183411cb17fd21ac82356a9"><img width="4" height="7" border="0" alt="*" title="" class="mnpMenuArrow" src="http://research.microsoft.com/library/mnp/2/gif/arrowLTR.gif" style="left: 166px; visibility: hidden"><a href="http://research.microsoft.com/aboutmsr/labs/default.aspx">Worldwide Labs</a></div><div class="mnpMenuRow" style="border-color: #F1F1F1; background: #F1F1F1; width: 153px; overflow-x: hidden" menu="m9bf437740e9741d38d6ed1a393ad2e19"><img width="4" height="7" border="0" alt="*" title="" class="mnpMenuArrow" src="http://research.microsoft.com/library/mnp/2/gif/arrowLTR.gif" style="left: 166px; visibility: hidden"><a href="http://research.microsoft.com/ur/default.aspx">University Relations</a></div><div class="mnpMenuBorder" style="width: 180px"></div><div class="mnpMenuRow" style="border-color: #F1F1F1; background: #F1F1F1; width: 153px; overflow-x: hidden"><img width="4" height="7" border="0" alt="*" title="" class="mnpMenuArrow" src="http://research.microsoft.com/library/mnp/2/gif/arrowLTR.gif" style="left: 166px; visibility: hidden"><a href="http://research.microsoft.com/research/pubs/default.aspx">Publications</a></div><div class="mnpMenuRow" style="border-color: #F1F1F1; background: #F1F1F1; width: 153px; overflow-x: hidden"><img width="4" height="7" border="0" alt="*" title="" class="mnpMenuArrow" src="http://research.microsoft.com/library/mnp/2/gif/arrowLTR.gif" style="left: 166px; visibility: hidden"><a href="http://research.microsoft.com/research/downloads/default.aspx">Downloads</a></div><div class="mnpMenuRow" style="border-color: #F1F1F1; background: #F1F1F1; width: 153px; overflow-x: hidden"><img width="4" height="7" border="0" alt="*" title="" class="mnpMenuArrow" src="http://research.microsoft.com/library/mnp/2/gif/arrowLTR.gif" style="left: 166px; visibility: hidden"><a href="http://research.microsoft.com/collaboration/conferences/default.aspx">Conferences and Events</a></div><div class="mnpMenuRow" style="border-color: #F1F1F1; background: #F1F1F1; width: 153px; overflow-x: hidden"><img width="4" height="7" border="0" alt="*" title="" class="mnpMenuArrow" src="http://research.microsoft.com/library/mnp/2/gif/arrowLTR.gif" style="left: 166px; visibility: hidden"><a href="http://research.microsoft.com/collaboration/lectures/default.aspx">Lectures Online</a></div><div class="mnpMenuBorder" style="width: 180px"></div><div class="mnpMenuRow" style="border-color: #F1F1F1; background: #F1F1F1; width: 153px; overflow-x: hidden" menu="m28f8202654f34171937a00253e8bb17c"><img width="4" height="7" border="0" alt="*" title="" class="mnpMenuArrow" src="http://research.microsoft.com/library/mnp/2/gif/arrowLTR.gif" style="left: 166px; visibility: hidden"><a href="http://research.microsoft.com/aboutmsr/jobs/default.aspx">Careers</a></div><div class="mnpMenuRow" style="border-color: #F1F1F1; background: #F1F1F1; width: 153px; overflow-x: hidden" menu="m0a878e80478746498a670cae830547af"><img width="4" height="7" border="0" alt="*" title="" class="mnpMenuArrow" src="http://research.microsoft.com/library/mnp/2/gif/arrowLTR.gif" style="left: 166px; visibility: hidden"><a href="http://research.microsoft.com/aboutmsr/visitmsr/default.aspx">Visiting Microsoft Research</a></div><div class="mnpMenuRow" style="border-color: #F1F1F1; background: #F1F1F1; width: 153px; overflow-x: hidden"><img width="4" height="7" border="0" alt="*" title="" class="mnpMenuArrow" src="http://research.microsoft.com/library/mnp/2/gif/arrowLTR.gif" style="left: 166px; visibility: hidden"><a href="http://research.microsoft.com/aboutmsr/presskit/default.aspx">Press Resources</a></div><div class="mnpMenuBorder" style="width: 180px; margin-bottom: 0px"></div></div></div>
+  <div class="mnpAds" style="width: 181px; height: 100%; padding-bottom: 20px; background: #F1F1F1; border-style: solid; border-color: #999999; border-width: 0px 1px 0px 0px">
+    <center>
+      <div style="height: 20px; background: inherit"></div>
+      <a href="http://research.microsoft.com/rss/news.xml">
+        <img border="0" src="http://research.microsoft.com/images/rss.gif" alt=""></img>
+      </a><br></center>
+  </div>
+</td>
+          <td width="100%" dir="LTR">
+        <!--NOINDEX_STOP-->
+
+		
+		<br />
+
+
+
+
+<div class="TitleHeader">Robert C. Moore</div>
+
+<hr />
+
+<table cellspacing=0 cellpadding=0>
+<tr>
+
+<td>&nbsp;&nbsp;&nbsp;</td>
+
+<td> <img border=1 src="bobmoore-msr.jpg" /> </td>
+
+<td> <p> 
+<b>Robert C. Moore</b> is a Principal Researcher in the Natural
+Language Processing Group of Microsoft Research.
+</p> </td>
+
+</tr>
+</table>
+
+
+<hr />
+
+<p><strong>Background and Interests</strong></p>
+
+<p>
+Bob Moore joined Microsoft Research in 1999.  Previously, he was
+Director of the Research Institute for Advanced Computer Science
+(RIACS) at NASA Ames Research Center.  Prior to that, he held a series
+of positions with SRI International, including founding and serving as
+the first Director of SRI's Computer Science Research Centre in
+Cambridge, England; being Director of SRI's Natural-Language Research
+Program in Menlo Park, California; and concluding his career at SRI as
+Principal Scientist in the Natural-Language Research Program.
+</p>
+
+<p>
+His research has ranged widely within artificial intelligence,
+natural-language processing, and computational linguistics.  His early
+work focussed on knowledge representation and automated reasoning, and
+included the invention of autoepistemic logic.  Subsequently he has
+concentrated on natural-language processing and computational
+linguistics, including natural-language semantics, parsing and
+generation, and speech understanding.  His current work focusses on
+applications of machine learning and statistical modeling to
+natural-language processing, particularly in the context of machine
+translation.
+</p>
+
+<p> 
+He received all his post-secondary education at MIT, culminating in a
+PhD in Artificial Intelligence in 1979.  He is a Fellow of the
+American Association for Artificial Intelligence, a member of the
+editorial board of <i>Artificial Intelligence</i>, and a former member
+of the editorial board of <i>Computational Linguistics</i>.  He is
+currently serving as general chair of <a
+href="http://nlp.cs.nyu.edu/hlt-naacl06/">HLT/NAACL-2006</a>.
+</p>
+
+<hr />
+
+<p><b>Available Software</b></p>
+
+<p> <ul> <li> <a href="javascript:function openEula(url){window.open(url,'eula','top=,left=,width=500,height=500,resizable=yes,scrollbars=yes,address=no,menu=no');}openEula('/research/downloads/download.aspx?FUID=aafd5dcf-4dcc-49b2-8a22-f7055113e656')">
+<b>Bilingual Sentence Aligner</b></a> When people translate documents
+from one language to another, not all sentences are translated
+one-for-one. This Perl code implements an algorithm for finding which
+sentences do translate one-for-one in a parallel bilingual corpus.
+
+<li> <a href="javascript:function openEula(url){window.open(url,'eula','top=,left=,width=500,height=500,resizable=yes,scrollbars=yes,address=no,menu=no');}openEula('/research/downloads/download.aspx?FUID=d38f7965-283c-4b71-b743-001ade7780af')">
+<b>Context-Free Parsing Algorithms</b></a> Reference implementations
+in Perl 5 of several parsing algorithms for context-free grammars.
+
+<li> <a href="javascript:function openEula(url){window.open(url,'eula','top=,left=,width=500,height=500,resizable=yes,scrollbars=yes,address=no,menu=no');}openEula('/research/downloads/download.aspx?FUID=0c24bd1c-31ba-4a29-a76e-876aacb4ab89')">
+
+<b>Unification Grammar Sentence Realization Algorithms</b></a> Prolog
+implementations of two versions of the unfication grammar sentence
+realization aglorithm described in <a
+href="http://www.research.microsoft.com/research/pubs/view.aspx?type=Publication&id=1005">
+"A Complete, Efficient Sentence Realization Algorithm for Unification
+Grammar,"</a> appearing in the Proceedings of the International
+Natural Language Generation Conference, INLG'02, plus other associated
+code and data files.
+
+</ul></p>
+
+<hr />
+
+<p><b>Recent Publications</b></p>
+
+<p>2005</p>
+<p><ul>
+	<li>
+	        Moore, Robert C.
+		2005.
+		<a href="http://www.aclweb.org/anthology/H05-1011.pdf">
+		A Discriminative Framework for Bilingual Word Alignment</a>.
+		In <i>Proceedings, Human Language Technology Conference and Conference on Empirical Methods in Natural Language Processing</i>,
+		Vancouver, British Columbia, pp. 81-88.
+	</li>
+	<li>
+	        Moore, Robert C.
+		2005.
+		<a href="http://www.aclweb.org/anthology/W05-0801.pdf">
+		Association-Based Bilingual Word Alignment</a>.
+		In <i>Proceedings, Workshop on Building and Using Parallel Texts: Data-Driven Machine Translation and Beyond</i>,
+		Ann Arbor, Michigan, pp. 1-8.
+	</li>
+</ul></p>
+<p>2004</p>
+<p><ul>
+	<li>
+	        Moore, Robert C.
+		2004.
+		<a href="http://www.research.microsoft.com/research/pubs/view.aspx?type=Publication&id=1129">
+		On Log-likelihood-Ratios and the Significance of Rare Events</a>.
+		In <i>Proceedings of the 2004 Conference on Empirical Methods in Natural Language Processing</i>, Barcelona, Spain, pp. 333-340.
+	</li>
+	<li>
+		Moore, Robert C.
+		2004.
+		<a href="http://www.research.microsoft.com/research/pubs/view.aspx?type=Publication&id=1130">
+		Improving IBM Word Alignment Model 1</a>.
+		In <i>Proceedings, 42nd Annual Meeting of the Association for Computational Linguistics</i>, Barcelona, Spain, pp. 519-526.
+	</li>
+	<li>
+		Moore, Robert C.
+		2004.
+		<a href="http://www.research.microsoft.com/research/pubs/view.aspx?type=Publication&id=983">
+		Improved Left-Corner Chart Parsing for Large Context-Free Grammars</a>.
+		In <i>New Developments in Parsing Technology</i>, Bunt, Carroll, and Satta (eds.), Kluwer Academic Publishers, pp. 185-201.
+		Revised version of a paper appearing in <i>Proceedings, Sixth International Workshop on Parsing Technologies (IWPT 2000)</i>,
+		ACL/SIGPARSE, Trento, Italy, pp. 171-182.
+	</li>
+	<li>
+		Aue, Anthony, Arul Menezes, Bob Moore, Chris Quirk and Eric Ringger.
+		2004.
+		<a href="http://research.microsoft.com/research/pubs/view.aspx?type=Publication&id=1148">
+		Statistical Machine Translation Using Labeled Semantic Dependency Graphs</a>.
+		In <i>Proceedings, The Tenth Conference on Theoretical and Methodological Issues in Machine Translation (TMI 2004)</i>,
+		Baltimore, Maryland, pp. 125-134.
+	</li>
+	<li>
+		Banko, Michele and Robert C. Moore.
+		2004.
+		<a href="http://www.research.microsoft.com/research/pubs/view.aspx?type=Publication&id=1430">
+		Part of Speech Tagging in Context</a>.
+		In <i>Proceedings, 20th International Conference on Computational Linguistics (Coling 2004)</i>, Geneva, Switzerland, pp. 556-561.
+	</li>
+	<li>
+		Ringger, Eric, Michael Gamon, Robert C. Moore, David Rojas, Martine Smets, and Simon Corston-Oliver.
+		2004.
+		<a href="http://www.research.microsoft.com/research/pubs/view.aspx?type=Publication&id=1139">
+		Linguistically Informed Statistical Models of Constituent Structure for Ordering in Sentence Realization</a>.
+		In <i>Proceedings, 20th International Conference on Computational Linguistics (Coling 2004)</i>, Geneva, Switzerland, pp. 673-679.
+	</li>
+	<li>
+		Ringger, Eric, Robert C. Moore, Eugene Charniak, Lucy Vanderwende, and Hisami Suzuki.
+		2004.
+		<a href="http://www.research.microsoft.com/research/pubs/view.aspx?type=Publication&id=1141">
+		Using the Penn Treebank to Evaluate Non-Treebank Parsers</a>.
+		In <i>Proceedings of the 4th International Conference on Language Resources and Evaluation</i>, Lisbon, Portugal, pp. 867-870.
+	</li>
+</ul></p>
+
+<p>2003</p>
+<p><ul>
+	<li>
+		Moore, Robert C.
+		2003.
+		<a href="http://www.research.microsoft.com/research/pubs/view.aspx?type=Publication&id=1007">
+		Learning Translations of Named-Entity Phrases from Parallel Corpora</a>.
+		In <i>Proceedings, 10th Conference of the European Chapter of the Association for Computational Linguistics</i>,
+		Budapest, Hungary, pp. 259-266. 
+	</li>
+</ul></p>
+<p>2002</p>
+<p><ul>
+	<li>
+		Moore, Robert C.
+		2002.
+		<a href="http://www.research.microsoft.com/research/pubs/view.aspx?type=Publication&id=1006">
+		Fast and Accurate Sentence Alignment of Bilingual Corpora</a>.
+		In <i>Machine Translation: From Research to Real Users</i>
+		(Proceedings, 5th Conference of the Association for Machine Translation in the Americas, Tiburon, California),
+		Springer-Verlag, Heidelberg, Germany, pp. 135-244.
+	</li>
+	<li>
+		Moore, Robert C.
+		2002.
+		<a href="http://www.research.microsoft.com/research/pubs/view.aspx?type=Publication&id=1005">
+		A Complete, Efficient Sentence-Realization Algorithm for Unification Grammar</a>.
+		In <i>Proceedings, Second International Natural Language Generation Conference</i>, Harriman, New York, pp. 41-48.
+	</li>
+	<li>
+		Corston-Oliver, Simon, Michael Gamon, Eric Ringger, and Robert Moore.
+		2002.
+		<a href="http://www.research.microsoft.com/research/pubs/view.aspx?type=Publication&id=1003">
+		An overview of Amalgam: A machine-learned generation module</a>.
+		In <i>Proceedings, Second International Natural Language Generation Conference</i>, Harriman, New York, pp. 33-40.
+	</li>
+	<li>
+		Gamon, Michael, Eric Ringger, Zhu Zhang, Robert Moore, and Simon Corston-Oliver.
+		2002.
+		<a href="http://www.research.microsoft.com/research/pubs/view.aspx?type=Publication&id=1002">
+		Extraposition: A case study in German sentence realization</a>.
+		In <i>Proceedings, 19th International Conference on Computational Linguistics (Coling 2002)</i>, Taipei, Taiwan, pp. 301-307.
+	</li>
+	<li>
+		Gamon, Michael, Eric Ringger, Simon Corston-Oliver, and Robert Moore.
+ 		2002.
+		<a href="http://www.research.microsoft.com/research/pubs/view.aspx?type=Publication&id=1001">
+		Machine-learned contexts for linguistic operations in German sentence realization</a>.
+		In <i>Proceedings, 40th Annual Meeting of the Association for Computational Linguistics</i>, Philadelphia, Pennsylvania, pp. 25-32.
+	</li>
+	<li>
+		Toutanova, Kristina, and Robert C. Moore.
+		2002.
+		<a href="http://www.research.microsoft.com/research/pubs/view.aspx?type=Publication&id=1004">
+		Pronunciation Modeling for Improved Spelling Correction</a>.
+		In <i>Proceedings, 40th Annual Meeting of the Association for Computational Linguistics</i>, Philadelphia, Pennsylvania, pp. 144-151.
+	</li>
+</ul></p>
+<p>2001</p>
+<p><ul>
+	<li>
+		Moore, Robert C.
+		2001.
+		<a href="http://www.research.microsoft.com/research/pubs/view.aspx?type=Publication&id=984">
+		Towards a Simple and Accurate Statistical Approach to Learning Translation Relationships among Words</a>.
+		In <i>Proceedings, Workshop on Data-driven Machine Translation, 39th Annual Meeting and 10th Conference of the European Chapter,
+		Association for Computational Linguistics</i>, Toulouse, France, pp. 79-86.
+	</li>
+</ul></p>
+<p>2000</p>
+<p><ul>
+	<li>
+		Moore, Robert C.
+		2000.
+		<a href="http://www.research.microsoft.com/research/pubs/view.aspx?type=Publication&id=987">
+		Removing Left Recursion from Context-Free Grammars</a>.
+		In <i>Proceedings, 1st Meeting of the North American Chapter of the Association for Computational Linguistics</i>, 
+		Seattle, Washington, pp. 249-255.
+	</li>
+	<li>
+		Moore, Robert C.
+		2000.
+		<a href="http://www.research.microsoft.com/research/pubs/view.aspx?type=Publication&id=986">
+		Time as a Measure of Parsing Efficiency</a>.
+		In <i>Proceedings, Workshop on Efficiency in Large-Scale Parsing Systems,
+		18th International Conference on Computational Linguistics (Coling 2000)</i>,
+		Luxembourg, pp. 23-28.
+	</li>
+	<li>
+		Brill, Eric and Robert C. Moore.
+		2000.
+		<a href="http://www.research.microsoft.com/research/pubs/view.aspx?type=Publication&id=985">
+		An Improved Error Model for Noisy Channel Spelling Correction</a>.
+		In <i>Proceedings, 38th Annual Meeting of the Association for Computational Linguistics</i>, Hong Kong, pp. 286-293.
+	</li>
+</ul></p>
+<p>1999</p>
+<p><ul>
+	<li>
+		Moore, Robert C.
+		1999.
+		<a href="http://www.research.microsoft.com/research/pubs/view.aspx?type=Publication&id=982">
+		Using Natural-Language Knowledge Sources in Speech Recognition</a>.
+		In <i>Computational Models of Speech Pattern Processing</i>, Ponting (ed.), Springer-Verlag, pp. 304-327.
+	</li>
+</ul></p>
+
+<p><b>Selected Earlier Publications</b></p>
+
+<p><ul>
+	<li>
+		Moore, Robert C.
+		1995.
+		<i>Logic and Representation</i>, Stanford University, Center for the Study of Language and Information.
+	</li>
+	<li>
+		Moore, Robert C.
+		1994.
+		Integration of Speech with Natural Language Understanding.
+		In <i>Voice Communication between Humans and Machines</i>, Roe and Wilpon (eds.), National Academy Press, pp. 254-271.
+	</li>
+	<li>
+		Dowding, John, Robert Moore, Fran&ccedil;ois Andry, and Douglas Moran.
+		1994.
+		<a href="http://www.aclweb.org/anthology/P94-1016.pdf">
+		Interleaving Syntax and Semantics in an Efficient Bottom-up Parser</a>.
+		In <i>Proceedings, 32nd Annual Meeting of the Association of Computational Linguistics</i>, Las Cruces, New Mexico, pp. 110-116. 
+	</li>
+	<li>
+		Dowding, John, John Mark Gawron, Doug Appelt, John Bear, Lynn Cherny, Robert Moore, and Douglas Moran.
+		1993.
+		<a href="http://www.aclweb.org/anthology/P93-1008.pdf">
+		Gemini: A Natural Language System for Spoken-Language Understanding</a>.
+		In <i>Proceedings, 31st Annual Meeting of the Association of Computational Linguistics</i>, Columbus, Ohio, pp. 54-61.
+	</li>
+	<li>
+		Alshawi, Hiyan, David Carter, Jan van Eijck, Bj&ouml;rn Gamb&auml;ck, Robert C. Moore, Douglas B. Moran, Fernando C. N. Pereira,
+		Stephan G. Pulman, Manny Rayner, and Arnold G. Smith.
+		1992.
+		<i>The Core Language Engine</i>, The MIT Press.
+	</li>
+	<li>
+		Moore, Robert C.
+		1985.
+		A Formal Theory of Knowledge and Action.
+		In <i>Formal Theories of the Commonsense World</i>, Hobbs and Moore (eds.), Ablex Publishing Corp, pp. 319-358.
+		Reprinted in <i>Logic and Representation</i>, pp. 27-70.
+	</li>
+	<li>
+		Moore, Robert C.
+		1985.
+		Semantical Considerations on Nonmonotonic Logic.
+		<i>Artificial Intelligence</i>, Vol. 25, No. 1, pp. 75-94.
+		Reprinted in <i>Logic and Representation</i>, pp. 123-144.
+</ul></p>
+<p>
+For a review by <a href="http://www.isi.edu/~marcu/">Daniel Marcu</a> of <i>Logic and Representation</i>, 
+see <a href="http://www.isi.edu/~marcu/papers/moore.ps"> <i>Computing Reviews</i>, Vol. 37, No. 5, pages 246-247, May 1996</a>. 
+</p>
+
+<hr>
+<p><a href='http://research.microsoft.com/nlp/'>Natural Language Processing Group's home page.</a></p>
+
+
+
+		<form name="default" method="post" action="http://research.microsoft.com/~bobmoore/default.aspx" id="default">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTgxOTQwMjMzM2RkQErc9hNo5oO/2aIybImYONbuwwU=" />
+</div>
+
+		</form>
+		
+
+		
+					</td>
+		
+				</tr>
+			</table>
+		<!--NOINDEX_START-->
+<br clear="all" style="line-height: 1px; overflow: hidden"><table id="msviFooter" width="100%" cellpadding="0" cellspacing="0"><tr valign="bottom"><td id="msviFooter2" style="filter:progid:DXImageTransform.Microsoft.Gradient(startColorStr='#FFFFFF', endColorStr='#3F8CDA', gradientType='1')"><div id="msviLocalFooter"><nobr><a href="http://go.microsoft.com/?linkid=317027" target="_top">Manage Your Profile</a> |</nobr><wbr></wbr><nobr><a href="http://go.microsoft.com/?linkid=4515498" target="_parent">Contact Us</a></nobr></div><div id="msviGlobalFooter"><span dir="ltr">&#169;2007 Microsoft Corporation. All rights reserved.&nbsp;</span><nobr><a href="http://go.microsoft.com/?linkid=4412892" target="_parent">Terms of Use</a> |</nobr><wbr></wbr><nobr><a href="http://go.microsoft.com/?linkid=4412893" target="_parent">Trademarks</a> |</nobr><wbr></wbr><nobr><a href="http://go.microsoft.com/?linkid=4412894" target="_parent">Privacy Statement</a></nobr></div></td></tr></table><div style="display:none"><script type="text/javascript">var gDomain="m.webtrends.com";var gDcsId="dcsslvlng89k7may281d5dedm_8n8e";var gTrackEvents="1";var gFpc="WT_FPC";if(document.cookie.indexOf(gFpc+"=")==-1){document.write("<SCR"+"IPT TYPE='text/javascript' SRC='"+"http"+(window.location.protocol.indexOf('https:')==0?'s':'')+"://"+gDomain+"/"+gDcsId+"/wtid.js"+"'><\/SCR"+"IPT>");}</script><script src="http://js.microsoft.com/library/mnp/2/wt/js/wt.js" type="text/javascript"></script><noscript><img border="0" name="DCSIMG" width="1" height="1" src="http://m.webtrends.com/dcsslvlng89k7may281d5dedm_8n8e/njs.gif?dcsuri=/nojavascript&WT.js=No"/></noscript></div><layer visibility="hide"><div style="display:none"><img alt="" width="0" height="0" border="0" hspace="0" vspace="0" src="http://c.microsoft.com/trans_pixel.asp?source=research&amp;TYPE=PV&amp;p=~bobmoore&amp;URI=%2f%7ebobmoore%2fdefault.aspx&amp;GUID=1F4FC18C-F71E-47FB-8FC9-612F8EE59C61&amp;lc=en-us"></div></layer>
+	</body>
+</html>

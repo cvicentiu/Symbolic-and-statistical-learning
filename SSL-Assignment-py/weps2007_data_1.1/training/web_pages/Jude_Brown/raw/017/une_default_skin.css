@@ -1,0 +1,38 @@
+
+@import url("https://www.une.edu.au/styles/une_styles.css");
+/* Skin Elements */
+/* Global UNE Header */
+#global_links #une_logo {
+	background: #10825E;
+}
+#global_links {
+	background: #01402C url(https://www.une.edu.au/images/header_bg.jpg) 150px 0  repeat-y;
+}
+/* If the global links BG is dark the everything should be white */
+#global_links,
+#global_links a,
+#global_links a:hover {
+	color: white;
+}
+#global_links a:hover {
+	text-decoration: underline;
+}
+/* End white stuff */
+/* ------ Extra internal formatting -------- */
+#une_logo a {
+position: absolute;
+width: 86px;
+height: 56px;
+top: 11px;
+left: 49px;
+ background-image: url(https://www.une.edu.au/images/logos/une_logo_white_on_green.gif);
+ background-repeat: no-repeat;
+overflow: hidden;
+}
+#global_links #une_logo a:hover {
+text-decoration: none !important;
+}
+#une_logo img {
+visibility: hidden;
+}
+/* EOF une_default_skin.css */

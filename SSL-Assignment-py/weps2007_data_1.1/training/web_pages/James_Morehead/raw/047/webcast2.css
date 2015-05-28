@@ -1,0 +1,258 @@
+a img
+{
+	border: none 0px;
+}
+
+table.wcEventDetails
+{
+}
+
+table.wcEventDetails td
+{
+	vertical-align: top;
+	padding-left: 0.25em;
+}
+
+table.wcEventDetails td.wcTableLabel
+{
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	text-align: right;
+	border-right: solid 2px gray;
+	padding-right: 0.25em;
+}
+
+table.wcEventDetails span.wcTitle
+{
+	color: #048;
+	font-size: 160%;
+	font-family: Georgia, Times New Roman, Times, serif;
+	font-weight: bold;
+}
+
+ul.wcSearchList span.wcTitle
+{
+	color: #048;
+	font-size: 140%;
+	font-family: Georgia, Times New Roman, Times, serif;
+	font-weight: bold;
+}
+
+table.wcEventDetails span.wcContributor, ul.wcSearchList span.wcContributor
+{
+	font-size: 120%;
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	font-weight: bold;
+}
+
+ul.wcSearchList span.wcSponsor
+{
+	font-size: 90%;
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+}
+
+ul.wcSearchList span.wcDate
+{
+	color: #444;
+	font-size: 90%;
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+}
+
+table.wcEventDetails span.wcDate, table.wcEventDetails span.wcSponsor
+{
+	font-size: 90%;
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+}
+
+div#wcWatchNow
+{
+	text-align: center;
+	
+	margin-left: 10% !important;
+	margin-right: 10% !important;
+	margin-bottom: 0.5em;
+	padding-top: 0.5em !important;
+	padding-bottom: 0.5em !important;
+	
+	border-style: dotted;
+	border-width: 1px;
+	border-color: gray;
+/*
+	border-top:	dotted 1px gray;
+	border-bottom:	dotted 1px gray;
+*/
+}
+
+div#wcWatchNow a
+{
+	font-weight: bold;
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+div#wcWatchNow a:hover
+{
+	border-width: 0px;
+}
+
+div#wcWatchNow a img, div.wcTodayList a img, table.wcEventDetails a img
+{
+	border-style: solid;
+	border-width: 1px;
+	border-color: white;
+}
+
+div#wcWatchNow a:hover img, div.wcTodayList a:hover img, table.wcEventDetails a:hover img
+{
+	border-color: black;
+}
+
+div.wcTodayList
+{
+	font-size: 90%;	
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+}
+
+div.wcTodayList
+{
+	float: none;
+	clear: both;
+	margin-bottom: 1em;
+	padding-right: 3%;
+	padding-left: 3%;
+}
+
+div.wcTodayList span.wcTitle, div.wcTodayList span.wcTitle a
+{
+	font-size: 130%;
+	font-family: Georgia, Times New Roman, Times, serif;
+	font-weight: bold;
+}
+
+div.wcTodayList span.wcContributor
+{
+	font-weight: bold;
+	font-size: 110%;
+}
+
+div.wcTodayList span.wcSponsor
+{
+	font-style: italic;
+	font-size: 110%;
+}
+
+div.wcTodayList span.wcTime
+{
+	color: gray;
+	font-size: 100%;
+	font-weight: bold;
+}
+
+div.wcTodayList div.wcFloatDetails
+{
+	float: left;
+	clear: left;
+	width: 66%;
+	margin-bottom: 1em;
+}
+
+div.wcTodayList div.wcFloatLinks
+{
+	float: right;
+	clear: right;
+	width: 33%;
+	margin-bottom: 1em;
+
+	text-align: center;
+}
+
+div.wcTodayList div.wcFloatLinks a
+{
+	text-decoration: none;
+	border-bottom: 0px none;
+
+}
+
+ul.wcEventList, ul.wcSearchList
+{
+	font-size: 90%;
+	list-style-type: none;
+	margin: 0 0 0 0.5em;
+	padding: 0 0 0.5em 0;
+}
+
+ul.wcEventList li, ul.wcSearchList li
+{
+	margin-bottom: 0.5em;
+}
+
+ul.wcEventList span.wcTitle, ul.wcEventList span.wcTitle a, ul.wcSearchList span.wcTitle a
+{
+	font-weight: bold;
+}
+
+ul.wcEventList span.wcContributor
+{
+	font-style: italic;
+}
+
+ul.wcEventList span.wcDate
+{
+	color: gray;
+	font-size: 90%;
+}
+
+
+div.wcLeftBody
+{
+	float:		left;
+	clear:		left;
+	width:		76%;
+}
+
+div.wcLeftBody div
+{
+	clear: both;
+}
+
+div.wcRightSidebar
+{
+	float:		right;
+	clear:		right;
+	margin:		0.5em 0px 0.5em 1em;
+	width:		20%;
+}
+
+div.wcSidebarBox
+{
+	padding:	0.5em;
+	border:		dotted 1px black;
+	background: #cdf none;
+	color:		black;
+	margin-bottom: 1em;
+	
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	font-size: 90%;
+	text-align: center;
+}
+
+div.wcSidebarBox p
+{
+	font-size:		110%;
+	text-align:		left;
+	margin-left:	1.5em;
+}
+
+div.wcSidebarBox a
+{
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+	border: none 0px black;
+}
+
+div.wcSidebarBox img
+{
+	border-style: none;
+	border-width: 0px;
+}

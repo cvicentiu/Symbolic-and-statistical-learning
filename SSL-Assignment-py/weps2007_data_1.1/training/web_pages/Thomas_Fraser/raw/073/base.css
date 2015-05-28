@@ -1,0 +1,411 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: verdana, helvetica, arial;
+	color: #000;
+}
+
+a {
+	text-decoration: none;
+	color: blue;
+}
+
+a:hover {
+	text-decoration: none;
+	color: red;
+}
+
+h1 {
+	margin: 0 0 5px 0;
+}
+
+h2 {
+	margin: 5px 0 0 0;
+	padding: 5px 0 0 0;
+}
+
+p {
+	margin: 2px 0 10px 0;
+}
+
+input {
+	margin: 0 5px 0 0;
+	padding: 0;
+}
+
+#header {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+#headerLeft {
+	padding: 0;
+	text-align: middle;
+}
+
+#headerRight {
+	padding: 0;
+	text-align: right;
+}
+
+#mainBody {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+#leftBar {
+	padding: 10px;
+	vertical-align: top;
+}
+
+.menu, .logIn {
+	border-top: 1px #999 solid;
+	border-left: 1px #999 solid;
+	border-right: 1px #ccc solid;
+	border-bottom: 1px #ccc solid;
+	margin: 0 0 10px 0;
+}
+
+.menu a {
+	display: block;
+	text-decoration: none;
+	padding: 2px 5px 4px 5px;
+	color: #000;
+}
+
+.menu a:hover {
+	text-decoration: none;
+}
+
+.menu h1, .menu h2, .logIn h1 {
+	font-weight: bold;
+	padding: 0 5px 1px 5px;
+	margin: 0;
+	border-bottom: 1px #999 solid;
+	border-right: 1px #999 solid;
+}
+
+.menu ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+.menu li {
+	padding: 0;
+	border-bottom: 1px #999 solid;
+	border-right: 1px #999 solid;
+}
+
+li.subMenuList {
+	padding: 0;
+	border-bottom: 0 #000 solid;
+	border-right: 1px #999 solid;
+}		
+
+a.subMenuLink {
+	padding: 2px 4px 3px 40px;
+}
+
+.menu img {
+	border: 0;
+}
+
+#content img.noborder {
+	border: 0;
+	margin: 0;
+}
+
+.meetingLink a:hover {
+	background-color: #FCBDBD;
+}
+
+.defaultLink a:hover {
+	background-color: #D8D9E4;
+}
+
+.learningLink a:hover {
+	background-color: #C3E0FA;
+}
+
+.funLink a:hover {
+	background-color: #FCF6D4;
+}
+
+.supportLink a:hover {
+	background-color: #F7DFBA;
+}
+
+.newsLink a:hover {
+	background-color: #CAFAE9;
+}
+
+.logIn form {
+	padding: 2px 5px 4px 5px;
+	margin: 0;
+	border-bottom: 1px #999 solid;
+	border-right: 1px #999 solid;
+}
+
+.textSize {
+	padding: 2px 5px 2px 4px;
+}
+
+.standard {
+	font-size: 14px;
+	color: #ffffff
+}
+
+.larger {
+	font-size: 16px;
+	color: #ffffff
+}
+
+.largest {
+	font-size: 18px;
+	color: #ffffff
+}
+
+#content {
+	padding: 8px 20px 0 10px;
+	vertical-align: top;
+	width: 540px;
+}
+
+#rightBar {
+	padding: 0;
+	margin: 0;
+}
+
+#content img {
+	border: 1px #999 solid;
+	margin: 5px;
+} 
+
+#footer {
+	width: 100%;
+	padding: 0;
+	margin: 0;	
+}
+
+#footer td {
+	padding: 10px;
+	margin: 0;
+}
+
+#dhtmltooltip {
+position: absolute;
+width: 200px;
+border: 2px #000 solid;
+padding: 4px;
+visibility: hidden;
+z-index: 100;
+}
+
+#regTable {
+	width: 100%;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+}
+
+td.regSpacer {
+	height: 20px;
+}
+
+#regTable td {
+	padding: 10px;
+	vertical-align: top;
+}
+
+#regTable img {
+	border: 0;
+}
+
+.adminTable {
+	border: 1px #D8D9E4 solid;
+	width: 100%;
+}
+
+.adminTd1 {
+	background: #F0F1F8;
+	padding: 2px 5px 2px 5px;
+	vertical-align: top;
+}
+.adminTd2 {
+	background: #D8D9E4;
+	padding: 2px 5px 2px 5px;
+	vertical-align: top;
+}
+
+.interestsTable {
+	padding : 0;
+}
+
+.interestsTd {
+	padding: 2px 5px 5px 5px;
+	vertical-align: top;
+	width: 140px;
+	border: 2px #fff dashed;
+}
+
+.interestsWrapper {
+	margin: 10px 0 0 0;
+	padding: 3px;
+	border: 1px #FCBDBD solid;
+	background: #F7E1E1;
+}
+	
+
+.messageTd {
+	padding: 2px 5px 5px 5px;
+	vertical-align: top;
+	border: 2px #fff dashed;
+}
+
+td.button1col {
+	border-top: 1px #aaaabb solid;
+	border-left: 1px #aaaabb solid;
+	border-bottom: 1px #333333 solid;
+	border-right: 1px #333333 solid;
+}
+
+.button1col a {
+	height:68px;
+	display: block;
+	color: #000000;
+}
+
+
+td.button4row {
+	border-top: 1px #aaaabb solid;
+	border-left: 1px #aaaabb solid;
+	border-bottom: 1px #333333 solid;
+	border-right: 1px #333333 solid;
+}
+
+.button4row a {
+	display: block;
+	height:278px;
+	color: #000000;
+}
+
+
+td.button4col {
+	border-top: 1px #aaaabb solid;
+	border-left: 1px #aaaabb solid;
+	border-bottom: 1px #333333 solid;
+	border-right: 1px #333333 solid;
+}
+
+.button4col a {
+	display: block;
+	height: 50px;
+	color: #000000;
+}
+
+
+
+.content_td {
+	padding: 4px 8px 8px 8px;
+	text-align: left;
+	border-top: 1px #aaaabb solid;
+	border-left: 1px #aaaabb solid;
+	border-bottom: 1px #333333 solid;
+	border-right: 1px #333333 solid;
+}
+
+.list_td {
+	padding: 0;
+	border-top: 1px #aaaabb solid;
+	border-left: 1px #aaaabb solid;
+	border-bottom: 1px #333333 solid;
+	border-right: 1px #333333 solid;
+}
+
+
+.heading_td {
+	padding: 2px 2px 2px 8px;
+	color: #ffffff;
+	text-align: left;
+	border-top: 1px #aaaabb solid;
+	border-left: 1px #aaaabb solid;
+	border-bottom: 1px #333333 solid;
+	border-right: 1px #333333 solid;
+}
+
+
+table.element_table {
+	padding: 0 0 10px 0;
+}
+
+
+.list_td a {
+	display: block;
+	color: #111111;
+	padding-left: 10px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-right: 5px;
+	text-decoration: none;
+	text-align: left;
+	border: 0;
+	margin: 0;
+}
+
+
+.cms {
+	border: 1px #000000 dashed;
+}
+
+.cms_container {
+	border: 1px #0000ff dashed;
+}
+
+
+.cmsTable {
+	border: 1px #ccc solid;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+.cmsTdLeft {
+	width: 80%;
+	background-color: #F0F1F8;
+	padding: 4px;
+	text-align: top;
+}
+
+.cmsTdRight {
+	width: 20%;
+	background-color: #D8D9E4;
+	padding: 4px;
+}
+
+.cmsTd {
+	width: 100%;
+	padding: 4px 4px 0 4px;
+}
+
+
+.cmsWrapperTable {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	width: 100%;
+}
+
+
+.cmsWrapperTd {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+.borderLess {
+	border: 0;
+}
+

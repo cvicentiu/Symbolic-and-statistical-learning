@@ -1,0 +1,67 @@
+div.ImagePlayer {
+  display:none;
+}
+div.IPCaption
+{
+	width: 450px;
+	font-size: 12px;
+	overflow: auto;
+	margin-left: 5px;
+	font-family: Arial;
+}
+div.IPCredit
+{
+	width: 110px;
+	font-size: 12px;
+	overflow: auto;
+	margin-left: 5px;
+	font-family: Arial;
+}
+div.IPView {
+  position: relative;
+  width:100%;
+  border-bottom:solid 1px #ffffff;
+  padding:0px;
+  text-align:center;
+  overflow: hidden;
+}
+
+div.IPTransition 
+{
+}
+pre.IPArgs
+{
+	display: none;
+	font-family: Arial;
+}
+
+div.IPControlsDiv
+{
+	height: 22px;
+	float: left;
+	padding-top: 5px;
+	width: 280px;
+	background-color: #e1e8f0;
+}
+
+
+div.IPControlsPlay, div.IPControlsReverse, div.IPControlsForward, div.IPControlsBegin, div.IPControlsEnd {
+  float:left;
+  cursor:pointer;
+}
+
+div.IPClear {
+  clear:both;
+}
+span.On {
+  display:none;
+}
+.photographerTitle
+{
+    color:#999999; float:right; margin:-23px 10px 0px 0px; width:155px; text-align:right; margin-right:8px;
+}
+
+* html div.photographerTitle
+{
+    margin-right:5px;
+}

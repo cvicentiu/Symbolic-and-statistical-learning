@@ -1,0 +1,465 @@
+/*
+-----------------------------------------------------
+Theme Name: Battle Born
+Theme URI: http://www.battlebornpolitics.com/
+Description: The default theme for Battle Born Politics
+Author: Matt Margolis
+Author URI: http://www.margolismedia.org/
+----------------------------------------------------- 
+*/
+
+
+BODY
+{
+ background: #8B5004 url('/site/bg.jpg') fixed top left repeat;
+ margin-top: 60px;
+ margin-bottom: 60px;
+ 
+}
+
+
+a img {
+border:0px;
+}
+
+/* STRUCTURE */
+
+#page {
+ width:804px;
+ height: 90%;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+
+
+#frame {
+ background: white;
+ float: left;
+ width: 804px;
+ 
+}
+
+#topbanner {
+ float: left;
+ background: url('/site/header.jpg') no-repeat;
+ width: 804px;
+ height: 145px;
+}
+
+
+.footer {
+ background: url('/site/footer.gif') no-repeat;
+ width: 804px;
+ height: 52px;
+ color: #8B5004;
+ font: 11px times, serif;
+ font-weight: normal;
+ margin-left: 0px;
+}
+ 
+#main {
+ float: left;
+ width: 540px;
+ background-color:transparent;
+ padding: 2px;
+ margin-left: 0px;
+}
+
+#main a img {
+border:0px;
+}
+
+#side {
+ float: left;
+ width:240px;
+ padding-left: 0px;
+ margin-right: 0px;
+ font-size:11px; 
+ font-family: times, serif;
+ color: #000;
+ 
+}
+
+
+#sidebar {
+ float: left;
+ width:240px;
+ background-color:transparent;
+ text-align:right;
+ font-size:11px; 
+ font-family: times, serif;
+
+}
+
+.side1 {
+ padding-right: 6px;
+ padding-left: 8px;
+ padding-top: 10px;
+ padding-bottom: 5px;
+ font-size:11px; 
+ font-family: times, serif;
+ line-height: 130%;
+ text-align:left;
+ color: #000;
+}
+
+
+
+#sidebar a:link 
+{
+ color: #8B5004;
+ text-decoration: none;
+ }
+
+#sidebar a:visited 
+{
+ color: #8B5004;
+ text-decoration: none;
+ 
+}
+
+#sidebar a:active 
+{
+ color: #8B5004;
+ text-decoration: none;
+
+}
+
+#sidebar a:hover
+{
+ color: #8B5004;
+ text-decoration: underline;
+
+}
+
+.sideheader {
+ font: 11px arial, verdana;
+ color: #ffffff;
+ background: #8B5004;
+ text-transform: uppercase;
+ font-weight: normal;
+ text-align: center;
+ padding: 3px;
+ }
+
+.container {
+ margin-left: 5px;
+}
+
+
+a, a:hover img {border:0px;}
+/* Links */
+
+
+
+
+/* Formatting */
+
+.main_date {
+ color: #8B5004;
+ font-family: times, serif;
+ text-align: right;
+ font-weight: normal;
+ font-size: 11px;
+ margin-left: 0px;
+}
+
+.main_title {
+ font: 13px times, serif;
+ color: #8B5004;
+ font-weight: bold;
+ line-height: 150%;
+ margin-left: 8px;
+ text-transform: uppercase;
+
+ }
+
+.main_title a, a:visited, a:active, a:hover {
+color: #8B5004;
+text-decoration: none;
+}
+
+#mail {
+ display:inline;
+}
+
+
+.main_post {
+ font-family: times;
+ color: #000;
+ background: #ffffff;
+ font-size: 12px;
+ font-weight: normal;
+ line-height: 150%;
+ margin-left:10px;
+ overflow: hidden;
+}
+
+
+
+.post {
+  padding:2px;
+ line-height: 130%;
+}
+
+.main_advertisement {
+ font-family: times, serif;
+ color: #000;
+ background: #8B5004;
+ font-size: 12px;
+ font-weight: bold;
+ margin-left:10px;
+ overflow: hidden;
+}
+
+.advertisment {
+  padding:2px;}
+
+.content {
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 0px;
+padding-bottom: 0px;
+line-height: 110%;
+text-align: justify;
+}
+
+.content img {
+padding: 10px;
+}
+
+
+.floatimgleft {
+        float:left;
+        margin-top:0px;
+        margin-right:2px;
+        margin-bottom:0px;
+        }
+
+.floatimgright {
+        float:right;
+        margin-top:0px;
+        margin-right:0px;
+        margin-left:2px;
+        margin-bottom:0px;
+        }
+
+.main_post a {
+ color: #800000;
+ text-decoration: none;
+}
+
+.main_post a:active {
+ color: #800000;
+ text-decoration: none;
+}
+
+.main_post a:visited {
+ color: #800000;
+ text-decoration: none;
+}
+
+.main_post a:hover {
+ color: #800000;
+ text-decoration: underline;
+}
+
+.main_feedback {
+ font-size:11px;
+ color: #000;
+ font-family: times, serif;
+ font-weight: normal;
+ text-align: right;
+padding-right: 10px;
+ }
+
+.main_feedback a:link 
+{
+color: #800000;
+ text-decoration: none;
+ 
+ }
+
+.main_feedback a:visited 
+{
+ color: #800000;
+ text-decoration: none;
+ 
+ 
+}
+
+.main_feedback a:active 
+{
+color: #800000;
+ text-decoration: none;
+ 
+
+}
+
+.main_feedback a:hover
+{
+color: #800000;
+ text-decoration: underline;
+ 
+
+}
+
+.navi {
+font-size:10px;
+ color: #000;
+ font-family: times, serif;
+ font-weight: bold;
+ text-align: center;
+
+
+}
+
+.navi a:link 
+{
+ color: #800000;
+ text-decoration: none;
+ }
+
+.navi a:visited 
+{
+ color: #800000;
+ text-decoration: none;
+ 
+}
+.navi a:active 
+{
+ color: #800000;
+ text-decoration: none;
+
+}
+
+.navi a:hover
+{
+ color: #800000;
+ text-decoration: underline;
+
+}
+
+
+blockquote {
+ 
+ font-family: arial, verdana;
+ font-size: 11px;
+ text-align: left;
+ line-height: 130%;
+ padding-right: 6px;
+ padding-left: 6px;
+ padding-top: 6px;
+ padding-bottom: 6px;
+ border:1px solid #800000;
+ background: #ffffff;
+ 
+}
+
+
+form {
+ margin:0px;
+ padding:0px;
+}
+
+
+#s {
+ border:1px solid #800000;
+ background: #efede1;
+ width:70%;
+ font-family:times, serif;
+ font-size:10px;
+ 
+}
+
+#b {
+ border:1px solid #800000;
+ background: #efede1;
+ width:30px;
+ align:center;
+ font-family:times, serif;
+ font-size:10px;
+ 
+ 
+}
+
+#button {
+ border:1px solid #800000;
+ background: #efede1;
+ color: #000;
+ width:60px;
+ align:center;
+ font-family:times, serif;
+ font-size:10px;
+ margin-top:5px;
+}
+
+INPUT{
+ border:1px solid #800000;
+ background: #efede1;
+}
+
+TEXTAREA{
+ border:1px solid #800000;
+ background: #efede1;
+ width:400px;
+}
+
+
+<!-- /* Comments Form Styles */ -->
+
+.comments_title {
+ font: 12px  times, serif;
+ color: #800000;
+ font-weight: bold;
+ margin-left: 0px;
+ text-transform: uppercase;
+ text-decoration: underline
+
+ }
+
+.comments_head {
+ font: 12px times, serif;
+ color: #800000;
+ font-weight: bold;
+ margin-left: 0px;
+ text-transform: uppercase;
+ 
+ }
+
+.comment_author {
+font-size:10px;
+ color: #000;
+ font-family: times, serif;
+ font-weight: bold;
+ text-align: left;
+
+
+}
+
+.comment_author a:link 
+{
+ color: #800000;
+ text-decoration: none;
+ }
+
+.comment_author a:visited 
+{
+ color: #800000;
+ text-decoration: none;
+ 
+}
+.comment_author a:active 
+{
+ color: #800000;
+ text-decoration: none;
+
+}
+
+.comment_author a:hover
+{
+ color: #800000;
+ text-decoration: underline;
+
+}

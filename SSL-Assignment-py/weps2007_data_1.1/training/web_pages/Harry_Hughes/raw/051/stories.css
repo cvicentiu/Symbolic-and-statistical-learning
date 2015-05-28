@@ -1,0 +1,235 @@
+/* CSS Styles for Stories section */
+
+table#main a,
+table#main a:link,
+table#main a:visited,
+table#main a:active		{	color:				#344F1C;
+									font-weight:		bold;
+									text-decoration:	none;					}
+table#main a:hover		{	text-decoration:	underline;			}
+
+table#main										{	margin-top:		2px;							}
+
+table#main td#top div.title				{	background:		#FFF4CE;
+														font-weight:	bold;
+														color:			#666;
+														margin:			0;
+														padding:			7px 8px 5px 9px;			}
+table#main td#top div.title h1			{	display:			inline;
+														font-size:		94%;
+														color:			#333129;						}
+
+table#main td#top div.title h2			{	display:			inline;
+														font-size:		78%;
+														padding-left:	5px;							}
+
+table#main td#top div.crumbtrail			{	background:		#FFF;
+														margin:			0;
+														padding:			3px 9px 6px 9px;			}
+table#main td#top div.crumbtrail strong
+													{	color:			#000;
+														font-size:		70%;
+														font-weight:	bold;							}
+table#main td#top div.crumbtrail p		{	color:			#666;
+														font-size:		70%;
+														font-weight:	bold;
+														margin:			0;
+														padding:			1px 0 0 0;					}
+
+.maincontent								{	background:	#FFF;						}
+.maincontent div#story					{	padding:		0 8px 10px 0;			}
+
+.maincontent div#story div#image		{	float:			right;
+													background:		#FFF;
+													padding:			0 0 0 8px;
+													margin-left:	5px;					}
+.maincontent div#story div#image-wide
+												{	margin-top:		12px;					}
+.maincontent div#story div#image p,
+.maincontent div#story div#image-wide p
+												{	background:		#FFF9E3;
+													font-size:		70%;
+													font-weight:	bold;
+													color:			#666;
+													line-height:	112%;
+													text-align:		left;
+													padding:			4px 5px 4px 5px;
+													margin:			2px 0 5px 0;		}
+.maincontent div#story div#image-wide p
+												{	margin:			2px 0 15px 0;		}
+
+
+/* changed for definition list*/
+
+.maincontent div#story dl				{	background:		#FFF9E3;
+													padding:			7px 0 2px 5px;
+													margin:			0 0 0 7px;			}
+.maincontent div#story dl dt,
+.maincontent div#story dl dd			{	font-size:		70%;
+													font-weight:	bold;
+													color:			#666;
+													margin: 			0;
+													padding:			0;						}
+.maincontent div#story dl dt			{	float:			left;					}
+.maincontent div#story dl dd			{	padding-bottom: 4px;					}
+													
+
+.maincontent div#story div#body		{	padding:			0;
+													margin:			10px 0 0 10px;		}
+
+/* Bof: body text styles (the same for user and stories) */
+.maincontent div#story div#body p	{	font-size:		75%;
+													color:			#000;
+													line-height:	144%;
+													margin: 			0;
+													padding: 		0 0 8px 0;			}
+.maincontent div#story div#body blockquote
+												{	font-size:		75%;
+													color:			#000;
+													line-height:	144%;					}
+.maincontent div#story div#body blockquote p
+												{	font-size:		100%;					}
+
+.maincontent div#story div#body h3	{	font-size:		86%;
+													color:			#000;
+													margin: 			6px 0 2px 0;
+													padding: 		0;						}
+
+.maincontent div#story div#body ul	{	font-size:		75%;
+													padding:			0 0 0 16px;
+													margin:			6px 0 14px 0;		}
+.maincontent div#story div#body li	{	padding:			0 0 0 0;
+													margin:			0 0 5px 0;
+													line-height:	130%;					}
+
+.maincontent sup							{	padding-left:	1px;
+													font-size:		90%;
+													line-height: 	0;
+													font-weight:	bold;					}
+
+.maincontent div#story div#body p.footnote
+												{	margin: 			6px 0 6px 0;
+													padding: 		0;						}
+
+.maincontent div#story div#body p.disclaimer
+												{	clear:			both;
+													margin:			0;
+													padding:			12px 0 0 0;			}
+
+.maincontent sup.about					{	padding-left:	4px;
+													font-size:		80%;
+													vertical-align: super;
+													font-weight:	bold;					}
+/* Eof: body text styles (the same for user and stories) */
+
+
+.maincontent div#story div#body p.image-removed
+												{	font-style:		italic;				
+													font-weight:	bold;					}
+
+
+.maincontent div#forum		{	padding:			16px 8px 10px 8px;		}
+.maincontent div#forum h2	{	background:		#F5A839;
+										color:			#FFF;
+										font-size:		88%;
+										font-weight:	bold;
+										margin:			0;
+										padding:			8px 13px 8px 13px;		}
+.maincontent div#forum h3	{	color:			#B84100;
+										font-size:		88%;
+										font-weight:	bold;
+										margin:			6px 13px 0px 13px;
+										padding:			0;								}
+.maincontent div#forum p.info
+									{	color:			#000;
+										font-size:		70%;
+										line-height:	120%;
+										margin:			2px 13px 16px 13px;
+										padding:			0;								}
+
+/* styles for all threads */
+.maincontent div#forum div.thread
+									{	margin:				10px 0 0 0;
+										padding-bottom:	9px;
+										border:				solid 5px #FFD69C;	}
+
+/* styles for all messages */
+.maincontent div#forum div.thread div.first-message p,
+.maincontent div#forum div.thread div.message p
+									{	color:			#000;
+										font-size:		75%;
+										line-height:	144%;
+										padding:			8px 8px 0px 8px;
+										margin:			0;								}
+
+/* styles for the first message */
+.maincontent div#forum div.thread div.first-message h3
+									{	background:		#FFD69C;
+										color:			#000;
+										font-size:		75%;
+										font-weight:	bold;
+										margin:			0;
+										padding:			11px 7px 0px 7px;			}
+.maincontent div#forum div.thread div.first-message h4
+									{	background:		#FFD69C;
+										color:			#5E5E5E;
+										font-size:		75%;
+										font-weight:	bold;
+										margin:			0;
+										padding:			1px 7px 7px 7px;			}
+
+/* styles for all other messages */
+.maincontent div#forum div.thread div.arrow
+									{	height:			23px;
+										background:		url(/ww2peopleswar/images/forum_arrow.gif) 12px 6px no-repeat;	}
+
+.maincontent div#forum div.thread div.message
+									{	border:			solid 1px #FFD69C;
+										padding:			0 0 10px 0;
+										margin:			0px 9px 0 9px;				}
+
+.maincontent div#forum div.thread div.message h3
+									{	background:		#FFF4CE;
+										color:			#000;
+										font-size:		75%;
+										font-weight:	bold;
+										margin:			0;
+										padding:			10px 7px 0px 7px;			}
+.maincontent div#forum div.thread div.message h4
+									{	background:		#FFF4CE;
+										color:			#5E5E5E;
+										font-size:		75%;
+										font-weight:	bold;
+										margin:			0;
+										padding:			1px 7px 7px 7px;			}
+
+.maincontent div.backtotop	{	font-size:		75%;
+										text-align:		right;
+										padding:			10px 10px 10px 0;			}
+
+
+#rhnav div#categories		{	margin-top:		9px;							}
+
+#rhnav div#categories p		{	background:		#FFF4CE;
+										color:			#666;
+										font-size:		70%;
+										line-height:	112%;
+										font-weight:	bold;
+										margin:			0;
+										padding:			8px 6px 10px 6px;			}
+
+#rhnav div#categories img
+									{	margin-top:		1px;							}
+
+#rhnav div#recommended,
+#rhnav div#withphoto			{	background:		#FFF4CE;
+										color:			#000;
+										font-size:		75%;							}
+#rhnav div#recommended		{	margin-top:		9px;
+										padding:			10px 6px 0 1px;			}
+#rhnav div#recommended img	{	margin-top:		-1px;
+										margin-bottom:	6px;							}
+#rhnav div#recommended a	{	font-size:		96%;							}
+#rhnav div#withphoto			{	padding:			6px 6px 10px 2px;			}
+
+div.ww2Foot2				{	width:			470px;						}

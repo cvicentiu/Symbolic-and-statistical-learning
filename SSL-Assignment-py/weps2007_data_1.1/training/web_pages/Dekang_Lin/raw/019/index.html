@@ -1,0 +1,553 @@
+<html><head>
+<title>Discovery of inference rules from text - Patent 7146308</title>
+<META  NAME="Description" CONTENT="The present invention provides a facility for discovering a set of inference rules, such as 'X is author of Y.apprxeq.X wrote Y', 'X solved Y.apprxeq.X found a solution to Y', and 'X caused Y.apprxeq.">
+
+<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-15'>
+<link rel='stylesheet' type='text/css' href='patent.css'>
+<link rel='shortcut icon' href='favicon.ico' >
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+
+</script>
+
+<script type="text/javascript">
+
+_uacct = "UA-174791-1";
+
+urchinTracker();
+
+</script>
+
+
+</head>
+<body leftmargin='0' topmargin='0' marginwidth='0' marginheight='0'>
+<!-- main table -->
+<table width='100%' height='100%' border='0' cellpadding='0' cellspacing='0'>
+<tr align='left' valign='top'>
+<td colspan='2'>
+<table width='100%' border='0' cellspacing='0' cellpadding='0' >
+
+<tr>
+<td >
+<table width='100%' border='0' cellpadding='0' cellspacing='0' background='bg_header.gif'>
+<tr>
+<td width='231' align='left' valign='middle'>
+
+	<a href='http://www.freepatentsonline.com/index.html'>
+
+
+<img src='logo.gif' width='231' height='63' border='0'></a></td>
+<td>&nbsp;</td>
+<td width='346' align='right'>
+<TABLE WIDTH='346' BORDER='0' CELLPADDING='0' CELLSPACING='0'>
+<FORM NAME='quick' ACTION='http://www.freepatentsonline.com/jump.pl' METHOD='post'>
+<TR>
+<TD ROWSPAN='5'>
+<IMG SRC='search_01.gif' WIDTH='25' HEIGHT='63' ALT=''></TD>
+<TD COLSPAN='4'>
+<IMG SRC='search_02.gif' WIDTH='321' HEIGHT='12' ALT=''></TD>
+</TR>
+<TR>
+<TD ROWSPAN='3'>
+<table width='92' height='29' border='0' cellpadding='0' cellspacing='0' background='search_03.gif'>
+<tr>
+<td align='right' valign='middle' class='reg10bold'>Patent Number:
+</td>
+</tr>
+</table>
+</TD>
+<TD ROWSPAN='3'>
+<table width='148' height='29' border='0' cellpadding='0' cellspacing='0' background='search_03.gif'>
+<tr>
+<td align='center' valign='middle'>
+<input name='jump' type='text' class='textregbold11' size='18'> 
+
+</td>
+</tr>
+</table>
+</TD>
+<TD COLSPAN='2'>
+<IMG SRC='search_05.gif' WIDTH='81' HEIGHT='5' ALT=''></TD>
+</TR>
+<TR>
+<TD>
+<input name='Submit' type='image' id='Submit' src='search_b.gif' width='69' height='19' border='0'></TD>
+<TD>
+<IMG SRC='search_07.gif' WIDTH='12' HEIGHT='19' ALT=''></TD>
+</TR>
+<TR>
+<TD COLSPAN='2'>
+<IMG SRC='search_08.gif' WIDTH='81' HEIGHT='5' ALT=''></TD>
+</TR>
+<TR>
+<TD COLSPAN='3'>
+<table width='309' height='22' border='0' cellpadding='0' cellspacing='0' background='search_09.gif'>
+<tr>
+<td valign='top'>
+<table width='100%' border='0' cellspacing='0' cellpadding='0'>
+<tr>
+<td align='right' valign='middle' class='textregbold11'>
+
+	<a href='http://www.freepatentsonline.com/search.html'>
+
+Advanced Search </a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</TD>
+<TD>
+<IMG SRC='search_10.gif' WIDTH='12' HEIGHT='22' ALT=''></TD>
+</TR></FORM>
+</TABLE>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<!-- end head-->
+
+
+
+	<!--start left-->
+	<tr align='left' valign='top'>
+		<td width='160'>
+	
+	<!-- left nav table -->
+			<table height='100%' width="140" border='0' cellspacing='0' cellpadding='0' bgcolor='#ffffff' .
+			class='textreg11'>
+				<tr height='10'>
+					<td bgcolor='#e3e3e3' valign="top">
+	<!-- orange nav header -->
+						<table width='100%'  border='0' cellspacing='0' cellpadding='2' valign='top'>
+							<tr>
+								<td bgcolor='#FF6923' valign='center' height=35><div align='center' class='whitereg10'>Site Contents</div></td>
+							</tr>
+	<!-- nav listings -->
+							<tr>
+								<td valign="top "bgcolor='#e3e3e3'>
+									<table valign='top' width='100%' border='0' cellspacing='0' cellpadding='4'>
+										<tr valign='top'>
+											<td align='left' valign='top' class='textreg11'>
+											<a href='http://www.freepatentsonline.com/search.html' class='textregbold11'>Search Patents</a>
+											<div style='MARGIN-LEFT:10px'>Use our search engine to find what you need</div>
+											</td>
+										</tr>
+										<tr valign='top'>
+											<td align='left' valign='top' class='textreg11'>
+    									    <a href='http://www.freepatentsonline.com/services.html' class='textregbold11'>Data and Analytical Services</a>
+   									   		<div style='MARGIN-LEFT:10px'>Complete custom solutions</div>
+  											</td>
+										</tr>
+										<tr valign='top'>
+											<td align='left' valign='top' class='textreg11'>
+											<a href='http://www.freepatentsonline.com/syntax.html' class='textregbold11'>Syntax Reference</a>
+											<div style='MARGIN-LEFT:10px'>Learn our powerful search syntax</div>
+											</td>
+										</tr>
+										<tr valign='top'>
+											<td align='left' valign='top' class='textreg11'>
+											<a href='http://www.freepatentsonline.com/faq.html' class='textregbold11'>F.A.Q.</a>
+											<div style='MARGIN-LEFT:10px'>About this site and our patent search engine</div>
+	
+											</td>
+										</tr>
+									</table>
+								</td>
+								 
+							</tr>
+   <!-- End Nav Listing -->
+                       </table>
+   <!-- Closing left nav table -->
+   					</td>
+   				</tr>
+   				<tr>
+					<td align='left' valign='top' bgcolor='#e3e3e3'>
+						<table width='100%' height='100%' border='0' cellspacing='0' cellpadding='0' bgcolor='#e3e3e3'>
+							<tr>
+								<td>&nbsp;</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+   			</table>	
+   <!-- Closing Start Left -->						
+		</td>
+
+	<!-- end left-->
+	
+	    <td valign='top' class='textreg11'>
+
+<Script Language = "JavaScript" Type="Text/JavaScript">
+<!--  Hide script from older browsers
+var urlAddress = "http://www.freepatentsonline.com";
+var pageName = "FreePatentsOnline.com";
+
+function CreateBookmarkLink() 
+{
+    if (window.sidebar)  // Mozilla Firefox Bookmark
+    {
+       // window.sidebar.addPanel(document.title, location.href, "")
+       window.sidebar.addPanel(pageName, urlAddress, 0);
+    } 
+    else if(window.external)  // IE Favorite
+    {
+        // window.external.AddFavorite(location.href, document.title)
+        window.external.AddFavorite(urlAddress, pageName); 
+    }
+    else if(window.opera && window.print)  // Opera Hotlist
+    {
+       var mbm = document.createElement('a');
+       mbm.setAttribute('rel','sidebar');
+       mbm.setAttribute('href',url);
+       mbm.setAttribute('title',title);
+       mbm.click();
+    }
+    else
+    {
+    	// alert("Sorry! Your browser doesn't support this function.");
+        return true;
+    }
+ }
+// -->
+</script>
+
+
+	<!--start login pad-->
+	<table width='100%' height='10' bgcolor='#cccccc'>
+    	 	<tr bgcolor='#cccccc'>
+	<td height='10'align='left' class='whitereg10'>
+	&nbsp; 
+	<a href="javascript:CreateBookmarkLink()">Bookmark This Site</a>
+	</td>
+	<td height='10'align='right' class='textregbold10'>
+	<a href='http://www.freepatentsonline.com/login.pl'>Login</a> or <a href='http://www.freepatentsonline.com/signup.pl'>Create Account (Free!)</a>&nbsp
+	</td>
+	</tr>
+	</table>
+	<!-- end login pad-->
+
+<!-- template 1 -->
+
+<script type="text/javascript">
+function openpopup(popurl){
+var winpops=window.open(popurl,"","top=100,left=150,width=570,height=410")
+}
+</script>
+<center>
+	<P>
+	
+<!--# start patent detail table-->
+<table border='0' cellpadding=2 cellspacing=2 class="textreg11">
+
+<TR>
+	<TD valign=top bgcolor=d0d0d0 width='12%'><b>Title:</b></TD>
+	<TD><strong><font size=+1>Discovery of inference rules from text</font></strong></TD>
+</TR>
+
+<TR><TD valign=top bgcolor=d0d0d0 width='12%'><b>Document Type and Number:</b></TD>
+
+
+
+
+	<TD>United States Patent <B style="background-color:#ffff66"></B>7146308</TD>
+
+
+</TR>
+
+<TR>
+    <TD valign=top bgcolor=d0d0d0 width='12%'><b>Link to this Page:</b></TD>
+    <TD>http://www.freepatentsonline.com/7146308.html</TD>
+</TR>
+	
+
+	<TR><TD valign=top bgcolor=d0d0d0 width='12%'><b>Abstract:</b></TD>
+	<TD valign=top> The present invention provides a facility for discovering a set of inference rules, such as "X is author of Y.apprxeq.X wrote Y", "X solved Y.apprxeq.X found a solution to Y", and "X caused Y.apprxeq.Y is triggered by X", by analyzing a corpus of natural language text. The corpus is parsed to identify grammatical relationships between words and to build dependency trees formed of the relationships between the words. Paths linking words in the dependency trees are identified. If two paths tend to link the same sets of words, their meanings are taken to be similar. An inference rule is generated for each pair of similar paths. The output of the inventive system is a set of inference rules and a database in which to store these inference rules. The rules generated by the system are interpretable by machines and used in other applications (e.g. information extraction, information retrieval, and machine translation). </TD></TR>  
+
+
+<!-- top_ad -->  
+
+	<TR><TD valign=top bgcolor=d0d0d0 width='12%'><b></b></TD>
+	<TD valign=top>
+
+<script type="text/javascript"><!--
+google_ad_client = "pub-1586334167197709";
+google_ad_width = 336;
+google_ad_height = 280;
+google_ad_format = "336x280_as";
+google_ad_type = "text";
+google_ad_channel ="2562451257";
+google_ad_channel ="301";
+google_color_border = "FFFFFF";
+google_color_bg = "FFFFFF";
+google_color_link = "FF6923";
+google_color_url = "000000";
+google_color_text = "000000";
+//--></script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+<script type="text/javascript"><!--
+google_ad_client = "pub-1586334167197709";
+google_ad_width = 336;
+google_ad_height = 280;
+google_ad_format = "336x280_as";
+google_ad_channel ="5067714541";
+google_ad_channel ="301";
+google_color_border = "FFFFFF";
+google_color_bg = "FFFFFF";
+google_color_link = "FF6923";
+google_color_url = "000000";
+google_color_text = "000000";
+//--></script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+</TD></TR>
+
+<TR><TD bgcolor=ffffff>
+&nbsp;
+<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+&nbsp;
+</TD></TR>
+
+
+
+<!--end_ad-->
+
+
+
+	<TR><TD valign=top bgcolor=d0d0d0 width='12%'><b>Inventors:</b></TD>
+	<TD valign=top> Lin, Dekang; Pantel, Patrick; </TD></TR> 
+
+
+	<TR><TD valign=top bgcolor=d0d0d0 width='12%'><b>Application Number:</b></TD>
+	<TD valign=top> 09/826,355</TD></TR>
+
+
+	<TR><TD valign=top bgcolor=d0d0d0 width='12%'><b>Filing Date:</b></TD>
+	<TD valign=top> 2001-04-05 </TD></TR>
+
+
+	<TR><TD valign=top bgcolor=d0d0d0 width='12%'><b>Publication Date:</b></TD>
+	<TD valign=top> 2006-12-05 </TD></TR>
+
+
+<TR><TD valign=top bgcolor=d0d0d0 width='12%'><b>View Patent Images:</b></TD>
+<TD valign=top>
+     
+		<a href='http://www.freepatentsonline.com/login.pl'>Login</a> or <a href='http://www.freepatentsonline.com/signup.pl'>Create Account (Free!)</a>
+    
+
+
+</TD></TR>
+
+
+	<TR><TD valign=top bgcolor=d0d0d0 width='12%'><b>Related Patents:</b></TD>
+	<TD valign=top>
+	
+		 <A href="http://www.freepatentsonline.com/REF7146308">View patents that cite this patent</A>
+	
+	<BR><BR> </TD></TR>
+
+
+
+<TR><TD valign=top bgcolor=d0d0d0 width='12%'><b>Export Citation:</b></TD>
+<TD valign=top> <A href="javascript:openpopup('bibliography.html')"> Click for automatic bibliography generation </A>   </TD></TR>
+
+
+
+	<TR><TD valign=top bgcolor=d0d0d0 width='12%'><b>Assignee:</b></TD>
+	<TD valign=top> </TD></TR>
+
+
+<!---->
+
+
+        <TR><TD valign=top bgcolor=d0d0d0 width='12%'><b>Primary Class:</b></TD>
+        <TD valign=top><table class='textreg11'><a href="http://www.freepatentsonline.com/CCL-704-9.html">704/9</a> </table>
+
+
+
+        <TR><TD valign=top bgcolor=d0d0d0 width='12%'><b>Other Classes:</b></TD>
+        <TD valign=top><table class='textreg11'> 704/10, 704/4</table>
+
+
+
+
+
+	<TR><TD valign=top bgcolor=d0d0d0 width='12%'><b>International Classes:</b></TD>
+	<TD valign=top>G06F 17/27&nbsp(20060101); G06F 17/21&nbsp(20060101); G06F 17/28&nbsp(20060101)</TD></TR>
+
+
+
+	<TR><TD valign=top bgcolor=d0d0d0 width='12%'><b>Field of Search:</b></TD>
+	<TD valign=top>  704/10,8,2,7,4,9 455/406,407,408,415,550.1,565,566 379/114.01,114.03,114.09,114.21,114.22,114.23,114.26,140</TD></TR>
+
+
+
+	<TR><TD valign=top bgcolor=d0d0d0 width='12%'><b>US Patent References:</b></TD>
+	<TD valign=top><table class='textreg11'><tr><td><a href="http://www.freepatentsonline.com/5289376.html">5289376</a></td><td> February 1994</td><td>Yokogawa</td><td> </TD><TD </td></tr>
+<tr><td><a href="http://www.freepatentsonline.com/5424947.html">5424947</a></td><td> June 1995</td><td>Nagao et al.</td><td> </TD><TD </td></tr>
+<tr><td><a href="http://www.freepatentsonline.com/5926784.html">5926784</a></td><td> July 1999</td><td>Richardson et al.</td><td> </TD><TD </td></tr>
+<tr><td><a href="http://www.freepatentsonline.com/5937385.html">5937385</a></td><td> August 1999</td><td>Zadrozny et al.</td><td> </TD><TD </td></tr>
+<tr><td><a href="http://www.freepatentsonline.com/5991712.html">5991712</a></td><td> November 1999</td><td>Martin</td><td> </TD><TD </td></tr>
+<tr><td><a href="http://www.freepatentsonline.com/5995918.html">5995918</a></td><td> November 1999</td><td>Kendall et al.</td><td> </TD><TD </td></tr>
+<tr><td><a href="http://www.freepatentsonline.com/6161084.html">6161084</a></td><td> December 2000</td><td>Messerly et al.</td><td> </td></tr>
+</table></TD></TR>
+
+
+
+
+
+	<TR><TD valign=top bgcolor=d0d0d0 width='12%'><b>Other References:</b></TD>
+	<TD valign=top><table class='textreg11'><tr><td>Fraser et al. Inheritence in Word Grammar, 1992, Association for Computer Linguistics, pp. 133-158. cited by examiner .<BR>Delugach et al. Wizard: A Database Inference Analysis and Detection System, Feb. 1996, IEEE Transactions On Data and Knowledge Engineering, vol. 8, No. 1, pp. 56-66. cited by examiner .<BR>Richardson et al. MindNet: Acquiring and structuring semantic information from text, May 1998, Association for Computational Linguistics, pp. 1098-1102. cited by examiner .<BR>"Fast and Effective Text Mining Using Linear-time Documents Clustering", Bjornar Larson and Chinatsu Aone, KDD-99 San Diego, California, United States, Copyright ACM 1999 1-58113-143-7/99/08, pp. 16-22. cited by other .<BR>"Text Mining: Natural Language techniques and Text Mining applications", M. Rajman and R. Besancon, Chapman & Hall, IFIP 1997, pp. 2-15. cited by other .<BR>"Extracting Classification Knowledge of Internet Documents with Mining Term Associations: A Semantic Approach", Shian-Hua Lin, Chi-Sheng Shih, Meng Chang Chen, Jan-Ming Ho, Ming-Tat Ko and Yueh-Ming Huang, SIGIR'98, Melbourne, Australia, Copyright 1998 ACM 1-58113-015-5 Aug. 1998, pp. 241-249. cited by other .<BR>"Automatic Acquisition of Hyponyms from Large Text Corpora", Marti A. Hearst, Proceedings of the Fourteenth International Conference on Computational Linguistics, Nantes, France, Jul. 1992, 8 pages. cited by other .<BR>"Automatic Search Term Variant Generation", K. Sparck Jones and J.I. Tait, Journal of Documentation, vol. 40, No. 1, Mar. 1984, pp. 50-66. cited by other .<BR>"Boosting Variant Recognition with Light Semantics", Cecile Fabre and Christian Jacquemin, Cooling-2000, Saarbrucken, Germany, Aug. 2000, pp. 264-270. cited by other .<BR>"Principle-Based Parsing Without Overgeneration", Dekang Lin, in proceedings of ACL-93, Columbus, Ohio, Jun. 1993, pp. 112-120. cited by other .<BR>"English for the Computer: The SUSANNE Corpus and Analytic Scheme", Geoffrey Sampson, Clarendon Press, Oxford, 1995, pp. 1-11. cited by other .<BR>"A New Statistical Parser Based on Bigram Lexical Dependencies", Michael John Collins, cmp-lg/9605012 May 6, 1996, 4 pages (double sided). cited by other .<BR>"A Maximum-Entropy-Inspired Parser", Eugene Charniak, in proceedings of the First North American Chapter of ACL, Seattle, Washington, Apr. 2000, pp. 132-139. cited by other .<BR>"Distributional Structure", Z. Harris, from Word 10 No. 2-3 (1954) pp. 775-793 and notes, pp. 26-47. cited by other .<BR>"Extracting Collocations from Text Corpora", Dekang Lin, in proceedings of the Workshop on Computational Terminology, Montreal, Canada, Aug. 1998, pp. 57-63. cited by other .<BR>"Thesaurus Construction", Padmini Srinivasan, Information retrieval Data Structures and Algorithms, Chapter 9, eds. Frakes, W.B. and Baeza-Yates R., Prentice Hall, 1992, pp. 161-176. cited by other .<BR>"Efficient Clustering of High-Dimensional Data Sets with Application to Reference Matching", Andrew McCallum, Kamal Nigam and Lyle H. Unger, KDD 2000, Boston, MA, United States, Copyright ACM, Aug. 2000 1-58113-233-6/00/08, pp. 169-178. cited by other. </td></tr>
+</table></TD></TR>
+
+
+
+	<TR><TD valign=top bgcolor=d0d0d0><b>Primary Examiner:</b></TD>
+	<TD valign=top><table class='textreg11'>Dorvil; Richemond</table></TD></TR>
+
+
+
+	<TR><TD valign=top bgcolor=d0d0d0><b>Assistant Examiner:</b></TD>
+	<TD valign=top><table class='textreg11'>Shortledge; Thomas E.</table></TD></TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- #########Begin under_claims #########-->
+
+<!--##### END under_claims #########-->
+
+
+
+</table>
+
+
+<table width='100%' border='0' >
+
+
+	<tr><td class='textreg11'><b>Claims:</b></td></tr>
+	<tr><td class='textreg11'><p> We claim:<BR><BR> 1. A method of building a database from text, the method comprising the steps of: parsing text to identify paths formed by concatenated relationships between words in the text; and generating a database of inference rules comprising pairs of semantically equivalent paths by associating, in a computer, paths with each other based on a similarity measure between the paths. <BR><BR> 2. The method of claim 1 in which the similarity measure is based on the frequency of occurrence of words in the paths. <BR><BR> 3. The method of claim 2 in which the words are at the end points of the paths. <BR><BR> 4. The method of claim 1 in which the step of associating paths with each other comprises the step of counting occurrences of words at the end points of specific paths. <BR><BR> 5. The method of claim 4 in which the step of associating paths comprises the step of comparing counts of occurrences of words and associating paths based on the counts of occurrences of the words. <BR><BR> 6. The method of claim 5 in which paths are associated only when the similarity measure exceeds a threshold. <BR><BR> 7. A method of information retrieval, the method comprising the steps of: initiating a search for electronic information; and expanding the search by reference to associated paths in a database constructed according to the method of claim 1. <BR><BR> 8. The method of claim 7 in which the search is initiated from a location remote from the location of the database. <BR><BR> 9. The method of claim 7 in which, in the method steps of claim 1, the similarity measure is based on the frequency of occurrence of words in the paths. <BR><BR> 10. The method of claim 9, in which, in the method steps of claim 1, the words are at the end points of the paths. <BR><BR> 11. The method of claim 7 in which, in the method steps of claim 1, the step of associating paths with each other comprises the step of counting occurrences of words at the end points of specific paths. <BR><BR> 12. The method of claim 11 in which the step of associating paths comprises the step of comparing counts of occurrences of words and associating paths based on the counts of occurrences of the words. <BR><BR> 13. The method of claim 12 in which paths are associated only when the similarity measure exceeds a threshold. <BR><BR> 14. Computer readable media containing instructions for carrying out the method steps of claim 1. <BR><BR> 15. Computer readable media of claim 14 in which, in the instructions for carrying out the method steps of claim 1, the similarity measure is based on the frequency of occurrence of words in the paths. <BR><BR> 16. Computer readable media of claim 15 in which, in the instructions for carrying out the method steps of claim 1, the words are at the end points of the paths. <BR><BR> 17. Computer readable media of claim 14, in which the instructions for carrying out the step of associating paths with each other comprise instructions for carrying out the step of counting occurrences of words at the end points of specific paths. <BR><BR> 18. Computer readable media of claim 17 in which the instructions for carrying out the method step of associating paths comprise instructions for carrying out the method step of comparing counts of occurrences of words and associating paths based on the counts of occurrences of the words. <BR><BR> 19. Computer readable media of claim 18 in which, in the instructions for carrying out the method steps, paths are associated only when the similarity measure exceeds a threshold.</td></tr>
+
+
+
+	<tr><td class='textreg11'><b>Description:</b></td></tr>
+	<tr> <td class='textreg11'><p> FIELD OF THE INVENTION <BR><BR>This invention relates to the field of artificial intelligence, and, more specifically, to the fields of computational linguistics and information retrieval. <BR><BR>BACKGROUND OF THE INVENTION <BR><BR>Text is the most significant repository of human knowledge. Many algorithms have been proposed to mine textual data. Algorithms have been proposed that focus on document clustering (Larsen, B. and Aone, C. 1999. Fast and effective text mining using linear-time document clustering. In Proceedings of KDD-99. pp. 16 22. San Diego, Calif.), identifying prototypical documents (Rajman, M. and Besancon, R. 1997. Text Mining: Natural Language Techniques and Text Mining Applications. In Proceedings of the seventh IFIP 2.6 Working Conference on Database Semantics (DS-7).), or finding term associations (Lin, S. H., Shih, C. S., Chen, M. C., et al. 1998. Extracting Classification Knowledge of Internet Documents with Mining Term Associations: A Semantic Approach. In Proceedings of SIGIR-98. Melbourne, Australia.) and hyponym relationships (Hearst, M. 1992. Automatic Acquisition of Hyponyms from Large Text Corpora. In Proceedings of ACL-92. Nantes, France.) This invention addresses an unsupervised method for discovering inference rules, such as "X is author of Y.apprxeq.X wrote Y", "X solved Y.apprxeq.X found a solution to Y", and "X caused Y.apprxeq.Y is triggered by X". Inference rules are extremely important in many fields such as natural language processing, information retrieval, and artificial intelligence in general. <BR><BR>For example, consider the query to an information retrieval system: "Who is the author of the `Star Spangled Banner`?" Unless the system recognizes the relationship between "X wrote Y" and "X is the author of Y", it would not necessarily rank the sentence . . . Francis Scott Key wrote the "Star Spangled Banner" in 1814. higher than the sentence . . . comedian-actress Roseanne Barr sang her famous shrieking rendition of the "Star Spangled Banner" before a San Diego Padres-Cincinnati Reds game. <BR><BR>The statement "X wrote Y.apprxeq.X is the author of Y" is referred to in this patent document as an inference rule. In previous work, such relationships have been referred to as paraphrases or variants (Sparck Jones, K. and Tait, J. I. 1984. Automatic Search Term Variant Generation. Journal of Documentation, 40(1):50 66.; Fabre, C. and Jacquemin, C. 2000. Boosting Variant Recognition with Light Semantics. In Proceedings of COLING-2000. Sarrebrucken, Germany.) In this patent document, inference rules include relationships that are not exactly paraphrases, but are nonetheless related and are potentially useful to information retrieval systems. For example, "X caused Y.apprxeq.Y is blamed on X" is an inference rule even though the two phrases do not mean exactly the same thing. <BR><BR>Traditionally, knowledge bases containing such inference rules are created manually. This knowledge engineering task is extremely laborious. More importantly, building such a knowledge base is inherently difficult since humans are not good at generating a complete list of rules. For example, while it is quite trivial to come up with the rule "X wrote Y.apprxeq.X is the author of Y", it seems hard to dream up a rule like "X manufacture Y.apprxeq.X's Y factory", which can be used to infer that "Chretien visited Peugot's newly renovated car factory in the afternoon" contains an answer to the query "What does Peugot manufacture?" <BR><BR>It is known in the art of information retrieval to identify phrasal terms from queries and generate variants for query expansion. Query expansion is known to promote effective retrieval of information and a variety of query expansion algorithms have been proposed. U.S. Pat. No. 6,098,033 issued Aug. 1, 2000, disclosed a method for computing word similarity according to chains of semantic relationships between words. Examples of such semantic relationships include Cause, Domain, Hypernym, Location, Manner, Material, Means, Modifier, Part, and Possessor. While the method disclosed in (U.S. Pat. No. 6,089,033) uses chains of relationships as features to compute similarities between words, the invention disclosed in this patent document uses words as features to compute the similarity between chains of relationships. <BR><BR>U.S. Pat. No. 6,076,088 issued Jun. 13, 2000, disclosed a method to extract Concept-Relation-Concept (CRC) triples from a text collection and to use the extracted CRC triples to answer queries about the text collection. The invention disclosed in this patent document differs from U.S. Pat. No. 6,076,088. Particularly, the CRC triples represent information explicitly stated in the text collection whereas operation of the present invention results in inference rules that are typically not stated explicitly in a text collection. <BR><BR>SUMMARY OF THE INVENTION <BR><BR>This invention provides a facility for discovering a set of inference rules, such as "X is author of Y.apprxeq.X wrote Y", "X solved Y.apprxeq.X found a solution to Y", and "X caused Y.apprxeq.Y is triggered by X", by analyzing a corpus of natural language text. The corpus is parsed to identify grammatical relationships between words and to build dependency trees formed of the relationships between the words. Paths linking words in the dependency trees are identified. If two paths tend to link the same sets of words, their meanings are taken to be similar. An inference rule is generated for each pair of similar paths. The output of the inventive system is a set of inference rules. The rules generated by the system are interpretable by machines and used in other applications (e.g. information extraction, information retrieval, and machine translation). By contrast with Richardson (U.S. Pat. No. 6,098,033), paths are used as features to compute the similarity of words. <BR><BR>Thus, according to an aspect of the invention, there is provided a method of building a database from text, the method comprising the steps of parsing text to identify paths formed by concatenated relationships between words in the text and associating, in a computer, paths with each other based on a similarity measure between the paths. The similarity measure is based on the frequency of occurrences of words in the paths, where the words are at the end points of the paths. The step of associating paths with each other preferably comprises the step of counting occurrences of words at the end points of specific paths. Paths are associated based on the counts of occurrences of the words at the end points of the paths. Paths are associated only when the similarity measure exceeds a threshold. <BR><BR>In another aspect of the invention, there is provided a method of information retrieval, the method comprising the steps of initiating a search for electronic information and expanding the search by reference to associated paths in a database constructed according to the preceding method of building a database. The search may be initiated from a location remote from the location of the database. <BR><BR>In another aspect of the invention, there is provided computer readable media containing instructions for carrying out the method steps. <BR><BR>These and other aspects of the invention are described in the detailed description of the invention and claimed in the claims that follow. <BR><BR>BRIEF DESCRIPTION OF THE DRAWINGS <BR><BR>There will now be described preferred embodiments of the invention, with reference to the drawings, by way of illustration only and not with the intention of limiting the scope of the invention, in which like numerals denote like elements and in which: <BR><BR>FIG. 1 shows an information retrieval system using an inference rule database created according to the invention; <BR><BR>FIGS. 2A and 2B are each diagrams showing a dependency tree for use in a system of the invention; <BR><BR>FIG. 3 is a diagram illustrating a transformation used for modifying a dependency tree; <BR><BR>FIGS. 4 and 5 illustrate dependency trees for specific sentences; <BR><BR>FIG. 6 is a flow diagram illustrating constructing a database of similar paths according to the invention and using the constructed database in an information retrieval system; <BR><BR>FIG. 7 is a flow diagram illustrating the identification of paths in dependency trees according to the invention; and <BR><BR>FIG. 8 is a flow diagram illustrating how paths are tested for compliance with constraints designed to identify valid paths. <BR><BR>DETAILED DESCRIPTION OF PREFERRED EMBODIMENTS <BR><BR>In this patent document, "comprising" means "including". In addition, a reference to an element by the indefinite article "a" does not exclude the possibility that more than one of the element is present. Parsing, when referred to in this patent document, means a computer implemented system for analyzing syntactic structures of electronic text. Furthermore, "text" and "corpus" means "any collection of natural language text". <BR><BR>Referring to FIG. 1, a method of building a database containing rules relating expressions in natural language text may be implemented in a general purpose computer 10, which may be any one of many PCs or other computers available on the market. The database 24 created by the method may be stored in another (or the same) general purpose computer 12, which need not be in the same location as computer 10. The computers 10 and 12 are linked by a communication link 14, which could be any suitable link and does not have to be permanent, including a network such as the Internet. The computer 12 may be accessed for the purpose of information retrieval by a server 16, which in turn may be linked to the computer 12 by any suitable link 18, such as the Internet. The server 16 is connected by any suitable link 20, such as the Internet, to a client 22. A person searching for information inputs a search string to client computer 22. The search string is forwarded to the server 16, which parses the string and extracts paths from the parsed string. The paths are then forwarded to the computer 12 to retrieve associated paths from the database 24. The associated paths are then used in server 16 to expand the set of words in the search string. The expanded search string is used to carry out the search according to conventional search techniques. Apart from the manner of construction of the database, and the content of the database, the techniques for carrying out the search illustrated in FIG. 1 are known. For real time access, the server 16 may directly instruct the computer 10 to parse text and retrieve associated relations and then perform the search using the original search string as well as associated relations. <BR><BR>The database is created by a method of discovering inference rules from text. Any text may be used to create the database. For example, medical text may be used to generate inference rules in a medical domain. The first step is to parse the text. Any of a variety of parsers may be used. The parser output identifies characteristics or attributes of the words (noun, verb, etc), grammatical relationships between the words and paths formed by the grammatical relationships. <BR><BR>As used in this patent document, a dependency relationship is a grammatical relationship, which is an asymmetric binary relationship between a word called head, and another word called modifier. The structure of a sentence is represented by a set of dependency relationships that form a tree. A word in the sentence may have several modifiers, but each word may modify at most one word. The root of the dependency tree does not modify any word. It is also called the head of the sentence. <BR><BR>For example, FIGS. 2A and 2B show the dependency tree for the sentence "John found a solution to the problem", generated by a broad-coverage English parser called Minipar (Lin, D. 1993. Principle-Based Parsing Without OverGeneration. In Proceedings of ACL-93. pp. 112 120. Columbus, Ohio), which is available by contacting the Department of Computer Science at the University of Alberta, Canada. FIG. 2A is a more compact form for the dependency tree of FIG. 2B. The links in the diagram represent dependency relationships. The direction of a link is from the head to the modifier in the relationship. Labels associated with the links represent types of dependency relations. Table 1 lists a subset of the dependency relations in Minipar outputs. <BR><BR>The exemplary parser, Minipar, parses newspaper text at about 500 words per second on a Pentium-III(tm) 700 Mhz with 500 MB memory. Evaluation with the manually parsed SUSANNE corpus (Sampson, G. 1995. English for the Computer--The SUSANNE Corpus and Analytic Scheme. Clarendon Press. Oxford, England.) shows that about 89% of the dependency relationships in Minipar outputs are correct. Other broad-coverage English parsers such as those of Collins, 1996 (Collins, M. J. 1996. A New Statistical Parser Based on Bigram Lexical Dependencies. In Proceedings of ACL-96. pp. 184 191. Santa Cruz, Calif.); Charniak, 2000 (Charniak, E. 2000. A Maximum-Entropy-Inspired Parser. In Proceedings of the North American Chapter of the Association for Computational Linguistics. pp. 132 139. Seattle, Wash.) may also be used to parse text. <BR><BR>In the dependency trees generated by Minipar, prepositions are represented by nodes. A transformation is applied for all the dependency trees. For each preposition, the prepositional complement is connected directly to the words modified by the preposition. The proposition is assigned as the label of the direct relationship. FIG. 3 gives an example for the phrase "solution to the problem" in which the two links in part (a) are replaced with a direct link shown in part (b). <BR><BR>After the transformation, each link between two words in a dependency tree represents a direct semantic relationship. A path is used to represent indirect semantic relationships between two content words (i.e. nouns, verbs, adjectives or adverbs). A path is named by concatenating dependency relationships and words along the path, excluding the words at the two ends. For the sentence in FIGS. 2A and 2B, the path between John and problem is named: N:subj:V.rarw.find.fwdarw.V:obj:N.fwdarw.solution.fwdarw.N:to:N (meaning "X finds solution to Y"). The reverse path can be written as:N:to:N.rarw.solution.rarw.N:obj:V.rarw.find.fwdarw.V:subj:N. The root of both paths is find. A path begins and ends with two dependency relations, which are defined as the two slots of the path: SlotX on the left-hand side and SlotY on the right-hand side. The words connected by the path are called the fillers of the slots. For example, John fills the SlotX of N:subj:V.rarw.find.fwdarw.V:obj:N.fwdarw.solution.fwdarw.N:to:N and problem fills the SlotY. The reverse is true for N:to:N.rarw.solution.rarw.N:obj:V.rarw.find.fwdarw.V:subj:N. In a path, dependency relations that are not slots are called internal relations. For example, find.fwdarw.V:obj:N.fwdarw.solution is an internal relation in the path N:subj:V.rarw.find.fwdarw.V:obj:N.fwdarw.solution.fwdarw.N:to:N. <BR><BR>Preferably, a set of constraints is imposed on the paths to be extracted from text for the following reasons: most meaningful inference rules involve only paths that satisfy these conditions; the constraints significantly reduce the number of distinct paths and, consequently, the amount of computation required for computing similar paths (described below); and the constraints alleviate the sparse data problem because long paths tend to have very few occurrences. The constraints are: slot fillers must be nouns because slots correspond to variables in inference rules and the variables are instantiated by entities; any dependency relation that does not connect two content words is excluded from a path. E.g. in FIGS. 2A and 2B, the relation between a and solution is excluded; the frequency count of an internal relation must exceed a threshold; and an internal relation must be between a verb and an object-noun or a small clause. The relationship between find and solution in "John found a solution to the problem" is an example of a verb-object relation. The relationship between force and resign is an example of a verb-small clause relationship in the sentence shown in FIG. 4. <BR><BR>The paths extracted from the exemplary sentence shown in FIG. 5 and their meanings are: <BR><BR> TABLE-US-00001 N: subj: V.rarw.buy.fwdarw.V: from: N (X buys something from Y) N: subj: V.rarw.buy.fwdarw.N: obj: N (X buys Y) N: subj: V.rarw.buy.fwdarw.V: obj: N.fwdarw.sheep.fwdarw.N: (X buys Y sheep) nn: N N: nn: N.rarw.sheep.rarw.N: obj: V.rarw.buy.fwdarw.V: (X sheep is bought from Y) from: N N: obj: V.rarw.buy.fwdarw.V: from: N (X is bought from Y) N: from: V.rarw.buy.fwdarw.V: subj: N (Y buys something from X) N: obj: V.rarw.buy.fwdarw.V: subj: N (Y buys X) N: nn: N.rarw.sheep.rarw.N: obj: V.rarw.buy.fwdarw.V: (Y buys X sheep) subj: N N: from: V.rarw.buy.fwdarw.V: obj: N.fwdarw.sheep.fwdarw.N: (Y sheep is bought from X) nn: N N: from: V.rarw.buy.fwdarw.V: obj: N (Y is bought from X) <BR><BR>A path is a binary relation between two entities. This invention incorporates an algorithm to automatically discover the inference relations between such binary relations. <BR><BR>In the preferred embodiment, the algorithm makes use of an extension of the principle, known as the Distributional Hypothesis (Harris, Z. 1985. Distributional Structure. In: Katz, J. J. (ed.) The Philosophy of Linguistics. New York: Oxford University Press, pp. 26 47.) According to the Distributional Hypothesis words that tend to occur in the same contexts tend to have similar meanings. The present invention makes use of the principle in a different context and in a different way, using different formulae, from previous methods for computing the similarity between two sets of words. Some algorithms use the words that occurred in a fixed window of a given word as its context while others use the dependency relationships of a given word as its context (Lin, D. 1998. Extracting Collocations from Text Corpora. Workshop on Computational Terminology. pp. 57 63. Montreal, Canada.) Consider the words duty and responsibility. There are many contexts in which both of these words can fit. For example, duty can be modified by adjectives such as additional, administrative, assigned, assumed, collective, congressional, constitutional, . . . , so can responsibility; duty can be the object of verbs such as accept, articulate, assert, assign, assume, attend to, avoid, become, breach, . . . , so can responsibility. Based on these common contexts, one can statistically determine that duty and responsibility have similar meanings. <BR><BR>In the algorithms for finding word similarity, dependency links are treated as contexts of words. In contrast, the algorithm for finding inference rules described here treats the words that fill the slots of a path as a context for the path. Thus, if two paths tend to occur in similar contexts, the meanings of the paths tend to be similar. <BR><BR>For example, Table 2 lists a set of example pairs of words connected by the paths N:subj:V.rarw.find.fwdarw.V:obj:N.fwdarw.solution.fwdarw.N:to:N ("X finds a solution to Y") and N:subj:V.rarw.solve.fwdarw.V:obj:N ("X solves Y"). As it can be seen from Table 2, there are many overlaps between the corresponding slot fillers of the two paths, which indicates that the two paths have similar meaning. <BR><BR>Given a path p and the words w.sub.1 and w.sub.2, which fill the SlotX and SlotY of p respectively, (p, SlotX, w.sub.1) and (p, SlotY, w.sub.2) are called triples and (SlotX, w.sub.1) and (SlotY, w.sub.2) are features of path p. To compute path similarities, the frequency counts of triples in a corpus are collected. <BR><BR>A database is used to store the frequency counts of the triples. We call this database a triple database. The triple database is organized as a collection of entries, where each entry consists of all triples with a common path. An example entry in the triple database for the path N:subj:V.rarw.pull.fwdarw.V:obj:N.fwdarw.body.fwdarw.N:from:N ("X pulls body from Y") is shown in Table 2A. The first column of numbers in Table 2A represents the frequency counts of a word filling a slot of the path and the second column of numbers is the mutual information between a slot and a slot filler. Mutual information measures the strength of association between a slot and a filler. The triple database records the fillers of SlotX and SlotY separately. Looking at the triple database, one would be unable to tell which SlotX filler occurred with which SlotY filler in the corpus. <BR><BR>Once the triple database is created, the similarity between two paths can be computed. Essentially, two paths have high similarity if there are a large number of common features. However, not every feature is equally important. For example, the word he is much more frequent than the word sheriff. Two paths sharing the feature (SlotX, he) is less indicative of their similarity than if they shared the feature (SlotX, sheriff). The similarity measure used here, which is known in the art in itself (Lin, D. 1998. Extracting Collocations from Text Corpora. Workshop on Computational Terminology. pp. 57 63. Montreal, Canada.) takes this into account by computing the mutual information between a feature and a path. <BR><BR>Let |p, SlotX, w| denote the frequency count of the triple (p, SlotX, w), |p, SlotX, *| to denote <BR><BR>.times..times..times..times..times..times..times..times..times..times. ##EQU00001## Following (Lin, D. 1998. Extracting Collocations from Text Corpora. Workshop on Computational Terminology. pp. 57 63. Montreal, Canada.), the mutual information between a path slot and its filler can be computed by the formula: <BR><BR>.times..times..function..function..times..times. ##EQU00002## Equation (1) measures the strength of association between a slot of a path and a filler of that slot. The strength of the association between a slot of a path and a filler of that slot is measured by comparing the observed frequency of the filler-slot combination with the predicted frequency of the filler-slot combination assuming independence between the filler and the slot. The observed frequency of a filler slot combination is |p, Slot, w|. The probability P.sub.1 of a word w filling a slot S of any path is: <BR><BR> ##EQU00003## The probability P.sub.2 of any word filling a slot S of a path p is: <BR><BR> ##EQU00004## If we assume that a filler w and a slot S of a path p are independent, the predicted frequency of the slot-filler combination is P.sub.1.times.P.sub.2.times.|*, S, *|. Then using the logarithm scale of the two frequency counts <BR><BR>.times..times..times..times..times..times. ##EQU00005## equation 1 is obtained. <BR><BR>A slot s of a path p is denoted by (p, s). The similarity between a pair of slots: slot.sub.1=(p.sub.1, s) and slot.sub.2=(p.sub.2, s), is defined as: <BR><BR>.function..di-elect cons..function..function..times..times..times..function..times..times..fu- nction..di-elect cons..function..times..times..times..function..di-elect cons..function..times..times..times..function. ##EQU00006## where p.sub.1 and p.sub.2 are paths, s is a slot of p.sub.1 and p.sub.2, T(p.sub.1, s) and T(p.sub.2, s) are sets of words that fill in the s slot of paths p.sub.1 and p.sub.2 respectively. <BR><BR>Equation (2) measures the similarity between two slots. The similarity of two slots is a ratio between the commonality of the two slots and the totality of the two slots. The commonality of two slots is measured by the sum of association strength between the common fillers of the slots and the respective slots of the fillers. The totality of two slots is measured by the sum of association strength of the fillers of the first slot and the fillers of the second slot. The set of common fillers of two slots (p.sub.1, s) and (p.sub.2, s) is given by T(p.sub.1, s).andgate.T(p.sub.2, s). The commonality of two slots (p.sub.1, s) and (p.sub.2, s) is given by: .SIGMA..sub.w.di-elect cons.T(p.sub.1.sub.,s).andgate.T(p.sub.2.sub.,s)mi(p.sub.1,s,w)+mi(p.sub.- 2,s,w) The totality of two slots (p.sub.1, s) and (p.sub.2, s) is given by: .SIGMA..sub.w.di-elect cons.T(p.sub.1.sub.,s)mi(p.sub.1,s,w)+.SIGMA..sub.w.di-elect cons.T(p.sub.2.sub.,s)mi(p.sub.2,s,w) The similarity between two slots (p.sub.1, s) and (p.sub.2, s) is then given by equation 2. <BR><BR>The similarity between a pair of paths p.sub.1 and p.sub.2 is defined as the geometric average of the similarities of their SlotX and SlotY slots: S(p.sub.1,p.sub.2)= {square root over (sim(SlotX.sub.1,SlotX.sub.2).times.sim(SlotY.sub.1,SlotY.sub.2))}{square root over (sim(SlotX.sub.1,SlotX.sub.2).times.sim(SlotY.sub.1,SlotY.sub.2- ))} (3) <BR><BR>where SlotX.sub.i and SlotY.sub.i are path i's SlotX and SlotY slots. <BR><BR>Referring to FIG. 6, the steps carried out during an implementation of the invention are set forward. At step 101, each sentence in the text (corpus) under consideration is parsed to identify paths formed by concatenated grammatical relationships between words in the text. For each parsed sentence 102, paths are extracted from the sentence in step 103 and a count is made of the extracted paths in a triple database 104. The counts determined at step 104 are the counts |p, Slot, w|. The program then returns to the next parsed sentence 105 and the process continues until all paths have been counted. The counts are then used as for example in the above noted equations to yield a similarity measure 106, from which a ranked list of associated relations may be produced 107 as described below. Various similarity measures are possible (Frakes, W. B. and Baeza-Yates, R., editors. 1992. Information Retrieval, Data Structure and Algorithms. Prentice Hall.) The ranked associated paths 107 are stored in a database 108. The database 108 may then be used in a search 109. <BR><BR>Step 103 is expanded in FIG. 7. For each word in a parsed sentence 201, and for each path between that word and another word in the same sentence 202, first check that the path is valid 203 and then add it to a list of paths for that word 204, and repeat for each path 205 and for each word 206 to yield a path list for each word and path. <BR><BR>To check that a path is valid 203, the procedure set forward in FIG. 8 is followed. For each relationship in the input path 301, check that the path satisfies the constraints mentioned above. First check that the relationship connects two content words 302. If the program returns yes for this test, then the program checks if the relationship is an internal relation 303. If the program returns yes for this test, then the program checks whether the relationship has a frequency greater than a threshold 304 and whether the relationship connects a verb with either an object clause or small clause 305. If the program returns no for any of the steps 302, 304, or 305, then the program returns the indicator FALSE for that path in step 203 of FIG. 7. If the program does not return no for any of the steps 302, 304, and 305, then the program repeats this verification 306 for each relationship of the input path. If the program does not return no for steps 302, 304, and 305 for any relationship in the input path, then the program returns the indicator TRUE for that path in step 203 of FIG. 7. <BR><BR>Software for implementing this invention may be readily prepared from the flow diagrams and descriptions set out here. It is preferable to use an existing parsing program for parsing. The software may be stored on computer readable media such as a hard disk or compact disk. <BR><BR>The discovery of inference rules is made by finding the most similar paths of a given path. The challenge here is that there are a large number of paths in the triple database (step 104 of FIG. 6). Even a simple triple database may contain over 200,000 distinct paths. Computing the similarity between every pair of paths is impractical with present computation devices. <BR><BR>Given a path p, an exemplary algorithm for finding the most similar paths of p takes three steps: 1) Retrieve all the paths that share at least one feature with p and call them candidate paths. This can be done efficiently by storing for each word the set of slots it fills in. 2) For each candidate path c, count the number of features shared by c and p. Filter out c if the number of its common features with p is less than a fixed percent (for example 1%) of the total number of features for p and c. This step effectively uses a simpler similarity formula to filter out some of the paths since computing mutual information is more costly than counting the number of features. This idea has previously been used in Canopy (McCallum, A., Nigam, K., and Ungar, L. H. 2000. Efficient Clustering of High-Dimensional Data Sets with Application to Reference Matching. In Proceedings of KDD-2000. Boston, Mass.) 3) Compute the similarity between p and the candidates that passed the filter using equation (3) and output the paths in descending order of their similarity to p. <BR><BR>Table 3 lists the Top-50 most similar paths to "X solves Y" generated by an algorithm according to the invention. The ones tagged with an asterisk (*) are incorrect. Most of the paths can be considered as paraphrases of the original expression. <BR><BR>The inference rules discovered by the algorithm represent linguistic knowledge about natural language expressions. In turn, this knowledge can be used to mine other types of knowledge from text. Consider the Top-50 paths similar to "X causes Y" generated by the invention in Table 4. Suppose one wants to find out from the medical literature causal relationships involving the drug phentolamine. Many information extraction (IE) systems make use of manually constructed templates that are semantically similar to the paths in Table 4. Translating the paths into extraction templates, an IE system can be used to extract causal relations from medical text. The incorrect paths (with asterisks) in Table 4 exemplify a main source of error in the invention. The problem is that a cause in a causal event might be the effect of another causal event. Therefore, there is a significant overlap between the SlotX and SlotY of the path "X cause Y". Since the similarity between paths depends totally on the similarity of their slots, slots with the same kind of fillers are not distinguished in the present invention. It is easy to predict whether this type of error will happen in the outputs for a given path by computing the similarity between its SlotX and its SlotY. The higher this similarity is, the more likely the problem arises. However, teasing out the incorrect inference rules caused by this may be difficult, hence some caution has to be taken when using the results. <BR><BR>Better tools are necessary to tap into the vast amount of textual data that is growing at an astronomical pace. Knowledge about inference relationships in natural language expressions would be extremely useful for such tools. In the present invention, such knowledge is discovered automatically from a large corpus of text. Paths in dependency trees tend to have similar meanings if they connect similar sets of words. Treating paths as binary relations, the inventive system is able to generate inference rules by searching for similar paths. It is difficult for humans to recall a list of inference rules. However, given the output of the present invention, humans can easily identify the correct inference rules. Hence, at the least, the present system would greatly ease the manual construction of inference rules for an information retrieval system. <BR><BR>Care must be taken to account for polarity in inference relationships. High similarity values are often assigned to relations with opposite polarity. For example, "X worsens Y" has one of the highest similarity to "X solves Y" according to equation (2). In some situations, this may be helpful while for others it may cause confusion. <BR><BR>Paths may be extended with constraints on the inference rule's variables. For example, instead of generating a rule "X manufactures Y.apprxeq.X's Y factory", there may be generated a rule with an additional clause: "X manufactures Y.apprxeq.X's Y factory, where Y is an artifact". The "where" clause can be potentially discovered by generalizing the intersection of the SlotY fillers of the two relations. <BR><BR>Immaterial modifications may be made to the invention described here without departing from the essence of the invention. <BR><BR> TABLE-US-00002 TABLE 1 A subset of the dependency relations in Minipar outputs. RELATION DESCRIPTION EXAMPLE appo appositive of a noun the CEO, John det determiner of a noun the dog gen genitive modifier of a noun John's dog mod adjunct modifier of any tiny hole type of head nn prenominal modifier of a noun station manager pcomp complement of a preposition in the garden subj subject of a verb John loves Mary. sc small clause complement She forced him to resign of a verb <BR><BR> TABLE-US-00003 TABLE 2a An example entry in the triple database for the path "X pulls body from Y". X pulls body from Y: SlotX: diver 1 2.45 equipment 1 1.65 police 2 2.24 rescuer 3 4.84 resident 1 1.60 who 2 1.32 worker 1 1.37 SlotY: bus 2 3.09 coach 1 2.05 debris 1 2.36 feet 1 1.75 hut 1 2.73 landslide 1 2.39 metal 1 2.09 wreckage 3 4.81 <BR><BR> TABLE-US-00004 TABLE 2 Sample slot fillers for two paths extracted from a newspaper corpus. "X finds a solution to Y" "X solves Y" SLOTX SLOTY SLOTX SLOTY commission strike committee problem committee civil war clout crisis committee crisis government problem government crisis he mystery government problem she problem he problem petition woe I situation researcher mystery legislator budget deficit resistance crime sheriff dispute sheriff murder <BR><BR> TABLE-US-00005 TABLE 3 The top-50 most similar paths to "X solves Y". Y is solved by X X clears up Y X resolves Y *X creates Y X finds a solution to Y *Y leads to X X tries to solve Y *Y is eased between X X deals with Y X gets down to Y Y is resolved by X *X worsens Y X addresses Y X ends Y X seeks a solution to Y *X blames something for Y X do something about Y X bridges Y X solution to Y X averts Y Y is resolved in X *X talks about Y Y is solved through X X grapples with Y X rectifies Y *X leads to Y X copes with Y X avoids Y X overcomes Y X solves Y problem X eases Y X combats Y X tackles Y X handles Y X alleviates Y X faces Y X corrects Y X eliminates Y X is a solution to Y Y is settled by X X makes Y worse *X thinks about Y X irons out Y X comes up with a solution to Y *Y is blamed for X X offers a solution to Y X wrestles with Y X helps somebody solve Y X comes to grip with Y *Y is put behind X <BR><BR> TABLE-US-00006 TABLE 4 The top-50 most similar paths to "X causes Y". Y is caused by X *Y contributes to X X cause something Y *X results from Y X leads to Y *X adds to Y X triggers Y X means Y *X is caused by Y *X reflects Y *Y causes X X creates Y Y is blamed on X *Y prompts X X contributes to Y X provoke Y X is blamed for Y Y reflects X X results in Y X touches off Y X is the cause of Y X poses Y *Y leads to X Y is sparked by X Y results from X *X is attributed to Y Y is result of X *Y is cause of X X prompts Y *X stems from Y X sparks Y *Y is blamed for X *Y triggers X *X is triggered by Y X prevents Y Y is linked to X *X is blamed on Y X sets off Y Y is triggered by X X is a factor in Y Y is attributed to X X exacerbates Y X stems from Y X eases Y *Y results in X Y is related to X *X is result of Y X is linked to Y X fuels Y X is responsible for Y </td></tr>
+
+<!--##### Begin under_description #########-->
+
+        <tr><td colspan=2>
+	<center>
+		<!--read_includes("ad-728x90-orange.html")-->
+
+         	<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+                <tr><td>
+                <center>
+
+                <!-- start Google AdSense Code -->
+
+                <script type="text/javascript"><!--
+                google_ad_client = "pub-1586334167197709";
+                google_alternate_ad_url = "http://www.freepatentsonline.com/ad-collapse.html";
+                google_ad_width = 728;
+                google_ad_height = 90;
+                google_ad_format = "728x90_as";
+                google_ad_channel ="6398953898";
+                google_color_border = "FFFFFF";
+                google_color_bg = "FFFFFF";
+                google_color_link = "FF6923";
+                google_color_url = "FF6923";
+                google_color_text = "666666";
+                //--></script>
+                <script type="text/javascript"
+                  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+                </script>
+
+                <!-- end Google AdSense Code -->
+
+                </center>
+                </td></tr>
+                </table>
+        </center>
+	<BR><BR>
+        </td></tr>
+	
+<!--##### END under_description ###########-->
+
+</table>
+<FORM NAME="biblio" >
+	<INPUT TYPE="HIDDEN" NAME="patent" VALUE="7146308">
+	<INPUT TYPE="HIDDEN" NAME="title" VALUE='Discovery of inference rules from text'>
+	<INPUT TYPE="HIDDEN" NAME="number" VALUE="7146308" >
+	<INPUT TYPE="HIDDEN" NAME="author" VALUE="Lin, Dekang; Pantel, Patrick">
+	<INPUT TYPE="HIDDEN" NAME="author_end" VALUE="Lin, Dekang// Pantel, Patrick">
+	<INPUT TYPE="HIDDEN" NAME="year" VALUE="2006">
+	<INPUT TYPE="HIDDEN" NAME="month" VALUE="December">
+	<INPUT TYPE="HIDDEN" NAME="url" VALUE="http://www.freepatentsonline.com/7146308.html">
+        <INPUT TYPE="HIDDEN" NAME="assignee" VALUE="">
+	<INPUT TYPE="HIDDEN" NAME="country" VALUE="United States">
+</FORM>
+
+<BR><BR>
+
+<tr class='textreg11'><td align='center' valign='top'>
+<center>
+
+	<a href="http://www.freepatentsonline.com/7146307.html"><- Previous Patent (System and method for testing telematics ..)</a>
+	&nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;
+	<a href="http://www.freepatentsonline.com/7146309.html">Next Patent (Deriving seed values to generate excitati..) -></a>
+
+
+</center>
+<BR>
+
+
+<!--footer -->       
+</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+</tr>
+</table>
+</td></tr>
+<tr align="left" valign="top">
+<td></td>
+<td align="center" valign="bottom" class="reg10">
+<table width="100%"  border="0" cellspacing="0" cellpadding="5">
+<tr>
+<td align="center" class="reg10">
+<script src="astrack.js" type="text/javascript"></script>
+
+<a href="http://www.freepatentsonline.com/rssfeed.html" class="textregbold11">Patent RSS Feeds</a><BR>
+Copyright &copy; 2003-2007 FreePatentsOnline.com. All rights reserved. <a href="http://www.freepatentsonline.com/contact.html">Contact Us</a>.  <a href="http://www.freepatentsonline.com/privacy.html">Privacy Policy & Terms of Use</a>.
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+</body>
+</html>
+

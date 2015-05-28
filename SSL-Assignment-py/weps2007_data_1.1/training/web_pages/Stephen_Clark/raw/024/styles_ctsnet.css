@@ -1,0 +1,59 @@
+a, a:link, a:visited	{  text-decoration: none;  }
+
+a:hover	{  text-decoration: underline;  }
+
+body	{  margin-left: 0px;  margin-top: 0px;  }
+
+p.indent_left  { margin-left: 20px; }
+
+p.indent_rt_and_lft  { margin-left: 20px; margin-right: 20px; }
+
+/* AlertText (Red) should only be used for items
+   of importance that need to remain red and stand out OR
+   for small items like symbolic links  */
+.alertText 
+{  color: #FF0033;
+   font-weight : bold;   }
+a.alertText:link 
+{  color : #FF0033;
+   text-decoration: none;
+   font-weight : bold;  }  
+a.alertText:visited
+{  color : #FF0033;
+   text-decoration: none;
+   font-weight : bold; }
+a.alertText:hover 
+{  color : #FF0033;
+   text-decoration: underline;
+   font-weight : bold;   }	
+
+/* subtleText (Grey) 
+	Used on Contribution edit pages where additional information is 
+	needed but don't want to distract user from primary instructions.  
+	Also used for pub date when listing articles */
+.subtleText, .pubDate  { 
+   color: #666;
+	font: 10px Arial, Helvetica, sans-serif;  }
+	
+.notAvailable { color: #999; }
+
+.smText, td.smText, p.smText, td.smText p {
+	font-size: 10px;
+	line-height: 1.3; }
+
+/* Background colors
+   used for alternating row colors in tables, boxes
+	in right column and for background of menu  */
+/* bkgrnd_dark used for menu column */
+.bkgrnd_dark   {
+	background-color: #003366;
+	color: #FFF;  }
+
+.bkgrnd_med	{ background-color: #D6D6D6; }
+
+.bkgrnd_light	{ background-color: #EEE; }
+
+/* Background color is lt BLUE, used for portfolio  */
+.bkgrnd_light2    { background-color: #F0F8FF; }
+
+.bkgrnd_white  { background-color: #FFF; }	

@@ -1,0 +1,667 @@
+/*vvvvvvvvvvvvvvvvvvvvvv  Header Menu Links vvvvvvvvvvvvvvvvvvvvvvvvvv*/
+.header_logo {	margin-left:5px;	margin-top:8px;}.button_left {	margin-left:20px;	margin-top:8px;}.button {	margin-left:5px;	margin-top:8px;}.list {	font-family: Arial;	font-size: 10px;	color: #001A38;	text-decoration: none;	vertical-align: top;}.login {	margin-left:10px;	font-family: Arial;	font-size: 11px;	font-weight: bold;	color: #FFFFFF;	text-decoration: none;}.wn_head {	margin-left: 90px;	margin-top: 10px;	margin-right:10px;	font-family:Arial;	font-size: 10px;	font-weight: bold;	color: #FFCC66;	text-decoration:none;}.wn_body {	margin-left: 90px;	margin-top:5px;	margin-right:10px;	font-family:Arial;	font-size: 10px;	color:#FFFFFF;	text-decoration:none;}.box {	border: 1px solid #666666;}.clear {	float:left;	margin-left:10px;	margin-top:1px;	margin-bottom:1px;}.pop_list {	margin-left:15px;	margin-top:2px;	margin-bottom:2px;	font-family: Arial;	font-size: 10px;	color: #000033;	text-decoration: none;}.pop_head {	margin-left:15px;	margin-top:5px;	margin-bottom:5px;}a {	text-decoration: none;}
+
+
+
+/*^^^^^^^^^^^^^^^^^^^^^^ Header Menu Links ^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+
+
+/*vvvvvvvvvvvvvvvv Framework Table vvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+/*   
+/* change these to #ids???
+ */
+.HeaderTable
+{
+	padding:0px 0px 0px 0px;
+}
+.MiddleTable
+{
+	border-collapse: collapse;
+	padding:0px 0px 0px 0px;
+}
+.FooterTable
+{
+
+}
+
+.MiddleTableLeftColumn
+{
+	
+}
+.MiddleTableMiddleColumn
+{
+	margin-right:10px;
+	padding:0px 0px 0px 0px;
+}
+.MiddleTableRightColumn
+{
+	width: 120px;
+}
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^ Framework Table^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+/*vvvvvvvvvvvvvvvvvvvvvvv Standard HTML vvvvvvvvvvvvvvvvv*/
+/* 
+	generic tags like this over write vBulletin and photopost styles ... 
+	need to either define classes or use a separate .css file for forums
+*/
+TD, FORM, SELECT, OPTION, INPUT,TEXTAREA
+{
+	font-size: 11px;
+	color: #575757;
+	font-family: Arial, Helvetica, sans-serif;
+}
+BODY
+{
+	margin: 10 0 10 0;
+	background-color:#3B465A;
+}
+
+TD A
+{
+	font-size: 11px;
+	color: #41677A;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/*^^^^^^^^^^^^^^^^^^ Standard HTML^^^^^^^^^^^^^^^^^^^*/
+
+/*vvvvvvvv Homepage vvvvvv*/
+.headerBGWhite
+{
+	background-image:url(/channels/audioreview/images/white_bg_curve_header.gif);
+	width:305px;
+	background-repeat:no-repeat;
+	background-color:White;
+	padding:0px 10px 10px 10px;
+	text-align:center;
+	clear:both;
+	height:350px;
+}
+
+.headerBGWhiteNowidth
+{
+	background-image:url(/channels/audioreview/images/white_bg_curve_header.gif);
+	background-repeat:no-repeat;
+	background-color:White;
+	padding:0px 10px 10px 10px;
+	text-align:center;
+	clear:both;
+
+}
+
+.headerBGWhite2
+{
+	background-image:url(/channels/audioreview/images/white_bg_curve_header.gif);
+	width:305px;
+	background-repeat:no-repeat;
+	background-color:White;
+	padding:0px 10px 10px 10px;
+	text-align:center;
+	clear:both;
+}
+
+.headerBGWhiteBottom
+{
+	background-image:url(/channels/audioreview/images/white_bg_curve_header_bottom.gif);
+	height:12px;
+	width:325px;
+	background-repeat:no-repeat;
+	clear:both;
+}
+
+.headerBGLightGreen
+{
+	background-image:url(/channels/audioreview/images/lightgreen_bg_curve_header.gif);
+	height:12px;
+	width:305px;
+	background-repeat:no-repeat;
+	background-color:#F3FFD1;
+	padding:0px 10px 0px 10px;
+	text-align:center;
+	clear:both;
+	margin-top:10px;
+}
+
+.headerBGLightGreenBottom
+{
+	background-image:url(/channels/audioreview/images/lightgreen_bg_curve_header_bottom.gif);
+	height:12px;
+	width:325px;
+	background-repeat:no-repeat;
+	clear:both;
+}
+
+.headerBGLightBlue
+{
+	margin-top:10px;
+	background-image:url(/channels/audioreview/images/newsletter_bg.gif);
+	height:142px;
+	width:325px;
+	background-repeat:no-repeat;
+	background-color:#CDEEFF;
+	text-align:center;
+	clear:both;
+}
+
+.headerBGDarkGreen
+{
+	margin-top:10px;
+	background-image:url(/channels/audioreview/images/newsletter_ata_bg.gif);
+	height:162px;
+	width:325px;
+	background-repeat:no-repeat;
+	background-color:#C2E267;
+	text-align:center;
+	clear:both;
+	margin-bottom:10px;
+}
+
+
+.headerBGWhiteQuickPoll
+{
+	background-image:url(/channels/audioreview/images/white_bg_curve_header.gif);
+	width:305px;
+	background-repeat:no-repeat;
+	background-color:White;
+	padding:0px 10px 10px 10px;
+	text-align:center;
+	clear:both;
+	height:270px;
+}
+ul.newsList
+{
+
+	list-style-image:url(/channels/audioreview/images/news_bullet.gif);
+	list-style-position:outside;
+	padding:10px 0px 0px 10px;
+	margin:0px 0px 0px 12px;
+	background-color:#F3FFD1;
+	
+}
+ul.newsList li
+{
+	vertical-align:baseline;
+	list-style-position:outside;
+	padding:10px 10px 0px 10px;
+	margin:0px 0px 0px 11px;
+	background-color:#F3FFD1;
+	clear:both;
+}
+ul.newsList li a
+{
+	font-size:11px;
+	font-weight:bold;
+	text-decoration:underline;
+}
+
+.NavyBlueHeader
+{
+	background-color:White;	
+}
+
+.footerBGWhite
+{
+	background-image:url(/channels/audioreview/images/footerheader_bg.gif);
+	width:810px;
+	background-repeat:no-repeat;
+	background-color:White;
+	text-align:left;
+	clear:both;
+	height:30px;
+	margin-top:10px;
+}
+
+.footerBGWhiteBottom
+{
+	background-image:url(/channels/audioreview/images/footerheader_bottom_bg.gif);
+	height:12px;
+	width:810px;
+	background-repeat:no-repeat;
+	clear:both;
+}
+.footerLinks img
+{
+	border:solid 0px black;
+	position:relative;
+	top:3px;
+}
+
+/*^^^^^^^ Homepage ^^^^^^^^^^^^^^^*/
+
+/*Header Title Image for homepage*/
+TD.HeaderLeft IMG
+{
+	position:relative;
+	top: 2px;
+}
+TD.HeaderLeft A:visited, TD.HeaderLeft A:active, TD.HeaderLeft A:link
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+TD.HeaderLeft A:hover
+{
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+TD.HeaderRight
+{
+	color: #FFFFFF;
+	text-align:right;
+	vertical-align:baseline;
+	white-space: nowrap;
+	background-color:White;
+	
+}
+TD.HeaderRight A:visited, TD.HeaderRight A:active, TD.HeaderRight A:link
+{
+	color: #FFFFFF;
+	text-decoration: none;
+	background-color:White;
+}
+TD.HeaderRight A:hover
+{
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+/*^^^^^^^^^ BreadCrumb and Homepage table headers ^^^^^^^^^^*/
+
+
+/*vvvvvvvv Reviews vvvvvv*/
+.Categories
+{
+	font-size:14px;
+	font-weight:bold;	
+	color:Black;
+}
+/*^^^^^^^^^ Reviews ^^^^^^^^^^*/
+
+
+/*vvvvvvvvvvvvTo be removed Should be using Orange, Red and Yellow vvvvvvvvvvv*/
+.ShopHeader
+{
+	font-size: 12px;
+	font-weight: bold;
+	width:100%;
+	height:20px;
+	background-color: #FF3300;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.LearnHeader
+{
+	font-size: 12px;
+	font-weight: bold;
+	width:100%;
+	height:20px;
+	background-color: #FFCC00;
+	font-family: Arial, Helvetica, sans-serif;
+}
+/*^^^^^^^^^^ To be removed Should be using Orange, Red and Yellow^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+
+
+/* vvvv login, home, account links vvvvv */
+TD.AccountInfo, TD.AccountInfo A:visited, TD.AccountInfo A:active, TD.AccountInfo A:link
+{
+	font-size: 12px;
+	font-weight: bold;
+	color: #99CC01;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+TD.AccountInfo A:hover
+{
+	text-decoration: underline;
+}
+/* ^^^^^^^^^^^^^ login, home, account links ^^^^^^^^^^^^ */
+
+
+/* vvvv needs to be fixed up ... can we use TD.HeaderLeft ? vvvvv */
+.GoArrowText,.GoArrowText:link,.GoArrowText:visited,.GoArrowText:active
+{
+	position:relative;
+	top:-10px;
+	font-weight:bold;
+	color:Gray;
+	text-decoration:none;
+}
+.GoArrowText:hover
+{
+	text-decoration:underline;
+}
+
+
+/* vvvv to be removed after graphic resize */
+.ArrowHeader
+{
+	position:relative;
+	top: 3px;
+	left:-4px;	
+}
+/* ^^^^ to be removed after graphic resize */
+
+
+
+.ReviewText
+{
+	color:Black;
+}
+
+
+/******************** legacy classes below ------v */
+.breadcrumbtext, .breadcrumbtext a
+{
+	font-size: 12px;
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.BreadCrumb
+{
+	/*background-color: #EF7601;*/
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	position:relative;
+}
+
+
+/* vvvv MER_ pages */
+#divShopBreadCrumb
+{
+	background-image:url(/channels/audioreview/images/Shop.gif);
+	width:800px;
+	height:30px;
+	background-repeat:no-repeat;
+	margin-bottom:10px;
+	white-space: nowrap;
+}
+
+#divShopBreadCrumbImg
+{
+	float:left;
+	width:90px;
+}
+#divShopBreadCrumbText, #divShopBreadCrumbText a
+{
+	padding-top: 10px;
+	left:0px;
+	color:white;
+	text-align:left;
+	white-space: nowrap;
+}
+
+#tblMerchantCategories
+{
+	background-color:White;
+	width:670px;
+}
+
+#tdMerchantCategoryHeader
+{
+	padding:  8px 0px 4px 8px;
+	font-size: 11px;
+	font-weight:bold;
+	color: #575757;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#tdMerchantCategoryText
+{
+	padding:  4px 0px 8px 16px;
+}
+
+.ShopCategoryHeader
+{
+	padding-left: 10px;
+	padding-top: 16px;
+	padding-bottom: 0px;
+	font-size: 14px;
+	font-weight:bold;
+	color: #575757;
+	font-family: Arial, Helvetica, sans-serif;
+}
+/* ^^^^ MER pages */
+
+
+.alternaterowcolor
+{
+	background-color: #e8e8e8;
+}
+
+
+.SectionBox
+{
+	border-color:#3F667C;
+	border-style:solid;
+	border-width:1px;
+	background-color:#CCCCCC;
+}
+
+
+
+.bigsection_font
+{
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/*^^^^^^^^^^^^^^^^^^^^^ legacy classes above ^^^^^^^^^^ */
+
+
+/*vvvvvvvvvvvvvvvvv PRD Page vvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+.prdTable
+{
+	width:660px;
+}
+.ProductName
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	color: #EF7601;
+}
+
+.WriteReview
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	color: #99CC01;
+	text-decoration: none;
+}
+.WriteReview:link, visited,hover
+{
+	text-decoration: underline;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	color: #99CC01;
+}
+.ProductdescriptionHeader
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+	text-decoration: none;
+	color: gray;
+}
+
+.ProductDescription
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-decoration: none;
+	color: gray;
+}
+
+
+/*^^^^^^^^^^^^^^^^^ PRD Page ^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+
+/*vvvvvvvvvvvvvvvvv RVF Page vvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
+.FormFields
+{
+	font-size: 11px;
+	color: #575757;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.InputBox
+{
+	font-size: 11px;
+	color: #575757;
+	font-family: Arial, Helvetica, sans-serif;
+	border: 1px solid black;
+	scrollbar-arrow-color: #00C11A;
+	scrollbar-3dlight-color: #4F824F;
+	scrollbar-darkshadow-color: #4F824F;
+	scrollbar-face-color: black;
+	scrollbar-highlight-color: #ffffff;
+	scrollbar-shadow-color: #d0d0d0;
+	scrollbar-track-color: #f5f5f5;
+}
+/*^^^^^^^^^^^^^^^^^ RVF Page ^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+/*vvvvvvvvvvvvv POP Tool Tip vvvvvvvvvvvv*/
+.OverlayShadow
+{
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50);-moz-opacity: 0.5;
+}
+
+#dhtmltooltip
+{
+	position: absolute;
+	left: -300px;
+	width: 150px;
+	border: 1px solid black;
+	padding: 0px;
+	background-color: lightyellow;
+	visibility: hidden;
+	z-index: 100;
+	/*Remove below line to remove shadow. Below line should always appear last within this CSS*/
+	filter: progid:DXImageTransform.Microsoft.Shadow(color=gray,direction=135);
+}
+
+#dhtmlpointer
+{
+	position:absolute;
+	left: -300px;
+	z-index: 101;
+	visibility: hidden;
+}
+/*^^^^^^^^^^ POP Tool Tip ^^^^^^^^^^^*/
+
+/*vvvvvvvv Buyers Guide Navigation vvvvvvvvvvv*/
+TD.GuideNav A
+{
+	white-space: nowrap;
+	font-size: 11px;
+	color: #41677A;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-decoration:none;
+	
+}
+TD.GuideNav A:hover
+{
+	text-decoration:underline;
+}
+
+TD.GuideNav SPAN
+{
+	font-weight: bold;
+	background-color:C4D5DC; 
+	width:100%;
+	
+}
+
+TD.GuidePage A,TD.GuidePage
+{
+	white-space: nowrap;
+	font-size: 13px;
+	color: #575757;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	text-decoration:none;
+	
+}
+TD.GuidePage A:hover
+{
+	text-decoration:underline;
+}
+
+TD.GuidePage SPAN
+{
+	font-weight: bold;
+	background-color:C4D5DC; 
+	
+}
+
+.guidetitle
+{
+	font-weight: bold;
+	font-size: 14;
+	color: #41677A;
+}
+.guideintro
+{
+	font-size: 12;
+	color: #41677A;
+}
+
+.eric
+{	
+	font-family:times;
+	color:black;
+	font-size:14;
+}
+
+.eric a:hover
+{
+	color:red;
+	text-decoration:underline;
+	font-weight:bold;
+}
+
+.eric a
+{
+	text-decoration:underline;
+	color:green;
+	font-weight:bold;
+}
+
+.eric a:visited
+{
+	color:grey;
+	font-weight:bold;
+}
+
+.guidesectiontitle
+{
+	font-weight: bold;
+	font-size: 12;
+	color: #41677A;
+	
+	
+}
+
+/*^^^^^^^^^ End Buyers Guide Navigation ^^^^^^^*/
+
+/*vvvvvvvv Learncrx vvvvvvvvvvvvvvvvvvvvvvvvvv*/
+.learnText a
+{
+	font-size:14px;font-weight:bold;
+}
+/*^^^^^^^^Learncrx ^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+
+
+.bodytext
+{
+	background-color:White;
+}

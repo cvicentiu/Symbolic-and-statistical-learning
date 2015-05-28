@@ -1,0 +1,320 @@
+/****************************************
+ * arXiv.org Cascading Style Sheet
+ * Nov 2005
+ ****************************************/
+
+/* Please put styles into the appropriate section:
+ *
+ * Global rules
+ * Cornell idenity
+ * arXiv Masthead
+ * Auth pages
+ * Content styles
+ */
+
+/****************************************
+ *Global rules (that affect entire tags)
+ ****************************************/
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+	color: #000;
+	font-family: 'Lucida Grande', helvetica, arial, verdana, sans-serif;
+	}
+
+a:link, a:visited, a:active {
+	text-decoration: none;
+	}
+
+a:hover {
+	text-decoration: underline;
+	}
+
+fieldset {
+	margin: 1em;
+	}
+
+fieldset legend {
+	font-weight: bold;
+	}
+
+hr, .hidden { display: none; }
+
+hr.show {
+	display: block;
+	}
+
+img { border: 0; }
+
+em {
+	color: #c00;
+        font-weight: bold;
+        font-style: normal;
+}
+
+em.boxed {
+	color: #000;
+        background-color: #fff;
+        border: 3px;
+        border-color: #0c0;
+        border-style: solid;
+        padding: 5px;
+	font-weight: bold;
+	font-size: 150%;
+        font-style: normal;
+}
+
+/****************************************
+ * Cornell Identity
+ ****************************************/
+
+#cu-identity {
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 63.125%;
+	color: #222;
+	height: 75px;
+	background: #68645b;
+	}
+
+#cu-logo {
+	position: absolute;
+	top: 0;
+	left: 20px;
+	width: 303px;
+	height: 75px;
+	background: url(/icons/cu/cul_signature.gif) no-repeat -8px -1px;
+	}
+	
+#cu-logo a {
+	position: absolute;
+	display: block;
+	border: none;
+	/* hide text link */
+	text-indent: -1000em; 
+	text-decoration: none;
+	}
+	
+#insignia-link {
+	width: 68px;
+	height: 75px;
+	}
+
+#unit-signature-links a {
+	left: 68px;
+	width: 185px;
+	}
+
+#cornell-link {
+	height: 38px;
+	}
+	
+#unit-link {
+	top: 38px;
+	height: 37px;
+	}
+	
+#cu-logo img {
+	display: none;
+	}
+ 
+/*	
+	Search Navigation 
+	-------------------------
+*/
+
+#search-navigation {
+	position: absolute;
+	top: 37px;
+	right: 0%;
+	margin-right: 12px;
+	}
+	
+#search-navigation ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-size: 1.1em;
+	}
+	
+#search-navigation li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	background: none;
+	}
+		
+#search-navigation a {
+	float: left;
+	padding: 5px 15px;
+	color: #fff;
+	text-decoration: none;
+	border: none;
+	}
+	
+#search-navigation a:hover {
+	background: #444;
+	}
+
+
+/****************************************
+ * arXiv.org Masthead
+ ****************************************/
+
+#header {
+	background-color: #b31b1b;
+	color: #fff;
+	margin: 0;
+	padding: .75em 0;
+	border-bottom: 2px solid #ccc;
+	}
+
+#header h1 {
+	margin: 0;
+	font-size: 1em;
+	padding: 0 0 .2em 20px;
+	font-weight: bold;
+	font-style: normal;
+	}
+
+#front #header h1 {
+	font-size: 2.5em;
+	font-weight: normal;
+	}
+
+#header a, #header a:visited {
+	color: #fff;
+	text-decoration: none;
+	}
+
+#header a:hover {
+	text-decoration: underline;
+	}
+
+
+/* Masthead Search */
+
+/* on thin red bar pages */
+#header form {
+	position: absolute;
+	top: 4px;
+	right: 0%;
+	margin: 0 12px 0 0;
+	padding: 0;
+	text-align: right;
+	font-size: .8em;
+	line-height: 100%;
+	}
+
+/* on mirror front pages */
+#front #header form {
+	top: 25px;
+	}
+
+/* on CUL front page */
+#front.with-cu-identity #header form {
+	top: 100px;
+	}
+
+#header form input, #header form select {
+	margin: 0;
+	padding: 0;
+	}
+
+#header form .search-for {
+	font-size: 84%;
+	text-align: left;
+	float: left;
+	}
+
+#header form .links {
+	padding-bottom: .4em;
+	font-size: 84%;
+	}
+
+#header form .links a {
+	text-decoration: underline;
+	}
+
+/****************************************
+ * Footer
+ ****************************************/
+
+#footer {
+	background-color: #eee;
+	color: #000;
+	margin: 1em 0 0 0;
+	padding: .7em;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	font-size: 80%;
+	}
+
+#footer a, #footer a:visited {
+	text-decoration: none;
+	}
+
+#footer a:hover {
+	text-decoration: underline;
+	}
+
+#footer address {
+	/*font-size: 90%;*/
+	margin: 5px;
+	font-style: normal;
+	}
+
+#footer p, #footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6 {
+	/*font-size: 90%;*/
+	margin: 5px;
+	}
+
+/* Access Keys */
+.accesskey {
+	font-weight: bold;
+	}
+
+/****************************************
+ * Auth pages
+ ****************************************/
+
+.editbar {
+	background-color: #8080ff;
+	color: white;
+	font-family: monospace;
+	font-weight: bold;
+	line-height: 0.8;
+	text-decoration: none;
+	}
+
+.errmsg {
+	color: #f00;
+	font-style: italic;
+	}
+
+/****************************************
+ * Form interface (/form)
+ ****************************************/
+
+#form-interface {
+	background-color: #f0eee4;
+	color: #000;
+	font-size: 120%;
+	padding: 0.2em;
+}
+
+/****************************************
+ * Content styles
+ ****************************************/
+
+#content {
+	padding: .7em;
+	font-size: 90%;
+	}
+
+/* Index page tagline */
+p.tagline {
+	margin: 0;
+	padding: 0 0 0.3em 0;
+	}

@@ -1,0 +1,319 @@
+body {
+color:#000;
+background-color:#fff;
+font:1em verdana, tahoma, arial, sans-serif, helvetica;
+margin:0;
+}
+
+a:link {
+color:#00c;
+}
+
+a:visited {
+color:#909;
+}
+
+#columnRight {
+width:15%;
+float:left;
+font-size:0.7em;
+border:1px solid;
+border-color:#cdc8ab;
+padding:1em;
+}
+
+#columnRight h2 {
+font-size:1em;
+border-bottom:solid 1px;
+}
+
+#columnRight h3 {
+font-size:1em;
+}
+
+#columnLeft {
+width:40%;
+float:left;
+}
+
+#columnMiddle {
+width:40%;
+float:left;
+}
+
+#quotes {
+font:0.70em verdana, tahoma, arial, sans-serif, helvetica;
+color: #000;
+background-color:#eed;
+border-bottom:1px solid;
+clear:both;
+margin:0 10px;
+padding:5px;
+}
+
+#quotes a {
+font-weight:700;
+color:#e90;
+}
+
+#header {
+margin:10px 10px 0;
+}
+
+#toplinks {
+font-size:0.7em;
+font-weight:700;
+padding:0 0 0 1em;
+}
+
+#toplinks a {
+color:#000;
+margin:0 10px 0 0;
+}
+
+#title {
+font-weight:700;
+text-align:center;
+float:left;
+clear:left;
+padding:1em;
+}
+
+#title a {
+font-size:1.5em;
+color:#000;
+text-decoration:none;
+}
+
+#title span {
+color:#e90;
+font-size:0.6em;
+}
+
+#search {
+float:right;
+clear:right;
+padding:1em;
+}
+
+#search form {
+margin:0;
+}
+
+#search span {
+font-size:0.8em;
+font-weight:700;
+}
+
+#search .text {
+font:0.8em verdana, tahoma, arial, sans-serif, helvetica;
+border:1px solid;
+border-color:#d3d3d3;
+}
+
+#search .submit {
+color:#fff;
+font:bold 0.8em verdana, tahoma, arial, sans-serif, helvetica;
+background-color:#e90;
+cursor:pointer;
+border-style:outset;
+}
+
+#quick {
+font-size:0.8em;
+font-weight:700;
+background-color:#eed;
+border-top:1px solid;
+border-bottom:1px solid;
+clear:both;
+margin:0 10px;
+padding:5px;
+}
+
+#quick a {
+color:#e90;
+}
+
+#nav {
+background-color:#cdc8ab;
+font-size:0.8em;
+font-weight:700;
+border-bottom:1px solid;
+clear:both;
+margin:0 10px;
+padding:5px;
+}
+
+#nav a {
+color:#000;
+}
+
+#info {
+font-size:0.8em;
+background-color:#eed;
+border-bottom:1px solid;
+margin:0 10px;
+padding:5px;
+}
+
+#sponsor {
+background-color:#fff6aa;
+border-bottom:1px solid;
+margin:0 10px;
+padding:5px;
+}
+
+#sponsor_no {
+font-size:0.8em;
+background-color:#9cf;
+border-bottom:1px solid;
+margin:0 10px;
+padding:5px;
+}
+
+#message .indent {
+text-indent:3em;
+}
+
+#alert {
+font-size:0.7em;
+text-align:right;
+}
+
+#market {
+font-size:0.8em;
+background-color:#fff6e1;
+border-bottom:1px solid;
+margin:0 10px;
+padding:5px;
+}
+
+#market_no {
+font-size:0.8em;
+background-color:#ebffdd;
+border-bottom:1px solid;
+margin:0 10px;
+padding:5px;
+}
+
+#content {
+clear:both;
+padding:1em;
+}
+
+dt {
+font-weight:700;
+margin:0 0 1em 1em;
+}
+
+dd {
+margin:0 0 1em 2em;
+}
+
+.bold {
+font-weight:700;
+}
+
+.highlight {
+/*background-color:#fff6aa;*/
+background-color:#ffff66;
+font-weight:700;
+padding:0.2em;
+}
+
+.xsmall {
+font-size:0.6em;
+}
+
+.light {
+color:#777;
+}
+
+#footer {
+font-size:0.8em;
+background-color:#eed;
+text-align:center;
+border-top:1px solid;
+border-bottom:1px solid;
+clear:both;
+border-color:#000;
+margin:10px 10px 0;
+}
+
+#filter table {
+font-size:1em;
+border:1px solid;
+border-color:#cdc8ab;
+}
+
+#filter td {
+border:1px solid;
+border-color:#cdc8ab;
+}
+
+#filter h2 {
+font-size:1em;
+font-weight:700;
+border-bottom:1px solid;
+}
+
+#filter .list,.box {
+font-family:verdana, tahoma, arial, sans-serif, helvetica;
+font-size:1em;
+}
+
+#filter .view,.get {
+font-family:verdana, tahoma, arial, sans-serif, helvetica;
+font-size:1em;
+font-weight:700;
+background-color:#cdc8ab;
+border:1px outset;
+cursor:pointer;
+border-color:#FFF;
+}
+
+#quotes a:hover,#toplinks a:hover,#quick a:hover,#nav a:hover,#info a:hover,#footer a:hover {
+text-decoration:none;
+}
+
+#info a,#footer a {
+color:#e90;
+font-weight:700;
+}
+
+#message,.small,#filter {
+font-size:0.8em;
+}
+
+.teamTitle {
+font-size:1.5em;
+font-weight:bold;
+}
+
+.scoreTitle {
+font-size:2em;
+font-weight:bold;
+}
+
+.recordTitle {
+font-size:1em;
+font-weight:bold;
+}
+
+.streakTitle {
+font-size:1em;
+font-weight:bold;
+}
+
+.boxHead {
+background-color:#cdc8ab;
+}
+
+.box0 {
+background-color:#fff;
+}
+
+.box1 {
+background-color:#eeeedd;
+}
+

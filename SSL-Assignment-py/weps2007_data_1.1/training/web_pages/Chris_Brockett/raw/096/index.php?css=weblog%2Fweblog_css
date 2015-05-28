@@ -1,0 +1,369 @@
+body {
+margin: 0 auto;
+padding: 0;
+background: #ccc;
+color: #333;
+font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
+line-height: 120%;
+}
+
+h1, h2, h3 {
+font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
+letter-spacing: 0.09em;
+}
+
+h4 {
+font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
+margin-bottom: 4px;
+}
+
+p {
+font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
+}
+
+.center {
+text-align: center;
+}
+
+blockquote {
+font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
+}
+
+ul {
+list-style: square;
+margin-top: 3px;
+margin-bottom: 3px;
+margin-left: 1em;
+padding-left: 1em;
+}
+
+li {
+font-size: 100%;
+font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
+}
+
+img {
+margin: 0;
+padding: 0;
+border: 0;
+}
+
+a:link { color: #CC0000; border-bottom: 1px solid #CCC; background-color: transparent; text-decoration: none; }
+
+a:hover { color: #CC0000; border-bottom: 1px solid #730E38; background-color: #CCDDEE; text-decoration: none; }
+
+a:visited { color: #CC7777; border-bottom: 1px solid #CCC; background-color: transparent; text-decoration: none; }
+
+#blogtitle a:link { border: 0; background-color: transparent; text-decoration: none; }
+
+#blogtitle a:hover { border: 0; background-color: transparent; text-decoration: none; }
+
+#blogtitle a:visited { border: 0; background-color: transparent; text-decoration: none; }
+
+#wrapper {
+margin: 0px auto;
+padding-bottom: 10px;
+width: 740px;
+border-top: 7px solid #9DB7A7;
+border-right: 1px solid #aaa;
+border-bottom: 20px solid #9DB7A7;
+border-left: 1px solid #aaa;
+background: #eee;
+color: #333;
+}
+
+#header {
+margin-bottom: 10px;
+padding: 5px 10px 5px 20px;
+border-bottom: 1px solid #ccc;
+background: #fff;
+color: #003300;
+font-variant: small-caps;
+}
+
+#blogtitle {
+float: left;
+margin: 0;
+padding: 0;
+width: 300px;
+text-align: left;
+font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
+}
+
+#blogtitle h1 {
+margin: 0;
+padding: 0;
+font-size: 160%;
+letter-spacing: 0.1em;
+text-align: left;
+}
+
+#blog h1 {
+font-variant: small-caps;
+}
+
+#blog img {
+margin: 5px;
+padding: 5px;
+border: 1px solid #CCC;
+}
+
+#nav {
+float: left;
+margin: 0;
+padding: 0;
+width: 400px;
+text-align: right;
+background: transparent;
+color: #333;
+font-size: 65%;
+font-variant: small-caps;
+letter-spacing: 0.09em;
+}
+
+#content {
+float: left;
+margin-bottom: 10px;
+padding: 0 10px;
+}
+
+#blog {
+float: left;
+margin-right: 5px;
+padding: 10px;
+border: 1px solid #ccc;
+width: 440px;
+background: #fff;
+color: #333;
+font-size: 80%;
+text-align: left;
+}
+
+#sidebar {
+float: left;
+margin-left: 5px;
+padding: 10px;
+border: 1px solid #ccc;
+width: 225px;
+background: #fff;
+color: #333;
+text-align: left;
+font-size: 70%;
+}
+
+#footer {
+margin: 0;
+padding: 5px 10px;
+border-top: 1px solid #ccc;
+border-bottom: 1px solid #ccc;
+background: #fff;
+color: #333;
+font-size: 70%;
+font-variant: small-caps;
+letter-spacing: 0.09em;
+}
+
+.date {
+font-size: 100%;
+background: transparent;
+color: #000;
+}
+
+.title {
+font-size: 130%;
+font-weight: normal;
+background: transparent;
+color: #336600;
+border-bottom: 1px solid #ddd;
+}
+
+.posted {
+margin-bottom: 30px;
+font: 10px Verdana, Arial, Geneva, Helvetica, sans-serif;
+background: transparent;
+color: #666;
+}
+
+.sidetitle {
+margin: 10px 0;
+font-size: 115%;
+letter-spacing: 0.09em;
+font-weight: normal;
+background: transparent;
+color: #666600;
+border-bottom: 1px dotted #ccc;
+}
+
+.spacer {
+clear: both;
+}
+
+.paginate {
+font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
+ font-size:			12px;
+ font-weight: 		normal;
+ letter-spacing:	.1em;
+ padding:			10px 6px 10px 4px;
+ margin:			0;
+ background-color:	transparent;
+}
+
+.pagecount {
+font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
+ font-size:			10px;
+ color:				#666;
+ font-weight:		normal;
+ background-color: transparent;
+}
+
+.calendarBG {
+ background-color: #000;
+}
+
+.calendarBlank {
+ background-color: #9DB7A7;
+}
+
+.calendarHeader {
+ font-weight: bold;
+ color: #fff;
+ text-align: center;
+ background-color: #000;
+}
+
+.calendarMonthLinks {
+ font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
+ font-size:         11px;
+ font-weight:		bold;
+ letter-spacing:	.1em;
+ text-decoration:   none;
+ color:             #fff;
+ background-color:  transparent;
+}
+
+.calendarMonthLinks a {
+ color:             #fff;
+ text-decoration:   none;
+ background-color:  transparent;
+}
+
+.calendarMonthLinks a:visited {
+ color:             #fff;
+ text-decoration:   none;
+ background-color:  transparent;
+}
+
+.calendarMonthLinks a:hover {
+ color:             #ccc;
+ text-decoration:   underline;
+ background-color:  transparent;
+}
+
+.calendarDayHeading {
+ font-weight: bold;
+ font-size:	11px;
+ color: #fff;
+ background-color: #663300;
+ text-align:  center;
+ vertical-align: middle;
+}
+
+.calendarToday {
+ font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
+ font-size:         12px;
+ font-weight:		bold;
+ letter-spacing:	.1em;
+ text-decoration:   none;
+ text-align:  center;
+ vertical-align: middle;
+ color:             #000;
+ background-color: 	#ccc;
+}
+
+.calendarCell {
+ font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
+ font-size:         12px;
+ font-weight:		bold;
+ letter-spacing:	.1em;
+ text-decoration:   none;
+ text-align:  center;
+ vertical-align: middle;
+ color:             #666;
+ background-color:  #fff;
+}
+
+.calendarCell a {
+ color:             #000;
+ text-decoration:   underline;
+ background-color:  transparent;
+}
+
+.calendarCell a:visited {
+ color:             #000;
+ text-decoration:   underline;
+ background-color:  transparent;
+}
+
+.calendarCell a:hover {
+ color:             #fff;
+ text-decoration:   none;
+ background-color:  transparent;
+}
+
+.input {
+border-top:        1px solid #999999;
+border-left:       1px solid #999999;
+background-color:  #fff;
+color:             #000;
+font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
+font-size:         11px;
+height:            1.6em;
+padding:           .3em 0 0 2px;
+margin-top:        6px;
+margin-bottom:     3px;
+}
+
+.textarea {
+border-top:        1px solid #999999;
+border-left:       1px solid #999999;
+background-color:  #fff;
+color:             #000;
+font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
+font-size:         11px;
+margin-top:        3px;
+margin-bottom:     3px;
+}
+
+.checkbox {
+background-color:  transparent;
+margin:            3px;
+padding:           0;
+border:            0;
+}
+
+.submit {
+background-color:  #fff;
+font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
+font-size:         11px;
+font-weight:       normal;
+letter-spacing:    .1em;
+padding:           1px 3px 1px 3px;
+margin-top:        6px;
+margin-bottom:     4px;
+text-transform:    uppercase;
+color:             #000;
+}
+
+.pde_hide {
+display: none;
+}
+
+.copyright {
+text-align: right;
+}
+
+.blurb {
+margin: 5px; 
+padding: 5px; 
+border: 1px solid #CCC;
+}

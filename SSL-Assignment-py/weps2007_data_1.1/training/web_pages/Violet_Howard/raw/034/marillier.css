@@ -1,0 +1,42 @@
+<style type="text/css">
+
+/* I don't use this div box - I found it on www.w3c, Dave Raggett */
+div.box { border: solid; border-width: thin; width: 100% }
+
+/* Set the defaults for body text */
+body { font size=17px face="verdana, arial, comic sans ms"; 
+       margin-left: 10%; margin-right: 10%; 
+       line-height: 20px; 
+     }
+
+/* Set the defaults for list text - we want a bit more spacing between lines */
+li { font size=17px face="verdana, arial, comic sans ms";
+       /* margin-left: 10%; margin-right: 10%; */
+       line-height: 25px;
+     }
+
+/* Set the defaults for the various headings */
+/* h1 { font-family: arial, verdana, "comic sans ms"; color: red; }  */
+h1 { font size=35px face="arial, verdana, comic sans ms"; color: red; 
+     font-weight: bold; line-height=45px; 
+   }
+h2 { font-family: arial, verdana, "comic sans ms"; color: red; }
+h3 { font-family: verdana, arial, "comic sans ms"; }
+h4 { font-family: verdana, arial, "comic sans ms"; }
+h5 { font-family: "comic sans ms", verdana, arial; }
+h6 { font-family: verdana, arial, "comic sans ms"; }
+h7 { font-family: verdana, arial, "comic sans ms"; }
+
+/* Create a few classes */
+/* Class to make only the first line of a paragraph indent */
+div.indent { text-indent: 2em; margin-top: 0; margin-bottom: 0; }
+
+/* Class to make yellow highlighted text */
+div.highlighty { background:yellow; }
+
+/* Class to make cyan highlighted text */
+div.highlightb { background:cyan; }
+
+</style>
+
+

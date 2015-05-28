@@ -1,0 +1,254 @@
+/* site classes (set height to 100% to avoid scrollbar shift) */
+html {height:100%}
+body {margin:0px; background-color:#898F97;min-height:100.1%;}
+
+/* table cell classes */
+
+td {vertical-align:top; font-family:verdana,helvetica; font-size:11px; color:#CAD0D8}
+td.middle{vertical-align:middle}
+
+/* nav cell classes */
+
+td.nav{width:136px; background-color:#021433; background-image:url(../img/nav/nav_bg.gif); background-repeat: repeat-x; padding-left:15px; padding-top:6px; padding-right:20px; padding-bottom:6px}
+a.nav, a.nav:visited{font-family:verdana,helvetica;color:#828EA2; text-decoration:none;font-size:9px;}
+a.nav:hover{color:#fff; text-decoration:none;font-size:9px;}
+a.navon, a.navon:visited{color:#fff; text-decoration:none;font-size:9px;}
+a.navon:hover{color:#fff; text-decoration:none;font-size:9px;}
+
+td.subnav{width:136px; background-color:#E9EAEB; padding-left:18px; padding-top:6px; padding-right:20px; padding-bottom:6px}
+td.subnavon{width:136px; background-color:#CCD0D5; padding-left:18px; padding-top:6px; padding-right:20px; padding-bottom:6px}
+a.subnav, a.subnav:visited{color:#0E2752; text-decoration:none;font-size:9px;}
+a.subnav:hover{color:#0E2752; text-decoration:none;font-size:9px;}
+a.subnavon, a.subnavon:visited{color:#0E2752; text-decoration:none;font-size:9px;}
+a.subnavon:hover{color:#0E2752; text-decoration:none;font-size:9px;}
+
+/* color and font style classes */
+
+.header{color:#4189DD; font-weight:bold}
+.white{color:#fff}
+
+/* sitewide link classes */
+a, a:visited{color:#F06D29; text-decoration:none;}
+a:hover{color:#F06D29; text-decoration:none;}
+
+.sitelink a{color:#F06D29; text-decoration:none}
+.sitelink a:hover{color:#F06D29; text-decoration:none}
+
+.personlink a{color:#F06D29; text-decoration:none}
+.personlink a:hover{color:#F06D29; text-decoration:none}
+
+
+a.newslink{color:#4189DD; text-decoration:none;font-size:9px;}
+a.newslink:hover{color:#2E6AB0; text-decoration:none;font-size:9px;}
+
+td.breadcrumb{color:#F2AA89; vertical-align:middle}
+a.breadcrumb, a.breadcrumb:visited{color:#F2AA89; text-decoration:none;}
+a.breadcrumb:hover{color:#fff; text-decoration:none;}
+a.breadcrumbon, a.breadcrumbon:visited{color:#fff; text-decoration:none;}
+a.breadcrumbon:hover{color:#fff; text-decoration:none;}
+
+/* footer classes */
+
+.footer, a.footer{font-family:verdana,helvetica;font-size:10px;color:#999; text-decoration:none}
+td.footer{font-family:verdana,helvetica;font-size:10px;color:#fff; text-decoration:none}
+a.footer:hover{font-family:verdana,helvetica;color:#fff; font-size:10px;text-decoration:none}
+a.footer:visited{color:#999; text-decoration:none}
+
+/* widecontent classes */
+
+td.wideorange, .wideorange{font-weight:bold;vertical-align:middle; color:#F06D29}
+td.wideorangenumber{font-weight:bold;;font-size:17px;vertical-align:middle; color:#F06D29}
+a.widelink{color:#4189DD; text-decoration:none}
+a.widelink:hover{color:#fff; text-decoration:none}
+
+/* dropshadow div */
+#dropshadow1 {width:100%; background-image: url(../img/uni/dropshadow.gif); background-repeat: repeat-x; filter:alpha(opacity=20); -moz-opacity:0.20; opacity: 0.20;}
+#dropshadow2 {width:100%; background-image: url(../img/uni/dropshadow.gif); background-repeat: repeat-x; filter:alpha(opacity=35); -moz-opacity:0.35; opacity: 0.35;}
+#dropshadow3 {width:100%; background-image: url(../img/uni/dropshadow.gif); background-repeat: repeat-x; filter:alpha(opacity=45); -moz-opacity:0.45; opacity: 0.45;}
+#dropshadow4 {width:100%; background-image: url(../img/uni/dropshadow.gif); background-repeat: repeat-x; filter:alpha(opacity=60); -moz-opacity:0.60; opacity: 0.60;}
+
+/* div stuff for the homepage */
+
+* {box-sizing: border-box;-moz-box-sizing: border-box;}
+
+div.merchandise_holder{position:absolute; padding-bottom:3px; padding-top:3px; padding-right:3px; padding-left:3px; width:352px;}
+div.merchandise_content{position:absolute; padding-bottom:0px; padding-top:0px; padding-right:3px; padding-left:3px; width:352px; color:#000;}
+div.merchandise_container{width:327px;}
+div.merchandise_container a{color:#4189DD; text-decoration:none}
+div.merchandise_container a:hover{color:#2E6AB0; text-decoration:none}
+
+div.news_holder{position:relative; padding-bottom:3px; padding-top:3px; padding-right:3px; padding-left:3px; width:217px; height:99px}
+div.news_content{position:absolute; padding-bottom:0px; padding-top:0px; padding-right:3px; padding-left:3px; width:217px; height:93px; overflow:auto; color:#000}
+div.news_container{width:192px}
+div.news_container a{color:#4189DD; text-decoration:none}
+div.news_container a:hover{color:#2E6AB0; text-decoration:none}
+
+div.multi_content{position:absolute; padding-bottom:0px; padding-top:0px; padding-right:3px; padding-left:3px; width:222px; height:147px; overflow:auto; background-color:#fff;color:#000000;}
+div.multi_content font{color:#000000;}
+div.multi_content a{color:#4189DD; text-decoration:none}
+div.multi_content a:hover{color:#2E6AB0; text-decoration:none}
+
+div.fanpoll_holder{position:relative; padding-bottom:3px; padding-top:3px; padding-right:3px; padding-left:3px; width:233px;}
+div.fanpoll_content, .tinyText{position:relative; padding-bottom:0px; padding-top:0px; padding-right:3px; padding-left:3px; width:233px; color:#000;}
+div.fanpoll_container{width:208px}
+
+/* genric form attributes */
+
+input {font-family: verdana, helvetica; font-size:10px; color:#000000}
+select {font-family: verdana, helvetica; font-size:10px; color:#999999}
+textarea {font-family: verdana, helvetica; font-size:10px; color:#999999}
+input.leftnavform {color:#666; width:120px; height:18px; text-align:middle; padding:3px; margin-bottom:0px; border:0px}
+div.leftnavformholder{height:25px}
+
+
+/* cheerleaders */
+.cheerName {
+	padding-top:3px;
+	padding-right:10px;
+	padding-bottom:5px;
+	font-size:10px;
+}
+.cheerName a, .cheerName a:visited,.cheerName a:hover {
+	color:#737b86;
+	text-decoration:none;
+}
+
+/* kids stuff */
+
+#kids_main{
+
+	width: 567px; 
+
+	background-color: #000; 
+
+	margin:0; 
+
+	padding:0; 
+
+	color:#CED3DE; 
+
+	float:left;
+
+}
+
+
+
+#kids_header{
+
+	height: 85px; 
+
+	width:567px; 
+
+	margin:0; 
+
+	padding:0; 
+
+	float:left; 
+
+}
+
+#kids_nav{
+
+	width:567px;
+
+	height:87px; 
+
+	margin:0 0 0px 0; 
+
+	padding:0; 
+
+	float:left;
+
+}
+
+#kids_content{
+
+	width:411px; 
+
+	float:left; 
+
+	margin: 25px 0 0 10px; 
+
+	padding: 0px 10px 0 0; 
+
+	line-height:15px;
+
+}
+
+
+
+#kids_nav2{
+
+	width: 136px;
+
+	margin: 25px 0 0 0;/margin: 28px 0 0 0;
+
+	padding: 0px 0px 0 0px;
+
+	float:left;	
+
+	color: #FFF;
+
+}
+
+
+
+#kids_nav2 ul {
+
+	margin: 0px 0 0 15px;
+
+	padding: 0;
+
+}
+
+#kids_nav2 li {
+
+	margin: 0;
+
+	padding: 0;
+
+	list-style-type: none;
+
+	line-height: 12px;
+
+}
+
+
+
+#kids_nav2 ul li a {
+
+	background: url(../img/Kid%20Stuff/kids-bullet.gif);
+
+	background-repeat:no-repeat;
+
+	background-position:0px 0px;	
+
+	margin: 0;
+
+}
+
+#kids_nav2 a:link, #kids_nav a:visited {
+
+	color:#FFF;
+
+	display:block;
+
+	font-weight: bold;
+
+	padding: 0px 0 0px 23px;
+
+	margin: 6px 0 0px 0;/margin: 0px 0 0px 0;
+
+	text-decoration: none;
+
+}
+
+#kids_nav2 a:hover, #kids_nav a:active {
+
+	color: #F76D29;
+
+	margin-left: 0px;
+
+	font-weight: bold;
+
+}

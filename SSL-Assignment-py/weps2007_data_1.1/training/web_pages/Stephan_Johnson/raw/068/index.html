@@ -1,0 +1,1691 @@
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML Transitional//EN">
+
+<html>
+<head>
+    <title>REGISTER A GLOBAL USER ACCOUNT</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+    <link rel="stylesheet" type="text/css" href="http://www.onlineathens.com/regfiles/stylesheet.css">
+<script type="text/javascript">
+/* cjohnson */
+function reg_capture_redirect() {
+/* save the query_string part of the url locally */
+	var query_string = window.location.search;
+
+/* look for the redirect location data */
+	var start_index = query_string.indexOf('orq:');
+	var redirect = '';
+
+	if (start_index != -1) {
+		start_index += 4;
+		var redirect = query_string.substring(start_index, query_string.length);
+	}
+
+	if (redirect == '') {
+		redirect = 'http://www.onlineathens.com/';
+	}
+
+	reg_redirect_cookie('reg_redirect', redirect, null, '/', '.onlineathens.com');
+
+	return (redirect);
+}
+
+function reg_redirect_cookie(name, value, expires, path, domain, secure) {
+// name - name of the cookie
+// value - value of the cookie
+// [expires] - expiration date of the cookie (defaults to end of current session)
+// [path] - path for which the cookie is valid (defaults to path of calling document)
+// [domain] - domain for which the cookie is valid (defaults to domain of calling document)
+// [secure] - Boolean value indicating if the cookie transmission requires a secure transmission
+// * an argument defaults when it is assigned null as a placeholder
+// * a null placeholder is not required for trailing omitted arguments
+	var curCookie = name + "=" + escape(value) +
+		((expires) ? "; expires=" + expires.toGMTString() : "") +
+		((path) ? "; path=" + path : "") +
+		((domain) ? "; domain=" + domain : "") +
+		((secure) ? "; secure" : "");
+
+	document.cookie = curCookie;
+}
+</script>
+</head>
+<body onLoad="reg_capture_redirect();">
+
+<div align="center">
+
+    <div style="width: 720px; text-align: left;">
+
+        <div style="font-size: 32px; color: #333; font-weight: bold">OnlineAthens.com</div>
+
+        <!-- logo bottom bar -->
+        <div class="regLogoBar"></div>
+
+        <!-- page title area -->
+        <br>
+        <table border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td rowspan="2"><img src="http://www.onlineathens.com/regfiles/images/check.gif" height="35" width="35" border="0" alt=" " style="margin: 0 4px 0 0;"></td>
+            <td class="regSubtitle" nowrap>USER REGISTRATION</td>
+            <td rowspan="2" class="regTitleMessage">
+                    &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td class="regTitle" nowrap>REGISTER A GLOBAL USER ACCOUNT</td>
+        </tr>
+        </table>
+
+        <!-- double bars -->
+        <div class="regDoubleBar"></div>
+        <div class="regDoubleBar"></div>
+        <br>
+
+
+        <!-- login and welcome message area -->
+        <table border="0" cellpadding="0" cellspacing="0" align="right" width="690">
+        <tr valign="top">
+            <td style="padding: 0 5px 0 0;">
+                <p>Registration notes:<br><ul><li> To access content on OnlineAthens, we are now requiring free user registration. Just fill out the simple form below to become a member. If you have a question, please check out our <a href="http://www.onlineathens.com/reg/faq.shtml">Frequently Asked Questions</a> page. Also, please read our <a href="http://www.onlineathens.com/contactus/privacy.shtml">Privacy Policy</a>.<br><li> If you have previously registered for our classified advertising New Ad Notifier service, you do not need to register again. Your e-mail address and password will work to access our content.<br><li>If you previously registered for our free e-mail service or on our Forums, you will need to register for access to the main site.<br></ul>
+            </td>
+            <td align="right">
+                <!-- login box -->
+                <link rel="stylesheet" type="text/css" href="http://register.onlineathens.com/forge?web.fixed_values=hMiecoiAenF4UL%2BiV4iEclxLhL2ugZOMjnNqbbymhXWBgUloccymeIOKjmCXld%2FKpKiqlpeOn%2BabYmhpZlxX">
+                <table border="0" cellpadding="2" cellspacing="0" width="250" class="regLoginBox">
+                <tr>
+                    <td class="regLoginArea">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="regLoginLabelBox">
+                        <tr>
+                            <td class="regLoginLabelArea">Already a Member?</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0 15px;">
+
+                                    Enter your username and password to sign in.<br><br>
+
+                                <form action="http://register.onlineathens.com/forge/dataentry" method="POST" style="padding: 0; margin: 0;">
+                                <input type="hidden" name="web.fixed_values" value="hMiecoiAenF4UL+iV4iEclRLhL2ugZOMjnNqbcSweH2GW2ZmhL2ogIaRcpWKl+HUpaaZqYyUnp6zdnuXgXJsecbAcoiMenB1hL2lbqiqqohLgr2okIONiXN6hLXVo6mdb1dVYaiUYw">
+
+
+                                    <input type="hidden" name="web.fixed_values" value="gr2okHeHhG5uddevcoF9cpCJp9nEa2ZpaVxe">
+
+                                <br>
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                <tr valign="top">
+                                    <td class="regLabel"><b>Username:</b></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" name="USER" size="25" value=""></td>
+                                </tr>
+                                <tr valign="top">
+                                    <td class="regLabel"><b>Password:</b> <small>(case sensitive)</small></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="password" name="PASS" size="25"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                            <input type="checkbox" name="reg_cookie_age" value="31536000" checked>
+                                            Remember my login<br>
+                                        <br>
+                                        <input type="submit" value="Login">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <br>
+                                            <img src="http://www.onlineathens.com/regfiles/images/arrow_sm.gif" width="4" height="7" vspace="0" hspace="2" alt=" "> <a href="http://register.onlineathens.com/forge/dataentry?tp=ATHENS%20GA&amp;tl=10&amp;temp_type=DETAIL&amp;category=registration">Forget Your Password?</a><br>
+                                        <img src="http://www.onlineathens.com/regfiles/images/arrow_sm.gif" width="4" height="7" vspace="0" hspace="2" alt=" "> <a href="http://register.onlineathens.com/forge/dataentry?tp=ATHENS%20GA&amp;tl=4&amp;temp_type=detail&amp;category=registration">Forget Your Username?</a><br>
+
+                                            <img src="http://www.onlineathens.com/regfiles/images/arrow_sm.gif" width="4" height="7" vspace="0" hspace="2" alt=" "> <a href="http://register.onlineathens.com/forge/dataentry?tp=ATHENS GA&amp;tl=2&amp;temp_type=DATA ENTRY&amp;category=registration">Modify Your Account</a><br>
+
+
+                                            <img src="http://www.onlineathens.com/regfiles/images/arrow_sm.gif" width="4" height="7" vspace="0" hspace="2" alt=" "> <a href="http://register.onlineathens.com/forge/dataentry?tp=ATHENS%20GA&amp;tl=5&amp;temp_type=DATA%20ENTRY&amp;category=registration">Reactivate Your Account.</a><br>
+
+                                            <img src="http://www.onlineathens.com/regfiles/images/arrow_sm.gif" width="4" height="7" vspace="0" hspace="2" alt=" "> <a href="http://register.onlineathens.com/forge/dataentry?tp=ATHENS GA&amp;tl=7&amp;temp_type=DATA ENTRY&amp;category=registration">Report A Problem</a>
+                                    </td>
+                                </tr>
+                                </table>
+                                </form>
+
+                            </td>
+                        </tr>
+                        </table>
+                    </td>
+                </tr>
+                </table>
+
+                <!-- /login box -->
+            </td>
+        </tr>
+        </table>
+        <!-- end login and welcome message area -->
+
+        <br clear="all">
+        <br>
+
+<script type="text/javascript" language="JavaScript">
+<!-- hide from the old browsers
+
+var requiredFields = new Array();
+var errorMessage   = new Array();
+
+var i = 0;
+requiredFields[i] = 'reg.user.first_name';
+errorMessage[i++] = 'Please enter your first name.';
+
+requiredFields[i] = 'reg.user.last_name';
+errorMessage[i++] = 'Please enter your last name.';
+
+requiredFields[i] = 'reg.user.service_user_name';
+errorMessage[i++] = 'Please enter your desired username.';
+
+requiredFields[i] = 'reg.user.password';
+errorMessage[i++] = 'Please choose a password.';
+
+requiredFields[i] = 'password_confirm';
+errorMessage[i++] = 'Please confirm your password.';
+
+requiredFields[i] = 'reg.user.email';
+errorMessage[i++] = 'Please enter your email address';
+
+requiredFields[i] = 'reg.user_address.street1';
+errorMessage[i++] = 'Please enter your address';
+
+requiredFields[i] = 'reg.user_address.zipcode';
+errorMessage[i++] = 'Please enter your zipcode';
+
+requiredFields[i] = 'reg.user.gender';
+errorMessage[i++] = 'Please choose your gender';
+
+requiredFields[i] = 'dobYear';
+errorMessage[i++] = 'Please enter your year of birth';
+
+requiredFields[i] = 'reg.user_service_attribute.value:5';
+errorMessage[i++] = 'Please tell us whether you are a subscriber to the newspaper';
+
+
+/*
+ * cjohnson - shell function to handle all validation needs
+ */
+function checkForm (formObj) {
+    var returnVal = false;
+    returnVal = validateForm(formObj);
+    if (returnVal) {
+        returnVal = comparePasswords(formObj);
+    }
+    if (returnVal) {
+        returnVal = validateUsername(formObj);
+    }
+
+    if (returnVal) {
+        returnVal = validateEmail(formObj);
+    }
+
+    if (returnVal) {
+        returnVal = assembleDate (formObj, 'regDobDay', 'regDobMonth', 'regDobYear', 'reg.user.dob');
+    }
+
+    return (returnVal);
+}
+
+/*
+ * cjohnson - makes sure any form elements with names that match names in requiredFields
+ * array are not blank or have something selected for select objects
+ */
+function validateForm (formObj) {
+    var groupElements = new Object;
+    for (var i = 0; i < formObj.elements.length; i++) {
+        for (var j = 0; j < requiredFields.length; j++) {
+            if (requiredFields[j].toLowerCase() == formObj.elements[i].name.toLowerCase()) {
+                /* if element is text field or textarea and it can't be blank, first see if it is blank,
+                 * if so return false, otherwise, get rid of double spaces and leading spaces then check
+                 * again to see if it is blank
+                 */
+                if ((formObj.elements[i].type == "text") || (formObj.elements[i].type == "textarea") || (formObj.elements[i].type == "hidden") || (formObj.elements[i].type == "password")) {
+                    if (formObj.elements[i].value == '') {
+                        alert (errorMessage[j]);
+                        return false;
+                    } else {
+                        formObj.elements[i].value = spaceTrim(formObj.elements[i].value);
+                        if (formObj.elements[i].value == '') {
+                            alert (errorMessage[j]);
+                            return false;
+                        }
+                    }
+                } /* end checking for text and textarea */
+
+                /* if element is a single select element make sure something is selected and whatever is selected has a value */
+                if (formObj.elements[i].type == "select") {
+                    if (formObj.elements[i].selectedIndex < 0) {
+                            alert (errorMessage[j]);
+                            return false;
+                    } else if (formObj.elements[i].options[formObj.elements[i].selectedIndex].value == '') {
+                            alert (errorMessage[j]);
+                            return false;
+                    }
+                } /* end checking for single select elements */
+
+                /* if element is a multiple select element make sure something is selected and one of whatever is selected has a value*/
+                if (formObj.elements[i].type == "select-multiple") {
+                    if (formObj.elements[i].selectedIndex < 0) {
+                            alert (errorMessage[j]);
+                            return false;
+                    } else {
+                        var showError = true;
+                        /* loop through all options looking for what is selected */
+                        for (k = 0; k < formObj.elements[i].options.length; k++) {
+                            if (formObj.elements[i].options[k].selected) {
+                                if (formObj.elements[i].options[k].value != '') {
+                                    showError = false;
+                                }
+                            }
+                        }
+
+                        if (showError) {
+                            alert (errorMessage[j]);
+                            return false;
+                        }
+                    }
+                } /* end checking for single select elements */
+
+                /* if element is a radio button element make sure one of the group is selected and that the selected option has a value */
+                if (formObj.elements[i].type == "radio") {
+                    /* use the fact that objects in javascript are hashes to keep track of whether we've seen this item before and whether it has already been validated */
+                    if (groupElements[formObj.elements[i].name] == true) {
+                        /* do nothing, one of the group has already been determined okay */
+                    } else {
+                        if (formObj.elements[i].checked && formObj.elements.value != '') {
+                            /* mark this group as okay */
+                            groupElements[formObj.elements[i].name] = true;
+                        } else {
+                            /* save the index of the required fields array as the value for showing error message later */
+                            groupElements[formObj.elements[i].name] = j;
+                        }
+                    }
+                } /* end checking for radio elements */
+
+            } /* end if field must be completed logic */
+        } /* end for loop through requiredFields array */
+    } /* end loop through all form fields array */
+
+    /* check elements that occurred as groups to make sure one of each group was selected and validated */
+    for (var property in groupElements) {
+        if (groupElements[property] != true) {
+            alert (errorMessage[groupElements[property]]);
+            return false;
+        }
+    }
+    return true;
+}
+
+
+/* modified by cjohnson
+ * provided by tonyz from a library
+ * removes leading and trailing spaces from a string as well as removing
+ * occurences of double spacing
+ */
+function spaceTrim(InString) {
+    /* get rid of all double spaces */
+    while (InString.indexOf("  ") != -1) {
+        Temp = InString.substring(0, InString.indexOf("  "))
+        InString = Temp + InString.substring(InString.indexOf("  ")+1, InString.length)
+    }
+
+    /* get rid of leading spaces */
+    if (InString.substring(0, 1) == " ") {
+        InString = InString.substring(1, InString.length);
+    }
+
+    /* get rid of trailing spaces */
+    if (InString.substring (InString.length-1) == " ") {
+        InString = InString.substring(0, InString.length-1);
+    }
+
+    return (InString)
+}
+
+/*
+ * cjohnson - will make sure that any set of form elements containing the
+ * word password in their name will match in value
+ * ignores element named reg.user.old_password and any element with a {
+ * in its value
+ */
+function comparePasswords (formObj) {
+    var password = null;
+    for (i = 0; i < formObj.elements.length; i++) {
+        if (formObj.elements[i].name.toLowerCase().indexOf("password") != -1 && formObj.elements[i].name.toLowerCase() != 'reg.user.old_password' && formObj.elements[i].value.indexOf('{') == -1) {
+            if (password != null) {
+                if (password != formObj.elements[i].value) {
+                    alert ("Your passwords do not match");
+                    return false;
+                }
+            } else {
+                password = formObj.elements[i].value;
+            }
+        }
+    }
+
+    return true;
+}
+
+
+/*
+ * cjohnson - will make sure that any form element containing the
+ * word email in it's name will match a "valid" format, test of value
+ * was lifted from the AOE templates
+ */
+function validateEmail (formObj) {
+    var atIndex         = null;
+    var domain          = null;
+    var dotIndex        = null;
+    var topLevelDomain  = null;
+    for (i = 0; i < formObj.elements.length; i++) {
+        if (formObj.elements[i].name.toLowerCase().indexOf("email") != -1
+&& formObj.elements[i].name.toLowerCase().indexOf("email.status") == -1) {
+
+            formObj.elements[i].value = spaceTrim(formObj.elements[i].value);
+            var str = formObj.elements[i].value;
+            if (!(/^[\.\-\+\w]*@\w+([\.-]?\w+)*(\.\w{2,6})+$/.test(str))) {
+                alert ("Your email address (" + str + ") does not appear to be valid");
+                return false;
+            }
+        }
+    }
+
+    return true;
+}
+
+/*
+ * cjohnson - will make sure that any form element containing the
+ * word zipcode in it's name will match a "valid" format
+ * basically means that it must contain 5 digits
+ */
+function validateZipcode (formObj) {
+    for (var i = 0; i < formObj.elements.length; i++) {
+        if (formObj.elements[i].name.toLowerCase().indexOf("zipcode") != -1) {
+            if (formObj.elements[i].value.length == 5) {
+                for (var j = 0; j <= formObj.elements[i].value.length; j++) {
+                    if ("0123456789".indexOf(formObj.elements[i].value.charAt(j)) == -1) {
+                        alert ("Your zipcode does not appear to be valid");
+                        return false;
+                    }
+                }
+            } else {
+                alert ("Your zipcode does not appear to be valid");
+                return false;
+            }
+        }
+    }
+    return true;
+}
+
+/*
+ * cjohnson - will take three form elements (day, month, year) and assemble them into
+ * a single element in date format
+ * assumes that the three given elements are of type text or select
+ * assumes no validation is needed
+ * assumes all elements exist and are appropriately named
+ */
+function assembleDate (formObj, dayName, monthName, yearName, destName) {
+    var destIndex = -1;
+    var dayVal    = null;
+    var monthVal  = null;
+    var yearVal   = null;
+    var today     = new Date();
+    var compare_date = new Date(today.getYear() - 13, today.getMonth(), today.getDate());
+    var month     = compare_date.getMonth();
+    var day       = compare_date.getDate();
+    var year      = compare_date.getFullYear();
+    month++;
+
+    for (i = 0; i < formObj.elements.length; i++) {
+        if (formObj.elements[i].name == dayName) {
+            if (formObj.elements[i].type == 'text') {
+                dayVal = formObj.elements[i].value;
+            } else if (formObj.elements[i].type.indexOf('select') != -1) {
+                dayVal = formObj.elements[i].options[formObj.elements[i].selectedIndex].value;
+            }
+        } else if (formObj.elements[i].name == monthName) {
+            if (formObj.elements[i].type == 'text') {
+                monthVal = formObj.elements[i].value;
+                monthNumVal = monthVal;
+            } else if (formObj.elements[i].type.indexOf('select') != -1) {
+                monthVal = formObj.elements[i].options[formObj.elements[i].selectedIndex].value;
+                monthNumVal = formObj.elements[i].selectedIndex + 1; /* remove +1 if empty first option available */
+            }
+        } else if (formObj.elements[i].name == yearName) {
+            if (formObj.elements[i].type == 'text') {
+                yearVal = formObj.elements[i].value;
+            } else if (formObj.elements[i].type.indexOf('select') != -1) {
+                yearVal = formObj.elements[i].options[formObj.elements[i].selectedIndex].value;
+            }
+        } else if (formObj.elements[i].name == destName) {
+            destIndex = i;
+        }
+    }
+
+    if (destIndex != -1) {
+        if (yearVal >= year) {
+            if (monthNumVal >= month || yearVal > year) {
+                if (dayVal >= day || monthNumVal > month || yearVal > year) {
+                    alert ("We're sorry, but it appears that you are under the age of 13.  Due to strict federal laws that make it illegal for us to take information from children under 13 years of age, please have your parent or guardian assist you in creating an account using their information.");
+                    window.location = "http://www.onlineathens.com/nie/";
+                    return false;
+                }
+            }
+        }
+
+        if (yearVal < 1000) {
+            alert ("Please specify your date of birth using 4 digits for the year");
+            return false;
+        }
+
+        formObj.elements[destIndex].value = dayVal + '-' + monthVal + '-' + yearVal;
+    }
+
+    return true;
+}
+
+/*
+ * cjohnson - for use with checkboxes when the status of the checkbox needs to be used
+ * to modify a value of another form element
+ */
+function checkboxHiddenValue (formElementObj, hiddenElementName) {
+    var newValue = '';
+
+    if (formElementObj.checked) {
+        newValue = formElementObj.value;
+    }
+
+    for (i = 0; i < formElementObj.form.elements.length; i++) {
+        if (formElementObj.form.elements[i].name.toLowerCase() == hiddenElementName.toLowerCase()) {
+            formElementObj.form.elements[i].value = newValue;
+        }
+    }
+
+    return;
+}
+
+/*
+ * cjohnson - check to make sure form element value contains only allowed characters
+ */
+function validateFormElement (formElementObj, elementName) {
+    var allowedChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890-_@.';
+    var returnVal = true;
+    var i = 0;
+    for (; i < formElementObj.value.length; i++) {
+        if (allowedChars.indexOf(formElementObj.value.charAt(i)) == -1) {
+            if (formElementObj.value.charAt(i) == ' ') {
+                alert ('You have an invalid character (space) in your ' + elementName + '. Allowed characters are [' + allowedChars + ']');
+            } else {
+                alert ('You have an invalid character (' + formElementObj.value.charAt(i) + ') in your ' + elementName + '. Allowed characters are [' + allowedChars + ']');
+            }
+            i = formElementObj.length;
+            returnVal = false;
+            formElementObj.focus();
+        }
+    }
+
+    return (returnVal);
+}
+
+/*
+ * cjohnson - pass the username form element to the validateFormElement function
+ */
+
+function validateUsername ( formObj ) {
+    var returnVal = true;
+    for (i = 0; i < formObj.elements.length; i++) {
+        if (formObj.elements[i].name.toLowerCase().indexOf("service_user_name") != -1) {
+            returnVal = validateFormElement(formObj.elements[i], 'username');
+        }
+    }
+    return (returnVal);
+}
+// -->
+</script>
+
+<form action="http://register.onlineathens.com/forge/dataentry" method="POST" onSubmit="return checkForm(this);" style="padding: 0; margin: 0;">
+<input type="hidden" name="web.fixed_values" value="fcytkHmKh3J3j7uihXeAcoSRnJ6mg4aHh4J5gLWihXx9g3ZFd7mHdoaKhHWEhMSeYlp9h3V0gtekcoh9fHJ3ibXTlpuhqJeXkezKoKJeenV3f8rAhXmFhYJ5icimbnh5iWRFdca1g41eiXNiccypdoKLVWpmVruihXl/hHV+berGmJ2rqZWGpOHQn1qMgWBWVsymfoSXiXx1dbWldoh5fm9Lgr2oX4mLenVTg72zh317emBbZLCSV4Z9fFF6g72zX3WNiXKEfMeoeoJ1jl1WZqmWYmhq">
+
+    <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEg72zh317elF4dcq3end9b1hVbbGZZ21yaFleYqg">
+    <input type="hidden" name="reg.user_service.user_id:50" value="{reg.user.user_id}">
+
+    <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEccy1g316indqXrm1hYaBd3h5dbWwg31/fnFmhMGveFSLenV7ebuma2xxa1la">
+    <input type="hidden" name="reg.user_attribute.user_id" value="{reg.user.user_id}">
+    <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEccy1g316indqXs6ifYl9cllZaKubZGVubVo">
+
+<input type="hidden" name="web.fixed_values" value="dMeucn2GclGUnuTKn5mZqYuKnuuPlKOlb1ZWZayT">
+
+
+        <!-- area 1: account information -->
+        <table border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td><img src="http://www.onlineathens.com/regfiles/images/num_1.jpg" width="21" height="21" alt="Step 1" vspace="3" hspace="4"></td>
+            <td class="regHeader"><b>Become a Member - Create Account</b></td>
+        </tr>
+        </table>
+
+        <table border="0" cellpadding="2" cellspacing="0" width="690" align="right" class="regContentBox">
+        <tr>
+            <td>
+                <table border="0" cellpadding="0" cellspacing="0" width="686">
+                <tr valign="top">
+                    <td class="regContentLine"><img src="http://www.onlineathens.com/regfiles/images/misc/spacer.gif" height="1" width="1" hspace="0" vspace="0" alt=" "><br></td>
+                    <td class="regContentShadow"><img src="http://www.onlineathens.com/regfiles/images/misc/spacer.gif" height="1" width="2" hspace="0" vspace="0" alt=" "><br></td>
+                    <td width="680" align="center" class="regContentArea">
+
+                        <table border="0" cellpadding="8" cellspacing="0">
+                        <script type="text/javascript">
+                            document.writeln("<!-- javascript enabled -->");
+                        </script>
+                        <noscript>
+
+                            <tr valign="top">
+<td class="regLabel" style="text-align: right;"><span class="regErrorLabel">ERROR:</span></td>                                <td><span class="regError">JavaScript Disabled, please consult your browser's help for information on enabling javascript.</span></td>
+                            </tr>
+
+                        </noscript>
+
+<!-- error messages -->
+
+<!-- success messages -->
+
+<!-- generic messages -->
+
+
+<!-- username -->
+
+<tr valign="top">
+<td class="regLabel" style="text-align: right;"><span class="regRequired">*</span><b> Choose a Username:</b><br>This will be your login or username<br>At least 6 characters<br>No spaces</td>    <td ><input type="text" name="reg.user.service_user_name" size="35" value=""></td>
+</tr>
+
+
+
+
+
+
+
+<!-- password -->
+
+<tr valign="top">
+<td class="regLabel" style="text-align: right;"><span class="regRequired">*</span> <b>Choose a Password:</b><br>Must be at least 6 characters<br><small>Passwords are case sensitive</small></td>    <td ><input type="password" name="reg.user.password" size="35" value=""></td>
+</tr>
+
+
+
+
+
+
+<!-- password confirmation -->
+
+<tr valign="top">
+<td class="regLabel" style="text-align: right;"><span class="regRequired">*</span> <b>Confirm Password:</b></td>    <td ><input type="password" name="reg_confirm_password" size="35" value=""></td>
+</tr>
+
+
+
+
+
+
+
+<!-- password hint -->
+
+<tr valign="top">
+<td class="regLabel" style="text-align: right;"><b>Password Hint:</b></td>    <td >
+        <input type="text" name="reg.user_service_attribute.value:51" size="35"  value="">
+        <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEg72zh317eoJmhMyzenaNiWhTccy1g316indqaq2SboR5iHZ8f8qlUXyBg3dfYaiZYmlo">
+        <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEg72zh317eoJmhMyzenaNiWhThNGxdm5tZmB5ddC1a2poaFdZ">
+        <input type="hidden" name="reg.user_service_attribute.user_service_id:51" value="{reg.user.user_service_id}">
+        <input type="hidden" name="reg.user_service_attribute.created_by:51" value="{reg.user.id}">
+    </td>
+</tr>
+
+
+
+
+
+
+
+<!-- email address -->
+
+<tr valign="top">
+<td class="regLabel" style="text-align: right;"><span class="regRequired">*</span><b> E-Mail Address:</b></td>    <td ><input type="text" name="reg.user.email" size="35" value=""></td>
+    <input type="hidden" name="reg.user.email.status" value="PENDING">
+</tr>
+
+
+
+                        </table>
+
+                        <div align="left">
+                        <i>
+                        Note: A valid e-mail address is required<br>
+                        We will send you an e-mail to verify your registration.<br>
+                        Also, you must enable your browser to accept <b>"cookies"</b> to view our stories.<br><br>
+                        </i>
+
+                        Use this <a href="javascript: var win = window.open('http://register.onlineathens.com/forge/dataentry?tp=ATHENS%20GA&amp;tl=7&amp;temp_type=DETAIL&amp;category=registration', 'CookieTester', 'scrollbars=yes,toolbar=no,height=500,width=800,location=no');">Cookie tester</a> to test your browser's ability to accept cookies.
+                        </div>
+
+                    </td>
+                    <td class="regContentShadow"><img src="http://www.onlineathens.com/regfiles/images/misc/spacer.gif" height="1" width="2" hspace="0" vspace="0" alt=" "><br></td>
+                    <td class="regContentLine"><img src="http://www.onlineathens.com/regfiles/images/misc/spacer.gif" height="1" width="1" hspace="0" vspace="0" alt=" "><br></td>
+                </tr>
+                </table>
+            </td>
+        </tr>
+        </table>
+        <!-- end area 1 -->
+
+
+
+
+        <br clear="all">
+        <br>
+
+        <!-- area 2: personal information -->
+        <table border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td><img src="http://www.onlineathens.com/regfiles/images/num_2.jpg" width="21" height="21" alt="Step 2" vspace="3" hspace="4"></td>
+            <td class="regHeader"><b>Tell us about yourself</b></td>
+        </tr>
+        </table>
+
+        <table border="0" cellpadding="2" cellspacing="0" width="690" align="right" class="regContentBox">
+        <tr>
+            <td>
+                <table border="0" cellpadding="0" cellspacing="0" width="686">
+                <tr valign="top">
+                    <td class="regContentLine"><img src="http://www.onlineathens.com/regfiles/images/misc/spacer.gif" height="1" width="1" hspace="0" vspace="0" alt=" "><br></td>
+                    <td class="regContentShadow"><img src="http://www.onlineathens.com/regfiles/images/misc/spacer.gif" height="1" width="2" hspace="0" vspace="0" alt=" "><br></td>
+                    <td style="width: 433px" width="433" class="regContentArea">
+
+                        <table border="0" cellpadding="1" cellspacing="0">
+
+<!-- first name -->
+    <tr valign="top">
+        <td  class="regLabel" style="text-align: left;"><br><span class="regRequired">*</span><b> First Name:</b></td>
+    </tr>
+
+<tr valign="top">
+    <td ><input name="reg.user.first_name" type="text" size="35" value=""></td>
+</tr>
+
+
+
+
+
+
+<!-- last name -->
+    <tr valign="top">
+        <td class="regLabel" style="text-align: left;"><br><span class="regRequired">*</span><b> Last Name:</b></td>
+    </tr>
+
+<tr valign="top">
+    <td ><input name="reg.user.last_name" type="text" size="35" value=""></td>
+</tr>
+
+
+
+
+
+
+
+<!-- birthdate -->
+    <tr valign="top">
+        <td  class="regLabel" style="text-align: left;"><br><span class="regRequired">*</span><b>Birthday:</b> <i>use 4 digit year</i></td>
+    </tr>
+
+<tr valign="top">
+    <td >
+
+        <select name="regDobMonth">
+            <option value="JAN" >January</option>
+            <option value="FEB" >February</option>
+            <option value="MAR" >March</option>
+            <option value="APR" >April</option>
+            <option value="MAY" >May</option>
+            <option value="JUN" >June</option>
+            <option value="JUL" >July</option>
+            <option value="AUG" >August</option>
+            <option value="SEP" >September</option>
+            <option value="OCT" >October</option>
+            <option value="NOV" >November</option>
+            <option value="DEC" >December</option>
+        </select>
+
+        <select name="regDobDay">
+            <option value="01" >1</option>
+            <option value="02" >2</option>
+            <option value="03" >3</option>
+            <option value="04" >4</option>
+            <option value="05" >5</option>
+            <option value="06" >6</option>
+            <option value="07" >7</option>
+            <option value="08" >8</option>
+            <option value="09" >9</option>
+            <option value="10" >10</option>
+            <option value="11" >11</option>
+            <option value="12" >12</option>
+            <option value="13" >13</option>
+            <option value="14" >14</option>
+            <option value="15" >15</option>
+            <option value="16" >16</option>
+            <option value="17" >17</option>
+            <option value="18" >18</option>
+            <option value="19" >19</option>
+            <option value="20" >20</option>
+            <option value="21" >21</option>
+            <option value="22" >22</option>
+            <option value="23" >23</option>
+            <option value="24" >24</option>
+            <option value="25" >25</option>
+            <option value="26" >26</option>
+            <option value="27" >27</option>
+            <option value="28" >28</option>
+            <option value="29" >29</option>
+            <option value="30" >30</option>
+            <option value="31" >31</option>
+        </select>
+
+        <input name="regDobYear" type="text" size="4" maxlength="4" value="">
+        <input name="reg.user.dob" type="hidden" value="">
+
+    </td>
+</tr>
+
+
+
+
+
+
+<!-- gender -->
+    <tr valign="top">
+        <td class="regLabel" style="text-align: left;"><br><span class="regRequired">*</span><b> Gender:</b></td>
+    </tr>
+
+<tr valign="top">
+    <td >
+        <input type="radio" name="reg.user.gender" value="Female" > Female<br>
+        <input type="radio" name="reg.user.gender" value="Male" > Male
+    </td>
+</tr>
+
+
+
+<!-- street address 1 -->
+    <tr valign="top">
+        <td class="regLabel" style="text-align: left;"><br><span class="regRequired">*</span><b> Address Line 1:</b></td>
+    </tr>
+
+<tr valign="top">
+    <td >
+        <input type="hidden" name="reg.user_address.user_id" value="{reg.user.id}">
+        <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEcbylg3mLiFF5icimbnyHgmhfYq+ZZ2c">
+        <input type="text" name="reg.user_address.street1" size="35" value="">
+    </td>
+</tr>
+
+
+
+<!-- street address 2 -->
+        <tr valign="top">
+            <td class="regLabel" style="text-align: left;"><br><b>Address Line 2:</b></td>
+        </tr>
+
+    <tr valign="top">
+        <td >
+            <input type="text" name="reg.user_address.street2" size="35" value="">
+        </td>
+    </tr>
+
+
+
+
+
+<!-- street address 3 -->
+        <tr valign="top">
+            <td class="regLabel" style="text-align: left;"><br><b>Address Line 3:</b></td>
+        </tr>
+
+    <tr valign="top">
+        <td >
+            <input type="text" name="reg.user_address.street3" size="35" value="">
+        </td>
+    </tr>
+
+
+
+
+
+
+<!-- city -->
+    <tr valign="top">
+        <td class="regLabel" style="text-align: left;"><br><b> City:</b></td>
+    </tr>
+
+<tr valign="top">
+    <td >
+        <input type="text" name="reg.user_address.city" size="35" value="">
+    </td>
+</tr>
+
+
+
+
+
+
+<!-- state -->
+    <tr valign="top">
+        <td class="regLabel" style="text-align: left;"><br><b>State:</b></td>
+    </tr>
+
+<tr valign="top">
+    <td >
+        <select name="reg.user_address.state">
+            <option value="">Other</option>
+                <option value="AL" >Alabama</option>
+                <option value="AK" >Alaska</option>
+                <option value="AZ" >Arizona</option>
+                <option value="AR" >Arkansas</option>
+                <option value="CA" >California</option>
+                <option value="CO" >Colorado</option>
+                <option value="CT" >Connecticut</option>
+                <option value="DE" >Delaware</option>
+                <option value="FL" >Florida</option>
+                <option value="GA" selected>Georgia</option>
+                <option value="HI" >Hawaii</option>
+                <option value="ID" >Idaho</option>
+                <option value="IL" >Illinois</option>
+                <option value="IN" >Indiana</option>
+                <option value="IA" >Iowa</option>
+                <option value="KS" >Kansas</option>
+                <option value="KY" >Kentucky</option>
+                <option value="LA" >Louisiana</option>
+                <option value="ME" >Maine</option>
+                <option value="MD" >Maryland</option>
+                <option value="MA" >Massachusetts</option>
+                <option value="MI" >Michigan</option>
+                <option value="MN" >Minnesota</option>
+                <option value="MS" >Mississippi</option>
+                <option value="MO" >Missouri</option>
+                <option value="MT" >Montana</option>
+                <option value="NE" >Nebraska</option>
+                <option value="NV" >Nevada</option>
+                <option value="NH" >New Hampshire</option>
+                <option value="NJ" >New Jersey</option>
+                <option value="NM" >New Mexico</option>
+                <option value="NY" >New York</option>
+                <option value="NC" >North Carolina</option>
+                <option value="ND" >North Dakota</option>
+                <option value="OH" >Ohio</option>
+                <option value="OK" >Oklahoma</option>
+                <option value="OR" >Oregon</option>
+                <option value="PA" >Pennsylvania</option>
+                <option value="RI" >Rhode Island</option>
+                <option value="SC" >South Carolina</option>
+                <option value="SD" >South Dakota</option>
+                <option value="TN" >Tennessee</option>
+                <option value="TX" >Texas</option>
+                <option value="UT" >Utah</option>
+                <option value="VT" >Vermont</option>
+                <option value="VA" >Virginia</option>
+                <option value="WA" >Washington</option>
+                <option value="DC" >Washington D.C.</option>
+                <option value="WV" >West Virginia</option>
+                <option value="WI" >Wisconsin</option>
+                <option value="WY" >Wyoming</option>
+        </select>
+    </td>
+</tr>
+
+
+
+
+
+
+<!-- country -->
+    <tr valign="top">
+        <td class="regLabel" style="text-align: left;"><br><b>Country:</b></td>
+    </tr>
+
+<tr valign="top">
+    <td >
+        <select name="reg.user_address.country">
+            <option value="">Other</option>
+<option value="AF">Afghanistan</option>
+<option value="AL">Albania</option>
+<option value="DZ">Algeria</option>
+<option value="AS">American Samoa</option>
+<option value="AD">Andorra</option>
+<option value="AO">Angola</option>
+<option value="AI">Anguilla</option>
+<option value="AQ">Antarctica</option>
+<option value="AG">Antigua and Barbuda</option>
+<option value="AR">Argentina</option>
+<option value="AM">Armenia</option>
+<option value="AW">Aruba</option>
+<option value="AU">Australia</option>
+<option value="AT">Austria</option>
+<option value="AZ">Azerbaijan</option>
+<option value="BS">Bahamas</option>
+<option value="BH">Bahrain</option>
+<option value="BD">Bangladesh</option>
+<option value="BB">Barbados</option>
+<option value="BY">Belarus</option>
+<option value="BE">Belgium</option>
+<option value="BZ">Belize</option>
+<option value="BJ">Benin</option>
+<option value="BM">Bermuda</option>
+<option value="BT">Bhutan</option>
+<option value="BO">Bolivia</option>
+<option value="BA">Bosnia and Herzegovina</option>
+<option value="BW">Botswana</option>
+<option value="BV">Bouvet Island</option>
+<option value="BR">Brazil</option>
+<option value="IO">British Indian Ocean Territory</option>
+<option value="BN">Brunei Darussalam</option>
+<option value="BG">Bulgaria</option>
+<option value="BF">Burkina Faso</option>
+<option value="BI">Burundi</option>
+<option value="KH">Cambodia</option>
+<option value="CM">Cameroon</option>
+<option value="CA">Canada</option>
+<option value="CV">Cape Verde</option>
+<option value="KY">Cayman Islands</option>
+<option value="CF">Central African Republic</option>
+<option value="TD">Chad</option>
+<option value="CL">Chile</option>
+<option value="CN">China</option>
+<option value="CX">Christmas Island</option>
+<option value="CC">Cocos (keeling) Islands</option>
+<option value="CO">Colombia</option>
+<option value="KM">Comoros</option>
+<option value="CG">Congo</option>
+<option value="CD">Congo (droc) </option>
+<option value="CK">Cook Islands</option>
+<option value="CR">Costa Rica</option>
+<option value="CI">Cote D'ivoire</option>
+<option value="HR">Croatia</option>
+<option value="CU">Cuba</option>
+<option value="CY">Cyprus</option>
+<option value="CZ">Czech Republic</option>
+<option value="DK">Denmark</option>
+<option value="DJ">Djibouti</option>
+<option value="DM">Dominica</option>
+<option value="DO">Dominican Republic</option>
+<option value="EC">Ecuador</option>
+<option value="EG">Egypt</option>
+<option value="SV">El Salvador</option>
+<option value="GQ">Equatorial Guinea</option>
+<option value="ER">Eritrea</option>
+<option value="EE">Estonia</option>
+<option value="ET">Ethiopia</option>
+<option value="FK">Falkland Islands (malvinas)</option>
+<option value="FO">Faroe Islands</option>
+<option value="FJ">Fiji</option>
+<option value="FI">Finland</option>
+<option value="FR">France</option>
+<option value="GF">French Guiana</option>
+<option value="PF">French Polynesia</option>
+<option value="TF">French Southern Territories</option>
+<option value="GA">Gabon</option>
+<option value="GM">Gambia</option>
+<option value="GE">Georgia</option>
+<option value="DE">Germany</option>
+<option value="GH">Ghana</option>
+<option value="GI">Gibraltar</option>
+<option value="GR">Greece</option>
+<option value="GL">Greenland</option>
+<option value="GD">Grenada</option>
+<option value="GP">Guadeloupe</option>
+<option value="GU">Guam</option>
+<option value="GT">Guatemala</option>
+<option value="GN">Guinea</option>
+<option value="GW">Guinea-bissau</option>
+<option value="GY">Guyana</option>
+<option value="HT">Haiti</option>
+<option value="HM">Heard Island and Mcdonald Islands</option>
+<option value="VA">Holy See (vatican City State)</option>
+<option value="HN">Honduras</option>
+<option value="HK">Hong Kong</option>
+<option value="HU">Hungary</option>
+<option value="IS">Iceland</option>
+<option value="IN">India</option>
+<option value="ID">Indonesia</option>
+<option value="IR">Iran, Islamic Republic of</option>
+<option value="IQ">Iraq</option>
+<option value="IE">Ireland</option>
+<option value="IL">Israel</option>
+<option value="IT">Italy</option>
+<option value="JM">Jamaica</option>
+<option value="JP">Japan</option>
+<option value="JO">Jordan</option>
+<option value="KZ">Kazakhstan</option>
+<option value="KE">Kenya</option>
+<option value="KI">Kiribati</option>
+<option value="KP">North Korea</option>
+<option value="KR">South Korea</option>
+<option value="KW">Kuwait</option>
+<option value="KG">Kyrgyzstan</option>
+<option value="LA">Lao People's Democratic Republic</option>
+<option value="LV">Latvia</option>
+<option value="LB">Lebanon</option>
+<option value="LS">Lesotho</option>
+<option value="LR">Liberia</option>
+<option value="LY">Libyan Arab Jamahiriya</option>
+<option value="LI">Liechtenstein</option>
+<option value="LT">Lithuania</option>
+<option value="LU">Luxembourg</option>
+<option value="MO">Macao</option>
+<option value="MK">Macedonia</option>
+<option value="MG">Madagascar</option>
+<option value="MW">Malawi</option>
+<option value="MY">Malaysia</option>
+<option value="MV">Maldives</option>
+<option value="ML">Mali</option>
+<option value="MT">Malta</option>
+<option value="MH">Marshall Islands</option>
+<option value="MQ">Martinique</option>
+<option value="MR">Mauritania</option>
+<option value="MU">Mauritius</option>
+<option value="YT">Mayotte</option>
+<option value="MX">Mexico</option>
+<option value="FM">Micronesia, Federated States of</option>
+<option value="MD">Moldova, Republic of</option>
+<option value="MC">Monaco</option>
+<option value="MN">Mongolia</option>
+<option value="MS">Montserrat</option>
+<option value="MA">Morocco</option>
+<option value="MZ">Mozambique</option>
+<option value="MM">Myanmar</option>
+<option value="NA">Namibia</option>
+<option value="NR">Nauru</option>
+<option value="NP">Nepal</option>
+<option value="NL">Netherlands</option>
+<option value="AN">Netherlands Antilles</option>
+<option value="NC">New Caledonia</option>
+<option value="NZ">New Zealand</option>
+<option value="NI">Nicaragua</option>
+<option value="NE">Niger</option>
+<option value="NG">Nigeria</option>
+<option value="NU">Niue</option>
+<option value="NF">Norfolk Island</option>
+<option value="MP">Northern Mariana Islands</option>
+<option value="NO">Norway</option>
+<option value="OM">Oman</option>
+<option value="PK">Pakistan</option>
+<option value="PW">Palau</option>
+<option value="PS">Palestinian Territory, Occupied</option>
+<option value="PA">Panama</option>
+<option value="PG">Papua New Guinea</option>
+<option value="PY">Paraguay</option>
+<option value="PE">Peru</option>
+<option value="PH">Philippines</option>
+<option value="PN">Pitcairn</option>
+<option value="PL">Poland</option>
+<option value="PT">Portugal</option>
+<option value="PR">Puerto Rico</option>
+<option value="QA">Qatar</option>
+<option value="RE">Reunion</option>
+<option value="RO">Romania</option>
+<option value="RU">Russian Federation</option>
+<option value="RW">Rwanda</option>
+<option value="SH">Saint Helena</option>
+<option value="KN">Saint Kitts and Nevis</option>
+<option value="LC">Saint Lucia</option>
+<option value="PM">Saint Pierre and Miquelon</option>
+<option value="VC">Saint Vincent and the Grenadines</option>
+<option value="WS">Samoa</option>
+<option value="SM">San Marino</option>
+<option value="ST">Sao Tome and Principe</option>
+<option value="SA">Saudi Arabia</option>
+<option value="SN">Senegal</option>
+<option value="SC">Seychelles</option>
+<option value="SL">Sierra Leone</option>
+<option value="SG">Singapore</option>
+<option value="SK">Slovakia</option>
+<option value="SI">Slovenia</option>
+<option value="SB">Solomon Islands</option>
+<option value="SO">Somalia</option>
+<option value="ZA">South Africa</option>
+<option value="GS">South Georgia</option>
+<option value="ES">Spain</option>
+<option value="LK">Sri Lanka</option>
+<option value="SD">Sudan</option>
+<option value="SR">Suriname</option>
+<option value="SJ">Svalbard and Jan Mayen</option>
+<option value="SZ">Swaziland</option>
+<option value="SE">Sweden</option>
+<option value="CH">Switzerland</option>
+<option value="SY">Syrian Arab Republic</option>
+<option value="TW">Taiwan, Province of China</option>
+<option value="TJ">Tajikistan</option>
+<option value="TZ">Tanzania, United Republic of</option>
+<option value="TH">Thailand</option>
+<option value="TL">Timor-leste</option>
+<option value="TG">Togo</option>
+<option value="TK">Tokelau</option>
+<option value="TO">Tonga</option>
+<option value="TT">Trinidad and Tobago</option>
+<option value="TN">Tunisia</option>
+<option value="TR">Turkey</option>
+<option value="TM">Turkmenistan</option>
+<option value="TC">Turks and Caicos Islands</option>
+<option value="TV">Tuvalu</option>
+<option value="UG">Uganda</option>
+<option value="UA">Ukraine</option>
+<option value="AE">United Arab Emirates</option>
+<option value="GB">United Kingdom</option>
+<option value="US" selected>United States</option>
+<option value="UM">United States Minor Outlying Islands</option>
+<option value="UY">Uruguay</option>
+<option value="UZ">Uzbekistan</option>
+<option value="VU">Vanuatu</option>
+<option value="VE">Venezuela</option>
+<option value="VN">Viet Nam</option>
+<option value="VG">Virgin Islands, British</option>
+<option value="VI">Virgin Islands, U.S.</option>
+<option value="WF">Wallis and Futuna</option>
+<option value="EH">Western Sahara</option>
+<option value="YE">Yemen</option>
+<option value="YU">Yugoslavia</option>
+<option value="ZM">Zambia</option>
+<option value="ZW">Zimbabwe</option>
+
+        </select>
+    </td>
+</tr>
+
+
+
+
+
+
+
+<!-- zipcode -->
+    <tr valign="top">
+        <td class="regLabel" style="text-align: left;"><br><span class="regRequired">*</span><b> ZIP Code:</b></td>
+    </tr>
+
+<tr valign="top">
+    <td >
+        <input type="text" name="reg.user_address.zipcode" size="35" value="">
+    </td>
+</tr>
+
+
+
+
+<!-- subscription status -->
+    <tr valign="top">
+        <td  class="regLabel" style="text-align: left;"><br><span class="regRequired">*</span> Do you currently subscribe to the Athens Banner Herald?<br></td>
+    </tr>
+
+<tr valign="top">
+    <td >
+
+        <input type="hidden" name="reg.user_service_attribute.created_by:5" value="{reg.user.id}">
+        <input type="hidden" name="reg.user_service_attribute.user_service_id:5" value="{reg.user.user_service_id}">
+        <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEg72zh317eoJmhMyzenaNiWhTccy1g316indqaq2ehIl6iGZ3ebqma21oZlxW">
+        <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEg72zh317eoJmhMyzenaNiWhThNGxdm5tcnZ6gs6mim5ualVbYg">
+        <input type="radio" name="reg.user_service_attribute.value:5" value="YES"> Yes
+        <input type="radio" name="reg.user_service_attribute.value:5" value="NO"> No
+    </td>
+</tr>
+
+
+
+<!-- phone number -->
+    <tr valign="top">
+        <td  class="regLabel" style="text-align: left;"><br><b>Phone Number:</b></td>
+    </tr>
+
+<tr valign="top">
+    <td >
+        If yes, we will match your phone number and address with the information on your subscription account for future subscriber-only benefits (Your phone number will not be used for any other purpose).<br>
+        <input name="reg.user_phone.user_id" type="hidden" value="{reg.user.id}">
+        <input name="reg.user_phone.status" type="hidden" value="ACTIVE">
+        <input name="reg.user_phone.type" type="hidden" value="HOME">
+        (<input name="reg.user_phone.area_code" type="text" size="3" value="" maxlength="3">)
+        <input name="reg.user_phone.prefix" type="text" size="3" value="" maxlength="3"> -
+        <input name="reg.user_phone.number" type="text" size="4" value="" maxlength="4">
+    </td>
+</tr>
+
+
+                        </table>
+
+                    </td>
+                    <td class="regShadedContentArea">
+                        <p><b>Our Anti-Spam Pledge</b></p><p>When you register at OnlineAthens.com we ask you for several personal items. We pledge to respect your right to privacy. We will not provide, sell or lease your personally identifiable information - including name, address, phone number or email - to any third parties. We are gathering this information so that we may better understand how our site is used so that we can make changes and improvements.</p> <p>From time to time, we will send you e-mail announcements, including announcements on new products, offers and services from the Athens Banner-Herald and selected advertisers and affiliates. We will limit the amount of advertising announcements to no more than one per week.</p> <p>To view our complete privacy policy click <a href="http://www.onlineathens.com/contactus/privacy.shtml">here</a>, and if you have any questions about this policy please email david.bill@onlineathens.com</p>
+                    </td>
+                </tr>
+                </table>
+            </td>
+        </tr>
+        </table>
+        <!-- end area 2 -->
+
+
+
+
+        <br clear="all">
+        <br>
+
+        <!-- area 3: optional information -->
+        <table border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td><img src="http://www.onlineathens.com/regfiles/images/num_3.jpg" width="21" height="21" alt="Step 3" vspace="3" hspace="4"></td>
+            <td class="regHeader"><b>Optional Questions</b></td>
+        </tr>
+        </table>
+
+        <table border="0" cellpadding="2" cellspacing="0" width="690" align="right" class="regContentBox">
+        <tr>
+            <td>
+                <table border="0" cellpadding="0" cellspacing="0" width="686">
+                <tr valign="top">
+                    <td class="regContentLine"><img src="http://www.onlineathens.com/regfiles/images/misc/spacer.gif" height="1" width="1" hspace="0" vspace="0" alt=" "><br></td>
+                    <td class="regContentShadow"><img src="http://www.onlineathens.com/regfiles/images/misc/spacer.gif" height="1" width="2" hspace="0" vspace="0" alt=" "><br></td>
+                    <td width="680" class="regContentArea">
+
+                        <table border="0" cellpadding="2" cellspacing="0">
+
+
+
+                    <tr valign="top">
+                        <td class="regLabel" style="text-align: left;">What are your hobbies?</td>
+                    </tr>
+
+                <tr valign="top">
+                    <td >
+
+                            <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEg82zh3mRlGRzg8+mg2KLinV7ddHAgol9iHduf8bAenhyalViYauVY2xub1xcYKyW">
+                            <input type="hidden" name="reg.user_survey_answer.user_id:52" value="{reg.user.id}">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            <table border="0" cellpadding="2" cellspacing="2">
+                                            <tr valign="top">
+                                                <td>
+
+
+
+                                    <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEg82zh3mRlGRzg8+mg2KLinV7ddHAgol9iHduf8bAenhyalViYauVY2xub1xcYKyW">
+                                    <input type="hidden" name="reg.user_survey_answer.user_id:52" value="{reg.user.id}">
+                                    <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEg82zh3mRlGRzg8+mg2J5g3Z8dcrAenhyalViYq2RYWRoaV1bZauWZw">
+                                    <input type="hidden" name="reg.user_survey_answer.answer:52" value="{reg.user_survey_answer.checkbox_value:52}">
+<input type="checkbox" value="TRUE" name="reg.user_survey_answer.checkbox_value:52">Automotive<br>
+
+
+
+
+
+
+
+                                    <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEg82zh3mRlGRzg8+mg2KLinV7ddHAgol9iHduf8bAenhyalZiYauVY2xub1xcYLGS">
+                                    <input type="hidden" name="reg.user_survey_answer.user_id:53" value="{reg.user.id}">
+                                    <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEg82zh3mRlGRzg8+mg2J5g3Z8dcrAenhyalZiYq2RYWRobV1bZa2YYQ">
+                                    <input type="hidden" name="reg.user_survey_answer.answer:53" value="{reg.user_survey_answer.checkbox_value:53}">
+<input type="checkbox" value="TRUE" name="reg.user_survey_answer.checkbox_value:53">Books / Literature<br>
+
+
+
+
+
+
+
+                                    <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEg82zh3mRlGRzg8+mg2KLinV7ddHAgol9iHduf8bAenhyaldiYauVY2xub1xcYauY">
+                                    <input type="hidden" name="reg.user_survey_answer.user_id:54" value="{reg.user.id}">
+                                    <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEg82zh3mRlGRzg8+mg2J5g3Z8dcrAenhyaldiYq2RYWRobF1bZa2XZQ">
+                                    <input type="hidden" name="reg.user_survey_answer.answer:54" value="{reg.user_survey_answer.checkbox_value:54}">
+<input type="checkbox" value="TRUE" name="reg.user_survey_answer.checkbox_value:54">Computers / Internet<br>
+
+
+
+
+
+
+
+                                    <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEg82zh3mRlGRzg8+mg2KLinV7ddHAgol9iHduf8bAenhyalhiYauVY2xub1xcYbCU">
+                                    <input type="hidden" name="reg.user_survey_answer.user_id:55" value="{reg.user.id}">
+                                    <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEg82zh3mRlGRzg8+mg2J5g3Z8dcrAenhyalhiYq2RYWRqZ11bZayXZw">
+                                    <input type="hidden" name="reg.user_survey_answer.answer:55" value="{reg.user_survey_answer.checkbox_value:55}">
+<input type="checkbox" value="TRUE" name="reg.user_survey_answer.checkbox_value:55">Cooking<br>
+
+
+
+
+
+
+
+                                    <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEg82zh3mRlGRzg8+mg2KLinV7ddHAgol9iHduf8bAenhyalliYauVY2xub1xcYqqa">
+                                    <input type="hidden" name="reg.user_survey_answer.user_id:56" value="{reg.user.id}">
+                                    <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEg82zh3mRlGRzg8+mg2J5g3Z8dcrAenhyalliYq2RYWRpZV1bZauYZQ">
+                                    <input type="hidden" name="reg.user_survey_answer.answer:56" value="{reg.user_survey_answer.checkbox_value:56}">
+<input type="checkbox" value="TRUE" name="reg.user_survey_answer.checkbox_value:56">Equine (Horses)<br>
+
+
+
+
+
+
+
+                                    <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEg82zh3mRlGRzg8+mg2KLinV7ddHAgol9iHduf8bAenhyalpiYauVY2xub1xcYq+W">
+                                    <input type="hidden" name="reg.user_survey_answer.user_id:57" value="{reg.user.id}">
+                                    <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEg82zh3mRlGRzg8+mg2J5g3Z8dcrAenhyalpiYq2RYWRqbV1bZbCRZw">
+                                    <input type="hidden" name="reg.user_survey_answer.answer:57" value="{reg.user_survey_answer.checkbox_value:57}">
+<input type="checkbox" value="TRUE" name="reg.user_survey_answer.checkbox_value:57">Golf<br>
+
+
+
+
+
+
+
+                                    <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEg82zh3mRlGRzg8+mg2KLinV7ddHAgol9iHduf8bAenhyaltiYauVY2xub1xcY6qS">
+                                    <input type="hidden" name="reg.user_survey_answer.user_id:58" value="{reg.user.id}">
+                                    <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEg82zh3mRlGRzg8+mg2J5g3Z8dcrAenhyaltiYq2RYWRpZl1bZayaZQ">
+                                    <input type="hidden" name="reg.user_survey_answer.answer:58" value="{reg.user_survey_answer.checkbox_value:58}">
+<input type="checkbox" value="TRUE" name="reg.user_survey_answer.checkbox_value:58">Holidays<br>
+
+
+
+
+
+
+
+                                    <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEg82zh3mRlGRzg8+mg2KLinV7ddHAgol9iHduf8bAenhyalxiYauVY2xub1xcY66Y">
+                                    <input type="hidden" name="reg.user_survey_answer.user_id:59" value="{reg.user.id}">
+                                    <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEg82zh3mRlGRzg8+mg2J5g3Z8dcrAenhyalxiYq2RYWRobl1bZbCVYw">
+                                    <input type="hidden" name="reg.user_survey_answer.answer:59" value="{reg.user_survey_answer.checkbox_value:59}">
+<input type="checkbox" value="TRUE" name="reg.user_survey_answer.checkbox_value:59">Home Decor / Interior Design<br>
+
+
+
+
+
+
+
+                                    <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEg82zh3mRlGRzg8+mg2KLinV7ddHAgol9iHduf8bAenhya1NiYauVY2xub1xbabGY">
+                                    <input type="hidden" name="reg.user_survey_answer.user_id:60" value="{reg.user.id}">
+                                    <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEg82zh3mRlGRzg8+mg2J5g3Z8dcrAenhya1NiYq2RYWRraV1bZayVYw">
+                                    <input type="hidden" name="reg.user_survey_answer.answer:60" value="{reg.user_survey_answer.checkbox_value:60}">
+<input type="checkbox" value="TRUE" name="reg.user_survey_answer.checkbox_value:60">Home Electronics<br>
+
+
+
+
+
+
+
+                                    <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEg82zh3mRlGRzg8+mg2KLinV7ddHAgol9iHduf8bAenhya1RiYauVY2xub1xcYKyU">
+                                    <input type="hidden" name="reg.user_survey_answer.user_id:61" value="{reg.user.id}">
+                                    <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEg82zh3mRlGRzg8+mg2J5g3Z8dcrAenhya1RiYq2RYWRrbF1bZa6SYw">
+                                    <input type="hidden" name="reg.user_survey_answer.answer:61" value="{reg.user_survey_answer.checkbox_value:61}">
+<input type="checkbox" value="TRUE" name="reg.user_survey_answer.checkbox_value:61">Home Improvement<br>
+
+
+
+
+
+
+                                                </td>
+                                                <td>
+
+                                    <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEg82zh3mRlGRzg8+mg2KLinV7ddHAgol9iHduf8bAenhya1ViYauVY2xub1xcYLCa">
+                                    <input type="hidden" name="reg.user_survey_answer.user_id:62" value="{reg.user.id}">
+                                    <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEg82zh3mRlGRzg8+mg2J5g3Z8dcrAenhya1ViYq2RYWRrZl1bZauZZw">
+                                    <input type="hidden" name="reg.user_survey_answer.answer:62" value="{reg.user_survey_answer.checkbox_value:62}">
+<input type="checkbox" value="TRUE" name="reg.user_survey_answer.checkbox_value:62">Medical, Health, and Fitness<br>
+
+
+
+
+
+
+
+                                    <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEg82zh3mRlGRzg8+mg2KLinV7ddHAgol9iHduf8bAenhya1ZiYauVY2xub1xcYauW">
+                                    <input type="hidden" name="reg.user_survey_answer.user_id:63" value="{reg.user.id}">
+                                    <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEg82zh3mRlGRzg8+mg2J5g3Z8dcrAenhya1ZiYq2RYWRoal1bZayYZQ">
+                                    <input type="hidden" name="reg.user_survey_answer.answer:63" value="{reg.user_survey_answer.checkbox_value:63}">
+<input type="checkbox" value="TRUE" name="reg.user_survey_answer.checkbox_value:63">Motor Sports<br>
+
+
+
+
+
+
+
+                                    <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEg82zh3mRlGRzg8+mg2KLinV7ddHAgol9iHduf8bAenhya1diYauVY2xub1xcYbCS">
+                                    <input type="hidden" name="reg.user_survey_answer.user_id:64" value="{reg.user.id}">
+                                    <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEg82zh3mRlGRzg8+mg2J5g3Z8dcrAenhya1diYq2RYWRsaF1bZa2aYw">
+                                    <input type="hidden" name="reg.user_survey_answer.answer:64" value="{reg.user_survey_answer.checkbox_value:64}">
+<input type="checkbox" value="TRUE" name="reg.user_survey_answer.checkbox_value:64">Music<br>
+
+
+
+
+
+
+
+                                    <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEg82zh3mRlGRzg8+mg2KLinV7ddHAgol9iHduf8bAenhya1hiYauVY2xub1xcYqqY">
+                                    <input type="hidden" name="reg.user_survey_answer.user_id:65" value="{reg.user.id}">
+                                    <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEg82zh3mRlGRzg8+mg2J5g3Z8dcrAenhya1hiYq2RYWRsa11bZa+XYw">
+                                    <input type="hidden" name="reg.user_survey_answer.answer:65" value="{reg.user_survey_answer.checkbox_value:65}">
+<input type="checkbox" value="TRUE" name="reg.user_survey_answer.checkbox_value:65">Outdoor Activities<br>
+
+
+
+
+
+
+
+                                    <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEg82zh3mRlGRzg8+mg2KLinV7ddHAgol9iHduf8bAenhya1liYauVY2xub1xcYq+U">
+                                    <input type="hidden" name="reg.user_survey_answer.user_id:66" value="{reg.user.id}">
+                                    <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEg82zh3mRlGRzg8+mg2J5g3Z8dcrAenhya1liYq2RYWRoa11bZa6UYw">
+                                    <input type="hidden" name="reg.user_survey_answer.answer:66" value="{reg.user_survey_answer.checkbox_value:66}">
+<input type="checkbox" value="TRUE" name="reg.user_survey_answer.checkbox_value:66">Pets<br>
+
+
+
+
+
+
+
+                                    <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEg82zh3mRlGRzg8+mg2KLinV7ddHAgol9iHduf8bAenhya1piYauVY2xub1xcY6ma">
+                                    <input type="hidden" name="reg.user_survey_answer.user_id:67" value="{reg.user.id}">
+                                    <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEg82zh3mRlGRzg8+mg2J5g3Z8dcrAenhya1piYq2RYWRsbl1bZbGYYQ">
+                                    <input type="hidden" name="reg.user_survey_answer.answer:67" value="{reg.user_survey_answer.checkbox_value:67}">
+<input type="checkbox" value="TRUE" name="reg.user_survey_answer.checkbox_value:67">Shopping / Coupons<br>
+
+
+
+
+
+
+
+                                    <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEg82zh3mRlGRzg8+mg2KLinV7ddHAgol9iHduf8bAenhya1tiYauVY2xub1xcY66W">
+                                    <input type="hidden" name="reg.user_survey_answer.user_id:68" value="{reg.user.id}">
+                                    <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEg82zh3mRlGRzg8+mg2J5g3Z8dcrAenhya1tiYq2RYWRtZ11bZa+VYw">
+                                    <input type="hidden" name="reg.user_survey_answer.answer:68" value="{reg.user_survey_answer.checkbox_value:68}">
+<input type="checkbox" value="TRUE" name="reg.user_survey_answer.checkbox_value:68">Sports<br>
+
+
+
+
+
+
+
+                                    <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEg82zh3mRlGRzg8+mg2KLinV7ddHAgol9iHduf8bAenhya1xiYauVY2xub1xcZKmS">
+                                    <input type="hidden" name="reg.user_survey_answer.user_id:69" value="{reg.user.id}">
+                                    <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEg82zh3mRlGRzg8+mg2J5g3Z8dcrAenhya1xiYq2RYWRtal1bZbGSYw">
+                                    <input type="hidden" name="reg.user_survey_answer.answer:69" value="{reg.user_survey_answer.checkbox_value:69}">
+<input type="checkbox" value="TRUE" name="reg.user_survey_answer.checkbox_value:69">Stock Market / Finance<br>
+
+
+
+
+
+
+
+                                    <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEg82zh3mRlGRzg8+mg2KLinV7ddHAgol9iHduf8bAenhybFNiYauVY2xub1xcYKyS">
+                                    <input type="hidden" name="reg.user_survey_answer.user_id:70" value="{reg.user.id}">
+                                    <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEg82zh3mRlGRzg8+mg2J5g3Z8dcrAenhybFNiYq2RYWRtbV1bZa+UaQ">
+                                    <input type="hidden" name="reg.user_survey_answer.answer:70" value="{reg.user_survey_answer.checkbox_value:70}">
+<input type="checkbox" value="TRUE" name="reg.user_survey_answer.checkbox_value:70">Travel<br>
+
+
+
+
+
+
+
+                                    <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEg82zh3mRlGRzg8+mg2KLinV7ddHAgol9iHduf8bAenhybFRiYauVY2xub1xcYLCY">
+                                    <input type="hidden" name="reg.user_survey_answer.user_id:71" value="{reg.user.id}">
+                                    <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEg82zh3mRlGRzg8+mg2J5g3Z8dcrAenhybFRiYq2RYWRsZV1bZauZYw">
+                                    <input type="hidden" name="reg.user_survey_answer.answer:71" value="{reg.user_survey_answer.checkbox_value:71}">
+<input type="checkbox" value="TRUE" name="reg.user_survey_answer.checkbox_value:71">Video Gaming<br>                                                </td>
+                                            </tr>
+                                            </table>
+
+
+
+
+                    </td>
+                </tr>
+
+                    <tr valign="top">
+                        <td class="regLabel" style="text-align: left;">What is your occupation?</td>
+                    </tr>
+
+                <tr valign="top">
+                    <td >
+
+                            <input type="hidden" name="web.fixed_values" value="gr2oX4mLenWEg82zh3mRlGRzg8+mg2KLinV7ddHAgol9iHduf8bAenhybFZiYauVY2xvb1xcYqqa">
+                            <input type="hidden" name="reg.user_survey_answer.user_id:73" value="{reg.user.id}">
+
+                                <select name="reg.user_survey_answer.answer_id:73" >
+
+
+
+
+
+
+
+
+                                    <option value="2500090" >Other</option>
+
+
+
+                                    <option value="2500061" >Accounting/Finance</option>
+
+
+
+                                    <option value="2500091" >Automotive</option>
+
+
+
+                                    <option value="2500085" >Computers/Technology</option>
+
+
+
+                                    <option value="2500079" >Cooking</option>
+
+
+
+                                    <option value="2500073" >Engineering</option>
+
+
+
+                                    <option value="2500088" >Entertainment/Hospitality</option>
+
+
+
+                                    <option value="2500070" >Government</option>
+
+
+
+                                    <option value="2500067" >Home Electronics</option>
+
+
+
+                                    <option value="2500076" >Home Improvement</option>
+
+
+
+                                    <option value="2500202" >Management</option>
+
+
+
+                                    <option value="2500182" >Military</option>
+
+
+
+                                    <option value="2500205" >Retired</option>
+
+
+
+                                    <option value="2500082" >Sales</option>
+
+
+
+                                    <option value="2500064" >Technology</option>
+
+
+
+</select>                    </td>
+                </tr>
+
+
+                        </table>
+
+                    </td>
+                    <td class="regContentShadow"><img src="http://www.onlineathens.com/regfiles/images/misc/spacer.gif" height="1" width="2" hspace="0" vspace="0" alt=" "><br></td>
+                    <td class="regContentLine"><img src="http://www.onlineathens.com/regfiles/images/misc/spacer.gif" height="1" width="1" hspace="0" vspace="0" alt=" "><br></td>
+                </tr>
+                </table>
+            </td>
+        </tr>
+        </table>
+        <!-- end area 3 -->
+
+
+
+
+        <br clear="all">
+        <br>
+        <div align="center">
+            <input type="submit" value="Create Account"><input type="reset" value="Reset">
+        </div>
+
+        <br clear="all">
+        <br>
+
+        </form>
+
+    </div>
+
+</div>
+
+<br><br>
+</body>
+</html>
+

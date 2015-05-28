@@ -1,0 +1,282 @@
+body
+{
+	margin-top: 2px;
+	margin-left: 8px;
+	margin-right: -6px;
+/*	behavior: url(/includes/csshover.htc);*/
+}
+
+h1
+{
+	color: navy;
+	font-weight: bold;
+	font-size: 13px;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #dfeafa;
+	padding-left: 8px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	margin-top: 14px;
+}
+
+a.menulinks:link, a.menulinks:visited, a.menulinks:active
+{
+	color: navy;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	position: relative;
+	left: 12px;
+}
+
+a.menulinks:hover { color: red; }
+
+.newscontact
+{
+	color: black;
+	font-size: 10px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+.newsheadcell
+{
+	text-align: left;
+	padding: 11px;
+}
+
+li a.homenewshead:link, li a.homenewshead:visited, li a.homenewshead:active
+{
+	color: navy;
+	font-size: 11px;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+li a.homenewshead:hover
+{
+	color: red;
+	font-size: 11px;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+a.newshead:link
+{
+	color: navy;
+	font-size: 11px;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+a.newshead:visited
+{
+	color: navy;
+	font-size: 11px;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+a.newshead:active
+{
+	color: navy;
+	font-size: 11px;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+a.newshead:hover
+{
+	color: red;
+	font-size: 11px;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+a.newstitle:link
+{
+	color: navy;
+	font-size: 12px;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: underline;
+}
+
+a.newstitle:visited
+{
+	color: navy;
+	font-size: 12px;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: underline;
+}
+
+a.newstitle:active
+{
+	color: navy;
+	font-size: 12px;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: underline;
+}
+
+a.newstitle:hover
+{
+	color: red;
+	font-size: 12px;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+.submenu
+{
+	font-size: 11px;
+	line-height: 9px;
+}
+
+.sectionblock
+{
+	margin-top: 8px;
+	padding: 6px;
+	border: solid 1px #BEC0C6;
+}
+
+.sectionblock_l
+{
+	margin-top: 8px;
+	margin-right: 4px;
+	padding: 6px;
+	border: solid 1px #BEC0C6;
+}
+
+.sectionblock_r
+{
+	margin-top: 8px;
+	margin-left: 4px;
+	padding: 6px;
+	border: solid 1px #BEC0C6;
+}
+
+.alphalist
+{
+	color: navy;
+	font-weight: bold;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #dfeafa;
+	padding-left: 24px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	margin-top: 12px;
+}
+
+a.under:link { text-decoration: underline; }
+a.under:active { text-decoration: underline; }
+a.under:hover { text-decoration: underline; }
+a.under:visited { text-decoration: underline; }
+
+    /*	 the menu */
+    
+    
+#quicklin ul, #quicklin li, #quicklin a
+{
+	display: block;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+#quicklin ul
+{
+	width: 160px;
+	color: #000066;
+	background-color: #ffffff;
+	list-style: none;
+}
+
+#quicklin li
+{
+	position: relative;
+	padding: 0px;
+	color: #000066;
+	background-color: #ffffff;
+	z-index: 90;
+	border: 1px solid silver;
+	margin-bottom: -1px;
+	text-align: left;
+}
+
+#quicklin li.folder
+{
+	background-color: #ffffff;
+	color: #000066;
+	padding: 3px;
+	text-align: center;
+}
+
+#quicklin li.folder ul
+{
+	position: absolute;
+	left: 108px;
+	/* IE */
+	top: -172px;
+}
+
+#quicklin li.folder>ul
+{
+	left: 158px;
+	top: -171px;
+}
+
+/* others */
+#quicklin a
+{
+	padding: 3px 7px;
+	text-decoration: none;
+	color: #000066;
+	background-color: #ffffff;
+	font-weight: normal;
+	width: 100%;
+	/* IE */
+}
+
+#quicklin li>a
+{
+	padding: 3px 7px;
+	width: auto;
+}
+
+/* others */
+#quicklin li a.submenu
+{
+	background-color: #ffffff;
+	color: #000066;
+}
+
+/* regular hovers */
+#quicklin a:hover
+{
+	border-color: silver;
+	background-color: #dfeafa;
+	color: #000066;
+}
+
+#quicklin li.folder a:hover
+{
+	background-color: #dfeafa;
+	color: #000066;
+}
+
+/* hovers with specificity */
+#quicklin li.folder:hover { z-index: 1000; }
+#quicklin ul ul, #quicklin li:hover ul ul { display: none; }
+#quicklin li:hover ul, #quicklin li:hover li:hover ul { display: block; }

@@ -1,0 +1,57 @@
+#playList{position:relative;}
+#videoDisplay {position:relative; visibility:visible; z-index:1;}
+#macVideo {position:relative; visibility:visible; z-index:1;}
+#videoTitle {position:relative; visibility: visibile; z-index: 0}
+#playStatus {position:relative; visibility: hidden;}
+#forwardBack {position:relative; visibility: hidden; z-index: 0}
+#videoContent{position:absolute; top:312px; left:342px; height:305px; z-index:1;}
+
+#scrollerTopVideos {position:relative; height:320px; width:293px; overflow : auto; visibility:hidden; z-index:1;}
+#scrollersectionUS {position:relative; height:320px; width:293px; overflow : auto; visibility:hidden; z-index:1;}
+#scrollersectionWorld {position:relative; height:320px; width:293px; overflow : auto; visibility:hidden; z-index:1;}
+#scrollersectionEarlyShow {position:relative; height:320px; width:293px; overflow : auto; visibility:hidden; z-index:1;}
+#scrollersectionEveningNews {position:relative; height:320px; width:293px; overflow : auto; visibility:hidden; z-index:1;}
+#scrollersectionEntertainment {position:relative; height:320px; width:293px; overflow : auto; visibility:hidden; z-index:1;}
+#scrollersectionPolitics {position:relative; height:320px; width:293px; overflow : auto; visibility:hidden; z-index:1;}
+#scrollersectionScitech {position:relative; height:320px; width:293px; overflow : auto; visibility:hidden; z-index:1;}
+#scrollersectionHealth {position:relative; height:320px; width:293px; overflow : auto; visibility:hidden; z-index:1;}
+
+#TopVideos {position:absolute; top:389px; left:342px; height:320px; width:293px; visibility:hidden; z-index:1;}
+#sectionUS {position:absolute; top:389px; left:342px; height:320px; width:293px; visibility:hidden; z-index:1;}
+#sectionWorld {position:absolute; top:389px; left:342px; height:320px; width:293px; visibility:hidden; z-index:1;}
+#sectionEarlyShow {position:absolute; top:389px; left:342px; height:320px; width:293px; visibility:hidden; z-index:1;}
+#sectionEveningNews {position:absolute; top:389px; left:342px; height:320px; width:293px; visibility:hidden; z-index:1;}
+#sectionEntertainment {position:absolute; top:389px; left:342px; height:320px; width:293px; visibility:hidden; z-index:1;}
+#sectionPolitics {position:absolute; top:389px; left:342px; height:320px; width:293px; visibility:hidden; z-index:1;}
+#sectionScitech {position:absolute; top:389px; left:342px; height:320px; width:293px; visibility:hidden; z-index:1;}
+#sectionHealth {position:absolute; top:389px; left:342px; height:320px; width:293px; visibility:hidden; z-index:1;}
+
+#sectionhelp {position:absolute; top:389px; left:342px; height:320px; width:293px; visibility:hidden; z-index:1;}
+#sectionwebcast {position:absolute; top:389px; left:342px; height:320px; width:293px; visibility:hidden; z-index:1;}
+#popupDiv1 {position:absolute; top:98px; left:627px; visibility:hidden; z-index:1;}
+
+a:hover {text-decoration: underline;}
+.body {font-family: Arial, Verdana, Helvetica, Sans; font-size: 12px;}
+.bodysmall {font-family: Arial, Verdana, Helvetica, Sans; font-size: 11px; text-decoration: none; color: black;}
+.legal {font-family: Arial, Verdana, Helvetica, Sans; font-size: 11px; color: #666666;}
+.tag { font-family: Arial, Verdana, Helvetica, Sans; font-size: 11px; text-decoration: none; color: #003399;}  
+.headline {font-family: Arial, Verdana, Helvetica, Sans; font-size: 21px; font-weight: bold; text-decoration: none; color: #003399;}
+.headlineblack {font-family: Arial, Verdana, Helvetica, Sans; font-size: 21px; font-weight: bold;}
+.subhead {font-family: Arial, Verdana, Helvetica, Sans; font-size: 15px; font-weight: bold; text-decoration: none; color: #003399; line-height: 16px;}
+.subheaddark {font-family: Arial, Verdana, Helvetica, Sans; font-size: 15px; font-weight: bold; text-decoration: none; color: #002277; line-height: 16px;}
+.header {font-family: Verdana, Helvetica, Sans; font-size: 10px; font-weight: bold; text-transform: uppercase;}
+.header2 {font-family: Verdana, Helvetica, Sans; font-size: 10px; font-weight: bold; color: #990000; text-transform: uppercase;}
+.linkLarge{font-family: Arial, Verdana, Helvetica, Sans; font-size: 15px; text-decoration: none; color: #003399; font-weight: bold;}
+.link {font-family: Arial, Verdana, Helvetica, Sans; font-size: 12px; text-decoration: none; color: #003399; font-weight: bold;}
+.link2 {font-family: Arial, Verdana, Helvetica, Sans; font-size: 12px; text-decoration: none; color: #003399;}
+.linksmall {font-family: Arial, Verdana, Helvetica, Sans; font-size: 11px; text-decoration: none; color: #003399;}
+.linksmallblue {font-family: Arial, Verdana, Helvetica, Sans; font-size: 11px; text-decoration: none; color: #99ccff;}
+.linkred {font-family: Arial, Verdana, Helvetica, Sans; font-size: 12px; text-decoration: none; color: #CC3333; font-weight: bold;} 
+.linksmallred {font-family: Arial, Verdana, Helvetica, Sans; font-size: 11px; text-decoration: none; color: #CC3333;}
+.nav {font-family: Arial, Verdana, Helvetica, Sans; font-size: 12px; text-decoration: none; color: white;}
+.nav:hover{text-decoration: underline; color: #ffd700;}
+.navsmall {font-family: Arial, Verdana, Helvetica, Sans; font-size: 11px; text-decoration: none; color: white;}
+.navtag {font-family: Arial, Verdana, Helvetica, Sans; font-size: 11px; text-decoration: none; color: #6699FF;}
+.poptag {font-family: Arial, Verdana, Helvetica, Sans; font-size: 11px; text-decoration: none; color: #BBDDFF;}
+.updated {font-family: Arial, Verdana, Helvetica, Sans; font-size: 12px; color: #990000;}
+.navyellow {font-family: Arial, Verdana, Helvetica, Sans; font-size: 12px; text-decoration: none; color: #ffd700;} 

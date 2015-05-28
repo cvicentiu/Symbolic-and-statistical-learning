@@ -1,0 +1,45 @@
+.headline{text-decoration: none; color: #000066; font-family: verdana,arial,helvetica; font-size:12pt; font-weight:bold;}
+
+.email{text-decoration: underline; color: #3300FF; font-family: arial,helvetica; font-size:10pt;}
+.email:hover {color: #ff0000;}
+
+.body{text-decoration: none; color: #000000; font-family: verdana,arial,helvetica; font-size:10pt;}
+
+.navlink{text-decoration: none; font-family: verdana,arial,helvetica; font-weight: bold; font-size:8pt; color: white;}
+.navlink:hover{color: yellow;}
+
+a{text-decoration: underline; color: #0000CC;}
+a:hover{color: #ff0000;}
+
+P.header{text-decoration: none; color: #330099; font-family: verdana,arial,helvetica; font-size:10pt; font-weight: bold;}
+
+P.byline{text-decoration: none; color: #3fa8cd; font-family: verdana,arial,helvetica; font-size:10pt; font-weight:bold;}
+
+TD.caption{text-decoration: none; color: #000000; font-family: verdana,arial,helvetica; font-size:8pt;}
+
+TD.body{text-decoration: none; color: #000000; font-family: verdana,arial,helvetica; font-size:10pt;}
+
+TD.footer{text-decoration: none; color: #000000; font-family: verdana,arial,helvetica; font-size:7pt;}
+
+table#sidebar, table#sidebar2 {border: 1px solid #000; font-family: verdana,arial,helvetica; font-size: 12px; padding: 3px;background-color: #ffffcc;}
+table#sidebar2 {background-color: #eeeeee;}
+
+/*styles below are for the thumbnail feature*/
+
+#showimage{
+position:absolute;
+visibility:hidden;
+border: 1px solid gray;
+}
+
+#dragbar{
+cursor: hand;
+cursor: pointer;
+background-color: #EFEFEF;
+min-width: 200px; /*NS6 style to overcome bug*/
+}
+
+#dragbar #closetext{
+font-weight: bold;
+margin-right: 1px;
+}	

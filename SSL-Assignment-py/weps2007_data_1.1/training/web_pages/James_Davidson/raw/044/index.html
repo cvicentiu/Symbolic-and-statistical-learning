@@ -1,0 +1,632 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="generator" content="http://www.movabletype.org/" />
+
+<title>O'Reilly Radar &gt; Burn In 6: James Duncan Davidson</title>
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<link rel="alternate" type="application/atom+xml" title="Syndication Feed" href="http://radar.oreilly.com/feed" />
+<!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://radar.oreilly.com/archives/2005/11/burn_in_6_james_duncan_davidso.html">
+<dc:title>Burn In 6: James Duncan Davidson</dc:title>
+<dc:description>This is the seventh entry in the O&apos;Reilly Radar series about how alpha geeks got into computers. James Duncan Davidson created Tomcat and Ant just to get those animals on the cover of the O&apos;Reilly books he wrote about them,...</dc:description>
+<dc:creator>nat</dc:creator>
+<dc:date>2005-11-24T00:15:18-08:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/1.0/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/1.0/">
+<requires rdf:resource="http://web.resource.org/cc/Attribution" />
+<requires rdf:resource="http://web.resource.org/cc/Notice" />
+<requires rdf:resource="http://web.resource.org/cc/ShareAlike" />
+<permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+<permits rdf:resource="http://web.resource.org/cc/Distribution" />
+<permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+<prohibits rdf:resource="http://web.resource.org/cc/CommercialUse" />
+</License>
+</rdf:RDF>
+-->
+
+
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<script type="text/javascript" src="http://www.sphere.com/widgets/sphereit/js?siteid=oreilly"></script>
+</head>
+
+<body onload="MM_preloadImages('images/topnav-rael-over.gif','images/topnav-home-over.gif','images/topnav-tim-over.gif','images/topnav-marc-over.gif','images/topnav-nat-over.gif','images/topnav-nikolaj-over.gif','images/topnav-appearances-over.gif','images/topnav-books-over.gif','images/topnav-about-over.gif')">
+
+<div id="container">
+
+<!-- start header -->
+<noindex>
+<div id="banner">
+<table border="0" cellpadding="0" cellspacing="0" height="22" width="100%" bgcolor="#eeeeee">
+<tr>
+<td bgcolor="#E6E6E6" width="65" align="center" nowrap="nowrap"><a style="text-decoration:none;" href="http://www.oreilly.com/"><span class="nav2">&nbsp;&nbsp;O'Reilly&nbsp;Home&nbsp;&nbsp;</span></a></td>
+<td bgcolor="#E6E6E6" width="65" align="center" nowrap="nowrap"><a style="text-decoration:none;" href="http://www.oreillynet.com/"><span class="nav2">&nbsp;&nbsp;O'Reilly&nbsp;Network&nbsp;&nbsp;</span></a></td>
+
+<td bgcolor="#E6E6E6" width="65" align="center" nowrap="nowrap"><a style="text-decoration:none;" href="http://safari.oreilly.com/"><span class="nav2">&nbsp;&nbsp;Safari&nbsp;Bookshelf&nbsp;&nbsp;</span></a></td>
+<td bgcolor="#E6E6E6" width="65" align="center" nowrap="nowrap"><a style="text-decoration:none;" href="http://conferences.oreilly.com/"><span class="nav2">&nbsp;&nbsp;Conferences&nbsp;&nbsp;</span></a></td>
+<td bgcolor="#E6E6E6" align="right" nowrap="nowrap" width="100%" height="22">&nbsp;</td>
+</tr>
+</table>
+
+<table border="0" cellpadding="0" cellspacing="0"  width="100%">
+<tr>
+<td class="headerBkgrnd" width="275" align="right"><a href="http://radar.oreilly.com/"><img src="header_radar_logo.gif" alt="O'Reilly Radar" width="160" height="96" hspace="10" vspace="0" border="0" /></a></td>
+<td align="right" class="headerBkgrnd">
+<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=4&display=random&size=s&layout=x&context=in%2Fpool-radar%2F&source=group&group=21711495%40N00"></script>
+</td>
+</tr>
+</table>
+
+<!-- begin navlinks -->
+<table width="100%" border="0" bgcolor="#ffffff"  cellspacing="0" cellpadding="0" class="navbar">
+<tr align="center">
+<td valign="middle" bgcolor="#3366FF"><a href="http://radar.oreilly.com/" onmouseover="MM_swapImage('home','','/images/topnav-home-over.gif',1)" onmouseout="MM_swapImgRestore()"><img src="topnav-home-off.gif" alt="Home" name="home" width="54" height="22" hspace="0" vspace="0" border="0" id="home" /></a></td>
+<td bgcolor="#99FF00"><a href="http://radar.oreilly.com/tim/" onmouseover="MM_swapImage('tim','','/images/topnav-tim-over.gif',1)" onmouseout="MM_swapImgRestore()"><img src="topnav-tim-off.gif" alt="Tim" name="tim" width="47" height="22" hspace="0" vspace="0" border="0" id="tim" /></a></td>
+<td bgcolor="#99FF00"><a href="http://radar.oreilly.com/rael/" onmouseover="MM_swapImage('rael','','/images/topnav-rael-over.gif',1)" onmouseout="MM_swapImgRestore()"><img src="topnav-rael-off.gif" alt="Rael" name="rael" width="53" height="22" hspace="0" vspace="0" border="0" id="rael" /></a></td>
+<td bgcolor="#99FF00"><a href="http://radar.oreilly.com/marc/" onmouseover="MM_swapImage('marc','','/images/topnav-marc-over.gif',1)" onmouseout="MM_swapImgRestore()"><img src="topnav-marc-off.gif" alt="Marc" name="marc" width="53" height="22" hspace="0" vspace="0" border="0" id="marc" /></a></td>
+<td bgcolor="#99FF00"><a href="http://radar.oreilly.com/nat/" onmouseover="MM_swapImage('nat','','/images/topnav-nat-over.gif',1)" onmouseout="MM_swapImgRestore()"><img src="topnav-nat-off.gif" alt="Nat" name="nat" width="48" height="22" hspace="0" vspace="0" border="0" id="nat" /></a></td>
+<td bgcolor="#99FF00"><a href="http://radar.oreilly.com/nikolaj/" onmouseover="MM_swapImage('nikolaj','','/images/topnav-nikolaj-over.gif',1)" onmouseout="MM_swapImgRestore()"><img src="topnav-nikolaj-off.gif" alt="Nikolaj" name="nikolaj" width="65" height="22" hspace="0" vspace="0" border="0" id="nikolaj" /></a></td>
+<td bgcolor="#99FF00"><a href="http://radar.oreilly.com/brady/" onmouseover="MM_swapImage('brady','','/images/topnav-brady-over.gif',1)" onmouseout="MM_swapImgRestore()"><img src="topnav-brady-off.gif" alt="Brady" name="brady" width="56" height="22" hspace="0" vspace="0" border="0" id="brady" /></a></td>
+<td bgcolor="#99FF00"><a href="http://radar.oreilly.com/allison/" onmouseover="MM_swapImage('allison','','/images/topnav-allison-over.gif',1)" onmouseout="MM_swapImgRestore()"><img src="topnav-allison-off.gif" alt="Allison" name="allison" width="62" height="22" hspace="0" vspace="0" border="0" id="allison" /></a></td>
+<td bgcolor="#99FF00"><a href="http://radar.oreilly.com/adam/" onmouseover="MM_swapImage('adam','','/images/topnav-adam-over.gif',1)" onmouseout="MM_swapImgRestore()"><img src="topnav-adam-off.gif" alt="Adam" name="adam" width="56" height="22" hspace="0" vspace="0" border="0" id="adam" /></a></td>
+<td bgcolor="#99FF00"><a href="http://radar.oreilly.com/dale/" onmouseover="MM_swapImage('dale','','/images/topnav-dale-over.gif',1)" onmouseout="MM_swapImgRestore()"><img src="topnav-dale-off.gif" alt="Dale" name="dale" width="47" height="22" hspace="0" vspace="0" border="0" id="dale" /></a></td>
+<td bgcolor="#3366FF"><a href="http://radar.oreilly.com/archives/upcoming_appearances/index.html" onmouseover="MM_swapImage('appearances','','/images/topnav-appearances-over.gif',1)" onmouseout="MM_swapImgRestore()"><img src="topnav-appearances-off.gif" alt="Appearances" name="appearances" width="102" height="22" hspace="0" vspace="0" border="0" id="appearances" /></a></td>
+<td bgcolor="#3366FF"><a href="http://radar.oreilly.com/about/" onmouseover="MM_swapImage('about','','/images/topnav-about-over.gif',1)" onmouseout="MM_swapImgRestore()"><img src="topnav-about-off.gif" alt="About" name="about" width="54" height="22" hspace="0" vspace="0" border="0" id="about" /></a></td>
+<td width="480"></td>
+</tr>
+</table>
+</noindex>
+<!-- end header -->
+
+<div id="center">
+<div class="content">
+<div style="clear:both;">&nbsp;</div>
+<script type="text/javascript" language="javascript">
+<!--
+
+var HOST = 'radar.oreilly.com';
+
+// Copyright (c) 1996-1997 Athenia Associates.
+// http://www.webreference.com/js/
+// License is granted if and only if this entire
+// copyright notice is included. By Tomer Shiran.
+
+function setCookie (name, value, expires, path, domain, secure) {
+    var curCookie = name + "=" + escape(value) + (expires ? "; expires=" + expires : "") + (path ? "; path=" + path : "") + (domain ? "; domain=" + domain : "") + (secure ? "secure" : "");
+    document.cookie = curCookie;
+}
+
+function getCookie (name) {
+    var prefix = name + '=';
+    var c = document.cookie;
+    var nullstring = '';
+    var cookieStartIndex = c.indexOf(prefix);
+    if (cookieStartIndex == -1)
+        return nullstring;
+    var cookieEndIndex = c.indexOf(";", cookieStartIndex + prefix.length);
+    if (cookieEndIndex == -1)
+        cookieEndIndex = c.length;
+    return unescape(c.substring(cookieStartIndex + prefix.length, cookieEndIndex));
+}
+
+function deleteCookie (name, path, domain) {
+    if (getCookie(name))
+        document.cookie = name + "=" + ((path) ? "; path=" + path : "") + ((domain) ? "; domain=" + domain : "") + "; expires=Thu, 01-Jan-70 00:00:01 GMT";
+}
+
+function fixDate (date) {
+    var base = new Date(0);
+    var skew = base.getTime();
+    if (skew > 0)
+        date.setTime(date.getTime() - skew);
+}
+
+function rememberMe (f) {
+    var now = new Date();
+    fixDate(now);
+    now.setTime(now.getTime() + 365 * 24 * 60 * 60 * 1000);
+    now = now.toGMTString();
+    if (f.author != undefined)
+       setCookie('mtcmtauth', f.author.value, now, '/', '', '');
+    if (f.email != undefined)
+       setCookie('mtcmtmail', f.email.value, now, '/', '', '');
+    if (f.url != undefined)
+       setCookie('mtcmthome', f.url.value, now, '/', '', '');
+}
+
+function forgetMe (f) {
+    deleteCookie('mtcmtmail', '/', '');
+    deleteCookie('mtcmthome', '/', '');
+    deleteCookie('mtcmtauth', '/', '');
+    f.email.value = '';
+    f.author.value = '';
+    f.url.value = '';
+}
+
+//-->
+</script>
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://radar.oreilly.com/archives/2005/11/burn_in_6_james_duncan_davidso.html"
+    trackback:ping="http://blogs.oreillynet.com/mt/trackback/991"
+    dc:title="Burn In 6: James Duncan Davidson"
+    dc:identifier="http://radar.oreilly.com/archives/2005/11/burn_in_6_james_duncan_davidso.html"
+    dc:subject="The Social Network"
+    dc:description="This is the seventh entry in the O&apos;Reilly Radar series about how alpha geeks got into computers. James Duncan Davidson created Tomcat and Ant just to get those animals on the cover of the O&apos;Reilly books he wrote about them,..."
+    dc:creator="nat"
+    dc:date="2005-11-24T00:15:18-08:00" />
+</rdf:RDF>
+-->
+
+
+<!-- breadcrumbs -->
+<p>
+<a href="http://radar.oreilly.com/archives/2005/11/burn_in_5_guido_van_rossum.html">&laquo; Burn In 5: Guido van Rossum</a> |
+
+<a href="http://radar.oreilly.com/">Main</a>
+| <a href="http://radar.oreilly.com/archives/2005/11/burn_in_7_dj_adams.html">Burn In 7: DJ Adams &raquo;</a>
+
+</p>
+
+<!-- <h2>November 24, 2005</h2> -->
+
+<h3 id="a001617">
+Burn In 6: James Duncan Davidson
+<a href="burn_in_6_james_duncan_davidso.html" target="_self"><img class="permalink" src="permalink.gif" alt="Permalink" width="9" height="9" border="0" /></a>
+<br /><span class="author">By Nat Torkington on November 24, 2005</span>
+</h3>
+
+<p>This is the seventh entry in the O'Reilly Radar series about <a href="http://radar.oreilly.com/archives/2005/11/burn_in_0_how_i_got_into_compu.html">how alpha geeks got into computers</a>.  <a href="http://x180.net">James Duncan Davidson</a> created Tomcat and Ant just to get those animals on the cover of the O'Reilly books he wrote about them, and ended up with neither.  However, he did write a book on Mac OS X Tiger and got a Tiger on the cover of that.  He now lives in Portland where he writes, consults, and <a href="http://flickr.com/people/x180/">takes photographs of our conferences</a> to feed his Banana Republic habit.</p>
+<div id="a001617more"><div id="more">
+<h2>James Duncan Davidson's Story</h2>
+
+<p>I've always had computers around--well, for at least as long as
+really matters. My schools had the very first Commodore PETs. The
+first computer my family had was an Apple ][ that my Dad bought. It
+was maxed out with not just one, but two external floppy drives. But,
+even before then, I was playing with Integrated Circuits and the like
+with various projects my Dad and I worked on.
+</p><p>
+After that came a Commodore 64, then an array of IBM PC's. There was
+always something to play with. And, connectivity came soon to the
+family as well. That first IBM PC had an archaic 300 baud modem that
+I used to dial in to whatever I could. Games like Castle Wolfenstein
+and the like were always fun to play, but the best game for me was
+always figuring out how to get online, whether through the BBSs,
+FidoNet, or later the honest to goodness Internet.
+</p><p>
+Computer languages for me were always a means to an end. I learned
+BASIC in school of course, and a smattering of other languages as
+needed to get things done. I didn't really get hard core into
+programming until the Web. Before then, I was much more interested in
+Computer Graphics, especially as they related to my studies in
+school. I was going to be an Architect and build buildings one day.
+And I was going to use computers to help me do it.
+</p><p>
+But then the Web came along and sucked me in. I learned all sorts of
+programming languages along the way to help me make the back ends to
+all sorts of websites--how to make the Architecture of the Virtual
+World real. And then I found I was good at software and the pursuit
+of an Architecture degree faded in favor of playing in the brave new
+world. One thing lead to another and pretty soon I was a Software
+Architect at Sun where I had the opportunity to contribute several
+things to the Java platform. Never in a million years could I have
+guessed that my work on Tomcat and Ant would be so widely used and
+affect so many people. It was, and remains, one of the most awesome
+and humbling experiences in my life.
+</p><p>
+After my long stint in the Java world, I moved on and branched out. I
+wrote a few books. Wrote some more software. And did a lot of
+consulting to help several other companies write some kick-ass
+software. At the same time, I've had the opportunity to turn my hobby
+of taking pictures into a part-time professional gig. It might seem a
+bit random at first, but at heart, I want to create beautiful things
+and digital photography has given me a way to do that.
+</p><p>
+As far as where I might go next, well, that's always hard to guess.
+But I know that I will continue to try to find beauty in whatever I
+do. Software or Art. It's all craft and I'll keep trying to be a good
+craftsman. And, I'm sure it will all be digital.</p>
+</div></div>
+
+<div class="posted">
+Tags: <a href="http://radar.oreilly.com/tag/burnin">burnin</a> 
+
+<div style="text-align: right; margin-bottom: 1.5em;">
+<a class="iconsphere" title="Related Blogs & Articles" onclick="return Sphere.Widget.search('http://radar.oreilly.com/archives/2005/11/burn_in_6_james_duncan_davidso.html')" href="http://www.sphere.com/search?q=sphereit:http://radar.oreilly.com/archives/2005/11/burn_in_6_james_duncan_davidso.html">Sphere It</a> 
+</div></div>
+
+<h2 id="pings"><span id="trackbacks">Trackback Pings</span></h2>
+<p class="techstuff">TrackBack URL for this entry:<br />
+http://blogs.oreillynet.com/mt/trackback/991</p>
+
+
+
+
+
+
+<h2 id="comments">Comments</h2>
+
+
+
+
+<h2>Post a comment</h2>
+
+ <!-- begin form bg -->
+<div class="formBg">
+
+<form method="post" action="http://radar.oreilly.com/mt/comments" name="comments_form" onsubmit="if (this.bakecookie[0].checked) rememberMe(this)">
+<input type="hidden" name="static" value="1" />
+<input type="hidden" name="entry_id" value="1617" />
+
+<div id="name_email">
+<p><label for="author">Name:</label><br />
+<input tabindex="1" id="author" name="author" /></p>
+
+<p><label for="email">Email Address:</label><br />
+<input tabindex="2" id="email" name="email" /></p>
+</div>
+
+
+<p><label for="url">URL:</label><br />
+<input tabindex="3" type="text" name="url" id="url" />
+Remember Me?
+<input type="radio" id="remember" onclick="rememberMe(this.form)" name="bakecookie" /><label for="remember">Yes</label><input type="radio" id="forget" name="bakecookie" onclick="forgetMe(this.form)" value="Forget Info" style="margin-left: 15px;" /><label for="forget">No</label><br style="clear: both;" />
+</p>
+
+<p><label for="text">Comments:</label> <br/>
+<textarea tabindex="4" id="text" name="text" rows="10" cols="50"></textarea></p>
+
+<div align="center">
+<input type="submit" name="preview" tabindex="5" 
+    value="&nbsp;Preview&nbsp;" />
+
+<input style="font-weight: bold;" type="submit" name="post" 
+    tabindex="6" value="&nbsp;Post&nbsp;" />
+</div>
+</form>
+
+</div>
+<!-- end form bg -->
+<script type="text/javascript" language="javascript">
+<!--
+if (document.comments_form.email != undefined)
+    document.comments_form.email.value = getCookie("mtcmtmail");
+if (document.comments_form.author != undefined)
+    document.comments_form.author.value = getCookie("mtcmtauth");
+if (document.comments_form.url != undefined)
+    document.comments_form.url.value = getCookie("mtcmthome");
+if (getCookie("mtcmtauth") || getCookie("mtcmthome")) {
+    document.comments_form.bakecookie[0].checked = true;
+} else {
+    document.comments_form.bakecookie[1].checked = true;
+}
+//-->
+</script>
+
+
+
+<!-- measuremap -->
+<script type="text/javascript"><!--
+if(!mmposts){var mmposts=[];}mmposts[mmposts.length]="1617";
+//--></script>
+<!-- mmp mmid:1617 mmdate:20051124T001518 mmurl:http://radar.oreilly.com/archives/2005/11/burn_in_6_james_duncan_davidso.html mmtitle:Burn In 6: James Duncan Davidson -->
+
+<!-- end measuremap -->
+
+
+</div>
+</div>
+
+<div id="right">
+<div class="sidebar">
+
+<!--  begin discuss-print-email-spanish-blog options  -->
+<h2>Tools</h2>
+<table class="tools" cellpadding="0" cellspacing="0">
+<!-- <tr><td><a href="#"><img src="/images/icons/print.gif" width="18" height="18" border="0" /></a></td>
+<td><span>&nbsp;<a href="#">Print</a></span></td>
+</tr>  -->
+<tr><td><a href="burn_in_6_james_duncan_davidso.html#"><img src="mail.gif" width="18" height="18" border="0" /></a></td>
+<td><span>&nbsp;<a href="mailto:?subject=Burn%20In%206%3A%20James%20Duncan%20Davidson&body=http%3A%2F%2Fradar.oreilly.com%2Farchives%2F2005%2F11%2Fburn_in_6_james_duncan_davidso.html ">Email weblog link</a></span></td>
+</tr>
+<tr><td><a href="burn_in_6_james_duncan_davidso.html#comments"><img src="discuss.gif" width="18" height="18" border="0" /></a></td>
+<td><span>&nbsp;<a href="burn_in_6_james_duncan_davidso.html#comment">Discuss</a></span></td>
+</tr>
+<tr><td><a href="burn_in_6_james_duncan_davidso.html#pings"><img src="trackback.gif" width="18" height="18" border="0" /></a></td>
+<td><span>&nbsp;<a href="burn_in_6_james_duncan_davidso.html#ping">Trackbacks</a></span></td>
+</tr>
+<!-- <tr><td><a href="#"><img src="/images/icons/blog.gif" width="18" height="18" border="0" /></a></td>
+<td><span>&nbsp;<a href="#">Blog This</a></span></td>
+</tr> -->
+</table>
+<!--  end discuss-print-email-spanish-blog options  -->
+
+
+<!-- start sidebar ssi-->
+<!-- start subscribe -->
+<h2>Subscribe</h2>
+<div class="link-note">
+<p><a href="feed://radar.oreilly.com/feed"><img src="feed-icon-16x16.png" alt="Syndicate This Site" width="16" height="16" border="0"/>&nbsp;&nbsp;Syndication Feed</a></p>
+<form action="http://www.feedburner.com/fb/a/emailverify" method="post" target="popupwindow" onsubmit="window.open('http://www.feedburner.com', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">Enter your email address:<br/><input type="text" style="width:140px" name="email"/><input type="hidden" value="http://feeds.feedburner.com/~e?ffid=73011" name="url"/><input type="hidden" value="O'Reilly Radar" name="title"/><br/><input type="submit" value="Subscribe" /></form>
+</div>
+
+<h2>Search</h2>
+ 
+<div class="link-note">
+<form method="get" action="http://radar.oreilly.com/mt/search" />
+
+<input type="hidden" name="IncludeBlogs" value="24" />
+<input type="hidden" name="Template" value="radar" />
+<input id="search" name="search" size="20" /><br />
+<input type="submit" value="Search" />
+</form>
+</div>
+
+<div style="width:170px;margin-bottom:25px;">
+<img src="reportbox-header.jpg" width="170" height="22" alt="Radar Web 2.0 Report" />
+<div style="border:1px solid #ccc;background-color:#fff;padding:10px;">
+<a href="http://www.oreilly.com/radar/web2report.csp"><img src="report_cover.gif" width="87" height="112" alt="Web 2.0 Report" style="padding-right:5px;width:87px;float:left;border:none;" /></a>
+<p style="font-family: Verdana, Arial, sans-serif;font-size: 10px;line-height:13px;padding-top:0;margin-top:0;"><a href="http://www.oreilly.com/radar/web2report.csp"><b style="color: #333399;">Web 2.0 Principles and Best Practices</b></a><br /><br />
+What does Web 2.0 mean for your company? Get the latest on the why, what, who, and how of Web 2.0 in this O'Reilly Radar Report.<br />
+<a href="http://www.oreilly.com/radar/web2report.csp">Read more</a>.</p>
+</div>
+</div>
+
+<h2>Recent Entries</h2>
+<ul>
+<li><a href="http://radar.oreilly.com/archives/2007/02/gift_economy_or.html">Gift Economy or Honeymoon?</a></li>
+
+
+<li><a href="http://radar.oreilly.com/archives/2007/02/is_open_source_1.html">Is "Open Source" Now Completely Meaningless?</a></li>
+
+
+<li><a href="http://radar.oreilly.com/archives/2007/02/cto_of_google_e.html">CTO of Google Earth On Adding Web Search</a></li>
+
+
+<li><a href="http://radar.oreilly.com/archives/2007/02/show_and_tell_n_1.html">Show and Tell Night at Instructables</a></li>
+
+
+<li><a href="http://radar.oreilly.com/archives/2007/02/minimal_perl_1.html">Minimal Perl #1 in Amazon programming titles</a></li>
+
+
+<li><a href="http://radar.oreilly.com/archives/2007/02/etech_preview_s.html">ETech Preview: Super Ninja Privacy Techniques for Web App Developers</a></li>
+
+
+<li><a href="http://radar.oreilly.com/archives/2007/02/pros_and_cons_o.html">Pros and Cons of OpenID</a></li>
+
+
+<li><a href="http://radar.oreilly.com/archives/2007/02/paul_graham_lau.html">Paul Graham Launches Startup News</a></li>
+</ul>
+
+
+<h2>Tags</h2>
+<!-- start tags -->
+<div id="tags">
+<a href="http://radar.oreilly.com/tag/ajax"style="font-size: 9px; color: #4471f9; ">ajax</a> <a href="http://radar.oreilly.com/tag/amazon"style="font-size: 8px; color: #4471f9; ">amazon</a> <a href="http://radar.oreilly.com/tag/apple"style="font-size: 8px; color: #4471f9; ">apple</a> <a href="http://radar.oreilly.com/tag/books"style="font-size: 9px; color: #889ee2; ">books</a> <a href="http://radar.oreilly.com/tag/conferences"style="font-size: 10px; color: #4471f9; ">conferences</a> <a href="http://radar.oreilly.com/tag/copyright"style="font-size: 8px; color: #4471f9; ">copyright</a> <a href="http://radar.oreilly.com/tag/economics"style="font-size: 9px; color: #3365fe; ">economics</a> <a href="http://radar.oreilly.com/tag/etech"style="font-size: 8px; color: #4471f9; ">etech</a> <a href="http://radar.oreilly.com/tag/eurooscon"style="font-size: 8px; color: #889ee2; ">eurooscon</a> <a href="http://radar.oreilly.com/tag/flickr"style="font-size: 8px; color: #4471f9; ">flickr</a> <a href="http://radar.oreilly.com/tag/fun"style="font-size: 8px; color: #4471f9; ">fun</a> <a href="http://radar.oreilly.com/tag/geo"style="font-size: 11px; color: #4471f9; ">geo</a> <a href="http://radar.oreilly.com/tag/google"style="font-size: 15px; color: #3365fe; ">google</a> <a href="http://radar.oreilly.com/tag/hard_numbers"style="font-size: 9px; color: #4471f9; ">hard numbers</a> <a href="http://radar.oreilly.com/tag/java"style="font-size: 8px; color: #4471f9; ">java</a> <a href="http://radar.oreilly.com/tag/make"style="font-size: 8px; color: #4471f9; ">make</a> <a href="http://radar.oreilly.com/tag/mapping"style="font-size: 11px; color: #889ee2; ">mapping</a> <a href="http://radar.oreilly.com/tag/media"style="font-size: 8px; color: #889ee2; ">media</a> <a href="http://radar.oreilly.com/tag/microsoft"style="font-size: 10px; color: #4471f9; ">microsoft</a> <a href="http://radar.oreilly.com/tag/mobile"style="font-size: 8px; color: #889ee2; ">mobile</a> <a href="http://radar.oreilly.com/tag/nff"style="font-size: 10px; color: #4471f9; ">nff</a> <a href="http://radar.oreilly.com/tag/open_source"style="font-size: 9px; color: #4471f9; ">open source</a> <a href="http://radar.oreilly.com/tag/opensource"style="font-size: 11px; color: #4471f9; ">opensource</a> <a href="http://radar.oreilly.com/tag/oscon"style="font-size: 9px; color: #4471f9; ">oscon</a> <a href="http://radar.oreilly.com/tag/publishing"style="font-size: 9px; color: #3365fe; ">publishing</a> <a href="http://radar.oreilly.com/tag/rss"style="font-size: 8px; color: #889ee2; ">rss</a> <a href="http://radar.oreilly.com/tag/ruby"style="font-size: 8px; color: #4471f9; ">ruby</a> <a href="http://radar.oreilly.com/tag/trends"style="font-size: 8px; color: #4471f9; ">trends</a> <a href="http://radar.oreilly.com/tag/voice"style="font-size: 8px; color: #889ee2; ">voice</a> <a href="http://radar.oreilly.com/tag/web"style="font-size: 8px; color: #4471f9; ">web</a> <a href="http://radar.oreilly.com/tag/web20"style="font-size: 9px; color: #4471f9; ">web20</a> <a href="http://radar.oreilly.com/tag/web_20"style="font-size: 17px; color: #3365fe; ">web 20</a> <a href="http://radar.oreilly.com/tag/where"style="font-size: 8px; color: #4471f9; ">where</a> <a href="http://radar.oreilly.com/tag/where20"style="font-size: 9px; color: #4471f9; ">where20</a> <a href="http://radar.oreilly.com/tag/yahoo"style="font-size: 10px; color: #4471f9; ">yahoo</a> 
+<div class="link-note"><a href="http://radar.oreilly.com/archives.html">To the Archives &gt;&gt;</a></div>
+</div>
+
+<!-- begin Y!/ORA Buzz Game -->
+<h2>Research</h2>
+
+<iframe src="http://buzz.research.yahoo.com/raw/org/org.html" width="170" height="350" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+
+<!-- begin ads -->
+<h2>Ads</h2>
+
+<!-- Creative for 120x240 format -->
+
+<div style="text-align:left; width:100%; padding:0 0; background:#E6E6E6;"> <script type="text/javascript"><!--
+google_ad_client = "oreilly_120x240";
+google_ad_width = "120";
+google_ad_height = "240";
+google_ad_format = "120x240_as";
+google_safe = "high";
+google_color_border = "E6E6E6";
+google_color_bg = "E6E6E6";
+google_color_link = "3366FF";
+google_color_url = "3366FF";
+google_color_text = "000000";
+//--></script>
+<script type="text/javascript" language="JavaScript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+
+<noscript>
+<img height="1" width="1" border="0"
+src="http://pagead2.googlesyndication.com/pagead/imp.gif?client=ca-oreilly_728x90&amp;event=noscript" alt=""/>
+</noscript>
+ </div>
+
+<div class="link-note">
+<script type="text/javascript" src="http://pub.mybloglog.com/comm2.php?mblID=2006102010032569&c_width=170&c_sn_opt=n&c_rows=5&c_img_size=h&c_heading_text=Recent+Readers&c_color_heading_bg=005A94&c_color_heading=ffffff&c_color_link_bg=E3E3E3&c_color_link=005A94&c_color_bottom_bg=005A94"></script>
+</div>
+
+<!-- End Creative -->
+
+<div class="link-note">
+<a href="http://creativecommons.org/licenses/by-nc-sa/1.0/"><img border="0" alt="Creative Commons License" src="http://creativecommons.org/images/public/somerights" /></a><br />
+This weblog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/1.0/">Creative Commons License</a>.
+</div>
+
+</div>
+<!-- end sidebar -->
+
+</div>
+
+<div style="clear: both;"></div>
+
+<!-- start footer -->
+<noindex>
+<p align="center" class="footer" style="margin-top: 12px; padding-top: 12px;">
+<a href="feed://radar.oreilly.com/feed"><img src="feed-icon-16x16.png" alt="Subscribe to this Site" width="16" height="16" border="0"/>&nbsp;&nbsp;Subscribe to this Site</a>
+<br /><br />
+<b><a href="http://www.oreilly.com/">O'Reilly Home</a> | <a href="http://www.oreillynet.com/pub/a/mediakit/privacy.html">Privacy Policy</a></b><br /><br />
+<i>&copy; 2005-2006, O'Reilly Media, Inc.<br />
+
+<span style="white-space: nowrap;">Website: <script language="JavaScript" type="text/javascript">
+<!--
+var name = "webmaster";
+var domain = "oreilly.com";
+var display = "";
+var subject = "";
+var ending = "";
+var style = "";
+document.write('<a class="' + style + '" href="mailto:' + name + '&#64;' + domain + '?subject=' + subject + '">');
+if (display) {
+ document.write(display);
+} else {
+ document.write(name + '&#64;' + domain);
+}
+document.write('</a>' + ending);
+document.write('<!-- mailmunge bit -->');
+
+// -->
+</script>
+
+ | Customer Service: <script language="JavaScript" type="text/javascript">
+<!--
+var name = "orders";
+var domain = "oreilly.com";
+var display = "";
+var subject = "";
+var ending = "";
+var style = "";
+document.write('<a class="' + style + '" href="mailto:' + name + '&#64;' + domain + '?subject=' + subject + '">');
+if (display) {
+ document.write(display);
+} else {
+ document.write(name + '&#64;' + domain);
+}
+document.write('</a>' + ending);
+document.write('<!-- mailmunge bit -->');
+
+// -->
+</script>
+
+ | Book issues: <script language="JavaScript" type="text/javascript">
+<!--
+var name = "booktech";
+var domain = "oreilly.com";
+var display = "";
+var subject = "";
+var ending = "";
+var style = "";
+document.write('<a class="' + style + '" href="mailto:' + name + '&#64;' + domain + '?subject=' + subject + '">');
+if (display) {
+ document.write(display);
+} else {
+ document.write(name + '&#64;' + domain);
+}
+document.write('</a>' + ending);
+document.write('<!-- mailmunge bit -->');
+
+// -->
+</script>
+
+</span></i></p>
+<p align="center" class="footer">All trademarks and registered trademarks appearing on oreilly.com are the property of their respective owners.</p>
+</noindex>
+<!-- end footer -->
+
+</div>
+
+<!-- measuremap -->
+<script type="text/javascript" src="http://tracker.measuremap.com/a/28"></script>
+<!-- end measuremap -->
+
+ <!--WEBSIDESTORY CODE HBX1.0 (Universal)-->
+        <!--COPYRIGHT 1997-2004 WEBSIDESTORY,INC. ALL RIGHTS RESERVED. U.S.PATENT No. 6,393,479B1. MORE INFO:http://websidestory.com / privacy-->
+        <script language="javascript" type="text/javascript">
+        var _hbEC=0,_hbE=new Array;function _hbEvent(a,b){b=_hbE[_hbEC++]=new Object();b._N=a;b._C=0;return b;}
+    var hbx=_hbEvent("pv");hbx.vpc="HBX0100u";hbx.gn="ehg-oreilly.hitbox.com";
+
+var jlw = "JLW: radar.oreilly.com,";
+
+    hbx.acct="DM5505190EVE;DM520404M4ZR"; //ACCOUNT NUMBER(S)
+    hbx.pn="Burn+In+6-+James+Duncan+Davidson"; //PAGE NAME(S)
+    hbx.mlc="/archives/2005/11/burn_in_6_james_duncan_davidso.html;/radar.oreilly.com/archives/2005/11/burn_in_6_james_duncan_davidso.html"; //MULTI-LEVEL CONTENT CATEGORY
+    hbx.pndef="title"; //DEFAULT PAGE NAME
+    hbx.ctdef="full"; //DEFAULT CONTENT CATEGORY
+
+    hbx.lt="auto"; //LINK TRACKING 
+    hbx.dlf="n"; //DOWNLOAD FILTER
+    hbx.dft="n"; //DOWNLOAD FILE NAMING
+    hbx.elf="n"; //EXIT LINK FILTER
+
+    //SEGMENTS AND FUNNELS
+    hbx.seg=""; //VISITOR SEGMENTATION
+    hbx.fnl=""; //FUNNELS
+
+    //CAMPAIGNS
+    hbx.cmp=""; //CAMPAIGN ID
+    hbx.cmpn="CMP"; //CAMPAIGN ID IN QUERY
+    hbx.hra=""; //RESPONSE ATTRIBUTE
+    hbx.hqsr=""; //RESPONSE ATTRIBUTE IN REFERRAL QUERY
+    hbx.hqsp=""; //RESPONSE ATTRIBUTE IN QUERY
+    hbx.hlt=""; //LEAD TRACKING
+    hbx.hla=""; //LEAD ATTRIBUTE
+    hbx.gp=""; //CAMPAIGN GOAL
+    hbx.gpn=""; //CAMPAIGN GOAL IN QUERY
+    hbx.hcn=""; //CONVERSION ATTRIBUTE
+    hbx.hcv=""; //CONVERSION VALUE
+    hbx.cp="null"; //LEGACY CAMPAIGN
+    hbx.cpd=""; //CAMPAIGN DOMAIN
+
+    //CUSTOM VARIABLES
+    hbx.ci="";//CUSTOMER ID
+    hbx.hc1="";//CUSTOM 1
+    hbx.hc2="";//CUSTOM 2
+    hbx.hc3="";//CUSTOM 3
+    hbx.hc4="";//CUSTOM 4 
+    hbx.pec="";//ERROR CODES
+    </script><script language="javascript1.1" defer="defer"  src="http://www.oreillynet.com/hbx.js" type="text/javascript"></script><!--//-->  
+        <!-- END WEBSIDESTORY CODE  -->
+ 
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-31074-2";
+urchinTracker();
+</script>
+
+</body>
+</html>

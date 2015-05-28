@@ -1,0 +1,75 @@
+@import url(/css/header.css);
+@import url(/css/footer.css);
+@import url(/css/breaking-news.css);
+@import url(/css/common.css);
+@import url(/css/image-slideshow.css);
+
+div#tach-content {
+	text-align: justify;
+	margin-left: 0.125in;
+	margin-right: 0.125in;
+}
+div#tach-content th { text-align: center; }
+div#tach-content td { text-align: left; }
+
+/* let's look like every other site, yay! */
+/* stupid MSIE doesn't support font-size: inherit, boo! */
+div#tach-content { font-size: small; }
+div#tach-content pre { font-size: small; }
+div#tach-content table { font-size: small; }
+div#tach-content form { font-size: small; }
+div#tach-content input { font-size: small; }
+div#tach-content .caption { font-size: smaller; }
+
+div#tach-content div.newstopics { font-size: smaller; text-align: left; }
+div#tach-content div.newstopics hr { display: none; }
+div#tach-content div.newstopics ul { margin-top: 0; margin-bottom: 1em; margin-left: 1.5em; padding-left: 0; }
+div#tach-content div.newstopics h3 { font-size: medium; margin: 0; }
+div#tach-content div.headlinelist hr { display: none; }
+div#tach-content div.newstopics h2 { margin-top: 0; margin-bottom: 0.5em; }
+
+div.linktonewcarbuyersguide {
+	background-color: #ffffcc;
+	padding: 0.25em;
+	font-weight: bold;
+	margin: 1em 0 1em 0;
+}
+div.linktonewcarbuyersguide p, div.linktonewcarbuyersguide ul {
+	margin-top: 0.25em;
+	margin-bottom: 0.25em;
+}
+
+div.text-ad,
+div.pricequotes-promo {
+	margin: 1em 0 1em 0;
+	background-color: #ffffcc;
+	padding: 0.25em;
+}
+div.text-ad p, div.text-ad ul,
+div.pricequotes-promo p, div.pricequotes-promo ul {
+	margin-top: 0.25em;
+	margin-bottom: 0.25em;
+}
+div.text-ad hr,
+div.pricequotes-promo hr {
+	display: none;
+}
+div.text-ad,
+div.pricequotes-promo {
+	/* may be outside of div#tach-content */
+	font-size: small;
+}
+
+div#tach-content .htresult { width: 100%; }
+div#tach-content .htresult tr { vertical-align: top; }
+div#tach-content .htleft {
+	width: 1%; /* expands */
+	padding-right: 10px;
+	white-space: nowrap;
+}
+div#tach-content .htresult td p { margin: 0; padding: 0; }
+div#tach-content .httitle { font-weight: bold; }
+div#tach-content .htexcerpt { font-size: smaller; margin-left: 12px !important; }
+div#tach-content .hturl { font-style: italic; margin-left: 12px !important; }
+div#tach-content .htpagination { font-size: bigger; text-align: center; }
+div#tach-content .htdisabled { color: #999999; }

@@ -1,0 +1,775 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+
+<title>The Panda's Thumb: Nature: Biologists snub 'kangaroo court' for Darwin</title>
+
+<link rel="stylesheet" href="styles-site.css" type="text/css" title="display" />
+<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.pandasthumb.org/index.rdf" />
+
+<link rel="start" href="http://www.pandasthumb.org/" title="Home" />
+<link rel="prev" href="http://www.pandasthumb.org/archives/2005/03/scopes_ii_and_scopes_i.html" title="Scopes II and Scopes I" />
+
+<link rel="next" href="http://www.pandasthumb.org/archives/2005/03/why_sex.html" title="Why sex?" />
+
+
+<script type="text/javascript" language="javascript">
+
+function OpenTrackback (c) {
+    window.open(c,
+                    'trackback',
+                    'width=480,height=480,scrollbars=yes,status=yes');
+}
+
+var HOST = 'www.pandasthumb.org';
+
+// Copyright (c) 1996-1997 Athenia Associates.
+// http://www.webreference.com/js/
+// License is granted if and only if this entire
+// copyright notice is included. By Tomer Shiran.
+
+function setCookie (name, value, expires, path, domain, secure) {
+    var curCookie = name + "=" + escape(value) + ((expires) ? "; expires=" + expires.toGMTString() : "") + ((path) ? "; path=" + path : "") + ((domain) ? "; domain=" + domain : "") + ((secure) ? "; secure" : "");
+    document.cookie = curCookie;
+}
+
+function getCookie (name) {
+    var prefix = name + '=';
+    var c = document.cookie;
+    var nullstring = '';
+    var cookieStartIndex = c.indexOf(prefix);
+    if (cookieStartIndex == -1)
+        return nullstring;
+    var cookieEndIndex = c.indexOf(";", cookieStartIndex + prefix.length);
+    if (cookieEndIndex == -1)
+        cookieEndIndex = c.length;
+    return unescape(c.substring(cookieStartIndex + prefix.length, cookieEndIndex));
+}
+
+function deleteCookie (name, path, domain) {
+    if (getCookie(name))
+        document.cookie = name + "=" + ((path) ? "; path=" + path : "") + ((domain) ? "; domain=" + domain : "") + "; expires=Thu, 01-Jan-70 00:00:01 GMT";
+}
+
+function fixDate (date) {
+    var base = new Date(0);
+    var skew = base.getTime();
+    if (skew > 0)
+        date.setTime(date.getTime() - skew);
+}
+
+function rememberMe (f) {
+    var now = new Date();
+    fixDate(now);
+    now.setTime(now.getTime() + 365 * 24 * 60 * 60 * 1000);
+    setCookie('mtcmtauth', f.author.value, now, '/', HOST, '');
+    setCookie('mtcmtmail', f.email.value, now, '/', HOST, '');
+    setCookie('mtcmthome', f.url.value, now, '/', HOST, '');
+}
+
+function forgetMe (f) {
+    deleteCookie('mtcmtmail', '/', HOST);
+    deleteCookie('mtcmthome', '/', HOST);
+    deleteCookie('mtcmtauth', '/', HOST);
+    f.email.value = '';
+    f.author.value = '';
+    f.url.value = '';
+}
+
+</script>
+<script src="http://pandasthumb.org/speller/spellChecker.js"></script>
+
+<script>
+//
+// openSpellChecker()
+//
+// this function is an example that illustrates the various ways you can invoke
+// the the Speller Pages spell-checking process
+//
+function openSpellChecker() {
+
+        // example 1.
+        // Pass in the text inputs or textarea inputs that you
+        // want to spell-check to the object's constructor,
+        // then call the openChecker() method.
+        // var text1 = document.form1.text1;
+        /*
+        var textarea1 = document.comments_form.text;
+        var speller = new spellChecker( textarea1 );
+        speller.openChecker();
+        */
+
+        // example 2.
+        // Rather than passing in the form elements to the object's
+        // constructor, populate the object's textInputs property,
+        // then call the openChecker() method.
+        
+        var speller = new spellChecker();
+        var spellerInputs = new Array();
+        for( var i = 0 ; i < document.comments_form.elements.length; i++ ) {
+                if( document.comments_form.elements[i].type.match( /^text/ )) {
+                        spellerInputs[spellerInputs.length] = document.comments_form.elements[i];
+                }
+        }
+        speller.textInputs = spellerInputs;
+        speller.openChecker();
+        
+
+        // example 3.
+        // use the spellCheckAll() method to check every text input
+        // and textarea input in every form in the HTML document.
+        // You can also use the checkTextBoxes() method or checkTextAreas()
+        // method instead of spellCheckAll() to check only text inputs
+        // or textarea inputs, respectively
+        /*
+        var speller = new spellChecker();
+        speller.spellCheckAll();
+        */
+}
+
+</script>
+
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://www.pandasthumb.org/archives/2005/03/nature_biologists_snub_kangaroo_court_for_darwin.html"
+    trackback:ping="http://degas.fdisk.net/cgi-bin/mt/mt-tb.cgi/919"
+    dc:title="Nature: Biologists snub &apos;kangaroo court&apos; for Darwin"
+    dc:identifier="http://www.pandasthumb.org/archives/2005/03/nature_biologists_snub_kangaroo_court_for_darwin.html"
+    dc:subject="Assault on Education"
+    dc:description="Nature: Biologists snub &apos;kangaroo court&apos; for Darwin - Kansas Citizens for Science gets international notice; scientist boycott of the creationist show trial in Kansas continues."
+    dc:creator="Nick Matzke"
+    dc:date="2005-03-30T22:34:56+00:00" />
+</rdf:RDF>
+-->
+
+
+<!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://www.pandasthumb.org/archives/2005/03/nature_biologists_snub_kangaroo_court_for_darwin.html">
+<dc:title>Nature: Biologists snub &apos;kangaroo court&apos; for Darwin</dc:title>
+<dc:description>Nature: Biologists snub &apos;kangaroo court&apos; for Darwin - Kansas Citizens for Science gets international notice; scientist boycott of the creationist show trial in Kansas continues.</dc:description>
+<dc:creator>Nick Matzke</dc:creator>
+<dc:date>2005-03-30T22:34:56+00:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-nd/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-nd/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+
+
+<script type="text/javascript" src="links.js"></script>
+<script type="text/javascript">
+<!--
+var onInit = new Array(externalLinks, emailLinks);
+
+function init() {
+  for(i=0;i<onInit.length;++i) {
+    onInit[i]();
+  }
+}
+window.onload = init;
+//-->
+</script>
+
+<!-- compliance patch for microsoft browsers -->
+<!--[if lt IE 7]>
+<script src="http://www.pandasthumb.org/scripts/ie7/ie7-standard-p.js" type="text/javascript"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+<div id="content">
+
+<div id="spacer"></div>
+
+<div id="links">
+<div class="side">
+<h3>Navigation</h3>
+<ul>
+<li><a href="http://www.pandasthumb.org/">Main</a></li>
+<li><a href="http://www.pandasthumb.org/archives/2005/03/27-week/index.html">Weekly Archive</a></li>
+<li><a href="http://www.pandasthumb.org/archives/assault_on_education/index.html">Category: Assault on Education</a></li>
+
+<li><a href="http://www.pandasthumb.org/archives/2005/03/scopes_ii_and_scopes_i.html">&laquo; Scopes II and Scopes I</a></li>
+
+<li><a href="http://www.pandasthumb.org/archives/2005/03/why_sex.html">&raquo; Why sex?</a></li>
+
+<li><a href="nature_biologists_snub_kangaroo_court_for_darwin.html#comments">Comments (22)</a></li>
+
+<li><a href="nature_biologists_snub_kangaroo_court_for_darwin.html#postcomment">Post a Comment</a></li>
+
+<li><a href="nature_biologists_snub_kangaroo_court_for_darwin.html#pings">TrackBacks (1)</a></li>
+
+<li><a href="nature_biologists_snub_kangaroo_court_for_darwin.html#send">Email</a></li>
+<li><a href="http://www.pandasthumb.org/archives/print/2005/03/nature_biologi.html" title="print this!" onclick="this.target='_blank';">Printer-friendly version</a></li>
+</ul>
+</div>
+
+<div class="side">
+<h3>Disclaimer</h3>
+<p>Authors are solely responsible for the content of their articles on PandasThumb.org.
+Linked material is the responsibility of the party who created it. Commenters are responsible for the content of comments. The opinions expressed in articles, linked materials, and comments are not necessarily those of PandasThumb.org. <a href="http://www.pandasthumb.org/pt-archives/000002.html">See our full disclaimer.</a></p>
+</div>
+
+<div class="side">
+<h3>Recent Comments</h3>
+<ul><li><a href="nature_biologists_snub_kangaroo_court_for_darwin.html#comment-24208">John A. Davison</a> on April 10, 2005 05:58 PM</li>
+<li><a href="nature_biologists_snub_kangaroo_court_for_darwin.html#comment-24144">sir_toejam</a> on April 10, 2005 12:24 AM</li>
+<li><a href="nature_biologists_snub_kangaroo_court_for_darwin.html#comment-23309">John A. Davison</a> on April  4, 2005 07:37 PM</li>
+<li><a href="nature_biologists_snub_kangaroo_court_for_darwin.html#comment-23216">GT(N)T</a> on April  4, 2005 11:32 AM</li>
+<li><a href="nature_biologists_snub_kangaroo_court_for_darwin.html#comment-23072">John A. Davison</a> on April  3, 2005 08:37 AM</li>
+<li><a href="nature_biologists_snub_kangaroo_court_for_darwin.html#comment-22922">Russell</a> on April  2, 2005 12:38 PM</li>
+<li><a href="nature_biologists_snub_kangaroo_court_for_darwin.html#comment-22914">steve</a> on April  2, 2005 11:31 AM</li>
+<li><a href="nature_biologists_snub_kangaroo_court_for_darwin.html#comment-22913">Creationist Timmy</a> on April  2, 2005 11:28 AM</li>
+<li><a href="nature_biologists_snub_kangaroo_court_for_darwin.html#comment-22910">Russell</a> on April  2, 2005 08:54 AM</li>
+<li><a href="nature_biologists_snub_kangaroo_court_for_darwin.html#comment-22909">Ed Darrell</a> on April  2, 2005 08:32 AM</li>
+
+<li></li></ul>
+</div>
+
+<div class="side">
+<h3>Recent Trackbacks</h3>
+<ul>
+<li><a href="nature_biologists_snub_kangaroo_court_for_darwin.html#ping-870" rel="nofollow">The Panda's Thumb: Send in the clowns</a></li>
+
+<li></li></ul>
+</div>
+
+<div class="side">
+<h3>Site Traffic</h3>
+<ul>
+<li><a href="http://sm4.sitemeter.com/stats.asp?site=sm4pandasthumb" rel="external">
+<img src="http://sm4.sitemeter.com/meter.asp?site=sm4pandasthumb" alt="Site Meter" border='0' /></a></li>
+</ul>
+</div>
+
+<a id="send"></a>
+<div class="side">
+<h3>Recommend this entry to a friend</h3>
+<form method="post" action="http://degas.fdisk.net/cgi-bin/mt/mt-send-entry.cgi">
+<input type="hidden" name="entry_id" value="921" />
+<input type="hidden" name="_redirect" value="http://www.pandasthumb.org/archives/2005/03/nature_biologists_snub_kangaroo_court_for_darwin.html" />
+<p>Friend's email address:<br /><input name="to" size="20" style="width: 100%;" /></p>
+<p>Your email address:<br /><input name="from" size="20" style="width: 100%;" /></p>
+<p>Message (optional):<br />
+<textarea name="message" rows="5" cols="18" style="width: 100%;"></textarea>
+</p>
+<p><input type="submit" value="Send" /></p>
+</form>
+</div>
+
+</div>
+
+<div class="blog">
+<div id="banner"><a href="http://www.pandasthumb.org/"><img src="banner.jpg" alt="Banner" border="0" width="474" height="143" /></a></div>
+
+
+<div class="blogbody">
+
+<div class="title"><h2><a href="nature_biologists_snub_kangaroo_court_for_darwin.html">Nature: Biologists snub &#8216;kangaroo court&#8217; for Darwin</a></h2></div>
+
+<p class="posted">Nick Matzke posted Entry 921 on March 30, 2005 10:34 PM.<br />
+Trackback URL: http://degas.fdisk.net/cgi-bin/mt/mt-tb.cgi/919</p>
+
+<p><img src="http://www.nature.com/nature/journal/v434/n7033/images/cover_nature.jpg" alt="http://www.nature.com/nature/journal/v434/n7033/images/cover_nature.jpg" style="float: left; clear: left;" />Tomorrow&#8217;s issue of <i>Nature</i> carries a story entitled &#8220;<a href="http://dx.doi.org/10.1038/434550a" target="_blank">Biologists snub &#8216;kangaroo court&#8217; for Darwin</a>.&#8221;&nbsp; Apparently, the <a href="http://www.pandasthumb.org/archives/2005/03/Intelligent%20Design%20Network" target="_blank">Intelligent Design Network</a> and their friends running the Kansas State Board of Education have had absolutely no luck recruiting real scientists to participate in the Antievolution show-trial they have planned for May.&nbsp; Major kudos to <a href="http://www.kcfs.org" target="_blank">Kansas Citizens for Science</a>, their efforts are now getting noticed internationally as well as nationally.&nbsp; </p>
+
+<p>I have written a <a href="http://www.ncseweb.org/resources/news/2005/KS/128_biologists_snub_39kangaroo__3_30_2005.asp" target="_blank">more thorough summary</a> of recent events in <a href="http://www.ncseweb.org/resources/news/2005/KS/128_biologists_snub_39kangaroo__3_30_2005.asp" target="_blank">this NCSE update</a>.&nbsp; You can freely subscribe (with <a href="http://www.bloglines.com" target="_blank">bloglines</a> or something similar) to a <a href="http://www.ncseweb.org/rss/ncseweb.xml" target="_blank">news feed for NCSE updates</a>; a <a href="http://www.ncseweb.org/ncse_news_list.asp" target="_blank">weekly email update</a> is also available.</p>
+
+<p>The blogs <a href="http://jgrr.blogspot.com/" target="_blank">Thoughts from Kansas</a> and <a href="http://redstaterabble.blogspot.com/" target="_blank">Red State Rabble</a>, <a href="http://www.geocities.com/lclane2/creatks.html" target="_blank">Les Lane&#8217;s website</a>, and the <a href="http://www.kcfs.org" target="_blank">Kansas Citizens for Science website</a> and <a href="http://www.kcfs.org/cgi-bin/ultimatebb.cgi" target="_blank">discussion forums</a> are the places to go to get the latest on Kansas.</p>
+
+<a id="more"></a>
+
+
+</div>
+
+<div id="extras">
+<a id="comments"></a>
+<a id="c22674"></a>
+<div class="comments-body" id="comment-22674">
+<h3 class="comments-head"><a href="nature_biologists_snub_kangaroo_court_for_darwin.html#comment-22674">Comment #22674</a></h3>
+<p class="comments-post">Posted by <a href="http://www.dererumnatura.us/" rel="nofollow">Reed A. Cartwright</a> on March 30, 2005 11:31 PM
+<a href="https://degas.fdisk.net/cgi-bin/mt/mt.cgi?__mode=view&amp;_type=comment&amp;id=22674&amp;blog_id=2"
+class="editcomment" rel="external nofollow" title="Edit Comment">(e)</a>
+<a href="https://degas.fdisk.net/cgi-bin/mt/plugins/Blacklist/mt-blacklist.cgi?__mode=despam&amp;id=22674"
+class="editcomment" rel="external nofollow" title="Despam Comment">(s)</a>
+</p>
+<div class="kw_format">
+
+<p>Actually, Nature is wrong.  One pro-evolution scientist has agreed to participate: Prof. Steve Steve.  He will be on hand, to answer any questions that the kangaroos have.  But don&rsquo;t make him angry; you wouldn&rsquo;t like him when he&rsquo;s angry.</p>
+
+</div>
+</div>
+<a id="c22697"></a>
+<div class="comments-body" id="comment-22697">
+<h3 class="comments-head"><a href="nature_biologists_snub_kangaroo_court_for_darwin.html#comment-22697">Comment #22697</a></h3>
+<p class="comments-post">Posted by Keanus on March 31, 2005 10:19 AM
+<a href="https://degas.fdisk.net/cgi-bin/mt/mt.cgi?__mode=view&amp;_type=comment&amp;id=22697&amp;blog_id=2"
+class="editcomment" rel="external nofollow" title="Edit Comment">(e)</a>
+<a href="https://degas.fdisk.net/cgi-bin/mt/plugins/Blacklist/mt-blacklist.cgi?__mode=despam&amp;id=22697"
+class="editcomment" rel="external nofollow" title="Despam Comment">(s)</a>
+</p>
+<div class="kw_format">
+
+<p>I don&rsquo;t know why the KBE doesn&rsquo;t go ahead with the hearings. Functionally it would mimic the open dialogues Dubya is having with the electorate about Social Security to which dissenters are not invited (and in somes cases ejected). The KBE has achieved the same end by establishing ground rules to which no informed person could agree. These people, from Dubya on down, seem to be modeling their practices on those of the local soviets in the old USSR.</p>
+
+</div>
+</div>
+<a id="c22704"></a>
+<div class="comments-body" id="comment-22704">
+<h3 class="comments-head"><a href="nature_biologists_snub_kangaroo_court_for_darwin.html#comment-22704">Comment #22704</a></h3>
+<p class="comments-post">Posted by Russell on March 31, 2005 11:09 AM
+<a href="https://degas.fdisk.net/cgi-bin/mt/mt.cgi?__mode=view&amp;_type=comment&amp;id=22704&amp;blog_id=2"
+class="editcomment" rel="external nofollow" title="Edit Comment">(e)</a>
+<a href="https://degas.fdisk.net/cgi-bin/mt/plugins/Blacklist/mt-blacklist.cgi?__mode=despam&amp;id=22704"
+class="editcomment" rel="external nofollow" title="Despam Comment">(s)</a>
+</p>
+<div class="kw_format">
+
+<blockquote class="kw_quote">
+
+<p>Functionally it would mimic the open dialogues Dubya is having with the electorate about Social Security to which dissenters are not invited (and in somes cases ejected).</p>
+
+</blockquote>
+
+<p>Be sure to leave your &ldquo;Darwin fish&rdquo; <a href="http://www.summitdaily.com/article/20050329/NEWS/50329001" rel="nofollow external nofollow">bumper stickers</a> at home!</p>
+
+</div>
+</div>
+<a id="c22707"></a>
+<div class="comments-body" id="comment-22707">
+<h3 class="comments-head"><a href="nature_biologists_snub_kangaroo_court_for_darwin.html#comment-22707">Comment #22707</a></h3>
+<p class="comments-post">Posted by DavidF on March 31, 2005 11:26 AM
+<a href="https://degas.fdisk.net/cgi-bin/mt/mt.cgi?__mode=view&amp;_type=comment&amp;id=22707&amp;blog_id=2"
+class="editcomment" rel="external nofollow" title="Edit Comment">(e)</a>
+<a href="https://degas.fdisk.net/cgi-bin/mt/plugins/Blacklist/mt-blacklist.cgi?__mode=despam&amp;id=22707"
+class="editcomment" rel="external nofollow" title="Despam Comment">(s)</a>
+</p>
+<div class="kw_format">
+
+<p>The article in Nature is very disappointing. It&rsquo;s about as enlightening as something written in the WSJ or USA Today. Why waste precious space in Nature on such warmed over tabloid journalism? Nature is slowly turning itself into a popular science journal - consider its n-part fictional series on quantum crime and it&rsquo;s increasingly &ldquo;unbiased&rdquo; news reporting in which all sides of any argument are given equal weight. One would have thought that a journal started by Darwin&rsquo;s bulldog would not have referred to intelligent design as a theory - certainly not without quotes - nor should it have given any space for quotes from creationists without some vitriolic editorial response.</p>
+
+<p>The article says nothing no scientist doesn&rsquo;t know or couldn&rsquo;t get elsewhere and does nothing to promote science over superstition. Depressing.</p>
+
+</div>
+</div>
+<a id="c22710"></a>
+<div class="comments-body" id="comment-22710">
+<h3 class="comments-head"><a href="nature_biologists_snub_kangaroo_court_for_darwin.html#comment-22710">Comment #22710</a></h3>
+<p class="comments-post">Posted by Michael I on March 31, 2005 12:04 PM
+<a href="https://degas.fdisk.net/cgi-bin/mt/mt.cgi?__mode=view&amp;_type=comment&amp;id=22710&amp;blog_id=2"
+class="editcomment" rel="external nofollow" title="Edit Comment">(e)</a>
+<a href="https://degas.fdisk.net/cgi-bin/mt/plugins/Blacklist/mt-blacklist.cgi?__mode=despam&amp;id=22710"
+class="editcomment" rel="external nofollow" title="Despam Comment">(s)</a>
+</p>
+<div class="kw_format">
+
+<p>One thing to keep in mind is that, unless I&rsquo;m seriously mistaken about Nature&rsquo;s readership, most of the readers of the article are already aware that ID is not science and that creationist&rsquo;s statements are not to be trusted.  Editorial response is not as necessary as it would be for an article in WSJ or USA Today where the readership does not generally know these things.</p>
+
+</div>
+</div>
+<a id="c22736"></a>
+<div class="comments-body" id="comment-22736">
+<h3 class="comments-head"><a href="nature_biologists_snub_kangaroo_court_for_darwin.html#comment-22736">Comment #22736</a></h3>
+<p class="comments-post">Posted by Great White Wonder on March 31, 2005 03:02 PM
+<a href="https://degas.fdisk.net/cgi-bin/mt/mt.cgi?__mode=view&amp;_type=comment&amp;id=22736&amp;blog_id=2"
+class="editcomment" rel="external nofollow" title="Edit Comment">(e)</a>
+<a href="https://degas.fdisk.net/cgi-bin/mt/plugins/Blacklist/mt-blacklist.cgi?__mode=despam&amp;id=22736"
+class="editcomment" rel="external nofollow" title="Despam Comment">(s)</a>
+</p>
+<div class="kw_format">
+
+<p>I&rsquo;d put this on the Wall under normal circumstances, but CNN just reported on an interesting fossil find:</p>
+
+<p><a href="http://www.cnn.com/2005/TECH/science/03/31/mammal.termites.reut/index.html" rel="nofollow external nofollow">http://www.cnn.com/2005/TECH/science/03/31/mamma&hellip;</a></p>
+
+<blockquote class="kw_quote">
+
+<p>But the fossil animal, named Fruitafossor windscheffelia, is not related to anything alive today and shows that anteaters, armadillos and other creatures that dig up insects evolved their specialized abilities several times during the history of the world.</p>
+
+</blockquote>
+
+<p>There it is again!  That strange statement: &ldquo;the animal is not related to anything alive today&rdquo;.</p>
+
+<p>If my children die, does that mean I no longer have any living relatives?  Why is the mainstream media so lazy?</p>
+
+</div>
+</div>
+<a id="c22745"></a>
+<div class="comments-body" id="comment-22745">
+<h3 class="comments-head"><a href="nature_biologists_snub_kangaroo_court_for_darwin.html#comment-22745">Comment #22745</a></h3>
+<p class="comments-post">Posted by Bayesian Bouffant, FCD on March 31, 2005 03:44 PM
+<a href="https://degas.fdisk.net/cgi-bin/mt/mt.cgi?__mode=view&amp;_type=comment&amp;id=22745&amp;blog_id=2"
+class="editcomment" rel="external nofollow" title="Edit Comment">(e)</a>
+<a href="https://degas.fdisk.net/cgi-bin/mt/plugins/Blacklist/mt-blacklist.cgi?__mode=despam&amp;id=22745"
+class="editcomment" rel="external nofollow" title="Despam Comment">(s)</a>
+</p>
+<div class="kw_format">
+
+<blockquote class="kw_quote">
+
+<p>Just as dinosaurs started getting really big 150 million years ago, a little rat-sized mammal scurried around eating termites, U.S. scientists reported on Thursday.</p>
+
+<p>They found the fossil of a completely new type of animal in Colorado&hellip;</p>
+
+</blockquote>
+
+<p>Hello? Was it a mammal, as stated, or was it a completely new type of animal, as stated?</p>
+
+</div>
+</div>
+<a id="c22773"></a>
+<div class="comments-body" id="comment-22773">
+<h3 class="comments-head"><a href="nature_biologists_snub_kangaroo_court_for_darwin.html#comment-22773">Comment #22773</a></h3>
+<p class="comments-post">Posted by <a href="http://cascadiancacerolazo.blogspot.com" rel="nofollow">Chris Brockett</a> on March 31, 2005 09:19 PM
+<a href="https://degas.fdisk.net/cgi-bin/mt/mt.cgi?__mode=view&amp;_type=comment&amp;id=22773&amp;blog_id=2"
+class="editcomment" rel="external nofollow" title="Edit Comment">(e)</a>
+<a href="https://degas.fdisk.net/cgi-bin/mt/plugins/Blacklist/mt-blacklist.cgi?__mode=despam&amp;id=22773"
+class="editcomment" rel="external nofollow" title="Despam Comment">(s)</a>
+</p>
+<div class="kw_format">
+
+<p>Just FYI for anyone tracking the Kansas debate in the press&mdash;since I haven&rsquo;t seen it mentioned anywhere on these pages. Today&rsquo;s Seattle Times has an article by a staff writer, Linda Shaw, titled &lsquo;Does Seattle group &ldquo;teach controversy&rdquo; or contribute to it?&rsquo; (<a href="http://seattletimes.nwsource.com/html/localnews/2002225932_design31m.html)" rel="nofollow external nofollow">http://seattletimes.nwsource.com/html/localnews/&hellip;</a>. The article unfortunately goes far too easy on Stephen Meyer, and fails to delve into the history of the Kansas Board of Education&rsquo;s review process. But it does mention the 500 (Steve|Stephanie)s. On the whole, I think the headline writer may have done a better job in capturing the essence of the issue than the author.</p>
+
+</div>
+</div>
+<a id="c22774"></a>
+<div class="comments-body" id="comment-22774">
+<h3 class="comments-head"><a href="nature_biologists_snub_kangaroo_court_for_darwin.html#comment-22774">Comment #22774</a></h3>
+<p class="comments-post">Posted by Michael Rathbun on March 31, 2005 10:00 PM
+<a href="https://degas.fdisk.net/cgi-bin/mt/mt.cgi?__mode=view&amp;_type=comment&amp;id=22774&amp;blog_id=2"
+class="editcomment" rel="external nofollow" title="Edit Comment">(e)</a>
+<a href="https://degas.fdisk.net/cgi-bin/mt/plugins/Blacklist/mt-blacklist.cgi?__mode=despam&amp;id=22774"
+class="editcomment" rel="external nofollow" title="Despam Comment">(s)</a>
+</p>
+<div class="kw_format">
+
+<p>&hellip;and a not-too-bad article in the Dallas Morning News today, referencing the NSTA convention, and addressing many popular aspects of the issues.</p>
+
+<p><a href="http://www.dallasnews.com/sharedcontent/dws/dn/latestnews/stories/033105dnnatevolution.11b7a.html" rel="nofollow external nofollow">http://www.dallasnews.com/sharedcontent/dws/dn/l&hellip;</a></p>
+
+</div>
+</div>
+<a id="c22891"></a>
+<div class="comments-body" id="comment-22891">
+<h3 class="comments-head"><a href="nature_biologists_snub_kangaroo_court_for_darwin.html#comment-22891">Comment #22891</a></h3>
+<p class="comments-post">Posted by DaveScot on April  1, 2005 05:03 PM
+<a href="https://degas.fdisk.net/cgi-bin/mt/mt.cgi?__mode=view&amp;_type=comment&amp;id=22891&amp;blog_id=2"
+class="editcomment" rel="external nofollow" title="Edit Comment">(e)</a>
+<a href="https://degas.fdisk.net/cgi-bin/mt/plugins/Blacklist/mt-blacklist.cgi?__mode=despam&amp;id=22891"
+class="editcomment" rel="external nofollow" title="Despam Comment">(s)</a>
+</p>
+<div class="kw_format">
+
+<p>I nominate Professor John Davison.  He&rsquo;s a scientist, a biologist with 50 years experience no less, and I&rsquo;m sure he&rsquo;d be willing to talk about Darwinian evolution with the Kansas board of education.</p>
+
+</div>
+</div>
+<a id="c22905"></a>
+<div class="comments-body" id="comment-22905">
+<h3 class="comments-head"><a href="nature_biologists_snub_kangaroo_court_for_darwin.html#comment-22905">Comment #22905</a></h3>
+<p class="comments-post">Posted by <a href="http://www.uvm.edu/~jdavison" rel="nofollow">John A. Davison</a> on April  2, 2005 05:30 AM
+<a href="https://degas.fdisk.net/cgi-bin/mt/mt.cgi?__mode=view&amp;_type=comment&amp;id=22905&amp;blog_id=2"
+class="editcomment" rel="external nofollow" title="Edit Comment">(e)</a>
+<a href="https://degas.fdisk.net/cgi-bin/mt/plugins/Blacklist/mt-blacklist.cgi?__mode=despam&amp;id=22905"
+class="editcomment" rel="external nofollow" title="Despam Comment">(s)</a>
+</p>
+<div class="kw_format">
+
+<p>The ant eater phenotype did not evolve independently and gradually several times at all. It was there all along and was simply independently derepressed on more than one occasion just as were the saber-toothed cat phenotypes derepressed and thereby expressed independently in both marsupial and placental mammals. Many other examples exist of what has been erroneously described as &ldquo;convergent evolution,&rdquo; just one more aspect of the Darwinian fairy tale.</p>
+
+<p>John A. Davison</p>
+
+</div>
+</div>
+<a id="c22906"></a>
+<div class="comments-body" id="comment-22906">
+<h3 class="comments-head"><a href="nature_biologists_snub_kangaroo_court_for_darwin.html#comment-22906">Comment #22906</a></h3>
+<p class="comments-post">Posted by Pete on April  2, 2005 07:01 AM
+<a href="https://degas.fdisk.net/cgi-bin/mt/mt.cgi?__mode=view&amp;_type=comment&amp;id=22906&amp;blog_id=2"
+class="editcomment" rel="external nofollow" title="Edit Comment">(e)</a>
+<a href="https://degas.fdisk.net/cgi-bin/mt/plugins/Blacklist/mt-blacklist.cgi?__mode=despam&amp;id=22906"
+class="editcomment" rel="external nofollow" title="Despam Comment">(s)</a>
+</p>
+<div class="kw_format">
+
+<p>It&rsquo;s anteaters all the way down.</p>
+
+</div>
+</div>
+<a id="c22909"></a>
+<div class="comments-body" id="comment-22909">
+<h3 class="comments-head"><a href="nature_biologists_snub_kangaroo_court_for_darwin.html#comment-22909">Comment #22909</a></h3>
+<p class="comments-post">Posted by Ed Darrell on April  2, 2005 08:32 AM
+<a href="https://degas.fdisk.net/cgi-bin/mt/mt.cgi?__mode=view&amp;_type=comment&amp;id=22909&amp;blog_id=2"
+class="editcomment" rel="external nofollow" title="Edit Comment">(e)</a>
+<a href="https://degas.fdisk.net/cgi-bin/mt/plugins/Blacklist/mt-blacklist.cgi?__mode=despam&amp;id=22909"
+class="editcomment" rel="external nofollow" title="Despam Comment">(s)</a>
+</p>
+<div class="kw_format">
+
+<p>Dr. Davison,</p>
+
+<p>What other animals have the repressed anteater genes in them?  What prevents them from being &ldquo;derepressed?&rdquo;</p>
+
+<p>Do such genes exist in humans?  If so, should we not expect, from time to time, that a human might give birth to an anteater, or a raccoon, or a bear, or a dolphin?</p>
+
+<p>With six billion tries in the past 50 years, has any of thost derepressions been reliably reported?  How many tries does it take?</p>
+
+</div>
+</div>
+<a id="c22910"></a>
+<div class="comments-body" id="comment-22910">
+<h3 class="comments-head"><a href="nature_biologists_snub_kangaroo_court_for_darwin.html#comment-22910">Comment #22910</a></h3>
+<p class="comments-post">Posted by Russell on April  2, 2005 08:54 AM
+<a href="https://degas.fdisk.net/cgi-bin/mt/mt.cgi?__mode=view&amp;_type=comment&amp;id=22910&amp;blog_id=2"
+class="editcomment" rel="external nofollow" title="Edit Comment">(e)</a>
+<a href="https://degas.fdisk.net/cgi-bin/mt/plugins/Blacklist/mt-blacklist.cgi?__mode=despam&amp;id=22910"
+class="editcomment" rel="external nofollow" title="Despam Comment">(s)</a>
+</p>
+<div class="kw_format">
+
+<blockquote class="kw_quote">
+
+<p>I nominate Professor John Davison.</p>
+
+</blockquote>
+
+<p>I enthusiastically second the nomination!</p>
+
+</div>
+</div>
+<a id="c22913"></a>
+<div class="comments-body" id="comment-22913">
+<h3 class="comments-head"><a href="nature_biologists_snub_kangaroo_court_for_darwin.html#comment-22913">Comment #22913</a></h3>
+<p class="comments-post">Posted by Creationist Timmy on April  2, 2005 11:28 AM
+<a href="https://degas.fdisk.net/cgi-bin/mt/mt.cgi?__mode=view&amp;_type=comment&amp;id=22913&amp;blog_id=2"
+class="editcomment" rel="external nofollow" title="Edit Comment">(e)</a>
+<a href="https://degas.fdisk.net/cgi-bin/mt/plugins/Blacklist/mt-blacklist.cgi?__mode=despam&amp;id=22913"
+class="editcomment" rel="external nofollow" title="Despam Comment">(s)</a>
+</p>
+<div class="kw_format">
+
+<p>John Davidson, I loved you on That&rsquo;s Incredible, but your Ignored Evolutionary Hypothesis is not Sound Science.</p>
+
+</div>
+</div>
+<a id="c22914"></a>
+<div class="comments-body" id="comment-22914">
+<h3 class="comments-head"><a href="nature_biologists_snub_kangaroo_court_for_darwin.html#comment-22914">Comment #22914</a></h3>
+<p class="comments-post">Posted by steve on April  2, 2005 11:31 AM
+<a href="https://degas.fdisk.net/cgi-bin/mt/mt.cgi?__mode=view&amp;_type=comment&amp;id=22914&amp;blog_id=2"
+class="editcomment" rel="external nofollow" title="Edit Comment">(e)</a>
+<a href="https://degas.fdisk.net/cgi-bin/mt/plugins/Blacklist/mt-blacklist.cgi?__mode=despam&amp;id=22914"
+class="editcomment" rel="external nofollow" title="Despam Comment">(s)</a>
+</p>
+<div class="kw_format">
+
+<p>I would enjoy it if instead of sending scientists, the NCSE or someone sent, to represent the evolutionist side, a dozen or so textbooks on Genetics, molecular biology, etc. If the &lsquo;court&rsquo; really wants to see the evidence for evolution, that&rsquo;s a vastly more accurate representation than a couple of argumentative biologists.</p>
+
+</div>
+</div>
+<a id="c22922"></a>
+<div class="comments-body" id="comment-22922">
+<h3 class="comments-head"><a href="nature_biologists_snub_kangaroo_court_for_darwin.html#comment-22922">Comment #22922</a></h3>
+<p class="comments-post">Posted by Russell on April  2, 2005 12:38 PM
+<a href="https://degas.fdisk.net/cgi-bin/mt/mt.cgi?__mode=view&amp;_type=comment&amp;id=22922&amp;blog_id=2"
+class="editcomment" rel="external nofollow" title="Edit Comment">(e)</a>
+<a href="https://degas.fdisk.net/cgi-bin/mt/plugins/Blacklist/mt-blacklist.cgi?__mode=despam&amp;id=22922"
+class="editcomment" rel="external nofollow" title="Despam Comment">(s)</a>
+</p>
+<div class="kw_format">
+
+<blockquote class="kw_quote">
+
+<p class="kw_author">steve wrote:</p>
+
+<p>I would enjoy it if instead of sending scientists, the NCSE or someone sent, to represent the evolutionist side, a dozen or so textbooks on Genetics, molecular biology, etc. If the &lsquo;court&rsquo; really wants to see the evidence for evolution, that&rsquo;s a vastly more accurate representation than a couple of argumentative biologists.</p>
+
+</blockquote>
+
+<p>They should send an updated version of <a href="http://www.ncseweb.org/resources/articles/6898_68_gilchrist_1997_the_elu_3_16_2001.asp" rel="nofollow external nofollow">this survey by Gilchrist</a>, together with some level-headed experts to help the KBoE understand its significance.</p>
+
+<p>(Oh, and the NCSE should offer to pay <a href="http://www.pandasthumb.org/pt-archives/000921.html#c22891" rel="nofollow external nofollow">Dr. Davison</a>&lsquo;s airfare and per diem to explain the other side. If his science doesn&rsquo;t quite do the trick, surely his charm offensive will save the day.)</p>
+
+</div>
+</div>
+<a id="c23072"></a>
+<div class="comments-body" id="comment-23072">
+<h3 class="comments-head"><a href="nature_biologists_snub_kangaroo_court_for_darwin.html#comment-23072">Comment #23072</a></h3>
+<p class="comments-post">Posted by <a href="http://www.uvm.edu/~jdavison" rel="nofollow">John A. Davison</a> on April  3, 2005 08:37 AM
+<a href="https://degas.fdisk.net/cgi-bin/mt/mt.cgi?__mode=view&amp;_type=comment&amp;id=23072&amp;blog_id=2"
+class="editcomment" rel="external nofollow" title="Edit Comment">(e)</a>
+<a href="https://degas.fdisk.net/cgi-bin/mt/plugins/Blacklist/mt-blacklist.cgi?__mode=despam&amp;id=23072"
+class="editcomment" rel="external nofollow" title="Despam Comment">(s)</a>
+</p>
+<div class="kw_format">
+
+<p>I would love to debate both the Fundies and the IDists simultaneously because there really is nothing to debate which would be the substance of my contribution, a conclusion which has been made unavoidable by everything we know for certain from taxonomy, paleontology, Mendelian genetics, molecular biology, hundreds of years of plant and animal husbandry and the visible structure of the chromosomes. There has never been an exogenous cause for evolution, a process now terminated And unlikely to restart. To pretend this evidence does not exist is inexcusable.</p>
+
+<p>John A. Davison</p>
+
+</div>
+</div>
+<a id="c23216"></a>
+<div class="comments-body" id="comment-23216">
+<h3 class="comments-head"><a href="nature_biologists_snub_kangaroo_court_for_darwin.html#comment-23216">Comment #23216</a></h3>
+<p class="comments-post">Posted by GT(N)T on April  4, 2005 11:32 AM
+<a href="https://degas.fdisk.net/cgi-bin/mt/mt.cgi?__mode=view&amp;_type=comment&amp;id=23216&amp;blog_id=2"
+class="editcomment" rel="external nofollow" title="Edit Comment">(e)</a>
+<a href="https://degas.fdisk.net/cgi-bin/mt/plugins/Blacklist/mt-blacklist.cgi?__mode=despam&amp;id=23216"
+class="editcomment" rel="external nofollow" title="Despam Comment">(s)</a>
+</p>
+<div class="kw_format">
+
+<p>&ldquo;There has never been an exogenous cause for evolution, a process now terminated And unlikely to restart. To pretend this evidence does not exist is inexcusable.&rdquo;</p>
+
+<p>Simply saying there is evidence for your conjecture doesn&rsquo;t make the conjecture any less strange.  And yes, I&rsquo;ve read your PEH.</p>
+
+</div>
+</div>
+<a id="c23309"></a>
+<div class="comments-body" id="comment-23309">
+<h3 class="comments-head"><a href="nature_biologists_snub_kangaroo_court_for_darwin.html#comment-23309">Comment #23309</a></h3>
+<p class="comments-post">Posted by <a href="http://www.uvm.edu/~jdavison" rel="nofollow">John A. Davison</a> on April  4, 2005 07:37 PM
+<a href="https://degas.fdisk.net/cgi-bin/mt/mt.cgi?__mode=view&amp;_type=comment&amp;id=23309&amp;blog_id=2"
+class="editcomment" rel="external nofollow" title="Edit Comment">(e)</a>
+<a href="https://degas.fdisk.net/cgi-bin/mt/plugins/Blacklist/mt-blacklist.cgi?__mode=despam&amp;id=23309"
+class="editcomment" rel="external nofollow" title="Despam Comment">(s)</a>
+</p>
+<div class="kw_format">
+
+<p>GT(N)T</p>
+
+<p>I realize my statement may seem strange but, <br />
+since both Lamarckism and Darwinism have been thouroughly discredited, there is nothing strange in postulating the only conceivable alternative explanation for the great mystery of evolution. That is just common sense.</p>
+
+<p>I did not say there was evidence for the PEH. Quite the contrary, if you have read the manuscript you must realize that I PRESENTED both indirect and direct evidence for it by referencing the works of others and and their conclusions expressed in their own words. That evidence included the conclusions by Broom, Huxley and Grasse that evolution is indeed no longer in operation as well as Schindewolf&rsquo;s opinion that the environment was not involved. I have been profoundly influenced by these skeptics of the Darwinian model and have done little more than to extend their judgements to what seem to me to be the only reasonable conclusion.</p>
+
+<p>I do not regards the PEH as mere conjecture. I regard it as a new way of looking at the the two greatest mysteries of the biological world, ontogeny and phylogeny. I now am of the strong opinion that, like ontogeny, phylogeny too has resulted from the expression of contained original information which, like ontogeny, has been expressed by progressive internally regulated derepression terminating in cessation. Just as differentaition ceases with the attainment of adulthood, so did evolution terminate with the production of its final product Homo sapiens. Ontogeny presents a wonderful model for phylogeny at least for me if not for others.</p>
+
+<p>John A. Davison</p>
+
+</div>
+</div>
+<a id="c24144"></a>
+<div class="comments-body" id="comment-24144">
+<h3 class="comments-head"><a href="nature_biologists_snub_kangaroo_court_for_darwin.html#comment-24144">Comment #24144</a></h3>
+<p class="comments-post">Posted by sir_toejam on April 10, 2005 12:24 AM
+<a href="https://degas.fdisk.net/cgi-bin/mt/mt.cgi?__mode=view&amp;_type=comment&amp;id=24144&amp;blog_id=2"
+class="editcomment" rel="external nofollow" title="Edit Comment">(e)</a>
+<a href="https://degas.fdisk.net/cgi-bin/mt/plugins/Blacklist/mt-blacklist.cgi?__mode=despam&amp;id=24144"
+class="editcomment" rel="external nofollow" title="Despam Comment">(s)</a>
+</p>
+<div class="kw_format">
+
+<p>fess up, stalking horse.</p>
+
+</div>
+</div>
+<a id="c24208"></a>
+<div class="comments-body" id="comment-24208">
+<h3 class="comments-head"><a href="nature_biologists_snub_kangaroo_court_for_darwin.html#comment-24208">Comment #24208</a></h3>
+<p class="comments-post">Posted by <a href="http://www.uvm.edu/~jdavison" rel="nofollow">John A. Davison</a> on April 10, 2005 05:58 PM
+<a href="https://degas.fdisk.net/cgi-bin/mt/mt.cgi?__mode=view&amp;_type=comment&amp;id=24208&amp;blog_id=2"
+class="editcomment" rel="external nofollow" title="Edit Comment">(e)</a>
+<a href="https://degas.fdisk.net/cgi-bin/mt/plugins/Blacklist/mt-blacklist.cgi?__mode=despam&amp;id=24208"
+class="editcomment" rel="external nofollow" title="Despam Comment">(s)</a>
+</p>
+<div class="kw_format">
+
+<p>Not a chance toeJam. What you see is what you get.</p>
+
+<p>John A. Davison</p>
+
+</div>
+</div>
+
+
+<script type="text/javascript" language="javascript">
+<!--
+/* Enable Jump to Last Comment */
+function jumpComment() {
+    var now = new Date();
+    fixDate(now);
+    now.setTime(now.getTime() + 7 * 24 * 60 * 60 * 1000);
+    var cid = getCookie('last_cid');
+    setCookie('last_cid', '#comment-24208', now,'/archives/2005/03/nature_biologists_snub_kangaroo_court_for_darwin.html','','');
+    if( window.location.hash == '#new-comments') {
+        window.location.hash = (cid != '') ? cid : '#comments';
+    }
+}
+onInit.push(jumpComment);
+//-->
+</script>
+
+
+
+<a id="postcomment"></a>
+<div class="comments-body">
+<h3 class="comments-head">Post a Comment</h3>
+<form method="post" action="http://degas.fdisk.net/cgi-bin/mt/mt-comments.cgi" id="comments_form" name="comments_form"  accept-charset="utf-8" onsubmit="if (this.bakecookie[0].checked) rememberMe(this)">
+<input type="hidden" id="static" name="static" value="1" />
+<input type="hidden" id="entry_id" name="entry_id" value="921" />
+<p>Use <a href="http://www.dererumnatura.us/archives/2005/08/kwickxml_syntax.html" rel="external">KwickXML formatting</a> to markup your comments: &lt;b&gt;, &lt;i&gt;, &lt;u&gt; &lt;s&gt;, &lt;quote author="..."&gt;, &lt;url href="..."&gt;, etc.   You may need to refresh before you will see your comment.</p>
+<table class="commentarea" summary="comment form"><tr>
+<td class="leftcol">
+<p><label for="author">Name:</label><br />
+<input tabindex="1" id="author" name="author" size="25" /></p>
+<p><label for="email">Email Address:</label><br />
+<input tabindex="2" id="email" name="email" size="25" /></p>
+<p><label for="url">URL:</label><br />
+<input tabindex="3" id="url" name="url" size="25" /></p>
+<p>Remember personal info?<br />
+<input type="radio" id="bakecookie" name="bakecookie" value="Remember Info" /><label for="bakecookie">Yes</label><input type="radio" id="forget" name="bakecookie" onclick="forgetMe(this.form)" value="Forget Info" style="margin-left: 15px;" /><label for="forget">No</label></p>
+<p><input style="font-weight: bold;" type="submit" id="preview" name="preview" value="&nbsp;Preview&nbsp;" />&nbsp;&nbsp; 
+<input  type="submit" id="post" name="post" value="&nbsp;Post&nbsp;" />
+<input type="button" value="Check Spelling" onClick="openSpellChecker();" /></p>
+</td>
+<td class="rightcol">
+<div><label for="text">Comments:</label><br />
+<textarea tabindex="4" id="text" name="text" rows="15" cols="50"></textarea></div>
+</td>
+</tr></table>
+
+</form>
+<script type="text/javascript" language="javascript">
+document.comments_form.email.value = getCookie("mtcmtmail");
+document.comments_form.author.value = getCookie("mtcmtauth");
+document.comments_form.url.value = getCookie("mtcmthome");
+if (getCookie("mtcmtauth")) {
+    document.comments_form.bakecookie[0].checked = true;
+} else {
+    document.comments_form.bakecookie[1].checked = true;
+}
+</script>
+</div>
+
+
+
+<a id="pings"></a>
+<div class="comments-body" id="ping-870">
+<h3 class="comments-head"><a href="nature_biologists_snub_kangaroo_court_for_darwin.html#ping-870" rel="nofollow">Trackback: Send in the clowns</a></h3>
+<p class="comments-post">Posted by <a href="http://www.pandasthumb.org/pt-archives/000939.html" rel="nofollow">The Panda's Thumb</a> on April  5, 2005 10:46 PM</p>
+<p>In the I am not making this stuff up category, the ID crowd is planning on sending a battalion of pseudoscientists to Kansas this May for the upcoming ID Kangaroo Court.&nbsp; On the front page of the Intelligent Design Network&#8217;s...</p>
+</div>
+
+
+
+</div>
+</div>
+<br style="clear: both;" />
+</div>
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="robots" content="index,nofollow"><title>Coling04Papers - UW EE SSLI Wiki</title>
+
+
+<script type="text/javascript" src="index_files/common.js"></script>
+
+<script type="text/javascript">
+<!--// common functions
+
+// We keep here the state of the search box
+searchIsDisabled = false;
+
+function searchChange(e) {
+    // Update search buttons status according to search box content.
+    // Ignore empty or whitespace search term.
+    var value = e.value.replace(/\s+/, '');
+    if (value == '' || searchIsDisabled) { 
+        searchSetDisabled(true);
+    } else {
+        searchSetDisabled(false);
+    }
+}
+
+function searchSetDisabled(flag) {
+    // Enable or disable search
+    document.getElementById('fullsearch').disabled = flag;
+    document.getElementById('titlesearch').disabled = flag;
+}
+
+function searchFocus(e) {
+    // Update search input content on focus
+    if (e.value == 'Search') {
+        e.value = '';
+        e.className = '';
+        searchIsDisabled = false;
+    }
+}
+
+function searchBlur(e) {
+    // Update search input content on blur
+    if (e.value == '') {
+        e.value = 'Search';
+        e.className = 'disabled';
+        searchIsDisabled = true;
+    }
+}
+
+function actionsMenuInit(title) {
+    // Initialize action menu
+    for (i = 0; i < document.forms.length; i++) {
+        var form = document.forms[i];
+        if (form.className == 'actionsmenu') {
+            // Check if this form needs update
+            var div = form.getElementsByTagName('div')[0];
+            var label = div.getElementsByTagName('label')[0];
+            if (label) {
+                // This is the first time: remove label and do buton.
+                div.removeChild(label);
+                var dobutton = div.getElementsByTagName('input')[0];
+                div.removeChild(dobutton);
+                // and add menu title
+                var select = div.getElementsByTagName('select')[0];
+                var item = document.createElement('option');
+                item.appendChild(document.createTextNode(title));
+                item.value = 'show';
+                select.insertBefore(item, select.options[0]);
+                select.selectedIndex = 0;
+            }
+        }
+    }
+}
+//-->
+</script>
+
+
+<link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="index_files/common.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="screen" href="index_files/screen.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="print" href="index_files/print.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="projection" href="index_files/projection.css">
+
+
+<link rel="Start" href="https://ssli.ee.washington.edu/ssliwiki/FrontPage">
+<link rel="Alternate" title="Wiki Markup" href="https://ssli.ee.washington.edu/ssliwiki/Coling04Papers?action=raw">
+<link rel="Alternate" media="print" title="Print View" href="https://ssli.ee.washington.edu/ssliwiki/Coling04Papers?action=print">
+<link rel="Search" href="https://ssli.ee.washington.edu/ssliwiki/FindPage">
+<link rel="Index" href="https://ssli.ee.washington.edu/ssliwiki/TitleIndex">
+<link rel="Glossary" href="https://ssli.ee.washington.edu/ssliwiki/WordIndex">
+<link rel="Help" href="https://ssli.ee.washington.edu/ssliwiki/HelpOnFormatting"></head><body dir="ltr" lang="en">
+
+
+
+<div id="header">
+<div id="logo"><a href="https://ssli.ee.washington.edu/ssliwiki/FrontPage"><img src="index_files/ssliwiki.png" alt="SSLIWiki"></a></div>
+
+<form id="searchform" method="get" action="">
+<div>
+<input name="action" value="fullsearch" type="hidden">
+<input name="context" value="180" type="hidden">
+<label style="display: none;" for="searchinput">Search:</label>
+<input class="disabled" id="searchinput" name="value" value="" size="20" onfocus="searchFocus(this)" onblur="searchBlur(this)" onkeyup="searchChange(this)" onchange="searchChange(this)" alt="Search" type="text">
+<input disabled="disabled" id="titlesearch" name="titlesearch" value="Titles" alt="Search Titles" type="submit">
+<input disabled="disabled" id="fullsearch" name="fullsearch" value="Text" alt="Search Full Text" type="submit">
+</div>
+</form>
+<script type="text/javascript">
+<!--// Initialize search form
+var f = document.getElementById('searchform');
+f.getElementsByTagName('label')[0].style.display = 'none';
+var e = document.getElementById('searchinput');
+searchChange(e);
+searchBlur(e);
+//-->
+</script>
+
+<ul id="username"><li><a href="https://ssli.ee.washington.edu/ssliwiki/Coling04Papers?action=login" id="login">Login</a></li></ul>
+<div id="locationline">
+
+
+<ul id="pagelocation">
+<li><a class="backlink" title="Click to do a full-text search for this title" href="https://ssli.ee.washington.edu/ssliwiki/Coling04Papers?action=fullsearch&amp;value=linkto%3A%22Coling04Papers%22&amp;context=180">Coling04Papers</a></li>
+</ul>
+
+</div>
+
+<ul id="iconbar">
+<li><a href="https://ssli.ee.washington.edu/ssliwiki/Coling04Papers?action=edit"><img alt="Edit" src="index_files/moin-edit.png" title="Edit" height="12" width="12"></a></li>
+<li><a href="https://ssli.ee.washington.edu/ssliwiki/Coling04Papers"><img alt="View" src="index_files/moin-show.png" title="View" height="13" width="12"></a></li>
+<li><a href="https://ssli.ee.washington.edu/ssliwiki/Coling04Papers?action=diff"><img alt="Diffs" src="index_files/moin-diff.png" title="Diffs" height="11" width="15"></a></li>
+<li><a href="https://ssli.ee.washington.edu/ssliwiki/Coling04Papers?action=info"><img alt="Info" src="index_files/moin-info.png" title="Info" height="11" width="12"></a></li>
+<li><a href="https://ssli.ee.washington.edu/ssliwiki/Coling04Papers?action=subscribe"><img alt="Subscribe" src="index_files/moin-subscribe.png" title="Subscribe" height="10" width="14"></a></li>
+<li><a href="https://ssli.ee.washington.edu/ssliwiki/Coling04Papers?action=raw"><img alt="Raw" src="index_files/moin-raw.png" title="Raw" height="13" width="12"></a></li>
+<li><a href="https://ssli.ee.washington.edu/ssliwiki/Coling04Papers?action=print"><img alt="Print" src="index_files/moin-print.png" title="Print" height="14" width="16"></a></li>
+</ul>
+
+
+<ul id="navibar">
+<li class="wikilink"><a href="https://ssli.ee.washington.edu/ssliwiki/FrontPage">FrontPage</a></li><li class="wikilink"><a href="https://ssli.ee.washington.edu/ssliwiki/RecentChanges">RecentChanges</a></li><li class="wikilink"><a href="https://ssli.ee.washington.edu/ssliwiki/FindPage">FindPage</a></li><li class="wikilink"><a href="https://ssli.ee.washington.edu/ssliwiki/HelpContents">HelpContents</a></li><li class="current"><a href="https://ssli.ee.washington.edu/ssliwiki/Coling04Papers">Coling04Papers</a></li>
+</ul>
+
+
+</div>
+
+
+
+<div id="page" dir="ltr" lang="en">
+
+<div dir="ltr" id="content" lang="en"><span class="anchor" id="top"></span>
+<span class="anchor" id="line-1"></span><p class="line874">Here is a list of Coling 2004 papers that may be of interest. <span class="anchor" id="line-2"></span>The proceedings can be found in the SSLI online proceedings ( <a class="http" href="http://ssli.ee.washington.edu/proceedings/coling04/">http://ssli.ee.washington.edu/proceedings/coling04/</a> ) <span class="anchor" id="line-3"></span>Papers marked with * are especially interesting, in my opinion. --Kevin <span class="anchor" id="line-4"></span><span class="anchor" id="line-5"></span></p><p class="line867"></p><div class="table-of-contents"><p class="table-of-contents-heading">Contents</p><ol><li><a href="#head-8d49444300abd2b90f16bd07f984e1906c015e7b">MACHINE TRANSLATION: MODELS</a></li><li><a href="#head-6cd6921e4e0e24d99d7eeb8dd8e17bf9e70e6e0f">MACHINE TRANSLATION: EVALUATION</a></li><li><a href="#head-6489adfcd20e030debb57d880aa001aedfe201e1">PARALLEL/PARAPHRASE CORPORA, CORPORA CONSTRUCTION</a></li><li><a href="#head-705d6ff496c41f03ed4fab3c833e39b12cc83398">LANGUAGE MODELING</a></li><li><a href="#head-20d423c770391e2dd594a01bd2f4993705e7e3bf">WORD SIMILARITY, WORD SENSE DISAMBIGUATION</a></li><li><a href="#head-d96ae451241154f4ea41b709142a1f45b7fdefce">TAGGING AND HIGHER LEVEL NLP (DEEP PARSING, DISCOURSE, SUMMARIZATION)</a></li><li><a href="#head-bb0c2332e957e746e0fcc41bea28e3090963e95d">MACHINE LEARNING STUFF</a></li><li><a href="#head-39b84bb9e0231e5d692d43ea34e60788cffb4b51">ISSUES IN CHINESE/JAPANESE NLP</a></li><li><a href="#head-1382f3254f1c8e199cf1e5da1d9f92c38832d847">RELATED TO SPEECH RECOGNITION/SYNTHESIS</a></li></ol></div> <span class="anchor" id="line-6"></span><span class="anchor" id="line-7"></span><p class="line867">
+</p><h3 id="head-8d49444300abd2b90f16bd07f984e1906c015e7b">MACHINE TRANSLATION: MODELS</h3>
+<span class="anchor" id="line-8"></span><p class="line867"><span class="anchor" id="line-9"></span></p><pre>Improved Word Alignment Using a Symmetric Lexicon Model 
+<span class="anchor" id="line-10"></span>Richard Zens, Evgeny Matusov and Hermann Ney
+<span class="anchor" id="line-11"></span>
+<span class="anchor" id="line-12"></span>Example-based Machine Translation Based on Syntactic Transfer with Statistical Models 
+<span class="anchor" id="line-13"></span>Kenji Imamura, Hideo Okuma, Taro Watanabe and Eiichiro Sumita
+<span class="anchor" id="line-14"></span>
+<span class="anchor" id="line-15"></span>Reordering Constraints for Phrase-Based Statistical Machine Translation 
+<span class="anchor" id="line-16"></span>Richard Zens, Hermann Ney, Taro Watanabe and Eiichiro Sumita
+<span class="anchor" id="line-17"></span>
+<span class="anchor" id="line-18"></span>*Syntax-Based Alignment: Supervised or Unsupervised? 
+<span class="anchor" id="line-19"></span>Hao Zhang and Daniel Gildea
+<span class="anchor" id="line-20"></span>
+<span class="anchor" id="line-21"></span>*Improving a Statistical MT System with Automatically Learned Rewrite Patterns 
+<span class="anchor" id="line-22"></span>Fei Xia and Michael McCord
+<span class="anchor" id="line-23"></span>
+<span class="anchor" id="line-24"></span>*A Path-based Transfer Model for Machine Translation 
+<span class="anchor" id="line-25"></span>Dekang Lin
+<span class="anchor" id="line-26"></span>
+<span class="anchor" id="line-27"></span>*Linguistically Informed Statistical Models of Constituent Structure for Ordering in Sentence Realization 
+<span class="anchor" id="line-28"></span>Eric Ringger, Michael Gamon, Robert C. Moore, David Rojas, Martine Smets and Simon Corston-Oliver
+<span class="anchor" id="line-29"></span>
+<span class="anchor" id="line-30"></span>A Unified Approach in Speech-to-Speech Translation: Integrating Features of Speech recognition and Machine Translation 
+<span class="anchor" id="line-31"></span>Ruiqiang Zhang, Genichiro Kikui, Hirofumi Yamamoto, Frank Soong, Taro Watnabe and Wai Kit Lo
+<span class="anchor" id="line-32"></span></pre><span class="anchor" id="line-33"></span><p class="line867">
+</p><h3 id="head-6cd6921e4e0e24d99d7eeb8dd8e17bf9e70e6e0f">MACHINE TRANSLATION: EVALUATION</h3>
+<span class="anchor" id="line-34"></span><p class="line867"><span class="anchor" id="line-35"></span></p><pre>Extending MT evaluation tools with translation complexity metrics 
+<span class="anchor" id="line-36"></span>Bogdan Babych, Debbie Elliott and Anthony Hartley
+<span class="anchor" id="line-37"></span>
+<span class="anchor" id="line-38"></span>*Confidence Estimation for Machine Translation 
+<span class="anchor" id="line-39"></span>John Blatz, Erin Fitzgerald, George Foster, Simona Gandrabur, Cyril Goutte, Alex Kulesza, Alberto Sanchis and Nicola Ueffing
+<span class="anchor" id="line-40"></span>
+<span class="anchor" id="line-41"></span>*ORANGE: a Method for Evaluating Automatic Evaluation Metrics for Machine Translation 
+<span class="anchor" id="line-42"></span>Chin-Yew Lin and Franz Josef Och
+<span class="anchor" id="line-43"></span></pre><span class="anchor" id="line-44"></span><p class="line867">
+</p><h3 id="head-6489adfcd20e030debb57d880aa001aedfe201e1">PARALLEL/PARAPHRASE CORPORA, CORPORA CONSTRUCTION</h3>
+<span class="anchor" id="line-45"></span><p class="line867"><span class="anchor" id="line-46"></span></p><pre>*Unsupervised Construction of Large Paraphrase Corpora: Exploiting Massively Parallel News Sources
+<span class="anchor" id="line-47"></span>Bill Dolan, Chris Quirk and Chris Brockett
+<span class="anchor" id="line-48"></span>
+<span class="anchor" id="line-49"></span>*Text Induced Spelling Correction 
+<span class="anchor" id="line-50"></span>Martin Reynaert
+<span class="anchor" id="line-51"></span>
+<span class="anchor" id="line-52"></span>Multi-level Bootstrapping For Extracting Parallel Sentences From a Quasi-Comparable Corpus 
+<span class="anchor" id="line-53"></span>Pascale Fung and Percy Cheung
+<span class="anchor" id="line-54"></span>
+<span class="anchor" id="line-55"></span></pre><span class="anchor" id="line-56"></span><p class="line867">
+</p><h3 id="head-705d6ff496c41f03ed4fab3c833e39b12cc83398">LANGUAGE MODELING</h3>
+<span class="anchor" id="line-57"></span><p class="line867"><span class="anchor" id="line-58"></span></p><pre>Language Model Adaptation for Statistical Machine Translation via Structured Query Models 
+<span class="anchor" id="line-59"></span>Bing Zhao, Matthias Eck and Stephan Vogel
+<span class="anchor" id="line-60"></span>
+<span class="anchor" id="line-61"></span>*Statistical Language Modeling with Performance Benchmarks using Various Levels of Syntactic-Semantic Information 
+<span class="anchor" id="line-62"></span>Dharmendra Kanejiya, Arun Kumar and Surendra Prasad
+<span class="anchor" id="line-63"></span>
+<span class="anchor" id="line-64"></span></pre><span class="anchor" id="line-65"></span><p class="line867">
+</p><h3 id="head-20d423c770391e2dd594a01bd2f4993705e7e3bf">WORD SIMILARITY, WORD SENSE DISAMBIGUATION</h3>
+<span class="anchor" id="line-66"></span><p class="line867"><span class="anchor" id="line-67"></span></p><pre>Feature Vector Quality and Distributional Similarity 
+<span class="anchor" id="line-68"></span>Maayan Geffet and Ido Dagan
+<span class="anchor" id="line-69"></span>
+<span class="anchor" id="line-70"></span>Cognate Mapping - A Heuristic Strategy for the Semi-Supervised Acquisition of a Spanish Lexicon from a Portuguese Seed Lexicon 
+<span class="anchor" id="line-71"></span>Stefan Schulz, Kornel Markó, Eduardo Sbrissia, Percy Nohama and Udo Hahn
+<span class="anchor" id="line-72"></span>
+<span class="anchor" id="line-73"></span>*Identification of Confusable Drug Names: A New Approach and Evaluation Methodology 
+<span class="anchor" id="line-74"></span>Grzegorz Kondrak and Bonnie Dorr
+<span class="anchor" id="line-75"></span>
+<span class="anchor" id="line-76"></span>PageRank on Semantic Networks, with Application to Word Sense Disambiguation 
+<span class="anchor" id="line-77"></span>Rada Mihalcea, Paul Tarau and Elizabeth Figa
+<span class="anchor" id="line-78"></span>
+<span class="anchor" id="line-79"></span></pre><span class="anchor" id="line-80"></span><p class="line867">
+</p><h3 id="head-d96ae451241154f4ea41b709142a1f45b7fdefce">TAGGING AND HIGHER LEVEL NLP (DEEP PARSING, DISCOURSE, SUMMARIZATION)</h3>
+<span class="anchor" id="line-81"></span><p class="line867"><span class="anchor" id="line-82"></span></p><pre>*Combining Hierarchical Clustering and Machine Learning to Predict High-Level Discourse Structure 
+<span class="anchor" id="line-83"></span>Caroline Sporleder and Alex Lascarides
+<span class="anchor" id="line-84"></span>
+<span class="anchor" id="line-85"></span>Modern Natural Language Interfaces to Databases: Composing Statistical Parsing with Semantic Tractability 
+<span class="anchor" id="line-86"></span>Ana-Maria Popescu, Alex Armanasu, Oren Etzioni, David Ko and Alexander Yates
+<span class="anchor" id="line-87"></span>
+<span class="anchor" id="line-88"></span>Skeletons in the parser: Using a shallow parser to improve deep parsing 
+<span class="anchor" id="line-89"></span>Mary Swift, James Allen and Daniel Gildea
+<span class="anchor" id="line-90"></span>
+<span class="anchor" id="line-91"></span>Generating Overview Summaries of Ongoing Email Thread Discussions 
+<span class="anchor" id="line-92"></span>Stephen Wan and Kathy McKeown
+<span class="anchor" id="line-93"></span>
+<span class="anchor" id="line-94"></span>Tagging with Hidden Markov Models Using Ambiguous Tags 
+<span class="anchor" id="line-95"></span>Alexis Nasr, Frédéric Bechét and Alexandra Volanschi
+<span class="anchor" id="line-96"></span>
+<span class="anchor" id="line-97"></span>Wide-Coverage Semantic Representations from a CCG Parser 
+<span class="anchor" id="line-98"></span>Johan Bos, Stephen Clark, Mark Steedman, James R. Curran and Julia Hockenmaier
+<span class="anchor" id="line-99"></span>
+<span class="anchor" id="line-100"></span></pre><span class="anchor" id="line-101"></span><p class="line867">
+</p><h3 id="head-bb0c2332e957e746e0fcc41bea28e3090963e95d">MACHINE LEARNING STUFF</h3>
+<span class="anchor" id="line-102"></span><p class="line867"><span class="anchor" id="line-103"></span></p><pre>Partially Distribution-Free Learning of Regular Languages from Positive Samples 
+<span class="anchor" id="line-104"></span>Alexander Clark and Franck Thollard
+<span class="anchor" id="line-105"></span>
+<span class="anchor" id="line-106"></span>*Why Nitpicking Works: Evidence for Occam's Razor in Error Correctors 
+<span class="anchor" id="line-107"></span>Dekai Wu, Grace Ngai and Marine Carpuat
+<span class="anchor" id="line-108"></span></pre><span class="anchor" id="line-109"></span><p class="line867">
+</p><h3 id="head-39b84bb9e0231e5d692d43ea34e60788cffb4b51">ISSUES IN CHINESE/JAPANESE NLP</h3>
+<span class="anchor" id="line-110"></span><p class="line867"><span class="anchor" id="line-111"></span></p><pre>Chinese and Japanese Word Segmentation Using Word-Level and Character-Level Information 
+<span class="anchor" id="line-112"></span>Tetsuji Nakagawa
+<span class="anchor" id="line-113"></span>
+<span class="anchor" id="line-114"></span>Chinese Segmentation and New Word Detection using Conditional Random Fields 
+<span class="anchor" id="line-115"></span>Fuchun Peng, Fangfang Feng and Andrew McCallum
+<span class="anchor" id="line-116"></span>
+<span class="anchor" id="line-117"></span>*A hybrid back-transliteration system for Japanese 
+<span class="anchor" id="line-118"></span>Slaven Bilac and Hozumi Tanaka
+<span class="anchor" id="line-119"></span></pre><span class="anchor" id="line-120"></span><span class="anchor" id="line-121"></span><p class="line867">
+</p><h3 id="head-1382f3254f1c8e199cf1e5da1d9f92c38832d847">RELATED TO SPEECH RECOGNITION/SYNTHESIS</h3>
+<span class="anchor" id="line-122"></span><p class="line867"><span class="anchor" id="line-123"></span></p><pre>Thai Spelling Recognition Using a Continuous Speech Corpus 
+<span class="anchor" id="line-124"></span>Chutima Pisarn and Thanaruk Theeramunkong
+<span class="anchor" id="line-125"></span>
+<span class="anchor" id="line-126"></span>New Statistical Methods for Phrase Break Prediction 
+<span class="anchor" id="line-127"></span>Helmut Schmid and Michaela Atterer
+<span class="anchor" id="line-128"></span>
+<span class="anchor" id="line-129"></span>*Analysis and Detection of Reading Miscues for Interactive Literacy Tutors 
+<span class="anchor" id="line-130"></span>Katherine Lee, Andreas Hagen, Nicholas Romanyshyn, Sean Martin and Bryan Pellom
+<span class="anchor" id="line-131"></span></pre><span class="anchor" id="line-132"></span><span class="anchor" id="bottom"></span></div><p id="pageinfo" class="info" dir="ltr" lang="en">Coling04Papers  (last edited 2004-09-01 23:47:09 by <span title="KevinDuh @ sparrow.ee.washington.edu[128.95.167.68]"><a generated="True" href="https://ssli.ee.washington.edu/ssliwiki/KevinDuh" title="KevinDuh @ sparrow.ee.washington.edu[128.95.167.68]">KevinDuh</a></span>)</p>
+
+<div id="pagebottom"></div>
+</div>
+
+
+<div id="footer"><ul class="editbar"><li><span class="disabled">Immutable Page</span></li></ul><p><a href="https://ssli.ee.washington.edu/ssliwiki/Coling04Papers?action=refresh">DeleteCache</a> (cached 2007-02-26 17:12:17)</p><p>Or try one of these actions: <a href="https://ssli.ee.washington.edu/ssliwiki/Coling04Papers?action=AttachFile">Attach File</a>, <a href="https://ssli.ee.washington.edu/ssliwiki/Coling04Papers?action=Despam">Despam</a>, <a href="https://ssli.ee.washington.edu/ssliwiki/Coling04Papers?action=LikePages">Like Pages</a>, <a href="https://ssli.ee.washington.edu/ssliwiki/Coling04Papers?action=LocalSiteMap">Local Site Map</a>, <a href="https://ssli.ee.washington.edu/ssliwiki/Coling04Papers?action=MyPages">My Pages</a>, <a href="https://ssli.ee.washington.edu/ssliwiki/Coling04Papers?action=PackagePages">Package Pages</a>, <a href="https://ssli.ee.washington.edu/ssliwiki/Coling04Papers?action=RenderAsDocbook">Render As Docbook</a>, <a href="https://ssli.ee.washington.edu/ssliwiki/Coling04Papers?action=SpellCheck">Spell Check</a>, <a href="https://ssli.ee.washington.edu/ssliwiki/Coling04Papers?action=SubscribeUser">Subscribe User</a></p>
+</div>
+<ul id="credits">
+<li><a href="http://moinmoin.wikiwikiweb.de/">MoinMoin Powered</a></li><li><a href="http://www.python.org/">Python Powered</a></li><li><a href="http://validator.w3.org/check?uri=referer">Valid HTML 4.01</a></li>
+</ul>
+
+
+</body></html>

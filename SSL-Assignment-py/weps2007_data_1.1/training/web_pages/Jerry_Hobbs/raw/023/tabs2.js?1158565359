@@ -1,0 +1,35 @@
+function expandContent(a,t,biz){
+	if (document.getElementById){
+		 unHighlightTabs(t);
+		var biz = biz?true:false;
+		highlightTab(a,biz);
+		return false;
+	} else {
+		return true;
+	}
+}
+
+function highlightTab(a,biz){
+	p = a.parentNode?a.parentNode:(a.parentElement?a.parentElement:null);
+	var biz = biz?true:false;
+	if (biz) {
+		a.style.background="#246";
+	} else {
+		a.style.background="#009";
+	}
+	p.style.borderColor="#000";
+	p.style.background="#C00";
+}
+
+function unHighlightTabs(t){
+	var tabs=$(t);
+	tabobjitems=tabs.getElementsByTagName("LI");
+	for (i=0; i<tabobjitems.length; i++){
+		tabobjitems[i].style.borderColor="#678";
+		tabobjitems[i].style.background="#ABD";
+	}
+	tabobjlinks=tabs.getElementsByTagName("A");
+	for (i=0; i<tabobjlinks.length; i++){
+		tabobjlinks[i].style.background="#68C";
+	}
+}

@@ -1,0 +1,528 @@
+/*
+index heading        style=.heading
+index text           style=.indextext
+special heading      style=.specialheading (ie. conference box)
+sub heading          style=.subheading     (ie. paragraph heading) example membership page
+
+publication title    style=.pubtitle
+publication text     style=.pubtext
+publication by_line  style=.detail
+publication date     style=.date
+footer text          style=.
+slogan		     style=.slogan
+*/
+
+H2.title
+   { color: #036;
+     font-weight:bold;
+     font-size:16px;
+     font-family:verdana,helvetica,sans-serif;
+}
+.mainheading 
+   { color:#3300cc;
+     font-size:medium; 
+     font-family:verdana,helvetica,sans-serif;
+     text-align:left }
+
+p {
+	color:#000;
+	font-size:11px;
+	font-family: Arial, Helvetica, sans-serif
+}
+/* star indicating rquired field in /education/courses/reg.php */
+.star {
+	color:red;
+	font-size:11px;
+	font-family:Arial,Helvetica,sans-serif;
+}
+/* format border of table in /education/courses/reg.php */	 
+.regformtable {
+	background:#eeeeee;
+	border-color:#000000;
+	border-width:1px;
+	border-style:dotted;
+}
+.admintable {
+	background:#eeeeee;
+	border-color:#000080;
+	border-width:1px;
+	border-style:solid;
+}	 
+.admintabletd {
+	font-family:verdana,arial;
+	font-weight:normal;
+	font-size:8px;
+	color:#9400D3;
+}
+/* format error text for reuired fields in /education/courses/reg.php */	 
+.regformerror {
+	color:red;
+	font-size:14px;
+	font-family:arial,sans-serif;
+}
+/* format the table cells in /education/courses/reg.php */
+.regformtd {
+	font-family:verdana,arial;
+	font-weight:normal;
+	font-size:11px;
+	color:#747474;
+}	 
+/* format the fields in /education/courses/reg.php */
+.regforminput {
+	text-align:left;
+	font-family:sans-serif;
+	font-weight:normal;
+	font-size:11px;
+	color:#0000ff;
+	background:#ffffff;
+}
+.detail {
+	color: #000; 
+	font-size:11px; 
+	font-weight: normal;
+	font-family: sans-serif,Arial;
+}
+.detailbold {
+	color: #000; 
+	font-size:11px; 
+	font-weight: normal;
+	font-family: sans-serif,Arial;
+	font-weight: bold;  
+}
+.slogan 
+   { color:#000080; 
+     font-weight:bold; 
+     font-size: small; 
+     font-family: verdana,Arial, Helvetica, sans-serif; }
+.price {
+	color:#003366; 
+	font-style:normal;
+	font-weight:normal;
+	font-size:8pt;
+	font-family:Arial,Geneva,Helvetica,sans-serif; 
+	text-align:right;
+}
+.heading {
+	font-family: verdana,Arial, Helvetica, sans-serif; 
+	color:#000080; 
+	font-weight:bold; 
+	font-size:14px; 
+	text-align:left;
+}
+.heading2 {
+	font-family: verdana,Arial, Helvetica, sans-serif; 
+	color:#000000; 
+	font-weight:bold; 
+	font-size:14px; 
+	text-align:left;
+}
+.subheading3 { 
+	font-family:verdana,Arial, Helvetica, sans-serif;
+	color:#000080;
+	font-size:11px;
+	font-weight:bold;
+	text-align:left;
+       text-decoration:none;
+}
+.subheading3 A:visited
+   { color: 00008B; 
+     font-style: normal; 
+     font-size: x-small; 
+     line-height: normal; 
+     font-family: Verdana, Arial, Helvetica, sans-serif;
+     text-decoration: none }
+.subheading3 A:active
+   { font-style: normal;
+     font-size: x-small;
+     line-height: normal; 
+     font-family: Verdana, Arial, Helvetica, sans-serif;
+     text-decoration: none;
+     color: FF4500; }
+.subheading3 A:hover
+   { font-style: normal;
+     font-size: x-small;
+     line-height: normal; 
+     font-family: Verdana, Arial, Helvetica, sans-serif; 
+     text-decoration: none;
+     color: FF4500; }
+.subheading2 { 
+	font-family:verdana,Arial, Helvetica, sans-serif;
+	color:#800000;
+	font-size:11px;
+	font-weight:bold;
+	text-align:left;
+}
+.subheading { 
+	font-family:verdana,Arial, Helvetica, sans-serif;
+	color:#000080;
+	font-size:11px;
+	font-weight:bold;
+	text-align:left;
+}
+.footnote { 
+	color:#0000cc; 
+	font-size:9px; 
+	font-weight: normal;
+	font-family:Arial, Helvetica, sans-serif; 
+	text-align:left; 
+}
+.programcomponent A:link {
+	color:#000; 
+	font-size:10px; 
+	font-family:Verdana,Arial,Helvetica; 
+	text-align:left; 
+}
+.programcomponent A:visited	{
+	color: #000080; 
+	font-size:10px; 
+	font-family:Verdana, Arial, Helvetica; 
+	text-align:left;
+}
+.programcomponent A:hover
+   { color:#990000;
+     font-size:10px;
+     font-family:Verdana,Arial,Helvetica;
+     text-align:left;
+}
+.descriptionsmall A:link {
+	color:#000; 
+	font-size:9px; 
+	font-family:Verdana,Arial,Helvetica; 
+	text-align:left; 
+	text-decoration:none;
+}
+.descriptionsmall A:visited	{
+	color: #000080; 
+	font-size:9px; 
+	font-family:Verdana, Arial, Helvetica; 
+	text-align:left;
+	text-decoration: none;
+}
+.descriptionsmall A:hover
+   { color:#990000;
+     font-size:9px;
+     font-family:Verdana,Arial,Helvetica;
+     text-align:left;
+     text-decoration:underline; }
+
+.descriptionsmall {
+	color:#000; 
+	font-size:9px;
+	font-family:sans-sarif,verdana,arial,helvetica; 
+	text-align:left; 
+	text-decoration:none;
+}
+.description {
+	color:#000; 
+	font-size:x-small; 
+	font-family:Verdana, Arial, Helvetica; 
+	text-align:justify;
+
+}
+.pubdescriptionsmall A:visited {
+	color: #0000FF;
+	font-size:10px;
+	font-family:verdana, Arial, Helvetica;
+	font-weight:normal;
+} 
+
+.pubdescriptionsmall {
+	color: #000; 
+	font-size:10px; 
+	font-family:verdana,Arial, Helvetica;
+	font-weight:normal;
+}
+.pubdescription A:visited {
+	color: #0000FF;
+	font-size:11px;
+	font-family:verdana, Arial, Helvetica;
+	font-weight:normal;
+} 
+
+.pubdescription {
+	color: #000; 
+	font-size:11px; 
+	font-family:verdana,Arial, Helvetica;
+	font-weight:normal;
+}
+.pubtitle {
+	color:#036;
+	font-weight:bold;
+       font-size:14px;
+	font-family:verdana,Arial,Helvetica,sans-serif;
+	text-align:left;
+	margin-left:16px;
+}
+.pubtext {
+	font-family:sans-serif,helvetica,Verdana,Arial;
+	color:#000000; 
+	font-size:12px; 
+	margin-left:20px;
+}
+.bullet {
+	color:#000; 
+	font-size: 12px; 
+	font-family: sans-serif,helvetica,Verdana,Arial;
+	font-weight:normal;
+}
+.item {
+	color: #551a8b; 
+	font-size: x-small; 
+	font-family: Arial, Helvetica;
+	text-align:left;
+}
+.date {
+	color:#551a8b; 
+	font-size:11px; 
+	font-family:sans-sarif,Verdana,Arial,Helvetica;
+	text-align:left;
+}
+.graydate {
+	color:#808080; 
+	font-size:10px; 
+	font-family:sans-sarif,Verdana,Arial,Helvetica;
+	text-align:left;
+}
+.specialheading
+   { color:#036; 
+     font-size:medium; 
+     font-family:Arial, Helvetica, sans-serif;
+     text-align:center; }
+.apriheadertr {
+	color:#336699;
+	background: #eeeeee; 
+	font-weight:bold; 
+	font-size: x-small; 
+	font-family: verdana,Arial, Helvetica, sans-serif;
+}
+.headertr {
+	color:#999900;
+	background: #eeeeee; 
+	font-weight:bold; 
+	font-size: x-small; 
+	font-family:verdana,Arial,Helvetica,sans-serif;
+}
+.linktr {
+	background: #ffffff;
+}
+.whitesmall A:link 
+   { color:#666666;
+     font-style: normal; 
+     font-weight: 500;
+     font-size: xx-small;
+     line-height: normal;
+     font-family: Verdana, Arial, Helvetica, sans-serif; 
+     text-decoration: none }
+.whitesmall A:visited
+   { color:#666666; 
+     font-style: normal; 
+     font-size: xx-small; 
+     line-height: normal; 
+     font-family: Verdana, Arial, Helvetica, sans-serif;
+     text-decoration: none }
+.whitesmall A:active
+   { font-style: normal;
+     font-size: xx-small;
+     line-height: normal; 
+     font-family: Verdana, Arial, Helvetica, sans-serif;
+     text-decoration: none;
+     color: FF4500; }
+.whitesmall A:hover
+   { font-style: normal;
+	font-size: xx-small;
+     line-height: normal; 
+     font-family: Verdana, Arial, Helvetica, sans-serif; 
+     text-decoration: none;
+     color: FF4500; }
+
+.white2 A:link 
+   { color: ffffff;
+     font-style: normal; 
+     font-size: 10px;
+     line-height: normal;
+     font-family: Verdana, Arial, Helvetica, sans-serif; 
+     text-decoration: none }
+.white2 A:visited
+   { color: ffffff; 
+     font-style: normal; 
+     font-size: 10px; 
+     line-height: normal; 
+     font-family: Verdana, Arial, Helvetica, sans-serif;
+     text-decoration: none }
+.white2 A:active
+   { font-style: normal;
+     font-size: 10px;
+     line-height: normal; 
+     font-family: Verdana, Arial, Helvetica, sans-serif;
+     text-decoration: none;
+     color: FF4500; }
+.white2 A:hover
+   { font-style: normal;
+     font-size: 10px;
+     line-height: normal; 
+     font-family: Verdana, Arial, Helvetica, sans-serif; 
+     text-decoration: none;
+     color: FF4500; }
+
+.white A:link 
+   { color: ffffff;
+     font-style: normal; 
+     font-size: x-small;
+     line-height: normal;
+     font-family: Verdana, Arial, Helvetica, sans-serif; 
+     text-decoration: none }
+.white A:visited
+   { color: ffffff; 
+     font-style: normal; 
+     font-size: x-small; 
+     line-height: normal; 
+     font-family: Verdana, Arial, Helvetica, sans-serif;
+     text-decoration: none }
+.white A:active
+   { font-style: normal;
+     font-size: x-small;
+     line-height: normal; 
+     font-family: Verdana, Arial, Helvetica, sans-serif;
+     text-decoration: none;
+     color: FF4500; }
+.white A:hover
+   { font-style: normal;
+     font-size: x-small;
+     line-height: normal; 
+     font-family: Verdana, Arial, Helvetica, sans-serif; 
+     text-decoration: none;
+     color: FF4500; }
+.green A:link 
+   { font-style: normal;
+     font-weight: bold;
+     font-size: x-small;
+     line-height: normal;
+     font-family: Verdana, Arial, Helvetica, sans-serif;
+     text-decoration: none;
+     color: 000080; }
+.green A:visited
+   { font-style: normal;
+     font-weight: bold;
+     font-size: x-small;
+     line-height: normal; 
+     font-family: Verdana, Arial, Helvetica, sans-serif;
+     text-decoration: none;
+     color: 000080; }
+.green A:active
+   { font-style: normal;
+     font-weight: bold;
+     font-size: x-small;
+     line-height: normal;
+     font-family: Verdana, Arial, Helvetica, sans-serif;
+     text-decoration: none;
+     color: EE0000; }
+.green A:hover 
+   { font-style: normal;
+     font-weight: bold;
+     font-size: x-small;
+     line-height: normal;
+     font-family: Verdana, Arial, Helvetica, sans-serif;
+     text-decoration: none;
+     color: ffffff; }
+A:link {
+	font-family:sans-serif,arial,helvetica;
+	font-size:11px;
+	color:blue;
+}
+A:hover {
+	font-family:sans-serif,arial,helvetica;
+    font-size:11px;
+	color:blue;
+}
+A:visited {
+	font-family:sans-serif,arial,helvetica;
+	font-size:11px;
+	color:purple;
+}
+A:active {
+	font-family:sans-serif,arial,helvetica;
+	font-size:11px;
+	color:red;
+}
+.caution {
+	font-family:verdana,Arial,Helvetica,sans-serif;
+	font-weight:bold; 
+	font-size:small; 
+	color:FF0000;
+}
+.white { color: white; font-weight: bold; font-size: x-small; font-family: verdana, Arial, Helvetica, sans-serif }
+.STEP 
+   { font-size:14px;
+     font-family:arial black; 
+     font-weight:bold; 
+     color:#3366cc; }
+.SECTIONLABEL 
+   { font-size:10px; 
+     font-family:verdana, arial, helvetica; 
+     font-weight:bold;
+     color:#000000; }
+.LABEL 
+   { font-size:9px; 
+     font-family:verdana, arial, helvetica; 
+     font-weight:bold; 
+     color:#000000; }
+.INSTRUCTION 
+   { font-size:9px;
+     font-family:verdana, arial, helvetica; 
+     color:#000000; }
+.NOTATION 
+   { font-size:9px;
+     font-family:verdana, arial, helvetica; 
+     color:#000000; }
+.BUTTON 
+   { font-size:9px; 
+     font-family:verdana, arial, helvetica; 
+     font-weight:bold; 
+     color:#000000; }
+.TEXTFIELD 
+   { font-size:9px; 
+     font-family:verdana, arial, helvetica; 
+     color:#000000; }
+.LIST 
+   { font-size:9px; 
+     font-family:verdana, arial, helvetica; 
+     color:#000000; 
+     padding: 0.1em; }
+
+/* format for small info tables in /apri/apri.html */	 
+.apritable {
+	margin-top:10px;
+	background:#ffffff;
+	border-bottom-width:4px;
+	border-bottom-color:#959595;
+	border-bottom-style:double;
+}
+
+/* format for ndaa home page table of info that will always appear*/	 
+.ndaatable {
+	margin-top:10px;
+	background:#d3d3d3;
+	border-bottom-width:4px;
+	border-bottom-color:#959595;
+	border-bottom-style:double;
+}
+
+/* format for ncda home page footer table */	 
+.ncdatable {
+	margin-top:10px;
+	background:#d3d3d3;
+	border-top-width:4px;
+	border-top-color:#959595;
+	border-top-style:double	
+	border-bottom-width:4px;
+	border-bottom-color:#959595;
+	border-bottom-style:double;
+}
+/* format for ndaa home page table of info that revised may 26, 2005*/	 
+.ndaatable2 {
+	margin-top:5px;
+	background:#ffffff;
+	border-bottom-width:1px;
+	border-bottom-color:#BDB76B;
+	border-bottom-style:solid;
+}

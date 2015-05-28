@@ -1,0 +1,97 @@
+/* some commented stuff here; is it okay? */
+
+
+	var url_args = new Array();
+
+	allargs = document.URL.split("?");
+	if(allargs[1]) {
+		arg_pairs = allargs[1].split("&");
+		for(var x = 0; x < arg_pairs.length; x++){
+			tmp=arg_pairs[x].split("=");
+			eval("url_args[\""+tmp[0]+"\"]=\""+tmp[1]+"\";");
+		}
+	}
+
+	function geturlarg (value) {
+		if (url_val = url_args[value]) {
+			return url_val;
+		}
+	}
+
+	function getcookie(cookiename) {
+		var cookiestring=""+document.cookie;
+		
+		var index1=cookiestring.indexOf(cookiename+"=");
+		if (index1==-1 || cookiename=="") return ""; 
+		var index2=cookiestring.indexOf(';',index1);
+		if (index2==-1) index2=cookiestring.length; 
+		return unescape(cookiestring.substring(index1+cookiename.length+1,index2));
+	}
+
+	function SetCookie (name, value) {
+		var argv = SetCookie.arguments;
+		var argc = SetCookie.arguments.length;
+		var expires = (argc > 2) ? argv[2] : null;
+		var path = '/';
+		var domain = (argc > 4) ? argv[4] : null;
+		var secure = (argc > 5) ? argv[5] : false;
+		document.cookie = name + "=" + escape (value) +
+		  ((expires == null) ? "" : ("; expires=" + expires.toGMTString())) +
+		  ((path == null) ? "" : ("; path=" + path)) +
+		  ((domain == null) ? "" : ("; domain=" + domain)) +
+		  ((secure == true) ? "; secure" : "");
+	}
+
+
+	function trackcampaignhit (webtrends_campaign_tracking_id) {
+	    
+	    // Webtrends campaign is activated by arg rather than url param
+
+	    url_campaign_id = geturlarg('campaign_tracking_id');
+	    cookie_campaign_id = getcookie('campaign_tracking_id');
+
+	    if (webtrends_campaign_tracking_id || (url_campaign_id) && (url_campaign_id != cookie_campaign_id)) {
+		
+		document.write('<img src="/cgis/campaign_tracking.cgi?website_id=485345484949506565&source=&vh=&campaign_id=' + url_campaign_id + '&WT_id=' + webtrends_campaign_tracking_id + '" height=0 width=0>');
+}
+	}
+
+	function setreferralidcookie () {
+		referral_id = geturlarg('referralid');
+		if (referral_id) {
+
+			SetCookie("referral_id",referral_id);
+			}
+	}
+
+	function setquixtarcookie() {
+		quixtar_id = geturlarg('eID');
+		if (quixtar_id) {
+
+			SetCookie("quixtarid",quixtar_id);
+		}
+	}
+
+	function writehiddenform(value) {
+		var ret_val = getcookie(value);
+		if (ret_val) {
+			document.write('<input type="hidden" name="' + value + '" value="' + ret_val + '">');
+		}
+	}
+
+    
+    <!-- for 45-1468AA -->
+    <!-- functions to close website popup #76984 -->
+function MM_findObj(n, d) { //v4.01
+    var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+    if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+    for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+    if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_showHideLayers() { //v6.0
+    var i,p,v,obj,args=MM_showHideLayers.arguments;
+    for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+        if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+        obj.visibility=v; }
+}

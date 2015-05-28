@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><title>Toolbar Text Ad</title>
+
+  
+    
+    <script type="text/javascript"><!--//--><![CDATA[//><!--
+      function getQueryVariable(varname) {
+        var i, pos, argname, argvalue, qs, pairs;
+
+        qs = window.location.search.substring(1);
+        pairs = qs.split("&");
+
+        for (i = 0; i < pairs.length; i++) {
+          pos = pairs[i].indexOf('=');
+          if (pos == -1) {continue;}
+          argname = pairs[i].substring(0,pos);
+          argvalue = pairs[i].substring(pos+1);
+
+          if (argname == varname) {
+            return decodeURIComponent(argvalue.replace(/\+/g, " "));
+          }
+        }
+        return null;
+      }
+
+      function setBGcolor() {
+        var bgcolor = getQueryVariable("bgcolor");
+        if (bgcolor && document.getElementsByTagName) {
+          var bodyelement = document.getElementsByTagName('body').item(0);
+          bodyelement.style.backgroundColor = bgcolor;
+        }
+      }
+
+	  function drawAd() {
+    	var ads = ['<img src="http://af.lygo.com/d/toolbar/golfball_14x16.gif"      width="14" height="16" alt="icon" style="margin: 0 3px; vertical-align: text-top;"><a style="font-family: verdana; font-size: 9px; font-weight: bold; color: #666666" href="http://r.lycos.com/r/tlbr_gv_albatross/http://games.lycos.com/albatross18/" target="_blank">Free Online Golf<'+'/a>',
+                   '<img src="http://af.lygo.com/d/toolbar/lycosphone_16x16.gif"    width="16" height="16" alt="icon" style="margin: 0 3px; vertical-align: text-top;"><a style="font-family: verdana; font-size: 9px; font-weight: bold; color: #666666" href="http://lycos.globe7.com"                                                    target="_blank">Lycos Phone<'+'/a>',
+                   '<img src="http://af.lygo.com/d/toolbar/lycos_spot_14x16_1k.gif" width="14" height="16" alt="icon" style="margin: 0 3px; vertical-align: text-top;"><a style="font-family: verdana; font-size: 9px; font-weight: bold; color: #666666" href="http://clk.atdmt.com/MON/go/lycsnmon0810000060mon/direct/01/"               target="_blank">Search Jobs<'+'/a><img src="http://view.atdmt.com/MON/view/lycsnmon0810000060mon/direct/01/" width="1" height="1" alt="">',
+                   '<img src="http://af.lygo.com/d/toolbar/mobile_sm.gif"          width="16" height="16" alt="icon" style="margin: 0 3px; vertical-align: text-top;"><a style="font-family: verdana; font-size: 9px; font-weight: bold; color: #666666" href="http://www.lycos.playp.biz/mobgames/Default.aspx?StoreFrontID=0006-0006-1000-0003"                  target="_blank">Mobile Games<'+'/a>'];
+		document.write(ads[Math.floor(Math.random()*ads.length)]);
+	  }
+    //--><!]]></script></head><body style="margin: 0px; padding: 0px; background-color: rgb(238, 238, 238);" onload="setBGcolor()">
+    <script type="text/javascript"><!--//--><![CDATA[//><!--
+	  drawAd();
+	//--><!]]></script><img src="toolbar_text_data/golfball_14x16.gif" alt="icon" style="margin: 0pt 3px; vertical-align: text-top;" height="16" width="14"><a style="font-family: verdana; font-size: 9px; font-weight: bold; color: rgb(102, 102, 102);" href="http://r.lycos.com/r/tlbr_gv_albatross/http://games.lycos.com/albatross18/" target="_blank">Free Online Golf</a>
+  
+</body></html>

@@ -1,0 +1,68 @@
+/*
+	CSS files kept in the 'schemes' directory can be used to
+	costumize your K2 installation without having to mess
+	with the core K2 files. This in turn makes it easier to
+	upgrade to new K2 version as well as debug any problems
+	that might occur.
+
+	You select schemes from the K2 Options page in the
+	'Presentation' section of your WordPress administration.
+	
+	Author Name	: Bharath Kumar
+	Author Site	: http://www.obharath.net/blog/
+	Style Name	: 3 Column K2
+	Style URI	: http://www.obharath.net/blog/2006/12/17/3-column-k2-093/
+	Version		: V 0.9.3
+	Comments	   : Easy switch between 2 columns & 3 columns.(I hope one day it gets integrated in to original K2 :))
+					  It supports widgets and now sidebar modules too (Thanx to Nybble for pointing me towards the changes)
+					  All my effort is to make more people use the BEST Wordpress theme , K2.
+	
+	** NOTE: If anyone wants to release their customizations based on this theme or release, Leave me a message before you do that.
+	
+*/
+
+/* CSS modified from main style.css for my customizations for 3 column K2 */
+
+#page { /* Page width changed from 780px to 995px to accomodate the extra sidebar */
+	width: 995px !important;
+	}
+	
+#primary { /* Left and Right margins to the primary content */
+	margin: 0 20px 0 20px !important;
+	}
+	
+.secondary { /* CSS for the margins to the sidebar and the whole sidebar width */
+	margin: 0 0 20px 545px !important;
+	width: 445px !important;
+	}
+		
+#searchform { /* Donno y the 20px margin to the search form doesnt work in 3 column k2, so changed to 0px */
+	margin-top: 0 !important;
+	}	
+	
+/* CSS added by me for my customizations for 3 column K2 */
+
+.lsidebar { /* CSS for left sidebar */
+	margin: 0 !important;
+	width: 230px !important;
+	float: left !important;
+	padding: 0 9px 0 9px !important;
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+	}
+	
+.rsidebar { /* CSS for right sidebar */
+	margin: 0 !important; 
+	width: 170px !important;
+	float: right !important;
+	padding: 0 15px 0 10px !important;
+	}	
+
+.feedlink img { /* CSS for feed image in the sidebar */
+	_right: 5px;
+	}
+	
+li.bypostauthor { /* http://code.google.com/p/kaytwo/issues/detail?id=109&can=2&q=#c1 */
+	height: 100%;
+	}
+	

@@ -1,0 +1,1087 @@
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="">
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+<META HTTP-EQUIV="Content-Script-Type" CONTENT="text/javascript">
+
+<meta name="ad-spaceid" content="2011300128">
+<meta name="ad-location" content="HEAD,FOOT">
+<meta name="ad-property" content="360">
+<meta name="ad-nopageview" content="DOC.AD_MIME_NOPAGEVIEW">
+<meta name="ad-site_attribute" content="DOC.AD_MIME_SITE_ATTRIBUTE">
+<meta name="ad-dma" content="807">
+<meta name="ad-state" content="ca">
+<meta name="ad-city" content="Sunnyvale">
+<meta name="ad-zip" content="94089">
+<meta name="ad-geocode" content="DOC.AD_MIME_GEOCODE">
+
+
+<title>Yahoo! 360&#176; - Search</title>
+<link type="text/css" rel="stylesheet" href="http://us.js2.yimg.com/us.js.yimg.com/lib/cmty/ymgl_global_200608161000.css" media="screen">
+
+<style type="text/css">
+    
+/*refine search*/
+#ymgl-search-refine .body {
+   margin: 7px 10px;
+}
+
+#ymgl-search-refine .body h3 {
+    font-size: 100%;
+	font-weight:bold;
+	color:#404040;
+	margin: 0 0 10px 0;
+}
+
+#ymgl-search-refine .body h4 {
+   font:74% verdana;
+	font-weight:bold;
+	margin:5px 0 0 0;
+}
+
+#ymgl-search-refine .body label {
+    font:74% verdana, arial, helvetica;
+}
+
+#ymgl-search-refine .body .keyword {
+    margin:0 0 15px 0;
+}
+
+
+#ymgl-search-refine .body .keyword input {
+    width:180px;
+}
+
+#ymgl-search-refine .body .wrapper {
+    margin: 0 0 10px 0;
+}
+
+#ymgl-search-refine .body .wrapper select {
+    margin: 0 0 7px 0;
+}
+
+#ymgl-search-refine .body .age-wrapper {
+    font:74% verdana;
+    margin: 0 0 10px 0;
+}
+
+#ymgl-search-refine .body .age-wrapper h4 {
+   font-size:100%;
+}
+
+#ymgl-search-refine .body .age-wrapper input {
+    display:inline;
+	width: 30px;
+}
+
+#ymgl-search-refine .body .location-wrapper {
+    margin: 0 0 10px 0;
+}
+
+#ymgl-search-refine .body .location-wrapper .delimiter {
+    display:block;
+	clear:both;
+    font:74% verdana;
+	font-weight:bold;
+	margin:0 0 5px 0;
+	text-align:center;
+}
+
+#ymgl-search-refine .body .location-wrapper label {
+    display:block;
+	clear:both;
+}
+
+#ymgl-search-refine .body .location-wrapper div {
+    width: 160px;
+	margin:0 0 5px 0;
+}
+
+#ymgl-search-refine .body .location-wrapper div .select-wrapper {
+   position:relative;
+   *height:22px;
+   margin:0;
+}
+
+#ymgl-search-refine .body .location-wrapper div input,
+#ymgl-search-refine .body .location-wrapper div select {
+   width:150px;
+}
+
+#ymgl-search-refine .body .location-wrapper .zip {
+   font:74% verdana, arial, helvetica;
+}
+
+#ymgl-search-refine .body .location-wrapper .zip select {
+    display:inline;
+	clear:none;
+	float:none;
+	width:55px;
+}
+
+#ymgl-search-refine .body .location-wrapper .zip label {
+    font-size:100%;
+}
+
+
+#ymgl-search-refine .body ul {
+    margin:0 0 10px 0;
+	padding:0;
+	list-style:none;
+}
+
+#ymgl-search-simple {
+   text-align:center;
+}
+
+#ymgl-search-simple input {
+   width:30%;
+}
+
+#ymgl-search-simple input.inactive,
+#ymgl-search-simple input.active {
+   width:auto;
+}
+/* begin search-friends */
+/*.pagination {margin-right:193px;}
+*/
+#ymgl-search-results .head {
+    border-bottom: 1px solid #7b9ebd;
+    background-color: #e6ecf2;
+    padding-left:5px;
+    margin: 0 0 15px 0;
+    position: relative;
+}
+
+#ymgl-search-results .head span.intro {
+   display:block;
+	clear:right;
+	float:left;
+	font:74% verdana;
+	width:65px;
+	line-height:1.5em;
+}
+
+#ymgl-search-results .head a {
+    display: block;
+    clear: none;
+    float: left;
+    color: #247CD4;
+    line-height: 1.3em;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+	min-width:20px;
+    *width: 20px;
+    position: relative;
+    cursor: pointer;
+    cursor: hand;
+	white-space:nowrap;
+}
+
+#ymgl-search-results .head #tab-people.active {
+    margin-right:-2px;
+}
+
+
+#ymgl-search-results .head #tab-content.active {
+    margin-left: -2px;
+}
+
+#ymgl-search-results .head .active {
+    font-weight: bold;
+    color: #fff;
+    line-height: .75em;
+    border: 1px solid #295c7d;
+    border-bottom: 1px solid #2181a3;
+    background: #2181a3;
+    padding: 0 0 7px 0;
+    margin: -10px 0 -1px 0;
+    position: relative;
+    z-index: 40000;
+}
+
+#ymgl-search-results .head .active .tail {
+    display: block;
+    clear: both;
+    font-size: 0;
+    line-height: 0;
+    background-image: url(http://l.yimg.com/us.yimg.com/i/us/cmty/ptr_profile.gif);
+    background-repeat: no-repeat;
+    background-position: bottom 50%;
+    margin: auto;
+    height: 7px;
+    width: 19px;
+    position: absolute;
+	bottom:-8px;
+    *bottom: -7px;
+	left:40%;
+    z-index: 10000;
+}
+
+
+#ymgl-search-results .head a .cl {
+    display: none;
+}
+
+#ymgl-search-results .head a .link-text {
+   display:block;
+   background:transparent;
+   margin:0 7px;
+   padding:0;
+   text-align:center;
+}
+
+#ymgl-search-results .head .active .link-text {
+    display: block;
+    background: url(http://l.yimg.com/us.yimg.com/i/us/cmty/cr_b_mblue_ne.gif) no-repeat top right;
+    margin:0;
+	padding:10px 6px 2px 5px;
+	position:relative;
+	top:-1px;
+	right:-1px;
+}
+
+#ymgl-search-results .head .active .cl {
+    display:block;
+    background: url(http://l.yimg.com/us.yimg.com/i/us/cmty/cr_b_mblue_nw.gif) no-repeat top left;
+	height:3px;
+	width:3px;
+	position:absolute;
+    left: -1px;
+	top:-1px;
+}
+
+#ymgl-search-results .head .ct .cl {left:-7px;}
+
+
+#ymgl-search-results .body {
+    margin: 0 15px;
+}
+
+#ymgl-search-results .body p.no-data {
+    font-style: italic;
+    text-align: center;
+    line-height: 8em;
+    width: 100%;
+}
+
+#ymgl-search-results .body .row {
+    border: 0;
+    border-bottom: 1px solid #d4d4d4;
+    padding: 10px 0 10px 0;
+    margin: 0;
+    min-height: 90px;
+    *height:90px;
+    position: relative;
+}
+
+#ymgl-search-results .body .row .user-card {
+    clear: right;
+    float: left;
+   margin:0 40px -15px 0;
+   *width:190px;
+   min-width:190px;
+}
+
+#ymgl-search-results .body .row .user-card:after {
+   content:".";
+   display:block;
+   font-size:0px;
+   line-height:0px;
+   height:1px;
+   clear:both;
+   visibility:hidden;
+}
+
+#ymgl-search-results .body .row .user-card .vitals {
+   width:120px;
+}
+
+#ymgl-search-results .body .no-vitality {
+	float: left;
+	clear: none;
+	margin-top: 13px;
+	margin-right: 13px;
+	height: 100px;
+}
+
+#ymgl-search-results .body .no-vitality .user-card {
+   margin:0 10px 10px 0;
+	width:170px;
+}
+
+#ymgl-search-results .body .no-vitality .user-card .vitals {
+   width:100px;
+}
+
+#ymgl-search-results .body .row .foot {
+    text-align: left;
+    font: 74% verdana, arial, helvetica, sans-serif normal;
+    color: #999;
+    border: 0;
+    padding: 3px 0 0 0;
+    margin: 0 0 0 225px;
+}
+
+#ymgl-search-results .body .row .foot h4 {
+    display: inline;
+    font-size: 100%;
+    font-weight: normal;
+    margin: 0;
+}
+
+#ymgl-search-results .body .row .foot .datestamp {
+    clear: none;
+    float: none;
+    display: inline;
+    font-size: 100%;
+    width: auto;
+    margin: 0;
+}
+/*rnr css*/
+#ymgl-search-results .body .row .vitality .rnr {}
+
+#ymgl-search-results .body .row .vitality .rnr .clr {
+	display:none;
+}
+
+#ymgl-search-results .body .row .vitality .rnr .hd h4 {
+ 	font-size:100%;
+}
+
+#ymgl-search-results .body .row .vitality .rnr .hd cite {
+	font-style:normal;
+	font:74% verdana, arial, helvetica;
+}
+
+#ymgl-search-results .body .row .vitality .rnr .bd {
+	margin-top:0;
+}
+
+#ymgl-search-results .body .row .vitality .rnr .bd .posting h5 {
+	font:130% georgia;
+	margin:0 0 7px 0;
+}
+
+#ymgl-search-results .body .row .vitality .rnr .bd .posting dl {
+	font:100% georgia;
+	margin:0;
+	padding:0;
+}
+
+#ymgl-search-results .body .row .vitality .rnr .bd .posting dd {
+    margin:0;
+    padding:0;
+}
+
+#ymgl-search-results .body .vitality .rnr .bd .posting p {
+  margin:0;
+}
+
+#ymgl-search-results .body .vitality .rnr .bd .posting p a {
+  font:74% verdana;
+}
+/*end rnr css*/
+
+.bottom {
+   margin-bottom:13px;
+}
+#ymgl-friends-content {
+   position:relative;
+}
+
+#ymgl-friends-content .body {
+    margin: 0 15px 0 15px;
+}
+
+#ymgl-friends-content .body p.no-data {
+    font-style: italic;
+    text-align: center;
+    line-height: 8em;
+    width: 100%;
+}
+
+#ymgl-friends-content .body .row {
+    border-bottom: 1px solid #d4d4d4;
+    padding: 10px 0;
+    margin:0;
+    position: relative;
+}
+
+#ymgl-friends-content .body .row .user-card {
+    clear: right;
+    float: left;
+   margin:0 40px 0 0;
+   *width:190px;
+   min-width:190px;
+}
+
+#ymgl-friends-content .body .row .user-card .vitals {
+   width:120px;
+}
+
+#ymgl-friends-content .body .row .foot {
+    text-align: left;
+    font: 74% verdana, arial, helvetica, sans-serif normal;
+    color: #999;
+    border: 0;
+    padding: 3px 0 0 0;
+    margin: -15px 0 0 240px;
+}
+
+#ymgl-friends-content .body .row .foot h4 {
+    display: inline;
+    font-size: 100%;
+    font-weight: normal;
+    margin: 0;
+}
+
+#ymgl-friends-content .body .row .foot .datestamp {
+    clear: none;
+    float: none;
+    display: inline;
+    font-size: 100%;
+    width: auto;
+    margin: 0;
+}
+
+/*rnr css*/
+#ymgl-friends-content .body .vitality .rnr {}
+
+#ymgl-friends-content .body .vitality .rnr .clr {
+	display:none;
+}
+
+#ymgl-friends-content .body .vitality .rnr .hd h4 {
+ 	font-size:100%;
+}
+
+#ymgl-friends-content .body .vitality .rnr .hd cite {
+	font-style:normal;
+	font:74% verdana, arial, helvetica;
+}
+
+#ymgl-friends-content .body .vitality .rnr .bd {
+	margin-top:0;
+}
+
+#ymgl-friends-content .body .vitality .rnr .bd .posting h5 {
+	font:130% georgia;
+	margin:0 0 7px 0;
+}
+
+#ymgl-friends-content .body .vitality .rnr .bd .posting dl {
+	font:100% georgia;
+	margin:0;
+	padding:0;
+}
+
+#ymgl-friends-content .body .vitality .rnr .bd .posting dd {
+    margin:0;
+	padding:0;
+}
+#ymgl-friends-content .body .vitality .rnr .bd .posting p {
+  margin:0;
+}
+
+#ymgl-friends-content .body .vitality .rnr .bd .posting p a {
+  font:74% verdana, arial, helvetica;
+}
+/*end rnr css*/
+
+
+#ymgl-friends-content .body .invite-more {
+    text-align: center;
+    padding: 15px 0 20px 0;
+}
+
+#ymgl-friends-content .body .invite-more a {
+    display: block;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+
+#ymgl-friends-content .foot {
+    padding: 7px 0 7px 0;
+    margin: 0 15px;
+    text-align: right;
+}
+
+#ymgl-friends-content .foot span {
+    font:74% verdana, arial, helvetica;
+}
+
+#ymgl-friends-content .body .no-vitality {
+    margin: 5px 0 5px 0;
+}
+
+#ymgl-friends-content .body .no-vitality .info {
+    margin: 0 0 13px 0;
+}
+
+#ymgl-friends-content .body em.empty {
+    display: block;
+    text-align: center;
+    margin: 10px;
+}
+
+
+
+/* search ads*/
+#ymgl-search-ads {
+	text-align:left;
+	margin: 0 0 13px 0;
+}
+#ymgl-search-ads h4 {
+	font:74% verdana, arial, helvetica;
+	font-weight:bold;
+	text-align:right;
+	color:#999;
+	margin:0;
+}
+
+#ymgl-search-ads ul {
+	padding:10px 15px;
+	background:#e7eff7;
+}
+
+#ymgl-search-ads li {
+	margin: 0 0 10px 15px;
+}
+#ymgl-search-ads li .search-term a {
+	font-size:110%;
+	margin:0;
+}
+
+#ymgl-search-ads li .search-url a:link, #ymgl-search-ads li .search-url a:visited {
+	color:#2b8000;	
+}        
+
+</style>
+<script type="text/javascript">logd = function() { };</script>
+</head>
+<body  onload=" hlx_js_init(); ">
+
+<div class="doc-layout-head" id="doc-head">
+<span class="beacon"></span>
+    
+<style type="text/css"><!--@import url("http://us.js2.yimg.com/us.js.yimg.com/lib/hdr/ygma_2.19.css");body{margin:0px 4px;}--></style><div id="ygma" style="width:100%;"><div id="ygmacx"><div id="ygmatop"><ul id="ygnav"><li><a href="http://us.ard.yahoo.com/SIG=12kaslkns/M=289534.6185558.7188167.6016644/D=mingle/S=2011300128:HEADR/Y=YAHOO/EXP=1172513682/A=2623894/R=0/SIG=10np9vmbm/*http://www.yahoo.com/" target="_top">Yahoo!</a></li><li><a href="http://us.ard.yahoo.com/SIG=12kaslkns/M=289534.6185558.7188167.6016644/D=mingle/S=2011300128:HEADR/Y=YAHOO/EXP=1172513682/A=2623894/R=1/SIG=10m97m5i1/*http://my.yahoo.com/" target="_top">My Yahoo!</a></li><li><a href="http://us.ard.yahoo.com/SIG=12kaslkns/M=289534.6185558.7188167.6016644/D=mingle/S=2011300128:HEADR/Y=YAHOO/EXP=1172513682/A=2623894/R=2/SIG=10od5rqfs/*http://mail.yahoo.com/" target="_top">Mail</a></li>               <li id="ygmamyyhpcx">&nbsp;  &nbsp;  &nbsp;<a id=ygmamyyhp href="http://us.ard.yahoo.com/SIG=12muv2d6h/M=289534.10143516.10815657.6766641/D=mingle/S=2011300128:HMYYH/Y=YAHOO/EXP=1172513682/A=3047844/R=0/SIG=10uacnjgh/*http://www.yahoo.com/bin/set" target="_top"><font color=#000000>Make Y! your home page</font></a><div id=ygmamyyhpff></div><script type="text/javascript">var ygma_rd="http://us.ard.yahoo.com",ygma_space="/SIG=12muv2d6h/M=289534.10143516.10815657.6766641/D=mingle/S=2011300128:HMYYH/Y=YAHOO/EXP=1172513682/A=3047844/R=1",ygma_space2="/SIG=12muv2d6h/M=289534.10143516.10815657.6766641/D=mingle/S=2011300128:HMYYH/Y=YAHOO/EXP=1172513682/A=3047844/R=2",ygma_space3="/SIG=12muv2d6h/M=289534.10143516.10815657.6766641/D=mingle/S=2011300128:HMYYH/Y=YAHOO/EXP=1172513682/A=3047844/R=3",ygma_adid="3047844",ygma_prop="mingle";</script><script type="text/javascript" src="http://us.js2.yimg.com/us.js.yimg.com/lib/hdr/myyhp_2.2.js"></script><script language=javascript>
+if(window.yzq_d==null)window.yzq_d=new Object();
+window.yzq_d['cKPeAs6.Ir8-']='&U=13c67ogr8%2fN%3dcKPeAs6.Ir8-%2fC%3d289534.10143516.10815657.6766641%2fD%3dHMYYH%2fB%3d3047844';
+</script><noscript><img width=1 height=1 alt="" src="http://us.bc.yahoo.com/b?P=e6A8hUSO4s.eBTUL0cst.gCLPszPKkXjB3IAB4e.&T=141pg2aba%2fX%3d1172506482%2fE%3d2011300128%2fR%3dmingle%2fK%3d5%2fV%3d2.1%2fW%3dH%2fY%3dYAHOO%2fF%3d846529163%2fQ%3d-1%2fS%3d1%2fJ%3d0923BECE&U=13c67ogr8%2fN%3dcKPeAs6.Ir8-%2fC%3d289534.10143516.10815657.6766641%2fD%3dHMYYH%2fB%3d3047844"></noscript></li></ul><form id="ygmafrm" name="yhdr_form" action="http://srd.yahoo.com/loc=head&st=yahoo/*http://search.yahoo.com/search" target="_blank"><fieldset><legend>Yahoo! Search</legend><label for="ygsp">Search:</label><input type="text" id="ygsp" name="p" size="35" maxlength="100" title="Search the Web" /><input class="ygbt" type="submit" value="Web Search" title="Web Search" /><input type="hidden" id="fr" name="fr" value="ush-360" /></fieldset></form></div><div id="ygmabot"><a id="ygmalogo" href="http://us.ard.yahoo.com/SIG=12kaslkns/M=289534.6185558.7188167.6016644/D=mingle/S=2011300128:HEADR/Y=YAHOO/EXP=1172513682/A=2623894/R=3/SIG=10mmpqqkm/*http://360.yahoo.com"><img src="http://us.i1.yimg.com/us.yimg.com/i/us/nt/ma/ma_360-beta_1.gif" width="195" height="33" border="0" alt="Yahoo! Yahoo! 360" /></a><div id="ygmauser"><strong id="ygmalogin"><a href="http://us.ard.yahoo.com/SIG=12kaslkns/M=289534.6185558.7188167.6016644/D=mingle/S=2011300128:HEADR/Y=YAHOO/EXP=1172513682/A=2623894/R=4/SIG=13vbq0afv/*http://login.yahoo.com/config/login?.done=http://360.yahoo.com%2fsearch.html%3fq%3dJUDE%2bBROWN%26.crumb%3d&.src=360&.intl=us" target="_top">Sign In</a></strong><span id="ygmaloginlnks">New User? <a href="http://us.ard.yahoo.com/SIG=12kaslkns/M=289534.6185558.7188167.6016644/D=mingle/S=2011300128:HEADR/Y=YAHOO/EXP=1172513682/A=2623894/R=5/SIG=146elqlj7/*http://edit.yahoo.com/config/eval_register?.done=http://360.yahoo.com%2fsearch.html%3fq%3dJUDE%2bBROWN%26.crumb%3d&.src=360&.intl=us" target="_top">Sign Up</a></span></div><ul id="ygmahelp"><li class="ygfirst"><a href="http://us.ard.yahoo.com/SIG=12kaslkns/M=289534.6185558.7188167.6016644/D=mingle/S=2011300128:HEADR/Y=YAHOO/EXP=1172513682/A=2623894/R=6/SIG=10mmpqqkm/*http://360.yahoo.com" target="_top">Yahoo! 360&#176; Home</a> -</li><li class="yglast"><a href="http://us.ard.yahoo.com/SIG=12kaslkns/M=289534.6185558.7188167.6016644/D=mingle/S=2011300128:HEADR/Y=YAHOO/EXP=1172513682/A=2623894/R=7/SIG=117hma0n1/*http://help.yahoo.com/l/us/yahoo/360/" target="_top">Help</a></li></ul></div></div></div><!-- SpaceID=2011300128 loc=HEADJ noad -->
+<script language=javascript>
+if(window.yzq_d==null)window.yzq_d=new Object();
+window.yzq_d['Z6PeAs6.Ir8-']='&U=13aedrrah%2fN%3dZ6PeAs6.Ir8-%2fC%3d289534.6185558.7188167.6016644%2fD%3dHEADR%2fB%3d2623894';
+</script><noscript><img width=1 height=1 alt="" src="http://us.bc.yahoo.com/b?P=e6A8hUSO4s.eBTUL0cst.gCLPszPKkXjB3IAB4e.&T=1426ao64j%2fX%3d1172506482%2fE%3d2011300128%2fR%3dmingle%2fK%3d5%2fV%3d2.1%2fW%3dH%2fY%3dYAHOO%2fF%3d1377355588%2fQ%3d-1%2fS%3d1%2fJ%3d0923BECE&U=13aedrrah%2fN%3dZ6PeAs6.Ir8-%2fC%3d289534.6185558.7188167.6016644%2fD%3dHEADR%2fB%3d2623894"></noscript>
+<div class="container-0" id="ymgl-north-wrapper">
+
+</div>
+<div class="container-0" id="ymgl-feedback">
+<span class="caption"><a href="http://blog.360.yahoo.com/product_360">Yahoo! 360&#176; News</a> | <a href="http://add.yahoo.com/fast/help/us/360/cgi_feedback">Beta Feedback</a></span>
+</div>
+<div class="container-0" id="ymgl-masthead">
+    <span class="ct"><span class="cl"></span></span>
+    
+        
+<h1><span>Search</span></h1>
+
+     <div class="body">
+        <a href="http://360.yahoo.com/;_ylt=A86.IwlyB.NFpsMAuwAgAeJ3?.login=1">Home</a>|<a href="http://360.yahoo.com/my_profile-FOY0gYYoKPBEEPFdDwtZFvg-;_ylt=A86.IwlyB.NFpsMAvAAgAeJ3?cq=1">My Page</a>|<a href="http://blog.360.yahoo.com/blog-FOY0gYYoKPBEEPFdDwtZFvg-;_ylt=A86.IwlyB.NFpsMAvQAgAeJ3?cq=1">My Blog</a>|<a href="http://360.yahoo.com/friends/index.html;_ylt=A86.IwlyB.NFpsMAvgAgAeJ3">My Friends</a>|<a href="http://message.360.yahoo.com/mailbox/;_ylt=A86.IwlyB.NFpsMAvwAgAeJ3">Mailbox</a>|<a href="http://message.360.yahoo.com/invites/compose.html;_ylt=A86.IwlyB.NFpsMAwAAgAeJ3">Invite</a>|<a href="http://360.yahoo.com/search.html;_ylt=A86.IwlyB.NFpsMAwQAgAeJ3">Search</a>|<a href="http://360.yahoo.com/edit/identity.html;_ylt=A86.IwlyB.NFpsMAwgAgAeJ3">Settings</a>
+    </div>
+    <span class="cb"><span class="cl"></span></span>
+</div>
+
+
+
+
+</div>
+<div class="doc-layout-body" id="doc-body">
+<div class="thm-wrapper">
+<span class="beacon"></span>
+    <div class="doc-layout-1" id="doc-1">
+
+    
+<div id="ymgl-search-refine" class="container-1 mod default-light">
+<span class="ct"><span class="cl"></span></span>
+<form name="search" action="search.html%3Fq=JUDE+BROWN&amp;.crumb=.1.html" method="GET">
+<div class="body">
+	    
+	<h3>Refine Results</h3>
+
+       <div class="age-wrapper">
+		    <h4>Age</h4>
+			 <input type=text name="amin" size="3" value="" id="amin_ff" class="age"> 
+          to <input type=text name="amax" size="3" value="" id="amax_ff">
+		 </div>
+
+                 <h4>Gender</h4>
+                    <ul class="form-list">
+                    <li><input type=checkbox name="sxf" value="1"><label>Female</label></li>
+                    <li><input type=checkbox name="sxm" value="1"><label>Male</label></li>
+     				</ul>
+
+       <div class="location-wrapper">
+          <h4>Located</h4>                    	    
+          <div class="zip"><select name="r[]" size="1">
+<option value=""></option>
+<option value="25">25</option>
+<option value="100">100</option>
+<option value="500">500</option>
+</select>
+ miles from <input type=text name="loc" size="20" value="" id="loc_ff"></div>
+		</div>
+
+<input type="submit" value="Refine Results" name="submit" class="inactive"/>
+</div>
+<input type=hidden name="q" value="JUDE BROWN">
+<input type=hidden name="geo" value="">
+<input type=hidden name=".crumb" value="">
+<input type=hidden name="form_submitted" value="search">
+</form>
+<span class="cb"><span class="cl"></span></span>
+</div>
+
+
+    </div>
+
+    <div class="doc-layout-2" id="doc-2">
+    <span class="beacon"></span>
+    
+<div id="ymgl-search-simple" class="container-0 default-dark">
+<span class="ct"><span class="cl"></span></span>
+		<form name="search" action="search.html%3Fq=JUDE+BROWN&amp;.crumb=.1.html" method="GET">
+		<label>Search for</label>
+		<input type=text name="q" size="20" value="JUDE BROWN" id="q_ff">
+		<input type="submit" value="Search" name="submit" class="active"/>
+		<input type=hidden name="type" value="">
+<input type=hidden name=".crumb" value="">
+<input type=hidden name="form_submitted" value="search">
+</form>
+<span class="cb"><span class="cl"></span></span>
+</div>
+
+
+
+<div id="ymgl-search-ads"><h4>SPONSOR RESULTS</h4><ul>
+<li><p class="search-term"><a href="http://rc12.overture.com/d/sr/?xargs=15KPjg17hSnpamwrirdrTKTuqDxF4axca59stsB5J6H9Rc5iMxXOF7bqvCm8FxTexxv1PdxPSX9KEWKvD5n%5F%2DJGwaITFWOGvWugoHGyY0%5FN6un4edw2L4uw%2DzonYBLOdQ3ImOwIOX%5FNt78B6WhfHNK9owKyxma%2D%5FJo157nyLVBRPPOiQB1%5FS%2DmJ5l1n6Bd88i1IZ8LJZIGctnJoxaLcZ1AvakBleysO1EEdyal4HEKtFiELC5%2DoKvbLdsE6%5Feu3dGIM6apxc8PPknpkYAW%2DGz0thnj39smOyDH3eZJIGo0W72tNjfdnlp4peeO1K2ERt9lvl%5FsHJ2bRCnhMAZ2dFMgCq7oKgSEKGEqs12KdZ1QIMSv2xOO&yargs=www.usa-people-search.com">Locate Judi A Brown</a> Current address and phone number available. Instant results. </p>
+<p class="search-url"><a href="http://rc12.overture.com/d/sr/?xargs=15KPjg17hSnpamwrirdrTKTuqDxF4axca59stsB5J6H9Rc5iMxXOF7bqvCm8FxTexxv1PdxPSX9KEWKvD5n%5F%2DJGwaITFWOGvWugoHGyY0%5FN6un4edw2L4uw%2DzonYBLOdQ3ImOwIOX%5FNt78B6WhfHNK9owKyxma%2D%5FJo157nyLVBRPPOiQB1%5FS%2DmJ5l1n6Bd88i1IZ8LJZIGctnJoxaLcZ1AvakBleysO1EEdyal4HEKtFiELC5%2DoKvbLdsE6%5Feu3dGIM6apxc8PPknpkYAW%2DGz0thnj39smOyDH3eZJIGo0W72tNjfdnlp4peeO1K2ERt9lvl%5FsHJ2bRCnhMAZ2dFMgCq7oKgSEKGEqs12KdZ1QIMSv2xOO&yargs=www.usa-people-search.com">www.usa-people-search.com</a></p>
+</li><li><p class="search-term"><a href="http://rc12.overture.com/d/sr/?xargs=15KPjg15NSgJXyl%5FruNLbXU6TFhUBM1sTyo487WtgsAYYBrW1iB6IgM7bC74UtBK867g7Qz%5FCU%2D64QKub5nr3Nujy%5FGhPVTIfO5tqa2IhJTOr1AMRFge9w99r%2D7MQReyETYGjxIIvqi%2D24JNDva3NK%5Fo8VnhCY%2D%5FJuwsu0zeAfBu%5FV3SEJj1ylVe12maJbh8iwLIxf7oZlW6rB0CuXcpRFytxxkeSkPTZKJS3RlmkO2yiAUEJ716bIfo8f4Ljxyr%2DoQuL8nK8rH0GS%5FPES%5FkSbwWjGxIsWPg70iLpRhgIJSKL6aTLL1QZ99%5FqWmqzWe4BBji2%5FE4mNTmeobEV%5FYkNvUKfhIlTfIHd77xqRM5gPIJHxpUy9BrHpTnV2IABZ%2DZK5OtBF7netuk9%2DeQTnIevB8CINBdl%5Fg1i85D%2DQskB5mLg6%2DNbvHA%2E%2E&yargs=peoplesearch.public-records-now.com">Find Judi Brown, $9.95</a> Get phone number, address, and much more on Judi Brown. Instant results starting at $9.95. No hit. No fee. </p>
+<p class="search-url"><a href="http://rc12.overture.com/d/sr/?xargs=15KPjg15NSgJXyl%5FruNLbXU6TFhUBM1sTyo487WtgsAYYBrW1iB6IgM7bC74UtBK867g7Qz%5FCU%2D64QKub5nr3Nujy%5FGhPVTIfO5tqa2IhJTOr1AMRFge9w99r%2D7MQReyETYGjxIIvqi%2D24JNDva3NK%5Fo8VnhCY%2D%5FJuwsu0zeAfBu%5FV3SEJj1ylVe12maJbh8iwLIxf7oZlW6rB0CuXcpRFytxxkeSkPTZKJS3RlmkO2yiAUEJ716bIfo8f4Ljxyr%2DoQuL8nK8rH0GS%5FPES%5FkSbwWjGxIsWPg70iLpRhgIJSKL6aTLL1QZ99%5FqWmqzWe4BBji2%5FE4mNTmeobEV%5FYkNvUKfhIlTfIHd77xqRM5gPIJHxpUy9BrHpTnV2IABZ%2DZK5OtBF7netuk9%2DeQTnIevB8CINBdl%5Fg1i85D%2DQskB5mLg6%2DNbvHA%2E%2E&yargs=peoplesearch.public-records-now.com">peoplesearch.public-records-now.com</a></p>
+</li>
+</ul></div>
+<span class="pagination top">
+<span><em>1 - 10</em> of <em class="limit">211</em> First | &lt; Prev | <a href="http://360.yahoo.com/search.html?q=JUDE+BROWN&.crumb=&l=11&u=20&mx=211&lmt=10" id="num_next">Next &gt;</a>  </span>
+</span>
+   <div class="container-0 mod default" id="ymgl-search-results">
+
+
+<div class="head" id="tab-container">
+            <span class="ct"><span class="cl"></span></span>
+           <span class="intro"></span>
+		
+<a href="http://360.yahoo.com/search.html?q=JUDE+BROWN&amp;type=" id="tab-people" class="active">
+  <span class="cl"></span><span class="link-text">People</span><span class="tail"></span>
+</a>
+
+<a href="http://360.yahoo.com/search.html?q=JUDE+BROWN&amp;type=all" id="tab-people" class="">
+  <span class="cl"></span><span class="link-text">Content</span><span class="tail"></span>
+</a>
+
+       </div>
+		  <div class="body" id="resultsPeople">
+
+
+<div class="row">
+       
+<div class="user-card landscape">
+        
+<div class="user-photo "><a href="http://360.yahoo.com/profile-uC76TAoyc6dUW_VH3qoJwBRZd.Y-?cq=1" title=""><img src="http://img.avatars.yahoo.com/users/1V_u0W1UsAAEC9KFpfDgSp-IA.medium.png"  class="avatar" alt="Cham" height="48" width="48" border=""></a></div>
+    
+        
+<ul class="vitals">
+    
+<li class="user-name"><a href="http://360.yahoo.com/profile-uC76TAoyc6dUW_VH3qoJwBRZd.Y-?cq=1" title="Cham">Cham</a></li>
+        
+<li class="opi"><img src="http://l.yimg.com/us.yimg.com/i/us/msg/6/gr/offline_12px_1.gif"  height="12" width="12" border="0"> Offline </li>
+        
+<li class="invite"><a href="http://message.360.yahoo.com/invites/confirm.html;_ylt=A86.IwlyB.NFpsMAsQAgAeJ3?id=uC76TAoyc6dUW_VH3qoJwBRZd.Y-">Invite as a Friend</a></li>
+        
+<li class="user-info">Not in your network</li>
+
+</ul>
+    
+</div>
+    
+   <div class="vitality">
+      <div class="blast spoken">
+      <span class="ct"><span class="cl"></span></span>
+      <span class="tail"></span>
+      <p class="content"><span class="snippet">Big hint here huh...Yes we are finally getting married!!</span> </p>
+      <span class="cb"><span class="cl"></span></span>
+      </div>
+      <span class="footnote"></span>
+   </div>
+   <div class="foot">
+      <h4>Blast Message - </h4><span class="datestamp">Wed Feb 14 11:36am CST</span>
+   </div>
+</div>
+
+
+<div class="row">
+       
+<div class="user-card landscape">
+        
+<div class="user-photo "><a href="http://360.yahoo.com/profile-0RPpqqE1dKhC1_0Ik6KcP1.yApDQ7V8-?cq=1" title=""><img src="http://f3.yahoofs.com/mingle/435709b7z5b603a52/profile/__tn_/2f10.jpg?mgwUx4FBrOg5oqSQ"  class="" alt="Moni" height="43" width="64" border=""></a></div>
+    
+        
+<ul class="vitals">
+    
+<li class="user-name"><a href="http://360.yahoo.com/profile-0RPpqqE1dKhC1_0Ik6KcP1.yApDQ7V8-?cq=1" title="Moni">Moni</a></li>
+        
+<li class="opi"><img src="http://l.yimg.com/us.yimg.com/i/us/msg/6/gr/offline_12px_1.gif"  height="12" width="12" border="0"> Offline </li>
+        
+<li class="invite"><a href="http://message.360.yahoo.com/invites/confirm.html;_ylt=A86.IwlyB.NFpsMAsgAgAeJ3?id=0RPpqqE1dKhC1_0Ik6KcP1.yApDQ7V8-">Invite as a Friend</a></li>
+        
+<li class="user-info">Not in your network</li>
+
+</ul>
+    
+</div>
+    
+   <div class="vitality">
+      <div class="blast spoken">
+      <span class="ct"><span class="cl"></span></span>
+      <span class="tail"></span>
+      <p class="content"><span class="snippet">I'll believe in you or I'll be leaving you tonight!</span> </p>
+      <span class="cb"><span class="cl"></span></span>
+      </div>
+      <span class="footnote"></span>
+   </div>
+   <div class="foot">
+      <h4>Blast Message - </h4><span class="datestamp">Tue Jan 09 03:21am EST</span>
+   </div>
+</div>
+
+
+<div class="row">
+        
+                
+<div class="user-card landscape">
+        
+<div class="user-photo "><a href="http://360.yahoo.com/profile-4gUDfgkhfqcz9dKZ0siNhkJChuJ1zBts" title=""><img src="http://img.avatars.yahoo.com/users/1yDl8tYiCAAAE-IFT0ApwAQ==.medium.png"  class="avatar" alt="Peaches" height="48" width="48" border=""></a></div>
+    
+        
+<ul class="vitals">
+    
+<li class="user-name"><a href="http://360.yahoo.com/profile-4gUDfgkhfqcz9dKZ0siNhkJChuJ1zBts" title="Peaches">Peaches</a></li>
+        
+<li class="opi"><img src="http://l.yimg.com/us.yimg.com/i/us/msg/6/gr/offline_12px_1.gif"  height="12" width="12" border="0"> Offline </li>
+        
+<li class="send"><a href="http://message.360.yahoo.com/mailbox/message/compose-4gUDfgkhfqcz9dKZ0siNhkJChuJ1zBts;_ylt=A86.IwlyB.NFpsMAswAgAeJ3">Send Message</a></li>
+        
+<li class="invite"><a href="http://message.360.yahoo.com/invites/confirm.html;_ylt=A86.IwlyB.NFpsMAtAAgAeJ3?id=4gUDfgkhfqcz9dKZ0siNhkJChuJ1zBts">Invite as a Friend</a></li>
+        
+<li class="user-info">Not in your network</li>
+
+</ul>
+    
+</div>
+    
+        
+        <div class="vitality">
+            <div class="blog">
+
+            <h4>Entry for November 17, 2006</h4>
+            <p><span class="snippet">: www.mybenfitsplus.com/hplummer</span><span class="footnote"><a href="http://blog.360.yahoo.com/blog-4gUDfgkhfqcz9dKZ0siNhkJChuJ1zBts">View&nbsp;Blog</a></span></p>
+            </div>
+        </div>
+            <div class="foot">
+            <h4>Blog Post - </h4><span class="datestamp">Fri Nov 17 01:40am EST</span>
+            </div>
+
+    </div>
+
+
+<div class="row">
+       
+<div class="user-card landscape">
+        
+<div class="user-photo "><a href="http://360.yahoo.com/profile-TI8SeOEibKOOXGmpgZ6qARAcKA--?cq=1" title=""><img src="http://f3.yahoofs.com/mingle/446b4e16z769e90fc/profile/__tn_/5640.jpg?mgwUx4FB8ukYqm3o"  class="" alt="Mishael" height="85" width="64" border=""></a></div>
+    
+        
+<ul class="vitals">
+    
+<li class="user-name"><a href="http://360.yahoo.com/profile-TI8SeOEibKOOXGmpgZ6qARAcKA--?cq=1" title="Mishael">Mishael</a></li>
+        
+<li class="opi"><img src="http://l.yimg.com/us.yimg.com/i/us/msg/6/gr/offline_12px_1.gif"  height="12" width="12" border="0"> Offline </li>
+        
+<li class="invite"><a href="http://message.360.yahoo.com/invites/confirm.html;_ylt=A86.IwlyB.NFpsMAtQAgAeJ3?id=TI8SeOEibKOOXGmpgZ6qARAcKA--">Invite as a Friend</a></li>
+        
+<li class="user-info">Not in your network</li>
+
+</ul>
+    
+</div>
+    
+   <div class="vitality">
+      <div class="blast spoken">
+      <span class="ct"><span class="cl"></span></span>
+      <span class="tail"></span>
+      <p class="content"><span class="snippet">When in Rome...</span> </p>
+      <span class="cb"><span class="cl"></span></span>
+      </div>
+      <span class="footnote"></span>
+   </div>
+   <div class="foot">
+      <h4>Blast Message - </h4><span class="datestamp">Wed May 17 01:57pm EDT</span>
+   </div>
+</div>
+
+
+<div class="row">
+        
+                
+<div class="user-card landscape">
+        
+<div class="user-photo "><a href="http://360.yahoo.com/profile-a8vdt6gibKPsyU04JvwBgCBB3S1ypw--?cq=1" title=""><img src="http://f3.yahoofs.com/mingle/43548622z3a831f9c/profile/__tn_/d5a4.jpg?mgwUx4FBb_KAUijf"  class="" alt="sweet_ass_nana" height="64" width="64" border=""></a></div>
+    
+        
+<ul class="vitals">
+    
+<li class="user-name"><a href="http://360.yahoo.com/profile-a8vdt6gibKPsyU04JvwBgCBB3S1ypw--?cq=1" title="sweet_ass_nana">sweet_ass_nana</a></li>
+        
+<li class="opi"><img src="http://l.yimg.com/us.yimg.com/i/us/msg/6/gr/offline_12px_1.gif"  height="12" width="12" border="0"> Offline </li>
+        
+<li class="invite"><a href="http://message.360.yahoo.com/invites/confirm.html;_ylt=A86.IwlyB.NFpsMAtgAgAeJ3?id=a8vdt6gibKPsyU04JvwBgCBB3S1ypw--">Invite as a Friend</a></li>
+        
+<li class="user-info">Not in your network</li>
+
+</ul>
+    
+</div>
+    
+        
+        <div class="vitality">
+            <div class="blog">
+
+            <h4>Entry for March 24, 2006</h4>
+            <a href="http://blog.360.yahoo.com/blog-a8vdt6gibKPsyU04JvwBgCBB3S1ypw--?cq=1"><img src="http://f3.yahoofs.com/blog/43548443zefefcb73/17/__tn_/9788.jpg?mgwUx4FBjRzNAo_1"  alt="Entry for March 24, 2006" height="68" width="90" border="0"></a><p><span class="snippet">                      what more impotant to me yahoo drama or real life strugges   .1i just wanna share a lil bit with yall 2 give u something 2 think about this 4 the once who tak</span><span class="footnote"><a href="http://blog.360.yahoo.com/blog-a8vdt6gibKPsyU04JvwBgCBB3S1ypw--?cq=1">View&nbsp;Blog</a></span></p>
+            </div>
+        </div>
+            <div class="foot">
+            <h4>Blog Post - </h4><span class="datestamp">Fri Mar 24 08:06pm EST</span>
+            </div>
+
+    </div>
+
+
+<div class="row">
+        
+                
+<div class="user-card landscape">
+        
+<div class="user-photo "><a href="http://360.yahoo.com/profile-JD_3APUmcqpsQla1O5RJaFBXEr_7Xv1OdMYW" title=""><img src="http://f3.yahoofs.com/mingle/43d3211ez5df2fb09/profile/__tn_/88b8.jpg?mgwUx4FBnnAVwD4z"  class="" alt="cindy" height="46" width="64" border=""></a></div>
+    
+        
+<ul class="vitals">
+    
+<li class="user-name"><a href="http://360.yahoo.com/profile-JD_3APUmcqpsQla1O5RJaFBXEr_7Xv1OdMYW" title="cindy">cindy</a></li>
+        
+<li class="opi"><a href="ymsgr:sendIM?wildthang_wildthang" title="Offline IM"><img src="http://l.yimg.com/us.yimg.com/i/us/msg/6/gr/offline_12px_1.gif"  height="12" width="12" border="0"> Offline IM</a></li>
+        
+<li class="send"><a href="http://message.360.yahoo.com/mailbox/message/compose-JD_3APUmcqpsQla1O5RJaFBXEr_7Xv1OdMYW;_ylt=A86.IwlyB.NFpsMAtwAgAeJ3">Send Message</a></li>
+        
+<li class="invite"><a href="http://message.360.yahoo.com/invites/confirm.html;_ylt=A86.IwlyB.NFpsMAuAAgAeJ3?id=JD_3APUmcqpsQla1O5RJaFBXEr_7Xv1OdMYW">Invite as a Friend</a></li>
+        
+<li class="user-info">Not in your network</li>
+
+</ul>
+    
+</div>
+    
+        
+        <div class="vitality">
+            <div class="blog">
+
+            <h4>Entry for February 28, 2006</h4>
+            <a href="http://blog.360.yahoo.com/blog-JD_3APUmcqpsQla1O5RJaFBXEr_7Xv1OdMYW"><img src="http://f3.yahoofs.com/blog/43d32439z3671a454/4/__tn_/3eef.jpg?mgwUx4FB9LSgWH8K"  alt="Entry for February 28, 2006" height="76" width="57" border="0"></a><p><span class="snippet">HI EVERYONE I JUST THOUGHT I WOULD SAY HELLO BEFORE I GO TO WORK TODAY.&nbsp; I HOPE EVERYONE IS DOING OK TODAY.&nbsp; I AM DOING JUST FINE UP BEING MEAN ALREADY LOL. WELL I GOT T</span><span class="footnote"><a href="http://blog.360.yahoo.com/blog-JD_3APUmcqpsQla1O5RJaFBXEr_7Xv1OdMYW">View&nbsp;Blog</a></span></p>
+            </div>
+        </div>
+            <div class="foot">
+            <h4>Blog Post - </h4><span class="datestamp">Tue Feb 28 12:21pm EST</span>
+            </div>
+
+    </div>
+
+
+<div class="row">
+        
+                
+<div class="user-card landscape">
+        
+<div class="user-photo "><a href="http://360.yahoo.com/profile-P1tCBV4waaVTQGD8TxXyDyi.2wDYHNo-?cq=1" title=""><img src="http://f3.yahoofs.com/mingle/4386af49zad63d431/profile/__tn_/5aad.jpg?mgwUx4FBvJ2fpFNs"  class="" alt="archabal" height="48" width="64" border=""></a></div>
+    
+        
+<ul class="vitals">
+    
+<li class="user-name"><a href="http://360.yahoo.com/profile-P1tCBV4waaVTQGD8TxXyDyi.2wDYHNo-?cq=1" title="archabal">archabal</a></li>
+        
+<li class="opi"><a href="ymsgr:sendIM?archabal_442000" title="Offline IM"><img src="http://l.yimg.com/us.yimg.com/i/us/msg/6/gr/offline_12px_1.gif"  height="12" width="12" border="0"> Offline IM</a></li>
+        
+<li class="send"><a href="http://message.360.yahoo.com/mailbox/message/compose-P1tCBV4waaVTQGD8TxXyDyi.2wDYHNo-;_ylt=A86.IwlyB.NFpsMAuQAgAeJ3?cq=1">Send Message</a></li>
+        
+<li class="invite"><a href="http://message.360.yahoo.com/invites/confirm.html;_ylt=A86.IwlyB.NFpsMAugAgAeJ3?id=P1tCBV4waaVTQGD8TxXyDyi.2wDYHNo-">Invite as a Friend</a></li>
+        
+<li class="user-info">Not in your network</li>
+
+</ul>
+    
+</div>
+    
+        
+        <div class="vitality">
+            <div class="blog">
+
+            <h4>Entry for November 25,2005</h4>
+            <a href="http://blog.360.yahoo.com/blog-P1tCBV4waaVTQGD8TxXyDyi.2wDYHNo-?cq=1"><img src="http://f3.yahoofs.com/blog/4386adedza95cfdeb/0/__tn_/d233.jpg?mgwUx4FBmCfcUQNo"  alt="Entry for November 25,2005" height="68" width="90" border="0"></a><p><span class="snippet"></span><span class="footnote"><a href="http://blog.360.yahoo.com/blog-P1tCBV4waaVTQGD8TxXyDyi.2wDYHNo-?cq=1">View&nbsp;Blog</a></span></p>
+            </div>
+        </div>
+            <div class="foot">
+            <h4>Blog Post - </h4><span class="datestamp">Thu Nov 24 10:30pm PST</span>
+            </div>
+
+    </div>
+
+
+<div class="info no-vitality">
+        
+<div class="user-card landscape">
+        
+<div class="user-photo "><a href="http://360.yahoo.com/profile-cDG67mkwd68pmPul7pCUNsU-?cq=1" title=""><img src="http://f3.yahoofs.com/mingle/45d3f0aazb09875ef/profile/__tn_/fa49.jpg?mgwUx4FBQ0zVHmpT"  class="" alt="Ali N" height="87" width="64" border=""></a></div>
+    
+        
+<ul class="vitals">
+    
+<li class="user-name"><a href="http://360.yahoo.com/profile-cDG67mkwd68pmPul7pCUNsU-?cq=1" title="Ali N">Ali N</a></li>
+        
+<li class="opi"><img src="http://l.yimg.com/us.yimg.com/i/us/msg/6/gr/offline_12px_1.gif"  height="12" width="12" border="0"> Offline </li>
+        
+<li class="user-info">Not in your network</li>
+
+</ul>
+    
+</div>
+    
+</div>
+
+<div class="info no-vitality">
+        
+<div class="user-card landscape">
+        
+<div class="user-photo "><a href="http://360.yahoo.com/profile-cNQJcasmcqgJSEPDDKaN_ZSDnw--?cq=1" title="">    
+<span class="no-data"></span>
+    </a></div>
+    
+        
+<ul class="vitals">
+    
+<li class="user-name"><a href="http://360.yahoo.com/profile-cNQJcasmcqgJSEPDDKaN_ZSDnw--?cq=1" title="magic man 413">magic man 413</a></li>
+        
+<li class="opi"><img src="http://l.yimg.com/us.yimg.com/i/us/msg/6/gr/offline_12px_1.gif"  height="12" width="12" border="0"> Offline </li>
+        
+<li class="user-info">Not in your network</li>
+
+</ul>
+    
+</div>
+    
+</div>
+
+<div class="info no-vitality">
+        
+<div class="user-card landscape">
+        
+<div class="user-photo "><a href="http://360.yahoo.com/profile-Eg2aP4c8eqhiAreGpVjXhw--?cq=1" title=""><img src="http://img.avatars.yahoo.com/users/1SW5CQQRiAAECQEEo4AfIBA==.medium.png"  class="avatar" alt="chep" height="48" width="48" border=""></a></div>
+    
+        
+<ul class="vitals">
+    
+<li class="user-name"><a href="http://360.yahoo.com/profile-Eg2aP4c8eqhiAreGpVjXhw--?cq=1" title="chep">chep</a></li>
+        
+<li class="opi"><img src="http://l.yimg.com/us.yimg.com/i/us/msg/6/gr/offline_12px_1.gif"  height="12" width="12" border="0"> Offline </li>
+        
+<li class="user-info">Not in your network</li>
+
+</ul>
+    
+</div>
+    
+</div>
+
+</div>
+<span class="cb"><span class="cl"></span></span>
+</div>
+<span class="pagination bottom">
+<span><em>1 - 10</em> of <em class="limit">211</em> First | &lt; Prev | <a href="http://360.yahoo.com/search.html?q=JUDE+BROWN&.crumb=&l=11&u=20&mx=211&lmt=10" id="num_next">Next &gt;</a>  </span>
+</span>
+
+<div id="ymgl-search-ads"><h4>SPONSOR RESULTS</h4><ul>
+<li><p class="search-term"><a href="http://rc12.overture.com/d/sr/?xargs=15KPjg17hSnpamwrirdrTKTuqDxF4axca59stsB5J6H9Rc5iMxXOF7bqvCm8FxTexxv1PdxPSX9KEWKvD5n%5F%2DJGwaITFWOGvWugoHGyY0%5FN6un4edw2L4uw%2DzonYBLOdQ3ImOwIOX%5FNt78B6WhfHNK9owKyxma%2D%5FJo157nyLVBRPPOiQB1%5FS%2DmJ5l1n6Bd88i1IZ8LJZIGctnJoxaLcZ1AvakBleysO1EEdyal4HEKtFiELC5%2DoKvbLdsE6%5Feu3dGIM6apxc8PPknpkYAW%2DGz0thnj39smOyDH3eZJIGo0W72tNjfdnlp4peeO1K2ERt9lvl%5FsHJ2bRCnhMAZ2dFMgCq7oKgSEKGEqs12KdZ1QIMSv2xOO&yargs=www.usa-people-search.com">Locate Judi A Brown</a> Current address and phone number available. Instant results. </p>
+<p class="search-url"><a href="http://rc12.overture.com/d/sr/?xargs=15KPjg17hSnpamwrirdrTKTuqDxF4axca59stsB5J6H9Rc5iMxXOF7bqvCm8FxTexxv1PdxPSX9KEWKvD5n%5F%2DJGwaITFWOGvWugoHGyY0%5FN6un4edw2L4uw%2DzonYBLOdQ3ImOwIOX%5FNt78B6WhfHNK9owKyxma%2D%5FJo157nyLVBRPPOiQB1%5FS%2DmJ5l1n6Bd88i1IZ8LJZIGctnJoxaLcZ1AvakBleysO1EEdyal4HEKtFiELC5%2DoKvbLdsE6%5Feu3dGIM6apxc8PPknpkYAW%2DGz0thnj39smOyDH3eZJIGo0W72tNjfdnlp4peeO1K2ERt9lvl%5FsHJ2bRCnhMAZ2dFMgCq7oKgSEKGEqs12KdZ1QIMSv2xOO&yargs=www.usa-people-search.com">www.usa-people-search.com</a></p>
+</li><li><p class="search-term"><a href="http://rc12.overture.com/d/sr/?xargs=15KPjg15NSgJXyl%5FruNLbXU6TFhUBM1sTyo487WtgsAYYBrW1iB6IgM7bC74UtBK867g7Qz%5FCU%2D64QKub5nr3Nujy%5FGhPVTIfO5tqa2IhJTOr1AMRFge9w99r%2D7MQReyETYGjxIIvqi%2D24JNDva3NK%5Fo8VnhCY%2D%5FJuwsu0zeAfBu%5FV3SEJj1ylVe12maJbh8iwLIxf7oZlW6rB0CuXcpRFytxxkeSkPTZKJS3RlmkO2yiAUEJ716bIfo8f4Ljxyr%2DoQuL8nK8rH0GS%5FPES%5FkSbwWjGxIsWPg70iLpRhgIJSKL6aTLL1QZ99%5FqWmqzWe4BBji2%5FE4mNTmeobEV%5FYkNvUKfhIlTfIHd77xqRM5gPIJHxpUy9BrHpTnV2IABZ%2DZK5OtBF7netuk9%2DeQTnIevB8CINBdl%5Fg1i85D%2DQskB5mLg6%2DNbvHA%2E%2E&yargs=peoplesearch.public-records-now.com">Find Judi Brown, $9.95</a> Get phone number, address, and much more on Judi Brown. Instant results starting at $9.95. No hit. No fee. </p>
+<p class="search-url"><a href="http://rc12.overture.com/d/sr/?xargs=15KPjg15NSgJXyl%5FruNLbXU6TFhUBM1sTyo487WtgsAYYBrW1iB6IgM7bC74UtBK867g7Qz%5FCU%2D64QKub5nr3Nujy%5FGhPVTIfO5tqa2IhJTOr1AMRFge9w99r%2D7MQReyETYGjxIIvqi%2D24JNDva3NK%5Fo8VnhCY%2D%5FJuwsu0zeAfBu%5FV3SEJj1ylVe12maJbh8iwLIxf7oZlW6rB0CuXcpRFytxxkeSkPTZKJS3RlmkO2yiAUEJ716bIfo8f4Ljxyr%2DoQuL8nK8rH0GS%5FPES%5FkSbwWjGxIsWPg70iLpRhgIJSKL6aTLL1QZ99%5FqWmqzWe4BBji2%5FE4mNTmeobEV%5FYkNvUKfhIlTfIHd77xqRM5gPIJHxpUy9BrHpTnV2IABZ%2DZK5OtBF7netuk9%2DeQTnIevB8CINBdl%5Fg1i85D%2DQskB5mLg6%2DNbvHA%2E%2E&yargs=peoplesearch.public-records-now.com">peoplesearch.public-records-now.com</a></p>
+</li>
+</ul></div>
+
+    </div>
+</div>
+</div>
+<div class="doc-layout-foot" id="doc-foot">
+    <span class="beacon"></span> 
+    
+<script language=javascript> var ADFadids = "2623895"; function ADFlaunch() {var w; var l="http://us.ard.yahoo.com/SIG=12j3lms3b/M=289534.6185560.7188168.6016647/D=mingle/S=2011300128:FOOT/Y=YAHOO/EXP=1172513682/A=2623895/R=0/id=adfeedback/SIG=12kgv0v93/*http://surveys.yahoo.com/user_ad_feedback?source=2011300128:FOOT&.q28=mingle&.q26="+ADFadids; w=window.open(l,"AdFeedbackWin","toolbar=no,scrollbars=yes,resizable,location=no,height=400,width=640"); }</script><center><table border=0 cellpadding=0 cellspacing=0><tr><td align=center valign=bottom width=100%><font size=-2 face=arial>Copyright &#169; 2007 Yahoo! Inc.  All rights reserved.<br><a href=http://us.ard.yahoo.com/SIG=12j3lms3b/M=289534.6185560.7188168.6016647/D=mingle/S=2011300128:FOOT/Y=YAHOO/EXP=1172513682/A=2623895/R=1/SIG=1163rhhok/*http://privacy.yahoo.com/privacy/us/ target=_top>Privacy Policy</a> - <a href=http://us.ard.yahoo.com/SIG=12j3lms3b/M=289534.6185560.7188168.6016647/D=mingle/S=2011300128:FOOT/Y=YAHOO/EXP=1172513682/A=2623895/R=2/SIG=1136qnvkg/*http://docs.yahoo.com/info/terms/ target=_top>Terms of Service</a> - <a href=http://us.ard.yahoo.com/SIG=12j3lms3b/M=289534.6185560.7188168.6016647/D=mingle/S=2011300128:FOOT/Y=YAHOO/EXP=1172513682/A=2623895/R=3/SIG=11lp7krrc/*http://docs.yahoo.com/info/copyright/copyright.html>Copyright/IP Policy</a> - <a href=http://us.ard.yahoo.com/SIG=12j3lms3b/M=289534.6185560.7188168.6016647/D=mingle/S=2011300128:FOOT/Y=YAHOO/EXP=1172513682/A=2623895/R=4/SIG=124mv403r/*http://help.yahoo.com/l/us/yahoo/360/guidelines/guidelines-08.html>Guidelines</a> - <a href=http://us.ard.yahoo.com/SIG=12j3lms3b/M=289534.6185560.7188168.6016647/D=mingle/S=2011300128:FOOT/Y=YAHOO/EXP=1172513682/A=2623895/R=5/SIG=10t7eedmc/*http://help.yahoo.com/help/ target=_top>Help</a> - <a href="javascript:ADFlaunch()">Ad Feedback</a><br>&nbsp; NOTICE: We collect personal information on this site.<br>To learn more about how we use your information, see our <a href=http://us.ard.yahoo.com/SIG=12j3lms3b/M=289534.6185560.7188168.6016647/D=mingle/S=2011300128:FOOT/Y=YAHOO/EXP=1172513682/A=2623895/R=6/SIG=11a69tum4/*http://privacy.yahoo.com/privacy/us/360/>Privacy Policy</a>.</font></td></tr></table></center> <!-- SpaceID=2011300128 loc=FR001 noad -->
+ <!-- SpaceID=2011300128 loc=FSRVY noad -->
+<script language=javascript>
+if(window.yzq_d==null)window.yzq_d=new Object();
+window.yzq_d['baPeAs6.Ir8-']='&U=1295pu8o8%2fN%3dbaPeAs6.Ir8-%2fC%3d-1%2fD%3dFSRVY%2fB%3d-1';
+</script><noscript><img width=1 height=1 alt="" src="http://us.bc.yahoo.com/b?P=e6A8hUSO4s.eBTUL0cst.gCLPszPKkXjB3IAB4e.&T=142vrkpce%2fX%3d1172506482%2fE%3d2011300128%2fR%3dmingle%2fK%3d5%2fV%3d2.1%2fW%3dH%2fY%3dYAHOO%2fF%3d1619341150%2fQ%3d-1%2fS%3d1%2fJ%3d0923BECE&U=1295pu8o8%2fN%3dbaPeAs6.Ir8-%2fC%3d-1%2fD%3dFSRVY%2fB%3d-1"></noscript><script language=javascript>
+if(window.yzq_d==null)window.yzq_d=new Object();
+window.yzq_d['ZqPeAs6.Ir8-']='&U=1391ank4r%2fN%3dZqPeAs6.Ir8-%2fC%3d289534.6185560.7188168.6016647%2fD%3dFOOT%2fB%3d2623895';
+</script><noscript><img width=1 height=1 alt="" src="http://us.bc.yahoo.com/b?P=e6A8hUSO4s.eBTUL0cst.gCLPszPKkXjB3IAB4e.&T=142vfj2gd%2fX%3d1172506482%2fE%3d2011300128%2fR%3dmingle%2fK%3d5%2fV%3d2.1%2fW%3dH%2fY%3dYAHOO%2fF%3d3930776593%2fQ%3d-1%2fS%3d1%2fJ%3d0923BECE&U=1391ank4r%2fN%3dZqPeAs6.Ir8-%2fC%3d289534.6185560.7188168.6016647%2fD%3dFOOT%2fB%3d2623895"></noscript>
+
+
+</div>
+
+</body>
+<head>
+<script type="text/javascript" language="JavaScript" src="http://us.js2.yimg.com/us.js.yimg.com/lib/cmty/utils/y360_20061114143852.js"></script>
+
+<script type="text/javascript">
+function hlx_js_init() {
+    
+YAHOO.y360.Mp3.go('ymgl-friends-content');
+
+
+        
+
+
+}
+</script>
+</head>
+</html>
+<!-- 0.41748 -->
+
+<script language=javascript>
+if(window.yzq_p==null)document.write("<scr"+"ipt language=javascript src=http://us.js2.yimg.com/us.js.yimg.com/lib/bc/bc_2.0.3.js></scr"+"ipt>");
+</script><script language=javascript>
+if(window.yzq_p)yzq_p('P=e6A8hUSO4s.eBTUL0cst.gCLPszPKkXjB3IAB4e.&T=13snpsh9f%2fX%3d1172506482%2fE%3d2011300128%2fR%3dmingle%2fK%3d5%2fV%3d1.1%2fW%3dJ%2fY%3dYAHOO%2fF%3d357985634%2fS%3d1%2fJ%3d0923BECE');
+if(window.yzq_s)yzq_s();
+</script><noscript><img width=1 height=1 alt="" src="http://us.bc.yahoo.com/b?P=e6A8hUSO4s.eBTUL0cst.gCLPszPKkXjB3IAB4e.&T=142re1qsn%2fX%3d1172506482%2fE%3d2011300128%2fR%3dmingle%2fK%3d5%2fV%3d3.1%2fW%3dJ%2fY%3dYAHOO%2fF%3d3549112904%2fQ%3d-1%2fS%3d1%2fJ%3d0923BECE"></noscript>
+<!-- p10.mgl.re2.yahoo.com uncompressed Mon Feb 26 08:14:42 PST 2007 -->

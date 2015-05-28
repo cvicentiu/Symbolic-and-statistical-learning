@@ -1,0 +1,158 @@
+/* FOX SPORTS PRINT STYLES
+    
+
+	index -> 	
+				Global Displays (Removals)
+				Body
+				Headings
+				Tables
+				Lists
+				Links
+				ID Specific
+				Page Specific
+*/
+
+/* =Global Displays (Removals)
+-----------------------------------------*/
+	dl.skip, dl#ninn, #nav-wrap, .story-tools, .text-ad-bot, #side-panel, #icons-foot, #terms, .more,.ad-island,#tv-search-thumb,#browse-day-thumb {display:none;}
+
+
+/* =Body
+-----------------------------------------*/
+	body {
+	background: white;
+	font-family:Times New Roman, Times, serif;
+	font-size:11pt;
+	line-height:14pt;
+	}
+
+/* =Headings
+-----------------------------------------*/
+	h1 {font-size:16pt;}
+	
+	h1 a {
+	text-decoration:none;
+	color:#000;
+	}
+	
+	h2 {
+	clear:both;
+	font-size:13pt;
+	border-bottom:1px solid #ccc;
+	}
+	
+	h2#story {border-bottom:none!important;}
+	
+	h2 a {
+	color:#000;
+	text-decoration:none;
+	}
+	
+	h3 {font-size:12pt;clear:both;}
+	
+	h3 a {
+	color:#000;
+	text-decoration:none;
+	}
+
+/* =Tables
+-----------------------------------------*/
+	td,th
+	{padding:2px 5px 2px 5px;}
+	caption {text-align:left;margin-top:8pt;font-weight:bold;}
+	
+	th {font-weight:normal;}
+	
+	ul {list-style-type:square;margin-left:15px!important;padding:0!important;}
+	
+	
+/* =Lists
+-----------------------------------------*/
+	dl {clear:both;}
+	dd,dt {margin:0;}
+	dt {margin-right:10px!important;font-weight:bold;}
+
+
+/* =links
+-----------------------------------------*/
+	a {
+	color: #520;
+	background: transparent;
+	text-decoration: underline;
+	}
+	
+	a[href^="/"]:after {
+	content: " (http://foxsports.news.com.au" attr(href) ") ";
+	}
+
+
+/* =ID Specific
+-----------------------------------------*/
+	#master-wrap {
+	width: auto; 
+	margin: 0 5%;
+	color: black; 
+	background: transparent;
+	}
+	
+	#branding, #banner-photo, #banner-vid {height:100px;border-bottom:1px solid #000;}
+	#branding img, #banner-photo img, #banner-vid img{float:right;}
+	#branding #ad-top {display:none;}
+	
+	#lead-pic {
+	text-align:left;
+	margin-top:8pt;
+	clear:both;
+	}
+	
+	#lead-pic img {border:1px solid #000;}
+	
+	#title,#title-tv {
+	clear:both;
+	margin-bottom:8pt;
+	}
+	
+	#title p, #title-photo p, #title-tv p, #title-vid p {text-align:right;}
+	#title p img, #title-photo img, #title-tv img, #title-vid img {margin-left:10px;}
+	
+	#title h1, #title-photo h1, #title-tv h1, #title-vid h1 {
+	float:left;
+	line-height:30pt;
+	vertical-align:bottom;
+	}
+	
+	#title h1, #title p, #title-photo h1, #title-photo p, #title-tv h1, #title-tv p, #title-vid h1, #title-vid p {margin-top:3pt;}
+	
+	#footer {
+	border-top:1px solid #000;
+	padding-top:1pt;
+	margin-top:30pt;
+	text-align:right;
+	font-size:8pt;
+	}
+	
+	#footer a {text-decoration:none;color:#0000;}
+
+
+/* =Page Specific
+-----------------------------------------*/
+	/* Homepage */
+	#content-home #lead-pic {
+	text-align:center;
+	margin:25pt 0 25pt 0;
+	}
+	
+	#content-home h1 {border-bottom:1px solid #ccc;}
+	
+	/* Gallery */
+	#banner-photo .ad {display:none;}
+	#title-photo .tools, #photo-nav {display:none!important;}
+	#gallery {clear:both;}
+	
+	/*tv Details*/
+	#title-tv a {border-bottom:1px solid #000;display:block;text-align:right;}
+	#title-tv img {margin-bottom:15pt;}
+	
+	/*video*/
+	#video {clear:both;}
+	#title-vid .tools {display:none;}

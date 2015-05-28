@@ -1,0 +1,58 @@
+@import "niftyCorners.css";
+
+div.auto_complete {
+  position:absolute;
+  width:250px;
+  background-color:white;
+  border:1px solid #888;
+  margin:0px;
+  padding:0px;
+  z-index:1;
+}
+div.auto_complete ul, div.searchresults ul  {
+  list-style-type: none;
+  margin:0px;
+  padding:0px;
+}
+
+
+
+
+div.searchresults .ulistitem {
+	padding-left: 15px;
+	padding-bottom: 8px;
+	text-indent: -16px;
+}
+
+
+
+
+div.auto_complete ul li.selected { background-color: #ffb; }
+
+div.auto_complete li, div.searchresults li {
+  list-style-type: none;
+  display:block;
+  margin:0;
+  padding:2px;
+}
+
+div.searchresults {
+	position: relative;
+	display: block;
+	}
+
+
+#list {
+  margin:0;
+  margin-top:10px;
+  padding:0;
+  list-style-type: none;
+  width:250px;
+}
+#list li {
+  margin:0;
+  margin-bottom:4px;
+  padding:5px;
+  border:1px solid #888;
+  cursor:move;
+}

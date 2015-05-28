@@ -1,0 +1,117 @@
+/* general styles for the entire site, see special styles below */
+/* styles used in the menubar are in phpddm.css */
+
+a:hover.anchor { text-decoration: none;}
+a:visited { text-decoration: none; color: #AD8B00; }
+a:link { text-decoration: none; color: #AD8B00; }
+a:hover { text-decoration: underline; }
+
+body { 
+	background-color: white; 
+	font-family: arial, helvetica, sans-serif }
+
+img.floatleft { 
+	float: left;
+	margin-top: 3px; margin-bottom: 3px; 
+	margin-left: 10px; margin-right: 10px;	}
+
+img.floatright { 
+	float: right; 
+	margin-top: 3px; margin-bottom: 3px; 
+	margin-left: 10px; margin-right: 10px; }
+
+img {
+	border: none; }
+		 
+p, li { 
+	color: black; 
+	font-family: arial, helvetica, sans-serif;
+	font-size: 14px; }
+	
+p.header { 
+	color: #CC9933; 
+	text-align: center; 
+	font-weight: bold;
+	font-size: 24px; }
+
+p.subhead { 
+	color: black; 
+	text-align: center; 
+	font-weight: bold; 
+	font-size: 16px; }
+
+table { 
+	font-family: arial, helvetica, sans-serif;
+	empty-cells: show }
+
+td { 
+	font-family: arial, helvetica, sans-serif;
+	font-size: 14px;  }
+  
+tr { font-family: arial, helvetica, sans-serif }
+
+ul.sidebarlist { list-style-type: disc }
+
+/* styles used for the people page */
+
+img.photo { 
+	float: left; 
+	margin-top: 0px; margin-bottom: 3px; 
+	margin-left: 10px; margin-right: 10px;
+	border-style: none }
+
+.people td { 
+	vertical-align: top; 
+	text-align: left; }
+
+/* styles to create the NTL diagram */
+
+.leveldiagram table {
+	background-color: #B6C698;
+	padding: 4px;
+	border-style: outset;
+	border-width: thin;
+	width: 90%;
+	margin-left: auto; margin-right: auto;
+	margin-top: 6px; margin-bottom: 6px;}
+
+.leveldiagram table.outer { 
+	background-color: #FFFFFF;}
+	
+.leveldiagram td {
+	text-align: center;}
+
+.leveldiagram p.subhead { 
+	color: black; 
+	text-align: center; 
+	font-weight: bold; 
+	font-size: 14px;}
+
+/* emphasis for the submission deadlines on the conference page */
+
+.subdeadline{
+	color: #980058;
+	font-weight: bold;
+}
+
+#LeftContent {
+	position:relative; 
+	height: 82%; 
+	width:75%; 
+	z-index:1; 
+	overflow: hidden; 
+	visibility: inherit;
+	border-right:solid;
+	border-right-width: 1px;
+}
+
+#RightContent {
+	position:absolute;
+	top:160;
+	right:10;
+	height: 82%; 
+	width:20%; 
+	z-index:2; 
+	overflow: hidden; 
+	visibility: inherit;
+}

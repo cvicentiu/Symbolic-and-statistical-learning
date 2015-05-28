@@ -1,0 +1,980 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>LING 188 / LING 288 / CS 224U: Natural Language Understanding</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<META http-equiv=Pragma content=no-cache>
+<META http-equiv=Expires content=-1>
+<META http-equiv=Pragma content=no-cache>
+<META http-equiv=Expires content=-1>
+<META content="MSHTML 6.00.2800.1458" name=GENERATOR></HEAD>
+<BODY style="BACKGROUND-COLOR: rgb(255,255,255)" vLink=#cc0000 link=#990000>
+<TABLE borderColor=#990000 width="100%" border=7>
+  <TBODY>
+  <TR>
+    <TD borderColor=#ffffff><IMG style="WIDTH: 160px; HEIGHT: 140px" alt="" 
+      src="ConversationSeat.jpg"></TD>
+    <TD borderColor=#ffffff width="100%">
+      <BLOCKQUOTE>
+        <P><FONT size=+2><STRONG><FONT color=#000000>LING 188 / LING 288 / CS 224U</FONT>
+</STRONG></FONT><FONT color=#000000><STRONG><BR><FONT 
+        size=+2>Natural Language Understanding</FONT>
+<BR><FONT size=+2>Winter 2006 </FONT></STRONG></FONT><FONT 
+        color=#990000><STRONG><FONT 
+      size=+2></FONT></STRONG></FONT></P></BLOCKQUOTE></TD></TR></TBODY></TABLE>
+
+<P>
+<TABLE cellSpacing=2 cellPadding=5 border=2>
+  <TBODY>
+  <TR bgColor=#990000>
+    <TD style="VERTICAL-ALIGN: top"><BR></TD>
+    <TD colSpan=3>
+      <DIV align=left><FONT color=#ffffff 
+      size=+2><STRONG>SCHEDULE</STRONG></FONT></DIV></TD></TR>
+  <TR bgColor=#990000>
+    <TD  VERTICAL-ALIGN: middle; TEXT-ALIGN: center" 
+    width=46>
+      <DIV align=center><FONT color=#ffffff size=+1>Week</FONT></DIV></TD>
+    <TD width=46>
+      <DIV align=center><FONT color=#ffffff size=+1>Date</FONT></DIV></TD>
+    <TD width=96>
+      <DIV align=center><FONT color=#ffffff size=+1>Who</FONT></DIV></TD>
+    <TD width=550>
+      <DIV align=center>
+      <P><FONT color=#ffffff size=+1>Topic and Readings<FONT 
+      size=-1><BR></FONT></FONT></P></DIV></TD></TR>
+
+  <TR>
+    <TD 
+      style="FONT-WEIGHT: bold; VERTICAL-ALIGN: middle; TEXT-ALIGN: center">1<BR></TD>
+    <TD><STRONG>Jan 10<BR></STRONG></TD>
+    <TD><small>Stanley <br><br> Dan</small></TD>
+    <TD>
+      <P><B><FONT color=#990000>History<BR></FONT></B></P>
+      <UL>
+        <LI><FONT size=-1>Terry Winograd. 1972. 
+Understanding Natural Language. 
+Academic Press, New York. 
+<a href="http://www.stanford.edu/class/linguist288/restricted/winograd.pdf" -->Sections 1-2.</A> <BR></FONT>
+        <LI><FONT size=-1>
+Schank and Abelson. 1976. Scripts, Plans, Goals, and Understanding. 
+<a href="http://www.stanford.edu/class/linguist288/restricted/schank.pdf">Chapters 1-3.</a>
+<BR></FONT>
+        <LI><FONT size=-1>
+OPTIONAL ADVANCED READING:
+<br>
+Robert F. Simmons. 1970.  <a href="http://portal.acm.org/citation.cfm?id=361963">
+Natural language question-answering systems: 1969</a>
+Communications of the ACM 13:1, 15-30.
+</FONT></LI></UL></TD></TR>
+
+  <TR bgColor=#990000>
+<TD colSpan=4>
+      <DIV align=left><FONT color=#ffffff 
+      size=+1><STRONG>PART I: Lexical Semantics</STRONG></FONT></DIV></TD></TR>
+
+
+  <TR>
+    <TD 
+      style="FONT-WEIGHT: bold; VERTICAL-ALIGN: middle; TEXT-ALIGN: center">1<BR></TD>
+    <TD><STRONG>Jan 12 <BR></STRONG></TD>
+    <TD><small>Dan <br><br> Guy Isely [<a href="http://www.stanford.edu/class/linguist288/student_presentations/lin.ppt">ppt</a>]<br><br>Mike LeBeau</small></TD>
+    <TD>
+      <P><B><FONT color=#990000>Lexical Relations: WordNet, Synonymy, Hyponymy<BR></FONT></B></P>
+
+<FONT size=-1>
+<p>
+Background lecture notes: <a href="http://www.stanford.edu/class/linguist288/presentations/288.06.lec2.6up.pdf">pdf</a>, <a 
+href="http://www.stanford.edu/class/linguist288/presentations/288.06.lec2.ppt">ppt</a>.
+
+<p><b>EXAMINE DATA</b>:<br> go to the WordNet site, 
+<a href="http://wordnet.princeton.edu/">http://wordnet.princeton.edu/</a>,
+and write 1 pgraph on something interesting you notice in the data.
+Include the data examples in your writeup.
+
+      <UL>
+        <LI>
+Lin, Dekang. 1998. <a href="http://portal.acm.org/citation.cfm?id=980696">
+Automatic Retrieval and Clustering of Similar Words.</a>
+COLING-ACL98, Montreal, Canada, August, 1998.
+        <LI>
+Rion Snow, Daniel Jurafsky, and Andrew Y. Ng. 2005. 
+<a href="http://ai.stanford.edu/~rion/papers/hypernym_nips04.pdf">Learning syntactic patterns for automatic hypernym discovery</a>. 
+In press, Proceedings of NIPS 2004.
+<br>
+<br>
+        <LI>
+<b>POSSIBLY USEFUL BACKGROUND READING ON GRAMMARS:</b><br>
+Jurafsky and Martin <a href="http://www.stanford.edu/class/linguist288/restricted/9.pdf">new Chapter 9: Formal Grammars of English</a>
+<br><br>
+        <LI>
+OPTIONAL ADVANCED READING:<br>
+Lin, Dekang. 1998. <a href="http://www.stanford.edu/class/linguist288/Lin-Sim.pdf">An Information-Theoretic 
+Definition of Similarity.</a>
+Proceedings of International Conference on Machine Learning, Madison,
+Wisconsin, July, 1998.
+</LI></UL>
+
+</font>
+</TD></TR>
+
+  <TR>
+    <TD 
+      style="FONT-WEIGHT: bold; VERTICAL-ALIGN: middle; TEXT-ALIGN: center">2<BR></TD>
+    <TD><STRONG>Jan 17<BR></STRONG></TD>
+    <TD TEXT-ALIGN: top><div align=top><SMALL>Dan <br><br> Jason Kusuma [<a 
+href="http://www.stanford.edu/class/linguist288/student_presentations/turney.ppt">ppt</a>]<br><br>Neal 
+Snider   
+</SMALL><BR></div></TD>
+    <TD>
+      <P><B><FONT color=#990000>Applications of Word Similarity to Automated Test Scoring
+<BR></FONT></B></P>
+
+<FONT size=-1>
+<p>
+Background lecture notes: <a href="http://www.stanford.edu/class/linguist288/presentations/288.06.lec3.6up.pdf">pdf</a>, <a 
+href="http://www.stanford.edu/class/linguist288/presentations/288.06.lec3.ppt">ppt</a>.
+
+      <UL>
+        <LI>
+Turney, P.D., Littman, M.L., Bigham, J., and Shnayder, V. (2004), 
+<a href="http://cogprints.org/4027/01/turney.pdf">
+Combining independent modules in lexical multiple-choice problems</a>. 
+Recent Advances in Natural Language Processing III: 
+Selected Papers from RANLP 2003, Eds: N. Nicolov, K. Botcheva, G. Angelova, and R. Mitkov, 
+Current Issues in Linguistic Theory (CILT), 260, John Benjamins, pp. 101-110. (NRC #47434)
+ <LI>
+<!-- a href="http://www.knowledge-technologies.com/papers/IEEEdebate.pdf" -->
+<!-- a href="http://ieeexplore.ieee.org/iel5/5254/19228/00889104.pdf?isnumber=&arnumber=889104" -->
+<a href="http://www.stanford.edu/class/linguist288/papers/IEEEdebate2000.pdf">
+The Debate on Automated Essay Grading</a>
+IEEE Intelligent Systems, SEPTEMBER/OCTOBER 2000.
+Edited by Marti Hearst.
+ <LI>
+OPTIONAL ADVANCED READING:<BR>
+Turney, P.D., and Littman, M.L. (2005). 
+<a href="http://cogprints.org/4518/01/NRC-48273.pdf">Corpus-based learning of analogies and semantic relations</a>. 
+Machine Learning, 60 (1-3), 251-278. 
+ <LI>
+OPTIONAL BACKGROUND READING:<br>
+Landauer, Foltz, and Laham, <a href="http://lsa.colorado.edu/papers/dp1.LSAintro.pdf">
+An Introduction to Latent Semantic Analysis</a>
+<br>ADVANCED:<br>
+The section on Latent Semantic Analysis (pages 554-566), in:<br>
+Christopher D. Manning Hinrich Schütze, 1999.  
+<a href="http://cognet.mit.edu/library/books/view?isbn=0262133601">
+Foundations of Statistical Natural Language Processing</a>.
+MIT Press. Cambridge, MA.
+
+</LI></UL>
+</FONT>
+</TD></TR>
+
+  <TR>
+    <TD 
+      style="FONT-WEIGHT: bold; VERTICAL-ALIGN: middle; TEXT-ALIGN: center">2<BR></TD>
+    <TD><STRONG>Jan 19 <BR></STRONG></TD>
+    <TD><SMALL>Dan <br><br> Daniel Woods [<a href="http://www.stanford.edu/class/linguist288/student_presentations/gildea-palmer.ppt">ppt</a>] <BR><br>Dan 
+</SMALL><BR></TD>
+    <TD>
+      <P><B><FONT color=#990000>Semantic/Thematic Roles<BR></FONT></B></P>
+<FONT size=-1>
+Background lecture notes: <a href="http://www.stanford.edu/class/linguist288/presentations/288.06.lec4.6up.pdf">pdf</a>, <a 
+href="http://www.stanford.edu/class/linguist288/presentations/288.06.lec4.ppt">ppt</a>.
+
+<p><b>EXAMINE DATA:</b><br>Go to the <a href="http://framenet.icsi.berkeley.edu/">FrameNet website</a>.
+Make sure you look at the Full Text Annotation, the Frame Index, and the Lexical Unit database.
+Write 1-2 pgraphs on something interesting you notice in the data.
+As usual, include the data in your writeup.
+
+<p><b>EXAMINE DATA:</b> <br>Go look at the PropBank 
+<a href="http://www.cs.rochester.edu/~gildea/PropBank/Sort/">here</a>
+or <a href="http://verbs.colorado.edu/framesets/">here</a>
+(or here: /afs/ir/data/linguistic-data/Proposition-Bank-1/propbank_1)
+and write 1-2 pgraphs on something interesting you notice in the data.
+(More info in: <a href="http://www.stanford.edu/dept/linguistics/corpora/cas-home.html">Corpora@Stanford</a>)
+
+      <UL>
+        <LI>
+Daniel Gildea and Martha Palmer. 2002. 
+<a href="http://www.cs.rochester.edu/~gildea/gildea-acl02.pdf">The Necessity of Parsing for Predicate Argument Recognition. </a>
+ACL 2002.
+ <LI>
+Charles J. Fillmore and B. T. Atkins. 
+<a href="http://www.stanford.edu/class/linguist288/restricted/fillmore.pdf">Towards a frame-based lexicon: 
+the case of RISK</a>. In Frames and Fields, edited by A. Lehrer and 
+E. Kittay, Erlbaum Publishers, 75-102, 1992. 
+<br>
+<br>
+ <LI>
+OPTIONAL ADVANCED READING:<br>
+Kristina Toutanova, Aria Haghighi, and Christopher D. Manning. 2005. 
+<a href="http://nlp.stanford.edu/~manning/papers/acl2005-srl.pdf">
+Joint Learning Improves Semantic Role Labeling. </a>
+Proceedings of the 43nd Annual Meeting of the Association for Computational Linguistics 
+(ACL 2005), pp. 589-596.
+</LI></UL>
+</FONT>
+</TD></TR>
+
+  <TR>
+    <TD 
+      style="FONT-WEIGHT: bold; VERTICAL-ALIGN: middle; TEXT-ALIGN: center">3<BR></TD>
+    <TD><STRONG>Jan 24 <BR></STRONG></TD>
+    <TD><small>Stanley <br><br> David Hall [<a href="http://www.stanford.edu/class/linguist288/student_presentations/mani-schiffmann.ppt">ppt</a>] <br><br>Greg Donaker 
+[<a href="http://www.stanford.edu/class/linguist288/student_presentations/lapata.ppt">ppt</a>] 
+</small></TD>
+    <TD>
+      <P><B><FONT color=#990000> Temporal Relations <BR></FONT></B></P>
+<FONT size=-1>
+<p><b>[Think what project you want to do. (<a href="http://www.stanford.edu/class/linguist288/project_ideas">project ideas</a>)] </b>
+
+<p>
+Background lecture notes: <a href="http://www.stanford.edu/class/linguist288/presentations/288.06.lec5.4up.pdf">pdf</a>, <a 
+href="http://www.stanford.edu/class/linguist288/presentations/288.06.lec5.ppt">ppt</a>.
+
+<p>EXAMINE DATA: <br>go look at the <a href="http://www.cs.brandeis.edu/~jamesp/arda/time/timebank.html">TimeBank</a>
+and write 1-2 pgraphs on something interesting you notice in the data.
+<br>(<font color="blue">now</font> also available here: /afs/ir/data/linguistic-data/TimeBank-1.1)
+
+      <UL>
+        <LI>
+BACKGROUND SKIMMING TO HELP IN THE ABOVE DATA ANALYSIS<br>
+J. Pustejovsky, B. Ingria, R. Sauri, J. Castano, J. Littman, R. Gaizauskas, A. Setzer, G. Katz,  and I. Mani. 
+(2004). <a href="http://complingone.georgetown.edu/~linguist/papers/TimeML.pdf">
+The Specification Language TimeML. </a> In Mani, I., Pustejovsky, J., and Gaizauskas, R (eds.).
+ (2004) The Language of Time: A Reader. Oxford University Press
+ <LI>
+Mani, I., and Schiffman, B. (2005). 
+<a href="http://complingone.georgetown.edu/~linguist/papers/timeml-book-chapter.pdf">
+Temporally Anchoring and Ordering Events in News (DRAFT)</a>. In J. Pustejovsky and R. Gaizauskas, Time and Event Recognition in Natural Language. John Benjamins, to appear.
+ <LI>
+Lapata, Mirella and Alex Lascarides. 2004. 
+<a href="http://homepages.inf.ed.ac.uk/mlap/Papers/naacl04b.pdf">Inferring Sentence-internal Temporal Relations.</a> 
+In Proceedings of the North American Chapter of the Assocation of Computational Linguistics, 153-160. Boston
+ <LI>
+OPTIONAL ADVANCED READING:<br>
+M. Moens and Mark Steedman, 1988.
+<a href="http://acl.ldc.upenn.edu/J/J88/J88-2003.pdf">Temporal Ontology and Temporal Reference.</a> 
+ Computational Linguistics, vol. 14(2), 1988.
+</LI></UL>
+</FONT>
+</TD></TR>
+
+  <TR>
+    <TD 
+      style="FONT-WEIGHT: bold; VERTICAL-ALIGN: middle; TEXT-ALIGN: center">3<BR></TD>
+    <TD><STRONG>Jan 26 <BR></STRONG></TD>
+    <TD><small>Dan <br><br>Nadeem Riaz [<a href="http://www.stanford.edu/class/linguist288/student_presentations/lapata2003.ppt">ppt</a>]<br><br>Peter 
+Ciccolo [<a href="http://www.stanford.edu/class/linguist288/student_presentations/MetaphorComprehension.ppt">ppt</a>]</small></TD>
+    <TD>
+      <P><B><FONT color=#990000>Metaphor and Metonymy<BR></FONT></B></P>
+<FONT size=-1>
+<p>
+<b>[Submit a one paragraph description of the project you want to do.]</b> 
+<p>
+Background lecture notes: <a href="http://www.stanford.edu/class/linguist288/presentations/288.06.lec6.6up.pdf">pdf</a>, <a 
+href="http://www.stanford.edu/class/linguist288/presentations/288.06.lec6.ppt">ppt</a>.
+
+      <UL>
+ <LI>
+Lapata, Maria and Alex Lascarides. 2003. 
+<a href="http://acl.ldc.upenn.edu/J/J03/J03-2004.pdf">A Probabilistic Account of Logical Metonymy.</a> Computational Linguistics 29:2, 263-317.
+ <LI>
+Kintsch, W. (2000) 
+<a href="http://psychonomic.org/search/view.cgi?id=2443">
+Metaphor comprehension: A computational theory</a>. Psychonomic
+Bulletin & Review, 7, 257-266.
+</LI>
+<br><br>
+        <LI>
+<b>BACKGROUND SKIMMING:</b><br> Lakoff and Johnson. <a href="http://www.stanford.edu/class/linguist288/restricted/metaphor.pdf">"Metaphors We Live By"</a>. pages 1-45.
+</UL>
+</FONT>
+</TD></TR>
+
+  <TR bgColor=#990000>
+<TD colSpan=4>
+      <DIV align=left><FONT color=#ffffff 
+      size=+1><STRONG>PART II: Sentential Semantics and Inference</STRONG></FONT></DIV></TD></TR>
+
+  <TR>
+    <TD 
+      style="FONT-WEIGHT: bold; VERTICAL-ALIGN: middle; TEXT-ALIGN: center">4<BR></TD>
+    <TD><STRONG>Jan 31 <BR></STRONG></TD>
+    <TD><small>Stanley <br><br> Brad Moore [<a href="http://www.stanford.edu/class/linguist288/student_presentations/CompSem.ppt">ppt</a>]<br><br>Ari Steinberg [<a 
+href="http://www.stanford.edu/class/linguist288/student_presentations/manning.pdf">pdf</a>] 
+</small></TD>
+    <TD>
+      <P><B><FONT color=#990000> Introduction to Computational Semantics <BR></FONT></B></P>
+
+<p>
+<FONT size=-1>
+
+Background lecture notes: <a href="http://www.stanford.edu/class/linguist288/presentations/ClassPresentationIntroCompSemantics.pdf">pdf</a>, <a 
+href="http://www.stanford.edu/class/linguist288/presentations/ClassPresentationIntroCompSemantics.ppt">ppt</a>.
+
+<p>
+<p>EXAMINE DATA: <br>Look at the Semantic Test Suite of the 
+<a href="http://www.cogsci.ed.ac.uk/~fracas/">FraCaS</a> project
+(pages 63-120 in <a href="http://www.cogsci.ed.ac.uk/~fracas/deliverables.html">deliverable 16</a>)
+and write 1-2 pgraphs on something interesting you notice in the data. 
+(<a href="http://www.stanford.edu/class/linguist288/data/syllogisms-fracas.txt">Here</a> is a text version.)
+
+
+
+      <UL>
+ <LI>
+Patrick Blackburn and Johan Bos. 2003. 
+<a href="http://www.iccs.informatics.ed.ac.uk/~jbos/pubs/theoria.pdf">Computational Semantics</a>. Theoria 18(1): 27-45.
+ <li>
+Chris Manning. 2005. 
+<a href="http://www.stanford.edu/class/cs224n/handouts/cl-semantics-new.pdf">
+An Informal but Respectable Approach to Computational Semantics</a>.
+<br>
+<br>
+ <LI>
+ <b>BACKGROUND</b> READING ON LOGIC, for those who lack this background or would like to brush up on it:<br>
+ <!-- [appendixes of Allen or:]<br>
+ Pages 1-29 and Appendix B of Patrick Blackburn and Johan Bos, 2005.
+Representation and Inference for Natural Language:
+A First Course in Computational Semantics, CSLI Publications.
+ <br>Or: -->
+ See the <b>class notes</b> from <a href="http://cs157.stanford.edu/">CS157: Computational Logic</a>,
+ chapters 1,2,3,4,6,8 (you may want to read more on the computational parts: chapters 5 and 9, and look around the website 
+for more info and exercises).
+ <LI>
+ <b>OPTIONAL BACKGROUND SKIMMING:</b>
+<!-- <ul>
+ <li>
+ James Allen. 1995. Natural Language Understanding, Benjamin Cummings, 2nd edition.
+<br>Chapter 8: "Semantics and Logical Form". Chapter 9: "Linking Syntax and Semantics".
+ <li> -->
+ Daniel Jurafsky and James H. Martin. 2000.
+Speech and Language Processing, Prentice-Hall.
+<br>
+<a href="http://www.stanford.edu/class/linguist288/restricted/jm11.pdf">Chapter 11</a>: "Features and Unification". <br>
+<a href="http://www.stanford.edu/class/linguist288/restricted/jm14.pdf">Chapter 14</a>: "Representing Meaning". <br>
+<a href="http://www.stanford.edu/class/linguist288/restricted/jm15.pdf">Chapter 15</a>: "Semantic Analysis". 
+</ul>
+
+
+</LI></UL>
+</FONT>
+</TD></TR>
+
+
+  <TR>
+    <TD 
+      style="FONT-WEIGHT: bold; VERTICAL-ALIGN: middle; TEXT-ALIGN: center">4<BR></TD>
+    <TD><STRONG>Feb 2 <BR></STRONG></TD>
+    <TD><small>Stanley <br><br> Anubha Kothari [<a 
+href="http://www.stanford.edu/class/linguist288/student_presentations/predicate_logic_unplugged.ppt">ppt</a>]<BR><br>Laura Whitton[<a 
+href="http://www.stanford.edu/class/linguist288/student_presentations/scope_preferences.ppt">ppt</a>]</small></TD>
+    <TD>
+      <P><B><FONT color=#990000>Scope Ambiguity and Underspecified Representations<BR></FONT></B></P>
+<FONT size=-1>
+<p>
+<b>[submit a list of 5 papers you will write about in your literature review]</b>
+
+<p>
+Background lecture notes: <a href="http://www.stanford.edu/class/linguist288/presentations/ClassPresentationScopeAndUnderspec.pdf">pdf</a>, <a 
+href="http://www.stanford.edu/class/linguist288/presentations/ClassPresentationScopeAndUnderspec.ppt">ppt</a>.
+
+<ul>
+ <li>
+Johan Bos (1996). 
+<a href="http://www.coli.uni-saarland.de/~bos/plu.ps">
+Predicate Logic Unplugged</a>. [<a href="http://www.stanford.edu/class/linguist288/papers/plu.pdf">pdf</a>] Proceedings of the Tenth Amsterdam Colloquium. Pages 
+133-142.
+<br>Also, take a look at the diagrams in:<br>
+Patrick Blackburn and Johan Bos. 2003.  
+<a href="http://www.indiana.edu/~nasslli/datas/BlackbornBos.pdf">
+Computational semantics for natural language, p.123-135</a> (the numbers printed on the page, not the file page numbers),
+Lecture notes, 2nd North American Summer School in Logic, Language, and Information. 
+(This is essentially a slightly more condense version of pp. 127-143 of
+Patrick Blackburn and Johan Bos, 2005. 
+<!-- a href="http://www.blackburnbos.org" -->
+Representation and Inference for Natural Language:
+A First Course in Computational Semantics <!-- /a -->,
+CSLI Publications.)
+
+ <li>
+Derrick Higgins and Jerrold M. Sadock (2003).
+<a href="http://www.stanford.edu/class/linguist288/papers/HigginsSadock.pdf">
+A machine learning approach to modeling scope preferences</a>.
+Computational Linguistics archive
+Volume 29,  Issue 1  (March 2003),
+Pages: 73 - 96
+
+<br><br>
+ <li>OPTIONAL:<br>
+ Ann Copestake, Dan Flickinger, Carl Pollard, and Ivan A. Sag. 2003.
+Minimal Recursion Semantics: an Introduction. 
+<a href="http://lingo.stanford.edu/sag/papers/copestake.pdf">Revised version of November, 2003</a> (in press).
+ <li>OPTIONAL further reading:<br>
+ Kees van Deemter and Stanley Peters (eds.) 1996.
+ "Ambiguity and Underspecification". CSLI Lecture Notes no. 55.
+
+<!-- <li>OPTIONAL ADVANCED:<br>
+Johan Bos (2004): Computational Semantics in Discourse: 
+Underspecification, Resolution, and Inference. Journal of Logic, Language and Information 13(2): 139-157. 
+[I'm afraid it is too hard to understand for someone who doesn't already know
+about Hole Semantics, because the paper jumps right into DRSs] -->
+</ul>
+
+ </ul>
+
+
+
+</UL>
+</FONT>
+
+</TD></TR>
+
+
+
+
+
+  <TR>
+    <TD 
+      style="FONT-WEIGHT: bold; VERTICAL-ALIGN: middle; TEXT-ALIGN: center">5<BR></TD>
+    <TD><STRONG>Feb 7 <BR></STRONG></TD>
+    <TD><small>Iddo <br><br>Anton Ivanov<br><br>Iddo</small></TD>
+    <TD>
+      <P><B><FONT color=#990000>Interfaces
+<BR></FONT></B></P>
+
+<FONT size=-1>
+
+<p>
+<b>[no need to submit pgraphs for today; instead, submit paper and data pgraphs for Feb 9 and Feb 14.]</b>
+
+<p>
+<ul>
+ <LI>
+
+I. Androutsopoulos, G.D. Ritchie and P. Thanisch, 1997.
+<a href="http://xxx.lanl.gov/PS_cache/cmp-lg/pdf/9611/9611006.pdf">
+"A Framework for Natural Language Interfaces to Temporal Databases"</a>. In 
+Patel, M. (Ed.), Proceedings of the 20th Australasian Computer Science Conference, Sydney, Australia, pp. 307-315. 
+
+<br>Also look at section 4.9 and skim pages 14-24 of:
+<br>
+I. Androutsopoulos, G.D. Ritchie and P. Thanisch, 1998.
+<a href="http://xxx.lanl.gov/PS_cache/cmp-lg/pdf/9803/9803002.pdf">
+"Time, Tense and Aspect in Natural Language Database Interfaces"</a>.
+Natural 
+Language Engineering, 4(3):229-276.
+(The first paper is a short version of the second paper)
+
+
+ <LI>
+ Iddo Lev. 2006. <a href="http://www.stanford.edu/~iddolev/papers/glue_introduction.pdf">
+The Syntax-Semantics Interface:
+A Gentle Introduction to Glue Semantics</a>. Unpublished MS, Stanford University. pages 1-24 (you may skip sections 1.2, 
+1.3, 2.6, and skim sections 3 and 4).
+<br><a href="http://www.stanford.edu/class/linguist288/presentations/ling288.winter2006.glue.ppt">[glue presentation - ppt]</a>
+<!-- <LI>OPTIONAL:<br>
+<a href="http://www.coli.uni-saarland.de/projects/milca/courses/comsem/html/index.html">An online course</a> -->
+
+<br><br>
+ <li>OPTIONAL BACKGROUND READING: <br>
+I. Androutsopoulos, G.D. Ritchie, and P. Thanisch, 1995. 
+
+<a href="http://xxx.lanl.gov/PS_cache/cmp-lg/pdf/9503/9503016.pdf">
+"Natural Language Interfaces to Databases - An Introduction"</a>. Natural 
+Language Engineering, 1(1):29-81.
+
+
+ <li>OPTIONAL ADVANCED READING: <br>
+(This is about Packing, an alternative to Underspecified Representations)<br>
+
+King et al. 2000
+<a href="http://www.ims.uni-stuttgart.de/projekte/pargram/paper/esslli00.pdf">Ambiguity Management in Grammar Writing</a>.
+<!--
+Dick Crouch. 2005. 
+<a href="http://www2.parc.com/istl/groups/nltt/papers/iwcs05_crouch.pdf">
+Packed Rewriting for Mapping Semantics to KR</a>.
+ In Proceedings of the Sixth International Workshop on Computational Semantics, Tilburg. -->
+
+ <li>OPTIONAL FURTHER READINGS:
+<a href="http://www.stanford.edu/~iddolev/comsem_bibliography.html">
+Some more</a>
+
+</ul>
+</font>
+
+
+</tr>
+
+
+
+<TR>
+<TD colSpan=4>
+Note: Stanley will be away Feb 9 and 14, and therefore the last two classes of Part II are postponed to Feb 16 and 21.
+</TD></TR>
+
+
+  <TR bgColor=#990000>
+<TD colSpan=4>
+      <DIV align=left><FONT color=#ffffff 
+      size=+1><STRONG>PART III: Discourse and Coherence</STRONG></FONT></DIV></TD></TR>
+
+  <TR>
+    <TD 
+      style="FONT-WEIGHT: bold; VERTICAL-ALIGN: middle; TEXT-ALIGN: center">5<BR></TD>
+    <TD><STRONG>Feb 9 <BR></STRONG></TD>
+    <TD><small>Dan<br><br>Tristan Harris<br><br>Surabhi Gupta</small></TD>
+    <TD>
+      <P><STRONG><FONT color=#990000>Coreference, Anaphora, Entities<BR></FONT></STRONG></P>
+<FONT size=-1>
+Background lecture notes: <a href="http://www.stanford.edu/class/linguist288/presentations/288.coref.6up.pdf">pdf</a>, <a 
+href="http://www.stanford.edu/class/linguist288/presentations/288.coref.ppt">ppt</a>.
+
+<p><b>[Submit a 15-page double spaced literature review of about 5 papers that are relevant for your 
+project. Please email it to: <tt>linguist288-win0506-staff @ lists.stanford.edu 
+</tt> by Monday February 13]</b>
+
+<p>EXAMINE DATA: <br>Look at the SWBD information-structure annotations 
+in <pre>/afs/ir.stanford.edu/data/linguistic-data/Treebank/LINK-swbd/backtrans</pre>
+and write 1-2 pgraphs on something interesting you notice in the data.
+Not all the dialogues there are annotated for information structure; you can do
+<pre>
+egrep -l '_old' * | more
+</pre>
+to find out which ones.
+      <UL>
+<li>
+<p> You'll want to skim this to help you understand the annotations:<br>
+<a href="http://www.stanford.edu/class/linguist288/papers/guidelines-infostatus.pdf">Nissim, Malvina. 2003. Annotation Scheme for Information Status in Dialogue</a>.
+<br> Also look at guidelines-infostatus.pdf in the LINK corpus directory linguistic-data/Treebank/LINK-swbd.
+ <LI>
+Kehler, Chapter 18 in Jurafsky and Martin, pages 1-26 in <a href="http://www.stanford.edu/class/linguist288/restricted/18.pdf">this file</a> (pages 669-694 in the book)
+ <LI>
+Vincent Ng and Claire Cardie. 2002. 
+<a href="http://acl.ldc.upenn.edu/P/P02/P02-1014.pdf">
+Improving Machine Learning Approaches to Coreference Resolution</a>.
+ACL 2002.
+<br>
+        <LI>
+<b>BACKGROUND SKIM:</b> <br>Gundel, Jeanette, Nancy Hedberg and Ron Zacharski. 1993. 
+<a href="http://www.jstor.org/cgi-bin/jstor/printpage/00978507/ap020279/02a00020/0?frame=noframe&dpi=3&userID=800cbf43@stanford.edu/01cc99333c2bdd10888104ca4&backcontext=table-of-contents&backurl=/cgi-bin/jstor/listjournal/00978507/ap020279%3fframe%3dframe%26dpi%3d3%26userID%3d800cbf43@stanford.edu/01cc99333c2bdd10888104ca4%26config%3djstor&action=download&config=jstor">
+Cognitive Status and the Form of Referring Expressions in Discourse</a>. 
+Language 69.274-307
+<br>
+
+</LI></UL>
+</FONT>
+</TD></TR>
+
+
+
+  <TR>
+    <TD 
+      style="FONT-WEIGHT: bold; VERTICAL-ALIGN: middle; TEXT-ALIGN: center">6<BR></TD>
+    <TD><STRONG>Feb 14 <BR></STRONG></TD>
+    <TD><small>Dan<br><br>William Morgan<br><br>Shawn Standefer</small></TD>
+    <TD>
+      <P><STRONG><FONT color=#990000>Coherence</FONT></STRONG><BR></P>
+<FONT size=-1>
+Background lecture notes: <a href="http://www.stanford.edu/class/linguist288/presentations/288.cohere.6up.pdf">pdf</a>, <a 
+href="http://www.stanford.edu/class/linguist288/presentations/288.cohere.ppt">ppt</a>.
+<p>EXAMINE DATA:<br> Look at the RST-annotated corpus from the LDC
+and write 1-2 pgraphs on something interesting you notice in the data.
+The data is here:
+<pre>
+/afs/ir/data/linguistic-data/RST_discourse_treebank
+</pre>
+We recommend you look in this directory
+<pre>
+data/RSTtrees-WSJ-main-1.0/TRAINING
+</pre>
+and look at the .lisp.name files in the various .out.rst directories.
+      <UL>
+ <LI>
+Marcu and Echihabi. 
+<a href="http://www.isi.edu/~marcu/papers/relations-acl2002.pdf">
+An Unsupervised Approach to Recognizing Discourse Relations.</a> ACL 2003 
+ <LI>
+Wolf, Florian and Edward Gibson. 2005.
+ <a href="http://www.stanford.edu/class/linguist288/restricted/wolfgibson.pdf">
+ Representing Discourse Coherence: A Corpus-Based Study</a>
+Computational Linguistics 31:2.
+<br>
+<br>
+        <LI>
+<b>BACKGROUND SKIMMING:</b> Mann, W.C. and S.A. Thompson. 1988.  
+<a href="http://www.stanford.edu/class/linguist288/restricted/rst.pdf">Rhetorical Structure Theory: Toward a Functional Theory of Text Organization</a>. Text 8(3) 
+(243-281).
+ <LI>
+<b>BACKGROUND SKIMING:</b> Kehler, Chapter 18 in Jurafsky and Martin, pages 26-39 in <a href="http://www.stanford.edu/class/linguist288/restricted/18.pdf">this file</a>
+(pages 694-707 in the book).
+
+ <LI>
+<b>OPTIONAL ADVANCED READING</b><br>
+Marcu, Daniel. 2000. 
+<a href="http://www.isi.edu/~marcu/papers/discourse-book/">
+The Theory and Practice of Discourse Parsing and Summarization.
+</LI></UL>
+</FONT>
+</TD></TR>
+
+
+<!---------  DELETED
+  <TR>
+    <TD 
+      style="FONT-WEIGHT: bold; VERTICAL-ALIGN: middle; TEXT-ALIGN: center">6<BR></TD>
+    <TD><STRONG>Feb 14 <BR></STRONG></TD>
+    <TD><small>Dan<br><br>?<br><br>?</small></TD>
+    <TD>
+      <P><B><FONT color=#990000>More on Coreference</FONT></B></P>
+<FONT size=-1>
+      <UL>
+
+        <LI>
+Regina Barzilay and Mirella Lapata, 2005. 
+<a href="http://acl.ldc.upenn.edu/P/P05/P05-1018.pdf">
+Modeling Local Coherence: An Entity-Based Approach.</a> ACL 2005
+</LI></UL>
+</FONT>
+</TD></TR>
+
+-->
+
+
+  <TR bgColor=#990000>
+<TD colSpan=4>
+      <DIV align=left><FONT color=#ffffff 
+      size=+1><STRONG>PART II -- continuation: Sentential Semantics and Inference</STRONG></FONT></DIV></TD></TR>
+
+
+  <TR>
+    <TD 
+      style="FONT-WEIGHT: bold; VERTICAL-ALIGN: middle; TEXT-ALIGN: center">6<BR></TD>
+    <TD><STRONG>Feb 16 <BR></STRONG></TD>
+    <TD><small>Stanley <br><br> Anna Rafferty<br><br>Aleksandra Korolova [<a 
+href="http://www.stanford.edu/class/linguist288/student_presentations/cyc.ppt">ppt</a>]</small></TD>
+    <TD>
+      <P><B><FONT color=#990000>Representation and Knowledge (Ontologies and KRR for NLU)
+<BR></FONT></B></P>
+
+<FONT size=-1>
+<p><b>[Submit to us by email a one page project description by Monday Feb 20 at noon.]</b>
+
+<p>
+<ul>
+ <li>L.K. Schubert and C.H. Hwang, 
+<a href="http://www.cs.rochester.edu/~schubert/papers/el-meets-lrrh.ps">
+Episodic Logic meets Little Red Riding Hood: 
+A comprehensive, natural representation for language understanding</a> [<a href="http://www.stanford.edu/class/linguist288/papers/el-meets-lrrh.pdf">pdf</a>]. 
+in L. Iwanska and S.C. Shapiro (eds.), 
+Natural Language Processing and Knowledge Representation: 
+Language for Knowledge and Knowledge for Language, MIT/AAAI Press, 
+Menlo Park, CA, and Cambridge, MA, 2000, 111-174. 
+ <li><a href="http://www.stanford.edu/class/linguist288/cyc.html">Some CYC paper</a>.
+</ul>
+</font>
+
+
+
+</TD></TR>
+
+  <TR>
+    <TD 
+      style="FONT-WEIGHT: bold; VERTICAL-ALIGN: middle; TEXT-ALIGN: center">7<BR></TD>
+    <TD><STRONG>Feb 21 <BR></STRONG></TD>
+    <TD><small>Stanley <br><br> Shawn Standefer<br><br>Guy Isely</small></TD>
+    <TD>
+      <P><B><FONT color=#990000> What Is A Good Semantic Representation <BR></FONT></B></P>
+<FONT size=-1>
+
+
+<!-- <p><b>QUESTION to think about:</b><br>
+Please take a peek at Hobbs' papers that you need to read for next class (Feb 23).
+ How do Hobbs' papers fare in light of the view expressed in McDermott's paper? -->
+
+<p>
+
+<FONT size=-1>
+Background lecture notes: <a href="http://www.stanford.edu/class/linguist288/presentations/ClassPresentationGoodSemRep.pdf">pdf</a>, <a 
+href="http://www.stanford.edu/class/linguist288/presentations/ClassPresentationGoodSemRep.ppt">ppt</a>.
+
+
+<p>Note: originally, the discussion of McDermott's paper was connected to the Hobbs papers that you need to read for next 
+class (Feb 23). Instead, we will briefly mention Hobbs' papers in the background talk as they relate to McDermott's paper. 
+If you wish, you may take a brief sneak peek at the Hobbs papers now.
+
+
+      <UL>
+ <LI>
+Drew McDermott. 1978. 
+<a href="http://www.stanford.edu/class/linguist288/restricted/mcdermott.pdf">Tarskian semantics, or: no notation without denotation!</a> Cognitive Science, 2:272--282, 
+1978. 
+Reprinted in Grosz, Sparck Jones and Webber (eds), 1985, Readings in
+Natural Language Processing, Morgan Kaufmann. 
+ <LI>
+Lawrence W. Barsalou, W. Kyle Simmons, Aron K. Barbey and Christine D. Wilson, 2003.
+<a href="http://www.stanford.edu/class/linguist288/papers/barsalou_TICS_review_03.pdf">Grounding conceptual knowledge in
+modality-specific systems</a>. TRENDS in Cognitive Sciences, Vol.7, No.2.
+ 
+
+
+</ul>
+
+</LI></UL>
+</FONT>
+</TD></TR>
+
+
+  <TR>
+    <TD 
+      style="FONT-WEIGHT: bold; VERTICAL-ALIGN: middle; TEXT-ALIGN: center">7<BR></TD>
+    <TD><STRONG>Feb 23 <BR></STRONG></TD>
+    <TD><small>Guest Speaker:<br><br><a href="http://www.cs.washington.edu/homes/pedrod/">Pedro Domingos</a></small></TD>
+    <TD>
+      <P><STRONG><FONT color=#990000>Combining Logic and Probabilities</FONT></STRONG><BR></P>
+<FONT size=-1>
+
+<p>
+Talk: "Markov Logic: A Representation Language for Natural Language Semantics" [<a 
+href="http://www.stanford.edu/class/linguist288/presentations/pedro.txt">abstract</a>] [<a href="http://www.cs.washington.edu/homes/pedrod/mlnlp.ppt">slides</a>]
+
+<p>
+<ul>
+ <li>
+ M. Richardson and P. Domingos, 2006.
+<a href="http://www.cs.washington.edu/homes/pedrod/papers/mlj05.pdf">
+"Markov Logic Networks"</a>, Machine Learning, in press. 
+        <LI>
+Jerry R. Hobbs, Mark Stickel, Paul Martin, and Douglas Edwards. 1988.
+<a href="http://www.stanford.edu/class/linguist288/papers/hobbs-interpretation.pdf">
+Interpretation as Abduction.</a>  In Proceedings of the 26th Annual Meeting of the ACL.
+ <LI><b>BACKGROUND SKIMMING</b>:<br>
+Jerry R. Hobbs. 1985. 
+<a href="http://www.stanford.edu/class/linguist288/papers/hobbs-promiscuity">
+Ontological promiscuity</a>. Proceedings of the 23rd annual meeting of the 
+Association for Computational Linguistics, 60-69   
+</ul>
+
+
+</td></tr>
+
+
+
+
+  <TR bgColor=#990000>
+<TD colSpan=4>
+      <DIV align=left><FONT color=#ffffff 
+      size=+1><STRONG>PART III -- continuation: Discourse and Coherence</STRONG></FONT></DIV></TD></TR>
+
+
+  <TR>
+    <TD 
+      style="FONT-WEIGHT: bold; VERTICAL-ALIGN: middle; TEXT-ALIGN: center">8<BR></TD>
+    <TD><STRONG>Feb 28 <BR></STRONG></TD>
+    <TD><small>Stanley<br><br>Michael Chung [<a href="http://www.stanford.edu/class/linguist288/student_presentations/dirt.ppt">ppt</a>]<br><br>Chloe 
+Kiddon</small></TD>
+    <TD><STRONG></STRONG><B><FONT color=#990000>Paraphrasing in Generation<BR></FONT></B>
+<FONT size=-1>
+      <UL>
+        <LI>
+Dekang Lin and Patrick Pantel. 2001. 
+<a href="http://www.isi.edu/~pantel/Download/Papers/2001/jnle01.pdf">
+Discovery of Inference Rules for
+ Question Answering</a>. Natural Language Engineering 7(4):343-360.
+ <LI>
+Regina Barzilay and Lillian Lee. 2003. 
+<a href="http://arxiv.org/PS_cache/cs/pdf/0304/0304006.pdf">
+Learning to Paraphrase: An
+Unsupervised Approach Using Multiple-Sequence Alignment</a>. Proceedings of
+HLT-NAACL 2003, pp. 16--23
+</LI></UL>
+</FONT>
+</TD></TR>
+
+  <TR>
+    <TD 
+      style="FONT-WEIGHT: bold; VERTICAL-ALIGN: middle; TEXT-ALIGN: center">8<BR></TD>
+    <TD><STRONG>Mar 2 <BR></STRONG></TD>
+    <TD><small>Stanley<br><br>David Hall [<a href="http://www.stanford.edu/class/linguist288/student_presentations/Daume-Marcu.ppt">ppt</a>]<br><br>Stanley</small></TD>
+    <TD>
+      <P><B><FONT color=#990000></FONT></B></P><B><FONT color=#990000>Summarization and Generation
+<BR></FONT></B>
+<FONT size=-1>
+      <UL>
+
+<!--        <LI>
+Marilyn Walker, Owen Rambow, and Monica Rogati. Training a
+Sentence Planner for Spoken Dialogue Using Boosting Computer Speech and
+Language. Special Issue on Spoken Language Generation, July 2002.   -->
+ <LI>
+Hal Daume III and Daniel Marcu (2005). 
+<a href="http://www.isi.edu/~marcu/papers/daume05alignments.pdf">
+Induction of Word and Phrase Alignments
+for Automatic Document Summarization</a>. Computational Linguistics, To appear
+ <LI>
+Stefan Riezler, Tracy Holloway King, Richard Crouch, and Annie Zaenen. 2003. 
+<a href="http://www2.parc.com/istl/members/riezler/PAPERS/NAACL03.pdf">
+Statistical sentence condensation using ambiguity packing and stochastic 
+disambiguation methods for Lexical-Functional Grammar</a>. 
+In Proceedings of the Human Language Technology Conference and the 3rd Meeting of
+ the North American Chapter of the Association for Computational Linguistics (HLT-NAACL'03), Edmonton, Canada.
+<br><br>
+ <LI><b>ADDITIONAL SKIMMING</b> (gives more details):<br>
+Richard Crouch, Tracy Holloway King, John T. Maxwell III, Stefan Riezler, and Annie Zaenen. 2004. 
+<a href="http://cslipublications.stanford.edu/LFG/9/lfg04crouchetal.pdf">
+Exploiting F-structure Input for Sentence Condensation</a>. 
+Proceedings of the LFG'04 Conference. CSLI Publications. pp. 167-187
+
+</LI></UL>
+</FONT>
+</TD></TR>
+
+  <TR bgColor=#990000>
+<TD colSpan=4>
+      <DIV align=left><FONT color=#ffffff 
+      size=+1><STRONG>PART IV: Applications and Projects</STRONG></FONT></DIV></TD></TR>
+
+
+  <TR>
+    <TD 
+      style="FONT-WEIGHT: bold; VERTICAL-ALIGN: middle; TEXT-ALIGN: center">9<BR></TD>
+    <TD><STRONG>Mar 7 <BR></STRONG></TD>
+    <TD><small>Dan and Stanley<br><br>Pi-Chuan Chang <br><br>Anna Rafferty</small></TD>
+    <TD>
+      <P><B><FONT color=#990000> Applications: Textual Inference <BR></FONT></B></P>
+
+<FONT size=-1>
+Background lecture notes: <a href="http://www.stanford.edu/class/linguist288/presentations/288.inference.6up.pdf">pdf</a>, <a 
+href="http://www.stanford.edu/class/linguist288/presentations/288.inference.ppt">ppt</a>.
+<ul>
+ <li>
+Bobrow, Danny, Cleo Condoravdi, Richard Crouch, Ronald Kaplan, Lauri
+Karttunen, Tracy Holloway King, Valeria de Paiva, and Annie Zaenen.  
+2005. <a href="http://www2.parc.com/istl/groups/nltt/papers/textual-inference.pdf">A
+Basic Logic for Textual Inference.</a> In Proceedings of the AAAI  
+Workshop on
+Inference for Textual Question Answering, Pittsburgh, PA.
+<li>
+MacCartney, Bill, Trond Grenager, Marie-Catherine de Marneffe, 
+Daniel Cer, and Christopher D. Manning. 2006.
+<a href="http://www.stanford.edu/class/linguist288/papers/rte-naacl06.pdf">Learning to recognize features of valid textual entailments.</a>
+To appear in Proceedings of NAACL-2006.
+<br>
+<p>
+<b>OPTIONAL ADVANCED READING</b>
+<br>
+ <LI>
+Rowan Nairn, Cleo Condoravdi, Lauri Karttunen, 2006.
+<a href="http://www2.parc.com/istl/members/karttune/publications/icos2006.pdf">
+Computing Relative Polarity for Textual Inference</a>.
+In the Proceedings of ICoS-5 (Inference in Computational Semantics). April 20-21, 2006. 
+ <LI>
+Zaenen, Annie, Lauri Karttunen, and Richard Crouch. 2005. 
+<a href="http://www2.parc.com/istl/groups/nltt/papers/KZC-ACL05.pdf">Local Textual
+Inference: Can it be Defined or Circumscribed?</a> In Proceedings of 
+ACL 2005 Workshop on Empirical Modelling of Semantic Equivalence and Entailment
+<li>
+Manning, Christopher D. 2006.
+<a href="http://www.stanford.edu/class/linguist288/papers/LocalTextualInference.pdf">Local Textual Inference: It's hard to circumscribe,
+but you know it when you see it - and NLP needs it</a>. Manuscript.
+<li>
+Iddo Lev, <a href="http://www.stanford.edu/class/linguist288/papers/thoughts_rte1.pdf">Some Thoughts About RTE</a>.
+<li>
+Richard Crouch, Lauri Karttunen, Annie Zaenen, 2006.
+<a href="http://www2.parc.com/istl/members/karttune/publications/reply-to-manning.pdf">
+Circumscribing is not excluding: A response to Manning</a>
+
+ </ul>
+
+
+</FONT>
+</TD></TR>
+
+
+</TD></TR>
+
+  <TR>
+    <TD 
+      style="FONT-WEIGHT: bold; VERTICAL-ALIGN: middle; TEXT-ALIGN: center">9<BR></TD>
+    <TD><STRONG>Mar 9 <BR></STRONG></TD>
+    <TD><small>Dan <br><br>Anton Ivanov<br><br>Surabhi Gupta</small></B></TD>
+    <TD>
+      <P><B><FONT color=#990000> Application: Lie Detection <BR></FONT></B></P>
+<FONT size=-1>
+Background lecture notes: <a href="http://www.stanford.edu/class/linguist288/presentations/288.lies.6up.pdf">pdf</a>, <a 
+href="http://www.stanford.edu/class/linguist288/presentations/288.lies.ppt">ppt</a>.
+<ul>
+ <li>
+B. M. DePaulo, J. J. Lindsay, B. E. Malone, L. Muhlen- 
+bruck, K. Charlton, and H. Cooper. 2003. <a href="http://www.stanford.edu/class/linguist288/papers/dePaulo.pdf">Cues to deception. </a>
+Psychological Bulletin, 129(1):74-118.
+<li>
+Julia Hirschberg, Stefan Benus, Jason M. Brenier, Frank Enos, Sarah Friedman, Sarah Gilman, Cynthia Girand, 
+Martin Graciarena, Andreas Kathol, Laura Michaelis, Bryan Pellom, Elizabeth Shriberg, and Andreas Stolcke. 2005.
+<a href="http://www.stanford.edu/class/linguist288/papers/hirschberg_al_05.pdf">Distinguishing Deceptive from Non-Deceptive Speech</a>.
+Eurospeech 2005, Lisbon, Portugal.
+</ul>
+</font>
+
+</TD></TR>
+
+
+  <TR>
+    <TD 
+      style="FONT-WEIGHT: bold; VERTICAL-ALIGN: middle; TEXT-ALIGN: center">10<BR></TD>
+    <TD><STRONG>Mar 14 <BR></STRONG></TD>
+    <TD><B><BR></B></TD>
+    <TD>
+      <P><B><FONT color=#990000> Project Presentations <BR></FONT></B></P>
+<FONT size=-1>
+<ol>
+ <li>
+ Neal Snider
+ <li>
+ Tristan Harris, Brad Moore, and Majid Soleimani
+ <li>
+ Michael Chung, Peter Ciccolo, and Nadeem Riaz 
+ <li>
+ Chloe Kiddon and Anna Rafferty 
+</ol>
+
+
+</TD></TR>
+
+  <TR>
+    <TD 
+      style="FONT-WEIGHT: bold; VERTICAL-ALIGN: middle; TEXT-ALIGN: center">10<BR></TD>
+    <TD><STRONG>Mar 16 <BR></STRONG></TD>
+    <TD><B><BR></B></TD>
+    <TD>
+      <P><B><FONT color=#990000> Project Presentations <BR></FONT></B></P>
+<FONT size=-1>
+<ol>
+ <li> 
+  Pi-Chuan Chang, Surabhi Gupta, and William Morgan
+ <li>
+  Jason Kusuma, Mike LeBeau, and Dan Woods
+ <li>
+  David Hall, Guy Isely, and Shawn Standefer  
+ <li>
+  Anton Ivanov, Anubha Kothari, and Laura Whitton
+ <li>
+  Greg Donaker and Ari Steinberg
+</ol>
+
+
+</TD></TR>
+
+  <TR>
+    <TD 
+      style="FONT-WEIGHT: bold; VERTICAL-ALIGN: middle; TEXT-ALIGN: center"><BR></TD>
+    <TD><STRONG>Mar 20 <BR></STRONG></TD>
+    <TD><B><BR></B></TD>
+    <TD>
+      <P><B><FONT color=#990000> Final Project due 5pm <BR></FONT></B></P>
+</TD></TR>
+
+
+
+
+</TBODY></TABLE></P></BODY></HTML>

@@ -1,0 +1,174 @@
+
+a:link       { color: #000099; }
+a:visited    { color: #660066; }
+a:active     { color: #FAA7F7; }
+body         { background-color: #FFFFFF; }
+.copyright	{ font-style: italic; font-size: smaller; }
+
+
+/* FACTBOX STYLES ADDED JAN 2007 - USE FOR FACTBOXES IN STORIES */
+/* ------------------------- */
+.capfbhead {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size:x-large;
+	text-transform:capitalize;
+}
+.capfbsubhead {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+.capfbtext {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:xx-small;
+}
+.cfbtable1 {
+margin-left:5px;
+width:260px;
+}
+.cfbtable1 td {
+background-color:#E6E6E6
+border-color:#999999;
+border-width:1px;
+border-style:solid;
+padding:10px;
+}
+
+/* LEFT NAVIGATION STYLES FOR MOST EDITORIAL CONTENT */
+/* ------------------------- */
+td.leftnavcell {
+        border: none;
+}
+.hta_navhead {
+        color: #FFFFFF;
+        font-family: "Trebuchet MS", Verdana, Arial;
+        font-weight: bold;
+        font-size: smaller;
+        background: #333399; /*gray;*/
+        margin: 0px 0px 1px 0px;
+}
+.hta_navlist {
+	border-right: 1px solid #CFCFCF;
+        margin: 0px;
+        padding: 0px;
+}
+.hta_navlist li {
+        list-style: none;
+        margin: 0px 0px 1px 0px;
+        padding: 0px 2px 0px 2px;
+        background: #E5F5FF; /*#EEEEEE;*/
+        font-size: 12px;
+        font-family: "Trebuchet MS", Verdana, Arial;
+        overflow: hidden;
+        text-align: left;
+        width: auto;
+}
+
+
+/* THE FOLLOWING STYLES WERE ORIGINALLY FRONT-PAGE SPECIFIC BUT WILL NOW BE AVAILABLE TO THE REST OF THE SITE */
+/* FRONT PAGE EDITORIAL STYLES FROM JANUARY 2007 - FORMERLY FROM NEWMAIN.CSS, WHICH WE'RE GOING TO STOP USING */
+/* PLEASE REDIRECT ANY NEWMAIN.CSS LINKS TO THIS DOCUMENT (MAIN.CSS) TO AVOID CONFLICTS */
+/* ------------------------- */
+.bottomlinks {
+font-size:small
+}
+.ch1 {
+	font-family: "trebuchet MS", verdana, arial, helvetica, sans-serif;
+	text-decoration:none;
+	font-weight: bold;
+	text-align:left;
+	font-size: 15px;
+	color: #003399;
+}
+.ch2 {
+	font-family: "trebuchet MS", verdana, arial, helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 11px;
+	text-align:left
+	text-transform:"uppercase";
+	line-height:10px;
+	color: #003399;
+}
+.ccontact {
+font-family: verdana, arial, helvetica, sans-serif;
+font-size: 9px;
+text-align:center;
+color:#000000;
+}
+.ct1 {
+font-family: verdana, arial, helvetica, sans-serif;
+font-size: 83%;
+text-align:left;
+color:#000000;
+}
+.ct2 {
+font-family: verdana, arial, helvetica, sans-serif;
+font-size: 10px;
+text-align:left;
+color:#000000;
+}
+.clabel1 {
+	font-family: "trebuchet MS", verdana, arial, helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 11px;
+	text-align:center;
+	text-transform:uppercase;
+	line-height:10px;
+	color: #003399;
+}
+.clabeloverhead {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 9px;
+font-weight: bold;
+color: #999999;
+}
+.hline{
+color:#CCCCCC
+}
+.internalmargin1 {
+text-align:center;
+}
+.storiesbox {
+border-right-width:1px;
+border-right-color:#CCCCCC;
+border-right-style:solid;
+padding-right:8px;
+}
+.adbox {
+border-left-width:1px;
+border-left-color:#CCCCCC;
+border-left-style:solid;
+padding-left:8px;
+line-height:10px;
+}
+.promobox {
+background-color:#FFFF99;
+padding:8px;
+padding:"8px";
+vertical-align:top;
+}
+.ccap1 {
+font-family: verdana, arial, helvetica, sans-serif;
+font-size: 10px;
+text-align:left;
+line-height:10px;
+color:#000000;
+}
+.ccred1 {
+font-family: verdana, arial, helvetica, sans-serif;
+font-size: 10px;
+text-align:right;
+line-height:8px;
+color:#000000;
+}
+/* END OF IMPORTED JAN 2007 FRONT PAGE STYLES */
+
+
+
+/* BEGIN EXPERIMENTING WITH BACKGROUND AND MAIN TABLE STYLES (FEB 2007) */
+.htanewbackground {
+background-color:#DFDFDF;
+}
+.htamaintablestyle {
+background-color:#FFFFFF;
+}

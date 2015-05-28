@@ -1,0 +1,513 @@
+body {
+	background: #fff;
+/*	padding: 0;		*/
+}
+
+td.footer {
+	line-height: 115%; 
+}
+
+td.closure {
+	color: #fff; 
+	background: #f00; 
+}
+
+th {
+	font-weight: bold;
+	background: #ccf;
+	color: #000;
+	text-align: left;
+}
+
+#contenttable 
+{
+	margin: 5px 0 0 0;
+}
+
+#contentcell 
+{
+	padding-right:10px;
+	vertical-align:top;
+}
+#menucell 
+{
+	width: 118px;
+	vertical-align:top;
+}
+
+	
+/* Font styling */
+
+b, strong	
+	{
+	font-weight: bold; 
+	}
+
+i, em
+	{	
+	font-style: italic; 
+	}
+
+u		
+	{	
+	text-decoration: underline; 
+	}
+
+hr		
+	{	
+	color: #000000;
+	height: 1px; 
+	}
+
+
+/* Special message formatting. Apply to <p> or <td> tags. */
+		
+.boxborder
+	{
+	background: #000;
+	}
+	
+.boxcontent
+	{
+	background: #fff;
+	}
+
+.closure
+	{
+	color: #fff; 
+	background: #f00; 
+	}
+
+.alert
+	{
+	color: #f00;
+	background: #ff9;
+	}
+
+.alertbold
+	{
+	font-weight: bold;
+	color: #f00;
+	background: #ff9;
+	}
+
+.disabled
+	{
+	background: #ccc;
+	color: #666;
+	}
+
+.error		
+	{
+	color: #fff;
+	background: #f00; 
+	}
+
+.errorbold
+	{
+	font-weight: bold;
+	color: #fff;
+	background: #f00;
+	}
+
+.finished	
+	{
+	background: #0c6;
+	color: #000;
+	}
+
+.finishedbold
+	{
+	font-weight: bold;
+	background: #0c6;
+	color: #000;
+	}
+
+.instructions	
+	{
+	color: #000;
+	background: #fc6; 
+	}
+			
+.instructionsbold
+	{
+	font-weight: bold;
+	color: #000;
+	background: #fc6; 
+	}
+
+.required
+	{
+	font-weight: bold;
+	color: #f00;
+	}
+	
+.rowdelimit
+	{
+	background: #f0f0f0;
+	}
+.largertext	
+	{	
+    	font-family : Verdana, Geneva, Helvetica, sans-serif;
+    	font-size : 14px;
+	}
+
+/* End special message formatting. */ 
+
+/* Homepage box colors */
+
+.quyana
+	{
+	background: #606; 
+	}
+	
+.takenote
+	{
+	background: #ebebeb; 
+	}
+	
+.asddirect
+	{
+	background: #dfffff; 
+	}
+	
+.spotlight
+	{
+	background: #e8e8ff; 
+	}
+
+.districtnews
+	{
+	background: #ccf;
+	}
+	
+.empaccess
+	{
+	background: #ffdd95;
+	}
+/* End homepage box colors */
+		
+/*.tabletitle	
+	{
+	font-size: 12px;
+	color: #000000;
+	font-weight: bold;
+	background: #ccccff; 
+	}
+			
+.tabletitlesorted
+	{
+	font-size: 12px;
+	color: #000000;
+	font-weight: bold;
+	background: #ebebeb; 
+	}*/
+
+.tabletitle {
+	font-weight: bold;
+	background: #ccccff;
+	color: #000000;
+	white-space: nowrap;
+}
+	
+th.tabletitle {
+	border-top: solid 2px #ececec;
+	border-right: solid 2px #9999cc;
+	border-bottom: solid 2px #9999cc;
+	border-left: solid 2px #ececec;
+}
+
+.tabletitle a:link {
+	font-weight: bold;
+	text-decoration: underline;
+	background: #ccccff;
+	color: #000000;
+}
+	
+.tabletitle a:hover	{
+	color: #000000;
+}
+
+.tabletitle a:visited {
+	color: #000000;
+}
+	
+.tabletitlesorted {
+	font-weight: bold;
+	background: #f0f0f0;
+	color: #003399;
+	white-space: nowrap;
+}
+	
+th.tabletitlesorted	{
+	border-top: solid 2px #666666;
+	border-right: solid 2px #ccc;
+	border-bottom: solid 2px #ccc;
+	border-left: solid 2px #666666;
+}
+	
+.tabletitlesorted a:link {
+	font-weight: bold;
+	text-decoration: underline;
+	background: #f0f0f0;
+	color: #003399;
+}
+	
+.tabletitlesorted a:hover {
+	color: #003399;
+}
+
+.tabletitlesorted a:visited	{
+	color: #003399;
+}			
+			
+/* Classes for all side menus */
+
+.menu	
+	{
+	font-weight: bold; 
+	}
+	
+.menutitle
+	{
+	background: #ccf;
+	color: #000;
+	text-align: center;
+	font-weight: bold; 
+	}
+	
+.menurow /* first row, yellow */
+	{
+	background-color: #ffffcc;
+	font-weight: bold; 
+	}
+	
+.menurowalt /* second row, green */
+	{
+	background-color: #ccffcc;
+	font-weight: bold; 
+	}
+	
+.orangemenu
+	{
+	background-color: #fc6;
+	font-weight: bold;
+	text-align: center;
+	}
+/* banner styles */
+
+.sitetools
+{
+	padding:3px;
+	text-align:center;
+	background-color:#cccccc;
+	white-space:nowrap;
+}
+
+.mainmenu
+{
+	background-color:#ffcc66;
+	padding:3px 3px 3px 4px;
+}
+
+.sitetools a, .mainmenu a
+{
+	font-weight:bold;
+}
+
+/* Begin link formatting */
+
+a:link
+	{
+	color: #039;
+	}
+
+a:visited
+	{
+	color: #666;
+	}
+
+a.menu:link
+	{
+	color: #039;
+	}
+
+a.menu:visited
+	{
+	color: #666;
+	}
+
+a.closure:link
+	{
+	color: #fff;
+	}
+
+a.closure:visited
+	{
+	color: #fff;
+	}
+
+/* -------------------------------------------------------- */
+/* --                                                    -- */
+/* --           Below are the Legacy Styles!             -- */
+/* --                                                    -- */
+/* --    These need to be here to support older pages.   -- */
+/* --                                                    -- */
+/* -------------------------------------------------------- */
+  
+  
+                                   
+.svbold 	
+{  	
+	font-weight: bold; }
+    
+.svplain
+{ 	
+ 	font-weight: normal; }
+    
+.svitalic
+{ 	
+	font-weight: normal; 
+	font-style: italic; }
+
+.headline
+{  	
+ 	font-weight: bold; }
+
+.pagehead
+{  	
+	font-size: 16pt; }
+
+
+.svboldRed
+{	
+	font-weight: bold; 
+	color: #FF0000; }
+
+.headlineRed
+{	
+	font-weight: bold;
+			color: #FF0000; }
+
+.pagesubhead
+{	
+	font-size: 12pt; }
+
+.svplain11
+{	
+	font-weight: normal; }
+
+.svbold11
+{	
+	font-weight: bold; }
+	
+th.svbold11
+{	
+	font-weight: bold; 
+	background-color: #fff;}
+
+a.svbold11:link
+{	
+	font-weight: bold;
+	text-decoration: none;}
+
+a.svbold11:hover
+{	
+	font-weight: bold;
+	text-decoration: none;}
+
+a.svbold11:visited
+{	
+	font-weight: bold;
+	text-decoration: none;}
+
+a.svbold11:active
+{	
+	font-weight: bold;
+	text-decoration: none;}
+	
+/*-- Experimenting 12/22/03 --*/
+#googleform {
+	margin:0 20px 0 0;
+}
+td.bannertab2 {
+	background: #ffcc66;
+	padding: 2px 4px 4px 4px;
+/*	border-top: solid 1px #003399;
+	border-right: solid 1px #003399;
+	border-bottom: solid 1px #ffcc66;
+	border-left: solid 1px #003399;*/
+}
+.bannertab2 a {
+	font-weight:bold;
+	text-decoration:none;
+}
+td.bannertab3 {
+	background: #ffcc66;
+	white-space:nowrap;
+}
+.bannertab3 a {
+	display:block;
+	font-weight:bold;
+	text-decoration:none;
+	border-right:1px solid #000000;
+	margin:0;
+	padding:0px 5px 0px 5px;
+}
+td.schoolsopen {
+	background: #ffcc66;
+	padding: 2px 4px 4px 4px;
+	text-align:center;
+}
+#menubar {
+	border-bottom:1px solid #003399;
+}
+#helpmenu {
+	border:dashed 1px #ff0000;
+	padding:3px;
+}
+#helpmenu ul {
+	list-style-position:inside;
+	margin:0;
+	padding:0;
+}
+#helpmenu li {
+	background:#cccccc;
+	margin: 0px 0px 2px 0px;
+	list-style-type:disc;
+}
+li#helpindex {
+	background:#cccccc;
+	list-style-image:url(http://www.asdk12.org/staff/mccreath_david/tinysiteindex.gif);
+	marker-offset:5px;
+	margin: 0px 0px 2px 0px;
+}
+li#helpoptions {
+	background:#cccccc;
+	list-style-image:url(http://www.asdk12.org/staff/mccreath_david/tinysiteoptions.gif);
+	margin: 0px 0px 2px 0px;
+}
+li#helpcontact {
+	background:#cccccc;
+	list-style-image:url(http://www.asdk12.org/staff/mccreath_david/tinycontactus.gif);
+	margin: 0px 0px 2px 0px;
+}
+
+table.vertical-form td {
+	vertical-align: top;
+	padding: 10px 0px 10px 10px;
+	border-bottom: 1px solid #cccccc;
+}
+  			
+table.vertical-form th {
+	vertical-align: top;
+	background-color: #ffffff;
+	color: #000000;
+	text-align: right;
+	padding: 10px 0px 10px 0px;
+	border-bottom: 1px solid #cccccc;
+}
+ 			
+table.vertical-form tr {
+	border-bottom: 1px solid #000000;
+}

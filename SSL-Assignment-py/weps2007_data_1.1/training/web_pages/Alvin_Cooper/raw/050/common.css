@@ -1,0 +1,743 @@
+h1, .h1hed {  font-size: 32px; line-height: 38px; color: black; font-weight: bold; font-family: Arial, Helvetica, sans-serif}
+h2, .h2hed {  font-size: 22px; line-height: 25px; color: black; font-weight: bold; font-family: Arial, Helvetica, sans-serif}
+h3, .h3hed {  font-size: 15px; line-height: 17px; color: black; font-weight: bold; font-family: Arial, Helvetica, sans-serif}
+h4, .h4hed {  font-size: 13px; line-height: 15px; color: black; font-weight: bold; font-family: Arial, Helvetica, sans-serif}
+h5, .h5hed {  font-size: 18px; line-height: 20px; color: black; font-weight: bold; font-family: Arial, Helvetica, sans-serif}
+body, p, th, td, li, ul { font-size: 11px; font-family: Arial, Helvetica, sans-serif}
+
+a:link { color: #000066; text-decoration: none }
+a:visited { color: #000066; text-decoration: none }
+a:hover { color: #000066; text-decoration: underline }
+a:active { color: #000066; text-decoration: none }
+
+a.nav:link { color: #000000; text-decoration: none }
+a.nav:visited { color: #000000; text-decoration: none }
+a.nav:hover { color: #000000; text-decoration: underline }
+a.nav:active { color: #000000; text-decoration: none }
+ 
+a.greynav:link { color: #666666; text-decoration: none }
+a.greynav:visited { color: #666666; text-decoration: none }
+a.greynav:hover { color: #666666; text-decoration: underline }
+a.greynav:active { color: #666666; text-decoration: none }
+   
+a.rednav:link { color: #CC3333; text-decoration: none }
+a.rednav:visited { color: #CC3333; text-decoration: none }
+a.rednav:hover { color: #CC3333; text-decoration: underline }
+a.rednav:active { color: #CC3333; text-decoration: none } 
+
+a.footer:link { color: #000000; line-height:16px; text-decoration: none;  }
+a.footer:visited { color: #000000; line-height:16px; text-decoration: none }
+a.footer:hover { color: #000000; line-height:16px; text-decoration: underline }
+a.footer:active { color: #000000; line-height:16px; text-decoration: none }
+
+.story, .story p, .story td, .story li, .story blockquote { font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 15px; font-weight: normal; color: #000000; }
+.story a { color: #003399; text-decoration: none; }
+.story a:visited { color: #003399; text-decoration: none; }
+.story a:hover { color: #003399; text-decoration: underline; }
+.story a:active { color: #003399; text-decoration: none; }
+
+.sidebar { font-size: 11px; line-height: 13px; font-family: Arial, Helvetica, sans-serif; font-weight: normal; color: #000000; }
+.poll { font-size: 11px; line-height: 13px; font-family: Arial, Helvetica, sans-serif; font-weight: normal; color: #000000; }
+.caption { font-size: 10px; line-height: 12px; font-family: Arial, Helvetica, sans-serif; font-weight: normal; color: #000000; } 
+.highlight { font-size:11px; line-height: 12px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;  }
+.abstract  { font-size: 11px; line-height: 13px; font-family: Arial, Helvetica, sans-serif; font-weight: normal; color: #000000; }
+.spotlight { font: bold 12px/14px Arial, Helvetica, sans-serif; color: #000; }
+
+
+/* REALIGNMENT STYLES 
+-----------------------------------------*/
+
+
+/* RED SUBHEADER TEXT STYLES  
+------------------------------------*/
+.subhead12 { color: #C33; font: normal normal bold 12px/15px Arial, Helvetica, Sans-serif; margin-bottom: 5px; padding: 0; }
+.subhead14 { color: #C33; font: normal normal bold 14px/18px Arial, Helvetica, Sans-serif; margin-bottom: 5px; padding: 0; }
+
+
+/* NEW HOLLOW RULE STYLES  
+------------------------------------*/
+.dividerlightgrey { border: 1px solid #CCC; margin: 8px 0; display: block; }
+
+
+/* HOMEPAGE UNIQUE STYLES */
+
+/* USED TO CREATE RED AND BLACK HTML TEXT SUBHEADERS INSTEAD OF A SUBHEADER IMAGE */
+.subheader { font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 17px; font-weight: bold; color: #000000; }
+.subheader b { color: #CC3333; }
+
+#mainphoto { border: 1px solid #666; margin: 0 0 3px 0; }
+#morenews { font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 15px; font-weight: normal; color: #000; }
+/* used for the special feature area below the fold  */
+#specialfeaturearea { padding: 5px 0; }
+#specialfeatureleftpic { margin: 5px 5px 0 0; border: 1px solid #666;}
+#specialfeaturerightpic { margin: 5px 0 5px 5px; border: 1px solid #666;}
+/* use for the sublabels video and slideshow in videophoto area */
+#homesubhead { font-size: 12px; line-height: 14px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; color: #000; margin: 5px 0; }
+.insidetodaysubhead { font-size:11px; line-height: 17px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; color: #000; }
+.columnist { font: bold 11px/12px Arial, Helvetica, sans-serif; color: #666; }
+.threeacrossthefoldtable { border-top: 1px solid #000; border-right: 1px solid #000;}
+.threeacrossfoldpic { border: 1px solid #666666; margin: 4px 5px 5px 0;}
+.promopic { margin: 5px 0 5px 5px; border: 1px solid #666; }
+.worthaclickpic { margin: 5px 5px; border: 1px solid #666; }
+.homevideopic { border: 1px solid #666; margin: 0 5px 5px 0; }
+.homepagehollowrule { border: 1px solid #CCC; margin: 8px 0 2px 0; }
+.sidetrackpadding { margin: 0 8px 4px 8px; }
+
+/* styles to create hspace around an image hspace is phasing out */ 
+.hspace2 { margin: 0 2px; }
+.hspace1 { margin: 0 1px; }
+
+/* hollow rule */
+.hollowrule  { border: 1px solid #CCC; margin: 3px 0;}
+ 
+
+/* Used for the weather area on homepage and story templates */
+.weatherposition { margin: 14px 0 0 0; padding: 0;}
+.newsalert { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; color: #336699; }
+.newsalert a { font-weight: normal; color: #000000; }
+.newsalert a:link { color: #000000; text-decoration: none }
+/* .newsalert a:visited { color: #000000; text-decoration: none } */
+.newsalert a:hover { color: #000000; text-decoration: underline }
+.newsalert a:active { color: #000000; text-decoration: none }
+
+.weatherphoenix { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; text-transform: uppercase; color: #CC3333; }
+.weatherothercities { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold;line-height: 13px; }
+.weatherlinks { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-weight: normal; color: #000066; line-height: 24px;}
+.weatherlinkssmall { font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-weight: normal; color: #000066; line-height: 12px;}
+
+
+/* Used for navigational styles */
+/* Used for links in top red bar and left-hand subnav bar */
+.navs { font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: bold; color: #FFFFFF;}
+.marketplacesubnav { font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: bold; color: #000000; line-height: 14px; }
+.subnav { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; color: #000000; line-height: 14px; }
+.secondsubnav { font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: normal; color: #000000; line-height: 14px; }
+.homepage-navs { font-family: Arial, Helvetica, sans-serif; font-size: 10px; font-weight: bold; color: #000000; line-height: 12px; }
+.homepage-subnavs { font-family: Arial, Helvetica, sans-serif; font-size: 10px; font-weight: normal; color: #000000; line-height: 12px; }
+
+/* padding and margin controls */
+.shiftright { margin-left: 2px; line-height: 20px; }
+.sh-img { margin: 4px 0;}
+.arrowcolor { color: #999; font-weight: bold; }
+.mainpicpadding { border: 1px solid #fff; display: block; }
+.3colstorymain { padding: 0 10px 10px 10px; display: block; }
+.boxpadding { padding: 5px; display: block; }
+
+/* leading or line height controls */
+/* more is the standard style for the 'more' link site wide  */ 
+.more { line-height: 16px; font-weight: bold }
+/* .more { padding-top: 5px; font-weight: bold; } */
+
+/*extra font and border styles*/
+/*subhead is used like a subtitle under a story title  */
+.subhead { font-family: Georgia, Times New Roman, Times, serif; font-size: 12px; font-style: italic; line-height: 14px; font-weight: bold; color: #666666; }
+.borderwhite { border: 1px solid #FFF; }
+.borderlightgrey { border: 1px solid #CCC; }
+.bordermediumgrey { border: 1px solid #999; }
+.borderdarkgrey { border: 1px solid #666666; }
+.borderblack { border: 1px solid #000000; }
+.borderspecialad  { border: 4px solid #CCCCCC; }
+
+/* Used for article tools */
+.tools { font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-weight: bold; color: #CC3333; margin-left: 2px; }
+.tools a { font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-weight: bold; color: #CC3333; margin-left: 2px; text-decoration: none; }
+/* .tools a:visited { color: #CC3333; text-decoration: none; } */
+.tools a:hover { color: #CC3333; text-decoration: underline; }
+.tools a:active { color: #CC3333; text-decoration: none; }
+
+
+/* Left, right and bottom padding for index page main stories and for widgets */
+.storypadding { padding: 3px 10px 10px 10px; }
+.widgetpadding { padding: 0 8px 8px 8px; }
+
+/* alternating shaded rows for data tables */
+.shadedrow1 {	background-color: #E0E0E0;	}
+.shadedrow2 {	background-color: #FFF;		}
+
+/* widget background colors */
+.widgetblue {	background-color: #CFCFE5;	}
+.widgetbluetop{ background-image: url(/ent/calendar/imgs/boxtop_eventsearch_bg.gif); }
+.widgetgreen {	background-color: #B5D184;	}
+.widgetyellow {	background-color: #EDE56D;	}
+.widgetpink {	background-color: #C66;		}
+
+
+/* sports-specific stuff */
+.sports-rightbox {
+	border: 1px solid #666;
+}
+
+.sports-justin {
+	border-top: 1px solid #666;
+	border-right: 1px solid #666;
+	border-left: 1px solid #666;
+}
+
+.sportstab {
+	border: 1px solid #fff;
+	height: 18px;
+}
+#sportstab1 {
+	background-color: #fff;
+	font: 12px Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-align: center;
+}
+#sportstab2, #sportstab3, #sportstab4, #sportstab5, #sportstab6, #sportstab7 {
+	background-color: #933;
+	font: 12px Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+#sportstab4, #sportstab5, #sportstab6, #sportstab7 {
+	border-top: 1px solid #fff;
+}
+#sportstab2, #sportstab5 {
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+}
+#sportstab7 {
+	border-left: 1px solid #fff;
+}
+#sportstabinfo1, #sportstabinfo2, #sportstabinfo3, #sportstabinfo4, #sportstabinfo5, #sportstabinfo6, #sportstabinfo7 {
+	font: 12px Arial, Helvetica, sans-serif;
+	line-height: 16px;
+	color: #000;
+}
+.xtra5pad {
+	padding: 5px;
+}
+.xtra10pad {
+	padding: 10px;
+	
+}
+
+#sportstabinfo2, #sportstabinfo3, #sportstabinfo4, #sportstabinfo5, #sportstabinfo6, #sportstabinfo7 {
+	display: none;
+}
+#sportstabinfo1 {
+	display: block;
+}
+#sportstablink1 {
+	color: #000;
+	text-decoration: none;
+}
+#sportstablink2, #sportstablink3, #sportstablink4, #sportstablink5, #sportstablink6, #sportstablink7 {
+	color: #fff;
+	text-decoration: none;
+}
+#sportstablink1:hover, #sportstablink2:hover, #sportstablink3:hover, #sportstablink4:hover, #sportstablink5:hover, #sportstablink6:hover {
+	text-decoration: underline;
+}
+.sportstabpic {
+	border-color: #666;
+	margin-right: 10px;
+	float: left;
+}
+.spt-submenu {
+	border: 1px solid #000;
+	background-color: #933;
+}
+.spt-main1pic {
+	border-color: #666;
+	display: block;
+}
+.spt-main2pic {
+	border-color: #666;
+	margin: 5px 0 5px 10px;
+	float: right;
+	display: inline;
+}
+.spt-subtxt {
+	color: #fff;
+	text-align: left;
+	line-height: 13px;
+}
+.spt-subtxt a, .spt-subtxt a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+.spt-subtxt a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+.spt-subtxt strong {
+	font: bold 12px Arial, Helvetica, sans-serif;
+}
+.spt-storymain {
+	border: 1px solid #000;
+	background-color: #e4e5dc;
+}
+.spt-storymain p {
+	margin-top: 0;
+	margin-bottom: 10px;
+	display: block;
+}
+.spt-storymain p.spt-last {
+	margin-bottom: 0;
+}
+.spt-lowerbox {
+	border-right: 1px solid #000;
+	border-left: 1px solid #000;
+}
+.spt-sfpad {
+	margin-bottom: 3px;
+}
+.dashedruleblack {
+	border-top: 1px dashed #000;
+	margin: 7px 0;
+	display: block;
+}
+
+.dashedrule {
+	border-top: 1px dashed #ccc;
+	margin: 7px 0;
+	display: block;
+}
+.sportsaway {
+	background-color: #ffc;
+	padding-left: 2px;
+}
+.sportshome {
+	background-color: #ccf;
+	padding-left: 2px;
+}
+.sports5day-team {
+	border-right: 1px solid #000;
+	border-left: 1px solid #000;
+}
+.sports5day {
+	border-top: 1px solid #000;
+}
+.sports5day td {
+	border-bottom: 1px solid #000;
+}
+.spt-live {
+	text-indent: -9999px;
+	height: 14px;
+	width: 64px;
+	background: transparent url(/sports/imgs/i_liveicon.gif) top left no-repeat;
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+/* hot corner stuff */
+#hotcornerstats {
+	padding: 2px 0;
+	margin-bottom: 2px;
+	margin-top: 10px;
+	border-top: 1px #000 solid;
+	border-bottom: 1px solid #000;
+	text-align: center;
+	font-size: 9px;
+	line-height: 14px;
+}
+#hotmidmenu {
+	padding: 3px 0;
+	color: #cccccc;
+	background-color: #669;
+	text-align: center;
+	font-size: 9px;
+	line-height: 14px;
+}
+a.hcmm, a.hcmm:link/*, a.hcmm:visited */{
+	color: #fff;
+	font-weight: normal;
+	text-decoration: none;
+}
+a.hcmm:hover {
+	text-decoration: underline;
+}
+.hottable {
+	border: 1px solid #666;
+	width: 267px;
+	padding: 0;
+	margin: 0;
+	background-color: #fff;
+}
+/* end hot corner stuff */
+/* end sports -- though may be added later */
+
+/* article tools styles for the Arizona Republic Online Print Edition */
+.tools_azrep a { color: #993333; text-decoration: none; }
+/* .tools_azrep a:visited { color: #993333; text-decoration: none; } */
+.tools_azrep a:hover { color: #993333; text-decoration: none; }
+.tools_azrep a:active { color: #993333; text-decoration: none; }
+.tools_azrep b { font: bold 11px Arial, Helvetica, sans-serif;}
+
+/* azcentral@night styles */
+.atnightspecialhed { background-color: #CCC; }
+.atnightspecialbg  { background-color: #ECEAEB; padding: 5px; }
+.atnightspecialbg2 { background-color: #ECEAEB; }
+.atnightimgleft    { border-left: 1px solid #FFF; border-bottom: 1px solid #FFF; }
+.atnightimgright   { border-right: 1px solid #FFF; border-bottom: 1px solid #FFF; }
+.atnightskyboxhed  { background-color: #CCC; padding-left: 5px; }
+.atnightskyboxhed2  { background-color: #CCC }
+.atnightskyboxbg   { background-color: #ECEAEB; padding: 2px 5px 2px 5px; }
+.atnightskyboximg  { border-right: 1px solid #FFF; }
+
+/* travel redesign styles for promotion ad boxes */
+ 
+.travel_promotions  { margin: 0 0 3px 0; width: 191; border: 1px solid #000;}
+.travel_promotionscontent { padding: 10px; background-color: #E0E0E0;}
+.travel_promotionscontent img { margin: 5px;}
+.travel_promotionscontent2 { background-color: #FFF; padding: 10px; }
+.travel_promotionscontent2 img { margin: 5px;}
+
+
+/* featured box in the right rail for travel */
+
+.travel_featured { margin: 0 0 3px 0; width: 195; }
+.travel_featuredtop { background-image: url(/travel/imgs/boxtop_featured_top.gif);}
+.travel_featuredmiddle { background-image: url(/travel/imgs/boxtop_featured_middle.gif);}
+.travel_featuredcontent { background-color: #FFF; padding: 5px; border-left: 1px solid #666; border-right: 1px solid #666; border-bottom: 1px solid #666; }
+.travel_featuredcontent img { margin: 2px;}
+
+ 
+/* 6 photo portal area at the top of the travel homepage */
+
+.travel_photo { width: 90px; margin: 0 2px 0 0; }
+.travel_photo img { border: 1px solid #666; margin: 2px 0 2px 0; }
+
+.travel_label { width: 89px; height: 18px; margin: 0 2px 15px 0; background-color: #666; 
+padding: 0 0 0 3px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-weight: bold; color: #FFF; line-height: 12px; }
+.travel_label a { color: #FFF; text-decoration: none; }
+/* .travel_label a:visited { color: #FFF; text-decoration: none; } */
+.travel_label a:hover { color: #CCC; text-decoration: none; }
+.travel_label a:active { color: #FFF; text-decoration: none; }
+
+/* larger subheader style for travel text based subheaders */
+ 
+.travel_subheader { font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 17px; font-weight: bold; letter-spacing: -.05em; color: #000000; }
+.travel_subheader b { color: #CC3333; margin: 0 0 0 3px;}
+
+
+/* YES styles */
+/* extra @night widget styles */
+.bgStyleFeatured {
+	background-color: #CCB2CC;
+}
+#dailyPick {
+	margin: 0;
+	padding: 0;
+}
+#dailyPick td.tabOn {
+	background-color: #FFF;
+	text-align: center;
+	font-weight: bold;
+	font-size: 11px;
+	line-height: normal;
+}
+#dailyPick td.tabOff { 
+	background: #FFF url(/style/imgs/widget_bgtab_off.gif) repeat-x;
+	text-align: center;
+	font-weight: bold;
+	font-size: 11px;
+	line-height: normal;
+}
+#dailyPick td.tabOn a, #dailyPick td.tabOn a:link, /*#dailyPick td.tabOn a:visited,*/
+#dailyPick td.tabOff a, #dailyPick td.tabOff a:link, /*#dailyPick td.tabOff a:visited*/ {
+	color: #000;
+	text-decoration: none;
+}
+#dailyPick td.tabOn a:hover, #dailyPick td.tabOn a:active, 
+#dailyPick td.tabOff a:hover, #dailyPick td.tabOff a:active {
+	color: #000;
+	text-decoration: underline;
+}
+#dailyPick td.widgetbg {
+	background-color: #D9C5D9;
+}
+#stylePhotos td.widgetbg, #askYes td.widgetbg {
+	background-color: #E0E0E0;
+}
+#dailyPick .widgetpadding, #stylePhotos .widgetpadding, #askYes .widgetpadding {
+	padding: 3px;
+}
+
+.styleSpotlight img {
+	float: left;
+	margin-right: 5px;
+}
+.styleSpotlight p {
+	margin-left: 60px;
+}
+.styleQuestion {
+	color: #000;
+	font: bold 12px/140% Arial, Helvetica, sans-serif;
+}
+.styleQuestion .more
+	font-size: 11px;
+}
+
+
+/* golf widget styles */
+#golfWidget td.widgettop {
+	background: #E3E3C8 url(/ent/calendar/imgs/boxtop_eventsearch_bg.gif) repeat-x;
+}
+#golfWidget td.widgetbg {
+	background-color: #E3E3C8;
+}
+#golfWidget {
+	margin: 0;
+	padding: 0;
+}
+#golfWidget form, #golfWidget table tr form, #golfWidget table tr td form {
+	margin: 0;
+	padding: 0;
+}
+#golfWidget td.tabOn {
+	background: #FFF url(/homepage_index/atnight_imgs/widget_bgtab_on.gif) repeat-x;
+	text-align: center;
+	font-weight: bold;
+	font-size: 11px;
+	line-height: normal;
+	padding-top: 3px;
+}
+#golfWidget td.tabOff { 
+	background: #FFF url(/homepage_index/atnight_imgs/widget_bgtab_off.gif) repeat-x;
+	text-align: center;
+	font-weight: bold;
+	font-size: 11px;
+	line-height: normal;
+	padding-top: 3px;
+}
+#golfWidget td.tabOn a, #golfWidget td.tabOn a:link, /*#golfWidget td.tabOn a:visited, */
+#golfWidget td.tabOff a, #golfWidget td.tabOff a:link, /*#golfWidget td.tabOff a:visited */{
+	color: #000;
+	text-decoration: none;
+}
+#golfWidget td.tabOn a:hover, #golfWidget td.tabOn a:active, 
+#golfWidget td.tabOff a:hover, #golfWidget td.tabOff a:active {
+	color: #000;
+	text-decoration: underline;
+}
+#golfWidget .widgetpadding {
+	padding: 5px;
+	padding-bottom: 0;
+}
+
+/* new across the fold code */
+
+#oneAcrossFold {
+	width: 439px;
+	padding: 0;
+	border: 0;
+	margin: 0;
+}
+#oneAcrossPhoto {
+	width: 137px;
+	padding: 5px 4px 0 3px;
+	border-top: 1px solid #000;
+	text-align: center;
+	float: left;
+}
+#oneAcrossLinks {
+	width: 295px;
+	float: left;
+}
+#oneAcrossText {
+	padding: 0 9px 0 0;
+	border: 0;
+	border-right: 1px solid #000;
+}
+
+#threeAcrossFold {
+	width: 439px;
+	background: url(http://www.azcentral.com/homepage_index/imgs/threeacrossbg.gif) repeat-y top left;
+	position: relative;
+	padding: 0;
+	border: 0;
+	margin: 0;
+}
+#threeAcrossLeft {
+	width: 137px;
+	padding: 0 6px 0 0;
+	position: relative;
+	float: left;
+}
+#threeAcrossMiddle {
+	width: 137px;
+	padding: 0 6px 0 5px;
+	position: relative;
+	float: left;
+}
+#threeAcrossRight {
+	width: 137px;
+	padding: 0 6px 0 5px;
+	position: relative;
+	float: left;
+}
+
+#threeAcrossLeft .subheader, #threeAcrossMiddle .subheader, #threeAcrossRight .subheader {
+	padding-bottom: 4px;
+}
+#threeAcrossFoot {
+	width: 439px;
+	height: 1px;
+	background-color: transparent;
+	font-size: 1px;
+	clear: both;
+}
+
+
+
+
+
+
+
+/* CAR CONTEST GIVEAWAY 1 ACROSS THE FOLD STYLES 
+===================================================== */
+#carContest { margin:0; padding:0; }
+#carContest td.bgArt { background: url(/homepage_index/imgs/boxtop_newcargiveaway.jpg) top left no-repeat; } 
+#carContest td.bgTile { margin:0; padding: 0 0 5px 10px; background: url(/homepage_index/imgs/bgtile_newcargiveaway.gif) top left repeat-y; } 
+
+
+
+/* REALIGNMENT STYLES 
+-----------------------------------------*/
+
+
+
+
+/* REALIGNMENT - NEW LEFT NAV 
+-----------------------------------------*/	 
+
+#azcMarketplace {
+	width: 100px;
+	padding: 0px 4px 4px 4px;
+	background: url(/imgs/leftnav_mktbg.gif) repeat-y;
+}
+#azcLeftNavWrap {
+	width: 108px;
+	border: 1px solid #999;
+	padding: 4px;
+	background-color: #fff;
+}
+#azcLeftNavWrap .subhead {
+ margin: 0;
+ padding-top: 8px;
+ padding-bottom: 0;
+}
+ 
+ 
+#azcLeftNav {
+	width: 100px;
+	padding: 0px 4px 4px 4px;
+	background: url(/imgs/leftnav_navbg.gif) repeat-y;
+}
+
+
+/* REALIGNMENT - ARIZONA REP LEFT NAV 
+-----------------------------------------*/
+
+#azrepHomeLeftNav {
+	width: 150px;
+	padding: 0px 4px 4px 4px;
+	background: url(/arizonarepublic/imgs/azrep_leftnav_navbg.gif) repeat-y;
+}
+#azrepHomeLeftNavWrap {
+	width: 150px;
+	border: 1px solid #999;
+	padding: 4px;
+	background-color: #fff;
+}
+#azrepLeftNav {
+	width: 108px;
+	padding: 0px 4px 4px 4px;
+	background: url(/arizonarepublic/imgs/azrep_shortnav_navbg.gif) repeat-y;
+}
+#azrepLeftNavWrap {
+	width: 108px;
+	border: 1px solid #999;
+	padding: 4px;
+	background-color: #fff;
+}
+#azrepLeftNavWrap .subhead, #azrepHomeLeftNavWrap .subhead {
+ 	margin: 0;
+ 	padding-top: 8px;
+ 	padding-bottom: 0;
+}
+
+
+/* Padding tweaks
+----------------------------------- */
+.extra5pad { margin: 5px; }
+.extra10pad { margin: 10px; }
+.extra3vertpad { margin: 3px 0; }
+.extra5vertpad { margin: 5px 0; }
+.extra10vertpad { margin: 10px 0; }
+.extra3horizpad { margin: 0 3px; }
+.extra5horizpad { margin: 0 5px; }
+.extra10horizpad { margin: 0 10px; }
+
+
+/* YES subhead styles
+----------------------------------- */
+	
+	.stylehead14 {
+	color: #636;
+	font: bold 14px Helvetica, sans-serif; 
+	letter-spacing: 1px;
+	margin: 0;
+	padding-bottom: 5px;
+	}
+
+	
+	.yesSubline14 {
+	color: #636;
+	font: bold 14px Helvetica, sans-serif; 
+	letter-spacing: 1px;
+	padding-bottom: 3px; 
+	border-bottom: 1px solid #666; 
+	margin: 5px 0;
+	}
+
+	.yesSubline16, .yesSubline {
+	color: #636;
+	font: bold 16px Helvetica, sans-serif;  
+	letter-spacing: 1px;
+	padding-bottom: 3px; 
+	border-bottom: 1px solid #666; 
+	margin: 5px 0;
+	}
+
+
+
+/*
+ONLY HACK/FIXES BELOW THIS
+EVERYTHING ELSE GOES ABOVE
+*/
+
+/* Fix IE. Hide from IE Mac \*/
+* html #azcLeftNavWrap { width: 118px; }
+* html #azcMarketplace { width: 108px; }
+* html #azcNewsletterGuts { width: 300px; }
+* html #azcLeftNav { width: 108px; }
+/* End */
+
+
+/* Fix IE. Hide from IE Mac \*/
+* html #azcEntTopPhotoWrap { width: 382px; }
+* html #azcEntCelebNews { width: 382px; }
+* html .topbox_382 { padding-bottom: 10px; }
+* html .topbox_298 { padding-bottom: 2px; }
+* html .topRightPromo { width: 300px; }
+* html #azcEntRightLinks { width: 300px; }
+/* End */
+
+
+
+
+
+/* DO NOT ADD ANYTHING BELOW THIS CHUNK OF CSS -- ITS A HACK FOR IE/PC AND IE/MAC */
+
+/* Fix IE. Hide from IE Mac \*/
+* html #oneAcrossPhoto { width: 144px; }
+* html #threeAcrossLeft { width: 143px; }
+* html #threeAcrossMiddle { width: 148px; }
+* html #threeAcrossRight { width: 148px; }
+/* End */
+
+@import url("macIE.css");
+

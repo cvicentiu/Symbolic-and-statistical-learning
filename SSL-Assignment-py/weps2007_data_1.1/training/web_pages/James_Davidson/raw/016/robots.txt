@@ -1,0 +1,9 @@
+# $Id: robots.txt,v 1.2 1996/06/26 04:15:40 W.Edmunds Exp $
+# robots.txt for http://www.ex.ac.uk/
+# see <http://web.nexor.co.uk/mak/doc/robots/norobots.html> for an explanation.
+
+User-agent: htdig               # ht://Dig should avoid 
+Disallow: /                     # Everything
+
+User-agent: *                   # All robots should avoid
+Disallow: /admin                # Main files

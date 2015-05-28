@@ -1,0 +1,69 @@
+#windowContainer {
+	position:absolute;
+	top:10px;
+	left:10px;
+	background-color:#C0C0C0;
+	border-style:solid;
+	border-width:1px;
+	border-top-color:#E0E0E0;
+	border-left-color:#E0E0E0;
+	width:250px;
+	height:250px;
+	visibility:hidden;
+	z-index:1001;
+}
+
+#windowContainerBorder1 {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:298px;
+	height:298px;
+	border-style:solid;
+	border-width:1px;
+	border-top-color:#FFFFFF;
+	border-left-color:#FFFFFF;
+	border-bottom-color:#808080;
+	border-right-color:#808080;
+	z-index:1001;
+}
+
+#windowTitle {
+	position:absolute;
+	top:3px;
+	left:3px;
+	width:292px;
+	height:18px;
+	background-color:#000080;
+	font-family:ms sans serif;
+	font-size:8pt;
+	padding-left:2px;
+	font-weight:bold;
+	color:#FFFFFF;
+	cursor:default;
+	vertical-align:middle;
+	filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=1, StartColorStr='#000080', EndColorStr='#96C8FF');
+	z-index:1001;
+}
+
+
+#controlBox {
+	position:absolute;
+	top:5px;
+	left:280px;
+	z-index:1001;
+}
+
+#contentArea {
+	position:absolute;
+	padding:0px;
+	top:23px;
+	left:3px;
+	width:282px;
+	height:250px;
+	background-color:#FFFFFF;
+	border-style:inset;
+	border-width:2px;
+	overflow:auto;
+	z-index:1001;
+}

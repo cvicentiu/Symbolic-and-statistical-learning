@@ -1,0 +1,372 @@
+body {
+	font-size: 11px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000;
+	background-color : #fff;}
+
+td {
+	font-size: 11px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000;}
+
+input {
+	font-size: 11px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000;}
+
+select {
+	font-size: 11px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000;}
+	
+hr {font-size: 1px; color : #e6dfc2; height: 1px;}
+
+A:link, A:active { color: #036; text-decoration: none; }
+A:visited { color: #369; text-decoration: none; }
+A:hover { text-decoration: underline; }
+	
+A.leadinsm:link, A.leadinsm:active 
+{
+	color: #036;
+	font-weight: bold;
+	text-decoration: none;
+} 
+A.leadinsm:visited { color: #369; text-decoration: none; font-weight: bold;}
+A.leadinsm:hover { text-decoration: underline; }
+
+A.tocleadin1:link, A.tocleadin1:active 
+{
+	color: #036;
+	font-weight: bold;
+	text-decoration: none;
+}
+A.tocleadin1:visited { color: #369; text-decoration: none; font-weight: bold;} 
+A.tocleadin1:hover { text-decoration: underline; }
+	
+A.tocleadin2:link, A.tocleadin2:visited, A.tocleadin2:active 
+{
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+} 
+A.tocleadin2:hover { text-decoration: underline; }
+	
+A.leadinlg:link, A.leadinlg:active 
+{
+	font-size: 16px;
+	font-weight: bold;
+	color: #036;
+	text-decoration: none;
+}
+A.leadinlg:visited { color: #369; text-decoration: none; font-weight: bold; font-size: 16px;} 
+A.leadinlg:hover { text-decoration: underline; }
+	
+A.relatedtext1:link, A.relatedtext1:active 
+{
+	color: #036;
+	font-weight: bold;
+	text-decoration: none;
+} 
+A.relatedtext1:visited { color: #369; text-decoration: none; font-weight: bold;} 
+A.relatedtext1:hover { text-decoration: underline; }
+
+A.relatedtext2:link, A.relatedtext2:active 
+{
+	color: #036;
+	font-weight: bold;
+	text-decoration: none;
+} 
+A.relatedtext2:visited { color: #369; text-decoration: none; font-weight: bold;} 
+A.relatedtext2:hover { color: #999; }
+
+	
+/*bgcolors*/
+
+.linebg {background-color : #e6dfc2;}
+.topbg {background-color : #fff;}
+.topnavline {background-color : #036;}
+.topnavbg {background-color : #fff;}
+.lcolbg {background-color : #000;}
+.rcolbg {}
+.relatedbg1 {background-color : #22303b;}
+.relatedbg2 {background-color : #fff;}
+.colrelatedbg {background-color : #22303b;}
+.coltocbg {background-color : #22303b;}
+.kwsearchbg {background-color : #fff;}
+.tsearchbg {background-color : #22303b;}
+.mssearchbg {background-color : #22303b;}
+.csearchbg {background-color : #22303b;}
+.footerbg {background-color : #CCCCCC;}
+.adbg {background-color : #000; padding: 5px;}
+
+.itals {
+	font-style: italic;
+	}
+	
+.toctitle1 
+{ 
+        color: #900; 
+        font-size: 16px; 
+        font-weight: bold; 
+} 
+	
+.toctitle2 {
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;}
+	
+.toclheader1 
+{
+    color: #369; 
+    font-size: 24px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: bold; 
+    text-decoration: normal;
+    border-bottom: 1px #666 solid;
+    padding: 3px;
+}
+	
+.toclheader2 {
+	font-size: 12px;
+	line-height: 12px;
+	font-weight: bold;
+	color: #22303b;
+	background-color: #fff;
+	padding: 5px;}
+	
+.tocsheader1 {
+	font-size: 12px;
+	font-weight: bold;
+	color: #666;}
+	
+.tocsheader2 {
+	font-size: 12px;
+	font-weight: bold;
+	color: #fff;}
+	
+.tocteaser1 { color: #22303b; }
+	
+.tocteaser2 { color: #fff; }
+	
+.relatedtitle1 {
+	font-size: 12px;
+	font-weight: bold;
+	color: #22303b;}
+	
+.relatedtitle2 {
+	font-size: 12px;
+	font-weight: bold;
+	color: #fff;}
+	
+.relatedtext1 { color: #22303b; }
+	
+.relatedtext2 { color: #fff; }
+	
+.ptitle1 {
+	font-size: 12px;
+	font-weight: bold;
+	color: #22303b;}
+	
+.ptitle2 {
+	font-size: 12px;
+	font-weight: bold;
+	color: #fff;}
+	
+.ptext1 { color: #22303b; }
+	
+.ptext2 { color: #fff; }
+	
+.sheader {
+	border-bottom: 1px #666 solid;
+	padding-bottom: 3px;
+	font-weight: bold;
+	color: #22303b;}
+
+.lheader 
+{ 
+        color: #900; 
+        font-size: 18px; 
+     
+} 
+	
+A.catheadline:link, A.catheadline:visited, A.catheadline:active {
+	font-size: 12px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #fff;}
+	
+.storytitle 
+{ 
+        color: #900; 
+        font-size: 16px; 
+        font-weight: bold; 
+} 
+	
+.searchtitle1 
+{
+    font-weight: bold;
+    font-size: 9px;
+    color: #fff;
+    background-color: #000;
+    padding: 3px;
+}
+	
+.searchtitle2 
+{
+    font-weight: bold;
+    font-size: 9px;
+    color: #fff;
+    background-color: #036;
+    padding: 3px;
+}
+	
+.searchtext1 {
+	font-size: 10px;
+	color: #22303b;}
+
+.searchtext2 {
+	font-size: 10px;
+	color: #fff;}
+	
+.leadin {
+	font-weight: bold;
+	color: #023465;}
+	
+.footer {
+	font-size: 10px;
+	color: #000;}
+	
+.footerkey {
+	font-weight: bold;
+	font-size: 10px;
+	color: #88accb;}
+	
+A.footer:link, A.footer:active  {color: #036; font-size: 10px; text-decoration: none;}
+A.footer:visited  {color: #369; font-size: 10px; text-decoration: none;}
+
+.copyright  {font-size: 9px;}
+	
+.promotextlg { font-size: 12px; }
+
+.error {color: #f00;}
+	
+	
+/*Featured Results*/
+
+.featuredheader {
+	font-size: 12px;
+	line-height: 12px;
+	font-weight: bold;
+	color: #fff;
+	background-color: #22303b;
+	padding: 5px;}
+	
+.featuredlinebg {background-color : #22303b;}
+
+.featuredleadin {
+	font-weight: bold;
+	color: #023465;}
+	
+.featureddesc {font-size: 10px;}
+	
+	
+/*Regular Results*/
+
+.resultsheader1 {
+	font-size: 12px;
+	font-weight: bold;
+}
+	
+.resultsheader2 {
+	font-size: 12px;
+	font-weight: bold;
+	color: #666;}
+	
+.resultslinebg {background-color : #22303b;}
+
+.resultsleadin {
+	font-weight: bold;
+	color: #023465;}
+	
+.resultsbyline {
+	font-size: 10px;
+	font-weight: bold;}
+	
+.resultsdesc {font-size: 10px;}
+	
+.resultsmedia {
+	font-size: 10px;
+	color: #f00;}
+	
+.resultslinks {
+	font-size: 10px;
+	font-weight: bold;}
+	
+.searchterm {
+	font-size: 12px;
+	font-weight: bold;}
+	
+	
+/*Site Builder Styles*/
+
+a.menu:link, a.menu:visited, a.menu:active 
+{
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	text-decoration: none;
+} 
+
+a.menu:hover 
+{ color: #e3e3e3; }
+
+.leftnavhead 
+{
+	color: #fff;
+	font-weight: bold;
+}  
+
+a.leftnavlink:link, a.leftnavlink:visited, a.leftnavlink:active 
+{
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+} 
+
+a.leftnavlink:hover 
+{color: #e3e3e3;} 
+
+.basicbold
+{font-weight: bold;}
+
+/*Fleet Owner Styles*/
+
+.resources
+{
+	background-color : #e6dfc2;	
+	font-weight: bold;
+}
+
+A.basichead:link, A.basichead:visited, A.basichead:active
+{
+    font-weight: normal;
+    font-size: 11px;
+    color: #000000;
+    font-style: normal;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-variant: normal;
+    text-decoration: underline
+}
+
+A.basichead:hover
+{color: #999999;}
+
+/*ATE links and text */
+
+.ateSmLink { font-size: 11px; font-family: Arial, Helvetica; font-weight: bold; color: #336699; line-height: 12px;}
+A.ateSmLink:link { font-size: 11px; font-family: Arial, Helvetica; font-weight: bold; color: #336699; line-height: 12px;}
+A.ateSmLink:hover { font-size: 11px; font-family: Arial, Helvetica; font-weight: bold; color: #336699; line-height: 12px;}
+A.ateSmLink:active { font-size: 11px; font-family: Arial, Helvetica; font-weight: bold; color: #336699; line-height: 12px;}
+
+#pixeltrack { position: absolute; width: 1px; top: 0; left: -2px; }

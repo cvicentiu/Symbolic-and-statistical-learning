@@ -1,0 +1,22 @@
+// expand and collapse module version 1.00
+
+var btnOpen = "/img/btn_open.gif";
+var btnClose = "/img/btn_close.gif";
+
+function minmax(mod, btn) {
+  	var el = document.getElementById(mod);
+  	var elBtn = document.getElementById(btn);
+    
+  	if ( el.style.display != "none" ) {
+  		el.style.display = 'none';
+  
+  		elBtn.src = btnOpen;
+  		elBtn.setAttribute("title", "Open");
+  	}
+  	else {
+  		el.style.display = '';
+  
+  		elBtn.src = btnClose;
+  		elBtn.setAttribute("title", "Close");
+		}
+}

@@ -1,0 +1,1 @@
+document.write('<a href=\"#\" onclick=\"loginform.submit();return false;\">Login</a>');

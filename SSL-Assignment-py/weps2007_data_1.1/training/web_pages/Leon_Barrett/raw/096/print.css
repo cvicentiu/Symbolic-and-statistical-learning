@@ -1,0 +1,51 @@
+#nav, #sideBar, #header, #photoStrip, #NBcontainer, #footer, #footerTools, .none, .access, .screen, #titleBar, #subHeader, #banner, .skyscraper, .report, #commentForm, #commentFeed, #comments h3 a {
+	display: none;
+	}
+	
+#content {
+	font-family: arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	}
+	
+#articleTop {
+	height: auto !important;
+	}
+	
+#articleTop p {
+	display: block;
+	position: relative;
+	width: auto !important;
+	margin: 0;
+	font-size: 10pt;
+	}
+
+#publication img {
+	border: 0;
+	}
+	
+#publication span {
+	clear: both;
+	display: block;
+	}
+	
+h1, h2, h3, h4, h5, h6 {
+	float: none;
+	margin: 0 0 10px 0;
+	padding: 0;
+	}
+	
+.insert {
+	border: 1px solid #666;
+	padding: 10px;
+	}
+
+a {
+	color: #000;
+	}
+
+abbr, acronym {
+	border-bottom: 0;
+	}
+
+#main p a:link:after {content: " ["attr(href)"]";}
+

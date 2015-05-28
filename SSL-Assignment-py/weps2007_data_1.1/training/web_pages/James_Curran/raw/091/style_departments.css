@@ -1,0 +1,369 @@
+body {
+margin: 0; 
+padding: 0; 
+}
+
+a:link {
+	text-decoration:underline;
+	font-family: Verdana, Arial, Helvetica;
+	font-size:11px;
+	color:#277464
+ }
+a:visited { 
+	text-decoration:underline;
+	font-family: Verdana, Arial, Helvetica;
+	font-size:11px;
+	color:#277464
+}
+a:active { 
+	text-decoration:underline;
+	font-family: Verdana, Arial, Helvetica;
+	font-size:11px;
+	color:#277464
+}
+a:hover { 
+	text-decoration:none;
+	font-family: Verdana, Arial, Helvetica;
+	font-size:11px;
+	color:#277464
+}
+
+a.large:link {
+	text-decoration:underline;
+	font-family: Verdana, Arial, Helvetica;
+	font-size:12px;
+	color:#277464
+ }
+a.large:visited { 
+	text-decoration:underline;
+	font-family: Verdana, Arial, Helvetica;
+	font-size:12px;
+	color:#277464
+}
+a.large:active { 
+	text-decoration:underline;
+	font-family: Verdana, Arial, Helvetica;
+	font-size:12px;
+	color:#277464
+}
+a.large:hover { 
+	text-decoration:none;
+	font-family: Verdana, Arial, Helvetica;
+	font-size:12px;
+	color:#277464
+}
+
+
+a.leftNav:link {
+	text-decoration:none;
+	font-family: Arial, Verdana, Helvetica;
+	font-size:11px;
+	color:#277464
+ }
+a.leftNav:visited { 
+	text-decoration:none;
+	font-family: Arial, Verdana, Helvetica;
+	font-size:11px;
+	color:#277464
+}
+a.leftNav:active { 
+	text-decoration:none;
+	font-family: Arial, Verdana, Helvetica;
+	font-size:11px;
+	color:#277464
+}
+a.leftNav:hover { 
+	text-decoration:underline;
+	font-family: Arial, Verdana, Helvetica;
+	font-size:11px;
+	color:#277464
+}
+
+
+a.small:link {
+	text-decoration:none;
+	font-family: Arial, Verdana, Helvetica;
+	font-size:10px;
+	color:#277464
+ }
+a.small:visited { 
+	text-decoration:none;
+	font-family: Arial, Verdana, Helvetica;
+	font-size:10px;
+	color:#277464
+}
+a.small:active { 
+	text-decoration:none;
+	font-family: Arial, Verdana, Helvetica;
+	font-size:10px;
+	color:#277464
+}
+a.small:hover { 
+	text-decoration:underline;
+	font-family: Arial, Verdana, Helvetica;
+	font-size:10px;
+	color:#277464
+}
+
+a.light:link {
+	text-decoration:none;
+	font-family: Arial, Verdana, Helvetica;
+	font-size:11px;
+	color:#9DCAC3
+ }
+a.light:visited { 
+	text-decoration:none;
+	font-family: Arial, Verdana, Helvetica;
+	font-size:11px;
+	color:#9DCAC3
+}
+a.light:active { 
+	text-decoration:none;
+	font-family: Arial, Verdana, Helvetica;
+	font-size:11px;
+	color:#9DCAC3
+}
+a.light:hover { 
+	text-decoration:underline;
+	font-family: Arial, Verdana, Helvetica;
+	font-size:11px;
+	color:#9DCAC3
+}
+
+img {/* border style for all images */
+  border: 0;
+  }
+
+body { 
+	font-family: Verdana, Arial, Helvetica;
+	font-size:11px;
+	color:#333333;
+	background-color:#79B7AE
+}
+td { 
+	font-family: Verdana, Arial, Helvetica;
+	font-size:11px;
+	color:#333333
+}
+b {
+	font-weight: 600;
+}
+OL{
+	text-indent: 0px;
+	margin-top : 2px;
+	margin-bottom : 2px;
+}
+UL {
+	list-style : url("../_images/g_bulletArrow_departments.gif");
+	text-indent: 0px;
+	margin-top : 2px;
+	margin-bottom : 0px;
+	/*font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-style : normal;
+	font-variant : normal;
+	font-weight : normal;
+	font-size : 12px;
+	color : #333333;*/
+	vertical-align : top;
+}
+
+UL.leftnav {
+	list-style :  url("../_images/g_bulletArrow_trans.gif");
+	text-indent: 0px;
+	margin-top : 2px;
+	margin-bottom : 0px;
+	vertical-align : top;
+}
+/*LI {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-style : normal;
+	font-variant : normal;
+	font-weight : normal;
+	font-size : 12px;
+	color : #000000;
+	vertical-align : top;
+}*/
+
+.lightCopy { 
+	font-family: Arial, Verdana, Helvetica;
+	font-size:11px;
+	color:#9DCAC3;
+        background-color:#000000
+}
+
+.linkCopy { 
+	font-family: Verdana, Arial, Helvetica;
+	font-size:11px;
+	color:#277464
+}
+
+.whiteCopy { 
+	font-family: Arial, Verdana, Helvetica;
+	font-size:10px;
+	color:#FFFFFF;
+        background-color:#000000
+}
+
+.subheader {
+	font-family: Verdana, Arial, Helvetica;
+	font-size:12px;
+	font-style : normal;
+	font-variant : normal;
+	font-weight : bold;
+	color:#9DCAC3
+}
+
+.deptNavTitle {
+	font-family: Verdana, Arial, Helvetica;
+	font-size:11px;
+	font-style : normal;
+	font-variant : normal;
+	font-weight : bold;
+	color:#277464
+}
+
+
+
+a.pageTitle:link {
+	text-decoration:none;
+        font-family: Verdana, Helvetica;
+        font-size:16px;
+        font-style : normal;
+        font-variant : normal;
+        font-weight : normal;
+        color:#79B7AE
+ }
+a.pageTitle:visited { 
+	text-decoration:none;
+        font-family: Verdana, Helvetica;
+        font-size:16px;
+        font-style : normal;
+        font-variant : normal;
+        font-weight : normal;
+        color:#79B7AE
+}
+a.pageTitle:active { 
+        text-decoration:none;
+        font-family: Verdana, Helvetica;
+        font-size:16px;
+        font-style : normal;
+        font-variant : normal;
+        font-weight : normal;
+        color:#79B7AE
+}
+a.pageTitle:hover { 
+	text-decoration:underline;
+        font-family: Verdana, Helvetica;
+        font-size:16px;
+        font-style : normal;
+        font-variant : normal;
+        font-weight : normal;
+        color:#79B7AE
+}
+
+
+
+
+.pageTitle {
+        font-family: Verdana, Helvetica;
+        font-size:21px;
+        font-style : normal;
+        font-variant : normal;
+        font-weight : normal;
+        color:#79B7AE
+}
+
+.pageSubTitle {
+        font-family: Verdana, Helvetica;
+        font-size:14px;
+        font-style : normal;
+        font-variant : normal;
+        font-weight : normal;
+        color:#79B7AE
+}
+
+.pageSubTitle2 {
+        font-family: Verdana, Helvetica;
+        font-size:14px;
+        font-style : normal;
+        font-variant : normal;
+        font-weight : normal;
+        color:#79B7AE
+}
+
+
+.dkGrayCopy { 
+	font-family: Arial, Verdana, Helvetica;
+	font-size:10px;
+	color:#333333
+}
+
+.mediumBkg { 
+	background-color:#9DCAC3
+}
+
+.darkBkg { 
+	background-color:#79B7AE
+}
+
+.lightBkg { 
+	background-color:#BCDAD5
+}
+
+.lighterBkg { 
+	background-color:#DDEDEB
+}
+.red { /*use this to highlight development notes*/
+	color:#FF0000
+}
+
+.headBkg {
+     background-color:#000000
+}
+
+.content {
+     background-color:#FFFFFF
+}
+
+.imgRSPH {
+     margin-right: 5px;
+     margin-left: 5px
+}       
+        
+.imgEmory {
+     margin-right: 25px;
+     margin-left: 25px
+} 
+
+      
+.quoteTreatment {
+	font-style: italic;
+	/*color:#2a6d63;*/
+	background-color:#ddecea;
+	/*border: thin solid #79b7ae;*/
+	padding:5px 5px 5px 8px;
+}
+.gfeGrouping {
+	font-size:1.5em;
+	color:#098B8D;
+	font-weight:600;
+	padding-top:10px;
+}
+.gfeSubTitle {
+	font-family: Verdana, Helvetica;
+    font-size:12px;
+    font-style : normal;
+    font-variant : normal;
+    font-weight : bold;
+    color:#098B8D;
+	margin-bottom:0;
+}
+table.altRows {
+	border: thin solid #bcdad5;
+}
+tr.colorMedium {
+	background-color:#bcdad5;
+}
+tr.colorLight {
+	background-color:#ddedeb;
+}

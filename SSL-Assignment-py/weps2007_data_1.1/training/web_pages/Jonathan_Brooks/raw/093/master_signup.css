@@ -1,0 +1,306 @@
+/* Body styles */
+	body, div, p, span, .basic {
+		font-family: Arial, Helvetica, sans-serif; 
+		color: #333333; 
+		font-size: 12px; 
+		line-height: 16px;
+/*		SCROLLBAR-BASE-COLOR: #669900; 
+		SCROLLBAR-ARROW-COLOR: #ffffff;
+*/
+	}
+		
+     .mini {
+		font-family: Arial, Helvetica, sans-serif; 
+		color: #333333; 
+		font-size: 8px; 
+		line-height: 10px;
+		margin-left: 20px; 
+		margin-right: 40px; 
+	}
+
+/* Form Text */
+	form {
+		font-family: Arial, Helvetica, sans-serif; 
+		font-size: 12px; 
+		color: #333333; 
+		}
+		
+	textarea {
+		font-family: Arial, Helvetica, sans-serif; 
+		font-size: 12px;
+		color: #333333; 
+		}
+		
+	.formtxt01 {
+		font-family: Arial, Helvetica, sans-serif; 
+		color: #333333; 
+		font-size: 12px;
+		width: 180px;
+	}
+	
+	.formtxt02 {
+		font-family: Arial, Helvetica, sans-serif; 
+		color: #333333; 
+		font-size: 12px;
+	}
+	
+	.formtxt03 {
+		font-family: Arial, Helvetica, sans-serif; 
+		color: #333333; 
+		font-size: 12px;
+		width: 105px;
+	}
+	
+	.txtarea01 {
+		font-family: Arial, Helvetica, sans-serif; 
+		color: #333333; 
+		font-size: 12px;
+		width: 610px;
+	}
+	
+		
+/* Section Text */
+	.txtindent20 { 
+		margin-left: 20px; 
+		margin-right: 40px; 
+	}
+	
+	.txtred {
+		color: #CC6600;
+	}
+	
+	.txtyellow {
+		color: #FFFF00;
+	}
+	
+		.txtwhite {
+		color: #FFFFFF;
+	}
+		.txtwhite16 {
+		font-family: Arial, Helvetica, sans-serif; 
+		color: #FFFFFF; 
+		font-size: 14px;
+	}
+	
+	.flashtip { 
+		font-size: 12px;
+		line-height: 15px;
+		margin-left: 24px; 
+		margin-right: 12px; 
+	}
+	
+	.pgnoblue { 
+		font-size: 11px;
+		line-height: 16px;
+		color: #13007C;
+		margin-left: 20px; 
+		margin-right: 8px; 
+	}
+	
+	.pgnowhite { 
+		font-size: 11px;
+		line-height: 16px;
+		color: #FFFFFF;
+	}
+
+
+	.selectedpgno { 
+		font-size: 11px;
+		line-height: 16px;
+		font-weight : bold;
+		color: #FFFF00;
+	}
+	
+	.small { 
+		font-size: 10px;
+	}
+	
+	.copyrightxt { 
+		font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+		color: #75A3D1;
+		font-size: 10px;
+		line-height: 12px;
+	}
+		
+		
+/* Link Text */
+	a:link {
+		color: #CC6600;
+		text-decoration: none;
+	}
+		
+	a:visited {
+		color: #CC6600;
+		text-decoration: none;
+	}
+	
+	a:active { 
+		color: #CC6600;
+		text-decoration: none;
+	}
+	
+	a:hover { 
+		color: #CC6600;
+		text-decoration: underline;
+	}
+
+
+	
+	
+	a.copyright:link {
+		font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+		color: #75A3D1;
+		text-decoration: none;
+	}
+		
+	a.copyright:visited {
+		font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+		color: #75A3D1;
+		text-decoration: none;
+	}
+	
+	a.copyright:active { 
+		font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+		color: #75A3D1;
+		text-decoration: none;
+	}
+	
+	a.copyright:hover { 
+		font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+		color: #75A3D1;
+		text-decoration: underline;
+	}
+
+
+	
+	
+	a.linkwhite:link {
+		color: #FFFFFF;
+		text-decoration: none;
+		font-weight : normal;
+	}
+		
+	a.linkwhite:visited {
+		color: #FFFFFF;
+		text-decoration: none;
+		font-weight : normal;
+	}
+	
+	a.linkwhite:active { 
+		color: #FFFFFF;
+		text-decoration: none;
+		font-weight : normal;
+	}
+		
+	a.linkwhite:hover { 
+		color: #FFFFFF;
+		text-decoration: underline;
+		font-weight : normal;
+	}
+
+
+	
+
+
+	a.linkwhitebold:link {
+		color: #FFFFFF;
+		text-decoration: none;
+		font-weight : bold;
+	}
+		
+	a.linkwhitebold:visited {
+		color: #FFFFFF;
+		text-decoration: none;
+		font-weight : bold;
+	}
+	
+	a.linkwhitebold:active { 
+		color: #FFFFFF;
+		text-decoration: none;
+		font-weight : bold;
+	}
+		
+	a.linkwhitebold:hover { 
+		color: #FFFFFF;
+		text-decoration: underline;
+		font-weight : bold;
+	}
+
+
+	
+	a.linkblack:link {
+		color: #333333;
+		text-decoration: none;
+	}
+		
+	a.linkblack:visited {
+		color: #333333;
+		text-decoration: none;
+	}
+	
+	a.linkblack:active { 
+		color: #333333;
+		text-decoration: none;
+	}
+		
+	a.linkblack:hover { 
+		color: #333333;
+		text-decoration: underline;
+	}
+		
+	a.linkyellowbold:link {
+		color: #FFFF00;
+		text-decoration: none;
+		font-weight : bold;
+	}
+		
+	a.linkyellowbold:visited {
+		color: #FFFF00;
+		text-decoration: none;
+		font-weight : bold;
+	}
+	
+	a.linkyellowbold:active { 
+		color: #FFFF00;
+		text-decoration: none;
+		font-weight : bold;
+	}
+	
+	.linkyellow { 
+		color: #FFFF00;
+		font-family: Arial, Helvetica, sans-serif; 
+		font-size: 12px; 
+		font-weight : normal;
+	}	
+	a.linkyellow:link { 
+		color: #FFFF00;
+		font-family: Arial, Helvetica, sans-serif; 
+		font-size: 12px; 
+		text-decoration: underline;
+		font-weight : normal;
+	}
+	a.linkyellow:visited {
+		color: #FFFF00;
+		font-family: Arial, Helvetica, sans-serif; 
+		font-size: 12px; 
+		text-decoration: underline;
+		font-weight : normal;
+	}
+	
+	a.linkyellow:active { 
+		color: #FFFF00;
+		font-family: Arial, Helvetica, sans-serif; 
+		font-size: 12px; 
+		text-decoration: underline;
+		font-weight : normal;
+	}
+		
+	a.linkyellow:hover { 
+		color: #FFFF00;
+		font-family: Arial, Helvetica, sans-serif; 
+		font-size: 12px; 
+		text-decoration: underline;
+		font-weight : normal;
+	}
+	
+	}

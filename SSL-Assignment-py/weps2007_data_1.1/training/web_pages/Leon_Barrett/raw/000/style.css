@@ -1,0 +1,282 @@
+/*
+Pomegranate color scheme:
+pomegranate red: #8A0903
+blue: #0A0389
+green: #03890A
+*/
+
+a:link {color:#000151}
+a:visited {color:#500051}
+a:hover {background-color:lightyellow}
+
+body
+{
+  /*background-color:#ffffff;*/
+  /*background-image: url(pictures/tile.jpg);
+  background-attachment: fixed;*/
+  /*color:#015100;*/
+  /*color: #013100;*/
+  font: 1em serif;
+}
+
+.address
+{
+  font-size: 1.0em;
+}
+
+.address li
+{
+  margin-top: 1em;
+}
+
+#posts {
+  margin-right: 19em;
+}
+
+h1, h2
+{
+  /*background-image: url(pictures/tile-blue.jpg);
+  background-position: 0 0;
+  background-attachment: fixed;*/
+  /*background-color: #044800;*/
+  /*background-color: #344e35;*/
+  background-image: url("style/background-large.jpg");
+  /*color: #fbdf97;*/
+  /*color: #b2b297;*/
+  color: black;
+  border-color: #344e35;
+  border-style: solid;
+  border-width: 1px;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  margin-top: 0em;
+  text-align: center;
+  clear: both;
+}
+
+h1
+{
+  margin-bottom: 1em;
+}
+
+h2
+{
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-bottom: -1em;
+  position: relative;
+  top: -1em;
+}
+
+div.section, div.about, .text, div.timelapse, #ask, .entry, #posts, #footer, div.day h3
+{
+/*  clear: left;*/
+  /*background-color: #aaaaaa;*/
+  /*background-image: url(pictures/tile-light.jpg);
+  background-position: 0 0;
+  background-attachment: fixed;*/
+  /*color:#013100;*/
+  /*border-color: #044800;*/
+  border-color: #344e35;
+  /*color:#05630A;
+  border-color:#05630A;*/
+  /*color: #0A0389;
+  border-color: #0A0389;*/
+  border-style: solid;
+  border-width: 1px;
+}
+
+div.section, div.about, .text, div.timelapse, .entry, #posts, #footer, div.day h3
+{
+  margin-bottom: 2em;
+  padding: 0.5em;
+}
+
+#ask
+{
+  background-color: green;
+  margin: 0em;
+  padding: 0em;
+  float: right;
+}
+#ask .text
+{
+  margin: 0em;
+}
+
+div.day h3
+{
+  /*background-image: url(pictures/tile-blue.jpg);*/
+  text-align: center;
+  color: #fbdf97;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+div.entry span.subject 
+{
+  text-align: center;
+  display: block;
+  color: #7b0b07;
+  font-size: 2em;
+}
+
+div.entry span.timestamp
+{
+  display: block;
+  float: left;
+  color: #050f93;
+}
+
+div.entry span.entryheading
+{
+  display: block;
+}
+
+div.entry div.currents
+{
+  margin-top: 1em;
+}
+
+code
+{
+  color: #7b0b07;
+}
+
+/*div.section {
+  clear: left;
+}*/
+
+div.about {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#titleimg {
+  position: absolute;
+  top: 0px;
+  left: 160px;
+}
+
+#headerimg {
+}
+
+#header {
+  margin-top: -0.5em;
+  margin-left: -0.5em;
+  height: 120px;
+  background-image: url("style/background-full.jpg");
+  /*background-image: url("style/background.jpg");*/
+}
+
+#body, .text {
+  position: relative;
+  margin-top: 2em;
+}
+
+#links_header {
+  position: absolute;
+  left: 160px;
+  top: 90px;
+  height: 30px;
+  width: 480px;
+  font-size: 80%;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+#links_header ul li, #links_header ul li a, #links_header ul li a img {
+  display: inline;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+}
+
+#links_header ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+
+div.clear {
+  clear: both;
+}
+
+div.caption
+{
+  font-size: .8em;
+}
+
+/*
+ul.sidebar
+{
+position: fixed;
+float: left;
+top: 5em;
+left: 1em;
+width: 20em;
+background-color: lightyellow;
+border: black 1px solid;
+padding: .5em;
+padding-left: 1em;
+}
+*/
+
+.about{
+  display: block;
+}
+
+.timelapse {
+  text-align: center;
+  margin: 1em;
+}
+
+.timelapse .name {
+  font-size: 1.2em;
+  color: darkblue;
+}
+
+/* rules for my publications page */
+.papers li {
+  margin-bottom: 0.5em;
+}
+
+.papers .title {
+  font-size: 1.2em;
+  color: darkblue;
+  margin-left: 1em;
+  margin-right: 1em;
+  display: inline;
+}
+
+.papers .links {
+  display: inline;
+  font-size: 0.8em;
+}
+
+.papers .journal {
+  font-size: 0.8em;
+  color: darkblue;
+}
+
+.papers .date {
+  display: inline;
+  color: darkred;
+}
+
+.papers .authors {
+  display: inline;
+  color: darkblue;
+}
+
+.papers .description {
+  font-size: 90%;
+}
+
+ul.address {
+  font-size: 90%;
+}

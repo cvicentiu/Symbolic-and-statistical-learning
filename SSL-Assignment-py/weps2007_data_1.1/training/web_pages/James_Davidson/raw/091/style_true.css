@@ -1,0 +1,1835 @@
+/* ---------- */
+/* styles for all pages */
+/* ---------- */
+
+body {
+	font-size:11px;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	color:#000000;
+}
+
+a {
+	font-size:11px; 
+	text-decoration: none;
+	color:#3F6F9F;
+}
+
+a:hover {
+	text-decoration: none;
+	color:#999999;
+}
+
+.titles a  {
+        font-size: 12px;
+}
+
+.links a  {
+        font-size: 12px;
+}
+
+.article a {
+	font-size: 12px;
+}
+
+.summary a {
+	font-size: 12px;
+}
+
+.bio a {
+	font-size: 12px;
+}
+
+text_inside a {
+	font-size: 12px;
+}
+
+.text_right a {
+	font-size: 12px;
+}
+
+td a {
+	font-size:12px;
+}
+
+.container_inside a {
+	font-size: 12px;
+}
+
+/* make hyperlink in heading has same font as heading */
+/* Used in currency pages */
+.heading a {
+	font-size: 13px;
+	font-weight: bold;
+	text-align:center;
+}
+
+.pictures  {
+	text-align:center;
+}
+
+.pictures a {
+	text-decoration:none;
+}
+
+.paragraph {
+	margin-bottom:10px;
+}
+
+.bold  {
+	font-weight:bold;
+}
+
+.italic {
+	font-style:italic;
+}
+
+.center {
+	text-align:center;
+}
+
+.nojustify  {
+	padding-top:0px;
+	padding-bottom:20px;
+	padding-right:40px;
+	padding-left:40px;
+	font-family:arial,helvetica,geneva,sans-serif;
+	font-size:12px;
+}
+	
+.nojustify a {
+	font-family:arial,helvetica,geneva,sans-serif;
+	font-size:12px;
+}
+
+.nojustify a:hover {
+	color:#999999;
+	font-family:arial,helvetica,geneva,sans-serif;
+	font-size:12px;
+}
+
+
+/* ---------- */
+/* styles for all headers */
+/* ---------- */
+
+.logo {
+	float: left;
+	text-align: left;
+	width: 60%;
+}
+
+.logo_inside {
+	float: left;
+	text-align: left;
+	width: 60%;
+}
+
+.forminside {
+	float: right;
+	text-align: right;
+	width: 35%;
+	font-size: 12px;
+	font-family:verdana,arial,helvetica,geneva,sans-serif;
+}
+
+div.spacer {
+	clear: both;
+	height:5px;
+}
+
+.menu {
+	border-top:1px solid #3d75a8;
+	border-bottom:1px solid #3d75a8;
+	padding:4px;
+	font-weight:bold;
+	font-family:verdana,arial,helvetica,geneva,sans-serif;
+        position:relative;
+        z-index:1;
+	font-size:10px;
+	color: #999999;
+	text-align:center;
+	width:750px;
+	background-color:#ebf3fb;
+}
+	   
+.menu a {
+	font-family:verdana,arial,helvetica,geneva,sans-serif;
+	font-size:10px;
+	font-weight:bold;
+}
+	   
+
+/* ---------- */
+/* styles for all footers */
+/* ---------- */
+
+.footer_inside {
+	width:750px;
+	margin-left:5px
+}	
+	
+.copy  {
+	float:left;
+	margin-top:8px;
+	font-family:verdana,arial,helvetica,geneva,sans-serif;
+	font-size:9px;
+	color:#666666;
+	text-align:left;
+}
+
+.ibiblio  {
+	float:right;
+	margin-top:8px;
+}
+
+
+/* ---------- */
+/* styles for home page */
+/* ---------- */
+
+.container {
+	width:100%;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-size:11px;
+}	
+	
+.box {
+	width:100%;
+}
+
+.headline  {
+	padding-top:30px;
+	padding-bottom:15px;
+	text-align:center;
+}
+
+.subhead  {
+	margin-top:10px;
+	margin-bottom:20px;
+	text-align:center;
+}
+
+.text  {
+	padding-top:0px;
+	padding-bottom:20px;
+	padding-right:40px;
+	padding-left:40px;
+	font-size:12px;
+	text-align:justify;	
+}
+	
+.text a {
+	font-family:arial,helvetica,geneva,sans-serif;
+	font-size:12px;
+}
+
+.text a:hover {
+	color:#999999;
+	font-family:arial,helvetica,geneva,sans-serif;
+	font-size:12px;
+}
+
+
+/* ---------- */
+/* styles for browse collections page */
+/* ---------- */
+
+.contents_browse {
+	min-height:400px;
+}
+
+.row {
+	height:85px;
+}
+
+.pic_left {
+	margin-left:50px;
+	border:none;
+	text-decoration:none;
+}
+
+.pic_left a img {
+	border:none;
+}
+
+.pic_left a:hover img {
+	border:none;
+}
+
+.text_right {
+	width:500px;
+	margin-left:150px;
+	margin-top:-77px;
+}
+
+
+/* ---------- */
+/* styles for collections sidebar */
+/* ---------- */
+
+.collections {
+	width:140px;
+	text-align:left;
+	float:left;
+	left: 5px;
+	top: 11px;
+}
+
+.collections_title {
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.collections_links {
+	font-family:verdana,arial,helvetica,geneva,sans-serif;
+	font-size:10px;
+	margin-left:5px;
+	font-weight:bold;
+}
+
+.collections_links a {
+        font-size:10px;
+        font-weight:bold;
+}
+
+
+.collections_links a:hover {
+	color:#999999;
+}
+
+
+/* ---------- */
+/* styles for interior pages with collections sidebar */
+/* ---------- */
+
+.container_inside {
+	width:750px;
+	margin-left:5px;
+	text-align:left;
+}	
+	
+.contents {
+	border-left:1px solid #cccccc;
+	margin-left:160px;
+	width:585px;
+	min-height:420px;
+	height:auto;
+	height:expression(document.body.clientHeight > 420? "auto": "420px" );
+}
+* html .contents {
+	height:expression(document.body.clientHeight > 420? "auto": "420px" );
+	overflow:auto;
+}/*for ie only */
+
+.headline_inside  {
+	padding-top:30px;
+	margin-bottom:15px; 
+	text-align:center;
+        margin-left:200px;
+}
+
+.text_inside  {
+	margin-top:10px;
+	padding-bottom:20px;
+	margin-right:40px;
+	margin-left:40px;
+	font-family:arial,helvetica,geneva,sans-serif;
+	font-size:12px;
+	text-align:justify;
+}
+
+.text_inside a {
+	color:#3F6F9F;
+	font-family:arial,helvetica,geneva,sans-serif;
+	font-size:12px;
+}
+
+.text_inside a:hover {
+	color:#999999;
+	font-family:arial,helvetica,geneva,sans-serif;
+	font-size:12px;
+}
+
+
+/* ---------- */
+/* styles for interior pages without collections sidebar  */
+/* ---------- */
+
+.heading {
+	margin-top:10px;
+	margin-bottom:10px;
+	font-size: 13px;
+	font-weight: bold;
+	text-align:center;
+}
+
+.about {
+	margin-top:5px;
+	margin-bottom:5px;
+	text-align:center;
+	font-weight:bold;
+}
+
+
+/* ---------- */
+/* styles for image description pages  */
+/* ---------- */
+
+.tab1 {
+	font-size:12px;
+	margin-left:95px;
+	margin-right:72px;
+}
+	
+.tab {
+   font-size:12px;
+	margin-right:72px;
+}
+
+.number_list ol li {
+	margin-bottom:10px;
+}
+
+
+/* ---------- */
+/* styles for pages with alphabetic lists  */
+/* ---------- */
+
+.crumbs  {
+	font-family:verdana,arial,helvetica,geneva,sans-serif;
+	font-size:9px;
+	text-align:left;
+	margin-top:8px;
+}
+
+.crumbs a {
+	font-family:arial,helvetica,geneva,sans-serif;
+	font-size:9px;
+}
+
+.crumbs a:hover {
+	color:#999999;
+	font-family:arial,helvetica,geneva,sans-serif;
+	font-size:9px;
+}
+
+.alpha  {
+    font-size:10px;
+	text-align:center;
+	font-family:verdana,arial,helvetica,geneva,sans-serif;
+	font-weight: bold;
+}
+
+.letter  {
+	font-family:arial,helvetica,geneva,sans-serif;
+	font-weight: bold;
+	margin-top:15px;
+}
+.genre {
+	font-family:arial,helvetica,geneva,sans-serif;
+	font-weight:bold;
+	margin-top:15px;
+	color:#000000;
+}
+
+.top_page  {
+	font-family:arial,helvetica,geneva,sans-serif;
+	font-weight: normal;
+}
+
+.alpha_bullet ul li {
+	margin-bottom:10px;
+}
+
+.selected  {
+	font-size: 16px;
+	font-family:arial,helvetica,geneva,sans-serif;
+	font-weight: bold;
+	font-style: italic;
+	text-align:center;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+
+/* ---------- */
+/* styles for pages with bulleted lists of dates  */
+/* ---------- */
+
+.column_box {
+	width:410px;
+	margin-left:130px;
+	margin-top:15px;
+}
+
+.column_box table {
+	font-size:11px;
+	font-family:verdana,arial,helvetica,geneva,sans-serif;
+	width:100%;
+}
+
+.column_box table td {
+	vertical-align:top;
+}
+
+.column_head {
+	font-weight:bold;
+}
+
+
+/* ---------- */
+/* styles for browse by topics  */
+/* ---------- */
+
+.indent {
+	margin-left:30px;
+	margin-bottom:20px;
+}
+
+
+/* ---------- */
+/* styles for religiouscontent.html  */
+/* ---------- */
+
+.heading2 {
+	margin-top:10px;
+	font-size: 13px;
+	font-weight: bold;
+	text-align:left;
+}
+
+.indenthead {
+	font-weight:bold;
+	margin-left:30px;
+}
+
+.indent2 {
+	margin-left:60px;
+}
+
+.gray {
+	color:#999999;
+}
+
+
+/* ---------- */
+/* styles for classroom resources  */
+/* ---------- */
+
+.nocollections_twocolumns {
+	margin-top:50px;
+	margin-bottom:50px;
+}
+
+.nocollections_columnleft {
+	margin-top:50px;
+	margin-bottom:50px;
+	font-family:arial,helvetica,geneva,sans-serif;
+	font-size:12px;
+	margin-left:30px;
+}
+
+.nocollections_columnleft ul {
+	margin-top:0px;
+	margin-bottom:0px;
+}
+
+.nocollections_columnright {
+	float:right;
+	font-family:arial,helvetica,geneva,sans-serif;
+	font-size:12px;
+	text-align:left;
+}
+
+.pictureright {
+	float:right;
+}
+
+.column {
+	font-size:12px;
+	margin-left:200px;
+	margin-right:100px;
+	margin-top:-160px;
+}
+
+.column2 {
+	font-size:12px;
+	margin-left:400px;
+	margin-top:-320px;
+}
+
+.column3 {
+	font-size:12px;
+	margin-left:200px;
+	margin-top:-220px;
+}
+
+.posterrow {
+	height:120px;
+}
+
+.poster_left {
+	border:none;
+	text-decoration:none;
+}
+
+.poster_right {
+	width:350px;
+	margin-left:95px;
+	margin-top:-85px;
+}
+
+.headerbox_heading {
+	font-size: 12px;
+	font-weight: bold;
+	text-align:center;
+	background-color: #ebf3fb;
+	border:1px solid #3d75a8;
+	width: 250px;
+	height:20px;
+	margin-bottom:5px;
+}
+
+.teacher_indent {
+	margin-left: 10px;
+}
+
+.classroomrow {
+	height:200px;
+}
+
+.boxleft {
+	float: left;
+}
+
+.boxright {
+	margin-left: 410px;
+}
+
+
+/* ---------- */
+/* styles for document level pages, ie menu, bio, summary, etc.  */
+/* ---------- */
+
+
+BODY {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 13px;
+	Color: #000000;
+	background-color: white;
+}
+
+
+/*--------- A ----------------------*/
+A:Link  {
+	text-decoration: none;
+}
+
+A:Active  {
+	text-decoration: none;
+}
+
+A:visited {
+	text-decoration: none;
+}
+
+/* ------------- DIV -------------------*/
+		
+DIV.source {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 13px;	
+}
+
+DIV.item_author {
+	font-size: 140%;
+	color: Black;
+	font-weight: bold;
+	text-align: center;
+}
+
+DIV.item_title {
+	color: red;
+	font-size:140%;
+	font-weight: bold;
+	text-align: center;
+}
+
+DIV.imprint {
+	font-size : 100%;
+	text-align: center;
+}
+
+DIV.section_heading {
+	margin-top:20px;
+	margin-bottom:3px;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+DIV.annotation_source {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 13px;	
+	text-align: center;
+	padding-top:30px;
+}
+
+DIV.annotations {
+	font-size : 13px;
+}
+
+DIV.article {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 13px;
+}
+
+DIV.title_readings {
+	text-align: center;
+	font-size : 13px;
+}
+
+DIV.readings {
+	font-size : 13px;
+}
+
+DIV.funding {
+	font-size : 90%;
+}
+
+DIV.poster_source_heading {
+	font-size: 12px;
+	font-weight: bold;
+	text-align: left;
+}
+
+DIV.poster_source_content {
+	font-size: 12px;
+}
+
+DIV.encoding1 {
+	font-size: 12px;
+	margin-left: 10%;
+	line-height: 150%;
+}
+
+DIV.encoding2 {
+        font-size: 12px;
+        margin-left: 12%;
+        line-height: 150%;
+}
+DIV.encoding3 {
+        font-size: 12px;
+        margin-left: 14%;
+        line-height: 150%;
+}
+
+DIV.encoding4 {
+        font-size: 12px;
+        margin-left: 16%;
+        line-height: 150%;
+}
+
+DIV.encoding5 {
+        font-size: 12px;
+        margin-left: 18%;
+        line-height: 150%;
+}
+
+DIV.encoding6 {
+        font-size: 12px;
+        margin-left: 20%;
+        line-height: 150%;
+}
+	
+DIV.encoding7 {
+        font-size: 12px;
+        margin-left: 22%;
+        line-height: 150%;
+}
+		
+DIV.encoding8 {
+	font-size: 12px;
+	margin-left: 24%;
+	line-height: 150%;
+}
+
+div.page_turner {
+	text-align: center;
+}
+
+div.p{
+	padding-bottom:15px;
+}
+
+div.right {
+	text-align: right;
+}
+div.left {
+	text-align: left;
+}
+div.center {
+	text-align: center;
+}
+
+div.div1_orig_head {
+	font-size: 13px;
+	font-weight: bold;
+}
+div.orig_head {
+	font-size: 13px;
+}
+	
+
+/* -------------- P ------------------- */
+P.source {
+	color: red;
+}
+
+P.person {
+	font-size: 140%;
+	color: Black;
+	text-align: center;
+}
+
+P.section_heading {
+	margin-top:10px;
+	margin-bottom:10px;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+P.bio {
+	font-size : 13px;	
+	line-height : 130%;
+}
+
+P.summary {
+	font-size : 13px;	
+	line-height : 130%;
+}
+
+P.creator {
+	text-align: right; 
+	margin-right: 5%;
+}
+
+P.bibliography {
+	font-size: 90%;
+	text-align: justify; 
+}
+
+P.project-links {
+	margin-top: 10px;	
+}
+
+P.intro_annotations {
+	font-size: 80%;
+}
+
+P.text_annotations {
+
+}
+
+P.title_readings {
+	font-size: 140%;
+}
+
+P.types_readings {
+	font-size: 120%;
+}
+
+P.item_readings {
+	text-indent : 5%;
+}
+
+P.disclaimer {
+	font-size : 90%;
+	text-align: center;
+	line-height : 110%;
+}
+
+P.article {
+	line-height : 130%;
+}
+
+P.poem {
+	margin-left : 30px;
+}
+
+P.signature {
+	text-align : right;
+	margin-right: 5%;
+	font-weight: normal;
+}
+
+P.date {
+	text-align : right;
+	margin-right: 5%;
+	font-weight: normal;
+}
+
+P.letter { 
+	font-weight: normal;
+
+
+}
+P.example {
+	margin-left : 5%;
+	font-weight : bold;
+}
+
+P.right {
+	text-align: right;
+}
+
+
+/* -------------- H4 -----------------------*/
+H4.titles {
+	text-align: left;
+	font-size: 120%;
+}
+
+H4.article {
+	font-size: 130%;
+	text-align: center;
+}
+
+H4.article_author {
+	font-size: 130%;
+	text-align: center;
+}
+
+H4.article_provenance {
+	font-size: 130%;
+	text-align: center;
+}
+
+/* ------------- H3 ------------------*/
+H3.title_annotations {
+	text-align : center;
+}
+
+H3.article_title {
+	font-size : 150%;
+	text-align: center;
+	color: Red;
+}
+
+H3.article {
+	font-size : 150%;
+	text-align: center;
+	color: Red;
+}
+
+/* -------------- BLOCKQUOTE ----------------*/
+BLOCKQUOTE.poetry {
+	margin-left : 10%;
+}
+
+BLOCKQUOTE.footer { 
+	margin-left: 5%;
+}
+
+BLOCKQUOTE.article {
+	margin-left: 10px; 
+	margin-right: 10px
+}
+/* ----------------- HR ------------------- */
+HR.footer {
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+HR.annotations {
+	text-align : center;
+	width : 35%;
+}
+
+HR.article {
+	text-align : center;
+}
+
+HR.readigns {
+	text-align:center;
+	width : 85%;
+}
+
+HR.funding {
+	text-align:center;
+	width : 100%;
+}
+
+HR.p30 {
+	text-align: center;
+	width: 30%;
+}
+
+
+/* Added HR for navbar, EL pages */
+
+HR.navbar {
+        text-align:center;
+        width : 90%;
+} 
+
+/* ------------------ OTHERS -------------*/
+UL.list-of-titles {
+	text-align : left;
+}
+
+LI.titles {
+	text-align : left;
+	margin-top: 10pt;
+}
+
+/* -------------- For all -------------------*/
+.source {
+	font-size: 14px;
+	color: red;
+	font-weight: bold;
+}
+
+.subTitles {
+	font-size: 14px;
+	color: Black;
+}
+
+.headers {
+	font-size: 14px;
+	color: Black;
+	font-weight: bold;
+}
+
+
+UL.list-of-titles {
+	text-align : left;
+}
+
+LI.titles {
+	text-align : left;
+	margin-top: 10pt;
+}
+
+/* ------------ SPAN ------------------*/
+SPAN.author_of_the_annotated_title {
+	font-size: 140%;
+	padding-bottom : 110%;
+}
+
+SPAN.title {
+	color: red;
+	font-size:130%;
+}
+
+SPAN.text_desc {
+	font-size: 12px;
+	font-weight: normal;
+}
+
+SPAN.page_annotation {
+	font-size:110%;
+	margin-bottom : 50%;
+}
+
+SPAN.word {
+	font-weight : bold;
+	padding-top: 10em;
+}
+
+SPAN.annotation{
+	
+}
+
+SPAN.poetry {
+	margin-left : 30px;
+}
+
+
+span.creator_readings {
+	color:red;
+}
+
+span.item_author {
+	font-weight : bold;
+}
+
+span.item_title {
+	font-style : italic;
+}
+
+span.item_imprint { /* not defined */
+
+}
+
+SPAN.year {
+	font-weight : bold;
+}
+
+SPAN.bold {
+	font-weight: bold;
+}
+
+SPAN.italic {
+	font-style : italic;
+}
+SPAN.italics {
+	font-style : italic;
+}
+SPAN.alert {
+	color : Red;
+}
+
+SPAN.tag {
+	color : Navy;
+}
+
+SPAN.att {
+	font-weight: bold;
+}
+
+	
+
+
+/*----------------- for table of content --------------------*/
+.TOC_columnleft_heading {
+	font-family:arial,helvetica,geneva,sans-serif;
+	font-size:13px;
+	font-weight: bold;
+	text-align:left;
+	margin-left:10px;
+	width:450px;
+	margin-top:10px;
+	margin-bottom:15px;
+}
+
+.TOC_columnright_heading {
+	font-family:arial,helvetica,geneva,sans-serif;
+	font-size:13px;
+	font-weight: bold;
+	text-align:right;
+	margin-left:470px;
+	margin-top:-28px;
+	margin-bottom:15px;
+}
+.TOC_columnleft {
+	font-family:arial,helvetica,geneva,sans-serif;
+	font-size:12px;
+	text-align:left;
+	margin-left:10px;
+	margin-bottom:8px;
+	width:450px;
+}
+
+.TOC_columnright {
+	font-family:arial,helvetica,geneva,sans-serif;
+	font-size:12px;
+	text-align:right;
+	margin-left:470px;
+	margin-top:-20px;
+	margin-bottom:8px;
+}
+
+/* ---------- */
+/* highlights styles todd */
+/* ---------- */
+
+a#hilite {
+        color:#FFFFFF;
+        background-color:#3F6F9F;
+        border-top:1px solid #3F6F9F;
+        border-bottom:1px solid #3F6F9F;
+        border-right:2px solid #3F6F9F;
+        border-left:2px solid #3F6F9F;
+}
+
+p.highlights {
+        width:450px;
+        margin-bottom:10px;
+}
+
+.highlights_author {
+        text-align:right;
+        width:450px;
+        margin-top:10px;
+        margin-bottom:10px;
+}
+
+.highlights_body {
+        width:450px;
+        font-family : Arial, Helvetica, sans-serif;
+        font-size : 13px;
+        Color: #000000;
+        background-color: white;
+}
+
+.highlights_box {
+        width:150px;
+        border-style: double;
+        text-align:left;
+        float:right;
+        border-color: #0D549B;
+        background-color: #EBF3FB;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+}
+
+.highlights_box_header {
+        width:150px;
+        height:20px;
+        text-align:center;
+        color:#000000;
+        font-weight:bold;
+        float:right;
+        padding-top:5px;
+        padding-bottom:15px;
+}
+
+.highlights_index {
+        margin-left:125px;
+}
+.highlights_right {
+        width:200px;
+        text-align:center;
+        float:right;
+        left: 20px;
+        top: 11px;
+}
+
+.highlights_spacer {
+        width:150px;
+        height:15px;
+        float:right;
+}
+
+.highlights_top {
+        width:150px;
+        height:25px;
+        font-family:verdana,arial,helvetica,geneva,sans-serif;
+        text-align:center;
+        font-weight:bold;
+        font-size:14px;
+        float:right;
+        padding-top:35px;
+        padding-bottom:25px;
+}
+
+/* ---------- */
+/* end highlights styles (todd) */
+/* ---------- */
+
+/* ---------- */
+/* new template options (kim) */
+/* ---------- */
+
+.box_new {
+        padding-left:20px;
+	margin-top:10px;
+	margin-left:3px;
+	margin-bottom:10px;
+	border:1px solid #C2BFBF;
+	width:97%; 
+	min-height:540px; 
+	height:auto; 
+}
+
+/* added for bios by Adrienne */
+.box_bio {
+	padding-left:7px;
+	padding-right:7px;
+  margin-left:3px;
+	margin-top:10px;
+	margin-bottom:10px;
+	border:1px solid #C2BFBF;
+	width:97%; 
+	min-height:300px; 
+	height:auto; 
+}
+
+.navbar_side {
+    width:175px; 
+	float:left; 
+	margin-top:15px;
+    margin-right:15px;
+    margin-bottom:15px;
+	border:3px solid #D0E5FA;
+	min-height:370px; 
+	background-color:#FBFBE5; 
+	height:expression(document.body.clientHeight > 300? "auto": "300px" ); 
+}
+
+.navbar_search {
+	width:175px;
+	top: 5px;
+        height:65px; 
+	background-color:#EBF3FB;
+ 	height:expression(document.body.clientHeight > 65? "auto": "65px" ); 
+}
+/*
+.adv_search {
+        margin-left:10px;               
+        margin-top:-10px;
+        font-weight:bold; 
+        font-size: 14px;
+}
+*/
+
+.adv_search_pos {
+        margin-left:10px;
+        margin-top:-10px;
+        margin-bottom:10px;
+}
+
+SPAN.adv_search {
+        font-weight:bold;     
+        font-size:12px;
+}
+
+.button {
+        width: 25px;
+	background-color: #fff;
+	color: #3d75a8;
+	font-weight:bold;
+	margin: 0px 0px 1px 0px;
+	font-size: 90%;
+	border: 1px solid #3d75a8;
+}
+
+.navbar_links {
+	width:175px;
+	border-bottom:2px dotted #3D75A8;
+	text-align:left;
+	float:left;
+}
+
+.navbar_heading {
+	margin-left:9px; 
+	margin-top:4px;
+	font-weight:bold;
+	font-size:85%;
+}
+
+.navbar_text {
+	margin-top:2px;
+	margin-left:12px;
+	font-size:85%;
+	font-weight:bold;
+}
+
+.navbar_text a {
+	margin-top:2px;
+	font-size:11px;
+}
+
+.navbar_text a:hover{
+	color:#999999;
+}
+
+
+.navbar_item {
+	margin-left:0px;
+	margin-top:2px;
+	font-size:85%;
+}
+
+.navbar_item a {
+	font-size:10px;
+	font-weight:bold;
+	margin-left:0px;
+}
+
+.navbar_item a:hover{
+	color:#999999;
+}
+
+.text_new {
+	margin-top:10px;
+	padding-bottom:20px; 
+	margin-right:20px;
+/*      margin-right was 40px; */
+/*	margin-left:210px; */
+	font-family:arial,helvetica,geneva,sans-serif;
+	font-size:12px;
+}
+
+.text_new a {
+	color:#3F6F9F;
+	font-family:arial,helvetica,geneva,sans-serif;
+	font-size:12px;
+}
+
+.text_new a:hover {
+	color:#999999;
+	font-family:arial,helvetica,geneva,sans-serif;
+	font-size:12px;
+}
+
+.print {
+  font-size:10px;
+  text-align:right;
+}
+
+.title_interior{
+	
+	padding-top:5px;
+	text-align:center;
+	border-bottom:1px solid #C2BFBF;
+
+	height:20px;
+	background-color:#fbfbe5;
+}
+
+/* ---------- */
+/* end new template options */
+/* ---------- */
+
+
+/* new homepage options */
+.footer_inside2 {
+	width:100%;
+	margin-left:5px
+}	
+
+.crumbs_new  {
+	font-family:verdana,arial,helvetica,geneva,sans-serif;
+	font-size:9px;
+	text-align:left;
+	margin-top:8px;
+	margin-left:8px;
+	font-weight:bold;
+}
+
+.crumbs_new a {
+	
+
+/* ---------- */font-family:verdana,arial,helvetica,geneva,sans-serif;
+	font-size:10px;
+	text-align:left;
+	margin-top:8px;
+	margin-left:8px;
+	font-weight:bold;
+}
+/* new header */
+/* ---------- */
+
+.headerbox {
+	width: 98%;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:0px;
+	margin-bottom:5px;
+	padding:0px;
+	background-color: #fff; 
+	text-align: center;
+	color:#333;
+}
+
+.logo2 {
+	background: transparent url(../images/logofooter.gif) no-repeat;
+	left:2px;
+	width: 220px;
+}
+
+
+.menu_crumbs {	
+	width:98%;
+	margin-top:10px;
+	border:1px solid #3d75a8;
+	padding:4px;
+	font-weight:bold;
+	font-family:verdana,arial,helvetica,geneva,sans-serif;
+	font-size:11px;
+	color: #999999;
+	background-color:#ebf3fb;
+}
+
+.menu_new {
+	height: 40px;
+	padding-top:16px;
+	display: block;
+}
+
+/*  new top navigation    */	
+div#topnav	{
+	height: 48px;
+	margin: 0 0 0 0px;
+	padding-top: 15px;
+	border: 0;
+	text-align:left;
+}
+
+
+div#topnav ul#menu	{
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+div#topnav ul#menu li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: absolute;
+	top: -1px;
+}
+	
+ul#menu li, ul#menu a {
+
+	margin-top:5px;
+	display: block;
+}
+	
+div#topnav ul#menu li a {
+	text-decoration: none;
+	padding:3px;
+	
+}
+#logo { 
+	background: transparent url(../images/logofooter.gif) no-repeat;
+	left:1px;
+	width: 220px;
+	height:40px;
+}	
+#about	{left: 30%; width: 55px; height:25px; border: 1px solid #3d75a8;}
+#browse	{left: 38%; width: 53px; height:25px; border: 1px solid #3d75a8;}
+#classroom {left: 46%; width: 69px; height:25px;border: 1px solid #3d75a8;}
+#newadditions {left: 56%; width:90px; height:25px; border: 1px solid #3d75a8;}
+#searchmenu	{left:73%;}
+
+label {
+	margin-left: -96px;
+	font-family: verdana, Helvetica, sans-serif;
+	font-size: 70%;
+	color: #666;
+	
+}
+div#topnav form {
+
+	height:50px;
+	width: 235px;
+}
+div#topnav form input.button {
+		background-color: #fff;
+		font-weight: bold;
+		color: #3d75a8;
+		margin: 0px 0px 1px 0px;
+		font-size: 75%;
+		border: 1px solid #3d75a8;
+
+}
+
+/* 
+   legend.Clickable:hover { text-decoration: underline; }
+   #HideMetadata { display: none; }
+*/
+
+/* ---------- */
+/* start true and candid navbar (todd) */
+/* ---------- */
+
+/*--------------------------------------------------|
+| dTree 2.05 | www.destroydrop.com/javascript/tree/ |
+|---------------------------------------------------|
+| Copyright (c) 2002-2003 Geir Landr?               |
+|--------------------------------------------------*/
+
+.dtree {
+        font-family: Verdana, Helvetica, Arial, sans-serif;
+        color: #3F6F9F;
+        font-weight:bold;
+        margin-left:3px;
+        margin-bottom:10px;
+}
+
+.dtree img {
+        border: 0px;
+        vertical-align: middle;
+        padding: 3px 0px 3px 0px;
+}
+
+.dtree a {
+        color: #3F6F9F;
+        font-weight:bold;
+        text-decoration: none;
+}
+
+.dtree a.node, .dtree a.nodeSel {
+        /* white-space: nowrap; */
+        padding: 1px 2px 1px 2px;
+}
+
+.dtree a.node:hover, .dtree a.nodeSel:hover {
+        color: #999999;
+        text-decoration: none;
+}
+
+.dtree a.nodeSel {
+          color: #000000;
+}
+
+.dtree .clip {
+          overflow: hidden;  
+}
+
+span.primary_docs {
+  font-size:85%;
+  font-style:italic;
+  line-height:3.0em;
+  background-color:#FBFBE5;
+}
+
+span.tree_links {
+  background-color:#FBFBE5;
+  font-size:85%;
+}
+
+span.chapter {
+  background-color:#FBFBE5;
+  font-size:95%;
+}
+
+/* ---------- */
+/* end true and candid navbar (todd) */
+/* ---------- */
+
+/* ---------- */
+/* miscellaneous styles for true and candid (kim,todd) */
+/* ---------- */
+
+.heading_true {
+	font-size: 15px;
+	font-weight: bold;
+	text-align:center;
+	color:#3F6F9F;
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	padding-top:5px;	
+}
+
+.heading_true_black {
+	font-size: 15px;
+	font-weight: bold;
+	text-align:center;
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	padding-top:5px;	
+}
+.heading_true_black a{
+	font-size: 100%;
+}
+.heading_true_black a:link{
+	font-size: 100%;
+}
+.heading_true_black a:active{
+	font-size: 100%;
+}
+.heading_true_black a:hover{
+	font-size: 100%;
+}
+.heading_true_black a.sup:hover{
+	font-size: 80%;
+	font-weight: bold;
+}
+.heading_true_black a.sup {
+	font-size: 80%;
+	font-weight: bold;
+}
+
+.heading_blue_left {
+	font-size: 13px;
+	font-weight: bold;
+	text-align:left;
+	color:#3F6F9F;
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	padding-top:10px;	
+	padding-bottom: 10px;
+}
+
+.text_true_lists {
+        margin-top:10px;
+        padding-bottom:20px;
+        margin-right:20px;
+        margin-left:200px; 
+        font-family:arial,helvetica,geneva,sans-serif;
+        font-size:12px;
+        text-align:justify;
+}
+
+.ordered_true {
+        margin-left:200px;
+}
+
+.alpha_true {
+        margin-left:-5px;
+        font-size:10px;
+        text-align:center;
+        font-family:verdana,arial,helvetica,geneva,sans-serif;
+        font-weight: bold;
+}
+
+.superscript{vertical-align: super;
+	font-weight:bold;
+}
+
+.button_print {
+       font-family:verdana,arial,helvetica,geneva,sans-serif;
+       font-size:10px;
+	font-weight: bold;
+      /* background-color: #fff; */
+       color: #3F6F9F;        
+       border: 0px;
+       cursor: pointer;
+       text-align:right;
+	padding: 0 18px 0px 0px;	
+	background: url(/true/images/printer2.gif) right center no-repeat;
+}
+
+.teixml_file{
+       font-family:verdana,arial,helvetica,geneva,sans-serif;
+       font-size:10px;
+       font-weight: bold;
+       color: #3F6F9F;        
+       border: 0px;
+       text-align:right;
+       padding: 5px 8px 10px 0px;	
+}
+
+SPAN.print {
+  font-size:10px;
+  text-align:right;
+}
+
+/* not used
+span.popleft {
+	padding: 0 2px 1px 16px;	
+	background: url(/true/images/popup.gif) left center no-repeat;
+}
+*/
+
+/* not used
+span.nameright {
+	padding: 0px 16px 0px 0px;	
+	background: url(/true/images/mouse.gif) right center no-repeat;
+	
+}
+*/
+
+/* for print link in mss page and essay page */
+div.print_right {
+        float: right;
+        text-align: right;
+        font-size: 10px;
+        margin-right: 8px;
+	margin-top: -16px;
+        padding: 0;
+}
+
+div.essay_author {
+	font-size: 12px;
+	font-weight: bold;
+	text-align:center;
+/*	color:#3F6F9F; 	*/
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	padding-top:5px;	
+}
+
+a img {
+	border:none;
+}
+
+span.strike { text-decoration: line-through; }
+span.underscore { text-decoration: underline; }
+span.double_underscore {
+	border-bottom: 3px double;
+}
+
+/* for two columns in browse genre page */
+
+div.centered_two_cols {
+	margin-left: 30px;
+	margin-right:30px;
+	margin-top:  15px;
+	margin-bottom: 15px;
+}
+
+div.genre_column1 {
+	margin-left: 100px;
+	text-align: left;
+	margin-top: 2px;
+}
+
+div.genre_column2 {
+        margin-left: 250px;
+        text-align: left;
+        margin-top:-16px;
+} 
+
+a.sup {
+	font-size: 80%;
+}
+
+a.sup:hover {
+	font-size: 80%;
+}
+a.pop:hover {
+	font-size: 100%;
+}
+
+/* for all class="sup" */
+.sup {
+	font-size:80%;
+	vertical-align: super;
+}
+
+/* for <sup> */
+/* not used any more, replaced by span class="add_sup"
+sup {
+	font-size: 100%;
+}
+*/
+
+.sub {
+	font-size: 80%;
+	vertical-align: sub;
+}
+
+/* not used any more, replaced by span class="add_sub"
+sub {
+	font-size: 100%;
+}
+*/
+
+P.signed {
+/*	margin-left: 20px; */
+	text-align: right;
+}
+
+SPAN.red_hi {
+	color: red;
+	font-weight:bold;
+}
+	
+span.pop {
+        /*padding: 0px 12px 0px 0px;*/
+        /*background: url(/true/images/popup.gif) right center no-repeat;*/
+        background: url(/images/external.gif) right center no-repeat;
+        padding-right: 13px;
+        width:13px; /* for IE */
+}
+
+
+span.name {
+	background-color: #EBF3FB;
+}
+.add_sup {
+	font-size:100%;
+	vertical-align: super;
+}
+.add_sub {
+	font-size: 100%;
+	vertical-align: sub;
+}
+
+.overstrike {
+	text-decoration:line-through;
+}
+

@@ -1,0 +1,161 @@
+.html_banner
+{
+	/*border:1px solid #d0d0d0;*/
+	cursor:hand;cursor:pointer;
+	padding: 0px;
+}
+
+.align_fixed_hor
+{
+	float:left;
+	white-space:nowrap;
+	margin-right: 5px;
+}
+
+.align_fixed_vert
+{
+	display:block;
+	white-space:nowrap;
+	margin-top: 5px;
+}
+
+.align_rotating
+{
+	position:absolute;
+	display:none;
+	white-space:nowrap;
+	margin: 0px;
+}
+
+.align_rotating_admin
+{
+	display:block;
+	white-space:nowrap;
+	margin: 0px;
+}
+
+.admin_active
+{
+	border: 1px solid #d0d0d0;
+	text-align:center;
+	background-color: #f0f0f0;
+}
+
+.admin_inactive
+{
+	border: 1px solid yellow;
+	text-align:center;
+	background-color: #f0f0f0;
+}
+
+.admin_archive
+{
+	border: 1px solid red;
+	text-align:center;
+	background-color: #f0f0f0;
+}
+
+.banner_toolbar
+{
+	text-align:right;
+	padding: 2px;
+}
+
+.banner_toolbar_move
+{
+	cursor: move;
+}
+
+.group_toolbar
+{
+	text-align:right;
+}
+
+.banner_group
+{
+	background-color: #e7eef6;
+	border: 1px solid #a8bfd7;
+}
+
+#banner_report
+{
+	width:100%;
+}
+
+#banner_report-header td 
+{ 
+	background-color: #d0d0d0;
+	color: white;
+	font-family: 'Tahoma', sans-serif;
+	border-width: 5px 0px 1px 0px;
+	border-style: solid;
+	border-color: #F0F0F0;
+	padding: 4px 10px; 
+	font-weight: bold;
+}
+	
+#frame
+{
+	padding: 15px;	
+	z-index:-2;	
+}
+
+#subframe
+{
+	padding:10px;
+	background-color: #f0f0f0;
+}
+
+#banner_report-even td { background-color: #fbfbfb;
+					     font-family: 'Tahoma', sans-serif;
+						 padding: 4px 10px; 
+						 border-width: 0px 0px 1px 0px;
+						 border-style: solid;
+						 border-color: #d0d0d0}
+						  
+#banner_report-odd td { background-color: #f4f4f4;
+					     font-family: 'Tahoma', sans-serif;
+						 padding: 4px 10px; 
+						 border-width: 0px 0px 1px 0px;
+						 border-style: solid;
+						 border-color: #d0d0d0 }	
+
+#banner_report-Page_Impressions
+{
+	text-align:middle;
+	width: 75px;
+}
+
+#banner_report-Clicks
+{
+	text-align:center;
+	width: 75px;
+}
+
+#banner_report-Page_CTR
+{
+	text-align:center;
+	width: 75px;
+}
+
+.banner
+{
+}
+.bigger
+{
+	font-size:18px;
+	font-weight:bold;
+}
+
+.smaller
+{
+	font-size:9px;
+}
+
+#banner_image
+{
+	position:relative;
+	float: right;
+	
+	
+}

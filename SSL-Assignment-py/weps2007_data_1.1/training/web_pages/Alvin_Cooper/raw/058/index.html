@@ -1,0 +1,291 @@
+
+<html>
+<head>
+<title>The Record Delta Online</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+
+<!-- Javacript to open topic in a new window -->
+		<script language="javascript">
+		function openTopic(topicId)
+		{
+			window.open("view_topic.php?topic_id=" + topicId, 'viewTopic', 'toolbar=0, location=0, status=0, scrollbars=1, width=900, height=700');
+		}
+		</script>
+	
+<SCRIPT LANGUAGE="JavaScript">
+
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+<!-- Original:  Pete Thompson (thompp@globalnet.co.uk) -->
+<!-- Web Site:  http://www.users.globalnet.co.uk/~thompp -->
+
+<!-- Begin
+// news ticker function
+var adcopy=new Array();
+var cnt=0;			// current news item
+
+
+function newsticker()
+{
+  classification.innerHTML = adcopy[cnt][1];
+  ad.innerHTML = adcopy[cnt][0];
+  cnt++;
+  if (cnt == adcopy.length)
+  { cnt = 0; }
+  setTimeout('newsticker()',3000)
+}
+//  End -->
+
+function openBlog(blogId)
+{
+	window.open("blog_main.php?blog_id=" + blogId, 'viewBlog', 'toolbar=0, location=0, status=0, scrollbars=1, width=900, height=800');
+}
+
+function loadLoginPage()
+{
+	window.parent.document.location="fe_login.php";
+}
+
+function downloadPreprint()
+{
+	var f = document.forms[0];
+	var preprintID = f.elements['preprint'].options[f.elements['preprint'].selectedIndex].value;
+	window.open("download_preprint.php?pdf_id=" + preprintID, 'viewPreprint', 'toolbar=0, location=0, status=0, scrollbars=1, width=900, height=800');
+}
+
+//Preload Nav Images
+var class_on = new Image; class_on.src = "images/nav/classifieds_on.jpg";
+var class_off = new Image; class_off.src = "images/nav/classifieds_off.jpg";
+var contact_on = new Image; contact_on.src = "images/nav/contactus_on.jpg";
+var contact_off = new Image; contact_off.src = "images/nav/contactus_off.jpg";
+var login_on = new Image; login_on.src = "images/nav/login_on.jpg";
+var login_off = new Image; login_off.src = "images/nav/login_off.jpg";
+var news_on = new Image; news_on.src = "images/nav/news_on.jpg";
+var news_off = new Image; news_off.src = "images/nav/news_off.jpg";
+var search_on = new Image; search_on.src = "images/nav/search_on.jpg";
+var search_off = new Image; search_off.src = "images/nav/search_off.jpg";
+var subscribe_off = new Image; subscribe_off.src = "images/nav/subscribe_off.jpg";
+var subscribe_on = new Image; subscribe_on.src = "images/nav/subscribe_on.jpg";
+var talkback_off = new Image; talkback_off.src = "images/nav/talkback_off.jpg";
+var talkback_on = new Image; talkback_on.src = "images/nav/talkback_on.jpg";
+
+</script>
+</head>
+
+<body bgcolor="#E3E3E3" onLoad="newsticker()">
+<center>
+	<table width="1000" height="1575" border="0" cellpadding="4" cellspacing="4" background="table_bkgrnd.png" style="background-repeat: no-repeat;">	
+		<tr>
+			<td valign="top" align="center" colspan="3" height="90">					
+				<!-- DISPLAY LOGO -->
+					<!-- DISPLAY LOGO -->
+	<table width="100%" border="0" cellpadding="0" cellspacing="4">
+		<tr>
+			<td align="center">
+				<a href="frontend_main.php.1.html"><img src="Logo.jpg" border="0"></a><br />
+				<span class="article_text">
+					 P.O. Box 550   2B Clarksburg Road, Buckhannon, WV&nbsp;&nbsp;26201&nbsp; &nbsp;
+					Ph: 304-472-2800 - Fax: 304-472-0537				 </span>
+			</td>
+			<td align="center"><a href="http://www.therecorddelta.com/e_edition.php?heading=0&amp;page_id=e-edition"><img src="e-edition-logo.jpg" border="0" /></a></td>
+			<td align="right">
+
+						<nobr><a href="http://wwwa.accuweather.com/forecast.asp?zipcode=26201&partner=18720" target="_blank"><img src="http://wxport.accuweather.com/wxpost/graphic.aspx?zipcode=26201&type=61&partner=18720" border="0" height="73" width="232" alt="WXPort"></a></nobr>&nbsp; &nbsp;
+
+							</td>
+		</tr>
+		<tr><td colspan="3" valign="top"><hr size="1" width="98%" color="#939393"></td></tr>
+	</table>
+				</td>
+		</tr>
+		<tr>
+			<td valign="top">		
+				<!-- DISPLAY MOST RECENT ARTICLE PICTURE AND HEADLINES -->
+				<table width="100%" border="0" cellpadding="4" cellspacing="4">
+					<tr>
+						<td align="left" valign="top" height="300">
+								<table border="0" align="left" width="300">
+		<tr><td rowspan="2" width="6"></td></tr>
+		<tr><td>
+			<table width="100%" border="0">
+			<tr><td>
+			<!-- Start Graphic Display -->
+				<table border="0" width="100%" cellpadding="3" cellspacing="3">				
+				<tr>
+					<td align="center" valign="middle">
+					<img src="WebSwat1.jpg" width="300">				
+					</td>
+				</tr>
+				<tr>
+					<td class="caption" colspan="2">
+											</td>
+				</tr>			
+			</table>
+
+			
+			<!-- End Graphic Display -->		
+			</td></tr>
+			</table>	
+		</td></tr>
+		<tr><td height="5" colspan="2"></td></tr>
+		</table>
+												<span class="main_headline" style="font-size:40px">SWAT</span>
+																		<table width="630" border="0" cellpadding="6" cellspacing="0">								
+									<tr>
+										<td class="sub_headline" bgcolor="#66000" style="color:#E3E3E3; font-size:20px " height="25">&nbsp; Top Stories</td>
+									</tr>
+								</table>
+								<br>
+								<iframe src="additional_headlines.php.1.html" scrolling="no" frameborder="0" width="630" height="190"></iframe>
+						</td>
+					</tr>
+				</table>
+				<!-- Where to put the quick links?
+				<table width="100%" border="0" cellpadding="6" cellspacing="0">								
+				<tr>
+					<td class="sub_headline" align="center" bgcolor="#66000" style="color:#E3E3E3" height="25" width="118">Quick Links</td>
+					
+															<td class="sub_headline" bgcolor="#E3E3E3" style="color:#660000" height="25" align="center">
+										<a href="news_articles.php?heading=0&page_id=72" class="formLinks" style="font-size:12px" target="_parent">Top Stories</a>
+									</td>
+																	<td class="sub_headline" bgcolor="#E3E3E3" style="color:#660000" height="25" align="center">
+										<a href="news_articles.php?heading=0&page_id=73" class="formLinks" style="font-size:12px" target="_parent">Sports</a>
+									</td>
+												</tr>
+			</table>
+			-->
+			
+								<br>
+							
+				<table cellpadding="2" cellspacing="6" border="0" width="100%">
+					<tr>
+						<td valign="top">
+							<!-- DISPLAY MAIN NAVs -->
+								<!-- DISPLAY MAIN NAVs -->
+	<table border="0" width="100%" height="620" cellpadding="0" cellspacing="0">
+		<tr>
+			<td align="left" valign="top">
+			<a href="http://www.therecorddelta.com/news_articles.php?heading=0" class="formLinks">
+			NewsArticles<br>
+			<img src="news_off.jpg" border="0" width="100" onmouseover="this.src='images/nav/news_on.jpg'" onmouseout="this.src='images/nav/news_off.jpg'"></a>
+			<br />
+			</td>
+		</tr>
+				<tr><td height="10"></td></tr>
+		<tr>
+			<td align="left" class="formText" valign="top">
+			<a href="http://www.therecorddelta.com/search_archives.php?heading=5" class="formLinks">
+			 SearchArchives<br>
+			<img src="search_off.jpg" border="0" width="100" onmouseover="this.src='images/nav/search_on.jpg'" onmouseout="this.src='images/nav/search_off.jpg'"></a>
+			<br />
+			</td>
+		</tr>
+		<tr><td height="10"></td></tr>
+		<tr>
+			<td align="left" class="formText" valign="top">
+			<a href="http://www.therecorddelta.com/contact_us.php?heading=2" class="formLinks">
+			 ContactUs<br>
+			<img src="contactus_off.jpg" border="0" width="100" onmouseover="this.src='images/nav/contactus_on.jpg'" onmouseout="this.src='images/nav/contactus_off.jpg'"></a>
+			<br />
+			</td>
+		</tr>
+		<tr><td height="10"></td></tr>
+		<tr>
+			<td align="left" class="formText" valign="top">
+			<a href="http://www.therecorddelta.com/talkback.php?heading=3" class="formLinks">
+			 TalkBack<br>
+			<img src="talkback_off.jpg" border="0" width="100" onmouseover="this.src='images/nav/talkback_on.jpg'" onmouseout="this.src='images/nav/talkback_off.jpg'"></a>
+			<br />
+			</td>							
+		</tr>
+		<tr><td height="10"></td></tr>
+		<tr>
+			<td align="left" class="formText" valign="top">
+			<a href="http://www.therecorddelta.com/sign_up.php?heading=4" class="formLinks">
+			 SignUp<br>
+			<img src="subscribe_off.jpg" border="0" width="100" onmouseover="this.src='images/nav/subscribe_on.jpg'" onmouseout="this.src='images/nav/subscribe_off.jpg'"></a>
+			<br />
+			</td>							
+		</tr>
+		<tr><td height="10"></td></tr>
+		<tr>
+			<td align="left" class="formText" valign="top">
+									<a href="http://www.therecorddelta.com/fe_login.php" class="formLinks">
+						UserLogin<br>
+						<img src="login_off.jpg" border="0" width="100" onmouseover="this.src='images/nav/login_on.jpg'" onmouseout="this.src='images/nav/login_off.jpg'"></a>
+						<br />
+								</td>							
+		</tr>
+	</table>
+		
+						</td>
+						<td valign="top" width="490">
+							<!-- DISPLAY MOST RECENT FORUM POSTS -->
+							<table border="0" width="100%" height="360"  cellpadding="3" cellspacing="6" bgcolor="#E3E3E3">
+									<tr><td class="sub_headline" bgcolor="#66000" style="color:#E3E3E3;"  height="25">&nbsp; Active Forum Topics</td></tr>
+									<tr>
+									<td class="forum_topics" valign="top">
+																								<span style="font-weight:bold">
+														<a href="frontend_main.php.1.html#" class="forum_topics" style="font-size:15px" onClick="openTopic(317)">
+														Man charged with breaking and entering</a></span><br>
+														Created By: BY: The Record Delta 2-19-07 &nbsp; &nbsp; Last Modified: Sun, Feb 25, 2007  11:23:55 pm													<br><hr>														<span style="font-weight:bold">
+														<a href="frontend_main.php.1.html#" class="forum_topics" style="font-size:15px" onClick="openTopic(255)">
+														Website tips</a></span><br>
+														Created By: BrianBergstrom&nbsp; &nbsp; Last Modified: Wed, Feb 14, 2007  3:27:38 pm													<br><hr>														<span style="font-weight:bold">
+														<a href="frontend_main.php.1.html#" class="forum_topics" style="font-size:15px" onClick="openTopic(258)">
+														School closings</a></span><br>
+														Created By: BrianBergstrom&nbsp; &nbsp; Last Modified: Wed, Feb 7, 2007  3:32:48 pm													<br><hr>														<span style="font-weight:bold">
+														<a href="frontend_main.php.1.html#" class="forum_topics" style="font-size:15px" onClick="openTopic(215)">
+														Welcome!</a></span><br>
+														Created By: BrianB&nbsp; &nbsp; Last Modified: Thu, Feb 1, 2007  6:44:05 pm																						</td>
+									</tr>
+									<tr>
+										<td valign="bottom"><a href="http://www.therecorddelta.com/talkback.php?heading=3" class="forum_topics">View more forum topics...</a></td>
+									</tr>
+							</table>
+							<br><br>
+							<!-- DISPLAY MOST RECENT BLOG ENTRIES -->
+							<table border="0" width="100%" height="360"  cellpadding="3" cellspacing="6" bgcolor="#E3E3E3">
+									<tr><td class="sub_headline" bgcolor="#66000" style="color:#E3E3E3;"  height="25">&nbsp; Recent Blog Entries</td></tr>
+									<tr>
+									<td class="forum_topics" valign="top">
+																								<span style="font-weight:bold"><a href="frontend_main.php.1.html#" class="forum_topics" style="font-weight:bold; color:#000000; text-decoration:none; font-size:15px" onClick="openBlog('32')"> Newspaper introduces electronic edition</a></span><br>
+														Posted By: Record Delta Staff&nbsp; &nbsp; Last Modified: Thu, Feb 1, 2007  11:15:14 am																						</td>
+									</tr>
+									<tr>
+										<td valign="bottom"><a href="http://www.therecorddelta.com/talkback.php?heading=3" class="forum_topics">View more blog entries...</a></td>
+									</tr>
+							</table>
+							<br><br>
+								<!-- DISPLAY LOCAL LINKS -->
+							<table border="0" width="100%"  cellpadding="3" cellspacing="6" bgcolor="#E3E3E3">
+								<tr><td class="sub_headline" bgcolor="#66000" style="color:#E3E3E3;"  height="25" colspan="2">&nbsp; Local Links</td></tr>
+								<tr>
+									
+									<td class="forum_topics" valign="top"><a href="http://www.buchamber.com" target="_blank">B-U Chamber of Commerce</a></td><td class="forum_topics" valign="top"><a href="http://www.buhsalumni.org" target="_blank">B-UHS Alumni</a></td></tr><tr><td class="forum_topics" valign="top"><a href="http://www.ci.buckhannon.wv.us" target="_blank">City of Buckhannon</a></td><td class="forum_topics" valign="top"><a href="http://wvde.state.wv.us/closings/county/all/" target="_blank">School Closings</a></td></tr><tr><td class="forum_topics" valign="top"><a href="http://www.upshurda.com" target="_blank">Upshur County Development Authority</a></td><td class="forum_topics" valign="top"><a href="http://www.geocities.com/upshurcountyfair/" target="_blank">Upshur County Fair</a></td></tr><tr><td class="forum_topics" valign="top"><a href="http://upshurcounty.lib.wv.us" target="_blank">Upshur County Public Library</a></td><td class="forum_topics" valign="top"><a href="http://boe.upsh.k12.wv.us" target="_blank">Upshur County Schools</a></td></tr><tr><td class="forum_topics" valign="top"><a href="http://www.upshurcountyhistoricalsociety.com" target="_blank">Upshur Historical Society</a></td><td class="forum_topics" valign="top"><a href="http://www.wvculture.org/history/archivesindex.aspx" target="_blank">W.Va. Archives and History</a></td></tr><tr><td class="forum_topics" valign="top"><a href="http://www.legis.state.wv.us/" target="_blank">W.Va. Legislature</a></td><td class="forum_topics" valign="top"><a href="http://www.wvstrawberryfestival.com" target="_blank">W.Va. Strawberry Festival</a></td></tr><tr><td class="forum_topics" valign="top"><a href="http://www.wvwc.edu" target="_blank">West Virginia Wesleyan College</a></td>								</tr>
+							</table>
+						</td>
+						<td valign="top" align="center">		
+							<!-- DISPLAY ADS -->
+							<form>
+							<table border="0" width="100%" cellpadding="3" cellspacing="6" bgcolor="#E3E3E3">
+																<tr><td class="sub_headline" bgcolor="#66000" style="color:#E3E3E3;"  height="25" colspan="2">&nbsp; Local Ads</td></tr>
+								<tr><td valign="top" align="center"><a href="http://www.therecorddelta.com/e_edition.php?heading=0&page_id=e-edition" target="_blank"> <img src="1169577154.jpg" border="0" width="320" /> </a></td></tr>
+								<tr><td valign="top" align="center"></td></tr>
+								<tr><td valign="top" align="center"></td></tr>
+							</table>
+							</form>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+		<span class="formText" style="font-size:10px ">Copyright 2007 News Media Corporation</span>
+		<br>	
+		<img src="PoweredByMacOSX.gif" align="absmiddle"> &nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="http://www.newsmediacorporation.com" target="_blank"><img src="nmc.jpg" border="0" align="absmiddle" height="50" /></a>
+	</center>
+</body>
+</html>

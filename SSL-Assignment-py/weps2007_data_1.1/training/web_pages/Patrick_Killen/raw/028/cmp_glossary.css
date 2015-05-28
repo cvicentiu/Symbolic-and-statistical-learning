@@ -1,0 +1,548 @@
+/* --------- GENERAL ----------- */
+
+body {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background: #F7F7EF url(images/background_darker4.gif) repeat-y;
+	
+	font-family: Geneva, Verdana, Arial, sans-serif;
+	font-size: 80%;
+	color: #333;
+	}
+
+#mainCol {
+	width: 680px;
+	position: absolute;
+	float:left;
+	left:67px;
+	margin: 0px;
+	padding: 0px;
+	
+	text-align:center;
+	
+	}
+
+img {
+	border: 0;
+	}
+
+/* --------- GENERAL TYPOG ----------- */
+
+p {
+	line-height: 16px;
+	text-indent: 0px;
+	padding: 0px;
+	margin: 0px;
+	
+	}
+
+h1, h2 {
+	font-size: 18px;
+	background-color: transparent;
+	margin: 0;
+	padding: 0px 0 0 0;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color: #111;
+	}
+
+h3 {
+	font-size: 11px;
+	text-transform: none;
+	font-weight: bold;
+	}
+
+ul {
+	font-size: 11px;
+	}
+	
+li {
+	margin-bottom: 5px;
+	padding: 5px;
+	}
+
+a, a:link {
+	text-decoration: underline;
+	font-size: 11px;
+	line-height: 18px;
+	/*color: #182D48;*/
+	color: #900;
+	}
+
+a:hover {
+	text-decoration: none;
+	/*color: #122342;*/
+	color: #988;
+	}
+
+/* -------- Navigation (CSS based off zeldman.com) --------*/
+
+div#globalnav	{
+	height: 60px;
+	width: 50px;
+	
+	position: absolute;
+	
+	left: 375px;
+	top: 22px;
+	
+	margin: 0 0 0 12px;
+	padding: 0;
+	border: 0;
+	background: transparent;
+	}
+
+div#globalnav ul#menu	{
+	height: 60px;
+	width: 50px;
+	background: transparent url(http://www.chinmusicpress.com/images/menu2.gif) top left no-repeat;
+	background-position: 0px 0px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	}
+
+div#globalnav ul#menu li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+	top: 0;
+	}
+	
+ul#menu li, ul#menu a {
+	width: 50px;
+	height: 20px;
+	display: block;
+	}
+	
+div#globalnav ul#menu li a {
+	text-indent: -9999px;
+	text-decoration: none;
+	}
+	
+#press	{top: 0; width: 50px; height: 20px;}
+#studio	{top: 34px; width: 50px; height: 20px;}
+#blog	{top: 50px; width: 50px; height: 20px;}
+
+
+#press a:hover	{
+	background: transparent url(http://www.chinmusicpress.com/images/menu2.gif) -50px 0px no-repeat;
+	}
+#studio a:hover {
+	background: transparent url(http://www.chinmusicpress.com/images/menu2.gif) -50px -20px no-repeat;
+	}
+#blog a:hover {
+	background: transparent url(http://www.chinmusicpress.com/images/menu2.gif) -50px -40px no-repeat;
+	}
+
+/* -------- MAIN MENU ---------*/
+
+#mainMenu {
+	width: 100px;
+	position: absolute;
+	float:right;
+	
+	left: 340px;
+	top: 20px;
+	text-align: right;
+	
+	border-left: 0px solid;
+	
+	font-family: verdana, Georgia, "Times New Roman", Times, serif;
+	font-size: 11px;
+	line-height: 1.8;
+	}
+
+#mainMenu a, #mainMenu a:link, #mainMenu a:visited { 
+	float:right; 
+	text-decoration: none;
+	color:#222;
+	width: 75px;
+	border-bottom: 1px solid #e00;
+	}
+
+#mainMenu a:active { 
+	background-color: #222; 
+	float:right; 
+	}
+
+#mainMenu a:hover{
+	float: right;
+	color: #000;
+	background-color: #DDD;
+	}
+	
+
+/* --------- FOOTER ----------- */
+	
+#gallery {
+	text-align: center;
+	padding: 10px;
+	margin:0px;
+	border-bottom: 3px double #ccc;
+	clear: left;
+	}
+	
+#copyright {
+	clear: left;
+	float: right;
+	font-size: 10px;
+	text-align: right;
+	}
+	
+	
+/* --------- LAYOUTS ----------- */
+	
+#content, #projects2, #wideContent {
+	width: 680px;
+	float: left;
+	text-align: left;
+	border-bottom: 3px double #ccc;
+	background: #fff url(images/background_page2_3.gif) left bottom no-repeat;
+	}
+	
+	#content .imgB {
+		position: relative; 
+		margin: auto;  
+		padding: 2px;
+		border: 1px solid #182D48;
+		background-color:#FFFFFF;
+		}
+
+#wideContent {
+	padding: 0px 0px;
+	margin-top: 15px;
+	padding-top: 15px;
+	padding-bottom: 25px;
+	margin: 0px 0px;
+	/*background: transparent;*/
+	background-color: #fff;
+	/*border: 0px;*/
+	text-align: center;
+	}
+	
+	#wideContent .b {
+		padding: 6px;
+		border-top: 1px solid #ddd;
+		border-left: 0px solid #ddd;
+		border-bottom: 1px solid #c0c0c0;
+		border-right: 0px solid #c0c0c0;
+		background-color: #fff;
+		}
+		
+	#wideContent h2 {
+		text-align: left;
+		padding: 0px;
+		margin-top: 0px;
+		margin-left: 10px;
+		margin-bottom: 0px;
+		color: #2e3e53;
+		}
+
+	#wideContent .borders {
+		border-top: 1px solid #000;
+		border-bottom: 1px solid #000;
+		}
+
+#kuhakuHeader {
+	width: 680px;
+	/*height: 110px;*/
+	margin-top: 10px;
+	float: left;
+	text-align: left;
+	border-bottom: 3px double #eee;
+	background: #fff;
+	}
+
+
+
+/* -------- COLUMN 3 ---------*/
+
+#col3, #kuhakuHeadLeft, #halfCol {
+	float: left;
+	width: 412px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	border-right: 1px solid #ccc;
+	}
+
+	#col3 p.first {
+		font-size: 18px;
+		text-indent: 0px;	
+		margin-bottom: 20px;
+		text-align: left;
+		}
+	
+	#col3 p {
+		font-size: 11px;
+		text-indent: 10px;
+		text-align: justify;
+		margin: 0px;
+		line-height: 16px;
+		}
+
+	#col3 em {
+		color: #e22;
+		}
+	
+	#col3 h2 {
+		font-size: 24px;
+		font-family:Georgia, "Times New Roman", Times, serif;
+		color: #111;
+		padding: 0px;
+		margin-bottom: 10px;
+		margin-top: 0px;
+		}
+	
+		#col3 h2 .type {
+			font-family: verdana; color: #E22; font-size: 80%; }
+
+#kuhakuHeadLeft {
+	padding-bottom: 0px;
+	border-right: 0px;
+	}
+
+#halfCol, #thirdCol, #twoThirdCol {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	padding: 0px 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 290px;
+	border: 0px;
+	text-align: left;
+	}	
+
+	#twoThirdCol ul {
+		padding: 0px;
+		margin: 0px;
+		margin-left: 15px;
+		}
+	
+	#twoThirdCol li {
+		padding: 0px;
+		margin: 0px;
+		margin-left: 15px;
+		}
+
+		
+#thirdCol {
+	width: 220px;
+	text-align: left;
+	margin-right: 0px;
+	}
+
+#twoThirdCol {
+	width: 380px;
+	}
+
+	#halfCol p, #thirdCol p, #twoThirdCol p{
+		font-size: 11px;	
+		line-height: 18px;
+		text-indent: 20px;
+		margin-bottom: 10px;
+		}
+		
+	#twoThirdCol img {
+		float: left;
+		padding: 4px;
+		margin-right: 8px;
+	
+		border-top: 1px solid #ddd;
+		border-left: 1px solid #ddd;
+		border-bottom: 1px solid #c0c0c0;
+		border-right: 1px solid #c0c0c0;
+		background-color: #fff;
+	}
+	
+	#twoThirdCol a:hover img {
+		border-top: 1px solid #000;
+		border-left: 1px solid #000;
+		border-bottom: 1px solid #000;
+		border-right: 1px solid #000;
+		}
+	
+		
+	#halfCol .leftPic {
+		float: left;
+		
+		padding: 4px;
+		
+		margin-right: 8px;
+		margin-bottom: 0px;
+		
+		border-top: 1px solid #ddd;
+		border-left: 1px solid #ddd;
+		border-bottom: 1px solid #c0c0c0;
+		border-right: 1px solid #c0c0c0;
+		background-color: #fff;
+		}
+		
+	#halfCol h2, #thirdCol h2, #twoThirdCol h2 {
+		padding: 0px;
+		font-size: 18px;
+		margin-bottom: 5px;
+		margin-left: -10px;
+		font-family: Georgia, "Times New Roman", Times, serif;
+		}
+		
+	#halfCol h3, #thirdCol h3, #twoThirdCol h3 {
+		margin-top: 15px;
+		margin-bottom: 10px;
+		font-size: 14px;
+		font-family: verdana;
+		color: #D60400;
+		}
+		
+		
+.sidetitle {
+	border-bottom: 1px solid #bbb;
+	margin-top: 10px;
+	margin-left: 10px;
+	/*color: #e11;*/
+	color: #D60400;
+	text-transform: uppercase;
+	font-family: verdana;
+	font-size: 11px;
+	line-height: 18px;
+	}
+	
+.side {
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 11px;
+	line-height: 18px;
+	}
+	
+.side a {
+	text-decoration: underline;
+	color: #0D377D;
+	}
+
+.side a:hover {
+	text-decoration: none;
+	}
+
+.searchResults {
+	border-bottom: 1px dotted #bbb;
+	padding: 0px;
+	}
+
+/* -------- COLUMN 4 & subnav---------*/
+
+#col4 {
+	float: left;
+	width: 220px;
+	text-align: left;
+	margin-left: 7px;
+	clear: right;
+	
+	font-size: 11px;
+	line-height: 16px;
+	
+	padding-bottom: 20px;
+	}
+
+	#col4 .title {
+		font-size: 11px;
+		color: #333;
+		font-style: normal;
+		text-align: left;
+		margin-left: 0px;
+		}
+	
+	#col4 .contact {
+		font-size: 11px;
+		color: #666;
+		text-align: left;
+		margin-left: 10px;
+	}
+	
+		#col4 .contact em {
+			border-top: 1px solid #ddd;
+			color: #c22;
+			}
+	
+	#col4 li {
+	margin-bottom: 0px;
+	padding: 0px;
+	}
+	
+	#col4 em {
+		color: #888;
+		}
+		
+		
+#subnav {
+	float: left;
+	width: 105px;
+	text-align: left;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	padding: 0px;
+	clear: right;
+	border-left: 1px solid #eee;
+	
+	font-size: 11px;
+	line-height: 18px;
+	}
+	
+	#subnav a:hover {
+		background-color: #F7F7EF;
+		width: 105px;
+		color: #000;
+		}
+		
+	#subnav ul {
+		margin: 0;
+		padding: 0 0 0 0px;
+		text-transform: lowercase;
+		white-space: nowrap;
+		}
+
+	#subnav ul li {
+		float: left;
+		clear: left;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		}
+
+	#subnav ul a {
+		display: block;
+		width: 105px;
+		float: left;
+		margin: 0;
+		padding: 0px;
+		text-decoration: none;
+		font-weight: normal;
+		color: #666;
+		}
+
+	/* Commented Backslash Hack hides 
+   	rule from IE5-Mac, documented at 
+   	http://www.sam-i-am.com/work/sandbox/css/mac_ie5_hack.html \*/
+
+	#subnav ul a, #subnav ul strong { float: none; }
+
+	/* End hack */
+
+	#subnav ul a:hover {
+		color: #222;
+		/*background: #ddd;*/
+		}
+
+	#subnav #cur a {
+		color: #222;
+		background: #F7F7EF;
+		}
+
+	#subnav #cur a:hover {
+		color: #222;
+		background: #F7F7EF;
+		}
+
+

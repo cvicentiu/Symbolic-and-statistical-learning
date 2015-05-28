@@ -1,0 +1,28 @@
+# robots.txt for http://www2.warwick.ac.uk/ 
+# The following are all newsbuilder pages, which we don't want indexed. 
+User-agent: * 
+Disallow: /services/its/elab/about/news/ 
+Disallow: /services/its/elab/about/people/chrismay/diary/ 
+Disallow: /services/its/elab/about/people/johndale/calendar/ 
+Disallow: /services/its/elab/about/people/johndale/mutterings/ 
+Disallow: /services/finance/sap/internal/admin/calendar/ 
+Disallow: /services/development/news/ 
+Disallow: /fac/soc/law/dev/news/ 
+Disallow: /services/careers/chat/schedule/ 
+Disallow: /services/international/living/events/ 
+Disallow: /services/communications/london/availability/ 
+Disallow: /services/retail/costcutter/offers/ 
+Disallow: /fac/cross_fac/healthatwarwick/news/ 
+Disallow: /fac/soc/shss/news/ 
+Disallow: /fac/arts/languagecentre/about/news/ 
+
+# temporarily exclude law2 
+Disallow: /fac/soc/law2/ 
+
+# Don't index the training pages to try and stop people who want to study architecture from applying here 
+Disallow: /training/ 
+# Don't allow the /contentstore location, which is a JK mount to jboss 
+Disallow: /sitebuilder2/ 
+Disallow: /contentstore/ 
+# let google get ical feeds 
+Allow: /sitebuilder2/api/sitebuilder.ics

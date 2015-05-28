@@ -1,0 +1,56 @@
+<html>
+<head>
+<script type="text/javascript">
+var items = new Array(20);
+items[0]='<li><a href="http://jobs.guardian.co.uk/browse/senior-executive/general/vacancy-w77207.html?gusrc=gu_jobs_box_observer">SLOUGH BC: Social Worker - Community Mental Health</a>';
+items[1]='<li><a href="http://jobs.guardian.co.uk/browse/senior-executive/general/vacancy-itsr92636.html?gusrc=gu_jobs_box_observer">REGENT SELECTION LTD: DESIGN MANAGER - FASHION</a>';
+items[2]='<li><a href="http://jobs.guardian.co.uk/browse/senior-executive/government/vacancy-1271265.html?gusrc=gu_jobs_box_observer">TAMWORTH BOROUGH COUNCIL: Assistant Director</a>';
+items[3]='<li><a href="http://jobs.guardian.co.uk/browse/senior-executive/commercial/vacancy-itsr91247.html?gusrc=gu_jobs_box_observer">GMG REGIONAL NEWSPAPERS: Group Managing Director, Surrey and Berkshire Media</a>';
+items[4]='<li><a href="http://jobs.guardian.co.uk/browse/senior-executive/public-sector/vacancy-w92462.html?gusrc=gu_jobs_box_observer">ELFRIDA RATHBONE CAMDEN: Director</a>';
+items[5]='<li><a href="http://jobs.guardian.co.uk/browse/senior-executive/government/vacancy-1272824-3.html?gusrc=gu_jobs_box_observer">STAFFORDSHIRE COUNTY COUNCIL: Director of Performance</a>';
+items[6]='<li><a href="http://jobs.guardian.co.uk/browse/senior-executive/public-sector/vacancy-itsr92124.html?gusrc=gu_jobs_box_observer">BADENOCH AND CLARK: Interim Home Ownership Manager</a>';
+items[7]='<li><a href="http://jobs.guardian.co.uk/browse/senior-executive/government/vacancy-1269013.html?gusrc=gu_jobs_box_observer">LONDON BOROUGH OF LAMBETH: Director of Campaigns and Communications</a>';
+items[8]='<li><a href="http://jobs.guardian.co.uk/browse/senior-executive/public-sector/vacancy-itsr93409.html?gusrc=gu_jobs_box_observer">BADENOCH AND CLARK: Family Intervention Keyworker</a>';
+items[9]='<li><a href="http://jobs.guardian.co.uk/browse/senior-executive/education/vacancy-1268748.html?gusrc=gu_jobs_box_observer">UNIVERSITY OF ESSEX: Deputy Director</a>';
+items[10]='<li><a href="http://jobs.guardian.co.uk/browse/senior-executive/government/vacancy-1269631.html?gusrc=gu_jobs_box_observer">PLANNING INSPECTORATE: Director, Strategic Business Planning and Corporate Services</a>';
+items[11]='<li><a href="http://jobs.guardian.co.uk/browse/senior-executive/professional/vacancy-BBean9651131173.html?gusrc=gu_jobs_box_observer">Morgan Hunt: Project Manager - Affordable Housing</a>';
+items[12]='<li><a href="http://jobs.guardian.co.uk/browse/senior-executive/government/vacancy-itsr94146.html?gusrc=gu_jobs_box_observer">SERIOUS FRAUD OFFICE: Head of Digital Forensics Unit</a>';
+items[13]='<li><a href="http://jobs.guardian.co.uk/browse/senior-executive/charities/vacancy-1273111.html?gusrc=gu_jobs_box_observer">THE BRITISH PSYCHOLOGICAL SOCIETY: Director of Membership Support and Services</a>';
+items[14]='<li><a href="http://jobs.guardian.co.uk/browse/senior-executive/general/vacancy-1261672.html?gusrc=gu_jobs_box_observer">HAWKINS/BROWN LTD: Practice Director</a>';
+items[15]='<li><a href="http://jobs.guardian.co.uk/browse/senior-executive/education/vacancy-1249780.html?gusrc=gu_jobs_box_observer">LONDON SCHOOL OF ECONOMICS AND POLITICAL SCIENCE: Lecturer/Senior Lecturer in Statistics</a>';
+items[16]='<li><a href="http://jobs.guardian.co.uk/browse/senior-executive/public-sector/vacancy-w94021.html?gusrc=gu_jobs_box_observer">SURREY COUNTY COUNCIL: Senior Technician</a>';
+items[17]='<li><a href="http://jobs.guardian.co.uk/browse/senior-executive/general/vacancy-itsr91118.html?gusrc=gu_jobs_box_observer">INTERFLORA: Programme Manager</a>';
+items[18]='<li><a href="http://jobs.guardian.co.uk/browse/senior-executive/government/vacancy-1274963.html?gusrc=gu_jobs_box_observer">KENT COUNTY COUNCIL: Media and Operations Manager</a>';
+items[19]='<li><a href="http://jobs.guardian.co.uk/browse/senior-executive/general/vacancy-iGrasp10127-39295.html?gusrc=gu_jobs_box_observer">Norwich Union: Customer Service Representative (Admin) ¦ Closing Date 30 March 2007</a>';
+var first_random_index = Math.round(Math.random()*18);
+if (first_random_index == 19) {
+	first_random_index++;
+}
+
+var second_random_index = Math.round(Math.random()*18);
+if (second_random_index == first_random_index) {
+	second_random_index = 19;
+}
+
+var third_random_index = Math.round(Math.random()*17);
+if (third_random_index == first_random_index) {
+	third_random_index = 20;
+}
+
+try {
+	var jobslistDiv = top.document.getElementById('jobslist');
+} catch (e) {
+        document.domain = "guardian.co.uk";
+	jobslistDiv = top.document.getElementById('jobslist');
+}
+
+var innerHTML = '<ul>';
+if ( items[first_random_index]) {innerHTML = innerHTML + items[first_random_index]}
+if ( items[second_random_index]) {innerHTML = innerHTML + items[second_random_index]}
+if ( items[third_random_index]) {innerHTML = innerHTML + items[third_random_index]}
+innerHTML = innerHTML + '</ul>';
+
+jobslistDiv.innerHTML = innerHTML;
+</script>
+</head>
+</html>

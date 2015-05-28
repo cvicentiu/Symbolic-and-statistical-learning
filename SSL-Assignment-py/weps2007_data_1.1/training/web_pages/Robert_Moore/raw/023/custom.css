@@ -1,0 +1,219 @@
+body.webMain {
+		font-size: 10px;
+        text-align: center;
+        background-color: AEC2CD;
+}
+
+TABLE.webOuterTable {
+        width: 800;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid #000000;
+        border-collapse: collapse;
+
+}
+
+/** content rail 1 width **/
+TD.webOuterTableC1 {
+	width: 25%;
+}
+
+/** content rail 2 width **/
+TD.webOuterTableC2 {
+	width: 50%;
+}
+
+/** content rail 3 width **/
+TD.webOuterTableC3 {
+	width: 25%;
+}
+
+.nprMod{font-size: 10px;font-family: verdana, arial, sans-serif;}
+	
+.nprModCatTitle{font-size: 10px;}
+	
+.nprModHead{font-weight: bold;font-size: 10px;}
+	
+.nprModDate,.nprModPipe,.nprModName{font-size: 10px;}
+	
+.nprMod a{font-size: 10px;}
+
+
+
+
+TD.webHeader {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px; 
+        padding-right: 0px;
+}
+
+
+
+TD.rssHeadlineCell {padding: 5px 0px;}
+/* dropdown styles */
+.navbox {
+	border: 1px solid #000;
+}
+
+TD.webOuterTable, TD.webOuterTableF, TD.webOuterTableH, TD.webOuterTableC1, TD.webOuterTableC2, TD.webOuterTableC3, TD.webOuterTableC4, TD.webOuterTableC5, TD.webOuterTableC6, TD.webOuterTableC7, TD.webOuterTableC8, TD.webOuterTableC9, TD.webOuterTableC10 {
+background-color: #ffffff;
+border-style: none;
+border-spacing: 0px;
+padding: 0px;
+}
+
+/** the horizontal dynamic nav styles **/
+TABLE.webHeaderNav {
+width: 100%;
+border-style: none;
+border-spacing: 0px;
+border-collapse: collapse;
+}
+TD.webHeaderNav {
+background-color: #efefef;
+border-top: 2px solid #4a4a84;
+/*border-bottom: 2px solid #4a4a84;*/
+padding-top: 2px;
+padding-bottom: 2px;
+padding-left: 3px;
+padding-right: 3px;
+}
+
+TABLE.webHeaderSubNav {
+width: 100%;
+border-style: none;
+border-spacing: 0px;
+border-collapse: collapse;
+}
+TD.webHeaderSubNav {
+padding-top: 2px;
+padding-bottom: 2px;
+padding-left: 5px;
+padding-right: 5px;
+}
+
+A.webHeaderNav, A.webHeaderNavSel, A.webHeaderNav:hover, A.webHeaderNavSel:hover, A.webHeaderNav:active, A.webHeaderNavSel:active, A.webHeaderNav:visited, A.webHeaderNavSel:visited {
+color: #33333333;
+text-decoration: none;
+font-weight: bold;
+}
+
+A.webHeaderSubNav, A.webHeaderSubNavSel, A.webHeaderSubNav:hover, A.webHeaderSubNavSel:hover, A.webHeaderSubNav:active, A.webHeaderSubNavSel:active, A.webHeaderSubNav:visited, A.webHeaderSubNavSel:visited {
+color: #33333333;
+text-decoration: none;
+font-weight: bold;
+}
+
+#navwrapper {
+ margin: 0px; 
+background-color: #EFEFEF;
+}
+
+#nav {
+ width: 799px;
+ font-size: 10px;
+ text-align: center;
+ list-style: none; 
+ background: #EFEFEF;
+ font-weight: bold;
+ padding: 0;
+ margin: 0;
+
+ z-index: 999;
+ border-bottom:1px solid #000;
+}
+
+#nav ul {
+ margin: 0;
+ padding: 0;
+ float: left;
+}
+
+#nav li {
+ float:left;
+ position:relative;
+ list-style-type:none;
+ background-color:#EFEFEF;
+ border-right:1px solid #000;
+}
+
+#nav li.droparrow { /* Handles the small right drop arrow on navigation */
+ background: url(http://www.publicbroadcasting.net/media/kcur/header/pb/images/dropdownarrow.gif) center right no-repeat;
+ padding: 0px 5px 0px 0px;
+}
+
+#nav li:hover, #nav li.sfhover {
+ background: #4A4A84;
+}
+
+#nav a {
+ display:block;
+ padding:5px 12px;
+ margin: 0px;
+ text-decoration:none;
+ color:#000;
+font-family: arial;
+}
+
+#nav a:hover {
+	color: #FFF;
+}
+
+#nav ul li ul {
+ padding: 0;
+ font-size: 10px;
+ position: absolute;
+ width: 141px;
+ left: -999em; /* using left instead of display to hide menus because display: none isn't read by screen readers */
+ font-weight: normal;
+}
+
+#nav ul li ul a {
+ padding: 3px 12px;
+ margin: 0px;
+}
+
+#nav ul li ul li {
+ text-align: left;
+ width:100%;
+ background-color:#EFEFEF;
+ border-left:1px solid #000;
+ border-bottom:1px solid #000;
+ border-right:1px solid #000;
+ padding:0 0 1px;
+ left:-1px;
+}
+
+#nav ul li ul li.subnavspacer { /* Added to create a separating space in Quicklinks */
+ text-align: left;
+ color: #444;
+ font-size: 50%; /* will determine the height of the box - text is invisible = background color */
+ width:100%;
+ background-color:#444;
+ border-left:1px solid #000;
+ border-bottom:1px solid #000;
+ border-right:1px solid #000;
+ padding:0 0 1px;
+ left:-1px;
+}
+
+#nav ul li ul li:first-child {
+ border-top:1px solid #fff;
+ }
+
+#nav li:hover ul, #nav li.sfhover ul {
+ left: auto;
+}
+
+* html  #nav ul li ul { /* IE fix that adds a top line to drop downs in IE - can't read :first-child */
+ border-top:1px solid #000;
+ border-left:0px; /* stops the drop from inheriting the ul border */
+}
+table.webOuterTable table tr td.headline-region A, 
+table.webOuterTable table tr td.headline-title A, 
+.headline-title {
+	font-family: verdana;
+	font-size: 10px;
+	font-weight: normal;
+}

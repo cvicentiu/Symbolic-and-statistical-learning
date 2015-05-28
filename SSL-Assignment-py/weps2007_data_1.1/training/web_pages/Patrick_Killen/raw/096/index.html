@@ -1,0 +1,1375 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">    
+	 
+	
+	
+
+		
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+		<link rel="shortcut icon" href="http://admin.brightcove.com/destination/images/favicon.ico" type="image/x-icon" />
+		<style type="text/css">
+			@import "http://admin.brightcove.com/destination/css/global.css";
+			@import "http://admin.brightcove.com/destination/css/horizontalMenu.css";
+			@import "http://admin.brightcove.com/destination/css/channel.css";
+		</style>
+		<!-- compliance patch for microsoft browsers -->
+        <!--[if lte IE 7]>
+            <style type="text/css">
+            	#three{
+            		width:615px;
+            	}
+            </style>
+        <![endif]-->
+		<title>Brightcove - Online Broadcasting Service</title>
+		<script type="text/javascript" src="http://admin.brightcove.com/destination/js/ajax/prototype.js"></script>
+		<script type="text/javascript" src="http://admin.brightcove.com/destination/js/matching_columns.js"></script>
+        <script type="text/javascript" src="http://admin.brightcove.com/destination/js/main.js"></script>
+         <script type="text/javascript" src="http://admin.brightcove.com/destination/js/ajax/jsonrpc.js"></script>
+		<script type="text/javascript" src="http://admin.brightcove.com/destination/js/registration.js"></script>
+        <script type="text/javascript" src="http://admin.brightcove.com/destination/js/swfobject.js"></script>
+		<script type="text/javascript" src="http://admin.brightcove.com/destination/js/player.js"></script>
+		<script type="text/javascript" src="http://admin.brightcove.com/destination/js/ajax/behaviour.js"></script>		
+        <script type="text/javascript" src="http://admin.brightcove.com/destination/js/behaviourRulesChannel.js"></script>	
+        <script type="text/javascript">
+        	var videoDTO = new Array();
+        	function switchPlayerDetails(id){
+        		//$("playbackViews").innerHTML=videoDTO[id][2]+" Views";;
+        		$("playbackDesc").innerHTML=videoDTO[id][3];
+        		$("playbackTitle").innerHTML=trunString(videoDTO[id][0],25);
+        		$("playBackTime").innerHTML="("+videoDTO[id][1]+")";
+        		$("playbackURL").href  = 'http://www.brightcove.com/title.jsp?title='+videoDTO[id][4];
+        	}
+        	function onSliderClick(id, type){
+        		//var notPlayable = videoDTO[id][0];        			
+				playVid(id);
+				switchPlayerDetails(id);
+			} 			 
+			  	
+        </script>
+		<!-- compliance patch for microsoft browsers -->
+        <!--[if lt IE 7]> 
+			<script language="JavaScript" src="http://admin.brightcove.com/destination/js/correctPNG.js"></script>
+			<style>
+				@import "http://admin.brightcove.com/destination/css/globalIE.css";
+				@import "http://admin.brightcove.com/destination/css/horizontalMenuIE.css";
+				@import "http://admin.brightcove.com/destination/css/channelIE.css";
+			</style>
+		<![endif]-->  
+		<script type="text/javascript">
+		if(isIE7){
+			document.writeln('<style>');
+			document.writeln('	@import "http://admin.brightcove.com/destination/css/globalIE7.css";');				
+			document.writeln('	@import "http://admin.brightcove.com/destination/css/horizontalMenuIE7.css";');	
+			document.writeln('	@import "http://admin.brightcove.com/destination/css/channelIE7.css";');
+			document.writeln('</style>');
+		}	
+		</script> 
+	</head>
+	<body id="channel">
+		<div id="main">
+			<!-- Begin Navigation -->
+	<div id="navigation">
+		<div id="mainNav">
+			Brightcove.com<span class="divider">|</span><a href="http://corp.brightcove.com">Company</a><span class="divider">|</span><a href="http://studio.brightcove.com">The Studio</a>
+		</div>
+		<div id="loginTools">
+			<span id="helloUser">Hello, <span id="helloUserAnchor"></span><span class="divider">|</span></span>
+			<span id="myAccount"><a id="myAccountAnchor">My Brightcove</a><span class="divider">|</span></span>
+			<a href="http://blog.brightcove.com/addict/">Blog</a><span class="divider">|</span>
+			<a href="http://www.brightcove.com/help/">Help</a><span class="divider">|</span>
+			<a href="channel.jsp%3Fchannel=27638673&amp;lineup=276024046&amp;firstVideo=0.1.html#" id="signInLink" onclick="return linkLogin()">Sign In/Register</a>			
+		</div>
+	</div>
+<!-- End of Navigation -->	
+	<div class="contentWrapper">	    
+		<div class="innerBoundry">
+			<div id="logoSearch">
+				<div id="logo"><a href="http://www.brightcove.com"><img alt="" border="0" src="http://admin.brightcove.com/destination/images/bc_logo_beta.gif"/></a></div>
+				<div id="searchSection">
+					<div id="searchBox">
+						<input style="color:#3B3B3B;" id="searchField" type="text" value="" onkeypress="entsubSearch(event);"/><a href="channel.jsp%3Fchannel=27638673&amp;lineup=276024046&amp;firstVideo=0.1.html#" id="searchMagnifyingGlass"><img alt="" src="http://admin.brightcove.com/destination/images/search_button.gif"/></a>					
+					</div>
+					<!-- <div id="presearch">Try These: <a id="preSearch1" href="http://www.brightcove.com/search.jsp?query=hogfather&firstVideo=0">hogfather</a>, <a id="preSearch2" href="http://www.brightcove.com/search.jsp?query=danity%20kane&firstVideo=0">danity kane</a>, <a id="preSearch3" href="http://www.brightcove.com/search.jsp?query=gifts&firstVideo=0">gifts</a></div> -->
+				</div>
+				<div id="logoRight">
+					<span id="launchChannel"><a href="http://www.brightcove.com/registration.jsp"  onclick="setOmniture(3)" id="launchButton"><img alt="" class="launchButtonOverlay" src="http://admin.brightcove.com/destination/images/button_launch_a_channel_over.gif"/><img src="http://admin.brightcove.com/destination/images/button_launch_a_channel.gif" alt="" border="0"/></a></span>
+					<span id="uploadVideo"><a href="http://www.brightcove.com/upload_video.jsp" id="uploadVideoButton"><img alt="" class="launchButtonOverlay" src="http://admin.brightcove.com/destination/images/button_upload_a_video_over.gif"/><img src="http://admin.brightcove.com/destination/images/button_upload_a_video.gif" alt="" border="0"/></a></span>
+				</div>
+			</div>
+			<script type="text/javascript">
+			<!--
+			var preloaded = new Array();
+			function preload_images() {
+			    for (var i = 0; i < arguments.length; i++){
+			        preloaded[i] = document.createElement('img');
+			        preloaded[i].setAttribute('src',arguments[i]);
+			    };
+			};
+			preload_images(
+			    'http://admin.brightcove.com/destination/images/nav_home_over.gif',
+			    'http://admin.brightcove.com/destination/images/nav_buzz_over.gif',
+			    'http://admin.brightcove.com/destination/images/nav_music_over.gif',
+			    'http://admin.brightcove.com/destination/images/nav_celebs_over.gif',
+			    'http://admin.brightcove.com/destination/images/nav_tvfaves_over.gif',
+			    'http://admin.brightcove.com/destination/images/nav_news_over.gif',
+			    'http://admin.brightcove.com/destination/images/nav_food_over.gif',
+			    'http://admin.brightcove.com/destination/images/nav_funny_over.gif',
+			    'http://admin.brightcove.com/destination/images/syndicate_videos_over.gif',
+			    'http://admin.brightcove.com/destination/images/nav_seeAll_over.gif'
+			);
+			-->
+			</script>
+			<div class="hovermenu" >
+				<ul>
+					<li><a href="http://www.brightcove.com/"><img src="http://admin.brightcove.com/destination/images/nav_home.gif" alt="Home" border="0"/></a></li>
+					<li><a href="http://www.brightcove.com/buzz.jsp"><img src="http://admin.brightcove.com/destination/images/nav_buzz.gif" alt="Buzz" border="0"/></a></li>
+					<li><a href="http://www.brightcove.com/category.jsp?category=200000"><img src="http://admin.brightcove.com/destination/images/nav_music.gif" alt="Music" border="0"/></a></li>
+					<li><a href="http://www.brightcove.com/category.jsp?category=200015"><img src="http://admin.brightcove.com/destination/images/nav_celebs.gif" alt="Celebs" border="0"/></a></li>
+					<li><a href="http://www.brightcove.com/category.jsp?category=200001"><img src="http://admin.brightcove.com/destination/images/nav_tvfaves.gif" alt="TV Faves" border="0"/></a></li>
+					<li><a href="http://www.brightcove.com/category.jsp?category=200012"><img src="http://admin.brightcove.com/destination/images/nav_news.gif" alt="News" border="0"/></a></li>
+					<li><a href="http://www.brightcove.com/category.jsp?category=200009"><img src="http://admin.brightcove.com/destination/images/nav_food.gif" alt="Food &amp; Drink" border="0"/></a></li>					
+					<li id="secondToLast"><a href="http://www.brightcove.com/category.jsp?category=200005"><img src="http://admin.brightcove.com/destination/images/nav_funny.gif" alt="Funny" border="0"/></a></li>
+					<li class="syndicateMenu"><a href="http://studio.brightcove.com/affiliates/syndication-marketplace.cfm" onclick="setOmniture(4)"><img src="http://admin.brightcove.com/destination/images/syndicate_videos_over.gif" alt="Syndicate, Get Videos for your Website" border="0" class="syndicateMenuOverlay"/><img src="http://admin.brightcove.com/destination/images/syndicate_videos.gif" alt="Syndicate, Get Videos for your Website" border="0" class="syndicateMenuImg"/></a></li>
+					<li id="lastMenuItem"><a href="channel.jsp%3Fchannel=27638673&amp;lineup=276024046&amp;firstVideo=0.1.html#" onclick="return false;"><img src="http://admin.brightcove.com/destination/images/nav_seeAll.gif" alt="See All" border="0"/></a><div id="test" style="height:0px;width:0px;visibility:hidden;"></div>
+						<ul id="dropdownul">  
+							<li class="submenuli"><a href="http://www.brightcove.com/category.jsp?category=200013">Action</a></li>
+							<li class="submenuli"><a href="http://www.brightcove.com/category.jsp?category=200015">Celebs</a></li>
+							<li class="submenuli"><a href="http://www.brightcove.com/category.jsp?category=200008">Educational</a></li>
+							<li class="submenuli"><a href="http://www.brightcove.com/category.jsp?category=200004">Family</a></li>
+							<li class="submenuli"><a href="http://www.brightcove.com/category.jsp?category=200002">Films &amp; Shorts</a></li>
+							<li class="submenuli"><a href="http://www.brightcove.com/category.jsp?category=200009">Food &amp; Drink</a></li>
+							<li class="submenuli"><a href="http://www.brightcove.com/category.jsp?category=200005">Funny</a></li>
+							<li class="submenuli"><a href="http://www.brightcove.com/category.jsp?category=200011">Health</a></li>
+							<li class="submenuli"><a href="http://www.brightcove.com/category.jsp?category=200010">Living</a></li>
+							<li class="submenuli"><a href="http://www.brightcove.com/category.jsp?category=200000">Music</a></li>
+							<li class="submenuli"><a href="http://www.brightcove.com/category.jsp?category=200012">News</a></li>
+							<li class="submenuli"><a href="http://www.brightcove.com/category.jsp?category=200014">Sexy</a></li>
+							<li class="submenuli"><a href="http://www.brightcove.com/category.jsp?category=200006">Sports</a></li>
+							<li class="submenuli"><a href="http://www.brightcove.com/category.jsp?category=200007">Travel</a><br/></li>
+							<li class="submenuli"><a href="http://www.brightcove.com/category.jsp?category=200001">TV Faves</a></li>
+							<li class="submenuli"><a href="http://www.brightcove.com/category.jsp?category=200003">Underground</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<script>firstSignedIn()</script>
+			<div id="row">
+
+			<div id="content" class="column">
+				<div id="shadowRight" class="column"><img src="http://admin.brightcove.com/destination/images/shadow_right.jpg" alt="" /></div>
+				<div id="shadowLeft" class="column"><img src="http://admin.brightcove.com/destination/images/shadow_left.jpg" alt="" /></div>
+			
+				
+				
+				<div>	
+				<div id="rightColumn">
+					<div id="about">		
+						<div class="truncDesc aboutRow">
+							<div class="aboutThumbnails">
+								<div class="aboutFloatSmallTN">
+								
+									<a href="http://www.etopiamedia.net" target="_blank"><img alt="" src="http://brightcove.vo.llnwd.net/o2/unsecured/media/27638673/27638673_29784135_938690e5011f125265dfae8781f6685e6567143a.jpg" class="aboutSmallImg"/></a>									
+								</div>
+							</div>
+							<div>
+								<a class="primaryLink" href="http://www.etopiamedia.net" target="_blank">Online Broadcasting Service</a>
+								
+									<br/><span class="videosVideoCount">&nbsp;</span>
+								
+								
+									<div class="videosDescription">The Online Broadcasting Service (OBS) offers viewers the best and latest in news and interviews about technology, politics, entertainment, medicine, books, and science</div>
+								
+								
+								<div id="channelLinks">
+	                      			<div class="channelLink channelWebsiteLink">
+	                      				<span class="secondaryLink">
+	                      					<a href="http://www.etopiamedia.net" target="_blank">Visit Website</a>
+	                      				</span>
+									</div>
+									
+									
+									<div class="channelLink" id="addFavoriteDiv" title="Add this channel to your My Brightcove page">
+	                      				<a href="channel.jsp%3Fchannel=27638673&amp;lineup=276024046&amp;firstVideo=0.1.html#" id="addToFavChannel">
+	                      					<img src="http://admin.brightcove.com/destination/images/graphic_plusonly_graybg.gif" border="0"/> 
+	                      					<span class="secondaryLink" id="addToFavChannelSpan">	                      				
+		                      					Add to Favorites
+		                      					<script>
+			                      					var a = new Object();
+			                      					a.channel = 27638673;	 
+			                      					$("addToFavChannel").onclick = function(){addChannelToFavorites(a,$("addToFavChannel")); return false;}                    				
+			                      				</script>
+	                      					</span>
+	                      				</a>
+	                      			
+									</div>																						
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div id="more">	
+					<div id="moreTop"></div>
+					
+						<div class="moreRow">
+							<div class="moreThumbnails">
+								<div class="moreFloatSmallTN">
+									<a href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;firstVideo=0">
+									
+									
+									<img alt="" src="http://brightcove.vo.llnwd.net/d2/unsecured/media/27638673/27638673_528866327_285bc76d96dc4e7e9af8ccd4d1162a68ba1c9c4e.jpg" class="moreSmallImg"/></a>
+								</div>
+							</div>
+							<div class="moreThumbDesc">
+                <span class="lineupTitle">
+								
+									<a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;firstVideo=0">Featured Videos</a>
+								
+                </span>
+								
+									<p class="videosDescription"><nobr>247 Videos</nobr></p>
+								
+							</div>
+						</div>
+							
+					
+
+          <div><table cellspacing="0" cellpadding="0" border="0" class="moreLineupTable">
+          <!-- <div class="moreLineupRow"> -->
+          
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=474425215&amp;firstVideo=0"><script>document.write(trunString("avian influenza /bird flu",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>5 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=298680700&amp;firstVideo=0"><script>document.write(trunString("Earth Defense Department",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>14 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=212351997&amp;firstVideo=0"><script>document.write(trunString("Etopia News' Greatest Hits, Volume 6",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>15 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=44164197&amp;firstVideo=0"><script>document.write(trunString("28th Congressional District of California Campaign",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>1 Video</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=78375520&amp;firstVideo=0"><script>document.write(trunString("H.R. 5252",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>1 Video</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=60819269&amp;firstVideo=0"><script>document.write(trunString("1 impeachment channel",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>15 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=184447722&amp;firstVideo=0"><script>document.write(trunString("The Sustainable Cities Channel",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>22 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=219257898&amp;firstVideo=0"><script>document.write(trunString("Sustainable Transportation Channel",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>1 Video</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=493174904&amp;firstVideo=0"><script>document.write(trunString("CALEA channel",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>2 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=505315866&amp;firstVideo=0"><script>document.write(trunString("2 impeachment channel",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>9 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=164942232&amp;firstVideo=0"><script>document.write(trunString("No on Proposition 87",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>1 Video</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=44164163&amp;firstVideo=0"><script>document.write(trunString("Federal Building Coalition vs. the U.S. Government",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>2 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=151749692&amp;firstVideo=0"><script>document.write(trunString("Tech Professors",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>6 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=474425226&amp;firstVideo=0"><script>document.write(trunString("HPV channel",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>3 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=32397176&amp;firstVideo=0"><script>document.write(trunString("Aspiring Stars Network in Hollywood",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>4 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=301961218&amp;firstVideo=0"><script>document.write(trunString("celebrity activist line-up",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>13 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=474424249&amp;firstVideo=0"><script>document.write(trunString("stem cell channel",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>6 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=431783045&amp;firstVideo=0"><script>document.write(trunString("stan lee channel",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>1 Video</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=212351990&amp;firstVideo=0"><script>document.write(trunString("Etopia News' Greatest Hits, Volume 4",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>15 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=164950430&amp;firstVideo=0"><script>document.write(trunString("Smokefree Santa Monica",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>1 Video</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=36994923&amp;firstVideo=0"><script>document.write(trunString("Zev Yaroslavsky 1",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>2 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=151750299&amp;firstVideo=0"><script>document.write(trunString("infra/voltaics 1",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>1 Video</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=212351882&amp;firstVideo=0"><script>document.write(trunString("45th California D.C. Election Cha",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>1 Video</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=35254496&amp;firstVideo=0"><script>document.write(trunString("Nature",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>1 Video</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=151749688&amp;firstVideo=0"><script>document.write(trunString("Photonics",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>5 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=30661128&amp;firstVideo=0"><script>document.write(trunString("Conversations with Veoh CEO Dmitry Shapiro",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>2 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=37069133&amp;firstVideo=0"><script>document.write(trunString("California State Controller campaign 2006",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>1 Video</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=187759476&amp;firstVideo=0"><script>document.write(trunString("hillary and the war",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>9 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=254756163&amp;firstVideo=0"><script>document.write(trunString("The Smokefree Channel",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>7 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=151749621&amp;firstVideo=0"><script>document.write(trunString("Smokefree Channel",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>3 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=474534643&amp;firstVideo=0"><script>document.write(trunString("microMeshMAX channel",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>1 Video</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=187759532&amp;firstVideo=0"><script>document.write(trunString("covering sightspeed",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>5 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=32365615&amp;firstVideo=0"><script>document.write(trunString("2006 Tech Oscar Interviews",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>3 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=37069082&amp;firstVideo=0"><script>document.write(trunString("42nd Assembly District debate",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>2 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=320419782&amp;firstVideo=0"><script>document.write(trunString("re-instating the draft",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>1 Video</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=155898744&amp;firstVideo=0"><script>document.write(trunString("Peace and Quiet in the Valley",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>3 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=164940862&amp;firstVideo=0"><script>document.write(trunString("Peak Oil/Global Warming",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>15 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=212351916&amp;firstVideo=0"><script>document.write(trunString("Etopia News' Greatest Hits, Volume 2",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>15 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=32376129&amp;firstVideo=0"><script>document.write(trunString("Samantha Miller protests Hillary Clinton in B.H.",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>4 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=307737152&amp;firstVideo=0"><script>document.write(trunString("digital media channel",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>3 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=44124695&amp;firstVideo=0"><script>document.write(trunString("20th State Senate District of California Campaign",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>2 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><span class="lineupLinkSelected"><script>document.write(trunString("marijuana channel",25));</script></span></td>
+									
+								
+									<td align="right" class="videosDescription"><nobr>3 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=174314906&amp;firstVideo=0"><script>document.write(trunString("The SightSpeed Channel",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>3 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=27618215&amp;firstVideo=0"><script>document.write(trunString("Education",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>6 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=219257803&amp;firstVideo=0"><script>document.write(trunString("LA Theatre Channel",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>1 Video</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=212338456&amp;firstVideo=0"><script>document.write(trunString("electric sunshine",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>6 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=32394393&amp;firstVideo=0"><script>document.write(trunString("Medicine",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>7 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=246219412&amp;firstVideo=0"><script>document.write(trunString("Energy Policy Channel",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>4 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=36995872&amp;firstVideo=0"><script>document.write(trunString("Who Needs Sleep?",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>2 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=143947338&amp;firstVideo=0"><script>document.write(trunString("Sustainability",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>1 Video</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=187745456&amp;firstVideo=0"><script>document.write(trunString("elections channel",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>13 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=37019530&amp;firstVideo=0"><script>document.write(trunString("Internet",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>4 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=37069056&amp;firstVideo=0"><script>document.write(trunString("Entertainment",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>8 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=261046202&amp;firstVideo=0"><script>document.write(trunString("Etopia News' Greatest Hits, Volume 7",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>15 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=212351915&amp;firstVideo=0"><script>document.write(trunString("Etopia News' Greatest Hits, Volume 1",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>15 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=86210725&amp;firstVideo=0"><script>document.write(trunString("Crystal Live!",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>7 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=156434949&amp;firstVideo=0"><script>document.write(trunString("Global Green USA",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>2 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=494388331&amp;firstVideo=0"><script>document.write(trunString("nbsc--national broadband stragegy channel",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>5 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=212337898&amp;firstVideo=0"><script>document.write(trunString("California Politics Today compendium 1 ",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>15 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=187745533&amp;firstVideo=0"><script>document.write(trunString("medical interviews",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>8 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=391120079&amp;firstVideo=0"><script>document.write(trunString("electric wind channel",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>1 Video</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=164942237&amp;firstVideo=0"><script>document.write(trunString("Yes on Proposition 87",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>2 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=212337946&amp;firstVideo=0"><script>document.write(trunString("Etopia News' Greatest Hits, Volume 5",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>15 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=136960586&amp;firstVideo=0"><script>document.write(trunString("airport channel",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>5 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=219230934&amp;firstVideo=0"><script>document.write(trunString("Etopia News Book Channel",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>2 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=494918610&amp;firstVideo=0"><script>document.write(trunString("california ballot initiatives 2007 channel",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>2 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=376898660&amp;firstVideo=0"><script>document.write(trunString("new iran channel",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>11 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=370423113&amp;firstVideo=0"><script>document.write(trunString("real broadband",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>4 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=156430337&amp;firstVideo=0"><script>document.write(trunString("Jack Scott",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>1 Video</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=86208722&amp;firstVideo=0"><script>document.write(trunString("NFL in Pasadena?",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>7 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=136990936&amp;firstVideo=0"><script>document.write(trunString("News of West Hollywood",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>1 Video</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=203863788&amp;firstVideo=0"><script>document.write(trunString("digital cinema",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>5 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=44160736&amp;firstVideo=0"><script>document.write(trunString("Passing AB2987",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>12 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=171995392&amp;firstVideo=0"><script>document.write(trunString("Psychedelic Research",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>2 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=32950774&amp;firstVideo=0"><script>document.write(trunString("Raney and Burns protest againist Hillary Clinton",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>4 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=156430250&amp;firstVideo=0"><script>document.write(trunString("Proposition 87--Pro & Con",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>4 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=27610650&amp;firstVideo=0"><script>document.write(trunString("Politics",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>17 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=212338388&amp;firstVideo=0"><script>document.write(trunString("Etopia News' Greatest Hits, Volume 3",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>15 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=37046811&amp;firstVideo=0"><script>document.write(trunString("36th Congressional District of California campaign",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>4 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=245987705&amp;firstVideo=0"><script>document.write(trunString("New Media Channel",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>4 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=183619536&amp;firstVideo=0"><script>document.write(trunString("net neutrality",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>6 Videos</nobr></td>
+																
+						</tr>
+						
+						<tr>
+								
+									<td align="left"><a class="lineupLink" href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=86212213&amp;firstVideo=0"><script>document.write(trunString("43rd California A.D. General Election race, 2006",25));</script></a></td>
+								
+									<td align="right" class="videosDescription"><nobr>2 Videos</nobr></td>
+																
+						</tr>
+						<!-- </div> -->
+        </table></div>
+				    <div id="moreBottom"></div>					
+					</div>	
+				</div>			
+				<div id="leftColumn">
+					<div id="one">
+					
+						<div id="featuredVideo">
+						<!-- Start of Brightcove Player -->
+						<div id="flashPlayer">
+							<table width='326' height='292' border='0'>
+								<tr>
+									<td align='center' valign='middle'>
+										You need Flash Player version 8 or higher to view this video.<br/><br/>
+										<a href='http://www.macromedia.com/go/getflashplayer/' target='_blank'>
+											Click here to get the latest Flash Player.
+										</a>
+									</td>
+								</tr>
+							</table>
+						</div>
+							<script type="text/javascript">
+								
+									
+									var time525643921 = milToMin(453413);
+									var title525643921 = trunString("NM State Senator Komadina pooh-poohs SJR5",25);
+									var desc525643921 = "part 1 of an interview with NM State Senator and Public Affairs Ranking Member Steve Komadina, in which he denies the importance of Senate Joint Resolution 5, calling for Bush's impeachment, recorded from Santa Fe, NM, on February 21, 2007"
+									var views525643921 = "8";
+									var video525643921 = "525643921";
+									videoDTO[525643921]= new Array(title525643921,time525643921,views525643921,desc525643921,video525643921);
+									
+								
+									
+									var time530655717 = milToMin(619758);
+									var title530655717 = trunString("Eric Oemig on his Joint Memorial 6018 WA impeachment bill",25);
+									var desc530655717 = "part 1 of an interview with Washington State Senator Eric Oemig about Joint Memorial 6018, which calls on the U.S. Congress to begin impeachment proceedings against George W. Bush and Richard B. Cheney, recorded from Olympia, WA, on February 21, 2007"
+									var views530655717 = "35";
+									var video530655717 = "530655717";
+									videoDTO[530655717]= new Array(title530655717,time530655717,views530655717,desc530655717,video530655717);
+									
+								
+									
+									var time525642816 = milToMin(495793);
+									var title525642816 = trunString("Linda Boyd at FoR reports on Olympia impeachment Town Hall 1",25);
+									var desc525642816 = "part 1 of an interview with Linda Boyd, Director, Eastside Fellowship of Reconciliation, in which she reports on a Town Hall meeting in Olympia, Washington, where 700 + people considered the impeachment of George W. Bush, recorded February 21, 2007"
+									var views525642816 = "19";
+									var video525642816 = "525642816";
+									videoDTO[525642816]= new Array(title525642816,time525642816,views525642816,desc525642816,video525642816);
+									
+								
+									
+									var time525642815 = milToMin(625931);
+									var title525642815 = trunString("NM State Senator Komadina denies Bush's impeachability 2",25);
+									var desc525642815 = "part 2 of an interview with NM State Senator and Public Affairs Ranking Member Steve Komadina, in which he denies the validity of four charges allegedly justifying the impeachment of George W. Bush, recorded from Santa Fe, NM, on February 21, 2007"
+									var views525642815 = "32";
+									var video525642815 = "525642815";
+									videoDTO[525642815]= new Array(title525642815,time525642815,views525642815,desc525642815,video525642815);
+									
+								
+									
+									var time514379986 = milToMin(541827);
+									var title514379986 = trunString("SF Supervisor Chris Daly on Pelosi's impeachment stand",25);
+									var desc514379986 = "an interview with San Francisco Supervisor Chris Daly, in which he explains why SF Congressional Representative and House Speaker Nancy Pelosi is blocking impeachment , recorded February 20, 2007                              ,       "
+									var views514379986 = "71";
+									var video514379986 = "514379986";
+									videoDTO[514379986]= new Array(title514379986,time514379986,views514379986,desc514379986,video514379986);
+									
+								
+									
+									var time525245917 = milToMin(503000);
+									var title525245917 = trunString("Daryl Pillsbury on impeachment press conference",25);
+									var desc525245917 = "an audio interview with Vermont State Representative Daryl Pillsbury about the disappointing attendance at a February 15, 2007, press conference announcing the introduction of impeachment resolution JRH.15, recorded from Montpelier, VT, 2-2          "
+									var views525245917 = "31";
+									var video525245917 = "525245917";
+									videoDTO[525245917]= new Array(title525245917,time525245917,views525245917,desc525245917,video525245917);
+									
+								
+									
+									var time507828967 = milToMin(711482);
+									var title507828967 = trunString("Desi Brown reports on Rules passage of SJR5 in NM",25);
+									var desc507828967 = "A conversation with Desi Brown, legislative aide to NM State Senator Gerald Ortiz y Pino about the passage of SJR5, calling on the U.S. Congress to commence the impeachment of Pres. Bush and V.P. Cheney, recorded from Santa Fe on February 16, 2007"
+									var views507828967 = "116";
+									var video507828967 = "507828967";
+									videoDTO[507828967]= new Array(title507828967,time507828967,views507828967,desc507828967,video507828967);
+									
+								
+									
+									var time507863905 = milToMin(1033964);
+									var title507863905 = trunString("David Swanson at ADS updates the impeachment story, 2-15-07",25);
+									var desc507863905 = "an interview with AfterDowningStreet.org co-founder David Swanson, covering impeachment efforts in NM, WA, and VT, the reasons for impeaching President Bush, and information about the February 17-18th impeachment strategy conference in NYC, recorded "
+									var views507863905 = "65";
+									var video507863905 = "507863905";
+									videoDTO[507863905]= new Array(title507863905,time507863905,views507863905,desc507863905,video507863905);
+									
+								
+									
+									var time505319869 = milToMin(622000);
+									var title505319869 = trunString("WA State Sen. Oemig introduces impeachment joint memorial",25);
+									var desc505319869 = "Washington State Senator Eric Oemig announces the introduction of a joint memorial calling for the impeachment of George W. Bush into the Washington State Senate at a press conference in Olympia, WA, on February 14, 2007"
+									var views505319869 = "40";
+									var video505319869 = "505319869";
+									videoDTO[505319869]= new Array(title505319869,time505319869,views505319869,desc505319869,video505319869);
+									
+								
+									
+									var time505319682 = milToMin(340068);
+									var title505319682 = trunString("Daryl Pillsbury on passage of Vermont Iraq War resolution",25);
+									var desc505319682 = "an interview with Vermont State Rep. Daryl Pillsbury about the passage on February 13th by the Vermont House of Representatives of HR 11, &quot;calling for the orderly withdrawal of American military forces from Iraq to commence immediately.&quot;"
+									var views505319682 = "22";
+									var video505319682 = "505319682";
+									videoDTO[505319682]= new Array(title505319682,time505319682,views505319682,desc505319682,video505319682);
+									
+								
+									
+									var time494751302 = milToMin(636344);
+									var title494751302 = trunString("David Zuckerman talks about Vermont impeachment bill, part 2",25);
+									var desc494751302 = "part 2 of an interview with David Zuckerman, Progressive member of the Vermont House of Representatives, about the presidential impeachment bill being introduced there this week, recorded from Burlington on February 11, 2007"
+									var views494751302 = "14";
+									var video494751302 = "494751302";
+									videoDTO[494751302]= new Array(title494751302,time494751302,views494751302,desc494751302,video494751302);
+									
+								
+									
+									var time494918637 = milToMin(569172);
+									var title494918637 = trunString("David Zuckerman talks about Vermont impeachment bill, part 1",25);
+									var desc494918637 = "part 1 of an interview with David Zuckerman, Progressive member of the Vermont House of Representatives, about the presidential impeachment bill being introduced there this week, recorded from Burlington on February 11, 2007"
+									var views494918637 = "28";
+									var video494918637 = "494918637";
+									videoDTO[494918637]= new Array(title494918637,time494918637,views494918637,desc494918637,video494918637);
+									
+								
+									
+									var time494769785 = milToMin(521137);
+									var title494769785 = trunString("Harry V. Lehmann on his &quot;Tangible Ballot Initiative,&quot; part 1",25);
+									var desc494769785 = "part 1 of an interview with California trial lawyer Harry V. Lehmann's about his &quot;Tangible Ballot Initiative,&quot; which would redefine &quot;ballot&quot; under California law to require that it be tangible and human-readable, recorded on February 9, 2007"
+									var views494769785 = "2";
+									var video494769785 = "494769785";
+									videoDTO[494769785]= new Array(title494769785,time494769785,views494769785,desc494769785,video494769785);
+									
+								
+									
+									var time494650059 = milToMin(508172);
+									var title494650059 = trunString("Harry V. Lehmann on his &quot;Tangible Ballot Initiative,&quot; part 2",25);
+									var desc494650059 = "part 2 of an interview with California trial lawyer Harry V. Lehmann about his &quot;Tangible Ballot Initiative,&quot; which would redefine &quot;ballot&quot; under California law to require that it be tangible and human-readable, recorded on February 9, 2007"
+									var views494650059 = "2";
+									var video494650059 = "494650059";
+									videoDTO[494650059]= new Array(title494650059,time494650059,views494650059,desc494650059,video494650059);
+									
+								
+									
+									var time494649976 = milToMin(546758);
+									var title494649976 = trunString("Daryl Pillsbury talks about Vermont impeachment bill, part 2",25);
+									var desc494649976 = "part 2 of an interview with Daryl Pillsbury, member of the Vermont House of Representatives, about the dire fate he expects for a presidential impeachment bill being introduced there this week, recorded from Montpelier on February 10, 2007"
+									var views494649976 = "11";
+									var video494649976 = "494649976";
+									videoDTO[494649976]= new Array(title494649976,time494649976,views494649976,desc494649976,video494649976);
+									
+								
+									
+									var time494918510 = milToMin(618172);
+									var title494918510 = trunString("Daryl Pillsbury talks about Vermont impeachment bill, part 1",25);
+									var desc494918510 = "part 1 of an interview with Daryl Pillsbury, member of the Vermont House of Representatives, about the dire fate he expects for a presidential impeachment bill being introduced there this week, recorded from Montpelier on February 10, 2007"
+									var views494918510 = "26";
+									var video494918510 = "494918510";
+									videoDTO[494918510]= new Array(title494918510,time494918510,views494918510,desc494918510,video494918510);
+									
+								
+								var so = new SWFObject("http://admin.brightcove.com/destination/player/player.swf", "bcPlayer", "326", "292", "8.0.0.0","#ffffff");	
+								so.addVariable("initVideoId", "525643921");
+								so.addVariable("cdnURL", "http://admin.brightcove.com");
+								so.addVariable("servicesURL", "http://services.brightcove.com/services");
+								so.addVariable("viewerSecureGatewayURL", "https://services.brightcove.com/services/amfgateway");								
+								so.addParam("allowFullScreen", "true");
+								so.addVariable("allowFullScreen", "true");	
+								so.addParam("allowScriptAccess", "always");								
+								so.write("flashPlayer");						
+							</script>						
+							<!-- End of Brightcove Player -->
+						</div>
+						<div id="featuredDesc">
+							<div><a id="playbackURL" href="http://www.brightcove.com/title.jsp?title=525643921&amp;channel=27638673" class="videoTitleLinkFirst"><span id="playbackTitle"><script>document.write(trunString("NM State Senator Komadina pooh-poohs SJR5",25));</script></span></a><span id="playBackTime" class="primaryLinkSelected">(<script type="text/javascript">document.write(milToMin(453413));</script>)</span></div>
+							<div>
+								
+								<span id="playbackViews" class="featuredPartnersVideoCount">
+									8 Views
+								</span>
+								<div id="playbackDesc" class="truncDesc">
+								<span class="tooltipDate">Feb 23
+                </span> 
+								part 1 of an interview with NM State Senator and Public Affairs Ranking Member Steve Komadina, in which he denies the importance of Senate Joint Resolution 5, calling for Bush's impeachment, recorded from Santa Fe, NM, on February 21, 2007
+								</div>
+							</div>	
+							<div id="flashSlider" align="center"></div>
+							
+							<script type="text/javascript">
+								var swf = new SWFObject("http://admin.brightcove.com/destination/slider/slider.swf", "rssbadge", "280", "120", "8.0.0.0","#ffffff");	
+								swf.addVariable("type", "titles");				
+								swf.addVariable("id", "525643921,530655717,525642816,525642815,514379986,525245917,507828967,507863905,505319869,505319682,494751302,494918637,494769785,494650059,494649976,494918510");
+								swf.addVariable("columns", "3");
+								swf.addParam("allowScriptAccess", "always");
+								swf.addVariable("cdnURL", "http://admin.brightcove.com");
+								swf.addParam("wmode", "opaque");
+								swf.addVariable("servicesURL", "http://services.brightcove.com/services");
+								swf.write("flashSlider");						
+							</script>
+						</div>
+          
+					</div>
+					<div id="videosTitle">
+						marijuana channel 	
+					</div>
+					
+					<div id="three">						
+						
+						<!-- <div id="videoBackground">&nbsp;</div> -->
+						<div id="sortArea"><!--  Sort by: <a href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=276024046&amp;orderBy=creationDate">Newest</a> <a href="http://www.brightcove.com/channel.jsp?channel=27638673&amp;lineup=276024046&amp;firstVideo=0&amp;orderBy=displayName">Title</a>--></div>
+						
+						<div id="videos">
+							
+							<div class="videosThumbnails">
+							<b class="rounded">
+								<b class="rounded1"><b></b></b>
+								<b class="rounded2"><b></b></b>
+								<b class="rounded3"></b>
+								<b class="rounded4"></b>
+								<b class="rounded5"></b>
+							</b> 
+							<div class="rounded_content">
+								<div class="payMediaIcon">
+								
+				                 	<img alt="" title="Add this video to your My Brightcove page" class="addVideoIcon" src="http://admin.brightcove.com/destination/images/icon_add_video.gif" onclick="addVideoToFavorites('339145530', this, 'http://admin.brightcove.com/destination/images/icon_video_added.gif');"/>
+				        
+				                 
+	           					</div>
+								<div class="videosFloatSmallTN">
+									<div id="339145530" class="tooltip">
+										<div class="tooltipContent">											
+											<div class="tooltipText">
+												<div class="tooltipTitle">
+													<span class="primaryLinkSelected"><script>document.write(trunString("Mike Gray at CSDP talks about marijuana reform"));</script></span>(<script>document.write(milToMin(2033793));</script>)
+												</div>
+												<div class="tooltipPublisher">
+													Online Broadcasting Service
+												</div>
+												<div class="truncDesc tooltipDesc">
+													
+													<span class="tooltipDate">Nov 30</span> 
+													
+													a half-hour video interview with Common Sense for Drug Policy Chair Mikje Gray in which he talks about that group's alternative to the "War on Drugs," recorded in West Hollywood, California, on November 29, 2006
+												</div>
+											</div>
+											<img alt="" src="http://admin.brightcove.com/destination/images/rollover_overlay_trans.png" class="tooltipOverlay"/>
+										</div>								
+									</div>
+									
+  										<a href="http://www.brightcove.com/title.jsp?title=339145530&channel=27638673&lineup=276024046"  class="overlay">
+											<img alt="" src="http://admin.brightcove.com/destination/images/rollover_thumb_play_trans.png" class="moreImgOverlay"/>
+											
+											<img alt="" src="http://brightcove.vo.llnwd.net/o2/unsecured/media/27638673/27638673_339934073_900412fd43d8ba4fb4441c8daf232a2556b867b3.jpg" class="videoImgSmall"/>
+										</a>
+										</div>							
+										<div>
+										<div class="videoThumbnailDescription">
+											<a href="http://www.brightcove.com/title.jsp?title=339145530&channel=27638673&lineup=276024046"  class="videoTitleText" id="span0"><script>document.write(trunString("Mike Gray at CSDP talks about marijuana reform"));</script></a><br/>
+										</div>
+										
+										<div class="videoThumbnailDescription">
+											<span class="tooltipViews">
+                    41 Views</span>
+										</div>
+									
+								</div>							
+							</div>
+							<b class="rounded">
+							<b class="rounded5"></b>
+							<b class="rounded4"></b>
+							<b class="rounded3"></b>
+							<b class="rounded2"><b></b></b>
+							<b class="rounded1"><b></b></b>
+							</b>
+							</div>
+							
+							<div class="videosThumbnails">
+							<b class="rounded">
+								<b class="rounded1"><b></b></b>
+								<b class="rounded2"><b></b></b>
+								<b class="rounded3"></b>
+								<b class="rounded4"></b>
+								<b class="rounded5"></b>
+							</b> 
+							<div class="rounded_content">
+								<div class="payMediaIcon">
+								
+				                 	<img alt="" title="Add this video to your My Brightcove page" class="addVideoIcon" src="http://admin.brightcove.com/destination/images/icon_add_video.gif" onclick="addVideoToFavorites('301794121', this, 'http://admin.brightcove.com/destination/images/icon_video_added.gif');"/>
+				        
+				                 
+	           					</div>
+								<div class="videosFloatSmallTN">
+									<div id="301794121" class="tooltip">
+										<div class="tooltipContent">											
+											<div class="tooltipText">
+												<div class="tooltipTitle">
+													<span class="primaryLinkSelected"><script>document.write(trunString("Patrick Killen at CRCM makes the case for pot reform"));</script></span>(<script>document.write(milToMin(1806965));</script>)
+												</div>
+												<div class="tooltipPublisher">
+													Online Broadcasting Service
+												</div>
+												<div class="truncDesc tooltipDesc">
+													
+													<span class="tooltipDate">Nov 7</span> 
+													
+													a remotely-recorded video interview with Nevada's Committee to Regulate and Control Marijuana (CRCM)/Ballot Question No. 7 spokesperson Patrick Killen, conducted on October 27, 2006
+												</div>
+											</div>
+											<img alt="" src="http://admin.brightcove.com/destination/images/rollover_overlay_trans.png" class="tooltipOverlay"/>
+										</div>								
+									</div>
+									
+  										<a href="http://www.brightcove.com/title.jsp?title=301794121&channel=27638673&lineup=276024046"  class="overlay">
+											<img alt="" src="http://admin.brightcove.com/destination/images/rollover_thumb_play_trans.png" class="moreImgOverlay"/>
+											
+											<img alt="" src="http://brightcove.vo.llnwd.net/o2/unsecured/media/27638673/27638673_303883295_b94f30ed02a10f96c17b81e4830b40d29cabbd0c.jpg" class="videoImgSmall"/>
+										</a>
+										</div>							
+										<div>
+										<div class="videoThumbnailDescription">
+											<a href="http://www.brightcove.com/title.jsp?title=301794121&channel=27638673&lineup=276024046"  class="videoTitleText" id="span0"><script>document.write(trunString("Patrick Killen at CRCM makes the case for pot reform"));</script></a><br/>
+										</div>
+										
+										<div class="videoThumbnailDescription">
+											<span class="tooltipViews">
+                    26 Views</span>
+										</div>
+									
+								</div>							
+							</div>
+							<b class="rounded">
+							<b class="rounded5"></b>
+							<b class="rounded4"></b>
+							<b class="rounded3"></b>
+							<b class="rounded2"><b></b></b>
+							<b class="rounded1"><b></b></b>
+							</b>
+							</div>
+							
+							<div class="videosThumbnails">
+							<b class="rounded">
+								<b class="rounded1"><b></b></b>
+								<b class="rounded2"><b></b></b>
+								<b class="rounded3"></b>
+								<b class="rounded4"></b>
+								<b class="rounded5"></b>
+							</b> 
+							<div class="rounded_content">
+								<div class="payMediaIcon">
+								
+				                 	<img alt="" title="Add this video to your My Brightcove page" class="addVideoIcon" src="http://admin.brightcove.com/destination/images/icon_add_video.gif" onclick="addVideoToFavorites('136960375', this, 'http://admin.brightcove.com/destination/images/icon_video_added.gif');"/>
+				        
+				                 
+	           					</div>
+								<div class="videosFloatSmallTN">
+									<div id="136960375" class="tooltip">
+										<div class="tooltipContent">											
+											<div class="tooltipText">
+												<div class="tooltipTitle">
+													<span class="primaryLinkSelected"><script>document.write(trunString("West Hollywood votes to de-prioritize marijuana enforcement"));</script></span>(<script>document.write(milToMin(1395827));</script>)
+												</div>
+												<div class="tooltipPublisher">
+													Online Broadcasting Service
+												</div>
+												<div class="truncDesc tooltipDesc">
+													
+													<span class="tooltipDate">Jun 20</span> 
+													
+													coverage of the June 19, 2006, West Hollywood City Council meeting at which the council voted to de-prioritize the enforcement of marijuana laws within that city
+												</div>
+											</div>
+											<img alt="" src="http://admin.brightcove.com/destination/images/rollover_overlay_trans.png" class="tooltipOverlay"/>
+										</div>								
+									</div>
+									
+  										<a href="http://www.brightcove.com/title.jsp?title=136960375&channel=27638673&lineup=276024046"  class="overlay">
+											<img alt="" src="http://admin.brightcove.com/destination/images/rollover_thumb_play_trans.png" class="moreImgOverlay"/>
+											
+											<img alt="" src="http://brightcove.vo.llnwd.net/o2/unsecured/media/27638673/27638673_287383157_dd2e2af21caddf75ab669a92e552f7d20e3cba55.jpg" class="videoImgSmall"/>
+										</a>
+										</div>							
+										<div>
+										<div class="videoThumbnailDescription">
+											<a href="http://www.brightcove.com/title.jsp?title=136960375&channel=27638673&lineup=276024046"  class="videoTitleText" id="span0"><script>document.write(trunString("West Hollywood votes to de-prioritize marijuana enf..."));</script></a><br/>
+										</div>
+										
+										<div class="videoThumbnailDescription">
+											<span class="tooltipViews">
+                    111 Views</span>
+										</div>
+									
+								</div>							
+							</div>
+							<b class="rounded">
+							<b class="rounded5"></b>
+							<b class="rounded4"></b>
+							<b class="rounded3"></b>
+							<b class="rounded2"><b></b></b>
+							<b class="rounded1"><b></b></b>
+							</b>
+							</div>
+								
+						</div> 
+						<div id="sortArea">&nbsp;</div>
+								
+					</div>		
+				</div>	
+				</div>
+				
+				
+			</div>
+					</div>
+		<div class="innerFooter">
+			<span class="innerFooterLeft"><a href="http://www.brightcove.com/">Home</a> | <a href="http://www.brightcove.com/buzz.jsp">The Buzz</a> | <a href="http://www.brightcove.com/category.jsp?category=200000">Music</a> | <a href="http://www.brightcove.com/category.jsp?category=200015">Celebs</a> | <a href="http://www.brightcove.com/category.jsp?category=200001">TV Faves</a> | <a href="http://www.brightcove.com/category.jsp?category=200012">News</a> | <a href="http://www.brightcove.com/category.jsp?category=200009">Food &amp; Drink</a> | <a href="http://www.brightcove.com/category.jsp?category=200005">Funny</a></span>					
+			<span class="innerFooterRight"><a href="http://www.brightcove.com/site_feedback.jsp">Feedback</a> | <a href="http://www.brightcove.com/help/">Help</a></span>
+		</div>
+	</div>	<!-- End InnerBoundry -->     
+</div><!-- End of ContentWrapper -->
+<div class="footer">
+	<div class="footerText">
+		<span class="footerLeft"><a href="http://www.brightcove.com/">Brightcove.com</a> | <a href="http://corp.brightcove.com">Company</a> | <a href="http://studio.brightcove.com">The Studio</a>	</span>
+		<span class="footerRight"><a href="http://corp.brightcove.com/termsandconditions.cfm">Terms &amp; Conditions</a> | <a href="http://corp.brightcove.com/privacy.cfm">Privacy</a> | &copy;2007 Brightcove, Inc.</span>
+	</div>
+</div>
+				
+		</div>
+		<!-- SiteCatalyst code version: H.7.
+		Copyright 1997-2006 Omniture, Inc. More info available at
+		http://www.omniture.com -->
+		<script language="JavaScript" src="http://admin.brightcove.com/destination/js/s_code.js"></script>
+		<script language="JavaScript"><!--
+		/* You may give each page an identifying name, server, and channel on
+		the next lines. */
+		if(window.location.hostname.indexOf("brightcove")== -1){
+			s.prop11="brightcovedev"
+		}
+    
+		s.prop1="marijuana channel(276024046)"            
+      
+		s.pageName=document.body.id+": Online Broadcasting Service(27638673): marijuana channel(276024046)";
+		s.channel="Online Broadcasting Service"
+		s.prop4="Online Broadcasting Service(27638673)"
+    
+		s.server=window.location.hostname
+		s.pageType=""
+		s.prop2=""
+		s.prop3=""
+		
+		s.prop5=""
+		/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+		var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+		<script language="JavaScript"><!--
+		if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+		//--></script><noscript><img
+		src="http://brightcoveactionsource.112.2O7.net/b/ss/brightcoveactionsource/1/H.7--NS/0"
+		height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
+		<!-- End SiteCatalyst code version: H.7. -->
+		
+		
+		<!-- Start Quantcast tag -->
+			<script type="text/javascript" src="http://quantserve.com/quant.js"></script>
+			<script type="text/javascript">
+			_qacct="p-81oWBo0_66b4w";quantserve();</script>
+			<noscript>
+			<img src="http://quantserve.com/pixel/p-81oWBo0_66b4w.gif" style="display: none" height="1" width="1"></noscript>
+		<!-- End Quantcast tag -->	
+		
+	</body>
+
+
+	
+</html>

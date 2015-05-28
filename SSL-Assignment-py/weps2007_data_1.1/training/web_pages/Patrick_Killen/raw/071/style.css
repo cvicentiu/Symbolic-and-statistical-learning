@@ -1,0 +1,562 @@
+/*  
+Theme Name: Nevadablogs
+Theme URI: http://wordpress.org/
+Description: Nevadablogs.net theme
+Version: 1
+Author: Dane Carlson
+Author URI: http://www.carlsoncarlson.com/dane/
+
+
+*/
+html, body { padding: 0; margin: 0; }
+body {
+	font: normal 12px/1.5em "Lucida Grande", "Verdana", sans-serif;
+	background: #D4E8F2 ;
+	color: #333; }
+	
+#content {
+	width: 800px;
+	border-right: 10px solid #1a1a1a;
+	border-left: 10px solid #1a1a1a;
+	background: #fff;
+	padding: 0 10px;
+	margin: 0 auto; }
+	
+
+	
+#maincontent {
+	float: left;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-left: 10px;
+	_margin-left: 5px;
+	width: 500px; }
+
+
+	
+	#maincontent .nextprevious {
+		display: none;
+		text-align: center;
+		font: normal 10px "Lucida Grande", "Verdana", sans-serif;
+		color: #777; }
+		
+		.nextprevious a {
+			text-decoration: none;
+			font-weight: bold; 
+			color: #777; }
+	
+			
+	#maincontent .blogpost {
+		padding-bottom: 20px; }
+			
+			
+	
+#sidebar {
+	float: right;
+	padding-top: 15px;
+	margin-right: 10px;
+	padding-bottom: 15px;
+	_margin-right: 5px;
+	width: 250px; }
+	
+	
+
+	
+#footer {
+	padding: 7px 10px 7px 20px;
+	margin: 0 -10px;
+	clear: both;
+	font: normal 10px "Lucida Grande", "Verdana", sans-serif;
+	color: #444;
+	background: #f3f3f3; }
+	
+#topnav {
+	font-size: 13px;
+	height: 2.4em;
+	padding: 0;
+	margin: 0 auto; }
+
+	#topnav #mainnav { /* Left side with tier 1 navigation */
+		float: left;
+		width: 380px;
+		font-size: 13px;
+		height: 2.2em; }
+
+	#topnav #subnav { /* Right side tier 2 navigation */
+		float: right;
+		text-align: right;
+		width: 420px;
+		font-size: 13px;
+		height: 2.2em; }
+		
+		
+#masthead {
+	height: 78px;
+	padding: 0;
+	margin: 0;
+	border-top: 1px solid #fff;
+	position: relative; }
+	
+	body#winnemuccablog #masthead { border-bottom: 5px solid #d4e8f2; }
+	
+	#masthead #dropdown {
+		position: absolute;
+		font: normal 10px "Lucida Grande", "Verdana", sans-serif;
+		color: #94d49c;
+		top: 7px; right: 7px; }
+		
+		#dropdown select {
+			font-size: 10px; }
+			
+		#dropdown a img { border: 0 !important; margin-bottom: -4px !important; margin-left: -7px; }
+	
+	body#winnemuccablog #masthead { background: transparent url(images/nevadablogs.gif) top left no-repeat; }
+	
+		
+	
+	
+/* Headings H1-H6 */
+h1 {
+	padding: 0;
+	margin: 0;
+	width: 78px;
+	height: 78px;
+	font-size: 8px;
+	text-indent: -9000px;
+	position: absolute;
+	top: 0; left: 0; }
+	
+	h1 a {
+		display: block;
+		width: 78px;
+		height: 78px;
+		text-decoration: none; overflow: hidden; -moz-outline-style: none; }
+
+h2 { }
+
+	#masthead h2 {
+		color: #cdecd1;
+		font: bold 14px "Trebuchet MS", "Tahoma", sans-serif;
+		padding: 0;
+		margin: 0;
+		position: absolute;
+		top: 47px;
+		left: 20px; }
+		
+		#masthead h2 em {
+			color: #7cc285;
+			font-weight: normal;
+			font-style: normal; }
+
+		#masthead h2 a {
+			font-weight: normal;
+			color: #fff;
+			text-decoration: underline; }
+					
+							
+	#sidebar .blogroll h2, #sidebar .categorylist h2 {
+		color: #999;
+		font: bold 10px "Lucida Grande", "Verdana", sans-serif;
+		padding: 0 0 3px 0;
+		border-bottom: 1px dotted #ccc;
+		margin: 0; }
+		
+	#sidebar .blogroll h2 { padding-top: 25px !important; }
+		
+		.blogroll h2 strong, .categorylist h2 strong {
+			font: bold 16px "Trebuchet MS", "Tahoma", sans-serif;
+			display: block;
+			color: #333;
+			padding-top: 2px; }
+			
+		#sidebar .categorylist h2 {
+			padding-top: 25px; }
+			
+		
+h3 { }
+
+
+	.blogpost h3 {
+		padding: 0 0 1px 0;
+		margin: 0;
+		font: bold 16px/1.3em "Trebuchet MS", "Tahoma", sans-serif;
+		color: #000;
+	 }
+		
+		.blogpost h3 a {
+			color: #b30000;
+			text-decoration: none; }
+			
+			.blogpost h3 a:hover {
+				color: #650000;
+				text-decoration: underline; }
+							
+	body.comm_featured .blogpost h3, body.comm_notes .blogpost h3,
+	body#winnemuccablog .blogpost h3 {
+		font-size: 16px !important;
+		line-height: 1.2em !important;
+		margin: 0 !important;
+		padding-bottom: 4px !important; }
+		
+	#postanote form h3 {
+		color: #d5e5f8;
+		font: bold 10px "Trebuchet MS", "Tahoma", sans-serif;
+		text-transform: uppercase;
+		padding: 0;
+		margin: 0 0 5px 0; }
+		
+		body.comm_featured #postanote form h3, body#winnemuccablog #postanote form h3 { color: #f8e1d5; }
+		
+		#postanote form h3 strong {
+			color: #fff;
+			display: block;
+			padding-bottom: 8px;
+			font: bold 14px "Trebuchet MS", "Tahoma", sans-serif;
+			text-transform: none; }
+			
+			.mainnotes form h3 strong { font-size: 18px !important; }
+
+			#postanote form h3 strong a {
+				color: #fff;
+				text-decoration: underline; }
+			
+			#postanote form h3 strong em {
+				display: block;
+				font: bold 12px/1.4em "Lucida Grande", "Verdana", sans-serif;
+				margin-top: 5px;
+				padding: 0 5px 5px 0;
+				margin: 5px 0 10px 0;
+				border-bottom: 1px dotted #79a6df;
+				color: #fff; }
+				
+	body#winnemuccablog .blogpost h3 a {
+		color: #0D324F !important; }
+		
+
+h4 { }
+
+	.blogpost h4 {
+		padding: 0 0 3px 0;
+		margin: 0 0 3px 0;
+		color: #555;
+		font: normal 12px "Trebuchet MS", "Tahoma", sans-serif; 
+		}
+		
+					
+		.blogpost h4  {
+			color: #333; }
+			
+			.blogpost h4 strong img {
+				margin-left: 4px;
+				margin-right: 4px;
+				width: 16px;
+				height: 16px;
+				_display: none;
+				margin-bottom: -3px; }
+				
+			
+			.blogpost h4 a {
+				color: #0663d5;
+				padding: 0;
+				background: #fff;
+				font-weight: bold;
+				text-decoration: none; }
+				
+				.blogpost h4 a:hover {
+					text-decoration: underline;
+					color: #002c63; }
+					
+		
+		
+h5 { }
+
+	.eachcomment h5 {
+		padding: 0 0 2px 0;
+		margin: 0;
+		font: bold 14px "Trebuchet MS", "Tahoma", sans-serif;
+		color: #000; }
+		
+		.eachcomment h5 a {
+			color: #f00;
+			text-decoration: none; }
+			
+			.eachcomment h5 a:hover {
+				color: #820000;
+				text-decoration: underline; }
+
+h6 { }
+
+	.eachcomment h6 {
+		padding: 0 0 8px 0;
+		margin: 0;
+		font: bold 10px "Lucida Grande", "Verdana", sans-serif;
+		color: #888; }
+		
+		.eachcomment h6 a {
+			color: #888;
+			text-decoration: underline; }
+			
+			.eachcomment h6 a:hover {
+				color: #000;
+				text-decoration: underline; }
+
+
+
+
+
+
+/* Paragraph and Link Styles */
+p { }
+
+								
+	.blogpost .entrycontent p {
+		padding-bottom: 20px;
+		margin: 0; }
+		
+		
+	
+			
+	.blogpost .entrycontent code {
+		font-family: "Courier New", "Courier", monospace;
+		color: #187161; }
+		
+	.blogpost .entrycontent blockquote {
+		}
+				
+	.communitydescription p {
+		padding: 0 0 25px 0;
+		margin: 0;
+		font: normal 12px/1.5em "Lucida Grande", "Verdana", sans-serif;
+		color: #333; }
+		
+		.communitydescription p a {
+			text-decoration: none;
+			font-weight: bold;
+			color: #0663d5; }
+			
+			.communitydescription p a:hover {
+				color: #002c63;
+				text-decoration: underline; }
+	
+	.eachcomment p {
+		padding-left: 41px;
+		padding-bottom: 1.6em;
+		color: #333;
+		margin: 0; }
+		
+		.eachcomment p a {
+			text-decoration: underline;
+			font-weight: bold;
+			color: #333; }
+			
+			.eachcomment p a:hover {
+				color: #000;
+				text-decoration: underline; }
+
+	#postanote p {
+		color: #fff;
+		padding: 0 0 10px 0;
+		margin: 0;
+		font: normal 12px/1.5em "Lucida Grande", "Verdana", sans-serif; }
+
+		#postanote p a {
+			color: #fff;
+			text-decoration: underline; }
+	
+	
+	
+/* Lists and Navigation */
+#mainnav ul, #subnav ul {
+	display: block;
+	font-size: 14px;
+	height: 2.2em;
+	padding: 0;
+	margin: 0 0 0 11px;
+	list-style: none; }
+	
+	#mainnav ul li {
+		display: inline;
+		padding: 0 9px 0 0;
+		font: bold 14px/2.3em "Trebuchet MS", "Tahoma", "Verdana", sans-serif; }
+		
+		#mainnav ul li a {
+			color: #000;
+			text-decoration: none; }
+			
+		#mainnav ul li a:hover {
+			color: #da0000;
+			text-decoration: underline; }
+			
+		body.home #mainnav ul li.home a,
+		body#comm_ #mainnav ul li.browse a, body.communities #mainnav ul li.browse a,
+		body#comm_featured #mainnav ul li.featured a, body#winnemuccablog #mainnav ul li.weblog a,
+		body.submit #mainnav ul li.submit a, body.notes #mainnav ul li.notes a {
+			color: #da0000;
+			font-weight: bold;
+			text-decoration: underline; }
+			
+		#mainnav ul li a:active { color: #890000 !important; }
+			
+#subnav ul {
+	margin: 0 12px 0 0; }
+
+	#subnav ul li {
+		display: inline;
+		padding: 0;
+		color: #aaa;
+		font: normal 12px/2.6em "Lucida Grande", "Verdana", sans-serif; }
+		
+		#subnav ul li a {
+			color: #666;
+			font-weight: bold;
+			text-decoration: none; }
+			
+		#subnav ul li a:hover {
+			color: #f00;
+			text-decoration: underline; }
+			
+		#subnav ul li a:active { color: #890000 !important; }
+		
+.blogroll ul { /* Member list on sides of individual community pages */
+	display: block;
+	list-style: none;
+	padding: 5px 5px 0 0;
+	margin: 0; }
+
+	.blogroll { padding-bottom: 20px; }
+
+	.blogroll ul.scrollmembers {
+		height: 315px !important;
+		overflow: auto !important; }
+	
+	body.comm_featured .blogroll ul, body.comm_notes .blogroll ul {
+		height: 264px;
+		margin-bottom: 15px; }
+
+	.blogroll ul li {
+		display: block;
+		padding: 0;
+		height: 2em;
+		margin: 0 0 2px 0;
+		font: bold 12px/2em "Lucida Grande", "Verdana", sans-serif;
+		color: #555; }
+		
+		.blogroll ul li.other {
+			/* background: #f6f6f6; */ }
+
+		.blogroll ul li em {
+			font-style: normal;
+			color: #aaa;
+			font-weight: normal; }
+
+		.blogroll ul li a {
+			color: #333;
+			text-decoration: none; }
+
+		.blogroll ul li a:hover {
+			color: #da0000;
+			text-decoration: underline;
+			background: #fff; }
+
+		.blogroll ul li img {
+			height: 16px;
+			width: 16px;
+			float: left;
+			_display: none;
+			border: 2px solid #fff;
+			padding: 0;
+			margin: 2px 5px 2px 0; }
+			
+				
+.categorylist ul {
+	list-style: none;
+	padding: 9px 0 0 0;
+	margin: 0 0 0 10px; }
+	
+	.categorylist ul li {
+		font: normal 12px "Lucida Grande", "Verdana", sans-serif;
+		color: #888;
+		padding: 0 0 0 12px;
+		margin: 0 0 6px 0; }
+		
+		.categorylist ul li a {
+			color: #333;
+			font-weight: bold;
+			text-decoration: none; }
+			
+			.categorylist ul li a:hover {
+				color: #f00;
+				text-decoration: underline; }
+								
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#flickr_badge_uber_wrapper {
+	text-align:center; 
+	width:150px;
+}
+#flickr_badge_wrapper {
+	padding:10px 0 10px 0;
+}
+.flickr_badge_image {
+	margin:0 10px 10px 0px
+}
+.flickr_badge_image img {
+	border: 1px solid black !important;
+}
+#flickr_badge_source {
+	text-align:left; margin:0 10px 0 0px;
+}
+#flickr_badge_icon {
+	float:left; margin-right:5px;
+}
+#flickr_www {
+	display:block; 
+	padding:0 10px 0 00px !important; 
+	font: 11px Arial, Helvetica, sans-serif !important; 
+	color: #3993ff !important;
+}
+#flickr_badge_uber_wrapper a:hover,
+#flickr_badge_uber_wrapper a:link,
+#flickr_badge_uber_wrapper a:active,
+#flickr_badge_uber_wrapper a:visited {
+	text-decoration:none !important; 
+	background:inherit !important;
+	color: #000000;
+}
+#flickr_badge_wrapper {}
+#flickr_badge_source {
+	padding:0 !important; 
+	font: 11px Arial, Helvetica, sans-serif !important; 
+	color: #000000 !important;
+}
+
+#flickrimg {
+	width: 400px; 
+	height: 300px; 
+	background-position: middle middle;
+	margin: 5px 15px 0 0;
+	border: 10px solid #CCCCCC;
+	}
+
+img.thumb {	
+	float: right;
+	margin-left: 12px;
+	margin-bottom: 6px;
+	margin-top: .5em;
+	padding: 5px;
+	}

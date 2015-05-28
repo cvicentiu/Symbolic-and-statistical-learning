@@ -1,0 +1,225 @@
+
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<title>Little Endian vs. Big Endian</title>
+
+<SCRIPT LANGUAGE=javascript>
+<!--
+
+var doPop = false;
+var POPURL = "Why.htm"
+
+function found(s, sub) { return (s.indexOf(sub) > -1); }
+
+
+function getMidnight() 
+{
+
+	var now = new Date();
+	var year = 1900 + now.getYear();
+	var month = now.getMonth();
+	var day = now.getDate();
+	var today = new Date(year, month, day, 0, 0, 0);
+	var oneDay = 24 * 60 * 60 * 1000;
+	var tomorrow = new Date();
+	tomorrow.setTime(today.getTime() + oneDay);
+	return tomorrow;
+}
+
+
+function setup() 
+{
+
+	if (doPop) 
+	{
+		var c = document.cookie;
+		if (found(c, "POP_ADx") || found(c, "NEVER")) 
+		{
+			return;
+		}
+
+		var expDate = getMidnight();
+		document.cookie = "popup=POP_AD;path=/;expires=" + expDate.toGMTString();
+
+		var w = window.open(POPURL, "why", "height=700,width=450,resizable=yes,scrollbars=yes");
+	}
+}
+
+//-->
+</SCRIPT>
+
+<meta name="Microsoft Theme" content="blueprnt 011">
+</head>
+
+<body onLoad="setup()" background="blutextb.gif" bgcolor="#FFFFFF" text="#003399" link="#3366FF" vlink="#9900FF" alink="#000066"><!--mstheme--><font face="century gothic,arial,helvetica">
+
+<p align="center">
+<img src="endian.asp_cmp_blueprnt010_bnr.gif" width="600" height="60" border="0" alt="Little Endian vs. Big Endian"></p>
+
+<p align="center">
+<script language="JavaScript"><!--
+MSFPhover = 
+  (((navigator.appName == "Netscape") && 
+  (parseInt(navigator.appVersion) >= 3 )) || 
+  ((navigator.appName == "Microsoft Internet Explorer") && 
+  (parseInt(navigator.appVersion) >= 4 ))); 
+function MSFPpreload(img) 
+{
+  var a=new Image(); a.src=img; return a; 
+}
+// --></script><script language="JavaScript"><!--
+if(MSFPhover) { MSFPnav1n=MSFPpreload("../_derived/back_cmp_blueprnt010_back.gif"); MSFPnav1h=MSFPpreload("../_derived/back_cmp_blueprnt010_back_a.gif"); }
+// --></script><a href="http://www.noveltheory.com/techpapers/dialog_units.htm" language="JavaScript" onmouseover="if(MSFPhover) document['MSFPnav1'].src=MSFPnav1h.src" onmouseout="if(MSFPhover) document['MSFPnav1'].src=MSFPnav1n.src"><img src="back_cmp_blueprnt010_back.gif" width="100" height="20" border="0" alt="Back" align="middle" name="MSFPnav1"></a> <script language="JavaScript"><!--
+if(MSFPhover) { MSFPnav2n=MSFPpreload("../_derived/home_cmp_blueprnt010_home.gif"); MSFPnav2h=MSFPpreload("../_derived/home_cmp_blueprnt010_home_a.gif"); }
+// --></script><a href="http://www.noveltheory.com/" language="JavaScript" onmouseover="if(MSFPhover) document['MSFPnav2'].src=MSFPnav2h.src" onmouseout="if(MSFPhover) document['MSFPnav2'].src=MSFPnav2n.src"><img src="home_cmp_blueprnt010_home.gif" width="100" height="20" border="0" alt="Home" align="middle" name="MSFPnav2"></a> <script language="JavaScript"><!--
+if(MSFPhover) { MSFPnav3n=MSFPpreload("../_derived/up_cmp_blueprnt010_up.gif"); MSFPnav3h=MSFPpreload("../_derived/up_cmp_blueprnt010_up_a.gif"); }
+// --></script><a href="http://www.noveltheory.com/techpapers/default.asp" language="JavaScript" onmouseover="if(MSFPhover) document['MSFPnav3'].src=MSFPnav3h.src" onmouseout="if(MSFPhover) document['MSFPnav3'].src=MSFPnav3n.src"><img src="up_cmp_blueprnt010_up.gif" width="100" height="20" border="0" alt="Up" align="middle" name="MSFPnav3"></a> <script language="JavaScript"><!--
+if(MSFPhover) { MSFPnav4n=MSFPpreload("../_derived/next_cmp_blueprnt010_next.gif"); MSFPnav4h=MSFPpreload("../_derived/next_cmp_blueprnt010_next_a.gif"); }
+// --></script><a href="http://www.noveltheory.com/techpapers/dnlog.htm" language="JavaScript" onmouseover="if(MSFPhover) document['MSFPnav4'].src=MSFPnav4h.src" onmouseout="if(MSFPhover) document['MSFPnav4'].src=MSFPnav4n.src"><img src="next_cmp_blueprnt010_next.gif" width="100" height="20" border="0" alt="Next" align="middle" name="MSFPnav4"></a></p>
+
+<p><font size="3"><em>[Note: This was originally written for &quot;FYI&quot;, the internal
+newsletter for the worldwide software engineering departments of Dendrite International]</em></font></p>
+
+<p><font size="3">Usually, the first thing a programmer who is used to larger machines
+says when encountering a Intel-based system is, &quot;Why do they store their numbers
+backwards?&quot; The answer is, of course, that they don&#146;t. The technical phrasing of
+the question is &quot;Why does Intel uses &#145;Little Endian&#146; addressing as supposed
+to &#145;Big Endian&#146; ?&quot;, which is somewhat less judgmental on which is the
+&quot;correct&quot; way of doing it. For good reason&#151;there are strong arguments that
+Little Endian is the &quot;logical&quot; way to do it. </font></p>
+
+<p><font size="3">Computer memory is a rather nebulous thing.&nbsp; How can you say that one
+byte is to the &quot;left&quot; or the &quot;right&quot; of another byte in memory. You
+can point to a hex dump, but that&#146;s merely one particular graphic representation of
+the computer memory. And it&#146;s not the only one, nor is it necessarily the
+&quot;best&quot; or &quot;correct&quot; one. </font></p>
+
+<p><font size="3">Consider for a moment how we number the bits in a byte. Most sensible
+programmers would number the rightmost bit &quot;0&quot;, the bit to the left of that
+&quot;1&quot;, the next &quot;2&quot; and so on, with each label corresponding to the
+power of two it represents. (Note: In IBM 370 assembler, bits are numbered 1 to 32, left
+to right, which is why I started that last sentence &quot;Most <i>sensible </i>programmers...
+&quot;)</font></p>
+
+<p><font size="3">So, let us ponder a number made up of just one bit&#151;that bit is
+placed in address 0. If we wished to expand it to two bits, the original bit stays where
+it is at address 0, and the new bit is added to the left, at address 1. You will notice
+that we can make this number any size, simply by adding digits to the left. </font></p>
+
+<p><font size="3">Now, we extend this idea to bytes. A number made up of just one byte
+would have that byte placed at address 0. </font></p>
+
+<!--mstheme--></font><pre><font size="3" face="Courier New"><b>      0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+0000 21 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</b></font></pre><!--mstheme--><font face="century gothic,arial,helvetica">
+
+<p><font size="3">But now, how do we expand this number to two bytes? We have two options
+here. We could allow it to grow towards the right - the Intel (little endian form).</font></p>
+
+<!--mstheme--></font><pre><font size="3" face="Courier New"><b>      0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+0000 21 43 00 00 00 00 00 00 00 00 00 00 00 00 00 00</b></font></pre><!--mstheme--><font face="century gothic,arial,helvetica">
+
+<p><font size="3">This puts the numbers &quot;backwards&quot;, but allows us to extend the
+size of number to the limits of memory without actually changing it&#146;s values (i.e.
+&quot;21 43&quot;, &quot;21 43 00&quot;, and &quot;21 43 00 00&quot; are all the same
+number).</font></p>
+
+<p><font size="3">Alternately, we could slide the first byte to the right, changing
+it&#146;s address, and then extend the number toward the left (the big endian form)</font></p>
+
+<!--mstheme--></font><pre><font size="3" face="Courier New"><b>      0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F
+0000 43 21 00 00 00 00 00 00 00 00 00 00 00 00 00 00</b></font></pre><!--mstheme--><font face="century gothic,arial,helvetica">
+
+<p><font size="3">This keeps the digits in the correct order, but forces a definite size
+into the number (i.e. &quot;43 21&quot;, &quot;43 21 00&quot;, and &quot;43 21 00 00&quot;
+refer to three different values).</font></p>
+
+<p><font size="3">Neither method works the same as it did with bits. The problem is,
+basically, that we don&#146;t address bytes the same way as we address bits (left-to-right
+vs. right-to-left). However, there&#146;s nothing really forcing us to number bytes from
+left to right. If we wanted to, we could number them right to left. If we were to do so,
+the above exercise takes on a whole new look:</font></p>
+
+<!--mstheme--></font><pre><font size="3" face="Courier New"><b>      F  E  D  C  B  A  9  8  7  6  5  4  3  2  1  0
+0000 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 21</b></font></pre><!--mstheme--><font face="century gothic,arial,helvetica">
+
+<p><font size="3">grows to become either (Little Endian):</font></p>
+
+<!--mstheme--></font><pre><font size="3" face="Courier New"><b>      F  E  D  C  B  A  9  8  7  6  5  4  3  2  1  0
+0000 00 00 00 00 00 00 00 00 00 00 00 00 00 00 43 21</b></font></pre><!--mstheme--><font face="century gothic,arial,helvetica">
+
+<p><font size="3">or (Big Endian)</font></p>
+
+<!--mstheme--></font><pre><font size="3" face="Courier New"><b>      F  E  D  C  B  A  9  8  7  6  5  4  3  2  1  0
+0000 00 00 00 00 00 00 00 00 00 00 00 00 00 00 21 43</b></font></pre><!--mstheme--><font face="century gothic,arial,helvetica">
+
+<p><font size="3">Suddenly, the little endian version not only looks correct, but also
+reactions correctly, as it can grow to the left without affecting it&#146;s existing
+bytes. And, just as suddenly, the big endian method turns onto a bizarre rogue whose byte
+ordering doesn&#146;t follow <i>any</i> of the &quot;rules&quot;.</font></p>
+
+<p><font size="3">A few months ago, a problem arose as we converted the host from a 32-bit
+to 64-bit machine. The original machines&#151;RS/6000s were big endian machine, while the
+new systems, DEC Alphas, used little endian. The problem was partly caused by the
+difference in word size, but the fact that the old machines had their numbers
+&quot;backwards&quot; was involved. The example given in the Dec. 93 FYI was of the number
+3781 which the IBMs wanted represented as &quot;00 00 0E C6&quot;, but which the Alpha
+represented as &quot;C6 0E 00 00 00 00 00 00&quot;. Had the old machines used the little
+endian method, either machine could have read it&#146;s choice of either the first 32 bits
+or the entire 64 bits of a single file, and the same number would have been yielded.</font></p>
+
+<p><font size="3">So, why do most hex listing of memory display the numbers left to
+right?&#151;Habit mostly. English is read left to right, so that&#146;s the natural way
+you&#146;d lay out a listing if you were writing such a utility. (Perhaps one of our
+readers whose native language is written in a different direction could confirm or deny
+that nature would lead them to design it differently). This is an important consideration
+since most hex dump have an ASCII (or EBCDIC) representation of the data right next to
+them, and that has it be printed right to left if it is to be readable, but that should
+have no bearing on what is the &quot;proper&quot; way to present purely numeric data.</font></p>
+
+<!--msthemeseparator--><p align="center"><img src="bluhorsa.gif" width="600" height="10"></p>
+<!-- Begin Nedstat Basic code -->
+<!-- Title: Little Endian vs. Big Endian -->
+<!-- URL: http://www.noveltheory.com/techpapers/endian.asp -->
+<script language='JavaScript' src="http://m1.nedstatbasic.net/basic.js">
+</script>
+<script language="JavaScript">
+<!--
+  nedstatbasic("AA2BpwEUwpQBInUimxw99/jF3+uQ", 0);
+// -->
+</script>
+<noscript>
+<a target=_blank href="http://v1.nedstatbasic.net/stats?AA2BpwEUwpQBInUimxw99/jF3+uQ"><img
+src="http://m1.nedstatbasic.net/n?id=AA2BpwEUwpQBInUimxw99/jF3+uQ"
+border=0 nosave width=18 height=18></a>
+</noscript>
+<!-- End Nedstat Basic code -->
+
+
+<p><font size="4">Copyright © 1994, James M. Curran</font></p>
+
+<p><font size="4">&nbsp;<script language="JavaScript"><!--
+if(MSFPhover) { MSFPnav5n=MSFPpreload("../_derived/back_cmp_blueprnt010_back.gif"); MSFPnav5h=MSFPpreload("../_derived/back_cmp_blueprnt010_back_a.gif"); }
+// --></script><a href="http://www.noveltheory.com/techpapers/dialog_units.htm" language="JavaScript" onmouseover="if(MSFPhover) document['MSFPnav5'].src=MSFPnav5h.src" onmouseout="if(MSFPhover) document['MSFPnav5'].src=MSFPnav5n.src"><img src="back_cmp_blueprnt010_back.gif" width="100" height="20" border="0" alt="Back" align="middle" name="MSFPnav5"></a> <script language="JavaScript"><!--
+if(MSFPhover) { MSFPnav6n=MSFPpreload("../_derived/home_cmp_blueprnt010_home.gif"); MSFPnav6h=MSFPpreload("../_derived/home_cmp_blueprnt010_home_a.gif"); }
+// --></script><a href="http://www.noveltheory.com/" language="JavaScript" onmouseover="if(MSFPhover) document['MSFPnav6'].src=MSFPnav6h.src" onmouseout="if(MSFPhover) document['MSFPnav6'].src=MSFPnav6n.src"><img src="home_cmp_blueprnt010_home.gif" width="100" height="20" border="0" alt="Home" align="middle" name="MSFPnav6"></a> <script language="JavaScript"><!--
+if(MSFPhover) { MSFPnav7n=MSFPpreload("../_derived/up_cmp_blueprnt010_up.gif"); MSFPnav7h=MSFPpreload("../_derived/up_cmp_blueprnt010_up_a.gif"); }
+// --></script><a href="http://www.noveltheory.com/techpapers/default.asp" language="JavaScript" onmouseover="if(MSFPhover) document['MSFPnav7'].src=MSFPnav7h.src" onmouseout="if(MSFPhover) document['MSFPnav7'].src=MSFPnav7n.src"><img src="up_cmp_blueprnt010_up.gif" width="100" height="20" border="0" alt="Up" align="middle" name="MSFPnav7"></a> <script language="JavaScript"><!--
+if(MSFPhover) { MSFPnav8n=MSFPpreload("../_derived/next_cmp_blueprnt010_next.gif"); MSFPnav8h=MSFPpreload("../_derived/next_cmp_blueprnt010_next_a.gif"); }
+// --></script><a href="http://www.noveltheory.com/techpapers/dnlog.htm" language="JavaScript" onmouseover="if(MSFPhover) document['MSFPnav8'].src=MSFPnav8h.src" onmouseout="if(MSFPhover) document['MSFPnav8'].src=MSFPnav8n.src"><img src="next_cmp_blueprnt010_next.gif" width="100" height="20" border="0" alt="Next" align="middle" name="MSFPnav8"></a></font></p>
+
+<h5>Copyright © 1997 <a href="mailto:James@NovelTheory.com">James M. Curran </a>. <br>
+All rights reserved.<br>
+Revised: December 23, 2006.</h5>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-1066116-2";
+urchinTracker();
+</script>
+
+<!--mstheme--></font></body>
+</html>

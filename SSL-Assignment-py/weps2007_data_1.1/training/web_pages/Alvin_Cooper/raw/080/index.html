@@ -1,0 +1,667 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+
+
+<base href="" />
+
+
+<title>Avon Walk for Breast Cancer: </title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="Keywords" content=" " />
+<meta name="Description" content="" />
+
+
+
+
+<script type="text/javascript" src="utils.js"></script>
+<script type="text/javascript" src="list_component.js"></script>
+<script type="text/javascript" src="prototype.js"></script>
+<script type="text/javascript" src="CList.js"></script>
+<script type="text/javascript" src="CCallWrapper.js"></script>
+<script type="text/javascript" src="CSimpleObservable.js"></script>
+<script type="text/javascript" src="obs_comp.js"></script>
+
+
+<link href="UserGlobalStyle.css" rel="stylesheet" type="text/css" />
+
+<link href="FriendraiserUserStyle.css" rel="stylesheet" type="text/css" />
+
+<link href="CustomStyle_Hot.css" rel="stylesheet" type="text/css" />
+
+<link href="CustomStyle.css" rel="stylesheet" type="text/css" />
+
+<link href="CustomWysiwygStyle.css" rel="stylesheet" type="text/css" />
+
+
+
+<link rel="SHORTCUT ICON" href="PageServer%3Fpagename=page_not_found.1.html" type="image/x-icon" />
+
+
+
+<script type="text/javascript" src="user_wrapper.js"></script>
+
+
+<meta name="CnvHeaderVersion" content="v5.0" />
+
+
+<link href="2k6_CustomStyle.css" rel="stylesheet" type="text/css" />
+</head>
+<body marginheight="0" 
+marginwidth="0"
+
+style="background-color: #d8dce5;"
+
+
+
+
+
+
+
+
+>
+<span><a href="http://info.avonfoundation.org/site/#content" name="top" id="top" title="skip to content"></a></span>
+<TABLE cellSpacing=0 cellPadding=0 width=770 border=0 bgcolor=#ffffff><TBODY><TR><TD><TABLE cellSpacing=0 cellPadding=0 width="100%" border=0><TBODY><TR><TD rowSpan=2 class=leftNavContainer><IMG height=105 alt="" src="sp.gif" width=1 border=0 /><a href="http://walk.avonfoundation.org/site/PageServer?pagename=walk_home"><IMG height=105 alt="Avon Walk for Breast Cancer" src="avonwalk_logo.gif" width=180 border=0 /></a><IMG height=105 alt="" src="sp.gif" width=1 border=0 /></TD><TD vAlign=top align=right width="100%"><table border="0" cellpadding="0" cellspacing="0" align="right">
+	<tr valign="bottom">
+		<td><img src="signin.gif"  alt="Sign In:" /></td>
+	<form action="http://info.avonfoundation.org/site/UserLogin" id="lLogonForm" name="lLogonForm" method="post">
+		<td><input type="text" name="USERNAME" id="USERNAME" size="12" maxlength="60" title="User Name"
+			value="username" onfocus="this.value=''" style="color: #999;" /></td>
+		<td><img src="sp.gif" width="8" height="5" alt="" border="0" /></td>
+		<td><input type="password" name="Password" id="Password" size="12" maxlength="20" title="Password"
+			value="password" onfocus="this.value=''" style="color: #999;" /></td>
+		<td><input type="image" src="signinGo.gif" width="49" height="32" alt="Go"
+				name="login" id="login" value="Login" /><input type=hidden name=NEXTURL id=NEXTURL value="http://walk.avonfoundation.org/site/PageServer?pagename=walk_login_landing_2k7" /></td>
+		</form>
+	</tr>
+	<tr>
+		<td align="right" colspan="4" ><a href="http://info.avonfoundation.org/site/UserLogin?JServSessionIdr001=rklzlzge51.app28b?NEXTURL=PageServer%3Fpagename%3Dwalk_home"><img src="forgotPassword.gif"  alt="" border="0" /></a></td><td align="right" ><img src="sp.gif" width=57 height=1></td>
+	</tr>
+</table></TD></TR><TR><TD>
+<TABLE cellSpacing=0 cellPadding=0 border=0>
+<TBODY>
+<TR>
+<TD><A href="http://info.avonfoundation.org/site/PageServer?pagename=walk_2k7"><IMG height=15 alt=Walk src="nvtp_walk.gif" width=76 border=0 /></A></TD>
+<TD><A href="http://info.avonfoundation.org/site/PageServer?pagename=walk_crew_2k7"><IMG height=15 alt=Crew src="nvtp_crew.gif" width=81 border=0 /></A></TD>
+<TD><A href="http://info.avonfoundation.org/site/PageServer?pagename=walk_gift_2k7"><IMG height=15 alt=Donate src="nvtp_donate.gif" width=105 border=0 /></A></TD>
+<TD><A href="http://info.avonfoundation.org/site/PageServer?pagename=walk_volunteer_2k7"><IMG height=15 alt=volunteer src="nvtp_volunteer.gif" width=136 border=0 /></A></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE><TABLE cellSpacing=0 cellPadding=0 border=0><TBODY><TR><TD class=leftNavContainer><IMG height=1 alt="" src="sp.gif" width=1 border=0 /></TD><TD class=leftNavContainer><IMG height=1 alt="" src="sp.gif" width=179 border=0 /></TD><TD class=leftNavContainer><IMG height=1 alt="" src="sp.gif" width=1 border=0 /></TD><TD class=leftNavContainer><IMG height=1 alt="" src="sp.gif" width=1 border=0 /></TD><TD class=leftNavContainer><IMG height=1 alt="" src="sp.gif" width=1 border=0 /></TD><TD class=leftNavContainer><IMG height=1 alt="" src="sp.gif" width=1 border=0 /></TD></TR><TR><TD class=leftNavContainer><IMG height=1 alt="" src="sp.gif" width=1 border=0 /></TD><TD class=leftNavContainer vAlign=top><DIV class=leftNav><DIV class=findawalkPad><IMG alt="Find a Walk Near You" src="305433.gif" border=0 /></DIV>
+<FORM id=goCity style="DISPLAY: inline" name=goCity action="http://info.avonfoundation.org/site/PageServer" method=get><SELECT id=pagename style="WIDTH: 140px" onchange=this.form.submit() name=pagename><OPTION class=formList value=homepage selected>Select a walk...</OPTION>
+
+
+<OPTION class=formList value=wadc_home_2k7>Washington, D.C.</OPTION>
+
+<OPTION class=formList value=bost_home_2k7>Boston</OPTION>
+
+<OPTION class=formList value=chic_home_2k7>Chicago</OPTION>
+
+<OPTION class=formList value=denv_home_2k7>Denver</OPTION>
+
+<OPTION class=formList value=sanf_home_2k7>San Francisco</OPTION>
+
+<OPTION class=formList value=losa_home_2k7>Los Angeles</OPTION>
+
+<OPTION class=formList value=nwy_home_2k7>New York</OPTION>
+
+<OPTION class=formList value=char_home_2k7>Charlotte</OPTION>
+
+
+</SELECT></FORM></DIV><DIV class=leftNavContainer> <IMG height=3 alt="" src="sp.gif" width=1 border=0 /> 
+<DIV class=leftNavLinks><IMG height=11 alt="What's It Like To. . .?" src="hdr_whatsitlike.gif" width=140 /><BR /><IMG height=6 alt="" src="sp.gif" width=140 border=0 /><BR /><A href="http://www.avonwalk.org/site/PageServer?pagename=walk_whats_it_like_to_walk_2k7">Participate in a Walk</A><BR /><A href="http://www.avonwalk.org/site/PageServer?pagename=walk_train_2k7">Train for a Walk</A><BR /><A href="http://www.avonwalk.org/site/PageServer?pagename=walk_raise_money_2k7">Raise Money</A><BR /></DIV><IMG height=3 alt="" src="sp.gif" width=1 border=0 />  
+<DIV class=navLeft> <A class=leftNav href="http://info.avonfoundation.org/site/PageServer?pagename=Walk_login_landing_2k7">My Avon Walk</A>   <A class=leftNav href="http://info.avonfoundation.org/site/PageServer?pagename=walk_intro_meetings_2k7">Introduction Meetings</A>  <A class=leftNav href="http://www.avonwalk.org/cgi-bin/display_guestbook.cgi">Tribute Book</A>  <A class=leftNav href="http://info.avonfoundation.org/site/PageServer?pagename=walk_webx">Message Board</A>   <A class=leftNav href="http://info.avonfoundation.org/site/PageServer?pagename=walk_faq_2k7">FAQ</A>   <A class=leftNav href="http://info.avonfoundation.org/site/PageServer?pagename=walk_photo_album_2k7">Photo Album</A>  <A class=leftNav href="http://shop.avon.com/shop/product_list.asp?level1_id=300&amp;level2_id=380&amp;pdept_id=381&amp;cat_type=C" target=_blank>Avon Walk Shop</A> <A class=leftNav href="http://info.avonfoundation.org/site/PageServer?pagename=nws_main_2k7">Press Center</A>   <A class=leftNav href="http://info.avonfoundation.org/site/TellAFriend?JServSessionIdr001=rklzlzge51.app28b&page=http%3A%2F%2Finfo.avonfoundation.org%2Fsite%2FTR%3Fpg%3Dpersonal%26fr_id%3D1160%26px%3D2347351&type=26&id=1160">Tell a Friend</A>  </DIV><A href="http://info.avonfoundation.org/site/PageServer?pagename=walk_stories_2k7"><IMG height=94 alt="Walk Stories" src="AWBC_walkstoriesv2.jpg" width=180 border=0 /></A> 
+<P class=leftNavLinks><IMG height=31 alt="Walks Make A Difference" src="hdr_walksmakeadif.gif" width=104 border=0 /><BR /><IMG height=6 alt="" src="sp.gif" width=140 border=0 /><BR /><A href="http://info.avonfoundation.org/site/PageServer?pagename=walk_how_spent_2k7">How the Money is Spent</A><BR /><A href="http://info.avonfoundation.org/site/PageServer?pagename=walk_difference_2k7">Avon Walk Achievements</A></P>
+<DIV class=leftNavLinks><IMG height=5 alt="" src="sp.gif" width=1 border=0 /><A class=blueButton href="http://info.avonfoundation.org/site/PageServer?pagename=walk_bc_links_2k7">Breast Cancer Links</A><IMG height=5 alt="" src="sp.gif" width=1 border=0 /><BR /><A href="http://info.avonfoundation.org/site/PageServer?pagename=walk_cau_main_2k7"><IMG alt="Avon Foundation" src="529349.gif" border=0 /></A> </DIV>
+<DIV class=leftNavLinks><FONT style="FONT-SIZE: 80%">The Avon Foundation is a 501(c)3 Public Charity</FONT></DIV></DIV><P class=leftNavLinks></P></TD><TD class=leftNavContainer><IMG height=1 alt="" src="sp.gif" width=1 border=0 /></TD><TD class=content vAlign=top width="100%"><TABLE cellSpacing=0 cellpadding=10 width="100%" border=0><TBODY><TR><TD><A id=content title="return to top" href="http://info.avonfoundation.org/site/#top" name=content></A><!-- Warning and Broadcast Message --><!-- Application Content -->
+<div class="appArea">
+
+<p class="cstmTitle">Welcome to the Tskills & K-Lo Show!</p>
+
+
+<table width="100%" cellpadding="2" cellspacing="2" border="0">
+<tr>
+<td>
+<table cellpadding="2" cellspacing="2" border="0" class="cstmBack" align="left">
+
+
+
+<tr valign="top" class="cstmBack">
+
+
+<td align="center">
+
+<a class="cstmBtnText" href="https://secure2.convio.net/avon/site/Donation?ACTION=SHOW_DONATION_OPTIONS&CAMPAIGN_ID=1402&PROXY_ID=2347351&PROXY_TYPE=20&FR_ID=1160&JServSessionIdr001=rklzlzge51.app28b"><img src="1043.2008026061.orig.jpg" border="0"
+alt="Support Travis!" /></a>
+
+</td>
+
+
+
+
+</tr>
+
+
+<tr>
+
+<td align = "center">
+
+<a href="http://info.avonfoundation.org/site/TR?pg=team&fr_id=1160&team_id=18680&JServSessionIdr001=rklzlzge51.app28b">The Tskills &amp; K-lo Show team page</a>
+
+</td>
+
+</tr>
+
+
+
+
+<tr valign="middle">
+
+
+<td width="50%" align="center">
+
+<div class="addBorder" style="width: 155px; margin: 0px; padding: 0px; background-image: URL(../images/sp.gif);">
+<div class="controlArea">
+<p><strong>Turn the heat up!</strong></p>
+<p><img src="thermometer-101.gif" width="65" height="160"
+border="0" alt="100% of goal achieved." /></p>
+<p class="Smaller">
+
+Goal:&nbsp;$2,000.00<br />
+
+Achieved:&nbsp;$6,215.00
+</p>
+
+<p class="centered"><a href="https://secure2.convio.net/avon/site/Donation?ACTION=SHOW_DONATION_OPTIONS&CAMPAIGN_ID=1402&PROXY_ID=2347351&PROXY_TYPE=20&FR_ID=1160&JServSessionIdr001=rklzlzge51.app28b" title="Make a gift to support Turn the heat up!">Make a gift!</a></p>
+
+</div>
+</div>
+
+
+</td>
+<td width="50%" align="center">
+
+
+
+
+
+
+<script language="JavaScript" src="vertical_scroller.js" type="text/javascript"></script>
+<div class="addBorder" style="width: 156px;">
+<script language="JavaScript" type="text/javascript">
+<!--
+if (isNS(4) && !isNS(5)) {
+document.write("<table width=\"150\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"NSscrollArea\"><tr><td><p class=\"controlArea\"><strong>A-Listers only</strong></p></td></tr><tr><td>");
+document.write('<table width="100%" border="0" cellspacing="4" cellpadding="0" class="Backed"><tr valign="top"><td class="NSscrollingBack">');
+document.write('<ilayer name="vs1548f86scrollArea" width="150" height="160" visibility="show" clip="150,160">');
+} else {
+document.write("<div class=\"controlArea\" style=\"width: 146px\"><strong>A-Listers only</strong></div>");
+document.write('<div class="scrollingBack" style="height: 180px;">');
+document.write('<div id="vs1548f86scrollArea" class="scrollingAreaBox" style="height: 180px;">');
+}
+/* */
+writeDivOrLayer('vs1548f86.donor.0', '');
+/* */
+writeDivOrLayer('vs1548f86.donor.1', '');
+/* */
+writeDivOrLayer('vs1548f86.donor.2', '');
+/* */
+writeDivOrLayer('vs1548f86.donor.3', '');
+/* */
+writeDivOrLayer('vs1548f86.donor.4', '');
+
+//-->
+</script>
+<noscript>
+<p><strong>A-Listers only</strong></p>
+<form action="http://info.avonfoundation.org/site/#" name="dummyForm" id="dummyForm">
+<span class="NetscapeFix"><textarea cols="20" rows="15" name="manuallyScrollingText" id="manuallyScrollingText" readonly="readonly" wrap="off">Uncle Dan 
+
+----------
+Sue LeBlanc 
+
+----------
+Dennis Concreto LeBlanc 
+
+----------
+Mr. &amp; Mrs. Mugs 
+
+----------
+Anonymous 
+
+----------
+Kelly &amp; Sadie Cobb 
+
+----------
+E skizzy 
+
+----------
+Shawn &amp; Karen Maguire 
+
+----------
+Jack &amp; Carolyn Sloboda 
+
+----------
+Patrick 
+
+----------
+Count Dracula 
+
+----------
+Roxie &amp; Rich 
+
+----------
+Lisa C 
+
+----------
+Thom O'Dea 
+
+----------
+Sandy &amp; Jack Jones 
+
+----------
+Mike &amp; Maren Toohill 
+
+----------
+Greg &amp; Kristen Sloboda 
+
+----------
+Carey Overby 
+
+----------
+Brian &amp; Maryann Kane 
+
+----------
+John, Genny, Shaye, &amp; Cole! 
+
+----------
+Margaret 
+
+----------
+Danya, Curt and Charlotte 
+
+----------
+June and Paul 
+
+----------
+Anonymous 
+
+----------
+Megan M. 
+
+----------
+Tom and Vi 
+
+----------
+Corey Pierce 
+
+----------
+Kearns and Pauley Co. 
+
+----------
+Pammi 
+
+----------
+DURK-MAN-DO 
+
+----------
+Julianne and Alvin Cooper 
+
+----------
+Jimmy + Eileen McGrath 
+
+----------
+Kristie Loftus 
+
+----------
+Jimmy McGhee 
+
+----------
+Cindy &amp; Don 
+
+----------
+Shane Clarke 
+
+----------
+Donna DuHadway 
+
+----------
+Brie Cuppi 
+
+----------
+Jeanne Borawski 
+
+----------
+Anita Harding 
+
+----------
+Melissa O'Connor 
+
+----------
+Lorraine Freitas 
+
+----------
+Becky 
+
+----------
+Jeanne Kidder 
+
+----------
+T-skills 
+
+----------
+DJ Tanno 
+
+----------
+Anonymous 
+
+----------
+KATE FLEMING KNOWS KUNG FU 
+
+----------
+Mark Boyle 
+
+----------
+Rigoli 
+
+----------
+Janet Thompson 
+
+----------
+Kathryn 
+
+----------
+Sue Kett 
+
+----------
+</textarea></span>
+</form>
+</noscript>
+<script language="JavaScript" type="text/javascript">
+<!--
+if (isNS(4) && !isNS(5)) {
+document.write("</ilayer>");
+document.write('</td></tr><tr><td align="center">');
+} else {
+document.write("</div>"); // close vs[A4]scrollArea
+document.write("</div>"); // close scrollingBack
+document.write('<div class="controlArea" style="width: 146px">');
+}
+// everybody that runs javascript gets the controls
+// start_link_title and stop_link_title use A5
+document.write('<p class="Smaller">[<a title="Stop scrolling the A-Listers only list." href="javascript:stopScroll(vs1548f86)">Stop</a>] [<a title="Start scrolling the A-Listers only list." href="javascript:startScroll(vs1548f86)">Start</a>]</p>');
+if (document.layers) {
+document.write('</td></tr></table></td></tr></table>');
+}
+else {
+document.write("</div>"); // close controlArea
+}
+//-->
+</script>
+</div> 
+<script language="JavaScript" type="text/javascript">
+<!--
+/* Global Variables */
+vs1548f86 = new VSGlobals("vs1548f86");
+/*
+This is down here to ensure that all the document
+objects have been rendered before we begin
+referencing them in our code.
+*/
+// load the text assignments here
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">Uncle Dan<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">Sue LeBlanc<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">Dennis Concreto LeBlanc<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">Mr. &amp; Mrs. Mugs<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">Anonymous<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">Kelly &amp; Sadie Cobb<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">E skizzy<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">Shawn &amp; Karen Maguire<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">Jack &amp; Carolyn Sloboda<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">Patrick<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">Count Dracula<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">Roxie &amp; Rich<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">Lisa C<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">Thom O\'Dea<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">Sandy &amp; Jack Jones<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">Mike &amp; Maren Toohill<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">Greg &amp; Kristen Sloboda<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">Carey Overby<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">Brian &amp; Maryann Kane<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">John, Genny, Shaye, &amp; Cole!<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">Margaret<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">Danya, Curt and Charlotte<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">June and Paul<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">Anonymous<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">Megan M.<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">Tom and Vi<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">Corey Pierce<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">Kearns and Pauley Co.<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">Pammi<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">DURK-MAN-DO<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">Julianne and Alvin Cooper<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">Jimmy + Eileen McGrath<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">Kristie Loftus<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">Jimmy McGhee<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">Cindy &amp; Don<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">Shane Clarke<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">Donna DuHadway<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">Brie Cuppi<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">Jeanne Borawski<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">Anita Harding<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">Melissa O\'Connor<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">Lorraine Freitas<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">Becky<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">Jeanne Kidder<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">T-skills<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">DJ Tanno<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">Anonymous<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">KATE FLEMING KNOWS KUNG FU<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">Mark Boyle<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">Rigoli<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">Janet Thompson<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">Kathryn<br /></p>';
+/* */
+vs1548f86.sliderText[vs1548f86.sliderText.length] = '<p class="scrollingText">Sue Kett<br /></p>';
+
+// load the div names here
+/*
+TemplateName=VS_divArrayValue.tpt
+$Header: /home/cvs/cvsroot/site_data/001/00000001/template_sets/default/VScroll/VS_divArrayValue.tpt,v 1.5 2002/01/24 18:56:43 jeffm Exp $
+A0 = name of div area (must be unique to entire page)
+A1 = unique identifier of scrolling area
+*/
+vs1548f86.sliderBlocks[vs1548f86.sliderBlocks.length] = 'vs1548f86.donor.0';
+/*
+TemplateName=VS_divArrayValue.tpt
+$Header: /home/cvs/cvsroot/site_data/001/00000001/template_sets/default/VScroll/VS_divArrayValue.tpt,v 1.5 2002/01/24 18:56:43 jeffm Exp $
+A0 = name of div area (must be unique to entire page)
+A1 = unique identifier of scrolling area
+*/
+vs1548f86.sliderBlocks[vs1548f86.sliderBlocks.length] = 'vs1548f86.donor.1';
+/*
+TemplateName=VS_divArrayValue.tpt
+$Header: /home/cvs/cvsroot/site_data/001/00000001/template_sets/default/VScroll/VS_divArrayValue.tpt,v 1.5 2002/01/24 18:56:43 jeffm Exp $
+A0 = name of div area (must be unique to entire page)
+A1 = unique identifier of scrolling area
+*/
+vs1548f86.sliderBlocks[vs1548f86.sliderBlocks.length] = 'vs1548f86.donor.2';
+/*
+TemplateName=VS_divArrayValue.tpt
+$Header: /home/cvs/cvsroot/site_data/001/00000001/template_sets/default/VScroll/VS_divArrayValue.tpt,v 1.5 2002/01/24 18:56:43 jeffm Exp $
+A0 = name of div area (must be unique to entire page)
+A1 = unique identifier of scrolling area
+*/
+vs1548f86.sliderBlocks[vs1548f86.sliderBlocks.length] = 'vs1548f86.donor.3';
+/*
+TemplateName=VS_divArrayValue.tpt
+$Header: /home/cvs/cvsroot/site_data/001/00000001/template_sets/default/VScroll/VS_divArrayValue.tpt,v 1.5 2002/01/24 18:56:43 jeffm Exp $
+A0 = name of div area (must be unique to entire page)
+A1 = unique identifier of scrolling area
+*/
+vs1548f86.sliderBlocks[vs1548f86.sliderBlocks.length] = 'vs1548f86.donor.4';
+
+// start it up with a delay so NS4's rendering engine can catch up
+setTimeout("initScrolling(vs1548f86)", 400);
+//-->
+</script>
+
+
+
+</td>
+
+
+</tr>
+
+</table>
+
+<p class="cstmHeading">Stop Hugging Cancer</p>
+<p class="cstmText">We hate cancer. If you hate cancer too, you should donate some money. If you don't, you might as well give cancer a big hug. You don't want to hug cancer do you? Isn't it nicer to hug Moms, Aunts & Grandmas? The Avon foundation works very hard to help us all do just that. <br />
+<br />
+I am walking in honor of my mother pictured below with me and with the World Series Trophy.  She is a nice lady who keeps fighting and fighting cancer. It's not fair.  I believe with enough research, nice ladies like my mom won't have to revisit cancer. Eventually, noone will get it at all.<br />
+<br />
+If you are looking at this page, you have known me in some capacity over the years.  Maybe we worked together, went to school together, or maybe you are better acquainted with my mom.  Whatever the case; we could use your support.  I wouldn't ask if it wasn't important. Hug a Grandma, help fight cancer</p>
+
+
+</td>
+</tr>
+<tr>
+<td>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>
+
+<table align="left" class="cstmFrame" cellpadding="4">
+<tr>
+<td align="center">
+<p class="cstmFrame"><img src="1160.119133774.custom.jpg" border="0" align="center" /><br />
+We're talkin' to you!</p>
+</td>
+</tr>
+</table>
+
+
+<p class="cstmHeading">How To Help:</p>
+<p class="cstmText">You can make a donation to my fundraising campaign right here on the website by clicking on "Click here to Support Me." If you prefer to write a check, just contact me and I'll send you the information and form.<br />
+<br />
+We'll be walking 39 miles over the weekend of May 20-21 to raise money and awareness and support the fight against cancer.  We need $3800.00 by walk time, so open your wallets...and hearts.  <br />
+<br />
+Don't be a cancer-hugger.<br />
+ <br />
+ <br />
+<br />
+</p>
+
+
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>
+
+<table align="left" class="cstmFrame" cellpadding="4">
+<tr>
+<td align="center">
+<p class="cstmFrame"><img src="1160.1240228708.custom.jpg" border="0" align="center" /><br />
+Mama Skills</p>
+</td>
+</tr>
+</table>
+
+
+<p class="cstmHeading">Seriously...</p>
+<p class="cstmText">They have learned some things in the past 10 years that could have prevented the lady to the left from having cancer a few more times.  If only they knew the 1st time! Let's all do what we can to help them learn as much as they can.<br />
+<br />
+I'm not smart enough to cure cancer, but I can sure as Hell throw money and walking at it!</p>
+
+
+</td>
+</tr>
+</table>
+
+
+
+<P><SPAN style="FONT-SIZE: 8pt"><STRONG><SPAN style="FONT-WEIGHT: bold"><P><SPAN style="FONT-SIZE: 8pt"><FONT style="COLOR: #000000" color=#000000><STRONG>About the Avon Foundation and the Avon Walk for Breast Cancer<BR /></STRONG>The Avon Foundation, a 501(c)(3) public charity, was founded in 1955 to improve the lives of women and their families, and Avon philanthropic programs worldwide have raised and awarded more than $450 million.&nbsp; As it passes the half century milestone, the Avon Foundation brings its mission to life through two key areas: breast cancer and women's empowerment, especially the issue of domestic violence. The Avon Breast Cancer Crusade launched in 1992, and Avon breast cancer programs in some 50 countries support access to care and finding a cure for breast cancer, with a focus on the medically underserved. Funding is awarded to beneficiaries ranging from leading cancer centers to community-based breast health programs for awareness and education; screening and diagnosis; access to treatment; support services; and scientific research.&nbsp; Fundraising is through a variety of "pink ribbon" products, events, races and walks. The largest is the U.S. Avon Walk for Breast Cancer series, which in 2003-2005 attracted 33,000 participants and raised $100 million. For more information on the Avon Foundation visit <A href="http://www.avonfoundation.org/">http://www.avonfoundation.org/</A>.<BR /></FONT></P>
+<P><BR /></SPAN></P>
+<P><SPAN style="FONT-SIZE: 8pt"><STRONG><SPAN style="FONT-WEIGHT: bold"><FONT style="FONT-SIZE: 120%"><BR /><BR />
+<TABLE borderColor=#000000 cellSpacing=1 cellPadding=2 width="100%" align=default bgColor=#ffff99>
+<TBODY>
+<TR></TR>
+<TR>
+<TD>
+<P><STRONG>If you have any questions or inquiries, please contact </STRONG><A title="E-mail Webmaster" href="http://info.avonfoundation.org/site/PageServer?pagename=walk_contact_us"><FONT style="FONT-SIZE: 120%"><STRONG>Webmaster</STRONG></FONT></A><FONT style="FONT-SIZE: 120%" size=2><STRONG>.</STRONG></FONT></P></TD></TR></TBODY></TABLE></FONT></SPAN></STRONG></SPAN></P></P></SPAN></STRONG></SPAN>
+
+
+<P>If you think this page contains objectionable content, please <a href="http://info.avonfoundation.org/site/TR?pg=objcon&fr_id=1160&px=2347351&JServSessionIdr001=rklzlzge51.app28b">inform the system administrator</a>.</P>
+</div>
+</TD></TR></TBODY></TABLE></TD><TD class=leftNavContainer><IMG height=1 alt="" src="sp.gif" width=1 border=0 /></TD></TR><TR><TD class=leftNavContainer><IMG height=1 alt="" src="sp.gif" width=1 border=0 /></TD><TD class=leftNavContainer><IMG height=1 alt="" src="sp.gif" width=179 border=0 /></TD><TD class=leftNavContainer><IMG height=1 alt="" src="sp.gif" width=1 border=0 /></TD><TD><IMG height=1 alt="" src="sp.gif" width=1 border=0 /></TD></TR></TBODY></TABLE><DIV class=footer><TABLE cellSpacing=0 cellPadding=0 width="100%" border=0><TBODY><TR><TD><IMG height=97 alt="" src="sp.gif" width=1 border=0 /></TD><TD vAlign=top align=right><BR /><BR /><DIV class=footerspacing><A class=footerLinks href="http://www.avonwalk.org/">Home</A> <A href="http://info.avonfoundation.org/site/TR?pg=personal&amp;JServSessionIdr006=lajhlz1ev1.app27b&amp;fr_id=1160&amp;px=2347351&printer_friendly=1">Printer Friendly</A> <A class=footerLinks href="http://info.avonfoundation.org/site/PageServer?pagename=walk_faq_2k7">FAQ</A> <A class=footerLinks href="http://info.avonfoundation.org/site/PageServer?pagename=walk_privacypolicy_2k7">Privacy Policy</A> <A class=footerLinks href="http://info.avonfoundation.org/site/PageServer?pagename=walk_financial_disclosure_2k7">Financial Disclosure</A><BR /><A class=footerLinks href="http://info.avonfoundation.org/site/PageServer?pagename=walk_security_2k7">Security</A> <A class=footerLinks href="http://info.avonfoundation.org/site/PageServer?pagename=walk_jobs_2k7">Jobs</A> <A class=footerLinks href="http://info.avonfoundation.org/site/PageServer?pagename=walk_contactus_2k7">Contact Us</A> </DIV></TD></TR><TR><TD><IMG height=1 alt="" src="sp.gif" width=1 border=0 /></TD><TD><IMG height=1 alt="" src="sp.gif" width=769 border=0 /></TD></TR></TBODY></TABLE></DIV></TD><TD class=leftNavContainer><IMG height=1 alt="" src="sp.gif" width=1 border=0 /></td></TR></TBODY></TABLE>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-663716-1";
+urchinTracker();
+</script>
+
+</body>
+
+</html>

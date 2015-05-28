@@ -1,0 +1,72 @@
+/* taken from theme css */
+.tBlogHeaderBox { height:70px; background-image:url(../../../images/blogs/themes/_BobbyMcMahon/bg_blog_header.gif); background-position:top; background-repeat:no-repeat;} /* blog name bar */
+a.tBlogTitle, a:link.tBlogTitle, a:active.tBlogTitle, a:visited.tBlogTitle, a:hover.tBlogTitle  { font:bold 18px arial; color:#ffffff; text-decoration:none; } /* blog title */
+.tBlogUserName { font:normal 12px arial; color:#ffffff; text-decoration:none;} /* blog user name */
+div.tDefaultLinkTheme a, div.tDefaultLinkTheme a:link, div.tDefaultLinkTheme a:visited, div.tDefaultLinkTheme a:hover  { color:#F6612D; } /* default link style for post*/
+div.tDefaultLinkProfile a, div.tDefaultLinkProfile a:link, div.tDefaultLinkProfile a:visited, div.tDefaultLinkProfile a:hover  { color:#003F8C; } /* default link style for user profile*/
+
+/* container backgrounds */
+.tBackground { border:1px solid #ACACAC; background-color:#fff; background-image:url(../../../images/blogs/themes/_BobbyMcMahon/blog_bg.gif); background-position:top left; background-repeat:repeat-x;} /* main blog container background */
+.tBackgroundTabs { border-right:1px solid #ACACAC; border-left:1px solid #ACACAC; border-bottom:1px solid #ACACAC; background-color:#f0f0f0; } /* main blog container background used with tabs */
+.tBackgroundTabsView { border-right:1px solid #ACACAC; border-left:1px solid #ACACAC; border-bottom:1px solid #ACACAC; background-color:#ffffff; } /* blog listing/post background used for tabs*/
+
+/* blog postings*/
+.tPostContainerFirst {border:1px solid #80AAAA; background-color:#EFFCFC; background-image:url(../../../images/blogs/themes/_BobbyMcMahon/blog_post_bg.gif); background-position:top left; background-repeat:repeat;} /* entire post container background and borders */
+.tPostContainerDefault { border:1px solid #80AAAA; background-color:#EFFCFC; } /* 1st person container background and borders */
+
+.tPostSubject { font:bold 14px arial; color:#F6612D; text-decoration:none;} /* post subject link */
+.tPostDateTime { font:bold 11px arial; color:#000000; } /* post date, time */
+.tPostBody { font:normal 12px arial; color:#000000; border-top:1px dashed #BCBDC0; padding:7px 0px 18px 0px; width:535px; margin:2px 0px 0px 0px; } /* post body text */
+
+/* edited for this page from here on */
+/* about me module */
+.tAboutMeBox { border:#33CCCC 1px solid; background-color:#F6612D; margin-bottom:4px;width:170px;}
+.tAboutSeperator { height:2px;background-image:url(../../../images/blogs/themes/_BobbyMcMahon/bg_horz_line_red.gif); background-position:top left; background-repeat:repeat-x; }
+.tAboutMeHeader {color:#fff; height:25px; background: url(../../../images/blogs/themes/_BobbyMcMahon/hdr_about_expert.gif) center left no-repeat; }
+a.tAboutMeLinks, a:link.tAboutMeLinks, a:active.tAboutMeLinks, a:visited.tAboutMeLinks, a:hover.tAboutMeLinks { font:normal 12px arial; color:#fff; }
+.tAboutMeText { font:normal 12px arial; color:#fff; }
+table.tAboutMeBox td.tAboutMeText a{color:#fff;}
+
+/* my favorite blogs module */
+.tMyFavBlogsBox { border:#33CCCC 1px solid; background-color:#F6612D; margin-bottom:4px;width:170px;color:#fff;}
+.tMyFavBlogsSeperator { height:2px;background-image:url(../../../images/blogs/themes/_BobbyMcMahon/bg_horz_line_red.gif); background-position:top left; background-repeat:repeat-x; }
+.tMyFavBlogsHeader {color:#fff; height:25px; background: url(../../../images/blogs/themes/_BobbyMcMahon/hdr_myfav_blog.gif) center left no-repeat; }
+a.tMyFavBlogsLinks, a:link.tMyFavBlogsLinks, a:active.tMyFavBlogsLinks, a:visited.tMyFavBlogsLinks, a:hover.tMyFavBlogsLinks { font:normal 12px arial; color:#fff; line-height:20px; }
+.tMyFavBlogsText { font:normal 12px arial; color:#fff; }
+.tMyFavBlogsText td { color:#fff; font-size: 10px; padding: 0; }
+.tMyFavBlogsText td b { color:#fff; font-size: 11px; font-weight: normal; }
+.tMyFavBlogsText td img { padding-left: 5px; }
+table.tMyFavBlogsBox td.tMyFavBlogsText a{color:#fff;}
+
+/* blog links module */
+.tBlogLinksBox { border:#33CCCC 1px solid; background-color:#F6612D; margin-bottom:4px;width:170px;}
+.tBlogLinksSeperator { height:2px;background-image:url(../../../images/blogs/themes/_BobbyMcMahon/bg_horz_line_red.gif); background-position:top left; background-repeat:repeat-x; }
+.tBlogLinksHeader { color:#fff; height:25px; background: url(../../../images/blogs/themes/_BobbyMcMahon/hdr_more_blogs.gif) center left no-repeat; }
+a.tBlogLinksLinks, a:link.tBlogLinksLinks, a:active.tBlogLinksLinks, a:visited.tBlogLinksLinks, a:hover.tBlogLinksLinks { font:normal 12px arial; color:#fff; line-height:20px; }
+.tBlogLinksText { font:normal 12px arial; color:#fff; }
+.tBlogLinksMisc{} /* unused hook */
+table.tBlogLinksBox td.tMyFavBlogsText table td a{ color:#fff;}
+
+/* member comments container */
+.tCommentAdd { font:bold 11px arial; color:#F6612D; }
+a.tCommentAdd, a:link.tCommentAdd, a:active.tCommentAdd, a:visited.tCommentAdd, a:hover.tCommentAdd { font:bold 11px arial; color:#F6612D; } /* number of comments, add a comment */
+.tCommentsHeader { color:#ffffff; background-color:#B0B0B0; border-left:1px solid #B5B5B5; border-right:1px solid #B5B5B5; border-top:1px solid #B5B5B5;} 
+.tCommentsFooter { color:#ffffff; background-color:#B0B0B0; border-right:1px solid #B5B5B5;border-left:1px solid #B5B5B5; border-bottom:1px solid #B5B5B5; } 
+a.tCommentsUsername, a:link.tCommentsUsername, a:active.tCommentsUsername, a:visited.tCommentsUsername, a:hover.tCommentsUsername { font:bold 12px arial; color:#003F8C; font-weight:bold; } 
+a.tCommentsDateTime, a:link.tCommentsDateTime, a:active.tCommentsDateTime, a:visited.tCommentsDateTime, a:hover.tCommentsDateTime { font:normal 11px arial; color:#000; } 
+a.tCommentsRate, a:link.tCommentsRate, a:active.tCommentsRate, a:visited.tCommentsRate, a:hover.tCommentsRate { color:#003F8C; font-weight:bold; } 
+.tCommentsBody { color:#000000; }
+.tCommentsBorder { border-left:1px solid #B5B5B5; border-right:1px solid #B5B5B5; } 
+.tCommentsRow01 { background-color:#F9F9F9; } 
+.tCommentsRow02 { background-color:#F0F0F0; } 
+.tCommentsPag01 { color:#ffffff; } /* used on blog listing comments */
+.tCommentsPag02 { color:#ffffff; font-weight:bold; } /* used on blog listing comments */
+
+/* pagination */
+.tPagText { font:normal 11px arial; color:#003F8C; }
+div.pagBoxOff { font:normal 11px arial; border:1px solid #AEAEAE; background-color:#EBEBEB; padding:2px 1px 1px 2px; height:15px; margin-left:auto; margin-right:auto; color:#000000;}
+div.pagBoxOn { font:normal 11px arial; border:1px solid #AEAEAE; background-color:#ffffff; padding:2px 1px 1px 2px; height:15px; margin-left:auto; margin-right:auto; color:#959595;}
+
+#archive-tbl td a{ color:#F6612D; }
+td.tSeeAllPost span{ color:#F6612D; }
+.tArchivedText{ color:#F6612D; }

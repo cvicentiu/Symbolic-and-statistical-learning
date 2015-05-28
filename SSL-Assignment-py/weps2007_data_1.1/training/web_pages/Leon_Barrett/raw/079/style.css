@@ -1,0 +1,700 @@
+/* for the table cell representing our current page */
+
+TABLE TR TD.common_menu_chosen { background: #336699; border-color:
+#336699; color: white; }
+TABLE TR TD.common_menu_chosen A { color: white; }
+TABLE TR TD.common_menu_chosen A:hover { text-decoration: none; }
+
+DIV.top_stories { font-size: x-small; }
+DIV.top_stories SPAN.byline { font-size: xx-small; }
+DIV.top_stories SPAN.category { font-size: small; font-weight: bold; }
+
+DIV.features { 
+    font-size: x-small;
+    font-size: 8pt; 
+    border: none; 
+    width: 100%;
+}
+
+DIV.category {font-size: x-small; }
+DIV.category A, DIV.category A:visited { font-weight: bold; color: black;}
+DIV.category P.categoryname { font-size: small; font-weight: bold; }
+DIV.category SPAN.byline {font-style: italic; }
+
+TABLE TR TH A.headlines {font-size: small; color: #CC6633; font-weight: bold;}
+TABLE.headlines TR TD {font-size: x-small;}
+TABLE.headlines TR TD A {font-size: x-small; color: #CC6633;}
+TABLE.headlines TR TD P.byline {font-style: italic; font-size: x-small;
+padding-left: 2em; }
+
+/* date stuff for archives */
+TABLE.year TR { vertical-align: top; }
+
+TABLE.month { border: 1px black solid; }
+TABLE.month TR.days TD {background: #336699; color: white; text-align: center;}
+TABLE.month TR TD {text-align: right; border: 1px black solid; }
+TABLE.month TR TD A {text-decoration: none; }
+
+.section_name, A.section_name, A.section_name:visited { color: #336699; font-weight: bold; }
+
+/* posting */
+TABLE.postopinion { border: none; font-size: x-small; }
+TABLE.postopinion TR TH { text-align: left; color: #336699; background: #cccccc; }
+TABLE.postopinion TR TD { text-align: left; vertical-align: top; }
+
+A.viblink { font-weight: bold; font-size: x-small; color: blue; }
+
+DIV.pr_by_section { font-size: x-small; background; }
+DIV.pr_by_section SPAN.category { font-size: larger; font-weight: bold; text-decoration: underline; color: #336699; }
+DIV.pr_by_section SPAN.headline A { color: #cc6633; }
+DIV.pr_by_section SPAN.headline A.visited { color: #cc6633; }
+DIV.pr_by_section SPAN.headline { color: #cc6633; }
+
+DIV.pr_by_date { font-size: x-small; }
+DIV.pr_by_date SPAN.date { font-size: larger; font-weight: bold; text-decoration: underline; color: #336699; }
+DIV.pr_by_date SPAN.category { font-weight: bold; text-decoration: none; color: #336699; }
+DIV.pr_by_date SPAN.headline A { color: #cc6633; }
+DIV.pr_by_date SPAN.headline A.visited { color: #cc6633; }
+DIV.pr_by_date SPAN.headline { color: #cc6633; }
+
+DIV.pr_section_list { font-size: x-small; }
+
+table.abstract_links tr td a,
+p.abstract_links a {
+    font-weight: bold;
+}
+
+/* Press release box items */
+/* White paper box items */
+
+DIV.prBox, DIV.prBox P,  DIV.prBox TD, DIV.wpBox, DIV.wpBox P, DIV.wpBox TD {
+    background-color: #CCCCCC;
+    font-family: verdana, arial, sans-serif;
+    font-size: 8pt;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: left;
+    vertical-align: top;
+    color: black;
+}
+
+TABLE.wpSmBox {
+    background-color: #CCCCCC;
+    font-family: verdana, arial, sans-serif;
+}
+
+TD.wpTab {
+    background-image: url(/images/wp_short_tab_bg.gif);
+}
+
+TABLE.wpSmBoxMenuItems {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+DIV.prBox P {
+    padding-bottom: 7px;
+}
+
+
+DIV.prBox A:visited, DIV.wpBox A:visited {
+    color: #CC6633;
+    text-decoration: underline;
+}
+
+
+DIV.prBox TD.colorTabRow1, DIV.wpBox TD.colorTabRow1,
+DIV.prBox TD.colorTabCell1, DIV.wpBox TD.colorTabCell1, 
+DIV.prBox TD.colorTabCell2, DIV.wpBox TD.colorTabCell2 {
+   background-image: url(/images/tabLargePanhandle.gif);
+}
+
+
+DIV.prBox .prBoxTitle, DIV.wpBox .wpBoxTitle {
+   color: #CC6633;
+}
+
+
+DIV.prBox .prBoxSection {
+   font-weight: bold;
+   text-decoration: none;
+   color: #336699;
+}
+
+DIV.prBox SPAN.prBoxDate {
+   font-weight: normal;
+   font-style: italic;
+   text-decoration: none;
+   color: #336699;
+}
+
+DIV.prBox .prBoxNotice, DIV.wpBox .wpBoxNotice {
+   text-align: center;
+}
+
+
+DIV.wpBox .wpBoxByline {
+   font-style: italic;
+   text-align: center;
+}
+
+
+span.wpBoxByline {
+   font-size: 8pt;
+   font-family: arial;
+   font-style: italic;
+   text-align: center;
+}
+
+span.prBoxSection {
+   font-family: arial;
+   font-size: 8pt;
+   font-weight: bold;
+   text-decoration: none;
+   color: #336699;
+}
+
+span.prBoxDate {
+   font-family: arial;
+   font-size: 8pt;
+   font-weight: normal;
+   font-style: italic;
+   text-decoration: none;
+   color: #336699;
+}
+
+a.prBoxTitle, a.wpBoxTitle {
+   font-family: arial;
+   font-size: 8pt;
+   color: #CC6633;
+   text-decoration: underline;
+}
+
+div.prBoxNotice, div.wpBoxNotice {
+   font-size: 8pt;
+   text-align: center;
+}
+
+p, body, td, div, span input, select, form {
+   font-size: 9pt;
+}
+
+
+/* style for feature.php page */
+div.featureTitle {
+    border: none; 
+    font-size: 10pt; 
+    font-weight: bold; 
+    text-align: left;
+}
+
+p.featureByLine {
+    font-style: italic;
+    padding-left: 2em;
+}
+
+div.featureBody {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+table.other_articles {
+    padding: 0;
+    border: none;
+    width: 100%;
+    text-align: left;
+}
+
+table.other_articles a.category {
+    font-size: 11pt;
+    font-weight: bold;
+    color: #336699;
+}
+
+table.other_articles a.headlines {
+    font-size: small;
+    color: #CC6633;
+}
+
+table.other_articles div.byline {
+    font-color: black;
+    font-style: italic;
+    font-size: 8pt;
+    padding-left: 2em;
+}
+
+p.largeFeatureList {
+    padding-bottom: 10px;
+}
+
+p.largeFeatureList span.categoryName,
+p.largeFeatureList a.categoryName{
+   font-size: 12pt; 
+   font-weight: bold; 
+   color: #336699; 
+   text-decoration: none;
+}
+
+p.largeFeatureList a.categoryName:hover {
+   text-decoration: underline;
+}
+
+p.largeFeatureList span.title,
+p.largeFeatureList a.title {
+    font-size: 10pt; 
+    font-weight: bold;
+    color: #CC6633;
+}
+
+p.largeFeatureList span.byline {
+    font-size: 9pt;
+    font-style: italic;
+}
+
+p.largeFeatureList span.abstract {
+    font-size: 9pt;
+}
+
+/* end feature.php style */
+
+
+/* style for features list in right column */
+TABLE.featuresSmBox {
+    font-family: verdana, arial, sans-serif;
+}
+
+TD.featuresTab {
+    background-image: url(/images/features_short_tab_bg.gif);
+    border: none;
+}
+
+p.sideFeaturesList {
+    padding-top: 5px; 
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+p.sideFeaturesList a.categoryName,
+p.sideFeaturesList a.categoryName:visited,
+p.sideFeaturesList a.categoryName:active,
+p.sideFeaturesList a.categoryName:link {
+    font-size: 10pt;
+    font-weight: bold; 
+    color: #336699;
+    text-decoration: underline;
+}
+
+p.sideFeaturesList a.categoryName:hover {
+    text-decoration: underline;
+}
+
+p.sideFeaturesList a.title,
+p.sideFeaturesList a.title:visited,
+p.sideFeaturesList a.title:active,
+p.sideFeaturesList a.title:link {
+    div-size: 9pt;
+    font-weight: bold;
+    text-decoration: underline; 
+    color: #CC6633;
+}
+
+p.sideFeaturesList SPAN.title {
+    font-size: 8pt;
+}
+
+p.sideFeaturesList a.title:hover {
+    text-decoration: none;
+}
+
+p.sideFeaturesList span.byline {
+    font-size: 8pt; 
+    font-style: italic;
+}
+
+/* end right column feature list style */
+
+/* Default Lists */
+ul li {
+   padding-left: 1em;
+   padding-right: 3px;
+   padding-bottom: 5px; 
+   font-size: 9pt;
+   font-style: normal; 
+}
+
+/* White Papers Lists */
+
+ul.WhitePaperList {
+   list-style-type: none;
+   width: 250px;
+   margin: 0px;
+   padding: 0px;
+}
+
+ul.WhitePaperList li {
+   margin: 0px;
+   padding: 0px;
+   border-left: 1px solid #336699;
+   border-right: 1px solid #336699;
+}
+
+ul.WhitePaperList li.Header {
+   height: 13px;
+   background-image: url("/images/n_tab_wp1.gif");
+   background-repeat: no-repeat;
+   background-position: bottom left;
+   border: none;
+}
+
+ul.WhitePaperList li.Footer {
+   font-size: 0px;
+   height: 0px;
+   border: none;
+   border-top: 1px solid #336699;
+   vertical-align: top;
+
+}
+
+ul.WhitePaperList li.Title {
+   padding-left: 3px;
+   padding-right: 3px;
+   padding-top: 5px;
+   font-size: 8pt;
+   font-weight: bold;
+}
+
+ul.WhitePaperList li.Title a,
+ul.WhitePaperList li.Title a:link,
+ul.WhitePaperList li.Title a:active,
+ul.WhitePaperList li.Title a:visited,
+ul.WhitePaperList li.Title a:hover {
+   font-size: 8pt;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+ul.WhitePaperList li.Byline {
+   padding-left: 1em;
+   padding-right: 3px;
+   padding-bottom: 5px;
+  /* font-size: 8pt;
+   font-style: italic;*/   
+   font-style: italic; 
+   font-size: x-small;
+   } 
+   
+/* End White Papers Lists */
+
+
+/* Error Block Style */
+
+p.ErrorBlock
+{
+    border: solid 1px #999999;
+    background-color: #F6F2F6;
+    width: 75%;
+    padding: 3px;
+}
+
+
+p.ErrorBlock span.Header
+{
+    font-weight: bold;
+    font-size: 9pt;
+    color: red;
+}
+
+
+p.ErrorBlock span.Item
+{
+    font-weight: bold;
+    color: #000000;
+    padding-left: 20px;
+    font-size: 8pt;
+}
+
+.leftmenu
+{
+	font:Verdana, Arial, Helvetica, sans-serif;
+	font-size: 7pt;
+}
+
+/* End Error Block Style */
+
+/* Start eNewsletter Signup*/
+
+body, p, div, table, tr, th, td, form, input, select, span {   
+    font-size: 9pt;
+}
+
+
+input {
+    padding: 0px;
+    margin: 0px;    
+    vertical-align: middle;
+}
+
+select, textarea {
+    margin-bottom: 5px;
+}
+
+input.checkbox, input.radio {
+    background-color: #CCCCCC;
+}
+
+p.warn {
+    font-size: 8pt;
+    font-weight: bold;
+    background-color: #CCCCCC;
+    border: 1px solid #999999;
+    padding: 3px;
+    color: red;
+}
+
+p.safe {
+    font-size: 8pt;
+    font-weight: bold;
+    background-color: #CCCCCC;
+    border: 1px solid #999999;
+    padding: 3px;
+    color: green;
+}
+
+p.warn span.header {
+    font-size: 9pt;
+    color: #000000;
+}
+
+p.enclosed, table.enclosed {
+    border: solid 1px #000000;
+    background-color: #CCCCCC;
+    padding: 3px;
+}
+
+table.enclosed {
+    margin-bottom: 5px;
+}
+
+table.enclosed tr td {
+    background: color: #CCCCCC;
+    vertical-align: top;
+}
+
+table.newsletterList tr th {
+    font-size: 9pt;
+    padding: 5px;
+    background-color: #999999;
+    color: #FFFFFF;
+    border: solid 1px #000000;
+}
+
+table.newsletterList tr td {
+    font-size: 8pt;
+    vertical-align: top;
+    background-color: #CCCCCC;
+    border: solid 1px #000000;
+}
+
+table.newsletterList tr td.name {
+    padding: 5px;
+    background-color: #999999;
+    border: none;
+    border-bottom: solid 1px #000000;
+}
+
+table.newsletterList tr td.description {
+    padding: 5px;
+    background-color: #CCCCCC;
+    border: none;
+}
+
+table.magazineForm {
+    width: 75%;
+    border: solid 1px #000000;
+}
+
+table.regForm {
+    border: solid 1px #000000;
+}
+
+table.magazineForm tr th, table.regForm tr th {   
+    background-color: #999999;
+    color: #FFFFFF;
+    border-bottom: solid 1px #000000;
+    padding: 3px;
+}
+
+table.magazineForm tr td, table.magazineForm tr td p {
+    background-color: #CCCCCC;
+}
+
+table.regForm tr td, table.regForm tr td p {
+    background-color: #CCCCCC;
+    padding: 3px;
+}
+
+form.authMagazineAlignForm {
+
+}
+
+
+form.authMagazineAlignForm input {
+   font-size: 8pt;
+}
+
+
+form.authMagazineAlignForm select {
+   font-size: 8pt;
+}
+
+
+table.authMagazineAlignForm {
+   border: solid 1px #999999;
+   width: 70%;
+}
+
+
+table.authMagazineAlignForm tr td {
+   font-size: 8pt;
+   background-color: #F6F2F6;
+   vertical-align: top;
+   padding: 3px;
+}
+
+
+table.authMagazineAlignForm tr td.header {
+   white-space: nowrap;
+   text-align: right;
+   padding-right: 10px;
+}
+
+
+table.authMagazineAlignForm tr td.field {
+   white-space: nowrap;
+   text-align: left;
+}
+
+
+p.ErrorBlock {
+   width: 75%;
+   border: solid 1px #999999;
+   background-color: #F6F2F6;
+   line-height: 130%;
+}
+
+
+p.ErrorBlock span.header {
+   font-size: 9pt;
+   font-weight: bold;
+   color: red;
+}
+
+
+p.ErrorBlock span.item {
+   font-size: 8pt;
+   font-weight: bold;
+   color: #000000;
+   padding-left: 20px;
+}
+
+.table_thin_border_black
+	{
+	border-top: 1px solid #000000;
+	border-right: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	border-left: 1px solid #000000;
+	} /*one pixel border*/
+	
+.table_thin_border_not_top
+	{
+	border-right: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+	} /*one pixel border*/	
+	
+.table_thin_border_bottom_left
+	{
+	border-bottom: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+	} /*one pixel border*/
+
+a.clientAd:link
+	{ font-family: verdana, geneva, arial, helvetica, sans-serif; font-size: 11px; color: #000000; text-decoration: underline; font-weight: bold; font-style:italic;
+	} /*clientAd*/
+	
+a.clientAd:visited
+	{ font-family: verdana, geneva, arial, helvetica, sans-serif; font-size: 11px; color: #000000; text-decoration: underline; font-weight: bold; font-style:italic;
+	} /*clientAd*/
+	
+a.clientAd:hover
+	{ font-family: verdana, geneva, arial, helvetica, sans-serif; font-size: 11px; color: #000000; text-decoration: underline; font-weight: bold; font-style:italic;
+	} /*clientAd*/
+	
+a.clientAd:active
+	{ font-family: verdana, geneva, arial, helvetica, sans-serif; font-size: 11px; color: #000000; text-decoration: underline; font-weight: bold; font-style:italic;
+	} /*clientAd*/		
+	
+table.cc_table {
+    border: 1px solid #000000;
+}
+
+table.cc_table th {
+    font-weight: bold;
+    font-size: 9pt;
+    background-color: #CC6633;
+    color: #FFFFFF;
+    border-bottom: solid 1px #000000;
+    text-decoration: underline;
+}
+
+table.cc_table td, table.cc_table p {
+    background-color: #CCCCCC;
+}	
+	
+/* End eNewsletter Signup*/
+
+/* [begin] Let's display visited links differently */
+a.headlines:visited
+	{ color: #336699
+	} /*visited headlines links*/
+a.largeFeatureList:visited
+	{ color: #336699
+	} /*visited largeFeatureList links*/
+a.section_name:visited
+	{ color: #336699
+	} /*visited section_name links*/
+p a.sideFeaturesList:visited
+	{ color: #336699
+	} /*visited sideFeaturesList links*/
+a.table_thin_border:visited
+	{ color: #336699
+	} /*visited table_thin_border links*/
+a.title:visited
+	{ color: #336699
+	} /*visited title links*/			
+	
+
+.subHeader1
+	{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: italic;
+	color: Black
+	}
+	
+.dateCreated1
+	{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: italic;
+	color: Black
+	}
+	
+.dateCreated2
+	{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: italic;
+	color: Black
+	}
+/* [end] Let's display visited links differently */	

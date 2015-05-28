@@ -1,0 +1,335 @@
+<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=ISO-8859-1">
+		<meta name="generator" content="Adobe GoLive 5">
+		<title>Johnson Renshaw &amp; Lechman-Su PC</title>
+		<csscriptdict>
+			<script type="text/javascript"><!--
+CSInit = new Array;
+function CSScriptInit() {
+if(typeof(skipPage) != "undefined") { if(skipPage) return; }
+idxArray = new Array;
+for(var i=0;i<CSInit.length;i++)
+	idxArray[i] = i;
+CSAction2(CSInit, idxArray);
+}
+CSAg = window.navigator.userAgent; CSBVers = parseInt(CSAg.charAt(CSAg.indexOf("/")+1),10);
+CSIsW3CDOM = ((document.getElementById) && !(IsIE()&&CSBVers<6)) ? true : false;
+function IsIE() { return CSAg.indexOf("MSIE") > 0;}
+function CSIEStyl(s) { return document.all.tags("div")[s].style; }
+function CSNSStyl(s) { if (CSIsW3CDOM) return document.getElementById(s).style; else return CSFindElement(s,0);  }
+CSIImg=false;
+function CSInitImgID() {if (!CSIImg && document.images) { for (var i=0; i<document.images.length; i++) { if (!document.images[i].id) document.images[i].id=document.images[i].name; } CSIImg = true;}}
+function CSFindElement(n,ly) { if (CSBVers<4) return document[n];
+	if (CSIsW3CDOM) {CSInitImgID();return(document.getElementById(n));}
+	var curDoc = ly?ly.document:document; var elem = curDoc[n];
+	if (!elem) {for (var i=0;i<curDoc.layers.length;i++) {elem=CSFindElement(n,curDoc.layers[i]); if (elem) return elem; }}
+	return elem;
+}
+function CSGetImage(n) {if(document.images) {return ((!IsIE()&&CSBVers<5)?CSFindElement(n,0):document.images[n]);} else {return null;}}
+CSDInit=false;
+function CSIDOM() { if (CSDInit)return; CSDInit=true; if(document.getElementsByTagName) {var n = document.getElementsByTagName('DIV'); for (var i=0;i<n.length;i++) {CSICSS2Prop(n[i].id);}}}
+function CSICSS2Prop(id) { var n = document.getElementsByTagName('STYLE');for (var i=0;i<n.length;i++) { var cn = n[i].childNodes; for (var j=0;j<cn.length;j++) { CSSetCSS2Props(CSFetchStyle(cn[j].data, id),id); }}}
+function CSFetchStyle(sc, id) {
+	var s=sc; while(s.indexOf("#")!=-1) { s=s.substring(s.indexOf("#")+1,sc.length); if (s.substring(0,s.indexOf("{")).toUpperCase().indexOf(id.toUpperCase())!=-1) return(s.substring(s.indexOf("{")+1,s.indexOf("}")));}
+	return "";
+}
+function CSGetStyleAttrValue (si, id) {
+	var s=si.toUpperCase();
+	var myID=id.toUpperCase()+":";
+	var id1=s.indexOf(myID);
+	if (id1==-1) return "";
+	s=s.substring(id1+myID.length+1,si.length);
+	var id2=s.indexOf(";");
+	return ((id2==-1)?s:s.substring(0,id2));
+}
+function CSSetCSS2Props(si, id) {
+	var el=document.getElementById(id);
+	if (el==null) return;
+	var style=document.getElementById(id).style;
+	if (style) {
+		if (style.left=="") style.left=CSGetStyleAttrValue(si,"left");
+		if (style.top=="") style.top=CSGetStyleAttrValue(si,"top");
+		if (style.width=="") style.width=CSGetStyleAttrValue(si,"width");
+		if (style.height=="") style.height=CSGetStyleAttrValue(si,"height");
+		if (style.visibility=="") style.visibility=CSGetStyleAttrValue(si,"visibility");
+		if (style.zIndex=="") style.zIndex=CSGetStyleAttrValue(si,"z-index");
+	}
+}
+function CSClickReturn () {
+	var bAgent = window.navigator.userAgent; 
+	var bAppName = window.navigator.appName;
+	if ((bAppName.indexOf("Explorer") >= 0) && (bAgent.indexOf("Mozilla/3") >= 0) && (bAgent.indexOf("Mac") >= 0))
+		return true; /* dont follow link */
+	else return false; /* dont follow link */
+}
+function CSButtonReturn () { return !CSClickReturn(); }
+CSIm=new Object();
+function CSIShow(n,i) {
+	if (document.images) {
+		if (CSIm[n]) {
+			var img=CSGetImage(n);
+			if (img&&typeof(CSIm[n][i].src)!="undefined") {img.src=CSIm[n][i].src;}
+			if(i!=0) self.status=CSIm[n][3]; else self.status=" ";
+			return true;
+		}
+	}
+	return false;
+}
+function CSILoad(action) {
+	im=action[1];
+	if (document.images) {
+		CSIm[im]=new Object();
+		for (var i=2;i<5;i++) {
+			if (action[i]!='') {CSIm[im][i-2]=new Image(); CSIm[im][i-2].src=action[i];}
+			else CSIm[im][i-2]=0;
+		}
+		CSIm[im][3] = action[5];
+	}
+}
+CSStopExecution=false;
+function CSAction(array) {return CSAction2(CSAct, array);}
+function CSAction2(fct, array) { 
+	var result;
+	for (var i=0;i<array.length;i++) {
+		if(CSStopExecution) return false; 
+		var aa = fct[array[i]];
+		if (aa == null) return false;
+		var ta = new Array;
+		for(var j=1;j<aa.length;j++) {
+			if((aa[j]!=null)&&(typeof(aa[j])=="object")&&(aa[j].length==2)){
+				if(aa[j][0]=="VAR"){ta[j]=CSStateArray[aa[j][1]];}
+				else{if(aa[j][0]=="ACT"){ta[j]=CSAction(new Array(new String(aa[j][1])));}
+				else ta[j]=aa[j];}
+			} else ta[j]=aa[j];
+		}			
+		result=aa[0](ta);
+	}
+	return result;
+}
+CSAct = new Object;
+function newImage(arg) {
+	if (document.images) {
+		rslt = new Image();
+		rslt.src = arg;
+		return rslt;
+	}
+}
+function changeImagesArray(array) {
+	if (preloadFlag == true) {
+		var d = document; var img;
+		for (var i=0; i<array.length; i+=2) {
+			img = null; var n = array[i];
+			if (d.images) {img = d.images[n];}
+			if (!img && d.getElementById) {img = d.getElementById(n);}
+			if (img) {img.src = array[i+1];}
+		}
+	}
+}
+function changeImages() {
+	changeImagesArray(changeImages.arguments);
+}
+
+// --></script>
+		</csscriptdict>
+		<csactiondict>
+			<script type="text/javascript"><!--
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button',/*URL*/'../images/top.nav_01.gif',/*URL*/'../images/top.nav_01-over.gif',/*URL*/'../images/top.nav_01-down.gif','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button2',/*URL*/'../images/top.nav_02-down.gif',/*URL*/'',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button3',/*URL*/'../images/top.nav_03.gif',/*URL*/'../images/top.nav_03-over.gif',/*URL*/'../images/top.nav_03-down.gif','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button4',/*URL*/'../images/top.nav_04.gif',/*URL*/'../images/top.nav_04-over.gif',/*URL*/'../images/top.nav_04-down.gif','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button5',/*URL*/'../images/top.nav_05.gif',/*URL*/'../images/top.nav_05-over.gif',/*URL*/'../images/top.nav_05-down.gif','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button6',/*URL*/'../images/top.nav_06.gif',/*URL*/'../images/top.nav_06-over.gif',/*URL*/'../images/top.nav_06-down.gif','');
+var preloadFlag = false;
+function preloadImages() {
+	if (document.images) {
+		pre_attorney_nav_01_over = newImage('../images/attorney_nav_01-over.gif');
+		pre_attorney_nav_01_down = newImage('../images/attorney_nav_01-down.gif');
+		pre_attorney_nav_02_over = newImage('../images/attorney_nav_02-over.gif');
+		pre_attorney_nav_02_down = newImage('../images/attorney_nav_02-down.gif');
+		pre_attorney_nav_03_over = newImage('../images/attorney_nav_03-over.gif');
+		pre_attorney_nav_03_down = newImage('../images/attorney_nav_03-down.gif');
+		pre_attorney_nav_04_over = newImage('../images/attorney_nav_04-over.gif');
+		pre_attorney_nav_04_down = newImage('../images/attorney_nav_04-down.gif');
+		pre_attorney_nav_05_over = newImage('../images/attorney_nav_05-over.gif');
+		pre_attorney_nav_05_down = newImage('../images/attorney_nav_05-down.gif');
+		pre_attorney_nav_06_over = newImage('../images/attorney_nav_06-over.gif');
+		pre_attorney_nav_06_down = newImage('../images/attorney_nav_06-down.gif');
+		preloadFlag = true;
+	}
+}
+
+// --></script>
+		</csactiondict>
+	</head>
+
+	<body onload="preloadImages();CSScriptInit();" bgcolor="#ffffcc">
+		<table cool width="642" height="1117" usegridx usegridy showgridx showgridy gridx="16" gridy="16" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffcc">
+			<tr height="21">
+				<td width="271" height="21" colspan="4" valign="top" align="left" xpos="0"><img src="jrl-s.head.jpg" width="271" height="21" border="0"></td>
+				<td width="370" height="21" colspan="9"><spacer type="block" width="370" height="21"></td>
+				<td width="1" height="21"><spacer type="block" width="1" height="21"></td>
+			</tr>
+			<tr height="31">
+				<td width="641" height="31" colspan="13" valign="top" align="left" xpos="0"><img src="bar.building.jpg" width="640" height="31" border="0"></td>
+				<td width="1" height="31"><spacer type="block" width="1" height="31"></td>
+			</tr>
+			<tr height="12">
+				<td width="16" height="1064" rowspan="13"><spacer type="block" width="16" height="1064"></td>
+				<td width="160" height="12" colspan="2"><spacer type="block" width="160" height="12"></td>
+				<td width="95" height="176" rowspan="8"><spacer type="block" width="95" height="176"></td>
+				<td width="44" height="20" colspan="2" rowspan="2" valign="top" align="left" xpos="271"><csobj al="" cl="../images/top.nav_01-down.gif" h="20" ht="../images/top.nav_01-over.gif" t="Button" w="44"><a href="http://www.jrl-s.com/index.htm" onmouseover="return CSIShow(/*CMP*/'button',1)" onmouseout="return CSIShow(/*CMP*/'button',0)" onclick="CSIShow(/*CMP*/'button',2);return CSButtonReturn()"><img src="top.nav_01.gif" width="44" height="20" name="button" border="0" alt=""></a></csobj></td>
+				<td width="57" height="20" rowspan="2" valign="top" align="left" xpos="315"><csobj al="" h="20" t="Button" w="57"><a href="http://www.jrl-s.com/pages/attorneys.html" onmouseover="return CSIShow(/*CMP*/'button2',1)" onmouseout="return CSIShow(/*CMP*/'button2',0)" onclick="return CSButtonReturn()"><img src="top.nav_02-down.gif" width="57" height="20" name="button2" border="0" alt=""></a></csobj></td>
+				<td width="62" height="20" rowspan="2" valign="top" align="left" xpos="372"><csobj al="" cl="../images/top.nav_03-down.gif" h="20" ht="../images/top.nav_03-over.gif" t="Button" w="62"><a href="http://www.jrl-s.com/pages/practice.html" onmouseover="return CSIShow(/*CMP*/'button3',1)" onmouseout="return CSIShow(/*CMP*/'button3',0)" onclick="CSIShow(/*CMP*/'button3',2);return CSButtonReturn()"><img src="top.nav_03.gif" width="62" height="20" name="button3" border="0" alt=""></a></csobj></td>
+				<td width="38" height="20" rowspan="2" valign="top" align="left" xpos="434"><csobj al="" cl="../images/top.nav_04-down.gif" h="20" ht="../images/top.nav_04-over.gif" t="Button" w="38"><a href="http://www.jrl-s.com/pages/news.html" onmouseover="return CSIShow(/*CMP*/'button4',1)" onmouseout="return CSIShow(/*CMP*/'button4',0)" onclick="CSIShow(/*CMP*/'button4',2);return CSButtonReturn()"><img src="top.nav_04.gif" width="38" height="20" name="button4" border="0" alt=""></a></csobj></td>
+				<td width="65" height="20" rowspan="2" valign="top" align="left" xpos="472"><csobj al="" cl="../images/top.nav_05-down.gif" h="20" ht="../images/top.nav_05-over.gif" t="Button" w="65"><a href="http://www.jrl-s.com/pages/contact.html" onmouseover="return CSIShow(/*CMP*/'button5',1)" onmouseout="return CSIShow(/*CMP*/'button5',0)" onclick="CSIShow(/*CMP*/'button5',2);return CSButtonReturn()"><img src="top.nav_05.gif" width="65" height="20" name="button5" border="0" alt=""></a></csobj></td>
+				<td width="104" height="20" colspan="3" rowspan="2" valign="top" align="left" xpos="537"><csobj al="" cl="../images/top.nav_06-down.gif" h="20" ht="../images/top.nav_06-over.gif" t="Button" w="104"><a href="http://www.jrl-s.com/pages/directions.html" onmouseover="return CSIShow(/*CMP*/'button6',1)" onmouseout="return CSIShow(/*CMP*/'button6',0)" onclick="CSIShow(/*CMP*/'button6',2);return CSButtonReturn()"><img src="top.nav_06.gif" width="104" height="20" name="button6" border="0" alt=""></a></csobj></td>
+				<td width="1" height="12"><spacer type="block" width="1" height="12"></td>
+			</tr>
+			<tr height="8">
+				<td width="160" height="208" colspan="2" rowspan="8" valign="top" align="left" xpos="16"><img src="photo-johnson.jpg" alt="" height="180" width="144" border="0"></td>
+				<td width="1" height="8"><spacer type="block" width="1" height="8"></td>
+			</tr>
+			<tr height="22">
+				<td width="43" height="156" rowspan="6"><spacer type="block" width="43" height="156"></td>
+				<td width="158" height="22" colspan="4" valign="top" align="left" xpos="314"><a onmousedown="changeImages('attorney_nav_01','../images/attorney_nav_01-down.gif');return true" onmouseup="changeImages('attorney_nav_01','../images/attorney_nav_01-over.gif');return true" onmouseover="changeImages('attorney_nav_01','../images/attorney_nav_01-over.gif');return true" onmouseout="changeImages('attorney_nav_01','../images/attorney_nav_01-down.gif');return true" href="attorneys_J.html"><img id="attorney_nav_01" src="attorney_nav_01-down.gif" alt="" name="attorney_nav_01" height="22" width="130" border="0"></a></td>
+				<td width="152" height="200" colspan="3" rowspan="7"><spacer type="block" width="152" height="200"></td>
+				<td width="17" height="1044" rowspan="11"><spacer type="block" width="17" height="1044"></td>
+				<td width="1" height="22"><spacer type="block" width="1" height="22"></td>
+			</tr>
+			<tr height="21">
+				<td width="158" height="21" colspan="4" valign="top" align="left" xpos="314"><a onmousedown="changeImages('attorney_nav_02','../images/attorney_nav_02-down.gif');return true" onmouseup="changeImages('attorney_nav_02','../images/attorney_nav_02-over.gif');return true" onmouseover="changeImages('attorney_nav_02','../images/attorney_nav_02-over.gif');return true" onmouseout="changeImages('attorney_nav_02','../images/attorney_nav_02.gif');return true" href="http://www.jrl-s.com/pages/attorneys_R.html"><img id="attorney_nav_02" src="attorney_nav_02.gif" alt="" name="attorney_nav_02" height="21" width="130" border="0"></a></td>
+				<td width="1" height="21"><spacer type="block" width="1" height="21"></td>
+			</tr>
+			<tr height="21">
+				<td width="158" height="21" colspan="4" valign="top" align="left" xpos="314"><a onmousedown="changeImages('attorney_nav_03','../images/attorney_nav_03-down.gif');return true" onmouseup="changeImages('attorney_nav_03','../images/attorney_nav_03-over.gif');return true" onmouseover="changeImages('attorney_nav_03','../images/attorney_nav_03-over.gif');return true" onmouseout="changeImages('attorney_nav_03','../images/attorney_nav_03.gif');return true" href="http://www.jrl-s.com/pages/attorneys_L.html"><img id="attorney_nav_03" src="attorney_nav_03.gif" alt="" name="attorney_nav_03" height="21" width="130" border="0"></a></td>
+				<td width="1" height="21"><spacer type="block" width="1" height="21"></td>
+			</tr>
+			<tr height="21">
+				<td width="158" height="21" colspan="4" valign="top" align="left" xpos="314"><a onmousedown="changeImages('attorney_nav_04','../images/attorney_nav_04-down.gif');return true" onmouseup="changeImages('attorney_nav_04','../images/attorney_nav_04-over.gif');return true" onmouseover="changeImages('attorney_nav_04','../images/attorney_nav_04-over.gif');return true" onmouseout="changeImages('attorney_nav_04','../images/attorney_nav_04.gif');return true" href="http://www.jrl-s.com/pages/attorneys_rufolo.html"><img id="attorney_nav_04" src="attorney_nav_04.gif" alt="" name="attorney_nav_04" height="21" width="130" border="0"></a></td>
+				<td width="1" height="21"><spacer type="block" width="1" height="21"></td>
+			</tr>
+			<tr height="21">
+				<td width="158" height="21" colspan="4" valign="top" align="left" xpos="314"><a onmousedown="changeImages('attorney_nav_05','../images/attorney_nav_05-down.gif');return true" onmouseup="changeImages('attorney_nav_05','../images/attorney_nav_05-over.gif');return true" onmouseover="changeImages('attorney_nav_05','../images/attorney_nav_05-over.gif');return true" onmouseout="changeImages('attorney_nav_05','../images/attorney_nav_05.gif');return true" href="http://www.jrl-s.com/pages/attorneys_alex.html"><img id="attorney_nav_05" src="attorney_nav_05.gif" alt="" name="attorney_nav_05" height="21" width="128" border="0"></a></td>
+				<td width="1" height="21"><spacer type="block" width="1" height="21"></td>
+			</tr>
+			<tr height="50">
+				<td width="158" height="50" colspan="4" valign="top" align="left" xpos="314"><a onmousedown="changeImages('attorney_nav_06','../images/attorney_nav_06-down.gif');return true" onmouseup="changeImages('attorney_nav_06','../images/attorney_nav_06-over.gif');return true" onmouseover="changeImages('attorney_nav_06','../images/attorney_nav_06-over.gif');return true" onmouseout="changeImages('attorney_nav_06','../images/attorney_nav_06.gif');return true" href="http://www.jrl-s.com/pages/attorneys_peter.html"><img id="attorney_nav_06" src="attorney_nav_06.gif" alt="" name="attorney_nav_06" height="21" width="130" border="0"></a></td>
+				<td width="1" height="50"><spacer type="block" width="1" height="50"></td>
+			</tr>
+			<tr height="44">
+				<td width="138" height="44" colspan="2" valign="top" align="left" xpos="176"><img src="ptnr.nm.johnson.gif" width="117" height="18" border="0"></td>
+				<td width="158" height="44" colspan="4"><spacer type="block" width="158" height="44"></td>
+				<td width="1" height="44"><spacer type="block" width="1" height="44"></td>
+			</tr>
+			<tr height="480">
+				<td content csheight="480" width="608" height="480" colspan="11" valign="top" align="left" xpos="16"><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular"><b>Mark Johnson</b> became a member of the <a href="http://www.osbar.org/index.html">Oregon State Bar</a> in 1987 and served as its president in 1999. He also served as president of the <a href="http://www.nlgla.org/">National Lesbian &amp; Gay Law Association</a> in 1995 and of the Oregon Gay and Lesbian Law Association (OGALLA) in 1992. In 2003, he received OGALLA&rsquo;s Award of Merit in recognition of his many local and national civil rights achievements.</font>
+					<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">Mark is a past chair of <a href="http://www.osbar.org/discipline/discipline.html">Oregon&rsquo;s State Professional Responsibility Board</a>, which oversees the discipline process for all lawyers licensed or practicing in Oregon. He is a Fellow of the <a href="http://www.aaml.org/">American Academy of Matrimonial Lawyers</a>, and a member of the <a href="http://w3.abanet.org/home.cfm">American Bar Association</a> and of the <a href="http://www.ncbp.org/">National Conference of Bar Presidents</a>.</font></p>
+					<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">Mark&rsquo;s practice focuses primarily on appeals. He has handled more than 100 cases before the <a href="http://www.ojd.state.or.us/courts/supreme/index.htm">Oregon Supreme Court</a> and the <a href="http://www.ojd.state.or.us/courts/coa/index.htm">Oregon Court of Appeals</a>. He is licensed to practice in Oregon and Washington and before the <a href="http://www.supremecourtus.gov/about/about.html">Supreme Court of the United States</a>. A sample of Mark's reported cases can be viewed <a href="http://www.jrl-s.com/pages/attorneys_J-b.html">here</a>.</font></p>
+					<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">Mark graduated from Reed College and received his law degree from Boalt Hall at the University of California, Berkeley. Mark began his legal career as a clerk at the Oregon Court of Appeals and has practiced before the court since 1990, winning the praise of judges, colleagues, and clients alike. He is one of the most highly regarded appellate attorneys in Oregon, and he knows well how to write a winning brief.</font></p>
+					<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">Mark has a particular interest, as well as expertise, in the legal issues faced by infertile couples, step-families, and gay and lesbian couples. He has successfully concluded dozens of adoptions and surrogacy arrangements as well as getting and defending custody and visitation rights for step-parents and non-legal parents, both at trial and on appeal.</font></p>
+				</td>
+				<td width="1" height="480"><spacer type="block" width="1" height="480"></td>
+			</tr>
+			<tr height="15">
+				<td width="16" height="158" rowspan="2"><spacer type="block" width="16" height="158"></td>
+				<td width="144" height="15" valign="top" align="left" xpos="32"><img src="spacer-15px.gif" alt="" height="15" width="15" border="0"></td>
+				<td width="448" height="15" colspan="9"><spacer type="block" width="448" height="15"></td>
+				<td width="1" height="15"><spacer type="block" width="1" height="15"></td>
+			</tr>
+			<tr height="143">
+				<td content csheight="125" width="592" height="143" colspan="10" valign="top" xpos="32">
+					<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">Mark&rsquo;s practice includes expertise in the following areas:</font></p>
+					<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">&#x2022; Adoptions<br>
+							&#x2022; Appeals<br>
+							&#x2022; Elections &amp; Lobbying<br>
+							&#x2022; Ethics &amp; Professional Responsibility<br>
+							&#x2022; <a href="http://www.jrl-s.com/pages/practice.html">Family Law </a>Motion Practice</font></p>
+				</td>
+				<td width="1" height="143"><spacer type="block" width="1" height="143"></td>
+			</tr>
+			<tr height="206">
+				<td content csheight="148" width="592" height="206" colspan="10" valign="top" xpos="16"><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">Mark is available to serve as a reference judge in family law cases. He is also an Associate Justice of the Court of Appeals for the Confederated Tribes of the Grande Ronde Community of Oregon.</font>
+					<p><font face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular">Contact Mark by calling <b>503.224.1640</b>, extension <b>222</b>,<br>
+							or e-mail him at <a href="mailto:markj@jrl-s.com">markj@jrl-s.com</a>.</font></p>
+				</td>
+				<td width="16" height="206"><spacer type="block" width="16" height="206"></td>
+				<td width="1" height="206"><spacer type="block" width="1" height="206"></td>
+			</tr>
+			<tr height="1" cntrlrow>
+				<td width="16" height="1"><spacer type="block" width="16" height="1"></td>
+				<td width="16" height="1"><spacer type="block" width="16" height="1"></td>
+				<td width="144" height="1"><spacer type="block" width="144" height="1"></td>
+				<td width="95" height="1"><spacer type="block" width="95" height="1"></td>
+				<td width="43" height="1"><spacer type="block" width="43" height="1"></td>
+				<td width="1" height="1"><spacer type="block" width="1" height="1"></td>
+				<td width="57" height="1"><spacer type="block" width="57" height="1"></td>
+				<td width="62" height="1"><spacer type="block" width="62" height="1"></td>
+				<td width="38" height="1"><spacer type="block" width="38" height="1"></td>
+				<td width="65" height="1"><spacer type="block" width="65" height="1"></td>
+				<td width="71" height="1"><spacer type="block" width="71" height="1"></td>
+				<td width="16" height="1"><spacer type="block" width="16" height="1"></td>
+				<td width="17" height="1"><spacer type="block" width="17" height="1"></td>
+				<td width="1" height="1"><spacer type="block" width="1" height="1"></td>
+			</tr>
+		</table>
+		<p></p>
+	</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

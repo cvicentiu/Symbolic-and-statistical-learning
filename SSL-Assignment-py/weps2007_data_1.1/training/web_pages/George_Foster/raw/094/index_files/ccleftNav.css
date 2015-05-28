@@ -1,0 +1,306 @@
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+/*set all margins and padding to 0 for h2 elements*/
+
+/*the whole of the left nav div*/
+#leftNav
+{
+	height:100%;
+	width:163px;
+	margin:0px;
+	padding:0px;
+	font-family:arial;
+	font-size:12px;
+	line-height:15px;   
+}
+#leftNav h2
+{
+	margin:0;
+	padding:0px
+}
+#leftNav a:link,
+#leftNav a:visited
+{
+	color:#333;
+	text-decoration:none;
+}
+#leftNav .selected a:link,
+#leftNav .selected a:visited
+{
+	color:#900;
+	text-decoration:none;
+	font-weight:bold;
+}
+#leftNav .selected
+{
+	color:#900;
+	text-decoration:none;
+	font-weight:bold;
+}
+#leftNav a:hover,
+#leftNav a:active
+{
+	color:#333;
+	text-decoration:underline;
+}
+#leftNav .unselected a:hover,
+#leftNav .unselected a:active
+{
+	color:#333;
+	text-decoration:underline;
+}
+/*The colored-in heading at the very top of the left nav*/
+#leftNav .leftNavHead
+{
+	background:url(/images/backgroundTopLeft.gif) no-repeat 0px 0px;
+	background-color:#ddc;
+	margin:0px;
+	padding:0px;
+	height:30px;
+}
+
+/*The text for the left nav header*/
+#leftNav .leftNavHead h2
+{
+	font-size:12px;
+	font-weight:bold;
+	padding: 8px 5px 0px 10px;
+}
+
+/* */
+#leftNav .leftNavSection
+{
+	padding-bottom:10px;
+	margin:0px;
+	border-left:1px solid #ccb;
+	border-right:1px solid #ccb;
+	border-bottom:1px solid #ccb;
+	vertical-align:top;
+}
+#leftNav .leftNavSection.spotlight
+{
+	padding:10px 10px 10px 0px;
+}
+#leftNav .spotlight ul
+{
+	list-style:none;
+	padding:0px;
+	margin:0px;
+}
+#leftNav .spotlight li
+{
+	background:url(/images/bullets/redBullet.gif) no-repeat 10px 6px;
+	padding:0px 0px 0px 20px;
+
+}
+#leftNav .leftNavSection p.relatedLinks
+{
+	font-weight:bold;
+	padding:5px 0px 0px 10px;
+	margin:0px 0px -5px 0px;
+	color:#333;
+}
+/* In the popular items, there needs to be a div arounf the control b/c 
+there are multiple sections. that should not have the bottom border - instead 
+apply the border to the .popular div*/
+#leftNav .popular 
+{
+	margin:0px;
+	padding-bottom:10px;
+	border-left:1px solid #ccb;
+	border-right:1px solid #ccb;
+	border-bottom:1px solid #ccb;
+	vertical-align:top;
+
+}
+#leftNav .popular .leftNavSection
+{
+	padding-bottom:10px;
+	margin:0px;
+	border:0px;
+	vertical-align:top;
+}
+#leftNav .seperator
+{
+	background:url(/images/dottedLineSingle.gif) repeat-x 0px 0px;
+	padding:0px;
+	margin:0px;
+	border:0px;
+	vertical-align:top;
+	width:100%;
+	height:1px;
+
+}
+
+/*This is the header for a number of sections; 
+for example, popular items includes movies, tv and celebs - 
+these are all their own sections but fall under the popular heading*/
+#leftNav .leftNavSection h2
+{
+	font-size:12px;
+	font-weight:bold;
+	padding-left:10px;
+	padding-top:10px;
+}
+/*setting the properties for the list*/
+#leftNav ul
+{
+	margin:0;
+	padding:5px 0px 0px 0px;
+	list-style-type:none;
+	font-size:12px;
+}
+
+/*Pertains to search - When an item is selected it is on that current page.  
+It is not clickable, does not have a bullet, and is bolded*/
+#leftNav li{
+	/*background:url(/images/bullets/redBullet.gif) no-repeat 9px 10px;*/
+	padding:0px 0px 0px 10px;
+	line-height:17px;
+	font-size:12px;
+}	
+#leftNav .popular li{
+	/*background:url(/images/bullets/redBullet.gif) no-repeat 9px 10px;*/
+	padding:0px 0px 0px 20px;
+	line-height:17px;
+	font-size:12px;
+}	
+#leftNav .selected *
+{
+	text-decoration:none;
+	font-weight:bold;
+}	
+#leftNav li.unselected 
+{
+	background-position: 10px 8px !important; /* MOZ*/
+	background-position: 10px 10px; /* IE */
+}	
+
+/*Used for popular items, list items, 
+which are in a list and do not need a selected item*/
+#leftNav .popular li
+{
+	background:url(/images/bullets/redBullet.gif) no-repeat 10px 10px;
+	background-position: 10px 8px;
+}
+#leftNav .popular .leftNavList
+{
+	border-left:0px solid #ccb;
+	border-right:0px solid #ccb;
+	border-bottom:0px solid #ccb;
+}
+/*The first of the list items - a unlinked heading with a ":" after it*/
+#leftNav li.first
+{
+	background:none;
+	margin-left:-10px;
+	padding-top:5px;
+	font-weight:bold;
+	color:#333333;
+}
+/*The "more" list item link info*/
+#leftNav li.last a
+{
+	color:red;
+	text-decoration:none;
+	background:none;
+
+}
+
+/*This is not currently used, but was used for icons at the bottom of the left nav.*/
+#leftNav p
+{
+	display:block; 
+	padding-left:10px;
+	font-size:12px;
+	line-height:20px;
+}
+#leftNav .leftNavList .first 
+{
+	padding:0px 0px 0px 20px;
+	line-height:17px;
+	font-size:12px;
+}
+#leftNav .leftNavList .first a
+{
+	font-weight:bold;
+	text-decoration:none; 
+	cursor:default;
+}
+#leftNav .leftNavList .secondLevel 
+{
+	background:url(/images/bullets/redBullet.gif) no-repeat 20px 10px;
+	background-position: 10px 6px !important; /* MOZ*/
+	background-position: 10px 7px; /* IE */
+	padding:0px 0px 0px 20px;
+	line-height:17px;
+	font-size:12px;
+}
+#leftNav .leftNavList .thirdLevel 
+{
+	background:url(/images/bullets/redBullet.gif) no-repeat 30px 10px;
+	background-position: 20px 6px !important; /* MOZ*/
+	background-position: 20px 7px; /* IE */
+	padding:0px 0px 0px 30px;
+	line-height:17px;
+	font-size:12px;
+}
+#leftNav .leftNavList .current a:link,
+#leftNav .leftNavList .current a:visited,
+#leftNav .leftNavList .current a:hover,
+#leftNav .leftNavList .current a:active
+{
+	font-weight:bold;
+	color:#900;
+}
+
+.soapsCalendarRightNoDuplicate a:link,
+.soapsCalendarRightNoDuplicate a:visited
+{
+	color:#000;
+	text-decoration:none;
+	font-size:11px;
+}
+.soapsCalendarRightNoDuplicate a:hover,
+.soapsCalendarRightNoDuplicate a:active
+{
+	color:#000;
+	text-decoration:underline;
+	font-size:11px;
+}
+/****** Left Nav Footer*******
+* Includes Sign up for e-mail*
+* and subscribe to RSS links *
+*****************************/
+
+#userOptions .leftNavFoot p
+{
+	margin:0px 0px 10px 0px;
+}
+#leftNav #userOptions .leftNavFoot img
+{
+	float:left;
+	margin:0px 10px 10px 0px;
+}
+#userOptions .leftNavFoot img
+{
+	float:left;
+	margin:0px 10px 10px 10px;
+}
+#userOptions .leftNavFoot a:link,
+#userOptions .leftNavFoot a:visited
+{
+	text-decoration:none;
+}
+#userOptions .leftNavFoot a:hover,
+#userOptions .leftNavFoot a:active
+{
+	text-decoration:underline;
+	color:#900;
+}
+#userOptions
+{
+	border-right:solid 1px #ccb;	
+	border-left:solid 1px #ccb;	
+	border-bottom:solid 1px #ccb;
+	padding-top:10px;
+}

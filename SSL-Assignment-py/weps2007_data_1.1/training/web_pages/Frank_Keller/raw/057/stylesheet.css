@@ -1,0 +1,3703 @@
+/* CSS Document */
+/* shows the left scrollbar in ff, regardless of the length of the page */
+html {
+	overflow-y: scroll;
+}
+body {
+	margin: 0;
+	min-width: 985px;
+	padding: 0;
+	text-align: center;
+}
+form {
+	margin: 0;
+	padding: 0;
+}
+input.text, textarea, select {
+	border-style: solid;
+	border-top-width: 2px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 2px;
+}
+input.radio {
+	margin: 0;
+	padding: 0;
+}
+input.checkbox {
+	margin: 0;
+	padding: 0;
+}
+p {
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+
+th {
+ 	text-align: left;
+}
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul.list li {
+	padding-left: 12px;
+	background: url(/img/xing/bullit.gif) no-repeat 0px .5em;
+}
+img {
+	border: 0;
+}
+table tr td img.user-photo-list {
+	width: 30px;
+	height: 40px;
+}
+/* container to center the content */
+#container {
+	margin: 0 auto;
+	width: 985px;
+	text-align: left;
+}
+/* container for all content between header and footer */
+#content {
+	clear: both;
+	/* erzeugt eine markierung des gesamten layouts beim klick neben die seite */
+	/*overflow: hidden;*/
+}
+/* container for the header, without 1st and 2nd level navigation */
+.page_header {
+	background: url(/img/xing/bg_top.jpg) center top no-repeat;
+	overflow: hidden;
+	width: 985px;
+	white-space: nowrap;
+	padding:0;
+	margin: 0 auto;	
+	height:80px;
+}
+.page_header a{
+	text-decoration:none;
+}
+.page_header a:hover{
+	text-decoration:underline;
+}
+
+/* footer definition */
+#footer {
+	clear: both;
+	overflow:hidden;
+	height: 67px;
+	width: 985px;
+	margin: 0 auto;	
+	padding:0;	
+	text-align: center;
+}
+#footer div {
+	background: url(/img/xing/bg_bot.gif) no-repeat bottom;
+	border-top: 1px solid #D8D8D8;
+	margin: 20px 0 10px 0;		
+	padding: 5px 0;
+
+}
+
+/* container to center the content for premium groups */
+#premium-group-container {
+	width: 995px; 
+	overflow: hidden; 
+	margin: 0 auto; 
+	text-align: left;
+	clear: both;
+}
+
+/* container for premium group content between header and footer */
+#premium-group-content {
+	clear:both; 
+	overflow:hidden;
+	margin: 0px 0px 0px 0px; 
+	padding:10px 2px 2px 2px;
+	text-align: left;
+	background:#ffffff;
+	line-height: 140%;
+	font-size: 1.2em;
+}
+
+
+a.with-bg {
+	display:block;
+	height:69px;
+}
+
+#premium-group-content div.logo-container {
+	height:73px; 
+	background:#e0e0e0; 
+	text-align:center; 
+	padding-top:2px; 
+	margin-bottom:10px;
+	background-repeat: no-repeat;
+}
+#premium-group-content div.logo-100-per {
+	width:971px;
+}
+
+#premium-group-content div.logo-66-per {
+	float:left;
+	width:648px;
+	border-right:5px solid #FFF;
+}
+
+#premium-group-content div.logo-33-per {
+	float:left;
+	width:318px;
+	border-right:5px solid #FFF;
+}
+#premium-group-content div.selected-img {
+	border: 2px solid #E97F02 !important;
+	margin-right: 5px;
+}
+#premium-group-content div.tool-item.selected {
+	border: none;
+}
+
+#premium-group-content div.logo-container p {
+	height:3em; 
+	width:20em; 
+	padding:5px;
+	margin: 0 auto;	
+}
+
+#premium-group-content div.logo-container p.change-logo {
+	height: auto;
+	opacity:.7; 
+	background-color: #fff; 
+	border: 2px solid #006567;
+	white-space: nowrap;
+	margin-top: 5px;
+}
+
+/* defs for the columns in the content section */
+.col_one, .col_two, .col_three, .col_5050 {
+	display: inline;
+	float: left;
+	overflow: hidden;
+}
+.col_one {
+	width: 315px;
+}
+.col_two {
+	width: 650px;
+}
+.col_three {
+	width: 985px;
+}
+.col_5050 {
+	width: 482px;
+}
+.col_margin {
+	margin-right: 20px;
+}
+/* .col_two.col_margin.indent-left {
+	width: 642px;	
+}
+.col_one.col_margin.indent-left {
+	width: 307px;	
+}*/
+/* ff and ie clearing of floats 
+   http://positioniseverything.net/easyclearing.html
+*/
+.col_one:after, .col_two:after, .col_three:after, .col_5050:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+
+
+/* container for the about, help, language navigation on the top
+right */
+#header-navhelp {
+ width: 100%;
+ overflow: hidden;
+ text-align: right;
+ white-space: nowrap;
+}
+#header-navhelp ul {
+ float: right;
+ list-style: none;
+ margin: 5px 0 0 0;
+ padding: 0 10px 0 0;
+}
+#header-navhelp ul li {
+ border-right: 1px solid #646365;
+ float: left;
+ line-height: 12px;
+ }
+#header-navhelp ul li a {
+ padding: 0 8px 0 8px;
+}
+
+#header-navhelp ul li#language_link a {
+ padding: 0 54px 0 8px;
+}
+
+#header-navhelp ul li a#navmini_selected {
+ background:#A7CF4A url(/img/xing/nav_bg_active.gif) repeat-x center center;
+}
+#header-navhelp ul li.last {
+ border-right: none;
+}
+
+h1#header-logo {
+	clear: both;
+	float: left;
+	height: 59px;
+	padding: 0 0 0 7px;	
+	margin:-12px 0 0 0;
+	width: 156px;
+}
+/* h1 in header replaced by XING logo */
+h1#header-logo a,
+h2#header-logo-openbc a{
+	display:block;
+}
+h1#header-logo a span,
+h2#header-logo-openbc a span{
+	display: none;
+}
+
+h2#header-logo-openbc{
+	float:left;
+	margin-top:30px;
+}
+
+#header-status {
+	float: right;
+	text-align:right;
+	line-height:1.1em;
+	border-right: 1px dotted #7F7F7F;
+	margin: 10px 20px 0 0;
+	padding: 9px 20px 3px 0;
+}
+
+#header-search {
+	float: right;
+	margin: 0;
+	padding: 12px 0 0 0;
+}
+
+#header-search button,
+#header-search input {
+	float:left;
+}
+
+#header-search label {
+	float:left;
+	font-size: 1.2em;
+	font-weight: bold;
+	line-height:16px;
+	margin:6px 5px 0 0;
+}
+#header-login {
+	float:right;
+	border-right: 1px dotted #7F7F7F;
+	padding-right:16px;
+	margin-right:20px;
+}
+#header-login td {
+	padding-right: 5px;
+}
+#header-login td a {
+	text-decoration: underline;
+}
+
+/* def for the 1st level navigation */
+#navmain {
+	background:#FFF url(/img/xing/nav_bg_border.gif) no-repeat top center;
+	clear: both;
+	overflow: hidden;
+	padding: 2px 0 1px 0;
+	position: relative;
+	white-space: nowrap;
+	width: 985px;
+	margin: 0 auto;
+}
+#navmain ul {
+	background:#006567 url(/img/xing/nav_bg_all.gif) no-repeat left top;
+	list-style: inside;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	width: 100%;
+}
+#navmain ul li {
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+#navmain .max_header {
+ float: right;
+ font-size: 110%;
+ font-weight: bold;
+ color: #646365;
+ padding: 2px 8px 0 0;
+}
+.min_header {
+ font-weight: bold;
+ color: #646365;
+}
+
+/* def for the 2nd level navigation */
+#navsub {
+	background:url(/img/xing/nav_bg_border.gif) no-repeat top center;
+	clear: both;
+	position: relative;
+	padding-top:1px;
+	white-space: nowrap;
+	width: 985px;
+	margin: 0 auto;	
+	margin-bottom: 20px;
+}
+#navsub ul {
+	background: url(/img/xing/bg_top.jpg) no-repeat top left;
+	list-style: none;
+	margin: 0;
+	overflow: hidden;
+	padding: 5px 0 0 0;
+	width: 100%;
+}
+#navsub ul li {
+	float: left;
+}
+/* single slot search in the top right corner*/
+#header-search-field {
+	padding: 1px;
+	margin: 0 3px 0 0;
+	width: 210px;
+}
+
+/* block display for labels within unsorted lists with "form" class attribute */
+ul.form * {
+}
+
+ul.form li {
+	overflow:hidden;
+	/* height:1%; */
+	padding:0;
+}
+
+ul.form.spacy li {
+	padding-top:.5em;
+}
+
+ul.form li div.note{
+	color: #999;
+	display:block;
+	margin:.2em 0;
+	padding-left: 22px;
+	line-height: 1.2em;
+}
+
+ul.form li input {
+	float:left;
+}
+
+ul.form li label {
+	margin-left:22px;
+	padding:3px 0 2px 0;
+	line-height:1.1em;
+	display:block;
+}
+
+/* headline for breadcrumbs */
+h2.path {
+	font-size: 1em;
+	font-weight: normal;
+	margin-bottom: 0;
+	padding-left: 8px;
+	padding-bottom: 3px;
+	clear: both;
+	overflow: hidden;
+}
+h2.path a {
+	color: #666;
+	text-decoration: none;
+	margin-right: 5px;
+	padding-bottom: 5px;
+}
+h2.path a:hover{
+	text-decoration: underline;
+}
+/* headline def for this list */ 
+h2.start-page-info-box {
+	color:#006567; 
+	margin:0;	
+	padding:5px 0 2px 8px;	
+	background:url(/img/xing/bg_box_650_top.gif) no-repeat top;	
+}
+
+h2.help-headline {
+	font-size: 1.3em;
+	margin: 15px 0 2px 0;	
+	background:#D8D8C7 url(/img/xing/bg_box_5050col_grad.gif) no-repeat top left;	
+}
+
+h2.headline-3col {
+	font-size: 1.3em;
+	margin: 15px 0 2px 0;	
+	background:#D8D8C7 url(/img/xing/bg_box_3col_grad.gif) no-repeat top left;	
+}
+
+/* headline def for this list */ 
+div.col_5050 h2.event-box{
+	background:#D8D8C7 url(/img/xing/bg_box_50_50col_grad.gif) no-repeat top left;
+	font-size: 1.3em;
+	line-height: 1.9em;
+	padding: 0 8px;
+}
+/* headline def for this list */ 
+div.col_two h2.event-box{
+	background:#D8D8C7 url(/img/xing/bg_box_2col_grad.gif) no-repeat top left;
+	font-size: 1.1em;
+	line-height: 120%;
+	padding:6px 4px 6px 8px;
+	overflow:hidden;
+}
+
+
+/* headline def for the groups of a single category page in groups 
+will be used on pages, where two result lists are on one page */
+div.headline-double-lists h3 {
+	border-bottom: 1px dotted #999; 
+	/*border-top: 1px dotted #999; */
+	line-height: 1.61em;
+/*	font-size: 1.2em;
+	padding: 0 0 0 24px;*/	
+	font-size: 1.4em;
+	padding: 0 0 0 8px;	
+	margin:0;
+	color: #006567;
+	/*background: url(/img/xing/icn_headline.gif) no-repeat left;*/ 
+}
+div.headline-double-lists {
+/*	background: url(/img/xing/icn_headline.gif) no-repeat left; 
+	padding-left: 30px;*/
+}
+
+/* topline def for the article overview in a single forum */
+div.topline-grey {
+	background:#ECECE3;
+	padding:5px 0px 5px 10px;
+	width: 975px;
+	font-weight:bold;
+	margin-top:10px;
+	overflow: visible;
+}
+
+/* links and headlines for create event box */
+h2.create-event {
+	padding: 0 5px 8px 0;
+	margin: 0 15px 0 0 ;
+	border-bottom: 1px dotted #D5D6CC; 
+}
+h3.create-event {
+	border-bottom: 1px solid #D5D6CC;
+	padding: 15px 5px 15px 35px;
+	margin:0 15px 0 0;
+}
+h3.create-event a {
+	text-decoration: none;
+}
+h3.create-event a:hover {
+	text-decoration: underline;
+}
+.phone-conf-pin-tel {
+	 font-size: 2em; 
+	 font-weight: bold; 
+	 display: block; 
+	 margin: .2em 0 .5em 0;
+}
+/*Contacts path view */
+.connection-path {
+	overflow: hidden;
+	/* height:1%; */
+	background: url(/img/xing/bg_dot_contact_path.gif) no-repeat 8px 20px;
+	margin: 0 4px;
+	padding: 4px 0;
+}
+div.connection-path.even {
+	background-color:#ECECE4;
+}
+div.connection-path.odd {
+	background-color:#FFF;
+}
+div.connection-path div {
+	float:left;
+}
+div.connection-path div.photo img {
+	width: 30px;
+	height: 40px;
+	margin: 0 4px;
+}
+div.connection-path div.connection {
+	padding: 0 8px 0 4px;
+	/* mit 120 brichts erst ab 6 in einer reihe um
+	width: 120px;*/
+	width: 140px;
+	overflow: hidden;
+}
+div.even div.connection, 
+div.even div.photo {
+	background: #ECECE4;
+}
+div.odd div.connection,
+div.odd div.photo {
+	background: #FFF;
+}
+div.odd div.last {
+	background: #FFF;
+}
+div.even div.last {
+	background: #ECECE4;
+}
+div.connection-path div.play {
+	float: right;
+	text-align:right;
+	width:40px;
+}	
+div.connection-path div.play img {
+	width:32px;
+	height:32px;
+}	
+div.connection-path div div.two {
+	width: 464px;
+}
+div.connection-path div div.three {
+	width: 309px;
+}
+div.connection-path div div.four {
+	width: 232px;
+}
+div.connection-path div div.five {
+	width: 185px;
+}
+div.connection-path div div.six {
+	width: 154px;
+}
+div.connection-path div div.seven {
+	width: 132px;
+}
+/* contact page business details */
+table.contact-details {
+}
+table.contact-details td {
+	padding: 5px 5px 5px 8px;
+	vertical-align: top;
+}
+table.contact-details td.first {
+	font-weight: bold;
+}
+table.contact-details tr.odd {
+	background: #ECECE4;
+}
+table.contact-details td a {
+	text-decoration: underline;
+}
+table.contact-details td a:hover {
+	text-decoration: underline;
+}
+table.contact-details td p {
+	/*float: left;
+	padding-right: 10px;
+	width: 220px;*/
+	margin-bottom: 5px;
+}
+table.contact-details td p img {
+	margin-right: 1px;
+	vertical-align: middle;
+}
+/* my contact page, additional current company list */
+ul.company-list {
+	clear: both;
+}
+/* height:1% is def in ie.css, because of opera 8.5 */
+ul.company-list li {
+	overflow: hidden; 
+}
+/* for both company lists on my contact page */
+ul.company-list li div.bullit,
+ul.company-list li div.num {
+	float: left;
+	width: 4%;
+	padding-right: 2px;
+}
+ul.company-list li div.bullit img {
+	margin-top: 5px;
+}
+ul.company-list li div.comp {
+	float: left;
+	width: 51%;
+}
+ul.company-list li div.date {
+	float: right;
+	width: 118px;
+}
+/* see below td ...
+ul.company-list li div.link {
+	float: left;
+	width: 17%;
+	white-space: nowrap;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: center;
+	margin: 0 0 0 4px;
+}*
+/* current company */
+td.company-list div.comp {
+	float: left;
+	width: 55%;
+	padding-right: 2px;
+}
+td.company-list div.date {
+	float: right;
+	width: 118px;
+}
+ul.company-list li div.link,
+td.company-list div.link {
+	float: left;
+	width: 17%;
+	white-space: nowrap;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: center;
+	margin: 0 0 0 4px;
+	padding-top: 2px;
+}
+ul.company-list div.link a,
+td.company-list div.link a,
+table.contact-details tr td.last a.weblink {
+	text-decoration: none;
+	vertical-align: middle;
+	color: #006567;
+	font-size: 0.8em;
+	text-transform: uppercase;
+}
+ul.company-list div.link a:hover,
+td.company-list div.link a:hover,
+table.contact-details tr td.last a.weblink:hover {
+	text-decoration: underline;
+	color: #006567;
+}
+div.link img.weblink,
+table.contact-details tr td.last img.weblink {
+	margin: 0 3px 0 0;
+}
+
+/* profile weblinks
+ul.company-list li div.link {
+	font-size: 0.8em;
+}
+td.company-list div.link {
+	font-size: 0.8em;
+}
+td.company-list div.link a{
+	color: #006567;
+}
+td.company-list div.link a:hover {
+	color: #006567;
+}
+ul.company-list li div.link a:hover {
+	color: #006567;
+}
+ul.company-list li div.link a {
+	color: #006567;
+} */
+/* first used on guestbook page 202 */
+p.even {
+	padding: 5px 8px;
+	background: #ECECE4;
+}
+p.odd {
+	padding: 5px 8px;
+	background: #FFF;
+}
+
+/* user images in the lists */
+h2.user-box{
+	font-size: 1.3em;
+	margin: 15px 0 2px 0;	
+	background:#D8D8C7 url(/img/xing/bg_box_1col_grad.gif) no-repeat top left;
+}
+/* user lists, ie on the startpage */
+ul.user-box li {
+	border-bottom: 1px solid #D8D8D8;
+	margin: 0 0 2px 0;
+	overflow: hidden;
+	padding: 0 5px 2px 8px;
+	clear:both;
+	display: block;
+	/* height: 1%; */
+}
+ul.user-box li p.no-match {
+	margin: 0;
+	padding: 0;
+	height: 40px;
+}
+/* box with latest articles on a groups page */
+ul.groups-latest-articles p {
+	float: left;
+	margin: 0;
+	overflow:hidden;
+	padding: 0; 
+	width: 299px; 
+}
+/* with bulb on the right */
+ul.groups-latest-articles p.new {
+	width: 270px; 
+}
+ul.groups-latest-articles img {
+	float: right; 
+}
+ul.groups-latest-articles a {
+	white-space: nowrap; 
+	/* extra for opera 8.5 */
+	text-decoration: underline;
+}
+
+ul li.list-no-photo {
+	padding: 5px 10px 5px 10px;
+}
+ul.raquo-list li {
+	background:url(/img/xing/icn_raquo.gif) no-repeat 0 0.45em; 
+	padding-left:15px;
+	margin-bottom:5px;
+}
+/* more link */
+p.user-box {
+	text-align: right;
+	/*border-bottom: 1px solid #D8D8D8;*/
+	padding-right: 10px;
+}
+ul.user-box li img.user-box {
+	margin: 0 5px 0px 0;
+    float: left;
+	width: 30px;
+	height: 40px;
+	border: 0;
+}
+ul.user-box li span {
+	float: left;
+	width: 240px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+ul.user-box li span.key {
+	width: 40%;
+}
+
+ul.user-box li span.value {
+	width: 60%;
+}
+/* "more" link at the end of the list */
+p.user-box a {
+	text-decoration: none;
+	font-weight: bolder;
+}
+/* categorie links in box on events page */
+ul.user-box li a.categories {
+	float: left;
+	padding: 2px 0 2px 0;
+	text-decoration: none;
+}
+ul.user-box li a.categories:hover {
+	text-decoration: underline;
+}
+/* width: auto, because of declaration in main.css for spans inside of user-box */
+ul.user-box li span.numbers {
+	float: right;
+	width: auto;
+}
+ul.user-box li span.birthday {
+	float: right;
+	width: 40px;
+	text-align: center;
+}
+ul.user-box li span.bday-name {
+	float: left;
+	width: 200px;
+	overflow: hidden;
+	display: block;
+	white-space: normal;
+}
+ul.user-box li span.bday-photo {
+	float: left;
+	width: 40px;
+	display: block;
+}
+ul.user-box li span.today {
+	font-weight: bold;
+	color: #006567;
+	background: #CFDC00;
+}
+
+ul.user-box li.non-premium {
+	color:#006567;
+}
+ul.user-box li.non-premium a {
+	color:#006567;
+	font-weight:bold;
+}
+.user-name {
+	font-weight: bold;
+}
+/* search form for advanced search site*/
+#advanced-search-form h3 {
+	margin: 15px 0 10px 0;
+	padding: 0 10px;
+	line-height: 2em;
+	background: #D8D8C7 url(/img/xing/bg_box_1col_grad.gif) no-repeat top;
+}
+/* search form for advanced search site*/
+#advanced-search-form input.text, #advanced-search-form select  {
+	margin: 0 0 10px 0;
+	width: 290px;
+}
+#advanced-search-options input {
+	width: auto;
+	margin: 0;
+}
+/* search form for advanced search site */
+#advanced-search-form label  {
+	margin: 0;
+	display: block;	
+}
+/* search form for advanced search site */
+#advanced-search-form div.search-box {
+	padding:0 10px 0 8px;
+}
+/* for lists with the i-image */
+div.info-list {
+	border-top: 1px dotted #CCC; 
+	border-bottom: 1px dotted #CCC; 
+}
+div.info-list ul {
+	list-style: none; 
+	padding: 10px 0px 10px 0px;
+	margin:0; 
+}
+div.info-list ul li {
+	padding: 0 0 0 22px;
+	background:url(/img/xing/icn_information.gif) no-repeat;
+}
+ul.info-list{
+	list-style: outside; 
+	padding: 0;
+	margin:0; 
+}
+ul.info-list li{
+	background:url(/img/xing/icn_information.gif) no-repeat top left;
+	padding: 1px 0 .5em 22px;
+	margin:0;
+}
+/* needed for page 720_invite_people */
+ul.info-list li ol li {
+	background:none;
+	padding: 0;
+	list-style:decimal; /* It is necessary for displaying numbers in an ordered list in Opera or IE */
+}
+
+/* ??? maybe we can abandon this dls */
+#todo dt, #todo dd {
+	background: /*red*/#E9E8DD; 
+	float:left; 
+	margin:0;
+	padding:5px; 
+}
+#todo dt {
+	margin: 0 1px 1px 1px;
+	width:526px;
+}
+#todo dd {
+	margin: 0 0px 1px 0;
+	width:100px;
+}
+/*
+The id topic are used for the power search overview. 300_Search/302_power_search_inc.php
+*/
+#topic table {
+    display: block;
+	background:#FFF url(/img/xing/bg_box_482_bottom.gif) no-repeat bottom;
+	margin:  0; 
+	padding: 0; 
+    width: 482px;
+    clear: both;
+	white-space: normal;
+}
+#topic td {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 6px;
+}
+#topic td.first {
+	background-color:#E9E8DD;
+	width: 392px;
+}
+#topic td.last {
+	background-color:#E9E8DD;
+	width: 84px;
+ 	vertical-align: top;
+}
+#topic .white {
+	padding-top:0px;
+	padding-bottom:0px;
+}
+#topic a {
+	text-decoration:none;
+}
+
+#topic a:hover {
+	text-decoration:underline;
+}
+/* message toolbar on read message page */
+.tool-box-photo {
+	float:left; 
+	padding:0 8px 10px 8px; 
+	margin-left:2px;
+	width: 70px;
+	height: 93px;
+}
+
+.tool-box-info {
+	padding:0px 0 5px 95px; 
+	margin:0; 
+}
+div.tool-box {
+	border-top: 1px solid #ccc;
+}
+
+div.tool-item {
+	margin: 0 0 10px 0;
+	clear:both;
+}
+div.tool-item.selected {
+	background:#ECECE4;
+}
+div.action-text {
+	padding: 5px 10px 10px 10px;
+}
+div.message-body {
+	border-top:1px dotted #999; 
+	border-bottom:1px dotted #999;
+	margin: 0 0 1em 0; 
+	padding:1em 0;
+}
+
+
+/* tool box behaviour in sidebar */
+.col_one div.tool-item{
+	border-bottom: 1px solid #ccc;
+	margin:0;
+	padding:0;
+}
+/*.col_one div.tool-item.first{
+	border-top: 1px solid #ccc;
+}*/
+.col_one div.tool-item h4{
+	font-size:1em; 
+	margin:0;
+	padding:0;
+}
+/* tool box behaviour in search box on event pages */
+.col_three div.tool-item h4,
+/* tool box behaviour in search box on groups pages */
+.col_two div.tool-item h4{
+	font-size:1.2em; 
+	margin:0;
+	padding:0;
+}
+
+div.tool-item h4 a,
+div.tool-item h4 span {
+	background-position: 4px 5px;
+	background-repeat: no-repeat;
+	display:block;
+	margin:0;
+	padding: 8px 0 6px 28px;
+	text-decoration: none;
+}
+div.tool-item h4 a:hover, 
+div.tool-item h4 a:hover {
+	background-color: #ECECE4 !important;
+}
+.col_one div.tool-item h4 a img{
+	float:right;
+	padding-right:4px;
+}
+/* tool box behaviour in search box on event pages */
+.col_three div.tool-item h4 a img,
+/* tool box behaviour in search box on groups pages */
+.col_two div.tool-item h4 a img {
+	vertical-align: middle;
+}
+
+/* two third info box with different actions on detail view of the group page */
+.two-third-box-top {
+	background:url(/img/xing/bg_box_650_top.gif) no-repeat top left; 
+	padding: 8px 0 0 0; 
+	overflow: hidden;	
+}
+.two-third-box-bottom {
+	background: url(/img/xing/bg_box_650_bottom.gif) no-repeat bottom left; 
+	padding: 0 0 0 10px; 
+	margin-bottom: 20px;
+	overflow: hidden;	
+}
+.two-third-box-bottom.joingroup {
+	background: url(/img/xing/bg_box_650_bottom_midline.gif) no-repeat bottom left; 
+}
+.two-third-box-bottom-short {
+	background: url(/img/xing/bg_box_650_bottom_short.gif) no-repeat bottom left; 
+	padding: 0 0 5px 0; 
+	margin-bottom: 20px;
+	overflow: hidden;
+	height:1%;	
+}
+.two-third-box-middle {
+	background: url(/img/xing/bg_box_650_middle.gif) repeat-y left; 
+	padding: 10px; 
+}
+/* one third box with different actions on the about page of groups */
+.one-third-box-bottom {
+	background:url(/img/xing/bg_box_315_bottom.gif) no-repeat bottom left; 
+	margin: 0;
+	padding: 0 10px 0 10px;
+	overflow:hidden;
+}
+.one-third-box-top {
+	background:url(/img/xing/bg_box_315_top.gif) no-repeat top left; 
+	padding:4px 0 0 0;
+	width: 315px;
+}
+
+.one-third-box-top .table-list td,
+.one-third-box-top .table-list th {
+	padding:3px 3px 3px 3px;		
+}
+
+
+/* newslist at the bottom of the start-page */
+div.news-item {
+	border-top:1px solid #D8D8D8;
+	padding: 3px 0 0 0;
+}
+div.news-date {
+	float:left;
+	padding: 0 0 0 8px;
+}
+div.news-text {
+	margin: 0 0 0 80px;
+	/* for ie6 */
+	/* height:1%; */
+}
+div.news-text h4 {
+	margin:0;
+	padding:1px 0;						
+}
+div.news-footer {
+	clear:both; 
+	border-top:1px solid #d8d8d8; 
+	border-bottom:1px solid #d8d8d8; 
+	overflow:hidden; 
+	/* height:1%; */
+	padding:5px 10px 5px 0;
+}
+
+/* def for the profil completion - maybe we need this in the future */
+#bar {
+	background: url(/img/xing/bar_normal_all.gif) 1px 1px no-repeat;
+	border-top:1px solid #919191;
+	border-right:1px solid #D0D0D0;
+	border-bottom:1px solid #D0D0D0;
+	border-left:1px solid #919191;
+	padding:1px;
+	white-space:nowrap;
+	float:left;
+	margin-top:6px;
+	margin-right: 0px;
+	width:231px;
+}
+#bar img {
+	margin-left: 1px;
+}
+
+/* def for the members/search/groups section (301, 200, 700, 600) */
+table.table-list {
+	/* not consistent in all browsers, ie ignores it, 
+	we have to recheck all pages using this class def */
+	/*margin-bottom: 10px;*/
+}
+table#search-agent-list tr td {
+	vertical-align: top;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+table.table-list th {
+	padding: 8px 0px 5px 8px;
+	text-align: left;
+}
+table.table-list th.icons {
+	text-align: center;
+}
+table.table-list tr.even {
+	background: #ECECE4;
+}
+
+table.table-list td {
+	padding: 2px 0px 2px 8px;
+}
+div.groups table.table-list td {
+	padding: 4px 0px 4px 8px;
+}
+div.groups {
+	overflow: visible;
+}
+/* used first on 625_groups_inc category list */
+table.table-list td.last {
+	padding: 10px 20px 10px 0;
+	text-align: right;
+}
+/* used first on 625_groups_inc category list */
+table.table-list th.last {
+	padding-right: 10px;
+	text-align: right;
+}
+/* used for the pseudo header in a row of a table list */
+table.table-list h4 {
+	margin: 0px;
+	padding: 0px;
+	font-size: 1em;
+}
+table.table-list h4 a {
+	font-weight: bold;
+}
+table.table-list h4 a:hover {
+	text-decoration: underline;
+}
+table.table-list th.numbers,
+table.table-list td.numbers {
+	text-align: right;
+	padding-right: 10px;
+}
+
+table.table-list td.icons {
+	text-align: center;
+}
+/* Style defs are used on imprint page*/
+table.table-list td.head {
+	vertical-align: top;	
+	font-weight: bold;
+	padding-top: 5px;
+	width:250px;	
+	
+}
+table.table-list td.description {
+	vertical-align:bottom;
+	padding-top:5px;
+	width:400px;
+}
+/* cuts the text at the end of the line */
+table.table-list td p.longlines {
+	margin: 0;
+	overflow: hidden; 
+	padding: 0; 
+	white-space: nowrap; 
+}
+
+table.table-list div.main-cat-border {
+	height:20px;
+	background: url(/img/xing/bg_dotted_fake.gif) repeat-x left;  
+}
+
+
+table.table-list td.main-cat-border {
+	background: url(/img/xing/bg_dotted_fake.gif) repeat-x left;  
+}
+
+table.table-list td.main-cat-offer {
+	font-weight:bold;
+	background:#ffffff;
+	vertical-align:top;
+	width:122px;
+}
+
+table.table-list td.offer {
+	vertical-align:top;
+	padding-right:16px;
+	width:335px;
+}
+
+table.table-list tr.even td.free {
+	background: #ECECE4 url(/img/xing/bg_benefits_free_border.gif) repeat-y top left; 
+}
+
+table.table-list tr td.free {
+	vertical-align:middle;
+	text-align:center; 	
+	padding:3px 3px 3px 3px;
+	width:230px;
+	background: url(/img/xing/bg_benefits_free_border.gif) repeat-y top left; 
+}
+
+table.table-list tr td.premium {
+	vertical-align:middle;
+	text-align:center; 	
+	padding:3px 3px 3px 3px;
+	width:226px;
+	background: url(/img/xing/bg_benefits_premium_border.gif) repeat-y top left;
+
+}
+table.table-list tr.even td.premium {
+	background: #ECECE4  url(/img/xing/bg_benefits_premium_border.gif) repeat-y top left;
+}
+
+table.table-list tr.even td.new-article {
+	background: #ECECE4 url(/img/xing/icn_bulb.gif) no-repeat right 4px;
+	padding-right:20px;
+}
+
+table.table-list td.new-article {
+	background: url(/img/xing/icn_bulb.gif) no-repeat right 4px;	
+	padding-right:20px;
+}
+/* height and width for premium groups and non-premium groups lists*/
+table.table-list tr td div.group-list-width {
+	overflow: hidden;
+	height: 70px;
+}
+table.prem-group-list tr td div.group-list-width {
+	width: 300px;
+}
+table.group-list tr td div.group-list-width {
+	width: 382px;
+}
+/* def for the list view of the event on the myEvent page */
+table#event-list {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+table#event-list th {
+	padding: 3px 0px  3px 5px;
+	text-align: left;
+	white-space: nowrap;
+}
+table#event-list th.first {
+	padding: 3px 5px  3px 10px;
+}
+table#event-list th.last {
+	text-align: right;
+}
+table#event-list th.numbers {
+	text-align: center;
+}
+table#event-list td.date {
+	background: #CBDF8D url(/img/xing/bg_box_event_list.gif) repeat-x top;
+	font-weight: bold;
+	padding: 4px;
+	text-align: center;
+}
+table#event-list tr td {
+	border-top: 1px solid #FFF;
+}
+table#event-list td {
+	padding: 1px 5px 1px 5px;
+}
+table#event-list td.first {
+	/*vertical-align: top;*/
+	padding: 1px 5px 1px 10px;
+}
+table#event-list td.last {
+	text-align: center;
+	padding: 1px 5px 1px 5px;
+}
+table td.numbers {
+	text-align: right;
+	padding: 1px 5px 1px 5px;
+}
+table#event-list td.yes {
+	color: #0C0;
+}
+table#event-list td.no {
+	color: #C00;
+}
+table#event-list tr.even {
+	background: #ECECE4;
+}
+
+sup.official {
+	color:#E97F02; 
+	text-transform: lowercase;
+}
+h1 sup.official {
+	font-size: 0.6em;
+	font-weight: normal;
+}
+
+table.category-list td, table.table-list td.rubric {
+	padding: 8px 4px 8px 8px;
+}
+
+table.table-list td.rubric a {
+	text-decoration:none; 
+}
+
+
+/* event details table */
+table#event-detail tr td {
+	padding: 5px 5px 5px 8px;
+	vertical-align: top;
+}
+table#event-detail tr td a {
+	font-weight: normal;
+}
+/* event back link */
+span.back, a.back {
+	color:#333;
+	font-weight:normal;
+	font-size:.9em;
+}
+
+/* groups moderator table on the groups details start page (601) */
+table#groups-moderator-table td {
+	vertical-align: top;
+	padding:4px 0px 4px 8px;
+}
+
+.col_one table#groups-moderator-table td {
+	padding: 5px; 
+}
+table#groups-moderator-table thead td {
+	border-bottom: 1px solid #D8D8D8;
+}
+table#groups-moderator-table tbody tr.last td {
+	border-bottom: 1px solid #D8D8D8;
+}
+table#groups-moderator-table tbody tr.first td {
+	border-top: 1px solid #D8D8D8;
+}
+
+/* groups forms styles */
+p.groups-form-sub-header {
+	padding:15px 0 5px 0; 
+	margin-bottom:0;
+	clear:both;
+}
+
+div.groups-input-element {
+	width:16em;
+	float:left;
+}
+
+
+/* list in terms and conditions */
+
+#data_protection div#content ul {
+
+	list-style-type: disc; 
+	list-style-position: outside;
+	padding-left: 20px;
+}
+#terms-and-conditions div#content ol {
+	margin:0;
+	padding:0 0 0  30px;
+}
+
+/* create search agent page (307) */
+#search-agent-form ul {
+	list-style-type: disc;
+	margin: 5px 0 10px 0;
+}
+#search-agent-form img {
+	margin: 5px 5px 0px 0px;
+}
+/* used in 407_privacy_settings */
+#privacy-settings-form h3 {
+	margin: 10px 0 5px 0;
+	padding: 0;
+}
+
+/* create event */
+#create-event-first-step img {
+	margin-right: 5px;
+	float:left;
+}
+
+#create-event-first-step p.add-text {
+	margin: 0 8px 10px 8px;
+	height: 4em;
+}
+
+/* categories table at the botton of the single-slot search result page (306) */
+table#single-slot-result-categories  {
+	width: 985px;
+}
+table#single-slot-result-categories td {
+	padding: 5px 10px;
+}
+table#single-slot-result-categories tr.even {
+	background: #ECECE4;
+}
+
+table.start-page-info-box {
+	display: block; 
+	background:url(/img/xing/bg_box_650_bottom.gif) no-repeat bottom; 
+	margin:  0; 
+	padding: 0;  
+	width: 650px; 
+	clear: both;
+	white-space: normal;	
+}
+table.start-page-info-box td {
+	padding: 5px 5px 5px 8px;
+	background:	#ECECE4;
+}
+
+table.start-page-info-box td.text {
+	width:549px;
+}
+
+table.start-page-info-box td.link {
+	width:99px;
+}
+
+table.start-page-info-box .text a{
+	display: block;
+	width:510px;
+	margin:5px 0 0 1px; 
+	float:left;
+}
+
+table.start-page-info-box .text img{
+	float:left;
+	margin:0 4px 0 0;
+}
+
+table.start-page-info-box td.info {
+	background:	#FFFFFF;
+	padding-bottom:5px;
+}
+
+
+/* class for the fold/unfold image, is also used in the fold_unfold.js  */
+.fold-img {
+	vertical-align: middle; 
+	/*float: right;*/
+}
+/* create new event box */
+.icn-right-img {
+	vertical-align: middle; 
+	float:right;
+}
+/* text box needed for left margin */
+.text-box {
+	margin-left: 8px;
+}
+/* icon on the left of search box headline */
+h3.tool-box-search-icn {
+	background: url(/img/xing/icn_search.gif) no-repeat left top;
+}
+/* groups logo in the top right corner */ 
+.groups-logo {
+	border: 1px solid #ECECE4;
+}
+/* contact pages */
+/** my contact page **/
+.bg-contact-info-top {
+	background: url(/img/xing/bg_box_985_shaddow_top.gif) no-repeat left top;
+	padding-top: 6px;
+}
+.bg-contact-info-bottom {
+	background: url(/img/xing/bg_box_985_shaddow_bottom.gif) no-repeat left bottom;
+	overflow: hidden;
+	padding: 0 0 4px 8px;
+}
+div.col_one .bg-statistics-top {
+	background:url(/img/xing/bg_box_315_shaddow_top.gif) no-repeat top; 
+	padding: 6px 0 0 0;
+}
+div.col_one .bg-statistics-bottom {
+	background:url(/img/xing/bg_box_315_shaddow_bottom.gif) no-repeat bottom; 
+	margin: 0; 
+	padding: 5px 0 10px 15px;
+	overflow:hidden;
+}
+ul.bg-statistics-bottom li {
+	clear: both;
+	padding: 2px 0;
+	margin-right: 15px;
+	width:285px; 
+}
+.contact-info-address {
+	padding: 2px 0px;
+	overflow: hidden;
+	float: left;
+	width: 396px;
+}
+.contact-info-contacts-container {
+	float: left;
+	overflow: hidden;
+	width: 262px;
+}
+.contact-info-contacts {
+	width: 230px; 
+	padding: 0 10px 0 20px;
+	text-align:left;
+}
+.contact-info-contacts p {
+	margin-bottom: 5px;
+}
+.contact-info-contacts h3 {
+	margin: 30px 0 5px 0;
+	padding: 0;
+}
+ul.contactpage-stats li {
+	clear: both;
+	padding-left: 12px;
+	background: url(/img/xing/bullit_brown_shaddow.gif) no-repeat 0 5px;
+}
+ul li.activity {
+	 padding: 1px; 
+	 margin: 5px 0  0 12px; 
+	 border: 1px solid #999; 
+	 width: 159px; 
+	 background: url(/img/xing/ill_activity_inactive.gif) no-repeat 1px 1px;
+	 /* for ie 7 */
+	 line-height: 1px;
+}
+ul li.activity div.act {
+	overflow: hidden; 
+	height: 12px;
+}
+.contact-info-localizer {
+	background: url(/img/xing/ill_world_big.gif) no-repeat top center;
+	float: left;
+	width: 291px;
+}
+.contact-info-inv-status {
+	float: left;
+	width: 310px;
+}
+.contact-info-join {
+	position:relative; 
+	width:530px; 
+	height:180px; 
+	margin-left:20px; 
+	padding:4px; 
+	background:#FFF; 
+	float:left;
+}
+/* profile completeness meter*/
+div.profil {
+	 padding: 1px; 
+	 margin: 7px 5px 0 0; 
+	 border: 1px solid #999; 
+	 width: 219px; 
+	 background: url(/img/xing/ill_profile_compl_inactive.gif) no-repeat 1px 1px;
+}
+/* teaser "buttons" */
+.teaser-button {
+	background: url(/img/xing/btn_invite_people_dummy.jpg) no-repeat; 
+	width: 315px; 
+	height: 71px; 
+	padding: 10px 0 5px 15px;
+	cursor: pointer;
+}
+.teaser-button h4 {
+	font-size: 1.2em;
+	margin: 0 0 5px 0;
+	padding: 0;
+}
+.teaser-button h4 a {
+	color: #8DAD4C;
+}
+.teaser-button a {
+	text-decoration: none;
+}
+.teaser-button a:hover {
+	text-decoration: underline;
+}
+
+/* Extra class for lists which look like contact-info-contacts lists but being used in another context */ 
+li.contact-statistics {
+	padding-left: 12px;
+	background: url(/img/xing/bullit_brown_shaddow.gif) no-repeat 0 5px;
+}
+li.contact-activity-bar {
+	padding:1px; 
+	width: 159px;
+	background: url(/img/xing/ill_activity_inactive.gif) no-repeat 1px 1px; 
+	border: 1px solid #999; 
+	margin: 5px 0  0 12px; 	
+}
+
+/* double arrow (&raquo;) befor links on single message page */
+a.raquo {
+	text-decoration: none;
+}
+a.raquo:hover {
+	text-decoration: underline;
+}
+/* container to center event logos */
+.event-logo {
+	width: 311px;
+	border: 1px solid #999;
+	text-align: center;
+	padding: 1px;
+}
+/* different levels of opacity for links in tag cloud */
+a.tagcloud0:link, a.tagcloud1:link, a.tagcloud2:link, a.tagcloud3:link {
+	text-decoration: underline;
+	font-weight: normal;
+}
+
+a.tagcloud0:link, a.tagcloud0:active, a.tagcloud0:visited, a.tagcloud0:hover{color:#999; text-decoration:underline;}
+a.tagcloud1:link, a.tagcloud1:active, a.tagcloud1:visited, a.tagcloud1:hover{color:#666; text-decoration:underline;}
+a.tagcloud2:link, a.tagcloud2:active, a.tagcloud2:visited, a.tagcloud2:hover{color:#333; text-decoration:underline;}
+a.tagcloud3:link, a.tagcloud3:active, a.tagcloud3:visited, a.tagcloud3:hover{font-weight:bold; text-decoration:underline;}
+
+
+/* language select styles */
+
+#header-navhelp ul li#language_link {
+	border-right: 0 !important;
+	background: url(/img/xing/bg_language_select.gif) no-repeat top right;
+	height:15px;
+}
+
+#language-select {
+	font-size:1.2em;
+}
+#language-select li {
+/*	border:1px solid #FFF;*/
+	display: block;
+	margin:0;
+	padding:0;
+	white-space: nowrap;
+}
+#language-select li a {
+	display: block;
+	padding: 2px 10px 2px 10px;
+	text-decoration: none;
+}
+#language-select li a:hover {
+	background: #CCC;
+	text-decoration: none;
+}
+
+#header-language-selector {
+	text-align: left;
+	width:160px;
+	border:1px solid #D0D0D0; 
+	background-color:white; 
+	position:absolute; 
+	z-index:100;
+}
+
+
+/* when previewing an article */
+div.preview {
+	background-color:#eee;
+	padding: 3px 5px;
+}
+
+/* inline edit for ajax */
+div.inlineedit{
+	border: 1px solid #d5d6cc;
+	padding: 0 2px;
+}
+
+.inlineedit-input {
+	width: 100%;
+}
+
+.table-list div.inlineedit{
+	width: 638px;
+}
+
+/*.inlineedit-input, bringt probleme beim umbrechen */
+.inlineedit-display {
+	overflow:hidden;
+}
+
+/* tags */
+.table-list .inlineedit-display,
+.table-list input.inlineedit-input {
+	width: 636px;
+	overflow:hidden;
+}
+.contact-info-inv-status .inlineedit-display {
+	width: 274px;
+}
+.contact-info-inv-status .inlineedit-input {
+	width: 269px;
+}
+.contact-info-inv-status .inlineedit-display {
+	height: 70px;
+	overflow: auto;
+}
+/* memo */
+textarea.inlineedit-input {
+	height: 60px;
+}
+table.table-list textarea.inlineedit-input {
+	width: 636px;
+}
+div.contact-info-inv-status textarea.inlineedit-input {
+	width: 270px;
+}
+
+div.inlineedit.empty{
+	color:#bbb;
+}
+
+div.inlineedit.hover{ 
+	border-top: 1px solid #333;
+	border-left: 1px solid #333;
+	background-color:#FCFFCC;
+	cursor:text;
+}
+
+
+/* top link in long text areas */
+a.top-link{
+	background:url(/img/xing/icn_arrow_top.gif) no-repeat right;
+	border-bottom: 1px dotted #999;
+	display:block;
+	padding-right:12px;
+	text-align:right;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+/* privacy protection background */
+.privacy-protection {
+	height:64px;
+	padding-left: 100px;
+	background: url(/img/xing/privacy_protection.gif) top left no-repeat;
+	position: relative;
+}
+p.privacy-protection span.privacy-protection-txt {
+	position: absolute;
+	left: 100px;
+	bottom: 10px;
+}
+
+/* shareable links like invitation */
+tt,
+a.code{
+	font-size:1.1em;
+	/*display:block;*/
+	font-family: "Courier New", Courier, monospace;
+	text-decoration:none;
+}
+a.code:hover{
+	text-decoration:underline;
+}
+
+/* 4 and 5 column box as used in registration process */
+.box4-registration,
+.box-premium {
+/*	background: url(/img/xing/bg_box_4col_top.gif) no-repeat top left;*/
+	background: url(/img/xing/bg_box_985_top.gif) no-repeat top left;
+	margin-bottom:2em;
+}
+
+.box5-registration {
+/*	background: url(/img/xing/bg_box_5col_top.gif) no-repeat top left;*/ 
+	background: url(/img/xing/bg_box_985_top.gif) no-repeat top left; 
+	margin-bottom:2em;
+}
+
+.box4-registration ol,
+.box-premium ol {
+/*	background: url(/img/xing/bg_box_4col_bottom.gif) no-repeat bottom left;*/
+	background: url(/img/xing/bg_box_985_4_bottom.gif) no-repeat bottom left;
+	list-style: inside;
+	margin: 12px 0 0 0;
+	padding: 0 0 12px 0px;
+	overflow:hidden;
+}
+
+.box5-registration ol {
+/*	background: url(/img/xing/bg_box_5col_bottom.gif) no-repeat bottom left;*/
+	background: url(/img/xing/bg_box_985_5_bottom.gif) no-repeat bottom left;
+	list-style: inside;
+	margin: 12px 0 0 0;
+	padding: 0 0 12px 0px;
+	overflow:hidden;
+}
+
+
+.box4-registration ol li,
+.box5-registration ol li,
+.box-premium ol li {
+	display: block;
+	width:246px;
+	float:left;
+	padding:0;
+	margin:0;
+}
+
+
+.box5-registration ol li {
+	width: 197px;
+} 
+
+.box4-registration ol li span,
+.box5-registration ol li span,
+.box-premium ol li span {
+	font-weight:bold;
+	color:#006567;
+	display:block;
+	padding:15px 0 15px 75px;
+	background-repeat: no-repeat;
+	background-position: 18px center;
+	text-decoration:none;
+}
+
+.box4-registration ol li span, 
+.box5-registration ol li span {
+	color:#B8C910;
+	padding: 12px 10px 0px 75px;
+	background-position: 18px 0px;
+	height:28px;
+} 
+
+.box4-registration ol li.inactive span,
+.box5-registration ol li.inactive span,
+.box-premium ol li.inactive span{
+	color: #C5C5C5;
+	cursor: default;
+}
+
+.box-premium  ol li#step1 span{ background-image: url(/img/xing/num_1_premium.gif);}
+.box-premium  ol li#step2 span{	background-image: url(/img/xing/num_2_premium.gif);}
+.box-premium  ol li#step3 span{ background-image: url(/img/xing/num_3_premium.gif);}
+.box-premium  ol li#step4 span{ background-image: url(/img/xing/num_4_premium.gif);}
+
+.box-premium  ol li#step1.inactive span{ background-image: url(/img/xing/num_1_inactive.gif);}
+.box-premium  ol li#step2.inactive span{ background-image: url(/img/xing/num_2_inactive.gif);}
+.box-premium  ol li#step3.inactive span{ background-image: url(/img/xing/num_3_inactive.gif);}
+.box-premium  ol li#step4.inactive span{ background-image: url(/img/xing/num_4_inactive.gif);}
+
+.box4-registration ol li#step1 span,
+.box5-registration ol li#step1 span{ background-image: url(/img/xing/num_1_registration.gif);}
+.box4-registration ol li#step2 span,
+.box5-registration ol li#step2 span{ background-image: url(/img/xing/num_2_registration.gif);}
+.box4-registration ol li#step3 span,
+.box5-registration ol li#step3 span{ background-image: url(/img/xing/num_3_registration.gif);}
+.box4-registration ol li#step4 span,
+.box5-registration ol li#step4 span{ background-image: url(/img/xing/num_4_registration.gif);}
+.box5-registration ol li#step5 span{ background-image: url(/img/xing/num_5_registration.gif);}
+
+.box4-registration ol li#step1.inactive span,
+.box5-registration ol li#step1.inactive span{ background-image: url(/img/xing/num_1_inactive.gif);}
+.box4-registration ol li#step2.inactive span,
+.box5-registration ol li#step2.inactive span{ background-image: url(/img/xing/num_2_inactive.gif);}
+.box4-registration ol li#step3.inactive span,
+.box5-registration ol li#step3.inactive span{ background-image: url(/img/xing/num_3_inactive.gif);}
+.box4-registration ol li#step4.inactive span,
+.box5-registration ol li#step4.inactive span{ background-image: url(/img/xing/num_4_inactive.gif);}
+.box5-registration ol li#step5.inactive span{ background-image: url(/img/xing/num_5_inactive.gif);}
+
+/* grey box such as used in credit card frame */
+
+div.grey-box {
+	padding:8px 0 0 0;
+	background: url(/img/xing/bg_box_grey_top.gif) no-repeat top left;
+}
+div.grey-box div {
+	padding: 8px 16px 16px 16px;
+	background: url(/img/xing/bg_box_grey_bottom.gif) no-repeat bottom left;
+}
+
+/* shadows for payment icons */
+
+
+img.payment-icon  {
+
+	background: url(/img/xing/bg_payment.gif) no-repeat top left; 
+	padding: 1px 5px 5px 1px;
+}
+
+
+/* a non editable field section */
+
+.datafield {
+	
+	border: 1px solid #ccc;
+	padding: 2px 4px;
+	margin-bottom:.5em;
+}
+
+
+/* status box in membership area */
+div.membership-status {
+	clear:both;
+	overflow:hidden;
+	width:100%;
+	padding:4px 0 0 0;
+	background: url(/img/xing/bg_box_821_top.gif) no-repeat top left;
+}
+div.membership-status div.inner{
+	width:821px;
+	float:left;
+	padding: 4px 0 8px 0;
+	background: url(/img/xing/bg_box_821_bottom.gif) no-repeat bottom left;
+}
+
+div.membership-status img{
+	float:right;
+	margin:0 10px ;
+	padding:0;
+}
+
+img.membership-status{
+	float:right;
+	margin:4px 10px ;
+	padding:0;
+}
+
+div.membership-status div.content,
+div.membership-status h4{
+	padding: 2px 7px;
+	margin:0;
+}
+
+div.membership-status div.content {
+	background-color: #EFF0E6;
+	overflow:hidden;
+	/* height:1%; */
+	margin: 2px 1px;
+}
+
+div.membership-status div.content div.label {
+	width: 80px;
+	padding:0;
+	display:block;
+	float:left;
+}
+
+div.membership-status div.content div.value {
+	width: 600px;
+	display:block;
+	float:left;
+}
+
+/* teaser list for premium membership benefits */
+ul#premium-benefits{
+	list-style:none;
+	margin:0 0 1.5em 0;
+	padding:0;
+	border-bottom: 1px solid #D5D6CC;
+}
+ul#premium-benefits li {
+	color:#006567;
+	margin:0;
+	padding:4px;
+	font-size: 1.2em;
+	font-weight: bold;
+	border-top: 1px solid #D5D6CC;
+}
+ul#premium-benefits img {
+	width:33px;
+	height:33px;
+	vertical-align:middle;
+}
+div#premium-upgrade-done{
+	background: url(/img/xing/ill_thanks.gif) no-repeat center left;
+	clear:both;
+	padding: 16px 0 16px 60px;
+	margin:2em 0;
+	border-bottom: 1px solid #D5D6CC;
+	border-top: 1px solid #D5D6CC;
+}
+div#premium-upgrade-done strong{
+	color:#006567;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+/* teaser list for membership benefits */
+ul#member-benefits{
+	list-style:none;
+	margin:0 0 1.5em 0;
+	padding:0;
+	clear:both;
+}
+ul#member-benefits li {
+	background:  no-repeat 0 0;
+	clear:both;
+	color:#006567;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+ul#member-benefits li p {
+	border-bottom: 1px solid #D5D6CC;
+	margin:0 0 5px 41px ;
+	padding:7px 0;
+}
+
+/* Style definitions for edit my contact page */
+.contact-page-picture-col {
+	float:left;
+	padding-left:8px; 
+	padding-bottom: 10px;
+	width:140px; 
+	margin-right:10px;
+	overflow: hidden;
+}
+
+.contact-page-form-col {
+	float:left;
+	width:827px;
+	overflow: hidden;
+}
+
+.contact-page-form-col div.form-col-one {
+	float:left;
+	width:411px;
+	overflow: hidden;
+}
+
+.contact-page-form-col div.form-col-margin {
+	margin-right:5px;	
+}
+
+.contact-page-form-col .private {
+	padding-right:15px;
+	background:url(/img/xing/icn_lock.gif) no-repeat right;
+}
+
+.contact-page-form-col div.form-inner-col {
+	float:left;
+	width:194px;
+}
+.contact-page-form-col div.form-inner-col-margin {
+	padding-right:5px;
+}
+
+.contact-page-form-col div.form-inner-homepage-col {
+	float:left;
+	width:127px;
+	padding-right:10px;	
+	margin:0px;
+}
+.contact-page-form-col div.form-inner-year-col {
+	float:left;
+	width:253px;	
+}
+
+.contact-page-form-col select {
+	margin-right:5px;	
+}
+
+.contact-page-form-col textarea {
+	font-family: Arial, Helvetica, sans-serif;	
+	font-size: 1em;	
+	width:98%;
+	height:5.5em;	
+}
+
+/* A special style definition for the help pages */
+ol.faq-list{
+	margin:0px;
+}
+ol.faq-list li {
+	padding: 5px 0px;
+}
+
+ul.rubric li {
+	background: url(/img/xing/tab_inactive_arrow.gif) no-repeat  0 9px; 
+	padding-left:15px;
+	padding:5px 5px 5px 15px;
+	border-bottom:1px solid #ECECE4;
+}
+
+ul.rubric li.active {
+	background: url(/img/xing/tab_active_arrow.gif) no-repeat center left; 
+}
+ul.rubric li.description {
+	background:#ECECE4; 
+	overflow:hidden;
+}
+
+
+ul.rubric li.active a {
+	font-weight:bold; 
+}
+
+
+ul.rubric a {
+	text-decoration:none;
+}
+ul.rubric li.description a {
+	text-decoration:underline;
+}
+/* centers image in os specific link */
+img.os-icon{
+	vertical-align:middle;
+	padding-bottom:3px;
+}
+
+/* quotes in group  discussions*/
+cite.quote {
+	display: block;
+	border-left: 4px solid #888;
+	padding-left: 4px;
+	font-style: italic;
+	color: #888;
+}
+p.changed {
+	font-style: italic;
+	color: #E97F02;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* events: icon width height */
+img.event-icon {
+	width: 30px;
+	height: 40px;
+}
+img.icn {
+	width: 18px;
+	height: 18px;
+}
+/* javascript error message */
+#no-javascript{
+	font-size:1.2em;
+	font-weight:bold;
+	background: url(/img/xing/icn_error.gif) no-repeat 2px 1px;
+	color:#BC100E;
+	padding:4px 8px 3px 23px;
+	display:block;
+	margin:1px 0;
+	border:1px solid red;
+}/* fonts & colors */
+/* html is needed for ie */
+html {
+	font-size: 100%;
+}
+body {
+	background: #FFF;
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 62.5%; /* sets default font size to 10px, so 1.2em = 12px */
+	line-height: 140%;
+}
+/* please leave the star as it is, 
+important for all font-sizes for the child elements of this id */
+*#content {
+	font-size: 1.2em;
+	line-height: 140%;
+}
+
+textarea {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	border-top-color: #BFBFBF;
+	border-right-color:#E0E0E0;
+	border-bottom-color:#E0E0E0;
+	border-left-color: #BFBFBF;
+}
+
+input.text{
+	border-top-color: #BFBFBF;
+	border-right-color:#E0E0E0;
+	border-bottom-color:#E0E0E0;
+	border-left-color: #BFBFBF;
+}
+select {
+	font-size: 1.2em;
+	border-top-color: #BFBFBF;
+	border-right-color:#E0E0E0;
+	border-bottom-color:#E0E0E0;
+	border-left-color: #BFBFBF;
+} 
+textarea.non-premium, input.text.non-premium, select.non-premium {
+	background-color: #EFEFEF;
+}
+/* headline definition for every page */
+h1 {
+	color: #006567;
+	font-size: 1.4em;
+	font-weight: bold;
+	margin: 0;
+	padding: 1px 0 10px 8px;
+	clear: both;
+}
+h1.name {
+	color: #333;
+	font-size: 1.6em;
+	margin: 0 0 1em 0;
+	line-height: 1.1em;
+	padding: 0;
+}
+h2 {
+	font-size: 1.4em;
+	line-height: 120%;
+	margin: 0 0 8px 0;
+	padding: 0;
+}
+
+h2.user-box {
+	font-size: 1.1em;
+	line-height: 120%;
+	margin: 0 0 2px 0;
+	padding:6px 4px 6px 8px;
+}
+
+h2.help-headline {
+	font-size: 1.1em;
+	line-height: 120%;
+	margin: 0 0 2px 0;
+	padding:6px 4px 6px 8px;
+}
+
+h2.headline-3col {
+	font-size: 1.1em;
+	line-height: 120%;
+	margin: 0 0 2px 0;
+	padding:6px 4px 6px 8px;
+}
+
+h2.headline-power-search {
+	font-weight:normal;
+	margin:0; 
+	padding:5px 0 2px 5px; 
+	background:url(/img/xing/bg_box_482_top.gif) no-repeat top;
+}
+h3 {
+	font-size: 1.2em;
+	margin: 0 0 .5em 0;
+	padding: 0;
+}
+h4 {
+	font-size:1em;
+	margin:.75em 0 1px 0;
+	padding:0;
+}
+
+h4 a{
+	text-decoration:none;
+}
+
+a {
+	color: #333;
+}
+
+.no-ul a,
+a.no-ul  {
+	text-decoration: none;
+}
+
+.no-ul a:hover,
+a.no-ul:hover  {
+	text-decoration: underline;
+}
+label.text-field{
+	font-weight: bold;
+}
+label {
+	font-weight: normal;
+}
+/* headline with fold/unfold mechanism */
+/* ??? ausgemustert */
+h3.h3box {
+	/*border-bottom: 1px solid #CCC; */
+	font-size:1.2em; 
+	color:#333; 
+	cursor: pointer;
+	line-height:1.2em;
+	margin:0; 
+	padding:5px 0 8px 36px;
+	overflow: hidden;
+	background-position: 8px 4px;
+	background-repeat: no-repeat;
+}
+/* headline for tool-boxes without fold/unfold mechanism */
+h3.h3box#groups-search-headline {
+	cursor: default;
+	padding-left: 36px;
+	background-position: 8px 0;
+}
+
+#privacy-settings-form h3 {
+	margin: 10px 0 5px 0;
+	padding: 0;
+}
+/* headline with fold/unfold mechanism for the tool box single messages */
+h4.h4box {
+	border-bottom: 1px solid #CCC;
+	font-size:1em; 
+	cursor: pointer;
+	line-height:1.2em;
+	margin:0; 
+	padding:5px 5px 8px 32px;
+	overflow: hidden;
+}
+
+/* background and color for tool boxes and search forms on events page */
+/* "height:1%" = ie fix for getting the background color around all floating elements in the form
+   = giving the form 'hasLayout' */
+.tool-form {
+	background: #ECECE4;
+	/* height: 1%; */
+	overflow: hidden;
+	padding: 12px 10px; 
+}
+
+table {
+	font-size: 100%;
+}
+table p {
+	font-size: 1em;
+}
+
+#content p {
+	line-height: 140%;
+}
+
+#info-list {
+	line-height: 140%;
+}
+
+
+/* navigation top right about, help, ... */
+#header-navhelp {
+	/*color: #646365;
+	font-size: 1em;*/
+}
+
+#header-navhelp a {
+ color: #646365;
+ text-decoration: none;
+}
+
+#header-navhelp a:hover {
+	/*color: #646365;*/
+	text-decoration: underline;
+}
+/* status information in the middle of the head section */
+#header-status {
+	font-size: 1.2em;
+	color: #333;
+}
+/* single search field in the top right corner */
+#header-search {
+	/*font-size: 1.2em;*/
+}
+/* grey text in the single search field */
+#header-search-field, #filter_name {
+	color: #929193;
+	/*font-size: 1.3em;*/
+}
+/* link def for the links below the single search field */
+#header-search a,
+#header-login td {
+	color: #646365;
+	font-size: 1.2em;
+	font-weight: normal;
+}
+
+/* 
+The id header-language-selector refers to the language list, 
+which is shown via an onclick event on the link "language". 
+*/
+#header-language-selector a {
+ 	color: #646365;
+	text-decoration: none;   
+}
+
+#header-language-selector a:hover {
+ 	/*color: #646365;*/
+	text-decoration: underline;   
+}
+/* main navigation definition */
+#navmain ul li a {
+	color: #FFF;
+	display: block;
+	font-size: 1.6em;
+	font-weight: normal;
+	line-height: 1em;
+	padding: 6px 20px 6px 20px;
+	text-decoration: none;
+}
+#navmain a.navmain-other {
+	/*color: #FFF;*/
+}
+#navmain a.navmain-other:hover {
+	background:#A7CF4A url(/img/xing/nav_bg_active.gif) repeat-x top;
+	color: #006567;
+}
+/* special definition for the first item in the navigation */
+#navmain a.navmain-start {
+	background: url(/img/xing/nav_bg_l_normal_long.gif) no-repeat left top; 
+	padding-left: 36px;
+	/*color: #FFF;
+	display: block;
+	text-decoration: none;*/
+}
+#navmain a.navmain-start:hover {
+	background:#A7CF4A url(/img/xing/nav_bg_l_active.gif) no-repeat left top; 
+	color: #006567;
+}
+/* defintion of the selected nav item */
+#navmain a.selected {
+	background:#A7CF4A url(/img/xing/nav_bg_active.gif) repeat-x left top; 
+	color: #006567;
+	font-weight:bold;
+}
+/* definition of the selected navigation item for the first item */
+#navmain a.navmain-start-selected {
+	background:#A7CF4A url(/img/xing/nav_bg_l_active.gif) no-repeat left top; 
+	color: #006567;
+	font-weight:bold;
+}
+/* font-size definiton for the sub navigation */
+#navsub {
+	font-size: 1.4em;
+}
+/* definition for the sub navigation link */
+#navsub a.navsub {
+	border-right: 1px solid #A1A093;
+	display: block;
+	color: #6D6D6D;
+	font-weight: normal;
+	margin: 0 2px 0 0px;
+	padding: 2px 8px 2px 8px;
+	text-decoration: none;
+}
+#navsub a.navsub:hover {
+	color: #006567;
+	text-decoration: underline;
+}
+#navsub a.selected {
+	color: #006567;
+	font-weight: bold;
+}
+/* color defintions for normal text and headlines, do not use if possible */
+.c333 {
+	color: #333;
+}
+.c330 {
+	color: #330;
+}
+
+.info-form-field {
+	border-left:1px solid #B7C87A;
+	width:650px;
+}
+
+.info-message,
+.warning-message,
+.confirm-message,
+.error-message {
+	font-weight: bold;
+	padding-left: 22px;
+	margin-bottom: 5px;
+	padding-top:1px;
+	clear:both;
+}
+.info-message {
+	background: url(/img/xing/icn_information.gif) no-repeat left top;
+	/*color: #618117;*/
+	color: #333;
+}
+.warning-message {
+	background: url(/img/xing/icn_warning.gif) no-repeat left top;
+	color: #666;
+
+}
+.error-message {
+	background: url(/img/xing/icn_error.gif) no-repeat left top;
+	color:#BC100E;
+}
+
+.confirm-message{
+	background: url(/img/xing/icn_confirmation.gif) no-repeat 2px 4px;
+	border: 1px solid #00887F;
+	color: #00887F;
+	padding: 4px 4px 4px 26px;
+}
+
+.warning-form-field {
+	border:1px solid #F7CD45;
+}
+
+input.error-form-field {
+	border-top:2px solid #BC100E;
+	border-left:2px solid #BC100E;
+	border-bottom:1px solid #FE9999;
+	border-right:1px solid #FE9999;
+}
+
+.error-form-field {
+	border-top:2px solid #BC100E;
+	border-left:2px solid #BC100E;
+	border-bottom:1px solid #FE9999;
+	border-right:1px solid #FE9999;
+}
+
+.confirmation-message {
+	background: #FFF;
+	color: #A1B64D;
+}
+.table-list-pagination {
+	border-bottom: 1px dotted #999;
+	padding: 0 0 5px 0px;
+	margin-bottom: 5px;
+}
+/* def only needed for ie7 */
+.table-list-pagination form {
+	padding-bottom: 5px;
+}
+.table-list-pagination-bottom {
+	border-bottom: 0;
+	border-top: 1px dotted #999;
+	padding: 8px 0 0 0px;
+	margin-top: 15px;
+}
+.table-list-pagination a {
+	font-weight: normal;
+	text-decoration: none;
+	padding: 0 3px 0 5px;
+	border-left: 1px solid #333;
+}
+.table-list-pagination a:hover {
+	text-decoration: underline;
+}
+.table-list-pagination a.selected {
+	font-weight: bold;
+}
+.table-list-pagination .disabled {
+	color: #A0A0A0;
+	padding: 0 3px 0 0px;
+	border-left: 1px solid #333;
+}
+.table-list-pagination .first {
+	padding: 0 3px 0 0;
+}
+
+.table-list-pagination.alpha-pagination a {
+	border: 0;
+	padding: 0 2px 0 0;
+}
+
+/* events search form */
+label.event-search-form {
+	display: block;
+	font-weight: bold;
+	/*margin-bottom: 5px;*/
+}
+/* event participants list, my profil in the list */
+.me {
+	color:#006567;
+} 
+.me a {
+	color:#006567;
+}
+/* required form fields */
+.required-fields {
+	font-size: 1.4em;
+	/* needed in th cells */
+	font-weight: normal;
+	line-height: .1em;
+	padding: 0;
+	margin: 0 0 0 1px;
+}
+/* premium membership converted currency amount */
+.converted-amount {
+	color: #006567;
+}
+/* text-color on logged out pages for infos that are only available as reg member */
+.logged-out-info,
+.logged-out-info a {
+	color: #738634;
+}
+#footer {
+	font-weight: normal;
+	line-height: 1.8em;
+	color: #9C9C9C;
+}
+#footer a {
+	color: #9C9C9C;
+	font-weight: normal;
+	text-decoration: none;
+}
+#footer a:hover {
+	text-decoration: underline;
+}/* CSS Document */
+a.underline {
+	text-decoration: underline;
+}
+.nobr {
+	white-space: nowrap;
+}
+.b {
+	font-weight: bold;
+}
+*.normal {
+	font-weight: normal !important;
+}
+.mp0 {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.ml {
+	margin-left: 8px;
+}
+.noborder {
+	border: 0 !important;
+}
+.b1 {
+	border: 1px solid red;
+}
+.text-border {
+	border: 1px solid #D5D6CC;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.fn {
+	float:none;
+}
+.borderright {
+	border-right: 1px solid #333;
+	margin-right: 5px;
+	padding-right: 5px;
+}
+.borderbottom {
+	border-bottom: 1px dotted #999;	
+	margin-bottom: 0px;
+	padding-bottom: 15px;
+}
+.bordertop {
+	border-top: 1px dotted #999;	
+	margin-top: 0px;
+	padding-top: 15px;
+}
+.section-border {
+	float:none;
+	overflow:hidden;
+	/* height: 1%; */
+	clear:both;
+	border-bottom: 1px dotted #999;	
+	margin:0;
+	padding:2px 8px;		
+}
+.section-border a {
+	text-decoration: none;
+	padding: 0 1px;
+}
+.section-border a:hover {
+	text-decoration: underline;
+}
+.section-border a.selected {
+	font-weight: bold;
+}
+.clr {
+	clear: both;
+}
+.disabled   {
+	color: #A0A0A0;
+}
+input.disabled   {
+	background-color: #A0A0A0;
+	color: #333;
+}
+
+.center {
+	text-align: center !important;
+}
+.right {
+	text-align: right !important;
+}
+.mb5 {
+	margin-bottom: 5px !important;
+}
+.mb10 {
+	margin-bottom: 10px !important;
+}
+.mb15 {
+	margin-bottom: 15px !important;
+}
+.mt5 {
+	margin-top: 5px !important;
+}
+.mt10 {
+	margin-top: 10px !important;
+}
+.mt15 {
+	margin-top: 15px !important;
+}
+.mr10 {
+	margin-right: 10px !important;
+}
+.mr5 {
+	margin-right: 5px !important;
+}
+.pb5 {
+	padding-bottom: 5px !important;
+}
+
+.pt5 {
+	padding-top: 5px !important;
+}
+
+.pb10 {
+	padding-bottom: 10px !important;
+}
+.pr10 {
+	padding-right: 10px !important;
+}
+.pl20 {
+	padding-left: 20px !important;
+}
+.pl15 {
+	padding-left: 15px !important;
+}
+.hidden {
+	display: none;
+}
+.overflow {
+	overflow: hidden;
+	/* height: 1%; */
+}
+
+.fixed-anchors {
+	overflow: visible;
+}
+
+.green, .status-color {
+	color: #360;
+}
+.block {
+	display: block;
+}
+
+table.clean, table.clean td, table.clean tr {
+	margin:0;
+	padding:0;
+}
+/* test class for indent left */
+.indent-left {
+	margin-left: 8px !important;
+}
+
+.middle {
+	vertical-align: middle;
+}
+/* make sure text large input fields fit into */
+.col_two select.large,
+.col_two textarea.large,
+.col_two input.large{
+	margin:2px 0;
+	width:647px;
+	display:block;
+}
+.col_one select.large,
+.col_one textarea.large,
+.col_one input.large{
+	width:310px;
+}
+.col_one.clr select.large,
+.col_one.clr textarea.large,
+.col_one.clr input.large{
+	width:300px;
+}/* def for all form buttons */
+button {
+	background: none;
+	cursor: pointer;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+button div {
+	margin: 0;
+	padding: 0px 0px 0px 5px;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+/* definition for standard submit button */
+button div p,
+button div table {
+	color: #006567;
+	font-size: 14px;
+	line-height:1em;
+	font-weight: bold;
+	margin: 0;
+	white-space: nowrap;
+	/* beware of the ie defs in the ie.css - should be different! */
+	padding: 9px 12px 10px 7px;
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+button.btn,
+button.btn-submit-tools,
+button.btn-cancel-tools{
+	margin:0;
+	padding:0;
+}
+
+button div.btn 					{ background-image: url(/img/xing/btn_bg_left.gif);				}
+button div.btn-submit 			{ background-image: url(/img/xing/btn_bg_submit_left.gif); 		}
+button div.btn-submit-tools 	{ background-image: url(/img/xing/btn_bg_submit_tools_left.gif);	}
+button div.btn-cancel-tools 	{ background-image: url(/img/xing/btn_bg_cancel_tools_left.gif);	}
+button div.btn-large-submit 	{ background-image: url(/img/xing/btn_bg_large_submit_left.gif);	}
+button div.btn-cancel 			{ background-image: url(/img/xing/btn_bg_cancel_left.gif);			}
+
+button div p.btn 				{ background-image: url(/img/xing/btn_bg_right.gif);				}
+button div p.btn-submit 		{ background-image: url(/img/xing/btn_bg_submit_right.gif);		}
+button div p.btn-submit-tools 	{ background-image: url(/img/xing/btn_bg_submit_tools_right.gif);	}
+button div p.btn-cancel-tools 	{ background-image: url(/img/xing/btn_bg_cancel_tools_right.gif);	}
+button div p.btn-large-submit,
+button div table.btn-large-submit 	{ background-image: url(/img/xing/btn_bg_large_submit_right.gif); 	}
+button div p.btn-cancel 		{ background-image: url(/img/xing/btn_bg_cancel_right.gif);		}
+
+button div p.btn,
+button div p.btn-submit-tools,
+button div p.btn-cancel-tools {
+	font-size: 13px;
+	line-height: 1.6em;
+	padding: 3px 12px 2px 7px;
+	/* beware of the ie defs in the ie.css - should be different! */
+}
+
+/* definition for cancel/reset tools buttons */
+button div p.btn-cancel,
+button div p.btn-submit-tools,
+button div p.btn-cancel-tools {
+	color: #fff;
+}
+/* definition for "add as contact" button */
+button div p.btn-large-submit,
+button div table.btn-large-submit {
+	/* beware of the ie defs in the ie.css - should be different! */
+	white-space: normal;
+	padding: 0 0 0 5px;
+	line-height: 1em;
+}
+
+/* teaser button */
+
+div.teaser {
+	width: 315px;
+	margin: 0 0 1em 0;
+	padding: 0;
+	background: url(/img/xing/bg_teaser_bottom.gif) no-repeat bottom left;
+	cursor: pointer;
+}
+div.teaser.small {
+	width: 290px;
+}
+div.teaser div.teaser-content{
+	display:block;
+	padding: 12px 13px;
+	overflow:hidden;
+	/* height: 1%; */
+	background: url(/img/xing/bg_teaser_top.gif) no-repeat top left;
+}
+div.teaser div.teaser-content p {
+	padding: 0;
+	margin: 0;
+}
+div.teaser h4{
+	color:#666;
+}
+div.teaser.invite {
+	background: url(/img/xing/bg_teaser_invite_bottom.gif) no-repeat bottom left;
+}
+div.teaser.invite div.teaser-content{
+	background: url(/img/xing/bg_teaser_invite_top.gif) no-repeat top left;
+}
+div.teaser.invite.small {
+	background: url(/img/xing/bg_teaser_invite_small_bottom.gif) no-repeat bottom left;
+}
+div.teaser.invite.small div.teaser-content{
+	background: url(/img/xing/bg_teaser_invite_small_top.gif) no-repeat top left;
+}
+div.teaser.invite h4{
+	color: #89AA4B;
+}
+div.teaser.corporate {
+	background: url(/img/xing/bg_teaser_corporate_bottom.gif) no-repeat bottom left;
+}
+div.teaser.corporate div.teaser-content{
+	background: url(/img/xing/bg_teaser_corporate_top.gif) no-repeat top left;
+}
+div.teaser.premium {
+	background: url(/img/xing/bg_teaser_premium_bottom.gif) no-repeat bottom left;
+}
+div.teaser.premium div.teaser-content{
+	background: url(/img/xing/bg_teaser_premium_top.gif) no-repeat top left;
+}
+div.teaser.premium h4{
+	color: #065159;
+}
+div.teaser img {
+	padding:0 0 .5em 0;
+}
+div.teaser img.icon {
+	float:right;
+	padding:0 !important;
+	width: 64px;
+	height: 64px;
+}
+div.teaser h4{
+	font-weight:bold;
+	display:block;
+	font-size:1.2em;
+	padding: 0 0 4px 0;
+	margin:0;
+}
+/* The style a.raquo-block-link is used on 646_premium_group_infos_inc.php */
+div.teaser div.teaser-content a,
+div.teaser-large div.teaser-content a,
+a.raquo-block-link
+{
+	text-decoration: none;
+	padding-left:10px;
+	display:block;
+	background: url(/img/xing/icn_raquo.gif) no-repeat 0 0.45em;
+}
+div.teaser div.teaser-content h4 a {
+	text-decoration: none;
+	padding-left:0px;
+	display:block;
+	background: none;
+}
+
+div.teaser div.teaser-content a:hover,
+div.teaser:hover a,
+div.teaser-large div.teaser-content a:hover,
+a.raquo-block-link:hover
+ {  /* firefox only */
+	text-decoration: underline;
+}
+
+div.teaser-large {
+	width: 650px;
+	margin: 0 0 1em 0;
+	padding: 0;
+	background: url(/img/xing/bg_teaser_member_bottom.gif) no-repeat bottom left;
+	cursor: pointer;
+}
+div.teaser-large div.teaser-content{
+	display:block;
+	padding: 0px 13px 15px 13px;
+	overflow:hidden;
+	/* height: 1%; */
+	background: url(/img/xing/bg_teaser_member_top.gif) no-repeat top left;
+}
+/* File upload buttons */ 
+div.fileinputs {
+	position: relative;
+	height:4em;			
+}
+
+div.fakefile {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	overflow: hidden;
+}
+
+input.file {
+	position: absolute;
+	right:0;
+	z-index:2;	
+	-moz-opacity:0;
+	opacity: 0;
+	font-size:50px;
+	height:46px;
+	line-height:50px;
+	overflow:hidden;					
+	cursor: pointer;
+}
+/* upload foto button on profil forms page*/
+div.fake-browse-button-top {
+	width:140px; 
+	background: url(/img/xing/bg_upload_photo_top.gif) no-repeat left top;
+}
+
+div.fake-browse-button-bottom {
+	width:140px; 
+	white-space:normal; 
+	background: url(/img/xing/bg_upload_photo_bottom.gif) no-repeat left bottom; 
+	padding-top:5px;
+}
+
+div.fake-browse-button-bottom p {
+	text-align:center; 
+	margin:0px; 
+	padding:0 5px 5px 5px; 
+	font-size: 13px; 
+	line-height:15px; 
+	color: #006567;
+	font-weight:bold;
+}
+
+img#photo-loading-indicator{
+	position:absolute;
+	background-color:white;
+}
+
+/* Button "I want Premium Membership" */
+button.btn-premium-membership {
+	margin:0;
+	padding:0;
+}
+
+button div p.btn-premium-membership {
+	background-image:url(/img/xing/btn_premium_membership_right.gif);
+	color:white;
+	font-size: 13px;
+	line-height: 1.6em;
+	padding: 22px 30px 28px 60px;
+}
+
+button div.btn-premium-membership{
+	background-image:url(/img/xing/btn_premium_membership_left.gif);
+}
+
+/* auto completer */
+
+.auto-complete{
+	text-align: left;
+	font-size: 1.2em;
+	top:200px;
+	left:500px;
+	position:absolute;
+	border:1px solid #BBB;
+	border-bottom:1px solid #666;
+	border-right:1px solid #666;
+	background-color:white;
+	padding:1px;
+}
+
+.auto-complete img{
+	position:absolute;
+	height:16px;
+	width:16px;
+	opacity: .5;
+	cursor:pointer;
+	right:2px;
+}
+
+.auto-complete img.up-arrow{
+	top:2px;
+}
+
+.auto-complete img.down-arrow{
+	bottom:2px;
+}
+
+.auto-complete ul li {
+
+	padding:0px 30px 1px 3px;
+	cursor:pointer;
+
+}
+
+.auto-complete ul li.selected {
+
+background-color:#D5D6CC;}#tab-navigation {
+	background: #FFF url(/img/xing/tab_bg.gif) repeat-x bottom;
+	/* float: left; */
+	width: 100%; 
+	overflow: hidden; 
+	line-height:normal;
+}
+#tab-navigation ul {
+	list-style-type: none;	
+	padding:0; 
+	margin:0; 	
+
+}
+#tab-navigation li {
+	background: url(/img/xing/tab_right.gif) no-repeat right top;	
+	float: left; 
+	padding: 0 3px 0 0;
+	margin-right: 10px;	
+}
+
+#tab-navigation a {
+	background: url(/img/xing/tab_left.gif) no-repeat left top; 
+	text-decoration: none;
+	color: #535351;
+	display: block; 
+	padding: 4px 8px 8px 18px;
+	
+}
+#tab-navigation a.normal {
+	background:none; 
+	display:inline;
+	padding: 0px 2px 0px 2px;
+}
+#tab-navigation #current {
+	background-image: url(/img/xing/tab_right_on.gif); 
+	border-bottom:1px solid white;
+}
+
+#tab-navigation #current a {
+	padding-bottom: 7px;
+	background-image: url(/img/xing/tab_left_on.gif);
+	color: #333;
+	font-weight:bold;
+}
+/* search form for contact page */
+#contacts-search-form input.text, #advanced-search-form select  {
+	margin: 0 0 10px 0;
+	width: 290px;
+}
+#contacts-search-form input {
+	width: auto;
+	margin: 0;
+}
+
+#contacts-search-form button {
+	margin-left: 10px;
+}
+
+#contacts-search-form label  {
+	margin: 0 10px 0 0;
+	display: block;	
+	font-weight: bold;
+}
+
+.contact-card {
+	background: url(/img/xing/bg_contact_top.gif) no-repeat top left; 
+	float:left;
+	width:237px;
+	margin:8px 4px;
+}
+.contact-card .photo{
+	float:left;
+	padding:10px 7px 3px 10px;
+}
+.contact-card .description{
+	float:left;
+	margin:10px 0px 0 0px;
+	width:140px;
+}
+
+.contact-card .main-info{
+	padding-bottom:4px;
+	line-height:1em;
+	height:100%;
+	overflow:hidden;
+	background: url(/img/xing/bg_contact_bottom.gif) no-repeat bottom left; 
+}
+/* CSS Document */
+/* Style defintions for the datechooser */
+
+.calendar *
+{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	color: #000;
+}
+
+.calendar.popup {
+	background:none; 
+	font-size: 1.2em;
+	line-height:1em;
+	padding:0; 
+	margin:0;
+	text-align:left;
+	display:block;
+	width:404px; 
+}
+
+.calendar.popup{
+	overflow:hidden;
+	position:absolute;
+	z-index:10;
+}
+
+.calendar .content,
+.calendar .header,
+.calendar .footer{
+	background:#EDECE3;
+}
+
+.calendar .footer{
+	overflow:hidden;
+	/* height: 1%; */
+	padding:4px 0 6px 6px;
+}
+
+.calendar .header{
+	font-weight: bold;
+	padding: 5px 0 0 11px
+}
+
+.calendar.popup .header {
+	padding:52px 54px 0 44px;
+	background: url(/img/xing/bg_cal_top.png) no-repeat top left;
+	height:21px;
+}
+
+.calendar.popup .content {
+	background: url(/img/xing/bg_cal_middle.png) repeat-y bottom left; 
+	padding:0 54px 0 44px;
+}
+
+.calendar.popup .footer {
+	overflow:visible;
+	background: url(/img/xing/bg_cal_bottom.png) no-repeat bottom left; 
+	font-size: .9em;
+	height:79px;
+	padding:3px 54px 0 44px;
+}
+
+.calendar.popup.top-left		.header{	background-image: url(/img/xing/bg_cal_top_left.png); }
+.calendar.popup.top-right		.header{	background-image: url(/img/xing/bg_cal_top_right.png); }
+.calendar.popup.bottom-left		.footer{	background-image: url(/img/xing/bg_cal_bottom_left.png); }
+.calendar.popup.bottom-right	.footer{	background-image: url(/img/xing/bg_cal_bottom_right.png); }
+
+.calendar table {
+	border-top:4px solid #EDECE3;
+	border-right:8px solid #EDECE3;
+	border-left:8px solid #EDECE3;
+	border-bottom:2px solid #EDECE3;
+	background:#EDECE3;
+	font-weight:bold;
+}
+
+.calendar tbody td{
+	margin:0;
+}
+
+.calendar a {
+	color: #000;
+	text-decoration: none;
+}
+
+.calendar table a:hover {
+	background: #CCE544;
+	border-color: #CCE544 !important;
+}
+
+.calendar a.previousmonth,
+.calendar a.nextmonth {
+	text-decoration: underline;
+}
+
+
+.calendar a.previousmonth{
+	float:left;
+}
+.calendar a.nextmonth {
+	float:right;
+}
+
+.calendar .description{
+
+	float:left;
+	margin-left:5px;
+}
+
+.calendar a.previousmonth:hover,
+.calendar a.nextmonth:hover,
+.calendar a.currentdate:hover {
+	background: none;
+}
+
+.calendar thead td {
+	padding: 0px 0 4px 2px;
+}
+
+.calendar thead td {
+	text-align: left;
+}
+
+.calendar tbody td {
+	text-align:right;
+}
+
+.calendar tbody td * {
+	display:block; 
+	padding:0 1px;
+	width: 33px;
+	border: 2px solid white;
+}
+
+.calendar tbody td.even * {
+	background: white;
+	border-color: white;
+}
+.calendar tbody td.odd * {
+	border-color: #EDECE3;
+}
+.calendar tbody td.empty * {
+	background: none;
+}
+.calendar tbody td.next-month * {
+	background-color: #CCC;
+	border-color: #CCC;
+}
+
+.calendar .selectedday * {
+	background: #CCE544;
+	border-color: #CCE544;
+}
+
+.calendar .selectedday.today *{
+	border-color:white !important;
+}
+.calendar .today *{
+	border-color: #CCE544 !important;
+}
+
+
+.calendar img.icon{
+	vertical-align:middle;
+}
+
+.calendarlink, .calendaricon {
+	margin: 0px 3px;
+}
+.calendaricon {
+	cursor: pointer;
+}.modal-window,
+.context-window {
+	font-size: 1.2em;
+	text-align: left;
+	line-height: 120%;
+	position: absolute;
+	background-repeat: no-repeat;
+	background-position: top left;
+	margin:0;
+	padding:0;
+	z-index:10000;
+}
+.modal-window .wrapper,
+.context-window .wrapper {
+	background-repeat: no-repeat;
+	background-position: bottom left;
+	padding: 5px 10px 10px 10px;
+	margin-top:5px;
+}
+
+.modal-window h3,
+.context-window h3 {
+	margin:0;
+	background-position: top left;
+	background-repeat: no-repeat;
+	padding: 2px 0 4px 20px;
+}
+
+.modal-window img.close,
+.context-window img.close {
+	float:right;
+	cursor:pointer;
+}
+.context-window{ 
+	width: 197px; 
+	background-image: url(/img/xing/win_context_bg_top.gif); 
+}
+.modal-window{ 
+	width: 315px; 
+	background-image: url(/img/xing/win_modal_bg_top.gif); 
+}
+.context-window .wrapper  { 
+	background-image: url(/img/xing/win_context_bg_bottom.gif); 
+}
+.modal-window .wrapper { 
+	background-image: url(/img/xing/win_modal_bg_bottom.gif); 
+}
+
+.modal-background {
+
+	position:absolute;
+	top:0;
+	left:0;
+	z-index: 9999;
+	background-color:#000;
+	-moz-opacity:30;
+	opacity: .3;
+	width:100%;
+	height:1000px; /* should be set via js */
+}
+
+.infobox-pane {
+	overflow: visible;
+}
+
+.infobox-pane .drop.active {
+	background: #D8D8C7;
+	z-index: 1000;
+}
+.infobox-pane .handle {
+	cursor: move;
+	width: 100%;
+}
+
+.handle img {
+	display: none;
+}
+
+.infobox-pane .handle img {
+	display: block;
+}
+
+.register-path {
+	overflow: hidden;
+	height:1%;
+	background: url(/img/xing/bg_dot_contact_path.gif) no-repeat 12px 24px;
+	margin: 0 4px;
+	padding: 4px 0;
+}
+div.headline-register {
+	border-bottom: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #999; 	
+	padding: 0 0 5px 0;	
+	color: #006567;
+	background:#FFF; 
+}
+div.registration-steps{
+	background: transparent;
+	width:214px;
+}
+div.registration-steps div div{
+	background: transparent;
+	width: 150px;
+	height: 40px;
+}
+div.registration-steps div span{
+	background: transparent;
+	padding: 0 0 0 6px;
+}
+.email-confirmation-top{
+	background:url(/img/xing/bg_green_box_top.gif);
+	background-position: left top;
+	background-repeat: no-repeat;
+	padding:6px 0 0 0;
+}
+div.email-confirmation-bottom{
+	background:url(/img/xing/bg_green_box_bottom.gif) no-repeat;
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	padding: 11px 15px 20px 15px;
+}
+.registration-statistics-top{
+	background:url(/img/xing/bg_box_315_shaddow_top.gif) no-repeat left top;
+	padding: 6px 0 0 0;
+}
+.registration-statistics-bottom {
+	background:url(/img/xing/bg_box_315_shaddow_bottom.gif) no-repeat left bottom; 
+	margin: 0;
+	padding: 10px 0 10px 15px;
+	overflow:hidden;
+}
+
+/* CSS Document with additional/changed styles for new invitation page colors */
+.pending {
+	color: #ee7700;
+}
+.accepted {
+	color: #aabb00;
+}	
+.following {
+	color: #bcbcbc;
+}
+/* headlines */
+#invitations h4 {
+	padding: 2px 0;
+	background:url(/img/xing/box_level0.gif) no-repeat;
+	line-height:15px;
+}
+#invitations h4 span {
+	font-size: 12px;
+	font-weight: normal;
+	text-align:center;
+	width:30px;
+	margin-right: 5px;
+	display:block;
+	float: left;
+}
+#invitations h4.level1, #invitations h4.level2, #invitations h4.level2_bot {
+	padding-left: 22px;
+	margin-top:0px;
+	background:url(/img/xing/box_level1.gif) no-repeat;
+}
+#invitations h4.level2 {
+	background:url(/img/xing/box_level2.gif) no-repeat;
+}
+#invitations h4.level2_bot {
+	background:url(/img/xing/box_bot.gif) no-repeat;
+}
+/* lists */
+#invitations_status li {
+	padding: 0 0 10px 20px;
+	background:url(/img/xing/icn_check.gif) no-repeat;
+}
+#invitations_status li.info {
+	padding-bottom: 20px;
+	background:url(/img/xing/icn_information.gif) no-repeat;
+}
+/* tables */
+
+#invitations table.table-list, #invitations table-list-pagination-bottom {
+	width: 570px;
+}
+#invitations table.table-list {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+#invitations td.icons{
+	padding: 2px 0px 2px 8px;
+	text-align:center;
+}
+#invitations table.table-list .col_name {
+	width: 317px;
+}
+#invitations table.table-list .col_date {
+	width: 100px;
+}
+#invitations table.table-list .col_option {
+	width: 80px;
+}
+#invitations table.table-list .col_options {
+	width: 160px;
+}
+
+/* pagination at bottom of tables */
+#invitations .table-list-pagination-bottom {
+	padding: 0px 0 0 0px;
+	margin: 0 0 0 22px;
+}
+#invitations .table-list-pagination .first {
+	border: none;
+}
+
+
+/* main divs & paragraphs */
+
+/* left column */
+#invitations div.level1, #invitations div.level1_bot, #invitations div.level2 {
+	padding-left: 14px;
+	background:url(/img/xing/box_line.gif) repeat-y top left;
+}
+#invitations div.level1_bot {
+	background: none;
+	margin:0 0 0 14px;
+	padding:0;
+}
+#invitations div.level2{
+	margin-left: 22px;
+	padding: 15px 0 25px 14px;
+}
+ #invitations div.level2_bot{
+	 margin-left: 22px;
+	padding: 15px 0 25px 14px;
+ }
+#invitations div.level2_bot {
+	padding-top: 0;
+}
+#invitations div.level1 p, #invitations div.level2 table, #invitations div.level2_bot table {
+	margin-left: 22px;
+}
+/* used on search-result site*/
+.grey_info_box_shadow {
+	margin-left: 10px;;
+	padding-left: 0
+	list-style: none;
+}
+.grey_info_box_shadow li {
+	padding-left: 65px;
+	background-image: url(/img/xing/bg_search_no_matches.gif);
+	background-repeat: no-repeat;
+	height:55px;
+}
+.grey_info_box_shadow li span{
+	display:block;
+	padding-top:5px;
+	height:65px;
+}
+.grey_info_box_shadow li a{
+	display:block;
+	padding-top:12px;
+	height:65px;
+}
+.grey-box-300-top{
+	background:url(/img/xing/bg_grey_box_300_top.gif);
+	background-repeat: no-repeat;
+	background-position: top left;
+	padding:4px 0 0 1px;
+}
+.grey-box-300-bottom{
+	background:url(/img/xing/bg_grey_box_300_bottom.gif);
+	background-repeat: no-repeat;
+	background-position: bottom left;
+	padding:4px 0 0 10px;
+	height:85px;
+}
+.grey-box-315-top{
+	background:url(/img/xing/bg_grey_box_top.gif);
+	background-repeat: no-repeat;
+	background-position: top;
+	padding:4px 0 0 0;
+	margin:0 0 20px 0;
+}
+.grey-box-315-bottom{
+	background:url(/img/xing/bg_grey_box_bottom.gif);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	height:55px;
+	padding:4px 0 0 0;
+}
+.check-list li{
+	background: url(/img/xing/icn_check.gif);
+	background-repeat: no-repeat;
+	padding: 1px 0 0 20px;
+	margin: 0 0 10px 0;
+	line-height:16px;	
+}
+/* invite statistics*/
+div.invite-statistics {
+	 padding: 1px; 
+	 border: 1px solid #999; 
+	 width: 219px;
+	 height:12px; 
+	 background: url(/img/xing/ill_profile_compl_inactive.gif) no-repeat 1px 1px;
+}
+.orange{
+	background: #FFF;
+	color: #E97F02;
+}
+div.col_one .bg-invite-statistics-bottom {
+	background:url(/img/xing/bg_box_315_shaddow_bottom.gif) no-repeat left bottom; 
+	margin: 0; 
+	overflow:hidden;
+	padding:0 15px 0 15px;
+}
+

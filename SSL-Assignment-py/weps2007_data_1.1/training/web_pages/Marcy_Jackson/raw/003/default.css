@@ -1,0 +1,1065 @@
+.clsFRPPromoBdr
+{
+    BORDER-RIGHT: #8a8a8a 1px dashed;
+    BORDER-TOP: #8a8a8a 1px dashed;
+    FONT-SIZE: 0.7em;
+    BORDER-LEFT: #8a8a8a 1px dashed;
+    COLOR: #000000;
+    BORDER-BOTTOM: #8a8a8a 1px dashed;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #f9f9f9;
+    TEXT-DECORATION: none
+}
+
+
+.clsHeaderBorder{
+	border-left 			: 1px solid #000000;
+	border-right 			: 1px solid #000000;
+	border-top 				: 1px solid #000000;
+	border-bottom 			: 2px solid #CCCCCC;
+	padding-left			: 0px;
+	padding-right			: 0px;
+}
+
+
+body{
+	font-family				: Arial, Helvetica, sans-serif;
+	font-color				: #000000;
+}
+img{
+	border					: 0px;
+	margin					: 0px;
+}
+a:link {
+	text-decoration 		: underline;
+}
+a:hover
+{
+	text-decoration 		: none;
+}
+
+a:visited
+{
+	text-decoration 		: underline;
+}
+
+.clsTxtSmall {
+
+   font-family				: Verdana, Helvetica, sans-serif;
+	font-color				: #000000;
+	font-size				: 0.7em;
+}
+
+.clsTxtSmaller {
+
+   font-family				: Verdana, Helvetica, sans-serif;
+	font-color				: #000000;
+	font-size				: 0.6em;
+}
+
+
+.clsTxtSmallColour {
+
+   font-family				: Verdana, Helvetica, sans-serif;
+		color				: #000000;
+	font-size				: 0.7em;
+}
+
+
+.clsTxtSmallLight {
+
+   font-family				: Verdana, Helvetica, sans-serif;
+	font-size				: 0.7em;
+}
+
+.clsContent {
+	font-family				: Verdana, Helvetica, sans-serif;
+	font-color				: #000000;
+	font-size				: 0.8em;
+	padding-right			: 2px;
+	padding-left			: 2px;
+}
+
+.clsTitle {
+	font-family				: Arial, Helvetica, sans-serif;
+	font-size				: 1.1em;
+	font-weight				: bold;
+}
+
+.clsTitleColour {
+
+   font-family				: Arial, Helvetica, sans-serif;
+	font-size				: 1.1em;
+	color					: #000000;
+	font-weight				: bold;
+}
+
+.clsHelpText{
+	font-size				: 0.7em;
+}
+
+.clsBreadCrumbBar{
+	background-color		: #BFE2CE;
+	/*border-bottom 			: 2px solid #CCCCCC;*/
+}
+
+.clsHelpTable{
+	border					: 1px solid #fed4a4;
+	padding					: 1px;
+	font-family				: Verdana, Arial;
+}
+.clsMainSection{
+	border-bottom 			: 1px solid #000000;
+	border-left 			: 1px solid #000000;
+	border-right 			: 1px solid #000000;
+	padding-left			: 0px;
+	padding-right			: 0px;
+}
+.clsLeftBar {
+	border-bottom 			: 1px solid #D7D7D7;
+	border-left 			: 1px solid #D7D7D7;
+	border-right 			: 1px dashed #999999;
+	border-top 				: 1px none #999999;
+}
+
+.clsScrollingMenu {
+	background-color		: #FFFFFF;
+	cursor					: hand;
+	font-family				: Arial, Helvetica, sans-serif;
+	font-color				: #000000;
+	font-size				: 0.7em;
+	font-weight				: bold;
+	width					:180px;
+
+}
+
+.clsSideBullet {
+	margin					: 0px; 
+	padding-left			: 1.5em; 
+	list-style-position		: outside;
+	list-style-type			: square;
+}
+
+/*
+ * Form box styles
+ *
+ */
+.clsFormBox{
+	background-color		: #fff0df;
+}
+
+.clsFormTop {
+	border-top				: 1px solid #fed4a4;
+}
+
+.clsFormLeft {
+	border-left				: 1px solid #fed4a4;
+}
+
+
+.clsFormRight {
+	border-right			: 1px solid #fed4a4;
+}
+
+.clsFormBottom {
+	border-bottom			: 1px solid #fed4a4;
+}
+
+.clsFormLeftColumn {
+	width					: 120px;
+}
+
+.clsFormRightColumn {
+	width					: 260px;
+}
+.clsFormSpacerSmall {
+	width					: 5px;
+	height					: 5px;
+}
+.clsFormSpacerLarge {
+	width					: 10px;
+	height					: 10px;
+}
+.clsFormCornerImage {
+	width					: 7px;
+	height					: 7px;
+	border					: 0px;
+	margin					: 0px;
+}
+
+/*
+ * Form box2 styles
+ *
+ */
+.clsFormBox2{
+	background-color		: #FFFFFF;
+}
+
+.clsFormTop2 {
+	BORDER-TOP: #fed4a4 1px solid;
+    COLOR: #ffffff;
+    BACKGROUND-COLOR: #fed4a4;
+}
+
+.clsFormHead {
+	BACKGROUND-COLOR:        #fed4a4;
+	color					: #FFFFFF;
+}
+
+.clsFormTopLeft2 {
+	 BACKGROUND-COLOR: #fed4a4;
+}
+
+.clsFormTopRight2 {
+	 BACKGROUND-COLOR: #fed4a4;
+}
+
+
+/*
+ * Form button styles
+ *
+ */
+.clsFormButton{
+	font-family				: Arial, Verdana;
+	font-size				: 0.7em;
+	color					: #000000;
+	text-decoration			: none;
+	cursor					: hand;
+	width					: 150px;
+	height					: 20px;
+	margin-top				: 5px;
+}
+.clsFormButtonSmall{
+	font-family				: Arial, Verdana;
+	font-size				: 0.7em;
+	color					: #000000;
+	text-decoration			: none;
+	cursor					: hand;
+	width					: 100px;
+	height					: 20px;
+	margin-top				: 5px;
+}
+.clsFormButtonLarge{
+	font-family				: Arial, Verdana;
+	font-size				: 0.7em;
+	color					: #000000;
+	text-decoration			: none;
+	cursor					: hand;
+	width					: 200px;
+	height					: 20px;
+	margin-top				: 5px;
+}
+.clsFormSecondaryButton{
+	font-family				: Verdana, Arial;
+	font-size				: 0.6em;
+	background				: #cccccc;
+	border					: 1px solid black;
+	color					: black;
+	text-decoration			: none;
+	cursor 					: hand;
+	font-weight				: bolder;
+}
+.clsFormInputSmall{
+	font-family				: Verdana, Arial, Helvetica, Sans-Serif;
+	font-size				: 0.7em;
+	margin-bottom			: 0px;
+	color					: #666633;
+	width					: 100px;
+}
+.clsFormInput{
+	font-family				: Verdana, Arial, Helvetica, Sans-Serif;
+	font-size				: 0.7em;
+	margin-bottom			: 0px;
+	color					: #666633;
+	width					: 200px;
+}
+
+.clsFormInputMidInitial{
+	font-family				: Verdana, Arial, Helvetica, Sans-Serif;
+	font-size				: 0.7em;
+	margin-bottom			: 0px;
+	color					: #000000;
+	width					: 40px;
+}
+
+.clsFormInternalBox{
+	border					: 1px solid #e0e0a0;
+	padding					: 5px;
+	width					: 380px;
+}
+
+/*
+ * Form text styles
+ *
+ */
+.clsFormTitle{
+	font-family				: Arial, Helvetica, Sans-Serif;
+	font-size				: 0.7em;
+	font-weight 			: bolder;
+}
+.clsFormText{
+	font-family				: Verdana, Helvetica, Sans-Serif;
+	font-size				: 0.7em;
+	margin-bottom			: 0px;
+	
+}
+.clsFormCaption{
+	font-family				:  Arial;
+	font-size				: 0.6em;
+}
+.clsFormMessage{
+	font-family				: Arial;
+	font-size				: 0.8em;
+	background-color		: #ffffff;
+	padding					: 10px;
+}
+.clsFormSubject{
+	font-family				: Arial;
+	font-size				: 0.8em;
+	margin-bottom			: 10px;
+	margin-top				: 5px;
+}
+.clsStepTitle{
+	font-family				: Arial, Helvetica;
+	margin					: 10px 10px 10px 0px;
+	font-size				: 1.8em;
+	font-weight				: bolder;
+	
+}
+.clsStepComment{
+	font-family				: Arial;
+	margin					: 5px 10px 15px 0px;
+	font-size				: 0.7em;
+}
+.clsErrorMessage{
+	color					: #E0012E;
+	margin					: 5px 10px 15px 10px;
+	padding					: 5px 0px 5px 0px;
+	font-size				: 0.8em;
+	font-weight				: bolder;
+	text-align				: center;
+	position				: relative;
+	width					: 450px;
+}
+.clsRequiredFieldHighlight{
+	color					: #cc3300;
+	font-size				: 0.7em;
+	margin-bottom			: 0px;
+	font-family				: Arial, Helvetica, Sans-Serif;
+	font-weight				: bolder;
+	/*vertical-align			: top;*/
+}
+.clsHighlight{
+	color					: #cc3300;
+}
+.clsFormSubHeading{
+	font-family				: Arial;
+	font-size				: 0.8em;
+	font-weight 			: bolder;
+	margin-bottom			: 5px;
+	
+}
+
+.clsCategoryTitle{
+	font-family				: Arial, Helvetica;
+	margin					: 0px;
+	font-size				: 1.3em;
+	
+}
+.clsFormComment{
+	font-family				:  Arial;
+	margin					: 5px 0px 10px 0px;
+	font-size				: 0.8em;
+}
+.clsCategoryName{
+	font-family				: Helvetica;
+	font-weight				: bolder;
+	background-color		: #fed4a4;
+}
+.clsLoginPassword{
+	width					: 90px;
+}
+.clsLoginEmail{
+	width					: 180px;
+}
+
+/*
+ * Fundraising page design styles
+ *
+ */
+ 
+ .clsFRPCapt {
+
+   font-family				: Arial, Helvetica, sans-serif;
+	font-color				: #000000;
+	font-size				: 0.7em;
+} 
+
+ .clsFRPTitle {
+
+   font-family				: Arial, Helvetica;
+	font-color				: #000000;
+	font-size				: 1.0em;
+	font-weight 			: bold;
+}
+.clsFRPDetail {
+
+   font-family				: Arial, Helvetica, sans-serif;
+	font-color				: #000000;
+	font-size				: 0.7em;
+}
+ 
+ .clsFRPSummaryAmts {
+
+   font-family				: Arial, Helvetica;
+	font-color				: #000000;
+	font-size				: 1.0em;
+}
+
+.clsFRPImgTablBdr {
+	border: 1px solid #000000;
+}
+
+.clsFRPMessBdr {
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	color: #000000;
+	text-decoration: none;
+	border: 1px dotted #CCCCCC;
+}
+
+/*
+ * Fundraising page amount table
+ *
+ */
+ 
+ .clsFRPAccBdr {
+	border: 2px solid #0066FF;
+}
+
+.clsFRPAccTxtSm {
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 0.7em;
+	color: #000000;
+}
+
+.clsFRPAccCelBtm {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #999999;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #999999;
+}
+.clsFRPAccCelTop {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #000000;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #333333;
+}
+.clsFRPAccCelTotT {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCCCCC;
+}
+.clsFRPAccCelTotB {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+}
+.clsFRPAccTxtSmB {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 0.7em;
+	color: #000000;
+	border: 1px solid #000000;
+}
+
+
+.clsFRPTxtSmall {
+
+   font-family				:  Arial, Helvetica, sans-serif;
+	font-color				: #000000;
+	font-size				: 0.7em;
+}
+
+/*
+ * Fundraising page design view
+ *
+ */
+ 
+ .clsFRPDVCaptOn {
+
+   font-family				: Arial, Helvetica, sans-serif;
+	font-color				: #999999;
+	font-size				: 0.7em;
+}  
+
+.clsFRPDVCaptTxtBox {
+	font-family				: Arial, Helvetica, sans-serif;
+	font-color				: #999999;
+	font-size				: 0.7em;
+	border: 1px solid #666666;
+	BACKGROUND-COLOR: #ffff99;
+} 
+
+ .clsFRPDVTitle {
+	font-family : Arial, Helvetica;
+	font-size : 1em;
+	font-weight : bold;
+	color: #000000;
+}
+
+
+.clsFRPDVDetail {
+
+	font-family : Arial, Helvetica, sans-serif;
+	color : #999999;
+	font-size : 0.7em;
+}
+
+.clsFRPDVDetailOn {
+
+	font-family : Arial, Helvetica, sans-serif;
+	color : #000000;
+	font-size : 0.7em;
+}
+ 
+ .clsFRPDVSummaryAmts {
+	font-family	: Arial, Helvetica;
+	color : #999999;
+	font-size : 1em;
+} 
+
+.clsFRPDVSummaryAmtsOn {
+	font-family	: Arial, Helvetica;
+	color : #000000;
+	font-size : 1em;
+}
+
+.clsFRPDVImgTablBdr {
+	border: 1px solid #999999;
+}
+
+.clsFRPDVMessBdr {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	color: #999999;
+	text-decoration: none;
+	border: 1px dotted #999999;
+}
+
+ .clsFRPDVAccBdr {
+	border: 2px solid #999999;
+}
+
+.clsFRPDVAccTxtSm {
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 0.7em;
+	color: #999999;
+}
+
+.clsFRPDVAccCelBtm {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #999999;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #999999;
+}
+.clsFRPDVAccCelTop {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #999999;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #999999;
+}
+.clsFRPDVAccCelTotT {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #999999;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #999999;
+}
+.clsFRPDVAccCelTotB {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #999999;
+}
+
+.clsFRPDVAccCelTotBOn {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #999999;
+	color: #000000;
+}
+
+.clsFRPDVAccTxtSmB {
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 0.7em;
+	color: #999999;
+	border: 1px solid #999999;
+}
+
+
+.clsFRPDVTxtSmall {
+
+	font-family : Arial, Helvetica, sans-serif;
+	color : #999999;
+	font-size : 0.7em;
+}
+
+.clsFRPDVTxtSmallOn {
+
+	font-family : Arial, Helvetica, sans-serif;
+	color : #000000;
+	font-size : 0.7em;
+}
+
+.clsFRPDVTxtBoxL {
+	font-family: Arial, Helvetica;
+	font-size: 0.9em;
+	border: 1px solid #333333;
+	font-weight: bold;
+	color: #000000;
+	BACKGROUND-COLOR: #ffff99;
+}
+
+.clsFRPDVTxtBoxM {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	border: 1px solid #333333;
+	color: #000000;
+	font-size: 0.9em;
+	font-weight: normal;
+	BACKGROUND-COLOR: #ffff99;
+}
+.clsFRPDVTxtArea {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	border: 1px solid #333333;
+	color: #000000;
+	BACKGROUND-COLOR: #ffff99;
+}
+
+.clsFRPDVTxtImageOr {
+	font-family :  Helvetica, sans-serif;
+	color : #CCCCCC;
+	font-size : 1.0em;
+	font-weight: bolder;
+}
+
+.clsFRPDVImgFileField {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	border: 1px solid #666666;
+	color: #000000;
+	font-size: 0.7em;
+	font-weight: normal;
+	BACKGROUND-COLOR: #ffff99;
+}
+
+.clsFRPDVSubImgTabBdr {
+	border: 1px dotted #BDCFD3;
+}
+
+.clsFRPDVOuterBdr {
+	border: 1px solid #000000;
+}
+
+
+.clsFRPDVColTabB {
+	border: 1px solid #fed4a4;
+}
+.clsFRPDVColTabTxt {
+	border: 1px solid #fed4a4;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 0.7em;
+	font-weight: bold;
+	color: #000000;
+}
+
+
+.clsFRPDVUploadBtn
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 0.7em;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.clsFRPDVTxtBoxUrl
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 0.9em;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica;
+    BACKGROUND-COLOR: #ffff99
+}
+
+.toptab
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;
+    PADDING-BOTTOM: 10px;
+    PADDING-TOP: 10px;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+#container
+{
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    BACKGROUND: #ffffff;
+    PADDING-BOTTOM: 0px;
+    WIDTH: auto;
+    PADDING-TOP: 0px;
+    POSITION: static
+}
+#tabnav
+{
+    PADDING-RIGHT: 10px;
+    PADDING-LEFT: 10px;
+    MARGIN: 0px
+}
+#tabnav UL
+{
+    PADDING-RIGHT: 0px;
+    DISPLAY: inline;
+    PADDING-LEFT: 0px;
+    PADDING-BOTTOM: 0px;
+    MARGIN: 0px;
+    PADDING-TOP: 0px;
+    LIST-STYLE-TYPE: none
+}
+#tabnav LI
+{
+    PADDING-RIGHT: 0px;
+    DISPLAY: inline;
+    PADDING-LEFT: 0px;
+    PADDING-BOTTOM: 0px;
+    MARGIN: 0px;
+    PADDING-TOP: 0px;
+    LIST-STYLE-TYPE: none
+}
+#tabnav A:link
+{
+    BORDER-RIGHT: #000000 1px solid;
+    PADDING-RIGHT: 5px;
+    BORDER-TOP: #000000 1px solid;
+    PADDING-LEFT: 5px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;
+    BACKGROUND: #ffffff;
+    FLOAT: left;
+    PADDING-BOTTOM: 3px;
+    BORDER-LEFT: #000000 1px solid;
+    COLOR: #999999;
+    MARGIN-RIGHT: 4px;
+    PADDING-TOP: 3px;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none
+}
+#tabnav A:visited
+{
+    BORDER-RIGHT: #000000 1px solid;
+    PADDING-RIGHT: 5px;
+    BORDER-TOP: #000000 1px solid;
+    PADDING-LEFT: 5px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;
+    BACKGROUND: #ffffff;
+    FLOAT: left;
+    PADDING-BOTTOM: 3px;
+    BORDER-LEFT: #000000 1px solid;
+    COLOR: #999999;
+    MARGIN-RIGHT: 4px;
+    PADDING-TOP: 3px;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none
+}
+#tabnav A.active:link
+{
+    BACKGROUND: #fed4a4;
+    COLOR: #000000
+}
+#tabnav A.active:visited
+{
+    BACKGROUND: #fed4a4;
+    COLOR: #000000
+}
+#tabnav A:hover
+{
+    BACKGROUND: #ffffff;
+    COLOR: #000000
+}
+.clsAccBdr
+{
+    BORDER-RIGHT: #fed4a4 1px solid;
+    BORDER-TOP: #fed4a4 1px solid;
+    BORDER-LEFT: #fed4a4 1px solid;
+    BORDER-BOTTOM: #fed4a4 1px solid
+}
+.clsAccountBreadcrumbs
+{
+    FONT-SIZE: 0.6em;
+    BACKGROUND: #fed4a4;
+    COLOR: #ffffff
+}
+.clsAccCellSplit
+{
+    BORDER-LEFT: #ff0000 1px dotted
+}
+.clsAccTitle
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 1.2em;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.clsAccStBdr
+{
+    BORDER-RIGHT: #fed4a4 2px solid;
+    BORDER-TOP: #fed4a4 2px solid;
+    BORDER-LEFT: #fed4a4 2px solid;
+    BORDER-BOTTOM: #fed4a4 2px solid
+}
+.clsAccStTxtSm
+{
+    FONT-SIZE: 0.7em;
+    COLOR: #000000;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.clsAccStCelBR
+{
+    BORDER-RIGHT: #999999 1px solid;
+    BORDER-BOTTOM: #999999 1px solid
+}
+.clsAccStCelBtm
+{
+    BORDER-BOTTOM: #999999 1px solid
+}
+.clsAccStCelTopBR
+{
+    BORDER-RIGHT: #333333 1px solid;
+    BORDER-BOTTOM: #000000 1px solid
+}
+.clsAccStCelTopB
+{
+    BORDER-BOTTOM: #000000 1px solid
+}
+.clsAccStCelTotT
+{
+    BORDER-TOP: #cccccc 1px solid;
+    BORDER-BOTTOM: #cccccc 1px solid
+}
+.clsAccStCelTotB
+{
+    BORDER-BOTTOM: #cccccc 1px solid
+}
+.clsAccStTxtSmB
+{
+    BORDER-RIGHT: #000000 1px solid;
+    BORDER-TOP: #000000 1px solid;
+    FONT-SIZE: 0.7em;
+    BORDER-LEFT: #000000 1px solid;
+    COLOR: #000000;
+    BORDER-BOTTOM: #000000 1px solid;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.clsAccStTxtSmRed
+{
+    BORDER-RIGHT: #000000 1px solid;
+    BORDER-TOP: #000000 1px solid;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 0.7em;
+    BORDER-LEFT: #000000 1px solid;
+    COLOR: #f24d48;
+    BORDER-BOTTOM: #000000 1px solid;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.clsEmailAddCelBt
+{
+    FONT: 0.7em Verdana, Arial, Helvetica, sans-serif;
+    BORDER-BOTTOM: #333333 1px solid
+}
+.clsEmailAddCelBtRt
+{
+    BORDER-RIGHT: #333333 1px solid;
+    FONT: 0.7em Verdana, Arial, Helvetica, sans-serif;
+    BORDER-BOTTOM: #333333 1px solid
+}
+
+.clsEmailAddRowHighlight{
+	background-color	: #eeeeee;
+	cursor				: hand;
+			}
+			
+.clsEmailAddRowLowlight{
+	background-color	: #ffffff;
+	cursor				: hand;
+}
+
+
+/* team table css starts here */
+
+.clsTeamStCelTopBR
+{
+    BORDER-RIGHT: #333333 1px solid;
+    BORDER-BOTTOM: #000000 1px solid
+}
+
+.clsTeamStCelBR
+{
+    BORDER-RIGHT: #999999 1px solid;
+    BORDER-BOTTOM: #999999 1px solid
+}
+
+.clsTeamStCelBtm
+{
+    BORDER-BOTTOM: #999999 1px solid
+}
+
+.clsTeamStCelTopB
+{
+    BORDER-BOTTOM: #000000 1px solid
+}
+
+/*team table css ends here */
+
+.clsFormHr
+{
+   COLOR: #BDCFD3
+}
+/*  Below are the new styles appended to all stylesheets for pfp Marketing - Frame Muller 29/09/2005  */
+
+.clsTxtStepTitle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	font-weight: bold;
+	color: #990032;
+}
+
+.topRightTabTable {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #CCCCCC;
+	border-right-color: #CCCCCC;
+	border-bottom-color: #CCCCCC;
+	border-left-color: #CCCCCC;
+}
+
+.clsFormInputNoSize {
+    FONT-SIZE: 0.7em;
+    MARGIN-BOTTOM: 0px;
+    COLOR: #000000;
+    FONT-FAMILY: Verdana, Arial, Helvetica, Sans-Serif
+}
+
+.clsFormBoxSquare {
+	BACKGROUND-COLOR: #fff0df;
+	border: 1px solid #fed4a4;
+}
+
+.clsFormBoxSquare2 {
+	BACKGROUND-COLOR: #ffffff;
+	border: 1px solid #fed4a4;
+}
+
+.clsAddressBookBtm {
+	border-bottom-width: 1px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: dashed;
+	border-left-style: none;
+	border-top-color: #FFCCFF;
+	border-right-color: #FFCCFF;
+	border-bottom-color: #FFCCFF;
+	border-left-color: #FFCCFF;
+}
+
+.clsAddressBookSides {
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-bottom-style: dashed;
+	border-left-style: dashed;
+	border-top-color: #FFCCFF;
+	border-right-color: #FFCCFF;
+	border-bottom-color: #FFCCFF;
+	border-left-color: #FFCCFF;
+	}
+
+.clsFRPAccOption {
+	width: 450px;
+	margin: 10px 5px 5px 5px ;
+	padding: 0;
+	}
+
+.clsFRPAccOption p {
+		font: 0.7em Verdana, Arial, sans-serif;
+		padding: 0;
+		margin: 0;
+		height: 50px;
+	}
+
+.clsFRPAccOptionHeader{
+		padding: 5px 5px 3px 0px;
+		margin: 0;
+		font: bold 0.7em Verdana, Arial, sans-serif;
+		vertical-align: text-bottom;
+	}
+
+.clsFRPAccOptionImg1 {
+		float: left;
+		padding: 0px 15px;
+		position: relative;
+		vertical-align: text-bottom;
+	}
+
+.clsFRPAccOptionImg2 {
+		 float: right;
+		position: relative;
+		}
+
+.clsFRPAccDashboard {
+		border-top: 1px dotted #C5C2C3;
+	border-left: 1px dotted #C5C2C3;
+		margin: 10px 5px 10px 5px ;
+		padding: 0px;
+	}
+
+.clsFRPAccDashHeader{
+		background-color: #F4F1F2;
+		padding: 5px 5px 8px 0px;
+		margin: 0px;
+		font: bold 0.7em Verdana, Arial, sans-serif;
+		vertical-align: text-bottom;
+	}
+
+.clsFRPAccDashboarImg1 {
+		float: left;
+		padding: 0px 5px;
+		position: relative;
+	}
+
+.clsFRPAccDashboarImg2 {
+		 float: right;
+		position: relative;
+		}
+
+.clsFRPAccDashboard p {
+		background: #ffffff;
+		font: 0.7em Verdana, Arial, sans-serif;
+		padding: 7px 0px 0px 0px;
+		margin: 0px;
+		height: 100px;
+	}

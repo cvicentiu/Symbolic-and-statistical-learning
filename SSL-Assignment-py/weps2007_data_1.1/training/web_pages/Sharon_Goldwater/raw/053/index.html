@@ -1,0 +1,789 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us">
+<head>
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type" />
+  <title>Morphology RG</title>
+  <meta content="Ed Kenschaft" name="author" />
+  <link rel="stylesheet" href="default.css" type="text/css" />
+  <link rel="stylesheet" href="academic.css" type="text/css" />
+  <script src="default.js" type="text/javascript"></script>
+  <script src="links.js" type="text/javascript"></script></head>
+<body>
+<script type="text/javascript">setRoot('..')</script>
+<div id="Title">
+<script type="text/javascript">document.write(document.title)</script>
+<noscript>
+<p>Ed Kenschaft</p></noscript>
+</div>
+<div class="NavigationBar">
+<ul>
+  <script type="text/javascript">
+  topLinks();
+  localLinks();
+  endLink();
+  </script>
+</ul>
+<hr />
+</div>
+<div class="Content">
+<h1>Readings on Morphology &amp; MT</h1>
+<p class="Label">MT Reading Group, April 19, 2006</p>
+<h2>Goldwater &amp; McClosky (2005)</h2>
+<table class="RowGrid FloatRight">
+  <caption>(01)&nbsp;Table:&nbsp;Morphological&nbsp;correspondences</caption>
+  <tbody>
+  <tr>
+      <td></td>
+      <th>Czech</th>
+      <th>English</th>
+    </tr>
+    <tr>
+      <td>a.</td>
+      <td>plural<br />
+past tense</td>
+      <td>plural<br />
+past tense</td>
+    </tr>
+  <tr>
+      <td>b.</td>
+      <td>person<br />
+negation<br />
+genitive case<br />
+instrumental case</td>
+      <td>pronouns<br />
+      <span class="Label">not</span><br />
+      <span class="Label">of</span><br />
+      <span class="Label">by</span> or <span class="Label">with</span></td>
+    </tr>
+    <tr>
+      <td>c.</td>
+      <td>gender</td>
+      <td>none</td>
+    </tr>
+    <tr>
+      <td>d.</td>
+      <td>other case markings</td>
+      <td>syntax</td>
+    </tr>
+  </tbody>
+</table>
+<h3>Introduction</h3>
+<ul>
+  <li>Estimating word-to-word alignments for the translation model is hindered by sparse data.</li>
+  <li>Much of the morphological variation in Czech is not reflected in English.</li>
+  <li>Final improvement: BLEU .270 &rarr; .333</li>
+</ul>
+<h3>Methods</h3>
+<h4>3.1 Lemmas</h4>
+<ul>
+  <li>Replace each word form with its associated lemma (i.e.&nbsp;root). <ol>
+  <li>Lemmatize only certain POS.</li>
+  <li>Lemmatize&nbsp;all POS except pronouns.</li>
+  <li>Lemmatize&nbsp;only rare words.</li>
+  <li>Truncate to n characters.</li>
+    </ol>
+  </li>
+  <li>Reduces data sparseness, but may lose useful information.</li>
+  <li>Expected to help for <span class="Label">(01c,d)</span>.</li>
+</ul>
+<h4>Morpheme Tokens (3.2 Pseudowords)</h4>
+<ul>
+  <li>Each token encodes a single morphological tag.</li>
+  <li>Reduces data sparseness, although not as much as lemmatization.</li>
+  <li>Retains correspondences with English function words.</li>
+  <li>Expected to help for <span class="Label">(01b)</span>.</li>
+</ul>
+<h4>3.3 Modified Lemmas</h4>
+<ul>
+  <li>Lemmatize, then concatenate tags of interest.</li>
+  <li>Eliminates some variation among wordforms.</li>
+  <li>Slightly reduces data sparseness.</li>
+  <li>Expected to help for <span class="Label">(01a)</span>.</li>
+</ul>
+<h4>Feature Vectors (3.4 Morphemes)</h4>
+<ul>
+    <li>
+Replace <span class="Label">f</span><span class="Sub Label">j</span> &rarr; <span class="Label">f</span><span class="Sub Label">j0</span>&nbsp;&hellip; <span class="Label">f</span><span class="Sub Label">jK</span>.&nbsp; Calculate:
+<table>
+  <tbody>
+    <tr>
+      <td class="Label">(02)</td>
+      <td style="border: thin solid ;">P(<span class="Label">f</span><span class="Sub Label">j</span>|<span class="Label">e</span><span class="Sub Label">i</span>) = &prod;<span class="Sub">k</span> P(<span class="Label">f</span><span class="Sub Label">jk</span>|<span class="Label">e</span><span class="Sub Label">i</span>)</td>
+    </tr>
+      </tbody>
+    </table>
+  <span class="Annotation">How are probabilities affected by null <span class="Label">f</span><span class="Sub Label">jk</span>?</span> </li>
+  <li>Estimate using variant of EM algorithm for alignment.</li>
+  <li>Reduces data sparseness, but retains potentially useful information.</li>
+  <li>Allows backoff to morphological tags.</li>
+</ul>
+<table class="RowGrid">
+  <caption>(03) Figure: Transformations</caption>
+  <tbody>
+    <tr>
+      <td>a.</td>
+      <td>Original:</td>
+      <td class="Enlarged"><tt>Pro n&#277;koho by jej&iacute; proveden&iacute; m&#277;lo smysl&nbsp;.</tt></td>
+    </tr>
+    <tr>
+      <td>b.</td>
+      <td>Lemmas:</td>
+      <td class="Enlarged"><tt>pro n&#277;kdo b&yacute;t jeho proveden&iacute; m&iacute;t smysl&nbsp;.</tt></td>
+    </tr>
+  <tr>
+      <td>c.</td>
+      <td>Morpheme Tokens:</td>
+      <td class="Enlarged"><tt>pro n&#277;kdo b&yacute;t PER_3 jeho proveden&iacute; m&iacute;t PER_X smysl&nbsp;.</tt></td>
+    </tr>
+    <tr>
+      <td>d.</td>
+      <td>Modified Lemmas:</td>
+      <td class="Enlarged"><tt>pro n&#277;kdo b&yacute;t+PER_3 jeho proveden&iacute; m&iacute;t+PER_X smysl&nbsp;.</tt></td>
+    </tr>
+    <tr>
+      <td>e.</td>
+      <td>Vector:</td>
+      <td class="Enlarged"><tt>(pro) (n&#277;kdo) (b&yacute;t PER_3) (jeho) (proveden&iacute;) (m&iacute;t&nbsp;PER_X) (smysl) (.)</tt></td>
+    </tr>
+  </tbody>
+</table>
+<h4>4.5 Combined Model</h4>
+Based on the results of the above experiments, they created a combined model using tokens for person and negation morphemes, and the modified lemma method for number and tense.
+<h3>Data</h3>
+<ul>
+  <li>PCEDT corpus</li>
+  <li>250 sentences each dev/test, translated Czech&rarr;English by 5 translators for BLEU scores</li>
+  <li>~21,000 sentences translated to Czech and morphologically annotated</li>
+  <li>~50,000 English sentences to train language model</li>
+</ul>
+<p>Roughly same number of rare lemmas in English and Czech, but roughly twice as many rare inflected wordforms in Czech.</p>
+<table class="RowGrid FloatRight">
+  <caption>(05)&nbsp;Table:&nbsp;Occurrences&nbsp;of each class of tag</caption>
+  <tbody>
+  <tr>
+      <td></td>
+      <th>Tag Class</th>
+      <th style="text-align: right;">Count</th>
+    </tr>
+    <tr>
+      <td>a.</td>
+      <td>PER</td>
+      <td style="text-align: right;">49700</td>
+    </tr>
+  <tr>
+      <td>b.</td>
+      <td>TEN</td>
+      <td style="text-align: right;">47744</td>
+    </tr>
+    <tr>
+      <td>c.</td>
+      <td>&nbsp; past</td>
+      <td style="text-align: right;">22544</td>
+    </tr>
+    <tr>
+      <td>d.</td>
+      <td>&nbsp; present</td>
+      <td style="text-align: right;">20291</td>
+    </tr>
+    <tr>
+      <td>e.</td>
+      <td>&nbsp; future</td>
+      <td style="text-align: right;">1707</td>
+    </tr>
+    <tr>
+      <td>f.</td>
+      <td>&nbsp; other</td>
+      <td style="text-align: right;">3202</td>
+    </tr>
+    <tr>
+      <td>g.</td>
+      <td>NUM</td>
+      <td style="text-align: right;">151646</td>
+    </tr>
+  <tr>
+      <td>h.</td>
+      <td>CASE</td>
+      <td style="text-align: right;">151646</td>
+    </tr>
+    <tr>
+      <td>i.</td>
+      <td>NEG</td>
+      <td style="text-align: right;">3326</td>
+    </tr>
+  </tbody>
+</table>
+<p><em>(04) Figure: Number of items y with token count of x.</em></p>
+<img class="ActualSize" alt="[Token counts]" src="goldwater2005.png" height="189" width="236" />
+<h3>Results</h3>
+<p>Experiments were with a word-to-word (not phrase-based) translation system.</p>
+<p>BLEU score difference of .009 is significant (p &lt; .05).</p>
+<table class="RowGrid FloatLeft">
+  <caption>(06)&nbsp;Table: BLEU scores for baseline&nbsp;&amp;&nbsp;lemmatization</caption>
+  <tbody>
+  <tr>
+      <td></td>
+      <td></td>
+      <th>Dev</th>
+      <th>Test</th>
+    </tr>
+    <tr>
+      <td>a.</td>
+      <td>word-to-word</td>
+      <td>.311</td>
+      <td>.270</td>
+    </tr>
+  <tr>
+      <td>b.</td>
+      <td>truncate&nbsp;(k=6)</td>
+      <td>.353</td>
+      <td>.283</td>
+    </tr>
+    <tr>
+      <td>c.</td>
+      <td>lemmatize all</td>
+      <td>.355</td>
+      <td>.299</td>
+    </tr>
+    <tr>
+      <td>d.</td>
+      <td>&nbsp; except Pro</td>
+      <td>.350</td>
+      <td style="text-align: center;">&ndash;</td>
+    </tr>
+    <tr>
+      <td>e.</td>
+      <td>&nbsp; except Pro, V, N</td>
+      <td>.346</td>
+      <td style="text-align: center;">&ndash;</td>
+    </tr>
+    <tr>
+      <td>f.</td>
+      <td>&nbsp; n &lt; 50</td>
+      <td><span class="Marked">.370</span></td>
+      <td><span class="Marked">.306</span></td>
+    </tr>
+  </tbody>
+</table>
+<table class="Grid">
+  <caption>(07)&nbsp;Table: BLEU scores (Dev set) with different methods &amp; classes of tags</caption>
+  <tbody>
+  <tr>
+      <td></td>
+      <td></td>
+      <th style="text-align: right;">Tokens</th>
+      <th style="text-align: right;">Mod-Lem</th>
+      <th style="text-align: right;">Vectors</th>
+    </tr>
+    <tr>
+      <td>a.</td>
+      <td>PER</td>
+      <td style="text-align: right;"><span class="Marked">.365</span></td>
+      <td style="text-align: right;">.356</td>
+      <td style="text-align: right;">.356</td>
+    </tr>
+  <tr>
+      <td>b.</td>
+      <td>TEN</td>
+      <td style="text-align: right;"><span class="Marked">.365</span></td>
+      <td style="text-align: right;">.361</td>
+      <td style="text-align: right;"><span class="Marked">.364</span></td>
+    </tr>
+    <tr>
+      <td>c.</td>
+      <td>PER,TEN</td>
+      <td style="text-align: right;">.355</td>
+      <td style="text-align: right;">.362</td>
+      <td style="text-align: right;">.355</td>
+    </tr>
+    <tr>
+      <td>d.</td>
+      <td>NUM</td>
+      <td style="text-align: right;">.354</td>
+      <td style="text-align: right;"><span class="Marked">.367</span></td>
+      <td style="text-align: right;">.361</td>
+    </tr>
+  <tr>
+      <td>e.</td>
+      <td>CASE</td>
+      <td style="text-align: right;">.353</td>
+      <td style="text-align: right;">.340</td>
+      <td style="text-align: right;">.337</td>
+    </tr>
+    <tr>
+      <td>f.</td>
+      <td>NEG</td>
+      <td style="text-align: right;">.357</td>
+      <td style="text-align: right;">.356</td>
+      <td style="text-align: right;">.353</td>
+    </tr>
+  </tbody>
+</table>
+<br />
+<table class="RowGrid">
+  <caption style="caption-side: left;">(08)</caption>
+  <tbody>
+  <tr>
+      <td class="Label"></td>
+      <th>Dev</th>
+      <th>Test</th>
+    </tr>
+    <tr>
+      <td>combined model</td>
+      <td><span class="Marked">.390</span></td>
+      <td><span class="Marked">.333</span></td>
+    </tr>
+  </tbody>
+</table>
+<p>The best lemmatization results occurred with lemmatizing low-frequency words <span class="Label">(06f)</span>.&nbsp; Truncation <span class="Label">(06b)</span> performed significantly better than baseline (06a), but significantly worse than lemmatization.</p>
+<p>Scores on other experiments <span class="Label">(07)</span> are reported on the Dev set only.&nbsp; None scored better than lemmatization (!).</p>
+<p>Adding person-agreement tokens (PER) helped, and examination confirmed that they did, indeed, align with English pronouns.&nbsp; Inexplicably, tense-marking tokens (TEN) helped just as much, but using both PER and TEN canceled the benefits of either.</p>
+<p>For modified lemmas, number (NUM) and tense tags helped, which makes sense since these are also marked in English.&nbsp; Case tags hurt, which also makes sense, since they increase data sparseness without providing any information corresponding with English.</p>
+<p>Feature vectors did not perform significantly better than morpheme tokens in any experiment (!).</p>
+<p>The combined model performed best of all, successfully combining the advantages of each method.</p>
+<h3>Conclusions</h3>
+<ol>
+  <li>Morphological analysis does help, through the reduction of data sparseness.</li>
+  <li>The greatest improvement comes from changing the source text to reflect the morphological characteristics of the target text.</li>
+</ol>
+<h2>Schrader (2006)</h2>
+<h3>Introduction</h3>
+<p>German&rarr;English alignment is hindered by long German compounds aligning with English phrases, and a large proportion of hapax legomena.</p>
+<p>This system aligns based on word length and POS patterns, without relying on frequency counts.</p>
+<p>Nie&szlig;en &amp; Ney (2001) and Tschorn &amp; L&uuml;deling (2003) split German compounds into components.&nbsp; This only works if the meaning of the compound is compositional <span class="Label">(09)</span>.</p>
+<table class="FlushLeft">
+  <tbody>
+  <tr>
+      <td class="Label">(09)</td>
+      <td>Personen-stand</td>
+      <td>'marital status'</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td class="Label">personal-status</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<p class="Annotation">This criticism suggests word-based translation.</p>
+<h3>Data</h3>
+<ul>
+  <li>Europarl corpus</li>
+  <li>both sides POS tagged</li>
+  <li>manually corrected alignments of ~100,000 German&rarr;English tokens</li>
+</ul>
+<table class="RowGrid">
+  <caption>(10)&nbsp;Table: Corpus characteristics</caption>
+  <tbody>
+  <tr>
+      <th>Language</th>
+      <th>Tokens</th>
+      <th>Types</th>
+      <th>Hapax Legomena</th>
+      <th>Other Rare</th>
+      <th>Frequent</th>
+    </tr>
+    <tr>
+      <td>English</td>
+      <td>29,077,024</td>
+      <td>101,967</td>
+      <td>39,200 (38%)</td>
+      <td>35,608 (35%)</td>
+      <td>27,159 (27%)</td>
+    </tr>
+  <tr>
+      <td>German</td>
+      <td>27,643,792</td>
+      <td>286,330</td>
+      <td>140,826 (49%)</td>
+      <td>98,126 (34%)</td>
+      <td>47,378 (17%)</td>
+    </tr>
+  </tbody>
+</table>
+<p>Of 512 German hapax legomena examined:</p>
+<ul>
+  <li>68.95% are noun compounds</li>
+  <li>68% align with English multi-word expressions, mostly noun sequences preceded by an Adj or followed by a PP</li>
+  <li>correspondance of German compound length to English multi-word phrase length is high <span class="Label">(11)</span></li>
+</ul>
+<table class="ColGrid">
+  <caption>(11)&nbsp;Table:&nbsp;German&nbsp;compound&nbsp;length&nbsp;vs.&nbsp;English&nbsp;phrase&nbsp;length</caption>
+  <tbody>
+  <tr>
+      <td></td>
+      <th colspan="5" rowspan="1">German compound length</th>
+    </tr>
+    <tr>
+      <td class="Label">English</td>
+      <th style="text-align: right;">1</th>
+      <th style="text-align: right;">2</th>
+      <th style="text-align: right;">3</th>
+      <th style="text-align: right;">4</th>
+      <th style="text-align: right;">&gt;4</th>
+    </tr>
+    <tr>
+      <td class="Label">1 word</td>
+      <td style="text-align: right;">59</td>
+      <td style="text-align: right;">2</td>
+      <td style="text-align: right;">1</td>
+      <td style="text-align: right;">0</td>
+      <td style="text-align: right;">3</td>
+    </tr>
+  <tr>
+      <td class="Label">2 words</td>
+      <td style="text-align: right;">30</td>
+      <td style="text-align: right;">119</td>
+      <td style="text-align: right;">56</td>
+      <td style="text-align: right;">15</td>
+      <td style="text-align: right;">10</td>
+    </tr>
+    <tr>
+      <td class="Label">3 words</td>
+      <td style="text-align: right;">2</td>
+      <td style="text-align: right;">20</td>
+      <td style="text-align: right;">15</td>
+      <td style="text-align: right;">8</td>
+      <td style="text-align: right;">10</td>
+    </tr>
+    <tr>
+      <td class="Label">4 words</td>
+      <td style="text-align: right;">0</td>
+      <td style="text-align: right;">1</td>
+      <td style="text-align: right;">0</td>
+      <td style="text-align: right;">0</td>
+      <td style="text-align: right;">2</td>
+    </tr>
+  </tbody>
+</table>
+<p>The English phrase length is often 1 more due to PP <span class="Label">(12)</span>.<br />
+</p>
+<table class="FlushLeft">
+  <tbody>
+  <tr>
+      <td class="Label">(12)</td>
+      <td>Kongresh-vorlage</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>submission to Congress</td>
+    </tr>
+  </tbody>
+</table>
+<h3>Compound Alignment Strategy</h3>
+<ul>
+  <li>German token is considered a compound if it is tagged as a noun and is at least 12 characters long</li>
+  <li>English candidate phrases are generated from noun sequences with optional preceding Adj and/or following PP</li>
+  <li>length ratio is compared:<br />
+0&nbsp; <span class="Enlarged">&lt;</span>&nbsp; 1 &ndash; (German compound length <span class="Enlarged">/</span> English&nbsp;phrase&nbsp;length)</li>
+  <li>qualifying candidate is added to bilingual dictionary</li>
+</ul>
+<p class="Annotation">What happens if there are multiple qualifying candidates?</p>
+<h3>Results</h3>
+<ul>
+  <li>1600 additional entries in bilingual dictionary<br />
+    <span class="Annotation">additional to what?</span></li>
+  <li>236 of 353 known hapax compounds were translated <ul>
+    <li>11 unidentified compounds did not meet length threshold</li>
+    <li>248 of 353 after improvements to nominal recognizing heuristics</li>
+    </ul>
+  </li>
+  <li>of hapaxes added to dictionary, 47% were translated correctly <ul>
+    <li>70% after improvements</li>
+    </ul>
+  </li>
+</ul>
+<h3>Future Work</h3>
+<ul>
+  <li>integrate into SMT</li>
+  <li>use morphological analysis instead of length/POS heuristics</li>
+</ul>
+<h2>Koehn &amp; Knight (2003)</h2>
+<ul>
+  <li>German&rarr;English 1&rarr;many</li>
+  <li>learn rules for splitting German compounds</li>
+  <li>cover each German compound with known words and fillers</li>
+  <ol class="L2">
+    <li><span class="Label">aktionsplan</span></li>
+    <li><span class="Label">aktions</span>-<span class="Label">plan</span></li>
+    <li><span class="Label">aktion</span>-s-<span class="Label">plan</span></li>
+    <li><span class="Label">akt</span>-<span class="Label">ion</span>-s-<span class="Label">plan</span></li>
+  </ol>
+  <li>select best covering based on various heuristics</li>
+  <ul>
+  </ul>
+  <ol>
+    <li><span class="Label">eager</span> &ndash; split into most possible chunks</li>
+    <li><span class="Label">frequency based</span> &ndash; metric</li>
+    <li><span class="Label">parallel text</span> &ndash; find best mapping to English translation</li>
+    <li><span class="Label">POS</span> &ndash; limit covering words to content words (not P,DET)</li>
+  </ol>
+  <ul>
+  </ul>
+  <li>99.1% accuracy using parallel text &amp; POS</li>
+  <li>.039 improvement to BLEU using eager</li>
+</ul>
+<table class="Grid">
+  <caption>(13)&nbsp;Table: Evaluation of compound-splitting methods</caption>
+  <tbody>
+  <tr>
+      <td></td>
+      <th style="text-align: center;" colspan="3" rowspan="1">Metrics</th>
+      <th style="text-align: center;" colspan="2" rowspan="1">BLEU</th>
+    </tr>
+    <tr>
+      <td></td>
+      <th style="text-align: right;">prec</th>
+      <th style="text-align: right;">recall</th>
+      <th style="text-align: right;">acc</th>
+      <th style="text-align: right;">WBSMT</th>
+      <th style="text-align: right;">PBSMT</th>
+    </tr>
+    <tr>
+      <td>none</td>
+      <td style="text-align: right;">&ndash;</td>
+      <td style="text-align: right;">0.0%</td>
+      <td style="text-align: right;">94.2%</td>
+      <td style="text-align: right;">.291</td>
+      <td style="text-align: right;">.305</td>
+    </tr>
+  <tr>
+      <td>eager</td>
+      <td style="text-align: right;">24.8%</td>
+      <td style="text-align: right;">73.3%</td>
+      <td style="text-align: right;">87.1%</td>
+      <td style="text-align: right;">.222</td>
+      <td style="text-align: right;"><span class="Marked">.344</span></td>
+    </tr>
+    <tr>
+      <td>frequency based</td>
+      <td style="text-align: right;">57.4%</td>
+      <td style="text-align: right;">86.6%</td>
+      <td style="text-align: right;">95.7%</td>
+      <td style="text-align: right;"><span class="Marked">.317</span></td>
+      <td style="text-align: right;"><span class="Marked">.342</span></td>
+    </tr>
+    <tr>
+      <td>parallel</td>
+      <td style="text-align: right;">83.3%</td>
+      <td style="text-align: right;">89.1%</td>
+      <td style="text-align: right;">98.6%</td>
+      <td style="text-align: right;">.294</td>
+      <td style="text-align: right;">.330</td>
+    </tr>
+  <tr>
+      <td>parallel &amp; POS</td>
+      <td style="text-align: right;"><span class="Marked">93.8%</span></td>
+      <td style="text-align: right;"><span class="Marked">90.1%</span></td>
+      <td style="text-align: right;"><span class="Marked">99.1%</span></td>
+      <td style="text-align: right;">.306</td>
+      <td style="text-align: right;">.326</td>
+    </tr>
+  </tbody>
+</table>
+<h2>Lee (2004)</h2>
+<ul>
+  <li>Arabic&rarr;English 1&rarr;many</li>
+  <li>analyze Arabic into prefix(es)-stem-suffix(es), distinct tokens</li>
+  <li>align Arabic morphemes to English</li>
+  <li>unaligned morphemes are either deleted or merged with stem based on alignment frequencies</li>
+  <li>Model 1, doubles BLEU score</li>
+  <li>PBSMT, equivalent to an order of magnitude more data</li>
+</ul>
+<table class="ColGrid">
+  <caption>(14)&nbsp;Table:&nbsp;BLEU-score&nbsp;evaluation&nbsp;of&nbsp;delete/merge</caption>
+  <tbody>
+  <tr>
+      <th></th>
+      <th style="text-align: center;" colspan="2" rowspan="1">Model 1</th>
+      <th style="text-align: center;" colspan="2" rowspan="1">PBSMT</th>
+    </tr>
+    <tr>
+      <th># sentences</th>
+      <th style="text-align: right;">base</th>
+      <th style="text-align: right;">morph</th>
+      <th style="text-align: right;">base</th>
+      <th style="text-align: right;">morph</th>
+    </tr>
+    <tr>
+      <td style="text-align: right;">3.5K</td>
+      <td style="text-align: right;">.10</td>
+      <td style="text-align: right;">.25</td>
+      <td style="text-align: right;">.17</td>
+      <td style="text-align: right;">.24</td>
+    </tr>
+  <tr>
+      <td style="text-align: right;">35K</td>
+      <td style="text-align: right;">.14</td>
+      <td style="text-align: right;">.29</td>
+      <td style="text-align: right;">.24</td>
+      <td style="text-align: right;">.29</td>
+    </tr>
+    <tr>
+      <td style="text-align: right;">350K</td>
+      <td style="text-align: right;">.18</td>
+      <td style="text-align: right;">.31</td>
+      <td style="text-align: right;">.32</td>
+      <td style="text-align: right;">.36</td>
+    </tr>
+    <tr>
+      <td style="text-align: right;">3.3M</td>
+      <td style="text-align: right;">.18</td>
+      <td style="text-align: right;">.32</td>
+      <td style="text-align: right;">.36</td>
+      <td style="text-align: right;">.39</td>
+    </tr>
+  </tbody>
+</table>
+<h2>Habash &amp; Rambow (2005)</h2>
+<ul>
+  <li>Arabic&rarr;English</li>
+  <li>possible morphological classes</li>
+  <ul>
+    <li>English: 50</li>
+    <li>Arabic: 333,000 theoretically, 2200 attested</li>
+  </ul>
+</ul>
+<h2>Nie&szlig;en &amp; Ney (2001,2004)</h2>
+<ul>
+  <li>German&rarr;English</li>
+  <li>hierarchical lexicon model</li>
+  <ul>
+    <li><span class="Label">f</span><span class="Sub Label">0..k</span> is considered special case of base form <span class="Label">f<span class="Sub">0..k-1</span></span></li>
+  </ul>
+  <ul>
+    <li>align at all levels</li>
+  </ul>
+  <li>syntactic restructuring</li>
+  <ul>
+    <li>reorder questions</li>
+  </ul>
+  <ul>
+    <li>detach verb prefixes</li>
+  </ul>
+  <li>augmented dictionary</li>
+  <ul>
+    <li>include separate entries for homonymous forms with different morphology, e.g.&nbsp;<em>moose</em>(sg.) vs. <em>moose</em>(pl.)</li>
+  </ul>
+  <ul>
+    <li>detect multiword phrases based on POS sequence</li>
+  </ul><li>improvements comparable to an order of magnitude of data</li>
+</ul>
+<table class="ColGrid">
+  <caption>(15)&nbsp;Table: Evaluation of methods (lower is better)</caption>
+  <tbody>
+    <tr>
+      <th>#sent</th>
+      <th>Method</th>
+      <th style="text-align: right;">1-BLEU</th>
+      <th style="text-align: right;">mWER</th>
+      <th style="text-align: right;">SSER</th>
+      <th style="text-align: right;">ISER</th>
+    </tr>
+    <tr>
+      <td style="text-align: right;">0</td>
+      <td>baseline</td>
+      <td style="text-align: right;">76.7</td>
+      <td style="text-align: right;">53.6</td>
+      <td style="text-align: right;">60.4</td>
+      <td style="text-align: right;">29.8</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>restructure</td>
+      <td style="text-align: right;">70.9</td>
+      <td style="text-align: right;">50.2</td>
+      <td style="text-align: right;">57.8</td>
+      <td style="text-align: right;">30.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>&nbsp; + all</td>
+      <td style="text-align: right;">67.4</td>
+      <td style="text-align: right;">48.0</td>
+      <td style="text-align: right;">52.8</td>
+      <td style="text-align: right;">24.1</td>
+    </tr>
+    <tr>
+      <td style="text-align: right;">5K</td>
+      <td>baseline</td>
+      <td style="text-align: right;">52.6</td>
+      <td style="text-align: right;">38.0</td>
+      <td style="text-align: right;">37.3</td>
+      <td style="text-align: right;">17.4</td>
+    </tr>
+  <tr>
+      <td style="text-align: right;"></td>
+      <td>restructure</td>
+      <td style="text-align: right;">47.9</td>
+      <td style="text-align: right;">34.7</td>
+      <td style="text-align: right;">33.6</td>
+      <td style="text-align: right;">15.2</td>
+    </tr>
+    <tr class="HighlightRow">
+      <td></td>
+      <td>&nbsp; + all</td>
+      <td style="text-align: right;">47.1</td>
+      <td style="text-align: right;">33.9</td>
+      <td style="text-align: right;">31.8</td>
+      <td style="text-align: right;">13.7</td>
+    </tr>
+    <tr class="HighlightRow">
+      <td style="text-align: right;">58K</td>
+      <td>baseline</td>
+      <td style="text-align: right;">46.3</td>
+      <td style="text-align: right;">34.1</td>
+      <td style="text-align: right;">30.2</td>
+      <td style="text-align: right;">14.1</td>
+    </tr>
+  <tr>
+      <td style="text-align: right;"><br />
+      </td>
+      <td>restructure</td>
+      <td style="text-align: right;">43.7</td>
+      <td style="text-align: right;">32.5</td>
+      <td style="text-align: right;">26.6</td>
+      <td style="text-align: right;">12.8</td>
+    </tr>
+    <tr>
+      <td style="text-align: right;"><br />
+      </td>
+      <td>&nbsp; + all</td>
+      <td style="text-align: right;">42.9</td>
+      <td style="text-align: right;">31.8</td>
+      <td style="text-align: right;">26.3</td>
+      <td style="text-align: right;">11.8</td>
+    </tr>
+  </tbody>
+</table>
+<h2>General Discussion</h2>
+<ul>
+</ul>
+<ol class="L0">
+  <li>data sparseness is a real problem, even with large corpora</li>
+  <ul>
+    <li>50% hapax legomena in German</li>
+    <li>2x as many rare wordforms in Czech vs. English</li>
+  </ul>
+  <li>morphological analysis helps, up to an order of magnitude more data</li>
+  <li>most experiments so far involve techniques highly customized for specific language pair</li>
+  <li>most significant improvements are from changes which take the structure of the target language into consideration</li>
+  <li>PBSMT overcomes overeager tokenization, may counteract (D)</li>
+  <li>improvements are expected to correlate with inverse size of training corpus</li>
+  <li>Future: factored translation models</li>
+</ol>
+<ul>
+</ul>
+<h1>References</h1>
+<div class="References">
+<p><a href="http://www.cog.brown.edu:16080/%7Esgwater/"><span class="Author">Sharon Goldwater</span></a>, <span class="Author">David McClosky</span>. <span class="Article">Improving Statistical MT through Morphological Analysis</span><em>.</em> <span class="Publication">Proceedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP)</span>. Vancouver, 2005. [<a href="http://www.cog.brown.edu:16080/%7Esgwater/papers/emnlp05.pdf">pdf</a>, <a href="http://www.cog.brown.edu:16080/%7Esgwater/papers/emnlp05.ps">ps</a>]</p>
+<p><span class="Author">Nizar Habash</span>, <span class="Author">Owen Rambow</span>. <span class="Article">Arabic Tokenization, Part-of-Speech Tagging and Morphological Disambiguation in One Fell Swoop</span>. <span class="Publication">ACL-05</span>. [<a href="http://acl.ldc.upenn.edu/P/P05/P05-1071.pdf">pdf</a>]</p>
+<p id="koehn-knight2003"><span class="Author">Philipp Koehn</span>, <span class="Author">Kevin Knight.</span> <span class="Article">Empirical Methods for Compound Splitting</span>. <span class="Publication">EACL 2003</span>. [<a href="http://www.iccs.informatics.ed.ac.uk/%7Epkoehn/publications/compound2003.pdf">pdf</a>, <a href="http://www.iccs.informatics.ed.ac.uk/%7Epkoehn/publications/compound2003.ps">ps</a>, <a href="http://www.iccs.informatics.ed.ac.uk/%7Epkoehn/publications/compound2003.html">abstract</a>]</p>
+<p id="lee_hlt2004"><span class="Author">Young-Suk Lee</span>. <span class="Article">Morphological Analysis for Statistical Machine Translation</span>. In Susan Dumais, Daniel Marcu, Salim Roukos, eds., <span class="Publication">HLT-NAACL 2004: Short Papers</span>, 57&ndash;60, Boston, Massachusetts, May 2004. [<a href="http://acl.ldc.upenn.edu/hlt-naacl2004/shorts/pdf/227_Paper.pdf">pdf</a>, <a href="http://acl.ldc.upenn.edu/hlt-naacl2004/shorts/ps/227_Paper.ps">ps</a>]</p>
+<p id="niessen-ney_eacl2001"><span class="Author">Sonja Nie</span>&szlig;<span class="Author">en</span>, <span class="Author">Hermann Ney</span>. <span class="Article">Toward hierarchical models for statistical machine translation of inflected languages</span>. In <span class="Publication">ACL-EACL-2001: 39th Annual Meeting of the Association for Computational Linguistics &ndash; joint with EACL 2001: Proceedings of the Workshop on Data-Driven Machine Translation</span>, 47-54. Toulouse, France, July 2001. [<a href="http://www-i6.informatik.rwth-aachen.de/PostScript/InterneArbeiten/Paper_2001/Niessen_HierarchicalModels_ACL2001-DDMT_2001.ps">ps</a>]</p>
+<p id="niessen-ney_cl2004"><span class="Author">Sonja Nie</span>&szlig;<span class="Author">en</span>, <span class="Author">Hermann Ney</span>. <span class="Article">Statistical Machine Translation with Scarce Resources Using Morpho-Syntactic Information</span>. In <span class="Publication">Computational Linguistics</span>, Volume 30, Number 2, pp.&nbsp;181-204, June 2004. [<a href="http://cognet.mit.edu/library/journals/issue?issue_id=1726">CogNet</a>]</p>
+<p id="popovic-etal_acl2005"><a href="http://www-i6.informatik.rwth-aachen.de/%7Epopovic/"><span class="Author">Maja Popovi&#263;</span></a>, <span class="Author">David Vilar</span>, <span class="Author">Hermann Ney</span>, <span class="Author">Slobodan Jovi&#269;i&#263;</span>, <span class="Author">Zoran &Scaron;ari&#263;</span>. <span class="Article">Augmenting a Small Parallel Text with Morpho-syntactic Language Resources for Serbian-English Statistical Machine Translation</span>. In <span class="Publication">Proceedings of the ACL Workshop on Building and Using Parallel Texts: Data-Driven Machine Translation and Beyond</span>, 41-48. Ann Arbor, Michigan, June 2005. [<a href="http://www-i6.informatik.rwth-aachen.de/ps/InterneArbeiten/Popovic_Corpus+Morphosyntax_for_SerbianEnglish_SMT.pdf">pdf</a>]</p>
+<p id="schrader_lrec2006"><a href="http://www.cogsci.uni-osnabrueck.de/%7Egraduate/members/Bettina.Schrader.html"><span class="Author">Bettina Schrader</span></a>. <span class="Article">Non-Probabilistic Alignment of Rare German and English Nominal Expressions</span>. To appear in: <span class="Publication">Proceedings of the Fifth International Conference on Language Resources and Evaluation (LREC)</span>, May 2006, Genoa, Italy.</p>
+</div>
+</div>
+<script type="text/javascript">footer(0);</script>
+</body></html>

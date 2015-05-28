@@ -1,0 +1,743 @@
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 2.0//EN" "http://www.w3.org/TR/xhtml2/DTD/xhtml2.dtd">
+
+<html xmlns="http://www.w3.org/2002/06/xhtml2">
+
+<head>
+	<title>UAI - Uncertainty in Artificial Intelligence</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="general.css" type="text/css"/>
+	<link rel="stylesheet" href="classes.css" type="text/css"/>
+	<link rel="stylesheet" href="http://uai.sis.pitt.edu/classes.css" type="text/css"/>
+</head>
+
+<script language="JavaScript" tyle="text/javascript">
+<!--
+	function imgSwap(oImg, sImgPath) {
+		oImg.src = sImgPath;
+	}
+//-->
+</script>
+<script language="javascript" type="text/javascript">
+<!--
+	function processLogin(type) {
+		bError = false;
+		
+		// First Name:
+		if(type < 2)
+                {
+                    if (document.formQuickLogin.first_name.value == "") 
+                    {
+                            alert("Please enter First Name");
+                            bError = true;
+                    }
+
+                    // Last Name:
+                    if (document.formQuickLogin.last_name.value == "") 
+                    {
+                            alert("Please enter Last Name");
+                            bError = true;
+                    }
+                    
+                    if(type == 0)
+                    {
+                        document.formQuickLogin.type.value = "login";
+                        // Password:
+                        if (document.formQuickLogin.password.value == "") {
+                            alert("Please enter Password");
+                            bError = true;
+                        }
+                    }    
+                    else
+                    {
+                        document.formQuickLogin.type.value = "password";
+                    }
+        
+                    if (!bError) document.formQuickLogin.submit();
+                }
+                else
+                {
+                    if (document.formSlowLogin.first_name.value == "") 
+                    {
+                            alert("Please enter First Name");
+                            bError = true;
+                    }
+
+                    // Last Name:
+                    if (document.formSlowLogin.last_name.value == "") 
+                    {
+                            alert("Please enter Last Name");
+                            bError = true;
+                    }
+                    if(type == 2) 
+                    {
+                        document.formSlowLogin.type.value = "login";
+                        // Password:
+                        if (document.formSlowLogin.password.value == "") 
+                        {
+                                alert("Please enter Password");
+                                bError = true;
+                        }
+                    }
+                    else
+                    {
+                        document.formSlowLogin.type.value = "password";
+                    }    
+                    if (!bError) document.formSlowLogin.submit();
+                }
+	}
+// -->
+</script>
+
+
+<body class="cBodyIndex">
+
+<div align="center">
+<table width="760" cellspacing="0" cellpadding="0" border="0" class="cMainFrame">
+
+<!-- Title belt -->
+<tr>
+	<td>
+		<table width="100%" height="73" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+			<td width="282"><img src="title_belt_01.jpg" width="282" height="73" border="0" usemap="#mapLogo" alt="Uncertainty in Artificial Intelligence"/></td>
+			<td width="478" height="73" align="right" valign="top" background="title_belt_02.jpg">
+				<table cellspacing="0" cellpadding="4" border="0">
+				<tr>
+					<!-- User name -->
+					<td>
+                                                <div align="right">
+
+						<form name="formQuickLogin" id="formQuickLogin" action="http://uai.sis.pitt.edu/loginUser.jsp?mmnu=0&amp;smnu=0" method="post">
+							<input type="hidden" name="type" id="type" value="login"/>
+                                                        <span class="cQuickLogin">First Name</span>
+							<input type="text" name="first_name" id="first_name" value="" class="cQuickLogin cFormS"/>
+							&nbsp;
+							<span class="cQuickLogin">Last Name</span>
+							<input type="text" name="last_name" id="last_name" value="" class="cQuickLogin cFormS"/>
+							&nbsp;
+							<span class="cQuickLogin">Password</span>
+							<input type="password" name="password" id="password" maxlength="12" class="cQuickLogin cFormS"/>
+							&nbsp;
+							<a href="displayArticles.jsp%3Fmmnu=1&amp;smnu=1&amp;proceeding_id=8.1.html#top" class="cQuickLogin"
+								onclick="processLogin(1); return true;">
+								Forgot Password</a>
+                                                        &nbsp;&nbsp;      
+                                                        <a href="displayArticles.jsp%3Fmmnu=1&amp;smnu=1&amp;proceeding_id=8.1.html#top" class="cQuickLogin"
+								onclick="processLogin(0); return true;">
+								Log in!</a>
+                                                        
+						</form>
+    
+                                        </div>            
+					</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+
+<!-- Main menu -->
+<tr>
+	<td>
+		<table width="100%" cellspacing="0" cellpadding="2" border="0" class="cMainMenu">
+		<tr>
+
+			<td width="1" class="cMenu1">
+				<nobr>
+					&nbsp;&nbsp;
+					&nbsp;<a href="http://uai.sis.pitt.edu/proceedings.jsp?mmnu=1&amp;smnu=0" class="cMenu_0">Proceedings</a>&nbsp;
+					<span class="cMenuBullet">&bull;</span>
+					&nbsp;<a href="displayArticles.jsp%3Fmmnu=1&amp;smnu=1&amp;proceeding_id=8.1.html" class="cMenu_1">Proceeding details</a>&nbsp;
+					&nbsp;&nbsp;
+				</nobr>
+			</td>
+
+
+        <!-- Authors -->
+        <td width="1" class="cMenu2">
+                <nobr>
+                        &nbsp;&nbsp;
+                        &nbsp;<a href="http://uai.sis.pitt.edu/authors.jsp?mmnu=2&amp;smnu=0" class="cMenu_0">Authors</a>&nbsp;
+                        &nbsp;&nbsp;
+                </nobr>
+        </td>
+
+        <!-- Search -->
+        <td width="1" class="cMenu3">
+                <nobr>
+                        &nbsp;&nbsp;
+                        &nbsp;<a href="http://uai.sis.pitt.edu/search.jsp?mmnu=3&amp;smnu=0" class="cMenu_0">Search</a>&nbsp;
+                        &nbsp;&nbsp;
+                </nobr>
+        </td>
+
+			<!-- Distancer -->
+			<td width="*" class="cMenu4">
+			</td>
+
+
+		</tr>
+		</table>
+	</td>
+</tr>
+<!-- Work area -->
+<tr>
+	<td>
+		<table width="100%" cellspacing="0" cellpadding="8" border="0">
+		<tr>
+			<td>
+
+
+
+
+
+
+        <span class="cPageTitle">Proceedings of the 8th Conference on Uncertainty in Artificial Intelligence ( 1992 )</span><br/>
+        <span class="cPageSubtitle">Jul 17-19 1992, Stanford, CA 
+        <br /><br />
+        Edited By:</span>
+<a class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=61&amp;proceeding_id=8">Didier Dubois</a>, <a class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=96&amp;proceeding_id=8">Michael Wellman</a>, <a class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=252&amp;proceeding_id=8">Bruce D'Ambrosio</a>, <a class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=309&amp;proceeding_id=8">Philippe Smets</a>
+        <br />
+        <span class="cPageSubtitle">Published By:</span>&nbsp;Morgan Kaufmann, San Mateo, CA<br />
+        <span class="cPageSubtitle">ISBN:</span>&nbsp;1-55860-258-5<br />
+        <hr/>
+
+	<table width="100%" cellpadding="4" cellspacing="0" class="cLstTable">
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=639&amp;proceeding_id=8">A computational scheme for Reasoning in Dynamic Probabilistic Networks</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=66&amp;proceeding_id=8">Uffe Kjærulff</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=671&amp;proceeding_id=8">A Decision Calculus for Belief Functions in Valuation-Based Systems</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=539&amp;proceeding_id=8">Hong Xu</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=665&amp;proceeding_id=8">A Fuzzy Logic Approach to Target Tracking</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=703&amp;proceeding_id=8">Chin-Wang Tao</A>
+, <A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=704&amp;proceeding_id=8">Wiley Thompson</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=641&amp;proceeding_id=8">A Note on the Measure of Discord</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=687&amp;proceeding_id=8">George Klir</A>
+, <A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=688&amp;proceeding_id=8">Behzad Parviz</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=647&amp;proceeding_id=8">A Probabilistic Network of Predicates</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=689&amp;proceeding_id=8">Dekang Lin</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=633&amp;proceeding_id=8">A Symbolic Approach to Reasoning with Linguistic Quantifiers</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=61&amp;proceeding_id=8">Didier Dubois</A>
+, <A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=62&amp;proceeding_id=8">Henri Prade</A>
+, <A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=2&amp;proceeding_id=8">Lluis Godo</A>
+, <A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=460&amp;proceeding_id=8">Ramon Lopez de Mantaras</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=653&amp;proceeding_id=8">aHUGIN: A System Creating Adaptive Causal Probabilistic Networks</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=695&amp;proceeding_id=8">Kristian Olesen</A>
+, <A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=87&amp;proceeding_id=8">Steffen Lauritzen</A>
+, <A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=84&amp;proceeding_id=8">Finn Jensen</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=667&amp;proceeding_id=8">An Algorithm for Deciding if a Set of Observed Independencies Has a Causal Explanatio</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=654&amp;proceeding_id=8">Tom Verma</A>
+, <A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=114&amp;proceeding_id=8">Judea Pearl</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=635&amp;proceeding_id=8">An Entropy-based Learning Algorithm of Bayesian Conditional Trees</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=7&amp;proceeding_id=8">Dan Geiger</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=644&amp;proceeding_id=8">Bayesian Meta-Reasoning: Determining Model Adequacy from Within a Small World</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=170&amp;proceeding_id=8">Kathryn Laskey</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=650&amp;proceeding_id=8">Calculating Uncertainty Intervals From Conditional Convex Sets of Probabilities</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=367&amp;proceeding_id=8">Serafin Moral</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=661&amp;proceeding_id=8">Conditional Independence in Uncertainty Theories</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=44&amp;proceeding_id=8">Prakash Shenoy</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=660&amp;proceeding_id=8">Decision Making Using Probabilistic Inference Methods</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=304&amp;proceeding_id=8">Ross Shachter</A>
+, <A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=372&amp;proceeding_id=8">Mark Peot</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=655&amp;proceeding_id=8">Decision Methods for Adaptive Task-Sharing in Associate Systems</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=697&amp;proceeding_id=8">Thomas Paterson</A>
+, <A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=592&amp;proceeding_id=8">Michael Fehling</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=628&amp;proceeding_id=8">Dynamic Network Models for Forecasting</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=486&amp;proceeding_id=8">Paul Dagum</A>
+, <A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=632&amp;proceeding_id=8">Adam Galper</A>
+, <A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=91&amp;proceeding_id=8">Eric Horvitz</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=652&amp;proceeding_id=8">Empirical Probabilities in Monadic Deductive Databases</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=694&amp;proceeding_id=8">Raymond Ng</A>
+, <A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=314&amp;proceeding_id=8">V. Subrahmanian</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=630&amp;proceeding_id=8">Entropy and Belief Networks</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=681&amp;proceeding_id=8">Norman Dalkey</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=670&amp;proceeding_id=8">Exploring Localization in Bayesian Networks for Large Expert Systems</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=382&amp;proceeding_id=8">Yang Xiang</A>
+, <A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=46&amp;proceeding_id=8">David Poole</A>
+, <A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=710&amp;proceeding_id=8">Michael Beddoes</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=664&amp;proceeding_id=8">Expressing Relational and Temporal Knowledge in Visual Probabilistic Networks</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=315&amp;proceeding_id=8">Luis Sucar</A>
+, <A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=702&amp;proceeding_id=8">Duncan Gillies</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=668&amp;proceeding_id=8">Generalizing Jeffrey Conditionalization</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=661&amp;proceeding_id=8">Carl Wagner</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=657&amp;proceeding_id=8">Guess-And-Verify Heuristics for Reducing Uncertainties in Expert Classification Syste</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=698&amp;proceeding_id=8">Yuping Qiu</A>
+, <A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=699&amp;proceeding_id=8">Louis Cox, Jr.</A>
+, <A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=700&amp;proceeding_id=8">Lawrence Davis</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=637&amp;proceeding_id=8">Integrating Model Construction and Evaluation</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=263&amp;proceeding_id=8">Robert Goldman</A>
+, <A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=236&amp;proceeding_id=8">Jack Breese</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=669&amp;proceeding_id=8">Interval Structure: A Framework for Representing Uncertain Information</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=329&amp;proceeding_id=8">S. K. Wong</A>
+, <A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=708&amp;proceeding_id=8">L. Wang</A>
+, <A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=709&amp;proceeding_id=8">Y. Yao</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=663&amp;proceeding_id=8">Intuitions about Ordered Beliefs Leading to Probabilistic Models</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=619&amp;proceeding_id=8">Paul Snow</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=636&amp;proceeding_id=8">Knowledge Integration for Conditional Probability Assessments</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=352&amp;proceeding_id=8">Angelo Gilio</A>
+, <A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=685&amp;proceeding_id=8">Fulvio Spezzaferri</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=627&amp;proceeding_id=8">Lattice-Based Graded Logic: a Multimodal Approach</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=680&amp;proceeding_id=8">Philippe Chatalic</A>
+, <A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=665&amp;proceeding_id=8">Christine Froidevaux</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=654&amp;proceeding_id=8">MESA: Maximum Entropy by Simulated Annealing</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=696&amp;proceeding_id=8">Gerhard Paaß</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=625&amp;proceeding_id=8">Modal Logics for Qualitative Possibility and Beliefs</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=15&amp;proceeding_id=8">Craig Boutilier</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=656&amp;proceeding_id=8">Modeling Uncertain Temporal Evolutions in Model-Based Diagnosis</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=298&amp;proceeding_id=8">Luigi Portinale</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=632&amp;proceeding_id=8">Objection-Based Causal Networks</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=28&amp;proceeding_id=8">Adnan Darwiche</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=624&amp;proceeding_id=8">Optimizing Causal Orderings for Generating DAGs from Data</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=133&amp;proceeding_id=8">Remco Bouckaert</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=631&amp;proceeding_id=8">Parallelizing Probabilistic Inference Some Early Explorations</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=252&amp;proceeding_id=8">Bruce D'Ambrosio</A>
+, <A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=682&amp;proceeding_id=8">Tony Fountain</A>
+, <A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=650&amp;proceeding_id=8">Zhaoyu Li</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=634&amp;proceeding_id=8">Possibilistic Assumption based Truth Maintenance System, Validation in a Data Fusion</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=683&amp;proceeding_id=8">Francesco Monai</A>
+, <A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=684&amp;proceeding_id=8">Thomas Chehire</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=659&amp;proceeding_id=8">Possibilistic Constraint Satisfaction Problems or "How to handle soft constraints ?\</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=571&amp;proceeding_id=8">Thomas Schiex</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=658&amp;proceeding_id=8">R&D Analyst: An Interactive Approach to Normative Decision System Model Construction</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=633&amp;proceeding_id=8">Peter Regan</A>
+, <A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=701&amp;proceeding_id=8">Samuel Holtzman</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=638&amp;proceeding_id=8">Reasoning With Qualitative Probabilities Can Be Tractable</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=125&amp;proceeding_id=8">Moises Goldszmidt</A>
+, <A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=114&amp;proceeding_id=8">Judea Pearl</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=629&amp;proceeding_id=8">Reformulating Inference Problems Through Selective Conditioning</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=486&amp;proceeding_id=8">Paul Dagum</A>
+, <A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=91&amp;proceeding_id=8">Eric Horvitz</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=646&amp;proceeding_id=8">Representing Context-Sensitive Knowledge in a Network Formalism: A Preliminary Report</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=75&amp;proceeding_id=8">Tze-Yun Leong</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=648&amp;proceeding_id=8">Representing Heuristic Knowledge in D-S Theory</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=690&amp;proceeding_id=8">Weiru Liu</A>
+, <A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=458&amp;proceeding_id=8">John Hughes</A>
+, <A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=691&amp;proceeding_id=8">Michael McTear</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=623&amp;proceeding_id=8">RES a Relative Method for Evidential Reasoning</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=678&amp;proceeding_id=8">Zhi An</A>
+, <A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=445&amp;proceeding_id=8">David Bell</A>
+, <A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=458&amp;proceeding_id=8">John Hughes</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=642&amp;proceeding_id=8">Semantics for Probabilistic Inference</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=282&amp;proceeding_id=8">Henry Kyburg Jr.</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=651&amp;proceeding_id=8">Sensor Validation Using Dynamic Belief Networks</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=692&amp;proceeding_id=8">A. Nicholson</A>
+, <A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=693&amp;proceeding_id=8">J. Brady</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=672&amp;proceeding_id=8">Sidestepping the Triangulation Problem in Bayesian Net Computations</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=335&amp;proceeding_id=8">Nevin Zhang</A>
+, <A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=46&amp;proceeding_id=8">David Poole</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=643&amp;proceeding_id=8">Some Problems for Convex Bayesians</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=282&amp;proceeding_id=8">Henry Kyburg Jr.</A>
+, <A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=611&amp;proceeding_id=8">Michael Pittarelli</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=626&amp;proceeding_id=8">Structural Controllability and Observability in Influence Diagrams</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=679&amp;proceeding_id=8">Brian Chan</A>
+, <A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=304&amp;proceeding_id=8">Ross Shachter</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=645&amp;proceeding_id=8">The Bounded Bayesian</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=170&amp;proceeding_id=8">Kathryn Laskey</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=640&amp;proceeding_id=8">The Dynamic of Belief in the Transferable Belief Model and Specialization-Generalizat</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=686&amp;proceeding_id=8">Frank Klawonn</A>
+, <A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=309&amp;proceeding_id=8">Philippe Smets</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=662&amp;proceeding_id=8">The Nature of the Unnormalized Beliefs Encountered in the Transferable Belief Model</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=309&amp;proceeding_id=8">Philippe Smets</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=649&amp;proceeding_id=8">The Topological Fusion of Bayes Nets</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=636&amp;proceeding_id=8">Izhar Matzkevich</A>
+, <A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=637&amp;proceeding_id=8">Bruce Abramson</A>
+</td>
+</tr>
+<tr><td rowspan="2" class="cArticlesLstImg"><img src="icon_article.gif" border="0"></td>
+<td class="cArticlesLstTitle">
+<A HREF="http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=1&amp;smnu=2&amp;article_id=666&amp;proceeding_id=8">Towards Precision of Probabilistic Bounds Propagation</A></td>
+</tr>
+<tr>
+<td class="cArticlesLstAuthors">
+<A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=705&amp;proceeding_id=8">Helmut Thone</A>
+, <A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=706&amp;proceeding_id=8">Ulrich Guntzer</A>
+, <A class="cArticleAuthor" HREF="http://uai.sis.pitt.edu/displayAuthor.jsp?mmnu=1&amp;smnu=3&amp;author_id=707&amp;proceeding_id=8">Werner Kiebling</A>
+</td>
+</tr>
+</table>
+
+                            </td>
+                        </tr>         
+		</table>
+	</td>
+</tr>
+<tr>
+	<td class="cFooter">
+		<br/>
+		<table width="100%" cellpadding="0" cellspacing="0" border="0" class="cFooterBelt">
+		<tr>
+			<td>
+				<!-- ... -->
+			</td>
+			
+			<td>
+				<td align="right" class="cCopyrights">
+                                hosted by <a target="_blank" href="http://www.sis.pitt.edu/~dsl/" class="cCopyrights">DSL</a>
+				&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+				<a href="http://uai.sis.pitt.edu/siteInfo.jsp?mmnu=0&amp;smnu=0" class="cCopyrights">site info</a>
+				&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+				<a href="http://uai.sis.pitt.edu/help.jsp?mmnu=0&amp;smnu=0" class="cCopyrights">help</a>
+				&nbsp;&nbsp;
+			</td>
+		</tr>
+		</table>
+	</td>
+</tr>
+</table>
+
+</div>
+
+<map name="mapLogo" id="mapLogo">
+	<area shape="rect" coords="6,4,270,64" href="http://uai.sis.pitt.edu/home.jsp?mmnu=0&amp;smnu=0"/>
+</map>
+
+</body>
+
+</html>
+

@@ -1,0 +1,689 @@
+/* CSS Document */
+
+.banner img {
+	margin: 0 auto;
+	border: 1px solid #00387d;
+	}
+	
+.listing_main {
+	float: left;
+	background-color: white;
+	width: 900px;
+	margin: 10px 0 0 0;
+	padding: 0;
+	}
+	
+.profile_area {
+	float: left;
+	width: 900px;
+	margin: 0;
+	padding: 0;
+	}
+	
+.profile_area_title {
+	float: left;
+	background-color: #f2a91c;
+	margin: 0;
+	padding: 5px 10px;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: .6em;
+	color: white;
+	}
+
+.profile_area_title a:link, .profile_area_title a:visited {
+	text-decoration: underline;
+	color: white;
+	font-weight: bold;
+	}
+	
+.profile_area_title a:hover, .profile_area_title a:active {
+	text-decoration: underline;
+	color: #E6E6E6;
+	font-weight: bold;
+	}
+
+.profile_area_title a#current {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	}
+	
+.profile_area_content {
+	float: left;
+	background: url(/images/site/mainfade.png);
+	background-position: left top;
+	background-repeat: repeat-x;
+	width: 878px;
+	margin: 0;
+	padding: 10px;
+	border: 1px solid #f2a91c;
+	}
+	
+.upper_main {
+	float: left;
+	width: 878px;
+	margin: 0;
+	padding: 0;
+	}
+	
+.p_content_left {
+	float: left;
+	width: 576px;
+	margin: 0;
+	padding: 0;
+	}
+	
+.p_info {
+	float: left;
+	background: url(/images/site/mainfade.png);
+	background-position: left top;
+	background-repeat: repeat-x;
+	background-color: white;
+	width: 544px;
+	margin: 0;
+	padding: 5px 10px;
+	border: 1px solid #00387d;
+	}
+	
+.p_info_title {
+	float: left;
+	background-color: #00387d;
+	margin: 0;
+	padding: 5px 10px;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: .6em;
+	font-weight: bold;
+	color: white;
+	}
+
+.pc_title {
+	float: left;
+	width: 544px;
+	margin: 0;
+	padding: 3px 0;
+	font-family: Trebuchet MS, Verdana, Arial, sans-serif;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: black;
+	}
+	
+.pc_title .professor_name {
+	float: left;
+	}
+	
+.pc_title .rateprofessor {
+	float: right;
+	}
+	
+.rateprofessor input#rate_prof {
+	float: left;
+	background-color: #00387d;
+	width: 220px;
+	margin: 5px 0 0 0;
+	padding: 3px;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: .7em;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: white;
+	border: 1px solid black;
+	cursor: pointer;
+	}
+
+.rateprofessor input#rate_prof_red {
+	float: left;
+	background-color: #cc0000;
+	width: 220px;
+	margin: 5px 0 0 0;
+	padding: 3px;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: .7em;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: black;
+	border: 1px solid black;
+	cursor: pointer;
+	}
+	
+.p_info_text {
+	float: left;
+	width: 280px;
+	height: 176px;
+	margin: 0;
+	padding: 3px 0 0 0;
+	font-family: Verdana, Arial;
+	font-size: .7em;
+	line-height: 1.5em;
+	color: black;
+	}
+	
+.p_info_text a:link, .p_info_text a:visited {
+	text-decoration: none;
+	font-weight: bold;
+	color: #00387d;
+	}
+	
+.p_info_text a:hover, .p_info_text a:active {
+	text-decoration: underline;
+	font-weight: bold;
+	color: #00387d;
+	}
+	
+.p_info_text .highlight {
+	background-color: #f0f7ff;
+	border: 1px solid #00387d;
+	padding: 2px;
+	font-weight: bold;
+	color: black;
+	}
+	
+.p_legend_cell {
+	float: left;
+	width: 878px;
+	margin: 0;
+	padding: 10px 0 0 0;
+	}
+	
+.p_legend_title {
+	float: left;
+	background-color: #00387d;
+	margin: 0;
+	padding: 5px 10px;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: .6em;
+	font-weight: bold;
+	color: white;
+	}
+	
+.p_legend {
+	float: left;
+	background-position: left top;
+	background-repeat: repeat-x;
+	width: 856px;
+	margin: 0;
+	font-family: Verdana, Arial;
+	font-size: 0.7em;
+	line-height: 1.5em;
+	color: black;
+	border: 1px solid #9cc1ee;
+	background-image: url(../images/site/mainfade.png);
+	}
+	
+.p_legend .row {
+	float: left;
+	padding: 3px 15px 3px 2px;
+	}
+
+.p_legend .row img {
+	float: left;
+	border: 1px solid #e2e2e2;
+	padding: 1px;
+	}
+	
+.p_legend .row .legend_text {
+	float: left;
+	padding: 0 0 0 5px;
+	}
+	
+.mid_right_ad {
+	float: right;
+	background-color: white;
+	width: 302px;
+	margin: 0;
+	padding: 0;
+	}
+	
+.mid_right_ad_title {
+	float: left;
+	background-color: #00387d;
+	margin: 0;
+	padding: 5px 10px;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: .6em;
+	font-weight: bold;
+	color: white;
+	}
+	
+.mid_right_ad_content {
+	float: left;
+	background-color: white;
+	width: 300px;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #00387d;
+	}
+	
+.prof_reviews {
+	float: left;
+	background-color: white;
+	width: 878px;
+	margin: 10px 0 0 0;
+	padding: 0;
+	}
+	
+.rateprofessor input#rate_prof_red_small {
+	float: left;
+	background-color: #cc0000;
+	width: 75px;
+	margin: 2px 0 0 0;
+	padding: 1px;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: .7em;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: black;
+	border: 1px solid black;
+	cursor: pointer;
+	}
+	
+.p_legend_title2 {
+	float: left;
+	background-color: #CC0000;
+	margin: 0;
+	padding: 5px 10px;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: .6em;
+	font-weight: bold;
+	color: white;
+	}
+
+.prof_reviews_title {
+	float: left;
+	background-color: #00387d;
+	padding: 5px 10px;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: .6em;
+	font-weight: bold;
+	color: white;
+	}
+	
+.prof_reviews_title a:link, .prof_reviews_title a:visited {
+	text-decoration: underline;
+	font-weight: bold;
+	color: #f0f7ff;
+	}
+	
+.prof_reviews_title a:hover, .prof_reviews_title a:active {
+	text-decoration: underline;
+	font-weight: bold;
+	color: #f0f7ff;
+	}
+		
+.prof_reviews_content {
+	float: left;
+	background: url(/images/site/mainfade.png);
+	background-position: left top;
+	background-repeat: repeat-x;
+	background-color: white;
+	width: 856px;
+	margin: 0;
+	padding: 10px;
+	border: 1px solid #00387d;
+	}
+	
+.prof_reviews_info {
+	margin: 0 auto;
+	padding: 4px 10px 7px 10px;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: .7em;
+	color: black;
+	line-height: 1.4em;
+	text-align: center;
+	}
+	
+.prof_reviews_info#key {
+	background-color: #f0f7ff;
+	margin: 8px auto 0 auto;
+	padding: 4px 10px 7px 10px;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: .7em;
+	color: black;
+	line-height: 1.4em;
+	text-align: center;
+	border: 1px solid #9ac2f0;
+	}
+	
+.prof_reviews_info a:link, .prof_reviews_info a:visited {
+	text-decoration: none;
+	color: #00387d;
+	font-weight: bold;
+	}
+	
+.prof_reviews_info a:hover, .prof_reviews_info a:active {
+	text-decoration: underline;
+	color: #00387d;
+	font-weight: bold;
+	}
+	
+.prof_reviews_nav {
+	float: left;
+	width: 816px;
+	margin: 0;
+	padding: 10px 20px;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: .7em;
+	line-height: 2.6em;
+	color: black;
+	text-align: center;
+	}
+	
+.prof_reviews_nav a:link, .prof_reviews_nav a:visited {
+	background-color: #f0f7ff;
+	padding: 3px;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	border: 1px solid #00387d;
+	}
+	
+.prof_reviews_nav a:hover, .prof_reviews_nav a:active {
+	background-color: white;
+	padding: 3px;
+	text-decoration: underline;
+	color: #00387d;
+	font-weight: bold;
+	border: 1px solid #00387d;
+	}
+	
+.prof_reviews_nav a#current {
+	background-color: #00387d;
+	color: white;
+	font-weight: bold;
+	border: 1px solid #00387d;
+	}
+	
+.prof_reviews_nav a#freeaccount {
+	background-color: #00387d;
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+	border: 1px solid black;
+	}
+		
+.header_row {
+	float: left;
+	width: 856px;
+	margin: 0;
+	padding: 5px 0;
+	font-family: Trebuchet MS, Verdana, Arial, sans-serif;
+	font-size: .8em;
+	font-weight: bold;
+	color: #00387d;
+	border-bottom: 2px solid #00387d;
+	}
+	
+.header_row a:link, .header_row a:visited {
+	text-decoration: none;
+	font-weight: bold;
+	color: #00387d;
+	}
+	
+.header_row a:hover, .header_row a:active {
+	text-decoration: underline;
+	font-weight: bold;
+	color: #00387d;
+	}
+	
+.header_row #date {
+	float: left;
+	width: 100px;
+	padding: 0 0 0 5px;
+	}
+	
+.header_row #class {
+	float: left;
+	width: 90px;
+	}
+	
+.header_row #ease {
+	float: left;
+	width: 30px;
+	padding: 0;
+	text-align: center;
+	}
+
+.header_row #help {
+	float: left;
+	width: 30px;
+	padding: 0;
+	text-align: center;
+	}
+	
+.header_row #clarity {
+	float: left;
+	width: 30px;
+	padding: 0;
+	text-align: center;
+	}
+	
+.header_row #interest {
+	float: left;
+	width: 30px;
+	padding: 0;
+	text-align: center;
+	}
+	
+.header_row #comments {
+	float: left;
+	width: 451px;
+	padding: 0 0 0 90px;
+	}
+	
+.result_row_one {
+	float: left;
+	background-color: #f0f7ff;
+	width: 856px;
+	margin: 0;
+	padding: 4px 0;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: .7em;
+	color: black;
+	}
+
+.result_row_one a:link, .result_row_one a:visited {
+	text-decoration: none;
+	color: #00387d;
+	font-weight: bold;
+	}
+	
+.result_row_one a:hover, .result_row_one a:active {
+	text-decoration: underline;
+	color: #00387d;
+	font-weight: bold;
+	}
+	
+.result_row_one .col_one {
+	float: left;
+	width: 100px;
+	padding: 0 0 0 5px;
+	}
+	
+.result_row_one .col_two {
+	float: left;
+	width: 90px;
+	}
+	
+.result_row_one .col_three {
+	float: left;
+	width: 30px;
+	padding: 0;
+	text-align: center;
+	}
+	
+.result_row_one .col_four {
+	float: left;
+	width: 30px;
+	padding: 0;
+	text-align: center;
+	}
+	
+.result_row_one .col_five {
+	float: left;
+	width: 30px;
+	padding: 0;
+	text-align: center;
+	}
+	
+.result_row_one .col_six {
+	float: left;
+	width: 30px;
+	padding: 0;
+	text-align: center;
+	}
+	
+.result_row_one .col_seven {
+	float: left;
+	width: 80px;
+	padding: 0;	
+	}
+	
+.result_row_one .col_seven img {
+	float: left;
+	background-color: white;
+	border: 1px solid #00387d;
+	padding: 1px;
+	margin: 0 0 0 5px;
+	}
+	
+.result_row_one .col_eight {
+	float: left;
+	width: 451px;
+	padding: 0 0 0 10px;
+	line-height: 1.4em;
+	}
+	
+.result_row_two {
+	float: left;
+	background-color: white;
+	width: 856px;
+	margin: 0;
+	padding: 4px 0;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: .7em;
+	color: black;
+	}
+
+.result_row_two a:link, .result_row_two a:visited {
+	text-decoration: none;
+	color: #00387d;
+	font-weight: bold;
+	}
+	
+.result_row_two a:hover, .result_row_two a:active {
+	text-decoration: underline;
+	color: #00387d;
+	font-weight: bold;
+	}
+	
+.result_row_two .col_one {
+	float: left;
+	width: 100px;
+	padding: 0 0 0 5px;
+	}
+	
+.result_row_two .col_two {
+	float: left;
+	width: 90px;
+	}
+	
+.result_row_two .col_three {
+	float: left;
+	width: 30px;
+	padding: 0;
+	text-align: center;
+	}
+	
+.result_row_two .col_four {
+	float: left;
+	width: 30px;
+	padding: 0;
+	text-align: center;
+	}
+	
+.result_row_two .col_five {
+	float: left;
+	width: 30px;
+	padding: 0;
+	text-align: center;
+	}
+	
+.result_row_two .col_six {
+	float: left;
+	width: 30px;
+	padding: 0;
+	text-align: center;
+	}
+	
+.result_row_two .col_seven {
+	float: left;
+	width: 80px;
+	padding: 0;	
+	}
+	
+.result_row_two .col_seven img {
+	float: left;
+	background-color: white;
+	border: 1px solid #00387d;
+	padding: 1px;
+	margin: 0 0 0 5px;
+	}
+	
+.result_row_two .col_eight {
+	float: left;
+	width: 451px;
+	padding: 0 0 0 10px;
+	line-height: 1.4em;
+	}
+/*new css*/
+.text_01 {
+	font-family:Verdana, Arial, sans-serif;
+	color:black;
+	font-size:.7em;
+}
+.text_02 {
+	font-family:Verdana, Arial, sans-serif;
+	color:black;
+	font-size:.7em;
+	text-decoration:none;
+	}
+a:hover.text_02 {
+	font-family:Verdana, Arial, sans-serif;
+	color:black;
+	font-size:.7em;
+	text-decoration:underline;
+}
+.text_03 {
+	font-family:Verdana, Arial, sans-serif;
+	color:black;
+	font-size:0.7em;
+	width: 40px;
+}
+.pc_title_new {
+	font-family: Trebuchet MS, Verdana, Arial, sans-serif;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: black;
+}
+.prof_reviews_info_new {
+	margin: 0 auto;
+	padding: 4px 10px 7px 10px;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: .7em;
+	color: black;
+	line-height: 1.4em;
+	text-align: center;
+	width:860px;
+	}
+.prof_reviews_info_new#key {
+	background-color: #f0f7ff;
+	margin: 8px auto 0 auto;
+	padding: 4px 10px 7px 10px;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 0.7em;
+	color: black;
+	line-height: 1.4em;
+	text-align: center;
+	border: 1px solid #9ac2f0;
+	width:830px;
+
+	}

@@ -1,0 +1,81 @@
+/*
+ Filename :    prnewswire.css
+ Author :      quasimodo
+ Status :      DEVELOPMENT
+*/
+ 
+BODY { background-color: #FFFFFF; font-family: Arial, Helvetica, sans-serif; font-size: 14px; }
+BODY P, BODY DIV, BODY TD { font-family: Arial, Helvetica, sans-serif; font-size: 14px; }
+
+BODY.home { margin: 5px 0px 0px 0px; }
+BODY.release { margin: 15px 10px 10px 10px; }
+BODY.header { margin: 0px; background-color: #E4E8F3; }
+BODY.blankleft, BODY.blankright { background: url("../images/global/black.gif"); background-repeat: repeat-y; background-color: #E4E8F3; }
+BODY.blankleft { background-position: right; }
+BODY.blankright { background-position: left; }
+
+TABLE.toplevel { background-color:#98B7E1; }
+TABLE.toplevel TR TD IMG { height: 21px; border: 0px; }
+TABLE.scdlevel { position: absolute; top: 117px; left: 0px; padding: 3px 0px 3px 0px; background-color:#E4E8F3; visibility: hidden; }
+TABLE.scdlevel TR TD IMG { height: 13px; border: 0px; }
+
+BODY.home P, BODY.home DIV, BODY.home TD { font-size: 11px; color: #000000; }
+BODY.multimedia P, BODY.multimedia DIV, BODY.multimedia TD { font-size: 14px; color: #000000; }
+BODY.release P, BODY.release DIV, BODY.release TD { font-size: 14px; color: #000000; }
+
+DIV.heading { padding: 0px 0px 8px 0px; }
+DIV.divider, DIV.doubledivider { margin: 14px 0px 14px 0px; background-color: #CCD8E4; }
+DIV.doubledivider { background: url('images/global/doubleline.gif'); }
+DIV.cleardivider { margin: 5px 0px 5px 0px; }
+DIV.release { text-align: justify; }
+DIV.date, TD.search, TD.LNtime, TD.CCtime { font-weight: bold; color: #666666; }
+DIV.date { padding: 0px 0px 13px 0px; }
+DIV.small, P.small { font-size: 12px; }
+
+/* footer and footer link Added 15 Oct, 2004  */
+.footer { font-size: 10px; color: #000000; }
+.footerlink { font-size: 10px; color: #990000; }
+
+BODY DIV.footer { font-size: 10px; text-align: center; }   /* 11px */
+TR.divider IMG { width: 160px; height: 10px; }
+TD.blue { padding: 4px 0px 4px 0px; text-align: center;  background-color: #CCD8E4; }
+IMG.topstory { margin: 0px 5px 5px 0px; }
+
+A:link, A:visited, A:hover, A:active { text-decoration: none; font-weight: bold; }	
+A:link { color: #336699; } A:visited { color: #336699; } A:hover, A:active { color: #CC0033; }
+IMG.slider { border: solid 1px #FFFFFF; }
+
+A.more:link, A.more:visited, A.more:hover, A.more:active { font-size: 10px; }	
+
+INPUT.search { width: 112px; height: 21px; }
+
+#site { width: 160px; }
+#topstoryimage { margin: 0px 4px 8px 0px; }
+
+DIV.TSheading { padding: 0px 0px 10px 0px; }
+TD.CCstory { vertical-align: top; }
+TD.LNtime { width: 50px; vertical-align: top; text-align: left; padding: 0px 10px 0px 0px; }
+TD.CCtime { width: 90px; vertical-align: top; text-align: left; padding: 0px 10px 0px 0px; }
+TD.LNicons, TD.CCicons { vertical-align: top; text-align: right; padding: 0px 0px 0px 10px; }
+TD.LNicons IMG, TD.CCicons IMG { width: 15px; height: 11px; border: none; text-align: right; margin: 2px 3px 2px 3px; }
+TD.cleardivider { padding: 5px 0px 5px 0px; }
+TD.cleardivider IMG { height: 2px; }
+
+H1, DIV.h1 { font-size: 26px;	font-weight: normal;	color: #990000; }
+H2, DIV.h2 { font-size: 20px; font-weight: normal;	color: #990000; }
+H4, DIV.h4, .headline { font-size: 16px; font-weight: bold;	color: #990000; padding: 0px 0px 15px 0px; }
+PRE.release { font-size: 14px; }
+
+BODY.multimedia TD.label { color: #FFFFFF; font-weight: bold; }
+
+TD.verticaldots, DIV.verticaldots { background: url('/news/images/global/dots.gif'); background-position: center; background-repeat: repeat-y; }
+TD.verticaldots IMG, DIV.verticaldots IMG { width: 3px; height: 3px; }
+
+BODY.industryfocus TABLE.links { border: solid 2px #EBE7F0; }
+BODY.industryfocus TABLE.links TR TD.tableheading { background-color: #EBE7F0; font-size: 18px; color: #006699; font-weight: bold; text-align: center; }
+BODY.industryfocus TABLE.links TR TD { vertical-align: top; }
+BODY.industryfocus TABLE.links TR TD.tablelogoheading { background-color: #EBE7F0; font-size: 18px; color: #006699; font-weight: bold; vertical-align: middle; text-align: left; }
+.time {font-family: Arial, Helvetica, sans-serif; font-size: 11px;}
+.storyCaptionTitle { font-family: Arial, Helvetica, sans-serif; font-size:8pt; font-weight:bold; }
+.storyCaptionText  { font-family: Arial, Helvetica, sans-serif; font-size:8pt; }
+.storyCaptionDate  { font-family: Arial, Helvetica, sans-serif; font-size: 7pt; }

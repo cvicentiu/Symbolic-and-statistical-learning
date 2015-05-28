@@ -1,0 +1,547 @@
+<html>
+<title>CSCE 6330 Seminar on Natural Language Processing</title>
+<head>
+
+<META Name="description" Content="Natural Language Processing">
+<link rel="stylesheet" href="jnlestyle.css" type="text/css">
+</head>
+
+<body>
+<center>
+<table>
+<td width=15%>
+</td>
+<td>
+
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><td align=center bgcolor="#000080" height=5pt>
+</td></tr>
+<tr><!-- Row 1 -->
+<td >
+<div align="center">
+<font color="#FFFF99">
+<h2 color=yellow>CSCE 6300 Seminar on Natural Language Processing</h2>
+<h4>Rada Mihalcea &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Spring 2005</h4>
+
+</div>
+<hr>
+</td>
+</tr>
+
+<!-- MENU -->
+<tr>
+<td align=center bgcolor="#FFFF99">
+<a name="news"></a>
+<center>
+<p class="footer">
+      <a href="index.html#news" class="footer">Announcements</a> 
+       | <a href="index.html#syllabus" class="footer">Syllabus</a> 
+      | <a href="index.html#links" class="footer">Links</a>
+
+</p>
+</center>
+</td>
+</tr>
+
+<tr>
+<td>
+<br>
+<H4>Announcements</H4>
+
+<ul>
+<li> <font color=red>01/30/05 <a href="http://www.cse.unt.edu/~rada/CSCE6330/UNT/Project.ideas.txt">Project ideas</a> are now available</font> (UNT network only)
+<li> 11/18/05 Sign up for the class <a href="http://groups.yahoo.com/group/6330_2005/">mailing list</a> <br>
+</ul>
+<br>
+</tr>
+
+
+
+
+<!-- MENU -->
+<tr>
+<td align=center bgcolor="#FFFF99">
+<a name="syllabus"></a>
+<center>
+<p class="footer">
+      <a href="index.html#news" class="footer">Announcements</a> 
+       | <a href="index.html#syllabus" class="footer">Syllabus</a> 
+       | <a href="index.html#links" class="footer">Links</a>
+
+</p>
+</center>
+</td>
+</tr>
+
+<tr>
+<td>
+<br>
+<H5>Web pages with seminar related material</H5>
+[<a href="http://www.students.csci.unt.edu/~hl0042/6330/index.html">Harry</a>]
+&nbsp; &nbsp;
+[<a href="http://students.csci.unt.edu/~jwc0046/CSCI6330/">Jason</a>]
+&nbsp; &nbsp;
+[<a href="http://www.daxtron.com/csce6330.htm">Kino</a>]
+&nbsp; &nbsp;
+[<a href="http://students.csci.unt.edu/~ac0225/CSCE6330/">Andras</a>]
+&nbsp; &nbsp;
+[<a href="http://students.csci.unt.edu/~lmm0183/CSCE6330/">Mihai</a>]
+&nbsp; &nbsp;
+[<a href="http://students.csci.unt.edu/~shh0011/CSCE6330/">Samer</a>]
+&nbsp; &nbsp;
+[<a href="http://students.csci.unt.edu/~cel0058/acad/CSCE6330/">Chris</a>]
+<br>
+<br>
+<H4>Syllabus</H4>
+[<a href="http://www.cse.unt.edu/~rada/CSCE6330/Notes/6330.Syllabus.ps">ps</a>]
+<br>
+
+<!-- LECTURES NOTES ------------------------ -->
+<center>
+<table border=1>
+<tr bgcolor="000080">
+<td>
+<font color="#FFFF99"><b>
+Date
+</td>
+<td>
+<font color="#FFFF99"><b>
+Topic
+</td>
+<td>
+<font color="#FFFF99"><b>
+Presenter
+</td>
+<td>
+<font color="#FFFF99"><b>
+Discussion leader
+</td>
+<td>
+<font color="#FFFF99"><b>
+NB
+</td>
+<tr>
+<td>
+01/18/05
+</td>
+<td>
+Course overview [<a href="http://www.cse.unt.edu/~rada/CSCE6330/Notes/6330.Intro.ppt">ppt</a>] 
+</td>
+<td>
+- 
+</td>
+<td>
+-
+</td>
+<td>
+-
+</td>
+</tr>
+
+<tr>
+<td>
+02/01/05
+</td>
+<td>
+<b>TAGGING</b><br>
+<i>A Practical Part-of-Speech Tagger</i>, Doug Cutting and Julian Kupiec
+and Jan Pedersen and Penelope Sibun, ANLP 1992. [<a href="http://acl.ldc.upenn.edu/A/A92/A92-1018.pdf">pdf</a>]<br>
+<i>A Maximum Entropy Model for Part-Of-Speech Tagging</i>, 
+Adwait Ratnaparkhi, EMNLP 1996. [<a href="http://acl.ldc.upenn.edu/W/W96/W96-0213.pdf">pdf</a>]
+</td>
+<td>
+<br>
+Rada [<a href="http://www.cse.unt.edu/~rada/CSCE6330/Notes/PracticalPOSTagger.ppt">ppt</a>]
+<br><br>
+<a href="http://students.csci.unt.edu/~jwc0046/CSCI6330/">Jason</a><br><br>
+</td>
+<td>
+<br>Chris
+<br><br>
+Rada
+</td>
+<td>
+<font color=red>Due:</font> Set up a 
+webpage for seminar related materials. 
+</tr>
+
+
+<tr>
+<td>
+02/08/05
+</td>
+<td>
+<b>SYNTAX (I)</b><br>
+<i>Three Generative, Lexicalised Models for Statistical Parsing</i>, Michael Collins, ACL 1997. [<a href="http://acl.ldc.upenn.edu/P/P97/P97-1003.pdf">pdf</a>]<br>
+<i>A Maximum-Entropy-Inspired Parser</i>, Eugene Charniak, NAACL 2001. [<a href="http://acl.ldc.upenn.edu/A/A00/A00-2018.pdf">pdf</a>]
+
+</td>
+<td>
+<br>
+Harry<br><br>
+Chris
+<br>
+</td>
+<td>
+<br>
+Chris<br><br>
+Harry<br>
+</td>
+<td>
+<font color=red>Due:</font> Project
+proposals (1 pg.)
+</td>
+</tr>
+
+<tr>
+<td>
+02/15/05
+</td>
+<td>
+<b>SYNTAX (II)</b><br>
+<i> Accurate Unlexicalized Parsing </i>, Dan Klein and Christopher Manning, ACL 2003 [<a href="http://acl.ldc.upenn.edu/acl2003/main/pdfs/Klein.pdf">pdf</a>]
+<br>
+<i>Corpus-Based Induction of Syntactic Structure: Models of Constituency and Dependency</i>, Dan Klein and Christopher Manning, ACL 2004 [<a href=" http://acl.ldc.upenn.edu/acl2004/main/pdf/341_pdf_2-col.pdf">pdf</a>]
+
+</td>
+<td>
+<br>
+Harry<br><Br>
+Andras
+</td>
+<td>
+<br>Andras
+<br><br>
+Harry
+</td>
+-
+<td>
+-
+</td>
+</tr>
+
+<tr>
+<td>
+02/22/05
+</td>
+<td>
+<b>SEMANTICS</b><br>
+<i>Finding Predominant Word Senses in Untagged Text</i>,
+Diana McCarthy, Rob Koeling, Julie Weeds and John Carroll, ACL 2004. [<a href="http://acl.ldc.upenn.edu/acl2004/main/pdf/95_pdf_2-col.pdf">pdf</a>]<br>
+<i> Exploiting Parallel Texts for Word Sense Disambiguation: An Empirical Study</i>, Hwee Tou Ng, Bin Wang  and  Yee Seng Chan, ACL 2003. [<a href="http://acl.ldc.upenn.edu/acl2003/main/pdf/Ng.pdf">pdf</a>]
+</td>
+<td>
+<br>
+Samer<br>
+<br>
+Mihai
+<br><br>
+</td>
+<td>
+<br>Mihai
+<br><br>
+Samer<br>
+</td>
+<td>
+<font color=red>Due:</font> Literature overview
+(links to papers you read for your project) 
+</td>
+</tr>
+
+
+<tr>
+<td>
+03/01/05
+</td>
+<td>
+<b>ENTAILNMENT</b><br>
+<i>Scaling Web-based Acquisition of Entailment Relations </i>,  Idan Szpektor, Hristo Tanev, Ido Dagan and Bonaventura Coppola, EMNLP 2004. [<a href="http://acl.ldc.upenn.edu/acl2004/emnlp/pdf/Szpektor.pdf">pdf</a>]<br>
+<i>VerbOcean: Mining the Web for Fine-Grained Semantic Verb Relations</i>,  Timothy Chklovski and Patrick Pantel, EMNLP 2004. [<a href="http://acl.ldc.upenn.edu/acl2004/emnlp/pdf/Chklovski.pdf">pdf</a>
+
+<td>
+<br>
+Chris<br><br>
+Samer</td>
+<td>
+<br>
+Jason<br><br>
+Kino
+</td>
+<td>
+-
+</td>
+</tr>
+
+
+<tr>
+<td>
+03/08/05
+</td>
+<td>
+<b>PROJECT PRESENTATIONS (I)</B>
+</td>
+<td>
+-
+</td>
+<td>
+-
+</td>
+<td>
+<font color=red>Due:</font> Project
+proposal presentations (10-15')
+</td>
+</tr>
+
+<tr>
+<td>
+03/15/05
+</td>
+<td>
+<b>Spring Break</b>
+</td>
+<td>
+-
+</td>
+<td>
+-
+</td>
+<td>
+-
+</td>
+</tr>
+
+
+<!-- tr>
+<td>
+03/22/05
+</td>
+<td>
+<b>SEMANTIC PARSING</b><br>
+<i>Automatic labeling of semnantic roles</i>, Daniel Gildea and Daniel Jurafsky, ACL 2000. [<a href="http://acl.ldc.upenn.edu/P/P00/P00-1065.pdf">pdf</a>]<br>
+<i>Unsupervised Semantic Role Labelling</i>, Robert Swier, Suzanne Stevenson, EMNLP 2004. [<a href="http://acl.ldc.upenn.edu/acl2004/emnlp/pdf/Swier.pdf">pdf</a>]
+</td>
+<td>
+<br>
+Kino<br><br>
+Andras<br>
+</td>
+<td>
+<br>
+Jason<br><br>
+Chris
+</td>
+<td>
+-
+</td>
+</tr -->
+
+<tr>
+<td>
+03/29/05
+</td>
+<td>
+<b>SUMMARIZATION</b><br>
+<i>Cut and Paste Based Text Summarization</i>, Hongiang Jing and Kathy McKeown, ACL 2000. [<a href="http://acl.ldc.upenn.edu/A/A00/A00-2024.pdf">pdf</a>]<br>
+<i>TextRank - Bringing Order into Texts</i>, Rada Mihalcea and Paul Tarau, EMNLP 2004. [<a href="http://acl.ldc.upenn.edu/acl2004/emnlp/pdf/Mihalcea.pdf">pdf</a>]
+</td>
+<td>
+<br>
+Mihai<br>
+<br>
+Samer<br>
+</td>
+<td>
+<br>Samer
+<br><br>
+Mihai<br>
+</td>
+<td>
+-
+</td>
+</tr>
+
+<tr>
+<td>
+04/05/05
+</td>
+<td>
+<b>SEMANTIC PARSING</b><br>
+<i>Automatic labeling of semnantic roles</i>, Daniel Gildea and Daniel Jurafsky, ACL 2000. [<a href="http://acl.ldc.upenn.edu/P/P00/P00-1065.pdf">pdf</a>]<br>
+<i>Unsupervised Semantic Role Labelling</i>, Robert Swier, Suzanne Stevenson, EMNLP 2004. [<a href="http://acl.ldc.upenn.edu/acl2004/emnlp/pdf/Swier.pdf">pdf</a>]
+</td>
+<td>
+<br>
+Kino<br><br>
+Andras<br>
+</td>
+<td>
+<br>
+Jason<br><br>
+Chris
+</td>
+<td>
+-
+</td>
+</tr>
+
+
+<!-- tr>
+<td>
+04/05/05
+</td>
+<td>
+<b>MACHINE TRANSLATION(I)</b><br>
+<i>The Mathematics of Statistical Machine Translation: Parameter Estimation</i>, Peter Brown, Stephen della Pietra, Vincent della Pietra, Robert Mercer, Computational Linguistics 1993, [<a href="http://acl.ldc.upenn.edu/J/J93/J93-2003.pdf">pdf</a>].
+</td>
+<td>
+Paul
+</td>
+<td>
+Kino
+</td>
+<td>
+-
+</td>
+</tr -->
+
+<tr>
+<td>
+04/12/05
+</td>
+<td>
+<b>EVALUATION OF MACHINE TRANSLATION AND SUMMARIZATION</b><br>
+<i>Bleu: a Method for Automatic Evaluation of Machine Translation</i>, Kishore Papineni, Salim Roukos, Todd Ward, Wei-Jing Zhu, ACL 2002. [<a href="http://acl.ldc.upenn.edu/P/P02/P02-1040.pdf">pdf</a>]<br>
+<i>Automatic Evaluation of Summaries Using N-gram Co-occurrence Statistics</i>, Chin-Yew Lin, Eduard H. Hovy, NAACL 2003. [<a href="http://acl.ldc.upenn.edu/N/N03/N03-1020.pdf">pdf</a>]
+</td>
+<td>
+<br><br>Jason<br><br><br>
+Kino<br>
+</td>
+<td>
+<br><br>Andras<br><br><br>Paul
+<br>
+</td>
+<td>
+<font color=red>Due:</font> Project
+draft (5-6 pg.)
+</td>
+</tr>
+
+<tr>
+<td>
+04/19/05
+</td>
+<td>
+<b>MACHINE TRANSLATION (II)</b><br>
+<i>Statistical Phrase-Based Translation </i>, Philipp Koehn; Franz J. Och; Daniel Marcu, NAACL 2003. [<a href="http://acl.ldc.upenn.edu/N/N03/N03-1017.pdf">pdf</a>]<br>
+<i>Greedy Decoding for Statistical Machine Translation in Almost Linear Time </i>, Ulrich Germann, NAACL 2003. [<a href="http://acl.ldc.upenn.edu/N/N03/N03-1010.pdf">pdf</a>]<br>
+</td>
+<td>
+<br>Harry<br><br>
+Chris
+</td>
+<td>
+<br>
+Paul<br><br>
+Kino
+</td>
+<td>
+-
+</td>
+</tr>
+
+<tr>
+<td>
+04/26/05
+</td>
+<td>
+<b>PARAPHRASING</b> <br>
+<i>Extracting Paraphrases from a Parallel Corpus </i>, Regina Barzilay and Kathleen McKeown, ACL 2001. [<a href="http://acl.ldc.upenn.edu/P/P01/P01-1008.pdf">pdf</a>]<br>
+<i>  Monolingual Machine Translation for Paraphrase Generation</i>, Chris Quirk,  Chris Brockett, Bill Dolan, EMNLP 2004. [<A href="http://acl.ldc.upenn.edu/acl2004/emnlp/pdf/Quirk.pdf">pdf</a>]
+</td>
+<td>
+<br>
+Jason<br>
+<br>
+Andras<br>
+</td>
+<td>
+<br>Mihai
+<br><Br>
+Jason<br>
+</td>
+<td>
+-
+</td>
+</tr>
+
+
+<tr>
+<td>
+05/03/05
+</td>
+<td>
+Project presentations
+</td>
+<td>
+-
+</td>
+<td>
+-
+</td>
+<td>
+<font color=red>Due:</font> Final project paper (8 pg.), 
+project presentation
+</td>
+</tr>
+</table>
+
+<br><br>
+
+
+
+<!-- MENU -->
+<tr>
+<td align=center bgcolor="#FFFF99">
+<a name="links"></a>
+<center>
+<p class="footer">
+      <a href="index.html#news" class="footer">Announcements</a> 
+       | <a href="index.html#syllabus" class="footer">Syllabus</a> 
+       | <a href="index.html#links" class="footer">Links</a>
+
+</p>
+</center>
+</td>
+</tr>
+
+<tr>
+<td>
+<br>
+<H4>Links</H4>
+
+
+<ul>
+<li> <a href="http://www-nlp.stanford.edu/fsnlp/" class="footer">Foundations of Statistical Natural Language Processing</a>
+<li> <a href="http://www.cs.colorado.edu/~martin/slp.html" class="footer">Speech and Language Processing: An Introduction to Natural Language Processing, Computational Linguistics, and Speech Recognition</a>
+<li><a href="http://www.cse.unt.edu/~rada/CSCE6330/www.perldoc.com">Perl documentation</a>
+<li><a href="http://www.cse.unt.edu/~rada/CSCE6330/www.perl.com">O'Reilly Perl site</a>
+<li><a href="http://www.sthomas.net/roberts-perl-tutorial.htm">Robert's Perl Tutorial</a> (it says to be designed for Win32 Perl; it applies equally well to Unix/Linux Perl)
+<li> <a href="http://iis1.cps.unizar.es/Oreilly/perl/">Perl bookshelf</a>
+<li><a href="http://www.geckil.com/~harvest/tutorials/">Many many tutorials</a>
+<li><a href="http://www.sketchengine.co.uk">SketchEngine</a>
+</ul>
+</tr>
+<br><br>
+
+
+
+</td>
+<td width=15%>
+</td>
+</table>
+</center>
+<img src="cgicount.cgi%3FVISITORS.count&amp;1.jpg" height=140 border=0>
+
+</body>
+</html>

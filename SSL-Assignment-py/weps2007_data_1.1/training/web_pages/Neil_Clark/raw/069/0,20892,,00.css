@@ -1,0 +1,730 @@
+@import url("/css/ninnbar/0,20908,,00.css");
+@import url("/css/base/0,20887,,00.css");
+@import url("/css/layout/0,20888,,00.css");
+@import url("/css/section-common/0,20889,,00.css"); 
+
+#image-container-wrap {
+border: 1px solid #ccc;
+margin: 0 0 20px 0;
+padding: 1px;
+text-align:center;
+width: 480px;
+}
+#top-section-caption {
+text-align: left;
+font-size: 0.88em;
+padding: 4px 4px 2px 0;
+}
+#top-section-caption a {
+background: transparent url("/images/red-arrow.gif") 4px 5px no-repeat;
+padding-left: 15px;
+}
+#top-section-caption ul li a {
+background: none;
+padding-left: 0;
+}
+
+.minor-caption {
+display:block;
+font-family:arial, sans-serif;
+font-size:0.86em;
+text-align:left;
+margin:0 0 0 8px;
+}
+
+#top-section-image.major {
+margin:0;
+}
+
+/* Site Map page
+Based on index page
+ -----------------------  */
+
+.site-map-section {
+width: 170px;
+float: left;
+margin: 0 10px 10px 0;
+}
+.site-map-section h2 {
+color: #666666;
+border-bottom: 1px solid #ccc;
+text-transform: uppercase;
+font-size: 1em;
+margin: 0 0 5px 0;
+}
+.site-map-section ul {
+font-size: 0.98em;
+}
+.site-map-section ul li {
+font-size: 0.9em;
+background: transparent url("/images/list-bullets-also.gif") left center no-repeat;
+padding-left:11px;
+}
+
+* html .site-map-section ul li {
+position: relative; /* prevents IE6 weirdness, hurrah for hasLayout */
+}
+
+.site-map-row { 
+margin: 0 0 20px 0;
+}
+	.site-map-row:after {
+		content: "."; 
+		display: block; 
+		height: 0; 
+		clear: both;
+		visibility: hidden;
+		}
+
+	.site-map-row { 
+		display: inline-block; 
+		}
+
+/* Weather page
+Based on index page with RHS column removed
+ -----------------------  */
+
+body.weather #content #weather-iframe {
+overflow: visible;
+width: 850px;
+margin: 0;
+padding: 0;
+}
+body.weather #placard, body.weather #section-strap {
+margin-bottom: 0;
+padding-bottom: 0;
+}
+
+body.weather #section-strap {
+margin-left: 20px;
+width: 800px;
+}
+body.weather #content {
+margin-top: 0;
+padding-top: 0;
+}
+
+
+/* State index pages
+Modified to resize RHS column so it fits the weather
+ -----------------------  */
+
+body.layout5 #primary {
+width: 485px !important;
+}
+
+body.layout5 #ancillary {
+width: 360px !important;
+}
+
+body.layout5 #ancillary .section-container.site-highlights {
+width: 360px !important;
+}
+
+body.layout5 #ancillary #weather {
+width: 360px !important;
+}
+
+body.layout5 #weather .section-inner {
+border-width: 0 1px 1px 1px;
+border-style: solid;
+border-color: #C3DAEF; /* or #EDF4FA */
+background: #fff url("/images/section-container-bg.gif") 99% 99% no-repeat !important;
+width: 358px !important;
+padding: 5px 0 32px 0;
+}
+body.layout5 #weather iframe {
+margin: 0;
+padding: 0;
+}
+body.layout5 #weather .section-head {
+text-transform:uppercase;
+color: #fff;
+background: #003366 url("/images/section-heading-bg.gif") center right no-repeat;
+height: 22px;
+font-size: 1em;
+font-weight: normal;
+padding: 0;
+margin: 0;
+width: 360px !important;
+} 
+
+body.layout5 #weather .section-head a:link,
+body.layout5 #weather .section-head a:visited,
+body.layout5 #weather .section-head a:focus,
+body.layout5 #weather .section-head a:hover,
+body.layout5 #weather .section-head a:active {
+color: #fff !important;
+padding: 4px 0 0 5px;
+margin: 0;
+line-height: 22px;
+}
+
+body.layout5 #ad456 .ad-wrap {
+width: 360px;
+text-align: center;
+}
+
+body.layout5 #ad456 .ad {
+margin-left: auto;
+margin-right: auto;
+}
+
+/* Section heading - multimedia
+ -----------------------  */
+
+#primary .section-multimedia h2.section-head {
+text-transform:uppercase;
+color: #fff;
+background: #003366 url("/images/section-heading-bg.gif") center right no-repeat;
+height: 22px;
+line-height: 22px;
+font-size: 1em;
+font-weight: bold;
+padding: 0 5px;
+margin: 0;
+}
+#primary .section-multimedia h2.section-head a {
+padding: 4px 0 0 5px;
+margin: 0;
+line-height: 22px;
+}
+#primary .section-multimedia ul.also {
+margin: 10px 0 20px 0;
+font-size: 11px;
+}
+#primary .section-multimedia ul.also li {
+margin: 2px 0;
+}
+
+/* multimedia highlights page */
+.multimedia-highlights h2 {
+margin-bottom: 10px;
+}
+.multimedia-highlights a {
+float: left;
+margin: 0 15px 15px 0;
+}
+
+/* -- Section specific general template -----------------------------------
+   ------------------------------------------------------------------------ */
+
+h2 {
+margin:0;
+padding:0;
+font-size:1.26em;
+}
+
+.item-container {
+padding: 0;
+margin: 0 0 10px 0;
+}
+
+	.item-container:after {
+		content: "."; 
+		display: block; 
+		height: 0; 
+		clear: both;
+		visibility: hidden;
+		}
+
+	.item-container { 
+		display: inline-block; 
+		}
+
+
+.item-container ul.also {
+padding: 0;
+margin: 0 0 5px 0;
+font-size: 11px;
+}
+.item-container p {
+font-size: 0.95em;
+padding:0;
+margin:0;
+}
+.item-container .pub-date {
+color: #666666;
+font-style: italic;
+font-size: 0.9em;
+}
+.item-container h2 a {
+font-weight: bold;
+}
+
+/* first item */
+
+.first h2 {
+padding: 0;
+margin: 0;
+line-height: 1;
+font-size: 1.8em;
+padding: 0 0 0.16em 0;
+}
+.first h2 a {
+font-weight: normal;
+}
+
+#ancillary h2.feature {
+background:#fff;
+font-size: 1.46em;
+color: #333;
+text-transform: none;
+text-indent: 0;
+}
+
+h2#fox-head {
+text-align:center;
+text-transform:uppercase;
+color:#666;
+font-size:1em;
+border-top:1px solid #ebebeb;
+}
+
+h2#fox-head a {
+text-indent:0 !important;
+letter-spacing:0 !important;
+display:inline !important;
+color:#004080 !important;
+position:
+}
+
+h4.intro {
+font-size:1em;
+font-weight:300;
+margin-bottom:0.86em;
+}
+
+img.feature {
+float:right;
+}
+
+#ancillary h2.feature a {
+background: #fff;
+color:#074D93;
+}
+
+#ancillary h2.feature a:hover {
+color:#900;
+}
+
+#primary h3, #ancillary h3.first {
+font-family:arial, sans-serif;
+}
+
+img.author-thumb {
+clear:right;
+float:right;
+margin-left: 10px;
+margin-top: 11px;
+}
+
+#primary h2.section-head {
+margin-top: 25px;
+margin-bottom:15px;
+}
+
+#primary h3 {
+margin-top:-11px;
+}
+
+#primary li h3  {
+margin-top:0;
+}
+
+#primary div.cartoon-img {text-align: center;}
+
+/* -- Alternative/special index templates -----------------------------------
+   -------------------------------------------------------------------------- */
+ 
+body.layout3 #main {
+/* oii background-image: url("/images/page-bg.gif"); */
+}
+
+body.layout3 #primary,
+body.layout3 #primary .section {
+width:479px;
+}
+
+body.layout3 #primary h3 {
+margin-top:0;
+}
+
+ul#three-col li {
+width:30%;
+float:left;
+margin-bottom:2px;
+}
+
+.half-column {
+width:210px !important;
+float:left !important;
+clear:none !important;
+margin-top:11px;
+}
+
+.half-column.clearleft {
+margin-right:20px;
+}
+
+.half-column.motoring {
+margin-top:-11px;
+}
+
+.half-column.motoring ul.also {
+margin-top:0;
+}
+
+.half-column .section-head {
+color:#000;
+}
+
+#review-image {
+float:right;
+margin:11px 0 0 0;
+}
+
+
+/* legacy */
+td.plainGreyStrap {
+color:#fff;
+font:11px/19px bold verdana, sans-serif;
+background:#acacac;
+padding:0 7px 0 9px;
+}
+
+td.plainGreyStrap a {
+color:#fff;
+}
+
+.bodytext {
+font: 11px normal verdana, sans-serif;
+color: #4b4b4b;
+margin-top: 0;
+text-align:left;
+}
+
+h3.margin-title {
+clear:left;
+margin:11px 0 -8px 0 !important;
+}
+
+/* I need a holiday iframe */
+ 
+#ineedaholiday {
+clear: both;
+padding: 0;
+margin: 0 0 10px 0 !important;
+background-color: #ebebeb;
+border-bottom: 10px solid #fff;
+}
+#ineedaholiday div {
+margin: 0;
+padding: 10px 0;
+}
+#ineedaholiday iframe {
+height: 687px;
+}
+* html #ineedaholiday iframe {
+background-color: #ebebeb;
+margin: 0;
+padding: 0;
+height: 677px;
+}
+* html #ineedaholiday {
+margin: 0;
+padding: 0;
+}
+
+/* Foxsports video dropzone */
+
+#foxsportsvideo {
+background: #ebebeb;
+padding: 20px auto 0 auto !important;
+}
+
+.thumb-rp1 {
+margin: 0 auto;
+width: 300px;
+background: #fff;
+color: #000;
+background: #fff url("/images/foxsportsvideo-section-inner-bg.gif") 99% 98% no-repeat;
+font-family: Trebuchet MS, Trebuchet, sans-serif;
+border-bottom: 1px solid #ccc;
+
+text-align: center;
+}
+.thumb-rp1 p, .thumb-rp1 ul, .thumb-rp1 h4, .thumb-rp1 h5, .thumb-rp1 h6 {
+text-align: left;
+}
+
+.thumb-rp1 a {
+font-family: Tahoma, Arial, sans-serif;
+}
+
+.thumb-rp1 h4, .thumb-rp1 h6,
+.thumb-rp1 h4 a, .thumb-rp1 h6 a {
+text-transform: uppercase;
+color:#fff;
+font-family: Georgia, "Times New Roman", Times, serif;
+font-weight: normal;
+}
+
+.thumb-rp1 h4 {
+background: #003366 url("/images/foxsportsvideo-heading-bg.gif") center right no-repeat;
+height: 22px;
+line-height: 22px;
+font-size: 15px;
+padding: 0 4px;
+margin: 0;
+} 
+
+.thumb-rp1 h6 {
+background: #003366 url("/images/foxsportsvideo-subheading-bg.gif") center right no-repeat;
+height: 16px;
+line-height: 16px;
+font-size: 11px;
+padding: 0 4px;
+}
+
+.thumb-rp1 h5 {
+color: #003366;
+margin: 0 10px;
+}
+.thumb-rp1 p {
+font-size: 12px;
+margin: 0 10px;
+}
+
+.thumb-rp1 a.assign-popup {
+
+}
+.thumb-rp1 ul a.assign-popup {
+margin: 0;
+}
+
+.thumb-rp1 a.assign-popup img {
+margin: 10px auto !important;
+padding: 2px !important;
+border: 1px solid #cfcfcf !important;
+display: inline;
+}
+
+.thumb-rp1 ul.icon {
+margin: 2px 0 5px 0;
+}
+
+.thumb-rp1 ul.icon li {
+background: #fff url("/images/foxsportsvideo-redarrow.gif") 4px center no-repeat;
+margin: 0 0 0 2px;
+padding: 2px 0 2px 14px;
+font-size: 11px;
+}
+
+/* Ashes scoreboard */
+h4.network.ashes-scoreboard {
+padding:0 !important;
+border:0 !important;
+color: #fff;
+text-indent: 8px;
+margin: 5px 0 0 0;
+font-size:1em;
+line-height:1.7;
+background: #375832 url("/images/ashes/hd-ashes-scoreboard.jpg") no-repeat bottom left !important;
+height:30px;
+text-indent:-9999px;
+width: 300px;
+}
+
+div.network.ashes-scoreboard {
+border: 1px solid #d9d9d9;
+border: 0;
+padding:0 2px 2px 0px;
+border-top:0;
+margin: 0 0 5px 0;
+}
+
+div.network.ashes-scoreboard .inner {
+background: #ebebe9 !important;
+position:relative;
+padding: 2px !important;
+width: 296px;
+}
+
+div.network.ashes-scoreboard h5 {
+background: transparent url("/images/ashes/h5-live-scores.gif") no-repeat top left;
+width:72px;
+height:12px;
+text-indent:-9999px;
+}
+
+div.network.ashes-scoreboard ul.article-link-list {
+border-top: 1px dashed #ccd6c8;
+border-bottom:1px dashed #ccd6c8;
+margin:3px 0 3px 0;
+padding:1px 0 3px 0;
+}
+
+div.network.ashes-scoreboard ul.article-link-list li {
+padding-top:2px;
+margin:0;
+padding-left:10px;
+background: url("/images/ashes/icon-arrow.gif") 0 0.4em no-repeat !important;
+}
+
+div.network.ashes-scoreboard ul.story-comments {
+padding-bottom:3px;
+display: none;
+}
+
+div.network.ashes-scoreboard ul.story-comments li {
+line-height:1;
+padding-top: 0;
+ margin-top: 0;
+ padding-left: 13px;
+ background: url("/images/ashes/li-comment.gif") 0 2px no-repeat;
+}
+
+div.network.ashes-scoreboard h6 {
+border:0;
+width:194px;
+height:21px;
+text-indent:-9999px;
+padding:0;
+margin: 10px 0 8px 0;
+}
+
+div.network.ashes-scoreboard strong.current-score {
+margin:4px 0 2px 0;
+clear:both;
+display:block;
+}
+
+/* single use throw-away positioning classes */
+div.network.ashes-scoreboard .fsas {
+/*position:absolute;*/
+background:transparent url("/images/ashes/icon-arrow.gif") no-repeat right 4px;
+padding:0 13px 0 0;
+font-size:0.92em;
+}
+
+div.network.ashes-scoreboard .fsas.sc {
+/*position: absolute;
+top: 0;
+right: 4px;*/
+float: right;
+margin-top: -15px;
+background-position: right 3px;
+}
+
+div.network.ashes-scoreboard .fsas.fc {
+background: transparent url("/images/ashes/icon-arrow.gif") right center no-repeat;
+padding: 0 13px 0 0;
+display: block;
+text-align: right;
+}
+
+.clearfloat:after, .fsas.fc:after, .inner:after {
+ content: ".";
+ display: block;
+ height: 0;
+ clear: both;
+ visibility: hidden;
+ }
+
+.clearfloat, .fsas.fc, .inner {
+ display: inline-block;
+ }
+
+/* .features style - applies to features, blogs, letters, cartoons
+same markup as homepage but different CSS to allow for width
+*/
+
+.index div.features {
+background: #fff;
+border-width: 1px 0 1px 0;
+border-style: solid;
+border-color: #ccc;
+background-position: bottom right;
+background-repeat: no-repeat;
+/* background URL set by each dropzone */
+min-height: 95px;
+width: 100%;
+padding: 0 0 5px 0;
+margin: 0 0 20px 0;
+}
+* html .index div.features {
+height: 95px;
+}
+	.index div.features:after {
+		content: ".";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+		}
+
+	.index div.features {
+		display: inline-block;
+		}
+
+.index div.features .section-head {
+font-size: 0.9em;
+font-weight: bold;
+color:#666;
+margin: 5px 0 0 0 !important;
+padding: 0;
+text-transform:uppercase;
+}
+
+.index div.features .section-head a:link,
+.index div.features .section-head a:visited,
+.index div.features .section-head a:focus,
+.index div.features .section-head a:hover,
+.index div.features .section-head a:active {
+text-transform:uppercase;
+color:#666;
+font-size: 1em;
+font-weight: normal;
+}
+
+.index div.features .section-inner {
+background: #fff;
+display: block;
+
+margin: 0;
+padding: 0;
+width: 420px;
+}
+.index div.features .section-inner a {
+font-size: 11px;
+}
+
+.index div.features p {
+font-size:0.95em;
+margin: 0;
+}
+
+.index div.features .section-inner h3 {
+font-size:0.98em;
+padding: 3px 0;
+display: inline;
+}
+.index div.features .pub-date {
+color: #666;
+font-style: italic;
+font-size: 0.9em;
+}
+.index div.features ul.also {
+margin: 5px 0 3px 0;
+}
+
+/* IE legacy version fixes - leave at end */
+
+@media tty {
+   i{content:"";/*" "*/}}@m; @import '/css/ie55/0,20954,,00.css'; /*";}
+   }/* */
+
+@media tty {
+   i{content:"";/*" "*/}}; @import '/css/ie50/0,20955,,00.css'; {;}/*";}
+   }/* */

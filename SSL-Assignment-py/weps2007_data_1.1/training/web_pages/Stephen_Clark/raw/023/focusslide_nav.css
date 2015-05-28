@@ -1,0 +1,41 @@
+
+#navheader {
+	position:relative;
+	margin:0 auto;
+	width:100%;
+	height:18px;
+	border-top:1px solid #ffffff;
+	border-bottom:1px solid #78919B;
+	background-color:#ffffff;
+	padding:6px 0 0 0;
+	z-index:0;
+}
+
+#navheader li {
+	position:relative;
+	display:inline;
+	margin:0px 18px 4px 18px;
+	font:10px verdana;
+	padding:0;
+	z-index:20;
+}
+
+#navheader li a {
+	text-decoration:none;
+	color:#000000;
+}
+
+#navheader li a:hover {
+	text-decoration:none;
+	color:#999999;
+}
+
+#slider {
+	position:absolute;
+	background-color:#ffffff;
+	border-bottom:5px solid #78919B;
+	width:80px;
+	height:16px;
+	margin:0 2px 0 2px 0;
+	z-index:1;
+}

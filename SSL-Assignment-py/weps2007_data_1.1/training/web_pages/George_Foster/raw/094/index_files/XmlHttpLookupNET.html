@@ -1,0 +1,541 @@
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+//whitepace above bec of compression issue, do not remove                                                                                                    
+//Julian Robichaux
+//http://www.nsftools.com/tips/ZipLookupTest.htm
+var queryField; var globalDiv; var searchHiddenControl;
+var quit = false; 
+var divName = "querydiv";
+var ifName = "queryiframe";
+var lastVal = ""; 
+var val = ""; 
+var cache = new Object(); 
+var divFormatted = false; 
+var DIV_BG_COLOR = "#ffffff"; 
+var DIV_HIGHLIGHT_COLOR = "#CCCCCC"; 
+var bInitQueryCodeComplete = false;
+var TimerID = null;
+var UserStartedTyping = false;
+
+function onfocusHandler(queryFieldName, DefaultText)
+{
+    clearDefaultText(queryFieldName, DefaultText);
+    if (bInitQueryCodeComplete && (TimerID == null))
+        TimerID = setInterval("mainLoop()", 100);
+}
+
+function clearDefaultText(queryFieldName, DefaultText)
+{
+    queryField = document.getElementById(queryFieldName);
+    if (queryField.value == DefaultText)
+        queryField.value = "";
+}
+
+function InitQueryCode(queryFieldName, ObjIdName)
+{
+    searchHiddenControl = document.getElementById(ObjIdName);
+    queryField = document.getElementById(queryFieldName);
+    if (searchHiddenControl && queryField)
+        {
+        queryField.onblur = hideDiv;
+        queryField.onkeydown = keypressHandler;
+        addToCache("", new Array());
+        bInitQueryCodeComplete = true;
+        if ((TimerID == null) && UserStartedTyping)
+            TimerID = setInterval("mainLoop()", 100);
+        }
+}
+
+function addToCache (queryString, resultArray1)
+{
+	if (queryString.length > 0)
+	{
+		if(resultArray1.length == 0)
+			return;
+	}
+	//alert('adding');
+    cache[queryString] = new Array(resultArray1); 
+}
+
+mainLoop = function() 
+{
+    if(quit == false)
+    {
+      val = escape(queryField.value);
+      val = unescape(queryField.value);
+  
+      if(val.length == 0)
+      {
+        showDiv(false);
+        lastVal = val;
+        return true;
+      }
+  
+      if(lastVal != val)
+      {
+        var cacheResult = cache[val];
+        //alert(cacheResult);
+        if (cacheResult)
+            showQueryDiv(val, cacheResult[0]);
+        else
+            Query(val);//ajaxPro
+
+        lastVal = val;
+        queryField.focus();
+       }
+    return true;
+  }
+};
+
+function getDiv (divID)
+{
+  if (!globalDiv) {
+    if (!document.getElementById(divID)) {
+      var newNode = document.createElement("div");
+      newNode.setAttribute("id", divID);
+      document.body.appendChild(newNode);
+    }
+    
+    globalDiv = document.getElementById(divID);
+    var x = queryField.offsetLeft;
+    var y = queryField.offsetTop + queryField.offsetHeight;
+    var parent = queryField;
+    while (parent.offsetParent) {
+      parent = parent.offsetParent;
+      x += parent.offsetLeft;
+      y += parent.offsetTop;
+    }
+
+    if (!divFormatted) {
+      globalDiv.style.backgroundColor = DIV_BG_COLOR;
+      globalDiv.style.border = "1px solid #666666";
+      globalDiv.className = "AC_SearchDiv";
+      globalDiv.style.position = "absolute";
+      globalDiv.style.left = x + "px";
+      globalDiv.style.top = y + "px";
+      globalDiv.style.visibility = "hidden";
+      globalDiv.style.zIndex = 10000;
+    
+      divFormatted = true;
+    }
+  }
+  return globalDiv;
+}
+
+/**This is the function that should be returned by the XMLHTTP call. It will
+format and display the lookup results.*/
+
+function showQueryDiv (queryString, resultArray1) 
+{
+  var div = getDiv(divName);
+  
+  // remove any results that are already there
+  while (div.childNodes.length > 0)
+    div.removeChild(div.childNodes[0]);
+  
+  // add an entry for each of the results in the resultArray
+  for (var i = 0; i < resultArray1.length; i++)
+  {
+    // each result will be contained within its own div
+    var result = document.createElement("div");
+    result.style.cursor = "pointer";
+    result.style.padding = "3px 0px 3px 0px";
+    //result.style.zIndex = 5000;
+    _unhighlightResult(result);
+    result.onmousedown = selectResult;
+    result.onmouseover = highlightResult;
+    result.onmouseout = unhighlightResult;
+
+    var resArray = resultArray1[i].split("~");
+    var result1 = document.createElement("span");
+    result1.className = "AC_left";
+    result1.innerHTML = resArray[0];
+    
+    var result2 = document.createElement("span");
+    result2.className = "AC_right";
+  
+    if(resArray[3] == ''){
+      result2.innerHTML = "("+resArray[1]+")";
+    }
+    else{
+      result2.innerHTML = "("+resArray[1]+" - "+resArray[3]+")";
+    }
+
+    var result3 = document.createElement("span");
+    result3.className = "AC_hidden";
+    result3.style.visibility = "hidden";
+    var object_type = resArray[1].substr(0,5).toLowerCase();
+    var object_type_code;
+    switch (object_type) {
+        case "celeb":
+            object_type_code = "c";
+            break;
+        case "movie":
+            object_type_code = "m";
+            break;
+        case "tv sh":
+            object_type_code = "s"
+            break;
+        default: //assume sportsteam, which could be all sorts of strings, need a better approach from DB
+            object_type_code = "g"
+            break;
+            }
+    result3.innerHTML = object_type_code + resArray[2];
+    
+    result.appendChild(result1);
+    result.appendChild(result2);
+    result.appendChild(result3);
+    div.appendChild(result);
+  }
+  
+  // if this resultset isn't already in our cache, add it
+  var isCached = cache[queryString];
+  if (!isCached)
+    addToCache(queryString, resultArray1);
+  
+  // display the div if we had at least one result
+  if (resultArray1.length > 0)
+    showDiv(true);
+  else
+  {
+    showDiv(false);
+  }
+}
+
+function selectResult()
+{
+  _selectResult(this, true);
+}
+
+function _selectResult(item, bDoSubmit)
+{
+  var spans = item.getElementsByTagName("span");
+
+  if (spans) {
+    queryField.value = unescapeHTML(spans[0].innerHTML);
+    searchHiddenControl.value = spans[2].innerHTML;
+    lastVal = val = queryField.value;
+    showDiv(false);
+    quit = true;
+    if (bDoSubmit)
+        submitForm();
+    return;
+  }
+}
+
+/**This is called when a user mouses over a lookup result*/
+function highlightResult()
+{
+  _highlightResult(this);
+}
+
+/** This actually highlights the selected result */
+function _highlightResult(item)
+{
+  item.style.backgroundColor = DIV_HIGHLIGHT_COLOR;
+}
+
+/**This is called when a user mouses away from a lookup result*/
+function unhighlightResult()
+{
+  _unhighlightResult(this);
+}
+
+/** This actually unhighlights the selected result */
+function _unhighlightResult(item)
+{
+  item.style.backgroundColor = DIV_BG_COLOR;
+}
+
+function showDiv (show)
+{
+  var div = getDiv(divName);
+  if (show){
+    div.style.visibility = "visible";
+    }
+  else{
+    div.style.visibility = "hidden";
+  }
+
+  adjustiFrame();
+}
+
+function hideDiv ()
+{
+  showDiv(false);
+}
+
+function adjustiFrame()
+{
+  if (!document.getElementById(ifName)) {
+    var newNode = document.createElement("iFrame");
+    newNode.setAttribute("id", ifName);
+    newNode.setAttribute("src", "javascript:false;");
+    newNode.setAttribute("scrolling", "no");
+    newNode.setAttribute("frameborder", "0");
+    document.body.appendChild(newNode);
+  }
+  
+  iFrameDiv = document.getElementById(ifName);
+  var div = getDiv(divName);
+  
+  try {
+    iFrameDiv.style.position = "absolute";
+    iFrameDiv.style.width = div.offsetWidth+'px';
+    iFrameDiv.style.height = div.offsetHeight+'px';
+    iFrameDiv.style.top = div.style.top;
+    iFrameDiv.style.left = div.style.left;
+    iFrameDiv.style.zIndex = div.style.zIndex - 1;
+    iFrameDiv.style.visibility = div.style.visibility;
+  } catch(e) {
+  }
+}
+
+function keypressHandler (evt)
+{
+  quit = false;
+  UserStartedTyping = true;
+  if (bInitQueryCodeComplete && (TimerID == null))
+        TimerID = setInterval("mainLoop()", 100);
+
+  var div = getDiv(divName);
+// don't do anything if the div is hidden - not sure why this code was commented?
+ //  if (div.style.visibility == "hidden")
+ //   return true;
+ 
+ // make sure we have a valid event variable
+  if(!evt && window.event) {
+    evt = window.event;
+  }
+
+  var key = evt.keyCode;
+
+  // if this key isn't one of the ones we care about, just return
+  var KEYUP = 38;
+  var KEYDOWN = 40;
+  var KEYENTER = 13;
+  var KEYTAB = 9;
+  
+  if ((key != KEYUP) && (key != KEYDOWN) && (key != KEYENTER) && (key != KEYTAB))
+    {
+    //reset it
+    searchHiddenControl.value = "";
+    return true;
+    }
+
+  // get the span that's currently selected, and perform an appropriate action
+  var selNum = getSelectedSpanNum(div);
+  var selSpan = setSelectedSpan(div, selNum);
+  
+  if (key == KEYENTER) 
+  { 
+    if (selSpan)
+        _selectResult(selSpan, false); //don't submit yet
+    submitForm();
+    evt.cancelBubble=false;
+    return true;
+    } 
+  else if (key == KEYTAB)
+  {
+   if (selSpan)
+        _selectResult(selSpan, false);
+   evt.cancelBubble=false;
+   return true;
+  }
+  else {
+    if (key == KEYUP){
+      selSpan = setSelectedSpan(div, selNum - 1);
+      }
+    if (key == KEYDOWN){
+      selSpan = setSelectedSpan(div, selNum + 1);
+      }
+    if (selSpan){
+      _highlightResult(selSpan);
+      }
+  }
+  showDiv(true);
+  return true;
+}
+
+function keypressEnterKeyHandler (evt)
+{
+ // make sure we have a valid event variable
+  if(!evt && window.event) {
+    evt = window.event;
+  }
+
+  var key = evt.keyCode;
+
+  // if this key isn't one of the ones we care about, just return
+  var KEYENTER = 13;
+  if (key == KEYENTER) 
+  { 
+    submitForm();
+  }
+  return true;
+
+}
+
+function getSelectedSpanNum (div)
+{
+  var count = -1;
+  var spans = div.getElementsByTagName("div");
+  if (spans) {
+    for (var i = 0; i < spans.length; i++) {
+      count++;
+      if (spans[i].style.backgroundColor != div.style.backgroundColor)
+        return count;
+    }
+  }
+  
+  return -1;
+}
+
+function setSelectedSpan (div, spanNum)
+{
+  var count = -1;
+  var thisSpan;
+  var spans = div.getElementsByTagName("div");
+  if (spans) {
+    for (var i = 0; i < spans.length; i++) {
+      if (++count == spanNum) {
+        _highlightResult(spans[i]);
+        thisSpan = spans[i];
+      } else {
+        _unhighlightResult(spans[i]);
+      }
+    }
+  }
+  return thisSpan;
+}
+
+  function escapeHTML(text) {
+    var div = document.createElement('div');
+    var text = document.createTextNode(this);
+    div.appendChild(text);
+    return div.innerHTML;
+  }
+
+  function unescapeHTML(text) {
+    var div = document.createElement('div');
+    div.innerHTML = stripTags(text);
+    return div.childNodes[0] ? div.childNodes[0].nodeValue : '';
+  }
+
+  function stripTags (text){
+    return text.replace(/<\/?[^>]+>/gi, '');
+  }
+ 
+function focusById(elem)
+{
+  if(elem)
+  {
+    elem.focus();
+    MoveToEnd(elem);
+    elem.focus();
+  }
+}
+
+function MoveToEnd(Element){
+if ( Element.createTextRange )
+Element.createTextRange().text += "";
+else if ( Element.insertionPoint )
+Element.insertionPoint = Element.text.length; 
+}
+
+function encode(str) {
+	var result = "";
+	
+	for (i = 0; i < str.length; i++) {
+		if (str.charAt(i) == " ") result += "+";
+		else result += str.charAt(i);
+	}
+	
+	return escape(result);
+}
+
+function Query(q) 
+    {
+    search.UserControls.UserControls_Autocomplete.GetData(q, Callback);
+    }
+
+function Callback(rValue) 
+{
+	var resultArr;
+	if (rValue.value != null)
+	    {
+	    resultArr = rValue.value.split("|");          
+        var q = resultArr[0];
+        resultArr.shift();
+        showQueryDiv(q, resultArr);
+        }
+}
+
+function submitForm()
+{
+  /* var theForm = document.forms['aspnetForm'];
+     if (!theForm) {
+     theForm = document.aspnetForm;} */
+  var submitPage = "";
+  if (searchHiddenControl)
+  {
+      var objectType = searchHiddenControl.value.substr(0,1);
+      var objectID = searchHiddenControl.value.substr(1);
+      switch(objectType){
+        case "c":
+            submitPage = gCelebUri.replace("{0}", objectID);
+            break;
+        case "m":
+            submitPage = gMovieUri.replace("{0}", objectID);
+            break;
+        case "s":
+            submitPage = gTVShowUri.replace("{0}", objectID);
+            break;
+        case "g":
+            submitPage = gSportsUri.replace("{0}", objectID);
+            break;
+         default:
+            submitPage = gSearchUri + myencodeURI(queryField.value);
+            break;
+        }
+  }  
+  else
+    { submitPage = gSearchUri + myencodeURI(queryField.value) ; }
+
+
+  theForm.action = submitPage; 
+  theForm.submit();
+}
+
+function swallowEnterKey(e)
+{
+     var key;
+
+     if(window.event)
+          key = window.event.keyCode;     //IE
+     else
+          key = e.which;     //firefox
+    //disable the enter button, cause otherwise the form gets submitted twice
+     if(key == 13)
+          {
+          return false;
+          }
+     else
+          return true;
+}
+
+function myencodeURI(fld)
+{
+	if (fld == "") return "";
+
+	if (typeof encodeURIComponent == "function")
+	{
+		// Use JavaScript built-in function
+		// IE 5.5+ and Netscape 6+ and Mozilla
+		return encodeURIComponent(fld);
+	}
+	else 
+	{
+		return escape(fld);
+	}
+}
+

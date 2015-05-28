@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /files/search/
+
+# Disallow the plagiarism.org robot, www.slysearch.com
+User-agent: SlySearch
+Disallow: *  #will disallow or robot from all urls on the site
+User-agent: inktomisearch.com
+Disallow: /
+

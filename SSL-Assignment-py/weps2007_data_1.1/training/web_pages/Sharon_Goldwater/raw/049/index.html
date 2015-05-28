@@ -1,0 +1,1937 @@
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+ 		
+  
+
+
+
+		
+<style>
+.note-header-text {font-family: Times, Times New Roman, serif;
+		color:#ff0000; font-size: .95em;
+		margin-left: .75em; margin-right: .75em;}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 	
+	
+		
+		
+		
+					
+			
+				
+				  	
+				
+			
+				
+		    
+		
+		
+		
+		
+		
+		
+		
+	 
+
+
+
+	
+	
+	
+	
+	
+	
+	
+		
+  
+
+
+	
+	
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 	
+ 	
+	
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<LINK REL=STYLESHEET TYPE="text/css" HREF="http://portal.acm.org/css/dl.css">
+<title>Lessons from developing audio HTML interface</title>
+<style type="text/css"><!--
+    body {margin-left: 0em; margin-top: 0}
+    a:link {text-decoration: underline; 	Color: #006699;}
+    a:visited  { color: #990033; text-decoration: underline;}
+    a:hover {color: red; text-decoration: none}
+    a.dLink1:link {color:#336699}
+    a.dLink1:visited {color:#666666}
+	a.isblack:link {text-decoration: underline; 	Color: #000000;}
+    a.isblack:visited  { color: #000000; text-decoration: underline;}
+    a.isblack:hover {color: #000000; text-decoration: none}
+    h1 {font-size: 140%; margin-bottom: 0}
+	ul {margin-top: .25em; list-style-type: disc}
+	ol {margin-top: .25em;}
+	li {padding-bottom: .25em}
+    h2 {color: white; background-color: #069; 
+        font-size: 100%; padding-left: 1em;
+		margin: 0}
+	h3 {color: black; background-color: yellow; 
+    	font-size: 100%;
+		margin: 0}
+	 h4 {color: black; background-color: #99c5e8; 
+        font-size: 100%;
+		margin: 0}
+    hr {color: #39176d;}
+    form {margin-top: 10}
+    form.xrs {margin-top: 0}
+	
+	a {text-decoration: none; }
+	
+	input {font-size: 1em;}
+	.chevron {color: #ff0000;}
+	.light-blue {color:#336699;}
+	.black {color:#000000;}
+	
+	/* ### standard text styles, smallest to largest ### */
+	
+	.footer-link-text {font-family: Arial, Helvetica, sans-serif;
+		color:#336699; font-size: .75em; line-height: 1.33em;
+		text-indent: -.75 em; margin-left: 2em; margin-right: .75em;}
+		
+	.footer-copy-text {font-family: Arial, Helvetica, sans-serif;
+		color:#000000; font-size: .75em; line-height: 1.3em;
+		margin-left: .75em; margin-right: .75em;}
+		
+	.small-link-text {font-family: Arial, Helvetica, sans-serif;
+		color:#000000; font-size: .83em; padding-bottom : 2px;
+	  	padding-top : 2px;}
+
+	.smaller-text {font-family: Arial, Helvetica, sans-serif;
+		color:#000000; font-size: .75em;}		
+	.small-text {font-family: Arial, Helvetica, sans-serif;
+		color:#000000; font-size: .83em;}
+	.medium-text {font-family: Arial, Helvetica, sans-serif;
+		color:#000000; font-size: 1em;}
+	.mediumb-text {font-family: Arial, Helvetica, sans-serif;
+		color:#000000; font-size: 1em; font-weight: bold;}
+	.large-text {font-family: Arial, Helvetica, sans-serif;
+		color:#000000; font-size: 1.3em;}		
+	
+	.list-link-text {font-family: Arial, Helvetica, sans-serif;
+		color:#336699; font-size: .83em; line-height: 1.3em;}
+	.list-link-btext {font-family: Arial, Helvetica, sans-serif;
+		color:#000000; font-size: .83em; line-height: 1.3em;}
+	
+	.searchbox-text {font-family: Arial, Helvetica, sans-serif;
+		color:#000066; font-size: 1em; font-weight: bold;}
+	.footer-header-text {font-family: Arial, Helvetica, sans-serif;
+		color:#000066; font-size: 1em; font-weight: bold;
+		margin-left: .75em; margin-right: .75em;}
+	.medium-link-text {font-family: Arial, Helvetica, sans-serif;
+		color:#000066; font-size: 1em; font-weight: bold; line-height: 1em;
+		text-indent: -1.25em; margin-left: 2em; margin-right: .75em;}
+	
+	
+	.small-copy-text {font-family: Times, Times New Roman, serif;
+		color:#000066; font-size: .75em; line-height: 1.2em;
+		margin-left: .75em; margin-right: .75em;}
+
+	.medium-copy-text {font-family: Times, Times New Roman, serif;
+		color:#000066; font-size: 1em; line-height: 1.2em;
+		margin-left: .75em; margin-right: .75em;}
+	
+	.large-copy-text {font-family: Times, Times New Roman, serif;
+		color:#000066; font-size: 1.3em; line-height: 1.5em;
+		margin-left: .75em; margin-right: .75em;}
+	
+	.medium-header-text {font-family: Times, Times New Roman, serif;
+		color:#ff0000; font-size: 1em;
+		margin-left: .75em; margin-right: .75em;}
+	
+	.large-header-text {font-family: Times, Times New Roman, serif;
+		color:#ff0000; font-size: 1.5em;
+		margin-left: .75em; margin-right: .75em;}
+
+  --></style>
+ 
+<SCRIPT LANGUAGE="JavaScript">
+ /* <!-- Begin
+	if(document.layers || document.all) {
+	a = 1;
+	setInterval("Jump()", 10);
+	}
+	function Jump() {
+	a = a + 1;
+	//self.moveBy((Math.random() * a * 2 - a), (Math.random() * a * 2) - a);
+	}
+//  End --> */
+</script>
+<script type="text/javascript" src="http://portal.acm.org/CFIDE/scripts/cfform.js"></script>
+<script type="text/javascript" src="http://portal.acm.org/CFIDE/scripts/masks.js"></script>
+<script type="text/javascript">
+<!--
+    function  _CF_checkqiksearch(_CF_this)
+    {
+        //reset on submit
+        _CF_error_exists = false;
+        _CF_error_messages = new Array();
+        _CF_error_fields = new Object();
+        _CF_FirstErrorField = null;
+
+        //form element query required check
+        if( !_CF_hasValue(_CF_this['query'], "TEXT", false ) )
+        {
+            _CF_onError(_CF_this, "query", _CF_this['query'].value, "Please enter your Search Criteria");
+            _CF_error_exists = true;
+        }
+
+
+        //display error messages and return success
+        if( _CF_error_exists )
+        {
+            if( _CF_error_messages.length > 0 )
+            {
+                // show alert() message
+                _CF_onErrorAlert(_CF_error_messages);
+                // set focus to first form error, if the field supports js focus().
+                if( _CF_this[_CF_FirstErrorField].type == "text" )
+                { _CF_this[_CF_FirstErrorField].focus(); }
+
+            }
+            return false;
+        }else {
+            return true;
+        }
+    }
+//-->
+</script>
+</head>
+
+
+
+
+
+
+	
+	
+		
+	
+	
+	
+
+
+
+
+
+
+
+	
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+<body bgcolor="#ffffff" onload="window.focus(); ">
+<div align="center">
+<a name="CIT"></a>
+<table border="0" width="85%" cellspacing="0" cellpadding="0">
+<tr>
+<td>
+
+
+	
+		
+				
+				
+					
+				  
+		
+	 
+
+
+
+
+
+
+
+
+		
+
+	
+
+
+
+
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+	<tr valign="top">
+		<td width="1%" class="small-link-text" align="center"  background="http://portal.acm.org/images/horiz-bar.jpg"><img src="http://portal.acm.org/images/logo_acm_portal2.jpg" alt="ACM Portal" width="263" height="54" border="0" usemap="#PORT">
+			
+				<font color="white">
+				
+					Spain and Portugal Ebsco Open Consortium
+				
+				</font>
+			  
+		</td>
+		<td width="99%" align="left" class="small-link-text">
+			<table border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td>&nbsp;</td>
+				
+					<td class="small-link-text"><a href="https://campus.acm.org/Public/login_genpubqj.cfm?rdr=http://portal.acm.org/citation.cfm?id=274504&coll=portal&dl=ACM&CFID=3179183&CFTOKEN=35314822&promo=QJPUB&offering=200&form_type=PUB&CFID=3179183&CFTOKEN=35314822" class="small-link-text">Subscribe</a><span class="small-link-text">&nbsp;(Full Service)</span>&nbsp;&nbsp;&nbsp;</td>
+					<td class="small-link-text"><a href="https://portal.acm.org/poplogin.cfm?dl=ACM&coll=portal&want_href=citation%2Ecfm%3Fid%3D274504%26coll%3Dportal%26dl%3DACM%26CFID%3D3179183%26CFTOKEN%3D35314822&CFID=3179183&CFTOKEN=35314822" class="small-link-text">Register</a><span class="small-link-text">&nbsp;(Limited Service, <font color="Red">Free</font>)</span>&nbsp;&nbsp;&nbsp;</td>
+				
+				<td class="small-link-text" valign="bot">
+					
+					
+		 					<a href="https://portal.acm.org/poplogin.cfm?dl=ACM&coll=portal&want_href=citation%2Ecfm%3Fid%3D274504%26coll%3Dportal%26dl%3DACM%26CFID%3D3179183%26CFTOKEN%3D35314822&CFID=3179183&CFTOKEN=35314822" class="small-link-text">Login</a>
+					
+				</td>			
+			</tr>
+			</table>
+			
+			<table border="0" width="100%" cellspacing="0" cellpadding="0">
+				<form name="qiksearch" action="http://portal.acm.org/results.cfm?coll=portal&amp;dl=ACM&amp;CFID=3179183&amp;CFTOKEN=35314822" method="post" target="_self" onsubmit="return _CF_checkqiksearch(this)">
+				<tr>
+					<td height="5"><img src="http://portal.acm.org/images/blanks.gif" width=1 height=1 alt="" border="0"></td>
+				</tr>
+				<input type="hidden" name="parser" value="Internet">
+				<tr>
+					<td class="small-link-text">&nbsp;</td>
+					<td class="small-link-text">
+						
+						  	
+						
+						<b>Search:</b>&nbsp;&nbsp;&nbsp;<input type="Radio" name="whichDL" value="acm" checked>The ACM Digital Library&nbsp;&nbsp;&nbsp;<input type="Radio" name="whichDL" value="guide" >The Guide
+						<br><input name="query" id="query" type="text" size="60"  class="pubdescr"  />&nbsp;&nbsp;
+						<input type="Image" alt="Search" name=Go src="http://portal.acm.org/images/search_small.jpg" border="0">
+					</td>
+				</tr>
+				</form>
+
+			</table>
+			
+		</td>
+	<!-- top nav END -->
+	</tr>
+	</table>
+	<table border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td height="12"><img src="http://portal.acm.org/images/blanks.gif" width=1 height=1 alt="" border="0"></td>
+	</tr>
+	</table>
+
+<map name="PORT" > 
+  <area shape="rect" coords="1,1,55,60" href="http://www.acm.org/" alt="ACM Home Page">
+  <area shape="rect" coords="65,1,300,78" href="http://portal.acm.org/portal.cfm?coll=portal&amp;dl=ACM&amp;CFID=3179183&amp;CFTOKEN=35314822">
+</map>
+
+	
+
+<table border="0" width="100%" align="left">
+	<col width="40%">
+	<col width="60%">
+	<tr>
+		<td>
+			
+				<a href="http://portal.acm.org/dl.cfm?coll=portal&amp;dl=ACM&amp;CFID=3179183&amp;CFTOKEN=35314822"><img src="http://portal.acm.org/images/acm_dl_bar_large2.jpg" width=350 height=25 alt="" border="0"></a>
+			  
+		</td>
+ 		<td class="small-text" align="center">
+			<img src="http://portal.acm.org/images/feedback.gif" width="20" height="19" alt="Please provide us with feedback." border="0">&nbsp;<a href="http://portal.acm.org/survey/survey-ci.cfm?CFID=3179183&amp;CFTOKEN=35314822">Feedback</a>&nbsp;&nbsp;<a href="http://portal.acm.org/survey/survey-ci.cfm?CFID=3179183&amp;CFTOKEN=35314822">Report a problem</a>&nbsp;&nbsp;<a href="http://portal.acm.org/survey/survey-general.cfm?CFID=3179183&amp;CFTOKEN=35314822">Satisfaction survey</a>
+		</td>
+	</tr>
+	<tr>
+		<td height="6"><img src="http://portal.acm.org/images/blanks.gif" width=1 height=1 alt="" border="0"></td>
+	</tr>
+</table>
+</td>
+</tr>
+
+
+
+
+<tr>
+	<td colspan="3" valign="top" height="1" background="http://portal.acm.org/images/horiz-bar-long.jpg"></td>
+</tr>
+
+<tr>
+<td class="small-text">
+	<table border="0" width="100%"  cellpadding="2">
+		<col width="1%">
+		<col width="8%">
+		<col width="91%">
+	<tr>
+		<td class="medium-text" colspan="3"><strong>Lessons from developing audio HTML interface</strong></td>
+	</tr>
+					
+	
+		<tr valign="top">
+			
+			
+		</tr>
+		
+			<tr valign="top">
+				
+					<td class="small-text"><strong>Full text</strong></td>
+				 
+				<td class="smaller-text" colspan="2" >
+						
+							
+									 <A NAME="FullText" HREF="http://portal.acm.org/ft_gateway.cfm?id=274504&amp;type=pdf&amp;coll=portal&amp;dl=ACM&amp;CFID=3179183&amp;CFTOKEN=35314822" target="_blank"><img src="http://portal.acm.org/images/pdf_logo.gif" width="16" height="16" alt="pdf format" border="0" hspace="1" align="texttop">Pdf</A>
+									 (1.13&nbsp;MB),
+							
+									 <A NAME="FullText" HREF="http://portal.acm.org/ft_gateway.cfm?id=274504&amp;type=txt&amp;coll=portal&amp;dl=ACM&amp;CFID=3179183&amp;CFTOKEN=35314822" target="_blank"><img src="http://portal.acm.org/images/text.gif" width="16" height="18" alt="txt format" border="0" align="texttop">Txt</A>
+									 (50&nbsp;KB)
+							
+						   
+				</td>
+			</tr>
+		
+
+		<tr valign="top">
+			<td class="small-text"><strong>Source</strong></td>
+			<td class="small-text" colspan="2">
+			
+								
+										
+											
+											
+												
+										
+											
+											
+											
+												
+											
+											
+												
+											
+											
+											    
+												
+												
+												
+												
+													
+													
+														
+												
+													
+													
+													
+														
+														
+														
+														
+														
+														<SPAN class="mediumb-text">ACM SIGACCESS Conference on Assistive Technologies</span>
+																			<a href="http://portal.acm.org/toc.cfm?id=SERIES368&amp;type=series&amp;coll=portal&amp;dl=ACM&amp;CFID=3179183&amp;CFTOKEN=35314822" target="_self" class="small-link-text">archive</a><br>
+													  
+													<SPAN class="mediumb-text">Proceedings of the third international ACM conference on Assistive technologies </span>
+										 								 <a href="http://portal.acm.org/toc.cfm?id=274497&amp;type=proceeding&amp;coll=portal&amp;dl=ACM&amp;CFID=3179183&amp;CFTOKEN=35314822"  target="_self" class="small-link-text">table of contents</a><br>
+												  
+												<DIV class="small-text">
+													 Marina del Rey, California, United States 
+												</div>
+											   
+										
+								
+		
+
+		
+		<div class="medium-text">
+			
+			
+			
+		</div>
+		
+		
+		    
+			
+			
+		
+
+			
+			
+			<div class="small-text">
+				 Pages: 27 - 34&nbsp;&nbsp;
+			</div>
+					
+			
+			
+			
+				<div class="small-text">
+					Year of Publication:&nbsp;1998
+				</div>
+			
+					
+			
+				<div class="small-text">
+				
+					
+						
+						
+							
+							
+						  
+					  
+					ISBN:1-58113-020-1
+				</div>
+				
+
+			
+			
+				
+					
+					
+					
+				
+					
+					
+					
+				
+					
+					
+					
+				
+					
+					
+					
+				
+					
+					
+					
+				
+			
+			
+		
+			 
+			  	
+			 
+			 
+		
+			
+				
+			</td>
+		</tr>
+		
+		
+		
+			<tr valign="top">
+				<td class="small-text">							
+										  	<strong>Author </strong>
+										
+				</td>
+				
+				
+					
+					
+				<td colspan="2">
+				<div class="authors">
+					<table cellpadding="0" cellspacing="0">		
+					
+							<tr>
+							
+
+							
+							
+								<td class="small-text">
+
+									    <a href="http://portal.acm.org/results.cfm?query=author%3AFrankie%20James&amp;querydisp=author%3AFrankie%20James&amp;coll=portal&amp;dl=ACM&amp;CFID=3179183&amp;CFTOKEN=35314822" target="_self">Frankie James</a>
+ 									 </td>
+								<td class="small-text">
+									
+										<small>&nbsp;Cordura Hall Room 128, CSLI, Stanford University, Stanford, CA</small>
+										
+								</td>
+							</tr>
+					
+					</table>	
+				</div>
+				</td>
+			</tr>
+			
+			
+		
+		
+			
+				<tr valign="top">
+					<td class="small-text"><strong>Sponsor </strong></td>
+					<td colspan="2">
+						<div class="sponsors">
+							
+								
+								
+								
+							
+								
+								
+								
+							
+								
+								
+								
+							
+								
+								
+								
+									
+									
+									
+										<a href=" http://www.acm.org/sigcaph/" target="sponsor" title="Sponsor">SIGCAPH</a>:
+									  								
+									 ACM SIGCAPH Computers and the Physically Handicapped <br>
+								
+							
+						</div>
+					 </td>
+				</tr>
+			
+		
+		
+		
+		
+			
+			
+			
+			
+				
+					<tr valign="top">
+						<td class="small-text"><strong>Publisher</strong></td>
+						<td colspan="2">
+							<div class="publishers">
+								
+								
+								
+								
+								
+								
+									
+									
+									  	ACM Press &nbsp;
+									
+									
+										<small> New York, NY, USA </small>
+									
+								
+							</div>
+						</td>
+					</tr>
+				
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		</table>
+		
+		
+		
+		
+		
+		
+		
+ 
+ 		
+</td>
+</tr>
+
+
+<tr>
+<td>
+
+<!-- third main table: main content START -->
+	<table border="0" width="100%" cellspacing="0" cellpadding="0">
+	<tr>
+		<td height="6"><img src="http://portal.acm.org/images/blanks.gif" width=1 height=1 alt="" border="0"></td>
+	</tr>
+	<tr>
+		<td colspan="4" valign="top" height="1" background="http://portal.acm.org/images/horiz-bar-long.jpg"></td>
+	</tr>
+	<tr>
+		<td height="6"><img src="http://portal.acm.org/images/blanks.gif" width=1 height=1 alt="" border="0"></td>
+	</tr>
+
+	
+
+	<tr valign="top">
+	<!-- buttons -->
+		<td width="100%" colspan="4">
+	    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+		<col width="22%">
+	    <col width="78%">
+		<tr>
+			<td class="small-text"><b>Additional Information:</b></td>
+			<td>
+			<p class="small-text">
+				
+				
+				
+					<a href="citation.cfm%3Fid=274504&amp;coll=portal&amp;dl=ACM&amp;CFID=3179183&amp;CFTOKEN=35314822.1.html#references">references</a>&nbsp;&nbsp;
+				
+				
+					<a href="citation.cfm%3Fid=274504&amp;coll=portal&amp;dl=ACM&amp;CFID=3179183&amp;CFTOKEN=35314822.1.html#citings">citings</a>&nbsp;&nbsp;
+				
+				
+				
+					<a href="citation.cfm%3Fid=274504&amp;coll=portal&amp;dl=ACM&amp;CFID=3179183&amp;CFTOKEN=35314822.1.html#IndexTerms">index terms</a>&nbsp;&nbsp;
+				
+				
+				
+						<a href="citation.cfm%3Fid=274504&amp;coll=portal&amp;dl=ACM&amp;CFID=3179183&amp;CFTOKEN=35314822.1.html#collab">collaborative colleagues</a>&nbsp;&nbsp;
+				
+				
+					<a href="citation.cfm%3Fid=274504&amp;coll=portal&amp;dl=ACM&amp;CFID=3179183&amp;CFTOKEN=35314822.1.html#peers">peer to peer</a>&nbsp;&nbsp;
+				
+				</p>
+			</td>
+		</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td height="6"><img src="http://portal.acm.org/images/blanks.gif" width=1 height=1 alt="" border="0"></td>
+	</tr>
+	
+	<tr valign="top">
+	<!-- buttons -->
+		<form name="popbinder">
+		<td width="100%" colspan="4">
+		
+		<table border="0" cellspacing="0" cellpadding="2" width="100%" >
+		  <col width="22%">
+		  <col width="78%">
+		  <tr valign="top">
+		  	<td class="small-text"><b>Tools and Actions:</b></td>
+			<td>
+			
+				
+					
+					
+					 
+					 
+					 
+				
+				
+							
+				
+			  
+			
+			<a href="http://portal.acm.org/results.cfm?query=274504&amp;querydisp=Similar%20to%3A%20Lessons%20from%20developing%20audio%20HTML%20interface&amp;coll=portal&amp;dl=ACM&amp;CFID=3179183&amp;CFTOKEN=35314822" target="_self" class="small-link-text">Find similar Articles</a>&nbsp;&nbsp;
+
+			<a href="http://www.reviews.com/reviewer/quickreview/frameset_toplevel.cfm?bib_id=274504" target="reviews" class="small-link-text">Review this Article</a>&nbsp;&nbsp;
+			
+			
+			 	<br><a href="citation.cfm%3Fid=274504&amp;coll=portal&amp;dl=ACM&amp;CFID=3179183&amp;CFTOKEN=35314822.1.html#" onClick="window.alert('To use this Feature, you must login with your personal ACM Web Account.');" class="small-link-text">
+				Save this Article to a Binder</a><img src="http://portal.acm.org/images/blanks.gif" border="0" name="saved">
+			
+			&nbsp;&nbsp;
+			<span class="small-text">Display Formats:</span>
+			<a href="citation.cfm%3Fid=274504&amp;coll=portal&amp;dl=ACM&amp;CFID=3179183&amp;CFTOKEN=35314822.1.html#" onClick="window.open('popBibTex.cfm?id=274504&ids=SERIES368.274497.274504&types=series.proceeding.article&reqtype=article&coll=portal&dl=ACM&CFID=3179183&CFTOKEN=35314822','BibTex','width=800,height=100,top=100,left=100,scrollbars=Yes,resizable=yes');" class="small-link-text">
+			BibTex</a>&nbsp;
+
+			<a href="citation.cfm%3Fid=274504&amp;coll=portal&amp;dl=ACM&amp;CFID=3179183&amp;CFTOKEN=35314822.1.html#" onClick="window.open('popendnotes.cfm?id=274504&ids=SERIES368.274497.274504&types=series.proceeding.article&reqtype=article&coll=portal&dl=ACM&CFID=3179183&CFTOKEN=35314822','BibTex','width=800,height=100,top=100,left=100,scrollbars=Yes,resizable=yes');" class="small-link-text">
+			EndNote</a>
+
+			
+			 
+				<a href="citation.cfm%3Fid=274504&amp;coll=portal&amp;dl=ACM&amp;CFID=3179183&amp;CFTOKEN=35314822.1.html#" onClick="window.open('popacmref.cfm?id=274504&ids=SERIES368.274497.274504&types=series.proceeding.article&reqtype=article&coll=portal&dl=ACM&CFID=3179183&CFTOKEN=35314822','BibTeX','width=800,height=100,top=100,left=100,scrollbars=Yes,resizable=yes');" class="small-link-text">
+			ACM Ref</a>
+			
+			
+			&nbsp;&nbsp;				
+			
+			</td>
+		</tr>
+		<tr>
+			<td height="10"><img src="http://portal.acm.org/images/blanks.gif" width=1 height=1 alt="" border="0"></td>
+		</tr>
+		
+		<tr valign="top">
+			<td class="small-text"><b>DOI Bookmark:</b></td>
+			<td class="small-text">
+				<small>Use this link to bookmark this Article:&nbsp;</small><a href="http://doi.acm.org/10.1145/274497.274504">http://doi.acm.org/10.1145/274497.274504</a><br><small><a href="http://www.doi.org/">What is a DOI?</a></small>
+			    
+			</td>
+		</tr> 
+		
+		</table>
+		
+		</td>
+		</form>
+	</tr>
+	<tr>
+		<td height="6"><img src="http://portal.acm.org/images/blanks.gif" width=1 height=1 alt="" border="0"></td>
+	</tr>
+	<tr>
+		<td colspan="4" valign="top" height="1" background="http://portal.acm.org/images/horiz-bar-long.jpg"></td>
+	</tr>
+	<tr>
+		<td height="6"><img src="http://portal.acm.org/images/blanks.gif" width=1 height=1 alt="" border="0"></td>
+	</tr>
+	</table>
+<!-- third main table: main content END -->
+			
+		
+		
+		  	<div class="abstract">
+			
+			
+			  	
+			 
+			 
+			
+			</div>
+		
+		
+		
+		
+		
+		  	<div class="abstract">
+			
+			
+			  	
+			 
+			 
+			
+			</div>
+		
+			
+		
+			<br>
+			<div class="abstract">
+			
+			<A HREF="citation.cfm%3Fid=274504&amp;coll=portal&amp;dl=ACM&amp;CFID=3179183&amp;CFTOKEN=35314822.1.html#CIT"><img name="top" src="http://portal.acm.org/images/arrowu.gif" hspace="10" border="0"></A><SPAN class=heading><A NAME="references">REFERENCES</A></span>
+			<p class="abstract"><font color="Red">Note: OCR errors may be found in this Reference List extracted from the full text article.  ACM has opted to expose the complete List rather than only correct and linked references.</font></p>
+			
+			
+			  	
+					
+					
+					 
+					 
+					 
+				
+				
+								
+			  
+			
+			
+				<p class="abstract">
+				  1&nbsp;&nbsp;
+				  
+				  	
+		 			  <a href="http://portal.acm.org/citation.cfm?id=223693&amp;dl=ACM&amp;coll=portal&amp;CFID=3179183&amp;CFTOKEN=35314822">
+					 
+				  
+				  Michael C. Albers , Eric Bergman, The audible web: auditory enhancements for Mosaic, Conference companion on Human factors in computing systems, p.318-319, May 07-11, 1995, Denver, Colorado, United States
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				  2&nbsp;&nbsp;
+				  
+				  AutoCAD. Autodesk, Inc., 1997
+				  
+				</p>
+			
+				<p class="abstract">
+				  3&nbsp;&nbsp;
+				  
+				  Banks, W. P., et al. Negative priming in auditory attention. Journal of experimental Psychology: Human Perception &amp; Performance, 21(6): 1354-1361, Dec. 1995.
+				  
+				</p>
+			
+				<p class="abstract">
+				  4&nbsp;&nbsp;
+				  
+				  Blattner,M.M.,D.A.Sumikawa,and R.M.Greenberg Earcons and icons: Their smicturc and common design principles.E.P.Glinert,ed.Visual Programming Environments: Applications and Issues, 582-606, IP.P.P. Computer Society. Press, Los AlamRos, CA, 1990.
+				  
+				</p>
+			
+				<p class="abstract">
+				  5&nbsp;&nbsp;
+				  
+				  Borge, V. (speaker). Phonetic Punctuation. Caught in the Act{Analog Sound Disc Recording}. Coumbia Recording, 1950.
+				  
+				</p>
+			
+				<p class="abstract">
+				  6&nbsp;&nbsp;
+				  
+				  	
+		 			  <a href="http://portal.acm.org/citation.cfm?id=169179&amp;dl=ACM&amp;coll=portal&amp;CFID=3179183&amp;CFTOKEN=35314822">
+					 
+				  
+				  Stephen A. Brewster , Peter C. Wright , Alistair D. N. Edwards, An evaluation of earcons for use in auditory human-computer interfaces, Proceedings of the SIGCHI conference on Human factors in computing systems, p.222-227, April 24-29, 1993, Amsterdam, The Netherlands
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				  7&nbsp;&nbsp;
+				  
+				  Edworthy, J., et al. Improving auditory warning design: Relatiomhip between warning sound parameters and perceived urgency. Human Factors, 33(2): 205-231, Apr. 1991.
+				  
+				</p>
+			
+				<p class="abstract">
+				  8&nbsp;&nbsp;
+				  
+				  Craver, W.W. Auditory icons: Using sound in computer interfaces. Human-Conjurer Interaction, 2:167-177, 1986.
+				  
+				</p>
+			
+				<p class="abstract">
+				  9&nbsp;&nbsp;
+				  
+				  Gnver WW_ The, gnnicPincler_ An interface that uses auditory icons. E. P. Glinert, ed. visual Programming Environments: Applications and Issues, 561-581, Computer Society Press, Los Alamitos, CA, 1990.
+				  
+				</p>
+			
+				<p class="abstract">
+				  10&nbsp;&nbsp;
+				  
+				  	
+		 			  <a href="http://portal.acm.org/citation.cfm?id=108857&amp;dl=ACM&amp;coll=portal&amp;CFID=3179183&amp;CFTOKEN=35314822">
+					 
+				  
+				  William W. Gaver , Randall B. Smith , Tim O'Shea, Effective sounds in complex systems: the ARKOLA simulation, Proceedings of the SIGCHI conference on Human factors in computing systems: Reaching through technology, p.85-90, April 27-May 02, 1991, New Orleans, Louisiana, United States
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				  11&nbsp;&nbsp;
+				  
+				  Geiselman, R. E. and J. M. Crawley. Incidental processing of speaker characteristics: Voice as connotative information. Journal of verbal Learning and Verbal Behavior, 22(2):15--23, 1983.
+				  
+				</p>
+			
+				<p class="abstract">
+				  12&nbsp;&nbsp;
+				  
+				  James, E Presenting HTML strucUu~ in audio: User satisfaction with audio hypertext. ICAD '96 Proceedings, 97-103, Xerox PARC, 4--6 Nov. 1996.
+				  
+				</p>
+			
+				<p class="abstract">
+				  13&nbsp;&nbsp;
+				  
+				  	
+		 			  <a href="http://portal.acm.org/citation.cfm?id=892224&amp;dl=ACM&amp;coll=portal&amp;CFID=3179183&amp;CFTOKEN=35314822">
+					 
+				  
+				  Frankie James, Presenting HTML Structure in Audio: User Satisfaction with Audio Hypertext, Stanford University, Stanford, CA, 1998
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				  14&nbsp;&nbsp;
+				  
+				  	
+		 			  <a href="http://portal.acm.org/citation.cfm?id=283455&amp;dl=ACM&amp;coll=portal&amp;CFID=3179183&amp;CFTOKEN=35314822">
+					 
+				  
+				  Frankie James, AHA: audio HTML access, Selected papers from the sixth international conference on World Wide Web, p.1395-1404, September 1997, Santa Clara, California, United States
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				  15&nbsp;&nbsp;
+				  
+				  	
+		 			  <a href="http://portal.acm.org/citation.cfm?id=892216&amp;dl=ACM&amp;coll=portal&amp;CFID=3179183&amp;CFTOKEN=35314822">
+					 
+				  
+				  Frankie James, Distinguishability vs. Distraction in Audio HTML Interfaces, Stanford University, Stanford, CA, 1998
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				  16&nbsp;&nbsp;
+				  
+				  Kid Pix Broderbund Software, 1996.
+				  
+				</p>
+			
+				<p class="abstract">
+				  17&nbsp;&nbsp;
+				  
+				  Lodding, K. N. Iconics: A visual man-machine interface. Proceedings of the Third Annual Conference and Exhibition of the National Computer Graphics Association, Inc., 221-233, Vol. 1, Washington, D.C., June 1982.
+				  
+				</p>
+			
+				<p class="abstract">
+				  18&nbsp;&nbsp;
+				  
+				  MacDraw. Claris Software, 1996.
+				  
+				</p>
+			
+				<p class="abstract">
+				  19&nbsp;&nbsp;
+				  
+				  	
+		 			  <a href="http://portal.acm.org/citation.cfm?id=142629&amp;dl=ACM&amp;coll=portal&amp;CFID=3179183&amp;CFTOKEN=35314822">
+					 
+				  
+				  Elizabeth D. Mynatt , W. Keith Edwards, Mapping GUIs to auditory interfaces, Proceedings of the 5th annual ACM symposium on User interface software and technology, p.61-70, November 15-18, 1992, Monteray, California, United States
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				  20&nbsp;&nbsp;
+				  
+				  Ogden, C.K. and I.A. Richards. The Meaning of Meaning. Routledge &amp; Kegan Paul, Dd., London, 1923.
+				  
+				</p>
+			
+				<p class="abstract">
+				  21&nbsp;&nbsp;
+				  
+				  	
+		 			  <a href="http://portal.acm.org/citation.cfm?id=221752&amp;dl=ACM&amp;coll=portal&amp;CFID=3179183&amp;CFTOKEN=35314822">
+					 
+				  
+				  T. V. Raman, Audio system for technical readings, Cornell University, Ithaca, NY, 1994
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				  22&nbsp;&nbsp;
+				  
+				  	
+		 			  <a href="http://portal.acm.org/citation.cfm?id=228354&amp;dl=ACM&amp;coll=portal&amp;CFID=3179183&amp;CFTOKEN=35314822">
+					 
+				  
+				  T. V. Raman, Emacspeak&mdash;direct speech access, Proceedings of the second annual ACM conference on Assistive technologies, p.32-36, April 11-12, 1996, Vancouver, British Columbia, Canada
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				  23&nbsp;&nbsp;
+				  
+				  	
+		 			  <a href="http://portal.acm.org/citation.cfm?id=236605&amp;dl=ACM&amp;coll=portal&amp;CFID=3179183&amp;CFTOKEN=35314822">
+					 
+				  
+				  Byron Reeves , Clifford Nass, The media equation: how people treat computers, television, and new media like real people and places, Cambridge University Press, New York, NY, 1996
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				  24&nbsp;&nbsp;
+				  
+				  	
+		 			  <a href="http://portal.acm.org/citation.cfm?id=24107&amp;dl=ACM&amp;coll=portal&amp;CFID=3179183&amp;CFTOKEN=35314822">
+					 
+				  
+				  Y Rogers, Evaluating the meaningfulness of icon sets to represent command operations, Proceedings of the Second Conference of the British Computer Society, human computer interaction specialist group on People and computers: designing for usability, p.586-603, December 1986, York, United Kingdom
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				  25&nbsp;&nbsp;
+				  
+				  Sawhney, N. and C. Schmandt. Design of spatialized audio in nomadic environments. ICAD '97 Proceedings, 109-113, Xerox PARC, 3-5 Nov. 1997.
+				  
+				</p>
+			
+				<p class="abstract">
+				  26&nbsp;&nbsp;
+				  
+				  Walker, B. and A. Ehrenstein. Congruency Effects with Dynamic Auditory Stimuli: Design Implications. ICAD '97 Proceedings, 7-11, Xerox PARC, 3-5 Nov. 1997.
+				  
+				</p>
+			
+			
+			</div>
+		
+		
+		
+			<br>
+			<div class="abstract">
+			
+			<A HREF="citation.cfm%3Fid=274504&amp;coll=portal&amp;dl=ACM&amp;CFID=3179183&amp;CFTOKEN=35314822.1.html#CIT"><img name="top" src="http://portal.acm.org/images/arrowu.gif" hspace="10" border="0"></A><SPAN class=heading><A NAME="citings">CITINGS</A></span>
+			
+			
+			  	
+					
+					
+					 
+					 
+					 
+				
+				
+									
+				
+			  
+			
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=354345&amp;dl=ACM&amp;coll=portal&amp;CFID=3179183&amp;CFTOKEN=35314822">
+				  
+					Kevin Christian , Bill Kules , Ben Shneiderman , Adel Youssef, A comparison of voice controlled and mouse controlled web browsing, Proceedings of the fourth international ACM conference on Assistive technologies, p.72-79, November 13-15, 2000, Arlington, Virginia, United States
+				  </a>
+				</p>
+			
+			
+			</div>
+		
+
+		
+			
+			
+			  	
+			 
+			 
+			
+		
+		
+		
+		  	<br>
+			<div class="indterms">
+			
+			<A HREF="citation.cfm%3Fid=274504&amp;coll=portal&amp;dl=ACM&amp;CFID=3179183&amp;CFTOKEN=35314822.1.html#CIT"><img name="top" src="http://portal.acm.org/images/arrowu.gif" hspace="10" border="0"></A><SPAN class=heading><A NAME="IndexTerms">INDEX TERMS</A></span>
+			
+				
+					<p class="Categories">
+						<SPAN class=heading><A NAME="GenTerms">Primary Classification:</A></span>
+						
+						  	
+						
+						
+						
+							<br>&nbsp;
+							
+							
+								  
+									
+									
+									
+									<b>K.</b>
+									
+									
+									    
+									 
+									<a href="http://portal.acm.org/results.cfm?query=CCS%3AK%2E%2A&amp;coll=portal&amp;dl=ACM&amp;CFID=3179183&amp;CFTOKEN=35314822" target="_self">
+									Computing Milieux</a><br>
+								  
+							
+								  
+									
+									
+										&nbsp;
+									
+									
+										<img src="http://portal.acm.org/images/tree.gif" border="0" height="20" width="20">
+									
+									<b>K.4</b>
+									
+									
+										
+									  
+									<a href="http://portal.acm.org/results.cfm?query=CCS%3A%22K%2E4%22&amp;coll=portal&amp;dl=ACM&amp;CFID=3179183&amp;CFTOKEN=35314822" target="_self">
+									 COMPUTERS AND SOCIETY</a><br>
+								  
+							
+								  
+									
+									
+										&nbsp;
+									
+										&nbsp;
+									
+										&nbsp;
+									
+									
+										<img src="http://portal.acm.org/images/tree.gif" border="0" height="20" width="20">
+									
+									<b>K.4.2</b>
+									
+									
+										
+									  
+									<a href="http://portal.acm.org/results.cfm?query=CCS%3A%22K%2E4%2E2%22&amp;coll=portal&amp;dl=ACM&amp;CFID=3179183&amp;CFTOKEN=35314822" target="_self">
+									 Social Issues</a><br>
+								  
+							
+								
+									  	
+										
+										
+											
+											
+												&nbsp;
+											
+												&nbsp;
+											
+												&nbsp;
+											
+												&nbsp;
+											
+												&nbsp;
+											
+											
+												<img src="http://portal.acm.org/images/tree.gif" border="0" height="20" width="20">
+											 
+											<b>Subjects:</b>
+										    
+												<a href="http://portal.acm.org/results.cfm?query=CCS%3A%22Assistive%20technologies%20for%20persons%20with%20disabilities%22&amp;coll=portal&amp;dl=ACM&amp;CFID=3179183&amp;CFTOKEN=35314822" target="_self">Assistive technologies for persons with disabilities</a>
+											
+										
+										<br>
+										
+								
+							
+						
+					 </p>
+				  
+				
+				  <p class="Categories">
+					<SPAN class=heading><A NAME="GenTerms">Additional&nbsp;Classification:</A></span>
+					 
+					  	
+					 
+					 
+					
+							<br>&nbsp;
+							
+							
+								 
+									
+									
+									 
+									<b>H.</b>
+									
+									    
+									 
+									<a href="http://portal.acm.org/results.cfm?query=CCS%3AH%2E%2A&amp;coll=portal&amp;dl=ACM&amp;CFID=3179183&amp;CFTOKEN=35314822" target="_self">
+									Information Systems</a><br>
+								 
+							
+								 
+									
+									
+										&nbsp;
+									
+									
+										<img src="http://portal.acm.org/images/tree.gif" border="0" height="20" width="20">
+									 
+									<b>H.3</b>
+									
+										
+									  
+									<a href="http://portal.acm.org/results.cfm?query=CCS%3A%22H%2E3%22&amp;coll=portal&amp;dl=ACM&amp;CFID=3179183&amp;CFTOKEN=35314822" target="_self">
+									 INFORMATION STORAGE AND RETRIEVAL</a><br>
+								 
+							
+								 
+									
+									
+										&nbsp;
+									
+										&nbsp;
+									
+										&nbsp;
+									
+									
+										<img src="http://portal.acm.org/images/tree.gif" border="0" height="20" width="20">
+									 
+									<b>H.3.4</b>
+									
+										
+									  
+									<a href="http://portal.acm.org/results.cfm?query=CCS%3A%22H%2E3%2E4%22&amp;coll=portal&amp;dl=ACM&amp;CFID=3179183&amp;CFTOKEN=35314822" target="_self">
+									 Systems and Software</a><br>
+								 
+							
+								
+								  	
+									
+									
+									<br>
+									
+										
+										
+											&nbsp;
+										
+											&nbsp;
+										
+											&nbsp;
+										
+											&nbsp;
+										
+											&nbsp;
+										
+										
+											<img src="http://portal.acm.org/images/tree.gif" border="0" height="20" width="20">
+										 
+										<b>Nouns:</b>
+										
+											<a href="http://portal.acm.org/results.cfm?query=CCS%3A%22World%20Wide%20Web%20%28WWW%29%22&amp;coll=portal&amp;dl=ACM&amp;CFID=3179183&amp;CFTOKEN=35314822" target="_self">World Wide Web (WWW)</a>
+										
+										<br>
+									
+								
+							
+								 
+									
+									
+										&nbsp;
+									
+									
+										<img src="http://portal.acm.org/images/tree.gif" border="0" height="20" width="20">
+									 
+									<b>H.5</b>
+									
+										
+									  
+									<a href="http://portal.acm.org/results.cfm?query=CCS%3A%22H%2E5%22&amp;coll=portal&amp;dl=ACM&amp;CFID=3179183&amp;CFTOKEN=35314822" target="_self">
+									 INFORMATION INTERFACES AND PRESENTATION (I.7)</a><br>
+								 
+							
+								 
+									
+									
+										&nbsp;
+									
+										&nbsp;
+									
+										&nbsp;
+									
+									
+										<img src="http://portal.acm.org/images/tree.gif" border="0" height="20" width="20">
+									 
+									<b>H.5.2</b>
+									
+										
+									  
+									<a href="http://portal.acm.org/results.cfm?query=CCS%3A%22H%2E5%2E2%22&amp;coll=portal&amp;dl=ACM&amp;CFID=3179183&amp;CFTOKEN=35314822" target="_self">
+									 User Interfaces (D.2.2, H.1.2, I.3.6)</a><br>
+								 
+							
+								
+								  	
+									
+									
+										
+										
+											&nbsp;
+										
+											&nbsp;
+										
+											&nbsp;
+										
+											&nbsp;
+										
+											&nbsp;
+										
+										
+											<img src="http://portal.acm.org/images/tree.gif" border="0" height="20" width="20">
+										 
+										<b>Subjects:</b>
+									    
+											<a href="http://portal.acm.org/results.cfm?query=CCS%3A%22Auditory%20%28non%2Dspeech%29%20feedback%22&amp;coll=portal&amp;dl=ACM&amp;CFID=3179183&amp;CFTOKEN=35314822" target="_self">Auditory (non-speech) feedback</a>
+										
+									
+									<br>
+									
+								
+							
+					
+							<br>&nbsp;
+							
+							
+								 
+									
+									
+									 
+									<b>I.</b>
+									
+									    
+									 
+									<a href="http://portal.acm.org/results.cfm?query=CCS%3AI%2E%2A&amp;coll=portal&amp;dl=ACM&amp;CFID=3179183&amp;CFTOKEN=35314822" target="_self">
+									 Computing Methodologies</a><br>
+								 
+							
+								 
+									
+									
+										&nbsp;
+									
+									
+										<img src="http://portal.acm.org/images/tree.gif" border="0" height="20" width="20">
+									 
+									<b>I.7</b>
+									
+										
+									  
+									<a href="http://portal.acm.org/results.cfm?query=CCS%3A%22I%2E7%22&amp;coll=portal&amp;dl=ACM&amp;CFID=3179183&amp;CFTOKEN=35314822" target="_self">
+									 DOCUMENT AND TEXT PROCESSING</a><br>
+								 
+							
+								 
+									
+									
+										&nbsp;
+									
+										&nbsp;
+									
+										&nbsp;
+									
+									
+										<img src="http://portal.acm.org/images/tree.gif" border="0" height="20" width="20">
+									 
+									<b>I.7.2</b>
+									
+										
+									  
+									<a href="http://portal.acm.org/results.cfm?query=CCS%3A%22I%2E7%2E2%22&amp;coll=portal&amp;dl=ACM&amp;CFID=3179183&amp;CFTOKEN=35314822" target="_self">
+									 Document Preparation</a><br>
+								 
+							
+								
+								  	
+									
+									
+									<br>
+									
+										
+										
+											&nbsp;
+										
+											&nbsp;
+										
+											&nbsp;
+										
+											&nbsp;
+										
+											&nbsp;
+										
+										
+											<img src="http://portal.acm.org/images/tree.gif" border="0" height="20" width="20">
+										 
+										<b>Nouns:</b>
+										
+											<a href="http://portal.acm.org/results.cfm?query=CCS%3A%22HTML%22&amp;coll=portal&amp;dl=ACM&amp;CFID=3179183&amp;CFTOKEN=35314822" target="_self">HTML</a>
+										
+										<br>
+									
+								
+							
+					
+
+					</p>
+				   
+			
+				
+				<br>
+					<p class="GenTerms">
+						<SPAN class=heading><A NAME="GenTerms">General Terms:</A></span>
+						
+						  	
+						
+						
+						<BR>
+						 
+						
+							
+							<a href="http://portal.acm.org/results.cfm?query=genterm%3A%22Design%22&amp;coll=portal&amp;dl=ACM&amp;CFID=3179183&amp;CFTOKEN=35314822" target="_self">
+							Design</a>,
+							
+						
+							
+							<a href="http://portal.acm.org/results.cfm?query=genterm%3A%22Human%20Factors%22&amp;coll=portal&amp;dl=ACM&amp;CFID=3179183&amp;CFTOKEN=35314822" target="_self">
+							 Human Factors</a>,
+							
+						
+							
+							<a href="http://portal.acm.org/results.cfm?query=genterm%3A%22Languages%22&amp;coll=portal&amp;dl=ACM&amp;CFID=3179183&amp;CFTOKEN=35314822" target="_self">
+							 Languages</a>
+							
+						
+					</p>
+				  
+				
+				
+				<br>
+					<p class="keywords">
+						<SPAN class=heading><A NAME="Keywords">Keywords:</A></span>
+						
+						  	
+						
+						
+						<BR>
+						 
+						
+							
+							<a href="http://portal.acm.org/results.cfm?query=keyword%3A%22HTML%22&amp;coll=portal&amp;dl=ACM&amp;CFID=3179183&amp;CFTOKEN=35314822" target="_self">
+							HTML</a>,
+							
+						
+							
+							<a href="http://portal.acm.org/results.cfm?query=keyword%3A%22WWW%22&amp;coll=portal&amp;dl=ACM&amp;CFID=3179183&amp;CFTOKEN=35314822" target="_self">
+							 WWW</a>,
+							
+						
+							
+							<a href="http://portal.acm.org/results.cfm?query=keyword%3A%22audio%20interfaces%22&amp;coll=portal&amp;dl=ACM&amp;CFID=3179183&amp;CFTOKEN=35314822" target="_self">
+							 audio interfaces</a>,
+							
+						
+							
+							<a href="http://portal.acm.org/results.cfm?query=keyword%3A%22blind%22&amp;coll=portal&amp;dl=ACM&amp;CFID=3179183&amp;CFTOKEN=35314822" target="_self">
+							 blind</a>,
+							
+						
+							
+							<a href="http://portal.acm.org/results.cfm?query=keyword%3A%22human%2Dcomputer%20interaction%22&amp;coll=portal&amp;dl=ACM&amp;CFID=3179183&amp;CFTOKEN=35314822" target="_self">
+							 human-computer interaction</a>
+							
+												
+					</p>
+				  
+				
+			
+			</div>
+		 
+		
+		
+				
+		
+			<div class="abstract">
+				
+				<A HREF="citation.cfm%3Fid=274504&amp;coll=portal&amp;dl=ACM&amp;CFID=3179183&amp;CFTOKEN=35314822.1.html#CIT"><img name="top" src="http://portal.acm.org/images/arrowu.gif" hspace="10" border="0"></A><SPAN class=heading><A NAME="collab">Collaborative Colleagues:</A></span>
+				
+				<table border="0" style="margin-left: 2em" cellpadding="2">
+				
+				
+						<tr valign="top"><td><div class="abstract">Frankie James:</div></td><td>
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+							
+					
+					
+					
+						
+						
+						<div class="abstract">Bruce Balentine</div>
+						
+					
+						
+						
+						<div class="abstract">Amrita Bhagat</div>
+						
+					
+						
+						
+						<div class="abstract">Elizabeth O. Bratt</div>
+						
+					
+						
+						
+						<div class="abstract">Elizabeth Owen Bratt</div>
+						
+					
+						
+						
+						<div class="abstract">Harry Bratt</div>
+						
+					
+						
+						
+						<div class="abstract">John Dowding</div>
+						
+					
+						
+						
+						<div class="abstract">Jean Mark Gawron</div>
+						
+					
+						
+						
+						<div class="abstract">Mark Gawron</div>
+						
+					
+						
+						
+						<div class="abstract">Sharon Goldwater</div>
+						
+					
+						
+						
+						<div class="abstract">Beth A Hockey</div>
+						
+					
+						
+						
+							
+							</td><td>							
+						
+						<div class="abstract">Beth Ann Hockey</div>
+						
+					
+						
+						
+						<div class="abstract">Jennifer Lai</div>
+						
+					
+						
+						
+						<div class="abstract">John Makhoul</div>
+						
+					
+						
+						
+						<div class="abstract">Clifford Nass</div>
+						
+					
+						
+						
+						<div class="abstract">Manny Rayner</div>
+						
+					
+						
+						
+						<div class="abstract">Jeff Roelands</div>
+						
+					
+						
+						
+						<div class="abstract">Ben Shneiderman</div>
+						
+					
+						
+						
+						<div class="abstract">Bernhard Suhm</div>
+						
+					
+						</td>
+						</tr>
+				
+				</table>
+			</div>
+						
+		
+		
+		
+			<br>
+			<div class="abstract">
+			
+				<A HREF="citation.cfm%3Fid=274504&amp;coll=portal&amp;dl=ACM&amp;CFID=3179183&amp;CFTOKEN=35314822.1.html#CIT"><img name="top" src="http://portal.acm.org/images/arrowu.gif" hspace="10" border="0"></A><SPAN class=heading><A NAME="peers">Peer to Peer - Readers of this Article have also read:</cite></A></span>
+		<ul type="disc">
+		
+			  
+				
+				 
+				
+			<li>
+			 
+				<A HREF="http://portal.acm.org/citation.cfm?id=4290&amp;dl=ACM&amp;coll=portal&amp;CFID=3179183&amp;CFTOKEN=35314822" target="_self">		  	  Data structures for quadtree approximation and compression</a>
+			
+			
+				
+					
+						<b>Communications of the ACM</b>&nbsp;&nbsp;
+					
+					
+						<font size="-1">28,&nbsp;9</font><br>
+					 
+				  
+				
+			
+			
+				
+					Hanan Samet
+				
+				<br>
+			
+			<br>
+			</li>
+		
+			  
+				
+				 
+				
+			<li>
+			 
+				<A HREF="http://portal.acm.org/citation.cfm?id=143680&amp;dl=ACM&amp;coll=portal&amp;CFID=3179183&amp;CFTOKEN=35314822" target="_self">		  	  A hierarchical single-key-lock access control using the Chinese remainder theorem</a>
+			
+			
+				
+				  	
+					    <b>Proceedings of the 1992 ACM/SIGAPP Symposium on Applied computing</b><br>
+					
+				   
+				
+			
+			
+				
+					Kim S. Lee
+				
+					, &nbsp;Huizhu Lu
+				
+					, &nbsp;D. D. Fisher
+				
+				<br>
+			
+			<br>
+			</li>
+		
+			  
+				
+				 
+				
+			<li>
+			 
+				<A HREF="http://portal.acm.org/citation.cfm?id=125254&amp;dl=ACM&amp;coll=portal&amp;CFID=3179183&amp;CFTOKEN=35314822" target="_self">		  	  The GemStone object database management system</a>
+			
+			
+				
+					
+						<b>Communications of the ACM</b>&nbsp;&nbsp;
+					
+					
+						<font size="-1">34,&nbsp;10</font><br>
+					 
+				  
+				
+			
+			
+				
+					Paul Butterworth
+				
+					, &nbsp;Allen Otis
+				
+					, &nbsp;Jacob Stein
+				
+				<br>
+			
+			<br>
+			</li>
+		
+			  
+				
+				 
+				
+			<li>
+			 
+				<A HREF="http://portal.acm.org/citation.cfm?id=125322&amp;dl=ACM&amp;coll=portal&amp;CFID=3179183&amp;CFTOKEN=35314822" target="_self">		  	  Putting innovation to work:&nbsp;adoption strategies for multimedia communication systems</a>
+			
+			
+				
+					
+						<b>Communications of the ACM</b>&nbsp;&nbsp;
+					
+					
+						<font size="-1">34,&nbsp;12</font><br>
+					 
+				  
+				
+			
+			
+				
+					Ellen Francik
+				
+					, &nbsp;Susan Ehrlich Rudman
+				
+					, &nbsp;Donna Cooper
+				
+					, &nbsp;Stephen Levine
+				
+				<br>
+			
+			<br>
+			</li>
+		
+			  
+				
+				 
+				
+			<li>
+			 
+				<A HREF="http://portal.acm.org/citation.cfm?id=123244&amp;dl=ACM&amp;coll=portal&amp;CFID=3179183&amp;CFTOKEN=35314822" target="_self">		  	  An intelligent component database for behavioral synthesis</a>
+			
+			
+				
+				  	
+					    <b>Proceedings of the 27th ACM/IEEE conference on Design automation</b><br>
+					
+				   
+				
+			
+			
+				
+					Gwo-Dong Chen
+				
+					, &nbsp;Daniel D. Gajski
+				
+				<br>
+			
+			<br>
+			</li>
+		
+		</ul>
+		
+		</div>
+		
+		
+		
+		
+		
+			
+				
+				
+				
+			
+				
+				
+				
+			
+				
+				
+				
+			
+				
+				
+				
+			
+				
+				
+				
+			
+		
+				
+			
+  	
+
+
+
+
+<br>
+<DIV class=footer-copy-text align="center">
+	
+	The ACM Portal is published by the Association for Computing Machinery. Copyright © 2007 ACM, Inc.<br>
+	<A href="http://portal.acm.org/info/usage.cfm?CFID=3179183&CFTOKEN=35314822">Terms of Usage</A>&nbsp;&nbsp;
+	<A href="http://www.acm.org/serving/acm-privacy.html">Privacy Policy</A>&nbsp;&nbsp;
+	<A href="http://www.acm.org/constitution/code.html">Code of Ethics</A>&nbsp;&nbsp;	  
+	<A href="http://www.acm.org/key_people/">Contact Us</A>
+
+<br><br>
+Useful downloads: 
+<a href="http://www.adobe.com/products/acrobat/readstep2.html"><img src="http://portal.acm.org/images/pdf_logo.gif" width="16" height="16" alt="" border="0"> Adobe Acrobat</a>
+&nbsp;&nbsp;
+<a href="http://www.apple.com/quicktime/download/" target="_blank"><img src="http://portal.acm.org/images/qtlogo.gif" width="16" height="16" alt="" border="0"> QuickTime</a>
+&nbsp;&nbsp;
+<a href="http://www.microsoft.com/windows/windowsmedia/download/default.asp" target="_blank"><img src="http://portal.acm.org/images/wmv.gif" width="16" height="15" alt="" border="0"> Windows Media Player</a>
+&nbsp;&nbsp;
+<a href="http://www.real.com/" target="_blank"><img src="http://portal.acm.org/images/realplayer.gif" width="20" height="18" alt="" border="0"> Real Player</a>
+
+
+</DIV>
+
+</td>
+</tr>
+</table>
+</div>
+
+</body>
+</html>

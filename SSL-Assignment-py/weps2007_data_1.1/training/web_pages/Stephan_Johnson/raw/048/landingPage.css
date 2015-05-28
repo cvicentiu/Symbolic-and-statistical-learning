@@ -1,0 +1,713 @@
+	body {
+		background: #fff;
+		margin : 0;
+		padding : 0;
+		font-family : Arial, Helvetica, sans-serif;
+		min-width : 770px;
+		height : 100%;
+	}
+	
+	.red {
+		margin :  0;
+		padding : 0 0 5px 0;
+		background : #fff;
+		font : bold 1.1em Arial, Helvetica, sans-serif;
+		color : #990000;	
+	}
+	
+	h1 {
+		margin :  0;
+		padding : 0 0 5px 0;
+		background : #fff;
+		font : bold 1.1em Arial, Helvetica, sans-serif;
+		color : #990000;
+	}
+	
+	h2 {
+		font : bold 1.1em Arial, Helvetica, sans-serif;
+		color : #990000;
+		margin : 0;
+		padding : 0 0 5px 0;
+	}		
+	
+	img {
+		border : 0;
+	}
+	
+	a {
+		
+		color : #cc0000;
+		text-decoration : underline;
+		background-color: Transparent;
+	}
+	
+
+	
+	a:hover, a:visited:hover
+{
+	color: #0000cc;
+	text-decoration: underline;
+}
+	
+	a:visited {
+		
+		color:#666;
+		text-decoration : underline;
+	}
+	
+	#alerthide {
+		display : none;
+	}
+	
+	.hidden {
+		display : none;
+	}
+	
+	#containment {
+		background: #ffffff;
+		float : left;
+		z-index:2;
+	}
+
+/* Header information */
+
+		
+	#headerTitle
+{
+	padding-right: 89px;
+	padding-left: 16px;
+	float: left;
+	padding-bottom: 0px;
+	margin: 0px;
+	width: auto;
+	padding-top: 23px;
+}
+    
+
+
+/* Navigation area */
+	#navigationContainer {
+		margin : 0;
+		padding : 0;
+		background : #e8e8e8;
+		height : 27px;
+		width : 770px;
+		float : left;
+	}
+
+	#mainNavList {
+		float : left;
+		width : 625px;
+  		voice-family : "\""; 
+
+	}
+	
+	.dummystyleforIE5fix {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+	
+	#navigationContainer>#mainNavList {
+		/* commented backslash hack to hide this from Mac IE5 \*/
+		margin-top : -5px; /* hides margin from IE, to fix Moz display issue with navigation graphics */
+	}
+	
+	.dummystyleforMacIE5fix {
+		display : none; /* this unused style here to solve Mac IE5 because of the hack above */
+	}
+			
+	#mainNavList a {
+		background : transparent;
+	}
+	
+	#mainNavList a:hover {
+		background : transparent; /* corrects any background color set to A for Firefox to display rollover correctly */
+	}
+	
+	#headerDate {
+		margin : 0;
+		padding : 8px 15px 0 0;
+		font : .7em Helvetica, Arial, sans-serif;
+		color : #000;
+		text-transform : uppercase;
+		float : right;
+	}
+
+/* OPEN TMPL STYLES */
+	#openTmplAHeader {
+		margin : 0;
+		padding : 0;
+		clear : both; /* for Moz because of the display style below */
+	}
+	
+	#openTmplAHeader img {
+		display : block; /* required for Gecko and KHTML rendering engines. Images are default ``[=display: inline]'', meaning that they sit on the text baseline with a little space above and below like normal text.  This style removes the space around the image so proper alignment of images will occur. Thanks kryten. */
+	}
+
+#mainContentContainer {
+		margin : 0;
+		/* Below changed from '10' to '10px'; former is invalid syntax [mzanon@noctrl.edu 2006-09-06]*/
+		padding-top : 10px;
+		padding-left:0;
+		/* Below changed from '10' to '10px'; former is invalid syntax [mzanon@noctrl.edu 2006-09-06]*/
+		padding-right: 10px;
+		padding-bottom:0;
+		float : left;
+		background : #fff url(../Images/intGrayBg.gif) repeat-y;
+		font: .7em Arial, Helvetica, sans-serif; 
+		color : #000;
+		height : auto;
+		width :  770px;
+	}
+	
+#mainContentContainer:after
+	{
+	content: "."; display: block; line-height: 1px; font-size: 1px; clear: both;
+	}		
+		
+	
+#mainSUBContentContainer {
+		margin : 0;
+		padding : 0;
+		float : left;
+		width :  770px;
+		background : transparent url(../Images/nccLogoBg.gif) bottom left no-repeat;
+	}
+	
+/* Subnav area for navigation, search, quicklinks, directories and logo */
+	#subNavColContainer {
+		padding: 0 0 20px 0;
+		float : left;
+
+		width : 169px;
+
+	}
+	
+	
+	
+	#subNav {
+		margin : 12px 10px 50px 0px;
+		padding : 0;
+	}
+	
+	#subNav .subNavHeader {
+		background-color:#d9d9d9;
+		font: bold 11px Arial, Helvetica, sans-serif;
+		color: #000;
+		text-transform : capitalize;
+	}
+	
+	#subNav .subNavHeaderOn {
+		background-color:#d9d9d9;
+		font: bold 11px Arial, Helvetica, sans-serif;
+		color: #000000;
+		text-transform : capitalize;
+	}
+	
+	#subNav a {
+		color: #000;
+		padding: 2px 0 2px 0;
+		text-decoration:none;
+		/*
+		background-color:#d9d9d9;
+		*/
+		background-color:Transparent;
+		font: 11px Arial, Helvetica, sans-serif;
+		text-transform : capitalize;
+		display : block;
+	}
+	
+	#subNav a:hover, a:visited:hover {
+		background-color:Transparent;
+		color:#cc0000;
+	}
+	
+	#subNav .subNavOn {
+		background-color:Transparent;
+		color: #cc0000;
+	}
+
+	
+	
+	#searchForm {
+		margin : 0;
+		padding : 0;
+	}
+	
+	#searchForm p {
+		margin : 0;
+		padding : 0;
+		width : auto; 
+		border : 0;
+	} /* to help moz align search area better */
+	
+	.searchboxM {
+		width : 98px;
+		height : 18px;
+  		voice-family : "\""; 
+
+	}
+	
+	.dummystyleforIE5fix {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+	
+
+	
+	#quicklinksLink a {
+		background : #d9d9d9;
+	}
+	
+	#quicklinksLink img {
+		display: block;
+	}
+	
+
+	
+	#directoriesLink a {
+		background : #d9d9d9;
+	} 
+	
+	#directoriesLink img {
+		display: block;
+	}
+	
+	#nccLogoContainer {
+		margin : 60px 6px 20px 15px;
+		
+	}
+	
+	#nccLogo {
+		margin : 0;
+		padding : 0;
+		vertical-align: text-bottom;	
+	}
+	
+	#nccLogo img {
+		display: block;
+		vertical-align: text-bottom;
+	}
+	
+	
+/* Main Content Area for breadcrumb, text and photos */
+
+	
+	.dummystyleforIE5fix {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+    
+	#breadcrumb {
+		margin :  0;
+		padding : 11px 0 5px 0;
+		background : #fff;
+		font : 11px Arial, Helvetica, sans-serif;
+	}
+	
+	#breadcrumb a {
+		background : transparent;
+		color : #cc0000;
+		text-decoration : underline;
+	}
+	
+	#breadcrumb a:hover
+	{
+		background: transparent;
+		color: #0000cc;
+		text-decoration: underline;
+	}
+	
+	#breadcrumb a:visited:hover
+	{
+		background: transparent;
+		color: #0000cc;
+		text-decoration: underline;
+	}
+	
+	#breadcrumb a:visited
+	{
+		background : transparent;
+		color:#666;
+		text-decoration : underline;
+	}
+	
+	#utilityIcons {
+		margin :  0;
+		padding : 0 0 5px 0;
+	}
+	
+	#mainContent {
+		margin :  0;
+		padding : 0;
+	}
+	
+	#mainContent h1 {
+		margin :  0;
+		padding : 0 0 5px 0;
+		background : #fff;
+		font : bold 1.1em Arial, Helvetica, sans-serif;
+		color : #990000;
+	}
+	
+	.TitleImitation
+{
+	font: bold 1.1em Arial, Helvetica, sans-serif;
+	color: #990000;
+}	
+
+#leftindent
+{
+	padding-left: 20px;
+}
+    
+/* Banner and Testimonial Image Styles */
+	#banner1 {
+		margin : 0;
+		padding : 0;
+		clear : both; /* for Moz because of the display style below */
+		background : #fff url(../Images/banner1Bg.gif) top left no-repeat;
+		width:770px;
+		height : 70px;
+	}
+	
+
+	
+#banner1TitleLanding {
+		margin : 0;
+		padding : 25px 0 0 17px;
+		color : #fff;
+		font : 15pt Times New Roman, Times, sans-serif;
+		text-transform : uppercase;
+		float : left;
+		width : 376px;
+  		voice-family : "\"}\""; 
+  		voice-family :inherit;
+		width : 359px; /* box model/voice family trick/hack to get width correct */
+	}	
+	
+	.dummystyleforIE5fix {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+	
+	#banner1Tagline {
+        margin : 0;
+        color : #ffffff;
+		font : 15pt arial, helvetica, sans-serif;
+        z-index : 2;
+        position : absolute;
+        top : 116px;
+        left : 377px;
+    }
+    
+	#banner2Tagline {
+        margin : 0;
+        color : #ffffff;
+		font : 15pt arial, helvetica, sans-serif;
+        z-index : 2;
+        position : absolute;
+        top : 116px;
+        left : 300px;
+    }    
+	
+	#banner1Title {
+		color : #fff;
+		float : left;
+		width : 770px;
+  		voice-family : "\"}\""; 
+  		voice-family :inherit;
+		width : 753px; /* box model/voice family trick/hack to get width correct */
+
+	}
+	
+	.dummystyleforIE5fix {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+	
+	#testimonialImage {
+        position : absolute;
+        top : 105px;
+        left : 487px;
+        z-index : 1;
+    }
+/* END Banner and Testimonial Image Styles */
+	
+    /* top half of content */
+	#topHalfContentContainer {
+		margin :  0 0 0 3px;
+		padding : 0px 0 0px 0px;
+		width : 598px; /* width + padding (not margin) */
+        border : 0;
+		min-height : 232px;
+	/* Corrected background syntax from 'ffff' to 'ffffff'; mzanon@noctrl.edu 2006-09-06 */
+        background: #ffffff;
+        overflow : hidden;
+  		voice-family : "\"}\""; 
+  		voice-family :inherit;
+		width : 595px; /* box model/voice family trick/hack to get field height closer for IE5+ */
+	}
+    
+	.dummystyleforIE5fix {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+    
+	#main 
+	{
+		min-height : 240px;
+  		voice-family : "\"}\""; 
+  		voice-family :inherit;
+	}	
+    
+	.dummystyleforIE5fix {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+	
+	#topLeftHalfContentContainer {/* commented backslash hack to hide this from Mac IE5 \*/
+		height : 234px;
+		padding-left:20px;
+		WIDTH: 300px;
+		clear:both;
+  		voice-family : "\"}\""; 
+  		voice-family :inherit;
+		width : 285px; /* box model/voice family trick/hack to get field height closer for IE5+ */
+		min-height : 242px;
+		
+	}
+	
+	#topHalfContentContainer > #topLeftHalfContentContainer { /* reset for Moz because of height style above, IE ignores.  Required or Moz fixes the height and doesn't all, commented backslash hack to hide this from Mac IE5 \*/
+		height : auto;
+		clear:both;
+		
+	}
+    
+	#topLeftHalfContentContainer p {
+		margin : 0;
+		padding : 10px 0 0 0;
+	}
+	
+	#topLeftHalfContentContainer a {
+		
+		color : #cc0000;
+		text-decoration : underline;
+	}
+	
+	#topLeftHalfContentContainer a:hover, #topLeftHalfContentContainer a:visited:hover {
+		
+		color:#0000cc;
+		text-decoration : underline;
+	}
+	
+	#topLeftHalfContentContainer a:visited {
+		
+		color:#666;
+		text-decoration : underline;
+	}
+	
+	.imgright {
+		margin :  0 0 10px 15px;
+        padding : 0;
+        float : right;
+	}
+    
+    /* bottom half of content */
+	#bottomHalfContentContainer {
+		width : 610px; /* width + padding (not margin) */
+        border-top : 1px dashed #999;
+  		voice-family : "\"}\""; 
+  		voice-family :inherit;
+		width : 600px; /* box model/voice family trick/hack to get field height closer for IE5+ */
+
+	}
+	
+	#bottomHalfContentContainer:after
+	{
+	content: "."; display: block; line-height: 1px; font-size: 1px; clear: both;
+	}	
+    
+	.dummystyleforIE5fix {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+	
+	#bottomHalfContentContainer a {
+		
+		color : #cc0000;
+		text-decoration : underline;
+	}
+	
+	#bottomHalfContentContainer a:hover, #bottomHalfContentContainer a:visited:hover {
+		
+		color:#0000cc;
+		text-decoration : underline;
+	}
+	
+	#bottomHalfContentContainer a:visited {
+		
+		color:#666;
+		text-decoration : underline;
+	}
+    
+    /* bottom half of content */
+	#colOneContentContainer {
+		width : 186px; /* width + padding (not margin) */
+        float : left;
+        padding-left: 20px;
+        padding-right: 25px;
+        padding-top: 25px;
+        border-right : 1px dashed #999;
+  		voice-family : "\"}\""; 
+  		voice-family :inherit;
+  		width : 141px;
+
+	}
+	
+    /* bottom half of content */
+	#colFourContentContainer {
+		width : 300px; /* width + padding (not margin) */
+        float : left;
+        padding-left: 20px;
+        padding-right: 25px;
+        padding-top: 25px;
+        min-height:100%;
+        border-right : 1px dashed #999;
+  		voice-family : "\"}\""; 
+  		voice-family :inherit;
+  		width : 255px;
+	}
+	
+	
+	#colFiveContentContainer {
+		width : 290px; /* width + padding (not margin) */
+        float: left;
+        padding-top: 25px;
+        padding-left: 25px;
+  		voice-family : "\"}\""; 
+  		voice-family :inherit;
+		width : 265px; /* width + padding (not margin) */ 		
+	}
+    
+	.dummystyleforIE5fix {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+    
+	#colTwoContentContainer {
+		width : 191px; /* width + padding (not margin) */
+        float : left;
+        padding-right: 25px;
+        padding-top: 25px;
+        padding-left: 25px;
+        border-right : 1px dashed #999;
+
+  		voice-family : "\"}\""; 
+  		voice-family :inherit;
+  		width : 141px;
+
+	}
+    
+	.dummystyleforIE5fix {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+    
+	#colThreeContentContainer {
+		width : 196px; /* width + padding (not margin) */
+        float : left;
+        padding-top: 25px;
+        padding-left: 25px;
+  		voice-family : "\"}\""; 
+  		voice-family :inherit;
+  		width : 141px;
+
+	}
+    
+	.dummystyleforIE5fix {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+	
+	#sportsDropDown
+{
+	clear: right;
+	float: right;
+}
+	
+/* 2 column navigations */
+#navColLeft
+{
+	clear: left;
+	padding-right: 10px;
+	padding-left: 10px;
+	float: left;
+	padding-bottom: 0px;
+	width: 270px;
+	padding-top: 0px;
+  	voice-family : "\"}\""; 
+  	voice-family: inherit;	
+  	width: 250px;
+}
+#navColLeftw
+{
+	clear: left;
+	padding-right: 10px;
+	padding-left: 10px;
+	float: left;
+	padding-bottom: 0px;
+	width: 380px;
+	padding-top: 0px;
+	position: static;
+}
+
+#navColRight
+{
+	clear: right;
+	padding-right: 10px;
+	padding-left: 10px;
+	float: right;
+	padding-bottom: 0px;
+	width: 270px;
+	padding-top: 0px;
+  	voice-family : "\"}\""; 
+  	voice-family: inherit;	
+  	width: 250px;	
+}
+#navColRightw
+{
+	clear: right;
+	padding-right: 10px;
+	padding-left: 10px;
+	float: right;
+	padding-bottom: 0px;
+	width: 380px;
+	padding-top: 0px;
+	position: static;
+}
+	
+/* Footer styles */
+
+	
+	.dummystyleforIE5fix {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+	
+	#footer
+{
+	clear: both;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	font-weight: normal;
+	font-size: 9px;
+	float: left;
+	width: 770px;
+	font-style: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #eaeaea;
+	text-align:center;
+	font-variant: normal;
+  	font-style:normal; font-variant:normal; font-weight:normal; font-size:9px; font-family:Arial, Helvetica, sans-serif;
+  	voice-family : "\"}\""; 
+
+}
+
+	#footer a {
+		color : #000;
+		text-decoration : underline;
+	}
+	
+	#footer a:hover, #footer a:visited:hover {
+		color:#cc0000;
+		text-decoration : underline;
+	}

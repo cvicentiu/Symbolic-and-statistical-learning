@@ -1,0 +1,568 @@
+body {
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding: 0px;
+	background: #FFFFFF;
+	font-family: Helvetica, Arial, Sans-Serif;
+	font-size: 80%;
+}
+
+table,td,tr {
+font-size: inherit; 
+}
+
+h1, h2, h3, h4 {
+margin-right: 0px; 
+font-weight: bold; 
+line-height: 1em;
+}
+
+h1 {
+color: #CC0000; 
+font-size: 1.7em; 
+margin-left: 1px; 
+margin-top: 4px; 
+margin-bottom: 4px 
+}        
+
+h1.banner{
+    font-size: 1.25em;
+	text-align: left; 
+	color: #FFFFFF;
+	background-color: #CC0000; 
+	margin-bottom: 0em;
+	margin-left: 0em;
+	padding-left: 0.22em;
+	padding-top:0.35em;
+	padding-bottom:0px;
+}
+
+h1.Wbanner {
+    font-size: 1.25em;
+	text-align: left; 
+	color: #CC0000;
+	background-color: #FFFFFF; 
+    padding-left: 0em;	
+	padding-right: 0em;	
+	padding-top:0.55em;
+	padding-bottom:0px;
+	margin-left: 0em;
+	margin-right: 0em;
+	margin-bottom: 0em;
+}
+	
+h1.Tbanner{
+    font-size: 1.25em;
+	text-align: left; 
+	color: #CC0000;
+	background-color: #FFFFFF; 
+    margin-left: 6px;
+	margin-right: 0em;
+	margin-bottom: 0em;
+	padding-top:0em;
+	padding-bottom:0px;
+	padding-left: 0em;	
+	padding-right: 0em;	
+}
+
+h1.mbanner{
+    font-size: 1.25em;
+	text-align: left; 
+	color: #FFFFFF;
+	background-color: #CC0000; 
+	padding-left: 0.22em;
+	padding-top:0em;
+	padding-bottom:0px;
+	margin-bottom: 0em;
+	margin-left: 0em;
+}	
+     
+
+h2 {
+font-size: 1.4em; 
+color: #333333; 	
+font-weight: normal; 
+margin-left: 1px; 
+margin-top: 8px; 
+margin-bottom: 0px 
+}
+
+h3 { 
+font-size: 1.2em; 
+color: #666666; 
+margin-left: 9px; 
+margin-top: 8px; 
+margin-bottom: 0px 
+}
+
+h4 { 
+font-size: 1em;  
+text-align: left;
+color: #666666; 
+line-height: 1em; 
+margin-left: 10px;
+margin-top: 8px; 
+margin-bottom: 4px     
+}
+
+h5 { 
+font-family: Palatino, Times New Roman, Times, Serif;
+font-size: 1em; 
+text-align: left;  
+margin-left: 20px; 
+margin-right: 10px; 
+margin-top: 0px; 
+margin-bottom: 0px 
+} 
+
+
+
+/* -- Paragraph Text -- */
+
+p { 
+font-size: 1em;
+text-align: Justify; 
+color: #000000; 
+line-height: 1.3em;	
+margin-left: 10px;
+margin-right: 0px; 
+margin-top: 4px; 
+margin-bottom: 16px 
+}
+
+p.ltdwidth { 
+font-size: 1em;
+text-align: left; 
+color: #000000; 
+line-height: 1.3em;	
+margin-left: 10px;
+margin-right: 0px; 
+margin-top: 4px; 
+margin-bottom: 16px 
+}            
+
+
+p.indent { 
+font-size: 1em; 
+text-align: justify; 
+color: #000000; 
+line-height: 1.15em; 
+margin-left: 30px; 
+margin-right: 30px; 
+margin-top: 0px; 
+margin-bottom: 12px 
+}
+
+
+
+/* -- HTML Lists -- */			               
+ol { 
+text-align: Left;  
+ font-size: 1em;  
+line-height: 1.3em; 
+margin-top: 0px; 
+margin-bottom: 12px 
+}
+               
+ul { 
+text-align: Left;  
+font-size: 1em;
+line-height: 1.3em;
+margin-top: 0px; 
+margin-bottom: 12px 
+}
+
+dl { 			
+     font-size: 1em;
+     margin-left: 10px; 
+     line-height: 1.3em;
+}
+
+
+/* -- Various HTML Tags -- */               				
+hr { 
+	border-top: thin solid black; 	/* changed to border-top only */
+}
+
+a {
+font-weight: normal; 
+text-decoration: underline;
+} 
+
+a:link {color: #000099;} 
+a:hover {color: #FF9933; }
+a:visited {color: #CC0000;} 
+
+/* -- Custom Styles for different Navigation Types -- */ 
+
+.global{
+font-size: .9em; 
+margin-right: 5px;
+margin-left: 5px;  
+} 
+
+.currentlink{
+font-weight: bold; 
+text-decoration: none; 
+font-size: 1em; 
+line-height: 1.75em;
+margin-right: 5px;
+margin-left: 5px; 
+color: #000000; 
+margin-top: 0px; 
+margin-bottom: 0px 
+}
+
+
+.utility {
+font-size: .75em; 
+}
+
+.top {
+text-align: Left; 
+font-size: .75em; 
+line-height: 1.4em; 
+margin-left: 15px; 
+} 
+
+.linklist{
+line-height: 1.4em;
+list-style-type: none;
+}
+
+.ulinklist { 
+font-size: 1em; 
+line-height: 1.4em; 
+text-align: Left; 
+list-style-type: circle;
+margin-top: 0px; 
+margin-bottom: 16px 
+}
+
+.smallindentlist{
+line-height: 1.4em;
+list-style-type: none;
+padding-left: 5px; 
+margin-left: 5px; 
+}
+
+.internal {
+font-style: italic; 
+font-size: 1em; 
+line-height: 1.4em;
+margin-bottom: 0px 
+}
+
+/* -- Custom Tags for specific Formating -- */
+.subtitle {
+font-weight: normal; 
+color: #666666;
+} 
+
+.psmall 
+{
+  font-size: 0.9em;
+}
+
+.pageadmin {
+font-size: .75em; 
+text-align: center;
+line-height: 1.4em; 
+margin-left: 25px; 
+margin-right: 25px; 
+margin-top: 0px; 
+margin-bottom: 0px 
+} 
+					
+.abstract { 
+text-align: Justify; 
+line-height: 1.25em; 
+margin-left: 0px; 
+margin-right: 0px; 
+margin-top: 8px; 
+margin-bottom: 8px; 
+padding: 14px;
+border-width: 1px;
+border-style: solid;
+border-color: #aaaaaa;
+}
+
+.uow {
+font-size: 1.1em;
+font-weight:bold;
+color: #CC0000;
+text-align: center; 
+margin-left: 0px; 
+margin-right: 0px; 
+margin-top: 2px; 
+margin-bottom: 0px; 
+}
+
+.txttopnav {
+  border-top: 1px  solid #CC0000;
+  border-right: 1px solid #CC0000;
+  border-bottom: 1px solid #CC0000;
+  border-left: 1px solid #CC0000;
+  padding: 8px;
+  margin: 4px;
+}
+
+.imgcaption { 
+font-size: .75em; 
+font-weight: bold; 
+text-align: right; 
+border-bottom: thin solid #666666;
+color: #666666; 
+line-height: 1em; 
+margin-left: 10px; 
+margin-right: 8px; 
+margin-top: 0px; 
+margin-bottom: 1px 
+}
+
+/* -- Data Table styles-- */
+
+
+.datatable{
+font-family: Verdana, Helvetica, Arial,sans-serif;    /*special (verdana) case for datatables.*/
+border-bottom: thin solid #C0C0C0;
+border-top: thin solid #C0C0C0;
+font-size: 1em;
+text-align: center;
+margin-left: 10px;
+margin-right: 0px; 
+margin-bottom: 20px
+}
+
+.textualtable{
+font-size: .9em; 
+border-bottom: thin solid #C0C0C0;
+border-top: thin solid #C0C0C0;
+text-align: left;
+margin-right: 0px; 
+margin-bottom: 20px;
+}
+
+caption{
+color: #666666;
+font-weight: bold;
+text-align: left;
+}
+
+th {
+font-weight: bold;
+background-color: #E1E1E1;
+}
+
+.xref {
+font-size: 1.2em; 
+line-height: 1em; 
+font-weight: bold; 
+color: #CC0000;  
+border-top: thin solid #CC0000;
+padding: 5px 0px 5px 0px;
+margin-left: 0px; 
+margin-right: 0px; 
+margin-top: 20px; 
+margin-bottom: 0px 
+}  
+
+/*-- Copied from  uow2000emise.css --*/
+.formbutt {
+	font-size: 1em;
+	background: #cccccc;
+	color: #333333;
+	border-color: #660000;
+	}
+
+.form01 {
+	background: #CCCCCC;
+	padding: 7px 7px 7px 7px;
+	margin-left: 10px; 
+	margin-right: 10px; 
+	font-size: 1em;
+}
+
+.form02 {
+	font-size: 1em;
+}
+
+/*added gja for new templates  21/11/2003 */
+.pagefoot{
+border-width: 1px;
+border-style: solid;
+border-color: #CCCCCC;
+margin-left: 5px; 
+margin-right: 0px; 
+margin-top: 7px; 
+margin-bottom: 5px; 
+padding-top: 3px; 
+padding-bottom: 6px;
+padding-left: 3px;
+padding-right: 3px;
+}
+
+
+table.topnav{
+	background: #CC0000; 
+	height:28px;
+	padding-left:2px;
+}
+
+a.topnav, a.topnav:link, a.topnav:visited {
+	font-size: 0.7em;
+	line-height: 1.4em;		
+	font-family: Verdana, Helvetica, Arial, sans-serif; /*special case for white on red text*/
+	color:#FFFFFF;
+	background: #CC0000; 
+	font-weight:bold;	
+	text-decoration: none; 
+}
+
+a.topnav:hover{
+    color:#FFCC99;
+	background: #CC0000;
+	text-decoration: underline;
+}
+
+.fine{
+	font-size: .75em; 
+	color: #666666;
+}
+
+a.fine:link, a.fine:visited, a.fine:active{
+	text-decoration: none;
+	color: #666666;
+}
+
+a.fine:hover{
+	text-decoration: underline;
+	color: #CC0000;
+}
+
+table.topBanner{
+	height:45px;
+}
+	
+input.search{
+	color: #000000;
+	width: 100px;
+	background-color: #FFFFFF; 
+}
+	
+
+td.topnavtext {
+margin-top: 10px;
+padding-top: 10px;
+}
+
+a.topnavtext{
+font-size: 0.95em; 
+}
+
+.titlebar { /*for minimal template */
+	border-right: 1px solid #FFFFFF;
+	padding-right: 5px;
+	width:100px; 
+}
+
+.sidemenu {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin:0px;
+	margin-right:25px;
+	width: 170px;
+}
+	
+.sidemenu p{
+	text-align:left;
+	font-size: 0.9em;
+	padding-top:0px;
+	padding-left:7px;
+	padding-bottom:0px;
+	padding-right:0px;
+    margin-top: 0em; 
+    margin-bottom: 4px; 
+	margin-left:0px;
+	margin-right:0px;
+	}
+			
+p.sidemenutitle { 
+    font-size: 1.25em; 
+    color: #FFFFFF; 
+	background-color: #CC0000;
+    font-weight:bold;
+    text-align:left;
+	padding-top:1px;
+	padding-left:7px;
+	padding-bottom:1px;
+	padding-right:0px;
+    margin-top: 0em;
+    margin-bottom: 4px; 
+	margin-left:0px;
+	margin-right:5px;
+}
+
+.highlightmenu {
+	padding-left: 6px;
+	padding-right: 6px; 
+	background-color: #FF9900;
+}
+
+.highlightmenutitle {
+	font-weight: bold; 
+	Letter-spacing: 10px;
+}
+
+.highlightmenutxt, .highlightmenu a:link, .highlightmenu a:visited, .highlightmenu a:active{
+	font-size: .8em;
+	color: #000000;
+	background-color: #FF9900; 
+}
+
+a.highlightmenutxt:link, a.highlightmenutxt:visited, a.highlightmenutxt:active, .highlightmenu a:link, .highlightmenu a:visited, .highlightmenu a:active{
+	text-decoration: none;
+	color: #000000;
+	background-color: #FF9900; 
+}
+
+a.highlightmenutxt:hover, .highlightmenu a:hover{
+	color: #000000;
+	background-color: #FF9900; 
+	text-decoration: underline;
+}
+
+/*highlightmenuList */	
+.highlightmenuList { 
+	padding-left: 6px;
+	padding-right: 6px;
+	background-color: #FFCC99;
+}
+
+.highlightmenuListtxt, .highlightmenuList a:link, .highlightmenuList a:visited, .highlightmenuList a:active{
+	font-size: .8em;
+}
+
+a.highlightmenuListtxt:link, a.highlightmenuListtxt:visited, a.highlightmenuListtxt:active, .highlightmenuList a:link, .highlightmenuList a:visited, .highlightmenuList a:active{
+	text-decoration: none;
+	color: #000000;
+	background-color: #FFCC99; 
+}
+
+a.highlightmenuListtxt:hover,  .highlightmenuList a:hover{
+	color: #000000;
+	background-color: #FFCC99; 
+	text-decoration: underline;
+}	
+
+ .mainbody{
+        margin-left: 10px;
+        margin-right: 20px;
+		padding:0px;
+}  
+
+.printerOnly /*used to mask out items that should only be seen when printing.*/
+	{display:none;}   

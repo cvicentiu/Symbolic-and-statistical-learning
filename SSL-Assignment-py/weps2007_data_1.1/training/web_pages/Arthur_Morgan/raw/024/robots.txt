@@ -1,0 +1,20 @@
+# Prevent Indexing of the following directories by any web spiders
+User-agent: *
+Disallow: /Admin
+Disallow: /Edit
+Disallow: /EventRegistration
+Disallow: /Includes
+Disallow: /Ranking
+Disallow: /Reports
+Disallow: /CM/Approve
+Disallow: /CM/ContentTemplates
+Disallow: /CM/Rules
+Disallow: /CM/Upload
+Disallow: /CM/UploadedImages
+Disallow: /CM/SecuredContent
+Disallow: /FSL5CS/Approve
+Disallow: /FSL5CS/ContentTemplates
+Disallow: /FSL5CS/Rules
+Disallow: /FSL5CS/Upload
+Disallow: /FSL5CS/UploadedImages
+Disallow: /FSL5CS/SecuredContent

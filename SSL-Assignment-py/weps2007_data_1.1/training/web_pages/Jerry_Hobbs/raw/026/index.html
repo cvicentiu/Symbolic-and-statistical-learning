@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>DARPA Agent Markup Language (DAML)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="Keywords" content="" />
+<meta name="copyright" content="SRI International" />
+<meta name="Description" content="" />
+<link href="screen.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="print.css" media="print" rel="stylesheet" type="text/css" />
+
+<script language="JavaScript" type="text/javascript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+
+</head>
+<body onload="MM_preloadImages('/images/tnav_about_f2.gif','/images/tnav_rnd_f2.gif','/images/tnav_careers_f2.gif','/images/tnav_newsroom_f2.gif','/images/tnav_contact_f2.gif','/images/tnav_home_f2.gif')">
+<table border="0" cellspacing="0" cellpadding="0" summary="page holder" width="100%">
+
+<tr valign="top">
+
+  <td rowspan="2" class="dkbluebg" width="175">
+  <span class="noprint"><a href="http://www.sri.com/"><img src="logo_sri.gif" alt="SRI Logo" width="175" height="94" /></a></span>
+  <table border="0" cellpadding="0" cellspacing="0" class="dkbluebg" summary="Secondary Navigation">
+<tr valign="top"><td colspan="2" class="h-dotline-blue"></td></tr>
+<tr><td class="lnavdark" width="15">&nbsp;</td><td width="160" class="lnavdark"><a href="http://www.csl.sri.com/">Computer Science Laboratory</a></td></tr><tr><td colspan="2" class="h-dotline-blue"></td></tr>
+<tr><td class="lnavmed">&nbsp;&nbsp;</td><td class="lnavmed"><a href="http://www.csl.sri.com/contact/">Contact</a></td></tr><tr><td colspan="2" class="h-dotline-blue"></td></tr>
+<tr><td class="lnavmed"><img src="btn_plus.gif" alt="+" width="17" height="12" /></td><td class="lnavmed"><a href="http://www.csl.sri.com/people/">People at CSL</a></td></tr><tr><td colspan="2" class="h-dotline-blue"></td></tr>
+<tr><td class="lnavmed"><img src="btn_minus.gif" alt="-" width="17" height="12" /></td><td class="lnavmed"><a href="http://www.csl.sri.com/projects/">Projects at CSL</a></td></tr><tr><td colspan="2" class="h-dotline-blue"></td></tr>
+<tr><td class="lnavlite">&nbsp;-</td><td class="lnavlite"><a href="http://www.csl.sri.com/projects/activate/">Active Networks Test Environment (ACTIVATE)</a></td></tr>
+<tr><td class="lnavlite">&nbsp;-</td><td class="lnavlite"><a href="http://www.csl.sri.com/projects/ancors/">Adaptable Network Control and Reporting System (ANCORS)</a></td></tr>
+<tr><td class="lnavlite">&nbsp;-</td><td class="lnavlite"><a href="http://www.csl.sri.com/projects/agile/">Agile Management of Dynamic Collaboration</a></td></tr>
+<tr><td class="lnavlite">&nbsp;-</td><td class="lnavlite"><a href="http://www.csl.sri.com/projects/artifactory/">Artifactory</a></td></tr>
+<tr><td class="lnavlite">&nbsp;-</td><td class="lnavlite"><a href="http://www.csl.sri.com/projects/ants/">Autonomous Negotiating Teams (ANT)</a></td></tr>
+<tr><td class="lnavlite">&nbsp;-</td><td class="lnavlite"><a href="http://www.csl.sri.com/projects/bioinformatics/">Bio Informatics</a></td></tr>
+<tr><td class="lnavlite">&nbsp;-</td><td class="lnavlite"><a href="http://www.csl.sri.com/projects/capsl/">Common Authentication Protocol Specification Language (CAPSL)</a></td></tr>
+<tr><td class="lnavlite">&nbsp;-</td><td class="lnavlite"><a href="http://www.csl.sri.com/projects/cara/">Compositional Abstraction and Refinement for Aspects (CARA)</a></td></tr>
+<tr><td class="lnavlite">&nbsp;-</td><td class="lnavlite"><a href="http://www.csl.sri.com/projects/cyber-ta/">Cyber-Threat Analytics (Cyber-TA)</a></td></tr>
+<tr><td class="lnavgold">&nbsp;-</td><td class="lnavgold"><a href="index.html">DARPA Agent Markup Language (DAML)</a></td></tr>
+<tr><td class="lnavlite">&nbsp;-</td><td class="lnavlite"><a href="http://www.csl.sri.com/projects/dit/">Dependable Intrusion Tolerance (DIT)</a></td></tr>
+<tr><td class="lnavlite">&nbsp;-</td><td class="lnavlite"><a href="http://www.csl.sri.com/projects/dasada/">Dynamic Dependability Gauges (DASADA)</a></td></tr>
+<tr><td class="lnavlite">&nbsp;-</td><td class="lnavlite"><a href="http://www.csl.sri.com/projects/ebayes/">eBayes</a></td></tr>
+<tr><td class="lnavlite">&nbsp;-</td><td class="lnavlite"><a href="http://www.csl.sri.com/projects/enclaves/">Enclaves</a></td></tr>
+<tr><td class="lnavlite">&nbsp;-</td><td class="lnavlite"><a href="http://www.csl.sri.com/projects/emist/">Evaluation Methods for Internet Security Technology (EMIST)</a></td></tr>
+<tr><td class="lnavlite">&nbsp;-</td><td class="lnavlite"><a href="http://www.csl.sri.com/projects/emerald/">Event Monitoring Enabling Responses to Anomalous Live Disturbances (EMERALD)</a></td></tr>
+<tr><td class="lnavlite">&nbsp;-</td><td class="lnavlite"><a href="http://www.csl.sri.com/projects/mobies/">Formal Composition Technology for Time-Triggered Systems</a></td></tr>
+<tr><td class="lnavlite">&nbsp;-</td><td class="lnavlite"><a href="http://www.csl.sri.com/projects/cyberscience/">Genesis of Cyberscience</a></td></tr>
+<tr><td class="lnavlite">&nbsp;-</td><td class="lnavlite"><a href="http://www.csl.sri.com/projects/ics/">Integrated Canonizer and Solver (ICS)</a></td></tr>
+<tr><td class="lnavlite">&nbsp;-</td><td class="lnavlite"><a href="http://www.csl.sri.com/projects/nestsec/">Intrusion Tolerance for NEST</a></td></tr>
+<tr><td class="lnavlite">&nbsp;-</td><td class="lnavlite"><a href="http://www.csl.sri.com/projects/itarch/">Intrusion Tolerant Architectures</a></td></tr>
+<tr><td class="lnavlite">&nbsp;-</td><td class="lnavlite"><a href="http://www.csl.sri.com/projects/maude/">Maude</a></td></tr>
+<tr><td class="lnavlite">&nbsp;-</td><td class="lnavlite"><a href="http://www.csl.sri.com/projects/mobile-maude/">Mobile Maude</a></td></tr>
+<tr><td class="lnavlite">&nbsp;-</td><td class="lnavlite"><a href="http://www.csl.sri.com/projects/molectronics/">Molecular Electronics</a></td></tr>
+<tr><td class="lnavlite">&nbsp;-</td><td class="lnavlite"><a href="http://www.csl.sri.com/projects/nest/">Network Embedded Systems Technology (NEST)</a></td></tr>
+<tr><td class="lnavlite">&nbsp;-</td><td class="lnavlite"><a href="http://www.csl.sri.com/projects/xg/">Next Generation (XG)</a></td></tr>
+<tr><td class="lnavlite">&nbsp;-</td><td class="lnavlite"><a href="http://www.csl.sri.com/projects/nides/">Next-Generation Intrusion Detection Expert System (NIDES)</a></td></tr>
+<tr><td class="lnavlite">&nbsp;-</td><td class="lnavlite"><a href="http://www.csl.sri.com/projects/ohs/">Open Hyperdocument System (OHS)</a></td></tr>
+<tr><td class="lnavlite">&nbsp;-</td><td class="lnavlite"><a href="http://www.csl.sri.com/projects/pathwaylogic/">Pathway Logic</a></td></tr>
+<tr><td class="lnavlite">&nbsp;-</td><td class="lnavlite"><a href="http://www.csl.sri.com/projects/pvs/">Prototype Verification System (PVS)</a></td></tr>
+<tr><td class="lnavlite">&nbsp;-</td><td class="lnavlite"><a href="http://www.csl.sri.com/projects/pki/">Public Key Infrastructure (PKI)</a></td></tr>
+<tr><td class="lnavlite">&nbsp;-</td><td class="lnavlite"><a href="http://www.csl.sri.com/projects/saw/">Secure Access Wrapper (SAW)</a></td></tr>
+<tr><td class="lnavlite">&nbsp;-</td><td class="lnavlite"><a href="http://www.csl.sri.com/projects/sal/">Symbolic Analysis Laboratory (SAL)</a></td></tr>
+<tr><td class="lnavlite">&nbsp;-</td><td class="lnavlite"><a href="http://www.csl.sri.com/projects/tihi/">Trusted Interoperation of Healthcare Information (TIHI)</a></td></tr>
+<tr><td class="lnavlite">&nbsp;-</td><td class="lnavlite"><a href="http://www.csl.sri.com/projects/tihad/">Trusted Interoperation of Heterogeneous Autonomous Databases</a></td></tr>
+<tr><td class="lnavlite">&nbsp;-</td><td class="lnavlite"><a href="http://www.csl.sri.com/projects/ultralog/">Ultra Log</a></td></tr>
+<tr><td class="lnavmed"><img src="btn_plus.gif" alt="+" width="17" height="12" /></td><td class="lnavmed"><a href="http://www.csl.sri.com/programs/">Research Programs</a></td></tr><tr><td colspan="2" class="h-dotline-blue"></td></tr>
+<tr><td class="lnavdark" width="15">&nbsp;</td><td width="160" class="lnavdark"><a href="http://www.sri.com/icsd/">Division Home</a></td></tr><tr><td colspan="2" class="h-dotline-blue"></td></tr>
+</table>
+  </td>
+
+  <td width="100%" height="30" valign="top" class="dkbluebg">
+<span class="noprint"><img src="spacer.gif" alt="" width="20" height="31" border="0" /><a href="http://www.sri.com/about" onmouseover="MM_swapImage('about','','/images/tnav_about_f2.gif',1)" onmouseout="MM_swapImgRestore()"><img src="tnav_about.gif" alt="About Us" name="about" width="48" height="31" border="0" id="about" /></a><img src="tnav_divider.gif" alt="|" width="15" height="31" /><a href="http://www.sri.com/rd" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('RnD','','/images/tnav_rnd_f2.gif',1)"><img src="tnav_rnd.gif" alt="R and D Divisions" name="RnD" width="71" height="31" border="0" id="RnD" /></a><img src="tnav_divider.gif" alt="|" width="15" height="31" /><a href="http://www.sri.com/jobs" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('careers','','/images/tnav_careers_f2.gif',1)"><img src="tnav_careers.gif" alt="Careers" name="careers" width="41" height="31" border="0" id="careers" /></a><img src="tnav_divider.gif" alt="|" width="15" height="31" /><a href="http://www.sri.com/news" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('newsroom','','/images/tnav_newsroom_f2.gif',1)"><img src="tnav_newsroom.gif" alt="Newsroom" name="newsroom" width="57" height="31" border="0" id="newsroom" /></a><img src="tnav_divider.gif" alt="|" width="15" height="31" /><a href="http://www.sri.com/contact" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('contact','','/images/tnav_contact_f2.gif',1)"><img src="tnav_contact.gif" alt="Contact Us" name="contact" width="57" height="31" border="0" id="contact" /></a><img src="tnav_divider.gif" alt="|" width="15" height="31" /><a href="http://www.sri.com/" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('home','','/images/tnav_home_f2.gif',1)"><img src="tnav_home.gif" alt="SRI Home" name="home" width="29" height="31" border="0" id="home" /></a><img src="spacer.gif" alt="" width="20" height="31" /></span></td>
+<td class="dkbluebg" valign="middle" align="right"><table cellspacing="0" cellpadding="0" border="0" summary="searchbox holder" class="noprint"><tr valign="middle"><td>
+
+<form name="seek" method="get" action="http://search-ext.sri.com/search" style="margin-bottom: 0">
+    <input value="date:D:L:d1" name="sort" type="hidden">
+    <input value="xml_no_dtd" name="output" type="hidden">
+
+    <input value="default_collection" name="site" type="hidden">
+    <input value="UTF-8" name="ie" type="hidden">
+    <input value="UTF-8" name="oe" type="hidden">
+    <input value="default_frontend" name="client" type="hidden">
+    <input value="default_frontend" name="proxystylesheet" type="hidden">
+ <table cellspacing="0" cellpadding="0" border="0" summary="searchbox" class="noprint"><tr valign="middle"><td><p style="margin-top: 1px; margin-bottom: 1px;"><input type="text" name="q" size="12" maxlength="100" value="" id="q"></p></td><td><img src="spacer.gif" alt="Spacer" height="1" width="5"></td><td><label for="q">
+<input name="btnG" type="image" src="btn_search.gif" alt="Search" align="middle" width="53" height="20" border="0" >
+</label></td>
+        
+</tr></table></form>
+
+</td>
+</tr>
+</table>
+</td>
+
+
+</tr>
+
+<tr valign="top">
+
+  <td colspan="2">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" summary="main text">
+<tr><td width="20">&nbsp;</td><td>&nbsp;</td><td width="30">&nbsp;</td><td>&nbsp;</td><td width="20">&nbsp;</td></tr>
+<tr valign="top"><td>&nbsp;</td>
+
+<td colspan="3">
+<span class="printonly"><img src="sri_sm.gif" alt="SRI Logo" width="100" height="75" /><br /><br /></span>
+<span class="title1b">DARPA Agent Markup Language (DAML)</span><br />
+<p>The goal of the DAML program is to create technologies that 
+will enable software agents to dynamically identify and understand
+information sources, and to provide interoperability between agents 
+in a semantic manner.</p>
+
+<p>This goal will be pursued by creating an Agent Markup Language built
+upon XML that allows users to provide machine-readable semantic
+annotations for specific communities of interest.</p>
+
+<p>These tools embed DAML markup on to web pages and other information
+sources in a manner that is transparent and beneficial to the users. 
+These tools will be used to build up, instantiate, operate, and test sets of
+agent-based programs that markup and use DAML.</p>
+ 
+<p>For more information, visit the <A href="http://www.ai.sri.com/~daml">DAML home page</a>.</p><span class="title2">Principal Investigator: </span>
+<ul><li><A HREF="http://www.ai.sri.com/~hobbs">Dr. Jerry Hobbs</A></li>
+</ul>
+<span class="title2">Staff Members: </span>
+<ul>
+<li><a href="http://www.csl.sri.com/people/denker/">Dr. Grit Denker</a></le>
+<li><a href="http://www.csl.sri.com/people/lincoln/">Dr. Patrick Lincoln</a></le>
+</ul>
+<span class="title2">Papers:</span><br />
+<ul>
+<!-- 0 -->
+<!-- is enabled -->
+<li><a href="http://www.csl.sri.com/papers/denkeretal01/">Accessing Information and Services on the DAML-Enabled Web&nbsp;&nbsp;(2001)</a></li>
+<!-- 1 -->
+<!-- is enabled -->
+<li><a href="http://www.csl.sri.com/papers/dasada-paper/">Dependability Gauges for Dynamic Systems&nbsp;&nbsp;(2001)</a></li>
+</ul>
+</td>
+
+
+<td>&nbsp;</td></tr></table>
+<br /><br /><br /><br />
+<br /><br /><br /><br />
+<br /><br /><br /><br />
+<br />
+<p>&nbsp;</p>
+<p class="footnote">
+<a href="http://www.sri.com/about">About Us</a>&nbsp;&nbsp;<img src="v-dotline-bot.gif" alt="|" />&nbsp;
+<a href="http://www.sri.com/rd">R&amp;D Divisions</a>&nbsp;&nbsp;<img src="v-dotline-bot.gif" alt="|" />&nbsp;
+<a href="http://www.sri.com/jobs">Careers</a>&nbsp;&nbsp;<img src="v-dotline-bot.gif" alt="|" />&nbsp;
+<a href="http://www.sri.com/news">Newsroom</a>&nbsp;&nbsp;<img src="v-dotline-bot.gif" alt="|" />&nbsp;
+<a href="http://www.sri.com/contact">Contact Us</a><br />
+<span class="footnote">
+&copy;
+
+2007 SRI International 333 Ravenswood Avenue, Menlo Park, CA 94025-3493<br />
+SRI International is an independent, nonprofit corporation. <span class="bnav"><a href="http://www.sri.com/privacy.html">Privacy policy</a>
+</span>
+</span>
+</p>
+<p>&nbsp;</p>
+<br /><br /><br /><br />
+<br /><br /><br /><br />
+<br /><br /><br /><br />
+<br /><br /><br /><br />
+<br /><br /><br /><br />
+
+  </td>
+
+</tr>
+
+</table>
+
+
+
+
+</body>
+</html>
+
+
+<!-- runtime 0.531686067581 seconds -->
+

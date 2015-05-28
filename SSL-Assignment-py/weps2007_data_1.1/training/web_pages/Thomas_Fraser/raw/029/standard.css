@@ -1,0 +1,83 @@
+/*
+Shetland Music style sheet controls
+Author:   Nick Tatt
+Version:  3 January 2006
+----------------------------------------------- */
+
+/* Imported styles
+----------------------------------------------- 
+@import url("main.css");*/
+@import url("mainfluid.css");
+
+
+/* IE5/Mac only styles
+   Uses the IE5/Mac Band Pass Filter:
+----------------------------------------------- */
+/*\*//*/
+  @import "ie5mac.css";
+/**/
+
+/* IE5/Win Only Styles
+   Uses the Mid Pass Filter:
+   http://tantek.com/CSS/Examples/midpass.html
+----------------------------------------------- */
+@media tty {
+ i{content:"\";/*" "*/}} @import 'ie5win.css'; /*";}
+}/* */
+
+
+table {
+	border-collapse: collapse;
+	font-size: x-small;
+  	voice-family: "\"}\""; 
+  	voice-family:inherit;
+  	font-size: small;
+}
+
+#sd-col table {
+	margin: 0 0 0 0;
+}
+
+#general table.blog {
+	background: url(/assets/i/bgwelcome.gif) no-repeat top left;
+	margin: 10px;
+	padding: 10px 10px 0 50px;
+}
+
+table.blog .contentheading {
+	text-indent: -9999px;
+}
+
+table.blog .contentpaneopen {
+	margin: 0 0 0 30px;
+}
+
+#nrp table.blog .contentheading {
+	text-indent: 0;
+	font-size: 100%;
+}
+
+#nrp table.blog .contentpaneopen {
+	margin: 0 0 0 26px;
+}
+
+#nrp table.blog small, .createdate, .contentcategory {
+	color: #999;
+}
+
+.contentpaneopen, .blog_more {
+	clear: both;
+	margin: 0 0 12px 28px;
+}
+
+.sectiontableentry1 td,
+.sectiontableentry2 td {
+	clear: both;
+	padding: 0 0 0 28px;	
+	font-weight: bold;
+}
+
+.contentdescription p {
+	padding: 0 0 0 28px;
+}
+

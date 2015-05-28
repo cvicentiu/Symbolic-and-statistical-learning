@@ -1,0 +1,55 @@
+###############################################################################################
+#                   robots.txt for http://www.bestfriends.org                                 #
+#                                                                                             #
+#  This file excludes the value under the Disallow field from search by the webbots           #
+#  The value in the User-agent field indicates that this rule applies to all webbots          #
+###############################################################################################
+#           File created and maintained for the Best Friends web server by                    #
+#           Victor Gutschalk, Web Engineer, Best Friends Animal Sanctuary                     #
+#                              Uploaded  12/23/2002                                           #
+###############################################################################################
+#   Date        |        Update                              |    Technician                  #
+#---------------------------------------------------------------------------------------------#
+# 11/04/2003    |    Added \cgi-bin                          |    Victor Gutschalk            #
+#---------------------------------------------------------------------------------------------#
+# 05/09/2004    |    Added \members                          |    Victor Gutschalk            #
+#---------------------------------------------------------------------------------------------#
+# 05/09/2004    |    Added \theanimals\angelsrestmemorials   |    Victor Gutschalk            #
+#---------------------------------------------------------------------------------------------#
+# 05/09/2004    |    Added \memorials                        |    Victor Gutschalk            #
+#---------------------------------------------------------------------------------------------#
+# 07/25/2005    | Edited File to add user-agent to           |    Victor Gutschalk            #
+#               | all  file entries                          |                                #     
+#---------------------------------------------------------------------------------------------#
+# 03/28/2006    |Added rule to specifically exclude googlebot|    Victor Gutschalk            #
+#---------------------------------------------------------------------------------------------#
+#               |                                            |                                #
+#---------------------------------------------------------------------------------------------#
+#               |                                            |                                #
+#---------------------------------------------------------------------------------------------#
+#               |                                            |                                #
+#---------------------------------------------------------------------------------------------#
+###############################################################################################
+
+User-agent: Googlebot		   
+Disallow: /cgi-bin/
+Disallow: /members/	   
+Disallow: /theanimals/angelsrestmemorials/	   
+Disallow: /memorials/	
+ # <Googlebot> Indicates that this rule applies specifically to Google
+ # Disallows searches of the root </cgi-bin> directory - added 11/04/2003
+ # Disallows searches of the entire </members> directory - added 05/09/2004
+ # Disallows searches of the entire </theanimals/angelsrestmemorials> directory - added 05/09/2004
+ # Disallows searches of the entire </memorials> directory - added 05/09/2004 - edited 07/25/2005
+
+User-agent: *		   
+Disallow: /cgi-bin/
+Disallow: /members/	   
+Disallow: /theanimals/angelsrestmemorials/	   
+Disallow: /memorials/	   
+ # <*> Indicates that this rule applies to all webbots
+ # Disallows searches of the root </cgi-bin> directory - added 11/04/2003
+ # Disallows searches of the entire </members> directory - added 05/09/2004
+ # Disallows searches of the entire </theanimals/angelsrestmemorials> directory - added 05/09/2004
+ # Disallows searches of the entire </memorials> directory - added 05/09/2004 - edited 07/25/2005
+ 

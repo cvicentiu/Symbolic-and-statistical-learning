@@ -1,0 +1,22 @@
+# robots.txt for http://www.fhcrc.org/
+User-agent: fhcrc-googleappliance
+Disallow: /intranet/it/sops/itprof/reports/
+Disallow: /intranet/it/vox/itprof/reports/monitoring/nodewatch/
+Disallow: /intranet/it/vox/itprof/reports/monitoring/porter_report/
+Disallow: /intranet/it/vox/itprof/services/physical/ups/
+Disallow: /intranet/it/vox/itprof/services/physical/packet_gear/
+Disallow: /intranet/it/vox/itprof/services/remoteaccess/trouble/vpn_log/
+Disallow: /intranet/it/vox/itprof/services/remoteaccess/trouble/dialin_log/
+Disallow: /intranet/internet_services/admin_tools/
+	
+User-agent: *
+Disallow: /intranet
+Disallow: /about/pubs/center_news/1995/
+Disallow: /about/pubs/center_news/1996/
+Disallow: /about/pubs/center_news/1997/
+Disallow: /about/pubs/center_news/1998/
+Disallow: /about/pubs/center_news/1999/
+Disallow: /about/pubs/center_news/2000/
+Disallow: /util/
+Disallow: &&
+Disallow: printfriendly

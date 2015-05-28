@@ -1,0 +1,650 @@
+body {
+	background-image: url(../img/bg.gif);
+	margin-left: 0px;
+	margin-top: 0px;
+	background-repeat: repeat-x;
+}
+
+#navcontainer {
+	width: 100%;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+}
+
+#navcontainer ul
+{
+	list-style-type: none;
+	font-family: arial;
+	font-size: 11px;
+	width: 100%;
+	color: #282817;
+	font-weight: bold;
+	margin: 0;
+	padding: 0px;
+
+}
+
+#navcontainer a
+{
+	display: block;
+	padding: 1px;
+	width: 100%;
+	background-color: #999999;
+	border-bottom: 1px solid #2C0111;
+	text-decoration: none;
+	height: 20px;
+	text-align: left;
+	text-indent: 5px;
+	border-top-width: 0px;
+	border-top-style: none;
+}
+
+#navcontainer a:link, a:visited
+{
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: normal;
+	font-family: arial;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+#navcontainer a:hover
+{
+	background-color: #000000;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #FFCC00;
+}
+.featured_heading {
+	font-family: "trebuchet ms";
+	font-size: 22px;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-indent: 15px;
+}
+.artist_header {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #000000;
+	text-indent: 5px;
+}
+.featured_text {
+	font-family: tahoma;
+	font-size: 11px;
+	color: #000000;
+}
+.featured_heading_black {
+
+	font-family: "trebuchet ms";
+	font-size: 18px;
+	font-weight: normal;
+	color: #000000;
+	text-indent: 15px;
+}
+
+a.mediumBlackLink:link {
+	font-family: "trebuchet ms";
+	font-size: 14px;
+	font-weight: bold;
+	color: #000000;
+	text-indent: 5px;
+	line-height: 29px;
+}
+a.mediumBlackLink:visited {
+	font-family: "trebuchet ms";
+	font-size: 14px;
+	font-weight: bold;
+	color: #000000;
+	text-indent: 5px;
+	line-height: 29px;
+}
+a.mediumBlackLink:hover {
+	font-family: "trebuchet ms";
+	font-size: 14px;
+	font-weight: bold;
+	color: #cccccc;
+	text-indent: 5px;
+	line-height: 29px;
+}
+
+a.topnav:link {
+	font-family: tahoma;
+	font-size: 11px;
+	color: #000000;
+	text-decoration: none;
+	font-weight: bold;
+}
+a.topnav:visited {
+	font-family: tahoma;
+	font-size: 11px;
+	color: #000000;
+	text-decoration: none;
+	font-weight: bold;
+}
+a.topnav:hover {
+	font-family: tahoma;
+	font-size: 11px;
+	color: #FF6600;
+	text-decoration: none;
+}
+a.profile:link {
+	font-family: arial;
+	font-size: 11px;
+	color: #CC3300;
+	text-decoration: none;
+}
+a.profile:visited {
+	font-family: arial;
+	font-size: 11px;
+	color: #CC3300;
+	text-decoration: none;
+}
+a.profile:hover {
+	font-family: arial;
+	font-size: 11px;
+	color: #000000;
+	text-decoration: none;
+}
+.toptentracks {
+	font-family: arial;
+	font-size: 12px;
+	font-weight: bold;
+	background-image: url(../img/right_column_bg.gif);
+	text-indent: 25px;
+}
+.toptenname {
+	font-family: tahoma;
+	font-size: 11px;
+	color: #000000;
+	background-color: #CCCCCC;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #FFCC00;
+}
+.toptenlisten {
+	font-family: tahoma;
+	font-size: 11px;
+	color: #000000;
+	background-color: #CCCCCC;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #FFCC00;
+}
+.toptenbuy {
+
+	font-family: tahoma;
+	font-size: 11px;
+	color: #000000;
+	background-color: #999999;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #FFCC00;
+}
+
+a.topten:link {
+	font-family: tahoma;
+	font-size: 11px;
+	color: #000000;
+	text-decoration: none;
+}
+a.topten:visited {
+	font-family: tahoma;
+	font-size: 11px;
+	color: #000000;
+	text-decoration: none;
+}
+a.topten:hover {
+	font-family: tahoma;
+	font-size: 11px;
+	color: #FF6600;
+	text-decoration: none;
+	}
+	
+a.innerpages:link {
+	font-family: tahoma;
+	font-size: 11px;
+	color: #FF6600;
+	text-decoration: none;
+}
+a.innerpages:visited {
+	font-family: tahoma;
+	font-size: 11px;
+	color: #FF6600;
+	text-decoration: none;
+}
+a.innerpages:hover {
+	font-family: tahoma;
+	font-size: 11px;
+	color: #000000;
+	text-decoration: none;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #000000;
+	
+}.boxes_bottom {
+	font-family: "trebuchet ms";
+	font-size: 18px;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-indent: 5px;
+	line-height: 29px;
+}
+.box_news {
+	background: url(../img/boxes.jpg) no-repeat;
+	height: 150px;
+	width: 236px;
+}
+
+.input {
+	font-family: tahoma;
+	font-size: 11px;
+	color: #333333;
+	background-image: url(../img/bg_login.gif);
+	height: 18px;
+	border: 1px #999999;
+}
+.copy {
+	font-family: tahoma;
+	font-size: 9px;
+	color: #666666;
+}
+.td_bottom {
+	background-image: url(../img/bottom_feature_bg.gif);
+	background-repeat: no-repeat;
+	display: block;
+	height: 95px;
+	font-family: "trebuchet ms";
+	font-size: 18px;
+	font-weight: normal;
+	color: #000000;
+	text-indent: 10px;
+	text-align: right;
+}
+.td_top {
+	background-image: url(../img/top_feature_bg.gif);
+	background-repeat: no-repeat;
+	display: block;
+	height: 34px;
+	font-family: rockwell;
+	font-size: 22px;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-indent: 15px;
+	width: 496px;
+	padding: 10px 0px 0px;
+	margin: 0px;
+	letter-spacing: 2px;
+}
+
+.toptentracksbottom {
+
+	font-family: arial;
+	font-size: 12px;
+	font-weight: bold;
+	background-image: url(../img/right_column_bottom_bg.gif);
+	text-indent: -25px;
+}
+.artist_name {
+	font-family: arial;
+	font-size: 12px;
+	font-weight: bold;
+	color: #333333;
+	text-indent: 10px;
+}
+.total_tracks_videos {
+	font-family: arial;
+	font-size: 11px;
+	color: #CC3300;
+	text-align: right;
+}
+.td_line {
+	margin: 0px;
+	padding: 0px;
+	height: 2px;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #000000;
+}
+.total_tracks_videos_number {
+	font-family: arial;
+	font-size: 13px;
+	color: #CC3300;
+	text-align: right;
+	font-weight: bold;
+}
+.otherssay {
+	font-family: tahoma;
+	font-size: 11px;
+	color: #000000;
+	background-color: #F0F0F0;
+	border-bottom-width: 1px;
+	border-bottom-color: #CCCCCC;
+	border-bottom-style: dotted;
+}
+.editorsheading {
+	font-family: arial;
+	font-size: 12px;
+	font-weight: bold;
+	text-indent: 25px;
+	background-color: #000000;
+	color: #FFFFFF;
+	height: 20px;
+	padding-top: 2px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 2px;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #FFCC00;
+}
+.featuredbg {
+	background-image: url(images/featured_artists_bg.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	display: block;
+}
+.td_feature_home {
+	background-image: url(../img/featured_artists_bg.jpg);
+	background-repeat: no-repeat;
+	display: block;
+	height: 470px;
+	width: 497px;
+}
+.td_bottom_right_clmn {
+	font-family: "trebuchet ms";
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	text-indent: 5px;
+	text-align: right;
+	background-color: #666666;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #FFCC00;
+}
+
+.audiolayer {
+	z-index: 1;
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	width: 488px;
+	padding: 5px;
+	left: 265px;
+	top: 240px;
+	height: 254px;
+	visibility: hidden;
+}
+
+.videolayer {
+	z-index: 1;
+	position: absolute;
+	right: 10px;
+	bottom: 150px;
+	width: 488px;
+	padding: 5px;
+	left: 200px;
+	top: 240px;
+	height: 254px;
+	visibility: visible;
+}
+
+.profile {
+	z-index: 1;
+	padding: 5px;
+	font-family: arial;
+	font-size: 11px;
+	color: #CC3300;
+}
+
+.tabs {
+position:absolute; 
+bottom:143px; 
+right:203px; 
+width:199px; 
+left: 265px;
+top: 216px;
+height: 23px;
+z-index:2
+
+}
+.heading2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	color: #343434;
+	padding: 10px;
+}
+.regular_text {
+	font-family: tahoma;
+	font-size: 11px;
+	line-height: 17px;
+	color: #000000;
+	text-indent: 1px;
+}
+.img_floatleft {
+	margin: 2px;
+	padding: 3px;
+	float: left;
+}
+
+.img_floatright {
+	margin: 2px;
+	padding: 3px;
+	float: right;
+}
+.qmarkk {
+	background-image: url(../img/qmarkk.gif);
+	background-repeat: no-repeat;
+	background-position: 250px;
+	height: 125px;
+}
+.world {
+	background-image: url(../img/world.gif);
+	background-repeat: no-repeat;
+	background-position: 250px;
+	height: 125px;
+}
+.img_floatleft_middle {
+	margin: 2px;
+	padding: 3px;
+	float: left;
+	background-position: center center;
+}
+.editors_corner_headings {
+	font-family: "trebuchet ms";
+	font-size: 22px;
+	font-weight: bold;
+	color: #FF6600;
+	background-image: url(../img/editors.gif);
+	background-repeat: no-repeat;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #E6E6E6;
+	padding-top: 15px;
+	height: 100px;
+}
+.editors_corner_headings2 {
+
+
+	font-family: "trebuchet ms";
+	font-size: 13px;
+	font-weight: bold;
+	color: #000000;
+	text-indent: 15px;
+}
+.putobg {
+	background-image: url(../img/putobg.jpg);
+	background-repeat: no-repeat;
+	height: 480px;
+	width: 100%;
+	display: block;
+	background-position: 0px 0px;
+	margin: 0px;
+	padding: 0px;
+}
+.td_padding {
+	padding: 5px;
+}
+.white_sml_txt {
+	z-index: 1;
+	padding: 5px;
+	font-family: arial;
+	font-size: 11px;
+	color: #FFFFFF;
+	text-indent: 1px;
+	text-align: left;
+}
+.subscribe_header_rclmn {
+	font-family: "trebuchet ms";
+	font-size: 15px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-indent: 15px;
+	text-align: center;
+}
+a.subscribe_header_home {
+
+	font-family: "trebuchet ms";
+	font-size: 25px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-indent: 5px;
+	text-align: left;
+}
+
+a.subscribe_header_home:link {
+	font-family: "trebuchet ms";
+	font-size: 25px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-indent: 5px;
+	text-align: left;
+	text-decoration:none;
+}
+a.subscribe_header_home:visited {
+	font-family: "trebuchet ms";
+	font-size: 25px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-indent: 5px;
+	text-align: left;
+	text-decoration:none;
+}
+a.subscribe_header_home:hover {
+	font-family: "trebuchet ms";
+	font-size: 25px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-indent: 5px;
+	text-align: left;
+	text-decoration:underline;
+}
+
+.td_subs {
+	background: url(../img/subsbg.jpg) no-repeat;
+	height: 61px;
+	width: 400px;
+}
+.td_subs_options {
+
+	background: url(../img/servces_bg.gif) repeat-x;
+	height: 61px;
+}
+.services_top {
+	font-family: "trebuchet ms";
+	font-size: 22px;
+	font-weight: bold;
+	color: #FF6600;
+	background-image: url(../img/yoyo.jpg);
+	background-repeat: no-repeat;
+	padding-top: 15px;
+	height: 101px;
+	text-indent: 20px;
+}
+.subscribe_subtitle {
+	font-family: "trebuchet ms";
+	font-size: 13px;
+	font-weight: bold;
+	color: #000000;
+	text-indent: 20px;
+	border-bottom: 1px dotted #DCDCDC;
+}
+a.subscribe_now:link {
+	font-family: "trebuchet ms";
+	font-size: 20px;
+	color: #FF3300;
+	text-decoration: none;
+	font-weight: bold;
+	display: block;
+	height: 40px;
+	padding-top: 20px;
+	text-align: center;
+}
+a.subscribe_now:visited {
+	font-family: "trebuchet ms";
+	font-size: 20px;
+	color: #FF3300;
+	text-decoration: none;
+	font-weight: bold;
+	display: block;
+	height: 40px;
+	padding-top: 20px;
+	text-align: center;
+}
+a.subscribe_now:hover {
+	font-family: "trebuchet ms";
+	font-size: 20px;
+	color: #FFCC00;
+	text-decoration: none;
+	font-weight: bold;
+	display: block;
+	height: 40px;
+	padding-top: 20px;
+	text-align: center;
+	background: #000000;
+}
+.silver_services_top {
+
+	font-family: "trebuchet ms";
+	font-size: 22px;
+	font-weight: bold;
+	color: #FF6600;
+	background-image: url(../img/silverbg.jpg);
+	background-repeat: no-repeat;
+	padding-top: 15px;
+	height: 101px;
+	text-indent: 20px;
+}
+.player_heading {
+	font-family: "trebuchet ms";
+	font-size: 16px;
+	font-weight: normal;
+	color: #FFFFFF;
+	padding-top: 15px;
+	text-align: center;
+}
+.table_margin {
+	margin-bottom: 10px;
+}
+.bronze_services_top {
+
+
+	font-family: "trebuchet ms";
+	font-size: 22px;
+	font-weight: bold;
+	color: #FF6600;
+	background-image: url(../img/bronze_top.jpg);
+	background-repeat: no-repeat;
+	padding-top: 15px;
+	height: 101px;
+	text-indent: 20px;
+}

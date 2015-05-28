@@ -1,0 +1,122 @@
+/* Created by Rick Cecil | rick@hesketh.com */
+
+
+/* Redefined HTML Elements */
+	a { 
+		color: #000099;
+		}
+		a:link {}
+		a:visited {}
+		a:hover {
+			color: #9C0000;
+			text-decoration: none;
+			} 
+		.two a, 
+		.three a,
+		#featureTop a,
+		.right a,
+		.isbnHeading a,
+		h1 a,
+		h2 a,
+		.subTitle a,
+		.navResults a {
+			text-decoration: none;
+			}
+		.two a:hover, 
+		.three a:hover,
+		#featureTop a:hover,
+		.right a:hover,
+		.isbnHeading a:hover,
+		h1 a:hover,
+		h2 a:hover,
+		.subTitle a:hover,
+		.navResults a:hover {
+			text-decoration: underline;
+			}
+	
+	body {
+		color: #000000;
+		font: 83% arial, verdana, helvetica, sans-serif;
+		}
+
+	dl, ol, ul {
+		}
+	
+	dl dl,dl ol, dl ul, ol dl, ol ol, ol ul, ul dl, ul ol, ul ul {
+		}
+	
+	ul {
+		list-style: none url("/us/assets/images/bullet.gif");	
+		}
+	
+	li {
+
+		}
+		li p, li h2 {
+			}
+	
+	p, td {
+		margin: 0 0 1em;
+		}
+		p + ul {
+			margin-top: -.8em;
+			margin-bottom: 1em;
+			}
+	
+	h1, h2, h3, h4, h5, h6 {
+		font-family: arial, Verdana, Helvetica, sans-serif;
+		margin: .8em 0 .1em 0;
+		}
+		h1 {
+			font-size: 120%; 
+			font-weight: bold; 
+			}
+			.subject h1 {
+				padding: 5px 0 15px;
+				}
+		h2 {
+			font-size: 95%; 
+			}
+			.form h2 {
+				margin: 5px 0 0;
+				padding: 0 0 10px;
+				}
+		h3 {
+			font-size: 90%; 
+			font-style: italic;
+			}
+			.form h3 {
+				font-style: normal;
+				padding: 0 0 5px;
+				margin: 0;
+				}
+		h4 {
+			font-size: 80%; 
+			}
+		h5 {
+			font-size: 80%; 
+			font-style: italic;
+			}
+		h6 {
+			font-size: 75%; 
+			}
+	
+	li li, dd li, td h1, td h2, td h3, td h4, td h5, td h6, td label, td li, td p, td td {
+		font-size: 100%;
+		}
+
+/* Format Classes */
+
+	.smallText {
+		font-size: 75%;
+		}
+
+	.linkMore {
+		text-decoration: none;
+		font-size: 80%;
+		white-space:nowrap;
+		}
+		
+	.note {
+		font-size: 85%;	
+		}

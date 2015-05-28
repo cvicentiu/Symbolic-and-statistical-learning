@@ -1,0 +1,96 @@
+/* Links */
+A:link{color:#000066;}
+A:visited{color:#444464;}
+A:active{color:#990000;}
+A:link:hover{color:#a30000;}
+.forMoreLink,.forMore{font-family:Arial,Verdana,Geneva,Helvetica,san-serif;font-size:12px;text-decoration:plain;}
+
+/* Basics */
+BODY {background:#ffffff;margin-top:5px;margin-left:5px;text-align:left;font-family:Arial,Verdana,Geneva,Helvetica,san-serif;font-size:14px;}
+B{font-weight:bold;}
+IMG.spacer{margin-top:2px;margin-bottom:2px;}
+TD{vertical-align:top;}
+TD.middle{vertical-align:middle;}
+
+/* Headings */
+H1,.bigone{color:#aa1111;font-family:Georgia,Times,TimesNewRoman,serif;font-size:22px;font-weight:bold;}
+H2,.headline,.head1{font-family:Georgia,Times,TimesNewRoman,serif;font-size:20px;font-weight:bold;line-height:20px;}
+H3,.smallhead,.head2{font-family:Arial,Verdana,Geneva,Helvetica,san-serif;font-size:16px;}
+.standout{color:#aa1111;}
+.standoutbold{color:#aa1111;font-weight:bold;}
+
+/* Section heads */
+.sectionHead{color:#a30000;font-family:Arial,Verdana,Geneva,Helvetica;font-size:10px;font-weight:normal;line-height:10px;text-decoration:none;padding-top:0px;margin-top:0px;text-transform:uppercase;vertical-align:middle;}
+.sectionHead:link{color:#a30000;}
+.sectionHead:visited{color:#a30000;}
+.sectionbar{color:#a30000;background-color:#eeeeee;font-family:Arial,Verdana,Geneva,Helvetica;font-size:10px;font-weight:normal;line-height:10px;text-decoration:none;padding-top:0px;margin-top:0px;text-transform:uppercase;vertical-align:middle;}
+
+/* Standard text */
+.text,.storylink{font-family:Arial,Verdana,Geneva,Helvetica,san-serif;font-size:14px;}
+.summary{font-family:Arial,Verdana,Geneva,Helvetica,san-serif;font-size:12px;}
+.pubdate{color:#888888;font-family:Arial,Verdana,Geneva,Helvetica,san-serif;font-size:12px;}
+.byline{color:#777777;font-family:Arial,Verdana,Geneva,Helvetica,san-serif;font-size:12px;font-weight:bold;}
+.photoCutline{color:#111111;font-family:Arial,Verdana,Geneva,Helvetica;font-size:11px;font-weight:normal;line-height:13px;}
+.photoCredit{color:#555555;font-family:Arial,Verdana,Geneva,Helvetica;font-size:9px;font-weight:normal;}
+
+/* Calendar */
+.storycal {font-size:12px;}
+.storycal .today {background-color: #eeeeee;}
+.storycal .selected {background-color: yellow;}
+
+/* Pro Sports */
+.scores {font-size:12px;}
+
+/* Agate */
+.agate table { border-collapse:collapse; }
+.agate td { padding:2px; border:1px solid #aaaaaa; font-size:12px; }
+.agate th { background-color:#bbbbdd; color:#000000; border:1px solid; }
+
+/* Miscellaneous */
+.wxbar{color:#000000;font-family:Arial,Verdana,Geneva,Helvetica;font-size:11px;text-transform:uppercase;vertical-align:middle;}
+.wxbar A{color:#000000;text-decoration:none;}
+.footer,.footnote{color:#000000;font-family:Arial,Verdana,Geneva,Helvetica,sans-serif;font-size:11px;}
+.gotoplink{color:#777777;font-family:Arial,Verdana,Geneva,Helvetica,san-serif;font-size:10px;font-weight:normal;line-height:12px;margin-top:0px;text-align:right;}
+.highlighted{color:#000000;background:yellow;}
+.required{color:#aa1111;font-weight:bold;}
+.bold{font-weight:bold;}
+.advert{border:solid 1px red;font-size:8pt;color:#ddbbbb;}
+.alert{background-color:#ffeeee;padding:3px;}
+
+/* User comments */
+.comments {
+   margin-top:10px;
+   font-family:Arial,Verdana,Geneva,Helvetica,san-serif;font-size:14px;
+}
+.comments .odd {
+   padding:5px;
+   margin-left:-5px;
+   margin-right:-5px;
+   background-color:#FFFEF1;  /* was #eeeeee */
+}
+.comments .even {
+   padding:5px;
+   margin-left:-5px;
+   margin-right:-5px;
+   background-color:#ffffff;  /* was #ffffff */
+}
+.comments .postedby {
+   color:#773333;
+   font-size:14px;
+}
+.comments .response {
+   border:1px #CBC68B dashed;
+   margin:10px;
+   padding:2px;
+/*   background-color:#FFF9B5; */
+}
+.comments .responseby {
+   font-weight:bold;
+}
+.blogplink {
+   float:right;
+}
+.blogbox {
+   background-color:#eeeeee;
+   padding:2px;
+}

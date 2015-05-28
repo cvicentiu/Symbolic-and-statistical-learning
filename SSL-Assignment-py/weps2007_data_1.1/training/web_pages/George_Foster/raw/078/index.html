@@ -1,0 +1,321 @@
+<html><head>
+<title>ESPN.com - Draft Tracker - Players</title>
+	
+<script type="text/javascript" language="javascript" src="http://espn.go.com/insertfiles/javascript/ua.js"></script>
+<script language=javascript type="text/javascript" src="http://espn.go.com/insertfiles/javascript/resize.js"></script>
+<script type="text/javascript" language="javascript" src="http://espn.go.com/insertfiles/javascript/flash.js"></script>
+
+
+<script type="text/javascript" language="javascript">
+
+	if (navigator.OS == 'mac') 
+	if(navigator.family == 'nn4') {
+
+	document.write('<link rel="stylesheet" type="text/css" href="http://espn.go.com/insertfiles/nfl/draft03/ie.css" title="master">');	
+	} else {
+	document.write('<link rel="stylesheet" type="text/css" href="http://espn.go.com/insertfiles/nfl/draft03/ie.css" title="master">');	
+	}
+else {
+	if(navigator.family == 'nn4') {
+	document.write('<link rel="stylesheet" type="text/css" href="http://espn.go.com/insertfiles/nfl/draft03/nn.css" title="master">');	
+	} else {
+	document.write('<link rel="stylesheet" type="text/css" href="http://espn.go.com/insertfiles/nfl/draft03/ie.css" title="master">');	
+	}
+}	
+
+</script>
+
+
+
+	<Script Language="JavaScript" type="text/javascript">
+		 imag = new Array ()
+		 imag[0] = "http://espn-ak.starwave.com/i/nfl/draft03/n2_video.gif"
+		 imag[1] = "http://espn-ak.starwave.com/i/nfl/draft03/n2_videoon.gif"
+		 imag[2] = "http://espn-ak.starwave.com/i/nfl/draft03/n2_fantasy.gif"
+		 imag[3] = "http://espn-ak.starwave.com/i/nfl/draft03/n2_fantasyon.gif"
+		 imag[4] = "http://espn-ak.starwave.com/i/nfl/draft03/n2_kiper.gif"
+		 imag[5] = "http://espn-ak.starwave.com/i/nfl/draft03/n2_kiperon.gif"
+		 imag[6] = "http://espn-ak.starwave.com/i/nfl/draft03/n2_nfl.gif"
+		 imag[7] = "http://espn-ak.starwave.com/i/nfl/draft03/n2_nflon.gif"
+		 imag[8] = "http://espn-ak.starwave.com/i/nfl/draft03/n2_ncf.gif"
+		 imag[9] = "http://espn-ak.starwave.com/i/nfl/draft03/n2_ncfon.gif"
+		 imag[10] = "http://espn-ak.starwave.com/i/nfl/draft03/n2_espn.gif"
+		 imag[11] = "http://espn-ak.starwave.com/i/nfl/draft03/n2_espnon.gif"
+
+	</script>
+
+
+
+	<Script Language="JavaScript" type="text/javascript">
+	function swtch(num, imgname, message){
+			window.status = message;
+			imgname.src = im[num].src
+		}
+			im = new Array()
+			for (var i = 0; i < imag.length; i++){
+			im[i] = new Image ()
+			im[i].src = imag[i]
+		}
+	</script>
+
+
+
+	 <STYLE type=text/css>
+    <!--
+	#msnsidebar {visibility: visible; padding: 0px;border-width: 0px;border-style: none;margin: 0px;position: absolute;top: 0px;left: 772px;  z-index: 150; width:150px;}
+	#compaq {visibility: visible; padding: 0px; border-width: 0px; border-style: none; margin: 0px; position: absolute; top: 140px; left: 650px;  z-index: 100; width: 89px; height: 27px;}
+    -->
+    </STYLE>
+
+	</head>
+
+	<body bgcolor=#cccccc topmargin=0 background="http://espn-ak.starwave.com/i/nfl/draft03/storytile.gif" leftmargin=0 marginheight=0 marginwidth=0>
+
+
+
+
+<!-- BEGIN WEBSIDESTORY CODE v7.4.0 (no 1.0)-->
+<!-- COPYRIGHT 1997-2003 WEBSIDESTORY, INC. ALL RIGHTS RESERVED. U.S.PATENT No. 6,393,479 B1. Privacy notice at: http://websidestory.com/privacy -->
+<script language="javascript" id="_hbc">
+
+function GetStatusHitbox(site) {
+	document.write('<div style="position: absolute; visibility: hidden;"><OBJECT id="DIGStreamClientInfo" height="0" width="0" classid="CLSID:AAF15A90-F3EC-4FEE-9A00-F65B25B83D05"><\/OBJECT><\/div>');
+	if (document.DIGStreamClientInfo != null && document.DIGStreamClientInfo.object != null) {
+		var DIGStreamStatus = DIGStreamClientInfo.GetSiteStatus(site);
+		if (DIGStreamStatus != "Unsubscribed") {
+			return true;
+		} else {
+			return false;
+		}
+	} else {
+		return false;
+	}
+}
+
+
+var tempseg = "18";
+
+//GET REFERER
+var referrer = document.referrer;
+
+//CHECK TO SEE IF THEY CAME FROM MSN SITE, IF SO ADD THEM TO MSN2 SEGMENT
+//IF NOT MAKE SURE THEY ARE REMOVED FROM MSN2 SEGMENT FOR FUTURE VISITS
+if (referrer.search(/msn\.com/i) > -1) {
+    if (tempseg != null && tempseg != "") {
+        tempseg = tempseg + ",19"
+    }else{
+        tempseg = "19"
+    }
+}else{
+	if (tempseg != null && tempseg != "") {
+		var tempseg = tempseg + ",-19";
+	} else {
+		var tempseg="-19";
+	}
+}
+
+// CHECK TO SEE IF USER HAS MOTION, IF SO ADD TO MOTION SEGMENT
+// ELSE REMOVE FROM MOTION SEGMENT FOR FUTURE VISITS
+
+ var hasMotionHitbox = GetStatusHitbox("ESPNMotion");
+
+// ADDED TO CHECK IF USER IS MOTION AND HIGH RES USER
+var highRes = false;
+
+if (screen!=null && (screen.width>800) && (screen.height>600)){
+	highRes = true;
+
+}
+
+
+if (hasMotionHitbox){
+	if (tempseg !=null && tempseg !=""){
+		tempseg = tempseg + ",12"
+	} else {
+		tempseg = "12"
+	}
+} else{
+	if (tempseg != null && tempseg != "") {
+		var tempseg = tempseg + ",-12";
+	} else {
+		var tempseg="-12";
+	}
+}
+
+if (hasMotionHitbox && highRes){
+	if (tempseg !=null && tempseg !=""){
+		tempseg = tempseg + ",2"
+	} else {
+		tempseg = "2"
+	}
+} else{
+	if (tempseg != null && tempseg != "") {
+		var tempseg = tempseg + ",-2";
+	} else {
+		var tempseg="-2";
+	}
+}
+
+
+
+//CREATE NO SEGMENT INFO FOR OTHER THREE ACCOUNTS
+if (tempseg != null && tempseg != ""){
+    tempseg = "*;" + tempseg + ";*;*"
+}else{
+    tempseg = "*;*;*;*"
+}
+
+//REST OF HITBOX CODE
+var _pn="GEORGE+FOSTER";   //page name(s)
+var _mlc="/nfl/draft03/tracker/players;/ESPNsite/nfl/draft03/tracker/players;/ESPN/ESPNsite/nfl/draft03/tracker/players;/EIV/ESPN/ESPNsite/nfl/draft03/tracker/players";    //multi-level content category
+var _seg=tempseg; //segment
+var _cmp="null"; // campaign analysis - id
+var _gp="";  // campaign analysis - goal page
+var _cmpn="";// campaign analysis - query name for id
+var _gpn=""; // campaign analysis - query name for goal page
+var _cp="null"; // campaign
+var _acct="DM5104129LMA95EN3;DM5010177GVA95EN3;DM51041271MD95EN3;DM5103083LCA38EN3";   //account number(s)
+var _pndef="title"; //default page name
+var _ctdef="full"; //default content category
+var _dlf="n"; //download filter
+var _elf="n"; //exit link filter
+var _epg="n"; //event page identifier
+var _mn="we23"; //machine name
+var _gn="ehg-dig.hitbox.com"; //gateway name
+var _lp=location.protocol.indexOf('https')>-1?'https://':'http://';
+var _hcv=68;</script><script language="javascript1.1" defer
+src="http://ak-sports.espn.go.com/f/1917/8668/6H/espn.go.com/insertfiles/javascript/hbe-11up.js"></script>
+<script language="javascript">if(navigator.appName!='Netscape'&&navigator.
+appVersion.toString().charAt(0)!='3')document.write("<\!--");</script><noscript>
+<img src="http://ehg-dig.hitbox.com/HG?hc=localagg&cd=1&hv=6&ce=u&hb=DM5104129LMA95EN3;DM5010177GVA95EN3;DM51041271MD95EN3;DM5103083LCA38EN3&n=GEORGE+FOSTER&vcon=/nfl/draft03/tracker/players;/ESPNsite/nfl/draft03/tracker/players;/ESPN/ESPNsite/nfl/draft03/tracker/players;/EIV/ESPN/ESPNsite/nfl/draft03/tracker/players&seg=&cmp=&gp=" border='0' width='1' height='1'>
+</noscript><!--//-->
+<!-- END WEBSIDESTORY CODE  -->
+	
+	 
+
+
+
+
+
+	<!-- logo table -->
+	<table width="772" border="0" cellspacing="0" cellpadding="0">
+	<tr valign="top">
+	<td width="275"><a href="http://sports.espn.go.com/nfldraft/index"><img src="http://espn-ak.starwave.com/i/nfl/draft03/storylogo_03.gif" width="275" height="88" alt="NFL Draft" border="0"></a></td>
+	<td width="497"><img src="http://espn-ak.starwave.com/i/nfl/draft03/miller/storytop_03.gif" width="497" height="46" alt="NFL Draft" border="0"><br>
+	<table width="482" border="0" cellspacing="0" cellpadding="0">
+	<tr valign="top">
+	<td><a href="http://espn.go.com"><img src="http://espn-ak.starwave.com/i/nfl/draft03/n2_espnlogo.gif" width="89" height="19" alt="ESPN" border="0"></a></td>
+	<td><a href="http://sports.espn.go.com/nfldraft/video" onMouseOver="swtch(1,nav1,'Video'); return true" onMouseOut="swtch(0,nav1,''); return true"><image name=nav1 src=http://espn-ak.starwave.com/i/nfl/draft03/n2_video.gif border=0></a></td>
+	<td><a href="http://games.espn.go.com/nfldraft/frontpage" onMouseOver="swtch(3,nav2,'Fantasy'); return true" onMouseOut="swtch(2,nav2,''); return true"><image name=nav2 src=http://espn-ak.starwave.com/i/nfl/draft03/n2_fantasy.gif border=0></a></td>
+	<td><a href="http://espn.go.com/melkiper/index.html" onMouseOver="swtch(5,nav3,'Kiper'); return true" onMouseOut="swtch(4,nav3,''); return true"><image name=nav3 src=http://espn-ak.starwave.com/i/nfl/draft03/n2_kiper.gif border=0></a></td>
+	<td><a href="http://sports.espn.go.com/nfl/index" onMouseOver="swtch(7,nav4,'NFL'); return true" onMouseOut="swtch(6,nav4,''); return true"><image name=nav4 src=http://espn-ak.starwave.com/i/nfl/draft03/n2_nfl.gif border=0></a></td>
+	<td><a href="http://sports.espn.go.com/ncf/index" onMouseOver="swtch(9,nav5,'NCF'); return true" onMouseOut="swtch(8,nav5,''); return true"><image name=nav5 src=http://espn-ak.starwave.com/i/nfl/draft03/n2_ncf.gif border=0></a></td>
+	<td><a href="http://espn.go.com" onMouseOver="swtch(11,nav6,'ESPN'); return true" onMouseOut="swtch(10,nav6,''); return true"><image name=nav6 src=http://espn-ak.starwave.com/i/nfl/draft03/n2_espn.gif border=0></a></td></tr></table>
+	<img src="http://espn-ak.starwave.com/i/nfl/draft03/n2_espnbot.gif" width="89" height="23" alt="ESPN" border="0"></td></tr>
+
+	</table>
+	<!-- logo table end -->
+
+<table width="772" border="0" cellspacing="0" cellpadding="0"><tr valign="top"><td width="170">
+		<!-- draft tracker -->
+		<br><img src="http://espn-ak.starwave.com/i/nfl/draft03/s_drafttracker.gif" width="170" height="26" alt="Draft Tracker" border="0"><br>
+		<table width="170" height="140" border="0" cellspacing="0" cellpadding="0"><tr><td background="http://espn-ak.starwave.com/i/nfl/draft03/tracktile.gif" width="10"><spacer type="block" width="10"></td><td background="http://espn-ak.starwave.com/i/nfl/draft03/tracktile.gif" class="track"> Round:<BR><A HREF="http://sports.espn.go.com/nfldraft/tracker/round?round=1">1</A> | <A HREF="http://sports.espn.go.com/nfldraft/tracker/round?round=2">2</A> | <A HREF="http://sports.espn.go.com/nfldraft/tracker/round?round=3">3</A> | <A HREF="http://sports.espn.go.com/nfldraft/tracker/round?round=4">4</A> | <A HREF="http://sports.espn.go.com/nfldraft/tracker/round?round=5">5</A> | <A HREF="http://sports.espn.go.com/nfldraft/tracker/round?round=6">6</A>  | <A HREF="http://sports.espn.go.com/nfldraft/tracker/round?round=7">7</A>
+			<BR><BR>
+			Prospects by:<BR>
+			<A href="http://sports.espn.go.com/nfldraft/tracker/players">Players</A> |
+			<A href="http://sports.espn.go.com/nfldraft/tracker/team">Teams</A><br>
+			<A href="http://sports.espn.go.com/nfldraft/tracker/school">Schools</A> |
+			<A href="http://sports.espn.go.com/nfldraft/tracker/position">Positions</A>
+			<BR><BR><form>
+			Team Pages:<BR>
+			<SELECT name="url" onchange="gotosite(this.options[this.selectedIndex].value)" class="verb10">
+			<span class="verb10">
+			<OPTION selected class="verb10">Select Team
+			<option value="/nfldraft/tracker/team?team=ari">Arizona
+			<option value="/nfldraft/tracker/team?team=atl">Atlanta
+			<option value="/nfldraft/tracker/team?team=bal">Baltimore
+			<option value="/nfldraft/tracker/team?team=buf">Buffalo
+			<option value="/nfldraft/tracker/team?team=car">Carolina
+			<option value="/nfldraft/tracker/team?team=chi">Chicago
+			<option value="/nfldraft/tracker/team?team=cin">Cincinnati
+			<option value="/nfldraft/tracker/team?team=cle">Cleveland
+			<option value="/nfldraft/tracker/team?team=dal">Dallas
+			<option value="/nfldraft/tracker/team?team=den">Denver
+			<option value="/nfldraft/tracker/team?team=det">Detroit
+			<option value="/nfldraft/tracker/team?team=gnb">Green Bay
+			<option value="/nfldraft/tracker/team?team=hou">Houston
+			<option value="/nfldraft/tracker/team?team=ind">Indianapolis
+			<option value="/nfldraft/tracker/team?team=jac">Jacksonville
+			<option value="/nfldraft/tracker/team?team=kan">Kansas City
+			<option value="/nfldraft/tracker/team?team=mia">Miami
+			<option value="/nfldraft/tracker/team?team=min">Minnesota
+			<option value="/nfldraft/tracker/team?team=nwe">New England
+			<option value="/nfldraft/tracker/team?team=nor">New Orleans
+			<option value="/nfldraft/tracker/team?team=nyg">NY Giants
+			<option value="/nfldraft/tracker/team?team=nyj">NY Jets
+			<option value="/nfldraft/tracker/team?team=oak">Oakland
+			<option value="/nfldraft/tracker/team?team=phi">Philadelphia
+			<option value="/nfldraft/tracker/team?team=pit">Pittsburgh
+			<option value="/nfldraft/tracker/team?team=sdg">San Diego
+			<option value="/nfldraft/tracker/team?team=sfo">San Francisco
+			<option value="/nfldraft/tracker/team?team=sea">Seattle
+			<option value="/nfldraft/tracker/team?team=stl">St. Louis
+			<option value="/nfldraft/tracker/team?team=tam">Tampa Bay
+			<option value="/nfldraft/tracker/team?team=ten">Tennessee
+			<option value="/nfldraft/tracker/team?team=was">Washington
+			</SELECT></span>
+		  </td></tr>
+		<tr><td colspan=2 height="1" bgcolor=#ffffff><spacer type="block" height="1"></td></tr></table></FORM>
+		<!-- draft tracker end -->
+	
+	
+	<Br><br><center></center><p class="margin10"><span class="av"></p></span></p><center><br>
+<br>
+
+    <TABLE cellpadding=0 cellspacing=0 border=0 width=120>
+        <TR>
+            <TD valign=MIDDLE BGCOLOR=#4b557d width=120 height=20><FONT face="verdana, Arial, Helvetica, sans-serif" size=1 color=#ffffff><B>&nbsp;ESPN Tools</B></FONT></TD>
+        </TR>
+        <TR>
+            <TD bgcolor=#ccccc4 WIDTH=120>
+            <table width=100% cellpadding=2 cellspacing=1 border=0 >
+                <tr>
+                    <td bgcolor=#ecece4 class=alsosee><font size=1 face=verdana, arial><b>
+<img src="http://espn-ak.starwave.com/i/mail.gif" width=18 height=10 alt="" border=0> <a href="player%3Fid=6953.1.html#" onClick="openWin=window.open('http://sendtofriend.espn.go.com/sendtofriend/SendToFriend?URL=http://sports.espn.go.com/nfldraft/tracker/player&title=GEORGE%20FOSTER', 'sendtofriend', 'noresizable,noscrollbars,width=345,height=470');" onMouseOver="window.status='Email story';return true">Email story</a><br>
+<font class="smalllead">&nbsp;</font><br>
+<img src="http://espn-ak.starwave.com/i/most.gif" width=18 height=11 alt="" border=0> <a href="http://sports.espn.go.com/sports/mostsent">Most sent</a><br>
+<font class="smalllead">&nbsp;</font><br>
+
+                    </b></font></td>
+                 </tr>
+            </table>
+            </TD>
+        </TR>
+        <TR>
+            <TD bgcolor=#4b557d WIDTH=120  height=5><spacer type=block width=120 height=5></td>
+        </tr>
+    </TABLE><br><img src="http://espn-ak.starwave.com/i/nfl/draft03/h_sportsmall.gif" width="120" height="19" alt="" border="0"><br><a href="http://teamstore.espn.com/league/?league=nfl"><img src="http://espn-ak.starwave.com/i/promo/espnmall/teamstore_generic.gif" width="120" height="100" alt="" border="0"></a><br><br><br><br></center><br><spacer type="block" width="170"></td><td width="37"><spacer type="block" width="37"></td><td width="529"><br><META HTTP-EQUIV="REFRESH" CONTENT="300"><span class="shead"><img src="http://espn-ak.starwave.com/i/nfl/draft02/dt.gif" width="231" height="25" alt="" border="0"><br>George Foster</span><br><span class="verb10"><A HREF="http://sports.espn.go.com/nfldraft/tracker/position?id=46">OT</A> | (6-5, 338, 5.25) | <A HREF="http://sports.espn.go.com/nfldraft/tracker/school?id=2188">GEORGIA</A></span><br><span class="verb10"><a href="http://www.profootballweekly.com"><B>By Pro Football Weekly</B></a></span><P></P><font class="story"><FONT size=-1><B><I>Notes:</I></B> Redshirt in 1998. Top backup in '99 (one start) and 2000. Had his right ankle scoped in August of '01 but came back to start nine of 12 games. Dislocated his right wrist in a car accident in early August '02 and had pins placed in right hand. Came back to play later in the season with big cast over his right hand and wrist, making him a one-armed player until the the cast was removed at the very end of the season. Looked out of shape when he returned to the lineup and at the Senior Bowl.<P></P><B><I>Positives:</I></B> King-sized offensive lineman with a giant wingspan who improves every year. Foster plays with a wide base and can play either left or right tackle. Athletic for his size with good body control and balance when he uses proper technique. Has good, quick feet and can shuffle his feet and slide. Very strong hand punch, although he wasn't able to punch or lock out most of last year due to injury. Can get a lot better. Can play and has played both tackle slots. Moves well and is one of the most athletic guys in the country at the position.<P></P><B><I>Negatives:</I></B> Missed a good part of his senior year with injury, and then he was a third swing tackle when he returned. Limited exposure in '02. Still very raw and inexperienced. Lacks consistency and technique. Can bend but rarely bends his knees and gets low. Will often play way too tall. May be a tad stiff. Does not have great lower-body explosion. Is an inconsistent player who has lapses. Not a self-starter.<P></P><B><I>Summary:</I></B> A gamble-on-greatness prospect with tremendous upside, but someone who never put it together in college and must get in shape to be effective at the next level.<P></P><B>*</B> Player biographies are provided by Pro Football Weekly.</FONT></FONT><br><spacer type="block" width="529"></td><td width="36"><spacer type="block" width="36"></td></tr></table><table width="772" border="0" cellspacing="0" cellpadding="0"><tr><td width="207"><spacer type="block" width="207"></td><td width="565"><table  width="565" cellpadding=10 cellspacing=0 border=0 bgcolor=#163d64>
+<tr><td class="verw10"><font class=FOOT><div id="tfb"></div>
+<script type="text/javascript">
+//<![CDATA[
+//Changed 1.15.2006 Illegal "name" attribute in a tags breaking new mlb and ncf scoreboard b/c they are XHTML compliant.
+var link = window.location;
+var footText = '<span style="font-weight:bold;">ESPN.com:</span> <a name="&lpos=ft&lid=help" href="http://sports.espn.go.com/espn/news/story?page=help/index">Help</a> | <a name="&lpos=ft&lid=PR_mediakit" href="http://www.espncorp.com">PR Media Kit</a> | <a name="&lpos=ft&lid=mediakit" href="http://www.espncms.com">Sales Media Kit</a> | <a href="player%3Fid=6953.1.html#" onclick="window.open(\'http://dynamic.espn.go.com/espn/bugs?url=' + escape(link) + '\', \'Bugs\',\'noresizable,noscrollbars,height=400,width=400\');">Report a Bug</a> | <a name="&lpos=ft&lid=contactus" href="http://sports.espn.go.com/espn/news/story?page=contact/index">Contact Us</a> | <a name="&lpos=ft&lid=sitemap" href="http://sports.espn.go.com/espn/sitemap">Site Map</a> | <a name="&lpos=ft&lid=jobs" href="http://www.joinourteam.espn.com">Jobs at ESPN</a> | <a name="&lpos=ft&lid=supplier" href="http://corporate.disney.go.com/corporate/sourcing.html"><span style="font-weight:bold;">Supplier Information</span></a> | Copyright &copy;2007 ESPN Internet Ventures. <a name="&lpos=ft&lid=terms" href="http://disney.go.com/corporate/legal/terms.html">Terms of Use</a><!--<a name="&lpos=ft&lid=motion" href="http://espn.go.com/motion/eula_plaintext.html">Terms of Use for ESPN Motion</a>--> and <a name="&lpos=ft&lid=privacy" href="http://disney.go.com/corporate/privacy/pp_espn.html">Privacy Policy and Safety Information/Your California Privacy Rights</a> are applicable to you.  All rights reserved.';
+document.getElementById('tfb').innerHTML = footText;
+//]]>
+</script></font><!--begin revenueScience--><script type="text/javascript" src="http://adsatt.espn.starwave.com/ad/sponsors/utilities/revsci/dm_espn.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+DM_tag();
+//]]>
+</script>
+<script type="text/javascript" src="http://adsatt.espn.starwave.com/ad/sponsors/utilities/detect/main.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+getAll(false);
+//]]>
+</script><script language="javascript" type="text/javascript" src="http://log.go.com/log?ft=j&amp;srvc=sz&amp;addata=1184:::|966:::|965:::|911:::|969:::|1427:56422:280662:56422&amp;target=&amp;method=GET&amp;cap=&amp;svr=sports.espn.go.com&amp;host=sports.espn.go.com&amp;guid=AF46B6B2-2779-4045-8ADF-D2BA8A5D74EC"></script><!--end revenueScience-->
+</td></tr>
+<tr><td bgcolor=#686B6E></td></tr></table>
+</td></tr></table>
+<div id="compaq"></div></body></html>

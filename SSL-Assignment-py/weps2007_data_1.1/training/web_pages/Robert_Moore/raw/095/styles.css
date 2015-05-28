@@ -1,0 +1,644 @@
+/*<group=General Styles>*/
+
+body {
+	text-align: center; /* To Make Content Centered */
+	background: #f0f0f0;
+	color: #666666;
+	font: 0.78em Verdana, Arial, Helvetica, sans-serif;
+	margin: 8px;
+	padding: 0;
+}
+
+p {
+}
+
+b, strong {
+
+}
+
+a:link {
+	color: #0080ff;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #0080ff;
+	text-decoration: underline;
+}
+
+a:hover, a:active {
+	text-decoration: none;
+}
+
+img {
+	border: none;
+}
+
+.image-left {
+	float: left;
+	margin: 3px 3px 3px 0;
+	padding: 3px 3px 3px 0;
+	position: relative;
+	z-index: 5;
+}
+
+.image-right {
+	float: right;
+	margin: 3px 0 3px 3px;
+	padding: 3px 0 3px 3px;
+	position: relative;
+	z-index: 5;
+}
+	
+/*</group>*/
+
+/*<group=Layout>*/
+
+.clearer {
+	clear: both;
+}
+
+#container { 
+	width: 680px;
+	margin: 0px auto 10px; /* Right And Left Margin Widths To Auto */
+	text-align: left; /* Hack To Keep IE5 Windows Happy */
+	border: 1px solid #aeaeae;
+	background: #ffffff repeat-y left  url(images/sidebar_left_bg.png);
+}
+
+#pageHeader {
+	height: 71px;
+	border-bottom: solid #aeaeae 1px;
+}
+
+#pageHeader img {
+	float: right;
+}
+
+#pageHeader h1 {
+	padding-left: 10px;
+	padding-top: 10px;
+	color: #ffffff;
+	font-size: 1.8em;
+	margin: 0;
+}
+
+#pageHeader h2 {
+	font-size: 1.3em;
+	color: #ffffff;
+	margin: 0;
+	padding-left: 10px;
+	font-weight: normal;
+}
+
+#contentContainer {
+	margin-left: 200px;
+	position: relative;
+	z-index: 10;
+}
+
+#contentContainer #content {
+	padding: 10px 10px 10px 15px;
+}
+
+#sidebarContainer {
+	width: 200px;
+	float: left;
+}
+
+#sidebarContainer #sidebar {
+	padding: 5px;
+}
+
+#sidebarContainer .sideHeader {
+	font-weight: bold;
+	padding: 5px 5px 0;
+}
+
+#footer {
+	width: 680px;
+	margin: 0px auto; /* Right And Left Margin Widths To Auto */
+	text-align: center; /* Hack To Keep IE5 Windows Happy */
+	background: #ffffff;
+	border: 1px solid #aeaeae;
+}
+
+#footer p {
+	margin: 0;
+	padding: 5px;
+}
+
+#footer a:link, #footer a:visited {
+
+}
+
+#footer a:hover, #footer a:active {
+	
+}
+	
+/*</group>*/
+
+/*<group=Bread-crumb>*/
+
+#breadcrumbcontainer {
+	background: url(images/breadcrumb_bg.png) repeat-x;
+	text-align: right;
+	height: 25px;
+}
+
+#breadcrumbcontainer ul {
+	list-style: none;
+	margin: 0;
+	padding-top: 5px;
+	padding-left: 5px;
+	color: #d4d4d4;
+}
+
+#breadcrumbcontainer li {
+	display: inline;
+}
+
+#breadcrumbcontainer a {
+	color: #d4d4d4;
+	text-decoration: none;
+}
+
+#breadcrumbcontainer a:hover {
+
+}
+	
+/*</group>*/
+
+/*<group=Toolbar>*/
+
+/* Toolbar Styles */
+#navcontainer {
+	font-size: 1em;
+	border-top: 1px solid #aeaeae;
+	margin-bottom: 10px;
+	position: relative;
+	z-index: 99;
+}
+
+#navcontainer #current {
+	color: #ffffff;
+	text-shadow: 0px 1px 1px #666666;
+}
+
+#navcontainer .currentAncestor {
+	color: #ffffff;
+	text-shadow: 0px 1px 1px #666666;
+}
+
+/* Parent - Level 0 */
+
+#navcontainer ul {
+	padding: 0;
+	list-style: none;
+	margin: 0px;
+}
+
+#navcontainer li {
+	position: relative;
+}
+
+#navcontainer a {
+	display: block;
+	width: 190px;
+	padding: 5px 5px 0px 5px;
+	height: 20px;
+	color: #333333;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #fff;
+	border-bottom: 1px solid #aeaeae;
+	background: url(images/button_normal.png) repeat-x;
+}
+
+#navcontainer a:hover { 
+}
+
+/* Fix IE. Hide from IE Mac \*/
+* html #navcontainer ul li { float: left; height: 1%; }
+* html #navcontainer ul li a { height: 20px; }
+/* End */
+
+/* Child - Level 1 */
+/* All browsers will use this code, it will make the pop out menus work */
+#navcontainer ul ul {
+	width: 200px;
+	position: absolute;	top: -1px;
+	left: 200px;
+	text-align: left;
+	border-right: 1px solid #aeaeae;
+	border-left: 1px solid #aeaeae;
+	border-top: 1px solid #aeaeae;
+}
+
+
+#navcontainer ul ul a {
+	background: #ebebeb;
+}
+
+#navcontainer ul ul a:hover {
+	text-shadow: 0px 1px 0px #ffffff;
+	background: #cccccc;
+}
+
+#navcontainer ul ul #current{
+}
+
+
+/* Child Level 3 */
+
+#navcontainer ul ul ul {
+}
+
+#navcontainer ul ul ul ul li { 
+}
+
+#navcontainer ul ul ul ul a{
+}
+
+#navcontainer ul ul ul ul a:hover{
+
+}
+
+div#navcontainer ul ul, div#navcontainer ul ul ul, div#navcontainer ul li:hover ul ul, div#navcontainer ul li:hover ul ul ul, div#navcontainer ul li:hover ul ul ul ul, div#navcontainer ul li:hover ul ul ul ul ul{
+display:none;
+}
+
+div#navcontainer ul li:hover ul, div#navcontainer ul ul li:hover ul, div#navcontainer ul ul ul li:hover ul, div#navcontainer ul ul ul ul li:hover ul, div#navcontainer ul ul ul ul ul li:hover ul{
+display:block;
+}
+/*</group>*/
+
+/*<group=Global Classes>*/
+
+blockquote {
+	border-top: 1px solid #aeaeae;
+	border-bottom: 1px solid #aeaeae;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-style: italic;
+	color: #999999;
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+.imageStyle {
+
+}
+
+/* Main content area unordered list styles */
+#contentContainer #content ul {
+}
+
+#contentContainer #content li {
+}
+
+/* Sidebar area unordered list styles */
+#sidebarContainer #sidebar ul {
+	margin: 10px;
+	padding: 0 10px;
+}
+
+#sidebarContainer #sidebar li {
+}
+
+/* Table Styles */
+table {
+	font-size: 1em;
+}
+	
+/*</group>*/
+
+/*<group=Blog>*/
+
+/*<group=Archive Page>*/
+
+.blog-archive-background {
+}
+
+.blog-entry-summary {
+	margin-bottom: 10px;
+}.blog-archive-headings-wrapper {
+}
+
+.blog-archive-entries-wrapper {
+}
+
+.blog-archive-entries-wrapper .blog-entry {
+}
+.blog-archive-month {
+	font-size: 1.8em;
+}.blog-archive-link {
+	margin-bottom: 15px;
+}
+
+.blog-archive-link a:link, .blog-archive-link a:visited {
+}
+	
+/*</group>*/
+
+.blog-entry {
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #cccccc;
+}
+
+.blog-entry-title {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.blog-entry-date {
+	color: #cccccc;
+	margin-bottom: 10px;
+}
+
+.blog-read-more {
+	display: block;
+	padding-top: 10px;
+	margin-bottom: 10px;
+	font-style: italic;
+}
+
+.blog-entry-body {
+
+}
+
+.blog-entry-comments {
+
+}
+
+/*styles the category link in the main entry */
+.blog-entry-category {
+}
+
+.blog-entry-category a:link, .blog-entry-category a:visited {
+}
+
+/*styles the permalink link in the main entry */
+.blog-entry-permalink {
+}
+
+.blog-entry-permalink a:link, .blog-entry-permalink a:visited {
+}
+
+
+
+
+/* styles the archives in the blog sidebar */
+#blog-archives {
+	margin-bottom: 10px;
+}
+
+.blog-archive-link-enabled {
+}
+
+.blog-archive-link-disabled {
+}
+
+/* Styles the blog categories in the blog sidebar */
+#blog-categories {
+	margin-bottom: 10px;
+}
+
+.blog-category-link-enabled {
+}
+
+.blog-category-link-disabled {
+}
+
+/* Styles the blog RSS feeds in the blog sidebar */
+#blog-rss-feeds {
+	margin-bottom: 10px;
+}
+
+.blog-rss-link {
+}
+
+.blog-comments-rss-link {
+}
+/*</group>*/
+
+/*<group=File Sharing>*/
+
+.filesharing-description {
+
+}
+
+.filesharing-item {
+}
+
+.filesharing-item-title a:link {
+
+}
+
+.filesharing-item-title a:hover {
+
+}
+
+.filesharing-item-title a:visited {
+
+}
+
+.filesharing-item-description {
+
+}
+
+/*</group>*/
+
+/*<group=Photo Album>*/
+
+/*<group=Index Page (Thumbnail view)>*/
+
+.album-title {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.album-description {
+	color: #cccccc;
+	margin-bottom: 70px;
+}
+
+.album-wrap {
+	display: block;
+	width: 99%;
+	position: relative;
+}
+
+.thumbnail-wrap {
+	text-align: center;
+	position: relative;
+	float: left;
+	margin-bottom: 60px;
+	margin-right: 16px;
+}
+
+.thumbnail-frame {
+	text-align: center;
+	position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.thumbnail-frame a {
+}
+
+.thumbnail-frame a:hover {
+}
+
+.thumbnail-frame img {
+	margin: auto;
+	padding: 1px;
+	border: Solid 1px #cccccc;
+}
+
+.thumbnail-caption {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 38px;
+	display: block;
+}
+	
+/*</group>*/
+
+/*<group=Single Page (Photo view)>*/
+
+.photo-background {
+}
+
+.photo-navigation {
+	height: 71px;
+	margin-bottom: 35px;
+}
+
+.photo-navigation a:link, .photo-navigation a:visited {
+
+}
+
+.photo-navigation a:hover {
+
+}
+
+.photo-frame{
+	padding: 4px;
+	background: #ffffff;
+	border: 1px solid #aeaeae;
+}
+
+.photo-links {
+	background: repeat-x url(images/breadcrumb_bg.png);
+	height: 25px;
+	margin: 0;
+	padding: 6px 0 0;
+}
+
+.photo-links a:link {
+	color: #ffffff;
+}
+
+.photo-title {
+	padding-left: 10px;
+	padding-top: 10px;
+	color: #ffffff;
+	font-size: 1.8em;
+	margin: 0;
+}
+
+.photo-caption {
+	font-size: 1.3em;
+	color: #ffffff;
+	padding-left: 10px;
+	font-weight: normal;
+	margin: 0 0 15px;
+}
+
+/*</group>*/
+	
+/*</group>*/
+
+/*<group=Quicktime Page>*/
+
+.movie-description {
+
+}
+	
+/*</group>*/
+
+/*<group=Quicktime Album>*/
+
+/*<group=Index Page (Movie Thumbnail view)>*/
+
+.movie-page-title {
+	font-size: 1.2em;
+	font-weight: bold;
+}.movie-page-description {
+	color: #cccccc;
+	margin-bottom: 10px;
+}.movie-thumbnail-frame {
+	padding: 1px;
+	border: Solid 1px #aeaeae;
+	width: 132px;
+	float: left;
+	text-align: center;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	position: relative;
+	z-index: 12;
+}
+
+.movie-thumbnail-caption {
+
+}
+	
+/*</group>*/
+
+/*<group=Single Page (Movie View)>*/
+
+.movie-background {
+
+}
+
+.movie-title {
+
+}
+
+.movie-frame {
+
+}	
+/*</group>*/
+
+/*</group>*/
+
+/*<group=Contact Form>*/
+.message-text { 
+} 
+
+.required-text {
+} 
+
+.form-input-field {
+} 
+
+.form-input-button { 
+} 
+/*</group>*/
+
+
+
+
+

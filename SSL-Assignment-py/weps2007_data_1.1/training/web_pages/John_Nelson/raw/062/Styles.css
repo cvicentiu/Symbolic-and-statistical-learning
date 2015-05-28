@@ -1,0 +1,256 @@
+body
+{
+	FONT-SIZE: 10pt;
+	FONT-FAMILY: Verdana, Arial;
+	color:#666666;
+	background-color: #ffffff;
+}
+TextArea
+{
+	behavior: url(/Behaviors/maxlength.htc);
+}
+.mailmerge 
+{ 
+	FONT-WEIGHT: normal; 
+	FONT-SIZE: 10pt; 
+	COLOR: red; 
+	FONT-FAMILY: Verdana ;
+}
+.h1 
+{ 
+	FONT-WEIGHT: normal; 
+	FONT-SIZE: 14pt; 
+	COLOR: #000000; 
+	FONT-FAMILY: Verdana 
+}
+.StatusText
+{
+	font-family: Verdana,Arial, Helvetica, sans-serif;
+	font-size:10pt;
+	color: Red;
+	font-weight:bolder;
+}
+.AlertText
+{
+	font-family: Verdana, Arial;
+	font-size: 8pt;
+	color: Red;
+}
+
+.BottomTableBorder
+{
+	border-bottom:1px;
+	border-bottom-color: Black;
+	border-bottom-style:solid;
+}
+.ToolHeader
+{
+	font-family: Verdana,Arial, Helvetica, sans-serif;
+	font-size:12pt;
+	color: #000000;
+	font-weight:bolder;
+}
+.ControlFont
+{
+	FONT-SIZE: 10pt;
+	FONT-FAMILY: Verdana, Arial;
+	color:#000000;
+}
+.tableHeader
+{
+	font-family:Verdana;
+	FONT-SIZE: 8pt;
+	background-color:#48669f;
+	color: white;
+	FONT-WEIGHT: Bold;
+	padding-left:11px;
+}
+.GridHeader
+{
+	color: black;
+	font-weight: bold;
+	background-image: url(/admin/Graphics/topnav_bkg.jpg);
+	background-repeat: repeat-x;
+}
+.GridLeft
+{
+	border-top: 2px solid #A6E6EE;
+	border-left: 2px solid #A6E6EE;
+	border-bottom: 2px solid #82B5BB;
+	color: #000000;
+}
+.GridMiddle
+{
+	border-top: 2px solid #A6E6EE;
+	border-bottom: 2px solid #82B5BB;
+	color: #000000;
+}
+.GridRight
+{
+	border-top: 2px solid #A6E6EE;
+	border-right: 2px solid #82B5BB;
+	border-bottom: 2px solid #82B5BB;
+	color: #000000;
+}
+.mol
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #999999;
+}
+TBODY
+{
+	font-family: Verdana, Arial;
+	font-size: 10pt;
+	color: Black;	
+}
+/* Begin Styles for Content Editor */
+.SectionHeader
+{
+	FONT-SIZE: 10pt;
+	FONT-FAMILY: Verdana, Arial;
+	color: Black;
+	font-weight:bolder;
+}
+.ContentText
+{
+	font-size: 10pt;
+	font-family: Verdana, Arial;
+	color: Black;
+}
+.GreyText
+{
+	font-size: 10pt;
+	font-family: Verdana, Arial;
+	color: #666666;
+}
+.SmallGreyText
+{
+	font-size: 8pt;
+	font-family: Verdana, Arial;
+	color: #666666;
+}
+.TitleHeader
+{
+	font-family: Verdana,Arial, Helvetica, sans-serif;
+	font-size:12pt;
+	color: #000000;
+	font-weight:bolder;
+}
+/* End Styles for Content Editor */
+
+A.DynContentText
+{
+	font-size:  8pt;
+	font-family: Verdana, Arial;	
+	
+}
+.DynContentText
+{
+	font-size: 8pt;
+	font-family: Verdana, Arial;
+	
+	
+}
+.ColumnTitle
+{
+	font-family:Verdana;
+	font-size:medium;
+	background-color:white;
+}
+
+.ListBarGroupHeader
+
+{
+	border-bottom :solid 1px #808080;
+	border-right :solid 1px #808080;
+	border-top :solid 1px #ffffff;
+	border-left :solid 1px #ffffff;
+	padding-left:2px;
+	padding-top:1px;
+	padding-bottom :1px;
+	padding-right:2px;
+	background-image: url(../images/gradient_head.gif);
+	background-repeat: repeat-x;
+	background-position: top;
+	height:24px;
+}
+.ListBarGroupTextHeader
+
+{
+	font-weight: bold;
+	color: #868686;
+	FONT-SIZE: 8pt;
+}
+
+.ListBarGroup
+{
+	font-family: Verdana,Arial, Helvetica, sans-serif;
+	color: #000000;
+	text-align :left ;
+	background-color: #FFFFFF;
+}
+.ControlFont
+{
+	FONT-SIZE: 8pt;
+	FONT-FAMILY: Verdana, Arial;
+	color:Black;
+}
+.ControlFontBold
+{
+	FONT-SIZE: 8pt;
+	FONT-FAMILY: Verdana, Arial;
+	color:Black;
+	font-weight:bold;
+}
+.txtInput
+{
+	border: solid 1px #C0C0C0;
+	FONT-SIZE: 8pt;
+	FONT-FAMILY: Verdana, Arial;
+	color:Black;
+}
+.GreenText 
+{
+	FONT-SIZE: 11px; 
+	COLOR: #006600; 
+	FONT-FAMILY: Verdana
+}
+.SmallGreenText 
+{
+	FONT-SIZE: 10px; 
+	COLOR: green; 
+	FONT-FAMILY: Verdana
+}
+.FormSelect
+{
+	FONT-SIZE: 10pt;
+	FONT-FAMILY: Verdana, Arial;
+	color:#000000;
+	position:absolute;
+}
+.AlertText
+{
+	FONT-SIZE: 12px; 
+	COLOR: red; 
+	FONT-FAMILY: Verdana
+}
+.PodBoxHeader
+
+{
+
+
+font-family: Verdana,Arial, Helvetica, sans-serif;
+
+font-size:10pt;
+
+color: #000000; 
+
+font-weight:bold;
+
+}
+
+.XpButton
+{
+	behavior: url(/Behaviors/xpbutton.htc);
+}

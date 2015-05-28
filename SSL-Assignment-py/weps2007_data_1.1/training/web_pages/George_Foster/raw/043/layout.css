@@ -1,0 +1,288 @@
+@charset "utf-8";
+body{
+	padding :0;
+	margin :0;
+	color: black; background: white;	
+	font-family: "Trebuchet MS", Georgia, "Times New Roman", Times, serif;
+}
+/* BlueRobot Header */
+#Header {
+    line-height: 1.2em;
+	border-style:solid;
+	border-color:black;
+	border-width:1px 0px 1px 0px;
+	color: black; background:#FFE4C4;
+	margin: 2.5em 0 .5em 0;
+	padding: .8em 0 .25em 1.5em;
+	font-size: 100%;
+}
+#Header a:link { text-decoration: none; color: #00c; background:#FFE4C4;}
+#Header a:visited { text-decoration: none; color: #551a8b; background:#FFE4C4;}
+#Header a:active { text-decoration: none; color: #f00; background:#FFE4C4;}
+
+#navcontainer {
+float: left;
+width: 12em;
+margin: 0em 0em 3em 0em;
+padding: 0;
+/*position:fixed;*/
+}
+
+/* Thanks to Listamatic for the vertical navigation below. */
+#navlist {
+	padding: 0;
+	margin: 1.25em 0 0 .5em;
+	border-bottom: 1px solid gray;
+	width: 11em;
+}
+#navlist li {
+    list-style: none;
+    margin: 0;
+    padding: .25em;
+    border-top: 1px solid gray;
+    font-size: 95%;
+}
+#navlist li a { text-decoration: none; }
+
+/*Navigation at top of page.*/
+#topnav ul { 
+list-style-type: none; 
+margin: 0;
+padding: 0;
+text-align: center;
+font-size:95%;
+border: 0;
+}
+#topnav ul li { display: inline;}
+/*Nested List rules below courtesy of
+http://www.simplebits.com/notebook/2003/10/19/styling_nested_lists.html*/
+#navlist li ul {
+	font-weight: normal;
+	border:0;
+	}
+#navlist li ul li{
+    margin-left: 1.25em;
+    font-size: 90%;
+	font-weight: normal;
+	border:0;
+	background:url(../images/red_arrow.gif) no-repeat 0 50%;
+	padding-left: 1em;
+	}
+#navlist li ul a{
+    text-decoration: none;
+ 	border:0;
+}
+/* Rules for the content. Idea from Macromedia. */
+#content{
+font-size: 100%;
+padding: .25em .25em .25em .75em;
+margin:0em /*4%*/ 2em 0em 12.5em;
+border-left:#CCCCCC thin dotted;
+/*line-height:2.0;*/
+}
+h1,h2,h3,h4,h5,h6 {
+	font-weight: bold;
+	color: black; background: white;
+}
+h1 { font-size: 130%;}
+h2 {font-size: 120%;}
+h3 {font-size: 110%;}
+h4 {font-size: 105%;}
+p{
+	font-size: 100%;
+	font-weight: normal;
+	color: black; background: white;
+	font-style:normal;
+	text-align: justify;
+/*    text-indent: 20px;*/
+}
+
+/* BlueRobot Footer */
+#Footer {
+    clear: both;
+	font-size: 100%;
+	line-height: 1.2em;
+	border-style:solid;
+	border-color:black;
+	border-width:1px 0px 1px 0px;
+	color: black; background:#FFE4C4;
+	margin: .5em 0 .5em 0;
+	padding: .8em 0 .25em 1.5em;
+}
+#Footer a:link { text-decoration: none; color: #00c; background:#FFE4C4;}
+#Footer a:visited { text-decoration: none; color: #551a8b; background:#FFE4C4;}
+#Footer a:active { text-decoration: none; color: #f00; background:#FFE4C4;}
+
+blockquote {
+	padding-left: .5em;
+	border-left: 1px solid #666699;
+}
+/* http://www.456bereastreet.com/archive/200411/quotations_and_citations_quoting_text/ */
+blockquote[cite]:after {
+   content: "Source: " attr(cite);
+   border-top:1px dashed #999;
+   padding-top:0.25em;
+   display:block;
+   color:#005; background: white;
+   font-size: 90%;
+   text-align: justify;
+   }
+ /*Fake citations so IE can see the above fancy bit of work */  
+   p.citation {
+   border-top:1px dashed #999;
+   padding-top:0.25em;
+   display:block;
+   color:#005; background: white;
+   font-size: 90%;
+   text-align: justify; 
+   }
+/*Bold Headings for Blockquotes*/
+.headings {
+text-align:center;
+font-weight: bold;
+}
+
+/* Links rules*/
+a:link {color:#00c; background: white;}
+a:visited {color:#551a8b;background:white;}
+a:hover {color:#00c; background-color:#FFFFAA;}	
+a:active {color:#f00;background:white;}
+
+/* Table rules/*/
+table {
+	border-collapse: collapse;
+	border: 2px solid #3f7c5f;
+	font: normal 80%/140% arial, verdana, helvetica, sans-serif;
+	color: #000; background: #fff;
+	margin-left: auto;
+    margin-right: auto;
+}
+caption {
+	padding: 0 0.6em 0.8em;
+	font-size: 1.3em;
+	font-weight: bold;
+	text-align: left;
+	margin-left: auto;
+    margin-right: auto;
+    color: black; background: white;
+}
+td, th {
+	border: 1px solid #e0e0e0;
+	padding: 0.5em;
+}
+thead th {
+	border: 1px solid #e0e0e0;
+	text-align: center;
+	font-size: 1em;
+	font-weight: bold;
+	color: black;
+	background: #c6d7cf;
+}
+tfoot th, tfoot td {
+    font-style:italic;
+	border: 1px solid #e0e0e0;
+	text-align: left;
+	font-size: 1em;
+	color: black;
+	background: #e8e8cf;
+}
+tfoot th {font-weight: bold;}
+tbody th, tbody td {vertical-align: middle;text-align: left;}
+tbody th {color: black; background: #fef1b5;}
+tfoot td {border: 1px solid #996;}
+tbody tr:hover {color: black; background: #ffffd9;}
+/*Ordered List Rules; could use some work!*/
+ol { list-style-type: lower-roman;}
+ol.nested { list-style-type: decimal;}
+ol.nested li ol li {list-style-type: lower-roman;}
+
+/* Definition List Rules:
+http://www.maxdesign.com.au/presentation/definition/dl-margins-removed.htm*/ 
+dl {margin: 0;padding: 0;}
+dt {margin: 0;padding: 0;font-weight: bold;}
+dd {margin: 0 0 .25em 0;padding: 0;}
+/* Used for epitaphs, could be better? */
+p.headstones {
+    display: block;
+    text-align: center;
+    line-height:1.5em;
+}
+/* Image left, right and center*/
+img.floatMid {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	text-align: center; }
+img.floatLeft { float: left;
+margin: 4px 4px 0px 0px; }
+img.floatRight { float: right;
+margin: 0 0 0px 4px; }
+/*This class removes the HTML unordered list bullets, and removes the left-indentation. Some browsers use padding (Mozilla, Netscape, Safari) and others use margins (Internet Explorer, Opera) to set the amount of indentation. This replaces previous poor practice on this site of <br /> for some 'lists'.*/
+ .birthdata {
+     list-style-type: none;
+     padding: 0;
+     margin: 0;
+ }
+  abbr, acronym, .help {
+  border-bottom: 1px dotted #333;
+  cursor: help;
+  }
+	
+ul.main {
+  list-style-type: none;
+  padding: 0em;
+  margin: 0em 1em;
+/*  margin-left: 1em;
+  margin-right:1em;*/
+  text-align: justify;
+}
+ul.main li {
+	background:url(../images/front_list.gif) no-repeat 0em .4em /*0 50%*/;
+ /*The first value is the horizontal (x) position and the second value is the vertical (y).*/ 
+/*   background-position: 0em .4em;*/
+   padding-left: 1em;
+}
+/*Caption & image pairs*/
+.captionL{
+float: left;
+margin: 0em .5em;
+border: 1px  dotted #ccc;
+padding: .5em;
+text-align: center;
+font-size:90%;
+font-style: italic;
+}
+.captionL img {
+display: block;
+margin: 0 auto;
+padding: 0em 0em .25em 0em;
+}
+
+.captionR{
+float: right;
+margin: 0em .5em;
+border: 1px  dotted #ccc;
+padding: .5em;
+text-align: center;
+font-size:90%;
+font-style: italic;
+}
+.captionR img {
+display: block;
+margin: 0 auto;
+padding: 0em 0em .25em 0em;
+}
+
+.captionC{
+margin: 0em auto;
+border: 1px  dotted #ccc;
+padding: .5em;
+text-align: center;
+font-size:90%;
+font-style: italic;
+}
+.captionC img {
+display: block;
+margin: 0 auto;
+padding: 0em 0em .25em 0em;
+}

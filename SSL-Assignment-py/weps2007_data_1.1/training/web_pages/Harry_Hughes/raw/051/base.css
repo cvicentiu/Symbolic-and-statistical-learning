@@ -1,0 +1,197 @@
+/* Sets main rules for font sizing, basic colours for LHN, banner and background */
+
+body {	background: #BAC595;
+			font-size: 75%;
+			font-family: Arial, Helvetica, sans-serif;
+			padding: 0;												}
+
+div#pagecontent	{	background: #FFF;
+					width: 630px;
+					margin: 0 0 0 0;
+					padding: 10px 10px 10px 10px;
+					font-size: 75%;
+					font-family: Arial, Helvetica, sans-serif; }
+div.pageContentLeft	{	background: #FFF;
+						width: 460px;
+						margin: 0 0 4px 0;
+						padding: 10px 10px 10px 10px;
+						float: left;
+						font-size: 75%;
+						font-family: Arial, Helvetica, sans-serif; }
+div.pageContentRight	{	background: #FFF;
+							width: 170px;
+							margin: 0 0 0 0;
+							padding: 5px 0 0 0;
+							float: right;
+							font-size: 75%;
+							font-family: Arial, Helvetica, sans-serif; }
+					
+/* Tell NS4 to ignore these styles.... */
+/*/*/
+* html div#pagecontent
+{
+  width: 630px;
+  w\idth: 650px;
+}
+* html div.pageContentLeft
+{
+  width: 460px;
+  w\idth: 480px;
+}
+* html div.pageContentRight
+{
+  width: 170px;
+  w\idth: 170px;
+}/* Okay, we can let NS4 see the rest.... */
+					
+p.contentFirst	{	margin-top: 0px; }
+td.imageCaption	{	color: #666;
+					font-size: 70%;
+					font-weight: bold; }
+
+div#pagecontent h1.error404  {  font-size: 120%;   }
+
+/* BBC Standard variables */
+.bbcpageTopLeftTD	{	color: #416026; font-weight: bold; }
+.bbcpageTopLeftTD a,
+.bbcpageTopLeftTD a:link,
+.bbcpageTopLeftTD a:visited,
+.bbcpageTopLeftTD a:active	{	color: #416026; text-decoration: none; }
+.bbcpageTopLeftTD a:hover	{	text-decoration: underline; }
+td.bbcpageTopLeftTD {	background: #BAC595; }
+
+.bbcpageCrumb	{	color: #344F1C; font-weight: bold; }
+.bbcpageCrumb a,
+.bbcpageCrumb a:link,
+.bbcpageCrumb a:visited,
+.bbcpageCrumb a:active	{	color: #344F1C; text-decoration: none; font-size: 95%; }
+.bbcpageCrumb a:hover	{	text-decoration: underline; }
+td.bbcpageCrumb	{	background: #BAC595; padding: 10px 0 5px 0; }
+
+.bbcpageServices	{	color: #344F1C; }
+.bbcpageServices a,
+.bbcpageServices a:link,
+.bbcpageServices a:visited,
+.bbcpageServices a:active	{	color: #344F1C; text-decoration: none; }
+.bbcpageServices a:hover	{	text-decoration: underline; }
+
+.bbcpageFooter	{	color: #000; }
+.bbcpageFooter a,
+.bbcpageFooter a:link,
+.bbcpageFooter a:visited,
+.bbcpageFooter a:active	{	color: #000; text-decoration: none; }
+.bbcpageFooter a:hover	{	text-decoration: underline; }
+
+
+/* Left nav CSS styling */
+a.lnav,
+a:link.lnav,
+a:visited.lnav,
+a:active.lnav	{	display: block; 
+					padding: 7px 4px 7px 8px; 
+					font-size: 75%; 
+					font-weight: bold;
+					background: #7B905B;
+					border-bottom: 1px solid #FFF;
+					color: #FFF;
+					text-decoration: none; }
+a:hover.lnav	{	background: #FFF;
+					color: #416026; }
+
+a.home,
+a:link.home,
+a:visited.home,
+a:active.home	{	background: #416026;
+					padding: 4px 4px 4px 8px; 
+					font-size: 69%; }
+a:hover.home	{	background: #FFF; color: #416026; }
+
+a.current,
+a:link.current,
+a:visited.current,
+a:active.current	{	background: #FFF; color: #416026; }
+
+a.print,
+a:link.print,
+a:visited.print,
+a:active.print	{	display: block;
+					font-size: 75%; 
+					font-weight: bold;
+					padding: 10px 4px 5px 6px; 
+					text-decoration: none;
+					color: #344F1C; }
+a:hover.print	{	text-decoration: underline; }
+
+/* Bottom page elements */							
+div.ww2Foot					{	margin:			4px 0 10px 0;
+									clear:			left;				}
+div.ww2Foot2				{	clear:			left;
+									margin:			4px 0 10px 0;
+									width:			480px;			}
+
+div.ww2FootSearchTitle	{	background:		#6C834D;
+									color:			#FFF;
+									font-size:		75%;
+									font-weight:	bold;
+									padding:			8px;				}
+
+div.ww2FootSearch			{	background:		#FFF;
+									margin:			0;
+									padding:			8px;
+									color:			#000;
+									font-size:		75%;				}
+div.tlFootSearch			{ font-size: 76%; }
+
+div.ww2FootSearch #textinput
+								{	width:			346px;			}
+div.ww2FootSearch #btn-go
+								{	position:		relative;
+									top:				4px;				}
+
+
+/* Bof: don't think is still being used now that I have removed the link at the bottom of the search box but just in case I will leave it in MK */
+a.tlHelp,
+a:link.tlHelp,
+a:visited.tlHelp,
+a:active.tlHelp	{	color: #416026;
+										font-size: 80%;
+										font-weight: bold;
+										text-decoration: none; }
+a:hover.tlHelp	{	text-decoration: underline; }
+/* Eof: don't think is still being used now that I have removed the link at the bottom of the search box but just in case I will leave it in MK */
+
+div.ww2FootExploreTitle	{	background:		#6C834D;
+									color:			#FFF;
+									font-size:		75%;
+									font-weight:	bold;
+									padding:			8px;				}
+div.ww2FootExplore		{	background:		#FFF;
+									margin:			0;
+									padding:			8px;				}
+
+p.footDisclaimer			{	margin:			0;
+									padding:			10px 10px 0 10px;
+									color:			#000;
+									font-size:		64%;
+									font-weight:	bold;
+									font-family:	Arial, Helvetica, sans-serif;	}
+
+p.footDisclaimer a		{	color:			#000000;			}
+									
+/*  Images CSS  */
+div.imgright, 
+div.imgleft, 
+div.imgcentered	{	text-align: center;
+					margin-bottom: 10px; }
+div.imgright span.imgCaption, 
+div.imgleft span.imgCaption, 
+div.imgcentered span.imgCaption	{	font-size: 90%;
+									font-weight: bold;
+									font-family: Arial, Helvetica, sans-serif;
+									color: #666; }
+div.imgright	{	float: right;
+					margin-left: 10px;
+					margin-bottom: 10px; }
+div.imgleft	{	float: left;
+				margin-right: 10px;
+				margin-bottom: 10px; }

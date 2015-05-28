@@ -1,0 +1,82 @@
+/*GLOBAL SETTINGS*/
+body, p, caption, td, li, dd, th {font-family: Verdana, Arial, sans-serif; text-decoration: none; font-size: x-small; color: #000;}
+body {background-color:#49572A; margin-top: 0px;}
+
+.align-left {text-align: left;}
+.align-right {text-align: right;}
+.align-center {text-align: center;}
+.align-justify {text-align: justify;}
+
+table {width: 100%;}
+td {text-align: left; vertical-align: top;}
+
+img {border: 0;}
+img.banner {text-align: center; margin:0px 10px 10px;}
+
+p {margin: 5px 10px;}
+p.noscript {color: #fff;}
+p.noscript a {color: #F3EBA4;}
+
+.ten-px-pad {padding: 10px;}
+.ten-px-pad-cen {padding: 10px;	text-align: center;}
+.modified {font-weight: normal; color: #F3EBA4;   }
+.hidden, .new-browsers {display:none;}
+
+/* WORK AROUND FOR NESTSCAPE IMAGE GAP*/
+img.block {display: block;}
+
+/* CLASSES FOR NAV TEXT LINKS - HOVER SETTINGS ARE IN SCREEN.CSS */
+a.main-nav-current {text-decoration: none; font-weight: bold; color: #49572A;}
+a.main-nav-not-current {text-decoration: none; font-weight: bold; color: #F3EBA4;}
+a.sub {text-decoration: none; font-weight: bold; color: #49572A;}
+a.sec {font-weight: bold;}
+
+/* HEADER TAGS */
+h1 {margin: 0px; font-size: 21px; font-weight: bold; color: #fff;}
+h2 {margin-left: 10px; font-size: large; font-weight: bold; color: #D97C18; margin-top: 0px;}
+h3 {margin-left: 10px; font-size: medium; font-weight: bold; color: #2B4909;}
+h4 {margin-left: 10px; font-size: medium; font-weight: bold; color: #007624;}
+h5 {margin-left: 10px; font-size: small; font-weight: bold;}
+h6 {margin-left: 10px; font-size: small; font-weight: bold; color: #5F7137;}
+
+/* TABLE ROW 1.0 - GLOBAL NAVIGATION  - NO SETTINGS NEEDED FOR NN4 */
+#glob-nav-left {background-color: #49572A;}
+#glob-nav-right {text-align: right; vertical-align: bottom; padding-right: 5px; background-color: #49572A;}
+
+/* TABLE ROW 2.0 - HEADER TABLE */
+#header-tr {background-color: #788A51;}
+#header-right {background-color: #788A51; vertical-align: middle;}
+
+/* TABLE ROW 3.0 - SEARCH AND ARCH TABLE */
+#search-table-left-cell {background-color: #5F7137;}
+#search-table-right-cell {background-color: #FBF8E0;}
+
+/* TABLE ROW 4.0 - MAIN CONTENT AND NAVIGATION TABLE */
+#main-table-left-cell {background-color: #DBD594;}
+#main-table-right-cell {background-color: #FBF8E0; padding: 0px 10px 10px;}
+
+/* TABLE 4.1 - PRIMARY NAVIGATION TABLE CELL AND ROW SETTINGS */
+#prim-nav-table {background-color: #5F7137;}
+.p-link-active-tr {background-color: #E0AE49;}
+.p-link-not-active-tr {background-color: #5F7137;}
+.p-sub-link-tr {background-color: #DBD594;}
+
+/* TABLE 4.2 - SECONDARY NAVIGATION TABLE */
+#sec-nav-table {background-color: #DBD594;}
+#top-space {margin-top: 20px;}
+
+/* TABLE 4.3 - FOREST ADRESS TABLE */
+#address-table {background-color: #DBD594;}
+
+/* TABLE 4.4 - MAIN CONTENT WRAPPER - RELATED LINKS - OPTION */
+#content-wrapper {padding-right: 10px;}
+
+/* TABLE 4.5 - RELATED LINKS TABLE - RELATED LINKS - OPTION */
+#related-nav-table {background-color: #cc9;}
+			
+/* TABLE ROW 5.0 - FOOTER TABLE */
+#footer-table-left-cell {background-color: #DBD594;	vertical-align: middle;	text-align: center;}
+#footer-table-right-cell {background-color: #FBF8E0; vertical-align: middle; text-align: center;}
+.clear {
+	clear: both;
+}

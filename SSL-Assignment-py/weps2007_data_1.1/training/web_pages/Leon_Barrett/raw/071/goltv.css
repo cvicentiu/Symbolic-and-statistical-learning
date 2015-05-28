@@ -1,0 +1,925 @@
+body {
+	margin-top: 0px;
+	margin-left: 0px;
+	background-color: #EFEFEF;
+	filter:progid:DXImageTransform.Microsoft.Gradient(endColorstr='#FFFFFF', startColorstr='#EEEEEE', gradientType='0');
+}
+
+
+/* -------------- Menu  -----------------*/
+
+
+.menubar {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight:bold;
+	color: Black;
+}
+
+a.menu:visited {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 11px;
+	text-decoration: none;
+	font-weight:bold;
+	color: Black;
+}
+
+a.menu:active {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 11px;
+	text-decoration: none;
+	font-weight:bold;
+	color: Black;
+}
+
+a.menu:link {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 11px;
+	text-decoration: none;
+	font-weight:bold;
+	color: Black;
+}
+
+a.menu:hover {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 11px;
+	text-decoration: none;
+	font-weight:bold;
+	color:#0033FF;
+}
+
+
+/* --------------  Links Definitions  -----------------*/
+
+
+a:link {
+	text-decoration: none;
+	color: #2F4F4F;
+}
+a:visited {
+	text-decoration: none;
+	color: #2F4F4F;
+}
+
+a.mail:hover {
+	text-decoration: underline;
+	color: Black;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #8B0000;
+}
+
+a:active {
+	text-decoration: none;
+	color: #2F4F4F;
+}
+
+
+
+a.newsligas:active {
+	text-decoration: none;
+	color: White;
+}
+
+a.newsligas:link {
+	text-decoration: none;
+	color: White;
+}
+
+a.newsligas:visited {
+	text-decoration: none;
+	color: White;
+}
+
+a.newsligas:hover {
+	text-decoration: none;
+	color: Black;
+}
+
+
+a.newsmas:active {
+	text-decoration: none;
+	color:#Black;
+}
+
+a.newsmas:link {
+	text-decoration: none;
+	color: Black;
+}
+
+a.newsmas:visited {
+	text-decoration: none;
+	color: Black;
+}
+
+a.newsmas:hover {
+	text-decoration: none;
+	color: White;
+}
+
+
+a.newsmas2:active {
+	font-size: x-small;
+	text-decoration: none;
+	color:#000066;
+}
+
+a.newsmas2:link {
+	font-size: x-small;
+	text-decoration: none;
+	color:#000066;
+}
+
+a.newsmas2:visited {
+	font-size: x-small;
+	text-decoration: none;
+	color:#000066;
+}
+
+a.newsmas2:hover {
+	font-size: x-small;
+	text-decoration: none;
+	color:#FF9900;
+}
+
+
+a.newsmas3:active {
+	font-size: x-small;
+	font-family:Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+a.newsmas3:link {
+	font-size: x-small;
+	font-family:Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+a.newsmas3:visited {
+	font-size: x-small;
+	font-family:Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+a.newsmas3:hover {
+	font-size: x-small;
+	font-family:Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color: #EEEEEE;
+}
+
+
+
+a.verligas:active {
+	font-size: small;
+	font-family:Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color:#000000;
+}
+
+a.verligas:link {
+	font-size: small;
+	font-family:Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color:#000000;
+}
+
+a.verligas:visited {
+	font-size: small;
+	font-family:Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color:#000000;
+}
+
+a.verligas:hover {
+	font-size: small;
+	font-family:Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color:#FF9900;
+}
+
+
+/* mails programas */
+a.programasmail:active {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: x-small;
+	text-decoration: none;
+	color:#336699;
+}
+
+a.programasmail:visited {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: x-small;
+	text-decoration: none;
+	color:#336699;
+}
+
+a.programasmail:link {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: x-small;
+	text-decoration: none;
+	color:#336699;
+}
+
+a.programasmail:hover {
+	text-decoration: none;
+	color: Orange;
+}
+
+
+/* ----------------------------------------------- */
+
+
+/* --------------  Internas Header  -----------------*/
+
+.internasheader {
+	background-image:url(gfx/header/internas/interno_02.gif);
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: Medium;
+	font-weight:bold;
+	color: White;
+}
+
+.internasheader2 {
+	background-image:url(gfx/header/internas/barritagris_b.gif);
+	height: 24px;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: Small;
+	font-weight:bold;
+	color: White;
+}
+
+
+/* --------------  Cells Definitions  -----------------*/
+
+/* Master Table Box */
+td.homeleft2 {
+	border-left: 1px solid #999999;
+	border-top: 1px solid #FFFFFF;
+	border-bottom: 1px solid #999999;
+	background: #CCCCCC;	
+	width: 199px;
+	vertical-align: top;
+}
+
+td.homeright2 {
+	border-right: 1px solid #999999;
+	border-top: 1px solid #FFFFFF;
+	border-bottom: 1px solid #999999;
+	background: #CCCCCC;	
+	width: 199px;
+	vertical-align: top;
+}
+
+td.homecenter2 {
+	border-top: 1px solid #FFFFFF;
+	background: #FFFFFF;	
+	width: 318px;
+	vertical-align: top;
+}
+
+
+
+
+td.homeleft {
+	border-left: 1px solid #999999;
+	border-top: 1px solid #FFFFFF;
+	border-bottom: 1px solid #999999;
+	background: #CCCCCC;	
+	width: 199px;
+	vertical-align: top;
+}
+
+td.homeright {
+	border-right: 1px solid #999999;
+	border-top: 1px solid #FFFFFF;
+	border-bottom: 1px solid #999999;
+	background: #CCCCCC;	
+	width: 175px;
+	vertical-align: top;
+}
+
+td.homecenter {
+	border-top: 1px solid #FFFFFF;
+	background: #FFFFFF;	
+	width: 342px;
+	vertical-align: top;
+}
+
+td.homeleftshadow{
+	background-image: url(gfx/mastertable/center-leftshadow.gif);
+	width: 10px;
+	height: 100%;
+}
+
+td.homeoutleftshadow{
+	background-image: url(gfx/mastertable/shadowleft.gif);
+	width: 7px;
+	height: 100%;
+}
+
+td.homerightshadow{
+	background-image: url(gfx/mastertable/center-rightshadow.gif);
+	width: 10px;
+	height: 100%;
+}
+
+td.homeoutrightshadow{
+	background-image: url(gfx/mastertable/shadowright.gif);
+	width: 7px;
+	height: 100%;
+}
+
+
+/* ----------------------------------------------- */
+
+
+/* Noticias Box */
+
+
+td.noticiafotocaption{
+	background-color: #CDD9E7;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	color: #1F0093;
+	text-align:center;
+}
+
+td.noticiafotoback{
+	background-color: #E8EDF3;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align:center;
+}
+
+table.news{
+	width: 316px;
+	table-layout: fixed;
+}
+
+td.newstop{
+	background-image: url(gfx/infocells/noticias/top.gif);
+	width: 316px;
+	height: 29px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	color: Black;
+	text-align:center;
+	font-weight: bold;	
+}
+
+td.newscentral {
+	background: #4C87C3;
+	text-align: left;
+	padding-left: 5px;
+}
+
+td.newsinternal {
+	background: #EEEEEE;
+	text-align: left;
+	padding-left: 3px;
+}
+
+td.newsbottom{
+	width: 316px;
+	height: 25px;
+}
+
+
+/* ----------------------------------------------- */
+
+/* GolMail Box */
+
+table.golmail{
+	width: 192px;
+	border-bottom: 1px solid black;
+}
+
+td.golmailtop{
+	background-image: url(gfx/infocells/golmail/contactenos_superior2.gif);
+	width: 192px;
+	height: 30px;
+}
+
+td.golmailcentral {
+	background: #FF9900;
+	border-right: 1px solid Black;
+	border-left: 1px solid Black;
+}
+
+td.golmailbottom{
+	background-image: url(gfx/infocells/golmail/contactenos_inferior.gif);
+	width: 192px;
+	height: 30px;
+}
+
+/* english */
+
+td.golmailtopen{
+	background-image: url(gfx/infocells/golmail/en_contactenos_superior.gif);
+	width: 192px;
+	height: 30px;
+}
+
+/* ----------------------------------------------- */
+
+
+
+/* Juegos de la semana Box */
+
+td.horariosprogramacion {
+	background: #F4F4F4;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: x-small;
+	color: #478CB0;
+	text-align: center;
+	padding: 5px;
+	border-top: medium solid;
+	border-color: #CDCDCD;
+}
+
+td.textos-programacion {
+	background: #F4F4F4;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: x-small;
+	color: #00008B;
+	text-align: center;
+	padding: 5px;
+	border-top: medium solid;
+	border-color: #C7C7C7;
+}
+
+td.juegosdelasemana{
+	background-image: url(gfx/infocells/top_back.gif);
+	width: 155px;
+	height: 28px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	color: Black;
+	text-align:center;
+	font-weight: bold;	
+}
+
+td.juegosdelasemanagames{
+	border-bottom: 1px solid #CCCCCC;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	background-color: White;
+}
+
+.text-juegosdelasemanagame{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: x-small;
+	color: Black;
+	text-align: left;
+}
+
+
+/* Info Boxes */
+
+table.boxes {
+	width:192px;
+	table-layout: fixed;	
+}
+
+table.boxes170 {
+	width:170px;
+}
+
+td.boxheader{
+	background-image: url(gfx/infocells/top_back.gif);
+	width: 166px;
+	height: 28px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	color: Black;
+	text-align:center;
+	font-weight: bold;	
+}
+
+td.boxheaderleft{
+	background-image: url(gfx/infocells/top_left.gif);
+	width: 13px;
+	height: 28px;
+}
+
+td.boxheaderright{
+	background-image: url(gfx/infocells/top_right.gif);
+	width: 13px;
+	height: 28px;
+}
+
+td.right-boxheaderright{
+	background-image: url(gfx/infocells/top_right.gif);
+	width: 13px;
+	height: 28px;
+}
+
+td.right-boxheaderleft{
+	background-image: url(gfx/infocells/top_left.gif);
+	width: 13px;
+	height: 28px;
+}
+
+td.right-boxheader{
+	background-image: url(gfx/infocells/top_back.gif);
+	width: 144px;
+	height: 28px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	color: Black;
+	text-align:center;
+	font-weight: bold;	
+}
+
+td.boxmediumright{
+	width: 13px;
+}
+
+td.boxmediumleft{
+	width: 13px;
+}
+
+td.boxmediumwideborder{
+	width: 192px;
+	border-bottom: 1px solid #EEEEEE;
+	background: White;
+	text-align: left;
+	padding-left: 3px;
+}
+/* ----------------POSICIONES---------------- */
+td.posicionliga{
+	background-image:url(gfx/tablapuntos/header.gif);
+	text-align:center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	color: White;
+}
+
+td.posiciontitulo{
+	background-image: url(gfx/tablapuntos/01.gif);
+	text-align:center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	color: White;
+	border-bottom: 1px solid White;
+}
+
+td.posicionpuestotit{
+	background-image: url(gfx/tablapuntos/02.gif);
+	text-align:center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: x-small;
+	color: Black;
+	border-right: 1px solid White;
+}
+
+td.posicionequipotit{
+	background-image: url(gfx/tablapuntos/03.gif);
+	text-align:center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: x-small;
+	color: Black;
+	border-right: 1px solid White;
+}
+
+td.posicionpuntosl1a{
+	background-color: #D1ECFF;
+	text-align:center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: x-small;
+	color: Black;
+	border-right: 1px solid White;
+}
+
+td.posicionpuntosl1b{
+	background-color: #E7F5FE;
+	text-align:center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: x-small;
+	color: Black;
+	border-right: 1px solid White;
+}
+
+td.posicionpuntosl2a{
+	background-color: #BCDFFF;
+	text-align:center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: x-small;
+	color: Black;
+	border-right: 1px solid White;
+}
+
+td.posicionpuntosl2b{
+	background-color: #DBEEFD;
+	text-align:center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: x-small;
+	color: Black;
+	border-right: 1px solid White;
+}
+/* -------------------------------------------- */
+
+td.newsletterinfo{
+	border-bottom: 1px solid;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: X-small;
+	text-align:center;
+	background-color: #E2E2E2;
+}
+
+/* Text Definitions*/
+
+.text-juegosdelasemanafecha{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	font-weight: bold;
+	color: #FD7700;
+	text-align: left;
+}
+
+.text-newsligafecha{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	color: White;
+}
+
+.text-newsligafecha2{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	color: #FF9900;
+}
+
+.text-news{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: x-small;
+	color: White;
+}
+
+.text-newssmall{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	color: White;
+}
+
+.text-news2{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	color: Black;
+}
+
+.text-tituloligas{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	font-weight:bold;
+	color: #FF9900;
+}
+
+.text-x-smallblack{
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: x-small;
+	color: #000000;
+}
+
+.text-x-smallorange{
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: x-small;
+	color: #FF9900;
+}
+
+.text-smallorange{
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: small;
+	color: #FF9900;
+}
+
+.text-programacionfecha{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	color: #AAAAAA;
+	border-bottom: 1px solid;
+	border-left: 1px solid;
+	border-right: 1px solid;
+	padding-left: 5px;
+}
+
+.text-programacionfechatitle{
+	background-image: url(gfx/programacion/barrita01.gif);
+	font-family: verdana, Helvetica, sans-serif;
+	font-size: small;
+	color:#FFFFFF;
+	font-weight: bold;
+	border-bottom: 1px solid #AAAAAA;
+}
+
+.text-programacionhoratitle{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: x-small;
+	color: #AAAAAA;
+	border-bottom: 1px solid #AAAAAA;
+	border-right: 1px solid #AAAAAA;
+	border-left: 1px solid #AAAAAA;
+}
+
+.text-programacionhora{
+	height: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: x-small;
+	color: #AAAAAA;
+	border-bottom: 1px dotted #AAAAAA;
+	border-right: 1px solid #AAAAAA;
+	border-left: 1px solid #AAAAAA;
+}
+
+.text-programacionprograma{
+	font-family: Arial, Helvetica, sans-serif;
+	height: 20px;
+	font-size: x-small;
+	color: #000000;
+	border-bottom: 1px dotted;
+	border-left: 1px solid #AAAAAA;
+	border-right: 1px solid #AAAAAA;
+	padding-left: 5px;
+}
+
+
+.linksfechas{
+	border-bottom: 1px dotted #AAAAAA;
+	border-top: 1px dotted #AAAAAA;
+	border-left: 1px solid #AAAAAA;
+	border-right: 1px solid #AAAAAA;
+}
+
+.textfooter{
+	height: 19px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: x-small;
+	color: #000000;
+}
+
+.textnoticias{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: x-small;
+	color: #000000;
+}
+
+.textnoticiasbig{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	color: #000000;
+}
+
+.textnoticiastitulo{
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: x-small;
+	font-weight: bold;
+	color: #999999;
+}
+
+.textnoticiastitulo2{
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: small;
+	font-weight: bold;
+	color: #999999;
+}
+
+.textnoticiasliga{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small;
+	font-weight: bold;
+	color:#FF9900;
+}
+
+.textnoticiasfecha{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: x-small;
+	color:#FF9900;
+}
+
+.formbutton { 
+ font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif; 
+ background-color: #FF9900; 
+ color: White; 
+ font-weight:bold;
+}
+
+.fieldcell { 
+ font: 11px Verdana, Geneva, Arial, Helvetica, sans-serif; 
+ background-color: #F2F7FB; 
+ color: #000000; 
+ text-align: left; 
+ margin-right: 0px; 
+ padding-right: 0px; 
+} 
+
+/* ---------------  PRESS ROOM  ----------------------------- */
+
+a.pressroomdownload:visited {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: x-small;
+	text-decoration: none;
+	color: #3399FF;
+}
+
+a.pressroomdownload:active {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: x-small;
+	text-decoration: none;
+	color: #3399FF;
+}
+
+a.pressroomdownload:link {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: x-small;
+	text-decoration: none;
+	color: #3399FF;
+}
+
+a.pressroomdownload:hover {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: x-small;
+	text-decoration: none;
+	color: Black;
+}
+
+.pressroom_black {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: x-small;
+	text-decoration: none;
+	color: Black;
+}
+
+.pressroom_titulos {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: small;
+	text-decoration: none;
+	color: #0066CC;
+	font-weight:bold;
+}
+
+.pressroom_titulosdes {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: small;
+	text-decoration: none;
+	color:#CC0000;
+	font-weight:bold;
+}
+
+/* Ligas Titulos */
+
+td.ligatitulo{
+	background-image: url(gfx/ligas/barrita_noticiasligas.gif);
+	vertical-align: middle;
+	width: 300px;
+	height: 18px;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-variant:small-caps;
+	font-size: small;
+	text-decoration: none;
+	color: #000000;
+}
+
+a.ligas:visited {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: small;
+	text-decoration: none;
+	color: #000000;
+}
+
+a.ligas:active {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: small;
+	text-decoration: none;
+	color: #000000;
+}
+
+a.ligas:link {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: small;
+	text-decoration: none;
+	color: #000000;
+}
+
+a.ligas:hover {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: small;
+	text-decoration: none;
+	color:#FF9900;
+}
+
+td.tiemporealnoticia{
+	background-image: url(gfx/liveresults/barritatexto.gif);
+	height: 65px;
+	vertical-align: middle;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: x-small;
+	font-weight: bold;
+	text-decoration: none;
+	color: #336699;
+}

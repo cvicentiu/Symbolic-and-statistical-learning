@@ -1,0 +1,132 @@
+@media screen {
+
+
+	#headerContainer {
+		font-size : 80%;
+	}
+
+	#headerContainer td {
+		font-size : 80%;
+	}
+
+	#headerContainer a {
+
+		color : white;
+
+		text-decoration : none;
+
+	}
+
+	#headerContainer a:hover {
+
+		color : white;
+
+		text-decoration : underline;
+
+	}
+
+	#logoContainer {
+
+		background-image : url( '../Images/LogoBackground.gif' );
+
+		height : 109px;
+
+	}
+
+	#imageryContainer {
+		text-align : right;
+	}
+
+	#titleAndImageryContainer {
+
+		background-image : url( '../Images/HeaderBackground.gif' );
+
+		height : 65px;
+
+	}
+
+	#titleContainer {
+		height : 65px;
+	}
+
+	#imageryContainer {
+		height : 65px;
+	}
+
+	#stateLinkContainer {
+
+		background-image : url( '../Images/BlueBarLeftBackground.gif' );
+
+		height : 44px;
+
+	}
+
+	#agenciesAndServicesContainer {
+
+		background-image : url( '../Images/BlueBarTopBackground.gif' );
+
+		height : 22px;
+
+		text-align : right;
+		text-transform : uppercase;
+
+		vertical-align : middle;
+
+	}
+
+	#agenciesAndServicesContainer a {
+
+		padding-left : 0.5em;
+		padding-right : 0.5em;
+
+	}
+
+	#departmentHeaderLinksContainer {
+
+		background-image : url( '../Images/BlueBarBottomBackground.gif' );
+
+		height : 22px;
+
+		text-align : right;
+
+		vertical-align : middle;
+
+	}
+
+	#departmentHeaderLinksContainer ul {
+
+		display : inline;
+
+		list-style-type : none;
+
+	}
+
+	#departmentHeaderLinksContainer li {
+		display : inline;
+	}
+
+	#departmentHeaderLinksContainer a {
+
+		border-right : solid 1px white;
+
+		padding-left : 0.5em;
+		padding-right : 0.5em;
+
+	}
+
+	#departmentHeaderLinksContainer a.Last {
+		border : none;
+	}
+
+
+}
+
+
+
+@media print {
+
+	#headerContainer {
+		display : none;
+	}
+
+}

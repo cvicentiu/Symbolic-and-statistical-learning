@@ -1,0 +1,25 @@
+# robots.txt for http://www.attorneypages.com/
+# hk 03-12-02
+
+User-agent: Googlebot
+Disallow: /images
+Disallow: /example
+Disallow: /justedit
+Disallow: /cgi-bin
+Disallow: /_tmp
+Disallow: /_temp
+Disallow: /_apadmin
+Disallow: /secure
+Disallow: /feedpatrol
+Disallow: /*.js
+
+User-agent: *
+Disallow: /images # Do not visit images dir
+Disallow: /example # Do not visit example dir
+Disallow: /justedit # Do not visit justedit dir
+Disallow: /cgi-bin # Do not visit cgi-bin dir
+Disallow: /_tmp
+Disallow: /_temp
+Disallow: /_apadmin
+Disallow: /secure
+Disallow: /feedpatrol

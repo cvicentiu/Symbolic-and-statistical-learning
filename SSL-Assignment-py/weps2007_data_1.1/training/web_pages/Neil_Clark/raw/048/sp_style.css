@@ -1,0 +1,459 @@
+@import "sp_forms.css";
+
+a, a:link, a:active		{
+	background-color: transparent;
+	color: #FFBD31;
+	text-decoration: none;
+}
+
+a:visited	{
+	background-color: transparent;
+	color: #F0A300;
+	text-decoration: none;
+}
+
+a:hover		{
+	background-color: transparent;
+	color: #99CC33;
+}
+
+blockquote{
+	background-color: transparent;
+	color: #DEDF2F;
+	font-size: 16px;
+}
+
+body {
+	background-color: #537F28;
+	background-image: url(http://www.stephenpollard.net/sp_bkg.gif);
+	background-position: top;
+	background-repeat: repeat-x;
+	color: #F5F5F5;
+	margin: 0px 0px 0px 0px;
+}
+
+h1 {
+	font-size: 14px;
+	padding-top: 10px;
+}
+
+h1, h2, h3 {
+	margin: 0px;
+	padding: 0px;
+}
+
+hr{
+	background-color: transparent;
+	color: #CC9933;
+	height: 1px;
+}
+
+html>body #banner {
+	height: 175px;
+}
+
+img{
+	border: none;
+}
+
+img.pbuttons{
+	vertical-align: middle;
+}
+
+input{
+	background-color: #99CC33;
+	color: #336633;
+	font-family: tahoma, helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+input.check{
+	background-color: transparent;
+	border: none;
+	color: #336633;
+}
+
+input.combtnpost{
+	background-color: #BBBB1C;
+	color: #336666;
+	font-family: "Trebuchet MS", Geneva, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+input.commentbutton{
+	background-color: #99CC00;
+	color: #336666;
+	font-family: "Trebuchet MS", Geneva, sans-serif;
+	font-size: 10px;
+}
+
+input.commentfield{
+	background-color: #99CC33;
+	color: #2D3B0F;
+	font-family: "Trebuchet MS", Geneva, sans-serif;
+	font-size: 11px;
+	margin-bottom: 5px;
+	width: 150px;
+}
+
+input.go {
+	background-color: #BBBB1C;
+	color: #336666;
+	font-size: 10px;
+	font-weight: normal;
+	margin-left: 3px;
+	margin-right: 3px;
+	margin-top: 5px;
+}
+
+select{
+	background-color: #99CC33;
+	color: #336633;
+	font-family: tahoma, helvetica, sans-serif;
+	font-size: 12px;
+	width: 180px;
+}
+
+textarea.commentarea {
+	background-color: #99CC33;
+	color: #2D3B0F;
+	font-family: "Trebuchet MS", Geneva, sans-serif;
+	font-size: 12px;
+	margin-bottom: 5px;
+	padding-left: 5px;
+	width: 400px;
+}
+
+.archivebody{
+	font-family: tahoma, helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 140%;
+	padding-left: 10px;
+	padding-top: 20px;
+}
+
+.blog {
+	padding-left: 230px;
+}
+
+.blogbody {
+	background-color: transparent;
+	color: #FFFFFF;
+	font-family: tahoma, helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 140%;
+	padding-left: 30px;
+	text-align: justify;
+}
+
+.blogbody a,
+	.blogbody a:link,
+	.blogbody a:visited,
+	.blogbody a:active,
+	.blogbody a:hover {
+	font-weight: normal;
+}
+
+.comments-body {
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 140%;
+	padding-bottom: 10px;
+}
+
+.comments-head	{
+	background-color: transparent;
+	border-bottom: 1px solid #CC9933;
+	color: #99CC66;
+	font-family: tahoma, helvetica, sans-serif;
+	font-size: 14px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding-right: 10px;
+}
+
+.comments-post {
+	background-color: transparent;
+	color: #FFFFFF;
+	font-family: tahoma, helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	margin-top: 0px;
+	padding-right: 10px;
+}
+
+.comments-separator{
+	margin-bottom: 20px;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.day{
+	background-color: transparent;
+	color: #CCCC33;
+	font-size: 30px;
+	font-weight: bold;
+	padding-left: 6px;
+}
+
+.description {
+	background-color: transparent;
+	color: #CCCCCC;
+	font-family: tahoma, helvetica, sans-serif;
+	font-size: x-small;
+	font-weight: bold;
+	letter-spacing: normal;
+	text-transform: none;
+}
+
+.extended{
+	font-size: 12px;
+	font-style: italic;
+	margin-top: 10px;
+}
+
+.green{
+	background-color: transparent;
+	color: #99CC66;
+}
+
+.intro{
+	background-color: transparent;
+	color: #DEDF2F;
+	line-height: 130%;
+	margin-bottom: 30px;
+	margin-top: 5px;
+	padding-left: 5px;
+	text-align: justify;
+}
+
+.menuforms{
+	text-align: center;
+}
+
+.menuitem{
+	margin-bottom: 30px;
+	margin-top: 15px;
+	padding-left: 5px;
+}
+
+.menutitle{
+	background-color: transparent;
+	border-bottom: 1px solid #CC9933;
+	color: #CCFF99;
+	font-family: tahoma, helvetica, sans-serif;
+	font-size: 13px;
+	font-variant: small-caps;
+	font-weight: bold;
+	padding-bottom: 2px;
+	padding-left: 5px;
+}
+
+.month{
+	background-color: transparent;
+	color: #F0A300;
+	font-size: 12px;
+	vertical-align: bottom;
+}
+
+.postbuttons{
+	background-color: transparent;
+	color: #BBBB1C;
+	font-family: tahoma, helvetica, sans-serif;
+	font-size: 10px;
+	margin-top: 20px;
+	padding-left: 10px;
+}
+
+.posted	{
+	font-family: tahoma, helvetica, sans-serif;
+	font-size: 11px;
+	padding-bottom: 25px;
+}
+
+.posted a,
+	.posted a:link,
+	.posted a:visited,
+	.posted a:active,
+	.posted a:hover {
+	font-weight: normal;
+}
+
+.separator{
+	margin-bottom: 20px;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.syndicate{
+	margin: 20px;
+	text-align: center;
+}
+
+.title	{
+	background-color: transparent;
+	border-bottom: 1px solid #CC9933;
+	color: #C1EC68;
+	font-family: tahoma, helvetica, sans-serif;
+	font-size: 14px;
+	font-variant: small-caps;
+	font-weight: bold;
+}
+
+.trackback-body {
+	background-color: transparent;
+	color: #DCDCDC;
+	font-family: tahoma, helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	line-height: 140%;
+	padding-bottom: 10px;
+}
+
+.trackback-post {
+	background-color: transparent;
+	color: #DCDCDC;
+	font-family: tahoma, helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+
+.trackback-url {
+	background-color: transparent;
+	color: #DCDCDC;
+	font-family: tahoma, helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	padding-bottom: 10px;
+}
+
+.under{
+	text-decoration: underline;
+}
+
+.upper{
+	text-transform: uppercase;
+}
+
+.year{
+	background-color: transparent;
+	color: #CCCC33;
+	font-size: 12px;
+	vertical-align: top;
+}
+
+#banner {
+	height: 175px;
+	width: 760px;
+}
+
+#banner-commentspop {
+	background: transparent url(http://www.stephenpollard.net/img/sp_popup_banner.jpg) no-repeat;
+	color: #CC9933;
+	height: 110px;
+}
+
+#blogroll{
+	margin-bottom: 30px;
+	margin-top: 25px;
+	padding-left: 5px;
+}
+
+#blogroll a,
+        #blogroll a:link,
+        #blogroll a:visited,
+        #blogroll a:active {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#blogroll a:hover {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#body-commentspop{
+	padding-right: 10px;
+}
+
+#date	{
+	font-family: tahoma, helvetica, sans-serif;
+	margin-bottom: 30px;
+	margin-right: 5px;
+	margin-top: 40px;
+	text-align: right;
+}
+
+#main {
+	background: transparent;
+	color: #DCDCDC;
+	margin-top: 5px;
+	width: 760px;
+}
+
+#main #menu {
+	float: left;
+	margin: 0px 0px 10px 0px;
+	width: 230px;
+}
+
+#menu {
+	background-color: transparent;
+	color: #DCDCDC;
+	font-family: tahoma, helvetica, sans-serif;
+	font-size: 13px;
+	padding-right: 10px;
+}
+
+#menu a,
+        #menu a:link,
+        #menu a:visited,
+        #menu a:active {
+	background-color: transparent;
+	color: #B1D664;
+	text-decoration: none;
+}
+
+#menu a:hover {
+	background-color: transparent;
+	color: #FFBD31;
+	text-decoration: underline;
+}
+
+#menuhead {
+	background-color: transparent;
+	background-image: url(http://www.stephenpollard.net/img/menu_head.jpg);
+	color: #F5F5F5;
+	margin-bottom: 10px;
+	margin-top: 5px;
+	text-align: center;
+}
+
+#nav {
+	background-color: #669933;
+	color: #DCDCDC;
+	font-family: tahoma, helvetica, sans-serif;
+	font-size: 11px;
+	margin-top: 10px;
+}
+
+#nav a,
+        #nav a:link,
+        #nav a:visited,
+        #nav a:active {
+	background-color: transparent;
+	color: #99CC66;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+#nav a:hover {
+	background-color: transparent;
+	color: #CC9933;
+	font-weight: normal;
+	text-decoration: underline;
+}

@@ -1,0 +1,72 @@
+
+
+var lcl = {
+    
+        'js.addrstr2' : 'enter a new address',
+        'js.viewweb' : 'View Website',
+        'js.closewin' : '[ close window ]',
+        'js.map.saved.location.edit' : 'Edit',
+        'js.map.saved.location.edit.title' : 'Edit {0}',
+        'js.closefly' : 'close flyout',
+        'js.getdirs' : 'Get Directions',
+        'js.letters' : 'abcdefghijklmnopqrstuvwxyz',
+        'js.cancel' : 'Cancel',
+        'js.closefromwin' : 'close',
+        'js.err' : 'Error',
+        'js.addtoplaces' : 'Add to My Places',
+        'js.expcoll' : 'Collapse/Expand this list',
+        'js.multimatches' : 'Multiple Matches',
+        'js.smallmapinstr' : 'Mouse over an icon to see business info',
+        'js.expandall' : 'expand all quick info',
+        'js.less' : 'less',
+        'js.myplace.added' : '"{0}" has been added to your places.',
+        'js.loading' : 'Loading...',
+        'js.inplacespc' : 'In My Places',
+        'js.adespanol' : 'en espa\xf1ol',
+        'js.map.new.place.name' : 'Name',
+        'js.save' : 'Save',
+        'js.noaddr' : 'This location does not have a valid address to map.',
+        'js.next' : 'Next',
+        'js.more' : 'more',
+        'js.flyout.findnearby.find' : 'Find',
+        'js.map.new.place.create.title' : 'Create New Place',
+        'js.collapseall' : 'collapse all quick info',
+        'js.addr' : 'Address',
+        'js.what.default' : 'eg: dentists or tooth whitening',
+        'js.collapseqi' : 'collapse quick info',
+        'js.find.nearby.alt' : 'close',
+        'js.expandqi' : 'expand quick info',
+        'js.note' : 'Note',
+        'js.view.myplaces' : 'view my places',
+        'js.locname' : 'Location Name',
+        'js.flyout.findnearby' : 'Find Nearby',
+        'js.adenglish' : 'in english',
+        'js.edit' : 'Edit',
+        'js.find.nearby' : 'find nearby:',
+        'js.from' : 'From',
+        'js.initinpc' : 'In My Itinerary',
+        'js.ellipsis' : '...',
+        'js.adnum' : 'ad {0} of {1}',
+        'js.inplaces' : 'in my places',
+        'js.addrstr1' : 'address, city, and state',
+        'js.to' : 'To',
+        'js.map.saved.location.remove' : 'Delete',
+        'js.signinplaces' : 'Sign in for more places',
+        'js.map.saved.location.add.to.itinerary' : 'Add to Itinerary',
+        'js.prev' : 'Previous',
+        'js.myplace.failed' : '"{0}" could not be added to your places.',
+        'js.addtoitin' : 'Add to My Itinerary',
+        'js.where.default' : 'eg: Denver, CO or 200 E Colfax Ave, Denver CO',
+        'js.printerr' : 'Sorry, we cannot print from this link in this browser.  Please select print from the file menu.',
+    getString : function( key ) {
+        var str = '';
+        if( this[key] ) {
+            str = this[key];
+            for( var i = 1; i < arguments.length; ++i ) {
+                str = str.replace( '{' + ( i - 1 ) + '}', arguments[i] );
+            }
+        }
+        
+        return str;
+    }
+}

@@ -1,0 +1,31 @@
+#
+# Robot exclusion file.  This specifies what "intelligent" web robots
+# may (and may not) search for on our site.  Of course, the individual
+# writer may choose to ignore this file, but most follow it.
+#
+# Removed in-line comments.  I think 'scooter' (Alta-Vista) gets confused 
+# by the and decides to ignore the 'Disallow:' directives.
+# 
+# Added printable to keep from double-dipping the new clasnet site. -geof
+#
+User-agent: *
+Disallow: /ftp
+Disallow: /cgi
+Disallow: /cgi-bin
+Disallow: /~
+Disallow: /users/kludwig
+Disallow: /archives
+Disallow: /internal
+Disallow: /clasnet/internal
+Disallow: /novell
+Disallow: /mail
+Disallow: /images
+Disallow: /~hager
+Disallow: /admin/admin.html
+Disallow: /math-net/
+Disallow: /mindterm/
+Disallow: /printable/
+Disallow: /webtemps/
+
+User-Agent: W3C-checklink
+Disallow:

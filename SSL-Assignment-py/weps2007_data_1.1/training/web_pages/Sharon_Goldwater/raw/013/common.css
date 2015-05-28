@@ -1,0 +1,198 @@
+@media print {
+	a
+	{
+	background-color:white;
+	color:black;
+	text-decoration:none;
+	}
+
+	#SideNavigation,#SubNavigation
+	{
+	display:none;
+	}
+}
+
+body
+{
+	margin:0;
+}
+
+td
+{
+	vertical-align:top;
+}
+
+img
+{
+	border:0;
+}
+
+h1
+{
+	clear:both;
+}
+
+h2
+{
+	clear:both;
+	margin-bottom:.5em;
+	margin-top:1em;
+	padding-bottom:.5em;
+	padding-top:1em;
+}
+
+.PrincipalInvestigator
+{
+	font-size:larger;
+	font-weight:bold;
+}
+
+ul.Personnel
+{
+	list-style-type:none;
+}
+
+#LabTemplate
+{
+	margin:0 !important;
+	padding:0 !important;
+}
+
+#LabNameHeader
+{
+	color:rgb(0,102,153);
+	font-weight:bold;
+	padding-bottom:.5em;
+	padding-top:.5em;
+}
+
+#DocumentBody
+{
+	padding-top:1em;
+}
+
+#SideText
+{
+	max-width:209px;
+}
+
+#SiteSearch,#SiteSearch * input
+{
+	font-size:xx-small;
+}
+
+.trail
+{
+	color:rgb(255,255,255);
+	font-family:Helvetica, Arial, sans-serif;
+	font-size:7pt;
+	font-weight:bold;
+	letter-spacing:1px;
+	text-decoration:none;
+}
+
+/* The :link selector is important for the mix of hand and MS Word generated HTML we support - Office generates a:link CSS rules which are more specific than a generic a */
+a.trail,a.trail:link,a.trail:visited
+{
+	background-color:#006699;
+	color:white !important;
+	text-decoration:none;
+}
+
+.body
+{
+	color:rgb(0,0,0);
+	font-family:Helvetica, "MS Sans Serif", Arial, sans-serif;
+	font-size:10pt;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+.bodylink
+{
+	color:rgb(0,0,0);
+	font-family:Helvetica, "MS Sans Serif", Arial, sans-serif;
+	font-size:10pt;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+.caption
+{
+	color:rgb(0,0,0);
+	font-family:Verdana, Helvetica, Arial, sans-serif;
+	font-size:7pt;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+.captionlink
+{
+	color:rgb(0,102,153);
+	font-family:Verdana, Helvetica, Arial, sans-serif;
+	font-size:7pt;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+.menuitem
+{
+	color:black;
+	font-family:Helvetica, Arial, sans-serif;
+	font-size:8pt;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+.menuitem a,.menuitem a:visited
+{
+	color:black !important;
+	text-decoration:none;
+}
+
+.menuitem a:hover
+{
+	color:#006699 !important;
+}
+
+.tabletitle
+{
+	color:rgb(0,102,153);
+	font-family:Helvetica, Arial, sans-serif;
+	font-size:10pt;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+.quote
+{
+	color:rgb(0,102,153);
+	font-family:Verdana, Helvetica, Arial, sans-serif;
+	font-size:14pt;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+td.trail,ul.Personnel li img
+{
+	vertical-align:middle;
+}
+
+a.trail:hover,.trail a:hover,.maillink a:hover
+{
+	text-decoration:underline;
+}
+
+.bodylink A:hover,.menuitem A:hover
+{
+	color:rgb(0,102,153);
+}
+
+.maillink,.subhead
+{
+	color:rgb(0,102,153);
+	font-family:Helvetica, "MS Sans Serif", Arial, sans-serif;
+	font-size:10pt;
+	font-weight:normal;
+	text-decoration:none;
+}

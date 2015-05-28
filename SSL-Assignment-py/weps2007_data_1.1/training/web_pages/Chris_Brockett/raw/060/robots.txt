@@ -1,0 +1,23 @@
+#Waterville Robots.txt File
+#created 9/11/06
+
+User-agent: *
+
+#Directories
+Disallow: /apps
+Disallow: /aspnet_client
+Disallow: /images
+Disallow: /logs
+Disallow: /tpbase
+Disallow: /wvassets
+Disallow: /wvbase
+Disallow: /wvnordicassets
+Disallow: /wvsnowsassets
+
+
+#Pages
+Disallow: /events.calendar.list.asp
+Disallow: /events.calendar.month.asp?startdate
+Disallow: /groomingreport.asp?
+Disallow: /error404.asp
+Disallow: /index-redirect.asp

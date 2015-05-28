@@ -1,0 +1,370 @@
+
+body  {
+	background : white;
+	font-family: Verdana, Geneva, Arial, Helvetica,  sans-serif;
+	font-size: small;
+	margin : 0px;
+	padding : 0px;
+	color: #000000;
+}
+
+form  {
+        font-family: Verdana, Geneva, Arial, Helvetica,  sans-serif;
+        font-size: small;
+	margin : 0px;
+}
+
+
+a:link  {
+	color: #002299;
+}
+
+
+a:visited  {
+	color: #007799;
+}
+
+a:hover {
+	color: #e58c18;
+} 
+
+a:active  {
+	color: #CC66CC;
+}
+
+
+div#tipDiv {
+  position:absolute; visibility:hidden; left:0; top:0; z-index:10000;
+  background-color:#ffffff; border:1px solid #336;
+  width:350px; padding:4px;
+  overflow: hidden;
+  padding: 5px; 
+}
+
+
+.opentype {
+	vertical-align: top;
+	background-color: #9CD9B3;
+}
+
+.truetype {
+	vertical-align: top;
+	background-color: #A1A7D7;
+}
+
+.postscript {
+	vertical-align: top;
+	background-color: #F8B096; 
+}
+
+
+
+tt, pre {
+	font-family: monospace;
+	font-size: medium;
+}
+
+
+p  {
+        font-family: Verdana, Geneva, Arial, Helvetica,  sans-serif;
+        font-size: small;
+        margin-top: 0.7em;
+	margin-bottom: 0.7em;
+}
+
+p.smaller {
+        font-family: Verdana, Geneva, Arial, Helvetica,  sans-serif;
+        font-size: x-small;
+	margin-top: 0.7em;
+	margin-bottom: 0.7em;
+}
+
+th {
+        font-family: Verdana, Geneva, Arial, Helvetica,  sans-serif;
+        font-size: small;
+	font-weight: bold;
+	text-align: left;
+}
+
+td  {
+        font-family: Verdana, Geneva, Arial, Helvetica,  sans-serif;
+        font-size: small;
+	margin-top: 0.7em;
+	margin-bottom: 0.7em;
+}
+
+
+ol, ul, li {
+        font-family: Verdana, Geneva, Arial, Helvetica,  sans-serif;
+        font-size: small;
+}
+
+h1, .title  {
+        font-family: Verdana, Geneva, Arial, Helvetica,  sans-serif;
+        font-size: x-large;
+	font-weight : bold;
+	margin-top: 6pt;
+	margin-bottom: 4pt;
+}
+
+h2, .subhead, .fpheader  {
+        font-family: Verdana, Geneva, Arial, Helvetica,  sans-serif;
+        font-size: large;
+	font-weight : bold;
+	margin-top: 6pt;
+	margin-bottom: 2pt;
+}
+
+
+h3, .biggish {
+        font-family: Verdana, Geneva, Arial, Helvetica,  sans-serif;
+        font-size: medium;
+	font-weight: normal;
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+
+
+.searchtip {
+	font-family: "Comic Sans MS", Arial, Helvetica;
+	font-size: x-small;
+}
+
+
+.bodylist  {
+	margin-bottom: 0.2em;
+	margin-top: 0.2em;
+	font-size: small;
+}
+
+.tdbgcolor  {
+	background-color : white;
+}
+
+
+.errormsg { 
+	color: #DD0000;
+}
+
+.saleprice {
+	font-weight: bold;
+	color:#FF0000;
+}
+
+.regularprice {
+	text-decoration: line-through;
+}
+
+.price {
+}
+
+.checkout_warning {
+	color: #FF0000;
+        font-family: Verdana, Geneva, Arial, Helvetica,  sans-serif;
+        font-size: medium;
+	margin : 0px;  
+}
+
+
+
+.bigasstitle  {
+	font-size : xx-large;
+	font-weight : bold;    
+}
+
+
+.fontfamilysectionheader  {
+        font-family: Verdana, Geneva, Arial, Helvetica,  sans-serif;
+        font-size: large;
+	font-weight : bold;
+}
+
+
+
+.commenthead {
+        font-family: Verdana, Geneva, Arial, Helvetica,  sans-serif;
+        font-size: medium;
+	font-weight : bold;
+}
+
+
+.commentbody {
+        font-family: Verdana, Geneva, Arial, Helvetica,  sans-serif;
+        font-size: small;
+}
+
+.smalltext  {
+        font-family: Verdana, Geneva, Arial, Helvetica,  sans-serif;
+        font-size: x-small;
+}
+
+.smalllist  {
+        font-family: Verdana, Geneva, Arial, Helvetica,  sans-serif;
+        font-size: x-small;
+	margin-top : 0px;
+	margin-bottom : 0px;	
+}
+
+.externalurl  {
+        font-family: Verdana, Geneva, Arial, Helvetica,  sans-serif;
+	text-indent: -1em;
+	margin-left: 1em;
+}
+
+
+.copy  {
+        font-family: Verdana, Geneva, Arial, Helvetica,  sans-serif;
+        font-size: small;
+}
+
+
+.highlighted {
+	font-weight: bold;
+}
+
+
+.fontcount {
+        font-family: Verdana, Geneva, Arial, Helvetica,  sans-serif;
+        font-size: x-small;
+}
+
+
+.topxableheader {
+
+	background-color : #e3e3e3;
+	color : #505050;
+	margin : 0px;
+	font-size : medium;
+	font-weight : bold;
+	text-align : right;
+}
+
+.topxablebody {
+
+	background-color : #eeeeee;
+	color : #505050;
+	margin : 0px;
+	font-size : small;
+}
+
+.topxablebodylink {
+	color : #e58c18;
+	text-decoration: none;
+	margin : 0px;
+	font-size : small;
+	font-weight : bold;
+}
+
+
+.logocell {
+	width: 236px;
+	background-image: url("/images/header/bluegradient.gif");
+	background-repeat: repeat-y;
+}
+
+
+.sideboxcolumn { 
+	padding:3px;
+	vertical-align:top;
+}
+
+.sideboxicon {
+        font-family: Verdana, Geneva, Arial, Helvetica,  sans-serif;
+        font-size: medium;
+	font-weight: bold;
+	margin: 0px;
+	margin-top: 25px;
+	text-align: center;
+}
+
+.sideboxheader {
+	margin : 0px;
+        font-family: Verdana, Geneva, Arial, Helvetica,  sans-serif;
+        font-size: large;
+	font-weight : bold;	
+}
+
+.sideboxbody {
+        font-family: Verdana, Geneva, Arial, Helvetica,  sans-serif;
+        font-size: small;
+}
+
+
+
+.sideboxsubbody {
+	margin : 0px;
+	font-size : x-small;
+	vertical-align : top;
+}
+
+
+.sideboxlisttoplevel {
+	padding-top : 4px;
+	font-weight : bold; 
+	vertical-align : top;
+	font-size : small;
+}
+
+
+.sideboxlistsecondlevel {
+
+	padding-top : 2px;
+	vertical-align : top;
+        font-family: Verdana, Geneva, Arial, Helvetica,  sans-serif;
+        font-size: x-small;
+	margin : 0px;
+}
+
+
+.sideboxlistitem {
+
+	padding-top : 4px;
+	vertical-align : top;
+	font-size : x-small;
+
+}
+
+
+.sideboxlistsecondlevelitem {
+
+	padding-top : 2px;
+	vertical-align : top;
+        font-family: Verdana, Geneva, Arial, Helvetica,  sans-serif;
+        font-size: x-small;
+	margin : 0px;
+}
+
+
+.lpindex {
+	font-size: medium;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+
+.lptitle {
+	font-size: medium;
+}
+
+
+.lpsubtitle, .lp_blurb {
+	font-size: small;
+}
+
+
+.lpforsale {
+
+	vertical-align: middle;
+}
+
+
+.lpicon {
+
+	vertical-align: top;
+}
+
+.invisiblelink {
+	color: #000000;
+	font-weight: normal;
+	text-decoration : none;
+}

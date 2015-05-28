@@ -1,0 +1,301 @@
+/* Notre Dame Mendoza College of Business Style Settings - http://www.nd.edu/~cba/ */
+/* Created by Brainstorm Design http://www.getzapped.com */
+/* November 2001:  Tim Altman: altman@getzapped.com*/
+
+B {
+	font : bold;
+}
+
+I {
+	font : italic;
+}
+
+H1 {
+	font : 11px Arial, Helvetica, sans-serif;
+	color : #003565;
+}
+
+H2 {
+	font : bold 11px Arial, Helvetica, sans-serif;
+	color : #003565;
+}
+
+H3 {
+	font : bold 13px Arial, Helvetica, sans-serif;
+	color : #000000;
+}
+
+H4 {
+	font : bold 13px Arial, Helvetica, sans-serif;
+	color : #003565;
+}
+
+H5 {
+	font : bold 15px Arial, Helvetica, sans-serif;
+	color : #000000;
+}
+
+H6 {
+	font : bold 15px Arial, Helvetica, sans-serif;
+	color : #003565;
+	}
+
+A:LINK {
+	text-decoration : underline;
+	color : #003565;
+}
+
+A:HOVER {
+	color : #999999;
+	text-decoration : none;
+}
+
+A:VISITED {
+	text-decoration: underline;
+	color : #666666;
+}
+
+A:VISITED:HOVER {
+	color : #666666;
+	text-decoration : none;
+}
+
+
+/* background image classes */
+.norepeat {
+	background-repeat: no-repeat;
+}
+
+.bgxrepeat {
+	background-repeat : repeat-x;
+}
+
+.bgyrepeat {
+	background-repeat : repeat-y;
+}
+
+.nobgimg {
+	background-image : none;
+}
+
+/* end background image classes */
+
+
+.hlink {
+	font : 11px Arial, Helvetica, sans-serif;
+	color : #000000;
+}
+	a.hlink:link {text-decoration : none; color : #000000;}
+	a.hlink:hover {color : #003565; text-decoration : none;}
+	a.hlink:visited {text-decoration: none; color : #000000;}
+	a.hlink:visited:hover {text-decoration: none; color : #003565;}
+	
+.programname {
+	font : 12px Arial, Helvetica, sans-serif;
+	color : #000066;
+}
+	
+.text {
+	font : 11px/20px Arial, Helvetica, sans-serif;
+	color : #000000;
+}
+	a.text:link {text-decoration : underline; color : #CCCCCC;}
+	a.text:hover {color : #003565; text-decoration : none;}
+	a.text:visited {text-decoration: underline; color : #CCCCCC;}
+	a.text:visited:hover {text-decoration: none; color : #003565;}
+
+.textblack {
+	font : 11px Arial, Helvetica, sans-serif;
+	color : #000000;
+}
+	a.textblack:link {text-decoration : none; color : #000000;}
+	a.textblack:hover {color : #999999; text-decoration : none;}
+	a.textblack:visited {text-decoration: none; color : #000000;}
+	a.textblack:visited:hover {text-decoration: none; color : #999999;}
+	
+.textbold {
+	font : bold 11px Arial, Helvetica, sans-serif;
+	color : #000000;
+}
+	a.textbold:link {text-decoration : underline; color : #000000;}
+	a.textbold:hover {color : #FFA400; text-decoration : none;}
+	a.textbold:visited {text-decoration: underline; color : #000000;}
+	a.textbold:visited:hover {text-decoration: none; color : #FFA400;}
+/* 020205 changed default color from #CCCCCC to #000000, PGC */
+	
+.landingtext {
+	font : 10px Arial, Helvetica, sans-serif;
+	color : #000000;
+}
+	a.landingtext:link {text-decoration : none; color : #000000;}
+	a.landingtext:hover {color : #999999; text-decoration : none;}
+	a.landingtext:visited {text-decoration: none; color : #000000;}
+	a.landingtext:visited:hover {text-decoration: none; color : #999999;}
+
+.linksheader {
+	font : 12px Arial, Helvetica, sans-serif;
+	color : #000000;
+}
+	a.linksheader:link {text-decoration : none; color : #000000;}
+	a.linksheader:hover {color : #999999; text-decoration : none;}
+	a.linksheader:visited {text-decoration: none; color : #000000;}
+	a.linksheader:visited:hover {text-decoration: none; color : #999999;}
+
+.links {
+	font : 11px Arial, Helvetica, sans-serif;
+	color : #003565;
+}
+	a.links:link {text-decoration : underline; color : #003565;}
+	a.links:hover {text-decoration : none; color : #999999;}
+	a.links:visited {text-decoration: underline; color : #666666;}
+	a.links:visited:hover {text-decoration: none; color : #666666;}
+/* 020205 changed default color from #000000 to #003565, PGC */
+/* 020205 changed visited color from #999999 to #666666, PGC */
+/* 020205 changed visited:hover color from #999999 to #666666, PGC */
+/* 020205 changed text-decoration from none to underline, PGC */
+
+.quote {
+	font : 10px Arial, Helvetica, sans-serif;
+	color : #003565;
+}
+	a.quote:link {text-decoration : none; color : #003565;}
+	a.quote:hover {color : #999999; text-decoration : none;}
+	a.quote:visited {text-decoration: none; color : #003565;}
+	a.quote:visited:hover {text-decoration: none; color : #999999;}
+	
+
+.mainnav {	
+	font : 11px Arial, Helvetica, sans-serif;	
+	color : #B1A9A2;
+}
+	a.mainnav:link {text-decoration : none; color : #B1A9A2;}
+	a.mainnav:hover {color : #FF9900; text-decoration : none;}
+	a.mainnav:visited {text-decoration: none; color : #B1A9A2;}
+	a.mainnav:visited:hover {text-decoration: none; color : #FF9900;}
+
+.mainnavon {	
+	font : 11px Arial, Helvetica, sans-serif;	
+	color : #003565;
+}
+	a.mainnavon:link {text-decoration : none; color : #003565;}
+	a.mainnavon:hover {color : #FF9900; text-decoration : none;}
+	a.mainnavon:visited {text-decoration: none; color : #003565;}
+	a.mainnavon:visited:hover {text-decoration: none; color : #FF9900;}
+	
+.subnav {	
+	font : 11px Arial, Helvetica, sans-serif;	
+	color : #000000;
+}
+	a.subnav:link {text-decoration : none; color : #000000;}
+	a.subnav:hover {color : #FF9900; text-decoration : none;}
+	a.subnav:visited {text-decoration: none; color : #000000;}
+	a.subnav:visited:hover {text-decoration: none; color : #FF9900;}
+/* 020117 changed default color from #847970 to #000000, PGC */
+
+.subnavon {	
+	font : 11px Arial, Helvetica, sans-serif;	
+	color : #003565;
+}
+	a.subnavon:link {text-decoration : none; color : #003565;}
+	a.subnavon:hover {color : #FF9900; text-decoration : none;}
+	a.subnavon:visited {text-decoration: none; color : #003565;}
+	a.subnavon:visited:hover {text-decoration: none; color : #FF9900;}
+
+.tertiary {	
+	font : 11px Arial, Helvetica, sans-serif;	
+	color : #003565;
+}
+	a.tertiary:link {text-decoration : underline; color : #003565;}
+	a.tertiary:hover {color : #999999; text-decoration : none;}
+	a.tertiary:visited {text-decoration: underline; color : #003565;}
+	a.tertiary:visited:hover {text-decoration: none; color : #999999;}
+	
+.tertiaryon {	
+	font : bold 11px Arial, Helvetica, sans-serif;	
+	color : #003565;
+}
+	a.tertiaryon:link {text-decoration : none; color : #003565;}
+	a.tertiaryon:hover {color : #999999; text-decoration : none;}
+	a.tertiaryon:visited {text-decoration: none; color : #003565;}
+	a.tertiaryon:visited:hover {text-decoration: none; color : #999999;}
+
+.header {
+	font : 11px Arial, Helvetica, sans-serif;
+	color : #003565;
+}
+
+.flink {
+	font : 10px Arial, Helvetica, sans-serif;
+	color : #999999;
+	}
+	a.flink:link {text-decoration : none; color : #999999;}
+	a.flink:hover {text-decoration : none; color : #000066;}
+	a.flink:visited {text-decoration : none; color : #999999;}
+	a.flink:visited:hover {text-decoration : none; color : #000066;}
+
+.pulldown {
+	font : 10px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color : #000000;
+}
+
+.pulldownmac {
+	font : 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color : #000000;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 11px;
+}	
+	
+.search {
+	font : 10px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color : Black;
+	text-decoration: none;
+}
+	a.search:link {
+	color: Black;
+	text-decoration: none;
+	border : none;
+}
+	a.search:hover {
+	color: Black;
+	text-decoration: none;
+	border : none;
+}
+	a.search:visited {
+	color: Black;
+	text-decoration: none;
+	border : none;
+}
+
+.searchgo {
+	text-decoration: none;
+	border : none;
+}
+	a.searchgo:link {
+	color: Black;
+	text-decoration: none;
+	border : none;
+}
+	a.searchgo:hover {
+	color: Black;
+	text-decoration: none;
+	border : none;
+}
+	a.searchgo:visited {
+	color: Black;
+	text-decoration: none;
+	border : none;
+}
+
+
+
+	
+.textGray {
+
+	font : 11px Verdana, Arial, Helvetica, sans-serif;
+	color : #555555;
+}
+.FileNotFound {
+
+	font : bold 16px Verdana, Arial, Helvetica, sans-serif;
+	color : #333333;
+}

@@ -1,0 +1,192 @@
+/*  Main Styles */
+
+html, body
+{
+	font-family: verdana, helvetica, sans-serif;
+	color: black;
+	background-color: #FFFFFF;
+	margin: 0px;
+	padding: 0px;
+}
+
+img
+{
+	border: 0px;
+}
+
+form
+{
+	margin: 0;
+	padding: 0;
+}
+
+.red
+{
+	color: #990000;
+}
+
+#main
+{
+	width: 100%;
+}
+
+#logo, #topPhoto
+{
+	float:left;
+	display: inline;
+	margin: 0px;
+	padding: 0px;
+}
+#topAd
+{
+	display: none;
+}
+
+#nav
+{
+	display: none;
+}
+
+#search
+{
+	display: none;
+}
+
+#bottomBar
+{
+	padding: 1px 1px;
+	background-color: #132744;
+}
+
+#bottomBar img
+{
+	display: none;
+}
+
+#copyright
+{
+	font-size: 10px;
+	color: #132744;
+	background-color: #FFFFFF;
+	padding: 18px 8px;
+	text-align: center;
+}
+
+#copyright a
+{
+	color: #132744;
+}
+
+.dontPrint
+{
+	display: none;
+}
+
+
+.floatright
+{
+float: right;
+margin: 0 0 10px 10px;
+border: 1px solid #666;
+padding: 2px;
+text-align:center;
+font-size: 10px;
+}
+
+.floatleft
+{
+float: left;
+margin: 0 10px 10px 0;
+border: 1px solid #666;
+padding: 2px;
+text-align: center;
+font-size: 10px;
+}
+
+.floatleft p
+{
+margin-top: 5px;
+width: 15em;
+}
+
+#image
+{
+border: 1px solid #666;
+padding: 2px;
+text-align: center;
+}
+
+.pop {
+	background-color: #F7F7E8;
+	margin: 0;
+	padding: 10px;
+}
+
+.breakoutbox {
+	border: 1px solid #666;
+	margin: 0px;
+	padding: 10px;
+}
+
+.bookbox {
+	background-color: #f0f0d1;
+	margin: 0;
+	padding: 4px;
+	border: 1px solid #666;
+	width:150px;
+	font-weight:800;
+}
+
+.bookboxprice {
+float: right;
+}
+
+#thisdayTitle {
+	font-size: 10px;
+	width: 408px;
+	height: 15px;
+	padding: 7px 7px 5px 5px;
+	background-image: url(/images/home/thisday.gif);
+	text-align:right;
+}
+
+#thisdayContent {
+	font-size: 10px;
+	color: #000000;
+	background-color: #F0F0D1;
+	padding: 0px 5px 6px 12px;
+}
+
+#thisdayTitle a:hover {
+	color: #990000;
+	text-decoration: underline;
+}
+
+#thisdayContent a {
+	color: #990000;
+	text-decoration: none;
+}
+#thisdayContent a:hover {
+	color: #990000;
+	text-decoration: underline;
+}
+
+.whstitle {
+font-size: 11px;
+color: #132744;
+font-weight: 900;
+}
+
+.whsheader {
+font-size:10px;
+font-weight: 900;
+}
+
+.whstext {
+font-size:10px;
+margin-top:2px;
+} 
+
+#navtable {
+display: none;
+}

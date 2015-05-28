@@ -1,0 +1,12 @@
+ Robot exclusion file. For format see "A standard for robot exclusion"
+# at http://info.webcrawler.com/mak/projects/robots/norobots.html
+#
+# Simon Williams (webmaster@cf.ac.uk)   9th September 2004
+#
+# Don't distinguish between robots
+User-agent: *
+#
+# Exclude all top level directories or pages that start with _
+#
+Disallow: /_
+

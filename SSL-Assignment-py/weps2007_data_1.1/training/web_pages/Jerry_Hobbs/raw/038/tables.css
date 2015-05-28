@@ -1,0 +1,74 @@
+
+TABLE.news {
+        BORDER-COLOR: #000000;
+        FONT-SIZE: 10pt;
+        BORDER-COLLAPSE: COLLAPSE;
+	FONT-FAMILY: VERDANA,TIMES;
+	BORDER-BOTTOM: solid 2px #8aa;
+}
+
+TABLE.speaker {
+        BORDER-COLOR: #000000;
+        FONT-SIZE: 10pt;
+        BORDER-COLLAPSE: COLLAPSE;
+	FONT-FAMILY: VERDANA,TIMES;
+	BORDER-BOTTOM: solid 2px #8aa;
+}
+
+TH {
+        BORDER-STYLE: SOLID;
+        BORDER-WIDTH: 1px;
+        BORDER-COLOR: #8aa;
+        BACKGROUND-COLOR: #000000;
+        COLOR: #FFFFFF;
+        FONT-WEIGHT: BOLD;
+        TEXT-ALIGN: CENTER;
+}
+
+TH.date{
+	WIDTH: 160px;
+}
+
+TH.speaker {
+	WIDTH: 175px;
+}
+
+TH.title {
+	WIDTH: 250px;
+}
+
+TH.news {
+	WIDTH: 550px;
+	TEXT-ALIGN: LEFT;
+	FONT-SIZE: 16px;
+	FONT-WEIGHT: NONE;
+}
+
+TH.newstitle {
+	WIDTH: 400px;
+}
+
+TH.newscat {
+	WIDTH: 150px;
+}
+
+TD {
+   TEXT-ALIGN: LEFT;
+}
+
+TD.news {
+	PADDING-TOP: 5px;
+	PADDING-BOTTOM: 5px;
+	PADDING-LEFT: 10px;
+}
+
+TR.old {
+   background:#ddd;
+   color:#555;
+   border-bottom: solid 1px #8aa;
+}
+
+TR.current {
+   background:#fff;
+   border-bottom: solid 1px #8aa;
+}

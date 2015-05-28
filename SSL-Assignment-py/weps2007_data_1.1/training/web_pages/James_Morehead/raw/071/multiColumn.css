@@ -1,0 +1,266 @@
+.clear {clear:both;}
+.clearfix:after{content:".";display: block;	height:	0;clear: both;visibility:hidden;}
+.clearfix {display:inline-block;}
+
+ /* Hide from IE Mac \*/
+.clearfix {display:block;}
+/* End hide from IE Mac */
+
+
+
+/* Tool Tip */
+
+
+a.info{    position:relative; /*this is the key*/    z-index:24;     text-decoration:none}
+a.info:hover{z-index:25;}
+a.info span{display: none}
+a.info:hover span{ /*the span will display just on :hover state*/
+    display:block;    position:absolute;    top:2em;      padding:6px;    width:130px;    border-right:2px solid #333;border-bottom:2px solid #333; border-left:1px solid #999;border-top:1px solid #999;    background-color:#fff;}
+a.info:hover img
+	{float: left;padding: 0;margin: 2px 4px 4px 0;width: 30px;height: 30px;clear:left}
+
+.gray {color:#999}
+a.gray {color:#5d5d5d; font-size:11px}
+
+/* Layout Divs */
+
+div.container { width: 1000px;margin-left: auto;margin-right: auto;text-align: left;padding:0;}
+#content {float:left;margin: 0;	padding: 0;}
+#leftcol {float:left;padding: 10px 0px 0px 5px;width:150px; background:#ccc}
+#midcol {float:left;padding: 0px 10px 0px 10px;margin: 0px;width:488px;}
+#rightcol { float:right;	margin: 0;	width:336px;padding: 0px;}
+
+#headerNL {	margin: 0;	width:240px;height:90px;padding: 0px; border:1px solid red}
+
+div.story {clear:both}
+
+.callout {font-size:11px}
+
+div.cont {color: #900;font-family: Arial;	font-size: 12px;font-weight: bold;	text-align:right;padding:0 30px 0 0;}
+div.cont a {padding: 2px;}
+div.cont a:hover {background: #cccccc;}
+
+
+
+/*	Buckets */
+
+
+
+/* 2 COL */
+#twoCol {margin:0px;padding:0;}
+#twoCol .twoCol-more ul {margin:0px;padding:0px;list-style:none;width:47%;float:left;font:normal 11px;}
+#twoCol .twoCol-more ul li {line-height:1.2em;}
+#twocol .twoCol-more img.Main
+	{float: left;padding: 0;margin: 2px 4px 4px 0;width: 75px;height: 60px;clear:left}
+	
+#midtwoCol {margin:0px;padding:0;}
+#midtwoCol .twoCol-more ul {margin:0px;padding:0px;list-style:none;width:232px;float:left;font:normal 11px;}
+#midtwoCol .twoCol-more ul li {line-height:1.2em;}
+#midtwocol .twoCol-more img.Main
+	{float: left;padding: 0;margin: 2px 4px 4px 0;width: 75px;height: 60px;clear:left}
+/* END 2 COL */
+
+#midtwoCol .mid1Col-more {margin:0px;padding:0;}
+#midtwoCol .mid1Col-more ul {margin:0px;padding:0px;list-style:none;float:left;font:normal 11px;}
+#midtwoCol .mid1Col-more ul li {line-height:1.2em;}
+#midtwoCol .mid1Col-more img.Main
+	{float: left;padding: 0;margin: 2px 4px 4px 0;width: 75px;height: 60px;clear:left}
+
+
+
+
+/* LEFT COL - White */
+
+
+#leftcol div.bucket 
+	{margin: 0px 0px 8px 0px; width:136px; padding:0px 4px 4px 4px;background:#fff;float:left;clear:all; }
+#leftcol div.bucket ul
+	{padding: 8px;clear: both;margin: 4px 0 10px 4px;padding: 0;font-size: 11px;}
+#leftcol div.bucket ul li span
+	{font-weight:bold;}	
+#leftcol div.bucket ol
+	{list-style-position: inside;margin: 0 0 10px 0;}	
+#leftcol div.bucket ul li
+	{list-style-type: none;margin: 0 0 4px 0;padding: 0;font-size: 11px;}
+#leftcol div.bucket  h3
+	{border-bottom: 1px solid #999;padding: 4px 6px 4px 6px;margin-top: 5px;margin-bottom: 0px;color: #333;font-size: 11px;	 font-weight:bold; text-transform:uppercase}
+#leftcol div.bucket  h3 a
+	{text-decoration: none;color: #9c0005}
+#leftcol div.bucket  h3 a:hover
+	{text-decoration: underline;}
+#leftcol div.bucket  h3  
+	{margin-left: 0px;}
+
+/* LEFT COL - Gray */
+
+
+
+
+#leftcol div.bucketG 
+	{margin: 0 0 8px 0px; width:136px; padding:0px 4px 4px 4px;background:#f1f0f0;float:left;clear:left; border:1px solid #bdbdbd}
+#leftcol div.bucketG ul
+	{padding: 8px;clear: both;margin: 4px 0 10px 4px;padding: 0;font-size: 11px;}
+#leftcol div.bucketG ul li span
+	{font-weight:bold;}	
+#leftcol div.bucketG ol
+	{list-style-position: inside;margin: 0 0 10px 0;}	
+#leftcol div.bucketG ul li
+	{list-style-type: none;margin: 0 0 4px 0;padding: 0;font-size: 11px;}
+#leftcol div.bucketG  h3
+	{background-image: url(http://www.infoworld.com/img/buckets/bucket_bg.jpg);background-repeat: repeat;border-bottom: 1px solid #999;padding: 4px 6px 4px 6px;margin-top: 5px;margin-bottom: 0px;color: #333;font-size: 11px;	 font-weight:bold;  text-transform:uppercase}
+#leftcol div.bucketG  h3 a
+	{text-decoration: none;color: #9c0005}
+#leftcol div.bucketG  h3 a:hover
+	{text-decoration: underline;}
+#leftcol div.bucketG  h3  
+	{margin-left: 0px;}
+	
+	
+
+
+
+/* RIGHT COL buckets and dynamicbucket attributes */
+
+#rightcol div.dynamicbucket
+	{background: #EFEFEF;background-repeat: repeat-y;background-position: top;font-size: 10px;margin-bottom: 15px;width: 336px;}
+#rightcol div.dynamicbucket div.buckettop,
+#rightcol div.dynamicbucket div.bucketbottom
+	{padding: 0;margin: 0;height: 6px;font-size: 6px;}
+#rightcol div.dynamicbucket div.buckettop
+	{background: url(http://www.infoworld.com/img/buckets/bucket_clear_top_336.gif) no-repeat top;}
+#rightcol div.dynamicbucket div.bucketbottom
+	{background: url(http://www.infoworld.com/img/buckets/bucket_clear_bottom_336.gif) no-repeat bottom;}
+#rightcol div.dynamicbucket div.bucketcontent
+	{padding: 6px 8px 0 8px;margin: 0;}
+
+#rightcol div.bucketcontent img
+	{float: left;padding: 0;margin: 2px 4px 4px 0;width: 40px;height: 34px;}
+	
+#rightcol div.dynamicbucket div.bucketcontent2
+	{padding: 6px 8px 0 8px;margin: 0;float:left}
+#rightcol div.dynamicbucket div.bucketcontent3
+	{padding: 6px 8px 0 8px;margin: 0;float:left}
+	
+#rightcol div.dynamicbucket h3
+	{border-bottom: 1px solid #ccc;padding: 0 8px 6px 8px;margin-top: 5px;margin-bottom: 0px;color: #333;text-transform: uppercase;		font-size: 11px;line-height: 8pt;}
+#rightcol div.dynamicbucket h3 a
+	{text-decoration: none;}
+#rightcol div.dynamicbucket h3 a:hover
+	{text-decoration: underline;}
+#rightcol div.dynamicbucket h3 img
+	{float: right;margin-right: 3px;}
+	
+/*	RIGHT COL simple include bucket style */
+#rightcol div.dynamicbucket ul
+	{padding: 8px;}
+#rightcol div.dynamicbucket div.bucketcontent ul
+	{clear: both;margin: 0 0 10px 0;padding: 0;font-size: 11px;}
+#rightcol div.dynamicbucket div.bucketcontent ul li span
+	{font-weight:bold;}	
+#rightcol div.dynamicbucket div.bucketcontent ol
+	{list-style-position: inside;margin: 0 0 10px 0;}	
+#rightcol div.dynamicbucket ul li
+	{list-style-type: none;margin: 0 0 8px 0;padding: 0;font-size: 11px;}
+	
+	
+/*	RIGHT COL White bucket with borders */
+
+#rightcol div.wborder
+	{background: #FFF;background: url(http://www.infoworld.com/img/buckets/bucket_clear_border_336.gif) repeat-y top;}
+#rightcol div.wborder div.buckettop
+	{background: url(http://www.infoworld.com/img/buckets/bucket_clear_border_top_336.gif) no-repeat top;}
+#rightcol div.wborder h3
+	{background: url(http://www.infoworld.com/img/buckets/bucket_clear_border_336.gif) repeat-y top;}
+#rightcol div.wborder div.bucketcontent h3
+	{border: none;}
+#rightcol div.wborder div.bucketbottom
+	{background: url(http://www.infoworld.com/img/buckets/bucket_clear_brdr_btm_336.gif) no-repeat bottom;}
+#rightcol div.wborder div.bucketcontent
+	{padding: 2px 7px 0 7px;margin: 0;clear:both;}		
+#rightcol div.wborder div.bucketcontent img
+	{float: left;padding: 0;margin: 2px 4px 4px 0;width: 40px;height: 34px;}
+	
+/*	Ad Promo Buckets (or epromos)  */
+	
+
+#rightcol div.epromo 
+	{background: #e0e0e0;width: 336px;display:block;border-top:2px solid #999;border-bottom:2px solid #999;}
+#rightcol div.epromo h3
+	{border-bottom:1px dotted #999;padding: 0 8px 6px 8px;margin-top: 5px;margin-bottom: 0px;color: #333;text-transform: uppercase;	font-size:11px;line-height: 8pt;}
+#rightcol div.epromo div.bucketcontent img
+	{float: left;padding: 0;margin: 2px 4px 4px 0;width: 40px;height: 34px;}
+#rightcol div.epromo div.bucketcontent
+	{padding: 6px 8px 0 8px;margin: 0;}
+#rightcol div.epromo div.buckettop
+	{width: 328px;height: 1px;padding: 0;margin: 0 4px 8px 4px;line-height: 1px;}
+#rightcol div.epromo div.bucketbottom
+	{clear: both;width: 328px;
+	height: 1px;padding: 0;margin: 10px 4px 0 4px;}
+#rightcol div.epromo a
+	{text-decoration: none;font-weight: bold;}
+#rightcol div.epromo ul
+	{padding-bottom: 0;margin-bottom: 0;}
+#rightcol div.epromo ul li
+	{list-style-type: none;}
+#rightcol div.epromo a:hover
+	{text-decoration: underline;}
+	
+
+/* MID COL buckets */
+
+#midcol div.dynamicbucket
+	{background: #EFEFEF;background-repeat: repeat-y;background-position: top;font-size: 10px;margin-bottom: 15px;width: 300px;}
+#midcol div.dynamicbucket div.buckettop,
+#midcol div.dynamicbucket div.bucketbottom
+	{padding: 0;margin: 0;height: 6px;font-size: 6px;}
+#midcol div.dynamicbucket div.buckettop
+	{}
+#midcol div.dynamicbucket div.bucketbottom
+	{padding-bottom:0px}
+#midcol div.dynamicbucket div.bucketcontent
+	{padding: 6px 8px 0 8px;margin: 0;}
+#midcol div.dynamicbucket h3
+	{border-bottom: 1px solid #ccc;padding: 0 8px 6px 8px;margin-top: 5px;margin-bottom: 0px;color: #333;font-size: 18px;	line-height: 8pt; font-weight:normal}
+#midcol div.dynamicbucket h3 a
+	{text-decoration: none;color: #9c0005}
+#midcol div.dynamicbucket h3 a:hover
+	{text-decoration: underline;}
+#midcol div.dynamicbucket h3  
+	{margin-left: 0px;}
+
+
+/* MID COL 	White half bucket with w/o borders */
+
+#midcol div.woborder
+	{background: #fff;width: 485px;display:block;padding-right:15px;font-size: 13px;}
+#midcol div.woborder div.buckettop
+	{border-top:1px dotted #999;}
+#midcol div.woborder h3
+	{border-bottom:0px; padding-left:0px;}
+#midcol div.woborder div.bucketcontent h3
+	{border: none;}
+#midcol div.woborder div.bucketbottom
+	{border-bottom:1px dotted #999;}
+#midcol div.woborder div.bucketcontent
+	{padding: 2px 7px 0 7px;margin: 0;clear:both;}		
+
+
+/*	MID COL simple include bucket style */
+#midcol div.dynamicbucket ul
+	{padding: 0px 0px 0px 10px}
+#midcol div.dynamicbucket div.bucketcontent ul
+	{clear: both;margin: 0 0 10px 0;padding: 0;font-size: 12px;}
+#midcol div.dynamicbucket div.bucketcontent ul li span
+	{font-weight:bold;}	
+#midcol div.dynamicbucket div.bucketcontent ol
+	{list-style-position: inside;margin: 0 0 10px 0;}	
+#midcol div.dynamicbucket ul li
+	{list-style-type: none;margin: 0 0 8px 0;padding: 0;font-size: 12px;}
+	
+	
+/* Newsletters */
+
+	
+	
+	
+	

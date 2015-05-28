@@ -1,0 +1,303 @@
+/***** default body/etc styles *****/
+BODY, BODY.webMain {
+	font-family: Verdana;
+	font-size: 12px;
+	color: #000000;
+	background-color : #FFFFFF;
+}
+
+BODY.basic {
+	background-color : #FFFFFF
+}
+
+H1, H2, H3, H4, H5, H6 {}
+
+UL, OL, TABLE, TH, TD, DD, BLOCKQUOTE, DIV, SPAN, P, BR {
+        font-family: Verdana;
+        font-size: 12px;
+        color: #000000;
+}
+
+
+/***** default anchor styles *****/
+A:link {
+	color: #333333; 
+	text-decoration: underline;
+}
+
+A:hover {
+	color: #333333; 
+	text-decoration: underline;
+}
+
+A:active {
+	color: #333333; 
+	text-decoration: underline;
+}
+
+A:visited {
+	color: #333333; 
+	text-decoration: underline;
+}
+
+
+/***** the outer table/template skeleton *****/
+TABLE.webOuterTable {
+	border-style: none;
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+
+TD.webOuterTable, TD.webOuterTableF, TD.webOuterTableH, TD.webOuterTableC1, TD.webOuterTableC2, TD.webOuterTableC3, TD.webOuterTableC4, TD.webOuterTableC5, TD.webOuterTableC6, TD.webOuterTableC7, TD.webOuterTableC8, TD.webOuterTableC9, TD.webOuterTableC10 {
+	background-color: #ffffff;
+	border-style: none;
+	border-spacing: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+/** this is the same as the TD one, but with no padding in case we need that at some point **/
+TH.webOuterTable, TH.webOuterTableF, TH.webOuterTableH, TH.webOuterTableC1, TH.webOuterTableC2, TH.webOuterTableC3, TH.webOuterTableC4, TH.webOuterTableC5, TH.webOuterTableC6, TH.webOuterTableC7, TH.webOuterTableC8, TH.webOuterTableC9, TH.webOuterTableC10 {
+	background-color: #ffffff;
+	border-style: none;
+	border-spacing: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+
+/***** the header styles *****/
+TABLE.webHeader {
+	width: 100%;
+	border-style: none;
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+
+TD.webHeader {
+	background-color: #ffffff;
+        padding-top: 0px;
+        padding-bottom: 2px;
+        padding-left: 0px; 
+        padding-right: 0px;
+}
+
+/** the horizontal dynamic nav styles **/
+TABLE.webHeaderNav {
+	width: 100%;
+	border-style: none;
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+TD.webHeaderNav {
+	background-color: #EFEFEF;
+        border-top: 2px solid #4A4A84;
+        border-bottom: 2px solid #4A4A84;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+TABLE.webHeaderSubNav {
+	width: 100%;
+	border-style: none;
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+TD.webHeaderSubNav {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+A.webHeaderNav, A.webHeaderNavSel, A.webHeaderNav:hover, A.webHeaderNavSel:hover, A.webHeaderNav:active, A.webHeaderNavSel:active, A.webHeaderNav:visited, A.webHeaderNavSel:visited {
+	color: #333333; 
+	text-decoration: none;
+	font-weight: bold;
+}
+
+A.webHeaderSubNav, A.webHeaderSubNavSel, A.webHeaderSubNav:hover, A.webHeaderSubNavSel:hover, A.webHeaderSubNav:active, A.webHeaderSubNavSel:active, A.webHeaderSubNav:visited, A.webHeaderSubNavSel:visited {
+	color: #333333;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+
+/** the vertical dynamic nav styles **/
+TABLE.webHeaderVertNav {
+	width: 100%;
+        border-top: 1px solid #4A4A84;
+        border-bottom: 1px solid #4A4A84;
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+TD.webHeaderVertNav {
+	background-color: #EFEFEF;
+        border-top: 1px solid #4A4A84;
+        border-bottom: 1px solid #4A4A84;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+TABLE.webHeaderVertSubNav {
+	width: 100%;
+	border-style: none;
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+TD.webHeaderVertSubNav {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 15px;
+	padding-right: 5px;
+}
+
+A.webHeaderVertNav, A.webHeaderVertNavSel, A.webHeaderVertNav:hover, A.webHeaderVertNavSel:hover, A.webHeaderVertNav:active, A.webHeaderVertNavSel:active, A.webHeaderVertNav:visited, A.webHeaderVertNavSel:visited {
+	color: #333333; 
+	text-decoration: none;
+	font-weight: bold;
+}
+
+A.webHeaderVertSubNav, A.webHeaderVertSubNavSel, A.webHeaderVertSubNav:hover, A.webHeaderVertSubNavSel:hover, A.webHeaderVertSubNav:active, A.webHeaderVertSubNavSel:active, A.webHeaderVertSubNav:visited, A.webHeaderVertSubNavSel:visited {
+	color: #333333;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+
+/***** the siderail bucket styles  - can just override one or more of these bucket styles to change it up *****/
+TABLE.webSideRail, TABLE.webSideRail1, TABLE.webSideRail2, TABLE.webSideRail3, TABLE.webSideRail4, TABLE.webSideRail5, TABLE.webSideRail6, TABLE.webSideRail7, TABLE.webSideRail8, TABLE.webSideRail9, TABLE.webSideRail10, TABLE.webSideRail11, TABLE.webSideRail12, TABLE.webSideRail13, TABLE.webSideRail14, TABLE.webSideRail15 {
+	width: 100%;
+	border-style: none;
+	border-spacing: 0px;
+	border-collapse: collapse;
+	/*** table-layout: fixed; ***/
+}
+
+TD.webSideRail, TD.webSideRail1, TD.webSideRail2, TD.webSideRail3, TD.webSideRail4, TD.webSideRail5, TD.webSideRail6, TD.webSideRail7, TD.webSideRail8, TD.webSideRail9, TD.webSideRail10, TD.webSideRail11, TD.webSideRail12, TD.webSideRail13, TD.webSideRail14, TD.webSideRail15 {
+	background-color: #EFEFEF;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+TH.webSideRail, TH.webSideRail1, TH.webSideRail2, TH.webSideRail3, TH.webSideRail4, TH.webSideRail5, TH.webSideRail6, TH.webSideRail7, TH.webSideRail8, TH.webSideRail9, TH.webSideRail10, TH.webSideRail11, TH.webSideRail12, TH.webSideRail13, TH.webSideRail14, TH.webSideRail15 {
+	font-size: 13px;
+	text-align: left;
+	color: #ffffff; 
+	background-color: #4A4A84;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+
+/***** the content styles *****/
+TABLE.webContent, TABLE.webContent1, TABLE.webContent2, TABLE.webContent3, TABLE.webContent4, TABLE.webContent5 {
+	width: 100%;
+	border-style: none;
+	border-spacing: 0px;
+	border-collapse: collapse;
+	/** table-layout: fixed; **/
+}
+
+TD.webContent, TD.webContent1, TD.webContent2, TD.webContent3, TD.webContent4, TD.webContent5 {
+	background-color: #ffffff;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+TH.webContent, TH.webContent1, TH.webContent2, TH.webContent3, TH.webContent4, TH.webContent5 {
+	font-size: 13px;
+	text-align: left;
+	color: #ffffff; 
+	background-color: #4A4A84;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+/***** the footer style *****/
+TABLE.webFooter {
+	width: 100%;
+	border-style: none;
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+
+TD.webFooter {
+	background-color: #ffffff;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+/***** end footer style *****/
+
+
+/***** PUBLIC INTERACTIVE NO CODE FEEDS *****/
+
+/*NOW ON AIR FEED: This controls the colors of your Now on Air bucket. You can change the background color, link and text colors by altering the colors below. More detailed information can be found in your Public Interactive Startup Kit.*/
+TABLE.gnc {background-color: #EFEFEF; color: #000000; font-size: 12px;}
+.gncProgramName {padding: 3px 3px 3px 3px; color: #000000; font-size: 10px; font-weight: bold;}
+.gncProgramTime {padding: 3px 3px 3px 3px; color: #000000; font-size: 11px;}
+.gncProgramDesc {background-color: #EFEFEF; padding: 3px 3px 3px 3px; color: #000000; font-size: 10px;}
+.gncHostName {padding: 3px 3px 3px 3px; color: #000000; font-size: 10px;}
+A.gncListenNow {padding: 3px 3px 3px 3px; color: #333333; font-size: 9px;}
+.gncTitle {padding: 3px 3px 3px 3px; color: #000000; font-size: 10px;}
+
+/*ARTS FEED FOR CENTER COLUMN*/
+/* TD.art-section controls the section name such as "JAZZ"*/
+TD.art-section A:link {font-size: 12px; color: #333333; font-weight: bold;}
+TD.art-section A:visited {font-size: 12px; color: #333333; font-weight: bold;}
+TD.art-section A:active {font-size: 12px; color: #333333; font-weight: bold;}
+TD.art-section A:hover {font-size: 12px; color: #333333; font-weight: bold;}
+
+/* TD.art-content controls the  Headline and Tease of the stories displayed on the page*/
+TD.art-content{font-size: 12px; color:#000000;} /*TEASE*/
+TD.art-content A:link {font-size: 14px; color: #333333; font-weight: bold;} /*headline*/
+TD.art-content A:visited {font-size: 14px;    color: #333333; font-weight: bold; text-decoration: none;} /*headline visited*/
+TD.art-content A:active {font-size: 14px; color: #333333; font-weight: bold; text-decoration: none;} /*headline active*/
+TD.art-content A:hover {font-size: 14px; color: #333333; font-weight: bold; text-decoration: none;} /*headline hover*/
+
+
+/*NEWS and EVENTS FEEDS: This controls the color of the Public NewsRoom® and Events Calendar feeds that are housed in the left and right rails. This first set controls only the "Local & State News", "US" and "World" link colors.*/
+.headline-region {font-size: 11px; color:#000000; font-weight: bold;}
+.headline-region A {font-size: 11px; color:#000000; font-weight: bold;}
+.headline-region A:link {font-size: 11px; color: #333333; font-weight: bold;}
+.headline-region A:visited {font-size: 11px; color: #333333; font-weight: bold;}
+.headline-region A:active {font-size: 11px; color: #333333; font-weight: bold;}
+.headline-region A:hover {font-size: 11px; color: #333333; font-weight: bold;}
+
+/*NEWS and EVENTS FEEDS: This set controls the color of all the headline links.*/
+.headline-title {font-size: 11px; color:#000000; font-weight: bold;}
+.headline-title A {font-size: 11px; color:#000000; font-weight: bold;}
+.headline-title A:link {font-size: 11px; color: #333333; font-weight: bold;}
+.headline-title A:visited {font-size: 11px; color: #333333; font-weight: bold;}
+.headline-title A:active {font-size: 11px; color: #333333; font-weight: bold;}
+.headline-title A:hover {font-size: 11px; color: #333333; font-weight: bold;}
+
+
+/*NEWS and EVENTS FEEDS: And this set controls the color of the headline teases. it is recommended you keep it the same color as the rest of your body copy*/
+.headline-tease {font-size: 11px; color:#000000; font-weight: normal;}
+.headline-tease A {font-size: 11px; color:#000000; font-weight: bold;}
+.headline-tease A:link {font-size: 11px; color: #333333; font-weight: bold;}
+.headline-tease A:visited {font-size: 11px; color: #333333; font-weight: bold;}
+.headline-tease A:active {font-size: 11px; color: #333333; font-weight: bold;}
+.headline-tease A:hover {font-size: 11px; color: #333333; font-weight: bold;}
+
+/***** END PUBLIC INTERACTIVE NO CODE FEEDS *****/
+

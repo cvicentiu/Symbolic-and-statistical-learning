@@ -1,0 +1,13 @@
+/* special css instructions for mozilla:  Please note, these do not imply
+   bugs with Mozilla -- the main stylesheet is written for IE which has 
+   lots of bugs, and the instructions here are actually to fix IE bugs  */
+
+div.mobIndexHeader {
+  padding-bottom: 0px;
+}
+
+div.mbMessageList {
+  /* love those non standards that seem so standard */
+  overflow:-moz-scrollbars-vertical;
+}
+

@@ -1,0 +1,355 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>CMPT-825: Natural Language Processing</title>
+  <link rel="stylesheet" href="course.css">
+</head>
+<body>
+<h1>CMPT 825 - Spring 2006 - Natural Language Processing<br>
+</h1>
+<div class="sidebar">
+<p><img alt="(cmpt-825 image)" src="hal.jpeg"></p>
+<h3><a href="index.html#announcements">Announcements</a></h3>
+<h3><a href="index.html#assignments">Assignments</a></h3>
+<h3><a href="index.html#scribes">Scribes</a></h3>
+<h3><a href="index.html#references">References</a></h3>
+<h3><a href="index.html#readings">Weekly Readings</a></h3>
+</div>
+<div class="main">
+<ul>
+  <li><span style="font-weight: bold;">Instructor</span>: <a
+ href="http://www.cs.sfu.ca/%7Eanoop/">Dr. Anoop Sarkar</a></li>
+  <li><span style="font-weight: bold;">Location and Times</span>: Tues, AQ 5049, 11:30a - 12:30p; Thu, AQ 4125, 11:30a - 1:30p</li>
+  <br>
+  <li><span style="font-weight: bold;">gosfu Term:</span> 1061</li>
+  <li><span style="font-weight: bold;">gosfu Class Number:</span> 14516</li>
+  <br>
+  <li><span style="font-weight: bold;">Mailing List</span>: cmpt-825
+_at_ sfu.ca (always prefix "cmpt-825: " to all messages sent to this
+list)<br>
+    <a href="http://www.cs.sfu.ca/CC/Hypermail/cmpt-825/">Mailing list
+archives</a></li>
+  <br>
+  <li><span style="font-weight: bold;">Office</span>: TASC 9427</li>
+  <li><span style="font-weight: bold;">Office hours</span>: Mon, 11:30a-12:30p</li>
+</ul>
+<div class="blurb">
+ <p>Natural Language Processing (NLP) is the automatic analysis of human
+ language by computer algorithms.  These algorithms can be used to convert
+ unstructured data such as transcribed speech or large text collections
+ (like the web) into structured forms.  NLP algorithms allow us to take
+ abstract information embedded in language and produce informative labels
+ (e.g.  identifying a sequence of words as the name of a protein or a
+ company name) using very little specialized information.  The course will
+ be mainly covering statistical machine learning methods for NLP. (This
+ course will be in Area 3).
+ <br>
+  <br>
+  This course will focus on statistical machine translation and
+ parsing for the first half of the course. These two aspects of NLP
+ will be used to motivate and describe various computational and
+ statistical models of language. The goal of the first half of
+  the course will be to get you started on your project well before the
+  half-way point of the course. The project will be fairly
+  writing intensive involving several written submissions. In
+  addition, students will have to scribe concise summaries of the
+  various topics covered in
+  class. The second half of the course will
+ focus on a selection of formal models in computational linguistics
+ and NLP tasks providing a broader perspective on contemporary
+  CL/NLP research. 
+ </p>
+</div>
+<div class="content">
+<h2><a name="announcements">Announcements</a></h2>
+<ul>
+  <li><span style="font-weight: bold;">Grading for the course:</span><br>
+  </li>
+  <ul>
+    <li><span style="font-weight: bold;">Scribing and Class Participation</span>: 30%</li>
+    <li><span style="font-weight: bold;">Project proposal writing and reviewing</span>: 40%</li>
+    <li><span style="font-weight: bold;">Final paper and project</span>: 30%</li>
+  </ul>
+  <li style="font-weight: bold;">Important Dates:</li>
+  <ul>
+    <li><span style="font-weight: bold;">Jan 9, 2006:</span>
+First day of class</li>
+    <li><span style="font-weight: bold;">Apr 7, 2006:</span> Last day
+of class</li>
+    <li><b>First project proposal:</b> (2 pages) due on Feb 7, 2006</li>
+    <li><b>Second project proposal:</b> (4 pages) due on Feb 23, 2006</li>
+    <li><b>Third project proposal:</b> (<8 pages) due on Mar 21, 2006</li>
+    <li><b>Summary of related work:</b> (<4 pages) due on Mar 28, 2006</li>
+    <li><span style="font-weight: bold;">Final Project due on: </span><span
+ style="font-weight: bold;">April 13, 2006</span><span style="font-weight: bold;"></span><br>
+    </li>
+  </ul>
+  <li>Style files for final project write-up: <a href="http://www.cs.sfu.ca/~anoop/courses/CMPT-825-Spring-2006/colacl06.sty">latex style file</a>, <a href="http://www.cs.sfu.ca/~anoop/courses/CMPT-825-Spring-2006/colacl06sub.tex">sample latex file</a>, <a href="http://www.cs.sfu.ca/~anoop/courses/CMPT-825-Spring-2006/acl.bst">bibliography style file</a>.</li>
+  <li>Thu, Jan 5, 2006: Course web page created</li>
+  <li>Fri, Jan 6, 2006: Scribing instructions: see <a href="index.html#scribes">Scribes</a> section below.</li>
+  <li>Fri, Jan 27, 2006: Date for submission of your 2-page 1st abstract describing your potential project is due in class on <b>Feb 7, 2006</b>. A <a href="http://www.cs.sfu.ca/~anoop/courses/CMPT-825-Spring-2006/sample_abstract.tex.txt">sample project abstract</a> has been provided to help you write your own abstract.</li>
+</ul>
+<h2><a name="assignments">Assignments</a></h2>
+<ol>
+  <li><a href="http://www.cs.sfu.ca/~anoop/courses/CMPT-825-Spring-2006/hw1.pdf">Homework #1</a></li>
+  <li><a href="http://www.cs.sfu.ca/~anoop/courses/CMPT-825-Spring-2006/hw2.pdf">Homework #2</a></li>
+  <li><a href="http://www.cs.sfu.ca/~anoop/courses/CMPT-825-Spring-2006/hw3.pdf">Homework #3</a></li>
+  <li><a href="http://www.cs.sfu.ca/~anoop/courses/CMPT-825-Spring-2006/hw4.pdf">Homework #4</a></li>
+  <li><a href="http://www.cs.sfu.ca/~anoop/courses/CMPT-825-Spring-2006/hw5.pdf">Homework #5</a>. Location of files: <code>/cs/natlang-a/data/zipf-expt/</code></li>
+  <li><a href="http://www.cs.sfu.ca/~anoop/courses/CMPT-825-Spring-2006/hw6.pdf">Homework #6</a></li>
+  <li><a href="http://www.cs.sfu.ca/~anoop/courses/CMPT-825-Spring-2006/hw7.pdf">Homework #7</a></li>
+</ol>
+<p>
+<b>Note on assignments</b>: All homeworks are optional, so there is no deadline.
+However, doing the homeworks will probably help you substantially in your project work
+and in understanding the course material. </p>
+
+<h2><a name="scribes">Scribes</a></h2>
+<ol>
+  <li><a href="http://www.cs.sfu.ca/~anoop/courses/CMPT-825-Spring-2006/lec1.pdf">Lecture #1</a> by Gholamreza Haffari</li>
+  <li><a href="http://www.cs.sfu.ca/~anoop/courses/CMPT-825-Spring-2006/lec2.pdf">Lecture #2</a> by D. Song</li>
+  <li><a href="http://www.cs.sfu.ca/~anoop/courses/CMPT-825-Spring-2006/lec34.pdf">Lectures #3 and #4</a> by Gholamreza Haffari</li>
+  <li><a href="http://www.cs.sfu.ca/~anoop/courses/CMPT-825-Spring-2006/lec5.pdf">Lecture #5</a> by Maxim Roy</li>
+  <li><a href="http://www.cs.sfu.ca/~anoop/courses/CMPT-825-Spring-2006/lec6.pdf">Lecture #6</a> by Maxim Roy</li>
+  <li><a href="http://www.cs.sfu.ca/~anoop/courses/CMPT-825-Spring-2006/lec7.pdf">Lecture #7</a> by Akshay Gattani</li>
+  <li><a href="http://www.cs.sfu.ca/~anoop/courses/CMPT-825-Spring-2006/lec10.pdf">Lecture #10</a> by F. Hormozdiari</li>
+  <li><a href="http://www.cs.sfu.ca/~anoop/courses/CMPT-825-Spring-2006/lec11.pdf">Lecture #11</a> by Mehdi M. Kashani</li>
+  <li><a href="http://www.cs.sfu.ca/~anoop/courses/CMPT-825-Spring-2006/lec16_17.pdf">Lecture #16 and #17</a> by Javier Thaine</li>
+  <li><a href="http://www.cs.sfu.ca/~anoop/courses/CMPT-825-Spring-2006/lec22.pdf">Lecture #22</a> by Javier Thaine</li>
+</ol>
+
+<p>Scribing instructions: you <b>must</b> use LaTeX to create your
+scribe document. Use <a href="http://www.cs.sfu.ca/~anoop/courses/CMPT-825-Spring-2006/scribe.sty.txt"><code>scribe.sty</code></a>
+as the LaTeX style file. A sample scribe document <a
+href="http://www.cs.sfu.ca/~anoop/courses/CMPT-825-Spring-2006/scribe_sample.tex"> <code>scribe_sample.tex</code></a> is
+provided as an example document. On any of the CS/FAS Unix/Linux
+machines use the command <code>pdflatex scribe_sample.txt</code>
+to produce <code>scribe_sample.pdf</code> </p>
+
+<h2><a name="readings">Syllabus and Readings</a></h2>
+<ol>
+  <li>Statistical Machine Translation, Basics and Evaluation Methods</li>
+  <ul>
+  <li><a href="http://www.cs.sfu.ca/~anoop/courses/CMPT-825-Spring-2006/mt-wkbk.pdf">Kevin Knight MT Tutorial</a>
+  <li><a href="http://acl.ldc.upenn.edu/P/P02/P02-1040.pdf">BLEU: A Method for Automatic Evaluation of Machine Translation</a>. Kishore Papineni, Salim Roukos, Todd Ward and Wi-Jing Zhu. Proceedings of the 40th Annual Meeting of the Association for Computational Linguistics. ACL-2002</li>
+  <li><a href="http://www.cs.sfu.ca/~anoop/courses/CMPT-825-Fall-2003/papineni.pdf">Introduction to SMT and the Bleu metric</a>. Kishore Papineni. Presentation Slides. (for description of Bleu, jump to pages 57-75)</a></li>
+<!--  <li><a href="http://www.ics.mq.edu.au/~szwarts/MTEvaluation.pdf">Evaluation Techniques for Machine Translation</a>. Simon Zwarts. Presentation slides. Macquarie University. Apr 2005. (<a href="http://www.ics.mq.edu.au/~szwarts/MT-Evaluation.php">web page</a>)</li> -->
+  <li>Software:
+  <ul>
+  <li><a href="http://www.nist.gov/speech/tests/mt/resources/scoring.htm">Bleu/NIST scoring software</a></li>
+  <li><a href="http://www.nist.gov/speech/tests/mt/doc/mt05_evalplan.v1.1.pdf">NIST MT Evaluation 2005 documentation</a></li>
+  </ul>
+  <li>Further reading:
+  <ul>
+  <li><a href="http://acl.ldc.upenn.edu/H/H05/H05-1093.pdf">BLANC: Learning Evaluation Metrics for MT</a>. Lucian Lita; Monica Rogati; Alon Lavie. In Proceedings of Human Language Technology Conference and Conference on Empirical Methods in Natural Language Processing: HLT-EMNLP 2005, Vancouver, Canada, 2005.
+  <li><a href="http://www.eecs.harvard.edu/~shieber/Biblio/Papers/kulesza-mt-evaluation04.pdf">A learning approach to improving sentence level MT evaluation</a>. Alex Kulesza and Stuart M. Shieber. In proceedings of the 10th Conference on Theoretical and Methodological issues in Machine Translation, Baltimore, 2004 </li>
+  <li><a href="http://www.amtaweb.org/summit/MTSummit/FinalPapers/35-Leusch-final.pdf">A Novel String-to-String Distance Measure With Applications to Machine Translation Evaluation</a>. G. Leusch, N. Ueffing and H. Ney. In Proc. of MT Summit IX, 2003.</li>
+  <li><a href="http://nlp.cs.nyu.edu/publication/papers/turian-summit03eval.pdf">Evaluation of Machine Translation and its Evaluation</a>. Joseph P. Turian, Luke Shen, and I. Dan Melamed. MT Summit IX, New Orleans, LA, 2003 </li>
+  <li><a href="http://www.umiacs.umd.edu/~jimmylin/publications/Russo-Lassner-etal-TR-LAMP-125-2005.pdf">A Paraphrase-Based Approach to Machine Translation Evaluation</a>. 
+Grazia Russo-Lassner, Jimmy Lin and Philip Resnik. University of Maryland Technical Report, Aug 2005.</li>
+<!--  <li><a href="http://www.isi.edu/~cyl/papers/COLING2004.pdf">ORANGE: a Method for Evaluating Automatic Evaluation Metrics for Machine Translation</a>.  Chin-Yew Lin and Franz Josef Och. In Proceedings of the 20th International Conference on Computational Linguistics (COLING 2004), Aug 23-27, Geneva, Switzerland.</li> -->
+  <li><a href="http://www.iccs.informatics.ed.ac.uk/~pkoehn/publications/bootstrap2004.pdf">Statistical Significance Tests for Machine Translation Evaluation</a>, Philipp Koehn, EMNLP 2004.</li> 
+  <li>Read Section 4.2 from: <a href="http://acl.ldc.upenn.edu/P/P05/P05-1066.pdf">Clause Restructuring for Statistical Machine Translation</a>.  Michael Collins, Philipp Koehn, and Ivona Kucerova.  In Proceedings of ACL 2005. </li>
+  </ul>
+  </li>
+  </ul>
+  <li>SMT, IBM word-based models</li>
+  <ul>
+  <li><a href="http://acl.ldc.upenn.edu/J/J93/J93-2003.pdf">The Mathematics of Statistical Machine Translation: Parameter Estimation</a>. Peter E Brown; Vincent J. Della Pietra; Stephen A. Della Pietra; Robert L. Mercer. Computational Linguistics, Volume 19, Number 2, June 1993</a>
+  <li><a href="http://acl.ldc.upenn.edu/C/C96/C96-2141.pdf">HMM-Based Word Alignment in Statistical Translation</a>. Stephan Vogel; Hermann Ney; Christoph Tillmann. COLING 1996 Volume 2: The 16th International Conference on Computational Linguistics. </li>
+  <li>Software:
+  <ul>
+  <li><a href="http://www.fjoch.com/GIZA++.html">GIZA++</a></li>
+  <li><a href="http://www.clsp.jhu.edu/ws99/projects/mt/toolkit/">The EGYPT Statistical Machine Translation Toolkit</a></li>
+  <li><a href="http://www.statmt.org/">SMT Tools</a></li>
+  </ul>
+  <li>Further reading:
+  <ul>
+  <li><a href="http://research.microsoft.com/users/bobmoore/model-one-final-rev.pdf">Improving IBM Word Alignment Model 1</a>. Robert Moore. In Proceedings of 42nd Annual Meeting of the Association for Computational Linguistics, Barcelona, Spain, pp. 519-526. 2004.</li>
+  <li><a href="http://acl.ldc.upenn.edu/J/J00/J00-2004.pdf">Models of Translational Equivalence among Words</a>. I. Dan Melamed. Computational Linguistics, Volume 26, Number 1, March 2000.</li>
+  <li><a href="http://acl.ldc.upenn.edu/P/P00/P00-1006.pdf">A Maximum Entropy/Minimum Divergence Translation Model</a>. G. Foster. In Proceedings of the 38th Annual Meeting of the Association for Computational Linguistics, ACL 2000.</li>
+  <li><a href="http://acl.ldc.upenn.edu/N/N03/N03-2016.pdf">Cognates Can Improve Statistical Translation Models</a>. Greg Kondrak, Daniel Marcu, and Kevin Knight. Human Language Technology Conference of the North American Chapter of the Association for Computational Linguistics (HLT-NAACL 2003), Companion volume, pp. 46-48, Edmonton, May 2003.</li>
+  </ul>
+  </ul>
+  <li>SMT, Phrase-based models</li>
+  <ul>
+  <li><a href="http://www.cs.sfu.ca/~anoop/courses/CMPT-825-Spring-2006/maxent4up.pdf">Lecture notes on log-linear models</a>. Anoop Sarkar.
+  <li>So-called "Model 6": <a href="http://acl.ldc.upenn.edu/J/J03/J03-1002.pdf">A Systematic Comparison of Various Statistical Alignment Models</a>. Franz Josef Och and Hermann Ney. Computational Linguistics, Volume 29, Number 1, March 2003</li>
+  <li><a href="http://acl.ldc.upenn.edu/J/J04/J04-4002.pdf">The Alignment Template Approach to Statistical Machine Translation</a>.  Franz Josef Och; Hermann Ney. Computational Linguistics, Volume 30, Number 4, December 2004.</li>
+  <li>Software:
+  <ul>
+  <li><a href="http://www.isi.edu/licensed-sw/pharaoh/">Pharoah decoder for phrase-based SMT</a></li>
+  </ul>
+  <li>Further reading:
+  <ul>
+  <li><a href="http://acl.ldc.upenn.edu/N/N03/N03-1017.pdf">Statistical Phrase-Based Translation</a>. Philipp Koehn, Franz Joseph Och, and Daniel Marcu. Proceedings of the Human Language Technology and North American Association for Computational Linguistics Conference (HLT/NAACL), May 27-June 1, Edmonton, Canada.</li>
+  <li><a href="http://acl.ldc.upenn.edu/W/W05/W05-0822.pdf">PORTAGE: A Phrase-Based Machine Translation System</a>. Fatiha Sadat; Howard Johnson; Akakpo Agbago; George Foster; Roland Kuhn; Joel Martin; Aaron Tikuisis. Proceedings of the ACL Workshop on Building and Using Parallel Texts. ACL 2005. </li>
+  </ul>
+  </ul>
+  <li>SMT, Decoding</li>
+  <ul>
+  <li><a href="http://acl.ldc.upenn.edu/J/J03/J03-1005.pdf">Word Reordering and a Dynamic Programming Beam Search Algorithm for Statistical Machine Translation</a>. Christoph Tillmann and Hermann Ney.  Computational Linguistics. Vol. 29, Issue 1 - March 2003, pp. 97-133</li>
+  <li><a href="http://acl.ldc.upenn.edu/P/P01/P01-1030.pdf">Fast Decoding and Optimal Decoding for Machine Translation</a>. Ulrich Germann; Michael Jahr; Kevin Knight; Daniel Marcu; Kenji Yamada. Proceedings of the 39th Annual Meeting of the Association for Computational Linguistics. ACL-2001</li>
+  <li><a href="http://acl.ldc.upenn.edu/N/N03/N03-1010.pdf">Greedy Decoding for Statistical Machine Translation in Almost Linear Time</a>. Ulrich Germann. Proceedings of the 2003 Human Language Technology Conference of the North American Chapter of the Association for Computational Linguistics: HLT-NAACL 2003</li>
+  <li><a href="http://acl.ldc.upenn.edu/P/P03/P03-1019.pdf">A Comparative Study on Reordering Constraints in Statistical Machine Translation</a>. Richard Zens and Hermann Ney. Proceedings of the 41st Annual Meeting of the Association for Computational Linguistics: ACL-2003</li>
+  <li>Software:
+  <ul>
+  <li><a href="http://www.isi.edu/licensed-sw/rewrite-decoder/">Rewrite decoder for IBM Model 4</a></li>
+  <li><a href="http://www.isi.edu/licensed-sw/pharaoh/">Pharoah decoder for phrase-based SMT</a></li>
+  </ul>
+  </ul>
+  <li>SMT, Word-based Language Modelling and Smoothing</li>
+  <ul>
+  <li><a href="http://www.cs.sfu.ca/~anoop/courses/CMPT-413-Spring-2003/chen-goodman-tr-10-98.pdf">An Empirical Study of Smoothing Techniques for Language Modeling</a>. Stanley F. Chen and Joshua Goodman. Technical Report TR-10-98. Harvard University. 1998.</li>
+  <li>Further reading:
+  <ul>
+  <li><a href="http://acl.ldc.upenn.edu/W/W96/W96-0106.pdf">Relating Turing's Formula and Zipf's Law</a>. Christer Samuelsson. Fourth Workshop on Very Large Corpora, WVLC. 1996.
+  <li><a href="http://kodiak.ucsd.edu/alon/papers/alw_gd_trn.pdf">Always Good Turing: asymptotically optimal probability estimation</a>, A. Orlitsky, N.P. Santhanam, and J. Zhang, Proceedings of the 44th Anual Symposium on Foundations of Computer Science (FOCS), October 2003.</li>
+  <li><a href="http://ttic.uchicago.edu/~dmcallester/COLT00c.ps">On the Convergence Rate of Good-Turing Estimators</a>. David McAllester and Robert Schapire. Proceedings of the Thirteenth Annual Conference on Computational Learning Theory. (COLT), 2000.</li>
+  <li><a href="http://cog.brown.edu/~gruffydd/papers/typetoken.pdf">Interpolating between Types and Tokens by Estimating Power-Law Generators</a>. Sharon Goldwater, Thomas L. Griffiths, and Mark Johnson. Proceedings of the 19th Conference on Neural Information Processing Systems (NIPS), Vancouver, 2005.</li>
+  <li><a href="http://www.cs.berkeley.edu/~ywteh/research/bayesnlp/hpylm.pdf">A Bayesian Interpretation of Interpolated Kneser-Ney</a>.  Y.W. Teh. Technical Report TRA2/06. School of Computing, NUS, 2006.</li>
+  <li>A. Nadas. On Turing's formula for word probabilities. IEEE Transactions on Acoustics, Speech and Signal Processing, ASSP-33(6):1414-1416, Dec 1985.</li>
+  <li>I. Witten and T. Bell. The zero frequency problem. IEEE Transactions on Information Theory, 37(4):1085-1094, 1991.</li>
+  </ul>
+  </ul>
+  <li>Statistical Parsing, Basics and Evaluation Methods</li>
+  <ul>
+  <li><a href="http://www.cs.brown.edu/people/ec/papers/aimag97.ps">Statistical techniques for natural language parsing</a>. Eugene Charniak. AI Magazine. 1997.</li>
+  <li><a href="http://acl.ldc.upenn.edu/P/P96/P96-1024.pdf">Parsing algorithms and metrics</a>. Joshua Goodman. In Proceedings of the 34th Annual Meeting of the ACL, pages 177-183, Santa Cruz, CA, June 1996.</li>
+  <li>Do <a href="http://www.cs.sfu.ca/~anoop/courses/CMPT-825-Spring-2006/hw7.pdf">Homework #7</a> part (3) which introduces you to EVALB, the program that computes the Parseval scores for comparing parser output with the Treebank trees.</li>
+  <li>Software:
+  <ul>
+  <li><a href="http://nlp.cs.nyu.edu/evalb/">Evalb</a></li>
+  </ul>
+  <ul>
+  </ul>
+  </ul>
+  <li>Parsing, Bi-lexical generative models, The EM algorithm</li>
+  <ul>
+  <li><a href="http://people.csail.mit.edu/mcollins/papers/paper14.short.ps">Three Generative, Lexicalised Models for Statistical Parsing</a>.  Michael Collins. 1997.  Proceedings of the 35th Annual Meeting of the ACL (jointly with the 8th Conference of the EACL), Madrid.</li>
+  <li><a href="http://www.cs.brown.edu/people/ec/papers/aaai97.ps">Statistical parsing with a context-free grammar and word statistics</a>. Eugene Charniak. Proceedings of the Fourteenth National Conference on Artificial Intelligence AAAI Press/MIT Press, Menlo Park (1997).</li>
+  <li><a href="http://people.csail.mit.edu/mcollins/papers/wpeII.4.ps">The EM Algorithm</a>. manuscript. Michael Collins.</li>
+  <li>Software:
+  <ul>
+  <li><a href="ftp://ftp.cs.brown.edu/pub/nlparser/">Charniak parser</a></li>
+  <li><a href="http://www.cog.brown.edu/~mj/code/reranking-parser-01Feb2006.tbz">Latest version of Charniak and Johnson parser</a> (caution: link might get stale)</li>
+  <li><a href="http://www.cis.upenn.edu/~dbikel/software.html#stat-parser">Dan Bikel's parser</a></li>
+  <li><a href="ftp://ftp.cis.upenn.edu/pub/mcollins/PARSER.tar.gz">Original Collins parser</a></li>
+  </ul>
+  <li>Further Reading:
+  <ul>
+    <li><a href="http://acl.ldc.upenn.edu/J/J82/J82-3004.pdf">Coping with syntactic ambiguity or how to put the block in the box on the table</a> (1982). Kenneth Church and Ramesh Patil. Computational Linguistics 8:139-49.</li>
+    <li><a href="http://acl.ldc.upenn.edu/J/J93/J93-1005.pdf">Structural Ambiguity and Lexical Relations</a> (1993). Donald Hindle and Mats Rooth. Computational Linguistics. Volume 19, Number 1, March 1993, Special Issue on Using Large Corpora: I.</li>
+    <li><a href="http://acl.ldc.upenn.edu/W/W95/W95-0103.pdf">Prepositional Phrase Attachment through a Backed-Off Model</a> (1995). Michael Collins and James Brooks. Proceedings of the Third Workshop on Very Large Corpora WVLC-95.</li>
+    <li><a href="http://acl.ldc.upenn.edu/P/P98/P98-2177.pdf">Statistical Models for Unsupervised Prepositional Phrase Attachment</a> (1998). Adwait Ratnaparkhi. In Proceedings of COLING-ACL 1998.</li>
+    <li><a href="http://acl.ldc.upenn.edu/P/P00/P00-1014.pdf">An Unsupervised Approach to Prepositional Phrase Attachment using Contextually Similar Words</a> (2000). P. Pantel and D. Lin. In Proceedings of Association for Computational Linguistics 2000. pp. 101-108. Hong Kong.</li>
+  </ul>
+  </li>
+  </ul>
+  <li>Parsing, Discriminative models (log-linear models, history-based models), Global linear models</li>
+  <ul>
+    <li><a href="http://acl.ldc.upenn.edu/W/W96/W96-0213.pdf">A Maximum Entropy Model for Part-Of-Speech Tagging</a>. Adwait Ratnaparkhi. Conference on Empirical Methods in Natural Language Processing: EMNLP 1996.</li>
+    <li><a href="http://acl.ldc.upenn.edu/W/W97/W97-0301.pdf">A Linear Observed Time Statistical Parser Based on Maximum Entropy Models</a>. Adwait Ratnaparkhi. Second Conference on Empirical Methods in Natural Language Processing: EMNLP 1997.</li>
+    <li><a href="http://l2r.cs.uiuc.edu/~danr/Papers/aaai98.pdf">Learning to Resolve Natural Language Ambiguities: A Unified Approach</a>. Dan Roth, AAAI (1998) pp. 806-813</li>
+    <li><a href="http://www.cs.umass.edu/~mccallum/papers/memm-icml2000.ps">Maximum Entropy Markov Models for Information Extraction and Segmentation</a>. Andrew McCallum, Dayne Freitag and Fernando Pereira. International Conference on Machine Learning: ICML-2000.</li>
+    <li><a href="http://acl.ldc.upenn.edu/P/P01/P01-1042.pdf">Joint and Conditional Estimation of Tagging and Parsing Models</a>. Mark Johnson. Proceedings of the 39th Annual Meeting of the Association for Computational Linguistics: ACL 2001.</li>
+    <li><a href="http://people.csail.mit.edu/regina/6864/slides/l9.pdf">Lecture notes on log linear models</a> (<a href="http://people.csail.mit.edu/regina/6864/slides/l9.4up.pdf">4 per page</a>). Michael Collins and Regina Barzilay.</li>
+    <li><a href="http://people.csail.mit.edu/regina/6864/slides/l20.pdf">Lecture notes on global linear models</a> (<a href="http://people.csail.mit.edu/regina/6864/slides/l20.4up.pdf">4 per page</a>). Michael Collins and Regina Barzilay.</li>
+    <li><a href="http://people.csail.mit.edu/regina/6864/slides/l21.pdf">Lecture notes on global linear models (cont'd)</a> (<a href="http://people.csail.mit.edu/regina/6864/slides/l21.4up.pdf">4 per page</a>). Michael Collins and Regina Barzilay.</li>
+  <li>Software:
+  <ul>
+  <li><a href="http://tadm.sourceforge.net/">TADM: Toolkit for Advanced Discriminative modeling</a></li>
+  <li><a href="http://mallet.cs.umass.edu/index.php/Main_Page">Mallet: Java library for CRFs, etc.</a></li>
+  <li><a href="http://maxent.sourceforge.net/">Java maxent implementation</a></li>
+  <li><a href="http://l2r.cs.uiuc.edu/~danr/snow.html">Snow: Sparse Network of Winnows</a></li>
+  <li><a href="http://chasen.org/~taku/software/yamcha/">yamcha: SVM based chunker</a></li>
+  <li><a href="http://chasen.org/~taku/software/CRF++/">CRF++: CRF based chunker</a></li>
+  </ul>
+  <li>Further Reading:
+  <ul>
+    <li><a href="http://acl.ldc.upenn.edu/W/W02/W02-1002.pdf">Conditional Structure versus Conditional Estimation in NLP Models</a>. Dan Klein and Christopher D. Manning. Proceedings of the 2002 Conference on Empirical Methods in Natural Language Processing (EMNLP 2002)</li>
+    <li><a href="http://acl.ldc.upenn.edu/J/J96/J96-1002.pdf">A Maximum Entropy Approach to Natural Language Processing</a>. Adam L. Berger, Vincent J. Della Pietra and Stephen A. Della Pietra. Computational Linguistics, Volume 22, Number 1, March 1996.</li>
+    <li><a href="http://www.cis.upenn.edu/%7epereira/papers/crf.pdf">Conditional Random Fields: Probabilistic Models for Segmenting and Labeling Sequence Data</a>. John Lafferty, Andrew McCallum and Fernando Pereira. In Proc. 18th International Conf. on Machine Learning: ICML 2001, pages 282-289.</li>
+    <li><a href="http://reports-archive.adm.cs.cmu.edu/anon/1999/CMU-CS-99-108.ps">A Gaussian prior for smoothing maximum entropy models</a>. S. Chen and R. Rosenfeld, Technical Report CMUCS-99-108, Carnegie Mellon University. 1999. </li>
+    <li><a href="http://acl.ldc.upenn.edu/W/W02/W02-1001.pdf">Discriminative Training Methods for Hidden Markov Models: Theory and Experiments with Perceptron Algorithms</a>. Michael Collins. EMNLP 2002. </li>
+    <li><a href="http://acl.ldc.upenn.edu/P/P02/P02-1062.pdf">Ranking Algorithms for Named Entity Extraction: Boosting and the Voted Perceptron</a>. Michael Collins. Proceedings of the 40th Annual Meeting of the Association for Computational Linguistics: ACL 2002.</li>
+    <li><a href="http://acl.ldc.upenn.edu/W/W03/W03-1019.pdf">Loss Functions and Optimization Methods for Discriminative Learning of Label Sequences</a>, In Proceedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP 2003).</li>
+    <li><a href="http://l2r.cs.uiuc.edu/~danr/Papers/nips01.pdf">The Use of Classifiers in Sequential Inference</a>. V. Punyakanok and D. Roth, The Conference on Advances in Neural Information Processing Systems (NIPS)  (2001) pp. 995-100.</li>
+  </ul>
+  </ul>
+  <li>Parsing, Language Modelling, Semantic parsing and other applications</li>
+  <ul>
+  </ul>
+  <li>SMT, Syntax-based models</li>
+  <ul>
+  <li><a href="http://www.isi.edu/~chiang/papers/synchcfg.pdf">Introduction to Synchronous CFGs</a>. David Chiang. unpublished course notes. (please do not redistribute without permission)
+  <li><a href="http://acl.ldc.upenn.edu/P/P05/P05-1033.pdf">A Hierarchical Phrase-Based Model for Statistical Machine Translation</a>. David Chiang.
+  Proceedings of the 43rd Annual Meeting of the Association for Computational Linguistics (ACL-2005).
+  </li>
+  <li><a href="http://acl.ldc.upenn.edu/P/P01/P01-1067.pdf">A Syntax-based Statistical Translation Model</a>. Kenji Yamada and Kevin Knight. Proceedings of the 39th Annual Meeting of the Association for Computational Linguistics. 2001.</li>
+  <li><a href="http://www.isi.edu/natural-language/projects/rewrite/mtsummit03.pdf">Syntax-based Language Models for Machine Translation</a>. E. Charniak, K. Knight, and K. Yamada, Proc. MT Summit IX, 2003.</li>
+  <li><a href="http://acl.ldc.upenn.edu/P/P03/P03-1011.pdf">Loosely Tree-Based Alignment for Machine Translation</a>. Daniel Gildea.  Proceedings of the 41st Annual Meeting of the Association for Computational Linguistics. 2003.</li>
+  <li>Software:
+  <ul>
+  <li><a href="http://nlp.cs.nyu.edu/GenPar/GenPar.html">GenPar toolkit</a></li>
+  </ul>
+  <li>Further reading:
+  <ul>
+  <li><a href="http://acl.ldc.upenn.edu/J/J00/J00-1004.pdf">Learning Dependency Translation Models as Collections of Finite-State Head Transducers</a>. Hiyan Alshawi; Shona Douglas; Srinivas Bangalore. Computational Linguistics, Volume 26, Number 1, March 2000. </li>
+  <li><a href="http://www.cs.ust.hk/~dekai/library/WU_Dekai/Wu_PTP_FinalDraft_20000507.pdf">Bracketing and aligning words and constituents in parallel text using Stochastic Inversion Transduction Grammars</a>. Dekai Wu. In Jean Veronis (ed.), Parallel Text Processing: Alignment and Use of Translation Corpora. Dordrecht: Kluwer. ISBN 0-7923-6546-1. Aug 2000.</li>
+  <li><a href="http://www.cs.sfu.ca/~anoop/papers/pdf/jhu-ws03-report.pdf">CLSP Final Report of the Johns Hopkins Summer Workshop 2003: Syntax for Statistical Machine Translation</a>.
+Franz Josef Och, Daniel Gildea, Sanjeev Khudanpur, Anoop Sarkar, Kenji Yamada, Alex Fraser, Shankar Kumar, Libin Shen, David Smith, Katherine Eng, Viren Jain, Zhen Jin, Dragomir Radev.</li>
+  <li><a href="http://www.clsp.jhu.edu/ws2005/groups/statistical/documents/finalreport.pdf">Final Report of the 2005 Language Engineering Workshop on Statistical Machine Translation by Parsing</a>. A. Burbank, M. Carpuat, S. Clark, M. Dreyer, P. Fox, D. Groves, K. Hall, M. Hearne, I. D. Melamed, Y. Shen, A. Way, B. Wellington, and D. Wu. 2005.</li>
+  </ul>
+  </ul>
+  <li>Text segmentation</li>
+  <ul>
+  </ul>
+  <li>Text coherence and Co-reference</li>
+  <ul>
+  </ul>
+  <li>Text summarization</li>
+  <ul>
+  </ul>
+  <li>Natural Languages, Formal Languages and Complexity: from regular to context-sensitive</li>
+  <ul>
+  </ul>
+  <li>Finite-state transducers: computational phonology and text-to-speech</li>
+  <ul>
+  </ul>
+  <li>Tree automata, Tree transducers: parsing and SMT</li>
+  <ul>
+  </ul>
+</ol>
+<h2><a name="references">Textbook and References</a></h2>
+
+<p>There is no formal textbook for this course. Most of the reading for this course
+is posted along with the topics below and
+ are research papers which are usually available online. However, if you would like
+to brush up on some of the basics you should refer to the following books:
+<ul>
+  <li><span style="font-weight: bold;">Reference Books:</span> <br>
+  </li>
+  <ul>
+    <li><span style="font-style: italic;">Statistical Language Learning</span>, Eugene Charniak, MIT Press, 1996</li>
+    <li><span style="font-style: italic;">Foundations of Statistical Natural Language Processing</span>, Manning and Schuetze, MIT Press, 1999</li>
+    <li><span style="font-style: italic;">Speech and Language Processing</span>, Jurafsky and Martin, Prentice Hall, 2000</li>
+    <li><span style="font-style: italic;">Fundamentals of Speech Recognition</span>, Rabiner and Juang, Prentice Hall, 1993</li>
+    <li><span style="font-style: italic;">Machine Learning</span>, Tom Mitchell, McGraw Hill, 1997</li>
+    <li><span style="font-style: italic;">Lectures on Contemporary Syntactic Theories</span>, Peter Sells, CSLI Lecture Notes No. 3, 1985</li>
+    <li><span style="font-style: italic;">The Language Instinct</span>, Steven Pinker, William Morrow, 1994</li>
+  </ul>
+</ul>
+<h2><a name="readings">Web Links</a></h2>
+<ul>
+  <li><a href="http://del.icio.us/anoopsarkar/tex">LaTeX web resources</a></li>
+  <li><a href="http://www.statmt.org/">Statistical MT web page</a></li>
+</ul>
+</div>
+<hr>
+<address>anoop at cs.sfu.ca</address>
+</div>
+</body>
+</html>

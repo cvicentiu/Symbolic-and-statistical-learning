@@ -1,0 +1,13 @@
+# robots.txt
+#
+# Who   Date       Why
+# MEG   20050302   Added google media partners, added old servlet link /abep/ to the disallow list
+#
+
+User-agent: Mediapartners-Google*
+Disallow: 
+
+User-agent: *
+Disallow: /servlet/
+Disallow: /abe/
+Disallow: /abep/

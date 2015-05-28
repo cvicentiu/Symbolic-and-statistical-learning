@@ -1,0 +1,388 @@
+* {
+	font-family: Arial, Helvetica, sans-serif;
+        font-size: 9pt;
+}
+
+html {
+	overflow:scroll;
+}
+
+.gsselect {
+	font:8pt arial;
+}
+
+a {
+        text-decoration: none;
+}
+.label, .label_error {
+	font-weight: bold;
+}
+.top-white {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #eeeeee;
+	font-weight: bold;
+}
+.top-yellow {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #dfd233;
+	font-weight: bold;
+	text-decoration: none;
+}
+.top-yellow:hover {
+	text-decoration: underline;
+}
+.headerYellow {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #dfd233;
+	font-weight: bold;
+}
+.top-grey {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #565656;
+	font-weight: bold;
+	padding-left:4px;
+	padding-right:4px;
+}
+.headerBlue {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #0E5A9F;
+	font-weight: bold;
+	text-decoration: none;
+}	
+.headerBlue	a:link {color: #0E5A9F; text-decoration: none; }
+.headerBlue	a:active {color: #0E5A9F; text-decoration: none; }
+.headerBlue	a:visited {color: #0E5A9F; text-decoration: none; }
+.headerBlue	a:hover {color: #0E5A9F; text-decoration: underline; }
+	
+.headerOrange {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: efa239;
+	font-weight: bold;
+	text-decoration: none;
+}	
+
+.smallText, .smallText a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333333;
+	font-weight: normal;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.smallText a:hover {
+	text-decoration: underline;
+}
+
+.top-blue, A.top-blue {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #0E5A9F;
+	font-weight: bold;
+	text-decoration: none;
+}
+A.top-blue:hover {
+	text-decoration: underline;
+}
+
+.alertText {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFF99;
+	font-weight: bold;
+}
+
+.headerLiteYellow {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: EDE79B;
+	font-weight: bold;
+}
+.digit {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 22px;
+	font-weight: bold;
+	color: #555555;
+}
+.message {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #E78200;
+	font-weight: bold;
+}
+.smallGrey {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #888888;
+	font-weight: normal;
+	text-decoration: none;
+}
+.smallBlue {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #0E5A9F;
+	font-weight: normal;
+	text-decoration: none;
+}
+.smallBlue:hover {
+	text-decoration: underline;
+}
+.whiteBold {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #eeeeee;
+	font-weight: bold;
+}
+.whiteText {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #eeeeee;
+	font-weight: normal;
+}
+.yellowText, span.yellowText a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #dfd233;
+	font-weight: normal;
+	text-decoration: none;
+}
+.popupHeader {
+	height:22px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #dfd233;
+	font-weight: bold;
+	text-decoration: none;
+	padding-right:8px;
+	border-bottom:1px solid white;
+	background:#6b696b url(/images/popupheader.jpg) no-repeat;
+}
+.yellowText:hover, span.yellowText a:hover {
+	text-decoration: underline;
+}
+.bandName {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #E78200;
+	font-weight: bold;
+}
+.bandType {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #E78200;
+	font-weight: bold;
+	font-style: italic;
+}
+.smallLiteYellow {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: EDE79B;
+	font-weight: bold;
+}
+.headerYellowTitle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: DFD233;
+	font-weight: bold;
+}
+.headerLiteYellowGreyBg {
+	height:27px;
+	padding-left:6px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: EDE79B;
+	font-weight: bold;
+	background-color: #484848;
+}
+.headerLiteYellowGreyBg A {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: EDE79B;
+        font-weight: bold;
+        background-color: #484848;
+
+}
+.smallLiteYellowGreyBg {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: EDE79B;
+	font-weight: bold;
+	background-color: #484848;
+}
+.signup td, .signup a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 12px;
+	padding-left:6px;
+}
+.signup .label {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+/*Normally the asterisk near required fields*/
+.required_char {
+	font-family: verdana, Helvetica, sans-serif; 
+	font-size: 12px; 
+	color: #F68622; 
+	font-weight: bold;
+	vertical-align: -2px;
+}
+
+/*Same as smallBlue*/
+.input_help
+{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        color: #0E5A9F;
+        font-weight: normal;
+        text-decoration: none;
+}
+
+td.form_sub_header, .form_sub_header, .form_sub_header .label {
+	padding-bottom: 3px; padding-left: 6px; padding-top: 3px;
+	background-color: #767676;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #eeeeee;
+	font-weight: bold;
+
+}
+
+.admin_header, a.nav, .nav {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+.admin_header {background-color: #666666;}
+
+a.nav:hover {
+	color: #999999;
+}
+
+
+
+.label_error {
+	color: maroon;
+}
+.expose {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #666666;
+	line-height: 26px;
+}
+.title-orange {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+	font-style: italic;
+        color: #E08019;
+        line-height: 26px;
+}
+.darkbold {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #222222;
+	text-indent: 8pt;
+	background-color: bbbbbb;
+}
+.smallText-12 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #555555;
+	font-weight: normal;
+	line-height: 18px;
+}
+.smallText-14 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #555555;
+	font-weight: normal;
+	line-height: 18px;
+}
+.search, .search A, .search TH, .search SPAN {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #0E5A9F;
+	font-weight: normal;
+	text-decoration: none;
+	padding-left:4px;
+	text-align:left;
+}
+SPAN.search_page {
+	color:#000000;
+}
+.search TH {
+	font-weight:bold;
+	height:14px;
+}
+.browse A {
+	font:bolder 12px Arial;
+}
+.search A:hover, A.headerLiteYellowGreyBg:hover, A.search_page {
+	text-decoration:underline;
+}
+.search_img {
+	width:24px;
+	text-align:center;
+}
+.dbPickerLabel
+{
+	font-weight: bold;
+	padding-left: 5px;
+	background-color: #CCCCAA;
+	border:2px solid;
+	cursor: pointer;
+	border-top-color: #AAA;
+	border-left-color: #AAA;
+	border-right-color:#333;
+	border-bottom-color:#333;
+}
+table.dbPickerResults
+{
+	width:100%;
+	background-color:white;
+	color:black;
+}
+table.dbPickerResults th
+{
+	background-color:#cecece;
+	font: bold 10pt verdana,arial,helvetica;
+}
+table.dbPickerResults tr.odd
+{
+	background-color:#aaaa99;
+}
+table.dbPickerResults tr.even
+{
+	background-color:#ede7b9;
+}
+table.dbPickerResults tr td
+{
+	padding-left: 5px;
+	font-weight: bold;
+	border:2px solid;
+	cursor: pointer;
+	border-top-color: #AAA;
+	border-left-color: #AAA;
+	border-right-color:#333;
+	border-bottom-color:#333;
+}
+table.dbPickerResults tr.odd:hover,
+table.dbPickerResults tr.even:hover
+{
+	background-color:#ffffff;
+}

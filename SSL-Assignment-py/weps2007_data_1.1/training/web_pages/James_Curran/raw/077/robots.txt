@@ -1,0 +1,13 @@
+# HighBeam: robots.txt 
+# 
+# This file is used to allow crawlers to crawl our site. 
+# 
+User-agent: *
+Disallow: /Common/Controls/Controlpage.aspx
+Disallow: /DocPrint.aspx
+Disallow: /Aspx/GetPublogos.aspx
+
+# Slow Down Yahoo
+#http://help.yahoo.com/help/us/ysearch/slurp/slurp-03.html
+User-agent: Slurp
+Crawl-delay: 1

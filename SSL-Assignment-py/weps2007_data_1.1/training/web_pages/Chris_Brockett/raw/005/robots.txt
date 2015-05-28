@@ -1,0 +1,39 @@
+User-agent: *
+Disallow: /images/mobyaoeu
+Disallow: /downloads/mobyaoeu
+Disallow: /redir
+Disallow: /acct
+Disallow: /admin
+Disallow: /ad_serv
+Disallow: /ad_view
+Disallow: /ad_click
+Disallow: /game/contrib
+Disallow: /game/sheet/contribute
+Crawl-delay: 1
+
+# Rover is a bad dog <http://www.roverbot.com>
+User-agent: Roverbot
+Disallow: /
+
+# zoominfo.com
+User-agent: NextGenSearchBot
+Disallow: /
+
+# Teleport access is disallowed
+User-agent: Teleport Pro
+Disallow: /
+
+User-agent: WebStripper
+Disallow: /
+
+User-agent: SlySearch
+Disallow: /
+
+# http://msdn.microsoft.com/workshop/delivery/offline/linkrel.asp
+User-Agent: MSIECrawler
+Disallow: /
+
+# http://lucene.apache.org/nutch/bot.html
+User-agent: Nutch
+Disallow: /
+

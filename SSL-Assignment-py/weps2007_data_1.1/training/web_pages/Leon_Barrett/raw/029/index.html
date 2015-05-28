@@ -1,0 +1,648 @@
+
+<!-- Register TagPrefix="Yehey" TagName="Search" src="/local/sports/modules/search_box.ascx" -->
+
+
+<!--%@Register TagPrefix="Sports" TagName="Courtdirectory" src="wccourtdir.ascx"% -->
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>YEHEY!Sports</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="global.css" rel="stylesheet" type="text/css">
+<link href="main.css" rel="stylesheet" type="text/css">
+
+<style type="text/css">
+<!--
+.style1 {font-size: 9px}
+-->
+</style>
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div align="center">
+  
+<script type="text/javascript">
+<!--
+function trim(val)
+{
+   var temp = val;
+   var obj = /^(\s*)([\W\w]*)(\b\s*$)/;
+   if (obj.test(temp)) { temp = temp.replace(obj, '$2'); }
+   var obj = /  /g;
+   while (temp.match(obj)) { temp = temp.replace(obj, " "); }
+   return temp;
+}
+
+function headersearch_click()
+{
+	var txtbox = document.getElementById( "q" );	
+    var txtbox_value = trim(txtbox.value)
+	if( txtbox_value.length > 2 )
+	if( txtbox_value.length > 2 )
+	{
+		window.location = 'http://www.yehey.com/search/search.aspx?q=' + txtbox_value;
+	}
+//	  document.headersearch_form.submit();
+//	else
+//	  return false;
+}
+-->
+</script>
+<div id="topheader" style="background-image:url(/images/bg9.gif); margin:0px; padding:0px;">
+  <div align="left">&nbsp;<a href="http://www.yehey.com/" class="headersmall" >Yehey!</a> | <a href="http://www.yehey.com/bugs/" class="headersmall" >Report a Bug</a></div>
+	<div id="yehey" align="left"><a href="http://www.yehey.com/"><img src="yeheylogo.gif" border="0" /></a>
+	</div>	
+	<div id="searchbox">
+		<table width="349" border="0" cellspacing="0" cellpadding="0">
+			<!--  method="post" action="/search/search.aspx" -->
+  			<tr>
+    			<td width="36"><img src="img1.gif" width="36" height="30" /></td>
+    			<td background="bg10.gif" class="byline">Hanapin sa web 
+      				<input id="q" name="q" type="text">
+      				<input type="button" name="Submit3" value="Hanapin" onclick="headersearch_click();" />
+				</td>
+  			</tr>
+  			<tr>
+    			<td height="25">&nbsp;</td>
+   				<td align="right">
+				<span id="Header_lblPoints" class="body_text"></span>
+    			<span id="Header_lbSpacer"></span><a id="Header_lbSignIn" class="Nav_Yehey" href="https://secure.yehey.com/signin/SignIn.aspx?ru=http%3a%2f%2fwww.yehey.com%2fsports%2ffull_article.aspx%3fid%3d146682">Sign In</a> <a id="Header_lbSignInLine" class="Nav_Yehey">|</a> <a id="Header_lbSignInRegister" class="Nav_Yehey" href="https://secure.yehey.com/signin/Register.aspx?ru=http%3a%2f%2fwww.yehey.com%2fsports%2ffull_article.aspx%3fid%3d146682">Register</a>
+    			</td>
+  			</tr>
+			<!-- type="hidden" id="type" name="type" value="web" / -->
+			<!-- /form -->
+		</table>
+	</div>	
+</div>
+<div id="channeltabs"><img name="" src="x.gif" width="1" height="5" alt="" /></div>
+<table width="760" height="19" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+	<td height="19" align="left" background="bg11.gif"><a href="http://www.yehey.com/news/Default.aspx">
+	  <img id="Header_imgNews" src="news_inactive.gif" alt="" border="0" height="19" width="108" /></a><a href="http://www.yehey.com/finance/Default.aspx"><img id="Header_imgFinance" src="finance_inactive.gif" alt="" border="0" height="19" width="108" /></a><a href="http://www.yehey.com/sports/Default.aspx"><img id="Header_imgSports" src="sports_active.gif" alt="" border="0" height="19" width="108" /></a><a href="http://www.yehey.com/entertainment/Default.aspx"><img id="Header_imgEntertainment" src="entertainment_inactive.gif" alt="" border="0" height="19" width="108" /></a><a href="http://www.yehey.com/lifestyle/Default.aspx"><img id="Header_imgLifestyle" src="lifestyle_inactive.gif" alt="" border="0" height="19" width="108" /></a><a href="http://www.yehey.com/travel/Default.aspx"><img id="Header_imgTravel" src="travel_inactive.gif" alt="" border="0" height="19" width="108" /></a><a href="http://www.yehey.com/gadgets/Default.aspx"><img id="Header_imgGadgets" src="gadgets_inactive.gif" alt="" border="0" height="19" width="108" /></a></td>
+  </tr>
+</table>
+  
+<style type="text/css">
+
+#dropmenudiv{
+position:absolute;
+border:1px solid black;
+font:normal 12px Verdana;
+line-height:18px;
+z-index:100;
+}
+
+</style>
+
+
+<script type="text/javascript">
+
+/***********************************************
+* AnyLink Drop Down Menu- © Dynamic Drive (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+//Contents for menu 1
+var menu1=new Array()
+
+menu1[0]='&nbsp;<a class="bracketlinks" href="http://www.yehey.com/sports/articles_list.aspx?id=29"><font color="white" size="1"><b>Athletics</b></font></a><br>';
+menu1[1]='&nbsp;<a class="bracketlinks" href="http://www.yehey.com/sports/articles_list.aspx?id=37"><font color="white" size="1"><b>Badminton</b></font></a><br>';
+menu1[2]='&nbsp;<a class="bracketlinks" href="http://www.yehey.com/sports/articles_list.aspx?id=27"><font color="white" size="1"><b>Baseball</b></font></a><br>';
+menu1[3]='&nbsp;<a class="bracketlinks" href="http://www.yehey.com/sports/articles_list.aspx?id=22"><font color="white" size="1"><b>Billiards</b></font></a><br>';
+menu1[4]='&nbsp;<a class="bracketlinks" href="http://www.yehey.com/sports/articles_list.aspx?id=11"><font color="white" size="1"><b>Boxing</b></font></a><br>';
+menu1[5]='&nbsp;<a class="bracketlinks" href="http://www.yehey.com/sports/articles_list.aspx?id=13"><font color="white" size="1"><b>Cycling</b></font></a><br>';
+menu1[6]='&nbsp;<a class="bracketlinks" href="http://www.yehey.com/sports/articles_list.aspx?id=12"><font color="white" size="1"><b>Motorsports</b></font></a><br>';
+menu1[7]='&nbsp;<a class="bracketlinks" href="http://www.yehey.com/sports/articles_list.aspx?id=9"><font color="white" size="1"><b>Golf</b></font></a><br>';
+menu1[8]='&nbsp;<a class="bracketlinks" href="http://www.yehey.com/sports/articles_list.aspx?id=5"><font color="white" size="1"><b>NBA</b></font></a><br>';
+menu1[9]='&nbsp;<a class="bracketlinks" href="http://www.yehey.com/sports/articles_list.aspx?id=33"><font color="white" size="1"><b>NCAA (Phil)</b></font></a><br>';
+menu1[10]='&nbsp;<a class="bracketlinks" href="http://www.yehey.com/sports/articles_list.aspx?id=25"><font color="white" size="1"><b>NFL</b></font></a><br>';
+menu1[11]='&nbsp;<a class="bracketlinks" href="http://www.yehey.com/sports/articles_list.aspx?id=36"><font color="white" size="1"><b>Other</b></font></a><br>';
+menu1[12]='&nbsp;<a class="bracketlinks" href="http://www.yehey.com/sports/articles_list.aspx?id=6"><font color="white" size="1"><b>PBA</b></font></a><br>';
+menu1[13]='&nbsp;<a class="bracketlinks" href="http://www.yehey.com/sports/articles_list.aspx?id=32"><font color="white" size="1"><b>PBL</b></font></a><br>';
+menu1[14]='&nbsp;<a class="bracketlinks" href="http://www.yehey.com/sports/articles_list.aspx?id=10"><font color="white" size="1"><b>Soccer</b></font></a><br>';
+menu1[15]='&nbsp;<a class="bracketlinks" href="http://www.yehey.com/sports/articles_list.aspx?id=8"><font color="white" size="1"><b>Tennis</b></font></a><br>';
+menu1[16]='&nbsp;<a class="bracketlinks" href="http://www.yehey.com/sports/articles_list.aspx?id=30"><font color="white" size="1"><b>UAAP</b></font></a><br>';
+menu1[17]='&nbsp;<a class="bracketlinks" href="http://www.yehey.com/sports/articles_list.aspx?id=23"><font color="white" size="1"><b>Volleyball</b></font></a><br>';
+
+var menuwidth='165px' //default menu width
+var menubgcolor='#666666'  //menu bgcolor
+var disappeardelay=250  //menu disappear speed onMouseout (in miliseconds)
+var hidemenu_onclick="yes" //hide menu when user clicks within menu?
+
+/////No further editting needed
+
+var ie4=document.all
+var ns6=document.getElementById&&!document.all
+
+if (ie4||ns6)
+document.write('<div align="left" id="dropmenudiv" style="visibility:hidden;width:'+menuwidth+';background-color:'+menubgcolor+'" onMouseover="clearhidemenu()" onMouseout="dynamichide(event)"></div>')
+
+function getposOffset(what, offsettype){
+var totaloffset=(offsettype=="left")? what.offsetLeft : what.offsetTop;
+var parentEl=what.offsetParent;
+while (parentEl!=null){
+totaloffset=(offsettype=="left")? totaloffset+parentEl.offsetLeft : totaloffset+parentEl.offsetTop;
+parentEl=parentEl.offsetParent;
+}
+return totaloffset;
+}
+
+
+function showhide(obj, e, visible, hidden, menuwidth){
+if (ie4||ns6)
+dropmenuobj.style.left=dropmenuobj.style.top=-500
+if (menuwidth!=""){
+dropmenuobj.widthobj=dropmenuobj.style
+dropmenuobj.widthobj.width=menuwidth
+}
+if (e.type=="click" && obj.visibility==hidden || e.type=="mouseover")
+obj.visibility=visible
+else if (e.type=="click")
+obj.visibility=hidden
+}
+
+function iecompattest(){
+return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+
+function clearbrowseredge(obj, whichedge){
+var edgeoffset=0
+if (whichedge=="rightedge"){
+var windowedge=ie4 && !window.opera? iecompattest().scrollLeft+iecompattest().clientWidth-15 : window.pageXOffset+window.innerWidth-15
+dropmenuobj.contentmeasure=dropmenuobj.offsetWidth
+if (windowedge-dropmenuobj.x < dropmenuobj.contentmeasure)
+edgeoffset=dropmenuobj.contentmeasure-obj.offsetWidth
+}
+else{
+var windowedge=ie4 && !window.opera? iecompattest().scrollTop+iecompattest().clientHeight-15 : window.pageYOffset+window.innerHeight-18
+dropmenuobj.contentmeasure=dropmenuobj.offsetHeight
+if (windowedge-dropmenuobj.y < dropmenuobj.contentmeasure)
+edgeoffset=dropmenuobj.contentmeasure+obj.offsetHeight
+}
+return edgeoffset
+}
+
+function populatemenu(what){
+if (ie4||ns6)
+dropmenuobj.innerHTML=what.join("")
+}
+
+
+function dropdownmenu(obj, e, menucontents, menuwidth){
+if (window.event) event.cancelBubble=true
+else if (e.stopPropagation) e.stopPropagation()
+clearhidemenu()
+dropmenuobj=document.getElementById? document.getElementById("dropmenudiv") : dropmenudiv
+populatemenu(menucontents)
+
+if (ie4||ns6){
+showhide(dropmenuobj.style, e, "visible", "hidden", menuwidth)
+dropmenuobj.x=getposOffset(obj, "left")
+dropmenuobj.y=getposOffset(obj, "top")
+dropmenuobj.style.left=dropmenuobj.x-clearbrowseredge(obj, "rightedge")+"px"
+dropmenuobj.style.top=342
+//dropmenuobj.y-clearbrowseredge(obj, "bottomedge")+obj.offsetHeight+"px"
+//alert( dropmenuobj.style.top );
+}
+
+return clickreturnvalue()
+}
+
+function clickreturnvalue(){
+if (ie4||ns6) return false
+else return true
+}
+
+function contains_ns6(a, b) {
+while (b.parentNode)
+if ((b = b.parentNode) == a)
+return true;
+return false;
+}
+
+function dynamichide(e){
+if (ie4&&!dropmenuobj.contains(e.toElement))
+delayhidemenu()
+else if (ns6&&e.currentTarget!= e.relatedTarget&& !contains_ns6(e.currentTarget, e.relatedTarget))
+delayhidemenu()
+}
+
+function hidemenu(e){
+if (typeof dropmenuobj!="undefined"){
+if (ie4||ns6)
+dropmenuobj.style.visibility="hidden"
+}
+}
+
+function delayhidemenu(){
+if (ie4||ns6)
+delayhide=setTimeout("hidemenu()",disappeardelay)
+}
+
+function clearhidemenu(){
+if (typeof delayhide!="undefined")
+clearTimeout(delayhide)
+}
+
+if (hidemenu_onclick=="yes")
+document.onclick=hidemenu
+
+</script>
+
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+//-->
+</script>
+
+<div id="channelheader" style="background-image:url(images/BgSportsmain.gif);">
+	<div id="channellogo"><img src="SPORTSMAIN_240x62.gif" width="252" height="62" /></div>
+	<div id="datetext">Lunes Ika-26 ng Pebrero, 2007</div>
+</div>
+<div id="bannerspace" align="center">
+	<div id=banner><!--Y2 Adserver :: Sports Leaderboard-->
+<script language='JavaScript' type='text/javascript' src='http://ads.teamyehey.com/ads/adx.js'></script>
+<script language='JavaScript' type='text/javascript'>
+<!--
+   if (!document.phpAds_used) document.phpAds_used = ',';
+   phpAds_random = new String (Math.random()); phpAds_random = phpAds_random.substring(2,11);
+   
+   document.write ("<" + "script language='JavaScript' type='text/javascript' src='");
+   document.write ("http://ads.teamyehey.com/ads/adjs.php?n=" + phpAds_random);
+   document.write ("&amp;what=zone:318&amp;target=_blank");
+   document.write ("&amp;exclude=" + document.phpAds_used);
+   if (document.referrer)
+      document.write ("&amp;referer=" + escape(document.referrer));
+   document.write ("'><" + "/script>");
+//-->
+</script><noscript><a href='http://ads.teamyehey.com/ads/adclick.php?n=abb254fd' target='_blank'><img src='http://ads.teamyehey.com/ads/adview.php?what=zone:318&amp;n=abb254fd' border='0' alt=''></a></noscript>
+</div>
+</div>	
+<div id="channelnav" align="left">
+  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td valign="middle">&nbsp;&nbsp;<a href="http://www.yehey.com/sports/default.aspx" class="Nav_Channel">Sports
+           Home</a> | <a class="Nav_Channel" href="http://www.yehey.com/sports/default.htm" onclick="return clickreturnvalue()" onmouseover="dropdownmenu(this, event, menu1, '150px')" onmouseout="delayhidemenu()">Sports
+            Categories</a> | <!--a href="scoreboard.aspx" class="Nav_Channel">Scoreboard</a> <img src="../../images/new_icon.gif" width="31" height="17" align="absbottom" /> 
+        |--><a href="http://www.yehey.com/sports/gallery_home.aspx" class="Nav_Channel">Image Gallery</a> | 
+        <a href="http://www.yehey.com/boards/default.aspx?ForumGroupID=13" class="Nav_Channel">Message
+         Boards</a></td>
+      <td align="right" valign="bottom">&nbsp;</td>
+    </tr>
+  </table>
+</div>
+
+
+</div>
+<center>
+  <div id="bodyshell"><form name="frmComment" method="post" action="full_article.aspx%3Fid=146682.1.html" id="frmComment" style="margin:0px;">
+<input type="hidden" name="__VIEWSTATE" value="dDwtMTI4ODYxMzkxMTt0PDtsPGk8NT47aTw3PjtpPDk+Oz47bDx0PDtsPGk8MD47PjtsPHQ8O2w8aTwwPjs+O2w8dDxwPGw8XyFJdGVtQ291bnQ7PjtsPGk8MTg+Oz4+O2w8aTwwPjtpPDE+O2k8Mj47aTwzPjtpPDQ+O2k8NT47aTw2PjtpPDc+O2k8OD47aTw5PjtpPDEwPjtpPDExPjtpPDEyPjtpPDEzPjtpPDE0PjtpPDE1PjtpPDE2PjtpPDE3Pjs+O2w8dDw7bDxpPDA+Oz47bDx0PEA8MDsyOTtBdGhsZXRpY3M7Pjs7Pjs+Pjt0PDtsPGk8MD47PjtsPHQ8QDwxOzM3O0JhZG1pbnRvbjs+Ozs+Oz4+O3Q8O2w8aTwwPjs+O2w8dDxAPDI7Mjc7QmFzZWJhbGw7Pjs7Pjs+Pjt0PDtsPGk8MD47PjtsPHQ8QDwzOzIyO0JpbGxpYXJkczs+Ozs+Oz4+O3Q8O2w8aTwwPjs+O2w8dDxAPDQ7MTE7Qm94aW5nOz47Oz47Pj47dDw7bDxpPDA+Oz47bDx0PEA8NTsxMztDeWNsaW5nOz47Oz47Pj47dDw7bDxpPDA+Oz47bDx0PEA8NjsxMjtNb3RvcnNwb3J0czs+Ozs+Oz4+O3Q8O2w8aTwwPjs+O2w8dDxAPDc7OTtHb2xmOz47Oz47Pj47dDw7bDxpPDA+Oz47bDx0PEA8ODs1O05CQTs+Ozs+Oz4+O3Q8O2w8aTwwPjs+O2w8dDxAPDk7MzM7TkNBQSAoUGhpbCk7Pjs7Pjs+Pjt0PDtsPGk8MD47PjtsPHQ8QDwxMDsyNTtORkw7Pjs7Pjs+Pjt0PDtsPGk8MD47PjtsPHQ8QDwxMTszNjtPdGhlcjs+Ozs+Oz4+O3Q8O2w8aTwwPjs+O2w8dDxAPDEyOzY7UEJBOz47Oz47Pj47dDw7bDxpPDA+Oz47bDx0PEA8MTM7MzI7UEJMOz47Oz47Pj47dDw7bDxpPDA+Oz47bDx0PEA8MTQ7MTA7U29jY2VyOz47Oz47Pj47dDw7bDxpPDA+Oz47bDx0PEA8MTU7ODtUZW5uaXM7Pjs7Pjs+Pjt0PDtsPGk8MD47PjtsPHQ8QDwxNjszMDtVQUFQOz47Oz47Pj47dDw7bDxpPDA+Oz47bDx0PEA8MTc7MjM7Vm9sbGV5YmFsbDs+Ozs+Oz4+Oz4+Oz4+Oz4+O3Q8O2w8aTwxPjtpPDM+O2k8Nz47aTw5PjtpPDExPjtpPDEzPjtpPDE5PjtpPDIxPjtpPDIzPjs+O2w8dDxwPGw8VGV4dDs+O2w8U29jY2VyOz4+Ozs+O3Q8cDxsPFRleHQ7PjtsPEZvb3RiYWxsOiBXZXN0IEhhbSBzaWduIFF1YXNoaWU7Pj47Oz47dDxwPGw8VGV4dDs+O2w8QUZQOz4+Ozs+O3Q8cDxsPFRleHQ7PjtsPDkgSmFudWFyeSAyMDA3IHwgNjowMiBBTTs+Pjs7Pjt0PHA8bDxUZXh0Oz47bDxcPHAgY2xhc3M9ImJvZHlfdGV4dCJcPldlc3QgSGFtIGhhdmUgc2lnbmVkIFdlc3QgQnJvbSBtaWRmaWVsZGVyIE5pZ2VsIFF1YXNoaWUgaW4gYSAxLjUgbWlsbGlvbiBwb3VuZCBkZWFsIHJpc2luZyB0byB0d28gbWlsbGlvbiBpZiB0aGUgc3RydWdnbGluZyBMb25kb24gc2lkZSBhdm9pZHMgcmVsZWdhdGlvbi5cPC9wXD5cPHAgY2xhc3M9ImJvZHlfdGV4dCJcPldlc3QgQnJvbSBtYW5hZ2VyIFRvbnkgTW93YnJheSBjb25maXJtZWQgb24gTW9uZGF5OiAiTmlnZWwgcmVjZW50bHkgZXhwcmVzc2VkIGFuIGludGVyZXN0IGluIGdldHRpbmcgYmFjayB0byB0aGUgUHJlbWllciBMZWFndWUuIFw8L3BcPlw8cCBjbGFzcz0iYm9keV90ZXh0Ilw+IldoZW4gV2VzdCBIYW0gbG9kZ2VkIHRoZWlyIGludGVyZXN0IGluIHNpZ25pbmcgTmlnZWwsIGNvdXBsZWQgd2l0aCBteSBkZXNpcmUgdG8gY3JlYXRlIHNvbWUgcmV2ZW51ZSB0byBicmluZyBpbiBmcmVzaCBmYWNlcywgSSB0aG91Z2h0IGl0IHdhcyBhbiBvcHBvcnR1bml0eSB3aGljaCBzdWl0ZWQgYWxsIHBhcnRpZXMuIlw8cCBhbGlnbj0nY2VudGVyJ1w+XDwhLS1ZMiBBZHNlcnZlciA6OiBTcG9ydHMgR29vZ2xlIEFkc2Vuc2UgTGVmdCBDb2x1bW4tLVw+DQpcPHNjcmlwdCBsYW5ndWFnZT0nSmF2YVNjcmlwdCcgdHlwZT0ndGV4dC9qYXZhc2NyaXB0JyBzcmM9J2h0dHA6Ly9hZHMudGVhbXllaGV5LmNvbS9hZHMvYWR4LmpzJ1w+XDwvc2NyaXB0XD4NClw8c2NyaXB0IGxhbmd1YWdlPSdKYXZhU2NyaXB0JyB0eXBlPSd0ZXh0L2phdmFzY3JpcHQnXD4NClw8IS0tDQogICBpZiAoIWRvY3VtZW50LnBocEFkc191c2VkKSBkb2N1bWVudC5waHBBZHNfdXNlZCA9ICcsJ1w7DQogICBwaHBBZHNfcmFuZG9tID0gbmV3IFN0cmluZyAoTWF0aC5yYW5kb20oKSlcOyBwaHBBZHNfcmFuZG9tID0gcGhwQWRzX3JhbmRvbS5zdWJzdHJpbmcoMiwxMSlcOw0KICAgDQogICBkb2N1bWVudC53cml0ZSAoIlw8IiArICJzY3JpcHQgbGFuZ3VhZ2U9J0phdmFTY3JpcHQnIHR5cGU9J3RleHQvamF2YXNjcmlwdCcgc3JjPSciKVw7DQogICBkb2N1bWVudC53cml0ZSAoImh0dHA6Ly9hZHMudGVhbXllaGV5LmNvbS9hZHMvYWRqcy5waHA/bj0iICsgcGhwQWRzX3JhbmRvbSlcOw0KICAgZG9jdW1lbnQud3JpdGUgKCImYW1wXDt3aGF0PXpvbmU6Mzk2IilcOw0KICAgZG9jdW1lbnQud3JpdGUgKCImYW1wXDtleGNsdWRlPSIgKyBkb2N1bWVudC5waHBBZHNfdXNlZClcOw0KICAgaWYgKGRvY3VtZW50LnJlZmVycmVyKQ0KICAgICAgZG9jdW1lbnQud3JpdGUgKCImYW1wXDtyZWZlcmVyPSIgKyBlc2NhcGUoZG9jdW1lbnQucmVmZXJyZXIpKVw7DQogICBkb2N1bWVudC53cml0ZSAoIidcPlw8IiArICIvc2NyaXB0XD4iKVw7DQovLy0tXD4NClw8L3NjcmlwdFw+XDxub3NjcmlwdFw+XDxhIGhyZWY9J2h0dHA6Ly9hZHMudGVhbXllaGV5LmNvbS9hZHMvYWRjbGljay5waHA/bj1hODlmOTU2OScgdGFyZ2V0PSdfYmxhbmsnXD5cPGltZyBzcmM9J2h0dHA6Ly9hZHMudGVhbXllaGV5LmNvbS9hZHMvYWR2aWV3LnBocD93aGF0PXpvbmU6Mzk2JmFtcFw7bj1hODlmOTU2OScgYm9yZGVyPScwJyBhbHQ9JydcPlw8L2FcPlw8L25vc2NyaXB0XD4NCg0KDQoNCg0KDQpRdWFzaGllIGpvaW5lZCB0aGUgQmFnZ2llcyBmcm9tIFNvdXRoYW1wdG9uIGluIGEgMS4ybSBwb3VuZCBkZWFsIG1pbnV0ZXMgYmVmb3JlIGxhc3QgSmFudWFyeSdzIHRyYW5zZmVyIHdpbmRvdyBjbG9zZWQuXDwvcFw+XDxwIGNsYXNzPSJib2R5X3RleHQiXD5UaGUgMjgteWVhci1vbGQgbWFkZSAzMCBhcHBlYXJhbmNlcyBmb3IgVGhlIENoYW1waW9uc2hpcCBjbHViLCBzY29yaW5nIG9uY2UgaW4gYSAzLTEgZGVmZWF0IGF0IEFyc2VuYWwgaW4gQXByaWwuXDwvcFw+XDxwIGNsYXNzPSJib2R5X3RleHQiXD5RdWFzaGllJ3MgZGVwYXJ0dXJlIHdpbGwgZ2l2ZSBNb3dicmF5IGV4dHJhIHNwZW5kaW5nIHBvd2VyIHRvIHByZXNzIG9uIHdpdGggaGlzIG93biBwbGFucyB0byBicmluZyBpbiBuZXcgYmxvb2QgZHVyaW5nIHRoZSBKYW51YXJ5IHRyYW5zZmVyIHdpbmRvdy4gXDwvcFw+XDxwIGNsYXNzPSJib2R5X3RleHQiXD5IZSBpcyBzZXQgdG8gbG9kZ2UgYSBmb3VyIG1pbGxpbm8gcG91bmQgYmlkIGZvciB0aGUgSGliZXJuaWFuIG1pZGZpZWxkIGR1byBvZiBTY290dCBCcm93biBhbmQgS2V2aW4gVGhvbXBzb24gZnJvbSBoaXMgZm9ybWVyIGNsdWIuIFw8L3BcPlw8cCBjbGFzcz0iYm9keV90ZXh0Ilw+QW5kIE1vd2JyYXkgaXMgYWxzbyBrZWVuIHRvIGJyaW5nIHRoZSBMdXRvbiBwYWlyIG9mIHN0cmlrZXIgUm93YW4gVmluZSBhbmQgZGVmZW5kZXIgTGVvbiBCYXJyZXR0IHRvIFRoZSBIYXd0aG9ybnMuIEhlIGlzIGFueGlvdXMgdG8gaG9sZCBvbnRvIGhpcyBiaWctbmFtZSBwbGF5ZXJzLCBtb3N0IG5vdGFibHkgc2tpcHBlciBDdXJ0aXMgRGF2aWVzLCBidXQgQWxiaW9uIGhhdmUgbWlkZmllbGQgb3B0aW9ucyBhbHJlYWR5IGF0IHRoZWlyIGRpc3Bvc2FsIHRvIGNvbXBlbnNhdGUgZm9yIHRoZSBkZXBhcnR1cmUgb2YgUXVhc2hpZS5cPC9wXD5cPHAgY2xhc3M9ImJvZHlfdGV4dCJcPmJ1ci9ucjA3XDwvcFw+XDxwIGNsYXNzPSJib2R5X3RleHQiXD5cPC9wXD47Pj47Oz47dDxwPGw8VGV4dDs+O2w8XGU7Pj47Oz47dDxwPGw8XyFJdGVtQ291bnQ7PjtsPGk8ND47Pj47bDxpPDA+O2k8MT47aTwyPjtpPDM+Oz47bDx0PDtsPGk8MD47PjtsPHQ8QDwxNTM1MTc7Rm9vdGJhbGw6IEFsbCBjaGFuZ2UgYXMgQ2FnbGlhcmkgYW5kIFRvcmlubyBzYWNrIHRoZWlyIGNvYWNoZXM7Pjs7Pjs+Pjt0PDtsPGk8MD47PjtsPHQ8QDwxNTM1MTU7Rm9vdGJhbGw6IEZpb3JlbnRpbmEgc2lnbiBBcnNlbmFsIHRlZW5hZ2VyIEx1cG9saTs+Ozs+Oz4+O3Q8O2w8aTwwPjs+O2w8dDxAPDE1MzUxMztGb290YmFsbDogRGUgQmlhc2kgcmVwbGFjZXMgWmFjY2hlcm9uaSBhcyBUb3Jpbm8gY29hY2g7Pjs7Pjs+Pjt0PDtsPGk8MD47PjtsPHQ8QDwxNTM1MTA7Rm9vdGJhbGw6IFdlIHdlcmUgd3JvbmcsIGFkbWl0cyBNYWRyaWQgZGVyYnkgcmVmZXJlZTs+Ozs+Oz4+Oz4+O3Q8cDxwPGw8TmF2aWdhdGVVcmw7PjtsPEFydGljbGVzX2xpc3QuYXNweD9pZD0xMDs+Pjs+Ozs+O3Q8cDxsPF8hSXRlbUNvdW50Oz47bDxpPDM+Oz4+O2w8aTwwPjtpPDE+O2k8Mj47PjtsPHQ8O2w8aTwwPjs+O2w8dDxAPDE1MzUxODs4O1Rlbm5pczogQVRQIER1YmFpIE9wZW4gcmVzdWx0czsyNiBGZWJydWFyeSAyMDA3IHwgOTozNSBQTTs+Ozs+Oz4+O3Q8O2w8aTwwPjs+O2w8dDxAPDE1MzUxNzsxMDtGb290YmFsbDogQWxsIGNoYW5nZSBhcyBDYWdsaWFyaSBhbmQgVG9yaW5vIHNhY2sgdGhlaXIgY29hY2hlczsyNiBGZWJydWFyeSAyMDA3IHwgOTozMiBQTTs+Ozs+Oz4+O3Q8O2w8aTwwPjs+O2w8dDxAPDE1MzUxNjsxMztDeWNsaW5nOiBFbWJhdHRsZWQgVWxscmljaCBoYW5ncyB1cCBoaXMgYmlrZTsyNiBGZWJydWFyeSAyMDA3IHwgOToyOSBQTTs+Ozs+Oz4+Oz4+Oz4+O3Q8O2w8aTwxPjs+O2w8dDw7bDxpPDA+Oz47bDx0PHA8bDxUZXh0Oz47bDxcPCEtLVkyIEFkc2VydmVyIDo6IFNwb3J0cyBGdWxsIEJhbm5lci0tXD4NClw8c2NyaXB0IGxhbmd1YWdlPSdKYXZhU2NyaXB0JyB0eXBlPSd0ZXh0L2phdmFzY3JpcHQnIHNyYz0naHR0cDovL2Fkcy50ZWFteWVoZXkuY29tL2Fkcy9hZHguanMnXD5cPC9zY3JpcHRcPg0KXDxzY3JpcHQgbGFuZ3VhZ2U9J0phdmFTY3JpcHQnIHR5cGU9J3RleHQvamF2YXNjcmlwdCdcPg0KXDwhLS0NCiAgIGlmICghZG9jdW1lbnQucGhwQWRzX3VzZWQpIGRvY3VtZW50LnBocEFkc191c2VkID0gJywnXDsNCiAgIHBocEFkc19yYW5kb20gPSBuZXcgU3RyaW5nIChNYXRoLnJhbmRvbSgpKVw7IHBocEFkc19yYW5kb20gPSBwaHBBZHNfcmFuZG9tLnN1YnN0cmluZygyLDExKVw7DQogICANCiAgIGRvY3VtZW50LndyaXRlICgiXDwiICsgInNjcmlwdCBsYW5ndWFnZT0nSmF2YVNjcmlwdCcgdHlwZT0ndGV4dC9qYXZhc2NyaXB0JyBzcmM9JyIpXDsNCiAgIGRvY3VtZW50LndyaXRlICgiaHR0cDovL2Fkcy50ZWFteWVoZXkuY29tL2Fkcy9hZGpzLnBocD9uPSIgKyBwaHBBZHNfcmFuZG9tKVw7DQogICBkb2N1bWVudC53cml0ZSAoIiZhbXBcO3doYXQ9em9uZTozMTcmYW1wXDt0YXJnZXQ9X2JsYW5rIilcOw0KICAgZG9jdW1lbnQud3JpdGUgKCImYW1wXDtleGNsdWRlPSIgKyBkb2N1bWVudC5waHBBZHNfdXNlZClcOw0KICAgaWYgKGRvY3VtZW50LnJlZmVycmVyKQ0KICAgICAgZG9jdW1lbnQud3JpdGUgKCImYW1wXDtyZWZlcmVyPSIgKyBlc2NhcGUoZG9jdW1lbnQucmVmZXJyZXIpKVw7DQogICBkb2N1bWVudC53cml0ZSAoIidcPlw8IiArICIvc2NyaXB0XD4iKVw7DQovLy0tXD4NClw8L3NjcmlwdFw+XDxub3NjcmlwdFw+XDxhIGhyZWY9J2h0dHA6Ly9hZHMudGVhbXllaGV5LmNvbS9hZHMvYWRjbGljay5waHA/bj1hOWQ5ZGEwZicgdGFyZ2V0PSdfYmxhbmsnXD5cPGltZyBzcmM9J2h0dHA6Ly9hZHMudGVhbXllaGV5LmNvbS9hZHMvYWR2aWV3LnBocD93aGF0PXpvbmU6MzE3JmFtcFw7bj1hOWQ5ZGEwZicgYm9yZGVyPScwJyBhbHQ9JydcPlw8L2FcPlw8L25vc2NyaXB0XD4NCjs+Pjs7Pjs+Pjs+Pjs+Pjs+jh13e/WAk7k7+Ve3PGpLNKGOBD8=" />
+ 
+    <table width="760" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr> 
+        <td valign="top">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+            <tr> 
+              <td valign="top">
+			  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+				   <tr>
+                  <td height="20" style="background:repeat-y url(images/BgSportsmainLC.gif);"><div align="center" class="sectionnameheader">Soccer</div></td>
+                </tr>
+				<tr>
+				 <td align="center" valign="top">
+				  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+				   <tr>
+				    <td valign="top">
+					 <table border="0" cellpadding="3" cellspacing="0" width="97%" align="center">
+					  	<tr valign="top"> 
+					   <td>
+					   <p><span class="headline">
+                        Football: West Ham sign Quashie
+                        </span><br>
+                        <span class="byline">
+                        
+                        AFP
+                        <br>
+                        9 January 2007 | 6:02 AM
+                        </span></p>					  </td>
+                     </tr>
+					 <tr>
+					  <td>
+					                         <span class="body_text">
+                      <p class="body_text">West Ham have signed West Brom midfielder Nigel Quashie in a 1.5 million pound deal rising to two million if the struggling London side avoids relegation.</p><p class="body_text">West Brom manager Tony Mowbray confirmed on Monday: "Nigel recently expressed an interest in getting back to the Premier League. </p><p class="body_text">"When West Ham lodged their interest in signing Nigel, coupled with my desire to create some revenue to bring in fresh faces, I thought it was an opportunity which suited all parties."<p align='center'><!--Y2 Adserver :: Sports Google Adsense Left Column-->
+<script language='JavaScript' type='text/javascript' src='http://ads.teamyehey.com/ads/adx.js'></script>
+<script language='JavaScript' type='text/javascript'>
+<!--
+   if (!document.phpAds_used) document.phpAds_used = ',';
+   phpAds_random = new String (Math.random()); phpAds_random = phpAds_random.substring(2,11);
+   
+   document.write ("<" + "script language='JavaScript' type='text/javascript' src='");
+   document.write ("http://ads.teamyehey.com/ads/adjs.php?n=" + phpAds_random);
+   document.write ("&amp;what=zone:396");
+   document.write ("&amp;exclude=" + document.phpAds_used);
+   if (document.referrer)
+      document.write ("&amp;referer=" + escape(document.referrer));
+   document.write ("'><" + "/script>");
+//-->
+</script><noscript><a href='http://ads.teamyehey.com/ads/adclick.php?n=a89f9569' target='_blank'><img src='http://ads.teamyehey.com/ads/adview.php?what=zone:396&amp;n=a89f9569' border='0' alt=''></a></noscript>
+
+
+
+
+
+Quashie joined the Baggies from Southampton in a 1.2m pound deal minutes before last January's transfer window closed.</p><p class="body_text">The 28-year-old made 30 appearances for The Championship club, scoring once in a 3-1 defeat at Arsenal in April.</p><p class="body_text">Quashie's departure will give Mowbray extra spending power to press on with his own plans to bring in new blood during the January transfer window. </p><p class="body_text">He is set to lodge a four millino pound bid for the Hibernian midfield duo of Scott Brown and Kevin Thompson from his former club. </p><p class="body_text">And Mowbray is also keen to bring the Luton pair of striker Rowan Vine and defender Leon Barrett to The Hawthorns. He is anxious to hold onto his big-name players, most notably skipper Curtis Davies, but Albion have midfield options already at their disposal to compensate for the departure of Quashie.</p><p class="body_text">bur/nr07</p><p class="body_text"></p>                      </span><br>
+					  <p align="center"><font class="pagination"><strong>
+					    
+					  </strong></font></p>					  </td>
+					 </tr>
+					 </table>
+					</td>
+				   </tr>
+				   <tr>
+					 <td align="center">&nbsp;</td>
+					</tr>
+					<tr>
+					  <td height="27" align="center" valign="top" class="body_text">
+						<!--Print/eMail/Subscribe::Start-->
+						
+<script type="text/javascript">
+<!--
+function printArticle(url){
+winpops=window.open(url,"","width=685,height=500,left=50,top=50,scrollbars=yes,resizable=false,");
+}
+function email(url){
+winpops=window.open(url,"","width=485,height=385,left=50,top=50,scrollbars=yes,resizable=false,");
+}
+-->
+</script>
+<table width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+		<td align="center"><img src="email.gif" width="17" height="11" border="0"><a href="javascript:email('email_article.aspx?id=146682')" class="USR_interact">eMail this Article</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="print.gif" width="17" height="11" border="0"><a href="javascript:printArticle('print_article.aspx?id=146682')" class="USR_interact">Print
+			</a>
+		</td>
+	</tr>
+</table>
+
+						<!--Print/eMail/Subscribe::End-->
+					</td>
+					</tr>
+					 <tr>
+					   <td>
+					    <table width="100%" border="0" cellpadding="15" cellspacing="0">
+						                           <td align="center" class="body_text"> 
+                            <!-- Post Comment ::Start -->
+                            
+<tr>
+	<td align="center">
+		<table cellspacing="0" cellpadding="5" width="95%" border="0">
+			<tr>
+				<td align="center" bgColor="#efefef" colSpan="2"><span class="fnbox_title">Comments 
+						from other users: </span>
+				</td>
+			</tr>
+			
+		</table>
+	</td>
+</tr>
+<tr>
+	<td align="center">
+		<table cellSpacing="0" cellPadding="5" width="95%" border="0">
+			<tr>
+				<td bgColor="#efefef">
+					<table cellSpacing="0" cellPadding="1" width="95%" border="0">
+						<tr>
+							<td align="left" class="body_text">Share your thoughts:</td>
+						</tr>
+						<tr>
+							<td align="left">&nbsp;
+								<textarea name="Comment:txtMsg" rows="5" cols="38" id="Comment_txtMsg"></textarea>
+							</td>
+						</tr>
+						<tr>
+							<td align="left">
+								<input type="submit" name="Comment:cmdSubmit" value=" Submit Post" id="Comment_cmdSubmit" />
+								<font class="byline" color="red"></font></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</td>
+</tr>
+&nbsp;&nbsp;&nbsp;
+	
+                            <!-- Post Comment ::End -->
+                          </td>
+						</table>
+					   </td> 
+                      </tr> 
+				  </table>
+				 </td>
+				</tr>
+				<tr>
+					   <td>
+					    <table width="100%" border="0" cellspacing="0" cellpadding="3">
+                        <tr> 
+                          <td colspan="2" style="background:repeat-y url(images/BgSportsmainLC.gif)"><span class="fnbox_title"> &nbsp;&nbsp;Other Stories</span></td>
+                        </tr>
+                        <tr> 
+                          <td>
+						   <table width="100%" border="0" cellpadding="5" cellspacing="0">
+						      
+                            <tr> 
+                              <td width="5" align="center" valign="top"><img src="bullet3.gif" width="4" height="9"></td>
+                              <td><a class="fnbox_links" href="http://www.yehey.com/sports/full_article.aspx?id=153517">
+                                Football: All change as Cagliari and Torino sack their coaches
+                                </a></td>
+                            </tr>
+                           
+                            <tr> 
+                              <td width="5" align="center" valign="top"><img src="bullet3.gif" width="4" height="9"></td>
+                              <td><a class="fnbox_links" href="http://www.yehey.com/sports/full_article.aspx?id=153515">
+                                Football: Fiorentina sign Arsenal teenager Lupoli
+                                </a></td>
+                            </tr>
+                           
+                            <tr> 
+                              <td width="5" align="center" valign="top"><img src="bullet3.gif" width="4" height="9"></td>
+                              <td><a class="fnbox_links" href="http://www.yehey.com/sports/full_article.aspx?id=153513">
+                                Football: De Biasi replaces Zaccheroni as Torino coach
+                                </a></td>
+                            </tr>
+                           
+                            <tr> 
+                              <td width="5" align="center" valign="top"><img src="bullet3.gif" width="4" height="9"></td>
+                              <td><a class="fnbox_links" href="http://www.yehey.com/sports/full_article.aspx?id=153510">
+                                Football: We were wrong, admits Madrid derby referee
+                                </a></td>
+                            </tr>
+                          
+                        <tr> 
+                          <td align="right" valign="top">&nbsp;</td>
+						  <td class="bracket"><div align="right">[ <a id="hlMoreRelated" class="bracketlinks" href="http://www.yehey.com/sports/Articles_list.aspx?id=10">More</a> ]</div></td>
+                        </tr>
+						   </table>
+						  </td>
+                        </tr>
+                      </table>
+					   </td>
+					  </tr>
+                </table>
+				</td>
+            <td width="310" valign="top" background="dashed.gif" style="background-repeat:repeat-y;">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+				   <td align="right">
+				    <table width="98%" border="0" cellpadding="0" cellspacing="0">
+                        <tr> 
+                    <td height="20" style="background:repeat-y url(images/BgSportsmainRC.gif);" align="center"><span class="sectionnameheader">Breaking 
+                      News</span></td>
+                        </tr>
+                  <tr>
+                    <td bgcolor="#FFFFFF">
+					<table width="100%" border="0" align="center" cellpadding="5" cellspacing="0">
+                        
+                            <tr>
+                              <td width="3" align="center" valign="top"><img src="bullet.gif" width="3" height="8" /></td>
+                              <td><a class="textlink" href='http://www.yehey.com/sports/full_article.aspx?id=153518&amp;categ=8'> Tennis: ATP Dubai Open results</a><br /><span class="byline">26 February 2007 | 9:35 PM</span></td>
+                            </tr>
+                          
+                            <tr>
+                              <td width="3" align="center" valign="top"><img src="bullet.gif" width="3" height="8" /></td>
+                              <td><a class="textlink" href='http://www.yehey.com/sports/full_article.aspx?id=153517&amp;categ=10'> Football: All change as Cagliari and Torino sack their coaches</a><br /><span class="byline">26 February 2007 | 9:32 PM</span></td>
+                            </tr>
+                          
+                            <tr>
+                              <td width="3" align="center" valign="top"><img src="bullet.gif" width="3" height="8" /></td>
+                              <td><a class="textlink" href='http://www.yehey.com/sports/full_article.aspx?id=153516&amp;categ=13'> Cycling: Embattled Ullrich hangs up his bike</a><br /><span class="byline">26 February 2007 | 9:29 PM</span></td>
+                            </tr>
+                          
+                    </table>
+					</td>
+                  </tr>
+					</table>
+				   </td>
+				  </tr>
+				  <tr>
+				   <td height="5"></td>
+				  </tr>
+				                <tr> 
+                <td background="bg7.gif" width="1" height="1" ></td>
+              </tr>
+              <tr> 
+                <td height="630" width="310" align="center"><span class="advertisement">Advertisement</span><br /><!--Y2 Adserver :: Sports Half Page Ad-->
+<script language='JavaScript' type='text/javascript' src='http://ads.teamyehey.com/ads/adx.js'></script>
+<script language='JavaScript' type='text/javascript'>
+<!--
+   if (!document.phpAds_used) document.phpAds_used = ',';
+   phpAds_random = new String (Math.random()); phpAds_random = phpAds_random.substring(2,11);
+   
+   document.write ("<" + "script language='JavaScript' type='text/javascript' src='");
+   document.write ("http://ads.teamyehey.com/ads/adjs.php?n=" + phpAds_random);
+   document.write ("&amp;what=zone:316&amp;target=_blank");
+   document.write ("&amp;exclude=" + document.phpAds_used);
+   if (document.referrer)
+      document.write ("&amp;referer=" + escape(document.referrer));
+   document.write ("'><" + "/script>");
+//-->
+</script><noscript><a href='http://ads.teamyehey.com/ads/adclick.php?n=a1fde0a2' target='_blank'><img src='http://ads.teamyehey.com/ads/adview.php?what=zone:316&amp;n=a1fde0a2' border='0' alt=''></a></noscript>
+ 
+					
+				</td>
+              </tr>
+              <tr> 
+                <td background="bg7.gif" width="1" height="1" ></td>
+              </tr>
+			  <tr>
+			   <td height="5"></td>
+			  </tr>
+              <tr>
+			  	<td align="center"></td>
+			  </tr> 
+				<tr>
+				 <td height="10"></td>
+				</tr>
+                </table>   
+				</td>
+            </tr>
+          </table>
+		  </td>
+      </tr>
+    </table>
+	    </form>
+  </div>
+
+<center>
+<br />
+<!--Y2 Adserver :: Sports Full Banner-->
+<script language='JavaScript' type='text/javascript' src='http://ads.teamyehey.com/ads/adx.js'></script>
+<script language='JavaScript' type='text/javascript'>
+<!--
+   if (!document.phpAds_used) document.phpAds_used = ',';
+   phpAds_random = new String (Math.random()); phpAds_random = phpAds_random.substring(2,11);
+   
+   document.write ("<" + "script language='JavaScript' type='text/javascript' src='");
+   document.write ("http://ads.teamyehey.com/ads/adjs.php?n=" + phpAds_random);
+   document.write ("&amp;what=zone:317&amp;target=_blank");
+   document.write ("&amp;exclude=" + document.phpAds_used);
+   if (document.referrer)
+      document.write ("&amp;referer=" + escape(document.referrer));
+   document.write ("'><" + "/script>");
+//-->
+</script><noscript><a href='http://ads.teamyehey.com/ads/adclick.php?n=a9d9da0f' target='_blank'><img src='http://ads.teamyehey.com/ads/adview.php?what=zone:317&amp;n=a9d9da0f' border='0' alt=''></a></noscript>
+
+<br />
+
+<div id="channelcol"><strong><a href="http://www.yehey.com/" class="footerline1">Home </a> | <a href="http://www.yehey.com/search" class="footerline1">Search</a>&nbsp; | &nbsp;<a href="http://www.yehey.com/news" class="footerline1">News</a>&nbsp; | &nbsp;<a href="http://www.yehey.com/entertainment" class="footerline1">Entertainment</a>&nbsp; | &nbsp;<a href="http://www.yehey.com/finance" class="footerline1">Finance</a>&nbsp; | &nbsp;<a href="http://www.yehey.com/lifestyle" class="footerline1">Lifestyle</a>&nbsp;</strong></div>
+
+<div id="otherscol"><strong><a href="http://www.yehey.com/customercare" class="footerline1">Help</a>&nbsp; | &nbsp;<a href="http://www.yehey.com/advertise" class="footerline1">Advertise</a>&nbsp; | &nbsp;<a href="http://www.payplus.com.ph" class="footerline1">e-Commerce</a>&nbsp; | &nbsp;<a href="http://www.yehey.com/jobs/applicants/CompanyInfo.aspx?id=83f5b734-d399-49c0-b127-0f009db8c691" class="footerline1">Jobs</a></strong></div>
+
+<div id="otherscolsmall"><span class="footerline2"><a href="http://www.yehey.com/privacypolicy/" class="footerline2">Privacy Policy</a>&nbsp;</span> | &nbsp;<span class="footerline2"><a href="http://www.yehey.com/termsofuse/" class="footerline2">Terms
+  of Use</a>&nbsp;</span><a href="http://www.yehey.com/toolbar" class="footerline2"></a> | <a href="http://www.yehey.com/sitemap/" class="footerline2">Sitemap</a> </div>
+
+<div id="copyright" style="background-image:url(/images/bgfooter.gif)">Copyright &copy;               2006
+  by Yehey! Corporation. All rights reserved&nbsp;</div>
+
+</center>
+    <!-- Google Analytics Tracking Script Start -->
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-97089-1";
+urchinTracker();
+</script>
+	<!-- Google Analytics Tracking Script End -->
+</center>
+</body>
+</html>

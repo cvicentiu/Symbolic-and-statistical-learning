@@ -1,0 +1,949 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <meta name="GENERATOR"
+ content="Mozilla/4.75 [en] (X11; U; SunOS 5.8 sun4u) [Netscape]">
+  <title>Empirical Machine Translation</title>
+</head>
+<body>
+<img src="logolsi.jpg" alt="" align="middle" height="83" width="540"> <br>
+&nbsp;
+<p><font size="+2"><big
+ style="text-decoration: underline; color: rgb(0, 0, 153);"><span
+ style="font-style: italic;">Empirical
+Machine Translation</span></big><br>
+</font></p>
+<p><font size="+2">oncoming events... <img
+ style="width: 32px; height: 32px;" alt="new!!" src="Exclamacion.gif"><br>
+</font></p>
+<ul>
+  <li>NIST 2007 MT Evaluation Campaign</li>
+  <li><a class="moz-txt-link-freetext" href="http://www.computing.dcu.ie/~away/MT/cfp.txt">Theoretical and Methodological Issues in Machine Translation (TMI'07)</a></li>
+  <li><a class="moz-txt-link-freetext" href="http://www.cs.ust.hk/~dekai/ssst/">Syntax and Structure in Statistical Translation (SSST)</a></li>
+  <li><a class="moz-txt-link-freetext" href="http://www.eamt.org/cfp/MTS-1stcall.htm">MT SUMMIT XI</a></li>
+  <li><a class="moz-txt-link-freetext" href="http://www.nist.gov/speech/tests/ace/ace07/et/index.htm">ACE 2007 - Entity Translation</a></li>
+  <li><a class="moz-txt-link-freetext" href="http://www.acl2007.org/">ACL 2007</a></li>
+  <li><a class="moz-txt-link-freetext"
+ href="http://www.cs.rochester.edu/meetings/hlt-naacl07">NAACL 2007<br>
+    </a></li>
+</ul>
+<p><br>
+<font size="+2">recent events... </font></p>
+<ul>
+  <li><a class="moz-txt-link-freetext" href="http://www.ccl.kuleuven.be/ws-metis/">New Approaches to Machine Translation (A METIS-II Workshop)</a></li>
+  <li><a class="moz-txt-link-freetext"
+ href="http://www.clsp.jhu.edu/ws2006/groups/ossmt/">Open
+Source Toolkit for Statistical Machine Translation (JHU'06)</a></li>
+  <li><a class="moz-txt-link-freetext" href="http://www.nist.gov/speech/tests/mt/mt06eval_official_results.html">NIST 2006 MT Evaluation Campaign</a></li>
+  <li><a class="moz-txt-link-freetext" href="http://www.slt.atr.jp/IWSLT2006/">IWSLT 2006</a><br>
+  </li>
+  <li><a class="moz-txt-link-freetext" href="http://eamt.emmtee.net/">EAMT 11<sup>th</sup> Annual
+Conference</a></li>
+  <li><a class="moz-txt-link-freetext" href="http://www.acl2006.mq.edu.au/">ACL 2006</a></li>
+  <li><a class="moz-txt-link-freetext" href="http://www.statmt.org/wmt06/"> NAACL 2006 WORKSHOP ON
+STATISTICAL MACHINE TRANSLATION</a></li>
+  <ul>
+    <li>Shared-task: <a class="moz-txt-link-freetext" href="http://www.statmt.org/wmt06/shared-task/">Exploiting
+Parallel Texts for Statistical&nbsp;Machine&nbsp;Translation</a></li>
+  </ul>
+  <li><a class="moz-txt-link-freetext" href="http://www.lrec-conf.org/lrec2006/">LREC 2006</a><br>
+  </li>
+  <li><a class="moz-txt-link-freetext" href="http://tc-star.itc.it/openlab2006/">OPENLAB 2006:
+TC-STAR OpenLab on Speech Translation</a></li>
+  <li><a class="moz-txt-link-freetext" href="http://eacl06.itc.it/">EACL 2006</a></li>
+  <li><a class="moz-txt-link-freetext" href="http://www.nist.gov/speech/tests/mt/mt05eval_official_results_release_20050801_v3.html">NIST 2005 MT Evaluation Campaign</a></li>
+</ul>
+<br>
+<br>
+<table style="text-align: left; width: 80%;" border="1" cellpadding="2"
+ cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;"><big style="font-style: italic;"><span
+ style="font-weight: bold;">Groups</span></big><br>
+      </td>
+      <td style="vertical-align: top;"><big><span
+ style="font-weight: bold; font-style: italic;">People</span></big><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><a
+ href="http://www-i6.informatik.rwth-aachen.de/web/Publications/index.html">RWTH
+- Aachen</a> &nbsp;&nbsp;&nbsp; </td>
+      <td style="vertical-align: top; text-align: right;">Oliver
+Bender; <a
+ href="http://www-i6.informatik.rwth-aachen.de/web/Staff/ney/">Hermann
+Ney</a>; Nicola Ueffing, Richard Zens ::<span
+ style="text-decoration: underline;"><br>
+      </span><a
+ href="http://www-i6.informatik.rwth-aachen.de/Colleagues/och/">Franz
+Josef Och</a>; Stephan Vogel</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><a
+ href="http://www.dlsi.ua.es/index_e.html">Universitat d'Alacant</a><br>
+      </td>
+      <td style="vertical-align: top; text-align: right;"><a
+ href="http://www.dlsi.ua.es/%7Emlf/">Mikel L. Forcada</a><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><a
+ href="http://www.cs.ualberta.ca/%7Elindek/papers.htm">University of
+Alberta</a></td>
+      <td style="vertical-align: top; text-align: right;"><a
+ href="http://www.cs.ualberta.ca/%7Ecolinc/">Colin Cherry</a>; <a
+ href="http://www.cs.ualberta.ca/%7Elindek/">Dekang Lin</a></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><a
+ href="http://www.slt.atr.jp/nlp-e/publications/">ATR SLT</a></td>
+      <td style="vertical-align: top; text-align: right;"><a
+ href="http://www.slt.atr.jp/%7Ekimamura/">Kenji Imamura</a>; <a
+ href="http://www.slt.atr.jp/%7Epaul/">Michael Paul</a>; <a
+ href="http://www.slt.atr.jp/%7Esumita/">Eiichiro Sumita</a>; <a
+ href="http://www.slt.atr.jp/%7Etwatana/">Taro Watanabe</a></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><a
+ href="http://www.cs.berkeley.edu/">Berkeley</a><br>
+      </td>
+      <td style="vertical-align: top; text-align: right;"><a
+ href="http://www.cs.berkeley.edu/%7Ebouchard/index-en.html">Alexandre
+Bouchard-Cote</a>; <a href="http://www.cs.berkeley.edu/%7Epliang/">Percy
+Liang</a>; <a href="http://www.cs.berkeley.edu/%7Eklein/">Dan Klein</a>;
+      <a href="http://www.cs.berkeley.edu/%7Etaskar/">Ben Taskar</a><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><a
+ href="http://www.cog.brown.edu/Research/nlp/">Brown University</a></td>
+      <td style="vertical-align: top; text-align: right;"><a
+ href="http://www.cs.brown.edu/people/ec/">Eugene Charniak</a>; <a
+ href="http://www.cs.brown.edu/people/hjf/">Heidi J. Fox</a></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><a
+ href="http://www.lti.cs.cmu.edu/">CMU - LTI</a> (<a
+ href="http://www.is.cs.cmu.edu/js/">ISL</a>)</td>
+      <td style="vertical-align: top; text-align: right;"><a
+ href="http://www-2.cs.cmu.edu/%7Ejgc/">Jaime Carbonell</a>; <a
+ href="http://www-2.cs.cmu.edu/%7Elafferty/">John Lafferty</a>; <a
+ href="http://www.cs.cmu.edu/afs/cs.cmu.edu/user/alavie/www/home.html">Alon
+Lavie</a>; <a href="http://www-2.cs.cmu.edu/%7Eashishv/">Ashish
+Venugopal</a>; <a href="http://www-2.cs.cmu.edu/%7Evogel/">Stephan
+Vogel</a>; <a
+ href="http://www-2.cs.cmu.edu/afs/cs.cmu.edu/user/ahw/www/">Alex Waibel</a>;
+      <a href="http://www-2.cs.cmu.edu/%7Ebzhao/">Bing Zhao</a></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><a
+ href="http://www.cs.columbia.edu/">Columbia University</a></td>
+      <td style="vertical-align: top; text-align: right;"><a
+ href="http://www1.cs.columbia.edu/%7Emdiab/">Mona Diab</a>; <a
+ href="http://www1.cs.columbia.edu/%7Egalley/">Michel Galley</a> ; <a
+ href="http://www.nizarhabash.com/">Nizar Habash</a><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><a
+ href="http://www.iccs.informatics.ed.ac.uk/">University of Edinburgh</a><br>
+      </td>
+      <td style="vertical-align: top; text-align: right;"><a
+ href="http://www.iccs.informatics.ed.ac.uk/%7Epkoehn/">Philipp Koehn</a></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Google<br>
+      </td>
+      <td style="vertical-align: top; text-align: right;"><a
+ href="http://www.fjoch.com/">Franz Josef Och</a><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><a
+ href="http://www.eecs.harvard.edu">Harvard University</a><br>
+      </td>
+      <td style="vertical-align: top; text-align: right;">
+      <a href="http://www.eecs.harvard.edu/%7Eshieber/">Stuart M.
+Shieber</a><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><a
+ href="http://www.cs.ust.hk/%7Ehltc/">HKUST HLTC</a></td>
+      <td style="vertical-align: top; text-align: right;"><a
+ href="http://www.cs.ust.hk/%7Edekai/">Dekai Wu</a></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><a
+ href="http://www.watson.ibm.com/">IBM Watson Research Center</a></td>
+      <td style="vertical-align: top; text-align: right;">Peter F.
+Brown; Vincent J. Della
+Pietra; <a href="http://www.research.ibm.com/people/k/kishore/">Kishore
+Papineni</a>; Christoph Tillmann; :: Tong Zhang;<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><a
+ href="http://www.isi.edu/natural-language/">ISI</a></td>
+      <td style="vertical-align: top; text-align: right;"><a
+ href="http://www.isi.edu/%7Efraser/">Alexander Fraser</a>; <a
+ href="http://www.isi.edu/natural-language/people/germann/">Ulrich
+Germann</a>; <a href="http://www.isi.edu/%7Ehovy/">Eduard Hovy</a>; <a
+ href="http://www.isi.edu/natural-language/people/knight.html">Kevin
+Knight</a>; <a href="http://www.isi.edu/%7Ecyl/">Chin-Yew Lin</a>; <a
+ href="http://www.isi.edu/%7Emarcu">Daniel Marcu</a>; <a
+ href="http://www.isi.edu/%7Edragos/">Dragos Stefan Munteanu</a>; <a
+ href="http://www.isi.edu/%7Echiang/">David Chiang</a><span
+ style="text-decoration: underline;"> </span>::<span
+ style="text-decoration: underline;"><br>
+      </span><a
+ href="http://www.isi.edu/natural-language/people/yamada.html">Kenji
+Yamada</a>; Franz Josef Och;
+Philipp Koehn</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><a
+ href="http://nlp.cs.jhu.edu/nlp/">JHU</a></td>
+      <td style="vertical-align: top; text-align: right;"><a
+ href="http://www.cs.jhu.edu/%7Ejason/">Jason
+Eisner</a>; <a href="http://nlp.cs.jhu.edu/%7Enasmith/">Noah A.
+Smith</a>; <a href="http://www.cs.jhu.edu/%7Edasmith/">David A. Smith</a>;
+      <a href="http://www.cs.jhu.edu/%7Eyarowsky/">David Yarowsky</a></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><a
+ href="http://www.umiacs.umd.edu/">University of Maryland (UMIACS)</a></td>
+      <td style="vertical-align: top; text-align: right;"><a
+ href="http://www.umiacs.umd.edu/users/bonnie/">Bonnie
+J. Dorr</a>; <a href="http://www.umiacs.umd.edu/users/resnik/">Philip
+Resnik</a></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><a
+ href="http://research.microsoft.com/nlp/">Microsoft</a></td>
+      <td style="vertical-align: top; text-align: right;"><a
+ href="http://research.microsoft.com/%7Echrisbkt/">Chris Brockett</a>; <a
+ href="http://research.microsoft.com/%7Ebilldol/">William Dolan</a>; <a
+ href="http://research.microsoft.com/%7Echrisq/">Christopher
+B. Quirk</a></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><a href="http://www.ai.mit.edu/">MIT
+Boston</a></td>
+      <td style="vertical-align: top; text-align: right;"><a
+ href="http://www.ai.mit.edu/people/mcollins/">Michael Collins</a>; <a
+ href="http://people.csail.mit.edu/brooke">Brooke Cowan</a>;
+Philipp Koehn; Ivona Kucerova<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><a
+ href="http://www-rali.iro.umontreal.ca/Accueil.en.html">University
+of Montreal (RALI)</a></td>
+      <td style="vertical-align: top; text-align: right;"><a
+ href="http://www.iro.umontreal.ca/%7Efoster/">George
+Foster</a></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><a href="http://nlp.cs.nyu.edu/">New
+York University (NYU)</a></td>
+      <td style="vertical-align: top; text-align: right;"><a
+ href="http://cs.nyu.edu/%7Emelamed/">Dan Melamed</a></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><a href="http://www.cs.sfu.ca/">Samon
+Fraser University</a> <br>
+      </td>
+      <td style="vertical-align: top; text-align: right;"><a
+ href="http://www.sfu.ca/%7Eanoop/">Anoop
+Sarkar</a></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><a
+ href="http://www-nlp.stanford.edu/">Stanford University</a></td>
+      <td style="vertical-align: top; text-align: right;"><a
+ href="http://www.stanford.edu/%7Ejurafsky/">Daniel Jurafsky</a>; <a
+ href="http://www-nlp.stanford.edu/%7Emanning/">Chris
+Manning</a>; <a href="http://www.stanford.edu/%7Ekrist/">Kristina
+Toutanova</a> :: Mona Diab<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><a href="http://www.cs.ucla.edu/">University
+of California</a></td>
+      <td style="vertical-align: top; text-align: right;"><a
+ href="http://www.cs.ucla.edu/%7Emhopkins/">Mark Hopkins</a></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><a
+ href="http://cslr.colorado.edu/">University of Colorado</a></td>
+      <td style="vertical-align: top; text-align: right;"><a
+ href="http://verbs.colorado.edu/~mpalmer/">Martha Palmer</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><a
+ href="http://www.cis.upenn.edu/">University of Pennsylvania</a></td>
+      <td style="vertical-align: top; text-align: right;">
+      <a href="http://www.cis.upenn.edu/~lhuang3">Liang Huang</a>; <a href="http://www.cis.upenn.edu/~taskar">Ben Taskar</a> :: Martha Palmer; Yuan Ding</td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><a
+ href="http://www.cs.rochester.edu/">University of Rochester</a></td>
+      <td style="vertical-align: top; text-align: right;"><a
+ href="http://www.cs.rochester.edu/%7Egildea/">Daniel Gildea</a>; <a
+ href="http://www.cs.rochester.edu/%7Ezhanghao/">Hao Zhang</a></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><a
+ href="http://www.lsi.upc.es/%7Enlp/">Universitat Polit&egrave;cnica
+de Catalunya (TALP)</a></td>
+      <td style="vertical-align: top; text-align: right;"><a
+ href="http://gps-tsc.upc.es/veu/personal/jmcrego/">Josep
+M.
+Crego</a>; <a href="http://www.lsi.upc.edu/%7Ejgimenez">Jes&uacute;s
+Gim&eacute;nez</a>; <a href="http://www.lsi.upc.es/%7Elambert/">Patrik
+Lambert;</a> <a href="http://www.lsi.upc.es/%7Elambert/"></a><a
+ href="http://www.lsi.upc.edu/%7Elluism/">Llu&iacute;s M&agrave;rquez</a> :: Adri&agrave; de
+Gispert;<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><a href="http://www.iti.upv.es/">Universitat
+Polit&egrave;cnica de
+Val&egrave;ncia (ITI)</a></td>
+      <td style="vertical-align: top; text-align: right;"><a
+ href="http://www.iti.upv.es/%7Efcn/">Francisco
+Casacuberta</a>; <a href="http://www.iti.upv.es/%7Eevidal/">Enrique
+Vidal</a></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><a
+ href="http://www.rug.nl/let/index?lang=en">University of Uppsala</a></td>
+      <td style="vertical-align: top; text-align: right;"><a
+ href="http://odur.let.rug.nl/%7Etiedeman/index.html">J&ouml;rg
+Tiedemann</a></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><a
+ href="http://www.xrce.xerox.com/research.html">Xerox</a><br>
+      </td>
+      <td style="vertical-align: top; text-align: right;">Kenji Yamada;
+Eric Gaussier; <a
+ href="http://www.xrce.xerox.com/people/goutte/home.html">Cyrill Goutte</a></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;"><a
+ href="http://research.yahoo.com">Yahoo! Research</a><br>
+      </td>
+      <td style="vertical-align: top; text-align: right;"><a
+ href="http://research.yahoo.com/%7Etzhang">Tong Zhang</a><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p><font size="+2"><br>
+</font><font size="+2">Past Events</font></p>
+<ul>
+  <li><a href="http://www.is.cs.cmu.edu/iwslt2005/">IWSLT 2005</a></li>
+  <li><a
+ href="http://nats-www.informatik.uni-hamburg.de/view/RANLPMT2005/WebHome">RANLP
+2005 - Workshop on Modern Approaches in Translation Technologies</a></li>
+  <li><a href="http://www.tcllab.org/Pages/mtsummit.html">MT SUMMIT X</a></li>
+  <li><a
+ href="http://www.nist.gov/speech/tests/mt/mt05eval_official_results_release_20050801_v3.html">NIST
+2005 MT Evaluation</a><br>
+  </li>
+  <li>ACL
+2005 <a href="http://www.statmt.org/wpt05/">WORKSHOP ON BUILDING AND
+USING PARALLEL TEXTS:<span style="font-weight: bold;"></span>
+DATA-DRIVEN MACHINE TRANSLATION AND BEYOND</a></li>
+  <ul>
+    <li>Shared&nbsp;Task 1: <a
+ href="http://www.cs.unt.edu/%7Erada/wpt05">Building and Using Parallel
+Texts for Languages With Scarce Resources</a></li>
+    <li>Shared&nbsp;Task 2: <a
+ href="http://www.statmt.org/wpt05/mt-shared-task/">Exploiting Parallel
+Texts for Statistical&nbsp;Machine&nbsp;Translation</a></li>
+  </ul>
+  <li><font size="+2"><a
+ href="http://www.clsp.jhu.edu/ws2005/groups/statistical/"><small><small>Statistical
+Machine Translation by Parsing (JHU'05)</small></small></a></font></li>
+  <li><font size="+2"><a
+ href="http://www.clsp.jhu.edu/ws03/groups/translate/"><small><small>Syntax
+for SMT 2003 Workshop (JHU'03)</small></small></a></font></li>
+  <li><font size="+2"><a
+ href="http://www.clsp.jhu.edu/ws2002/groups/mt/"><small><small>Generation
+in the Context of MT (JHU'02)</small></small></a></font></li>
+  <li><font size="+2"><a
+ href="http://www.clsp.jhu.edu/ws99/projects/mt/index.html"><small><small>Statistical
+Machine Translation (JHU'99)</small></small></a></font></li>
+</ul>
+<font size="+2"><br>
+Some Sites</font><a
+ href="http://www.clsp.jhu.edu/ws99/projects/mt/index.html"><small><small></small></small></a><br>
+<p><font size="+2"><a href="http://nlp.cs.nyu.edu/"><small><small></small></small></a></font><font
+ size="+2"><small><small><a href="http://forbes.inf.ed.ac.uk/ued/">Edinburgh
+SMT Reading Group</a></small></small></font><br>
+<font size="+2"><a
+ href="http://people.csail.mit.edu/u/k/koehn/public_html/smt/"><small><small>MIT
+SMT Reading Group</small></small></a><small><small><br>
+<a href="http://www.geocities.com/langtecheval/opensource-mt.htm">Open
+Source Projects</a></small></small></font><br>
+<a href="http://www.mt-archive.info/">Machine
+Translation Archive</a> <br>
+<a href="http://www.statmt.org/">Statistical Machine Translation</a><br>
+<font size="+2"><a
+ href="http://www.isi.edu/natural-language/projects/rewrite/"><small><small>Rewrite
+project (ISI)</small></small></a><br>
+<a href="http://nlp.cs.nyu.edu/"><small><small>Proteus Project (NYU)</small></small></a></font><br>
+</p>
+<p><font size="+2">Lists<br>
+</font></p>
+<p><font size="+2"><small><small><a
+ href="http://www.computing.dcu.ie/mailman/listinfo/mt-list">EAMT
+MT-list</a><br>
+<br>
+</small></small>Data</font></p>
+<p><a
+ href="http://people.csail.mit.edu/people/koehn/publications/europarl/">European
+Parliament Parallel Corpus [Europarl]</a><br>
+<a
+ href="http://www.isi.edu/natural-language/download/hansard/index.html">Canadian
+Parliament Parallel Corpus [Handsards]</a><br>
+<font size="+2"><a href="http://logos.uio.no/opus/"><small><small>OPUS
+- an open source parallel corpus</small></small></a></font><br>
+</p>
+<p><big><big>Tools<br>
+</big></big></p>
+<p><big><big><big><a href="http://registry.dfki.de/"><small><small><small>Natural
+Language Software Registry</small></small></small></a><br>
+</big></big></big><a href="http://www.isi.edu/licensed-sw/pharaoh/">Pharaoh<small><small><font
+ size="5"><small><small>. A beam search decoder for phrase-based
+statistical machine translation models.</small></small></font></small></small></a><br>
+<a href="http://www.isi.edu/licensed-sw/carmel/">Carmel Finite-State.</a><br>
+<a href="http://www.speech.sri.com/projects/srilm/">SRI Language
+Modeling Toolkit.</a><br>
+<a href="http://mi.eng.cam.ac.uk/%7Eprc14/toolkit.html">CMU Statistical
+Language Modeling Toolkit.</a><br>
+<a href="http://www.ai.mit.edu/people/mcollins/code.html">Collins's
+parser</a><br>
+<a href="http://www.cis.upenn.edu/%7Edbikel/software.html#stat-parser">Dan
+Bikel's multilingual statistical parsing engine</a><br>
+<a href="ftp://ftp.cs.brown.edu/pub/nlparser/">Charniak's parser</a><br>
+<a href="http://www.cis.upenn.edu/%7Eadwait/penntools.html">Penn Tools</a><br>
+<a href="http://www.lsi.upc.es/%7Enlp/SVMTool/">SVMTool</a><br>
+<font size="+2"><small><small><big><small><a
+ href="http://www.lsi.upc.es/%7Enlp/freeling/">Freeling</a><br>
+<a href="http://chasen.org/%7Etaku/software/yamcha/">Yamcha</a><br>
+</small></big></small></small></font><a
+ href="http://chasen.org/%7Etaku/software/TinySVM/"><font size="+2"><small><small><big><small>TinySVM</small></big></small></small></font></a><br>
+<a href="http://svmlight.joachims.org/">Svmlight</a><br>
+<a href="http://www.fjoch.com/GIZA++.html">GIZA++ (2003)</a><br>
+<a href="http://nipadio.lsi.upc.es/cgi-bin/wei4/public/wei.consult.perl">MCR
+WordNet Interface</a>&nbsp;&nbsp; <a
+ href="http://www.lsi.upc.edu/%7Enlp/meaning/private/dbpalmira/">[db
+scheme]</a><br>
+<a href="http://www.icsi.berkeley.edu/%7Eframenet/">FrameNet</a><br>
+<a href="http://cio.nist.gov/esd/emaildir/lists/mt_list/msg00016.html">BLEU
+script</a><br>
+<a href="http://nlp.cs.nyu.edu/GTM/">GTM</a><br>
+<a href="http://www.nist.gov/speech/tests/mt/mt2001/resource/">NIST</a><br>
+<a href="http://www.isi.edu/%7Ecyl/ROUGE/">ROUGE</a><br>
+<a href="http://www.cs.cmu.edu/afs/cs.cmu.edu/user/alavie/www/METEOR/">METEOR</a><br>
+<a href="http://www.comp.leeds.ac.uk/bogdan/evalMT.html">WNM (weighted
+N-gram model)</a><br>
+<a href="http://www.clsp.jhu.edu/ws2005/groups/statistical/GenPar.html">GenPar
+software for SMT by Parsing</a><br>
+<a href="http://www.lsi.upc.edu/%7Enlp/IQMT">IQMT (Inside QARLA MT
+evaluation)</a><br>
+<a href="http://www-etud.iro.umontreal.ca/%7Epatryale/mood/">Mood
+(Modular Object-Oriented Decoder)</a>&nbsp; [<a
+ href="http://smtmood.sourceforge.net/">http://smtmood.sourceforge.net/</a>]<br>
+</p>
+<p><big><big>Conference Proceedings<br>
+</big></big></p>
+<p><a
+ href="http://www2.nict.go.jp/jt/a132/newtcllab/Pages/mtsummit.html">MT
+Summit X 2005</a><br>
+<a href="http://acl.ldc.upenn.edu/hlt-naacl2004/main">HLT-NAACL 2004</a><br>
+<a
+ href="http://tangra.si.umich.edu/clair/HLT-NAACL03/conference/index.html">HLT-NAACL
+2003</a><br>
+<a href="http://www.amtaweb.org/summit/MTSummit/papers.html">MT Summit
+IX 2003</a><br>
+<a class="moz-txt-link-freetext" href="http://acl.ldc.upenn.edu/">ACL
+Anthology</a><br>
+</p>
+<big><big>Companies</big></big><span style="font-style: italic;"><big><big><br>
+</big></big></span>
+<p><a href="http://www.languageweaver.com">Language Weaver</a><br>
+<a href="http://www.comprendium.es/">Comprendium</a><br>
+<a href="http://www.star-spain.com/es/inicio/default.htm">Star-Spain</a><br>
+<a href="http://www.google.com/machine_translation.html">Google</a>&nbsp;
+<span style="text-decoration: underline;"></span><a
+ href="http://translate.google.com">[MT demo]</a><br>
+<a href="http://www.systransoft.com/index.html">Systran</a><br>
+<br>
+</p>
+<p><span style="font-weight: bold; font-style: italic;"></span><big
+ style="font-weight: bold; font-style: italic;">Selected
+Publications<br>
+<br>
+</big></p>
+<ul>
+  <li style="font-style: italic;"><big>Fundamentals of Statistical
+Machine Translation</big></li>
+</ul>
+<ul>
+  <ul>
+    <li><small><font size="+1"><small>Stephen A. Della Pietra, Robert
+L. Mercer, </small></font></small><small><font size="+1"><small>Peter
+E Brown, Vincent J. Della Pietra</small></font></small><small><font
+ size="+1"><small>. </small></font></small><small><font size="+1"><small><a
+ href="http://delivery.acm.org/10.1145/980000/972474/p263-brown.pdf?key1=972474&amp;key2=4315424011&amp;coll=GUIDE&amp;dl=&amp;CFID=35077568&amp;CFTOKEN=32250392"><span
+ style="font-style: italic;">The Mathematics of Statistical Machine
+Translation: Parameter Estimation</span></a>. Computational
+Linguistics,, 19(2): 263-311, 1993.<br>
+      </small></font></small></li>
+  </ul>
+  <ul>
+    <li><small><font size="+1"><small>Peter F. Brown, John Cocke,
+Stephen A.
+Della Pietra, Vincent J. Della Pietra, Fredrick Jelinek, John D.
+Lafferty, Robert L. Mercer, and Paul S. Roossin. </small></font></small><small><font
+ size="+1"><small><a style="font-style: italic;"
+ href="http://delivery.acm.org/10.1145/100000/92860/p79-brown.pdf?key1=92860&amp;key2=8005424011&amp;coll=GUIDE&amp;dl=ACM&amp;CFID=35077428&amp;CFTOKEN=72939962">A
+statistical approach to machine translation</a>. Computational
+Linguistics, 16(2):76-85, 1990. <br>
+      </small></font></small></li>
+  </ul>
+</ul>
+<big><span style="font-style: italic;"></span></big>
+<ul>
+  <li><big><span style="font-style: italic;">Translation Modeling</span></big></li>
+</ul>
+<ul>
+  <ul style="font-style: italic;">
+    <li><big>Alignment</big></li>
+    <ul>
+      <li>F.J. Och, H. Ney. <a
+ href="http://acl.ldc.upenn.edu/J/J03/J03-1002.pdf"><span
+ style="font-style: italic;">A Systematic Comparison of Various
+Statistical Alignment Models</span></a>. In Computational Linguistics,
+Volume 29, Number 1, pp. 19-51, March 2003.</li>
+      <li><small><font size="+1"><small>Kevin Knight, Yaser Al-Onaizan,
+David
+Purdy, Jan Curin, Michael Jahr, John Lafferty, Dan Melamed, Noah Smith,
+Franz Josef Och, David Yarowsky. </small></font></small><small><font
+ size="+1"><small><a
+ href="http://www.clsp.jhu.edu/ws03/groups/translate/Final_Report.pdf"><span
+ style="font-style: italic;"></span></a><a
+ href="http://www.clsp.jhu.edu/ws99/projects/mt/final_report/mt-final-report.ps"><span
+ style="font-style: italic;"> Final Report of Johns Hopkins 1999 Summer
+Workshop on Statistical Machine Translation</span></a>. (JHU'99).</small></font></small></li>
+    </ul>
+  </ul>
+</ul>
+<ul>
+  <ul style="font-style: italic;">
+    <li><big>Architecture</big></li>
+    <ul>
+      <li>Percy Liang, Alexandre Bouchard-C&ocirc;t&eacute;, Dan Klein,
+and Ben Taskar. <a style="font-style: italic;"
+ href="http://www.cs.berkeley.edu/%7Epliang/papers/discriminative-mt-acl2006.pdf">An
+End-to-End Discriminative Approach to Machine Translation</a>.
+(<a style="font-style: italic;"
+ href="http://www.cs.berkeley.edu/%7Epliang/papers/discriminative-mt-acl2006-talk.pdf">talk
+slides</a>). (ACL'06).</li>
+      <li>Christoph Tillmann and Tong Zhang. <a
+ href="http://acl.ldc.upenn.edu/P/P06/P06-1091.pdf"><span
+ style="font-style: italic;">A Discriminative Global Training Algorithm
+for Statistical MT</span></a>. (ACL'06).</li>
+      <li>Christoph Tillmann and Tong Zhang. <a
+ style="font-style: italic;"
+ href="http://acl.ldc.upenn.edu/P/P05/P05-1069.pdf">A Localized
+Prediction for Statistical Machine Translation</a>. (ACL'05).</li>
+      <li>I. Dan Melamed. <a style="font-style: italic;"
+ href="http://nlp.cs.nyu.edu/publication/papers/smtbyp.pdf">Statistical
+Machine Translation by Parsing</a>. (ACL'04). <a
+ style="font-style: italic;"
+ href="http://nlp.cs.nyu.edu/publication/papers/cl-mtbyp.pdf">(CL
+journal extended version)</a>.</li>
+      <li>Philipp Koehn, Franz Josef Och, and Daniel Marcu. <a
+ style="font-style: italic;"
+ href="http://www.isi.edu/%7Emarcu/papers/phrases-hlt2003.pdf">Statistical
+Phrase-Based Translation</a>. (HLT/NAACL'03).</li>
+      <li>Daniel Marcu and William Wong. <a
+ href="http://www.isi.edu/%7Emarcu/papers/jointmt2002.pdf">A
+Phrase-Based, Joint Probability Model for Statistical Machine
+Translation.</a> (EMNLP '02).</li>
+      <li>Dekai WU. <a style="font-style: italic;"
+ href="http://www.cs.ust.hk/%7Edekai/library/WU_Dekai/Wu_PTP_FinalDraft_20000507.pdf">Bracketing
+and aligning words and constituents in parallel text using Stochastic
+Inversion Transduction Grammars</a>. In Jean VERONIS (editor), <em>Parallel
+Text Processing: Alignment and Use of Translation Corpora</em>.
+Dordrecht: Kluwer. ISBN 0-7923-6546-1. Aug 2000.</li>
+    </ul>
+  </ul>
+</ul>
+
+
+<ul>
+  <ul>
+    <li><big><span style="font-style: italic;">Word Ordering<br></span></big></li>
+    <ul>
+      <li>Hao Zhang, Liang Huang, Daniel Gildea and Kevin Knight.
+      <a style="font-style: italic;"
+ href="http://acl.ldc.upenn.edu/N/N06/N06-1033.pdf">Synchronous Binarization for Machine Translation</a>. (HLT/NAACL'06).<br>
+      </li>
+      <li>Liang Huang, Kevin Knight, and Aravind Joshi.
+      <a style="font-style: italic;"
+ href="http://ftp.isi.edu/natural-language/mt/lhuang-amta.pdf">Statistical Syntax-Directed Translation with Extended Domain of Locality</a>.
+     (AMTA'06).<br>
+      </li>
+      <li>Brooke Cowan, Ivona Kucerova, and Michael Collins. <a
+ style="font-style: italic;"
+ href="http://people.csail.mit.edu/brooke/web/papers/emnlp06.pdf">A
+Discriminative Model for Tree-to-Tree Translation</a>. (EMNLP'06).<br>
+      </li>
+      <li>Daniel Marcu, Wei Wang, Abdessamad Echihabi, and Kevin Knight.
+      <i><a href="http://www.isi.edu/~marcu/papers/spmt-emnlp06.pdf">
+      SPMT: Statistical Machine Translation with Syntactified Target Language Phraases</i></a>. <i>(EMNLP'06)</li>
+      <li>David Chiang.
+      <i><a href="http://acl.ldc.upenn.edu/P/P05/P05-1033.pdf">
+      A Hierarchical Phrase-Based Model for Statistical Machine Translation</a>. </i>(ACL'05).</li>
+      <li>Michael Collins, Philipp Koehn, and Ivona Kucerova. <a
+ href="http://acl.ldc.upenn.edu/P/P05/P05-1066.pdf"><i>Clause
+Restructuring for Statistical Machine Translation</i></a><i>. </i>(ACL'05).</li>
+      <li>Dekang Lin. <a
+ href="http://people.csail.mit.edu/u/k/koehn/public_html/smt/lin2004.pdf"><i>A
+Path-Based Transfer Model for Machine Translation</i></a>. (COLING '04).<br>
+      </li>
+      <li class="bib">Hao Zhang and Daniel Gildea. <a
+ href="http://www.cs.rochester.edu/%7Egildea/zhang-gildea-coling04.pdf"><span
+ style="font-style: italic;">Syntax-Based Alignment: Supervised or
+Unsupervised?</span></a>. (COLING'04).</li>
+      <li class="bib">Daniel Gildea. <a
+ href="http://www.cs.rochester.edu/%7Egildea/gildea-emnlp04.pdf"><span
+ style="font-style: italic;">Dependencies vs. Constituents for
+Tree-Based Alignment</span></a>. (EMNLP'04).</li>
+      <li>Michel Galley, Mark Hopkins, Kevin Knight and
+Daniel Marcu. <a style="font-style: italic;"
+ href="http://www.isi.edu/natural-language/projects/rewrite/whatsin.pdf">What's
+in a translation rule?</a>. (HLT/NAACL '04).</li>
+      <li class="bib">Daniel Gildea. <a
+ href="http://www.cis.upenn.edu/%7Edgildea/gildea-acl03.pdf"><span
+ style="font-style: italic;">Loosely Tree-Based Alignment for Machine
+Translation</span></a>. (ACL'03).</li>
+      <li>Heidi J. Fox. <a
+ href="http://www.cs.brown.edu/people/hjf/emnlp02.pdf"><span
+ style="font-style: italic;">Phrasal Cohesion and Statistical Machine
+Translation</span></a>. (EMNLP '02).</li>
+      <li>Kenji Yamada and Kevin Knight. <a
+ href="http://www.isi.edu/natural-language/projects/rewrite/syntax.ps">A
+Syntax-based Statistical Translation Model</a>. (ACL'01).</li>
+    </ul>
+  </ul>
+</ul>
+<ul>
+  <ul>
+    <li><big><span style="font-style: italic;">Word Selection<br></span></big></li>
+    <ul>
+      <li>Jes&uacute;s Gim&eacute;nez and Llu&iacute;s M&agrave;rquez<i>.
+        <a href="http://acl.ldc.upenn.edu/W/W05/W05-0826.pdf">Combining
+Linguistic Data Views for Phrase-based SMT</a>.</i><i> </i>(ACL'05
+Workshop on Building and Using Parallel Texts).</li>
+      <li>Rafael E. Banchs, Josep M. Crego, Adri&agrave;<von> de </von><last>Gispert,
+Patrik Lambert and Jos&eacute; B. Mari&ntilde;o</last>.<i> <a
+ href="http://acl.ldc.upenn.edu/W/W05/W05-0823.pdf">Statistical Machine
+Translation of Euparl Data by using Bilingual N-grams</a>. </i>(ACL'05
+Workshop on Building and Using Parallel Texts).</li>
+      <li>Charles Schafer and David Yarowsky.
+      <a href="http://acl.ldc.upenn.edu/acl2003/emnlp/pdfs/Schafer.pdf">
+      Statistical Machine Translation Using Coercive Two-Level Syntactic Transduction</a>.
+(EMNLP'03).
+      </li>
+      <li><big><span style="font-style: italic;">Use of Semantic
+Information</span></big><small><font size="+1"><small><br>
+      </small></font></small></li>
+      <ul>
+      <li>Marine CARPUAT and Dekai WU. <a style="font-style: italic;"
+ href="http://www.cs.ust.hk/%7Edekai/library/WU_Dekai/CarpuatWu_IJCNLP2005.pdf">Evaluating
+the Word Sense Disambiguation Performance of Statistical Machine
+Translation</a>.&nbsp; (IJCNLP-2005).<br>
+      </li>
+      <li>D. Vickrey, L. Biewald, M. Teyssier, and D. Koller. <a
+ style="font-style: italic;"
+ href="http://www.stanford.edu/%7Edvickrey/wordtrans_final.pdf">Word-Sense
+Disambiguation for Machine
+Translation</a>. (HLT/EMNLP'05).</li>
+      <li><small><font size="+0">Jes&uacute;s
+Gim&eacute;nez, Llu&iacute;s M&aacute;rquez and German Rigau. <a
+ href="http://www.lsi.upc.edu/%7Ejgimenez/PUBS/eurolan2005-gmr.pdf"><span
+ style="font-style: italic;">Automatic Translation of WordNet Glosses</span></a>.
+(EUROLAN'05 CLKI)</font></small></li>
+      <li>Marine Carpuat and Dekai Wu. <i><a
+ href="http://acl.ldc.upenn.edu/P/P05/P05-1048.pdf">Word Sense
+Disambiguation vs. Statistical Machine Translation</a>.</i> (ACL'05)<i>.</i></li>
+    </ul>
+    </ul>
+  </ul>
+</ul>
+<ul style="font-style: italic;">
+  <ul>
+    <li><big>Reranking<br>
+      </big></li>
+    <ul>
+      <li>Libin Shen, Anoop Sarkar and Franz Och. <a
+ href="http://www.sfu.ca/%7Eanoop/papers/pdf/drmt.pdf"><span
+ style="font-style: italic;">Discriminative Reranking for Machine
+Translation</span></a>. (HLT/NAACL'04).</li>
+      <li class="bib">Franz&nbsp;Josef Och, Daniel Gildea, Sanjeev
+Khudanpur, Anoop Sarkar, Kenji Yamada, Alex Fraser, Shankar Kumar,
+Libin Shen, David Smith, Katherine Eng, Viren Jain, Zhen Jin, and
+Dragomir Radev. <a
+ href="http://www.cs.rochester.edu/%7Egildea/smorgasbord.pdf"><span
+ style="font-style: italic;">A Smorgasbord of Features for Statistical
+Machine Translation</span></a>. (NAACL'04).</li>
+      <li><small><font size="+1"><small>Franz Josef Och, Daniel Gildea,
+Sanjeev Khudanpur, Anoop Sarkar, Kenji Yamada, Alex Fraser, Shankar
+Kumar, Libin Shen, David Smith, Katherine Eng, Viren Jain, Zhen Jin,
+Dragomir Radev. <a
+ href="http://www.clsp.jhu.edu/ws03/groups/translate/Final_Report.pdf"><span
+ style="font-style: italic;">Final Report of Johns Hopkins 2003 Summer
+Workshop on Syntax for Statistical Machine Translation</span></a>.
+(JHU'03).</small></font></small></li>
+    </ul>
+  </ul>
+</ul>
+
+<ul style="font-style: italic;">
+  <li><big>Language Modeling</big></li>
+  <ul>
+    <li>Katrin Kirchhoff and Mei Yang<i>. <a
+ href="http://acl.ldc.upenn.edu/W/W05/W05-0821.pdf">Improved Language
+Modeling for Statistical Machine Translation</a>.</i><i> </i>(ACL'05
+Workshop on Building and Using Parallel Texts).</li>
+    <li>Eugene Charniak, Kevin Knight and Kenji Yamada. <a
+ href="http://www.isi.edu/natural-language/projects/rewrite/mtsummit03.pdf"><span
+ style="font-style: italic;">Syntax-based Language Models for Machine
+Translation</span></a>. (SUMMIT IX '03).</li>
+    <li>Andreas Stolcke. <a
+ href="http://www.speech.sri.com/cgi-bin/run-distill?papers/icslp2002-srilm.ps.gz"><span
+ style="font-style: italic;">SRILM - An Extensible Language Modeling
+Toolkit</span></a>. (<em>ICSLP '02)</em></li>
+  </ul>
+</ul>
+
+<ul style="font-style: italic;">
+  <li><big>System Development</big></li>
+  <ul>
+      <li>Patrik Lambert, Jes&uacute;s Gim&eacute;nez, Marta R. Costa-juss&aacute;, Enrique Amig&oacute;, Rafael E. Banchs, Llu&iacute;s M&aacute;rquez and J.A. R. Fonollosa.
+       <a href="http://www.lsi.upc.edu/~jgimenez/PUBS/fmin-iqmt.CR.pdf">
+       <span style="font-style: italic;">Machine Translation System
+       Development based on Human Likeness</span></a>. (IEEE/ACL'06 WSLT)
+      </li>
+      <li>Franz Josef Och. <a
+ href="http://acl.ldc.upenn.edu/acl2003/main/pdfs/Och.pdf">Minimum
+Error Rate Training in Statistical Machine Translation</a>. (ACL'03).<br>
+      </li>
+
+
+  </Ul>
+</ul>
+
+<ul style="font-style: italic;">
+  <li><big>MT evaluation</big></li>
+  <ul>
+    <li><font size="+0">Enrique Amig&oacute;, Jes&uacute;s
+Gim&eacute;nez, Julio Gonzalo and Llu&iacute;s M&aacute;rquez. <a
+ href="http://acl.ldc.upenn.edu/P/P06/P06-2003.pdf"><span
+ style="font-style: italic;">MT Evaluation: Human-like vs. Human
+Acceptable</span></a>.</font> (ACL'06).</li>
+    <li>Chris Callison-Burch and Miles Osborne and Philipp Koehn. <a
+ href="http://acl.ldc.upenn.edu/eacl2006/main/papers/19_2_callisonburch_138.pdf"><span
+ style="font-style: italic;">Re-evaluating the Role of BLEU in Machine
+Translation Research</span></a>. (EACL'06)<br>
+    </li>
+    <li>Enrique Amig&oacute;, Julio Gonzalo, Anselmo Pe&ntilde;as,
+Felisa Verdejo. <i><a
+ href="http://acl.ldc.upenn.edu/P/P05/P05-1035.pdf">QARLA: A Framework
+for the Evaluation of Text Summarization Systems</a>. </i>(ACL'05)<font
+ face="Georgia, Times New Roman, Times, serif">.</font></li>
+    <li>Ding Liu and Daniel Gildea. <a
+ href="http://acl.ldc.upenn.edu/W/W05/W05-0904.pdf"><span
+ style="font-style: italic;">Syntactic Features for Evaluation of
+Machine Translation</span></a>. (ACL'05 Workshop on Intrinsic and
+Extrinsic Evaluation Measures for Machine Translation and/or
+Summarization).</li>
+    <li>Satanjeev Banerjee, Alon Lavie. <a
+ href="http://acl.ldc.upenn.edu/W/W05/W05-0909.pdf"><i>METEOR: An
+Automatic Metric for MT Evaluation with Improved Correlation with Human
+Judgments</i></a>. (ACL'05 Workshop on Intrinsic and Extrinsic
+Evaluation Measures for Machine Translation and/or Summarization).</li>
+    <li>Michael Gamon, Anthony Ave and Martine Smets. <a
+ href="http://research.microsoft.com/%7Eanthaue/eamt05_mt_Eval.pdf">Sentence-level
+MT evaluation without reference translations: Beyond language modeling</a>.
+(EAMT '05).</li>
+    <li>Alex Kulesza and Stuart&nbsp;M. Shieber. <a
+ href="http://www.eecs.harvard.edu/shieber/Biblio/Papers/kulesza-mt-evaluation04.pdf"><span
+ style="font-style: italic;">A learning approach to improving
+sentence-level MT evaluation</span></a>. (10th International Conference
+on Theoretical and Methodological Issues in Machine Translation, <em></em>
+2004).</li>
+    <li>Alon Lavie, Kenji Sagae, and Shyamsundar Jayaraman. <a
+ style="font-style: italic;"
+ href="http://www.cs.cmu.edu/afs/cs.cmu.edu/user/alavie/www/papers/Recall-AMTA-04.pdf"
+ onmousedown="return rwt(this,'res','1','')">The Significance of Recall
+in Automatic Metrics for MT Evaluation</a>. (AMTA'04).</li>
+    <li>Philipp Koehn. <a
+ href="http://www.iccs.informatics.ed.ac.uk/%7Epkoehn/publications/bootstrap2004.pdf"><span
+ style="font-style: italic;">Statistical Significance Tests for Machine
+Translation Evaluation</span></a>. (EMNLP'04).<br>
+    </li>
+    <li>Chin-Yew Lin and Franz Josef Och. <a
+ style="font-style: italic;"
+ href="http://www.isi.edu/%7Ecyl/papers/COLING2004.pdf">ORANGE: a&nbsp;
+Method for Evaluating Automatic Evaluation Metrics for Machine
+Translation</a><font face="Georgia, Times New Roman, Times, serif">. </font>(COLING'04).
+      <br>
+    </li>
+    <li>Chin-Yew Lin and Franz Josef Och. <a
+ style="font-style: italic;"
+ href="http://www.isi.edu/%7Ecyl/papers/ACL2004.pdf">Automatic
+Evaluation of Machine Translation Quality Using Longest Common
+Subsequence and Skip-Bigram Statistics</a><font
+ face="Georgia, Times New Roman, Times, serif">. </font>(ACL'04).</li>
+    <li>Bogdan Babych and Tony Hartley. <a style="font-style: italic;"
+ href="http://acl.ldc.upenn.edu/acl2004/main/pdf/349_pdf_2-col.pdf">Extending
+the BLEU MT Evaluation Method with Frequency Weightings</a>. (ACL '04).<br>
+    </li>
+    <li>Joseph P. Turian, Luke Shen, and I. Dan Melamed. <a
+ href="http://nlp.cs.nyu.edu/publication/papers/turian-summit03eval.pdf"><span
+ style="font-style: italic;">Evaluation of Machine Translation and its
+Evaluation</span></a>. (MT SUMMIT IX '03).</li>
+    <li>I. Dan Melamed, Ryan Green, and Joseph P. Turian. <a
+ style="font-style: italic;"
+ href="http://nlp.cs.nyu.edu/publication/papers/hlt03eval.pdf">Precision
+and Recall of Machine Translation</a>. (HLT/NAACL '03).</li>
+    <li>Chin-Yew Lin and E.H. Hovy<font
+ face="Georgia, Times New Roman, Times, serif">. </font><font
+ face="Georgia, Times New Roman, Times, serif"><a
+ href="http://www.nist.gov/speech/tests/mt/doc/ngram-study.pdf"><span
+ style="font-style: italic;"></span></a></font><a
+ href="http://www.nist.gov/speech/tests/mt/doc/ngram-study.pdf">Automatic
+Evaluation of Machine Translation Quality Using N-gram Co-Occurrence
+Statistics</a><font face="Georgia, Times New Roman, Times, serif"><a
+ href="http://www.nist.gov/speech/tests/mt/doc/ngram-study.pdf"><span
+ style="font-style: italic;"></span></a></font>. NIST, 2002.<br>
+      <font face="Georgia, Times New Roman, Times, serif"> </font></li>
+    <li>K. Papineni et al, <a style="font-style: italic;"
+ href="http://www.research.ibm.com/people/k/kishore/RC22176.pdf"> Bleu:
+a method for automatic evaluation of machine translation</a>, IBM
+Research Report, RC22176, September 2001.</li>
+  </ul>
+</ul>
+<ul>
+  <li><big style="font-style: italic;">MT decoding</big><span
+ style="font-style: italic;"><big style="font-style: italic;"></big></span>
+  </li>
+  <ul>
+
+    <li>Liang Huang, Hao Zhang and Dan Gildea. <a href="http://acl.ldc.upenn.edu/W/W05/W05-1507.pdf"><span style="font-style: italic;">Machine Translation as Lexicalized Parsing with Hooks</span></a>. (IWPT'05)</li>
+    <li>Philipp Koehn. <a
+ href="http://people.csail.mit.edu/people/koehn/publications/pharaoh-amta2004.pdf"><span
+ style="font-style: italic;">Pharaoh: a Beam Search Decoder for
+Phrase-Based Statistical Machine Translation Models</span></a>.
+(AMTA'04).</li>
+    <li>Ulrich Germann. <a style="font-style: italic;"
+ href="http://www.isi.edu/natural-language/people/germann/publications/germann-hlt-naacl-03.pdf">Greedy
+Decoding for Machine Translation in Almost Linear Time</a>.
+(HLT/NAACL '03).</li>
+    <li>Kenji Yamada and Kevin Knight. <a style="font-style: italic;"
+ href="http://www.isi.edu/natural-language/projects/rewrite/syndec.ps">A
+Decoder for Syntax-based Statistical MT</a>.
+(ACL'02).</li>
+    <li>Ulrich Germann and Michael Jahr and Kevin Knight and Daniel
+Marcu and Kenji Yamada. <a
+ href="http://www.lsi.upc.edu/~jgimenez/MT/www.isi.edu/natural-language/%20projects/rewrite/decoder.pdf"><span
+ style="font-style: italic;">Fast decoding and optimal decoding for
+machine translation</span></a>. (ACL'01)</li>
+  </ul>
+</ul>
+<ul>
+  <li><big>Hybrid MT (EBMT/SMT)</big></li>
+  <ul>
+    <li>Declan Groves and Andy Way. 2005. <a
+ style="font-style: italic;"
+ href="http://www.computing.dcu.ie/%7Eaway/PUBS/2005/EBMT-SMT.pdf">Hybrid
+Example-Based SMT: the Best of Both Worlds?</a>.&nbsp;<i></i>(ACL'05
+Workshop on Building and Using Parallel Texts).</li>
+  </ul>
+</ul>
+<ul style="font-style: italic;">
+  <li><big>Phd Theses</big></li>
+  <ul>
+    <li>Philipp Koehn. <a
+ href="http://people.csail.mit.edu/people/koehn/publications/thesis-readable.ps"><span
+ style="font-style: italic;">Noun Phrase Translation</span></a>,
+PhD thesis, University of Southern California,
+2003.</li>
+    <li>Kenji Yamada. <a style="font-style: italic;"
+ href="http://www.isi.edu/natural-language/projects/rewrite/yamada-thesis.ps">A
+Syntax-based Translation Model</a>, Ph.D. Thesis, University of
+Southern California, 2002.</li>
+    <li>Franz Josef Och. <a style="font-style: italic;"
+ href="http://sylvester.bth.rwth-aachen.de/dissertationen/2003/059/03_059.pdf">Statistical
+Machine Translation: From Single-Word Models to Alignment Templates</a>,&nbsp;
+PhD thesis, RWTH Aachen, Germany, 2002.</li>
+  </ul>
+</ul>
+<ul>
+  <li><big style="font-style: italic;">MT Introductory Material</big></li>
+  <span style="font-style: italic;">
+  </span>
+  <ul>
+    <li>Dorr, Bonnie J. <a style="font-style: italic;"
+ href="ftp://ftp.umiacs.umd.edu/pub/bonnie/jacl94.ps">Machine
+Translation Divergences: A Formal Description and Proposed Solution</a>
+(<a href="ftp://ftp.umiacs.umd.edu/pub/bonnie/jacl94.pdf">.pdf</a>). In
+      <i>Computational Linguistics</i>, 20:4, pp. 597-633, 1994.</li>
+    <li>D.J. Arnold,
+Lorna Balkan, Siety Meijer, R.Lee Humphreys and Louisa Sadler. <a
+ style="font-style: italic;"
+ href="http://www.essex.ac.uk/linguistics/clmt/MTbook/">Machine
+Translation: an Introductory Guide</a><span style="font-style: italic;"></span><span
+ style="font-style: italic;">, Blackwells-NCC, London, 1994,
+ISBN: 1855542-17x.</span></li>
+    <li>Kenneth W. Church and Eduard H. Hovy.<span
+ style="font-style: italic;"> <a
+ href="http://www.isi.edu/natural-language/people/hovy/papers/93churchhovy.ps">Good
+Applications for Crummy Machine Translation</a></span>. In<span
+ style="font-style: italic;"> Machine Translation</span>, 8:4, pp.
+239-258, 1993.</li>
+  </ul>
+</ul>
+<ul>
+  <li><big><span style="font-style: italic;">History of MT</span></big><br>
+  </li>
+  <ul>
+    <li><a href="http://ourworld.compuserve.com/homepages/WJHutchins/">John
+Hutchins (website)<br>
+      </a></li>
+  </ul>
+</ul>
+<br>
+<p></p>
+<p>(last updated February 6, 2007)<br>
+</p>
+<p></p>
+<div align="right">
+<p><i><big><a href="http://www.lsi.upc.es/%7Ejgimenez"><big>back to
+home-page ...</big></a> </big></i>&nbsp; </p>
+</div>
+</body>
+</html>

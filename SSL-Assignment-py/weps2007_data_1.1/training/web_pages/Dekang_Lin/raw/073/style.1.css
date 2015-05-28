@@ -1,0 +1,60 @@
+body { /* default text COLOR */
+   color: #000000;
+   font-family: sans-serif;
+   margin: 0px}
+body.print { /* for printable version */
+   color: #000000;
+   background: #ffffff;
+   margin: 8px}
+a:link { /* link COLOR */
+   text-decoration: none;
+   color: #0000cc}
+a:visited { /* visited link COLOR */
+   text-decoration: none;
+   color: #551a8b}
+a:active { /* link when-pressed COLOR */
+   color: #ff0000}
+a:hover {
+   text-decoration: underline}
+a.external:link { /* external link COLOR */
+   color: #007700}
+a.external:visited { /* external visited link COLOR */
+   color: #004400}
+a.external:active { /* external link when-pressed COLOR */
+   color: #ff0000}
+h1,h2,h3,H1,H2,H3 { /* sans-serif family for headings */
+   font-family: sans-serif}
+p { /* sans-serif family for paragraphs */
+   font-family: sans-serif}
+td.banner { /* background for banner */
+   background:  #ffffff}
+td.buttons { /* background for buttons */
+   background: #484770}
+td.menu { /* background for menu */
+   background: #eeeeee}
+td.menu table.calendar { /* make calendar fit into menu */
+   font-size: smaller}
+td.main { /* background for main */
+   background: #ffffff}
+td.general { /* background for areas, such as editing */
+   background: #ffffff}
+td.header { /* background for inlined tables, such as uploads */
+   background: #dddddd}
+td.row1 { /* background for inlined rows of tables */
+   background: #ffffff}
+td.row1Graph { /* background for inlined rows of tables */
+   background: #ffffff url(/schemesAni/white/graphback.gif)}
+td.row2 { /* background for inlined rows of tables */
+   background: #eeeeee}
+td.row2Graph { /* background for inlined rows of tables */
+   background: #eeeeee url(/schemesAni/white/graphback.gif)}
+td.dayExists { /* background for existing day in a calendar */
+   background: #ffcc00}
+
+/* make text areas, for editing, as large as possible */
+textarea {
+   width: 100%;
+   margin-bottom: 0.5ex;
+   margin-top: 0.5ex;
+   padding: 2px;
+}

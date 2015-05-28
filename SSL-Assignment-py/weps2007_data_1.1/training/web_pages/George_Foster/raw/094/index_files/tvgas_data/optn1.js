@@ -1,0 +1,1 @@
+tagtext="<a href=http://servedby.advertising.com/click/site=0000724783/mnum=0000332101/genr=1/tkdt=B0P0R1T0/cstr=186378565=_45e320f7,8695479905,697056^377568^-19^0&724783^332101^-1^0,1_/bnum=186378565 target=_top><img src=http://cdn2.adsdk.com/CDN/32105/doodle_728x90b.gif border=0 width=728 height=90 alt='Click to learn more...'><\/a>";document.write(tagtext);

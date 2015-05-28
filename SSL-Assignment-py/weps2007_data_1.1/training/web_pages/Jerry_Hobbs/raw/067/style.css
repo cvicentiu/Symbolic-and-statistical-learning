@@ -1,0 +1,668 @@
+/* GLOBAL STYLES  - - - - - - - - */
+
+  body {font: normal 13px Arial, Helvetica, sans-serif;color:#000000;}
+  td {font: normal 13px Arial, Helvetica, sans-serif;color:#000000;}
+  span {font: normal 13px Arial, Helvetica, sans-serif;color:#000000;}
+
+/* LINKS  - - - - - - - -  */
+
+  a { font : 13px Arial, Helvetica, sans-serif normal; }  
+  a:link { color: #173283; }
+  a:hover { color: #0055ff; }
+  a:visited { color: #666666; }
+  
+a.button, a:link.button, a:visited.button
+  {
+    font : normal 10px Verdana, Arial, Helvetica, sans-serif;
+    color : #003399;
+	text-decoration: none
+  }
+ 
+ 
+   a.lsheadline, a:link.lsheadline, a:visited.lsheadline
+  {
+    font : bold 14px Arial, Helvetica, sans-serif normal;
+    color : #173283;
+	text-decoration: none
+  }
+  
+  a.headline1, a:link.headline1, a:visited.headline1
+  {
+    font : bold 14px Arial, Helvetica, sans-serif normal;
+    color : #173283;
+	text-decoration: none
+  }
+
+  a.headline2, a:link.headline2, a:visited.headline2
+  {
+    font : normal 13px Arial, Helvetica, sans-serif;
+    color : #173283;
+	text-decoration: underline
+  }
+  
+  a.headlineevent, a:link.headlineevent, a:visited.headlineevent
+  {
+    font : bold 13px Arial, Helvetica, sans-serif;
+    color : #171783;
+	text-decoration: none
+  }
+  
+    a.headline_event, a:link.headline_event, a:visited.headline_event
+  {
+    font : bold 14px Arial, Helvetica, sans-serif;
+    color : #000099;
+	text-decoration: underline
+  }
+  
+  a.franchise_header, a:link.franchise_header, a:visited.franchise_header
+  {
+    font : bold 13px  Arial, Helvetica, sans-serif;
+    color : #990000;
+	text-decoration: underline
+  }
+  
+  a.fullstory, a:link.fullstory, a:visited.fullstory
+  {
+    font : normal 9px Arial, Helvetica, sans-serif;
+    color : #173283;
+	text-decoration: underline
+  }
+  
+  a.temperature, a:link.temperature; a:visited.temperature
+  {
+    font: normal 10px Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+	text-decoration: none
+  }
+  
+  a.sports_big_header, a:link.sports_big_header, a:visited.sports_big_header
+  {
+    font : bold 16px Arial, Helvetica, sans-serif;
+    color : #173283;
+  }
+  
+  a.wxtabon, a:link.wxtabon, a:visited.wxtabon
+  {
+    font : bold 10px Arial, Helvetica, sans-serif;
+    color:#000099;
+    text-decoration:none;
+  }
+  
+  a.wxtaboff, a:link.wxtaboff, a:visited.wxtaboff
+  {
+    font : bold 10px Arial, Helvetica, sans-serif;
+    color:#4B4E58;
+    text-decoration:none;
+  }
+ 
+  /* menu  */
+  
+  a.menu, a:link.menu, a:visited.menu
+  {
+    font : 11px Arial, Helvetica, sans-serif;
+    color:#00009A;
+    text-decoration:none;
+  }
+  
+  a.menuon, a:link.menuon, a:visited.menuon
+  {
+    font : 11px Arial, Helvetica, sans-serif;
+    color:#00009A;
+    text-decoration:none;
+  }
+  
+  a.menusecond, a:link.menusecond, a:visited.menusecond
+  {
+    font : 11px Arial, Helvetica, sans-serif;
+    color:#000099;
+    text-decoration:none;
+  }
+  
+  a.menuwhite, a:link.menuwhite, a:visited.menuwhite
+  { 
+    font : 11px Arial, Helvetica, sans-serif;
+    color:#FFFFFF;
+    text-decoration:none;
+  }
+
+    /* end menu */
+	
+  a.white10xu, a:link.white10xu, a:visited.white10xu
+  { font : 10px Arial, Helvetica, sans-serif;
+    color:#FFFFFF;
+    text-decoration:none;
+  }
+
+  a.blue13, a:link.blue13, a:visited.blue13
+  {
+    font : normal 13px Arial, Helvetica, sans-serif;
+    color : #173283;
+  }
+
+   a.blue12, a:link.blue12, a:visited.blue12
+   {
+	font : normal 12px Arial, Helvetica, sans-serif;
+	color: #173283;
+   }
+
+   a.blue11, a:link.blue11, a:visited.blue11
+   {
+	font : normal 11px Arial, Helvetica, sans-serif;
+	color: #173283;
+   }
+  
+  a.blue10, a:link.blue10, a:visited.blue10
+  {
+    font : normal 10px Arial, Helvetica, sans-serif;
+    color : #173283;
+	text-decoration: underline
+  }
+  
+  a.dkred13, a:link.dkred13, a:visited.dkred13
+  {
+	font: normal 13px Arial, Helvetica, sans-serif;
+	color: #990000;
+	text-decoration: none
+  }
+
+  /* OBJECT SPECIFIC STYLES  - - - - - - - -  */
+
+  .headline1
+  {
+    font : bold 14px Arial, Helvetica, sans-serif;
+    color : #173283;
+	text-decoration: none
+  }
+  
+    .blackheadline1
+  {
+    font : bold 14px Arial, Helvetica, sans-serif;
+    color : #000000;
+	text-decoration: none
+  }
+
+  .headline2
+  {
+    font : normal 12px Arial, Helvetica, sans-serif;
+    color : #173283;
+	text-decoration: none
+  }
+  
+  .headline2b
+  {
+    font : bold 12px Arial, Helvetica, sans-serif;
+    color : #173283;
+	text-decoration: none
+  }
+  
+ 
+  .headline_event
+  {
+    font : bold 14px Arial, Helvetica, sans-serif  ;
+    color : #000099;
+	text-decoration: underline
+  }
+  
+  .franchise_header
+  {
+    font : bold 13px  Verdana, Arial, Helvetica, sans-serif;
+    color : #990000;
+	text-decoration: underline
+  }
+  
+  .story_header
+  {
+    font : bold 14px Arial, Helvetica, sans-serif;
+    color : #003399;
+  }
+  
+  .headlineevent
+  {
+    font : bold 13px Arial, Helvetica, sans-serif;
+    color : #171783;
+	text-decoration: none
+  }
+
+  .storyheader
+  {
+    font : bold 14px Arial, Helvetica, sans-serif;
+    color : #173283;
+  }
+  
+  .subhead
+  {
+    font : bold 12px Arial, Helvetica, sans-serif;
+    color : #000000;
+  }
+  
+  .smallhead
+  {
+    font : normal 12px Arial, Helvetica, sans-serif;
+    color : #173283;
+  }
+  
+ .story
+ {
+	font : normal 13px Arial, Helvetica, sans-serif;
+  color:#000000;
+  }
+  
+ .sidebarheader
+ {
+	font : normal 11px Arial, Helvetica, sans-serif;
+  color:#8C2421;
+  }
+  
+ .sidebar_header
+ {
+	font : normal 11px Arial, Helvetica, sans-serif;
+  color:#8C2421;
+  }
+  
+.sidebar
+  {
+    font: normal 11px Arial, Helvetica, sans-serif; 
+    color : #000000;
+  }
+  
+  .temperature
+  {
+    font: normal 10px Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+  }
+  
+  .sports_big_header
+  {
+    font : bold 16px Verdana, Arial, Helvetica, sans-serif;
+    color : #173283;
+  }
+  
+  .eventinfolabel
+  { 
+	font: bolder 10px Arial, Helvetica, sans-serif;
+	color:#000099;
+  }
+  
+  .eventinfo_label
+  { 
+	font: bolder 10px Arial, Helvetica, sans-serif;
+	color:#000099;
+  }
+  
+  .eventinfo
+  {
+	font : normal 13px Arial, Helvetica, sans-serif;
+    color:#000000;
+  }
+  
+  .eventinfo_small
+  {
+	font : normal 11px Arial, Verdana, Helvetica, sans-serif;
+    color:#000000;
+  }
+  
+  
+  /* GENERAL STYLES  - - - - - - - -  */
+  
+    .lblue
+  { 
+    /* height: 17px; */
+	font : normal 10px Arial, Helvetica, sans-serif;
+    color: #0066CC;
+  }
+  
+  .blue15b
+  {
+    font : bold 13px Verdana, Arial, Helvetica, sans-serif;
+    color : #173283;
+  }
+  
+  .blue13
+  {
+    font : normal 13px Arial, Helvetica, sans-serif;
+    color : #003399;
+  }
+  
+  .blue12
+  {
+    font : normal 12px Arial, Helvetica, sans-serif;
+    color : #173283;
+  }
+  
+  .blue12b
+  {
+    font : bold 12px Arial, Helvetica, sans-serif;
+    color : #003399;
+  }
+  
+  .blue11
+  {
+    font: normal 11px Arial, Helvetica, sans-serif;
+    color:#173283;
+  }
+  
+  .blue11b
+  {
+    font: bold 11px Arial, Helvetica, sans-serif;
+    color:#022770;
+  }
+  
+  
+  .blue10
+  {
+    font: normal 10px Arial, Helvetica, sans-serif;
+    color:#173283;
+  }
+  
+  .dkblue10
+  {
+    font: normal 10px Arial, Helvetica, sans-serif;
+    color:#00009C;
+  }
+
+ .brtblue15b
+  {
+    font : bold 15px  Arial, Helvetica, sans-serif;
+    color : #0000cc;
+   }
+
+ .black13
+ {
+	font : normal 13px Arial, Helvetica, sans-serif;
+    color:#000000;
+  }
+
+  .black12
+  {
+    font: normal 12px Arial, Helvetica, sans-serif;	
+    color: #000000;
+	text-decoration: none;
+  } 
+
+  .black11
+  {
+    font: normal 11px Arial, Helvetica, sans-serif;	
+    color: #000000;
+	text-decoration: none;
+  } 
+
+  .black10
+  {
+    font: normal 10px Arial, Helvetica, sans-serif;	
+    color: #000000;
+	text-decoration: none;
+  } 
+
+  .black11b
+  {
+    font: bold 11px Arial, Helvetica, sans-serif;	
+    color: #000000;
+	text-decoration: none;
+  } 
+  
+  .grey11
+  {
+    font: normal 11px Arial, Helvetica, sans-serif;
+    color:#666666;
+  }
+  
+  .grey10
+  {
+    font: normal 10px Arial, Helvetica, sans-serif;
+    color:#666666;
+  }
+  
+  .grey13
+  { font: normal 13px Arial, Helvetica, sans-serif;	
+    color:#666666;
+    text-decoration:none;
+  }   
+    
+  .dkgrey13b
+  {
+    font : bold 13px  Arial, Helvetica, sans-serif;
+    color : #333333;
+   }
+  
+  .dkgrey11
+  {
+    font: normal 11px Arial, Helvetica, sans-serif;
+    color:#333333;
+  }
+  
+  .dkgrey10
+  {
+    font: normal 10px Arial, Helvetica, sans-serif;
+    color:#333333;
+  }
+   
+  .ltgrey11
+  { font: normal 11px Arial, Helvetica, sans-serif;
+    color: #999999;
+    text-decoration: none;
+  }        
+ 
+  .xltgrey13
+  { font: normal 13px Arial, Helvetica, sans-serif;
+    color:#cccccc;
+    text-decoration:none;
+  }                
+
+  .dkred11
+  {
+    font: normal 11px Arial, Helvetica, sans-serif;
+    color: #961127;
+  }
+
+ .dkrred15b
+  {
+    font: bold 15px Arial, Helvetica, sans-serif;
+    color:#990000;
+  }   
+
+  .dkred10
+  { 
+    font: normal 10px Arial, Helvetica, sans-serif;
+    color:#961127;
+    text-decoration:none;
+  }               
+
+  .dkred11
+  {
+    font: normal 11px Arial, Helvetica, sans-serif;
+    color: #cc3300;
+  }
+
+  .dkred12
+  {
+	font: normal 12px Arial, Helvetica, sans-serif;
+	color: #961127;
+  }
+
+  .dkred13
+  {
+	font: normal 13px Arial, Helvetica, sans-serif;
+	color: #961127;
+  }
+
+ .dkrred15b
+  {
+    font: bold 15px Arial, Helvetica, sans-serif;
+    color:#990000;
+  }   
+
+  
+  .red10
+  {
+	font: normal 10px Arial, Helvetica, sans-serif;
+	color: #BD0808;
+  }
+
+  .red11
+  {
+	font: normal 11px Arial, Helvetica, sans-serif;
+	color: #8D2323;
+  }
+
+  .red13
+  {
+	font: normal 13px Arial, Helvetica, sans-serif;
+	color: #BD0808;
+  }
+
+  .white9
+  { 
+	font: normal 10px Arial, Helvetica, sans-serif;
+    color:#ffffff;
+    text-decoration:none;
+  }
+
+  .white10
+  { 
+	font: normal 10px Arial, Helvetica, sans-serif;
+    color:#ffffff;
+    text-decoration:none;
+  }
+
+  .white11
+  {
+	font: normal 11px Arial, Helvetica, sans-serif;
+	color: #ffffff;
+  }
+
+  .white13
+  {
+	font: normal 13px Arial, Helvetica, sans-serif;
+	color: #ffffff;
+  }
+
+  .white17b
+  {
+	font: bold 17px Arial, Helvetica, sans-serif;
+	color: #ffffff;
+  }
+  
+  /* FORMS  */   
+
+  .form_label 
+  { 
+    height: 17px;
+	font : normal 11px Arial, Helvetica, sans-serif;
+    color: #0066CC;
+  }
+
+  .form_label2 
+  { 
+	font : normal 11px Arial, Helvetica, sans-serif;
+    color: #0066CC;
+  }
+
+.submit
+  {
+    height: 22px;
+    font: normal 11px Arial, Helvetica, sans-serif;
+    vertical-align: text-middle;
+  }
+
+.form_field350px {
+	font: normal 12px Arial, Helvetica, sans-serif normal;
+	width: 350px;
+	height: 20px;
+	color:#173283;
+	border-width: 1px;
+	border-color:#BDC2D3;
+	background-color:#FFFFFF;
+	text-indent: 2px;
+	border-style: solid;
+	}
+
+.form_field225px {
+	font: normal 12px Arial, Helvetica, sans-serif normal;
+	width: 225px;
+	height: 20px;
+	color:#173283;
+	border-width: 1px;
+	border-color:#BDC2D3;
+	background-color:#FFFFFF;
+	text-indent: 2px;
+	border-style: solid;
+	}
+
+.form_field150px {
+	font: normal 12px Arial, Helvetica, sans-serif normal;
+	width: 150px;
+	height: 20px;
+	color:#173283;
+	border-width: 1px;
+	border-color:#BDC2D3;
+	background-color:#FFFFFF;
+	text-indent: 2px;
+	border-style: solid;
+	}
+
+.form_field100px {
+	font: normal 12px Arial, Helvetica, sans-serif normal;
+	width: 100px;
+	height: 20px;
+	color:#173283;
+	border-width: 1px;
+	border-color:#BDC2D3;
+	background-color:#FFFFFF;
+	text-indent: 2px;
+	border-style: solid;
+	}
+
+.form_field50px {
+	font: normal 12px Arial, Helvetica, sans-serif normal;
+	width: 50px;
+	height: 20px;
+	color:#173283;
+	border-width: 1px;
+	border-color:#BDC2D3;
+	background-color:#FFFFFF;
+	text-indent: 2px;
+	border-style: solid;
+	}
+
+.form_area225_100px {
+	font: normal 12px Arial, Helvetica, sans-serif normal;
+	width: 225px;
+	height: 100px;
+	color:#173283;
+	border-width: 1px;
+	border-color:#BDC2D3;
+	background-color:#FFFFFF;
+	text-indent: 2px;
+	vertical-align: bottom;
+	border-style: solid;
+	}
+
+.form_area350_100px {
+	font: normal 12px Arial, Helvetica, sans-serif normal;
+	width: 350px;
+	height: 100px;
+	color:#173283;
+	border-width: 1px;
+	border-color:#BDC2D3;
+	background-color:#FFFFFF;
+	text-indent: 2px;
+	vertical-align: bottom;
+	border-style: solid;
+	}
+
+.form_area350_50px {
+	font: normal 12px Arial, Helvetica, sans-serif normal;
+	width: 350px;
+	height: 50px;
+	color:#173283;
+	border-width: 1px;
+	border-color:#BDC2D3;
+	background-color:#FFFFFF;
+	text-indent: 2px;
+	vertical-align: bottom;
+	border-style: solid;
+	}
+    
+    
+td.event_header_bar
+  {border-width: 1; border-style: solid; border-color:#CCCCCC;}

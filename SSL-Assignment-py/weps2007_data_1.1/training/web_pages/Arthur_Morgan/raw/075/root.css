@@ -1,0 +1,475 @@
+body { background: #fff; font: 12px arial, helvetica, sans-serif; line-height:1.2em; color:#333333;  margin:3px !important; }
+
+FORM { margin:0px !important; padding:0px !important; }
+
+img  A { border:0; }
+
+
+A:link { color: #036; text-decoration: none; }
+
+A:active { color: #036; text-decoration: none;}
+
+A:visited { color: #036; text-decoration: none;}
+
+A:hover { color: #036; text-decoration: underline;}
+
+
+h1 { font: bold 30px/.9 Trebuchet Ms, arial, helvetica; margin: 0px 0px 4px 0px;  }
+	
+h2 { font: bold 16px Trebuchet MS, arial, helvetica; line-height:.9em; margin: 0px 0px 2px 0px;  }
+	
+h3 { font: bold 14px Trebuchet Ms, arial, helvetica; line-height:.9em; margin: 0px 0px 2px 0px;  }
+
+h4 { font: 12px arial, helvetica; margin: 0px 0px 2px 0px; color:#333333;  }
+	
+h5 { font: 10px Arial, Helvetica, sans-serif; margin: 0px;  }
+
+p { line-height: 1.2em; }
+
+br { line-height: .75em; }
+
+.text
+{
+	font-weight: normal;
+	font-family: arial, helvetica;
+}
+.text A { text-decoration:underline;font-weight:bold; }
+
+/*
+.questionText { font: 12px arial, helvetica; margin: 0px 0px 2px 0px; color:#333333; inherit; }
+
+TD { font: 12px arial, helvetica; color:#333333; }
+*/
+
+h4 A { text-decoration:underline;font-weight:bold; }
+
+.black { color: #000; }
+
+.caps
+{
+	text-transform: uppercase;
+
+}
+.itext TD {font-size: 12px; font-family: Arial, Helvetica, sans-serif; 
+}
+
+
+.datestamp { font: 10px Arial, Helvetica, sans-serif;margin-left:3px;color:#33f ; }
+
+.rule { border-top: 1px solid #999; width: 100%; height:1px; font-size:1px; margin: 2px 0px 2px 0px; }
+.strap  {color:#999;margin-top:4px;}
+.floatRt {float:right; }
+.floatLf { float:left; }
+.clear { clear:both; }
+
+.center { text-align: center; }
+
+.right { text-align: right; }
+.listspace { padding-top:6px; }
+.nav { position: relative; width: 122px; left: 3px; }
+
+.col148inside { position: relative; width: 150px; left: 452px; }
+.col148 { position: relative; width: 150px; left: 602px; }
+.sub148inside { position: relative; width: 150px; left: 0px; }
+.sub148 { position: absolute; width: 150px; left: 160px; top: 0px; }
+.col440 { position: relative; width: 442px; left: 3px; }
+
+.col307 { position: relative; width: 310px; left: 452px; }
+.sub307 { position: relative; width: 310px; left: 0px; }
+.col318 { position: relative; width: 310px; left: 135px; }
+.sub318 { position: relative; width: 310px; left: 0px; }
+.col475 { position: relative; width: 450px; left: 135px; }
+.col600 { position: relative; width: 165px; left: 600px; }
+.col763 { position: relative; width: 763px; }
+
+.navtext { line-height: 1.0em; margin: 0px 0px 0px 7px; }
+
+.head { background: #333; width: 150px; height: 20px; text-indent: 7px; font: bold 13px/1.5 Trebuchet Ms, arial, helvetica; color: #fff; }
+
+.bar { 
+ 		font-family:'Trebuchet MS' trebuchet ms, arial,helvetica;
+		font-size:11px;
+		font-weight:bold;
+		margin-bottom:5px;
+		line-height:1.5em;
+		padding:0px;
+		display:block;
+		text-decoration:none !important;
+	  }
+.bkBar {
+	background-color:#fff !important;
+	color:#000 !important;
+	border-bottom: #ccc 1px solid;
+	}
+.wtBar {
+	background-color:#FFFFFF !important;
+	color:#000000 !important;
+	border-bottom: #ccc 1px solid;
+	}
+.grBar {
+	background-color:#999999;
+	color:#000000;
+	}
+.bizBar {
+	background-color:#FFFFFF !important;
+	color:#000000 !important; 
+	border:1px solid #ccc;
+	border-bottom:0px;
+	}
+.innerBar { display:block; 
+			float:left;
+			padding-right:2px;
+			padding-left:2px;
+			margin-right:2px;
+			background-color:#cc0000; 
+			text-align:left;
+			color:#ffffff !important;
+}
+.bizBar .innerBar {
+			background:#005496 !important;
+			color:#ffffff !important;
+}
+
+.nomargin { margin: 0px;
+}
+
+.itext {
+	font: 13px arial, helvetica; margin: 0px 0px 2px 0px; color:#333333; line-height:1.2;	}
+
+.smalltext {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:10px;
+}
+.wtBlock {
+	background-color:#fff;
+	border:1px solid #CCCCCC;
+	margin-bottom: 15px;
+	padding:5px;
+	margin-top: 0px;
+}
+.grayBlock {
+	background-color:#efefef;
+	border:1px solid #CCCCCC;
+	margin-bottom:15px;
+	padding:5px;
+	margin-top: 0px;
+}
+
+.ibrains H5 { font-size:11px; margin:0px; }
+
+/* dropdowns start */
+.outerMenu {
+	position:absolute;
+	visibility:hidden;
+	font:11px/1 trebuchet ms, arial,helvetica,sans-serif;
+	background-color:#015596;
+	border-bottom:1px solid #015596;
+	padding-top:1px;
+	margin-top:1px;
+	color:#000;
+}
+.item {
+	border-top:1px solid #fff;
+	padding:4px 0px 5px 5px; 
+	margin:0px 1px 0px 2px;
+}
+.actItem {
+	background:blue;
+}
+.sponsorText { padding-left:1px; padding-bottom:1px; }
+.menuAdImg { border:0px; width:88px; height:31px; }
+.menuAdTrack { position:absolute; visibility:hidden; }
+/* dropdowns end */
+
+/* fridge start */
+.red { background-color:#c00; }
+.blue { background-color:#036; }
+.biz { background-color:#036; margin:5px 0px 0px 0px; }
+.fridge { 
+	margin:5px 0px 5px 0px;
+	border-top:1px solid #ccc;
+	font: 11px/1.5 trebuchet ms, arial,helvetica;
+	width:100%;
+	clip: auto;
+}
+.fridge A, .fridge SPAN {
+	padding:1px 0px 0px 3px; 
+	display:block; 
+	margin-left:9px; 
+	border-left:2px solid #000;
+}
+.fridge .topLev {
+	color:#000 !important;
+	border-bottom:1px solid #ccc; 
+	background-color:#efefef;
+	font-weight:bold;
+	text-decoration:none !important;
+}
+.fridge DIV { border-bottom:1px solid #ccc; }
+
+.fridge A.sub { margin-left:0px; margin-right:0px;
+	padding-top:3px;
+	padding-bottom:3px;
+	line-height:1em;
+	background-color:#fff;
+}
+/* fridge end */
+
+
+.linkList { font: 10px Arial,Helvetica,sans-serif; margin: 0px; }
+
+ #top-section {
+ 	z-index:99;
+  }
+  #mid-section {
+  position:relative;
+  }
+  #bottom-section {
+  position:relative;
+  }
+  #header {
+  position:relative;padding-left:0;margin-left:0;width:763px;
+ 
+  }
+  
+   #midleft {
+  position:relative;
+  width:440px;
+  }
+  
+  #nav {
+  position:absolute;
+
+  width:120px;
+
+  }
+  #storywell {
+  position:absolute;
+
+  left:130px;
+  width:310px;
+  }
+   #storywell-wide {
+  position:absolute;
+
+  left:130px;
+  width:450px;
+  }
+  #col-3 {
+  position:absolute;
+
+  left:450px;
+  width:150px;
+  }
+  #col-rt {
+  position:absolute;
+
+  left:610px;
+  width:150px;
+  }
+  #col-3-wide {
+  position:absolute;
+
+  left:450px;
+  width:310px;
+  }
+  #promo-col {
+  position:absolute;
+	
+  left:770px;
+ 
+  }
+  
+  #bottom-col {
+  position:relative;
+  padding-left:130px;
+  width:640px;
+  }
+  
+.topstories {
+	padding-left:1em;
+	padding-bottom:4px;
+	margin-left:1em;
+	line-height: 1.5em;
+}
+
+.topstories li {
+	border-bottom:3px #fff solid;
+	line-height: 1.0em;
+}
+
+.clearFloat {
+	clear: both;
+	line-height: 0;
+	height: 0;
+}
+
+/* START AD STYLES */
+
+.AllAds {
+	z-index:99;
+	}
+
+#Right2 {
+	width:300px;
+	overflow:hidden;
+	padding-bottom:10px;
+	z-index:99;
+	}
+	
+#Middle {
+	width:300px;
+	overflow:hidden;
+	padding-bottom:10px;
+	z-index:99;
+	}
+	
+#Right3 {
+	width:300px;
+	overflow:hidden;
+	padding-bottom:10px;
+	z-index:99;
+	}
+
+/* END AD STYLES */
+
+/* START JD POWER BOX STYLES */
+
+#jdPowerBar
+{
+	font-family: "Trebuchet MS", trebuchet, arial, helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 1.5em;
+	padding: 0px;
+	display: block;
+	text-decoration: none;
+	background-color: #fff;
+	color: #000;
+	margin: 10px 0 0 0;
+}
+
+#jdPowerBox
+{
+	width: 292px;
+	margin: 0 0 8px 0;
+	padding: 80px 8px 8px 8px;
+	border: 1px solid #ccc;
+	background-image: url(http://images.businessweek.com/common_images/jdpowerbox_top.gif);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+#jdPowerBoxStacked
+{
+	width: 292px;
+	margin: 0;
+	padding: 80px 8px 8px 8px;
+	background-image: url(http://images.businessweek.com/common_images/jdpowerbox_top.gif);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	border-color: #CCC;
+	border-width: 0 1px 0 1px;
+	border-style: solid;
+}
+
+#jdPowerBox p, #jdPowerBoxStacked p {
+	margin: 0;
+}
+
+#jdPowerBox ul, #jdPowerBoxStacked ul {
+	margin: 10px 0 5px 0;
+	padding: 0;
+}
+
+#jdPowerBox ul li, #jdPowerBoxStacked ul li
+{
+	display: block;
+	list-style: none;
+	background-image: url(http://images.businessweek.com/common_images/bw_arrowbox_4x8.gif);
+	background-repeat: no-repeat;
+	background-position: 0 3px;
+	margin: 3px 0 3px 3px;
+	padding: 0 0 0 9px;
+	font-weight: bold;
+}
+
+#jdPowerBox ul li ul, #jdPowerBoxStacked ul li ul
+{
+	display: none;
+	margin: 2px 0 2px 0;
+	padding: 0;
+}
+
+#jdPowerBox ul li ul li, #jdPowerBoxStacked ul li ul li
+{
+	display: block;
+	list-style: none;
+	background-image: none;
+	margin: 3px 0 3px 3px;
+	padding: 0 0 0 9px;
+	font-weight: bold;
+}
+
+/* END JD POWER BOX STYLES */
+
+#TopRightAd {
+	/*
+	width: 180px;
+	height: 180px;
+	overflow: hidden;
+	margin-bottom: -15px;
+	margin-left:2px;
+	*/
+}
+
+
+/* INLINE IMAGE ZOOM STYLES */
+
+.inlineImageRight {
+	position: relative;
+	display: block;
+	float: right;
+	margin: 5px 0 5px 10px;
+	background-repeat: no-repeat;
+	/* border: 1px solid black; */
+}
+
+.inlineImageLeft {
+	position: relative;
+	display: block;
+	float: left;
+	margin: 5px 10px 5px 0;
+	background-repeat: no-repeat;
+	/* border: 1px solid black; */
+}
+
+.inlineImageRight img, .inlineImageLeft img {
+	position: absolute;
+	top: 3px;
+	right: 3px;
+	border: 0;
+}
+
+/*- Partner Hats -------------------------------------------------------------*/
+
+.partnerHat {
+	margin: -4px -3px 7px -3px;
+	/*
+	margin-top: -4px;
+	margin-bottom: 7px;
+	*/
+	height: 30px;
+	border-color: #e5e5e5;
+	border-width: 0 0 1px 0;
+	border-style: solid;	
+}
+
+.partnerHat img {
+	/* display: block; */
+	float: left;
+}
+
+.partnerHat a img {
+	border: 0;
+}

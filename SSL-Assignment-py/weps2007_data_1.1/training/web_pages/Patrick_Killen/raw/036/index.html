@@ -1,0 +1,399 @@
+<!-- NORML/MAP Template -->
+<!-- MAP content replaces  values in curly brackets -->
+<html>
+<head>
+<title>NORML.ORG US NV: Bush Officials, Proponent Square Off Against Question 7</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="http://www.norml.org/style.css" type="text/css">
+<SCRIPT language=JavaScript src="http://www.norml.org/scripts/showmapflash.js"></SCRIPT>
+<script language=JavaScript>
+// Load MAP Functions
+
+var url = new Array();
+var lnk = new Array();
+var dte = new Array();
+var src = new Array();
+
+//nations - all regions should be represented
+var nations = new Array("n-us",
+"n-cn",
+"e-uk",
+"e-ne",
+"u-at",
+"u-nz");
+
+
+var states = new Array();
+states.push(new Array("al", "Alabama", "4521"));
+states.push(new Array("ak", "Alaska", "4522"));
+states.push(new Array("az", "Arizona", "4523"));
+states.push(new Array("ar", "Arkansas", "4524"));
+states.push(new Array("ca", "California", "4525" ));
+states.push(new Array("co", "Colorado", "4526" ));
+
+states.push(new Array("ct", "Connecticut", "4527" ));
+states.push(new Array("de", "Delaware", "4528" ));
+states.push(new Array("dc", "District of Columbia", "4529" ));
+states.push(new Array("fl", "Florida", "4530" ));
+states.push(new Array("ga", "Georgia", "4531" ));
+states.push(new Array("hi", "Hawaii", "4533" ));
+states.push(new Array("id", "Idaho", "4534" ));
+states.push(new Array("il", "Illinois", "4535" ));
+states.push(new Array("in", "Indiana", "4536" ));
+states.push(new Array("ia", "Iowa", "4537" ));
+
+states.push(new Array("ks", "Kansas", "4538" ));
+states.push(new Array("ky", "Kentucky", "4539" ));
+states.push(new Array("la", "Louisiana", "4540" ));
+states.push(new Array("me", "Maine", "4541" ));
+states.push(new Array("md", "Maryland", "4542" ));
+states.push(new Array("ma", "Massachusetts", "4543" ));
+
+states.push(new Array("mi", "Michigan", "4544" ));
+states.push(new Array("mn", "Minnesota", "4545" ));
+states.push(new Array("ms", "Mississippi", "4546" ));
+states.push(new Array("mo", "Missouri", "4547" ));
+states.push(new Array("mt", "Montana", "4548" ));
+states.push(new Array("ne", "Nebraska", "4549" ));
+
+states.push(new Array("nv", "Nevada", "4550" ));
+states.push(new Array("nh", "New Hampshire", "4551" ));
+states.push(new Array("nj", "New Jersey", "4552" ));
+states.push(new Array("nm", "New Mexico", "4553" ));
+states.push(new Array("ny", "New York", "4554" ));
+states.push(new Array("nc", "North Carolina", "4555" ));
+
+states.push(new Array("nd", "North Dakota", "4556" ));
+states.push(new Array("oh", "Ohio", "4557" ));
+states.push(new Array("ok", "Oklahoma", "4558" ));
+states.push(new Array("or", "Oregon", "4559" ));
+states.push(new Array("pa", "Pennsylvania", "4560" ));
+
+states.push(new Array("ri", "Rhode Island", "4562" ));
+states.push(new Array("sc", "South Carolina", "4563" ));
+states.push(new Array("sd", "South Dakota", "4564" ));
+states.push(new Array("tn", "Tennessee", "4565" ));
+states.push(new Array("tx", "Texas", "4566" ));
+states.push(new Array("ut", "Utah", "4567" ));
+
+states.push(new Array("vt", "Vermont", "4568" ));
+states.push(new Array("va", "Virginia", "4570" ));
+states.push(new Array("wa", "Washington", "4571" ));
+states.push(new Array("wv", "West Virginia", "4572" ));
+states.push(new Array("wi", "Wisconsin", "4573" ));
+
+states.push(new Array("wy", "Wyoming", "4574" ));
+
+function getStateIdx(sIdx) {
+
+	sL = states.length;
+	for (s = 0; s < sL; s++) {
+		if (states[s][0] == sIdx) {
+			return(s);
+		}
+	}
+	return (-1);
+}
+function genCrumbs(areaCode, pageTitle) {
+
+	document.writeln("<p><strong><font size='1' face='Arial, Helvetica, sans-serif'><a href='http://www.norml.org/index.cfm?Group_ID=3374'><font color='#000000'>Home</font></a> &gt; ");
+			
+   if (areaCode.indexOf("n-us") != -1) {
+		var stateCode = areaCode.substr(5,2);
+		if (stateCode.length > 0) {
+			sIdx = getStateIdx(stateCode);
+			if (sIdx != -1) {
+				document.writeln("<a href='http://www.norml.org/index.cfm?Group_ID=4516'><font color='#000000'>State by State Laws</font></a> &gt; ");
+				document.writeln("<a href='http://www.norml.org/index.cfm?Group_ID=" + states[sIdx][2] + "'><font color='#000000'>" + states[sIdx][1] + "</font></a>  &gt;");
+				document.writeln("<a href='http://www.norml.org/index.cfm?Group_ID=" + states[sIdx][2] + "&wtm_view=news'><font color='#000000'>Daily News</font></a> &gt; ");
+			}
+		}
+	} else {
+		//main news page
+		document.writeln("<a href='http://www.norml.org/index.cfm?wtm_view=daily_news'><font color='#000000'>Daily News</font></a> &gt; ");
+	}
+
+	var locPos = pageTitle.indexOf(":") + 2; 
+	document.writeln("<font color='#993300'>" + pageTitle.substr(locPos) + "</font></font></strong>");
+}
+//---
+function getNewsItems() {
+	region = "n-us-nv";
+	for (var nCtr = 0; nCtr < nations.length; nCtr++) {
+		if (region.indexOf(nations[nCtr]) != -1) {
+		    return('<scr' + 'ipt src="http://www.norml.org/news/map/regions/' + region + '.js">' + '<\/script>');
+		}
+	}
+	return(" ");
+}
+
+document.write(getNewsItems());
+
+
+function writeNewsItems(region) {
+
+	if (lnk.length > 0) {
+		document.writeln("<table width='150' border='1' align='right' cellpadding='3' cellspacing='0' bordercolor='#CCCC99'><tr><td align='center' bgcolor='#CCCC99'><font size='2' face='Verdana, Arial, Helvetica, sans-serif'><strong>Regional News</strong></font></td></tr><tr><td>");
+		document.writeln("<p><font face='Verdana, Arial, Helvetica, sans-serif' size='1'>");
+		for (newsCtr = 1;  newsCtr < src.length; newsCtr++) {
+			document.writeln("<a href='http://www.mapinc.org/newsnorml/v06/n1429/%22%20+%20url[newsCtr]%20+%20%22'>" + lnk[newsCtr] + "</a>");
+			if (newsCtr < src.length - 1) {
+				document.writeln("<br><br>");	
+			}
+		}
+		document.writeln("</font></p></td></tr><tr><td>");
+		if (! showFlash("http://www.norml.org/flash/newsfeed.swf", "151", "70")) {
+			document.write('<font size="2" face="Verdana, Arial, Helvetica, sans-serif"><a href="http://www.norml.org/index.cfm?Group_ID=5858">NORML Newsfeed</a></font>');
+		}
+		document.writeln("</td></tr></table>");
+	}
+}
+
+</script>
+
+</head>
+<body bgcolor="#CCCC99" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr bgcolor="#333366" align="center"> 
+    <td align="center" bgcolor="#333366"> 
+      <table width="600" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td><img src="http://www.mapinc.org/norml/toolbar/org_name.gif" width="300" height="29" hspace="10"></td>
+          <td align="right"> 
+            <table border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td><a href="http://www.norml.org/index.cfm?Group_ID=4486"><img src="http://www.mapinc.org/norml/toolbar/sitemap.gif" width="81" height="29" border="0" alt="Site Map"></a></td>
+                <td><a href="http://www.norml.org/index.cfm?Group_ID=3441"><img src="http://www.mapinc.org/norml/toolbar/contactus.gif" width="78" height="29" border="0" alt="Contact Us"></a></td>
+                <td><a href="http://www.norml.org/index.cfm?Group_ID=4479"><img src="http://www.mapinc.org/norml/toolbar/mediacontact.gif" width="94" height="29" border="0" alt="Media Contact"></a></td>
+                <td><a href="http://www.norml.org/index.cfm"><img src="http://www.mapinc.org/norml/toolbar/home.gif" width="47" height="29" border="0" alt="Home"></a></td>
+              </tr>
+            </table>
+          </td>
+          <td align="right">&nbsp;</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr background="http://www.mapinc.org/norml/header/home_bg.gif" align="center"> 
+    <td align="center" background="http://www.mapinc.org/norml/header/home_bg.gif"> 
+      <table width="600" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td rowspan="2"><a href="http://www.norml.org/index.cfm"><img src="http://www.mapinc.org/norml/header/inside_norml.gif" width="178" height="84" alt="NORML" border="0" hspace="0"></a></td>
+           <td align="right" valign="top"> 
+			 <table border="0" cellspacing="0" cellpadding="0" width="100">
+			 <tr> 
+			 <td>&nbsp;</td></tr>
+			 <tr> 
+			 <td><form action="http://www.google.com/u/norml"></td>
+			 <td align="right" valign="bottom"> 
+			 <script language="JavaScript">
+			 	var areaCode = "n-us-nv";
+				if (areaCode.indexOf("n-us") != -1) {
+					var stateCode = areaCode.substr(5,2);
+					if (stateCode.length > 0) {
+						sIdx = getStateIdx(stateCode);
+						if (sIdx != -1) {
+							document.writeln("<input name='q' type='text' id='q' size='17' value='"  + states[sIdx][1] + "'>");
+						} else {
+							document.writeln("<input name='q' type='text' id='q' size='17' value=''>");
+						}
+					} else {
+						document.writeln("<input name='q' type='text' id='q' size='17' value=''>");
+					}
+				} else {
+					document.writeln("<input name='q' type='text' id='q' size='17' value=''>");
+				}
+			 </script>
+			<noscript><input name='q' type='text' id='q' size='17'></noscript>			 
+			 <div style="font-size:10px;font-weight:bolder;color:#000000">search by <a href="http://www.google.com"><img src="http://www.norml.org/header/poweredby_FFFFFF_13hi.gif" alt="" width="36" height="13" border=0 align="middle"></a></div></td>
+			 <td valign="top"><input type="image" src="http://www.norml.org/header/form_go.gif" width="20" height="20" border="0" hspace="2" vspace="2"></td>
+			 <td></form></td>
+			 </tr>
+			 </table></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table width="600" border="0" cellspacing="0" cellpadding="20" align="center">
+  <tr> 
+    <td bgcolor="#FFFFFF"> 
+      <!-- BEGIN CONTENT HERE -->
+	  <script language="JavaScript">genCrumbs("n-us-nv","US NV: Bush Officials, Proponent Square Off Against Question 7");</script>
+      <p><font face="Arial, Helvetica, sans-serif" size="4"><font color="#993300"><b>Daily
+        News
+</b></font></font></p>
+      <!-- BEGIN CONTENT HERE -->
+      <p><font face="Arial, Helvetica, sans-serif" size="2"> <b>BUSH OFFICIALS, PROPONENT SQUARE OFF AGAINST QUESTION 7 IN DAYTON
+
+</b> <br>
+		<em>by Associated Press, </em><font size="1">(Source:Las Vegas Sun</font>)<br>
+      </font>
+        <script language='JavaScript'>writeNewsItems();</script>
+    	<font face="Arial, Helvetica, sans-serif" size="1">24 Oct 2006<br></font><br>
+      	<font face="Arial, Helvetica, sans-serif" size="2">Nevada<br></font>
+      -------<br>
+        <font face="Arial, Helvetica, sans-serif" size="2">The Nevada ballot initiative to legalize possession of up to an ounce 
+of marijuana is being orchestrated by interests in Washington D.C., 
+according to a Bush Administration official.&nbsp; 
+<br><br>
+But a backer of Question 7 pointed to the clear Capitol connections 
+of Scott Burns, who's deputy director of the White House Office of 
+National Drug Control Policy for State and Local Affairs.&nbsp; 
+<br><br>
+"The reason this is on the ballot is because 86,000 Nevadans signed 
+petitions to put it on the ballot," Patrick Killen of Las Vegas said.&nbsp; 
+<br><br>
+Burns claimed that the power behind the initiative was using Nevada 
+as a guinea pig to see if it can legalize all drugs.&nbsp; 
+<br><br>
+He spoke at a panel discussion Monday at the Dayton Community Center 
+on Question 7 sponsored by Healthy Communities Coalition of Lyon and 
+Storey Counties, which opposes the measure.&nbsp; 
+<br><br>
+Killen and about 10 others protested outside the center.&nbsp; 
+<br><br>
+Burns said the initiative is funded 98 percent from Washington, D.C.&nbsp; 
+He named John Sperling, founder of the University of Phoenix; Peter 
+Lewis of Progressive Insurance Co., and billionaire investor George 
+Soros as the money men behind the ballot measure.&nbsp; 
+<br><br>
+Killen said Washington needs to fix its own problems before telling 
+Nevadans how to vote on a local issue.&nbsp; 
+<br><br>
+"We support Question 7 because we believe that Nevada marijuana laws 
+have failed and it's time for a sensible alternative.," he said.&nbsp; 
+"Question 7 would tax and regulate marijuana in Nevada, taking it 
+away from violent gangs and drug dealers."
+
+<br><br>
+But Burns and fellow panel members Las Vegas police officer Todd 
+Raybuck and John Shields, head of the New Frontier Treatment Center 
+in Fallon, said passage would make drug use more acceptable and 
+encourage use among children.&nbsp; 
+<br><br>
+"When I was in high school and college, it was a 'rite of passage' 
+drug," Burns said.&nbsp; "Now it's a rite of passage drug for 10- to 12-year-olds."
+
+<br><br>
+Burns said that the drug use among youth is decreasing, and passage 
+of Question 7 would make it seem like a normal thing to do.&nbsp; 
+<br><br>
+Raybuck, a 14-year veteran of the Las Vegas Metropolitan Police 
+Department said today's marijuana is 50 percent to 70 percent more 
+potent than it was in the 1960s and '70s and has a chilling effect on youth.&nbsp; 
+<br><br>
+"The more powerful pot rewires the adolescent brain similar to heroin 
+or cocaine," he said.&nbsp; 
+<br><br>
+Raybuck told a story of two brothers.&nbsp; One brother, who never used 
+drugs, stayed in school, had a career, family and a nice home.&nbsp; The 
+other brother started smoking marijuana and kept smoking for 30 
+years.&nbsp; He went on to use methamphetamine and cocaine.&nbsp; 
+<br><br>
+"He never held a job more than six months," Raybuck said.&nbsp; "He has two 
+sons he never sees."
+
+<br><br>
+Raybuck said the brother is now doing a long stretch in prison for 
+crimes he committed while on drugs.&nbsp; 
+<br><br>
+"I can tell you about this brother, because he's my brother," Raybuck said.&nbsp; 
+<br><br>
+Both Burns and Raybuck stated that even if Question 7 passes, federal 
+law, which supersedes state law, still outlaws possession and use of marijuana.&nbsp; 
+<br><br>
+But several of some two dozen people who attended the panel 
+discussion defended the initiative, though they did not give their names.&nbsp; 
+<br><br>
+One woman stated that she lived in constant pain and would rather use 
+marijuana than Vicodin or other prescribed drugs that leave her "like 
+a zombie."
+
+<br><br>
+Another man criticized the amount of financial resources used in 
+fighting drugs.&nbsp; 
+<br><br>
+"I don't want kids smoking dope, drinking beer, or smoking 
+cigarettes, but the war on drugs has been a failure," he said.&nbsp; <br><hr noshade>
+
+<a target="_blank" href="http://www.mapinc.org/"><img src="http://www.mapinc.org/pix/powered.png" alt="Powered by MAP" width="100" height="35" border="0" align="right" vspace="1" hspace="5"></a><font size="-1"><i>MAP posted-by: Beth Wehrman</i></font><br>
+
+
+</font>
+		<font size="-1">
+        <B>Pubdate:</B> Tue, 24 Oct 2006<BR>
+<B>Source:</B> Las Vegas Sun (NV)<BR>
+<B>Copyright:</B> 2006 Las Vegas Sun, Inc<BR>
+<B>Contact:</B>  <A HREF="mailto:letters&#064;lasvegassun.com">letters&#064;lasvegassun.com</A><BR>
+<B>Website:</B> <A TARGET="win2" HREF="http://www.lasvegassun.com/">http://www.lasvegassun.com/</A><BR>
+<B>Details:</B> <A TARGET="win2" HREF="http://www.mapinc.org/media/234">http://www.mapinc.org/media/234</A><BR>
+<B>Author:</B> Associated Press<BR>
+<B>Bookmark:</B> <A TARGET="win2" HREF="http://www.mapinc.org/pot.htm">http://www.mapinc.org/pot.htm</A> (Cannabis)<BR>
+<B>Bookmark:</B> <A TARGET="win2" HREF="http://www.mapinc.org/decrim.htm">http://www.mapinc.org/decrim.htm</A> (Decrim/Legalization)<BR>
+<B>Bookmark:</B> <A TARGET="win2" HREF="http://www.mapinc.org/topics/Question+7">http://www.mapinc.org/topics/Question+7</A><BR>
+<BR>
+
+          </font>      </p>
+      <!-- END CONTENT HERE -->
+    </td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr bgcolor="#006600" align="center"> 
+    <td align="center" bgcolor="#006600"> 
+      <table width="600" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td><img src="http://www.mapinc.org/norml/footer/name_tagline.gif" width="427" height="31" alt="NORML"></td>
+          <td align="right"><a href="a12.html#top"><img src="http://www.mapinc.org/norml/footer/top.gif" width="50" height="31" border="0"></a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr bgcolor="#FFFFFF" align="center"> 
+    <td> 
+      <table width="600" border="0" cellspacing="0" cellpadding="5">
+        <tr> 
+          <td><font face="Arial, Helvetica, sans-serif" size="2"> <a href="http://www.norml.org/index.cfm?Group_ID=4486" class="noline"><font color="black">Site 
+            Map</font></A> • <a href="http://www.norml.org/index.cfm?Group_ID=3441" class="noline"><font color="black">Contact 
+            Us</font></A> • <a href="http://www.norml.org/index.cfm?Group_ID=3454" class="noline"><font color="black">Support 
+            NORML</font></A> • <a href="http://www.norml.org/index.cfm?Group_ID=3443" class="noline"><font color="black">Take 
+            Action</font></A> • <a href="http://www.norml.org/index.cfm?Group_ID=3444" class="noline"><font color="black">Library</font></A> 
+            </font></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr bgcolor="#CCCC99" align="center"> 
+    <td align="center"> 
+      <table width="600" border="0" cellspacing="0" cellpadding="5">
+        <tr> 
+          <td><font face="Arial, Helvetica, sans-serif" size="2">&copy; 2006 NORML 
+            • <a href="http://www.norml.org/index.cfm?Group_ID=4487" class="noline"><font color="black">Read 
+            our Privacy Statement</font></A> • Site by <a href="http://www.communicopia.net" target="_blank" class="noline"><font color="black">Communicopia.Net</a> and <a href="http://www.redaphid.com" target="_blank" class="noline"><font color="black">Red Aphid</font></a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr bgcolor="#FFFFFF" align="center"> 
+    <td align="center"> 
+      <table width="600" border="0" cellspacing="0" cellpadding="5">
+        <tr> 
+          <td><font face="Arial, Helvetica, sans-serif" size="1">NORML and the 
+            NORML Foundation: 1600 K Street NW, Suite 501, Washington DC, 20006-2832 
+</font><font face="Arial, Helvetica, sans-serif" size="2"><br>
+            Tel: (202) 483-5500 • Fax: (202) 483-0057 • Email: <a href="mailto:norml@norml.org" class="noline"><font color="black">norml@norml.org</font></a></font></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

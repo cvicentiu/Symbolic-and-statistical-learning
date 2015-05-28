@@ -1,0 +1,326 @@
+var isie = (isie6||isie7);
+var iswin = BrowserDetect.OS=='Windows'?true:false;
+var isnn = BrowserDetect.browser=='Netscape'?true:false;
+
+function getAjaxContent(url,tar)
+{
+	var aj = new Ajax.Request(url,
+		{
+		onSuccess:function(t){
+			Element.update(tar,t.responseText);
+			var id = url.split(',')[2];
+		},
+		onFailure:function(t){
+			Element.update(tar,'<strong>Data Not Available: '+t.statusText+'</strong>');
+		},
+		evalScripts:true,
+		asynchronous:true,
+		method:'get'
+		}
+	);
+	//alert(aj.transport.readyState);
+}
+
+function getObjContent(url,tar)
+{
+	$(tar).src=url;
+	}
+
+if (lastShow==null) {
+	var lastShow = 0;
+}
+
+var json;
+
+function getShowSchedContent()
+{
+	if (isnn) {window.json = {"shows":[{"showname": "FOX News Live", "showdesc": "Latest on Missing Oregon Hikers ", "showpath": "/live", "showday": "Tuesday", "showtime": "11:00am EST"},{"showname": "FOX ONLINE", "showdesc": "Crash Course in Al Qaeda?", "showpath": "/foxonline", "showday": "Tuesday", "showtime": "12:00pm EST"},{"showname": "LIVE DESK W/ MARTHA", "showdesc": "Pelosi&#39;s Pick Flunks Terror Test", "showpath": "/livedesk/index.html", "showday": "Tuesday", "showtime": "1:00pm  EST"},{"showname": "FOX News Live", "showdesc": "Oregon Hikers Update", "showpath": "/live", "showday": "Tuesday", "showtime": "2:00pm  EST"}]};return;}
+	var url = '/comp/showPromo.inc';
+	var aj = new Ajax.Request(url,
+		{
+		onSuccess:function(t){
+			json = eval('('+t.responseText+')');
+			var x = window.lastShow;
+			var show = json.shows[x];
+			var html = '';
+				html += '<div style="float:left;width:62%;"><strong><a id="show_name" href="'+show.showpath+'">'+show.showname+'</a></strong></div><div style="float:right;text-align:right;">'+show.showtime+'</div>';
+				html += '<p>'+show.showdesc+'</p>';
+			Element.update('show_sched_content',html);
+			window.lastShow=(window.lastShow==json.shows.length-1)?0:window.lastShow+1;
+			window.json=json;
+		},
+		onFailure:function(t){
+			if (json != "") {
+				json = eval('('+json+')');
+				var x = window.lastShow;
+				var show = json.shows[x];
+				var html = '';
+					html += '<div style="float:left;width:62%;"><strong><a id="show_name" href="'+show.showpath+'">'+show.showname+'</a></strong></div><div style="float:right;text-align:right;">'+show.showtime+'</div>';
+					html += '<p>'+show.showdesc+'</p>';
+				Element.update('show_sched_content',html);
+				window.lastShow=(window.lastShow==json.shows.length-1)?0:window.lastShow+1;
+				window.json=json;
+			} else {
+				var html = '<div style="float:left;"><strong>Data Not Available: '+t.statusText+'</strong></div>';
+				Element.update('show_sched_content',html);
+				window.json=null;
+			}
+		},
+		evalScripts:true,
+		asynchronous:true,
+		method:'get'
+		}
+	);
+}
+
+function updateShowSched() {
+ 	if (window.json==null) {
+		getShowSchedContent();
+	} else {
+		var x = window.lastShow;
+		var show = window.json.shows[x];
+		var html = '';
+			html += '<div style="float:left;width:62%;"><strong><a id="show_name" href="'+show.showpath+'">'+show.showname+'</a></strong></div><div style="float:right;text-align:right;">'+show.showtime+'</div>';
+			html += '<p>'+show.showdesc+'</p>';
+		Element.update('show_sched_content',html);
+		window.lastShow=(window.lastShow==window.json.shows.length-1)?0:window.lastShow+1;
+	}
+}
+
+function handleTabClick(o,t,b){
+	expandContent(o,b);
+	//getAjaxContent(o.href,t);
+	getObjContent(o.href,t);
+}
+
+var rs = {
+	foot_tabs_a : function(t){
+			var target = 'ajax_2';
+			var tabs   = 'tabs_2';
+			handleTabClick(t,target,tabs);
+			return false;
+	},
+	console_tabs_a : function(t){
+			var tabs = 'tabs_1';
+			var e = getParent(getParent(t)).getElementsByTagName('LI').length;
+			var id = t.id.substring(5);
+			Element.show('tab_content_'+id);
+			while (e) {
+				if (e!=id) {
+					Element.hide('tab_content_'+e);
+				}
+				e--;
+			}
+			expandContent(t,tabs);
+			return false;
+	},
+	button : function(t){
+			getParent(getParent(t)).submit();
+			return false;
+	},
+	button_a : function(t){
+			getParent(getParent(getParent(t))).submit();
+			return false;
+	},
+	poll_vote : function(t){
+			var ans = getParent(getParent(t)).getElementsByTagName('input');
+			var i = ans.length;
+			var x = false;
+			while (i-->0) {
+				if (ans[i].name=='answer'&&ans[i].checked==true) { x=true; }
+			}
+			if (!x) {
+				alert("You must vote to submit this poll.");
+			} else {
+				var pp=window.open('about:blank','pp','width=550,height=400,top=100,left=100');
+				getParent(getParent(t)).submit();
+			}
+			return false;
+	},
+	button_view : function(t){
+			var p = t.title.split('_')[0];
+			var f = t.title.split('_')[1];
+			var pp = pop('http://www2.foxnews.com/polls/poll_results/bg_results_'+f+'.jpg__basic_'+p+'.htm','pp',550,400,'no','no');
+			pp.focus();
+			return false;
+	},
+	next : function(t){
+			var id = t.id;
+			moveNext(id.substring(5),'feature',10);
+			return false;
+	},
+	prev : function(t){
+			var id = t.id;
+			movePrev(id.substring(5),'feature',10);
+			return false;
+	},
+	mkp_a : function(t){
+			$('mkt').src=t.href;
+			var mkts = $A($$('#marketplace ul li a'));
+			mkts.each (function(m) {
+				m.className='';
+			});
+			t.className='current';
+			return false;
+	},
+	mkp_ad_over : function(t){
+			t.className='ad selected';
+	},
+	mkp_ad_out : function(t){
+			t.className='ad';
+	},
+	tips_form_button : function(t){
+			if (trim($('tipText').value)=='') {
+				alert('News tips may not be blank!');
+			} else {
+				$('hSubject').value = $('tipText').value;
+				var newsTip=window.open('','newsTip','width=350,height=250,status=no,resizable=no,scrollbars=no');
+				getParent(getParent(t)).submit();
+			}
+			return false;
+	}
+
+};
+
+var MyNews = {
+	WhatIsThis : function(){
+			var newsTip=window.open('http://www.foxnews.com/story/0,2933,213890,00.html','MyNews','');
+			return false;
+	},
+	PrivacyPolicy : function(){
+			var newsTip=window.open('/other/privacy.html','MyNews','');
+			return false;
+	},
+	Register : function(){
+			var newsTip=window.open('http://www3.foxnews.com/pluck/regform.asp','MyNews','width=380,height=250,status=no,resizable=no,scrollbars=no');
+			return false;
+	},
+	Forgot : function(){
+			var newsTip=window.open('http://www3.foxnews.com/pluck/getPass.asp','MyNews','width=400,height=250,status=no,resizable=no,scrollbars=no');
+			return false;
+	},
+	Login : function(){
+	    if($("plckUserName").value == '' && $("plckPassword").value == '') {
+	        alert("You must provide a Username and Password");
+	        return false;
+	    }
+	    if($("plckUserName").value == '') {
+	        alert("You must provide a Username");
+	        return false;
+	    }
+	
+	    if($("plckPassword").value == '') {
+	        alert("You must provide a Password");
+	        return false;
+	    }
+		$("frmLogin").submit();
+	},
+	Logout : function(){
+			location.href="http://www3.foxnews.com/pluck/logout.asp";
+			return false;
+	}
+};
+
+var rw = {
+	myWeather : function(){
+			if (local_weather()) $("weatherForm").submit();
+	}
+};
+var mktplace_ids = {
+	'3':{'0':[3,5]},
+	'4':{'0':[0,4],'267':[0]}
+}
+
+var ranNum = new String (Math.random());
+ranNum = ranNum.substring (2, 11);
+
+var onload_shell = function() {
+	if (location.search == "?auth=1") { alert("Either your Username or Password are incorrect"); }
+	 var du = $('logo_txt');
+	 
+	if (secTimeStamp != "")du.appendChild(document.createTextNode("Updated "+getUpdatedTime(secTimeStamp)));
+	 var els,kdz,kdw,lnx,sc;
+
+	 els = $A(document.getElementsByClassName('feature_content','*'));
+	els.each (function(el) {
+		kdz = el.getElementsByTagName("LI");
+		if (isie) {
+			   kdw = Math.ceil(parseFloat(getElementStyle(kdz[0],'width')));
+			kdm = Math.ceil(parseFloat(getElementStyle(kdz[0],'margin-left')))+Math.ceil(parseFloat(getElementStyle(kdz[0],'margin-right')));
+			kdz = kdz.length;
+			el.style.width = ((kdz*(kdw+kdm))+(2*kdz))+'px';//alert('load w '+el.style.width);
+			 } else {
+			kdw = parseInt(getElementStyle(kdz[0],'width'))+parseInt(getElementStyle(kdz[0],'margin-left'))+parseInt(getElementStyle(kdz[0],'margin-right'));
+			kdz = kdz.length;
+			el.style.width = ((1/11)*((kdz*kdw)+kdz))+'em';
+		}
+	});
+
+	 sc = $A(document.getElementsByClassName('scroll_count','*'));
+	sc.each (function(counter) {
+		var cs=counter.id.split("_");
+		var o=$(cs[0]+'_content_'+cs[2]);
+		updateCount(counter.id,1,Math.floor(o.offsetWidth/speed),"/");
+	});
+
+	 if (isie&&iswin) {
+		var sp,tbs;
+		els = $A(document.getElementsByClassName('tabs'));
+		els.each (function(el) {
+			tbs = $A(el.getElementsByTagName("LI"));
+			tbs.each (function(tb) {
+				sp = document.createElement("span");
+				sp.appendChild(document.createTextNode("\u2022"));
+				tb.appendChild(sp);
+			});
+		});
+	}
+
+	 getShowSchedContent();
+	window.showSchedInterval = setInterval(updateShowSched,5000);
+
+	 
+	
+	 var footSecs = $A($$('#foot ul.tabs li a'));
+	var o = footSecs[0];
+	if (section_id == 0) {
+		o = footSecs[Math.floor(Math.random()*footSecs.length)];
+	} else {
+		footSecs.each(function(el) {
+			if (el.href.indexOf(","+section_id+",")>-1) {
+				o = el;
+				return;
+			}
+		});
+	}
+	handleTabClick(o,'ajax_2','tabs_2');
+	  var mkts = [];
+	var mnmk = [];
+	var new_mkt_id;
+	var mktls = $A($$('#marketplace ul li a'));
+	for (var mktid=0;mktid<mktls.length;mktid++){
+		new_mkt_id = mktls[mktid].href.split(',')[2];
+		mkts[new_mkt_id] = mktls[mktid];
+		 mnmk[mnmk.length] = new_mkt_id;
+	}
+
+	m_sec_id = (section_id || "0");
+	m_sub_id = (subsection_id || "0");
+	var mkt  = 0;
+	if (mktplace_ids[m_sec_id]) {
+		if (mktplace_ids[m_sec_id][m_sub_id]) {
+			var mkta = mktplace_ids[m_sec_id][m_sub_id];
+		} else {
+			var mkta = mktplace_ids[m_sec_id][0];
+		}
+		mkt = mkta[Math.floor(Math.random()*mkta.length)];
+		mkt = mkta[Math.floor(Math.random()*mkta.length)];
+	} else {
+		mkt = mnmk[Math.floor(Math.random()*mnmk.length)]
+	}
+	mkts[mkt].className='current';
+	$('mkt').src=mkts[mkt];
+	
+};
+
+Event.observe(window,'load',function(){onload_shell();try{loadSponsor();}catch(e){}},false);

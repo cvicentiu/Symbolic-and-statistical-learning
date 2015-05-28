@@ -1,0 +1,68 @@
+/* caption determines the style of 
+   the month/year banner above the calendar. */ 
+
+table.calendar caption { font-weight: bold; color: #000; font-size: 11px;} 
+
+/* .calendar determines the overall formatting style of the calendar,   
+   acting as the default unless later overruled. */ 
+
+table.calendar  
+     { 
+     margin-left:5px;
+     font-family:arial,helvetica;  
+     font-size:11px;  
+     color: white; 
+     background-color: #c0c0c0; 
+     border-color: #000000; 
+     border-style: solid; 
+     border-width: 1px; 
+     } 
+
+/* .calendarlink determines the formatting of those days linked to 
+   content. */ 
+
+table.calendar a
+     { 
+     color: white; 
+     } 
+
+/* .header determines the formatting of the weekday headers at the top 
+   of the calendar. */ 
+
+table.calendar th
+     { 
+     background-color: #996633; 
+     border-color: #000000; 
+     border-style: solid; 
+     border-width: 1px; 
+     } 
+
+/* .day determines the formatting of each day displayed in the 
+   calendar. */ 
+
+table.calendar td 
+     { 
+     background-color: #808080; 
+     border-color: #000000; 
+     border-style: solid; 
+     border-width: 1px; 
+     text-align: center 
+     } 
+
+/* .linkedday determines the formatting of a date to which content is 
+   available. */ 
+
+table.calendar td.linkedday  
+     { 
+     background-color: #8080ff; 
+     border-color: #000000; 
+     border-style: solid; 
+     border-width: 1px; 
+     text-align: center 
+     }
+     
+table.calendar td.blankday
+	{
+	background-color: #ccc;
+	border-color: #ccc;
+}

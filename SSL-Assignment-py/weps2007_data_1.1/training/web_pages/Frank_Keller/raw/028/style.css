@@ -1,0 +1,417 @@
+/*
+yellow: #FBFAEA;
+blue:#EFF7FF;
+gray:#888888;
+
+*/
+body, table, td, textarea, input, select, .bodyFont, .fieldPrompt, .fieldRequired {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight:300px;
+  color:#333333;
+}
+hr
+{
+    border:solid 1px #888888;
+}
+
+.ar_table table tr th
+{
+    background-color: #EFF7FF;
+    padding-left:20px;
+    padding-right:20px;
+    text-align:center;
+}
+
+#profiles_by_type
+{
+    margin-top:20px;
+    width:470px;
+}
+#profiles_by_type ul
+{
+    margin-left: 0;
+    padding-left: 0;
+    display: inline;
+}
+#profiles_by_type li
+{
+    margin-left:0;
+    padding-left:0;
+    list-style:none;
+    display: block;
+    float:left;
+    width:50%;
+}
+#profiles_by_type li a
+{
+    white-space: nowrap;
+}
+.featuredAgent {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight:bold;
+  color:#333333;
+  padding-right:4px;padding-left:4px
+}
+
+img {
+
+  border-style:none;
+
+}
+
+form {
+	margin: 0px;
+	padding: 0px;
+}
+
+
+body {
+	color: #000000;
+    background-color: #ffffff;
+    margin: 0px;
+    text-align: center;
+}
+
+a, .fake_link
+{
+    color: #356d9e;
+    text-decoration: underline;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+textarea, input[type=text], input[type=password], select {
+  font-weight: 300;
+  border: solid 1px #356d9e;
+}
+
+.footerText {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight:600;
+	color:#555555;
+	text-decoration:none;
+	padding-right:20px;
+	padding-left:20px;
+}
+
+.cookieTrail {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight:600;
+	color:#555555;
+	text-decoration:none;
+}
+
+.sectionHeader {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight:600;
+	color:#3d5da4;
+	text-decoration:none;
+}
+
+
+.pointsDisplay {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight:600;
+	color:red;
+	text-decoration:none;
+}
+
+
+/* layout */
+#wrapper
+{
+	width:100%;
+	min-height:550px;
+	_height:500px;
+}
+#content 
+{
+    text-align:left;
+}
+#content_wrapper
+{
+    margin:5px;
+    
+}
+#header
+{
+    margin-top:30px;
+}
+#header, #footer
+{
+	background-color:#fbfaea;
+	border-top:solid 1px #c6c6c6;
+	border-bottom:solid 1px #c6c6c6;
+	height:22px;
+	xmargin-top:30px;
+	width:100%;
+}
+#footer
+{
+}
+#footer table tr td
+{
+    text-align:right;
+}
+#sidebar 
+{
+    width:520px;
+}
+#featuredAgents
+{
+}
+.featuredAgent
+{
+	width:240px;
+	text-align:left;
+	background-color:#fbfaea;
+	margin-right:10px;
+	height:100px;
+}
+.featuredAgent img 
+{
+	border: solid 1px #c6c6c6; 
+	padding: 2px;
+	margin-left:5px;
+}
+#featuredAgentText
+{
+}
+.nav
+{
+	width:100%;
+}
+#header .nav
+{
+	margin-top:3px;
+}
+#footer .nav
+{
+	margin-top:-10px;
+}
+
+.nav ul
+{
+	display:inline;
+}
+.nav ul li
+{
+	list-style:none;
+	display:inline;
+}
+    
+#logo
+{
+	position:absolute;
+	top:0px;
+	left:3px;
+}
+.feedbackTextBlock
+{
+	background-color: #EFF7FF;
+	margin-top:5px;
+	margin-bottom:5px;
+	width:100%;
+}
+.textBlock
+{
+	background-color: #EFF7FF;
+	margin-top:5px;
+	margin-left:15px;
+	margin-bottom:5px;
+	dwidth:100%;
+}
+.innerTextBlock
+{
+	padding:5px;	
+}
+.innerTextBlockLeft
+{
+	padding:5px;
+	text-align:left;
+}
+.textBlockTitle
+{
+	font-weight:bold;
+}
+
+#signupInstructions
+{
+    width:720px;
+}
+.form label, .form input, .form select {
+	display: block;
+	width: 150px;
+	float: left;
+	margin-bottom: 10px;
+}
+
+.form label {
+	text-align: right;
+	width: 95px;
+	padding-right: 20px;
+}
+
+.form br {
+    clear:left;
+}
+#signUpForm1 label
+{
+    width:200px;
+    font-weight:bold;
+}
+
+.bold 
+{ 
+    font-weight: bold; 
+}
+
+.site_button
+{
+	border:solid #57758C 1px;
+	cursor:pointer;
+	background-color:#EFF7FF;
+	color:black;
+	border-collapse: collapse;
+    background-image:url(/images/buttonArrow.gif);
+    background-position: right;
+    background-repeat:no-repeat;
+    font-weight:bold;
+    width:100%;
+}
+.site_button_yellow
+{
+    background-color:#FBFAEA;
+}
+.friend_button
+{
+	border:solid #57758C 1px;
+	cursor:pointer;
+	background-color:#EFF7FF;
+	color:black;
+	border-collapse: collapse;
+    background-image:url(/images/friends/button_plus.gif);
+    background-position: left;
+    background-repeat:no-repeat;
+    font-weight:bold;
+    width:100%;
+}
+#signMeUpButton input
+{
+    width:110px;
+}
+#errorBox
+{
+    border:solid 2px red;
+    color: red;
+    width:450px;
+    margin:10px;
+}
+#breadcrumbs
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight:600;
+	color:#555555;
+	text-decoration:none;
+	text-align:left;
+	margin-bottom:15px;
+}
+
+h1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight:600;
+	color:#3d5da4;
+	text-decoration:none;
+}
+
+
+.divider
+{
+    border-top:solid 2px #356d9e;
+    margin-left:40px;
+    margin-right:40px;
+    margin-top:10px;
+}
+
+.profileDivider
+{
+    border:solid 1px #888888;
+    height:0px;
+}
+
+
+#login
+{
+
+    padding-top:10px;
+    padding-left:10px;
+    width:300px;
+ 	background-color:#fbfaea;
+}
+.yellowbox
+{
+    background-color:#FBFAEA;
+}  
+#popup_wrapper
+{
+    margin:15px;
+}
+.flash_notice
+{
+    color: red;
+    font-size:18px;
+    font-weight:bold;
+}
+#cya
+{
+    color:gray;
+    padding-left:40px;
+    padding-right:40px;
+    font-size:8pt;
+}
+.friend_agent
+{
+    display:inline;
+    float:left;
+    margin:15px;
+    border:solid 1px black;
+    height:150px;
+}
+.friends_list ul
+{
+	display:inline;
+}
+.friends_list ul li
+{
+	list-style:none;
+	display:inline;
+	float:left;
+	height:200px;
+}
+#nofriends ul li
+{
+}
+.friends_wrapper
+{
+    border:solid 2px gray;
+
+}
+
+div.visible { display: block; }
+div.hidden { display: none; }
+
+.currentHeader {
+    font-weight:bold;
+	color:#777777;
+	white-space:nowrap;
+}

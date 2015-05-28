@@ -1,0 +1,384 @@
+/* CSS Document */
+/*======================Legacy code fixes==================*/
+.photo{
+	width:490px !important;}
+}
+/*================End Legacy code fixes====================*/
+
+* -------------------- Old style nav.---------------------- */
+#oldstylelinks{
+	width:100%;
+	display:block;
+	float:left;
+	padding-left:20px;
+	color:#FFFFFF;
+	padding-top:2px;
+	padding-bottom:2px;
+	border-bottom:1px solid #000000;
+}
+
+#oldstylelinks a{
+	font-size:0.8em;
+	color:#FFFF00;
+}
+
+#oldstylelinks a:visited{
+	color:#EFEF9C;
+}
+	
+/* -------------------- End old style nav --------------- */
+
+
+/*==========Search table width fixes et al=================*/
+ul {
+	margin-left:0px !important;
+	text-align:left !important;
+}
+
+.htleft{
+	width:100px;
+}
+
+.htleft p{
+	width:100px !important;
+	font-size:0.8em !important;
+}
+
+.htexcerpt{
+	font-size:0.8em !important;
+	width:380px !important;
+	text-align:justify !important;
+}
+
+.hturl{
+	font-size:0.8em !important;
+}
+
+.httitle{
+	font-size:0.9em !important;
+	font-weight:bold !important;
+	width:380px !important;
+
+}
+
+/*==========End Search table width fixes===================*/
+
+.hide{
+	display:none;
+	visibility:hidden;
+}
+
+.printhide{
+	display:none;
+	visibility:hidden;
+
+}
+
+
+body {
+	background-color:#FE020F;
+	background-image: url(/images/2006/bodybg.gif);
+	font-family: Arial, Helvetica, sans-serif;
+	padding:0px !important;
+	margin:0px !important;
+}
+
+#mainwrapper {
+	width:936px !important;
+	margin-left:auto !important;
+	margin-right:auto !important;
+	margin-top:0px;
+	margin-bottom:0px;
+	border:2px solid #000000;
+	border-top:8px solid #000000;
+	background-color:#666666;
+	overflow:hidden;
+}
+
+#titlegraphic {
+	width:100%;
+	height:75px;
+	background-color:#000000;
+	border-bottom:1px solid #333333;
+}
+
+#titlegraphic a img{
+	border:none;
+	padding:none;
+	float:left;
+}
+
+
+#fade{
+	width:100%;
+	margin:0px;
+	padding:0px;
+	padding-bottom:2px;
+	border:none;
+	height:10px;
+	background-color:#666666;
+	background-image:url(/images/2006/fade.jpg);
+	background-repeat:repeat-x;
+}
+
+#topadwrapper{
+	width:100%;
+	background-color:#FFFFFF;
+	
+	height:90px;
+}
+#searchbar{
+	width:200px;
+	height:80px;
+	padding-top:10px;
+	padding-left:8px;
+	background-color:#003300;
+	background-image:url(/images/2006newspage/new_car_buyer_medal.jpg);
+	background-repeat:no-repeat;
+	color:#333333;
+	font-size:0.8em;
+	font-weight:bold;
+	display:block;
+	float:left;
+	margin-bottom:6px;
+}
+
+/*
+#searchbar{
+	width:180px;
+	display:block;
+	background-image:url(../../images/2006frontpage/new_car_buyer_medal.jpg);
+	background-repeat:no-repeat;
+	margin:0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: .8em;
+	padding-left, padding-right:2px;
+	color:#333333;
+	border-bottom:#000000;
+}
+*/
+
+#topad{
+	background-color:#FFFFFF;
+	display:block;
+	margin:0px;
+	padding:0px;
+	float:right;
+	margin-bottom:6px;
+}
+
+/*======================Tabs Declaration==========================================*/
+/*-		-		-		-	Tabs	-		-		-		-		*/
+#tabs {
+	float:left;
+    width:100%;
+    font-size:0.8em;
+    line-height:normal;
+	font-family:Arial, Helvetica, sans-serif;
+
+}
+
+#tabs ul {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+  
+#tabs li {
+    float:left;
+    margin:0;
+	background:url("/images/2006newspage/tab_off_r.gif") no-repeat right top;
+    padding:0;
+
+}
+
+#tabs a {
+	float:left;
+    display:block;
+	text-decoration:none;
+	color:#000000;
+	background:url("/images/2006newspage/tab_off_l.gif") no-repeat left top;
+	padding-left:8px;
+	padding-right:8px;
+	padding-top:4px;
+	padding-bottom:4px;
+	border-bottom:1px solid #000000;
+}
+	
+/* Commented Backslash Hack
+     hides rule from IE5-Mac \*/
+  #header a {float:none;}
+  /* End IE5-Mac hack */
+
+#tabs li:hover a {
+	color:#990000;
+	padding-top:3px;
+	padding-bottom:5px;
+	border-bottom:1px solid #FFFFFF;
+	background:url("/images/2006newspage/tab_on_l.gif") no-repeat left top;
+}
+
+#tabs li:hover {
+	background:url("/images/2006newspage/tab_on_r.gif") no-repeat right top;
+}
+
+/*=============================End Tabs Declaration=========================*/
+
+#leftad {
+	width:120px;
+	padding-left:0px;
+	background-color:#003300;
+	border:none;
+	padding-bottom: 10000px;
+	margin-bottom: -10000px;
+	display:block;
+	border-right:1px solid #CCCCCC;
+	float:left;
+}
+
+#article{
+	background-color:#FFFFFF;
+	text-align:justify;
+	font-size:0.8em;
+	margin:0px;
+	padding-bottom: 3000px;
+	margin-bottom: -3000px;
+	display:block;
+	padding-left:8px;
+	padding-right:12px;
+	padding-top:8px;
+	width:795px;
+	float:left;
+	border:none;
+	/*text-indent:1em;*/		
+}
+
+#article p{
+	width:480px;
+}
+
+#article br{
+
+}
+
+#article ul, #article li{
+	width:480px;
+}
+
+#article pre{
+	/*border:1px solid #CCCCCC;*/
+	padding:2px;
+	font-size:12px;
+}
+
+
+
+#article h1{
+	display:block;
+	padding-top:6px;
+	font-size: 1.75em;
+	font-weight: bold;
+}
+.photo{
+	clear:none;
+}
+
+.caption{
+	width:480px !important;
+	font-size:0.75em;
+}
+
+/*#fatboy{
+	display:block;
+	width:300px;
+	float:right;
+	border-left:1px solid #AAAAAA;
+	/*background-color:#003300;
+	background-color:#FFFFFF;
+}*/
+
+#fatboy{
+	width:300px;
+	height:250px;
+	margin:0px;
+	padding:0px;
+	float:right;
+	clear:right;
+	border-left:1px solid #DDDDDD;
+	border-bottom:1px solid #DDDDDD;
+	margin-bottom:8px;
+}
+
+#rightads{
+	/*width:160px;
+	height:600px;*/
+	float:right;
+	clear:right;
+	background-color:#FFFFFF;
+	border:1px solid #BBBBBB;
+	margin-bottom:4px;
+}
+
+/*=============================Mason Text Ads=============================*/
+/*
+.newstopics{
+	margin:0px !important;
+}
+
+.newstopics ul{
+	list-style-type:none !important;
+	margin:0px !important;
+}
+*/
+/*=========================End Mason Text Ads=============================*/
+	
+
+
+.text-ad{
+	width:480px;
+	display:block;
+	float:left;
+	border:1px solid #999999;
+	margin:0px;
+	margin-bottom:4px;
+	margin-top:4px;
+	background-color:#FFFFCC;
+}
+
+.text-ad p{
+	margin:0px !important;
+}
+
+
+.linktonewcarbuyersguide{
+	width:480px;
+	display:block;
+	border:1px solid #999999;
+	margin:0px;
+	margin-bottom:4px;
+	margin-top:4px;
+	background-color:#FFFFCC;
+
+}
+
+#footer-search-boxes{
+	width:480px;
+}
+
+#footer-search-boxes p{
+	font-weight:bold;
+	text-align:center;
+}
+
+#footerbox{
+	width:936px;
+	margin-left:auto;
+	margin-right:auto;
+	border:2px solid #000000;
+	border-top:none;
+	background-color:#FFFFFF;
+	overflow:hidden;
+	text-align:center;
+	font-size:.6em;
+	padding-bottom:6px;
+}

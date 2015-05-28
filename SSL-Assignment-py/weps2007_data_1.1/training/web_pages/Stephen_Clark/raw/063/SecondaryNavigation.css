@@ -1,0 +1,245 @@
+@media screen {
+
+
+	#secondaryNavigationContainer {
+
+		border-left : solid 1px #003366;
+
+		font-size : 70%;
+
+	}
+
+	#secondaryNavigationContainer td {
+		font-size : 70%;
+	}
+
+	#governorAndSecretaryContainer {
+	}
+
+	#governorAndSecretary {
+	}
+
+	#governorAndSecretary td {
+
+		background-color : lightyellow;
+
+		text-align : center;
+
+	}
+
+	#governorAndSecretary a {
+
+		color : black;
+
+		font-weight : bolder;
+
+		text-decoration : none;
+
+	}
+
+	#governorAndSecretary a:hover {
+
+		color : black;
+
+		text-decoration : underline;
+
+	}
+
+	#governorAndSecretary p {
+
+		font-style : italic;
+
+		margin : 0em;
+
+	}
+
+	#governorContainer {
+		padding-top : 0.5em;
+		padding-bottom : 0.25em;
+	}
+
+	#governorContainer a {
+		text-transform : uppercase;
+	}
+
+	#governorContainer p {
+		text-transform : uppercase;
+	}
+
+	#secretaryContainer {
+		padding-bottom : 0.5em;
+	}
+
+	#newsContainer {
+		background-color : white;
+		border-top : solid 1px gainsboro;
+		border-bottom : solid 1px gainsboro;
+		padding : 0.5em;
+	}
+
+	#newsContainer * {
+		line-height : 1em;
+		margin : 0em;
+	}
+
+	#newsContainer a {
+
+		color: blue;
+		text-decoration : underline;
+
+	}
+
+	#newsContainer a:visited {
+
+		color: blue;
+		text-decoration : underline;
+
+	}
+
+	#newsContainer h1 {
+
+		border-bottom : dotted 3px steelblue;
+
+		font-size : 125%;
+
+		padding-top : 1em;
+		padding-bottom : 0.75em;
+
+		margin-bottom : 0.75em;
+
+		text-align : center;
+		text-transform : uppercase;
+
+	}
+
+	#newsContainer h2 {
+
+		font-size : 100%;
+
+		text-transform : uppercase;
+
+	}
+
+	#newsContainer h3 {
+
+		font-size : 100%;
+		font-style : italic;
+
+	}
+
+	#newsContainer ul {
+
+		list-style-image : url( '../Images/NewsBullet.gif' );
+
+		padding : 0em;
+
+		margin-top : 0.5em;
+		margin-bottom : 1em;
+		margin-left : 1.5em;
+		margin-right : 0em;
+
+		text-transform : uppercase;
+
+	}
+
+	#currentNewsContainer {
+
+		padding-bottom : 1em;
+
+	}
+
+	#moreNewsContainer {
+
+		border-top : dotted 3px steelblue;
+
+		padding-top : 1em;
+		padding-bottom : 1em;
+
+		text-transform : uppercase;
+
+	}
+
+
+	#quickLinksContainer {
+		background-color : white;
+		border-top : solid 1px gainsboro;
+		border-bottom : solid 1px gainsboro;
+		padding : 0.5em;
+	}
+
+	#quickLinksContainer * {
+		margin : 0em;
+	}
+
+	#quickLinksContainer a {
+
+		color: blue;
+		text-decoration : underline;
+
+	}
+
+	#quickLinksContainer a:visited {
+
+		color: blue;
+		text-decoration : underline;
+
+	}
+
+	#quickLinksContainer h1 {
+
+		border-bottom : dotted 3px steelblue;
+
+		font-size : 125%;
+
+		padding-top : 1em;
+		padding-bottom : 0.75em;
+
+		margin-bottom : 0.75em;
+
+		text-align : center;
+		text-transform : uppercase;
+
+	}
+
+	#quickLinksContainer ul {
+
+		list-style-image : url( '../Images/QuickLinkBullet.gif' );
+
+		padding : 0em;
+
+		margin-top : 0em;
+		margin-bottom : 1em;
+		margin-left : 1.5em;
+		margin-right : 0em;
+
+	}
+
+	#whatsNewContainer {
+
+		padding-bottom : 1em;
+
+	}
+
+	#sectionHighlightsContainer {
+
+		border-top : dotted 3px steelblue;
+
+		padding-top : 1em;
+		padding-bottom : 1em;
+
+	}
+
+
+}
+
+
+
+@media print {
+
+
+	#secondaryNavigationContainer {
+		display : none;
+	}
+
+
+}

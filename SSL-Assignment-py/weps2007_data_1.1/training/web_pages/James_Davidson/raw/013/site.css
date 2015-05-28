@@ -1,0 +1,120 @@
+/********************** CLASSICS SITE SPECIFIC CSS **********************/
+/************** SWITCHED TO ID5, MON, JAN 15, 2007 - JM **************/
+/*********** MODIFIED TO ID4 THUR, MAR 11, 2004 - KM ***************/
+/********************** WED, AUG 20, 2003 - KM **********************/
+
+/********************** GLOBAL MARKUP (contains headings) **********************/
+
+h1 {
+	color: #494D55;
+}
+
+h2 {
+	color: #494D55;
+}
+
+h3 {
+	color: #494D55;
+}
+
+h4 {
+	color: #494D55;
+}
+
+h5 {
+	color: #494D55;
+}
+
+h6 {
+	color: #494D55;
+}
+
+/* DEPARTMENT BAR */
+
+#departmentBar {
+	background-color: #5D8EBA;
+}
+
+
+/*LEFT NAV BAR*/
+
+
+#outerNavigation, .navigationBackground {
+	background-color: #ECE6BE;
+}
+
+#navigation .rtop *,
+#navigation .rbottom *,
+#navigation div
+{
+background-color: #5D8EBA;
+color: white;
+}
+
+
+#navigation .selected div
+{
+color: #223B4F;
+}
+
+#navigation li.selectedSection div,
+#navigation li.selectedSection .rtop *,
+#navigation li.selectedSection .rbottom *,
+#navigation li.selectedSection ul
+{
+ background-color: #DDD393;
+ }
+ 
+#navigation .submenu li.selected div.children .rtop *,
+#navigation .submenu li.selected div.children .rbottom *,
+#navigation .submenu li.selected div.children ul
+ {
+ background-color: #E5DFB0;
+ }
+ 
+	/* Section links */
+	#navigation li a:link,
+	#navigation li a:visited
+	{
+	color: white;
+}
+
+/* selected section link */
+#navigation .selectedSection a:link,
+#navigation .selectedSection a:visited
+ {
+	color: #223B4F;
+	}
+	
+	/* page children links */
+	#navigation .children a:link,
+	#navigation .children a:visited
+	{
+	color: #223B4F;
+	}
+	#main #navigation li a:link:hover, #main #navigation li a:visited:hover { color: #223B4F; }
+	#main #navigation .selectedSection a:link:hover, #main #navigation .selectedSection a:visited:hover {color: #223B4F;}
+	#main #navigation .children a:link:hover, #main #navigation .children a:visited:hover {color: #223B4F;} 
+	#outerNavigation {
+	background-image: url(bottom.gif);
+	background-repeat: repeat-x;
+	background-position: bottom left;
+	/* tweak repeat and position depending on how well image will tile */
+	}
+	/* enough padding to give space for the bottom image. You can make this amount less, if you want it to underlap the menus for an interesting effect*/
+	#navigation {
+	padding-bottom: 150px;
+	}
+	
+
+/********************** MAIN BODY, RIGHT SITE, FOOTER LINES**********************/
+
+#pageTitle, #footercontent {
+border-color: #5D8EBA
+}
+
+
+/********************** END OF CLASSICS SITE SPECIFIC CSS**********************/
+
+
+

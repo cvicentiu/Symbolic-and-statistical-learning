@@ -1,0 +1,222 @@
+td.product-main {
+    width:100%;
+    padding:0 5px 0 0;
+}
+
+td.product-main-links {
+    padding:0 5px 0 0; 
+}
+
+div.productDetail-blowupImage {
+    width:85px;
+    float:left;
+    clear:left;
+    font-size:.8em;
+    background: url('../pvo/images/title/title-magnify.gif') no-repeat top left;
+    padding-left:16px;
+    margin-left:5px;
+}    
+
+#large-cover {
+    position:absolute;
+    border:2px solid #666666;
+    padding:25px;
+    top:0;
+    left:0;
+    background-color:#FFFFFF;
+    z-index:2;
+    text-align:center;
+    font-size:.8em;
+    color:#666666; 
+}   
+
+div.product-biblio {
+    margin-left:110px;
+    font-size:.9em;
+}
+
+.productDetail-title { 
+    font-weight:bold;
+}
+
+.productDetail-productCode {
+    margin-top:15px;
+}
+
+.productDetail-purchase, .productDetail-purchaseNote, 
+.productDetail-purchaseHow {
+    margin:15px 0 0 110px;
+    font-size:.9em;
+}
+
+a.productDetail-cartLink:link{font-weight:bold;color:#D36227 !important;text-decoration:underline;}
+a.productDetail-cartLink:visited{font-weight:bold;color:#D36227;text-decoration:none;}
+a.productDetail-cartLink:hover{font-weight:bold;color:#666666;text-decoration:none;}
+
+#title-tabs  {
+    width:700px;
+    height:43px;
+    background: url('../pvo/images/title/title-tab-bottom.gif') no-repeat bottom left;
+    position:relative;
+}
+
+.title-text, .title-desc-body {
+    border-left:1px solid #CCCCCC;
+    border-right:1px solid #CCCCCC; 
+    padding:5px 10px 20px 14px;
+    margin:0 0 0 0;  
+    position:relative;
+}
+
+.title-text-bottom, .title-desc-bottom {
+    position:absolute;
+    bottom:0;
+    left:-1px;
+    width:700px;
+    padding:0;
+    background: url('../pvo/images/title/title-bottom.gif') no-repeat top left;
+    height:14px;
+}
+
+#title-tabs ul {   
+    margin:0;
+    padding:0;
+    width:669px;
+    position:absolute;
+    top:1px;
+    left:17px;
+}
+
+#title-tabs ul li {
+    list-style: none;
+    margin:0;
+    padding:0 0 0 5px;
+    display: inline;
+}
+
+#title-tabs img {
+    border-bottom:1px solid #CCCCCC;     
+}
+
+#title-tabs li.on img{
+    border-bottom:1px solid #FFFFFF;     
+}
+
+table.productDetail-ancillaryDownloads {
+    width:99%;
+}    
+
+.productDetail-ancillaryDownloads .td2, 
+.productDetail-ancillaryDownloads .td1,
+.productDetail-ancillaryErrata th {
+    white-space:nowrap;    
+}
+
+.productDetail-purchasePrice {
+    font-weight:bold;
+}
+a.productDetail-cartIcon img {
+    padding:0 3px 0 3px;
+}        
+
+div.title-desc {
+    margin:15px 0 0 0;
+    width:700px;
+    background: url('../pvo/images/title/title-desc-banner.gif') no-repeat top left;
+    height:29px;
+}
+
+div.title-desc h3 {
+    margin:0;
+    padding:8px 3px 0 12px;
+    font-size:1.1em;
+    font-weight:bold;
+    color: #666;
+    font-weight:bold;
+}
+
+.productDetail-misc-top {
+    width:700px;
+    height:14px;
+    margin:15px 0 0 0;
+    background: url('../pvo/images/title/title-top.gif') no-repeat top left;
+}
+
+.productDetail-misc {
+    border-left:1px solid #CCCCCC; 
+    border-right:1px solid #CCCCCC; 
+    padding:0; 
+    margin:0; 
+    text-align:right;
+    font-size:.8em;
+}    
+
+.productDetail-misc-bottom {
+    width:700px;
+    height:14px;
+    background: url('../pvo/images/title/title-bottom.gif') no-repeat top left;  
+    margin:0;
+}
+
+.productDetail-misc img {
+    margin-bottom:-5px;
+}    
+
+.title-desc-body .productDetail-authors {    
+    font-weight:bold;
+    margin:15px 0 5px 0;
+}
+
+.productDetail-relatedProducts{
+    margin-bottom:6px;
+}
+
+#gov-purchase {
+    width:280px;
+    height:87px;
+    background: url('../pvo/images/title/gov-purchase-bgrd.gif') no-repeat top left;
+    padding:35px 5px 0 15px;   
+}
+
+#gov-purchase table{
+   width:90%;
+}
+
+#gov-purchase .productDetail-purchasePrice {
+    font-weight:normal;
+}
+
+#gov-purchase form {
+    margin:0;
+    padding-top:5px;
+    border-top:1px solid #CCCCCC;
+}
+
+.title-ext-links ul{
+    margin:3px 0 0 0;
+    padding:0;
+}
+
+.title-ext-links ul li{
+    list-style: none;
+    margin: 0 0 5px 0;
+    padding: 0 0 0 10px;
+    background: url('../cvo/images/bullets/orange-square.gif') no-repeat 0 0.5em;
+}
+
+#upsell {
+    background-color:#ECF4F8;
+    padding:5px 15px 15px 15px; 
+    margin-top:15px;   
+}
+
+#upsell h3 {
+    margin:3px 0 3px 0;
+    padding:0;
+    font-size:1.1em;
+}    
+        
+ 
+   
+
+    

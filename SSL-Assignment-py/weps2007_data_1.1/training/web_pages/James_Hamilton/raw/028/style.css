@@ -1,0 +1,1396 @@
+/* ---------- */
+/* styles for all pages */
+/* ---------- */
+
+body {
+	font-size:11px;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	color:#000000;
+}
+
+a {
+	font-size:11px;
+	text-decoration: none;
+	color:#3F6F9F;
+}
+
+a:hover {
+	text-decoration: none;
+	color:#999999;
+}
+
+.titles a  {
+        font-size: 12px;
+}
+
+.links a  {
+        font-size: 12px;
+}
+
+.article a {
+	font-size: 12px;
+}
+
+.summary a {
+	font-size: 12px;
+}
+
+.bio a {
+	font-size: 12px;
+}
+
+text_inside a {
+	font-size: 12px;
+}
+
+.text_right a {
+	font-size: 12px;
+}
+
+td a {
+	font-size:12px;
+}
+
+.container_inside a {
+	font-size: 12px;
+}
+
+/* make hyperlink in heading has same font as heading */
+/* Used in currency pages */
+.heading a {
+	font-size: 13px;
+	font-weight: bold;
+	text-align:center;
+}
+
+.pictures  {
+	text-align:center;
+}
+
+.pictures a {
+	text-decoration:none;
+}
+
+.paragraph {
+	margin-bottom:10px;
+}
+
+.bold  {
+	font-weight:bold;
+}
+
+.italic {
+	font-style:italic;
+}
+
+.center {
+	text-align:center;
+}
+
+.nojustify  {
+	padding-top:0px;
+	padding-bottom:20px;
+	padding-right:40px;
+	padding-left:40px;
+	font-family:arial,helvetica,geneva,sans-serif;
+	font-size:12px;
+}
+	
+.nojustify a {
+	font-family:arial,helvetica,geneva,sans-serif;
+	font-size:12px;
+}
+
+.nojustify a:hover {
+	color:#999999;
+	font-family:arial,helvetica,geneva,sans-serif;
+	font-size:12px;
+}
+
+
+/* ---------- */
+/* styles for all headers */
+/* ---------- */
+
+.logo {
+	float: left;
+	text-align: left;
+	width: 60%;
+}
+
+.logo_inside {
+	float: left;
+	text-align: left;
+	width: 60%;
+}
+
+.forminside {
+	float: right;
+	text-align: right;
+	width: 35%;
+	font-size: 12px;
+	font-family:verdana,arial,helvetica,geneva,sans-serif;
+}
+
+div.spacer {
+	clear: both;
+	height:5px;
+}
+
+.menu {
+	border-top:1px solid #3d75a8;
+	border-bottom:1px solid #3d75a8;
+	padding:4px;
+	font-weight:bold;
+	font-family:verdana,arial,helvetica,geneva,sans-serif;
+	font-size:10px;
+	color: #999999;
+	text-align:center;
+	width:750px;
+	background-color:#ebf3fb;
+}
+	   
+.menu a {
+	font-family:verdana,arial,helvetica,geneva,sans-serif;
+	font-size:10px;
+	font-weight:bold;
+}
+	   
+
+/* ---------- */
+/* styles for all footers */
+/* ---------- */
+
+.footer_inside {
+	width:750px;
+	margin-left:5px
+}	
+	
+.copy  {
+	float:left;
+	margin-top:8px;
+	font-family:verdana,arial,helvetica,geneva,sans-serif;
+	font-size:9px;
+	color:#666666;
+	text-align:left;
+}
+
+.ibiblio  {
+	float:right;
+	margin-top:8px;
+}
+
+
+/* ---------- */
+/* styles for home page */
+/* ---------- */
+
+.container {
+	width:750px;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-size:11px;
+}	
+	
+.box {
+	width:750px;
+}
+
+.headline  {
+	padding-top:30px;
+	padding-bottom:15px;
+	text-align:center;
+}
+
+.subhead  {
+	margin-top:10px;
+	margin-bottom:20px;
+	text-align:center;
+}
+
+.text  {
+	padding-top:0px;
+	padding-bottom:20px;
+	padding-right:40px;
+	padding-left:40px;
+	font-family:arial,helvetica,geneva,sans-serif;
+	font-size:12px;
+	text-align:justify;	
+}
+	
+.text a {
+	font-family:arial,helvetica,geneva,sans-serif;
+	font-size:12px;
+}
+
+.text a:hover {
+	color:#999999;
+	font-family:arial,helvetica,geneva,sans-serif;
+	font-size:12px;
+}
+
+
+/* ---------- */
+/* styles for browse collections page */
+/* ---------- */
+
+.contents_browse {
+	min-height:400px;
+}
+
+.row {
+	height:85px;
+}
+
+.pic_left {
+	margin-left:50px;
+	border:none;
+	text-decoration:none;
+}
+
+.pic_left a img {
+	border:none;
+}
+
+.pic_left a:hover img {
+	border:none;
+}
+
+.text_right {
+	width:500px;
+	margin-left:150px;
+	margin-top: -77px;
+}
+
+
+/* ---------- */
+/* styles for collections sidebar */
+/* ---------- */
+
+.collections {
+	width:140px;
+	text-align:left;
+	float:left;
+	left: 5px;
+	top: 11px;
+}
+
+.collections_title {
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.collections_links {
+	font-family:verdana,arial,helvetica,geneva,sans-serif;
+	font-size:10px;
+	margin-left:5px;
+	font-weight:bold;
+}
+
+.collections_links a {
+        font-size:10px;
+        font-weight:bold;
+}
+
+
+.collections_links a:hover {
+	color:#999999;
+}
+
+
+/* ---------- */
+/* styles for interior pages with collections sidebar */
+/* ---------- */
+
+.container_inside {
+	width:750px;
+	margin-left:5px;
+	text-align:left;
+}	
+	
+.contents {
+	border-left:1px solid #cccccc;
+	margin-left:160px;
+	width:585px;
+	min-height:460px;
+	height:auto;
+	height:expression(document.body.clientHeight > 460? "auto": "460px" );
+}
+* html .contents {
+	height:expression(document.body.clientHeight > 460? "auto": "460px" );
+	overflow:auto;
+}/*for ie only */
+
+.headline_inside  {
+	padding-top:30px;
+	margin-bottom:15px;
+	text-align:center;
+}
+
+.text_inside  {
+	margin-top:10px;
+	padding-bottom:20px;
+	margin-right:40px;
+	margin-left:40px;
+	font-family:arial,helvetica,geneva,sans-serif;
+	font-size:12px;
+	text-align:justify;
+}
+
+.text_inside a {
+	color:#3F6F9F;
+	font-family:arial,helvetica,geneva,sans-serif;
+	font-size:12px;
+}
+
+.text_inside a:hover {
+	color:#999999;
+	font-family:arial,helvetica,geneva,sans-serif;
+	font-size:12px;
+}
+
+
+/* ---------- */
+/* styles for interior pages without collections sidebar  */
+/* ---------- */
+
+.heading {
+	margin-top:10px;
+	margin-bottom:10px;
+	font-size: 13px;
+	font-weight: bold;
+	text-align:center;
+}
+
+.about {
+	margin-top:5px;
+	margin-bottom:5px;
+	text-align:center;
+	font-weight:bold;
+}
+
+
+/* ---------- */
+/* styles for image description pages  */
+/* ---------- */
+
+.tab1 {
+	font-size:12px;
+	margin-left:150px;
+	margin-right:75px;
+}
+	
+.tab {
+   font-size:12px;
+	margin-right:75px;
+}
+
+.number_list ol li {
+	margin-bottom:10px;
+}
+
+
+/* ---------- */
+/* styles for pages with alphabetic lists  */
+/* ---------- */
+
+.crumbs  {
+	font-family:verdana,arial,helvetica,geneva,sans-serif;
+	font-size:9px;
+	text-align:left;
+	margin-top:8px;
+}
+
+.crumbs a {
+	font-family:arial,helvetica,geneva,sans-serif;
+	font-size:9px;
+}
+
+.crumbs a:hover {
+	color:#999999;
+	font-family:arial,helvetica,geneva,sans-serif;
+	font-size:9px;
+}
+
+.alpha  {
+        font-size:10px;
+	text-align:center;
+	font-family:verdana,arial,helvetica,geneva,sans-serif;
+	font-weight: bold;
+}
+
+/* todd added to match font of empty alphas */
+
+.alpha a {
+        font-size:10px;
+        text-align:center;
+        font-family:verdana,arial,helvetica,geneva,sans-serif;
+        font-weight: bold;
+}
+
+/* dongqing added to reduce the flicker */
+.alpha a:hover {
+        font-size:10px;
+        text-align:center;
+        font-family:verdana,arial,helvetica,geneva,sans-serif;
+        font-weight: bold;
+}
+
+
+.letter  {
+	font-family:arial,helvetica,geneva,sans-serif;
+	font-weight: bold;
+	margin-top:15px;
+}
+
+.top_page  {
+	font-family:arial,helvetica,geneva,sans-serif;
+	font-weight: normal;
+}
+
+.alpha_bullet ul li {
+	margin-bottom:10px;
+}
+
+.selected  {
+	font-size: 16px;
+	font-family:arial,helvetica,geneva,sans-serif;
+	font-weight: bold;
+	font-style: italic;
+	text-align:center;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+
+/* ---------- */
+/* styles for pages with bulleted lists of dates  */
+/* ---------- */
+
+.column_box {
+	width:410px;
+	margin-left:130px;
+	margin-top:15px;
+}
+
+.column_box table {
+	font-size:11px;
+	font-family:verdana,arial,helvetica,geneva,sans-serif;
+	width:100%;
+}
+
+.column_box table td {
+	vertical-align:top;
+}
+
+.column_head {
+	font-weight:bold;
+}
+
+
+/* ---------- */
+/* styles for browse by topics  */
+/* ---------- */
+
+.indent {
+	margin-left:30px;
+	margin-bottom:20px;
+}
+
+
+/* ---------- */
+/* styles for religiouscontent.html  */
+/* ---------- */
+
+.heading2 {
+	margin-top:10px;
+	font-size: 13px;
+	font-weight: bold;
+	text-align:left;
+}
+
+.indenthead {
+	font-weight:bold;
+	margin-left:30px;
+}
+
+.indent2 {
+	margin-left:60px;
+}
+
+.gray {
+	color:#999999;
+}
+
+
+/* ---------- */
+/* styles for classroom resources  */
+/* ---------- */
+
+.nocollections_twocolumns {
+	margin-top:50px;
+	margin-bottom:50px;
+}
+
+.nocollections_columnleft {
+	margin-top:50px;
+	margin-bottom:50px;
+	font-family:arial,helvetica,geneva,sans-serif;
+	font-size:12px;
+	margin-left:30px;
+}
+
+.nocollections_columnleft ul {
+	margin-top:0px;
+	margin-bottom:0px;
+}
+
+.nocollections_columnright {
+	float:right;
+	font-family:arial,helvetica,geneva,sans-serif;
+	font-size:12px;
+	text-align:left;
+}
+
+.pictureright {
+	float:right;
+}
+
+.column {
+	font-size:12px;
+	margin-left:200px;
+	margin-right:100px;
+	margin-top:-160px;
+}
+
+.column2 {
+	font-size:12px;
+	margin-left:400px;
+	margin-top:-320px;
+}
+
+.column3 {
+	font-size:12px;
+	margin-left:200px;
+	margin-top:-220px;
+}
+
+.posterrow {
+	height:120px;
+}
+
+.poster_left {
+	border:none;
+	text-decoration:none;
+}
+
+.poster_right {
+	width:350px;
+	margin-left:95px;
+	margin-top:-85px;
+}
+
+.headerbox_heading {
+	font-size: 12px;
+	font-weight: bold;
+	text-align:center;
+	background-color: #ebf3fb;
+	border:1px solid #3d75a8;
+	width: 250px;
+	height:20px;
+	margin-bottom:5px;
+}
+
+.teacher_indent {
+	margin-left: 10px;
+}
+
+.classroomrow {
+	height:200px;
+}
+
+.boxleft {
+	float: left;
+}
+
+.boxright {
+	margin-left: 410px;
+}
+
+
+/* ---------- */
+/* styles for document level pages, ie menu, bio, summary, etc.  */
+/* ---------- */
+
+
+BODY {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 13px;
+	Color: #000000;
+	background-color: white;
+}
+
+
+/*--------- A ----------------------*/
+A:Link  {
+	text-decoration: none;
+}
+
+A:Active  {
+	text-decoration: none;
+}
+
+A:visited {
+	text-decoration: none;
+}
+
+/* ------------- DIV -------------------*/
+		
+DIV.source {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 13px;	
+	color: black;
+	font-weight: bold;
+}
+
+DIV.item_author {
+	font-size: 140%;
+	color: Black;
+	font-weight: bold;
+	text-align: center;
+}
+
+DIV.item_title {
+	color: red;
+	font-size:140%;
+	font-weight: bold;
+	text-align: center;
+}
+
+DIV.imprint {
+	font-size : 100%;
+	text-align: center;
+}
+
+DIV.section_heading {
+	margin-top:20px; 
+	margin-bottom:3px;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+DIV.annotation_source {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 13px;	
+	text-align: center;
+	padding-top:30px;
+}
+
+DIV.annotations {
+	font-size : 13px;
+}
+
+DIV.article {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 13px;
+}
+
+DIV.title_readings {
+	text-align: center;
+	font-size : 13px;
+}
+
+DIV.readings {
+	font-size : 13px;
+}
+
+DIV.funding {
+	font-size : 90%;
+}
+
+DIV.permission{
+	font-size : 90%;
+}
+
+DIV.poster_source_heading {
+	font-size: 12px;
+	font-weight: bold;
+	text-align: left;
+}
+
+DIV.poster_source_content {
+	font-size: 12px;
+}
+
+DIV.encoding1 {
+	font-size: 12px;
+	margin-left: 10%;
+	line-height: 150%;
+}
+
+DIV.encoding2 {
+        font-size: 12px;
+        margin-left: 12%;
+        line-height: 150%;
+}
+DIV.encoding3 {
+        font-size: 12px;
+        margin-left: 14%;
+        line-height: 150%;
+}
+
+DIV.encoding4 {
+        font-size: 12px;
+        margin-left: 16%;
+        line-height: 150%;
+}
+
+DIV.encoding5 {
+        font-size: 12px;
+        margin-left: 18%;
+        line-height: 150%;
+}
+
+DIV.encoding6 {
+        font-size: 12px;
+        margin-left: 20%;
+        line-height: 150%;
+}
+	
+DIV.encoding7 {
+        font-size: 12px;
+        margin-left: 22%;
+        line-height: 150%;
+}
+		
+DIV.encoding8 {
+	font-size: 12px;
+	margin-left: 24%;
+	line-height: 150%;
+}
+
+div.page_turner {
+	text-align: center;
+}
+
+
+/* -------------- P ------------------- */
+P.source {
+	color: red;
+}
+
+P.person {
+	font-size: 140%;
+	color: Black;
+	text-align: center;
+}
+
+P.section_heading {
+	margin-top:10px;
+	margin-bottom:10px;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+P.bio {
+	font-size : 13px;	
+	line-height : 130%;
+}
+
+P.summary {
+	font-size : 13px;	
+	line-height : 130%;
+}
+
+P.creator {
+	text-align: right; 
+	margin-right: 5%;
+}
+
+P.bibliography {
+	font-size: 90%;
+	text-align: justify; 
+}
+
+P.project-links {
+	margin-top: 10px;	
+}
+
+P.intro_annotations {
+	font-size: 80%;
+}
+
+P.text_annotations {
+
+}
+
+P.title_readings {
+	font-size: 140%;
+}
+
+P.types_readings {
+	font-size: 120%;
+}
+
+P.item_readings {
+	text-indent : 5%;
+}
+
+P.disclaimer {
+	font-size : 90%;
+	text-align: center;
+	line-height : 110%;
+}
+
+P.article {
+	line-height : 130%;
+}
+
+P.poem {
+	margin-left : 30px;
+}
+
+P.signature {
+	text-align : right;
+	margin-right: 5%;
+	font-weight: normal;
+}
+
+P.date {
+	text-align : right;
+	margin-right: 5%;
+	font-weight: normal;
+}
+
+P.letter { 
+	font-weight: normal;
+
+
+}
+P.example {
+	margin-left : 5%;
+	font-weight : bold;
+}
+
+
+	margin-left : 10%;
+	line-height : 150%;
+}
+
+/* -------------- H4 -----------------------*/
+H4.titles {
+	text-align: left;
+	font-size: 120%;
+}
+
+H4.article {
+	font-size: 13px;
+	text-align: center;
+}
+
+H4.article_author {
+	font-size: 130%;
+	text-align: center;
+}
+
+H4.article_provenance {
+	font-size: 130%;
+	text-align: center;
+}
+
+/* ------------- H3 ------------------*/
+H3.title_annotations {
+	text-align : center;
+}
+
+H3.article_title {
+	font-size : 13px;
+	text-align: center;
+}
+
+H3.article {
+	font-size : 150%;
+	text-align: center;
+	color: Red;
+}
+
+/* -------------- BLOCKQUOTE ----------------*/
+BLOCKQUOTE.poetry {
+	margin-left : 10%;
+}
+
+BLOCKQUOTE.footer { 
+	margin-left: 5%;
+}
+
+BLOCKQUOTE.article {
+	margin-left: 10px; 
+	margin-right: 10px
+}
+/* ----------------- HR ------------------- */
+HR.footer {
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+HR.annotations {
+	text-align : center;
+	width : 35%;
+}
+
+HR.article {
+	text-align : center;
+}
+
+HR.readigns {
+	text-align:center;
+	width : 85%;
+}
+
+HR.funding {
+	text-align:center;
+	width : 100%;
+}
+
+
+/* ------------------ OTHERS -------------*/
+UL.list-of-titles {
+	text-align : left;
+}
+
+LI.titles {
+	text-align : left;
+	margin-top: 10pt;
+}
+
+/* -------------- For all -------------------*/
+.source {
+	font-size: 14px;
+	color: red;
+	font-weight: bold;
+}
+
+.subTitles {
+	font-size: 14px;
+	color: Black;
+}
+
+.headers {
+	font-size: 14px;
+	color: Black;
+	font-weight: bold;
+}
+
+
+UL.list-of-titles {
+	text-align : left;
+}
+
+LI.titles {
+	text-align : left;
+	margin-top: 10pt;
+}
+
+/* ------------ SPAN ------------------*/
+SPAN.author_of_the_annotated_title {
+	font-size: 140%;
+	padding-bottom : 110%;
+}
+
+SPAN.title {
+	color: red;
+	font-size:130%;
+}
+
+SPAN.text_desc {
+	font-size: 12px;
+	font-weight: normal;
+}
+
+SPAN.page_annotation {
+	font-size:110%;
+	margin-bottom : 50%;
+}
+
+SPAN.word {
+	font-weight : bold;
+	padding-top: 10em;
+}
+
+SPAN.annotation{
+	
+}
+
+SPAN.poetry {
+	margin-left : 30px;
+}
+
+
+span.creator_readings {
+	color:red;
+}
+
+span.item_author {
+	font-weight : bold;
+}
+
+span.item_title {
+	font-style : italic;
+}
+
+span.item_imprint { /* not defined */
+
+}
+
+SPAN.year {
+	font-weight : bold;
+}
+
+SPAN.bold {
+	font-weight: bold;
+}
+
+SPAN.italic {
+	font-style : italic;
+}
+SPAN.alert {
+	color : Red;
+}
+
+SPAN.tag {
+	color : Navy;
+}
+
+SPAN.att {
+	font-weight: bold;
+}
+
+SPAN.sic {
+        color: red;
+}
+
+/*----------------- for table of content --------------------*/
+.TOC_columnleft_heading {
+	font-family:arial,helvetica,geneva,sans-serif;
+	font-size:13px;
+	font-weight: bold;
+	text-align:left;
+	margin-left:10px;
+	width:450px;
+	margin-top:10px;
+	margin-bottom:15px;
+}
+
+.TOC_columnright_heading {
+	font-family:arial,helvetica,geneva,sans-serif;
+	font-size:13px;
+	font-weight: bold;
+	text-align:right;
+	margin-left:470px;
+	margin-top:-28px;
+	margin-bottom:15px;
+}
+.TOC_columnleft {
+	font-family:arial,helvetica,geneva,sans-serif;
+	font-size:12px;
+	text-align:left;
+	margin-left:10px;
+	margin-bottom:8px;
+	width:450px;
+}
+
+.TOC_columnright {
+	font-family:arial,helvetica,geneva,sans-serif;
+	font-size:12px;
+	text-align:right;
+	margin-left:470px;
+	margin-top:-20px;
+	margin-bottom:8px;
+}
+
+/* ---------- */
+/* todd's mods (highlights styles) */
+/* ---------- */
+
+a#hilite {
+        color:#FFFFFF;
+        background-color:#3F6F9F;
+        border-top:1px solid #3F6F9F;
+        border-bottom:1px solid #3F6F9F;
+        border-right:2px solid #3F6F9F;
+        border-left:2px solid #3F6F9F;
+}
+
+p.highlights {
+        width:450px;
+        margin-bottom:10px;
+}
+
+.highlights_author {
+        text-align:right;
+        width:450px;
+        margin-top:10px;
+        margin-bottom:10px;
+}
+
+.highlights_headline_inside  {
+        padding-top:30px;
+        margin-bottom:15px;
+        margin-left:150px;
+}
+
+.highlights_heading {
+        margin-right:10px;
+        margin-top:10px;
+        margin-bottom:10px;
+        font-size: 13px;
+        font-weight: bold;
+        text-align:center;
+}
+
+.highlights_body {
+        width:450px;
+        font-family : Arial, Helvetica, sans-serif;
+        font-size : 13px;
+        Color: #000000;
+        background-color: white;
+}
+
+.highlights_image {
+        width:150px;
+        border-style: none;
+        text-align:center;
+        float:right;  
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 40px;
+        padding-bottom: 1px;
+}
+
+.highlights_caption {
+        width:150px;
+        text-align:center;
+        float:right;
+        font-weight:bold;
+        font-size:80%;
+        margin-bottom: 10px;
+        margin-right: 3px;       
+}
+
+.highlights_box {
+        width:150px;
+        border-style: double;
+        text-align:left;
+        float:right;
+        border-color: #0D549B;
+        background-color: #EBF3FB;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+}
+
+.highlights_box_header {
+        width:150px;
+        height:20px;
+        text-align:center;
+        color:#000000;
+        font-weight:bold;
+        float:right;
+        padding-top:5px;
+        padding-bottom:15px;
+}
+
+.highlights_index {
+        margin-left:35px;
+}
+
+.highlights_right {
+        width:150px;
+        text-align:center;
+        float:right;
+        left: 20px;
+        top: 11px;
+}
+
+.highlights_spacer {
+        width:150px;
+        height:15px;
+        float:right;
+}
+
+.highlights_top {
+        width:150px;
+        height:25px;
+        font-family:verdana,arial,helvetica,geneva,sans-serif;
+        text-align:center;
+        font-weight:bold;
+        font-size:14px;
+        float:right;
+        padding-top:35px;
+        padding-bottom:25px;
+}
+
+/* ---------- */
+/* end highlights styles todd mods */
+/* ---------- */
+
+
+/*
+ * --------------------
+ * for page images
+ * --------------------
+ */
+div.page_image {
+        width:700px;
+        text-align : left;
+}
+
+
+.page_image a {
+        font-size : 12px;
+}
+
+
+div.page_image_header {
+        width:700px;
+        height:55px;
+        text-align : left;
+}
+
+
+div.line {
+        margin: 0px;
+}
+
+
+div.page_image_logo {
+        float: left;
+        text-align: left;
+        width: 60%;
+        height: 47px;
+        margin: 0;
+        padding: 0;
+}
+
+
+div.page_image_right {
+	float: right;
+        text-align: right;
+        width: 35%;
+        height: 47px;
+        font-size: 12px;
+        font-family:verdana,arial,helvetica,geneva,sans-serif;
+        margin: 0;
+        padding: 0;
+}
+
+
+
+
+DIV.mss_source {
+        font-family : Arial, Helvetica, sans-serif;
+        font-size : 13px;
+        font-weight: bold;
+        text-align : center;
+}
+
+
+div.mss_source_author {
+        text-align : center;
+}
+
+div.mss_source_page{
+	text-align: center;
+}
+
+
+div.mss_image {
+        padding-top:20px;
+        padding-bottom:20px;
+	text-align: center;
+}
+
+
+/* --------------
+ * end of page images
+ * --------------
+ */
+
+
+
+/* test on record.phtml page */
+
+.fieldbox_text {
+  margin-left:10px;
+  margin-right:10px;
+  margin-bottom:10px;
+}
+
+
+/* test by lisa july 26 on no border for images */
+
+a img {
+	border:none;
+}
+
+/* end of test */
+
+/* kimv style for classroom pages */
+
+.teacher_indent_pic {
+        margin-left: 10px;
+}
+
+/*quote */
+.quote {
+  margin-top:10px;
+  margin-bottom:10px;
+  margin-left:30px;
+  margin-right:30px;    
+}
+
+
+/* oral histories help page */
+
+.help_oh {
+        min-height:500px;
+}
+
+.row_oh {
+        height:300px;
+        width:700px; 
+}
+        
+.pic_left_oh {
+        height:250px;
+        width:700px; 
+        margin-left:-35px;
+        border:none;
+        text-decoration:none;
+        text-align:left;
+}
+        
+.text_right_oh {
+        width:400px;   
+        /* margin-left:20px; */
+        /* margin-top:px; */
+        float:right;
+        text-align:left;
+}
+
+.help_head {
+      text-align:left;
+      font-size:14px;
+      color:#000000;
+      font-weight:bold;
+}
+
+
+/* Mar, 2006 */
+.sup {
+	font-size:90%;
+	vertical-align: super;
+}
+
+

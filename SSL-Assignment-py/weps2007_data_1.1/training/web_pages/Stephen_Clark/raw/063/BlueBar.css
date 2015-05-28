@@ -1,0 +1,117 @@
+#p7PMnav {
+  margin:0; margin-top:0px;
+  padding:0;
+  display:block;
+  float:right;
+}
+
+#p7PMnav li {
+  list-style-type: none;
+  margin: 0;
+  text-align:left;
+}
+
+#p7PMnav ul {
+  margin: 0;
+  padding: 0;
+  border: 1px solid #DDDDDD;
+  background-color:#173f6e;
+  z-index: 99999;
+}
+
+#p7PMnav ul li {
+  border-bottom: 1px solid #cccccc;
+}
+
+#p7PMnav ul ul {
+  border-top: 2px solid #999999;
+}
+
+#p7PMnav a {
+  display: block;
+  padding:2px 0px 2px 30px;
+  font:bold 11px/13px verdana;
+  text-decoration:none;
+  color:#ffffff;
+}
+
+#p7PMnav ul a {
+  border: 0;
+}
+
+#p7PMnav a:hover, #p7PMnav a:active, #p7PMnav a:focus,
+#p7PMnav .p7PMon, #p7PMnav .p7PMon:hover,
+#p7PMnav .p7PMon:active {
+  text-align:left;
+  display:block;
+  background-color:#ededed;
+  color:#000099;
+}
+
+
+
+/* ------ the current page marker style ------ */
+
+#p7PMnav .p7PMmark, #p7PMnav .p7PMmark:hover {
+  font-weight: bold;
+}
+
+
+
+/* ------ the trigger link styles ------- */
+
+
+/*the normal trigger link */
+
+#p7PMnav ul .p7PMtrg, #p7PMnav ul .p7PMtrg:hover, #p7PMnav ul .p7PMtrg:active {
+  background: #000099 url(../assets/templates/nav/arrow.gif) no-repeat right center;
+}
+
+#p7PMnav .p7PMtrg:hover {
+  color: #ffffff;
+  background:#000099 url(../assets/templates/nav/arrow.gif) no-repeat right center;
+}
+
+/*the submenu classes */
+
+#p7PMnav .p7PMhide {
+  left: -9000px;
+  border: 0;
+}
+
+#p7PMnav .p7PMshow {
+  left: auto;
+  z-index: 20000 !important;
+}
+
+/* Top level menu width */
+
+#p7PMnav li {
+  float: left;
+  width: 190px;
+}
+
+#p7PMnav ul li {
+  float: none;
+}
+
+/* 2nd and subsequent Submenu widths */
+
+#p7PMnav ul, #p7PMnav ul li {
+  width: 175px;
+}
+
+#pmmcrumb {
+  font-weight: bold;
+  color: #333333;
+}
+
+#pmmcrumb a, #pmmcrumb a:visited {
+  font-weight: normal;
+  color: #333333;
+}
+
+#pmmcrumb a:hover, #pmmcrumb a:active, #pmmcrumb a:focus {
+  font-weight: normal;
+  color: #956870;
+}

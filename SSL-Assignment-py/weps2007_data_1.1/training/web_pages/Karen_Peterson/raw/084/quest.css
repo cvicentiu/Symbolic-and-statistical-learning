@@ -1,0 +1,910 @@
+BODY {
+	font-family: "Arial";
+	background-color: #ffffff;
+	margin: 0px 0px 0px 0px;
+        font-size: 12px;
+
+}
+TABLE {
+	background-color: #ffffff;
+	border: 1px solid #CCCCCC;
+        font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+/*news section (should be used for all middle column entries*/
+#news {
+	margin: 20px 0px 0px;
+	padding-left: 15px;
+	padding-right: 10px;
+}
+#news p {
+	margin: 0px;
+}
+#news p.header {
+	margin: 0px;
+	color:#9D6E4A;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+#news p.content {
+	margin: 0px 0px 10px 30px;
+	color:#285A66;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+#news p.content_left {
+	margin: 0px 0px 10px 0px;
+	color:#285A66;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+#news p.header_callout {
+	margin: 0px;
+	color:#000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+#news p.header_staff_name {
+	color: #000000; 
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 14px; 
+	font-weight: bold; 
+}
+#news p.header_staff_title {
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 14px; 
+	color: #777777;
+}
+#news p.content_staff {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #285A66;
+}
+#news ul {
+        margin: 0px 0px 0px 6px;
+        padding: 0px 0px 0px 20px;
+	color: #000000;
+}
+
+#news ol {
+        margin: 0px 0px 0px 20px;
+        padding: 0px 0px 0px 30px;
+	color: #000000;
+}
+
+#news li {
+        margin: 0px 0px 10px 0px;
+}
+#news li.call_out {
+	margin: 0px;
+	color:#285A66;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+#news p.header_black {
+	color: #000000;
+	margin: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight:normal;
+}
+#news p.header_grey {
+	color:#666666;
+	margin:0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight:bold;
+}
+/*End News section*/
+/*nav1 section (navigational elements under banner)*/
+#nav1 {
+	width: 100%;
+	background-color: #B7BAA7;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	text-align: center;
+	color: #132B31;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+#nav1 ul {
+	display: block;
+	list-style-type: none;
+	margin: 0px 0px 0px 0px;
+}
+#nav1 li {
+	display: inline;
+	padding: 0px 30px 0px 0px;
+}
+#nav1 a:link,
+#nav1 a:visited {
+	color: #132B31;
+	text-decoration: none;
+}
+#nav1 a:hover {
+	color:#990000;
+}
+/*end nav1*/
+
+/*nav1_temp section (navigational elements under banner)*/
+#nav1_temp {
+	width: 100%;
+	background-color: #B7BAA7;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	text-align: center;
+	color: #132B31;
+	font-family: Verdana, sans-serif;
+	font-size: 10px;
+}
+#nav1_temp ul {
+	display: block;
+	list-style-type: none;
+	margin: 4px 0px 4px 0px;
+}
+#nav1_temp li {
+	display: inline;
+	padding: 0px 5px 0px 0px;
+}
+#nav1_temp a:link,
+#nav1_temp a:visited {
+	color: #132B31;
+	text-decoration: none;
+}
+#nav1_temp a:hover {
+	color:#990000;
+}
+/*end nav1*/
+
+
+/*shadow (style that describes the shadow underneath the banner*/
+#shadow {
+	margin: 0px 0px 20px 0px;
+        padding: 0px 0px 0px 0px;
+}
+
+#shadow_temp {
+	margin: 0px 0px 5px 0px;
+        padding: 0px 0px 0px 0px;
+}
+
+/*end shadow*/
+/*feature_col section (used in the profiles section of the main page)*/
+#feature_col {
+	width: 160px;
+	vertical-align:top;
+	text-align:center;
+	padding: 15px 5px 0px;
+	border-top: 1px solid #E7E7E7;
+	font-size: .9em;
+}
+/*end feature_col*/
+#feature_type {
+	color:#9D6E4A;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+/*start features section*/
+#features {
+}
+#features ul {
+	list-style-type: none;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+#features li {
+	color: #777777;
+	font-size: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#features li.last {
+	margin: 15px 0px 0px 0px;
+	color: #4F6989;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+#features p {
+	margin:0px 10px 0px 10px;
+	text-align:left
+}
+#features p.feat_quote {
+	color:#797C7B;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+#features p.feat_source {
+	color:#797C7B;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+/*end features section*/
+/*welcome_col section (describes the physical attributes of the welcome column, used as a <div> tag)*/
+#welcome_col {
+	width: 440px;
+	vertical-align:top;
+	padding: 0px;
+	border-top: 1px solid #E7E7E7;
+	border-left: 1px solid #E7E7E7;
+	border-right: 1px solid #E7E7E7;
+	margin: 0px;
+}
+/*end welcome_col*/
+/*start content_col*/
+#content_col {
+	vertical-align:top;
+	padding: 0px;
+	border-top: 1px solid #E7E7E7;
+	border-left: 1px solid #E7E7E7;
+	border-right: 1px solid #E7E7E7;
+	margin: 0px;
+}
+/*end content_col*/
+/*welcome section (used to describe the look of the main paragraph in the middle column on every page)*/
+#welcome {
+	vertical-align:top;
+	background-color: #F1F1F1;
+	color: #54362D;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+	padding-top: 5px;
+}
+#welcome p {
+	margin: 0px;
+	line-height: 125%;
+}
+#welcome p.header {
+	padding: 0px 0px 10px;
+	color: #285A66;
+	font-size: 20pt;
+	line-height: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight:normal;
+}
+/*end welcome section*/
+
+/*welcome_temp section*/
+#welcome_temp {
+	vertical-align:top;
+	color: #54362D;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+	padding-top: 5px;
+}
+#welcome_temp p {
+	margin: 0px;
+	line-height: 125%;
+}
+#welcome_temp p.header {
+	padding: 0px 0px 0px;
+	color: #285A66;
+	font-size: 20pt;
+	line-height: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight:normal;
+}
+/*end welcome section*/
+
+
+/* headline has to be a diff div than the LI since they're different colors (use <span> tag>. */
+#headline {
+	color:#33333a;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+#headline a:link,
+#headline a:visited {
+	color: #33333a;
+	text-decoration: underline;
+}
+#headline a:hover {
+	color:#990000;
+	text-decoration: underline;
+}
+/*start sidenav_col*/
+#sidenav_col /*sets info for sections too*/{
+	width: 160px;
+	vertical-align:top;
+	text-align:left;
+	padding: 10px 5px 0px 5px;
+	border-top: 1px solid #E7E7E7;
+}
+#sidenav_col a:link,
+#sidenav_col a:visited {
+	color: #285A66;
+	text-decoration: none;
+}
+#sidenav_col a:hover {
+	color:#54362D;
+	text-decoration: none;
+}
+#sidenav_home /*describes home link*/{
+	border-bottom-style:solid;
+	border-bottom-color:#E7E7E7;
+	border-width:1px;
+	margin: 0px 0px 10px 0px;
+}
+#sidenav_home p.home {
+	font-family: Arial, Helvetica, sans-serif; 
+	color: #9D6E4A; 
+	font-size: 13px;
+	font-weight:bold;
+}
+#sidenav_home a:link,
+#sidenav_home a:visited {
+	color: #9D6E4A;
+	text-decoration: none;
+}
+#sidenav_home a:hover {
+	color:#9D6E4A;
+	text-decoration: none;
+}/*end of sidenav_home link*/
+#sidenav_col p.header /*main*/ {
+	font-family: Arial, Helvetica, sans-serif; 
+	color: #9D6E4A; 
+	font-size: 13px;
+	font-weight:bold;
+	margin: 0px 0px 10px 10px;
+	border-bottom-style:solid;
+	border-bottom-color:#E7E7E7;
+	border-width:1px;
+}
+#sidenav_col p /*sections*/{
+		margin: 5px 0px 0px 10px;
+		font-weight:normal;
+		font-size: 13px;
+		font-family: Arial, Helvetica, sans-serif;
+		color: #285A66;
+}
+#sidenav_col p.section_select /*selected sections*/{
+	font-weight:bold; 
+	color:#54362D;
+}
+#sidenav_sub {
+
+}
+#sidenav_sub p /*sub pages*/ {
+	font-weight:normal;
+	font-size:12px;
+	color:#000000;
+	margin:0px 0px 3px 20px;
+}
+#sidenav_sub p.page_select /*selected sub pages*/{
+	font-size:12px;
+	font-weight:bold;
+	color:#000000;
+}
+#sidenav_sub a:link,
+#sidenav_sub a:visited {
+	color: #000000;
+	text-decoration: none;
+}
+#sidenav_sub a:hover {
+	color:#54362D;
+	text-decoration:underline;
+}
+
+#sidenav_sub_sub {
+
+}
+#sidenav_sub_sub p /*sub pages*/ {
+	font-weight:normal;
+	font-size:12px;
+	color:#777777;
+	margin:0px 0px 3px 40px;
+}
+#sidenav_sub_sub p.sub_select /*selected sub pages*/{
+	font-size:12px;
+	font-weight:bold;
+	color:#777777;
+}
+#sidenav_sub_sub a:link,
+#sidenav_sub_sub a:visited {
+	color: #777777;
+	text-decoration: none;
+}
+#sidenav_sub_sub a:hover {
+	color:#54362D;
+	text-decoration:underline;
+}
+
+
+
+
+/*end sidenav section*/
+/*start start_col*/
+#start_col {
+	width: 200px;
+	vertical-align:top;
+	border-top: 1px solid #E7E7E7;
+	padding: 20px 5px 0px 0px;
+}
+
+#start {
+        margin: 0px 0px 20px 15px;
+	font-size: 1.1em;
+	line-height: 150%;
+}
+#start p {
+        margin: 0px 0px 0px 0px;
+}
+#start p.header {
+	padding: 2px 0px 00px 0px;
+	color: #9D6E4A;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+#start p.caption {
+	padding: 0px 0px 00px 0px;
+	color: #B7BAA7;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-align: center;
+}
+#start ul {
+	/*list-style-image: url(images/bullet.gif);
+	list-style-position: inner;
+	list-style-type: disc;*/
+	list-style-type:none;
+	list-style-image:none;
+	padding: 2px 0px 0px .3em;
+	margin: 0px 0px 0px 0px;
+	color: #4C3B36;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	list-style-type: square;
+}
+#start li {
+	list-style-type:none;
+	list-style-image:none;
+        padding: 5px 0px 0px 0px;
+}
+#start a:link,
+#start a:visited {
+	color: #4C3B36;
+	text-decoration: none;
+}
+#start a:hover {
+	color:#990000;
+	text-decoration: underline;
+}
+
+
+#start_temp ul {
+	padding: 0px 0px 0px .3em;
+	margin: 0px 0px 0px 0px;
+	color: #4C3B36;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+        font-weight: bold;
+        list-style-type: disc;
+}
+
+#start_temp li {
+	margin: 0px 0px 15px 3px;
+        list-style-type: disc;
+}
+#start_temp a:link,
+#start_temp a:visited {
+	     color: #4C3B36;
+	     text-decoration: none;
+}
+#start_temp a:hover {
+	color:#990000;
+	text-decoration: underline;
+}
+
+
+#quotes {
+	padding: 0px 0px 20px 30px;
+	padding-right: 5px;
+}
+#quotes p {
+	margin: 0px 0px 0px 0px;
+}
+#quotes p.header {
+	color:#9D6E4A;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+#quotes p.quote {
+	color:#797C7B;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+#quotes p.source {
+	color:#A5A8A9;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+#partners {
+	padding: 0px 0px 20px 30px;
+}
+#partners p {
+	margin: 0px 0px 0px 0px;
+}
+#partners p.header {
+	color:#9D6E4A;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+#footer {
+	color:#A2A2A2;
+	border-top: 1px solid #E7E7E7;
+	margin: 20px 0px 0px 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+#footer p {
+}
+#footer ul {
+	display: block;
+	list-style-type: none;
+	margin: 5px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+#footer li {
+	display: inline;
+	border-left: 1px solid #E7E7E7;
+	padding: 0px 5px 0px 10px;
+}
+#footer li.first {
+	border-left: none;
+}
+#footer a:link,
+#footer a:visited {
+	color: #A2A2A2;
+	text-decoration: none;
+}
+#footer a:hover {
+	color:#990000;
+}
+/*start testimonial section*/
+#close_window {
+	vertical-align:top;
+	background-color: #275A66;
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	text-align:right;
+	
+	padding-top:5px;
+	padding-bottom:5px;
+}
+#close_window p {
+	margin:0px 10px 0px 0px;
+	line-height: 150%;
+}
+#close_window a:link,
+#close_window a:visited {
+	color:#FFFFFF;
+	text-decoration: none;
+}
+#testimonial {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	vertical-align:top;
+}
+#testimonial  p {
+	margin: 0px;
+}
+#testimonial p.name {
+	color:#660000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	text-align:center;
+	font-weight:bold;
+}
+#testimonial p.contact {
+	color:#000000;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	text-align:center;
+}
+#testimonial p.question {
+	color:#333333;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	text-align:left;
+	font-style:normal;
+}
+#testimonial p.answer {
+	color:#666666;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	text-align:left;
+}
+/*end testimonial section*/
+/*begin application underline section*/
+#underline {
+	border-bottom-style:solid;
+	border-bottom-color:#C0C0C0;
+	border-width:1px;
+}
+#underline p {
+	margin:0px;
+}
+#underline p.underline_content {
+	color:#9D6E4A;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight:bold;
+	text-align:left;
+}
+/*end underline section*/
+/*begin student_profiles section*/
+#student_profiles {
+	}
+#student_profiles p{
+	margin:0px;
+}
+#student_profiles p.index{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #285A66;
+}
+#student_profiles p.titles{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18pt;
+}
+#student_profiles .name{
+	font-family: Arial, Helvetica, sans-serif; 
+	color: #9D6E4A; 
+	font-size: 14px;
+}
+#student_profiles p.class{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color:#000000;
+}
+#student_profiles .line{
+	color: #285A66;
+}
+#student_profiles p.city {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style:italic;
+	color: #777777;
+}
+#student_profiles .profile{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #285A66;
+}
+#student_profiles a:link {
+	color: #006699;
+	text-decoration: none;
+}
+#student_profiles a:visited {
+	text-decoration: none;
+	color: #996699;
+}
+#student_profiles a:hover {
+	text-decoration: none;
+	color: #993300;
+}
+#student_profiles a:active {
+	text-decoration: none;
+}
+/*start FAQ index section*/
+#faqindex {
+	margin:0px 0px 0px 20px;
+}
+#faqindex p.header {
+	color: #996633;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight:normal;
+}
+#faqindex ul {
+    padding: 10px 0px 0px 20px;
+	color: #76ADEE;
+}
+#faqindex li {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+#faqindex a:link {
+	color: #006699;
+	text-decoration: none;
+}
+#faqindex a:visited {
+	color: #996699;
+	text-decoration: none;
+}
+#faqindex a:hover {
+	color: #993300;
+	text-decoration: none;
+}
+#faqindex a:active {
+	text-decoration: none;
+}
+/*end faqindex*/
+/*tableformat*/
+#tableformat {
+	font-family:Arial, Helvetica, sans-serif;
+	text-align:left;
+	margin: 0px 0px 0px 0px;
+	color:#285A66;
+	font-size: 10px;
+}
+#tableformat p {
+	font-family:Arial, Helvetica, sans-serif;
+	text-align:left;
+	margin: 0px 0px 0px 0px;
+	color:#285A66;
+	font-size: 10px;
+}
+/*end tableformat*/
+/* backtotop section used for back to top links as div of other text*/
+#backtotop {
+}
+#backtotop p {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#006699;
+	font-size:12px;
+	text-align:right;
+	}
+#backtotop a:link {
+	color: #006699;
+	text-decoration: none;
+}
+#backtotop a:visited {
+	color: #996699;
+	text-decoration: none;
+}
+#backtotop a:hover {
+	color: #993300;
+	text-decoration: none;
+}
+#backtotop a:active {
+	text-decoration: none;
+}
+/*end of backtotop section*/
+/*staff section formats*/
+#staff_profile {
+	/*margin:0px 0px 50px 0px;*/
+	padding:0px 0px 100px 0px;
+}
+#staff_picture {
+	height:15px;
+	padding:0px 0px 10px 0px;
+	margin:0px 0px 10px 0px;
+	
+}
+#staff_bio {
+}
+/*end staff picture formats*/
+/*begin new exemption tags. Should be used with <div> or <span> tags only.*/
+#middle_form {
+	vertical-align:top;
+	padding: 0px;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px; 
+    border-bottom: 0px;
+	margin: 0px;
+
+#bordered_form {
+        border: 1px solid #CCCCCC;
+
+}
+.cobranded {
+	padding: 5px;
+	border: 1px solid #CCCCCC;
+}
+.student_cell {
+	border: 1px solid #999999;
+}
+.grey_bg {
+	background-color: #F1F1F1;
+}
+.css_font_callouts {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+	color: #CC6600;
+	border: solid;
+}
+.partnerbox {
+	border-left: 1px solid #E7E7E7;
+	}
+.orange_plus_staff{
+	color: #000000;
+	font-size:12px;
+}
+#board_members {
+	color:#70777E;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+}
+#mission {
+}
+#mission p.header {
+	color: #996633;
+	margin: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight:bold;
+}
+#mission p.values {
+	margin: 0px 0px 0px 0px;
+	color:#285A66;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.orange_header {
+	color: #000000;
+	margin: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight:bold;
+}
+.blue_italics {
+	color: #006699;
+	font-weight: bold;
+	font-style: italic;
+}
+/*topnav section (used for all navigation items above the banner*/
+
+#topnav {
+	text-align: right;
+	margin: 10px 0px 0px;
+	font-size: 11px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #285A66;
+}
+#topnav ul {
+	display: block;
+	list-style-type: none;
+	margin: 0px 0px 5px 0px;
+}
+#topnav li {
+	display: inline;
+	border-left: 1px solid #000;
+	padding: 0px 5px 0px 10px;
+}
+#topnav li.first {
+	border-left: none;
+}
+#topnav a:link,
+#topnav a:visited {
+	color: #285A66;
+	text-decoration: none;
+}
+#topnav a:hover {
+	color:#990000;
+	text-decoration: underline;
+}
+/*End topnav*/
+/*subnav_col section (describes the behaviour around the subnavigational areas of each page*/
+/*delete if no longer needed*/
+#subnav_col {
+	width: 160px;
+	vertical-align:top;
+	text-align:left;
+	padding: 20px 5px 0px 10px;
+	border-top: 1px solid #E7E7E7;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #5D7CC8;
+}
+#subnav_col a:link,
+#subnav_col a:visited {
+	color: #5D7CC8;
+	text-decoration: none;
+}
+#subnav_col a:hover {
+	color:#990000;
+	text-decoration: underline;
+}
+/*end subnav_col*/

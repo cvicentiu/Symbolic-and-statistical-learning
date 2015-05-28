@@ -1,0 +1,108 @@
+h1 {
+	position: relative;
+	left: -3px;
+	font: normal 2.0em Myriad, Myriad Web, Arial, Helvetica, sans-serif;
+	line-height: 1.1em;
+	color: #00919e;
+	padding: 0;
+	margin: 20px 20px 10px 20px;
+}
+h1.headerbanner {
+	position: static;
+	font: normal 2.0em Georgia, Myriad, Myriad Web, Arial, Helvetica, sans-serif;
+	line-height: 1.1em;
+	color: #fff;
+	background-color: #00919e;
+	padding: 16px 15px 22px 19px;
+	margin: 0;
+}
+h1.headerimage {
+	position: static;
+	background-color: #00919e;
+	padding: 0 0 0 19px;
+	margin: 0;
+}
+h1.headerimage img.outdent {
+	margin-left:-2px;
+}
+h2 {
+	padding-top: 0;
+	margin-top: 0;
+}
+
+table#maincontenttable {
+	border: none;
+	width: 100%;
+}
+table#maincontenttable td {
+	padding-bottom: 10px;
+}
+table td.singlecolumn {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+table td.widecolumnleft {
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 76%; /* remove if using static width */
+}
+table td.narrowcolumnright {
+	padding-right: 20px;
+	width: 24%; /* static width is 180px */
+}
+table td.widecolumnright {
+	padding-top: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 76%; /* remove if using static width */
+}
+table td.narrowcolumnleftnav {
+	padding-left: 20px;
+	padding-right: 0;
+	background-color: #fff;
+	width: 24%; /* static width is 180px */
+}
+
+
+.nav {
+}
+.navhead {
+	font-weight: bold;
+	color: #999;
+}
+.nav p {
+	margin-top: 0px;
+	margin-bottom: 0.8em;
+	line-height: 1.2em;
+}
+.nav ul {
+	list-style-type: none;
+	list-style-image: none;
+	margin: 0;
+	padding: 0 0 20px 0;
+}
+.nav ul.indented {
+	margin-left: 15px;
+}
+.nav li {
+	line-height: 1.2em;
+	color: #666;
+	margin: 0 8px 0.6em 0;
+	padding-left: 8px;
+	background: transparent url(images/bulletarrow-0073e3.gif) no-repeat top left; 
+}
+.nav li.current {
+	background: transparent url(images/bulletarrow-666666.gif) no-repeat top left; 
+}
+.nav p.navsmall {
+	font: 0.9em Verdana, Arial, Helvetica, sans-serif;
+	color: #666;
+	margin-top: -0.5em;
+	padding-left: 22px;
+}
+p.tagline {
+	font: normal 1.4em Myriad, Myriad Web, Arial, Helvetica, sans-serif;
+	line-height: 1.2em;
+	color: #666;
+	margin: 0 20px 10px 20px;
+}

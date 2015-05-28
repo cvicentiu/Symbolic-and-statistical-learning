@@ -1,0 +1,31 @@
+/* Base Weblog (base-weblog.css) */
+
+#pageTitle h2 {
+    font-size: 0.5em; 
+    font-weight: normal;
+    line-height: 1.2em;
+    margin: 0px; 
+    padding: 0px;
+}
+
+.entry, .archive-entry, .entry-more {
+    margin: 0px;
+    padding: 0px;
+}
+
+.entry-footer, .comment-footer, .trackback-footer {
+   margin: 10px 0px 30px 0px;
+   border-top: 1px solid #dae0e6;
+   padding-top: 2px;
+   color: #666;
+   font-size: .75em;
+   text-align: right;
+}
+
+.archive-nav, .archive-trackback, .comments-open-moderated {
+    font-size: .75em;
+}
+
+.rightBox .boxText {
+    padding: 1em 0px 3em 0px;
+}

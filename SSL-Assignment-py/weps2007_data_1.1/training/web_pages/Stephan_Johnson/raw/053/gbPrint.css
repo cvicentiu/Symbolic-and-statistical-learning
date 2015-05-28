@@ -1,0 +1,145 @@
+***********************************************/
+/* Two Column CSS Layout, adapted from Macromedia Template for Greenbag website                            */
+/* CSS adapted by Roger V. Skalbeck          					*/
+/* This is the default screen stylesheet for the Grenbag    */
+/***********************************************/
+
+/***********************************************/
+/* HTML tag styles                             */
+/***********************************************/ 
+
+body{
+	font-family: Georgia, "Palatino Linotype", "Times New Roman", Times, serif;
+	color: #333333;
+	line-height: 1.166;	
+	margin: 0px;
+	padding: 0px;
+	background: #fff;
+	/* background image repeated for entire website */
+}
+
+a:link, a:visited {
+	color: #666600;
+	text-decoration: underline;
+}
+/* overrides decoration from previous rule for hyperlinks */
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Georgia, "Palatino Linotype", "Times New Roman", Times, serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+h1{
+ font-family: Georgia, "Palatino Linotype", "Times New Roman", Times, serif;
+ font-size: 120%;
+ color: #334d55;
+}
+
+h2{
+ font-size: 114%;
+ color: #006699;
+}
+
+h3{
+ font-size: 100%;
+ color: #334d55;
+}
+
+h4{
+ font-size: 100%;
+ font-weight: normal;
+ color: #333333;
+}
+
+h5{
+ font-size: 100%;
+ color: #334d55;
+}
+
+ul{
+ list-style-type: square;
+}
+
+ul ul{
+ list-style-type: disc;
+}
+
+ul ul ul{
+ list-style-type: none;
+}
+
+label{
+ font: bold 100% Georgia, "Times New Roman", Times, serif;
+ color: #334d55;
+}
+
+p{
+	font-size: 95%;
+	color: Black;
+}				
+
+/***********************************************/
+/* Layout Divs                                 */
+/***********************************************/
+
+#masthead{
+	display: none;
+}
+
+#menuBar{
+	display: none;
+}
+
+#printHead{
+	visibility: visible;
+	width: 100%;
+}
+
+#content{
+  float:none;
+  margin: 0;
+  padding: 0 3% 0 0;
+}
+
+
+/************* #breadCrumb styles *************/
+
+#breadCrumb{
+	display: none;
+}
+
+
+/************* #siteInfo styles ***************/
+
+#siteInfo{ display: none; }
+
+
+/************ Green Bag Class Styles for content formatting ******/
+
+.articleTitle {
+ font-size: 118%;
+ color: #333;
+ font-weight: bold;
+ text-align: center;
+ line-height: 120%;
+}
+
+.articleCite {
+ font-size: 105%;
+ color: #333;	
+ text-align: center;
+}
+
+#updated {
+font-size: 85%;
+text-decoration: none;
+color: #666;
+text-align: right;
+}
+
+#catch_this { display: none; }
+
+.smallCaps {
+	font-variant: small-caps;
+}

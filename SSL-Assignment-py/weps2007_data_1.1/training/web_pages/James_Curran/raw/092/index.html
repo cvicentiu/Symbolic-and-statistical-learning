@@ -1,0 +1,3964 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+<link rel="alternate" title="Devx: Latest Published Articles" href="http://services.devx.com/outgoing/devxfeed.xml" type="application/rss+xml">
+<link rel="alternate" title="DevX: Latest Java Articles" href="http://services.devx.com/outgoing/javafeed.xml" type="application/rss+xml">
+<link rel="alternate" title="DevX: Latest .NET Content" href="http://services.devx.com/outgoing/dotnet.xml" type="application/rss+xml">
+<link rel="alternate" title="DevX: Latest XML Content" href="http://services.devx.com/outgoing/xmlfeed.xml" type="application/rss+xml">
+<link rel="alternate" title="DevX: Latest Database Content" href="http://services.devx.com/outgoing/databasefeed.xml" type="application/rss+xml">
+<link rel="alternate" title="DevX: Latest Enterprise Content" href="http://services.devx.com/outgoing/enterprisefeed.xml" type="application/rss+xml">
+<link rel="alternate" title="DevX: Latest C++ Content" href="http://services.devx.com/outgoing/cplusfeed.xml" type="application/rss+xml">
+<link rel="alternate" title="DevX: Latest Web Development Content" href="http://services.devx.com/outgoing/webdevfeed.xml" type="application/rss+xml">
+<link rel="alternate" title="DevX: Latest Wireless Content" href="http://services.devx.com/outgoing/wirelessfeed.xml" type="application/rss+xml">
+<link rel="alternate" title="DevX: Recent Tips" href="http://services.devx.com/outgoing/recentTipsFeed.xml" type="application/rss+xml">
+<link rel="alternate" title="DevX: Open Source Articles" href="http://services.devx.com/outgoing/openSourceFeed.xml" type="application/rss+xml">
+<link rel="alternate" title="DevX: Premier Club Only Content" href="http://services.devx.com/outgoing/PCpreviewFeed.xml" type="application/rss+xml">
+<link rel="alternate" title="DevX: Office Professional Developer" href="http://services.devx.com/outgoing/officefeed.xml" type="application/rss+xml">
+<link rel="alternate" title="DevX: Intel Optimizing Center" href="http://services.devx.com/outgoing/intelOptimizingCenterFeed.xml" type="application/rss+xml">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Access Raw Data with Performance Counters in Visual C++</title>
+<link rel="stylesheet" type="text/css" href="cps.css"> <link rel="stylesheet" type="text/css" href="devxstyles.css">
+<meta name="keywords" content="" />
+<meta name="Description" content="Though Windows allows you direct access to performance data, using the native C API is unwieldy. James Curran explains a few C++ techniques to help make it more manageable." />
+<meta name="Topic" content="677 Visual C++ -- Products and Technologies :: Development Enviroments (IDEs) :: Visual Studio :: Visual C++" />
+<script language="javascript" src="globalFuncs.js"></script></head>
+<body topmargin="2" marginheight="2">
+
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+
+		
+		
+	
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+OAS_url = 'http://mjxads.devx.com/RealMedia/ads/';
+OAS_sitepage = 'devx/cplus/677/7951';
+OAS_listpos = 'house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2';
+OAS_query = '';
+OAS_target = '_top';
+OAS_version = 10;
+OAS_rn = '001234567890'; OAS_rns = '1234567890';
+OAS_rn = new String (Math.random()); OAS_rns = OAS_rn.substring (2, 11);
+function OAS_NORMAL(pos) {
+var_a=('<A HREF="' + OAS_url + 'click_nx.cgi/' + OAS_sitepage );
+var_b=(var_a + '/1' + OAS_rns + '@' + OAS_listpos + '!' + pos + '?' );
+var_c=(var_b+ OAS_query + '" TARGET=' + OAS_target + '>');
+document.write(var_c);
+var_aa=('<IMG SRC="' + OAS_url + 'adstream_nx.cgi/' + OAS_sitepage ); 
+var_bb=( var_aa + '/1' + OAS_rns + '@' + OAS_listpos + '!' + pos + '?');
+var_cc=( var_bb + OAS_query + '" BORDER=0></A>');
+document.write(var_cc);
+}
+//-->
+</SCRIPT>
+
+<SCRIPT LANGUAGE=JavaScript1.1>
+<!--
+function OAS_RICH( pos )
+{
+	document.write( OAS_sitepage + ": " + pos );
+}
+OAS_version = 11;
+if (navigator.userAgent.indexOf('Mozilla/3') != -1 )
+	OAS_version = 10;
+if (navigator.userAgent.indexOf('Mozilla/4.0 WebTV') != -1)
+	OAS_version = 10;
+if (OAS_version >= 11) 
+{
+	var_aaa = '<SCRIPT LANGUAGE=JavaScript1.1 SRC="' + OAS_url; 
+	var_aaa+= 'adstream_mjx.ads/' + OAS_sitepage + '/1'; 
+	var_aaa+= OAS_rns + '@' + OAS_listpos + '?' + OAS_query ;
+	var_aaa+= '"><\/SCRIPT>';
+	document.write(var_aaa);
+}
+//-->
+</SCRIPT>
+
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+document.write('');
+function OAS_AD(pos) 
+{
+	if (OAS_version >= 11)
+		OAS_RICH(pos);
+	else
+		OAS_NORMAL(pos);
+}
+//-->
+</SCRIPT> 
+
+
+<!-- OAS ad tag start -->
+
+<div align="center" class="" style="margin-top: 0px; margin-bottom: 5px; width:799px;">
+
+
+<div><img src="http://assets.devx.com/HPAssets/2228.gif" border="0" align="top" vspace="0" hspace="0" width="0" vspace="0" height="0" alt="advertisement"></div>
+
+<table width="100%" align="center" style="margin-top: 0px;" width="100%">
+<tr><td valign="top">
+
+<table align="center" width="100%">
+<tr><td align="center" width="100%">
+
+<!-- ---- OAS AD 'house_ribbon' begin ---- -->
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+OAS_AD('house_ribbon');
+//-->
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://63.236.18.118/RealMedia/ads/click_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!house_ribbon" >
+<IMG SRC="http://63.236.18.118/RealMedia/ads/adstream_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!house_ribbon" border="0">
+</A> 
+</NOSCRIPT>
+<!-- ---- OAS AD '120x60-1' end ---- -->
+
+
+</td></tr>
+</table>
+
+</td></tr>
+</table>
+
+
+</div>
+
+<!-- OAS ad tag end -->
+
+
+		
+	
+
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+
+		
+		
+<!-- OAS ad tag start -->
+
+<div align="center" class="" style="margin-top: 0px; margin-bottom: 0px; width:799px;">
+
+
+<div><img src="http://assets.devx.com/devx/3174.gif" border="0" align="top" vspace="0" hspace="0" width="108" vspace="0" height="9" alt="advertisement"></div>
+
+<table width="100%" align="center" style="margin-top: 0px;">
+<tr><td valign="top">
+
+<table cellspacing="0" cellpadding="5" border="0" background="3173.gif" align="center">
+<tr><td >
+
+<!-- ---- OAS AD '468x60-1' begin ---- -->
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+OAS_AD('468x60-1');
+//-->
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://63.236.18.118/RealMedia/ads/click_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!468x60-1" >
+<IMG SRC="http://63.236.18.118/RealMedia/ads/adstream_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!468x60-1" border="0">
+</A> 
+</NOSCRIPT>
+<!-- ---- OAS AD '120x60-1' end ---- -->
+
+
+</td></tr>
+</table>
+
+</td></tr>
+</table>
+
+
+</div>
+
+<!-- OAS ad tag end -->
+
+
+		
+	
+
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+		
+		
+			
+			
+			
+			
+				
+			
+			
+			
+			
+			
+				<!-- cache: WT87_W3228v6  02/15/2007 10:57:31 --><!-- (3228) - start 2 col layout: Exp DevX Bottom Logo w/ Search -->
+
+  
+  <table cellspacing="0" cellpadding="0" border="0" width="100%" >
+  	<tr>
+		<td width="317" valign="top" style="padding-top:10px;">
+<div>
+	
+	
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+		
+		
+			
+			
+			
+			
+				
+			
+			
+			
+			
+			
+				<!-- cache: WT86_W3400v1  02/15/2007 10:57:31 --><!-- start imagelink -->
+
+	
+	
+	
+	<div><a href="http://www.devx.com/DevX/Door/6947" ><img src="http://assets.devx.com/devx/7819.gif" border="0" height="70" vspace="0" hspace="0" width="317" alt=""></a></div>
+	
+	
+<!-- end imagelink -->
+
+			
+		
+	
+
+</div> 
+				
+			<div style="margin-top:0">
+	
+	
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+		
+		
+			
+			
+			
+			
+				
+			
+			
+			
+			
+			
+				<!-- cache: WT86_W3401v1  02/15/2007 10:57:31 --><!-- start imagelink -->
+
+	
+	
+	
+	<div><a href="http://www.devx.com/DevX/Door/6947" ><img src="http://assets.devx.com/devx/7820.gif" border="0" height="11" vspace="0" hspace="0" width="161" alt=""></a></div>
+	
+	
+<!-- end imagelink -->
+
+			
+		
+	
+
+</div> 	
+		  </td>
+		  <td width="100%"  valign="top" style="padding-top:10px;">
+		<div>
+	
+	
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+
+		
+		
+	<table  cellspacing="0" cellpadding="0" width="100%"  height="20"><tr><td  valign="top" align="right" nowrap>
+
+	<span class="articleNav">Welcome, Guest!</span>
+	&nbsp;&nbsp;&nbsp;
+	<a href="https://www.devx.com/DevX/Site/6196/0?url=http://www.devx.com/cplus/Article/7951" class="basiclink">DevX Log In</a>
+	|
+	<a href="https://www.devx.com/premier/Door/17532/0?url=http://www.devx.com/cplus/Article/7951" class="basiclink">Premier Club Log In/Registration</a>
+</tr></td></table>
+
+		
+	
+
+</div> 
+				
+			<div style="margin-top:0">
+	
+	
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+		
+		
+			
+			
+			
+			
+				
+			
+			
+			
+			
+			
+				<!-- cache: WT169_W1924v3  02/15/2007 10:57:31 -->
+<script language="javascript">
+	function validQuery(  )
+	{
+		var theQuery = document.searchForm.q.value;
+		theQuery = theQuery.replace( /[^a-zA-Z0-9]/g, "" );
+		return theQuery.length > 0;
+	}
+</script>
+
+<table cellspacing="0" cellpadding="0" border="0" width="100%" style="margin-bottom: 0px;">
+<tr>
+  <td height="30" width="1%"><img src="http://assets.devx.com/devx/7821.gif" height="30" width="105" border="0"></td>
+  <td height="30" width="99%" bgcolor="#000099" style="color: yellow;font-weight: bold;font-size:10px;" nowrap>
+    <form action="http://search.devx.com/search.cfm" method="GET" style="margin-top:0px;margin-bottom:0px;" name="searchForm" onSubmit="return validQuery();">
+      &nbsp;&nbsp;<input style="font-size: 10px;" type="text" name="q" size="40" maxlength="255" value="">
+      <input style="font-size: 10px;margin-top:0px;margin-bottom:0px;" type="checkBox" name="i" value="yes">Include Code&nbsp;&nbsp;
+      <input name="sa" type="image" border="0" src="3386.gif" align="absmiddle">
+	  <a href="http://www.devx.com/DevX/HTML/11715" class="promotext"><U>Search Tips</U></a>
+  </td>
+    <input type="hidden" name="a" value="1"><input type="hidden" name="f" value="1"><input type="hidden" name="s" value="0"></form>
+</tr>
+</table>
+
+			
+		
+	
+
+</div> <div style="margin-top:0">
+	
+	
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+		
+		
+			
+			
+			
+			
+				
+			
+			
+			
+			
+			
+				<!-- cache: WT90_W3141v2_S6946v2066  02/26/2007 05:39:29 -->
+
+
+<table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFE48E" style="border-bottom:#000099 solid 2px;border-right:#000099 solid 2px;margin-bottom:3px;"  height="20">
+	<tr>
+		
+		
+		<td class="helptext" align="center" nowrap>
+		
+			
+			
+			
+			
+				
+				<a href="http://www.devx.com/DevXNews/LegacyLink/17996"  class="helptext">TODAY'S&nbsp;HEADLINES</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+			
+		
+			
+			
+			
+			
+				
+				<a href="http://www.devx.com/DevX/Door/18001"  class="helptext">ARTICLE&nbsp;ARCHIVE</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+			
+		
+			
+			
+			
+			
+				
+				<a href="http://www.devx.com/DevX/LegacyLink/7038"  class="helptext">SKILLBUILDING</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+			
+		
+			
+			
+			
+			
+				
+				<a href="http://www.devx.com/tips/vtBrowser/20528"  class="helptext">TIP&nbsp;BANK</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+			
+		
+			
+			
+			
+			
+				
+				<a href="http://www.devx.com/DevX/LegacyLink/8142"  class="helptext">SOURCEBANK</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+			
+		
+			
+			
+			
+			
+				
+				<a href="http://www.devx.com/ForumsvBulletin/LegacyLink/7032"  class="helptext">FORUMS</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+			
+		
+			
+			
+			
+			
+				
+				<a href="http://www.devx.com/DevX/EmailSignupForm/17709"  class="helptext">NEWSLETTERS</a>
+			
+		
+		
+		</td>
+	</tr>
+</table>
+
+
+			
+		
+	
+
+</div> 		
+		</td>
+	</tr>
+  </table>
+  
+
+<!-- end 2 col layout -->
+
+
+			
+		
+	
+
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+		
+		
+			
+			
+			
+			
+				
+			
+			
+			
+			
+			
+				<!-- cache: WT87_W1766v11  10/19/2006 02:30:44 --><!-- (1766) - start 2 col layout: DevX Left Nav & Article Holder -->
+
+  
+  <table cellspacing="0" cellpadding="0" border="0" width="100%">
+  	<tr>
+		<td width="161" valign="top">
+<div>
+	
+	
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+		
+		
+			
+			
+			
+			
+				
+			
+			
+			
+			
+			
+				<!-- cache: WT167_W1897v9  02/26/2007 06:44:13 -->
+<!-- (me.data_.widget_id) - start Bordered Box: Browse Devx Bordered Box -->
+<table cellspacing="0" cellpadding="0" border="0" width="161" >
+	
+	<tr>
+		<td >
+			
+	
+	
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+		
+		
+			
+			
+			
+			
+				
+			
+			
+			
+			
+			
+				<!-- cache: WT85_W3508v1  02/26/2007 06:44:13 --><div><img src="http://assets.devx.com/devx/9113.gif" border="0" align="top" vspace="0" hspace="0" height="20" width="161" alt="Browse DevX" align=""></div>
+			
+		
+	
+
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+		
+		
+			
+			
+			
+			
+				
+			
+			
+			
+			
+			
+				<!-- cache: WT230_W6145v2_S6946v2066  02/26/2007 06:44:13 -->
+<!-- START TEXT MENU -->
+
+
+<script type="text/javascript">
+function shownav(f,pos,size)
+ {
+    if(f){visi="visible";}
+		else{visi="hidden";}
+    for(var i = 0; i < size; i++)
+		{
+       if(i == pos)
+			 {if(document.getElementById){document.getElementById("navbar"+pos).style.visibility=visi;}}
+			 else
+			 {if(document.getElementById){document.getElementById("navbar"+i).style.visibility="hidden";}}
+    }
+ }
+</script>
+
+
+
+<!-- LOAD HIDDEN SUB MENUS -->
+<div align="left" class="" style="width:157px; border-left:2px solid #000099; border-right:2px solid #000099; background-color:#FFE48E;"> 
+		  
+		  <div style="width:157px; position: relative; top: 0px; left: 150px; text-align: left;">
+		  <div class="navbar" onmouseout="shownav(0,0,20)" onmouseover="shownav(1,0,20)" id="navbar0" style="width:157px; border-top: 1px solid #ff6600; border-right: 1px solid #ff6600; border-left: 1px solid #ff6600; border-left: 1px solid #ff6600; background-color: #ffffff; position: absolute; left: 5px; visibility: hidden; padding:0px; opacity: 100; filter:alpha(opacity=100); width: 150px;">		
+		  <a href="http://www.devx.com/amd/Door/16009">AMD64 DevSource</a><a href="http://www.devx.com/avaya/Door/30219">Avaya DeveloperConnection Center</a><a href="http://www.devx.com/MicrosoftISV/Door/6421">Destination .NET</a><a href="http://www.devx.com/ibm/Door/6836">DevX Skillbuilding from IBM developerWorks </a><a href="http://www.devx.com/OnDemandDemos/Door/30314">IBM developerWorks On-Demand Demos</a><a href="http://www.devx.com/ibm/Door/30485">IBM Rational Tools and Learning Showcase</a><a href="http://www.devx.com/go-parallel/Door/32532">Intel Go Parallel Portal</a><a href="http://www.devx.com/vstudioextensibility/Door/30956">Microsoft Visual Studio Extensibility</a></div></div>
+		  
+		  			
+			
+
+		  
+		  <div style="width:157px; position: relative; top: 17px; left: 150px; text-align: left;">
+		  <div class="navbar" onmouseout="shownav(0,1,20)" onmouseover="shownav(1,1,20)" id="navbar1" style="width:157px; border-top: 1px solid #ff6600; border-right: 1px solid #ff6600; border-left: 1px solid #ff6600; border-left: 1px solid #ff6600; background-color: #ffffff; position: absolute; left: 5px; visibility: hidden; padding:0px; opacity: 100; filter:alpha(opacity=100); width: 150px;">		
+		  <a href="http://www.devx.com/AvicodeVS/Door/33701">AVIcode .NET Application Manageability and Monitoring Resource Center--</a><a href="http://www.devx.com/DevX/Link/33481">Oracle eBook: Securing Linux Systems for the Enterprise</a><a href="http://www.devx.com/BMCSC/Door/33217">BMC AppSight Solution Center </a><a href="http://www.devx.com/IronSpeedVS/Door/17479">Iron Speed Web Application Development Center</a><a href="http://www.devx.com/CrystalDecisionsVS/Door/29625">Business Objects--Crystal Reports Server</a><a href="http://www.devx.com/eFaxVS/Door/33323">eFax Developer Download Center </a></div></div>
+		  
+		  			
+			
+
+		  
+		  <div style="width:157px; position: relative; top: 34px; left: 150px; text-align: left;">
+		  <div class="navbar" onmouseout="shownav(0,2,20)" onmouseover="shownav(1,2,20)" id="navbar2" style="width:157px; border-top: 1px solid #ff6600; border-right: 1px solid #ff6600; border-left: 1px solid #ff6600; border-left: 1px solid #ff6600; background-color: #ffffff; position: absolute; left: 5px; visibility: hidden; padding:0px; opacity: 100; filter:alpha(opacity=100); width: 150px;">		
+		  <a href="http://www.devx.com/DevX/Link/32057">Jupiterweb Webcasts</a></div></div>
+		  
+		  			
+			
+  
+		
+
+		  
+		  <div style="width:157px; position: relative; top: 68px; left: 150px; text-align: left;">
+		  <div class="navbar" onmouseout="shownav(0,3,20)" onmouseover="shownav(1,3,20)" id="navbar3" style="width:157px; border-top: 1px solid #ff6600; border-right: 1px solid #ff6600; border-left: 1px solid #ff6600; border-left: 1px solid #ff6600; background-color: #ffffff; position: absolute; left: 5px; visibility: hidden; padding:0px; opacity: 100; filter:alpha(opacity=100); width: 150px;">		
+		  <a href="http://www.devx.com/dotnet/Door/7040">.NET Zone</a><a href="http://www.devx.com/ForumsvBulletin/LegacyLink/17927">.NET Forum</a><a href="http://www.devx.com/codemag/Door/10169">CoDe Magazine</a><a href="http://www.devx.com/vb2themax/Door/18897">VB2theMax Archive</a><a href="http://www.devx.com/vstudioextensibility/Door/30956">Microsoft Visual Studio Extensibility</a><a href="http://www.devx.com/MicrosoftISV/Door/6421">Destination .NET</a></div></div>
+		  
+		  			
+			
+
+		  
+		  <div style="width:157px; position: relative; top: 85px; left: 150px; text-align: left;">
+		  <div class="navbar" onmouseout="shownav(0,4,20)" onmouseover="shownav(1,4,20)" id="navbar4" style="width:157px; border-top: 1px solid #ff6600; border-right: 1px solid #ff6600; border-left: 1px solid #ff6600; border-left: 1px solid #ff6600; background-color: #ffffff; position: absolute; left: 5px; visibility: hidden; padding:0px; opacity: 100; filter:alpha(opacity=100); width: 150px;">		
+		  <a href="http://www.devx.com/amd/Door/16009">AMD64 DevSource</a><a href="http://www.devx.com/Java/Door/6972">Java Zone</a><a href="http://www.devx.com/Java/Link/22609">Java Boutique</a><a href="http://www.devx.com/ForumsvBulletin/LegacyLink/17921">Java Forum</a><a href="http://www.devx.com/DevX/LegacyLink/8142">Source Bank</a><a href="http://www.devx.com/ibm/Door/30485">IBM Rational Tools and Learning Showcase</a><a href="http://www.devx.com/ibm/Door/6836">DevX Skillbuilding from IBM developerWorks</a></div></div>
+		  
+		  			
+			
+
+		  
+		  <div style="width:157px; position: relative; top: 102px; left: 150px; text-align: left;">
+		  <div class="navbar" onmouseout="shownav(0,5,20)" onmouseover="shownav(1,5,20)" id="navbar5" style="width:157px; border-top: 1px solid #ff6600; border-right: 1px solid #ff6600; border-left: 1px solid #ff6600; border-left: 1px solid #ff6600; background-color: #ffffff; position: absolute; left: 5px; visibility: hidden; padding:0px; opacity: 100; filter:alpha(opacity=100); width: 150px;">		
+		  <a href="http://www.devx.com/amd/Door/16009">AMD64 DevSource</a><a href="http://www.devx.com/cplus/Door/7042">C++ Zone</a><a href="http://www.devx.com/ForumsvBulletin/LegacyLink/17917">C++ Forum</a><a href="http://www.devx.com/DevX/LegacyLink/8142">Source Bank</a><a href="http://www.devx.com/go-parallel/Door/32532">Intel Go Parallel Portal</a><a href="http://www.devx.com/MicrosoftISV/Door/6421">Destination .NET</a></div></div>
+		  
+		  			
+			
+
+		  
+		  <div style="width:157px; position: relative; top: 119px; left: 150px; text-align: left;">
+		  <div class="navbar" onmouseout="shownav(0,6,20)" onmouseover="shownav(1,6,20)" id="navbar6" style="width:157px; border-top: 1px solid #ff6600; border-right: 1px solid #ff6600; border-left: 1px solid #ff6600; border-left: 1px solid #ff6600; background-color: #ffffff; position: absolute; left: 5px; visibility: hidden; padding:0px; opacity: 100; filter:alpha(opacity=100); width: 150px;">		
+		  <a href="http://www.devx.com/webdev/Door/7048">Web Development Zone</a><a href="http://www.devx.com/projectcool/Door/7051">Project Cool</a><a href="http://www.devx.com/ForumsvBulletin/LegacyLink/17926">Web Development Forum</a><a href="http://www.devx.com/ForumsvBulletin/LegacyLink/30952">AJAX Forum</a><a href="http://www.devx.com/ibm/Door/30485">IBM Rational Tools and Learning Showcase</a><a href="http://www.devx.com/ibm/Door/6836">DevX Skillbuilding from IBM developerWorks</a><a href="http://www.devx.com/avaya/Door/30219">Avaya DeveloperConnection Center</a></div></div>
+		  
+		  			
+			
+
+		  
+		  <div style="width:157px; position: relative; top: 136px; left: 150px; text-align: left;">
+		  <div class="navbar" onmouseout="shownav(0,7,20)" onmouseover="shownav(1,7,20)" id="navbar7" style="width:157px; border-top: 1px solid #ff6600; border-right: 1px solid #ff6600; border-left: 1px solid #ff6600; border-left: 1px solid #ff6600; background-color: #ffffff; position: absolute; left: 5px; visibility: hidden; padding:0px; opacity: 100; filter:alpha(opacity=100); width: 150px;">		
+		  <a href="http://www.devx.com/architect/Door/7046">Architecture Zone</a><a href="http://www.devx.com/ForumsvBulletin/LegacyLink/30951">Architect and Design Forum</a><a href="http://www.devx.com/ibm/Door/30485">IBM Rational Tools and Learning Showcase</a></div></div>
+		  
+		  			
+			
+
+		  
+		  <div style="width:157px; position: relative; top: 153px; left: 150px; text-align: left;">
+		  <div class="navbar" onmouseout="shownav(0,8,20)" onmouseover="shownav(1,8,20)" id="navbar8" style="width:157px; border-top: 1px solid #ff6600; border-right: 1px solid #ff6600; border-left: 1px solid #ff6600; border-left: 1px solid #ff6600; background-color: #ffffff; position: absolute; left: 5px; visibility: hidden; padding:0px; opacity: 100; filter:alpha(opacity=100); width: 150px;">		
+		  <a href="http://www.devx.com/dbzone/Door/7022">Database Development Zone</a><a href="http://www.devx.com/ForumsvBulletin/LegacyLink/17925">Database Forum</a><a href="http://www.devx.com/ibm/Door/6836">DevX Skillbuilding from IBM developerWorks</a></div></div>
+		  
+		  			
+			
+
+		  
+		  <div style="width:157px; position: relative; top: 170px; left: 150px; text-align: left;">
+		  <div class="navbar" onmouseout="shownav(0,9,20)" onmouseover="shownav(1,9,20)" id="navbar9" style="width:157px; border-top: 1px solid #ff6600; border-right: 1px solid #ff6600; border-left: 1px solid #ff6600; border-left: 1px solid #ff6600; background-color: #ffffff; position: absolute; left: 5px; visibility: hidden; padding:0px; opacity: 100; filter:alpha(opacity=100); width: 150px;">		
+		  <a href="http://www.devx.com/security/Door/7045">Security Zone</a><a href="http://www.devx.com/ForumsvBulletin/LegacyLink/17919">Security Forum</a></div></div>
+		  
+		  			
+			
+
+		  
+		  <div style="width:157px; position: relative; top: 187px; left: 150px; text-align: left;">
+		  <div class="navbar" onmouseout="shownav(0,10,20)" onmouseover="shownav(1,10,20)" id="navbar10" style="width:157px; border-top: 1px solid #ff6600; border-right: 1px solid #ff6600; border-left: 1px solid #ff6600; border-left: 1px solid #ff6600; background-color: #ffffff; position: absolute; left: 5px; visibility: hidden; padding:0px; opacity: 100; filter:alpha(opacity=100); width: 150px;">		
+		  <a href="http://www.devx.com/opensource/Door/7044">Open Source Zone</a><a href="http://www.devx.com/ibm/Door/6836">DevX Skillbuilding from IBM developerWorks</a></div></div>
+		  
+		  			
+			
+
+		  
+		  <div style="width:157px; position: relative; top: 204px; left: 150px; text-align: left;">
+		  <div class="navbar" onmouseout="shownav(0,11,20)" onmouseover="shownav(1,11,20)" id="navbar11" style="width:157px; border-top: 1px solid #ff6600; border-right: 1px solid #ff6600; border-left: 1px solid #ff6600; border-left: 1px solid #ff6600; background-color: #ffffff; position: absolute; left: 5px; visibility: hidden; padding:0px; opacity: 100; filter:alpha(opacity=100); width: 150px;">		
+		  <a href="http://www.devx.com/xml/Door/7050">XML Zone</a><a href="http://www.devx.com/ForumsvBulletin/LegacyLink/17924">XML Forum</a><a href="http://www.devx.com/ibm/Door/30485">IBM Rational Tools and Learning Showcase</a></div></div>
+		  
+		  			
+			
+
+		  
+		  <div style="width:157px; position: relative; top: 221px; left: 150px; text-align: left;">
+		  <div class="navbar" onmouseout="shownav(0,12,20)" onmouseover="shownav(1,12,20)" id="navbar12" style="width:157px; border-top: 1px solid #ff6600; border-right: 1px solid #ff6600; border-left: 1px solid #ff6600; border-left: 1px solid #ff6600; background-color: #ffffff; position: absolute; left: 5px; visibility: hidden; padding:0px; opacity: 100; filter:alpha(opacity=100); width: 150px;">		
+		  <a href="http://www.devx.com/vb/Door/7047">VB Zone</a><a href="http://www.devx.com/FreeVBCode/LegacyLink/18165">FreeVBCode.com</a><a href="http://www.devx.com/ForumsvBulletin/LegacyLink/17914">VB Classic Forum</a><a href="http://www.devx.com/vb2themax/Door/18897">VB2theMax Archive</a><a href="http://www.devx.com/MicrosoftISV/Door/6421">Destination .NET</a><a href="http://www.devx.com/vstudioextensibility/Door/30956">Microsoft Visual Studio Extensibility</a></div></div>
+		  
+		  			
+			
+
+		  
+		  <div style="width:157px; position: relative; top: 238px; left: 150px; text-align: left;">
+		  <div class="navbar" onmouseout="shownav(0,13,20)" onmouseover="shownav(1,13,20)" id="navbar13" style="width:157px; border-top: 1px solid #ff6600; border-right: 1px solid #ff6600; border-left: 1px solid #ff6600; border-left: 1px solid #ff6600; background-color: #ffffff; position: absolute; left: 5px; visibility: hidden; padding:0px; opacity: 100; filter:alpha(opacity=100); width: 150px;">		
+		  <a href="http://www.devx.com/asp/Door/7041">ASP Zone</a><a href="http://www.devx.com/ForumsvBulletin/LegacyLink/17923">ASP.NET Forum</a><a href="http://www.devx.com/MicrosoftISV/Door/6421">Destination .NET</a></div></div>
+		  
+		  			
+			
+
+		  
+		  <div style="width:157px; position: relative; top: 255px; left: 150px; text-align: left;">
+		  <div class="navbar" onmouseout="shownav(0,14,20)" onmouseover="shownav(1,14,20)" id="navbar14" style="width:157px; border-top: 1px solid #ff6600; border-right: 1px solid #ff6600; border-left: 1px solid #ff6600; border-left: 1px solid #ff6600; background-color: #ffffff; position: absolute; left: 5px; visibility: hidden; padding:0px; opacity: 100; filter:alpha(opacity=100); width: 150px;">		
+		  <a href="http://www.devx.com/enterprise/Door/7043">Enterprise Zone</a><a href="http://www.devx.com/ForumsvBulletin/LegacyLink/30951">Architect and Design Forum</a><a href="http://www.devx.com/amd/Door/16009">AMD64 DevSource</a><a href="http://www.devx.com/avaya/Door/30219">Avaya DeveloperConnection Center</a><a href="http://www.devx.com/ibm/Door/30485">IBM Rational Tools and Learning Showcase</a></div></div>
+		  
+		  			
+			
+
+		  
+		  <div style="width:157px; position: relative; top: 272px; left: 150px; text-align: left;">
+		  <div class="navbar" onmouseout="shownav(0,15,20)" onmouseover="shownav(1,15,20)" id="navbar15" style="width:157px; border-top: 1px solid #ff6600; border-right: 1px solid #ff6600; border-left: 1px solid #ff6600; border-left: 1px solid #ff6600; background-color: #ffffff; position: absolute; left: 5px; visibility: hidden; padding:0px; opacity: 100; filter:alpha(opacity=100); width: 150px;">		
+		  <a href="http://www.devx.com/wireless/Door/7049">Wireless Zone</a><a href="http://www.devx.com/ForumsvBulletin/LegacyLink/17918">Wireless Forum</a><a href="http://www.devx.com/avaya/Door/30219">Avaya DeveloperConnection Center</a></div></div>
+		  
+		  			
+			
+  
+		
+
+		  
+		  <div style="width:157px; position: relative; top: 306px; left: 150px; text-align: left;">
+		  <div class="navbar" onmouseout="shownav(0,16,20)" onmouseover="shownav(1,16,20)" id="navbar16" style="width:157px; border-top: 1px solid #ff6600; border-right: 1px solid #ff6600; border-left: 1px solid #ff6600; border-left: 1px solid #ff6600; background-color: #ffffff; position: absolute; left: 5px; visibility: hidden; padding:0px; opacity: 100; filter:alpha(opacity=100); width: 150px;">		
+		  <a href="http://www.devx.com/getHelpOn/Door/10670">C++</a><a href="http://www.devx.com/getHelpOn/Door/10677">Java</a><a href="http://www.devx.com/getHelpOn/Door/10679">DHTML</a><a href="http://www.devx.com/getHelpOn/Door/10671">SQL Server</a><a href="http://www.devx.com/getHelpOn/Door/10672">Oracle</a><a href="http://www.devx.com/getHelpOn/Door/10673">DB2</a><a href="http://www.devx.com/getHelpOn/Door/10678">VB Classic</a><a href="http://www.devx.com/getHelpOn/Door/10676">XML</a></div></div>
+		  
+		  			
+			
+
+		  
+		  <div style="width:157px; position: relative; top: 323px; left: 150px; text-align: left;">
+		  <div class="navbar" onmouseout="shownav(0,17,20)" onmouseover="shownav(1,17,20)" id="navbar17" style="width:157px; border-top: 1px solid #ff6600; border-right: 1px solid #ff6600; border-left: 1px solid #ff6600; border-left: 1px solid #ff6600; background-color: #ffffff; position: absolute; left: 5px; visibility: hidden; padding:0px; opacity: 100; filter:alpha(opacity=100); width: 150px;">		
+		  <a href="http://www.devx.com/Jupitermedia/Link/20835">Menuing Software</a></div></div>
+		  
+		  			
+			
+
+		  
+		  <div style="width:157px; position: relative; top: 340px; left: 150px; text-align: left;">
+		  <div class="navbar" onmouseout="shownav(0,18,20)" onmouseover="shownav(1,18,20)" id="navbar18" style="width:157px; border-top: 1px solid #ff6600; border-right: 1px solid #ff6600; border-left: 1px solid #ff6600; border-left: 1px solid #ff6600; background-color: #ffffff; position: absolute; left: 5px; visibility: hidden; padding:0px; opacity: 100; filter:alpha(opacity=100); width: 150px;">		
+		  <a href="http://www.devx.com/DevX/LegacyLink/7035">Shop DevX</a></div></div>
+		  
+		  			
+			
+
+		  
+		  <div style="width:157px; position: relative; top: 357px; left: 150px; text-align: left;">
+		  <div class="navbar" onmouseout="shownav(0,19,20)" onmouseover="shownav(1,19,20)" id="navbar19" style="width:157px; border-top: 1px solid #ff6600; border-right: 1px solid #ff6600; border-left: 1px solid #ff6600; border-left: 1px solid #ff6600; background-color: #ffffff; position: absolute; left: 5px; visibility: hidden; padding:0px; opacity: 100; filter:alpha(opacity=100); width: 150px;">		
+		  <a href="http://www.devx.com/premierclub/LegacyLink/7036">Premier Club</a></div></div>
+		  
+		  			
+			
+
+		  
+		  <div style="width:157px; position: relative; top: 374px; left: 150px; text-align: left;">
+		  <div class="navbar" onmouseout="shownav(0,20,20)" onmouseover="shownav(1,20,20)" id="navbar20" style="width:157px; border-top: 1px solid #ff6600; border-right: 1px solid #ff6600; border-left: 1px solid #ff6600; border-left: 1px solid #ff6600; background-color: #ffffff; position: absolute; left: 5px; visibility: hidden; padding:0px; opacity: 100; filter:alpha(opacity=100); width: 150px;">		
+		  <a href="http://www.devx.com/DevX/Link/32286">APIFinder</a></div></div>
+		  
+		  			
+			
+</div>
+
+<!-- DISPLAY TOP LEVEL MENUS --> <div align="left" class="" style="width:157px; border-left:2px solid #000099; border-right:2px solid #000099; background-color:#FFE48E;"> 
+	
+<table width="157" border="0" cellspacing="0" cellpadding="0">
+   
+  <tr><td id="navi_button"><a href="http://www.devx.com/DevX/Door/16238" onmouseover="shownav(1,0,20)" onmouseout="shownav(0,0,20)">Specialized Dev Zones</a></td></tr> 
+<tr><td id="navi_button"><a href="http://www.devx.com/DevX/Door/30751" onmouseover="shownav(1,1,20)" onmouseout="shownav(0,1,20)">Vendor Solutions</a></td></tr> 
+<tr><td id="navi_button"><a href="http://www.devx.com/DevX/Link/32057" onmouseover="shownav(1,2,20)" onmouseout="shownav(0,2,20)">Webcasts</a></td></tr> 
+ </table>
+  
+    
+  
+  
+  
+  <img src="http://assets.devx.com/devx/8603.gif" height="17" width="157" border="0">
+ 
+
+	
+<table width="157" border="0" cellspacing="0" cellpadding="0">
+   
+  
+  	<tr><td id="navi_button2"><a href="http://www.devx.com/dotnet/Door/7040" onmouseover="shownav(1,3,20)" onmouseout="shownav(0,3,20)">.NET</a></td></tr>
+  
+
+  	<tr><td id="navi_button2"><a href="http://www.devx.com/Java/Door/6972" onmouseover="shownav(1,4,20)" onmouseout="shownav(0,4,20)">Java</a></td></tr>
+  
+
+  	<tr><td id="navi_button2"><a href="http://www.devx.com/cplus/Door/7042" onmouseover="shownav(1,5,20)" onmouseout="shownav(0,5,20)">C++</a></td></tr>
+  
+
+  	<tr><td id="navi_button2"><a href="http://www.devx.com/webdev/Door/7048?trk=LeftNav" onmouseover="shownav(1,6,20)" onmouseout="shownav(0,6,20)">Web Dev</a></td></tr>
+  
+
+  	<tr><td id="navi_button2"><a href="http://www.devx.com/architect/Door/7046" onmouseover="shownav(1,7,20)" onmouseout="shownav(0,7,20)">Architecture</a></td></tr>
+  
+
+  	<tr><td id="navi_button2"><a href="http://www.devx.com/dbzone/Door/7022" onmouseover="shownav(1,8,20)" onmouseout="shownav(0,8,20)">Database</a></td></tr>
+  
+
+  	<tr><td id="navi_button2"><a href="http://www.devx.com/security/Door/7045" onmouseover="shownav(1,9,20)" onmouseout="shownav(0,9,20)">Security</a></td></tr>
+  
+
+  	<tr><td id="navi_button2"><a href="http://www.devx.com/opensource/Door/7044" onmouseover="shownav(1,10,20)" onmouseout="shownav(0,10,20)">Open Source</a></td></tr>
+  
+
+  	<tr><td id="navi_button2"><a href="http://www.devx.com/xml/Door/7050" onmouseover="shownav(1,11,20)" onmouseout="shownav(0,11,20)">XML</a></td></tr>
+  
+
+  	<tr><td id="navi_button2"><a href="http://www.devx.com/vb/Door/7047" onmouseover="shownav(1,12,20)" onmouseout="shownav(0,12,20)">VB Classic</a></td></tr>
+  
+
+  	<tr><td id="navi_button2"><a href="http://www.devx.com/asp/Door/7041" onmouseover="shownav(1,13,20)" onmouseout="shownav(0,13,20)">ASP/ASP.NET</a></td></tr>
+  
+
+  	<tr><td id="navi_button2"><a href="http://www.devx.com/enterprise/Door/7043" onmouseover="shownav(1,14,20)" onmouseout="shownav(0,14,20)">Enterprise</a></td></tr>
+  
+
+  	<tr><td id="navi_button2"><a href="http://www.devx.com/wireless/Door/7049" onmouseover="shownav(1,15,20)" onmouseout="shownav(0,15,20)">Wireless/Mobile</a></td></tr>
+  
+ </table>
+  
+  
+  
+  <img src="http://assets.devx.com/devx/8616.gif" height="17" width="157" border="0">
+ 
+
+	
+<table width="157" border="0" cellspacing="0" cellpadding="0">
+   
+  
+  	<tr><td id="navi_button2"><a href="http://www.devx.com/getHelpOn/Door/15766" onmouseover="shownav(1,16,20)" onmouseout="shownav(0,16,20)">10-Minute Solutions</a></td></tr>
+  
+
+  	<tr><td id="navi_button2"><a href="http://www.devx.com/Jupitermedia/Link/20835" onmouseover="shownav(1,17,20)" onmouseout="shownav(0,17,20)">Hiermenus</a></td></tr>
+  
+
+  	<tr><td id="navi_button2"><a href="http://www.devx.com/DevX/LegacyLink/7035" onmouseover="shownav(1,18,20)" onmouseout="shownav(0,18,20)">Shop DevX</a></td></tr>
+  
+
+  	<tr><td id="navi_button2"><a href="http://www.devx.com/premierclub/LegacyLink/7036" onmouseover="shownav(1,19,20)" onmouseout="shownav(0,19,20)">Premier Club</a></td></tr>
+  
+
+  	<tr><td id="navi_button2"><a href="http://www.devx.com/DevX/Link/32286" onmouseover="shownav(1,20,20)" onmouseout="shownav(0,20,20)">APIfinder</a></td></tr>
+  
+</table>
+</div> 
+<!-- END TEXT MENU -->
+
+
+			
+		
+	
+
+
+		</td>
+	</tr>
+	
+	<tr>
+		<td><img src="http://assets.devx.com/devx/9114.gif" height="23" width="161" border="0" align="top"></td>
+	</tr>
+	
+</table>
+
+
+			
+		
+	
+
+</div> 
+				
+			<div style="margin-top:20">
+	
+	
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+		
+		
+			
+			
+			
+			
+				
+			
+			
+			
+			
+			
+				<!-- cache: WT168_W1899v2_C7951v1  11/28/2005 02:25:14 -->
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	<table cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+		<td valign="top">
+			<div><img src="http://assets.devx.com/devx/3918.gif" height="31" width="164" border="0"></div>
+			<table  cellspacing="0" cellpadding="3" width="140" align="left" border="1" bordercolor="#ff6600" rules="none" frame="rhs" bgcolor="#FFFFFF">
+			<tr>
+			<td valign="top" bgcolor=""> 
+				<table border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td class="">
+						<a href="http://assets.devx.com/sourcecode/3561.zip" class="basiclink">Download the code for this article</a><BR>					
+					</td>
+				</tr>
+				</table>
+			</td>
+			</tr>
+			</table>
+		</td>
+	</tr>
+	</table>
+	
+
+
+			
+		
+	
+
+</div> <div style="margin-top:20">
+	
+	
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+
+		
+		
+
+
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+		<td valign="top"> 
+			<div><img src="http://assets.devx.com/devx/3406.gif" height="31" width="163" border="0" align="top"></div>
+			<table  cellspacing="0" cellpadding="3" width="140" align="left" border="1" bordercolor="#ff6600" rules="none" frame="rhs">
+				<tr>
+					<td  valign="top" bgcolor="#FFFFFF">
+					
+					
+					
+						
+						
+							
+						
+						<div class="smallfont" STYLE="margin-bottom:10;">
+						
+						<a href="http://www.devx.com/cplus/Link/7952"  target="_blank" class="basiclink">Smart Pointer Library</a>
+						</div>
+
+					
+					
+					
+					
+						
+						
+							
+						
+						<div class="smallfont" STYLE="margin-bottom:10;">
+						
+						<a href="http://www.devx.com/cplus/Link/7953"  target="_blank" class="basiclink">MSDN: Using Performance Monitoring</a>
+						</div>
+
+					
+					
+					
+					
+						
+						
+							
+						
+						<div class="smallfont" STYLE="margin-bottom:10;">
+						
+						<a href="http://www.devx.com/cplus/Link/7954"  target="_blank" class="basiclink">MSDN: The Visual C++ 6.0 Homepage</a>
+						</div>
+
+					
+					
+					
+					
+						
+						
+							
+						
+						<div class="smallfont" STYLE="margin-bottom:10;">
+						
+						<a href="http://www.devx.com/cplus/Door/7042"  class="basiclink"title="Your starting point for C++ programming, including answers to frequently-asked technical questions about C++, Get Help with C++, feature articles, links to the best C++ sites, and news about C++ tools and updates.">DevX: C++ Zone</a>
+						</div>
+
+					
+					
+					
+					
+						
+						
+							
+						
+						<div class="smallfont" STYLE="margin-bottom:10;">
+						
+						<a href="http://www.devx.com/DevX/LegacyLink/7028"  class="basiclink"title="To help you find the source code, algorithms, sample apps, and routines you need, DevX now offers two different repositories for source code downloads. The original Source Code Library and our new addition, Sourcebank. Try them both! ">DevX Source Code Library</a>
+						</div>
+
+					
+					
+					
+					
+						
+						
+							
+						
+						<div class="smallfont" STYLE="margin-bottom:10;">
+						
+						<a href="http://www.devx.com/cplus/LegacyLink/7955"  class="basiclink">Get Help with C++</a>
+						</div>
+
+					
+					
+					
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+
+
+
+		
+	
+
+</div> <div style="margin-top:20">
+	
+	
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+		
+		
+			
+			
+			
+			
+				
+			
+			
+			
+			
+			
+				<!-- cache: WT172_W2769v1_C7951v1  11/28/2005 02:25:14 -->
+	
+	
+	
+		
+		
+			
+				
+			
+			
+		
+	
+		
+		
+	
+		
+		
+	
+		
+		
+	
+	
+
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+	<td valign="top">
+		<div><img src="http://assets.devx.com/devx/5583.gif" height="31" width="163" border="0"></div>
+		<table  cellspacing="0" cellpadding="3" width="140" align="left" border="1" bordercolor="#ff6600" rules="none" frame="rhs">
+
+		
+		
+			
+
+		<tr>
+			<td  valign="top" bgcolor="#FFFFFF">
+				<a href="javascript:showSupportItem( 'boost' )" class="basiclink">Boost.org</a>
+			</td>
+		</tr>
+
+		
+
+		</table>
+	</td>
+</tr>
+</table>
+
+	
+
+
+			
+		
+	
+
+</div> <div style="margin-top:20">
+	
+	
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+		
+		
+			
+			
+			
+			
+				
+			
+			
+			
+			
+			
+				<!-- cache: WT171_W1952v1_C7951v1  11/28/2005 02:25:14 -->
+	
+		
+		
+	
+		
+		
+	
+		
+		
+	
+		
+		
+	
+
+
+			
+		
+	
+
+</div> <div style="margin-top:20">
+	
+	
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+		
+		
+			
+			
+			
+			
+				
+			
+			
+			
+			
+			
+				<!-- cache: WT166_W5242v3  10/19/2006 02:30:44 -->
+<table  cellspacing="0" cellpadding="0" border="0" width="164">
+	<tr>
+		<td valign="top"> 
+			<div><img src="http://assets.devx.com/devx/14015.gif" height="31" width="164" border="0" align="top"></div>
+			<table  cellspacing="0" cellpadding="3" width="164" align="left" style="border-right:1px #ff6600 solid;">
+				<tr>
+					<td >
+					
+	
+	
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+
+		
+		
+<!-- OAS ad tag start -->
+
+<table width="100%" >
+<tr><td valign="top">
+
+<!-- ---- OAS AD 'marketplace01' begin ---- -->
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+OAS_AD('marketplace01');
+//-->
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://63.236.18.118/RealMedia/ads/click_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!marketplace01" >
+<IMG SRC="http://63.236.18.118/RealMedia/ads/adstream_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!marketplace01" border="0">
+</A> 
+</NOSCRIPT>
+<!-- ---- OAS AD '120x60-1' end ---- -->
+
+
+</td></tr>
+</table>
+
+
+<!-- OAS ad tag end -->
+
+
+		
+	
+
+
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+
+
+
+			
+		
+	
+
+</div> <div style="margin-top:20">
+	
+	
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+		
+		
+			
+			
+			
+			
+				
+			
+			
+			
+			
+			
+				<!-- cache: WT166_W3291v6  02/15/2007 10:57:32 -->
+<table  cellspacing="0" cellpadding="0" border="0" width="164">
+	<tr>
+		<td valign="top"> 
+			<div><img src="http://assets.devx.com/devx/7463.gif" height="31" width="164" border="0" align="top"></div>
+			<table  cellspacing="0" cellpadding="3" width="140" align="left" style="border-right:1px #ff6600 solid;">
+				<tr>
+					<td valign="top" bgcolor="#FAFAE6">
+					
+	
+	
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+		
+		
+			
+			
+			
+			
+				
+			
+			
+			
+			
+			
+				<!-- cache: WT102_W3302v1  02/15/2007 10:57:32 -->
+
+
+
+
+
+<a  class="smallfont"   href="http://www.devx.com/Jupitermedia/Link/17875"  target="_blank">Partners &amp; Affiliates</a>
+
+
+			
+		
+	
+
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+
+		
+		
+<!-- OAS ad tag start -->
+
+<table width="100%" border="0" cellpadding="1" cellspacing="0">
+<tr><td valign="top">
+
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td class="basiclink">
+
+<!-- ---- OAS AD 'cp1' begin ---- -->
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+OAS_AD('cp1');
+//-->
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://63.236.18.118/RealMedia/ads/click_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!cp1" >
+<IMG SRC="http://63.236.18.118/RealMedia/ads/adstream_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!cp1" border="0">
+</A> 
+</NOSCRIPT>
+<!-- ---- OAS AD '120x60-1' end ---- -->
+
+
+</td></tr>
+</table>
+
+</td></tr>
+</table>
+
+
+<!-- OAS ad tag end -->
+
+
+		
+	
+
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+
+		
+		
+<!-- OAS ad tag start -->
+
+<table width="100%" border="0" cellpadding="1" cellspacing="0">
+<tr><td valign="top">
+
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td class="basiclink">
+
+<!-- ---- OAS AD 'cp2' begin ---- -->
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+OAS_AD('cp2');
+//-->
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://63.236.18.118/RealMedia/ads/click_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!cp2" >
+<IMG SRC="http://63.236.18.118/RealMedia/ads/adstream_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!cp2" border="0">
+</A> 
+</NOSCRIPT>
+<!-- ---- OAS AD '120x60-1' end ---- -->
+
+
+</td></tr>
+</table>
+
+</td></tr>
+</table>
+
+
+<!-- OAS ad tag end -->
+
+
+		
+	
+
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+
+		
+		
+<!-- OAS ad tag start -->
+
+<table width="100%" border="0" cellpadding="1" cellspacing="0">
+<tr><td valign="top">
+
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td class="basiclink">
+
+<!-- ---- OAS AD 'cp3' begin ---- -->
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+OAS_AD('cp3');
+//-->
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://63.236.18.118/RealMedia/ads/click_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!cp3" >
+<IMG SRC="http://63.236.18.118/RealMedia/ads/adstream_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!cp3" border="0">
+</A> 
+</NOSCRIPT>
+<!-- ---- OAS AD '120x60-1' end ---- -->
+
+
+</td></tr>
+</table>
+
+</td></tr>
+</table>
+
+
+<!-- OAS ad tag end -->
+
+
+		
+	
+
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+
+		
+		
+<!-- OAS ad tag start -->
+
+<table width="100%" border="0" cellpadding="1" cellspacing="0">
+<tr><td valign="top">
+
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td class="basiclink">
+
+<!-- ---- OAS AD 'cp4' begin ---- -->
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+OAS_AD('cp4');
+//-->
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://63.236.18.118/RealMedia/ads/click_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!cp4" >
+<IMG SRC="http://63.236.18.118/RealMedia/ads/adstream_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!cp4" border="0">
+</A> 
+</NOSCRIPT>
+<!-- ---- OAS AD '120x60-1' end ---- -->
+
+
+</td></tr>
+</table>
+
+</td></tr>
+</table>
+
+
+<!-- OAS ad tag end -->
+
+
+		
+	
+
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+
+		
+		
+<!-- OAS ad tag start -->
+
+<table width="100%" border="0" cellpadding="1" cellspacing="0">
+<tr><td valign="top">
+
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td class="basiclink">
+
+<!-- ---- OAS AD 'cp5' begin ---- -->
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+OAS_AD('cp5');
+//-->
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://63.236.18.118/RealMedia/ads/click_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!cp5" >
+<IMG SRC="http://63.236.18.118/RealMedia/ads/adstream_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!cp5" border="0">
+</A> 
+</NOSCRIPT>
+<!-- ---- OAS AD '120x60-1' end ---- -->
+
+
+</td></tr>
+</table>
+
+</td></tr>
+</table>
+
+
+<!-- OAS ad tag end -->
+
+
+		
+	
+
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+
+		
+		
+<!-- OAS ad tag start -->
+
+<table width="100%" border="0" cellpadding="1" cellspacing="0">
+<tr><td valign="top">
+
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td class="basiclink">
+
+<!-- ---- OAS AD 'cp6' begin ---- -->
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+OAS_AD('cp6');
+//-->
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://63.236.18.118/RealMedia/ads/click_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!cp6" >
+<IMG SRC="http://63.236.18.118/RealMedia/ads/adstream_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!cp6" border="0">
+</A> 
+</NOSCRIPT>
+<!-- ---- OAS AD '120x60-1' end ---- -->
+
+
+</td></tr>
+</table>
+
+</td></tr>
+</table>
+
+
+<!-- OAS ad tag end -->
+
+
+		
+	
+
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+
+		
+		
+<!-- OAS ad tag start -->
+
+<table width="100%" border="0" cellpadding="1" cellspacing="0">
+<tr><td valign="top">
+
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td class="basiclink">
+
+<!-- ---- OAS AD 'cp7' begin ---- -->
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+OAS_AD('cp7');
+//-->
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://63.236.18.118/RealMedia/ads/click_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!cp7" >
+<IMG SRC="http://63.236.18.118/RealMedia/ads/adstream_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!cp7" border="0">
+</A> 
+</NOSCRIPT>
+<!-- ---- OAS AD '120x60-1' end ---- -->
+
+
+</td></tr>
+</table>
+
+</td></tr>
+</table>
+
+
+<!-- OAS ad tag end -->
+
+
+		
+	
+
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+
+		
+		
+<!-- OAS ad tag start -->
+
+<table width="100%" border="0" cellpadding="1" cellspacing="0">
+<tr><td valign="top">
+
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td class="basiclink">
+
+<!-- ---- OAS AD 'cp8' begin ---- -->
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+OAS_AD('cp8');
+//-->
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://63.236.18.118/RealMedia/ads/click_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!cp8" >
+<IMG SRC="http://63.236.18.118/RealMedia/ads/adstream_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!cp8" border="0">
+</A> 
+</NOSCRIPT>
+<!-- ---- OAS AD '120x60-1' end ---- -->
+
+
+</td></tr>
+</table>
+
+</td></tr>
+</table>
+
+
+<!-- OAS ad tag end -->
+
+
+		
+	
+
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+
+		
+		
+<!-- OAS ad tag start -->
+
+<table width="100%" border="0" cellpadding="1" cellspacing="0">
+<tr><td valign="top">
+
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td class="basiclink">
+
+<!-- ---- OAS AD 'cp9' begin ---- -->
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+OAS_AD('cp9');
+//-->
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://63.236.18.118/RealMedia/ads/click_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!cp9" >
+<IMG SRC="http://63.236.18.118/RealMedia/ads/adstream_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!cp9" border="0">
+</A> 
+</NOSCRIPT>
+<!-- ---- OAS AD '120x60-1' end ---- -->
+
+
+</td></tr>
+</table>
+
+</td></tr>
+</table>
+
+
+<!-- OAS ad tag end -->
+
+
+		
+	
+
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+
+		
+		
+<!-- OAS ad tag start -->
+
+<table width="100%" border="0" cellpadding="1" cellspacing="0">
+<tr><td valign="top">
+
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td class="basiclink">
+
+<!-- ---- OAS AD 'cp10' begin ---- -->
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+OAS_AD('cp10');
+//-->
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://63.236.18.118/RealMedia/ads/click_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!cp10" >
+<IMG SRC="http://63.236.18.118/RealMedia/ads/adstream_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!cp10" border="0">
+</A> 
+</NOSCRIPT>
+<!-- ---- OAS AD '120x60-1' end ---- -->
+
+
+</td></tr>
+</table>
+
+</td></tr>
+</table>
+
+
+<!-- OAS ad tag end -->
+
+
+		
+	
+
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+
+		
+		
+<!-- OAS ad tag start -->
+
+<table width="100%" border="0" cellpadding="1" cellspacing="0">
+<tr><td valign="top">
+
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td class="basiclink">
+
+<!-- ---- OAS AD 'cp11' begin ---- -->
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+OAS_AD('cp11');
+//-->
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://63.236.18.118/RealMedia/ads/click_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!cp11" >
+<IMG SRC="http://63.236.18.118/RealMedia/ads/adstream_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!cp11" border="0">
+</A> 
+</NOSCRIPT>
+<!-- ---- OAS AD '120x60-1' end ---- -->
+
+
+</td></tr>
+</table>
+
+</td></tr>
+</table>
+
+
+<!-- OAS ad tag end -->
+
+
+		
+	
+
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+
+		
+		
+<!-- OAS ad tag start -->
+
+<table width="100%" border="0" cellpadding="1" cellspacing="0">
+<tr><td valign="top">
+
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td class="basiclink">
+
+<!-- ---- OAS AD 'cp12' begin ---- -->
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+OAS_AD('cp12');
+//-->
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://63.236.18.118/RealMedia/ads/click_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!cp12" >
+<IMG SRC="http://63.236.18.118/RealMedia/ads/adstream_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!cp12" border="0">
+</A> 
+</NOSCRIPT>
+<!-- ---- OAS AD '120x60-1' end ---- -->
+
+
+</td></tr>
+</table>
+
+</td></tr>
+</table>
+
+
+<!-- OAS ad tag end -->
+
+
+		
+	
+
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+
+		
+		
+<!-- OAS ad tag start -->
+
+<table width="100%" border="0" cellpadding="1" cellspacing="0">
+<tr><td valign="top">
+
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td class="basiclink">
+
+<!-- ---- OAS AD 'cp13' begin ---- -->
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+OAS_AD('cp13');
+//-->
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://63.236.18.118/RealMedia/ads/click_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!cp13" >
+<IMG SRC="http://63.236.18.118/RealMedia/ads/adstream_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!cp13" border="0">
+</A> 
+</NOSCRIPT>
+<!-- ---- OAS AD '120x60-1' end ---- -->
+
+
+</td></tr>
+</table>
+
+</td></tr>
+</table>
+
+
+<!-- OAS ad tag end -->
+
+
+		
+	
+
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+
+		
+		
+<!-- OAS ad tag start -->
+
+<table width="100%" border="0" cellpadding="1" cellspacing="0">
+<tr><td valign="top">
+
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td class="basiclink">
+
+<!-- ---- OAS AD 'cp14' begin ---- -->
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+OAS_AD('cp14');
+//-->
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://63.236.18.118/RealMedia/ads/click_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!cp14" >
+<IMG SRC="http://63.236.18.118/RealMedia/ads/adstream_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!cp14" border="0">
+</A> 
+</NOSCRIPT>
+<!-- ---- OAS AD '120x60-1' end ---- -->
+
+
+</td></tr>
+</table>
+
+</td></tr>
+</table>
+
+
+<!-- OAS ad tag end -->
+
+
+		
+	
+
+
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+
+
+
+			
+		
+	
+
+</div> <div style="margin-top:20">
+	
+	
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+
+		
+		
+<!-- OAS ad tag start -->
+
+
+<div><img src="http://assets.devx.com/devx/3174.gif" border="0" align="top" vspace="0" hspace="0" width="108" vspace="0" height="9" alt="advertisement"></div>
+
+<table width="100%" >
+<tr><td valign="top">
+
+<!-- ---- OAS AD '120x60-1' begin ---- -->
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+OAS_AD('120x60-1');
+//-->
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://63.236.18.118/RealMedia/ads/click_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!120x60-1" >
+<IMG SRC="http://63.236.18.118/RealMedia/ads/adstream_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!120x60-1" border="0">
+</A> 
+</NOSCRIPT>
+<!-- ---- OAS AD '120x60-1' end ---- -->
+
+
+</td></tr>
+</table>
+
+
+<!-- OAS ad tag end -->
+
+
+		
+	
+
+</div> <div style="margin-top:20">
+	
+	
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+
+		
+		
+<!-- OAS ad tag start -->
+
+<table width="100%" >
+<tr><td valign="top">
+
+<!-- ---- OAS AD '125x125-2' begin ---- -->
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+OAS_AD('125x125-2');
+//-->
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://63.236.18.118/RealMedia/ads/click_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!125x125-2" >
+<IMG SRC="http://63.236.18.118/RealMedia/ads/adstream_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!125x125-2" border="0">
+</A> 
+</NOSCRIPT>
+<!-- ---- OAS AD '120x60-1' end ---- -->
+
+
+</td></tr>
+</table>
+
+
+<!-- OAS ad tag end -->
+
+
+		
+	
+
+</div> 	
+		  </td>
+		  <td valign="top">
+		<div>
+	
+	
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+		
+		
+			
+			
+			
+			
+				
+			
+			
+			
+			
+			
+				<!-- cache: WT98_W1235v3  02/15/2007 10:57:32 --><table  cellspacing="0" cellpadding="4" border="0" style="padding-top:0px; margin-top:0px;"><tr><td  valign="top"> 
+	
+	
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+
+		
+		
+	
+
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+		
+		
+			
+			
+			
+			
+				
+			
+			
+			
+			
+			
+				<!-- cache: WT98_W1624v9  10/19/2006 02:30:44 --><table  cellspacing="0" cellpadding="0" border="0"><tr><td  valign="top"> 
+	
+	
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+
+		
+		
+<!-- OAS ad tag start -->
+
+
+<div><img src="http://assets.devx.com/articlefigs/8427.gif" border="0" align="top" vspace="0" hspace="0" width="1" vspace="0" height="1" alt="advertisement"></div>
+
+<table width="100%" >
+<tr><td valign="top">
+
+<!-- ---- OAS AD 'ciu' begin ---- -->
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+OAS_AD('ciu');
+//-->
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://63.236.18.118/RealMedia/ads/click_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!ciu" >
+<IMG SRC="http://63.236.18.118/RealMedia/ads/adstream_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!ciu" border="0">
+</A> 
+</NOSCRIPT>
+<!-- ---- OAS AD '120x60-1' end ---- -->
+
+
+</td></tr>
+</table>
+
+
+<!-- OAS ad tag end -->
+
+
+		
+	
+
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+
+		
+		
+<!-- (3187) - start 3 col layout: Top Gold Curve layout -->
+
+    
+    <!-- table start -->
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+            <!-- first table column start -->
+    		<td width="122">
+    
+<div>
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+		
+		
+			
+			
+			
+			
+				
+			
+			
+			
+			
+			
+				<!-- cache: WT85_W3184v1  10/19/2006 02:30:44 --><div><img src="http://assets.devx.com/devx/7317.gif" border="0" align="top" vspace="0" hspace="0" height="8" width="8" alt="" align=""></div>
+			
+		
+	
+</div> 
+	
+       <!-- table: left column end, middle column start -->
+       </td>
+	   <td width="100%">
+    
+<div>
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+		
+		
+			
+			
+			
+			
+				
+			
+			
+			
+			
+			
+				<!-- cache: WT98_W3185v1  10/19/2006 02:30:44 --><table  cellspacing="0" cellpadding="0" bgcolor="#FFE48E" style="border-top: 1px solid #000099;" width="100%" height="8"><tr><td width="100%" > </td></tr></table>
+			
+		
+	
+</div> 
+     		
+          <!-- table: middle column end, right column start -->
+          </td>
+    <td width="7">
+          
+      <div>
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+		
+		
+			
+			
+			
+			
+				
+			
+			
+			
+			
+			
+				<!-- cache: WT85_W3186v1  10/19/2006 02:30:44 --><div><img src="http://assets.devx.com/devx/7318.gif" border="0" align="top" vspace="0" hspace="0" height="8" width="8" alt="" align=""></div>
+			
+		
+	
+</div> 
+        
+        <!-- table: right column end, table end -->
+        </td>
+     </tr>
+        </table>
+        
+      
+<!-- end 3 col layout -->
+
+		
+	
+
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+
+		
+		
+	<div align="right" class="expgoldbox" style="padding:0px; margin:0px;">
+	
+
+	
+	<table border=0>
+		<tr>
+		
+			
+				
+
+				<td>
+				
+				
+					
+				
+				
+				<font class="smallfont" style="smallfont">Average Rating: 5/5 | <a href="7951.1.html#rateThisContentLink">Rate this item</a> | 1 user  has  rated this item.</font>
+				</td>
+			
+		</tr>
+	</table>
+	
+	
+	
+		</div>
+	
+
+
+
+		
+	
+
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+		
+		
+			
+			
+			
+			
+				
+			
+			
+			
+			
+			
+				<!-- cache: WT176_W3339v1_C7951v1  11/28/2005 02:25:14 -->
+	
+	
+	
+	
+    
+
+	
+    
+	<table class="expgoldbox" style="padding-top:0px; padding-bottom:0px; padding-right:3px;" >
+	<tr><td class="smallfontRight">
+			<a href="http://www.devx.com/cplus/Article/7951/1954?pf=true" target="PFWindow"><img src="7694.gif" alt=" Print" border="0"> Print</a>	
+	</td></tr>
+	</table>
+	
+
+
+
+			
+		
+	
+
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+
+		
+		
+    
+
+	
+
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+
+<script language="javascript">
+function showSupportItem(itemName)
+{
+	if( articleSpptItems[itemName] )
+	{
+		var theURL = 'http://www.devx.com/cplus/Article/7951/1763';
+		theURL += '?supportItem='+articleSpptItems[itemName].number;
+		popUpWindow(theURL, articleSpptItems[itemName].width, articleSpptItems[itemName].height);
+	}
+	else
+		alert("Sorry, "+itemName+" could not be found.");
+}
+function SupportItem(number, width, height)
+{
+	this.number = number;
+	this.width = width;
+	this.height = height;
+	return this;
+}
+articleSpptItems = new Object(); 
+	
+		
+	articleSpptItems.boost = new SupportItem(1,400,450);
+	
+		
+	articleSpptItems.listing1 = new SupportItem(2,500,600);
+	
+		
+	articleSpptItems.listing2 = new SupportItem(3,500,600);
+	
+		
+	articleSpptItems.listing3 = new SupportItem(4,500,600);
+	
+
+</script>
+
+	<table  cellspacing="0" cellpadding="10" style="border-left:1px #000099 solid;border-right:1px #000099 solid;" width="100%" rules="none" frame="vsides">
+		
+	
+		
+		<tr>
+			<td  class="expgoldbox"  style="border:0px;">
+				<table border="0" cellpadding="0" cellspacing="0">
+					<tr>
+					
+					
+					
+						<td valign="top">
+						
+						
+						
+
+							
+								
+							
+							
+							
+							
+							
+								
+							
+						
+						
+						
+
+
+						
+						<table border="0" cellpadding="0" cellspacing="0">
+							
+							
+							
+							
+							
+							<tr>
+								
+								
+									<td width="75"  align="left"><img src="http://assets.devx.com/articleicons/3558.gif" height="75" width="75" border="0" align="left"></td>
+									<td width="10">&nbsp;</td>
+								
+								
+
+								<td valign="top">
+
+								<div class="articleTitle">Access Raw Data with Performance Counters in Visual C++</div>
+								<div class="articleDek">Though Windows allows you direct access to performance data, using the native C API is unwieldy. James Curran explains a few C++ techniques to help make it more manageable.&nbsp;</div>
+								
+                                
+                               
+                                
+								    
+								
+								
+								
+							    	
+    							
+
+								
+															
+							
+												
+							
+								
+
+									
+									
+									
+										
+										
+										<br>
+										<table width="100%" border="0" cellspacing="0" cellpadding="0">
+										<tr>
+										<td align="left" class="articleAuthor">by James Curran</td>
+										</tr>
+										
+										
+										 </table>										
+									
+									 
+									<table width="100%" border="0" cellspacing="0" cellpadding="0">
+									<tr><td align="right" class="articleAuthor">October 21, 2002&nbsp;&nbsp;</td></tr>
+									</table>
+									
+                                
+                                		
+									</td>
+									
+								</td>
+                                
+							
+									
+
+                                </tr>
+								
+								
+								
+								
+								
+                             </table>
+                                
+								
+		
+									
+						</td>
+					</tr>
+
+					
+				</table>
+				
+			</td>
+		</tr>
+		
+		<tr>
+			<td  class="expwhitebox"   style="border:0px;">
+			
+			
+				<table border="0" cellspacing="0" cellpadding="0" align="right" style="margin-left:10;margin-bottom:10">
+					<tr>
+						<td align="center"><img src="http://assets.devx.com/devx/3174.gif" height="9" width="108" border="0"></td>
+					</tr>
+					<tr>
+						<td>
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+
+		
+		
+<!-- OAS ad tag start -->
+
+
+<div><img src="http://assets.devx.com/HPAssets/2228.gif" border="0" align="top" vspace="0" hspace="0" width="0" vspace="0" height="0" alt="advertisement"></div>
+
+<table width="100%" >
+<tr><td valign="top">
+
+<!-- ---- OAS AD '336x280' begin ---- -->
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+OAS_AD('336x280');
+//-->
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://63.236.18.118/RealMedia/ads/click_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!336x280" >
+<IMG SRC="http://63.236.18.118/RealMedia/ads/adstream_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!336x280" border="0">
+</A> 
+</NOSCRIPT>
+<!-- ---- OAS AD '120x60-1' end ---- -->
+
+
+</td></tr>
+</table>
+
+
+<!-- OAS ad tag end -->
+
+
+		
+	
+</td>
+					</tr>
+				</table>
+
+				
+				
+					<div><img src="3595.gif">indows lets you monitor a large number of internal statistics. Most people only see them in the Performance Monitor utility. This is fine if all you need is to look at graphs, but to fully study and analyze the information, you'll need to get at the raw data. Windows gives you access to the raw data, but only through a cumbersome C API. However, with the proper application of a few C++ techniques, you can make the whole process much simpler.
+</div><br>
+					<a href="7951.1.html#codeitemarea"><img src="http://assets.devx.com/articleicons/14096.gif" height="33" width="141" border="0"></a>
+					<div><br>
+<b>Working with (and Wrapping) Queries</b><br>
+At the lowest level, the structures used are defined in the Platform SDK header &lt;winperf.h&gt;. Microsoft apparently realized that those were too tedious for most people to use, so they built a new interface on top of that, known as the Performance Data Helper (PDH) interface. Though the PDH was only a slight improvement, you can still build a useable interface with it.
+<p>
+The structure at the heart of performance monitoring is the HQUERY. It is initialized with the API function PdhOpenQuery(), and closed out with PdhCloseQuery(). Clearly this calls for a wrapper class, which I'll call Query, with a constructor and destructor handling these tasks. The main purpose for a HQUERY is to manage a number of HCOUNTER structures. They are attached to a HQUERY by calling PdhAddCounter(). Add a member function to Query to attach them. Also add a cast to access the underlying HQUERY, and you have a functioning minimal interface for Query (see <a href="javascript:showSupportItem('listing1')">Listing 1</a>). It's fairly simple, and if that were all, I might not have even bothered with the C++ wrapper. But there is more. 
+</div>
+				
+			<div class="smallfont">
+			<i>Page 1 of 3</i>
+			</div>	
+			
+				
+				
+				<hr style="border-top: 1px dashed blue; color: #fff; background-color: #fff; height: 4px;">
+				<a name="codeitemarea"><img src="http://assets.devx.com/articleicons/14097.gif" height="33" width="281" border="0"></a>
+				<UL STYLE="list-style-image: url(http://assets.devx.com/devx/4412.gif)">
+				
+					
+					
+					
+					
+											
+					
+					<li class="basiclink"> <a href="http://assets.devx.com/sourcecode/3561.zip" class="basiclink">
+					<strong>Download The Code for this Article</strong></a></li>
+				
+				</ul>
+				<hr style="border-top: 1px dashed blue; color: #fff; background-color: #fff; height: 4px;">
+			
+				
+				
+				<table border="0" cellspacing="0" cellpadding="0" align="center" style="margin-left:10;margin-bottom:10">
+					<tr>
+						<td align="center"><img src="http://assets.devx.com/devx/3174.gif" height="9" width="108" border="0"></td>
+					</tr>
+					<tr>
+						<td>
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+
+		
+		
+<!-- OAS ad tag start -->
+
+
+<div><img src="http://assets.devx.com/HPAssets/2228.gif" border="0" align="top" vspace="0" hspace="0" width="0" vspace="0" height="0" alt="advertisement"></div>
+
+<table width="100%" >
+<tr><td valign="top">
+
+<!-- ---- OAS AD 'accessunit' begin ---- -->
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+OAS_AD('accessunit');
+//-->
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://63.236.18.118/RealMedia/ads/click_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!accessunit" >
+<IMG SRC="http://63.236.18.118/RealMedia/ads/adstream_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!accessunit" border="0">
+</A> 
+</NOSCRIPT>
+<!-- ---- OAS AD '120x60-1' end ---- -->
+
+
+</td></tr>
+</table>
+
+
+<!-- OAS ad tag end -->
+
+
+		
+	
+</td>
+					</tr>
+				</table>
+			
+				
+			</td>
+		</tr>
+		
+		
+		<tr  class="expwhitebox"   style="border:0px;">
+			<td>
+			
+									    
+			    
+			
+						
+			
+				<table width="100%">
+					<tr>
+						<td width="50%" align="left">										
+							&nbsp;
+							
+						</td>
+						<td width="50%" align="right">										
+							
+							<a class="" href="http://www.devx.com/cplus/Article/7951/0/page/2">Next Page: Counters and Global Shared Memory <img src="http://assets.devx.com/devx/3402.gif" height="22" width="27" border="0" align="ABSMIDDLE"></a>
+							
+						</td>
+					</tr>
+				</table>
+			
+			</td>
+		</tr>
+		
+			
+			<tr>
+				<td  bgcolor="#FFE48E">
+					
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+		
+		
+			
+			
+			
+			
+				
+			
+			
+			
+			
+			
+				<!-- cache: WT92_W636v1_C7951v1  11/28/2005 02:25:14 --><table width="100%"><tr><td width="50%"><span class="articleNav">Page 1: </span><a href="http://www.devx.com/cplus/Article/7951/0/page/1" class="moreNewsletterLink">Introduction</a></td><td width="50%"><span class="articleNav">Page 3: </span><a href="http://www.devx.com/cplus/Article/7951/0/page/3" class="moreNewsletterLink">Getting at the Data</a></td></tr><tr><td width="50%"><span class="articleNav">Page 2: </span><a href="http://www.devx.com/cplus/Article/7951/0/page/2" class="moreNewsletterLink">Counters and Global Shared Memory</a></td><td width="50%">&nbsp;</td></tr></table>
+			
+		
+	
+
+				</td>
+			</tr>
+			
+		
+		
+		
+	</table>
+
+
+
+
+		
+	
+
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+		
+		
+			
+			
+			
+			
+				
+			
+			
+			
+			
+			
+				<!-- cache: WT98_W2933v2  10/19/2006 02:30:44 --><table  cellspacing="0" cellpadding="0" border="0" class="expgoldbox" style="align:center;"><tr><td align="center"> 
+	
+	
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+		
+		
+			
+			
+			
+			
+				
+			
+			
+			
+			
+			
+				<!-- cache: WT85_W2934v2  10/19/2006 02:30:44 --><div><img src="http://assets.devx.com/devx/5990.gif" border="0" align="top" vspace="0" hspace="0" height="9" width="350" alt="" align=""></div>
+			
+		
+	
+
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+
+		
+		
+	<div align="center" class="" style="background-color:#ffffff; width:350px; border-left:#FF6600 solid 1px; border-right:#FF6600 solid 1px;">
+	
+
+
+<a name="rateThisContentLink">
+
+
+	
+	<table border="0">
+		<tr>
+			<td align="center">
+				<a href="https://www.devx.com/DevX/Site/6946?url=http%3A%2F%2Fwww%2Edevx%2Ecom%2Fcplus%2FArticle%2F7951%23rateThisContentLink"><font class="morelink" style="">Was this article useful? Please log in to rate this item. </font></a>
+			</td>
+		</tr>
+		
+			<tr>
+				<td align="center">
+					<a href="https://www.devx.com/DevX/Site/6946?url=http%3A%2F%2Fwww%2Edevx%2Ecom%2Fcplus%2FArticle%2F7951%23rateThisContentLink"><font class="morelink" style="">Don't have a log in? Get one now.</font></a>
+				</td>
+			</tr>
+		
+	</table>
+
+	
+		</div>
+	
+
+
+		
+	
+
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+		
+		
+			
+			
+			
+			
+				
+			
+			
+			
+			
+			
+				<!-- cache: WT85_W2935v1  10/19/2006 02:30:44 --><div><img src="http://assets.devx.com/devx/5991.gif" border="0" align="top" vspace="0" hspace="0" height="9" width="350" alt="" align=""></div>
+			
+		
+	
+
+</td></tr></table>
+			
+		
+	
+
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+
+		
+		
+<!-- (3171) - start 3 col layout: Bottom Gold Curve layout -->
+
+    
+    <!-- table start -->
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+    	<tr>
+            <!-- first table column start -->
+    		<td width="122">
+    
+<div>
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+		
+		
+			
+			
+			
+			
+				
+			
+			
+			
+			
+			
+				<!-- cache: WT85_W3169v1  10/19/2006 04:29:36 --><div><img src="http://assets.devx.com/devx/7279.gif" border="0" align="top" vspace="0" hspace="0" height="8" width="8" alt="" align=""></div>
+			
+		
+	
+</div> 
+	
+       <!-- table: left column end, middle column start -->
+       </td>
+	   <td width="100%">
+    
+<div>
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+		
+		
+			
+			
+			
+			
+				
+			
+			
+			
+			
+			
+				<!-- cache: WT98_W3172v1  10/19/2006 04:29:36 --><table  cellspacing="0" cellpadding="0" bgcolor="#FFE48E" style="border-bottom: 1px solid #000099;" width="100%" height="8"><tr><td width="100%" > </td></tr></table>
+			
+		
+	
+</div> 
+     		
+          <!-- table: middle column end, right column start -->
+          </td>
+    <td width="7">
+          
+      <div>
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+		
+		
+			
+			
+			
+			
+				
+			
+			
+			
+			
+			
+				<!-- cache: WT85_W3170v1  10/19/2006 04:29:36 --><div><img src="http://assets.devx.com/devx/7280.gif" border="0" align="top" vspace="0" hspace="0" height="8" width="8" alt="" align=""></div>
+			
+		
+	
+</div> 
+        
+        <!-- table: right column end, table end -->
+        </td>
+     </tr>
+        </table>
+        
+      
+<!-- end 3 col layout -->
+
+		
+	
+
+</td></tr></table>
+			
+		
+	
+
+
+		
+	
+
+</td></tr></table>
+			
+		
+	
+
+</div> 
+				
+					
+		</td>
+	</tr>
+  </table>
+  
+
+<!-- end 2 col layout -->
+
+
+			
+		
+	
+
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+		
+		
+			
+			
+			
+			
+				
+			
+			
+			
+			
+			
+				<!-- cache: WT98_W3770v3  02/15/2007 10:57:33 --><table  cellspacing="0" cellpadding="0" border="0" width="100%" align="center" style="margin-top:20px;"><tr><td width="100%" align="center"> 
+	
+	
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+		
+		
+			
+			
+			
+			
+				
+			
+			
+			
+			
+			
+				<!-- cache: WT98_W3077v3  02/15/2007 10:57:33 --><table align="center" style="border: 2px solid #ff6600;padding-right: 2px;width:444px; background-color:#FFFFFF;"><tr><td > 
+	
+	
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+
+		
+		
+<!-- OAS ad tag start -->
+
+<div align="" class="" style="background-color:#EEEEEE;">
+
+<table width="100%" >
+<tr><td valign="top">
+
+<!-- ---- OAS AD 'fl1' begin ---- -->
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+OAS_AD('fl1');
+//-->
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://63.236.18.118/RealMedia/ads/click_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!fl1" >
+<IMG SRC="http://63.236.18.118/RealMedia/ads/adstream_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!fl1" border="0">
+</A> 
+</NOSCRIPT>
+<!-- ---- OAS AD '120x60-1' end ---- -->
+
+
+</td></tr>
+</table>
+
+
+</div>
+
+<!-- OAS ad tag end -->
+
+
+		
+	
+
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+
+		
+		
+<!-- OAS ad tag start -->
+
+<table width="100%" >
+<tr><td valign="top">
+
+<!-- ---- OAS AD 'fl2' begin ---- -->
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+OAS_AD('fl2');
+//-->
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://63.236.18.118/RealMedia/ads/click_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!fl2" >
+<IMG SRC="http://63.236.18.118/RealMedia/ads/adstream_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!fl2" border="0">
+</A> 
+</NOSCRIPT>
+<!-- ---- OAS AD '120x60-1' end ---- -->
+
+
+</td></tr>
+</table>
+
+
+<!-- OAS ad tag end -->
+
+
+		
+	
+
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+
+		
+		
+<!-- OAS ad tag start -->
+
+<div align="" class="" style="background-color:#EEEEEE;">
+
+<table width="100%" >
+<tr><td valign="top">
+
+<!-- ---- OAS AD 'fl3' begin ---- -->
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+OAS_AD('fl3');
+//-->
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://63.236.18.118/RealMedia/ads/click_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!fl3" >
+<IMG SRC="http://63.236.18.118/RealMedia/ads/adstream_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!fl3" border="0">
+</A> 
+</NOSCRIPT>
+<!-- ---- OAS AD '120x60-1' end ---- -->
+
+
+</td></tr>
+</table>
+
+
+</div>
+
+<!-- OAS ad tag end -->
+
+
+		
+	
+
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+
+		
+		
+<!-- OAS ad tag start -->
+
+<table width="100%" >
+<tr><td valign="top">
+
+<!-- ---- OAS AD 'fl4' begin ---- -->
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+OAS_AD('fl4');
+//-->
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://63.236.18.118/RealMedia/ads/click_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!fl4" >
+<IMG SRC="http://63.236.18.118/RealMedia/ads/adstream_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!fl4" border="0">
+</A> 
+</NOSCRIPT>
+<!-- ---- OAS AD '120x60-1' end ---- -->
+
+
+</td></tr>
+</table>
+
+
+<!-- OAS ad tag end -->
+
+
+		
+	
+
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+
+		
+		
+<!-- OAS ad tag start -->
+
+<div align="" class="" style="background-color:#EEEEEE;">
+
+<table width="100%" >
+<tr><td valign="top">
+
+<!-- ---- OAS AD 'fl5' begin ---- -->
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+OAS_AD('fl5');
+//-->
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://63.236.18.118/RealMedia/ads/click_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!fl5" >
+<IMG SRC="http://63.236.18.118/RealMedia/ads/adstream_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!fl5" border="0">
+</A> 
+</NOSCRIPT>
+<!-- ---- OAS AD '120x60-1' end ---- -->
+
+
+</td></tr>
+</table>
+
+
+</div>
+
+<!-- OAS ad tag end -->
+
+
+		
+	
+
+</td></tr></table>
+			
+		
+	
+
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+
+		
+		
+<!-- OAS ad tag start -->
+
+<div align="center" class="" style="margin-top: 0px; margin-bottom: 0px; width:799px; padding:10px;">
+
+
+<div><img src="http://assets.devx.com/devx/3174.gif" border="0" align="top" vspace="0" hspace="0" width="108" vspace="0" height="9" alt="advertisement"></div>
+
+<table width="100%" align="center" style="margin-top: 0px;">
+<tr><td valign="top">
+
+<table cellspacing="0" cellpadding="5" border="0" background="3173.gif" align="center">
+<tr><td >
+
+<!-- ---- OAS AD '468x60-2' begin ---- -->
+<SCRIPT LANGUAGE=JavaScript>
+<!--
+OAS_AD('468x60-2');
+//-->
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://63.236.18.118/RealMedia/ads/click_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!468x60-2" >
+<IMG SRC="http://63.236.18.118/RealMedia/ads/adstream_nx.ads/devx/cplus/677/7951@house_ribbon,468x60-1,marketplace01,cp1,cp2,cp3,cp4,cp5,cp6,cp7,cp8,cp9,cp10,cp11,cp12,cp13,cp14,120x60-1,125x125-2,ciu,336x280,accessunit,fl1,fl2,fl3,fl4,fl5,468x60-2!468x60-2" border="0">
+</A> 
+</NOSCRIPT>
+<!-- ---- OAS AD '120x60-1' end ---- -->
+
+
+</td></tr>
+</table>
+
+</td></tr>
+</table>
+
+
+</div>
+
+<!-- OAS ad tag end -->
+
+
+		
+	
+
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+		
+		
+			
+			
+			
+			
+				
+			
+			
+			
+			
+			
+				<!-- cache: WT90_W1726v3_S6946v2066  02/26/2007 06:48:59 -->
+
+
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+	<tr>
+		
+		
+		<td class="orange" align="center">
+		
+			
+			
+			
+			
+				
+				<a href="http://www.devx.com/DevXNet/Article/28907?trk=Foot%5FCL%5FAdinfo"  class="basiclink">Advertising&nbsp;Info</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+			
+		
+			
+			
+			
+			
+				
+				<a href="http://www.devx.com/premier/Door/17532?trk=Foot%5FCL%5FPC"  class="basiclink">Member&nbsp;Services</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+			
+		
+			
+			
+			
+			
+				
+				<a href="http://www.devx.com/DevX/LegacyLink/8487?trk=Foot%5FCL%5FContact"  class="basiclink">Contact&nbsp;Us</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+			
+		
+			
+			
+			
+			
+				
+				<a href="http://www.devx.com/DevX/Article/19999?trk=Foot%5FCL%5FHelp"  class="basiclink">Help</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+			
+		
+			
+			
+			
+			
+				
+				<a href="http://www.devx.com/DevX/LegacyLink/8167?trk=Foot%5FCL%5FFeedback"  class="basiclink">Feedback</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+			
+		
+			
+			
+			
+			
+				
+				<a href="http://www.devx.com/SiteMap/Door/15965"  class="basiclink">Site&nbsp;Map</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+			
+		
+			
+			
+			
+			
+				
+				<a href="http://www.devx.com/Jupitermedia/Link/20291"  target="_Blank" class="basiclink">Network&nbsp;Map</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+			
+		
+			
+			
+			
+			
+				
+				<a href="http://www.devx.com/DevXNet/Door/28826"  class="basiclink">About</a>
+			
+		
+		
+		</td>
+	</tr>
+</table>
+
+
+			
+		
+	
+
+	
+	
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+
+		
+		<BR CLEAR="all"><center><table border="0" cellspacing="0" cellpadding="5">
+                <tr> 
+                  <form method="POST" action="http://search.internet.com/www.jupiterweb.com" target="_top">
+                    <td align="center"><font size="-2" face="verdana, arial, helvetica"><b>JupiterWeb networks:</b></font> 
+                      <p align="center"> 
+<table border="0" class="mgfoot">
+  <tr><td class="foot_alt" align="center">
+<a href="http://www.internet.com" class="foot" target="_top"><img src="icom_foot.gif" alt="internet.com" width="97" height="15" hspace="0" border="0" align="absmiddle"></a><img src="ruledivide_foot.gif" alt="" width="1" height="25" hspace="10" border="0" align="absmiddle"><a href="http://www.earthweb.com" target="_top"><img src="earthweb_foot2.gif" alt="earthweb.com" width="93" height="12" hspace="5" border="0" align="absmiddle"></a><img src="ruledivide_foot.gif" alt="" width="1" height="25" hspace="10" border="0" align="absmiddle"><a href="http://www.devx.com" target="_top"><img src="devx_foot2.gif" alt="Devx.com" width="35" height="30" hspace="0" border="0" align="absmiddle"></a><img src="ruledivide_foot.gif" alt="" width="1" height="25" hspace="10" border="0" align="absmiddle"><a href="http://www.graphics.com" target="_top"><img src="grcom_foot.gif" alt="Graphics.com" width="97" height="18" hspace="0" border="0" align="absmiddle"></a></td></tr></table>
+                      <p> 
+                      <font size="-2" face="verdana, arial, helvetica"><b>Search JupiterWeb:</b> 
+                      <input type="HIDDEN" name="IC_Summary" value="1">
+                      <input type="HIDDEN" name="IC_StartNumber" value="0">
+                      <input type="HIDDEN" name="IC_BatchSize" value="10">
+                      <input type="HIDDEN" name="IC_RelevanceThreshold" value="50">
+                      <input type="hidden" name="IC_QueryDatabase" value="all">
+                      <input type="text" name="IC_QueryText" size="45">
+                      <input type="image" border="0" value="Find" name="SUBMIT" src="but_find.gif" width="41" height="20" align="absmiddle">
+                      </font>
+                      <p>
+                      <font size="-2" face="verdana, arial, helvetica">
+                     <a href="http://www.jupitermedia.com/" class="foot"> Jupitermedia Corporation</a> has two divisions: <a href="http://www.jupiterimages.com/" class="foot">Jupiterimages</a> and <a href="http://www.jupiterweb.com/" class="foot">JupiterWeb</a><P> <font size="-2" face="verdana, arial, helvetica"><a href="http://www.jupitermedia.com/corporate/" class="foot" target="_top">Jupitermedia Corporate Info</a>                      <p>
+                      <div class="foot"><!--Copyright 2005-2006-->
+
+<script type="text/javascript">
+document.write(' Copyright ');
+var now = new Date();
+document.write(  + now.getFullYear());
+document.write(' Jupitermedia Corporation All Rights Reserved.');
+</script>
+<noscript> Copyright 2007 Jupitermedia Corporation All Rights Reserved.</noscript>
+<br>
+                        <a href="http://www.jupitermedia.com/corporate/legal.html" class="foot" target="_top">Legal 
+                        Notices</a>, <a href="http://www.jupitermedia.com/corporate/reprints.html#Licensing1" class="foot" target="_top">Licensing</a>, 
+                        <a href="http://www.jupitermedia.com/corporate/reprints.html#Reprints1" class="foot" target="_top">Reprints</a>, 
+                        & <a href="http://www.jupitermedia.com/corporate/reprints.html#Permissions" class="foot" target="_top">Permissions</a>, 
+                        <a href="http://www.jupitermedia.com/corporate/privacy/privacypolicy.html" class="foot" target="_top">Privacy 
+                        Policy</a>. </font>
+                      <p> <font size="-2" face="verdana, arial, helvetica"><a href="http://www.webhost.thelist.com" class="foot" target="_top">Web Hosting</a> | <a href="http://e-newsletters.internet.com/" class="foot">Newsletters</a> 
+                       | <a href="http://jobs.internet.com/" class="foot" target="_top">Tech 
+                        Jobs</a> | <a href="http://www.internetshopper.com/" class="foot" target="_top">Shopping</a> | <a href="http://e-newsletters.internet.com/cgi-bin/al-manage/subscribe.cgi?brand=icom" class="foot" target="_top">E-mail 
+                        Offers</a></div></font>
+
+                    </td>
+                  </form>
+                </tr>
+              </table></center>
+
+		
+	
+
+</td></tr></table>
+			
+		
+	
+</body> </html><!-- 62.204.207.42 devxweb01 -->

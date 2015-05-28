@@ -1,0 +1,234 @@
+<html><head>
+<script src="index_files/utility.txt"></script>
+<script src="index_files/popup.txt"></script>
+<style>
+.popupLink { outline: none }
+.popup { POSITION: absolute; VISIBILITY: hidden; BACKGROUND-COLOR: #d0ddee; width: 250; BORDER-LEFT: 1px solid black; BORDER-TOP: 1px solid black; BORDER-BOTTOM: 3px solid black; BORDER-RIGHT: 3px solid black; PADDING: 3px; z-index: 10 }
+</style><title>An Information-Theoretic Definition of Similarity - Lin (ResearchIndex)</title>
+
+
+<meta name="keywords" content="Dekang Lin ftp cs umanitoba ca pub lindek papers sim ps gz An Information-Theoretic Definition of Similarity30 International Conference Machine Learning 1998">
+<meta name="description" content="Similarity is an important and widely used concept. Previous definitions of similarity are tied to a particular application or a form of knowledge representation. We present an informationtheoretic definition of similarity that is applicable as long as there is a probabilistic model. We demonstrate">
+<style type="text/css">
+<!--
+body { font-family: arial, Helvetica, sans-serif; font-size: 10pt; }
+.l { font-family: arial, Helvetica, sans-serif; font-size: 11pt; }
+.m { font-family: arial, Helvetica, sans-serif; font-size: 10pt; }
+.s { font-family: arial, Helvetica, sans-serif; font-size: 9pt; }
+.t { font-family: arial, Helvetica, sans-serif; font-size: 8pt; }
+.h { font-family: arial, Helvetica, sans-serif; font-size: 10pt; }
+.tl:link { color: #0000ff; text-decoration:none; }
+.cl:link { color: #6666ff; text-decoration:none; }
+.tl:visited { color: #0000ff; text-decoration:none; }
+.cl:visited { color: #6666ff; text-decoration:none; }
+.tl:hover { color: #0000ff; text-decoration:underline; }
+.cl:hover { color: #6666ff; text-decoration:underline; }
+.c { color: #777777; text-decoration:none; }
+.i { color: #777777; }
+-->
+</style></head><body alink="#7700ff" bgcolor="#ffffff" link="#0000ff" vlink="#7700ff">
+
+<span class="m">
+<table class="h" border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td bgcolor="#d0ddee"><center><span class="l"><b>An Information-Theoretic Definition of Similarity (1998)</b></span>&nbsp;&nbsp;<span class="l"><a href="http://citeseer.ist.psu.edu/correct/95071"><font color="gray">(Make Corrections)</font></a></span>&nbsp;&nbsp;<span class="l"><a href="http://citeseer.ist.psu.edu/context/1031819/95071">(40&nbsp;citations)</a></span><br>   Dekang Lin</center><center>Proc. 15th International Conf. on Machine Learning</center><br>
+<center><a href="http://citeseer.ist.psu.edu/cs"><img src="index_files/cssmall.gif" align="middle" border="0"></a> &nbsp; <a href="http://citeseer.ist.psu.edu/cs">Home/Search</a><script language="JavaScript">
+<!--
+if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) {
+var url="http://citeseer.ist.psu.edu/95071.html"; var title="An Information-Theoretic Definition of S.. (ResearchIndex)";
+document.write(' &nbsp; <A HREF="javascript:window.ext');
+document.write('ernal.AddFavorite(url,title);" ');
+document.write('onMouseOver=" window.status=');
+document.write("'Bookmark'; return true ");
+document.write('"onMouseOut=" window.status=');
+document.write("' '; return true ");
+document.write('">Bookmark</a>');
+}
+else {
+}
+// -->
+</script>
+ &nbsp; <a href="http://citeseer.ist.psu.edu/context/1031819/95071">Context</a> &nbsp; <a href="http://citeseer.ist.psu.edu/nrelated/1031819/95071">Related</a>
+<br><br></center>
+</td><td bgcolor="#d0ddee" width="2"><font size="-1">&nbsp;</font></td><td bgcolor="#d0ddee"></td><td bgcolor="#d0ddee"><center>View or download:<br><font size="-1"><a href="http://citeseer.ist.psu.edu/rd/50260713%2C95071%2C1%2C0.25%2CDownload/ftp%3AqSqqSqftp.cs.umanitoba.caqSqpubqSqlindekqSqpapersqSqsim.ps.gz" onmouseover="self.status='ftp://ftp.cs.umanitoba.ca/pub/lindek/papers/sim.ps.gz'; return true" onmouseout="self.status=''; return true">cs.umanitoba.ca/pub/lindek/<font color="gray">...</font>sim.ps.gz</a><br>
+Cached:&nbsp;&nbsp;<a href="http://citeseer.ist.psu.edu/rd/50260713%2C95071%2C1%2C0.25%2CDownload/http://citeseer.ist.psu.edu/cache/papers/cs/1049/ftp:zSzzSzftp.cs.umanitoba.cazSzpubzSzlindekzSzpaperszSzsim.ps.gz/an-information-theoretic-definition.ps.gz" onmouseover="self.status='http://citeseer.ist.psu.edu/cache/papers/cs/1049/ftp:zSzzSzftp.cs.umanitoba.cazSzpubzSzlindekzSzpaperszSzsim.ps.gz/an-information-theoretic-definition.ps.gz'; return true" onmouseout="self.status=''; return true">PS.gz</a>&nbsp;&nbsp;<a href="http://citeseer.ist.psu.edu/rd/50260713%2C95071%2C1%2C0.25%2CDownload/http://citeseer.ist.psu.edu/compress/0/papers/cs/1049/ftp:zSzzSzftp.cs.umanitoba.cazSzpubzSzlindekzSzpaperszSzsim.ps.gz/an-information-theoretic-definition.ps" onmouseover="self.status='http://citeseer.ist.psu.edu/compress/0/papers/cs/1049/ftp:zSzzSzftp.cs.umanitoba.cazSzpubzSzlindekzSzpaperszSzsim.ps.gz/an-information-theoretic-definition.ps'; return true" onmouseout="self.status=''; return true">PS</a>&nbsp;&nbsp;<a href="http://citeseer.ist.psu.edu/rd/50260713%2C95071%2C1%2C0.25%2CDownload/http://citeseer.ist.psu.edu/cache/papers/cs/1049/ftp:zSzzSzftp.cs.umanitoba.cazSzpubzSzlindekzSzpaperszSzsim.pdf/an-information-theoretic-definition.pdf" onmouseover="self.status='http://citeseer.ist.psu.edu/cache/papers/cs/1049/ftp:zSzzSzftp.cs.umanitoba.cazSzpubzSzlindekzSzpaperszSzsim.pdf/an-information-theoretic-definition.pdf'; return true" onmouseout="self.status=''; return true">PDF</a><div onclick="event.cancelBubble = true;" class="popup" id="NameFieldPopup"><font align="left">This document uses <a href="http://codeen.cs.princeton.edu/coblitz/">CoBlitz</a>
+to cache paper downloads. If your firewall is blocking outgoing
+connections to port 3125, you can use these links to download local
+copies.<br>&nbsp;&nbsp;<a href="http://citeseer.ist.psu.edu/rd/50260713%2C95071%2C1%2C0.25%2CDownload/http://citeseer.ist.psu.edu/cache/papers/cs/1049/ftp:zSzzSzftp.cs.umanitoba.cazSzpubzSzlindekzSzpaperszSzsim.ps.gz/an-information-theoretic-definition.ps.gz" onmouseover="self.status='http://citeseer.ist.psu.edu/cache/papers/cs/1049/ftp:zSzzSzftp.cs.umanitoba.cazSzpubzSzlindekzSzpaperszSzsim.ps.gz/an-information-theoretic-definition.ps.gz'; return true" onmouseout="self.status=''; return true">PS.gz</a>&nbsp;&nbsp;<a href="http://citeseer.ist.psu.edu/rd/50260713%2C95071%2C1%2C0.25%2CDownload/http://citeseer.ist.psu.edu/compress/0/papers/cs/1049/ftp:zSzzSzftp.cs.umanitoba.cazSzpubzSzlindekzSzpaperszSzsim.ps.gz/an-information-theoretic-definition.ps" onmouseover="self.status='http://citeseer.ist.psu.edu/compress/0/papers/cs/1049/ftp:zSzzSzftp.cs.umanitoba.cazSzpubzSzlindekzSzpaperszSzsim.ps.gz/an-information-theoretic-definition.ps'; return true" onmouseout="self.status=''; return true">PS</a>&nbsp;&nbsp;<a href="http://citeseer.ist.psu.edu/rd/50260713%2C95071%2C1%2C0.25%2CDownload/http://citeseer.ist.psu.edu/cache/papers/cs/1049/ftp:zSzzSzftp.cs.umanitoba.cazSzpubzSzlindekzSzpaperszSzsim.pdf/an-information-theoretic-definition.pdf" onmouseover="self.status='http://citeseer.ist.psu.edu/cache/papers/cs/1049/ftp:zSzzSzftp.cs.umanitoba.cazSzpubzSzlindekzSzpaperszSzsim.pdf/an-information-theoretic-definition.pdf'; return true" onmouseout="self.status=''; return true">PDF</a></font></div>
+&nbsp;&nbsp;<a href="http://citeseer.ist.psu.edu/cachedpage/95071/1">Image</a>&nbsp;&nbsp;<a href="http://citeseer.ist.psu.edu/updatecache/95071">Update</a>&nbsp;&nbsp;<a href="http://citeseer.ist.psu.edu/viewers.html">Help</a><br><br>
+From:&nbsp;&nbsp;<a href="http://citeseer.ist.psu.edu/rd/50260713%2C95071%2C1%2C0.1%2CSource/http%3AqSqqSqwww.cs.umanitoba.caqSq%7ElindekqSqpublication.htm" onmouseover="self.status='http://www.cs.umanitoba.ca/~lindek/publication.htm'; return true" onmouseout="self.status=''; return true">cs.umanitoba.ca/~li<font color="gray">...</font>publication</a> <a href="http://citeseer.ist.psu.edu/site/95071">(more)</a><br>
+<a href="http://citeseer.ist.psu.edu/update/95071">(Enter author homepages)</a>
+</font></center></td></tr></tbody></table><br>
+<script language="JavaScript"><!--
+function rs(pos) { if (document.images) { document.images['r'+pos].src='/rs'+pos+'.gif'; document.images['r'+pos].src='/rd/50260713%2C95071%2C1%2C'+pos+'%2Crate/http%253A%252F%252Ftractatus.ist.psu.edu/icon/rs'+pos+'.gif'; if (pos != 1) { document.images['r1'].src='/r1.gif'; } if (pos != 2) { document.images['r2'].src='/r2.gif'; } if (pos != 3) { document.images['r3'].src='/r3.gif'; } if (pos != 4) { document.images['r4'].src='/r4.gif'; } if (pos != 5) { document.images['r5'].src='/r5.gif'; } } }
+//--></script>
+<table align="right" bgcolor="#cccccc" border="0" cellpadding="3" cellspacing="0" hspace="3" vspace="2">
+<tbody><tr valign="top"><td align="center"><font face="Arial,Helvetica,Geneva" size="2">Rate this article: <a href="javascript:rs(1)"><img src="index_files/r1.gif" name="r1" align="bottom" border="0"></a><a href="javascript:rs(2)"><img src="index_files/r2.gif" name="r2" align="bottom" border="0"></a><a href="javascript:rs(3)"><img src="index_files/r3.gif" name="r3" align="bottom" border="0"></a><a href="javascript:rs(4)"><img src="index_files/r4.gif" name="r4" align="bottom" border="0"></a><a href="javascript:rs(5)"><img src="index_files/r5.gif" name="r5" onclick="javascript:rs(5);" align="bottom" border="0"></a> (best)<br>
+&nbsp; <a href="http://citeseer.ist.psu.edu/addcomment/95071">Comment on this article</a> &nbsp; </font></td></tr>
+</tbody></table>
+<center><a href="http://citeseer.ist.psu.edu/update/95071">(Enter summary)</a></center><br>
+<script language="JavaScript">
+<!--
+var k = new Array();
+k['n'] = "http://citeseer.ist.psu.edu/context/1031819/95071";
+k['1'] = "javascript:rs(1)";
+k['2'] = "javascript:rs(2)";
+k['3'] = "javascript:rs(3)";
+k['4'] = "javascript:rs(4)";
+k['r'] = "/nrelated/1031819/95071";
+k['5'] = "javascript:rs(5)";
+k['c'] = "http://citeseer.ist.psu.edu/correct/95071";
+k['u'] = "http://citeseer.ist.psu.edu/update/95071";
+k['v'] = "/cachedpage/95071/1";
+k['h'] = "http://citeseer.ist.psu.edu/cs";
+k['i'] = "/cachedpage/95071/1";
+browser = navigator.appName;
+version = parseInt(navigator.appVersion);
+n4 = (document.layers) ? true:false;
+mozilla = (browser=="Netscape" && version>=5) ? true:false;
+ie4 = (navigator.userAgent.indexOf("MSIE 4")!=-1) ? true:false;
+ie5 = (navigator.userAgent.indexOf("MSIE 5")!=-1) ? true:false;
+ie6 = (navigator.userAgent.indexOf("MSIE 6")!=-1) ? true:false;
+ie = (navigator.userAgent.indexOf("MSIE")!=-1) ? true:false;
+function GetKey(key) {
+        eventChooser = (!ie) ? key.which : event.keyCode;
+        if (document.all) { key = window.event; }
+        if (n4) { if (key.modifiers && Event.ALT_MASK || key.modifiers && Event.CTRL_MASK) { return; } }
+        if (mozilla) { if (key.altKey || key.ctrlKey) { return; } }
+        which = String.fromCharCode(eventChooser).toLowerCase();
+        for (var i in k) { if (which == i) { window.location = k[i]; } }
+        }
+document.onkeypress = GetKey;
+// -->
+</script>
+<b>Abstract:</b> Similarity is an important and widely used concept.
+Previous definitions of similarity are tied to a particular application
+or a form of knowledge representation. We present an
+informationtheoretic definition of similarity that is applicable as
+long as there is a probabilistic model. We demonstrate how our
+definition can be used to measure the similarity in a number of
+different domains. <a href="http://citeseer.ist.psu.edu/update/95071">(Update)</a><br><br>
+<font color="#907050" size="-1"><b> Cited by: &nbsp; <a href="http://citeseer.ist.psu.edu/context/1031819/95071">More</a></b></font><br>
+<a class="tl" href="http://citeseer.ist.psu.edu/761592.html">Exploring the Potential of Semantic Relatedness in.. - Müller, Gurevych</a>
+ 
+ &nbsp; <a href="http://citeseer.ist.psu.edu/correct/761592"><font color="#6f6f6f">(Correct)</font></a><br>
+<a class="tl" href="http://citeseer.ist.psu.edu/huurnink05autoseek.html">Autoseek - Towards A Fully Automated Video Search System - Huurnink (2005)</a>
+ 
+ &nbsp; <a href="http://citeseer.ist.psu.edu/correct/760514"><font color="#6f6f6f">(Correct)</font></a><br>
+<a class="tl" href="http://citeseer.ist.psu.edu/759763.html">Thinking Beyond the Nouns -- Computing Semantic Relatedness .. - Iryna Gurevych Eml (2006)</a>
+ 
+ &nbsp; <a href="http://citeseer.ist.psu.edu/correct/759763"><font color="#6f6f6f">(Correct)</font></a><br>
+<br>
+<font color="#907050" size="-1"><b> Active bibliography (related documents): &nbsp; <a href="http://citeseer.ist.psu.edu/cs?q=dbnum%3D1%2CDID%3D95071%2Ccluster%3Dnone%2Cqtype%3Dactive:">More</a> &nbsp; <a href="http://citeseer.ist.psu.edu/nrelated/1031819/95071">All</a></b></font><br>
+<b><i>0.6</i></b>: &nbsp; <a class="tl" href="http://citeseer.ist.psu.edu/16998.html">Automatic Retrieval and Clustering of Similar Words - Lin (1998)</a>
+ 
+ &nbsp; <a href="http://citeseer.ist.psu.edu/correct/16998"><font color="#6f6f6f">(Correct)</font></a><br>
+<b><i>0.2</i></b>: &nbsp; <a class="tl" href="http://citeseer.ist.psu.edu/742536.html">Ontology-Based Feature Transformations: - Data-Driven Approach Filip</a>
+ 
+ &nbsp; <a href="http://citeseer.ist.psu.edu/correct/742536"><font color="#6f6f6f">(Correct)</font></a><br>
+<b><i>0.1</i></b>: &nbsp; <a class="tl" href="http://citeseer.ist.psu.edu/resnik99semantic.html">Semantic Similarity in a Taxonomy: An Information-Based Measure.. - Resnik (1999)</a>
+ 
+ &nbsp; <a href="http://citeseer.ist.psu.edu/correct/101078"><font color="#6f6f6f">(Correct)</font></a><br>
+<br>
+<font color="#907050" size="-1"><b> Similar documents based on text: &nbsp; <a href="http://citeseer.ist.psu.edu/cs?q=dbnum%3D1%2CDID%3D95071%2Ccluster%3Dnone%2Cqtype%3Dtextsim:">More</a> &nbsp; <a href="http://citeseer.ist.psu.edu/nrelated/1031819/95071">All</a></b></font><br>
+<b><i>0.1</i></b>: &nbsp; <a class="tl" href="http://citeseer.ist.psu.edu/436264.html">Software Reuse and Reusability Metrics and Models - Frakes, Terry (1996)</a>
+ 
+ &nbsp; <a href="http://citeseer.ist.psu.edu/correct/436264"><font color="#6f6f6f">(Correct)</font></a><br>
+<b><i>0.1</i></b>: &nbsp; <a class="tl" href="http://citeseer.ist.psu.edu/pantel98spamcop.html">SpamCop: A Spam Classification &amp; Organization Program - Pantel, Lin (1998)</a>
+ 
+ &nbsp; <a href="http://citeseer.ist.psu.edu/correct/199924"><font color="#6f6f6f">(Correct)</font></a><br>
+<b><i>0.1</i></b>: &nbsp; <a class="tl" href="http://citeseer.ist.psu.edu/lin98using.html">Using Collocation Statistics in Information Extraction - Dekang Lin (1998)</a>
+ 
+ &nbsp; <a href="http://citeseer.ist.psu.edu/correct/206529"><font color="#6f6f6f">(Correct)</font></a><br>
+<br>
+<font color="#907050" size="-1"><b> Related documents from co-citation: &nbsp; <a href="http://citeseer.ist.psu.edu/cs?q=dbnum%3D1%2CGID%3D1031819%2Ccluster%3Dnone%2Cqtype%3Dcocitation:">More</a> &nbsp; <a href="http://citeseer.ist.psu.edu/nrelated/1031819/95071">All</a></b></font><br>
+<b><i>16</i></b>: &nbsp; <a class="tl" href="http://citeseer.ist.psu.edu/resnik95using.html">Using information content to evaluate semantic similarity in a taxonomy</a>
+ - Resnik<br>
+<b><i>13</i></b>: &nbsp; <a class="cl" href="http://citeseer.ist.psu.edu/context/395383/0">Semantic similarity based on corpus statistics and lexical taxonomy (context)</a> - Jiang, Conrath - 1997<br>
+<b><i>9</i></b>: &nbsp; <a class="tl" href="http://citeseer.ist.psu.edu/resnik99semantic.html">Semantic similarity in a taxonomy: An information-based measure and its applicat..</a>
+ - Resnik - 1999<br>
+<br>
+<font color="#907050" size="-1"><b> BibTeX entry: &nbsp; <a href="http://citeseer.ist.psu.edu/update/95071">(Update)</a></b></font><br>
+<br>
+<font size="-1">D. Lin, "An information-theoretic definition of
+similarity," in International Conference on Machine Learning, 1998.
+http://citeseer.ist.psu.edu/95071.html &nbsp; <a href="http://citeseer.ist.psu.edu/check/1031819">More</a></font><br><!--gbr--><br><!--gbr2--><pre>@inproceedings{ lin98informationtheoretic,
+    author = "Dekang Lin",
+    title = "An information-theoretic definition of similarity",
+    booktitle = "Proc. 15th International Conf. on Machine Learning",
+    publisher = "Morgan Kaufmann, San Francisco, CA",
+    pages = "296--304",
+    year = "1998",
+    url = "citeseer.ist.psu.edu/95071.html" }</pre>
+<!--kbr--><!--kbr2--><font color="#907050" size="-1"><b> Citations (may not include all citations):</b></font><br>
+2319 &nbsp;
+<a class="cl" href="http://citeseer.ist.psu.edu/context/9672/0">Elements of information theory (context)</a> - Cover, Thomas - 1991<br>
+1543 &nbsp;
+<a class="cl" href="http://citeseer.ist.psu.edu/context/14253/0">Probabilistic Reasoning in Intelligent Systems: Networks of .. (context)</a> - Pearl - 1988<br>
+503 &nbsp;
+<a class="cl" href="http://citeseer.ist.psu.edu/context/7407/0">Instance-Based Learning Algorithms (context)</a> - Aha, Kibler et al. - 1991<br>
+269 &nbsp;
+<a class="cl" href="http://citeseer.ist.psu.edu/context/2384/0">Toward Memory-based Reasoning (context)</a> - Stanfill, Waltz - 1986<br>
+181 &nbsp;
+<a class="cl" href="http://citeseer.ist.psu.edu/context/20773/0">WordNet: An on-line lexical database (context)</a> - Miller - 1990<br>
+168 &nbsp;
+<a class="tl" href="http://citeseer.ist.psu.edu/pereira93distributional.html">Distributional Clustering of English Words</a>
+ - Pereira, Tishby et al. - 1993<br>
+129 &nbsp;
+<a class="cl" href="http://citeseer.ist.psu.edu/context/42744/0">Representing and Reasoning with Probabilistic Knowledge (context)</a> - Bacchus - 1988<br>
+117 &nbsp;
+<a class="cl" href="http://citeseer.ist.psu.edu/context/52228/0">Features of similarity (context)</a> - Tversky - 1977<br>
+114 &nbsp;
+<a class="tl" href="http://citeseer.ist.psu.edu/resnik95using.html">Using information content to evaluate semantic similarity in..</a>
+ - Resnik<br>
+84 &nbsp;
+<a class="tl" href="http://citeseer.ist.psu.edu/hindle90noun.html">Noun classification from predicate-argument structures</a>
+ - Hindle - 1990<br>
+49 &nbsp;
+<a class="cl" href="http://citeseer.ist.psu.edu/context/122065/0">Overview of the first text retrieval conference (context)</a> - Harman - 1993<br>
+45 &nbsp;
+<a class="tl" href="http://citeseer.ist.psu.edu/584150.html">Disambiguating noun groupings with respect to wordnet senses</a>
+ - Resnik<br>
+34 &nbsp;
+<a class="cl" href="http://citeseer.ist.psu.edu/context/114117/0">Contextual correlates of semantic similarity (context)</a> - Miller, Charles - 1991<br>
+31 &nbsp;
+<a class="tl" href="http://citeseer.ist.psu.edu/grishman94generalizing.html">Generalizing automatically generated selectional patterns</a>
+ - Grishman, Sterling - 1994<br>
+24 &nbsp;
+<a class="tl" href="http://citeseer.ist.psu.edu/alshawi94training.html">Training and scaling preference functions for disambiguation</a>
+ - Alshawi, Carter - 1994<br>
+20 &nbsp;
+<a class="cl" href="http://citeseer.ist.psu.edu/context/176640/0">Experiments on linguistically based term associations (context)</a> - Ruge - 1992<br>
+20 &nbsp;
+<a class="tl" href="http://citeseer.ist.psu.edu/wu94verb.html">Verb semantics and lexical selection</a>
+ - Wu, Palmer - 1994<br>
+19 &nbsp;
+<a class="tl" href="http://citeseer.ist.psu.edu/lin93principlebased.html">Principle-based parsing without overgeneration</a>
+ - Lin - 1993<br>
+18 &nbsp;
+<a class="cl" href="http://citeseer.ist.psu.edu/context/447386/0">Information retrieval based on conceptual distance in is-a h.. (context)</a> - Lee, Kim et al. - 1989<br>
+10 &nbsp;
+<a class="cl" href="http://citeseer.ist.psu.edu/context/561770/0">Information Retrieval (context)</a> - Frakes, BaezaYates - 1992<br>
+10 &nbsp;
+<a class="cl" href="http://citeseer.ist.psu.edu/context/561771/0">Principar---an efficient (context)</a> - Lin - 1994<br>
+2 &nbsp;
+<a class="cl" href="http://citeseer.ist.psu.edu/context/176641/0">Random House College Thesaurus (context)</a> - Stein, Flexner - 1984<br>
+1 &nbsp;
+<a class="cl" href="http://citeseer.ist.psu.edu/context/561772/0">Development and application ofa metric on semantic nets (context)</a> - Rada, Mili et al. - 1989<br><br><img src="index_files/docyear95071.png">
+<br><font size="-1"><br>The graph only includes citing articles where the year of publication is known.</font><br><br><font color="#907050" size="-1"><b> Documents on the same site (http://www.cs.umanitoba.ca/~lindek/publication.htm):  &nbsp; <a href="http://citeseer.ist.psu.edu/site/95071">More</a></b></font><br>
+<a class="tl" href="http://citeseer.ist.psu.edu/15113.html">PRINCIPAR---An Efficient, Broad-coverage, Principle-based Parser - Dekang Lin</a>
+  &nbsp; <a href="http://citeseer.ist.psu.edu/correct/15113"><font color="#6f6f6f">(Correct)</font></a><br>
+<a class="tl" href="http://citeseer.ist.psu.edu/dorr95efficient.html">Efficient Parsing for Korean and English: A Parameterized.. - Bonnie Dorr (1995)</a>
+  &nbsp; <a href="http://citeseer.ist.psu.edu/correct/35472"><font color="#6f6f6f">(Correct)</font></a><br>
+<a class="tl" href="http://citeseer.ist.psu.edu/41721.html">Extracting Collocations from Text Corpora - Lin (1998)</a>
+  &nbsp; <a href="http://citeseer.ist.psu.edu/correct/41721"><font color="#6f6f6f">(Correct)</font></a><br>
+<br>
+
+<!-- ddv: 0.1 did: 95071 -->
+<!-- rcm: activebib: 16998 121341 742536 101078 citedby: 761592 760514 759763 cocitation: 27685 101078 onsamesite: 15113 35472 41721 cites: 104880 42764 588711 99819 579179 584150 27685 579319 text: 436264 16998 199924 206529 --><!--kbr--><!--kbr2--><!-- abs --><font size="-1"><a href="http://citeseer.ist.psu.edu/rd/0/http%3AqSqqSqciteseer.ist.psu.eduqSqonline-nature01qSq" onmouseover="self.status='http://citeseer.ist.psu.edu/online-nature01/'; return true" onmouseout="self.status=''; return true">Online articles have much greater impact</a> &nbsp; <a href="http://citeseer.ist.psu.edu/rd/0/http%3AqSqqSqciteseer.ist.psu.eduqSqlawrence99digital.html" onmouseover="self.status='http://citeseer.ist.psu.edu/lawrence99digital.html'; return true" onmouseout="self.status=''; return true">More about CiteSeer.IST</a> &nbsp; <a href="http://citeseer.ist.psu.edu/rd/0/http%3AqSqqSqciteseer.ist.psu.eduqSqcs%3Fsf%3D1" onmouseover="self.status='http://citeseer.ist.psu.edu/cs?sf=1'; return true" onmouseout="self.status=''; return true">Add search form to your site</a> &nbsp; <a href="http://citeseer.ist.psu.edu/rd/0/http%3AqSqqSqciteseer.ist.psu.eduqSqsubmitDocument.html" onmouseover="self.status='http://citeseer.ist.psu.edu/submitDocument.html'; return true" onmouseout="self.status=''; return true">Submit documents</a> &nbsp; <a href="http://citeseer.ist.psu.edu/feedback.html">Feedback</a> &nbsp; <!-- exs --><!-- exe --><br></font><!-- abe --><br><!--kbr--><!--kbr2--><font size="-1">CiteSeer.IST - Copyright <a href="http://www.psu.edu/">Penn State</a> and <a href="http://www.nec-labs.com/">NEC</a></font><br>
+<script language="JavaScript">
+<!--
+if (window != top) top.location.href = location.href;
+// -->
+</script>
+<!--done-->
+<!-- Time: 2.1483 Browser: Netscape 5; Host: 62.204.207.53 UID: 50260713 Request ID: 44609 LM: Mon, 26 Feb 2007 17:08:35 GMT E: Mon, 26 Feb 2007 17:08:35 GMT Cached: 0 -->
+</span></body></html>

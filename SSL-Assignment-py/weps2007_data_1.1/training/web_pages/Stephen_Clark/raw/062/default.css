@@ -1,0 +1,145 @@
+/* new default.css created by AppliedTheory on 8/27/01 */
+/* updated 12/04/01 by cab/athy for Phase 2 class tags */
+
+/* color codes:	#660000 = brick red
+			#333366 = dark blue
+			#0000ff = bright blue
+			#ccccff = pale blue
+*/
+			
+
+TD, BR, UL, BODY, P, SMALL, A, BLOCKQUOTE, DIR, OL {
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	FONT-SIZE: 9pt;
+	}
+
+H6, H5, H4, H3, H1 {
+	MARGIN-TOP: 12pt;
+	MARGIN-BOTTOM: 12pt;
+	}
+A {
+	MARGIN-TOP: 0em;
+	MARGIN-BOTTOM: 0px;
+	}
+H6, H5, H1 {
+	COLOR: #660000; 
+	}	
+H4, H3, H2 {
+	COLOR: black; 
+	}	
+
+UL {
+	COLOR: #000000; 
+	FONT-SIZE: 9pt; 
+	FONT-WEIGHT: 500; 
+	}
+
+BODY {
+	BACKGROUND-COLOR: #ffffff; 
+	COLOR: #000000;
+	FONT-SIZE: 9pt; 
+	}
+P, BLOCKQUOTE, DIR, OL {
+	FONT-SIZE: 9pt; 
+	}
+SMALL {
+	FONT-SIZE: 9pt;
+	}
+A.tier1 {
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	FONT-SIZE: 11pt;
+	FONT-WEIGHT: 700;
+	MARGIN-TOP: 0em;
+	MARGIN-BOTTOM: 0px;
+	COLOR: #660000;
+	TEXT-DECORATION: none;
+}
+H6 {
+	FONT-SIZE: 9pt; 
+	FONT-WEIGHT: normal; 
+	font-style : italic;
+	}
+H5 {
+	FONT-SIZE: 9pt;
+	FONT-WEIGHT: 400;
+	}
+H4 {
+	FONT-SIZE: 9pt; 
+	FONT-WEIGHT: normal; 
+	font-style : italic;
+	MARGIN-TOP: 12pt;
+	MARGIN-BOTTOM: 12pt;
+	}
+H3 {
+	FONT-SIZE: 10pt; 
+	FONT-WEIGHT: 700; 
+	MARGIN-TOP: 12pt;
+	MARGIN-BOTTOM: 12pt;
+	}
+H2 {
+	FONT-SIZE: 12pt; 
+	FONT-WEIGHT: 700; 
+	MARGIN-TOP: 6px;
+	MARGIN-BOTTOM: 0px;
+	}
+H2.leftnav {
+	FONT-SIZE: 10pt; 
+	FONT-WEIGHT: 700; 
+	MARGIN-BOTTOM: 0px; 
+	MARGIN-TOP: 6px;
+	}
+H1 {
+	FONT-SIZE: 14pt; 
+	FONT-WEIGHT: 700; 
+	}
+
+/*  all types of the left nav links look the same, no matter whether unvisited, active, visited or hovering */
+
+A	{
+	COLOR: #0000ff; 
+	FONT-SIZE: 9pt; 
+	FONT-WEIGHT: 500; 
+	TEXT-DECORATION: underline;
+	}
+A.small:link, A.small:active, A.small:visited, A.small:hover {
+	FONT-SIZE: 8pt; 
+	}
+A.large:link, A.large:active, A.large:visited, A.large:hover {
+	FONT-SIZE: 11pt; 
+	FONT-WEIGHT: 700; 
+	}
+A.bureau, A.bureau:link, A.bureau:active, A.bureau:visited, A.bureau:hover {
+	COLOR: #333366;
+	FONT-SIZE: 10pt;
+	FONT-WEIGHT: 700;
+	MARGIN-BOTTOM: 6px;
+	MARGIN-TOP: 6px;
+	TEXT-DECORATION: none;
+	}
+.leftnavbold {
+	COLOR: #000000; 
+	FONT-SIZE: 9pt; 
+	FONT-WEIGHT: 700; 
+	TEXT-DECORATION: none;
+	}
+
+/* new class tags added for Phase 2
+   "highlightshdr" for the header in the top bar of the hightlights box
+   "toptier3ln" for the top-most tier 3 name that appears in the left nav
+*/
+
+.highlightshdr {
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	FONT-SIZE: 10pt;
+	FONT-WEIGHT: 700;
+	COLOR: #ffffff;
+	BACKGROUND-COLOR: #333366;
+	}
+
+.toptier3ln {
+	FONT-SIZE: 12pt;
+	FONT-WEIGHT: 700;
+	COLOR: #000000;
+	TEXT-DECORATION: none;
+	FONT-FAMILY: "Times New Roman", serif;
+	}

@@ -1,0 +1,2369 @@
+@import url(searchbox.css);
+/* this rule must be removed and the content of the stylesheet must be included in this stylesheet when all is well :-), then also remove all .search-styles */
+
+/* dos */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff url(/static/img/wereldbol.jpg) no-repeat fixed right bottom;
+}
+p, li, td, th, h1, h2, h3, h4, h5, #headernav, .breadcrumb, #footerbuttons, #footernav, #footernote, form, input, button, select, textarea, div {
+    font: x-small/1.2em Arial, Helvetica, sans-serif;
+    color: #003580; /* de boxmodelhack voor IE 5.0 en 5.5 (Win), zie http://www.tantek.com/CSS/Examples/boxmodelhack.html */
+    voice-family: "\"}\"";
+    font: small/1.2em Arial, Helvetica, sans-serif;
+}
+#hack {
+    /* lege regel, anders valt de volgende regel weg in IE5/5.5 (Win) */
+}
+.clearleft {
+    clear: left;
+}
+.small {
+    font-size: 88%;
+}
+.NB {
+    color: #b30000;
+    font-weight: bold;
+    font-family: "Arial Black", Arial, Helvetica, sans-serif;
+}
+.inlineJsRequired, .blockJsRequired {
+    display: none;
+}
+p.show {
+    font-weight: bold;
+}
+div.error {
+    min-height: 2.4em;
+}
+div.error p, div.error li {
+    font-weight: bold;
+    color: #b30000 !important;
+}
+div.error p {
+/* hack voor IE 5 (Mac), position: relative is nodig voor IE 6 (Win) anders is ie soms niet zichtbaar, echter dat mag weer niet voor IE 5 (Mac) \*/
+    position: relative;
+/* einde hack */
+    margin: 0;
+    padding: .6em 0 0 1.9em !important;
+}
+div.error ul {
+    margin-top: 0;
+}
+p.error {
+/* hack voor IE 5 (Mac), position: relative is nodig voor IE 6 (Win) anders is ie soms niet zichtbaar, echter dat mag weer niet voor IE 5 (Mac) \*/
+    position: relative;
+/* einde hack */
+    margin: 0;
+    padding: .6em 0 0 2.85em !important;
+    font-weight: bold;
+    color: #b30000 !important;
+    min-height: 2.4em;
+}
+.error span {
+    font-weight: normal
+}
+span.exclamation {
+    background-color: #b30000;
+    color: #fff;
+    text-decoration: blink;
+    font: bold 140%/180% "Arial Black", Arial, Helvetica, sans-serif;
+    margin: .15em .15em .15em .6em;
+    position: absolute;
+}
+p.error a, div.error a {
+    color: #b30000;
+}
+p.error a:hover, div.error a:hover {
+    color: #FEBA02;
+}
+p.nomatch {
+    margin-top: 0;
+    font-style: italic;
+}
+p.intro {
+    margin-top: 0;
+}
+p.test {
+    margin-bottom: 5em;
+}
+p.address {
+    font-style: italic;
+    margin: 0 0 .6em !important;
+}
+img.hotel {
+    border: 2px solid #FEBA02 !important;
+}
+form {
+    margin: 0;
+    padding: 0;
+}
+input, select {
+    padding: 0;
+    margin: 0;
+}
+a img {
+    border: none !important;
+}
+a:link {
+    color: #0896FF;
+    font-weight: bold;
+    text-decoration: underline;
+}
+a:visited {
+    color: #537CB4;
+    font-weight: bold;
+    text-decoration: underline;
+}
+a:hover {
+    color: #FEBA02;
+}
+a:active {
+    color: #B30000;
+}
+h1 {
+    margin: 0;
+    font-size: 144%;
+    font-weight: bold;
+}
+h2 {
+    margin: 0 0 .5em .5em;
+    padding-top: 1.5em;
+    font-size: 120%;
+    font-weight: bold;
+}
+h3 {
+    margin: 0;
+    font-size: 120%;
+    font-weight: bold;
+}
+h4 {
+    font-weight: bold;
+    margin: 1.2em 0 0;
+}
+h5 {
+    font-weight: bold;
+    margin: 1em 0 0;
+}
+h6 {
+    font-size: 88%;
+    font-style: italic;
+    font-weight: normal;
+    margin: 0;
+}
+textarea {
+    display: block;
+}
+
+/* link masking */
+.encrypted {
+  visibility: hidden;
+}
+
+
+/* new background + max-width */
+html, body { height: 100%; }
+body {
+	background: #b0d3f3 url(/static/img/newbg_1100.gif) top center repeat-y;
+	text-align: center;
+}
+#backgroundbar {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 7em;
+	background-color: #bb99ee;
+	/* XXX: omit this for now? */
+	display: none;
+}
+#bodyconstraint {
+	height: 100%;
+}
+*>#bodyconstraint { height: auto; min-height: 100%; }
+#bodyconstraint-inner {
+	height: 100%;
+	zoom: 1;
+}
+
+#bodyconstraint {
+	position: relative;
+	z-index: 2;
+	max-width: 1100px;
+	min-width: 620px;
+	width: expression((this.offsetParent.clientWidth < 1100) ? 'auto' : 1100);
+	margin: 0 auto;
+	background: #ffffff url(/static/img/innerbg.gif) top center repeat-y;
+	text-align: left;
+}
+#bodyconstraint-inner {
+	position: relative;
+	border-width: 0 3px;
+	border-style: double;
+	border-color: #a0a0a0;
+}
+/* new background + max-width */
+
+/* banner image */
+#lp-banner * { zoom:1; }
+#lp-banner {
+	position: relative;
+	margin: -140px 0 10px 0;
+	z-index: 50;
+	height: 214px;
+	padding: 0 16px;
+}
+#lp-banner-left,
+#lp-banner-right {
+	position: absolute;
+	top: 0px;
+	width: 16px;
+	height: 214px;
+}
+#lp-banner-left { left: 0px; }
+#lp-banner-right { right: 0px; }
+#lp-banner-mid {
+	position: relative;
+	height: 214px;
+}
+/* IE5 */
+#lp-banner-left { background: transparent url(/static/img/postcard/left.gif) top left no-repeat; }
+#lp-banner-right { background: transparent url(/static/img/postcard/right.gif) top left no-repeat; }
+#lp-banner-mid { background: transparent url(/static/img/postcard/mid.gif) top left repeat-x; }
+/* IE6 */
+#lp-banner-left, #lp-banner-right, #lp-banner-mid { filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0) }
+#lp-banner-left { filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,src='/static/img/postcard/left.png'); }
+#lp-banner-right { filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,src='/static/img/postcard/right.png'); }
+#lp-banner-mid { filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src='/static/img/postcard/mid.png'); }
+/* good browsers */
+#lp-banner-left[id] { background: transparent url(/static/img/postcard/left.png) top left no-repeat; }
+#lp-banner-right[id] { background: transparent url(/static/img/postcard/right.png) top left no-repeat; }
+#lp-banner-mid[id] { background: transparent url(/static/img/postcard/mid.png) top left repeat-x; }
+#lp-banner-inner {
+	position: relative;
+	display: block;
+	padding-top: 15px;
+}
+#lp-banner-image {
+	height: 160px;
+	background-position: center center;
+}
+#lp-banner-text {
+	text-align: right;
+	color: #003580;
+	font-family: "Arial Black", Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	line-height: 30px;
+}
+/* banner image */
+
+
+table, tr, td, th {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-spacing: 0;
+    vertical-align: top;
+    text-align: left;
+}
+
+
+/* bookings suggest */
+#suggest_popup {
+   position: absolute;
+   top: 0; left: 0;
+   z-index: 9999;
+   cursor: default;
+   overflow: hidden;
+}
+.suggest_entry {
+   display: block;
+   position: relative;
+   padding: 0 12em 0 2px; /* 12em seems to accomodate all translations of "hotels nearby" */
+}
+.suggest_entry strong {
+	background-color: #fff0c4;
+}
+.suggest_entry_selected {
+	background-color: #ccccff;
+}
+.suggest_entry_selected strong {
+	background-color: transparent;
+}
+.suggest_dist {
+   position: absolute;
+   top: 0px;
+   right: 4px;
+   color: #88e;
+}
+#suggest_popup iframe {
+   position: absolute;
+   width: 1000px;
+   height: 1000px;
+}
+#suggest_popup table {
+   position: relative;
+   border: 1px solid #808080;
+   z-index: 1;
+}
+#suggest_popup td {
+   background-color: #ffffff;
+   padding: 3px;
+}
+/* bookings suggest */
+
+
+/* blauwe tabel */
+table.generaltable {
+    border: 1px solid #0896ff;
+    border-top: none;
+    border-left-width: 5px;
+}
+table.generaltable th {
+    font-weight: bold;
+    margin: 0;
+    border-bottom: 1px dashed #fff;
+    padding: 3px 8px;
+    color: #fff;
+    background-color: #003580;
+}
+table.generaltable td {
+    background-color: #e6edf6;
+    padding: 3px 8px;
+}
+table.generaltable tr.odd td {
+    background-color: #c5d4e9;
+}
+table td.figure, table th.figure {
+    text-align: right;
+}
+/* gele tabel */
+table.generaltable.yellow {
+    width: 100%;
+    background-color: #FFF0C4;
+}
+table.generaltable.yellow th {
+    border-bottom: 1px dashed #779bca;
+    background-color: #feba02;
+}
+table.generaltable.yellow td, table.generaltable tr.odd td table.generaltable.yellow td {
+    background-color: #fff9e7;
+    border-left: 1px solid #0896ff;
+}
+table.generaltable.yellow td.firsttd {
+    border-left: none;
+}
+table.generaltable.yellow tr.odd td {
+    background-color: #fff0c4 !important;
+}
+tr.extendedRow td {
+    padding: 0 !important;
+}
+tr.extendedRow div {
+    border: 1px solid #feba02;
+    background-color: #fff9e7;
+    padding: .6em;
+    margin: 0 .6em .6em;
+}
+tr.extendedRow div table.generaltable.yellow {
+    width: 94%; /* BMH */
+    voice-family: "\"}\"";
+    width: 100%;
+}
+#hack {
+    /* leeg */
+}
+tr.extendedRow div table, tr.extendedRow div td {
+    border: none !important;
+}
+tr.extendedRow div td {
+    padding: 3px 8px 0 !important;
+}
+tr.extendedRow div p {
+    margin: 0 0 .6em !important;
+}
+tr.extendedRow div h4 {
+    margin: 0;
+}
+tr.extendedRow div ul {
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+tr.extendedRow img {
+    float: left;
+    width: 90px;
+    margin-right: .6em;
+}
+div.destinationsNearby, div.airportsNearby, div.airportShuttle {
+    margin-right: -5px;
+}
+/* hack voor IE5 (Mac) \*/
+div.destinationsNearby, div.airportsNearby, div.airportShuttle {
+    margin-right: 0;
+}
+/* Einde hack */
+div.destinationsNearby, div.airportsNearby, div.airportShuttle, div.mapImage {
+    margin-top: 1.2em;
+    background: transparent url(/static/img/destinationsNearby1.png) no-repeat 100% 0;
+    height: 34px;
+    margin-bottom: -1.2em;
+    border-right: 1px solid #fff;
+}
+.horFeatBlocks div.destinationsNearby, .horFeatBlocks div.airportsNearby, .horFeatBlocks div.airportShuttle, .horFeatBlocks div.mapImage {
+    margin-top:  0;
+}
+table.generaltable.yellow th.destNear, table.generaltable.yellow th.airNear, table.generaltable.yellow th.airShut, .blockleft .generalblock .mapImg, .blockleft .generalblock div {
+    background: #feba02 url(/static/img/destinationsNearby2.png) no-repeat right bottom;
+}
+div.airportsNearby {
+    background-image: url(/static/img/airportsNearby1.png);
+    clear: both;
+}
+table.generaltable.yellow th.airNear {
+    background-image:url(/static/img/airportsNearby2.png);
+}
+div.airportShuttle {
+    background-image: url(/static/img/airportShuttle1.png);
+    clear: both;
+}
+table.generaltable.yellow th.airShut {
+    background-image:url(/static/img/airportShuttle2.png);
+}
+div.mapImage {
+    background-image: url(/static/img/mapImage1.png);
+    background-position: 100% 0;
+}
+.blockleft .generalblock .mapImg {
+    background-image:url(/static/img/mapImage2.png);
+}
+div.but {
+    text-align: right !important;
+}
+div.but button {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;  /* voor IE (Win) */
+}
+img.help {
+    cursor: help;
+    vertical-align: -3px;
+}
+img.helpSmall {
+    cursor: help;
+    position: relative;
+    top: 1px;
+    margin-left: .3em;
+}
+
+/* header, left, right en footer vormen de basis indeling van de pagina */
+#header {
+    background: transparent url(/static/img/b25logo/beeldmerk3.png) no-repeat 8px 65px;
+    height: 127px;
+}
+/* onderstaande i.v.m. het vergroten van het font in de client moet er eigenlijk een min-height staan en de hoogte niet vastgelgd zijn. IE (Win) begrijpt dit niet vandaar de volgende hogeschool css ;-) */
+/* hack voor IE 5 (Mac) \*/
+html>body>#header {
+    height: auto;
+    min-height: 127px;
+}
+/*  Einde hack */
+#basiclayout {
+    clear: both;
+    vertical-align: top;
+    margin: 1.2em 0 2.4em;
+    width: 100%;
+}
+#left {
+    width: 238px;
+    /* border-right: 1px dashed #779bca; */
+    margin: 1em 0 2em;
+    /* padding: 0 12px 0 8px; */
+    padding: 0 8px 0 8px;
+}
+#fullwidth {
+    margin: 1.8em 12px 2.4em 8px;
+    min-height: 200px;
+}
+#right {
+    margin: 1em 0 2em 0;
+    padding: 0 8px 0 12px;
+}
+/* Speciaal voor de homepage, gaat mis in IE5.0 voor Mac */
+.leftwide {
+    width: 50% !important;
+}
+.rightsmall {
+    width: 226px !important;
+}
+#footer {
+    border-top: 1px dashed #779BCA;
+	margin: 0 8px;
+    padding: 8px;
+    margin-bottom: 3em;
+}
+
+/* binnen header */
+#headertop {
+    background-color: #003580;
+    /*border-bottom: 1px dashed #FFF;*/
+	border-bottom: 1px solid #fff;
+    height: 65px; /* BMH */
+    voice-family: "\"}\"";
+    voice-family: inherit;
+    height: 64px;
+}
+#hack {
+    /* leeg */
+}
+#headertop img { /* om er voor te zorgen dat er geen ruimte onder het img ontstaat (geldt niet in IE, maar dat is feitelijk een bug) */
+    display: block;
+}
+#beeldmerk {
+    position: relative;
+    top: 10px;
+    left: 8px;
+    z-index: 15;
+}
+#woordmerk {
+    position: absolute;
+    top: 16px;
+    left: 123px;
+    z-index: 20;
+}
+img#woordmerkAlt {
+    display: none !important;
+}
+#tagline {
+    position: absolute;
+    top: 42px;
+    left: 159px;
+    z-index: 11;
+}
+#banner {
+    position: absolute;
+    right: 0px;
+    top: 0;
+    z-index: 10;
+}
+#headermiddle {
+    background: #779BCA url(/static/img/b25logo/beeldmerk2.png) no-repeat 8px 0px;
+}
+#headermiddle .logolink {
+    display: block;
+    float: left;
+    width: 114px;
+    height: 62px;
+    margin: 0 8px;
+}
+#headerlanguage {
+    float: left;
+}
+#headerlanguage img {
+    background-color: #779bca;
+    margin: 2px;
+}
+#headernav {
+    text-align: right;
+    padding: 6px 8px;
+    color: #003580;
+    font-weight: bold;
+    min-height: 15px;
+}
+#headernav a:link, #headernav a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+#headernav a:hover {
+    color: #feba02;
+    text-decoration: underline;
+}
+#headernav a:active {
+    color: #b30000;
+    text-decoration: underline;
+}
+.breadcrumb {
+    padding: 3px 8px 3px 150px;
+    line-height: 1.5em;
+    color: #003580;
+    font-weight: bold;
+    text-transform: lowercase;
+    /* height: 2.4em; in combinatie met de opmerking bij de header, maar het werkt nog niet helemaal */
+}
+.breadcrumb span {
+    font-weight: bold;
+    font-size: 88%;
+    display: none; /* sorry, we need the space */
+}
+.postcardWrap {
+    padding-right: 50%;
+}
+
+
+/* binnen left */
+#left h2 {
+    clear: both;
+}
+#left.leftwide table.generaltable {
+    width: 100%;
+}
+#left.leftwide table.generaltable td {
+    width: 33.33%;
+}
+#left.leftsmall * {
+    font-size: 88%;
+}
+#left.leftsmall * * {
+    font-size: 100%;
+}
+#left.leftsmall h2 {
+    font-size: x-small !important;  /* BMH */
+    voice-family: "\"}\"";
+    font-size: small !important;
+}
+#hack {
+    /* lege regel, anders valt de volgende regel weg in IE5/5.5 (Win) */
+}
+#left.leftsmall p.error {
+    padding-left: .6em !important;
+}
+.search, .generalblock {
+    border: 1px solid #0896FF;
+    border-top: none;
+    border-left-width: 5px;
+}
+.search {
+    margin-bottom: 3.6em;
+}
+div.dateerrors {
+    margin-top: 1em;
+}
+/* hack voor IE 5 (Mac) \*/
+div.dateerrors {
+    position: relative;
+    z-index: 2000;
+    margin: 0 0 0 -.6em;
+}
+/* einde hack */
+div.dateerrors p {
+    padding: 0 .6em 0 0;
+}
+div.spacebeneath {
+    margin-bottom: 1.5em;
+}
+.search p {
+    padding: 0 .6em;
+}
+.search p.browse {
+    margin: 0;
+    font-style: italic;
+    font-weight: normal;
+}
+.search h2, .generalblock h2 {
+    margin: 0;
+    padding: .15em .6em;
+    color: #fff;
+    background-color: #003580;
+}
+.search .inoutSmall {
+    border-top: 1px solid #e6edf6;
+    margin-top: .6em;
+}
+.search .inoutSmall .dateerrors {
+    margin: .6em;
+}
+.search h3 {
+    padding: .15em .6em;
+    border-top: 1px solid #e6edf6;
+    margin-top: .6em;
+}
+.search h3.firsth3 {
+    border-top: none;
+    margin-top: 0;
+}
+.search h4 {
+    background-color: #FFF9E7;
+    margin: 0;
+    border-top: 1px dashed #779BCA;
+    border-bottom: 4px solid #FEBA02;
+    padding: .15em .6em;
+}
+.search h4 a:visited {
+    color: #0896ff;
+}
+.search .toggle {
+    float: right;
+    margin-right: 8px;
+    margin-top: .3em;
+}
+.search .formcontainer {
+    margin: 0;
+    padding: 0 .6em; /* is nodig om i.v.m. collapsing margins (zie ook http://www.ugcs.caltech.edu/~takoyaki/css-test/escaping_margins/) */
+    background-color: #E6EDF6;
+}
+.search form {
+    margin: 0;
+    background-color: #C5D4E9;
+}
+.search .advcontainer {
+    background-color: #fff9e7;
+    border-bottom: 4px solid #FEBA02;
+    margin-top: .6em;
+}
+.search .advcontainer h4 {
+    background-color: transparent;
+    border-bottom: none;
+}
+.search .advhide {
+    border-bottom: none;
+    background-color: #C5D4E9;
+}
+.search .inputcontainer {
+    padding: 0 .6em;
+}
+.search .inputcontainer table {
+    width: 94%;
+}
+.search .checkarea input {
+    margin: 0;
+}
+.search .checkarea img {
+    margin-right: .6em;
+}
+.search input.text {
+    width: 67%; /* seems to give Firefox 0.9.2 problems, workaround by reloading */
+}
+.leftsmall .search input.text {
+    width: 180px;
+}
+.search td div {
+    padding-right: .6em;
+}
+.search .advcontainer h3 select {
+    margin-left: .6em;
+}
+.search .but {
+    padding: .6em;
+}
+.search .check, .search .radio {
+    margin: 0 .15em 0 0;
+}
+.generalblock {
+    margin-top: 2.4em;
+    background-color: #E6EDF6;
+}
+.generalblock p {
+    border-top: 1px dashed #003580;
+    margin: 0;
+    padding: 5px;
+    height: 67px;
+}
+.generalblock ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.generalblock li {
+    margin: 0;
+    padding: 5px;
+    border-top: 1px dashed #FEBA02;
+    clear: left;
+    min-height: 33px;
+    background-color: #FFF0C4;
+}
+.generalblock .firstInHistory {
+    border-top: 0;
+}
+.generalblock .odd {
+    background-color: transparent;
+}
+.generalblock img.hotelImg {
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 2px 3px 3px 0;
+}
+.generalblock li .address {
+    display: block;
+    margin-left: 33px;
+}
+/* onderstaande i.v.m. het vergroten van het font in de client moet er eigenlijk een min-height staan */
+/* hack voor IE 5 (Mac) \*/
+html>body>div#left>div#leftinner>div.generalblock>p {
+    height: auto;
+    min-height: 67px;
+}
+/*  einde hack */
+img.floatleft {
+    float: left;
+    margin-right: 5px;
+}
+.horFeatBlocks .featBlock1 {
+    width: 31%;
+}
+.horFeatBlocks .featBlock2 {
+    width: 69%;
+}
+.horFeatBlocks .blockleft {
+    margin-right: 1.2em;
+}
+.blockleft .generalblock {
+    margin-top: 0;
+    background-color: #fff9e7;
+}
+.blockleft .generalblock .mapImg {
+    font-size: 100%;
+    background-color: #feba02;
+    line-height: 1.2em;
+}
+.blockleft .generalblock h2 {
+    font-size: 100%;
+    line-height: 1.2em;
+    background-color: transparent;
+    border-bottom: 1px dashed #779bca;
+    padding-left: 8px;
+    margin-left: 0;
+}
+.blockleft .generalblock p {
+    border: none;
+    height: auto;
+    margin: 3px 8px;
+    padding: 0;
+}
+ul.althotels {
+    margin: 0px;
+    padding: 5px;
+    list-style-type: none;
+    border-bottom: 1px solid #fff;
+}
+
+#featMapInc {
+    width: 31%;
+}
+
+/* promoblock “In and around” */
+#destBoxInc .destNear {
+    border-left: 1px solid #FEBA02;
+}
+#destBoxInc td {
+    border-bottom: 1px dashed #FEBA02;
+}
+#searchresultsTmpl #destBoxInc td, #hotelTmpl #destBoxInc td {
+    border-left: none;
+}
+#destBoxInc .firsttd {
+    width: 92px !important;
+    background-color: #FFF0C4;
+}
+#mapthumb {
+    border: 1px solid #003580 !important;
+}
+#destBoxInc .promotd {
+    width: auto !important;
+}
+#destBoxInc h4 {
+    margin: 0;
+    float: left;
+    width: auto;
+    clear: both;
+    padding-right: .6em;
+}
+#destBoxInc .listArea {
+    float: right;
+    width: 18em;
+}
+#searchresultsTmpl #destBoxInc h4, #hotelTmpl #destBoxInc h4, #searchresultsTmpl #destBoxInc .listArea, #hotelTmpl #destBoxInc .listArea {
+    float: none;
+    width: auto;
+}
+#destBoxInc ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+#destBoxInc li {
+    padding-bottom: .3em;
+}
+#destBoxInc div.moreThanTwo {
+    padding: 0 0 .3em 0;
+}
+#destBoxInc div.moreThanTwo a {
+    font-weight: normal !important;
+    font-style: italic;
+}
+
+#moreDestinations {
+    text-align: right;
+}
+
+/* binnen right */
+.largeblocks {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.largeblocks li {
+    border-top: 1px dashed #779BCA;
+    padding: 1em 0 0;
+    min-height: 70px;
+    position: relative; /* om de button-readmore absoluut te kunnen positioneren */
+}
+.largeblocks li.first {
+    border: none;
+}
+img.thumbnail {
+    border: 2px solid #FEBA02;
+    position: absolute;
+}
+.largeblocks li h3, .largeblocks li p { /* Er is nog een probleem in IE 5.0 (Win) met de plaatsing van de h3, die heeft teveel witruimte aan de bovenzijde */
+    padding: 0 0 0 70px;
+    margin: 0;
+}
+.largeblocks li p.price {
+    margin: 0;
+    font-weight: bold;
+}
+div.specialsblock h2 img {
+    vertical-align: -.4em;
+    margin-right: 6px;
+}
+h1.specials {
+    text-align: center;
+    background-color: #FFF9E7;
+    color: #FEBA02;
+    text-transform: uppercase !important;
+    letter-spacing: .3em;
+    line-height: normal;
+    font-size: 175%;
+    border-top: 2px solid #003580;
+    margin-bottom: .6em;
+}
+#rssFormInc {
+    background-color: #FFF9E7;
+    border-top: 1px solid #FEBA02;
+    margin-top: 2.4em;
+}
+.showHideRssBlock {
+    padding: .3em .9em .45em;
+    min-height: 16px;
+}
+#rssBlock .showHideRssBlock {
+    padding: .3em 0 .45em;
+}
+.showHideRssBlock a img {
+    float: left;
+    width: 16px;
+    margin-right: 3px;
+}
+#rssBlock {
+    display: none;
+    padding: 0 .9em .6em;
+    border-bottom: 1px solid #FEBA02;
+}
+#rssFormInc fieldset {
+    border: 0;
+    border-top: 1px solid #CB9502;
+    padding: 0 1.2em .6em;
+    margin: 0;
+    background-color: #FFF0C4;
+}
+#rssFormInc fieldset h4 {
+    float: left;
+    width: 10.8em;
+    margin: 0;
+    padding: .6em 0 0;
+}
+#rssFormInc fieldset h5, #rssFormInc fieldset p {
+    float: left;
+    clear: left;
+    width: 12.3em;
+    font-size: 88%;
+    margin: 0;
+    line-height: 1;
+    text-align: right;
+}
+#rssFormInc fieldset h5 {
+    font-weight: normal;
+    font-style: italic;
+}
+#rssFormInc .inputcontainer {
+    margin-left: 12em;
+    padding: .6em 0;
+}
+#rssFormInc .submitcontainer {
+    margin-left: 12em;
+    padding: 1.2em 0 0;
+    clear: left;
+}
+#rssFormInc .dealType {
+    clear: left;
+}
+#rssFormInc .dealType .inputcontainer {
+    padding-top: 0;
+}
+#rssFormInc #rssLinks {
+    display: none;
+    border-top: 1px solid #CB9502;
+    padding: .3em 1.2em .6em;
+    margin: 1.2em 0 0;
+    background-color: #FFF0C4;
+}
+#rssFormInc ul, #rssFormInc li {
+    margin: 0 0 0 .6em;
+    padding: 0;
+    list-style-type: none;
+}
+#rssLinks div {
+    letter-spacing: 9px;
+    border-bottom: 1px dashed #CB9502;
+    padding-bottom: .6em;
+}
+#rssLinks h5 {
+    margin-bottom: .6em;
+}
+#rssLinks p {
+    margin-top: .6em;
+}
+
+/* disambiguation page */
+#destsWithHotels, #destsWithoutHotels {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: #FFF0C4;
+    border-top: 1px solid #FEBA02;
+}
+#destsWithHotels {
+    margin-bottom: -1px;
+}
+#destsWithoutHotels {
+    background-color: #FFF9E7;
+}
+#destsWithHotels li, #destsWithoutHotels li {
+    padding: .3em;
+    border-bottom: 1px solid #FEBA02;
+}
+#destsWithHotels li {
+    padding: .5em .3em;
+}
+#destsWithHotels li a {
+    font-size: 120%;
+}
+#destsWithHotels li img, #destsWithoutHotels li img {
+    vertical-align: -2px;
+}
+#destsWithoutHotels .near {
+    font-size: 88%;
+    font-style: italic;
+    float: left;
+    width: 6.5em;
+    text-align: right;
+}
+#destsWithoutHotels ul {
+    margin: 0 0 0 6em;
+    padding: 0;
+    list-style-type: none;
+}
+#destsWithoutHotels li li{
+    padding: 0;
+    border: 0;
+    font-size: 88%;
+}
+#destsWithoutHotels .near2 {
+    font-size: 88%;
+    padding-left: .3em;
+    margin-left: 16px;
+}
+#destsWithoutHotels .near2 a {
+    font-weight: normal;
+}
+
+/* hack voor IE 5 (Mac) \*/
+.collist2 ul {
+    float: left;
+    width: auto;
+}
+/* einde hack */
+.collist2 ul {
+    list-style-image: url(/static/img/vinkje.png);
+    margin: 0;
+    padding: 0;
+}
+.collist2 ul li {
+    padding-left: .3em;
+    margin-left: 3em;
+}
+
+.columns div {
+    float: left;
+    width: auto;
+    margin-left: 3.6em;
+}
+.columns div.column1 {
+    margin-left: 0;
+}
+.columns ul {
+    margin: 0 0 0 .65em;
+    padding: 0 0 0 1.2em;
+}
+
+#sortAndDest {
+    padding: .3em;
+    margin: .3em 0 .6em;
+    background-color: #C5D4E9;
+    min-height: 1.5em;
+}
+#destComboInc {
+    text-align: right;
+}
+form.sort {
+    float: left;
+    width: auto;
+}
+form.sort div, #destComboInc form div {
+    font-size: 88%;
+}
+form.sort div *, #destComboInc form div * {
+    font-size: 100%;
+}
+.prefImg {
+    float: right;
+    width: 72px;
+    margin: 3px 8px;
+}
+
+table.hotellist {
+    border-bottom: 2px solid #003580;
+    clear: both;
+    width: 100%;
+}
+table.hotellist td {
+    border-top: 1px dashed #779BCA;
+    padding: 8px 0;
+}
+table.hotellist tr.first td {
+    border: none;
+}
+table.hotellist tr.hotelWarning td {
+    color: #b30000;
+    border-top:1px dashed #b30000;
+}
+.specialsblock h2 {
+    padding-top: 0;
+    margin-top: .6em;
+}
+table.hotellist td h3, table.hotellist td p, table.hotellist td div {
+    padding: 0 8px;
+    margin: 0 !important;
+}
+table.hotellist td h3 span.price {
+    float: right;
+    width: auto;
+    margin-left: .3em;
+}
+table.hotellist td ul {
+    padding: 0 8px;
+    margin: .5em 0 .7em;
+    list-style-type: none;
+}
+table.hotellist .featuredRooms {
+    margin: .6em 0 0 .6em;
+}
+table.hotellist .featuredRooms a {
+    font-weight: normal;
+}
+table.hotellist .featuredRooms th {
+    background-color: #fff0c4;
+    padding: .15em 0;
+    text-transform: capitalize;
+}
+table.hotellist .featuredRooms th.firstThFeatRms {
+    width: 24em;
+    text-align: left;
+}
+table.hotellist .featuredRooms th div {
+    font-weight: bold;
+}
+table.hotellist .featuredRooms td {
+    border-top: 1px solid #fff0c4;
+    padding: .15em 0;
+}
+table.hotellist .featuredRooms tr.lastTrFeatRms td {
+    text-align: right;
+}
+table.hotellist .featuredRooms tr.lastTrFeatRms td a {
+    font-weight: bold;
+}
+table.hotellist .featuredRooms .maxPersons {
+    text-align: center;
+}
+table.hotellist .featuredRooms .roomPrice {
+    width: 10.8em;
+    text-align: right;
+}
+td.roomPrice div {
+    text-align: right;
+    white-space: nowrap;
+    font-weight: bold;
+    color: #b30000;
+}
+td.roomPrice span {
+    text-decoration: line-through;
+    font-weight: normal;
+    color: #003580;
+    font-family: "Times New Roman", Times, serif; /* ivm line-through, bij een sens-serif staat ie midden over de 8, die lijkt daardoor een 0 (in IE) */
+}
+table.hotellist .featuredRooms div, table.hotellist .featuredRooms button {
+    font-size: 88%;
+}
+table.hotellist .featuredRooms button {
+    margin: 0 .6em 0 0;
+    height: 1.6em;
+    padding: 0;
+    line-height: 1em;
+}
+#maxRoomsHelp {
+    font-size: 88%;
+    padding-left: 30px;
+    font-weight: bold;
+    width: 9em;
+}
+/* Voor de hotel-pagina's */
+.prevnextbar {
+    border: 1px solid #c5d4e9;
+    border-left: none;
+    border-right: none;
+    margin: 1.2em 0 0;
+    position: relative;
+    width: 100%;
+}
+.prevnextbar td {
+    width: 33.3%;
+    padding: 0 .6em .3em;
+    font-weight: bold;
+    color: #c5d4e9;
+}
+.prevnextbar .prev {
+    text-align: left;
+}
+.prevnextbar .results {
+    text-align: center;
+}
+.prevnextbar .next {
+    text-align: right;
+}
+.prevnextbar a {
+    text-decoration: none;
+}
+.prevnextbar a:visited {
+    color: #0896ff;
+}
+.prevnextbar a:hover {
+    color: #feba02;
+}
+.prevnextbar a:active {
+    color: #b30000;
+}
+.prevnextbar img {
+    margin: 0 .3em 0 0;
+    position: relative;
+    top: .3em;
+}
+.prevnextbar .prev img {
+    background: url(/static/img/hotelchars-prev.png) top left no-repeat;
+}
+.prevnextbar .results img {
+    background: url(/static/img/hotelchars-results.png) top left no-repeat;
+}
+.prevnextbar .next img {
+    background: url(/static/img/hotelchars-next.png) top left no-repeat;
+}
+.prevnextbar a:hover img {
+    background-position: 0 -17px;
+}
+.prevnextbar a:active img {
+    background-position: 0 -34px;
+}
+.prevnextbar span img {
+    background-position: 0 -51px !important;
+}
+.hotelchars {
+    border: 1px solid #779bca;
+}
+.hotelnavcontain {
+    background-color: #96b2d9;
+}
+.hotelnav1 {
+    padding: .5em 0 0;
+    height: 1.5em;
+}
+.hotelnav1 ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.hotelnav1 li {
+    float: left;
+    width: auto;
+    margin: 0;
+    background: #779bca url(/static/img/tab-bg.gif) right bottom no-repeat;
+    padding: 0;
+    /* hack IE5 (Mac) \*/
+    border-top: 1px solid #003580;
+    /* einde hack */
+}
+.hotelnav1 a, .hotelnav1 span {
+    font-weight: bold;
+    padding: 0 0 0 .25em;
+    margin-right: 1.5em;
+    line-height: 1.5em;
+    /* hack IE5 (Mac) \*/
+    display: block;
+    border-top: 1px solid #003580;
+    margin-top: -1px;
+    /* einde hack */
+}
+.hotelnav1 li.nav1first a, .hotelnav1 li.nav1first span {
+    padding-left: .5em;
+}
+.hotelnav1 li.nav1last {
+    background-image: url(/static/img/tab-bg-last.gif);
+    border-top: none;
+}
+.hotelnav1 li.nav1last a, .hotelnav1 li.nav1last span {
+    margin-top: 0;
+}
+.hotelnav1 li.nav1current {
+    background-color: #e6edf6;
+}
+.hotelnav1 li.beforecurrent {
+    background-image: none;
+}
+.hotelnav1 a:link, .hotelnav1 a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+.hotelnav1 a:hover {
+    color: #feba02;
+    text-decoration: none;
+}
+.hotelnav1 a:active {
+    color: #b30000;
+    text-decoration: none;
+}
+.hotelnav2 {
+    background-color: #e6edf6;
+    padding: 0;
+    line-height: .9em;
+    border-bottom: 1px solid #779bca;
+    clear: left;
+}
+.hotelnav2 p {
+    margin: 0;
+}
+.hotelnav2 a:visited {
+    color: #0896ff;
+}
+.hotelchars .containh2 {
+    padding: .5em 0 0;
+    margin: 0;
+    background-color: #e6edf6;
+    border-bottom: 1px solid #779bca;
+    clear: both;
+}
+.hotelchars h2 {
+    color: #fff;/*
+    display: block;  hier zit nog een foutje in Mozilla die de td#left nu kleiner maakt in de overview */
+    background-color: #779bca;
+    margin: 0;
+    padding: .25em .5em;
+    text-transform: uppercase;
+    width: 14em;
+    position: relative;
+}
+.hotelchars h2 a {
+    text-decoration: none;
+    color: #fff;
+}
+.hotelchars div.top {
+    text-align: right;
+    font: bold x-small/1.2em Arial, Helvetica, sans-serif;
+    text-transform: uppercase !important;
+    width: 100%;
+    position: relative;
+    clear: both;
+}
+.hotelchars .containh2 div.top {
+    margin-top: -1.35em;
+    /* hack IE5 (Mac) \*/
+    position: absolute;
+    right: 8px;
+    /* einde hack */
+}
+.hotelchars div.top a {
+    color: #fff !important;
+    background-color: #0896ff;
+    padding: 0 .25em;
+    border-left: 4px solid #feba02;
+    text-decoration: none;
+}
+.hotelchars div.top a:hover {
+    color: #feba02 !important;
+}
+.hotelchars div.top a:active {
+    color: #b30000 !important;
+}
+.hotelchars div.top a:link img, .hotelchars div.top a:visited img {
+    background-color: #fff;
+}
+.hotelchars div.top a:hover img {
+    background-color: #feba02;
+}
+.hotelchars div.top a:active img {
+    background-color: #b30000;
+}
+div.largeImg { /* in overview */
+    float: left;
+    width: auto;
+    padding: .6em .6em .6em 1.2em;
+}
+/* hack IE5 (Mac) (in photos) \*/
+div.largeImgArea {
+    float: left;
+    width: 308px;
+    height: 308px;
+    margin: 0;
+    padding: .6em .6em 0em 1.2em;
+}
+/* einde hack */
+div.largeImg img, div.largeImgArea img {
+    display: block;
+    border: 4px solid #feba02;
+}
+div.smallImgArea {
+    margin-left: 316px;
+    padding-top: .6em;
+}
+div.smallImgArea img {
+    margin: 0 0 4px 0;
+}
+.clearBoth {
+    clear: both;
+}
+hr.clearBoth {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    margin: 0;
+}
+p.summary {
+    padding: .6em 1.2em;
+    margin: 0;
+}
+.hotelchars .description {
+    margin: .6em 1.2em;
+}
+.hotelchars .description h3, #doc h2 {
+    margin: .6em 0 .15em;
+    color: #779bca;
+    border-bottom: 1px solid #e6edf6;
+    text-indent: -.7em;
+}
+.hotelchars .destination h3 {
+    margin-bottom: .45em;
+}
+.hotelchars .description h3 span, #doc h2 span {
+    position: relative;
+    top: .2em;
+}
+.hotelchars .description h3 img, #doc h2 img {
+    background-color: #feba02;
+    margin-right: .25em;
+    width: .45em;
+    height: .45em;
+}
+.hotelchars .description h4 {
+    clear: left;
+    margin-bottom: 5px
+}
+.hotelchars .description ul {
+    margin: 0 0 1.2 .6em;
+    padding: 0 0 0 .6em;
+}
+.hotelchars .description p {
+    margin: 0;
+}
+.hotelchars .description br {
+    line-height: 50%;
+}
+
+#editDatesForm {
+    border-top: 1px solid #779BCA;
+    margin-top: 1.2em;
+}
+.explainDateSelection {
+    padding: .6em 0;
+    border-bottom: 1px dashed #779BCA;
+}
+.explainDateSelection span {
+    font-size: 144%;
+    font-style: italic;
+    font-weight: bold;
+    line-height: .5;
+}
+/*.hotelchars .availForm table {
+    background-color: #e6edf6;
+    padding: .3em;
+}
+.hotelchars .availForm th {
+    font-size: 115%;
+    font-weight: bold;
+}
+.hotelchars .availForm td, .hotelchars .availForm th {
+    padding: .3em .6em;
+}*/
+#availForm {
+    background-color: #E6EDF6;
+    padding: 0 1.2em .6em;
+}
+#availForm #checkinDateSection, #availForm #checkoutDateSection {
+    float: left;
+    width: auto;
+    margin-right: 2.4em;
+}
+#availForm h4 {
+    font-size: 115%;
+    padding-top: .6em;
+    margin: 0;
+}
+#availForm .but {
+    clear: left;
+    padding-top: .6em;
+}
+
+#dealsListContainer {
+/*    float: left;
+    width: auto;*/
+    margin-bottom: 1.2em;
+    border-top: 1px solid #779BCA;
+    background-color: #C5D4E9;
+    padding: 0 1.2em .6em;
+}
+#dealsListContainer .explainDateSelection {
+    border: 0;
+    padding-bottom: 0;
+}
+#dealsListContainer table {
+    margin: .6em 0 0;
+    width: 100%;
+}
+#dealsListContainer .selectedDeal td {
+    background-color: #FFDD81;
+    border-top: 1px solid #FEBA02;
+    border-bottom: 1px solid #FEBA02;
+    padding-top: 2px;
+}
+#dealsListContainer .selectedDeal + tr td {
+    border-top: 0;
+}
+#dealsListContainer #selectedDealOptions {
+    border: 1px solid #FEBA02;
+    border-left: 5px solid #96B2D9;
+    border-right-color: #96B2D9;
+    background-color: #FFDD81;
+    padding: .6em;
+    margin: .6em 0;
+}
+#dealsListContainer #selectedDealOptions h5 {
+    margin-top: 0;
+    margin-bottom: .6em;
+}
+#dealsListContainer #selectedDealOptions ul, #dealsListContainer #selectedDealOptions li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hotelchars table.generaltable {
+    border-color: #96b2d9;
+    border-left-width: 4px;
+    margin: .6em 0 1.8em;
+}
+.hotelchars table.generaltable td, .hotelchars table.generaltable th {
+    border-left: 1px solid #96b2d9;
+}
+.hotelchars table.generaltable tr.outlineDeal td {
+    background-color: #FEBA02;
+}
+.hotelchars table.generaltable tr.outlineDeal td a:hover {
+    color: #FFF;
+}
+.hotelchars table.generaltable th {
+    background-color: #537cb4;
+}
+.hotelchars .facilities {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: left;
+    width: 15em;
+    border-bottom: 1px solid #779bca;
+}
+.hotelchars .faclast {
+    border-right: 24px solid #779bca;
+}
+.hotelchars .facsingle {
+    width: 24em;
+    float: none;
+}
+.hotelchars .facilities li {
+    margin: 0;
+    padding-left: 1.2em;
+    border-top: 1px solid #779bca;
+    border-right: 1px solid #779bca;
+    font-weight: bold;
+}
+.hotelchars .facsingle li {
+    border-right: none;
+}
+.hotelchars .facilities .odd {
+    background-color: #fff9e7;
+}
+.hotelchars iframe {
+    margin-bottom: 1.2em;
+}
+
+/* for collections of descriptions, like the hotel policies */
+.hotelchars .descriptionsContainer .description {
+    border-bottom: 1px solid #FEBA02;
+    padding-bottom: 1.2em;
+}
+.hotelchars .descriptionsContainer .descriptionLast {
+    border-bottom: none;
+}
+.hotelchars .descriptionsContainer h3 {
+    /* start hide from IE 5 (Mac) \*/
+    float: left;
+    width: 9em;
+    clear: left;
+    /* end hide */
+    margin-top: 0;
+    padding-top: 0;
+}
+.hotelchars .descriptionsContainer p {
+    margin-left: 11.4em;
+    padding-top: .24em;
+}
+
+.roomArea .generaltable {
+    width: 94%; /* BMH */
+    voice-family: "\"}\"";
+    width: 100%;
+}
+#hack {
+    /* leeg */
+}
+.roomArea th {
+    white-space: nowrap;
+}
+.roomArea .roomType {
+    width: 100%;
+}
+#bookNow1, #bookNow2 {
+    vertical-align: middle;
+    text-align: center;
+    background-color: #e6edf6;
+}
+#bookNow1 input, #bookNow2 input {
+    font-weight: bold;
+    text-align: center;
+}
+.curConv {
+    position: relative;
+    top: -1.8em;
+}
+.curConv a {
+    position: absolute;
+    /* these should both be zero (IE win bug) */
+    right: 9px;
+    padding-right: 1.2em;
+}
+.space {
+    height: 1.2em;
+}
+
+.destLists {
+    border: none;
+    padding: 0 1.2em;
+}
+.destLists ul.destLinks {
+    margin-left: 0;
+    margin-right: 0;
+    padding: .15em .6em .3em;
+    list-style-type: none;
+    background-color: #e6edf6;
+    line-height: 1.5em;
+}
+.destLists .destLinks a img {
+    text-decoration: none;
+    position: relative;
+    top: 3px;
+    background-color: #e6edf6;
+}
+.destLists h3 img {
+    position: relative;
+    top: 2px;
+}
+.destLists h3 {
+    margin: 1.2em 0 .6em;
+}
+.destLists table {
+    background-color: #fff9e7;
+}
+.destLists .flatListContainer {
+    background-color: #fff9e7;
+    padding: .15em .6em .3em;
+}
+.destLists td {
+    padding: .15em .6em .3em;
+    line-height: 1.5em;
+}
+.destLists td h4 {
+    color: #feba02;
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+.destLists .flatListContainer h4 {
+    color: #feba02;
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+.destLists .flatListContainer .flatList {
+    padding-bottom: 1.2em;
+    line-height: 1.5em;
+}
+.destLists .flatListContainer .flatList a {
+    white-space: nowrap;
+}
+.destLists td div {
+    margin: 1.2em 0 .3em;
+}
+.destLists td div span {
+    font-family: monospace;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #feba02;
+    padding: 0 .2em;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+.destLists .toTop {
+    text-align: right;
+    margin-bottom: -1.2em;
+}
+
+/* guest reviews on hotel and searchresults pages */
+.hotelchars .reviews_pager {
+  margin: 1em 0;
+  text-align: center;
+  background-color: #e6edf6;
+  line-height: 1.5em;
+  padding: 0 0.5em;
+  /* visibility enabled again by javascript */
+  display: none;
+}
+
+.hotelchars .reviews_pager .pageprev {
+  float: left;
+}
+
+.hotelchars .reviews_pager .pagenext {
+  float: right;
+}
+
+.hotelchars .reviews_pager .nolink {
+  color: #c0c0c0;
+  font-weight: bold;
+
+}
+
+.hotelchars .review {
+    padding-bottom: 1.2em;
+    margin: 1.2em 0;
+    border-bottom: 1px solid #e6edf6;
+}
+.hotelchars .comments {
+    font-style: italic
+}
+
+.hotelchars .plus {
+    color: #00cc00;
+    font-weight: bold;
+    font-size: 120%;
+}
+.hotelchars .minus {
+    color: #cc0000;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+.hotelchars .description #scoresArea {
+    margin-top: .45em;
+    padding: .6em;
+    background-color: #e6edf6;
+}
+.hotelchars .scores table {
+    width: 100%;
+}
+.hotelchars .scores td {
+    padding: .45em 0 0 1.5em;
+    white-space: nowrap;
+}
+.hotelchars .scores td.total {
+    padding: 0 0 .6em .3em;
+    font-weight: bold;
+    border-bottom: 1px dashed #779BCA;
+}
+.hotelchars .scores td.bar {
+    padding-left: .6em;
+}
+.hotelchars .scores td.categories {
+    padding: 0 .3em .6em 3.6em;
+    white-space: normal;
+}
+.hotelchars .scores ul {
+    margin: 0;
+    padding-left: 1.2em;
+}
+
+.reviewFloater {
+    /*  \*/
+    float: right;
+    width: auto;
+    /*  */
+    line-height: .9em;
+    text-align: right;
+}
+#searchresultsTmpl .reviewFloater {
+    padding: .3em .6em .6em 1.2em;
+}
+#hotelTmpl .reviewFloater {
+    padding: .75em .6em .6em 1.2em;
+}
+#searchresultsTmpl .reviewFloater p, #hotelTmpl .reviewFloater p {
+    margin: 0;
+    padding: 0;
+}
+#searchresultsTmpl .reviewFloater p.small, #hotelTmpl .reviewFloater p.small {
+    font-style: italic;
+}
+.scoreBarImg {
+    background: #feba02 url(/static/img/reviews/reviewBarBg.png) no-repeat; /* note: the image is twice as long and half of it is tranparent because I can’t get Safari (2.0.1) to honour the no-repeat value */
+}
+/*  \*/
+#searchresultsTmpl .scoreBarImg {
+    position: absolute;
+    right: 2.4em;
+    margin: .45em 8px 0 0;
+}
+/*  */
+
+/* stijlen voor de fullwidth */
+
+/* binnen footer */
+#footerbuttons {/*
+    position: absolute;
+    right: 0;*/
+    float: right;
+    width: auto;
+    padding-top: 30px;
+}
+#footerbuttons a {
+    /*float: left;
+    width: auto; see conditional comment in header.inc for a IE (Win) solution*/
+    padding: 30px 10px 0;
+    text-decoration: none;
+    text-align: center;
+    font-size: 80%;
+    margin: 0;
+}
+a#mailafriendImg {
+    background: transparent url(/static/img/button-email.png) no-repeat center top;
+}
+a#bookmark {
+    background: transparent url(/static/img/button-bookmark.png) no-repeat center top;
+    width: 5em;
+}
+a#print {
+    background: transparent url(/static/img/button-print.png) no-repeat center top;
+}
+a#print:hover, a#bookmark:hover, a#mailafriendImg:hover {
+    background-position: 50% -200px;
+}
+#footernav {
+    font-weight: bold;
+    color: #003580;
+}
+#footernote {
+    margin-top: .75em;
+    font-size: 80%;
+}
+/* Only for bookingsprocess, but also needed for Credit Card FAQ (stage 3), that's why it is here. Otherwise the book.css has to be loaded for all doc pages */
+#bookFooterInc #footer {
+    height: 37px;
+}
+#bookFooterInc #footercert {
+    float: right;
+}
+
+#inout {
+    padding: 0 0 1.2em .6em;
+    border-top: 1px solid #e6edf6;
+}
+/*#b2cityPage #inout, #b2airportPage #inout {
+    border-top: 0;
+}*/
+#inout .avail {
+    clear: left; /* voor IE 5.0 Win */
+}
+#availcheck {
+    margin-top: .6em;
+}
+#homein, #homeout {
+    line-height: 0;
+}
+#inout h3 {
+    padding-left: 0;
+}
+/* hack voor IE 5 (Mac) Met als gevolg dat daar alles gewoon onder elkaar komt te staan. \*/
+#homein {
+    float: left;
+    width: auto;
+    padding-right: .6em;
+}
+/* einde hack */
+#homein h3 {
+    z-index: 90;
+    background-color: #C5D4E9;
+}
+/* hack voor IE 5 (Mac) zodat de hack voor IE 6 niet zichtbaar is in IE 5 (Mac). Onderstaande hack zorgt ervoor dat de teksten "City" en "Browse destination" zichtbaar blijven, zie: http://www.positioniseverything.net/explorer/peekaboo.html \*/
+.leftwide #inputcity {
+    position: relative;
+    margin-bottom: 1em;
+}
+.leftwide h3 {
+    position: relative;
+}
+/* einde hack */
+#homeout img.placeholder, #homein img.placeholder {
+    width: 11em;
+    height: 1px;
+    padding: 0 38px;
+    margin-bottom: -1px;
+}
+.calender img {
+    display: none;
+}
+/* hack IE 5 (Mac) \*/
+.calender img {
+    display: inline;
+    background-color: #0896FF;
+}
+/* einde hack */
+a.calender:hover img {
+    background-color: #FEBA02;
+}
+a.calender:active img {
+    background-color: #B30000;
+}
+
+div.popup {
+    position: absolute;
+    display: none;
+    padding: 3px; 
+    border: 1px solid #feba02; 
+    background-color: #fff9e7;
+    z-index: 99;
+}
+div.popup p {
+    margin: 0;
+}
+div.popup ul {
+    margin: 0 0 .3em;
+    padding: 0 0 0 1.8em;
+}
+div.preferredHelp {
+    width: 150px;
+}
+#destHelp {
+	width: 500px;
+	z-index: 100;
+}
+
+.standout {
+    font-weight: bold;
+}
+.nowrap {
+    white-space: nowrap;
+}
+.promotionHotelItemsInc .nowrap {
+    white-space: normal;
+}
+/* hack IE 5 (Mac) \*/
+.promotionHotelItemsInc .nowrap {
+    white-space: nowrap;
+}
+/* einde hack */
+
+/* For JS-popu-windows */
+#calendar, #currencyConverter {
+    display: none;
+    position: absolute;
+    background-image: url(/static/img/shadow3.png);
+    padding: 0 4px 4px 0;
+}
+#mapcontainer, #mailafriend, #feedback{
+    position: absolute;
+    width: 640px;
+    background-image: url(/static/img/shadow3.png);
+    padding: 0 4px 4px 0;
+    display: none;
+    margin: 8px;
+    z-index: 25; /* 5 meer dan #woordmerk */
+}
+#mailafriend, #feedback {
+    width: 400px;
+}
+/* For currency converter */
+#currencyConverter {
+    width: 300px;
+}
+#currencyConverter th {
+    text-align: right;
+}
+#currencyConverter th, #currencyConverter td {
+    padding: .2em
+}
+#currencyConverter .into {
+    text-align: right;
+}
+#displayCurrencyResults {
+    text-align: center;
+    font-size: 115%;
+    font-weight: bold;
+}
+
+/* also used for mailafriend popup, see mailAFriend.inc */
+.mapArea {
+    padding: 0 8px;
+    border: 1px solid #003580;
+    background-color: #e6edf6;
+}
+.closeMap {
+    padding: .3em 8px;
+    margin: 0 -8px .6em;
+    background-color: #fff;
+}
+.closeMap a {
+    float: right;
+    width: auto;
+}
+#mailafriendFrame, #feedbackFrame {
+    width: 360px;
+    height: 400px;
+}
+/* For calendar */
+.caltable {
+    border: 1px solid #003580;
+    background-color: #fff;
+}
+.caltable a:link, .caltable a:visited {
+    color: #0896ff !important;
+}
+.caltable a:hover {
+    color: #feba02 !important;
+    border-color: #feba02 !important;
+}
+.caltable a:active {
+    color: #b30000 !important;
+    border-color: #b30000 !important;
+}
+.caltable td {
+    text-align: center;
+}
+.caltable td a {
+    display: block;
+    text-decoration: none;
+}
+.caltable td.calheader a {
+    display: inline;
+    vertical-align: -.4em;
+}
+.caltable td.calheader img.calNoPrevMonth {
+    background: white url(/static/img/butPrevMonth.png) 0 -72px no-repeat;
+    vertical-align: -.4em;
+}
+.caltable td.calheader img.calNoNextMonth {
+    background: white url(/static/img/butNextMonth.png) 0 -72px no-repeat;
+    vertical-align: -.4em;
+}
+.caltable td.calheader .calNextMonth img {
+    background: white url(/static/img/butNextMonth2.png) 0 0 no-repeat;
+}
+.caltable td.calheader .calPrevMonth img {
+    background: white url(/static/img/butPrevMonth2.png) 0 0 no-repeat;
+}
+.caltable td.calheader .calNextMonth:hover img, .caltable td.calheader .calPrevMonth:hover img {
+    background-position: 0 -24px;
+}
+.caltable td.calheader .calNextMonth:active img, .caltable td.calheader .calPrevMonth:active img {
+    background-position: 0 -48px;
+}
+.calheader {
+    padding: .4em;
+    white-space: nowrap;
+}
+.calheader select {
+    margin: 0 .6em;
+}
+.monthYear {
+    background-color: #ffffff;
+    color: white;
+}
+.dayNames td {
+    border-bottom: 1px solid #003580;
+    background-color: #e6edf6;
+}
+.days td {
+    color: #779bca;
+    background-color: #e6edf6;
+    padding: .2em;
+    border: 2px solid #e6edf6;
+}
+.days td.weekend {
+    background-color: #c5d4e9;
+    border-color: #c5d4e9;
+}
+.days td.past {
+    text-decoration: line-through;
+}
+.days td.today, .days td.future {
+    border: none;
+    padding: 0;
+}
+.days td a {
+    padding: .2em;
+    border: 2px solid #e6edf6;
+}
+.days td.weekend a {
+    border-color: #c5d4e9;
+}
+.days td.today a {
+    background-color: #fff;
+}
+.days td.selected {
+    font-weight: bold;
+}
+.days td.selected a {
+    border-color: #0896ff;
+}
+.hotelchars.blockdisplay {
+    display: block;
+}
+.blockdisplay {
+    display: none;
+}
+#doc #left {
+    position: absolute;
+    left: 0;
+    border: none;
+    margin-top: 0;
+}
+#doc #right {
+    margin: 0 0 2em 227px;
+    border-left: 1px dashed #779bca;
+}
+#doc .breadcrumb {
+    clear: left;
+    position: relative;
+    top: -2.4em;
+}
+#doc #left .generaltable {
+    width: 206px;
+}
+#doc #left .generaltable td {
+    font-weight: bold;
+}
+#doc div.quote {
+    background-color: #e6edf6;
+    margin: .6em 0 .6em 1.2em;
+    width: 30%;
+    border: 1px dashed #779bca;
+    border-width: 1px 0;
+    float: right;
+}
+#doc div.quote p {
+    margin: 0;
+    padding: .6em 0;
+    font-size: 120%;
+    font-style: italic;
+    text-align: center;
+    color: #779bca;
+}/*
+.quote span {
+    font-weight: bold;
+}*/
+#doc h3, #doc h4 {
+    margin: .6em 0 0 0.84em;
+}
+#doc h2 img {
+    margin-left: 0;
+}
+#doc p {
+    margin: 0 0 .6em .84em;
+}
+#doc h2 {
+    padding-top: .6em;
+    margin-left: .7em;
+}
+#doc ul {
+    margin-top: 0;
+    margin-bottom: .6em;
+}
+#doc .leftCol {
+    float: left;
+    width: 24em;
+}
+#doc .rightCol {
+    padding-top: 1px;
+    margin: 0 0 2.4em 25.2em;
+    padding-left: 8px;
+    border-left: 1px dashed #779bca;
+}
+#doc .faq .faqQ {
+    margin: 1.2em 0 0 42px;
+    padding: 0;
+    font-weight: bold;
+}
+#doc .faq .faqA {
+    margin: .6em 0 1.2em 42px;
+    padding: 0 0 1.2em 0;
+}
+#doc .faq .faqQ img, #doc .faq .faqA img {
+    float: left;
+    width: 32px;
+    height: 32px;
+    clear: left;
+    margin-left: -40px;
+    background: transparent url(/static/img/faqA.png) no-repeat;
+}
+#doc .faq .faqQ img {
+    margin-top: -.6em;
+    background-image: url(/static/img/faqQ.png);
+}
+#doc .faq.deLang .faqQ img {
+    background-image: url(/static/img/faqF.png);
+}
+#doc .faq.esLang .faqQ img {
+    background-image: url(/static/img/faqP.png);
+}
+#doc .faq.esLang .faqA img {
+    background-image: url(/static/img/faqR.png);
+}
+#doc .faq.frLang .faqA img {
+    background-image: url(/static/img/faqR.png);
+}
+#doc .faq.itLang .faqQ img {
+    background-image: url(/static/img/faqD.png);
+}
+#doc .faq.itLang .faqA img {
+    background-image: url(/static/img/faqR.png);
+}
+.remarks {
+    margin: 1.2em 0 !important;
+    padding: .6em;
+    background-color: #fff9e7;
+}
+#doc .hotellist { /* ivm bug in IE 5.0/5.5, verder volkomen overbodig */
+    width: auto;
+}
+#doc .hotellist .colright {
+    width: 191px;
+}
+#doc .hotellist .colright img {
+    display: block;
+    margin: 0 0 0 .6em !important;
+}
+#doc .hotellist .colright div {
+    background-color: #c5d4e9;
+    margin: 1.2em 0 1.2em .6em !important;
+    padding: 0 .6em .6em;
+}
+#doc .hotellist .colright h3 {
+    padding: .6em 0 0 0;
+}
+#doc .hotellist .colright ul {
+    padding: 0;
+    margin: 0 1.2em 0 1.2em;
+    list-style-type: disc;
+}
+#doc .imgLeft, #doc .imgRight {
+    clear: both;
+}
+#doc .imgLeft img {
+    float: left;
+    width: 240px;
+    height: 160px;
+    margin: 0 .6em .6em 0;
+    border: 2px solid #feba02;
+}
+#doc .imgRight img {
+    float: right;
+    width: auto;
+    margin: 0 0 .6em .6em;
+    border: 2px solid #feba02;
+}
+#doc .registerHotel div {
+    width: 96%;
+}
+#doc .registerHotel table {
+    width: 100%;
+}
+#doc .registerHotel td {
+    padding: .05em 0 .05em .84em;
+}
+#doc .registerHotel td.textTd {
+    width: 18em;
+    white-space: nowrap;
+}
+#doc .registerHotel .but {
+    text-align: left !important;
+    margin-left: .84em;
+}
+#right .specialsblock td {border:none}
+#right .specialsblock table {padding-bottom: 1.2em}
+
+
+.new_hotel {
+    margin: .3em .6em .6em 1.2em;
+    padding: 0 .3em; 
+    float:right; 
+    background-color: #feba02; 
+    color: white; 
+    font-weight: bold; 
+    border:1px solid #e6edf6
+}
+
+/*
+even wat kleuren onthouden:
+#FFE39A
+#FED974 = 50% #FEBA02 op 100% #FFF9E7
+#FEDC80 = 50% #FEBA02 op 100% #FFFFFF
+#D0DCED = 35% #779BCA op 100% #FFFFFF
+#537CB4 = 35% #003580 op 100% #779BCA
+#7F5D01 = 50% #FEBA02 op 100% #000000
+#B28301 = 70% #FEBA02 op 100% #000000
+#F7FAFC = 30% E6EDF6 op 100% #FFFFFF
+#F2F6FA = 50% E6EDF6 op 100% #FFFFFF
+#F0F4FA = 60% E6EDF6 op 100% #FFFFFF
+#D5E0EF = 50% #C5D4E9 op 100% E6EDF6
+*/

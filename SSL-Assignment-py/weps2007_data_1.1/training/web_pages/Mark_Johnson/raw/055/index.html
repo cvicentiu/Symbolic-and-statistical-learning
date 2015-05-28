@@ -1,0 +1,263 @@
+<html>
+<head>
+	<title>Mark Johnson - FAQ</title>
+	<link rel="stylesheet" href="site.css">
+	<link rel="stylesheet" href="tooltip.css">
+	<link rel="stylesheet" href="http://www.markjohnson.com/modules/cms/templates/default/styles/pager.css">
+	<link rel="stylesheet" href="datagrid.css">
+	<link rel="stylesheet" href="faq.css">
+	<link rel="stylesheet" href="cms.css">
+	<link rel="stylesheet" href="site_beach.css">
+	
+	
+		<script src="Tooltips.js" type="text/javascript"></script>
+		<script src="SNAP_Validation.js" type="text/javascript"></script>
+		<script src="SNAP_ValidationRules.js" type="text/javascript"></script>
+		<script type="text/javascript">
+                
+			function triggerElementEventOnEnter(_element_id, _event_object)
+			{
+				var keyCode = _event_object.keyCode ? _event_object.keyCode : _event_object.which ? _event_object.which : _event_object.charCode;
+				if (keyCode == 13)
+				{
+					var element = document.getElementById(_element_id);
+						
+					if (arguments.length == 4)
+					{
+						var value = arguments[3];
+						var property = arguments[2];
+						try
+						{
+							eval('element.' + property + '= \'' + value + '\'');
+						}
+						catch (e) {}
+					}
+					else if (arguments.length == 3)
+					{
+						var event_to_trigger = arguments[2];
+						
+						try
+						{
+							eval('element.' + event_to_trigger + '();');
+						}
+						catch(e) {}
+					}
+					else if (element.click)
+							element.click();
+				} 
+			}      
+
+		</script>
+
+	
+	<script src="http://www.markjohnson.com/modules/cms/templates/default/javascript/DataGrid.js" type="text/javascript"></script>
+	<script src="http://www.markjohnson.com/modules/cms/templates/default/javascript/HighlightRow.js" type="text/javascript"></script>
+	<script src="jsCookMenu.js" type="text/javascript"></script>
+</head>
+<body topmargin="0" bottommargin="0" marginheight="0" leftmargin="0" rightmargin="0" marginwidth="0" bgcolor="black" text="black">
+<center>
+<a name="top"></a>
+<table border="0" cellspacing="0" cellpadding="0" width="800" height="100%">
+<tr>
+	<td colspan="2" height="78"><img src="top_beach.jpg" width="800" height="78" border="0" alt=""></td>
+</tr><tr>
+	<td height="80"><img src="title_beach.jpg" width="200" height="80" border="0" alt="Mark A Johnson Photography"></td>
+	<td><img src="title_right_beach.jpg" width="600" height="80" border="0" alt=""></td>
+</tr><tr>
+	<td colspan="2" background="nav_bg_beach.jpg" height="27" style="padding-left: 15px;">
+		
+	<script type="text/javascript">
+	
+						if(!cmThemeOffice) {
+				var cmThemeOfficeBase = 'http://www.markjohnson.com/modules/cms/templates/default/images/menu_icons/';
+				var cmThemeOffice =
+				{
+						// main menu display attributes
+						//
+						// Note.  When the menu bar is horizontal,
+						// mainFolderLeft and mainFolderRight are
+						// put in <span></span>.  When the menu
+						// bar is vertical, they would be put in
+						// a separate TD cell.
+
+						// HTML code to the left of the folder item
+						mainFolderLeft: '',
+						// HTML code to the right of the folder item
+						mainFolderRight: '',
+					// HTML code to the left of the regular item
+					mainItemLeft: '',
+					// HTML code to the right of the regular item
+					mainItemRight: '',
+
+					// sub menu display attributes
+
+					// 0, HTML code to the left of the folder item
+					folderLeft: '<img alt="" src="http://www.markjohnson.com/'%20+%20cmThemeOfficeBase%20+%20'spacer.gif">',
+					// 1, HTML code to the right of the folder item
+					folderRight: '<img alt="" src="http://www.markjohnson.com/'%20+%20cmThemeOfficeBase%20+%20'arrow.gif">',
+					// 2, HTML code to the left of the regular item
+					itemLeft: '<img alt="" src="http://www.markjohnson.com/'%20+%20cmThemeOfficeBase%20+%20'spacer.gif">',
+					// 3, HTML code to the right of the regular item
+					itemRight: '<img alt="" src="http://www.markjohnson.com/'%20+%20cmThemeOfficeBase%20+%20'blank.gif">',
+					// 4, cell spacing for main menu
+					mainSpacing: 1,
+					// 5, cell spacing for sub menus
+					subSpacing: 0,
+					// 6, auto dispear time for submenus in milli-seconds
+					delay: 500
+				};
+
+				// for horizontal menu split
+				var cmThemeOfficeHSplit = [_cmNoAction, '<td class="ThemeOfficeMenuItemLeft"></td><td colspan="2"><div class="ThemeOfficeMenuSplit"></div></td>'];
+				var cmThemeOfficeMainHSplit = [_cmNoAction, '<td class="ThemeOfficeMainItemLeft"></td><td colspan="2"><div class="ThemeOfficeMenuSplit"></div></td>'];
+				var cmThemeOfficeMainVSplit = [_cmNoAction, '&nbsp;|&nbsp;'];
+			}
+
+				var jsmenu_public_menu =
+		[
+							
+					['', 'HOME', '/index.php?snapcms/displayTemplate&t=editable/Home&_form_id=28d9e450', '', ''		]
+				, _cmSplit, 							
+					['', 'PHOTO GALLERY', '/cgi-bin/ImageFolio4/imageFolio.cgi', '', ''		]
+				, _cmSplit, 							
+					['', 'BIOGRAPHY', '/index.php?snapcms/displayTemplate&t=editable/Bio&_form_id=28d9e450', '', ''		]
+				, _cmSplit, 							
+					['', 'CLIENTS', '/index.php?snapcms/displayTemplate&t=editable/Clients&_form_id=28d9e450', '', ''		]
+				, _cmSplit, 							
+					['', 'PUBLISHED WORK', '/index.php?snap_gallery/showGallery&_form_id=28d9e450', '', ''		]
+				, _cmSplit, 							
+					['', 'LINKS', '/index.php?snapcms/displayTemplate&t=editable/Links', '', ''		]
+				, _cmSplit, 							
+					['', 'CONTACT', '/index.php?main/contact&_form_id=28d9e450', '', ''		]
+				, _cmSplit, 							
+					['', 'FAQ', '/index.php?snap_faq/showFaq&_form_id=28d9e450', '', ''		]
+									];
+	</script>
+
+	<link rel="stylesheet" href="menu.css" type="text/css">
+	<div id="jsmenu_public_menu"></div>
+	<script type="text/javascript">
+		cmDraw ('jsmenu_public_menu', jsmenu_public_menu, 'hbr', cmThemeOffice, 'ThemeOffice');
+	</script>	</td>
+</tr>
+
+	<tr>
+		<td colspan="2" valign="top" bgcolor="white" background="bg.jpg" style="background-repeat: no-repeat; padding: 15px;">
+		<p><img src="bdcd0d23faeb4a6a501e597d4366b6dc.jpg"></p>	<!-- end header -->
+	
+	
+	<script language='javascript'>
+		function toggleAnswer(elements, parameters)
+		{
+			var question_id = parameters[0];
+			var answer_div_id = 'answer_div_'+question_id;
+			var e_div = document.getElementById(answer_div_id);
+			if(e_div.style.display == 'none'){
+				e_div.style.display = 'block';
+			} else {
+				e_div.style.display = 'none';
+			}
+		}
+	</script>
+
+			<h3 class='section'>Stock Photography</h3>
+		<ul class='faq'>
+							<li>
+					<a href="index.php%3Fsnap_faq%252FshowFaq&amp;_form_id=197fe04c.1.html#" onclick="toggleAnswer(new Array(), new Array('3'));; return false;" id="lbl_question_3">What is Stock Photography?</a>
+					<div id='answer_div_3' class='answer' style='display:none'>
+						Stock photographs are pictures made by a photographer at his own expense for use by clients at a later date.   Copyright to the images remains with the photographer.   Stock photographs are never "sold", they are licensed to users under various models: Rights Managed, (RM), Rights Protected (RP) or Royalty Free (RF). <br />
+<br />
+*Rights Managed pictures are licensed for specified use(s) in specified media for particular time periods and distribution regions.  Other subsequent uses, reprint rights and time extensions require new licences. <br />
+<br />
+*Rights Protected pictures are licensed in a similar way, plus the usage history of the images is recorded to help avoid confict with competitors or inappropriate uses.  Various levels of exclusivity of usage may be available.  I license my photos both as RM and RP.  Please ask me if you need to know the usage of a particular photo.<br />
+<br />
+*As the name implies, Royalty Free pictures can be used (with some limitations) over and over again without further payment.  At first glance, this might sound wonderful.  However, they provide the user with no information about the pictures, where or how they have been used previously, or may be used in future.  Conflicting, humorous and embarrassing examples of inappropriate and/or multiple use of RF images occur regularly and are a source of great amusement to one's competition and the photography industry.  Make no mistake,  RF photos tend to be significantly more costly for one-time or infrequent use. One major stock photo agency shows the average cost of RF to be double that of RM images.
+					</div>
+				</li>
+							<li>
+					<a href="index.php%3Fsnap_faq%252FshowFaq&amp;_form_id=197fe04c.1.html#" onclick="toggleAnswer(new Array(), new Array('4'));; return false;" id="lbl_question_4">What will it cost me to license one of your photographs?</a>
+					<div id='answer_div_4' class='answer' style='display:none'>
+						    When you license one of my RM photos you pay only for the use you wish to make of the picture.  For example, if you license a picture for one time use in a power point presentation to a small audience there is a small fee while the exact same picture licensed exclusively for use in a national advertising campaign will have a much higher fee.<br />
+   I will work hard to help you select and pay only for the use you need and to provide the best value I can. The more information you can supply me about your intended use, the better the price I can give you.  Some of the criteria I need to price a fee for you are: whether the use is editorial or for advertising, maximum print run, size of reproduction, region of use,  length of use, and if you intend to post it on the World Wide Web or other electronic media.
+					</div>
+				</li>
+					</ul>
+			<h3 class='section'>Lightbox feature</h3>
+		<ul class='faq'>
+							<li>
+					<a href="index.php%3Fsnap_faq%252FshowFaq&amp;_form_id=197fe04c.1.html#" onclick="toggleAnswer(new Array(), new Array('9'));; return false;" id="lbl_question_9">How do I save photos in a lightbox?</a>
+					<div id='answer_div_9' class='answer' style='display:none'>
+						Add images to the lightbox by clicking the box under the thumb or large picture that says 'lightbox'. You can view your lightbox at any time in any window by clicking the lightbox icon in the upper right of your browser window. You can remove images from lightboxes by unclicking the check or tick mark. You can email lightboxes to me or your colleagues by clicking on the email icon in the lightbox window. 
+					</div>
+				</li>
+					</ul>
+			<h3 class='section'>Finding a photograph in my Photo Gallery</h3>
+		<ul class='faq'>
+							<li>
+					<a href="index.php%3Fsnap_faq%252FshowFaq&amp;_form_id=197fe04c.1.html#" onclick="toggleAnswer(new Array(), new Array('5'));; return false;" id="lbl_question_5">How do I browse the categories?</a>
+					<div id='answer_div_5' class='answer' style='display:none'>
+						To browse the categories, click on a category name, and then a sub-category name.
+					</div>
+				</li>
+							<li>
+					<a href="index.php%3Fsnap_faq%252FshowFaq&amp;_form_id=197fe04c.1.html#" onclick="toggleAnswer(new Array(), new Array('6'));; return false;" id="lbl_question_6">How do I use the Search box?</a>
+					<div id='answer_div_6' class='answer' style='display:none'>
+						Type a single word into the Search box. Choose a category from the drop down list to the right of the Search box to narrow the search to a particular category.  Or leave All Categories selected to search the entire database. Click the Go button.
+					</div>
+				</li>
+							<li>
+					<a href="index.php%3Fsnap_faq%252FshowFaq&amp;_form_id=197fe04c.1.html#" onclick="toggleAnswer(new Array(), new Array('7'));; return false;" id="lbl_question_7">How do I use the "and, "or", and "phrase" radio buttons underneath the Search box?</a>
+					<div id='answer_div_7' class='answer' style='display:none'>
+						For more advanced searches, use the "and" radio button under the search box to return images that fit exactly two or more words. For example, if you want to search for Hawaii surfing photos, type 'Hawaii' (a space), then 'surfing', click the "and" button, then the Go button. This will return only Hawaiian surfing photos. <br />
+<br />
+Use the "or" button to find all words you type in the search box. For example, say you want to find all images that were shot in Australia or California or Turkey. Type those three words in the search box with spaces between them, click the "or" button, then Go. The results will be all the images from those three countries. <br />
+<br />
+Use the "phrase" button if you want to match a phrase, for example "humpback whale" or "young woman".
+					</div>
+				</li>
+							<li>
+					<a href="index.php%3Fsnap_faq%252FshowFaq&amp;_form_id=197fe04c.1.html#" onclick="toggleAnswer(new Array(), new Array('8'));; return false;" id="lbl_question_8">Are there any other ways to search for photographs?</a>
+					<div id='answer_div_8' class='answer' style='display:none'>
+						I'm glad you asked that question.  In fact there is, and they're pretty cool.  Once you get the results from your original search and click on one of the thumbnails to view the larger picture, you will see under the picture a list of all the keywords associated with that image. You can then click on one of those keywords to search in an entirely new direction. This is great for brainstorming when you aren't exactly sure what you want.<br />
+<br />
+Say you first searched for "waterfalls". When you click on one of the thumbs you will more than likely see that one of the keywords is "river". By clicking on this, you can see all the "river" shots, regardless of whether there are any waterfall pictures among them.<br />
+<br />
+It doesn't stop there though!  In the latest version of my Gallery, there is a great new feature! Click on "words" above the photo, and you'll see a listing of all the keywords.  In parenthesis next to the keyword will be a number which shows how many photos share that particular keyword. By clicking a keyword in this list, you will bring up those photos.
+					</div>
+				</li>
+					</ul>
+			<h3 class='section'>Photo Agencies</h3>
+		<ul class='faq'>
+							<li>
+					<a href="index.php%3Fsnap_faq%252FshowFaq&amp;_form_id=197fe04c.1.html#" onclick="toggleAnswer(new Array(), new Array('10'));; return false;" id="lbl_question_10">Which photo agencies do you belong to?</a>
+					<div id='answer_div_10' class='answer' style='display:none'>
+						I have an image exclusive agreement with Corbis (what that means is they have photos that you cannot find anywhere else, not even here on my page).<br />
+<br />
+I have non-exclusive agreements with Alamy, Mira, and Workbookstock.<br />
+<br />
+Go to my Links page to see my collections in all of these agencies.
+					</div>
+				</li>
+					</ul>
+	
+
+
+	<!-- start footer -->
+	</td>
+</tr><tr>
+	<td colspan="2" height="10" bgcolor="white" style="padding: 2px;">All images on this site are <a href="http://www.markjohnson.com/?snapcms/displayTemplate&t=editable/Copyright">copyright</a> © by Mark Johnson.</td>
+</tr><tr>
+	<td colspan="2" bgcolor="white" class="footer" style="border-top: 1px dashed black;" height="22">
+		<table border="0" cellspacing="0" cellpadding="0" width="100%">
+		<tr>
+			<td><a href="http://www.markjohnson.com/?snap_central">Admin</a> | <a href="http://www.markjohnson.com/?main/sitemap">Sitemap</a></td>
+			<td align="right"><a target="_blank" href="http://www.snapsoft.com.au/?r=markjohnson"><img src="snapsoft.gif" width="133" height="22" border="0" title="SnapSoft" alt="SnapSoft Web Design, Brisbane Australia" align="right"></a></td>
+		</tr>
+		</table>
+	</td>
+</tr>
+</table>
+
+</center>
+</body>
+</html>

@@ -1,0 +1,518 @@
+.printonly
+{
+	display:	none;
+}
+
+body
+{
+	margin: 	0px;
+	padding:	0px;
+	color:		black;
+	background:	white none;
+	font-family:	Georgia, Times New Roman, serif;
+	font-size:	85%;
+}
+
+ul
+{
+	list-style-type: disc;
+	font-family:	Helvetica, Arial, sans-serif;
+}
+
+li.spaced
+{
+	margin-bottom:	0.5em;
+}
+
+
+a
+{
+	color:		#048;
+	background:	transparent none;
+	border-style:	none none none none;
+	border-width:	0px 0px 1px 0px;
+
+	text-decoration: none;
+	font-weight:	normal;
+}
+
+a:hover, a:active
+{
+	border-style:	none none solid none;
+}
+
+a:active
+{
+	color:		#08D;
+	background:	transparent none;
+	border-color:	#08D;
+}
+
+a:visited
+{
+	color:		#808;
+	background:	transparent none;
+	border-color:	#808;
+}
+
+span.accesskey
+{
+	border-style:	none none solid none;
+	border-width:	0px 0px 1px 0px;
+	border-color:	#C60;
+}
+
+div.blockindent
+{
+	position:	relative;
+	width:		90%;
+	margin-left:	auto;
+	margin-right:	auto;
+	margin-bottom:	1em;
+}
+
+
+span.highlighted
+{
+	display:	inline;
+	color:		black;
+	background:	#FF9 none;
+	padding:	0.1em 0.25em;
+}
+
+
+/*** DOCUMENT ***/
+div#IEcontainer
+{
+	position:	relative;
+	top:		86px;
+	left:		0px;
+	right:		0px;
+	width:		100%;
+	overflow:	auto;
+}
+
+div#docBody
+{
+	position:	absolute;
+	top:		86px;
+	left:		18%;
+	right:		0px;
+	width:		81.5%;
+	/* overflow:	auto; */
+}
+
+div#docBody p.indented:first-letter
+{
+	margin-left:	2em;
+}
+
+div#docBody h1
+{
+	color:		#369;
+	background:	transparent none;
+	font-family:	Helvetica, Arial, sans-serif;
+	font-style:	normal;
+	font-weight:	bold;
+}
+
+div#docBody h2
+{
+	color:		#444;
+	background:	transparent none;
+	font-family:	Helvetica, Arial, sans-serif;
+	font-style:	normal;
+	font-weight:	bold;
+
+	border-style:	none none ridge none;
+	border-width:	0px 0px 3px 0px;
+	border-color:	#369;
+}
+
+div#docBody h3
+{
+	color:		#444;
+	background:	transparent none;
+	font-family:	Helvetica, Arial, sans-serif;
+	font-style:	normal;
+	font-weight:	bold;
+	font-size:	150%;
+
+	border-style:	none none none none;
+	border-width:	0px 0px 0px 0px;
+	border-color:	#369;
+	
+	margin-bottom: 0.1em;
+	padding-bottom: 0.1em;
+}
+
+div#docBody h4
+{
+	color:		#444;
+	background:	transparent none;
+	font-family:	Helvetica, Arial, sans-serif;
+	font-style:	normal;
+	font-weight:	bold;
+	font-size:	120%;
+
+	border-style:	none none solid none;
+	border-width:	0px 0px 1px 0px;
+	border-color:	#369;
+	
+	margin-top:		0.5em;
+	margin-bottom: 0.1em;
+	padding-bottom: 0.1em;
+}
+
+div#docBody abbr, div#docBody acronym, div#docBody dfn
+{
+	border-style:	none none dashed none;
+	border-width:	0px 0px 1px 0px;
+	border-color:	gray;
+}
+
+div#docBody abbr a, div#docBody acronym a, div#docBody a abbr, div#docBody a acronym, div#docBody a dfn
+{
+	border-style:	none none dashed none;
+	border-width:	0px 0px 1px 0px;
+	border-color:	#369;
+}
+
+div#docBody span.highlighted
+{
+	color:		black;
+	background:	#FF9 none;
+	padding:	0.1em 0.25em;
+}
+
+div#docBody .boxed
+{
+	color:		black;
+	background:	#DDD none;
+	border-style:	dashed;
+	border-width:	1px;
+	border-color:	#444;
+	padding:	0.05em 0.25em;
+	margin-bottom:	1em;
+}
+
+
+div#docBody div.FloatLeft
+{
+	float:		left;
+	position:	relative;
+	clear:		none;
+	padding:	0.5em;
+
+	text-align:	center;
+}
+
+div#docBody div.FloatRight
+{
+	float:		right;
+	position:	relative;
+	clear:		none;
+	padding:	0.5em;
+
+	text-align:	center;
+}
+
+
+div#Footer
+{
+	position:	relative;
+	float:		none;
+	clear:		both;
+	color:		black;
+	background:	transparent none;
+	text-align:	center;
+	border-style:	solid;
+	border-color:	#369;
+	border-width:	1px 0px 0px 0px;
+	font-family:	Helvetica, Arial, sans-serif;
+	font-style:	normal;
+	font-weight:	normal;
+	font-size:	80%;
+	
+}
+
+
+/*** BANNER ***/
+div#bannerContainer
+{
+	position:	absolute;
+	top:		0px;
+	left:		0px;
+	height:		65px;
+	width:		100%;
+	background:	#369	url("images/it_banner_bkgrnd.gif") repeat-x scroll 0 0;
+	white-space:	nowrap;
+}
+
+div#bannerImage
+{
+	position:	absolute;
+	float:		left;
+	clear:		none;
+	top:		0px;
+	left:		0px;
+	height:		65px;
+	width:		600px;
+	left:		0px;
+}
+
+div#bannerSearch
+{
+	position:	absolute;
+	float:		right;
+	clear:		none;
+	top:		0px;
+	right:		0px;
+	bottom:		65px;
+	height:		65px;
+	width:		auto;
+	padding:	1em 0.5em;
+	overflow:	hidden;
+
+	/* background:	#369	url("images/it_banner_bkgrnd.gif"); */
+
+	color:		white;
+	font-family:	Helvetica, Arial, sans-serif;
+	font-size:	85%;
+}
+
+div#bannerSearch input
+{
+	font-size:	7pt;
+}
+
+div#bannerSearch span.accesskey
+{
+	border-width:	0px 0px 2px 0px;
+}
+
+/*** LOCATION BAR ***/
+div#Location
+{
+	position:	relative;
+	top:		65px;
+	left:		0px;
+	right:		0px !important;
+	height:		auto;
+	min-height:	14px;
+	padding:	0.2em 0.4em;
+
+	color:	black;
+	background: 	#AAA none;
+	border-style:	solid none;
+	border-width:	1px 0px;
+	border-color:	gray;
+
+	font-family:	Helvetica, Arial, sans-serif;
+	font-size:	85%;
+	font-weight:	bold;
+}
+
+
+/*
+div#Location a:visited
+{
+	color:		#048;
+	background:	transparent none;
+}
+*/
+
+div#Location span#LocationName
+{
+	font-weight:	normal;
+}
+
+
+/*** SIDEBAR & MENU ***/
+div#Sidebar
+{
+	position:	absolute;
+	float:		none;
+	top:		86px;
+	left:		0px;
+	width:		17%;
+	min-height:	75%;
+	padding:	0px 0px 0.75em 0px;
+
+	color:		#CCC;
+	background:	#444 none;
+	font-family:	Helvetica, Arial, sans-serif;
+	font-weight:	bold;
+	font-size:	90%;
+	text-align: center;
+
+	border-bottom-right-radius: 1em;		/* CSS 3.0 spec */
+	border-style:		solid;
+	border-width:		0px 1px 0px 0px;
+	border-color:		gray;
+	-moz-border-radius:	0em 0em 1em 0em;	/* Mozilla-specific vendor extension (until CSS3 is supported) */
+
+}
+
+div#Sidebar a
+{
+	text-decoration: none;
+	border-style: none;
+}
+
+/* NOTE: The following two properties are a hack for IE's improper inheritance model. */
+div#Sidebar ul li
+{
+	border-color:		#444;
+	border-style:		none none solid none;
+	border-width:		0px 0px 1px 0px;
+}
+
+div#Sidebar ul li#ActiveSubmenu ul li
+{
+	border-color:		#666666;
+}
+
+
+
+/* General properties for the main & sub lists */
+div#Sidebar ul, div#Sidebar ul li ul
+{
+	/*	width:	94.7%; */
+	padding: 0px;
+	margin: 0px;
+	/* background: red; */
+	list-style-type: none;
+	text-align: left;
+}
+
+/* Overrides for sublists */
+div#Sidebar ul li ul
+{
+	/* background-color: yellow; */
+	margin-left: 8%;
+	width:	91.7%;
+}
+
+/* Overrides for anchors */
+div#Sidebar ul a
+{
+	display:	block;
+
+	color:		#ddd;
+	background:	transparent none;
+	font-weight:	bold;
+
+	padding-left:	0.4em;
+	border:		transparent none 0px;
+	min-height:	1.4em;
+/*	height:		1.4em;
+	height:		auto; */
+}
+
+div#Sidebar li#ActiveSubmenu, div#Sidebar li#ActiveSubmenu a
+{
+	color: #ddd;
+	background: #666666 none;
+}
+
+div#Sidebar ul li a.Selected, div#Sidebar ul li a.Selected
+{
+	/* width:	98%; */
+	background: #aaa none !important;
+	color: #333 !important;
+}
+
+
+div#Sidebar ul li a:hover, div#Sidebar ul li.Selected a:hover, div#Sidebar ul li a.Selected:hover, div#Sidebar ul li a.Selected:hover
+{
+	color:		#444 !important;
+	background:	#ddd none !important;
+}
+
+
+div#Sidebar li.NoLink
+{
+	color: #aaa;
+	background: transparent none;
+	padding-left: 0.4em;
+}
+
+/* This takes care of all accent highlighting w/ Gecko rendering */
+div#Sidebar li:hover span.Accent, div#Sidebar li.Selected span.Accent
+{
+	color: #c60;
+	background: transparent none;
+}
+
+/* Forces IE to highlight the accent when hovering */
+div#Sidebar a:hover span.Accent
+{
+	color: #c60;
+	background: transparent none;
+}
+
+div#Sidebar span.Accent, div#Sidebar li.NoLink span.Accent
+{
+	color: #9cf;
+	background: transparent none;
+	margin: 0px 3px 0px 0px;
+}
+
+
+/* ===== SAME-PAGE JUMPBAR ELEMENTS ===== */
+/* >>>>>     ORDER IS IMPORTANT!    <<<<< */
+
+div.JumpBar
+{
+	float: right;
+	width: 98.8%;
+	clear: none;
+	padding: 0.2em 0.5em;
+	margin: 0.1em 0em 0.1em;
+	color: #222;
+	background: #AAA none;
+	border: none 0px transparent;
+	
+	font-family: Verdana, Helvetica, Arial, Sans-Serif;
+	font-size: 75%;
+	font-weight: bold;
+	font-style: normal;
+	text-align: left;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+div.JumpBar span.Active a, div.JumpBar span.Active a:visited, div.JumpBar span.Active a:hover
+{
+	color: White;
+	background: #555;
+	padding: 0em;
+	white-space: nowrap;
+	font-weight: bold;
+}
+
+div.JumpBar span a, div.JumpBar span a:visited
+{
+	color: #222;
+	background: transparent none;
+	border: none 0px transparent;
+	padding: 0.2em 12px;
+	white-space: nowrap;
+}
+
+div.JumpBar span a:hover
+{
+	background: #ccc none;
+	color: Black;
+	border: none 0px transparent;
+	white-space: nowrap;
+}
+
+div.JumpBar span.Active
+{
+	color: White;
+	background: #555 none;
+	padding: 0.2em 12px;
+	white-space: nowrap;
+}

@@ -1,0 +1,281 @@
+body {
+  background-color: #ffffff;
+  font-family: verdana, arial, helvetica, sans-serif;
+}
+
+a:link {
+  color: #0256A2; /* #333399; */
+  font-family: verdana, arial, helvetica, sans-serif;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #004c7a; /* #3f70af; #5384c3; #6798d7;  #8FC0E6; */
+  font-family: verdana, arial, helvetica, sans-serif;
+  text-decoration: none;
+}
+
+a:active {
+  color: #333399;
+  font-family: verdana, arial, helvetica, sans-serif;
+  text-decoration: none;
+}
+
+a:hover {
+  font-family: verdana, arial, helvetica, sans-serif;
+  text-decoration: none;
+}
+
+p {
+  font-family: verdana, arial, helvetica, sans-serif;
+  line-height: 110%;
+}
+
+td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  line-height: 110%;
+}
+
+h1 {
+  font-family: verdana, arial, helvetica, sans-serif;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 140%;
+}
+
+h2 {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 120%;
+}
+
+h3 {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 105%;
+}
+
+
+div.main {
+  color: #333333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  margin-left: 20px;
+  width: 550px;
+  font-size: medium;
+  line-height: 120%;
+}
+
+div.footer {
+  color: #333333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: small;
+  margin-top: 15px;
+  margin-left: 20px;
+  width: 550px;
+}
+
+span.navbar-header {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: small;
+  /* margin-top: 2ex; */
+  /* margin-left: 5px; */
+}
+
+span.navbar-items {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: small;
+/*  margin-bottom: 1ex; */
+  /* margin-left: 1em; */
+}
+
+td.navbar-item {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: small;
+}
+
+span.navigation {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: small;
+  font-weight: bold;
+}
+
+/* alte formatierung (sind jetzt divs, s.u.)  */
+
+span.index-header {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  margin-top: 0.5ex;
+  /* margin-bottom: 0.5ex; */
+ /* margin-left: 1em; */
+}
+
+span.index-items {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: medium;
+  margin-bottom: 1ex;
+  margin-top: 7px;
+/*   margin-left: 1em;  */
+}
+
+/* ab hier jetzt aktiv: */
+div.index-header {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  margin-bottom: 0.8%;
+}
+
+
+div.index-items {
+/*	margin-left:1%; */
+margin-bottom: 3%;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: medium;
+}
+
+
+div.index-item {
+	padding-left:2%; 
+	text-indent: -1.3%; 
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 95%;
+  margin-bottom: 0.5%;
+}
+/* Macht Probleme fuer Mozilla
+div.index-header {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  margin-bottom: 2%;
+}
+
+
+div.index-items {
+	margin-left:5%;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: medium;
+}
+
+
+div.index-item {
+	text-indent: -2%;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 95%;
+  margin-bottom: 1.5%;
+}
+
+*/
+
+/* ab hier Attribute fuer die Telefonliste -- noch zu optimieren */
+
+    tr.prof {
+      font-family: arial,sans-serif;
+      font-size: 11pt;
+      line-height: 100%;
+      margin-bottom: 0px;
+    }
+
+    tr.sek {
+    }
+
+    tr.grp {
+      font-family: arial,sans-serif;
+      font-size: 11pt;
+      line-height: 100%;
+    }
+
+    tr.type {
+      font-family: arial,sans-serif;
+      font-size: 12pt;
+      line-height: 100%;
+    }
+
+    tr.ma {
+    }
+
+    tr.empty {
+    }
+
+    td.narrow {
+      font-size:8pt;
+      line-height:10%
+    }
+
+    td.tall {
+      font-size:11pt;
+      line-height:150%
+    }
+
+    td.name {
+      font-family: verdana, arial, helvetica, sans-serif;
+      padding: 2pt 2pt 4pt 0pt;
+    }
+
+    td.profname {
+      font-family: verdana, arial, helvetica, sans-serif;
+      font-weight: bold;
+      column-span:2
+    }
+
+    td.grpname {
+      font-weight: bold;
+      column-span:2
+    }
+
+    td.typename {
+      font-family: verdana, arial, helvetica, sans-serif;
+      font-size:12pt;
+      font-weight: bold;
+      column-span:6
+    }
+  
+    td.zi {
+      font-family: verdana, arial, helvetica, sans-serif;
+    }
+    td.bu {
+      font-family: verdana, arial, helvetica, sans-serif;
+    }
+
+ 
+    td.empty {
+      content: "&nbsp;";
+    }
+    
+    td.mail {
+      font-family: verdana, arial, helvetica, sans-serif;
+      font-size: 10pt;
+    }
+
+    td.resint {
+      font-family: verdana, arial, helvetica, sans-serif;
+    }
+
+
+    td.tel {
+      font-family: verdana, arial, helvetica, sans-serif;
+      text-align: right;
+    }
+
+td.field { /* font-weight: bold; */
+           }
+
+input, textarea { padding: 3px; }
+
+input, select, textarea {
+  background-color: #dddddd;
+  border: 1px solid #555555;
+}
+
+option { padding: 1px 3px 1px 3px; }
+
+input[type=checkbox] { border-width: 1px !important; }
+
+input[type=submit] {
+  border-width: 2px;
+  border-style: outset;
+}
+
+textarea { font-family: verdana, arial, helvetica, sans-serif; }
+
+@media print {
+  td.navbar-cell { display: none }
+}

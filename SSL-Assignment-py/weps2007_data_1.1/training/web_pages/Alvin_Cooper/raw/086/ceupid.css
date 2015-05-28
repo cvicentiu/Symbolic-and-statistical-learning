@@ -1,0 +1,102 @@
+BODY 
+	{
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		background-image:url(images/back_wmep.gif); 
+		background-repeat:repeat-y;
+		font-size:11px;
+		margin : 0px 0px auto 0px;
+	}
+
+	
+	/*links for regular content*/
+	#link
+	{
+		font-size:14px; 
+		color:blue; 
+		font-weight :normal; 
+		text-decoration:underline;
+	}
+	
+	/*links for regular content that requires smaller fonts */
+	#linkSm
+	{
+		font-size:12px; 
+		color:blue; 
+		font-weight :normal; 
+		text-decoration:underline;
+	}
+	
+	/*links for menus*/
+	/*links for menus*/
+	A:link	
+	{
+		text-decoration:none; 
+		/*font-weight:bold;*/
+		color: E7E7E7;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px
+	}
+	A:visited	
+	{
+		text-decoration:none; 
+		/*font-weight:bold;*/
+		color: E7E7E7;
+		font-size:14px;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	A:hover 
+	{
+		text-decoration:none; 
+		/*font-weight:bold;*/
+		color:yellow;
+		font-size:14px;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	A:active 
+	{
+		text-decoration:none; 
+		/*font-weight:bold;*/
+		color:yellow;
+		font-size:14px;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	
+	/*border style for left menus*/
+	#menuBorder
+	{
+		border-bottom: 1px solid Black;
+		
+	}
+	
+	.th
+	{
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size : 12px;
+		font-style : normal;
+		font-weight : bold;
+		font-variant : small-caps;
+	}
+	
+	.td
+	{
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size : 11px;
+		font-style : normal;
+	}
+	.message
+	{
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size : 12px;
+		font-style : normal;
+		font-weight : bold;
+		color : red;
+		text-align : center; 
+	}
+	
+	.head
+	{
+		font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size : 14px;
+		font-style : normal;
+		font-weight : bold;
+	}

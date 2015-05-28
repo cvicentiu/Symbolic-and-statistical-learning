@@ -1,0 +1,331 @@
+/* -----------------------------------------------------------------
+30 Boxes has been designed to allow the easy creation of themes.
+Please see comments for help in understanding which elements of the
+application are referenced here.
+
+If you want to use any url references -- e.g.
+
+background-image: url(headerStriped.gif);
+
+you must use the full url to your theme -- e.g.
+
+background-image: url(http://www.mysite.com/projects/30boxes/theme/headerStriped.gif);
+
+*/
+
+
+/* --------------------------------------------------
+start general settings	*/
+body {  margin: 0px 0px 0px 0px; border: 0; padding: 0; 
+		background-color: #fff; 
+		text-align: center;
+		font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+}
+
+form { margin:0; padding:0;}
+
+/* some reusable classes */
+.clear { clear: both; margin-top: 0px; margin-bottom: 0px; }
+.noClear { clear: none; margin-top: 0px; margin-bottom: 0px; }
+.centerElement {margin-left: auto; margin-right: auto;}
+.centerContent {text-align: center;}
+.button {  border: 1px solid #aaa; background-color: #C6F3FF; font-weight: bold; cursor: pointer;}
+.bigButton {  border: 1px solid #aaa; background-color: #C6F3FF; font-size: 1.1em;  cursor: pointer; }
+.input { padding: 1px; color: #666; font-size: 14px; border: 2px solid #ccc; }
+.textArea { padding: 1px; color: #666; font-size: 14px;  border: 2px solid #ccc; }
+.pointer { cursor: pointer; }
+.highlight { background-color: #fefdeb; } 
+.containerInlay, .unboundedContainerInlay {margin-left: 14px; margin-right: 14px;  background-color: #fff;
+ border-left: 1px solid #adadad; border-right: 1px solid #adadad; border-top:2px solid #a1a1a1; border-bottom: 2px solid #d9d9d9; }
+.pageHeight { height: 560px; }
+.smallPageHeight { height: 440px; } 
+.lightBg { background-color: #eee; } 
+
+.hidden { display: none; }
+.bolder { font-weight: bolder; } 
+.centerTable { margin-left: auto; margin-right: auto; padding: 8px; } 
+.resultsTable { margin-left: auto; margin-right: auto;  padding: 0px; text-align: left; width: 99%; } 
+ 
+/* you can toggle these to use or not use images as button */
+.submitImage {  }
+.submitButton {display: none; cursor: pointer; }
+
+/* hrefs - only one class specified: internal, which is the default
+/* external should just use textLight, etc */
+a {text-decoration: none; }
+a:link {color: #5b5b95; }
+a:visited {color: #5b5b95; }
+a:active {color: #5b5b95; }
+a:hover {color: #5b5b95; text-decoration: underline; }
+.internalLinkColor { color: #5b5b95; }
+
+/* links that are used as hover hotspots don't have underlines */
+a.hoverLink:hover, a.hoverLink:link, a.hoverLink:visited {text-decoration: none !important;}
+
+/* external links have underlines, can be any color by using textLight, etc */
+a.external {text-decoration: underline; }
+
+/* font classes */
+.textLightest, .textLightest:link, .textLightest:visited { color: #bbb !important; }
+.textLight, .textLight:link, .textLight:visited { color: #888 !important; }
+.textMedium, .textMedium:link, .textMedium:visited  { color: #3a3a3a !important; }
+.textDark, .textDark:link, .textDark:visited  { color: #222 !important; }
+.textBlack, .textBlack:link, .textBlack:visited  { color: #000 !important; }
+.textEmphasis, .textEmphasis:link, .textEmphasis:visited { color: #222 !important; } 
+.textBlue { color: blue !important; }
+
+.invertedHighlight { color: #fff; background-image: url(/theme/default/invertedBgGradient.jpg);  }
+.alert, .alert:link, .alert:visited { background-color: yellow !important;  }
+
+.altLink, .altLink:link, .altLink:visited { color: #666 !important;  }
+
+.smallest {font-size: 11px;}
+.small {font-size: 13px;}
+.medium {font-size: 14px;}
+.normal { font-size: 16px; }
+.large {font-size: 18px;}
+.larger {font-size: 24px;}
+.largest {font-size: 32px;}
+
+.bold { font-weight: bold; }
+.bolder { font-weight: bolder; }
+.right { text-align: right; } 
+.center { text-align: center; } 
+.left { text-align: left; } 
+/* end font classes */
+
+/* default sizes */
+p {font-weight: normal; font-size: 0.8em;}
+/*ul { margin: 0px; } this breaks dragdrop in IE*/
+li { margin-top: 4px;  }
+h1 { font-size: 1.4em;  }
+h2 { font-size: 1.2em;  }
+h3 { font-size: 1.0em;  }
+h4 { font-size: 0.8em;  }
+h5 { font-size: 0.6em;  }
+
+.narrowWidth {width: 10em !important; }
+.normalWidth {width: 15em !important; }
+.wideWidth {width: 24em !important; }
+
+.smallIndent { margin-left: 2px; }
+.mediumIndent { margin-left: 20px; }
+
+.smallBottomMargin { margin-bottom: 2px !important; }
+.mediumBottomMargin { margin-bottom: 10px !important; }
+
+.mediumBorder { border: 1px solid #999; } 
+
+/* end general settings
+------------------------------------------------------*/
+
+/* ---------------------------------------------------
+start main  */
+
+/* Webtop related */
+#webtopSettingsPopup { display:none; position:absolute; z-index:1000; visibility: hidden; border: 2px outset #aaa; background:#fff; width: 500px;}
+.webtopSettingsHeading { padding-top: 6px; padding-left: 12px; background-image: url(/theme/gmail/headerGradient.gif); border-bottom: 1px solid #8d8d8d;  }
+.dockItem { background-color: #84a2c9; height:45px; width:58px;  }
+.dockDescription { color: #fff; }
+#webtop { background: #172e72; }
+#webSearch, #webtopUpdates {color: #fff; right: 5px; opacity:.8; filter:alpha(opacity=80); -moz-opacity:.8; background: #84a2c9; width: 290px; }
+#webSearch {top: 10px; }
+#webtopUpdates { top: 80px; width: 290px; }
+.webtopMain { color: #fff; }
+.webtopDetail { color: #acc8ec; }
+.webtopLink { color: #5b5b95 !important; }
+.webtopFrame {position:absolute; display:none; padding: 4px; background-color: #84a2c9; border: 1px outset #aaa;background-color: #a7a7a7; background-position: center; background-repeat: repeat-y; background-image: url(/theme/default/macGradient.jpg); }
+.webtopFrameHeader {padding: 0px; padding-bottom: 2px; }
+.webtopRule { border-bottom: 1px solid #333; }
+
+/* Supermail related */
+#supermailPopup { position:absolute; z-index:1000; border: 2px outset #aaa; background:#fff; width: 500px;}
+#supermailNewForm { position:absolute; top: 0; left: 0; z-index:1001; background:#fff; width: 496px;}
+.supermailHeading { text-align:left; padding-top: 6px; padding-left: 12px; background-image: url(/theme/default/headerGradient.gif); border-bottom: 1px solid #8d8d8d; height: 28px; }
+#supermailAddressBook { padding: 4px 0px 20px 0px; background: #eee; border: 1px outset #aaa; width: 120px; position: absolute; top: -2px; right: -144px; z-index: 1000; }
+#smMessageText, #supermailTo {padding:4px; border: 1px solid #aaa; background-color:#f2f2f2;  width: 420px;}
+
+/* To Do related */
+#todoPopup { display:none; position:absolute; z-index:1000; visibility: hidden; border: 2px outset #aaa; background:#fff; width: 500px;}
+.todoHeading { padding-top: 6px; padding-left: 12px; background-image: url(/theme/default/headerGradient.gif); border-bottom: 1px solid #8d8d8d; height: 48px; }
+#todoItemsLink { position: absolute; top: 24px; left: 67px; }
+
+/* header related */
+#headerContainer {position: relative; height: 59px; background-color: #a7a7a7; background-position: center; background-repeat: repeat-y; background-image: url(/theme/default/macGradient.jpg);  }
+#logo { cursor: pointer; position: absolute; top: 6px; left: 16px; background-image: url(/theme/default/logoWhiteGray.gif);  background-repeat: no-repeat; width: 44px;  }
+p.accountText, .accountText { color: #5b5b95; text-decoration: none; font-weight: bold;  } 
+
+/* message strip */
+#messageStrip { 
+ position: absolute; top: -6px; left: 50%;  
+ width: 30em; margin: 0 -15em;  text-align: center; padding: 4px; 
+}
+
+/* input box */
+#addDiv {  position: relative;  margin-top: -26px; margin-right: auto; margin-left: auto; }
+.addInput { padding-left: .2em; color: #666; font-size: 1.0em; height: 21px; 
+	border-top: 2px solid #797979; border-bottom: 2px solid #ccc; 
+	border-left: 2px solid #ccc;border-right: 2px solid #ccc;
+}
+.explanation { position: relative; margin-top: 2px; font-size: 9px; text-align: center; margin-top: 3px; margin-bottom: 0px; color: #333; font-weight: bolder; }
+.exampleBox { font-size: 12px; background-color: #e2e2e2; color: #999; padding: 2px; border: 1px solid #999; }
+
+/* menu items */
+.menuButton {width: 50px;  }
+.menuButtonBorder {border-top: 1px solid #888; border-bottom: 1px solid #888;}
+.menuEndButton { border: 1px solid #888; }
+#helpPopup {visibility:hidden; top:30px; left:50px; background-image: url(/theme/default/headerStriped.gif); position:absolute; 
+text-align:left; width:200px; z-index:20; border:1px outset #aaa;}
+#buddyPopup {visibility:hidden; top:30px; left:50px; background-image: url(/theme/default/headerStriped.gif); position:absolute; 
+text-align:left; width:180px; z-index:20; border:1px outset #aaa;}
+#findPopup {visibility:hidden; top:30px; left:50px; background-image: url(/theme/default/headerStriped.gif); position:absolute; 
+text-align:left; width:180px; z-index:20; border:1px outset #aaa;}
+#themePopup {visibility:hidden; top:30px; left:50px; background-image: url(/theme/default/headerStriped.gif);  position:absolute; 
+text-align:left; width:180px; z-index:20; border:1px outset #aaa;}
+.menuItem {padding: 5px 0px 5px 20px;  }
+.menuItemIcon {padding: 5px 0px 5px 4px;  }
+.menuSeperator { border-bottom: 1px solid #ccc; height: 1px; font-size: 0px; width: 100%; margin: 0px; padding: 0px;   }
+.menuInput { padding: 2px;  border: 1px solid #aaa; height: 19px;   } 
+#addBuddyForm {  display:none;  }
+.verticalLineDark { border-left: 1px solid #666; width: 2px;  } 
+
+/* footer related */
+#footer { margin-top: 0px; margin-right: auto; margin-left: auto; padding: 2px; background-color: #fff; font-size: 0.8em; }
+p.footerDiv { color: #999; margin: 0px 0px 4px 0px; padding: 0px; }
+#statistics { color: blue; margin-right: auto; margin-left: auto; margin-top: 20px; margin-bottom: 20px; background: #eee; border: 1px dashed #8d8d8d; width: 60%; padding: 4px; }
+
+
+/* page specific */
+div.signupBox{padding: 5px 0; background-color: #D4DDFF; width:720px;}
+div.whySignupBox{padding: 5px 0; background-color: white; width:190px;}
+
+/* calendar view */
+/*IE is not showing border-right on any far-right (saturday) div with an event that has a bgcolor. the divs appear to be overlapping somewhat, so i put the calendar cell borders on the table cells instead of the divs, and  */
+* html table#mainCalendar {border: 1px solid #adadad;} /* //hack// IE only sees this style */
+
+table#mainCalendar { border-collapse:collapse; border-left:2px solid #ccc; border-top:2px solid #ccc; } /* 2px top/left bc firefox not showing the table border there */
+table#mainCalendar td {border:1px solid #ccc; } /* borders around the td cells instead of calBoxOutline divs */
+table#mainCalendar td .calBox, 
+table#mainCalendar td .calBoxAltColor, 
+table#mainCalendar td .calBoxToday, {width:100%;} /* unless divs set to 100%, IE overlaps divs for any cell with an event that has a bgcolor. */
+div#mainCalendarContainer { overflow:hidden; text-align:center; margin-right:14px; margin-left:14px;}
+table#mainCalendar { table-layout:fixed; width:100%; text-align:right; }
+.eventEntry { text-align:left; overflow:hidden; padding:2px 0; -moz-border-radius:4px; } /* no width, causes divs to overlap */
+
+/* calendar cells */
+td.calBox, td.calBoxAltColor, td.calBoxToday { cursor:pointer; width:14%; height:120px; }
+div.calBox { background-color:#fff; } 
+div.calBoxAltColor {  background-color:#ecf4ff; }
+div.calBoxToday { background-color:#fefdcb; }
+div.calBoxOutline { margin:0px; position:relative; height:120px; overflow:hidden; } /* no borders, tds instead */
+.calBoxDayLabel { font-family:arial; text-align:right; padding-right:2px; padding-top:2px; }
+.calBoxDayLabel img {margin-top:3px; margin-left:3px;} /* padding for feedicon, feedIcons class doesn't seem to be in current code */
+
+/* calendar misc */
+div.feedIcons { position:absolute; left:5px; top:5px; text-align:left; opacity:.4; filter:alpha(opacity=40); -moz-opacity:.4; }
+div.moreEventsArrow { position:absolute; right:2px; bottom:4px; text-align:right; margin:2px 2px 0px 2px; }
+span.weatherInfo { position:absolute; left:4px; bottom:2px; text-align:left; opacity:.4; font-size:10px; overflow:hidden; }
+.yearDiv { float:right; }
+.yearColor { color: #666;}
+#fadeMe { color:#000; position:relative; border:1px solid #ccc; height:100px; text-align:right;}
+.tagHighlightCalendarView { background-color:#cce1fe !important;}
+.indicator { background-color:#ccc; color:#666; margin-left:-3px; margin-top:-2px; font-size:9px; font-weight:bold; }
+.textBuddyEvent {color: #748fb6 !important;}
+
+/* mouseover - hover text for a single day */
+div#mouseOverDiv { z-index:30; position: absolute; text-align:left; border: 1px outset #aaa; background: #fff; padding: 5px; width: 240px; visibility:hidden;}
+.mouseOver { text-align:left; border: 2px solid #ccc; background: #fff; padding: 5px; width: 200px; }
+.mouseOverNotes { text-align: left; font-size: 0.7em; padding: 3px; border: 1px dashed #ccc; color: #666; background-color: #f2f2f2; width: 200px;   } 
+.mouseOverText, .mouseOverTextBuddy { margin: 2px 0px 2px 4px; padding-left:7px; padding-bottom:4px; text-indent:-7px}
+.mouseOverText { color: #666; }
+.mouseOverTextBuddy { color: #748fb6; }
+.tagHighlightMouseOver { background-color: #cce1fe !important;}
+
+/* calendar navigation popup*/
+div#calNavPopup { background-color: #FFF; background-image: url(/theme/default/headerStriped.gif); 
+width:144px; padding: 4px; z-index: 40; position:absolute; right:5px; top:50px; visibility: hidden; border: 1px outset #aaa;}
+.calNavMonthYear { font-size:.7em; font-weight:bold;}
+.calNavPopupWeek, .calNavPopupWeekVisible { text-align:left; font-size:.7em; }
+.calNavPopupWeekVisible { background-color: #ccc; }
+.calNavPopupDayHighlight { background-color: #ffff66; }
+span.calNavTodayHighlight { border: 1px solid #aaa; background-color: #fff !important; }
+td.calNavDay { text-align:center; padding: 0 3px;}
+
+/* day view */
+#dayViewPopup { display:none; position:absolute; z-index:1000; visibility: hidden; border: 2px outset #aaa; background:#fff; width: 500px;}
+#dayViewHeader {  background-image: url(/theme/default/headerGradient.gif); border-bottom: 1px solid #8d8d8d; padding: 4px; height: 48px; }
+#dayViewRightCol { width:100px; text-align:center; }
+#dayViewBody { background:#fff; }
+.dayViewHeaderArrows { position:absolute; right: 50px; padding-top: 7px; width: 150px; }
+.dayViewHeaderNumeral { font-family: Arial, Helvetica, Verdana; font-size:32px; font-weight: bold; }
+.dayViewImages { padding-bottom:6px; text-align:center; border: 1px solid #666; background-image: url(/theme/default/headerStriped.gif); }
+.dayViewImage { margin:auto; overflow: hidden; border: 1px solid #333; margin-bottom:6px; background-color: #000; width: 80px; }  
+.dayViewHighlightBox { padding: 3px; border: 1px dashed #ccc; background-color: #f2f2f2; margin-top:0;margin-bottom: 6px;   } 
+.dayViewEventHeader { border-bottom: 1px solid #aaa; padding-top:10px; padding-bottom:2px; }
+.tagHighlightDayView { background-color: #cce1fe !important;}
+.closeDayView { position: absolute; bottom: 3px; right: 4px; } 
+
+/* search results */
+.searchResultsHeader { background-repeat: repeat-x; height: 30px;  background-image: url(/theme/default/headerGradient.gif); 
+padding: 4px 2px 0px 8px;; border-bottom: 1px solid #aaa; }
+
+/* event edit view*/
+#eventEditPopup {  display:none; text-align: left; position:absolute; z-index:1020; visibility: hidden; background: #fff; border: 1px solid #8d8d8d; width: 500px; }
+#eventEditHeading { margin-top: 18px; overflow: hidden; text-align: center; background-image: url(/theme/default/headerGradient.gif); border-bottom: 1px solid #8d8d8d; height: 48px; }
+.eventEditInvites { margin-bottom: 4px;  }
+
+/* Buddy View */
+#buddyList {margin-right: 12px; text-align: left; float: right; }
+.removeBuddy { position: relative; left: 2px; padding: 1px;  visibility: hidden; }
+.iconDiv { float: left; margin: 12px 10px 12px 12px; }
+.iconBorder {border: 1px solid #ccc; }
+#centerColumn { position: relative; background-color: #fff; border-left: 1px solid #adadad; width: 500px; text-align: left; }
+h1.yourName { padding-top: 9px; margin-bottom: 2px; }
+.cityWeatherDiv { position: absolute; top: 39px; right: 20px; }
+.buddyImages { margin: 4px; border: 1px solid #333; float: left; width: 80px; overflow: hidden; background-color: #000; text-align: center; height: 60px; }
+.mediumHeader { background-repeat: repeat-x; padding: 3px; height: 22px; margin-left: 20px;  background-image: url(/theme/default/bgMediumHeader.jpg); width: 440px; margin-top: 12px; margin-bottom: 8px; }
+#settings {margin: 0px 0px 14px 4px; width: 200px; text-align: left; padding: 4px;  padding-bottom: 8px; 
+ border: 1px solid #adadad; background-color: #fefdeb; }
+#addMore {margin: 0px 0px 20px 4px; width: 200px; text-align: left; 
+padding: 4px;  background-color: #ecf4ff;  }
+.detailForm {display: none; background-color: #fff; padding: 8px; width: 80%; }
+.detailInput { width: 90px; margin-top: 2px; border: 2px solid #ccc;}
+.nameInput { margin: 0px; cursor: pointer; border: 2px solid #fff; padding-left: 0.2em; color: #000; font-size: 25px; font-weight: 900; padding: 2px;  background-repeat: repeat-y;  }
+.shareBuddyOptions { display:none; position:absolute; margin-top: 4px; margin-left: -4px; z-index:2000; border:1px outset #aaa; 
+background-color:#fefdeb; padding:5px; width:200px; }
+
+/* Settings Pages */
+.horizontalNav { position: relative; border-bottom: 1px solid #aaa; background-image: url(/theme/default/headerGradient.gif); padding: 2px; margin: 0px; } 
+.horizontalTab {padding-right: 4px;  } 
+.verticalLine { border-left: 1px solid #aaa; width: 2px; } 
+
+/* additional items */
+
+
+#searchResultsView { display:none; position:absolute; z-index:800; visibility: hidden; border: 2px outset #aaa; background:#fff; width: 500px; overflow: auto;}
+#searchResultsClear { display:none; position:absolute; z-index:800; visibility: hidden; border: 2px outset #aaa; background:#fff; width: 500px; overflow: hidden;}
+
+#shareOnBlog { display:none; position:absolute; z-index:800; visibility: hidden; border: 2px outset #aaa; background:#fff; width: 500px;}
+#shareOnMySpace { display:none; position:absolute; z-index:800; visibility: hidden; border: 2px outset #aaa; background:#fff; width: 500px;}
+
+
+#oneBoxPopup { border: 1px solid #888; background-color: #eee; padding: 5px; position: absolute; z-index: 2000; display: none; }
+#oneBoxPopupSelect { width: 294px; color: #333;  }
+#anonymousMessage { background: #fff; padding: 20px; text-align:left; width:90%; border:2px outset #aaa; z-index:2000; position: absolute; top: 12px; left: 20px;  }
+#alertDialog { display: none; position: absolute; visibility: hidden; padding: 20px; width:400px; height: 160px; background-image:url(/theme/default/headerStriped.gif); border:2px outset #aaa; z-index:2000; top:90px; }
+.alertButton { position: absolute; top: 172px; right: 10px; }
+
+div.veryDarkShade { opacity:.3; filter:alpha(opacity=30); -moz-opacity:.3; background-color:#134;}
+div.darkShade { z-index:700; opacity:.15; filter:alpha(opacity=15); -moz-opacity:.15; background-color:#134;}
+div.upperDarkShade { z-index:900; opacity:.15; filter:alpha(opacity=15); -moz-opacity:.15; background-color:#134;}
+div.lightShade { z-index:1010; opacity:.05; filter:alpha(opacity=5); -moz-opacity:.05; background-color:#134;}
+div#boxShadow { display:none;  position:absolute; top:0; margin:0; z-index:599; background: #000; opacity:.3; filter:alpha(opacity=30); -moz-opacity:.3; margin-left: auto;	margin-right: auto; }
+div#hidden { display: none; } 
+.appContainer { background-color: #a7a7a7; background-position: center; background-repeat: repeat-y; background-image: url(/theme/default/macGradient.jpg); }
+.dropShadow { width: 100%; background-repeat: repeat-x; background-image: url(/theme/default/dropShadowBottom.jpg); }
+
+/* widget specific */
+#widgetHeader { font-size: medium; margin-left: 14px; font-size: 12px;}  
+
+
+/* "that's all she wrote!" */

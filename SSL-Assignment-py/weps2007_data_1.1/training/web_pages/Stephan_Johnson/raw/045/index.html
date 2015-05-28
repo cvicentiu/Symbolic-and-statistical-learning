@@ -1,0 +1,2367 @@
+<html>
+<head><meta http-equiv="pragma" content="no-cache">
+<title>Project 72 : text report</title>
+</head>
+<body>
+<h1> Project 72 : text report </h1>
+<hr>
+
+<pre>
+Project no: 72
+	First name: Stephan
+	Surname: JOHNSON
+	Title: Using Neural Networks in Finance A Practical Approach
+	Course: BSc Computing Hons
+	Vax ID: JOHNSOS
+	Supervisor: PHILLIP BURRELL (Email:   Room:  Phone:  )
+	Second assessor: DAVE INMAN (Email: INMANDW  Room: E505 Phone: 7419)
+<hr><p><p>
+Neural Networks in Finance
+
+By Stephan Johnson
+
+SCISM : BSc (hons) in Computing Studies
+
+South Bank University 
+
+ Supervisors: Phillip Burrell &amp; Dave Inman
+
+
+
+Contents
+
+1.	Introduction	4
+
+2.	History of the Neural Network	5
+
+2.1	The Brain	5
+
+2.2	The McCulloch &amp; Pitts Model	6
+
+2.3	Activation Alternatives	7
+
+2.3.1	Sigmoidal Functions	8
+
+3.	Learning	9
+
+4.	The Perceptron	11
+
+4.1	Training Perceptrons	11
+
+4.1.1	The Disadvantages of the Perceptron	12
+
+5.	ADALINE	14
+
+5.1	The Delta Rule	17
+
+6.	Hopfield	19
+
+6.1	Creating Minima	21
+
+6.1.1	The Solution to False Minima	22
+
+7.	Simulated Annealing	23
+
+8.	Error Back Propagation	24
+
+8.1	Error Back-Propagation Procedure	25
+
+8.1.1	Forward Phase	25
+
+8.1.2	Backward Phase	26
+
+9.	Neural Networks in Finance	28
+
+9.1	Using an Artificial Neural Network to Pick Stocks	28
+
+9.1.1	The Data Set	29
+
+9.1.2	The Results	30
+
+9.1.3	Conclusion	31
+
+9.2	Applying Artificial Neural Networks to Investment Analysis	32
+
+9.2.1	Yoon et al&#146;s Test Data	32
+
+9.2.2	Network Topology	32
+
+9.2.3	Yoon et al Results	33
+
+9.2.4	Summary	34
+
+10.	The Proposed Neural Network Solution	35
+
+10.1	The Data	35
+
+11.	Implementation	36
+
+11.1	Synapse Representation	36
+
+11.2	Initialisation Code Discussion	37
+
+11.3	Forward Phase Code Discussion	38
+
+11.4	Backward-Phase Code Discussion	39
+
+11.5	Training	42
+
+12.	Conclusion	43
+
+14.	Appenix 2 : Windows&#153; Version NeuralNetworkDlg.h	46
+
+15.	Appendix 2 MS-DOS Version FullNet.h	63
+
+16.	Appendix 2 MS-DOS version Fullnet.cpp	65
+
+17.	Appendix 3 Graphical Representation of Sigmoidal Functions	73
+
+19.	References	75
+
+
+
+
+
+
+
+1. Introduction
+
+Today, excluding traditional techniques, neural networks are the most common system for the prediction
+
+of share prices. Although some expert systems are still in use, neural solutions for financial trading are 
+
+receiving a lot of attention. These tools have proven effective in the area of forecasting stocks and share 
+
+prices. 
+
+
+
+The financial world's interest in neural network tools is indicated by its investment in information technology.
+
+Spendature is reputed to be two and a half times the average for all other industries. This is a recorded 
+
+growth of 130%  between 1988  and 1990 [25].
+
+
+
+This report aims to address the development of a neural network system capable of differentiating between 
+
+a stock that is profitable and one that is not based upon a set of economic variables. To perform this task it 
+
+is necessary to acknowledge the history of artificial neural networks to emphasise the pertinence of existing
+
+techniques and their validity in the light of this aim. The development of a neural network is aimed at providing 
+
+a reusable model that takes advantage of Visual C++ and the Microsoft Foundation Class library. Nevertheless,
+
+an MS-DOS based version of the software is provided to enable those unfamiliar with the MFC and event-driven 
+
+programming to use segments of the code to generate other tools. 
+
+Reviews of two different approaches to the same aim highlight some techniques and how these benefit the 
+
+construction of this example. The document concludes by discussing the merits and failings of the development 
+
+and how improvements to this approach effect its efficacy.
+
+
+
+
+
+
+
+2. History of the Neural Network 
+
+    
+
+2.1 The Brain
+
+The artificial neural networks (ANNs) used today are the product of many different 
+
+sources whose aim has been to evolve computers into a &#147;thinking&#148; machine. However, 
+
+problems arise even in a valid definition of thinking - not to mention how computers will 
+
+reproduce this most human of functions.
+
+
+
+Modelling the human brain is where most neural network studies begin. The human brain 
+
+incorporates many tiny cells called neurons. On average, the brain exhibits an order of 
+
+  neurons [1]. Two schools of thought were divided over the structure of the nervous 
+
+system ,including brain cells, in the second half of the nineteenth century. Reticularists, at 
+
+this time, claimed the brain was a continuous uninterrupted network of fibres, while 
+
+neuronists believed the structure consisted of a vast number of single interconnected 
+
+cellular units [6]. This division in the scientific community was rectified by Santiago Y 
+
+Cajal in 1888 using a technique for staining nerve fibres by bicrhomate silver reaction 
+
+perfected by Camillo Golgi in 1880. Cajal disproved Reticularist theory by exposing tiny 
+
+gaps between each neuron.
+
+
+
+Advances in microscope technology revealed that all neurons contain the same parts [6]. 
+
+Each neuron incorporates a cell body, or soma, which have protruding root-like elements 
+
+called dendrites and a tubular fibre which narrows into small branches at the end called 
+
+the axon [5]. In instances where axon branches meet other neuron, or muscle tissue, 
+
+Ramon Y Cajal revealed a tiny gap - even though there is no physical connection, it is 
+
+often referred to as a connection. Conjunction between neurons is described as being a 
+
+synapse or a synaptic junction. According to David Sherrington, an average brain exhibits 
+
+an order of  synaptic connections per neuron over all distance scales within the 
+
+brain [1]. Interchange between cell structures is either an electrical or chemical  process 
+
+that delivers a signal along the axon to produce an input signal at the dendrite(s) of 
+
+subsidiary connected neurons. If the potential for non-activation is decreased by the 
+
+presence of a neural connection it is termed an excitatory connection. Reduction of the 
+
+firing potential of a neuron is termed an inhibitory connection. Dale&#146;s  law claims that all 
+
+synaptic endings of an axon are either inhibitory or excitatory [6]. The connectivity and 
+
+activation occurrences between neurons are how memories are stored. 
+
+
+
+Memory is characterised by particular firing patterns, or sequences of pattern activity [1]. 
+
+A useful memory is one that is able to accept a distorted version of a data pattern,  iterate 
+
+dynamically to a state of activity identical to it, or similar to a group the input pattern is 
+
+related to in some way. This process is known as retrieval. Retrieving stored information 
+
+in the brain does not rely on location in the same way as conventional computers. The 
+
+brain relies on recalling information based on partial knowledge of its content without 
+
+knowing its location. This is called associative or content-addressable memory.  It would 
+
+be unwise to suggest that a person could recall the 3472nd person they know. However, 
+
+given the first initial of a name, say N, and were told that he discovered the laws of 
+
+gravity, there would be a strong possibility that the name Newton would spring to mind. 
+
+Solving crossword type puzzles would be extremely difficult without associative-memory 
+
+capabilities [6]. 
+
+
+
+
+
+ 
+
+- Figure 1: Structure of A Neuron (Schematic)
+
+2.2 The McCulloch &amp; Pitts Model
+
+A neurophysiologist, Warren McCulloch and the logician Walter Pitts modelled an 
+
+abstract representation of the brain&#146;s neuron in 1943. Their work marks the invention 
+
+of the threshold unit &#150; the first effective attempt to mathematically formalise the 
+
+operation of a neuron [6][8].
+
+Although far simpler than the neurons of the brain, the McCulloch and Pitts model 
+
+(termed hereafter as MCP) can only take the outputs 1 or 0. It focuses on the 
+
+synaptic action represented by a variable weight that determines the potency of 
+
+excitatory/ inhibitory synapse potential. Positive or negative values of W determine 
+
+its excitatory or inhibitory potential respectively. A unit&#146;s state is established by 
+
+summing the influences of other neurons by multiplying input by synapse weights 
+
+denoted by W. It is assumed the result 1 means the neuron has been fired (activated) 
+
+and a 0 result  depicts a non-firing situation (non-activation). 
+
+- Figure 2: The McCulloch &amp; Pitts Model[1943]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The mathematical representation of this where j is the instance  X is the input, W is the 
+
+synapse-weight, T is the some threshold and Y is the output is shown below:
+
+ 
+
+ 
+
+MCP style neurons with two input points can achieve any function that can be 
+
+represented by dividing the input space with a single straight-line [6]. In cases where 
+
+more than three input nodes exist representation becomes more difficult to visualise. If n 
+
+input-nodes represents n dimensions, division of the input space must be by (n-1)-
+
+dimensions. The example below is a geometric representation of a three-node version of 
+
+the MCP with a plane dividing the input space.  
+
+
+
+
+
+
+
+2.3 Activation Alternatives
+
+It will become increasingly apparent that linear-seperability, shown above, is very 
+
+impractical for real world problems. A more practical approach to applying a threshold 
+
+would be to have a less deterministic function, allowing analogue values to be used. A 
+
+disadvantage of hard-limiter, or step-functions used in MCP nodes is that the result is 
+
+non-differentiable. To determine the amount of weight correction needed many 
+
+algorithms rely on the derivative of a neural network&#146;s output. The solution to this 
+
+inappropriate activation function is a sigmoid function.
+
+
+
+A sigmoid function does not assign definite values like (0,1) to inputs but produces a real 
+
+number for a given input. In contrast to a step function, sigmoid functions are smoothly 
+
+increasing (or as described by Muller et al &#147; increasing monotonically&#148;[6]) and provide a 
+
+degree of non-linearity . The non-linear property of this type of function is a necessity of 
+
+gradient descent. It is vital to this learning process because a network&#146;s outcome must be 
+
+differentiable to produce an indication of how much synaptic adjustment will produce 
+
+desired outcomes.
+
+
+
+ 
+
+
+
+2.3.1 Sigmoidal Functions
+
+Masters  offers a definition of what a sigmoid function actually is - he describes it as:
+
+&#147;A continuous real valued function whose domain is the reals whose derivative is always 
+
+positive and whose range is bounded&#148; [2].
+
+There are many reasons for using a sigmoidal function in error back-propagation training. 
+
+It will become increasingly apparent later why it is necessary to replace the step function 
+
+used by MCP neurons because of its non-differentiable properties. 
+
+
+
+Sigmoid functions also have the ability to map any input to a finite range of inputs, which 
+
+are normally between 1 and 0 or &#150;1 and +1. These reasons underline why McCulloch and 
+
+Pitts style hard-limiters are not used for practical solutions to real world problems.
+
+Sigmoid functions never reach their maximum or minimum range values so training a 
+
+network on extreme values is of no consequence. 
+
+The most popular sigmoid function is the logistic function   simply 
+
+because its derivative is easily found:  [2] 
+
+
+
+The disadvantage of the logistic function is that it slows training by back-propagation 
+
+down because of its small derivative [21].  Kalman &amp; Kwansy 1992 choose a hyperbolic 
+
+tangent function based on a set of criteria that a sigmoidal function should meet [2]. 
+
+Appendix 3 shows graphical representation of the logistic function and its alternatives.
+
+
+
+
+
+3. Learning
+
+Learning, or training used interchangeably, can be categorised into two different methods; 
+
+supervised and unsupervised. Supervised learning requires input data used in training to 
+
+possess a known output, which is compared to the network&#146;s actual output to calculate 
+
+error. The weights are then adjusted to reduce the error produced at the output layer.  
+
+   
+
+Significant research shows the strength of synaptic connections to be significant to  
+
+learning. Adjustment of synaptic strengths effects subsequent neurons dependent on 
+
+previous connected neurons in the network as inputs. Donald Hebb&#146;s work on learning is 
+
+considered some of the most influential, he  states:
+
+ &#145;When an axon of cell A is near enough to excite a cell B and repeatedly or persistently takes 
+
+place in firing it, some growth process or metabolic changes take place in one or both cells that 
+
+A&#146;s efficiency, as one of the cell firing B, is increased.&#146;[20]
+
+It is often interpreted to mean:
+
+&#147;An active synapse that repeatedly triggers the activation of a postsynaptic neuron will grow in 
+
+strength while others will gradually weaken.&#148;[7] 
+
+The aim of learning is to find weights strengths that are able to perform a particular 
+
+function. This is done by repeatedly triggering certain nodes to strengthen the 
+
+connections that help determine the desired outcome and to weaken those that inhibit the 
+
+correct response. The problem is how to create a set of weights that generate internal 
+
+representations of similar patterns to those presented initially.   
+
+
+
+
+
+Many of the solutions proposed for the weight generation process are based on Donald 
+
+Hebb&#146;s ideas. Hebb&#146;s learning law can be expressed mathematically if the inputs x and 
+
+the outputs y are binary valued (0,1) and the weight is incremented only when the output 
+
+and the corresponding input is valued 1. If the weights are initially set to 0 then the values 
+
+after training can be adjusted by applying the following rule:
+
+ 
+
+- Equation 1 : The Hebb Learning Rule
+
+The figure p shows the number of patterns in the training set. Using matrices to hold the 
+
+values of x and y, a the same equation, where is the transpose of   can be 
+
+shown:
+
+ 
+
+- Equation 2 The Matrix version of Hebb&#146;s Learning Law
+
+
+
+
+
+
+
+4. The Perceptron
+
+Rosenblatt perfected a representation of a neuron in 1958 using the biological models as 
+
+a foundation. The working model, called a perceptron, was capable of learning but had 
+
+many shortcomings in that it was unable to perform adequately on a particular class of 
+
+problems. Rosenblatt discussed many variations on the perceptron theme - most 
+
+poignant to our subject being a three-layer construct with input, hidden and output layers. 
+
+The use of a deterministic function limits neurons to linear representation, rendering 
+
+hidden layer neuron configurations equal to single layer models [6]. The hidden layer can 
+
+become superfluous if the output response from the network is linearly separable [2]. 
+
+Some of Rosenblatt&#146;s models included inhibitory connections to dissuade activation 
+
+occurring in more than one neuron at a time. 
+
+
+
+4.1 Training Perceptrons
+
+Problem solving using perceptrons involved presenting sample input, calculating  
+
+middle layer activation and using those values to compute the response layer 
+
+outcomes. Subsequently, response layer output is used to update the weights 
+
+between the hidden and output layers [2]. The weights connecting input neurons to 
+
+the hidden layer are not changed. These weights are either adjusted to detect known 
+
+features of the input sample or initialised randomly. Often this network topology is 
+
+classified as a two-layer network even though three layers exist [2].
+
+Rosenblatt&#146;s work also included the perceptron convergence theorem, an algorithm 
+
+that enables the training of perceptron units. If a set of training patterns is &#147;learnable&#148; 
+
+by the perceptron, this algorithm is guaranteed to converge to a set of weights that 
+
+enable a correct response to input data. 
+
+
+
+
+
+
+
+4.1.1 The Disadvantages of the Perceptron
+
+Perceptrons had many disadvantages, it was limited to solving problems that were 
+
+&#147;linearly separable&#148; at the output layer. Samples presented to the network which 
+
+cause activation are separated from those that do not at the output layer [2]. This can 
+
+be illustrated by describing the problem as n dimensional space and the solution as a 
+
+single Hyperplane dividing the problem space.
+
+
+
+
+
+
+
+- Figure 3: Linearly and Non-linearly Separable Sets
+
+&#147;Each plane represents the constraint on the weights caused by a particular input/output case. If 
+
+the weights lie on the correct (unshaded) side of the plane the output will have the correct state 
+
+for that case&#148; 
+
+The perceptron convergence procedure considers the constraint planes one at a time. 
+
+Whenever the current combination of weights is on the wrong side, it moves it perpendicularly 
+
+towards the plane.  This reduces the distance between the current combination of weights and 
+
+any of the ideal combinations. So provided the weights do move by less than twice the distance 
+
+to the violated constraint plane a weight update is guaranteed to reduce the measure. [3].
+
+The perceptron&#146;s limitations are discussed by Geoffrey Hinton [3], the following 
+
+example typifies the kind of problem that cannot be solved by perceptrons.
+
+ &#147;Consider, for example, a network composed of two input units and one output unit. There is no 
+
+way to set the two weights and one threshold to solve the very simple task of producing an 
+
+output of 1 when the input vector is (1,1) or (0,0) an output of 0 when the input vector is (1,0) or 
+
+(0,1).&#148; 
+
+More detailed accounts of the perceptron convergence theory&#146;s failings are discussed in 
+
+considerable depth by Minsky and Papert&#146;s 1969 paper detailing the difficulties that arise 
+
+when using perceptrons to solve problems like parity and connectedness otherwise 
+
+known as &#147;hard learning problems&#148;[4].
+
+
+
+
+
+A solution to a typical hard learning problem using inter-connected groups of perceptrons 
+
+is relatively common knowledge now. However, at that time there were no practical 
+
+learning algorithms for perceptrons to combat this problem [8]. McCulloch and Pitts style 
+
+neurons connected to the same input points can achieve a greater variety of functions 
+
+provided that a suitable way of combining the many neurons at the output can be found 
+
+[8].
+
+
+
+
+
+5.  ADALINE
+
+Widrow and Hoff  attempted to model to mimic the action of a biological neuron in 1960. 
+
+The system incorporates the use of weights in the same way as the MCP model but does 
+
+not use 0 and 1 to represent the states at the output. In preference to the binary method, 
+
+their system, the ADALINE uses +1 to represent the &#145;on&#146; state at output and -1 represents 
+
+the &#145;off&#146; state 0. There are advantages to this method in comparison to using McCulloch 
+
+and Pitt&#146;s representation.
+
+In essence the ADALINE is a simplified perceptron with the addition of a bias weight.  In 
+
+implementation a bias appears to have the same qualities as an input node that is 
+
+permanently set to +1 and replaces the threshold function in a MCP style node [20].   
+
+The significance of +1 and &#150;1 instead of 1 and 0 can be shown using an example of a 
+
+two input ADALINE is given the truth table is below for the following AND function 
+
+ .
+
+p
+
+ 
+
+ 
+
+Y
+
+1
+
+0
+
+0
+
+0
+
+2
+
+0
+
+1
+
+0
+
+3
+
+1
+
+0
+
+0
+
+4
+
+1
+
+1
+
+1
+
+- Table 1 : Truth Table for AND Example inBinary
+
+  
+
+
+
+
+
+The truth table on the previous page illustrates Y =1 only when  =1 and  =1. Using 
+
+matrices to represent Hebb&#146;s law as described in Equation 3 would look like this:
+
+   and  hence  
+
+- Equation 4: Hebb's Law Matrix applied to AND problem
+
+Applying the above to ADALINE produces the following table where the net column 
+
+displays the corresponding weighted sum of the inputs.
+
+P
+
+ 
+
+ 
+
+net
+
+Y
+
+1
+
+0
+
+0
+
+0
+
+0
+
+2
+
+0
+
+1
+
+1
+
+0
+
+3
+
+1
+
+0
+
+1
+
+0
+
+4
+
+1
+
+1
+
+2
+
+1
+
+- Table 2: The Product of Weighted Sum Using an MCP Node
+
+Since ADALINE, in this example, is given all of the possible outcomes it does not have to 
+
+generalise to classify any unseen data presentations. 
+
+
+
+The above example produces good results using binary values whilst using an update 
+
+method of training. This is not always guaranteed to work and can be illustrated by the 
+
+following truth table for example:  . 
+
+
+
+P
+
+ 
+
+ 
+
+Y
+
+1
+
+0
+
+0
+
+0
+
+2
+
+0
+
+1
+
+0
+
+3
+
+1
+
+0
+
+1
+
+4
+
+1
+
+1
+
+0
+
+- Table 3: Truth Table for  Problem
+
+
+
+The weights are calculated using the same method as the first example:
+
+ 
+
+- Equation 5 : The Matrix Version of Hebb's rule using  Data. 
+
+ADALINE&#146;S result is shown in the following table where net is the result after  training.
+
+ 
+
+ 
+
+net
+
+Y
+
+0
+
+0
+
+0
+
+0
+
+0
+
+1
+
+0
+
+0
+
+1
+
+0
+
+1
+
+1
+
+1
+
+1
+
+1
+
+1
+
+- Table 3 : The Net Result Showing Error Created by training an MCP to Perform 
+
+Table 3 shows the learning rule used to train the ADALINE here only increases weight 
+
+values. Widrow and Hoff solve this problem by using +1 and &#150;1 instead of 1 and 0 to 
+
+represent firing and non-firing respectively. The result is best illustrated by the use of the 
+
+use of the same example :
+
+P
+
+ 
+
+ 
+
+Y
+
+1
+
+-1
+
+-1
+
+-1
+
+2
+
+-1
+
++1
+
+-1
+
+3
+
++1
+
+-1
+
++1
+
+4
+
++1
+
++1
+
+-1
+
+- Table 4: The truth table for Problem  using +1 &amp; -1 in the ADALINE
+
+ 
+
+Equation 6: Matrix Version of Hebb's Law to Set Weights Representing Using -1 &amp; +1 to set the Weight
+
+
+
+When the above weights are used and Table 5 is presented to the unit once more the 
+
+result is shown below:  
+
+ 
+
+ 
+
+net
+
+Y
+
+-1
+
+-1
+
+ 0
+
+0
+
+-1
+
++1
+
+-4
+
+0
+
++1
+
+-1
+
+ 4
+
+1
+
++1
+
++1
+
+ 0
+
+0
+
+Therefore, the net is able to reduce the values when the input is inconsistent with the 
+
+output. This example is taken from [20].
+
+5.1 The Delta Rule
+
+As we have discussed, MCP nodes are limited to problems that can be represented as a 
+
+single division of the input space i.e. linearly separable. The restriction is because the 
+
+algorithm does not consider the actual value of the output described as net. In supervised 
+
+learning it is possible to work out the degree of difference/error between the actual output 
+
+net and the desired output  this is called  (delta) and can be written as  . 
+
+The aim of weight  adjustment proportionally to   is to reduce the degree of error. 
+
+Therefore, we need to find the lowest degree error to make our net produce output similar 
+
+to the desired outcome. Using a computer to perform this task is relatively straightforward 
+
+and involves working out all of the possible weight adjustments for all training patterns of t 
+
+data presented to the network and then finding the weight adjustment that yields the 
+
+smallest error. Performing this task manually would be an arduous task so using the 
+
+mean-squared error is necessary to speed things up. The method for calculating the 
+
+mean squared error for all training patterns  is:
+
+  where     where where   
+
+Therefore, to write the formulae long hand:    
+
+Finding the lowest error outcome using this method is made easier because the above 
+
+formulae for the mean squared error is now expressed as a quadratic equation.  
+
+Properties of this type of equation are its non-linearity and only one lowest point. Hence, 
+
+each set of weights will have one minimum point. A fast way of finding the minimum point 
+
+or the Least Mean Squared Error is to use the derivative of the error because this is 
+
+proportional to the weights but the sign is reversed. According to Timothy Masters, recent 
+
+experiments indicate that the log of the mean squared error, instead of the derivative, 
+
+may aid learning. Since the derivative is proven in practice then I would prefer to use this 
+
+method. Derivative of the error is important as it indicates the direction weights should 
+
+move to reduce the error. And as we discussed earlier this reinforces the use of sigmoidal 
+
+functions over deterministic functions used by the MCP. 
+
+Therefore the change in weights   is calculated thus:
+
+  where   
+
+in greater detail this is calculated thus: 
+
+ where and where
+
+   
+
+Without abbreviation the calculation appears thus:
+
+  adding the constant  to the equation 
+
+makes the final equation for the  change in weights   look like this:
+
+ 
+
+Adjusting the weights using theoutcome value is known as gradient descent training 
+
+which relies heavily on the derviative of the mean squared error function . Training in this 
+
+case needs to find the mean mean difference of the values of   for each input of the 
+
+training set. Each weight is adjusted by this amount multiplied by the constant 
+
+ .Originaly the  was equal  where  was the number of input. This was 
+
+ineffective because because the system is unable to settle at a global minimum for each 
+
+weight. Use of a number smaller than this was found to be more effective.[2]
+
+
+
+
+
+6. Hopfield
+
+Hopfield drew attention to some artificial neural network properties known as 
+
+associative memory. This type of memory has little similarity with conventional Von 
+
+Neuman memory, which relies on the address/location of data. Associative memory 
+
+by definition is the ability to store and recall data by its affinity with other information. 
+
+It also permits the recall of information on the basis of partial knowledge of the 
+
+content and as discussed earlier it is sometimes referred to as content-addressable 
+
+memory [6]. 
+
+According to Muller et al [6], neural networks are generally pattern classifiers that 
+
+associate different input patterns with a particular output. To perform this task it is 
+
+necessary to store both internal patterns and desired outputs by using a distributed 
+
+form across the network.
+
+According to Picton [20], the main characteristics of associative memory are outlined 
+
+below.
+
+- The ability to store many pattern-pairs. The pattern pairs consist of input patterns 
+
+and desired output patterns.
+
+- Data must be stored in a method that is organised internally by the network.
+
+- Organisation of the data in the network must also be stored in a distributed 
+
+fashion.
+
+- The network should possess the ability to generate appropriate responses from 
+
+input patterns presented to the network.
+
+- The generation of correct responses to incomplete or inaccurate data sets. This 
+
+is often termed as Hetero-associative behaviour.
+
+- Associative memory should also have the ability to add new associations to the 
+
+existing data in the memory.
+
+These characteristics match performance criteria expected from neural network 
+
+architectures.  
+
+
+
+ 
+
+Hopfield also rekindled the zeal for neural network research by drawing attention to 
+
+two major features of inter-connected non-linear devices. He claimed:
+
+&#147;Systems of this type have stable states which will always be entered if the net is started with 
+
+similar states. States can be created by changing the strengths of the interconnections between 
+
+cells . This is done in an irreversible manner and has a tendency not to return to a previously 
+
+experienced state.&#148;[8]  
+
+Once a net finds the correct global minimum or stable state from all weights, it is able 
+
+to perform and achieve correct results based on representations presented at the 
+
+input. The proof of the aforementioned statements relies on the definition of energy 
+
+levels calculated for each possible input pattern of firing and non-firing neurons. 
+
+Hopfield showed that every time the input pattern representation is changed, the 
+
+Energy State of the network changes to a level that is the same or lower than those 
+
+previously accomplished [9]. The conclusion of this paper is that using energy to 
+
+represent the successive firing of neurons enables the energy reduction to be 
+
+represented as a fall down slopes or &#147;energy wells&#148;  on an error surface [9]. The error 
+
+surface is the amalgam of mean squared errors for the training set whose quadratic 
+
+properties allow its representation as an &#145;well&#146; shaped curve. This falling down this 
+
+surface continues until a stable the stable state is found. 
+
+
+
+
+
+Hopfield does not place much emphasis on the fact that networks can learn these 
+
+stable states by applying the principles of Hebbian learning. However, 
+
+acknowledgement of Hebb&#146;s theory is only recognised in relation to the biological 
+
+neurons of the brain [8]. 
+
+
+
+ 
+
+6.1 Creating Minima
+
+Hopfield made visualising the Widrow and Hoff delta rule easier by his notion of 
+
+slopes and energy wells. Creating minima, or training, using the gradient descent 
+
+method became also much easier to describe. This is best expressed by [10] as 
+
+such:
+
+
+
+1. Select a truth table column.
+
+2. If an error is detected, work out how far the MCP is from the desired firing value.
+
+3. Adjust the weights that are &#145;live&#146; (have firing inputs)and the threshold to remove 
+
+&#145;d&#146; of the error.
+
+4. Go back to step 1,until none of the columns cause errors. 
+
+
+
+The Hopfield Network uses this procedure to perform gradient descent. Output 
+
+connections are linked directly to the input connections, which introduces feedback to 
+
+the network. Other networks discussed earlier are not dependent on their own 
+
+feedback from previous data and also the new input pattern. 
+
+The network&#146;s configuration is made up of a single layer. Once a data pattern is 
+
+entered, the network iterates several times until a minimum state (a state where no 
+
+further changes takes place) is reached. The synapse weights are adjusted 
+
+sequentially (one at a time) to enable reassessment of the network&#146;s output after 
+
+each iteration. Since the network does not rely on intervention from its user during 
+
+this process, is termed auto-associative.     
+
+This method allows the network to clamp states to the weights to produce a desired 
+
+firing/activation pattern. One drawback of this method is the creation of unwanted, or 
+
+false, minima from the same data. While the network performs based on the original 
+
+representations there is always the possibility of getting stuck in the wrong energy 
+
+wells (false local minima). These unwanted wells manifest themselves as 
+
+unexpected results  at the output layer. A solution to this problem is to create false 
+
+minima for every non-well state. This is simple with a network that does not have 
+
+many input nodes. However, increasing numbers of nodes, in more complex models, 
+
+makes this solution very impractical [8].
+
+
+
+  
+
+6.1.1 The Solution to False Minima
+
+A solution the problem of false local minima is to introduce a degree of uncertainty to 
+
+the network. Using Hopfield&#146;s analogy of energy wells, the current state of a neural 
+
+network can be described as a ball upon this error surface. Giving the ball an inherent 
+
+uncertainty property makes it jump about making movement out of false local 
+
+minima easier. The problem arises when the net&#146;s state (the ball) reaches a proper 
+
+minimum. It will not remain in this stable state because of the innate uncertainty, or 
+
+noise , quality that makes it jump. When the desired minimum is reached it would be 
+
+favourable to remove this quality so that the net would perform as a normal Hopfield 
+
+net with a stable state. It would be reasonable to suggest that as the network&#146;s energy 
+
+moves closer to a stable state the amount of uncertainty should be reduced in 
+
+correlation to the distance between the current state and the desirable minimum.
+
+
+
+
+
+7. Simulated Annealing
+
+This suggestion has many similarities with a technique used in metallurgy. Annealing 
+
+a metal involves heating it to a high temperature causing the atoms to shake 
+
+violently. If cooled suddenly this randomness would be locked in its state making the 
+
+metal extremely brittle. On the other hand, if it were cooled slowly the molecules will 
+
+fall into a relatively stable state for the current temperature. If the temperature is low 
+
+enough, the metal will stabilise into an orderly structure [2]. 
+
+If we apply the principle of annealing to our neural network state (the ball) - reducing 
+
+the amount of noise as the temperature in annealing - our ball is able to jump out of 
+
+false minima. High uncertainty/temperature levels will enable movement out of small 
+
+false minima to find deeper wells. Gradual reduction of  uncertainty/temperature will 
+
+allow the net to converge to a stable state.  
+
+Geoffrey Hinton et al. used &#145;simulated annealing&#146; to produce this effect in a Hopfield 
+
+model. Their model is named after Ludwig Boltzmann, an Austrian physicist who 
+
+found properties similar to those of annealing in gas molecules. To emphasise the 
+
+relationship between the physicist&#146;s work and their own, Hinton et al labelled the 
+
+magnitude of uncertainty as the temperature [8].
+
+Boltzmann machines solve the problem by proposing a network that is 
+
+interconnected and designates some of the nodes within the network as hidden 
+
+nodes capable of having values clamped to the surrounding weights. All of the nodes 
+
+are then &#145;trained&#146; using this method described in Hopfield&#146;s work now known as 
+
+gradient descent . 
+
+Gradient decent coupled with the introduction of noise to the energy space works 
+
+because false local minima are usually shallower than those corresponding to 
+
+learned patterns [6]. Nevertheless, spurious minima still exist and are not in any way 
+
+removed by the use of this method. Therefore, this can only be considered an 
+
+optimisation of the original gradient decent method. It is considered a valid step 
+
+towards a solution but the problem was still to find a reliable way to adjust weights, 
+
+including those at the hidden layer, to produce only desirable energy wells. 
+
+ 
+
+8. Error Back Propagation
+
+Earlier, we established that multiple layers of perceptrons are now able to solve hard 
+
+learning problems such as parity. The difficulty, established by Minsky and Papert, 
+
+was how to approach training a network of interconnected perceptrons with hidden 
+
+nodes that do not have specific inputs and outputs that are manipulated externally. 
+
+After Minsky et al made this observation perceptron based implementation research 
+
+became dormant. 
+
+The renaissance of perceptron based networks was augmented by the rediscovery of 
+
+an efficient algorithm for determining the synaptic strength of connections in 
+
+multilayered networks. Several independent parties discovered Error Back-
+
+propagation  around 1985 [6]. The principle is that the synaptic connections 
+
+(weights) are updated in an iterative fashion. Many iterations of the firing process are 
+
+necessary to produce a &#145;trained&#146; and stable output. However, the desired result must 
+
+be known at the outset of the learning phase for the ensuing network to be effective 
+
+[6].
+
+
+
+
+
+8.1 Error Back-Propagation Procedure
+
+Error back-propagation can generally be divided into two distinct phases:.
+
+8.1.1 Forward Phase
+
+
+
+- Compute the hidden layer activation where h is the hidden node, i  is 
+
+the input layer node and w1 is the weight matrix between the input and hidden 
+
+nodes:
+
+  					h=F(iw1)
+
+ Equation 7
+
+- Compute the output layer activations; where o is the output node, h  are the 
+
+hidden layer nodes and  w2 represents the weight connections between the hidden 
+
+layer and the output layer.  F() is the sigmoidal function used here as the firing  
+
+rule.
+
+ 					o=F(hw2)
+
+- Equation 8
+
+These equations are also used to operate the network when it is fully operational
+
+
+
+
+
+8.1.2 Backward Phase
+
+- Compute the output layer error by working out the difference between the 
+
+actual output and the expected output; where d is the error for each output 
+
+node, t is the target/expected error.
+
+   					d=o(1-o)*(t-o)
+
+ Equation 9
+
+- Work out the hidden layer error where e is the error for each hidden layer 
+
+neuron.
+
+  					e=h(1-h)w2d
+
+ Equation 10
+
+- Adjust the weights for the second layer of connections where cw2  is the 
+
+change in matrix 
+
+  					w2=w2+cw2
+
+- Equation 11
+
+this change is worked out like this:
+
+ 					cw2= LEARNING_RATEhd+MOMENTUMcw2
+
+- Equation 12
+
+Where  LEARNING_RATE is the increment at which the energy level moves toward the minimum 
+
+ is the momentum factor that effects the weight change at a given 
+
+time Adjustment of these factors can hinder or help the training process by speeding 
+
+training up, or slowing it down.
+
+- Adjust the weights of the first layer of synapses: w1=w1+w1t where
+
+ 		w1t= LEARNING_RATEhd+MOMENTUMw1t
+
+- Equation 13
+
+
+
+- These steps are repeated until the output error  is within the boundary of the 
+
+specified tolerance for each neuron [11].
+
+There are many other techniques for producing neural networks that learn patterns from 
+
+samples of data -not to mention many other successful methods of artificial neural 
+
+systems. However, these other techniques exceed the aims and goals of this document 
+
+and are, therefore deemed irrelevant to our ends.
+
+
+
+
+
+9. Neural Networks in Finance
+
+There are several industries currently making use of recent developments in neural 
+
+network technology. None have really matched the enthusiasm of the financial industry in 
+
+embracing this new concept. In finance neural networks are applied to a wide spectrum of 
+
+problems - from fraudulent reporting detection and credit decision support, to stock 
+
+indexing and even as a marketing resource [12]. In this section of the document, I have 
+
+reviewed some systems whose task is to pick stocks. By amalgamating the results of 
+
+these reviews one should be able to minimise the disadvantages in my approach to the 
+
+same problem. 
+
+9.1 Using an Artificial Neural Network to Pick Stocks
+
+In this article Kryzanowski et al hypothesises the efficacy of an artificial neural network&#146;s 
+
+ability to discriminate between a stock that will provide a positive (profitable) return and a 
+
+negative (non-profitable) return. To prove their hypothesis, the author proposes two tests 
+
+conducted using an artificial neural network (ANN). The first will establish if reasonable 
+
+accuracy can be achieved in predicting whether a stock will yield positive, negative or 
+
+neutral gains. In the second test the ANN is required to predict positive or negative 
+
+returns.
+
+
+
+Previous implementations of this kind were usually rule-based systems and were bound 
+
+by sets of rules whose effectiveness relied on frequent amendments to the rule base 
+
+regarding changes to the economic environment. Neural networks offer an advantage in 
+
+its ability to relearn relationships between input and output data by adding new examples.   
+
+  
+
+Currently portfolio managers whose expertise lies in the skill of picking favourable (i.e. 
+
+positive gain) stocks perform this task. The manual rigor for picking stocks is to research 
+
+the company&#146;s financial history and ascertain from this data whether it is able to survive 
+
+changes in external factors such as the economic environment. Organisations that are 
+
+successful in matching this criterion enhance its prospects of positive return. Current data 
+
+also effects stock price, as short-term data can be effective in deciding the future. Other 
+
+factors effecting the stock price of an organisation are not necessarily quantitative. For 
+
+example a new Chief Executive Officer changes the perception of the company and may 
+
+alter the profits in the short term. These are known as macro-economic factors and to 
+
+produce the best solution Kryzanowski et al uses all of the aforementioned data as input 
+
+variables for the system. 
+
+
+
+ The authors use a Boltzmann Machine (BM) because of the documented success of 
+
+previous systems of a similar nature. The particular systems mentioned are those of 
+
+Wong Wang et al Swales and Yoon. Boltzmann Machines and Back-propagation 
+
+respectively are documented as able to establish a relationship between the projected 
+
+stock growth one year into the future from an input comprising of historical  and current 
+
+financial data in conjunction with seven other econometric variables. 
+
+
+
+9.1.1 The Data Set
+
+The ANN is implemented in a constraint-satisfaction style by dividing a data set into three 
+
+discreet sections:
+
+
+
+9.1.1.1 The Learning Set
+
+The learning set is used to enable the BM to observe relationships between input data 
+
+and the resulting outcomes. This allows the BM to learn /develop a relationship between 
+
+the input and the expected output for these examples. While this data is being used, the 
+
+BM adjusts its connection/weight strengths to favour the inputs that are most effective in 
+
+determining a specific output.  Kryzanowski et al&#146;s system used the &#145;best out of three&#146; 
+
+outputs from the net to update the connection strengths because a Boltzmann machine 
+
+uses stochastic optimisation  which produces slightly different adjustments each time. 
+
+The amount of examples used to determine a weight adjustment is often called an epoch. 
+
+  
+
+9.1.1.2 The Verification Set
+
+Periodically this set is used to check the relationships learned so far. Use of verification 
+
+sets is an important safeguard against over-training the network. If over-training does 
+
+occur the net loses the ability to generalise its outcomes. The main purpose of this set is 
+
+to pinpoint when the amount of training given is sufficient. 
+
+9.1.1.3 The Test Data Set
+
+Test data provides opportunity to establish the network&#146;s performance and the efficacy of 
+
+the connection strengths conceived in the training period. This set consists of input data, 
+
+which also has a known output to ensure that direct comparison can be made between 
+
+the net&#146;s result and the expected/known outcome. Accuracy can be determined from this 
+
+set in conjunction with the network&#146;s performance.
+
+
+
+
+
+9.1.2 The Results
+
+Previously, we established that testing the accuracy of a network is performed using the 
+
+test set of data to evaluate its true performance. Kryzanowski et al exhibit operation 
+
+cases where more than one output node is switched on simultaneously. If two adjacent 
+
+nodes of three are turned on, the network&#146;s front-end program counts this as a &#145;no 
+
+decision&#146; case. The first test has cases where both of the two output nodes are switched 
+
+on; this exception also counts this as a &#145;no decision&#146; case.
+
+9.1.2.1 Test one
+
+Measures the accuracy of the Boltzmann Machine predicting a positive or negative return 
+
+from stocks over the next year. This test uses a two-output classification where the data 
+
+sets used consist of a training set of 40 cases, a verification set of 42 cases and a test set 
+
+of 149 cases. This test resulted in a score significantly more effective than one of just 
+
+chance (50%). The system achieved 66.4% accuracy on predicting stocks with positive or 
+
+negative return. There were 11 cases where the net was unable to make a decision. 
+
+Therefore, based on only those cases that yielded decisions the result is 71.7% accuracy. 
+
+9.1.2.2 Test Two
+
+ Measures the accuracy of a 3-category output: positive, negative or neutral gain. The 
+
+training set has 39 cases -i.e. it took less examples to train - a verifying set of 42 
+
+examples and a test set of 149 cases. Overall achievement in this case is of 45.6% 
+
+accuracy. The largest proportion of errors was fielded in the prediction of neutral stocks of 
+
+which 46 cases were incorrectly predicted and 1 correctly. Nine of the eleven &#145;no decision&#146; 
+
+cases highlighted by the first test were also no decision cases in this test. The other two 
+
+cases were correctly placed. There were only two other new &#145;no decision&#146; cases that arose 
+
+in the second test.
+
+
+
+
+
+9.1.3 Conclusion 
+
+The author concluded that the accuracy of the Boltzmann machine shows great potential.  
+
+With the benefit of more learning examples a wider variety of data it would be a viable 
+
+tool in this area. My conclusion from this review is that the BM seems to be more 
+
+accurate using two output nodes instead of three. This is evident in the results from the 
+
+first test.
+
+ 
+
+My other conclusion relates to the data sets, which provide to a reasonable approach to 
+
+training by using an iterative style until the network performs within the requirements. My 
+
+assumption is that the data used to train the network was dependent on the results of the 
+
+verification set. Iteration through training and verification sets provides an automatic way 
+
+of deciding the training duration.
+
+ 
+
+
+
+9.2 Applying Artificial Neural Networks to Investment Analysis
+
+The aim of Yoon et al[14] is to conclude whether a neural network is able to make a 
+
+distinction between high and low performing stocks. If this premise is true, how does its 
+
+accuracy compare with methods such as Multiple discriminate Analysis (MDA).  The 
+
+MDA approach is popular in predicting bankruptcy and determining credit ratings for loan 
+
+decisions. Although these tools have improved forecasting ability and performance, they 
+
+are still limited, since much of the data concerned with picking stocks is not only 
+
+quantitative but also qualitative.   Yoon et al implies these failings suggest non-linear 
+
+regression tools may be an improvement on the current method.
+
+
+
+A reason for choosing a neural network is its ability to function on incomplete sets of data 
+
+at the input level. Also, proof suggests that neural network outperform other regression 
+
+formulae in estimating Bond ratings [17]. At this time the article claims there is only 
+
+&#147;moderate&#148; success in predicting stock prices [18].
+
+
+
+9.2.1 Yoon et al&#146;s Test Data
+
+The data used consisted of companies selected from the Fortune 500 listings and 
+
+Business Week&#146;s list of 1000 organisations totalling 58 and 40 participants from each  
+
+source respectively. Both of these groups were divided into two groups. Group 1 
+
+contained the companies with the highest valuation  and group 2 contained the lowest 
+
+valuations.
+
+
+
+For each organisation, study focused on the president&#146;s letter to the stockholders for the 
+
+period immediately prior to the group-selection year. Yoon et al performed content 
+
+analysis  on this letter to provide the data for the neural network and the MDA method. 
+
+
+
+9.2.2 Network Topology
+
+The input nodes in the network structure amount to nine, which are made up of the 
+
+criteria used to analyse the president&#146;s letter. Confusion arises in the number of hidden 
+
+nodes used in this network structure. There is no indication of how this number is 
+
+calculated. Applying a common method to determining the number hidden nodes is 
+
+shown below - where m is the number of inputs, n is the number of outputs then :
+
+
+
+ 				nhiddenNode=sqrt(mn)
+
+- Equation 14
+
+
+
+This technique produces a total of 4 hidden nodes for this case  [2]. The authors do 
+
+experiment with the shape of their network by increasing the number of hidden layers 
+
+stepping from zero to 2 but still give no indication of the modus operandi used to acquire 
+
+these results.
+
+
+
+
+
+
+
+
+
+
+
+- Figure 7 :ANN Model to Predict Stock Price Performance 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+9.2.3 Yoon et al Results
+
+Data for training the network came from the Business Week set of data and testing was 
+
+performed  on the Fortune 500 set . The techniques discussed used both sets of data to 
+
+observe the responses of each method. 
+
+
+
+Accuracy Results 
+
+These results emphasise the significance of hidden layers implemented in ANN solutions. 
+
+An important increase in accuracy is evident when the number of layers is heightened. 
+
+Linear methods are proved less efficient by the 2-layer network whose accuracy is the 
+
+lowest in all cases. All networks containing one or more hidden layers generally 
+
+outperform the MDA method and thus prove the validity of neural networks in finance. 
+
+
+
+9.2.4 Summary
+
+The author concludes ANNs are able to contrast between high and low returns in different 
+
+stocks. Nevertheless, the amount of data used in development and testing is significant 
+
+and reinforces the claim made by Kryzanowski et al that large amounts of data from 
+
+extensive resources will improve a net&#146;s performance ability.
+
+
+
+
+
+10.    The Proposed Neural Network Solution 
+
+The hypothesis of this section is to implement a system capable of demonstrating the 
+
+ability to recognise positive and negative potential in stocks presented to the system. In 
+
+the previous sections we have established that it is necessary to enlist data pertinent to 
+
+the problem and express it in a deterministic way to enable the best possible outcome 
+
+from the implementation of a neural network solution. 
+
+
+
+The trainer must acquire knowledge regarding aspects of the domain that influence the 
+
+decision-making process. Reviews discussed earlier have also authenticated the need for 
+
+large amounts of data to train the network to achieve satisfactory levels of accuracy 
+
+[14][15].  To achieve these levels of precision, it is necessary to eliminate uncertainty in 
+
+the training data by providing the best example of the data [22]. Otherwise the fruit of 
+
+poor data samples will be an inaccurate model.
+
+
+
+10.1 The Data
+
+The data used in this model was acquired from a CompuServe connection to an online 
+
+source of the Dow Jones Industrials list of companies. The list provides current share 
+
+values known as the last price, the day&#146;s highest and lowest price of the day and also the 
+
+amount of stock available for the current last price (volume). As means of identification 
+
+the ticker-tape identification is supplied but this is not used in the system. In order to 
+
+determine whether a particular organisation&#146;s share is a viable buy, the ticker tape is not a 
+
+necessity parameter for this application.
+
+
+
+According to the Chicago Mercantile Exchange, the last price is subject to supply and 
+
+demand at that time. When the price is high, buyers are willing to buy less of the product 
+
+while a low price encourages buyers to purchase more of a product. There are many 
+
+economic factors that increase/decrease the demand of the product. The volume is the 
+
+quantity sellers are willing to provide to the market at that price (volume). The change in 
+
+value is not used in this model simply because it can be calculated based on other data 
+
+used in the model. If the neural network model were very large, storage space economy 
+
+would be a basic requirement justifying this decision. A sample of the data used can be 
+
+found in appendix 1. The aim of the system is to predict the shares to buy based on the 
+
+last price, the volume, the high and the low of the products available. 
+
+
+
+
+
+11. Implementation 
+
+Before constructing the proposed system using C++ as a medium, it is necessary to 
+
+produce viable methods for representing the information that will be stored in the network.
+
+The methods suggested by Tim Masters and Adam Blum [2][11] to use arrays to 
+
+represent neural network layers because they are constructs that can be made safe and 
+
+are easy to access. Other reasons for using arrays is that the constructs are available in 
+
+most of the conventional languages currently in use. The former of the two authors 
+
+concentrates on enabling transfer of the listings to other languages. Each node is 
+
+represented by an array element. As an example, the network proposed contains a node 
+
+for each data item used in the final system. As discussed earlier networks that contain 
+
+three layers of nodes are often termed two-layer networks the input layer is still 
+
+represented as a layer of neurons. Therefore, there are four input parameters (excluding 
+
+the target &#150;used only in training) this means that an array of four elements represents the 
+
+input layer neurons. It is best to store the parameters of the input separately as the 
+
+storage capacity is such that it is limited to two strings of, which contain two equal 
+
+symbols that cannot be stored simultaneously [23]. Consequently, it is best that there are 
+
+separate input nodes for each section of information accepted at the input stage.  
+
+Rationale also lies within the explanation of pattern-matching systems; if many of the 
+
+inputs are used together, there is less room for flexibility within the system [23].       
+
+
+
+11.1 Synapse Representation
+
+The synaptic weight connections are represented formally as a matrix of values as 
+
+suggested by Picton [20]. Masters &amp; Blum use a single vector per node to represent the 
+
+connecting weights - using an element to store the weight value connection for each node 
+
+of the next layer. I found this confusing when accessing the correct element of the correct 
+
+vector for each calculation and used a two dimensional array. The rows correspond to 
+
+each input node and the columns conform to the amount of elements in the next layer. 
+
+This permits orderly traversal through calculations beginning with a column, incrementing 
+
+through to the last row element and then incrementing the column number to proceed 
+
+through the next set of elements (weight-connections) within the matrix. The main 
+
+concern is not whether column increments occur before rows, but to make a selection of 
+
+a method for selecting the correct connecting weight and continuing to use the same 
+
+method throughout to avoid confusion . Where INPUTNODES, OUTPUTNODES and  
+
+HIDDENNODES represent constants the definition of the storage is : 
+
+
+
+		double  inputVector[INPUTNODES];
+
+      	double  hiddenVector[HIDDENNODES];
+
+	     	double  outputVector[OUTPUTNODES];
+
+      	double  weightMatrix1[INPUTNODES][HIDDENNODES];
+
+		double  changeWeightMatrix1[INPUTNODES][HIDDENNODES];
+
+      	double  weightMatrix2[HIDDENNODES][OUTPUTNODES];
+
+		double  changeWeightMatrix2[HIDDENNODES][OUTPUTNODES];
+
+      	double  targetActivation[OUTPUTNODES]; 
+
+
+
+- Code 1: Declaration of  Arrays to hold Weight and Node Values
+
+
+
+11.2 Initialisation Code Discussion
+
+At the beginning of the training process it is necessary to randomise all weights to avoid 
+
+local minima. According to Tim Masters, weights should be initialised to small none zero 
+
+values. The inherent complexities in performing this task by stochastic optimisation lead 
+
+me to devise an alternative function called randomgen. Within C++ the rand()  function 
+
+generates integer values. Therefore, it was necessary to make the function produce 
+
+values lower than 1 by dividing the result of rand() by a real number. To increase the 
+
+number of decimal places the result is also multiplied by a real number smaller than 1 
+
+with five decimal places. The rand() function is used again to create a mechanism for 
+
+randomising the sign of the number &#150; code is show below :
+
+ 
+
+
+
+double randomgen()
+
+{
+
+   double randomNumber=(rand() % 100/2113.6*0.32498);
+
+   if( (rand() % 2)<1) { return randomNumber; } else return randomNumber; } Code 2: Random Signed Number Generator for Initialisation of Weights 11.3 Forward Phase Code Discussion To perform error-back-propagation it is best to construct a series of functions to avoid code duplication and save time. The raison d’être of neural networks, according to Timothy Masters, is to enable activation of all output neurons in the network in response to an input stimulus to the network [1]. One of the main functions used in this forward- phase process is the activation, or sigmoid function. The process of activation is divided into two main sections. The first is responsible for summing the nodes and the second is responsible for activating the result of the summing process. double fire(double dotproduct) { double result="0;" result+="1/(1+exp(-dotproduct));" //a code version of the //logistic function return result; } double sum="0.0;" int hNodeCount="0;" int iNodeCount="0;" do{ for(iNodeCount="0;iNodeCount&lt;INPUTNODES;iNodeCount++)" { sum+="inputVector[iNodeCount]*" //summing the dot //product weightMatrix1[iNodeCount][hNodeCount]; }; hiddendotprod[hNodeCount]="sum;" hiddenVector[hNodeCount]="fire(hiddendotprod[hNodeCount]);" sum="0;" hNodeCount++; }while(hNodeCount<HIDDENNODES); Code: 3: The forward Phase of Training- Node Activation –Also used in Free Running Section The code on the previous page shows ‘orderly traversal’ through array elements performed by nested loops to ensure that the correct summing of nodes is obtained to allow activation/firing of the hidden layer nodes to take place. This same phase is used when the neural network is running freely. This allows the code to be reused. 11.4 Backward-Phase Code Discussion When node activation of hidden and output layer neurons is complete, a function is used to calculate the output-layer-error . The function follows the format of the function shown in the Back-Propagation Section of the document. The code below shows the outputError function that would be applied to each output node . Code shown below: double outputError(double output,double target) { double outputerror="(output*(1-output)*(target-output));" return outputerror; } Code: 4 OutputError Function The reason for using functional representation in this code is due to executing the code several iterations at a time (once per output node per training cycle). In a larger systems with hundreds of nodes the benefit of this is immense, hindering code duplication. This would be a waste of valuable time and computer resources. The hidden error function does not follow the exact definition discussed earlier because some of the calculation requires a traversal of the weight-matrix (2 dimensional array) between the output and hidden layers. As with activation, the hidden error function is split into two parts: summing the result of hidden-node-weights multiplied by the output layer error which are then applied to the remain portion of the equation. The code for demonstrating this is shown below. double hiddenError(double hidden,double weight_sum) { double HiddenLayerError="(hidden*(1-hidden)*weight_sum);" return HiddenLayerError; } for(oNodeCount="0;oNodeCount&lt;OUTPUTNODES;oNodeCount++)" { sum="0.0;" for(hNodeCount="0;hNodeCount&lt;HIDDENNODES;hNodeCount++)" { sum+="(weightMatrix2[hNodeCount][oNodeCount]" * outputErrorVector[oNodeCount]); }; hiddenErrorVector[oNodeCount]="hiddenError(hiddenVector[oNodeCount],sum);" }; UpdateData(TRUE); m_hiddenError1="hiddenErrorVector[1];" m_hiddenError2="hiddenErrorVector[2];" m_hiddenError3="hiddenErrorVector[3];" m_hiddenError4="hiddenErrorVector[4];" UpdateData(FALSE); Code: 5 Hidden Layer Error Calculation The change in the matrix between the hidden layer and the output layer, denoted in the code as changeWeightMatrix2, is divided into 2 sections the first being the calculation of the change in weights, the second is the adjustment of the weights. The former is performed by a function, which takes two of its values from constants defined at the beginning of the header file. It is a direct translation of the algorithm used by Adam Blum [11] and is performed on every weight linked directly to the output. Yet again the result is dependent on the orderly traversal of the weights (two-dimensional array). The function matrix change uses the learning rate and momentum constants defined at the beginning of the header file making the code readable. The matrix change is not assigned directly to matrix2 because the change is an increment added to the previous weight value. Therefore, a matrix matching the dimensions of matrix2 (denoted by changeWeightMatrix2 in the code) is used to perform the change function. The former section of the change process is executed by adding the changeWeightMatrix2 values to the existing weight in the corresponding matrix (weightMatrix2) by using orderly traversal through the array using nested loops. double matrixChange(double layer,double layerError,double weight) { double change="LEARNINGRATE*layer*layerError+" // the weight change MOMENTUM*weight; //calculation return change; } oErrorCount="0;" oNodeCount="0;" hNodeCount="0;" do{ for(hNodeCount="0;hNodeCount&lt;HIDDENNODES;hNodeCount++)" { changeWeightMatrix2[hNodeCount][oNodeCount]="matrixChange(hiddenVector[hNodeCount]," outputErrorVector[oNodeCount], weightMatrix2[hNodeCount][oNodeCount]); } oNodeCount++; }while(oNodeCount<OUTPUTNODES); oErrorCount="0;" oNodeCount="0;" hNodeCount="0;" do{ for(hNodeCount="0;hNodeCount&lt;HIDDENNODES;hNodeCount++)" { weightMatrix2[hNodeCount][oNodeCount]+="changeWeightMatrix2[hNodeCount][oNodeCount];" } oNodeCount++; }while(oNodeCount<OUTPUTNODES); Code:6 Weight Change & Adjustment for all weights between the Hidden and Output Layers The same method is used to provide weight change in the matrix between the input and hidden layer nodes (denoted by weightMatrix1 and changeWeightMatrix1). The matrixChange function is reusable, but the parameters presented to it are different. Every hidden node entry is replaced by input-node entries and the output-layer error is replaced by the hidden layer error. Code is shown below. iNodeCount="0;" hNodeCount="0;" while (hNodeCount<HIDDENNODES) { for (iNodeCount="0;iNodeCount&lt;INPUTNODES;iNodeCount++)" { changeWeightMatrix1[iNodeCount][hNodeCount]="matrixChange(inputVector[iNodeCount]," hiddenErrorVector[iNodeCount], weightMatrix1[iNodeCount][hNodeCount]); } hNodeCount++; } while (hNodeCount<HIDDENNODES) { for (iNodeCount="0;iNodeCount&lt;INPUTNODES;iNodeCount++)" { weightMatrix1[iNodeCount][hNodeCount]+="changeWeightMatrix1[iNodeCount][hNodeCount];" } hNodeCount++; Code:7 Weight Change & Adjustment for all weights between the Input and Hidden Layers Training process continues until the error is reduced to zero –meaning the output produced is now correct. By pressing the train button on the demonstration example the application executes one cycle of training. Continue training cycles by continually pressing the train button until the output error indicator displays zero. 11.5 Training Neural networks are fundamentally numeral pattern-classifiers [2]. The distinct difference between pattern-classifiers and neural networks lies in the ability of neural networks to learn relations between input and output data and to generalise its current knowledge to accommodate new unseen data presented to input nodes. To program an ANN’s nodes with all of the possible outcomes for all of the available data would take a very long time. Therefore presenting the system with smaller number of examples, indicating the correct response for each set of data, is far more practical. One of the mistakes I made while training my system was that I encouraged the system to converge on one example presentation. This produces a network that is unable to generalise because the network has overfit the example presented to it. Every data set the network is exposed to post training produces the same outcome. From this point training is unable to continue because the error has already been reduced to zero indicating the network-outcome’s arrival at a stable state. Marshall et al [24] recognises the training problem conundrum and at the time of his article’s publication recognises the need for a systematic neural network methodology that defines the structure and connectivity of a given system. He offers a solution using a Genetic Algorithm, which is unfortunately an unsuitable solution in this instance as the method favours parallel implementations of neural networks. Developers of non-parallel neural networks use trial and error. Continual experimentation in changing the order of data , learning rate and momentum is necessary to produce a working network. However, the tedium of the process leads developers to arrive at a ‘satisfactory’ solution and not search for a better one. The division of the data performed by Kryzanowski et al seemed the most practical method for training because the iterative process suits the design of my network because the iterative process of training and testing can be accommodated within the use of the application. However, I did not use the best out of three method as is suggested by the constraint-satisfaction method because the network implemented in this document does not implement a Boltzmann machine whose outcomes possess a degree of uncertainty. 12. Conclusion A multilayer feed-forward network can learn your function. If there are problems they are not due to the model itself, they are due to insufficient training on an insufficient number of hidden neurons, or an attempt to learn a function that is not deterministic. The above quote taken from Timothy Masters [2], is applicable to the ANN that I have developed. When input and desired output data is submitted to the network and an outcome is obtained, repeated iterations of an error backpropagation training cycle displays a reduction in the amount of error. However, my lack of formal approaches to neural network learning constitutes insufficient training. Yoon et al & Swales and Kryzanowski et al have proven the task of picking stocks to be deterministic by implementing the systems discussed earlier. Therefore, the training process is the reason why my system fails to meet its basic requirements. The system’s its ability to reduce error during training on a given set of data leads me to the conclusion that the structure of the network is suitable. Nodes in the network are arranged as shown below. The system would benefit from the addition of a stochastic optimisation method such as simulated annealing. However, its use would induce the need for even more training data because the network would need to produce an average of more that one outcome to update synaptic connections. This is because the noise introduced to the network would also effect outcomes. A true indication of the correct direction the weights should move in to reduce output error would be ascertained from taking an average of several outcomes at a time. This also increases the length of the training time considerably [2]. It has been proven that neural network systems of this type have increased in popularity however there is a great for research to produce a robust formal methodology for training this kind of deterministic system. The lengthy training time needed to produce such a system would be reduced by this and would further enhance enthusiasm for its use within the financial industry. 14. Appenix 2 : Windows™ Version NeuralNetworkDlg.h #define INPUTNODES 5 #define HIDDENNODES 5 #define OUTPUTNODES 1 #define MOMENTUM 0.2 #define TOLERANCE 0.2 #define LEARNINGRATE 0.5 // NeuralNetworkDlg.h : header file (windows version) // ///////////////////////////////////////////////////////////////// //////////// // CNeuralNetworkDlg dialog class CNeuralNetworkDlg : public CDialog { // Construction public: CNeuralNetworkDlg(CWnd* pParent="NULL);" // standard constructor // Dialog Data //{{AFX_DATA(CNeuralNetworkDlg) enum { IDD="IDD_NEURALNETWORK_DIALOG" }; double m_node1; double m_node2; double m_node3; double m_node4; double m_weight1; double m_weight2; double m_weight3; double m_weight4; double m_hiddennode1; double m_hiddennode2; double m_hiddennode3; double m_hiddennode4; double m_hiddenWeight1; double m_hiddenWeight2; double m_hiddenWeight3; double m_hiddenWeight4; double m_output1; double m_output2; double m_target1; double m_target2; double m_output_Error; double m_output_Error2; double m_hiddenError1; double m_hiddenError2; double m_hiddenError3; double m_hiddenError4; CString m_FOOL; double m_LearningRate; double m_momentum; double m_tolerance; //}}AFX_DATA // ClassWizard generated virtual function overrides //{{AFX_VIRTUAL(CNeuralNetworkDlg) protected: virtual void DoDataExchange(CDataExchange* pDX); // DDX/DDV support //}}AFX_VIRTUAL // Implementation protected: HICON m_hIcon; double inputVector[INPUTNODES]; double hiddenVector[HIDDENNODES]; double hiddenErrorVector[HIDDENNODES]; double hiddendotprod[HIDDENNODES]; double outputVector[OUTPUTNODES]; double outputErrorVector[OUTPUTNODES]; double outputDotProd[OUTPUTNODES]; double weightMatrix1[INPUTNODES][HIDDENNODES]; double changeWeightMatrix1[INPUTNODES][HIDDENNODES]; double weightMatrix2[HIDDENNODES][OUTPUTNODES]; double changeWeightMatrix2[HIDDENNODES][OUTPUTNODES]; double targetActivation[OUTPUTNODES]; // Generated message map functions //{{AFX_MSG(CNeuralNetworkDlg) virtual BOOL OnInitDialog(); afx_msg void OnSysCommand(UINT nID, LPARAM lParam); afx_msg void OnPaint(); afx_msg HCURSOR OnQueryDragIcon(); afx_msg void OnInit(); afx_msg void OnRunnet(); afx_msg void OnTrainnet(); afx_msg void OnReset(); afx_msg void OnClickSpin1(NMHDR* pNMHDR, LRESULT* pResult); afx_msg void OnRclickSpin2(NMHDR* pNMHDR, LRESULT* pResult); //}}AFX_MSG DECLARE_MESSAGE_MAP() } Appendix: 2 NeuralNetworkDlg.cpp File (Windows Version) // NeuralNetworkDlg.cpp : implementation file (windows version) // #include "stdafx.h" #include "NeuralNetwork.h" #include "NeuralNetworkDlg.h" #include <math.h> 
+
+#ifdef _DEBUG
+
+#define new DEBUG_NEW
+
+#undef THIS_FILE
+
+static char THIS_FILE[] = __FILE__;
+
+#endif
+
+
+
+/////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////
+
+double matrixChange(double layer,double layerError,double weight)
+
+   {
+
+		double change=LEARNINGRATE*layer*layerError+
+
+			MOMENTUM*weight;
+
+		return change;   
+
+   }
+
+
+
+
+
+double fire(double dotproduct)
+
+{
+
+   double result=0;
+
+   result+=1/(1+exp(-dotproduct));
+
+   return result;
+
+}
+
+
+
+double randomgen()
+
+{
+
+   double randomNumber=(rand() % 100/2113.6*0.32498);
+
+   if( (rand() % 2)<1) { return randomNumber; } else return randomNumber; } double outputError(double output,double target) { double outputerror="(output*(1-output)*(target-output));" return outputerror; } double hiddenError(double hidden,double weight_sum) { double HiddenLayerError="(hidden*(1-hidden)*weight_sum);" return HiddenLayerError; } ///////////////////////////////////////////////////////////////// //////////// // CAboutDlg dialog used for App About class CAboutDlg : public CDialog { public: CAboutDlg(); // Dialog Data //{{AFX_DATA(CAboutDlg) enum { IDD="IDD_ABOUTBOX" }; //}}AFX_DATA // ClassWizard generated virtual function overrides //{{AFX_VIRTUAL(CAboutDlg) protected: virtual void DoDataExchange(CDataExchange* pDX); // DDX/DDV support //}}AFX_VIRTUAL // Implementation protected: //{{AFX_MSG(CAboutDlg) //}}AFX_MSG DECLARE_MESSAGE_MAP() }; CAboutDlg::CAboutDlg() : CDialog(CAboutDlg::IDD) { //{{AFX_DATA_INIT(CAboutDlg) //}}AFX_DATA_INIT } void CAboutDlg::DoDataExchange(CDataExchange* pDX) { CDialog::DoDataExchange(pDX); //{{AFX_DATA_MAP(CAboutDlg) //}}AFX_DATA_MAP } BEGIN_MESSAGE_MAP(CAboutDlg, CDialog) //{{AFX_MSG_MAP(CAboutDlg) // No message handlers //}}AFX_MSG_MAP END_MESSAGE_MAP() ///////////////////////////////////////////////////////////////// //////////// // CNeuralNetworkDlg dialog CNeuralNetworkDlg::CNeuralNetworkDlg(CWnd* pParent /*="NULL*/)" : CDialog(CNeuralNetworkDlg::IDD, pParent) { //{{AFX_DATA_INIT(CNeuralNetworkDlg) m_node1="0.0;" m_node2="0.0;" m_node3="0.0;" m_node4="0.0;" m_weight1="0.0;" m_weight2="0.0;" m_weight3="0.0;" m_weight4="0.0;" m_hiddennode1="0.0;" m_hiddennode2="0.0;" m_hiddennode3="0.0;" m_hiddennode4="0.0;" m_hiddenWeight1="0.0;" m_hiddenWeight2="0.0;" m_hiddenWeight3="0.0;" m_hiddenWeight4="0.0;" m_output1="0.0;" m_output2="0.0;" m_target1="0.0;" m_target2="0.0;" m_output_Error="0.0;" m_output_Error2="0.0;" m_hiddenError1="0.0;" m_hiddenError2="0.0;" m_hiddenError3="0.0;" m_hiddenError4="0.0;" m_FOOL="_T(&quot;&quot;);" m_LearningRate="0.0;" m_momentum="0.0;" m_tolerance="0.0;" //}}AFX_DATA_INIT // Note that LoadIcon does not require a subsequent DestroyIcon in Win32 m_hIcon="AfxGetApp()-">LoadIcon(IDR_MAINFRAME);
+
+}
+
+
+
+
+
+void CNeuralNetworkDlg::DoDataExchange(CDataExchange* pDX)
+
+{
+
+	CDialog::DoDataExchange(pDX);
+
+	//{{AFX_DATA_MAP(CNeuralNetworkDlg)
+
+	DDX_Text(pDX, IDC_I_NODE1, m_node1);
+
+	DDX_Text(pDX, IDC_I_NODE2, m_node2);
+
+	DDX_Text(pDX, IDC_I_NODE3, m_node3);
+
+	DDX_Text(pDX, IDC_I_NODE4, m_node4);
+
+	DDX_Text(pDX, IDC_HIDDEN1, m_hiddennode1);
+
+	DDX_Text(pDX, IDC_HIDDEN2, m_hiddennode2);
+
+	DDX_Text(pDX, IDC_HIDDEN3, m_hiddennode3);
+
+	DDX_Text(pDX, IDC_HIDDEN4, m_hiddennode4);
+
+	DDX_Text(pDX, IDC_OUTPUT1, m_output1);
+
+	DDX_Text(pDX, IDC_TARGET1, m_target1);
+
+	DDX_Text(pDX, IDC_OUTPUT_ERROR, m_output_Error);
+
+	DDX_Text(pDX, IDC_HIDDEN_ERROR1, m_hiddenError1);
+
+	DDX_Text(pDX, IDC_HIDDEN_ERROR2, m_hiddenError2);
+
+	DDX_Text(pDX, IDC_HIDDEN_ERROR3, m_hiddenError3);
+
+	DDX_Text(pDX, IDC_HIDDEN_ERROR4, m_hiddenError4);
+
+	DDX_Text(pDX, IDC_LEARNING_RATE, m_LearningRate);
+
+	DDX_Text(pDX, IDC_MOMENTUM, m_momentum);
+
+	DDX_Text(pDX, IDC_TOLERANCE, m_tolerance);
+
+	//}}AFX_DATA_MAP
+
+}
+
+
+
+BEGIN_MESSAGE_MAP(CNeuralNetworkDlg, CDialog)
+
+	//{{AFX_MSG_MAP(CNeuralNetworkDlg)
+
+	ON_WM_SYSCOMMAND()
+
+	ON_WM_PAINT()
+
+	ON_WM_QUERYDRAGICON()
+
+	ON_BN_CLICKED(IDC_INIT, OnInit)
+
+	ON_BN_CLICKED(IDC_RUNNET, OnRunnet)
+
+	ON_BN_CLICKED(IDC_TRAINNET, OnTrainnet)
+
+	ON_BN_CLICKED(IDC_RESET, OnReset)
+
+	//}}AFX_MSG_MAP
+
+END_MESSAGE_MAP()
+
+
+
+
+
+/////////////////////////////////////////////////////////////////
+
+////////////
+
+// CNeuralNetworkDlg message handlers
+
+
+
+BOOL CNeuralNetworkDlg::OnInitDialog()
+
+{
+
+	CDialog::OnInitDialog();
+
+
+
+	// Add &quot;About...&quot; menu item to system menu.
+
+
+
+	// IDM_ABOUTBOX must be in the system command range.
+
+	ASSERT((IDM_ABOUTBOX &amp; 0xFFF0) == IDM_ABOUTBOX);
+
+	ASSERT(IDM_ABOUTBOX <0xf000); CMenu* pSysMenu="GetSystemMenu(FALSE);" CString strAboutMenu; strAboutMenu.LoadString(IDS_ABOUTBOX); if (!strAboutMenu.IsEmpty()) { pSysMenu->AppendMenu(MF_SEPARATOR);
+
+		pSysMenu-&gt;AppendMenu(MF_STRING, IDM_ABOUTBOX, 
+
+strAboutMenu);
+
+	}
+
+
+
+	// Set the icon for this dialog.  The framework does this 
+
+automatically
+
+	//  when the application's main window is not a dialog
+
+	SetIcon(m_hIcon, TRUE);			// Set big icon
+
+	SetIcon(m_hIcon, FALSE);		// Set small icon
+
+	
+
+	// TODO: Add extra initialization here
+
+	UpdateData(TRUE);
+
+		m_LearningRate	= 0.5; //MOMENTUM;
+
+		m_momentum		= 0.2; //LEARNINGRATE;
+
+		m_tolerance		= 0.1; //TOLERANCE;
+
+	UpdateData(FALSE);
+
+
+
+	int rowCount,colCount=0;
+
+   while (colCount<inputnodes) { for (rowCount="0;" rowCount<HIDDENNODES; rowCount++) { weightMatrix1[colCount][rowCount]="randomgen();" } colCount++; } rowCount,colCount="0;" while(colCount<HIDDENNODES) { for(rowCount="0;rowCount&lt;OUTPUTNODES;rowCount++)" { weightMatrix2[colCount][rowCount]="randomgen();" } colCount++; } return TRUE; // return TRUE unless you set the focus to a control } void CNeuralNetworkDlg::OnSysCommand(UINT nID, LPARAM lParam) { if ((nID & 0xFFF0)="=" IDM_ABOUTBOX) { CAboutDlg dlgAbout; dlgAbout.DoModal(); } else { CDialog::OnSysCommand(nID, lParam); } } // If you add a minimize button to your dialog, you will need the code below // to draw the icon. For MFC applications using the document/view model, // this is automatically done for you by the framework. void CNeuralNetworkDlg::OnPaint() { if (IsIconic()) { CPaintDC dc(this); // device context for painting SendMessage(WM_ICONERASEBKGND, (WPARAM) dc.GetSafeHdc(), 0); // Center icon in client rectangle int cxIcon="GetSystemMetrics(SM_CXICON);" int cyIcon="GetSystemMetrics(SM_CYICON);" CRect rect; GetClientRect(&rect); int x="(rect.Width()" cxIcon + 1) / 2; int y="(rect.Height()" cyIcon + 1) / 2; // Draw the icon dc.DrawIcon(x, y, m_hIcon); } else { CDialog::OnPaint(); } } // The system calls this to obtain the cursor to display while the user drags // the minimized window. HCURSOR CNeuralNetworkDlg::OnQueryDragIcon() { return (HCURSOR) m_hIcon; } void CNeuralNetworkDlg::OnInit() { int rowCount,colCount="0;" int result; result="MessageBox(&quot;All" Current Intelligence will be lost Continue ", "Attention !",MB_ICONEXCLAMATION | MB_YESNO); if (result="=IDYES)" while (colCount<INPUTNODES) { for (rowCount="0;" rowCount<HIDDENNODES; rowCount++) { weightMatrix1[colCount][rowCount]="randomgen();" } colCount++; } rowCount,colCount="0;" while(colCount<HIDDENNODES) { for(rowCount="0;rowCount&lt;OUTPUTNODES;rowCount++)" { weightMatrix2[colCount][rowCount]="randomgen();" } colCount++; } Beep(1000,100); } void CNeuralNetworkDlg::OnRunnet() { UpdateData(TRUE); inputVector[0]="1;" inputVector[1]="m_node1;" inputVector[2]="m_node2;" inputVector[3]="m_node3;" inputVector[4]="m_node4;" ///////////////////////////////////////////////////////////////// ////////////////////////////////// //// FORWARD PHASE //// ///////////////////////////////////////////////////////////////// ////////////////////////////////// /// HIDDEN NODE FIRING ///// ///////////////////////////////////////////////////////////////// ///////////////////////////////// double sum="0.0;" int hNodeCount="0;" int iNodeCount="0;" do{ for(iNodeCount="0;iNodeCount&lt;INPUTNODES;iNodeCount++)" { sum+="inputVector[iNodeCount]*weightMatrix1[iNodeCount][hNodeCount" ]; }; hiddendotprod[hNodeCount]="sum;" hiddenVector[hNodeCount]="fire(hiddendotprod[hNodeCount]);" sum="0;" hNodeCount++; }while(hNodeCount<HIDDENNODES); m_hiddennode1="hiddenVector[1];" m_hiddennode2="hiddenVector[2];" m_hiddennode3="hiddenVector[3];" m_hiddennode4="hiddenVector[4];" UpdateData(FALSE); ///////////////////////////////////////////////////////////////// ///////////////////////////////////// // OUTPUT NODE FIRING // ///////////////////////////////////////////////////////////////// ///////////////////////////////////// sum="0;" int oNodeCount="0;" hNodeCount="0;" do{ hNodeCount="0;" do{ sum +="(hiddenVector[hNodeCount]" * weightMatrix2[hNodeCount][oNodeCount]); hNodeCount++; }while(hNodeCount<HIDDENNODES); outputDotProd[oNodeCount]="sum;" outputVector[oNodeCount]="fire(outputDotProd[oNodeCount]);" sum="0;" oNodeCount++; }while(oNodeCount<OUTPUTNODES); UpdateData(TRUE); m_output1="outputVector[0];" UpdateData(FALSE); } void CNeuralNetworkDlg::OnTrainnet() { UpdateData(TRUE); targetActivation[0]="m_target1;" inputVector[1]="m_node1;" inputVector[2]="m_node2;" inputVector[3]="m_node3;" inputVector[4]="m_node4;" ///////////////////////////////////////////////////////////////// /// THE RUNNING PART (FORWARD PHASE) /// /// /// ///////////////////////////////////////////////////////////////// double sum="0.0;" int hNodeCount="0;" int iNodeCount="0;" do{ for(iNodeCount="0;iNodeCount&lt;INPUTNODES;iNodeCount++)" { sum+="inputVector[iNodeCount]" * weightMatrix1[iNodeCount][hNodeCount]; }; hiddendotprod[hNodeCount]="sum;" hiddenVector[hNodeCount]="fire(hiddendotprod[hNodeCount]);" sum="0;" hNodeCount++; }while(hNodeCount<HIDDENNODES); m_hiddennode1="hiddenVector[0];" m_hiddennode2="hiddenVector[1];" m_hiddennode3="hiddenVector[2];" m_hiddennode4="hiddenVector[3];" ///////////////////////////////////////////////////////////////// /// OUTPUT NODE FIRING /// ///////////////////////////////////////////////////////////////// sum="0;" int oNodeCount="0;" hNodeCount="0;" do{ hNodeCount="0;" do{ sum +="(hiddenVector[hNodeCount]" * weightMatrix2[hNodeCount][oNodeCount]); hNodeCount++; }while(hNodeCount<HIDDENNODES); outputDotProd[oNodeCount]="sum;" outputVector[oNodeCount]="fire(outputDotProd[oNodeCount]);" sum="0;" oNodeCount++; }while(oNodeCount<OUTPUTNODES); m_output1="outputVector[0];" double trained="(m_output1-m_target1);" ///////////////////////////////////////////////////////////////// //// BACKWARD PHASE /// //// /// ///////////////////////////////////////////////////////////////// //// OUTPUT LAYER ERROR CALCULATION /// //// /// ///////////////////////////////////////////////////////////////// sum="0;" int placeCount="0;" do{ outputErrorVector[placeCount]="outputError(outputVector[placeCount],targetActivation[placeCount]" ); placeCount++; }while(placeCount<OUTPUTNODES); m_output_Error="outputErrorVector[0];" UpdateData(FALSE); ///////////////////////////////////////////////////////////////// /// HIDDEN LAYER ERROR /// /// /// ///////////////////////////////////////////////////////////////// int oErrorCount="0;" oNodeCount="0;" hNodeCount="0;" sum="0.0;" for(oNodeCount="0;oNodeCount&lt;OUTPUTNODES;oNodeCount++)" { sum="0.0;" for(hNodeCount="0;hNodeCount&lt;HIDDENNODES;hNodeCount++)" { sum+="(weightMatrix2[hNodeCount][oNodeCount]" * outputErrorVector[oNodeCount]); }; hiddenErrorVector[oNodeCount]="hiddenError(hiddenVector[oNodeCount],sum);" }; UpdateData(TRUE); m_hiddenError1="hiddenErrorVector[1];" m_hiddenError2="hiddenErrorVector[2];" m_hiddenError3="hiddenErrorVector[3];" m_hiddenError4="hiddenErrorVector[4];" UpdateData(FALSE); ///////////////////////////////////////////////////////////////// /// MATRIX2 CHANGE ERROR CHANGE // /// // ///////////////////////////////////////////////////////////////// oErrorCount="0;" oNodeCount="0;" hNodeCount="0;" do{ for(hNodeCount="0;hNodeCount&lt;HIDDENNODES;hNodeCount++)" { changeWeightMatrix2[hNodeCount][oNodeCount]="matrixChange(hiddenVector[hNodeCount]," outputErrorVector[oNodeCount], weightMatrix2[hNodeCount][oNodeCount]); } oNodeCount++; }while(oNodeCount<OUTPUTNODES); oErrorCount="0;" oNodeCount="0;" hNodeCount="0;" do{ for(hNodeCount="0;hNodeCount&lt;HIDDENNODES;hNodeCount++)" { weightMatrix2[hNodeCount][oNodeCount]+="changeWeightMatrix2[hNodeCount][oNodeCount];" } oNodeCount++; }while(oNodeCount<OUTPUTNODES); ///////////////////////////////////////////////////////////////// /// MATRIX 1 WEIGHT CHANGE /// /// /// ///////////////////////////////////////////////////////////////// iNodeCount="0;" hNodeCount="0;" sum="0.0;" while (hNodeCount<HIDDENNODES) { for (iNodeCount="0;iNodeCount&lt;INPUTNODES;iNodeCount++)" { changeWeightMatrix1[iNodeCount][hNodeCount]="matrixChange(inputVector[iNodeCount]," hiddenErrorVector[iNodeCount], weightMatrix1[iNodeCount][hNodeCount]); } hNodeCount++; } while (hNodeCount<HIDDENNODES) { for (iNodeCount="0;iNodeCount&lt;INPUTNODES;iNodeCount++)" { weightMatrix1[iNodeCount][hNodeCount]+="changeWeightMatrix1[iNodeCount][hNodeCount];" } hNodeCount++; } }; void CNeuralNetworkDlg::OnReset() { UpdateData(TRUE); m_node1="0.0;" m_node2="0.0;" m_node3="0.0;" m_node4="0.0;" m_hiddennode1="0.0;" m_hiddennode2="0.0;" m_hiddennode3="0.0;" m_hiddennode4="0.0;" m_output1="0.0;" m_target1="0.0;" m_output_Error="0.0;" m_output_Error2="0.0;" UpdateData(FALSE); }; 15. Appendix 2 MS-DOS Version FullNet.h //////////////////////////////////////////////////////////////// /// PROJECT HEADER FILE /// /// FileName : Fullnet.h /// /// Developer : Stephan Johnson /// /// Date : 13:05:97 /// /// Description : This is the header file for and /// /// class prototype and function /// /// prototypes for fullnet Application /// //////////////////////////////////////////////////////////////// #include <stdlib.h>
+
+#include <iostream.h>
+
+#include <dos.h>
+
+#include <math.h>
+
+#include <conio.h>
+
+#include <stdio.h>
+
+
+
+#define MOMENTUM      0.2
+
+#define LEARNINGRATE  0.5
+
+#define INPUTNODES    5
+
+#define HIDDENNODES   5
+
+#define OUTPUTNODES   1
+
+
+
+
+
+class stephNet{
+
+    public:
+
+	 stephNet();                   // CONSTRUCTOR
+
+  void setInputnode(int,double);
+
+  void setTarget(int,double);
+
+//      ~stephNet();                   // DESTRUCTOR
+
+  void train();
+
+    double run();
+
+   private:
+
+      double inputVector[INPUTNODES];
+
+      double  hiddenVector[HIDDENNODES];
+
+      double  hiddenErrorVector[HIDDENNODES];
+
+      double  hiddendotprod[HIDDENNODES];
+
+      double  outputVector[OUTPUTNODES];
+
+      double  outputErrorVector[OUTPUTNODES];
+
+      double  outputDotProd[OUTPUTNODES];
+
+      double  weightMatrix1[INPUTNODES][HIDDENNODES];
+
+      double  changeWeightMatrix1[INPUTNODES][HIDDENNODES];
+
+      double  weightMatrix2[HIDDENNODES][OUTPUTNODES];
+
+      double  changeWeightMatrix2[HIDDENNODES][OUTPUTNODES];
+
+      double  targetActivation[OUTPUTNODES];
+
+};//end of stephnet class
+
+
+
+
+
+double fire(double dotproduct)
+
+{
+
+   double result=0;
+
+   result+=1/(1+exp(-dotproduct));
+
+   return result;
+
+}
+
+
+
+double randomgen()
+
+{
+
+   double randomNumber=(rand() % 100/2113.6*0.32498);
+
+   if( (rand() % 2)<1) { return randomNumber; } else return randomNumber; } 16. Appendix 2 MS-DOS version Fullnet.cpp /////////////////////////////////////////////////////// /// PROJECT IMPLEMENTATION FILE /// /// FileName : Fullnet.cpp /// /// Developer : Stephan Johnson /// /// Date : 13:05:97 /// /// Description : This is the implementation of /// /// the class/function defintions /// /// described in the header(.h)file /// /// of the same name /// /// fullnet Application /// /// /// /////////////////////////////////////////////////////// #include "stdafx.h" #include <afxwin.h>
+
+#include &quot;fullnet.h&quot;
+
+#include <conio.h>
+
+#include <stdio.h>
+
+
+
+
+
+stephNet::stephNet()
+
+/////////////////////////////////////////////////////////////////
+
+////  INTIALISE THE FIRST MATRIX FOR THIS PROBLEM            ////
+
+/////////////////////////////////////////////////////////////////
+
+{
+
+   int rowCount,colCount=0;
+
+   //cout<<"************ MATRIX 1 INITIALISE *************"<<"\n"; while (colCount<INPUTNODES) { // cout<<"NODE NUMBER : ["<<colCount<<"]\n"; for (rowCount="0;" rowCount<HIDDENNODES; rowCount++) { weightMatrix1[colCount][rowCount]="randomgen();" changeWeightMatrix1[colCount][rowCount]="0;" // cout<<" WEIGHT NO : ["<<rowCount; // cout<<"] WEIGHT VALUE : ["<<weightMatrix1[colCount][rowCount]<<"]\n"; } colCount++; } ///////////////////////////////////////////////////////////////// /// INTIALISE THE SECOND MATRIX FOR THIS PROBLEM //// ///////////////////////////////////////////////////////////////// rowCount,colCount="0;" //cout<<"************ MATRIX 2 INITIALISE *************"<<"\n"; while(colCount<HIDDENNODES) { hiddenErrorVector[colCount]="randomgen();" // cout<<"NODE NUMBER : ["<<colCount<<"]\n"; for(rowCount="0;rowCount&lt;OUTPUTNODES;rowCount++)" { weightMatrix2[colCount][rowCount]="randomgen();" changeWeightMatrix2[colCount][rowCount]="0;" // cout<<" WEIGHT NO : ["<<rowCount<<"]"; // cout<<" WEIGHT VALUE : ["<<weightMatrix2[colCount][rowCount]<<"]\n"; outputErrorVector[rowCount]="0;" } colCount++; } } ///////////////////////////////////////////////////////////////// //// FORWARD PHASE //// ///////////////////////////////////////////////////////////////// /// HIDDEN NODE FIRING ///// ///////////////////////////////////////////////////////////////// double stephNet::run() { //cout<<" *********** HIDDEN NODE FIRING ********** "<<"\n"; double sum="0.0;" int hNodeCount="0;" int iNodeCount="0;" do{ // cout<<" INPUT NODE NUMBER :"<<iNodeCount<<"\n"; for(iNodeCount="0;iNodeCount&lt;INPUTNODES;iNodeCount++)" { // cout<<" WEIGHT VALUE : ["<<weightMatrix1[iNodeCount][hNodeCount]<<"]"; // cout<<" INPUT VALUE : ["<<inputVector[iNodeCount]<<"]\n"; sum+="inputVector[iNodeCount]*weightMatrix1[iNodeCount][hNodeCount" ]; // cout<<"Dot product :"<<um<<"\n"; }; hiddendotprod[hNodeCount]="sum;" // cout<<"dot product"<<hiddendotprod[hNodeCount]<<"\n"; hiddenVector[hNodeCount]="fire(hiddendotprod[hNodeCount]);" sum="0;" // cout<<" HIDDEN NODE ["<<hNodeCount<<"] FIRING RESULT :[" // <<hiddenVector[hNodeCount]<<"]\n"; hNodeCount++; }while(hNodeCount<HIDDENNODES); ///////////////////////////////////////////////////////////////// // OUTPUT NODE FIRING // ///////////////////////////////////////////////////////////////// //cout<<" ******** OUTPUT NODE FIRING **********"<<"\n"; sum="0;" int oNodeCount="0;" hNodeCount="0;" do{ //cout<<"***** ** OUTPUT NODE NUMBER : "<<oNodeCount<<"\n"; hNodeCount="0;" do{ // cout<<" HID VECTOR NO. : ["<<hNodeCount<<"]"; // cout<<" HIDDEN VECTOR : ["<<hiddenVector[hNodeCount]<<"]"; sum +="(hiddenVector[hNodeCount]" * weightMatrix2[hNodeCount][oNodeCount]); //cout<<" WEIGHT VALUE : ["<<weightMatrix2[hNodeCount][oNodeCount]<<"]\n"; hNodeCount++; }while(hNodeCount<HIDDENNODES); outputDotProd[oNodeCount]="sum;" outputVector[oNodeCount]="fire(outputDotProd[oNodeCount]);" sum="0;" // cout<<"DOT PRODUCT : ["<<outputDotProd[oNodeCount]<<"]\n"; // printf( "OUTPUT=":" %1.2f\n",outputVector[oNodeCount]); oNodeCount++; }while(oNodeCount<OUTPUTNODES); double OUTPUT="outputVector[oNodeCount];" return OUTPUT; } void stephNet::train() { ///////////////////////////////////////////////////////////////// //// BACKWARD PHASE //// ///////////////////////////////////////////////////////////////// /// OUTPUT LAYER ERROR CALCULATION //// ///////////////////////////////////////////////////////////////// double sum; int placeCount="0;" // cout<<" ********* BACKWARD PHASE **********"<<"\n"; // cout<<" ********* OUTPUT ERROR CALC **********"<<"\n"; do{ outputErrorVector[placeCount]="(1-outputVector[placeCount])*(targetActivation[placeCount]-" outputVector[placeCount]); // cout<<"OUTPUT ERROR :: ["<<outputErrorVector[placeCount]<<"]\n"; placeCount++; }while(placeCount<OUTPUTNODES); ///////////////////////////////////////////////////////////////// /// HIDDEN LAYER ERROR CALCULATION /// ///////////////////////////////////////////////////////////////// int oErrorCount="0;" int oNodeCount="0;" int hNodeCount="0;" sum="0.0;" // cout<<"************ HIDDEN LAYER ERROR *************"<<"\n"; for(oNodeCount="0;oNodeCount&lt;OUTPUTNODES;oNodeCount++)" { // cout<<" Output Error Count :"<<oErrorCount<<"\n"; for(hNodeCount="0;hNodeCount&lt;HIDDENNODES;hNodeCount++)" { // cout<<"Hidden node Count :"<<hNodeCount<<"\n"; sum="0.0;" for(hNodeCount="0;hNodeCount&lt;HIDDENNODES;hNodeCount++)" { // cout<<"weight Count : ["<<oNodeCount<<"]\n"; // cout<<"WEIGHT VALUE :"<<weightMatrix2[hNodeCount][oNodeCount]<<"\n"; // cout<<"HIDDEN LAYER :"<<hiddenVector[hNodeCount]<<"\n"; sum+="weightMatrix2[hNodeCount][oNodeCount]*outputErrorVector[oNod" eCount]; // cout<<"HIDDEN ERROR :"<<hiddenErrorVector[hNodeCount]<<"\n"; // cout<<"OUTPUT ERROR :"<<outputErrorVector[oNodeCount]<<"\n"; }; // cout<<"SUM ::"<<sum<<"\n"; hiddenErrorVector[hNodeCount]+="hiddenErrorVector[hNodeCount]*(1-" hiddenErrorVector[hNodeCount])*sum; // cout<<"HIDDEN ERROR :"<<hiddenErrorVector[hNodeCount]<<"\n"; }; oErrorCount++; }while(oErrorCount<OUTPUTNODES); ///////////////////////////////////////////////////////////////// /// MATRIX 2 WEIGHT CHANGE /// ///////////////////////////////////////////////////////////////// oErrorCount="0;" oNodeCount="0;" hNodeCount="0;" // cout<<"************ CHANGE IN MATRIX 2 *************"<<"\n"; do{ // cout<<" Output Error Count :"<<oErrorCount<<"\n"; while(hNodeCount<HIDDENNODES) { // cout<<"Hidden node Count :"<<hNodeCount<<"\n"; for(oNodeCount="0;oNodeCount&lt;OUTPUTNODES;oNodeCount++)" { // cout<<"weight count ["<<oNodeCount<<"]\n"; // cout<<"OLD WEIGHT :"<<weightMatrix2[hNodeCount][oNodeCount]<<"\n"; changeWeightMatrix2[hNodeCount][oNodeCount]="LEARNINGRATE" * hiddenVector[hNodeCount] * outputErrorVector[oErrorCount] + MOMENTUM * changeWeightMatrix2[hNodeCount][oNodeCount]; weightMatrix2[hNodeCount][oNodeCount]+="changeWeightMatrix2[hNodeCount][oNodeCount];" // cout<<"NEW WEIGHT : ["<<weightMatrix2[hNodeCount][oNodeCount]<<"]\n"; } hNodeCount++; } oErrorCount++; }while(oErrorCount<OUTPUTNODES); ///////////////////////////////////////////////////////////////// /// MATRIX 1 WEIGHT CHANGE /// ///////////////////////////////////////////////////////////////// int iNodeCount="0;" hNodeCount="0;" sum="0.0;" // cout<<"************ MATRIX 1 CHANGE *************"<<"\n"; while (hNodeCount<HIDDENNODES) { // cout<<" ** ** ** NODE NUMBER : "<<hNodeCount<<"\n"; for (iNodeCount="0;iNodeCount&lt;INPUTNODES;iNodeCount++)" { changeWeightMatrix1[iNodeCount][hNodeCount]="(LEARNINGRATE" * inputVector[iNodeCount] * hiddenErrorVector[iNodeCount] +MOMENTUM * weightMatrix1[iNodeCount][hNodeCount]); // cout<<"] OLD WEIGHT VALUE : ["<<weightMatrix1[iNodeCount][hNodeCount]<<"]\n"; weightMatrix1[iNodeCount][hNodeCount]="changeWeightMatrix1[iNodeCount][hNodeCount];" // cout<<"] NEW WEIGHT VALUE : ["<<weightMatrix1[iNodeCount][hNodeCount]<<"]\n"; } hNodeCount++; } }; void stephNet::setInputnode(int InNodeCount,double nodeValue) { inputVector[InNodeCount]="nodeValue;" // cout<<"INPUT NODE : ["<<InNodeCount<<"] ["<<inputVector[InNodeCount]<<"]\n"; }; void stephNet::setTarget(int NodeNum,double targetNum) { targetActivation[NodeNum]="targetNum;" //cout<<"TARGET : ["<<targetActivation[NodeNum]<<"]\n"; }; stephNet mynet 17. Appendix 3 Graphical Representation of Sigmoidal Functions 18. Appendix 4 :Neural Network Application Instructions 19. References [1] David Sherrington :Spin Glasses and Neural Networks: Physics department, Imperial College, London SW7 2BZ [2] Practical Neural Network recipes in C++: Timothy Masters: Academic Press. Inc. [3] Connectionist Learning Theories: Volume 40 of Artificial Intelligence: 1989 Hinton [4] Perceptrons: Marvin Minsky & Seymour Papert 1969 [5] Phillip Burrell: Course notes: 1996-1997 South Bank University London England. [6] Neural Networks : An Introduction: B Muller, J.Reinhardt: Springer-Verlag 1991 [7] The Organisation of Behavior : A Neurophysiological Theory : Wiley, New York (1949) D.O. Hebb [8] An Introduction to Neural Computing: Igor Aleksander & Helen Morton: Chapman & Hall (1990) [9] Neural Networks : Current Applications: P.G.J. Lisboa Chapman & Hall 1992 [10] Towards a modern Theory of Adaptive Networks: Expectation And Prediction RS Sutton & A.G. Barto :1989 [11] Neural Networks in C++ An Object Oriented Framework for Building Connectionist Systems Adam Blum :Wiley Professional Computing 1992 [12] Neural Networks in Finance : An Overview :John C. Barber(1995 Risks & Rewards Newsletter) HTTP://www.he.net/~gator/demo.html [13] Using Artificial Neural Networks to Predict Stocks : Lawrence Kryzanowski, Michael Galler & David W. Wright : Financial Analysis Journal July August (1993) [14] Applying Artificial Neural Networks to Investment Analysis : George S. Swales Jr. & Young Yoon : Financial Analysis Journal /September October 1992 [15] Pitfalls in the Application of Multiple Discriminant Analysis in Business Finance an Economics :R. Eisenbeis :June 1977: [16] Factors Influencing the Classification of Results in from Multiple Discriminate Analysis : Journal of Business Research: G. Pinches :December 1980 [17] Bond Ratings :A Conservative Application of Neural Networks: S.Dutta and S. Shekhar: Proceedings of the IEEE International Conference on neural Networks. [18] D. Hawley , J.Johnson, and D. Raina : Artificial Neural Systems: An New Tool for Financial Decision-Making :Financial Analysts Journal November/December 1990 [20] Introduction to Neural Networks : Phil Picton: The Macmillan Press :1994 [21] Kenue, S.K. (1991) “Efficient Activation Functions for the Back-Propagation Neural Network “ SPIE, proceedings from intelligent robots and Computer Vision X: Neural , Biological and 3D models (November) [22] Neural Networks in Finance: http://www.dur.ac.uk/~dcs3mc/aifinance/neural.html [23] Yuri V. Andreyev, Yuri L.. Belsky, Alexander S.Dmitriev and ,Dimitrij A.Kiminov : IEEE Journal of Transactions on Neural Networks : Information Processing Using Dynamical [24] Optimization and Training of Feedforward Neural Networks by Genetic Algorithms: SJ Marshall, RF Harrison. [25] Neural Edge: WWW.NeuralEdge.com Footers Nervous signals are transmitted either electrically or chemically. Electrical transmission prevails in the interior of the neuron, whereas chemical mechanisms operate between different neurons, i.e. at the synapses. The electrical transmission starts at the cell body and then travel down the axon to the various synaptic connections. This discovery is the work of Sir John Eccles et al.[6] Sir Henry Dale shared the Nobel prize in medicine with Otto Loewi who discovered the chemical transmission of nerve signals at the synapse for this discovery The time factor, represented by j, is not a coefficient that should be present in the equation in this case . The assumption is that some time dependent mechanism should ensure that pre and postsynaptic activity should occur simultaneously [5],[7] . This degree of non-linearity leads them to be described as semi-linear functions instead of fully non-linear. This is the main reason for sigmoidal function use. The logistic function is popular because the derivative is simple and easy to translate into a programming language. Note the similarity to Donald Hebb’s original hypothesis concerning learning principles. These “energy wells” are also termed as minima .Those termed local-minima mean a well that is not the lowest one on the error surface or global being the lowest minimum of the whole error surface. An unexpected result is one that does not comply with the output expected from the network. The word noise is used by electrical engineers and physicists to describe this uncertainty and is familiar to hi fi engineers as white noise or heat. Gradient Descent is a process where weights are adjusted to make clamped state firing equal to those which occur when the network is running freely. The basic Error back-propagation algorithm is a variation of the gradient descent method proposed by Hopfield. The firing rule discussed here is as follows known as the logistic function. The original equation taken from Adam Blum[11] is incorrect the output and the target values are reversed. This causes the network to increase the error by moving in the opposite direction to the global minimum. Time is not a factor in this equation it is some boundary within which all instances must coincide to be included as part of that cycle. The historical data in discussion here is financial data compiled from the most recent four years of the organisations operation.This is similar to the emphasis on selecting the ‘best column’ used in Rule based systems. The internal representations and workings are not the same. This is another term for the use of the uncertainty factor(noise) introduced in ‘simulated annealing’ inherent in Boltzmann machines This is the conclusion of findings of studies performed in [15] and [16] The valuation of each organisation is compiled as a total returns figure which is a sum of dividends and the stock price appreciation. Content analysis is a way of systematically classifying the data by counting and coding similar and recurring words and phrases in order to analyse a message’s content. The current study analyses the president’s letter to the stockholders. This assumption is made based on the paper by Yuri V. Andreyev, Yuri L.. Belsky, Alexander S.Dmitriev and ,Dimitrij A.Kiminov in the IEEE journal of Transactions on Neural Networks. Titled Information Processing Using Dynamical Chaos: Neural Networks Implementation A compete version of the code "can.class" tppabs="http://www.scism.sbu.ac.uk/%7Einmandw/projects/past/9697/projects/rep72/can.class" be found in Appendix 2. This is a term I use to describe a the process of sequentially moving along the two dimensional arrays in the same sequence each time it is required. If the sequence is changed the network will not update the weights correctly during training or perform properly during the recall process. The output layer calculation shown by Adam Blum [11] is incorrect and makes the error move in a direction that increases the output layer error. Therefore, the algorithm shown in this document is a corrected version of this mistake. <!-- Link to My Home Page here--------------> <h3> <hr><a HREF="http://www.scism.sbu.ac.uk/inmandw/past/9697/index.html" tppabs="http://www.scism.sbu.ac.uk/%7Einmandw/projects/past/9697/index.html">  <img SRC="http://www.scism.sbu.ac.uk/../../www.sbu.ac.uk/~dave/images/reading.gif" tppabs="http://www.sbu.ac.uk/%7Edave/images/reading.gif" ALT="[Project Finder]"></a> Proj Finder<a HREF="http://www.scism.sbu.ac.uk/../../tppmsgs/msgs2.htm#519" tppabs="http://www.sbu.ac.uk/%7Edave/index.html">  <img SRC="http://www.scism.sbu.ac.uk/../../www.sbu.ac.uk/~dave/images/daveicon.gif" tppabs="http://www.sbu.ac.uk/%7Edave/images/daveicon.gif" ALT="[DaveInman]"></a> Dave Inman<!-- --------------Links to SBU & SCISM here---------- --><a HREF="http://www.scism.sbu.ac.uk/../index.htm" tppabs="http://www.scism.sbu.ac.uk/"> <img SRC="scismhome.gif" tppabs="http://www.scism.sbu.ac.uk/graphics/scismhome.gif" ALT="[SCISM Home]" WIDTH="48" HEIGHT="40"></a> SCISM<a HREF="http://www.scism.sbu.ac.uk/../../tppmsgs/msgs0.htm#2" tppabs="http://www.sbu.ac.uk/"> <img src="http://www.scism.sbu.ac.uk/../../www.sbu.ac.uk/graphics/homebutton.gif" tppabs="http://www.scism.sbu.ac.uk/graphics/homebutton.gif" ALT="[SBU Home]"></a> SBU Home<hr> </h3><!-- ---------------------------------------------------- --><p> <font SIZE="-1">Last Change Tue, Jun 3, 1997 </font></body> </html>

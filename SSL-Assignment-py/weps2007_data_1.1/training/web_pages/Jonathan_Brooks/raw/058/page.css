@@ -1,0 +1,737 @@
+
+/* Page Template Top */
+.TwoColTopHRRow {
+	height: 1px;
+	padding-top: 0px;
+	padding-left: 32px;
+	padding-right: 32px;
+	padding-bottom: 0px;
+	line-height: 1px;
+	font-size: 0em;
+	text-align: right;
+}
+
+#PageContentPrintRow {
+	display: block;
+	height: 30px;
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	text-align: left;
+	vertical-align: top;
+	background-color: #ffffff;
+}
+
+#PageNavTrailHolder ul {
+	padding-top: 10px;
+	padding-left: 32px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	border: 0px;
+	list-style-position: outside;
+	list-style-type: none;
+}
+#PageNavTrailHolder li {
+	display: inline; 
+	padding-top: 0px; 
+	padding-left: 0px; 
+	padding-right: 0px; 
+	padding-bottom: 0px; 
+	margin: 0px; 
+}
+#PageNavTrailHolder .PrintPageBtn {
+	float: right;
+	position: relative;
+	top: -10px;
+	padding-top: 0px; 
+	padding-left: 0px; 
+	padding-right: 0px; 
+	padding-bottom: 0px; 
+}
+
+.LeftNavLinksTitle {
+	font-size: 0.9em;
+	font-weight: normal;
+	color: #666666;
+}
+
+.LeftNavLinksTitle a, 
+.LeftNavLinksTitle a:link,
+.LeftNavLinksTitle a:hover
+.LeftNavLinksTitle a:active
+.LeftNavLinksTitle a:visited {
+	font-weight: normal;
+	color: #666666;
+	text-decoration: none;
+}
+
+/* Page Left Nav */
+
+#LeftNavSiteMapHolder {
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	width: 202px;
+	background: url(/images/home/left/left_bg.gif);
+	background-position: right top;
+	background-repeat: repeat-y;
+	background-color: #f3f3f3;
+	text-align: left;
+	vertical-align: top;
+}
+
+#LeftNavDivider {
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	width: 202px;
+	height: 3px;
+	line-height: 4px;
+	font size: 0px;
+}
+
+/* OLD SITE MAP BASIC */
+
+ul.SiteMapPlain {  
+	list-style-image: none;
+	list-style-type: none;
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	border: 0px;
+	font-weight: bold;
+}
+
+ul.SiteMapPlain li {
+	padding-bottom: 5px;
+}
+
+ul.SiteMapPlain li a {
+	text-decoration: none;
+	color: #666666;
+}
+
+/* SITE MAP EXPANDING */
+
+ul.SiteMapExpand {  
+	list-style-image: none;
+	list-style-type: none;
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	border: 0px;
+	line-height: 15px;
+}
+
+ul.SiteMapExpand li {
+	behavior: url(/javascript/IEmen_nosub.htc);
+	width: 188px;
+	min-height: 21px;
+	padding-top: 4px;
+	padding-left: 14px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	background-color: #f3f3f3;
+	background: url(/images/home/left/left_bg.gif);
+	background-position: right top;
+	background-repeat: repeat-y;
+	line-height: 15px;
+}
+
+ul.SiteMapExpand li:hover {
+	width: 188px;
+	min-height: 21px;
+	padding-top: 4px;
+	padding-left: 14px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	background-color: #cdcdcd;
+	background-image: url(/images/home/left/left_bg_over.gif);
+	background: url(/images/home/left/left_bg_over.gif);
+	background-position: right top;
+	background-repeat: repeat-y;
+	line-height: 15px;
+}
+
+ul.SiteMapExpand li a {
+	line-height: 15px;
+	text-align: left;
+	vertical-align: top;
+	font-weight: bold;
+	text-decoration: none;
+	color: #666666;
+}
+
+ul.SiteMapExpand li:hover a {
+	line-height: 15px;
+	text-align: left;
+	vertical-align: left;
+	font-weight: bold;
+	text-decoration: none;
+	color: #f5822a;
+	/*background-color: #cdcdcd;
+	background-image: url(/images/home/left/left_bg_over.gif);
+	background: url(/images/home/left/left_bg_over.gif);
+	background-position: right top;
+	background-repeat: repeat-y;*/
+}
+
+ul.SiteMapExpand li a:hover {
+	line-height: 15px;
+	text-align: left;
+	vertical-align: left;
+	font-weight: bold;
+	text-decoration: none;
+	color: #f5822a;
+}
+
+ul.SiteMapExpand li.BtnArrow {
+
+	/* IE6 patch */
+	behavior: url(/javascript/IEmen.htc);
+
+	width: 162px;
+	min-height: 21px;
+	padding-top: 4px;
+	padding-left: 14px;
+	padding-right: 26px;
+	padding-bottom: 0px;
+	background-color: #f3f3f3;
+	background: url(/images/home/left/left_bg_arrow.gif);
+	background-position: right top;
+	background-repeat: repeat-y;
+	line-height: 15px;
+}
+
+ul.SiteMapExpand li.BtnArrow:hover{
+	width: 162px;
+	min-height: 21px;
+	padding-top: 4px;
+	padding-left: 14px;
+	padding-right: 26px;
+	padding-bottom: 0px;
+	background-color: #cdcdcd;
+	background-image: url(/images/home/left/left_bg_arrow_over.gif);
+	background: url(/images/home/left/left_bg_arrow_over.gif);
+	background-position: right top;
+	background-repeat: repeat-y;
+	line-height: 15px;
+}
+
+ul.SiteMapExpand li.NavHoverTmp {
+	/* IE 6 Patch - CSS/JS behaviour */
+	width: 178px;
+	min-height: 21px;
+	padding-top: 4px;
+	padding-left: 14px;
+	padding-right: 10px;
+	padding-bottom: 0px;
+	background-color: #cdcdcd;
+	background-image: url(/images/home/left/left_bg_arrow_over.gif);
+	background: url(/images/home/left/left_bg_arrow_over.gif);
+	background-position: right top;
+	background-repeat: repeat-y;
+	line-height: 15px;
+
+}
+
+ul.SiteMapExpand li.NavHoverTmp_nosub {
+	/* IE 6 Patch - CSS/JS behaviour */
+	width: 178px;
+	min-height: 21px;
+	padding-top: 4px;
+	padding-left: 14px;
+	padding-right: 10px;
+	padding-bottom: 0px;
+	background-color: #cdcdcd;
+	background-image: url(/images/home/left/left_bg_over.gif);
+	background: url(/images/home/left/left_bg_over.gif);
+	background-position: right top;
+	background-repeat: repeat-y;
+	line-height: 15px;
+
+}
+
+/* SUB NAV */
+
+UL.SiteMapExpand UL {
+
+	DISPLAY: none;
+	list-style:none;
+
+}
+
+.SiteMapExpand li:hover UL {
+
+	display: inline;
+	position: absolute;
+	Z-INDEX: 1000;
+
+	WIDTH: 200px; 
+
+	/*top: 246px;*/
+	left: 200px;
+
+	list-style-image: none;
+	list-style-type: none;
+
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin: 0px;
+
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+
+	line-height: 15px;
+
+	BORDER-TOP: #cccccc 1px solid;
+	BORDER-LEFT: #cccccc 1px solid; 
+	BORDER-RIGHT: #cccccc 1px solid; 
+	BORDER-BOTTOM: #cccccc 1px solid; 
+
+	background: none;
+	background-image: none;
+	background-color: #f3f3f3;
+
+}
+
+
+.SiteMapExpand li:hover UL LI {
+	color: #666666;	
+}
+
+.SiteMapExpand li:hover UL LI a {
+	color: #666666;	
+}
+
+.SiteMapExpand li:hover UL LI:hover a {
+	color: #f5822a;	
+}
+
+.SiteMapExpand li:hover UL LI a:hover {
+	color: #f5822a;	
+}
+
+
+UL.SiteMapExpand UL.SubNavRevealTmp {
+	/* IE 6 Patch - CSS/JS behaviour */
+	display: inline;
+	position: absolute;
+	Z-INDEX: 1000;
+
+	WIDTH: 200px; /* should be 188 ? */
+
+	/*top: 246px;*/
+	left: 200px;
+
+	list-style-image: none;
+	list-style-type: none;
+
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin: 0px;
+
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+
+	line-height: 15px;
+
+	BORDER-TOP: #cccccc 1px solid;
+	BORDER-LEFT: #cccccc 1px solid; 
+	/* BORDER-RIGHT: #cccccc 1px solid; */
+	BORDER-BOTTOM: #cccccc 1px solid; 
+
+	background: none;
+	background-image: none;
+	background-color: #f3f3f3;
+
+}
+
+
+.SiteMapSub li {
+
+	float: left;
+	position: relative;
+	left: 0px;
+
+	width: 200px;
+	min-height: 21px;
+
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin: 0px;
+
+	padding-top: 4px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+
+	line-height: 15px;
+
+	background: none;
+	background-image: none;
+	background-color: #f3f3f3;
+
+
+}
+
+.SiteMapSub li:hover {
+
+	width: 200px;
+	min-height: 21px;
+
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin: 0px;
+
+	padding-top: 4px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+
+	line-height: 15px;
+
+	background: none;
+	background-image: none;
+
+	background-color: #cdcdcd;
+
+}
+
+
+
+/* Page Template Content */
+
+.PageContentTitleBox {
+	padding-top: 2px;
+	padding-left: 32px;
+	padding-right: 20px;
+	padding-bottom: 22px;
+	font-family: arial, helvetica, verdana, sans-serif, times;
+	font-size: 1.6em;
+	font-weight: normal;
+	color: #f5822a;
+}
+
+.PageContentIntroBox {
+	padding-top: 12px;
+	padding-left: 32px;
+	padding-right: 36px;
+	padding-bottom: 12px;
+	font-family: arial, helvetica, verdana, sans-serif, times;
+	font-size: 1.6em;
+	font-weight: normal;
+	color: #666666; 
+}
+
+.PageContentIntroBox a, 
+.PageContentIntroBox a:hover {
+	color: #f5822a;
+}
+
+.PageContentBox {
+	padding-top: 0px;
+	padding-left: 32px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	font-family: arial, helvetica, verdana, sans-serif, times;
+	font-size: 1.1em;
+	font-weight: normal;
+	color: #666666; 
+	text-align: left;
+	vertical-align: top;
+}
+
+.PageContentBox strong {
+	font-weight: bold;
+	color: #f5822a;
+}
+
+.PageContentBox a,
+.PageContentBox a:link,
+.PageContentBox a:hover,
+.PageContentBox a:active,
+.PageContentBox a:visited {
+	text-decoration: none;
+	color: #f5822a;
+}
+
+/* Special Layouts */
+
+.PageContentBannerBox {
+	padding-top: 12px;
+	padding-left: 32px;
+	padding-bottom: 0px;
+}
+
+/* News Left Nav */
+
+.LeftNavNewsFormTitleHolder {
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	width: 202px;
+	height: 35px;
+	background: url(/images/pages/left_form_title.gif);
+	background-position: right top;
+	background-repeat: repeat-y;
+	background-color: #666666;
+}
+
+.LeftNavNewsFormTitleHolderTxt {
+	padding-top: 8px;
+	padding-left: 12px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	font-size: 1.2em;
+	font-weight: bold; 
+	color: #ffffff;
+	text-align: left;
+	vertical-align: top;
+}
+
+.LeftNavNewsFormHolder {
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	width: 202px;
+	background: url(/images/home/left/left_bg_dark.gif);
+	background-position: right top;
+	background-repeat: repeat-y;
+	background-color: #dedede;
+	text-align: left;
+	vertical-align: top;
+}
+
+.LeftNavNewsFormControls {
+	padding-top: 12px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-bottom: 6px;
+}
+
+.LeftNavNewsFormTxt {
+	padding-top: 3px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 3px;
+	line-height: 20px;
+	font-weight: bold;
+	color: #666666;
+}
+
+.LeftNavNewsFormIndustryKW {
+	padding-top: 3px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 3px;
+	width: 80px;
+}
+
+.LeftNavNewsFormIndustry {
+	width: 165px;
+}
+
+.LeftNewsFindBtnHolder {
+	padding-top: 6px;
+	padding-left: 0px;
+	padding-right: 5px;
+	padding-bottom: 0px;
+	text-align: right;
+}
+
+.LeftNewsFindBtn {
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	width: 37px;
+	height: 17px;
+	margin: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	border-bottom-style: none;
+	font-weight: bold;
+	font-size: 1.0em;
+	color: #666666;
+	background-color: #dddddd;
+	vertical-align: middle;
+}
+
+.NewsLeftDarkBox {
+	height: 38px;
+	width: 202px;
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	background:url(/images/pages/left_box_dark.gif);
+}
+
+.NewsLeftDarkBoxTxt {
+	padding-top: 12px;
+	padding-left: 12px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+.NewsLeftDarkBoxTxt a, 
+.NewsLeftDarkBoxTxt a:link, 
+.NewsLeftDarkBoxTxt a:hover,
+.NewsLeftDarkBoxTxt a:active,
+.NewsLeftDarkBoxTxt a:visited {
+	text-decoration: none;
+	color: #f5822a;
+}
+
+/* Publications */
+
+.PublicationsLeftDarkBox {
+	height: 38px;
+	width: 202px;
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	background: url(/images/pages/left_box_dark.gif);
+}
+
+.PublicationsListItem {
+	padding-top: 6px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 6px;
+	text-align: left;
+}
+
+/* Our People */
+
+.PeopleDetailsTopBox {
+
+	padding-top: 0px;
+	padding-left: 32px;
+	padding-right: 0px;
+	padding-bottom: 50px;
+	font-family: arial, helvetica, verdana, sans-serif, times;
+	font-size: 1.1em;
+	font-weight: normal;
+	color: #666666; 
+	text-align: left;
+	vertical-align: top;
+
+	height : 100px;
+	overflow : visible;
+}
+
+.PeopleDetailsTopBoxEmail {
+	display : inline-table;
+	background: url(/images/people/people_details_email.gif);
+	background-position: left top;
+	background-repeat: no-repeat;
+	padding-left : 300px;
+	margin-top : 10px;
+	height : 33px;
+	width : 45px;
+	float : right;
+	margin-right : -130px;
+	cursor : hand;
+
+}
+
+.PeopleAddressDetails {
+	display : inline;
+	float : right;
+	margin-right : 20px;
+	margin-bottom : 0px;
+	overflow : visible;
+	width : 170px;
+}
+
+.PeopleBiography {
+	padding-top : 20px;
+}
+
+
+/*
+.PeopleDetailsTopBox {
+	padding-top: 0px;
+	padding-left: 32px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	font-family: arial, helvetica, verdana, sans-serif, times;
+	font-size: 1.1em;
+	font-weight: normal;
+	color: #666666; 
+	text-align: left;
+	vertical-align: top;
+	background: url(/images/people/people_details_top_bg.gif);
+	background-position: left top;
+	background-repeat: no-repeat;
+}
+*/
+
+.PeopleDetailsTopBox strong {
+	color: #f5822a;
+}
+
+
+/* Standard Tiles */
+
+.ContentTwoColumns {
+	padding-top: 0px;
+	padding-left: 32px;
+	padding-right: 0px;
+	padding-bottom: 12px;
+	font-family: arial, helvetica, verdana, sans-serif, times;
+	font-size: 1.1em;
+	font-weight: normal;
+	color: #666666; 
+	text-align: left;
+	vertical-align: top;
+}
+
+.ContentTwoColumnsSearchResults {
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 12px;
+	font-family: arial, helvetica, verdana, sans-serif, times;
+	font-size: 0.9em;
+	font-weight: normal;
+	color: #666666; 
+	text-align: left;
+	vertical-align: top;
+}

@@ -1,0 +1,627 @@
+/**
+The default size for ‘medium’ text in all modern browsers is 16px.
+
+So, if we divide 100/16 we get 6.25 as a standard % for 1px.
+
+If we want to base our design on a 10px font, we would set the
+root font percentage to 62.5
+
+
+*/
+
+*
+	{
+	font-family		: arial,tahoma,verdana,sans-serif;
+	outline			: none;
+	}
+
+html	{ font-size: 100%; /* IE hack */ }
+
+body
+	{
+	margin:0px;
+	background: #E8E7D3 url(http://images.freeadvice.com/images_ap_v3/bkgnd_inside3.gif) repeat-x;
+	color:#666666;
+	text-align: center;
+	/*font-size: 62.5%;
+	font-size: .75em;
+	font-size: 75%;*/
+	font-size: .625em;
+	}
+table	{ font-size: 100%; /* IE hack */ }
+form	{ margin:0px; }
+ul		{ margin:5px 0; }
+
+a				{ color:#467F92; text-decoration:underline; }
+a:hover			{ color:#467F92; text-decoration:none; }
+a:visited		{ color:#666666; text-decoration:underline; }
+a:visited:hover	{ color:#467F92; text-decoration:none; }
+
+img
+	{
+	border:none;
+	margin:0;
+	}
+
+H1 {font-size:2em}  /* displayed at 24px */
+H2 {font-size:1.5em}  /* displayed at 18px */
+H3 {font-size:1.125em}  /* displayed at 15px */
+H4 {font-size:1em}  /* displayed at 12px */
+
+/*
+input,textarea
+	{
+	background-color: #FFFFFF;
+	color: #666666;
+	font-size:9pt;
+	border: 1px #CCCCCC solid;
+	padding: 3px;
+	}
+*/
+select
+	{
+	background-color: #FFFFFF;
+	color: #666666;
+	font-size:1.0em;
+	padding: 1px;
+	}
+
+.submit
+	{
+	width:133px;
+	border-top: 1px #FFD7C3 solid;
+	border-left: 1px #FFD7C3 solid;
+	border-bottom: 1px #904217 solid;
+	border-right: 1px #904217 solid;
+	padding:110px 125px 110px 110px;
+	background: #FE5A08 url("http://attorneypages.com/images_new/submit_arrow.gif") no-repeat center right;
+	color:#ffffff;
+	font:bold 14px georgia, serif;
+	text-align:left;
+	}
+
+
+#container	{ margin: 15px 10px 10px 10px;
+	/**/font-size: 1.2em; }
+
+.pageFrame_homeLeft		{ background: transparent url(http://images.freeadvice.com/images_ap_v3/pageFrame_homeLeft.gif) repeat-y; }
+.pageFrame_homeRight	{ background: transparent url(http://images.freeadvice.com/images_ap_v3/pageFrame_homeRight.gif) repeat-y; }
+.pageFrame_blueLeft		{ background: transparent url(http://images.freeadvice.com/images_ap_v3/pageFrame_blueLeft.gif) repeat-y; }
+.pageFrame_blueRight	{ background: transparent url(http://images.freeadvice.com/images_ap_v3/pageFrame_blueRight.gif) repeat-y; }
+.pageFrame_mainLeft		{ background: transparent url(http://images.freeadvice.com/images_ap_v3/pageFrame_mainLeft.gif) repeat-y; }
+.pageFrame_mainRight	{ background: transparent url(http://images.freeadvice.com/images_ap_v3/pageFrame_mainRight.gif) repeat-y; }
+.pageFrame_bottom		{ background: transparent url(http://images.freeadvice.com/images_ap_v3/border_bottom.gif) repeat-x; }
+
+.hometile1
+	{
+	padding-left: 29px;
+	padding-right: 14px;
+	}
+.bluetileint
+	{
+	background: #00516B url(http://images.freeadvice.com/images_ap_v3/blue_tile_stretch.jpg) no-repeat;
+	padding-left: 29px;
+	color:#ffffff;
+	}
+.blueStripLarge
+	{
+	color:#ffffff;
+	font-size: 1.6em;
+	text-decoration:none;
+	}
+.blueStripMedium
+	{
+	color:#ffffff;
+	font-size: 1.0em;
+	text-decoration:none;
+	}
+.blueStripMedium	a		{  }
+.blueStripMedium a:link		{ color:#DCE7EA; text-decoration:underline; }
+.blueStripMedium a:visited	{ color:#DCE7EA; text-decoration:underline; }
+.blueStripMedium a:hover	{ color:#DCE7EA; text-decoration:none; }
+
+
+/**
+ * Breadcrumbs
+ */
+.bread
+	{
+	font-family:arial,tahoma,verdana,sans-serif;
+	color:#DCE7EA;
+	font-size: .9em;
+	line-height: .92em;
+	}
+.bread A{ }
+.bread A:link		{ color:#DCE7EA; text-decoration:underline; }
+.bread A:visited	{ color:#DCE7EA; text-decoration:underline; }
+.bread A:hover		{ color:#DCE7EA; text-decoration:none; }
+.bread A:active		{ color:#DCE7EA; text-decoration:underline; }
+
+
+
+.padcontent
+	{
+	width: 100%;
+	padding: 0px 14px 3px 29px;
+	}
+.pad-instructions
+	{
+	padding: 4px 0px 3px 0px;
+	}
+.pad-col-content
+	{
+	padding-top: 4px;
+	padding-right: 10px;
+	}
+.pad-col-tools
+	{
+	padding-top: 4px;
+	padding-right: 0px;
+	border-right: 1px solid #E8E7D3;
+	/*width: 211px;*/
+	width: 180px;
+	}
+.rcolHeader
+	{
+	font-family:arial,tahoma,verdana, sans-serif;
+	color:#666666;
+	font-weight:bold;
+	font-size: 1.1em;
+	padding: 4px 4px 4px 22px;
+	background: #E8E7D3 url(http://images.freeadvice.com/images_ap_v3/arrow_orange2.gif) no-repeat top left;
+	}
+.padrtcol2
+	{
+	padding: 10px 6px 20px 6px;
+	font-size:1.0em;
+	}
+.padrtcol2 ul
+	{
+	margin: 0px 0px 0px 10px;
+	padding: 0px;
+	list-style-type: none;
+	}
+.padrtcol2 li
+	{
+	list-style-position: outside;
+	list-style-type: none;
+	list-style-image: url(http://images.freeadvice.com/images_ap_v3/arrow_blue2.gif);
+	}
+
+
+/**
+ * SEARCHBOX
+ */
+#searchboxwrap
+	{
+	padding-bottom:1px;
+	margin-bottom:1px;
+	}
+#searchboxwrap h3.searchboxtitle_a
+	{
+	background:#E7E2C6 url(http://images.freeadvice.com/images_ap_v2/search_bg.gif) no-repeat top right;
+	margin:0;
+	padding:5px;
+	}
+#searchboxwrap .searchoption_1
+	{
+	padding:5px;
+	text-align:right;
+	}
+#searchboxwrap .searchoption_2a, #searchboxwrap .searchoption_2b
+	{
+	padding:5px;
+	text-align:right;
+	}
+#searchboxwrap label
+	{
+	font-weight:bold;
+	float:left;
+	margin-right:1px;
+	}
+#searchboxwrap div.search_radio
+	{
+	margin-right:1px;
+	}
+#searchboxwrap input#zipcode
+	{
+	width:55px;
+	border:1px solid #4E4E4E;
+	margin:0px;
+	}
+#searchboxwrap optgroup, #searchboxwrap option
+	{
+	padding-right:2px;
+	}
+#searchboxwrap select
+	{
+	margin:0px;
+	}
+#searchboxwrap .spacer
+	{
+	text-align:center;
+	}
+#contentwrap
+	{
+	margin:0px 0px 10px 10px;
+	/*font-size:.7em;*/
+	}
+#contentwrap p
+	{
+	line-height:110%;
+	margin:0;
+	}
+#contentwrap .divider
+	{
+	border-top:1px solid #ccc;
+	margin-top:20px;
+	}
+
+
+/**
+ * CONTENT CONTAINERS
+ * #box1, #box2, #box3, #box4, #box5
+ */
+#box2, #box3, #box4
+	{
+	margin:10px 10px 0 10px;
+	padding:0px;
+	}
+
+
+/**
+ * TEXT STYLES
+ */
+.textstyle1 {color:#D31D1D; font-weight:normal; font-size:1.0em;}
+.textstyle2 {color:#000; font-weight:normal; font-size:1.1em;}
+.textstyle3 {color:#000; font-weight:normal; font-size:1.1em;}
+.textstyle4 {color:#333; font-weight:normal; font-size:.95em;}
+.textstyle5 {color:#D31D1D; font-weight:bold; font-size:.8em;}
+.textstyle6 {color:#06C; font-weight:bold; font-size:1.05em;}
+.textstyle7 {color:#06C; font-weight:normal; font-size:1.0em;}
+.textstyle8 {color:#333; font-weight:bold; font-size:.95em;}
+.textstyle9 {color:#000; font-weight:bold; font-size:.95em;}
+.textstyle10 {color:#000; font-weight:bold; font-size:1.1em;}
+
+
+/**
+ * Platinum Listings
+ */
+#box1
+	{
+	margin:0px 0px 10px 0px;
+	border:1px solid #06c;
+	padding:10px 0;
+	background-color:#E8F0F6;
+	}						
+#box1 h3
+	{
+	font-size: 1.4em;
+	margin:0px 5px 5px 5px;
+	}
+#box1 .textstyle6, #box1 p
+	{
+	background-color:#F2F7FA;
+	padding:5px;
+	}
+
+
+/* PREMIER AND 3RD PARTY LISTINGS */
+#box2 .textstyle2, #box2 .textstyle3, #box3 .textstyle2
+	{
+	padding:2px 0;
+	}
+
+
+
+/* PREMIER AND 3RD PARTY LISTINGS */
+.listing-res-prem .textstyle2, .listing-res-prem .textstyle3
+	{
+	padding:2px 0;
+	}
+
+.listing-res-prem
+	{
+	margin:10px 10px 0 10px;
+	padding:0px;
+	}
+
+.listing-res-prem h4
+	{
+	margin-top:10px;
+	margin-bottom:0px;
+	font-size:1.2em;
+	}
+
+
+.listing-res-free
+	{
+	margin:10px 10px 0 10px;
+	padding:0px;
+	padding:0px 5px 5px 0px;
+	}
+
+.listing-res-free strong.listing_normal_sz2
+	{
+	}
+
+.listing-res-free h4
+	{
+	margin:0;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:120%;
+	}
+
+
+/* VALID LISTINGS */
+#box4 p.textstyle4
+	{
+	padding:0px 5px 5px 0px;
+	}
+
+.textstyle4 a.title {
+	font-weight:bold;
+	}
+
+
+#box4 .listing_normal_sz2
+	{
+	font-weight:bold;
+	}
+
+
+/* State Category Headers */
+.listing-header
+	{
+	background-color:#E8E7D3;
+	border-top:1px solid #ECEAC6;
+	border-left:1px solid #ECEAC6;
+	border-right:1px solid #ECEAC6;
+	}
+.listing-header h3
+	{
+	font-size: 1.1em;
+	font-family: Arial, Helvetica, sans-serif;
+	margin:0;
+	padding:2px;
+	}
+
+.listing-content
+	{
+	/*font-size: .85em;*/
+	/**/
+	font-size: 1.0em;
+	border:1px solid #ECEAC6;
+	}
+
+
+/* RIGHT SECTION */
+#rightsection
+	{
+	background-color:#F2F7FA;
+	}
+#advertisement
+	{
+	margin:10px;
+	}
+#advertisement h6
+	{
+	margin-top:10px;
+	margin-bottom:0;
+	padding:0;
+	}
+#advertisement p
+	{
+	margin:0;
+	padding:0;
+	}
+
+
+/* LOWER MODULES */
+
+.box5
+	{
+	margin:0px 0px 0px 10px;
+	padding:0px;
+	}
+
+.box5 h3
+	{
+	margin:5px;
+	font-size:.9em;
+	}
+.box5 ul
+	{
+	margin:10px 0px 10px 20px;
+	padding:0px;
+	}
+.box5 li
+	{
+	padding:0px;
+	font-size:.7em;
+	list-style-position: outside;
+	list-style-type: none;
+	list-style-image: url(http://images.freeadvice.com/images_ap_v3/arrow_blue2.gif);
+	}
+
+#box5a, #box5b, #box5c
+	{
+	width:49%;
+	border:1px solid #06c;
+	background-color:#F2F7FA;
+	}
+#box5a	{ float:left; }
+#box5b	{ float:right; }
+#box5c	{ float:right; }
+
+#box-related
+	{
+	width:49%;
+	border:1px solid #06c;
+	background-color:#F2F7FA;
+	float:right;
+	padding:3px;
+	}
+
+a.getlisted
+	{
+	font-size: 0.9em;
+	color: #467F92;
+	text-decoration:underline;
+	padding-left: 15px;
+	background: url(http://images.freeadvice.com/images_ap_v3/icon_getlisted.gif) no-repeat center left;
+	}
+
+.headerarrow
+	{
+	font-family:arial,tahoma,verdana, sans-serif;
+	color:#666666;
+	font-weight:bold;
+	font-size: 0.95em;
+	padding-left: 15px;
+	padding-bottom: 3px;
+	border-bottom: 1px solid #E8E7D3;
+	background: url(http://images.freeadvice.com/images_ap_v3/arrow_orange.gif) no-repeat top left;
+	}
+.headerarrownoline
+	{
+	font-family:arial,tahoma,verdana, sans-serif;
+	color:#666666;
+	font-weight:bold;
+	font-size: 1.1em;
+	padding-left: 15px;
+	padding-bottom: 3px;
+	background: url(http://images.freeadvice.com/images_ap_v3/arrow_orange.gif) no-repeat 0% 30%;
+	}
+
+
+/**
+ * Footer
+ */
+.footer
+	{
+	font-family:arial,tahoma,verdana,sans-serif;
+	color:#777777;
+	font-size:.95em;
+	line-height:1.2em;
+	text-decoration:none;
+	}
+
+a.footer
+	{
+	font-family:arial,tahoma,verdana,sans-serif;
+	color:#777777;
+	font-size:8.5pt;
+	text-decoration:underline;
+	}
+a.footer:hover
+	{
+	font-family:arial,tahoma,verdana,sans-serif;
+	color:#777777;
+	font-size:8.5pt;
+	text-decoration:none;
+	}
+
+
+/**
+ * Submit Button
+ */
+.btnmiddle
+	{
+	background: #3B8199 url(http://images.freeadvice.com/images_ap_v3/btn_middle.gif) repeat-x;
+	}
+.submitbutton
+	{
+	border: 0px solid transparent;
+	background-color: transparent;
+	color: #ffffff;
+	font-family:arial,tahoma, verdana, sans-serif;
+	font-size:11px;
+	font-weight: bold;
+	text-decoration:none;
+	padding: 0px;
+	height:30px;
+	cursor:pointer;
+	}
+/*
+input.submitbutton:hover
+	{
+	cursor:pointer;
+	text-decoration:underline;
+	}
+*/
+.submitbutton-disabled
+	{
+	border: 0px solid transparent;
+	background-color: transparent;
+	color: #C0C0C0;
+	font-family:arial,tahoma, verdana, sans-serif;
+	font-size:10pt;
+	font-weight: bold;
+	text-decoration:none;
+	padding: 0px;
+	height:30px;
+	}
+
+
+/**
+ * Platinum Listings
+ */
+a.listing_plat_name
+	{
+	color: #000000;
+	}
+a.listing_plat_name:link, a.listing_plat_name:visited
+	{
+	color: #000000;
+	text-decoration: underline;
+	}
+a.listing_plat_name:hover
+	{
+	color:#fff;
+	background-color:#06C;
+	}
+
+
+/**
+ * Post Case Links
+ */
+.pyc-submit
+	{
+	border:1px solid #FDFCF6;
+	background-color: #FDFCF6;
+	color:#06C;
+	font-weight:bold;
+	text-decoration: underline;
+	padding:0px;
+	}
+.pyc-submit-over
+	{
+	cursor: pointer;
+	border:1px solid #FDFCF6;
+	background-color: #FDFCF6;
+	color:#f00;
+	font-weight:bold;
+	text-decoration: underline;
+	padding:0px;
+	}
+.pyc-submit:hover
+	{
+	cursor: pointer;
+	border:1px solid #FDFCF6;
+	background-color: #FDFCF6;
+	color:#f00;
+	font-weight:bold;
+	text-decoration: underline;
+	padding:0px;
+	}
+.pyc-submit:active
+	{
+	border:1px solid #FDFCF6;
+	background-color: #FDFCF6;
+	color:#06C;
+	font-weight:bold;
+	text-decoration: underline;
+	padding:0px;
+	}
+.topright, .breadpad	{}

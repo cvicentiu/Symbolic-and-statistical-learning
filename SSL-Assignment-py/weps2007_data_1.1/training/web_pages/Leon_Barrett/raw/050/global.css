@@ -1,0 +1,253 @@
+body
+{
+	background-color: #ffffff;
+	color: #000000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-size: 11px;
+	line-height: 16px;
+	text-align: left;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: -6px;
+/*	behavior: url(/includes/csshover.htc);*/
+}
+
+small
+{
+	font-size: 10px;
+}
+
+#data
+{
+	padding-left: 10px;
+}
+
+p,td
+{
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+th { font-size: 11px; }
+
+li,ul,ol
+{
+	color: black;
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:link
+{
+	color: navy;
+	text-decoration: underline;
+	background-color: transparent;
+}
+
+a:visited
+{
+	color: navy;
+	text-decoration: underline;
+	background-color: transparent;
+}
+
+a:active
+{
+	color: navy;
+	text-decoration: underline;
+	background-color: transparent;
+}
+
+a:hover
+{
+	color: red;
+	text-decoration: none;
+	background-color: transparent;
+}
+
+PRE, TT, CODE
+{
+	font-size: 11px;
+	font-family: courier, sans-serif;
+}
+
+b { font-weight: bold; }
+
+h1
+{
+	color: black;
+	font-weight: bold;
+	font-size: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: transparent;
+}
+
+h2
+{
+	color: black;
+	font-weight: bold;
+	font-size: 13px;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: transparent;
+}
+
+h3
+{
+	color: black;
+	font-weight: bold;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: transparent;
+}
+
+h4
+{
+	color: black;
+	font-weight: bold;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: transparent;
+}
+
+h5
+{
+	color: black;
+	font-weight: bold;
+	font-size: 11px;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: transparent;
+}
+
+h6
+{
+	color: black;
+	font-weight: bold;
+	font-size: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: transparent;
+}
+
+.footer
+{
+	font-size: 9px;
+	line-height: 12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+a.footer:link, a.footer:active, a.footer:visited
+{
+	font-size: 9px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+a.footer:hover
+{
+	font-size: 9px;
+	color: red;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: underline;
+}
+
+.footerw
+{
+	font-size: 9px;
+	color: white;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+a.footerw:link, a.footerw:active, a.footerw:visited
+{
+	font-size: 9px;
+	color: white;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+a.footerw:hover
+{
+	font-size: 9px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: white;
+	text-decoration: underline;
+}
+
+.footersm
+{
+	font-size: 9px;
+	line-height: 11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+a.footersm:link, a.footersm:active, a.footersm:visited
+{
+	font-size: 9px;
+	line-height: 11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+a.footersm:hover
+{
+	color: red;
+	text-decoration: underline;
+}
+
+.dirnav
+{
+	width: 155px;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.searchbox { font-size: 10px; }
+
+.hidden
+{
+	position: absolute;
+	left: 0;
+	top: -500px;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+.templateversion
+{
+	font-size: 9px;
+	text-align: right;
+	color: #aaaaaa;
+}
+
+.center { text-align: center; }
+
+a img { border: 0; }
+
+a.validator:link, a.validator:visited, a.validator:active, a.validator:hover
+{
+	color: #000000;
+	font-size: 9px;
+	text-decoration: none;
+	background-color: transparent;
+}
+
+#quicklinks 
+{
+	margin-top: 0px; 
+	margin-left: 6px;
+	width: 145px;
+}
+
+html>body #quicklinks 
+{
+	margin-top: -4px; 
+	margin-left: 4px;
+	width: 150px;
+}

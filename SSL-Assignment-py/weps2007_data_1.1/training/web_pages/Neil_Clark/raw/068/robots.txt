@@ -1,0 +1,48 @@
+# 5/20/05
+# updated 5/24/05
+# updated 8/10/05 (hagan home page test)
+# This is for every spider!
+
+User-Agent: *
+
+# stay away from all of this stuff
+
+Disallow: /_errors/
+Disallow: /cfdocs/
+Disallow: /cfdocs_0/
+Disallow: /CFIDE/
+Disallow: /CFIDE_/
+Disallow: /CFIDE_0/
+Disallow: /Connections/
+Disallow: /faculty2/
+Disallow: /faculty619/
+Disallow: /faculty620/
+Disallow: /ezproxy/
+Disallow: /gaelsbk/
+Disallow: /iisproxy/
+Disallow: /images/
+Disallow: /includes/
+Disallow: /news/forms/
+Disallow: /photoarchive/
+Disallow: /psproxy/
+Disallow: /report/
+Disallow: /scripts/
+Disallow: /Templates/
+Disallow: /webteam/
+Disallow: /www3proxy/
+Disallow: /www4proxy/
+Disallow: /www5proxy/
+Disallow: /www6proxy/
+Disallow: /indexT.cfm
+Disallow: /academic/hagan/indexTest.cfm
+Disallow: /studentlife/career/workshops/Winning%20Interviews%20Fall%202004_files
+
+User-Agent: stress-agent
+Disallow: /
+
+User-agent: LinkDefender
+Disallow: /gaels/
+Disallow: /faculty/
+
+User-agent: WebTrends/3.0 (WinNT)
+Disallow: /gaels/ionasid/

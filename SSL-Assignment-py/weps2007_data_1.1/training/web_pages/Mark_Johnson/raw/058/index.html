@@ -1,0 +1,535 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Home Page</title>
+<style fprolloverstyle>A:hover {color: red; font-weight: bold}
+</style>
+<script language="JavaScript">
+<!--
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+
+function FP_swapImgRestore() {//v1.0
+ var doc=document,i; if(doc.$imgSwaps) { for(i=0;i<doc.$imgSwaps.length;i++) {
+  var elm=doc.$imgSwaps[i]; if(elm) { elm.src=elm.$src; elm.$src=null; } } 
+  doc.$imgSwaps=null; }
+}
+
+function FP_changePropRestore() {//v1.0
+ var d=document,x; if(d.$cpe) { for(i=0; i<d.$cpe.length; i++) { x=d.$cpe[i];
+ if(x.v=="") x.v=""; eval("x."+x.n+"=x.v"); } d.$cpe=null; }
+}
+
+function FP_changeProp() {//v1.0
+ var args=arguments,d=document,i,j,id=args[0],o=FP_getObjectByID(id),s,ao,v,x;
+ d.$cpe=new Array(); if(o) for(i=2; i<args.length; i+=2) { v=args[i+1]; s="o"; 
+ ao=args[i].split("."); for(j=0; j<ao.length; j++) { s+="."+ao[j]; if(null==eval(s)) { 
+  s=null; break; } } x=new Object; x.o=o; x.n=new Array(); x.v=new Array();
+ x.n[x.n.length]=s; eval("x.v[x.v.length]="+s); d.$cpe[d.$cpe.length]=x;
+ if(s) eval(s+"=v"); }
+}
+// -->
+</script>
+</head>
+
+<script language="JavaScript">
+<!--
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+// -->
+</script>
+
+<body onload="FP_preloadImgs(/*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/about-button-ro.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/babies-info-ro.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/senior-info-ro.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/weddings-info-ro.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/families-info-ro.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/sports-info-ro.gif', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/Misc-info-ro.gif', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/specials-button-ro.gif', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/Contact-button-ro.gif', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/about-me-link-ro.gif', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/babies-link-ro.gif', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/Seniors-link-ro.gif', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/families-link-ro.gif', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/weddings-link-ro.gif', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/sports-link-ro.gif', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/misc-link-ro.gif', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/senior-gallery-link-ro.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/senior-gallery-link-mc.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/senior-gallery-link.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/sports-gallery-ro.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/sports-gallery-mc.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/sports-gallery.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/wedding-gallery-link-ro.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/wedding-gallery-link-mc.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/wedding-gallery-link.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/babies-gallery-button-ro.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/babies-gallery-button-mc.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/babies-gallery-button.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/families-gallery-button-ro.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/families-gallery-button-mc.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/families-gallery-button.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/misc-gallery-button-ro.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/misc-gallery-button-mc.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/misc-gallery-button.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/first-comm-gallery-ro.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/first-comm-gallery-mc.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/first-comm-gallery.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/dc-button-ro.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/dc-button-mc.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/dc-button.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/special-session-button-ro.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/special-session-button-mc.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/special-session-button.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/spires-photo.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/woodland-button-image.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/woodland-button-text.gif', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/spires-button-image.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/spires-button-text.gif')" background="vintagelacebrown.jpg" style="text-align: center">  
+
+<body bgcolor="#D5C5AA" onload="FP_preloadImgs(/*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/about-button-ro.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/babies-info-ro.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/senior-info-ro.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/weddings-info-ro.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/families-info-ro.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/sports-info-ro.gif', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/Misc-info-ro.gif', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/specials-button-ro.gif', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/Contact-button-ro.gif', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/about-me-link-ro.gif', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/babies-link-ro.gif', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/Seniors-link-ro.gif', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/families-link-ro.gif', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/weddings-link-ro.gif', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/sports-link-ro.gif', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/misc-link-ro.gif', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/senior-gallery-link-ro.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/senior-gallery-link-mc.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/senior-gallery-link.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/sports-gallery-ro.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/sports-gallery-mc.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/sports-gallery.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/wedding-gallery-link-ro.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/wedding-gallery-link-mc.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/wedding-gallery-link.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/babies-gallery-button-ro.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/babies-gallery-button-mc.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/babies-gallery-button.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/families-gallery-button-ro.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/families-gallery-button-mc.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/families-gallery-button.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/misc-gallery-button-ro.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/misc-gallery-button-mc.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/misc-gallery-button.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/first-comm-gallery-ro.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/first-comm-gallery-mc.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/first-comm-gallery.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/dc-button-ro.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/dc-button-mc.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/dc-button.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/special-session-button-ro.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/special-session-button-mc.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/special-session-button.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/spires-photo.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/woodland-button-image.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/woodland-button-text.gif', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/spires-button-image.jpg', /*url*/'file:///C:/Documents%20and%20Settings/Mark/My%20Documents/My%20Web%20Sites/Photo%20Website/images/spires-button-text.gif')" background="vintagelacebrown.jpg" style="text-align: center">
+
+<div align="center">
+	<table cellpadding="0" cellspacing="0" bgcolor="#B49868" width="637" height="573">
+		<!-- MSTableType="layout" -->
+		<tr>
+			<td valign="top" colspan="25" height="65">
+			<img border="0" src="web-banner.jpg" width="625" height="65" id="img8"></td>
+		</tr>
+		<tr>
+			<td valign="top" colspan="25" height="19">
+			<p align="center">
+			<img border="0" src="black-bar-long.gif" width="637" height="19"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td valign="top" rowspan="3" colspan="3">
+			<img border="0" src="information-banner.gif" width="201" height="70"></td>
+			<td valign="top" colspan="5">
+			<marquee bgcolor="#B49868" scrolldelay="125">Welcome to Mark Johnson Photography. For information click on a link to the left. To view galleries click on one of the buttons on the right. Thank You.</marquee>
+			&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td></td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td></td>
+			<td height="38">&nbsp;</td>
+			</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td height="17"></td>
+			</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td rowspan="9" colspan="17" bordercolorlight="#000000" bordercolordark="#000000">
+			<table cellpadding="0" cellspacing="0" border="0" width="100%" height="100%">
+				<!-- MSCellFormattingTableID="1" -->
+				<tr>
+					<td bgcolor="#000000" colspan="3" height="1">
+					<img alt="" width="1" height="1" src="MsSpacer.gif"></td>
+				</tr>
+				<tr>
+					<td bgcolor="#000000" width="1">
+					<img alt="" width="1" height="1" src="MsSpacer.gif"></td>
+					<td valign="middle" bordercolorlight="#000000" bordercolordark="#000000" width="100%">
+					<!-- MSCellFormattingType="content" -->
+					<p align="center">Providing you with an 
+					affordable option for all your photographic needs without 
+					compromising quality or attention to detail. Retouching and 
+					digital artwork are also my specialties which allows me 
+					to offer you that perfect portrait and still be able to 
+					maintain my low prices. </td>
+					<td bgcolor="#000000" height="100%" width="1">
+					<img alt="" width="1" height="1" src="MsSpacer.gif"></td>
+				</tr>
+				<tr>
+					<td bgcolor="#000000" colspan="3" height="1">
+					<img alt="" width="1" height="1" src="MsSpacer.gif"></td>
+				</tr>
+			</table>
+			</td>
+			<td height="15"></td>
+			</tr>
+		<tr>
+			<td></td>
+			<td valign="top">
+			<a href="http://www.markjohnsonphotos.com/about%20me%20page.htm">
+			<img border="0" src="about-me-link.gif" width="95" height="30" id="img1" onmouseout="FP_swapImgRestore()" onmouseover="FP_swapImg(1,1,/*id*/'img1',/*url*/'images/about-me-link-ro.gif')"></a></td>
+			<td>&nbsp;</td>
+			<td valign="top" rowspan="3">
+			<a href="http://www.markjohnsonphotos.com/weddings_page.htm">
+			<img border="0" src="weddings-link.gif" width="95" height="55" id="img5" onmouseout="FP_swapImgRestore()" onmouseover="FP_swapImg(1,1,/*id*/'img5',/*url*/'images/weddings-link-ro.gif')"></a></td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td height="37">&nbsp;</td>
+			</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td height="6"></td>
+			</tr>
+		<tr>
+			<td></td>
+			<td valign="top" rowspan="2">
+			<a href="http://www.markjohnsonphotos.com/baby%20page.htm">
+			<img border="0" src="Babies-link.gif" width="95" height="30" id="img2" onmouseout="FP_swapImgRestore()" onmouseover="FP_swapImg(1,1,/*id*/'img2',/*url*/'images/babies-link-ro.gif')"></a></td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td height="22">&nbsp;</td>
+			</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td valign="top" rowspan="4">
+			<a href="http://www.markjohnsonphotos.com/sports_page.htm">
+			<img border="0" src="sports-link.gif" width="95" height="55" id="img6" onmouseout="FP_swapImgRestore()" onmouseover="FP_swapImg(1,1,/*id*/'img6',/*url*/'images/sports-link-ro.gif')"></a></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td height="11"></td>
+			</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td height="5"></td>
+			</tr>
+		<tr>
+			<td></td>
+			<td valign="top">
+			<a href="http://www.markjohnsonphotos.com/seniors_info.htm">
+			<img border="0" src="Seniors-link.gif" width="95" height="30" id="img3" onmouseout="FP_swapImgRestore()" onmouseover="FP_swapImg(1,1,/*id*/'img3',/*url*/'images/Seniors-link-ro.gif')"></a></td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td height="34">&nbsp;</td>
+			</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td height="5"></td>
+			</tr>
+		<tr>
+			<td></td>
+			<td valign="top" rowspan="3" width="144">
+			<a href="http://www.markjohnsonphotos.com/family%20info.htm">
+			<img border="0" src="families-link.gif" width="95" height="40" id="img4" onmouseout="FP_swapImgRestore()" onmouseover="FP_swapImg(1,1,/*id*/'img4',/*url*/'images/families-link-ro.gif')"></a></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td height="5"></td>
+			</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td valign="top" rowspan="2" width="143">
+			<a href="http://www.markjohnsonphotos.com/misc%20page.htm">
+			<img border="0" src="misc-link.gif" width="95" height="35" id="img7" onmouseout="FP_swapImgRestore()" onmouseover="FP_swapImg(1,1,/*id*/'img7',/*url*/'images/misc-link-ro.gif')"></a></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td height="21"></td>
+			</tr>
+		<tr>
+			<td></td>
+			<td width="17"></td>
+			<td width="16"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td valign="top" rowspan="2" colspan="12">
+			<img border="0" src="galleries-banner.gif" width="169" height="57"></td>
+			<td></td>
+			<td></td>
+			<td height="14"></td>
+			</tr>
+		<tr>
+			<td></td>
+			<td valign="top" rowspan="10" colspan="4">
+	<embed src="http://apps.rockyou.com/rockyou.swf?instanceid=37430952&nopanel=true&ver=060721" quality="high" width="320" height="240" wmode="transparent" name="rockyou" align="middle" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"/><br>&nbsp;<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td></td>
+			<td height="51">&nbsp;</td>
+			</tr>
+		<tr>
+			<td></td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td valign="top" colspan="16">
+			<img border="0" src="black-bar-gallery.gif" width="220" height="19"></td>
+			<td height="23">&nbsp;</td>
+			</tr>
+		<tr>
+			<td></td>
+			<td>&nbsp;</td>
+			<td valign="middle" rowspan="4" colspan="2">
+			<p align="center"><b><font size="2">By Appointment Only</font></b></td>
+			<td valign="top" colspan="6">
+			<a href="http://www.markjohnsonphotos.com/Babies%20Gallery/index.html">
+			<img border="0" src="babies-gallery-button.jpg" width="60" height="26" id="img12" onmouseout="FP_swapImgRestore(); FP_swapImg(1,1,/*id*/'img12',/*url*/'images/babies-gallery-button.jpg')" onmouseover="FP_swapImg(1,1,/*id*/'img12',/*url*/'images/babies-gallery-button-ro.jpg');" onmousedown="FP_swapImg(1,1,/*id*/'img12',/*url*/'images/babies-gallery-button-mc.jpg')" onmouseup="FP_swapImg(1,1,/*id*/'img12',/*url*/'images/babies-gallery-button-ro.jpg')"></a></td>
+			<td>&nbsp;</td>
+			<td valign="top" colspan="3">
+			<a href="http://www.markjohnsonphotos.com/Seniors%20Gallery/index.html">
+			<img border="0" src="senior-gallery-link.jpg" width="60" height="26" id="img9" onmouseout="FP_swapImgRestore(); FP_swapImg(1,1,/*id*/'img9',/*url*/'images/senior-gallery-link.jpg')" onmouseover="FP_swapImg(1,1,/*id*/'img9',/*url*/'images/senior-gallery-link-ro.jpg');" onmousedown="FP_swapImg(1,1,/*id*/'img9',/*url*/'images/senior-gallery-link-mc.jpg')" onmouseup="FP_swapImg(1,1,/*id*/'img9',/*url*/'images/senior-gallery-link-ro.jpg')"></a></td>
+			<td>&nbsp;</td>
+			<td valign="top" colspan="4">
+			<a href="http://www.markjohnsonphotos.com/Weddings%20Gallery/index.html">
+			<img border="0" src="wedding-gallery-link.jpg" width="60" height="26" id="img11" onmouseout="FP_swapImgRestore(); FP_swapImg(1,1,/*id*/'img11',/*url*/'images/wedding-gallery-link.jpg')" onmouseover="FP_swapImg(1,1,/*id*/'img11',/*url*/'images/wedding-gallery-link-ro.jpg');" onmousedown="FP_swapImg(1,1,/*id*/'img11',/*url*/'images/wedding-gallery-link-mc.jpg')" onmouseup="FP_swapImg(1,1,/*id*/'img11',/*url*/'images/wedding-gallery-link-ro.jpg')"></a></td>
+			<td></td>
+			<td height="31">&nbsp;</td>
+			</tr>
+		<tr>
+			<td></td>
+			<td>&nbsp;</td>
+			<td valign="top" colspan="6">
+			<a href="http://www.markjohnsonphotos.com/Families%20Gallery/index.html">
+			<img border="0" src="families-gallery-button.jpg" width="60" height="26" id="img13" onmouseout="FP_swapImgRestore(); FP_swapImg(1,1,/*id*/'img13',/*url*/'images/families-gallery-button.jpg')" onmouseover="FP_swapImg(1,1,/*id*/'img13',/*url*/'images/families-gallery-button-ro.jpg');" onmousedown="FP_swapImg(1,1,/*id*/'img13',/*url*/'images/families-gallery-button-mc.jpg')" onmouseup="FP_swapImg(1,1,/*id*/'img13',/*url*/'images/families-gallery-button-ro.jpg')"></a></td>
+			<td>&nbsp;</td>
+			<td valign="top" colspan="3">
+			<a href="http://www.markjohnsonphotos.com/Sports%20Gallery/index.html">
+			<img border="0" src="sports-gallery.jpg" width="60" height="26" id="img10" onmouseout="FP_swapImgRestore(); FP_swapImg(1,1,/*id*/'img10',/*url*/'images/sports-gallery.jpg')" onmouseover="FP_swapImg(1,1,/*id*/'img10',/*url*/'images/sports-gallery-ro.jpg');" onmousedown="FP_swapImg(1,1,/*id*/'img10',/*url*/'images/sports-gallery-mc.jpg')" onmouseup="FP_swapImg(1,1,/*id*/'img10',/*url*/'images/sports-gallery-ro.jpg')"></a></td>
+			<td>&nbsp;</td>
+			<td valign="top" colspan="4">
+			<a href="http://www.markjohnsonphotos.com/Events%20Gallery/index.html">
+			<img border="0" src="misc-gallery-button.jpg" width="60" height="26" id="img14" onmouseout="FP_swapImgRestore(); FP_swapImg(1,1,/*id*/'img14',/*url*/'images/misc-gallery-button.jpg')" onmouseover="FP_swapImg(1,1,/*id*/'img14',/*url*/'images/misc-gallery-button-ro.jpg');" onmousedown="FP_swapImg(1,1,/*id*/'img14',/*url*/'images/misc-gallery-button-mc.jpg')" onmouseup="FP_swapImg(1,1,/*id*/'img14',/*url*/'images/misc-gallery-button-ro.jpg')"></a></td>
+			<td></td>
+			<td height="30">&nbsp;</td>
+			</tr>
+		<tr>
+			<td></td>
+			<td>&nbsp;</td>
+			<td valign="top" colspan="6">
+			<a href="http://www.markjohnsonphotos.com/First%20Communion%20Gallery/index.html">
+			<img border="0" src="first-comm-gallery.jpg" width="60" height="26" id="img15" onmouseout="FP_swapImgRestore(); FP_swapImg(1,1,/*id*/'img15',/*url*/'images/first-comm-gallery.jpg')" onmouseover="FP_swapImg(1,1,/*id*/'img15',/*url*/'images/first-comm-gallery-ro.jpg');" onmousedown="FP_swapImg(1,1,/*id*/'img15',/*url*/'images/first-comm-gallery-mc.jpg')" onmouseup="FP_swapImg(1,1,/*id*/'img15',/*url*/'images/first-comm-gallery-ro.jpg')"></a></td>
+			<td>&nbsp;</td>
+			<td valign="top" colspan="3">
+			<a href="http://www.markjohnsonphotos.com/Digital%20Composites%20Gallery/index.html">
+			<img border="0" src="dc-button.jpg" width="60" height="26" id="img16" onmouseout="FP_swapImgRestore(); FP_swapImg(1,1,/*id*/'img16',/*url*/'images/dc-button.jpg')" onmouseover="FP_swapImg(1,1,/*id*/'img16',/*url*/'images/dc-button-ro.jpg');" onmousedown="FP_swapImg(1,1,/*id*/'img16',/*url*/'images/dc-button-mc.jpg')" onmouseup="FP_swapImg(1,1,/*id*/'img16',/*url*/'images/dc-button-ro.jpg')"></a></td>
+			<td>&nbsp;</td>
+			<td valign="top" colspan="4">
+			<a href="http://www.markjohnsonphotos.com/Special%20Session%20Gallery/index.html">
+			<img border="0" src="special-session-button.jpg" width="60" height="26" id="img17" onmouseout="FP_swapImgRestore(); FP_swapImg(1,1,/*id*/'img17',/*url*/'images/special-session-button.jpg')" onmouseover="FP_swapImg(1,1,/*id*/'img17',/*url*/'images/special-session-button-ro.jpg');" onmousedown="FP_swapImg(1,1,/*id*/'img17',/*url*/'images/special-session-button-mc.jpg')" onmouseup="FP_swapImg(1,1,/*id*/'img17',/*url*/'images/special-session-button-ro.jpg')"></a></td>
+			<td></td>
+			<td height="30">&nbsp;</td>
+			</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td height="8"></td>
+			</tr>
+		<tr>
+			<td></td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td valign="top" colspan="7">
+			<img border="0" src="recent-weddings.gif" width="130" height="26"></td>
+			<td></td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td></td>
+			<td height="30">&nbsp;</td>
+			</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td valign="bottom" colspan="5" rowspan="2">
+			<p align="center"><font size="2">All Prices Subject to Change</font></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td height="17"></td>
+			</tr>
+		<tr>
+			<td></td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td valign="top" colspan="4">
+			<a href="http://www.markjohnsonphotos.com/Woodland%20Web%20Show/index.htm">
+			<img border="0" src="woodland-button-text.gif" width="60" height="26" id="img18" onmouseout="FP_swapImgRestore(); FP_swapImg(1,1,/*id*/'img18',/*url*/'images/woodland-button-text.gif')" onmouseover="FP_swapImg(1,1,/*id*/'img18',/*url*/'images/woodland-button-image.jpg');" onclick="FP_swapImg(1,1,/*id*/'img18',/*url*/'images/woodland-button-image.jpg')"></a></td>
+			<td>&nbsp;</td>
+			<td valign="top" colspan="4">
+			<a href="http://www.markjohnsonphotos.com/Spires%20web%20show/index.html">
+			<img border="0" src="spires-button-text.gif" width="60" height="26" id="img19" onmouseout="FP_swapImgRestore(); FP_swapImg(1,1,/*id*/'img19',/*url*/'images/spires-button-text.gif')" onmouseover="FP_swapImg(1,1,/*id*/'img19',/*url*/'images/spires-button-image.jpg');" onclick="FP_swapImg(1,1,/*id*/'img19',/*url*/'images/spires-button-image.jpg')"></a></td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td></td>
+			<td height="30">&nbsp;</td>
+			</tr>
+		<tr>
+			<td width="4"></td>
+			<td width="10"></td>
+			<td width="51"></td>
+			<td width="24"></td>
+			<td width="9"></td>
+			<td width="16"></td>
+			<td width="10"></td>
+			<td width="8"></td>
+			<td width="7"></td>
+			<td width="10"></td>
+			<td width="18"></td>
+			<td width="25"></td>
+			<td width="23"></td>
+			<td width="12"></td>
+			<td width="18"></td>
+			<td width="24"></td>
+			<td width="6"></td>
+			<td width="8"></td>
+			<td width="22"></td>
+			<td width="4"></td>
+			<td height="9" width="8"></td>
+		</tr>
+	</table>
+</div>
+
+<div align="center">
+	<table cellpadding="0" cellspacing="0" width="625" height="15">
+		<!-- MSTableType="layout" -->
+		<tr>
+			<td width="625" height="15" valign="top">
+			<p align="center"><font size="2">© 2006 Mark Johnson Photography ~ 8601 Firstgate 
+			Dr. Reynoldsburg, OH 43068 ~ (614) 406-2305&nbsp;</font></td>
+		</tr>
+	</table>
+	<table cellpadding="0" cellspacing="0" height="15" width="280">
+		<!-- MSTableType="layout" -->
+		<tr>
+			<td valign="middle" height="15" width="280">
+			<p align="center"> 
+			<a href="mailto:Info@markjohnsonphotos.com?subject=Information request">
+			<font size="2" color="#000000" id="id1" onmouseout="FP_changePropRestore()" onmouseover="FP_changeProp(/*id*/'id1',1,'style.color','#FFFFFF')">
+			Info@markjohnsonphotos.com</font></a></td>
+		</tr>
+	</table>
+	<table cellpadding="0" cellspacing="0" width="242">
+		<!-- MSTableType="layout" -->
+		<tr>
+			<td height="35" valign="top">
+			<p align="center">&nbsp;<img border="0" alt="Free Hit Counters" src="http://counter.rapidcounter.com/counter/1142980496/smplgld"; ALIGN="middle" HSPACE="4" VSPACE="2"><script src=http://counter.rapidcounter.com/script/1142980496></script></td>
+		</tr>
+	</table>
+	<p>&nbsp;</p>
+	<p align="center">
+	&nbsp;</div>
+<p>&nbsp;</p>
+<script language=JavaScript>
+<!--
+
+//Disable right mouse click Script
+//By Maximus (maximus@nsimail.com) w/ mods by DynamicDrive
+//For full source code, visit http://www.dynamicdrive.com
+
+var message="All images © Mark Johnson Photography";
+
+///////////////////////////////////
+function clickIE4(){
+if (event.button==2){
+alert(message);
+return false;
+}
+}
+
+function clickNS4(e){
+if (document.layers||document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+alert(message);
+return false;
+}
+}
+}
+
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS4;
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=clickIE4;
+}
+
+document.oncontextmenu=new Function("alert(message);return false")
+
+// --> 
+</script>
+</body>
+
+</html>

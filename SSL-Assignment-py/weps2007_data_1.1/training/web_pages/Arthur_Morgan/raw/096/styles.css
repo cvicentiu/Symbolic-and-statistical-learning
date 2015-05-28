@@ -1,0 +1,121 @@
+body, p, table, tr, td { 
+	font-family: Arial, Helvetica, sans-serif; font-size: 11px; color:#006;
+	}
+	
+table.chap {text-align:justify;}
+	
+a {font-family: Arial, Helvetica, sans-serif;}
+a:link {color:#036;}
+a:active {color:#000000;}
+a:visited {color:#666666;}
+a:hover {color:#000000; text-decoration:none;}
+
+td.front {border-bottom: 1px dotted #CCC; border-top: 1px dotted #CCC; padding: 5px;}
+
+img.front {border: 1px solid #333;}
+
+h1 {font:bold 1.6em "Times New Roman", Times, serif;color:#333333;background-color:#ffffff;margin-bottom:4px;padding-bottom:0px;margin-top:0px;padding-top:0px;}
+h2 {font:italic bold 1.5em Times, "Times New Roman", serif; margin-bottom:0px; color:#003366;background-color:#ffffff;}
+h2 a:link {font-color: #036; }
+h3 {font:bold 1.2em Times, "Times New Roman", serif; margin-bottom:0px; color:#000000;background-color:#ffffff;}
+
+div#topnav {
+ width: 691px;
+ color: #FFF;
+ text-align:center;
+}
+div#topnav ul {
+ margin: 0px;
+ padding: 0px;
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: small;
+ color: #FFF;
+
+ font-weight: bold;
+ 
+}
+div#topnav li {
+ list-style-type: none;
+ display: inline;
+ font-size: 10px;
+}
+div#topnav li a {
+ font-size: 10px;
+ text-decoration: none;
+ padding-left: 8px;
+ padding-right: 8px;
+ color: #FFF;
+}
+
+div#topnav li a:visited {
+ color: #FFF;
+ font-weight: bold;
+ text-decoration:none;
+ padding-left: 8px;
+ padding-right: 8px;
+}
+div#topnav li a:hover {
+ font-weight: bold;
+ color: #FFF;
+ text-decoration:underline;
+ padding-left: 8px;
+ padding-right: 8px;
+}
+
+
+div#navbar2 {
+ margin: 0px;
+ padding: 5px;
+ width: 150px;
+ background-color: #FFF;
+ text-align:left;
+}
+div#navbar2 ul {
+ margin: 0px;
+ padding: 0px;
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: small;
+ color: #006;
+ white-space: nowrap;
+ font-weight: bold;
+ line-height:17px;
+ 
+}
+div#navbar2 li {
+ list-style-type: none;
+}
+div#navbar2 li a {
+ font-size: 11px;
+ text-decoration: none;
+ color: #000;
+}
+
+div#navbar2 li a:visited {
+ color: #000;
+ font-weight: bold;
+ text-decoration:none;
+}
+div#navbar2 li a:hover {
+ color: #000;
+ background-color: #CCF;
+ border: dotted 1px #666;
+ margin: 0px;
+ padding: 0px;
+}
+
+.content {font:0.75em/1.5em Verdana,Arial,sans-serif; color:#333333;}
+
+.contact {font:0.68em Verdana,Arial,sans-serif; color:#333333;}
+.contact_title {font-weight:bold; font-size: 1.25em; color:#003366;}
+
+div.ghost { display: none; }
+
+.utp_search {font:0.75em Verdana,Arial,sans-serif; color:#333333;}
+
+.dbpagehead {font:24px "Times New Roman", Times, serif; background-color:#CC9; color:#006;}
+
+.copyright {font:10px Arial,sans-serif; color:#FFF;background-color:#006; width:700px; height:30px; line-height:14px; padding:5px;}
+.copyright a:link {color:#FFF;text-decoration:none;}
+.copyright a:active {color:#FFF;text-decoration:underline;}
+.copyright a:visited {color:#FFF;text-decoration:none;}
+.copyright a:hover {color:#FFF;text-decoration:underline;}

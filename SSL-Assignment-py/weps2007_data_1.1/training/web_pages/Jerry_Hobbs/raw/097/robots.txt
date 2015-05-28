@@ -1,0 +1,25 @@
+User-agent: sliccbot
+# sliccware rule - allow all
+Disallow:
+
+User-agent: *
+# Prevent anything related to searching
+Disallow: /resources_search_results.html
+Disallow: /siteSearch
+Disallow: /homepage/resources_search_results.html
+# Disallow the advanced search page
+Disallow: /advanced_search_criteria.html
+Disallow: /resources_advanced_search_criteria.html
+#Stop deep catalog results
+Disallow: /topvideo/cat?
+Disallow: /topstories/?b_start
+# try and stop them from following into old stories
+Disallow: /?b_start
+Disallow: /?can_view
+Disallow: /resources_hbe11up.js
+# Prevent robots from following mislinks caused by producers
+Disallow: /test_files
+# URLs that start with /vts1/ represent manager server access, so disallow
+Disallow: /vts1
+# Prevent robots from abusing the /content/ traversal magic
+Disallow: /content

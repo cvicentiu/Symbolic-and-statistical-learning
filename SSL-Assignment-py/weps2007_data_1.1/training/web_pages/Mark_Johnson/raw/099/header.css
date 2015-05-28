@@ -1,0 +1,302 @@
+/* HEADER STYLE */
+
+	.headerMenu {font: bold 10px verdana; color: #000000; line-height: 14px; text-decoration: none;}
+	a.headerMenu {font: bold 10px verdana; color: #000000; line-height: 14px; text-decoration: none;}
+	a.headerMenu:active {font: bold 10px verdana; color: #ed1c24; line-height: 14px; text-decoration: none;}
+	a.headerMenu:visited {font: bold 10px verdana; color: #000000; line-height: 14px; text-decoration: none;}
+	a.headerMenu:hover {font: bold 10px verdana; color: #ed1c24; line-height: 14px; text-decoration: underline;}
+
+.headerAreaLogin {
+	font: 8pt Verdana;
+	margin: 0 0 15px 0;
+	padding-top: 10px;
+}
+.headerAreaLogin a, .headerAreaLogin a:visited {
+	color: #ed1c24;
+}
+.headerAreaLogin a:hover {
+	color: #8C0000;
+}
+.headerLogo {
+	background-repeat: no-repeat;
+	background-color: #ffcc00;
+}
+.headerLogoBottom, .headerTabLinksBottom {
+	bottom: 0% !important;
+	vertical-align: bottom !important;
+}
+.headerLogoBottom a img {
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+.headerLogoTop
+{
+	top: 0%;
+}
+.headerSearchLabel p {
+	font: bold 8pt verdana;
+	line-height: 8pt;
+	margin-top: 4px;
+	margin-bottom: 0px;
+	text-align: right;
+	color: #ed1c24;
+}
+.headerSearchLinks a {
+	font: 7pt verdana;
+	margin-top: 2px;
+	color: #ed1c24;
+}
+.headerSearchLinks a:hover {
+	color: #8C0000;
+}
+.headerSearchSet input, .headerSearchSet select {
+	margin-top: 1px;
+	margin-bottom: 0px;
+}
+.headerNoStyleLink
+{
+	text-decoration: none;
+	color: #000000;
+}
+.headerPromo {
+	height: 78px;
+	font: 7pt Verdana;
+	padding: 0 7px 0 7px 0;
+	margin-right: 10px;
+}
+.headerPromo a, .headerPromo a:visited {
+	color: #ed1c24;
+	font-weight: bold;
+}
+.headerPromo a:hover {
+	color: #8C0000;
+}
+.headerShopppingBag {
+	height: 60px;
+	width: 130px;
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.headerShopppingBag .text {
+	height: 60px;
+	width: 125px;
+ 	font: 7pt Verdana;
+	background-repeat: no-repeat;
+	background-position: right top;
+	text-align: left;
+	background-color: #ffcc00;
+	padding: 0px 0 0 0px;
+}
+.headerShopppingBag .text a img{
+ 	border: 0;
+	margin-top: 5px;
+}
+.headerShopppingBag .text a {
+ 	font-weight: bold;
+	color: #ed1c24;
+	text-decoration: underline;
+}
+.headerShopppingBag a {
+	text-decoration: underline;
+}
+.headerShopppingBag a:hover {
+	color: #fff;
+}
+.headerShopperAccountInfo {
+	text-align: right;
+	font: bold 7pt verdana;
+	color: #ffffff;
+	vertical-align: middle;
+	background-color: #ed1c24;
+}
+.headerShopperAccountInfo a, .headerShopperAccountInfo a:visited  {color: #ffffff;}
+.headerShopperAccountInfo a:hover {color: #ffcc00;}
+
+.headerTabLinks 
+{
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	vertical-align: bottom;	
+	background-repeat: repeat-x;
+}
+.headerTabLinks ul {
+	margin: 0;
+	padding: 1px;
+	margin-bottom: -1px;
+	width: 963px;
+}
+.headerTabLinks ul li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;
+}
+.headerTabLinks ul a {
+	font: bold 12px verdana;
+	float: left;
+	display: block;
+	text-decoration: none !important;
+	padding: 2px 7px 2px 7px;
+	color: #000 !important;
+	border-top: 0px;
+	border-right: 0px;
+}
+.headerTabLinks ul a:hover {
+	color: #ed1c24 !important;
+}
+
+
+
+.headerTabLinks ul.headerTab1 li.headerTab1,
+.headerTabLinks ul.headerTabMusic li.headerTabMusic,
+.headerTabLinks ul.headerTabDigital li.headerTabDigital,
+.headerTabLinks ul.headerTabClassical li.headerTabClassical,
+.headerTabLinks ul.headerTabVideo li.headerTabVideo,
+.headerTabLinks ul.headerTabBooks li.headerTabBooks,
+.headerTabLinks ul.headerTabGames li.headerTabGames,
+.headerTabLinks ul.headerTabToys li.headerTabToys,
+.headerTabLinks ul.headerTabPosters li.headerTabPosters,
+.headerTabLinks ul.headerTabElectronics li.headerTabElectronics,
+.headerTabLinks ul.headerTabAccessories li.headerTabAccessories,
+.headerTabLinks ul.headerTabGiftCard li.headerTabGiftCard,
+.headerTabLinks ul.headerTabPodcast li.headerTabPodcast,
+.headerTabLinks ul.headerTabSales li.headerTabSales,
+.headerTabLinks ul.headerTabSpecials li.headerTabSpecials {
+	background-color: white;
+	margin-left: -2px;
+	border-top: 1px solid #DDDDDD;
+	border-left: 1px solid #DDDDDD;
+	border-right: 1px solid #DDDDDD;
+}
+.headerTabLinks ul.headerTab1 li.headerTab1 a,
+.headerTabLinks ul.headerTabMusic li.headerTabMusic a,
+.headerTabLinks ul.headerTabDigital li.headerTabDigital a,
+.headerTabLinks ul.headerTabClassical li.headerTabClassical a,
+.headerTabLinks ul.headerTabVideo li.headerTabVideo a,
+.headerTabLinks ul.headerTabBooks li.headerTabBooks a,
+.headerTabLinks ul.headerTabGames li.headerTabGames a,
+.headerTabLinks ul.headerTabToys li.headerTabToys a,
+.headerTabLinks ul.headerTabPosters li.headerTabPosters a,
+.headerTabLinks ul.headerTabElectronics li.headerTabElectronics a,
+.headerTabLinks ul.headerTabAccessories li.headerTabAccessories a,
+.headerTabLinks ul.headerTabGiftCard li.headerTabGiftCard a,
+.headerTabLinks ul.headerTabPodcast li.headerTabPodcast a,
+.headerTabLinks ul.headerTabSales li.headerTabSales a,
+.headerTabLinks ul.headerTabSpecials li.headerTabSpecials a {
+	color: #ed1c24 !important;
+}
+
+.headerTabLinks ul li.headerTabLast a {
+	margin-left: 6px;
+	border: 1px solid #fff;
+	border-bottom: 0px solid #aaa;
+	background-color: #EEEEEE;
+}
+
+
+.searchButton
+{
+	border: 0px solid black;
+	background-repeat: no-repeat;
+}
+.searchButtonOver
+{
+	border: 0px solid black;
+	background-repeat: no-repeat;
+}
+.searchButtonDown
+{
+	border: 0px solid black;
+	background-repeat: no-repeat;
+}
+.hiddenPreloader {
+	display: none;
+}
+.shoppingbagAccount {font: bold 10px verdana; color: #FFCC00; line-height: 12px; text-decoration: none;}
+	a.shoppingbagAccount {font: bold 10px verdana; color: #FFCC00; line-height: 12px; text-decoration: none;}
+	a.shoppingbagAccount:active {font: bold 10px verdana; color: #ed1c24; line-height: 12px; text-decoration: none;}
+	a.shoppingbagAccount:visited {font: bold 10px verdana; color: #FFCC00; line-height: 12px; text-decoration: none;}
+	a.shoppingbagAccount:hover {font: bold 10px verdana; color: #ed1c24; line-height: 12px; text-decoration: underline;}
+	.shoppingbagMenu {font: bold 10px verdana; color: #FFFFFF; line-height: 14px;}
+	.shoppingbagMenu2 {font: bold 10px verdana; color: #FFFFFF; line-height: 12px; padding-left:30px;}
+	INPUT { background-color: #FFFFFF; color: black; font-family: verdana; font-size: 11px; }
+	SELECT { background-color: #FFFFFF; color: black; font-family: verdana; font-size: 10px; }
+
+
+/* FOOTER STYLES */
+
+.footerRedBar {
+	text-align: center;
+	padding: 2px 0 2px 0;
+	margin: 0 0 0 0;
+	color: #ffffff;
+	font: 7pt/15pt verdana;
+	background-color: #ED1C24;
+}
+.footerRedBar a, .footerRedBar a:visited { color: #ffffff; font: normal 7pt verdana; }
+.footerRedBar a:hover { color: #ffcc00; }
+.footerYellowBar {
+	background-color: #ffcc00;
+	text-align: center;
+	font: 8pt verdana;
+	padding: 3px 0 3px 0;
+	margin: 0 0 0 0;
+	border-top: 1px solid #ED1C24;
+	border-bottom: 1px solid #ED1C24;
+}
+.footerYellowBar a {
+	font: 8pt verdana;
+	color: #ed1c24;
+}
+.footerYellowBar a:hover {
+	font: 8pt verdana;
+	color: #ffffff;
+}
+.footerYellowBarSearchText
+{
+	font: 8pt verdana;
+}
+.footerWhiteBar {
+	text-align: center;
+	padding: 6px 0 6px 0;
+	font: 8pt/11pt verdana;
+}
+.footerWhiteBar a, .footerWhiteBar a:visited {
+	color: #ed1c24;
+}
+.footerWhiteBar a:hover
+{
+	color: #8c0000;
+}
+.footerSearchButton
+{
+	border: 0px solid black;
+	background-repeat: no-repeat;
+}
+
+.footerSearchButtonOver
+{
+	border: 0px solid black;
+	background-repeat: no-repeat;
+}
+
+.footerSearchButtonDown
+{
+	border: 0px solid black;
+	background-repeat: no-repeat;
+}
+
+.footerCurrencySelect, .footerCopyrightText
+{
+	font: 8pt verdana;
+}
+	.footerMenu {font: bold 10px verdana; color: #666666; line-height: 14px; text-decoration: none;}
+	.footerMenuStore {font: bold 10px verdana; color: #000000; line-height: 14px; text-decoration: none;}
+	a.footerMenu {font: bold 10px verdana; color: #666666; line-height: 14px; text-decoration: none;}
+	a.footerMenuStore {font: bold 10px verdana; color: #000000; line-height: 14px; text-decoration: none;}
+	a.footerMenu:active, a.footerMenuStore:active {font: bold 10px verdana; color: #ed1c24; line-height: 14px; text-decoration: none;}
+	a.footerMenu:visited{font: bold 10px verdana; color: #666666; line-height: 14px; text-decoration: none;}
+	a.footerMenuStore:visited {font: bold 10px verdana; color: #000000; line-height: 14px; text-decoration: none;}
+	a.footerMenu:hover, a.footerMenuStore:hover {font: bold 10px verdana; color: #ed1c24; line-height: 14px; text-decoration: underline;}
+	.footerMenu2 {font: 10px verdana; color: #666666; line-height: 14px; 
+		text-decoration: none;text-align: center;}

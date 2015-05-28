@@ -1,0 +1,169 @@
+/* Main Menu Styles for drop down */
+	#menu1Container {
+		border : 0; /* to visualize total height of menu containment box assign border : solid 1px; */
+	}	
+	#menu1Container img {
+		 vertical-align: top; /* style required to properly align arrow for Moz */
+	}
+		
+	#menu2Container {
+		border : 0;
+	}
+	#menu2Container img {
+		 vertical-align: top; /* style required to properly align arrow for Moz */
+	}
+	
+	#menu3Container {
+		border : 0;
+	}
+	#menu3Container img {
+		 vertical-align: top; /* style required to properly align arrow for Moz */
+	}
+	
+	#menu4Container {
+		border : 0;
+	}
+	#menu4Container img {
+		 vertical-align: top; /* style required to properly align arrow for Moz */
+	}
+	
+	#menu5Container {
+		border : 0;
+	}
+	#menu5Container img {
+		 vertical-align: top; /* style required to properly align arrow for Moz */
+	}
+	
+	#menu6Container {
+		border : 0;
+	}
+	#menu6Container img {
+		 vertical-align: top; /* style required to properly align arrow for Moz */
+	}
+	
+	#menu7Container {
+		border : 0;
+	}
+	#menu7Container img {
+		 vertical-align: top; /* style required to properly align arrow for Moz */
+	}
+	
+	#menu8Container {
+		border : 0;
+	}
+	#menu8Container img {
+		 vertical-align: top; /* style required to properly align arrow for Moz */
+	}
+	
+	#menu9Container {
+		border : 0;
+	}
+		
+	#menu10Container {
+		border : 0;
+	}
+	
+
+	
+/* global drop-down alignment & font attributes */
+	.menu .options {
+		margin:0;
+		padding:0;
+		border: 0;
+		background-color:#ccc;
+		font: 11px Arial, Helvetica, sans-serif;
+		text-transform : capitalize;
+	}
+	
+	.menuQuicklinks .options {
+		font: 11px Arial, Helvetica, sans-serif;
+		text-transform : capitalize;
+	}
+	
+	.menuDirectories .options {
+		font: 11px Arial, Helvetica, sans-serif;
+		text-transform : capitalize;
+	}
+
+	/*drop-down menu attributes */	
+
+	a.menuoptions {
+
+		color: #666;
+		padding: 5px 0 5px 7px;
+		border-bottom: solid 1px #e6e6e6;		
+		background-color: #ccc;
+		display : block;
+		text-decoration:none;
+
+	}
+	a.menuoptions:hover {
+		background-color:#ccc;
+		color:#cc0000;
+		text-decoration:none;
+
+	}
+	
+	
+	
+	
+	/*Quicklinks drop-down menu attributes */	
+	#quicklinksLinks .qlLink {
+		color: #fff;
+		padding: 5px 0 5px 10px;
+		border-bottom: solid 1px #d08787;
+		text-decoration:none;
+		text-transform : capitalize;
+		background-color: #a10f0f;
+		display : block;
+		width : 144px;
+	}
+	
+	
+	#quicklinksLinks a:hover {
+		background-color:#a10f0f;
+		color:#000;
+	}
+
+	#quicklinksLinks img {
+		margin-left:-10px;
+	}
+	
+	#quicklinksLinks a img {
+		 vertical-align: bottom;
+	}
+	
+	/*Directories drop-down menu attributes */	
+	#directoriesLinks .dLink {
+		color: #fff;
+		padding: 5px 0 5px 10px;
+		border-bottom: solid 1px #d08787;
+		text-decoration:none;
+		text-transform : capitalize;
+		background-color: #a10f0f;
+		display : block;
+		width : 144px;
+	}
+	
+	#directoriesLinks a:hover {
+		background-color:#a10f0f;
+		color:#000;
+	}
+
+	#directoriesLinks img {
+		margin-left:-10px;
+	}
+	
+	body > #menu10Container { 
+		top:385px; /* hidden from IE, to fix position alignment of dhtml menu for quicklinks */
+	} 
+	
+	#directoriesLinks a img {
+		 vertical-align: top;
+		 
+	}
+	
+	a.clearimage
+	{
+		background-color:Transparent;
+	}

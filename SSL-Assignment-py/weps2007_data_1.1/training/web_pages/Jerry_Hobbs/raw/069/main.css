@@ -1,0 +1,426 @@
+#container {
+	width: 975px;
+	}
+#movie_23
+{
+	width: 975px;
+	height: 33px;
+	background: #fff;
+	padding-top: 5px;
+	position: relative;
+}
+#movie_23 img
+{
+	border: 0;
+	margin: 0;
+}
+#sciam {
+	width: 975px;
+	height: 29px;
+	background: #d0d6dc;
+	padding-top: 5px;
+	position: relative;
+	}
+	#sciam #magazine {
+		position: absolute;
+		top: 0px;
+		left: 801px;
+		}
+	#sciam .ctn {
+		border: 1px solid #8695a4;
+		background: #FFFFFF;
+		width: 973px;
+		height: 27px;
+		}
+		#sciam .ctn .logoLeft {
+			float: left;
+			border-right: 1px solid #cad1da;
+			}
+		#sciam .ctn .logoRight {
+			float: right;
+			border-left: 1px solid #cad1da;
+			}
+		#sciam .ctn .anchor {
+			float: left;
+			height: 21px;
+			padding: 6px 20px 0px 20px;
+			border-right: 1px solid #cad1da;
+			color: #3366cc;
+			font-weight: bold;
+			}
+		#sciam .ctn .anchor:hover {
+			background: #e9eef3;
+			text-decoration: none;
+			}
+#header {
+	width: 975px;
+	height: 128px;
+	background: url(../gui/header/_bg.gif) repeat-x;
+	/*padding-top: 5px;*/
+	}
+	#menu {
+		width: 975px;
+		background: url(../gui/header/_bg_menu.gif) repeat-x;
+		height: 28px;
+		}
+		#menu #menuLeft {
+			float:left;
+			width: 120px;
+			height: 28px;
+			}
+		#menu #menuRight {
+			float: right;
+			height: 28px;
+			}
+			#menu #menuRight form {
+				margin: 0px;
+				padding: 0px 0px 0px 10px;
+				}
+			#menu #menuRight #searchForm #search {
+				width: 100px;
+				}
+	#top {
+		padding-top: 10px;
+		}
+		#logo {
+			float: left;
+			width: 225px;
+			height: 90px;
+			}
+		#ad_728x90 {
+			float: right;
+			width: 728px;
+			padding: 0px 10px 0px 0px;
+			height: 90px;
+			}
+#content {
+	margin-top: 10px;
+	width: 975px;
+	}
+#footer {
+	width: 975px;
+	padding: 20px 0px 10px 0px;
+	text-align: center;
+	color: #999999;
+	}
+div.clear {
+	clear: both;
+	height: 0px;
+	float: none;
+	}
+	div.clear hr {
+		display: none;
+		}
+#miniPlayer {
+	background: #f5f6f8;
+	width: 180px;
+	}
+	#miniPlayer .brdBtm {
+		background: url(../gui/themes/gray_soft-blue/_brd_btm.gif) bottom repeat-x;
+		}
+	#miniPlayer .c3 {
+		background: url(../gui/themes/gray_soft-blue/_c3.gif) bottom left no-repeat;
+		}
+	#miniPlayer .c4 {
+		background: url(../gui/themes/gray_soft-blue/_c4.gif) bottom right no-repeat;
+		}
+	#miniPlayer #MPplaylist {
+		padding: 10px;
+		}
+		#miniPlayer #MPplaylist .clip {
+			padding: 0px 0px 0px 23px;
+			background: url(../gui/camera.gif) no-repeat 0px 1px;
+			}
+		#miniPlayer #MPplaylist .date {
+			font-size: 10px;
+			color: #5e6b77;
+			}
+		#miniPlayer #MPplaylist .separator {
+			height: 2px;
+			margin: 5px 0px 5px 0px;
+			background: url(../gui/themes/gray_soft-blue/_separator1.gif) repeat-x;
+			}
+		#miniPlayer #MPplaylist .separator hr {
+			display: none;
+			}
+#smenu {
+	width: 131px;
+	}
+	#smenu .L1 {
+		width: 131px;
+		background: url(../gui/smenu/l1_off.gif) center left no-repeat;
+		}
+	#smenu .L1 a {
+			display: block;
+			width: 117px;
+			padding: 5px 7px 5px 7px;
+			color: #FFFFFF;
+			background: url(../gui/smenu/l1_off_btm.gif) bottom left no-repeat;
+			}
+		#smenu .L1 .bTop {
+			width: 131px;
+			background: url(../gui/smenu/l1_off_top.gif) top left no-repeat;
+			}
+	#smenu .L1Active {
+		width: 131px;
+		background: url(../gui/smenu/l1_active_off.gif) center right no-repeat;
+		}
+		#smenu .L1Active a {
+			display: block;
+			width: 117px;
+			padding: 5px 7px 5px 7px;
+			color: #FFFFFF;
+			background: url(../gui/smenu/l1_active_off_btm.gif) bottom right no-repeat;
+			}
+		#smenu .L1Active .bTop {
+			width: 131px;
+			background: url(../gui/smenu/l1_active_off_top.gif) top right no-repeat;
+			}
+	#smenu .L2 {
+		background: url(../gui/smenu/l2_off.gif) center right no-repeat;
+		}
+		#smenu .L2 a {
+			display: block;
+			padding: 5px 7px 5px 12px;
+			color: #FFFFFF;
+			background: url(../gui/smenu/l2_off_btm.gif) bottom right no-repeat;
+			}
+		#smenu .L2 .bTop {
+			background: url(../gui/smenu/l2_off_top.gif) top right no-repeat;
+			}
+	#smenu .L2Active {
+		width: 131px;
+		background: url(../gui/smenu/l2_off.gif) center right no-repeat;
+		}
+		#smenu .L2Active a {
+			display: block;
+			width: 112px;
+			padding: 5px 7px 5px 12px;
+			color: #FFFFFF;
+			font-weight: bold;
+			background: url(../gui/smenu/l2_off_btm.gif) bottom right no-repeat;
+			}
+		#smenu .L2Active .bTop {
+			width: 131px;
+			background: url(../gui/smenu/l2_off_top.gif) top right no-repeat;
+			}
+	#smenu .L3 {
+		width: 131px;
+		background: url(../gui/smenu/l2_off.gif) center right no-repeat;
+		}
+		#smenu .L3 a {
+			display: block;
+			width: 107px;
+			padding: 5px 7px 5px 17px;
+			color: #FFFFFF;
+			background: url(../gui/smenu/l2_off_btm.gif) bottom right no-repeat;
+			}
+		#smenu .L3 .bTop {
+			width: 131px;
+			background: url(../gui/smenu/l2_off_top.gif) top right no-repeat;
+			}
+	#smenu .L3Active {
+		width: 131px;
+		background: url(../gui/smenu/l2_off.gif) center right no-repeat;
+		}
+		#smenu .L3Active a {
+			display: block;
+			width: 107px;
+			padding: 5px 7px 5px 17px;
+			color: #FFFFFF;
+			font-weight: bold;
+			background: url(../gui/smenu/l2_off_btm.gif) bottom right no-repeat;
+			}
+		#smenu .L3Active .bTop {
+			width: 131px;
+			background: url(../gui/smenu/l2_off_top.gif) top right no-repeat;
+			}
+.box1 {
+	/* margin-top: 10px; */
+	border-top: 10px #FFFFFF solid;
+	background: #f5f6f8 url(../gui/themes/gray_soft-blue/_bg.gif) repeat-x;
+	}
+	.box1 .brdBtm {
+		background: url(../gui/themes/gray_soft-blue/_brd_btm.gif) bottom repeat-x;
+		}
+	.box1 .c3 {
+		background: url(../gui/themes/gray_soft-blue/_c3.gif) bottom left no-repeat;
+		}
+	.box1 .c4 {
+		background: url(../gui/themes/gray_soft-blue/_c4.gif) bottom right no-repeat;
+		}
+	.box1 .title {
+		background: url(../gui/themes/gray_soft-blue/_bg_title.gif) repeat-x;
+		height: 25px;
+		}
+	.box1 .boxContent {
+		padding: 10px;
+		font-family: Arial, Verdana, Helvetica, sans-serif;
+		font-size: 10px;
+		}
+.box2 {
+	/* margin-top: 10px; */
+	border-top: 10px #FFFFFF solid;
+	background: #f6f2e6 url(../gui/themes/beige/_bg.gif) repeat-x;
+	}
+	.box2 .brdBtm {
+		background: url(../gui/themes/beige/_brd_btm.gif) bottom repeat-x;
+		}
+	.box2 .c3 {
+		background: url(../gui/themes/beige/_c3.gif) bottom left no-repeat;
+		}
+	.box2 .c4 {
+		background: url(../gui/themes/beige/_c4.gif) bottom right no-repeat;
+		}
+	.box2 .title {
+		background: url(../gui/themes/beige/_bg_title.gif) repeat-x;
+		height: 25px;
+		}
+	.box2 .boxContent {
+		padding: 10px;
+		}
+		.box2 .boxContent table { /* for MSIE 5 on Windows 98 */
+			font-size: 11px;
+			}
+.box3 {
+	border-top: 10px #FFFFFF solid;
+	background: #e1f0f9 url(../gui/themes/cyan_gray/_bg.gif) repeat-x;
+	}
+	.box3 .brdBtm {
+		background: url(../gui/themes/cyan_gray/_brd_btm.gif) bottom repeat-x;
+		}
+	.box3 .c3 {
+		background: url(../gui/themes/cyan_gray/_c3.gif) bottom left no-repeat;
+		}
+	.box3 .c4 {
+		background: url(../gui/themes/cyan_gray/_c4.gif) bottom right no-repeat;
+		}
+	.box3 .title {
+		background: url(../gui/themes/cyan_gray/_bg_title.gif) repeat-x;
+		height: 25px;
+		}
+	.box3 .boxContent {
+		padding: 10px;
+		}
+.box4 {
+	/* margin-top: 10px; */
+	border-top: 10px #FFFFFF solid;
+	background: #e5ebff url(../gui/themes/light-violet_gray/_bg.gif) repeat-x;
+	}
+	.box4 .brdBtm {
+		background: url(../gui/themes/light-violet_gray/_brd_btm.gif) bottom repeat-x;
+		}
+	.box4 .c3 {
+		background: url(../gui/themes/light-violet_gray/_c3.gif) bottom left no-repeat;
+		}
+	.box4 .c4 {
+		background: url(../gui/themes/light-violet_gray/_c4.gif) bottom right no-repeat;
+		}
+	.box4 .title {
+		background: url(../gui/themes/light-violet_gray/_bg_title.gif) repeat-x ;
+		height: 25px;
+		}
+	.box4 .boxContent {
+		padding: 10px;
+		}
+.box5 {
+	/* margin-top: 10px; */
+	width: 208px;
+	height: 220px;
+	background: #e8e7bb url(../gui/themes/khaki/_bg.gif) 0px 115px repeat-x;
+	}
+	.box5 .brdBtm {
+		background: url(../gui/themes/khaki/_brd_btm.gif) bottom repeat-x;
+		}
+	.box5 .c3 {
+		background: url(../gui/themes/khaki/_c3.gif) bottom left no-repeat;
+		}
+	.box5 .c4 {
+		background: url(../gui/themes/khaki/_c4.gif) bottom right no-repeat;
+		}
+	.box5 .title {
+		height: 115px;
+		}
+	.box5 .boxContent {
+		padding: 10px;
+		color: #81843b;
+		}
+.box6 {
+	border-top: 10px #FFFFFF solid;
+	background: #a2a2a2 url(../gui/themes/dark-gray/_bg.gif) repeat-x;
+	}
+	.box6 .brdBtm {
+		background: url(../gui/themes/dark-gray/_brd_btm.gif) bottom repeat-x;
+		}
+	.box6 .c3 {
+		background: url(../gui/themes/dark-gray/_c3.gif) bottom left no-repeat;
+		}
+	.box6 .c4 {
+		background: url(../gui/themes/dark-gray/_c4.gif) bottom right no-repeat;
+		}
+	.box6 .title {
+		background: url(../gui/themes/dark-gray/_bg_title.gif) repeat-x;
+		height: 25px;
+		}
+	.box6 .boxContent {
+		padding: 10px;
+		}
+#quizMe {
+	width: 180px;
+	}
+	#quizMe .boxContent #quizMeForm {
+		margin-top: 10px;
+		}
+
+/*======================================*/
+#smenu_smart {
+	background: #6470A1;
+	border-bottom: 5px solid #FFFFFF;
+	width: 100%;
+	font-size: 11px;
+	font-weight: normal;
+	}
+	#smenu_smart ul { margin:0px; margin-left:0px; padding:0px; }
+	#smenu_smart ul li {
+		list-style: none;
+		padding: 0px;
+		margin: 0px;
+		background: url(../gui/smenu/l1_off.gif) center left no-repeat;
+		border-bottom: 1px solid #6C79AD;
+		}
+	#smenu_smart ul li a { width: 120px; background: url(../gui/smenu/l1_off_btm.gif) bottom left no-repeat; }
+	#smenu_smart ul li ul li a { width: 115px; padding-left: 10px; color: white }
+	#smenu_smart ul li ul li ul li a { width: 105px; padding-left: 20px; }
+	#smenu_smart ul li ul li ul li ul li a { width: 95px; padding-left: 30px; }
+	#smenu_smart ul li ul li ul li ul li ul li a { width: 80px; padding-left: 40px; }
+	#smenu_smart ul li ul li ul li ul li ul li ul li a { width: 70px; padding-left: 50px; }
+	#smenu_smart .on ul li {  color: white; background: #CC0000; font-weight: bold; border-bottom: 0px;  }
+	#smenu_smart .on ul li a { background: url(../gui/smenu/l1_active_off_btm.gif) bottom left no-repeat; }
+	#smenu_smart .on ul li .active a { color: white; font-weight: bold;  background: url(../gui/smenu/l1_active_off.gif) center left no-repeat; border-bottom: 1px solid #A60000; }
+	#smenu_smart a {
+		display: block;
+		color: #FFFFFF;
+		text-decoration: none;
+		margin: 0px;
+		padding: 5px;
+		padding-left: 5px;
+		}
+	#smenu_smart a:hover {
+		/*background: #BF0000;*/
+		text-decoration: underline;
+		}
+	#smenu_smart .on ul li a:hover {
+		/*background: #BF0000;*/
+		}
+	#smenu_smart ul li ul li {
+		font-size: 10px;
+		font-weight: normal;
+		border: 0px;
+		}
+	#smenu_smart .last {
+		}
+	#smenu_smart .lastOn {
+		font-weight: bold;
+		}
+	#smenu_smart .last a:hover{
+		}

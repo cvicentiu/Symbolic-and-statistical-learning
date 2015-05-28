@@ -1,0 +1,51 @@
+/* main elements */
+BODY, TD, DIV, INPUT, TEXTAREA, SELECT {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 10px;
+	color: black;
+}
+
+A {
+	color: #CC9900;
+	text-decoration: none;
+}
+
+A:Hover {
+	text-decoration: underline;
+}
+
+/* menu */
+TD.my_menu {
+	padding-right: 3px;
+	padding-bottom: 3px;
+}
+
+/* footer */
+TD.footer {
+	padding: 5px;
+}
+
+/* sections */
+TABLE.section TR.header TD {
+	font-weight: bold;
+}
+
+/* pager */
+TABLE.pager
+{
+	padding-bottom: 2px;
+}
+
+TABLE.pager TD.link {
+	font-weight:bold;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+TABLE.pager SPAN.current {
+	color: red;
+}
+
+TABLE.pager SPAN.inactive {
+	color: #AAAAAA;
+}

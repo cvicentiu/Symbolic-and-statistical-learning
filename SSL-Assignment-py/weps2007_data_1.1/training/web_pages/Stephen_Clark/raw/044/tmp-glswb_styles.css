@@ -1,0 +1,540 @@
+/* ---------------------------------------------------------------------------------------------------
+	Gifford Lectures Stylesheet
+	
+	060727~aht~I have split the stylesheet into multiple smaller ones and utilized the import feature in
+	order to gain control over the massive amount of styles
+-----------------------------------------------------------------------------------------------------*/
+	
+/* --Styles for <a> tags-- */
+@import url("styles_links.css");
+
+/* --Basic book chapter styles to be applied to content coming from the Body table-- */
+@import url("styles_body.css");
+@import url("styles_block.css");
+@import url("styles_bible.css");
+@import url("styles_address.css");
+@import url("styles_sidebar.css");
+@import url("styles_author.css");
+@import url("styles_note.css");
+@import url("styles_images.css");
+
+/* --Styles for the TOC page-- */
+@import url("styles_toc.css");
+
+
+/* --Styles for the Search include-- */
+@import url("styles_search.css");
+
+/* --Content Markups-- */
+
+body {
+	margin:0;
+	padding:0;
+	background-image:url('/tmp-glswb_bg_full.gif');
+	background-color:#fff;
+}
+
+.EditionInfoHeader td	{
+	font-family:arial,serif;
+	font-weight:bold;
+	font-size:12px;
+}
+
+.EditionInfo td	{
+	font-family:verdana,serif;
+	font-weight:normal;
+	font-size:12px;
+}
+
+
+
+
+
+
+.r {
+	font-family:verdana,sans-serif;
+	color:#FFFFFF}
+
+.r:link {
+	font-family:verdana,sans-serif;
+	color:#FFFFFF}
+
+.r b {
+	font-family:verdana,sans-serif;
+	color:#FFFFFF}
+
+.r i {
+	font-family:verdana,sans-serif;
+	color:#FFFFFF}
+
+.r:active {
+	font-family:verdana,sans-serif;
+	color:#FFFFFF}
+
+.r:visited {
+	font-family:verdana,sans-serif;
+	color:#FF0000}
+
+
+
+
+
+/* --Static content styles for content not pulled from the database-- */
+
+h1 {
+	font-family:arial,geneva,helvetica,sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	color:#990000;
+	margin-left:0pt;
+	margin-right:0pt;
+	margin-top:8pt;
+	margin-bottom:2pt;
+}
+
+h2 {
+	font-family:arial,geneva,helvetica,sans-serif;
+	font-size:13px;
+	font-weight:bold;
+	color:#990000;
+	margin-left:0pt;
+	margin-right:0pt;
+	margin-top:5pt;
+	margin-bottom:2pt;
+}
+
+p {
+	font-family:tahoma,verdana,geneva,arial,sans-serif;
+	font-size:13px;
+	font-weight:normal;
+	color:#000000;
+	margin-left:0pt;
+	margin-right:0pt;
+	margin-top:5pt;
+	margin-bottom:3pt;
+	text-align:left;
+}
+
+div.bullet {
+	font-family:verdana,sans-serif;
+	font-size:14px;
+	font-weight:normal;
+	color:gray;
+	margin-left:5pt;
+	margin-right:5pt;
+	margin-top:17pt;
+	margin-bottom:15pt;
+	text-align:center;
+}
+
+div.main {
+	font-family:arial,helvetica,sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	color:#FFFFFF;
+	margin-left:5pt;
+	margin-right:5pt;
+	margin-top:0pt;
+	margin-bottom:0pt;
+}
+
+div.imgcenter {
+	text-align:center;
+	margin-left:5pt;
+	margin-right:5pt;
+	margin-top:10pt;
+	margin-bottom:10pt;
+}
+
+span.cap {
+	float:left;
+	width:40px;
+	font-size:48px;
+	line-height:33px;
+	font-weight:normal;
+	color:#990000;
+	font-family:"times new roman",times,serif;
+	text-align:center;
+}
+
+div.container	{
+	border: 0;
+	width: 100%;
+}
+
+div.containerH580	{
+	border: 0;
+	width: 100%;
+	height: 580px;
+	overflow: auto;
+	font-family:"times new roman",serif;
+}
+
+div.containerH200	{
+	border: 0;
+	width: 100%;
+	height: 200px;
+	overflow: auto;
+	font-family:"times new roman",serif;
+}
+
+div.imghome {
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.next, .filter {
+	text-align:right;
+	margin:0 0 0 0;
+}
+
+#content {
+	border: 1px #666633 solid;
+	width:547px;
+	background:#fff;
+}
+
+#content h1 {
+	font-family:arial,geneva,sans-serif;
+	font-size:18px;
+	font-weight:bold;
+	color:#fff;
+	margin:0 0 0 3pt;
+}
+
+#content h1 em {
+	color:#cc9;
+	font-style:normal;
+}
+
+#content h2 {
+	font-family:georgia,arial,geneva,sans-serif;
+	font-size:18px;
+	font-weight:normal;
+	color:#000;
+	margin:5px 0 0 0;
+	border-bottom:dotted #ddd 2px;
+}
+
+#content h3 {
+	font-family:georgia,arial,geneva,sans-serif;
+	font-size:14px;
+	font-weight:normal;
+	color:#000;
+	margin:3px 0 0 0;
+}
+
+#content h2 + h3 {
+	margin-top: 10px;
+}
+
+#content h4 + div {
+	margin-top:0;
+}
+
+#content h4 {
+	font-family:georgia,arial,geneva,sans-serif;
+	font-weight:normal;
+	font-size:14px;
+	color:#000;
+	border-bottom:dotted #ddd 2px;
+}
+
+#content p + h2 {
+	margin-top:24px;
+}
+
+/*---------------------------------------------------------
+ What's New 
+---------------------------------------------------------*/
+
+#wn h1 {
+	font-family:arial,geneva,sans-serif;
+	font-size:18px;
+	font-weight:bold;
+	color:#fff;
+	margin:0 0 0 3pt;
+}
+
+#wn h1 em {
+	color:#cc9;
+	font-style:normal;
+}
+
+#wn h2 {
+	font-family:arial,geneva,helvetica,sans-serif;
+	font-size:13px;
+	font-weight:bold;
+	color:#900;
+	margin: 5pt 0 2pt 0;
+}
+
+#wn p {
+	font-family:tahoma,verdana,geneva,arial,sans-serif;
+	font-size:12px;
+	color:#000;
+	margin:0 0 5pt 0pt;
+	line-height:16px;
+}
+
+p.book {
+	font-family:georgia,tahoma,verdana,arial,sans-serif;
+	font-size:13px;
+	text-align:center;
+	margin:18px 0 18px 0;
+	color:#005F9F;
+	
+}
+
+
+
+td.nav {
+	font-family:arial,helvetica,sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	color:#FFFFFF;
+}
+
+rule.subnav {
+	font-family:arial,helvetica,sans-serif;
+	font-size:11px;
+	font-weight:bold;
+	color:#000000;
+	text-decoration:none;
+	margin-left:5pt;
+	margin-right:0pt;
+	margin-top:0pt;
+	margin-bottom:0pt;
+}
+
+
+/* -Blocks- */
+
+blockquote {
+	font-family:verdana,sans-serif;
+	font-size:11px;
+	color:#000000;
+	margin-left:10pt;
+	margin-right:10pt;
+	margin-top:10pt;
+	margin-bottom:10pt;
+	text-align:justify;
+}
+
+/* Lists */
+
+li.news {
+	font-family:tahoma,verdana,geneva,arial,sans-serif;
+	font-size:12px;
+	color:#000000;
+}
+
+/* -General Styles- */
+
+div.error {
+	font-size:13px;
+	font-family:verdana,sans-serif;
+	text-align:justify;
+	font-weight:bold;
+	color:black;
+	margin-left:10px;
+}
+
+div.right {
+	font-family:verdana,sans-serif;
+	color:black;
+	text-align:right;
+}
+
+/* Dateline */
+div.DateLine  {
+	font-size:13px;
+	font-family:arial,sans-serif;
+	text-align:left;
+	font-weight:bold;
+	color:black;
+	margin-left:0pt;
+	margin-right:0pt;
+	margin-top:3px;
+	margin-bottom:6px;
+}
+
+/* Sort */
+
+div.SortBy {
+	font-size:11px;
+	font-family:verdana,sans-serif;
+	text-align:right;
+	font-weight:bold;
+	color:black;
+	margin-left:0pt;
+	margin-right:0pt;
+	margin-top:3px;
+	margin-bottom:6px;
+}
+
+/* Styles for Left Hand NavBar */
+div.NavHead {
+	font-size:11px;
+	font-family:verdana,sans-serif;
+	text-align:justify;
+	color:#FFFFFF;
+	margin-left:5px;
+	margin-right:10px;
+	margin-top:3px;
+	margin-bottom:5px;
+}
+
+div.NavBarSubHead {
+	font-size:11px;
+	font-family:verdana,sans-serif;
+	text-align:left;
+	color:#FFFFFF;
+	margin-left:10px;
+	margin-right:10px;
+	margin-top:3px;
+	margin-bottom:2px;
+}
+
+div.NavBarSpecialHead {
+	font-size:9px;
+	font-family:verdana,sans-serif;
+	font-weight:bold;
+	text-align:left;
+	color:#FFFFFF;
+	margin-left:15px;
+	margin-right:10px;
+	margin-top:3px;
+	margin-bottom:2px;
+	text-transform:uppercase;
+}
+
+div.NavBarSpecialArticle {
+	font-size:9px;
+	font-family:verdana,sans-serif;
+	color:black;
+	text-align:left;
+	color:#FFFFFF;
+	margin-left:20px;
+	margin-right:10px;
+	margin-top:3px;
+	margin-bottom:2px;
+}
+
+div.NavBarSpecialArticleSidebar {
+	font-size:9px;
+	font-family:verdana,sans-serif;
+	color:black;
+	text-align:left;
+	color:#FFFFFF;
+	margin-left:25px;
+	margin-right:10px;
+	margin-top:3px;
+	margin-bottom:2px;
+}
+
+div.NavBarArticle {
+	font-size:9px;
+	font-family:verdana,sans-serif;
+	color:black;
+	text-align:left;
+	color:#FFFFFF;
+	margin-left:15px;
+	margin-right:10px;
+	margin-top:3px;
+	margin-bottom:2px;
+}
+
+div.NavBarArticleSidebar {
+	font-size:9px;
+	font-family:verdana,sans-serif;
+	color:black;
+	text-align:left;
+	color:#FFFFFF;
+	margin-left:20px;
+	margin-right:10px;
+	margin-top:3px;
+	margin-bottom:2px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Span styles for labels & such. */
+span {
+	font-size:11px;
+	font-family:verdana,sans-serif;
+	text-align:left;
+	margin-top:3px;
+	margin-bottom:6px;
+}
+
+span.ahead {
+	font-size:13px;
+	font-family:verdana,sans-serif;
+	text-align:left;
+	font-weight:bold;
+	margin-top:18px;
+}
+
+span.boldhead {
+	font-size:11px;
+	font-family:verdana,sans-serif;
+	font-weight:bold;
+}
+
+span.head {
+	font-size:9px;
+	font-family:verdana,sans-serif;
+}
+
+span.title {
+	font-size:20px;
+	font-family:verdana,sans-serif;
+	font-weight:bold;
+	color:black;
+	margin-top:9pt;
+	margin-bottom:9pt;
+}
+
+
+/* Index Page */
+div.index {
+	font-size:11px;
+	font-family:verdana,arial,helvetica,sans-serif;
+	letter-spacing:.4px;
+	text-align:left;
+	color:black;
+	margin-left:5pt;
+	margin-right:0pt;
+	margin-top:2pt;
+	margin-bottom:3pt;
+}
+
+
+/* Refereces */
+
+div.reference {
+	font-size:11px;
+	font-family:verdana,sans-serif;
+	text-align:left;
+	color:black;
+	margin-left:25pt;
+	margin-right:0pt;
+	text-indent:-20pt;
+	margin-top:2pt;
+	margin-bottom:3pt;
+}
+
+
+div.hidden {
+	display:none;
+}
+

@@ -1,0 +1,147 @@
+/* ==============================================
+
+IMG ARTISTS - BASIC STYLES
+
+================================================*/
+
+
+
+/* HTML ----------------------------------------*/
+
+
+ body {
+  background:#E0E7ED;
+  margin:0;
+  padding:0;
+  /*text-align:center;*/
+  }
+
+p, li, dt, dd, label, th, td {
+ font-family:helvetica, arial, sans-serif;
+ font-size:75%;
+ }
+
+a { 
+ color:#E94700;
+ font-weight:bold;
+ }
+ 
+a:visited {color: #F18556;}
+a img {
+ border:0;
+ }
+ 
+ 
+fieldset {
+ border:0;
+ margin:0;
+ padding:0;
+ }
+ 
+ 
+label {
+ font-weight:bold;
+ }
+ 
+ 
+legend {
+ font-size:80%;
+ font-weight:bold;
+ }
+ 
+td {vertical-align: top;}
+
+/* LAYOUT ----------------------------------------*/
+
+
+.trickLeft {
+ clear:left;
+ height:0;
+ }
+ 
+.trickRight {
+ clear:right;
+ height:0;
+ }
+ 
+.trickBoth {
+ clear:both;
+ height:0;
+ }
+ 
+ .trick {
+ clear:both;
+ height:0;
+ } 
+ 
+#top {
+ display:none;
+ }
+ 
+#container {
+ background:#030067;
+ border:1px solid #E0E7ED;
+ color:black;
+ margin:0;
+ padding:0;
+ text-align:left;
+ width:738px;
+ }
+ 
+#imgLogo {
+ margin:11px 0 0 16px;
+ }
+ 
+
+#languages {
+ font-family:helvetica, arial, sans-serif;
+ font-size:75%;
+ }
+ 
+#headerMenu {
+ font-family:helvetica, arial, sans-serif;
+ font-size:85%;
+ }
+ 
+
+#languages a, #headerMenu a {
+ color:white;
+ font-weight:normal;
+ }
+ 
+#slideShow {
+ display:none;
+ }
+ 
+#footer {
+ clear:both;
+ }
+ 
+ 
+ 
+body {
+	text-align: left;
+}
+
+/* Fix for MS Office style paragraphs (MsoNormal) */
+p {
+	margin: 0px !important;
+	padding: 0px !important;
+}
+
+/* Fix for MS Office unindeted lists */
+.unIndentedList {
+	margin: 0px;
+	padding: 0px;
+	list-style-position: inside;
+}
+
+.unIndentedList li {
+	padding: 0px;
+}
+
+/* Fix for MS Office UL lists */
+ul {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}

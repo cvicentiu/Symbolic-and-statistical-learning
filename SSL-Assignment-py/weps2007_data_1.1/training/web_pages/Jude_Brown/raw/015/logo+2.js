@@ -1,0 +1,1 @@
+document.write('<map name="utata-logo+2-map"><area shape="rect" coords="239,9 291,61" href="http://www.flickr.com/photos/66185490@N00/403471818/" /><area shape="rect" coords="175,9 227,61" href="http://www.flickr.com/photos/86584211@N00/403506111/" /><area shape="rect" coords="4,5 164,67" href="http://www.utata.org/" /></map>');

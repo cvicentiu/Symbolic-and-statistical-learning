@@ -1,0 +1,272 @@
+body {
+	font : normal small Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color : #000000;
+	background-color : #FFFFFF;
+}
+
+table {
+	border : 0px;
+	margin : 0px;
+	padding : 0px;
+}
+
+td 	{
+	font : normal small Verdana, Geneva, Arial, Helvetica, sans-serif;
+	vertical-align : top;
+}
+
+td.bottom 	{
+	vertical-align : bottom;
+}
+
+td.mid 	{
+	vertical-align : middle;
+}
+
+form {
+	display : inline;
+}
+
+A {
+	color : #347A9E;
+	text-decoration : underline;
+}
+
+A:HOVER, A:ACTIVE {
+	color : #8B7D33;
+	text-decoration : underline;
+}
+
+A:VISITED {
+	color : #666666;
+	text-decoration : underline;
+}
+
+A:VISITED:HOVER {
+	color : #8B7D33;
+	text-decoration : underline;
+}
+
+.rail A {
+	color : #000000;
+	text-decoration : none;
+}
+
+.rail A:HOVER {
+	color : #000000;
+	text-decoration : underline;
+}
+
+.rail A:ACTIVE {
+	color : #5087A4;
+	text-decoration : underline;
+}
+
+.rail A:VISITED {
+	color : #666666;
+	text-decoration : none;
+}
+
+.rail A:VISITED:HOVER {
+	color : #666666;
+	text-decoration : underline;
+}
+
+.bookrail A {
+	color : #738F9E;
+	text-decoration : none;
+}
+
+.bookrail A:HOVER {
+	color : #8B7D33;
+	text-decoration : underline;
+}
+
+.bookrail A:ACTIVE {
+	color : #738F9E;
+	text-decoration : underline;
+}
+
+.bookrail A:VISITED {
+	color : #738F9E;
+	text-decoration : none;
+}
+
+.bookrail A:VISITED:HOVER {
+	color : #8B7D33;
+	text-decoration : underline;
+}
+
+.headline A, a.headline {
+	color : #15435D;
+	text-decoration : none;
+}
+
+.headline A:HOVER, a.headline:HOVER {
+	color : #15435D;
+	text-decoration : underline;
+}
+
+.headline A:ACTIVE, a.headline:ACTIVE {
+	color : #5087A4;
+	text-decoration : underline;
+}
+
+.headline A:VISITED, a.headline:VISITED {
+	color : #15435D;
+	text-decoration : none;
+}
+
+.headline A:VISITED:HOVER, a.headline:VISITED:HOVER {
+	color : #15435D;
+	text-decoration : underline;
+}
+
+.headline {
+	font : bold medium Arial, Helvetica, sans-serif;
+	color : #000000;
+}
+
+.subhead {
+	font : bold medium Arial, Helvetica, sans-serif;
+	color : #666666;
+}
+
+.byline {
+	font : normal small Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color : #000000;
+}
+
+.dateline {
+	font : bold small Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color : #000000;
+}
+
+.label {
+	font : bold small Arial, Helvetica, sans-serif;
+	color : #000000;
+}
+
+.date {
+	font : normal small Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color : #999999;
+}
+
+.caption {
+	font : normal x-small Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color : #330000;
+}
+
+.credit {
+	font : italic x-small Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color : #330000;
+}
+
+.footer {
+	font : normal x-small Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #000000;
+	margin : 10px 20px 0px 11px;
+}
+
+.header {
+	font : normal x-small Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #000000;
+	margin : 0px 20px 6px 6px;
+}
+
+.smallbody {
+	font : normal x-small Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+.search {
+	font : normal x-small Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color : #000000;
+	text-align : right;
+}
+
+.rail {
+	font : normal x-small Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color : #000000;
+	background-color : #E6E6E6;
+}
+
+.booksum {
+	font : normal medium Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color : #000000;
+	background-color : #E6E6E6;
+	border-right : 1px solid #CCDBE3;
+}
+
+.bookrail {
+	font : normal x-small Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color : #738F9E;
+	background-color : #E6E6E6;
+	border-right : 1px solid #CCDBE3;
+}
+
+.main {
+	background-color : #FFFFFF;
+}
+
+.railnews { 
+	width: 138px;
+	font : normal x-small Verdana, Geneva, Arial, Helvetica, sans-serif;
+	border-left-width: 5px;
+	border-color: #E6E6E6;
+ }
+
+.aligncenter {
+	text-align : center;
+}
+
+.alignright {
+	text-align : right;
+}
+
+.leftmargin {
+	margin : 0px 0px 0px 10px;
+}
+
+.maintext{
+	margin : 6px 20px 10px 20px;
+}
+
+#prtitle {
+	display: none;
+}
+
+#breadcrumbs {
+	width: 702px; 
+}
+
+#document {
+	width: 702px;
+}
+
+#nav {
+	width: 158px;
+}
+
+#ftr {
+	width: 702px;
+}
+
+#prgraphic {
+	width: 541px;
+}
+
+#bblgraphic {
+	width: 541px;
+}
+
+#browse {
+	width: 541;
+}
+
+#title {
+	width: 700;
+}
+
+#bodywidth {
+	width: 541;
+}

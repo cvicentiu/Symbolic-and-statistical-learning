@@ -1,0 +1,157 @@
+  /* 
+    Contact Haines Brown
+    Hartford Web Publishing
+    brownh@hartford-hwp.com
+    Last revised 23 April 2006 (to incorporate image-container and remove
+	<q> definitions)
+    For odds & ends, see doc-b.misc 
+  */
+
+  body {
+    background: #FFFBF0;
+    color: #110000;
+    font-size: 100%;
+  }
+  div.outside {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  div.inside {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 680px;
+    text-align: left;
+    border-bottom: solid thin;
+    padding-bottom: 0.3em;
+  }
+  cite.underline {
+    text-decoration: underline;
+  }
+  div.sidebar  {
+    width: 15em;
+    float: right;
+    background-color: #FFF; color: #000;
+    padding: 0em 0.7em 0em 0.7em;
+    margin-top: 3px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    margin-left: 8px;
+    border: inset thin;
+  }
+  em.bold {
+    font-style: normal;
+    font-weight: bold;
+  }
+  em.underline {
+    text-decoration: underline;
+  }
+  h1 {
+    font-family: sans-serif;
+    margin-bottom: -0.4em;
+  }
+  h2, h3, h4, h5 { font-family: sans-serif; }
+  p, td, th { font-size: 100%; }	
+
+/* ============== anchors ============ */
+  a:link {
+    color: #00F; 
+    background: transparent;
+    text-decoration: underline;
+  }
+  a:visited {
+    color: #009;
+    background: transparent;
+    text-decoration: underline;
+  }
+  a:active {
+    color: #F00;
+    background: transparent;
+    text-decoration: underline;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+
+/* ========== blockquote ============== */
+  blockquote > div.author {
+	text-align: right;
+	font-size: 0.9em;
+	margin-right: 0.6em;
+	margin-top: -1em;
+  } 
+
+/* ====== headers & footers ======== */
+  div.header {
+    font-size: smaller;
+    border-bottom: solid thin;
+    margin-top: -0.3em;
+  }
+  div + div.header {
+    border-top: none;
+  }
+  div.footer {
+    font-style: italic;
+    border-top: solid thin;
+    margin-bottom: -0.5em;
+  }
+
+
+/* ============ images ================ */   
+
+  div.image-container {
+    padding-top: 0em;
+    padding-left: 0.5em;	    
+    padding-right: 0.5em;
+    padding-bottom: 0.5em;
+    text-align: center;
+  }
+  div.image-container img { 
+    background-color: transparent;
+    padding-top: 5px;
+  }
+
+
+  span.caption {
+	font-size: smaller;
+	font-family: sans-serif;
+  }
+
+/* ========== parents ============ */
+  div.parent {
+    font-weight: bold; 
+    font-size: smaller;
+    border-bottom: solid black thin;
+  }
+  div.parent img {
+    vertical-align: middle; 
+    padding-right: 0.4em;
+    width: 2em;
+    height: 2em;
+  }
+
+/* ============ tables =============== */
+  table {
+    margin-left: 8%;
+    width: 80%;
+    border-collapse: collapse;
+  }
+  td {
+    border: thin solid;
+    padding: 0.25em;
+    line-height: 1em;
+  }
+  th {
+    font: bold 1em helvetica,sans-serif;
+    background-color: #FFFBF0; color: #000;
+  }
+  caption { margin-bottom: 0.7em; font: bold 1em sans-serif; }
+
+/* =============lists ============== */
+  .spaced {margin-top: 0.6em;}
+  .note {
+    vertical-align: super;
+    font-size: smaller;
+    padding-right: 2px;	
+  }	  
+

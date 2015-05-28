@@ -1,0 +1,879 @@
+/* National Geographic News 12-2005 */
+/* This stylesheet is broken up into these sections: 
+- General Styles (including page layout)
+- Widget Styles (related links, editor's picks, etc.)
+- Navigation Styles (top nav, left nav)
+- Advertising/Sponsorship (ads, sponsored links)
+- Story Styles
+- Gallery/Enlarge/PIN/VIN Styles
+- Deprecated Styles
+*/
+
+
+
+/* General Styles ---------------------------------------------------- */
+
+body {
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+
+TD {
+/* text in TDs on some pages is huge, like 16px. This fixes. */
+font-size: 12px;
+}
+
+.container, .galleryContainer {
+/* holds the main body of the page. Change for liquid layouts. */
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin: 0;
+	width: 100%;
+	background-color: #fff;
+	text-align: left;
+}
+
+
+.galleryRelatedBox {
+/* this is a float-right box in the extended captions of PIN, VIN, and photo galleries. */
+
+	font-size: 11px;
+	line-height: 13px;
+	width: 172px;
+	float: right;
+	border: 1px solid #ccc;
+	margin-left: 15px;
+	margin-bottom: 12px;
+	padding: 10px; 
+	
+}
+
+
+/* primary link colors */
+
+a {
+	color:#004d99;
+}
+
+a:visited {}
+a:active {}
+a:hover {
+	text-decoration: underline;
+}
+
+a:hover img, img a:hover{
+	text-decoration: none;
+}
+
+
+
+.thumb {
+/* applied to thumbnail IMG tags */
+	border: 1px solid #ccc;
+	padding: 2px;
+	margin-right:8px;
+}
+
+
+.photo {
+/* applied to photos (not thumbnails) */
+	margin-bottom: 5px;
+	border: 1px solid #000;
+}
+
+
+
+.pageHeaderWell {
+/* top of story and category index pages; includes the breadcrumb */
+	padding:0px 8px 0px 0px;
+}
+
+#worldMusicAd a:link	{ color: #044e8e; text-decoration: none; }
+#worldMusicAd a:active	{ color: #000000; text-decoration: none; }
+#worldMusicAd a:visited	{ color: #044e8e; text-decoration: none; }
+#worldMusicAd a:hover	{ color: #044e8e; text-decoration: underline; }
+#worldMusicAd .orangeTitle	{ font-size: 16px; color: #cc6600; font-weight: bold; }
+#worldMusicAd .globalHeaderBlue12		{ font-size: 12px; color: #044e8e; font-weight: bold; }
+
+.teaser2colLeft {
+/* apply to left column of 2-column teaser box */
+	margin-right: 15px;
+	border-right: 1px solid #ccc;
+	padding-right: 15px;
+}
+
+
+
+.inlinesubs {
+	margin-bottom: 30px;
+}
+
+
+#storyInlineBox {
+/* enlargeable photo, related links box that floats in story */
+	font-size: 11px;
+	line-height: 13px;
+	width: 172px;
+	float:left;
+	border: 1px solid #ccc;
+	margin-top: 3px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	padding: 10px;
+}
+
+#storyInlineBox p {
+	margin-top: 2px;
+	margin-bottom: 4px
+}
+
+#storyInlineBox .caption, #storyInlineBox .section {
+/* a section of the inline box. places rule below each section */
+padding-bottom: 9px;
+border-bottom: 1px solid #ccc;
+margin-bottom: 9px;
+
+}
+
+#storyInlineBox .caption {
+/* caption below photo in inline box */
+font-style: italic;
+}
+
+
+
+.breadCrumb {
+	font-size: 11px;
+	margin: 10px 10px 5px 22px;
+}
+
+.breadCrumbHigh { /* the most active link in the trail */
+	font-weight:bold;
+}
+
+
+.centerContentWell,.galleryContentWell { 
+	padding:0px 30px 0px 20px; 			
+	/* border-right: 1px solid #DBD9CA; */
+}
+
+
+
+.date {
+	font-size: 11px;
+        margin-top: 10px;
+	font-weight:normal;
+	padding-bottom:5px;
+	color: #000;
+}
+
+
+
+.rightContent, .galleryRightContent {
+	margin-top:0px;
+	margin-right: 15px;
+	margin-left: 15px;
+	
+}
+
+.rightContent {
+width: 330px;
+}
+
+
+
+/* Widget styles ------------------------------------------------ */
+
+.editorsPicks, .readersPicks { /* the container div */
+/* top margin added 2005-12-12, kurtw */     
+	margin-top: 10px;
+	margin-bottom: 30px;
+	margin-right: 15px;  /* padding for PC/NET, chuckychange */
+}
+
+.navPicks { /* picks in the top header bar */
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 5px;
+	
+}
+
+.navPicks, .navPicks a {
+font-size: 11px;
+}
+
+.navPicks h3 {
+	font-size: 11px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	margin-top: 0;
+	color: #000;
+}
+
+
+.editorsPicks h1, h3, .readersPicks h1, h3, .navPicks h1, h3 { /* The title "Editor's Picks" */
+	margin-top: 0px;
+	font-size: 12px;
+	padding-bottom:0px;
+	margin-bottom:5px;
+	font-weight: bold;
+	
+
+}
+
+h4 {
+	font-size:11px;
+	font-weight:bold;
+	color: #333;
+	margin-bottom: 4px;
+	margin-top: 0px;	
+}
+
+
+.Pick, .LastPick { /* the container for each pick */
+	margin-bottom:15px;
+}
+
+.Pick p, .LastPick p {
+	font-size:11px;
+	margin-top:0px;
+	font-weight:normal; /* made normal, 12-16-05, chuckychange */
+	padding-bottom:0px;
+	margin-bottom:0px;
+	
+}
+
+/* bolded for IE by kurtw */
+.Pick h1, .LastPick h1, .Pick h4, .LastPick h4  {
+	font-size:12px;
+	font-weight:normal;
+	margin-bottom: 3px;
+	margin-top: 0px;
+}
+
+
+/* bolded for IE by kurtw */
+.LastPick {
+	padding-bottom:2px;
+	font-weight:bold;
+} 
+
+
+.PickRefer {
+	/* Line for "More Videos in the News" link, "More Photos in the News", etc. */
+	margin-top: 0px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.boxHeader {
+	font-size:12px;
+	font-weight:bold;
+	margin-bottom: 5px;
+}
+
+.boxHeader_nomargin { /* needed for places where TOP MOST POP go with NEWS FEEDS, chuckychange */
+	font-size:12px;
+	font-weight:bold;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	line-height: 14px;
+}
+
+
+
+.boxContent {
+	margin-left: 0px;
+	padding-left: 0px;
+	margin-top: 0px;
+	list-style-type: none;
+	font-weight: normal;
+	line-height: 14px;
+}
+
+.boxContent p {
+	font-size:12px;
+	margin-top: 0px;
+	margin-bottom: 8px;
+	
+}
+
+.boxContent a {
+	font-weight:normal;
+}
+
+.boxContent ul {
+	margin-top:0;
+	padding-top:0;
+	padding-bottom:0;
+	margin-bottom:0;
+  	display: block;
+ 	margin-left: 0px;
+	list-style-type:none;
+}
+
+.boxContent li {
+ 	padding-bottom:4px;
+	padding-top:4px;
+}
+
+.tool, img.tool, .photoGalleryImage .tool { /* for icons. style to IMG tag */
+	padding-right:5px;
+	vertical-align:text-top;
+	border: none;
+}
+
+/* Navigation Styles -------------------------------------------- */
+
+.header { /* news global header */
+	background: #fff;
+	/* height 80px removed to fix bug, chuckychange */
+	border-bottom: 1px solid #ccc;
+	padding-left: 12px;
+	padding-top: 4px;
+}
+
+.ngGlobalHeader, .ngGlobalFooter { /* nationalgeographic.com global header/footer */
+	background: #000;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+
+/* The left navigation is based on a simple unordered list. */
+
+.newsNavColumn { /* for entire column. set left nav width here */
+	background-color:#edebe1;
+	border-right: 1px solid #DBD9CA;
+	width: 145px;
+	font-size: 11px;
+	margin: 0;
+	padding: 0;
+}
+
+.newsNav {
+/* for part of left nav column that's the actual navigation */
+background: #f5f6f9 url(/news/images/global2005/background-leftnav.gif) right repeat-y;
+display: block;
+margin-top: 0px;
+}
+
+ul.newsNav, .newsNav li, .newsNavColumn ul {
+	list-style-type: none;
+	display: inline;
+	padding: 0;
+	margin: 0;
+
+}
+
+.newsNav a {
+	color: #004080;
+	display: block;
+	border-bottom: 1px solid #cfcfcf;
+	border-top: 1px solid #fff;
+	text-decoration: none;
+	padding: 4px 4px 5px 12px;
+
+}
+
+.newsNav a:hover {
+	text-decoration: underline; 
+}
+
+ul.newsNav { /* space at the bottom of the top left nav */
+	margin-bottom: 8px;
+}
+
+.newsNavItem { /* container for an item in the left nav, below the actual global navigation */
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+.newsNavItem h4 { /* the title of a left nav item */
+	color: #333;
+	font-weight:bold;
+	padding: 0px 8px 3px 12px;	
+}
+
+.newsNavSpacer { /* places space between nav items and store item */
+	height: 20px;
+}
+
+.newsNavColumn p {
+	margin: 3px 5px 3px 12px; 
+}
+
+/* Advertising Styles ----------------------------------------------------------- */
+
+.sponsor {
+	margin-bottom: 20px;
+}
+
+.sponsor TD {
+	font-size: 11px;
+	text-align: left;
+}
+
+.sponsor IMG {
+	float: right;
+	margin-left: 8px;
+}
+
+
+.sponsoredLinks {
+	margin-bottom: 15px;
+}
+
+
+.boxAd {
+	margin-top:4px;
+	margin-bottom:30px;
+}
+
+
+.boxAd h4, .boxAd div {
+	margin-top: 0;
+	margin-bottom: 2px;
+	font-weight: normal;
+	font-size:10px;
+	color: #444;
+}
+
+
+.ad {
+/* container for leaderboard at top of page */
+	padding: 6px 0px 3px 0px;
+	margin-bottom:4px;
+}
+
+.skyscraperAd {
+	margin: 0px 10px 15px 0px;
+	font-size:10px;
+	font-weight: bold;
+	color: #444;
+
+}
+
+/* Story Styles --------------------------------------------- */
+
+.story, .enlargePhotoPage { /* general story text */
+	font-size: 13px;
+	line-height: 16px;
+}
+
+/* bolded for IE by kurtw */
+.story h1, .storyhead, h1 { /* story headline */
+	font-size: 24px;
+	font-weight: bold;
+	color: #000;
+	margin-top:0px;
+	margin-bottom:8px;
+	line-height:1.2em;
+}
+
+
+.intro {
+	font-size:15px;
+	font-weight:normal;
+	font-style:normal;
+	line-height:1.3em;
+	color:#343434;
+	margin-top:10px;
+}
+
+
+.inlinedate { /* currently, both "National Geographic News" and the story date are classed this */
+	font-weight:normal;
+	color: #666666;
+	font-style: normal;
+}
+
+
+.captionContainer { /* deprecated: holds the caption in the regular-sized photo */
+	padding-left:8px;
+	padding-right:8px;
+	padding-top:4px;
+	border-top: 1px solid #999;
+	font-size:11px;
+	margin-top:0px;
+	line-height:12px;
+        background: #fff;
+}
+
+
+.splitnav { /* container for "<< previous page" in story body */
+	font-size: 13px;
+	font-weight:bold;
+
+}
+
+.splitnavR, .cont {
+/* container for "next page >>" in story body */
+    font-size: 13px;
+    font-weight: bold;
+    text-align: right;
+	margin-bottom: 25px;
+}
+
+/* Category/Index Page Styles ------------------------------------------ */
+
+.topStoryCaption { /* Photo caption in the topmost story on aggregate pages */
+	padding-top:5px;
+	font-size:9px;
+	font-style:italic;
+}
+
+.topStory { /* topmost story on aggregate pages */
+	margin-top:1px;
+	padding-top:0px;
+	margin-bottom:6px;
+}
+
+.topStory p {
+	margin-top:0px;
+	padding-top:0px;
+	font-size:14px;
+	line-height: 17px;
+}
+
+.topStory h1 {
+	margin-top:0px;
+	font-size: 20px;
+	font-weight: bold;
+	padding-bottom:2px;
+}
+
+.topStory h2 {
+	margin-top:0px;
+	font-size: 20px;
+	font-weight: bold;
+	padding-bottom:2px;
+}
+
+.moreTopStories p {
+	font-size:13px;
+	margin-top:0px;
+	margin-bottom:0px;
+	line-height: 16px;
+}
+
+
+/* bolded for IE by kurtw */
+.moreTopStories h1, .moreTopStories h3, .catpageHeadline {
+	margin-top:12px;
+	font-size: 16px;
+	font-weight: normal; /* 12.16.05 made normal, chuckychange */
+        text-decoration:none;
+	padding-top:18px;
+	margin-bottom:3px;
+	border-top: 1px solid #ddd;
+}
+
+.categorizedStories {
+	padding-top:0px;
+	margin-top: 7px;
+        /* disabled, chuckychange */
+	/* border-top: 1px solid #ddd; */
+}
+
+.categorizedStories ul {
+  	display:block;
+	font-size:12px;
+	margin-top:0px;
+	margin-bottom:0px;
+	margin-left:15px;
+	padding-left: 9px;
+	padding-top:0px;
+ 	list-style-image: url(/news/images/global2005/listMarker.gif);
+}
+
+.categorizedStories li {
+	padding-left: 0px;
+ 	margin-left:0px;
+ 	padding-bottom:8px;
+}
+
+.categorizedStories h1, .categorizedStories h3 {
+	font-size: 16px;
+	font-weight: bold;
+	color:#000000;
+	margin-top:10px;
+	margin-bottom:10px;
+	padding-bottom:0px;
+	padding-top:14px;
+	border-top: 1px solid #ddd;
+}
+
+.categorizedStories h1 a:hover, .categorizedStories h3 a:hover {
+	text-decoration:underline;
+}
+
+.categorizedStories h1 a, .categorizedStories h3 a {
+	text-decoration:none;
+	color: #000000;
+}
+
+.categoryTitle {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 26px;
+	font-weight:bold;
+	padding-top:5px;
+	padding-bottom:0px;
+}
+
+.categoryTopStory {
+	margin-top:15px;
+	padding-top:0px;
+	margin-bottom:10px;
+}
+
+.categoryTopStory p {
+	font-size:14px;
+}
+
+.categoryTopStory h1 {
+	margin-top:0px;
+	font-size: 16px;
+	font-weight: bold;
+	padding-bottom:2px;
+}
+
+.bottomLinks { /* numbered list of pages at the bottom of category aggregate pages */
+	font-size:14px;
+	margin-top:30px;
+	margin-bottom:10px;
+}
+
+.SideBarHeader {
+	color: #FFFFFF;
+	font-size:11px;
+	font-weight:bold;
+	padding-left:5px;
+	padding-top:5px;
+	padding-bottom:5px;
+	display: block;
+	background: #993300;
+	border:1px solid #000;
+	
+}
+
+.sideBar {
+	font-size:12px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top:2px;
+	margin-top:0px;
+	padding-top:10px;
+	padding-bottom:5px;
+	margin-bottom: 15px;
+	border-left:1px solid #999;
+	border-right:1px solid #999;
+	border-bottom:1px solid #999;
+	display: block;
+	background: #FFFFFF;
+	font-style:normal;
+}
+
+
+.sideBar h1 {
+	font-size:16px;
+}
+
+.sideBar p {
+	font-size:12px;
+	line-height:18px;
+}
+
+.sideBar a {
+	font-weight:bold;
+}
+
+/* Photo Gallery, Photo In the News, Video in the News Styles ------------------------ */
+
+.photoInNews {
+	border: 1px solid #666;
+	margin-right:8px;
+	margin-bottom:5px;
+}
+
+.photoGalleryImage {
+	text-align:center;
+	margin-top:0px;
+	margin-right: 0px; /* so that in mac/ie there is a buffer btwn the image and the ad, chuckychange */
+	margin-bottom:0px;
+	padding: 0px;
+	
+}
+
+.photoGalleryImage IMG {
+	padding: 2px;
+	border: 1px solid #000;
+	background-color: #fff;
+}
+
+.photoGalleryCaption {
+	font-size: 12px;
+	line-height: 16px;
+	text-align:left;
+	margin-top: 20px;
+}
+
+
+.photoGalleryCredit {
+	font-size:11px;
+	font-style:italic;
+	margin-bottom: 25px;
+	margin-top: 12px;
+}
+
+.galleryThumb img {
+	text-align:center;
+	margin-left:15px;
+	border: 1px solid #ccc;
+	margin-bottom:10px;
+	padding: 2px;
+}
+
+.galleryThumbHigh {
+/* currently active image */
+	margin-left:0px;
+	padding-left:15px;
+	margin-bottom:10px;
+}
+
+.galleryThumbHigh img {
+	border: 2px solid #000;
+}
+
+.galleryThumbColumn {
+/* column for long line of thumbnails */
+	margin-top: 3px;
+	text-align: right;
+	margin-left: 5px;
+}
+
+.enlargePhotoPageTitle {
+/* page title for the "Enlarge Photo" page */
+	font-size:20px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.galleryThumbRefer {
+/* "More News Photos" link at bottom of line of thumbnails */
+width: 45px;
+margin-left: 15px;
+font-size: 11px;
+text-align: center;
+
+}
+
+
+/* Deprecated Styles ---------------------------------------------- */
+
+
+.rightSideSearch {
+	font-size:13px;
+	margin-top:35px;
+	margin-bottom:0;
+}
+
+.legacyPhoto {
+	display: block;  
+	text-align:center;
+	font-size:11px;    
+	margin-bottom: 15px;
+	padding:8px 0px 0px 0px;
+        border:1px solid #999; 
+	background: #edebe1;
+}
+
+.legacyPhoto img {
+	margin-left:8px;
+	margin-bottom:0px;
+	padding-bottom:8px;
+}
+
+.legacyPhoto div {
+        background:#fff;
+	margin-top:0px;
+	padding-top:8px;
+	margin-bottom:0px;
+	padding-left:8px;
+	padding-bottom:8px;
+	padding-right:8px;
+}
+
+
+.subscribe {
+/* for subscriptions ad in right col */
+	display: block;
+	/*if align left comment out text-align:center below */
+	text-align:center; 
+	font-size:11px;
+	margin-bottom: 15px;
+	/*border:1px solid #999;*/
+	background:#FFFFFF;
+	/* if backgrond image comment out above background and link to image here
+	background: #f2f1eb url(http://news.nationalgeographic.com/news/images/leftnav_background.gif) top left repeat-y;
+	*/
+}
+
+.VINboxAd {
+	margin-top:4px;
+	margin-bottom:15px;
+	margin-right:15px;
+	font-size:11px;
+	text-align:center;
+}
+
+
+.vinContentWell {
+	width:400px;
+	margin:0px 15px 20px;
+}
+
+.vinAdWell {
+	width:340px;
+	margin:0px 5px 20px;
+}
+
+.vinVideo {/* border around vin video boz, chuckychange */
+	border-right: 1px solid #000;
+	border-top: 1px solid #000; 
+	border-bottom: 1px solid #000; 
+	border-left: 1px solid #000;
+}
+
+/* These names are terrible, people! Give your styles SEMANTIC or PRESENTATIONAL names! */
+
+
+.exxon {
+ font-family: arial, Verdana, sans-serif;
+   font-size: 10px;
+ font-weight: bold;
+       color: #CD3829;
+text-decoration: none;
+}
+
+.philips {
+	font-size: 11px;
+	font-weight:bold;
+	padding-bottom:5px;
+    /* color:#005DFF; */
+    color:#000000;
+}
+
+.paul {
+    padding-bottom:10px;
+    padding-top:5px;
+	font-size: 10px;
+	padding-bottom:5px;
+    color:#000000;
+}
+
+

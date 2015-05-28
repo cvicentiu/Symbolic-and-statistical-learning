@@ -1,0 +1,303 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!--
+}
+
+function MM_validateForm() { //v4.0
+  var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
+  for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=MM_findObj(args[i]);
+    if (val) { nm=val.name; if ((val=val.value)!="") {
+      if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
+        if (p<1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\n';
+      } else if (test!='R') { num = parseFloat(val);
+        if (isNaN(val)) errors+='- '+nm+' must contain a number.\n';
+        if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
+          min=test.substring(8,p); max=test.substring(p+1);
+          if (num<min || max<num) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\n';
+    } } } else if (test.charAt(0) == 'R') errors += '- '+nm+' is required.\n'; }
+  } if (errors) alert('The following error(s) occurred:\n'+errors);
+  document.MM_returnValue = (errors == '');
+}
+//-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<title>The Hilltop Online
+</title>
+<link rel="stylesheet" type="text/css" href="hilltop.css">
+
+<META NAME="author" CONTENT="Hilltop Staff - Mars Hill College - ">
+<META NAME="copyright" CONTENT="Copyright © 2002 Mars Hill College - www.mhc.edu - ">
+
+<script language="javascript" src="newwindow.js">
+</script>
+
+</head>
+
+<body bgcolor="#ffffff" marginheight="0" marginwidth="0" link="#000099" alink="#000099" vlink="#000099">
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td bgcolor="#01209D" background="headerbg.gif">
+
+<a href="http://hilltop.mhc.edu/index.asp" onFocus="if(this.blur)this.blur()"><img src="header-new.gif" width="400" height="70" border="0" alt="Click to return to the Hilltop Homepage"></a>
+
+</td>
+
+<td bgcolor="#01209D" width="180">
+
+<a href="http://www.mhc.edu/" onFocus="if(this.blur)this.blur()"><img src="cosmo.jpg"  border="0" align="right" alt=""></a>
+
+</td>
+
+</tr>
+
+</table>
+
+<!-- Bottom table -->
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+<tr>
+
+<td bgcolor="#000099" width="9">
+<table width="9" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td>
+&nbsp;
+</td>
+</tr>
+</table>
+</td>
+
+<!-- Nav Bar -->
+
+<td valign="top" bgcolor="#000099" width="102">
+
+<table width="102" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td>
+
+<p class="navtext">
+
+<font color="#ffcc00">MHC Webmail</font><br>
+<img src="space.gif" width="1" height="7" border="0" alt=""><br>
+
+<a href="https://webmail.mhc.edu/exchweb/bin/auth/owalogon.asp?url=https://webmail.mhc.edu/exchange/&reason=0" onFocus="if(this.blur)this.blur()" onMouseOver="window.status='Mars Hill College Webmail'; return true" onMouseOut="window.status=' '; return true"><img src="webmail.gif" width="80" height="30" border="0" alt=""></a>
+<br>
+<img src="space.gif" width="1" height="7" border="0" alt=""><br>
+
+<a class="sidenav" href="http://thewell.mhc.edu/thewell" onFocus="if(this.blur)this.blur()" onMouseOver="window.status='Mars Hill College Homepage'; return true" onMouseOut="window.status=' '; return true">THE WELL</a> <br>
+
+<a class="sidenav" href="http://www.mhc.edu/" onFocus="if(this.blur)this.blur()" onMouseOver="window.status='Mars Hill College Homepage'; return true" onMouseOut="window.status=' '; return true">MHC Homepage</a> <br>
+
+<a class="sidenav" href="http://www.mhc.edu/mhcdirectory.asp" onFocus="if(this.blur)this.blur()" onMouseOver="window.status='Mars Hill College Directories'; return true" onMouseOut="window.status=' '; return true">MHC Directories</a> <br>
+
+<a class="sidenav" href="http://hilltop.mhc.edu/Calendar/Spring07.asp" onFocus="if(this.blur)this.blur()" onMouseOver="window.status='Mars Hill College Student Activities'; return true" onMouseOut="window.status=' '; return true"><font color="#FF0000">Campus Calendar</font></a><br>
+
+<a class="sidenav" href="http://iqweb.mhc.edu" onFocus="if(this.blur)this.blur()" onMouseOver="window.status='IQ.web'; return true" onMouseOut="window.status=' '; return true"><font color="#FF0000">IQ Web</font></a> <br>
+
+
+<a class="sidenav" href="http://sports.mhc.edu/index.htm" onFocus="if(this.blur)this.blur()" onMouseOver="window.status='Mars Hill College Athletics'; return true" onMouseOut="window.status=' '; return true">Athletics</a> <br>
+
+<a class="sidenav" href="http://library.mhc.edu/" onFocus="if(this.blur)this.blur()" onMouseOver="window.status='Mars Hill College Library'; return true" onMouseOut="window.status=' '; return true">Library</a> <br>
+<a class="sidenav" href="http://lifeworks.mhc.edu/service/index.asp" onFocus="if(this.blur)this.blur()">Service Projects</a> <br>
+<a class="sidenav" href="http://lifeworks.mhc.edu/career/" onFocus="if(this.blur)this.blur()">Career Guidance</a> <br>
+
+<a class="sidenav" href="http://www.mhc.edu/athletics/intramural/" onFocus="if(this.blur)this.blur()">Intramural<br>&nbsp;&nbsp;Sports</a><br>
+<a class="sidenav" href="http://hilltop.mhc.edu/SGA/Minutes06-07.asp" onFocus="if(this.blur)this.blur()">SGA Minutes</a><br><img src="space.gif" height="7"><br>
+
+<a class="sidenav" href="http://www.baileymountain.org/" onFocus="if(this.blur)this.blur()" onMouseOver="window.status='Bailey Mountain Cloggers'; return true" onMouseOut="window.status=' '; return true">Bailey Mountain Cloggers</a> <br>
+<img src="space.gif" width="1" height="7" border="0" alt=""><br>
+
+<a class="sidenav" href="http://hilltop.mhc.edu/opinions0203/opinions.asp" onFocus="if(this.blur)this.blur()">Opinions</a> <br>
+
+<a class="sidenav" href="http://hilltop.mhc.edu/archives/" onFocus="if(this.blur)this.blur()">Archives</a> <br>
+<a class="sidenav" href="http://hilltop.mhc.edu/contact/staffFall06.html" onFocus="if(this.blur)this.blur()">Contact Hilltop</a> <br>
+
+<img src="space.gif" width="1" height="7" border="0" alt=""><br>
+
+<font color="#ffcc00">Asheville Area</font><br>
+
+<img src="space.gif" width="1" height="7" border="0" alt=""><br>
+
+<a class="sidenav" href="http://hilltop.mhc.edu/movies/" onFocus="if(this.blur)this.blur()" target="_blank">Movies</a> <br>
+
+<a class="sidenav" href="http://hilltop.mhc.edu/music/" onFocus="if(this.blur)this.blur()">Music</a> <br>
+<a class="sidenav" href="http://hilltop.mhc.edu/theatre/" onFocus="if(this.blur)this.blur()">Theatre</a> <br>
+<a class="sidenav" href="http://hilltop.mhc.edu/sports/" onFocus="if(this.blur)this.blur()">Sports</a> <br>
+<a class="sidenav" href="http://www.weather.com/weather/local/USNC0022" onFocus="if(this.blur)this.blur()" onMouseOver="window.status='the Weather Channel'; return true" onMouseOut="window.status=' '; return true">Weather</a> 
+<br>
+<img src="space.gif" width="1" height="7" border="0" alt=""><br>
+
+<a class="sidenav" href="http://www.citizen-times.com/classifieds/index.shtml" onFocus="if(this.blur)this.blur()" onMouseOver="window.status='Classifieds - by the Asheville Citizen-Times'; return true" onMouseOut="window.status=' '; return true">Classifieds</a> <br> &nbsp;&nbsp; Citizen-Times <p>
+
+</p>
+
+<font size="1" color="#FFCC00">This publication reflects the views of the writers, editors, and con-<br>tributors - not necessarily those of the College.</font></td>
+</tr>
+</table>
+
+</td>
+
+<!-- End Nav Bar -->
+
+<td bgcolor="#ffffff" width="5" background="lineshadow.gif">
+&nbsp;
+</td>
+
+<td valign="top">
+
+<!-- Content Table -->
+
+<table width="100%" border="0" cellspacing="0" cellpadding="12">
+
+<tr>
+
+<td>
+
+<p>
+
+
+<p align="center">
+<strong>Panelists Share Conflicting Views on War</strong> <br>
+<em>by Carissa Rice</em> </p>
+<p>
+<!-- PHOTO TABLE -->
+<table width="320" border="0" cellspacing="0" cellpadding="0" align="center"><tr>
+    <td valign="bottom" class="captiontext"> <img src="panelmontage.jpg" alt="" width="320" height="125" border="1" usemap="#Map"><br>
+</td>
+  </tr></table>
+  <table width="320" border="0" cellspacing="0" cellpadding="3" align="center">
+<tr>
+    <td width="33%" align="center" valign="top" class="pgtext"><strong>Harry Hughes</strong></td>
+	<td width="34%" align="center" valign="top" class="pgtext"><strong>Tim Pluta</strong></td>
+	<td width="33%" align="center" valign="top" class="pgtext"><strong>Ken Sehested </strong></td>
+	
+</tr>
+</table>
+
+<!-- END PHOTO TABLE -->
+Three panelists gave very different responses to the question of war with Iraq during a recent seminar attended by more than seventy people at Mars Hill College. (<em><font size="-1">Click on pictures for profiles.</font></em>)
+<p>
+Tim Pluta, told of his personal decision to become a conscientious objector.  Ken Sehested, who was soon to leave on a peace mission to Iraq to observe conditions there, used Scripture to support a peace movement.  Harry Hughes, a Mars Hill College professor retired from the military, argued for the necessity of certain wars, including the war with Iraq.
+<p>
+The seminar - open to all - was attended by students, faculty members, and Mars Hill College scholars in Redway dining room February 4.
+<p>
+The panelists were given ten minutes to present their separate cases, and then they were given the chance to respond to one another's questions and the questions of audience members.
+<p>
+Pluta told of finding himself and becoming a conscious objector while in the military, and of finally being accepted for  "honorable discharge as a decorated veteran."  
+<p>
+He explained how he had once lived in a third world country and became troubled in college by the "overtly giving nature of my friends in poverty and the arrogance of my wealthy classmates."  This led him to give up college.  His disappointed parents suggested that he enroll in the military.  
+<p>
+He jumped at the idea, "there was no information center to remind of me of the disappointments and atrocities of military actions in both peace time and in war," he said.
+<p>
+The military, where he was introduced to screaming officers, rescue techniques, and flying helicopters, at first seemed to excite Pluta.  But gradually he found it difficult to accept his role.  He explained, "I was definitely awake, but it seemed more like a nightmare."  
+<p>
+He and his comrades were belittled and built back up by the officers, "ready to follow orders and ready to kill…with no thoughts about what we were doing," he said.  They were trained to work as a team, and Pluta inevitably became a "trained killer," learning to "kill with my bare hands."
+<p>
+He told of the medals and rewards he was given for serving his country, but he still felt emptiness and shame.  In the military, he was not given the freedom to choose who the enemy was.  He was ordered to kill the enemy and told who the enemy was.  "I had to kill the enemy…and I had to do it.  Or did I?" he asked himself.
+<p>
+He read books and began to question his military actions and own ideas of war.  He realized that he had been blind.  He did have a choice.  He learned that it is possible to become a conscientious objector.  Since he was already in the military, it was not easy.  He was sent to psychiatrists, superior officers, and even a Chaplain.  When they understood Pluta's sincerity, he was accepted for honorable discharge.  Conscientious objectors are not always discharged, but they are often assigned to alternative duties.
+<p>
+Ultimately, he found the decision to be his. "I will continue to choose peace."
+<p>
+	Sehested started his presentation using Scripture, saying that "spiritual corruption and physical violence are mirror images of each other, according to the Bible."  
+<p>
+He suggested that we must love those who do not love us - loving our enemies.  "The text (Bible) says that God loved us, even before we had a chance to respond," Sehested explained.  
+<p>
+He promotes non-violence, believing that "the love of enemies is the very heart beat of the Gospel of Christ and is the very center of Jesus' message."
+<p>
+Sehested admitted that remaining passive and loving the Iraqis would not solve anything on it's own.  "Evil is real," he said.  "But Dr. Martin Luther King was very clear that loving your enemies doesn't necessarily mean liking them."  He explained that love is the commitment to act without physical or emotional violence.
+<p>
+"It is appropriate to be angry at injustice," he said.  The Apostle Paul said, "be angry, but sin not."
+<p>
+"The question is not, whether will we be angry…whether we will demand justice, but how we do it," added Sehested.  He decided to make a difference by calling attention the condition of people in Iraq and to the hardships caused by economic sanctions imposed by the U.N.  
+<p>
+He closed by saying that in even in the world's imperfections, we all are God's children.  "You shall know the truth and the truth will make you -- odd.  We are God's odd ones."
+<p>
+Hughes introduced his speech by saying the military had had a positive impact on him.  "The topic seems to be 'A Question of War,' but the impending war is the war with Iraq…Not with war in general, but war with Iraq."
+<p>
+He began a with a cartoon depicting the U.N. inspectors as football referees infinitely delaying a decision on the war by watching an instant replay again and again. "Whom shall I send?  Send me," Hughes quoted from the book of Isaiah.  He said that "send me" is interpreted several different ways, perhaps with an 18 year old soldier saying "send me" to defend our country.
+<p>
+"Everybody is in favor of peace," he added.  "Certainly the people who have to fight are in favor of peace…The people who have to go do the fighting do not want to go to war."
+<p>
+Hughes further explained the only two alternatives when American lives are at risk.  "We can declare peace in our time and hope for the best, or we can prepare for war and hope we won't have to fight it," he said.  
+<p>
+"War is necessary sometimes," Hughes continued.  "It was necessary to end slavery…And war was necessary to stop Hitler from sweeping across Europe."
+<p>
+Sometimes war is the only alternative, he suggested.  Reminding the audience of the blood shed by men of this country, he added, "Freedom is not free."
+<p>
+In a question and answer session that followed the speeches, one student asked "If war hasn't solved anything in over 2000 years, why is it going to solve anything now?"
+<p>
+Hughes replied, "War has solved a heck of a lot…You're not speaking German, you're speaking English."  
+<p>
+But Pluta said, "Single issues are solved with war.  But nothing over time is solved with war…Is it worth it?"
+<p>
+Another student asked the panel whether oil is the real motive for going to war with Iraq.  Hughes said, "We occupied Germany and Japan, but we didn't stay and sap their resources.  (They) are now world economic powers…Had we been after oil, we could of just (taken) the oil that used to belong to Kuwait and Saudi Arabia…We could have been drowning in oil."  
+<p>
+Sehested, however, gave a different perspective.  "U.S. domestic production of oil is scheduled to reduce by 12% in the next twenty years.  The consumption of oil is expected to rise by one-third in the next twenty years.  The Middle East combined contains approximately 65% of all the known gas and oil reserves around the world.  Iraq has probably as much as Sadie Arabia.  The math is very simple."
+<p>
+The war discussion ended just as it had begun - with a simple truth that remained even after an hour of debate. Early in his speech, Pluta said, "In the end, it's a personal decision for each one of us - how we want to believe and what we want we want to believe."
+<p>
+<a href="http://hilltop.mhc.edu/index.asp">HOME</a>
+
+
+
+</tr>
+</table>
+
+<!-- End Content Table -->
+
+</td>
+
+<td bgcolor="#ffffff" width="5">
+&nbsp;
+</td>
+
+<td valign="top" width="150">
+<br>
+<a href="http://hilltop.mhc.edu/homepage.asp" onFocus="if(this.blur)this.blur()"><img src="homepage.gif" width="150" height="24" border="1" alt="Click to make the Hilltop your homepage!" align="top"></a>
+<img src="space.gif" height="7"><br>
+
+<a href="http://hilltop.mhc.edu/Sesquicentennial/sesindex.asp"><img src="button.jpg" border="1" alt=""></a><br>
+<img src="space.gif" height="7"><br>
+
+
+<a href="http://hilltop.mhc.edu/Calendar/Fall06.asp"><img src="calendarad.jpg" width="150" height="225" border="1" alt=""></a>
+<img src="space.gif" height="7"><br>
+
+<a href="http://hilltop.mhc.edu/OutdoorCorner/LinkedPage.html"><img src="plainbutton2.jpg" width="150" height="113" border="1" alt=""></a>
+<img src="space.gif" height="7"><br>
+
+<!-- ImageReady Slices (opinions.psd) -->
+<a href="http://hilltop.mhc.edu/opinions0203/opinions.asp"><IMG SRC="opinions.gif" WIDTH=150 HEIGHT=200 ALT="Opinions"></a>
+<!-- End ImageReady Slices -->
+
+
+
+
+
+
+<br>
+
+<p>
+
+</td>
+
+<!-- End Ad Bar -->
+
+<td bgcolor="#ffffff" width="20">
+&nbsp;
+</td>
+
+</tr>
+</table>
+
+</body>
+
+</html>
+<map name="Map">
+    <area shape="rect" coords="3,2,101,133" href="http://hilltop.mhc.edu/021703/warpanelists.asp#hughes">
+    <area shape="rect" coords="105,1,212,126" href="http://hilltop.mhc.edu/021703/warpanelists.asp#pluta">
+    <area shape="rect" coords="214,2,319,149" href="http://hilltop.mhc.edu/021703/warpanelists.asp#sehested">
+</map>

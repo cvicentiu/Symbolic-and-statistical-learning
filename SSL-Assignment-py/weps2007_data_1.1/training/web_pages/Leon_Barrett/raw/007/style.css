@@ -1,0 +1,197 @@
+/* LAYOUT
+_________________________________________________*/
+
+body {
+        font: 75% verdana, arial, helvetica, sans-serif;
+/*	COLOR: #666666;*/
+	margin:0;
+	padding:0;
+	text-align:center;
+	BACKGROUND: url(bg_new.gif);
+}
+
+/*overall width of document plus auto margins to make it central*/
+
+#wrapper {
+	clear:both;
+	width: 900px;
+	height:auto;
+	margin: 0 auto;
+	padding:0;
+	text-align:center;
+	BACKGROUND: url(shadow_right2.gif) #ffffff repeat-y right 50%;
+}
+
+/*Can be used for further design enhancements*/
+
+#wrapper2 {
+	margin:0;
+	padding:0;
+	text-align:left;
+}
+
+#headerwrap {
+	width:100%;
+	height:auto;
+	margin:0;
+	padding:0;
+
+}
+
+#navwrap {
+	width:850px;
+	left:25px;
+	height:auto;
+	margin:0;
+	padding:0;
+	position:relative;
+}
+
+/*___________________________________________*/
+
+/*Enables relative absolute positioning to occur*/
+
+#innerwrap {
+	clear:both;
+	position:relative;
+	width:900px;
+	height:auto;
+	margin:0;
+	padding:0;
+}
+
+
+/*Doesn't use positioning in order to enable the footer to always be below the content.*/
+
+#contentwrap {
+	width: 685px;
+	height:auto;
+	margin: 0 0 0 0;
+	padding:10px;
+}
+
+#linkswrap {
+	position:absolute;
+	top:0;
+	left:700px;
+	width: 215px;
+	height:auto;
+	margin: -5pt;
+	padding:0;
+}
+
+#footerwrap {
+	clear:both;
+	width:900px;
+	height:auto;
+	margin:0;
+	padding:0;
+	BACKGROUND: url(shadow_bottom2.gif) no-repeat; HEIGHT: 4px;
+}
+
+#top {
+	height: 10px
+}
+
+
+/* DESIGN
+_________________________________________________*/
+
+
+#nav{
+	margin: 5px 0;
+	padding: 10px;
+	border: 0px dotted #cccccc;
+	BACKGROUND: #eeeeee;
+}
+
+#header, #content, #links, #footer {
+	margin: 5px 0;
+	padding: 15px;
+	border: 0px dotted #cccccc;
+}
+
+#content{
+	BORDER-RIGHT: #cccccc 1px dotted;
+}
+
+#header a {
+	display:block;
+	background-image : url(bridge.jpg);
+	background-position : center center;
+	background-repeat : no-repeat;
+	height:130px;
+	width:auto;
+}
+
+#header span {
+	display:none;
+}
+
+#nav {
+	text-align:center;
+}
+
+#nav ul {
+	margin:0pt;
+	padding:0;
+}
+
+#nav li {
+	display:inline;
+	margin:0;
+	padding:0;
+}
+
+#nav a {
+	padding:5px;
+}
+
+H1 {
+	FONT-FAMILY: Georgia, "Times New Roman", Times, serif; text-shadow: 0.2em 0.2em 0.1em #CCC;
+}
+H2 {
+	FONT-FAMILY: Georgia, "Times New Roman", Times, serif; text-shadow: 0.2em 0.2em 0.1em #CCC; line-height: 0.3em;	margin-bottom:-3pt;
+}
+H1 {
+	FONT-SIZE: 1.25em
+}
+H2{
+	FONT-SIZE: 10pt
+}
+ul {
+
+}
+
+li {
+	margin-top:0pt;
+	margin-left:-13pt;
+	padding:-8pt;
+}
+#footer {
+	text-align:center;
+}
+A {
+    FONT-WEIGHT: bold;
+   TEXT-DECORATION:NONE;
+    COLOR:   	#3399CC;
+} 
+A:visited {
+   TEXT-DECORATION: NONE
+    COLOR: #3399CC;
+}
+A:active {
+   TEXT-DECORATION: NONE
+   COLOR: #0000CC;
+}
+A:hover {
+   TEXT-DECORATION: NONE;
+    COLOR: #0000CC;
+    FONT-WEIGHT: bold;
+}
+.title {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 25px; BACKGROUND: url(flower.gif) no-repeat left top; PADDING-BOTTOM: 3px; COLOR: #6699cc; PADDING-TOP: 3px; text-shadow: 0.2em 0.2em 0.1em #CCC
+}
+.links {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 25px; BACKGROUND: url(quad.gif) no-repeat left center; PADDING-BOTTOM: 3px; PADDING-TOP: 3px; text-shadow: 0.2em 0.2em 0.1em #CCC
+}

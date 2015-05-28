@@ -1,0 +1,65 @@
+/*
+Filename: fontstyles2.css
+Application: Bay Journal Website
+Created By: Mike Land
+Date Created: 11/18/2004
+Purpose: This page is used to control medium font styles on Bay Journal webpages
+*/
+
+/* CSS Document for Medium Font Size*/
+
+@import url("styles.css");
+
+.content {
+	
+} 
+
+#content #menu {
+	float:right;
+	width:170px; 
+	padding:9px;
+	background:#CAC7BE;
+	margin:10px 4px 10px 8px;
+	border:solid;
+	border-width:thin;
+	border:2px dashed #999;
+}
+
+.content p {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 17px;
+} 
+
+.content ul {
+	list-style-image:url("../images/block.gif");
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 13px; 
+	margin:25px;
+  }
+  
+.content ol {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin-left: 5px;
+	font-size: 13px; 
+	margin:30px;
+  }
+  
+  .othertext {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 17px;
+} 
+
+ul.homepage {
+	list-style-image:url("../images/block.gif");
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px; 
+	margin:20px;
+  }
+  
+.homepagefeatures p {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 12px;
+}   

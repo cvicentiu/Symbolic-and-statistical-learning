@@ -1,0 +1,151 @@
+var od_hlpWin;
+function showHelp(url)
+{
+	window.open('/help/ViewThemeHelp.jsp?id='+url, 'openDemocracy_Help', 'width=400, height=400, scrollbars=1, status=yes, resizable=yes');
+}
+
+var od_bioWin;
+function showBio(url)
+{
+	if (url)
+	{
+		od_bioWin	= window.open('/authors/View.jsp?id='+url,'openDemocracy_Biography','width=400, height=400, scrollbars=1, status=yes, resizable=yes');
+		od_bioWin.focus();
+	}
+	return false;
+}
+
+
+var od_licWin;
+function showLic()
+{
+	od_licWin	= window.open('../other_content/acemdemic_lic.jsp','od_bioWin','width=660, height=400, scrollbars=1, status=1');
+}
+function openRegistration () {
+	win = window.open('/registration2/screen1.jsp', 'openDemocracy_Registration', 'width=780, height=510, scrollbars=1, status=no, resizable=yes');
+    win.focus();	
+		return win;    
+}
+
+function openLogin () {
+	//win = window.open('/registration2/sign_in.jsp', 'openDemocracy_Login', 'width=535, height=360, scrollbars=1, status=yes, resizable=yes');
+    //win.focus();
+    
+     window.location='/registration6/sign_in.jsp';
+
+}
+
+function openLicenses () {
+    win = window.open('/registration/organisation/org_registration.jsp', 'openDemocracy_Licenses', 'width=640, height=495, scrollbars=1, status=yes, resizable=yes');
+    win.focus();
+}
+
+function openMember () {
+	win = window.open('/registration2/join_free.jsp', 'openDemocracy_Member_Registration', 'width=535, height=350, scrollbars=1, status=yes, resizable=yes');
+	win.focus();
+}
+
+function openBacker () {
+	win = window.open('/registration2/backers.jsp', 'openDemocracy_Member_Registration', 'width=535, height=350, scrollbars=1, status=yes, resizable=yes');
+	win.focus();
+}
+
+function openHelp () {
+    win = window.open('/other_content/help.jsp', 'openDemocracy_Help', 'width=800, height=600, scrollbars=1, status=yes, resizable=yes');
+    win.focus();
+}
+
+function openTermsAndConditions () {
+    win = window.open('/registration/terms/member_terms_and_conditions.jsp', 'openDemocracy_Terms_and_Conditions', 'width=800, height=600, scrollbars=1, status=yes, resizable=yes');
+    win.focus();
+}
+
+function openLegal () {
+    win = window.open('/about/about_od_legal.html', 'openDemocracy_Legal', 'width=800, height=600, scrollbars=1, status=yes, resizable=yes');
+    win.focus();
+}
+
+function openSupporter () {
+		win = window.open('/registration2/upgrade_2_supporter.jsp', 'openDemocracy_Supporter', 'width=535, height=360, scrollbars=1, status=yes, resizable=yes');
+    win.focus();
+}
+
+function openTour () {
+    win = window.open('/tour/index.jsp', 'Tour_openDemocracy', 'width=640, height=480, scrollbars=1, status=yes, resizable=yes');
+    win.focus();
+}
+
+function openPrivacyPolicy () {
+    win = window.open('/registration/terms/member_terms_and_conditions.jsp#pp', 'openDemocracy_Login', 'width=640, height=480, scrollbars=1, status=yes, resizable=yes');
+    win.focus();
+}
+
+function openDonate () {
+	win = window.open('/registration2/donate.jsp', 'openDemocracy_Donate', 'width=535, height=420, scrollbars=1, status=yes, resizable=yes');
+    win.focus(); 
+}
+
+function openArchived () {
+	win = window.open('/registration2/archived.jsp', 'openDemocracy_Archived', 'width=535, height=420, scrollbars=1, status=yes, resizable=yes');
+    win.focus(); 
+}
+
+function openRenew () {
+	win = window.open('/registration2/supporter_renew.jsp', 'openDemocracy_Renew', 'width=560, height=480, scrollbars=1, status=yes, resizable=yes');
+    win.focus(); 
+}
+
+function openGift () {
+	win = window.open('/gift_subs/index.jsp', 'openDemocracy_Gift', 'width=590, height=560, scrollbars=1, status=yes, resizable=yes');
+    win.focus(); 
+}
+
+function microwinOp(url,w,h,src) {
+if (src == 1) {
+winoptions = "height=" + h + ",width=" + w + ",scrollbars=1"
+} else {
+winoptions = "height=" + h + ",width=" + w + ""
+}
+
+var pop = window.open(url,"pop",winoptions)
+}
+
+function launchAudio (url) {
+	win = window.open(url, 'openDemocracy_Audio', 'width=250,height=120');
+    win.focus(); 
+}
+
+function launchAudio2 (url) {
+	win = window.open(url, 'openDemocracy_Audio', 'width=130,height=140');
+    win.focus(); 
+}
+
+
+var od_poll;
+function openPoll(url)
+{
+	if (url)
+	{
+		openPoll	= window.open(url, 'openQuestion', 'width=320,height=315,scrollbars=1,status=yes,resizable=no');
+		openPoll.focus();
+	}
+	return false;
+}
+
+
+var od_pollresults;
+function openPollResults(url)
+{
+	if (url)
+	{
+		win	= window.open(url, 'openQuestion', 'width=320,height=315,scrollbars=1,status=yes,resizable=no');
+		win.focus();
+	}
+	return false;
+}
+
+
+function openWindow(args) {
+    var url = arguments[0];
+    window.open(url, 'image', 'width=640,height=480,scrollbars=yes,status=no,resizable=no')
+}

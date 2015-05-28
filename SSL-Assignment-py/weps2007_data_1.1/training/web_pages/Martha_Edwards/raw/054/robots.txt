@@ -1,0 +1,9 @@
+# robots.txt for http://www.xmission.com/
+
+User-agent: *
+Disallow: /~snowhare/archive # This is an immense Usenet article archive
+Disallow: /cgi-bin/ # various scripts that should not be indexed
+Disallow: /~bill1/  # Doesn't choose to be indexed
+Disallow: /~cpclark/  # Doesn't choose to be indexed
+Disallow: /~suwa/   # Prefer to be indexed via www.suwa.org
+Disallow: /pub/lists/bunkers/ # Hoping these archives will expire out of goolge cache

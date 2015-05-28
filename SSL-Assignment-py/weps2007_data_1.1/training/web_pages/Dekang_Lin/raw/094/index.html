@@ -1,0 +1,191 @@
+<HTML>
+<HEAD>
+<TITLE>LREC 2002 Workshop</TITLE>
+<META NAME="generator" CONTENT="ToniArts EasyHtml v.2.2">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<CENTER><H3>Beyond PARSEVAL<BR>Towards Improved Evaluation Measures for Parsing Systems</H3></CENTER>
+
+<BR>
+
+<H4>Overview</H4>
+
+<P align="justify">The PARSEVAL metrics for evaluating the accuracy of parsing systems have underpinned recent advances in stochastic parsing with grammars learned from treebanks (most prominently the Penn Treebank of English). However, a new generation of parsing systems is emerging based on different underlying frameworks and covering other languages. PARSEVAL is not appropriate for many of these approaches: the NLP community therefore
+needs to come together and agree on a new set of parser evaluation standards.
+
+<H4>Motivation and Aims</H4>
+
+<P align="justify">In line with increasing interest in fine-grained syntactic and semantic representations, stochastic parsing is currently being applied to
+several high level syntactic frameworks, such as unification-based grammars, tree-adjoining grammars and combinatory categorial grammars. A variety of different types of training data are being used, including dependency annotations, phrase structure trees, and unlabelled text. Other researchers are building parsing systems using shallower frameworks, based for example on finite-state transducers. Many of these novel parsing approaches are using alternative evaluation measures -- based on dependencies, valencies, or exact or selective category match -- since the PARSEVAL measures (of bracketing match with respect to atomic-labelled phrase structure trees) cannot be applied, or are uninformative.
+<P align="justify">The field is therefore confronted with a lack of common evaluation metrics, and also of appropriate gold standard evaluation corpora in languages other than English. We need a new and uniform scheme for parser evaluation that covers both shallow and deep grammars, and allows for comparison and benchmarking across different syntactic frameworks and different language types.
+<P align="justify">A previous LREC-hosted workshop on parser evaluation in 1998 (see<A HREF="http://ceres.ugr.es/~rubio/elra/parsing.html">http://ceres.ugr.es/~rubio/elra/parsing.htm</A>) brought together a
+number of researchers advocating parser evaluation based on dependencies or grammatical relations as a viable alternative to the PARSEVAL measures.
+<P align="justify">The aim of this workshop is to start an initiative by bringing together four relevant parties:
+<UL>
+<LI type=disc>Researchers in symbolic and stochastic parsing
+<LI type=disc>Builders of annotated corpora
+<LI type=disc>Representatives from different syntactic frameworks
+<LI type=disc>Groups with interests in and proposals for parser evaluation
+</UL>
+ 
+<P align="justify">The workshop will provide a forum for discussion with the aim of defining a new parser evaluation metric; we also intend the workshop to
+kick off a sustained collaborative effort into building or deriving sufficiently large evaluation corpora, and possibly training corpora appropriate to the new metric. To maintain the momentum of this initiative we will work towards setting up a parsing competition based on new standard evaluation corpora and evaluation metric.
+
+<H4>Topics of Interest</H4>
+
+<P align="justify">The workshop organisers invite papers focussing on:
+<UL>
+<LI type=disc>Benchmarking the accuracy of individual parsing systems
+<LI type=disc>Parser evaluation
+<LI type=disc>Design of annotation schemes covering different languages and grammar frameworks
+<LI type=disc>Creation of high-quality evaluation corpora
+</UL>
+<P align="justify">Papers on the following topics will be particularly welcome: 
+<UL>
+<LI type=disc>Descriptions of experiments using alternative evaluation measures
+    with existing (stochastic or symbolic) parsers, focussing on  comparison and discussion of qualitative differences
+<LI type=disc>Methods for creation of evaluation (or training) corpora, allowing flexible adaptation to a new evaluation standard based on  dependencies or grammatical relations
+<LI type=disc>Comparisons of existing or possible new schemes for dependency-based evaluation (differences, similarities, problems)
+</UL>
+
+<H4>Workshop Agenda</H4>
+
+<P align="justify">The one-day workshop will consist of (30-minute) paper presentations, a panel session, and an extended open session at which important results of the workshop will be summarised and discussed.
+<P align="justify">As a follow-up, we hope to arrange a half-day meeting outside the workshop format to discuss concrete action plans, create working groups, and plan future collaboration.
+
+<H4>Workshop Organisers</H4>
+
+<table border=2 BGcolor=#FFFFFF>
+<tr>
+<td>John Carroll</td>
+<td>University of Sussex (UK)</td>
+<td> <A HREF="mailto: John.Carroll@cogs.susx.ac.uk"> John.Carroll@cogs.susx.ac.uk</A>
+</tr>
+<tr>
+<td>Anette Frank</td>
+<td>DFKI GmbH, Saarbruecken (Germany)</td>
+</tr>
+<tr>
+<td>Dekang Lin</td>
+<td>University of Alberta (Canada)</td>
+</tr>
+<tr>
+<td>Detlef Prescher</td>
+<td>DFKI GmbH, Saarbruecken (Germany)</td>
+</tr>
+<tr>
+<td>Hans Uszkoreit</td>
+<td> DFKI GmbH and Saarland University, Saarbruecken (Germany)
+</table>
+
+<H4>Programme Committee</H4>
+
+<table border=2 BGcolor=#FFFFFF>
+<tr>
+<td>Salah Ait-Mokhtar</td><td>XRCE Grenoble</td>
+</tr><tr>
+<td>Thorsten Brants</td>
+<td>Xerox PARC</td>
+</tr>
+<tr>
+<td>Gosse Bouma</td>
+<td> Rijksuniversiteit Groningen</td>
+ </tr>
+<tr>
+<td>Ted Briscoe</td>
+<td> University of Cambridge</td>
+ </tr>
+<tr>
+<td>John Carroll</td>
+<td> University of Sussex</td>
+ </tr>
+<tr>
+<td>Jean-Pierre Chanod</td>
+<td>XRCE Grenoble</td>
+ </tr>
+<tr>
+<td>Michael Collins</td>
+<td> AT&T Labs-Research</td>
+ </tr>
+<tr>
+<td>Anette Frank</td>
+<td> DFKI Saarbruecken</td>
+ </tr><tr>
+<td>Josef van Genabith</td><td>Dublin City University</td>
+</tr><tr>
+<td>Gregory Grefenstette</td>
+<td>Clairvoyance, Pittsburgh</td>
+ </tr>
+<tr>
+<td>Julia Hockenmaier</td>
+<td>University of Edinburgh</td>
+ </tr>
+<tr>
+<td>Dekang Lin</td>
+<td>University of Alberta</td>
+ </tr><tr>
+<td>Chris Manning</td><td>Stanford University</td>
+</tr><tr>
+<td>Detlef Prescher</td>
+<td> DFKI Saarbruecken</td>
+ </tr>
+<tr>
+<td>Khalil Sima'an</td>
+<td>University of Amsterdam</td>
+ </tr>
+<tr>
+<td>Hans Uszkoreit</td>
+<td>DFKI Saarbruecken and Saarland University</td>
+</table>
+
+<H4>Submissions</H4>
+
+
+<P align="centre">Abstracts for workshop contributions should not exceed two A4 pages (excluding references). An additional title page should state: the
+title; author(s); affiliation(s); and contact author's e-mail address, as well as postal address, telephone and fax numbers.
+<P align="centre">Submission is to be sent by email, preferably in Postscript or PDF format, to <A HREF="mailto: John.Carroll@cogs.susx.ac.uk">John Carroll</A> before 1st February 2002.  Abstracts will be reviewed by at least 3 members of the program committee.
+<P align="centre">Formatting instructions for the final full version of papers will be sent to authors after notification of acceptance.
+
+<H4>Important Dates</H4>
+
+<table border=2 BGcolor=#FFFFFF>
+<tr>
+<td>Deadline for receipt of abstracts</td>
+<td>1st February 2002</td>
+</tr>
+<tr>
+<td>Notification of acceptance</td>
+<td>22nd  February 2002</td>
+</tr>
+<tr>
+<td>Camera-ready final version for workshop proceedings</td>
+<td> 12th April 2002</td>     
+</tr>
+<tr>
+<td>Workshop</td>
+<td>2nd June 2002</td>
+</table>
+
+<H4>Workshop Registration Fees</H4>
+The registration fees for the workshop are:
+    <UL>
+<LI type=disc>If you are not attending LREC: 140 EURO
+<LI type=disc>If you are attending LREC: 90 Euro
+</UL>
+<P align="centre">All attendees will receive a copy of the workshop proceedings. 
+</BODY>
+</HTML>
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

@@ -1,0 +1,358 @@
+.subTABLE {
+	background-color: #CC9966;
+	color: #31396A;
+}
+h1 {
+	font: normal 2em georgia, times, serif;
+	color: #A2B593;
+	text-decoration: none;
+}
+a.sub-link {
+	font-weight: normal;
+	font-size: 1em;
+	color: #31396A;
+	text-decoration: none;
+}
+a.sub-link:hover {
+	font-size: 1em;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: underline;
+}
+.padLeft {
+	padding-left: 20px;
+	margin-left: 20px;
+	padding-right: 10px;
+}
+.topic-titleTEXT {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: underline;
+}
+.cap-top {
+	background-color: #CC9966;
+	background-image: url(images/desert-cap-top.gif);
+	background-repeat: no-repeat;
+}
+.cap-down {
+	background-color: #CC9966;
+	background-image: url(images/desert-cap-bot.gif);
+	background-repeat: no-repeat;
+}
+.titleTEXT {
+	font-size: 1.45em;
+}
+.sectionTABLE {
+	background-color: #ffffff;
+	background-image: url(images/section_tile.gif);
+	background-repeat: repeat-y;
+}
+.whiteBG {
+	background-color: #ffffff;
+}
+.market-right {
+	background: #CC9966 url(images/new_marketplace_tile.jpg) repeat-x;
+}
+.left-market {
+	background-color: #567766;
+}
+.section-head {
+	background-color: #a9c3de;
+	background-image: url(images/section_head_tile.gif);
+	background-repeat: repeat-x;
+}
+.section2TABLE {
+	background-color: #ffffff;
+	background-image: url(images/section2_tile.gif);
+	background-repeat: repeat-y;
+}
+.foryouTABLE {
+	color: #FFFFFF;
+	background-color: #336699;
+}
+.poemTEXT {
+	font-size: 1.3em;
+}
+.priceTEXT {
+	color: #CC9966;
+}
+.colonTEXT {
+	font-weight: bold;
+	color: #381519;
+	text-decoration: none;
+}
+a.sub-menu {
+	text-decoration: none;
+}
+a.sub-menu:hover {
+	text-decoration: underline;
+}
+
+/* New Styles - Added 11.06.05 by Andy Ferra */
+
+/* =Specs
+=====================================================================*/
+
+h2 {
+  font: bold 16px georgia, times, serif;
+}
+h2 span {
+  display: block;
+  font: italic normal 12px georgia, times, serif;
+}
+h2 span a {
+  font: italic normal 12px georgia, times, serif;
+}
+
+table.specs {
+  empty-cells: show;
+  border-collapse: collapse;
+  background: none;
+  font-size: 11px;
+}
+table.specs th {
+  color: black;
+  text-align: left;
+  vertical-align: top;
+  background: none;
+  padding: 0 5px 2px 0;
+}
+table.specs td {
+  color: black;
+  text-align: left;
+  vertical-align: top;
+  padding: 0 5px 2px 0;
+}
+
+table.simple {
+  empty-cells: show;
+  border-collapse: collapse;
+  background: none;
+  font-size: 12px;
+}
+table.simple td {
+  text-align: left;
+  vertical-align: middle;
+  padding: 0 5px 5px 0;
+}
+
+.prod_desc {
+  font-size: 11px;
+  line-height: 1.25em;
+}
+.prod_image {
+  float: left;
+  margin: 0 10px 10px 0;
+  border: 1px solid #DDD;
+  padding: 2px;
+}
+.prod_price {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+table.invoice {
+  empty-cells: show;
+  background: none;
+  font-size: 12px;
+}
+table.invoice thead th {
+  padding: 5px 10px;
+  background: #336699;
+  color: white;
+  text-align: center;
+}
+table.invoice tbody th,
+table.invoice tbody td {
+  padding: 5px 10px;
+  border-bottom: 1px solid #eee;
+}
+table.invoice tr.total th,
+table.invoice tr.total td {
+  background: #eee;
+  color: black;
+  font-weight: bold;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+}
+
+table.prod_browse {
+  width: 100%;
+  border-collapse: collapse;
+  empty-cells: show;
+}
+.prod_browse td {
+  vertical-align: top;
+  text-align: left;
+}
+.prod_browse .image img {
+  margin-right: 5px;
+}
+.prod_browse .info h4 {
+  margin: .5em 0 .25em 0;
+  padding: 0;
+  font: bold 12px georgia, times, serif;
+}
+.prod_browse .info h4 a {
+  font: bold 12px georgia, times, serif;
+}
+
+table.form_layout {
+  border-collapse: collapse;
+  empty-cells: show;
+  font: 12px georgia, times, serif;
+}
+.form_layout th {
+  text-align: left;
+  vertical-align: top;
+  padding: 3px 15px 10px 0;
+}
+.form_layout th em {
+  font-size: 11px;
+  font-weight: normal;
+}
+.form_layout td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0 10px 10px 0;
+}
+.form_layout input {
+  font: 12px arial, sans-serif;
+  padding: 2px;
+  border: 1px solid #C1C3D2;
+}
+.form_layout .button {
+  background: #6F0A0D;
+  border-top: 2px solid #842E30;
+  border-right: 2px solid #5C080B;
+  border-bottom: 2px solid #5C080B;
+  border-left: 2px solid #842E30;
+  color: white;
+  font: 11px arial, sans-serif;
+}
+.feat_pub {
+  width: 264px;
+  margin: 1em auto 0 auto;
+  border-collapse: collapse;
+  border: none;
+}
+.feat_pub .top {
+  padding: 0;
+}
+.feat_pub .top img {
+  border: none;
+}
+.feat_pub .content {
+  background: transparent url(images/section_tile.gif) top center repeat-y;
+  padding:  0 20px 10px 20px;
+  height: 235px;
+  vertical-align: top;
+}
+.feat_pub .image {
+  float: left;
+  margin: 0 5px 5px 0;
+}
+.feat_pub .bottom {
+  background: transparent url(images/section_bot.gif) top center no-repeat;
+  height: 15px;
+  width: 264px;
+  padding: 0;
+}
+.feat_prod {
+  border-collapse: collapse;
+  empty-cells: show;
+}
+.feat_prod .image {
+  padding: 10px;
+  vertical-align: top;
+  text-align: left;
+}
+.feat_prod .info {
+  vertical-align: top;
+  text-align: left;
+  padding: 10px 20px 1em 0;
+}
+
+/* New styles added due to menu change 11-15-05 - Adam*/
+
+a.menuTEXT {
+display:block;
+font-weight:400;
+font-size:1.1em;
+color:#fff;
+font-family:Arial, Helvetica, sans-serif;
+text-decoration:none;
+}
+
+.menuCell {
+padding-right:8px;
+font-weight:400;
+font-size:1.1em;
+color:#fff;
+font-family:Arial, Helvetica, sans-serif;
+border-left:1px solid #fff;
+border-top:1px solid #fff;
+border-right:1px solid #fff;
+}
+
+.menuCell#community {
+background-color:#36c;
+}
+
+.menuCell#marketplace {
+background-color:#696;
+}
+
+.menuCell#support {
+background-color:#66f;
+}
+
+.menuCell#postcards {
+background-color:#966;
+}
+
+.menuCell#news {
+background-color:#666;
+}
+
+.menuCell#music {
+background-color:#933;
+}
+
+.menuCell#people {
+background-color:#336;
+}
+
+.menuCell#kids {
+background-color:#b9894a;
+}
+
+.menuCell#giveseek {
+background-color:#543f48;
+}
+
+.menuCell#enewsletter {
+background-color:#a3403e;
+}
+
+.menuCelltop {
+padding-right:10px;
+font-weight:400;
+font-size:1.1em;
+color:#fff;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+.menuCellbottom {
+padding-right:10px;
+font-weight:400;
+font-size:1.1em;
+color:#fff;
+font-family:Arial, Helvetica, sans-serif;
+border-top:1px solid #fff;
+}
+.searchCell {
+ background-color: #ebe6c8;
+}

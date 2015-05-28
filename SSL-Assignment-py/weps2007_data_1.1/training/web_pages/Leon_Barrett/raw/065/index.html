@@ -1,0 +1,69 @@
+<h1>Camera interpolation</h1>
+
+<p> If controlling a single camera is difficult, constructing a camera
+path is even more so. The traditional approach is to specify a
+sequence of key frames, then interpolate from one key frame to the
+next. This works well for some camera motions, but can produce
+unexpected results for certain motions. A simultaneous <a
+href="http://www.cs.wustl.edu/~cmg/content/movies/tog2005ci/TRExample.mp4">rotation and translation</a> can
+result in the object of interest flying off of the screen. A <a
+href="http://www.cs.wustl.edu/~cmg/content/movies/tog2005ci/COPExample.mp4">center of projection</a> change
+results in substantial jitter as well.
+
+<p> <IMG src = "tog2005ci.jpg" align="left"> We present two solutions to
+the camera interpolation problem. The first uses <a
+href="http://www.cs.wustl.edu/~cmg/content/papers/jgt2006ci/jgt2006ci.pdf">linear matrix interpolation</a> to
+interpolate the camera matrices. The interpolation can be a linear
+interpolation, a spline-weighted blend, or an interpolating blend. The
+second approach performs the interpolation in <a
+href="http://www.cs.wustl.edu/~cmg/content/papers/tog2005ci/tog2005ci.pdf">image space</a>.
+
+<p> Image-space interpolation also provides additional control over
+the trajectories and sizes of selected objects in screen space. This
+lets the user use far <a href="http://www.cs.wustl.edu/~cmg/content/movies/tog2005ci/TradVsIS.mp4">fewer</a>
+key frames. To support image-space interpolation we developed the
+Four-point camera representation, which is more suited to solving image-space constraint problems.
+
+<p> See also <a href="http://www.cs.wustl.edu/~cmg/content/research/camera.html">camera control</a>
+and <a href="http://www.cs.wustl.edu/~cmg/content/research/cameraNonLinear.html">non-linear</a> projection.
+
+<h2> Image-space interpolation movies </h2>
+
+<p> The first three movies demonstrate the different behaviour of
+three different image-space solvers and traditional key framing. The
+next two movies demonstrate directly editing the camera using
+image-space constraints.
+
+<ul>
+
+<li> <a href="http://www.cs.wustl.edu/~cmg/content/movies/tog2005ci/TRExample.mp4">Translation and rotation</a> example.
+<li> <a href="http://www.cs.wustl.edu/~cmg/content/movies/tog2005ci/TransExample.mp4">Translation</a> with image-space manipulation example.
+<li> <a href="http://www.cs.wustl.edu/~cmg/content/movies/tog2005ci/COPExample.mp4">Center of projection</a> example.
+<li> <a href="http://www.cs.wustl.edu/~cmg/content/movies/tog2005ci/Drag4pts.avi">Editing</a> a single camera position with four screen-space constraints.
+<li> <a href="http://www.cs.wustl.edu/~cmg/content/movies/tog2005ci/Drag8pts.avi">Editing</a> a single camera position with eight screen-space constraints.
+<li> <a href="http://www.cs.wustl.edu/~cmg/content/movies/tog2005ci/TradVsIS.mp4">Comparison</a> of traditional key framing to image-space key framing on the following task: Make the table create an S shape while simultaneously rotating the table by 180 degrees and shrinking it.
+<li> <a href="http://www.cs.wustl.edu/~cmg/content/movies/tog2005ci/TransKeyFramed.mp4">Comparison</a> of traditional key framing to image-space key framing for editing an existing camera sequence which consists primarily of translations.
+<li> <a href="http://www.cs.wustl.edu/~cmg/content/movies/tog2005ci/TRKeyFramed.mp4">Determining</a> how many key frames need to be added to produce visually smooth results for the simultaneous rotate and translate example.
+<li> <a href="http://www.cs.wustl.edu/~cmg/content/movies/tog2005ci/COPKeyFramed.mp4">Determining</a> how many key frames need to be added to produce visually smooth results for the center of projection example.
+<li> <a href="http://www.cs.wustl.edu/~cmg/content/movies/tog2005ci/Stages.mp4">Demonstration</a> of the stages that make up the screen-space interpolation approach (screen-space interpolation in the forward and backward directions, followed by a blend and repeated filtering and fitting).
+</ul>
+
+<h2> Linear matrix interpolation movies </h2>
+<ul>
+<li> <a href="http://www.cs.wustl.edu/~cmg/content/movies/jgt2006ci/linearInterp.avi">Two examples</a> of using linear matrix interpolation to create inbetween frames.
+<li>
+</ul>
+
+<h2> Papers </h2>
+
+<ul>
+<li> <a href="http://www.cse.seas.wustl.edu/techreportfiles/getreport.asp?516">Screen-space interpolation</a>. Includes a comparison of different screen-space camera constraint solvers.
+
+<li> <a href="http://www.cs.wustl.edu/~cmg/content/papers/jgt2006ci/jgt2006ci.pdf">Linear matrix interpolation</a>. Includes some numbers on how to get the most out of your linear matrix interpolation. Also includes a fix if you need to rotate by more than 90 degrees.
+</ul>
+
+<h2> Students </h2>
+<ul>
+<li><a href="http://userfs.cec.wustl.edu/~aeh1/">Amy Hawkins (PhD)</a>
+<li> <a href="http://www.icsi.berkeley.edu/~barrett/">Leon Barrett</a> (undergraduate, now at UC Berkeley)
+</ul>

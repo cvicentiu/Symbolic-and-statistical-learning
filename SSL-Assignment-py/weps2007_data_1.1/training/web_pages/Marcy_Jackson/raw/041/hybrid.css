@@ -1,0 +1,781 @@
+
+
+/* General Element Styles
+----------------------------------------------- */
+body, p {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #333333;
+	font-size: 11px;
+	line-height: 13px;
+	margin-top: 5px;
+}
+
+.asian,  .asian p {
+	font-size: 14px;
+	line-height: 17px;
+}
+
+div#vietnam h1, div#vietnam h2, div#vietnam h3, div#vietnam h4, div#vietnam table, div#vietnam td, div#vietnam th, div#vietnam p, div#vietnam span, div#vietnam div  {
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+}
+
+.vietnam, .vietnam p, .vietnam h1, .vietnam h2, .vietnam h3, .vietnam h4, .vietnam ul, .vietnam li, .vietnam span {
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+}
+
+a:link {
+	color: #0066cc;
+	font-weight: bold;
+	text-decoration: none;
+}
+a:visited {
+	color: #0066cc;
+	font-weight: bold;
+	text-decoration: none;
+}
+a:hover {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+acronym, abbr {
+  border-bottom: 0;
+  font-style: normal;
+  cursor: help;
+}
+
+h1 {
+	font-size: 20px;
+	font-weight: bold;
+	color: #333333;
+	line-height: 22px;
+	margin-top: 20px;
+}
+h2 {
+	font-size: 16px;
+	font-weight: bold;
+	color: #333333;
+	line-height: 18px;
+	margin-bottom: 5px;
+}
+h3 {
+	font-size: 14px;
+	font-weight: bold;
+	color: #333333;
+	line-height: 16px;
+	margin-bottom: 5px;
+}
+h4 {
+	font-size: 12px;
+	font-weight: bold;
+	color: #333333;
+	line-height: 14px;
+	margin-bottom: 5px;
+}
+
+.subhead {
+ background-color: #D6EBFB;
+ margin-top: 15px;
+ margin-bottom: 5px;
+ padding: 2px;
+}
+
+.subheadwhite {
+ color: #FFFFFF;
+ background-color: #094B8D;
+ margin-top: 15px;
+ margin-bottom: 5px;
+ padding: 2px;
+}
+
+.bluelinksm {
+	font-weight: bold; font-size: 10px; color: #0066cc; }
+.requiredText {
+	font-weight: bold; font-size: 10px; color: red; 
+}
+.important {
+	font-weight: bold; font-size: 10px; color: red; 
+}
+
+.copytext {
+
+	font-size: 10px; color: #9c9c9c;
+}
+
+
+/* Table Backgrounds & Structure
+----------------------------------------------- */
+body {
+	background-color: #AB9978;
+	margin: 0;
+	padding: 0;
+}
+
+#top {
+	
+	position: relative;
+	margin: auto;
+	width: 780px;
+}
+#globalheader {
+	background-color: #094B8D;
+}
+#localnav {
+	background-color: #F3E3C5;
+	padding: 0px;
+}
+
+#contentwell {
+	background-color: white;
+	padding: 0px;
+}
+#content {
+	margin: 0px 26px 15px 26px;
+	/* border: 1px solid red; */
+}
+
+/* Navigation
+----------------------------------------------- */
+#navigation {
+	background: #82AFDD;
+	border-bottom: 4px solid #F3E3C5;
+	border-top: 2px solid #82AFDD;
+	float: left;
+	font-size: 10px;
+	line-height: 13px;
+	list-style: none;
+	margin: 0;
+	padding: 0px 0px 0px 10px;
+	width: 770px;
+}
+
+#navigation #tab-parents a {
+	background: #fbb56f url(/images/left-tab-melon3.gif) left top no-repeat;  
+	padding-left: 30px; 
+}
+
+#navigation #tab-staff a {
+	background: #fbb56f url(/images/right-tab-melon3.gif) right top no-repeat; 
+	padding-right: 30px; 
+}
+
+#navigation a {
+	color: #094B8D;
+	float: left;
+	font-weight: bold;
+	padding: 3px 8px;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+
+#navigation a:hover, #navigation a.active, #home #tab-home a {
+	background: #F3E3C5;
+	color: #663300;
+}
+
+#navigation li {
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0 0px 0 0;
+}
+
+#navigation .ON, #navigation .ON a {
+	background: #F3E3C5;
+	color: #663300;
+}
+
+#tab-parents a, #tab-students a, #tab-staff a {
+	color: #663300;
+}
+
+#tab-parents a:hover, #tab-parents a.active, #tab-students a:hover, #tab-students a:active, #tab-staff a:hover, #tab-staff a:active {
+	background-color: #FBB56F;
+	color: #FFFFFF;
+}
+
+#tab-parents, #tab-students, #tab-staff {
+	background-color: #FBB56F;
+}
+
+
+/* Search
+----------------------------------------------- */
+#search {
+	vertical-align: top;
+}
+
+#search label {
+	color: white;
+}
+
+#search dl {
+	padding-top: 5px;
+	margin-bottom: 2px;
+}
+
+#search dd {
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+
+#siteindex {
+	margin: 0px;
+	font-size: 10px;
+	color: white;
+}
+
+#seek1 {
+	margin: 0px;
+	padding: 0px;
+}
+
+#seek1 a:link {
+	color: white;
+	font-size: 10px;
+}
+
+/* LocalNav
+----------------------------------------------- */
+#localnav div {
+	margin: 0px 0px 15px 0px;
+	padding: 0px 0px 0px 20px;
+}
+
+#localnav h1 {
+	font-size: 12px; 
+	font-weight: bold;
+	line-height: 13px;
+	color: #ffffff;
+	background-color: #AB9978;
+	padding: 4px 0px 6px 18px;
+	margin: 8px 0px 4px 0px;
+	background-image: url(/images/triangle_white_8x9.gif);
+	background-position: 8px 6px;
+	background-repeat: no-repeat;
+}
+
+#localnav h1 a:link, #localnav h1 a:visited, #localnav h1 a:hover {
+	font-weight: bold;
+	color: #ffffff;
+}
+
+#localnav h1 a:hover {
+	text-decoration: underline;
+}
+
+#localnav h2 {
+	font-size: 11px; 
+	font-weight: bold;
+	line-height: 12px;
+	color: #ffffff;
+	background-color: #AB9978;
+	padding: 4px 0px 6px 18px;
+	margin: 8px 0px 4px 0px;
+	background-image: url(/images/triangle_white_8x9.gif);
+	background-position: 8px 6px;
+	background-repeat: no-repeat;
+}
+
+#localnav h2 a:link, #localnav h2 a:visited, #localnav h2 a:hover {
+	font-weight: bold;
+	color: #ffffff;
+}
+
+#localnav h2 a:hover {
+	text-decoration: underline;
+}
+
+#localnav ul {
+	font-size: 10px; 
+	line-height: 11px;
+	list-style: square url(/images/sub_bullet6x5.gif) outside;
+	color: #663300;
+	margin: 0px 0px 0px 14px;
+	padding: 0px 5px 0px 7px;
+}
+
+#localnav ul.size2 {
+	font-size: 11px; 
+	line-height: 12px;
+	list-style: square url(/images/sub_bullet6x5.gif) outside;
+	color: #663300;
+	margin: 0px 0px 0px 14px;
+	padding: 0px 5px 0px 7px;
+}
+
+#localnav li {
+	margin-top: 4px;
+	padding-right: 5px;
+}
+
+#localnav p, #localnav h3 {
+	font-size: 10px; 
+	line-height: 11px;
+	color: #663300;
+	margin: 0px;
+	padding: 0px 5px 0px 0px;
+}
+#localnav a:link, #localnav a:visited, #localnav a:hover {
+	font-weight: bold;
+	color: #663300;
+	text-decoration: none;
+}
+
+#localnav a:hover {
+	text-decoration: underline;
+}
+
+div #localnavFLparent {
+	background-color: #AB9978;
+	color: #ffffff;
+	padding: 0px;
+	margin: 0px;
+	margin-top: 8px;
+}
+#localnavFLparent h2 {
+	font-size: 11px; 
+	font-weight: bold;
+	line-height: 12px;
+	color: #ffffff;
+	background-color: #AB9978;
+	padding: 2px 0px 2px 18px;
+	margin: 1px 0px 1px 0px;
+	background-image: url(/images/triangle_white_8x9.gif);
+	background-position: 8px 6px;
+	background-repeat: no-repeat;
+}
+
+#localnavFLparent h2 a:link, #localnavFLparenth2 a:visited, #localnavFLparent h2 a:hover {
+	font-weight: bold;
+	color: #ffffff;
+}
+#localnavFLparent a, #localnavFLparent a:visited, #localnavFLparent a:link, #localnavFLparent a:hover {
+	color: #ffffff;
+}
+
+/* Footer
+----------------------------------------------- */
+#footer {
+	margin: 10px;
+}
+#footer p {
+	font-size: 10px; 
+	color: #9C9C9C;
+	line-height: 12px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+#footer a:link {
+	font-size: 10px;
+	color: #0066cc;
+	font-weight: normal;
+	text-decoration: none;
+}
+#footer a:visited {
+	color: #0066cc;
+	font-weight: normal;
+	text-decoration: none;
+}
+#footer a:hover {
+	text-decoration: underline;
+}
+
+/* CS Column Structure
+----------------------------------------------- */
+.cs th {
+	background-color: #094B8D;
+	color: #FFFFFF;
+	margin-top: 0px;
+	margin-bottom: 1em;
+	margin-right: 0px;
+	padding: 5px 5px 5px 5px;
+	font-size: 12px; 
+	text-align: center;
+}
+
+.cs td {
+	background-color: #D6EBFB;
+	padding: 5px;
+}
+
+.cs span.helpTextHead {
+	color: #ffffff;
+	font-size: 10px;
+	font-weight: normal; 
+}
+
+.cs td.FindViewCol {
+	background-color: #e2e2e2;
+	padding: 5px;
+}
+
+
+.cs td.border {
+	border: 1px solid #666666;
+	background-color: #f0f0f0;
+	padding: 5px;
+}
+
+.cs h3 {
+	font-size: 12px;
+   font-weight: bold;
+	padding: 0em 1em 0em 1em;
+	margin: 0;
+}
+
+.cs p { 
+	padding: 0em 1em 1em 1em;
+}
+
+.cs dl {
+	padding: 0em 1em 1em 1em;
+}
+
+.cs dt {
+	font-weight: bold;
+	margin: .5em 0;
+}
+
+.cs dd {
+	margin-bottom: 0px;
+	margin-left: 20px;
+	padding-left: 10px;
+	
+	list-style-type: none;
+	background-image: url(/images/squarebulletblue01a.gif);
+	background-position: 1px 4px;
+	background-repeat: no-repeat;
+}
+
+.cs ul {
+	padding: 0em 1em 1em 0em;
+	margin-left: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.cs li {
+	list-style-type: none;
+	padding-left: 10px;
+	margin-bottom: 1em;
+}
+
+.cs ul.bullet li {
+	background-image: url(/images/squarebulletblue01a.gif);
+	background-position: 1px 4px;
+	background-repeat: no-repeat;
+	padding-left: 10px;
+	margin-bottom: 1em;
+}
+
+
+/* Sidebar Right Sidebar
+----------------------------------------------- */
+.sidebar {
+	background-color: #F3E3C5;
+	color: black;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	float: right;
+	padding: .25em 1em 1em 1em;
+	margin-top: 2em;
+	width: 171px;
+}
+
+.sidebar h3, .sidebar h4, .sidebar h5 {
+	color: #663300;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: .5em;
+}
+
+.sidebar .schedule dt {
+	padding: 5px;
+	margin-top: 5px;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.sidebar .schedule dd {
+	margin-left: 0px;
+	padding-left: 7px;
+}
+
+/* Data Table
+----------------------------------------------- */
+
+table.data th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	color: #FFFFFF;
+	background-color: #094B8D;
+	text-align: left;
+}
+
+table.data td {
+	background-color: #F3E3C5;
+}
+
+/* ID NewsBox Container Half - need to be placed around the ToolCentral Include
+when the ToolCentral generated newsbox needs to be floated with an image at approximately 50% of the page.
+----------------------------------------------- */
+#newsboxContainerHalfDCC {
+	float: right;
+	width: 345px;
+	padding: 0px;
+	margin: 0px;
+	border: 0px solid purple;
+}
+
+#newsboxContainerHalfDCC #newsbox h1{
+	color: #FFFFFF;
+}
+
+#newsboxContainerHalf{
+	float: right;
+	width: 345px;
+	padding: 0px;
+	margin: 0px;
+	border: 0px solid purple;
+}
+
+#newsboxContainerHalf #newsbox h1{
+	color: #FFFFFF;
+	padding: 2px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+/* ID NewsBox
+----------------------------------------------- */
+/*#newsbox {
+	float: right;
+	width: 355px;
+}*/
+#newsbox {
+	float: right;
+	width: 100%;
+	border: 0px solid green;
+}
+
+#newsbox h1 {
+	background-color: #82AFDD;
+	color: #FFFFFF;
+	margin: 0px;
+	padding: 0px;
+	font-size: 18px;
+	font-weight: bold;
+	border: 0px solid green;
+}
+
+#newsbox h3 {
+	font-size: 11px;
+	margin: 0px;
+	padding: 0px;
+	padding-top: 4px;
+}
+
+#newsbox label {
+	color: Gray;
+	font-size: 10px;
+	font-weight: normal;
+}
+
+#newsbox p {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	margin-left: 10px; 
+	color: black;
+	padding-bottom: 2px;
+	margin-bottom: 5px;
+}
+
+#newsbox:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+
+/* NewsBox Structure w/ Captioned Image *Class NewsBox
+----------------------------------------------- */
+.imgcaption, .newsbox .date, .filetype, .langHelpText {
+	color: Gray;
+    font-size: 10px;  
+	font-weight: normal;
+}
+.nb-pl {
+	margin-bottom: 8px;
+}
+
+.nb-pl p {
+	/*float: left;
+	width: 150px;*/
+	color: Gray;
+	border: 0px solid green;
+}
+
+.nb-pl img {
+	float: left;
+	display: block;
+	margin-bottom: 1em;
+	/* margin-right: .5em; */
+	/*width: 171px;*/
+}
+
+.nb-pl .newsbox {
+	border: 0px solid #e2e2e2;
+	float: right;
+	width: 345px;
+}
+
+.nb-pl .newsbox dt {
+	font-weight: bold;
+}
+
+.nb-pl .newsbox h3 {
+	background-color: #82AFDD;
+	color: white;
+	margin-top: 0;
+	padding: 2px;
+}
+
+.nb-pl .newsbox dd {
+	margin-left: 1em;
+	padding: 2px;
+}
+.nb-pl:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+.nb-pl {display: inline-table; width: 545px; }
+
+/* Hides from IE-mac \*/
+* html .nb-pl {height: 1%;}
+.nb-pl {display: block;}
+/* End hide from IE-mac */
+
+/* Mini-Site
+----------------------------------------------- */
+
+.ms-home {
+	font-size: 10px;
+}
+.ms-logo {
+	float: right;
+	margin: .5em;
+}
+.ms-slogan {
+	margin: 0 0 8px 0;
+}
+
+/* Search-Results
+----------------------------------------------- */
+
+.quicklinks {background-color: #F2E9D7;}
+.quicklinks p {padding-top: 4px;}
+.qltable {}
+.qlheader {font-size: 14px;  }
+.qltext {color: #333333; font-size: 11px; }
+.qltext a, .qltext a:link, .qltext a:active, .qltext a:visited{ font-size: 15px; font-weight: bold; background-color: #FFFF99; }
+.qltext a:hover {}
+
+/* Module Box
+----------------------------------------------- */
+
+.moduleBox {border: 1px solid #666666; padding: 0px; margin: 0px;}
+.moduleBox h2, .moduleBox h3, .moduleBox h4 {background-color: #f0f0f0; padding: 4px; margin: 0px;}
+.moduleBox p {padding: 2px; margin: 2px;}
+
+/* #videoConv - Video Convention Section
+----------------------------------------------- */
+#videoConv {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	border: 0px solid red;
+}
+
+#videoConv a {
+	font-size: 10px; color: #0066CC;
+}
+
+#videoConv a.linkBoldSm {
+	font-size: 10px; font-weight: bold; color: #0066CC;
+}
+#videoConv a.linkBold {
+	font-size: 11px; font-weight: bold; color: #0066CC;
+}
+
+#videoConv img {
+	margin: 0px;
+	padding: 0px;
+	padding-bottom: 0px;	
+}
+
+#videoConv img.thmb {
+	margin: 0px;
+	padding: 10px;	
+}
+
+#videoContent {
+	margin: 0px;
+	padding: 4px;
+	background-color: #D4DCE5;
+}
+
+#videoContent ul {
+	margin: 0px;
+	padding: 0px;
+	margin-left: 15px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+#videoContent li {
+	list-style-type: square;
+	font-size: 11px;
+	margin: 0px;
+	padding: 0px;
+	padding-left: 2px;
+	margin-bottom: 0em;
+}
+
+#videoContent ul.bullet li {
+	background-image: url(/images/squarebulletblue01a.gif);
+	background-position: 1px 4px;
+	background-repeat: no-repeat;
+	padding-left: 10px;
+	margin-bottom: 1em;
+}
+
+#videoContent p {
+	margin: 0px;
+	padding: 0px;
+	padding-bottom: 5px;
+	font-size: 11px;
+}
+
+#videoHeader {
+	margin: 0px;
+	padding: 0px;
+	background-image: url(/departments/web/multimedia/images/tileBG.gif);
+	background-repeat: repeat-x;
+}
+
+.videoBG {background-color: #D4DCE5}
+
+
+
+
+

@@ -1,0 +1,122 @@
+
+/* ======== xbel bookmarks ========== */
+
+.foldertitle { font-weight: bold;  }
+
+.folder { padding-top: .5em; }
+
+li.separator { list-style-image: none;  
+               list-style-type: none;
+               width: 75%; }
+
+hr.separator { padding-right: 2em; 
+               padding-left: 0; }
+
+
+/* ======== black background ========== */
+
+body 	        { background: #003366; foreground: #000000; } 
+
+
+/* ======== Home page "naked" paragraph  ======== */
+  
+td.homepagemain p      { margin-left: 1em; 
+                         margin-right: 1em; }
+
+
+td.homepagemain        { padding-top: 1em; } 
+
+/* ======== webpage content area ======== */
+
+div.webpage            { padding: 1em; }
+
+
+/* ======= Hierarchy Indentation  =========== */
+
+.sect1, .sect2, .sect3, .sect4, .sect5   { margin-left: .7em; 
+                                           margin-right: .5em; }   
+
+
+h2.title, h3.title, h4.title, h5.title, h6.title  { font-size: 1.8em; 
+                                                   margin-left: -.5em; }
+
+
+/*  h2.sect1, h3.title, h4.sect3, h5.sect4, h6.sect5  { font-size: 1.8em; 
+                                                    margin-left: -.3em; } */
+
+
+        /* == Q & A Indentation  === */
+div.question    { font-weight: bold; }
+
+div.answer      { margin-left: .5em;  margin-right: .1em; }        
+
+
+/* ======== Navigation Links ========= */
+
+.navtoctitle     { font-weight: bold;           /*   title of the nav bar      */
+                   padding-left: 2em;  }       
+
+
+span.toclevel1   a  { font-weight: bold;
+                      text-decoration: none; 
+                      white-space: nowrap;}       /* Top-level links */
+
+
+.xnavtoc         { color: #660000;           /*  Text for current page */
+                   font-style: italic; 
+                   font-weight: bold; }
+
+
+
+span.ynavtoc a   { color: #003366;         /*  Child links of current page */
+                   font-style:italic; 
+                   text-decoration: none;
+                   white-space: nowrap; }
+
+
+
+span.navtoc a    { color: #003366;            /* everything else  */
+                   text-decoration: none;
+                   white-space: nowrap; } 
+
+
+.shrink1,.shrink2,.shrink3,.shrink4 { font-size: 90%;} /* shrinking navtoc links */
+
+
+
+/* ========= Footer  Stuff ============= */
+
+.navfoot           { padding: .3em; } }
+
+
+.footfeed          { font-size: smaller; }
+
+.foothome          { font-weight: bold; } 
+
+.footcopy          { color: black;
+                     font-size: 70%;  }
+
+.copyright         { font-size: smaller; }   
+
+.footdate          { color: black;
+                     font-size: 70%; }
+
+
+   /* ==========  Other ============ */
+
+.caption           { font-weight: bold; } 
+
+.blockquote       { margin-left: .5em;
+                    margin-right: .5em; }
+
+.mediaobject      { margin-bottom: 1em; } 
+
+.term 		{ font-weight: bold }
+
+
+A:link    { color: #003366 }   /* unvisited links */
+A:visited { color: #003366 }   /* visited links   */
+A:hover   { color: #00cc00 }   /* user hovers     */
+A:active  { color: #FF0000 }   /* active links    */ 
+
+

@@ -1,0 +1,13 @@
+#
+# robots.txt for http://www.salon.com
+#
+# check out http://info.webcrawler.com/mak/projects/robots/norobots.html
+# for more info on what this is all about.
+#
+User-agent: *
+Disallow: /cgi-bin/
+Disallow: /RealMedia
+Disallow: /demo
+
+User-agent: Slurp
+Crawl-delay: 5

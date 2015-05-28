@@ -1,0 +1,122 @@
+
+/* Unique 2-col layout classes */
+
+.TwoColTopHRRow {
+	height: 1px;
+	padding-top: 0px;
+	padding-left: 32px;
+	padding-right: 157px;
+	padding-bottom: 0px;
+	line-height: 1px;
+	font-size: 0em;
+	text-align: right;
+}
+
+.PageRightNavHolder {
+	float: left;
+	position: absolute;
+	left: 593px;
+	top: 214px;
+	width: 170px;
+	/*min-height: 303px;*/
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	margin: 0px;
+	background-color: #f3f3f3;
+}
+
+.PageRightNavTop {
+	width: 170px;
+	height: 6px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	margin: 0px;
+	background-color: #ffffff;
+	line-height: 6px;
+	font-size: 0em;
+}
+
+.PageRightNavBox {
+	border: 1px solid #cccccc;
+	width: 168px;
+	/*min-height: 301px;*/
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	line-height: 14px;
+	font-size: 0.9em;
+}
+
+.PageRightNavTxt {
+	padding-top: 19px;
+	padding-right: 13px;
+	padding-left: 13px;
+	padding-bottom: 19px;
+	font-weight: bold;
+}
+
+.PageRightNavTxtOrange {
+	color: #f5822a;
+}
+
+.PageRightNavTxt a, 
+.PageRightNavTxt a:hover {
+	color: #f5822a;
+}
+
+ul.PageRightNavList {
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-left: 15px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+
+	color: #f5822a;
+}
+
+.RightNavBulletTxt {
+	color: #666666;
+}
+
+/* Extends main and page classes */
+
+#MainHolder {
+	background: url(/images/home/main_bg_2cols.gif);
+}
+
+#LinksRowHolder {
+	background: url(/images/home/main_bg_2cols.gif);
+}
+
+.PageContentIntroBox {
+	padding-right: 165px; /*157px; */
+	padding-bottom: 0px;
+	line-height: 23px;
+}
+
+.PageContentBox {
+	padding-right: 157px;
+}
+
+.PageContentTitleBox {
+	
+	padding-right: 165px; /*157px; */
+	
+}
+
+#MainColumnHolder {
+	background: none;
+}
+
+.PrintPageBtn {
+	right: -18px;
+}
+

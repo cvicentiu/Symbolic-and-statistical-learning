@@ -1,0 +1,51 @@
+
+
+//----------DHTML Menu Created using AllWebMenus PRO ver 3.1-#532---------------
+//C:\Sites\cfbc\menu\jsmenu1.js
+var awmMenuName='jsmenu1';
+var awmLibraryBuild=532;
+var awmLibraryPath='/awmData-jsmenu1';
+var awmImagesPath='/awmData-jsmenu1';
+var awmSupported=(navigator.appName + navigator.appVersion.substring(0,1)=="Netscape5" || document.all || document.layers || navigator.userAgent.indexOf('Opera')>-1)?1:0;
+if (awmAltUrl!='' && !awmSupported) window.location.replace(awmAltUrl);
+if (awmSupported){
+var awmMenuPath;
+if (document.layers) mpi=((document.images['awmMenuPathImg-jsmenu1'])?document.images['awmMenuPathImg-jsmenu1'].src:document.layers['xawmMenuPathImg-jsmenu1'].document.images['awmMenuPathImg-jsmenu1'].src); else mpi=document.images['awmMenuPathImg-jsmenu1'].src;
+awmMenuPath=mpi.substring(0,mpi.length-16);
+while (awmMenuPath.search("'")>-1) {awmMenuPath=awmMenuPath.replace("'", "&#39;");}
+var nua=navigator.userAgent,scriptNo=(nua.indexOf('Safari')>-1)?7:(nua.indexOf('Gecko')>-1)?2:((document.layers)?3:((nua.indexOf('Opera')>-1)?4:((nua.indexOf('Mac')>-1)?5:((nua.indexOf('Konqueror')>-1)?6:1))));
+document.write("<SCRIPT SRC='http://www.johndnelson.com/menus/%22+awmMenuPath+awmLibraryPath+%22/awmlib%22+scriptNo+%22.js'><\/SCRIPT>");
+var n=null;
+awmzindex=1000;
+}
+
+var awmSubmenusFrame='';
+var awmSubmenusFrameOffset;
+var awmRelativeCorner=0;
+var awmOptimize=0;
+function awmBuildMenu(){
+if (awmSupported){
+awmCreateCSS(1,2,1,'#FFFFFF','#0055E5',n,'12px  Verdana',n,'none',2,n,0,4);
+awmCreateCSS(0,1,0,n,n,n,n,n,'outset',0,'#C0C0C0',0,0);
+awmCreateCSS(1,2,1,'#FFFFFF',n,n,' 12px Verdana',n,'none',1,n,1,1);
+awmCreateCSS(0,2,1,'#FFFFFF','#4F4F4F',n,' 12px Verdana',n,'none',1,n,0,1);
+awmCreateCSS(0,1,0,n,'#000000',n,n,n,'outset',1,'#C0C0C0',0,0);
+awmCreateCSS(1,2,1,'#FFFFFF','#9F9F9F',n,'12px  sans-serif',n,'none',1,n,0,1);
+awmCreateCSS(0,2,1,'#FFFFFF','#5F5F5F',n,'12px  sans-serif',n,'none',1,n,0,1);
+var s0=awmCreateMenu(0,0,0,0,1,0,0,0,0,30,30,0,1,1,0,n,"",n,1,7,0,1,n,n,100,1);
+
+			it=s0.addItem(2,3,3,"&nbsp;&nbsp;Contact Info&nbsp;&nbsp;",n,n,"","",n,n,n,"/site/dbpage.asp?page_id=63&sec_id=88",
+				n
+			);
+		
+			it=s0.addItem(2,3,3,"&nbsp;&nbsp;Bio&nbsp;&nbsp;",n,n,"","",n,n,n,"/site/dbpage.asp?page_id=66&sec_id=88",
+				n
+			);
+		
+			it=s0.addItem(2,3,3,"&nbsp;&nbsp;Calendar&nbsp;&nbsp;",n,n,"","",n,n,n,"/site/dbpage.asp?page_id=868&sec_id=88",
+				n
+			);
+		
+
+s0.pm.buildMenu();
+}}

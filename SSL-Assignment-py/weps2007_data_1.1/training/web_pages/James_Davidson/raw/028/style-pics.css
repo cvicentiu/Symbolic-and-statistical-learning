@@ -1,0 +1,37 @@
+BODY
+{background: #003344 url("images/bj-sidebar-slategray.gif");
+ background-attachment: fixed;
+ background-position: 100% 7%;
+ background-repeat: no-repeat;
+ font-family: verdana,serif,arial,helvetica;
+ font-size: 12pt;
+ color: #cccccc;
+ line-height: 1.2em;
+ margin: 5px;
+ scrollbar-face-color: lightslategray;
+ scrollbar-arrow-color: #202020;
+ scrollbar-track-color: slategray;
+ scrollbar-shadow-color: #222222;
+ scrollbar-highlight-color: lightslategray;
+ scrollbar-3dlight-color: ghostwhite;
+ scrollbar-darkshadow-color: black;
+}
+
+p {font-size: 10pt; text-indent: 0px;}
+
+h1,h2,h3,h4,h5,h6 {font-family: serif, times new roman, sans-serif;color:aliceblue;font-variant:small-caps;}
+
+A:link {color: lightslategray;}
+A:active {color: white;}
+A:hover {color:red;text-decoration: none;}
+A:visited {color: lightslategray;}
+LI {font-size: 8pt;}
+
+BLOCKQUOTE {margin-left: 2em; margin-right: 2em;}
+
+hr {border: 1 groove slategray}
+
+.float-l{float:left;padding-right;background:white;border:2px ridge white;font-size:8pt;color:black}
+.float-r{float:right;padding-left;background:white;border:2px ridge white;font-size:8pt;color:black}
+
+.bgslide {background:black;padding:5px;}

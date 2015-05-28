@@ -1,0 +1,53 @@
+/* css Zen Garden default style v1.01 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+/* Images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+
+/* basic elements */
+body { 
+	font: 11px georgia; 
+	color: #555753; 
+	background: no-repeat right bottom; 
+	margin: 0px; 
+	}
+p { 
+	font: 11px/normal georgia; 
+	margin-top: 0px; 
+	}
+h3 { 
+	font: italic normal 10pt georgia; 
+	letter-spacing: 1px; 
+	margin-bottom: 0px; 
+	color: #7D775C;
+	}
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #003399;
+	}
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #487BB8;
+	}
+a:hover, a:active { 
+	text-decoration: underline; 
+	color: #485568;
+	}
+
+.edges {
+	border: 1px solid #47566B;
+}
+table {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 11px;
+}
+.small {
+	font-size: 10px;
+}

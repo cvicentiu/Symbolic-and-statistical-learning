@@ -1,0 +1,159 @@
+<html>
+<head>
+<title>Islas Hermanas Presentations</title>
+
+<link rel="stylesheet" type="text/css" href="verd.css">
+
+
+<script language="JavaScript">
+if (!document.getElementById) {
+   top.location.href="BadBrowser.htm";
+}
+</script>
+
+<script type="text/javascript" language="JavaScript" src="http://www.bosia.org/ss/dhtmdom.js"></script>
+
+<script language="JavaScript">
+
+
+var childX, childY;
+
+var hw_ss = null;
+
+var WINDOW_NAME = "ss_800x600";  // name given to the slide-show window (not this window)
+
+
+//-------------------------------------------------------
+function windowExists(h) {
+//-------------------------------------------------------
+
+return ( h && h.open && !h.closed );
+
+}
+
+
+
+//-------------------------------------------------------
+function load_title(aTitle) {
+//-------------------------------------------------------
+
+var theURL = null;
+
+// this block to be a list of titles.
+//
+if (aTitle == 'ashley') {
+   theURL = 'ashley/ashley.htm';
+}else{
+if (aTitle == 'marcy') {
+   theURL = 'marcy/marcy.htm';
+}}
+
+
+// title was matched to URL, let's do it.
+//
+if (theURL) {
+   load_ss(theURL);
+}
+
+}
+
+
+
+
+//-------------------------------------------------------
+function load_ss(aURL) {
+//-------------------------------------------------------
+
+if ( windowExists(hw_ss)) {
+
+   hw_ss.location.href = aURL + "?ok";
+
+} else {
+
+   childX = (screen.width - 800)/2;
+   childY = (screen.height - 600)/2;
+
+   if (childX < 0) { childX = childY = 0; }
+
+   var features = "scrollbars=yes,width=794,height=575" + ",screenX="+childX + ",left="+childX + ",screenY="+childY + ",top="+childY;
+
+   hw_ss = window.open(aURL+"?ok",WINDOW_NAME,features);
+
+}
+}// f()
+
+
+
+
+
+//-------------------------------------------------------
+function on_load() {
+//-------------------------------------------------------
+
+self.name = "bosia_ss";
+
+var aName,aURL;  // assigned via callers query string-- i.e.  eval(query)
+
+
+var query = unescape(location.search.substring(1));
+
+if (query.length > 0) {
+
+   eval(query);      // assigns aName & aURL
+
+   if (aName != WINDOW_NAME) {
+      alert("The external request to open "+ aURL + " is not valid. The window name "
+             + aName + " was given; "+ WINDOW_NAME + " is expected.");
+   } else {
+      load_ss(aURL);
+   }
+}
+
+}// on_load()
+
+</script>
+
+</head>
+
+
+
+<body onLoad="on_load();">
+<br>
+<table align="center" border="0" cellpadding="12" cellspacing="0" width="600">
+   <tr>
+      <td>
+      <p class="verd16"><b>Islas Hermanas Presentations</b></p>
+      <p>Please be patient while the first page of a show is loading... you could be thinking about how nice a cup of
+      <a href="http://www.bosia.org/cafe/cafe.html"> Café Oro</a> would taste.</p>
+      </td>
+   </tr>
+   <tr>
+      <td valign="middle">
+      <p><a href="JavaScript:load_title('ashley');"><img border="0" src="shade_coffee_icon.jpg" align="left" hspace="8" vspace="8" width="67" height="53"><br>
+      Shade Grown Coffee</a><br>
+      A presentation by Ashley Parkinson and Bill Bradlee.</p>
+
+
+      </td>
+   </tr>
+   <tr>
+      <td valign="middle">
+      <p><a href="JavaScript:load_title('marcy');"><img border="0" src="marcy_button.jpg" hspace="8" vspace="8" align="left">On the
+      Slopes of Volcán Maderas</a><br>
+      A slide show adapted from a <i> coffee table book</i> created by Marcy Jackson about her experience as a member of the 2001 coffee delegation that made a trek to Ometepe to help with the harvest.</p>
+
+
+      </td>
+   </tr>
+   <tr>
+      <td>
+
+
+      </td>
+   </tr>
+</table>
+
+<p align="right">&nbsp;</p>
+
+</body>
+</html>

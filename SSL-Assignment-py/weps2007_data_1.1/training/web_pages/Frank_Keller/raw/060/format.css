@@ -1,0 +1,130 @@
+/* DATEI: format.css */
+
+/* Formatanweisungen fuer Majas Homepage */
+
+body {
+	background-image:url(mlhg.jpg);
+	margin: 10pt 10pt;
+}
+
+p,h1,h2,h3,h4,ul,ol,li,div,td,th,address,blockquote,nobr,b,i,small {
+	font-family: Arial,Helvetica,sans-serif;
+}
+
+h2 {
+	border-color: black;
+	border-style:solid;
+	border-bottom-width:1pt;
+	border-top-width:1pt;
+	border-left-width:0pt;
+	border-right-width:0pt;
+	width : 100%;
+	font-weight : bold;
+	font-size : 18pt;
+}
+
+h5 {
+	border-color: Maroon;
+	border-style: solid;
+	border-bottom-width:2pt;
+	border-top-width:2pt;
+	border-left-width:2pt;
+	border-right-width:2pt;
+	width: 40%;
+	font-weight: bold;
+	font-size:16pt;
+	background-color: Silver;
+	padding: 5px;
+}
+
+h6 {
+	border-color: Maroon;
+	border-style: solid;
+	border-bottom-width:2pt;
+	border-top-width:2pt;
+	border-left-width:2pt;
+	border-right-width:2pt;
+	width: 70%;
+	font-weight: bold;
+	font-size:12pt;
+	background-color: Silver;
+	padding: 5px;
+	font-style : italic;
+}
+
+.neu {
+	border-style: solid;
+	border-bottom-width: 1pt;
+	border-top-width:1pt;
+	border-left-width: 1pt;
+	border-right-width: 1pt;
+	width : 35%;
+	font-weight : bold;
+	font-size : 12;
+	color: Black;
+	border-color : Black;
+	background-color : #EE82EE;
+	text-align : center;
+	font : Arial, Helvetica, sans-serif;
+}
+.navi {
+	background-color: #C0C0C0;
+	border: 0;
+	border-style:none;
+	border-width:thin;
+	padding:3pt;
+}
+
+p.biu {
+	font-size: 10pt;
+	font-weight: bold;
+	margin-top: 2pt; 
+}
+
+p.eng {
+	margin-top: 6pt;
+	margin-bottom: 6pt;
+}
+
+p.p1link {
+	font-weight: bold;
+	font-size: 12pt;
+	margin-top: 6pt;
+	margin-bottom: 6pt;
+}
+
+.rot {
+	color: red;
+}
+
+td.rotkasten {
+	background-color : #FF99FF;
+	border-color : #cc3399 #cc3399 #cc3399 #cc3399;
+	border : medium solid #cc3399;
+	border-bottom : medium solid #cc3399;
+	border-bottom-width : medium;
+	border-left : medium solid #cc3399;
+	border-right : medium solid #cc3399;
+	border-top : medium solid #cc3399;
+	border-style : solid solid solid solid;
+	border-left-width : medium;
+	border-right-width : medium;
+	border-top-width : medium;
+	border-width : medium medium medium medium;
+}
+
+td.kasten {
+	background-color : Silver;
+	border-color : Gray Gray Gray Gray;
+	border : thin solid Gray;
+	border-bottom : thin solid Gray;
+	border-bottom-width : thin;
+	border-left : thin solid Gray;
+	border-right : thin solid Gray;
+	border-top : thin solid Gray;
+	border-style : solid solid solid solid;
+	border-left-width : thin;
+	border-right-width : left;
+	border-top-width : left;
+	border-width : thin solid Gray;;
+}

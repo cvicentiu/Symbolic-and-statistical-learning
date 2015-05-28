@@ -1,0 +1,179 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="robots" content="index,nofollow"><title>NLP Reading Group - UW EE SSLI Wiki</title>
+
+
+<script type="text/javascript" src="index_files/common.js"></script>
+
+<script type="text/javascript">
+<!--// common functions
+
+// We keep here the state of the search box
+searchIsDisabled = false;
+
+function searchChange(e) {
+    // Update search buttons status according to search box content.
+    // Ignore empty or whitespace search term.
+    var value = e.value.replace(/\s+/, '');
+    if (value == '' || searchIsDisabled) { 
+        searchSetDisabled(true);
+    } else {
+        searchSetDisabled(false);
+    }
+}
+
+function searchSetDisabled(flag) {
+    // Enable or disable search
+    document.getElementById('fullsearch').disabled = flag;
+    document.getElementById('titlesearch').disabled = flag;
+}
+
+function searchFocus(e) {
+    // Update search input content on focus
+    if (e.value == 'Search') {
+        e.value = '';
+        e.className = '';
+        searchIsDisabled = false;
+    }
+}
+
+function searchBlur(e) {
+    // Update search input content on blur
+    if (e.value == '') {
+        e.value = 'Search';
+        e.className = 'disabled';
+        searchIsDisabled = true;
+    }
+}
+
+function actionsMenuInit(title) {
+    // Initialize action menu
+    for (i = 0; i < document.forms.length; i++) {
+        var form = document.forms[i];
+        if (form.className == 'actionsmenu') {
+            // Check if this form needs update
+            var div = form.getElementsByTagName('div')[0];
+            var label = div.getElementsByTagName('label')[0];
+            if (label) {
+                // This is the first time: remove label and do buton.
+                div.removeChild(label);
+                var dobutton = div.getElementsByTagName('input')[0];
+                div.removeChild(dobutton);
+                // and add menu title
+                var select = div.getElementsByTagName('select')[0];
+                var item = document.createElement('option');
+                item.appendChild(document.createTextNode(title));
+                item.value = 'show';
+                select.insertBefore(item, select.options[0]);
+                select.selectedIndex = 0;
+            }
+        }
+    }
+}
+//-->
+</script>
+
+
+<link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="index_files/common.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="screen" href="index_files/screen.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="print" href="index_files/print.css">
+<link rel="stylesheet" type="text/css" charset="utf-8" media="projection" href="index_files/projection.css">
+
+
+<link rel="Start" href="https://ssli.ee.washington.edu/ssliwiki/FrontPage">
+<link rel="Alternate" title="Wiki Markup" href="https://ssli.ee.washington.edu/ssliwiki/NLP_Reading_Group?action=raw">
+<link rel="Alternate" media="print" title="Print View" href="https://ssli.ee.washington.edu/ssliwiki/NLP_Reading_Group?action=print">
+<link rel="Search" href="https://ssli.ee.washington.edu/ssliwiki/FindPage">
+<link rel="Index" href="https://ssli.ee.washington.edu/ssliwiki/TitleIndex">
+<link rel="Glossary" href="https://ssli.ee.washington.edu/ssliwiki/WordIndex">
+<link rel="Help" href="https://ssli.ee.washington.edu/ssliwiki/HelpOnFormatting"></head><body dir="ltr" lang="en">
+
+
+
+<div id="header">
+<div id="logo"><a href="https://ssli.ee.washington.edu/ssliwiki/FrontPage"><img src="index_files/ssliwiki.png" alt="SSLIWiki"></a></div>
+
+<form id="searchform" method="get" action="">
+<div>
+<input name="action" value="fullsearch" type="hidden">
+<input name="context" value="180" type="hidden">
+<label style="display: none;" for="searchinput">Search:</label>
+<input class="disabled" id="searchinput" name="value" value="" size="20" onfocus="searchFocus(this)" onblur="searchBlur(this)" onkeyup="searchChange(this)" onchange="searchChange(this)" alt="Search" type="text">
+<input disabled="disabled" id="titlesearch" name="titlesearch" value="Titles" alt="Search Titles" type="submit">
+<input disabled="disabled" id="fullsearch" name="fullsearch" value="Text" alt="Search Full Text" type="submit">
+</div>
+</form>
+<script type="text/javascript">
+<!--// Initialize search form
+var f = document.getElementById('searchform');
+f.getElementsByTagName('label')[0].style.display = 'none';
+var e = document.getElementById('searchinput');
+searchChange(e);
+searchBlur(e);
+//-->
+</script>
+
+<ul id="username"><li><a href="https://ssli.ee.washington.edu/ssliwiki/NLP_Reading_Group?action=login" id="login">Login</a></li></ul>
+<div id="locationline">
+
+
+<ul id="pagelocation">
+<li><a class="backlink" title="Click to do a full-text search for this title" href="https://ssli.ee.washington.edu/ssliwiki/NLP_Reading_Group?action=fullsearch&amp;value=linkto%3A%22NLP+Reading+Group%22&amp;context=180">NLP Reading Group</a></li>
+</ul>
+
+</div>
+
+<ul id="iconbar">
+<li><a href="https://ssli.ee.washington.edu/ssliwiki/NLP_Reading_Group?action=edit"><img alt="Edit" src="index_files/moin-edit.png" title="Edit" height="12" width="12"></a></li>
+<li><a href="https://ssli.ee.washington.edu/ssliwiki/NLP_Reading_Group"><img alt="View" src="index_files/moin-show.png" title="View" height="13" width="12"></a></li>
+<li><a href="https://ssli.ee.washington.edu/ssliwiki/NLP_Reading_Group?action=diff"><img alt="Diffs" src="index_files/moin-diff.png" title="Diffs" height="11" width="15"></a></li>
+<li><a href="https://ssli.ee.washington.edu/ssliwiki/NLP_Reading_Group?action=info"><img alt="Info" src="index_files/moin-info.png" title="Info" height="11" width="12"></a></li>
+<li><a href="https://ssli.ee.washington.edu/ssliwiki/NLP_Reading_Group?action=subscribe"><img alt="Subscribe" src="index_files/moin-subscribe.png" title="Subscribe" height="10" width="14"></a></li>
+<li><a href="https://ssli.ee.washington.edu/ssliwiki/NLP_Reading_Group?action=raw"><img alt="Raw" src="index_files/moin-raw.png" title="Raw" height="13" width="12"></a></li>
+<li><a href="https://ssli.ee.washington.edu/ssliwiki/NLP_Reading_Group?action=print"><img alt="Print" src="index_files/moin-print.png" title="Print" height="14" width="16"></a></li>
+</ul>
+
+
+<ul id="navibar">
+<li class="wikilink"><a href="https://ssli.ee.washington.edu/ssliwiki/FrontPage">FrontPage</a></li><li class="wikilink"><a href="https://ssli.ee.washington.edu/ssliwiki/RecentChanges">RecentChanges</a></li><li class="wikilink"><a href="https://ssli.ee.washington.edu/ssliwiki/FindPage">FindPage</a></li><li class="wikilink"><a href="https://ssli.ee.washington.edu/ssliwiki/HelpContents">HelpContents</a></li><li class="current"><a href="https://ssli.ee.washington.edu/ssliwiki/NLP_Reading_Group">NLP Reading Group</a></li>
+</ul>
+
+
+</div>
+
+
+
+<div id="page" dir="ltr" lang="en">
+
+<div dir="ltr" id="content" lang="en"><span class="anchor" id="top"></span>
+<span class="anchor" id="line-1"></span><p class="line867">
+</p><h1 id="head-9a67a722c74795a7000438c5a7a96c66ed588c04">Natural Language Processing (NLP) Reading Group at the University of Washington</h1>
+<span class="anchor" id="line-2"></span><span class="anchor" id="line-3"></span><p class="line867"><strong>Goal: To broaden our knowledge of the various sub-areas of natural language processing research.</strong> (For another reading group dedicated purely to machine translation research, see <a class="http" href="http://ssli.ee.washington.edu/people/katrin/mtrg/">MTRG</a>.) <span class="anchor" id="line-4"></span><span class="anchor" id="line-5"></span></p><p class="line867">
+</p><h2 id="head-2ae609a26c1ffe86884e994019dcc365a5536fc2">Schedule:</h2>
+<span class="anchor" id="line-6"></span><span class="anchor" id="line-7"></span><p class="line874">There will be no NLP reading group this quarter (Winter 2007).  <span class="anchor" id="line-8"></span><span class="anchor" id="line-9"></span></p><p class="line867">
+</p><h3 id="head-01ba911ec50ad0e61fa5c45071166b1f8a3d8dc3">Upcoming line-up</h3>
+<span class="anchor" id="line-10"></span><span class="anchor" id="line-11"></span><p class="line867">
+</p><h3 id="head-b426be2ef0a2c87188b6b4d036a3b5bd86482c04">Past discussions</h3>
+<span class="anchor" id="line-12"></span><span class="anchor" id="line-13"></span><ul><li><p class="line862">Dec 5 (Fei Xia) Aria Haghighi and Dan Klein, <a class="http" href="http://www.cs.berkeley.edu/%7Earia42/pubs/acl06-grammarinduction">Proto-type driven grammar induction</a>, ACL 2006 <span class="anchor" id="line-14"></span></p></li><li><p class="line862">Nov 14 (Sangyun Hahn) Aria Haghighi and Dan Klein, <a class="http" href="http://www.cs.berkeley.edu/%7Earia42/pubs/naacl06-posinduction.pdf">Prototype-driven learning for sequence models</a>, HLT/NAACL 2006 (Best Student Paper Award)    <span class="anchor" id="line-15"></span></p></li><li><p class="line862">Nov 7  (Jeremy Kahn) Joshua Goodman, <a class="http" href="http://www.cs.mu.oz.au/acl/J/J99/J99-4004.pdf">Semiring Parsing</a>, Computational Linguistics, Volume 25, Number 4, December 1999 <span class="anchor" id="line-16"></span></p></li><li><p class="line862">Oct 31 (Chris Bartels) Mehryar Mohri, Fernando Pereira, Michael Riley, <a class="http" href="http://www.sciencedirect.com.offcampus.lib.washington.edu/science?_ob=MImg&amp;_imagekey=B6WCW-458NBGK-5-1&amp;_cdi=6749&amp;_user=582538&amp;_orig=browse&amp;_coverDate=01%2F31%2F2002&amp;_sk=999839998&amp;view=c&amp;wchp=dGLzVlz-zSkWW&amp;md5=b9f3fb94338d2a0320f4c35e17888c44&amp;ie=/sdarticle.pdf">Weighted Finite State Transducers in Speech Recognition</a>, Computer Speech &amp; Language (2002), 16 <span class="anchor" id="line-17"></span></p></li><li><p class="line862">Oct 24 (Xiao Li) - Mehryar Mohri <a class="http" href="http://www.cs.nyu.edu/%7Emohri/postscript/fla.pdf">Weighted Finite-State Transducer Algorithms, An Overview</a>  <span class="anchor" id="line-18"></span></p></li><li><p class="line862">Oct 17 (Mei Yang) - Monica Rogati, Scott <a class="nonexistent" href="https://ssli.ee.washington.edu/ssliwiki/McCarley">McCarley</a>, Yiming Yang, <a class="http" href="http://www.cs.cmu.edu/%7Emrogati/web_page/html/professional/publications/stemacl03.pdf">Unsupervised Learning of Arabic Stemming using a Parallel Corpus</a>, ACL 2003 <span class="anchor" id="line-19"></span></p></li><li><p class="line862">Oct 10 (Kevin Duh) - Michael Collins and Brian Roark. <a class="http" href="http://acl.ldc.upenn.edu/acl2004/main/pdf/338_pdf_2-col.pdf">Incremental Parsing with the Perceptron Algorithm</a>, ACL 2004  <span class="anchor" id="line-20"></span></p></li><li><p class="line862">Sept 13 (Kevin Duh) - John Blitzer, Ryan <a class="nonexistent" href="https://ssli.ee.washington.edu/ssliwiki/McDonald">McDonald</a>, and Fernando Pereira (2006). <a class="http" href="http://www.cis.upenn.edu/%7Eblitzer/papers/emnlp06.pdf">Domain Adaptation with Structural Correspondence Learning</a>, EMNLP 2006 <span class="anchor" id="line-21"></span></p></li><li><p class="line862">Aug 23 (Kevin Duh) - Smith, Noah A. and Jason Eisner (2005). <a class="http" href="http://www.cs.jhu.edu/%7Ejason/papers/smith+eisner.acl05.pdf">Contrastive estimation: Training log-linear models on unlabeled data.</a>, Proceedings of the 43rd Annual Meeting of the Association for Computational Linguistics (ACL) (Nominated for Best Paper)  <span class="anchor" id="line-22"></span></p></li><li>Aug 16 (Kevin Duh) - Overview of SIGIR 2006 Papers <span class="anchor" id="line-23"></span></li><li><p class="line862">Aug 9 (Fei Xia) - Slav Petrov, Leon Barrett, Romain Thibaux, and Dan Klein, <a class="http" href="http://acl.ldc.upenn.edu/P/P06/P06-1055.pdf">Learning Accurate, Compact, and Interpretable Tree Annotation</a>, ACL 2006 <span class="anchor" id="line-24"></span></p></li><li><p class="line862">Aug 2 (Hoifung Poon) - Pedro Domingos, et. al., <a class="http" href="http://www.cs.washington.edu/homes/pedrod/papers/aaai06c.pdf">Unifying logical and statistical AI</a>, Invited talk at AAAI-2006. <span class="anchor" id="line-25"></span></p></li><li><p class="line862">July 26 (Xiao Li) - Aria Haghighi, Andrew Y. Ng, and Christopher D. Manning. <a class="http" href="http://nlp.stanford.edu/%7Emanning/papers/rte-emnlp05.pdf">Robust Textual Inference via Graph Matching.</a> HLT-EMNLP 2005 <span class="anchor" id="line-26"></span></p></li><li><p class="line862">July 12 (Kevin Duh) - Bo Pang and Lillian Lee.<a class="http" href="http://www.cs.cornell.edu/home/llee/papers/pang-lee-stars.home.html">Seeing stars: Exploiting class relationships for sentiment categorization with respect to rating scales.</a>, Proceedings of the ACL 2005  <span class="anchor" id="line-27"></span><span class="anchor" id="line-28"></span></p></li></ul><p class="line867">
+</p><h2 id="head-30512ee0e1a7c67c1d05e3d521a1cb9aa656c6fe">Recommended Reading List</h2>
+<span class="anchor" id="line-29"></span><span class="anchor" id="line-30"></span><span class="anchor" id="line-31"></span><ul><li><p class="line891"><strong>Parsing and Syntax</strong> <span class="anchor" id="line-32"></span></p><ul><li><p class="line862">Mehryar Mohri and Brian Roark. <a class="http" href="http://www.cslu.ogi.edu/people/roark/spcfg.pdf">Probabilistic Context-Free Grammar Induction Based on Structural Zeros</a>, HLT-NAACL 2006 (Best Paper Award)   <span class="anchor" id="line-33"></span></p></li></ul><ul><li><p class="line862">Dan Klein and Chris Manning, <a class="http" href="http://www.cs.berkeley.edu/%7Eklein/papers/unlexicalized-parsing.pdf">Accurate Unlexicalized Parsing</a>, ACL 2003 (Best Paper Award)  <span class="anchor" id="line-34"></span></p></li><li><p class="line862">Michael Collins, <a class="http" href="http://people.csail.mit.edu/mcollins/papers/paper14.short.ps">Three Generative, Lexicalised Models for Statistical Parsing</a>, ACL 1997 <span class="anchor" id="line-35"></span></p></li><li><p class="line862">Joshua Goodman, <a class="http" href="http://www.cs.mu.oz.au/acl/J/J99/J99-4004.pdf">Semiring Parsing</a>, Computational Linguistics, Volume 25, Number 4, December 1999 <span class="anchor" id="line-36"></span></p></li><li><p class="line862">David <a class="nonexistent" href="https://ssli.ee.washington.edu/ssliwiki/McClosky">McClosky</a>, Eugene Charniak, and Mark Johnson. <a class="http" href="http://cs.brown.edu/%7Edmcc/papers/dmcc-acl-2006.pdf">Reranking and Self-Training for Parser Adaptation</a>, ACL 2006 <span class="anchor" id="line-37"></span></p></li><li><p class="line862">Eugene Charniak, et al. <a class="http" href="http://cs.brown.edu/people/melsner/multyCTF.pdf">Multilevel Coarse-to-fine PCFG Parsing</a>, HLT/NAACL 2006   <span class="anchor" id="line-38"></span></p></li><li><p class="line862">Michael Collins and Brian Roark. <a class="http" href="http://acl.ldc.upenn.edu/acl2004/main/pdf/338_pdf_2-col.pdf">Incremental Parsing with the Perceptron Algorithm</a>, ACL 2004 <span class="anchor" id="line-39"></span></p></li><li><p class="line862">Rebecca Hwa, Philip Resnik, Amy Weinberg, and Okan Kolak <a class="http" href="http://www.cs.pitt.edu/%7Ehwa/acl02.pdf">Evaluating Translational Correspondence using Annotation Projection</a>, ACL 2002.  <span class="anchor" id="line-40"></span></p></li><li><p class="line862">Slav Petrov, Leon Barrett, Romain Thibaux, and Dan Klein, <a class="http" href="http://acl.ldc.upenn.edu/P/P06/P06-1055.pdf">Learning Accurate, Compact, and Interpretable Tree Annotation</a>, ACL 2006 <span class="anchor" id="line-41"></span></p></li><li><p class="line862">Aria Haghighi and Dan Klein, <a class="http" href="http://www.cs.berkeley.edu/%7Earia42/pubs/acl06-grammarinduction">Proto-type driven grammar induction</a>, ACL 2006 <span class="anchor" id="line-42"></span><span class="anchor" id="line-43"></span></p></li></ul></li><li class="gap"><p class="line891"><strong>Shallow parsing, stemming</strong> <span class="anchor" id="line-44"></span></p><ul><li><p class="line862">Monica Rogati, Scott <a class="nonexistent" href="https://ssli.ee.washington.edu/ssliwiki/McCarley">McCarley</a>, Yiming Yang, <a class="http" href="http://www.cs.cmu.edu/%7Emrogati/web_page/html/professional/publications/stemacl03.pdf">Unsupervised Learning of Arabic Stemming using a Parallel Corpus</a>, ACL 2003 <span class="anchor" id="line-45"></span><span class="anchor" id="line-46"></span></p></li></ul></li><li class="gap"><p class="line891"><strong>Information Extraction</strong>  <span class="anchor" id="line-47"></span></p><ul><li><p class="line862">Andrew <a class="nonexistent" href="https://ssli.ee.washington.edu/ssliwiki/McCallum">McCallum</a>. <a class="http" href="http://www.cs.umass.edu/%7Emccallum/papers/acm-queue-ie.pdf">Information Extraction: Distilling Structured Data from Unstructured Text</a>, ACM Queue, volume 3, Number 9, November 2005. (Good overview article on IE) <span class="anchor" id="line-48"></span></p></li><li><p class="line862">Daniel M. Bikel, Richard Schwartz and Ralph M. Weischede <a class="http" href="http://www.cis.upenn.edu/%7Edbikel/papers/algthatlearns.doc.pdf">An Algorithm that Learns What's in a Name</a>, in Machine Learning Journal Special Issue on Natural Language Learning, 1999 <span class="anchor" id="line-49"></span></p></li><li><p class="line862">Doug Downey, Oren Etzioni, and Stephen Soderland, <a class="http" href="http://www.cs.washington.edu/homes/ddowney/papers/urns_ijcai05.pdf">A Probabilistic Model of Redundancy in Information Extraction</a>, IJCAI 2005 (Distinguished Paper Award) <span class="anchor" id="line-50"></span></p></li><li><p class="line862">Aron Culotta, Andrew <a class="nonexistent" href="https://ssli.ee.washington.edu/ssliwiki/McCallum">McCallum</a>,
+and Jonathan Betz "Integrating probabilistic extraction models and data
+mining to discover relations and patterns in text" HLT-NAACL 2006 <a class="http" href="http://www.cs.umass.edu/%7Eculotta/pubs/culotta06integrating.pdf">http://www.cs.umass.edu/~culotta/pubs/culotta06integrating.pdf</a> <span class="anchor" id="line-51"></span></p></li><li><p class="line862">Aron Culotta and Jeffrey Sorensen <a class="http" href="http://acl.ldc.upenn.edu/acl2004/main/pdf/244_pdf_2-col.pdf">Dependency Tree Kernels for Relation Extraction</a>, ACL 2004  <span class="anchor" id="line-52"></span></p></li><li><p class="line862">Razvan Bunescu and Raymond J. Mooney, <a class="http" href="http://www.cs.utexas.edu/users/ml/papers/erk-nips-05.pdf">Subsequence Kernels for Relation Extraction</a>, NIPS 2005 <span class="anchor" id="line-53"></span></p></li><li><p class="line862">Razvan Bunescu and Raymond J. Mooney, <a class="http" href="http://www.cs.utexas.edu/users/ml/papers/srl-submitted-05.pdf">Statistical Relational Learning for Natural Language Information Extraction</a>, in Statistical Relational Learning, Lise Getoor and Ben Taskar (Eds.) forthcoming book, 2005. <span class="anchor" id="line-54"></span><span class="anchor" id="line-55"></span><span class="anchor" id="line-56"></span></p></li></ul></li><li class="gap"><p class="line891"><strong>NLP for Biology</strong>  <span class="anchor" id="line-57"></span></p><ul><li><p class="line862">S. Ray &amp; M. Craven <a class="http" href="http://www.biostat.wisc.edu/%7Ecraven/papers/ray-bmc05.pdf">Learning Statistical Models for Annotating Proteins with Function Information using Biomedical Text.</a>, BMC Bioinformatics, 6(Suppl. 1):S18, 2005  <span class="anchor" id="line-58"></span></p></li></ul><ul><li><p class="line862">M. Skounakis, M. Craven &amp; S. Ray (2003). <a class="http" href="http://www.biostat.wisc.edu/%7Ecraven/papers/ijcai03.pdf">Hierarchical Hidden Markov Models for Information Extraction.</a>, Proceedings of the 18th International Joint Conference on Artificial Intelligence <span class="anchor" id="line-59"></span></p></li><li><p class="line862">Jenny Finkel, Shipra Dingare, Huy Nguyen, Malvina Nissim, Christopher Manning, and Gail Sinclair. 2004. <a class="http" href="http://www.stanford.edu/%7Ejrfinkel/papers/bionlp.pdf">Exploiting Context for Biomedical Entity Recognition: From Syntax to the Web</a>. Joint Workshop on Natural Language Processing in Biomedicine and its Applications at Coling 2004 <span class="anchor" id="line-60"></span></p></li><li><p class="line862">Y. Jin, R. <a class="nonexistent" href="https://ssli.ee.washington.edu/ssliwiki/McDonald">McDonald</a>, K. Lerman, M. Mandel, M. Liberman, F. Pereira, R.S. Winters and P.S. White, <a class="http" href="http://www.cis.upenn.edu/%7Eryantm/papers/Jin_Biolink05.pdf">Identifying and Extracting Malignancy Types in Cancer Literature</a>, Linking Literature, Information and Knowledge for Biology, <a class="nonexistent" href="https://ssli.ee.washington.edu/ssliwiki/BioLink">BioLink</a> 2005  <span class="anchor" id="line-61"></span></p></li></ul><ul><li><p class="line862">Daisuke, OKanohara, Yusuke Miyao, Yoshimasa Tsuruoka and Junichi Tsujii. (2006). <a class="http" href="http://www-tsujii.is.s.u-tokyo.ac.jp/%7Ehillbig/papers/acl2006_semicrf.pdf">Improving the Scalability of Semi-Markov Conditional Random Fields for Named Entity Recognition.</a>, ACL 2006 <span class="anchor" id="line-62"></span></p></li><li><p class="line891"><a class="http" href="http://compbio.uchsc.edu/bionlp/recommendedreadings.shtml">Recommended Readings</a> from Larry Hunter's research group at UCHSC  <span class="anchor" id="line-63"></span><span class="anchor" id="line-64"></span></p></li></ul></li><li class="gap"><p class="line891"><strong>Summarization and Generation</strong> <span class="anchor" id="line-65"></span></p><ul><li><p class="line862">Goldstein et al., <a class="http" href="http://acl.ldc.upenn.edu/W/W00/W00-0405.pdf">Multi-document Summarization by Sentence Extraction</a> NAACL 2000 Workshop on Automatic Summarization  <span class="anchor" id="line-66"></span></p></li><li><p class="line862">K. Knight and D. Marcu <a class="http" href="http://www.isi.edu/natural-language/mt/statsum.ps">Statistics-Based Summarization - Step One: Sentence Compression</a>, AAAI 2000. (Outstanding Paper award)      <span class="anchor" id="line-67"></span></p></li><li><p class="line862">Regina Barzilay, Lillian Lee <a class="http" href="http://people.csail.mit.edu/regina/my_papers/struct04.ps">Catching the Drift: Probabilistic Content Models, with Applications to Generation and Summarization</a>, In Proc. of NAACL-HLT, 2004. (Best Paper Award)  <span class="anchor" id="line-68"></span></p></li><li><p class="line862">Regina Barzilay, Kathleen <a class="nonexistent" href="https://ssli.ee.washington.edu/ssliwiki/McKeown">McKeown</a> <a class="http" href="http://people.csail.mit.edu/regina/my_papers/fusion5.ps">Sentence Fusion for Multidocument News Summarization</a>,  Computational Linguistics 2005 (Good overview paper on a summarization system) <span class="anchor" id="line-69"></span></p></li><li><p class="line862">D. Evans et al., <a class="http" href="http://www1.cs.columbia.edu/%7Edevans/papers/hltnaacl2004_demo_paper.pdf">Columbia NewsBlaster: Multilingual News Summarization on the Web</a>, HLT/NAACL 2004    <span class="anchor" id="line-70"></span></p></li></ul><ul><li><p class="line862">H.T. Dang, <a class="http" href="http://duc.nist.gov/pubs/2005papers/OVERVIEW05.pdf">Overview of DUC 2005</a> <span class="anchor" id="line-71"></span></p></li><li><p class="line862">Lin, Chin-Yew. <a class="http" href="http://www.isi.edu/%7Ecyl/papers/WAS2004.pdf">ROUGE: a Package for Automatic Evaluation of Summaries</a>. In Proceedings of the Workshop on Text Summarization Branches Out (WAS 2004), Barcelona, Spain, July 25 - 26, 2004.  <span class="anchor" id="line-72"></span></p></li><li><p class="line862">Güne Erkan, Dragomir R. Radev <a class="http" href="http://tangra.si.umich.edu/%7Eradev/lexrank/lexrank.pdf">LexRank: Graph-based Centrality as Salience in Text Summarization</a>, JAIR 2004  <span class="anchor" id="line-73"></span><span class="anchor" id="line-74"></span></p></li></ul></li><li class="gap"><p class="line891"><strong>Textual Entailment and Inference</strong> <span class="anchor" id="line-75"></span></p><ul><li><p class="line862">Ido Dagan, Oren Glickman and Bernardo Magnini <a class="http" href="http://www.cs.biu.ac.il/%7Eglikmao/rte05/dagan_et_al.pdf">The PASCAL Recognising Textual Entailment Challenge</a> (Overview of the first Textual Entailment competition) <span class="anchor" id="line-76"></span></p></li><li><p class="line862">Aria Haghighi, Andrew Y. Ng, and Christopher D. Manning. <a class="http" href="http://nlp.stanford.edu/%7Emanning/papers/rte-emnlp05.pdf">Robust Textual Inference via Graph Matching.</a> HLT-EMNLP 2005  <span class="anchor" id="line-77"></span></p></li><li><p class="line862">R. Braz, R. Girju, V. Punyakanok, D. Roth, and M. Sammons, <a class="http" href="http://l2r.cs.uiuc.edu/%7Edanr/Papers/BGPRS05.pdf">An Inference Model for Semantic Entailment and Question-Answering</a>. AAAI  2005   <span class="anchor" id="line-78"></span></p></li></ul><ul><li><p class="line862">Rion Snow, Lucy Vanderwende, Arul Menezes. <a class="http" href="http://research.microsoft.com/nlp/publications/RTE_NAACL_2006.pdf">Effectively using syntax for recognizing false entailment</a>. In Proceedings of HLT/NAACL 2006, New York. <span class="anchor" id="line-79"></span></p></li><li><p class="line862">Roy Bar-Haim, Ido Dagan, Bill Dolan, Lisa Ferro, Danilo Giampiccolo, Bernardo Magnini and Idan Szpektor. <a class="http" href="http://ir-srv.cs.biu.ac.il:64080/RTE2/proceedings/01.pdf">The Second PASCAL Recognising Textual Entailment Challenge</a>. In Proceedings of the Second PASCAL Challenges Workshop on Recognising Textual Entailment. <span class="anchor" id="line-80"></span><span class="anchor" id="line-81"></span></p></li></ul></li><li class="gap"><p class="line891"><strong>Opinion and Sentiment Analysis</strong> <span class="anchor" id="line-82"></span></p><ul><li><p class="line862">Bo Pang and Lillian Lee.<a class="http" href="http://www.cs.cornell.edu/home/llee/papers/pang-lee-stars.home.html">Seeing stars: Exploiting class relationships for sentiment categorization with respect to rating scales.</a>, Proceedings of the ACL 2005  <span class="anchor" id="line-83"></span></p></li><li><p class="line862">Yejin Choi, Claire Cardie, Ellen Riloff, and Siddharth Patwardhan. <a class="http" href="http://www.cs.cornell.edu/%7Eychoi/Papers/emnlp05.pdf">Identifying Sources of Opinions with Conditional Random Fields and Extraction Patterns</a>,  EMNLP 2005 <span class="anchor" id="line-84"></span></p></li><li><p class="line862">Matt Thomas, Bo Pang, and Lillian Lee. <a class="http" href="http://www.cs.cornell.edu/home/llee/papers/tpl-convote.home.html">Get out the vote: Determining support or opposition from Congressional floor-debate transcripts.</a>  Proceedings of EMNLP, 2006.  <span class="anchor" id="line-85"></span><span class="anchor" id="line-86"></span><span class="anchor" id="line-87"></span></p></li></ul></li><li class="gap"><p class="line891"><strong>Question Answering</strong> <span class="anchor" id="line-88"></span></p><ul><li>Lynette
+Hirschman and Rob Gaizauskas (2001): Natural Language Question
+Answering: The View from Here. Natural Language Engineering 7(4). <span class="anchor" id="line-89"></span></li><li><p class="line862">Brill, Lin, Banko, Dumais and Ng (2001): <a class="http" href="http://research.microsoft.com/%7Esdumais/Trec2001Notebook.Feb2002Final.pdf">Data-Intensive Quesion Answering</a>. Proceedings TREC-2001 <span class="anchor" id="line-90"></span></p></li><li><p class="line862">Dan Moldovan, Sanda Harabagiu, Marius Pasca, Rada Mihalcea, Richard Goodrum, Roxana Girju and Vasile Rus, <a class="http" href="http://www.utdallas.edu/%7Esanda/papers/acl-00.ps.gz">The Structure and Performance of an Open-Domain Question-Answering System</a>, ACL 2000 <span class="anchor" id="line-91"></span></p></li><li><p class="line891"><a class="http" href="http://www.iccs.informatics.ed.ac.uk/%7Ejbos/qa/">Edinburgh QA Reading Group paper list</a> <span class="anchor" id="line-92"></span><span class="anchor" id="line-93"></span></p></li></ul></li><li class="gap"><p class="line891"><strong>Finite State Methods</strong> <span class="anchor" id="line-94"></span></p><ul><li><p class="line862">Mehryar Mohri <a class="http" href="http://www.cs.nyu.edu/%7Emohri/postscript/fla.pdf">Weighted Finite-State Transducer Algorithms, An Overview</a>  <span class="anchor" id="line-95"></span></p></li><li><p class="line862">Mehryar Mohri, Fernando Pereira, Michael Riley, <a class="http" href="http://www.sciencedirect.com.offcampus.lib.washington.edu/science?_ob=MImg&amp;_imagekey=B6WCW-458NBGK-5-1&amp;_cdi=6749&amp;_user=582538&amp;_orig=browse&amp;_coverDate=01%2F31%2F2002&amp;_sk=999839998&amp;view=c&amp;wchp=dGLzVlz-zSkWW&amp;md5=b9f3fb94338d2a0320f4c35e17888c44&amp;ie=/sdarticle.pdf">Weighted Finite State Transducers in Speech Recognition</a>, Computer Speech &amp; Language (2002), 16 <span class="anchor" id="line-96"></span></p></li><li><p class="line862">J. May and K. Knight, <a class="http" href="http://www.isi.edu/%7Ejonmay/pubs/naacl06.pdf">A Better N-Best List: Practical Determinization of Weighted Finite Tree Automata</a>, Proc. NAACL-HLT, 2006 <span class="anchor" id="line-97"></span><span class="anchor" id="line-98"></span></p></li></ul></li><li class="gap"><p class="line891"><strong>Machine Learning focus</strong> <span class="anchor" id="line-99"></span></p><ul><li><p class="line862">Charles Sutton, Michael Sindelar, and Andrew <a class="nonexistent" href="https://ssli.ee.washington.edu/ssliwiki/McCallum">McCallum</a>, <a class="http" href="http://www.cs.umass.edu/%7Emccallum/papers/bags-hlt2006.pdf">Reducing Weight Undertraining in Structured Discriminative Learning </a>, HLT/NAACL 2006 <span class="anchor" id="line-100"></span></p></li><li><p class="line862">Smith, Noah A. and Jason Eisner (2005). <a class="http" href="http://www.cs.jhu.edu/%7Ejason/papers/smith+eisner.acl05.pdf">Contrastive estimation: Training log-linear models on unlabeled data.</a>, Proceedings of the 43rd Annual Meeting of the Association for Computational Linguistics (ACL) (Nominated for Best Paper)  <span class="anchor" id="line-101"></span></p></li><li><p class="line862">Jun Suzuki, Hideki Isozaki, and Eisaku Maeda, <a class="http" href="http://acl.ldc.upenn.edu/acl2004/main/pdf/342_pdf_2-col.pdf">Convolution Kernels with Feature Selection for Natural Language Processing Tasks</a>, In proc. of the 42th Annual Meeting of Association for Computational Linguistics (ACL-2004),  <span class="anchor" id="line-102"></span></p></li><li><p class="line862">D. Roth and W. Yih, <a class="http" href="http://l2r.cs.uiuc.edu/%7Edanr/Papers/RothYi05.pdf">Integer Linear Programming Inference for Conditional Random Fields.</a>, Proc. of the International Conference on Machine Learning (ICML)  (2005)  <span class="anchor" id="line-103"></span></p></li></ul><ul><li><p class="line862">David Pierce and Claire Cardie. <a class="http" href="http://www.cs.cornell.edu/home/cardie/papers/emnlp-2001.pdf">Limitations of Co-Training for Natural Language Learning from Large Datasets.</a>  EMNLP-2001 <span class="anchor" id="line-104"></span></p></li></ul><ul><li><p class="line862">Aria Haghighi and Dan Klein, <a class="http" href="http://www.cs.berkeley.edu/%7Earia42/pubs/naacl06-posinduction.pdf">Prototype-driven learning for sequence models</a>, HLT/NAACL 2006 (Best Student Paper Award)  <span class="anchor" id="line-105"></span></p></li></ul></li></ul><span class="anchor" id="bottom"></span></div><p id="pageinfo" class="info" dir="ltr" lang="en">NLP Reading Group  (last edited 2007-01-30 00:51:32 by <span title="KevinDuh @ sparrow.ee.washington.edu[128.208.232.89]"><a generated="True" href="https://ssli.ee.washington.edu/ssliwiki/KevinDuh" title="KevinDuh @ sparrow.ee.washington.edu[128.208.232.89]">KevinDuh</a></span>)</p>
+
+<div id="pagebottom"></div>
+</div>
+
+
+<div id="footer"><ul class="editbar"><li><span class="disabled">Immutable Page</span></li></ul><p><a href="https://ssli.ee.washington.edu/ssliwiki/NLP%20Reading%20Group?action=refresh">DeleteCache</a> (cached 2007-02-26 00:21:51)</p><p>Or try one of these actions: <a href="https://ssli.ee.washington.edu/ssliwiki/NLP_Reading_Group?action=AttachFile">Attach File</a>, <a href="https://ssli.ee.washington.edu/ssliwiki/NLP_Reading_Group?action=Despam">Despam</a>, <a href="https://ssli.ee.washington.edu/ssliwiki/NLP_Reading_Group?action=LikePages">Like Pages</a>, <a href="https://ssli.ee.washington.edu/ssliwiki/NLP_Reading_Group?action=LocalSiteMap">Local Site Map</a>, <a href="https://ssli.ee.washington.edu/ssliwiki/NLP_Reading_Group?action=MyPages">My Pages</a>, <a href="https://ssli.ee.washington.edu/ssliwiki/NLP_Reading_Group?action=PackagePages">Package Pages</a>, <a href="https://ssli.ee.washington.edu/ssliwiki/NLP_Reading_Group?action=RenderAsDocbook">Render As Docbook</a>, <a href="https://ssli.ee.washington.edu/ssliwiki/NLP_Reading_Group?action=SpellCheck">Spell Check</a>, <a href="https://ssli.ee.washington.edu/ssliwiki/NLP_Reading_Group?action=SubscribeUser">Subscribe User</a></p>
+</div>
+<ul id="credits">
+<li><a href="http://moinmoin.wikiwikiweb.de/">MoinMoin Powered</a></li><li><a href="http://www.python.org/">Python Powered</a></li><li><a href="http://validator.w3.org/check?uri=referer">Valid HTML 4.01</a></li>
+</ul>
+
+
+</body></html>

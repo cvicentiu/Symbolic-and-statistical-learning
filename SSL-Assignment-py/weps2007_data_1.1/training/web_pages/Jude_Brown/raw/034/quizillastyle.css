@@ -1,0 +1,1285 @@
+body {
+    background-image: url('../images/redbg.jpg');
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+div.clearingBlock{
+clear: both;
+color: white;
+float: none !important;
+min-height: 1px !important;
+}
+
+/********************************************* Login  *****************************************/
+
+div.topButtons {
+margin-left:369px;
+width: 585px;
+}
+
+img.regBtn{
+float: left;
+}
+
+div.loginbox {
+float: left;
+width: 478px;
+height: 26px;
+background: #FCFEB5;
+font-size: 11px;
+overflow: hidden;
+}
+
+div.loginbox #helpLink{
+text-decoration: underline;
+color: black;
+float: right;
+margin: 5px 0 0 0;
+}
+
+form{
+margin: 0;
+}
+
+div.loginbox form{
+padding: 5px;
+}
+
+div.loginbox input.textfield{
+width: 85px;
+}
+
+div.loginbox input{
+font-size: 11px;
+
+}
+
+div.leftBox {
+float: left;
+height: 26px;
+width: 11px;
+}
+
+div.rightBox {
+float: right;
+height: 26px;
+width: 11px;
+}
+
+/********************************************* SearchBox *****************************************/
+
+div.searchbox {
+background-color: #77B1BA;
+width:184px;
+height:auto;
+margin-left:8px;
+overflow: hidden;
+}
+
+img.searchheader{
+padding: 3px 0 0 0;
+}
+
+div.searchbox input.textfield{
+width: 110px;
+}
+
+div.searchbox input{
+float: left;
+margin: 0 0 0 0;
+}
+
+div.searchleft {
+float: left;
+width:8px;
+height:52px;
+}
+
+div.searchright {
+float:right;
+clear: none;
+width:8px;
+height:52px;
+}
+
+div.zillaStats{
+padding: 3px;
+text-align: center;
+}
+
+/********************************************* Message Box *****************************************/
+
+div.MessagePageBar {
+background-color: #77B1BA;
+width:710px;
+height:38px;
+padding:0px;
+margin-top:0px;
+overflow: hidden;
+}
+
+div.mssgboxleft {
+float:left;
+_margin-left:-0px;
+width:11px;
+height:29px;
+}
+
+div.mssgboxright{
+float:right;
+width:11px;
+height:29px;
+}
+
+div.messagebar {
+background-color: #FDFFB4;
+float:left;
+width:331px;
+height:28px;
+padding:0px;
+margin-top:20px;
+margin-left:178px;
+_margin-left:87px;
+_padding:0px;
+overflow: hidden;
+}
+
+div.messageboxText {
+font-size: 10px;
+color: #000000;
+text-align: center;
+margin-left:12px;
+padding:5px;
+_padding:0px;
+}
+
+div.boxText {
+font-size: 10px;
+color: #000000;
+text-align: center;
+margin-left:12px;
+padding:7px;
+}
+
+div.textbox{
+float:left;
+padding: 7px 0 0 178px;
+font-size:12px;
+}
+
+div.textBoxtext{
+font-size: 12px;
+color: #000000;
+}
+
+div.buttons{
+margin-left:175px;
+width:400px;
+}
+
+div.messagegrfc{
+margin-left:0px;
+margin-top:-4px;
+_margin-top:-4px;
+_padding:0px;
+}
+
+div.bluedividerMssg {
+padding: 7px 3px 5px 0px;
+margin-left:-4px;
+_margin-left:-4px;
+}
+
+div.messageFormPanel{
+display: none;
+}
+
+div.messageForm{
+float: left;
+padding: 5px 0 5px 0;
+width: 400px;
+}
+
+div.messageFormFriends{
+width: 200px; float: left; margin: 5px 0 0 10px; border: 1px solid #aaa; padding: 3px;
+}
+
+div.messageFormFriendsList{
+width: 190px; height: 200px; overflow: auto; border: 1px solid #aaa; padding: 2px;
+}
+
+div.smileys{
+float: left;
+width: 150px;
+padding: 5px;
+}
+
+/********************************************* White Wrapper *****************************************/
+
+div.banner160 {
+float: right;
+}
+
+div.whitewrapper {
+height:13px;
+width:941px;
+margin-left:13px;
+background-color:#FFFFFF;
+clear: both;
+}
+
+div.leftcorner {
+float:left;
+height: 13px;
+width:10px;
+}
+
+div.rightcorner {
+float:right;
+height: 13px;
+width: 10px;
+}
+
+div.whitebody {
+width: 941px;
+min-height: 800px;
+margin-left: 13px;
+background: #FFFFFF;
+}
+
+/********************************************* Header *****************************************/
+
+div.logo {
+position: absolute;
+z-index: 500;
+top: 38px;
+_top: 44px;
+left: 49px;
+width: 140px;
+height: 115px;
+text-align: center;
+padding: 0;
+}
+
+img.quizlogo{
+width: 140px;
+height: 115px;
+}
+
+div.banner {
+float:right;
+margin: 0 14px 0 0;
+_margin: 0 7px 0 0;
+height: 90px;
+overflow: hidden;
+width: 728px;
+text-align: center;
+}
+
+div.left {
+float:left;
+clear:left;
+}
+
+div.top{
+width:941px;
+min-height: 107px;
+_height: 104px;
+}
+
+div.right{
+float: left;
+width:725px;
+margin: 0 0 0 10px;
+}
+
+div.right a, div.right a:active, div.right a:hover{
+color: black;
+text-decoration: underline;
+}
+
+div.right a:visited{
+color: blue;
+text-decoration: none;
+}
+
+div.centerPublic{
+margin-left: 122px; 
+margin-right: auto; 
+text-align: center;
+width: 700px;
+float: none;
+}
+
+div.centerInternal{
+margin-left: 12px; 
+margin-right: auto; 
+width: 690px;
+float: none;
+}
+
+div.customHomePage{
+margin: 10px 15px 5px 15px;
+}
+
+div.customHomePage a{
+text-decoration: underline;
+}
+
+/********************************************* Generic Box *****************************************/
+
+div.GenPageBar {
+background-color: #77B1BA;
+width:690px;
+height:20px;
+padding:0px;
+margin: 0 0 10px 0;
+overflow: hidden;
+clear: both;
+text-align: center;
+}
+
+div.GenPageBarShort {
+background-color: #77B1BA;
+width:200px;
+height:20px;
+padding:0px;
+margin-top:0px;
+overflow: hidden;
+}
+
+div.GenPageList {
+padding: 5px 0 0 0;
+width:690px;
+overflow: hidden;
+font-size: 11px;
+text-align: center;
+}
+
+div.GenPageList div{
+float: left;
+margin: 0 10px 0 0;
+width: 15%;
+}
+
+div.GenPageListHead {
+background-color: #FDFFB4;
+width:690px;
+padding: 5px 0 0 0;
+height: 25px;
+overflow: hidden;
+font-size: 12px;
+font-style: italic;
+text-align: center;
+}
+
+div.GenPageListHead div{
+float: left;
+margin: 0 10px 0 0;
+text-align: center;
+width: 15%;
+}
+div.genbar {
+background-color: #FDFFB4;
+float:left;
+width:331px;
+height:20px;
+padding:0px;
+margin-top:20px;
+margin-left:178px;
+_margin-left:87px;
+_padding:0px;
+overflow: hidden;
+}
+
+div.genboxText {
+font-size: 10px;
+color: #000000;
+text-align: center;
+margin-left:12px;
+padding:5px;
+_padding:0px;
+}
+
+div.genBlueDivider {
+padding: 7px 3px 5px 0px;
+margin-left:-4px;
+_margin-left:-4px;
+}
+
+/********************************************* Bar *****************************************/
+
+div.bar {
+background-color: #77B1BA;
+width:726px;
+padding:0px;
+margin-top:0px;
+overflow: hidden;
+text-align: center;
+}
+
+div.barText {
+font-size: 10px;
+color: #FFFFFF;
+padding:3px;
+}
+
+span.barTextHeading {
+font-size: 12px;
+color: #FFFFFF;
+padding:3px;
+}
+
+/********************************************* Tests Page *****************************************/
+
+div.TestPageBar {
+background-color: #77B1BA;
+width:726px;
+height:38px;
+padding:0px;
+margin-top:0px;
+overflow: hidden;
+}
+
+
+ul.TestPageSpacing {
+padding:5px 0 0 0px;
+list-style: none;
+_padding:0 0 0 0;
+_margin-left:0px;
+_margin-top: 1px;
+}
+
+div.ad {
+float:right;
+margin-left:10px;
+width: 160px;
+text-align: center;
+}
+
+/********************************************* Quiz Page *****************************************/
+
+div.barQuizPage {
+background: #77B1BA;
+width: 918px;
+margin: 0 0 0 10px;
+clear: left;
+}
+
+div.flyoutnav{
+display: none;
+position: absolute;
+z-index: 500;
+padding: 10px 10px 10px 0;
+background: white;
+border: 1px solid #aaa;
+width: 194px;
+}
+
+div.quizPageNavMenuLink{
+float: left;
+margin: 0 0 0 10px;
+_margin: 0 0 0 5px;
+background: #9FD1DA;
+width: 85px;
+cursor: pointer;
+}
+
+div.roundedBar{
+width: 690px;
+margin: 0 0 0 10px;
+background: #77B1BA;
+text-align: center;
+}
+
+ul.quizzesList{
+list-style-type: none;
+padding: 0;
+_margin-left: 0;
+}
+
+ul.quizzesList li{
+font-size: 14px;
+margin: 0 0 10px 0;
+}
+
+
+div.whiteBackBtn{
+background: #77B1BA;
+text-align: center;
+margin: 5px;
+}
+
+div.quizPageNavMenuLinkContent{
+padding: 0 3px 0 3px;
+}
+
+div.quizPageNav{
+margin: 0 0 0 100px;
+/*_width: 720px;*/
+color: white;
+font-size: 11px;
+min-height: 27px;
+_height: 37px;
+}
+
+div.quizPageNav div{
+float: left;
+margin: 0 10px 0 0;
+padding: 0 0 0 10px;
+border-left: 1px solid #d4d4d4;
+}
+
+div.quizPageNav a:visited{
+color: black;
+}
+
+div.bar a:visited{
+color: black;
+text-decoration: underline;
+}
+
+div.profileNav{
+margin: 0 0 0 75px;
+}
+
+div.profileNav div{
+margin: 0 7px 0 0;
+}
+
+div.barleft {
+float: left;
+width:10px;
+height:38px;
+}
+
+div.barright {
+float: right;
+clear: none;
+width:9px;
+height:38px;
+}
+
+div.quizPageQuizPane{
+float: left;
+}
+
+div.quizPageRight{
+float: left;
+margin: 10px 10px 0 10px;
+width: 160px;
+text-align: center;
+}
+
+div.quizPageQuiz{
+width: 730px;
+background: #FEFDE9;
+float: left;
+margin: 10px 0 0 10px;
+}
+
+div.quizPageQuizHeader{
+overflow: hidden;
+background: #9FD1DA;
+padding: 5px;
+font-size: 14px;
+font-weight: bold;
+text-align: center;
+margin: 0 0 5px 0;
+}
+
+div.quizPageQuizAuthor{
+font-size: 11px;
+font-weight: normal;
+}
+
+div.quizPageQuizQuestHeader{
+background: #d4d4d4;
+text-align: left;
+}
+
+div.quizPageQuizQuestAnswers{
+text-align: right;
+font-size: 13px;
+margin: 0 0 10px 0;
+padding: 10px;
+}
+
+div.quizPageQuizSubmit{
+font-size: 10px;
+}
+
+div.quizPageQuizResultHeader{ 
+    background: #d4d4d4; 
+    text-align: center; 
+} 
+div.quizPageQuizResultHeader a,div.quizPageQuizResultHeader a:active,div.quizPageQuizResultHeader a:hover,div.quizPageQuizResultHeader a:visited{ 
+    color: blue; 
+    text-decoration: underline; 
+}
+
+/********************************************* Boxes *****************************************/
+
+div.topHomeBoxes{
+
+margin: 10px 0 10px 5px;
+}
+
+div.mostrecent {
+float:left;
+width:408px;
+}
+
+div.mostrecent2{
+border: 1px solid #77B1BA;
+margin: 0 0 5px 0;
+}
+
+div.topHomeBoxesRight{
+width: 300px;
+float: left;
+margin-left:10px;
+}
+
+div.featured {
+height:250px;
+border: 1px solid #77B1BA;
+margin-top:0px 0 0 12px;
+}
+
+div.bottomHomeBoxes{
+margin: 15px 0 0 5px;
+}
+
+div.mostpopular {
+background: #BBD8DC;
+float: left;
+width:354px;
+height: 500px;
+border: 1px solid #77B1BA;
+margin: 0 8px 0 0;
+}
+
+div.highestrated {
+background: #BBD8DC;
+float: left;
+width:354px;
+height: 500px;
+border: 1px solid #77B1BA;
+}
+
+div.homeBoxesText{
+padding: 5px;
+font-size:11px;
+margin: 0 0 5px 0;
+line-height: 1.2em;
+}
+
+ul.spacing {
+padding:1px 0 0 1px;
+_padding:10px 0 0 0;
+_margin-left:0px;
+_margin-top: 0.5px;
+list-style: none;
+}
+
+
+.spacing li{
+margin: 0 0 10px 0;
+}
+
+.spacing li a,.spacing li a:active{
+color: black;
+text-decoration: none;
+}
+
+.spacing li a:visited {
+color: blue;
+text-decoration: none;
+}
+
+.spacing li a:hover{
+text-decoration: underline;
+}
+
+div.news {
+border: 1px solid #77B1BA;
+height:295px;
+width: 300px;
+/*min-height: 195px;*/
+margin-top:2px;
+overflow: auto;
+}
+
+span.homeFeedbackLink{
+font-size: 11px; 
+}
+
+span.homeFeedbackLink a,span.homeFeedbackLink a:hover, span.homeFeedbackLink a:active, span.homeFeedbackLink a:visited{
+color: blue;
+}
+
+/********************************************* Text Effects *****************************************/
+
+.boldText{
+font-size:11px;
+color: #000000;
+font-weight:bold;
+}
+
+
+.redText{
+font-size: 11px;
+color: #8F2A24;
+font-weight:bold;
+}
+
+.redLinks{
+font-size: 9px;
+color: #8F2A24;
+}
+
+.blueText{
+font-size: 11px;
+color: #24818F;
+font-weight:bold;
+}
+
+.blueLinks{
+font-size:9px;
+color: #24818F;
+}
+
+div.divider {
+float:left;
+padding: 0 0 5px 0px;
+}
+
+div.bluedivider {
+padding: 5px 3px 5px 0;
+}
+
+div.featured-text {
+float:right;
+padding:40px 0 0 0;
+margin-top:15px;
+width: 150px;
+text-align:center;
+}
+
+/********************************************* Navigation *****************************************/
+
+div.nav {
+clear: left;
+width:184px;
+padding: 0px;
+background-color: #FFFFFF;
+margin-top:5px;
+margin-left:8px;
+}
+
+div.nav a:visited{
+color: black;
+}
+
+div.navBox {
+line-height: 1.3em;
+}
+
+div.border {
+background: url('../images/border.jpg') repeat-y;
+padding: 0 0 0 7px;
+}
+
+div.navtop {
+width:184px;
+height:18px;
+margin-left:0px;
+overflow: hidden;
+}
+
+div.navBoxs{
+float:left;
+
+}
+
+div.navBox{
+text-align:left;
+margin: 0 0 5px 0;
+padding: 0 0 0 0;
+}
+
+
+.navNew{
+font-size: 9px;
+color: #FF0000;
+font-weight:bold;
+padding: 0 0 0 4px;
+}
+
+.navLinks{
+font-size: 11px;
+color: #black;
+font-weight:bold;
+}
+
+.navSublinks{
+font-size:9px;
+text-align: left;
+margin-left:8px;
+}
+
+a:link {color: #000000; text-decoration: none;}
+a:active {color: #000000; text-decoration: none;}
+a:visited {color: blue; text-decoration: none;}
+a:hover {color: #000000; text-decoration: underline;}
+
+div.navbottom {
+width:184px;
+height:20px;
+margin-left:0px;
+}
+
+/********************************************* Footer *****************************************/
+
+div.bottomcorners {
+width:942px;
+height:13px;
+margin-left:13px;
+background: #FFFFFF;
+overflow: hidden;
+}
+
+div.rightcornerbottom {
+float:right;
+width:8px;
+height:13px;
+}
+
+div.leftcornerbottom {
+float:left;
+widht:8px;
+height:13px;
+}
+
+/********************************************* Search *****************************************/
+
+div.advancedSearch{
+display: none;
+}
+
+div.advancedSearchDefault{
+display: block;
+}
+
+div.advancedSearchFill{
+width: auto;
+}
+
+div.advancedSearchForm{
+width: 450px;
+float: left;
+}
+
+div.advancedSearchForm select{
+font-size: 11px;
+}
+
+div.formBlock{
+float: left;
+margin: 0 10px 0 0;
+}
+
+div.fieldset{
+margin: 0 0 10px 0;
+}
+
+div.fieldsetContents{
+padding: 3px;
+}
+
+span.advancedSearchDateLabel{
+display: block;
+width: 60px;
+}
+
+span.advancedSearchHints{
+display: none;
+font-size: 11px;
+font-style: italic;
+background: #aaa; 
+padding: 2px;
+border: 1px solid black;
+margin: 3px 0 0 0;
+}
+
+div.toolTipsEmbedded{
+display: none;
+font-size: 11px;
+font-style: italic;
+background: #aaa; 
+padding: 2px;
+border: 1px solid black;
+margin: 3px 0 0 0;
+}
+
+div.toolTipsFloating{
+position: absolute;
+z-index: 1000;
+display: none;
+width: 200px;
+font-size: 11px;
+font-style: italic;
+background: #d4d4d4; 
+padding: 2px;
+border: 1px solid black;
+margin: 3px 0 0 0;
+}
+
+span.miscMsg{
+display: block; margin: 10px;
+}
+
+span.advancedSearchHints a{
+color: red;
+}
+
+div.advancedSearchTips {
+width: 270px;
+float: left;
+margin: 0 0 0 5px;
+background: #77B1BA;
+font-size: 11px;
+}
+
+div.advancedSearchTipsContent{
+padding: 5px;
+}
+
+span.advancedSearchTipsCollapsable{
+display: none;
+}
+
+div.advancedSearchTips ul{
+margin: 4px;
+padding: 5px;
+list-style-type: none;
+}
+
+div.advancedSearchTips ul li{
+margin: 0 0 3px 0;
+}
+
+div.searchResults{
+clear: both;
+width: 725px;
+
+}
+
+div.searchResults table td{
+font-size: 11px;
+}
+
+div.roundCorners{
+overflow: hidden;
+height: 7px;
+padding: 0;
+margin: 0;
+}
+
+div.darkerTop{
+background: #639AA3;
+
+}
+
+img.round_corner_lft{
+float: left;
+}
+img.round_corner_rt{
+float: right; 
+}
+
+tr.resultRow{
+cursor: pointer;
+}
+
+div.footer{
+text-align: center;
+display: block;
+width: 100%;
+padding: 10px 0 0 0;
+font-size: 11px;
+}
+
+div.footer a:visited{
+color: black;
+}
+
+div.progressIndicator{
+width: 740px;
+background: white;
+min-height: 500px;
+height: 500px;
+display: block;
+position: absolute;
+z-index: 500;
+top: 225px;
+left: 215px;
+text-align: center;
+padding: 20px 0 0 0;
+}
+
+div.progressIndicator a,div.progressIndicator a:active,div.progressIndicator a:visited,div.progressIndicator a:hover{
+font-weight: bold;
+text-decoration: underline;
+}
+
+div.progressGoogleBlurb{
+width: 300px;
+text-align: left;
+font-size: 12px;
+position: relative;
+left: 50%;
+margin-left: -150px;
+_margin-left: 0; /* IE doesnt need this positioning hack to center like FF does */
+_left: 0;
+}
+
+/********************************* MISC ********************************************/
+
+div.alphaIndex{
+display: none;
+border: 0px;
+float: none;
+text-align: center;
+width: 100%;
+}
+
+div.alphaIndex a{
+color: white;
+}
+
+.link-group{
+text-align: right; /* for profile pages, the two column table */
+}
+
+table#profileTable td{
+text-align: left; /* for profile pages, the two column table */
+}
+
+table#profileTable a,table#profileTable a:active,table#profileTable a:visited,table#profileTable a:hover{
+text-decoration: underline;
+}
+
+div#toFields input{
+
+}
+
+div.helpLink {
+text-align:right;
+margin-top:5px;
+margin-bottom:5px;
+margin-right:10px;
+font-size:9px;
+float:right;
+}
+
+span.textLinkBtns {
+    font-weight: bold;
+}
+
+span.textLinkBtns a, span.textLinkBtns a:active, span.textLinkBtns a:hover, span.textLinkBtns a:visited {
+    color: black;
+    text-decoration: underline;
+}
+
+
+div.yellowRoundBox {
+background-color: #FEFDE9;
+width:160px;
+padding:0px;
+margin-top:0px;
+overflow: hidden;
+text-align: center;
+}
+
+div.darkerTopRed{
+background: #FF3333;
+color: white;
+}
+
+div.roundCornersYellowBox{
+height: 4px;
+}
+
+ul.whatsHotBox{
+margin: 0 0 0 14px;
+_margin-left: 16px;
+padding: 0;
+color: red;
+list-style-type: circle;
+}
+ul.whatsHotBox li{
+margin: 0 0 3px 0;
+}
+ul.whatsHotBox a,ul.whatsHotBox a:active,ul.whatsHotBox a:visited,ul.whatsHotBox a:hover{
+color: blue;
+font-size: 11px;
+}
+
+/************************************ Comments **************************************/
+
+div.commentsBlock{
+margin: 20px 0 0 0;
+}
+
+div.commentsBlockHead{
+background: #639AA3;
+color: white;
+font-size: 15px;
+font-weight: bold;
+padding: 5px;
+}
+
+div.ltGreenSection{
+background: #E2F6F9;
+padding: 5px;
+}
+
+ul.commentsBlockPosts{
+list-style-type: none;
+padding: 0 0 0 5px;
+margin: 0;
+}
+
+ul.commentsBlockPosts li{
+margin: 0 0 20px 0;
+}
+
+span.commentTitle{
+font-size: 14px;
+}
+
+span.commentVitals{
+font-size: 11px;
+font-style: italic;
+}
+
+span.commentBody{
+font-size: 12px;
+}
+
+span.commentsOps{
+float: right;
+font-size: 12px;
+}
+
+div#errors {
+color: #600;
+background-color: #F99;
+
+padding: 5px;
+margin-bottom: 5px;
+border: 1px solid #600;
+}
+
+div#status {
+color: #336600;
+background-color: #33CC66;
+
+padding: 5px;
+margin-bottom: 5px;
+border: 1px solid #33CC33;
+}
+
+.submitButton {
+    background: url(/images/submit_bttn.gif);
+    width:95;
+    height:34;
+    border:0px;
+}
+
+div.tagsList ul{
+list-style-type: none;
+font-size: 13px;
+margin: 0;
+padding: 0 0 0 5px;
+_padding: 0 0 0 3px;
+
+}
+.underline a,.underline a:active,.underline a:visited,.underline a:hover{
+text-decoration: underline;
+}
+
+
+
+div.topref {
+height:276px;
+width: 340px;
+/*min-height: 195px;*/
+margin:0px 0px 0 0px;
+overflow: none;
+float:left;
+border: 1px solid #77B1BA;
+}
+
+
+div.featcontest {
+height:276px;
+width: 350px;
+/*min-height: 195px;*/
+margin:0px 0px 0 0px;
+overflow: auto;
+float:left;
+border: 1px solid #77B1BA;
+}
+
+div.refcontainer{
+margin:5px 0 0px 10px;
+float:left;
+width:300px;
+}
+
+div.bannercontainer{
+margin:0px 10px 4px 0px;
+float:left;
+width: 88px;
+height:45px;
+}
+
+div.reftext{
+float:left;
+margin:0px 0px 0 100px;
+}
+
+div.contestlinks{
+float:right;
+margin:20px 20px 0 0px;
+font-size:13px;
+text-align:right;
+}
+
+div.FeatContestBox{
+height:300px;
+width: 354px;
+/*min-height: 195px;*/
+overflow: none;
+float:left;
+margin:0px 0px 0 0px;
+}
+
+div.TopReferrersBox{
+height:300px;
+width: 348px;
+/*min-height: 195px;*/
+overflow: none;
+float:left;
+margin: 0px 6px 0 6px;
+}
+
+div.BottomBoxRow{
+float:left;
+width: 720px;
+margin:0px 0px 0px 0px;
+}

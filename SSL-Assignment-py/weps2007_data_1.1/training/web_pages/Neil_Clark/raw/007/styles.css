@@ -1,0 +1,607 @@
+/* @group General Styles */
+
+body {
+	color: #333333;
+	font: 0.75em/1.8em "Lucida Grande", LucidaGrande, Lucida, "Lucida Sans", Tahoma, Arial, Helvetica, sans-serif;
+	margin: 0 60px 20px;
+	text-align: center;
+}
+
+p {
+}
+
+b, strong {
+
+}
+
+a:link, a:visited {
+	color: #5a5a5a;
+	text-decoration: underline;
+}
+
+a:hover, a:active {
+	color: #000;
+	text-decoration: none;
+}
+
+img {
+	border: none;
+}
+
+
+
+
+.image-left {
+	float: left;
+	margin: 3px 1em 1em 0;
+	padding: 3px;
+}
+
+.image-right {
+	float: right;
+	margin: 3px 0 1em 1em;
+	padding: 3px;
+}
+
+
+/* @end */
+
+/* @group Layout */
+
+#container { 
+ /* This Is The BG Color Of The Main Div */
+	margin: 0px auto; /* Right And Left Margin Widths To Auto */
+	text-align: left; /* Hack To Keep IE5 Windows Happy */
+	border: 1px solid white;
+	position: relative;
+	margin-top: 20px;
+	width: 100%;
+}
+
+.clearer {
+	clear: both;
+}
+
+#pageHeader {
+	position: relative;
+	z-index: 0;
+	height: 200px;
+	margin-right: auto;
+	margin-bottom: -1px;
+	margin-left: auto;
+	width: 100%;
+}
+
+
+#pageHeader img {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#pageHeader h1 {
+	color: #6d84af;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 30px;
+	left: 20px;
+	letter-spacing: 2px;
+	font-size: 4.6em;
+	font-weight: normal;
+}
+
+
+#pageHeader h2 {
+	color: #a3abb5;
+	font-size: 1em;
+	margin: 0;
+	position: absolute;
+	top: 65px;
+	left: 25px;
+}
+
+
+#contentContainer #content {
+	margin-top: 20px;
+	padding-right: 40px;
+	padding-left: 40px;
+	font-size: 0.9em;
+}
+
+#contentContainer #content p+h3 {
+	border-top: 1px solid #ccc;
+	padding-top: 20px;
+}
+
+#contentContainer #content img.half {
+	width: 40%;
+}
+
+#contentContainer #content img {
+	border: none;
+}
+
+
+#sidebarContainer #sidebar {
+	margin: 0px;
+	color: #505050;
+	width: 180px;
+	padding: 10px;
+	font-size: 0.8em;
+}
+
+
+#sidebarContainer .sideHeader {
+	background: #6e85a7;
+	color: #e7f2e8;
+	font-weight: bold;
+	height: 23px;
+	padding: 0px 10px;
+	width: 180px;
+	margin: 0;
+}
+
+#footer {
+	border-top: 1px solid #eeeeee;
+	margin-top: 20px;
+	color: #909090;
+	clear: both;
+}
+
+#footer p {
+	margin: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+#footer a:link, #footer a:visited {
+
+}
+
+#footer a:hover, #footer a:active {
+}
+
+
+#logo img {
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	left: 15px;
+	margin-top: -45px;
+}
+
+div#logo {
+	width: 120px;
+	position: absolute;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	top: 0;
+	height: 100%;
+	text-align: center;
+}
+
+	
+/* @end */
+
+/* @group Bread-crumb */
+
+#breadcrumbcontainer {
+	font-size: 10px;
+	color: #808ea0;
+	font-weight: bold;
+	height: 23px;
+	display: block;
+}
+
+#breadcrumbcontainer ul {
+	list-style: none;
+	margin: 0 20px;
+	padding: 0;
+}
+
+#breadcrumbcontainer li {
+	display: inline;
+}
+
+#breadcrumbcontainer a {
+	color: #e5e4f2;
+}
+
+#breadcrumbcontainer a:hover {
+	color: #ffffff;
+}
+	
+/* @end */
+
+/* @group Toolbar */
+
+/* Toolbar Styles */
+#navcontainer {
+	position: relative;
+	overflow: hidden;
+}
+/*Start Commented Backslash Hack \*/
+
+
+
+/* @end */
+
+/* @group Global Classes */
+
+blockquote, .standout {
+	color: #96a7bb;
+	border-top: 1px solid #eeeeee;
+	border-bottom: 1px solid #eeeeee;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h3 {
+}
+
+h4 {
+}
+
+.imageStyle {
+
+}
+
+.clear-left {
+	clear: left;
+}
+	
+/* @end */
+
+/* @group Blog */
+
+/* @group Archive Page */
+
+.blog-archive-background {
+
+}
+
+.blog-archive-headings-wrapper {
+	margin: 0px auto; /* Right And Left Margin Widths To Auto */
+	text-align: left; /* Hack To Keep IE5 Windows Happy */
+}
+
+.blog-archive-entries-wrapper {
+	margin: 0px auto; /* Right And Left Margin Widths To Auto */
+	text-align: left; /* Hack To Keep IE5 Windows Happy */
+	padding-top: 20px;
+}
+
+.blog-archive-entries-wrapper .blog-entry {
+}
+
+.blog-archive-month {
+	padding: 20px 0 0;
+	font-size: 2.5em;
+	letter-spacing: 1px;
+	margin: 0 0 5px;
+}
+
+.blog-archive-link {
+	padding: 0 20px 20px;
+}
+
+.blog-archive-link a:link, .blog-archive-link a:visited {
+}
+
+	
+/* @end */
+
+.blog-entry {
+	margin-bottom: 30px;
+	border-bottom: 1px solid #eeeeee;
+	padding-bottom: 15px;
+}
+
+.blog-entry-title {
+	font-size: 1.9em;
+	letter-spacing: 1px;
+	font-weight: bold;
+	margin-bottom: 3px;
+	line-height: 2em;
+}
+
+.blog-entry-date {
+	color: #b3b3b3;
+	margin-bottom: 10px;
+}
+
+.blog-entry-body {
+}
+
+.blog-entry-comments {
+	padding-top: 10px;
+}
+
+.blog-entry-category {
+	color: #6a7a90;
+}
+
+.blog-category-link-enabled {
+}
+
+.blog-category-link-disabled {
+}
+
+/* styles the archives in the blog sidebar */
+#blog-archives {
+	margin-bottom: 10px;
+}
+
+.blog-archive-link-enabled {
+	margin: 0 5px;
+}
+
+.blog-archive-link-disabled {
+	margin: 0 5px;
+}
+
+/* Styles the blog categories in the blog sidebar */
+#blog-categories {
+	margin-bottom: 10px;
+	font-size: 1.1em;
+}
+
+.blog-category-link-enabled {
+	margin: 0 5px;
+}
+
+.blog-category-link-disabled {
+	margin: 0 5px;
+}
+
+/* Styles the blog RSS feeds in the blog sidebar */
+#blog-rss-feeds {
+	margin-bottom: 10px;
+}
+
+.blog-rss-link {
+}
+
+.blog-comments-rss-link {
+}
+	
+/* @end */
+
+/* @group File Sharing */
+
+.filesharing-description {
+}
+
+.filesharing-item {
+	background: #f5f5f5;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+.filesharing-item-title a:link {
+}
+
+.filesharing-item-title a:hover {
+}
+
+.filesharing-item-title a:visited {
+
+}
+
+.filesharing-item-description {
+	color: #b3b3b3;
+}
+
+/* @end */
+
+/* @group Photo Album */
+
+/* @group Index Page (Thumbnail view) */
+
+.album-description {
+	margin-bottom: 20px;
+}
+
+.album-wrapper {
+	display: block;
+	width: 99%;
+	position: relative;
+	top: 60px;
+}
+
+.thumbnail-wrap {
+	text-align: center;
+	position: relative;
+	float: left;
+	margin-bottom: 60px;
+	margin-right: 10px;
+}
+
+.thumbnail-frame {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.thumbnail-frame img {
+    margin: auto;
+    border: none;
+}
+
+.thumbnail-caption {
+	margin: 0;
+	padding: 0;
+	height: 35px;
+	display: block;
+}
+
+.album-title {
+	font-size: 1.9em;
+	letter-spacing: 1px;
+	font-weight: bold;
+	margin-bottom: 3px;
+}
+
+.album-description {
+	margin-bottom: 8px;
+}
+
+.thumbnail-frame {
+	padding: 5px;
+}
+
+.thumbnail-frame:hover {
+}
+
+.thumbnail-frame a {
+}
+
+.thumbnail-frame a:hover {
+}
+
+.thumbnail-frame img {
+}
+
+.thumbnail-caption {
+	font-size: 0.9em;
+}
+	
+/* @end */
+
+/* @group Single Page (Photo view) */
+
+.photo-background {
+	margin: 0;
+
+}
+
+.photo-navigation {
+	background-color: #6b7b91;
+	padding: 20px 40px 10px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.photo-links {
+}
+
+.photo-navigation a:link, .photo-navigation a:visited {
+
+}
+
+.photo-navigation a:hover {
+
+}
+
+.photo-frame{
+	padding: 2px;
+}
+
+.photo-title {
+	color: #ffffff;
+	font-size: 2.5em;
+	letter-spacing: 1px;
+	margin: 0 0 5px;
+}
+
+.photo-caption {
+	color: #b5bdc8;
+	font-size: 1.1em;
+	margin: 0;
+}
+
+/* @end */
+	
+/* @end */
+
+/* @group Quicktime Page */
+
+.movie-description {
+
+}
+	
+/* @end */
+
+/* @group Quicktime Album */
+
+/* @group Index Page (Movie Thumbnail view) */
+
+.movie-page-title {
+	font-size: 1.9em;
+	letter-spacing: 1px;
+	font-weight: bold;
+	margin-bottom: 3px;
+}
+
+.movie-page-description {
+	margin-bottom: 8px;
+}
+
+.movie-thumbnail-frame {
+	width: 132px;
+	float: left;
+	text-align: center;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	background: #f5f5f5;
+}
+
+.movie-thumbnail-frame:hover {
+}
+
+
+.movie-thumbnail-caption {
+}
+	
+/* @end */
+
+/* @group Single Page (Movie View) */
+
+.movie-background {
+}
+
+.movie-title {
+	font-size: 1.9em;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+
+.movie-frame {
+
+}
+	
+/* @end */
+
+
+/* @end */
+
+/* @group Contact Form */
+.message-text { 
+} 
+
+.required-text {
+} 
+
+.form-input-field {
+} 
+
+.form-input-button { 
+} 
+/* @end */
+
+/* @group Custom Images */
+#pageHeader img {
+	display: none;
+}	
+/* @end */
+
+

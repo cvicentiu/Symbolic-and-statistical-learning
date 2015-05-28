@@ -1,0 +1,2089 @@
+/* REALIGNMENT STYLES 
+-----------------------------------------*/
+
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background-color: #369;
+}
+#azcWrap {
+	width: 957px;
+}
+#azcTop, #azcGuts, #azcFoot {
+	width: 957px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+#azcTop {
+	width: 957px;
+	height: 201px;
+	margin: 0;
+	border: 0;
+	background: url(/imgs/topblock.gif) no-repeat top left;
+}
+#azcHeader {
+	width: 920px; 
+	padding-left: 16px; 
+	padding-top: 10px; 
+	margin: 0; 
+}
+#azcGuts {
+	width: 957px;
+	text-align: left;
+	background: url(/imgs/midbg.gif) repeat-y;
+}
+#azcGutsWrap {
+	margin-left: 23px;
+	top: 0;
+}
+
+#azcGutsMain {
+	width: 686px;
+	background: #fff url(/imgs/gutsbg.gif) repeat-y;
+}
+#azcGutsStoryMain {
+	width: 365px;
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+#azcGutsStoryMain p {
+	padding-top: 0;
+	padding-bottom: 10px;
+	margin: 0;
+}
+
+#azcLeftNavWrap {
+	width: 108px;
+	border: 1px solid #999;
+	padding: 4px;
+	background-color: #fff;
+}
+#azcGutsSideBar {
+	width: 300px;
+	float: right;
+	padding: 0;
+	margin: 0;
+}
+#azcMarketplace {
+	width: 100px;
+	padding: 0px 4px 4px 4px;
+	background: #e0e0e0 url(/imgs/leftnav_mktbg.gif) repeat-y;
+}
+#azcNewsletterWrap200, .azcGrayBoxWrap200 {
+	width: 200px;
+	background-color: #f5f3f4;
+}
+.azcGrayBoxWrap160 {
+	width: 160px;
+	background-color: #f5f3f4;
+}
+.azcGrayBoxWrap300 {
+	width: 300px;
+	background-color: #f5f3f4;
+}
+.azcGrayBoxWrap376 {
+	width: 376px;
+	background-color: #f5f3f4;
+}
+#azcNewsletterGuts, #azcNewsletterGuts200, .azcGrayBoxGuts200, .azcGrayBoxGuts300, .azcGrayBoxGuts376, .azcGrayBoxGuts160 {
+	border: 1px solid #c9c9c9;
+	border-top: 0;
+	margin: 0;
+	padding: 0px 5px 5px 5px;
+	background-color: #F5F3F4;
+}
+
+
+
+/*
+#*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#
+# BEGIN AZC HOME PAGE STYLES    #*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#
+#*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#
+*/
+.bodyAtNight {
+	background-color: #333;
+}
+#azcHomeTop {
+	width: 957px;
+	height: 135px;
+	margin: 0;
+	border: 0;
+	background: url(/imgs/bg_azchometop.gif) no-repeat top left;
+}
+#azcNightGuts {
+	width: 957px;
+	text-align: left;
+	background: url(/imgs/atnight_midbg.gif) repeat-y;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+#azcHomeNightTop {
+	width: 957px;
+	height: 135px;
+	margin: 0;
+	border: 0;
+	background: url(/imgs/bg_azchomenighttop.gif) no-repeat top left;
+}
+#azcHomeLogo {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	width: 229px;
+	height: 55px;
+	margin-left: 16px;
+	margin-top: 21px;
+	float: left;
+	display: block;
+}
+#azcHomeNightLogo {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	width: 286px;
+	height: 55px;
+	margin-left: 16px;
+	margin-top: 21px;
+	float: left;
+	display: block;
+}
+#azcHomeWeather {
+	padding: 0;
+	margin: 0;
+	width: 250px;
+	height: 63px;
+	margin-top: 28px;
+	margin-right: 20px;
+	float: right;
+	display: block;
+}
+#azcHomeTopNav {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	width: 920px;
+	height: 27px;
+	clear: both;
+	margin-left: 16px;
+}
+#azcHomeMain {
+	width: 785px;
+	background-color: #fff;
+}
+#azcGutsFootHome {
+	clear: both;
+	background-color: #fff;
+	width: 785px;
+	padding-bottom: 9px;
+}
+#azcHomeLeftCol {
+	width: 475px;
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+#azcHomeLeftCol .dividerlightgrey {
+	margin: 0 0 8px 0;
+}
+#azcHomeSideBar {
+	width: 300px;
+	float: right;
+	padding: 0;
+	margin: 0;
+}
+#azcHomeBigPic {
+	width: 212px;
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+#azcHomeUnderPhoto {
+	padding-top: 15px;
+}
+#azcHomeStorymain {
+	width: 253px;
+	float: right;
+	padding: 0;
+	margin: 0;
+}
+#azcHomeTopInfo {
+	width: 475px;
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+#azcHomeTopInfoFoot {
+	height: 1px;
+	font-size: 1px;
+	width: 475px;
+	padding: 0;
+	margin: 0;
+	display: block;
+	background-color: #fff;
+	clear: both;
+}
+#azcHomeAVBox {
+	border: 1px solid #000;
+	padding: 6px 3px;
+	display: block;
+	margin-top: 5px;
+}
+#azcHomeSkyBox {
+	border: 1px solid #999;
+	padding: 3px;
+	margin-bottom: 6px;
+	display: block;
+}
+.azcHomeAVInWrap {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	width: 467px;
+}
+.azcHomeAVInLeft {
+	width: 228px;
+	float: left;
+	padding: 0 2px;
+}
+.azcHomeAVInRight {
+	width: 228px;
+	float: right;
+	padding: 0 2px;
+}
+.azcHomeAVFoot {
+	height: 1px;
+	font-size: 1px;
+	width: 467px;
+	padding: 0;
+	margin: 0;
+	clear: both;
+}
+#azcHomeAVLinks {
+	text-align: right;
+	margin: 5px 2px 5px 0;
+}
+#azcHomeAVMid, #azcHomeSkyMid {
+	background: #fff url(/imgs/bg_azchomeavmid.gif) repeat-y;
+	width: 467px;
+	margin-bottom: 10px;
+}
+#azcHomeSkyMid {
+	margin-bottom: 0;
+}
+#azcHomeAVMidLeft, #azcHomeSkyLeft {
+	padding: 5px;
+	width: 222px;
+	float: left;
+}
+#azcHomeAVMidRight, #azcHomeSkyRight {
+	padding: 5px;
+	width: 222px;
+	float: right;
+}
+.azcHomeTodayBrdrTop {
+	border-top: 1px solid #000;
+	padding-top: 5px;
+}
+.azchomeMktPlaceLinks {
+	margin: 0 0 0 49px;
+}
+.azcHome90pxFoto {
+	width: 92px;
+	float: left;
+	margin: 0 10px 10px 0;
+}
+#azcHomeAVLeftText {
+	width: 122px;
+	float: right;
+}
+#azcHomeAVLeftFoot {
+	height: 1px;
+	font-size: 1px;
+	width: 222px;
+	padding: 0;
+	margin: 0;
+	clear: both;
+}
+#azcHomeAVRightFoto {
+	width: 95px;
+	float: left;
+	margin: 0 0 3px 0;
+}
+#azcHomeTwoAcross {
+	background: url(/imgs/bg_azchome2cross.gif) repeat-y;
+	border-top: 1px solid #000;
+	padding: 0 3px 0 0;
+	display: block;
+}
+#azcHome2AcrossLeft {
+	width: 299px;
+	float: left;
+}
+#azcHome2AcrossRight {
+	width: 147px;
+	float: right;
+}
+#azcHome2AcrossHead {
+	height: 7px;
+	font-size: 1px;
+	width: 475px;
+	background-color: #fff;
+	padding: 0;
+	margin: 0;
+	clear: both;
+}
+#azcHome2AcrossFoot {
+	height: 7px;
+	font-size: 1px;
+	width: 475px;
+	padding: 0;
+	margin: 0;
+	clear: both;
+}
+#azcHomeBotSections {
+	margin-top: 5px;
+	line-height: 1.2;
+	border-top: 1px solid #000;
+	background: url(/imgs/bg_azchomebotsections.gif) repeat-y;
+}
+#azcHomeBotSecLeft {
+	margin-top: 3px;
+	width: 147px;
+	float: left;
+}
+#azcHomeBotSecLeft p {
+	margin: 0 0 10px 0;
+}
+#azcHomeLeftSpecials {
+	padding: 6px;
+	border: 1px solid #c3c3c3;
+	background: url(/imgs/bg_f4f4f4.gif) repeat;
+}
+#azcHomeLeftSpecials p {
+	margin: 0 0 8px 0;
+}
+#azcHomeBotSecRight {
+	width: 322px;
+	float: right;
+}
+.azcHomeBotSecRightHed {
+	border-bottom: 1px solid #000;
+	background-color: #eceaeb;
+	padding: 3px 5px 4px;
+}
+.azcHomeBotSecRightHed .subhead12 {
+	margin-bottom: 0;
+	display: block;
+	width: 100px;
+	float: left;
+}
+.azcHomeBotSecRightHed .sidebar {
+	display: block;
+	text-align: right;
+	width: 200px;
+	float: right;
+}
+.azcHomeBotSecRightHed .foot {
+	height: 1px;
+	font-size: 1px;
+	width: 312px;
+	padding: 0;
+	margin: 0;
+	clear: both;
+}
+.azcHomeBotSecRightBod {
+	padding: 5px 0 10px 5px;
+}
+.azcHomeBotSecRightPromo {
+	width: 79px;
+	padding: 0 0 0 7px;
+	border-left: 1px solid #000;
+	float: right;
+}
+#azcHomeBotSecHead {
+	height: 7px;
+	font-size: 1px;
+	width: 475px;
+	background-color: transparent;
+	padding: 0;
+	margin: 0;
+	clear: both;
+}
+#azcHomeBotSecFoot {
+	height: 1px;
+	font-size: 1px;
+	width: 475px;
+	padding: 0;
+	margin: 0;
+	clear: both;
+}
+form#azcHomeCommDrop {
+	padding: 0;
+	margin: 50px 0 0 0;
+}
+.azcHomeBotSecRightBod .headspacing {
+	margin-top: 5px;
+}
+#azcHomeEntSpot {
+	width: 218px; 
+	margin: 0 0 10px 82px;
+} 
+#azcHomeEntSpotLinks {
+	width: 300px;
+	background-color: #F3F3F3;
+	border-bottom: 1px solid #000;
+	margin-bottom: 10px;
+	text-align: center;
+	padding-bottom:1px; 
+}
+#azcHomeEntSpotLinks a {
+	text-align: center;
+	margin-right: 9px; 
+	margin-left: 9px; 
+	padding-bottom:1px; 
+}
+#azcHome300Left {
+	width: 200px;
+	float: left;
+	margin-top: 10px;
+}
+#azcHome300Right {
+	width: 89px;
+	float: right;
+	margin-top: 10px;
+}
+.azcHomeRedSlash {
+	height: 14px;
+	background: url(/imgs/bg_azchomeredslash.gif) no-repeat;
+	color: white;
+	padding-left: 5px;
+	font-weight: bold;
+}
+.azcHomeUnderInside {
+	padding: 6px 1px;
+}
+.azcHomeUnderInside .borderdarkgrey {
+	margin: 0 5px 0 0;
+}
+.azcHomeSectionHeds {
+	border-bottom: 1px solid #000;
+	background-color: #eceaeb;
+	padding: 0 0 0 3px;
+	font-weight: bold;
+}
+.azcHomeSectionStories {
+	padding: 8px 0;
+}
+.azcHomeSectionText {
+	padding-top: 8px;
+}
+.azcLeftLtGrayNav {
+	width: 100px;
+	padding: 0px 4px 4px 4px;
+	font: 10px/12px Arial, Helvetica, sans-serif; 
+	color: #000000;
+	background: #e0e0e0 url(/imgs/leftnav_mktbg.gif) repeat-y;
+}
+.azcLeftWhiteNav {
+	width: 100px;
+	padding: 0px 4px 4px 4px;
+	font: 10px/12px Arial, Helvetica, sans-serif; 
+	color: #000000;
+	background: #fff url(/imgs/leftnav_whitebg.gif) repeat-y;
+}
+.azcNightSkyBox {
+	margin-bottom: 10px;
+}
+.azcNightSkyBox .atnightskyboximg {
+	display: block;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+.azcNightSkyBoxHed {
+	padding: 3px 5px;
+	margin: 0;
+	margin-left: 51px;
+	background: #ccc url(/imgs/bg_skyboxcorner.gif) no-repeat top right;
+}
+.azcNightSkyBoxBod {
+	padding: 3px 5px;
+	margin: 0;
+	margin-left: 51px;
+	background-color: #eceaeb;
+}
+/*
+#*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#
+# END AZC HOME PAGE STYLES      #*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#
+#*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#*~*#
+*/
+
+
+/* The actual search input field */
+
+#azcNewsletterGuts input.EmailAlerts {
+	background-color: #FFF;
+	width: 160px; 
+	height: 17px; 
+	margin: 2px 0; 
+	padding: 1px; 
+}
+
+#azcLeftNav {
+	width: 100px;
+	padding: 0px 4px 4px 4px;
+	background: #ccc url(/imgs/leftnav_navbg.gif) repeat-y;
+}
+#azcGutsFooter {
+	clear: both;
+	background-color: #fff;
+	width: 686px;
+	padding-bottom: 9px;
+}
+
+
+
+
+/* TOP NAVIGATION 
+-----------------------------------------*/	
+#azcTopnav { 
+	width: 920px; 
+	height: 25px;
+	background: #CCC url(/imgs/i_redbar.gif) no-repeat bottom left; 
+	border: 1px solid #999; 
+	color: #FFF; 
+	font: normal normal bold 11px Arial, Helvetica, sans-serif; 
+	margin: 0; 
+	padding: 0; 
+}
+#azrepTopnav { 
+	width: 920px; 
+	height: 25px;
+	background: #CCC url(/arizonarepublic/imgs/azrep_navybar.gif) no-repeat bottom left; 
+	border: 1px solid #999; 
+	color: #FFF; 
+	font: normal normal bold 11px Arial, Helvetica, sans-serif; 
+	margin: 0; 
+	padding: 0; 
+} 
+#azcTopnav a, #azrepTopnav a { color: #FFF; text-decoration: none; margin: 0 2px; }
+#azcTopnav a:hover, #azrepTopnav a:hover { color: #FFF; text-decoration: underline; margin: 0 2px; }
+
+#azcTopnav div.Toplinks, #azrepTopnav div.Toplinks { 
+	padding: 0; 
+	margin: 0; 
+	position: relative;
+	top: 3px; 
+	left: 5px;
+} 
+#azcSearchsponsor_short { 
+	width: 87px;
+	height:23px; 
+	margin: 1px 4px 0 0; 
+	padding: 0;
+}
+#azcSearchsponsor {  
+	width: 110px; 
+	margin: 1px 1px 0 0; 
+	padding: 0;
+}	
+img.goButton { 
+	margin: 0 3px;
+}
+
+
+.sectionTopnavs {
+	border: 1px solid #000;
+	background-color: #933;
+	padding: 0 3px;
+	margin: 3px 0;
+}
+
+
+
+/* The actual search input field */
+
+input.Search {
+	background-color: #FFF;
+	font-size: 10px;  
+	font-family: Arial, Helvetica, Sans-serif; 
+	font-weight: normal;
+	width: 150px; 
+	height: 18px;
+	margin-left: 5px; 
+	margin-bottom: 1px; 
+	padding: 1px; 
+}
+
+/* removes wacky padding from fields */
+form { 
+	margin: 0;
+	padding: 0; 
+	display: inline; 
+} 
+
+
+/* HEADER ELEMENTS  
+------------------------------------*/
+
+#azcLocalnavs { 
+	text-align: right; 
+	margin: 14px 16px 0 0; 
+	padding: 0;  
+}
+#azcLocalnavs .img {  
+	margin: 3px 0 0 0; 
+	padding: 0;  
+}
+
+#azcLeaderboard { 
+	margin: 5px 0; 
+	padding: 0; 
+}
+#azcWeather { 
+	margin: 5px 0 0 0; 
+	padding: 0; 
+	text-align: right; 
+} 
+#azcWeather p { 
+	padding: 0;
+	margin: 0; 
+}
+ 
+.newsalertposition { margin: 28px 0 0 0; padding: 0;}
+
+
+.isaSpacing img { 
+	padding: 0; 
+	margin-bottom: 5px; 
+	display: block;
+}
+
+.azrepisaSpacing img { 
+	padding: 0; 
+	margin-bottom: 5px; 
+	display: block;
+}
+
+#azcHome300Right img { 
+	padding: 0; 
+	margin-bottom: 5px; 
+	display: block;
+}
+
+
+/* FOOTER 
+------------------------------------*/
+
+#azcFooter { font: normal normal 11px Arial, Helvetica, sans-serif; color: #000; line-height: 15px; }
+#azcFooter a:link { color: #000; text-decoration: none;}
+#azcFooter a:visited { color: #000; text-decoration: none; }
+#azcFooter a:hover { color: #000; text-decoration: underline; }
+#azcFooter a:active { color: #000; text-decoration: none; }
+
+#azcCopyright {  font: normal bold 11px Arial, Helvetica, sans-serif; color: #666; }
+#azcCopyright a:link { color: #666; text-decoration: none;}
+#azcCopyright a:visited { color: #666; text-decoration: none; }
+#azcCopyright a:hover { color: #666; text-decoration: underline; }
+#azcCopyright a:active { color: #666; text-decoration: none; }
+
+.footerrule { border: 1px solid #999; margin: 8px 0; padding: 0;}
+
+
+
+/* RED SUBHEADER TEXT STYLES  
+------------------------------------*/
+.subhead12 { color: #C33; font: normal normal bold 12px/15px Arial, Helvetica, Sans-serif; margin-bottom: 5px; padding: 0; }
+.subhead14 { color: #C33; font: normal normal bold 14px/18px Arial, Helvetica, Sans-serif; margin-bottom: 5px; padding: 0; }
+
+
+/* SETTING UP MARGINS FOR PHOTOS
+------------------------------------*/	
+/* for 50 by 50 photos */
+
+p.SmallPix, #azcGutsStoryMain p.SmallPix {
+	margin: 0 0 0 62px;
+}
+
+/* for 75 by 75 photos */
+
+p.Pix75, #azcGutsStoryMain p.Pix75 {
+	margin: 0 0 0 87px;
+}
+	
+/* for 90 by 90 photos */
+	
+p.MediumPix, #azcGutsStoryMain p.MediumPix {
+	margin: 0 0 0 102px;
+	display: block;
+	} 
+	
+/* for 90 by 90 photos with only a 5 px margin */
+	
+p.HomeMediumPix {
+	margin: 0 0 0 97px;
+	display: block;
+	} 
+		
+/* for 100 by 100 photos */
+	 
+p.StandardPix, #azcGutsStoryMain p.StandardPix {
+	margin: 0 0 0 112px;
+	}
+ 
+ 
+.PixBottomFixer img.borderdarkgrey {
+	margin: 0 0 10px 0; 
+}
+	
+
+/* BLUE ARIZONA REP SUBHEADER TEXT STYLES  
+----------------------------------------------*/
+
+.azrep_subhead12 { color: #369; font: normal normal bold 12px/15px Arial, Helvetica, Sans-serif; margin-bottom: 5px; padding: 0; }
+.azrep_subhead14 { color: #369; font: normal normal bold 14px/18px Arial, Helvetica, Sans-serif; margin-bottom: 5px; padding: 0; }
+
+
+
+
+/* NEW HOLLOW RULE STYLES  
+------------------------------------*/
+.dividerlightgrey { border: 1px solid #CCC; margin: 8px 0; display: block; }
+
+
+  
+
+/* STORY TEMPLATE LAYOUT
+-----------------------------------------*/	
+
+#storyMain {
+	width: 686px;
+	background: #fff url(/imgs/gutsbg_story.gif) repeat-y;
+}
+
+#storyMain2 {
+	width: 786px;
+	background: #fff url(/imgs/gutsbg_story.gif) repeat-y;
+}
+
+#storyStoryMain {
+	width: 506px;
+	float: left;
+}
+
+#storyStoryMain p {
+	padding-top: 0;
+	padding-bottom: 10px;
+	margin: 0;
+}
+
+#storyStoryMain h1 {
+	font: bold 22px/25px Arial, Helvetica, sans-serif;
+	color: black;
+	margin: 0;
+	padding: 0;
+}
+
+#storySideBar {
+	width: 160px;
+	float: right;
+}
+
+#storySideBar2 {
+	width: 260px;
+	float: right;
+}
+
+
+/* STORY TEMPLATE EMAIL ALERTS
+-----------------------------------------*/	
+	
+#storyNewsletterWrap {
+	width: 160px;
+	background-color: #f4f4f4;
+	margin: 0; 
+}
+
+#storyNewsletterGuts {
+	border: 1px solid #c9c9c9;
+	border-top: 0;
+	margin: 0;
+	padding: 0 17px 5px 5px;	
+	display: block;	
+}
+
+/* The actual search input field */
+
+#storyNewsletterGuts input.EmailAlerts {
+	background-color: #FFF;
+	width: 70px; 
+	height: 17px; 
+	margin: 2px 0; 
+	padding: 1px; 
+}
+
+
+/* STORY PHOTO
+-----------------------------------------*/	
+#storyPhotobutton a { 
+	color: #C33; 
+	font: normal normal bold 12px/18px Arial, Helvetica, Sans-serif;  
+	padding: 0;
+	margin: 5px 0; 
+}
+#storyPhotobutton img { 
+	margin-right: 3px;
+}
+
+/* ARTICLE TOOLS
+------------------------------------*/
+#azcToolscontain { 
+	padding: 0;
+	width: 686px;
+	height: 18px; 
+	background-color: #fff;
+	margin: 0 0 20px 0;
+	display: block;
+}
+
+.articleTools { 
+	margin: 0;
+	text-align: left;
+	padding: 3px 0;
+	width: 98px;
+	float: left;
+} 
+
+.articleToolslong { 
+	margin: 0;
+	text-align: left;
+	padding: 3px 0;
+	width: 160px;
+	float: left;
+} 
+
+.articleTools a, .articleToolslong a, .articleTools a:link, .articleTools a:visited, .articleTools a:hover, .articleTools a:active, .articleToolslong a:link, .articleToolslong a:visited, .articleToolslong a:hover, .articleToolslong a:active { 
+	font: normal normal bold 11px/12px Arial, Helvetica, Sans-serif;
+	padding-left: 3px;
+	color: #C33; 
+	text-decoration: none;
+}
+
+.articleTools a:hover, .articleToolslong a:hover {
+	text-decoration: underline;
+}
+
+
+
+/* HEALTH NEWS MONEY STYLES
+------------------------------------*/
+	#azcGutsPlain {
+		width: 686px;
+		background-color: #fff;
+	}
+	#azcNewsStoryMain {
+		width: 376px;
+		float: left;
+		margin: 0;
+		padding: 0;
+	}
+	#azcTopPhotoWrap {
+		width: 374px;
+		border: 1px solid #000;
+		background-color: #fff;
+		margin: 0 0 3px 0;
+	}
+	.sectionHeader {
+		display: block;
+		border: 1px solid #999;
+		padding: 0;	
+		margin: 0 0 10px 0;
+	}
+		
+	.azcRightRail {
+		width: 300px;	
+		padding: 0;	
+	}
+	
+	p .azcRightRail {
+		margin: 0 0 0 100px;
+	}
+
+
+
+
+/* ENTERTAINMENT STYLES
+-----------------------------------------*/
+.topbox_382 {
+	background: #fff url(/imgs/boxtop_gradiant382.gif) no-repeat top left;
+	padding-top: 5px;
+	width: 382px;
+	height: 19px;
+}
+.topbox_298 {
+	background: #fff url(/imgs/boxtop_gradiant298.gif) no-repeat top left;
+	padding-top: 5px;
+	padding-left: 3px;
+	width: 295px;
+	height: 19px;
+	text-align: left;
+}	
+#azcEntStoryMain {
+	width: 383px;
+	float: left;
+}
+#azcEntStoryMain2 {
+	border-top: 3px solid #fff;
+}
+#azcEntTopPhotoWrap {
+	width: 381px;
+	border: 1px solid #000;
+	border-right: 0;
+	background-color: #fff;
+}
+#azcEntCelebNews {
+	background-color: #fff;
+	width: 373px;
+	padding-right: 9px;
+}
+#azcEntCelebNews .dividerlightgrey {
+	margin: 8px 0 0 0;
+}
+#azcEntBotWrap {
+	width: 373px;
+	border-top: 8px solid #fff;
+}
+#azcEntBotLeft {
+	width: 170px;
+	float: left;
+}
+#azcEntBotRight {
+	width: 182px;
+	float: right;
+}
+#azcEntRightLinks {
+	width: 293px;
+	padding: 0 0 0 10px;
+}
+#azcEntRightLinks p {
+	margin: 0 0 5px 60px;
+}
+#azcEntRightLinks .borderdarkgrey {
+	display: block;
+}
+.topRightPromo {
+	width: 300px;
+	padding: 0;
+}
+.topRightPromo p {
+	margin: 0 0 15px 62px;
+}
+.topRightPromo .borderdarkgrey {
+	margin: 0 10px 0 0;
+}
+
+#azcEntBotRight p, 
+#azcEntBotLeft p {
+	margin: 0 0 0 60px;
+}
+#azcEntBotLeft p.contactList {
+	margin: 0;
+}
+.subhead12purp {
+	color: #669;
+	font: normal normal bold 12px/14px Arial, Helvetica, Sans-serif;
+	margin: 0;
+	padding: 5px 0;
+}
+#azcEntMain {
+	width: 686px;
+	background-color: #fff;
+	background: url(/imgs/entbg.gif) repeat-y;
+}
+.topRightInner {
+	padding: 3px 0 10px 3px;
+}
+.topRightInner p {
+	margin: 0 0 0 60px;
+}
+
+/* ENT VENUES PAGE
+-----------------------------------------*/	
+#venuesWrap {
+	width: 365px;
+	background-color: #FFCCCC;
+}
+
+.venues { 
+	width: 120px;
+	margin-right:10px;
+	float: left;
+	background-color: #00CCCC;
+}
+.venues img.borderdarkgrey {
+	width:50px;
+	height:50px;
+}
+.venues p {
+	margin: 56px; 	
+}
+
+ 
+ 
+ 
+/* ARIZONA REPUBLIC STYLES 
+------------------------------------*/
+#azrepHeader {
+	width: 920px; 
+	padding-left: 16px; 
+	padding-top: 28px; 
+	margin: 0; 
+}
+#azrepTop {
+	width: 957px;
+	height: 139px;
+	margin: 0;
+	border: 0;
+	background: url(/imgs/topblock_azrephome.gif) no-repeat top left;
+}
+#azrepSubsTop {
+	width: 957px;
+	height: 201px;
+	margin: 0;
+	border: 0;
+	background: url(/imgs/topblock_azrepsubs.gif) no-repeat top left;
+}
+#azrepHeaderSubs {
+	width: 920px; 
+	padding-left: 0; 
+	padding-top: 0; 
+	margin: 0; 
+}
+#azcMasthead {
+	height: 92px;
+}
+#azrepPromoposition {
+	margin: 16px 0 0 10px;
+}
+#azrepMastheadposition {
+	margin: 9px 0;
+}
+#azrepWeatherposition, #azrepWeatherposition p {	 
+	margin: 0;
+	padding: 0; 
+}
+#azrepGutsMain {
+	width: 333px;
+}
+
+#azrepGutsStoryMain {
+	width: 430px;
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+
+#azrepHomeGutsStoryMain {
+	width: 434px;
+	padding: 0;
+	margin: 0; 
+}
+#azrepLocalnavs {
+	margin: 24px 16px 0 0;
+}
+#azrepLogo {
+	margin: 10px 0 0 0;
+}
+#azrepDate {
+	margin: 3px 0 16px 4px;
+	font: normal normal bold 11px/12px Arial, Helvetica, sans-serif;
+	text-align: left; 
+	color: #000;
+}
+ 
+
+/* ARIZONA REPUBLIC ARTICLE TOOLS
+------------------------------------*/
+#azrepToolscontain { 
+	margin-bottom: 20px;
+	padding: 0;
+	width: 686px;
+	height: 18px; 
+	background-color: #fff;
+	display: block;
+}
+.azrepTools { 
+	margin: 0;
+	text-align: left;
+	padding: 3px 0;
+	width: 98px;
+	float: left;
+} 
+.azrepToolslong { 
+	margin: 0;
+	text-align: left;
+	padding: 3px 0;
+	width: 180px;
+	float: left;
+} 
+
+.azrepTools a, .azrepTools a:link,  .azrepTools a:visited,  .azrepTools a:hover,  .azrepTools a:active, .azrepToolslong a, .azrepToolslong a:link,  .azrepToolslong a:visited,  .azrepToolslong a:hover,  .azrepToolslong a:active {
+	font: normal normal bold 11px/12px Arial, Helvetica, Sans-serif;
+	padding-left: 3px;
+	color: #369; 
+	text-decoration: none;
+}
+
+
+.azrepTools a:hover, .azrepToolslong a:hover {
+	text-decoration: underline;
+}
+
+
+
+
+/*
+*~*~*~*~*~*~*~*~*~*~*~**********************************************
+* BEGIN SPORTS STYLES **********************************************
+*~*~*~*~*~*~*~*~*~*~*~**********************************************
+*/
+
+#azcSptMain {
+	width: 686px;
+	background-color: #fff;
+}
+
+#azcSptMain .dividerlightgrey {
+	margin: 3px 0;
+}
+
+#azcSptStoryMain {
+	border: 1px solid #000;
+	background-color: #e4e5dc;
+	padding: 10px 10px 0 10px;
+}
+#azcSptLeftBotOne {
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+#azcSptLeftBotTwo .subhead14, #azcSptLRightBotTwo .subhead14 {
+	border-bottom: 1px solid #000;
+	padding-top: 10px;
+}
+
+#azcSptLeftBotTwo p, #azcSptLRightBotTwo p {
+	margin-top: 10px;
+	margin-bottom: 0;
+	font-size: 12px;
+}
+#azcSptLeftBotTwo p a, #azcSptLRightBotTwo p a {
+	color: #006;
+	text-decoration: none;
+}
+#azcSptLeftBotTwo p a:hover, #azcSptLRightBotTwo p a:hover {
+	color: #006;
+	text-decoration: underline;
+}
+#azcSptLeftBotTwo table, #azcSptLRightBotTwo table {
+	padding-top: 4px;
+	padding-bottom: 0;
+}
+#azcSptLeftBotTwo table tr td, #azcSptLRightBotTwo table tr td {
+	font-size: 12px;
+}
+#azcSptStoryMain p {
+	margin: 0 0 10px 0;
+	display: block;
+}
+#azcSptLeftCol {
+	width: 376px;
+	float: left;
+}
+.azcSptBrownBG {
+	background: transparent url(/redesign/sports/imgs/visualsbg374.gif) top left repeat-y;
+	padding: 10px 10px 0;
+}
+#azcSptSpecFeats {
+	padding: 10px 11px;
+	border-bottom: 1px solid #000;
+}
+#azcSptSpecFeatsTopSplit {
+	background: url(/sports/imgs/dashedbg354.gif) repeat-y;
+}
+#azcSptSpecFeatsTopLeft {
+	width: 159px;
+	float: left;
+}
+#azcSptSpecFeatsTopRight {
+	width: 159px;
+	float: right;
+}
+#azcSptSpecFeatsTopFoot {
+	height: 10px;
+	width: 352px;
+	background-color: #fff;
+	clear: both;
+}
+#azcSptSpecFeatsBot, .azcSptSpecFeatsBot {
+	padding-top: 10px;
+	border-top: 1px dashed #ccc;
+	background-color: #fff;
+}
+.azcSptRightLinks {
+	border: 1px solid #000;
+}
+.azc510pad {
+	padding: 5px 10px;
+}
+.sptTopRightPromo p {
+	margin: 0 0 5px 62px;
+}
+
+.azcSptVisualBG {
+	background: transparent url(/sports/imgs/visualsbg374.gif) top left repeat-y;
+}
+
+.hoopshome {
+	background: #ccf url(/sports/imgs/icon_hoopshome.gif) bottom right no-repeat;
+}
+
+.hoopsaway {
+	background: #ffc url(/sports/imgs/icon_hoopsaway.gif) bottom right no-repeat;
+}
+
+.foothome {
+	background: #ccf url(/sports/imgs/icon_foothome.gif) bottom right no-repeat;
+}
+
+.footaway {
+	background: #ffc url(/sports/imgs/icon_footaway.gif) bottom right no-repeat;
+}
+
+/*
+*~*~*~*~*~*~*~*~*~*~**********************************************
+* END SPORTS STYLES **********************************************
+*~*~*~*~*~*~*~*~*~*~**********************************************
+*/
+
+
+
+
+
+/* COMMUNITY BOTTOM 3-ACROSS 
+------------------------------------*/
+
+.NarrowModule {
+	width: 157px; 
+	background: transparent;
+} 
+.WideModule {
+	width: 325px;  
+	background: transparent;
+}
+.WideModule p {
+	margin: 0 0 0 102px;
+}
+ 
+/* SPECIAL COMMUNITY PAGES STYLES
+------------------------------------*/
+
+#specialcommStoryMain {
+	width: 477px;
+}
+
+#specialcommStoryMainLeft  {
+	width: 212px;
+	float: left;
+	padding: 0;
+	margin-right: 10px;
+}
+#specialcommStoryMainRight  {
+	width: 255px;
+	float: right;
+	padding: 0;
+	margin: 0;
+}
+
+.commspecialFeatures {
+	width: 212px;
+	padding: 0;	
+}
+.commspecialFeatures p {
+	margin: 0 0 0 102px;
+}
+
+.commspecialColumnistRail {
+	width: 200px;
+	padding:0;	
+}
+
+.commspecialColumnistRail p {
+	margin: 0 0 0 108px;
+}
+.mesarepRail {
+	width: 200px;
+	padding:0;	
+}
+
+.datestamp	{ font-family: Verdana, sans-serif; color: #369; font-size: 10px; line-height: 130%; display: block; font-style: normal; margin: 5px 0; border-bottom: 1px dotted #b3b3b3; padding: 0 0 5px 0; }
+.datestamp img { margin: 0 3px 0 0; }
+.datestamp a { color: #006; }
+.datestamp a:hover { color: #333; }
+ 	 
+
+
+/* COLORED WIDGET BOXES  
+------------------------------------*/
+
+.azcColorBoxWrap376 {
+	width: 374px;
+	border: 1px solid #000;
+	margin: 0 0 3px 0;
+}
+.azcColorBoxWrap300 {
+	width: 298px;
+	border: 1px solid #000;
+	margin: 0 0 3px 0;
+}	
+.azcColorBoxWrap200 {
+	width: 198px;
+	border: 1px solid #000;
+	margin: 0 0 3px 0;
+}
+.azcTealBoxGuts { 
+	border: 1px solid #fff;
+	border-top: 0;
+	padding: 8px;
+	background-color: #9cc;
+}
+.azcBrightYellowBoxGuts { 
+	border: 1px solid #fff;
+	border-top: 0;
+	padding: 8px;
+	background-color: #ff6;
+}
+.azcYellowBoxGuts { 
+	border: 1px solid #fff;
+	border-top: 0;
+	padding: 8px;
+	background-color: #ede56d;
+}
+.azcOrangeBoxGuts { 
+	border: 1px solid #fff;
+	border-top: 0;
+	padding: 8px;
+	background-color: #f93;
+}
+.azcGreenBoxGuts { 
+	border: 1px solid #fff;
+	border-top: 0;
+	padding: 8px;
+	background-color: #b5d184;
+}
+
+
+.DexWrap300 {
+	width: 298px;
+	border: 1px solid #ccc;
+	margin: 0 0 3px 0;
+}	
+.DexWrap200 {
+	width: 198px;
+	border: 1px solid #ccc;
+	margin: 0 0 3px 0;
+}
+
+
+
+
+.innerCalendar {
+	border: 1px solid #fff;
+	border-top: 0;
+	padding: 5px 10px;
+	background-color: #cfcfe5;
+}
+.innerCalendar table {
+	width: 170px;
+}
+.innerCalendar form {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+.innerCalLeft {
+	width: 170px;
+	float: left;
+}
+.innerCalRight {
+	width: 100px;
+	float: right;
+}
+.innerCalFoot {
+	width: 270px;
+	padding-top: 10px;
+	clear: both;
+}
+
+/* HOME PAGE STYLES */
+
+#azcHomeMain {
+	width: 788px;
+	background-color: #fff;
+}
+
+#azcHomeLeftCol {
+	width: 475px;
+	float: left;
+}
+
+.azchomeMktPlaceLinks {
+	margin: 0 0 0 49px;
+}
+
+
+
+/* YES NEW STYLES 
+------------------------------------*/
+
+#styleboxadLabel {
+	width: 160px;
+	color: gray;
+	text-align: center; 
+	margin:0;
+	padding:0;
+}
+#stylePhoto { 
+	width: 210px;
+	float: right;
+	margin-left: 10px;
+}
+#styleSlideshow {
+	width: 270px;
+	padding: 7px 7px 7px 0; 
+	border-top: 1px solid #c9c;
+	border-right: 1px solid #c9c; 
+	border-bottom: 1px solid #c9c; 
+	margin: 0 10px 5px 0;
+}
+#stylebottWrap { 
+	width: 497px;
+	margin-bottom: 10px;
+	padding:0;
+}
+#stylebottLeft { 
+	width: 234px;
+	float: left; 
+}
+#stylebottRight { 
+	width: 253px; 
+	padding-left: 10px;
+	float: left;
+}
+.stylehead14 {
+	color: #636;
+	font: normal normal bold 14px Helvetica, Sans-serif;
+	margin: 0;
+	padding-bottom: 5px;
+}
+.stylehead16 {
+	color: #636;
+	font: normal normal bold 16px Helvetica, Sans-serif;
+	padding-bottom: 3px; 
+	border-bottom: 1px solid #c9c; 
+	margin: 5px 0;
+}
+#yesStoryMain {
+	width: 684px;
+	height: 327px; 
+	border: 1px solid #000;
+}
+#yesLeftMain {
+	float: left;
+	width: 343px;
+	height: 325px;
+	border: 1px solid #fff;		 
+	margin: 0;
+}
+#yesRightMain {
+	float: right;
+	width: 318px;
+	height: 305px;
+	border-left: 0;
+	border-top: 1px solid #fff;	
+	border-bottom: 1px solid #fff;	
+	border-right: 1px solid #fff;		
+	background-color: #ccb2cd;
+	margin: 0;
+	padding: 10px; 
+}
+#yesRightMain img.borderdarkgrey {
+	margin-bottom: 10px;
+}
+#yesRightMain p.Pix75 {
+	width: 225px;
+} 
+
+#yesColumns_withline {
+	width: 686px;
+	margin-top: 3px;
+	background: url(/style/imgs/bg_columns.gif) repeat-y;
+}
+
+#yesColumns {
+	width: 686px;
+	margin-top: 3px;
+}
+#yesColumn1, #yesColumn2 {
+	float: left;
+	width: 253px; 
+	margin-right: 10px;
+	margin-top:0;
+	padding: 0;
+}
+#yesColumn3 {
+	float: left;
+	width: 160px;
+	margin-top:0;
+	padding: 0;	
+}
+
+.yesColorBoxWrap253 {
+	width: 251px;
+	border: 1px solid #000;
+	margin: 0 0 3px 0;
+}
+.yesLavendarBoxGuts { 
+	border: 1px solid #fff;
+	border-top: 0;
+	padding: 5px;
+	background-color: #D8C5D9;
+}
+.yesLtGrayBoxGuts { 
+	border: 1px solid #fff;
+	border-top: 0;
+	padding: 5px;
+	background-color: #E0E0E0;
+} 
+
+.yesInlineBox {
+	width: 200px;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	padding: 10px 0;
+	margin-left: 10px;
+	float: right;
+}
+ 
+
+
+/* RECODED HOME PAGE STYLES */
+
+#azcNEWLOGO {
+	position: absolute;
+	top: 21px;
+	left: 16px;
+	display: block;
+	z-index: 101;
+}
+#azcNEWWEATHER {
+	position: absolute;
+	top: 28px;
+	right: 21px;
+	display: block;
+	z-index: 101;
+}
+#azcNEWTOPNAV {
+	width: 918px;
+	height: 25px;
+	color: #fff; 
+	font: normal normal bold 11px Arial, Helvetica, sans-serif; 
+	position: absolute;
+	top: 91px;
+	left: 16px;
+	display: block;
+	z-index: 102;
+}
+.azcNEWTOPLINKS {
+	position: absolute;
+	top: 8px;
+	left: 5px;
+	display: block;
+	z-index: 201;
+}
+#azcNEWTOPSEARCH {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	position: absolute;
+	top: 2px;
+	left: 624px;
+	display: inline;
+	z-index: 202;
+}/*
+input.Search {
+	background-color: #FFF;
+	font-size: 10px;  
+	font-family: Arial, Helvetica, Sans-serif; 
+	font-weight: normal;
+	width: 145px; 
+	height: 13px;
+	margin: 0px; 
+	padding: 1px 0 0 1px; 
+}*/
+img.goButton {
+	margin: 0 0 8px 1px;
+}
+#azcNEWSEARCHSPONSOR {
+	margin: 0;
+	width: 87px;
+	height:23px;
+	position: absolute;
+	top: 1px;
+	right: 1px;
+	display: block;
+	z-index: 203;
+}
+#azcNEWLEFTNAV {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	width: 125px;
+	display: block;
+	float: left;
+}
+#azcNEWTOPNAV a { color: #fff; text-decoration: none; margin: 0 3px; }
+#azcNEWTOPNAV a:hover { color: #fff; text-decoration: underline; margin: 0 3px; }
+
+#azcTOPTHING {
+	width: 957px;
+	height: 135px;
+	position: relative;
+	background: #fff url(/imgs/bg_azchometop.gif) no-repeat top right; 
+}
+#azcMIDTHING {
+	width: 934px;
+	padding-left: 23px;
+	position: relative;
+	background: url(/imgs/midbg.gif) repeat-y #369;
+}
+#azcBOTTHING {
+	width: 957px;
+	position: relative;
+	background-color: #fff;
+}
+#azcMAINSTUFF {
+	width: 788px;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+#azcMAINLEFT {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	width: 475px;
+	float: left;
+	z-index: 300;
+	background-color: #fff;
+}
+#azcMAINRIGHT {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	width: 300px;
+	position: relative;
+	float: right;
+}
+#azcNEWPHOTOLEFT {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	width: 212px;
+	float: left;
+	z-index: 300;
+	margin-bottom: 5px;
+	background-color: #fff;
+}
+#azcSTORYMAINRIGHT {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	float: right;
+	width: 253px;
+	margin-bottom: 5px;
+	background-color: #fff;
+}
+#azcENTSPOTTHING {
+	display: block;
+}
+#azcBOXADTHING {
+	width: 300px;
+	height: 250px;
+	margin: 0 0 10px 0;
+	display: none;
+}
+#azcUNDERBOXAD {
+	margin-top: 5px;
+	width: 300px;
+}
+#azcHEDSTHING {
+	width: 200px;
+	float: left;
+}
+#azcISATHING {
+	width: 89px;
+	float: right;
+	display: none;
+}
+#azcHomeUnderPhoto {
+	display: none;
+}
+#azcTOPNIGHTTHING {
+	width: 957px;
+	height: 135px;
+	position: relative;
+	background: #fff url(/imgs/bg_azchomenighttop.gif) no-repeat top right; 
+}
+#azcMIDNIGHTTHING {
+	width: 934px;
+	padding-left: 23px;
+	position: relative;
+	background: url(/imgs/atnight_midbg.gif) repeat-y #333;
+}
+
+/* END */
+
+/* YELLOW PAGES BOX */
+
+#azcYPSearchBox {
+	height: 69px;
+	width: 300px;
+	padding-top: 7px;
+	background: transparent url(/imgs/bg_yellpages.gif) top left repeat-x;
+}	
+.ypButton {
+	margin: 5px 0;
+}
+.searchazyellowpages {
+	font: bold 14px Arial, Helvetica, sans-serif;
+	color: #828181;
+	padding-left: 10px;
+}
+.ypField {
+	width: 130px;
+	margin: 8px 5px 8px 10px;
+	font-size: 11px;
+	color: #666;
+	padding: 0 5px;
+	height: 20px;
+}
+.ypFieldshort {
+	width: 95px;
+	margin: 8px 5px 8px 10px;
+	font-size: 11px;
+	color: #666;
+	padding: 0 5px;
+	height: 20px;
+}
+
+#azcSubFooter h1 {
+	font: 10px/10px Arial, Helvetica, sans-serif;
+	margin: 0;
+	color: #666;
+	padding:  0 0 10px 0;
+	display: block;
+}
+
+#azcNewFooter h1 {
+	font: 10px/10px Arial, Helvetica, sans-serif;
+	margin: 0;
+	color: #666;
+	padding:  0 0 10px 0;
+	display: block;
+}
+
+#azcGutsFooter h1 {
+	font: 10px/10px Arial, Helvetica, sans-serif;
+	margin: 0;
+	color: #666;
+	padding:  0 0 10px 0;
+	display: block;
+}
+
+h1.seoFooter {
+	font: 10px/10px Arial, Helvetica, sans-serif;
+	margin: 0;
+	color: #666;
+	padding:  0 0 10px 0;
+	display: block;
+}
+
+/* END */
+
+
+/* BULLET STYLES */
+
+.azcNavLinks { padding: 0; margin: 0; }
+.azcNavLinks li { padding: 0 0 0 15px; margin: 1px 0 0 0; }
+.azcNavLinks li.linkBullet {list-style: none; background: url(/imgs/4x4bullet_black.gif) no-repeat 4px 5px;  }
+.azcNavLinks li.linkPhoto { list-style: none; background: url(/imgs/i_slideshow.gif) no-repeat 1px 2px;  }
+.azcNavLinks li.linkVideo { list-style: none; background: url(/imgs/i_video.gif) no-repeat 0px 2px;  }
+.azcNavLinks li.linkDarkVideo { list-style: none; background: url(/12news/imgs/i_video_dark.gif) no-repeat 0px 2px;  }
+.azcNavLinks li.linkFlash { list-style: none; background: url(/imgs/i_flash.gif) no-repeat 1px 2px;  }
+.azcNavLinks li.linkAudio { list-style: none; background: url(/imgs/i_audio.gif) no-repeat 1px 2px;  }
+.azcNavLinks li.linkPDF { list-style: none; background: url(/imgs/i_docs.gif) no-repeat 1px 2px;  }
+.azcNavLinks li.linkBoards { list-style: none; background: url(/imgs/i_mssgbrds.gif) no-repeat 1px 2px;  }
+.azcNavLinks li.linkPoll { list-style: none; background: url(/imgs/i_vote.gif) no-repeat 1px 2px;  }
+.azcNavLinks li.linkEmail { list-style: none; background: url(/imgs/i_email.gif) no-repeat 1px 2px;  }
+.azcNavLinks li.linkMaps { list-style: none; background: url(/imgs/i_mapthis.gif) no-repeat 1px 2px;  }
+.azcNavLinks li.linkBlog { list-style: none; background: url(/imgs/i_blog.gif) no-repeat 0px 2px;  }
+
+
+.entHomeWhiteLinks .azcNavLinks li.linkBullet {list-style: none; background: url(/imgs/4x4bullet_white.gif) no-repeat 4px 5px;  }
+.entHomeBrownLinks .azcNavLinks li.linkBullet {list-style: none; background: url(/imgs/4x4bullet_brown.gif) no-repeat 4px 5px;  }
+
+
+.sidebar .azcNavLinks li.linkBullet { font: 11px/13px Arial, Helvetica, sans-serif; background-position: 4px 3px;  }
+.sidebar .azcNavLinks li.linkPhoto { font: 11px/13px Arial, Helvetica, sans-serif; background-position: 1px 0px;  }
+.sidebar .azcNavLinks li.linkVideo { font: 11px/13px Arial, Helvetica, sans-serif; background-position: 0px 0px;  }
+.sidebar .azcNavLinks li.linkDarkVideo { font: 11px/13px Arial, Helvetica, sans-serif; background-position: 0px 0px;  }
+.sidebar .azcNavLinks li.linkFlash { font: 11px/13px Arial, Helvetica, sans-serif; background-position: 1px 0px;  }
+.sidebar .azcNavLinks li.linkAudio { font: 11px/13px Arial, Helvetica, sans-serif; background-position: 1px 0px;  }
+.sidebar .azcNavLinks li.linkPDF { font: 11px/13px Arial, Helvetica, sans-serif; background-position: 1px 0px;  }
+.sidebar .azcNavLinks li.linkBoards { font: 11px/13px Arial, Helvetica, sans-serif; background-position: 1px 0px;  }
+.sidebar .azcNavLinks li.linkPoll { font: 11px/13px Arial, Helvetica, sans-serif; background-position: 1px 0px;  }
+.sidebar .azcNavLinks li.linkEmail { font: 11px/13px Arial, Helvetica, sans-serif; background-position: 1px 0px;  }
+.sidebar .azcNavLinks li.linkMaps { font: 11px/13px Arial, Helvetica, sans-serif; background-position: 1px 0px;  }
+.sidebar .azcNavLinks li.linkBlog { font: 11px/13px Arial, Helvetica, sans-serif; background-position: 0px 0px;  }
+
+/* GOOGLE AD STYLES */
+
+#adsenseHeader {
+	color: #fff;
+	width: 484px;
+	background: #9CA3AD;
+	height: 13px;
+	font: bold 12px Arial, Helvetica, sans-serif;
+	padding: 3px 8px; text-decoration: none;
+}
+
+#adsenseHeader a {
+	color: #fff;
+}
+
+#adsenseBox {
+	border: 1px solid #9CA3AD;
+	width: 482px;
+	padding: 8px;
+	text-align: left;
+}
+
+#adsenseBox a {
+	color: #006;
+	text-decoration: none;
+}
+
+#adsenseBox a:hover {
+	text-decoration: underline;
+}
+
+.googletitle {
+	color: #006;
+	font: bold 14px/16px Arial, Helvetica, sans-serif;
+	text-decoration: underline;
+}
+
+.googlecopy {
+	color: #000;
+	font: 11px/14px Arial, Helvetica, sans-serif;
+}
+
+.googlebottlink {
+	color: #000;
+	font: 10px Arial, Helvetica, sans-serif;
+}
+
+.googlefixpadding {
+	padding-bottom: 7px;
+}
+
+#adsenseBox .title a {
+	text-decoration: underline;
+}
+
+/* BLOG */
+
+div.blogline {
+	border-top: dashed 1px #ccc;
+	width: 505px;
+	margin: 5px 0 0 0;
+	}
+
+/* END */
+
+
+
+.inlineImage {
+	margin: 0 0 0 5px;
+}
+
+
+
+/*
+ONLY HACK/FIXES BELOW THIS
+EVERYTHING ELSE GOES ABOVE
+
+TRY TO KEEP ALL HACKS GROUPED IN SINGLE SOLITARY HACK CODE THING
+
+*/
+
+
+
+
+/* Fix IE. Hide from IE Mac \*/
+* html .azcNavLinks { height: 1%; }
+* html #azcBOXADTHING { margin: 0; }
+* html #azcHomeAVMidLeft .borderdarkgrey { margin-right: 8px; }
+* html .yesColorBoxWrap253 { width: 253px; }
+* html #yesStoryMain { width: 686px; height: 327px; }
+* html #yesLeftMain { width: 345px; height: 325px; }
+* html #yesRightMain { width: 339px; height: 325px; }
+* html .DexWrap300 { width: 300px; }
+* html .DexWrap200 { width: 200px; }
+* html #azcLeftNavWrap { width: 118px; }
+* html #azcMarketplace { width: 108px; }
+* html #azcLeftNav { width: 108px; }
+* html #azcEntTopPhotoWrap { width: 382px; }
+* html #azcEntCelebNews { width: 382px; }
+* html #azcNewsletterGuts200 { width: 200px; }
+* html .azcGrayBoxGuts200 { width: 200px; }
+* html .azcGrayBoxGuts300 { width: 300px; }
+* html .azcGrayBoxGuts376 { width: 376px; }
+* html .topbox_382 { padding-bottom: 10px; }
+* html .topbox_298 { padding-bottom: 2px; }
+* html .topRightPromo { width: 300px; }
+* html #azcEntRightLinks { width: 300px; }
+* html .isaSpacing img { padding: 0; margin-bottom: 0px; display: block; }
+* html .azrepisaSpacing img { padding: 0; margin-bottom: 0px; display: block; }
+* html #azcHome300Right img { padding: 0; margin-bottom: 0px; display: block; }
+* html #azcHomeAVLinks { margin: 4px 2px 4px 0; }
+* html #azcHomeAVMidLeft { width: 232px; }
+* html #azcHomeAVMidRight { width: 232px; }
+* html #azcHomeSkyLeft { width: 232px; }
+* html #azcHomeSkyRight { width: 232px; }
+* html .azcHomeAVInLeft { width: 232px; }
+* html .azcHomeAVInRight { width: 232px; }
+* html .azcLeftLtGrayNav { width: 108px; }
+* html .azcLeftWhiteNav { width: 108px; }
+* html #azcHomeLogo { margin-left: 8px; }
+* html #azcHomeNightLogo { margin-left: 8px; }
+* html #azcHomeWeather { margin-right: 10px; }
+* html .azcHomeBotSecRightPromo { width: 85px; }
+* html .azcNightSkyBox .atnightskyboximg { margin: 0 -3px;  }
+* html .azcColorBoxWrap376 { width: 376px; }
+* html .azcColorBoxWrap300 { width: 300px; }
+* html .azcColorBoxWrap200 { width: 200px; }
+* html #azcHomeBotSections { height: 1%; }
+* html .azcSptBrownBG { height: 1%; }
+* html #azcSptSpecFeats { height: 1%; }
+* html #specialcommStoryMainRight { overflow: visible; }
+* html #specialcommStoryMainLeft { overflow: visible; }
+* html #azcEntBotRight { overflow: visible; }
+* html #azcSptSpecFeatsBot { height: 1%; }
+* html .azcSptSpecFeatsBot { height: 1%; }
+* html .azcSptRightLinks { height: 1%; }
+* html #azcSptStoryMain { height: 1%; }
+* html .azcGreenBoxGuts { height: 1%; }
+* html .yesInlineBox { width: 210px; }
+* html #azcMIDTHING { width: 957px; }
+* html #azcMIDNIGHTTHING { width: 957px; }
+* html .azcSptVisualBG { height: 1%; }
+* html #azcYPSearchBox { width: 300px; }
+* html #adsenseBox { width: 500px; } 
+* html #adsenseHeader { width: 500px; } 
+/* End */
+
+
+/* THE HACKS BELOW MAKE MAC IE AND ITS USERS HAPPY */
+
+/* Aim this hack at all the IE browsers*/
+* html #storyStoryMain {
+	float: none;
+	display: inline;
+/* Then you aim this hack at all the IEwin browsers leaving IEMac with the above style. \*/
+	width: 506px;
+	float: left;
+	background-color: #fff;
+/* */
+}
+
+/* Aim this hack at all the IE browsers*/
+* html #azcGutsSideBar {
+	float: none;
+	padding: 0;
+	margin: 0 0 0 386px;
+	position: relative;
+/* Then you aim this hack at all the IEwin browsers leaving IEMac with the above style. \*/
+	width: 300px;
+	float: right;
+	padding: 0;
+	margin: 0;
+/* */
+}
+
+
+
+
+
+/* Aim this hack at all the IE browsers*/
+* html #specialcommStoryMainRight {
+	float: none;
+	padding: 0;
+	margin: 0 0 0 222px;
+	position: relative;
+/* Then you aim this hack at all the IEwin browsers leaving IEMac with the above style. \*/
+	width: 255px;
+	float: right;
+	padding: 0;
+	margin: 0;
+/* */
+}
+
+/* Aim this hack at all the IE browsers*/
+* html #azcHomeSideBar {
+	float: none;
+	padding: 0;
+	margin: 0 0 0 487px;
+	position: relative;
+/* Then you aim this hack at all the IEwin browsers leaving IEMac with the above style. \*/
+	width: 300px;
+	float: right;
+	padding: 0;
+	margin: 0;
+/* */
+}
+/* Aim this hack at all the IE browsers*/
+* html #azcHomeStorymain {
+	float: none;
+	padding: 0;
+	margin: 0 0 0 222px;
+	position: relative;
+/* Then you aim this hack at all the IEwin browsers leaving IEMac with the above style. \*/
+	width: 253px;
+	float: right;
+	padding: 0;
+	margin: 0;
+/* */
+}
+/* Aim this hack at all the IE browsers*/
+* html #azcHomeTop {
+	padding: 20px 0 0 0;
+/* Then you aim this hack at all the IEwin browsers leaving IEMac with the above style. \*/
+	padding: 0;
+/* */
+}

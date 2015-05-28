@@ -1,0 +1,128 @@
+
+#divDBSearchMainContainer form{
+	font-size:.8em;
+	background:#ffffcc;
+	margin: 10px 0 0 30px;
+	padding:5px 0 0 0;
+	border-top: 1px solid #c0d1c5;
+}
+
+#divDBSearchMainContainer form fieldset{
+	border:0;
+	margin: 0 5px 5px 5px;
+	padding:5px;
+	background:#fff;
+}
+#divDBSearchMainContainer form select{
+	width:150px;
+	margin-top:10px;
+}
+#divDBSearchMainContainer form input{
+	width:180px;
+	margin-top:10px;
+}
+#divDBSearchMainContainer form span{
+	display:block;
+	width:90px;
+	margin:10px 20px 0 0;
+	float:left;
+}
+#divDBSearchMainContainer form #submit{
+	width:80px;
+	margin:0 0 0 160px;
+}
+#divDBSearchMainContainer form #reset{
+	width:80px;
+	margin:0 0 0 5px;
+}
+
+#divDBSearchMainContainer #buttons {
+	 margin: 0 0 0 114px !important;
+	 margin:0 0 0 44px;
+	 background: transparent;
+}
+
+#divDBSearchResults,
+#divDBDetailsContainer {
+	margin: 0 0 0 30px;
+}
+
+#divDBSearchResults fieldset {
+	margin: 10px 0;
+	padding: 10px;
+	background: #ffffcc;
+	border-top: 1px solid #c0d1c5;
+	clear: both;
+}
+
+#divDBSearchResults img
+{
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin-right: 5px;
+}
+
+#divDBSearchResults h3
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+#divDBSearchResults p
+{
+	margin: 1px;
+	padding: 0px;
+	width: 360px;
+	float: left;
+}
+
+
+
+#divDBDetailsContainer ul,
+#divDBDetailsContainer li
+{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+#divDBDetailsContainer h4
+{
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+	padding: 2px 0 0 0;
+	clear: left;
+	border-top: 1px solid #ddd;
+	font-size: 80%;
+	color: #9f9db9;
+}
+
+#divDBDetailsContainer p, #divDBDetailsContainer ul
+{
+	padding: 3px 0 5px 0;
+	height: auto;
+}
+
+#divDBDetailsContainer table {
+	clear: both;
+	margin: 5px 0 0 0;
+	border-bottom: 1px solid #ddd;
+	width: 100%;
+}
+
+.trDBDetailsTableHeader
+{
+	background-color: #ffffcc;
+	border-top: 2px solid #c0d1c5;
+	border-bottom: 1px solid #ddd;
+	font-size: 80%;
+	font-weight: bold;
+}
+
+#divDBDetailsContainer td
+{
+	padding: 3px 2px;
+	border-bottom: 1px solid #ddd;
+}

@@ -1,0 +1,174 @@
+/* CSSFILE.css */
+
+/* ===== colorset ===== */
+/* white			[rgb(255,255,255)]		[hex(#ffffff)] */
+/* black			[rgb(0,0,0)]				[hex(#000000)] */
+/* l_blue			[rgb(73,125,158)]		[hex(#497D9E)] */
+/* d_blue			[rgb(51,86,111)]		[hex(#33566F)] */
+/* blu_text			[rgb(54,91,116)]		[hex(#365B74)]*/
+/* red_text			[rgb(112,27,22)]		[hex(#701B16)]*/
+
+/* default links */
+a:link {text-decoration: underline; color: #003366;}
+a:visited {text-decoration: underline; color: #003366;}
+a:active {text-decoration: underline; color: #003366;}
+a:hover {text-decoration: none; color: #003366;}
+/* footer */
+a.footer:link {text-decoration: none; color: #003366;}
+a.footer:visited {text-decoration: none; color: #003366;}
+a.footer:active {text-decoration: none; color: #003366;}
+a.footer:hover {text-decoration: underline; color: #003366;}
+/* White */
+a.white:link {text-decoration: none; color: White;}
+a.white:visited {text-decoration: none; color: White;}
+a.white:active {text-decoration: none; color: White;}
+a.white:hover {text-decoration: underline; color: White;}
+/* Black */
+a.black:link {text-decoration: none; color: Black;}
+a.black:visited {text-decoration: none; color: Black;}
+a.black:active {text-decoration: none; color: Black;}
+a.black:hover {text-decoration: underline; color: Black;}
+/* Menu */
+a.menu:link {text-decoration: none; color: Black;}
+a.menu:visited {text-decoration: none; color: Black;}
+a.menu:active {text-decoration: none; color: Black;}
+a.menu:hover {text-decoration: underline; color: Black;}
+/* Record Button */
+a.button:link {text-decoration: none; color: #FFFFFF;}
+a.button:visited {text-decoration: none; color: #FFFFFF;}
+a.button:active {text-decoration: none; color: #FFFFFF;}
+a.button:hover {text-decoration: none; color: #FFFFFF;}
+/* Highlight */
+a.highlight:link {text-decoration: none; color: #CB3F2D;}
+a.highlight:visited {text-decoration: none; color: #CB3F2D;}
+a.highlight:active {text-decoration: none; color: #CB3F2D;}
+a.highlight:hover {text-decoration: underline; color: #CB3F2D;}
+/* News Nav */
+a.newsnav:link {text-decoration: none; color: #33566F;}
+a.newsnav:visited {text-decoration: none; color: #33566F;}
+a.newsnav:active {text-decoration: none; color: #33566F;}
+a.newsnav:hover {text-decoration: none; color: #33566F;}
+/* Navbar */
+a.navbar:link {text-decoration: none; color: White;}
+a.navbar:visited {text-decoration: none; color: White;}
+a.navbar:active {text-decoration: none; color: White;}
+a.navbar:hover {text-decoration: underline; color: White;}
+
+
+/* body styles */
+body.body {
+	background-color: #E7E7E7;
+	color: Black; 
+	font-family: Verdana, Arial; 
+	font-size: 10px;
+	scrollbar-arrow-color: Black;
+	scrollbar-highlight-color: #CCCCCC;
+	scrollbar-shadow-color: rgb(245,245,245);
+	scrollbar-base-color: rgb(204,204,204);
+	scrollbar-face-color: White;
+	scrollbar-3dlight-color: White;
+	scrollbar-darkshadow-color: White;
+	scrollbar-track-color: rgb(204,204,204);
+}
+body.blank {
+	color: Black; 
+	font-family: Verdana, Arial; 
+	font-size: 10px;
+	scrollbar-arrow-color: Black;
+	scrollbar-highlight-color: #CCCCCC;
+	scrollbar-shadow-color: rgb(245,245,245);
+	scrollbar-base-color: rgb(204,204,204);
+	scrollbar-face-color: White;
+	scrollbar-3dlight-color: White;
+	scrollbar-darkshadow-color: White;
+	scrollbar-track-color: rgb(204,204,204);
+}
+body.text_only {
+	background-color: #EFEFEF;
+	color: Black; 
+	font-family: Verdana, Arial; 
+	font-size: 10px;
+	scrollbar-arrow-color: Black;
+	scrollbar-highlight-color: #CCCCCC;
+	scrollbar-shadow-color: rgb(245,245,245);
+	scrollbar-base-color: rgb(204,204,204);
+	scrollbar-face-color: White;
+	scrollbar-3dlight-color: White;
+	scrollbar-darkshadow-color: White;
+	scrollbar-track-color: rgb(204,204,204);
+}
+
+td.form{color: Black; font-family: Verdana, Arial; font-size: 11px; padding-bottom: 2px; padding-top: 2px;}
+
+/* text styles */
+.homeaddress {color: #46535E; font-family: Verdana; font-size: 11px;}
+.hometitle{color: #701B16; font-family: Times New Roman; font-size: 18px;}
+.homespcr{font-size: 40px;}
+.homeheader{color: White; font-family: Verdana, Arial; font-size: 24px; font-weight: bold;}
+.navbarspcr{font-size: 25px;}
+
+.featurestorydate{color: #666666; font-family: Verdana, Arial; font-size: 11px; font-weight: bold;}
+.featurestorytext{color: Black; font-family: Verdana, Arial; font-size: 11px; line-height: 18px;}
+.featurestorytitle{color: Black; font-family: Verdana, Arial; font-size: 12px; line-height: 18px; font-weight: bold;}
+.featurestorysubtitle{color: #666666; font-family: Verdana, Arial; font-size: 11px; line-height: 18px; font-style: italic;}
+.eventsdate{color: #365B74; font-family: Verdana, Arial; font-size: 11px; font-weight: bold;}
+.eventsrecorddate{color: #46535E; font-family: Verdana; font-size: 11px;}
+.eventstitle{color: Black; font-family: Verdana, Arial; font-size: 14px; font-weight: bold;}
+.text {color: Black; font-family: Verdana, Arial; font-size: 11px;}
+.text_leaded{color: Black; font-family: Verdana, Arial; font-size: 11px; line-height: 18px;}
+.submenu{color: Black; font-family: Verdana, Arial; font-size: 11px; line-height: 18px;}
+.poll{color: Black; font-family: Verdana, Arial; font-size: 11px;}
+
+/* image gallery styles*/
+.hint {color: #666666; font-family: verdana,arial; font-size: 10px;}
+.footnote {color: #999999; font-family: Verdana, Arial; font-size: 9px;}
+.supertitle {color: Black; font-family: Verdana, Arial; font-size: 16px;}
+.spacer {color: White; font-family: Arial, Verdana; font-size: 5px;}
+.photoalbumdescription{color: Black; font-family: Verdana, Arial; font-size: 12px;}
+
+/* multi-section styles */
+.recordbg {background-color:#497D9E; color: #FFFFFF; font-family: Verdana, Arial; font-size: 12px; font-weight: bold;}
+.recordbgbottom {background-color: #EBEBEC; border: #33566F 1px Solid; color: #701B16; font-family: Verdana, Arial; font-size: 11px; font-weight: bold;}
+.recordbgtop {background-color: #EBEBEC; border: #33566F 1px Solid; color: #701B16; font-family: Verdana, Arial; font-size: 11px; font-weight: bold;}
+.recordbgtext {background-color: #497D9E; color: #FFFFFF; font-family: Verdana, Arial; font-size: 10px;}
+.recordbutton {background-color: #497D9E; color: #FFFFFF; font-family: Verdana, Arial; font-size: 9px;}
+.recordbutton_disabled {background-color:#497D9E; color: #999999; font-family: Verdana, Arial; font-size: 9px;}
+.recordbuttonbottom {background-color:#497D9E; color: #FFFFFF; font-family: Verdana, Arial; font-size: 9px;}
+.recordbuttonbottom_disabled {background-color:#497D9E; color: #999999; font-family: Verdana, Arial; font-size: 9px;}
+.recordbuttontop {background-color:#497D9E; color: #FFFFFF; font-family: Verdana, Arial; font-size: 9px;}
+.recordbuttontop_disabled {background-color:#497D9E; color: #999999; font-family: Verdana, Arial; font-size: 9px;}
+.recordtitle{color: Black; font-family: Verdana, Arial; font-size: 14px;}
+.recordsubtitle{color: Black; font-family: Verdana, Arial; font-size: 12px;}
+.recorddateday{color: #497D9E; font-family: Verdana, Arial; font-size: 11px; font-weight: bold;}
+.recorddatemonthyear{color: Black; font-family: Verdana, Arial; font-size: 12px; font-weight: bold;}
+.recorddatecurrent{color: #701B16; font-family: Verdana, Arial; font-size: 10px; font-style: italic;}
+
+.articledate{color: #666666; font-family: Verdana, Arial; font-size: 11px; font-weight: bold;}
+.articletitle{color: Black; font-family: Verdana, Arial; font-size: 16px;}
+
+.copytitle{color: Black; font-family: Verdana, Arial; font-size: 14px; font-weight: bold;}
+
+/*
+.footer {color: #003366; font-family: Verdana, Arial; font-size: 9px;}
+.hint {color: Gray; font-family: Verdana, Arial; font-size: 9px;}
+.menu {color: Black; font-family: Verdana, Arial; font-size: 9px;}
+.menubullets {color: #BB5136; font-family: Verdana, Arial; font-size: 9px;}
+.menufooter {color: Gray; font-family: Verdana, Arial; font-size: 9px;}
+.offices {color: Black; font-family: Verdana, Arial; font-size: 10px;}
+.system {color: Black; font-family: System, Arial, Verdana;}
+.text_disabled {color: Gray; font-family: Verdana, Arial; font-size: 10px;}
+*/
+
+/* lists */
+ul.bullet { list-style-image: url(_images/icons/bullet.gif);}
+
+
+/* buttons */
+input.button {background-color: White; border: Black 1px solid; color: Black; font-family: Arial, Verdana; font-size: 9pt;}
+/* inputs */
+input.newsletter {background-color: #FFFFFF; border: #666666 1px solid; color: #666666; font-family: Verdana, Arial; font-size: 9px; height: 19; width: 151;}
+input.text {background-color: #FFFFFF; border-top: thin solid #7D7D7D; border-left: thin solid #C4C4C4; border-right: thin solid #C4C4C4; border-bottom: thin solid #DEDEDE; color: #333333; font-family: Verdana, Arial; font-size: 9px; width: 100%;}
+/* textareas */
+textarea.textarea {background-color: #FFFFFF; border: #666666 1px solid; color: #333333; font-family: Verdana, Arial; font-size: 9px; width: 100%;}
+/* selects */
+select.select {background-color: #FFFFFF; border: #666666 1px solid; color: #333333; font-family: Verdana, Arial; font-size: 9px; width: 100%;}

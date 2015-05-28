@@ -1,0 +1,65 @@
+/*
+contain div hack http://www.cs.hmc.edu/~mbrubeck/clear-after/
+*/
+.blog_entry
+{
+    border:1px dotted #333333;
+    padding:5px;
+}
+.blog_entry:after { content: ""; display: block; height: 0; clear: both; }
+
+.blog_entry h2
+{
+    font-size:16px;
+}
+.blog_footer td
+{
+    color: #888888;
+    font-weight:bold;
+}
+
+.blog_entry_wrapper
+{
+    margin-bottom:20px;
+}
+
+
+/*  this fixes layout issues - just not apparently in Matt's browser
+.blog_entry
+{
+    border:1px dotted #333333;
+    padding:10px;
+    overflow: auto;
+    overflow-y: visible;
+    overflow-x: hidden;
+    float:left;
+    width:97%;
+}
+.blog_entry a img {
+    border: 0;
+    z-index: 1;
+    width: auto;
+}
+
+
+div.clearer {clear: left; line-height: 0; height: 0;}
+.blog_entry h2
+{
+    font-size:16px;
+}
+.blog_footer td
+{
+    color: #888888;
+    font-weight:bold;
+    clear:left;
+}
+
+.blog_entry_wrapper
+{
+    margin-bottom:20px;
+    overflow: auto;
+    overflow-x: visible;
+    overflow-y:hidden;
+    margin: 5px;
+}
+*/

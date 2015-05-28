@@ -1,0 +1,821 @@
+/*
+
+-- Colour reference --
+Background: #426181
+
+A comment follows a CSS rule when it is intended to match up to
+some other property elsewhere in the stylesheet, eg. where two
+pixel sizes need to match up.
+
+ */
+ 
+ 
+/** Basic formatting **/
+
+body {
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  font-size: 85%;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+}
+
+td, font { font-size: 100%; }
+
+/* These things should all be Tahoma */
+#leftContent,
+#flyout ul,
+#flyout td,
+#flyout p,
+#utilityStrip,
+.suggestions,
+input, select {
+  font-family: Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0px;
+  padding: 0px;
+}
+
+h3 {
+  margin: 10px 0px; 
+}
+
+a img { border: none; }
+
+/* stuff stolen from standard4 for now */
+
+body {
+	font-size: 75%;
+}
+#layoutTable, #layoutTable td, #layoutTable table {
+	font-size: 100%;   /* fix for IE5.x/Win bugs */
+}
+
+.smallcopy {font-size: 75%;}
+.smalltext {font-size: 100%;}
+
+h1 {color: #004F8F;} 
+h2 {color: #004F8F;}
+h3 {color: #6382C2;}
+h4 {color: #6382C2;}
+h5 {color: #6382C2;}
+h6 {color: #6382C2;}
+
+#pageTitle h1 {
+  font-size: 210%;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  letter-spacing: -2px;
+  padding-bottom: 5px;
+  margin: 0px 10px 0px 0px;
+}
+
+#pageTitle { 
+	border-bottom: 1px solid #BACEEA; 
+	margin-right: 10px;
+}
+
+#pageTitleBottom { clear: right; }
+
+p { margin-top: 0px; }
+
+#mainContent p {
+	line-height : 1.4em;
+}
+
+#mainContent p {margin: 0 0 1em 0;}
+
+h2 {
+	font-size: 140%;
+	margin: 0 0 0.3em;
+	padding: 0;
+}
+h3 {
+	font-size: 120%;
+	font-weight: normal;
+	margin: 0 0 0.2em;
+	padding: 0;
+	font-variant : small-caps;
+}
+
+h4 {
+	font-size: 110%;
+	font-weight: normal;
+	margin: 0 0 0.2em;
+	padding: 0;
+	font-variant: small-caps;
+}
+
+h5 {
+	font-size: 110%;
+	margin: 0 0 -0.1em;
+	padding: 0;
+}
+
+h6 {
+	font-size: 100%;
+	margin: 0 0 0em;
+	padding: 0;
+}
+
+#mainContent ul, #rhsContent ul {
+	list-style-type: square;
+}
+
+#mainContent li, #rhsContent li  {
+	margin-bottom : 6px
+}
+
+#mainContent .content th, #rhsContent .content th {
+	font-size: 110%;
+	color: #003399;
+}
+
+#bodyContent a:link, #bodyContent a:visited { text-decoration: underline;}
+#bodyContent a:link { color: #003399;}
+#bodyContent a:visited { color: #330066; }
+#bodyContent a:active { color: #003399; }
+#bodyContent a:visited:hover, #layoutTable a:link:hover { color: #3366CC; }
+
+/* Styles to highlight paragraphs*/
+
+
+.blockquote1 {margin: 0px 0px 20px 0px; padding: 0px 30px; font-size:90%; color: #333; }
+	
+.blockquote2 {font-style: italic; padding-left: 0.5em; border-left: thin solid blue;}
+
+.boxstyle {border: solid 1px #003399; padding: 1px 5px 5px 5px; margin: 5px 0px 0px 0px; background-color: #DAE3F0;}
+
+.bluebox2 {border: dashed 1px #0072BC; padding: 1px 5px 5px 5px; margin: 5px 0px 0px 0px; background-color: #D6DEE8;}
+
+.bluebox3 {border: dashed 1px #0087B1; padding: 1px 5px 5px 5px; margin: 5px 0px 0px 0px; background-color: white;}
+
+.bluebox4 {border: solid 1px #0072BC; padding: 1px 5px 5px 5px; margin: 5px 0px 0px 0px; background-color: #A6C0CE;}
+
+.example {border: solid 1px #ccc; background-color: #ECECEC; padding: 10px;}
+
+.greybox2 {border: dashed 1px #ccc; background-color: #ECECEC; padding: 10px;}
+
+.greybox3 {border: solid 1px #787879; padding: 1px 5px 5px 5px; margin: 5px 0px 0px 0px; background-color: #F1F1F2;}
+
+.greybox4 {border: solid 2px #787879; padding: 1px 5px 5px 5px; margin: 5px 0px 0px 0px; background-color: #F1F1F2;}
+
+.beigebox1 {border: solid 1px #9B93A7; background-color: #EEE9D9; padding: 1px 5px 5px 5px; margin: 5px 0px 0px 0px;}
+
+.beigebox2 {border: dashed 1px #9B93A7; background-color: #EEE9D9; padding: 1px 5px 5px 5px; margin: 5px 0px 0px 0px;}
+
+.beigebox3 {background-color: #C7BE9E; padding: 1px 5px 5px 5px; margin: 5px 0px 0px 0px;}
+
+.bannerbox1 {padding: 2px 5px 5px 25px; margin: 5px 0px 0px 0px; background: #DAE5F3 url(/static_war/render/images/boxstyles/bluearrow.gif) no-repeat 5px 4px; border: solid 1px #0071A7; font-weight: bold; color: #0071A7;}
+
+.bannerbox2 {padding: 2px 5px 5px 25px; margin: 5px 0px 0px 0px; background: #ECEDED url(/static_war/render/images/boxstyles/greyarrow.gif) no-repeat 5px 4px; border: solid 1px #808285; font-weight: bold; color: #6E6F72;}
+
+.bannerbox3 {padding: 2px 5px 5px 25px; margin: 5px 0px 0px 0px; background: #EEE9D9 url(/static_war/render/images/boxstyles/brownarrow.gif) no-repeat 5px 4px; border: solid 1px #756F63; font-weight: bold; color: #585144;}
+
+.helpbox {border: solid 1px #0071A7; padding: 4px 5px 5px 25px; margin: 5px 0px 0px 0px; background: url(/static_war/render/images/boxstyles/helpicon.gif) no-repeat 5px 4px;}
+
+.infobox {border: solid 1px #0071A7; padding: 4px 5px 5px 25px; margin: 5px 0px 0px 0px; background: url(/static_war/render/images/boxstyles/infoicon.gif) no-repeat 5px 4px;}
+
+.alertbox {border: solid 1px #F26522; padding: 4px 5px 5px 25px; margin: 5px 0px 0px 0px; background: url(/static_war/render/images/boxstyles/alerticon.gif) no-repeat 5px 4px;}
+
+
+
+
+
+
+/********************** FANCY BULLET STYLE **********************/
+	
+#mainContent .content ul, 
+#rhsContent .content ul {
+	list-style: none;
+	margin: 1em 0 1em 0;
+}
+
+#mainContent .content ul { padding-left: 25px; }
+#rhsContent .content ul  { padding-left: 10px; }
+
+#mainContent .content ul ul,
+#rhsContent .content ul ul {
+    margin-bottom: 0px;	
+}
+
+#mainContent ul li, 
+#rhsContent ul li {
+	line-height: 1.3em;
+	background: url(/static_war/render/images/li_bullet.gif) no-repeat 0 6px;
+	padding: 4px 0 0px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/**** OUTER SHADING ****/
+
+body { background: #fff url(/static_war/render/images/shadow_right.png) top right repeat-y; }
+
+#leftShading {
+  background: url(/static_war/render/images/shadow_left.png) top left repeat-y;
+  padding-left: 26px;
+}
+#leftShadow {
+  background: url(/static_war/render/images/shadow_left.png) 0px 0px repeat-y; 
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%; 
+  width: 26px;
+}
+#rightShading {
+  border-top: none;
+  background: url(/static_war/render/images/shadow_right_top.png) top right no-repeat;
+  padding-right: 26px;
+}
+#bottom { height: 1px; }
+#leftTopShadow {
+  background: url(/static_war/render/images/shadow_left_top.png) 0px 0px no-repeat; 
+  position: absolute;
+  left: 0px;
+  top: 33px; /* warwickBar.height */
+  height: 47px;
+  width: 26px;
+}
+#topLeftShadow {
+  background: url(/static_war/render/images/shadow_top_left.png) 0px 0px no-repeat; 
+  position: absolute;
+  left: 0px;
+  top: 0px; 
+  height: 33px; /* warwickBar.height */
+  width: 26px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Warwick bar */
+
+#warwickBar {
+  background: url(/static_war/render/images/shadow_top_middle.png) bottom left repeat-x;
+}
+#warwickBarLeft {
+  background: url(/static_war/render/images/shadow_top_left.png) left top no-repeat;
+}
+#warwickBarRight {
+  background: url(/static_war/render/images/shadow_top_right.png) right bottom no-repeat;
+  height: 33px;
+  padding-left: 26px;
+}
+#warwickBar a {
+  text-decoration: none; 
+}
+#warwickBar a:link,
+#warwickBar a:visited {
+  color: white;
+}
+#warwickBar a:hover {
+  text-decoration: underline; 
+}
+#warwickLogo {
+  vertical-align: bottom; 
+}
+#warwickBar #utilityStrip {
+  position: absolute;
+  top: 4px;
+  right: 26px;
+  font-size: 80%;
+}
+
+#warwickBar #utilityStrip,
+#warwickBar #utilityStrip a:link,
+#warwickBar #utilityStrip a:visited {
+  color: #ddd; 
+}
+
+#warwickBar #utilityStrip a:hover {
+  color: #fff;
+}
+
+
+#warwickBar #utilityStrip #edittool ul,
+#warwickBar #utilityStrip #edittool ul a:link,
+#warwickBar #utilityStrip #edittool ul a:visited,
+#warwickBar #utilityStrip #edittool ul a:hover {
+  color: #000; 
+}
+
+
+#warwickBar #utilityStrip .spacer {
+  color: #ddd;
+}
+#warwickBar #utilityStrip #search {
+  padding-left: 8px;
+  display: inline;
+}
+#warwickBar #utilityStrip #search form {
+  display: inline;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+
+#searchBox {
+  border:none;
+  padding: 2px 0px 0px 2px;
+  height:14px;
+  width:130px;  
+  background-color: #eeeeee;
+  font-size: 10px;
+}
+
+#search.hover #searchBox { background-color: #ffffff; }
+
+#searchButton { 
+  height:16px;
+  width:19px;
+  margin: 0px 8px 0px 0px; 
+  position:relative;
+  top: 4px;
+  background: none !important;
+}
+
+#searchSuggestions {  
+  top: 20px;
+  right: 26px;
+}
+
+#flyoutGoSuggestionsHolder {
+  position: relative; 
+}
+
+#flyoutGoSuggestions {
+  top: 0px;
+  left: 0px;
+  z-index: 99999;
+}
+
+
+.suggestions {
+  position:absolute;
+  width: 200px;
+  border: 1px solid #666;
+  border-bottom-width: 2px;
+  /* top of everything */
+  z-index: 9999;
+  
+  font-size: 11px;
+}
+
+.suggestions ul { border: 1px solid #657597; }
+.suggestions ul, .suggestions li { margin:0px; padding: 0px; list-style-type: none; color: #000; }
+.suggestions li { 
+  border-bottom: 1px solid #657597; 
+  padding: 6px; 
+  text-align: left;
+  cursor: pointer; 
+  cursor: hand; 
+}
+.suggestions li { background-color: #FFFFFF; zoom: 1.0;  }
+.suggestions li.even { background-color: #F5F5FF; }
+.suggestions span.redirectpath { display: block; font-weight: bold; }
+.suggestions .informal { display: block; font-weight: normal; font-style: italic; }
+
+.suggestions ul li.selected { background-color: #FFFFDD;  }
+
+
+
+
+
+/** Site logo bar **/
+
+
+#departmentBar {
+  background-color: #6382C2;
+  background-position: bottom left;
+  background-repeat: repeat-x;
+  white-space: nowrap;
+}
+#departmentBar #siteBanner {
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  height: 50px;
+  border-top: 1px solid #cccccc;
+}
+#departmentBar #siteBanner img {
+  height: 50px;
+  vertical-align: bottom;
+}
+#departmentBar #siteCornerTopRight {
+  background: url(/static_war/render/images/site_corner_tr.png) top right no-repeat; 
+  position: absolute;
+  z-index: 10;
+  top: 33px; /* warwickBar.height */
+  right: 26px; /* rightShading.width */
+  width: 10px;
+  height: 10px;
+}
+#departmentBar #siteCornerTopLeft {
+  position: absolute;
+  z-index: 10;
+  top: 33px; /* warwickBar.height */
+  left: 26px; /* leftShading.width */
+  width: 10px;
+  height: 10px;
+  background: url(/static_war/render/images/site_corner_tl.png) top left no-repeat; 
+}
+
+/* If departmentBar is given class="short", it will be the
+   old 46px height, for compatibility with old site banners.
+   This will probably be a per-site option, which we switch
+   as and when a new 50px banner is made.
+ */
+#departmentBar.short #siteBanner,
+#departmentBar.short #siteBanner img
+{ height: 46px; }
+
+
+/* optional curve; just set background-image */
+#departmentBarCurve {
+  width: 20px;
+  height: 20px;
+  position:absolute;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+
+
+
+
+
+/** 3-column layout **/
+
+#leftContent {
+  float: left;
+  width: 160px;
+}
+
+#bodyContent {
+  padding-top: 10px;
+  margin-left: 180px; /* leftContent.width + 10 */
+}
+
+#contentScroll {
+  width: 99%;	
+}
+
+#mainContent {
+  padding-right: 10px;
+} 
+
+#mainContent .content {
+  padding: 10px 0px 0px 0px;
+}
+
+#rhsContent {
+  width: 170px;
+  padding-left: 10px;
+}
+
+#rhsContent .content {
+  padding: 10px 10px 0px 0px;
+}
+
+/*
+*  this line is fantastically important. it resets the scope of
+ * the "clear" attribute; without it, using clear within the
+*  page contents will clear it all the way below the left and right
+ * columns.
+*/
+#mainContent .content { 
+ float: left;
+ width: 100%;
+}
+
+
+
+
+
+/* pages-to-go */
+#pagesToGo {
+  padding-top: 10px;
+  margin-left: 10px;
+}
+
+
+
+/* Span-RHS mode */
+
+/*#main.spanRHS #mainContent .content { width: 98%; }*/
+
+
+
+
+
+
+/** Collapsed menu mode **/
+/*  Narrow LHS, hide actual navigation and corners. */
+/* !important used for Opera to override widths set
+    by Javascript. */
+#main.collapse #bodyContent {
+  margin-left: 50px !important;
+}
+#main.collapse #leftContent {
+  width: 30px !important;
+}
+#main.collapse #leftContent #leftUtility {
+  display: none;
+}
+#main.collapse #navigation {
+  display: none;
+}
+#main.collapse #navigationCorner {
+  background: none;
+  height: auto; 
+}
+
+/* #navigation normally provides height but hidden now,
+   so set a nice height */
+#main.collapse #outerNavigation {
+  height: 300px;
+}
+
+.collapse #pagesToGo { display: none; }
+
+
+
+/** Flyout **/
+
+#flyout {
+  position: absolute;
+  width: 643px;
+  height: 443px; 
+  top: -450px;
+  left: -650px;
+  z-index: 9990;
+  background: url(/static_war/render/images/flyout.png) top left no-repeat;
+}
+
+#flyout #flyoutContents {
+  position: relative;
+  margin: 20px;
+}
+
+#flyout form { margin: 0px; }
+
+#flyout h2 {
+  color: #084081;
+  font-weight: normal;
+  font-size: 180%;
+  letter-spacing: -2px;
+  margin: 0px;
+  padding: 0px;
+}
+
+#flyout p { margin: 3px 0px 5px 0px; padding: 0px; }
+
+#flyoutLinks li {
+  font-size: 11px; 
+}
+#flyoutLinks ul, #flyoutLinks li { list-style-type: none; margin: 0px; padding: 0px; margin-bottom: 2px; }
+#flyoutLinks ul { margin: 2px; color: #666; }
+#flyoutLinks ul a { color: black; }
+#flyoutLinks ul a:hover { color: navy; }
+
+#flyout a:link, #flyout a:visited { text-decoration: none; color: black; }
+#flyout a:hover { text-decoration: underline; }
+
+/* table-layout forms */
+#flyout table { margin-top: 20px; margin-left: 8px;  border-collapse: collapse; }
+#flyout table tr { height: 36px; }
+#flyout table th { text-align: left; font-weight: normal; padding-right: 8px;  }
+
+
+#flyoutSearch th { width: 64px; }
+#flyoutSearch input.text { width: 180px; }
+#flyoutSearch select.text { width: 183px; font-size: 0.9em; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; }
+#flyoutSearch select.text optgroup { text-decoration: none; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-style: normal; margin-left: 0.1em; }
+#flyoutSearch select.text option { padding-left: 1em; }
+
+#flyoutPeopleSearch th { width: 80px; }
+#flyoutPeopleSearch input.text { width: 164px; }
+
+#flyoutJump h2 { color: #084081; }
+#flyoutLinks h2 { color: #4B007D; }
+#flyoutLinks h2.directories { color: #B8027E; }
+#flyoutSearch h2 { color: #0678B3; }
+#flyoutPeopleSearch h2 { color: #483093; margin-top: 3px; margin-bottom: 0px; }
+#flyoutNewsflash h2 { color: #8F0000; }
+
+#flyoutPeopleSearch table { padding: 0px; }
+
+#flyoutLeft {
+  position: absolute; 
+  left: 20px;
+  top: 16px;
+  width: 250px;
+}
+
+#flyoutJump {
+  
+}
+#flyoutLinks {
+  margin-top: 34px;
+  /*
+  position: absolute;
+  left: 20px;
+  top: 130px; 
+  width: 250px;
+  */
+}
+#flyoutSearch {
+  position: absolute;
+  left: 312px; 
+  top: 15px;
+  width: 280px;
+  height: 160px;
+
+}
+#flyoutPeopleSearch {
+  position: absolute;
+  left: 312px; 
+  top: 194px;
+  width: 290px;
+  height: 180px;
+
+}
+#flyoutNewsflash {
+  display: none;
+	
+  position: absolute;
+  left: 312px;
+  top: 310px;
+  width: 280px;
+}
+
+/* flyout icons */
+
+#flyoutJump .flyoutIcon {
+  width: 43px;
+  height: 39px;
+  right: -20px;
+  top: -9px;
+  position: absolute;
+  background: url(/static_war/render/images/flyout_go_icon.gif) top left no-repeat; 
+}
+
+#flyoutSearch .flyoutIcon {
+  width: 56px;
+  height: 43px;
+  right: 10px;
+  top: -8px;
+  position: absolute;
+  background: url(/static_war/render/images/flyout_search_icon.gif) top left no-repeat; 
+}
+
+#flyoutPeopleSearch .flyoutIcon {
+  width: 57px;
+  height: 51px;
+  position: absolute;
+  right: 20px;
+  top: -11px;
+  background: url(/static_war/render/images/flyout_people_icon.gif) top left no-repeat; 
+}
+
+#flyoutCloseButton {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 4px;
+  left: 587px;
+  background: url(/static_war/render/images/flyout_close_button.gif) center center no-repeat; 
+  
+  cursor: hand; cursor: pointer;
+}
+
+#flyoutTag {
+  width: 26px;
+  height: 28px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  background: url(/static_war/render/images/flyout_tag_mirrored.gif) top left no-repeat; 
+  
+  cursor: hand; cursor: pointer;
+}
+ 
+
+
+
+
+
+
+
+/**************************** FOOTER **********************/
+/* includes footer line */
+
+.footerLeft {
+	float: left;
+}
+
+.footerRight {
+    float: right;
+}
+
+#footerContent a {
+    text-decoration: none;
+}
+
+#footerContent {
+    font-size: 75%;
+    border-bottom: 1px solid #BACEEA;
+    height: 17px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    clear: both;
+        
+    color: #999;
+}
+ 
+#footerContent a:link,
+#footerContent a:visited {
+   color: #999;
+}
+
+#footerContent a:hover {
+   color: #666;	
+}
+
+.rhs #footerContent {
+	margin-right: 0px;
+}
+
+#footerContentSpan {
+	margin: 15px 5px 20px 0;
+	height: 17px;
+ }
+
+
+
+
+.pageIterator {
+  font-size: 75%; 
+  padding: 5px;
+}
+.pageIterator.top { padding-top: 0px; padding-bottom: 0px; margin-bottom: 20px; }
+.pageIterator.bottom { }
+
+
+
+
+
+/* move edit dropdown a little bit for ID5. */
+#edittool ul#edittoolmenu { 
+  font-size: 1.2em;
+  top: 20px;
+  right: 2em;
+  margin-right: 200px;
+}
+
+
+
+
+.clearLeft { clear: left; }
+.clearRight { clear: right; }
+.clear, .clearBoth { clear: both; }
+
+
+
+/** Accessibility helpers **/
+
+
+@media print,aural,braille,embossed {
+  .accessibilityHide { display: none; }
+}
+
+/* 
+  text for screen readers.
+  display: none hides it from JAWS so
+  instead we punt it way off to the left
+  where no visual browser can see it.
+*/
+.accessibility {
+  position: absolute;
+  left: -9999em;
+}

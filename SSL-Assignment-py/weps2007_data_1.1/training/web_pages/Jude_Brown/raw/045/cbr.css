@@ -1,0 +1,163 @@
+body {background-color: #ffffff; color: #000000;}
+
+A , IMG {display: inline;}
+p, ul, ol, li, table, td, dt, dd {font-family: Arial, Helvetica,sans-serif;  font-size: 96%;}
+
+li {padding: 3px 0 1px  0;}
+div        { 	font-family: Arial, Helvetica, sans-serif;	color: #000000;	font-weight: normal;}
+/* Top menu bar */
+div.menu {font-size: 90%; color: #333333; border-bottom: 5px solid #000080;}
+div.menu a {font-size: 90%; font-weight: bold;  display: inline; padding-top: 5px; padding-bottom: 2px; border-top: 1px solid #000080; color: #ffffff;}
+div.menu a:focus  {font-size: 150%; font-weight: bold;  display: inline; padding-top: 5px; padding-bottom: 2px; border-top: 1px solid #000080; color: #ffffff;}
+
+.focus  {font-size: 110%; font-weight: bold;  display: inline; padding-top: 5px; padding-bottom: 2px; border-top: 1px solid #000080; color: #ffffff;}
+
+a.menu-focus {font-size: 100%; font-weight: bold;  display: inline; padding-top: 5px; padding-bottom: 2px; border-top: 1px solid #808080; color: #ffffff;}
+
+div.menu a:hover {background-color: #f7fbff; text-decoration: none; color: #aaaaaa;}
+div.menu div.submenu a {font-weight: normal; font-size: 90%; padding-top: 1px; padding-bottom: 1px; border-top: none;}
+div.menu div.submenu a:hover {	background-color: transparent;	text-decoration: underline;	color: #ffffff;	font-weight: bold;}
+
+div.menw {color: #ffffff; border-bottom: 1px solid #efefef; width: 150px; font-size: 80%; }
+div.menw a {font-weight: bold; font-size: 80%; display: block; padding-top: 6px; padding-bottom: 2px; border-top: 1px solid #efefef; color: #8a8bb8;}
+div.menw a:hover {background-color: #0099cc; text-decoration: none; color: #ffffff;}
+div.menw div.submenw a {font-weight: normal; font-size: 85%; padding-top: 1px; padding-bottom: 1px; border-top: none;}
+div.menw div.submenw a:hover {	background-color: transparent;	text-decoration: none;	color: #008080;	font-weight: bold;	font-size: 85%;}
+
+
+div.menl {color: #444444; border-bottom: 0px solid #efefef; width: 100px; font-size: 90%; font-weight: bold; }
+div.menl a {font-weight: bold; font-size: 90%; display: block; padding-top: 6px; padding-bottom: 2px; border-top: 0px solid #efefef; color: #8a8bb8;}
+div.menl a:hover {background-color: #0099cc; text-decoration: none; color: #ffffff;}
+div.menl div.submenl a {color: #000080; font-weight: normal; font-size: 80%; padding-top: 2px; padding-bottom: 2px; border-top: 2px solid #efefef ;}
+div.menl div.submenl a:hover {	background-color: transparent;	text-decoration: none;	color: #008080;	font-weight: normal;	font-size: 80%;}
+
+
+div.menl div.submenl-a a {color: #a54aa5; font-weight: normal; font-size: 80%; padding-top: 1px; padding-bottom: 2px; border-top: 1px solid #efefef ; }
+div.menl div.submenl-a a:hover {	background-color: transparent;	text-decoration: none;	color: #a54aa5;	font-weight: normal;	font-size: 80%;}
+
+/* End  Left menu bar */
+
+.programme1 {  font-family: Arial, Helvetica, sans-serif; color: #990099; font-size: 110%; font-weight: bold}
+.programme2 { font-family: Arial, Helvetica, sans-serif; color: #6666FF; font-size: 110%; font-weight: bold }
+.programme3 { font-family: Arial, Helvetica, sans-serif; color: #a54aa5; font-size: 110%; font-weight: bold }
+.sdu { font-family: Arial, Helvetica, sans-serif; color: #a594c6; font-size: 110%; font-weight: bold }
+.peu { font-family: Arial, Helvetica, sans-serif; color: #d6946b; font-size: 110%; font-weight: bold }
+.sme { font-family: Arial, Helvetica, sans-serif; color: #c684a5; font-size: 110%; font-weight: bold }
+.cbr_os {font-family: Arial, Helvetica, sans-serif; color: #6699FF; font-size: 110%; font-weight: bold}
+.leftmenucap {  font-family: Arial, Helvetica, sans-serif; font-size: 120%; color: #ff6633; font-weight: bold}
+.leftmenu {  font-family: Arial, Helvetica, sans-serif; font-size: 100%; color: #ff6633;}
+.leftmenutext { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 105%; color: gray; font-weight: bold}
+a.currentpage {  font-family: Arial, Helvetica, sans-serif; color: #000000; font-weight: bold; background-color: #ff0000; }
+.news {  font-family: Arial, Helvetica, sans-serif; font-size: 90%; color: #ff6633; font-weight: bold}
+
+/* home page */
+p.homeheading {font-weight: bold; font-size: 80%; font-family: arial, helvetica, sans-serif;  
+color: #990000; margin: 6px 0 4px  0;}
+
+a.homemenu  {font-weight: bold; font-size: 130%; font-family: arial, helvetica, sans-serif;color: #003399; }
+a.homemenu2 {font-size: 70%;font-weight: lighter; font-style: italic; font-family: arial, helvetica, sans-serif; color: #444444;}
+a.homemenulist {font-weight: bold; font-size: 90%; font-family: arial, helvetica, sans-serif;}
+
+p.homealert {font-size: 80%; color: #990000; font-family: arial, helvetica, sans-serif;}
+p.homenews {font-size: 90%; font-family: arial, helvetica, sans-serif; color: #993366;}
+
+
+a:link {color: #003399; font-family: Arial, Helvetica, sans-serif;} 
+a       	  {        text-decoration:none;	color:	blue;   font-family: Arial, Helvetica,sans-serif;	}
+a.underlined  {  font-size: 90%; 	text-decoration:underline;	color:	blue;   font-family: Arial, Helvetica,sans-serif;	}
+/* a:visited   {color: #cc3333; font-family: Arial, Helvetica, sans-serif;} */
+a:active    {color: #cc0000; font-family: Arial, Helvetica, sans-serif;}  
+a:link:hover, a:visited:hover {text-decoration: underline; font-family: Arial, Helvetica,sans-serif;}
+
+
+
+a.bread {font-size: 80%; font-weight: normal;}
+a.univbread {font-size: 90%; font-weight: bold;}
+/*A.focus     {text-decoration:none;	background-color: #94c6ff; font:10pt Arial,sans-serif,red;	color: #000000;	}
+ A.menu	    {        text-decoration:none;	color:	black;                font:10pt Arial;	} */
+/*
+TD.menu    {text-decoration:none;	font:normal 10pt Arial, sans-serif;	color: #94c6ff;       }
+TD.bigmenu {text-decoration:none;	font:11pt  Arial,sans-serif;	color: #94c6ff;       }
+TD.big     {text-decoration:none;	font:13pt  Arial,sans-serif;	       }
+TD.vbig    {text-decoration:none;	font:24pt  Arial,sans-serif,black;	 }
+*/
+
+/* linux correction */
+.block {display: block;}
+.focus {font-weight: bold;	font: 86% Arial, sans-serif; color: #FF6633;  padding-top: 1px; padding-bottom: 2px; border-top: none;}
+
+.name    {	font: 135% Arial, sans-serif; color: black;	}
+.post    {	font: 100% Arial, sans-serif; color: #555555; font-weight: bold;	}
+.postb   {	font: 140% Arial, sans-serif; color: #555555; 	font-weight: bold;	}
+.postsm  {	font: 90% Arial, sans-serif; color: #555555;}
+.postmedb  {	font: 115% Arial, sans-serif; color: #006699; 	font-weight: bold;}
+.postvsm {	font: 85% Arial, sans-serif; color: #555555;}
+.post-align-right {	font: 110% Arial, sans-serif;	color: #555555;	text-align: right;}
+.newad   {	font: 120% Arial, sans-serif; color: #FF6633;}	
+
+
+.person-subheading   {	font: 110% Arial, sans-serif; color: #FF6633;}	
+H1{	font: 120% Arial, sans-serif; color: #333333;	}
+/*h1 {font-weight: bold; font-size: 120%; color: #990000; font-family: Arial, Helvetica, sans-serif;} */
+h2 {font-weight: bold; font-size: 115%; color: #333333; font-family: Arial, Helvetica, sans-serif;}
+h3{font-weight: bold; font-size: 110%; color: #333333; font-family: Arial, Helvetica, sans-serif;}
+h4 {font-weight: bold; font-size: 105%; color: #333333; font-family: Arial, Helvetica, sans-serif;}
+HR {
+	size: 1;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+/*   news styles  */
+.othernews { color: white; font-weight: bold; font-size: 80%;}
+
+/* topic headers   */
+.topic-bighead    {	font-family: Arial, Helvetica, sans-serif;	font-size: 120%;	color: #993366;	font-weight: bold;}
+.topic-head       {	font-family: Arial, Helvetica, sans-serif;	font-size: 110%;	color: #993366;	font-weight: bold;}
+.topic-norm       {	font-family: Arial, Helvetica, sans-serif;	font-size: 90%;	color: #993366;}
+.topic-subhead    {	font-family: Arial, Helvetica, sans-serif;	font-size: 100%;	color: #993366;	font-weight: bold;}
+.italic           { font-family:  Arial; font-size: 95%;	font-weight: normal;	color: #006699;	font-family: Arial, Helvetica, sans-serif;}
+.italic-sm          { font-family:  Arial; font-size: 85%;	font-weight: normal;	color: #006699;	font-family: Arial, Helvetica, sans-serif;}
+
+
+.bold             { font-weight: bold; }
+.bold-small       { font-weight: bold; font-size: 90%; color: #666666; font-family: Arial, Helvetica, sans-serif; }
+.normal           {	font-family: Arial, Helvetica, sans-serif;		color: #333333;}
+
+/*
+.normal-10 {	font-family: Arial, Helvetica, sans-serif;	font-size: 10px;}
+
+
+.normal-14 {	font-family: Arial, Helvetica, sans-serif;	font-size: 110%;	color: #333333;}
+.normal-16 {    font-family: Arial, Helvetica, sans-serif; font-size: 16px;	color: #555555;}
+*/
+.hplist p {margin: 0 0 3em 0; padding: 0;}
+.hpbox {width: 250px; margin: 20px 5px 20px 50px; font-size: 90%; text-align: right;}
+
+.aquaheaderx {	font-weight: bold;
+	font-size: 105%;
+	font-family:Arial;
+	color: #006699;
+	font-style: normal;
+}
+.aquaheader  { font-family:  Arial; font-size: 105%; font-weight: bold;	color: #006699;	font-family: Arial, Helvetica, sans-serif;}
+.aquanormal  { font-family:  Arial; font-size: 95%;	font-weight: normal;	color: #006699;	font-family: Arial, Helvetica, sans-serif;}
+.aquavsm  { font-family:  Arial; font-size: 75%;	font-weight: normal;	color: #006699;	font-family: Arial, Helvetica, sans-serif;}
+
+
+/*  contents on university import.css*/
+.hplist ul {margin: 0; padding: 0; list-style: none;}
+.hplist ul li {padding-top: 0em;}
+.hplist ul li ul li {padding-left: 1em; list-style: none;}
+
+.hplist p {margin: 0; padding: 0;}
+
+.forlist ul {margin: 0; padding: 5px; list-style: none; text-align: right;}
+.forlist ul li {padding-top: 0em;}
+
+.navlist ul {margin: 0; padding: 0; list-style: none;}
+.navlist ul li {padding-top: 6px; line-height: 80%;}
+.navlist ul li ul li {padding-left: 1em; padding-top: 1px; line-height: 80%; list-style: none;}
+
+.foot {float: left; font-size: 75%; color: #333333; font-family: Arial, Helvetica;}
+.rfoot {float: right; }

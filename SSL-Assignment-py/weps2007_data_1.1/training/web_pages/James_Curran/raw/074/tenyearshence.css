@@ -1,0 +1,191 @@
+/* Notre Dame Mendoza College of Business Style Settings - http://www.nd.edu/~cba/ */
+/* Created by Mendoza Web Group http://www.nd.edu/~cobweb/home */
+/* January 2005:  P. G. Corporon: corporon@nd.edu*/
+
+A:LINK {
+	text-decoration : underline;
+	color : #003565;
+}
+
+A:HOVER {
+	color : #999999;
+	text-decoration : none;
+}
+
+A:VISITED {
+	text-decoration: underline;
+	color : #666666;
+}
+
+A:VISITED:HOVER {
+	color : #666666;
+	text-decoration : none;
+}
+
+body {
+	margin-top: 2px;
+	margin-right: 2px;
+	background-color: #FFFFFF;
+}
+/* background image classes */
+.norepeat {
+	background-repeat: no-repeat;
+}
+
+.bgxrepeat {
+	background-repeat : repeat-x;
+}
+
+.bgyrepeat {
+	background-repeat : repeat-y;
+}
+
+.nobgimg {
+	background-image : none;
+}
+
+/* end background image classes */
+
+.title {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	letter-spacing: 8px;
+	color: #003366;
+}
+.text {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333333;
+}
+	a.text:link {color: #333333; text-decoration: underline;}
+	a.text:visited {color: #333333; text-decoration: underline;}
+	a.text:hover {color: #666666; text-decoration: none;}
+	a.text:visited:hover {color : #666666; text-decoration: none;}
+
+.textGray {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #666666;
+}
+	a.textGray:link {color: #666666; text-decoration: underline;}
+	a.textGray:visited {color: #666666; text-decoration: underline;}
+	a.textGray:hover {color: #666666; text-decoration: none;}
+	a.textGray:visited:hover {color : #666666; text-decoration: none;
+}
+.copyright {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 7pt;
+	font-weight: normal;
+	color: #333333;
+}
+	a.copyright:link {color: #333333; text-decoration: none;}
+	a.copyright:visited {color: #333333; text-decoration: none;}
+	a.copyright:hover {color: #333333; text-decoration: underline;}
+	a.copyright:visited:hover {color : #333333; text-decoration: underline;}
+
+.textSpread {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #333333;
+	letter-spacing: 5px;
+}
+.textMenu {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #333333;
+}
+	a.textMenu:link {color: #333333; text-decoration: underline;}
+	a.textMenu:visited {color: #333333; text-decoration: underline;}
+	a.textMenu:hover {color: #FFCC00; text-decoration: none;}
+	a.textMenu:visited:hover {color : #FFCC00; text-decoration: none;}
+
+.textBold {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333333;
+	line-height: 15px;
+	font-weight: bold;
+}
+.leftMenuTitle {
+	font : bold 10px Verdana, Arial, Helvetica, sans-serif;
+	color : #990000;
+	font-size: 12px;
+}
+	a.leftMenuTitle:link {color: #990000; text-decoration: underline;}
+	a.leftMenuTitle:visited {color: #990000; text-decoration: underline;}
+	a.leftMenuTitle:hover {color: #FF8080; text-decoration: none;}
+	a.leftMenuTitle:visited:hover {color : #FF8080; text-decoration: none;}
+.verticalLine {
+	border-left: #847970;
+	border-left-style: solid;
+	border-left-width: 1px;
+}
+.verticalLineRight {
+	border-right: #847970;
+	border-right-style: solid;
+	border-right-width: 1px;
+}
+.textSpreadBold {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #333333;
+	letter-spacing: 5px;
+	font-weight: bold;
+
+}
+.header {
+
+	font : bold 11px Verdana, Arial, Helvetica, sans-serif;
+	color : #003565;
+}
+.article1Title {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #990000;
+	line-height: 14px;
+	font-weight: bold;
+	border: 1px solid #999999;
+}
+.article1Text {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333333;
+	line-height: 15px;
+}
+	a.article1Text:link {color: #333333; text-decoration: none;}
+	a.article1Text:visited {color: #333333; text-decoration: none;}
+	a.article1Text:hover {color: #666666; text-decoration: underline;}
+	a.article1Text:visited:hover {color : #666666; text-decoration: underline;}
+
+.article1TextBold {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333333;
+	line-height: 15px;
+	font-weight: bold;
+}
+	a.article1TextBold:link {color: #333333; text-decoration: none;}
+	a.article1TextBold:visited {color: #333333; text-decoration: none;}
+	a.article1TextBold:hover {color: #666666; text-decoration: underline;}
+	a.article1TextBold:visited:hover {color : #666666; text-decoration: underline;}
+
+.article1TextBoldBlue {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #003565;
+	font-weight: bold;
+}
+.caption {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-weight: normal;
+	color: #333333;
+	font-style: italic;
+}
+.horizontalLineBottom {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #847970;
+}

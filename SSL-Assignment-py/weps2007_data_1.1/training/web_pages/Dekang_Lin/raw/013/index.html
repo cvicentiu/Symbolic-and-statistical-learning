@@ -1,0 +1,1725 @@
+
+
+
+
+
+	
+
+
+
+
+
+
+
+	
+	
+	  	
+		
+			
+		
+	
+	
+	
+	
+	  	
+		
+			
+		
+	
+	
+
+
+
+   
+
+
+
+
+		
+<style>
+.note-header-text {font-family: Times, Times New Roman, serif;
+		color:#ff0000; font-size: .95em;
+		margin-left: .75em; margin-right: .75em;}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 	
+	
+		
+		
+		
+					
+			
+				
+				  	
+				
+			
+				
+		    
+		
+		
+		
+		
+		
+		
+		
+	 
+
+
+
+	
+	
+	
+	
+	
+	
+	
+		
+  
+
+
+	
+	
+  
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+	
+		
+		
+   	 
+
+
+
+
+ 	
+ 	
+	
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<LINK REL=STYLESHEET TYPE="text/css" HREF="http://portal.acm.org/css/dl.css">
+<title>Induction of semantic classes from natural language text</title>
+<style type="text/css"><!--
+    body {margin-left: 0em; margin-top: 0}
+    a:link {text-decoration: underline; 	Color: #006699;}
+    a:visited  { color: #990033; text-decoration: underline;}
+    a:hover {color: red; text-decoration: none}
+    a.dLink1:link {color:#336699}
+    a.dLink1:visited {color:#666666}
+	a.isblack:link {text-decoration: underline; 	Color: #000000;}
+    a.isblack:visited  { color: #000000; text-decoration: underline;}
+    a.isblack:hover {color: #000000; text-decoration: none}
+    h1 {font-size: 140%; margin-bottom: 0}
+	ul {margin-top: .25em; list-style-type: disc}
+	ol {margin-top: .25em;}
+	li {padding-bottom: .25em}
+    h2 {color: white; background-color: #069; 
+        font-size: 100%; padding-left: 1em;
+		margin: 0}
+	h3 {color: black; background-color: yellow; 
+    	font-size: 100%;
+		margin: 0}
+	 h4 {color: black; background-color: #99c5e8; 
+        font-size: 100%;
+		margin: 0}
+    hr {color: #39176d;}
+    form {margin-top: 10}
+    form.xrs {margin-top: 0}
+	
+	a {text-decoration: none; }
+	
+	input {font-size: 1em;}
+	.chevron {color: #ff0000;}
+	.light-blue {color:#336699;}
+	.black {color:#000000;}
+	
+	/* ### standard text styles, smallest to largest ### */
+	
+	.footer-link-text {font-family: Arial, Helvetica, sans-serif;
+		color:#336699; font-size: .75em; line-height: 1.33em;
+		text-indent: -.75 em; margin-left: 2em; margin-right: .75em;}
+		
+	.footer-copy-text {font-family: Arial, Helvetica, sans-serif;
+		color:#000000; font-size: .75em; line-height: 1.3em;
+		margin-left: .75em; margin-right: .75em;}
+		
+	.small-link-text {font-family: Arial, Helvetica, sans-serif;
+		color:#000000; font-size: .83em; padding-bottom : 2px;
+	  	padding-top : 2px;}
+
+	.smaller-text {font-family: Arial, Helvetica, sans-serif;
+		color:#000000; font-size: .75em;}		
+	.small-text {font-family: Arial, Helvetica, sans-serif;
+		color:#000000; font-size: .83em;}
+	.medium-text {font-family: Arial, Helvetica, sans-serif;
+		color:#000000; font-size: 1em;}
+	.mediumb-text {font-family: Arial, Helvetica, sans-serif;
+		color:#000000; font-size: 1em; font-weight: bold;}
+	.large-text {font-family: Arial, Helvetica, sans-serif;
+		color:#000000; font-size: 1.3em;}		
+	
+	.list-link-text {font-family: Arial, Helvetica, sans-serif;
+		color:#336699; font-size: .83em; line-height: 1.3em;}
+	.list-link-btext {font-family: Arial, Helvetica, sans-serif;
+		color:#000000; font-size: .83em; line-height: 1.3em;}
+	
+	.searchbox-text {font-family: Arial, Helvetica, sans-serif;
+		color:#000066; font-size: 1em; font-weight: bold;}
+	.footer-header-text {font-family: Arial, Helvetica, sans-serif;
+		color:#000066; font-size: 1em; font-weight: bold;
+		margin-left: .75em; margin-right: .75em;}
+	.medium-link-text {font-family: Arial, Helvetica, sans-serif;
+		color:#000066; font-size: 1em; font-weight: bold; line-height: 1em;
+		text-indent: -1.25em; margin-left: 2em; margin-right: .75em;}
+	
+	
+	.small-copy-text {font-family: Times, Times New Roman, serif;
+		color:#000066; font-size: .75em; line-height: 1.2em;
+		margin-left: .75em; margin-right: .75em;}
+
+	.medium-copy-text {font-family: Times, Times New Roman, serif;
+		color:#000066; font-size: 1em; line-height: 1.2em;
+		margin-left: .75em; margin-right: .75em;}
+	
+	.large-copy-text {font-family: Times, Times New Roman, serif;
+		color:#000066; font-size: 1.3em; line-height: 1.5em;
+		margin-left: .75em; margin-right: .75em;}
+	
+	.medium-header-text {font-family: Times, Times New Roman, serif;
+		color:#ff0000; font-size: 1em;
+		margin-left: .75em; margin-right: .75em;}
+	
+	.large-header-text {font-family: Times, Times New Roman, serif;
+		color:#ff0000; font-size: 1.5em;
+		margin-left: .75em; margin-right: .75em;}
+
+  --></style>
+ 
+<SCRIPT LANGUAGE="JavaScript">
+ /* <!-- Begin
+	if(document.layers || document.all) {
+	a = 1;
+	setInterval("Jump()", 10);
+	}
+	function Jump() {
+	a = a + 1;
+	//self.moveBy((Math.random() * a * 2 - a), (Math.random() * a * 2) - a);
+	}
+//  End --> */
+</script>
+<script type="text/javascript" src="http://portal.acm.org/CFIDE/scripts/cfform.js"></script>
+<script type="text/javascript" src="http://portal.acm.org/CFIDE/scripts/masks.js"></script>
+<script type="text/javascript">
+<!--
+    function  _CF_checkqiksearch(_CF_this)
+    {
+        //reset on submit
+        _CF_error_exists = false;
+        _CF_error_messages = new Array();
+        _CF_error_fields = new Object();
+        _CF_FirstErrorField = null;
+
+        //form element query required check
+        if( !_CF_hasValue(_CF_this['query'], "TEXT", false ) )
+        {
+            _CF_onError(_CF_this, "query", _CF_this['query'].value, "Please enter your Search Criteria");
+            _CF_error_exists = true;
+        }
+
+
+        //display error messages and return success
+        if( _CF_error_exists )
+        {
+            if( _CF_error_messages.length > 0 )
+            {
+                // show alert() message
+                _CF_onErrorAlert(_CF_error_messages);
+                // set focus to first form error, if the field supports js focus().
+                if( _CF_this[_CF_FirstErrorField].type == "text" )
+                { _CF_this[_CF_FirstErrorField].focus(); }
+
+            }
+            return false;
+        }else {
+            return true;
+        }
+    }
+//-->
+</script>
+</head>
+
+
+
+
+
+
+	
+	
+	
+	
+
+
+
+
+
+
+
+	
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+<body bgcolor="#ffffff" onload="window.focus(); ">
+<div align="center">
+<a name="CIT"></a>
+<table border="0" width="85%" cellspacing="0" cellpadding="0">
+<tr>
+<td>
+
+
+	
+		
+				
+				
+					
+				  
+		
+	 
+
+
+
+
+
+
+
+
+
+	
+		
+	  
+		
+
+	
+
+
+
+
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+	<tr valign="top">
+		<td width="1%" class="small-link-text" align="center"  background="http://portal.acm.org/images/horiz-bar.jpg"><img src="http://portal.acm.org/images/logo_acm_portal2.jpg" alt="ACM Portal" width="263" height="54" border="0" usemap="#PORT">
+			
+				<font color="white">
+				
+					Spain and Portugal Ebsco Open Consortium
+				
+				</font>
+			  
+		</td>
+		<td width="99%" align="left" class="small-link-text">
+			<table border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td>&nbsp;</td>
+				
+					<td class="small-link-text"><a href="https://campus.acm.org/Public/login_genpubqj.cfm?rdr=http://portal.acm.org/citation.cfm?id=502512.502558&promo=QJPUB&offering=200&form_type=PUB&CFID=12151804&CFTOKEN=11488251" class="small-link-text">Subscribe</a><span class="small-link-text">&nbsp;(Full Service)</span>&nbsp;&nbsp;&nbsp;</td>
+					<td class="small-link-text"><a href="https://portal.acm.org/poplogin.cfm?dl=GUIDE&coll=GUIDE&want_href=citation%2Ecfm%3Fid%3D502512%2E502558%26CFID%3D12151804%26CFTOKEN%3D11488251&CFID=12151804&CFTOKEN=11488251" class="small-link-text">Register</a><span class="small-link-text">&nbsp;(Limited Service, <font color="Red">Free</font>)</span>&nbsp;&nbsp;&nbsp;</td>
+				
+				<td class="small-link-text" valign="bot">
+					
+					
+		 					<a href="https://portal.acm.org/poplogin.cfm?dl=GUIDE&coll=GUIDE&want_href=citation%2Ecfm%3Fid%3D502512%2E502558%26CFID%3D12151804%26CFTOKEN%3D11488251&CFID=12151804&CFTOKEN=11488251" class="small-link-text">Login</a>
+					
+				</td>			
+			</tr>
+			</table>
+			
+			<table border="0" width="100%" cellspacing="0" cellpadding="0">
+				<form name="qiksearch" action="http://portal.acm.org/results.cfm?coll=GUIDE&amp;dl=GUIDE&amp;CFID=12151804&amp;CFTOKEN=11488251" method="post" target="_self" onsubmit="return _CF_checkqiksearch(this)">
+				<tr>
+					<td height="5"><img src="http://portal.acm.org/images/blanks.gif" width=1 height=1 alt="" border="0"></td>
+				</tr>
+				<input type="hidden" name="parser" value="Internet">
+				<tr>
+					<td class="small-link-text">&nbsp;</td>
+					<td class="small-link-text">
+						
+						  	
+						
+						<b>Search:</b>&nbsp;&nbsp;&nbsp;<input type="Radio" name="whichDL" value="acm" >The ACM Digital Library&nbsp;&nbsp;&nbsp;<input type="Radio" name="whichDL" value="guide" checked>The Guide
+						<br><input name="query" id="query" type="text" size="60"  class="pubdescr"  />&nbsp;&nbsp;
+						<input type="Image" alt="Search" name=Go src="http://portal.acm.org/images/search_small.jpg" border="0">
+					</td>
+				</tr>
+				</form>
+
+			</table>
+			
+		</td>
+	<!-- top nav END -->
+	</tr>
+	</table>
+	<table border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td height="12"><img src="http://portal.acm.org/images/blanks.gif" width=1 height=1 alt="" border="0"></td>
+	</tr>
+	</table>
+
+<map name="PORT" > 
+  <area shape="rect" coords="1,1,55,60" href="http://www.acm.org/" alt="ACM Home Page">
+  <area shape="rect" coords="65,1,300,78" href="http://portal.acm.org/portal.cfm?coll=GUIDE&amp;dl=GUIDE&amp;CFID=12151804&amp;CFTOKEN=11488251">
+</map>
+
+	
+
+<table border="0" width="100%" align="left">
+	<col width="40%">
+	<col width="60%">
+	<tr>
+		<td>
+			
+				<a href="http://portal.acm.org/guide.cfm?coll=GUIDE&amp;dl=GUIDE&amp;CFID=12151804&amp;CFTOKEN=11488251"><img src="http://portal.acm.org/images/acm_guide_bar_large2.jpg" width=350 height=25 alt="" border="0"></a>
+			
+		</td>
+ 		<td class="small-text" align="center">
+			<img src="http://portal.acm.org/images/feedback.gif" width="20" height="19" alt="Please provide us with feedback." border="0">&nbsp;<a href="http://portal.acm.org/survey/survey-ci.cfm?CFID=12151804&amp;CFTOKEN=11488251">Feedback</a>&nbsp;&nbsp;<a href="http://portal.acm.org/survey/survey-ci.cfm?CFID=12151804&amp;CFTOKEN=11488251">Report a problem</a>&nbsp;&nbsp;<a href="http://portal.acm.org/survey/survey-general.cfm?CFID=12151804&amp;CFTOKEN=11488251">Satisfaction survey</a>
+		</td>
+	</tr>
+	<tr>
+		<td height="6"><img src="http://portal.acm.org/images/blanks.gif" width=1 height=1 alt="" border="0"></td>
+	</tr>
+</table>
+</td>
+</tr>
+
+
+
+
+<tr>
+	<td colspan="3" valign="top" height="1" background="http://portal.acm.org/images/horiz-bar-long.jpg"></td>
+</tr>
+
+<tr>
+<td class="small-text">
+	<table border="0" width="100%"  cellpadding="2">
+		<col width="1%">
+		<col width="8%">
+		<col width="91%">
+	<tr>
+		<td class="medium-text" colspan="3"><strong>Induction of semantic classes from natural language text</strong></td>
+	</tr>
+					
+	
+		<tr valign="top">
+			
+			
+		</tr>
+		
+			<tr valign="top">
+				
+					<td class="small-text"><strong>Full text</strong></td>
+				 
+				<td class="smaller-text" colspan="2" >
+						
+							
+									 <A NAME="FullText" HREF="http://portal.acm.org/ft_gateway.cfm?id=502558&amp;type=pdf&amp;coll=GUIDE&amp;dl=GUIDE&amp;CFID=12151804&amp;CFTOKEN=11488251" target="_blank"><img src="http://portal.acm.org/images/pdf_logo.gif" width="16" height="16" alt="pdf format" border="0" hspace="1" align="texttop">Pdf</A>
+									 (486&nbsp;KB)
+							
+						   
+				</td>
+			</tr>
+		
+
+		<tr valign="top">
+			<td class="small-text"><strong>Source</strong></td>
+			<td class="small-text" colspan="2">
+			
+								
+										
+											
+											
+												
+										
+											
+											
+											
+												
+											
+											
+												
+												
+												
+													
+													
+												
+											
+												
+											
+											
+											    
+												
+												
+												
+												
+													
+													
+														
+												
+													
+													
+													
+														
+														
+														
+														
+														
+														<SPAN class="mediumb-text">Conference on Knowledge Discovery in Data</span>
+																			<a href="http://portal.acm.org/toc.cfm?id=SERIES939&amp;type=series&amp;coll=GUIDE&amp;dl=GUIDE&amp;CFID=12151804&amp;CFTOKEN=11488251" target="_self" class="small-link-text">archive</a><br>
+													  
+													<SPAN class="mediumb-text">Proceedings of the seventh ACM SIGKDD international conference on Knowledge discovery and data mining </span>
+										 								 <a href="http://portal.acm.org/toc.cfm?id=502512&amp;type=proceeding&amp;coll=GUIDE&amp;dl=GUIDE&amp;CFID=12151804&amp;CFTOKEN=11488251"  target="_self" class="small-link-text">table of contents</a><br>
+												  
+												<DIV class="small-text">
+													 San Francisco, California 
+												</div>
+											   
+										
+								
+		
+
+		
+		<div class="medium-text">
+			
+			
+			
+		</div>
+		
+		
+		    
+			
+			
+		
+
+			
+			
+			<div class="small-text">
+				 Pages: 317 - 322&nbsp;&nbsp;
+			</div>
+					
+			
+			
+			
+				<div class="small-text">
+					Year of Publication:&nbsp;2001
+				</div>
+			
+					
+			
+				<div class="small-text">
+				
+					
+						
+						
+							
+							
+						  
+					  
+					ISBN:1-58113-391-X
+				</div>
+				
+
+			
+			
+				
+					
+					
+					
+				
+					
+					
+					
+				
+					
+					
+					
+				
+					
+					
+					
+				
+					
+					
+					
+				
+			
+			
+		
+			 
+			  	
+			 
+			 
+		
+			
+				
+			</td>
+		</tr>
+		
+		
+		
+			<tr valign="top">
+				<td class="small-text">							
+										  	<strong>Authors</strong>
+										
+				</td>
+				
+				
+					
+					
+				<td colspan="2">
+				<div class="authors">
+					<table cellpadding="0" cellspacing="0">		
+					
+							<tr>
+							
+
+							
+							
+								<td class="small-text">
+
+									    <a href="http://portal.acm.org/results.cfm?query=author%3ADekang%20Lin&amp;querydisp=author%3ADekang%20Lin&amp;coll=GUIDE&amp;dl=GUIDE&amp;CFID=12151804&amp;CFTOKEN=11488251" target="_self">Dekang Lin</a>
+ 									 </td>
+								<td class="small-text">
+									
+										<small>&nbsp;University of Alberta, Edmonton, Alberta T6H 2E1 Canada</small>
+										
+								</td>
+							</tr>
+					
+							<tr>
+							
+
+							
+							
+								<td class="small-text">
+
+									    <a href="http://portal.acm.org/results.cfm?query=author%3APatrick%20Pantel&amp;querydisp=author%3APatrick%20Pantel&amp;coll=GUIDE&amp;dl=GUIDE&amp;CFID=12151804&amp;CFTOKEN=11488251" target="_self">Patrick Pantel</a>
+ 									 </td>
+								<td class="small-text">
+									
+										<small>&nbsp;University of Alberta, Edmonton, Alberta T6H 2E1 Canada</small>
+										
+								</td>
+							</tr>
+					
+					</table>	
+				</div>
+				</td>
+			</tr>
+			
+			
+		
+		
+			
+				<tr valign="top">
+					<td class="small-text"><strong>Sponsors</strong></td>
+					<td colspan="2">
+						<div class="sponsors">
+							
+								
+								
+								
+							
+								
+								
+								
+									
+									
+									
+										<a href=" http://www.acm.org/sigmod/" target="sponsor" title="Sponsor">SIGMOD</a>:
+									  								
+									 ACM Special Interest Group on Management of Data <br>
+								
+							
+								
+								
+								
+							
+								
+								
+								
+									
+									
+									
+									  	AAAI :
+																	
+									 American Association for Artificial Intelligence <br>
+								
+							
+						</div>
+					 </td>
+				</tr>
+			
+		
+		
+		
+		
+			
+			
+			
+			
+				
+					<tr valign="top">
+						<td class="small-text"><strong>Publisher</strong></td>
+						<td colspan="2">
+							<div class="publishers">
+								
+								
+								
+								
+								
+								
+									
+									
+									  	ACM Press &nbsp;
+									
+									
+										<small> New York, NY, USA </small>
+									
+								
+							</div>
+						</td>
+					</tr>
+				
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		</table>
+		
+		
+		
+		
+		
+		
+		
+ 
+ 		
+</td>
+</tr>
+
+
+<tr>
+<td>
+
+<!-- third main table: main content START -->
+	<table border="0" width="100%" cellspacing="0" cellpadding="0">
+	<tr>
+		<td height="6"><img src="http://portal.acm.org/images/blanks.gif" width=1 height=1 alt="" border="0"></td>
+	</tr>
+	<tr>
+		<td colspan="4" valign="top" height="1" background="http://portal.acm.org/images/horiz-bar-long.jpg"></td>
+	</tr>
+	<tr>
+		<td height="6"><img src="http://portal.acm.org/images/blanks.gif" width=1 height=1 alt="" border="0"></td>
+	</tr>
+
+	
+
+	<tr valign="top">
+	<!-- buttons -->
+		<td width="100%" colspan="4">
+	    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+		<col width="22%">
+	    <col width="78%">
+		<tr>
+			<td class="small-text"><b>Additional Information:</b></td>
+			<td>
+			<p class="small-text">
+				
+				
+					<a href="citation.cfm%3Fid=502512.502558.1.html#abstract">abstract</a>&nbsp;&nbsp;
+				
+				
+					<a href="citation.cfm%3Fid=502512.502558.1.html#references">references</a>&nbsp;&nbsp;
+				
+				
+					<a href="citation.cfm%3Fid=502512.502558.1.html#citings">citings</a>&nbsp;&nbsp;
+				
+				
+				
+					<a href="citation.cfm%3Fid=502512.502558.1.html#IndexTerms">index terms</a>&nbsp;&nbsp;
+				
+				
+				
+						<a href="citation.cfm%3Fid=502512.502558.1.html#collab">collaborative colleagues</a>&nbsp;&nbsp;
+				
+				
+				</p>
+			</td>
+		</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td height="6"><img src="http://portal.acm.org/images/blanks.gif" width=1 height=1 alt="" border="0"></td>
+	</tr>
+	
+	<tr valign="top">
+	<!-- buttons -->
+		<form name="popbinder">
+		<td width="100%" colspan="4">
+		
+		<table border="0" cellspacing="0" cellpadding="2" width="100%" >
+		  <col width="22%">
+		  <col width="78%">
+		  <tr valign="top">
+		  	<td class="small-text"><b>Tools and Actions:</b></td>
+			<td>
+			
+				
+					
+					
+					 
+					 
+					 
+				
+				
+							
+				
+			  
+			
+			<a href="http://portal.acm.org/results.cfm?query=502558&amp;querydisp=Similar%20to%3A%20Induction%20of%20semantic%20classes%20from%20natural%20language%20text&amp;coll=GUIDE&amp;dl=GUIDE&amp;CFID=12151804&amp;CFTOKEN=11488251" target="_self" class="small-link-text">Find similar Articles</a>&nbsp;&nbsp;
+
+			<a href="http://www.reviews.com/reviewer/quickreview/frameset_toplevel.cfm?bib_id=502558" target="reviews" class="small-link-text">Review this Article</a>&nbsp;&nbsp;
+			
+			
+			 	<br><a href="citation.cfm%3Fid=502512.502558.1.html#" onClick="window.alert('To use this Feature, you must login with your personal ACM Web Account.');" class="small-link-text">
+				Save this Article to a Binder</a><img src="http://portal.acm.org/images/blanks.gif" border="0" name="saved">
+			
+			&nbsp;&nbsp;
+			<span class="small-text">Display Formats:</span>
+			<a href="citation.cfm%3Fid=502512.502558.1.html#" onClick="window.open('popBibTex.cfm?id=502558&ids=SERIES939.502512.502558&types=series.proceeding.article&reqtype=article&coll=GUIDE&dl=GUIDE&CFID=12151804&CFTOKEN=11488251','BibTex','width=800,height=100,top=100,left=100,scrollbars=Yes,resizable=yes');" class="small-link-text">
+			BibTex</a>&nbsp;
+
+			<a href="citation.cfm%3Fid=502512.502558.1.html#" onClick="window.open('popendnotes.cfm?id=502558&ids=SERIES939.502512.502558&types=series.proceeding.article&reqtype=article&coll=GUIDE&dl=GUIDE&CFID=12151804&CFTOKEN=11488251','BibTex','width=800,height=100,top=100,left=100,scrollbars=Yes,resizable=yes');" class="small-link-text">
+			EndNote</a>
+
+			
+			 
+				<a href="citation.cfm%3Fid=502512.502558.1.html#" onClick="window.open('popacmref.cfm?id=502558&ids=SERIES939.502512.502558&types=series.proceeding.article&reqtype=article&coll=GUIDE&dl=GUIDE&CFID=12151804&CFTOKEN=11488251','BibTeX','width=800,height=100,top=100,left=100,scrollbars=Yes,resizable=yes');" class="small-link-text">
+			ACM Ref</a>
+			
+			
+			&nbsp;&nbsp;				
+			
+			</td>
+		</tr>
+		<tr>
+			<td height="10"><img src="http://portal.acm.org/images/blanks.gif" width=1 height=1 alt="" border="0"></td>
+		</tr>
+		
+		<tr valign="top">
+			<td class="small-text"><b>DOI Bookmark:</b></td>
+			<td class="small-text">
+				<small>Use this link to bookmark this Article:&nbsp;</small><a href="http://doi.acm.org/10.1145/502512.502558">http://doi.acm.org/10.1145/502512.502558</a><br><small><a href="http://www.doi.org/">What is a DOI?</a></small>
+			    
+			</td>
+		</tr> 
+		
+		</table>
+		
+		</td>
+		</form>
+	</tr>
+	<tr>
+		<td height="6"><img src="http://portal.acm.org/images/blanks.gif" width=1 height=1 alt="" border="0"></td>
+	</tr>
+	<tr>
+		<td colspan="4" valign="top" height="1" background="http://portal.acm.org/images/horiz-bar-long.jpg"></td>
+	</tr>
+	<tr>
+		<td height="6"><img src="http://portal.acm.org/images/blanks.gif" width=1 height=1 alt="" border="0"></td>
+	</tr>
+	</table>
+<!-- third main table: main content END -->
+			
+		
+		
+		  	<div class="abstract">
+			
+			
+			  	
+			 
+			 
+			
+			</div>
+		
+		
+		
+		
+		
+			<br>
+			<div class="abstract">
+			
+			<A HREF="citation.cfm%3Fid=502512.502558.1.html#CIT"><img name="top" src="http://portal.acm.org/images/arrowu.gif" hspace="10" border="0"></A><SPAN class=heading><A NAME="abstract">ABSTRACT</A></span>
+			
+			  	
+			 
+			 
+			
+				<p class="abstract">
+				 Many applications dealing with textual information require classification of words into semantic classes (or concepts). However, manually constructing semantic classes is a tedious task. In this paper, we present an algorithm, UNICON, for UNsupervised Induction of CONcepts. Some advantages of UNICON over previous approaches include the ability to classify words with low frequency counts, the ability to cluster a large number of elements in a high-dimensional space, and the ability to classify previously unknown words into existing clusters. Furthermore, since the algorithm is unsupervised, a set of concepts may be constructed for any corpus.
+				</p>
+			
+			
+			</div>
+		  
+			
+		
+			<br>
+			<div class="abstract">
+			
+			<A HREF="citation.cfm%3Fid=502512.502558.1.html#CIT"><img name="top" src="http://portal.acm.org/images/arrowu.gif" hspace="10" border="0"></A><SPAN class=heading><A NAME="references">REFERENCES</A></span>
+			<p class="abstract"><font color="Red">Note: OCR errors may be found in this Reference List extracted from the full text article.  ACM has opted to expose the complete List rather than only correct and linked references.</font></p>
+			
+			
+			  	
+					
+					
+					 
+					 
+					 
+				
+				
+								
+			  
+			
+			
+				<p class="abstract">
+				  1&nbsp;&nbsp;
+				  
+				  	
+		 			  <a href="http://portal.acm.org/citation.cfm?id=276314&amp;dl=GUIDE&amp;coll=GUIDE&amp;CFID=12151804&amp;CFTOKEN=11488251">
+					 
+				  
+				  Rakesh Agrawal , Johannes Gehrke , Dimitrios Gunopulos , Prabhakar Raghavan, Automatic subspace clustering of high dimensional data for data mining applications, Proceedings of the 1998 ACM SIGMOD international conference on Management of data, p.94-105, June 01-04, 1998, Seattle, Washington, United States
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				  2&nbsp;&nbsp;
+				  
+				  Arora, S. and Sagra, S. 1992. Approximating Clique is NP-Complete. In Proceedings of IEEE Symposium on Foundations of Computer Science. pp. 2.- 13.
+				  
+				</p>
+			
+				<p class="abstract">
+				  3&nbsp;&nbsp;
+				  
+				  Bomze, I. M., Budinich, M., Pardalos, P. M., and Pelillo, M. 1999. The maximum clique problem. Handbook of Combinatorial Optimization (Supplement Volume A). D.-Z. Du and P. M. Pardalos (Eds.). Kluwar Academic Publishers. Boston,/viA. pp. 1-74
+				  
+				</p>
+			
+				<p class="abstract">
+				  4&nbsp;&nbsp;
+				  
+				  	
+		 			  <a href="http://portal.acm.org/citation.cfm?id=205363&amp;dl=GUIDE&amp;coll=GUIDE&amp;CFID=12151804&amp;CFTOKEN=11488251">
+					 
+				  
+				  Hsinchun Chen , Tak Yim , David Fye , Bruce Schatz, Automatic thesaurus generation for an electronic community system, Journal of the American Society for Information Science, v.46 n.3, p.175-193, April 1995
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				  5&nbsp;&nbsp;
+				  
+				  	
+		 			  <a href="http://portal.acm.org/citation.cfm?id=133180&amp;dl=GUIDE&amp;coll=GUIDE&amp;CFID=12151804&amp;CFTOKEN=11488251">
+					 
+				  
+				  Carolyn J. Crouch , Bokyung Yang, Experiments in automatic statistical thesaurus construction, Proceedings of the 15th annual international ACM SIGIR conference on Research and development in information retrieval, p.77-88, June 21-24, 1992, Copenhagen, Denmark
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				  6&nbsp;&nbsp;
+				  
+				  	
+		 			  <a href="http://portal.acm.org/citation.cfm?id=527911&amp;dl=GUIDE&amp;coll=GUIDE&amp;CFID=12151804&amp;CFTOKEN=11488251">
+					 
+				  
+				  Gregory Grefenstette, Explorations in Automatic Thesaurus Discovery, Kluwer Academic Publishers, Norwell, MA, 1994
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				  7&nbsp;&nbsp;
+				  
+				  	
+		 			  <a href="http://portal.acm.org/citation.cfm?id=990863&amp;dl=GUIDE&amp;coll=GUIDE&amp;CFID=12151804&amp;CFTOKEN=11488251">
+					 
+				  
+				  Sanda M. Harabagiu , Marius A. Pa&#351;ca , Steven J. Maiorano, Experiments with open-domain textual Question Answering, Proceedings of the 18th conference on Computational linguistics, p.292-298, July 31-August 04, 2000, Saarbr&#252;cken, Germany
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				  8&nbsp;&nbsp;
+				  
+				  Harris, Z. 1985. Distributional Structure. In: Katz, J. J. (ed.) The Philosophy of Linguistics. New York: Oxford University Press. pp. 26-47.
+				  
+				</p>
+			
+				<p class="abstract">
+				  9&nbsp;&nbsp;
+				  
+				  Hays, D. 1964. Dependency Theory: a Formalism and Some Observations. Language, 40:511-525.
+				  
+				</p>
+			
+				<p class="abstract">
+				  10&nbsp;&nbsp;
+				  
+				  Hudson, R. 1984. Word Grammar. Basil Blackwell Publishers Limited. Oxford, England.
+				  
+				</p>
+			
+				<p class="abstract">
+				  11&nbsp;&nbsp;
+				  
+				  Jing, Y. and Croft, W. B. 1994. An Association Thesaurus for Information Retrieval. In Proceedings of RIAO-94. pp. 146-160. New York.
+				  
+				</p>
+			
+				<p class="abstract">
+				  12&nbsp;&nbsp;
+				  
+				  Lin, D. 1998a. Extracting Collocations from Text Corpora. Workshop on Computational Terminology. pp. 57-63. Montreal, Canada.
+				  
+				</p>
+			
+				<p class="abstract">
+				  13&nbsp;&nbsp;
+				  
+				  	
+		 			  <a href="http://portal.acm.org/citation.cfm?id=980696&amp;dl=GUIDE&amp;coll=GUIDE&amp;CFID=12151804&amp;CFTOKEN=11488251">
+					 
+				  
+				  Dekang Lin, Automatic retrieval and clustering of similar words, Proceedings of the 17th international conference on Computational linguistics, p.768-774, August 10-14, 1998, Montreal, Quebec, Canada
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				  14&nbsp;&nbsp;
+				  
+				  	
+		 			  <a href="http://portal.acm.org/citation.cfm?id=991970&amp;dl=GUIDE&amp;coll=GUIDE&amp;CFID=12151804&amp;CFTOKEN=11488251">
+					 
+				  
+				  Dekang Lin, PRINCIPAR: an efficient, broad-coverage, principle-based parser, Proceedings of the 15th conference on Computational linguistics, August 05-09, 1994, Kyoto, Japan
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				  15&nbsp;&nbsp;
+				  
+				  	
+		 			  <a href="http://portal.acm.org/citation.cfm?id=347123&amp;dl=GUIDE&amp;coll=GUIDE&amp;CFID=12151804&amp;CFTOKEN=11488251">
+					 
+				  
+				  Andrew McCallum , Kamal Nigam , Lyle H. Ungar, Efficient clustering of high-dimensional data sets with application to reference matching, Proceedings of the sixth ACM SIGKDD international conference on Knowledge discovery and data mining, p.169-178, August 20-23, 2000, Boston, Massachusetts, United States
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				  16&nbsp;&nbsp;
+				  
+				  Melcuk, I.A. 1987. Dependency Syntax: theory and practice. State University of New York Press. Albany, NY.
+				  
+				</p>
+			
+				<p class="abstract">
+				  17&nbsp;&nbsp;
+				  
+				  	
+		 			  <a href="http://portal.acm.org/citation.cfm?id=241312&amp;dl=GUIDE&amp;coll=GUIDE&amp;CFID=12151804&amp;CFTOKEN=11488251">
+					 
+				  
+				  Young C. Park , Key-Sun Choi, Automatic thesaurus construction using Bayesian networks, Information Processing and Management: an International Journal, v.32 n.5, p.543-553, Sept. 1996
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				  18&nbsp;&nbsp;
+				  
+				  Resnik, P. 1998. Semantic Similarity in a Taxonomy: An Information-Based Measure and its Application to Problems of Ambiguity in Natural Language. Journal of Al Research, 11:95-130.
+				  
+				</p>
+			
+				<p class="abstract">
+				  19&nbsp;&nbsp;
+				  
+				  	
+		 			  <a href="http://portal.acm.org/citation.cfm?id=636726&amp;dl=GUIDE&amp;coll=GUIDE&amp;CFID=12151804&amp;CFTOKEN=11488251">
+					 
+				  
+				  G. Salton , C. Buckley , C. T. Yu, An evaluation of term dependence models in information retrieval, Proceedings of the 5th annual ACM conference on Research and development in information retrieval, p.151-173, May 18-20, 1982, West Berlin, Germany
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				  20&nbsp;&nbsp;
+				  
+				  	
+		 			  <a href="http://portal.acm.org/citation.cfm?id=992782&amp;dl=GUIDE&amp;coll=GUIDE&amp;CFID=12151804&amp;CFTOKEN=11488251">
+					 
+				  
+				  Roman Yangarber , Ralph Grishman , Pasi Tapanainen , Silja Huttunen, Automatic acquisition of domain knowledge for Information Extraction, Proceedings of the 18th conference on Computational linguistics, July 31-August 04, 2000, Saarbr&#252;cken, Germany
+				  </a>
+				</p>
+			
+			
+			</div>
+		
+		
+		
+			<br>
+			<div class="abstract">
+			
+			<A HREF="citation.cfm%3Fid=502512.502558.1.html#CIT"><img name="top" src="http://portal.acm.org/images/arrowu.gif" hspace="10" border="0"></A><SPAN class=heading><A NAME="citings">CITINGS</A>&nbsp;&nbsp;<i>7</i></span>
+			
+			
+			  	
+					
+					
+					 
+					 
+					 
+				
+				
+									
+				
+			  
+			
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1072198&amp;dl=GUIDE&amp;coll=GUIDE&amp;CFID=12151804&amp;CFTOKEN=11488251">
+				  
+					Dekang Lin, LaTaT: language and text analysis tools, Proceedings of the first international conference on Human language technology research, p.1-6, March 18-21, 2001, San Diego
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1072372&amp;dl=GUIDE&amp;coll=GUIDE&amp;CFID=12151804&amp;CFTOKEN=11488251">
+				  
+					Dekang Lin , Patrick Pantel, Concept discovery from text, Proceedings of the 19th international conference on Computational linguistics, p.1-7, August 24-September 01, 2002, Taipei, Taiwan
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1118746&amp;dl=GUIDE&amp;coll=GUIDE&amp;CFID=12151804&amp;CFTOKEN=11488251">
+				  
+					Gideon S. Mann, Fine-grained proper noun ontologies for question answering, COLING-02 on SEMANET: building and using semantic networks, p.1-7, September 01, 2002
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1150441&amp;dl=GUIDE&amp;coll=GUIDE&amp;CFID=12151804&amp;CFTOKEN=11488251">
+				  
+					Qiaozhu Mei , Dong Xin , Hong Cheng , Jiawei Han , ChengXiang Zhai, Generating semantic annotations for frequent patterns with context analysis, Proceedings of the 12th ACM SIGKDD international conference on Knowledge discovery and data mining, August 20-23, 2006, Philadelphia, PA, USA
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=775138&amp;dl=GUIDE&amp;coll=GUIDE&amp;CFID=12151804&amp;CFTOKEN=11488251">
+				  
+					Patrick Pantel , Dekang Lin, Discovering word senses from text, Proceedings of the eighth ACM SIGKDD international conference on Knowledge discovery and data mining, July 23-26, 2002, Edmonton, Alberta, Canada
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1075188&amp;dl=GUIDE&amp;coll=GUIDE&amp;CFID=12151804&amp;CFTOKEN=11488251">
+				  
+					Huihsin Tseng, Semantic classification of Chinese unknown words, Proceedings of the 41st Annual Meeting on Association for Computational Linguistics, p.72-79, July 07-12, 2003, Sapporo, Japan
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1122629&amp;dl=GUIDE&amp;coll=GUIDE&amp;CFID=12151804&amp;CFTOKEN=11488251">
+				  
+					
+				  </a>
+				</p>
+			
+			
+			</div>
+		
+
+		
+			
+			
+			  	
+			 
+			 
+			
+		
+		
+		
+		  	<br>
+			<div class="indterms">
+			
+			<A HREF="citation.cfm%3Fid=502512.502558.1.html#CIT"><img name="top" src="http://portal.acm.org/images/arrowu.gif" hspace="10" border="0"></A><SPAN class=heading><A NAME="IndexTerms">INDEX TERMS</A></span>
+			
+				
+					<p class="Categories">
+						<SPAN class=heading><A NAME="GenTerms">Primary Classification:</A></span>
+						
+						  	
+						
+						
+						
+							<br>&nbsp;
+							
+							
+								  
+									
+									
+									
+									<b>I.</b>
+									
+									
+									    
+									 
+									<a href="http://portal.acm.org/results.cfm?query=CCS%3AI%2E%2A&amp;coll=GUIDE&amp;dl=GUIDE&amp;CFID=12151804&amp;CFTOKEN=11488251" target="_self">
+									Computing Methodologies</a><br>
+								  
+							
+								  
+									
+									
+										&nbsp;
+									
+									
+										<img src="http://portal.acm.org/images/tree.gif" border="0" height="20" width="20">
+									
+									<b>I.2</b>
+									
+									
+										
+									  
+									<a href="http://portal.acm.org/results.cfm?query=CCS%3A%22I%2E2%22&amp;coll=GUIDE&amp;dl=GUIDE&amp;CFID=12151804&amp;CFTOKEN=11488251" target="_self">
+									 ARTIFICIAL INTELLIGENCE</a><br>
+								  
+							
+								  
+									
+									
+										&nbsp;
+									
+										&nbsp;
+									
+										&nbsp;
+									
+									
+										<img src="http://portal.acm.org/images/tree.gif" border="0" height="20" width="20">
+									
+									<b>I.2.7</b>
+									
+									
+										
+									  
+									<a href="http://portal.acm.org/results.cfm?query=CCS%3A%22I%2E2%2E7%22&amp;coll=GUIDE&amp;dl=GUIDE&amp;CFID=12151804&amp;CFTOKEN=11488251" target="_self">
+									 Natural Language Processing</a><br>
+								  
+							
+								
+									  	
+										
+										
+											
+											
+												&nbsp;
+											
+												&nbsp;
+											
+												&nbsp;
+											
+												&nbsp;
+											
+												&nbsp;
+											
+											
+												<img src="http://portal.acm.org/images/tree.gif" border="0" height="20" width="20">
+											 
+											<b>Subjects:</b>
+										    
+												<a href="http://portal.acm.org/results.cfm?query=CCS%3A%22Language%20models%22&amp;coll=GUIDE&amp;dl=GUIDE&amp;CFID=12151804&amp;CFTOKEN=11488251" target="_self">Language models</a>
+											
+										
+										<br>
+										
+								
+							
+						
+					 </p>
+				  
+				
+				  <p class="Categories">
+					<SPAN class=heading><A NAME="GenTerms">Additional&nbsp;Classification:</A></span>
+					 
+					  	
+					 
+					 
+					
+							<br>&nbsp;
+							
+							
+								 
+									
+									
+									 
+									<b>H.</b>
+									
+									    
+									 
+									<a href="http://portal.acm.org/results.cfm?query=CCS%3AH%2E%2A&amp;coll=GUIDE&amp;dl=GUIDE&amp;CFID=12151804&amp;CFTOKEN=11488251" target="_self">
+									Information Systems</a><br>
+								 
+							
+								 
+									
+									
+										&nbsp;
+									
+									
+										<img src="http://portal.acm.org/images/tree.gif" border="0" height="20" width="20">
+									 
+									<b>H.2</b>
+									
+										
+									  
+									<a href="http://portal.acm.org/results.cfm?query=CCS%3A%22H%2E2%22&amp;coll=GUIDE&amp;dl=GUIDE&amp;CFID=12151804&amp;CFTOKEN=11488251" target="_self">
+									 DATABASE MANAGEMENT</a><br>
+								 
+							
+								 
+									
+									
+										&nbsp;
+									
+										&nbsp;
+									
+										&nbsp;
+									
+									
+										<img src="http://portal.acm.org/images/tree.gif" border="0" height="20" width="20">
+									 
+									<b>H.2.4</b>
+									
+										
+									  
+									<a href="http://portal.acm.org/results.cfm?query=CCS%3A%22H%2E2%2E4%22&amp;coll=GUIDE&amp;dl=GUIDE&amp;CFID=12151804&amp;CFTOKEN=11488251" target="_self">
+									 Systems</a><br>
+								 
+							
+								
+								  	
+									
+									
+										
+										
+											&nbsp;
+										
+											&nbsp;
+										
+											&nbsp;
+										
+											&nbsp;
+										
+											&nbsp;
+										
+										
+											<img src="http://portal.acm.org/images/tree.gif" border="0" height="20" width="20">
+										 
+										<b>Subjects:</b>
+									    
+											<a href="http://portal.acm.org/results.cfm?query=CCS%3A%22Textual%20databases%22&amp;coll=GUIDE&amp;dl=GUIDE&amp;CFID=12151804&amp;CFTOKEN=11488251" target="_self">Textual databases</a>
+										
+									
+									<br>
+									
+								
+							
+					
+							<br>&nbsp;
+							
+							
+								 
+									
+									
+									 
+									<b>I.</b>
+									
+									    
+									 
+									<a href="http://portal.acm.org/results.cfm?query=CCS%3AI%2E%2A&amp;coll=GUIDE&amp;dl=GUIDE&amp;CFID=12151804&amp;CFTOKEN=11488251" target="_self">
+									 Computing Methodologies</a><br>
+								 
+							
+								 
+									
+									
+										&nbsp;
+									
+									
+										<img src="http://portal.acm.org/images/tree.gif" border="0" height="20" width="20">
+									 
+									<b>I.7</b>
+									
+										
+									  
+									<a href="http://portal.acm.org/results.cfm?query=CCS%3A%22I%2E7%22&amp;coll=GUIDE&amp;dl=GUIDE&amp;CFID=12151804&amp;CFTOKEN=11488251" target="_self">
+									 DOCUMENT AND TEXT PROCESSING</a><br>
+								 
+							
+								 
+									
+									
+										&nbsp;
+									
+										&nbsp;
+									
+										&nbsp;
+									
+									
+										<img src="http://portal.acm.org/images/tree.gif" border="0" height="20" width="20">
+									 
+									<b>I.7.5</b>
+									
+										
+									  
+									<a href="http://portal.acm.org/results.cfm?query=CCS%3A%22I%2E7%2E5%22&amp;coll=GUIDE&amp;dl=GUIDE&amp;CFID=12151804&amp;CFTOKEN=11488251" target="_self">
+									 Document Capture</a><br>
+								 
+							
+								
+								  	
+									
+									
+										
+										
+											&nbsp;
+										
+											&nbsp;
+										
+											&nbsp;
+										
+											&nbsp;
+										
+											&nbsp;
+										
+										
+											<img src="http://portal.acm.org/images/tree.gif" border="0" height="20" width="20">
+										 
+										<b>Subjects:</b>
+									    
+											<a href="http://portal.acm.org/results.cfm?query=CCS%3A%22Document%20analysis%22&amp;coll=GUIDE&amp;dl=GUIDE&amp;CFID=12151804&amp;CFTOKEN=11488251" target="_self">Document analysis</a>
+										
+									
+									<br>
+									
+								
+							
+					
+
+					</p>
+				   
+			
+				
+				<br>
+					<p class="GenTerms">
+						<SPAN class=heading><A NAME="GenTerms">General Terms:</A></span>
+						
+						  	
+						
+						
+						<BR>
+						 
+						
+							
+							<a href="http://portal.acm.org/results.cfm?query=genterm%3A%22Algorithms%22&amp;coll=GUIDE&amp;dl=GUIDE&amp;CFID=12151804&amp;CFTOKEN=11488251" target="_self">
+							Algorithms</a>,
+							
+						
+							
+							<a href="http://portal.acm.org/results.cfm?query=genterm%3A%22Design%22&amp;coll=GUIDE&amp;dl=GUIDE&amp;CFID=12151804&amp;CFTOKEN=11488251" target="_self">
+							 Design</a>,
+							
+						
+							
+							<a href="http://portal.acm.org/results.cfm?query=genterm%3A%22Performance%22&amp;coll=GUIDE&amp;dl=GUIDE&amp;CFID=12151804&amp;CFTOKEN=11488251" target="_self">
+							 Performance</a>
+							
+						
+					</p>
+				  
+				
+				
+				  		
+						  	
+						
+						
+				
+				
+			
+			</div>
+		 
+		
+		
+				
+		
+			<div class="abstract">
+				
+				<A HREF="citation.cfm%3Fid=502512.502558.1.html#CIT"><img name="top" src="http://portal.acm.org/images/arrowu.gif" hspace="10" border="0"></A><SPAN class=heading><A NAME="collab">Collaborative Colleagues:</A></span>
+				
+				<table border="0" style="margin-left: 2em" cellpadding="2">
+				
+				
+						<tr valign="top"><td><div class="abstract">Dekang Lin:</div></td><td>
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+							
+						
+					
+					
+						
+						
+						<div class="abstract">Colin Cherry</div>
+						
+					
+						
+						
+						<div class="abstract">Bonnie J. Dorr</div>
+						
+					
+						
+						
+						<div class="abstract">Bonnie Jean Dorr</div>
+						
+					
+						
+						
+						<div class="abstract">Randy Goebel</div>
+						
+					
+						
+						
+						<div class="abstract">Jye-hoon Lee</div>
+						
+					
+						
+						
+						<div class="abstract">Gina-Anne Levow</div>
+						
+					
+						
+						
+						<div class="abstract">Patrick Pantel</div>
+						
+					
+						
+						
+						<div class="abstract">Patrick Andre Pantel</div>
+						
+					
+						
+						
+						<div class="abstract">Sungki Suh</div>
+						
+					
+						</td>
+						</tr>
+				
+						<tr valign="top"><td><div class="abstract">Patrick Pantel:</div></td><td>
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+							
+						
+					
+					
+						
+						
+						<div class="abstract">Eduard Hovy</div>
+						
+					
+						
+						
+						<div class="abstract">Dekang Lin</div>
+						
+					
+						
+						
+						<div class="abstract">Andrew Philpot</div>
+						
+					
+						
+						
+						<div class="abstract">Andrew Philpot</div>
+						
+					
+						
+						
+						<div class="abstract">Andrew Philpot</div>
+						
+					
+						</td>
+						</tr>
+				
+				</table>
+			</div>
+						
+		
+		
+		
+		
+		
+		
+		
+			
+				
+				
+				
+			
+				
+				
+				
+			
+				
+				
+				
+			
+				
+				
+				
+			
+				
+				
+				
+			
+		
+				
+			
+  	
+
+
+
+
+<br>
+<DIV class=footer-copy-text align="center">
+	
+	The ACM Portal is published by the Association for Computing Machinery. Copyright © 2007 ACM, Inc.<br>
+	<A href="http://portal.acm.org/info/usage.cfm?CFID=12151804&CFTOKEN=11488251">Terms of Usage</A>&nbsp;&nbsp;
+	<A href="http://www.acm.org/serving/acm-privacy.html">Privacy Policy</A>&nbsp;&nbsp;
+	<A href="http://www.acm.org/constitution/code.html">Code of Ethics</A>&nbsp;&nbsp;	  
+	<A href="http://www.acm.org/key_people/">Contact Us</A>
+
+<br><br>
+Useful downloads: 
+<a href="http://www.adobe.com/products/acrobat/readstep2.html"><img src="http://portal.acm.org/images/pdf_logo.gif" width="16" height="16" alt="" border="0"> Adobe Acrobat</a>
+&nbsp;&nbsp;
+<a href="http://www.apple.com/quicktime/download/" target="_blank"><img src="http://portal.acm.org/images/qtlogo.gif" width="16" height="16" alt="" border="0"> QuickTime</a>
+&nbsp;&nbsp;
+<a href="http://www.microsoft.com/windows/windowsmedia/download/default.asp" target="_blank"><img src="http://portal.acm.org/images/wmv.gif" width="16" height="15" alt="" border="0"> Windows Media Player</a>
+&nbsp;&nbsp;
+<a href="http://www.real.com/" target="_blank"><img src="http://portal.acm.org/images/realplayer.gif" width="20" height="18" alt="" border="0"> Real Player</a>
+
+
+</DIV>
+
+</td>
+</tr>
+</table>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+/* style sheet Ref Css1.css         Phil Bowden */
+
+/* remember that partial urls are relative to this css, not the html document */
+
+/* basically normal lettering on a non-descript marble backgrounf */
+body { font-size: 12pt;
+       font-family: "Times New Roman";
+       color:        rgb(0%, 0%, 0%);
+       background:   url(../BF/BuffMarble.gif);
+       line-height:  14pt;
+       margin-left:  10pt;
+       margin-right: 10pt; 
+}
+
+/* tweak special colours for links */
+/* it appears that these aspects HAVE to apply to whole page */
+/* and can't be tweaked locally */
+
+/* a:link {color:    rgb(5%, 80%, 40%); } */
+/* a:visited {color: rgb(5%, 80%, 60%); } */
+/* a:active {color:  rgb(5%, 80%, 90%); } */
+
+
+/* Indentation for paragraphs */
+/* p { margin-left:  24pt;  
+    margin-right: 24pt; } */    
+
+
+/* tweak heading styles */
+h1 { font: 24pt ;
+     font-weight: bold;
+     line-height: 30pt; }
+
+h2 { font: 16pt ;
+     font-weight: bold;
+     color:        rgb(70%, 0%, 0%);
+     line-height: 16pt; }
+
+/* special overrides in <div> ...</div> regions */
+div.Grey7 { color: rgb(44%, 44%, 44%); }
+div.Grey7 { text-align: right; }
+
+/* special overrides in <div> ...</div> regions */
+div.Box1 { color: rgb(1%, 1%, 50%); }
+div.Box1 { font-size: 10pt; }
+div.Box1 { font-family: "Arial"; }
+
+/* put stuff right up against left hand margin */
+div.LeftMargin { margin-left:  -10pt; }  

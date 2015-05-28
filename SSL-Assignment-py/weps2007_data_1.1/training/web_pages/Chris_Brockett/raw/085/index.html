@@ -1,0 +1,1869 @@
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="style.css" rel="stylesheet" type="text/css">
+<script language="JavaScript">
+<!--
+var imgDir = '/images/';
+var d = document;
+var form1 = null;
+var useBrowser = false;
+var useReader = false;
+var expDate = 'Sun, 07-Jul-01 00:00:00 GMT';
+var thisUToken = '';
+setCookie();
+
+function setButtons() {
+   if ((form1) && (form1.webNews)) {
+     if (webNewsOn()) {
+	form1.webNews[0].checked = true;
+	form1.webNews[1].checked = false;
+     }
+     else {
+	form1.webNews[1].checked = true;
+	form1.webNews[0].checked = false;
+     }
+   }
+}
+
+function getUToken() {
+    if (useBrowser) {
+        var tokenStart = d.cookie.indexOf('utoken=') + 7;
+        var uToken = d.cookie.substr(tokenStart);
+        var tokenStop = uToken.indexOf(' ');
+        uToken = uToken.substr(0, tokenStop);
+        tokenStop = uToken.indexOf(';');
+        uToken = uToken.substr(0, tokenStop);
+        return uToken;
+    }
+    else {
+        return '';
+    }
+}
+
+function setWebNews() {
+   if ((form1) && (form1.webNews)) {
+      var loc = d.URL;
+      var query = '';
+      var startq = d.URL.indexOf('?');
+      if (startq > 0) {
+	  loc = d.URL.substr(0, startq);
+	  query = '&' + d.URL.substr(startq+1);
+	  if (query.indexOf('usebrowser=on') == 1) query = query.substr(14);
+	  if (query.indexOf('usebrowser=off') == 1) query = query.substr(15);
+      }
+      if (form1.webNews[0].checked) {
+	location.replace(loc + '?usebrowser=on' + query);
+      }
+      else if (form1.webNews[1].checked) {
+	location.replace(loc + '?usebrowser=off' + query);
+      }
+   }
+   return true;
+}
+
+function setCookie() {
+      if (d.URL.indexOf('usebrowser=on') > 0) {
+	useBrowser = true;
+	useReader = false;
+	d.cookie = "usebrowser=off; path=/; expires=" + expDate;
+	d.cookie = "usebrowser=on; path=/";
+      }
+      else if (d.URL.indexOf('usebrowser=off') > 0) {
+	useReader = true;
+	useBrowser = false;
+	d.cookie = "usebrowser=on; path=/; expires=" + expDate;
+	d.cookie = "usebrowser=off; path=/";
+      }
+}
+
+function webNewsOn() {
+   if (useBrowser) {return true;}
+   else if (useReader) {return false;}
+   else {
+      return ((d.cookie.indexOf('usebrowser=on') >= 0)
+	|| (!(d.cookie.indexOf('usebrowser=off') >=0) &&
+		(d.cookie.indexOf('webnews_user=') >=0)));
+   }
+}
+
+function showGroup(name) {
+   if ((form1) && (form1.webNews)) {
+     if (form1.webNews[0].checked) {
+	window.location = 'http://news2.vic.com/webnews?cmd=list&group=' 
+		+ name + '&utoken=' + thisUToken;
+        return false;
+	}
+     else {
+	return true;
+	}
+   }
+}
+
+function preload() { 
+  if (d.images) { 
+    if (!d.im) d.im = new Array();
+    var i, j = d.im.length, a = preload.arguments; 
+    for(i = 0; i < a.length; i++) {
+	  d.im[j] = new Image; 
+	  d.im[j++].src = imgDir + a[i];
+    }
+  }
+}
+
+function restore() {
+  var i, x, a=d.sr; 
+  for (i=0; a && (i < a.length) && (x=a[i]) && x.oSrc; i++) x.src = x.oSrc;
+}
+
+function swap(img, newsrc) {
+  var i=0, x; 
+  d.sr=new Array; 
+  if ((x = d[img]) != null) {
+	d.sr[i++] = x; 
+	if (!x.oSrc) x.oSrc = x.src; 
+	x.src = imgDir + newsrc;
+  }
+}
+
+function initPage() {
+  form1 = d.forms[0];
+  setButtons();
+  thisUToken = getUToken();
+}
+//-->
+</script>
+<script language="javascript">
+<!--
+
+var last_back, last_color;
+
+function menu_over( obj )
+{
+	last_back = obj.bgColor;
+	obj.style.background = '#e5ebf2';
+}
+
+function menu_out( obj )
+{
+	obj.style.background = last_back;
+}
+
+function changeon(tdself)   {	tdself.style.opacity =  .65;
+				tdself.style.filter = ('alpha(opacity=65)'); }
+function changeoff(tdself)  {	tdself.style.opacity =  1;
+				tdself.style.filter = ('none'); }
+//-->
+</script>
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="initPage()">
+<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="117" background="a_bg.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="123"><a href="http://www.newsville.com/"><img src="logo1.gif" width="123" height="117" border="0"></a></td>
+        <td width="247" bgcolor="#0e3b5a"><table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><a href="http://www.newsville.com/"><img src="usenet.gif" alt="Your Usenet newsgroup provider" width="183" height="46" border="0"></a></td>
+          </tr>
+          <tr>
+            <td><a href="http://www.newsville.com/"><img src="logo2.gif" alt="Newsville" width="247" height="71" border="0"></a></td>
+          </tr>
+        </table></td>
+        <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="124" align="right" bgcolor="#0e3b5a" style="padding-left:7px"><table width="124" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="17"><a href="http://www.newsville.com/about.html" class="tmenu1">About Newsville</a></td>
+              </tr>
+              <tr>
+                <td background="pnktr1.gif"><img src="x.gif" width="1" height="1"></td>
+              </tr>
+              <tr>
+                <td height="17"><a href="http://www.newsville.com/whats_new.html" class="tmenu1">What's New</a></td>
+              </tr>
+              <tr>
+                <td background="pnktr1.gif"><img src="x.gif" width="1" height="1"></td>
+              </tr>
+              <tr>
+                <td height="17"><a href="http://www.newsville.com/partnerships.html" class="tmenu1">Partnerships</a></td>
+              </tr>
+              <tr>
+                <td background="pnktr1.gif"><img src="x.gif" width="1" height="1"></td>
+              </tr>
+              <tr>
+                <td height="17"><a href="http://www.newsville.com/support" class="tmenu1">Support</a></td>
+              </tr>
+              <tr>
+                <td background="pnktr1.gif"><img src="x.gif" width="1" height="1"></td>
+              </tr>
+              <tr>
+                <td height="17"><a href="http://www.newsville.com/contact_us.html" class="tmenu1">Contact us</a></td>
+              </tr>
+              <tr>
+                <td background="pnktr1.gif"><img src="x.gif" width="1" height="1"></td>
+              </tr>
+              <tr>
+                <td height="17"><a href="http://www.newsville.com/cgi-bin/newsgrep-new" class="tmenu1">Search Newsgroups</a></td>
+              </tr>
+            </table></td>
+            <td width="4"><img src="x_white.gif" width="4" height="110"></td>
+            <td width="126" bgcolor="#b5c1cd" style="padding-right:6px"><table width="126" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="17" class="ttitl1" style="padding-left:15px">Services and</td>
+              </tr>
+              <tr>
+                <td background="pnktr1.gif"><img src="x.gif" width="1" height="1"></td>
+              </tr>
+              <tr>
+                <td height="17" class="ttitl1" style="padding-left:15px"> accounts:</td>
+              </tr>
+              <tr>
+                <td background="pnktr1.gif"><img src="x.gif.1" width="1" height="1"></td>
+              </tr>
+              <tr>
+                <td height="17" style="padding-left:15px"><a href="http://www.newsville.com/home.html" class="tmenu2">Personal</a></td>
+              </tr>
+              <tr>
+                <td background="pnktr1.gif"><img src="x.gif" width="1" height="1"></td>
+              </tr>
+              <tr>
+                <td height="17" style="padding-left:15px"><a href="http://www.newsville.com/business.html" class="tmenu2">Commercial</a></td>
+              </tr>
+              <tr>
+                <td background="pnktr1.gif"><img src="x.gif" width="1" height="1"></td>
+              </tr>
+              <tr>
+                <td height="17" style="padding-left:15px"><a href="http://www.newsville.com/isp.html" class="tmenu2">Service Providers</a></td>
+              </tr>
+              <tr>
+                <td background="pnktr1.gif"><img src="x.gif" width="1" height="1"></td>
+              </tr>
+              <tr>
+                <td height="17" style="padding-left:15px"><a href="http://www.newsville.com/custom.html" class="tmenu2">Custom Services</a></td>
+              </tr>
+            </table></td>
+            <td valign="top" bgcolor="#b5c1cd"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="4" valign="top"><img src="x_white.gif" width="4" height="43"></td>
+                <td align="right" bgcolor="#0e3b5a" style="padding-right:8px"><a href="http://www.newsville.com/"><img src="www.gif" alt="www.newsvillle.com" width="143" height="11" border="0"></a></td>
+              </tr>
+            </table></td>
+          </tr>
+        </table></td>
+        </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="191" valign="top" bgcolor="#f1f1f1"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td height="15" bgcolor="#FFFFFF"><img src="x.gif" width="1" height="15"></td>
+            </tr>
+            <tr>
+              <td height="18" bgcolor="#959595" class="ttitl1" style="padding-left:15px">About USENET Newsgroups</td>
+            </tr>
+            <tr>
+              <td height="18" class="cellbutton" onClick="window.location = '/what.html'" onMouseOver="menu_over( this )" onMouseOut="menu_out( this )"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td class="tmenu2" style="padding-left:25px"><a href="http://www.newsville.com/what.html" class="tmenu2"> What are newsgroups?</a><br></td>
+                    <td width="10"><img src="arw1.gif" width="6" height="5"></td>
+                  </tr>
+              </table></td>
+            </tr>
+            <tr>
+              <td height="2" background="line1.gif"><img src="line1.gif" width="1" height="2"></td>
+            </tr>
+            <tr>
+              <td height="18" class="cellbutton" onClick="window.location = '/news/usenet.faq.html'" onMouseOver="menu_over( this )" onMouseOut="menu_out( this )"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td class="tmenu2" style="padding-left:25px"><a href="http://www.newsville.com/news/usenet.faq.html" class="tmenu2"> USENET FAQ</a><br></td>
+                    <td width="10"><img src="arw1.gif" width="6" height="5"></td>
+                  </tr>
+              </table></td>
+            </tr>
+            <tr>
+              <td height="2" background="line1.gif"><img src="line1.gif" width="1" height="2"></td>
+            </tr>
+            <tr>
+              <td height="18" class="cellbutton" onClick="window.location = '/help.html'" onMouseOver="menu_over( this )" onMouseOut="menu_out( this )"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td class="tmenu2" style="padding-left:25px"><a href="http://www.newsville.com/help.html" class="tmenu2"> Help with group links</a><br></td>
+                    <td width="10"><img src="arw1.gif" width="6" height="5"></td>
+                  </tr>
+              </table></td>
+            </tr>
+            <tr>
+              <td height="18" bgcolor="#959595" class="ttitl1" style="padding-left:15px">Newsville Members</td>
+            </tr>
+            <tr>
+            <tr>
+              <td height="18" class="cellbutton" onClick="window.location = 'http://news2.newsville.com'" onMouseOver="menu_over( this )" onMouseOut="menu_out( this )"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td class="tmenu2" style="padding-left:25px"><a href="http://news2.newsville.com" class="tmenu2"> Web Login</a><br></td>
+                    <td width="10"><img src="arw1.gif" width="6" height="5"></td>
+                  </tr>
+              </table></td>
+            </tr>
+            <tr>
+              <td height="2" background="line1.gif"><img src="line1.gif" width="1" height="2"></td>
+            </tr>
+            <tr>
+              <td height="18" class="cellbutton" onClick="window.location = '/support'" onMouseOver="menu_over( this )" onMouseOut="menu_out( this )"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td class="tmenu2" style="padding-left:25px"><a href="http://www.newsville.com/support" class="tmenu2"> Support</a><br></td>
+                    <td width="10"><img src="arw1.gif" width="6" height="5"></td>
+                  </tr>
+              </table></td>
+            </tr>
+            <tr>
+              <td height="2" background="line1.gif"><img src="line1.gif" width="1" height="2"></td>
+            </tr>
+            <tr>
+              <td height="18" class="cellbutton" onClick="window.location = '/contract.html'" onMouseOver="menu_over( this )" onMouseOut="menu_out( this )"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td class="tmenu2" style="padding-left:25px"><a href="http://www.newsville.com/contract.html" class="tmenu2"> Terms and Conditions</a><br></td>
+                    <td width="10"><img src="arw1.gif" width="6" height="5"></td>
+                  </tr>
+              </table></td>
+            </tr>
+            <tr>
+              <td height="2" background="line1.gif"><img src="line1.gif" width="1" height="2"></td>
+            </tr>
+            <tr>
+              <td height="18" class="cellbutton" onClick="window.location = '/privacy.htm'" onMouseOver="menu_over( this )" onMouseOut="menu_out( this )"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td class="tmenu2" style="padding-left:25px"><a href="http://www.newsville.com/privacy.htm" class="tmenu2"> Privacy Statement</a><br></td>
+                    <td width="10"><img src="arw1.gif" width="6" height="5"></td>
+                  </tr>
+              </table></td>
+            </tr>
+            <tr>
+              <td height="2" bgcolor="#FFFFFF"><img src="x.gif" width="1" height="2"></td>
+            </tr>
+            <tr>
+              <td height="82" align="center"><a href="http://www.newsville.com/signup.html"><img src="signup.gif" alt="sign up" name="btn1" width="160" height="64" border="0" onMouseOver="changeon(this)" onMouseOut="changeoff(this)"></a></td>
+            </tr>
+            <tr>
+              <td height="2" bgcolor="#FFFFFF"><img src="x.gif" width="1" height="2"></td>
+            </tr>
+            <tr>
+              <td height="82" align="center"><a href="http://news2.newsville.com"><img src="login.gif" alt="log in" width="160" height="64" border="0" onMouseOver="changeon(this)" onMouseOut="changeoff(this)"></a></td>
+            </tr>
+            <tr>
+              <td height="2" bgcolor="#FFFFFF"><img src="x.gif" width="1" height="2"></td>
+            </tr>
+          </table></td>
+          <td valign="top">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td style="padding:20px">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td>
+<p><b><u>Newsgroup FAQ's: news.answers/sci-lang-faq</u></b></p>
+<!-- source: ftp://rtfm.mit.edu/pub/usenet-by-group/news.answers/sci-lang-faq -->
+<script language=javascript>
+<!--//
+var headWin;
+function openHeadWin () {
+    var config_w = "toolbar=no,status=no,menubar=no,width=500,height=400,scrollbars=yes,resizable=yes";
+    headWin = window.open("", "header_window", config_w);
+    headWin.document.write('<head><title>FAQ Headers</title></head>'
+       + '<body bgcolor="#e5ebf2" text="#555555">'
+       + '<font face="arial,helvetica" size=2>'
+       + 'Path: senator-bedfellow.mit.edu!bloom-beacon.mit.edu!nycmny1-snh1.gtei.net!news.gtei.net!news-out.visi.com!hermes.visi.com!feed2.news.rcn.net!feed1.news.rcn.net!rcn!not-for-mail<br>From: markrose@enteract.com (Mark Rosenfelder)<br>Newsgroups: sci.lang,sci.answers,news.answers<br>Subject: sci.lang FAQ (Frequently Asked Questions)<br>Followup-To: sci.lang<br>Date: 21 Jun 2002 17:12:05 GMT<br>Organization: SPSS Inc.<br>Lines: 1433<br>Approved: news-answers-request@MIT.Edu<br>Expires: Sat, 27 Jul 2002 00:00:00 GMT<br>Message-ID: &lt;aevmp5$lha$1@bob.news.rcn.net&gt;<br>X-Trace: UmFuZG9tSVZgU3tB/I4RVw0pSrqd3MJrNn836dsgyULnf1S/Ww8jqaIv4UxaI/ew<br>X-Complaints-To: abuse@rcn.com<br>NNTP-Posting-Date: 21 Jun 2002 17:12:05 GMT<br>X-Newsreader:  trn 4.0-test74 (May 26, 2000)<br>Originator:  markrose@enteract.com (Mark Rosenfelder)<br>Xref: senator-bedfellow.mit.edu sci.lang:210767 sci.answers:14332 news.answers:232788<br>');
+    headWin.document.write('<center><form><input type=button value="Close" onClick="self.close();"></form></center>');
+    headWin.document.close();
+    headWin.focus();
+    return false;
+}
+//-->
+</script>
+ <a href="mailto:markrose@enteract.com">markrose@enteract.com</a> (Mark Rosenfelder)<br> SPSS Inc.
+<table width=100%><tr><td align=left><font face="arial,helvetica" size=2>
+[<a name="here" href="getfaq%3Ffile=news.answers%252Fsci-lang-faq.1.html#here" onClick="return openHeadWin();"><b>Show all headers</b></a>]
+</font></td><td align=center><font face="arial,helvetica" size=2>
+[<a href="ftp://rtfm.mit.edu/pub/usenet-by-group/news.answers/sci-lang-faq" target="raw"><b>Show raw text</b></a>]
+</font></td><td align=right><font face="arial,helvetica" size=2>
+ 21 Jun 2002 17:12:05 GMT</font></td></tr></table>
+<blockquote></blockquote>
+<table border=0 cellpadding=5 width=100%><tr><td bgcolor="#e5ebf2">
+<font face="arial,helvetica" color="#555555" size=2>
+Archive-name: sci-lang-faq<br>
+Version: 2.29<br>
+Last-modified: 3 Mar 2002<br>
+Last-posted: 20 Jun 2002<br>
+<br>
+Except where noted, written by Michael Covington (<a href="mailto:mcovingt@ai.uga.edu">mcovingt@ai.uga.edu</a>)<br>
+Maintained by Mark Rosenfelder (<a href="mailto:markrose@zompist.com">markrose@zompist.com</a>)<br>
+<br>
+&nbsp; &nbsp; &nbsp; The Web version of this FAQ can be found at:<br>
+&nbsp; &nbsp; &nbsp; &nbsp;  <a href="http://www.zompist.com/langfaq.html">http://www.zompist.com/langfaq.html</a><br>
+	 (The most up-to-date FAQ will always be the Web version.)<br>
+<br>
+&nbsp; &nbsp; &nbsp; Changes this month: Added a question on etymology.<br>
+<br>
+NOTE: This FAQ file doesn't cover everything!&nbsp; Many good books and many <br>
+&nbsp; &nbsp; &nbsp; important ideas are left unmentioned.&nbsp; All readers should be aware <br>
+&nbsp; &nbsp; &nbsp; that linguistics is a young science and that linguists rarely agree <br>
+&nbsp; &nbsp; &nbsp; 100% on anything.<br>
+<br>
+DISTRIBUTION: This file may be freely distributed electronically, or <br>
+&nbsp; &nbsp; &nbsp; as handouts in linguistics classes.&nbsp; Please retain the author<br>
+&nbsp; &nbsp; &nbsp; attributions and addresses, and this paragraph.&nbsp; Before using it <br>
+&nbsp; &nbsp; &nbsp; in print, please contact the authors.<br>
+<hr size=2><br>
+CONTENTS<br>
+<br>
+ 1. What is sci.lang for?<br>
+ 2. What is linguistics?<br>
+ 3. Does linguistics tell people how to speak or write properly?<br>
+ 4. What are some good books about linguistics?<br>
+ 5. How did language originate?<br>
+ 6. What is known about prehistoric language?<br>
+ 7. What do those asterisks mean?<br>
+ 8. How are present-day languages related?<br>
+ 9. Why do Hebrew and Yiddish [etc.] look alike if they aren't related?<br>
+10. How do linguists decide that languages are related?<br>
+11. What is Noam Chomsky's transformational grammar all about?<br>
+12. What is a dialect?&nbsp; (Relation between dialects and languages.)<br>
+13. Are all languages equally complex, or are some more primitive than others?<br>
+14. What about artificial languages, such as Esperanto?&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <br>
+15. What are some stories and novels that involve linguistics?<br>
+16. What about those Eskimo words for snow? (and other myths about language)<br>
+17. Where can I get an electronic IPA font (or other electronic resources)?<br>
+18. How do I subscribe to the LINGUIST list?<br>
+19. How can I represent phonetic symbols in ASCII?<br>
+20. Is English a creole?<br>
+21. How do you look up a word in a Chinese or Japanese dictionary?<br>
+22. What about Nostratic and Proto-World?<br>
+23. What are phonemes and why's it so hard to lose a foreign accent? <br>
+24. How likely are chance resemblances between languages?<br>
+25. How are tone languages sung?<br>
+26. Why are there so many words for Germany?<br>
+27. Why do both English and French have plurals in -s? <br>
+28. How did genders and cases develop in IE? <br>
+29. What is the Sapir-Whorf hypothesis?<br>
+30. Languages keep simplifying-- how did they ever become complex?<br>
+31. Where did (some word or phrase) come from?<br>
+<hr size=2><br>
+1. What is sci.lang for?<br>
+<br>
+Discussion of the scientific or historical study of human language(s).<br>
+Note the &quot;sci.&quot; prefix.&nbsp; The main concern here is with _facts_ and<br>
+theories accounting for them.<br>
+<br>
+For advice on English usage, see alt.usage.english or misc.writing.<br>
+For casual chatter about other languages see soc.culture.&lt;whatever&gt;.<br>
+Discussion of or in Greek or Latin is available in sci.classics.<br>
+The sci.lang.translation newsgroup focusses on translation and issues of <br>
+&nbsp; concern to translators and interpreters.<br>
+The comp.ai.nat-lang newsgroup focusses on natural language processing<br>
+&nbsp; by computers.<br>
+<br>
+Like all &quot;sci.&quot; newsgroups, sci.lang is not meant to substitute for<br>
+a dictionary or even a college library.&nbsp; If the answer to your question<br>
+can be looked up easily, then do so rather than using the net.<br>
+If you don't have a library, then ask away, but explain your situation.<br>
+<hr size=2><br>
+2. What is linguistics?<br>
+<br>
+&nbsp; The scientific study of human language, including:<br>
+&nbsp; &nbsp;  Phonetics (physical nature of speech)<br>
+&nbsp; &nbsp;  Phonology (use of sounds in language)<br>
+&nbsp; &nbsp;  Morphology (word formation)<br>
+&nbsp; &nbsp;  Syntax (sentence structure)<br>
+&nbsp; &nbsp;  Semantics (meaning of words & how they combine into sentences)<br>
+&nbsp; &nbsp;  Pragmatics (effect of situation on language use)<br>
+<br>
+&nbsp; Or, carving it up another way:<br>
+&nbsp; &nbsp;  Theoretical linguistics (pure and simple: how languages work)<br>
+&nbsp; &nbsp;  Historical linguistics (how languages got to be the way they are)<br>
+&nbsp; &nbsp;  Sociolinguistics (language and the structure of society)<br>
+&nbsp; &nbsp;  Psycholinguistics (how language is implemented in the brain)<br>
+&nbsp; &nbsp;  Applied linguistics (teaching, translation, etc.)<br>
+&nbsp; &nbsp;  Computational linguistics (computer processing of human language)<br>
+<br>
+&nbsp; Some linguists also study sign languages, non-verbal communication,<br>
+&nbsp; animal communication, and other topics besides spoken language.<br>
+<hr size=2><br>
+3. Does linguistics tell people how to speak or write properly?<br>
+<br>
+No.&nbsp; Linguistics is descriptive, not prescriptive.<br>
+Linguistics can often supply facts which help people arrive at a<br>
+recommendation or value judgement, but the recommendation or value<br>
+judgement is not part of linguistic science itself.<br>
+<hr size=2><br>
+4. What are some good books about linguistics?<br>
+<br>
+(These are cited by title and author only. Full ordering information<br>
+can be obtained from BOOKS IN PRINT, available at most bookstores and<br>
+at even the smallest public libraries.)<br>
+<br>
+&nbsp; CAMBRIDGE ENCYCLOPEDIA OF LANGUAGE, by David Crystal (1987) is a good place <br>
+&nbsp; &nbsp;  to start if you are new to this field.<br>
+&nbsp; LANGUAGE, by Edward Sapir (1921), is a readable survey of linguistics <br>
+&nbsp; &nbsp;  that is still worthwhile despite its age.<br>
+&nbsp; Some good surveys of linguistics:<br>
+&nbsp; &nbsp;  An Introduction to Language - Fromkin and Rodman (1974)<br>
+&nbsp; &nbsp;  The Social Art - Ronald Macaulay (1995)<br>
+&nbsp; &nbsp;  The Language Web - Jean Aitchison <br>
+&nbsp; &nbsp;  Language: The Basics - R.L. Trask (1996)<br>
+&nbsp; AN INTRODUCTION TO LANGUAGE, by Fromkin and Rodman (1974), is one of the <br>
+&nbsp; &nbsp;  best intro linguistics survey texts.&nbsp; There are many others.<br>
+&nbsp; THE WORLD'S MAJOR LANGUAGES, edited by Bernard Comrie (1987) contains<br>
+&nbsp; &nbsp;  meaty descriptions of fifty languages.<br>
+&nbsp; AN INTRODUCTION TO THE LANGUAGES OF THE WORLD by Anatole Lyovin (1997)<br>
+&nbsp; &nbsp;  surveys everything and has good sketches of some languages Comrie skips. <br>
+&nbsp; CAMBRIDGE TEXTBOOKS IN LINGUISTICS (a series) consists of good,<br>
+&nbsp; &nbsp;  modestly priced introductions to all the areas of linguistics.<br>
+&nbsp; Any encyclopedia will give you basic information about widely studied<br>
+&nbsp; &nbsp;  languages, alphabets, etc.<br>
+<hr size=2><br>
+5. How did language originate?<br>
+<br>
+Nobody knows.&nbsp; Very little evidence is available.<br>
+See however D. Bickerton, LANGUAGE AND SPECIES (1990).<br>
+<hr size=2><br>
+6. What is known about prehistoric language?<br>
+<br>
+Quite a lot, if by &quot;prehistoric&quot; you'll settle for maybe 2000 years<br>
+before the development of writing.&nbsp; (Language is many thousands of years<br>
+older than that.)<br>
+<br>
+Languages of the past can be recovered by comparative reconstruction<br>
+from their descendants.&nbsp; The comparative method relies mainly on<br>
+pronunciation, which changes very slowly and in highly systematic<br>
+ways.&nbsp; If you apply it to French, Spanish, and Italian, you <br>
+reconstruct late colloquial Latin with a high degree of accuracy;<br>
+this and similar tests show us that the method works.<br>
+<br>
+Also, if you use the comparative method on unrelated languages,<br>
+you get nothing. So comparative reconstruction is a test of whether <br>
+languages are related (to a discernible degree).<br>
+<br>
+The ancient languages Latin, Greek, Sanskrit, and several others form <br>
+a group known as &quot;Indo-European.&quot;&nbsp; Comparative reconstruction from <br>
+them gives a language called Proto-Indo-European which was spoken <br>
+around 2500 B.C.&nbsp; Many Indo-European words can be reconstructed with <br>
+considerable confidence (e.g., *ekwos 'horse').&nbsp; The grammar was <br>
+similar to Homeric Greek or Vedic Sanskrit.&nbsp; Similar reconstructions are<br>
+available for some other language families, though none has been as <br>
+thoroughly reconstructed as Indo-European.<br>
+<hr size=2><br>
+7. What do those asterisks mean?<br>
+<br>
+Attached to a word, either of 2 things.<br>
+An unattested, reconstructed word (such as Indo-European *ekwos);<br>
+or an ungrammatical sentence (such as *Himself saw me).<br>
+<br>
+(In a generative rule, such as AP -&gt; Adj (AP)*, it indicates that<br>
+an element may be repeated zero or more times.)<br>
+<hr size=2><br>
+8. How are present-day languages related?<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  [--Scott DeLancey]<br>
+<br>
+This is an INCOMPLETE list of some of the world's language families.&nbsp; More<br>
+detailed classifications can be found in Voegelin and Voegelin, CLASSIFICATION<br>
+AND INDEX OF THE WORLD'S LANGUAGES (1977), and M. Ruhlen, A GUIDE TO THE <br>
+WORLD'S LANGUAGES (1987).&nbsp; (Note: Ruhlen's classification recognizes a <br>
+number of higher-order groups which most linguists regard as speculative).<br>
+<br>
+A language family is a group of languages that have been proven to have<br>
+descended from a common ancestral language.&nbsp; Branches of families likewise<br>
+represent groups of languages with a more recent common ancestor.&nbsp; For <br>
+example, English, Dutch, and German have a common ancestor which we label<br>
+Proto-West-Germanic, and thus belong to the West Germanic branch of Germanic.<br>
+Icelandic and Norwegian are descended from Proto-North Germanic, a separate <br>
+branch of Germanic.&nbsp; All the Germanic languages have a common ancestor, <br>
+Proto-Germanic; farther back, this ancestor was descended from Proto-Indo-<br>
+European, as were the ancestors of the Italic, Slavic, and other branches.<br>
+<br>
+Not all languages are known to be related to each other.&nbsp; It is possible that <br>
+they are related but the evidence of relationship has been lost; it's also <br>
+possible they arose separately.&nbsp; It is likely that some of the families <br>
+listed here will eventually turn out to be related to one another.<br>
+<br>
+While low-level close relationships are easy to demonstrate, higher-order <br>
+classification proposals must rely on more problematic evidence and tend to <br>
+be controversial.&nbsp; Recently linguists such as Joseph Greenberg and Vitalij <br>
+Shevoroshkin have attracted attention both in linguistic circles and in the <br>
+popular press with claims of larger genetic units, such as Nostratic <br>
+(comprising Indo-European, Uralic, Altaic, Dravidian, and Afroasiatic) or <br>
+Amerind (to include all the languages of the New World except Na-Dene and<br>
+Eskimo-Aleut).&nbsp; Most linguists regard these hypotheses as having a grossly <br>
+insufficient empirical foundation, and argue that comparisons at that depth <br>
+are not possible using available methods of historical linguistics.<br>
+<br>
+This list isn't intended to be exhaustive, even for families like Germanic<br>
+and Italic.&nbsp; Nor is it the last word on what's a &quot;language&quot;; see question 12.<br>
+<br>
+&nbsp; Note: English is not descended from Latin.<br>
+&nbsp; &nbsp; &nbsp; &nbsp; English is a Germanic language with a lot of Latin vocabulary,<br>
+&nbsp; &nbsp; &nbsp; &nbsp; borrowed from French in the Middle Ages.<br>
+<br>
+INDO-EUROPEAN<br>
+&nbsp; &nbsp; GERMANIC<br>
+&nbsp; &nbsp; &nbsp; North Germanic:&nbsp; Icelandic, Norwegian / Swedish / Danish<br>
+&nbsp; &nbsp; &nbsp; East Germanic:&nbsp; Gothic (extinct)<br>
+&nbsp; &nbsp; &nbsp; West Germanic:&nbsp; English, Dutch, German, Yiddish<br>
+&nbsp; &nbsp; ITALIC<br>
+&nbsp; &nbsp; &nbsp; Osco-Umbrian:&nbsp; Oscan, Umbrian (extinct languages of Italy)<br>
+&nbsp; &nbsp; &nbsp; Latin and its modern descendants (Italian, Spanish, Portuguese, <br>
+&nbsp; &nbsp; &nbsp; &nbsp;  Catalan, Rumanian, French, etc.)<br>
+&nbsp; &nbsp; CELTIC<br>
+&nbsp; &nbsp; &nbsp; P-Celtic:&nbsp; Welsh, Breton, Cornish<br>
+&nbsp; &nbsp; &nbsp; Q-Celtic:&nbsp; Irish, Scots Gaelic, Manx<br>
+&nbsp; &nbsp; &nbsp; Some extinct European languages were also Celtic, notably those of Gaul<br>
+&nbsp; &nbsp; HELLENIC:&nbsp; Greek (ancient and modern)<br>
+&nbsp; &nbsp; SLAVIC:&nbsp; Russian, Bulgarian, Polish, Czech, Serbo-Croatian, etc. <br>
+&nbsp; &nbsp; &nbsp; &nbsp;  (not Rumanian or Albanian)<br>
+&nbsp; &nbsp; BALTIC:&nbsp; Lithuanian and Latvian<br>
+&nbsp; &nbsp; INDO-IRANIAN<br>
+&nbsp; &nbsp; &nbsp; Indic:&nbsp; Sanskrit and its modern descendants (Hindi-Urdu, <br>
+&nbsp; &nbsp; &nbsp; &nbsp;  Gypsy (Romany), Bengali, etc.)<br>
+&nbsp; &nbsp; &nbsp; Iranian: Persian (ancient and modern), Pashto (Afghanistan), others<br>
+&nbsp; &nbsp; ALBANIAN:&nbsp; Albanian<br>
+&nbsp; &nbsp; ARMENIAN:&nbsp; Armenian<br>
+&nbsp; &nbsp; TOKHARIAN (an extinct language of NW China)<br>
+&nbsp; &nbsp; HITTITE (extinct language of Turkey)<br>
+<br>
+AFRO-ASIATIC<br>
+&nbsp; &nbsp; SEMITIC:&nbsp; Arabic, Hebrew (not Yiddish; see above), Aramaic, Amharic<br>
+&nbsp; &nbsp; &nbsp; and other languages of Ethiopia<br>
+&nbsp; &nbsp; CHADIC:&nbsp; languages of northern Africa, e.g. Hausa<br>
+&nbsp; &nbsp; CUSHITIC:&nbsp; Somali, other languages of eastern Africa<br>
+&nbsp; &nbsp; EGYPTIAN:&nbsp; Ancient Egyptian<br>
+&nbsp; &nbsp; BERBER:&nbsp; languages of North Africa<br>
+<br>
+NIGER-KORDOFANIAN:&nbsp; includes most of the languages of sub-Saharan <br>
+&nbsp; &nbsp; Africa.&nbsp; Most of the languages are in the NIGER-CONGO branch; the<br>
+&nbsp; &nbsp; most widely known subgroup of N-C is BANTU (Swahili, Zulu, Xhosa, etc.) <br>
+<br>
+URALIC <br>
+&nbsp; &nbsp; Finnish, Estonian, Saami (Lapp), Hungarian, and several <br>
+&nbsp; &nbsp; languages of central Russia<br>
+<br>
+MONGOL:&nbsp; Mongolian, Buryat, Kalmuck, etc.<br>
+TURKIC:&nbsp; Turkish, Azerbaijani, Kazakh, and other languages of Central Asia<br>
+TUNGUSIC: Manchu, Juchen, Evenki, Even, Oroch, and other languages of NE Asia<br>
+<br>
+&nbsp; &nbsp; Some linguists group these three families together as ALTAIC.<br>
+&nbsp; &nbsp; Rather more controversially, some add Korean and Japanese to this group.<br>
+<br>
+&nbsp; &nbsp; It has been claimed that URALIC and ALTAIC are related (as URAL-ALTAIC),<br>
+&nbsp; &nbsp; but this idea is not widely accepted.<br>
+<br>
+DRAVIDIAN:&nbsp; languages of southern India, including Tamil, Telugu, etc.<br>
+<br>
+SINO-TIBETAN<br>
+&nbsp; &nbsp; SINITIC:&nbsp; Chinese (several &quot;dialects&quot;, or arguably distinct languages:<br>
+&nbsp; &nbsp; &nbsp; Mandarin, Wu (Shanghai), Min (Hokkien [Fujian], Taiwanese), <br>
+&nbsp; &nbsp; &nbsp; Yue (Cantonese), Hakka, Gan, Xiang<br>
+&nbsp; &nbsp; TIBETO-BURMAN: Tibetan, Burmese, various languages of Burma,<br>
+&nbsp; &nbsp; &nbsp; China, India, and Nepal<br>
+<br>
+AUSTROASIATIC<br>
+&nbsp; &nbsp; MON-KHMER:&nbsp; Vietnamese, Khmer (Cambodian), and various minority <br>
+&nbsp; &nbsp; &nbsp; and tribal languages of Southeast Asia<br>
+&nbsp; &nbsp; MUNDA:&nbsp; tribal languages of eastern India<br>
+<br>
+AUSTRONESIAN<br>
+&nbsp; &nbsp; Malay-Indonesian, other languages of Indonesia (Javanese, etc.)<br>
+&nbsp; &nbsp; Philippine languages: Tagalog, Ilocano, Bontoc, etc.<br>
+&nbsp; &nbsp; Aboriginal languages of Taiwan (Tsou, etc.)<br>
+&nbsp; &nbsp; Polynesian languages: Hawaiian, Maori, Samoan, Tahitian, etc.<br>
+&nbsp; &nbsp; Micronesian:&nbsp; Chamorro (spoken in Guam), Yap, Truk, etc.<br>
+&nbsp; &nbsp; Malagasy (spoken in Madagascar)<br>
+&nbsp; Most of these languages fall in a branch called MALAYO-POLYNESIAN<br>
+<br>
+JAPANESE:&nbsp; A number of linguists argue that Japanese is ALTAIC; others,<br>
+&nbsp; &nbsp; that it is most closely related to AUSTRONESIAN, or that it represents <br>
+&nbsp; &nbsp; a mixture of AUSTRONESIAN and ALTAIC elements.<br>
+<br>
+TAI-KADAI:&nbsp; Thai, Lao, and other languages of southern China and <br>
+&nbsp; &nbsp; northern Burma.&nbsp; Possibly related to AUSTRONESIAN.&nbsp; <br>
+&nbsp; &nbsp; An outdated hypothesis that TAI is part of SINO-TIBETAN is still <br>
+&nbsp; &nbsp; often found in reference works and introductory texts.<br>
+<br>
+AUSTRALIA:&nbsp; the Aboriginal languages of Australia are conservatively <br>
+&nbsp; &nbsp; classified into 26 families, the largest being PAMA-NYUNGAN, consisting<br>
+&nbsp; &nbsp; of about 200 languages originally spoken over 80-90% of Australia.<br>
+<br>
+A large number of language families are found in North and South America.<br>
+There are numerous proposals which group these into larger units, some of<br>
+which will probably be demonstrated in time.&nbsp; To date no New World language <br>
+has been proven to be related to any Old World family.&nbsp; The larger North <br>
+American families include:<br>
+<br>
+ESKIMO-ALEUT:&nbsp; two Eskimo languages and Aleut.<br>
+ATHAPASKAN:&nbsp; most of the languages of Alaska and northwestern Canada,<br>
+&nbsp; &nbsp; also includes Navajo and Apache.&nbsp; Eyak (in Alaska) is related to<br>
+&nbsp; &nbsp; Athapaskan; some linguists put these together with Tlingit and Haida<br>
+&nbsp; &nbsp; in a NA-DENE family.<br>
+ALGONQUIAN:&nbsp; most of Canada and the Northeastern U.S., includes<br>
+&nbsp; &nbsp; Cree, Ojibwa, Cheyenne, Blackfoot<br>
+IROQUOIAN:&nbsp; the languages of NY state (Mohawk, Onondaga, etc.) and Cherokee<br>
+SIOUAN:&nbsp; includes Dakota/Lakhota and other languages of the Plains<br>
+&nbsp; &nbsp; and Southeast U.S.<br>
+MUSKOGEAN: Choctaw, Alabama, Creek, Mikasuki (Seminole) and other<br>
+&nbsp; &nbsp; languages of the southeast U.S.<br>
+UTO-AZTECAN:&nbsp; a large family in Mexico and the Southwestern U.S., <br>
+&nbsp; &nbsp; includes Nahuatl (Aztec), Hopi, Comanche, Paiute, etc.<br>
+SALISH:&nbsp; languages of Washington and British Columbia<br>
+HOKAN:&nbsp; languages of California and Mexico; a controversial grouping<br>
+PENUTIAN:&nbsp; languages of California and Oregon; also controversial<br>
+<br>
+Work on documentation and classification of South American languages still <br>
+has a long way to go.&nbsp; Generally recognized families include:<br>
+<br>
+ARAWAKAN, TUCANOAN, TUPI-GUARANI (including Guarani, a national language<br>
+of Paraguay), CARIBAN, ANDEAN (including Quechua and Aymara)<br>
+<br>
+LANGUAGE ISOLATES:&nbsp; A number of languages around the world have never been<br>
+successfully shown to be related to any others-- in at least some cases <br>
+because any related languages have long been extinct.&nbsp; The most famous <br>
+isolate is Basque, spoken in northern Spain and southern France; it is <br>
+apparently a survival from before the Indo-Europeanization of Europe.<br>
+<hr size=2><br>
+9. Why do&nbsp; Hebrew and Yiddish<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Japanese and Chinese<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Persian and Arabic<br>
+&nbsp;  look so much alike if they aren't related?<br>
+<br>
+Distinguish LANGUAGE from WRITING SYSTEM.<br>
+In each of these cases one language has adopted part or all of the <br>
+writing system of an unrelated language.<br>
+<br>
+(To a Chinese, English and Finnish look alike, because they're written <br>
+in the same alphabet.&nbsp; Yet they are not historically related.)<br>
+<br>
+An excellent introduction to writing systems is Geoffrey Sampson's<br>
+WRITING SYSTEMS (1985).&nbsp; The authoritative (but expensive) reference<br>
+is Daniels and Bright's THE WORLD'S WRITING SYSTEMS (1996), which<br>
+discusses every known script.<br>
+<hr size=2><br>
+10. How do linguists decide that languages are related?&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  [--markrose]<br>
+<br>
+When linguists say that languages are related, they're not just remarking <br>
+on their surface similarity; they're making a technical statement or claim<br>
+about their history-- namely, that they can be regularly derived from a <br>
+common parent language.<br>
+<br>
+Proto-languages are reconstructed using the comparative method.&nbsp; The <br>
+first stage is to inspect and compare large amounts of vocabulary from the <br>
+languages in question.&nbsp; Where possible we compare entire _paradigms_ (sets <br>
+of related forms, such as the those of the present active indicative in <br>
+Latin), rather than individual words.<br>
+<br>
+The inspection should yield a set of regular sound correspondences between <br>
+the languages.&nbsp; By regular, we mean that the same correspondences are <br>
+consistently observed in identical phonetic environments.&nbsp; Finally, _sound <br>
+changes_ are formulated: language-specific rules which specify how the <br>
+original common form changed in order to produce those observed in each <br>
+descendent language.<br>
+<br>
+Applying the comparative method to the Romance languages, we might find<br>
+<br>
+&nbsp; 'I sense'&nbsp; Sard /sento/&nbsp; French /sa~/&nbsp;  Italian /sento/&nbsp;  Spanish /sjEnto/<br>
+&nbsp; 'sleep'&nbsp; &nbsp; &nbsp; &nbsp;  /sonnu/&nbsp; &nbsp; &nbsp; &nbsp;  /som/&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  /sonno/&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  /suEn^o/<br>
+<br>
+&nbsp; 'hundred'&nbsp; &nbsp; &nbsp;  /kentu/&nbsp; &nbsp; &nbsp; &nbsp;  /sa~/&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  /tSento/&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; /sjEnto/<br>
+&nbsp; 'five'&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; /kimbe/&nbsp; &nbsp; &nbsp; &nbsp;  /sE~k/&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; /tSinkwe/&nbsp; &nbsp; &nbsp; &nbsp;  /sinko/<br>
+<br>
+&nbsp; 'I run'&nbsp; &nbsp; &nbsp; &nbsp;  /kurro/&nbsp; &nbsp; &nbsp; &nbsp;  /kur/&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  /korro/&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  /korro/<br>
+&nbsp; 'story'&nbsp; &nbsp; &nbsp; &nbsp;  /kontu/&nbsp; &nbsp; &nbsp; &nbsp;  /ko~t@/&nbsp; &nbsp; &nbsp; &nbsp;  /(rak)konto/&nbsp; &nbsp; &nbsp; /kuEnto/<br>
+<br>
+and hundreds of similar examples.&nbsp; We see some correspondences--<br>
+<br>
+&nbsp; (1)&nbsp; &nbsp; &nbsp; &nbsp; Sard /s/&nbsp; &nbsp; &nbsp; French /s/&nbsp; &nbsp;  Italian /s/&nbsp; &nbsp; &nbsp;  Spanish /s/<br>
+&nbsp; (2)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  /k/&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  /s/&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  /tS/&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; /s/<br>
+&nbsp; (3)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  /k/&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  /k/&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  /k/&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  /k/<br>
+<br>
+but they seem to conflict: does Sard /k/ correspond to Spanish /s/ or /k/?<br>
+Does French /s/ correspond to Italian /s/ or /tS/?<br>
+<br>
+In fact we will find that the correspondences are regular, once we observe<br>
+that (2) is seen before a front vowel (i or e), while (3) is seen in other<br>
+environments.&nbsp; Alternations within paradigms, such as It. /diko/ 'I say' <br>
+vs. /ditSe/ 'says', will help us make and confirm such generalizations.<br>
+<br>
+We may interpret these now-regular correspondences as indicating that an <br>
+initial /s/ in the proto-language has been retained in all four languages, <br>
+and likewise initial /k/ in Sard; but that /k/ changed to /s/ or /tS/ in <br>
+the other languages in the environment of a front vowel.<br>
+<br>
+Actually, this process is iterative.&nbsp; For instance, at first glance we <br>
+might think that German _haben_ and Latin _habere_ 'have' are obvious <br>
+cognates.&nbsp; However, after noting the regular correspondence of German h to <br>
+Latin c, we are forced to change our minds, and look to _capere_ 'seize' <br>
+as a better cognate for _haben_.<br>
+<br>
+Thus, similarity of words is only a clue, and perhaps a misleading one.<br>
+Linguists conclude languages are related, and thus derive from a common<br>
+ancestor, only if they find *regular* sound correspondences between them.<br>
+<br>
+To complicate things, derivations may be obscured by irregular changes,<br>
+such as dissimilation, borrowing, or analogical change.&nbsp; For instance, <br>
+the normal development of Middle English _kyn_ is 'kine', but this word<br>
+has been largely replaced by 'cows', formed from 'cow' (ME _cou_) on the <br>
+analogy of word-pairs like stone : stones.&nbsp; Analogy often serves to reduce <br>
+irregularities in a language (here, an unusual plural).<br>
+<br>
+_Borrowing_ refers to taking words from other languages, as English has<br>
+taken 'search' and 'garage' from French, 'paternal' from Latin, 'anger' from <br>
+Old Norse, and 'tomato' from Nahuatl.&nbsp; How do we know that English doesn't<br>
+derive from French or Nahuatl?&nbsp; The latter case is easy to eliminate: <br>
+regular sound correspondences can't be set up between English and Nahuatl.<br>
+<br>
+But English has borrowed so heavily from French that regular correspondences <br>
+do occur.&nbsp; Here, however, we find that the French borrowings are thickest in <br>
+government, legal, and military domains; while the basic vocabulary (which <br>
+languages borrow less frequently) is more akin to German.&nbsp; Paradigmatic <br>
+correspondences like sing/sang/sung vs. singen/sang/gesungen also help show<br>
+that the Germanic words are inherited, the French ones borrowed.<br>
+<br>
+If you want more, Theodora Bynon's HISTORICAL LINGUISTICS (1977) is<br>
+very good, and not long; R.L. Trask's HISTORICAL LINGUISTICS (1996)<br>
+is very readable and covers more recent studies.<br>
+Anthony Fox's LINGUISTIC RECONSTRUCTION: AN INTRODUCTION<br>
+TO THEORY AND METHOD (1995) concentrates on the reconstruction process<br>
+itself, and assumes some knowledge of linguistics.&nbsp; On Indo-European,<br>
+try Beekes, COMPARATIVE INDO-EUROPEAN LINGUISTICS: AN INTRODUCTION (1995).<br>
+<hr size=2><br>
+11. What is Noam Chomsky's transformational grammar all about?<br>
+<br>
+Several things; it really comprises several layers of theory:<br>
+<br>
+(1) The hypothesis that much of the structure of human language is<br>
+inborn (&quot;built-in&quot;) in the human brain, so that a baby learning to<br>
+talk only has to learn the vocabulary and the structural &quot;parameters&quot;<br>
+of his native language -- he doesn't have to learn how language works<br>
+from scratch.<br>
+<br>
+The main evidence consists of:<br>
+&nbsp;  - The fact that babies learn to talk remarkably well from what seems<br>
+&nbsp; &nbsp;  to be inadequate exposure to language; it is claimed<br>
+&nbsp; &nbsp;  that babies acquire some rules of grammar that they could never<br>
+&nbsp; &nbsp;  have &quot;learned&quot; from what is available to them, if the structure of<br>
+&nbsp; &nbsp;  language were not partly built-in.<br>
+&nbsp;  - The fact that the structure of language on different levels<br>
+&nbsp; &nbsp;  (vocabulary, ability to connect words, etc.) can be lost by injury<br>
+&nbsp; &nbsp;  to specific areas of the brain.<br>
+&nbsp;  - The fact that there are unexpected structural similarities between<br>
+&nbsp; &nbsp;  all known languages.<br>
+For detailed exposition see Cook, CHOMSKY'S UNIVERSAL GRAMMAR (1988), <br>
+Newmeyer, GRAMMATICAL THEORY: ITS LIMITS AND POSSIBILITIES (1983), and<br>
+Pinker, THE LANGUAGE INSTINCT (1994).<br>
+<br>
+This theory is by no means accepted by all linguists, though many&nbsp;  <br>
+would agree that some core part of language is innate.<br>
+<br>
+(2) The hypothesis that to adequately describe the grammar of a human<br>
+language, you have to give each sentence at least two different structures, <br>
+called &quot;deep structure&quot; and &quot;surface structure&quot;, together with rules<br>
+called &quot;transformations&quot; that relate them. <br>
+<br>
+This is hotly debated.&nbsp; Some theories of grammar use two levels and<br>
+some don't.&nbsp; Chomsky's original monograph, SYNTACTIC STRUCTURES (1957),<br>
+is still well worth reading; this is what it deals with.<br>
+<br>
+(3) Chomsky's name is associated with specific flavors of transformational<br>
+grammar.&nbsp; The model elaborated over the last few years is called GB<br>
+(government and binding) theory; however, Chomsky's 1995 book on Minimalism<br>
+contains significant departures from earlier work in GB.<br>
+<br>
+(4) Some people think Chomsky is the source of the idea that grammar ought<br>
+to be viewed with mathematical precision.&nbsp; (Thus there are occasional<br>
+vehement anti-Chomsky polemics such as THE NEW GRAMMARIAN'S FUNERAL, which<br>
+are really polemics against grammar per se.)<br>
+<br>
+Although Chomsky contributed some valuable techniques, grammarians have<br>
+_always_ believed that grammar was a precise, mechanical thing.&nbsp; They<br>
+are highly divided, however, on the nature and function of those mechanisms!<br>
+<hr size=2><br>
+12. What is a dialect?<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [--M.C. + M.R.]<br>
+A dialect is any variety of a language spoken by a specific community of<br>
+people. Most languages have many dialects.<br>
+<br>
+Everyone speaks a dialect.&nbsp; In fact everyone speaks an _idiolect_, i.e.,<br>
+a personal language.&nbsp; (Your English language is not quite the same as<br>
+my English language, though they are probably very, very close.)<br>
+<br>
+A group of people with very similar idiolects are considered to be<br>
+speaking the same dialect.&nbsp; Some dialects, such as Standard American<br>
+English, are taught in schools and used widely around the world.<br>
+Others are very localized.&nbsp; <br>
+<br>
+Localized or uneducated dialects are _not_ merely failed attempts to speak<br>
+the standard language.&nbsp; William Labov and others have demonstrated, for<br>
+example, that the speech of inner-city blacks has its own intricate<br>
+grammar, quite different in some ways from that of Standard English.<br>
+<br>
+It should be emphasized that linguists do not consider some dialects <br>
+superior to others-- though speakers of the language may do so;<br>
+and linguists do study people's attitudes toward language, since <br>
+these have a strong effect on the development of language.<br>
+<br>
+Linguists call varieties of language &quot;dialects&quot; if the speakers can<br>
+understand each other and &quot;languages&quot; if they can't.&nbsp; For example,<br>
+Irish English and Southern American English are dialects of English,<br>
+but English and German are different languages (though related).<br>
+<br>
+This criterion is not always as easy to apply as it sounds.<br>
+Intelligibility may vary with familiarity and interest, or may depend<br>
+on the subject.&nbsp; A more serious problem is the _dialect continuum_: a<br>
+chain of dialects such that any two adjoining dialects are mutually<br>
+intelligible, but the dialects at the ends are not.&nbsp; Speakers of<br>
+Belgian Dutch, for instance, can't understand Swiss German, but<br>
+between them there lies a continuum of mutually intelligible dialects.<br>
+<br>
+Sometimes the use of the terms &quot;language&quot; or &quot;dialect&quot; is politically<br>
+motivated.&nbsp; Norwegian and Danish (being mutually intelligible) are<br>
+dialects of the same language, but are considered separate languages<br>
+because of their political independence.&nbsp; By contrast, Mandarin and<br>
+Cantonese, which are mutually unintelligible, are often referred to<br>
+as &quot;dialects&quot; of Chinese, due to the political and cultural unity of<br>
+China, and because they share a common _written_ language.<br>
+<br>
+At this point we usually quote Max Weinreich: &quot;A language is a dialect <br>
+with an army and a navy.&quot;<br>
+<br>
+Because of such problems, some linguists reject the mutual<br>
+intelligibility criterion; but they do not propose to return to<br>
+arguments on political and cultural grounds.&nbsp; Instead, they prefer<br>
+not to speak of dialects and languages at all, but only of different<br>
+varieties, with varying degrees of mutual intelligibility.<br>
+<hr size=2><br>
+13. Are all languages equally complex, or are some more primitive than others?<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [--M.C. + M.R.]<br>
+Before the 1900s many people believed that so-called &quot;primitive <br>
+peoples&quot; would have primitive languages, and that Latin and Greek--<br>
+or their own languages-- were inherently superior to other tongues.<br>
+<br>
+In fact, however, there is no correlation between type or complexity of<br>
+culture and any measure of language complexity.&nbsp; Peoples of very simple<br>
+material culture, such as the Australian Aborigines, are often found to <br>
+speak very complex languages.<br>
+<br>
+Obviously, the size of the vocabulary and the variety and sophistication of<br>
+literary forms will depend on the culture.&nbsp; The _grammar_ of all languages,<br>
+however, tends to be about equally complex-- although the complexity may <br>
+be found in different places.&nbsp; Latin, for instance, has a much richer<br>
+system of inflections than English, but a less complicated syntax.<br>
+<br>
+As David Crystal puts it, &quot;All languages meet the social and psychological<br>
+needs of their speakers, are equally deserving of scientific study, and can<br>
+provide us with valuable information about human nature and society.&quot;<br>
+<br>
+There are only two case of really simple languages:<br>
+<br>
+* _Pidgins_, which result when speakers of different languages come to live <br>
+and work together.&nbsp; Vocabulary is drawn from one or both languages, and a <br>
+very forgiving grammar devised.&nbsp; Grammars of pidgins from around the world <br>
+have interesting similarities (e.g. they are likely to use repetition to <br>
+express plurals).&nbsp; <br>
+<br>
+A pidgin becomes a _creole_ when children acquire it as a native language;<br>
+as it evolves to meet the needs of a primary language, its vocabulary and<br>
+grammar become much richer.&nbsp; If a pidgin is used over a long period (for<br>
+example, Tok Pisin in Papua New Guinea), it may similarly develop into a <br>
+more complex language known as an _extended pidgin_.<br>
+<br>
+* _Language death_, what happens when a language falls out of use-- an<br>
+alarmingly widespread phenomenon, which has been studied in detail by<br>
+linguists.&nbsp; The process typically takes several generations, and involves<br>
+an increasingly simplified grammar and impoverished lexicon.<br>
+<hr size=2><br>
+14. What about artificial languages, such as Esperanto?&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [--markrose]<br>
+<br>
+Hundreds of constructed languages have been devised in the last few centuries.<br>
+Early proposals, such as those of Lodwick (1647), Wilkins, or Leibniz, were <br>
+attempts to devise an ideal language based on philosophical classification <br>
+of concepts, and used wholly invented words.&nbsp; Most were too complex to learn,<br>
+but one, Jean Francois Sudre's Solresol, achieved some popularity in the last<br>
+century; its entire vocabulary was built from the names of the notes of <br>
+the musical scale, and could be sung as well as spoken.<br>
+<br>
+Later the focus shifted to languages based on existing languages, with a <br>
+polyglot (usually European) vocabulary and a simplified grammar, whose purpose<br>
+was to facilitate international communication.&nbsp; Johann Schleyer's Volapu&quot;k <br>
+(1880) was the first to achieve success; its name is based on English <br>
+(&quot;world-speech&quot;), and reflects Schleyer's notions of phonetic simplicity.&nbsp; <br>
+<br>
+It was soon eclipsed by Ludwig Zamenhof's Esperanto (1887), whose grammar <br>
+was simpler and its vocabulary more recognizable.&nbsp; Esperanto has remained <br>
+the most successful and best-known artificial language, with a million or <br>
+more speakers and a voluminous literature; children of Esperantists have <br>
+even learned it as a native language.<br>
+<br>
+Its relative success hasn't prevented the appearance of new proposals, such<br>
+as Ido, Interlingua, Occidental, and Novial.&nbsp; There have also been attempts<br>
+to simplify Latin (Latino Sine Flexione, 1903) and English (Basic English, <br>
+1930) for international use.&nbsp; The recent Loglan and Lojban, based on <br>
+predicate logic, may represent a revival of a priori language construction.<br>
+<br>
+See also Andrew Large, THE ARTIFICIAL LANGUAGE MOVEMENT (1985); Mario Pei, <br>
+ONE LANGUAGE FOR THE WORLD (1958); Detlev Blanke, INTERNATIONALE <br>
+PLANSPRACHEN (in German).&nbsp; For websites, see the web version of the FAQ.<br>
+<br>
+There is a newsgroup, soc.culture.esperanto, dedicated to Esperanto.&nbsp; Also <br>
+see alt.language.artificial, dedicated to artificial languages in general.<br>
+<br>
+The ConLang mailing list is devoted to the discussion of constructed and <br>
+artificial languages for general communication; its FAQ is on the web at<br>
+<a href="http://personalweb.sierra.net/~spynx/FAQ/index.html">http://personalweb.sierra.net/~spynx/FAQ/index.html</a>.&nbsp; To subscribe, <br>
+e-mail a message to <a href="mailto:listserv@brownvm.brown.edu">listserv@brownvm.brown.edu</a> consisting of the single<br>
+line: subscribe conlang<br>
+<br>
+The AuxLang list is devoted to discussions of the merits and<br>
+practicality of particular international auxiliary languages.&nbsp; To<br>
+subscribe, send mail to <a href="mailto:listserv@brownvm.brown.edu">listserv@brownvm.brown.edu</a> consisting of the<br>
+single line: subscribe auxlang<br>
+<hr size=2><br>
+15. What are some stories and novels that involve linguistics?&nbsp; &nbsp; [--markrose]<br>
+<br>
+The following list is by no means exhaustive.&nbsp; It's based on James Myers'<br>
+list of books, which was compiled the last time the subject came up on <br>
+sci.lang.&nbsp; Additions and corrections are welcome; please suggest the<br>
+approximate category and give the publication date, if possible.<br>
+<br>
+ALIENS AND LINGUISTS: Language Study and Science Fiction, by Walter Meyers<br>
+(1980) contains a general discussion and lists more works.<br>
+<br>
+alien languages<br>
+<br>
+	&quot;Tlon, Uqbar, Orbis Tertius&quot; in FICCIONES - Jorge Luis Borges (1956)<br>
+	40000 IN GEHENNA - C.J. Cherryh (1983)<br>
+	BABEL-17 - Samuel R. Delany (1966)<br>
+	FLIGHT OF THE DRAGONFLY - Robert L. Forward (1984)<br>
+	THE HAUNTED STARS - Edmond Hamilton<br>
+	HELLSPARK - Janet Kagan (1988)<br>
+	INHERIT THE STARS - James P. Hogan<br>
+	&quot;Not So Certain&quot; - David I. Masson<br>
+	&quot;Omnilingual&quot;, in FEDERATION - H. Beam Piper<br>
+	CONTACT - Carl Sagan (1985)<br>
+	PSYCHAOS - E. P. Thompson<br>
+	&quot;A Martian Odyssey&quot; in SF HALL OF FAME - Stanley Weinbaum (1934)<br>
+	&quot;A Rose for Ecclesiastes&quot; in SF HALL OF FAME - Roger Zelazny (1963)<br>
+	WELTGEIST SUPERSTAR - P.M. (1980)<br>
+<br>
+futuristic varieties of English<br>
+<br>
+	&quot;Barrier&quot; - Anthony Boucher<br>
+	A CLOCKWORK ORANGE - Anthony Burgess (1962)<br>
+	HELLFLOWER - eluki bes shahar (1991)<br>
+	THE INHERITORS - William Golding (1955)<br>
+	THE MOON IS A HARSH MISTRESS - Robert Heinlein (1966)<br>
+	RIDDLEY WALKER - Russel Hoban (1980)<br>
+	1984 - George Orwell (1948)<br>
+<br>
+other invented languages<br>
+<br>
+	NATIVE TONGUE - Suzette Haden Elgin (1984)<br>
+	THE GAMEPLAYERS OF ZAN - M A Foster<br>
+	&quot;Gulf&quot; in ASSIGNMENT IN ETERNITY - Robert A. Heinlein (1949)<br>
+	ALWAYS COMING HOME - Usrula K. Le Guin<br>
+	PALE FIRE - Vladimir Nabokov<br>
+	THE KLINGON DICTIONARY - Marc Okrand (1985)<br>
+	THE VOID-CAPTAIN'S TALE - Norman Spinrad<br>
+	THE LORD OF THE RINGS - J R R Tolkien (1954-55)<br>
+	THE MEMORANDUM - Vaclav Havel (1966)<br>
+	THE LANGUAGES OF PAO - Jack Vance (1957)<br>
+<br>
+linguist heroes<br>
+<br>
+&nbsp; &nbsp; &nbsp; &nbsp; RATES OF EXCHANGE - Malcolm Bradbury <br>
+	DOUBLE NEGATIVE - David Carkeet<br>
+	THE FULL CATASTROPHE - David Carkeet<br>
+	PYGMALION - George Bernard Shaw (1912)<br>
+	THE POISON ORACLE - Peter Dickinson (1974)<br>
+	OUT OF THE SILENT PLANET - C.S. Lewis (1943)<br>
+	HANDS ON - Andrew Rosenheim (1992)<br>
+	LEAR'S DAUGHTERS - M. Bradley Kellogg w/ William Rossow (1986)<br>
+	THE SPARROW, CHILDREN OF GOD - Mary Doria Russell (1996, 98)<br>
+<br>
+animal language<br>
+<br>
+	WATERSHIP DOWN - Richard Adams (1972)<br>
+	TARZAN OF THE APES - Edgar Rice Burroughs (1912)<br>
+	CONGO - Michael Crichton (1980)<br>
+<br>
+use of linguistic theory<br>
+<br>
+	SNOW CRASH - Neal Stephenson (1992)<br>
+	GULLIVER'S TRAVELS - Jonathan Swift (1726)<br>
+	THE EMBEDDING - Ian Watson (1973)<br>
+	Ozark trilogy - Suzette Haden Elgin<br>
+	YONDER COMES THE OTHER END OF TIME - Suzette Haden Elgin<br>
+<br>
+other<br>
+<br>
+	THE TROIKA INCIDENT - James Cooke Brown (1969)&nbsp;  [Loglan]<br>
+	ETXEMENDI - Florence Delay&nbsp; [Chomsky ref]<br>
+	TRITON - Samuel Delany [reflections on meaning]<br>
+	SO YOU WANT TO BE A WIZARD - Diane Duane<br>
+	TONGUES OF THE MOON - Philip Jose Farmer<br>
+	DUNE - Frank Herbert (1965)<br>
+	THE DISPOSSESSED - Ursula LeGuin (1974)<br>
+	LOVE ME TOMORROW - Robert Rimmer (1976)&nbsp;  [Loglan]<br>
+<hr size=2><br>
+16. What about those Eskimo words for snow? (and other myths about language)<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  [--markrose]<br>
+<br>
+For more myths and what's really going on, see LANGUAGE MYTHS (1999), <br>
+edited by Laurie Bauer and Peter Trudgill (no linguistics knowledge needed).<br>
+<br>
+&nbsp;  &quot;The Eskimos have hundreds of words for snow.&quot;<br>
+<br>
+This story is constantly being repeated, with various numbers given,<br>
+despite the fact that it has no basis at all.&nbsp; No one who repeats this<br>
+pseudo-factoid can list the hundreds of words for you, or even cite a <br>
+work that does.&nbsp; They just heard it somewhere.<br>
+<br>
+The anthropologist Laura Martin has traced the development of this myth<br>
+(including the steady growth in the number of words claimed).&nbsp; Geoffrey<br>
+Pullum summarizes her report in THE GREAT ESKIMO VOCABULARY HOAX (1991).<br>
+<br>
+How many words are there really?&nbsp; Well, the Yup'ik language in particular<br>
+has about two dozen roots describing snow or things related to snow.&nbsp; This<br>
+is not particularly significant; English can amass about the same total:<br>
+snow, sleet, slush, blizzard, flurry, avalanche, powder, hardpack,<br>
+snowball, snowman, and other derivatives.<br>
+<br>
+The Yup'ik total could be greatly expanded by other derived words, since<br>
+the Inuit languages can form hundreds of words from a single root.&nbsp; But<br>
+this is true of all words in the language (and indeed of all agglutinative<br>
+languages), not just the words for snow.<br>
+<br>
+&nbsp;  &quot;There's a town in Appalachia that speaks pure Elizabethan English.&quot;<br>
+<br>
+There isn't.&nbsp; All languages, everywhere, are constantly changing.&nbsp; Some<br>
+areas speak more conservative dialects, but we know of no case where <br>
+people speak exactly as their ancestors spoke centuries ago.<br>
+<br>
+Of course, ancient languages are sometimes revived; biblical Hebrew has<br>
+been revived (with some modifications) in modern Israel; and there's a<br>
+village in India in which Sanskrit is being taught as an everyday<br>
+language.&nbsp; But these are conscious revivals of languages which have<br>
+otherwise died out in everyday use, not survivals of living languages.<br>
+<br>
+&nbsp;  &quot;Chinese characters directly represent ideas, not spoken words.&quot;<br>
+<br>
+Westerners have been taken by this notion for centuries, ever since<br>
+missionaries started describing the Chinese writing system.&nbsp; However, it's<br>
+quite false.&nbsp; Chinese characters represent specific Chinese words.&nbsp; <br>
+<br>
+(To be precise, almost all characters represent a particular syllable with<br>
+a particular meaning; about 10% however represent one syllable of a <br>
+particular two-syllable word.)<br>
+<br>
+The vast majority of characters consist of a _phonetic_ giving the<br>
+approximate pronunciation of the word, plus a _signific_ giving a clue to<br>
+its meaning (thus distinguishing different syllables having different<br>
+meanings).&nbsp; As an added difficulty, many of the phonetics are no longer<br>
+helpful, because of sound changes since the characters were devised, over<br>
+2000 years ago.&nbsp; However, it is estimated that 60% of the phonetics still<br>
+give useful information about the character's pronunciation.<br>
+<br>
+To be sure, Japanese (among other languages) uses Chinese characters too,<br>
+and it is a very different language from Chinese.&nbsp; However, we must look<br>
+at exactly how the Japanese use the Chinese characters.&nbsp; Generally they<br>
+borrowed both the characters and the words represented; it's rather as if<br>
+when we borrowed words like _psychology_ from Greek, we wrote them in the<br>
+Greek alphabet.&nbsp; Native Japanese words are also written using the Chinese<br>
+characters for the closest Chinese words: if the Japanese word overlaps<br>
+several Chinese words, different characters must be written in different<br>
+contexts, according to the meanings in Chinese.<br>
+<br>
+A good demythologizing of common notions about Chinese writing is found in<br>
+THE CHINESE LANGUAGE: FACT AND FANTASY, by John DeFrancis (1984).<br>
+<br>
+&nbsp;  &quot;German lost out to English as the US's official language by 1 vote.&quot;<br>
+<br>
+This entertaining story is also told of Greek, Latin, and even Hebrew.<br>
+<br>
+There was never any such vote.&nbsp; Dennis Baron, in THE ENGLISH ONLY QUESTION<br>
+(1990), thinks the legend may have originated with a 1795 vote concerning<br>
+a proposal to publish federal laws in German as well as English.&nbsp; At one<br>
+point a motion to table discussion (rather than referring the matter back<br>
+to committee) was defeated 41-40.&nbsp; The proposal was eventually defeated. <br>
+<br>
+&nbsp;  &quot;Sign language isn't really a language.&quot;<br>
+&nbsp;  &quot;ASL is a gestural version of English.&quot;<br>
+<br>
+Sign languages are true languages, with vocabularies of thousands of words,<br>
+and grammars as complex and sophisticated as those of any other language,<br>
+though with fascinating differences from speech.&nbsp; If you think they are<br>
+merely pantomime, try watching a mathematics lecture, a poetry reading, or<br>
+a religious service conducted in Sign, and see how much you understand.<br>
+<br>
+ASL (American Sign Language) is not an invented system like Esperanto; it<br>
+developed gradually and naturally among the Deaf.&nbsp; It has no particular<br>
+relation to English; the best demonstration of this is that it is quite<br>
+different from British Sign.&nbsp; Curiously enough, it is most closely related<br>
+to French Sign Language, due to the influence of Laurent Clerc, who came<br>
+from Paris in 1817 to be the first teacher of the Deaf in the US.<br>
+<br>
+ASL is not to be confused with Signed English, which is a word-for-word<br>
+signed equivalent of English.&nbsp; Deaf people tend to find it tiring, because<br>
+its grammar, like that of spoken languages, is linear, while that of ASL is<br>
+primarily spatial.<br>
+<br>
+For more on Sign and the Deaf community, see Oliver Sacks' SEEING VOICES<br>
+(1989), or Harlan Lane, WHEN THE MIND HEARS (1984) and THE MASK OF <br>
+BENEVOLENCE.<br>
+<hr size=2><br>
+17. Where can I get an electronic IPA font (or other electronic resources)?<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [--markrose]<br>
+&nbsp; &nbsp;  [Adapted from information posted to sci.lang by Sean Redmond,<br>
+&nbsp; &nbsp;  Evan Antworth, Chris Brockett, Roy Cochrun, J&quot;org Knappen, <br>
+&nbsp; &nbsp;  Harlan Messinger, Alex Rudnicky, Enrico Scalas, Mark Kantrowitz.<br>
+<br>
+&nbsp; &nbsp;  If you know of other publicly available (and legal) fonts or <br>
+&nbsp; &nbsp;  other linguistic resources, please e-mail me or post to sci.lang, <br>
+&nbsp; &nbsp;  so they can be listed here.]<br>
+<br>
+* A number of Postscript Type 1 and TrueType fonts (including IPA, Greek,<br>
+&nbsp; Cyrillic, Armenian, etc.) are available by ftp from <br>
+<br>
+&nbsp; &nbsp;  host&nbsp; &nbsp; &nbsp;  ftp.winsite.com<br>
+&nbsp; &nbsp;  directory: pub/pc/win3/fonts/truetype<br>
+<br>
+&nbsp; List (ls) the directory to see what's available.&nbsp; The files are zipped; <br>
+&nbsp; a version of unzip is usually available on whatever host you use <br>
+&nbsp; to ftp with.<br>
+<br>
+&nbsp; Note: TrueType files can be used under Windows or on the Macintosh.<br>
+&nbsp; I'm not sure if the unzipped files can be inserted directly into the<br>
+&nbsp; Mac's Fonts folder; I ran them through Fontographer first.<br>
+<br>
+* The SIL IPA fonts (also in PostScript Type 1 and TrueType versions)<br>
+&nbsp; are also available by ftp from<br>
+<br>
+&nbsp; &nbsp;  host:&nbsp; &nbsp; &nbsp; linguistics.archive.umich.edu [141.211.32.2]<br>
+&nbsp; &nbsp;  directory: <br>
+&nbsp; &nbsp; &nbsp; &nbsp; Windows version: /msdos/windows/fonts/truetype/sil-ipa12.exe<br>
+&nbsp; &nbsp; &nbsp; &nbsp; Mac version:&nbsp; &nbsp;  /mac/system.extensions/font/type1/silipa1.2.cpt.hqx<br>
+<br>
+* They are also available on diskette for $5.00 plus postage: $2.00 in U.S. <br>
+&nbsp; or $5.00 outside U.S.&nbsp; Order from:<br>
+<br>
+&nbsp; &nbsp;  SIL Printing Arts Department<br>
+&nbsp; &nbsp;  7500 W. Camp Wisdom Road<br>
+&nbsp; &nbsp;  Dallas TX&nbsp; 75236&nbsp;  USA<br>
+<br>
+&nbsp; &nbsp;  tel:&nbsp; &nbsp; 214-709-2495, -2440<br>
+&nbsp; &nbsp;  fax:&nbsp; &nbsp; 214-709-3387.<br>
+&nbsp; &nbsp;  e-mail: <a href="mailto:Margaret.Swauger@sil.org">Margaret.Swauger@sil.org</a><br>
+<br>
+* University College London also sells these fonts on disk ($32).&nbsp; See:<br>
+<br>
+&nbsp; &nbsp;  <a href="http://www.phon.ucl.ac.uk/home/wells/fonts.htm">http://www.phon.ucl.ac.uk/home/wells/fonts.htm</a><br>
+<br>
+* Some IPA fonts for TeX can be found in the CTAN archives<br>
+<br>
+&nbsp; &nbsp;  ftp.dante.de<br>
+&nbsp; &nbsp;  ctan.tug.org&nbsp; (finger <a href="mailto:ctan@ftp.dante.de">ctan@ftp.dante.de</a> for mirrors)<br>
+&nbsp; &nbsp;  ftp.tex.ac.uk<br>
+<br>
+&nbsp; in the directories<br>
+<br>
+&nbsp; &nbsp;  tex-archive/fonts/wsuipa<br>
+&nbsp; &nbsp;  tex-archive/fonts/tsipa<br>
+&nbsp; &nbsp;  tex-archive/fonts/tipa&nbsp; &nbsp;  &lt;-- the most recent<br>
+<br>
+* The Carnegie-Mellon 100,000-word English dictionary can be retrieved<br>
+&nbsp; as follows.<br>
+<br>
+&nbsp; &nbsp;  host:&nbsp; &nbsp; &nbsp; ftp.cs.cmu.edu [128.2.206.173]<br>
+&nbsp; &nbsp;  directory: project/fgdata/dict<br>
+<br>
+&nbsp; Retrieve the following files:<br>
+<br>
+&nbsp; &nbsp;  README<br>
+&nbsp; &nbsp;  cmudict.0.2.Z (compressed)<br>
+&nbsp; &nbsp;  cmulex.0.1.Z (compressed)<br>
+&nbsp; &nbsp;  phoneset.0.1<br>
+<br>
+* WEBSITES related to linguistics or languages are listed in the web <br>
+&nbsp; version of the FAQ: <a href="http://www.zompist.com/lang17.html#Websites">http://www.zompist.com/lang17.html#Websites</a><br>
+<br>
+* sci.lang (since October 1994) is archived at<br>
+<br>
+&nbsp; &nbsp; ftp.cs.cmu.edu<br>
+&nbsp; &nbsp; /user/ai/pubs/news/sci.lang<br>
+<br>
+* Kenneth Hyde maintains OUT In Linguistics, a mailing list for<br>
+&nbsp; lesbian/gay/bi folk interested in linguistics.&nbsp; (Both qualifiers--<br>
+&nbsp; &quot;lgb(-friendly)&quot; and &quot;linguistics&quot;-- are important, please.)&nbsp; For<br>
+&nbsp; information, e-mail <a href="mailto:kenny@udel.edu">kenny@udel.edu</a> (Kenneth Hyde). To subscribe, send a<br>
+&nbsp; message with an empty subject and &quot;subscribe outil-list&quot; as the body<br>
+&nbsp; of the message to <a href="mailto:majordomo@udel.edu">majordomo@udel.edu</a>.<br>
+<hr size=2><br>
+18. How do I subscribe to the LINGUIST list?<br>
+<br>
+The LINGUIST list is a mailing list dedicated to linguistics; it's more<br>
+technical than sci.lang.&nbsp; The easiest way to read and post to it is on<br>
+its website at <a href="http://linguistlist.org">http://linguistlist.org</a>; you can also use the website<br>
+to have postings e-mailed to you.<br>
+<hr size=2><br>
+19. How can I represent phonetic symbols in ASCII?<br>
+<br>
+The following table is a summary of Evan Kirshenbaum's IPA/ASCII schema,<br>
+which a number of posters have been using in sci.lang and alt.usage.english.<br>
+For more information, see the Web page at<br>
+&nbsp; &nbsp;  <a href="http://www.hpl.hp.com/personal/Evan_Kirshenbaum/IPA/">http://www.hpl.hp.com/personal/Evan_Kirshenbaum/IPA/</a><br>
+<br>
+This summary is presented for convenience only, and is not intended to<br>
+forestall discussion of alternative systems.<br>
+<br>
+&nbsp; &nbsp;  blb-- -lbd-- --dnt-- --alv-- -rfx- -pla-- --pal--- --vel-- <hr align=left width=25% size=1>uvl<hr align=left width=25% size=1><br>
+<br>
+nas&nbsp; &nbsp; m&nbsp; &nbsp; &nbsp; M&nbsp; &nbsp; &nbsp;  n[&nbsp; &nbsp; &nbsp; n&nbsp; &nbsp; &nbsp; n.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; n^&nbsp; &nbsp; &nbsp; N&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  n&quot;<br>
+stp&nbsp; p b&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  t[ d[&nbsp; &nbsp; t d&nbsp;  t. d.&nbsp; &nbsp; &nbsp; &nbsp; c&nbsp;  J&nbsp; &nbsp;  k g&nbsp; &nbsp; &nbsp; q&nbsp; &nbsp; G<br>
+frc&nbsp; F V&nbsp; &nbsp; f v&nbsp; &nbsp; T&nbsp; D&nbsp; &nbsp;  s z&nbsp;  s. z.&nbsp; S Z&nbsp;  C C&lt;vcd&gt;&nbsp; x Q&nbsp; &nbsp; &nbsp; X&nbsp; &nbsp; g&quot;<br>
+apr&nbsp; &nbsp; &nbsp; &nbsp; r&lt;lbd&gt;&nbsp; &nbsp;  r[&nbsp; &nbsp; &nbsp; r&nbsp; &nbsp; &nbsp; r.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; j&nbsp; &nbsp; &nbsp;  j&lt;vel&gt;&nbsp; &nbsp; &nbsp; g&quot;<br>
+lat&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  l[&nbsp; &nbsp; &nbsp; l&nbsp; &nbsp; &nbsp; l.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; l^&nbsp; &nbsp; &nbsp; L<br>
+trl&nbsp; b&lt;trl&gt;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; r&lt;trl&gt;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; r&quot;<br>
+flp&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  *&nbsp; &nbsp; &nbsp; *. <br>
+ejc&nbsp; p`&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; t[`&nbsp; &nbsp; &nbsp; t`&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  c`&nbsp; &nbsp; &nbsp; &nbsp; k'<br>
+clk&nbsp; p!&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; t!&nbsp; &nbsp; &nbsp;  c!&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  c!&nbsp; &nbsp; &nbsp; k!<br>
+imp&nbsp; &nbsp; b`&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  d`&nbsp; &nbsp; &nbsp; d`&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  J`&nbsp; &nbsp; &nbsp; g`&nbsp; &nbsp;  q`&nbsp;  G`<br>
+<br>
+<br>
+&nbsp; &nbsp;  ---- lbv ----&nbsp;  --phr--&nbsp; ---glt---<br>
+<br>
+nas&nbsp; &nbsp; &nbsp; &nbsp;  n&lt;lbv&gt;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  alv lat frc: s&lt;lat&gt; z&lt;lat&gt;<br>
+stp&nbsp; t&lt;lbv&gt; d&lt;lbv&gt;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ?&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; lat flp: *&lt;lat&gt;<br>
+frc&nbsp; w&lt;vls&gt;&nbsp;  w&nbsp; &nbsp; &nbsp; H H&lt;vcd&gt;&nbsp;  h&lt;?&gt;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  lat clk: l!<br>
+apr&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  w&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  h<br>
+<br>
+<br>
+&nbsp; &nbsp; <hr align=left width=25% size=1> unr <hr align=left width=25% size=1>&nbsp; &nbsp;  unr&nbsp; &nbsp;  <hr align=left width=25% size=1> rnd <hr align=left width=25% size=1><br>
+&nbsp; &nbsp; fnt&nbsp;  cnt&nbsp;  bck&nbsp; &nbsp;  cnt&nbsp; &nbsp;  fnt&nbsp;  cnt&nbsp;  bck<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; rzd<br>
+hgh&nbsp; i&nbsp; &nbsp;  i&quot;&nbsp; &nbsp; u-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; y&nbsp; &nbsp;  u&quot;&nbsp; &nbsp; u<br>
+smh&nbsp; I&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  I.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; U<br>
+umd&nbsp; e&nbsp;  @&lt;umd&gt;&nbsp; o-&nbsp; &nbsp; R&lt;umd&gt;&nbsp; &nbsp; Y&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  o<br>
+mid&nbsp; &nbsp; &nbsp; &nbsp; @&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  R&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  @.<br>
+lmd&nbsp; E&nbsp; &nbsp;  V&quot;&nbsp; &nbsp; V&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  W&nbsp; &nbsp;  O&quot;&nbsp; &nbsp; O<br>
+low&nbsp; &&nbsp; &nbsp;  a&nbsp; &nbsp;  A&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &.&nbsp; &nbsp; a.&nbsp; &nbsp; A.<br>
+<br>
+<br>
+Diacritics:<br>
+&nbsp; &nbsp; &nbsp; Vowels:&nbsp; &nbsp;  Consonants:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; + =&nbsp;  ad hoc diacritic<br>
+&nbsp; ~&nbsp;  nasalized&nbsp;  velarized&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [&nbsp; &nbsp;  dental<br>
+&nbsp; :&nbsp;  long&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  !&nbsp; &nbsp;  click&nbsp; <br>
+&nbsp; -&nbsp;  unrounded&nbsp;  syllabic&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &lt;H&gt;&nbsp;  pharyngealized<br>
+&nbsp; .&nbsp;  rounded&nbsp; &nbsp;  retroflex&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;h&gt;&nbsp;  aspirated<br>
+&nbsp; `&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  ejective/implosive&nbsp; &nbsp;  &lt;o&gt;&nbsp;  unexploded or voiceless<br>
+&nbsp; ^&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  palatal&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;r&gt;&nbsp;  rhotacized<br>
+&nbsp; ;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  palatalized&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;w&gt;&nbsp;  labialized<br>
+&nbsp; &quot;&nbsp;  centered&nbsp; &nbsp; uvular&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &lt;?&gt;&nbsp;  murmured<br>
+&nbsp;  <br>
+Other symbols:<br>
+&nbsp; $ %&nbsp; &nbsp;  ad hoc segment<br>
+&nbsp; []&nbsp; &nbsp; &nbsp; phonetic transcription<br>
+&nbsp; //&nbsp; &nbsp; &nbsp; phonemic transcription<br>
+&nbsp; #&nbsp; &nbsp; &nbsp;  syllable or word boundary<br>
+&nbsp; space&nbsp;  word/segment separator<br>
+&nbsp; ' ,&nbsp; &nbsp;  primary and secondary stress<br>
+&nbsp; 0-9&nbsp; &nbsp;  tones<br>
+<hr size=2><br>
+20. Is English a creole?<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [--markrose]<br>
+The change from Anglo-Saxon to Modern English (loss of gender and of<br>
+case inflection, phonological change, acquisition of a huge stock of French<br>
+and Latin vocabulary) is certainly dramatic, and has led some sci.lang <br>
+posters, and even some linguists (e.g. Domingue, Bailey & Maroldt, <br>
+Milroy) to the provocative suggestion that English suffered pidginization<br>
+or creolization at the time of the Norman Conquest (1066) or the Norse<br>
+invasions (from 865), or both.<br>
+<br>
+This hypothesis, as Sarah Grey Thomason and Terrence Kaufman have<br>
+shown in LANGUAGE CONTACT, CREOLIZATION, AND GENETIC LINGUISTICS (1988), <br>
+rests on an incomplete understanding of creolization and a shaky grasp on <br>
+the history of English.&nbsp; There is a wide range of language contact <br>
+situations, from casual contact to deep structural interference; English is <br>
+by no means the most striking of these cases.&nbsp; It looks like a creole only <br>
+if one ignores this range of phenomena and labels any case of moderate <br>
+interference as creolization.<br>
+<br>
+For many of the changes in question, the chronology does not work out.<br>
+For instance, the reduction of unstressed vowels to /@/, largely responsible<br>
+for the loss of Old English nominal declensions, had taken place *before*<br>
+the Conquest, and affected all of England, including areas never settled<br>
+by the Norse.&nbsp; And English did absorb an immense amount of French and<br>
+Latin vocabulary, but most of this occurred well *after* the Conquest--<br>
+past 1450, two centuries after the nobility ceased to be French-speaking.<br>
+<br>
+Other points to note: 1) most of the simplifications and foreign borrowings<br>
+seen in English occurred as well in other Germanic languages, notably<br>
+Dutch, Low German, and the Scandinavian languages; 2) a particularly<br>
+striking borrowing from Norse, the pronoun 'they', was probably adopted<br>
+to avoid what otherwise would have been a merge of 'he/him' with 'they/them';<br>
+3) the total number of French-speaking invaders was not more than<br>
+50,000, compared to an English-speaking population of over 1.5 million--<br>
+nowhere near the proportions that would threaten the normal inheritance<br>
+of English.<br>
+<hr size=2><br>
+21. How do you look up a word in a Chinese or Japanese dictionary?<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [--markrose]<br>
+<br>
+The vast majority of Chinese characters can be divided into two parts, the<br>
+radical and the phonetic.&nbsp; Each part is another, simpler character.&nbsp; The<br>
+_radical_ gives an idea of the meaning-- rather a vague idea, since<br>
+traditionally there were only 214 different radicals.&nbsp; The _phonetic_<br>
+identifies the sound, with a bit more precision: generally, all the<br>
+characters that share a phonetic rhymed 2000 years ago in Archaic Chinese.<br>
+<br>
+(It's impossible to give examples in ASCII; see the Web page for more:<br>
+<a href="http://www.zompist.com/lang21.html">http://www.zompist.com/lang21.html</a>)<br>
+<br>
+Characters are arranged in most Chinese dictionaries by radical.&nbsp; To find<br>
+an unknown character, then, you identify the radical, and look up its<br>
+section in the dictionary.&nbsp; The radicals are arranged in order of increasing<br>
+complexity.&nbsp; Each radical's section is ordered by the number of strokes in<br>
+the character.&nbsp; Several characters may have the same number of strokes;<br>
+these must simply be scanned till the right one is found.<br>
+<br>
+Sometimes it isn't easy to identify the radical-- it's in an odd position<br>
+(e.g. on the bottom or the right rather than the top or left side); or it's<br>
+drawn in an abbreviated form; or it's not clear which of several similar<br>
+radicals the character is listed under.&nbsp; It's also important to know the<br>
+proper method for counting strokes.<br>
+<br>
+If a character isn't composed of a radical + phonetic, it's usually treated<br>
+as one, graphically, for the purposes of dictionary lookup.&nbsp; For instance,<br>
+the character for hao3 'good' is composed of the characters for 'woman' and<br>
+'child'-- a _semantic_ compound.&nbsp; It's simply listed under the 'woman'<br>
+radical, although zi3 'child' is not its phonetic.<br>
+<br>
+The People's Republic simplified a number of characters and radicals, and<br>
+this changed the number of radicals-- there's 224 in my dictionary, for<br>
+instance.&nbsp; The Japanese have made their own separate simplification.<br>
+<hr size=2><br>
+22. What about Nostratic and Proto-World?<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [--markrose]<br>
+In recent years some some linguists have attempted to reconstruct languages<br>
+far older than Indo-European.<br>
+<br>
+*Nostratic*, said to underlie the Indo-European, Kartvelian (South Caucasion), <br>
+Afro-Asiatic, Dravidian, Uralic, Altaic, Chukchi-Kamchatkan, and Eskimo-Aleut <br>
+families, was first proposed by Holger Pedersen in 1903.&nbsp; More recently<br>
+the greater part of work on Nostratic is due to Soviet linguists led by <br>
+Vladislav Illich-Svitych, Aaron Dolgopolsky, and Vitaly Shevoroshkin.<br>
+<br>
+The methodology is the traditional comparative method, and over 600 roots<br>
+have been proposed.&nbsp; Most linguists remain skeptical, believing that chance<br>
+processes will have obscured any relationship at this level beyond<br>
+reconstruction, or question the accuracy of the derivations (a charge which<br>
+makes Nostraticists bristle).&nbsp;  Others simply suspend judgment, especially<br>
+since much of the supporting material for Nostratic is available only in<br>
+Russian.<br>
+<br>
+A good overview on Nostratic is Kaiser and Shevoroshkin, &quot;Nostratic&quot;, in<br>
+the _Annual Review of Anthropology_, 17:309.&nbsp; Illich-Svitych's original<br>
+Russian article (from _Etymologia_, 1965) has been translated in<br>
+Shevoroshkin, ed., RECONSTRUCTING LANGUAGES AND CULTURES (1989).<br>
+<br>
+Joseph Greenberg has proposed a grouping which covers much the same language<br>
+areas (omitting Afro-Asiastic and Dravidian, but adding Ainu and Gilyak),<br>
+called *Eurasiatic*.&nbsp; Greenberg's method of _mass comparison_ (which he has<br>
+also used to group together almost all Native American languages into one<br>
+superfamily, Amerind) basically consists of assembling huge lists of<br>
+common words and doing eyeball comparisons.<br>
+<br>
+This methodology has been severely criticized by many historical linguists.<br>
+If 'mass comparison' were applied to the Indo-European languages, it would<br>
+be bedevilled by false positives (caused by borrowing or chance) and by<br>
+specious phonetic or semantic similarites.&nbsp; Greenberg's methods seem to<br>
+linguists to abandon the very methodological severity which has put<br>
+Indo-European linguistics on a scientific footing, and distinguished it from<br>
+the work of cranks.&nbsp; Relax the rules enough, and you can derive any language<br>
+from any other.<br>
+<br>
+Greenberg replies that the patterns he has found are compelling enough to<br>
+justify his methods, and that he is merely following in the footsteps of <br>
+the originators of the comparative method: linguists had to decide that the <br>
+Indo-European languages were related before attempting reconstructions.<br>
+<br>
+The ultimate areal comparison would be *Proto-World*, the hypothetical<br>
+ancestor of all human languages.&nbsp; Greenberg has mentioned Proto-World, but<br>
+since he is not much interested in reconstruction, his proposal is not much<br>
+more than a statement of the monogenetic theory (a single origin for all<br>
+languages).&nbsp; Most linguists are skeptical that anything could be<br>
+reconstructed at this hypothetical time depth.<br>
+<br>
+Greenberg's work on Amerind can be found in LANGUAGE IN THE AMERICAS (1987);<br>
+on Eurasiatic, in the forthcoming INDO-EUROPEAN AND ITS CLOSEST RELATIVES:<br>
+THE EURASIATIC LANGUAGE FAMILY.&nbsp; Introductions to the Nostratic and<br>
+Proto-World controversies were published in both _The Atlantic_ and<br>
+_Scientific American_ in April 1991.&nbsp; The essays in Lamb and Mitchell, eds.,<br>
+SPRUNG FROM SOME COMMON SOURCE (1991), are also relevant.<br>
+<br>
+Loren Petrich maintains an annotated bibliography on Indo-European,<br>
+Nostratic, and Proto-World.&nbsp; I am also indebted to Peter Michalove for<br>
+citations used in this entry.<br>
+<hr size=2><br>
+23.&nbsp; What are phonemes and why's it so hard to lose a foreign accent? <br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [--markrose] <br>
+The sounds (*phones*) humans can make are infinite; there's (almost always) <br>
+a continuum of phones in between any two phones. <br>
+<br>
+In any one language, however, phones are grouped into 20 to 60 or so discrete <br>
+groups of sounds called *phonemes*. The range of variation for each phoneme <br>
+is discounted by speakers and hearers of the language, who perceive the <br>
+entire range as &quot;the same sound.&quot; <br>
+<br>
+The English phoneme /p/ has two phonetic realizations or *allophones*: <br>
+aspirated [ph] beginning a word and non-aspirated [p] elsewhere. But<br>
+since the two types of /p/ never distinguish one word from another, speakers <br>
+of English generally don't even notice the difference. (Linguists<br>
+write phonemic transcriptions between /slashes/, and phonetic transcriptions <br>
+in [brackets].) <br>
+<br>
+If we can find two words with different meaning but only one difference in <br>
+sound between them-- a *minimal pair*-- then we've found distinct phonemes; <br>
+e.g. /p/ and /b/ in English 'pit' and 'bit'. If two sounds never occur in <br>
+the same phonetic environment (e.g. English [p] and [ph])-- if they're in <br>
+*complementary distribution*-- then they're probably allophones of a single <br>
+phoneme.&nbsp; (I say 'probably' because English [h] and [ng] are also in <br>
+complementary distribution, but linguists balk at assigning them to one<br>
+phoneme.)<br>
+<br>
+Other languages do not divide up the phonetic space in the same way.&nbsp; For <br>
+instance, /p/ and /ph/ are separate phonemes in Mandarin Chinese (as in <br>
+/pa1/ 'eight' and /pha1/ 'flower').&nbsp; And the vowels of 'late' and 'let', <br>
+phonemes in English, are allophones of a single phoneme /e/ in Spanish. <br>
+<br>
+We're trained from childhood to make the phonetic distinctions our language <br>
+uses to keep its phonemes apart, and to ignore those it doesn't.<br>
+Learning to make different distinctions in a foreign language is quite <br>
+difficult-- usually harder than making new sounds our native language lacks <br>
+entirely.&nbsp; We'll continue to have an accent in the new language so long as <br>
+we hear its sounds through our native language's phonemic filter. <br>
+<hr size=2><br>
+24. How likely are chance resemblances between languages?<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  [--markrose]<br>
+It depends-- to an astonishing degree-- on the amount of phonetic and<br>
+semantic leeway you allow for a match.&nbsp; But in general the answer is <br>
+&quot;Quite likely.&quot;<br>
+<br>
+For the sort of comparisons that are often posted to sci.lang, where<br>
+perhaps just two consonants match, or nearly match, and the semantic <br>
+matchups are quirky, one can expect literally hundreds of random matches.<br>
+<br>
+For a detailed discussion, see the web version of the FAQ.<br>
+<hr size=2><br>
+25. How are tone languages sung?<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  [--markrose]<br>
+It varies.&nbsp; Tones are basically ignored in Mandarin Chinese songs, <br>
+for instance.&nbsp; (Does this make them hard to understand?&nbsp; Often, yes.)<br>
+However, Cantonese songs are generally written in such a way as to <br>
+preserve the relative pitch of successive syllables.&nbsp; E.g. a low tone <br>
+following a high tone will be on a lower note.<br>
+<br>
+For more, see: <a href="http://deall.ohio-state.edu/chan.9/articles/bls13.htm">http://deall.ohio-state.edu/chan.9/articles/bls13.htm</a><br>
+<hr size=2><br>
+26. Why are there so many words for Germany?<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  [--markrose]<br>
+Basically, because there were Germans before there was a Germany. Each of <br>
+the Germans' neighbors came up with their own name for them, long before <br>
+there was a German state that people might want to refer to uniformly. <br>
+<br>
+_German_ is a relatively recent borrowing from Latin _Germanus_, whose origins<br>
+are uncertain. It's been referred to Latin _germanus_ 'brotherly', Germanic <br>
+_*geromann-_ 'spear-man', Old Irish _gair_ 'neighbour', etc. <br>
+<br>
+_Deutsch_ comes from Proto-Germanic _*theudisko-z_ 'of the people', from <br>
+_*theuda_ 'people, nation'; originally it was used to distinguish the speech <br>
+of the people from Latin, the language of scholarship. The English word <br>
+'Dutch' is a derivative, and used to be used for any northern Germanic <br>
+people, later narrowed down to those closest to England; the older usage is <br>
+preserved in 'Pennsylvania Dutch'. <br>
+<br>
+The word *theuda survived into Middle English as _thede_, but was supplanted <br>
+by Romance borrowings such as 'people' and 'nation'. Non-Germanic cognates <br>
+include Oscan touto, Irish tu:ath, and Lithuanian tauta, all meaning 'people'. <br>
+<br>
+Italian _tedesco_ is another derivative of *theudisko-z. <br>
+<br>
+_Teutonic_ derives from a name of an ancient tribe in Jutland, the Teutones; <br>
+if these were a German tribe their name is presumably another derivative of <br>
+*theuda. <br>
+<br>
+French _allemand_ (and Spanish _alema'n_, etc., as well as older English <br>
+_Almain_) derive from a particular tribe of Germans, the Alemanni ('all men'). <br>
+<br>
+Finnish _saksa_ derives from the name of another tribe, the Saxons. <br>
+<br>
+Russian _nemets_ is related to _nemoj_ 'dumb, mute'; to the ancient Slavs, not<br>
+speaking in an understandable language was as good as not speaking at all.<br>
+Hungarian _nemet_ is borrowed from Slavic. <br>
+<br>
+Latvian _Va:cija_ may derive from a word meaning 'west'. <br>
+<hr size=2><br>
+27. Why do both English and French have plurals in -s? <br>
+-Miguel Carrasquer Vidal (adapted by markrose)] <br>
+<br>
+Despite what one might think, these are independent developments. <br>
+<br>
+The English s-plural comes from the PIE o-stem nominative plural ending *-o:s, <br>
+*-o:s, apparently extended in Germanic to *-o:s-es by addition of the PIE plural<br>
+suffix *-es (*-o:s itself comes from *-o-es). This *-o:ses became Proto-Germanic<br>
+*-o:ziz or *-o:siz, depending on the accent, which gave the attested forms--<br>
+Gothic -o:s, Old English -as, Old Saxon -os, and Old Norse -ar (with the change<br>
+to words that were not a-stems, a tendency which has since become nearly<br>
+universal.<br>
+<br>
+The n-plural of German is generalized from the PIE n-stems (*-on-es --&gt; -en).<br>
+It was still present in Old English n-stems, and survives today in a few words<br>
+like 'oxen'.<br>
+<br>
+The Romance s-plurals (-as, -os, -es) are derived from the accusative (PIE<br>
+*-a:ns, *-ons, *-ens). Old French still had separate nominative and oblique<br>
+(accusative/ablative) forms, but in the end, grammatical cases were dropped<br>
+completely, and usually only the oblique forms were retained. <br>
+<br>
+In Italian and Romanian, final -s was phonetically lost, and the plurals are<br>
+based on the nominative. The Latin nominative plural, at least in the o- and<br>
+a:-stems, was based on PIE *-i, of pronominal origin, not *-es as in most other<br>
+IE languages.<br>
+<hr size=2><br>
+28. How did genders and cases develop in IE?<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  [--Mikael Thompson]<br>
+Early stages of proto-Indo-European (PIE) didn't have feminine gender. This <br>
+is attested in Hittite, the oldest recorded IE language; it had only <br>
+masculine and neuter genders, divided basically between animate and <br>
+inanimate objects. For most noun classes the PIE endings can be reconstructed <br>
+as follows: <br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Animate Inanimate <br>
+&nbsp;  Subject&nbsp; &nbsp;  *-s&nbsp; &nbsp; &nbsp; *-0 <br>
+&nbsp;  Object&nbsp; &nbsp; &nbsp; *-m&nbsp; &nbsp; &nbsp; *-0 <br>
+For animate nouns, *-s indicated the source of action, *-m the thing acted <br>
+upon; the zero ending indicates no syntactic role. The basic idea is that <br>
+only living things can act upon other things, so only animate nouns could <br>
+take the *-s. <br>
+<br>
+Such a system is characteristic of active/stative languages. Other<br>
+features of PIE fit in with this observation; for instance, in PIE objects<br>
+like fire and water which are inanimate but move seemingly of their own<br>
+will have two separate names. In many languages with an active-stative<br>
+distinction there are such pairs of words. As this distinction was lost in<br>
+IE, different branches retained just one of the words: e.g. English water,<br>
+Greek hydor, Hittite watar form one group (from PIE *wed-), while Latin<br>
+aqua is from PIE *akwa:-.<br>
+<br>
+The animate nouns are the historical source for the masculine gender, and<br>
+the inanimate nouns for the neuter. This is why in all the classic IE<br>
+languages the neuter nominative and accusative have identical forms, and<br>
+the only basic difference between masculine and neuter nouns is in the<br>
+accusative.<br>
+<br>
+Earlier historical linguists cheerfully reconstructed eight cases for PIE,<br>
+on the model of Sanskrit; but the IE languages with many cases are now<br>
+considered to be innovative, not conservative. The other cases developed<br>
+from postpositions or derivational suffixes.&nbsp; Luwian, a sister language of<br>
+Hittite, for instance, has no genitive, but has an adjective-forming<br>
+suffix -assi, as in harmah-assi-s 'of the head'. (This is an adjective,<br>
+not a genitive, because it can be declined.) Genitives in other languages<br>
+often seem to be developments of cognates to this suffix. <br>
+<br>
+PIE didn't bother much with specifying plurals, but when it did, it added<br>
+an *-s or other endings. The neuter plural in all IE languages is not<br>
+descended from this, however-- active/stative languages typically don't<br>
+mark plurals for inanimate nouns-- but is instead a collective noun,<br>
+treated grammatically as a singular. This collective noun ended in *-a in<br>
+the nominative and accusative, and eventually it developed into the<br>
+feminine, which in all the old IE languages has the same form in the<br>
+nominative singular as does the neuter plural nominative- accusative. It<br>
+is also why the Greek neuter plural took a singular verb. <br>
+<br>
+The reason it is called the feminine, of course, is that nouns indicating<br>
+females fell in this gender most of the time. This is puzzling, and<br>
+probably we must accept it as a fact whose explanation can't be recovered<br>
+from the depths of time.<br>
+<hr size=2><br>
+29. What is the Sapir-Whorf hypothesis?<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [--markrose] <br>
+According to the Sapir-Whorf hypothesis, language determines the<br>
+categories and much of the content of thought. &quot;We dissect nature along<br>
+lines laid down by our native languages... We cannot talk at all except by<br>
+subscribing to the organization and classification of data which the<br>
+[speech community] decrees,&quot; said Whorf, in LANGUAGE, THOUGHT, AND REALITY<br>
+(1956). &quot;The fact of the matter is that the 'real world' is to a large<br>
+extent unconsciously built up on the language habits of the group,&quot; said<br>
+Sapir. <br>
+<br>
+Both were students of Amerindian languages, and were drawn to this<br>
+conclusion by analysis of the grammatical categories and semantic<br>
+distinctions found in these languages, fascinatingly different from those<br>
+found in European ones. (Neither linguist used the term 'Sapir-Whorf<br>
+hypothesis', however; Whorf referred to the 'linguistic relativity<br>
+principle'. Moreover, the principle was almost entirely elaborated by<br>
+Whorf alone.)<br>
+<br>
+The idea enjoyed a certain vogue in the mid-20th century, not only among linguists but<br>
+among anthropologists, psychologists, and science fiction writers.<br>
+<br>
+However, the strong form of the hypothesis is not now widely believed. The<br>
+conceptual systems of one language, after all, can be explained and<br>
+understood by speakers of another. And grammatical categories do not<br>
+really explain cultural systems very well.&nbsp; Indo-European languages make<br>
+gender a grammatical category, and their speakers may be sexist-- but<br>
+speakers of Turkish or Chinese, languages without grammatical gender, are<br>
+not notably less sexist.<br>
+<br>
+Whorf's analysis of what he called &quot;Standard Average European&quot; languages<br>
+is also questionable. E.g. he claims that &quot;the three-tense system of SAE<br>
+verbs colors all our thinking about time.&quot; Only English doesn't have three<br>
+tenses; it has two, past and present; future events are expressed by the<br>
+present (&quot;I see him tomorrow&quot;), or by a modal expression, merely one of a<br>
+large class of such synthetic expressions. And for that matter, English<br>
+distinguishes more like six than three times (&quot;I had gone, I went, I just<br>
+arrived, I'm going, I'm about to go, I'll go&quot;).<br>
+<br>
+To prove his point, Whorf collected stories of confusions brought about by<br>
+language. For instance, a man threw a spent match into what looked like a<br>
+pool of water; only there was decomposing waste in the water, and escaping<br>
+gas was ignited by the spark-- boom!&nbsp; But it's not clear that any<br>
+*linguistic* act is involved here. The man could think the pool looked<br>
+like water without thinking of the word 'water'; and he could fail to<br>
+notice the flammable vapors without doing any thinking at all. <br>
+<br>
+A weak form of the Sapir-Whorf hypothesis-- that language influences<br>
+without determining our categories of thought-- still seems reasonable,<br>
+and is even backed up by some psychological experiments-- e.g. Kay &<br>
+Kempton's finding that, in distinguishing color triads, a pair<br>
+distinguished by color names can seem more distinct than a pair with the<br>
+'same' name which are actually more divergent optically (American<br>
+Anthropologist, March 1984).<br>
+<br>
+It should be emphasized that, in their willingness to consider the idea<br>
+that non-Western people have languages and worldviews that match the<br>
+European's in precision and elegance, Sapir and Whorf were far ahead of<br>
+their time.<br>
+<br>
+For a spirited and very readable defense of Whorf, see Suzette Haden<br>
+Elgin's THE LANGUAGE IMPERATIVE (2000).<br>
+<hr size=2><br>
+30. Languages keep simplifying-- how did they ever become complex?<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  [--markrose]<br>
+This question starts with an observation: the classical Indo-European <br>
+languages, such as Latin, Greek, Old English, and Sanskrit, were highly <br>
+inflected, while their modern descendants are not. For instance, French <br>
+nouns have entirely lost the Latin case system, and French verbs have lost <br>
+entire classes of forms, such as the passive voice. <br>
+<br>
+It's natural to ask: how did the classical languages get so complex in the <br>
+first place? Why are there inflecting languages at all?&nbsp; Why don't they <br>
+all become isolating, like Chinese? <br>
+<br>
+The answer is that there are also complicating tendencies in language. <br>
+Habitual idioms can become particles, which can become inflections-- <br>
+a process called grammaticalization. <br>
+<br>
+For instance, the future and conditional tenses in Romance languages don't <br>
+derive from classical Latin, but the infinitive plus forms of 'to have'. <br>
+French has rather complicated verb clusters (je ne le lui ai pas donne) <br>
+which are perhaps best analyzed as single verbs showing both subject and <br>
+object agreement. <br>
+<br>
+Another example is the plethora of cases in Finnish, many of which derive <br>
+from postpositions. Roger Lass has pointed out a cycle in Germanic <br>
+languages where perfectives are developed, merge with the imperfect, <br>
+and are developed anew. <br>
+<br>
+Chinese is not immune from this phenomenon-- Mandarin already has verbal <br>
+particles like perfective le, or nominal particles like the possessive<br>
+/adjectivizing de. The diminutive -r even merges with the preceding <br>
+syllable; e.g. dian3 + -r --&gt; diar3 'a bit'.<br>
+<hr size=2><br>
+31. Where did (some word or phrase) come from?<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [--markrose]<br>
+If you get a snarky response to such questions on sci.lang, it's because <br>
+some people think you ought to look in a dictionary first. The American <br>
+Heritage Dictionary traces words back (where possible) to Proto-Indo-European; <br>
+and the massive Oxford English Dictionary, available at most libraries, <br>
+contains not only etymologies but illustrative citations through the centuries. <br>
+<br>
+When it comes to word and phrase origins, most people's standard of proof <br>
+seems to be &quot;Doesn't violate the laws of physics!&quot; But a plausible story is <br>
+not a proof. The three most important types of evidence in etymology are <br>
+citations, citations, citations. If you have some amusing theory that &quot;the <br>
+whole nine yards&quot; derives from haberdashery, or baseball, or mortuaries, <br>
+you'd better have appropriate examples from those fields in the right <br>
+historical period. <br>
+<br>
+Anyway, here are brief notes on a few terms that have been asked about <br>
+more than once on sci.lang. (Also see the alt.usage.english FAQ.) <br>
+<br>
+OK <br>
+<br>
+There's half a dozen explanations for this, but only one correct one, <br>
+demonstrated with hundreds of citations by Allen Walker Read in 1964: <br>
+OK stands for oll korrect, and dates to a fad for humorous mis-abbreviations <br>
+which started in Boston newspapers in 1838. It spread nationwide when <br>
+supporters of Martin Van Buren organized the &quot;OK Club&quot; during the 1840 <br>
+presidential campaign (giving the term a double meaning, since Van Buren's <br>
+nickname was Old Kinderhook). <br>
+<br>
+Usted <br>
+<br>
+Some people have wondered if the Spanish formal second person pronoun Usted <br>
+came from the Arabic honorific 'usta:dh. It doesn't; it's a well-attested <br>
+abbreviation of vuestra merced 'your mercy'. There are transitional forms <br>
+such as vuasted, vuesarced, voarced, as well as parallel constructions like <br>
+usia from vuestra sen~oria, ucencia from vuestra excelencia. Compare also<br>
+Portuguese vossa merce^ --&gt; vosmece^ --&gt; voce^, as well as Catalan voste <br>
+and Gallego vostede. Finally, note that the abbreviation Usted doesn't appear <br>
+until 130 years after the Moors had been kicked out of Spain. <br>
+</font></td></tr></table>
+<p><font size=1></font></p>
+
+<p>
+<font size=1>FAQ links depend on external networks, and cannot be 
+guaranteed by Newsville. Links in the FAQ's may be outdated, and 
+are beyond Newsville's control. As with all USENET messages, the
+copyrights on the FAQs should be presumed to belong to the authors. </font>
+</p>
+
+		    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table></td>
+          <td width="184" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td><img src="im1.jpg" width="184" height="138"></td>
+            </tr>
+            <tr>
+              <td height="25"><img src="search.gif" alt="Search for newsgroups" width="135" height="16"></td>
+            </tr>
+            <form name="form1" method="GET" action="http://www.newsville.com/cgi-bin/newsgrep-new"><tr>
+              <td height="32" align="right" valign="bottom" bgcolor="#b5c1cd" style="padding-right:10px"><input name="string" type="text" size="25"></td>
+            </tr>
+            <tr>
+              <td height="28" align="right" bgcolor="#b5c1cd" style="padding-right:10px"><input name="imageField" type="image" src="find.gif" alt="find"></td>
+            </tr></form>
+          </table></td>
+        </tr>
+          </table></td>
+  </tr>
+  <tr>
+    <td height="2" background="line1.gif"><img src="line1.gif" width="1" height="2"></td>
+  </tr>
+  <tr>
+    <td height="51" align="center"><p>Copyright &copy; 1995-2006 Newsville.Com,<br>
+        <a href="http://www.newsville.com/contract.html">Terms and Conditions</a>, <a href="http://www.newsville.com/privacy.htm">Privacy Policy</a>.<br>
+        <span class="ttitl2">a division of <a href="http://www.vic.com" target="_blank">Virtual Interactive Center</a>.</span></p>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

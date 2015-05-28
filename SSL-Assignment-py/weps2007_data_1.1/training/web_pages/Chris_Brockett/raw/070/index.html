@@ -1,0 +1,3349 @@
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+ 		
+  
+
+
+
+		
+<style>
+.note-header-text {font-family: Times, Times New Roman, serif;
+		color:#ff0000; font-size: .95em;
+		margin-left: .75em; margin-right: .75em;}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 	
+	
+		
+		
+		
+					
+			
+				
+				  	
+				
+			
+				
+		    
+		
+		
+		
+		
+		
+		
+		
+	 
+
+
+
+	
+	
+	
+	
+	
+	
+	
+		
+  
+
+
+	
+	
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 	
+ 	
+	
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<LINK REL=STYLESHEET TYPE="text/css" HREF="http://portal.acm.org/css/dl.css">
+<title>A statistical approach to machine translation</title>
+<style type="text/css"><!--
+    body {margin-left: 0em; margin-top: 0}
+    a:link {text-decoration: underline; 	Color: #006699;}
+    a:visited  { color: #990033; text-decoration: underline;}
+    a:hover {color: red; text-decoration: none}
+    a.dLink1:link {color:#336699}
+    a.dLink1:visited {color:#666666}
+	a.isblack:link {text-decoration: underline; 	Color: #000000;}
+    a.isblack:visited  { color: #000000; text-decoration: underline;}
+    a.isblack:hover {color: #000000; text-decoration: none}
+    h1 {font-size: 140%; margin-bottom: 0}
+	ul {margin-top: .25em; list-style-type: disc}
+	ol {margin-top: .25em;}
+	li {padding-bottom: .25em}
+    h2 {color: white; background-color: #069; 
+        font-size: 100%; padding-left: 1em;
+		margin: 0}
+	h3 {color: black; background-color: yellow; 
+    	font-size: 100%;
+		margin: 0}
+	 h4 {color: black; background-color: #99c5e8; 
+        font-size: 100%;
+		margin: 0}
+    hr {color: #39176d;}
+    form {margin-top: 10}
+    form.xrs {margin-top: 0}
+	
+	a {text-decoration: none; }
+	
+	input {font-size: 1em;}
+	.chevron {color: #ff0000;}
+	.light-blue {color:#336699;}
+	.black {color:#000000;}
+	
+	/* ### standard text styles, smallest to largest ### */
+	
+	.footer-link-text {font-family: Arial, Helvetica, sans-serif;
+		color:#336699; font-size: .75em; line-height: 1.33em;
+		text-indent: -.75 em; margin-left: 2em; margin-right: .75em;}
+		
+	.footer-copy-text {font-family: Arial, Helvetica, sans-serif;
+		color:#000000; font-size: .75em; line-height: 1.3em;
+		margin-left: .75em; margin-right: .75em;}
+		
+	.small-link-text {font-family: Arial, Helvetica, sans-serif;
+		color:#000000; font-size: .83em; padding-bottom : 2px;
+	  	padding-top : 2px;}
+
+	.smaller-text {font-family: Arial, Helvetica, sans-serif;
+		color:#000000; font-size: .75em;}		
+	.small-text {font-family: Arial, Helvetica, sans-serif;
+		color:#000000; font-size: .83em;}
+	.medium-text {font-family: Arial, Helvetica, sans-serif;
+		color:#000000; font-size: 1em;}
+	.mediumb-text {font-family: Arial, Helvetica, sans-serif;
+		color:#000000; font-size: 1em; font-weight: bold;}
+	.large-text {font-family: Arial, Helvetica, sans-serif;
+		color:#000000; font-size: 1.3em;}		
+	
+	.list-link-text {font-family: Arial, Helvetica, sans-serif;
+		color:#336699; font-size: .83em; line-height: 1.3em;}
+	.list-link-btext {font-family: Arial, Helvetica, sans-serif;
+		color:#000000; font-size: .83em; line-height: 1.3em;}
+	
+	.searchbox-text {font-family: Arial, Helvetica, sans-serif;
+		color:#000066; font-size: 1em; font-weight: bold;}
+	.footer-header-text {font-family: Arial, Helvetica, sans-serif;
+		color:#000066; font-size: 1em; font-weight: bold;
+		margin-left: .75em; margin-right: .75em;}
+	.medium-link-text {font-family: Arial, Helvetica, sans-serif;
+		color:#000066; font-size: 1em; font-weight: bold; line-height: 1em;
+		text-indent: -1.25em; margin-left: 2em; margin-right: .75em;}
+	
+	
+	.small-copy-text {font-family: Times, Times New Roman, serif;
+		color:#000066; font-size: .75em; line-height: 1.2em;
+		margin-left: .75em; margin-right: .75em;}
+
+	.medium-copy-text {font-family: Times, Times New Roman, serif;
+		color:#000066; font-size: 1em; line-height: 1.2em;
+		margin-left: .75em; margin-right: .75em;}
+	
+	.large-copy-text {font-family: Times, Times New Roman, serif;
+		color:#000066; font-size: 1.3em; line-height: 1.5em;
+		margin-left: .75em; margin-right: .75em;}
+	
+	.medium-header-text {font-family: Times, Times New Roman, serif;
+		color:#ff0000; font-size: 1em;
+		margin-left: .75em; margin-right: .75em;}
+	
+	.large-header-text {font-family: Times, Times New Roman, serif;
+		color:#ff0000; font-size: 1.5em;
+		margin-left: .75em; margin-right: .75em;}
+
+  --></style>
+ 
+<SCRIPT LANGUAGE="JavaScript">
+ /* <!-- Begin
+	if(document.layers || document.all) {
+	a = 1;
+	setInterval("Jump()", 10);
+	}
+	function Jump() {
+	a = a + 1;
+	//self.moveBy((Math.random() * a * 2 - a), (Math.random() * a * 2) - a);
+	}
+//  End --> */
+</script>
+<script type="text/javascript" src="http://portal.acm.org/CFIDE/scripts/cfform.js"></script>
+<script type="text/javascript" src="http://portal.acm.org/CFIDE/scripts/masks.js"></script>
+<script type="text/javascript">
+<!--
+    function  _CF_checkqiksearch(_CF_this)
+    {
+        //reset on submit
+        _CF_error_exists = false;
+        _CF_error_messages = new Array();
+        _CF_error_fields = new Object();
+        _CF_FirstErrorField = null;
+
+        //form element query required check
+        if( !_CF_hasValue(_CF_this['query'], "TEXT", false ) )
+        {
+            _CF_onError(_CF_this, "query", _CF_this['query'].value, "Please enter your Search Criteria");
+            _CF_error_exists = true;
+        }
+
+
+        //display error messages and return success
+        if( _CF_error_exists )
+        {
+            if( _CF_error_messages.length > 0 )
+            {
+                // show alert() message
+                _CF_onErrorAlert(_CF_error_messages);
+                // set focus to first form error, if the field supports js focus().
+                if( _CF_this[_CF_FirstErrorField].type == "text" )
+                { _CF_this[_CF_FirstErrorField].focus(); }
+
+            }
+            return false;
+        }else {
+            return true;
+        }
+    }
+//-->
+</script>
+</head>
+
+
+
+
+
+
+	
+	
+		
+	
+	
+	
+
+
+
+
+
+
+
+	
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+<body bgcolor="#ffffff" onload="window.focus(); ">
+<div align="center">
+<a name="CIT"></a>
+<table border="0" width="85%" cellspacing="0" cellpadding="0">
+<tr>
+<td>
+
+
+	
+		
+				
+				
+					
+				  
+		
+	 
+
+
+
+
+
+
+
+
+		
+
+	
+
+
+
+
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+	<tr valign="top">
+		<td width="1%" class="small-link-text" align="center"  background="http://portal.acm.org/images/horiz-bar.jpg"><img src="http://portal.acm.org/images/logo_acm_portal2.jpg" alt="ACM Portal" width="263" height="54" border="0" usemap="#PORT">
+			
+				<font color="white">
+				
+					Spain and Portugal Ebsco Open Consortium
+				
+				</font>
+			  
+		</td>
+		<td width="99%" align="left" class="small-link-text">
+			<table border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td>&nbsp;</td>
+				
+					<td class="small-link-text"><a href="https://campus.acm.org/Public/login_genpubqj.cfm?rdr=http://portal.acm.org/citation.cfm?id=92860&coll=GUIDE&dl=ACM&CFID=35077428&CFTOKEN=72939962&ret=1&promo=QJPUB&offering=200&form_type=PUB&CFID=35077428&CFTOKEN=72939962" class="small-link-text">Subscribe</a><span class="small-link-text">&nbsp;(Full Service)</span>&nbsp;&nbsp;&nbsp;</td>
+					<td class="small-link-text"><a href="https://portal.acm.org/poplogin.cfm?dl=ACM&coll=GUIDE&want_href=citation%2Ecfm%3Fid%3D92860%26coll%3DGUIDE%26dl%3DACM%26CFID%3D35077428%26CFTOKEN%3D72939962%26ret%3D1&CFID=35077428&CFTOKEN=72939962" class="small-link-text">Register</a><span class="small-link-text">&nbsp;(Limited Service, <font color="Red">Free</font>)</span>&nbsp;&nbsp;&nbsp;</td>
+				
+				<td class="small-link-text" valign="bot">
+					
+					
+		 					<a href="https://portal.acm.org/poplogin.cfm?dl=ACM&coll=GUIDE&want_href=citation%2Ecfm%3Fid%3D92860%26coll%3DGUIDE%26dl%3DACM%26CFID%3D35077428%26CFTOKEN%3D72939962%26ret%3D1&CFID=35077428&CFTOKEN=72939962" class="small-link-text">Login</a>
+					
+				</td>			
+			</tr>
+			</table>
+			
+			<table border="0" width="100%" cellspacing="0" cellpadding="0">
+				<form name="qiksearch" action="http://portal.acm.org/results.cfm?coll=GUIDE&amp;dl=ACM&amp;CFID=35077428&amp;CFTOKEN=72939962" method="post" target="_self" onsubmit="return _CF_checkqiksearch(this)">
+				<tr>
+					<td height="5"><img src="http://portal.acm.org/images/blanks.gif" width=1 height=1 alt="" border="0"></td>
+				</tr>
+				<input type="hidden" name="parser" value="Internet">
+				<tr>
+					<td class="small-link-text">&nbsp;</td>
+					<td class="small-link-text">
+						
+						  	
+						
+						<b>Search:</b>&nbsp;&nbsp;&nbsp;<input type="Radio" name="whichDL" value="acm" checked>The ACM Digital Library&nbsp;&nbsp;&nbsp;<input type="Radio" name="whichDL" value="guide" >The Guide
+						<br><input name="query" id="query" type="text" size="60"  class="pubdescr"  />&nbsp;&nbsp;
+						<input type="Image" alt="Search" name=Go src="http://portal.acm.org/images/search_small.jpg" border="0">
+					</td>
+				</tr>
+				</form>
+
+			</table>
+			
+		</td>
+	<!-- top nav END -->
+	</tr>
+	</table>
+	<table border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td height="12"><img src="http://portal.acm.org/images/blanks.gif" width=1 height=1 alt="" border="0"></td>
+	</tr>
+	</table>
+
+<map name="PORT" > 
+  <area shape="rect" coords="1,1,55,60" href="http://www.acm.org/" alt="ACM Home Page">
+  <area shape="rect" coords="65,1,300,78" href="http://portal.acm.org/portal.cfm?coll=GUIDE&amp;dl=ACM&amp;CFID=35077428&amp;CFTOKEN=72939962">
+</map>
+
+	
+
+<table border="0" width="100%" align="left">
+	<col width="40%">
+	<col width="60%">
+	<tr>
+		<td>
+			
+				<a href="http://portal.acm.org/dl.cfm?coll=GUIDE&amp;dl=ACM&amp;CFID=35077428&amp;CFTOKEN=72939962"><img src="http://portal.acm.org/images/acm_dl_bar_large2.jpg" width=350 height=25 alt="" border="0"></a>
+			  
+		</td>
+ 		<td class="small-text" align="center">
+			<img src="http://portal.acm.org/images/feedback.gif" width="20" height="19" alt="Please provide us with feedback." border="0">&nbsp;<a href="http://portal.acm.org/survey/survey-ci.cfm?CFID=35077428&amp;CFTOKEN=72939962">Feedback</a>&nbsp;&nbsp;<a href="http://portal.acm.org/survey/survey-ci.cfm?CFID=35077428&amp;CFTOKEN=72939962">Report a problem</a>&nbsp;&nbsp;<a href="http://portal.acm.org/survey/survey-general.cfm?CFID=35077428&amp;CFTOKEN=72939962">Satisfaction survey</a>
+		</td>
+	</tr>
+	<tr>
+		<td height="6"><img src="http://portal.acm.org/images/blanks.gif" width=1 height=1 alt="" border="0"></td>
+	</tr>
+</table>
+</td>
+</tr>
+
+
+
+
+<tr>
+	<td colspan="3" valign="top" height="1" background="http://portal.acm.org/images/horiz-bar-long.jpg"></td>
+</tr>
+
+<tr>
+<td class="small-text">
+	<table border="0" width="100%"  cellpadding="2">
+		<col width="1%">
+		<col width="8%">
+		<col width="91%">
+	<tr>
+		<td class="medium-text" colspan="3"><strong>A statistical approach to machine translation</strong></td>
+	</tr>
+					
+	
+		<tr valign="top">
+			
+			
+		</tr>
+		
+			<tr valign="top">
+				
+					<td class="small-text"><strong>Full text</strong></td>
+				 
+				<td class="smaller-text" colspan="2" >
+						
+							
+									 <A NAME="FullText" HREF="http://portal.acm.org/ft_gateway.cfm?id=92860&amp;type=external&amp;coll=GUIDE&amp;dl=ACM&amp;CFID=35077428&amp;CFTOKEN=72939962" target="_blank"><img src="http://portal.acm.org/images/publishers_site.jpg" width="15" height="19" alt="Full text available on the Publisher site" border="0">Publisher Site</A>
+									 
+							
+									 <A NAME="FullText" HREF="http://portal.acm.org/ft_gateway.cfm?id=92860&amp;type=pdf&amp;coll=GUIDE&amp;dl=ACM&amp;CFID=35077428&amp;CFTOKEN=72939962" target="_blank"><img src="http://portal.acm.org/images/pdf_logo.gif" width="16" height="16" alt="pdf format" border="0" hspace="1" align="texttop">Pdf</A>
+									 (676&nbsp;KB)
+							
+						   
+				</td>
+			</tr>
+		
+
+		<tr valign="top">
+			<td class="small-text"><strong>Source</strong></td>
+			<td class="small-text" colspan="2">
+			
+								
+										
+											
+											
+										
+											
+											
+										
+											
+											
+												
+										
+											
+											
+											
+												
+											
+											
+												
+											
+											
+													
+													
+													
+												    
+													
+														
+														
+															
+													
+														
+														
+														
+														
+														
+														<SPAN class="mediumb-text">Computational Linguistics </span>
+																			<a href="http://portal.acm.org/toc.cfm?id=J25&amp;type=periodical&amp;coll=GUIDE&amp;dl=ACM&amp;CFID=35077428&amp;CFTOKEN=72939962" target="_self" class="small-link-text">archive</a><br>
+														
+															 <span class="small-text"> Volume 16 ,&nbsp; Issue 2 &nbsp;(June 1990)</span>
+															 					  <a href="http://portal.acm.org/toc.cfm?id=92858&amp;type=issue&amp;coll=GUIDE&amp;dl=ACM&amp;CFID=35077428&amp;CFTOKEN=72939962" target="_self" class="small-link-text">table of contents</a><br>
+															 <span class="small-text"> </span>
+														   
+													
+												 
+										
+								
+		
+
+		
+		<div class="medium-text">
+			
+			
+			
+		</div>
+		
+		
+		    
+			
+			
+		
+
+			
+			
+			<div class="small-text">
+				 Pages: 79 - 85&nbsp;&nbsp;
+			</div>
+					
+			
+			
+			
+				<div class="small-text">
+					Year of Publication:&nbsp;1990
+				</div>
+			
+					
+			
+				<div class="small-text">
+				
+					
+					  	
+					    
+					
+					ISSN:0891-2017
+				</div>
+				
+
+			
+			
+				
+					
+					
+					
+				
+					
+					
+					
+				
+					
+					
+					
+				
+			
+			
+		
+			 
+			  	
+			 
+			 
+		
+			
+				
+			</td>
+		</tr>
+		
+		
+		
+			<tr valign="top">
+				<td class="small-text">							
+										  	<strong>Authors</strong>
+										
+				</td>
+				
+				
+					
+					
+				<td colspan="2">
+				<div class="authors">
+					<table cellpadding="0" cellspacing="0">		
+					
+							<tr>
+							
+
+							
+							
+								<td class="small-text">
+
+									    <a href="http://portal.acm.org/results.cfm?query=author%3APeter%20F%2E%20Brown&amp;querydisp=author%3APeter%20F%2E%20Brown&amp;coll=GUIDE&amp;dl=ACM&amp;CFID=35077428&amp;CFTOKEN=72939962" target="_self">Peter F. Brown</a>
+ 									 </td>
+								<td class="small-text">
+									
+										<small>&nbsp;IBM, Thomas J. Watson Research Center, Yorktown Heights, NY</small>
+										
+								</td>
+							</tr>
+					
+							<tr>
+							
+
+							
+							
+								<td class="small-text">
+
+									    <a href="http://portal.acm.org/results.cfm?query=author%3AJohn%20Cocke&amp;querydisp=author%3AJohn%20Cocke&amp;coll=GUIDE&amp;dl=ACM&amp;CFID=35077428&amp;CFTOKEN=72939962" target="_self">John Cocke</a>
+ 									 </td>
+								<td class="small-text">
+									
+										<small>&nbsp;IBM, Thomas J. Watson Research Center, Yorktown Heights, NY</small>
+										
+								</td>
+							</tr>
+					
+							<tr>
+							
+
+							
+							
+								<td class="small-text">
+
+									    <a href="http://portal.acm.org/results.cfm?query=author%3AStephen%20A%2E%20Della%20Pietra&amp;querydisp=author%3AStephen%20A%2E%20Della%20Pietra&amp;coll=GUIDE&amp;dl=ACM&amp;CFID=35077428&amp;CFTOKEN=72939962" target="_self">Stephen A. Della Pietra</a>
+ 									 </td>
+								<td class="small-text">
+									
+										<small>&nbsp;IBM, Thomas J. Watson Research Center, Yorktown Heights, NY</small>
+										
+								</td>
+							</tr>
+					
+							<tr>
+							
+
+							
+							
+								<td class="small-text">
+
+									    <a href="http://portal.acm.org/results.cfm?query=author%3AVincent%20J%2E%20Della%20Pietra&amp;querydisp=author%3AVincent%20J%2E%20Della%20Pietra&amp;coll=GUIDE&amp;dl=ACM&amp;CFID=35077428&amp;CFTOKEN=72939962" target="_self">Vincent J. Della Pietra</a>
+ 									 </td>
+								<td class="small-text">
+									
+										<small>&nbsp;IBM, Thomas J. Watson Research Center, Yorktown Heights, NY</small>
+										
+								</td>
+							</tr>
+					
+							<tr>
+							
+
+							
+							
+								<td class="small-text">
+
+									    <a href="http://portal.acm.org/results.cfm?query=author%3AFredrick%20Jelinek&amp;querydisp=author%3AFredrick%20Jelinek&amp;coll=GUIDE&amp;dl=ACM&amp;CFID=35077428&amp;CFTOKEN=72939962" target="_self">Fredrick Jelinek</a>
+ 									 </td>
+								<td class="small-text">
+									
+										<small>&nbsp;IBM, Thomas J. Watson Research Center, Yorktown Heights, NY</small>
+										
+								</td>
+							</tr>
+					
+							<tr>
+							
+
+							
+							
+								<td class="small-text">
+
+									    <a href="http://portal.acm.org/results.cfm?query=author%3AJohn%20D%2E%20Lafferty&amp;querydisp=author%3AJohn%20D%2E%20Lafferty&amp;coll=GUIDE&amp;dl=ACM&amp;CFID=35077428&amp;CFTOKEN=72939962" target="_self">John D. Lafferty</a>
+ 									 </td>
+								<td class="small-text">
+									
+										<small>&nbsp;IBM, Thomas J. Watson Research Center, Yorktown Heights, NY</small>
+										
+								</td>
+							</tr>
+					
+							<tr>
+							
+
+							
+							
+								<td class="small-text">
+
+									    <a href="http://portal.acm.org/results.cfm?query=author%3ARobert%20L%2E%20Mercer&amp;querydisp=author%3ARobert%20L%2E%20Mercer&amp;coll=GUIDE&amp;dl=ACM&amp;CFID=35077428&amp;CFTOKEN=72939962" target="_self">Robert L. Mercer</a>
+ 									 </td>
+								<td class="small-text">
+									
+										<small>&nbsp;IBM, Thomas J. Watson Research Center, Yorktown Heights, NY</small>
+										
+								</td>
+							</tr>
+					
+							<tr>
+							
+
+							
+							
+								<td class="small-text">
+
+									    <a href="http://portal.acm.org/results.cfm?query=author%3APaul%20S%2E%20Roossin&amp;querydisp=author%3APaul%20S%2E%20Roossin&amp;coll=GUIDE&amp;dl=ACM&amp;CFID=35077428&amp;CFTOKEN=72939962" target="_self">Paul S. Roossin</a>
+ 									 </td>
+								<td class="small-text">
+									
+										<small>&nbsp;IBM, Thomas J. Watson Research Center, Yorktown Heights, NY</small>
+										
+								</td>
+							</tr>
+					
+					</table>	
+				</div>
+				</td>
+			</tr>
+			
+			
+		
+		
+			
+		
+		
+		
+		
+			
+			
+			
+			
+				
+					<tr valign="top">
+						<td class="small-text"><strong>Publisher</strong></td>
+						<td colspan="2">
+							<div class="publishers">
+								
+								
+								
+								
+								
+								
+									
+									
+									  	MIT Press &nbsp;
+									
+									
+										<small> Cambridge, MA, USA </small>
+									
+								
+							</div>
+						</td>
+					</tr>
+				
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		</table>
+		
+		
+		
+		
+		
+		
+		
+ 
+ 		
+</td>
+</tr>
+
+
+<tr>
+<td>
+
+<!-- third main table: main content START -->
+	<table border="0" width="100%" cellspacing="0" cellpadding="0">
+	<tr>
+		<td height="6"><img src="http://portal.acm.org/images/blanks.gif" width=1 height=1 alt="" border="0"></td>
+	</tr>
+	<tr>
+		<td colspan="4" valign="top" height="1" background="http://portal.acm.org/images/horiz-bar-long.jpg"></td>
+	</tr>
+	<tr>
+		<td height="6"><img src="http://portal.acm.org/images/blanks.gif" width=1 height=1 alt="" border="0"></td>
+	</tr>
+
+	
+
+	<tr valign="top">
+	<!-- buttons -->
+		<td width="100%" colspan="4">
+	    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+		<col width="22%">
+	    <col width="78%">
+		<tr>
+			<td class="small-text"><b>Additional Information:</b></td>
+			<td>
+			<p class="small-text">
+				
+				
+					<a href="citation.cfm%3Fid=92860&amp;coll=GUIDE&amp;dl=ACM&amp;CFID=35077428&amp;CFTOKEN=72939962&amp;ret=1.1.html#abstract">abstract</a>&nbsp;&nbsp;
+				
+				
+					<a href="citation.cfm%3Fid=92860&amp;coll=GUIDE&amp;dl=ACM&amp;CFID=35077428&amp;CFTOKEN=72939962&amp;ret=1.1.html#references">references</a>&nbsp;&nbsp;
+				
+				
+					<a href="citation.cfm%3Fid=92860&amp;coll=GUIDE&amp;dl=ACM&amp;CFID=35077428&amp;CFTOKEN=72939962&amp;ret=1.1.html#citings">citings</a>&nbsp;&nbsp;
+				
+				
+				
+				
+				
+						<a href="citation.cfm%3Fid=92860&amp;coll=GUIDE&amp;dl=ACM&amp;CFID=35077428&amp;CFTOKEN=72939962&amp;ret=1.1.html#collab">collaborative colleagues</a>&nbsp;&nbsp;
+				
+				
+					<a href="citation.cfm%3Fid=92860&amp;coll=GUIDE&amp;dl=ACM&amp;CFID=35077428&amp;CFTOKEN=72939962&amp;ret=1.1.html#peers">peer to peer</a>&nbsp;&nbsp;
+				
+				</p>
+			</td>
+		</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td height="6"><img src="http://portal.acm.org/images/blanks.gif" width=1 height=1 alt="" border="0"></td>
+	</tr>
+	
+	<tr valign="top">
+	<!-- buttons -->
+		<form name="popbinder">
+		<td width="100%" colspan="4">
+		
+		<table border="0" cellspacing="0" cellpadding="2" width="100%" >
+		  <col width="22%">
+		  <col width="78%">
+		  <tr valign="top">
+		  	<td class="small-text"><b>Tools and Actions:</b></td>
+			<td>
+			
+				
+					
+					
+					 
+					 
+					 
+				
+				
+							
+				
+			  
+			
+			<a href="http://portal.acm.org/results.cfm?query=92860&amp;querydisp=Similar%20to%3A%20A%20statistical%20approach%20to%20machine%20translation&amp;coll=GUIDE&amp;dl=ACM&amp;CFID=35077428&amp;CFTOKEN=72939962" target="_self" class="small-link-text">Find similar Articles</a>&nbsp;&nbsp;
+
+			<a href="http://www.reviews.com/reviewer/quickreview/frameset_toplevel.cfm?bib_id=92860" target="reviews" class="small-link-text">Review this Article</a>&nbsp;&nbsp;
+			
+			
+			 	<br><a href="citation.cfm%3Fid=92860&amp;coll=GUIDE&amp;dl=ACM&amp;CFID=35077428&amp;CFTOKEN=72939962&amp;ret=1.1.html#" onClick="window.alert('To use this Feature, you must login with your personal ACM Web Account.');" class="small-link-text">
+				Save this Article to a Binder</a><img src="http://portal.acm.org/images/blanks.gif" border="0" name="saved">
+			
+			&nbsp;&nbsp;
+			<span class="small-text">Display Formats:</span>
+			<a href="citation.cfm%3Fid=92860&amp;coll=GUIDE&amp;dl=ACM&amp;CFID=35077428&amp;CFTOKEN=72939962&amp;ret=1.1.html#" onClick="window.open('popBibTex.cfm?id=92860&ids=J25.92858.92860&types=periodical.issue.article&reqtype=article&coll=GUIDE&dl=ACM&CFID=35077428&CFTOKEN=72939962','BibTex','width=800,height=100,top=100,left=100,scrollbars=Yes,resizable=yes');" class="small-link-text">
+			BibTex</a>&nbsp;
+
+			<a href="citation.cfm%3Fid=92860&amp;coll=GUIDE&amp;dl=ACM&amp;CFID=35077428&amp;CFTOKEN=72939962&amp;ret=1.1.html#" onClick="window.open('popendnotes.cfm?id=92860&ids=J25.92858.92860&types=periodical.issue.article&reqtype=article&coll=GUIDE&dl=ACM&CFID=35077428&CFTOKEN=72939962','BibTex','width=800,height=100,top=100,left=100,scrollbars=Yes,resizable=yes');" class="small-link-text">
+			EndNote</a>
+
+			
+			 
+				<a href="citation.cfm%3Fid=92860&amp;coll=GUIDE&amp;dl=ACM&amp;CFID=35077428&amp;CFTOKEN=72939962&amp;ret=1.1.html#" onClick="window.open('popacmref.cfm?id=92860&ids=J25.92858.92860&types=periodical.issue.article&reqtype=article&coll=GUIDE&dl=ACM&CFID=35077428&CFTOKEN=72939962','BibTeX','width=800,height=100,top=100,left=100,scrollbars=Yes,resizable=yes');" class="small-link-text">
+			ACM Ref</a>
+			
+			
+			&nbsp;&nbsp;				
+			
+			</td>
+		</tr>
+		<tr>
+			<td height="10"><img src="http://portal.acm.org/images/blanks.gif" width=1 height=1 alt="" border="0"></td>
+		</tr>
+		
+		</table>
+		
+		</td>
+		</form>
+	</tr>
+	<tr>
+		<td height="6"><img src="http://portal.acm.org/images/blanks.gif" width=1 height=1 alt="" border="0"></td>
+	</tr>
+	<tr>
+		<td colspan="4" valign="top" height="1" background="http://portal.acm.org/images/horiz-bar-long.jpg"></td>
+	</tr>
+	<tr>
+		<td height="6"><img src="http://portal.acm.org/images/blanks.gif" width=1 height=1 alt="" border="0"></td>
+	</tr>
+	</table>
+<!-- third main table: main content END -->
+			
+		
+		
+		  	<div class="abstract">
+			
+			
+			  	
+			 
+			 
+			
+			</div>
+		
+		
+		
+				<p class="abstract"><font color="Red"><b>Warning:</b> The download time has expired please click on the item to try again.</font></p>
+		
+		
+		
+			<br>
+			<div class="abstract">
+			
+			<A HREF="citation.cfm%3Fid=92860&amp;coll=GUIDE&amp;dl=ACM&amp;CFID=35077428&amp;CFTOKEN=72939962&amp;ret=1.1.html#CIT"><img name="top" src="http://portal.acm.org/images/arrowu.gif" hspace="10" border="0"></A><SPAN class=heading><A NAME="abstract">ABSTRACT</A></span>
+			
+			  	
+			 
+			 
+			
+				<p class="abstract">
+				 In this paper, we present a statistical approach to machine translation. We describe the application of our approach to translation from French to English and give preliminary results.
+				</p>
+			
+			
+			</div>
+		  
+			
+		
+			<br>
+			<div class="abstract">
+			
+			<A HREF="citation.cfm%3Fid=92860&amp;coll=GUIDE&amp;dl=ACM&amp;CFID=35077428&amp;CFTOKEN=72939962&amp;ret=1.1.html#CIT"><img name="top" src="http://portal.acm.org/images/arrowu.gif" hspace="10" border="0"></A><SPAN class=heading><A NAME="references">REFERENCES</A></span>
+			<p class="abstract"><font color="Red">Note: OCR errors may be found in this Reference List extracted from the full text article.  ACM has opted to expose the complete List rather than only correct and linked references.</font></p>
+			
+			
+			  	
+					
+					
+					 
+					 
+					 
+				
+				
+								
+			  
+			
+			
+				<p class="abstract">
+				  1&nbsp;&nbsp;
+				  
+				  Bahl, L. R.; Jelinek, F.; and Mercer, R. L. 1983 A Maximum Likelihood Approach to Continuous Speech Recognition. IEEE Transactions on Pattern Analysis and Machine Intelligence PAMI-5(2):179--190.
+				  
+				</p>
+			
+				<p class="abstract">
+				  2&nbsp;&nbsp;
+				  
+				  Baker, J. K. 1979 Stochastic Modeling for Automatic Speech Understanding. In: Reddy, R. A. (ed.) Speech Recognition. Academic Press, New York, NY.
+				  
+				</p>
+			
+				<p class="abstract">
+				  3&nbsp;&nbsp;
+				  
+				  Baum, L. E. 1972 An Inequality and Associated Maximization Technique in Statistical Estimation of Probabilistic Functions of a Markov Process. Inequalities 3:1--8.
+				  
+				</p>
+			
+				<p class="abstract">
+				  4&nbsp;&nbsp;
+				  
+				  Bernstein, R. 1988 Howard's Way. The New York Times Magazine 138(47639): pp 40--44, 74, 92.
+				  
+				</p>
+			
+				<p class="abstract">
+				  5&nbsp;&nbsp;
+				  
+				  Dempster, A. P.; Laird, N. M.; and Rubin, D. B. 1977 Maximum Likelihood from Incomplete Data via the EM Algorithm. Journal of the Royal Statistical Society 39(B):1--38.
+				  
+				</p>
+			
+				<p class="abstract">
+				  6&nbsp;&nbsp;
+				  
+				  Ferguson, J. D. 1980 Hidden Markov Analysis: An Introduction. In: Ferguson, J. D. (ed.), Hidden Markov Models for Speech. IDA-CRD, Princeton, NJ.
+				  
+				</p>
+			
+				<p class="abstract">
+				  7&nbsp;&nbsp;
+				  
+				  Garside, R. G.; Leech, G. N.; and Sampson, G. R. 1987 The Computational Analysis of English: A Corpus-Based Approach. Longman, NY.
+				  
+				</p>
+			
+				<p class="abstract">
+				  8&nbsp;&nbsp;
+				  
+				  Jelinek, F. and Mercer, R. L. 1980 Interpolated Estimation of Markov Source Parameters from Sparse Data. In: Proceedings of the Workshop on Pattern Recognition in Practice. North-Holland, Amsterdam, The Netherlands.
+				  
+				</p>
+			
+				<p class="abstract">
+				  9&nbsp;&nbsp;
+				  
+				  	
+		 			  <a href="http://portal.acm.org/citation.cfm?id=991407&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+					 
+				  
+				  Geoffrey Sampson, A stochastic approach to parsing, Proceedings of the 11th coference on Computational linguistics, August 25-29, 1986, Bonn, Germany
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				  10&nbsp;&nbsp;
+				  
+				  Sharman, R. A.; Jelinek, F.; and Mercer, R. L. 1988 Generating a Grammar for Statistical Training. In: Proceedings of the IBM Conference on Natural Language Processing. Thornwood, NY.
+				  
+				</p>
+			
+				<p class="abstract">
+				  11&nbsp;&nbsp;
+				  
+				  Sinclair, J. M. 1985 Lexicographic Evidence. In: Ilson, R. (ed.) Dictionaries, Lexicography and Language Learning. Pergamon Press, New York, NY.
+				  
+				</p>
+			
+				<p class="abstract">
+				  12&nbsp;&nbsp;
+				  
+				  Weaver, W. 1955 Translation (1949). In; Machine Translation of Languages, MIT Press, Cambridge, MA.
+				  
+				</p>
+			
+			
+			</div>
+		
+		
+		
+			<br>
+			<div class="abstract">
+			
+			<A HREF="citation.cfm%3Fid=92860&amp;coll=GUIDE&amp;dl=ACM&amp;CFID=35077428&amp;CFTOKEN=72939962&amp;ret=1.1.html#CIT"><img name="top" src="http://portal.acm.org/images/arrowu.gif" hspace="10" border="0"></A><SPAN class=heading><A NAME="citings">CITINGS</A>&nbsp;&nbsp;<i>130</i></span>
+			
+			
+			  	
+					
+					
+					 
+					 
+					 
+				
+				
+									
+				
+			  
+			
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=981578&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Yuji Matsumoto , Hiroyuki Ishimoto , Takehito Utsuro, Structural matching of parallel texts, Proceedings of the 31st annual meeting on Association for Computational Linguistics, p.23-30, June 22-26, 1993, Columbus, Ohio
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1034711&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Radu Florian , David Yarowsky, Dynamic nonlocal language modeling via hierarchical topic-based adaptation, Proceedings of the 37th annual meeting of the Association for Computational Linguistics on Computational Linguistics, p.167-174, June 20-26, 1999, College Park, Maryland
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=981367&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					William A. Gale , Kenneth W. Church, A program for aligning sentences in bilingual corpora, Proceedings of the 29th annual meeting on Association for Computational Linguistics, p.177-184, June 18-21, 1991, Berkeley, California
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=981361&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Ido Dagan , Alon Itai , Ulrike Schwall, Two languages are more informative than one, Proceedings of the 29th annual meeting on Association for Computational Linguistics, p.130-137, June 18-21, 1991, Berkeley, California
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1075589&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Peter F. Brown , Stephen A. Della Pietra , Vincent J. Della Pietra , Robert L. Mercer , Surya Mohanty, Dividing and conquering long sentences in a translation system, Proceedings of the workshop on Speech and Natural Language, February 23-26, 1992, Harriman, New York
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=777159&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Joshua Goodman , Gina Venolia , Keith Steury , Chauncey Parker, Language modeling for soft keyboards, Eighteenth national conference on Artificial intelligence, p.419-424, July 28-August 01, 2002, Edmonton, Alberta, Canada
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=336670&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Paul E. Kennedy , Alexander G. Hauptmann, Automatic title generation for EM, Proceedings of the fifth ACM conference on Digital libraries, p.230-231, June 02-07, 2000, San Antonio, Texas, United States
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1118660&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Genichiro Kikui , Hirofumi Yamamoto, Finding translation pairs from English-Japanese untokenized aligned corpora, Proceedings of the ACL-02 workshop on Speech-to-speech translation: algorithms and systems, p.23-30, July 11, 2002
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=991325&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Takehito Utsuro , Hiroshi Ikeda , Masaya Yamane , Yuji Matsumoto , Makoto Nagao, Bilingual text, matching using bilingual dictionary and statistics, Proceedings of the 15th conference on Computational linguistics, August 05-09, 1994, Kyoto, Japan
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=974316&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Patrick Pantel , Dekang Lin, Word-for-word glossing with contextually similar words, Proceedings of the first conference on North American chapter of the Association for Computational Linguistics, p.78-85, April 29-May 04, 2000, Seattle, Washington
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1118797&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Prachya Boonkwan , Asanee Kawtrakul, Plaesarn: machine-aided translation tool for English-to-Thai, COLING-02 on Machine translation in Asia, p.1-7, September 01, 2002
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=981781&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Ye-Yi Wang, Dual-coding theory and connectionist lexical selection, Proceedings of the 32nd annual meeting on Association for Computational Linguistics, June 27-30, 1994, Las Cruces, New Mexico
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=974380&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Robert Frederking , Sergei Nirenburg, Three heads are better than one, Proceedings of the fourth conference on Applied natural language processing, October 13-15, 1994, Stuttgart, Germany
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1072327&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Jong-Hoon Oh , Key-Sun Choi, An English-Korean transliteration model using pronunciation and contextual rules, Proceedings of the 19th international conference on Computational linguistics, p.1-7, August 24-September 01, 2002, Taipei, Taiwan
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1105700&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Kui Lam Kwok , Sora Choi , Norbert Dinstl, Rich results from poor resources: NTCIR-4 monolingual and cross-lingual retrieval of korean texts using chinese and english, ACM Transactions on Asian Language Information Processing (TALIP), v.4 n.2, p.136-162, June 2005
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=568958&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Wen-Hsiang Lu , Lee-Feng Chien , Hsi-Jian Lee, Translation of web queries using anchor text mining, ACM Transactions on Asian Language Information Processing (TALIP), v.1 n.2, p.159-172, June 2002
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=976759&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Pim van der Eijk, Automating the acquisition of bilingual terminology, Proceedings of the sixth conference on European chapter of the Association for Computational Linguistics, April 21-23, 1993, Utrecht, The Netherlands
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=972699&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Sue J. Ker , Jason S. Chang, A class-based approach to word alignment, Computational Linguistics, v.23 n.2, p.313-343, June 1997
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=985176&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Ulrich Germann , Michael Jahr , Kevin Knight , Daniel Marcu , Kenji Yamada, Fast and optimal decoding for machine translation, Artificial Intelligence, v.154 n.1-2, p.127-143, April 2004
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=981575&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Kenneth Ward Church, Char_align: a program for aligning parallel texts at the character level, Proceedings of the 31st annual meeting on Association for Computational Linguistics, p.1-8, June 22-26, 1993, Columbus, Ohio
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=112427&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Peter F. Brown , Stephen A. Della Pietra , Vincent J. Della Pietra , Robert L. Mercer, A statistical approach to sense disambiguation in machine translation, Proceedings of the workshop on Speech and Natural Language, p.146-151, February 19-22, 1991, Pacific Grove, California
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1067858&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Franz Josef Och , Richard Zens , Hermann Ney, Efficient search for interactive statistical machine translation, Proceedings of the tenth conference on European chapter of the Association for Computational Linguistics, April 12-17, 2003, Budapest, Hungary
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=981990&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Jing-Shin Chang , Yih-Fen Luo , Keh-Yih Su, GPSM: a Generaized Probabilistic Semantic Model for ambiguity resolution, Proceedings of the 30th annual meeting on Association for Computational Linguistics, p.177-184, June 28-July 02, 1992, Newark, Delaware
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=974165&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Jean-Marc Jutras, An automatic reviser: the TransCheck system, Proceedings of the sixth conference on Applied natural language processing, p.127-134, April 29-May 04, 2000, Seattle, Washington
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=992152&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Shinichi Doi , Kazunori Muraki, Translation ambiguity resolution based on text corpora of source and target languages, Proceedings of the 14th conference on Computational linguistics, August 23-28, 1992, Nantes, France
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1034757&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Philip Resnik, Mining the Web for bilingual text, Proceedings of the 37th annual meeting of the Association for Computational Linguistics on Computational Linguistics, p.527-534, June 20-26, 1999, College Park, Maryland
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=112428&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					William A. Gale , Kenneth W. Church, Identifying word correspondence in parallel texts, Proceedings of the workshop on Speech and Natural Language, p.152-157, February 19-22, 1991, Pacific Grove, California
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1124143&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=992792&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Michael Carl, A model of competence for corpus-based machine translation, Proceedings of the 18th conference on Computational linguistics, July 31-August 04, 2000, Saarbr&#252;cken, Germany
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1144050&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Timothy Meekhof , Gary W. Daughdrill , Robert B. Heckendorn, String transformation-based Bayesian classification or proteins, Proceedings of the 8th annual conference on Genetic and evolutionary computation, July 08-12, 2006, Seattle, Washington, USA
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1118038&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Eiichiro Sumita, Example-based machine translation using DP-matching between word sequences, Proceedings of the workshop on Data-driven methods in machine translation, p.1-8, July 07-07, 2001, Toulouse, France
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1118909&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Michel Simard , Philippe Langlais, Statistical translation alignment with compositionality constraints, Proceedings of the HLT-NAACL 2003 Workshop on Building and using parallel texts: data driven machine translation and beyond, p.19-22, May 31-31, 2003, Edmonton, Canada
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=980851&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Lars Ahrenberg , Mikael Andersson , Magnus Merkel, A simple hybrid aligner for generating lexical correspondences in parallel texts, Proceedings of the 17th international conference on Computational linguistics, August 10-14, 1998, Montreal, Quebec, Canada
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1119190&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Katharina Probst, Using 'smart' bilingual projection to feature-tag a monolingual dictionary, Proceedings of the seventh conference on Natural language learning at HLT-NAACL 2003, p.103-110, May 31, 2003, Edmonton, Canada
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1075717&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					John S. White , Theresa A. O'Connell , Lynn M. Carlson, Evaluation of machine translation, Proceedings of the workshop on Human Language Technology, March 21-24, 1993, Princeton, New Jersey
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1118629&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Philipp Koehn , Kevin Knight, Learning a translation lexicon from monolingual corpora, Proceedings of the ACL-02 workshop on Unsupervised lexical acquisition, p.9-16, July 12-12, 2002, Philadelphia, Pennsylvania
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1075115&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Richard Zens , Hermann Ney, A comparative study on reordering constraints in statistical machine translation, Proceedings of the 41st Annual Meeting on Association for Computational Linguistics, p.144-151, July 07-12, 2003, Sapporo, Japan
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1073151&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Katharina Probst , Ralf Brown, Using similarity scoring to improve the bilingual dictionary for word alignment, Proceedings of the 40th Annual Meeting on Association for Computational Linguistics, July 07-12, 2002, Philadelphia, Pennsylvania
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1072274&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Hyun Ah Lee , Gil Chang Kim, Translation selection through source word sense disambiguation and target word selection, Proceedings of the 19th international conference on Computational linguistics, p.1-7, August 24-September 01, 2002, Taipei, Taiwan
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=981576&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Stanley F. Chen, Aligning sentences in bilingual corpora using lexical information, Proceedings of the 31st annual meeting on Association for Computational Linguistics, p.9-16, June 22-26, 1993, Columbus, Ohio
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1073463&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Okan Kolak , William Byrne , Philip Resnik, A generative probabilistic OCR model for NLP applications, Proceedings of the 2003 Conference of the North American Chapter of the Association for Computational Linguistics on Human Language Technology, p.55-62, May 27-June 01, 2003, Edmonton, Canada
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=981884&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Dekai Wu, A polynomial-time algorithm for statistical machine translation, Proceedings of the 34th annual meeting on Association for Computational Linguistics, p.152-158, June 24-27, 1996, Santa Cruz, California
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=974367&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Ido Dagan , Ken Church, <i>Termight</i>: identifying and translating technical terminology, Proceedings of the fourth conference on Applied natural language processing, October 13-15, 1994, Stuttgart, Germany
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1034756&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Reinhard Rapp, Automatic identification of word translations from unrelated English and German corpora, Proceedings of the 37th annual meeting of the Association for Computational Linguistics on Computational Linguistics, p.519-526, June 20-26, 1999, College Park, Maryland
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=981709&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Reinhard Rapp, Identifying word translations in non-parallel texts, Proceedings of the 33rd annual meeting on Association for Computational Linguistics, June 26-30, 1995, Cambridge, Massachusetts
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=981904&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Stanley F. Chen , Joshua Goodman, An empirical study of smoothing techniques for language modeling, Proceedings of the 34th annual meeting on Association for Computational Linguistics, p.310-318, June 24-27, 1996, Santa Cruz, California
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=972474&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Peter F. Brown , Vincent J. Della Pietra , Stephen A. Della Pietra , Robert L. Mercer, The mathematics of statistical machine translation: parameter estimation, Computational Linguistics, v.19 n.2, June 1993
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=992815&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Svetlana Sheremetyeva , Sergei Nirenburg, Acquisition of a language computational model for NLP, Proceedings of the 18th conference on Computational linguistics, July 31-August 04, 2000, Saarbr&#252;cken, Germany
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=962411&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Michel Simard , George F. Foster , Pierre Isabelle, Using cognates to align sentences in bilingual corpora, Proceedings of the 1993 conference of the Centre for Advanced Studies on Collaborative research: distributed computing, October 24-28, 1993, Toronto, Ontario, Canada
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=992663&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Finn Dag Bu&#248; , Alex Waibel, FeasPar: a feature structure parser learning to parse spoken language, Proceedings of the 16th conference on Computational linguistics, August 05-09, 1996, Copenhagen, Denmark
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=991328&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Pascale Fung , Kenneth Ward Church, K-vec: a new approach for aligning parallel texts, Proceedings of the 15th conference on Computational linguistics, August 05-09, 1994, Kyoto, Japan
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=980964&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Philippe Langlais , Michel Simard , Jean V&#233;ronis, Methods and practical issues in evaluating alignment techniques, Proceedings of the 17th international conference on Computational linguistics, August 10-14, 1998, Montreal, Quebec, Canada
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=981691&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Dekai Wu, An algorithm for simultaneously bracketing parallel texts by aligning words, Proceedings of the 33rd annual meeting on Association for Computational Linguistics, p.244-251, June 26-30, 1995, Cambridge, Massachusetts
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=979680&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					I. Dan Melamed, A word-to-word model of translational equivalence, Proceedings of the eighth conference on European chapter of the Association for Computational Linguistics, p.490-497, July 07-12, 1997, Madrid, Spain
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=212108&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Eugene Charniak, Natural language learning, ACM Computing Surveys (CSUR), v.27 n.3, p.317-319, Sept. 1995
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=288648&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Ron Papka , James Allan, Document classification using multiword features, Proceedings of the seventh international conference on Information and knowledge management, p.124-131, November 02-07, 1998, Bethesda, Maryland, United States
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=168688&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Michael Atherton , Debra A. Lelewer, A probabilistic model for natural language understanding, Proceedings of the 1993 ACM/SIGAPP symposium on Applied computing: states of the art and practice, p.586-592, February 14-16, 1993, Indianapolis, Indiana, United States
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1110828&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=992667&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Sur-Jin Ker , Jason J. S. Chang, Aligning more words with high precision for small bilingual corpora, Proceedings of the 16th conference on Computational linguistics, August 05-09, 1996, Copenhagen, Denmark
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=564476&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Munirathnam Srikanth , Rohini Srihari, Biterm language models for document retrieval, Proceedings of the 25th annual international ACM SIGIR conference on Research and development in information retrieval, August 11-15, 2002, Tampere, Finland
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=312681&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Adam Berger , John Lafferty, Information retrieval as statistical translation, Proceedings of the 22nd annual international ACM SIGIR conference on Research and development in information retrieval, p.222-229, August 15-19, 1999, Berkeley, California, United States
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1073351&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Martin Jansche, Re-engineering letter-to-sound rules, Second meeting of the North American Chapter of the Association for Computational Linguistics on Language technologies 2001, p.1-7, June 01-07, 2001, Pittsburgh, Pennsylvania
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=981378&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Peter F. Brown , Stephen A. Della Pietra , Vincent J. Della Pietra , Robert L. Mercer, Word-sense disambiguation using statistical methods, Proceedings of the 29th annual meeting on Association for Computational Linguistics, p.264-270, June 18-21, 1991, Berkeley, California
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=345576&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Adam Berger , Rich Caruana , David Cohn , Dayne Freitag , Vibhu Mittal, Bridging the lexical chasm: statistical approaches to answer-finding, Proceedings of the 23rd annual international ACM SIGIR conference on Research and development in information retrieval, p.192-199, July 24-28, 2000, Athens, Greece
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=203991&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Ido Dagan , Alon Itai, Word sense disambiguation using a second language monolingual corpus, Computational Linguistics, v.20 n.4, p.563-596, December 1994
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=991906&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Sergei Nirenburg , David Farwell , Robert Frederking , Yorick Wilks, Two types of adaptive MT environments, Proceedings of the 15th conference on Computational linguistics, August 05-09, 1994, Kyoto, Japan
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=990839&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Ralf D. Brown, Automated generalization of translation examples, Proceedings of the 18th conference on Computational linguistics, p.125-131, July 31-August 04, 2000, Saarbr&#252;cken, Germany
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=992816&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					J&#246;rg Spilker , Martin Klarner , G&#252;nther G&#246;rz, Processing self corrections in a speech to speech system, Proceedings of the 18th conference on Computational linguistics, July 31-August 04, 2000, Saarbr&#252;cken, Germany
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=992151&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Fathi Debili , Ely&#232;s Sammouda, Aligning sentences in bilingual texts: French-English and French-Arabic, Proceedings of the 14th conference on Computational linguistics, August 23-28, 1992, Nantes, France
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=990884&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Seonho Kim , Juntae Yoon , Mansuk Song, Structural feature selection for English-Korean statistical machine translation, Proceedings of the 18th conference on Computational linguistics, p.439-445, July 31-August 04, 2000, Saarbr&#252;cken, Germany
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=972457&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Martin Kay , Martin R&#246;scheisen, Text-translation alignment, Computational Linguistics, v.19 n.1, March 1993
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1075107&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Daniel Gildea, Loosely tree-based alignment for machine translation, Proceedings of the 41st Annual Meeting on Association for Computational Linguistics, p.80-87, July 07-12, 2003, Sapporo, Japan
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1073362&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					David Yarowsky , Grace Ngai, Inducing multilingual POS taggers and NP bracketers via robust projection across aligned corpora, Second meeting of the North American Chapter of the Association for Computational Linguistics on Language technologies 2001, p.1-8, June 01-07, 2001, Pittsburgh, Pennsylvania
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=980957&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Genichiro Kikui, Term-list translation using mono-lingual word co-occurrence vectors, Proceedings of the 17th international conference on Computational linguistics, August 10-14, 1998, Montreal, Quebec, Canada
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1072187&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					David Yarowsky , Grace Ngai , Richard Wicentowski, Inducing multilingual text analysis tools via robust projection across aligned corpora, Proceedings of the first international conference on Human language technology research, p.1-8, March 18-21, 2001, San Diego
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1072386&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Hiroshi Echizen-ya , Yoshio Momouchi , Kenji Araki , Koji Tochinai, Study of practical effectiveness for machine translation using recursive chain-link-type learning, Proceedings of the 19th international conference on Computational linguistics, p.1-7, August 24-September 01, 2002, Taipei, Taiwan
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1067833&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Philipp Koehn , Kevin Knight, Empirical methods for compound splitting, Proceedings of the tenth conference on European chapter of the Association for Computational Linguistics, April 12-17, 2003, Budapest, Hungary
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1073149&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Rebecca Hwa , Philip Resnik , Amy Weinberg , Okan Kolak, Evaluating translational correspondence using annotation projection, Proceedings of the 40th Annual Meeting on Association for Computational Linguistics, July 07-12, 2002, Philadelphia, Pennsylvania
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1073115&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Jianfeng Gao , Joshua T. Goodman , Guihong Cao , Hang Li, Exploring asymmetric clustering for statistical language modeling, Proceedings of the 40th Annual Meeting on Association for Computational Linguistics, July 07-12, 2002, Philadelphia, Pennsylvania
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1119223&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Ehud Reiter , Somayajulu Sripada, Learning the meaning and usage of time phrases from a parallel text-data corpus, Proceedings of the HLT-NAACL 2003 workshop on Learning word meaning from non-linguistic data, p.78-85, May 31, 2003
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1118798&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Chris Brockett , Takako Aikawa , Anthony Aue , Arul Menezes , Chris Quirk , Hisami Suzuki, English-Japanese example-based machine translation using abstract linguistic representations, COLING-02 on Machine translation in Asia, p.1-7, September 01, 2002
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=956952&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Munirathnam Srikanth , Rohini Srihari, Exploiting syntactic structure of queries in a language modeling approach to IR, Proceedings of the twelfth international conference on Information and knowledge management, November 03-08, 2003, New Orleans, LA, USA
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=979878&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Bonnie Dorr , David Zajic , Richard Schwartz, Cross-language headline generation for Hindi, ACM Transactions on Asian Language Information Processing (TALIP), v.2 n.3, p.270-289, September 2003
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1105713&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1118657&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Eiichiro Sumita, Corpus-centered computation, Proceedings of the ACL-02 workshop on Speech-to-speech translation: algorithms and systems, p.1-8, July 11, 2002
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1118041&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Mark-Jan Nederhof, Approximating context-free by rational transduction for example-based MT, Proceedings of the workshop on Data-driven methods in machine translation, p.1-8, July 07-07, 2001, Toulouse, France
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=778827&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Christoph Tillmann , Hermann Ney, Word reordering and a dynamic programming beam search algorithm for statistical machine translation, Computational Linguistics, v.29 n.1, p.97-133, March 2003
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1067776&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Eiichiro Sumita , Yasuhiro Akiba , Takao Doi , Andrew Finch , Kenji Imamura , Michael Paul , Mitsuo Shimohata , Taro Watanabe, A corpus-centered approach to spoken language translation, Proceedings of the tenth conference on European chapter of the Association for Computational Linguistics, April 12-17, 2003, Budapest, Hungary
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1072390&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Grace Ngai , Marine Carpuat , Pascale Fung, Identifying concepts across languages: a first step towards a corpus-based approach to automatic ontology alignment, Proceedings of the 19th international conference on Computational linguistics, p.1-7, August 24-September 01, 2002, Taipei, Taiwan
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1072292&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Kiyotaka Uchimoto , Hitoshi Isahara , Satoshi Sekine, Text generation from keywords, Proceedings of the 19th international conference on Computational linguistics, p.1-7, August 24-September 01, 2002, Taipei, Taiwan
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1073455&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Ulrich Germann, Greedy decoding for statistical machine translation in almost linear time, Proceedings of the 2003 Conference of the North American Chapter of the Association for Computational Linguistics on Human Language Technology, p.1-8, May 27-June 01, 2003, Edmonton, Canada
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=176316&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Peter F. Brown , Peter V. deSouza , Robert L. Mercer , Vincent J. Della Pietra , Jenifer C. Lai, Class-based <i>n</i>-gram models of natural language, Computational Linguistics, v.18 n.4, p.467-479, December 1992
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1149291&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Chao Wang , Stephanie Seneff, High-quality speech-to-speech translation for computer-aided language learning, ACM Transactions on Speech and Language Processing (TSLP), v.3 n.2, p.1-21, July 2006
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=972455&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					William A. Gale , Kenneth W. Church, A program for aligning sentences in bilingual corpora, Computational Linguistics, v.19 n.1, March 1993
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=992738&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Arjen Poutsma, Data-Oriented Translation, Proceedings of the 18th conference on Computational linguistics, July 31-August 04, 2000, Saarbr&#252;cken, Germany
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=979663&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Hiyan Alshawi , Adam L. Buchsbaum , Fei Xia, A comparison of head transducers and transfer for a limited domain translation application, Proceedings of the 35th annual meeting on Association for Computational Linguistics, p.360-365, July 07-12, 1997, Madrid, Spain
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=981366&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Peter F. Brown , Jennifer C. Lai , Robert L. Mercer, Aligning sentences in parallel corpora, Proceedings of the 29th annual meeting on Association for Computational Linguistics, p.169-176, June 18-21, 1991, Berkeley, California
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=980853&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Hiyan Alshawi , Srinivas Bangalore , Shona Douglas, Automatic acquisition of hierarchical transduction models for machine translation, Proceedings of the 17th international conference on Computational linguistics, August 10-14, 1998, Montreal, Quebec, Canada
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=980799&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Dekai Wu , Hongsing Wong Hkust, Machine translation with a stochastic grammatical channel, Proceedings of the 17th international conference on Computational linguistics, p.1408-1415, August 10-14, 1998, Montreal, Quebec, Canada
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1118799&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Paisarn Charoenpornsawat , Virach Sornlertlamvanich , Thatsanee Charoenporn, Improving translation quality of rule-based machine translation, COLING-02 on Machine translation in Asia, p.1-6, September 01, 2002
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=502610&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Dragomir R. Radev , Hong Qi , Zhiping Zheng , Sasha Blair-Goldensohn , Zhu Zhang , Weiguo Fan , John Prager, Mining the web for answers to natural language questions, Proceedings of the tenth international conference on Information and knowledge management, October 05-10, 2001, Atlanta, Georgia, USA
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1165256&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Marine Carpuat , Pascale Fung , Grace Ngai, Aligning word senses using bilingual corpora, ACM Transactions on Asian Language Information Processing (TALIP), v.5 n.2, p.89-120, June 2006
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1063270&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Leah S. Larkey , Margaret E. Connell, Structured queries, language modeling, and relevance modeling in cross-language information retrieval, Information Processing and Management: an International Journal, v.41 n.3, p.457-473, May 2005
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=779347&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Daniel Gildea , Daniel Jurafsky, Identifying semantic relations in text, Exploring artificial intelligence in the new millennium, Morgan Kaufmann Publishers Inc., San Francisco, CA, 2003
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=981872&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					James F. Allen , Bradford W. Miller , Eric K. Ringger , Teresa Sikorski, A robust system for natural spoken dialogue, Proceedings of the 34th annual meeting on Association for Computational Linguistics, p.62-70, June 24-27, 1996, Santa Cruz, California
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=564408&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Victor Lavrenko , Martin Choquette , W. Bruce Croft, Cross-lingual relevance models, Proceedings of the 25th annual international ACM SIGIR conference on Research and development in information retrieval, August 11-15, 2002, Tampere, Finland
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=636848&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					J. A. N. Lee, Biographies, IEEE Annals of the History of Computing, v.24 n.4, p.53-55, October 2002
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=972707&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Dekai Wu, Stochastic inversion transduction grammars and bilingual parsing of parallel corpora, Computational Linguistics, v.23 n.3, p.377-403, September 1997
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1105589&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=981693&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Victor Pozna&#324;ski , John L. Beaven , Pete Whitelock, An efficient generation algorithm for lexicalist MT, Proceedings of the 33rd annual meeting on Association for Computational Linguistics, p.261-267, June 26-30, 1995, Cambridge, Massachusetts
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=234289&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Adam L. Berger , Vincent J. Della Pietra , Stephen A. Della Pietra, A maximum entropy approach to natural language processing, Computational Linguistics, v.22 n.1, p.39-71, March 1996
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=974747&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Alon Lavie , Stephan Vogel , Lori Levin , Erik Peterson , Katharina Probst , Ariadna Font Llitj&#243;s , Rachel Reynolds , Jaime Carbonell , Richard Cohen, Experiments with a Hindi-to-English transfer-based MT system under a miserly data scenario, ACM Transactions on Asian Language Information Processing (TALIP), v.2 n.2, p.143-163, June 2003
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=234287&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Frank Smadja , Kathleen R. McKeown , Vasileios Hatzivassiloglou, Translating collocations for bilingual lexicons: a statistical approach, Computational Linguistics, v.22 n.1, p.1-38, March 1996
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=964754&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Wessel Kraaij , Jian-Yun Nie , Michel Simard, Embedding web-based statistical translation models in cross-language information retrieval, Computational Linguistics, v.29 n.3, p.381-419, September 2003
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=971844&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Hiyan Alshawi , Shona Douglas , Srinivas Bangalore, Learning dependency translation models as collections of finite-state head transducers, Computational Linguistics, v.26 n.1, p.45-60, March 2000
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=992190&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					P. Whitelock, Shake-and-bake translation, Proceedings of the 14th conference on Computational linguistics, August 23-28, 1992, Nantes, France
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=974517&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Satoshi Sekine , Jeremy J. Carroll , Sofia Ananiadou , Jun'ichi Tsujii, Automatic learning for semantic collocation, Proceedings of the third conference on Applied natural language processing, March 31-April 03, 1992, Trento, Italy
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=981886&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Hiyan Alshawi, Head automata and bilingual tiling: translation with minimal representations, Proceedings of the 34th annual meeting on Association for Computational Linguistics, p.167-176, June 24-27, 1996, Santa Cruz, California
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=964753&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Philip Resnik , Noah A. Smith, The Web as a parallel corpus, Computational Linguistics, v.29 n.3, p.349-380, September 2003
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=643082&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Philip Edmonds , Graeme Hirst, Near-synonymy and lexical choice, Computational Linguistics, v.28 n.2, p.105-144, June 2002
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1072365&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Rong Jin , Alexander G. Hauptmann, A new probabilistic model for title generation, Proceedings of the 19th international conference on Computational linguistics, p.1-7, August 24-September 01, 2002, Taipei, Taiwan
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1063274&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Gina-Anne Levow , Douglas W. Oard , Philip Resnik, Dictionary-based techniques for cross-language information retrieval, Information Processing and Management: an International Journal, v.41 n.3, p.523-547, May 2005
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=873993&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Christopher C. Yang , Kar Wing Li, Automatic construction of English/Chinese parallel corpora, Journal of the American Society for Information Science and Technology, v.54 n.8, p.730-742, June 2003
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=777589&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Patrick Perrin , Frederick E. Petry, Extraction and representation of contextual information for knowledge discovery in texts, Information Sciences&mdash;Informatics and Computer Science: An International Journal, 151, p.125-152, May 2003
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=218367&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Eric Brill, Transformation-based error-driven learning and natural language processing: a case study in part-of-speech tagging, Computational Linguistics, v.21 n.4, p.543-565, December 1995
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=976607&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					David M. Magerman, Review of "Statistical language learning" by Eugene Charniak. The MIT Press 1993., Computational Linguistics, v.21 n.1, March 1995
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=972452&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Kenneth W. Church , Robert L. Mercer, Introduction to the special issue on computational linguistics using large corpora, Computational Linguistics, v.19 n.1, March 1993
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=1113168&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Kobus Barnard , Matthew Johnson, Word sense disambiguation with pictures, Artificial Intelligence, v.167 n.1-2, p.13-30, September 2005
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=992139&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Yiming Yang , Christopher G. Chute, A Linear Least Squares Fit mapping method for information retrieval from natural language texts, Proceedings of the 14th conference on Computational linguistics, August 23-28, 1992, Nantes, France
+				  </a>
+				</p>
+			
+				<p class="abstract">
+				
+	 				  <a href="http://portal.acm.org/citation.cfm?id=146380&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962">
+				  
+					Karen Kukich, Technique for automatically correcting words in text, ACM Computing Surveys (CSUR), v.24 n.4, p.377-439, Dec. 1992
+				  </a>
+				</p>
+			
+			
+			</div>
+		
+
+		
+			
+			
+			  	
+			 
+			 
+			
+		
+		
+		
+			
+			
+			  	
+			
+			
+			
+		
+		
+		
+				
+		
+			<div class="abstract">
+				
+				<A HREF="citation.cfm%3Fid=92860&amp;coll=GUIDE&amp;dl=ACM&amp;CFID=35077428&amp;CFTOKEN=72939962&amp;ret=1.1.html#CIT"><img name="top" src="http://portal.acm.org/images/arrowu.gif" hspace="10" border="0"></A><SPAN class=heading><A NAME="collab">Collaborative Colleagues:</A></span>
+				
+				<table border="0" style="margin-left: 2em" cellpadding="2">
+				
+				
+						<tr valign="top"><td><div class="abstract">Peter F. Brown:</div></td><td>
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+							
+					
+					
+					
+						
+						
+						<div class="abstract">Lalit R. Bahl</div>
+						
+					
+						
+						
+						<div class="abstract">Adam L. Berger</div>
+						
+					
+						
+						
+						<div class="abstract">John Cocke</div>
+						
+					
+						
+						
+						<div class="abstract">Stephen A. Della Pietra</div>
+						
+					
+						
+						
+						<div class="abstract">Vincent J. Della Pietra</div>
+						
+					
+						
+						
+						<div class="abstract">John R. Gillett</div>
+						
+					
+						
+						
+						<div class="abstract">Meredith J. Goldsmith</div>
+						
+					
+						
+						
+						<div class="abstract">Jan Hajic</div>
+						
+					
+						
+						
+						<div class="abstract">Fredrick Jelinek</div>
+						
+					
+						
+						
+						<div class="abstract">John D. Lafferty</div>
+						
+					
+						
+						
+							
+							</td><td>							
+						
+						<div class="abstract">Jenifer C. Lai</div>
+						
+					
+						
+						
+						<div class="abstract">Jennifer C. Lai</div>
+						
+					
+						
+						
+						<div class="abstract">Robert L. Mercer</div>
+						
+					
+						
+						
+						<div class="abstract">Surya Mohanty</div>
+						
+					
+						
+						
+						<div class="abstract">Stephen A. Della Pietra</div>
+						
+					
+						
+						
+						<div class="abstract">Vincent J. Della Pietra</div>
+						
+					
+						
+						
+						<div class="abstract">Harry Printz</div>
+						
+					
+						
+						
+						<div class="abstract">Paul S. Roossin</div>
+						
+					
+						
+						
+						<div class="abstract">Lubo&#353; Ure&#353;</div>
+						
+					
+						
+						
+						<div class="abstract">Peter V. de Souza</div>
+						
+					
+						
+						
+							
+							</td><td>							
+						
+						<div class="abstract">Peter V. deSouza</div>
+						
+					
+						</td>
+						</tr>
+				
+						<tr valign="top"><td><div class="abstract">John Cocke:</div></td><td>
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+							
+					
+					
+					
+						
+						
+						<div class="abstract">Peter F. Brown</div>
+						
+					
+						
+						
+						<div class="abstract">David Callahan</div>
+						
+					
+						
+						
+						<div class="abstract">Fredrick Jelinek</div>
+						
+					
+						
+						
+						<div class="abstract">Ken Kennedy</div>
+						
+					
+						
+						
+						<div class="abstract">John D. Lafferty</div>
+						
+					
+						
+						
+						<div class="abstract">Peter Markstein</div>
+						
+					
+						
+						
+						<div class="abstract">Victoria Markstein</div>
+						
+					
+						
+						
+						<div class="abstract">Robert L. Mercer</div>
+						
+					
+						
+						
+						<div class="abstract">Raymond E. Miller</div>
+						
+					
+						
+						
+						<div class="abstract">Marvin Minsky</div>
+						
+					
+						
+						
+							
+							</td><td>							
+						
+						<div class="abstract">Stephen A. Della Pietra</div>
+						
+					
+						
+						
+						<div class="abstract">Vincent J. Della Pietra</div>
+						
+					
+						
+						
+						<div class="abstract">Paul S. Roossin</div>
+						
+					
+						
+						
+						<div class="abstract">Harold S. Stone</div>
+						
+					
+						</td>
+						</tr>
+				
+						<tr valign="top"><td><div class="abstract">Fredrick Jelinek:</div></td><td>
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+							
+						
+					
+					
+						
+						
+						<div class="abstract">Peter F. Brown</div>
+						
+					
+						
+						
+						<div class="abstract">John Cocke</div>
+						
+					
+						
+						
+						<div class="abstract">John D. Lafferty</div>
+						
+					
+						
+						
+						<div class="abstract">Robert L. Mercer</div>
+						
+					
+						
+						
+						<div class="abstract">Stephen A. Della Pietra</div>
+						
+					
+						
+						
+						<div class="abstract">Vincent J. Della Pietra</div>
+						
+					
+						
+						
+						<div class="abstract">Paul S. Roossin</div>
+						
+					
+						</td>
+						</tr>
+				
+						<tr valign="top"><td><div class="abstract">John D. Lafferty:</div></td><td>
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+							
+					
+					
+					
+						
+						
+						<div class="abstract">Adam L. Berger</div>
+						
+					
+						
+						
+						<div class="abstract">David M. Blei</div>
+						
+					
+						
+						
+						<div class="abstract">Peter F. Brown</div>
+						
+					
+						
+						
+						<div class="abstract">John Cocke</div>
+						
+					
+						
+						
+						<div class="abstract">Stephen A. Della Pietra</div>
+						
+					
+						
+						
+						<div class="abstract">Vincent J. Della Pietra</div>
+						
+					
+						
+						
+						<div class="abstract">J. Gillet</div>
+						
+					
+						
+						
+						<div class="abstract">John R. Gillett</div>
+						
+					
+						
+						
+						<div class="abstract">Martial Hebert</div>
+						
+					
+						
+						
+						<div class="abstract">Frederick Jelinek</div>
+						
+					
+						
+						
+							
+							</td><td>							
+						
+						<div class="abstract">Fredrick Jelinek</div>
+						
+					
+						
+						
+						<div class="abstract">Risi Imre Kondor</div>
+						
+					
+						
+						
+						<div class="abstract">Guy Lebanon</div>
+						
+					
+						
+						
+						<div class="abstract">Shyjan Mahamud</div>
+						
+					
+						
+						
+						<div class="abstract">Andrew McCallum</div>
+						
+					
+						
+						
+						<div class="abstract">Robert L. Mercer</div>
+						
+					
+						
+						
+						<div class="abstract">Fernando C. N. Pereira</div>
+						
+					
+						
+						
+						<div class="abstract">Stephen A. Della Pietra</div>
+						
+					
+						
+						
+						<div class="abstract">Stephen Della Pietra</div>
+						
+					
+						
+						
+						<div class="abstract">Vincent J. Della Pietra</div>
+						
+					
+						
+						
+							
+							</td><td>							
+						
+						<div class="abstract">H. Printz</div>
+						
+					
+						
+						
+						<div class="abstract">Harry Printz</div>
+						
+					
+						
+						
+						<div class="abstract">Daniel N. Rockmore</div>
+						
+					
+						
+						
+						<div class="abstract">Paul S. Roossin</div>
+						
+					
+						
+						
+						<div class="abstract">Lubo&#353; Ure&#353;</div>
+						
+					
+						
+						
+						<div class="abstract">L. Ures</div>
+						
+					
+						
+						
+						<div class="abstract">Larry A. Wasserman</div>
+						
+					
+						</td>
+						</tr>
+				
+						<tr valign="top"><td><div class="abstract">Robert L. Mercer:</div></td><td>
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+							
+					
+					
+					
+						
+						
+						<div class="abstract">Lalit R. Bahl</div>
+						
+					
+						
+						
+						<div class="abstract">Adam L. Berger</div>
+						
+					
+						
+						
+						<div class="abstract">Peter F. Brown</div>
+						
+					
+						
+						
+						<div class="abstract">Kenneth W. Church</div>
+						
+					
+						
+						
+						<div class="abstract">John Cocke</div>
+						
+					
+						
+						
+						<div class="abstract">Paul S. Cohen</div>
+						
+					
+						
+						
+						<div class="abstract">Fred J. Damerau</div>
+						
+					
+						
+						
+						<div class="abstract">Stephen A. Della Pietra</div>
+						
+					
+						
+						
+						<div class="abstract">Vincent J. Della Pietra</div>
+						
+					
+						
+						
+						<div class="abstract">John R. Gillett</div>
+						
+					
+						
+						
+							
+							</td><td>							
+						
+						<div class="abstract">Meredith J. Goldsmith</div>
+						
+					
+						
+						
+						<div class="abstract">Jan Hajic</div>
+						
+					
+						
+						
+						<div class="abstract">Frederick Jelinek</div>
+						
+					
+						
+						
+						<div class="abstract">Fredrick Jelinek</div>
+						
+					
+						
+						
+						<div class="abstract">John D. Lafferty</div>
+						
+					
+						
+						
+						<div class="abstract">Jenifer C. Lai</div>
+						
+					
+						
+						
+						<div class="abstract">Jennifer C. Lai</div>
+						
+					
+						
+						
+						<div class="abstract">Eric Mays</div>
+						
+					
+						
+						
+						<div class="abstract">Surya Mohanty</div>
+						
+					
+						
+						
+						<div class="abstract">Stephen A. Della Pietra</div>
+						
+					
+						
+						
+							
+							</td><td>							
+						
+						<div class="abstract">Vincent J. Della Pietra</div>
+						
+					
+						
+						
+						<div class="abstract">Harry Printz</div>
+						
+					
+						
+						
+						<div class="abstract">Paul S. Roossin</div>
+						
+					
+						
+						
+						<div class="abstract">Lubo&#353; Ure&#353;</div>
+						
+					
+						
+						
+						<div class="abstract">Peter V. de Souza</div>
+						
+					
+						
+						
+						<div class="abstract">Peter V. deSouza</div>
+						
+					
+						</td>
+						</tr>
+				
+						<tr valign="top"><td><div class="abstract">Stephen A. Della Pietra:</div></td><td>
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+							
+						
+					
+					
+						
+						
+						<div class="abstract">Adam L. Berger</div>
+						
+					
+						
+						
+						<div class="abstract">Peter F. Brown</div>
+						
+					
+						
+						
+						<div class="abstract">John Cocke</div>
+						
+					
+						
+						
+						<div class="abstract">Fredrick Jelinek</div>
+						
+					
+						
+						
+						<div class="abstract">John D. Lafferty</div>
+						
+					
+						
+						
+						<div class="abstract">Jennifer C. Lai</div>
+						
+					
+						
+						
+						<div class="abstract">Robert L. Mercer</div>
+						
+					
+						
+						
+						<div class="abstract">Vincent J. Della Pietra</div>
+						
+					
+						
+						
+						<div class="abstract">Paul S. Roossin</div>
+						
+					
+						</td>
+						</tr>
+				
+						<tr valign="top"><td><div class="abstract">Vincent J. Della Pietra:</div></td><td>
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+							
+					
+					
+					
+						
+						
+						<div class="abstract">Adam L. Berger</div>
+						
+					
+						
+						
+						<div class="abstract">Peter F. Brown</div>
+						
+					
+						
+						
+						<div class="abstract">John Cocke</div>
+						
+					
+						
+						
+						<div class="abstract">J. Gillet</div>
+						
+					
+						
+						
+						<div class="abstract">Fredrick Jelinek</div>
+						
+					
+						
+						
+						<div class="abstract">John D. Lafferty</div>
+						
+					
+						
+						
+						<div class="abstract">Jenifer C. Lai</div>
+						
+					
+						
+						
+						<div class="abstract">Jennifer C. Lai</div>
+						
+					
+						
+						
+						<div class="abstract">Robert L. Mercer</div>
+						
+					
+						
+						
+						<div class="abstract">Stephen A. Della Pietra</div>
+						
+					
+						
+						
+							
+							</td><td>							
+						
+						<div class="abstract">Stephen Della Pietra</div>
+						
+					
+						
+						
+						<div class="abstract">H. Printz</div>
+						
+					
+						
+						
+						<div class="abstract">Paul S. Roossin</div>
+						
+					
+						
+						
+						<div class="abstract">L. Ures</div>
+						
+					
+						
+						
+						<div class="abstract">Peter V. deSouza</div>
+						
+					
+						</td>
+						</tr>
+				
+						<tr valign="top"><td><div class="abstract">Paul S. Roossin:</div></td><td>
+					
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+					
+							
+						
+					
+					
+						
+						
+						<div class="abstract">Peter F. Brown</div>
+						
+					
+						
+						
+						<div class="abstract">John Cocke</div>
+						
+					
+						
+						
+						<div class="abstract">Fredrick Jelinek</div>
+						
+					
+						
+						
+						<div class="abstract">John D. Lafferty</div>
+						
+					
+						
+						
+						<div class="abstract">Robert L. Mercer</div>
+						
+					
+						
+						
+						<div class="abstract">Stephen A. Della Pietra</div>
+						
+					
+						
+						
+						<div class="abstract">Vincent J. Della Pietra</div>
+						
+					
+						</td>
+						</tr>
+				
+				</table>
+			</div>
+						
+		
+		
+		
+			<br>
+			<div class="abstract">
+			
+				<A HREF="citation.cfm%3Fid=92860&amp;coll=GUIDE&amp;dl=ACM&amp;CFID=35077428&amp;CFTOKEN=72939962&amp;ret=1.1.html#CIT"><img name="top" src="http://portal.acm.org/images/arrowu.gif" hspace="10" border="0"></A><SPAN class=heading><A NAME="peers">Peer to Peer - Readers of this Article have also read:</cite></A></span>
+		<ul type="disc">
+		
+			  
+				
+				 
+				
+			<li>
+			 
+				<A HREF="http://portal.acm.org/citation.cfm?id=4290&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962" target="_self">		  	  Data structures for quadtree approximation and compression</a>
+			
+			
+				
+					
+						<b>Communications of the ACM</b>&nbsp;&nbsp;
+					
+					
+						<font size="-1">28,&nbsp;9</font><br>
+					 
+				  
+				
+			
+			
+				
+					Hanan Samet
+				
+				<br>
+			
+			<br>
+			</li>
+		
+			  
+				
+				 
+				
+			<li>
+			 
+				<A HREF="http://portal.acm.org/citation.cfm?id=143680&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962" target="_self">		  	  A hierarchical single-key-lock access control using the Chinese remainder theorem</a>
+			
+			
+				
+				  	
+					    <b>Proceedings of the 1992 ACM/SIGAPP Symposium on Applied computing</b><br>
+					
+				   
+				
+			
+			
+				
+					Kim S. Lee
+				
+					, &nbsp;Huizhu Lu
+				
+					, &nbsp;D. D. Fisher
+				
+				<br>
+			
+			<br>
+			</li>
+		
+			  
+				
+				 
+				
+			<li>
+			 
+				<A HREF="http://portal.acm.org/citation.cfm?id=125254&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962" target="_self">		  	  The GemStone object database management system</a>
+			
+			
+				
+					
+						<b>Communications of the ACM</b>&nbsp;&nbsp;
+					
+					
+						<font size="-1">34,&nbsp;10</font><br>
+					 
+				  
+				
+			
+			
+				
+					Paul Butterworth
+				
+					, &nbsp;Allen Otis
+				
+					, &nbsp;Jacob Stein
+				
+				<br>
+			
+			<br>
+			</li>
+		
+			  
+				
+				 
+				
+			<li>
+			 
+				<A HREF="http://portal.acm.org/citation.cfm?id=125322&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962" target="_self">		  	  Putting innovation to work:&nbsp;adoption strategies for multimedia communication systems</a>
+			
+			
+				
+					
+						<b>Communications of the ACM</b>&nbsp;&nbsp;
+					
+					
+						<font size="-1">34,&nbsp;12</font><br>
+					 
+				  
+				
+			
+			
+				
+					Ellen Francik
+				
+					, &nbsp;Susan Ehrlich Rudman
+				
+					, &nbsp;Donna Cooper
+				
+					, &nbsp;Stephen Levine
+				
+				<br>
+			
+			<br>
+			</li>
+		
+			  
+				
+				 
+				
+			<li>
+			 
+				<A HREF="http://portal.acm.org/citation.cfm?id=123244&amp;dl=ACM&amp;coll=GUIDE&amp;CFID=35077428&amp;CFTOKEN=72939962" target="_self">		  	  An intelligent component database for behavioral synthesis</a>
+			
+			
+				
+				  	
+					    <b>Proceedings of the 27th ACM/IEEE conference on Design automation</b><br>
+					
+				   
+				
+			
+			
+				
+					Gwo-Dong Chen
+				
+					, &nbsp;Daniel D. Gajski
+				
+				<br>
+			
+			<br>
+			</li>
+		
+		</ul>
+		
+		</div>
+		
+		
+		
+		
+		
+			
+				
+				
+				
+			
+				
+				
+				
+			
+				
+				
+				
+			
+		
+				
+			
+  	
+
+
+
+
+<br>
+<DIV class=footer-copy-text align="center">
+	
+	The ACM Portal is published by the Association for Computing Machinery. Copyright © 2007 ACM, Inc.<br>
+	<A href="http://portal.acm.org/info/usage.cfm?CFID=35077428&CFTOKEN=72939962">Terms of Usage</A>&nbsp;&nbsp;
+	<A href="http://www.acm.org/serving/acm-privacy.html">Privacy Policy</A>&nbsp;&nbsp;
+	<A href="http://www.acm.org/constitution/code.html">Code of Ethics</A>&nbsp;&nbsp;	  
+	<A href="http://www.acm.org/key_people/">Contact Us</A>
+
+<br><br>
+Useful downloads: 
+<a href="http://www.adobe.com/products/acrobat/readstep2.html"><img src="http://portal.acm.org/images/pdf_logo.gif" width="16" height="16" alt="" border="0"> Adobe Acrobat</a>
+&nbsp;&nbsp;
+<a href="http://www.apple.com/quicktime/download/" target="_blank"><img src="http://portal.acm.org/images/qtlogo.gif" width="16" height="16" alt="" border="0"> QuickTime</a>
+&nbsp;&nbsp;
+<a href="http://www.microsoft.com/windows/windowsmedia/download/default.asp" target="_blank"><img src="http://portal.acm.org/images/wmv.gif" width="16" height="15" alt="" border="0"> Windows Media Player</a>
+&nbsp;&nbsp;
+<a href="http://www.real.com/" target="_blank"><img src="http://portal.acm.org/images/realplayer.gif" width="20" height="18" alt="" border="0"> Real Player</a>
+
+
+</DIV>
+
+</td>
+</tr>
+</table>
+</div>
+
+</body>
+</html>

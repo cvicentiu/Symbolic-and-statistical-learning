@@ -1,0 +1,528 @@
+/**
+ File annotated by Kevin Lingerfelt, 11/29/2005
+ About 50% of file removed by Will Holcomb 02/2006
+
+ This is the main stylesheet for the mpp.org site. It is included on all pages.
+ This style is concerned with the colors, borders and margins. position.css
+  contains the layout information.
+*/
+
+@import url("positions.css");
+
+body, table { font-size: 13px; margin: 0;
+       font-family: "Helvetica Neue", Helvetica, Tahoma, arial, verdana, sans-serif; }
+a { color:#036; text-decoration: none; }
+a:hover, a:active { color: #369; }
+img { border: none; }
+
+br { display: none; } /* W: Not used be me, but lots are inserted by Kintera */
+
+h1, h2, h3, h4, h5, h6 { padding: 0; }
+h1 { font-size: 175%; margin: .5em 0 4px; }
+h2 { font-size: 140%; margin: 0 0 3px; }
+h3 { font-size: 105%; margin: 2px 0 10px; font-weight: bold; }
+h4 { font-size: 100%; margin: 0 0 6px; }
+h5 { font-size: 95%; padding-left: 8px; }
+h6 { font-size: 90%; margin: 0 0 2px; color: #333; font-weight: normal; }
+
+p, table p { line-height: 1.2; margin-top: 5px; font-size: 100%; }
+/*
+fieldset { margin: 0; padding: 0; border: 1px solid black; }
+*/
+
+ul { margin: 0; padding: 0; }
+hr { height: 1px; color: #369; margin: 0 auto 10px; padding: 0; width: 75%; text-align: center; }
+dt { font-weight: bold; padding-bottom: .5ex; }
+dd { padding-bottom: 1ex; }
+
+/* In IE, the order of class elements matters, .left.shadow will override other .shadow
+ * elements, but .shadow.left will not.
+ */
+.shadow.left { background: transparent url('shadow_left.png') repeat-y left top; }
+.shadow.right { background: transparent url('shadow_right.png') repeat-y right top; }
+.shadow.top .left { background: transparent url('shadow_blur_ball.png') no-repeat left top; }
+.shadow.top .center { background: transparent url('shadow_top.png') repeat-x left top; }
+.shadow.top .right { background: transparent url('shadow_blur_ball.png') no-repeat right top; }
+.shadow.bottom .left { background: transparent url('shadow_blur_ball.png') no-repeat left -35px; } /* bottom is off in IE */
+.shadow.bottom .center { background: transparent url('shadow_bottom.png') repeat-x left top;  }
+.shadow.bottom .right { background: transparent url('shadow_blur_ball.png') no-repeat right -35px; }
+
+#body { margin-top: 10px; }
+
+#activecontent { border: 1px solid #333 }
+
+#header a { display: block; height: 57px; padding: 6px 0 6px 15px; }
+#headertext { display: none; }
+
+#topicarea { border: 1px #369; border-style: solid none solid none; }
+
+.flatlist { list-style: none; }
+.flatlist li { float: left; margin: 0; padding: 0; }
+.flatlist a { display: block; padding: 6px 11px; border-right: 1px solid; text-decoration: none; }
+
+#header { background: #0A3A6B url('stars_on_blue.jpg') no-repeat top right; }
+#topicarea { background: #083C6B url('blue_highlight.png') repeat-x top left; }
+#navigation a:hover { background-color: #CCCC8F; }
+#topicarea a { color: white; }
+#topicarea a:hover, #topicarea a:active { background-color: #036; color: #E6E6CF; }
+#rightcol { border-left: 1px solid #369; background: #E7E7E7 url('left_curved_shadow.png') repeat-y; }
+body { background-color: #FFFFE6; }
+#body { background-color: white; }
+#pressdates a:hover { background-color: #DDD; }
+#leftsubcol h2 a, #rightsubcol h2 a
+  { color: black; background-color: #DDF; }
+#leftsubcol a:hover, #leftsubcol a:active, #rightsubcol a:hover, #rightsubcol a:active
+  { background-color: #BFA260; color: #00248F; border-color: #333; }
+.indexlist a:hover { background-color: #CCC28F; }
+#content .letters a.NLtitle:hover, #content .action.listing b a:hover, #content .letters a.NLtoc:hover, .featurelisting a:hover
+  { background-color: #BFA260; border-color: #333; color: #00248F; }
+
+#topicarea a { text-transform: uppercase; font-size: 90%; font-weight: bold; border-color: #69C; }
+#pressdates .flatlist { border-left: 1px solid; margin: 0; padding: 0; }
+#pressdates a { border: 1px solid; border-style: solid solid solid none; }
+
+#shadowed { border: 1px solid #333; border-style: none solid none solid; }
+#navigation { border-right: 1px solid #369; }
+
+#navigation a, #navigation h2 { font-weight: bold; padding: 4px 3px 4px 10px; display: block; border-bottom: 1px solid #EEE; }
+#navigation a { font-size: 90%; color: #333; text-decoration: none; }
+#navigation h2.link { padding: 0; }
+#navigation h2 { margin-top: 15px; text-transform: uppercase; }
+#navigation h2, #navigation h2 a { color: #036; font-size: 100%; }
+#navigation a:hover { padding: 3px 3px 4px 10px; border: 1px #333; border-style: solid none solid none; }
+
+/* Styles for the main content section of the page. All Web Feature
+    content is displayed within the content div tag. Note that all
+    links within the content tag, unless otherwise specified, will be
+    underlined in all instances, and not just on hover */
+a { text-decoration: underline; }
+ul { list-style-type: disc; padding-left: 15px; margin-left: 15px; }
+li { padding-bottom: 1ex; line-height: 15px; }
+
+/* Styles for the features in the right-hand column.  The featurelist class wraps a list generated by an inline content
+index.  In most cases, each feature is wrapped in a div tag and all of the divs are hidden initially.  A Javascript is used
+to select a set number of divs randomly to display. The width of the buttons in the Member Center is set using the last
+style in this section. */
+#rightcol h2, #rightcol h2 a { color: white; }
+#rightcol h2 { font-size: 100%; font-weight: bold; text-transform: uppercase; text-align: center;
+               border: 1px solid #369; background: #036 url('blue_highlight.png') repeat-x top left;
+               padding: 3px 4px; margin: 15px 0 5px; }
+#rightcol h3 { text-align: center; }
+#rightcol h2 a, #rightcol h3 a { text-decoration: none; }
+#rightcol h2 a:hover, #rightcol h2 a:active { color: #9CF; }
+#rightcol p { color: #036; font-size: 85%; padding: 5px 8px 5px 0; margin: 0; }
+#membercenter { text-align: center; margin-top: 1em; }
+#membercenter ul, #membercenter li { list-style: none; padding: 0; margin: 0; }
+#membercenter input { width: 90%; }
+#membercenter a { display: block; text-align: right; font-weight: bold; margin-right: 1.5em; text-decoration: none; }
+
+#getlocal p { font-weight: bold }
+
+.captioned img { border: 1px solid #369; max-width: 99%; }
+.captioned, .captioned p { display: block; padding: 2px; margin: 2px; }
+a:hover .captioned { background-color: #E5E5E5; padding: 1px; border: 1px solid #DADADA; }
+#rightcol a:hover .captioned p { color: #012; }
+
+#campaignlist img { float: left; margin-right: .5em; margin-top: .75em; margin-bottom: .1em; }
+#campaignlist a, #victimlist a { text-decoration: none; }
+#campaignlist p a { border-bottom: 1px dotted; padding: 0; }
+
+#centercol .captioned p { text-align: left; margin-bottom: 1em; border-bottom: 1px solid #EEE; }
+
+#footer a { font-weight: bold; }
+#footer #copyright { font-weight: lighter; }
+
+.indented { margin-left: 200px; }
+.smallindent { margin-left: 50px; margin-right: 50px; }
+.lastupdated { text-align: right; color: #333; font-size: 85%; font-weight: bold; }
+.date { text-align: right; }
+
+blockquote.cited { font-size: 110%; line-height: 1.15; color: #111; margin-bottom: .5em; }
+.quotesource { font-size: 90%; color: #111; margin-top: 0; margin-left: 6em; text-indent: -1.5em; }
+
+.linebreak { height: 0; clear: both; }
+
+/* The following styles are only used in the mpp_home.ktf layout.  In every other layout, the pageheader is replaced by
+the content header class used to wrap the breadcrumb navigation at the top of the content column. */
+#pageheader { height: 24px; border-bottom: 1px solid #369; padding-bottom: 2px; position: relative; margin-bottom: 10px; }
+#pageheaderinfo { position:absolute; right:0; top:9px; font-weight: bold;}
+#pageheaderloc { font-size: 17px; font-family: "Helvetica Neue", arial, tahoma, verdana, helvetica, sans-serif; color: #003366; font-weight: bold; text-transform: uppercase; text-align: left; position: absolute; top: 3px; }
+
+.pagehead { display: block; margin: .25em auto; }
+
+/* Muliple styles to display the breadcrumbs at the top of each content section.  By default, Kintera sets a non-desirable spacer
+in between each page title listed in the breadcrumbs.  To work around this, the whole section is wrapped in a non-visible
+div tag and only the parts that need to be display are set to visible.  This methodology runs into some display problems in IE */
+#content .contentheader { visibility: hidden; }
+#content .contentheader a { text-decoration: none; }
+#content .contentheader a:hover { text-decoration: underline; }
+.contentheader a.path { visibility: visible; float: left; color: #036; font-weight: bold; font-size: 90%; line-height: 1.2; padding: 0 4px 0 0; margin: 3px 3px 3px 0; border-right: 1px solid #69C; text-transform: uppercase; }
+.contentheader a.year { visibility: visible; float: left; color: #036; font-weight: bold; font-size: 90%; line-height: 1.2; padding: 0 5px 0 0; margin: 3px 5px 0 0; border-right: 1px solid #69C; text-transform: uppercase; }
+.contentheader font.returnto { visibility: visible; float: left; color: #333; font-weight: bold; font-size: 90%; line-height: 1.2; padding: 0; margin: 3px 3px 3px 0; text-transform: uppercase; }
+.contentheader font.Path { display: none; }
+.contentheaderbreak { visibility: visible; clear: both; width: 100%; height: 2px; background-color: #369; margin: 0 0 8px; padding: 0; border: none; }
+
+/* Class for the contentfooter (inside the content ID) to display correctly with a preceding line break */
+.contentfooter { border-top: 1px solid #369; padding-top: 10px; margin-top: 5px; }
+.contentfooter img { float: right; }
+
+/* These styles are only used for the main featured content on the home page */
+#leadstory { padding-bottom: 2px; margin-top: 15px; }
+#leadstory a { text-decoration: none; }
+
+#leadstory h2 { font-weight: bold; padding-bottom: 0; margin-bottom: 0; }
+#leadstory hr { width: 50%; }
+
+#leadstoryphoto img { float: left; margin: 0 10px 5px 0; border: 1px solid #369; }
+.leadstoryinfo { font-size: 90%; padding: 10px 0; border-top: 1px dotted #CCC; border-bottom: 1px dotted #CCC; line-height: 15px; }
+.leadstorytext { padding-bottom: 5px; }
+.leadstorytext p { margin-bottom: .25em; line-height: 1.2; margin-right: 5px; }
+.leadstorytext h2 { font-size: 110%; font-weight: lighter; padding-bottom: 5px; }
+.leadstorytext h6 { text-align: right; }
+
+#subcols { border-top: 1px solid #369; }
+
+#leftsubcol, #rightsubcol { }
+#leftsubcol p, #rightsubcol p { padding-bottom: 8px; margin: 0 10px 8px; border-bottom: 1px solid #369; }
+#leftsubcol a, #rightsubcol a
+   { display: block; text-decoration: none; font-weight: bold; font-size: 115%;
+     border: 1px solid transparent; border-style: solid none solid none; }
+#leftsubcol h2 a, #rightsubcol h2 a
+  { color: black; text-transform: uppercase; text-align: center;
+    border: 1px solid #EEE; border-style: solid none solid none; }
+#leftsubcol a:hover, #leftsubcol a:active, #rightsubcol a:hover, #rightsubcol a:active
+  { text-decoration: none; }
+
+#leftsubcol ul, #rightsubcol ul { margin-top: 0;  }
+#rightsubcol .author { display: none; }
+#rightsubcol #actionheader { margin-top: .75em; }
+
+/* .byline .author { float: left; width: 45%; } */
+.byline .date { text-align: right; float: right; margin-left: .5em; }
+
+/* The right sidebar is implemented on multiple pages to display extra information in a compact sidebar that is positioned
+inside the content ID and floated to the right, such that the rest of the content wraps around the sidebar.  Many sidebars use
+a Kintera inline index, which puts far too many breaks inside the sidebar.  In that case, there is a nobreaks class to
+wrap the index and set all of the breaks to display:none */
+.rightsidebar { margin: 2px -5px 5px 10px; background-color: #EEE; border: 1px solid #369; }
+.rightsidebar h2 { font-size: 100%; font-weight: bold; margin-bottom: 0; padding-bottom: 4px; border-bottom: 1px solid #369; }
+.rightsidebar h3 { margin: 3px 0; }
+.rightsidebar a { font-weight: bold; text-decoration: none ! important; }
+.rightsidebar p { font-size: 95%; font-weight: normal; padding: 0 0 0 .25em; margin: 0; text-indent: 0em; }
+.rightsidebar img { display: block; width: 100%; border: 1px solid; margin: 0 0 4px -1px; }
+.rightsidebar .caption { border-bottom: 1px solid; margin-bottom: .5em; }
+.rightsidebar ul { padding-left: 10px; margin-left: 10px; }
+.rightsidebar li { font-size: 95%; font-weight: normal; padding-bottom: 0.6ex; line-height: 12px; }
+.rightsidebar .nobreaks a { display: block; padding: 4px 0; border-bottom: 1px solid #369; font-size: 95%; }
+
+/* Specific styles for the Kintera inline indices insered into the body of a web feature. */
+.indexlist { margin: .75em 0; clear: both; }
+.indexlist .bordered { padding-bottom: 8px; margin-bottom: 10px; border-bottom: 1px solid #369; }
+/* There is no class on the web feature generated title links */
+
+#features.indexlist p, .indexlist a
+  { display: block; font-size: 130%; margin: 0; padding: 4px 0; font-weight: bold; text-decoration: none; }
+.indexlist a { margin-bottom: .5em; font-weight: normal; }
+.indexlist a:hover { margin-left: -10px; margin-right: -10px; padding: 3px 10px;  border: 1px #333; border-style: solid none solid none; text-decoration: none; }
+.indexlist p a:hover { margin: 0; padding: 0; border: none; background-color: transparent; }
+.indexlist p a { display: inline; font-size: 100%; padding: 0; border-bottom: 1px dotted; }
+
+/* the navigation for indices is in a form */
+.indexlist form a { display: block; float: left; font-size: 110%; font-weight: bold; text-decoration: none; }
+.indexlist form a, .indexlist form a:hover { padding: .25em; margin: 0; border-style: none; }
+.indexlist form { margin-bottom: 1.5em; margin-top: 1.5em; }
+.indexlist form img { float: none; padding: 0; margin: 0; }
+
+/* form wrapping index list navigation */
+#docForm a { display: block; }
+.indexlist #docFormBottom { margin-top: 2em; border-top: 1px solid; }
+
+.indexlist ul { padding-top: 6px; }
+.indexlist p { padding-bottom: 0px; margin-bottom: 0px; }
+.indexlist p.hash { padding-bottom: 0px; margin-bottom: 15px; }
+.indexlist img { float: left; margin-right: 10px; margin-bottom: 5px; }
+.indexlist .contentfooter img { float: right; padding: 0; border: 0; }
+.indexlist br.showbreak { display: block; }
+
+/* Redefined Kintera classes used to format Press Releases linked from Kintera content indices.  Usually these classes will
+   be used in conjunction with the indexlist style above. */
+.NLtoc, .NLtitle, .NLsubtitle { display: block; padding: 0; }
+.NLtoc { font-size: 110%; margin: 0 0 3px; }
+.NLtitle, .indexlist .NLtitle { font-size: 125%; margin: 1em 0 4px; }
+.NLsubtitle { display: block; font-size: 15px; margin: 0 0 4px; padding: 0 0 4px; border-bottom: 1px solid #369; }
+.hash { text-align: center; font-size: 11px; }
+.NLdate { font-size: 100%; text-align: right; padding: 5px 0 2px; margin: 0 0 10px; border-bottom: 1px solid #369; line-height: 1; font-weight: bold; }
+.NLauthor { display: block; font-size: 12px; margin: 0 0 4px; padding: 0 0 4px; border-bottom: 1px solid #369; }
+
+html body #icl_container, html body #icl_container ul, #icl_container li { padding: 0; margin: 0; font-size: inherit; float: none; }
+
+#victimslist .image { border: 1px solid #369; border-top-color: white; background-color: white; border-left: none; min-width: 45px; }
+#victimslist img { border: 1px solid #369; }
+#victimslist p { color: black; text-align: left; border-bottom: 1px solid #DDD; }
+#victimslist a:hover p { border-bottom-color: transparent; }
+#victimslist a { border-bottom: 1px solid transparent; }
+#victimslist h2 { border: 1px solid #369; border-bottom-color: transparent; border-right: none; text-align: center; }
+#victimslist a:hover h2, #victimslist a:hover .image { background-color: #EEE; border-top-color: #369; border-bottom-color: inherit; }
+#victimslist a:hover .image.empty { background-color: white; border-top-color: white; }
+#victimslist a:hover, #victimslist a { text-decoration: none; }
+#victimslist a:hover { border-bottom-color: #369; color: black; }
+#victimslist .victim:after { content: ''; display: block; clear: both; }
+
+#pressreleases.indexlist .date { display: none; }
+
+#rightcol #victimlist h2 { background: none; color: black; border: none; margin: 0; }
+#rightcol .image { background-color: #DDD; border: 1px solid #CCC; padding: .25em; text-align: center; }
+#rightcol img { border: 1px solid #CCC; background: #EEE; padding: .25em; display: block; margin: auto;}
+
+img.victim { float: right; max-width: 40%; margin: -1em 1em 0 .5em; }
+
+/* Specific style used for the DC Initiative > News section of the site.  Displays content similar to the indexlist style. */
+#dcinitiative p { padding-bottom: 8px; margin-bottom: 10px; border-bottom: 1px solid #369; }
+
+input:first-child { clear: left; }
+
+/* Specific style for the In the News index page.  Displays content similar to the indexlist style. */
+#inthenews p { padding-bottom: 8px; margin-bottom: 10px; border-bottom: 1px solid #369; }
+#inthenews img { float: left; padding-right: 10px; padding-bottom: 5px; }
+#inthenews a { display: block; font-size: 115%; margin: 0 0 3px; padding: 0; font-weight: bold; text-decoration: none; }
+#inthenews br.showbreak { display: block; }
+
+.gallerypic { background-color: #F0F5FF; }
+.gallerypic img { margin: 0; border: 1px solid white; display: block; }
+.image, .gallerypic { border: 1px solid #666; }
+.image { padding: 4px; background-color: #D5E5FF; }
+.imagecenter { text-align: center; margin: 5px auto 0; }
+.gallerypic .caption { margin: .5em; text-align: center; }
+
+.gallerypic .biopic { margin: 0 .25em; }
+
+#strategicplan ol { padding-left: 1.5em; }
+ol li { padding-left: .25em; text-indent: -.5em;  }
+ol li ul { padding-left: 0; text-indent: 0; }
+
+.bill ol { list-style: disc; }
+.bill ol ol { list-style: lower-alpha; }
+.bill ol ol ol { list-style: decimal; }
+.bill ol ol ol ol { list-style: upper-alpha; }
+
+.bill ol li:before { display: marker; font-weight: bold; }
+.bill { counter-reset: bill-1; }
+.bill > ol > li:before {
+  content: "SECTION " counter(bill-1,  decimal) ".  "; 
+  counter-increment: bill-1;
+  counter-reset: bill-2;
+}
+.bill > ol > li.optional:before {
+  content: "OPTIONAL SECTION.  "; 
+  counter-increment: bill-1;
+  counter-reset: bill-2;
+}
+.bill ol { list-style: none; }
+.bill ol > li > ol > li:before {
+  content: "(" counter(bill-2,  lower-alpha) ")  "; 
+  counter-increment: bill-2;
+  counter-reset: bill-3;
+}
+.bill ol > li > ol > li > ol > li:before {
+  content: "(" counter(bill-3,  decimal) ")  "; 
+  counter-increment: bill-3;
+  counter-reset: bill4;
+}
+.bill ol > li > ol > li > ol > li > ol > li:before {
+  content: "(" counter(bill-4,  upper-alpha) ")  "; 
+  counter-increment: bill-4;
+}
+
+.bill .section { text-transform: uppercase; }
+.bill .level-2, .bill .level-3, .bill .level-4 { margin-left: 1.5em; text-indent: -1.5em; }
+
+.signature { margin-left: 55%; margin-bottom: 1.5em; }
+
+#grantspage .address, #grantspage .phonenumber { margin-left: 2em; margin-bottom: .5em; }
+#addresspage h2 { float: left; width: 8em; text-align: right; clear: left; font-size: 120%; }
+#addresspage h1 { margin-bottom: 1em; }
+#addresspage .address { margin: 0 0 1em 10em; padding-top: .1em; }
+#addresspage #staffheader { float: none; text-align: left; }
+
+/* because all the content is in a table, the declarations have to be nested appropriately */
+table { border-collapse: collapse; width: 100%; }
+
+/* doubly nested Kintera generated tables */
+td { padding: 0; }
+
+/* I'd like to have a generic table declaration, but Kintera wraps things in tables too
+   frequently */
+.datatable th, .datatable td { border: 1px solid; padding: 3px; vertical-align: top; }
+.datatable th, .datatable th a, table table th a:hover { color: white; }
+.datatable th { background-color: #444; text-align: center; }
+.datatable tr:hover td, .outset { background-color: rgb(255, 253, 185); }
+
+table tr.win td { background-color: #CFC; }
+table tr.loss td { background-color: #FCC; }
+
+.datatable col#title { text-align: center; vertical-align: middle; }
+
+.vcenter td { vertical-align: middle; }
+
+/* Multitudinous styles necessary for the Kintera forms to display correctly. */
+form font { font-size: 100%; }
+#contenttable .kinteraform td, #contenttable .kinteraform form th { border: none }
+.kinteraform br { display: block; }
+.notableborder form td { padding: .25em .5em; }
+form textarea { width: 100%; }
+form tr td table tr td table tr td { text-align: left; padding: 2px 20px 2px 0px; }
+form tr td table tr td table tr td:first-letter { text-transform: capitalize; }
+form .Alert { color: #F00; font-size: 90%; font-weight: bold; padding-left: 2px; }
+form .CTtitle .CTtablein { font-size: 17px; text-align: left; padding: 0; font-weight: bold; }
+form .CTsubtitle .CTtablein { font-size: 14px; text-align: left; font-weight: bold; padding: 0 0 5px; }
+form .CTsubtitle .CTtablein span { font-size: 12px; }
+form #TableRequiredInfo { display: none }
+form .CTsubtitle td { padding-top: 15px; }
+form td td img { border: none; }
+form tr.CTodd { background-color: #FFF; }
+form tr.CTeven { background-color: #EEE; }
+form .directions { padding: 5px; margin: 5px; background-color: #EEE; border: 1px solid #999; border-bottom-color: #666; }
+form #SubmitButton { margin-top: 15px; }
+
+/* Kintera defined form styles that appear on form pages but ouside of the form; it's ok - I don't understand it either */
+.CT { font-weight: normal; }
+.CTtitle { text-align: left; }
+
+/* Styles for the divs that wrap the Print and Email buttons found at the bottom of the content column on most pages.
+ * Uses a sprite map rollover.
+ */
+#lowernav { width: 100%; text-align: center; }
+#emailbutton { background: blue url('/atf/cf/{FC4E88DF-6ACE-4AA6-851C-0688A929D3C5}/e-mailable-button.gif') no-repeat top; margin: 10px 0 0 47px; }
+#printbutton { background: blue url('/atf/cf/{FC4E88DF-6ACE-4AA6-851C-0688A929D3C5}/printable-button.gif') no-repeat top; margin: 10px 47px 0 0; }
+#emailbutton, #printbutton { width: 94px; height: 30px; }
+#emailbutton:hover, #printbutton:hover { background-position: bottom; }
+
+/* The #content in these selectors is not for specification, but to give them priority */
+#content .letters a.NLtitle, #content .action.listing b a, #content .letters a.NLtoc, .featurelisting a
+  { font-size: 120%; border: 1px none transparent; border-style: solid none solid none; }
+#content .letters a.NLtitle:hover, #content .action.listing b a:hover, #content .letters a.NLtoc:hover, .featurelisting a:hover
+  { text-decoration: none; }
+.indexlist .byline { padding: 0 0 .25em; border-bottom: 1px solid #DDD; margin-bottom: .9em; font-size: 100%; }
+.indexlist .NLsubtitle { font-weight: normal; font-size: 100%; font-style: italic; margin-left: .25em; border: none; }
+
+.statetitle { font-size: 18px; font-weight: bold; text-transform: uppercase; margin: 8px 0 -3px;
+              /* font-variant: small-caps; */ }
+.statebreak { border: 1px inset; margin: 0; margin-bottom: inherit; }
+.statetitle, .statebreak { color: #036; margin-left: -5px; }
+
+#statefeedback .CTtitle { display: none; }
+
+.statename { text-transform: uppercase; }
+
+.legislation.indexlist .NLauthor { border: none; font-size: 14px; margin-left: 1em; text-indent: -1em; }
+.legislation.indexlist .status { font-weight: bold; margin: .5em 0; }
+.deadnotice { width: 4.5em; background-color: black; color: white; font-weight: bold; text-align: center; font-size: 15px; padding: .5em; float: right; margin-left: .5em; }
+.legislation.indexlist .NLsummary { display: block; border-bottom: 1px solid #DDD; margin-bottom: .5em; }
+
+.action.listing .byline { border: none; }
+.action.listing .NLdate { padding-bottom: 0; }
+.action.indexlist hr { margin-top: .5em; }
+
+h2#morenews a { margin-top: 1em; border-top: 1px solid #369; text-transform: inherit; }
+#leadstory h2.updatenotice { font-style: italic; font-size: 100%; margin: .5em 0 1em; }
+
+#searchpage br { display: inherit; } /* used extensively in the generated content */
+#searchpage br+br { margin-top: .25em; }
+
+#galapage #hostcommittee, #galapage #photos { float: right; font-size: 95%; border: 1px solid; padding: 5px 8px 0px 10px; margin-left: 7px; }
+#galapage #hostcommittee { width: 12em; font-size: 95%; border: 1px solid rgb(85, 66, 39); padding: 5px 8px 0px 10px; background-color: rgb(255, 244, 215); }
+#galapage p, #galapage .address { margin-bottom: 1.1em; }
+#galapage #hostcommittee h2 { text-align: left; font-size: 110%; border-bottom: 1px solid; margin: 0 0 .25em -.25em; }
+#galapage #photos { width: 230px; clear: right; padding: 5px; margin: 5px 0 5px 7px; }
+#galapage #photos img { border: 1px solid; margin-left: -1px; }
+#galapage #photos .caption { font-size: 95%; margin: .25em 0 .75em; }
+#galapage #hostcommittee ul { list-style: none; padding: 0; margin: 0; }
+#galapage h1 { margin-bottom: 1em; }
+#galapage h2 { text-align: center; margin-bottom: .5em; }
+#galapage .note { border: 1px solid #AAA; background-color: #E5E5E5; clear: both; padding: 5px; }
+.address { margin-left: 20px; }
+.inlineaddress { margin-top: .5em; margin-bottom: 1em; }
+#galapage #purchasebutton { text-align: center; margin: 2em 0; }
+#galapage #purchasebutton a
+  {  background-color: rgb(0, 72, 184); color: white; border: 2px outset; padding: 5px 6px; text-decoration: none; font-weight: bold; }
+#galapage #purchasebutton a:hover { padding: 7px 8px;  }
+#galapage #purchasebutton a:active { color: yellow; }
+
+.briefing { font: 14px Georgia, "Times New Roman", Times, serif }
+.briefing p { text-indent: 2em }
+.noindent { text-indent: 0; }
+.briefing a { font-weight: bold }
+.briefing h1, .briefing h2.subtitle, .briefing .header { text-align: center }
+.briefing h2.subtitle, .briefing .header h2 { border: none; }
+.briefing .header { margin-top: .75em; }
+.briefing .header hr { border: 1px solid; width: 45%; float: left; }
+.briefing .header h2 { width: 10%; float: left; font-size: 120%; position: relative; top: -0.6em; }
+.briefing .header:after { content: ''; height: 0; display: block; clear: both; }
+.briefing h2 { font: bold 130% Tahoma, Verdana, Arial, Helvetica, sans-serif; border-bottom: 1px solid black; }
+.briefing ul { list-style-type: square; }
+.briefing ul li { margin-bottom: 0.75ex; }
+.leader { font: bold 14px Tahoma, Verdana, Arial, Helvetica, sans-serif }
+.revised { color: #666; font-size: 10px; }
+
+#campaignlist { margin: 0 -3px; }
+#campaignlist p { margin-left: 190px; }
+#campaignlist a { font-size: 100%; font-weight: normal; color: black; }
+#campaignlist p a { display: inline; color: #036; }
+#campaignlist p a:hover { border: none; background-color: transparent; color: #369; }
+#campaignlist img { max-width: 185px; }
+
+#rightcol #campaignlist p { margin-left: 0; }
+
+#ad_wrapper select { float: left; display: block; }
+#ad_wrapper label { clear: left; }
+#ad_wrapper label.ad_radio { clear: none; }
+
+.thermometer .label { position: absolute; left: 90px; vertical-align: top; line-height: 1em; font-size: 130%; }
+#rightsubcol.thermometer { border: none; }
+
+/* Styles for the donation forms */
+
+.donation p { margin-left: .5em; }
+
+.donation #sidebar { float: right; width: 365px; border: 1px solid #555; background-color: #E0E0E0; padding: 2px; text-align: center; margin-left: .5em; }
+.donation>#sidebar { width: 360px; }
+.donation #sidebar p { margin: 5px; }
+.donation #sidebar .row:after, #sidebar #awards:after { content: ""; height: 0; clear: both; display: block; }
+.donation #sidebar img { border: 1px solid; display: block; }
+.donation #awards { width: 225px; text-align: center; vertical-align: bottom; background-color: white; float: right;
+                    margin-top: 50px; padding: 5px 10px 5px 0; border: 1px solid; }
+.donation>#sidebar #awards { width: 220px; margin-top: 40px; }
+.donation #awards .spacer { margin-top: 160px; }
+.donation #inhale { position: relative; float: right; right: -75px; margin-left: -90px; margin-right: -40px; }
+.donation *>#inhale { right: -80px; margin-left: -90px; margin-right: -40px; }
+.donation #awards .column { width: 100px; float: right; }
+.donation #awards img { border: none; padding: 5px 0 0; }
+.donation #sidebar .row.two { width: 279px; margin: 2px auto 0; }
+.donation #sidebar .imageborder { border: 1px solid; margin: 0; padding: 4px; float: right; background-color: #EDEDED; }
+.donation #sidebar #bustedborder { margin-right: 2px; }
+.donation .fltright { float: right; }
+.donation table { clear: both; }
+
+.donation form br { display: block; }
+
+.outset { padding: .75em; border: outset; font-size: 110%; margin: .75em; }
+.outset p { margin: 0; }
+.outset li { padding: .1em 0; }
+
+.button {
+  display: block;
+  text-decoration: none;
+  padding: .5em .1em;
+  margin: auto;
+  text-align: center;
+  color: ButtonText;
+  background-color: ButtonFace;
+  color: white;
+  background-color: #274a8a;
+  border: 2px outset ButtonShadow;
+}
+.button:hover { color: white; }
+.button:active {
+  padding: .6em 0em .4em .2em;
+  border-style: inset;
+}

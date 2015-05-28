@@ -1,0 +1,47 @@
+/* ================================
+
+IMG ARTISTS - PRINT STYLES
+
+=================================*/
+
+/* HTML -----------------------*/
+
+body {
+	font-family: helvetica, arial, sans-serif;
+	font-size: 80%;
+}
+
+a img {
+	border: none;
+}
+
+/* LAYOUT ---------------------*/
+
+#header #headerMenu,
+#header #search,
+#leftSidebar,
+#footer,
+#nextAndPrevArtists,
+#languages,
+#slideShow,
+#top {
+	display: none;
+}
+
+#header {
+	border-bottom: 1px solid #efefef;
+	padding-bottom: 8px;
+	margin-bottom: 8px;
+}
+
+#header img {
+	background: red !important;
+}
+
+#artistDiv {
+	width: 420px !important;
+}
+
+#rightCol {
+	float: right;
+}

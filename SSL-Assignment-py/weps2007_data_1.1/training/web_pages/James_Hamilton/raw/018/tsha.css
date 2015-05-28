@@ -1,0 +1,88 @@
+BODY, TH, TD, DL {font-size: 1em; font-family: Arial, sans-serif;}
+
+A {font-family: Arial, sans-serif; font-weight: bold; text-decoration: none; color: #000080;}
+A:VISITED {color: #400080;} 
+A:HOVER, A:FOCUS {text-decoration: underline; color: #DD0000;}
+/*A IMG {border: none;}
+A:HOVER IMG, A:FOCUS IMG {border: 3px; border-color: #DD0000}*/
+
+#wrapper, #content {width: auto; border: 0; margin: 0 5%; padding: 0; float: none;}
+
+.arial {font-family: Arial, sans-serif;}
+.header {font-family: Arial, sans-serif; font-weight: bold;}
+.spotlight {font-size: 12px;}
+.daybyday {font-size: 11px;}
+.footer {font-size: 11px;}
+
+.green {color: #586F28;}
+.purple {color: #663399;}
+.teal {color: #1B7E83;}
+.brown {color: #993300;}
+.blue {color: #006699;}
+
+/* Begin CSS Redesign Feb 2007 */
+.large		{font-size: 1.1em;}
+.small	 	{font-size: 0.9em;}
+.smaller 	{font-size: 0.8em;}
+.spotlites	{font-family: Arial, sans-serif; font-size: 1.05em;}
+.sidebar 	{font-family: Arial, sans-serif; font-size: 0.85em;}
+.bullet 	{font-family: Arial, sans-serif; font-size: 0.95em; margin-left: 5px; text-indent: -5px}
+.footer7 	{font-family: Arial, sans-serif; font-size: 0.7em;}
+.footer8 	{font-family: Arial, sans-serif; font-size: 0.8em;}
+.left		{text-align: left;}
+.center		{text-align: center;}
+.right		{text-align: right;}
+#float-left   {float: left;   width: 20%; padding: 1%; margin: 0px 1% 0px 1%}
+#float-right  {float: right;  width: 20%; padding: 1%; margin: 0px 1% 0px 1%}
+#float-clear  {clear: both;}  													/* End CSS Redesign 2007 */
+
+/* Begin CSS for Top Navigation Menu */
+.menugreen, .menupurple, .menuteal, .menubrown,  .menublue {text-align: center; vertical-align: middle;
+	border-top: 1px solid #CCCCCC; border-right: 2px solid #222222; 
+	border-bottom: 2px solid #222222; border-left: 1px solid #CCCCCC; padding: 1px 3px 2px 3px;	}
+.menugreen  { background: #586F28 url(/DG/header/green2.jpg) repeat-x left top; }
+.menupurple { background: #663399 url(/DG/header/purple2.jpg) repeat-x left top; }
+.menuteal   { background: #1B7E83 url(/DG/header/teal2.jpg) repeat-x left top; }
+.menubrown  { background: #993300 url(/DG/header/brown2.jpg) repeat-x left top; }
+.menublue   { background: #006699 url(/DG/header/blue2.jpg) repeat-x left top; }
+
+.logotext {font: bold .6em Arial, Helvetica, sans-serif; color:#605339;}
+.toplinks a {text-align: center; font: .7em/.8em  Tahoma, Geneva, Helvetica, sans-serif; font-weight: bold;}
+.menu-nav a {text-align: center; font: .8em/.95em Tahoma, Geneva, Helvetica, sans-serif; font-weight: bold; color: #FFFFFF;}
+.menu-nav a:hover, .menu-nav a:focus {color: #FFFFFF;}							/* End Top Nav CSS */
+
+/* Begin legacy CSS Feb 13, 2007 */
+SHQ OPTION, SELECT {font-family: arial, sans-serif; font-size: 12px;}
+
+.header2 {font-family: Arial, sans-serif; font-weight: bold; margin-top: -5px}
+.subheader2 {font-family: Arial, sans-serif; font-weight: bold; margin-top: -5px;  margin-bottom: -5px; line-height: .5}
+.popup-header {font-family: Arial, sans-serif; font-weight: bold; font-size: 12px;}
+.footer2 {font-size: 10px; color: #000066;}
+.more {font-size: 12px; text-indent: 100px;}
+.bborder {border-bottom-width: thick; border-bottom-style: solid; border-bottom-color: #CCCCCC;}
+.text {font-family: serif; color: black;}
+.pub {font-family: arial, sans-serif; font-size: 12px;}
+.bodytext {font-family: arial, sans-serif; font-size: 12px;}
+.title {font-family: arial, sans-serif; color: #993300; font-weight: bold; font-size: 12px;}
+.pubstitle {font-family: arial, sans-serif; font-weight: bold; font-size: larger; font-style : italic;}
+.shq-header {font-family: arial, sans-serif; color: #993300; font-weight: bold;}
+.shq-headerbar {font-family: arial, sans-serif; color: #993300; font-weight: bold; font-size: 12px;}
+.bluebodytext {font-family: arial, sans-serif; font-size: 12px; color: #005E93;}
+.text-indent {font-family: arial, sans-serif; font-size: 8pt;}
+.breadcrumb-trail {font-family: arial, sans-serif; font-size: 0.9em; color: #FF0000;}
+.underline {font-family: Arial, Helvetica, sans-serif; text-decoration: underline;}
+.boxed {
+	font-family: Arial, Helvetica, sans-serif;
+	vertical-align: middle;
+	margin: 5px 5px 5px 25px;
+	padding: 15px;
+	height: 350px;
+	width: 500px;
+	border: thin groove #996633;
+	text-align: left;
+	clear: left;
+}
+.short-indent {width: 100%; margin-left: 30px;}
+.long-indent {width: 100%; 	margin-left: 75px;}
+.long-indent2 {width: 100%;	margin-left: 120px;}
+.tight-header {margin-bottom: -3px;}

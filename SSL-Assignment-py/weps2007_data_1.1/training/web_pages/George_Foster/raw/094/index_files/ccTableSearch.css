@@ -1,0 +1,774 @@
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+#pageSubHeader .pageTypeTitle
+{
+	font-family:"Arial" Sans-Serif;
+	color:#333;
+	font-size:12px;
+	font-weight:normal;
+}
+.ccTableSearch *,
+.ccTableSearchRight *
+{
+	font-size:12px;
+}
+.ccTableSearch,
+.ccTableSearchRight
+{
+	font-family:"Arial", Helvetica, Sans-Serif; 
+	font-size:12px;
+    margin: 0px 0px 10px 0px;
+    line-height: 15px;
+    clear:both;
+    color:#000;
+}
+.ccTableSearch a:link,
+.ccTableSearchRight a:link 
+{
+	color:#333;
+    text-decoration:underline;
+}
+.ccTableSearch a:visited, 
+.ccTableSearchRight a:visited 
+{
+    color: #333;
+    text-decoration:underline;
+}
+.ccTableSearch a:hover,
+.ccTableSearch a:active,
+.ccTableSearchRight a:hover,
+.ccTableSearchRight a:active
+{
+	color:#900;
+    text-decoration:underline;
+}
+.ccTableSearch th a:link,
+.ccTableSearchRight th a:link,
+.ccTableSearch th a:visited,
+.ccTableSearchRight th a:visited,
+.ccTableSearch th a:hover,
+.ccTableSearch th a:active,
+.ccTableSearchRight th a:hover,
+.ccTableSearchRight th a:active
+{
+    color:#666;
+    text-decoration:none;
+}
+.ccTableSearch .newFlag,
+.ccTableSearchRight .newFlag,
+.ccTableSearchRight .partnerVideoContainer .newFlag
+{
+	font-family:"Arial", Helvetica, Sans-Serif; 
+	font-size:11px;
+    margin: 0px 0px 0px 0px;
+    line-height: 15px;
+    color:#c00;
+    font-weight:bold;
+    font-style:italic;
+}
+.ccTableSearch .newFlagPrint
+{
+	font-family:"Arial", Helvetica, Sans-Serif; 
+	font-size:11px;
+    margin: 0px 0px 0px 0px;
+    line-height: 15px;
+    color:#000;
+    font-weight:bold;
+    font-style:italic;
+}
+.ccTableSearchRight .resultCt,
+.ccTableSearch .resultCt 
+{
+    font-size:11px; 
+    font-weight:normal;
+    vertical-align:middle;
+}
+.ccTableSearchRight .titleHeadLarge,
+.ccTableSearch .titleHeadLarge
+{
+	font-size:15px; 
+	display:inline;
+}
+.ccTableSearchRight .titleHeadSmall,
+.ccTableSearch .titleHeadSmall 
+{
+    font-size:11px; 
+    font-weight:normal;
+    display:inline;
+}
+/* ****************************
+	Middle Column Elements
+**************************** */
+.ccTableSearch
+{/*Applies to every table in the search and object ID pages in the middle Column*/
+    background:url(/images/dottedLineDouble.gif) repeat-x top left;
+    padding-top:10px;
+}
+.ccTableSearch table 
+{/*This table encompasses all middle content containers*/
+	width: 429px;
+}
+.ccTableSearch th 
+{/*all table heads on the search results page*/
+    text-align:left; 
+    font-weight:bold;
+    padding-right: 0px 3px; 
+    font-size:12px;
+    background-color: #fff;
+}
+.ccTableSearch .tableHead h2
+{
+    font-weight:bold;
+    padding: 0px 10px 10px 0px; 
+    font-size:15px;
+    /*text-align: left;*/
+    float: left;
+    width:350px;
+}
+.ccTableSearch .moreCell
+{
+    text-align:right;
+    padding:0px;
+    margin:0px; 
+}
+.ccTableSearch p.moreInfo 
+{
+	padding-top:15px;
+}
+.ccTableSearch .moreInfo a:link,
+.ccTableSearch .moreInfo a:visited
+{
+	font-weight:bold;
+	font-size:12px;
+	color:#333;
+	text-decoration:none;
+}
+.ccTableSearch .moreInfo a:hover,
+.ccTableSearch .moreInfo a:active
+{
+	font-weight:bold;
+	font-size:12px;
+	color:#333;
+	text-decoration:underline;
+}
+.ccTableSearch thead th 
+{
+    font-size:15px;
+    padding-bottom:10px;
+}
+
+
+.ccTableSearch .moreButton 
+{
+    text-align: right;
+    width:36px;
+    float:right;
+    background-image:none;
+}
+.ccTableSearch .blogsResult .titleBlogs, 
+.ccTableSearch .groupsResult .titleGroups, 
+.ccTableSearch .forumsResult .titleForums 
+{
+    text-align: left;
+    width:360px;
+    float:left;
+    padding-bottom:5px;
+}
+.ccTableSearch tbody td.moreCell 
+{
+    padding-right: 0;
+    
+}
+.ccTableSearch tbody th, 
+.ccTableSearch tbody th a:link,
+.ccTableSearch tbody th a:visited,
+.ccTableSearch tbody th a:hover,
+.ccTableSearch tbody th a:active
+{
+    font-size:11px;
+    font-weight: bold;
+    color: #666;
+}
+.ccTableSearch tbody td 
+{
+    padding: 5px 3px; 
+}
+.ccTableSearch tbody td.moreCell 
+{
+    padding-right: 0;
+    
+}
+.ccTableSearch tbody tr.even td 
+{
+    background-color: #eed;
+/*    border-bottom: 1px solid #ccc;*/
+}
+.ccTableSearch tbody tr.odd td 
+{
+    background-color: #fff;
+}
+body.printPage .ccTableSearch tbody tr.even td 
+{
+    background-color: #ededed;
+}
+body.printPage .ccTableSearch  
+{
+    background:none;
+}
+.ccTableSearch tbody .yearCell 
+{
+    width: 40px;
+    text-align: center;
+}
+.ccTableSearch .listingsTable .tableName
+{
+	float:left;
+	padding-bottom:3px;/*To keep the bottom of the letters from being cut off in IE*/
+	width:330px;
+} 
+
+.ccTableSearch .listingsTable .listingsTV .channelCell
+{
+	width:80px;
+	text-align:left;
+} 
+.ccTableSearch .listingsTable td.recordCell a:link,
+.ccTableSearch .listingsTable td.recordCell a:visited,
+.ccTableSearch .listingsTable td.recordCell a:hover,
+.ccTableSearch .listingsTable td.recordCell a:active
+{
+	color:#000;
+}
+.ccTableSearch .listingsTable .listingsMovie .channelCell, 
+.ccTableSearch .videoCell,
+.ccTableSearch .popResults .channelCell 
+{
+    width: 55px;
+	text-align: left;
+}
+.ccTableSearch .forumsResult .dateCell, 
+.ccTableSearch .blogsResult .dateCell, 
+.ccTableSearch .groupsResult .dateCell 
+{
+    width: 75px;
+	text-align: left;
+}
+.ccTableSearch .popResults .dateTimeCell,
+.ccTableSearch .blogsResult .usernameCell,
+.ccTableSearch .groupsResult .usernameCell
+{
+	width:100px;
+    text-align: left;
+}
+.ccTableSearch .celebResults tbody .nameCell {
+    text-align: left;
+}
+.ccTableSearch .newsArticles tbody .sectionCell {
+    text-align: left;
+}
+.ccTableSearch .newsArticles tbody .dateCell {
+    text-align: left;
+}
+.ccTableSearch .episodeList tbody .articleCell{
+    text-align: left;
+    width: 429px;
+}
+/*****************/
+/***TV Listings***/
+/*****************/
+.ccTableSearch .listingsTable .listingsTV .dateTimeCell, 
+.ccTableSearch .listingsTable .listingsMovie .timeCell 
+{
+	width:200px;
+    text-align: left;
+}
+.ccTableSearch .listingsTable .listingsMovie .dateCell, 
+.ccTableSearch .listingsTable .listingsTV .titleCell
+{
+	width:270px;
+    text-align: left;
+}
+.ccTableSearch .listingsTable .titleCell img
+{
+	float:left;
+}
+.ccTableSearch .listingsTable .localizationCell
+{
+	text-align:left;
+	font-size:12px;
+	text-decoration:none;
+}
+.ccTableSearch .listingsTable .hdtvIcon
+{
+	padding:5px 5px 5px 20px;
+}
+.ccTableSearch .listingsTable #localization a:link,
+.ccTableSearch .listingsTable #localization a:visited,
+.ccTableSearch .listingsTable #localization a:hover,
+.ccTableSearch .listingsTable #localization a:active
+{
+	text-decoration:underline;
+	color:#333;
+}
+.ccTableSearch .thirdRow
+{
+	padding:0px;
+	margin:0px;	
+}
+.ccTableSearch .thirdRow a:link,
+.ccTableSearch .thirdRow a:visited,
+.ccTableSearch .thirdRow a:hover,
+.ccTableSearch .thirdRow a:active
+{
+	font-weight:bold;
+	font-size:11px;
+}
+.ccTableSearch .listingsTablePrint
+{
+	margin:20px;
+}
+.ccTableSearch .listingsTable .printCell,
+.ccTableSearch .vcrPlusBtn,
+.ccTableSearch .tivo
+{
+    float:left;
+    padding-top:5px;
+    padding-right:20px;
+}
+.ccTableSearch .listingsTable .printCell a:link,
+.ccTableSearch .listingsTable .printCell a:visited,
+.ccTableSearch .listingsTable .printCell a:hover,
+.ccTableSearch .listingsTable .printCell a:active,
+.ccTableSearch .tivo a:link,
+.ccTableSearch .tivo a:visited,
+.ccTableSearch .tivo a:hover,
+.ccTableSearch .tivo a:active,
+.ccTableSearch .vcrPlusBtn a:link,
+.ccTableSearch .vcrPlusBtn a:visited,
+.ccTableSearch .vcrPlusBtn a:hover,
+.ccTableSearch .vcrPlusBtn a:active
+{
+	color:#000;
+	text-decoration:underline;
+}
+/*Movie Review*/
+.ccTableSearch .reviewText
+{
+	clear:both;
+	text-align:left;
+}
+
+/* ***************************************
+	Cast & Details Section for TV Shows, Movies, Celeb 
+*************************************** */
+.ccTableSearch .castDetailsShow, 
+.ccTableSearch .castDetailsMovie
+{
+	clear:both;
+}
+.ccTableSearch .imageCredit
+{
+	width:100%;
+	text-align:right;
+    font-size:10px;
+	color:#999;	
+	padding-top:5px !important;
+	padding-top:0px;
+	padding-bottom:0px;
+	margin-bottom:0px;
+}
+.ccTableSearch .castDetailsMovie .stars
+{
+	display:inline-block;
+}
+.ccTableSearch .celebInfo
+{/*Div encompasses all of the celebrity biography information*/
+	clear:both;
+	text-align:left;
+} 
+.ccTableSearch .celebDetails
+{/*Subset of .celebInfo - Encompasses everything that's not part of the bio*/
+	text-align:left;
+} 
+.ccTableSearch .celebDetails ul
+{/*Subset of .celebInfo - Encompasses everything that's not part of the bio*/
+	 list-style-type:none;
+} 
+.ccTableSearch .celebDetails .label
+{/*Subset of .celebInfo - Encompasses everything that's not part of the bio*/
+	 font-weight:bold;
+} 
+.ccTableSearch .castDetailsMovie .movieImageInfo
+{
+	width:100%;
+	margin:0px;
+	padding:0px;
+	border:0px;
+	vertical-align:top;
+}
+.ccTableSearch .castDetailsMovie .movieImageInfo .cellLeft
+{
+	padding-right:10px;
+	vertical-align:top;
+}
+.ccTableSearch .castDetailsMovie .movieImageInfo .cellRight
+{
+	width:100%;
+	vertical-align:top;
+}
+.ccTableSearch .castDetailsShow .imgInfo a,
+.ccTableSearch .castDetailsMovie .imgInfo a,
+.ccTableSearch .celebInfo .imgInfo a
+{
+	float:left;
+	text-decoration:underline;
+	font-size:11px;
+	clear:left;
+}
+.ccTableSearch .celebBio
+{/*subset of .celebInfo - Bio info on celeb*/
+	clear:both;
+	text-align:left;
+} 
+.ccTableSearch .celebInfo .imgInfo img,
+.ccTableSearch .castDetailsShow .imgInfo img,
+.ccTableSearch .castDetailsMovie .imgInfo img
+{
+	float:left;
+}
+.ccTableSearch .celebInfo .imgInfo,
+.ccTableSearch .castDetailsShow .imgInfo
+{/*Main Image*/
+	float:left;
+	margin:0px 10px 10px 0px;
+	border:1px #000;
+	
+}
+.ccTableSearch .celebInfo .imageCredit,
+.ccTableSearch .celebInfo .imageCaption,
+.ccTableSearch .castDetailsShow .imageCredit,
+.ccTableSearch .castDetailsMovie .imageCredit,
+.ccTableSearch .castDetailsShow .imageCaption,
+.ccTableSearch .castDetailsMovie .imageCaption
+{	float:left;
+}
+/*.ccTableSearch .castDetailsShow .imageCredit
+.ccTableSearch .castDetailsMovie .imageCredit.
+{
+	margin:0px 10px 0px 0px;
+}*/
+.ccTableSearch .castDetailsShow .label,
+.ccTableSearch .castDetailsMovie .label,
+.ccTableSearch .celebBio .fastFacts .listHead,
+.ccTableSearch .celebDetails .label,
+.ccTableSearch .castDetailsShow .listHead,
+.ccTableSearch .castDetailsMovie .listHead,
+.ccTableSearch .celebInfo .listHead
+{/*Bolded text throughout sections*/
+	font-weight:bold;
+	color:#000;
+}
+.ccTableSearch .castDetailsShow .listHead,
+.ccTableSearch .castDetailsMovie .listHead
+{
+	margin-top:10px;
+}
+.ccTableSearch .celebInfo .celebBio .fastFacts li,
+.ccTableSearch .celebInfo .celebBioMore li
+{/*list items lined up with a 10px left margin*/
+	list-style-image:url(/images/bullets/redBullet.gif);
+	list-style-position:outside !important;
+	margin:0px 0px 0px 12px !important;
+	margin:0px 0px 0px 15px;
+}
+.ccTableSearch .celebBio li.listHead, 
+.ccTableSearch .celebBio .fastFacts 
+{/*Fast Facts Section*/
+	/*margin-top:10px;*/
+	padding:10px 0px 0px 0px;
+	list-style:none;
+} 
+.ccTableSearch .celebBio li.listHead
+{
+	margin:0px 0px 0px 0px;
+}
+.ccTableSearch .castDetailsShow .listHead,
+.ccTableSearch .castDetailsMovie .listHead,
+.ccTableSearch .castDetailsShow .castName,
+.ccTableSearch .castDetailsMovie .castName
+{
+	list-style:none;
+	margin:0px 0px 0px 0px;
+	padding:0px;
+}
+.ccTableSearch .castDetailsShow .listHead,
+.ccTableSearch .castDetailsMovie .listHead
+{
+	font-weight:bold;
+	color:#000;
+}
+.ccTableSearch .castDetailsShow .actorName,
+.ccTableSearch .castDetailsMovie .actorName
+{
+	text-decoration:underline;
+}
+.ccTableSearch .castDetailsShow .label,
+.ccTableSearch .castDetailsMovie .label
+{
+	font-weight: bold;
+}
+.ccTableSearch .castDetailsShow .premise
+{
+	margin-bottom:10px;
+}
+/*Placeholder classes to use if necessary
+.ccTableSearch .castDetailsShow .roleName,
+.ccTableSearch .castDetailsMovie .roleName
+{
+}
+
+.ccTableSearch .castDetailsShow .premiered
+{
+}
+.ccTableSearch .castDetailsShow .rating
+.ccTableSearch .castDetailsMovie .rating
+{
+}
+.ccTableSearch .castDetailsShow .airs
+{
+}*/
+/* Used to put the cast into two columns.  May still need to be used. Keep until final decision is made.
+.ccTableSearch .castLeft
+{ 
+	float:left;
+	width:209px;
+	margin:0px 10px 0px 0px;
+	padding:0px;
+}
+.ccTableSearch .castRight
+{
+	float:right;
+	width:209px;
+	margin:0px;
+	padding:0px;
+	
+}*/
+/* ***********************
+	 RIGHT COLUMN
+*********************** */
+
+.ccTableSearchRight{
+	width: 319px;
+	clear:both;
+}
+.videoPlayerObjectIDPage{
+	margin-bottom:10px;
+}
+.ccTableSearchRight #images
+{
+    margin: 10px 0px 10px 0px;
+    clear:both;
+    background-color:#cbccbc;
+}
+.ccTableSearchRight #images table {
+	width: 319px;
+	clear:both;
+}
+.ccTableSearchRight #images .imagesHeader 
+{
+	margin:0px 10px 0px 10px;
+	padding-bottom:10px;
+}
+.ccTableSearchRight #images .imagesHeader .imagesTitle
+{
+	width:250px;
+	float:left;
+	padding-bottom:3px;
+} 
+.ccTableSearchRight #images .doubleWhiteLine
+{
+	background:url(/images/dottedLineDoubleWhite.gif) repeat-x bottom left;
+	float:left;
+	height:3px;
+	width:100%;
+	margin:10px 0px;	
+} 
+.ccTableSearchRight #images .imagesFooter 
+{
+	padding:0px 10px 10px 10px;
+}
+.ccTableSearchRight #images .moreButton {
+    text-align: right;
+    padding-top:3px;
+}
+.ccTableSearchRight #images h2.tableHead 
+{
+    text-align:right; 
+    font-weight:bold;
+    padding-right: 10px; 
+    font-size:15px;
+    text-align: left;
+    background-color:#cbccbc;
+    /*padding-bottom:10px;*/
+    float:left;
+    width:250px;
+}
+.ccTableSearchRight #images .photos,
+.ccTableSearchRight #images .covers
+{
+/*    background:url(/images/dottedLineDouble.gif) repeat-x bottom left;*/
+    margin:10px 0px 10px 0px;
+	
+}
+.ccTableSearchRight #images .imageLineUp td 
+{
+	height: 90px;
+	text-align:center;
+	vertical-align:middle;
+	width:90px;
+	border-left: 7px solid #cbccbc;
+	border-right: 8px solid #cbccbc;
+}
+.ccTableSearchRight #images .photos	.imageType 
+{
+    text-align:left; 
+    font-weight:bold;
+    font-size:12px;
+    text-align: left;
+    background-color: #fff;
+    margin-top:10px;
+	clear:both;
+}
+/* ************************
+       Videos Player        
+************************ */
+.videoTopper 
+{
+    background:url(/images/dottedLineDouble.gif) repeat-x top left;
+	width:320px;
+}
+.videoTopper h2
+{
+    font-weight:bold;
+    padding: 10px 10px 10px 0px; 
+    font-size:15px;
+    text-align: left;
+    color:#000;
+}
+.videoTopper .titleHeadSmall
+{
+    font-size:11px; 
+    font-weight:normal;
+}
+/* ***************************
+	  Partner Videos
+*************************** */
+.ccTableSearchRight .partnerVideoTop 
+{
+	padding:0px;
+	margin:0px;
+	height:10px;
+}
+.ccTableSearchRight .videoPlayerObjectIDPage 
+{
+	padding-bottom:10px;
+}
+.ccTableSearchRight #partnerVideoContainer 
+{
+	border-right:solid 1px #ccb;
+	border-left:solid 1px #ccb;
+	border-bottom:solid 1px #ccb;
+	margin:0px;
+	padding:0px 10px 10px 10px;
+	width:297px !important;
+}
+.ccTableSearchRight #partnerVideoContainer .partnerVideoHead
+{
+	vertical-align:top;
+	text-align:left; 
+	vertical-align:middle; 
+	font-weight:bold; 
+	font-size:14px;
+	margin:0px;
+	padding:0px;
+}
+.ccTableSearchRight #partnerVideoContainer .partnerVideoHR
+{
+	border:solid #ccb;
+	border-width:1px 0px 0px 0px;
+	padding:10px 0px 0px 0px;
+	margin-bottom:5px;
+	height:0px;
+}
+.ccTableSearchRight .partnerVideoContent
+{
+	width:297px !important;
+	width:295px;
+	max-height:165px !important;
+	height:auto !important;
+	height:165px;
+	overflow:auto; 
+	border:solid 1px #ddc;
+	padding-top:0px;
+	margin-top:0px;
+	background:#ccb url(/images/gradients/bgPartnerVideoIE.jpg) repeat-y;
+}
+.ccTableSearchRight #partnerVideoContainer .contentGrid
+{
+	border-collapse:collapse;
+}
+.ccTableSearchRight #partnerVideoContainer .contentGrid .contentRow
+{
+	background:#ccb;
+	border-bottom:solid 1px #ddc;
+	padding:0px;
+}
+.ccTableSearchRight #partnerVideoContainer .contentGrid .iconCell
+{
+	text-align:center;
+	vertical-align:middle;
+	width:50px;
+	border-bottom:0px !important;/*Mozilla - border is handled in the .contentRow*/
+	border-bottom:solid 1px #ddc;/*IE */
+	border-right:0px !important;/*Mozilla - no border is needed*/
+	border-right:solid 1px #ddc;/*IE*/
+	background-color:Transparent !important;/*Moz - Background color is in innerIconCell*/
+	background-color:#eed;/*IE*/
+	height:100%;
+}
+.ccTableSearchRight #partnerVideoContainer .contentGrid .innerIconTable 
+{/*IE Doesn't support full height table inside a td, so the look in Moz cannot be replicated in IE*/
+	width:100%;
+	height:100%;
+	margin:0px;
+	padding:0px;
+}
+.ccTableSearchRight #partnerVideoContainer .contentGrid .innerIconCell
+{/*padding around table is generated in back-end by cellspacing="1"*/
+	vertical-align:middle;
+	background-color:#eed;
+	border:solid 1px #ddc !important;/*MOZ-Border on the cell*/
+	border:0px;/*IE - no border*/
+	padding:0px;
+	margin:0px;
+	width:100%;
+	height:100%;
+}
+.ccTableSearchRight #partnerVideoContainer .contentGrid .contentInfoCell 
+{/*right hand column containing information*/
+	font-size:11px;
+	width:247px !important;
+	width:245px;
+	padding:5px;
+	border-bottom:solid 1px #ddc;
+
+}
+.ccTableSearchRight #partnerVideoContainer .contentGrid .contentInfoCell .title a:link
+{
+	font-weight:bold;
+	text-decoration:underline;
+}
+.ccTableSearchRight #partnerVideoContainer .contentGrid .contentInfoCell *
+{	
+	font-size:11px;
+	color:#000;
+}

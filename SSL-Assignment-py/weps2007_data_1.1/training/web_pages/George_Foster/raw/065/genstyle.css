@@ -1,0 +1,282 @@
+/* normal: most regular body text */
+.normal {
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 11px;
+}
+
+/* smfieldname: small text used in conjunction with .fieldname style text */
+.smfieldname {
+	font-family:Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 10px;
+	color: white;
+}
+
+/* fieldname: regular text within column or row title sections */
+.fieldname {
+	font-family:Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 11px;
+	color: white;
+}
+
+/* header: heading text */
+.header {
+	font-family: Geneva, Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 21px;
+	color: #990000;
+}
+
+/* whiteheader: heading text used on dark backgrounds (usually fieldnameback) */
+.whiteheader {
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	color: #FFFFFF;
+}
+
+/* subhead: subheading text */
+.subhead {
+	font-family:Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 16px;
+}
+
+/* body: describes page background color and all non-table text not governed by any other style */
+BODY {
+	background-color : #FFFFFF;
+	color : #000000;
+	font-family : Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+/* link: normal links, active: links in use */
+A:LINK, A:ACTIVE {
+	color : #990000;
+}
+
+/* visited: previously visited links */
+A:VISITED {
+	color: #666633;
+}
+
+/* fieldnameback: background color for column and row title sections */
+.fieldnameback {
+	background-color: #000040;
+	/*these 2 lines added in 5.0*/
+	border-right: 1px solid #777; 
+	border-bottom: 1px solid #777;
+}
+
+/* databack: background color for data areas */
+.databack {
+	background-color: #CCCC99;
+	/*these 2 lines added in 5.0*/
+	border-right: 1px solid #bbb; 
+	border-bottom: 1px solid #bbb;
+}
+
+.pboxname {
+  font-family: Verdana, Arial, Helvetica, sans-serif; 
+}
+
+/* pedigree box: dates font */
+/* font-size should be in points */
+.pboxdates {
+  font-family: Verdana, Arial, Helvetica, sans-serif; 
+}
+
+/* pedigree box information popups */
+/* font-size should be in points */
+.pboxpopup {
+  font-family: Verdana, Arial, Helvetica, sans-serif; 
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Added in 3.0.4 */
+UL {
+  margin-left: 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 1em;
+  line-height: 1.2em;
+/*  list-style-image: url(ArrowRight.gif); */
+list-style-type: none;
+  font-family:Verdana;
+  font-size:10px;
+}
+
+/* Added in 4.0.0 */
+/* For links on dark background */
+a.lightlink:link, a.lightlink:visited {
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 10px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+a.lightlink:hover, a.lightlink:active {
+	color: #FFCC33;
+	text-decoration: none;
+}
+
+/* For white-only links on dark background */
+a.lightlink2:link, a.lightlink2:visited {
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+a.lightlink2:hover, a.lightlink2:active {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.lightback {
+	background-color: #FFFFFF;
+	/*these 2 lines added in 6.0.0*/
+	border-right: 1px solid #bbb; 
+	border-bottom: 1px solid #bbb;
+
+}
+
+/* sideback: background color for side and top frames */
+.sideback {
+	background-color: #000040;
+}
+
+/* mouseoverback: background color for admin menu items while active*/
+.mouseoverback {
+	background-color: #cc6666;
+	/*these 2 lines added in 5.0*/
+	border-right: 1px solid #777; 
+	border-bottom: 1px solid #777;
+}
+
+.whitesubhead {
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	color: #FFFFFF;
+	font-size: 16px;
+}
+
+/* smaller: small body text */
+.smaller {
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 11px;
+}
+
+/*added in 5.0.0*/
+/*for active secondary tab link*/
+a.lightlink3:link, a.lightlink3:visited, a.lightlink3:hover, a.lightlink2:active {
+	color: #FFCC33;
+	text-decoration: none;
+}
+
+/*for alignment on menu icons*/
+.tngmenuicon {
+	vertical-align: -3px;
+}
+
+/*for descendancy chart*/
+#descendantchart {
+	text-align: left;
+}
+
+#descendantchart li {
+	list-style-type: none;
+	white-space: nowrap;
+}
+
+#descendantchart ul {
+  margin-left: 0px;
+}
+
+#descendantchart ul.first {
+	margin: 0;
+	padding: 0;
+}
+
+/* For Census reports */
+
+/* databack2: background color for data areas */
+.databack2 {
+	background-color: #999966;
+}
+
+.tableheader2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 11px;
+	color: white;
+}
+
+.normal2 {
+	font-family:Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 11px;
+	color: black;
+}
+
+/*added in 6.0.0*/
+/*for css dropdown menus*/
+#mnav, #mnav ul { /* all lists */
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+#mnav a {
+	display: block;
+	width: 6em;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-size: 11px;
+	text-decoration:none;
+}
+
+#mnav li { /* all list items */
+	float: left;
+	width: 6em; /* width needed for Opera */
+	margin-right: 2px;
+	background: #e0e0f7; /*same as "databack" background color */
+	border-bottom:1px solid #777;
+	border-right:1px solid #777;
+	border-top:1px solid #e0e0f7; /*same as "databack" background color */
+	border-left:1px solid #e0e0f7; /*same as "databack" background color */
+}
+
+#mnav li ul { /* second-level lists */
+	border-top: 1px solid #777;
+	border-left: 1px solid #777;
+	border-right: 1px solid #777;
+	background: #ffffff;
+	position: absolute;
+	width: 10em;
+	left: -999em; /* using left instead of display to hide menus because display: none isn't read by screen readers */
+}
+
+#mnav li ul li {
+	border: 0px;
+	width: 10em;
+	background: #eeeeee; /*inactive dropdown menu color*/
+	margin-right: 0px;
+	margin-top: 1px;
+	border-bottom: 1px solid #777;
+}
+
+#mnav li ul li a {
+	width: 12em;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-size: 12px;
+	text-decoration:underline;
+}
+
+#mnav li:hover, #mnav li.sfhover { /* lists nested under hovered list items */
+	background-color: #ffffff;
+	border-top:1px solid #aaa;
+	border-left:1px solid #aaa;
+}
+
+#mnav li:hover li, #mnav li.sfhover li { /* lists nested under hovered list items */
+	border-top:none;
+	border-left:none;
+}
+
+#mnav li:hover ul, #mnav li.sfhover ul { /* lists nested under hovered list items */
+	left: auto;
+}

@@ -1,0 +1,75 @@
+body {
+	font-family: "Lucida Grande", Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	background-color: #FFFFFF;
+	margin: 0px;
+	padding: 0px;
+}
+.BlackCell {
+	background-color: #000000;
+}
+td#nav {
+	font-family: "Arial Black", Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FFFFFF;
+	background-color: #000000;
+}
+/*
+a:link, a:visited, a:active {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+*/
+a:hover {
+	color: #FECB35;
+}
+.MainCopy {
+	font-family: "Lucida Grande", Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+}
+.Disclaimer {
+	font-family: "Lucida Grande", Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #000000;
+	text-decoration: none;
+}
+.FormElements1, .FormElements2 {
+	font-family: "Lucida Grande", Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #000000;
+	background-color: #ECECEC;
+}
+.FormElements1 {
+	width: 100%;
+}
+a#NavOn {
+	color: #FECB35;
+	text-decoration: none;
+}
+a#NavOff a:hover, td#nav a:hover {
+	color: #FECB35;
+	text-decoration: none;
+}
+a#NavOff {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+#adminAgents{
+	font-size: 12px;
+	width: 90%;
+}
+#adminAgents i{
+	font-size: 11px;
+}
+#adminAgents td{
+	padding: 3px;
+	margin: 0;
+}
+#adminAgents .columnHeader{
+	font-size: 13px;
+	font-weight: bold;
+	display: block;
+	border-bottom: 1px solid #000000;
+}

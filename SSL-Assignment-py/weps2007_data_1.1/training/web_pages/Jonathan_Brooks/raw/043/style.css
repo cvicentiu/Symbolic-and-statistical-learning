@@ -1,0 +1,138 @@
+/* generic style sheet for the OTEEE  June 15 2002 Created by CK BROOKS DESIGNS*/
+/* ordinary navigation links */
+
+
+/* CoolMenus 4 - default styles - do not edit */
+.clCMAbs{position:absolute; visibility:hidden; left:0; top:0}
+/* CoolMenus 4 - default styles - end */
+
+/*Style for the background-bar*/
+.clBar{position:absolute; width:12; height:12; background-color:#0800BF; layer-background-color:#0800BF; visibility:hidden}
+
+/*Styles for level 0*/
+.clLevel0,.clLevel0over{position:absolute; padding:2px; font-family:Arial, sans-serif; font-size:12px}
+.clLevel0{background-color:#0800BF; layer-background-color:Navy; color:white;}
+.clLevel0over{background-color:#336699; layer-background-color:#336699; color:Yellow; cursor:pointer; cursor:hand; }
+.clLevel0border{position:absolute; visibility:hidden; background-color:#006699; layer-background-color:#006699}
+
+/*Styles for level 1*/
+.clLevel1, .clLevel1over{position:absolute; padding:2px; font-family:Arial, sans-serif; font-size:11px;}
+.clLevel1{background-color:#0800BF; layer-background-color:Navy; color:white;}
+.clLevel1over{background-color:#336699; layer-background-color:#336699; color:Yellow; cursor:pointer; cursor:hand; }
+.clLevel1border{position:absolute; visibility:hidden; background-color:#006699; layer-background-color:#006699}
+
+/*Styles for level 2*/
+.clLevel2, .clLevel2over{position:absolute; padding:2px; font-family:Arial, sans-serif; font-size:10px }
+.clLevel2{background-color:Navy; layer-background-color:#0800BF; color:white;}
+.clLevel2over{background-color:#0099cc; layer-background-color:#0099cc; color:Yellow; cursor:pointer; cursor:hand; }
+.clLevel2border{position:absolute; visibility:hidden; background-color:#006699; layer-background-color:#006699}
+
+/* regular page navigation links */
+a:visited {color: #edf3ff; background:transparent; text-decoration:none;
+           font-family:Arial, sans-serif; font-size:12pt}
+a:link    {color: #edf3ff; background:transparent; text-decoration:none;
+           font-family:Arial, sans-serif; font-size:12pt}
+a:hover {color:#777777; background:transparent; text-decoration:none;
+               font-family:Arial, sans-serif; font-size:12pt}
+a:active  {color:#edf3ff; background:transparent; text-decoration:none;
+           font-family:Arial, sans-serif; font-size:12pt}
+
+
+/* page bottom navigation links */
+a.nav {color:#0800BF; background:transparent; font-size:8pt}
+a.nav:visited {color: #edf3ff; background:transparent;font-family:Arial, sans-serif; font-size:8pt}
+a.nav:hover {color: #777777; background:transparent; font-family:Arial, sans-serif;text-decoration:none;font-size:8pt}
+a.nav:link {color: #edf3ff; background:transparent;font-family:Arial, sans-serif; font-size:8pt}
+a.nav:active {color: #edf3ff; background:transparent;font-family:Arial, sans-serif; font-size:8pt}
+
+
+/* background color scheme */
+body {color:white; background: #0800BF url(images/blslbkg.gif); margin:auto; width:100%}
+img {border:none;padding:5px;}
+img.banner {margin-left:2px; border:0px}
+img.left{float:left; border:0px ; padding:15px}
+img.right{float:right;border:0px}
+hr {color:white; width:100%; background-color:transparent}
+hr.short {color:white; width:75%; background-color:transparent; text-align:center}
+/* block structures */
+h1 {font-size:28pt; font-family:matisse itc;color:#FFFFFF}
+h2 {font-size:16pt; font-family: sans-serif;color:#FFFFFF}
+h3 {font-size:14pt; font-family: sans-serif;color:#FFFFFF}
+h4 {font-size:12pt; font-family: sans-serif;color:#FFFFFF}
+h5 {font-size:10pt; font-family: sans-serif;color:#FFFFFF}
+h6 {font-size:8pt; font-family: sans-serif;color:#FFFFFF}
+
+strong {text-transform:uppercase; font-weight:bold; font-family: sans-serif}
+caption {text-align:center;font-size:18pt; font-family: sans-serif}
+div.c {text-align:center;font-size:12pt;margin:"0";color:white;}
+div.pop {color:black; background:navy; text-align:center; border:0px;
+ visibility:visible; position:absolute; z-index:2px}
+blockquote { color:white; font-size:12;margin-right:5px;}
+p {color:#FFFFFF;text-align:left; margin-left:20px;margin-right:20px;text-indent:10px; 
+font-family: sans-serif;font-size:12pt;width:100% }
+p.nav {color:#FFFFFF;text-align:center;font-size:10pt; font-family:sans-serif;margin-right:auto;margin-left:auto}
+p.center {color:#FFFFFF; text-indent:10px; text-align:left;font-size:12pt;margin-right:25px; margin-left:25px}
+address {color:yellow; background:transparent; white-space:nowrap;
+         font:normal bold 10pt sans-serif; margin:0px}
+ /*regular table*/ 
+table {margin-left:auto; margin-right:auto; font-family:sans-serif;color:white;
+       background-color:beige;  width:75%;border:solid 2px #0800BF}
+caption {font-size:16pt; font-family:sans-serif ;color:white}
+th {vertical-align:top;text-align:center;font-size:14pt;font-family:sans-serif;padding:2px;color:black; 
+ background-color:rgb(250,235,215);border:solid 2px #0800BF}
+td {vertical-align:top;text-align:left;font-family:sans-serif;color:black;
+ background-color:rgb(255,248,220);border:solid 2px #0800BF}
+
+/*clock style*/
+table.pop {color:black; background:red; border:0px}
+td.pop {color:black; background:red; border:0px;
+ font:bold 8pt Arial, sans-serif} 
+th.pop {color:black; background:red; border:1px} 
+/*sidebar navigation*/
+table.navside { width:770px; margin:none;
+   font-size:12pt; font-family:sans-serif;background-color:white;color:black; border:none}
+
+th.navside {width:770px; margin:none;background-color:white;color:black;border:none}
+
+td.textzone { width:540px;font-size:12pt; font-family:sans-serif;
+background-color:white;color:black; border:none}
+td.navside {margin-left:auto; margin-right:auto; width:230px;background:url(images/background.gif);
+background-color:black;font-size:12pt; font-family:sans-serif;color:white; border:none; border-spacing:0px}
+
+/* page table*/
+table.plain {margin-left:auto; margin-right:auto; width:90%; 
+    font-family:sans-serif;background-color:transparent;color:white; border:none}
+td.plain {background-color:transparent; color:white;text-align:center;font-size:12pt;
+  font-family:sans-serif;border:none;margin-left:5px; margin-right:5px;padding:15px}
+th.plain {background-color:transparent;color:white;text-align:center;font-size:14pt;
+  font-family:sans-serif;border:none;padding:20px}
+tr.plain {background-color:transparent;color:white;text-align:center;font-size:12pt;
+   font-family:sans-serif;border:none;padding:20px}
+
+/* photo 3 columns page table*/
+table.photo  {margin-left:auto; margin-right:auto; width:90%; 
+    font-family:sans-serif;background-color:transparent;color:white; border:none}
+td.photo  {width:30%;background-color:transparent; color:white;
+     text-align:center;font-size:12pt;font-family:sans-serif;border:none;padding:20px}
+th.photo  {background-color:transparent;color:white;text-align:center;font-size:14pt;
+  font-family:sans-serif;border:none;padding:20px}
+tr.photo  {background-color:transparent;color:white;text-align:center;font-size:12pt;
+   font-family:sans-serif;border:none;padding:20px}
+
+/* fancy list bullets */
+ul {list-style-image:url(images/yellowarrow.gif);color:white}
+ol {list-style:circle;color:white ;}
+ol.num {list-style-type:decimal;color:white;list-style-position:outside}  /* 1 2 3 4 5 etc. */
+
+ol.alpha  {list-style-type:upper-alpha;color:white;}
+ol.loweralpha {list-style-type:lower-alpha;color:white;list-style-position:inside}  /* a b c d e etc. */
+
+ol.squ {list-style:square;color:white }
+ol.lowrom {list-style-type:lower-roman;color:white ;list-style-position:inside}
+
+span.r {color:red;background-color:transparent;font-size:14pt; font-family: sans-serif}
+span.b {color:blue;background-color:transparent;font-size:14pt; font-family: sans-serif}
+
+/*<link href="style.css" type="text/css" rel="stylesheet">*/
+
+

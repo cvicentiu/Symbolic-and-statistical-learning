@@ -1,0 +1,275 @@
+/*
+-----------------------------------------------
+O'Malley Master Stylesheet
+Author:   Cameron Corda
+Version:  1.0
+----------------------------------------------- */
+
+html, body {margin: 0; padding: 0; text-align: center; background: #F2F2F2;}
+
+body, div, td, th, h1, h2, h3, h4 { /* redundant rules for bad browsers  */  
+  font-family: tahoma, verdana, helvecta, sans-serif;
+	font-size:    x-small;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	font-size: small;
+	color: #333;
+}
+
+body.printer {font-size:1em;padding:20px; background:#fff;text-align:left;}
+  
+td {vertical-align: top; border:none; margin: 0; padding: 0;}
+
+#container {width: 700px; margin: 0 auto; padding; 0; background: #fff;}
+
+#contentContainer {margin: 0; padding: 0; text-align: left; border-left: 2px solid #E1E1E1; border-right: 2px solid #E1E1E1; border-bottom: 2px solid #E1E1E1;}
+#contentContainer table {margin: 0; padding: 0;}
+#contentContainer table td#left {width: 470px; text-align: center; background: #fff;}
+#contentContainer table td#right {width: 226px; margin: 0; padding: 0; text-align: left; background: #fff;}
+
+#contentContainer table td#leftvid {width: 696px; text-align: center; background: #fff;}
+
+
+div.clear {clear: both; line-height: 0; margin: 0; padding: 0;}
+
+/* HEADER
+----------------------------------------------- */
+#header {margin: 0; padding: 0; text-align: left;}
+
+#banner {height: 98px; width: 700px; background: url(/sync/images/434.jpg) no-repeat; padding: 0; margin: 0; position: relative; text-align: left;}
+body.printer #banner {margin-bottom:10px;}
+#banner a#home {display: block; position: absolute; height: 87px; width: 393px; top: 0; left: 0px; background: transparent;}
+#banner a#endorse {display: block; position: absolute; height: 20px; width: 110px; top: 2px; left: 395px; background: transparent;}
+#banner a#volunteer {display: block; position: absolute; height: 20px; width: 95px; top: 2px; left: 505px; background: transparent;}
+#banner a#contribute {display: block; position: absolute; height: 20px; width: 95px; top: 2px; left: 600px; background: transparent;}
+
+#quickSignup {}
+#quickSignup form {position: absolute; height: 25px; width: 228px; top: 58px; left: 446px; padding: 0; margin: 0;}
+#quickSignup label {display: none;}
+
+#quickSignup input {margin-right: 3px;}
+#quickSignup input.text {border: 1px solid #ccc; font-size: 10px; background:#fff  url(/images/111.gif) repeat-x; color: #666; border:1px solid #fff; padding: 2px 3px 5px 3px;}
+#quickSignup input.buttonImg {vertical-align:middle; margin: 0; background: transparent;}
+/*
+#topNav {width: 100%; background-color: #000; text-align: center;}
+#topNav ul { padding: 0; }
+#topNav ul li { display: inline; }
+
+#topNav ul {margin: 0; padding: 0; color: #FFFFFF; font-family: tahoma, verdana, geneva, arial, helvetica, sans-serif; font-size: 1em; letter-spacing: 1px; font-weight: bold;}
+#topNav ul li a {padding: 0.5em 12px 0 12px; background-color: #000; color: #FFFFFF; text-decoration: none; text-transform: uppercase;}
+#topNav ul li a:hover {background-color: #376539; color: #F2C504; text-transform: uppercase; text-decoration: underline;}
+*/
+#contributeButton {
+background: url(/images/6.jpg) no-repeat;
+height:106px;
+width:210px;
+border:none;
+padding:0;
+margin:0;
+}
+#contributeButton a#contribute2 {
+display: block; position: relative; height: 20px; width: 128px; top: 68px; left: 39px; background: transparent;
+}
+
+/* NAVIGATION TABS
+----------------------------------------------- */
+/*#topNav {position: relative; margin: 0; padding: 0; width: 760px; height: 30px; background: url(images/topnav.jpg); display: none;}*/
+
+/* MAIN NAVIGATION BAR
+----------------------------------------------- */
+
+#topNav {
+	WIDTH: 100%;
+	BACKGROUND-COLOR: #000;
+	PADDING: 0;
+	MARGIN: 0;
+	position: relative; /* important */
+	z-index: 2; /* important */
+}
+
+#tabs {
+	list-style: none;
+	position: relative;
+	padding: 0;
+	margin: 0;
+	height: 19px;
+}
+
+#tabs li {
+	float: left;
+	display: inline;
+	position: relative;
+	PADDING: 0;
+	MARGIN: 0;
+}
+
+#tabs li a {
+	float: left;
+	display: block;
+	height: 19px;
+	position: relative;
+}
+
+
+/* MAIN NAVIGATION DROP-DOWNS
+----------------------------------------------- */
+
+#tabs li ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: none;
+	position: absolute;
+	top: 19px;
+	left: 0;
+	border-bottom: 1px solid #DDDDDD;
+	width: 120px;
+}
+
+#tabs li ul li a {
+	padding-left: 10px;
+	color:#666666;
+	background:#E9E9E9;
+	border-top: 1px solid #DDDDDD;
+	position: relative;
+	left: -1px;
+	text-indent: 0;
+	text-align:left;
+	font-size: 10px;
+	width: 120px;
+}
+
+#tabs li ul li a:hover {
+	background-color:#CCCCCC;
+}
+
+#tabs li:hover ul,
+#tabs li.over ul { /* lists nested under hovered list items -- Javascript will display this for IE*/
+	display: block;
+}
+
+/* END NAVIATION */
+
+/* LEFT COLUMN
+----------------------------------------------- */
+#leftWrapper {margin: 12px; background: #fff; text-align: left;}
+#leftWrapper h1 {color: #444; font-weight: normal; margin-bottom: .8em; padding: 0; font-size: 1.2em; margin-top: 0;}
+#leftWrapper h2 {color: #444; font-family: Georgia, "Times New Roman", Times, serif; font-size: 1.1em; font-weight: normal; margin-bottom: 1em;}
+#leftWrapper h3 {color: #444; font-family: Georgia, "Times New Roman", Times, serif; font-size: 1em; font-weight: normal; margin-bottom: 1em; }
+
+#leftWrapper #feature {position: relative; line-height: 1.2em; }
+#leftWrapper #feature #featureImg {margin-bottom: 10px;}
+#leftWrapper #feature p {margin-top: 0;}
+
+#leftWrapper #homeClips {border-top: 1px dashed #999; border-bottom: 1px dashed #999; padding: 5px 0px;}
+
+#leftWrapper #homeSecondary h2 {margin-bottom: .1em;}
+#leftWrapper #homeSecondary h3 {margin-top: .1em;}
+
+#leftWrapper #homeSecondary div.item {margin: 30px 0; position: relative;}
+#leftWrapper #homeSecondary div.item h3 {font-style: normal; margin-bottom: .1em; border:none !important;}
+
+#leftWrapper #homeSecondary div.item ul {margin-left: 105px;}
+#leftWrapper #homeSecondary div.item li {margin-bottom: .1em; line-height: 1.1em;}
+
+
+/* SIDEBAR
+----------------------------------------------- */
+#rightWrapper {margin: 12px 12px 12px 0; background: #fff; text-align: left;}
+
+.sideBlock {margin-bottom: 20px; text-align: left; background: #fff url(/images/5.gif) repeat-y; padding: 0px; width: 210px;}
+
+.sideBlockContrib {margin-bottom: 20px; text-align: left; background: #fff; padding: 0px; width: 210px;}
+
+.sideInner {margin: 0 5px; padding: 0; border: none;}
+.sideInner h3 {color: #444; margin: 0 0 4px 0; padding: 0;}
+.sideInner p {margin-top: 0; margin-left:10px; margin-right:10px;}
+.sideInner ul {margin: 0 5px 0 3px; padding: 0 5px 0 0;}
+.sideInner li {list-style-type: none; padding: 0 5px 0 5px; margin:3px 3px 3px 3px;}
+
+
+/* FOOTER
+----------------------------------------------- */
+#footer {margin: 20px auto 10px auto; width: 700px;}
+td#footerLeft p {font-size:.85em;margin:0;padding:0;text-align: left; }
+td#footerRight p {font-size:.85em;white-space:nowrap;margin:0;padding:0;text-align: right; }
+
+/* TYPOGRAPHY
+----------------------------------------------- */
+/* Created by Owen Briggs, Explanation at: http://www.thenoodleincident.com/tutorials/typography/ */
+
+body {font-family: verdana, arial, helvetica, sans-serif;	color: #000; font-size: 76%;/* font sizing in ems, baby. if you want to change anything, just change this.*/
+     /* To see how they look across browsers, go to: http://www.thenoodleincident.com/tutorials/typography/incremental_differences.html */}
+     
+a {color: #205323; font-weight: normal;}
+a img {border: 0;}     
+a:link {text-decoration: underline;}
+a:visited {}
+
+a:active {}
+a:hover {color: #960; text-decoration: none;}
+
+
+a.aPlus {text-decoration: underline; background: url(/images/9.gif) no-repeat 0 6px; padding: 3px 10px 3px 10px;}
+a.aPlus:hover {color: #960;  text-decoration: none;}
+
+a.aShamrock {background: url(/images/43.gif) no-repeat 0 6px; padding: 5px 10px 3px 18px; text-decoration: underline; }
+a.aShamrock:hover {color: #960;  text-decoration: none;}
+
+h1 {font-size: 1.3em;}
+
+ol, li {font-size: .85em; line-height: 1.4em; margin-top: 0.8em; margin-bottom: 0.4em;}
+
+p {font-size: .85em; line-height: 1.5em; margin-bottom: 1.2em;}
+blockquote {font-size: .85em; line-height: 1.4em; margin: 1.2em 3em 1.2em 3em; text-align: justify;}
+li > p {margin-top: 0.2em;}
+pre {font-family: monospace; font-size: 1.0em;}
+strong, b {font-weight: bold;}
+td {vertical-align: top;}
+pre {clear: both; background-color: #EFF6FE; border: 1px solid #005BB5; text-align: center; margin: 0 10px; padding: 0 5px 5px 5px; font-size: 11px;}
+
+img {border: 0;}
+.clear {clear: both; height: 0;}
+.floatl {float: left; margin: 0; padding: 0 10px 10px 0;}
+.floatr {float: right; margin: 0; padding: 0 0 10px 10px;}
+.center {text-align: center;}
+.greentext {color: #006600; font-family: arial; font-weight: 700; font-size: 110%}
+.blacktext {color: #000000; font-family: arial; font-weight: 700; font-size: 110%}
+
+#clock1 {
+font-weight:bold;
+color:red;
+}
+
+/* LIST STYLES
+----------------------------------------------- */
+ul.ulPlus {list-style-type: none; margin: 0; padding: 0;}
+ul.ulPlus li {background: url(/images/9.gif) no-repeat 5px 6px; padding-left: 20px; padding-right:15px;}
+
+
+ul.ulShamrock {list-style-type: none; margin: 0; padding: 0;}
+ul.ulShamrock li {background: url(/images/43.gif) no-repeat 0 6px; padding-left: 10px;}
+
+ul.ulNone {list-style-type: none; margin: 0; padding: 0;}
+
+/*Second level of li*/
+#feature ul li ol li {font-size: 1.2em;}
+
+/* FORM ATTRIBUTES
+----------------------------------------------- */
+form {margin: 0;}
+form p, form label {font-size: 10px; margin: 0; padding: 1px; line-height: 1.2em;}
+select {font-size: 10px;}
+input, textarea {background: #fff; font: 11px "lucida grande", verdana, lucida, arial, helvetica, sans-serif; line-height: 1.1em;}
+input.button {cursor: pointer; background: #343434; border: solid 1px #000; color: #fff;}
+label {padding: 0px; font: 11px "lucida grande", verdana, lucida, arial, helvetica, sans-serif; line-height: 1.1em;}
+
+
+/* COMMENTS
+----------------------------------------------- */
+.comments li {font-size: 1.2em;}
+
+/* NEWS
+----------------------------------------------- */
+dl.aa dt {font-weight:bold;margin-top:15px;margin-bottom:10px;}
+dl.aa dd { margin-left:0px;margin-bottom:10px; }

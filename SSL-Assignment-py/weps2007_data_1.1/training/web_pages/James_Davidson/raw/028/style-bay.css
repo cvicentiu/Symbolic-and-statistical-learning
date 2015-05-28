@@ -1,0 +1,589 @@
+BODY
+{background: #003344 url("images/bj-sidebar-slategray.gif");
+ background-attachment: fixed;
+ background-position: 100% 10%;
+ background-repeat: no-repeat;
+ font-family: tahoma,arial,helvetica;
+ color: black;
+ font-size: 9pt;
+ margin: 0px;
+ line-height: 125%;
+ scrollbar-face-color: #003344;
+ scrollbar-arrow-color: aliceblue;
+ scrollbar-track-color: #003344;
+ scrollbar-shadow-color: #slategray;
+ scrollbar-highlight-color: slategray;
+ scrollbar-3dlight-color: #003366;
+ scrollbar-darkshadow-color: #003366;
+}
+
+p {font-size: 9pt; text-indent: 0px;}
+
+h1,h2,h3,h4,h5,h6 {font-family:serif,times new roman;color:#003344;}
+
+A:link {color: #003366;}
+A:active {color: maroon;}
+A:visited {color: #003366;}
+A:hover {color:maroon;}
+hr {border:1px solid #eeeeee;}
+LI {font-size: 8pt;}
+BLOCKQUOTE {margin-left: 2em; margin-right: 1em;}
+
+/* =========== CLASS STYLES BELOW */
+.float-l{float:left;padding-right:5px;}
+.float-r{float:right;padding-left:5px;}
+
+DIV.lm15 {margin-left: 15px;}
+
+.bgmain{background: ghostwhite url(images/bg-main.gif);padding:2px 10px 2px 15px;}
+.title-script{font-family:brush script mt, script;color:#003366;font-size:15pt;}
+.dropcap {font-family:times new roman,serif;color:maroon;font-size:175%;font-weight:bold;line-height:normal}
+.linkrollover A:hover {text-decoration: none; background: transparent;}
+.button {background: ghostwhite;font-family:serif;color:#990000;font-size:7pt;font-variant:small-caps;border:1px ridge darkslategray;}
+
+/* Main Page DEFAULT TABLE (no border) */
+
+.tpg 
+ {background: white; 
+ font-size:8pt;
+ text-indent: 0px;
+ padding: 5px;
+ }
+.subtitle
+ {font-family: times new roman, serif, sans-serif;
+ font-size:9pt;
+ color: #000033;
+ padding: 0px;
+ }
+
+/* -------- Use ONLY for BACKGROUND COLORS */
+/* --- HEADERS --- */
+.bjlink 
+ {background: url(bg-film.gif);
+ font-family:times new roman, serif;
+ font-size:7pt;
+ font-variant:small-caps;
+ color: lightslategray;
+ }
+.bjlink a:hover {background: aliceblue url(bg-film-2.gif);}
+
+/* --- BG-LINKS --- */
+.bglink A:link {color:lightsteelblue;padding:2px;}
+.bglink A:visited {color:lightsteelblue;padding:2px;}
+.bglink A:hover {color:ghostwhite;text-decoration:none;padding:2px;}
+.bglink
+{font-family: times new roman, serif;
+ font-size: 8pt;
+ color: lightsteelblue;
+ font-weight: bold;
+ font-variant: small-caps;
+ border:0px solid slategray;
+ padding: 0px 1px 0px 1px;
+}
+
+/* --- PAGE BOTTOM --- */
+.tbtm
+{font-family: times new roman, serif;
+ font-size: 8pt;
+ background: ghostwhite;
+ color: #003344;
+ font-variant: small-caps;
+ text-weight: bold;
+ text-align: center;
+ border: 0px solid lightslategray;
+ padding: 0px;
+}
+
+.tidbit-hd 
+ {background: beige;
+ font-family:times new roman, serif;
+ font-size:7pt;
+ font-variant:small-caps;
+ color:black;
+ border:2px outset wheat;
+}
+.tidbit-bd
+ {background: url(bg-parchment.gif);
+ font-family:times new roman, serif;
+ font-size:9pt;
+ color:black;
+ border:1px ridge wheat;
+ padding:6px;
+}
+
+/* --- BG WRITINGS --- */
+.paper
+ {background: url(bg-parchment.gif);
+ font-family: times new roman,serif;
+ font-size: 10pt; color: #000000;
+ line-height: 1.3em;
+ text-align: justify;
+ padding: 20px;
+}
+.paper p {font-size:11pt}
+.paper h1,h2,h3,h4,h5 {color:black}
+.paper hr {border:1px ridge black;padding: 0px}
+.paper-bd {text-align:justify;padding:15px;}
+.paper-sm {background:url(bg-parchment.gif);font-size:8pt;text-align:justify;border:0px solid gainsboro;padding:10px;}
+.paper-sm hr{border:1px solid #89847B;padding:0px}
+/* --- MAIN PAGE TITLES --- */
+.title8-bg
+ {background: ghostwhite;
+ font-family: times new roman, serif;
+ color: #000033;
+ font-size: 8pt;
+ font-variant: small-caps;
+ border: 1px solid gainsboro;
+ padding: 0px 2px 0px 10px;
+ filter: alpha(opacity=100, FinishOpacity=0, style=1);
+}
+.title9-bg
+ {background: ghostwhite;
+ font-family: times new roman, serif;
+ font-size: 9pt; font-variant: small-caps;
+ border: 1px solid gainsboro;
+ padding: 0px 2px 0px 10px;
+ filter: alpha(opacity=100, FinishOpacity=0, style=1);
+}
+
+/* ------- HOME PAGE MENU ONLY! --- */
+.thome {background:ghostwhite;font-family:times new roman,serif;font-size:8pt;color:black;padding:5px;}
+.thome-hd
+ {background: steelblue;
+ font-family: times new roman, serif;
+ font-variant: small-caps;
+ font-size: 8pt;
+ color: steelblue;
+ border: 0px solid steelblue;
+ padding: 2px;
+}
+.thome-bd {background:white;font-family: times new roman,serif;font-size:9pt;border:0px solid ghostwhite; padding: 0px 5px 5px 5px;}
+
+.thome-side {background:ghostwhite;font-family: times new roman,serif;font-variant:small-caps;font-weight:bold;font-size:6pt;border:1px solid lightsteelblue; padding:2px;}
+
+.thome-title {background:url(images/bg-title.gif);font-family:brush script mt,times new roman,serif;font-size:12pt;color:#006699;padding:0px 5px 0px 5px;margin-top:.5em;}
+
+/* --- INFORMATION --- */
+.tinf a:LINK {color: #003366; text-decoration: none;}
+.tinf a:VISITED {color: #003366; text-decoration: none;}
+.tinf a:hover {color: maroon; background:azure; text-decoration:none;}
+.tinf-bg {background: steelblue url(bgt-stripe.gif);}
+
+.tinf-linkmenu
+{font-family: times new roman, serif;
+ font-size: 8pt;
+ font-variant: small-caps;
+ text-indent: 0px;
+ border: 1px solid lightsteelblue;
+ padding: 1px 0px 1px 10px;
+}
+.tinf-title
+{background: ghostwhite url(images/bg-title.gif);
+ font-family: brush script mt,times new roman, serif;
+ font-size: 14pt;
+ color: midnightblue;
+ text-indent: 0px;
+ border: 0px ridge steelblue;
+ padding: 0px 0px 0px 10px;
+ filter: alpha(opacity=100, FinishOpacity=10, style=1);
+}
+.tinf
+{background: white;
+ font-family: tahoma,arial,helvetica;
+ font-size: 8pt;
+ text-indent: 0px;
+ border: 0px ridge gainsboro;
+ padding: 0px;
+}
+.tinf-hd
+{background: steelblue; 
+ font-family: times new roman, serif;
+ font-size: 7pt;
+ font-variant: small-caps;
+ color: white;
+ text-indent: 0px;
+ border: 1px solid gainsboro;
+ padding: 1px 2px 2px 10px;
+}
+.tinf-bd
+{background:ghostwhite;font-family: tahoma, arial, helvetica;
+ font-size: 8pt;
+ color: black;
+ border: 1px solid gainsboro;
+ padding: 5px;
+ text-indent: 0px;
+}
+
+/* -------- Section: COMMUNITY */
+.tcom a:LINK {color: steelblue; text-decoration: none;}
+.tcom a:VISITED {color: steelblue; text-decoration: none;}
+.tcom a:hover {color: maroon; background:whitesmoke; text-decoration:underline;}
+.tcom-bg {background: cornflowerblue url(bgt-stripe.gif);}
+
+.tcom-linkmenu
+{font-family: times new roman, serif;
+ font-size: 8pt; 
+ font-variant: small-caps;
+ text-indent: 0px;
+ border: 1px solid steelblue;
+ padding: 0px 0px 0px 10px;
+}
+.tcom
+{font-family: tahoma,arial,helvetica;
+ font-size: 8pt;
+ color: #000033;
+ text-indent: 0px;
+ border: 0px ridge gainsboro;
+ padding: 0px;
+}
+.tcom-hd
+{background: cornflowerblue;
+ font-family: times new roman, serif;
+ font-size: 7pt;
+ font-variant: small-caps;
+ color: white;
+ text-indent: 0px;
+ text-align: center;
+ border: 1px solid gainsboro;
+ padding: 1px 2px 2px 10px;
+}
+.tcom-bd
+{background: ghostwhite;font-family: tahoma,arial,helvetica;
+ font-size: 8pt;
+ color: #000033;
+ border: 1px solid gainsboro;
+ padding: 5px;
+ text-indent: 0px;
+}
+
+/* -------Section: HISTORY */
+.this a:LINK {color: darkslateblue; text-decoration: none;}
+.this a:VISITED {color: darkslateblue; text-decoration: none;}
+.this a:hover {color: maroon; background:whitesmoke; text-decoration:underline;}
+.this-bg {background: mediumslateblue url(bgt-stripe.gif);}
+
+.this-linkmenu
+{font-family: times new roman, serif;
+ font-size: 8pt;
+ font-variant: small-caps;
+ text-indent: 0px;
+ border: 1px solid gainsboro;
+ padding: 0px 0px 0px 10px;
+}
+.this
+{font-family: tahoma,arial,helvetica;
+ font-size: 8pt;
+ color: black;
+ text-indent: 0px;
+ border: 0px ridge silver;
+ padding: 0px;
+}
+.this-hd
+{background: mediumslateblue;
+ font-family: times new roman, serif;
+ font-size: 7pt;
+ font-variant: small-caps;
+ color: white;
+ text-indent: 0px;
+ border: 1px solid gainsboro;
+ padding: 1px 2px 2px 10px;
+}
+.this-bd
+{background: ghostwhite;font-family: tahoma,arial,helvetica;
+ font-size: 8pt;
+ color: black;
+ border: 1px solid gainsboro;
+ padding: 5px;
+ text-indent: 0px;
+}
+
+/* ----------Section: HERITAGE  */
+.ther a:LINK {color: slategray; text-decoration: none;}
+.ther a:VISITED {color: slategray; text-decoration: none;}
+.ther a:hover {color: maroon; background:whitesmoke; text-decoration:underline;}
+.ther-bg {background: rosybrown url(bgt-stripe.gif);}
+
+.ther-title {background: rosybrown;color:white;font-family:times new roman, serif; font-size:10pt;font-variant:small-caps; border:1px solid gainsboro; padding: 0px 10px 0px 10px; filter:alpha(opacity=100, finishOpacity=60, style=1);
+}
+
+.ther-linkmenu
+{background: ghostwhite;
+ font-family: times new roman, serif;
+ font-size: 9pt;
+ color: saddlebrown;
+ font-variant: small-caps;
+ text-indent: 0px;
+ border: 1px solid tan;
+ padding: 0px 5px 0px 5px;
+}
+.ther
+{font-family: tahoma,arial,helvetica;
+ font-size: 8pt;
+ color: black;
+ text-indent: 0px;
+ border: 0px ridge tan;
+ padding: 2px;
+}
+.ther-hd
+ {background: rosybrown;
+ font-family: times new roman,serif;
+ font-size: 7pt;
+ font-variant: small-caps;
+ color: black;
+ text-indent: 0px;
+ border: 1px solid gainsboro;
+ padding: 1px 2px 2px 10px;
+ 
+}
+.ther-bd
+{background: ghostwhite; font-family: tahoma,arial,helvetica;
+ font-size: 8pt;
+ color: black;
+ border: 1px solid gainsboro;
+ padding: 5px;
+ text-indent: 0px;
+}
+.ther-bdcaps
+{font-family: tahoma,arial,helvetica;
+ font-size: 7pt;
+ color: black;
+ font-variant: small-caps;
+ border: 1px ridge gainsboro;
+ padding: 4px 2px 4px 4px;
+ text-indent: 0px;
+}
+
+/* ---------Section: PICTORIALS  */
+.tpic a:LINK {color: firebrick; text-decoration: none;}
+.tpic a:VISITED {color: firebrick; text-decoration: none;}
+.tpic a;hover {color: maroon; background:whitesmoke; text-decoration:underline;}
+.tpic-bg {background: indianred url(bgt-stripe.gif);}
+
+.tpic-linkmenu
+{font-family: times new roman, serif;
+ font-size: 8pt;
+ font-variant: small-caps;
+ text-indent: 0px;
+ border: 1px ridge indianred;
+ padding: 0px 0px 0px 10px;
+}
+.tpic
+{background: white;
+ font-family: tahoma,arial,helvetica;
+ font-size: 8pt;
+ color: black;
+ text-indent: 0px;
+ border: 0px ridge gainsboro;
+ padding: 0px;
+}
+.tpic-hd
+{background: firebrick;
+ font-family: times new roman, serif;
+ font-size: 7pt;
+ font-variant: small-caps;
+ color: white;
+ text-indent: 0px;
+ border: 1px solid gainsboro;
+ padding: 1px 2px 2px 10px;
+}
+
+.tpic-bd
+{background:ghostwhite;font-family: tahoma,arial,helvetica;
+ font-size: 8pt;
+ border: 1px solid gainsboro;
+ padding: 5px;
+ text-indent: 0px;
+}
+
+/* ==== Personals ===== */
+.tper-bg {background: dodgerblue url(bgt-stripe.gif);}
+.tper-hd
+{background: steelblue;
+ font-family: times new roman, serif;
+ font-size: 7pt;
+ font-variant: small-caps;
+ color: white;
+ text-indent: 0px;
+ border: 1px ridge whitesmoke;
+ padding: 0px 0px 0px 10px;
+ filter: alpha (opacity=100, FinishOpacity=60, style=1);
+}
+.tper-bd
+{font-family: tahoma,arial,helvetica;
+ font-size: 8pt;
+ border: 1px ridge steelblue;
+ padding: 5px;
+ text-indent: 0px;
+}
+.tper a:LINK {color: maroon; text-decoration: none;}
+.tper a:VISITED {color: maroon; text-decoration: none;}
+.tper a:hover {color: steelblue; background:whitesmoke; text-decoration:none;}
+
+/* ---- BJ PUBLISHING */
+.tpub {background:white;margin--left:60px;margin-right:50px;font-family:veranda;arial;font-size: 9pt;}
+
+.tpub-bg {background: (bgt-stripe.gif);}
+
+.tpub-hd {background: lightsteelblue;font-size:7pt;font-variant: small-caps;border=1 solid asure;padding-left:3px}
+
+.tpub-bd {font-size: 8pt;
+ text-indent: 0px;
+ border: 3px double lightsteelblue;
+ padding: 5px;
+}
+
+/* ---- US History */
+.usa-bg {background: slategray url(bgt-stripe.gif);}
+.usa-hd
+{background: goldenrod; 
+ font-family: times new roman, serif;
+ font-size: 7pt;
+ font-variant: small-caps;
+ color: white;
+ text-indent: 0px;
+ border: 1px ridge gainsboro;
+ padding: 0px 0px 0px 10px;
+ filter: alpha (opacity=100, FinishOpacity=70, style=1);
+}
+
+/* ====== Misc. Tables - UTITLITY ===== */
+.table7 p (font-size:7pt;}
+.table8 p {font-size:8pt;}
+
+/* ---- Universal Structure -- */
+.table7
+{font-family: tahmoma,arial,helvetica;
+ font-size: 7pt;
+ color: black
+ text-indent: 0px;
+ padding: 4px 2px 4px 4px;
+}
+.table8
+{font-family: tahoma,arial,helvetica;
+ font-size: 8pt;
+ color: black
+ text-indent: 0px;
+ padding: 4px 2px 4px 4px;
+ padding: 2px;
+}
+.tbd7
+{background: white;
+ font-family: tahoma,arial,helvetica;
+ font-size: 7pt;
+ color: black;
+ border: 1px solid gainsboro;
+ padding: 3px;
+ text-indent: 0px;
+}
+.tbd8
+{background: white;
+ font-family: tahoma,arial,helvetica;
+ font-size: 8pt;
+ color: black;
+ border: 1px solid gainsboro;
+ padding: 3px;
+ text-indent: 0px;
+}
+
+/*----- Colored Headers ---- */
+.thd7-bj
+{background: dodgerblue;
+ font-family: times new roman,serif;
+ font-variant: small-caps;
+ font-size:7pt;
+ color: white;
+ border: 0px solid gainsboro;
+ padding: 0px 0px 0px 10px;
+ filter: alpha (opacity=100, FinishOpacity=60, style=3);
+}
+.thd7-beige
+{background: beige;
+ font-family: times new roman,serif;
+ font-variant: small-caps;
+ font-size:7pt;
+ color: black;
+ border: 1px solid gainsboro;
+ padding: 0px 0px 0px 10px;
+ filter: alpha (opacity=100, FinishOpacity=40, style=1);
+}
+.thd7-blue
+{background: blue;
+ font-family: times new roman,serif;
+ font-variant: small-caps;
+ font-size:7pt;
+ color: silver;
+ border: 1px solid gainsboro;
+ padding: 0px 0px 0px 10px;
+ filter: alpha (opacity=100, FinishOpacity=40, style=1);
+}
+
+.thd7-bluelight
+{background: powderblue;
+ font-family: times new roman,serif;
+ font-variant: small-caps;
+ font-size:7pt;
+ color: black;
+ border: 1px solid gainsboro;
+ padding: 0px 0px 0px 10px;
+ filter: alpha (opacity=100, FinishOpacity=40, style=1);
+}
+.thd7-brown
+{background: brown;
+ font-family: times new roman,serif;
+ font-variant: small-caps;
+ font-size:7pt;
+ color: silver;
+ border: 1px solid gainsboro;
+ padding: 0px 0px 0px 10px;
+ filter: alpha (opacity=100, FinishOpacity=40, style=1);
+}
+.thd7-gray
+{background: whitesmoke;
+ font-family: times new roman,serif;
+ font-size: 7pt;
+ font-variant: small-caps;
+ color: black;
+ border: 1px solid gainsboro;
+ padding: 2px;
+ filter: alpha (opacity=100, FinishOpacity=40, style=1);
+}
+.thd7-green
+{background: lightgreen;
+ font-family: times new roman,serif;
+ font-variant: small-caps;
+ font-size:7pt;
+ color: black;
+ border: 1px solid gainsboro;
+ padding: 0px 0px 0px 10px;
+ filter: alpha (opacity=100, FinishOpacity=40, style=1);
+}
+.thd7-orange
+{background: orange;
+ font-family: times new roman,serif;
+ font-variant: small-caps;
+ font-size:7pt;
+ color: black;
+ border: 1px solid gainsboro;
+ padding: 0px 0px 0px 10px;
+ filter: alpha (opacity=100, FinishOpacity=40, style=1);
+}
+.thd7-tan
+{background: tan;
+ font-family: times new roman,serif;
+ font-variant: small-caps;
+ font-size:7pt;
+ color: black;
+ border: 1px solid gainsboro;
+ padding: 0px 0px 0px 10px;
+ filter: alpha (opacity=100, FinishOpacity=40, style=1);
+}
+.thd7-yellow
+{background: yellow;
+ font-family: times new roman,serif;
+ font-variant: small-caps;
+ font-size:7pt;
+ color: black;
+ border: 1px solid gainsboro;
+ padding: 0px 0px 0px 10px;
+ filter: alpha (opacity=100, FinishOpacity=40, style=1);
+}

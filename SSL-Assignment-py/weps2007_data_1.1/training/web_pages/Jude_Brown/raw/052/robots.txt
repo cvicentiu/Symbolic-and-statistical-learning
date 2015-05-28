@@ -1,0 +1,18 @@
+User-agent: *
+Disallow: /player_search.cgi
+Disallow: /games/boxscore.cgi
+Disallow: /labs/advanced.cgi
+Disallow: /labs/allstar.cgi
+Disallow: /labs/apbr.cgi
+Disallow: /labs/comp.cgi
+Disallow: /labs/current.cgi
+Disallow: /labs/option.cgi
+Disallow: /labs/playoffs.cgi
+Disallow: /labs/select.cgi
+Disallow: /labs/stats.cgi
+Disallow: /labs/teams.cgi
+Disallow: /my/
+
+# Disallow the plagiarism.org robot, www.slysearch.com
+User-agent: SlySearch
+Disallow: /            #Will disallow or robot from all urls on your site

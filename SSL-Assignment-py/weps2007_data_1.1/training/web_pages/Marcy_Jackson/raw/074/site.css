@@ -1,0 +1,440 @@
+/*
+	*{
+	line-height: 12px;
+	margin: 0;
+	padding: 0;
+	}
+	
+ol {
+	font-family: Verdana;
+	font-size: 10px;
+	font-weight: normal;
+	color: #333333;
+	margin-left: 0px; 
+	margin-top: 0px; 
+	margin-right: 0px; 
+	margin-bottom: 0px; 
+	padding: 0px 0px 0px 36px;
+}
+
+ul {
+	font-family: Verdana;
+	font-size: 10px;
+	font-weight: normal;
+	color: #333333;
+	margin-left: 0px; 
+	margin-top: 0px; 
+	margin-right: 0px; 
+	margin-bottom: 0px; 
+	padding: 0px 0px 0px 36px;
+}
+
+.line_height {
+	line-height: 65px;
+	margin: 0;
+	padding: 0;
+	}
+
+*/
+
+
+.redx {
+	font-family: Verdana;
+	font-size: 12px;
+	color: #FF0000;
+	text-align: center;
+	text-transform:capitalize;
+	}
+
+.body_titles {
+ 	font-family: Verdana;
+	font-size: 10px;
+	font-weight: normal;
+	color: #333333;
+	margin: 0px; 
+	padding: 0px;
+	line-height: 20px;
+	}
+
+.indent_body {
+	font-family: Verdana;
+	font-size: 10px;
+	font-weight: normal;
+	color: #333333;
+	margin: 0px 0px 0px 25px; 
+	padding: 0px 0px 0px 0px;
+	}
+
+
+.headline {
+	font-family: Verdana;
+	font-size: 12px;
+	font-weight: bold;
+	color: #004664;
+}
+.body_text {
+	font-family: Verdana;
+	font-size: 10px;
+	font-weight: normal;
+	color: #333333;
+}
+.nav_button {
+	font-family: Verdana;
+	font-size: 10px;
+	font-weight: normal;
+	color: #004664;
+	text-decoration: none;
+}
+.links, a {
+	font-family: Verdana;
+	font-size: 10px;
+	font-weight: normal;
+	color: #336699;
+}
+
+.links:hover {
+	font-family: Verdana;
+	font-size: 10px;
+	font-weight: normal;
+	color: #FF0000;
+	}
+
+.titles {
+	font-family: verdana;
+	font-size: 10px;
+	font-weight: bold;
+	color: #004664;
+	
+}
+.nav_sub1 {
+	font-family: verdana;
+	font-size: 10px;
+	color: #ffffff;
+	text-decoration: none;
+}
+.breadcrumbs {
+	font-family: Verdana;
+	font-size: 10px;
+	font-weight: bold;
+	color: #666666;
+}
+
+.formstuff {
+border: 0.5pt solid #004664; 
+border-collapse: collapse; 
+border-spacing: -1; 
+font-size: 8pt; 
+height: 8pt; 
+line-height: 8pt;  
+margin-top: 0px; 
+margin-bottom: -5px; 
+padding:  0pt 0pt -3.5pt -5pt; 
+space: 0 px; 
+width: 1in; 
+z-index: -1; 
+vertical-align: top; 
+} 
+
+.style2, .style1	{
+	color: #004664;
+}
+
+.header {
+	margin:0 0px;
+	padding:0.3em 10px;
+	background:#C7C7C7;
+	font-family: verdana;
+	font-size: 12px;
+	font-weight: bold;
+	color: #004664;
+}
+
+.cbb {
+	padding:0 10px;
+	margin:1em 0;
+	background:#ffffff;
+	border:1px solid #666666;
+}
+
+.cbb_list {
+	padding:0 10px;
+	margin:1em 0;
+	background:#ffffff;
+	border:1px solid #666666;
+	font-family: Verdana;
+	font-size: 10px;
+	font-weight: normal;
+	color: #333333;
+	line-height: 20px;
+}
+
+.cbb h1 {
+	margin:0 -10px;
+	padding:0.3em 10px;
+	background:#C7C7C7;
+	font-family: Verdana;
+	font-size: 12px;
+	font-weight: bold;
+	color: #004664;
+}
+
+.cbb h2 {
+	margin:0 -10px;
+	padding:0.3em 10px;
+	background:#C7C7C7;
+	font-family: verdana;
+	font-size: 10px;
+	font-weight: bold;
+	color: #004664;
+}
+
+.cbb h3 {
+	margin:0 -10px;
+	padding:0.3em 10px;
+	background:#FFE093;
+	font-family: Verdana;
+	font-size: 12px;
+	font-weight: bold;
+	color: #004664;
+}
+
+/* Insert the custom corners and borders for browsers with sufficient JavaScript support */
+
+/* Two of the boxes are floated just for this demo. Adjust to your needs. */
+.cb {
+	margin:0.5em 0;
+}
+.two {
+	width:48%;
+	float:left;
+}
+.three {
+	width:48%;
+	float:right;
+}
+
+/* Rules for the top corners and border */
+.calendar .bt {
+	background:url(/images/box_calendar.png) no-repeat 100% 0;
+	margin:0 0 0 18px;
+	height:17px;
+}
+.calendar .bt div {
+	height:17px;
+	width:18px;
+	position:relative;
+	left:-18px;
+	background:url(/images/box_calendar.png) no-repeat 0 0;
+}
+
+/* Rules for the bottom corners and border */
+.calendar .bb {
+	background:url(/images/box_calendar.png) no-repeat 100% 100%;
+	margin:0 0 0 18px;
+	height:17px;
+}
+.calendar .bb div {
+	height:17px;
+	width:18px;
+	position:relative;
+	left:-18px;
+	background:url(/images/box_calendar.png) no-repeat 0 100%;
+}
+
+/* Insert the left border */
+.calendar .i1 {
+	padding:0 0 0 12px;
+	background:url(/images/borders_calendar.png) repeat-y 0 0;
+}
+/* Insert the right border */
+.calendar .i2 {
+	padding:0 12px 0 0;
+	background:url(/images/borders_calendar.png) repeat-y 100% 0;
+}
+
+/* Rules for the top corners and border */
+.bt {
+	background:url(/images/box.png) no-repeat 100% 0;
+	margin:0 0 0 18px;
+	height:17px;
+}
+.bt div {
+	height:17px;
+	width:18px;
+	position:relative;
+	left:-18px;
+	background:url(/images/box.png) no-repeat 0 0;
+}
+
+/* Rules for the bottom corners and border */
+.bb {
+	background:url(/images/box.png) no-repeat 100% 100%;
+	margin:0 0 0 18px;
+	height:17px;
+}
+.bb div {
+	height:17px;
+	width:18px;
+	position:relative;
+	left:-18px;
+	background:url(/images/box.png) no-repeat 0 100%;
+}
+
+/* Insert the left border */
+.i1 {
+	padding:0 0 0 12px;
+	background:url(/images/borders.png) repeat-y 0 0;
+}
+/* Insert the right border */
+.i2 {
+	padding:0 12px 0 0;
+	background:url(/images/borders.png) repeat-y 100% 0;
+}
+/* Wrapper for the content. Use it to set the background colour and insert some padding between the borders and the content. */
+.i3 {
+	background:#ffffff;
+	border:1px solid #ffffff;
+	border-width:1px 0;
+	padding:0 10px;
+}
+/* CSS for the box ends here */
+
+/* Just a bit of styling for this example. Adjust as you wish. */
+.cb h1 {
+	margin:0 -10px;
+	padding:0.3em 10px;
+	background:#C7C7C7;
+	font-family: Verdana;
+	font-size: 12px;
+	font-weight: bold;
+	color: #004664;
+}
+
+.cb h2 {
+	margin:0 -10px;
+	padding:0.3em 10px;
+	background:#C7C7C7;
+	font-family: verdana;
+	font-size: 10px;
+	font-weight: bold;
+	color: #004664;
+}
+
+.cb h3 {
+	margin:0 -10px;
+	padding:0.3em 10px;
+	background:#FFE093;
+	font-family: Verdana;
+	font-size: 12px;
+	font-weight: bold;
+	color: #004664;
+}
+
+.leftbottomright
+{ border-left: 1px  #000000 solid;
+border-bottom: 1px  #000000 solid;
+border-right: 1px  #000000 solid;
+text-align: left;
+font-family: Verdana, Geneva, Arial, helvetica, sans-serif;
+font-weight: normal;
+font-size: 11px;
+color: #006699;
+background-color: #ffffff;}
+
+.lefttopright
+{ border-left: 1px  #000000 solid;
+border-top: 1px  #000000 solid;
+border-right: 1px  #000000 solid;
+text-align: left;
+font-family: Verdana, Geneva, Arial, helvetica, sans-serif;
+font-weight: normal;
+font-size: 11px;
+color: #006699;
+background-color: #ffffff;}
+
+.lefttoprightbottom
+{ border-left: 1px  #000000 solid;
+border-top: 1px  #000000 solid;
+border-right: 1px  #000000 solid;
+border-bottom: 1px  #000000 solid;
+text-align: left;
+font-family: Verdana, Geneva, Arial, helvetica, sans-serif;
+font-weight: normal;
+font-size: 11px;
+color: #006699;
+background-color: #ffffff;}
+
+.topright
+{ border-top: 1px  #000000 solid;
+border-right: 1px  #000000 solid;
+text-align: left;
+font-family: Verdana, Geneva, Arial, helvetica, sans-serif;
+font-weight: normal;
+font-size: 11px;
+color: #006699;
+background-color: #ffffff;}
+
+.topright.body_text, .right.body_text
+{ padding: 0px 6px 0px 2px;
+}
+
+.toprightbottom
+{ border-top: 1px  #000000 solid;
+border-right: 1px  #000000 solid;
+border-bottom: 1px  #000000 solid;
+text-align: left;
+font-family: Verdana, Geneva, Arial, helvetica, sans-serif;
+font-weight: normal;
+font-size: 11px;
+color: #006699;
+background-color: #ffffff;}
+
+.bottomright
+{ border-bottom: 1px  #000000 solid;
+border-right: 1px  #000000 solid;
+text-align: left;
+font-family: Verdana, Geneva, Arial, helvetica, sans-serif;
+font-weight: normal;
+font-size: 11px;
+color: #006699;
+background-color: #ffffff;}
+
+.leftright
+{ border-left: 1px  #000000 solid;
+border-right: 1px  #000000 solid;
+text-align: left;
+font-family: Verdana, Geneva, Arial, helvetica, sans-serif;
+font-weight: normal;
+font-size: 11px;
+color: #006699;
+background-color: #ffffff;}
+
+.right
+{ border-right: 1px  #000000 solid;
+text-align: left;
+font-family: Verdana, Geneva, Arial, helvetica, sans-serif;
+font-weight: normal;
+font-size: 11px;
+color: #006699;
+background-color: #ffffff;}
+
+.headtopright
+{ border-top: 1px  #000000 solid;
+border-right: 1px  #000000 solid;
+text-align: left;
+font-family: Verdana, Geneva, Arial, helvetica, sans-serif;
+font-weight: normal;
+font-size: 11px;
+color: #006699;
+background-color: #CCCCCC;}
+
+.headlefttopright
+{ border-top: 1px  #000000 solid;
+border-right: 1px  #000000 solid;
+border-left: 1px  #000000 solid;
+text-align: left;
+font-family: Verdana, Geneva, Arial, helvetica, sans-serif;
+font-weight: normal;
+font-size: 11px;
+color: #006699;
+background-color: #CCCCCC;}

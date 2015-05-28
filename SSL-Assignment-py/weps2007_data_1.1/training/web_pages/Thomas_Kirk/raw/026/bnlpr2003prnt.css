@@ -1,0 +1,101 @@
+/*   Style Sheet for PRINTED Press Releases   */
+
+
+body { margin: 0; }
+	
+#head, #leftcol, #bar, #primarynav, td.headimg, #updated, p#footer img, p#pagefooter { display: none; }
+ 
+#printhead { 
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 7pt;
+	color: #000; 
+	text-align: right;}
+
+/* Main content area  */
+
+#content { 
+	margin-right: 0.75in; 
+	margin-left: 0.75in;
+	margin-top: 0.25in;	}
+
+#content a:link, #content a:visited { 
+	color: #000; 
+	text-decoration: none; }
+
+#content p.small { 
+	font-family: Verdana, Helvetica;
+	font-size: 11px;
+	line-height: 12px; }
+	
+#content p.caption { 
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #c60; }
+	
+#content p {
+	margin: 0em 0em 1em 0em;
+	text-indent: 2.5em;
+	font-family: Times, Times New Roman, serif; 
+	font-size: 12pt;
+	line-height: 14pt;
+	color: #000; 
+	}	
+	
+#content p.boxed {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 11px;
+	color: black;
+	background: #FFFFCC;
+	padding: 8px;
+	border: solid #fc9 1px;}
+	
+p#contacts {
+	text-indent: 0;
+	font-style: italic; }
+
+#content ul {
+	list-style-image: url('http://www.bnl.gov/bnlweb/images/arrow-gry.gif');
+	font-family: Verdana, Arial, Helvetica; 
+	font-size: 12px;
+	color: #333333; }
+	
+#content img.rightpic 	{ margin: 0 0 5 15px; border: 1px solid #000000; }
+#content img.leftpic	{ margin: 0 15 0 0px; border: 1px solid #000000; }
+#content img.border     { border: 1px solid #000000; }
+#content img.rightpicnb { margin: 0 0 5 15px; border: 0px;}
+#content img.leftpicnb	{ margin: 0 15 0 0px; border: 0px;}
+
+#content p#footer {
+	margin-top: 16pt;
+	text-indent: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px; 
+	line-height: 13px;
+	font-style: italic;
+	background: transparent;
+	border-top: 1px solid #666;
+	padding-top: 15px;
+	color: #000; }
+
+	
+H1, H2, H3, H4, H5 {
+	font-family: Arial, Helvetica, sans-serif ;	
+	font-weight: bold;
+	color: #000; }
+	
+H1 { font-size: 20pt; }
+H2 { font-size: 18pt; }
+H3 { font-size: 16pt; }
+H4 { font-size: 14pt; }
+H5 { font-size: 12pt; }
+
+	
+	
+.sans {
+	font-family: Arial, Helvetica; 
+	font-size: 12px; }
+
+.small { 
+	font-family: Verdana, Helvetica;
+	font-size: 10px; }
+	

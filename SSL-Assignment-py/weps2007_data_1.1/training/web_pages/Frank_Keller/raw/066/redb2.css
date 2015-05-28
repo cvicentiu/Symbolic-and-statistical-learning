@@ -1,0 +1,105 @@
+/*
+ds 2004-09-27
+	- Copied from original redb2.css
+	- Removed all colors replacinf for black and white and grey - links blue / blue hightlight, white text
+*/
+BODY {
+	border : 0;
+	margin-top : 2;
+	background : #ffffff;
+}
+
+p	{	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size: 8pt;	color: #000000	}
+blockquote {	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size: 8pt;	color: #000000;	text-align: justify	}
+td	{	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size: 8pt;	color: #000000	}
+ul	{	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size: 8pt;	color: #000000	}
+li	{	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size: 8pt;	color: #000000	}
+h1 	{	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size: 16pt;	color: #2F479D;	font-weight: bold	}
+h2 	{	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size: 12pt;	color: #2F479D;	font-weight: bold	}
+h3 	{	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size: 10pt;	color: #2F479D;	font-weight: bold	}
+
+a			{	color: #2F479D;	text-decoration: none;	}
+a:visited	{	color: #2F479D;	text-decoration: none;	}
+a:hover 	{	color: #ffffff;	text-decoration: none;	background-color :  #2F479D;}
+
+hr {display:none;}
+
+.supptext 	{  		color: #000000	}
+.small_text {  	font-size: 7pt; color: #000000}
+.small_supptext {  	font-size: 7pt; color: #000000}
+.white_bold_text {	color: #FFFFFF;	font : bold;}
+.error_text {		color: red;		font : bold;	}
+
+/* ds 2004-09-27 added */
+table.advertisercontenttable {background-color:#B4B5DA;}
+table.advertisercontenttable tr {background-color:#ffffff;}
+table.advertisercontenttable tr.highlight{background-color:#2F479D;}
+table.advertisercontenttable tr.highlight h2 {color:#ffffff; text-align:left;}
+
+table.contenttable {background-color: #ffffff; border: 1px #B4B5DA solid;}
+table.contenttable table.addisplay {border: 1px #B4B5DA solid; padding:0px; margin-top: 2px;}
+
+table.contenttable tr.brand {background: URL(http://jxjsd.base10.ws/suppands/renenerg/images/rew_back.jpg) no-repeat; height:60px;}
+table.contenttable tr.brand h1 {display:inline;}
+
+table.contenttable table.errormessage {border: 1px #ff0000 solid;}
+table.contenttable table.errormessage table tr td {color:#ff0000;}
+
+table.contenttable table.maincontenthome {background-color: #ffffff;}
+table.contenttable table.maincontenthome .content {background-color: #ffffff;}
+
+table.contenttable table.classifications {background-color:#cccccc;}
+table.contenttable table.classifications table td {background-color:#ffffff;}
+table.contenttable table.classifications table td.headingtext {color:#000000;}
+
+table.contenttable table.companyviewarea {background-color: #B4B5DA;}
+table.contenttable table.companyviewarea .highlight {background-color: #2F479D; text-align:left;}
+table.contenttable table.companyviewarea .highlight h2 {color:#ffffff; display:inline; padding-top: 3px; padding-bottom:3px;}
+table.contenttable table.companyviewarea .highlight br {display:none;}
+table.contenttable table.companyviewarea table tr{background-color: #ffffff;}
+
+table.contenttable table.depthguage td {color: #2F479D;}
+table.contenttable table.depthguage .small_supptext {color: #2F479D;}
+
+table.contenttable table.horizontalbar td.text {text-align: center; background-color: #2F479D; color: #ffffff; padding:2px 10px 2px 10px; width:33%; /*white-space: nowrap;*/ text-transform:uppercase;}
+table.contenttable table.horizontalbar td.line div {font-size:1px; background-color: #FF6609; width:100%; height: 3px;}
+
+table.contenttable table.listinstructions tr.highlight {background-color: #2F479D; text-align:left;}
+table.contenttable table.listinstructions tr.highlight h2, table.contenttable table.listinstructions tr.highlight h3 {color:#ffffff; display:inline; padding-top: 3px; padding-bottom:3px;}
+table.contenttable table.listinstructions tr td {color: #FFFFFF;}
+table.contenttable table.listinstructions tr td div.seperator {font-size:1px; width:100%;}
+
+table.contenttable table.viewarea {}
+table.contenttable table.viewarea .errorarea {background-color: #cccccc;}
+table.contenttable table.viewarea div.highlight {background-color: #cccccc;}
+table.contenttable table.viewarea table.companylist {background-color: #B4B5DA;}
+table.contenttable table.viewarea table.companylist td {background-color: #ffffff;}
+table.contenttable table.viewarea table.listarea {background-color: #B4B5DA;}
+table.contenttable table.viewarea table.listarea hr {display:block; color:#B4B5DA;}
+table.contenttable table.viewarea table.listarea table td {background-color: #ffffff; padding-left:3px; padding-right:3px;}
+table.contenttable table.viewarea table.listarea table td input.disabledbutton {color: #888888; font-size: 7pt;}
+table.contenttable table.viewarea table.listarea table tr.deletionrequest {color: #ff0000;}
+table.contenttable table.viewarea table.listarea table.selectiontable tr td {background-color: #B4B5DA; padding:0px;}
+table.contenttable table.viewarea table.listarea table.selectiontable table tr td {background-color: #FFFFFF; padding-left:3px; padding-right:3px;}
+table.contenttable table.viewarea table.listarea table.selectiontable table tr td.checkboxselected {background-color:#2F479D; color:#ffffff;}
+table.contenttable table.viewarea table.listarea td.checkboxselected {background-color:#2F479D; color:#ffffff;}
+table.contenttable table.viewarea tr.deletionrequest td {color:#ff0000;}
+
+table.contenttable table.viewarea table.stepoptions {background-color: #B4B5DA;}
+table.contenttable table.viewarea table.stepoptions table td {background-color: #ffffff; padding-left:3px; padding-right:3px;}
+
+table.contenttable .instructions {padding: 3px;}
+
+table.contenttable .seperator {background-color:#B4B5DA;}
+
+div.returnbuttons {padding-top:1em;}
+div.returnbuttons input {font-size: 7pt; color: #000000;}
+

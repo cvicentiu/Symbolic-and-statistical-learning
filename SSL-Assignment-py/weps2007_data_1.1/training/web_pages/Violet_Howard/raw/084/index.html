@@ -1,0 +1,586 @@
+
+<HTML>
+<HEAD>
+<TITLE>The Four Word Film Review</TITLE>
+<META NAME="description" CONTENT="The world's shortest film reviews">
+<META NAME="keywords" CONTENT="four word film review, movie, movies, film, films, cinema, humor, humour, funny, brief, capsule">
+<LINK REL="STYLESHEET" TYPE="text/css" HREF="styles3.css">
+<LINK REL="alternate" TYPE="application/rss+xml" TITLE="FWFR- Voted reviews" HREF="http://www.fwfr.com/rss/voted.asp">
+<LINK REL="alternate" TYPE="application/rss+xml" TITLE="FWFR- What film?" HREF="http://www.fwfr.com/rss/whatfilm.asp">
+</HEAD>
+<BODY CLASS="Body">
+<IFRAME FRAMEBORDER=0 ID="hf" HEIGHT=0 WIDTH=0></IFRAME>
+<SCRIPT LANGUAGE="javascript">
+var lFID;
+
+function ovw(iID) {
+	document.getElementById('hf').src='/vote.asp?id='+iID;
+}
+
+function sc(iVal) {
+	if (iVal==-2) {
+		document.getElementById('hf').src='scorer.asp?f=1&id='+lFID;
+	} else {
+		document.getElementById('hf').src='scorer.asp?sc='+iVal+'&id='+lFID;
+	}
+}
+
+function openAccListWindow(iID) {
+	var win=window.open("Accolade.asp?id="+iID, "Accolade", "toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,copyhistory=no,width=170,height=180");
+
+	win.focus();
+}
+
+function ocw(iID, bAdd) {
+	var fyc = document.getElementById('fyc');
+
+	if(bAdd) {
+		fyc.src="/Consideration.asp?id="+iID;
+	} else {
+		fyc.src="/Consideration.asp?id="+iID+"&mode=del";
+	}
+}
+
+function expcol(sID){
+	var obj=document.getElementById(sID);
+	var objIm=document.getElementById('im_'+sID);
+	var vis;
+
+	if (obj.style.display=='') {
+		obj.style.display='none';
+		objIm.src='./images/sideexp.gif';
+	} else {
+		obj.style.display='';
+		objIm.src='./images/sidecol.gif';
+	}
+}
+
+function validateText(t) {
+	var sValue=t.value;
+
+	return (!(sValue.length==0))
+}
+
+function validateReview(bAlert) {
+	if (!(validateText(document.frmReview.Review))) {
+		if (bAlert) {
+			alert("Please enter your four word review.");
+
+			document.frmReview.Review.focus();
+		}
+
+		return false;
+
+	} else {
+		return true;
+	}
+}
+
+function validateLogin(bAlert) {
+	if (!(validateText(document.frmLogin.un))) {
+		if (bAlert) alert("Please enter your username and password.");
+
+		document.frmLogin.un.focus();
+
+		return false;
+	} else {
+		return true;
+	}
+}
+</SCRIPT>
+<MAP NAME="sc">
+<AREA SHAPE="rect" ALT="Clear" COORDS="0,2,6,8" HREF="javascript: sc(-1);">
+
+<AREA SHAPE="rect" ALT="Score 1" COORDS="15,0,19,11" HREF="javascript: sc(1);">
+<AREA SHAPE="rect" ALT="Score 2" COORDS="21,0,25,11" HREF="javascript: sc(2);">
+<AREA SHAPE="rect" ALT="Score 3" COORDS="27,0,31,11" HREF="javascript: sc(3);">
+<AREA SHAPE="rect" ALT="Score 4" COORDS="33,0,37,11" HREF="javascript: sc(4);">
+<AREA SHAPE="rect" ALT="Score 5" COORDS="39,0,43,11" HREF="javascript: sc(5);">
+
+<AREA SHAPE="rect" ALT="Toggle film flag" COORDS="52,2,58,8" HREF="javascript: sc(-2);">
+</MAP>
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 HEIGHT=100%>
+<TR>
+	<TD COLSPAN=2 HEIGHT=85>
+	<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 HEIGHT=85 WIDTH="100%" STYLE="background-color: #ffffff;">
+	<TR>
+		<TD HEIGHT=85 WIDTH="100%"><A HREF="http://www.fwfr.com/default.asp"><IMG SRC="logo.gif" HEIGHT=85 ALT="The Four Word Film Review" BORDER=0></A></TD>
+		<TD WIDTH=40 HEIGHT=85><IMG SRC="wf_left.gif" WIDTH=40 HEIGHT=85></TD>
+		<TD>
+		<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0>
+		<TR>
+
+			<TD HEIGHT=57 WIDTH=140 VALIGN="middle" ALIGN="center"><A CLASS="whatFilmQuote" HREF="http://www.fwfr.com/display.asp?id=256">X Education.</A></TD>
+		</TR>
+		<TR>
+			<TD HEIGHT=28 WIDTH=140><IMG SRC="wf_bottom.gif" HEIGHT=28 WIDTH=140></TD>
+		</TR>
+		</TABLE>
+		</TD>
+	</TR>
+	</TABLE>
+	</TD>
+</TR>
+<TR>
+	<TD WIDTH=136 HEIGHT=24>
+	<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH=136 HEIGHT=24 BACKGROUND="topsidebase.gif">
+	<TR>
+
+		<TD><A HREF="http://www.fwfr.com/default.asp"><IMG SRC="but_home.gif" ALT="Return to homepage" HEIGHT=24 WIDTH=45 BORDER=0></A></TD>
+	</TR>
+	</TABLE>
+	</TD>
+	<TD WIDTH="100%">
+	<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="100%" HEIGHT=24 BACKGROUND="topbutbase.gif">
+	<FORM NAME="frmSearch" METHOD="post" ACTION="http://www.fwfr.com/search.asp">
+	<TR>
+		<TD HEIGHT=24 WIDTH=71><A HREF="http://www.fwfr.com/register.asp"><IMG SRC="but_register.gif" ALT="Join fwfr" HEIGHT=24 WIDTH=71 BORDER=0></A></TD>
+		<TD BACKGROUND="topbase.gif" HEIGHT=24 WIDTH=1><IMG SRC="filler.gif" HEIGHT=24 WIDTH=1></TD>
+
+		<TD HEIGHT=24 WIDTH=98><A HREF="http://www.fwfr.com/tops.asp"><IMG SRC="but_toprevs.gif" ALT="View the top reviews" HEIGHT=24 WIDTH=98 BORDER=0></A></TD>
+		<TD BACKGROUND="topbase.gif" HEIGHT=24 WIDTH=1><IMG SRC="filler.gif" HEIGHT=24 WIDTH=1></TD>
+		<TD HEIGHT=24 WIDTH=49><A HREF="http://www.fwfr.com/fourum/default.asp?CAT_ID=5"><IMG SRC="but_faqs.gif" ALT="Frequently Asked Questions" HEIGHT=24 WIDTH=49 BORDER=0></A></TD>
+		<TD BACKGROUND="topbase.gif" HEIGHT=24 WIDTH=1><IMG SRC="filler.gif" HEIGHT=24 WIDTH=1></TD>
+
+		<TD HEIGHT=24 WIDTH=63><A HREF="http://www.fwfr.com/fourum"><IMG SRC="but_fourum.gif" ALT="Discussion fourums" HEIGHT=24 WIDTH=63 BORDER=0></A></TD>
+
+		<TD BACKGROUND="topbase.gif" HEIGHT=24 WIDTH=1><IMG SRC="filler.gif" HEIGHT=24 WIDTH=1></TD>
+		<TD HEIGHT=24 WIDTH=58><A HREF="http://www.fwfr.com/advsearch.asp"><IMG SRC="but_search.gif" ALT="Click for advanced search" HEIGHT=24 WIDTH=58 BORDER=0></A></TD>
+		<TD BACKGROUND="topbutbase.gif"><INPUT CLASS="topSearchBox" TYPE="text" NAME="search" VALUE="" MAXLENGTH=255 SIZE=16></TD>
+		<TD HEIGHT=24 WIDTH=29><INPUT TYPE="image" SRC="but_searchgo.gif" ALT="Search fwfr" HEIGHT=24 WIDTH=29 BORDER=0></TD>
+		<TD WIDTH="100%" ALIGN="right" VALIGN="bottom"><A HREF="http://www.fwfr.com/rss/whatfilm.asp" TARGET="_new"><IMG SRC="rss_feed.gif" BORDER=0 ALT="RSS feed- What Film?"></A>&nbsp;</TD>
+		<TD HEIGHT=24 WIDTH=100><A HREF="http://www.fwfr.com/display.asp?id=256"><IMG SRC="but_whatfilm.gif" HEIGHT=24 WIDTH=100 BORDER=0></A></TD>
+		<TD HEIGHT=24 WIDTH=48><A HREF="javascript: alert('This film was made in 2000 and stars Patrick Stewart');"><IMG SRC="but_clue.gif" HEIGHT=24 WIDTH=48 BORDER=0 ALT="This film was made in 2000 and stars Patrick Stewart"></A></TD>
+	</TR>
+	</FORM>
+	</TABLE>
+	</TD>
+</TR>
+<TR>
+	<TD COLSPAN=2 WIDTH="100%" HEIGHT="100%">
+	<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 HEIGHT=100% WIDTH="100%">
+	<TR>
+		<TD WIDTH=143 VALIGN="top">
+		<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH=143>
+
+		<TR>
+			<TD COLSPAN=2 WIDTH=143 VALIGN="top"><A HREF="http://tracker.tradedoubler.com/click?p=20047&a=1038636&g=606309&url=http://www.play.com/play247.asp?searchtype=r2title&searchstring=Challenge+The&page=search" TARGET="_new"><IMG SRC="buy.gif" BORDER=0 ALT="Buy or pre-order this film from Play.com"></A></TD>
+		</TR>
+
+		<TR>
+			<TD COLSPAN=2 HEIGHT=5><IMG SRC="filler.gif" WIDTH=1 HEIGHT=5></TD>
+		</TR>
+
+		<FORM NAME="login" ACTION="http://www.fwfr.com/dologin.asp" METHOD="post">
+		<TR>
+			<TD VALIGN="top" CLASS="std" WIDTH=122>
+			<TABLE BORDER=0 CELLSPACING=2 CELLPADDING=0 WIDTH=122>
+			<TR>
+				<TD COLSPAN=3><IMG SRC="logon.gif"></TD>
+			</TR>
+
+			<TR>
+				<TD WIDTH=4 HEIGHT=1><IMG SRC="filler.gif" WIDTH=4 HEIGHT=1></TD>
+				<TD CLASS="stnlDark">Username</TD>
+				<TD><INPUT CLASS="loginBox" TYPE="text" NAME="un" MAXLENGTH=50></TD>
+			</TR>
+			<TR>
+				<TD WIDTH=4 HEIGHT=1><IMG SRC="filler.gif" WIDTH=4 HEIGHT=1></TD>
+				<TD CLASS="stnlDark">Password</TD>
+				<TD><INPUT CLASS="loginBox" TYPE="password" NAME="pw" MAXLENGTH=50></TD>
+			</TR>
+			</TABLE>
+			</TD>
+			<TD WIDTH=17 VALIGN="bottom" BACKGROUND="sideedgedark.gif"><INPUT TYPE="image" SRC="sideexpanddark.gif" WIDTH=17 HEIGHT=19></TD>
+		</TR>
+		<TR>
+			<TD CLASS="stnlDark" ALIGN="right">
+			<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0>
+			<TR>
+				<TD CLASS="stnlDark">Remember Me&nbsp;</TD>
+				<TD CLASS="stnlDark"><INPUT TYPE="checkbox" NAME="rm"></TD>
+			</TR>
+			</TABLE>
+			</TD>
+			<TD WIDTH=17 VALIGN="bottom" BACKGROUND="sideEdgeDark.gif"><INPUT TYPE="image" SRC="filler.gif" WIDTH=17 HEIGHT=1></TD>
+		</TR>
+		</FORM>
+		<TR>
+			<TD CLASS="stnlDark" ALIGN="right"><A CLASS="SideButton" HREF="http://www.fwfr.com/loginreminder.asp">&nbsp;Forgotten Login?&nbsp;</A></TD>
+			<TD WIDTH=17 VALIGN="bottom" BACKGROUND="sideEdgeDark.gif"><INPUT TYPE="image" SRC="filler.gif" WIDTH=17 HEIGHT=1></TD>
+		</TR>
+
+		<TR>
+			<TD COLSPAN=2 HEIGHT=5><IMG SRC="filler.gif" WIDTH=1 HEIGHT=5></TD>
+		</TR>
+
+		<TR>
+			<TD COLSPAN=2 WIDTH=143 VALIGN="top">
+			<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=2 WIDTH=136 CLASS="sideText">
+			<TR>
+				<TD COLSPAN=2>
+<A CLASS="sideText" HREF="http://www.fwfr.com/search.asp?genreid=2">Adventure</A>
+				</TD>
+			</TR>
+			</TABLE>
+			</TD>
+		</TR>
+
+		<TR>
+			<TD WIDTH=126 ALIGN="left" CLASS="std" HEIGHT=19><IMG SRC="Directors.gif"></TD>
+
+			<TD WIDTH=17 VALIGN="top" BACKGROUND="sideEdgeDark.gif"><IMG SRC="sideHoleDark.gif" WIDTH=17 HEIGHT=19></TD>
+
+		</TR>
+		<TR>
+			<TD COLSPAN=2 WIDTH=143 VALIGN="top">
+			<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH=136>
+			<TR>
+	<TD CLASS="stt" COLSPAN=2><A CLASS="stt" HREF="http://www.fwfr.com/search.asp?mode=Artist&amp;aid=306664">Milton Rosmer</A></TD>
+</TR>
+<TR>
+	<TD CLASS="stt" COLSPAN=2><A CLASS="stt" HREF="http://www.fwfr.com/search.asp?mode=Artist&amp;aid=347424">Luis Trenker</A></TD>
+</TR>
+
+			</TABLE>
+			</TD>
+		</TR>
+
+		<TR>
+			<TD COLSPAN=2 HEIGHT=5><IMG SRC="filler.gif" WIDTH=1 HEIGHT=5></TD>
+		</TR>
+
+		<TR>
+			<TD WIDTH=126 ALIGN="left" CLASS="std" HEIGHT=19><IMG SRC="Writers.gif"></TD>
+
+			<TD WIDTH=17 VALIGN="top" BACKGROUND="sideEdgeDark.gif"><IMG SRC="sideHoleDark.gif" WIDTH=17 HEIGHT=19></TD>
+
+		</TR>
+		<TR>
+			<TD COLSPAN=2 WIDTH=143 VALIGN="top">
+			<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH=136>
+			<TR>
+	<TD CLASS="stt" COLSPAN=2><A CLASS="stt" HREF="http://www.fwfr.com/search.asp?mode=Artist&amp;aid=245251">Emeric Pressburger</A></TD>
+</TR>
+<TR>
+	<TD CLASS="stt" COLSPAN=2><A CLASS="stt" HREF="http://www.fwfr.com/search.asp?mode=Artist&amp;aid=306664">Milton Rosmer</A></TD>
+</TR>
+<TR>
+	<TD CLASS="stt" COLSPAN=2><A CLASS="stt" HREF="http://www.fwfr.com/search.asp?mode=Artist&amp;aid=231174">Patrick Kirwan</A></TD>
+</TR>
+
+			</TABLE>
+			</TD>
+		</TR>
+
+		<TR>
+			<TD COLSPAN=2 HEIGHT=5><IMG SRC="filler.gif" WIDTH=1 HEIGHT=5></TD>
+		</TR>
+
+		<TR>
+			<TD WIDTH=126 ALIGN="left" CLASS="std" HEIGHT=19><IMG SRC="Actors.gif"></TD>
+
+			<TD WIDTH=17 VALIGN="top" BACKGROUND="sideEdgeDark.gif"><IMG ID="im_Actors" SRC="sideexp.gif" onClick="javascript: expcol('Actors');" ALT="Show more..." WIDTH=17 HEIGHT=19 BORDER=0></A></TD>
+
+		</TR>
+		<TR>
+			<TD COLSPAN=2 WIDTH=143 VALIGN="top">
+			<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH=136>
+			<TR>
+	<TD CLASS="stt" COLSPAN=2><A CLASS="stt" HREF="http://www.fwfr.com/search.asp?mode=Artist&amp;aid=216514">Bernard Miles</A></TD>
+</TR>
+<TR>
+	<TD CLASS="stt" COLSPAN=2><A CLASS="stt" HREF="http://www.fwfr.com/search.asp?mode=Artist&amp;aid=221545">Robert Douglas</A></TD>
+</TR>
+<TR>
+	<TD CLASS="stt" COLSPAN=2><A CLASS="stt" HREF="http://www.fwfr.com/search.asp?mode=Artist&amp;aid=216515">Ralph Truman</A></TD>
+</TR>
+<TR>
+	<TD CLASS="stt" COLSPAN=2><A CLASS="stt" HREF="http://www.fwfr.com/search.asp?mode=Artist&amp;aid=223997">Mary Clare</A></TD>
+</TR>
+<TR>
+	<TD CLASS="stt" COLSPAN=2><A CLASS="stt" HREF="http://www.fwfr.com/search.asp?mode=Artist&amp;aid=293718">D.J. Williams</A></TD>
+</TR>
+<TR>
+	<TD CLASS="stt" COLSPAN=2><A CLASS="stt" HREF="http://www.fwfr.com/search.asp?mode=Artist&amp;aid=253801">Howard Douglas</A></TD>
+</TR>
+<TR>
+	<TD CLASS="stt" COLSPAN=2><A CLASS="stt" HREF="http://www.fwfr.com/search.asp?mode=Artist&amp;aid=345038">Cyril Smith</A></TD>
+</TR>
+<TR>
+	<TD CLASS="stt" COLSPAN=2><A CLASS="stt" HREF="http://www.fwfr.com/search.asp?mode=Artist&amp;aid=233580">Tony Sympson</A></TD>
+</TR>
+<TR>
+	<TD CLASS="stt" COLSPAN=2><A CLASS="stt" HREF="http://www.fwfr.com/search.asp?mode=Artist&amp;aid=232474">Lloyd Pearson</A></TD>
+</TR>
+<TR>
+	<TD CLASS="stt" COLSPAN=2><A CLASS="stt" HREF="http://www.fwfr.com/search.asp?mode=Artist&amp;aid=347428">Fred Groves</A></TD>
+</TR>
+
+			<TR>
+				<TD>
+				<DIV ID="Actors" STYLE="left: 0px; display: none;">
+				<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="100%">
+				<TR>
+	<TD CLASS="stt"><A CLASS="stt" HREF="http://www.fwfr.com/search.asp?mode=Artist&amp;aid=313309">Joan Gardner</A></TD>
+</TR>
+<TR>
+	<TD CLASS="stt"><A CLASS="stt" HREF="http://www.fwfr.com/search.asp?mode=Artist&amp;aid=347424">Luis Trenker</A></TD>
+</TR>
+<TR>
+	<TD CLASS="stt"><A CLASS="stt" HREF="http://www.fwfr.com/search.asp?mode=Artist&amp;aid=347429">Laurence Baskcomb</A></TD>
+</TR>
+<TR>
+	<TD CLASS="stt"><A CLASS="stt" HREF="http://www.fwfr.com/search.asp?mode=Artist&amp;aid=347425">Frank Birch</A></TD>
+</TR>
+<TR>
+	<TD CLASS="stt"><A CLASS="stt" HREF="http://www.fwfr.com/search.asp?mode=Artist&amp;aid=213679">Reginald Jarman</A></TD>
+</TR>
+<TR>
+	<TD CLASS="stt"><A CLASS="stt" HREF="http://www.fwfr.com/search.asp?mode=Artist&amp;aid=322810">Geoffrey Wardwell</A></TD>
+</TR>
+<TR>
+	<TD CLASS="sttNonLink">Emmerich Albert</TD>
+</TR>
+<TR>
+	<TD CLASS="sttNonLink">Moran Caplat</TD>
+</TR>
+<TR>
+	<TD CLASS="sttNonLink">Luis Gerold</TD>
+</TR>
+<TR>
+	<TD CLASS="sttNonLink">Max Holzboer</TD>
+</TR>
+<TR>
+	<TD CLASS="sttNonLink">Violet Howard</TD>
+</TR>
+<TR>
+	<TD CLASS="sttNonLink">Hugo Lehner</TD>
+</TR>
+<TR>
+	<TD CLASS="sttNonLink">Tarva Penna</TD>
+</TR>
+<TR>
+	<TD CLASS="sttNonLink">Babita Soren</TD>
+</TR>
+<TR>
+	<TD CLASS="sttNonLink">Lyonel Watts</TD>
+</TR>
+
+				</TABLE>
+				</DIV>
+				</TD>
+			</TR>
+
+			</TABLE>
+			</TD>
+		</TR>
+
+		<TR>
+			<TD COLSPAN=2 HEIGHT=5><IMG SRC="filler.gif" WIDTH=1 HEIGHT=5></TD>
+		</TR>
+
+		</TABLE>
+		</TD>
+		<TD WIDTH=10 STYLE="BACKGROUND-COLOR: #CCCC99;"><IMG SRC="filler.gif" WIDTH=10 HEIGHT=1></TD>
+		<TD VALIGN="top" WIDTH="100%" STYLE="BACKGROUND-COLOR: #CCCC99;">
+		<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="100%">
+
+<SCRIPT LANGUAGE="javascript">
+	document.title = 'Challenge, The (1938) at the four word film review';
+</SCRIPT>
+		<TR>
+			<TD>
+			<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0>
+			<TR>
+				<TD VALIGN="top" CLASS="MainHeading" WIDTH="100%">Challenge, The <FONT SIZE=-1>(<A HREF="http://www.fwfr.com/search.asp?StYear=1938&amp;EnYear=1938">1938</A>)</FONT></TD>
+
+			</TR>
+
+			<TR>
+				<TD CLASS="MainContent"><B>1</B> reviews</TD>
+			</TR>
+			<TR>
+				<TD CLASS="MainContent">
+
+				Film rated <B>3 / 5</B>&nbsp;
+
+				(Guy rating: <B>3 / 5</B>)
+
+			</TR>
+
+			</TABLE>
+			</TD>
+		</TR>
+		<TR>
+			<TD><IMG SRC="filler.gif" WIDTH=1 HEIGHT=5></TD>
+		</TR>
+
+		<TR>
+			<TD>
+			<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0>
+			<TR>
+				<TD CLASS="MainContent">Order by&nbsp;</TD>
+
+				<TD><IMG SRC="ord_left.gif"></TD>
+				<TD BGCOLOR="#999966">
+
+				<A CLASS="OrderLink" HREF="http://www.fwfr.com/display.asp?sort=1&amp;id=8143&amp;Mode=&amp;Rows=100&amp;Start=1&amp;do=">
+Reviewer Rank
+
+				</A>
+
+				</TD>
+				<TD><IMG SRC="ord_right.gif"></TD>
+
+				<TD><IMG SRC="filler.gif" WIDTH=5></TD>
+
+				<TD><IMG SRC="ord_left.gif"></TD>
+				<TD BGCOLOR="#999966">
+
+				<A CLASS="OrderLink" HREF="http://www.fwfr.com/display.asp?sort=2&amp;id=8143&amp;Mode=&amp;Rows=100&amp;Start=1&amp;do=">
+Reviewer Name
+
+				</A>
+
+				</TD>
+				<TD><IMG SRC="ord_right.gif"></TD>
+
+				<TD><IMG SRC="filler.gif" WIDTH=5></TD>
+
+				<TD><IMG SRC="ord_left.gif"></TD>
+				<TD BGCOLOR="#999966">
+
+				<A CLASS="OrderLinkSelected" HREF="http://www.fwfr.com/display.asp?sort=3&amp;dir=2&amp;id=8143&amp;Mode=&amp;Rows=100&amp;Start=1&amp;do=">
+Review Votes
+
+				</A>
+
+				<IMG SRC="filler.gif" WIDTH=5></TD>
+
+				<TD><IMG SRC="desc.gif"></TD>
+
+				<TD><IMG SRC="filler.gif" WIDTH=5></TD>
+
+				<TD><IMG SRC="ord_left.gif"></TD>
+				<TD BGCOLOR="#999966">
+
+				<A CLASS="OrderLink" HREF="http://www.fwfr.com/display.asp?sort=4&amp;id=8143&amp;Mode=&amp;Rows=100&amp;Start=1&amp;do=">
+Review Score
+
+				</A>
+
+				</TD>
+				<TD><IMG SRC="ord_right.gif"></TD>
+
+				<TD><IMG SRC="filler.gif" WIDTH=5></TD>
+
+				<TD><IMG SRC="ord_left.gif"></TD>
+				<TD BGCOLOR="#999966">
+
+				<A CLASS="OrderLink" HREF="http://www.fwfr.com/display.asp?sort=5&amp;id=8143&amp;Mode=&amp;Rows=100&amp;Start=1&amp;do=">
+Chronological Order
+
+				</A>
+
+				</TD>
+				<TD><IMG SRC="ord_right.gif"></TD>
+
+				<TD><IMG SRC="filler.gif" WIDTH=5></TD>
+
+				<TD><IMG SRC="filler.gif" WIDTH=10></TD>
+				<TD CLASS="MainContent">Show&nbsp;</TD>
+				<TD><IMG SRC="ord_left.gif"></TD>
+				<TD><SELECT onchange="javascript: document.location='display.asp?'+this.value;" NAME="show" STYLE="background-color: #999966; height: 20px; font-size: 7pt; color: #cccc99;">
+
+				<OPTION STYLE="color: #ffffff;" SELECTED>All
+
+				</SELECT></TD>
+				<TD><IMG SRC="ord_right.gif"></TD>
+			</TR>
+			</TABLE>
+			</TD>
+		</TR>
+
+		<TR>
+			<TD HEIGHT=10></TD>
+		</TR>
+		<TR>
+			<TD ALIGN="center">
+
+	<DIV CLASS="fltDiv">
+
+	<TABLE CELLPADDING=0 CELLSPACING=0 WIDTH=149>
+	<TR>
+
+		<TD></TD>
+
+	</TR>
+	<TR>
+
+		<TD COLSPAN=2 CLASS="rt">Whymper screams up Matterhorn.</TD>
+
+	</TR>
+	<TR>
+		<TD COLSPAN=2 CLASS="bubBot"></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=2 ALIGN="right">
+		<TABLE CELLSPACING=0 CELLPADDING=0 WIDTH=126>
+		<TR ALIGN="right">
+
+			<TD COLSPAN=2 CLASS="std"><A HREF="http://www.fwfr.com/user.asp?id=2877" CLASS="std">MguyX</A>&nbsp;<A HREF="http://www.fwfr.com/statuses.asp"><IMG SRC="8_s.gif" BORDER=0 HEIGHT=24 WIDTH=22></A></TD>
+
+		</TR>
+		<TR>
+			<TD COLSPAN=2>
+			<TABLE CELLSPACING=0 CELLPADDING=0>
+			<TR>
+				<TD><IMG SRC="rtb_curv.gif"></TD>
+				<TD CLASS="stt">
+
+				<DIV ID="c104248">
+
+				&nbsp;
+
+				<A CLASS="stt" HREF="javascript:ovw(104248);"><B>Vote</B></A>
+&nbsp;
+
+				&nbsp;
+
+				</DIV>
+
+				</TD>
+			</TR>
+			</TABLE>
+			</TD>
+		</TR>
+		</TABLE>
+		</TD>
+	</TR>
+	</TABLE>
+
+	</DIV>
+
+			</TD>
+		</TR>
+
+		</TABLE>
+		</TD>
+		<TD WIDTH=5 STYLE="BACKGROUND-COLOR: #CCCC99;"><IMG SRC="filler.gif" WIDTH=5></TD>
+	</TR>
+	</TABLE>
+	</TD>
+</TR>
+<TR>
+	<TD COLSPAN=2 WIDTH="100%" HEIGHT=19>
+	<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 BACKGROUND="botbase.gif" WIDTH="100%" HEIGHT=19>
+	<TR>
+		<TD ALIGN="center" CLASS="copyrightText">© Copyright 1999-2007 benj clews... Site comments or suggestions welcomed at <A CLASS="copyrightText" HREF="mailto: benj@benj.com">benj@benj.com</A>... <A HREF="http://www.fwfr.com/dedication.asp" CLASS="copyrightText">&lt;Memorial&gt;</A></TD>
+	</TR>
+	</TABLE>
+	</TD>
+</TR>
+</TABLE>
+</BODY>
+</HTML>

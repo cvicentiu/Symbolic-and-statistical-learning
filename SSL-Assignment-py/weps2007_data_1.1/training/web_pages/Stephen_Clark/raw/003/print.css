@@ -1,0 +1,210 @@
+
+/*
+stephen g. clark
+sgclark.tripod.com
+11.27.04
+print stylesheet
+*/
+
+
+/* --- General Page Settings --*/
+body {
+	font-family:verdana, helvetica, arial, sans-serif;
+	font-size:10px;
+	line-height:13px;
+	text-align: left;
+	float:left;
+	color:#000000;
+}
+
+div#container {
+	margin:0px;
+	padding:0px;
+	border:0px;
+	float:left;
+	width:auto;
+	color:#000000;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+
+
+/*---HEADER---*/
+#header h1 {padding:15px 0px 0px 0px; font-size:20px; font-weight:800;}
+#header h2 {font-size:10px; padding:0px 0px 25px 0px;; font-style:normal;}
+
+/*--- NO DISPLAY ELEMENTS --*/
+#sidebar {display:none;} 
+#navigation {display:none;}
+#subnav {display:none;}
+#footer {display:none;}
+.adsense {display:none;}
+.noprint {display:none;}
+.rezicon {display:none;}
+.indent {display:none;}
+.comment-body a img {display:none;}
+div#maincol .blogPost .blogComments h5 {display:none;}
+div#maincol img.icon {display:none;}
+div#maincol .blogPost img, div#maincol .blogPost a img {display:none;}
+
+#maincol img, #maincol a img {
+	padding: 3px;
+	border: 1px solid #999999;
+	float: right;
+	margin-left: 25px;
+	margin-bottom: 5px;
+	margin-top:3px;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	margin-left: 25px;
+}
+
+/*-- BLOG --*/
+div#maincol .blogPost {text-align:justify; margin-bottom:10px;width:100%;}
+
+#maincol .blogPost h1 {
+	font-size: 14px;
+	font-weight: 800;
+	text-decoration:none;
+	padding:0px;
+	margin:0px;
+}
+
+div#maincol .blogPost h4 {
+	font-size: 10px;
+	color:#999999;
+	padding: 6px 0px 12px 0px;
+	margin: 0px;
+	font-weight: normal;
+	text-decoration:underline;
+}
+
+div#maincol .blogPost a:link, div#maincol .blogPost a:visited {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.blogComments {padding:0px 20px 0px 20px;}
+.comment-body {padding:0px 0px 20px 0px;}
+.comment-body h5, .comment-body p {padding:0px;}
+
+/*--- RESUME PRINT FORMATTING ---*/
+
+body#resumepage #container {
+	margin:0px;
+	padding:0px;
+	border:none;
+	float:left;
+	width:100%;
+	font-size:10px;
+	line-height:13px;
+	color:#000000;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+	
+/*--- RESUME NO DISPLAY ITEMS ---*/
+#resumepage #header {display:none;}
+#resumepage h2 {display:none;}
+#sidebar {display:none;width:0px;}
+
+
+/*--- RESUME FONT AND STYLE LINKS ---*/
+p, #container p {
+	font-size:10px; 
+	line-height:13px;
+	font-weight:normal;
+	color: #000000;
+	padding: 0px;
+	margin:0px;
+}
+
+#resumepage #summary h4 {	
+	font-size:10px;
+	font-weight:bold;
+	line-height:13px;
+	padding:0px;
+	border:0px;
+	color:#000000;
+	text-decoration:underline;
+}
+
+a, a:link, a:visited, a:active {text-decoration:underline;color:#000000;}
+
+#resumepage .experience {padding:0;}
+#resumepage img {display:none;}
+
+/*--- RESUME ADDRESS ---*/
+body#resumepage #address {
+	font-family:verdana, helvetica, arial, sans-serif;
+	font-size:10px; 
+	line-height:13px;
+	color:#000000;
+	text-align:center;
+	}
+
+#address strong {font-size: 12px;font-weight: bold;color:#000000;}
+#address a, #address a:link, #address a:visited {text-decoration:underline;color:#000000;}
+
+
+
+/*--- RESUME SUMMARY SECTION ---*/	
+
+#summary, #summary p  {	
+	font-family: verdana, helvetica, arial, sans-serif;
+	font-size:10px; 
+	line-height:13px;
+	color:#000000;
+	text-align:justify;
+	padding:0px;
+	border:0px;
+	margin:0px;
+
+}
+
+.company a, .company a:link, .company a:visited {font-weight:600;color:#000000;text-decoration:none;}
+
+/*-- Bullet Formatting ---*/
+ul li {	
+	font-size:10px; 
+	line-height:13px;
+	color:#000000;
+	padding:0px;
+	margin:0px;
+	border:0px;
+}
+
+ul li ul li {	
+	font-size:10px; 
+	line-height:13px;
+	color:#000000;
+	padding:0px;
+	border:0px;
+	margin-right:20px;
+}
+
+p a, a:link, a:visited, a:active {text-decoration:underline;color:#000000;}
+
+ul li a:link, 
+ul li a:visited, 
+ul li a:active {text-decoration:underline;color:#000000;}
+
+p.jobtitle a:link, 
+p.jobtitle a:visited, 
+p.jobtitle a:active {text-decoration:underline;color:#000000;}
+p.jobtitle {color:#000000; font-style:italic;}
+#maincol .right {float:right;}
+
+
+
+
+
+
+
+
+

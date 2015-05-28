@@ -1,0 +1,282 @@
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+body, form, h1, h2, h3, h4, h5, h6, p, a, span, table, iframe,ul, ol {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #44443a url(/images/bgMainBody.jpg) repeat-x 0 0;
+  font: normal 12px "Arial" , "Helvetica" , sans-serif;
+}
+/**  Div around the body to solve alignment issues  **/
+#body{
+  width: 955px;
+  margin: 0px auto;
+  position:relative;
+}
+#mainBody {
+  width:955px;
+  background:#fff;
+}
+body.printPage{
+  background-color:#fff;
+}
+.clear:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+a, a:link, a:hover, a:visited {
+  text-decoration:underline;
+  cursor: pointer;
+  color: #333;
+  font: normal 12px "Arial" , "Helvetica" , sans-serif;
+  font-style:inherit;
+}
+/**  Global style for all redHeader links  **/
+.redHeader a,
+.redHeader a:link,
+.redHeader a:visited,
+.redHeader a:hover,
+.redHeader a:active {
+  color:#900;
+  font-size:12px;
+  font-weight:bold;
+  text-decoration:none;
+}
+.redHeader a:hover {
+  text-decoration:underline;
+}
+a.redHeader,
+a.redHeader:link,
+a.redHeader:visited,
+a.redHeader:hover,
+a.redHeader:active {
+  color:#900;
+  font-size:12px;
+  font-weight:bold;
+  text-decoration:none;
+  display:block;
+}
+a.redHeader:hover {
+  text-decoration:underline;
+}
+img, iframe, table {
+  border: 0;
+}
+/***  Double Dashed horisontal Separator  ***/
+.hr {
+  padding: 20px 0;
+  background: url(/images/dottedLineDouble.gif) 0px 10px repeat-x;
+}
+/***  Back To Top Image and link   ***/
+a.backToTop {
+  padding-left: 19px;
+  background: url(/images/buttons/btnBackToTop.gif) no-repeat 0 0;
+}
+a.backToTop:link,
+a.backToTop:visited,
+a.backToTop:hover,
+a.backToTop:active{
+  text-decoration: none;
+}
+
+/***  Square Ad in the Right Column  ***/
+#ad_270 {
+  margin: 0;
+  height: 270px;
+  border: solid 1px #ccb;
+}
+#ad_270 img, #ad_270 iframe {
+  margin: -2px 0 0 9px;
+  width: 300px;
+  height: 250px;
+}
+#ad_270 span {
+  display: block;
+  margin-left: 9px;
+  font: normal 9px "Arial" , sans-serif;
+  color: #ccb;
+  text-transform: uppercase;
+}
+/*********************************
+  Top and Footer Ad Container 
+*********************************/
+.ccTopAdContainer {
+  background-color: Transparent;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.ccTopAdContainer iframe {
+  margin: 6px 0;
+  background-color: Transparent;
+}
+/*.ccTopAdContainer .roundCorners .left {
+  background: url(/images/corners/bottomLeftCornerTopAd.gif) no-repeat left bottom;
+}
+.ccTopAdContainer .roundCorners .right {
+  background: url(/images/corners/bottomRightCornerTopAd.gif) no-repeat right bottom;
+}*/
+/*********************************
+  Navigation Container
+*********************************/
+#topNavContainer {
+  background: url(/images/bgGlobalHeader.gif) no-repeat;
+  width: 955px;
+  height: 105px;
+}
+/*** TV Guide Logo ***/
+#topNavContainer div.logo {
+  width: 231px;
+  margin: 10px 0 0 10px;
+  float: left;
+}
+#topNavContainer .logo .imgLogoText {
+  margin: 0 0 8px 3px;
+}
+#topNavContainer iframe {
+  width: 320px;
+  height: 55px;
+  position: relative;
+  top: 11px;
+}
+/*** Sign Up Menu ***/
+#topNavContainer  .signUp {
+  position:relative;
+  top: 5px;
+}
+/** Had to create a class for login and out image because it was
+loading the last and therefor margins on the othre images didn't
+take affect until the load is finished.**/
+#topNavContainer .signUp .logInOut {
+  margin-right: 7px;
+}
+#topNavContainer .signUp img {
+  margin-right:7px;
+  padding-left:7px;
+  border-left: solid 1px #850101;
+  display:inline;
+}
+#topNavContainer .signUp span.userName {
+  color:#fff;float:right;
+  margin-bottom:-15px;
+  position:relative;
+  bottom:15px;
+  right:12px;
+}
+#topNavContainer .signUp a,
+#topNavContainer .signUp a:hover{
+  color:#fff;
+}
+/************************************
+  Search Styles
+************************************/
+#topNavContainer .search {
+  background: url(/images/bgGlobalSearchFull.gif) top left repeat-x;
+  width: 374px;
+  float: left;
+  height: 55px;
+  margin: 11px 10px 0 0;
+}
+#topNavContainer  .search span input,
+#topNavContainer  .search .btnSearch {
+  vertical-align: middle;
+  position: relative;
+  top: 10px;
+  padding: 5px 0 5px 0;
+}
+#topNavContainer  .search .btnSearch {
+  cursor:pointer;
+  display:inline;
+}
+#topNavContainer  .search span input{
+   margin:0px 7px 0px 10px;
+   width:280px;
+   font:bold 12px Arial, sans-serif;
+}
+/**    AutoComplete Control  **/
+.AC_left{font:bold 12px Arial, sans-serif; margin-left:5px;}
+.AC_right{font:12px Arial; text-align:right; padding-left:20px; font-weight:normal; margin-right:5px;}
+.AC_hidden{}
+.AC_txtBox{width:290px;}
+
+/***********************************
+  Footer
+***********************************/
+#footer {
+  background: #fff;
+  padding: 15px 0;
+  text-align:center;
+}
+/** Section Styling **/
+#footer .linkbar {
+  background: #000 url(/images/gradients/footer.gif) repeat-x;
+  padding: 4px 10px;
+}
+#footer .popular {
+  margin: 15px 10px 30px;
+  font-size: 11px;
+}
+/** List Styling **/
+#footer ul {
+  display: inline;
+  list-style: none;
+}
+#footer li {
+  display: inline;
+  padding: 0 7px;
+}
+/** Spacers between items **/
+#footer .linkbar li,
+#footer .popular li {
+  border-left: solid 1px #3e3c37;
+}
+#footer .popular li {
+  border-left-color:#d4c6c7;
+}
+#footer li.first {
+  border-left: 0; /* Remove spacer on first item */
+  padding-left: 0;
+}
+/** Link Styling **/
+#footer .linkbar a:link,
+#footer .linkbar a:hover,
+#footer .linkbar a:visited {
+  text-decoration: none;
+  color: #fff;
+  font-size: 10px;
+}
+#footer .popular a:link,
+#footer .popular a:hover,
+#footer .popular a:visited {
+  text-decoration: none;
+  color: #333;
+  font-size: 11px;
+}
+/** footer Photo Credit **/
+.imageCredit {
+  background-color:#fff;
+  text-align:center;
+  font-size:11px;
+}
+/** Bottom iframe Ad control **/
+#footer div#adRotator {
+  text-align: center;
+  margin-top: 30px;
+}
+/****************************
+404 Error page 
+****************************/
+.error404 {
+  padding:30px;
+  text-align:center;
+  font:bold 15px Arial, Helvenica, sans-serif;
+  height:400px;
+}
+.error404 a,
+.error404 a:hover {
+  color:#900 !important;
+  font-weight:bold !important;
+  text-decoration:none !important;
+}

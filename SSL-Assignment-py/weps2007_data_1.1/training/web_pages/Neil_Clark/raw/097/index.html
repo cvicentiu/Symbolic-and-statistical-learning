@@ -1,0 +1,544 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+
+	<head id="Head1">
+		<title>BobbyMcMahon's Blog - FOX Sports Blogs</title>
+		<link href="http://msn.foxsports.com/fe/css/SectionFront/main.css" rel="stylesheet" type="text/css">
+		<link href="http://msn.foxsports.com/fe/css/main.css" rel="stylesheet" type="text/css">
+
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<link rel="stylesheet" type="text/css" href="theme.css">
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="http://community.foxsports.com/blogs/BobbyMcMahon?RSS">
+<script language="JavaScript1.2" type="text/javascript">
+  var isFanAvail = "true";
+  function checkCookie(cookieName, length) {
+  var allcookies = document.cookie;
+  var cookiePos = allcookies.indexOf(cookieName + "=");
+  if(cookiePos != -1) {
+    var start = cookiePos + length;
+    var end = allcookies.indexOf(";", start);
+    if(end == -1)
+      end = allcookies.length;
+    var value = allcookies.substring(start, end);
+    value = unescape(value);
+    return value;
+  }
+  return "";
+  }
+  var uid = "";
+  var euid = checkCookie("pUID", 5);
+  var fanid = checkCookie("pFANID", 7);
+  var lmd = checkCookie("pLMD", 5);
+  var flmd = checkCookie("pFLMD", 6);
+
+   var curDate = new Date();
+
+  if (flmd == null || flmd == "") {
+   flmd = curDate.getMilliseconds();
+   document.cookie = "pFLMD=" + curDate + "; path=/; domain=.foxsports.com;";
+  }
+
+  if (lmd != null && lmd != "") {
+    uid = euid;
+  } else{
+    uid = checkCookie("pRME", 5);
+    if (uid != null && uid != "") {
+      curDate = curDate.getMilliseconds();
+      document.cookie = "pLMD=" + curDate + "; path=/; domain=.foxsports.com;";
+    }
+  }
+  document.write('<scr' + 'ipt language="JavaScript1.2" src="http://msn.foxsports.com/user.js?uid=' + escape(uid) + '&lmd=' + escape(lmd) + '" type="text/javascript"></scr' + 'ipt>');
+</script>
+<script language="javascript">
+	var un = "";
+	if (user) {
+		if (user != null && user.SCREEN_NAME != null) {
+			un = user.SCREEN_NAME;
+		}
+	}
+</script>
+
+
+<script language="JavaScript1.2" src="http://msn.foxsports.com/partnerSession?categoryId=407105" type="text/javascript"></script>
+<script language="javascript" src="glbl.js%3Fv=1"></script>
+<script language="javascript" src="global.js"></script>
+<script language="javascript" src="fakepop.js"></script>
+<script language="javascript">
+/* if IE, then offset the fake pop */
+/*var agt=navigator.userAgent.toLowerCase();
+if ((agt.indexOf("msie") != -1) && (agt.indexOf("opera") == -1)) {
+	var fakepopbox_width = 400;
+	var fakepopbox_height = 230;
+	//alert('ie');
+}else{"
+	var fakepopbox_width = 400;
+	var fakepopbox_height = 250;
+	//alert('other');
+}
+*/
+outputframe('/');
+function addComment(bID, eID) {
+    var f = UPC_GetElement('fakepop');
+    f.src = '/blogs/AddComment.aspx?entry_id=' + eID + '&blog_id=' + bID;
+    divpop(400, 260, 'fakepopbox');
+}
+function deletePost(bID, eID) {
+    var f = UPC_GetElement('fakepop');
+    f.src = '/blogs/DeletePost.aspx?entry_id=' + eID + '&blog_id=' + bID;
+    divpop(400, 100, 'fakepopbox');
+}
+
+function subscribe(bID, o) {
+    var f = UPC_GetElement('fakepop');
+    f.src = '/blogs/Subscribe.aspx?blog_id=' + bID + '&opt=' + o;
+    divpop(400, 300, 'fakepopbox');
+}
+
+function report(bID, eID) {
+	var f = UPC_GetElement('fakepop');
+	f.src = '/blogs/Report.aspx?blog_id=' + bID + '&entry_id=' + eID;
+	divpop(400, 270, 'fakepopbox');
+}
+
+function doSearch()
+{
+	var frm = UPC_GetElement('srch');
+	var baseurl = 'http://msn.foxsports.com/browse';
+
+	if (frm.q.value.length > 0) {
+		frm.action = baseurl + '/search.php';
+	} else {
+		frm.action = baseurl + '/index.php';
+	}
+
+	return true;	
+}
+function launchChat(c) {
+	openNewWindow('http://msn.foxsports.com/boards/chat.php?c=' + c, 'chatroom', 740, 560, 'no');
+}
+function RefreshPage() {
+	window.location.href = window.location.href;
+}
+</script>
+
+
+<!--start hitbox code-->
+<!--% fs_request_setCacheHeaders 60 -overwrite %-->
+<!--WEBSIDESTORY CODE HBX1.0 (Universal)-->
+<!--COPYRIGHT 1997-2004 WEBSIDESTORY,INC. ALL RIGHTS RESERVED. U.S.PATENT No. 6,393,479B1. MORE INFO:http://websidestory.com/privacy-->
+<script language="javascript">
+  function _hbxStrip(a){
+    a = a.replace(/\s+$/, '');
+    a = a.split(",").join("");
+    a = a.split("&").join("");
+    a = a.split("'").join("");
+    a = a.split("#").join("");
+    a = a.split("$").join("");
+    a = a.split("%").join("");
+    a = a.split("^").join("");
+    a = a.split("*").join("");
+    a = a.split(":").join("");
+    a = a.split("!").join("");
+    a = a.split("<").join("");
+    a = a.split(">").join("");
+    a = a.split("~").join("");
+    a = a.split(";").join("");
+    a = a.split("\\").join("");
+    a = a.split(" ").join("+");
+    return a;
+  }
+  var _hbEC=0,_hbE=new Array;function _hbEvent(a,b){b=_hbE[_hbEC++]=new Object();b._N=a;b._C=0;return b;}
+  var hbx=_hbEvent("pv");hbx.vpc="HBX0100u";hbx.gn="ehg-foxsports.hitbox.com";
+  hbx.pndef="title";
+  hbx.ctdef="full";
+  hbx.fv="";
+  hbx.lt="auto"; //
+  hbx.dlf="n";
+  hbx.dft="n";
+  hbx.elf="n";
+  hbx.seg="";
+  hbx.fnl="";
+  hbx.cmp="";
+  hbx.cmpn="CMP"; //
+  hbx.dcmp="";
+  hbx.dcmpn="DCMP"; //
+  hbx.dcmpe="";
+  hbx.dcmpre="";
+  hbx.hra="";
+  hbx.hqsr="";
+  hbx.hqsp="ATT"; //
+  hbx.hlt="";
+  hbx.hla="";
+  hbx.gp="";
+  hbx.gpn="GP"; //
+  hbx.hcn="";
+  hbx.hcv="";
+  hbx.cp="null";
+  hbx.cpd="";
+
+  if (typeof(user.USER_ID) == 'undefined') user.USER_ID = '';
+  hbx.ci=user.USER_ID; //
+
+  hbx.hc1=_hbxStrip('') + "|" + _hbxStrip('');
+  hbx.hc2=_hbxStrip('') + "|" + _hbxStrip('');
+  hbx.hc3="";
+  hbx.hc4="";
+  hbx.hrf="";
+  hbx.pec="";
+
+  hbx.acct='DM520329A1SZ95EN3';
+  var _acct='DM520329A1SZ95EN3'; //legacy for back compat
+  var _acctMedia='DM520329OJCS95EN3';  // legacy for back compat
+
+
+
+  hbx.pn=_hbxStrip('Individual+Category');
+  hbx.mlc=_hbxStrip('/blogs/individual/BobbyMcMahon/category/Neil_Clark');
+  var _pn=_hbxStrip('Individual+Category');
+  var _mlc=_hbxStrip('/blogs/individual/BobbyMcMahon/category/Neil_Clark');
+
+</script>
+<script language="javascript1.1" defer src="hbx.js"></script>
+<!--END WEBSIDESTORY CODE-->
+
+	</head>
+
+<body>
+
+
+<script language="JavaScript1.2" src="http://msn.foxsports.com/widget/partners/top-centered?categoryId=5583&ad=false" type="text/javascript"></script>
+
+<div class="bg02"><img src="s.gif" width="2" height="2"></div>
+<table width="770" border="0" cellspacing="0" cellpadding="0" class="mtcb" style="padding:4px 0 0 0;">
+	<tr>
+		<td width="588" valign="top" class="bgHeader">
+			
+			<div class="tBackground" style="padding:3px;">
+				<table cellspacing="0" cellpadding="0" width="100%" class="tBlogHeaderBox">
+					<tr>
+						<td width="100%" align="center" valign="middle" style="padding:0px 15px 0px 15px;cursor:hand; cursor:pointer;" onclick="window.location.href='/blogs/BobbyMcMahon';">
+							
+							&nbsp;
+							
+						</td>
+					</tr>
+				</table>
+				<table border="0" cellpadding="0" cellspacing="0" width="100%" class="tPostContainerFirst" style="margin:3px 0px 0px 0px;">
+					
+								<tr>
+									<td class="tCatHeader" style="padding:15px 0px 15px 16px;">
+										BobbyMcMahon's posts about:<br><a href="61958.1.html" class="tCatHeaderLink">Neil Clark</a>
+									</td>
+								</tr>
+								<tr><td class="tCatLine"><img src="s.gif" width="1" height="1"></td></tr>	
+							
+							<tr valign="top">
+								<td style="padding-left:16px;">
+									<table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin:9px 0px 18px 0px;">
+										<tr>
+											
+											<td align="left">
+												<table border="0" cellspacing="0" cellpadding="0" style="border:2px solid #AEAEAE;">
+													<tr>
+														<td bgcolor="#AEAEAE" align="center" valign="middle"><img src="hdr_blog_buzz.gif" width="94" height="12"></td>
+													</tr>
+													<tr>
+														<td bgcolor="#AEAEAE"><img src="s.gif" width="186" height="1"></td>
+													</tr>
+													<tr>
+														<td bgcolor="#EBEBEB" style="padding:5px 14px;" class="txt11" align="center"><a href="http://community.foxsports.com/blogs/category/Neil_Clark/61958" style="color:#003371;">more Neil Clark posts</a></td>
+													</tr>
+												</table>
+											</td>
+											
+											<td align="right" valign="top">
+												<table border="0" cellpadding="0" cellspacing="3" style="margin-top:4px;">
+													<tr align="center" valign="top">
+														<td nowrap class="tPagText" style="padding-right:15px;">Page 1 of 1</td>
+														
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							
+								<tr valign="top">
+									<td colspan="2" style="padding-left:6px;">
+										<table border="0" cellpadding="0" cellspacing="0">
+											<tr>
+												<td class="tBackgroundPostTL"></td>
+												<td class="tBackgroundPost"><img src="s.gif" height="0" width="553"></td>
+												<td class="tBackgroundPostTR"></td>
+											</tr>
+											<tr>
+												<td colspan="3" style="padding-left:10px;" class="tBackgroundPost">
+													<table border="0" cellpadding="0" cellspacing="0">
+														<tr valign="top">
+															<td colspan="2">
+																<a href="http://community.foxsports.com/blogs/BobbyMcMahon/2006/09/11/Speakers_Corner" class="tPostSubject">Speakers' Corner #4</a>	
+																<br>
+																<span class="tPostDateTime">Sep 11, 2006 | 6:52AM</span>
+																
+																	<span class="tPostAdmin">|</span> <a href="javascript:report(9949, 38990);" class="tPostReport">report this</a>
+																
+																<div class="tPostBody" style="overflow:auto;width:560px;">
+																	<p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt">Some possible topics to get stuck into. </p>
+  <p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt"><font color="#660000">Daniel Finkelstein <a href="http://www.timesonline.co.uk/article/0,,7973-2349536,00.html">“The Fink Tank”</a> on the Cole – Gallas swap and statistically which club got the best deal. </font></p>
+  <p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt">Mihir Bose on the <a href="http://www.telegraph.co.uk/sport/main.jhtml?view=DETAILS&amp;grid=A1YourView&amp;xml=/sport/2006/09/07/sfnbos07.xml">West Ham Argentine transfer</a> “coup” in last Thursday's Daily Telegraph. Bose wrote the definitive book on the aborted Sky takeover of Manchester United - &quot;Manchester Unlimited&quot;. </p>
+  <p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt">Some more details on the upcoming <a href="http://www.telegraph.co.uk/sport/main.jhtml?xml=/sport/2006/09/11/sfnbon11.xml">“Panorama” </a>program to be broadcast in the UK concerning corruption. </p>
+  <p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt">Neil Clark has a story in <a href="http://sport.independent.co.uk/football/internationals/article1431097.ece">The Independent</a> about Argentine clubs selling the rights to players to businesses. </p>
+  <p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt">David Lacey looks at <a href="http://football.guardian.co.uk/Columnists/Column/0,,1868557,00.html">Peter Crouch the England scoring machine</a>. </p>
+  <p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt">Meanwhile <a href="http://sport.independent.co.uk/football/internationals/article1433374.ece">Nick Townsend</a> takes a bit of a different view. </p>
+  <p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt">Is Crouch one of the world’s great strikers as 11 goals in 14 England games would seem to indicate? Or is it a case of an awkward forward riding an international hot streak and that his ratio of slightly better than 2 goals in every 7 Premiership is a fairer reflection of his true worth? </p>
+  <p>&nbsp;Here is a list of the top 100 Premiership goalscorers to the end of August 2006. Crouch’s stats have inserted at the relevant level even though he has yet to break-in to the top 100 club. (The number attached to each player is their position in the all-time goals list as opposed to their goals to games ratio). </p>
+  <p><font size="1">Source: premiersoccerstats.com </font></p>
+  <p><strong><font face="arial,helvetica,sans-serif" size="1">Player</font></strong>&nbsp;<strong><font face="arial,helvetica,sans-serif" size="1">Goals</font></strong> <strong><font face="arial,helvetica,sans-serif" size="1">Games</font></strong> <strong><font face="arial,helvetica,sans-serif" size="1">Avg.</font></strong> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">3 Thierry Henry</font> <font face="arial,helvetica,sans-serif" size="1">164</font> <font face="arial,helvetica,sans-serif" size="1">239</font> <font face="arial,helvetica,sans-serif" size="1">1.46</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">13 Ruud van Nistelrooy</font> <font face="arial,helvetica,sans-serif" size="1">95</font> <font face="arial,helvetica,sans-serif" size="1">150</font> <font face="arial,helvetica,sans-serif" size="1">1.58</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">1 Alan Shearer</font> <font face="arial,helvetica,sans-serif" size="1">260</font> <font face="arial,helvetica,sans-serif" size="1">442</font> <font face="arial,helvetica,sans-serif" size="1">1.70</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">7 Michael Owen</font> <font face="arial,helvetica,sans-serif" size="1">125</font> <font face="arial,helvetica,sans-serif" size="1">228</font> <font face="arial,helvetica,sans-serif" size="1">1.82</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">10 Ian Wright</font> <font face="arial,helvetica,sans-serif" size="1">113</font> <font face="arial,helvetica,sans-serif" size="1">212</font> <font face="arial,helvetica,sans-serif" size="1">1.88</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">2 Andy Cole</font> <font face="arial,helvetica,sans-serif" size="1">186</font> <font face="arial,helvetica,sans-serif" size="1">389</font> <font face="arial,helvetica,sans-serif" size="1">2.09</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">8 Jimmy Hasselbaink</font> <font face="arial,helvetica,sans-serif" size="1">125</font> <font face="arial,helvetica,sans-serif" size="1">266</font> <font face="arial,helvetica,sans-serif" size="1">2.13</font></p>
+  <p>&nbsp;<font face="arial,helvetica,sans-serif" size="1">29 Eric Cantona</font> <font face="arial,helvetica,sans-serif" size="1">70</font> <font face="arial,helvetica,sans-serif" size="1">156</font> <font face="arial,helvetica,sans-serif" size="1">2.23</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">4 Robbie Fowler</font> <font face="arial,helvetica,sans-serif" size="1">161</font> <font face="arial,helvetica,sans-serif" size="1">361</font> <font face="arial,helvetica,sans-serif" size="1">2.24</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">5 Les Ferdinand</font> <font face="arial,helvetica,sans-serif" size="1">149</font> <font face="arial,helvetica,sans-serif" size="1">352</font> <font face="arial,helvetica,sans-serif" size="1">2.36</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">26 Mark Viduka</font> <font face="arial,helvetica,sans-serif" size="1">72</font> <font face="arial,helvetica,sans-serif" size="1">176</font> <font face="arial,helvetica,sans-serif" size="1">2.44</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">74 Yakubu Aiyegbeni</font> <font face="arial,helvetica,sans-serif" size="1">42</font> <font face="arial,helvetica,sans-serif" size="1">104</font> <font face="arial,helvetica,sans-serif" size="1">2.48</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">19 Ole Solskjaer</font> <font face="arial,helvetica,sans-serif" size="1">85</font> <font face="arial,helvetica,sans-serif" size="1">219</font> <font face="arial,helvetica,sans-serif" size="1">2.58</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">16 Kevin Phillips</font> <font face="arial,helvetica,sans-serif" size="1">87</font> <font face="arial,helvetica,sans-serif" size="1">226</font> <font face="arial,helvetica,sans-serif" size="1">2.60</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">36 Stan Collymore</font> <font face="arial,helvetica,sans-serif" size="1">62</font> <font face="arial,helvetica,sans-serif" size="1">163</font> <font face="arial,helvetica,sans-serif" size="1">2.63</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">12 Matthew Le Tissier</font> <font face="arial,helvetica,sans-serif" size="1">101</font> <font face="arial,helvetica,sans-serif" size="1">270</font> <font face="arial,helvetica,sans-serif" size="1">2.67</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">22 Robbie Keane</font> <font face="arial,helvetica,sans-serif" size="1">79</font> <font face="arial,helvetica,sans-serif" size="1">214</font> <font face="arial,helvetica,sans-serif" size="1">2.71</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">33 Nicholas Anelka</font> <font face="arial,helvetica,sans-serif" size="1">64</font> <font face="arial,helvetica,sans-serif" size="1">174</font> <font face="arial,helvetica,sans-serif" size="1">2.72</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">6 Teddy Sheringham</font> <font face="arial,helvetica,sans-serif" size="1">145</font> <font face="arial,helvetica,sans-serif" size="1">405</font> <font face="arial,helvetica,sans-serif" size="1">2.79</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">31 Paolo Di Canio</font> <font face="arial,helvetica,sans-serif" size="1">68</font> <font face="arial,helvetica,sans-serif" size="1">190</font> <font face="arial,helvetica,sans-serif" size="1">2.79</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">11 Dion Dublin</font> <font face="arial,helvetica,sans-serif" size="1">111</font> <font face="arial,helvetica,sans-serif" size="1">312</font> <font face="arial,helvetica,sans-serif" size="1">2.81</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">24 </font><font face="arial,helvetica,sans-serif" size="1">Tony Cottee</font> <font face="arial,helvetica,sans-serif" size="1">78</font> <font face="arial,helvetica,sans-serif" size="1">220</font> <font face="arial,helvetica,sans-serif" size="1">2.82</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">45 </font><font face="arial,helvetica,sans-serif" size="1">John Hartson</font> <font face="arial,helvetica,sans-serif" size="1">55</font> <font face="arial,helvetica,sans-serif" size="1">155</font> <font face="arial,helvetica,sans-serif" size="1">2.82</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">9 Dwight Yorke</font> <font face="arial,helvetica,sans-serif" size="1">122</font> <font face="arial,helvetica,sans-serif" size="1">348</font> <font face="arial,helvetica,sans-serif" size="1">2.85</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">51 Mark Bright</font> <font face="arial,helvetica,sans-serif" size="1">50</font> <font face="arial,helvetica,sans-serif" size="1">144</font> <font face="arial,helvetica,sans-serif" size="1">2.88</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">20 Chris Sutton</font> <font face="arial,helvetica,sans-serif" size="1">82</font> <font face="arial,helvetica,sans-serif" size="1">247</font> <font face="arial,helvetica,sans-serif" size="1">3.01</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">63 Wayne Rooney</font> <font face="arial,helvetica,sans-serif" size="1">44</font> <font face="arial,helvetica,sans-serif" size="1">133</font> <font face="arial,helvetica,sans-serif" size="1">3.02</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">64 Louis Saha</font> <font face="arial,helvetica,sans-serif" size="1">44</font> <font face="arial,helvetica,sans-serif" size="1">133</font> <font face="arial,helvetica,sans-serif" size="1">3.02</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">28 Chris Armstrong</font> <font face="arial,helvetica,sans-serif" size="1">71</font> <font face="arial,helvetica,sans-serif" size="1">216</font> <font face="arial,helvetica,sans-serif" size="1">3.04</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">37 Robert Pires</font> <font face="arial,helvetica,sans-serif" size="1">62</font> <font face="arial,helvetica,sans-serif" size="1">189</font> <font face="arial,helvetica,sans-serif" size="1">3.05</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">75 Marian Pahars</font> <font face="arial,helvetica,sans-serif" size="1">42</font> <font face="arial,helvetica,sans-serif" size="1">129</font> <font face="arial,helvetica,sans-serif" size="1">3.07</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">48 Efan Ekoku</font> <font face="arial,helvetica,sans-serif" size="1">52</font> <font face="arial,helvetica,sans-serif" size="1">160</font> <font face="arial,helvetica,sans-serif" size="1">3.08</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">52 Paulo Wanchope</font> <font face="arial,helvetica,sans-serif" size="1">50</font> <font face="arial,helvetica,sans-serif" size="1">156</font> <font face="arial,helvetica,sans-serif" size="1">3.12</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">68 David Hirst</font> <font face="arial,helvetica,sans-serif" size="1">43</font> <font face="arial,helvetica,sans-serif" size="1">135</font> <font face="arial,helvetica,sans-serif" size="1">3.14</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">23 James Beattie</font> <font face="arial,helvetica,sans-serif" size="1">79</font> <font face="arial,helvetica,sans-serif" size="1">252</font> <font face="arial,helvetica,sans-serif" size="1">3.19</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">40 Peter Beardsley</font> <font face="arial,helvetica,sans-serif" size="1">58</font> <font face="arial,helvetica,sans-serif" size="1">185</font> <font face="arial,helvetica,sans-serif" size="1">3.19</font></p>
+  <p>&nbsp;<font face="arial,helvetica,sans-serif" size="1">94 John Spencer</font> <font face="arial,helvetica,sans-serif" size="1">35</font> <font face="arial,helvetica,sans-serif" size="1">112</font> <font face="arial,helvetica,sans-serif" size="1">3.20</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">55 Craig Bellamy</font> <font face="arial,helvetica,sans-serif" size="1">47</font> <font face="arial,helvetica,sans-serif" size="1">156</font> <font face="arial,helvetica,sans-serif" size="1">3.32</font></p>
+  <p>&nbsp;<font face="arial,helvetica,sans-serif" size="1">69 Frederic Kanoute</font> <font face="arial,helvetica,sans-serif" size="1">43</font> <font face="arial,helvetica,sans-serif" size="1">144</font> <font face="arial,helvetica,sans-serif" size="1">3.35</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">46 Eider Gudjohnsen</font> <font face="arial,helvetica,sans-serif" size="1">54</font> <font face="arial,helvetica,sans-serif" size="1">186</font> <font face="arial,helvetica,sans-serif" size="1">3.44</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">47 Gustavo Poyet</font> <font face="arial,helvetica,sans-serif" size="1">54</font> <font face="arial,helvetica,sans-serif" size="1">187</font> <font face="arial,helvetica,sans-serif" size="1">3.46</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">56 Jermain Defoe</font> <font face="arial,helvetica,sans-serif" size="1">47</font> <font face="arial,helvetica,sans-serif" size="1">163</font> <font face="arial,helvetica,sans-serif" size="1">3.47</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">70 Andrei Kanchelskis</font> <font face="arial,helvetica,sans-serif" size="1">43</font> <font face="arial,helvetica,sans-serif" size="1">151</font> <font face="arial,helvetica,sans-serif" size="1">3.51</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">42 Kevin Gallacher</font> <font face="arial,helvetica,sans-serif" size="1">56</font> <font face="arial,helvetica,sans-serif" size="1">198</font> <font face="arial,helvetica,sans-serif" size="1">3.54</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">17 Dennis Bergkamp</font> <font face="arial,helvetica,sans-serif" size="1">87</font> <font face="arial,helvetica,sans-serif" size="1">315</font> <font face="arial,helvetica,sans-serif" size="1">3.62</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">34 Dean Holdsworth</font> <font face="arial,helvetica,sans-serif" size="1">63</font> <font face="arial,helvetica,sans-serif" size="1">229</font> <font face="arial,helvetica,sans-serif" size="1">3.63</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">54 Ian Rush</font> <font face="arial,helvetica,sans-serif" size="1">48</font> <font face="arial,helvetica,sans-serif" size="1">176</font> <font face="arial,helvetica,sans-serif" size="1">3.67</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">76 Juan Pablo Angel</font> <font face="arial,helvetica,sans-serif" size="1">42</font> <font face="arial,helvetica,sans-serif" size="1">155</font> <font face="arial,helvetica,sans-serif" size="1">3.69</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">77 Julian Joachim</font> <font face="arial,helvetica,sans-serif" size="1">42</font> <font face="arial,helvetica,sans-serif" size="1">156</font> <font face="arial,helvetica,sans-serif" size="1">3.71</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">83 Tore Andre Flo</font> <font face="arial,helvetica,sans-serif" size="1">38</font> <font face="arial,helvetica,sans-serif" size="1">141</font> <font face="arial,helvetica,sans-serif" size="1">3.71</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">14 Paul Scholes</font> <font face="arial,helvetica,sans-serif" size="1">89</font> <font face="arial,helvetica,sans-serif" size="1">342</font> <font face="arial,helvetica,sans-serif" size="1">3.84</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">39 Gianfranco Zola</font> <font face="arial,helvetica,sans-serif" size="1">59</font> <font face="arial,helvetica,sans-serif" size="1">229</font> <font face="arial,helvetica,sans-serif" size="1">3.88</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">Peter Crouch</font> <font face="arial,helvetica,sans-serif" size="1">97</font> <font face="arial,helvetica,sans-serif" size="1">25</font> <font face="arial,helvetica,sans-serif" size="1">3.88</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">91 Paul Dickov</font> <font face="arial,helvetica,sans-serif" size="1">36</font> <font face="arial,helvetica,sans-serif" size="1">142</font> <font face="arial,helvetica,sans-serif" size="1">3.94</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">18 Emile Heskey</font> <font face="arial,helvetica,sans-serif" size="1">87</font> <font face="arial,helvetica,sans-serif" size="1">344</font> <font face="arial,helvetica,sans-serif" size="1">3.95</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">21 Kevin Campbell</font> <font face="arial,helvetica,sans-serif" size="1">82</font> <font face="arial,helvetica,sans-serif" size="1">325</font> <font face="arial,helvetica,sans-serif" size="1">3.96</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">32 Duncan Ferguson</font> <font face="arial,helvetica,sans-serif" size="1">68</font> <font face="arial,helvetica,sans-serif" size="1">269</font> <font face="arial,helvetica,sans-serif" size="1">3.96</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">81 Steffen Iversen</font> <font face="arial,helvetica,sans-serif" size="1">40</font> <font face="arial,helvetica,sans-serif" size="1">159</font> <font face="arial,helvetica,sans-serif" size="1">3.98</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">84 Dean Sturridge</font> <font face="arial,helvetica,sans-serif" size="1">38</font> <font face="arial,helvetica,sans-serif" size="1">155</font> <font face="arial,helvetica,sans-serif" size="1">4.08</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">30 Brian Deane</font> <font face="arial,helvetica,sans-serif" size="1">70</font> <font face="arial,helvetica,sans-serif" size="1">286</font> <font face="arial,helvetica,sans-serif" size="1">4.09</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">38 David Beckham</font> <font face="arial,helvetica,sans-serif" size="1">62</font> <font face="arial,helvetica,sans-serif" size="1">265</font> <font face="arial,helvetica,sans-serif" size="1">4.27</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">78 Nwankwo Kanu</font> <font face="arial,helvetica,sans-serif" size="1">41</font> <font face="arial,helvetica,sans-serif" size="1">175</font> <font face="arial,helvetica,sans-serif" size="1">4.27</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">41 Niall Quinn</font> <font face="arial,helvetica,sans-serif" size="1">58</font> <font face="arial,helvetica,sans-serif" size="1">250</font> <font face="arial,helvetica,sans-serif" size="1">4.31</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">57 Fredrik Ljungberg</font> <font face="arial,helvetica,sans-serif" size="1">46</font> <font face="arial,helvetica,sans-serif" size="1">199</font> <font face="arial,helvetica,sans-serif" size="1">4.33</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">43 Jason Euell</font> <font face="arial,helvetica,sans-serif" size="1">56</font> <font face="arial,helvetica,sans-serif" size="1">244</font> <font face="arial,helvetica,sans-serif" size="1">4.36</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">60 Rodney Wallace</font> <font face="arial,helvetica,sans-serif" size="1">45</font> <font face="arial,helvetica,sans-serif" size="1">197</font> <font face="arial,helvetica,sans-serif" size="1">4.38</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">95 Peter Ndlovu</font> <font face="arial,helvetica,sans-serif" size="1">35</font> <font face="arial,helvetica,sans-serif" size="1">154</font> <font face="arial,helvetica,sans-serif" size="1">4.40</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">65 Dean Saunders</font> <font face="arial,helvetica,sans-serif" size="1">44</font> <font face="arial,helvetica,sans-serif" size="1">196</font> <font face="arial,helvetica,sans-serif" size="1">4.45</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">25 Frank Lampard</font> <font face="arial,helvetica,sans-serif" size="1">75</font> <font face="arial,helvetica,sans-serif" size="1">337</font> <font face="arial,helvetica,sans-serif" size="1">4.49</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">71 Darius Vassell</font> <font face="arial,helvetica,sans-serif" size="1">43</font> <font face="arial,helvetica,sans-serif" size="1">201</font> <font face="arial,helvetica,sans-serif" size="1">4.67</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">44 Harry Kewell</font> <font face="arial,helvetica,sans-serif" size="1">56</font> <font face="arial,helvetica,sans-serif" size="1">262</font> <font face="arial,helvetica,sans-serif" size="1">4.68</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">35 Mark Hughes</font> <font face="arial,helvetica,sans-serif" size="1">63</font> <font face="arial,helvetica,sans-serif" size="1">296</font> <font face="arial,helvetica,sans-serif" size="1">4.70</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">15 Ryan Giggs</font> <font face="arial,helvetica,sans-serif" size="1">89</font> <font face="arial,helvetica,sans-serif" size="1">437</font> <font face="arial,helvetica,sans-serif" size="1">4.91</font></p>
+  <p>&nbsp;<font face="arial,helvetica,sans-serif" size="1">61 Alan Smith</font> <font face="arial,helvetica,sans-serif" size="1">45</font> <font face="arial,helvetica,sans-serif" size="1">224</font> <font face="arial,helvetica,sans-serif" size="1">4.98</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">96 Benito Carbone</font> <font face="arial,helvetica,sans-serif" size="1">35</font> <font face="arial,helvetica,sans-serif" size="1">177</font> <font face="arial,helvetica,sans-serif" size="1">5.06</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">85 Darren Huckerby</font> <font face="arial,helvetica,sans-serif" size="1">38</font> <font face="arial,helvetica,sans-serif" size="1">201</font> <font face="arial,helvetica,sans-serif" size="1">5.29</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">62 Kevin Davies</font> <font face="arial,helvetica,sans-serif" size="1">45</font> <font face="arial,helvetica,sans-serif" size="1">241</font> <font face="arial,helvetica,sans-serif" size="1">5.36</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">66 Robbie Earle</font> <font face="arial,helvetica,sans-serif" size="1">44</font> <font face="arial,helvetica,sans-serif" size="1">244</font> <font face="arial,helvetica,sans-serif" size="1">5.55</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">97 Damien Duff</font> <font face="arial,helvetica,sans-serif" size="1">35</font> <font face="arial,helvetica,sans-serif" size="1">196</font> <font face="arial,helvetica,sans-serif" size="1">5.60</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">72 Noel Whelan</font> <font face="arial,helvetica,sans-serif" size="1">43</font> <font face="arial,helvetica,sans-serif" size="1">243</font> <font face="arial,helvetica,sans-serif" size="1">5.65</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">92 Patrik Berger</font> <font face="arial,helvetica,sans-serif" size="1">36</font> <font face="arial,helvetica,sans-serif" size="1">208</font> <font face="arial,helvetica,sans-serif" size="1">5.78</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">49 Nicky Barmby</font> <font face="arial,helvetica,sans-serif" size="1">52</font> <font face="arial,helvetica,sans-serif" size="1">302</font> <font face="arial,helvetica,sans-serif" size="1">5.81</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">98 Marcus Gayle</font> <font face="arial,helvetica,sans-serif" size="1">35</font> <font face="arial,helvetica,sans-serif" size="1">204</font> <font face="arial,helvetica,sans-serif" size="1">5.83</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">73 Nolberto Solano</font> <font face="arial,helvetica,sans-serif" size="1">43</font> <font face="arial,helvetica,sans-serif" size="1">252</font> <font face="arial,helvetica,sans-serif" size="1">5.86</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">86 Don Hutchison</font> <font face="arial,helvetica,sans-serif" size="1">37</font> <font face="arial,helvetica,sans-serif" size="1">220</font> <font face="arial,helvetica,sans-serif" size="1">5.95</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">58 Paul Merson</font> <font face="arial,helvetica,sans-serif" size="1">46</font> <font face="arial,helvetica,sans-serif" size="1">280</font> <font face="arial,helvetica,sans-serif" size="1">6.09</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">93 Ruel Fox</font> <font face="arial,helvetica,sans-serif" size="1">36</font> <font face="arial,helvetica,sans-serif" size="1">223</font> <font face="arial,helvetica,sans-serif" size="1">6.19</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">87 Steven Gerrard</font> <font face="arial,helvetica,sans-serif" size="1">37</font> <font face="arial,helvetica,sans-serif" size="1">234</font> <font face="arial,helvetica,sans-serif" size="1">6.32</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">59 Graham Stuart</font> <font face="arial,helvetica,sans-serif" size="1">46</font> <font face="arial,helvetica,sans-serif" size="1">293</font> <font face="arial,helvetica,sans-serif" size="1">6.37</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">53 Gary McAllister</font> <font face="arial,helvetica,sans-serif" size="1">50</font> <font face="arial,helvetica,sans-serif" size="1">325</font> <font face="arial,helvetica,sans-serif" size="1">6.50</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">67 Lee Bowyer</font> <font face="arial,helvetica,sans-serif" size="1">44</font> <font face="arial,helvetica,sans-serif" size="1">295</font> <font face="arial,helvetica,sans-serif" size="1">6.70</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">79 Steve McManaman</font> <font face="arial,helvetica,sans-serif" size="1">41</font> <font face="arial,helvetica,sans-serif" size="1">275</font> <font face="arial,helvetica,sans-serif" size="1">6.71</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">27 Gary Speed</font> <font face="arial,helvetica,sans-serif" size="1">72</font> <font face="arial,helvetica,sans-serif" size="1">486</font> <font face="arial,helvetica,sans-serif" size="1">6.75</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">50 Trevor Sinclair</font> <font face="arial,helvetica,sans-serif" size="1">51</font> <font face="arial,helvetica,sans-serif" size="1">346</font> <font face="arial,helvetica,sans-serif" size="1">6.78</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">99 Muzzy Izzet</font> <font face="arial,helvetica,sans-serif" size="1">34</font> <font face="arial,helvetica,sans-serif" size="1">248</font> <font face="arial,helvetica,sans-serif" size="1">7.29</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">80 Paul Ince</font> <font face="arial,helvetica,sans-serif" size="1">41</font> <font face="arial,helvetica,sans-serif" size="1">306</font> <font face="arial,helvetica,sans-serif" size="1">7.46</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">100 Dennis Wise</font> <font face="arial,helvetica,sans-serif" size="1">34</font> <font face="arial,helvetica,sans-serif" size="1">278</font> <font face="arial,helvetica,sans-serif" size="1">8.18</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">88 Darren Anderton</font> <font face="arial,helvetica,sans-serif" size="1">37</font> <font face="arial,helvetica,sans-serif" size="1">319</font> <font face="arial,helvetica,sans-serif" size="1">8.62</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">89 Tim Sherwood</font> <font face="arial,helvetica,sans-serif" size="1">37</font> <font face="arial,helvetica,sans-serif" size="1">341</font> <font face="arial,helvetica,sans-serif" size="1">9.22</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">82 </font><font face="arial,helvetica,sans-serif" size="1">Roy Keane</font> <font face="arial,helvetica,sans-serif" size="1">39</font> <font face="arial,helvetica,sans-serif" size="1">366</font> <font face="arial,helvetica,sans-serif" size="1">9.38</font> </p>
+  <p><font face="arial,helvetica,sans-serif" size="1">90 </font><font face="arial,helvetica,sans-serif" size="1">David Unsworth</font> <font face="arial,helvetica,sans-serif" size="1">37</font> <font face="arial,helvetica,sans-serif" size="1">352</font> <font face="arial,helvetica,sans-serif" size="1">9.51</font> </p>
+  <p>&nbsp;</p>
+  <p><font size="1">
+      <p class="MsoNormal" style="MARGIN: 0cm 0cm 0pt">
+          <p>&nbsp;</p></p></font><font size="1"></font></p>
+																</div>
+															</td>
+														</tr>
+														<tr valign="top">
+															<td class="tCommentAdd" width="50%" nowrap>
+																
+																		<a href='http://community.foxsports.com/blogs/BobbyMcMahon/2006/09/11/Speakers_Corner#comments' class='tCommentAdd'>
+																			27 Comments</a> | 
+																		<a href='javascript:addComment(9949, 38990);' class="tCommentAdd">Add a comment</a>
+															</td>
+															<td class="tCatText" align="right" style="padding-right:20px;" width="50%">
+															&nbsp;
+															<span class=\"tCatTitle\">categories:</span>  <a href="http://community.foxsports.com/blogs/BobbyMcMahon/Ashley_Cole/49881" class="tCatName">Ashley Cole</a>, <a href="http://community.foxsports.com/blogs/BobbyMcMahon/William_Gallas/49957" class="tCatName">William Gallas</a>, <a href="http://community.foxsports.com/blogs/BobbyMcMahon/Mihir_Bose/58394" class="tCatName">Mihir Bose</a>, <a href="http://community.foxsports.com/blogs/BobbyMcMahon/West_Ham_Utd/52229" class="tCatName">West Ham Utd</a>, <a href="http://community.foxsports.com/blogs/BobbyMcMahon/Panorama/55127" class="tCatName">Panorama</a>, <a href="61958.1.html" class="tCatName">Neil Clark</a>, <a href="http://community.foxsports.com/blogs/BobbyMcMahon/David_Lacey/61959" class="tCatName">David Lacey</a>, <a href="http://community.foxsports.com/blogs/BobbyMcMahon/Peter_Crouch/49874" class="tCatName">Peter Crouch</a>, <a href="http://community.foxsports.com/blogs/BobbyMcMahon/Nick_Townsend/61960" class="tCatName">Nick Townsend</a>, <a href="http://community.foxsports.com/blogs/BobbyMcMahon/Thierry_Henry/49949" class="tCatName">Thierry Henry</a>, <a href="http://community.foxsports.com/blogs/BobbyMcMahon/Ruud_Van_Nistelrooy/50650" class="tCatName">Ruud Van Nistelrooy</a>, <a href="http://community.foxsports.com/blogs/BobbyMcMahon/Alan_Shearer/55937" class="tCatName">Alan Shearer</a>, <a href="http://community.foxsports.com/blogs/BobbyMcMahon/Michael_Owen/49886" class="tCatName">Michael Owen</a>, <a href="http://community.foxsports.com/blogs/BobbyMcMahon/Ian_Wright/61961" class="tCatName">Ian Wright</a>, <a href="http://community.foxsports.com/blogs/BobbyMcMahon/Andy_Cole/59874" class="tCatName">Andy Cole</a>, <a href="http://community.foxsports.com/blogs/BobbyMcMahon/Jimmy_Floyd_Hasselbaink/57549" class="tCatName">Jimmy Floyd Hasselbaink</a>, <a href="http://community.foxsports.com/blogs/BobbyMcMahon/Eric_Cantona/61962" class="tCatName">Eric Cantona</a>, <a href="http://community.foxsports.com/blogs/BobbyMcMahon/Robbie_Fowler/36633" class="tCatName">Robbie Fowler</a>, <a href="http://community.foxsports.com/blogs/BobbyMcMahon/Les_Ferdinand/61963" class="tCatName">Les Ferdinand</a>, <a href="http://community.foxsports.com/blogs/BobbyMcMahon/Mark_Viduka/53379" class="tCatName">Mark Viduka</a>
+															</td>
+														</tr>
+													</table>
+												<td>&nbsp;</td>
+											</tr>
+											<tr>
+												<td class="tBackgroundPostBL"></td>
+												<td class="tBackgroundPost"></td>
+												<td class="tBackgroundPostBR"></td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr><td colspan="2" align="center"><img src="blog_seperator.gif" alt="" width="455" height="14" vspace="10" border="0"></td></tr>
+								
+							<tr>
+								<td style="padding-left:16px;padding-bottom:15px;" class="txt12 tCommentAdd" nowrap colspan="2">
+									&laquo; <a href="http://community.foxsports.com/blogs/BobbyMcMahon" class="tCommentAdd">Continue reading BobbyMcMahon's Blog</a>
+								</td>
+							</tr>
+							<tr>
+								<td align="right" valign="top">
+									<table border="0" cellpadding="0" cellspacing="3" style="margin-top:4px;">
+										<tr align="center" valign="top">
+											<td nowrap class="tPagText" style="padding-right:15px;">Page 1 of 1</td>
+											
+										</tr>
+									</table>
+								</td>
+							</tr>
+				</table>
+			</div>
+		</td>
+		<td width="3" class="bgHeader"><img src="s.gif" width="3" height="3"></td>
+		<td valign="top" width="170" class="bgHeader">
+			<div style="padding-top:2px;">
+				
+<div class="tDefaultLinkProfile">
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+	<tr>
+		<td align="center" valign="middle" height="34"><a href="http://community.foxsports.com/blogs/"><img src="btn_more_blogs.gif" alt="" width="99" height="14" border="0"></a></td>
+	</tr>
+	
+		<tr>
+			<td bgcolor="#5E5D58" height="1"><img src="s.gif" alt="" width="1" height="1"></td>
+		</tr>	
+		<tr>
+			<td align="center" valign="middle" height="34"><a href="http://community.foxsports.com/blogs/Create.aspx"><img src="btn_start_blog.gif" alt="" width="86" height="14" border="0"></a></td>
+		</tr>
+	
+</table>
+
+<table width="100%"  border="0" cellspacing="0" cellpadding="0" class="tAboutMeBox">
+	<tr>
+		<td align="center" valign="middle" class="tAboutMeHeader">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="tAboutSeperator"><img src="s.gif" width="1" height="2"></td>
+	</tr>
+	<tr>
+		<td style="padding:9px;" class="tAboutMeText tAboutMeMisc" align="center">
+			<img src="http://imedia.foxsports.com/media01/images/Avatar/00000/03/76/MDM~Mzc243705_m.jpg" /><br><br>BobbyMcMahon
+			
+		</td>
+	</tr>
+	<tr valign="top">
+		<td style="padding:9px;" class="tAboutMeText tAboutMeMisc">
+			<div style="overflow: scroll-x;width:150px;">I am the soccer analyst for the Fox Soccer Report and appear twice a week - every Monday and Friday at 10:00 EST. I have also been a regular contributor to the Fox Soccer Channel website since the summer of 2004. Over the last twenty years I have written about the game for newspapers and magazines as well as contributing to various radio and television programs throughout North America. 
+Thank you to all who take time to visit this blog and especially to those of you who post your comments and thoughts. It is a privilege to be able to do what I do.</div>
+		</td>
+	</tr>
+</table>
+
+<table width="100%"  border="0" cellspacing="0" cellpadding="0" class="tMyFavBlogsBox">
+	<tr>
+		<td align="center" valign="middle" class="tMyFavBlogsHeader">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="tMyFavBlogsSeperator"><img src="s.gif" width="1" height="2"></td>
+	</tr>
+	<tr valign="top">
+		<td style="padding:9px 10px 9px 9px;" class="tMyFavBlogsText">
+			<table cellspacing="0" cellpadding="0" border="0"><tr><td><img src="blog_my_favs_square.gif" alt="" border="0" align="absmiddle"> <a href="http://community.foxsports.com/blogs/FOXBlog" class="tMyFavBlogsLinks">FOXBlog's Blog</a> </td></tr></table><table cellspacing="0" cellpadding="0" border="0"><tr><td><img src="blog_my_favs_square.gif" alt="" border="0" align="absmiddle"> <a href="http://community.foxsports.com/blogs/Oliver_Hinz" class="tMyFavBlogsLinks">Oliver_Hinz's Blog</a> </td></tr></table><table cellspacing="0" cellpadding="0" border="0"><tr><td><img src="blog_my_favs_square.gif" alt="" border="0" align="absmiddle"> <a href="http://community.foxsports.com/blogs/JamieTrecker" class="tMyFavBlogsLinks">JamieTrecker's Blog</a> </td></tr></table><table cellspacing="0" cellpadding="0" border="0"><tr><td><img src="blog_my_favs_square.gif" alt="" border="0" align="absmiddle"> <a href="http://community.foxsports.com/blogs/Nick_Webster" class="tMyFavBlogsLinks">Webster on the EPL</a> </td></tr></table><table cellspacing="0" cellpadding="0" border="0"><tr><td><img src="blog_my_favs_square.gif" alt="" border="0" align="absmiddle"> <a href="http://community.foxsports.com/blogs/The_Gaffer" class="tMyFavBlogsLinks">EPL Talk</a> </td></tr></table><table cellspacing="0" cellpadding="0" border="0"><tr><td><img src="blog_my_favs_square.gif" alt="" border="0" align="absmiddle"> <a href="http://community.foxsports.com/blogs/jstlouis" class="tMyFavBlogsLinks">Jeremy St.Louis Blog</a> </td></tr></table><table cellspacing="0" cellpadding="0" border="0"><tr><td><img src="blog_my_favs_square.gif" alt="" border="0" align="absmiddle"> <a href="http://community.foxsports.com/blogs/Cobi_Jones" class="tMyFavBlogsLinks">Cobi_Jones's Blog</a> </td></tr></table><table cellspacing="0" cellpadding="0" border="0"><tr><td><img src="blog_my_favs_square.gif" alt="" border="0" align="absmiddle"> <a href="http://community.foxsports.com/blogs/ethans_blog" class="tMyFavBlogsLinks">Ethan_Zohns_Blog</a> </td></tr></table>
+		</td>
+	</tr>
+</table>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tBlogLinksBox">
+	<tr>
+		<td align="center" valign="middle" class="tBlogLinksHeader">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="tBlogLinksSeperator"><img src="s.gif" width="1" height="2"></td>
+	</tr>
+	<tr valign="top">
+		<td style="padding:9px;" class="tMyFavBlogsText tMyFavBlogsMisc" align="center">
+			
+			<table border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td class="tBlogLinksText" align="center" valign="middle">Subscribe: </td>
+					<td align="center" valign="middle"><a href="http://community.foxsports.com/blogs/BobbyMcMahon?RSS"><img src="btn_xml.gif" alt="" border="0" hspace="2"></a> </td>
+					<td align="center" valign="middle">&nbsp;<a href="http://community.foxsports.com/blogs/FOXBlog/2" class="tBlogLinksLinks">what is this?</a></td>
+				</tr>
+			</table>
+			
+		</td>
+	</tr>
+</table>
+
+</div>
+
+			</div>
+		</td>
+		<td width="2" class="bgHeader"><img src="s.gif" width="2" height="3"></td>
+	</tr>
+	<tr>
+		<td colspan="4"><img src="s.gif" width="2" height="20"></td>
+	</tr>
+</table>
+
+<div class="dataTable">Time stamping is done in Pacific Time.</div>
+
+<script language="JavaScript1.2" src="http://msn.foxsports.com/fe/js/partners/bottom-centered.js" type="text/javascript"></script>
+
+
+	</body>
+</html>

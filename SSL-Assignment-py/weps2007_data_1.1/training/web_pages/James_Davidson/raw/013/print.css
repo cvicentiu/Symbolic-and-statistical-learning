@@ -1,0 +1,36 @@
+
+body {
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+#leftShading, #rightShading {
+  background: none;
+}
+
+#warwickBar,
+#departmentBar,
+#leftContent,
+#rhsContent,
+#flyout,
+#flyoutTag {
+  display: none;
+}
+
+#mainContent, #bodyContent {
+  margin: 0px;
+  padding: 0px;
+}
+
+#mainContent { margin-right: 10px; }
+
+#footerContent {
+  font-size: 1em;
+  color: #000;
+}
+
+.accessibility, .access-info {
+  display: none;
+}
+
+/* Negate CSS so it prints more than one page! */
+#contentScroll { overflow: visible !important; }

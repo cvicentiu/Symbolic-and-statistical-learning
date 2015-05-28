@@ -1,0 +1,514 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+   <head>
+      <title>Analyst Profile</title>
+      <style type="text/css">
+      .hdrName { font-family: Verdana; color: #666666; font-size: 145%; font-weight: bold; text-decoration: none; }
+      .anText { font-family: Verdana; color: #666666; text-decoration: none;line-height:120%; }
+      .anText:hover { text-decoration: underline;}
+      .anSmText { font-family: Verdana; color: #666666; text-decoration: none; font-size:85%; }
+      .anLink { font-family: Verdana; color: #3088CC; text-decoration: none; line-height:120%; font-weight: bold; }
+      .anLink:hover { text-decoration: underline; }
+      </style>
+
+      <script type="text/javascript">
+         <!--
+            browserName = navigator.appName;
+            browserVersion = parseInt(navigator.appVersion);
+
+            if (browserName == "Netscape" && browserVersion == 4) {
+               document.write('<link href="/css/netscape/master.css" rel="stylesheet">');
+            } else {
+               document.write('<link href="/css/win/master.css" rel="stylesheet">');
+            }
+      //-->
+      </script>
+
+      <script src="utility.js" type="text/javascript"></script>
+      <script type="text/javascript">
+         // The following method I created outside utility.js file
+         // because openAlert and other functions wouldn't respond from it.
+         // -RS
+         function openInMainWindow(href) {
+            var newName = nameForWindow('homepage');
+            newWin = window.open(href, newName);
+            newWin.focus();
+         }
+
+         function submitAuthor(ownResearch, includeArchivedResearch) {
+            openSearch("/7_search/Search2Frame.jsp?op=16"
+               + "&authorId="
+               + document.mainForm.authorId.value
+               + "&n="
+               + document.mainForm.authorId.value
+               + "&simple1=" + (ownResearch ? 1 : 0)
+               + "&archived=" + (includeArchivedResearch ? 1 : 0)
+               + "&resultsPerSearch=0");
+         }
+      </script>
+   </head>
+   <body>
+      
+
+      <!-- outer shell -->
+      <table width="549" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF">
+         <!-- top border -->
+         <tr><td colspan="3"><img src="x.gif" width="1" height="2" alt="" border="0" /></td></tr>
+         <tr>
+            <!-- left side border -->
+            <td width="2"><img src="x.gif" width="2" height="1" alt="" border="0" /></td>
+            <!-- CONTENT -->
+            <td width="545">
+                     <!-- Banner -->
+                     <table width="545" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                           <td width="545" valign="top" height="98"><img src="bio_banner.gif" border="0" alt="Analyst Profile" /></td>
+                        </tr>
+                     </table><!-- end banner -->
+            <!-- white line -->
+            <div><img src="x.gif" width="1" height="2" /></div>
+
+               <!-- gray top boxes -->
+               <table width="545" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                     <!-- left side image box -->
+                     <td width="195" height="130" valign="middle" align="right" bgcolor="#B6D4E4">
+                        <table width="195" border="0" cellpadding="0" cellspacing="0"  bgcolor="#B6D4E4">
+                           <tr>
+                              <td colspan="3" height="15"><img src="x.gif" width="1" height="15" /></td>
+                           </tr>
+                           <tr>
+                              <td width="100"><img src="x.gif" width="100" height="1" /></td>
+                              <!-- ANALYST IMAGE -->
+                              <td><img src="AnalystBiography%3Ffcn=image&amp;photoname=13700.jpg.1.html" width="80" height="100" alt="Karen Peterson"></td>
+                              <td width="15"><img src="x.gif" width="15" height="1" /></td>
+                           </tr>
+                           <tr>
+                              <td colspan="3" height="15"><img src="x.gif" width="1" height="15" /></td>
+                           </tr>
+                        </table>
+                     </td>
+                     <!--  right side name and print -->
+                     <td height="130" bgcolor="#E6E6E6" valign="top">
+                        <table width="350" border="0" cellpadding="0" cellspacing="0"  bgcolor="#E6E6E6">
+                        <tr>
+                           <td width="20"><img src="x.gif" width="20" height="1" /></td>
+                           <td width="215" valign="bottom" height="130">
+                           <!-- *** NAME, TITLE, LOCATION *** -->
+                              <span class="hdrName">Karen Peterson</span><br>
+                              <span class="anText"><i>Research VP</i></span><br>
+                              
+                              <span class="anText"><i>Dallas,&nbsp;TX&nbsp;USA</i></span>
+                              <div><img src="x.gif" width="1" height="15" /></div>
+                           </td>
+                           <td width="20"><img src="x.gif" width="20" height="1" /></td>
+                           <td width="100" valign="top">
+                              <div><img src="x.gif" width="1" height="25" /></div>
+                              <!-- *** PRINT BUTTON *** -->
+                              <a href="javascript:window.print();"><img src="print_profile.gif" border="0" width="100" height="20" alt="Print This Page" /></a>
+                              <div><img src="x.gif" width="1" height="2" /></div>
+                           </td>
+                           <td width="12"><img src="x.gif" width="12" height="1" /></td>
+                        </tr>
+                     </table>
+                  </td>
+               </tr>
+            </table>
+            <!-- gray line -->
+            <table width="545" border="0" cellpadding="0" cellspacing="0" bgcolor="#C9C9C9"><tr><td><div><img src="x.gif" width="1" height="10" /></div></td></tr></table>
+
+            <!-- Profile -->
+            <table width="545" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+            <tr>
+               <!-- bottom left column -->
+               <td width="195" valign="top" bgcolor="#EBF7FD">
+
+                  <!-- *** YEARS EXPERIENCE *** -->
+                  <table width="195" border="0" cellpadding="0" cellspacing="0" bgcolor="#EBF7FD">
+                  <tr><td colspan="3"><img src="x.gif" width="1" height="22" /></td></tr>
+                  <tr>
+                     <td width="14"><img src="x.gif" width="14" height="1" /></td>
+                     <td>
+                        <span class="anText"><strong>Years of Experience</strong></span>
+                        <div><img src="x.gif" width="1" height="2" /></div>
+                        <table border="0" cellpadding="0" cellspacing="0" width="90%">
+                           
+                           <tr>
+                              <td width="7" valign="top">
+                                 <img src="sq_gray_bullet.gif" width="3" height="3" vspace="5" />
+                              </td>
+                              <td valign="top">
+                                 <span class="anSmText">8 years at Gartner</span>
+                              </td>
+                           </tr>
+                           
+                        </table>
+                     </td>
+                     <td width="15"><img src="x.gif" width="15" height="1" /></td>
+                  </tr>
+                  <tr><td colspan="3"><img src="x.gif" width="1" height="22" /></td></tr>
+               </table>
+               <!-- white divider -->
+               <table width="195" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF"><tr><td height="2"><img src="x.gif" width="195" height="2" /></td></tr></table>
+
+               
+               <!-- white divider -->
+               <table width="195" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF"><tr><td height="2"><img src="x.gif" width="195" height="2" /></td></tr></table>
+
+                  <!-- *** RESOURCES *** -->
+                  <table width="195" border="0" cellpadding="0" cellspacing="0" bgcolor="#EBF7FD">
+                  <tr><td colspan="3"><img src="x.gif" width="1" height="22" /></td></tr>
+                  <tr>
+                     <td width="14"><img src="x.gif" width="14" height="1" /></td>
+                     <td>
+                        <span class="anText"><strong>Resources</strong></span>
+                        <div><img src="x.gif" width="1" height="2" /></div>
+                        <!-- bullet list -->
+                        <table border="0" cellpadding="0" cellspacing="0" width="90%">
+                        <tr>
+                           <td width="7" valign="top"><img src="sq_gray_bullet.gif" width="3" height="3" vspace="5" />
+                           </td>
+                           <td valign="top">
+                           <a href="javascript:void(null)" onclick="openInMainWindow('/Alert?alertop=22&k=Karen Peterson')" class="resourceThinBlueLink">Create Analyst Alert</a>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td width="7" valign="top"><img src="sq_gray_bullet.gif" width="3" height="3" vspace="5" />
+                           </td>
+                           <td valign="top">
+                           <a href="javascript:void(null)" onclick="openInHomepage('/it/about/contact_gartner.jsp');" class="resourceThinBlueLink">Contact Gartner</a>
+                           </td>
+                        </tr>
+                        </table>
+                     </td>
+                     <td width="15"><img src="x.gif" width="15" height="1" /></td>
+                  </tr>
+                  <tr><td colspan="3"><img src="x.gif" width="1" height="22" /></td></tr>
+                  </table>
+
+
+               </td>
+               <!-- bottom right column -->
+               <td width="350" valign="top">
+
+                  <table width="350" cellpadding="0" cellspacing="0" border="0">
+                  <tr><td colspan="3"><img src="x.gif" width="1" height="22" /></td></tr>
+                  <tr>
+
+
+      
+               <td valign="top">
+      
+      
+
+
+      
+
+
+      
+                     <br><br><br><br>
+                     </td>
+                     <td><img src="x.gif" width="1" height="1" /></td>
+                  </tr>
+                  </table>
+
+               </td>
+            </tr>
+            </table>
+
+         <!-- white line -->
+         <div><img src="x.gif" width="1" height="2" /></div>
+
+         <!-- BOTTOM RESEARCH -->
+         <table width="545" border="0" cellpadding="0" cellspacing="0" bgcolor="#DDE0E2" height="36">
+         <tr valign="middle">
+            <td width="15"><img src="x.gif" width="15" height="1" /></td>
+            <td width="365"><a name="research"></a><span class="anText"><strong>LATEST RESEARCH</strong></span></td>
+            <td width="10"><img src="al_arrow.gif" width="4" height="6" border="0" alt="0" /></td>
+            <td width="140"><a href="javascript:submitAuthor(false,false);" class="anLink">More by this author</a></td>
+            <td width="15"><img src="x.gif" width="15" height="1" /></td>
+         </tr>
+         </table>
+
+         <table width="545" border="0" cellpadding="0" cellspacing="0" bgcolor="#EBF7FD">
+         <tr>
+         <td height="20" width="15"><img src="x.gif" width="15" height="20" /></td>
+         <td width="220">
+
+         </td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td width="2" bgcolor="#FFFFFF"><img src="x.gif" width="2" height="1" /></td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td width="85">
+
+         </td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td width="2" bgcolor="#FFFFFF"><img src="x.gif" width="2" height="1" /></td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td width="176">
+
+         </td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         </tr>
+
+         <tr>
+         <td width="15"><img src="x.gif" width="15" height="1" /></td>
+         <td>
+         <span class="anText"><strong>Title</strong></span><br><br>
+         </td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td width="2" bgcolor="#FFFFFF"><img src="x.gif" width="2" height="1" /></td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td>
+         <span class="anText"><strong>Publish Date</strong></span><br><br>
+         </td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td width="2" bgcolor="#FFFFFF"><img src="x.gif" width="2" height="1" /></td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td>
+         <span class="anText"><strong>Author(s)</strong></span><br><br>
+         </td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         </tr>
+      
+         <tr>
+         <td width="15"><img src="x.gif" width="15" height="1" /></td>
+         <td valign="top">
+         <a href="javascript:void(null)" onclick="openDocFromDoc('/DisplayDocument?id=417079')" class="ThinBlueLink">Predicts 2004: Supply Chain Management</a>
+         </td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td width="2" bgcolor="#FFFFFF"><img src="x.gif" width="2" height="1" /></td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td valign="top">
+         <span class="anText">26-Nov-2003</span>
+         </td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td width="2" bgcolor="#FFFFFF"><img src="x.gif" width="2" height="1" /></td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td valign="top">
+         <span class="anText">Jeff Woods, Karen Peterson, Andrew White, Maria Jimenez</span>
+         </td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         </tr>
+         <tr>
+         <td height="20" width="15" height="4"><img src="x.gif" width="15" height="4" /></td>
+         <td width="220"></td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td width="2" bgcolor="#FFFFFF"><img src="x.gif" width="2" height="1" /></td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td width="85"></td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td width="2" bgcolor="#FFFFFF"><img src="x.gif" width="2" height="1" /></td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td width="176"></td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         </tr>
+
+      
+         <tr>
+         <td width="15"><img src="x.gif" width="15" height="1" /></td>
+         <td valign="top">
+         <a href="javascript:void(null)" onclick="openDocFromDoc('/DisplayDocument?id=412657')" class="ThinBlueLink">MarketScope: North American SPP Applications</a>
+         </td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td width="2" bgcolor="#FFFFFF"><img src="x.gif" width="2" height="1" /></td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td valign="top">
+         <span class="anText">16-Oct-2003</span>
+         </td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td width="2" bgcolor="#FFFFFF"><img src="x.gif" width="2" height="1" /></td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td valign="top">
+         <span class="anText">Karen Peterson</span>
+         </td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         </tr>
+         <tr>
+         <td height="20" width="15" height="4"><img src="x.gif" width="15" height="4" /></td>
+         <td width="220"></td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td width="2" bgcolor="#FFFFFF"><img src="x.gif" width="2" height="1" /></td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td width="85"></td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td width="2" bgcolor="#FFFFFF"><img src="x.gif" width="2" height="1" /></td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td width="176"></td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         </tr>
+
+      
+         <tr>
+         <td width="15"><img src="x.gif" width="15" height="1" /></td>
+         <td valign="top">
+         <a href="javascript:void(null)" onclick="openDocFromDoc('/DisplayDocument?id=412064')" class="ThinBlueLink">Microsoft ERP Customers Should Investigate New SCM Functions</a>
+         </td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td width="2" bgcolor="#FFFFFF"><img src="x.gif" width="2" height="1" /></td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td valign="top">
+         <span class="anText">09-Oct-2003</span>
+         </td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td width="2" bgcolor="#FFFFFF"><img src="x.gif" width="2" height="1" /></td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td valign="top">
+         <span class="anText">Maria Jimenez, Karen Peterson</span>
+         </td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         </tr>
+         <tr>
+         <td height="20" width="15" height="4"><img src="x.gif" width="15" height="4" /></td>
+         <td width="220"></td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td width="2" bgcolor="#FFFFFF"><img src="x.gif" width="2" height="1" /></td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td width="85"></td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td width="2" bgcolor="#FFFFFF"><img src="x.gif" width="2" height="1" /></td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td width="176"></td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         </tr>
+
+      
+         <tr>
+         <td width="15"><img src="x.gif" width="15" height="1" /></td>
+         <td valign="top">
+         <a href="javascript:void(null)" onclick="openDocFromDoc('/DisplayDocument?id=409658')" class="ThinBlueLink">Supplier Relationship Management Client Issues for 2004</a>
+         </td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td width="2" bgcolor="#FFFFFF"><img src="x.gif" width="2" height="1" /></td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td valign="top">
+         <span class="anText">16-Sep-2003</span>
+         </td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td width="2" bgcolor="#FFFFFF"><img src="x.gif" width="2" height="1" /></td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td valign="top">
+         <span class="anText">David Hope-Ross, Karen Peterson</span>
+         </td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         </tr>
+         <tr>
+         <td height="20" width="15" height="4"><img src="x.gif" width="15" height="4" /></td>
+         <td width="220"></td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td width="2" bgcolor="#FFFFFF"><img src="x.gif" width="2" height="1" /></td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td width="85"></td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td width="2" bgcolor="#FFFFFF"><img src="x.gif" width="2" height="1" /></td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td width="176"></td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         </tr>
+
+      
+         <tr>
+         <td width="15"><img src="x.gif" width="15" height="1" /></td>
+         <td valign="top">
+         <a href="javascript:void(null)" onclick="openDocFromDoc('/DisplayDocument?id=409648')" class="ThinBlueLink">SCM Software Vendors Struggle to Rebound</a>
+         </td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td width="2" bgcolor="#FFFFFF"><img src="x.gif" width="2" height="1" /></td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td valign="top">
+         <span class="anText">15-Sep-2003</span>
+         </td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td width="2" bgcolor="#FFFFFF"><img src="x.gif" width="2" height="1" /></td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td valign="top">
+         <span class="anText">Chad Eschinger, Pranav Kumar, Thomas Topolinski, Karen Peterson</span>
+         </td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         </tr>
+         <tr>
+         <td height="20" width="15" height="4"><img src="x.gif" width="15" height="4" /></td>
+         <td width="220"></td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td width="2" bgcolor="#FFFFFF"><img src="x.gif" width="2" height="1" /></td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td width="85"></td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td width="2" bgcolor="#FFFFFF"><img src="x.gif" width="2" height="1" /></td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td width="176"></td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         </tr>
+
+      
+         <tr>
+         <td height="20" width="15"><img src="x.gif" width="15" height="20" /></td>
+         <td width="220">
+
+         </td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td width="2" bgcolor="#FFFFFF"><img src="x.gif" width="2" height="1" /></td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td width="85">
+
+         </td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td width="2" bgcolor="#FFFFFF"><img src="x.gif" width="2" height="1" /></td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         <td width="176">
+
+         </td>
+         <td width="12"><img src="x.gif" width="12" height="1" /></td>
+         </tr>
+         </table>
+
+         </td><!-- end content -->
+         <!-- right side border -->
+         <td width="2"><img src="x.gif" width="2" height="1" alt="" border="0" /></td>
+      </tr>
+      <!-- bottom border -->
+      <tr><td colspan="3"><img src="x.gif" width="1" height="2" alt="" border="0" /></td></tr>
+      </table>
+
+      <form name="mainForm">
+      <input type="hidden" name="authorId" value="13700">
+         <input type="hidden" name="name"     value="MoreLikeThisAuthor">
+         <input type="hidden" name="author"   value="Chad Eschinger, Pranav Kumar, Thomas Topolinski, Karen Peterson">
+      </form>
+
+<SCRIPT SRC="webtrendsCookies.js" LANGUAGE="JavaScript"></SCRIPT>
+<SCRIPT SRC="webtrends.jsp.1.html" LANGUAGE="JavaScript"></SCRIPT>
+ 
+<NOSCRIPT>
+<IMG ALT= "" BORDER="0" NAME="DCSIMG" WIDTH="1" HEIGHT="1" SRC="http://wtssdc.gartner.com/dcs2kf7dq10000sddxi7bvt9i_6o7e/njs.gif?dcsuri=/nojavascript&WT.js=No">
+</NOSCRIPT>
+
+
+
+   </body>
+</html>

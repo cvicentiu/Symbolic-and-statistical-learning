@@ -1,0 +1,1234 @@
+<!-- 
+
+	body {
+		background: #fff;
+		margin : 0;
+		padding : 0;
+		font-family : Arial, Helvetica, sans-serif;
+		min-width : 770px;
+		height : 100%;
+}
+
+	img {
+		border : 0;
+	}
+	
+	a {
+		
+		color : #cc0000;
+		text-decoration : underline;
+	}
+	
+	a:hover, a:visited:hover{
+		
+		color:#0000cc;
+		text-decoration : underline;
+	}
+	
+	a:visited {
+		
+		color:#666;
+		text-decoration : underline;
+	}
+	
+	#alerthide {
+		display : none;
+	}
+	
+	.hidden {
+		display : none;
+	}
+	
+	#containment {
+		background: #ffffff;
+		float : left;
+		z-index:2;
+	}
+
+/* Header information */
+	#header {
+		margin : 0;
+		padding : 0;
+		background : #fff;
+		height : 66px;
+		
+		clear : right;
+		border : 0; /* for IE5 display purposes */
+		/* width : auto; */
+		}
+		
+
+	
+	#headerAd
+{
+	padding-right: 0px;
+	padding-left: 0px;
+	float: left;
+	padding-bottom: 0px;
+	margin: 0px;
+	padding-top: 30px;
+}
+
+	#headerAdC
+{
+	padding-right: 0px;
+	padding-left: 16px;
+	float: left;
+	clear: right;
+	padding-bottom: 0px;
+	margin: 0px;
+	padding-top: 6px;
+}
+
+/* Navigation area */
+	#navigationContainer {
+		margin : 0;
+		padding : 0;
+		background : #e8e8e8;
+		height : 27px;
+		width : 770px;
+		float : left;
+	}
+
+	#mainNavList {
+		float : left;
+		width : 625px;
+  		voice-family : "\""; padding-left:25px; padding-top:6px 
+
+	}
+	
+	.dummystyleforIE5fix {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+	
+	#navigationContainer>#mainNavList {
+		/* commented backslash hack to hide this from Mac IE5 \*/
+		margin-top : -5px; /* hides margin from IE, to fix Moz display issue with navigation graphics */
+	}
+	
+	.dummystyleforMacIE5fix {
+		display : none; /* this unused style here to solve Mac IE5 because of the hack above */
+	}
+			
+	#mainNavList a {
+		background : transparent;
+	}
+	
+	#mainNavList a:hover {
+		background : transparent; /* corrects any background color set to A for Firefox to display rollover correctly */
+	}
+	
+	#headerDate {
+		margin : 0;
+		padding : 8px 15px 0 0;
+		font : .7em Helvetica, Arial, sans-serif;
+		color : #000;
+		text-transform : uppercase;
+		float : right;
+	}
+
+/* OPEN TMPL STYLES */
+	#openTmplAHeader {
+		margin : 0;
+		padding : 0;
+		clear : both; /* for Moz because of the display style below */
+	}
+	
+	#openTmplAHeader img {
+		display : block; /* required for Gecko and KHTML rendering engines. Images are default ``[=display: inline]'', meaning that they sit on the text baseline with a little space above and below like normal text.  This style removes the space around the image so proper alignment of images will occur. Thanks kryten. */
+	}
+	
+	/* OPEN TMPL C */
+	#closeBoxContainer {
+		margin : 0;
+		padding : 0;
+		background : #fff;
+		width : 770px;
+		float : left;
+	}
+
+	#closeBox {
+		float : right;
+		padding : 21px 19px 0 0;
+	}
+
+/* BANNER STYLES */
+	/* BANNER 1 - Landing pages and Portal Pages A and B */ 
+	#banner1 {
+		margin : 0;
+		padding : 0;
+		clear : both; /* for Moz because of the display style below */
+		background : #fff url(../Images/banner1Bg.gif) top left no-repeat;
+		height : 70px;
+	}
+	
+	#banner1E {
+		margin : 0;
+		padding : 0;
+		clear : both; /* for Moz because of the display style below */
+		background : #fff url(../Images/banner1BgE.gif) top left no-repeat;
+		height : 70px;
+	}	
+	
+	#banner1TitleLanding {
+		color : #fff;
+		text-transform : uppercase;
+		float : left;
+		width : 376px;
+  		voice-family : "\"";font-style:normal; font-variant:normal; font-weight:normal; font-size:15pt; font-family:Times New Roman, Times, sans-serif 
+
+	}
+	
+	.dummystyleforIE5fix {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+	
+	#banner1Tagline {
+        margin : 0;
+        color : #ffffff;
+		font : 15pt arial, helvetica, sans-serif;
+        z-index : 2;
+        position : absolute;
+        top : 116px;
+        left : 377px;
+    }
+	
+	#banner1Title {
+		color : #fff;
+		float : left;
+		width : 770px;
+  		voice-family : "\""; 
+
+	}
+	
+	.dummystyleforIE5fix {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+	
+	/* BANNER 2 - Major Sections A and B, Destination Page B */
+	#banner2 {
+		margin : 0;
+		padding : 0;
+		clear : both; /* for Moz because of the display style below */
+		background : #fff url(../Images/banner2Bg.gif) top left no-repeat;
+		height : 70px;
+	}
+	
+	#banner2Title {
+		color : #fff;
+		text-transform : uppercase;
+		float : left;
+		width : 563px;
+		padding:25px;
+  		font-style:normal; font-variant:normal; font-weight:bold; font-size:13px; font-family:arial, helvetica, sans-serif;
+  		voice-family : "\"}\""; 
+  		voice-family :inherit;
+  		width:513px;
+  		
+
+	}
+	
+	.dummystyleforIE5fix {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+	
+	#banner2Pic {
+		margin : 0;
+		padding : 0;
+		float : left;	
+	}
+	
+	/* BANNER 3 - Major Sections A and B, Destination Page B */
+	#banner3 {
+		margin : 0;
+		padding : 0;
+		clear : both; /* for Moz because of the display style below */
+		background : #fff url(../Images/banner2Bg.gif) top left no-repeat;
+		height : 70px;
+	}
+	
+	#banner3Title {
+		color : #fff;
+		text-transform : uppercase;
+		float : left;
+		width : 587px;
+  		font-style:normal; font-variant:normal; font-weight:bold; font-size:13px; font-family:arial, helvetica, sans-serif;
+  		voice-family : "\"}\""; 
+  		voice-family :inherit;
+  		width: 587px;
+	}
+	
+	.dummystyleforIE5fix {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+	
+	#banner3Pic {
+		margin : 0;
+		padding : 0;
+		float : left;	
+	}
+	
+	/* BANNER 4 - Destination Page A and Open Template A*/
+	#banner4 { 
+		margin : 0;
+		padding : 0;
+		clear : both; /* for Moz because of the display style below */
+	}
+	
+	#banner4 img {
+		display : block; /* required for Gecko and KHTML rendering engines. Images are default ``[=display: inline]'', meaning that they sit on the text baseline with a little space above and below like normal text.  This style removes the space around the image so proper alignment of images will occur. Thanks kryten. */
+	}
+
+/* END BANNER STYLES */	
+	
+	
+	
+#mainContentContainerNoGrayBar {
+		margin : 0;
+		padding : 0;
+		float : left;
+		background : transparent;
+		min-height : 450px;
+		font: .7em Arial, Helvetica, sans-serif; 		
+		width :  770px;
+	}	
+	
+	
+	
+#mainContentContainerE {
+		margin : 0;
+		padding : 0;
+		float : left;
+		background : #fff url(../Images/intGrayBgE.gif) repeat-y;
+		height : auto;
+		width :  770px;
+	}	
+	
+
+	
+/* Subnav area for navigation, search, quicklinks, directories and logo */
+	
+	#subNavColContainerE {
+		margin : 0;
+		/* Below declaration's invalid value of '5' replaced by '0' [mzanon@noctrl.edu 2006-09-06]*/
+		padding : 0;
+		float : left;
+		width : 240px;
+		
+		background : transparent;
+		min-height : 420px;
+		height: 400px;
+	}	
+	
+	#subNav
+{
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	margin: 12px 10px 50px 0px;
+	padding-top: 0px;
+}
+	
+	#subNav .subNavHeader {
+		background-color:#d9d9d9;
+		font: bold 11px Arial, Helvetica, sans-serif;
+		color: #000;
+		text-transform : capitalize;
+	}
+	
+	#subNav .subNavHeaderOn {
+		background-color:#d9d9d9;
+		font: bold 11px Arial, Helvetica, sans-serif;
+		color: #cc0000;
+		text-transform : capitalize;
+	}
+	
+	#subNav a {
+		color: #000;
+		padding: 2px 0 2px 0;
+		text-decoration:none;
+		background-color:#d9d9d9;
+		font: 11px Arial, Helvetica, sans-serif;
+		text-transform : capitalize;
+		display : block;
+	}
+	
+	#subNav a:hover, a:visited:hover {
+		background-color:#d9d9d9;
+		color:#cc0000;
+	}
+	
+	#subNav .subNavOn {
+		background-color:#d9d9d9;
+		color: #cc0000;
+	}
+	
+	#searchContainer {
+		margin : 0 0 110px 17px;
+		padding : 0;
+	}
+	
+	#searchForm {
+		margin : 0;
+		padding : 0;
+	}
+	
+	#searchForm p {
+		margin : 0;
+		padding : 0;
+		width : auto; /* reset from interiorV4.css */
+		border : 0; /* reset from interiorV4.css */
+	} /* to help moz align search area better */
+	
+
+	
+	.dummystyleforIE5fix {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+	
+
+	
+	#quicklinksLink a {
+		background : #ccc;
+	}
+	
+	#quicklinksLink a.clearimage {
+		background : transparent;
+	} 	
+	
+	#quicklinksLink img {
+		display:block;
+	}
+	
+
+	
+	#directoriesLink a {
+		background : #ccc;
+	} 
+	
+	#directoriesLink a.clearimage {
+		background : transparent;
+	} 
+	#directoriesLink img 
+	{
+		display:block;
+	}
+	
+	#nccLogoContainer {
+		margin : 60px 6px 20px 15px;
+		
+	}
+	
+	#nccLogo {
+		margin : 0;
+		padding : 0;
+		vertical-align: text-bottom;	
+	}
+	
+	#nccLogo img {
+		display: block;
+		vertical-align: text-bottom;
+	}
+	
+	
+/* Main Content Area for breadcrumb, text and photos */
+	#mainContentArea {
+		float : left;
+		padding-left:20px;
+		width : 581px;
+  		voice-family : "\"}\""; 
+  		voice-family: inherit;
+  		width:561px;
+	}
+	
+	#mainContentAreaNoPadding {
+		float : left;
+		width : 581px;
+  		voice-family : "\"}\""; 
+  		voice-family: inherit;
+  		width:581px;
+	}	
+	
+	.dummystyleforIE5fix {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+	
+	
+
+	
+	#utilityIcons {
+		margin :  0;
+		padding : 0 0 9px 0;
+	}
+	
+
+			
+	#mainContent h1 {
+		margin :  0;
+		padding : 0 0 5px 0;
+		background : #fff;
+		font : bold 1.1em Arial, Helvetica, sans-serif;
+		color : #990000;
+	}
+	
+	.header {
+		font : bold 1.1em Arial, Helvetica, sans-serif;
+		color : #990000;
+		margin : 0;
+		padding : 0 0 10px 0;
+	}
+	
+	#mainContent h2 {
+		font : bold 1.1em Arial, Helvetica, sans-serif;
+		color : #990000;
+		margin : 0;
+		padding : 0 0 5px 0;
+	}
+	
+	#mainContent a {
+		
+		color : #cc0000;
+		text-decoration : underline;
+	}
+	
+	#mainContent a:hover, #mainContent a:visited:hover {
+		
+		color:#0000cc;
+		text-decoration : underline;
+	}
+	
+	#mainContent a:visited {
+		
+		color:#666;
+		text-decoration : underline;
+	}
+
+	#mainContent1Col {
+		margin :  0;
+		padding : 0 45px 0 0;
+		float : left;
+		background : #fff;
+		font: .7em Arial, Helvetica, sans-serif;
+		color : #000;
+	}
+			
+	#mainContent1Col h1 {
+		margin :  0;
+		padding : 0 0 5px 0;
+		background : #fff;
+		font : bold 1.1em Arial, Helvetica, sans-serif;
+		color : #990000;
+	}
+	
+	#mainContent1Col h2 {
+		font : bold 1.1em Arial, Helvetica, sans-serif;
+		color : #990000;
+		margin : 0;
+		padding : 0 0 5px 0;
+	}
+	
+	#mainContent1Col a {
+		
+		color : #cc0000;
+		text-decoration : underline;
+	}
+	
+	#mainContent1Col a:hover, #mainContent1Col a:visited:hover {
+		
+		color:#0000cc;
+		text-decoration : underline;
+	}
+	
+	#mainContent1Col a:visited {
+		
+		color:#666;
+		text-decoration : underline;
+	}
+
+/* MAJOR SECTION A STYLES, two columns of standard body text */	
+	#majorColA {
+		float : left;
+		color : #000;
+		width : 598px;
+		padding-left:20px;
+  		font-style:normal; font-variant:normal; 
+  		font-weight:normal; line-height:1.5em; font-size:1em; 
+  		font-family:Arial, Helvetica, sans-serif; 
+  		voice-family : "\"}\""; 
+  		voice-family :inherit;
+		width : 578px; /* box model/voice family trick/hack to get field height closer for IE5+ */
+	}
+	
+	.dummystyleforIE5fix {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+	
+	#majorColA a{
+		
+		color : #cc0000;
+		text-decoration : underline;
+	}
+	
+	#majorColA a:hover, #majorColA a:visited:hover {
+		
+		color:#0000cc;
+		text-decoration : underline;
+	}
+	
+	#majorColA a:visited {
+		
+		color:#666;
+		text-decoration : underline;
+	}
+	
+	#majorColB {
+		float : left;
+		color : #000;
+		width : 280px;
+  		voice-family : "\"";font-style:normal; font-variant:normal; font-weight:normal; line-height:1.5em; font-size:1em; font-family:Arial, Helvetica, sans-serif 
+
+	}
+	
+	.dummystyleforIE5fix {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+	
+	#majorColB a {
+		
+		color : #cc0000;
+		text-decoration : underline;
+	}
+	
+	#majorColB a:hover, #majorColB a:visited:hover {
+		
+		color:#0000cc;
+		text-decoration : underline;
+	}
+	
+	#majorColB a:visited {
+		
+		color:#666;
+		text-decoration : underline;
+	}
+/* END MAJOR SECTION A STYLES */
+
+/* MAJOR SECTION B STYLES, one column for main content and right side column for photo and text */
+	#majorBMainContentArea {
+		float : left;
+		width : 397px;
+  		voice-family : "\""; 
+
+	}
+	
+	.dummystyleforIE5fix {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+	
+	#majorLeftCol {
+		float : left;
+		color : #000;
+		width : 407px;
+		padding-left:20px;
+		padding-right:10px;
+		font-style:normal; font-variant:normal; font-weight:normal; font-size:1em; font-family:Arial, Helvetica, sans-serif;
+		voice-family : "\"}\""; 
+  		voice-family :inherit;
+  		width:377px;
+	}
+	
+	#majorLeftColnoPadding {
+		float : left;
+		color : #000;
+		width : 387px;
+		padding-left:0px;
+		padding-right:10px;
+		font-style:normal; font-variant:normal; font-weight:normal; font-size:1em; font-family:Arial, Helvetica, sans-serif;
+		voice-family : "\"}\""; 
+  		voice-family :inherit;
+  		width:357px;
+	}	
+	
+	#majorLeftCol:after
+	{
+	content: "."; display: block; line-height: 1px; font-size: 1px; clear: both;
+	}		
+			
+	
+	.dummystyleforIE5fix {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+
+	#majorLeftCol a {
+		
+		color : #cc0000;
+		text-decoration : underline;
+	}
+	
+	#majorLeftCol a:hover, #majorLeftCol a:visited:hover {
+		
+		color:#0000cc;
+		text-decoration : underline;
+	}
+	
+	#majorLeftCol a:visited {
+		
+		color:#666;
+		text-decoration : underline;
+	}
+	
+	#majorLeftCol img {
+		margin : 0;
+		padding : 0 10px 10px 0;
+		float : left;
+	}
+
+	#EPI img {
+		margin : 0;
+		padding : 0 0 0 0;
+	}
+	
+	#majorRightCol
+	{
+		PADDING-RIGHT: 20px; 
+		PADDING-LEFT: 20px; 
+		border-left : dashed 1px #7f7f7f;
+		background-color: #ffffff;
+		FLOAT: left; PADDING-BOTTOM: 10px; WIDTH: 189px; COLOR: #000; PADDING-TOP: 10px; 
+		voice-family : "\"}\""; 
+  		voice-family :inherit;
+  		width:149px;
+
+	}
+	
+	#majorRightCol:after
+	{
+		content: "."; display: block; line-height: 1px; font-size: 1px; clear: both;
+	}		
+
+	#majorRightCol2
+	{ 
+		PADDING-RIGHT: 5px; PADDING-LEFT: 0px; 
+		FLOAT: left; PADDING-BOTTOM: 10px; 
+		WIDTH: 184px; COLOR: #000; PADDING-TOP: 0px; margin-top:10px;
+		border-left : dashed 1px #7f7f7f;
+		voice-family : "\"}\""; 
+  		voice-family :inherit;
+  		width : 179px;
+	}
+
+	.dummystyleforIE5fix {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+	
+	#majorRightCol a {
+		
+		color : #cc0000;
+		text-decoration : underline;
+	}
+	
+	#majorRightCol a:hover, #majorRightCol a:visited:hover {
+		
+		color:#0000cc;
+		text-decoration : underline;
+	}
+	
+	#majorRightCol a:visited {
+		
+		color:#666;
+		text-decoration : underline;
+	}
+	
+	#majorRightCol img {
+		margin : 0;
+		padding : 0 0 10px 0;
+	}
+	
+	#majorRightCol p {
+		margin : 0;
+		padding : 5px 0 0 0;
+	}
+	
+	.rightColheader
+{
+
+	font: bold 9pt Arial, Helvetica, sans-serif;
+	color: #990000;
+
+}
+/* END MAJOR SECTION B STYLES */
+
+/* DESTINATION A STYLES, one column text and two columns of text with photos, faculty pics */	
+	#destinationTmplAHeader {
+		margin : 0;
+		padding : 0;
+		clear : both; /* for Moz because of the display style below */
+	}
+	
+	#destinationTmplAHeader img {
+		display : block; /* required for Gecko and KHTML rendering engines. Images are default ``[=display: inline]'', meaning that they sit on the text baseline with a little space above and below like normal text.  This style removes the space around the image so proper alignment of images will occur. Thanks kryten. */
+	}
+
+	#destinationColA {
+		float : left;
+		color : #000;
+		width : 300px;
+  		voice-family : "\"";font-style:normal; font-variant:normal; font-weight:normal; line-height:1.3em; font-size:1em; font-family:Arial, Helvetica, sans-serif 
+
+	}
+	
+	.dummystyleforIE5fix {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+	
+	#destinationColA a{
+		
+		color : #cc0000;
+		text-decoration : underline;
+	}
+	
+	#destinationColA a:hover, #destinationColA a:visited:hover {
+		
+		color:#0000cc;
+		text-decoration : underline;
+	}
+	
+	#destinationColA a:visited {
+		
+		color:#666;
+		text-decoration : underline;
+	}
+	
+	#destinationColA img {
+		margin : 0;
+		padding : 0 20px 10px 0;
+		float : left;
+	}
+	
+	#destinationColA p {
+		margin : 0;
+		padding : 0 0 35px 0;
+	}
+	
+	#destinationColB {
+		float : left;
+		color : #000;
+		width : 278px;
+  		voice-family : "\"";font-style:normal; font-variant:normal; font-weight:normal; line-height:1.3em; font-size:1em; font-family:Arial, Helvetica, sans-serif 
+
+	}
+	
+	.dummystyleforIE5fix {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+	
+	#destinationColB a {
+		
+		color : #cc0000;
+		text-decoration : underline;
+	}
+	
+	#destinationColB a:hover, #destinationColB a:visited:hover {
+		
+		color:#0000cc;
+		text-decoration : underline;
+	}
+	
+	#destinationColB a:visited {
+		
+		color:#666;
+		text-decoration : underline;
+	}
+	
+	#destinationColB img {
+		margin : 0;
+		padding : 0 20px 10px 0;
+		float : left;
+	}
+	
+	#destinationColB p {
+		margin : 0;
+		padding : 0 0 35px 0;
+	}
+/* END DESTINATION SECTION A STYLES */
+
+/* DESTINATION PAGE B STYLES, two columns - one column for main body text and right column for pic and text */	
+	#destinationBMainContentArea {
+		float : left;
+		width : 418px;
+  		voice-family : "\""; 
+
+	}
+	
+	.dummystyleforIE5fix {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+	
+	#destinationLeftCol {
+		float : left;
+		color : #000;
+		width : 394px;
+		voice-family : "\"";font-style:normal; font-variant:normal; font-weight:normal; font-size:1em; font-family:Arial, Helvetica, sans-serif 
+
+	}
+	
+	.dummystyleforIE5fix {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+
+	#destinationLeftCol a {
+		
+		color : #cc0000;
+		text-decoration : underline;
+	}
+	
+	#destinationLeftCol a:hover, #destinationLeftCol a:visited:hover {
+		
+		color:#0000cc;
+		text-decoration : underline;
+	}
+	
+	#destinationLeftCol a:visited {
+		
+		color:#666;
+		text-decoration : underline;
+	}
+	
+	#destinationLeftCol img {
+		margin : 0;
+		padding : 0 20px 10px 0;
+		float : left;
+	}
+	
+	#destinationRightCol{
+		float : left;
+		background : #fff url(../Images/destinationRightCOlBg.gif) top left repeat-y;
+		color : #000;
+		width : 184px;
+		voice-family : "\"";font-style:normal; font-variant:normal; font-weight:normal; font-size:.7em; font-family:Arial, Helvetica, sans-serif 
+
+	}
+	
+	.dummystyleforIE5fix {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+	
+	#destinationRightCol a {
+		
+		color : #cc0000;
+		text-decoration : underline;
+	}
+	
+	#destinationRightCol a:hover, #destinationRightCol a:visited:hover {
+		
+		color:#0000cc;
+		text-decoration : underline;
+	}
+	
+	#destinationRightCol a:visited {
+		
+		color:#0000cc;
+		text-decoration : underline;
+	}
+	
+	#destinationRightCol img {
+		margin : 0;
+		padding : 0 0 10px 0;
+	}
+	
+	#destinationRightCol p {
+		margin : 0;
+		padding : 5px 0 0 0;
+	}
+
+/* END DESTINATION PAGE B STYLES */
+
+/* PORTAL PAGE A STYLES, two column for main content and right side column for Dates to Remember and second row for weather */
+	#portalAMainContentArea {
+		float : left;
+		width : 378px;
+  		voice-family : "\""; 
+
+	}
+	
+	.dummystyleforIE5fix {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+	
+	#portalABodyContent {
+		margin : 0;
+		padding : 0;
+		float : left;
+		
+		font : 1em/2.2em Arial, Helvetica, sans-serif;
+		color : #000;
+	}
+
+	#portalABodyContent a {
+		
+		color : #cc0000;
+		text-decoration : underline;
+	}
+	
+	#portalABodyContent a:hover, #portalABodyContent a:visited:hover {
+		
+		color:#0000cc;
+		text-decoration : underline;
+	}
+	
+	#portalABodyContent a:visited {
+		
+		color:#666;
+		text-decoration : underline;
+	}
+	
+	#portalABodyContent img {
+		margin : 0;
+		padding : 0 20px 10px 0;
+		float : left;
+	}
+	
+	#portalABodyContentLeft {
+		float : left;
+		width : 180px;
+		voice-family : "\""; 
+
+	}
+	
+	.dummystyleforIE5fix {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+	
+	#portalABodyContentRight {
+		float : left;
+		width : 176px;
+		voice-family : "\""; 
+
+	}
+	
+	.dummystyleforIE5fix {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+	
+	#portalARightCol{
+		border-left : 1px dashed #999;
+		margin : 9px 0 0 0;
+		padding : 0;
+		float : left;
+		width : 222px;
+	}
+	
+	#portalARightColBanner {
+		color : #fff;
+		text-transform : uppercase;
+		height : 26px;
+		width : 222px;
+		voice-family : "\"";font-style:normal; font-variant:normal; font-weight:bold; font-size:.7em; font-family:Arial, Helvetica, sans-serif 
+
+	}
+	
+	.dummystyleforIE5fix {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+	
+	#portalARightColText {
+		background : #fff url(../Images/majorRightCOlBg.gif) top left repeat-y;
+		color : #000;
+		width : 222px;
+		voice-family : "\"";font-style:normal; font-variant:normal; font-weight:normal; font-size:.7em; font-family:Arial, Helvetica, sans-serif 
+
+	}
+	
+	.dummystyleforIE5fix {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+	
+	
+	#portalARightColText strong {
+		font : bold 1.1em Arial, Helvetica, sans-serif;
+		color : #990000;
+		margin : 0 0 10px 0;
+		padding : 0;
+	}
+		
+	#portalARightColText a {
+		
+		color : #cc0000;
+		text-decoration : underline;
+	}
+	
+	#portalARightColText a:hover, #portalARightColText a:visited:hover {
+		
+		color:#0000cc;
+		text-decoration : underline;
+	}
+	
+	#portalARightColText a:visited {
+		
+		color:#666;
+		text-decoration : underline;
+	}
+		
+	#portalARightColText p {
+		margin : 0;
+		padding : 15px 0 10px 0;
+	}
+
+	/* Weather Styles */
+	#portalAWeatherArea {
+		float : left;
+		width : 578px;
+		height: 270px;
+		border-left : dashed 1px #7f7f7f;
+  		voice-family : "\"}\""; 
+  		voice-family :inherit;
+  		width: 578px;
+
+	}
+	
+	.dummystyleforIE5fix {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+	
+	#portalAWeatherBanner
+	{
+		font-weight: bold;
+		background-image: none;
+		text-transform: uppercase;
+		width: 578px;
+		color: #fff;
+		height: 26px;
+		padding-left:10px;
+		padding-top:10px;
+		background-color: #7f7f7f;
+  		voice-family : "\"}\""; 
+  		voice-family :inherit;	
+  		width:568px;
+	}
+	
+	.dummystyleforIE5fix {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+	
+	#portalAWeatherDetails {
+		height : 23px;
+		width : 578px;
+  		voice-family : "\"}\""; 
+  		voice-family :inherit;	
+  		width:568px;
+	}
+	
+	.dummystyleforIE5fix {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+	
+	.portalAWeatherDay {
+		float : left;
+		text-align : center;
+		height : 102px;
+		width : 90px;
+		voice-family : "\"";font-style:normal; font-variant:normal; font-weight:normal; font-size:9px; font-family:Arial, Helvetica, sans-serif 
+
+	}
+	
+	.dummystyleforIE5fix {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+	
+	#portalAWeatherDetails > .portalAWeatherDay {
+		margin : 0 0 0 0;
+		padding : 7px 4px 0 4px;
+	}
+	
+	.portalAWeatherDay img {
+		margin : 0 0 7px 0;
+	}
+	
+	.weatherTempText {
+		padding : 3px 0 0 0;
+	}
+	
+/* END PORTAL PAGE A STYLES */
+
+/* Footer styles */
+	#footer
+{
+	clear: both;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	font-weight: normal;
+	font-size: 9px;
+	float: left;
+	width: 770px;
+	font-style: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #eaeaea;
+	text-align:center;
+	font-variant: normal;
+}
+
+	
+	.dummystyleforIE5fix {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+	
+	#footer a {
+		color : #000;
+		text-decoration : underline;
+	}
+	
+	#footer a:hover, #footer a:visited:hover {
+		color:#cc0000;
+		text-decoration : underline;
+	}
+	
+/* OPEN TEMPLATE B STYLES FOR FOOTER */
+	#footerOpenB {
+		color : #000;
+		float : left;
+		clear : both;
+		width : 770px;
+  		voice-family : "\"";font-style:normal; font-variant:normal; font-weight:normal; font-size:9px; font-family:Arial, Helvetica, sans-serif 
+
+	}
+	
+	.dummystyleforIE5fix99 {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+	
+	/* IE5 Mac hack \ following style is hidden from IE5 on Mac */ #footerOpenB {position : absolute;bottom : 0;}	
+
+/* OPEN TEMPLATE C STYLES FOR FOOTER */
+	#footerOpenC {
+		
+		background-color:#d9d9d9;
+		color : #d9d9d9;
+		float : left;
+		clear : both;
+		/* Below three declarations changed from '30', '15', and '15', respectively [i.e. no 'px'; mzanon@noctrl.edu 2006-09-06] */
+		padding-left:30px;
+		padding-top:15px;
+		padding-bottom:15px;
+		height : 43px;
+		width : 770px;
+  		voice-family : "\"";font-style:normal; font-variant:normal; font-weight:normal; font-size:9px; font-family:Arial, Helvetica, sans-serif 
+
+	}
+	
+	.dummystyleforIE5fix99 {
+		display : none; /* this unused style here to solve IE5 because of the trick/hack above */
+	}
+	
+	/* IE5 Mac hack \ to get the right column to appear properly. note closing tag has to be on next line */ #footerOpenC {position : absolute;bottom : 0;}	
+
+	#footerOpenCRed {
+		margin : 0;
+		padding : 0;
+		float : left;
+		background-color : #990000;
+		float : left;
+		clear : both;
+		width : 770px;
+		height : 8px;
+	}
+
+	/* IE5 Mac hack \ following style is hidden from IE5 on Mac */ #footerOpenCRed {position : absolute;bottom : 0;}	

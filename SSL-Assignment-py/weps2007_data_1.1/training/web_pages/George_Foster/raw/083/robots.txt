@@ -1,0 +1,27 @@
+# This file is looked at by web robots (assuming they use accepted standards)
+# you can put in disallow statements to block robots from searching 
+# Good info on Robots can be found at:
+#<http://www.robotstxt.org/wc/robots.html>
+#<http://www.kollar.com/robots.html>
+#<http://www.inktomi.com/products/search/support/docs/wp-spider/robots_white_paper.pdf>
+#<http://www.inktomi.com/products/search/support/docs/wp-spider/default.htm>
+#<http://www.ukoln.ac.uk/web-focus/webwatch/services/robots-txt/>
+#<http://www.tardis.ed.ac.uk/~sxw/robots/check/>
+# last modified: 04-16-2003 by Steve
+# stubaker@northwestern.edu (Stu Baker)
+
+User-agent: * 
+Disallow: /cgi-bin
+Disallow: /css
+Disallow: /Templates
+Disallow: /Assets
+Disallow: /patbin
+Disallow: /otcgi
+Disallow: /majordomo/archive
+Disallow: /majordomo/lists
+Disallow: /majordomo/staff
+Disallow: /majordomo/templates
+Disallow: /dev
+Disallow: /sandbox
+Disallow: /public
+

@@ -1,0 +1,232 @@
+
+<HTML>
+	<HEAD>
+		<LINK href="styles.css" type="text/css" rel="stylesheet">
+			<SCRIPT TYPE="text/javascript" SRC="themeScripts.js"></SCRIPT>
+			<SCRIPT TYPE="text/javascript" SRC="flashobject.js"></SCRIPT>
+			<script>
+
+function resizePod()
+{
+	
+}
+	function resizeBio(newHeight) {
+		if (document.getElementById("agentProfile")){
+			document.getElementById("agentProfile").height = newHeight;
+		} else {
+			document.getElementById("agentProfile2").height = newHeight;
+		}
+	}
+
+
+	function OpenWindowCentered(szURL, szWindowName, nHeight, nWidth, bytSizable, bytScrollBars)
+	{
+		var intTop = (screen.availHeight - nHeight) / 2;
+		var intLeft = (screen.availWidth - nWidth) / 2;
+		window.open(szURL, szWindowName, "toolbar=no,  top=" + intTop + ", left=" + intLeft + ", location=no, directories=no, menubar=no, status=no, scrollbars=" + bytScrollBars + ", resizable=" + bytSizable + ", width=" + nWidth + ", height="+ nHeight + "");				
+	}			
+
+	function OpenForm(szURL,szWindowName)
+	{
+		OpenWindowCentered(szURL, szWindowName, 550, 400, 0, 0);		
+	}
+	
+	function OpenPrintBrochure(szURL){
+		OpenWindowCentered(szURL, 'PrintBrochure', 860, 660, 1, 1);
+	}			
+						
+	function MoreInfo(dblPrincipal)
+	{
+		var szURL = "/listings/MortgageCalc.aspx?Principal=" + dblPrincipal;
+		OpenWindowCentered(szURL, "Calc", 350, 500, 0, 0);
+	}
+	
+	function Open3DTour(szURL)
+	{
+		OpenWindowCentered(szURL, "Tour", 600, 600, 1,1);
+	}	
+		
+	function Open360Tour(szEggFile)
+	{
+		var szURL = "/listings/eggTour/egg.aspx?FileName=" + szEggFile;
+		OpenWindowCentered(szURL, "Egg", 330, 450, 1,1);				
+	}
+		
+	function ImageTour(nListID, szFileName)
+	{
+		var szURL = "/listings/ImageTour/imagetour.aspx?nListID=" + nListID + "&FileName=" + szFileName;
+		OpenWindowCentered(szURL, "Tour", 530, 775, 0, 0);
+	}
+	
+	function addBookmark(title,url)
+	{
+		if(window.sidebar)
+		{ 
+			window.sidebar.addPanel(title, url,""); 
+		}
+		else if(document.all )
+		{
+			window.external.AddFavorite( url, title);
+		}
+		else if( window.opera && window.print )
+		{
+			return true;
+		}
+	}
+	
+	// This is only needed for Netscape browsers.
+	function flashGetHref() { return location.href; }
+	function flashPutHref(href) { location.href = href; }
+	function flashGetTitle() { return document.title; }
+	function flashPutTitle(title) { document.title = title; }
+
+	function resizeFlash(flashID, newWidth, newHeight)
+	{
+		if(navigator.appName.indexOf("Microsoft") != -1){var obj = document.getElementById(flashID);}
+		else{var obj = document.getElementById(flashID + '2');}
+ 		if(newWidth != undefined){obj.width = newWidth;}
+ 		if(newHeight != undefined){obj.height = newHeight;}
+ 		//if(window.parent.document.getElementById('gridFrame') != undefined){window.parent.resizeFrame(newHeight + 40);}	
+ 		resizeFrame2(newHeight);
+	}
+	
+	function resizeFrame()
+	{
+		if(parent.resizeFrame!=undefined)
+ 			parent.resizeFrame(document.body.scrollWidth, document.body.scrollHeight+10);
+	}
+	
+	//Browser safe version
+	function resizeFrame2(newHeight)
+	{
+	 	if (window.innerHeight != undefined){
+			
+			
+				var j = newHeight + 10;
+				parent.resizeFrame(578, j);
+				
+		}
+		else{
+			parent.resizeFrame(document.body.scrollWidth, document.body.scrollHeight+10);
+		}
+	}
+
+	function goTop()
+	{
+		//debugger;
+		//In most brosers offsetTop is in relation to the conaining element
+		//To get the acual position on the page you need to account for 
+		//all of the parent elements offsetTops
+		var obj = window.parent.document.getElementById("gridFrame");
+		var curtop = 0;
+		if (obj == null)
+		{
+		}
+		else
+		{
+			if (obj.offsetParent)
+			{
+				while (obj.offsetParent)
+				{
+					curtop += obj.offsetTop
+					obj = obj.offsetParent;
+				}
+			}
+			else if (obj.y)
+				curtop += obj.y;
+			
+			window.parent.scrollTo(0,curtop);
+			//window.parent.scrollTo(0,0);
+		}
+	}
+	
+	function window_onload() 
+	{
+		resizePod();
+		resizeFrame();
+	}
+	</script>
+	</HEAD>
+	<body leftmargin="0" topmargin="0" onload="return window_onload()">
+	
+		<div id="divPod" style="display: none;">
+			<table width="721px" Height="" cellspacing="0" cellpadding="0" border="0">
+<tr>
+<td height="50" width="16" valign="top" style="BACKGROUND-IMAGE: url(/Graphics/PodBox//Left.gif);BACKGROUND-REPEAT: repeat-y"><img width="16" height="50" src="TopLeft.gif" border="0"></td>
+<td height="50" style="BACKGROUND-IMAGE: url(/Graphics/PodBox//Top.gif);BACKGROUND-REPEAT: repeat-x">
+<table width="100%" cellspacing="0" cellpadding="0" border="0" height="100%" bordercolor="red" style="table-layout:fixed;">
+<tr>
+<td><div class="PodBoxHeader" style="text-overflow: ellipsis; overflow: hidden; width: 100%;"><nobr></nobr></div><img src="GrayPixel.gif" width="100%" height="1"></td>
+</tr>
+</table>
+</td>
+<td height="50" width="16" valign="top" style="BACKGROUND-IMAGE: url(/Graphics/PodBox//Right.gif);BACKGROUND-REPEAT: repeat-y"><img width="16" height="50" src="TopRight.gif" border="0"></td>
+</tr>
+<tr>
+<td background="Left.gif"></td>
+<td>
+<span id="PB"></span></td>
+<td background="Right.gif"></td>
+</tr>
+<tr>
+<td height="16" width="16" valign="bottom" style="BACKGROUND-IMAGE: url(/Graphics/PodBox//Left.gif);BACKGROUND-REPEAT: repeat-y"><img width="16" height="16" src="BottomLeft.gif" border="0"></td>
+<td height="16" background="Bottom.gif"><img width="1" height="1" src="TransparentPixel.gif" border="0"></td>
+<td height="16" width="16" valign="bottom" style="BACKGROUND-IMAGE: url(/Graphics/PodBox//Right.gif);BACKGROUND-REPEAT: repeat-y"><img width="16" height="16" src="BottomRight.gif" border="0"></td>
+</tr>
+</table>
+
+		</div>
+		<div id="divSearch">
+			<div id="listingsFlash" align="center"><!-- needs flash plugin --></div>
+			
+			<SCRIPT type="text/javascript">
+					
+						var foListings = new FlashObject("/Listings/ListingsGridv2/ListingsGridv2.swf", "Listings", "578", "600", "8", "#FFFFFF");	
+					
+										
+					foListings.addParam("scale", "noscale");
+					foListings.addParam("salign", "lt");
+					foListings.addParam("menu", "false");
+					
+					foListings.addVariable("FileName", "HomePage.x");
+					foListings.addVariable("ClientBarProps", "");
+					foListings.addVariable("ListID", "");
+					foListings.addVariable("Host", "www.matsuhotprops.com");
+					foListings.addVariable("MemberVirtualPath", "/xSites/Agents/matsuhotprops/");
+					foListings.addVariable("TemplateStyle", "");
+					foListings.addVariable("TemplateType", "1");
+					foListings.addVariable("ClientID", "");
+					foListings.addVariable("AWSAccountsID", "318598");
+					foListings.addVariable("agent", "False");
+					foListings.addVariable("standAlone", "False");
+										
+					foListings.addVariable("Search", "false");
+					foListings.addVariable("SearchCity", "");
+					foListings.addVariable("SearchState", "");
+					foListings.addVariable("SearchZip", "");
+					foListings.addVariable("SearchBeds", "");
+					foListings.addVariable("SearchMinPrice", "");
+					foListings.addVariable("SearchMaxPrice", "");
+					foListings.addVariable("SearchBaths", "");
+					foListings.addVariable("SearchSqFt", "");
+					foListings.addVariable("SearchMLS", "");
+					foListings.addVariable("SearchLevels", "");
+					foListings.addVariable("SearchGarageSize", "");
+					foListings.addVariable("SearchLotSize", "");
+					foListings.addVariable("SearchSingleFamily", "");
+					foListings.addVariable("SearchMobileHomes", "");
+					foListings.addVariable("SearchRentals", "");
+					foListings.addVariable("SearchCondo", "");
+					foListings.addVariable("SearchLand", "");
+					foListings.addVariable("SearchMultiFamily", "");
+					foListings.addVariable("SearchFarms", "");
+					foListings.addVariable("PassportID", "0");
+					
+					
+						foListings.write("listingsFlash");
+					
+					
+			</SCRIPT>
+		</div>
+	</body>
+</HTML>

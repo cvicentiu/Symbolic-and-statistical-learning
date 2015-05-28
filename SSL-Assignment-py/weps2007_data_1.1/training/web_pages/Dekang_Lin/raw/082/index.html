@@ -1,0 +1,326 @@
+
+        
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta name="keywords" content="maxent,maximum entropy model,maximum entropy">
+        <title>Maximum Entropy Modeling</title>
+        <link href="plain.css" rel="stylesheet" type="text/css" />
+    </head>
+<body bgcolor="white" text="black" link="blue" vlink="#AA00AA">
+    <h1>Maximum Entropy Modeling</h1>
+    <p>This page dedicates to a general-purpose machine learning technique called 
+    <b>Maximum Entropy Modeling</b> (MaxEnt for short). On this page you will find:
+    <ul>
+        <li><a href="maxent.html#intro">Maximum Entropy Modeling tutorials</a></li>
+        <li><a href="maxent.html#soft">Maxent related software</a></li>
+        <li><a href="maxent.html#papers">Annotated papers on Maxent</a></li>
+        <li><a href="maxent.html#resources">Other Maxent resources on the web</a></li>
+    </ul>
+    </p>
+
+    <h2>What is Maximum Entropy Modeling</h2>
+    <p>
+    In his famous 1957 paper, Ed. T. Jaynes wrote:<br>
+        <i>
+    Information theory provides a constructive criterion for setting up probability
+     distributions on the basis of partial knowledge, and leads to a type of
+     statistical inference which is called the maximum entropy estimate.
+     It is least biased estimate possible on the given information; i.e., it is
+     <font color="red">maximally noncommittal with regard to missing
+         information</font>.
+     </i>
+     <br>
+    That is to say, when characterizing some unknown events with a statistical
+     model, we should always choose the one that has Maximum Entropy.
+    </p>
+
+    <p>Maximum Entropy Modeling has been successfully applied to Computer
+    Vision, Spatial Physics, Natural Language Processing and many other
+    fields. This page will focus on applying Maxent to Natural Language
+    Processing (NLP).
+    </p>
+
+    <p>The concept of Maximum Entropy can be traced back along multiple
+    threads to Biblical times. However, not until the late of 21st century
+    has computer become powerful enough to handle complex problems with
+    statistical modeling technique like Maxent.
+    </p>
+
+
+    <p>Maximum Entropy was first introduced to NLP area by <a
+        href="http://citeseer.ist.psu.edu/berger96maximum.html">Berger, et al
+        (1996)</a> and <a href="http://citeseer.ist.psu.edu/57608.html">Della
+        Pietra,  et al. 1997</a>. Since then, Maximum Entropy technique (and
+    the more general framework Random Fields) has enjoyed intensive research
+    in NLP community.  </p>
+
+    <a name="intro">
+    <h2>Tutorials for Maximum Entropy Modeling</h2> </a>
+    <p>
+    Here is an (incomplete) list of tutorials & introduction for
+    Maximum Entropy Modeling.
+    <ul>
+	    <li><a
+            href="http://www-2.cs.cmu.edu/afs/cs/user/aberger/www/html/tutorial/tutorial.html">A
+            Brief Maxent Tutorial</a><br>
+        Good online tutorial by <a href="http://www-2.cs.cmu.edu/afs/cs/user/aberger/www/">Adam
+            Berger</a>
+        </li>
+        <li><a href="http://citeseer.ist.psu.edu/128751.html">A Simple
+            Introduction to Maximum Entropy Models for Natural Language
+            Processing</a><br>
+        This is an introductory paper by <a href="http://www.cis.upenn.edu/~adwait/">Adwait
+            Ratnaparkhi</a>. <a
+            href="ftp://ftp.cis.upenn.edu/pub/ircs/tr/97-08.ps.Z">ftp download</a>
+        </li>
+        <li><a
+            href="http://www.cs.berkeley.edu/~klein/papers/maxent-tutorial-slides.pdf">Maxent Models,  Conditional Estimation,  and
+            Optimization,  without the Magic</a><br>
+        A (not short) tutorial by <a href="http://www.cs.berkeley.edu/~klein/">Dan Klein</a> and <a
+            href="http://nlp.stanford.edu/~manning/">Chris Manning</a>. This
+        is really a good tutorial for Maxent modeling in NLP. However, I think
+        it will be more readable if it was 50% shorter.
+        </li>
+	    <li><a href="http://www.cs.jhu.edu/~hajic/courses/cs465/cs46520/">Introduction to Natural Language Processing: Maximum Entropy</a></li>
+        <!--
+        <li>My Maxent <a href="slide/maxent-slide.pdf">slide</a> presented internally at <a
+            href="http://www.nlplab.cn">NLPLab</a></li>
+        -->
+	    <li><a href="http://cmm.info.nih.gov/maxent/letsgo.html">The Maximum Entropy Method of Data Analysis</a></li>
+    </ul>
+    </p>
+
+<!--Software{{{-->
+    <a name="soft">
+        <h2>Maxent related software</h2> </a>
+    <p>
+    Here is an incomplete list of software found on the net that are related
+    to Maximum Entropy Modeling.
+    <ul>
+        <li><a href="http://maxent.sf.net">maxent.sf.net</a> Great java maxent
+        implementation with GIS training algorithm. Part of <a
+            href="http://opennlp.sf.net">OpenNlp</a> project.</li>
+        <li><a
+            href="http://www-tsujii.is.s.u-tokyo.ac.jp/~yusuke/amis/">Amis</a>
+            -- A maximum entropy estimator for feature forests. A maximum entropy estimator with GIS, IIS and L-BFGS algorithms.</li>
+        <li><a href="http://www2.nict.go.jp/jt/a132/members/mutiyama/software.html#maxent">maxent</a> Another Maximum Entropy Modeling Package with Ruby binding, GIS, Gaussian Prior smoothing and XML
+        data format.
+        </li>
+        <li><a href="http://www.cs.princeton.edu/~ristad/papers/memt.html">Predictive Modeling Toolkit </a></li>
+        <li>Robert Malouf's <a href="http://bulba.sdsu.edu/malouf/software/maxent.tar.gz">Maximum Entropy Parameter Estimation
+            software</a>, now available as <a
+            href="http://tadm.sourceforge.net/">Toolkit for Advanced
+            Discriminative Modeling</a> on sourceforge.net, has GIS, IIS, L-BFGS and Gradient Descent training methods and
+        parallel computation ability through <a href="
+            http://www.mcs.anl.gov/petsc/">PETSc</a>.  You may want to read his
+        <a href="http://citeseer.ist.psu.edu/548661.html">paper</a> first.</li>
+        <li><a href="http://www.isi.edu/~ravichan/YASMET/">YASMET</a> -- Yet Another Simple
+        Maximum Entropy Toolkit with Feature Selection</li>
+        <li><a href="http://www.fjoch.com/YASMET.html">YASMET(2)</a> -- Yet
+        Another Small MaxEnt Toolkit. Believe it or not, this
+        implementation  is written in only 132
+        lines of C++ code and still has feature selection and gaussian
+        smoothing. You need GCC 2.9x to compile the source. <a
+            href="http://www-i6.informatik.rwth-aachen.de/Colleagues/och/software/YASMET.html">link2</a></li>
+        <li><a href="http://www.isi.edu/~hdaume/megam/">MEGA Model
+            Optimization Package</a>. A recently appeared ME implementation
+by <a href="http://www.isi.edu/~hdaume/">Hal Daum&eacute; III</a>. The
+software features CG and LM-BFGS Optimization and is written in <a
+            href="http://caml.inria.fr/">OCaml</a>. Although I no longer use
+        OCaml, I'd say that's a great language, and is worth learning.</li>
+        <li><a
+            href="http://textmodeller.sourceforge.net/">Text Modeller</a>
+        A python implementation of a <b>joint</b> Maximum Entropy model (aka. Whole
+        Sentence Language Model) with sampling based training. Now seems to be
+        part of <a href="http://scipy.org">scipy</a>.
+        </li>
+        <li><a
+            href="http://nlp.stanford.edu/downloads/classifier.shtml">Stanford
+            Classifer</a> is another open source implementation of Maximum Entropy Model
+        in java, suitable for NLP tagging and parsing tasks.
+        </li>
+        <li><a href="http://nltk.sourceforge.net/">NLTK</a> includes a maxent
+        classifier written entirely in Python. IIS and GIS training methods
+        available. Suitable for text categorization and related NLP tasks.
+        </li>
+        <li><a href="http://www.cs.ualberta.ca/~lindek/downloads.htm">Here</a>
+        is another small maxent package in C++ with a BSD-like license,
+        written by <a
+            href="http://www.cs.ualberta.ca/~lindek/index.htm">Dekang Lin</a>.
+        </li>
+        <li><a
+            href="http://www.thecodeproject.com/useritems/sharpentropy.asp">SharpEntropy</a>, 
+        a C# port of the java maxent package (http://maxent.sf.net) mentioned
+        above.
+        </li>
+        <li><a href="http://www.cs.princeton.edu/~schapire/maxent/">Maxent
+            software for species habitat modeling</a> by  Robert E. Schapire
+        et al. Registration needed for downloading.</li>
+        <li>My (Yet another...) <a href="http://homepages.inf.ed.ac.uk/s0450736/maxent_toolkit.html">Maxent
+            implementation in C++ with Python binding, GIS, L-BFGS and Gaussian Prior Smoothing</a>
+        </li>
+    </ul>
+    </p>
+    <!--}}}-->
+    <a name="papers">
+    <h2>Annotated papers on Maximum Entropy Modeling in NLP</h2> </a>
+    Here is a list of recommended papers on Maximum Entropy Modeling with
+    brief annotation.
+    <ul>
+        <li><a href="http://citeseer.ist.psu.edu/berger96maximum.html">A
+            Maximum Entropy Approach to Natural Language Processing</a>
+        (Berger, et al. 1996)<br>
+        <p>A must read paper on applying maxent technique to Natural Language
+        Processing. This paper describes maxent in detail and presents an
+        Increment Feature Selection algorithm for increasingly construct a maxent
+        model as well as several examples in statistical Machine
+        Translation.</p>
+        </li>
+  <li><a href="http://citeseer.ist.psu.edu/57608.html">Inducing Features of Random Fields</a> (Della Pietra, et al. 1997)<br>
+  <p>Another must read paper on maxent. It deals with a more general frame
+  work: <i>Random Fields</i> and proposes an <i>Improved Iterative Scaling</i>
+  algorithm for estimating parameters of Random Fields. This paper gives
+  theoretical background to Random Fields (and hence Maxent model). A greedy
+  <i>Field Induction</i> method was presented to automatically construct a
+  detail random fields from a set of atomic features. An word morphology
+  application for English was developed. <a
+      href="http://citeseer.ist.psu.edu/dellapietra95inducing.html">longer
+      version</a>.<p>
+  </li>
+
+  <li><a href="http://citeseer.ist.psu.edu/rosenfeld94adaptive.html">Adaptive Statistical 
+      Language Modeling: A Maximum Entropy Approach</a> (Rosenfeld, 1994)<br>
+  <p>This paper applies ME technique to statistical language modeling task.
+  More specifically, it builds a conditional Maximum Entropy model that
+  incorporates traditional N-gram, distant N-gram and trigger pair
+  features. Significantly perplexity reduction over baseline trigram model was
+  reported. Later, Rosenfeld and his group proposed a <i>Whole Sentence
+      Exponential Model</i> that overcome the computation bottleneck of
+  conditional ME model. You can find more on my <a href="http://homepages.inf.ed.ac.uk/s0450736/slm.html">SLM
+      page</a>.<p>
+  </li>
+  <li><a href="http://citeseer.ist.psu.edu/ratnaparkhi98maximum.html">Maximum
+      Entropy Models For Natural Language Ambiguity Resolution</a>
+  (Ratnaparkhi, 1998)<br>
+  <p>This dissertation discusses the application of maxent model to
+  various Natural Language Dis-ambiguity tasks in detail. Several problems
+  were attacked within the ME framework: sentence boundary detection, part-of-speech tagging,
+  shallow parsing and text categorization. Comparison with other machine
+  learning technique (Naive Bayes, Transform Based Learning, Decision Tree
+  etc.) was given. Ratnaparkhi also had a short introduction <a
+      href="ftp://ftp.cis.upenn.edu/pub/ircs/tr/97-08.ps.Z">paper</a> on ME.
+  </li>
+        <li><a href="http://citeseer.ist.psu.edu/31826.html">The Improved
+            Iterative Scaling Algorithm: A Gentle Introduction</a><br> <p>This
+        paper describes IIS algorithm in detail. The description is easier to
+        understand than <a href="http://citeseer.ist.psu.edu/57608.html">(Della
+            Pietra, et al.  1997)</a>, which involves more mathematical
+        notations.  </p> </li>
+  <li><a href="http://citeseer.ist.psu.edu/490897.html">Stochastic
+      Attribute-Value Grammars</a> (Abney, 1997)<br>
+  <p>Abney applies Improved Iterative Scaling algorithm to parameters
+  estimation of Attribute-Value grammars, which can not be corrected
+  calculated by ERF method (though it works on PCFG). Random Fields is the
+  model of choice here with a general Metropolis-Hasting Sampling on calculating feature
+  expectation under newly constructed model.
+  </p>
+  </li>
+  <li><a href="http://citeseer.ist.psu.edu/548661.html">A comparison of
+      algorithms for maximum entropy parameter estimation</a> (Malouf,
+  2003)<br>
+  <p>Four iterative parameter estimation algorithms are compared on several
+  NLP tasks. L-BFGS is observed to be the most effective parameter estimation
+  method for Maximum Entropy model, much better than IIS and GIS. <a
+      href="http://citeseer.ist.psu.edu/wallach02efficient.html">(Wallach
+      02)</a> reported similar results on parameter estimation of Conditional
+  Random Fields.  Here is Malouf's <a
+      href="http://bulba.sdsu.edu/malouf/software/maxent.tar.gz">Maximum
+      Entropy Parameter Estimation software</a>.</p>
+  </li>
+  <li><a
+      href="http://cm.bell-labs.com/cm/ms/what/shannonday/shannon1948.pdf">A
+      Mathematical Theory of Communication</a><br>
+  <p><a href="http://www.bell-labs.com/news/2001/february/26/1.html">Claude
+      Elwood Shannon</a>'s influential 1948 paper that laid the foundation
+  of information theory and changed the whole world since then. I see no
+  reason who has read the above papers does not want to read this one.
+  </p>
+  </li>
+  <li><a href="http://bayes.wustl.edu/etj/articles/theory.1.pdf">Information
+      Theory and Statistical Mechanics</a> (Jaynes, E. T.,  1957) <br>
+  Having read all the above papers? Well, it's time to have a look at this 
+  one. Edwin Thompson Jaynes presented some insightful results of maximum entropy principle in
+  this 1957 paper published in <i>Physics Reviews</i>. This is also his first
+  paper in information theory. Interestingly, this influential work was
+  published over the <a
+      href="http://bayes.wustl.edu/etj/report.html">objection</a> of a
+  reviewer.
+  </ul>
+
+  Other recommended papers:
+  <ul>
+        <li><a href="http://citeseer.ist.psu.edu/lafferty01conditional.html">Conditional
+            Random Fields: Probabilistic Models for Segmenting and Labeling
+            Sequence Data </a>
+        </li>
+  <li><a href="http://citeseer.ist.psu.edu/chen99gaussian.html">A Gaussian Prior 
+      for Smoothing Maximum Entropy Models</a> (Chen and Rosenfeld, 1999)
+  </li>
+  <li><a href="http://www.cs.umass.edu/~mccallum/papers/crf-tutorial.pdf">An
+      Introduction to Conditional Random Fields for Relational Learning</a>
+  (Charles Sutton and Andrew McCallum, 2006)
+  </li>
+    </ul>
+
+<a name="resources">
+        <h2>Other MaxEnt related resources on the web</h2></a>
+    <p>
+    <ul>
+<li><a href="http://bayes.wustl.edu/etj/etj.html">Ed. T. Jaynes
+</a><br>
+A collection of web pages devoted to the life of the great mathematician Ed.
+T. Jaynes, the pioneer of Maximum Entropy Modeling. <a
+    href="http://bayes.wustl.edu/etj/phys.photo.html">Here</a> is a photo of
+E.T. Jaynes.
+
+</li>
+<li>There is a <a href="http://en.wikipedia.org/wiki/Principle_of_maximum_entropy">Wiki
+    Entry</a> for Maximum Entropy Principle. Worth looking on.
+<li>Looking for a package for <b>Conditional Random Fields</b>? <br>
+<a href="http://crf.sf.net">Here</a>'s a CRF implementation in java, by
+    <a href="http://www.it.iitb.ac.in/~sunita/">Prof. Sunita Sarawagi</a>. And
+    the <a href="http://mallet.cs.umass.edu/">MALLET</a> toolkit by <a
+        href="http://www.cs.umass.edu/~mccallum">Andrew McCallum</a> also
+    contains a class for training CRF. Also check out <a
+        href="http://chasen.org/~taku/software/CRF++/">CRF++: Yet
+        Another CRF toolkit</a> written by Taku Kudo in C++. <a
+        href="http://www.cs.ubc.ca/~murphyk/">Kevin Murphy</a> has written
+    many <a href="http://www.cs.ubc.ca/~murphyk/Software/index.html">graphical
+        related software in matlab</a>, including a CRF toolbox.
+    </li>
+    </ul>
+    </p>
+
+    <h2></h2>
+    <p>
+    If you find some interesting links that are related to this topic, please
+    feel free to write to
+<A HREF="mailto:&#90;&#104;&#97;&#110;&#103;.&#76;&#101;.&#109;a&#105;&#108;&#64;gmail.&#99;&#111;m">
+&#90;&#104;&#97;&#110;&#103;.&#76;&#101;.&#109;a&#105;&#108;&#64;gmail.&#99;&#111;m</A>.
+    </p>
+        <hr align="center" width="95%">
+            <table class="footnote" align="center" width="95%">
+            <tr>
+                <td>
+                    <i>Last Change :01-Sep-2006.</i>
+                    <i>Please send any question to 
+                        <a
+                            href="http://homepages.inf.ed.ac.uk/s0450736/pmwiki/pmwiki.php/Main/ContactMe">Zhang Le</a></i>
+                </td>
+            </tr>
+        </table>
+                           
+</body>
+</html>

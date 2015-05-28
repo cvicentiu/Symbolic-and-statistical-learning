@@ -1,0 +1,348 @@
+/* based on the example code of
+  http://css.maxdesign.com.au/selectutorial/tutorial_step22.htm
+  With additions to make it look more School style like.
+*/
+
+acronym, ADDRESS, BLOCKQUOTE, BODY, CAPTION, CENTER, DD, DIR, DIV, DL, DT, FORM, H1, H2, H3, H4, H5, H6, MENU, OL, P, TD, TH, UL, B, I, U, S, STRIKE, STRONG, EM, SPAN {
+  font-family: arial, helvetica, sans-serif;
+}
+
+body
+{
+margin: 0;
+padding: 0;
+font-size: 95%;
+font-family: arial, helvetica, sans-serif;
+color: #000000;
+background-color: #ffffff;
+width: 100%;
+}
+
+/* more advanced browsers support this, and specific styles can go in there */
+/* @import url("/styles2.css"); */
+
+/* These default link attributes are from the school recommendation */
+A:link {
+  color: #000099;
+  text-decoration:none;
+}
+
+A:visited {
+  color: #000099;
+  text-decoration:none;
+}
+
+A:hover {
+  color: #990000;
+  text-decoration:none;
+}
+
+A.headertext:link, A.headertext:visited {
+ color:#ffffff;
+ text-decoration:none;
+ font-weight:bold;
+ font-size: small;
+/* font-size:89%;*/
+}
+
+A.headertext:hover, A.headertext:active {
+ color:#ffffff;
+ text-decoration:underline;
+ font-weight:bold;
+ font-size: small;
+/* font-size:89%;*/
+}
+
+.skiplink {display:none}
+
+/* end School defs */
+
+h1 { font-size: 1.2em }
+h2 { font-size: 1.1em }
+h3 { font-size: 1.1em }
+h4, h5, h6 { font-size: 1em }
+
+h1, h2, h3, h4 {
+        text-transform: uppercase;
+}
+
+li.gen_list, li.pub_list {
+        list-style-position: outside;
+        list-style-image: url(/images/tinyI2.gif);
+        font-weight: normal;
+}
+
+
+/* This surround everything between header.inc and footer.inc */
+
+div#container {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+/* Banner styles */
+div#banner
+{
+margin: 0px;
+padding: 0px;
+color: #fff;
+background-color: #fff;
+font-size: small;
+}
+
+div#banner h1
+{
+margin: 0;
+padding: .3em 0 .3em .5em;
+font-size: 2.2em;
+font-weight: normal;
+}
+
+/* end banner styles */
+
+/* Not all pages will have a left nav, those that do need to indent
+   the width of the nav, so that those pages without, "just work" */
+.indentleftnav {
+margin-left: 122px;	
+}
+
+/* similiarly for right nav pages */
+.indentrightnav {
+margin-right: 180px;	
+}
+
+/* left nav styles */
+
+div#leftnav
+{
+float: left;
+width: 122px;
+height: 100%;
+font-size: 85%;
+padding-top: 0em;
+background: #102873;
+color: #fff;
+}
+
+#container div#leftnav
+{
+float: left;
+position: absolute;
+top : 84px;
+left: 0px;
+width: 122px;
+height: 100%;
+font-size: 85%;
+padding-top: 0em;
+background: #102873;
+color: #fff;
+}
+
+div#leftnav p
+{
+  padding: 3px 3px 0px 7px;
+}
+
+div#leftnav ul
+{
+list-style-type: none;
+padding: 0;
+margin: 0;
+margin-bottom: 1em;
+border-bottom: 1px solid #808080;
+}
+
+div#leftnav ul li { margin-top: 0px; }
+
+#leftnav ul li a
+{
+display: block;
+width: 112px;
+/* the padding is ontop of the width and height so this is now 112+3+7 wide */
+padding: 3px 3px 3px 7px;
+text-decoration: none;
+color: #fff;
+background: #102873;
+border-top: 1px solid #808080;
+}
+
+#leftnav ul li a:hover
+{
+color: #fff;
+background-color:#006598;
+}
+
+/* end left nav styles */
+
+/* right nav styles nearly a mirror of left nav*/
+
+div#rightnav
+{
+float: right;
+width: 170px;
+height: 100%;
+font-size: 85%;
+padding-top: 0em;
+background: #006598;
+color: #fff;
+}
+
+#container div#rightnav
+{
+float: right;
+position: absolute;
+top : 84px;
+right: 0px;
+width: 170px;
+height: 100%;
+font-size: 85%;
+padding-top: 0em;
+background: #006598;
+color: #fff;
+}
+
+
+div#rightnav ul
+{
+list-style-type: none;
+padding: 0;
+margin: 0;
+margin-bottom: 1em;
+border-bottom: 1px solid #808080;
+}
+
+div#rightnav ul li { margin-top: 0px; }
+
+#rightnav ul li a
+{
+display: block;
+width: 160px;
+padding: 3px 3px 3px 7px;
+text-decoration: none;
+color: #fff;
+background: #006598;
+border-top: 1px solid #808080;
+}
+
+
+/* Morna added for systems pages */
+
+div#rightnav ul ul {
+display: block;
+list-style-type: none;
+width: 160px;
+padding: 0px 10px 3px 0px;
+margin:0;
+margin-bottom: -0.50em;
+border-bottom: 1px solid #808080;
+}
+div#rightnav ul ul li {margin-top: 0px; }
+
+#rightnav ul ul li a
+{
+display: block;
+width:160px;
+margin-bottom: -0.25em;
+font-size: 80%;
+padding: 3px 0px 8px 14px;
+text-decoration: none;
+color: #fff;
+background: #006598;
+border-top: 1px solid #808080;
+}
+
+/* End of Morna's additions - note ,didn't do an ul ul li a hover.. */
+
+#rightnav ul li a:hover
+{
+color: #fff;
+background-color:#102873;
+}
+
+#rightnav .leftindent { padding: 3px 3px 3px 7px; }
+
+#rightnav .vspace { height: 1em }
+
+#rightnav h1, #rightnav h2, #rightnav h3, #rightnav h4
+{
+margin: 0px;
+padding: 0px;
+font-size: small;
+}
+
+#rightnav h1 span, #rightnav h2 span, #rightnav h3 span, #rightnav h4 span
+{
+margin: 0px;
+padding: 7px;
+font-size: small;
+}
+
+#rightnav h2 a, #rightnav h3 a, #rightnav h4 a
+{
+display: block;
+padding: 7px;
+text-decoration: none;
+color: #fff;
+background: #006598;
+border-top: 1px solid #808080;
+}
+
+#rightnav h2 a:hover, #rightnav h3 a:hover, #rightnav h3 a:hover
+{
+color: #fff;
+background-color:#102873;
+}
+
+#rightnav p
+{
+  margin-left: 7px;
+  margin-right: 3px;
+}
+
+/* end right nav styles */
+
+
+div#more
+{
+float: right;
+width: 260px;
+margin: 0;
+padding: 2em 10px 0 0;
+color: #fff;
+}
+
+div#more h3
+{
+margin-top: 0;
+color: #fff;
+padding: .2em;
+}
+
+div#content
+{
+/* 
+margin-left: 130px;
+margin-right: 200px;
+*/
+}
+
+#cleardiv
+{
+clear: both;
+height: 1em;
+}
+
+div#footer
+{
+clear: both;
+padding: .5em 1em;
+border-top: 1px solid #999;
+text-align: right;
+}
+
+/* Quick fixes following some funnies with the new look going live! */
+
+/* odd centering on DB generated /event pages*/
+div#container div table tr td p { text-align: left }
+div#container div table tr td ul { text-align: left }

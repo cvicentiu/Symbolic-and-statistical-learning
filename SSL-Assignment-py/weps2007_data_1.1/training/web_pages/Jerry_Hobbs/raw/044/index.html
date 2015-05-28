@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+  <head>
+    <title>Jerry Hobbs -- Talk Abstract</title>
+  </head>
+
+
+<base href="">
+<body BGCOLOR="ffffee" text = "000000" > 
+ 
+    <center><h1>Information Extraction from Natural Language Text</h1>
+        
+        <h3>Jerry Hobbs<br>
+	Artificial Intelligence Center<br>
+          SRI International<br>
+	Menlo Park, California</h3>
+      <h3>Abstract</h3>
+    </center>
+
+
+
+Natural language understanding in general is a very hard problem,
+because of the high degree of ambiguity in language and the large
+amount of world knowledge required for understanding it.  However, in
+the last few years significant progress has been in made in one
+application -- information extraction.  The who, what, where, and when
+of specific types of events of interest can be recognized and
+extracted from texts with a moderate degree of accuracy, and entered 
+into a structured database.
+
+<p>
+In this talk I will review this technology, especially with regard to
+SRI's FASTUS system.  It works essentially as a cascaded,
+nondeterministic finite-state automaton.  There are five stages in the
+operation of FASTUS.  In Stage 1, names and other fixed form
+expressions are recognized.  In Stage 2, basic noun groups, verb
+groups, and prepositions and some other particles are recognized.  In
+Stage 3, certain complex noun groups and verb groups are constructed.
+Clause-level patterns for events of interest are identified in Stage 4
+and corresponding ``event structures'' are built.  In Stage 5,
+distinct event structures that describe the same event are identified
+and merged, and these are used in generating database entries.  This
+decomposition of language processing enables the system to do exactly
+the right amount of domain-independent syntax, so that
+domain-dependent semantic and pragmatic processing can be applied to
+the right larger-scale structures.  FASTUS is very efficient and
+effective, and has been used successfully in a number of applications.
+
+<p>
+In addition, I will discuss current and future research directions,
+focusing especially on greater ease of use by naive users, easier
+acquisition of new domains, and extension to other media besides text.
+
+
+    <hr>
+    <address><a href="mailto:eyal@leland.Stanford.EDU">Eyal Amir</a></address>
+<!-- Created: Tue Dec 15 17:09:28 PST 1998 -->
+<!-- hhmts start -->
+Last modified: Tue Dec 15 17:11:36 PST 1998
+<!-- hhmts end -->
+  </body>
+</html>

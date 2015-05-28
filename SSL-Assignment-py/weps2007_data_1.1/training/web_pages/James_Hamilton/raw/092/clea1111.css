@@ -1,0 +1,599 @@
+.mstheme
+{
+	nav-banner-image: url(acdbnr.gif);
+	separator-image: url(acdrule.gif);
+	list-image-1: url(acdbull1.gif);
+	list-image-2: url(acdbull2.gif);
+	list-image-3: url(acdbull3.gif);
+	navbutton-horiz-pushed: url(acdhbs.gif);
+	navbutton-horiz-normal: url(acdhb.gif);
+	navbutton-horiz-hovered: url(acdhbh.gif);
+	navbutton-vert-pushed: url(acdvbs.gif);
+	navbutton-vert-normal: url(acdvb.gif);
+	navbutton-vert-hovered: url(acdvbh.gif);
+	navbutton-home-normal: url(acdhome.gif);
+	navbutton-home-hovered: url(acdhomeh.gif);
+	navbutton-home-pushed: url(acdhome.gif);
+	navbutton-up-normal: url(acdup.gif);
+	navbutton-up-hovered: url(acduph.gif);
+	navbutton-up-pushed: url(acdup.gif);
+	navbutton-prev-normal: url(acdprev.gif);
+	navbutton-prev-hovered: url(acdprevh.gif);
+	navbutton-prev-pushed: url(acdprev.gif);
+	navbutton-next-normal: url(acdnext.gif);
+	navbutton-next-hovered: url(acdnexth.gif);
+	navbutton-next-pushed: url(acdnext.gif);
+}
+.mstheme-bannertxt
+{
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 6;
+	color: rgb(0,51,204);
+}
+.mstheme-horiz-navtxt
+{
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 2;
+	color: rgb(0,0,0);
+}
+.mstheme-vert-navtxt
+{
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 2;
+	color: rgb(0,0,0);
+}
+.mstheme-navtxthome
+{
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 1;
+	color: rgb(0,0,0);
+}
+.mstheme-navtxtup
+{
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 1;
+	color: rgb(0,0,0);
+}
+.mstheme-navtxtprev
+{
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 1;
+	color: rgb(0,0,0);
+}
+.mstheme-navtxtnext
+{
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 1;
+	color: rgb(0,0,0);
+}
+UL
+{
+	list-style-image:url('acdbull1.gif');
+}
+UL UL
+{
+	list-style-image:url('acdbull2.gif');
+}
+UL UL UL
+{
+	list-style-image:url('acdbull3.gif');
+}
+a:link
+{
+	color: rgb(0,51,204);
+}
+a:visited
+{
+	color: rgb(153,51,153);
+}
+a:active
+{
+	color: rgb(255,153,0);
+}
+body
+{
+	color: rgb(0,0,0);
+	background-color: rgb(255,255,204);
+}
+h1
+{
+	color: rgb(0,51,204);
+}
+h2, marquee
+{
+	color: rgb(0,51,204);
+}
+h3
+{
+	color: rgb(0,51,204);
+}
+h4
+{
+	color: rgb(0,51,204);
+}
+h5
+{
+	color: rgb(0,51,204);
+}
+h6
+{
+	color: rgb(0,51,204);
+}
+BUTTON 
+{
+	background-color: rgb(0,51,204);	
+	border-color: rgb(102,153,255);
+	color:white;
+}
+LABEL, .MSTHEME-LABEL
+{
+	color: rgb(0,0,0);
+}
+TEXTAREA
+{
+	border-color: rgb(51,51,204);
+	color:black;
+}
+FIELDSET
+{
+	border-color: rgb(51,51,204);
+	color:black;
+}
+LEGEND
+{
+	color: rgb(0,51,204);
+}
+SELECT
+{
+	border-color: rgb(51,51,204);
+	color:black;
+}
+TABLE
+{
+	table-border-color-light: rgb(102,153,255);
+	table-border-color-dark: rgb(51,51,204);
+	border-color: rgb(51,51,204);
+	color: rgb(0,0,0);
+}
+CAPTION 
+{
+	color: rgb(0,51,204);
+}
+TH
+{
+	color: rgb(0,0,0);
+}
+HR
+{
+	color: rgb(0,51,204);
+}
+TD
+{
+	border-color: rgb(51,51,204);
+}
+.mstheme-bannertxt A:active
+{
+	color: rgb(0,0,0);
+}
+.mstheme-bannertxt A:link
+{
+	color: rgb(0,0,0);
+}
+.mstheme-bannertxt A:visited
+{
+	color: rgb(0,0,0);
+}
+.mstheme-bannertxt-g
+{
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 6;
+	color: rgb(0,0,0);
+	background-image: url('cdbnr.gif');
+}
+.mstheme-bannertxt-g A:active
+{
+	color: rgb(0,0,0);
+}
+.mstheme-bannertxt-g A:link
+{
+	color: rgb(0,0,0);
+}
+.mstheme-bannertxt-g A:visited
+{
+	color: rgb(0,0,0);
+}
+.mstheme-bannertxt-s
+{
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 6;
+	color: rgb(0,0,0);
+
+}
+.mstheme-bannertxt-s A:active
+{
+	color: rgb(0,0,0);
+}
+.mstheme-bannertxt-s A:link
+{
+	color: rgb(0,0,0);
+}
+.mstheme-bannertxt-s A:visited
+{
+	color: rgb(0,0,0);
+}
+.mstheme-horiz-navtxt A:active
+{
+	color: rgb(0,0,0);
+}
+.mstheme-horiz-navtxt A:link
+{
+	color: rgb(0,0,0);
+}
+.mstheme-horiz-navtxt A:visited
+{
+	color: rgb(0,0,0);
+}
+.mstheme-horiz-navtxt-g
+{
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 2;
+	color: rgb(0,0,0);
+	background-image: url('cdhb.gif');
+}
+.mstheme-horiz-navtxt-g A:active
+{
+	color: rgb(0,0,0);
+}
+.mstheme-horiz-navtxt-g A:link
+{
+	color: rgb(0,0,0);
+}
+.mstheme-horiz-navtxt-g A:visited
+{
+	color: rgb(0,0,0);
+}
+.mstheme-horiz-navtxt-gs
+{
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 2;
+	color: rgb(0,0,0);
+	background-image: url('cdshb.gif');
+}
+.mstheme-horiz-navtxt-gs A:active
+{
+	color: rgb(0,0,0);
+}
+.mstheme-horiz-navtxt-gs A:link
+{
+	color: rgb(0,0,0);
+}
+.mstheme-horiz-navtxt-gs A:visited
+{
+	color: rgb(0,0,0);
+}
+.mstheme-navtxthome A:active
+{
+	color: rgb(0,51,204);
+}
+.mstheme-navtxthome A:link
+{
+	color: rgb(0,51,204);
+}
+.mstheme-navtxthome A:visited
+{
+	color: rgb(0,51,204);
+}
+.mstheme-navtxthome-g
+{
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 1;
+	color: rgb(0,51,204);
+	background-image: url('cdhome.gif');
+}
+.mstheme-navtxthome-g A:active
+{
+	color: rgb(0,51,204);
+}
+.mstheme-navtxthome-g A:link
+{
+	color: rgb(0,51,204);
+}
+.mstheme-navtxthome-g A:visited
+{
+	color: rgb(0,51,204);
+}
+.mstheme-navtxtnext A:active
+{
+	color: rgb(0,51,204);
+}
+.mstheme-navtxtnext A:link
+{
+	color: rgb(0,51,204);
+}
+.mstheme-navtxtnext A:visited
+{
+	color: rgb(0,51,204);
+}
+.mstheme-navtxtnext-g
+{
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 1;
+	color: rgb(0,51,204);
+	background-image: url('cdnext.gif');
+}
+.mstheme-navtxtnext-g A:active
+{
+	color: rgb(0,51,204);
+}
+.mstheme-navtxtnext-g A:link
+{
+	color: rgb(0,51,204);
+}
+.mstheme-navtxtnext-g A:visited
+{
+	color: rgb(0,51,204);
+}
+.mstheme-navtxtprev A:active
+{
+	color: rgb(0,51,204);
+}
+.mstheme-navtxtprev A:link
+{
+	color: rgb(0,51,204);
+}
+.mstheme-navtxtprev A:visited
+{
+	color: rgb(0,51,204);
+}
+.mstheme-navtxtprev-g
+{
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 1;
+	color: rgb(0,51,204);
+	background-image: url('cdprev.gif');
+}
+.mstheme-navtxtprev-g A:active
+{
+	color: rgb(0,51,204);
+}
+.mstheme-navtxtprev-g A:link
+{
+	color: rgb(0,51,204);
+}
+.mstheme-navtxtprev-g A:visited
+{
+	color: rgb(0,51,204);
+}
+.mstheme-navtxtup A:active
+{
+	color: rgb(0,51,204);
+}
+.mstheme-navtxtup A:link 
+{
+	color: rgb(0,51,204);
+}
+.mstheme-navtxtup A:visited
+{
+	color: rgb(0,51,204);
+}
+.mstheme-navtxtup-g
+{
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 1;
+	color: rgb(0,51,204);
+	background-image: url('cdup.gif');
+}
+.mstheme-navtxtup-g A:active
+{
+	color: rgb(0,51,204);
+}
+.mstheme-navtxtup-g A:link
+{
+	color: rgb(0,51,204);
+}
+.mstheme-navtxtup-g A:visited
+{
+	color: rgb(0,51,204);
+}
+.mstheme-topbar-font A:active
+{
+	color: rgb(0,0,0);
+}
+.mstheme-topbar-font A:link
+{
+	color: rgb(0,0,0);
+}
+.mstheme-topbar-font A:visited
+{
+	color: rgb(0,0,0);
+}
+.mstheme-topbar-font-g
+{
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 1;
+	color: rgb(0,0,0);
+	background-image: url('cdglb.gif');
+}
+.mstheme-topbar-font-g A:active
+{
+	color: rgb(0,0,0);
+}
+.mstheme-topbar-font-g A:link
+{
+	color: rgb(0,0,0);
+}
+.mstheme-topbar-font-g A:visited
+{
+	color: rgb(0,0,0);
+}
+.mstheme-vert-navtxt A:active
+{
+	color: rgb(0,0,0);
+}
+.mstheme-vert-navtxt A:link
+{
+	color: rgb(0,0,0);
+}
+.mstheme-vert-navtxt A:visited
+{
+	color: rgb(0,0,0);
+}
+.mstheme-vert-navtxt-g
+{
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 2;
+	color: rgb(0,0,0);
+	background-image: url('cdvb.gif');
+}
+.mstheme-vert-navtxt-g A:active
+{
+	color: rgb(0,0,0);
+}
+.mstheme-vert-navtxt-g A:link
+{
+	color: rgb(0,0,0);
+}
+.mstheme-vert-navtxt-g A:visited
+{
+	color: rgb(0,0,0);
+}
+.mstheme-vert-navtxt-gs
+{
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 2;
+	color: rgb(0,0,0);
+	background-image: url('cdsvb.gif');
+}
+.mstheme-vert-navtxt-gs A:active
+{
+	color: rgb(0,0,0);
+}
+.mstheme-vert-navtxt-gs A:link
+{
+	color: rgb(0,0,0);
+}
+.mstheme-vert-navtxt-gs A:visited
+{
+	color: rgb(0,0,0);
+}
+.mstheme
+{
+	navbutton-background-color: rgb(255,255,255);
+	top-bar-button: url(cdglb.gif);
+}
+.mstheme-topbar-font
+{
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 1;
+	color: rgb(0,0,0);
+}
+body
+{
+	font-family: Verdana, Arial, Helvetica;
+	background-image: url('cdbkgnd.jpg');
+}
+h1
+{
+	font-family:  Verdana, Arial, Helvetica;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24pt;
+}
+h2
+{
+	font-family:  Verdana, Arial, Helvetica;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 18pt;
+}
+h3
+{
+	font-family:  Verdana, Arial, Helvetica;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 14pt;
+}
+h4
+{
+	font-family:  Verdana, Arial, Helvetica;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 12pt;
+}
+h5
+{
+	font-family: Verdana, Arial, Helvetica;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 10pt;
+}
+h6
+{
+	font-family: Verdana, Arial, Helvetica;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 8pt;
+}
+BUTTON 
+{
+	border-style: solid;
+	border-width: 1pt;
+	font-size: 8pt;
+	font-family:  Verdana, Arial, Helvetica;
+	font-style: normal; 
+}
+LABEL, .MSTHEME-LABEL
+{
+	font-size: 8pt;
+	font-family:  Verdana, Arial, Helvetica;
+	font-style:normal; 
+}
+TEXTAREA
+{
+	border-style: solid;
+	font-size: 8pt;
+	font-family: Verdana, Arial, Helvetica;
+	font-style: normal 
+}
+FIELDSET
+{
+	border-style: solid;
+	border-width: 1pt;
+	font-size: 8pt;
+	font-family:  Verdana, Arial, Helvetica;
+	font-style: normal; 	
+}
+LEGEND	
+{
+	font-size: 8pt;
+	font-family:  Verdana, Arial, Helvetica;
+	font-style: normal; 
+}
+SELECT
+{
+	border-style: solid;
+	font-size: 8pt;
+	font-family:  Verdana, Arial, Helvetica;
+	font-style: normal 
+}
+TABLE
+{
+	font-family: Verdana, Arial, Helvetica;
+	font-style: normal; 
+}
+CAPTION 
+{
+	font-size: 14pt;
+	font-family:  Verdana, Arial, Helvetica;
+	font-style: normal; 
+}
+TH
+{
+	font-family: Verdana, Arial, Helvetica;
+	font-style: normal; 
+}
+MARQUEE
+{
+	font-size: 14pt;
+	font-family: Verdana, Arial, Helvetica;
+}

@@ -1,0 +1,810 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> <!-- Content Copyright American Academy of Ophthalmology -->
+<!-- Page generated 2005-02-18 10:45:19 by CommonSpot Version 4.0 SP2 (2004-08-02 17:00:00) -->
+<!-- JavaScript & DHTML Code Copyright 1998-2004 PaperThin, Inc.  All rights reserved --> <head> <title>Info Tech Jul/Aug 2002</title> <meta name="Description" id="Description" content="Info Tech Jul/Aug 2002" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="Keywords" id="Keywords" content="" />
+<meta name="Generator" id="Generator" content="CommonSpot Content Server Version 4.0 SP2" />
+<style type="text/css">
+	.mw { color:#000000;font-family:Verdana,Arial,Helvetica;font-weight:bold;font-size:xx-small;text-decoration:none; }
+	a.mw:link	{color:#000000;font-family:Verdana,Arial,Helvetica;font-weight:bold;font-size:xx-small;text-decoration:none;}
+	a.mw:visited	{color:#000000;font-family:Verdana,Arial,Helvetica;font-weight:bold;font-size:xx-small;text-decoration:none;}
+	a.mw:hover	{color:#0000FF;font-family:Verdana,Arial,Helvetica;font-weight:bold;font-size:xx-small;text-decoration:none;}
+</style> <script type="text/javascript" language="JavaScript">
+	var gMenuControlID=0;
+	var menus_included = 0;
+	var jsPageAuthorMode = 0;
+	var jsSessionPreviewON = 1;
+	var jsDlgLoader = 'loader.htm';
+	var jsSiteID = 1;
+	var jsSubSiteID = 134;
+	var kurrentPageID = 10611;
+</script><script  src="nw-lame.js" type="text/javascript" language="JavaScript"></script> 
+<SCRIPT Language="JavaScript">
+// Copyright 1999, 2000 by Ray Stott - ver 2.0
+// OK to use on noncommercial sites as long as copyright is included
+// Commercial Sites, please see http://www.crays.com/jsc/jsCom.htm 
+// Script is available at http://www.crays.com/jsc          
+var popWin = null    // use this when referring to pop-up window
+var winCount = 0
+var winName = "popWin"
+function openPopWin(winURL,winWidth,winHeight,winFeatures,winLeft,winTop){
+  var d_winLeft = 20  // default, pixels from screen left to window left
+  var d_winTop = 20   // default, pixels from screen top to window top
+  winName = "popWin" + winCount++ //unique name for each pop-up window
+  closePopWin()           // close any previously opened pop-up window
+  if (openPopWin.arguments.length >= 4)  // any additional features? 
+    winFeatures = "," + winFeatures
+  else 
+    winFeatures = "" 
+  if (openPopWin.arguments.length == 6)  // location specified
+    winFeatures += getLocation(winWidth,winHeight,winLeft,winTop)
+  else
+    winFeatures += getLocation(winWidth,winHeight,d_winLeft,d_winTop)
+  popWin = window.open(winURL,winName, "width=" + winWidth 
+           + ",height=" + winHeight + winFeatures)
+  }
+function closePopWin(){    // close pop-up window if it is open 
+  if (navigator.appName != "Microsoft Internet Explorer" 
+      || parseInt(navigator.appVersion) >=4) //do not close if early IE
+    if(popWin != null) if(!popWin.closed) popWin.close() 
+  }
+function getLocation(winWidth,winHeight,winLeft,winTop){
+  return ""
+  }
+</SCRIPT>
+<SCRIPT Language="JavaScript1.2">  // for Netscape 4+ and IE 4+
+function getLocation(winWidth,winHeight,winLeft,winTop){
+  var winLocation = ""
+  if (winLeft < 0)
+    winLeft = screen.width - winWidth + winLeft
+  if (winTop < 0)
+    winTop = screen.height - winHeight + winTop
+  if (winTop == "cen")
+    winTop = (screen.height - winHeight)/2 - 20
+  if (winLeft == "cen")
+    winLeft = (screen.width - winWidth)/2
+  if (winLeft>0 & winTop>0)
+    winLocation =  ",screenX=" + winLeft + ",left=" + winLeft	
+                + ",screenY=" + winTop + ",top=" + winTop
+  else
+    winLocation = ""
+  return winLocation
+}
+//-->
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</SCRIPT>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="commonspot.css" type="text/css" /> </head><body lang="en" bgColor="#FFFFFF" style="margin-top:0;margin-bottom:0;margin-left:0;margin-right:0;"><script type="text/javascript" language="JavaScript">
+document.CS_StaticURL = "http://testaao.sf.aao.org/";
+document.CS_DynamicURL = "http://testaao.sf.aao.org/";
+</script><a name="__topdoc__"></a><script type="text/javascript" language="JavaScript">
+		// always-include-ie.js  Copyright 1998-2004 PaperThin, Inc. All rights reserved.
+bName = navigator.appName;
+bVer = parseInt(navigator.appVersion);
+var bCanRollover=0
+if (bName == "Netscape")
+{
+	if(bVer >= 3)
+		bCanRollover=1;
+}
+else if (bName == "Microsoft Internet Explorer")
+{
+	if(bVer >= 4)
+		bCanRollover=1;
+}
+function ImageSet(imgID,newTarget)
+{
+	if (bCanRollover)
+		document[imgID].src=newTarget;
+}
+function clearStatus()
+{
+	window.status = "";
+}
+function setStatbar(statbar)
+{
+	var strStatbar=unescape(statbar);
+	window.status=strStatbar;
+}
+function onLoadComplete()
+{
+	if( menus_included == 1 )
+		document.onmouseover = document_mouseover;	// defined in menu_ie.js
+}
+function HandleLink(parentID,link,displaylink) 
+{
+	// links are in one of the following formats:
+	// 		cpe_60_0,CP___PAGEID=100
+	// 		CPNEWWIN:WindowName^params@CP___
+	// 			CPNEWWIN:child^top=110:left=130:ww=140:hh=150:tb=1:loc=1:dir=0:stat=1:mb=1:sb=1:rs=1@CP___PAGEID=3811,Adv-Search-2.cfm,1
+	// displaylink is the server relative URL or fully qualified URL
+	if( jsPageAuthorMode == 0 )
+	{
+		windowname = "";
+		windowparams = "";
+		// "CPNEWWIN:" & NewWindowName & "^" & params & "@" & linkStruct.LinkURL; 
+		pos = link.indexOf("CPNEWWIN:");
+		if (pos != -1)
+		{
+			pos1 = link.indexOf ("^");
+			windowname = link.substring (pos+9, pos1);
+			pos2 = link.indexOf ("@");
+			windowparams = link.substring (pos1 + 1, pos2);
+			link = link.substring (pos2 + 1, link.length);
+		}
+		
+		if( displaylink && displaylink != "" )
+		{		
+			if (windowname == "")
+				window.location = displaylink;
+			else
+			{
+				windowparams = FormatWindowParams(windowparams);
+				window.open (displaylink, windowname, windowparams);
+			}
+		}
+		else
+		{
+			targetLink = link;
+			if (link.indexOf ("CP___") != -1)
+			{
+				httpPos = -1;
+				commaPos = link.indexOf(",");
+				if (commaPos != -1)
+				{
+					targetUrl = link.substr(commaPos + 1);
+					if (targetUrl.indexOf("://") != -1 || targetUrl.indexOf("/") == 0)
+					{
+							httpPos = commaPos + 1;
+					}		
+				}
+		
+				if (httpPos != -1)
+					targetLink = link.substr(httpPos);
+				else
+					targetLink = jsDlgLoader + "?url=/commonspot/utilities/handle-link.cfm&thelink=" + link;
+				
+				if (windowname == "")
+					window.location = targetLink;
+				else
+				{
+					windowparams = FormatWindowParams(windowparams);
+					window.open (targetLink, windowname, windowparams);
+				}
+			}
+			else
+			{
+				if (windowname == "")
+					window.location = link;
+				else
+				{
+					windowparams = FormatWindowParams(windowparams);
+					window.open (link, windowname, windowparams);
+				}
+			}
+		}
+	}
+	else if( jsSessionPreviewON == 1 )
+	{
+		previewLink(link);
+	}
+	else
+	{
+		if( document.all[parentID] )
+			document.all[parentID].click();
+	}
+}
+function doWindowOpen(href,name,params)
+{
+	window.open (href, name, params);
+}
+// 	CPNEWWIN:child^top=110:left=130:ww=140:hh=150:tb=1:loc=1:dir=0:stat=1:mb=1:sb=1:rs=1@CP___PAGEID=3811,Adv-Search-2.cfm,1
+function FormatWindowParams(windowparams)
+{
+	if( windowparams.indexOf(":loc=") != -1 || windowparams.indexOf(":ww=") != -1 || windowparams.indexOf(":hh=") != -1 || 
+	    windowparams.indexOf(":left=") != -1 || windowparams.indexOf(":top=") != -1 )
+	{
+		windowparams = substringReplace(windowparams,':left=',',left=');
+		windowparams = substringReplace(windowparams,'left=','left=');
+		windowparams = substringReplace(windowparams,':ww=',',width=');
+		windowparams = substringReplace(windowparams,'ww=','width=');		
+		windowparams = substringReplace(windowparams,':hh=',',height=');
+		windowparams = substringReplace(windowparams,'hh=','height=');
+		windowparams = substringReplace(windowparams,':loc=',',location=');
+		windowparams = substringReplace(windowparams,'loc=','location=');
+		windowparams = substringReplace(windowparams,':dir=',',directories=');
+		windowparams = substringReplace(windowparams,'dir=','directories=');
+		windowparams = substringReplace(windowparams,':tb=',',toolbar=');
+		windowparams = substringReplace(windowparams,'tb=','toolbar=');
+		windowparams = substringReplace(windowparams,':stat=',',status=');
+		windowparams = substringReplace(windowparams,':mb=',',menubar=');
+		windowparams = substringReplace(windowparams,':sb=',',scrollbars=');
+		windowparams = substringReplace(windowparams,':rs=',',resizable=');
+	}
+	return windowparams;
+}
+function substringReplace(source,pattern,replacement)
+{
+	var pos = 0;
+	var target="";
+	while ((pos = source.indexOf(pattern)) != (-1))
+	{
+		target = target + source.substring(0,pos) + replacement;
+		source = source.substring(pos+pattern.length);
+		pos = source.indexOf(pattern);
+	}
+	return (target + source);
+}
+// handle scheduled element links
+function show_sched_element(eid)
+{
+	evalCol = String(self.element_collection);
+	dispFlag = false;
+	ua = navigator.userAgent.toLowerCase();
+	if (bName == "Netscape" || ua.indexOf('aol') >= 0)
+	{
+		// cloned from always-include-ns.js
+		str = self.location.search;
+		
+		arrCtrls = new Array;
+		for (i=0;i < self.element_collection.length;i++){
+			sitem = self.element_collection[i];
+			if (sitem.id == eid)
+				arrCtrls[arrCtrls.length] = sitem.ctrl + "-" + eid;
+		}
+		dispFlag = arrCtrls.length != 0;
+		// Look for the existing forceElement array		
+		if (str != ""){
+			qArray = str.split("&");
+			forceElement = new Array();
+			forceElementIndex = -1;
+			for(i=0; i < qArray.length; i++)
+			{
+				el = qArray[i];
+				qel = el.split('=');
+				if  (qel.length == 1)
+					qel[1] = '';
+				if  (qel[0] == 'forceElement' || qel[0] == '?forceElement'){
+					forceElement = qel[1].split(",");					
+					forceElementIndex = i;
+					break;
+				}
+			}	
+			
+			if (0 == forceElement.length)
+				newLocation = str + "&forceElement=" + arrCtrls.join(",");
+			else{	// There is a forceElement
+				arrCtrlsCnt = arrCtrls.length;
+				for (i=0;i < forceElement.length;i++){				// Loop over the existing elements
+					iel = forceElement[i].split("-");
+					for (j=0;j < arrCtrlsCnt;j++){
+						jel = arrCtrls[j].split("-");
+						if (jel[0] == iel[0])									// Is it the same control
+							break;
+					}
+					if (j == arrCtrls.length)								// We reached the end  and did not find the control
+						arrCtrls[arrCtrls.length] = forceElement[i];
+				}
+				qel = qArray[forceElementIndex].split("=");
+				qArray[forceElementIndex] = qel[0] + "=" + arrCtrls.join(",");
+				newLocation = qArray.join("&");
+			}
+		}
+		else
+			newLocation = "?forceElement=" + arrCtrls.join(",");
+			
+		self.location.search = newLocation;
+		if  (!dispFlag)
+			alert("You do not have access to the requested element.");
+	
+	}
+	else
+	{
+		if ( evalCol != 'undefined' )
+		{		
+			for(i=0;i<self.element_collection.length;i++)
+			{
+				sitem = self.element_collection[i];
+				sp = 'sched_elements_' + sitem.ctrl + '_' + sitem.id;
+				obj = document.all.item(sp);
+				if ( sitem.id == eid && obj != null)
+				{
+					dispFlag = true;
+					if ( obj.length >= 0 )
+					{
+						for(z=0;z<obj.length;z++)
+						{
+							obj(z).style.display = 'block';
+						}
+					}
+					else 
+						document.all(sp).style.display = 'block';
+					
+					for (j=0;j < self.element_collection.length;j++){
+						if (sitem.ctrl == self.element_collection[j].ctrl && i != j){
+							sp = 'sched_elements_' + self.element_collection[j].ctrl + '_' + self.element_collection[j].id;
+							obj = document.all.item(sp);
+							if ( obj != null )
+							{
+								if ( obj.length >= 0 )
+								{	
+									for(z=0;z<obj.length;z++)
+									{
+										obj(z).style.display = 'none';
+									}
+								}
+								else
+									document.all(sp).style.display = 'none';
+							}
+						}
+					}
+				}
+			}
+		}
+		if ( !dispFlag )
+			alert("You do not have access to the requested element.")
+	}
+}
+		</script>
+	<script type="text/javascript" language="JavaScript">
+	function glblLinkHandler(lobj, attr, val)
+	{
+	
+		return;
+	
+	}
+	function onLoadFinished()
+	{
+		onLoadComplete();
+	
+	}
+	var js_gvPageID = 10611;
+	function gotoDiffLang(url)
+	{
+		window.location = url + '&amp;pageid=10611';
+	}
+	</script><!-- showPageModeUI not set --><script type="text/javascript" language="JavaScript">
+bName = navigator.appName;
+bVer = parseInt(navigator.appVersion);
+
+var bCanRollover=0
+if (bName == "Netscape")
+{
+	if(bVer >= 3)
+		bCanRollover=1;
+}
+else if (bName == "Microsoft Internet Explorer")
+{
+	if(bVer >= 4)
+		bCanRollover=1;
+}
+
+function ImageSet(imgID,newTarget)
+{
+	if (bCanRollover)
+		document[imgID].src=newTarget;
+}
+</script><!-- -->
+	
+	<table cellspacing="0" cellpadding="0" border="0" width="100%">
+	
+	
+	<tr>
+	    <td valign="top"><div class="CS_Element_Layout"><table id="idLayout467" cellpadding="0" cellspacing="0" border="0" width="100%" summary=""><tr><td id="idCell467x1x1" align="left" valign="top"><div class="CS_Element_CustomCF">
+<div id="CS_CCF_10611_5723">
+
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="146">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+          <td>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="330"><img src="header.gif" width="330" height="134" usemap="#Map2" border="0"></td>
+                <td width="71%">&nbsp;</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+            <td bgcolor="#333399"> 
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="600"><img src="eyenetnav.gif" width="600" height="17" usemap="#Map" border="0" href="index.html"></td>
+
+                <td><img src="blank.gif">
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<map name="Map2">
+  <area shape="rect" coords="13,2,326,117" href="http://www.eyenetmagazine.org">
+</map>
+<map name="Map"> 
+  <area shape="rect" coords="23,1,70,16" href="http://www.aao.org/news/eyenet/search.htm">
+  <area shape="rect" coords="93,1,148,16" href="http://www.aao.org/news/eyenet/archive.htm">
+  <area shape="rect" coords="168,1,239,16" href="http://www.aao.org/news/eyenet/subscribe.htm">
+  <area shape="rect" coords="259,1,320,16" href="http://www.aao.org/news/eyenet/ad.htm">
+  <area shape="rect" coords="340,1,402,16" href="http://www.aao.org/news/eyenet/aboutus.htm">
+  <area shape="rect" coords="422,1,480,16" href="index.html">
+</map> 
+
+  
+</div><!-- --></div></td></tr>
+	</table>	</div></td>
+	</tr>
+	
+	
+	<tr><td>
+		
+		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+		<tr>	
+			<td valign="top" align="left"><div class="CS_Element_Layout"><table id="idLayout470" cellpadding="0" cellspacing="0" border="0" width="100%" summary=""><tr><td id="idCell470x1x1" align="left" valign="top"><div class="CS_Element_CustomCF">
+<div id="CS_CCF_10611_6747">
+  <table width="250" border="0" cellspacing="0" cellpadding="0">
+    <tr> 
+      <td> 
+        <table width="250" border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+            <td width="10" background="nav_bg.jpg">&nbsp;</td>
+            <td width="225"  height="25" background="nav_bg.jpg"> 
+              <div align="center"><a href="http://www.aao.org/news/eyenet/index_jul.htm"><span style="font-weight:bold;font-family:Verdana, Arial, Helvetica, sans-serif; text-decoration:none;font-size:
+small;color:black">July 2002</span></a></div>
+            </td>
+            <td width="15">&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr> 
+      <td> 
+        <table width="250" border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+            <td width="10" bgcolor="#333399">&nbsp;</td>
+            <td width="225"  height="25" bgcolor="#333399"> 
+              <div align="center"><span style="font-weight:bold;font-family:Verdana, Arial, Helvetica, sans-serif; text-decoration:none;font-size:
+small;color:white">Features</span></div>
+            </td>
+            <td width="15">&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr> 
+      <td> 
+        <table width="250" border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+            <td width="10" background="nav_bg.jpg">&nbsp;</td>
+            <td width="225"  height="25" background="nav_bg.jpg"><a href="http://www.aao.org/news/eyenet/feature1/feature1_july.htm"><span style="font-weight:bold;font-family:Verdana, Arial, Helvetica, sans-serif; text-decoration:none;font-size:x-small;color:black">Wavefront 
+              Surges Ahead</span></a><br>
+            </td>
+            <td width="15">&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr> 
+      <td> 
+        <table width="250" border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+            <td width="10" bgcolor="#333399">&nbsp;</td>
+            <td width="225"  height="25" bgcolor="#333399"> 
+              <div align="center"><span style="font-weight:bold;font-family:Verdana, Arial, Helvetica, sans-serif; text-decoration:none;font-size:
+small;color:white">Ophthalmic Pearls</span></div>
+            </td>
+            <td width="15">&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr> 
+      <td> 
+        <table width="250" border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+            <td width="10" background="nav_bg.jpg">&nbsp;</td>
+            <td width="225"  height="25" background="nav_bg.jpg">
+              <p><a href="http://www.aao.org/news/eyenet/pearls/pearls_jul.htm"><span style="font-weight:bold;font-family:Verdana, Arial, Helvetica, sans-serif; text-decoration:none;font-size:x-small;color:black">Retina: 
+                Tips on Using Focal Laser</span></a></p>
+              </td>
+            <td width="15">&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr> 
+      <td> 
+        <table width="250" border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+            <td width="10" bgcolor="#333399">&nbsp;</td>
+            <td width="225"  height="25" bgcolor="#333399"> 
+              <div align="center"><span style="font-weight:bold;font-family:Verdana, Arial, Helvetica, sans-serif; text-decoration:none;font-size:
+small;color:white">Clinical Update</span></div>
+            </td>
+            <td width="15">&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr> 
+      <td> 
+        <table width="250" border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+            <td width="10" background="nav_bg.jpg">&nbsp;</td>
+            <td width="225"  height="25" background="nav_bg.jpg"><a href="http://www.aao.org/news/eyenet/cataract/cataract_jul.htm"><span style="font-weight:bold;font-family:Verdana, Arial, Helvetica, sans-serif; text-decoration:none;font-size:x-small;color:black">Cataract</span></a></td>
+            <td width="15">&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr> 
+      <td> 
+        <table width="250" border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+            <td width="10" background="nav_bg.jpg">&nbsp;</td>
+            <td width="225"  height="25" background="nav_bg.jpg"><a href="http://www.aao.org/news/eyenet/glaucoma/glaucoma_jul.htm"><span style="font-weight:bold;font-family:Verdana, Arial, Helvetica, sans-serif; text-decoration:none;font-size:x-small;color:black">Glaucoma</span></a></td>
+            <td width="15">&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr> 
+      <td> 
+        <table width="250" border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+            <td width="10" background="nav_bg.jpg">&nbsp;</td>
+            <td width="225"  height="25" background="nav_bg.jpg"><a href="http://www.aao.org/news/eyenet/pediatrics/pediatrics_jul.htm"><span style="font-weight:bold;font-family:Verdana, Arial, Helvetica, sans-serif; text-decoration:none;font-size:x-small;color:black">Pediatrics</span></a></td>
+            <td width="15">&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr> 
+      <td> 
+        <table width="250" border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+            <td width="10" bgcolor="#333399">&nbsp;</td>
+            <td width="225"  height="25" bgcolor="#333399"> 
+              <div align="center"><span style="font-weight:bold;font-family:Verdana, Arial, Helvetica, sans-serif; text-decoration:none;font-size:
+small;color:white">Other Departments</span></div>
+            </td>
+            <td width="15">&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr> 
+      <td> 
+        <table width="250" border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+            <td width="10" background="nav_bg.jpg">&nbsp;</td>
+            <td width="225"  height="25" background="nav_bg.jpg"><a href="http://www.aao.org/news/eyenet/news/news_jul.htm"><span style="font-weight:bold;font-family:Verdana, Arial, Helvetica, sans-serif; text-decoration:none;font-size:x-small;color:black">News 
+              in Review</span></a></td>
+            <td width="15">&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr> 
+      <td> 
+        <table width="250" border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+            <td width="10" background="nav_bg.jpg">&nbsp;</td>
+            <td width="225"  height="25" background="nav_bg.jpg"><a href="http://www.aao.org/news/eyenet/am_rounds/am-rounds_jul.htm"><span style="font-weight:bold;font-family:Verdana, Arial, Helvetica, sans-serif; text-decoration:none;font-size:x-small;color:black">Morning 
+              Rounds</span></a></td>
+            <td width="15">&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr> 
+      <td> 
+        <table width="250" border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+            <td width="10" background="nav_bg.jpg">&nbsp;</td>
+            <td width="225"  height="25" background="nav_bg.jpg"><a href="http://www.aao.org/news/eyenet/journal/journal_jul.htm"><span style="font-weight:bold;font-family:Verdana, Arial, Helvetica, sans-serif; text-decoration:none;font-size:x-small;color:black">Journal 
+              Highlights</span></a></td>
+            <td width="15">&nbsp;</td>
+          </tr>
+          <tr> 
+            <td width="10" background="nav_bg.jpg">&nbsp;</td>
+            <td width="225"  height="25" background="nav_bg.jpg"><a href="http://www.aao.org/news/eyenet/opinion/opinion_jul.htm"><span style="font-weight:bold;font-family:Verdana, Arial, Helvetica, sans-serif; text-decoration:none;font-size:x-small;color:black">Opinion</span></a></td>
+            <td width="15">&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr> 
+      <td> 
+        <table width="250" border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+            <td width="10" background="nav_bg.jpg">&nbsp;</td>
+            <td width="225"  height="25" background="nav_bg.jpg"><a href="http://www.aao.org/news/eyenet/letters/letters_jul.htm"><span style="font-weight:bold;font-family:Verdana, Arial, Helvetica, sans-serif; text-decoration:none;font-size:x-small;color:black">Letters 
+              to the Editor</span></a></td>
+            <td width="15">&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr> 
+      <td> 
+        <table width="250" border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+            <td width="10" background="nav_bg.jpg">&nbsp;</td>
+            <td width="225"  height="25" background="nav_bg.jpg"><a href="http://www.aao.org/news/eyenet/coder/coder_jul.htm"><span style="font-weight:bold;font-family:Verdana, Arial, Helvetica, sans-serif; text-decoration:none;font-size:x-small;color:black">Savvy 
+              Coder</span></a></td>
+            <td width="15">&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr> 
+      <td> 
+        <table width="250" border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+            <td width="10" background="nav_bg.jpg">&nbsp;</td>
+            <td width="225"  height="25" background="nav_bg.jpg"><a href="info_tech_jul.htm"><span style="font-weight:bold;font-family:Verdana, Arial, Helvetica, sans-serif; text-decoration:none;font-size:x-small;color:black">Info 
+              Tech</span></a></td>
+            <td width="15">&nbsp;</td>
+          </tr>
+          <tr> 
+            <td width="10" background="nav_bg.jpg">&nbsp;</td>
+            <td width="225"  height="25" background="nav_bg.jpg"><a href="http://www.aao.org/news/eyenet/notebook/academy_jul.htm"><span style="font-weight:bold;font-family:Verdana, Arial, Helvetica, sans-serif; text-decoration:none;font-size:x-small;color:black">Academy 
+              Notebook</span></a></td>
+            <td width="15">&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr> 
+      <td> 
+        <table width="250" border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+            <td width="10" background="nav_bg.jpg">&nbsp;</td>
+            <td width="225"  height="25" background="nav_bg.jpg"><a href="http://www.aao.org/news/eyenet/product_service/pands_jul.htm"><span style="font-weight:bold;font-family:Verdana, Arial, Helvetica, sans-serif; text-decoration:none;font-size:x-small;color:black">Products 
+              &amp; Services</span></a></td>
+            <td width="15">&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr> 
+      <td> 
+        <table width="250" border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+            <td width="10" background="nav_bg.jpg">&nbsp;</td>
+            <td width="225"  height="25" background="nav_bg.jpg"><a href="http://www.aao.org/news/eyenet/blink/blink_july.htm"><span style="font-weight:bold;font-family:Verdana, Arial, Helvetica, sans-serif; text-decoration:none;font-size:x-small;color:black">Blink</span></a></td>
+            <td width="15">&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr> 
+      <td> 
+        <table width="250" border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+            <td width="10" background="nav_bg.jpg">&nbsp;</td>
+            <td width="225"  height="25" background="nav_bg.jpg">&nbsp;</td>
+            <td width="15">&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr> 
+      <td> 
+        <table width="250" border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+            <td width="10" background="nav_bg.jpg">&nbsp;</td>
+            <td width="225"  height="25" background="nav_bg.jpg">&nbsp;</td>
+            <td width="15">&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr> 
+      <td> 
+        <table width="250" border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+            <td width="10" background="nav_bg.jpg">&nbsp;</td>
+            <td width="225"  height="25" background="nav_bg.jpg">&nbsp;</td>
+            <td width="15">&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div><!-- --></div></td></tr>
+	</table>	</div></td>
+			
+		
+		
+			<td valign="top" align="left"><div class="CS_Element_Layout"><table id="idLayout468" cellpadding="0" cellspacing="0" border="0" width="100%" summary=""><tr><td id="idCell468x1x1" align="left" valign="top"><div class="CS_Element_Textblock"><div style="font-family:Verdana,Arial;font-size:x-small;color:#000000;text-align:left;"><P class=Headline style="MARGIN: 0in 0in 12pt"><FONT color=#990000><SPAN style="COLOR: #3366ff"><A href="http://www.aao.org/aao/news/eyenet" CPLINKURL="/aao/news/eyenet"><FONT color=#990000><FONT size=+0><FONT size=1><U><SPAN style="COLOR: #3366ff"><FONT size=2>EyeNet Magazine</FONT></SPAN></U> </FONT></FONT></FONT></A></SPAN><FONT color=#000000>&gt;&gt; Info Tech</FONT></FONT></P>
+<P class=Headline style="MARGIN: 0in 0in 12pt"><STRONG><FONT color=#3366ff>Info Tech</FONT></STRONG><FONT color=#990000 size=5>&nbsp;</FONT></P>
+<P class=Headline style="MARGIN: 0in 0in 12pt"><FONT color=#990000 size=5><STRONG>Give PowerPoint Pizzazz: Tips From Academy Meeting Experts</STRONG></FONT></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt"><FONT face=Verdana,Arial>&nbsp;<?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" /><o:p></o:p></FONT></P>
+<P class=Byline style="MARGIN: 0in 0in 0pt 0.5in"><STRONG><FONT face=Verdana,Arial>By Linda Roach, Contributing Writer</FONT></STRONG></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt"><FONT face=Verdana,Arial>&nbsp;<o:p></o:p></FONT></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt"><FONT face=Verdana,Arial>A basic slide show created with Microsoft PowerPoint may have felt like &#8220;enough&#8221; for your last Academy presentation. But if you&#8217;re no longer satisfied with plain vanilla PowerPoint, it&#8217;s time to move on to some of the more advanced features that this presentation software allows.<BR><BR>Physicians frequently take awhile to reach this level, said computer software trainer Jude Brown-Bellamy, a senior IT trainer for Digital Acumen, the computer and audiovisual consulting firm the Academy uses at its meetings.<BR><BR>&#8220;I&#8217;ve heard physicians say, &#8216;I&#8217;m not going to put all that stuff in there. That&#8217;s more for marketing,&#8217; &#8221; Ms. Brown-Bellamy said. &#8220;They worry that some people might think a fancy PowerPoint presentation is a little over the top, or like they&#8217;re trying to sell something.&#8221; But incorporating OR video clips into your PowerPoint slides, as Academy presenters are starting to do, can be enormously helpful when you&#8217;re explaining a surgical technique.<BR><BR>Ms. Brown-Bellamy, David A. Durfee, MD, and Gerald E. Meltzer, MD, are among the PowerPoint experts who will be teaching about the application at the Academy&#8217;s 2002 Joint Meeting in Orlando (see &#8220;PowerPoint at the Joint Meeting,&#8221; next page). There&#8217;s an added urgency to the training because this is the last year that presenters will be able to use the traditional slide carousel. Only computer-based slide shows can be used at the 2003 Annual Meeting.<BR><BR>Here are some of the tips these experts have on making the best use of the animation, transitions, standing elements and video.<BR></FONT><FONT face=Verdana,Arial>&nbsp;<o:p></o:p></FONT></P>
+<P class=Subhead style="MARGIN: 0in 0in 0pt"><STRONG><FONT face=Verdana,Arial color=#3366ff>How to Use Animation</FONT></STRONG></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt"><FONT face=Verdana,Arial>The term animation refers to the text effects in which, for instance, lines of text appear on the slide one at a time, or are highlighted sequentially as the speaker addresses them.<BR><BR>Once a slide is animated in this way, a click of the mouse will trigger the animation of the next line or section of text. Or animations can be set to appear every few seconds, thus keeping the speaker moving at the appropriate pace. (Set this up by clicking on Slide Show, then Rehearse Timings.)<BR>&nbsp;<BR><STRONG>Work initially in Normal View or Outline View</STRONG> to write the meat of your presentation, Dr. Durfee said. &#8220;You need to concentrate on the text first, and dress it up later,&#8221; he said.<BR>&nbsp;<BR><STRONG>When it&#8217;s time to select an animation effect,</STRONG> go to the View menu at the top and select Slide Sorter View, or click on the Slide Sorter icon in the toolbar at the lower left. This gives you a view of thumbnails of all your slides, so you can highlight the ones you want to animate. <BR><BR>Once they&#8217;re highlighted, left-click on the Slide Show menu or the Slide Show icon in the Animation Effects toolbar. Using the menu or the toolbar, you can select from several standard effects. A left-click on the effect&#8217;s icon will preview the effect.<BR><BR>To highlight lines of text individually on the slide, or to add sounds as each line appears, choose Custom Animation from the Slide Show menu or the Animation Toolbar. The resulting dialog box allows you to preview different effects.<BR><BR><STRONG>Use animation judiciously,</STRONG> advises Dr. Meltzer. &#8220;PowerPoint is so versatile that you can do a lot of things that will mess up your presentation by getting too fancy,&#8221; he said. &#8220;Your viewers can get distracted from the theme of the talk and seduced by all the things going on in the slides.&#8221;<BR><BR><STRONG>TIP:</STRONG> Preview your animation by clicking on the animation icon just below the slide in Slide Sorter View or clicking on the Slide Show icon in the lower left toolbar, Dr. Durfee advises. Then if you accidentally apply an animation effect you hate, you can get rid of it simply by highlighting the slide or slides again and select no animation. Select the appropriate slides and try again until you&#8217;re satisfied with the animation.<BR></FONT><BR><STRONG><FONT face=Verdana,Arial color=#3366ff>How to Use Transitions</FONT></STRONG></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt"><FONT face=Verdana,Arial>Transitions is the term PowerPoint applies to special effects that occur between slides. For instance, one slide will dissolve away as the next one appears. Or slides can scoot into the picture from the side, top or bottom.<BR><BR>Like animation, to add a Transition effect you should go to the View menu and select the Slide Sorter view. Highlight some or all of the slides. Then left-click on the Transitions menu on the Animation Effects toolbar and choose the effect.<BR><BR>Underneath every slide to which you&#8217;ve applied a Transition effect or an Animation effect, PowerPoint will insert an icon indicating this. Left-click on the icon to see how the effect looks. All the experts advise choosing one type of transition and sticking to it.<BR><BR><STRONG>TIP:</STRONG> As with animations, Transition effects can be accompanied by one of a variety of sounds. Have pity on your audience, though. Do they really want to hear a drumroll 20 times in a 10-minute period? <BR><BR></FONT><FONT face=Verdana,Arial><FONT face=Verdana,Arial><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: Verdana,Arial; mso-fareast-font-family: 'Verdana,Arial'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"></SPAN></FONT></FONT><STRONG><FONT face=Verdana,Arial color=#3366ff>How to Add Video<BR></FONT></STRONG><FONT face=Verdana,Arial>In Normal or Slide View (go to the View menu and select Normal), create a New Slide using the Insert menu, the New Slide icon on the toolbar, or the Common Tasks list on the toolbar. From the resulting dialog box, choose a slide format that is blank or that contains a large box into which you can insert video. Once the new slide is on your screen, left-click in the box where the video will go, then go to Insert menu and select the submenu Movies and sounds. <BR><BR>Getting your video onto the computer can be done two ways. (Ms. Brown- Bellamy will be teaching a seminar on this at the Joint Meeting&#8217;s Technology Pavilion.) You can have a special video card installed in your computer. Then you just plug the video camera directly into the computer to convert video into a digital file with the .AVI extension, said Dr. Meltzer. Or you can make the conversion using an external device such as Snappy or Dazzler.<BR><BR><STRONG>TIP:</STRONG> Even if you plan to run your PowerPoint presentation from your laptop, it&#8217;s best to save a full copy on CD-ROM in case of onsite problems.<BR><BR>Use the Pack and Go feature on the File menu to make the CD, copying the graphics and video files into the final PowerPoint presentation. (Unless you do this, PowerPoint just adds a link, not the file itself, when inserting art, spreadsheets and video.) To be sure it&#8217;s all there, test your CD version on another computer before you leave home.</FONT></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt">&nbsp;</P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt"><STRONG><FONT color=#3366ff>How to Change the Template<BR></FONT></STRONG><FONT face=Verdana,Arial>To add logos or other common elements such as identifying footers to your slides, you have to change the Slide Master.<BR><BR>Go to the View menu and choose Master and Slide Master. You can add the presentation date, a footer identifying the presentation and/or a slide number along the bottom. A logo is added by clicking on the Insert menu, then picking Picture and From File. Once it&#8217;s inserted you can move and resize this logo anywhere on the Slide Master.<BR><BR>Once you&#8217;re finished making the changes, save them for the future by turning your new master into a Design Template. Go to File, click on Save As and choose Design Template for the type of file to be saved. And be careful to give it a name you&#8217;ll remember later.</FONT></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt">&nbsp;</P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt" align=right><SPAN style="FONT-SIZE: 12pt; FONT-FAMILY: Verdana,Arial; mso-fareast-font-family: 'Verdana,Arial'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><U><FONT face=Verdana,Arial color=#3366ff><U><FONT face=Verdana,Arial color=#3366ff><SPAN style="FONT-SIZE: 12pt; FONT-FAMILY: Verdana,Arial; mso-fareast-font-family: 'Verdana,Arial'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><U><FONT face=Verdana,Arial color=#3366ff><U><FONT face=Verdana,Arial color=#3366ff><A href="info_tech_jul.htm"    cplinkurl="CP___PAGEID=10611,info_tech_jul.cfm,134"    designtimeurl="info_tech_jul.htm"   ><SPAN style="FONT-SIZE: 12pt; FONT-FAMILY: Verdana,Arial; mso-fareast-font-family: 'Verdana,Arial'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><U><FONT face=Verdana,Arial color=#3366ff><U><FONT face=Verdana,Arial color=#3366ff><SPAN style="FONT-SIZE: 12pt; FONT-FAMILY: Verdana,Arial; mso-fareast-font-family: 'Verdana,Arial'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><U><FONT face=Verdana,Arial color=#3366ff><U><FONT face=Verdana,Arial color=#3366ff><IMG height=19 hspace=0 src="arrowup.gif" width=19 border=0 DESIGNTIMEURL="/aao/advocacy/action/images/arrowup.gif" MainImageURL="CPIMAGE:3151"></FONT></U></FONT></U></SPAN></FONT></U></FONT></U></SPAN></A></FONT></U></FONT></U></SPAN></FONT></U></FONT></U></P></SPAN>
+<P class=SidebarLine style="MARGIN: 0in 0in 0pt"><U><FONT color=#3366ff><FONT face=Verdana,Arial><SPAN style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;______ </SPAN></FONT></FONT></U></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt"><FONT face=Verdana,Arial>&nbsp;<o:p></o:p></FONT></P>
+<P class=Sidebar style="MARGIN: 0in 0in 0pt"><STRONG><FONT face=Verdana,Arial color=#800000>Keep It Simple</FONT></STRONG></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt"><FONT face=Verdana,Arial>&nbsp;<o:p></o:p></FONT></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt"><FONT face=Verdana,Arial>Experts on using Microsoft PowerPoint have some basic recommendations for making your presentations work, especially if you aren&#8217;t yet comfortable with the program. These include the following:<BR><BR></P>
+<LI class=MsoNormal style="mso-list: l20 level1 lfo15; tab-stops: list .5in">Begin in Outline View or Normal View.<BR>
+<LI class=MsoNormal style="mso-list: l20 level1 lfo15; tab-stops: list .5in">Use the templates, color schemes and autolayouts provided.<BR>
+<LI class=MsoNormal style="mso-list: l20 level1 lfo15; tab-stops: list .5in">Stick to one or two typefaces (fonts) and avoid busy backgrounds.<BR></FONT><FONT face=Verdana,Arial>
+<LI class=MsoNormal style="mso-list: l20 level1 lfo15; tab-stops: list .5in">Use no more than five bullets per slide and no more than two levels of bullets.<BR>
+<LI class=MsoNormal style="mso-list: l20 level1 lfo15; tab-stops: list .5in">Use consistent, concise wording in your bullets. If the first bullet is a sentence fragment, the others should be the same type of fragment. (Or they all can be complete sentences, but only if they&#8217;re very brief.)</FONT> 
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt"><FONT face=Verdana,Arial><BR></FONT>&nbsp;</P>
+<P class=Superhead style="MARGIN: 0in 0in 0pt" align=right><U><FONT face=Verdana,Arial color=#3366ff><U><FONT face=Verdana,Arial color=#3366ff><U><FONT face=Verdana,Arial color=#3366ff><A href="info_tech_jul.htm"    cplinkurl="CP___PAGEID=10611,info_tech_jul.cfm,134"    designtimeurl="info_tech_jul.htm"   ><U><FONT face=Verdana,Arial color=#3366ff><U><FONT face=Verdana,Arial color=#3366ff><U><FONT face=Verdana,Arial color=#3366ff><IMG height=19 hspace=0 src="arrowup.gif" width=19 border=0 DESIGNTIMEURL="/aao/advocacy/action/images/arrowup.gif" MainImageURL="CPIMAGE:3151"></FONT></U></FONT></U></FONT></U></A></FONT></U></FONT></U></FONT></U></P>
+<P class=Link style="MARGIN: 0in 0in 0pt"><U><FONT color=#3366ff><FONT face=Verdana,Arial><SPAN style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN><SPAN style="mso-tab-count: 2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></FONT></FONT></U></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt"><FONT face=Verdana,Arial>&nbsp;<o:p></o:p></FONT></P>
+<P class=Sidebar style="MARGIN: 0in 0in 0pt"><STRONG><FONT face=Verdana,Arial color=#800000>PowerPoint at the Joint Meeting</FONT></STRONG></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 0pt"><FONT face=Verdana,Arial>&nbsp;<o:p></o:p></FONT></P>
+<P class=Superhead style="MARGIN: 0in 0in 0pt"><FONT face=Verdana,Arial><STRONG><FONT color=#3366ff>Courses:</FONT></STRONG> Go to <A href="index.html" CPLINKURL="/aao/">www.aao.org </A>and click &#8220;Annual Meeting,&#8221; then &#8220;Scientific Program&#8221; to reserve a seat on one of the following courses:<BR><BR><STRONG>Course SL-280, Computer Graphics</STRONG>, <BR>Gerald E. Meltzer, MD (Monday, Oct. 21, 9:45 a.m. to 12:45 p.m.)<BR><BR><STRONG>Course 302, Multimedia PowerPoint <BR>Presentations</STRONG>, Bette L. Anderson, MD (Monday, Oct. 21, 2 to 3 p.m.)<BR><BR><STRONG>Course SL-324, Hands-On PowerPoint: From the Basics to a Comprehensive Presentation</STRONG>, David A. Durfee, MD (Monday, Oct. 21, 2 to 5.30 p.m.)<BR><BR><STRONG>Course SL-596, Computerizing the Ophthalmic Office</STRONG>, Gerald E. Meltzer, MD (Wednesday, Oct. 23, 9:45 a.m to 12:45 p.m.)<BR><BR><STRONG><FONT color=#3366ff>Technology Pavilion:</FONT></STRONG> When you&#8217;re on the exhibit floor, visit the Technology Pavilion for free presentations and demonstrations on information technology. There will also be email stations, so you can stay in touch with your office and family, and other facilities.<BR><BR><STRONG>Seminars on PowerPoint.</STRONG> Check the Academy&#8217;s Web site to find out when Ms. Brown-Bellamy will be sharing her PowerPoint tips.<BR><BR><STRONG>Dispense with your slide carousel.</STRONG> Consultants at the Technology Pavilion&#8217;s Ask the Experts booth will show you how to digitize your slides with a scanner.</P></FONT><U><FONT face=Verdana,Arial color=#3366ff><U><FONT face=Verdana,Arial color=#3366ff><U><FONT face=Verdana,Arial color=#3366ff><A href="info_tech_jul.htm"    cplinkurl="CP___PAGEID=10611,info_tech_jul.cfm,134"    designtimeurl="info_tech_jul.htm"   >
+<P class=Superhead style="MARGIN: 0in 0in 0pt" align=right><U><FONT face=Verdana,Arial color=#3366ff><U><FONT face=Verdana,Arial color=#3366ff><U><FONT face=Verdana,Arial color=#3366ff><IMG height=19 hspace=0 src="arrowup.gif" width=19 border=0 DESIGNTIMEURL="/aao/advocacy/action/images/arrowup.gif" MainImageURL="CPIMAGE:3151"></FONT></U></FONT></U></FONT></U></P></A></FONT></U></FONT></U></FONT></U></LI></div></div></td></tr>
+	</table>	</div></td>
+			<td valign="top" align="right"><div class="CS_Element_Layout">&nbsp;</div></td>
+		</tr>
+		</table>
+	</td></tr>
+	
+	
+	<tr>
+	    <td><div class="CS_Element_Layout"><table id="idLayout469" cellpadding="0" cellspacing="0" border="0" width="100%" summary=""><tr><td id="idCell469x1x1" align="left" valign="top"><div class="CS_Element_CustomCF">
+<div id="CS_CCF_10611_5726">
+<table background="foot_bg.GIF" width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td background="foot_bg.GIF">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="10"><img src="blank.GIF"></td>
+          <td width="130"><img src="logo_sm.gif"></td>
+          <td width="10"><img src="blank.GIF"></td>
+          <td>
+              <table background="foot_bg.GIF"width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr> 
+                  <td background="foot_bg.GIF"> 
+                    <div align="center"><font size="1" face="Arial, Helvetica, sans-serif"><a href="mailto:eyenet@aao.org?subject=Contact%20us%20for%20web">Contact 
+                      Us</a> | <a href="http://www.aao.org/aao/privacy.htm"><font size="1" face="Arial, Helvetica, sans-serif">Privacy 
+                      Policy</font></a></font></div>
+                  </td>
+                </tr>
+                <tr> 
+                  <td> 
+                    <div align="center"><font size="1" face="Arial, Helvetica, sans-serif">&copy;1995 
+                      - 2004, American Academy of Ophthalmology, Inc.&reg; All 
+                      rights reserved.</font></div>
+                  </td>
+                </tr>
+              </table>
+          </td>
+          <td background="foot_bg.GIF" width="10"><img src="blank.GIF"></td>
+          <td background="foot_bg.GIF"><img src="orbit.gif" width="143" height="39"></td>
+          <td background="foot_bg.GIF" width="2"><img src="blank.GIF"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</div><!-- --></div></td></tr>
+	</table>	</div></td>
+	</tr>
+	</table>
+</body></html>

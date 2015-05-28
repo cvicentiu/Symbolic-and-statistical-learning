@@ -1,0 +1,1120 @@
+/* CSS Document */
+/* common CSS for all pages */
+
+body {
+	margin:0px;
+	padding:0px;
+	font-family:Arial, Helvetica, sans-serif;
+	background-color:#ffffff;
+}
+
+
+/* top bar */
+#topbar {
+	display:block;
+	margin:0px;
+	background-color:#cccccc;
+	font-size:12px;
+	color:#993333;
+	padding:2px 0px 3px 30px;
+}
+
+/* News Office title header */
+#header {
+	display:block;
+	margin:0px 0px 0px 30px;
+	padding:0px;
+	vertical-align:top;
+	height:50px;
+	width:710px; /* 740 - 30 left margin */
+	padding-top:15px;
+	position:relative;
+	border:0px;
+	border-bottom: 2px solid #cccccc;
+}
+
+/* header h1 on homepage */
+#header h1#homepage {
+	margin:0px;
+	padding:0px;
+	font-size:40px;
+	line-height:36px;
+	color:#993333;
+	font-weight:bold;
+}
+
+/* header h1 on homepage */
+/*#header h4#homepage {
+	margin:0px;
+	padding:0px;
+	font-size:11px;
+	line-height:14px;
+	font-weight:bold;
+}
+*/
+/* header h1 for all other pages */
+#header h1 {
+	margin:0px;
+	padding:0px;
+	font-size:28px;
+	line-height:36px;
+	font-weight:bold;
+}
+
+
+/* search box */
+#search {
+	position:absolute;
+	top:0px;
+	right:0px;
+	margin:0px;
+	padding:15px 5px 0px 0px;
+	font-size:11px;
+	font-weight:bold;
+	/*color:#333333;*/
+}
+
+/* the color of the advanced search link */
+#search a {
+	color:#993333;
+}
+
+/* body section */
+#middle {
+	margin:10px 0px 20px 30px;
+	width:710px;
+	vertical-align:top;
+}
+
+#middlesearch {
+	margin:3px 0px 20px 30px;
+	width:710px;
+	vertical-align:top;
+}
+
+#content {
+	margin:0px;
+	padding:0px 10px 0px 10px;
+	vertical-align:top;
+	width:auto;
+}
+
+#rightcol {
+	padding:0px 0px 0px 10px;
+	border:0px;
+	border-left: 2px solid #cccccc;
+	width:154px;
+	vertical-align:top;
+}
+
+/* package pages - wide photo spanning two column layout */
+ 
+#twocolspan {
+	margin:0px;
+	padding:0px 0px 10px 10px;
+	width:auto;
+	vertical-align:top;
+}
+
+#twocolspan h1 {
+	position:relative;
+	z-index:4;
+	padding-bottom:1px;
+	margin-bottom:0px;
+}
+
+#twocolspan .inDepth {
+	z-index:2;
+	padding:0px;
+	position:relative;
+	margin:0px;
+}
+
+#twocolspan .inDepth h2 {
+	position:absolute;
+	z-index:3;
+	top:0px;
+	left:40px;
+	margin:0px;
+	color: #FFFFFF;
+	font-size: 28px;
+	padding-bottom:10px;
+}
+
+
+#package #content {
+	width:400px;
+}
+
+/* eliminate top margin for middle column h2 headlines  
+   in CSS2 compliant browsers like Mozilla/FireFox */
+#package #content>h2 {
+	margin-top:0px;
+}
+
+/* CSS2 compliant browsers, an h2 following an 
+   table tag will have 18px padding at top 
+
+*/   
+
+#package #content table+h2 { 
+	padding-top:18px;
+}
+
+
+/* left navigation */
+#leftnav {
+	margin:0px;
+	padding:0px 10px 0px 0px;
+	width:112px;
+	border:0px;
+	border-right: 2px solid #cccccc;
+	vertical-align:top;
+}
+#leftnav h2 {
+	margin-bottom:0px;
+	font-weight:bold;
+	color:#333333;
+	font-size:16px;
+	line-height:20px;
+}
+
+/* for secret link, needs work */
+
+#leftnav h2 a {
+	margin-bottom:0px;
+	font-weight:bold;
+	color:#333333;
+	font-size:16px;
+	line-height:20px;
+	border:0px;
+}
+
+#leftnav h2 a:hover, #leftnav h2 a:active {
+	border:0px;
+	cursor:hand;
+	text-decoration:none;
+}
+
+/* CSS2 compliant browsers, an h2 following an 
+   a tag will have 16px padding at top */
+#leftnav a+h2 {
+	padding-top:16px;
+}
+.nav {
+	margin:0px;
+	padding:0px;
+	font-size:12px;
+	line-height:16px;
+	color:#666666;
+}
+/* eliminate top margin for nav titles
+   (news) in CSS2 complaint browsers */
+.nav>h2 {
+	margin-top:0px;
+}
+.nav a, .nav a:link, .nav a:visited {
+	display:block;
+	margin:0px;
+	padding:0px;
+	text-decoration:none;
+	color:#666666;
+	border:0px;
+	border-top:1px solid #ffffff;
+	border-bottom:1px solid #ffffff;
+	cursor:hand;
+}
+/* left nav hover, active, and on states */
+.nav a:hover, .nav a:active, 
+#recent_section a.nav_recent, #research_section a.nav_research, #campus_section a.nav_campus, #topic_section a.nav_topic, #archive_section a.nav_archives, #images_section a.nav_images, #subscribe_section a.nav_subscribe, #submit_section a.nav_submit, #promote_section a.nav_promote, #media_section a.nav_media, #info_section a.nav_info, #background_section a.nav_background, #contact_section a.nav_contact  {
+	border:0px;
+	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	cursor:hand;
+	text-decoration:none;
+}
+
+/* MIT Logo */	
+#logo, #logo a{
+	margin:0px;
+	padding:15px 0px 0px 0px;
+	border:0px;
+}
+
+/* middle content area default styles 
+   individual sections will use body id overrides 
+*/
+
+/* body content */
+h1#home {  /* homepage main headline */
+	margin:0px;
+	padding:0px;
+	font-size:32px;
+	line-height:36px;
+}
+h1#category {		/* secondLevelHeader */
+	padding-top:0px;
+	font-size:28px;
+	line-height:32px;
+	font-weight:bold;
+	color:#000000;
+	margin-top:0px; 
+	padding-bottom:0px;
+	margin-bottom:0px;
+}
+h1 {		/* secondLevelHeader */
+	padding-top:0px;
+	font-size:28px;
+	line-height:32px;
+	font-weight:bold;
+	color:#000000;
+	margin-top:0px; /* LD testing this */
+}
+h2 {			/* headlineMedium */
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: bold;
+	margin-bottom:0px;
+	padding-bottom:0px;
+	color:#000000;
+}
+
+h2#firstItem {		
+	margin-top:0px;
+	padding-top:0px;
+}
+
+h3 {			/* sectionHeader */
+	margin:0px;
+	padding:0px 0px 7px 0px;
+	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: 0.25em;
+	word-spacing: 0.25em;
+	text-transform:uppercase;
+	color:#000000;
+}
+h4 {			/* moreSmall */
+	margin:0px;
+	padding:0px;
+	font-size:11px;
+	line-height:14px;
+	font-weight:bold;
+}
+h5 {			/* subhead */
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: bold;
+	margin-top:0px;
+	padding-top:0px;
+	margin-bottom:5px;
+	padding-bottom:5px;
+	color: #000000;
+}
+
+p {			 /* teaserLarge */
+	margin-top:0px;
+	padding-top:0px;
+	font-size: 14px;
+	line-height: 18px;
+	color: #333333;
+	vertical-align:top;
+}
+td {
+	font-size:14px;
+	line-height:18px;
+	color:#333333;
+	vertical-align:top;
+}
+ul {
+	margin:0px;
+	padding-top:0px;
+	padding-left:16px;
+	margin-bottom:18px; 
+	/* must use margin-bottom instead of padding-bottom to 
+	take advantage of collapsing margins for when lists are nested.
+	multiple </ul> causes multiple padding specifications */
+}
+li {
+	list-style-type:disc;
+	list-style-position:outside;
+	font-size:14px;
+	line-height:18px;
+	color:#333333;
+}
+/* leave no line break when a bullet list follows a paragraph */
+p+ul {
+	margin-top:-14px;
+}
+img {
+	border:0px;
+}
+
+.date { 	/* teaserDate */
+	font-size: 14px;
+	line-height: 18px;
+	color: #666666;
+}
+.more {
+	margin:0px;
+	padding:0px;
+	padding-top:18px;
+	font-size:14px;
+	line-height:18px;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+.caption {
+	font-size: 12px;
+	line-height: 14px;
+	color: #000000;
+	margin:0px;
+	padding:6px 0px 2px 0px;
+}
+#content img {
+	padding-top:2px;
+}
+#content img+p {
+	margin-top:0px;
+	padding-top:10px;
+}
+.line { /* horizontal line */
+	margin:0px;
+	margin-bottom:5px;
+	padding:0px;
+	font-size:1px;
+	height:5px;
+	display:block;
+	border:0px;
+	border-bottom:2px solid #cccccc;
+}
+.cursorChange {
+	cursor: hand;
+	cursor: pointer;
+}
+.subnav {
+	font-weight:bold;
+	font-size:12px;
+	color:#000000;
+	white-space:nowrap;
+}
+.padtopright {
+	padding-top:5px;
+	padding-right:5px;
+}
+/* right column styles */
+
+#rightcol .more {			/* moreSmall */
+	margin:0px;
+	padding:0px;
+	padding-bottom:12px;
+	font-size:11px;
+	line-height:14px;
+	font-weight:bold;
+	cccctext-transform:uppercase;
+}
+#rightcol p {  			/* relatedInfo and teaserSmall */
+	margin:0px;
+	padding-bottom:12px;
+	font-size: 11px;
+	line-height: 16px;
+	color: #666666;
+}
+#rightcol .quote {
+	font-size:12px;
+	line-height:16px;
+	font-weight:bold;
+	color:#000000;
+	padding-bottom:5px;
+}
+#rightcol .event {
+	margin:0px;
+	padding-bottom:10px;
+}
+#rightcol .event p {
+	margin:0px;
+	padding:0px;
+	font-size:11px;
+	line-height:12px;
+}
+#rightcol .date {
+	margin:0px;
+	padding:0px;
+	color:#000000;
+	font-size:11px;
+	line-height:14px;
+	font-weight:bold;
+}
+#rightcol .photoCredit {
+	margin:0px;
+	padding:2px 0px 0px 0px;
+	font-size:10px;
+	line-height:12px;
+	color:#999999;
+}
+#rightcol ul {
+	margin:0px;
+	padding-top:0px;
+	padding-left:15px;
+}
+#rightcol li {
+	list-style-type:square;
+	list-style-position:outside;
+	font-size:11px;
+	line-height:16px;
+}
+#rightcol .line {
+	height:10px;
+}
+#rightcol .xmllink {
+	text-decoration: none;
+}
+#rightcol .keywords { /* for related keywords on right side of article pages */
+	margin: 0px;
+	font-size: 11px;
+	line-height: 12px;
+	color:#333333;
+}
+	
+/* about pages right column override */
+#about #rightcol p {
+	margin:0px;
+	padding:0px;
+}
+
+/* story pages overrides */
+/* print pages for story pages use almost identical styles */
+/* recent news and features pages */
+#story #content h1, #print #content h1 {
+	font-family:"Times New Roman", Times, serif;
+	color:#000000;
+	padding-bottom:5px;
+	margin-bottom:5px;
+	font-weight:normal;
+}
+
+#story #content h2, #print #content h2 {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 22px;
+	line-height: 24px;
+	color: #000000;
+	font-style: italic;
+	font-weight:normal;
+	margin-top:0px;
+	padding-top:0px;
+	margin-bottom:8px;
+	padding-bottom:8px;
+}
+
+/* replaces bodyText */
+#story #content p, #print #content p, #recent #content p, #popup #content p, #recent #content td { 		
+	font-size: 12px;
+	line-height: 16px;
+	color: #000000;
+}
+
+#story #content ul, #print #content ul, #recent #content ul {
+	font-size: 12px;
+	line-height: 16px;
+	color: #000000;
+	margin:normal;
+	padding-top:normal;
+	padding-left:normal;
+	margin-bottom:normal;
+}
+
+#story #content li, #print #content li, #recent #content li {
+	font-size: 12px;
+	line-height: 16px;
+	color: #000000;
+	margin:normal;
+	padding:normal;
+}
+
+#story #content p+ul, #print #content p+ul, #recent #content p+ul {
+	margin-top:0;
+}
+
+#story #content .authorinfo, #print #content .authorinfo, #popup #content .authorinfo { /* bylineDateline */
+	color:#666666;
+}
+
+#story .caption, #print .caption {
+	font-family: "Times New Roman", Times, serif;
+	
+}
+#story #content .caption {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	padding-top: 10px;
+	color: #000000;
+	text-align: left; 
+}
+
+#recent #content table a {
+	display:block;
+	padding-left:10px;
+	padding-bottom:3px;
+}
+
+#recent #rightcol .date {
+	display:block;
+	font-weight:normal;
+	padding-bottom:24px;
+}
+
+/* #category #rightcol .date added by RD */
+#category #rightcol .date {
+	/*display:block;*/
+	font-weight:normal;
+	padding-bottom:15px;
+}
+
+/* printable pages */
+#print body {
+	margin-right:10px;
+	margin-left:10px;
+}
+#printlogo {
+	position:absolute;
+	top:0px;
+	right:10px;
+	margin:0px;
+	padding:0px;
+}
+#print #topbar {
+	background-color:#ffffff;
+	font-size:0.8em;
+	font-weight:bold;
+	padding-left:10px;
+}
+#print #header {
+	width:auto;
+	height:auto;
+	margin:0px;
+	padding: 0px 10px 0px 10px;
+	border:0px;
+	vertical-align:top;
+}
+#print #header h1 {
+	margin:0px;
+	padding:0px;
+}
+#print #content h1 {
+	padding-top:4px;
+}
+#print #middle {
+	width:auto;
+	margin:0px;	
+}
+#print #footer {
+	margin-left:10px;
+}
+#print .line {
+	height:5px;
+}
+
+#print #footer td {
+	font-size:11px;
+	color:#000000;
+}
+
+/* archive pages overrides */
+#archive #rightcol {
+	padding:0px 0px 0px 10px;
+	width:auto;
+	vertical-align:top;
+	border-left:0px;
+}
+#archive #rightcol h3 {
+	padding-bottom:20px;
+}
+#archive p { 		/* replaces bodyText */
+	font-size: 12px;
+	line-height: 16px;
+	color: #000000;
+}
+#archive #rightcol a {
+	font-weight:bold;
+}
+#archive #rightcol .top {
+	text-align:right;
+}
+#archive #rightcol a.totop {
+	font-weight:normal;
+	font-size:12px;
+	text-transform:uppercase;
+}
+#archive .line {
+	height:10px;
+	margin-bottom:5px;
+}
+
+#archive .date { 		
+	font-size: 12px;
+	line-height: 16px;
+	color: #666666;
+	font-weight:normal;
+}
+#archive .menuWidth {
+	width:90px;
+}	
+
+/* other years drop down form  */
+#otheryears {
+	margin:0px;
+	padding:0px 0px 10px 10px;
+}
+#otheryears select {
+	font-weight:bold;
+	color:#000000;
+	font-size:11px;
+	line-height:11px;
+}
+
+/* tech talk pages */
+#techtalk #rightcol img {
+	border:1px solid #000000;
+}
+
+/* generic 2 column pages */
+#generic2col #content {
+	padding:0px 0px 0px 10px;
+	width:auto;
+	vertical-align:top;
+	border-left:0px;
+}
+#generic2col #content h2 {
+	margin-top:0px;
+}
+
+/* LD removed 
+#generic2col #content h1 {
+margin-bottom: 0px; 
+}*/
+
+/* form elements */
+input[type="text"], textarea {
+	border: 1px solid #333333;
+	border-top: 2px solid #666666;
+	border-left: 2px solid #666666; 
+	margin:2px 0px 2px 0px;
+	padding:0px;
+	font-family:Arial, Helvetica, sans-serif;
+    font size:11px;
+    line-height:13px;
+}
+
+select {
+/*	border-bottom: 1px;
+	border-style: solid;
+	border-color: #666666; */
+	margin:1px 0px 1px 0px;
+	padding:0px;
+}
+option {
+	font-family:Arial, Helvetica, sans-serif;
+    font size:11px;
+    line-height:13px;
+}
+
+#rightcol select {
+	width: 154px;
+}
+
+#content select {
+	width: 125px;
+	margin-bottom: 5px;
+}
+
+/* generic links */
+a, a:link, a:visited {
+	color:#993333;
+	text-decoration:none;
+	cursor:hand;
+}
+a:active, a:hover {
+	text-decoration:underline;
+	cursor:hand;
+}
+
+#popup h2 {
+font-size: 20px;
+	line-height: 30px;
+	font-weight: bold;
+	margin-bottom:10px;
+	padding-bottom:0px;
+	color:#993333;
+	ƒtext-align: left; 
+}
+
+#popup .caption {
+	font-size: 12px;
+	line-height: 16px;
+	padding-top: 10px;
+	color: #000000;
+	text-align: left; 
+}
+
+#popup .photoCredit {
+	font-size: 12px;
+	line-height: 16px;
+	color: #666666;
+	text-align: left; 
+}
+
+#popup .navigation {			/* moreSmall */
+	margin:0px;
+	padding:0px;
+	font-size:11px;
+	line-height:28px;
+	font-weight:bold;
+	text-align:right;
+}
+
+#popup .close {
+	margin-top:10px;
+	padding-bottom:12px;
+	font-size: 11px;
+	line-height: 16px;
+	color: #666666;
+	text-align: left; 
+}
+
+#popup td {
+	vertical-align:bottom;
+}
+
+/* footer  */
+#footer {
+	margin:0px 0px 0px 30px;
+	width:710px;
+	height:50px;
+} 
+#footer td {
+	font-size:11px;
+	line-height:16px;
+	color:#666666;
+}
+#footer a:hover, #footer a:active {
+	color: #666666;
+	text-decoration: underline;
+}
+
+.skiplink {
+	display:none;
+}
+
+/* .skipnavigation replaces .skiplink class, when all pages have been updated/rebuilt, delete .skiplink */
+
+.skipnavigation {
+	position: absolute;
+	left: -1000px;
+	width: 990px;
+	font-size:1px; line-height:1;
+}
+
+/* President page styles - when the pages revert to standard formatting, delete these */
+
+#president #topbar {
+	display:block;
+	margin:0px;
+	background-color:#993333;
+	font-size:12px;
+	color:#000000;
+	padding:2px 0px 3px 30px;
+}
+
+#president #topbar a.white {
+	color:#ffffff;
+}
+
+#president #headerhome {
+	display:block;
+	margin:0px 0px 0px 30px;
+	padding:0px;
+	vertical-align:top;
+	height:53px;
+	width:710px; /* 740 - 30 left margin */
+	padding-top:15px;
+	position:relative;
+	border:0px;
+	border-bottom: 6px solid #993333;
+	margin-bottom:10px;
+}
+
+#president #header {
+	display:block;
+	margin:0px 0px 0px 30px;
+	padding:0px;
+	vertical-align:top;
+	height:36px;
+	width:710px; /* 740 - 30 left margin */
+	padding-top:15px;
+	position:relative;
+	border:0px;
+	border-bottom: 6px solid #993333;
+}
+
+#president #headerhome h1 {
+	margin:0px;
+	padding:0px;
+	font-family:Janson, Georgia, "Times New Roman", Times, serif;
+	font-size:38px;
+	line-height:36px;
+	font-weight:normal;
+	color:#666666;
+}
+
+#president #headerhome span {
+	color:#993333;
+}
+
+#president #header h1 {
+	margin:0px;
+	padding:0px;
+	font-family:Janson, Georgia, "Times New Roman", Times, serif;
+	font-size:22px;
+	line-height:22px;
+	font-weight:normal;
+	color:#666666;
+}
+
+#president #homelink {
+	margin-top:14px;
+	padding:0px;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight:bold;
+	color:#993333;
+}
+
+#president #seal {
+	position:absolute;
+	top:550px;
+	left:-15px;
+	z-index:0;
+}
+
+
+#president a.nav_on {
+	border:0px;
+	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	cursor:hand;
+	text-decoration:none;
+}
+
+#president #content h1 {
+	font-family:Janson, Georgia, "Times New Roman", Times, serif;
+	color:#000000;
+	padding-bottom:5px;
+	margin-bottom:5px;
+	font-weight:normal;
+}
+
+#president #content h2 {
+	font-family:Janson, Georgia, "Times New Roman", Times, serif;
+	font-size: 22px;
+	line-height: 24px;
+	color: #000000;
+	font-style: italic;
+	font-weight:normal;
+	margin-top:0px;
+	padding-top:0px;
+	margin-bottom:8px;
+	padding-bottom:8px;
+}
+
+#president #content p { 		
+	font-size: 12px;
+	line-height: 16px;
+	color: #000000;
+}
+
+#president #content ul {
+	font-size: 12px;
+	line-height: 16px;
+	color: #000000;
+	margin:normal;
+	padding-top:normal;
+	padding-left:normal;
+	margin-bottom:normal; 
+}
+
+#president #content li {
+	font-size: 12px;
+	line-height: 16px;
+	color: #000000;
+	margin:normal;
+	padding:normal;
+}
+
+#president #content p+ul {
+	margin-top:0;
+}
+
+
+#president #content .authorinfo { 
+	color:#666666;
+}
+
+#president #content td { 
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 12px;
+}
+
+#president .caption {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 16px;
+	color: #666666;
+	
+}
+#president #content .caption {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	padding-top: 10px;
+	color: #000000;
+	text-align: left; 
+}
+
+#president #content .indent {
+	margin-left:15px;
+}
+
+/* STYLES ADDED FOR E-MAIL AN ARTICLE FUNCTION */
+
+/* article headline in the popup window */
+.emailHeadline {	
+	font-family:"Times New Roman", Times, serif;
+	font-size: 20px;
+	line-height: 20px;
+	font-weight: normal;
+	margin-top:0px;
+	padding-top:0px;
+	margin-bottom:0px;
+	padding-bottom:0px;
+	color: #000000;
+}
+
+/* properties of E-mail article button on story page */
+.emailButton { 
+	background-image: url('http://web.mit.edu/newsoffice/images/email-clear.gif');
+	background-position: top left;
+	background-repeat: no-repeat;
+	background-color: #FFFFFF;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	width: 63px;
+	height: 17px;
+	vertical-align: top;
+}
+
+/* new version */
+.emailArticleButton { 
+	background-image: url('http://web.mit.edu/newsoffice/email-article.gif');
+	background-position: top left;
+	background-repeat: no-repeat;
+	background-color: #FFFFFF;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	width: 82px;
+	height: 17px;
+	vertical-align: top;
+}
+
+/* properties of E-mail article button on story page on rollover*/
+.buttonChange { 
+	background-image: url('http://web.mit.edu/newsoffice/images/email-line.gif');
+	background-position: top left;
+	background-repeat: no-repeat;
+	background-color: #FFFFFF;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	width: 63px;
+	height: 17px;
+	cursor: hand;
+	cursor: pointer;
+	vertical-align: top;
+}
+
+/* new version */
+.emailArticleButtonChange { 
+	background-image: url('http://web.mit.edu/newsoffice/email-article-line.gif');
+	background-position: top left;
+	background-repeat: no-repeat;
+	background-color: #FFFFFF;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	width: 82px;
+	height: 17px;
+	cursor: hand;
+	cursor: pointer;
+	vertical-align: top;
+}
+
+/* aligns the icon next to the E-mail article link to give a consistent look across browsers */
+.emailIcon { 
+	vertical-align: top;
+}
+
+/* needed to lessen the white space between "Print version" and "E-mail article" links */
+#rightcol .tools { 
+	margin-top: -20px;
+}
+
+/* needed to lessen the white space between "Print version" and "E-mail article" links */
+#rightcol .rss { 
+	margin-top: -10px;
+}
+
+/* Subheadings [i.e. (for return address)] for the input boxes in the E-mail article popup */
+#popup #content .required {
+	line-height: 13px;
+	color: #993333;
+}
+
+/* formats the send button in the popup */
+/*#popup .send {
+	background-color: #FFFFFF;
+	border: 0px;
+	padding: 0px;
+	margin: 0px 5px 0px 0px;
+}*/
+
+.formspace	{
+margin-bottom: 7px;
+}
+
+.messageText	{
+font-size: 12px;
+}
+
+.messageTextNoJS	{
+font-size: 12px;
+}
+
+#rightcol .emailNoJS {  			/* overrides line-height in regular p tag */
+	line-height: 12px;
+}
+
+.google	{
+	line-height: 1.2;
+}
+
+.boldredstar	{
+	color: #FF0000;
+	font-weight: bold;
+}
+
+#content #awards select {
+	width: auto;
+}

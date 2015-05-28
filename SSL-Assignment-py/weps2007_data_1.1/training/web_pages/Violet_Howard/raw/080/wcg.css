@@ -1,0 +1,315 @@
+BODY
+
+	{
+	Margin-left: 1cm;
+	Background-color: #FFFFCC;
+	font-family: Verdana, Arial, Sans Serif;
+	font-size: 12pt;
+	color: #990000;
+	margin-right: 1cm;
+	background-image: url(images/bg.gif);
+	}
+
+H1
+
+	{
+	font-size: 30pt;
+	text-align: center;
+	color: Blue;
+	font-family: Gill Sans Ultra Bold, Arial, Helvetica, Sans-serif;
+	font-weight: bold;
+	}
+
+
+
+H2
+
+	{
+
+		font-size: 20pt;
+
+		font-family: Arial, Sans-serif;
+
+		font-weight: bold;
+
+		Margin-left: 1cm;
+
+		color: Blue;
+
+	}
+
+
+
+H3
+
+	{
+
+		font-size: 17pt;
+
+		font-family: Arial, Sans-serif;
+
+		font-weight: bold;
+
+		color: Green;
+
+	}
+
+
+
+
+
+P.ind
+
+	{
+	font-family: Verdana, Arial, Sans Serif;
+	color: maroon;
+	font-size: 14pt;
+	margin-left: 1cm;
+	margin-right: 1cm;
+	text-align: left;
+	}
+
+
+
+P.ind1
+
+        {
+
+		font-family: Verdana, Arial, Sans Serif;
+
+		color: maroon;
+
+		font-size: 12pt;
+
+		margin-left: 0.3cm;
+
+		margin-right: 0.3cm;
+
+	}
+
+P.ind1a
+
+        {
+
+		font-family: Verdana, Arial, Sans Serif;
+
+		color: red;
+
+		font-size: 14pt;
+
+		margin-left: 0.3cm;
+
+		margin-right: 0.3cm;
+
+	}
+
+P.ind2
+
+	{
+
+		font-family: Verdana, Arial, Sans Serif;
+
+		font-size: 18pt;
+
+		color: Blue;
+
+		margin-left: 2cm;
+
+		margin-right: 2cm;
+
+	}
+
+P.ind3
+
+	{
+
+		font-family: Verdana, Arial, Sans Serif;
+
+		color: green;
+
+		font-size: 14pt;
+
+		margin-left: 1.5cm;
+
+		margin-right: 1.5cm;
+
+	}
+	
+P.Ind4 {
+	font-family: "Comic Sans MS", Coolsville, "Curlz MT";
+	font-size: 12pt;
+	color: #0821AD;
+	text-align: left;
+}
+
+
+P.LNind
+
+        {
+
+        font-family: Verdana, Arial, Sans Serif;
+
+		font-size: 18pt;
+
+		color: Blue;
+
+	}
+
+P.small
+	{
+
+		font-family: Times New Roman, Serif;
+
+		font-size: .9em;
+
+		color: Blue;
+
+
+
+	}
+.songwords
+	{
+     font-family: Verdana, Arial, Sans Serif;
+	 
+	 font-size: 1em;
+	 
+	 color: #0000FF;
+	
+	}
+
+P.SmallTitle
+	{
+	font-family: Broadway, Arial, Sans-Serif;
+
+	font-size: 16pt;
+
+		font-weight: bold;
+
+		text-align: center;
+
+		color: #993333;
+
+	}
+P.date	
+	{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: medium;
+	color: green;
+	text-align: center;
+	font-weight: bold;
+	}
+
+P.p_and_w {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: medium;
+	color: #FF0000;
+}
+	P.holyweek {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: medium;
+	color: #0000FF;
+}
+a:link {
+	color:#FF0066;
+	text-decoration: none;
+}
+a:visited {
+	color: #CC00FF;
+	text-decoration: none;
+}
+a:hover {
+	color: #0000CC;
+	text-decoration: none;
+}
+a:active {
+	color: #FF6633;
+	text-decoration: none;
+}
+
+form#contactform {
+	background: #FFC;
+	width: 400px;
+}
+form#contactform input {
+	width: 200px;
+	border: 2px #222; solid;
+}
+
+form#contactform dt {
+	float: left;
+	font-weight: bold;
+}
+
+form#contactform dd {
+	text-align: right;
+}
+
+form#contactform dd input.button {
+	background-color: #EFD7C5;
+	width 8em;
+	font-weight: bold;
+}
+form#contactform fieldset {
+	padding: 10px;
+	border: 1px #E19A84; solid;
+}
+table.audio {
+	background-image: url(images/wooda.gif);
+	background-repeat: repeat;
+}
+table.pdf {
+	background-image:url(images/woodb.jpg);
+	background-repeat: repeat;
+}
+
+
+/* Sitemap Styles */
+#container {
+	position: absolute;
+	width: 410px;
+	height: 410px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 210px;
+	top: 33px;
+/*	border: 1px solid #000000;
+ */
+}
+#content {
+	margin: 2em 10%;
+	
+}
+#text_sitemap {
+	border: 10px groove #660000;
+	width: 70%;
+	margin: 2em auto 2em auto;
+	padding: 1em;
+}
+#text_sitemap ul {
+	font: 1.5em Verdana, Arial, Helvetica, sans-serif;
+}
+#text_sitemap ul ul {
+	font: 1em Arial, Helvetica, sans-serif;
+}
+#text_sitemap ul ul ul {
+	font: 0.8em Georgia, "Times New Roman", Times, serif;
+}
+h2.text_sitemap {
+	font-family: Broadway, "Bodoni MT Black", "Bodoni MT", "Arial Black", Arial, helvetica, sans-serif;
+	font-size: 1.5em;
+	text-align: center;
+}
+#letter {
+	font: 1em/1.2 "comic Sans MS", "Gill Sans MT", "Franklin Gothic Book", sans-serif;
+	background: #FFFFCC;
+	padding: .5em;
+	border: 3px solid #FFCCCC;
+}
+#letter h3 {
+	text-align: right;
+}
+#letter p.ps {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+	color: #990033;
+}

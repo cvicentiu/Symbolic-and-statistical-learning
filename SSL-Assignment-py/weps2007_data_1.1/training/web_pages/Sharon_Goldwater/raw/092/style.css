@@ -1,0 +1,593 @@
+/*  Theme Name: obscuro
+Theme URI: http://www.waxbrush.com/themes/
+Description:  As tasty as a pint of Stout.  
+Version: 1.0.2
+Author: PaulMc
+Author URI: http://www.waxbrush.com
+*/
+
+* {
+ margin: 0px;
+ padding: 0px;
+}
+
+/*  html */
+  
+
+html, body {
+        background-color: #222222;
+	font: normal  0.9em "lucida grande", verdana, helvetica, sans-serif;
+	
+	padding: 0;
+      color: #999999;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: helvetica, sans-serif;
+	font-weight: normal;
+
+	margin: 0;
+	padding: 0;
+}
+
+
+blockquote {
+	padding-left: 10px;
+	margin-bottom: 20px;
+	line-height: 100%;
+	font-style: italic;
+}
+
+code {
+	font: 1em "Courier New", "Courier", monospace;
+}
+
+/* page margins */
+
+#blog {
+        width: 800px;
+	background-color: #222222;
+	margin: 0 auto;
+	overflow: hidden;
+       
+        
+	
+}
+.wrapper{
+ border: 1px dotted #ccc;
+
+}
+/* header */
+
+
+.tagline{
+
+text-align:right;
+font-size:12px;
+padding-right:10px;
+margin-top:10px;
+color:#ffffff;
+font-weight:bold;
+
+}
+
+
+.page_entry{
+
+padding-top:15px;
+padding-bottom:30px;
+
+}
+
+
+/* banner */
+
+#banner {
+
+	height: 60px;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	background-color: #222222;
+        border-bottom: 5px solid #BBB;
+}
+
+#banner img {
+	border: none;
+}
+
+.title_star{
+color:#457BCC;
+}
+
+
+
+#header-image {
+	display: none;
+}
+
+/* announcement block */
+
+#announce {
+	padding: 0 15px;
+	margin-bottom: 30px;
+	text-align: center;
+	font-size: 14px;
+	background-color: #FFF;
+	color: #777;
+	border: 1px solid #777;
+
+}
+
+#announce a:link, #announce a:visited {
+	text-decoration: none;
+	color: #457BCC;
+}
+
+#announce a:hover, #announce a:active {
+	text-decoration: none;
+	color: #457BCC;
+}
+
+/* main content  */
+
+.main {
+       
+	width: 430px;
+	padding: 10px 70px;
+	float: left;
+	overflow: hidden;
+        font-size:12px;
+
+}
+
+.main p img {
+	max-width: 100%;
+}
+
+.main a:link, a:visited  {
+	text-decoration: none;
+	color: #0099CC;
+}
+
+.main a:hover, a:active{
+	text-decoration: underline;
+	color: #FF0000;
+}
+
+.main p {
+	line-height: 180%;
+	color: #fff;
+}
+
+.main h2 {
+	margin: 15px 0 3px 0;
+	font-size: 1.46em;
+	color: #800000;
+}
+
+.main h2 a:link, .main h2 a:visited  {
+	text-decoration: none;
+        font-size:1em;
+        font-weight:bold;
+	color: #D5BF9B;
+}
+
+.main h2 a:hover, .main h2 a:active {
+	text-decoration: none;
+	color:#ffffff;
+}
+
+.main h3 {
+	font-size: 1em;
+	font-weight: normal;
+	color:#ffffff;
+}
+
+.main ul, .main ol {
+	line-height: 180%;
+	color: #777;
+}
+
+.main h2.pagetitle {
+	font-size: 1.36em;
+	margin: 15px 0 3px 0;
+}
+
+.meta {
+	font-size: .8em;
+	margin: 15px 0 30px 0;
+	padding-top: 5px;
+	color: #777;
+	border-top: 1px solid #777;
+}
+
+.meta a:link, .meta a:visited {
+	text-decoration: none;
+	color: #457BCC;
+}
+
+.meta a:hover, .meta a:active{
+	text-decoration: none;
+	color: #457BCC;
+}
+
+.postnav {
+	width: 100%;
+	float: left;
+	font-size: 14px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	color: #457BCC;
+}
+
+.postnav li.left {
+	display: block;
+	float: left;
+}
+
+.postnav li.right {
+	display: block;
+	float: right;
+}
+
+.left a {
+	text-decoration: none;
+	color: #457BCC;
+}
+
+.right a {
+	text-decoration: none;
+	color: #457BCC;
+}
+
+.left a:hover, .right a:hover {
+	text-decoration: none;
+	color: #457BCC;
+}
+
+.left a:active, .right a:active {
+	text-decoration: none;
+	color: #457BCC;
+}
+
+#mo_archive, #cat_archive {
+	width: 325px;
+	margin-bottom: 30px;
+	float: left;
+}
+
+#mo_archive ul, #cat_archive ul {
+	list-style: none;
+}
+
+/* comments & trackbacks */
+
+.comment_area, .trackback_area {
+	padding: 0 15px;
+	margin-bottom: 30px;
+	background: #222222
+	color: #777;
+      overflow:auto;height:0px;
+}
+
+.comment_area a, .comment_area a:visited, .comment_area a:active {
+	text-decoration: none;
+	color: #457BCC;
+}
+	
+.comment_area a:hover {
+	text-decoration: none;
+	color: #457BCC;
+}
+
+.comment_area ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+      
+}
+
+.comment_area li {
+	margin-bottom: 25px;
+}
+
+.comment_area form li {
+	margin-bottom: 0;
+}
+
+.comment_area p {
+	padding: 0;
+	margin-bottom: 0;
+}
+
+.commenter {
+	font-weight: bold;
+	padding-left: 0;
+	margin-left: 0;
+	color: #457BCC;
+}
+
+.commenter p a, .commenter p a:visited, .commenter p a:active {
+	text-decoration: none;
+	color: #457BCC;
+}
+
+.commenter p a:hover {
+	text-decoration: none;
+	color: #457BCC;
+}
+
+.comment_info {
+	font-size: .8em;
+	font-weight: normal;
+	margin-left: 25px;
+	color: #457BCC;
+}
+
+.comment_number {
+	font-family: helvetica, sans-serif;
+	font-size: 1em;
+	margin-left: 0;
+	margin-right: 5px;
+	color: #457BCC;
+}
+
+.comment_number a, .comment_number a:visited, .comment_number a:active {
+	text-decoration: none;
+	color: #457BCC;
+}
+
+.comment_number a:hover {
+	text-decoration: none;
+	color: #457BCC;
+}
+
+.submit {
+	font-weight: bold;
+	padding-left: 0;
+}
+
+.comment_area textarea {
+	width: 100%;
+height:100px;
+background:#FFF6DF;
+
+}
+
+.trackback_area ol {
+	list-style: none;
+	padding-left: 15px;
+}
+
+.trackback_area li {
+	line-height: 180%;
+}
+
+#comments h2 {
+font-size:1em;
+		color: #FF0000;
+		
+}
+
+/* sidebar */
+
+#side {
+        
+	width: 150px;
+	float: left;
+	padding-left: 15px;
+        padding-top:20px;
+
+}
+
+#side h2 {
+
+	font-size: 12px;
+	padding-top: 20px;
+        padding-botttom:30px;
+	color:#ffffff;
+        font-weight:bold;
+}
+
+#side p {
+	font-size: 10px;
+}
+
+#side ul {
+
+        color: #ffffff;
+	list-style: none;
+        font-weight:bold;
+	font-size: 11px;
+	width: auto;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 15px;
+	
+
+
+	
+}
+
+#side ul.sidelist {
+	padding-bottom: 15px;
+
+}
+
+#side ul a {
+	font-size: 10px;
+	width: 94%;
+	padding-left: 6%;
+	display: block;
+	text-decoration: none;
+        color:#999999;
+        border-left: 4px solid #444;
+        
+
+}
+
+#side ul a:hover {
+	
+   color: #EF2C2C;    
+ border-left: 4px solid #457BCC;
+
+}
+
+#side ul ul {
+	border: none;
+}
+
+#side ul ul a {
+	width: 90%;
+	padding-left: 10%;
+}
+
+#side ul ul ul a {
+	width: 85%;
+	padding-left: 15%;
+}
+
+#side ul ul ul ul a {
+	width: 80%;
+	padding-left: 20%;
+}
+
+/* footer */
+
+#foot {
+       text-align: right;
+	width:100%;
+	padding: 0;
+	margin: 0;
+	clear: both;
+	color: #777;
+	background:color:#D5BF9B;
+	border-top: 1px solid #BBB;
+	
+}
+
+#foot p {
+	padding: 7px 10px;
+	font-size: 12px;
+	margin: 0;
+	
+	color: #777;	
+
+}
+
+#foot p a:link, #foot p a:visited {
+	text-decoration: none;
+	color: #457BCC;
+}
+
+#foot p a:hover, #foot p a:active {
+	text-decoration: none;
+	color: #457BCC;
+}
+
+
+/* search form */
+
+#search {
+	width: 130%;       
+        margin-bottom:20px;
+
+
+}
+
+#search .s{
+
+background:#FFF6DF;
+color:#000;
+
+}
+
+/* Begin Calendar */
+/* Not used in the theme but here anyway...  */
+#wp-calendar {
+	empty-cells: show;
+	margin: 10px auto 0;
+	width: 175px;
+        padding:5px;
+        border: 1px solid;
+        color: #777;	
+        margin-bottom:20px;
+	text-align: center;
+
+	}
+
+#wp-calendar #next a {
+	padding-right: 10px;
+	text-align: right;
+	}
+
+#wp-calendar #prev a {
+	padding-left: 10px;
+	text-align: left;
+	}
+
+#wp-calendar a {
+	display: block;
+	}
+
+#wp-calendar caption {
+	font-size: 12px;
+	font-weight:bold;
+	color: #777;	
+	text-align: center;
+	width: 100%;
+	}
+
+#wp-calendar td {
+	padding: 3px 0;
+	text-align: center;
+	}
+
+#wp-calendar td.pad:hover { /* Doesn't work in IE */
+	background-color: #fff; }
+/* End Calendar */
+
+.title{
+ margin-top: 30px;
+ margin-left: 10px;
+ font-size: 1.6em;
+ letter-spacing: -0.1em;}
+
+.title a {
+  padding-left:10px;
+  font-family: Verdana, Arial, sans-serif;
+  font-weight: bold;
+  color:#D5BF9B;
+  font-size: 16pt;
+  margin-top:80px;
+  text-decoration:none;
+}
+
+.title a:link, .title a:visited {
+	text-decoration: none;
+	color:#D5BF9B;
+}
+
+
+
+a:hover {
+  color:#ffffff;
+  text-decoration: none;
+}
+
+
+.main .pagetitle
+{
+font-weight:bold;
+font-size:2em;
+color:#fff;
+}
+
+
+
+
+.post h2{color:#fff;}
+.cont_other {overflow:auto;height:0px;}
+.t {font-size:1.5em;}

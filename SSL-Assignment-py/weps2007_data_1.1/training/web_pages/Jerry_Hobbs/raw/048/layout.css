@@ -1,0 +1,111 @@
+ /* General page style. The scroll bar colours only visible in IE5.5+ */
+body {
+	background-color: #FFFFFF;
+	margin: 0px;
+}
+
+td {
+	font-family: helvetica, arial, sans-serif; font-size: 11px; 
+}
+
+a				{ text-decoration: underline; color : #990000; }
+a:visited		{ text-decoration: underline; color : #990000; }
+a:hover		{ text-decoration: underline; color : #660000; }
+
+.main a				{ text-decoration: underline; color : #990000; }
+.main a:visited		{ text-decoration: underline; color : #990000; }
+.main a:hover		{ text-decoration: underline; color : #660000; }
+
+
+
+.page_header { font-family:Arial, Helvetica, sans-serif; font-size:16px; font-weight:bold; color:#990000; }
+.sub_header { font-family:Arial, Helvetica, sans-serif; font-size:13px; font-weight:bold; color:#990000; }
+.rc_header { font-family:Arial, Helvetica, sans-serif; font-size:13px; font-weight:bold; color:#FFFFFF; }
+.lc_header { font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:bold; color:#FFFFFF; }
+
+.caption { font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#000000; line-height: 11px; }
+.caption a				{ text-decoration: underline; color : #990000; }
+.caption a:visited		{ text-decoration: underline; color : #990000; }
+.caption a:hover		{ text-decoration: underline; color : #660000; }
+
+.weather_caption { font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#000000; line-height: 11px; }
+.weather_caption a				{ text-decoration: none; color : #990000; }
+.weather_caption a:visited		{ text-decoration: none; color : #990000; }
+.weather_caption a:hover		{ text-decoration: none; color : #660000; }
+
+.red_border { border-color : #990000; border-style : solid; border-width : 1px; }
+.black_border { border-color : #000000; border-style : solid; border-width : 1px; }
+.gray_border { border-color : #666666; border-style : solid; border-width : 1px; }
+
+.module_text { font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#000000; line-height: 12px; }
+.module_text a:link 		{ color : #990000; line-height: 13px; }
+.module_text a:visited		{ color : #990000; }
+.module_text a:hover	{ color : #990000; text-decoration:underline; }
+
+.module_bottom { font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#FFFFFF; }
+.module_bottom a:link 		{ text-decoration: none; color : #FFFFFF; }
+.module_bottom a:visited		{ text-decoration: none; color : #FFFFFF; }
+.module_bottom a:hover	{ text-decoration: underline; color:#FFFFFF; }
+
+.lc_bottom { font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#990000; }
+.lc_bottom a:link 		{ text-decoration: none; color : #990000; }
+.lc_bottom a:visited		{ text-decoration: none; color : #990000; }
+.lc_bottom a:hover	{ text-decoration: underline; color:#990000; }
+
+.weather_time { font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#990000; font-style:italic; }
+.webcam { font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#990000; }
+
+
+
+/* Navigation elements */
+.nav { font-family:Arial, Helvetica, sans-serif; padding-left:12px; font-weight: bold; font-size: 11px; color : #000000; 
+	   background-image: url(/images/site/navigation/background_off.gif);
+}
+.nav a:link 		{ text-decoration: none; color : #000000; }
+.nav a:visited		{ text-decoration: none; color : #000000; }
+.nav a:hover	{ text-decoration: none; color:#000000; }
+
+.navOver { font-family:Arial, Helvetica, sans-serif; padding-left:12px; font-weight: bold; font-size: 11px; color : #000000; 
+	   background-image: url(/images/site/navigation/background_over.gif);
+}
+.navOver a:link		{ text-decoration: none; color : #000000; }
+.navOver a:visited		{ text-decoration: none; color : #000000; }
+.navOver a:hover	{ text-decoration: none; color:#000000; }
+
+.navOn { font-family:Arial, Helvetica, sans-serif; padding-left:12px; font-weight: bold; font-size: 11px; color : #FFFFFF; 
+	   background-image: url(/images/site/navigation/background_on.gif);
+}
+.navOn a:link, a:visited		{ text-decoration: none; color : #FFFFFF; }
+.navOn a:hover	{ text-decoration: none; color:#FFFFFF; }
+
+.navOnOver { font-family:Arial, Helvetica, sans-serif; padding-left:12px; font-weight: bold; font-size: 11px; color : #FFFFFF; 
+	   background-image: url(/images/site/navigation/background_on.gif);
+}
+.navOnOver a:link, a:visited		{ text-decoration: none; color : #FFFFFF; }
+.navOnOver a:hover	{ text-decoration: none; color:#FFFFFF; }
+
+.sublink { padding-left:15px; padding-bottom:3px; font-weight: normal; font-size: 11px; color : #000000; }
+.sublink a:link 		{ text-decoration: none; color : #000000; }
+.sublink a:visited		{ text-decoration: none; color : #000000; }
+.sublink a:hover	{ text-decoration: underline; color:#990000; }
+
+.sublinkOver { padding-left:15px; padding-bottom:3px; font-weight: bold; font-size: 11px; color : #990000; }
+.sublinkOver a:link 		{ text-decoration: none; color : #990000; }
+.sublinkOver a:visited		{ text-decoration: none; color : #990000; }
+.sublinkOver a:hover	{ text-decoration: underline; color:#990000; }
+
+
+/* Form Fields */
+.search_box {font: 11px Arial, Helvetica, sans-serif; color: #000000; border-color : #000000; border-style : solid; border-width : 1px; font-weight:bold; text-indent: 2px; }
+.normal_box {font: 11px Arial, Helvetica, sans-serif; color: #000000; border-color : #666666; border-style : solid; border-width : 1px; text-indent: 2px; }
+.search_btn {font: 11px Arial, Helvetica, sans-serif; color: #ffffff; background: #990000; border-color : #000000; border-style : solid; border-width : 1px; font-weight:bold; letter-spacing: 1px; }
+.normal_btn {font: 11px Arial, Helvetica, sans-serif; color: #ffffff; background: #990000; border-color : #000000; border-style : solid; border-width : 1px; font-weight:bold; letter-spacing: 1px; }
+
+
+/* Directions */
+.directions_number { font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#FFFFFF; background-color: #990000; font-weight: bold; }
+.directions_even { font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#000000; background-color: #F5F5F5; padding: 5px; }
+.directions_odd { font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#000000; background-color: #DDDDDD; padding: 5px; }
+
+.footer { font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#666666; }
+

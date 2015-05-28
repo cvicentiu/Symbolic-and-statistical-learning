@@ -1,0 +1,241 @@
+/* Default stylesheet for CommonSpot - generated 2004-06-18 12:23:27
+Copyright 2002-2004, PaperThin, Inc.  */
+
+/* Document-level styles */
+.CS_Document { background-color:#FFFFFF; margin-top:0; margin-left:0; margin-right:0; margin-bottom:0; font-family:Verdana,Arial,sans-serif; font-size:medium; }
+
+/* Image Grid */
+.CS_Element_ImageGrid { visibility:visible; }
+.CS_BBar_Image { text-decoration:none; border-style:none; }
+
+/* Bulleted List */
+.CS_Element_BulletedList { visibility:visible; }
+.CS_BL_Bullet { text-decoration:none; border-style:none;color:#000000; }
+.CS_BL_Header { text-align:left; }
+.CS_BL_HeaderCaption { text-align:left; color:#000000; font-family:Verdana,Arial,sans-serif; font-weight:bold; text-decoration:none;  }
+.CS_BL_HeaderText { text-align:left; color:#000000; font-family:Verdana,Arial,sans-serif;  text-decoration:none;  }
+.CS_BL_Item { list-style-position:outside; }
+.CS_BL_ItemCaption { text-align:left; color:#000000; font-family:Verdana,Arial,sans-serif; font-weight:bold; text-decoration:none;  }
+.CS_BL_ItemText { text-align:left; color:#000000; font-family:Verdana,Arial,sans-serif;  text-decoration:none;  }
+
+/* Custom Script */
+.CS_Element_CustomCF { visibility:visible; }
+
+/* Simple Form */
+.CS_Element_SimpleForm { visibility:visible; }
+.CS_Form_Label { text-align:left;  vertical-align:text-top; }
+.CS_Form_Tree {   color:#000000; }
+.CS_Form_RichText {  }
+.CS_Form_Date {  }
+.CS_Form_Image { text-decoration:none; border-style:none; }
+.CS_Form_URL {  }
+.CS_Form_Email {  }
+.CS_Form_DropDown { align:bottom; }
+.CS_Form_DropDown_Item { }
+.CS_Form_SectionLabel { font-weight:bold;font-family:Verdana,Arial,sans-serif; }
+.CS_Form_Number {  font-family:Verdana,Arial,sans-serif; text-align:right; }
+.CS_Form_Text {  font-size:12px; }
+.CS_Form_Description { font-family:Verdana,Arial,sans-serif;   }
+.CS_Form_Button { text-align:center;font-family:Verdana,Arial,sans-serif; }
+.CS_Form_Required { font-weight:bold; text-align:left; vertical-align:text-top; font-size:12px;}
+.CS_Form_ResultText {   }
+.CS_Form_Label_Baseline { text-align:left;font-family:Verdana,Arial,sans-serif;  vertical-align:baseline; }
+.CS_Form_Required_Baseline { font-weight:bold; text-align:left; vertical-align:baseline; }
+.CS_Form_Form { padding:0;margin:0; }
+.CS_Form_SummaryMessage { font-family:Verdana,Arial,sans-serif; }
+
+/* Data Sheet */
+.CS_Element_DataSheet { visibility:visible; }
+.CS_DataSheet_Caption { text-decoration:none; text-align:center; font-weight:bold; color:#000000; }
+.CS_DataSheet_Alphabet { text-decoration:none; color:#0000FF; padding:4; }
+.CS_DataSheet_Alphabet_Selected { text-decoration:none; color:#880088; padding:4; }
+.CS_DataSheet_Table { padding:0; margin:0; }
+.CS_DataSheet_Header_Row { background-color:#888888; }
+.CS_DataSheet_HeaderItem_First_Column { background-color:#EEEEEE; font-weight:bold; color:#CC6600; padding:4; text-align:left; }
+.CS_DataSheet_HeaderItem_Column { background-color:#EEEEEE; font-weight:bold; color:#CC6600; padding:4; text-align:left; }
+.CS_DataSheet_Data_Row { background-color:#FFFFFF; }
+.CS_DataSheet_Data_First_Column { padding:4; }
+.CS_DataSheet_Data_Column { padding:4; }
+.CS_DataSheet_Data_Cell { text-align:left; }
+.CS_DataSheet_Data_Cell_Numeric { text-align:right; }
+.CS_DataSheet_Data_Cell_Action { text-align:center; text-decoration:underline; color:#0000FF; }
+.CS_DataSheet_Data_Row_Alternate { background-color:#E5E5E5; }
+.CS_DataSheet_Summary_Row { text-align:center; }
+.CS_DataSheet_Summary_Links {  text-decoration:none; }
+.CS_DataSheet_Summary_Current_Page {   }
+.CS_DatasheetExport_Link { text-decoration:none; color:#0000FF; padding:5; }
+
+/* Date */
+.CS_Element_Date { visibility:visible; }
+.CS_Date_Label { font-family:Verdana,Arial,sans-serif;   }
+.CS_Date_Date { font-family:Verdana,Arial,sans-serif;  color:#666666;  }
+.CS_Date_Time { font-family:Verdana,Arial,sans-serif;  color:#666666;  }
+
+/* Pop-up menus */
+.CS_Element_DHTML_Menu { visibility:visible; }
+
+/* Microsoft Word,Imported HTML */
+.CS_Element_HTML { visibility:visible; }
+
+/* Image */
+.CS_Element_Image { visibility:visible; }
+.CS_Image_Caption { text-decoration:none; text-align:center; font-family:Verdana,Arial,sans-serif; font-weight:bold; color:#000000; }
+.CS_Image_IMG { text-decoration:none; border-style:none;text-align:center; }
+
+/* Label */
+.CS_Element_Label { visibility:visible; }
+.CS_Label_Item { color:#000000; font-family:Verdana,Arial,sans-serif;  text-decoration:none; font-weight:bold; }
+.CS_Label_Current_Item { color:#000000; font-family:Verdana,Arial,sans-serif;  text-decoration:none; font-weight:bold; }
+.CS_Label_ItemCell { background-color:#ffffff; }
+.CS_Label_FirstLetter { color:#000000; font-family:Verdana,Arial,sans-serif; font-size:medium; text-decoration:none; font-weight:bold; }
+
+/* Tabular Layout */
+.CS_Element_Layout { visibility:visible; }
+.CS_Layout_Table { border-style:none; }
+.CS_Layout_TR { background-color:#FFFFFF; }
+.CS_Layout_TH { text-align:center; font-weight:bold; font-family:Verdana,Arial,sans-serif; color:#000000; text-decoration:none; }
+.CS_Layout_TD { text-align:left;vertical-align:top; }
+
+/* Link Bars,BreadCrumbs,PageSet Navigation */
+.CS_Element_LinkBar { visibility:visible;font-size: 12px; }
+.CS_LinkBar_Item { font-size: 12px;  }
+.CS_LinkBar_BeforeLabel {   color:#000000; font-size: 12px;}
+.CS_LinkBar_Separator {  font-size: 12px; }
+.CS_LinkBar_AfterLabel {   color:#000000; font-family:Verdana,Arial,sans-serif; font-size: 12px;}
+.CS_LinkBar_Image { text-decoration:none; border-style:none; font-size: 12px;}
+.CS_LinkBar_CurrentItem { font-size: 12px;  }
+
+/* Link List */
+.CS_Element_LinkList { visibility:visible; }
+.CS_LinkList_Caption { text-decoration:none; text-align:center; font-family:Verdana,Arial,sans-serif; font-weight:bold; color:#000000; }
+.CS_LinkList_ListBox { align:bottom; }
+.CS_LinkList_Item { font-family:Verdana,Arial,sans-serif; }
+.CS_LinkList_Button { text-align:center;font-weight:bold;font-family:Verdana,Arial,sans-serif; }
+.CS_LinkList_Form { padding:0;margin:0; }
+
+/* Multi-Section */
+.CS_Element_MultiSection { visibility:visible; }
+.CS_MS_Header { text-align:left; }
+.CS_MS_Header_Caption { text-decoration:none; text-align:center; font-family:Verdana,Arial,sans-serif; font-weight:bold; color:#000000; }
+.CS_MS_Header_Text { font-family:Verdana,Arial,sans-serif;   }
+.CS_MS_Index { visibility:visible; }
+.CS_MS_Index_Table { background-color:#000000; }
+.CS_MS_Index_Column { background-color:#000000; }
+.CS_MS_Index_Item { text-align:left;  color:#000000; }
+.CS_MS_Item {  font-family:Verdana,Arial,sans-serif;  color:#000000; }
+
+/* Embedded Object (video, etc.) */
+.CS_Element_Object { visibility:visible; }
+.CS_Object_Caption { text-decoration:none; text-align:center; font-family:Verdana,Arial,sans-serif; font-weight:bold; color:#000000; }
+
+/* Page Index, PageSet Index */
+.CS_Element_PageIndex { visibility:visible; }
+.CS_PgIndex_Header { text-align:left; color:#000000; font-family:Verdana,Arial,sans-serif; font-weight:bold; }
+.CS_PgIndex_Item { background-color:#FFFFFF; font-family:Verdana,Arial,sans-serif; }
+.CS_PgIndex_Item_Alternate { background-color:#FFFFFF; font-family:Verdana,Arial,sans-serif; }
+.CS_PgIndex_Item_Title { }
+.CS_PgIndex_Item_Description {  }
+.CS_PgIndex_Item_Category {  }
+.CS_PgIndex_Item_Author { }
+.CS_PgIndex_Item_LastMod {  }
+.CS_PgIndex_Item_PubDate {  }
+.CS_PgIndex_Item_SubSite {  }
+.CS_PgIndex_Primary_Category { text-decoration:none; font-family:Verdana,Arial,sans-serif; }
+.CS_PgIndex_Secondary_Category { text-decoration:none; font-family:Verdana,Arial,sans-serif; }
+.CS_PgIndex_Bullet { text-decoration:none; border-style:none; }
+.CS_PgIndex_Item_Owner {  }
+.CS_PgIndex_Item_CreationDate { color:#000000; text-decoration:none;   }
+.CS_PgIndex_Item_LastMajor { color:#000000; text-decoration:none;   }
+.CS_PgIndex_Item_MoreLink {  border-style:none; }
+.CS_PgIndex_NoRecords {  }
+
+/* PowerPoint Presentation */
+.CS_Element_PowerPoint { visibility:visible; }
+.CS_Pres_Caption { text-decoration:none; text-align:center; font-family:Verdana,Arial,sans-serif; font-weight:bold; color:#000000; }
+.CS_Pres_Image { text-decoration:none; border-style:none; }
+
+/* Scheduled Content */
+.CS_Element_Schedule { visibility:visible; }
+
+/* Search Form */
+.CS_Element_SearchForm { visibility:visible; }
+.CS_SF_Label { color:#000000; font-weight:bold;  text-decoration:none; }
+.CS_SF_Input { color:#000000;  text-decoration:none; }
+.CS_SF_Select { color:#000000; text-decoration:none;   }
+.CS_SF_Checkbox { color:#000000;  text-decoration:none; }
+.CS_SF_Button { color:#000000;  text-decoration:none; }
+.CS_SF_Image { text-decoration:none; border-style:none;color:#000000; }
+.CS_SF_Link {   }
+.CS_SF_AdvLink {   }
+.CS_SF_SubSiteLabel { color:#000000; font-weight:bold;  text-decoration:none; }
+.CS_SF_AdvImage { text-decoration:none; border-style:none; }
+.CS_SF_Form { padding:0;margin:0; }
+
+/* Search Results */
+.CS_Element_SearchResults { visibility:visible; }
+.CS_SR_Results_Header { color:#808080; }
+.CS_SR_Category { font-weight:bold; }
+.CS_SR_PageNav { color:#000000;text-align:left; }
+.CS_SR_Prev { color:#000000; }
+.CS_SR_Next { color:#000000; }
+.CS_SR_Page { color:#000000; }
+.CS_SR_Item {  }
+.CS_SR_Item_Alternate { color:#88FF00; text-decoration:none; }
+.CS_SR_Item_Title {  }
+.CS_SR_Item_Description {   }
+.CS_SR_Item_SubSite { color:#000000;   text-decoration:none; }
+.CS_SR_Item_Author { color:#000000;   text-decoration:none; }
+.CS_SR_Item_LastMod { color:#000000;   text-decoration:none; }
+.CS_SR_Item_PubDate { color:#000000;   text-decoration:none; }
+.CS_SR_Item_Score { color:#000000;   text-decoration:none; }
+.CS_SR_Item_Owner { color:#000000;   text-decoration:none; }
+.CS_SR_Item_BreadCrumbs {   text-decoration:none; }
+
+/* Tab Bar */
+.CS_Element_TabBar { visibility:visible; }
+.CS_TBar_Item { color:#FFFFFF; font-family:Verdana,Arial,sans-serif;  text-decoration:none; font-weight:bold; }
+.CS_TBar_Item_Selected { color:#FFFFFF; font-family:Verdana,Arial,sans-serif;  text-decoration:none; font-weight:bold; }
+.CS_TBar_SpacingCell { background-color:#000000; }
+.CS_TBar_ItemCell { background-color:#000000; }
+.CS_TBar_ItemCell_Selected { color:#000000; background-color:#ffffff; font-family:Verdana,Arial,sans-serif;  text-decoration:none; font-weight:bold; text-align:center; }
+
+/* Tasks */
+.CS_Element_Task { visibility:visible; }
+
+/* Text Around Image */
+.CS_Element_TAI { visibility:visible; }
+.CS_TAI_Caption { text-decoration:none; text-align:center; font-family:Verdana,Arial,sans-serif; font-weight:bold; color:#000000; }
+.CS_TAI_Text {  font-family:Verdana,Arial,sans-serif;  color:#000000; }
+.CS_TAI_Image { text-align:center; text-decoration:none; }
+
+/* Textblock, Simple Link */
+.CS_Element_Textblock { visibility:visible; }
+.CS_Textblock_Caption { text-decoration:none; text-align:left; font-family:Verdana,Arial,sans-serif; font-weight:bold; color:#000000; font-size:16px;}
+.CS_Textblock_Text { font-family:Verdana,Arial,sans-serif; font-size:12px; color:#000000; }
+
+/* External Content (Web Process) */
+.CS_Element_WebProcess { visibility:visible; }
+
+/* Any Formatted Textblock */
+.CS_RT_TABLE { padding:0; margin:0; }
+.CS_RT_TR { background-color:#FFFFFF; }
+.CS_RT_TH { text-align:center; font-weight:bold; color:#000000; }
+.CS_RT_TD { text-align:left;  font-family:Verdana,Arial,sans-serif; color:#000000;vertical-align:top; }
+.CS_RT_UL { list-style-type:circle; }
+.CS_RT_OL { list-style-type:decimal; }
+.CS_RT_LI { list-style-position:outside; }
+.CS_RT_Text { font-family:Verdana,Arial,sans-serif; color:#000000; }
+.CS_RT_Image { text-decoration:none; border-style:none; }
+
+/* Forums element */
+.CS_Element_Forums { visibility:visible; }
+
+/* Query by Example */
+.CS_Element_QBE { visibility:visible; }
+.CS_QBE_Form { padding:0;margin:0; }
+.CS_QBE_Label { text-align:right;font-family:Verdana,Arial,sans-serif;  vertical-align:text-top; }
+.CS_QBE_Label_Baseline { text-align:right;font-family:Verdana,Arial,sans-serif;  vertical-align:baseline; }
+.CS_QBE_DropDown { align:bottom; }
+.CS_QBE_DropDown_Item { font-family:Verdana,Arial,sans-serif; }
+.CS_QBE_Description { font-family:Verdana,Arial,sans-serif;   }
+.CS_QBE_Button { text-align:center;font-family:Verdana,Arial,sans-serif; }

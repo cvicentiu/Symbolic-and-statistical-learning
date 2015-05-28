@@ -1,0 +1,275 @@
+html {
+	height: 110%;
+	background: url(../siteGraphics/history/bg_html.jpg) repeat-y;
+	}
+	
+body {
+	height: 100%;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 76%;
+	background: url(../siteGraphics/history/bg_body.jpg) repeat-x;
+	padding: 0px;
+	margin: 0px;
+	}
+	
+#container {
+	width: 760px;
+	}
+	
+#content {
+	font-size: 0.9em;
+	font-size: 1em;
+	}
+	
+#leftCol {
+	float: left;
+	width: 158px;
+	background: url(../siteGraphics/history/bg_left.jpg) repeat-y;
+	overflow: hidden;
+	}
+	
+#leftCol p {
+	font-size: 11px;
+	font-weight: bold;
+	padding: 0px 30px;
+	margin: 0px;
+	margin-bottom: 10px;
+	text-align: center;
+	}
+	
+#rightCol {
+	float: right;
+	width: 585px;
+	}
+	
+#rightCol #menu td {
+	vertical-align: bottom;
+	}
+	
+#externalSiteMenu {
+	padding: 0px;
+	padding-left: 21px;
+	margin: 0px;
+	}
+	
+#externalSiteMenu li {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	margin-bottom: -3px;
+	}
+	
+#externalSiteMenu > li {
+	margin: 0px;
+	}
+	
+#externalSiteMenu li a {
+	background: green;
+	display: block;
+	height: 35px;
+	padding: 0px;
+	margin: 0px;
+	}
+	
+#externalSiteMenu li a span {
+	display: none;
+	}
+	
+#externalSiteMenu li.ohioHistory a {
+	background: url(../siteGraphics/history/hist_ohioHistory.gif) no-repeat top left;
+	}
+	
+#externalSiteMenu li.ohioKids a {
+	background: url(../siteGraphics/history/hist_ohioKids.gif) no-repeat top left;
+	}
+	
+#externalSiteMenu li.ohioTeachers a {
+	background: url(../siteGraphics/history/hist_ohioHistoryTeachers.gif) no-repeat top left;
+	}
+	
+#externalSiteMenu li.ohioPix a {
+	background: url(../siteGraphics/history/hist_ohioPix.gif) no-repeat top left;
+	}
+	
+#externalSiteMenu li.ohioMemory a {
+	background: url(../siteGraphics/history/hist_ohioMemory.gif) no-repeat top left;
+	}
+	
+#externalSiteMenu li.ohioHistory a:hover,
+#externalSiteMenu li.ohioKids a:hover,
+#externalSiteMenu li.ohioTeachers a:hover,
+#externalSiteMenu li.ohioPix a:hover,
+#externalSiteMenu li.ohioMemory a:hover {
+	background-position: 0% -35px;
+	}
+	
+#hzMenu {
+	width: 600px;
+	height: 71px;
+	overflow: hidden;
+	}
+	
+#hzMenu ul {
+	padding: 0px;
+	margin: 0px;
+	}
+	
+#hzMenu ul li {
+	display: inline;
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	}
+	
+#hzMenu ul li a {
+	text-decoration: none;
+	}
+	
+#hzMenu ul li a span {
+	visibility: hidden;
+	}
+
+#hzMenu ul li.alphabet a {
+	float: left;
+	width: 109px;
+	background: url(/siteGraphics/menu/history/menu_alphabet.jpg) no-repeat top left;
+	padding-top: 60px;
+	}
+	
+#hzMenu ul li.history a {
+	float: left;
+	width: 114px;
+	background: url(/siteGraphics/menu/history/menu_history.jpg) no-repeat top left;
+	padding-top: 60px;
+	}
+	
+#hzMenu ul li.naturalHistory a {
+	float: left;
+	width: 130px;
+	background: url(/siteGraphics/menu/history/menu_naturalHistory.jpg) no-repeat top left;	
+	padding-top: 60px;
+	}
+	
+#hzMenu ul li.prehistory a {
+	float: left;
+	width: 130px;
+	background: url(/siteGraphics/menu/history/menu_prehistory.jpg) no-repeat top left;
+	padding-top: 60px;
+	}
+
+#hzMenu ul li.stateSymbols a {
+	float: left;
+	width: 94px;
+	background: url(/siteGraphics/menu/history/menu_stateSymbols.jpg) no-repeat top left;	
+	padding-top: 60px;
+	}
+
+/*modify the following rule based on the current selection */
+
+#hzMenu ul li.alphabet a:hover,	
+#hzMenu ul li.naturalHistory a:hover,
+#hzMenu ul li.prehistory a:hover,
+#hzMenu ul li.stateSymbols a:hover {
+	background-position: 0% -71px;
+	}
+
+#subMenuContainer {
+	font-size: 11px;
+	font-weight: bold;
+	padding-top: 2px;
+	}
+	
+#subMenuContainer ul {
+	padding: 0px;
+	margin: 0px;
+	}
+	
+#subMenuContainer ul li {
+	display: inline;
+	list-style: none;
+	}
+	
+#subMenuContainer ul li a, #subMenuContainer ul li a:active, #subMenuContainer ul li a:visited {
+	color: #ccffcc;
+	padding: 0px 2px;
+	text-decoration: none;
+	}
+	
+#subMenuContainer ul li a:hover {
+	color: #ffff66;
+	}
+	
+#breadcrumb {
+	list-style: none;
+	font-family: arial;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 0px;
+	margin-left: 0px;
+	}
+
+#breadcrumb li {
+	display: inline;
+	padding-right: 5px;
+	}
+	
+#breadcrumb li a {
+	color: #000;
+	text-decoration: none;
+	}
+	
+#breadcrumb li a:hover {
+	color: #ff3300;
+	text-decoration: underline;
+	}
+	
+div.sidebar {
+	float: right;
+	width: 140px;
+	margin: 0px 0px 4px 4px;
+	} 
+	
+div.sidebar div {
+	margin-bottom: 10px;
+	}
+	
+div.sidebarImage {
+	color: #000;
+	background: #e2e2e2;
+	padding: 4px;
+	border: 1px solid #000;
+	} 
+	
+div.sidebarEntries {
+	color: #000;
+	background: #ffffcc;
+	padding: 4px;
+	border: 1px solid #000;
+	}
+	
+div.sidebarEntries h3 {
+	font-size: 12px;
+	padding: 0px;
+	padding-bottom: 5px;
+	margin: 0px;
+	}
+	
+div.sidebarEntries ul {
+	padding: 0px;
+	margin: 0px;
+	margin-left: 20px;
+	}
+	
+div.sidebarEntries ul li {
+	list-style: square;
+	}
+	
+div.sidebarEntries ul li a, div.sidebarEntries ul li a:visited, div.sidebarEntries ul li a:active {
+	color: #000;
+	text-decoration: none;
+	}
+	
+div.sidebarEntries ul li a:hover {
+	color: #000099;
+	text-decoration: underline;
+	}

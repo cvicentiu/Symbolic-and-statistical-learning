@@ -1,0 +1,194 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.72 [en] (X11; U; SunOS 5.6 sun4u) [Netscape]">
+</head>
+<body>
+------------------------------------------------------------------------------
+<br>\\
+<br>Paper: cs.CL/0006017
+<br>From: Frankie James &lt;fjames@riacs.edu>
+<br>Date: Fri, 9 Jun 2000 17:28:40 GMT&nbsp;&nbsp; (67kb)
+<p>Title: Turning Speech Into Scripts
+<br>Authors: Manny Rayner, Beth Ann Hockey, Frankie James
+<br>Comments: Working notes from AAAI Spring Symposium
+<br>Subj-class: Computation and Language
+<br>ACM-class: H.5.2; I.2.7
+<br>Journal-ref: AAAI Spring Symposium on Natural Dialogues with Practical
+Robotic
+<br>&nbsp; Devices, March 20-22, 2000. Stanford, CA
+<br>\\
+<br>&nbsp; We describe an architecture for implementing spoken natural
+language dialogue
+<br>interfaces to semi-autonomous systems, in which the central idea is
+to
+<br>transform the input speech signal through successive levels of representation
+<br>corresponding roughly to linguistic knowledge, dialogue knowledge,
+and domain
+<br>knowledge. The final representation is an executable program in a simple
+<br>scripting language equivalent to a subset of Cshell. At each stage
+of the
+<br>translation process, an input is transformed into an output, producing
+as a
+<br>byproduct a "meta-output" which describes the nature of the transformation
+<br>performed. We show how consistent use of the output/meta-output distinction
+<br>permits a simple and perspicuous treatment of apparently diverse topics
+<br>including resolution of pronouns, correction of user misconceptions,
+and
+<br>optimization of scripts. The methods described have been concretely
+realized in
+<br>a prototype speech interface to a simulation of the Personal Satellite
+<br>Assistant.
+<br>\\ ( http://arXiv.org/abs/cs/0006017 ,&nbsp; 67kb)
+<br>------------------------------------------------------------------------------
+<br>\\
+<br>Paper: cs.CL/0006018
+<br>From: Frankie James &lt;fjames@riacs.edu>
+<br>Date: Fri, 9 Jun 2000 18:10:58 GMT&nbsp;&nbsp; (6kb)
+<p>Title: Accuracy, Coverage, and Speed: What Do They Mean to Users?
+<br>Authors: Frankie James, Manny Rayner, Beth Ann Hockey
+<br>Comments: Position paper for CHI 2000 Workshop on Natural-Language
+Interaction
+<br>Subj-class: Computation and Language; Human-Computer Interaction
+<br>ACM-class: H.5.2; I.2.7
+<br>\\
+<br>&nbsp; Speech is becoming increasingly popular as an interface modality,
+especially
+<br>in hands- and eyes-busy situations where the use of a keyboard or mouse
+is
+<br>difficult. However, despite the fact that many have hailed speech as
+being
+<br>inherently usable (since everyone already knows how to talk), most
+users of
+<br>speech input are left feeling disappointed by the quality of the interaction.
+<br>Clearly, there is much work to be done on the design of usable spoken
+<br>interfaces. We believe that there are two major problems in the design
+of
+<br>speech interfaces, namely, (a) the people who are currently working
+on the
+<br>design of speech interfaces are, for the most part, not interface designers
+and
+<br>therefore do not have as much experience with usability issues as we
+in the CHI
+<br>community do, and (b) speech, as an interface modality, has vastly
+different
+<br>properties than other modalities, and therefore requires different
+usability
+<br>measures.
+<br>\\ ( http://arXiv.org/abs/cs/0006018 ,&nbsp; 6kb)
+<br>------------------------------------------------------------------------------
+<br>\\
+<br>Paper: cs.CL/0006019
+<br>From: Frankie James &lt;fjames@riacs.edu>
+<br>Date: Fri, 9 Jun 2000 21:41:54 GMT&nbsp;&nbsp; (10kb)
+<p>Title: A Compact Architecture for Dialogue Management Based on Scripts
+and
+<br>&nbsp; Meta-Outputs
+<br>Authors: Manny Rayner, Beth Ann Hockey, Frankie James
+<br>Subj-class: Computation and Language
+<br>ACM-class: I.2.7; H.5.2
+<br>Journal-ref: Language Technology Joint Conference ANLP-NAACL 2000.
+29 April - 4
+<br>&nbsp; May 2000, Seattle, WA
+<br>\\
+<br>&nbsp; We describe an architecture for spoken dialogue interfaces to
+semi-autonomous
+<br>systems that transforms speech signals through successive representations
+of
+<br>linguistic, dialogue, and domain knowledge. Each step produces an output,
+and a
+<br>meta-output describing the transformation, with an executable program
+in a
+<br>simple scripting language as the final result. The output/meta-output
+<br>distinction permits perspicuous treatment of diverse tasks such as
+resolving
+<br>pronouns, correcting user misconceptions, and optimizing scripts.
+<br>\\ ( http://arXiv.org/abs/cs/0006019 ,&nbsp; 10kb)
+<br>------------------------------------------------------------------------------
+<br>\\
+<br>Paper: cs.CL/0006020
+<br>From: Frankie James &lt;fjames@riacs.edu>
+<br>Date: Fri, 9 Jun 2000 20:49:03 GMT&nbsp;&nbsp; (35kb)
+<p>Title: A Comparison of the XTAG and CLE Grammars for English
+<br>Authors: Beth Ann Hockey, Manny Rayner, Frankie James
+<br>Comments: 5th International Workshop on Tree Adjoining Grammars and
+Related
+<br>&nbsp; Formalisms. 25-27 May 2000, Paris, France
+<br>Subj-class: Computation and Language
+<br>ACM-class: I.2.7
+<br>\\
+<br>&nbsp; When people develop something intended as a large broad-coverage
+grammar,
+<br>they usually have a more specific goal in mind. Sometimes this goal
+is covering
+<br>a corpus; sometimes the developers have theoretical ideas they wish
+to
+<br>investigate; most often, work is driven by a combination of these two
+main
+<br>types of goal. What tends to happen after a while is that the community
+of
+<br>people working with the grammar starts thinking of some phenomena as
+<br>``central'', and makes serious efforts to deal with them; other phenomena
+are
+<br>labelled ``marginal'', and ignored. Before long, the distinction between
+<br>``central'' and ``marginal'' becomes so ingrained that it is automatic,
+and
+<br>people virtually stop thinking about the ``marginal'' phenomena. In
+practice,
+<br>the only way to bring the marginal things back into focus is to look
+at what
+<br>other people are doing and compare it with one's own work. In this
+paper, we
+<br>will take two large grammars, XTAG and the CLE, and examine each of
+them from
+<br>the other's point of view. We will find in both cases not only that
+important
+<br>things are missing, but that the perspective offered by the other grammar
+<br>suggests simple and practical ways of filling in the holes. It turns
+out that
+<br>there is a pleasing symmetry to the picture. XTAG has a very good treatment
+of
+<br>complement structure, which the CLE to some extent lacks; conversely,
+the CLE
+<br>offers a powerful and general account of adjuncts, which the XTAG grammar
+does
+<br>not fully duplicate. If we examine the way in which each grammar does
+the thing
+<br>it is good at, we find that the relevant methods are quite easy to
+port to the
+<br>other framework, and in fact only involve generalization and systematization
+of
+<br>existing mechanisms.
+<br>\\ ( http://arXiv.org/abs/cs/0006020 ,&nbsp; 35kb)
+<br>------------------------------------------------------------------------------
+<br>\\
+<br>Paper: cs.CL/0006021
+<br>From: Frankie James &lt;fjames@riacs.edu>
+<br>Date: Fri, 9 Jun 2000 22:03:10 GMT&nbsp;&nbsp; (12kb)
+<p>Title: Compiling Language Models from a Linguistically Motivated Unification
+<br>&nbsp; Grammar
+<br>Authors: Manny Rayner, Beth Ann Hockey, Frankie James, Elizabeth O.
+Bratt,
+<br>&nbsp; Sharon Goldwater, Mark Gawron
+<br>Comments: To be published in COLING 2000
+<br>Subj-class: Computation and Language
+<br>ACM-class: I.2.7
+<br>\\
+<br>&nbsp; Systems now exist which are able to compile unification grammars
+into
+<br>language models that can be included in a speech recognizer, but it
+is so far
+<br>unclear whether non-trivial linguistically principled grammars can
+be used for
+<br>this purpose. We describe a series of experiments which investigate
+the
+<br>question empirically, by incrementally constructing a grammar and discovering
+<br>what problems emerge when successively larger versions are compiled
+into finite
+<br>state graph representations and used as language models for a medium-vocabulary
+<br>recognition task.
+<br>\\ ( http://arXiv.org/abs/cs/0006021 ,&nbsp; 12kb)
+<br>&nbsp;
+</body>
+</html>

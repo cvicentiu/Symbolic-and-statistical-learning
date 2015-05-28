@@ -1,0 +1,78 @@
+/*new method*/
+ul#tngnav {
+	margin:0 0px 0px 5px;
+	padding: 0 0 0 0px;
+	list-style: none;
+	border: none;
+} 
+
+#tngnav li {
+	display: block;
+	margin: 0 0 0 1px;
+	padding: 0;
+	float:left;
+}
+
+/*inactive tab*/
+#tngnav a {
+	display:block;
+	color:#444;
+	text-decoration:none;
+	background:#CCCC99;
+	margin:0;
+	padding: 0.2em 1em 0.4em 1em;
+	border-right: 1px solid #444;
+	position: relative;
+	font: 10px arial, helvetica, sans-serif;
+}
+	
+/*active tab*/
+#tngnav a:hover {
+	background:#990000;
+	color:#FFCC00;
+}
+
+/*active tab*/
+#tngnav a.here {
+	position:relative;
+	z-index:102;
+	background:#990000;
+	color:#FFCC00;
+	border-right: 1px solid #444;
+	padding: 0.2em 1em 0.4em 1em;
+	margin: 0;
+}
+
+/*to keep older browsers happy*/
+#tabs div {
+	margin:0 1px 0 0;
+	position: relative;
+	float:left;
+	padding: 0em 0em .3em 0px;
+}
+
+#tabs .divhere {
+	z-index:102;
+}
+
+/*inactive tab*/
+#tabs a {
+	background: #CCCC99;
+	color:#444;
+	padding: 0.2em 0.8em 0.5em 0.8em;
+	font: 10px arial, helvetica, sans-serif;
+	text-decoration: none;
+	border-right: 1px solid #aaa;
+}
+
+/*active tab*/
+#tabs a:hover {
+	background: #990000;
+	color:#FFFFFF;
+}
+
+/*active tab*/
+#tabs .here {
+	background: #990000;
+	color:#FFCC00;
+}

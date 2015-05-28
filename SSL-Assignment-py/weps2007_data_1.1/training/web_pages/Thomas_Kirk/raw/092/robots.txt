@@ -1,0 +1,97 @@
+# robots.txt file for CDS web servers
+# Ref: 2006072000
+
+User-agent: *
+Disallow: /js/
+Disallow: /css/
+Disallow: /images/
+Disallow: /multimedia/ # Delete entry if we want to allow PDF crawling
+Disallow: /dir/ # Disallow crawling of our directory
+Disallow: /edc/ # Disallow our admin tools
+Disallow: /tools/ # Disallow our admin tools
+Disallow: /registration/ # Disallow Shadow
+Disallow: /html/ # We don't have static pages
+Disallow: /mld/mercurynews/3626332.htm # Disallow a specific story for cache flushing
+Disallow: /reg/ # Disallow Registration
+Disallow: /mld/krcontent/ # This is a dummy publication and should not be spidered
+
+# Restricting crawlers from search directories.
+Disallow: /mld/aberdeennews/search/
+Disallow: /mld/agweek/search/
+Disallow: /mld/americannews/search/
+Disallow: /mld/apspanish/search/
+Disallow: /mld/beaconjournal/search/
+Disallow: /mld/belleville/search/
+Disallow: /mld/biloxi/search/
+Disallow: /mld/blue/search/
+Disallow: /mld/bradenton/search/
+Disallow: /mld/bradentonherald/search/
+Disallow: /mld/broward/search/
+Disallow: /mld/browardherald/search/
+Disallow: /mld/cctimes/search/
+Disallow: /mld/centredaily/search/
+Disallow: /mld/charlotte/search/
+Disallow: /mld/dailynews/search/
+Disallow: /mld/dailytimes/search/
+Disallow: /mld/democrat/search/
+Disallow: /mld/dfw/search/
+Disallow: /mld/duluthsuperior/search/
+Disallow: /mld/duluthtribune/search/
+Disallow: /mld/eagle/search/
+Disallow: /mld/elnuevo/search/
+Disallow: /mld/enquirer/search/
+Disallow: /mld/farmforum/search/
+Disallow: /mld/fortwayne/search/
+Disallow: /mld/grandforks/search/
+Disallow: /mld/grandforksherald/search/
+Disallow: /mld/heraldleader/search/
+Disallow: /mld/inquirer/search/
+Disallow: /mld/journalgazette/search/
+Disallow: /mld/kansas/search/
+Disallow: /mld/kansascity/search/
+Disallow: /mld/kansascitystar/search/
+Disallow: /mld/kentucky/search/
+Disallow: /mld/krwashington/search/
+Disallow: /mld/laestrella/search/
+Disallow: /mld/ledgerenquirer/search/
+Disallow: /mld/macon/search/
+Disallow: /mld/mcherald/search/
+Disallow: /mld/mercurynews/search/
+Disallow: /mld/miamiherald/search/
+Disallow: /mld/montereyherald/search/
+Disallow: /mld/myrtlebeachonline/search/
+Disallow: /mld/newsdemocrat/search/
+Disallow: /mld/newssentinel/search/
+Disallow: /mld/nuevomundo/search/
+Disallow: /mld/observer/search/
+Disallow: /mld/ohio/search/
+Disallow: /mld/philly/search/
+Disallow: /mld/pioneerpress/search/
+Disallow: /mld/realcities/search/
+Disallow: /mld/sanluisobispo/search/
+Disallow: /mld/sanluisobispotribune/search/
+Disallow: /mld/siliconvalley/search/
+Disallow: /mld/startelegram/search/
+Disallow: /mld/state/search/
+Disallow: /mld/streetmiami/search/
+Disallow: /mld/sunherald/search/
+Disallow: /mld/sunnews/search/
+Disallow: /mld/tallahassee/search/
+Disallow: /mld/telegraph/search/
+Disallow: /mld/thatsracin/search/
+Disallow: /mld/thestate/search/
+Disallow: /mld/thesunherald/search/
+Disallow: /mld/thetimesleader/search/
+Disallow: /mld/timesleader/search/
+Disallow: /mld/twincities/search/
+Disallow: /mld/vietmerc/search/
+Disallow: /mld/weekender/search/
+
+
+# Rover is a bad dog <http://www.roverbot.com>
+User-agent: Roverbot
+Disallow: /
+
+#As per ticket 151315
+User-agent: PropsmartCrawler
+Disallow: /

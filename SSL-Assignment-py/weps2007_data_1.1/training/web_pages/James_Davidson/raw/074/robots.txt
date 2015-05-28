@@ -1,0 +1,13 @@
+# robots.txt
+
+# Evil non-search engine robot that requests bad URLs and pummels server
+User-agent: http://www.almaden.ibm.com/cs/crawler 
+Disallow: /
+
+User-agent: *
+Disallow: /admin
+Disallow: /editor
+Disallow: /logs/
+Disallow: /docs/
+Disallow: /rate/
+Disallow: /emailto.php

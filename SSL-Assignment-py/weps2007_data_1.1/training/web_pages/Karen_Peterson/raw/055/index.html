@@ -1,0 +1,375 @@
+
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+var Form1 = null;
+var HiddenVisitorDate = null;
+var HiddenInterest = null;
+var InterestSeeder = null;
+var AgentName = null;
+var AgentNameSeeder = null;
+var HiddenAgentEmail = null;
+var HiddenAgentID = null;
+var ImageButton1 = null;
+var ImageButton2 = null;
+var ImageButton3 = null;
+var ImageButton4 = null;
+var ImageButton5 = null;
+var ImageButton6 = null;
+var ImageButton13 = null;
+var ImageButton14 = null;
+var ImageButton15 = null;
+var ImageButton16 = null;
+var ImageButton7 = null;
+var ImageButton8 = null;
+var ImageButton11 = null;
+var ImageButton9 = null;
+var ImageButton10 = null;
+var ImageButton17 = null;
+var VisitorName = null;
+var VisitorEmail = null;
+var VisitorMessage = null;
+var ImageButton12 = null;
+var ImageButton18 = null;
+//-->
+var Page1 = "AreasIServe.asp?Agents_Position=FIL%3AORD%3AABS%3A380KEY%3A84PAR%3A";
+var Page2 = "MyLinks.asp?Agents_Position=FIL%3AORD%3AABS%3A380KEY%3A84PAR%3A";
+var Page3 = "experience.asp?Agents_Position=FIL%3AORD%3AABS%3A380KEY%3A84PAR%3A";
+var Page4 = "servicecommitment.asp?Agents_Position=FIL%3AORD%3AABS%3A380KEY%3A84PAR%3A";
+var Page5 = "Testimonials.asp?Agents_Position=FIL%3AORD%3AABS%3A380KEY%3A84PAR%3A";
+var Page6 = "VisitorMsgConf.asp?Agents_Position=FIL%3AORD%3AABS%3A380KEY%3A84PAR%3A";
+</SCRIPT>
+<SCRIPT SRC="DBCommon.js"></SCRIPT>
+<SCRIPT SRC="DBImgBtn.js"></SCRIPT>
+<SCRIPT SRC="DBEdtBox.js"></SCRIPT>
+<SCRIPT SRC="Client_Gen_3.0_Recordset.js"></SCRIPT>
+<SCRIPT SRC="DBHiddenObj.js"></SCRIPT>
+<SCRIPT SRC="DBForm.js"></SCRIPT>
+<SCRIPT SRC="AgentHome.js"></SCRIPT>
+<SCRIPT SRC="AgentHome_SubWindows.js"></SCRIPT>
+ 
+<Script src="AgentNavigationSubWindows.js"></script>
+
+<script language="javascript">
+
+var alertMessage;
+var errorMessage;
+
+var visitorNameValue;
+var visitorEmailValue;
+var visitorMessageValue;
+
+var emailLength;
+var emailExtension;
+
+function validatePurpleBox(z) {
+	alertMessage = "";
+	errorMessage = "";
+	
+	visitorNameValue = document.Form1.VisitorName.value;
+	visitorEmailValue = document.Form1.VisitorEmail.value;
+	visitorMessageValue = document.Form1.VisitorMessage.value;
+	
+	if (visitorNameValue == "") {
+		errorMessage += "Please fill in your name!\r"
+	}
+	if (visitorEmailValue == "") {
+		errorMessage += "Please fill in your email address!\r"
+	}
+	
+	else {
+			if (visitorEmailValue.search("@") == -1) {
+				errorMessage += "Incorrect email format.  There must be an \"@\" symbol in the email address.\r"
+			}
+			
+			if (visitorEmailValue.search(".net") == -1 && visitorEmailValue.search(".com") == -1 && visitorEmailValue.search(".org") == -1 && visitorEmailValue.search(".edu") == -1) {
+				errorMessage += "Incorrect email format.  There must be a \".com\", a \".net\", a \".org\" or a \".edu\" at the end of the email address.\r"
+			}
+			
+			else {
+			
+				emailLength = visitorEmailValue.length
+				emailExtension = parseInt(emailLength);
+				emailExtension = emailExtension - 4;
+				
+				if (visitorEmailValue.search(".com") != -1) {
+				
+					if (visitorEmailValue.substring(emailExtension, emailLength) != ".com") {
+						errorMessage += "Incorrect email format.  The \".com\" must be at the end of the email address.\r"
+					}
+				}
+				
+				else if (visitorEmailValue.search(".net") != -1) {
+				
+					if (visitorEmailValue.substring(emailExtension, emailLength) != ".net") {
+						errorMessage += "Incorrect email format.  The \".net\" must be at the end of the email address.\r"
+					}
+				}
+				
+				else if (visitorEmailValue.search(".edu") != -1) {
+				
+					if (visitorEmailValue.substring(emailExtension, emailLength) != ".edu") {
+						errorMessage += "Incorrect email format.  The \".edu\" must be at the end of the email address.\r"
+					}
+				}
+				
+				else {
+				
+					if (visitorEmailValue.substring(emailExtension, emailLength) != ".org") {
+						errorMessage += "Incorrect email format.  The \".org\" must be at the end of the email address.\r"
+					}
+				}
+			}
+		}
+			
+	if (visitorMessageValue == "") {
+		errorMessage += "Please write a question!\r"
+	}
+	
+	if (errorMessage > "") {
+		alertMessage = "Sorry, your question could not be submitted\r\r" + errorMessage;
+		alert(alertMessage);
+	}
+	else {
+		document.Form1.action = "AgentHome.asp?ImageButton18=1";
+		var confWin = window.open(z, 'ConfirmWindow', 'height=200,width=350,resizable=yes,scrollbars=no');
+		confWin.focus();
+		Form1.submit();
+	}
+}
+
+</script>
+<script language="javascript">
+	function IpixWin(z) { 
+		HomeWindow = window.open(z, 'IpixW', 'height=350,width=510,location=no' );
+		HomeWindow.focus();
+		}
+</script>
+
+<html>
+<head>
+<TITLE>McMillin Realty & Mortgage, San Diego's Real Estate Company</TITLE>
+
+<META NAME="Content-Type" CONTENT="text/html;CHARSET-iso-8859-1">
+<META NAME="Reply-to" CONTENT="bonita@mcmillinrealty.com">
+<META HTTP-EQUIV="Designed Internet Solutions" CONTENT="Designed Internet Solutions">
+<META HTTP-EQUIV="distribution" CONTENT="Global">
+<META NAME="ROBOTS" CONTENT="ALL">
+<META NAME="revisit" CONTENT="15 days">
+<META NAME="robots" CONTENT="index,follow">
+<META NAME="Description" CONTENT="McMillin Realty and Mortgage is San
+Diego's Real Estate Company. We have Real Estate Agents with homes for sale
+all over San Diego County, and offer all types of Real Estate financing."
+<META NAME="Keywords" CONTENT="McMillin Realty,McMillin Mortgage,Homes for
+sale in San Diego,Real Estate Agents in San Diego,Relocate to San
+Diego,Rentals in San Diego,Home Loans,Homes for sale in Carlsbad,Homes for
+sale in Solana Beach,Homes for sale in Miramar,Homes for sale in Point
+Loma,Homes for sale in Coronado,Homes for sale in Vista,Homes for sale in
+Oceanside,Homes for sale in Encintas,Homes for sale in La Jolla,Homes for
+sale in Bonita,Homes for sale in Chula Vista,Homes for sale in Scipps
+Ranch,Homes for sale in Fallbrook, Homes for sale in Mira Mesa, Homes for
+sale in Del Mar,Homes for sale in Poway,Homes for sale in Rancho
+Bernardo,Homes for sale in San Marcos">
+<link href="agents.css" rel="stylesheet" type="text/css">
+</head>
+<body bgcolor="#FFFFFF" text="#000000" link="#003366" vlink="#990033" alink="#FF9900" leftmargin="0" rightmargin="0" topmargin="0" bottommargin="0">
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="100%" height="100%">
+<TR>
+<td valign="top" align="center" height="90%" width="100%">
+<FORM  NAME="Form1" METHOD="Post" ACTION="http://www.mcmillinrealty.com/mrem_agentadmin/AgentHome.asp">
+	<INPUT TYPE="HIDDEN" NAME=HiddenVisitorDate VALUE="2/26/2007 8:47:30" >
+	<INPUT TYPE="HIDDEN" NAME=HiddenInterest VALUE="A question from a visitor to your McMillin Realty website - home page." >
+	<INPUT TYPE="HIDDEN" NAME=AgentName VALUE="Peterson, Karen" >
+	<INPUT TYPE="HIDDEN" NAME=HiddenAgentEmail VALUE="kpeterson@mcmillinrealty.com" >
+	<INPUT TYPE="HIDDEN" NAME=HiddenAgentID VALUE="84" >
+	<INPUT TYPE="HIDDEN" NAME=HiddenAgentIDVisitor VALUE="84" >
+
+<!--Begin Top Table with M Logo-->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+  <tr> 
+    <td width="100%" align="left" valign="top"><a href="http://www.mcmillinrealty.com"><img src="mcmillin_logo.gif" width="228" height="57" border="0"></a></td>
+    <!--<td width="100%" height="47" align="right" valign="bottom"><img src="images/transparent.gif" width="48" height="7"><img src="images/transparent.gif" width="15" height="15"><br><img src="images/transparent.gif" width="15" height="15"></td>
+    <td width="81" rowspan="2" valign="top"><a href="http://www.hansonrealty.com"><img src="images/hanson_logo.gif" width="81" height="57" border="0"></a></td>-->
+  </tr>
+</table>
+<!--End Top Table with M Logo-->
+
+<!--Begin Navigation Table-->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+  <tr> 
+    <td width="100%" height="28" valign="top" nowrap bgcolor="#0A2972"><img src="transparent.gif" width="15" height="28"><A href="http://www.mcmillinrealty.com/mrem_agentadmin/AgentFindAHome_Search.asp?AgentID=84&amp;Agents_Position=FIL:ORD:ABS:1KEY:84PAR:" onmouseover="link1.src='images/find_home_1.gif';" onmouseout="link1.src='images/find_home_0.gif'"><IMG src="find_home_0.gif" name=link1 border=0></A><img src="transparent.gif" width="15" height="28"><A href="http://www.mcmillinrealty.com/mrem_agentadmin/SellAHome.asp?AgentID=84&amp;Agents_Position=FIL:ORD:ABS:1KEY:84PAR:" onmouseover="link2.src='images/sell_home_1.gif';" onmouseout="link2.src='images/sell_home_0.gif'"><IMG src="sell_home_0.gif" name=link2 border=0></A><img src="transparent.gif" width="15" height="28"><A href="http://www.mcmillinrealty.com/mrem_agentadmin/BuyAHome.asp?AgentID=84&amp;Agents_Position=FIL:ORD:ABS:1KEY:84PAR:" onmouseover="link3.src='images/buy_home_1.gif';" onmouseout="link3.src='images/buy_home_0.gif'"><IMG src="buy_home_0.gif" name=link3 border=0></A><img src="transparent.gif" width="15" height="28"><A href="http://www.mcmillinrealty.com/mrem_agentadmin/Login.asp?AgentID=84&amp;Agents_Position=FIL:ORD:ABS:1KEY:84PAR:" onmouseover="link4.src='images/agent_login_1.gif';" onmouseout="link4.src='images/agent_login_0.gif'"><IMG src="agent_login_0.gif" name=link4 border=0></A><img src="transparent.gif" width="15" height="28"><A href="http://www.mcmillinrealty.com" onmouseover="link5.src='images/mcmillin_1.gif';" onmouseout="link5.src='images/mcmillin_0.gif'"><IMG src="mcmillin_0.gif" name=link5 border=0></A><img src="transparent.gif" width="15" height="28"><A href="http://www.hansonrealty.com" onmouseover="link6.src='images/hanson_1.gif';" onmouseout="link6.src='images/hanson_0.gif'"><IMG src="hanson_0.gif" name=link6 border=0></A><img src="transparent.gif" width="15" height="28"></td>
+  </tr>
+</table>
+<!--End Navigation Table-->
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr> 
+    <td width="176" valign="top">
+    <!--Begin Left Navigation Table-->
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+        <tr> 
+          <td height="3" colspan="4" valign="top"><img src="transparent.gif" width="156" height="3"></td>
+        </tr>
+        <tr> 
+          <td width="15" rowspan="5" valign="top" bgcolor="#0A2972"><img src="transparent.gif" width="15" height="15"></td>
+          <td width="126" height="15" valign="top" bgcolor="#0A2972"><img src="transparent.gif" width="126" height="15"></td>
+          <td width="15" rowspan="5" valign="top" bgcolor="#0A2972"><img src="transparent.gif" width="15" height="15"></td>
+          <td width="20" rowspan="20" valign="top" bgcolor="#FFFFFF"><img src="transparent.gif" width="20" height="20"></td>
+        </tr>
+        <tr> 
+          <td height="126" valign="top" bgcolor="#0A2972"><a href="http://www.mcmillinrealty.com/mrem_agentadmin/AgentHome.asp?AgentID=84&amp;Agents_Position=FIL:ORD:ABS:1KEY:84PAR:"><img src="agent_KPeterson.jpg" width="126" height="125" border="0"></a></td>
+        </tr>
+        <tr> 
+          <td height="10" valign="top" bgcolor="#0A2972"><img src="transparent.gif" width="126" height="10"></td>
+        </tr>
+        <tr> 
+          <td height="61" valign="top" bgcolor="#0A2972"><span class="agentName">Karen Peterson </span><br>
+          <span class="agentInfo">McMillin Realty<br>
+          16890 Bernardo Center Dr.<br>
+          San Diego, CA&nbsp;92128</span></td>
+        </tr>
+        <tr> 
+          <td height="15" valign="top" bgcolor="#0A2972"><img src="transparent.gif" width="126" height="15"></td>
+        </tr>
+        <tr> 
+          <td height="20" colspan="3" valign="top">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td height="25" colspan="3" valign="top">
+          <A href="http://www.mcmillinrealty.com/mrem_agentadmin/AgentHome.asp?AgentID=84&amp;Agents_Position=FIL:ORD:ABS:1KEY:84PAR:" onmouseover="nav9.src='images/home_1.gif';" onmouseout="nav9.src='images/home_0.gif'"><IMG src="home_0.gif" name=nav9 border=0></A></td>
+        </tr>
+        <tr> 
+          <td height="5" colspan="3" valign="top"><img src="transparent.gif" width="156" height="5"></td>
+        </tr>
+        <tr> 
+          <td height="25" colspan="3" valign="top">
+          <A href="http://www.mcmillinrealty.com/mrem_agentadmin/AgentHowMuchAfford.asp?AgentID=84&amp;Agents_Position=FIL:ORD:ABS:1KEY:84PAR:" onmouseover="nav1.src='images/how_much_1.gif';" onmouseout="nav1.src='images/how_much_0.gif'"><IMG src="how_much_0.gif" name=nav1 border=0></A></td>
+        </tr>
+        <tr> 
+          <td height="5" colspan="3" valign="top"><img src="transparent.gif" width="156" height="5"></td>
+        </tr>
+        <tr> 
+          <td height="25" colspan="3" valign="top">
+          <A href="http://www.mcmillinrealty.com/mrem_agentadmin/WhatIsMyHomeWorth.asp?AgentID=84&amp;Agents_Position=FIL:ORD:ABS:1KEY:84PAR:" onmouseover="nav2.src='images/what_worth_1.gif';" onmouseout="nav2.src='images/what_worth_0.gif'"><IMG src="what_worth_0.gif" name=nav2 border=0></A></td>
+        </tr>
+        
+        
+        <tr> 
+          <td height="5" colspan="3" valign="top"><img src="transparent.gif" width="156" height="5"></td>
+        </tr>
+        <tr> 
+          <td height="25" colspan="3" valign="top"><A href="http://www.mcmillinrealty.com/mrem_agentadmin/AgentOwnvsRent.asp?AgentID=84&amp;Agents_Position=FIL:ORD:ABS:1KEY:84PAR:" onmouseover="nav5.src='images/own_rent_1.gif';" onmouseout="nav5.src='images/own_rent_0.gif'"><IMG src="own_rent_0.gif" name=nav5 border=0></A></td>
+        </tr>
+        <tr> 
+          <td height="5" colspan="3" valign="top"><img src="transparent.gif" width="156" height="5"></td>
+        </tr>
+        <tr> 
+          <td height="25" colspan="3" valign="top"><A href="http://www.mcmillinrealty.com/mrem_agentadmin/AgentLinks.asp?AgentID=84&amp;Agents_Position=FIL:ORD:ABS:1KEY:84PAR:" onmouseover="nav6.src='images/my_links_1.gif';" onmouseout="nav6.src='images/my_links_0.gif'"><IMG src="my_links_0.gif" name=nav6 border=0></A></td>
+        </tr>
+        <tr> 
+          <td height="5" colspan="3" valign="top"><img src="transparent.gif" width="156" height="5"></td>
+        </tr>
+        <tr> 
+          <td height="25" colspan="3" valign="top"><A href="http://www.mcmillinrealty.com/mrem_agentadmin/MoreFeaturedProps_Search.asp?AgentID=84&amp;Agents_Position=FIL:ORD:ABS:1KEY:84PAR:" onmouseover="nav7.src='images/more_properties_1.gif';" onmouseout="nav7.src='images/more_properties_0.gif'"><IMG src="more_properties_0.gif" name=nav7 border=0></A></td>
+        </tr>
+        <tr> 
+          <td height="5" colspan="3" valign="top"><img src="transparent.gif" width="156" height="5"></td>
+        </tr>
+        <tr> 
+          <td height="25" colspan="3" valign="top">
+          
+          <A href="http://www.mcmillinrealty.com/mrem_agentadmin/AgentContact.asp?AgentID=84&amp;Agents_Position=FIL:ORD:ABS:1KEY:84PAR:" onmouseover="nav8.src='images/contact_1.gif';" onmouseout="nav8.src='images/contact_0.gif'"><IMG src="contact_0.gif" name=nav8 border=0></A></td>
+        </tr>
+        <tr> 
+          <td height="21" colspan="3" valign="top"><!--DWLayoutEmptyCell-->&nbsp;</td>
+        </tr>
+      </table>
+
+    <!--End Left Navigation Table-->
+    </td>
+	<td width="100%" valign="top">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr> 
+		<td width="100%" height="67" valign="bottom" class="agentNameLarge">Karen Peterson </td>
+		<td colspan="2" valign="top"><img src="sandiego_256x67.jpg" width="256" height="67"></td>
+	</tr>
+	<tr> 
+		<td height="3" valign="top" bgcolor="#A7001F"><img src="transparent.gif" width="231" height="3"></td>
+		<td colspan="2" rowspan="2" valign="top" bgcolor="#A7001F"><img src="feature_properties.gif" width="256" height="26"></td>
+	</tr>
+	<tr> 
+		<td height="23" valign="top">&nbsp;</td>
+	</tr>
+</table>
+<table width="100%" border=0 cellpadding="0" cellspacing="0">
+	<tr>
+		<td valign="top"><span class="agentInfoLarge">
+			PHONE:&nbsp;858-673-7814<br>
+			<img src="transparent.gif" height="3"><br>
+			FAX:&nbsp;858-675-9690<br>
+			<img src="transparent.gif" height="3"><br>
+			Cell:&nbsp;858-361-5771<br>
+			<img src="transparent.gif" height="3"><br>
+			E-Mail:&nbsp;<a href="mailto:kpeterson@mcmillinrealty.com">kpeterson@mcmillinrealty.com</a></span><br>
+			<img src="transparent.gif" height="10"><br>
+			<span class="bodytext">Outselling San Diego!
+			<br><br><B>Experience & Qualifications</b><br><LI>Full-time Realtor since 1985.<BR><BR>
+<LI>Top Producing awards every year since 1985.<BR><BR>
+<LI>CRS, Certified Residential Specialist, designation<BR><BR>
+<LI>2003 President-Elect, San Diego Association of 
+Realtors<BR><BR>
+<LI>Cendant Mobility Relocation Team
+			<br><br><B>Service Commitment</b><br>I believe in giving <B>Buyers</B> and <B>Sellers</B> as much information as possible to enable them to make the best decision.<BR><BR>Trust and communication are key in the real estate industry.  I have that with my <B>Buyers</B> and <B>Sellers</B> and also with my peers in the real estate community, which makes for smooth transactions.
+			<br><br><B>Testimonials</b><br>"Karen was excellent!  I gave her two days to sell my home and she did.  She made everything very easy with no complications.  She was a joy to work with."<BR>Kathy Munson<BR><BR>
+
+"Karen was very professional and pleasant to work with.  I will recommend her to others.  She was patient and was very thorough in teaching my wife and I the homebuying process."<BR>Kevin Mershon<BR><BR>
+
+"Karen was always pleasant and efficient in dealing with us.  She was willing to show us any home we requested to see and well represented our interests in contract negotiations.  You have an excellent agent in Karen!"<BR>Gary & Anita Pryor
+
+			<br><br><B>Communities I Serve</b><br><B>North County Inland</B><BR><BR>Rancho Bernardo<BR>Carmel Mountain Ranch<BR>Rancho Penasquitos<BR>Sabre Springs<BR>Scripps Ranch<BR>Tierrasanta<BR>Poway<BR>Fallbrook<BR><BR><B>North County Coastal</B><BR><BR>Carmel Valley<BR>Del Mar<BR>Carlsbad<BR>Encinitas<BR><BR><B>Downtown</B><BR><BR>San Diego<BR>Clairemont<BR>La Mesa<BR>Mission Valley<BR><BR>Since I have worked with relocation Buyers and Sellers my whole real estate career, I am familiar with many San Diego communities.  
+			</span>
+			<br clear="all"><br></td>
+		<td height="19" valign="top" class="agentInfoLarge" width=20><img src="transparent.gif" width="20"></td>
+		<td valign="top" align="right"><br>
+		  <!--Start Agent Featured Properties-->
+          <TABLE  BORDER=0 CELLSPACING=0 WIDTH=150 BGCOLOR="#FFFFFF">
+
+
+
+</TABLE>
+          
+          <!--End Agent Featured Properties-->
+		</TD>
+	</TR>
+</TABLE>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td valign="bottom" align="center" height="10%" width="100%"><table align="left" border=0 cellpadding=0 cellspacing=0 width="100%" bgcolor="#FFFFFF">
+<tr bgcolor="#0A2972" valign="baseline"> 
+	<td height="16" colspan="2" valign="baseline"><A href="http://www.mcmillinrealty.com/mrem_agentadmin/PrivacyMortgage.html" onmouseover="footer1.src='images/privacy_1.gif';" onmouseout="footer1.src='images/privacy_0.gif'" target="new"><IMG src="privacy_0.gif" name=footer1 border=0></A></td>
+</tr>
+</table></td>
+</tr>
+</table>
+
+	<INPUT TYPE="Hidden" NAME="Agents_Action">
+	<INPUT TYPE="Hidden" NAME="Agents_Position" VALUE="FIL:ORD:ABS:380KEY:84PAR:">
+	<INPUT TYPE="Hidden" NAME="AgentProps_Action">
+	<INPUT TYPE="Hidden" NAME="AgentProps_Position" VALUE="FIL:ORD:ABS:380KEY:84PAR:">
+	<INPUT TYPE="Hidden" NAME="Offices_Action">
+	<INPUT TYPE="Hidden" NAME="Offices_Position" VALUE="FIL:MREMOfficeID = '12'ORD:ABS:1KEY:12PAR:">
+	<INPUT TYPE="Hidden" NAME="Visitors_Action">
+	<INPUT TYPE="Hidden" NAME="Visitors_Position" VALUE="FIL:ORD:ABS:1KEY:952PAR:">
+	<INPUT TYPE="Hidden" NAME="MLS_Adds_Action">
+	<INPUT TYPE="Hidden" NAME="MLS_Adds_Position" VALUE="FIL:AgentID = '84'ORD:ABS:MTYKEY:PAR:">
+	<INPUT TYPE="Hidden" NAME="Visitors_Bindings" VALUE="Date!*+FRM!*+HiddenVisitorDate!*+Interest!*+FRM!*+HiddenInterest!*+AgentName!*+FRM!*+AgentName!*+AgentID!*+FRM!*+HiddenAgentIDVisitor!*+Name!*+FRM!*+VisitorName!*+Email!*+FRM!*+VisitorEmail!*+Question!*+FRM!*+VisitorMessage">
+	<INPUT TYPE="Hidden" NAME="Agents_Bindings" VALUE="Name!*+FRM!*+AgentNameSeeder!*+MREMEmail!*+FRM!*+HiddenAgentEmail!*+AgentID!*+FRM!*+HiddenAgentID">
+</FORM>
+<SCRIPT SRC="AgentHomeInline.js"></SCRIPT>
+</BODY>
+</HTML>

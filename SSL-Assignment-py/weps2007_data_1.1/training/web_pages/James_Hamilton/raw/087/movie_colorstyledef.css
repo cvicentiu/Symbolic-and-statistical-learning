@@ -1,0 +1,149 @@
+/* background color CSS elements, use in TD tags */
+.movie-header-bg
+{ background-color: #1F1F1F }
+.movie-info-bg
+{ background-color: #A2B964 }
+.movie-content1-bg
+{ background-color: #FDE89B }
+.movie-content2-bg
+{ background-color: #FFE787 }
+.movie-content3-bg
+{ background-color: #F3D26B }
+.movie-content4-bg
+{ background-color: #A2B964 }
+.movie-content5-bg
+{ background-color: #8BA24D }
+.movie-horiz-line
+{ background-color: #EBEBB5 }
+.movie-nav1-bg
+{ background-color: #E2F193 }
+.movie-chart1-bg
+{ background-color: #191919 }
+
+
+
+/* define main font family */
+.movie-header, .movie-header:visited, .movie-header:hover, .movie-header:active,
+.movie-header-unlinked,
+.movie-header-arrow1, .movie-header-arrow2, .movie-header-arrow3,
+.movie-link, .movie-link:visited, .movie-link:hover, .movie-link:active,
+.movie-body-link, .movie-body-link:visited, .movie-body-link:hover, .movie-body-link:active,
+.movie-body-header,
+.movie-info-header, .movie-info-header2, .movie-info-header3,
+.movie-info-text1, .movie-info-text2, .movie-info-text3, .movie-info-text-reverse, .movie-info-text-reverse-bold, .movie-popup-text-reverse,
+.movie-info-link1, .movie-info-link2,
+.movie-body-text,.movie-body-text-bold, .movie-body-text-italic, .movie-body-header, .movie-body-header2, .movie-section-header
+{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; }
+
+
+/* section header font styles */
+
+.movie-section-header, .movie-section-header:visited, .movie-section-header:hover, .movie-section-header:active, .movie-section-header-unlinked
+{ font-weight: bold; font-size: 30px; }
+.movie-section-header, .movie-section-header:visited, .movie-section-header:hover, .movie-section-header:active, .movie-section-header-unlinked
+{ color: #000000; }
+
+
+
+/* body header font styles */
+
+.movie-body-header, .movie-body-header:visited, .movie-body-header:hover, .movie-body-header:active, .movie-body-header-unlinked
+{ font-weight: bold; font-size: 12px; }
+.movie-body-header, .movie-body-header:visited, .movie-body-header:hover, .movie-body-header:active, .movie-body-header-unlinked
+{ color: #000000; }
+.movie-body-header2, .movie-body-header2:visited, .movie-body-header2:hover,
+.movie-body-header2:active, .movie-body-header2-unlinked
+{ font-weight: normal; font-size: 12px; }
+.movie-body-header2, .movie-body-header2:visited, .movie-body-header2:hover, .movie-body-header2:active, .movie-body-header2-unlinked
+{ color: #453300; }
+
+.movie-body-header3, .movie-body-header3:visited, .movie-body-header3:hover,
+.movie-body-header3:active, .movie-body-header3-unlinked
+{ font-weight: bold; font-size: 25px; }
+.movie-body-header3, .movie-body-header3:visited, .movie-body-header3:hover, .movie-body-header3:active, .movie-body-header3-unlinked
+{ color: #453300; }
+
+
+/* body font styles */
+
+.movie-body-text, .movie-body-text:visited, .movie-body-text:hover, .movie-body-text:active, .movie-body-text-unlinked
+{ font-weight: normal; font-size: 12px; }
+.movie-body-text, .movie-body-text:visited, .movie-body-text:hover, .movie-body-text:active, .movie-body-text-unlinked
+{ color: #000000; }
+
+
+
+/* body font styles */
+
+.movie-body-text-italic, .movie-body-text-italic:visited, .movie-body-text-italic:hover, .movie-body-text-italic:active, .movie-body-text-unlinked
+{ font-weight: normal; font-size: 12px; font-style: italic }
+.movie-body-text-italic, .movie-body-text-italic:visited, .movie-body-text-italic:hover, .movie-body-text-italic:active, .movie-body-text-unlinked
+{ color: #000000; }
+
+
+
+/* body font styles bold*/
+
+.movie-body-text-bold, .movie-body-text-bold:visited, .movie-body-text-bold:hover, .movie-body-text-bold:active, .movie-body-text-bold-unlinked
+{ font-weight: bold; font-size: 12px; }
+.movie-body-text-bold, .movie-body-text-bold:visited, .movie-body-text-bold:hover, .movie-body-text-bold:active, .movie-body-text-bold-unlinked
+{ color: #000000; }
+
+
+/* header font styles */
+.movie-header, .movie-header:visited, .movie-header:hover, .movie-header:active,
+.movie-header-unlinked
+{ font-weight: bold; font-size: 12px; }
+.movie-header, .movie-header:visited, .movie-header:hover, .movie-header:active
+{ color: #003300; }
+.movie-header-unlinked
+{ color: #FFFFFF; }
+
+/* styles for the nav bar arrows on the sides */
+.movie-header-arrow1, .movie-header-arrow2, .movie-header-arrow3
+{ font-weight: bold; font-size: 17px; }
+.movie-header-arrow1
+{ color: #A2B964; }
+.movie-header-arrow2
+{ color: #453300; }
+.movie-header-arrow3
+{ color: #000000; }
+
+/* general link styles */
+.movie-link, .movie-link:hover, .movie-link:active { color: #003300; }
+.movie-link:visited { color: #007800; }
+
+.movie-body-link, .movie-body-link:visited, .movie-body-link:hover, .movie-body-link:active
+{ font-weight:normal; font-size: 12px; }
+.movie-body-link, .movie-body-link:visited, .movie-body-link:hover, .movie-body-link:active
+{ color: #000000; }
+
+/* header for the sidebar pieces */
+.movie-info-header
+{ font-size: 22px; font-weight: bold; color: #000000; }
+.movie-info-header2
+{ font-size: 12px; font-weight: bold; color: #453300; }
+
+/* text styles for the sidebar pieces */
+.movie-info-text1
+{ font-size: 12px; font-weight: bold; color: #453300; }
+.movie-info-text2
+{ font-size: 12px; color: #000000; }
+.movie-info-text3
+{ font-size: 11px; font-style: oblique; color: #453300; }
+.movie-info-text-reverse, .movie-info-text-reverse:visited, .movie-info-text-reverse:active
+{ font-size: 12px; color: #FFFFBB; }
+
+.movie-info-text-reverse-bold, .movie-info-text-reverse-bold:visited, .movie-info-text-reverse-bold:active
+{ font-size: 12px; font-weight: bold; color: #FFFFBB; }
+
+.movie-popup-text-reverse, .movie-popup-text-reverse:visited, .movie-popup-text-reverse:active
+{ font-size: 10px; font-weight: bold; color: #FFFF66; }
+
+
+/* link styles for the sidebar pieces */
+.movie-info-link1, .movie-info-link1:visited, .movie-info-link1:hover, .movie-info-link1:active,
+.movie-info-link2, .movie-info-link2:visited, .movie-info-link2:hover, .movie-info-link2:active
+{ font-size: 12px; color: #000000; }
+.movie-info-link1, .movie-info-link1:visited, .movie-info-link1:hover, .movie-info-link1:active
+{ font-weight: bold; }

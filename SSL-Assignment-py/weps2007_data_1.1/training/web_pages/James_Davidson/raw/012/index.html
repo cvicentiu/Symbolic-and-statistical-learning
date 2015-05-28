@@ -1,0 +1,919 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+
+
+<!-- common javascript, css and hitbox -->
+<link rel="stylesheet" rev="stylesheet" href="all.css" type="text/css"/>
+
+<script language="JavaScript" type="text/javascript" src="engine.js"></script>
+<script language="JavaScript" type="text/javascript" src="common.js"></script>
+
+ <!--WEBSIDESTORY CODE HBX1.0 (Universal)-->
+    <!--COPYRIGHT 1997-2004 WEBSIDESTORY,INC. ALL RIGHTS RESERVED. U.S.PATENT No. 6,393,479B1. MORE INFO:http://websidestory.com / privacy-->
+    <script language="javascript" type="text/javascript">
+    var _hbEC=0,_hbE=new Array;function _hbEvent(a,b){b=_hbE[_hbEC++]=new Object();b._N=a;b._C=0;return b;}
+    var hbx=_hbEvent("pv");hbx.vpc="HBX0100u";hbx.gn="ehg-oreilly.hitbox.com";
+
+    //"BCB: oreillynet.com,/au/Davidson_James_Duncan, DM52040214SV";
+
+    hbx.acct="DM52040214SV;DM520404M4ZR"; //ACCOUNT NUMBER(S)
+    hbx.pn="PUT+PAGE+NAME+HERE"; //PAGE NAME(S)
+    hbx.mlc="/au/Davidson_James_Duncan;/OReilly+Network/au/Davidson_James_Duncan"; //MULTI-LEVEL CONTENT CATEGORY
+    hbx.pndef="title"; //DEFAULT PAGE NAME
+    hbx.ctdef="full"; //DEFAULT CONTENT CATEGORY
+
+    hbx.lt="auto"; //LINK TRACKING 
+    hbx.dlf="n"; //DOWNLOAD FILTER
+    hbx.dft="n"; //DOWNLOAD FILE NAMING
+    hbx.elf="n"; //EXIT LINK FILTER
+
+    //SEGMENTS AND FUNNELS
+    hbx.seg=""; //VISITOR SEGMENTATION
+    hbx.fnl=""; //FUNNELS
+
+    //CAMPAIGNS
+    hbx.cmp=""; //CAMPAIGN ID
+    hbx.cmpn="CMP"; //CAMPAIGN ID IN QUERY
+    hbx.hra=""; //RESPONSE ATTRIBUTE
+    hbx.hqsr=""; //RESPONSE ATTRIBUTE IN REFERRAL QUERY
+    hbx.hqsp="ATT"; //RESPONSE ATTRIBUTE IN QUERY
+    hbx.hlt=""; //LEAD TRACKING
+    hbx.hla=""; //LEAD ATTRIBUTE
+    hbx.gp=""; //CAMPAIGN GOAL
+    hbx.gpn=""; //CAMPAIGN GOAL IN QUERY
+    hbx.hcn=""; //CONVERSION ATTRIBUTE
+    hbx.hcv=""; //CONVERSION VALUE
+    hbx.cp="null"; //LEGACY CAMPAIGN
+    hbx.cpd=""; //CAMPAIGN DOMAIN
+
+    //CUSTOM VARIABLES
+    hbx.ci="";//CUSTOMER ID
+    hbx.hc1="";//CUSTOM 1
+    hbx.hc2="";//CUSTOM 2
+    hbx.hc3="";//CUSTOM 3
+    hbx.hc4="";//CUSTOM 4 
+    hbx.pec="";//ERROR CODES
+    </script><script language="javascript1.1" defer="defer"  src="hbx.js" type="text/javascript"></script><!--//-->  
+    <!-- END WEBSIDESTORY CODE  -->
+  
+<script type="text/javascript" src="tabber.js"></script>
+
+<link rel="stylesheet" rev="stylesheet" href="all_new.css" />
+<link rel="stylesheet" rev="stylesheet" href="store.css" />
+<link rel="stylesheet" rev="stylesheet" href="tabs.css" media="screen">
+<link rel="stylesheet" rev="stylesheet"  href="tabs-print.css" media="print">
+
+<script type="text/javascript">
+/* Optional: Temporarily hide the "tabber" class so it does not "flash" on the page as plain HTML. After tabber runs, the class is changed to "tabberlive" and it will appear. */
+   document.write('<style type="text/css">.tabber{display:none;}<\/style>');
+
+function addLoadEvent(func) {
+    var oldonload = window.onload;
+    if (typeof window.onload != 'function') {
+        window.onload = func;
+    } else {
+        window.onload = function() {
+            if (oldonload) {
+                oldonload();
+            }
+            func();
+        }
+    }
+}
+
+addLoadEvent(function() {
+    var url = self.location.href
+    var selecttab = "Biography"
+    if (url.indexOf('#') != -1) {
+      var position = url.indexOf('#') 
+      selecttab = url.substring(position+1)
+    }
+    var selecttabindex = document.getElementById(selecttab).className
+    selecttabindex = parseInt(selecttabindex.substring(3,4))
+    document.getElementById('authortabs').tabber.tabShow(selecttabindex)
+})
+</script>
+</head>
+<body id="store">
+
+<div id="page">
+
+
+<div id="header">
+<h1><a href="http://www.oreilly.com"><img src="http://www.oreillynet.com/images/oreilly/oreilly.gif" width="228" height="67" alt="O'Reilly" /></a></h1>
+<ul>
+<li><a href="https://epoch.oreilly.com/account/default.orm" class="acct">My Account</a></li>
+<li><a href="https://epoch.oreilly.com/shop/cart.orm" class="cart">View Cart</a></li>
+</ul>
+<span id="animal">
+</span>
+</div><!-- /#header -->
+
+<div id="nav">
+<form method="get" action="http://promosearch.atomz.com/search/promosearch"  id="search" name="searchForm" onsubmit="processQuery();">
+<ul>
+<li><a href="http://www.oreilly.com/">Home</a></li>
+<li><a href="http://www.oreillynet.com/">Network</a></li>
+<li class="nav_selected"><a href="http://www.oreilly.com/store/">Store</a></li>
+<li><a href="http://safari.oreilly.com">Safari Books Online</a></li>
+<li><a href="http://conferences.oreillynet.com/">Conferences</a></li>
+<li><a href="http://www.oreillylearning.com">Courses</a></li>
+<li><a href="http://academic.oreilly.com">Academic Solutions</a></li>
+<li><a href="http://www.oreilly.com/about/">About</a></li>
+<li class="searchbox"><input type="hidden" name="sp-q" />
+<input name="sp-a" value="sp1000a5a9" type="hidden" />
+<input name="sp-f" value="ISO-8859-1" type="hidden" />
+<input name="sp-t" value="store" type="hidden" />
+<input name="sp-x-1" value="cat" type="hidden" />
+<input name="sp-q-1" value="" type="hidden" />
+<input name="sp-x-2" value="cat2" type="hidden" />
+<input name="sp-q-2" value="Books" type="hidden" />
+<input name="sp-c" value="25" type="hidden" />
+<input name="sp-p" value="Books" type="hidden" />
+<input name="sp-k" value="Books" type="hidden" />
+<input name="c" value="" type="hidden" />
+<input name="p" value="Books" type="hidden" />
+<input id="src" name="query" type="text" size="10" maxlength="64" accesskey="s" value="Search" onfocus="if(this.value==this.defaultValue)this.value=''" onblur="if(this.value=='')this.value=this.defaultValue" /><input type="image" name="submit" src="http://www.oreillynet.com/images/icons/go.gif" width="35" height="19" alt="Submit" onclick="return searchverif();" />
+</li>
+</ul>
+</form>
+</div><!-- /#nav -->
+
+<div id="subnav">
+<ul>
+<li>
+<a href="http://www.oreilly.com/store/complete.html">Complete List</a></li>
+
+<li>
+<a href="http://www.oreilly.com/store/bestsellers.html">Bestsellers</a></li>
+
+<li>
+<a href="http://www.oreilly.com/store/newreleases.html">New Releases</a></li>
+
+<li>
+<a href="http://www.oreilly.com/store/upcoming.html">Upcoming Titles</a></li>
+
+<li>
+<a href="http://www.oreilly.com/store/publisher.html">By Publisher</a></li>
+
+<li>
+<a href="http://www.oreilly.com/store/series.html">By Series</a></li>
+
+<li>
+<a href="http://www.oreilly.com/store/outofprint.html">Out of Print</a></li>
+
+<li>
+<a href="http://www.oreilly.com/store/order.html">Order Info</a></li>
+</ul>
+</div><!-- /#subnav -->
+
+
+<!-- begin content -->
+
+
+<div id="content" style="width:66em;">
+<div id="features" style="width:47em;">
+
+
+
+<span class="author-title" style="font-family:Garamond,times,serif; font-size:55px;line-height:48px;color:#666666;padding:0;margin:0;display:block;">James Duncan Davidson</span>
+
+
+ <p style="padding-top:8px;margin:0;"><script type="text/javascript">
+<!--
+var name = "duncan";
+var domain = "x180.net";
+var display = "";
+var subject = "";
+var ending = "";
+var style = "";
+document.write('<a class="' + style + '" href="mailto:' + name + '&#64;' + domain + '?subject=' + subject + '">');
+if (display) {
+ document.write(display);
+} else {
+ document.write(name + '&#64;' + domain);
+}
+document.write('</a>' + ending);
+
+// -->
+</script>
+
+</p>
+
+
+
+
+<div class="clear" style="padding-bottom:18px;"></div>
+
+<div class="tabber" id="authortabs">
+     <div class="tab0 tabbertab" id="Biography">
+      <h3 style="clear:left;padding:0;margin:0;">Biography</h3>
+       <div class="authorbio" style="padding-top:10px;padding-bottom:20px;">
+         <p>James Duncan Davidson is a photographer, author, and software developer living in Portland, Oregon. He is the co-author of O'Reilly's <a href="http://www.oreilly.com/catalog/runmacx2/">Running Mac OS X Tiger</a> and a contributor to <a href="http://www.oreilly.com/catalog/mcosxhks">Mac OS X Hacks</a>, among others.</p>
+
+<p>He is perhaps best known for his work on <a href="http://jakarta.apache.org/tomcat/">Apache Tomcat</a> and <a href="http://ant.apache.org/">Apache Ant</a>, both open source software projects created during his tenure at Sun Microsystems. More recently, he's been working on lots of <a href="http://www.rubyonrails.org/">Ruby on Rails</a> based websites and Objective-C based Cocoa applications. Since 2005, he has been the photographer for all the conferences produced by O'Reilly Media.</p>
+       </div>
+     </div>
+
+
+
+
+<div class="tab1 tabbertab" id="Books">
+      <h3 style="clear:left;padding:0;margin:0;">Books </h3>
+     <div style="padding-top:10px;padding-bottom:20px;">
+     <a name="books"></a>
+     
+     
+
+<table class="author_books" style="padding:0;border:0;margin:0;">
+<tr>
+<td valign="top" width="50%">
+<p style="font-size:95%;padding-right:0.5em;">
+<a href="http://www.oreilly.com/catalog/0977616630/"><img src="0977616630_bkt.gif" style="float:left;padding:0 0.5em 10px 0;" width="85" alt="Agile Web Development with Rails" /></a>
+
+<a href="http://www.oreillynet.com/catalog/0977616630"><b>
+Agile Web Development with Rails
+</b></a>  (<em>Pragmatic Bookshelf</em>) <br />
+by <a href="http://www.oreillynet.com/pub/au/1821">Dave Thomas</a>, <a href="http://www.oreillynet.com/pub/au/2261">David Heinemeier Hansson</a><br />
+Second Edition December 2006 <br />
+
+<span class="price">
+$39.95 USD
+</span>
+
+</p>
+</td>
+<td valign="top" width="50%">
+<p style="font-size:95%;padding-right:0.5em;">
+<a href="http://www.oreilly.com/catalog/runmacx2/"><img src="0596009135_bkt.gif" style="float:left;padding:0 0.5em 10px 0;" width="85" alt="Running Mac OS X Tiger" /></a>
+
+<a href="http://www.oreillynet.com/catalog/runmacx2"><b>
+Running Mac OS X Tiger
+</b></a>  <br />
+by <a href="http://www.oreillynet.com/pub/au/1091">Jason Deraleau</a>, <a href="151.1.html">James Duncan Davidson</a><br />
+December 2005 <br />
+
+<span class="price">
+$39.95 USD
+</span>
+
+</p>
+</td></tr><tr>
+<td valign="top" width="50%">
+<p style="font-size:95%;padding-right:0.5em;">
+<a href="http://www.oreilly.com/catalog/0596007183/"><img src="0596007183_bkt.gif" style="float:left;padding:0 0.5em 10px 0;" width="85" alt="Mac OS X Panther Hacks" /></a>
+
+<a href="http://www.oreillynet.com/catalog/0596007183"><b>
+Mac OS X Panther Hacks
+</b></a>  <br />
+by <a href="http://www.oreillynet.com/pub/au/35">Rael Dornfest</a>, <a href="151.1.html">James Duncan Davidson</a><br />
+June 2004 <br />
+
+<span class="price">
+$29.95 USD
+</span>
+
+</p>
+</td>
+<td valign="top" width="50%">
+<p style="font-size:95%;padding-right:0.5em;">
+<a href="http://www.oreilly.com/catalog/runmacxpanther/"><img src="0596005008_bkt.gif" style="float:left;padding:0 0.5em 10px 0;" width="85" alt="Running Mac OS X Panther" /></a>
+
+<a href="http://www.oreillynet.com/catalog/runmacxpanther"><b>
+Running Mac OS X Panther
+</b></a>  <br />
+by <a href="151.1.html">James Duncan Davidson</a><br />
+December 2003 <br />
+
+<b>OUT OF PRINT</b>
+
+</p>
+</td></tr><tr>
+<td valign="top" width="50%">
+<p style="font-size:95%;padding-right:0.5em;">
+<a href="http://www.oreilly.com/catalog/cocoaian/"><img src="0596004621_bkt.gif" style="float:left;padding:0 0.5em 10px 0;" width="85" alt="Cocoa in a Nutshell" /></a>
+
+<a href="http://www.oreillynet.com/catalog/cocoaian"><b>
+Cocoa in a Nutshell
+</b></a>  <br />
+by <a href="http://www.oreillynet.com/pub/au/159">Michael Beam</a>, <a href="151.1.html">James Duncan Davidson</a><br />
+May 2003 <br />
+
+<span class="price">
+$39.95 USD
+</span>
+
+</p>
+</td>
+<td valign="top" width="50%">
+<p style="font-size:95%;padding-right:0.5em;">
+<a href="http://www.oreilly.com/catalog/learncocoa2/"><img src="0596003013_bkt.gif" style="float:left;padding:0 0.5em 10px 0;" width="85" alt="Learning Cocoa with Objective-C" /></a>
+
+<a href="http://www.oreillynet.com/catalog/learncocoa2"><b>
+Learning Cocoa with Objective-C
+</b></a>  <br />
+by <a href="151.1.html">James Duncan Davidson</a>, <a href="http://www.oreillynet.com/pub/au/629">Apple Computer, Inc.</a><br />
+Second Edition September 2002 <br />
+
+<span class="price">
+$34.95 USD
+</span>
+
+</p>
+</td></tr></table>
+     <!-- cslinks table="b" template="author_book.view" order="release_date DESC" raw_where="status = 'final'" -->
+     </div>
+     </div>
+
+
+
+<div class="tab2 tabbertab" id="Articles">
+      <h3 style="clear:left;padding:0;margin:0;">Articles</h3>
+     <div style="padding-top:10px;padding-bottom:20px;">
+<a name="articles"></a>
+
+<div style="float:left;padding:10px 10px 10px 0;"><a href="http://www.oreillynet.com/pub/a/mac/2006/05/23/thermal-paste-question.html"><img src="111-macbook_pro.gif" alt="Tile Image" border="0" height="91" width="111"></a></div>
+<p style="padding-bottom:3px;margin-bottom:0;"> <a href="http://www.oreillynet.com/pub/a/mac/2006/05/23/thermal-paste-question.html"><b>MacBook Pro: The Thermal Paste Question</b></a><br />
+<span style="font-size:95%">Publish Date: May. 23, 2006</span></p>
+<p style="padding-top:0;margin-top:0;">The MacBook Pro is a hot machine--literally so hot that it becomes uncomfortable on your lap after extended periods of use. Some users blame the excessive use of thermal paste between the main chips on the logic board and the thermal pipes. Is this the problem? James Duncan Davidson cracks open his MacBook Pro to find out.</p>
+
+<div style="clear:left;"></div>
+<p style="padding-bottom:3px;margin-bottom:0;"> <a href="http://www.oreillynet.com/pub/a/oreilly/digitalmedia/2005/10/13/canon-5d.html"><b>Canon 5D: First Impressions</b></a><br />
+<span style="font-size:95%">Publish Date: Oct. 12, 2005</span></p>
+<p style="padding-top:0;margin-top:0;">The first thing that's noticeable about the EOS 5D is that it is a full-frame camera. I took a shot out of my hotel window with an EF 24-70 L zoom lens at 24mm. My reaction was, "So that's where my wide-angle has been hiding all these years." James Duncan Davidson reports on the Canon 5D after his first assignment with it.</p>
+
+<div style="clear:left;"></div>
+<p style="padding-bottom:3px;margin-bottom:0;"> <a href="http://www.oreillynet.com/pub/a/mac/2004/03/23/panic.html"><b>Dev to Dev: James Duncan Davidson Interviews Panic</b></a><br />
+<span style="font-size:95%">Publish Date: Mar. 23, 2004</span></p>
+<p style="padding-top:0;margin-top:0;">The folks at Panic have been producing great software for the Mac since the System 7 days. James Duncan Davidson, author of "Running Mac OS X," interviews the Panic cofounders to discuss Cocoa, Xcode, surviving with Apple, and making it as an independent developer.</p>
+
+<div style="clear:left;"></div>
+<p style="padding-bottom:3px;margin-bottom:0;"> <a href="http://www.oreillynet.com/pub/a/mac/2003/10/24/panther.html"><b>Ten Things I Dig About Xcode</b></a><br />
+<span style="font-size:95%">Publish Date: Oct. 24, 2003</span></p>
+<p style="padding-top:0;margin-top:0;">Following in the footsteps of "Ten Things I Dig About Panther," James Duncan Davidson further explores one of the facets near and dear to Mac developers--their application development environment. Apple is introducing Xcode, along with Panther, and Davidson takes it for a spin and reports on his initial findings.</p>
+
+<div style="clear:left;"></div>
+<p style="padding-bottom:3px;margin-bottom:0;"> <a href="http://www.oreillynet.com/pub/a/mac/2003/10/10/panther.html"><b>Ten Things I Dig About Panther</b></a><br />
+<span style="font-size:95%">Publish Date: Oct. 10, 2003</span></p>
+<p style="padding-top:0;margin-top:0;">Now that the release of Panther is officially announced, it's time to take a close look at its key features. O'Reilly author James Duncan Davidson shows you the aspects of Panther that he really digs.</p>
+
+<div style="clear:left;"></div>
+<p style="padding-bottom:3px;margin-bottom:0;"> <a href="http://www.oreillynet.com/pub/a/mac/2003/07/15/cvs.html"><b>In Sync with CVS</b></a><br />
+<span style="font-size:95%">Publish Date: Jul. 15, 2003</span></p>
+<p style="padding-top:0;margin-top:0;">Apple's Backup and iSync applications are great for Dot-Mac subscribers, but some folks prefer to "roll their own" when synchronizing data among machines. The open source tool, CVS, is a good solution for "do it yourself" types. James Duncan Davidson shows you how to set it up.</p>
+
+<div style="clear:left;"></div>
+<p style="padding-bottom:3px;margin-bottom:0;"> <a href="http://www.oreillynet.com/pub/a/mac/2002/09/10/sendmail.html"><b>Configuring sendmail on Jaguar</b></a><br />
+<span style="font-size:95%">Publish Date: Sep. 10, 2002</span></p>
+<p style="padding-top:0;margin-top:0;">Sendmail is powerful, but at times appears complicated too. James Duncan Davidson helps you unravel the sendmail knot so you can configure this awesome mail server on your Mac OS X system.</p>
+
+<div style="clear:left;"></div>
+<p style="padding-bottom:3px;margin-bottom:0;"> <a href="http://www.oreillynet.com/pub/a/mac/2002/08/23/jaguar_server.html"><b>Setting up a Site Server with Jaguar</b></a><br />
+<span style="font-size:95%">Publish Date: Aug. 24, 2002</span></p>
+<p style="padding-top:0;margin-top:0;">Jaguar's debut adds many updates to Mac OS X's under-the-hood open source tools. In this article, James Duncan Davidson shows you how to tap Jaguar's ability to run your own site server, including an overview for setting up Sendmail.</p>
+
+<div style="clear:left;"></div>
+<p style="padding-bottom:3px;margin-bottom:0;"> <a href="http://www.oreillynet.com/pub/a/wireless/2002/02/14/smbiz_wireless.html"><b>Easy 802.11b Wireless for Small Businesses</b></a><br />
+<span style="font-size:95%">Publish Date: Feb. 14, 2002</span></p>
+<p style="padding-top:0;margin-top:0;">Small businesses looking for an edge over their larger competitors might consider providing wireless Internet access for their customers. It's affordable, and after reading these detailed instructions, darn easy.</p>
+
+<div style="clear:left;"></div>
+<p style="padding-bottom:3px;margin-bottom:0;"> <a href="http://www.oreillynet.com/pub/a/mac/2001/11/28/ipod_review.html"><b>A Week with the iPod</b></a><br />
+<span style="font-size:95%">Publish Date: Nov. 28, 2001</span></p>
+<p style="padding-top:0;margin-top:0;">We hit the streets with one of today's hottest tech toys, the iPod. Is it the "must have" MP3 player for Mac music lovers, or just an expensive spoke in Apple's digital hub? James Duncan Davidson gives you the inside scoop.</p>
+
+<div style="clear:left;"></div>
+<p style="padding-bottom:3px;margin-bottom:0;"> <a href="http://www.oreillynet.com/pub/a/mac/2001/09/25/javamac_three.html"><b>Mixing Java and Titanium: Part Three</b></a><br />
+<span style="font-size:95%">Publish Date: Sep. 25, 2001</span></p>
+<p style="padding-top:0;margin-top:0;">This is part three of a three-part series on Java and Mac OS X from a Java programmer's point of view. In this article, James Duncan Davidson takes a look at Cocoa from his side of the fence. He also shares his views on swing apps for Mac OS X.</p>
+
+<div style="clear:left;"></div>
+<p style="padding-bottom:3px;margin-bottom:0;"> <a href="http://www.oreillynet.com/pub/a/mac/2001/09/11/javamac_two.html"><b>Mixing Java and Titanium, Part Two</b></a><br />
+<span style="font-size:95%">Publish Date: Sep. 11, 2001</span></p>
+<p style="padding-top:0;margin-top:0;">As we continue to explore Java on Mac OS X with James Duncan Davidson, we look at the easiest way to create a double-clickable Java program on Mac OS X, plus experiences with Project Builder, and fun with Quartz. </p>
+
+<div style="clear:left;"></div>
+<p style="padding-bottom:3px;margin-bottom:0;"> <a href="http://www.oreillynet.com/pub/a/mac/2001/09/04/javablog_one.html"><b>Mixing Java and Titanium: Part 1</b></a><br />
+<span style="font-size:95%">Publish Date: Sep. 4, 2001</span></p>
+<p style="padding-top:0;margin-top:0;">Recently James Duncan Davidson published a series of weblogs on the subject of Java and Mac OS X for O'Reilly Network. These blogs contained lots of useful information that was too good to get buried deep within the network labyrinth, so we've updated them and are now presenting the content in a series of three articles. This is part one of the series.</p>
+
+<div style="clear:left;"></div>
+<p style="padding-bottom:3px;margin-bottom:0;"> <a href="http://www.oreillynet.com/pub/a/wireless/2001/08/09/wireless_routers.html"><b>Life After AirPort -- New Wireless Base Stations</b></a><br />
+<span style="font-size:95%">Publish Date: Aug. 9, 2001</span></p>
+<p style="padding-top:0;margin-top:0;">Is there 802.11b life after your AirPort Base Station goes up in smoke? You bet! We review the 3Com HomeConnect Wireless Gateway and the SMC Barricade. </p>
+
+<div style="clear:left;"></div>
+<p style="padding-bottom:3px;margin-bottom:0;"> <a href="http://www.oreillynet.com/pub/a/mac/2001/05/25/mac_help.html"><b>Help Yourself Help Others</b></a><br />
+<span style="font-size:95%">Publish Date: May. 25, 2001</span></p>
+<p style="padding-top:0;margin-top:0;">As we look at the various ways to help  give your Mac OS X applications  a professional look, don't forget the "help" function for users. Here are the basics of adding help to your Mac OS X app.</p>
+
+<div style="clear:left;"></div>
+<p style="padding-bottom:3px;margin-bottom:0;"> <a href="http://www.oreillynet.com/pub/a/mac/2001/05/23/cocoa_vs_carbon.html"><b>Cocoa Vs. Carbon?</b></a><br />
+<span style="font-size:95%">Publish Date: May. 23, 2001</span></p>
+<p style="padding-top:0;margin-top:0;">When looking at Mac OS X frameworks to access the functionality of the system, many developers are debating Cocoa vs. Carbon. But they're not really competitors.</p>
+
+<div style="clear:left;"></div>
+<p><b><a href="http://www.oreillynet.com/articles/author/151">View all articles by James Duncan Davidson</a>.</b></p>
+     </div>
+     </div>
+
+
+
+
+
+<div class="tab3 tabbertab" id="Blog">
+      <h3 style="clear:left;padding:0;margin:0;">Blog</h3>
+          <div style="padding-top:10px;padding-bottom:20px;">
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/digitalmedia/blog/2007/02/macworld_conference_shoot_resu.html' style='text-decoration:none'>Macworld Conference Shoot Results</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Wednesday February 21, 2007 3:23PM</em></p> In January, I posted quite a few entries here about my shoot at Macworld 2007. At the time, however, I didn't go into specifics about who the client was or what the project was all about. Well, I can now&hellip; <a href= 'http://www.oreillynet.com/digitalmedia/blog/2007/02/macworld_conference_shoot_resu.html'>read more</a> </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/digitalmedia/blog/2007/02/changing_time_zones.html' style='text-decoration:none'>Changing Time Zones</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Tuesday February 20, 2007 4:32PM</em></p> One of the more valuable bits of metadata that comes along with digital images is the date and time at which they were taken. When I'm traveling, however, I never remember to change the time on my camera when I&hellip; <a href= 'http://www.oreillynet.com/digitalmedia/blog/2007/02/changing_time_zones.html'>read more</a> </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/digitalmedia/blog/2007/02/making_full_use_of_full_screen.html' style='text-decoration:none'>Making Full Use of Full Screen Mode</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Monday February 12, 2007 2:58PM</em></p> One of my favorite ways of using Aperture is in Full Screen mode. In this mode, you get as much real estate as possible focused on the most important thing: Your photographs. When I first started using Aperture, however, there&hellip; <a href= 'http://www.oreillynet.com/digitalmedia/blog/2007/02/making_full_use_of_full_screen.html'>read more</a> </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/digitalmedia/blog/2007/02/using_rgb_auto_levels.html' style='text-decoration:none'>Using RGB Auto Levels</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Friday February 09, 2007 2:28PM</em></p> One of the standard first operations that you might perform on a photograph is to apply auto-levels. Aperture makes this easy, and it's become almost a reflexive action for me. Usually, I almost use the Luminance auto-levels tool as that&hellip; <a href= 'http://www.oreillynet.com/digitalmedia/blog/2007/02/using_rgb_auto_levels.html'>read more</a> </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/digitalmedia/blog/2007/01/an_inflection_point_1.html' style='text-decoration:none'>An Inflection Point</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Monday January 29, 2007 7:07PM</em></p> Starting last evening, and continuing into today, word about the official upcoming release of Adobe Photoshop Lightroom 1.0 has criss-crossed the Internet. Even though this is a blog for and about Aperture, I think it's important to acknowledge and discuss&hellip; <a href= 'http://www.oreillynet.com/digitalmedia/blog/2007/01/an_inflection_point_1.html'>read more</a> </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/digitalmedia/blog/2007/01/a_reason_for_using_externally.html' style='text-decoration:none'>A Reason for Using Externally Referenced Masters</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Monday January 22, 2007 10:21PM</em></p> For a long time, I was perfectly happy with the managed library structure introduced with Aperture 1.0. The simplicity of having the application manage all those pesky RAW files outweighed the fact that they were packaged in an opaque structure.&hellip; <a href= 'http://www.oreillynet.com/digitalmedia/blog/2007/01/a_reason_for_using_externally.html'>read more</a> </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/digitalmedia/blog/2007/01/macworld_shoot_wrap_up.html' style='text-decoration:none'>Macworld Shoot Wrap Up</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Friday January 19, 2007 10:01PM</em></p> After blogging during the experience of my recent Macworld 2007 assignment, I think I can safely say that it was a really good way to think in detail about my workflow and my use of Aperture. As well, some really&hellip; <a href= 'http://www.oreillynet.com/digitalmedia/blog/2007/01/macworld_shoot_wrap_up.html'>read more</a> </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/digitalmedia/blog/2007/01/macworld_shoot_day_5.html' style='text-decoration:none'>MacWorld Shoot, Day 5</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Monday January 15, 2007 2:42AM</em></p> After wrapping up my last day of shooting at MacWorld on Friday, it was time to sit down and sift through photographs. And, boy, there were quite a few to go through. I shot 943 frames for my assignment. During&hellip; <a href= 'http://www.oreillynet.com/digitalmedia/blog/2007/01/macworld_shoot_day_5.html'>read more</a> </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/digitalmedia/blog/2007/01/macworld_shoot_day_4.html' style='text-decoration:none'>MacWorld Shoot, Day 4</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Friday January 12, 2007 12:24AM</em></p> As I write this, it's Thursday evening and the end of MacWorld is in sight. It's a good thing too. I've lugged my camera gear all over the place and had my camera tugging at my neck for too many&hellip; <a href= 'http://www.oreillynet.com/digitalmedia/blog/2007/01/macworld_shoot_day_4.html'>read more</a> </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/digitalmedia/blog/2007/01/macworld_shoot_day_3.html' style='text-decoration:none'>MacWorld Shoot, Day 3</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Wednesday January 10, 2007 10:17PM</em></p> MacWorld continues to buzz on. The Keynote yesterday was incredible and, along with many of the other Inside Aperture bloggers, I was lucky enough to have a great seat right up front. Both the AppleTV and the iPhone look great&hellip; <a href= 'http://www.oreillynet.com/digitalmedia/blog/2007/01/macworld_shoot_day_3.html'>read more</a> </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/digitalmedia/blog/2007/01/macworld_shoot_day_1.html' style='text-decoration:none'>MacWorld Shoot, Day 1</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Monday January 08, 2007 11:06PM</em></p> The buzz level is very high at MacWorld. As the ever-insightful John Gruber noted over coffee, tomorrow will either bring what everyone thinks will come&mdash;namely the ever-rumored iPhone&mdash;or we'll see something else that's so good that we won't care that&hellip; <a href= 'http://www.oreillynet.com/digitalmedia/blog/2007/01/macworld_shoot_day_1.html'>read more</a> </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/digitalmedia/blog/2007/01/macworld_shoot_day_0_2.html' style='text-decoration:none'>MacWorld Shoot, Day 0</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Sunday January 07, 2007 11:23PM</em></p> I'm revved with anticipation about MacWorld. But it's not for the same reason that most of you might be. Sure, I'm looking forward to the iTV, some sneak peeks into Leopard, some new hardware, and maybe a new phone. But,&hellip; <a href= 'http://www.oreillynet.com/digitalmedia/blog/2007/01/macworld_shoot_day_0_2.html'>read more</a> </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/digitalmedia/blog/2007/01/so_whats_iptc_anyway.html' style='text-decoration:none'>So What's This IPTC Stuff Anyway?</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Monday January 01, 2007 6:36PM</em></p> In a comment to my blog post from last week, Set Up Your Metadata View, a self-described N00b asked the question: What's an IPTC? Well, it's a good question with two primary answers. The first is that IPTC stands for&hellip; <a href= 'http://www.oreillynet.com/digitalmedia/blog/2007/01/so_whats_iptc_anyway.html'>read more</a> </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/digitalmedia/blog/2006/12/set_up_your_metadata_view_1.html' style='text-decoration:none'>Set Up Your Metadata View</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Monday December 25, 2006 2:07PM</em></p> One of the areas in which Aperture excels is in managing, applying, and searching metadata about your images. To get the most of this feature, however, you need to make sure you add the appropriate metadata to your images in&hellip; <a href= 'http://www.oreillynet.com/digitalmedia/blog/2006/12/set_up_your_metadata_view_1.html'>read more</a> </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/digitalmedia/blog/2006/12/aperture_and_nonraw_files.html' style='text-decoration:none'>Aperture and Non-RAW Files</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Tuesday December 19, 2006 12:40PM</em></p> Last week, Ben Long penned a post, Aperture Alpha Channel Aberrations, in which he showed an organization trick for how he keeps different versions of the same Photoshop file stacked together in Aperture. His example underlines an important point that&hellip; <a href= 'http://www.oreillynet.com/digitalmedia/blog/2006/12/aperture_and_nonraw_files.html'>read more</a> </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/digitalmedia/blog/2006/12/using_a_rawjpg_workflow.html' style='text-decoration:none'>Using a RAW+JPG Workflow</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Monday December 11, 2006 12:59AM</em></p> This December, I'm taking some time to work on a few fundamentals before heading into a busy schedule of event shooting next year. One of the things I'm working on is a way to let other people "tap" into the&hellip; <a href= 'http://www.oreillynet.com/digitalmedia/blog/2006/12/using_a_rawjpg_workflow.html'>read more</a> </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/digitalmedia/blog/2006/12/flickr_export_for_aperture_10.html' style='text-decoration:none'>Flickr Export for Aperture 1.0</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Saturday December 09, 2006 2:59PM</em></p> Today, Connected Flow released FlickrExport for Aperture 1.0. Yay! I've been watching the development of this for a while, and am happy to see it go 1.0 and get out of beta. FlickrExport's sublime feature is that pulls the Title&hellip; <a href= 'http://www.oreillynet.com/digitalmedia/blog/2006/12/flickr_export_for_aperture_10.html'>read more</a> </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/digitalmedia/blog/2006/12/more_on_color_management.html' style='text-decoration:none'>More On Color Management</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Monday December 04, 2006 4:52PM</em></p> Two weeks ago, I wrote that Color Management is Essential. The resulting comments, as well as personal discussions, I've had since then have been interesting indeed. One of the biggest questions that I've gotten has been: "So, what exactly makes&hellip; <a href= 'http://www.oreillynet.com/digitalmedia/blog/2006/12/more_on_color_management.html'>read more</a> </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/digitalmedia/blog/2006/11/firewire_800_travel_drives.html' style='text-decoration:none'>FireWire 800 Travel Drives</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Monday November 27, 2006 1:02AM</em></p> A week and a half ago, Derrick mentioned that he was testing out a SmartDisk FireLite 120GB hard drive with Aperture. Since I do so much of my photography and processing with Aperture on-location at events, it's important to me&hellip; <a href= 'http://www.oreillynet.com/digitalmedia/blog/2006/11/firewire_800_travel_drives.html'>read more</a> </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/digitalmedia/blog/2006/11/color_management_is_essential.html' style='text-decoration:none'>Color Management is Essential</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Monday November 20, 2006 8:00AM</em></p> If you use Aperture, you probably really care about your photographs. You might be a pro with a library that ranges into the 100's of GBs, or you might be an amateur with 20GB of data, but you care enough&hellip; <a href= 'http://www.oreillynet.com/digitalmedia/blog/2006/11/color_management_is_essential.html'>read more</a> </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/digitalmedia/blog/2006/11/aperture_on_location.html' style='text-decoration:none'>Aperture On Location</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Monday November 13, 2006 3:46AM</em></p> I've been asked many times recently what my equipment setup looks like behind the scenes when I shoot a conference, such as last week's Web 2.0 Summit. I've been able to take a few people backstage and show them in&hellip; <a href= 'http://www.oreillynet.com/digitalmedia/blog/2006/11/aperture_on_location.html'>read more</a> </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/digitalmedia/blog/2006/11/vault_expansion.html' style='text-decoration:none'>Vault Expansion</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Monday November 06, 2006 8:00AM</em></p> When I got home a week ago after shooting the Ajax Experience in Boston, and C4 in Chicago before it, I went through my now-normal ritual of migrating the Aperture project for the shows from my laptop to my trusty&hellip; <a href= 'http://www.oreillynet.com/digitalmedia/blog/2006/11/vault_expansion.html'>read more</a> </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/digitalmedia/blog/2006/11/onlocation_workflow.html' style='text-decoration:none'>On-Location Workflow</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Thursday November 02, 2006 7:11AM</em></p> I've found that I use two different kinds of workflow in Aperture: the kind that I maintain for my permanent library; and the kind that I use on-location. The reason for using two distinct workflows is that the demands of&hellip; <a href= 'http://www.oreillynet.com/digitalmedia/blog/2006/11/onlocation_workflow.html'>read more</a> </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2005/11/one_for_the_mac_rumor_mill.html' style='text-decoration:none'>One for the Mac Rumor Mill</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Thursday November 17, 2005 1:47PM</em></p> If you've pulled down the latest J2SE 5.0 Release 3 via Software Update on Mac OS X Tiger, there's a little suprise in there that might mean something or might maybe mean nothing at all. </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2003/05/wiki_meet_ipod.html' style='text-decoration:none'>Wiki Meet iPod</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Monday May 05, 2003 12:49PM</em></p> <a href="http://c2.com/cgi/wiki">Wikis</a> are cool. Really cool. If you haven't played around with one yet, you really need to. But they're not just for the web anymore. </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2003/05/24_hours_with_the_new_ipod.html' style='text-decoration:none'>24 Hours with the New iPod</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Saturday May 03, 2003 10:58PM</em></p> I've had the new iPod for just about 24 hours and have played with it quite a bit in that time. In a nutshell, it's a great improvement to an already very good product. Here are the things I've really liked about it. </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2003/03/learning_cocoa_with_objectivec.html' style='text-decoration:none'>Learning Cocoa with Objective-C and December 2002 Tools Release</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Wednesday March 12, 2003 4:56PM</em></p> Recently, I've received a spate of inquiries about a particular problem that readers of <a href="http://www.oreilly.com/catalog/learncocoa2">Learning Cocoa</a> are having when building projects that contain a space in their name. Unfortunately, there are several projects in Learning Cocoa including some of the first applications in the book like <em>Hello World</em> and <em>Currency Converter</em>.  </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2003/01/12_hours_with_iphoto_2.html' style='text-decoration:none'>12 Hours with iPhoto 2</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Friday January 31, 2003 11:52PM</em></p> iPhoto 2 brings lots of little improvements to the program and of course the big much needed one: speed. Not a total improvement in speed, but noticeable. I downloaded the application about 12 hours ago and here's my thoughts so far.  </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2002/11/what_happened_to_the_good_sola.html' style='text-decoration:none'>What Happened to the Good Solaris Software?</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Monday November 04, 2002 2:19PM</em></p> I worked for Sun for 4 years during the Java boom. And during that time, if you wanted good server software, Solaris was your ticket. IBM, yeah, Linux, yeah, but really, Solaris was tip top. But that's changed in the year and a half since I left. </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2002/11/peeking_into_the_ruby_conferen.html' style='text-decoration:none'>Peeking into the Ruby Conference</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Sunday November 03, 2002 7:00PM</em></p>  RubyConf 2002 was held this weekend in Seattle WA. Rael Dornfest and I managed to join fellow O'Reilly Network author Daniel Steinburg for the day Saturday and watched as the small, but vibrant group of 50 something Ruby devotees&hellip; <a href= 'http://www.oreillynet.com/mac/blog/2002/11/peeking_into_the_ruby_conferen.html'>read more</a> </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2002/09/presenting_mac_os_x.html' style='text-decoration:none'>Presenting Mac OS X</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Monday September 30, 2002 3:51PM</em></p> I've added a new presentation to my repertoire: &quot;Mac OS X, Why the Alpha Geeks are Using It.&quot; It's an obvious tip of the hat to <a href="http://conferences.oreillynet.com/cs/macosx2002/view/e_spkr/416">Tim O'Reilly's thoughts on OS X</a>, with a focus on showing to people <em>why</em> OS X works for Unix weenies and giving a hands on exploration of the system.  </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2002/08/its_not_a_party_till_the_cops.html' style='text-decoration:none'>It's not a Party till the Cops Show Up</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Saturday August 24, 2002 2:36AM</em></p> As part of the release of Jaguar (Mac OS X 10.2), Apple kept their stores open late on Friday night.  It was quite a sight to see in Palo Alto, complete with a line that wrapped, literally, around the block.  </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2002/08/pattern_own_the_plug_1.html' style='text-decoration:none'>Pattern: Own the Plug</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Monday August 19, 2002 1:57PM</em></p> In this foreword, er, <a href="http://c2.com/doc/forewords/beck2.html">afterword</a> to <em>Kent Beck's Guide to Better Smalltalk: A Sorted Collection</em>, Ward Cunningham establishes his rational for a &quot;don't program a computer you can't unplug&quot; pattern. I've been working with <a href="http://www.oreillynet.com/weblogs/author/54">Derrick</a> on some articles for the <a href="http://www.oreillynet.com">O'Reilly Network</a> that stress self-sufficiency and &quot;owning the plug.&quot; They will start appearing after August 24th. </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2002/07/geeks_descend_on_san_diego.html' style='text-decoration:none'>Geeks Descend on San Diego</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Sunday July 21, 2002 5:30PM</em></p> It's that time of year again. Time for the O'Reilly Open Source Convention in San Diego. Even though this is only the second year for the convention to be hosted in the Sheraton Harbon Island, San Diego now means Open Source to me. The moment I walked out of the airport terminal and felt the perfect weather wash over me, I knew that I was here for a week full of heavy tech discussions mixed in with trips for Mexican food and the beach. </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2002/07/on_itunes_3_third_time_is_the.html' style='text-decoration:none'>On iTunes 3: Third Time is the Charm</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Friday July 19, 2002 11:22AM</em></p> Amid all the ruckus (both good and bad) from MacWorld NY this year, I find myself happy that iTunes 3 cleans up my one big <a href="http://www.oreillynet.com/cs/weblog/view/wlg/1003">complaint</a> as well as introduces nice new features. </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2002/07/software_update_brings_command.html' style='text-decoration:none'>Software Update Brings Command Line Goodness</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Monday July 15, 2002 11:19PM</em></p> In another move that shows that Apple is continuing to figure out that they now have a whole lotta Unix weenies using their OS, the latest version of Software Update adds a bonus feature in addition to its stated purpose of securing the update process. This new feature is a command line interface to the software update utility. </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2002/06/john_c_dvorak_on_switching.html' style='text-decoration:none'>John C Dvorak on Switching</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Tuesday June 25, 2002 7:29PM</em></p> John C Dvorak is paid to make controversal statements. And this time he's made a big one. In fact, I think he's gone over the line. In his latest <a href="http://www.pcmag.com/article2/0,4149,263476,00.asp">PCMag editorial</a> he takes random personal potshots at the people Apple's <a href="http://www.apple.com/switch">Switch</a> campaign. </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2002/06/alttab_task_switcher_for_os_x.html' style='text-decoration:none'>Alt-Tab Task Switcher for OS X</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Wednesday June 19, 2002 10:34PM</em></p> So, I know this <a href="http://www.servlets.com/jason/index.html">this guy</a> who runs Mac OS X as his server and is seriously interested in running it as a desktop. Problem is that there are a couple of UI issues that keep him from picking up a TiBook and joining the fun. I may have found a solution for one of these issues. </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2002/06/web_browsing_with_smooth_text.html' style='text-decoration:none'>Web Browsing with Smooth Text</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Monday June 17, 2002 11:33AM</em></p> Today, Microsoft released IE 5.2 for Mac OS X. This latest incarnation of the heavyweight browser introduces support for Quartz text smoothing under Mac OS X 10.1.5. Is text smoothing while browsing really a big deal? Is this a sign of good things to come. </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2002/05/wireless_in_alaska.html' style='text-decoration:none'>Wireless in Alaska</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Wednesday May 29, 2002 1:46AM</em></p> Once again, I've taken to the seas on Neil Bauman's latest <a href="http://www.geekcruises.com/">Geek Cruise</a>: MacMania. The focal point of the cruise has become the library on board where 802.11b has been set up complete with a satellite uplink. </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2002/05/a_cool_omnigraffle_tip.html' style='text-decoration:none'>A Cool OmniGraffle Tip</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Thursday May 16, 2002 1:58PM</em></p> I've been using <a href="http://www.omnigroup.com/applications/omnigraffle/">OmniGraffle</a> for about a year now. It's a really good tool that does what Visio did best in its early years. In the new 2.0 version there are several really nice improvements. </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2002/05/apples_rendevous_equals_zeroco.html' style='text-decoration:none'>Apple's Rendevous Equals Zeroconf</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Tuesday May 14, 2002 12:30AM</em></p> After Steve Jobs announced Rendezvous at this year's WWDC, a lot of questions were in the air. What is it? Will it really be standardized?  </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2002/05/wwdceve.html' style='text-decoration:none'>WWDC-Eve</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Sunday May 05, 2002 10:30PM</em></p> The O'Reilly Network team has descended on San Jose in preparation for the start of WWDC on Monday morning. As the sun went down Sunday evening, a whole new group of people emerged in downtown San Jose. Some of them were sporting shirts with various logos on them, others were carrying laptop bags, all were focused on one thing--getting ready for the conference that starts with a SteveNote first thing in the morning.
+ </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2002/04/quit_stealing_the_phone_cords.html' style='text-decoration:none'>Quit Stealing the Phone Cords!</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Wednesday April 24, 2002 10:34PM</em></p> Today, I find myself in yet another hotel. <em>&quot;Thank goodness, there's high speed internet access here,&quot;</em> I thought to myself as I sat my bags down. I proceeded to pull out my trusty TiBook and... Zip. Nada. No Net. </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2002/04/hello_photoshop_goodbye_classi.html' style='text-decoration:none'>Hello Photoshop, Goodbye Classic</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Tuesday April 23, 2002 2:43PM</em></p> A little over a year since the official release of Mac OS X, and a bit over two years since I started using OS X full time, I am finally able to run <em>Classic-free</em>. The reason? My copy of Adobe Photoshop 7 finally arrived today. </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2002/04/cocoa_api_reference_browser.html' style='text-decoration:none'>Cocoa API Reference Browser</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Wednesday April 17, 2002 11:48PM</em></p> On the cocoa-dev mailing list today, I saw a post for a new tool for browsing the Cocoa documentation. It's called <a href="http://homepage.mac.com/hoshi_takanori/cocoa-browser/">Cocoa Browser</a>, it's currently at version 0.3, and it's released under the GPL. The program is easy to use and has tons of promise. Even though it doesn't browse all of the Cocoa documentation, it's a great start and already part of my toolbox. </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2002/04/mac_os_x_revs_to_1014.html' style='text-decoration:none'>Mac OS X revs to 10.1.4</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Wednesday April 17, 2002 11:37PM</em></p> It's that time again for OS X users... Time to go to Software Update and get a fresh helping of OS X update goodness. Apple just posted the 10.1.4 update for download via Software Update. </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2002/03/jason_hunters_look_behind_the.html' style='text-decoration:none'>Jason Hunter's Look Behind the Hope</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Friday March 22, 2002 6:30PM</em></p> Ever want to know what really happens behind the headlines that you read about. Jason Hunter gives us an account of some of the recent Apache and JCP events in this <a href="http://www.servlets.com/blog/archives/000016.html">Servlets.com weblog posting</a>. </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2002/03/a_new_hope_for_open_source_and.html' style='text-decoration:none'>A New Hope for Open Source and Java</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Friday March 22, 2002 5:04PM</em></p> Over the past few weeks, discussions between the Apache Software Foundation and Sun Microsystems have reached a fever pitch over several concerns raised by Apache.  Sun has agreed to make changes to the upcoming JSPA revision that address Apache's concerns. </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2002/03/new_ipod_and_itunes_software_r.html' style='text-decoration:none'>New iPod and iTunes Software Released</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Thursday March 21, 2002 12:21PM</em></p> At MacWorld Tokyo, Apple announced availability of a new iPod that can store 10GB of music. Even better for those of us that already bought iPods, there is new iPod (1.1) and iTunes (2.0.4) software available. </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2002/02/mac_os_x_1013_released.html' style='text-decoration:none'>Mac OS X 10.1.3 Released</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Wednesday February 20, 2002 9:22AM</em></p> It's that time again. Time to go to Software Update and download the latest and greatest set of bug fixes for Mac OS X. There's more support for CD burners and digital cameras, a new version of OpenSSH, and much more. </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2002/01/why_i_dont_want_a_moxi.html' style='text-decoration:none'>Why I don't want a Moxi</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Tuesday January 15, 2002 12:33AM</em></p> In my recent blog titled <em>"<a href="http://www.oreillynet.com/cs/user/view/wlg/1035">Mac Speculation and Fantasy</a>"</em>, I talked a bit about a digital hub device that I wanted to attach to my home theater setup. Lots of people wrote me and recommended that I look at the <a href="http://www.moxi.com/">Moxi</a>. While the Moxi is indeed cool, I don't think that its what I wanted when I wrote that blog. </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2002/01/bianca_shows_up_at_apple_devel.html' style='text-decoration:none'>Bianca Shows up at Apple Developer Party</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Wednesday January 09, 2002 12:47AM</em></p> As I was wandering around mingling with lots of developers at Apple's MacWorld Developer Party, I was greeted by a sight of a couple of people making a whole lotta grilled cheese sandwiches while a drum circle was pounding out a rhythm just a few feet away. </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2002/01/developers_reaction_to_the_new.html' style='text-decoration:none'>Developers' Reaction to the New iMac</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Wednesday January 09, 2002 12:26AM</em></p> In the thirty-odd something hours since the unveiling of the new iMac, I've talked to lots of my developer friends about it. What's interesting is the reaction of those that don't already have a Mac. </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2002/01/mac_speculation_and_fantasy.html' style='text-decoration:none'>Mac Speculation and Fantasy</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Monday January 07, 2002 10:30PM</em></p> I have to admit that part of me was disappointed that there was not a "One More Thing" at Steve Jobs' keynote this morning. That one tease line promising something beyond the rumor sites had me hoping for something more. But since we didn't get more, there's only one thing to do -- engage in some good old fashioned rampant speculation! </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2002/01/one_part_imac_one_part_cube_ne.html' style='text-decoration:none'>One Part iMac + One Part Cube = New iMac</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Monday January 07, 2002 11:59AM</em></p> The new iMac is really cool. No, scratch that. It's really <strong>really</strong> cool. Like most people, I envisioned that the new flat panel iMac would be a 15" flat panel screen with the hardware stuffed  behind it. However, Steve Jobs gave some good reasons why that particular design strategy wouldn't work. And then he unveiled the new iMac. </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2002/01/macworld_keynote_live_on_techt.html' style='text-decoration:none'>MacWorld Keynote Live on TechTV</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Sunday January 06, 2002 11:13PM</em></p> You say you didn't manage to score a pass to watch Steve Jobs unveil whatever it is that Apple has been hyping to the max over the last week? TechTV is providing an alternative and <a href="http://www.techtv.com/news/specialreport/story/0,24195,3366796,00.html">broadcasting the keynote live</a>. </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2002/01/small_joys_in_software_update.html' style='text-decoration:none'>Small Joys in Software Update</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Sunday January 06, 2002 10:02PM</em></p> This weekend, I came home from Tahoe and found Mac OS X's Software Update informing me that there were new print drivers available. These usually aren't the kinds of things that generate much excitement in my home, but in this case I've been looking forward to one particular function of my HP 990cse printer to be enabled: dual sided printing. </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2002/01/bold_claims_from_apple.html' style='text-decoration:none'>Bold Claims from Apple</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Wednesday January 02, 2002 9:01AM</em></p> Over the last few days, Apple's website has been making some bold statements about what is coming up for MacWorld next week. Can Apple live up to the hype that their marketing machine is creating? It's anybody's guess. </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2001/12/mp3_born_to_skip.html' style='text-decoration:none'>MP3: Born to Skip</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Saturday December 29, 2001 11:57AM</em></p> In my <em>A Week with the iPod</em> article that ran last month, I complained about both the iPod and iTunes inserting space between tracks on "mix" discs. Several people wrote in with suggestions. I tried all of them and more, but the problem still shows up when listening to my favorite live mix DJ albums. It seems that the problem is inherit in the way the MP3 format works. </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2001/12/compact_flash_it_keeps_getting.html' style='text-decoration:none'>Compact Flash: It Keeps Getting Better</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Saturday December 29, 2001 11:09AM</em></p> I'm a big fan of my <a href="http://www.storage.ibm.com/hdd/micro/index.htm">IBM 1GB Microdrive</a>. Because it is a hard drive rather than solid state, it used to run rings around other CF cards when it came to performance. That was a year ago. </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2001/12/mac_os_x_1012_released.html' style='text-decoration:none'>Mac OS X 10.1.2 Released</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Friday December 21, 2001 2:50AM</em></p> Apple's OS X team has an early stocking stuffer for us: Mac OS X 10.1.2. For those keeping track of build numbers, it's 5P48. Grab it via Software Update. </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2001/12/why_did_jordan_hubbard_go_to_a.html' style='text-decoration:none'>Why Did Jordan Hubbard Go To Apple?</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Saturday December 15, 2001 6:24PM</em></p> This interview by the Boston Globe gives a view into the reasons why one of the founders of the FreeBSD project now works for Apple on Mac OS X. </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2001/12/unexpected_ipod_battery_drain.html' style='text-decoration:none'>Unexpected iPod Battery Drain</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Saturday December 15, 2001 1:10AM</em></p> A few <a href="http://www.oreillynet.com/cs/user/view/wlg/945">weblogs ago</a>, I noted an occasion where my iPod seemed to run through its battery very quickly. I had attributed this to a faulty battery meter, but instead it turns out to have a different root cause. </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2001/12/cocoas_documentation_gets_a_mu.html' style='text-decoration:none'>Cocoa's Documentation Gets a Much Needed Improvement</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Saturday December 08, 2001 1:57PM</em></p> I, along with a lot of other people, have <a href="http://www.oreillynet.com/cs/weblog/view/wlg/312">commented</a> that Apple's Cocoa documentation needs improvement. As part of Apple's upcoming December 2001 Developer Tools release, a lot of work has been done to improve the situation. </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2001/12/when_2_out_of_4_bars_doesnt_me.html' style='text-decoration:none'>When 2 out of 4 bars doesn't mean 50%</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Friday December 07, 2001 9:22PM</em></p> On my way out the door for my daily walk, I grabbed my trusty <a href="http://www.oreillynet.com/pub/a/mac/2001/11/28/ipod_review.html">iPod</a> so that I would have some tunes to listen to. I hadn't charged it in days, so I checked the battery and found that it had 2 out of 4 bars. Happy, I went on my walk. And then.... </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2001/11/cruising_with_geeks.html' style='text-decoration:none'>Cruising with Geeks</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Monday November 19, 2001 7:37PM</em></p> Last week I accompanied my friend on a "<a href="http://www.geekcruises.com/">Geek Cruise</a>" -- a curious combination of typical conference sessions and non-stop informal meeting between programmers set on a moving hotel with a staff that caters to your whim. Much to my surprise, the chemistry of the event worked well. 
+ </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2001/10/apple_store_service_experience.html' style='text-decoration:none'>Apple Store Service Experience</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Thursday October 25, 2001 10:42PM</em></p> There's nothing like loosing power to your system when you pick up your laptop to run to a meeting. However, I didn't want to give up my laptop for any amount of time to send it in. So, I decided to pay the newly opened local Apple Store in Palo Alto a visit and see if they could help. </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2001/09/apples_silent_contribution.html' style='text-decoration:none'>Apple's Silent Contribution</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Saturday September 22, 2001 2:52AM</em></p> "Out thoughts are with those who were affected by the recent tragic events" says Apple's home page along with a link to the American Red Cross. Any statement like this from a company is usually either a show that there are really humans working there, or just a crass attempt at commercialism in disguise. In this case, there's more to the story. </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2001/06/death_of_an_airport_base_stati.html' style='text-decoration:none'>Death of an Airport Base Station</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Sunday June 24, 2001 4:19PM</em></p> I'm suspicious of my recent affiliation with the O'Reilly Network. First I read about <a href="http://linux.oreillynet.com/pub/au/51">Chris Halsall's</a> "<a href="http://linux.oreillynet.com/pub/a/linux/2001/06/19/palm_death.html">Death of a Palm</a>" Then I come home and what do I find? My trusty Aiport Base Station is dead. Suddenly it seems like an episode of the Sopranos around here. </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2001/06/mac_os_x_1004_released.html' style='text-decoration:none'>Mac OS X 10.0.4 Released</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Thursday June 21, 2001 4:18PM</em></p> Mac OS X 10.0.4 is now available via Software Update. For the geeky among you Mac fans, the build number for this release is 4Q12. Several improvements to OS X appear to have been made in this release. </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2001/06/a_bit_more_objectivec_from_a_j.html' style='text-decoration:none'>A Bit More Objective-C from a Java Point of View</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Tuesday June 19, 2001 11:52AM</em></p> Now that I have recovered from JavaOne, I have been once again exploring the terrain of Cocoa. And in the process, I've been digging deep again into Objective-C. In a previous weblog I discussed a few of the differences between Objective-C and Java. Now I'm going to take a look at a couple of things that are annoying, and sometimes painful, about working in Objective-C. Especially when coming from a Java background. </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2001/06/the_week_after_javaone.html' style='text-decoration:none'>The Week After JavaOne</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Monday June 11, 2001 11:27AM</em></p> The twenty thousand odd people that were at JavaOne know exactly how I feel this week after the conference. In a word: Tired. There were five full days of 8AM wake-up calls for keynotes and 11PM BOF sessions and parties. At the end of it all however, it seems that the important take-away items from this JavaOne were not in the press releases or keynotes. They were found elsewhere. </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2001/05/swing_apps_on_os_x_its_all_goo.html' style='text-decoration:none'>Swing Apps on OS X: It's all Good and getting Better</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Wednesday May 23, 2001 1:08PM</em></p> The number one question people have for me when I tell them that I am developing Java on Mac OS X is, "How well do your applications run?" And the answer is that my experiences have been really good -- stunningly good in fact. But then, most of my applications have been faceless server applications and most of the cross-platform problems in Java hit GUI applications.  As luck would have it, a few of my friends that develop GUI applications have started developing on OS X as well and I have good news to report. </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2001/05/a_bit_of_objectivec_from_a_jav.html' style='text-decoration:none'>A Bit of Objective-C From a Java Point of View</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Wednesday May 16, 2001 10:27PM</em></p> Because of Apple's weak Java based Cocoa documentation, I have had to get somewhat familiar with Objective-C in order to explore Cocoa-Java programming. Even though they are both highly object oriented languages, there are quite a few differences between the two.  </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2001/05/cocoa_and_java_lots_of_promise.html' style='text-decoration:none'>Cocoa and Java: Lots of Promise, But...</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Tuesday May 08, 2001 11:50AM</em></p> Currently, the Mac Devcenter is running a series of articles by Mike Beam entitled <a href="http://www.oreillynet.com/pub/ct/37">Programming with Cocoa</a>. This series is geared towards looking at Mac OS X's Cocoa APIs as expressed in Objective-C. The approach is a natural one given that Objective-C is the native language of Cocoa, but since I am approaching this weblog from the perspective of a Java coder, I've been experimenting with Cocoa's Java APIs. 
+ </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2001/05/fun_with_quartz.html' style='text-decoration:none'>Fun with Quartz</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Saturday May 05, 2001 1:32AM</em></p> A lot of graphics magic happens in Mac OS X to make the UI go together the way it does. In fact, I'm still scratching my head wondering how its all done so well. To help peek behind the curtain, Apple has provided a tool that at least gives a glimpse into the magic that Quartz performs. It's called &quot;Quartz Debug&quot; and it can be found in the Developer folder after you install the Developer Tools CD. </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2001/04/experiences_with_project_build.html' style='text-decoration:none'>Experiences with Project Builder</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Monday April 30, 2001 1:36PM</em></p> The centerpiece application on the Developer Tools CD that ships with every copy of Mac OS X is an Integrated Development Environment (IDE) called Project Builder. This is a new effort from Apple that is adept at writing C based kernel modules, Objective C Cocoa applications, C++ based I/O drivers, and general purpose Java work. Unlike most Java capable IDEs, it launches quickly and doesn't completely take over your monitor with tool bars and windows. </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2001/04/mrjappbuilder_and_application.html' style='text-decoration:none'>MRJAppBuilder and Application Bundle Internals</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Monday April 23, 2001 1:40AM</em></p> The easiest way of creating a double-clickable Java program on Mac OS X is to use Apple's MRJAppBuilder. It creates a nifty <em>application bundle</em> which contains all of the class and resource files needed by an application as well as some information that helps Mac OS X run it. Even better, the application bundles it creates are simple enough to be created or manipulated by other tools. </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2001/04/mac_os_x_java_wheres_my_java_h.html' style='text-decoration:none'>Mac OS X & Java: Where's my $JAVA_HOME?</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Saturday April 14, 2001 6:18PM</em></p> The first thing I ran into when starting to work with OS X's Java implementation was having to set my <tt>JAVA_HOME</tt> environment variable. Since the default Terminal shell on OS X is tcsh, it is easy enough to set your <tt>JAVA_HOME</tt> to the necessary string as long as you know what that string should be. </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2001/04/netbeans_on_mac_os_x.html' style='text-decoration:none'>NetBeans on Mac OS X</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Saturday April 14, 2001 12:59PM</em></p> <a href="http://www.netbeans.org/">NetBeans</a> 3.2 is up and running on Mac OS X. However, in order to get it to work, you need to follow these <a href="http://www.netbeans.org/articles/mac.html">instructions</a> provided by the NetBeans team. They are easy enough to follow as long as you have access to a Windows, Solaris, or Linux machine that you can poach a needed JAR file from. <strong>New link: <a href="http://www.netbeans.org/ide/support/mac.html">http://www.netbeans.org/ide/support/mac.html</a></strong> </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2001/04/os_x_developer_appeal.html' style='text-decoration:none'>OS X: Developer Appeal</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Tuesday April 10, 2001 11:23PM</em></p> In my previous weblog, <a href="http://www.oreillynet.com/cs/weblog/view/wlg/220">&quot;Mixing Java and Titanium&quot;</a>, I talked about how excited people were about the mixture of Titanium, Mac OS X, and Java. Now, it is time to dig and and see what is really going on here. What is it about Mac OS X that is so attractive? What is the substance underneath the sleek hardware and cool window effects? </div>
+
+<div style="padding:10px 0;"><p style="padding:0;margin:0;font-size:14px;font-weight:bold;"><a href='http://www.oreillynet.com/mac/blog/2001/04/mixing_java_and_titanium.html' style='text-decoration:none'>Mixing Java and Titanium</a></p> <p style="padding:1px 0 6px 0;margin:0"><em>Thursday April 05, 2001 5:10PM</em></p> At last weeks <a href="http://conferences.oreilly.com/java2001/">O'Reilly Conference on Java</a> in Santa Clara I unwittingly became the guy with the coolest toy around. Whenever I pulled out my new Titanium PowerBook to get some work done, people started coming by to ask questions about it. The shiny titanium shell must have had something to do with that.  Needless to say, I didn't actually get much work done.
+ </div>
+
+
+          </div>
+     </div>
+
+
+
+<div class="tab5 tabbertab" id="Reviews">
+      <h3 style="clear:left;padding:0;margin:0;">Reviews</h3>
+           <div style="padding-top:10px;padding-bottom:20px;">
+
+
+<div style="float:left;padding:10px 3px 0 0;margin:0;clear:left;">
+
+<a href="http://www.oreilly.com/catalog/learncocoa2/"><img src="0596003013_thumb.gif" height="120" alt="Learning Cocoa with Objective-C" /></a>
+
+</div>
+
+<p style="padding:10px 3px 0 0;margin:0;font-size:14px;font-weight:bold;"><a href="http://www.oreilly.com/catalog/learncocoa2">Learning Cocoa with Objective-C</a></p>
+
+
+
+<p style="font-weight:bold;font-size:110%;color:#333;margin:0;padding:0;">Customer Reviews</p>
+<p style="white-space: nowrap;margin:2px 0 0 0;">
+<img src="http://www.oreillynet.com/images/icons/star_on.gif" alt="Star" width="18" height="17" align="absbottom" /><img src="http://www.oreillynet.com/images/icons/star_on.gif" alt="Star" width="18" height="17" align="absbottom" /><img src="http://www.oreillynet.com/images/icons/star_on.gif" alt="Star" width="18" height="17" align="absbottom" /><img src="http://www.oreillynet.com/images/icons/star_on.gif" alt="Star" width="18" height="17" align="absbottom" /><img src="http://www.oreillynet.com/images/icons/star_on.gif" alt="Star" width="18" height="17" align="absbottom" />
+</p>
+
+<p style="color:#666;margin-top:1px;"><b>Learning Cocoa with Objective-C Review</b><br />
+<span style="font-size:95%;">2003-02-04 12:30:34 
+Michael Reiland
+</span><br />
+I too thoroughly enjoyed this book.  I have been programming in C for a number of years, but wanted to take the next step (excuse the pun) and get into Cocoa and Objective-C.  This is the best resource for learning Cocoa that I've seen.  I've tried a couple other books and nothing compares to this book's excellent pace and process.<br />
+<br />
+If you are a beginning Cocoa programmer, this book is a must.  I can't wait until a more advanced book on Cocoa comes out.</p>
+<p style="white-space: nowrap;margin:2px 0 0 0;">
+<img src="http://www.oreillynet.com/images/icons/star_on.gif" alt="Star" width="18" height="17" align="absbottom" /><img src="http://www.oreillynet.com/images/icons/star_on.gif" alt="Star" width="18" height="17" align="absbottom" /><img src="http://www.oreillynet.com/images/icons/star_on.gif" alt="Star" width="18" height="17" align="absbottom" /><img src="http://www.oreillynet.com/images/icons/star_on.gif" alt="Star" width="18" height="17" align="absbottom" /><img src="http://www.oreillynet.com/images/icons/star_on.gif" alt="Star" width="18" height="17" align="absbottom" />
+</p>
+
+<p style="color:#666;margin-top:1px;"><b>Learning Cocoa with Objective-C Review</b><br />
+<span style="font-size:95%;">2003-01-17 08:24:57 
+Gerry Davenport
+</span><br />
+After starting &#147;Building Cocoa Applications: A Step by Step Guide,&#148; another O&#145;Reilly title, and &#147;Cocoa Programming for Max OS X&#148; by Aaron Hillegass, I had to set them aside because they were filled with info that I was not looking for, ready for, or was not explained in a clear format--I felt lost and discouraged that I was not learning anything while I was reading them.<br />
+<br />
+I picked up &#147;Learning Cocoa with Objective-C, 2nd Edition&#148; and read it from cover to cover without doing any examples, but I understood them like I was the one who created them. The book, although a bit simple in some parts (even for me), was straight forward and clearly understandable. The code that was being written was explained in detail, and there was nothing in there that was not part of the scope of the title. The book was a refreshingly clear read about &#147;Learning Cocoa with Objective-C.&#148;<br />
+<br />
+I am ready for MR. James Duncan Davidson to write the next level Cocoa Programming book, because I need all the help I can get--hands on training would be great--any takers?</p>
+<p style="white-space: nowrap;margin:2px 0 0 0;">
+<img src="http://www.oreillynet.com/images/icons/star_on.gif" alt="Star" width="18" height="17" align="absbottom" /><img src="http://www.oreillynet.com/images/icons/star_on.gif" alt="Star" width="18" height="17" align="absbottom" /><img src="http://www.oreillynet.com/images/icons/star_on.gif" alt="Star" width="18" height="17" align="absbottom" /><img src="http://www.oreillynet.com/images/icons/star_on.gif" alt="Star" width="18" height="17" align="absbottom" /><img src="http://www.oreillynet.com/images/icons/star_on.gif" alt="Star" width="18" height="17" align="absbottom" />
+</p>
+
+<p style="color:#666;margin-top:1px;"><b>Learning Cocoa with Objective-C Review</b><br />
+<span style="font-size:95%;">2002-11-30 13:55:52 
+Daniel Stein
+</span><br />
+For those wanting to take their first steps in the world of Cocoa - ObjectiveC, I find it difficult to imagine a better introduction. The measured pace and set of very appropriate examples made it just right for me. The author's advice about necessary background is spot-on, and readers without it may be a little frustrated. There is not much material incorporated about OOP concepts, so I found that my experience with C++ and object-oriented concepts to be very useful in understanding the basics of how the Cocoa frameworks and the ObjectiveC syntax fit into the scheme of things. The edition I read contains numerous typos and minor errors but most of them are dealt with in the errata portion of the book website. Davidson has a friendly, enjoyable style and uses it well when the material allows it. Highly recommended!</p>
+
+<p style='font-weight:bold;font-size:110%;color:#333;margin:0;padding:0;'>Media Reviews</p><p style='color:#666;'>"'Learning Cocoa with Objective-C Second Edition' is a book rich enough to satisfy both the novice programmer and the has-been coder who would like to move over to OS X...Out of all the books I've seen on the topic, this book is not only the best but the least expensive, as well.  Quality definitely outweighs quantity on this one, and I would recommend this book to anyone, novice or professional, who would like a guide to Cocoa."<br />--Dan Hollister, Macteens, March 2004<br /><a href="http://macteens.com/more.php?id=181_0_1_0_C">http://macteens.com/more.php?id=181_0_1_0_C</a><br /><br />"By the time I got through it, I pretty much understood the whys and wherefores in OS X and how Cocoa apps behave. It peeled back the mystery for me...Apple wants application developers to succeed on the OS X platform and this book goes a long ways in making that process possible."--Robert Pritchett, MacNut, January 2003</p>
+
+
+
+
+
+
+
+
+
+<div style="float:left;padding:10px 3px 0 0;margin:0;clear:left;">
+
+<a href="http://www.oreilly.com/catalog/cocoaian/"><img src="0596004621_thumb.gif" height="120" alt="Cocoa in a Nutshell" /></a>
+
+</div>
+
+<p style="padding:10px 3px 0 0;margin:0;font-size:14px;font-weight:bold;"><a href="http://www.oreilly.com/catalog/cocoaian">Cocoa in a Nutshell</a></p>
+
+
+
+<p style="font-weight:bold;font-size:110%;color:#333;margin:0;padding:0;">Customer Reviews</p>
+<p style="white-space: nowrap;margin:2px 0 0 0;">
+<img src="http://www.oreillynet.com/images/icons/star_on.gif" alt="Star" width="18" height="17" align="absbottom" /><img src="http://www.oreillynet.com/images/icons/star_on.gif" alt="Star" width="18" height="17" align="absbottom" /><img src="http://www.oreillynet.com/images/icons/star_on.gif" alt="Star" width="18" height="17" align="absbottom" /><img src="http://www.oreillynet.com/images/icons/star_on.gif" alt="Star" width="18" height="17" align="absbottom" /><img src="http://www.oreillynet.com/images/icons/star_off.gif" alt="Star" width="18" height="17" border="0" align="absbottom" />
+</p>
+
+<p style="color:#666;margin-top:1px;"><b>Great book, time for v2.0</b><br />
+<span style="font-size:95%;">2005-08-21 10:47:44 
+leeg
+</span><br />
+When I can't remember how to do something in Cocoa, I turn to this book first.  And the XCode documentation second, if I need to (which is rare).  However, Cocoa is a fast-moving target and the nutshell doesn't contain Cocoa Bindings, Core Data/Image/Audio, WebKit or any number of other frameworks which have been introduced since Panther.  An up-to-date version would be a bit heavier, but I'd have no trouble buying it and recommending it to colleagues.</p>
+<p style="white-space: nowrap;margin:2px 0 0 0;">
+<img src="http://www.oreillynet.com/images/icons/star_on.gif" alt="Star" width="18" height="17" align="absbottom" /><img src="http://www.oreillynet.com/images/icons/star_on.gif" alt="Star" width="18" height="17" align="absbottom" /><img src="http://www.oreillynet.com/images/icons/star_on.gif" alt="Star" width="18" height="17" align="absbottom" /><img src="http://www.oreillynet.com/images/icons/star_on.gif" alt="Star" width="18" height="17" align="absbottom" /><img src="http://www.oreillynet.com/images/icons/star_on.gif" alt="Star" width="18" height="17" align="absbottom" />
+</p>
+
+<p style="color:#666;margin-top:1px;"><b>Cocoa in a Nutshell Review</b><br />
+<span style="font-size:95%;">2004-04-02 09:05:52 
+--
+</span><br />
+I also like this book, nice book with comprehensive text inside:-)A complement to Apple's documentation, it is the only reference to the classes, functions, types, constants, protocols, and methods that make up Cocoa's Foundation and Application Kit frameworks. <br />
+<br />
+<i><a href="http://emur.org">Emoo</a></i><br />
+<br />
+</p>
+<p style="white-space: nowrap;margin:2px 0 0 0;">
+<img src="http://www.oreillynet.com/images/icons/star_on.gif" alt="Star" width="18" height="17" align="absbottom" /><img src="http://www.oreillynet.com/images/icons/star_on.gif" alt="Star" width="18" height="17" align="absbottom" /><img src="http://www.oreillynet.com/images/icons/star_on.gif" alt="Star" width="18" height="17" align="absbottom" /><img src="http://www.oreillynet.com/images/icons/star_on.gif" alt="Star" width="18" height="17" align="absbottom" /><img src="http://www.oreillynet.com/images/icons/star_on.gif" alt="Star" width="18" height="17" align="absbottom" />
+</p>
+
+<p style="color:#666;margin-top:1px;"><b>Cocoa in a Nutshell Review</b><br />
+<span style="font-size:95%;">2003-05-30 13:01:28 
+Ryan
+</span><br />
+Great reference! Very concise and helpful.</p>
+
+<p style='font-weight:bold;font-size:110%;color:#333;margin:0;padding:0;'>Media Reviews</p><p style='color:#666;'>8/10<br />--Emma Story, Slashdot.org, April 2004<br /><a href="http://books.slashdot.org/books/04/04/13/0223229.shtml?tid=107&tid=126&tid=156&tid=187">http://books.slashdot.org/books/04/04/13/0223229.shtml?tid=107&tid=126&tid=156&tid=187</a><br /><br />"Like other O'Reilly Nutshell books, this is not the first stop on the journey of learning the topic in question.  Also like the other Nutshell books, it is the definitive reference for the topic that it covers...When faced with problems such as stopping coding, going into the documentation, or digging around to find the class documentation I need, there is just something magical about being able to flip through a book to find solutions."<br />--William Stevenson, "ACM Queue," November 2003<br /><br />"An essential reference for serious Cocoa developers."<br />--Major Keary, AUSOM News, September 2003<br /><br />"O'Reilly's new book 'Cocoa in a Nutshell' is the most thorough and up to date reference to the Cocoa API available. You don't want web pages that may or may not be accessible today, you don't want PDF's that fill your monitor while you're trying to code. The best programmer's reference is a good book--this is one of the best...If you're serious about mastering Cocoa, you want this book."<br />--DevDepot, September 2003</p>
+
+
+
+<div style="float:left;padding:10px 3px 0 0;margin:0;clear:left;">
+
+<a href="http://www.oreilly.com/catalog/runmacxpanther/"><img src="0596005008_thumb.gif" height="120" alt="Running Mac OS X Panther" /></a>
+
+</div>
+
+<p style="padding:10px 3px 0 0;margin:0;font-size:14px;font-weight:bold;"><a href="http://www.oreilly.com/catalog/runmacxpanther">Running Mac OS X Panther</a></p>
+
+
+
+<p style="font-weight:bold;font-size:110%;color:#333;margin:0;padding:0;">Customer Reviews</p>
+<p style="white-space: nowrap;margin:2px 0 0 0;">
+<img src="http://www.oreillynet.com/images/icons/star_on.gif" alt="Star" width="18" height="17" align="absbottom" /><img src="http://www.oreillynet.com/images/icons/star_on.gif" alt="Star" width="18" height="17" align="absbottom" /><img src="http://www.oreillynet.com/images/icons/star_on.gif" alt="Star" width="18" height="17" align="absbottom" /><img src="http://www.oreillynet.com/images/icons/star_on.gif" alt="Star" width="18" height="17" align="absbottom" /><img src="http://www.oreillynet.com/images/icons/star_on.gif" alt="Star" width="18" height="17" align="absbottom" />
+</p>
+
+<p style="color:#666;margin-top:1px;"><b>Excellent Book full of Gems of Information</b><br />
+<span style="font-size:95%;">2004-04-30 17:10:02 
+Bryan
+</span><br />
+This book is an excellent source of technical information for Mac OS X 10.3 for beginning to intermediate level support technicians.  Information is presented very clearly and gets to the point without a lot of extra discussion.<br />
+<br />
+I hope the author considers publishing a book covering the technical aspects of Mac OS X Server 10.3.</p>
+<p style="white-space: nowrap;margin:2px 0 0 0;">
+<img src="http://www.oreillynet.com/images/icons/star_on.gif" alt="Star" width="18" height="17" align="absbottom" /><img src="http://www.oreillynet.com/images/icons/star_on.gif" alt="Star" width="18" height="17" align="absbottom" /><img src="http://www.oreillynet.com/images/icons/star_on.gif" alt="Star" width="18" height="17" align="absbottom" /><img src="http://www.oreillynet.com/images/icons/star_on.gif" alt="Star" width="18" height="17" align="absbottom" /><img src="http://www.oreillynet.com/images/icons/star_off.gif" alt="Star" width="18" height="17" border="0" align="absbottom" />
+</p>
+
+<p style="color:#666;margin-top:1px;"><b>Running Mac OS X Panther Review</b><br />
+<span style="font-size:95%;">2004-03-03 09:32:16 
+John Suda
+</span><br />
+<br />
+<br />
+Book Review:  &#147;Running MacOSX Panther&#148;<br />
+<br />
+		                             by John Suda<br />
+<br />
+	Most Mac users are perfectly happy that the Mac user interface shields them from the intricacies and complexities of the Unix-based &#147;plumbing&#148; beneath the surface of their machines. Others, however, like motorheads who compulsively tune, torque, and tinker with their souped-up cars, love to open up their Mac, so to speak, to get at the innards. This book is for them.<br />
+<br />
+	&#147;Running MacOSX Panther&#148; is a systematic guide to the core of OSX written, not just for power users, but for those with a compulsive need to know how the Mac works inside-out. It is for those who want master-level knowledge of how the Mac operates inside.<br />
+<br />
+	After a short history of the developmentof the Mac operating system, the book describes all the essentials: what happens during the startup and login process; how  files organized and permissions set up; how preferences are maintained and edited; how users and groups are set up and administered, and more. The emphasis is on the Unix underpinnings and use of the command line to view, customize, and control the Mac. There is discussion on how to see and edit hidden files and directories, how to use the Unix &#147;shell&#148; and text editors, and how to edit Open Firmware - the Mac version of the PC&#146;s &#147;BIOS&#148;. You can learn to create a user account for non-human users (not including your kitty!)<br />
+<br />
+	The advanced sections discuss the Open Directory, a type of database which stores information about the system and its components, and advanced networking information and options. Journaling is explained and an argument is made why disk defragmentation is not necessary on OSX. It convinced me.<br />
+<br />
+	An appendix providing guidance on installing Panther has sections for ordinary users as well as for Mac &#147;motorheads&#148;. The motorheads will enjoy reviewing the list of Boot Command key combinations.<br />
+<br />
+	</p>
+
+<p style='font-weight:bold;font-size:110%;color:#333;margin:0;padding:0;'>Media Reviews</p><p style='color:#666;'>"[<i>Running Mac OS X Panther</i>] is written well, and if you happen to be sitting next to your computer while reading it, you'll be constantly torn between the two. There are lots of things you'll want to try right away...Check out this book if you want to learn the gory details of Mac OS X's core. It's short on gimmicks but long on information."<br />--Matthew Leingang, <a href=" http://slashdot.org/article.pl?sid=04/11/17/1827219">Slashdot.org</a>, November 2004<br /><br />"...well written, well edited, tight and crammed full of information pitched at just the right level. Davidson has done an excellent job with this book."<br />--Tony Williams, Slashdot.org, April 2004<br /><a href="http://books.slashdot.org/books/04/04/22/157218.shtml?%20tid=107&tid=185&tid=187&tid=190">http://books.slashdot.org/books/04/04/22/157218.shtml?%20tid=107&tid=185&tid=187&tid=190</a><br /><br />"Last year I came back to the Macintosh platform after a 10 year absence. I couldn&#146;t ask for a better companion for my return journey than 'Running Mac OS X Panther,' by James Duncan Davidson. Most of the GUI programs built into Panther (like Mail, iTunes, and iCal) are intuitive, but if you want to explore Panther&#146;s internals you may need a guide...The book is full of useful tips on how to interact with or enhance GUI programs from the command line."<br />--Marc Garrett, Since1968.com, June 2004<br /><a href="http://since1968.com/article/43/review-two-new-macintosh-books-from-oreilly">http://since1968.com/article/43/review-two-new-macintosh-books-from-oreilly</a><br /><br />"I'll come right to the point: Davidson's 'Running Mac OS X Panther' is an excellent book...James Davidson has targeted the advanced user who wants to learn useful advanced Macintosh techniques, but does not want swim through a 1000 page technical reference. It's a pleasure to find a book that covers complex material in a readable way, without losing focus amidst a flood of geeky detail...'Running Mac OS X Panther' is a fine little book that you can read, re-read, and enjoy yourself while doing so. It's full of useful advanced level information, but it doesn't read like a textbook. Highly recommended."<br />--David Weeks, MyMac.com, June 2004<br /><a href="http://www.mymac.com/showarticle.php?id=1740">http://www.mymac.com/showarticle.php?id=1740</a><br /><br />"IMHO, Apple should have included this book with every copy of Panther - it would have filled that empty space in the box very nicely, added real value and more than justified the $230 I had to pay for my copy of Panther. As they didn't, may I recommend that, if you really care about what makes your Mac tick, you get to the nearest bookshop, as soon as you possibly can, and get your copy that way? You won't regret it. And NO, you can't borrow my copy, I need it right here alongside me, it's my security blanket!"<br />--George Carrington, <a href="http://www.actapple.org.au/">Apple User Group Incorporated</a>, April 2004<br /><br />"This is the definitive guide to the core."<br />--Major Keary, PC Update, March 2004<br /><br />"I'm not exaggerating when I say that Running Mac OS X Panther is the best book currently available on the inner workings of OS 10.3 Panther. If you want to become a Panther power user, look no further."<br />--Elsa Travisano, MUG ONE, March 2004<br /><a href="http://www.mugone.com/pages/Reviews/RunningMacOSXPanther.html">http://www.mugone.com/pages/Reviews/RunningMacOSXPanther.html</a><br /><br />"'Running Mac OS X Panther' is the book the Mac Power users have been waiting for. Author James Duncan Davidson takes you deep inside Mac OS X's core and shows you how to make Pather Purr?If you are inquisitive and confident and want to dig about in Mac OS X and get the most out of it, you really can't go wrong with this book!"<br />--MacSofa, February 2004<br /><a href="http://www.macsofa.com/index.php/weblog/comments/13/">http://www.macsofa.com/index.php/weblog/comments/13/</a><br /><br />"Strengths: Drills deeper into the Unix-side of Panther without being snooty about it.<br />Weaknesses: None found...I love the Further Explorations at the end of each chapter and I thank whomever wrote the Preface , because it does such a sweet job outlining what is in the book...And my hat's off to O'Reilly for having and hosting weblinks for their authors and books...I really wish all my Linux buddies could read this book. Many of them have already quietly migrated, but this book will bring the rest of them over to this Apple platform...Do like I did, open the book and breath deeply as the aroma of Unix wafts up from the pages and shows the BSD Unix Core while allowing me to drink from a few power user tips and tricks...Not a Mac Guru yet? You will be if you can remember everything James Duncan Davidson wrote here."<br />--Robert Pritchett, Mac Companion, February 2004<br /><a href="http://www.maccompanion.com/archives/february2004/books.html#7">http://www.maccompanion.com/archives/february2004/books.html#7</a><br /></p>
+
+
+
+<div style="float:left;padding:10px 3px 0 0;margin:0;clear:left;">
+
+<a href="http://www.oreilly.com/catalog/0596007183/"><img src="0596007183_thumb.gif" height="120" alt="Mac OS X Panther Hacks" /></a>
+
+</div>
+
+<p style="padding:10px 3px 0 0;margin:0;font-size:14px;font-weight:bold;"><a href="http://www.oreilly.com/catalog/0596007183">Mac OS X Panther Hacks</a></p>
+
+
+
+<p style="font-weight:bold;font-size:110%;color:#333;margin:0;padding:0;">Customer Reviews</p>
+<p style="white-space: nowrap;margin:2px 0 0 0;">
+<img src="http://www.oreillynet.com/images/icons/star_on.gif" alt="Star" width="18" height="17" align="absbottom" /><img src="http://www.oreillynet.com/images/icons/star_on.gif" alt="Star" width="18" height="17" align="absbottom" /><img src="http://www.oreillynet.com/images/icons/star_on.gif" alt="Star" width="18" height="17" align="absbottom" /><img src="http://www.oreillynet.com/images/icons/star_on.gif" alt="Star" width="18" height="17" align="absbottom" /><img src="http://www.oreillynet.com/images/icons/star_on.gif" alt="Star" width="18" height="17" align="absbottom" />
+</p>
+
+<p style="color:#666;margin-top:1px;"><b>Best book yet on OS X!</b><br />
+<span style="font-size:95%;">2005-02-27 12:30:19 
+swasko
+</span><br />
+This is a great book!  Having been a PC user for nearly fifteen years, I'm always looking for ways to juice more value out of my platform and applications.<br />
+<br />
+Being a new switcher to Mac this year, this is just the book I was looking for to help me personalize OS X and make it my own.  <br />
+<br />
+The author covers all the bases and presents in a very fun, informative, and educational way.  Topics from having more fun with your digital lifestyle to combining Apple scripting, perl scripting, and shell scripting to make your system do amazing things.<br />
+<br />
+This is probably the best computing book I've read in years, and I read a lot!<br />
+<br />
+</p>
+<p style="white-space: nowrap;margin:2px 0 0 0;">
+<img src="http://www.oreillynet.com/images/icons/star_on.gif" alt="Star" width="18" height="17" align="absbottom" /><img src="http://www.oreillynet.com/images/icons/star_on.gif" alt="Star" width="18" height="17" align="absbottom" /><img src="http://www.oreillynet.com/images/icons/star_on.gif" alt="Star" width="18" height="17" align="absbottom" /><img src="http://www.oreillynet.com/images/icons/star_on.gif" alt="Star" width="18" height="17" align="absbottom" /><img src="http://www.oreillynet.com/images/icons/star_on.gif" alt="Star" width="18" height="17" align="absbottom" />
+</p>
+
+<p style="color:#666;margin-top:1px;"><b>From a newbie</b><br />
+<span style="font-size:95%;">2004-08-22 09:29:22 
+Mary Dixon
+</span><br />
+Being a relative newbie to the Mac compared to so many folks, I felt in the dark about all the little things that make a Macintosh what it is&#133;the best personal computer bar none. Knowing so little about it compared to so many other long time users, I was quite anxious to learn all I could as fast as I could. Part of my difficulty includes about twelve years using another platform which so many others blindly use. This gave me enough knowhow to provide support to many other people.  Since I&#146;m not one to leave well enough alone, I am always pushing my computer to the max and getting more out of it than many other people might expect. <br />
+<br />
+Mac OS X Panther Hacks, by Rael Dornfest and James Duncan Davidson and published by O&#146;Reilly,  provided me with more of an inside look and helped to give me what I had on the other platform&#133;the ability to do things more efficiently and to do things that other users might not know about. I wanted to get into the &#147;guts&#148; of the Mac and Mac OS X Panther Hacks is helping me to achieve that goal. <br />
+<br />
+Whether you are a newcomer to the Macintosh or a long time user, after getting into this Hacks book, you are bound to find something of use. There are one hundred hacks nicely numbered and arranged so you can read one at a time and know which one it was or read it by sections. The sections are arranged nicely into chapters according to the types and uses.<br />
+Once cracking this book open, it didn&#146;t take me long to have a &#147;eureka!&#148; experience. &#147;I didn&#146;t know I could do that!&#148; I heard myself say to myself. I learned something new that I bet no one else knows&#133;.or do they?  <br />
+<br />
+My favorite hack so far is using the services menu under the application menu. It&#146;s an amazing thing and has been used more often than anything else I read in the book. The next thing I&#146;m going to do is use more scripting and attach those scripts to my file folders. Fortunately, the authors provide lots of great examples. Whew&#133;I don&#146;t &#147;do&#148; Apple scripting&#133;..yet. I will after reading this book.<br />
+<br />
+The authors don&#146;t exclude the use of other applications in &#147;hacking&#148; the OS but they sure do provide a lot of helpful ways to use them. My very favorite hack in that way was their suggestion to &#147;Clutter Your Desktop with Music.&#148; In that hack, #42, they suggest using a little iTunes add on called Clutter. Ohh&#133;I don&#146;t want to give all of it away. I want everyone to have a copy of this book. You just have to use this little app. It&#146;s a great helper if you love your iTunes.<br />
+<br />
+Some of these chapters will require return visits for me as I managed to find out that I knew very little about some aspects of  &#147;hacking&#148; Panther. The book now resides on my desktop and will for the foreseeable future. <br />
+<br />
+No one will lose by getting Mac OS X Panther Hacks and will surely be surprised at what they don&#146;t know when they get through this wonderful volume. Be sure to check one out for yourself very soon. You won&#146;t regret it.<br />
+</p>
+
+<p style='font-weight:bold;font-size:110%;color:#333;margin:0;padding:0;'>Media Reviews</p><p style='color:#666;'>"I finally got round to reading my copy of the wonderful O'Reilly 'Mac OS X Panther Hacks' book, which, like all of the hacks books, is clever, informative, well-organised and useful; this one has the additional merit of having been co-written by my pal Rael Dornfest, who edits the line, and is witty, silly and very imaginative indeed. The hacks assembled in the text range from surprising things you can do with iTunes and iCal to hacking AppleScript to making OS X cooperate with perl and Python..."<br />--Cory Doctorow, BoingBoing.net, August 2004<br /><a href="http://www.boingboing.net/2004/08/11/mac_os_x_panther_hac.html">http://www.boingboing.net/2004/08/11/mac_os_x_panther_hac.html</a><br /></p>
+
+
+           </div>
+     </div>
+
+
+</div>
+
+</div> <!-- /#features -->
+
+<div id="upsell">
+<div class="sidebar-item">
+<h3>Author Feeds</h3>
+<div class="sidebar-item-content">
+
+<a href="http://www.oreillynet.com/pub/feed/31?au=151"><img src="http://www.oreillynet.com/images/icons/rss.gif" height="30" width="30" border="0" alt="RSS feed for this author." style="float:left;padding-right:10px;" /></a>
+Subscribe to James Duncan's RSS feed.
+
+<p class="more"><a href="http://www.oreillynet.com/feeds/">New to RSS?</a></p>
+</div>
+</div>
+
+<!-- author events -->
+
+
+
+<div class="sidebar-item">
+<h3>Buy Direct and Save</h3>
+<div class="sidebar-item-content">
+
+<p style="margin: 0; padding: 2pt 2pt 2pt 2pt; font-size: 15px; font-weight: normal; text-align: center; background-color:#ffffff">
+<a href="http://www.oreilly.com/oreilly/cs/b2g1f.html"><b>Buy 2 Books,<br />Get the 3rd <span style="color:#990000;">FREE!</span></b></a><br />
+<span style="font-size: 9px; color:#333333; line-height:18px;">Use discount code "opc10"</span><br />
+<span style="font-size: 10px; color:#333333; line-height:12px;">All orders over $29.95 qualify for <span style="color:#990000;"><b>free shipping</b></span> within <nobr>the US.</nobr></span> 
+</p>
+
+</div>
+</div>
+
+
+
+
+
+<form method="get" action="https://epoch.oreilly.com/shop/cart.orm?retUrl=http:%2F%2Fwww.oreillynet.com%2Fpub%2Fau%2F151">
+<div class="sidebar-item" style="margin-top: 1em;">
+<h3>Bundle Your Order</h3>
+<div class="sidebar-item-content">
+<p style="margin: 8px 0pt 2px; padding: 0pt 0pt 0pt 8px; font-size: 13px;">James Duncan's Books</p>
+<table style="text-align: left;" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td valign="top"><input name="prod" value="0-596-00913-5" type="checkbox"></td>
+<td><a href="http://www.oreilly.com/catalog/runmacx2/"><b>Running Mac OS X Tiger</b></a></td>
+</tr><tr>
+<td valign="top"><input name="prod" value="0-596-00718-3" type="checkbox"></td>
+<td><a href="http://www.oreilly.com/catalog/0596007183/"><b>Mac OS X Panther Hacks</b></a></td>
+</tr><tr>
+<td valign="top"><input name="prod" value="0-596-00301-3" type="checkbox"></td>
+<td><a href="http://www.oreilly.com/catalog/learncocoa2/"><b>Learning Cocoa with Objective-C</b></a></td>
+</tr><tr>
+<td valign="top"><input name="prod" value="0-596-00462-1" type="checkbox"></td>
+<td><a href="http://www.oreilly.com/catalog/cocoaian/"><b>Cocoa in a Nutshell</b></a></td>
+</tr>
+</table>
+<p style="text-align: center; margin-bottom: 3px;">
+<input name="p" value="OPC10" type="hidden">
+<input src="http://www.oreillynet.com/images/oreilly/add_to_cart_med.gif" value="Add to Cart" alt="Add to Cart" name="Add to Cart" type="image">  
+</p>
+</div>
+</div>
+</form>
+
+
+</div> <!-- /#upsell -->
+
+</div> <!--  /#content  -->
+
+
+
+
+<div id="netnav" style="width:8em;text-align:center;padding-top:26px;">
+<img src="http://www.oreillynet.com/images/people/james_davidson.jpg" alt="James Duncan Davidson" />
+<br clear="left;" /><br />
+</div>
+
+
+
+<!-- end content -->
+
+
+
+<div id="footer">
+<p class="footer-links"><a href="http://www.oreilly.com/about/">About O'Reilly</a> | <a href="http://www.oreilly.com/oreilly/contact.html">Contact</a> | <a href="http://jobs.oreilly.com">Jobs</a> | <a href="http://press.oreilly.com">Press Room</a> | <a href="http://www.oreillynet.com/mediakit/">How to Advertise</a> | <a href="http://www.oreillynet.com/pub/a/mediakit/privacy.html">Privacy Policy</a>
+</p>
+
+<p>&copy; 2007, O'Reilly Media, Inc.<br />
+All trademarks and registered trademarks appearing on oreilly.com are the property of their respective owners.</p>
+</div><!-- /#footer -->
+
+</div></body><!-- /#page -->
+
+</html>

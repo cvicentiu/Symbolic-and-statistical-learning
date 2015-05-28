@@ -1,0 +1,452 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+	<HEAD>
+		<TITLE>Fastcase</TITLE>
+		<meta content="Microsoft Visual Studio.NET 7.0" name="GENERATOR">
+		<meta content="Visual Basic 7.0" name="CODE_LANGUAGE">
+		<meta content="JavaScript" name="vs_defaultClientScript">
+		<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
+		<LINK href="https://www.fastcase.com/Yahoo/Styles.css" type="text/css" rel="stylesheet">
+		
+		<script language="javascript">
+			window.onload = initPage;  
+			
+			function initPage() {
+			  initPopupLinks();
+			  // place here any other code you wish to run when the page loads.
+			}
+			
+			function initPopupLinks()
+			{
+			  if (!document.getElementsByTagName) return true;
+			  var pageLinks = document.getElementsByTagName("a");
+			  for (var i = 0; i < pageLinks.length; i++) 
+			  {
+				if (((pageLinks[i].className != null) && 
+					 (pageLinks[i].className != "")) ||
+					((pageLinks[i].parentNode.className != null) && 
+					 (pageLinks[i].parentNode.className != "")))
+				{
+				  var linkClass = " " + pageLinks[i].className + " ";
+				  if ((linkClass == "  ") && (pageLinks[i].parentNode.className != ""))
+				  {
+					linkClass = " " + pageLinks[i].parentNode.className + " ";
+				  }
+				  for (var theKey in popupLinkConfig) 
+				  {
+					if (linkClass.indexOf(" " + theKey + " ") > -1)
+					{
+					  if ((pageLinks[i].target == "") || (pageLinks[i].target == null))
+					  {
+						pageLinks[i].target = (popupLinkConfig[theKey][0] != "") ? popupLinkConfig[theKey][0] : theKey;
+					  }
+					  pageLinks[i].settings = popupLinkConfig[theKey][1];
+					  pageLinks[i].onclick = popUp;
+					}
+				  }
+				}
+			  }
+			  return true;
+			}
+			
+			function popUp()
+			{
+			  newWin = window.open(this.href, this.target, this.settings);
+			  newWin.focus();
+			  return false;
+			}
+		
+			var popupLinkConfig = new Array;
+			popupLinkConfig["nav"] = new Array ( "", "width=350,height=300,scrollbar=yes,menubar=yes,resizable=yes");
+		</script>
+	</HEAD>
+	<BODY bgColor="#ffffff">
+		<form name="Form1" method="post" action="Start.aspx%3FC=444d12a76978da79d7bf0b7de4d49f6fd9f6b56ed0f67b0f&amp;D=b60d1fe4a4d9f5f18ecdf66ade2957ff7471bec347bb56d3.1.html" language="javascript" onsubmit="javascript:return WebForm_OnSubmit();" id="Form1">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMTQ5NjEyNDEzDxYIHgtSZWZlcnJhbFVybGQeDVJlZmVycmFsQ29uc3QFBVlhaG9vHgxEb2N1bWVudExpc3QXAQLSz04FNEVkd2FyZHMgdi4gS2luZ3MgUG9pbnQgSG91c2luZyBDb3JwLiwgMzUxIFNvLjJkIDEwNzMeDlRvdGFsRG9jdW1lbnRzAgEWAgIBD2QWCAIBDw8WAh4HVmlzaWJsZWdkFg4CAQ8PFgIeBFRleHQFTUVkd2FyZHMgdi4gS2luZ3MgUG9pbnQgSG91c2luZyBDb3JwLiwgMzUxIFNvLjJkIDEwNzMgKEZsYS5BcHAuIDQgRGlzdC4sIDE5NzcpZGQCAw8PFgIfBQVuVGhlIGZvbGxvd2luZyBpcyBhIHBvcnRpb24gb2YgdGhlIGRvY3VtZW50IHlvdSByZXF1ZXN0ZWQuIA0KCQkJCSBQbGVhc2Ugc3Vic2NyaWJlIHRvIHZpZXcgdGhlIGVudGlyZSBkb2N1bWVudC5kZAIFDw8WAh8FBe4VICA8UD5QYWdlIDEwNzM8L1A+ICA8UD48Qj48Q0VOVEVSPjM1MSBTby4yZCAxMDczPC9DRU5URVI+PC9CPjwvUD4gIDxQPjxCPjxDRU5URVI+TWFydGhhIEVEV0FSRFMgYW5kIEpvaG4gQi4gRWR3YXJkcywgaGVyIGh1c2JhbmQsIEFwcGVsbGFudHMsPEJSPiAgdi48QlI+ICBLSU5HUyBQT0lOVCBIT1VTSU5HIENPUlAuLCBhIEZsb3JpZGEgQ29ycG9yYXRpb24sIFN5a2VzIEZsb29yaW5nIENvbXBhbnksIGEgRmxvcmlkYSBDb3Jwb3JhdGlvbiwgTm9ydGggUml2ZXIgSW5zdXJhbmNlIENvbXBhbnksIGEgY29ycG9yYXRpb24sIGFuZCBBY291c3RpIEVuZ2luZWVyaW5nIENvbXBhbnksIEFwcGVsbGVlcy48QlI+ICBLSU5HUyBQT0lOVCBIT1VTSU5HIENPUlBPUkFUSU9OLCBBcHBlbGxhbnQsPEJSPiAgdi48QlI+ICBNYXJ0aGEgRURXQVJEUyBhbmQgSm9obiBCLiBFZHdhcmRzLCBoZXIgaHVzYmFuZCwgU3lrZXMgRmxvb3JpbmcgQ29tcGFueSwgYSBGbG9yaWRhIENvcnBvcmF0aW9uLCBOb3J0aCBSaXZlciBJbnN1cmFuY2UgQ29tcGFueSwgYSBjb3Jwb3JhdGlvbiwgYW5kIEFjb3VzdGkgRW5naW5lZXJpbmcgQ29tcGFueSwgQXBwZWxsZWVzLjwvQ0VOVEVSPjwvQj48L1A+ICA8UD48Qj48Q0VOVEVSPk5vcy4gNzYtMTQxOCA3Ni0xNTE5LjwvQ0VOVEVSPjwvQj48L1A+ICA8UD48Qj48Q0VOVEVSPkRpc3RyaWN0IENvdXJ0IG9mIEFwcGVhbCBvZiBGbG9yaWRhLCBGb3VydGggRGlzdHJpY3QuPC9DRU5URVI+PC9CPjwvUD4gIDxQPjxCPjxDRU5URVI+T2N0LiAxMSwgMTk3Ny48QlI+ICBSZWhlYXJpbmcgRGVuaWVkIERlYy4gOSwgMTk3Ny48L0NFTlRFUj48L0I+PC9QPiAgICA8UD4gICAgICAgIExhcnJ5IEEuIEtsZWluLCBXZXN0IFBhbG0gQmVhY2gsIGFuZCBMYXcgT2ZmaWNlcyBvZiBUaG9tYXMgRy4gUHVyZG8sIEJveW50b24gQmVhY2gsIGZvciBhcHBlbGxhbnRzLUVkd2FyZHMuPC9QPiAgPFA+ICAgICAgICBMb3Vpc2EgSC4gU21pdGgtQWRhbSBvZiBNb250Z29tZXJ5LCBMeXRhbCwgUmVpdGVyLCBEZW5uZXkgJiBTZWFyY3ksIFdlc3QgUGFsbSBCZWFjaCwgZm9yIGFwcGVsbGFudC1LaW5ncyBQb2ludCBIb3VzaW5nIENvcnBvcmF0aW9uLjwvUD4gIDxQPiAgICAgICAgTWFyam9yaWUgRC4gR2FkYXJpYW4gb2YgSm9uZXMsIFBhaW5lICYgRm9zdGVyLCBXZXN0IFBhbG0gQmVhY2gsIGZvciBhcHBlbGxlZXMtQWNvdXN0aSBFbmdpbmVlcmluZyBDby48L1A+ICA8UD4gICAgICAgIFBFUiBDVVJJQU0uPC9QPiAgPFA+ICAgICAgICBUd28gYXBwZWFscyBoYXZlIGJlZW4gY29uc29saWRhdGVkLiAgSW4gQ2FzZSBOby4gNzYtMTQxOCB0aGUgcGxhaW50aWZmcywgTWFydGhhIGFuZCBKb2huIEVkd2FyZHMsIGFwcGVhbCBhIHN1bW1hcnkgZmluYWwganVkZ21lbnQgYWdhaW5zdCB0aGVtIGluIGZhdm9yIG9mIHRoZSBkZWZlbmRhbnQgQWNvdXN0aSBFbmdpbmVlcmluZyBDb21wYW55LiAgSW4gQ2FzZSBOby4gNzYtMTUxOSB0aGUgZGVmZW5kYW50IEtpbmdzIFBvaW50IEhvdXNpbmcgQ29ycG9yYXRpb24gYXBwZWFscyBhIHN1bW1hcnkgZmluYWwganVkZ21lbnQgb24gaXRzIGNyb3NzY2xhaW0gaW4gZmF2b3Igb2YgY29kZWZlbmRhbnQsIEFjb3VzdGkgRW5naW5lZXJpbmcgQ29tcGFueS4gIFdlIHJldmVyc2UgaW4gYm90aCBhcHBlYWxzLjwvUD4gICAgIDxQPlBhZ2UgMTA3NDwvUD4gIDxQPiAgICAgICAgSW4gQ2FzZSBOby4gNzYtMTQxOCwgd2UgY29uY2x1ZGUgdGhhdCBBY291c3RpIGZhaWxlZCB0byBtZWV0IGl0cyBidXJkZW4gb2Ygc2hvd2luZyBjb25jbHVzaXZlbHkgdGhlIGFic2VuY2Ugb2YgYW55IGdlbnVpbmUgaXNzdWUgb2YgbWF0ZXJpYWwgZmFjdC4gIEFjb3VzdGkgcmVsaWVkIHNvbGVseSB1cG9uIE1ycy4gRWR3YXJkcycgZGVwb3NpdGlvbiB0ZXN0aW1vbnksIGJ1dCBhbGwgdGhpcyBzaG93cyBpcyB0aGF0IE1ycy4gRWR3YXJkcyBjb3VsZCBub3Qgb2YgaGVyIG93biBrbm93bGVkZ2UgcHJvdmUgdGhhdCB0aGUgZGVmZW5kYW50IHdhcyBuZWdsaWdlbnQuICBUaGlzIGlzIG5vdCBlbm91Z2ggdG8gbmVnYXRlIHRoZSBpc3N1ZSBvZiB0aGUgZGVmZW5kYW50J3MgbmVnbGlnZW5jZS4gIE1hdGFyZXNlIHYuIExlZXNidXJnIEVsa3MgQ2x1YiwgMTcxIFNvLjJkIDYwNiAoRmxhLjJkIERDQSAxOTY1KTsgSG9sbCB2LiBUYWxjb3R0LCAxOTEgU28uMmQgNDAgKEZsYS4xOTY2KTsgV2lsbHMgdi4gU2VhcnMsIFJvZWJ1Y2sgJiBDby4sIDM1MSBTby4yZCAyOSAoRmxhLiAgU3VwcmVtZSBDb3VydCwgb3BpbmlvbiBmaWxlZCBTZXB0ZW1iZXIgOCwgMTk3NykuPC9QPiAgPFA+ICAgICAgICBJbiBDYXNlIE5vLiA3Ni0xNTE5IHRoZSBzdW1tYXJ5IGp1ZGdtZW50IHdhcyBlbnRlcmVkIG9uIHRoZSBiYXNpcyBvZiByZXMganVkaWNhdGEuICBJbiBhbiBlYXJsaWVyIHRoaXJkIHBhcnR5IGNvbXBsYWludCBieSBLaW5ncyBQb2ludCBhZ2FpbnN0IEFjb3VzdGksIGludm9sdmluZyB0aGUgc2FtZSBpc3N1ZSwgdGhlIHRyaWFsIGNvdXJ0IGVudGVyZWQgYW4gIm9yZGVyIGdyYW50aW5nIHN1bW1hcnkganVkZ21lbnQuIiAgSG93ZXZlciwgdGhpcyB3YXMgbm90IGEgZmluYWwgYXBwZWFsYWJsZSBvcmRlcjsgaXQgdGhlcmVmb3JlIGNvdWxkIG5vdCBiZSB0aGUgYmFzaXMgb2YgcmVzIGp1ZGljYXRhLjwvUD4gIDxQPiAgICAgICAgUkVWRVJTRUQgYW5kIFJFTUFOREVELjwvUD4gIDxQPiAgICAgICAgQUxERVJNQU4sIEMuIEouLCBhbmQgQ1JPU1MsIEouLCBhbmQgTUlMTEVSLCBST0JFUlQgUC4sIEFzc29jaWF0ZSBKdWRnZSwgY29uY3VyLjwvUD4gICBkZAITDw9kFggeCW9ubW91c2V1cAUodGhpcy5zcmM9J2ltYWdlcy9idXR0b25fbG9naW4tb3Zlci5naWYnOx4Lb25tb3VzZWRvd24FKHRoaXMuc3JjPSdpbWFnZXMvYnV0dG9uX2xvZ2luLWRvd24uZ2lmJzseC29ubW91c2VvdmVyBSh0aGlzLnNyYz0naW1hZ2VzL2J1dHRvbl9sb2dpbi1vdmVyLmdpZic7Hgpvbm1vdXNlb3V0BSN0aGlzLnNyYz0naW1hZ2VzL2J1dHRvbl9sb2dpbi5naWYnO2QCGQ88KwALAQAPFggeCERhdGFLZXlzFgAeC18hSXRlbUNvdW50AgMeCVBhZ2VDb3VudAIBHhVfIURhdGFTb3VyY2VJdGVtQ291bnQCA2QWAmYPZBYGAgEPZBYMZg8PFgIfBQUBM2RkAgEPDxYCHwUFHSQ5NTogTW9udGhseSBOYXRpb25hbCBQcmVtaXVtZGQCAg8PFgIfBQUUUHJlbWl1bSBQbGFuIE1vbnRobHlkZAIDDw8W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ZAUJU3RhdGVOYW1lHg5EYXRhVmFsdWVGaWVsZAUJU3RhdGVOYW1lHgtfIURhdGFCb3VuZGdkEBU0B0FsYWJhbWEGQWxhc2thB0FyaXpvbmEIQXJrYW5zYXMKQ2FsaWZvcm5pYQhDb2xvcmFkbwtDb25uZWN0aWN1dAhEZWxhd2FyZRREaXN0cmljdCBvZiBDb2x1bWJpYQdGbG9yaWRhB0dlb3JnaWEGSGF3YWlpBUlkYWhvCElsbGlub2lzB0luZGlhbmEESW93YQZLYW5zYXMIS2VudHVja3kJTG91aXNpYW5hBU1haW5lCE1hcnlsYW5kDU1hc3NhY2h1c2V0dHMITWljaGlnYW4JTWlubmVzb3RhC01pc3Npc3NpcHBpCE1pc3NvdXJpB01vbnRhbmEITmVicmFza2EGTmV2YWRhDU5ldyBIYW1wc2hpcmUKTmV3IEplcnNleQpOZXcgTWV4aWNvCE5ldyBZb3JrDk5vcnRoIENhcm9saW5hDE5vcnRoIERha290YQRPaGlvCE9rbGFob21hBk9yZWdvbgxQZW5uc3lsdmFuaWEMUmhvZGUgSXNsYW5kDlNvdXRoIENhcm9saW5hDFNvdXRoIERha290YQlUZW5uZXNzZWUFVGV4YXMEVXRhaAdWZXJtb250CFZpcmdpbmlhCldhc2hpbmd0b24NV2VzdCBWaXJnaW5pYQlXaXNjb25zaW4HV3lvbWluZxlPdXRzaWRlIHRoZSBVbml0ZWQgU3RhdGVzFTQHQWxhYmFtYQZBbGFza2EHQXJpem9uYQhBcmthbnNhcwpDYWxpZm9ybmlhCENvbG9yYWRvC0Nvbm5lY3RpY3V0CERlbGF3YXJlFERpc3RyaWN0IG9mIENvbHVtYmlhB0Zsb3JpZGEHR2VvcmdpYQZIYXdhaWkFSWRhaG8ISWxsaW5vaXMHSW5kaWFuYQRJb3dhBkthbnNhcwhLZW50dWNreQlMb3Vpc2lhbmEFTWFpbmUITWFyeWxhbmQNTWFzc2FjaHVzZXR0cwhNaWNoaWdhbglNaW5uZXNvdGELTWlzc2lzc2lwcGkITWlzc291cmkHTW9udGFuYQhOZWJyYXNrYQZOZXZhZGENTmV3IEhhbXBzaGlyZQpOZXcgSmVyc2V5Ck5ldyBNZXhpY28ITmV3IFlvcmsOTm9ydGggQ2Fyb2xpbmEMTm9ydGggRGFrb3RhBE9oaW8IT2tsYWhvbWEGT3JlZ29uDFBlbm5zeWx2YW5pYQxSaG9kZSBJc2xhbmQOU291dGggQ2Fyb2xpbmEMU291dGggRGFrb3RhCVRlbm5lc3NlZQVUZXhhcwRVdGFoB1Zlcm1vbnQIVmlyZ2luaWEKV2FzaGluZ3Rvbg1XZXN0IFZpcmdpbmlhCVdpc2NvbnNpbgdXeW9taW5nGU91dHNpZGUgdGhlIFVuaXRlZCBTdGF0ZXMUKwM0Z2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZxYBZmQCKw8PZBYIHwYFKXRoaXMuc3JjPSdpbWFnZXMvYnV0dG9uX2NhbmNlbC1vdmVyLmdpZic7HwcFKXRoaXMuc3JjPSdpbWFnZXMvYnV0dG9uX2NhbmNlbC1kb3duLmdpZic7HwgFKXRoaXMuc3JjPSdpbWFnZXMvYnV0dG9uX2NhbmNlbC1vdmVyLmdpZic7HwkFJHRoaXMuc3JjPSdpbWFnZXMvYnV0dG9uX2NhbmNlbC5naWYnO2QCLQ8PZBYKHwYFLHRoaXMuc3JjPSdpbWFnZXMvYnV0dG9uX3N1YnNjcmliZS1vdmVyLmdpZic7HwcFLHRoaXMuc3JjPSdpbWFnZXMvYnV0dG9uX3N1YnNjcmliZS1kb3duLmdpZic7HwgFLHRoaXMuc3JjPSdpbWFnZXMvYnV0dG9uX3N1YnNjcmliZS1vdmVyLmdpZic7HwkFJ3RoaXMuc3JjPSdpbWFnZXMvYnV0dG9uX3N1YnNjcmliZS5naWYnOx8OBeABaWYgKHR5cGVvZihQYWdlX0NsaWVudFZhbGlkYXRlKSA9PSAnZnVuY3Rpb24nKSB7IGlmIChQYWdlX0NsaWVudFZhbGlkYXRlKCdWYWxpZGF0ZUJpbGxpbmcnKSA9PSBmYWxzZSkgeyByZXR1cm4gZmFsc2U7IH0gdGhpcy5kaXNhYmxlZCA9IHRydWU7IHRoaXMuc3JjPSdpbWFnZXMvYnV0dG9uX3N1YnNjcmliZV9kaXNhYmxlZC5naWYnO31fX2RvUG9zdEJhY2soJ2J0blN1YnNjcmliZTEnLCcnKTtkAgUPDxYCHwRoZBYCAgMPD2QWCB8GBTB0aGlzLnNyYz0naW1hZ2VzL2J1dHRvbl92aWV3X2RvY3VtZW50LW92ZXIuZ2lmJzsfBwUwdGhpcy5zcmM9J2ltYWdlcy9idXR0b25fdmlld19kb2N1bWVudC1kb3duLmdpZic7HwgFMHRoaXMuc3JjPSdpbWFnZXMvYnV0dG9uX3ZpZXdfZG9jdW1lbnQtb3Zlci5naWYnOx8JBSt0aGlzLnNyYz0naW1hZ2VzL2J1dHRvbl92aWV3X2RvY3VtZW50LmdpZic7ZAIHDw8WAh8EaGRkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYCBQhidG5Mb2dpbgUMYnRuU3Vic2NyaWJl8b38ehZ0jPoDxhjphLnQt47hd5A=" />
+
+<script type="text/javascript">
+<!--
+var theForm = document.forms['Form1'];
+if (!theForm) {
+    theForm = document.Form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+// -->
+</script>
+
+
+<script src="https://www.fastcase.com/Yahoo/WebResource.axd?d=RrPIQuR-SC7Sdgm5uVgS9g2&amp;t=632964310068853021" type="text/javascript"></script>
+
+
+<script src="https://www.fastcase.com/Yahoo/WebResource.axd?d=ACSDayFCTUp5FYE4jCdobvXXeCcUUYvk-NJevxbTkuU1&amp;t=632964310068853021" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+// -->
+</script>
+
+			<!-- Header //-->
+			<table height="42" cellSpacing="0" cellPadding="0" width="100%" bgColor="#ffffff" border="0">
+				<tr>
+					<!-- Logo //-->
+					<td width="143" height="42" rowSpan="2"><IMG height="42" alt="Fastcase,Inc." src="https://www.fastcase.com/Yahoo/images/logo_header.gif" width="133"><IMG height="10" src="https://www.fastcase.com/Yahoo/images/spacer.gif" width="10"></td>
+					<!-- Navigation //-->
+					<td align="right" height="41"><a class="nav" href="https://www.fastcase.com/Yahoo/view_whole_document.htm">How 
+							can I view the whole document?</a> | <a class="nav" href="https://www.fastcase.com/Yahoo/why_subscribe.htm">
+							Why subscribe?</a> | <a class="nav" href="https://www.fastcase.com/Yahoo/what_is_fastcase.htm">
+							What is Fastcase?</a></td>
+				</tr>
+				<tr>
+					<td bgColor="#c3d2dc" height="1"><IMG height="1" src="https://www.fastcase.com/Yahoo/images/spacer.gif" width="1"></td>
+				</tr>
+				<tr>
+					<td><IMG height="20" src="https://www.fastcase.com/Yahoo/images/spacer.gif" width="1">
+					</td>
+				</tr>
+			</table>
+			<!-- Body //--><div id="pnlDefault">
+	
+				<TABLE cellSpacing="0" cellPadding="0" width="100%" border="0"> <!-- Document //-->
+					<TR>
+						<TD vAlign="top" align="left" width="100%"><!-- Document Header //-->
+							<TABLE cellSpacing="0" cellPadding="3" width="100%" border="0">
+								<TR>
+									<TD bgColor="#ecf5fa"><IMG height="7" src="https://www.fastcase.com/Yahoo/images/spacer.gif" width="7">
+										<span id="lblDocumentTitle" class="doc_title">Edwards v. Kings Point Housing Corp., 351 So.2d 1073 (Fla.App. 4 Dist., 1977)</span></TD>
+								</TR>
+							</TABLE>
+							<P></P> <!-- Document Text //-->
+							<TABLE cellSpacing="0" cellPadding="0" width="100%" bgColor="#ffffff" border="0">
+								<TR>
+									<TD><IMG height="10" src="https://www.fastcase.com/Yahoo/images/spacer.gif" width="10">
+									</TD>
+									<TD>
+										<span id="lblDocumentDisclaimer" class="doc_alert">The following is a portion of the document you requested. 
+				 Please subscribe to view the entire document.</span><!-- Begin Document Text //-->
+										<P>
+										<P></P>
+										<span id="lblDocumentText" class="doc_text">  <P>Page 1073</P>  <P><B><CENTER>351 So.2d 1073</CENTER></B></P>  <P><B><CENTER>Martha EDWARDS and John B. Edwards, her husband, Appellants,<BR>  v.<BR>  KINGS POINT HOUSING CORP., a Florida Corporation, Sykes Flooring Company, a Florida Corporation, North River Insurance Company, a corporation, and Acousti Engineering Company, Appellees.<BR>  KINGS POINT HOUSING CORPORATION, Appellant,<BR>  v.<BR>  Martha EDWARDS and John B. Edwards, her husband, Sykes Flooring Company, a Florida Corporation, North River Insurance Company, a corporation, and Acousti Engineering Company, Appellees.</CENTER></B></P>  <P><B><CENTER>Nos. 76-1418 76-1519.</CENTER></B></P>  <P><B><CENTER>District Court of Appeal of Florida, Fourth District.</CENTER></B></P>  <P><B><CENTER>Oct. 11, 1977.<BR>  Rehearing Denied Dec. 9, 1977.</CENTER></B></P>    <P>        Larry A. Klein, West Palm Beach, and Law Offices of Thomas G. Purdo, Boynton Beach, for appellants-Edwards.</P>  <P>        Louisa H. Smith-Adam of Montgomery, Lytal, Reiter, Denney & Searcy, West Palm Beach, for appellant-Kings Point Housing Corporation.</P>  <P>        Marjorie D. Gadarian of Jones, Paine & Foster, West Palm Beach, for appellees-Acousti Engineering Co.</P>  <P>        PER CURIAM.</P>  <P>        Two appeals have been consolidated.  In Case No. 76-1418 the plaintiffs, Martha and John Edwards, appeal a summary final judgment against them in favor of the defendant Acousti Engineering Company.  In Case No. 76-1519 the defendant Kings Point Housing Corporation appeals a summary final judgment on its crossclaim in favor of codefendant, Acousti Engineering Company.  We reverse in both appeals.</P>     <P>Page 1074</P>  <P>        In Case No. 76-1418, we conclude that Acousti failed to meet its burden of showing conclusively the absence of any genuine issue of material fact.  Acousti relied solely upon Mrs. Edwards' deposition testimony, but all this shows is that Mrs. Edwards could not of her own knowledge prove that the defendant was negligent.  This is not enough to negate the issue of the defendant's negligence.  Matarese v. Leesburg Elks Club, 171 So.2d 606 (Fla.2d DCA 1965); Holl v. Talcott, 191 So.2d 40 (Fla.1966); Wills v. Sears, Roebuck & Co., 351 So.2d 29 (Fla.  Supreme Court, opinion filed September 8, 1977).</P>  <P>        In Case No. 76-1519 the summary judgment was entered on the basis of res judicata.  In an earlier third party complaint by Kings Point against Acousti, involving the same issue, the trial court entered an "order granting summary judgment."  However, this was not a final appealable order; it therefore could not be the basis of res judicata.</P>  <P>        REVERSED and REMANDED.</P>  <P>        ALDERMAN, C. J., and CROSS, J., and MILLER, ROBERT P., Associate Judge, concur.</P>   </span><!-- End Document Text //-->  <!-- Begin Document Footer //-->
+										<P><a class="nav" href="https://www.fastcase.com/Yahoo/view_whole_document.htm">How 
+							can I view the whole document?</a> | <a class="nav" href="https://www.fastcase.com/Yahoo/why_subscribe.htm">
+							Why subscribe?</a> | <a class="nav" href="https://www.fastcase.com/Yahoo/what_is_fastcase.htm">
+							What is Fastcase?</a></P> <!-- End Document Footer //--></TD>
+								</TR>
+							</TABLE>
+						</TD> <!-- Spacer column //-->
+						<TD><IMG height="10" src="https://www.fastcase.com/Yahoo/images/spacer.gif" width="10"></TD> <!-- Forms //-->
+						<TD vAlign="top" align="left"><!-- Begin Rounded Box //-->
+							<TABLE cellSpacing="0" cellPadding="0" border="0">
+								<TR>
+									<TD width="9" height="8"><IMG height="8" src="https://www.fastcase.com/Yahoo/images/box_corner_tl.gif" width="9"></TD>
+									<TD background="https://www.fastcase.com/Yahoo/images/border_t.gif" bgColor="#f7f7f7" height="8"><IMG height="8" src="https://www.fastcase.com/Yahoo/images/spacer.gif" width="40"></TD>
+									<TD width="8" height="8"><IMG height="8" src="https://www.fastcase.com/Yahoo/images/box_corner_tr.gif" width="8"></TD>
+								</TR>
+								<TR>
+									<TD width="9" background="https://www.fastcase.com/Yahoo/images/border_l.gif" bgColor="#f7f7f7"><IMG height="50" src="https://www.fastcase.com/Yahoo/images/spacer.gif" width="9"></TD>
+									<TD bgColor="#f7f7f7"><!-- Begin Contents of Rounded Box //-->
+										<TABLE cellSpacing="5" cellPadding="0" border="0">
+											<TR>
+												<TD colSpan="2"><IMG height="17" alt="Member Login" src="https://www.fastcase.com/Yahoo/images/caption_member_login.gif" width="143"><BR>
+													<IMG height="10" src="https://www.fastcase.com/Yahoo/images/spacer.gif" width="10"></TD>
+											</TR>
+											<TR>
+												<TD>
+													<span id="lblUsername" class="form_caption">username:</span></TD>
+												<TD>
+													<input name="txtUsername" type="text" id="txtUsername" class="form_caption" style="width:165px;" />
+													<span controltovalidate="txtUsername" errormessage="Username is required." display="None" validationGroup="ValidateLogin" id="rfvUsername" class="form_caption" evaluationfunction="RequiredFieldValidatorEvaluateIsValid" initialvalue="" style="color:Red;display:none;"></span>												    
+												</TD>
+											</TR>
+											<TR>
+												<TD>
+													<span id="lblPassword" class="form_caption">password:</span></TD>
+												<TD>
+													<input name="txtPassword" type="password" id="txtPassword" class="form_caption" style="width:165px;" />
+													<span controltovalidate="txtPassword" errormessage="Password is required." display="None" validationGroup="ValidateLogin" id="rfvPassword" class="form_caption" evaluationfunction="RequiredFieldValidatorEvaluateIsValid" initialvalue="" style="color:Red;display:none;"></span></TD>
+											</TR>
+											<TR align="left">
+												<TD colSpan="2">
+													<TABLE cellSpacing="0" cellPadding="0" width="100%" border="0">
+														<TR>
+															<TD align="left"></TD>
+															<TD align="right">
+																<input type="image" name="btnLogin" id="btnLogin" onmouseup="this.src='images/button_login-over.gif';" onmousedown="this.src='images/button_login-down.gif';" onmouseover="this.src='images/button_login-over.gif';" onmouseout="this.src='images/button_login.gif';" src="https://www.fastcase.com/Yahoo/images/button_login.gif" border="0" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;btnLogin&quot;, &quot;&quot;, true, &quot;ValidateLogin&quot;, &quot;&quot;, false, false))" language="javascript" style="height:23px;width:65px;" /></TD>
+														</TR>
+													</TABLE>
+												</TD>
+											</TR>
+											<TR align="left">
+												<TD colSpan="2">
+													</TD>
+											</TR>
+										</TABLE> <!-- End Contents of Rounded Box //-->
+										<div validationGroup="ValidateLogin" id="vldSummaryLogin" class="form_caption" style="color:Red;display:none;">
+
+	</div></TD>
+									<TD width="8" background="https://www.fastcase.com/Yahoo/images/border_r.gif"><IMG height="50" src="https://www.fastcase.com/Yahoo/images/border_r.gif" width="8"></TD>
+								</TR>
+								<TR>
+									<TD width="9" height="8"><IMG height="8" src="https://www.fastcase.com/Yahoo/images/box_corner_bl.gif" width="9"></TD>
+									<TD background="https://www.fastcase.com/Yahoo/images/border_b.gif" bgColor="#f7f7f7" height="8"><IMG height="8" src="https://www.fastcase.com/Yahoo/images/border_b.gif" width="100%"></TD>
+									<TD width="8" height="8"><IMG height="8" src="https://www.fastcase.com/Yahoo/images/box_corner_br.gif" width="8"></TD>
+								</TR>
+							</TABLE> <!-- End Rounded Box //-->
+							<P></P> <!-- Begin Rounded Box //-->
+							<TABLE cellSpacing="0" cellPadding="0" border="0">
+								<TR>
+									<TD width="9" height="8"><IMG height="8" src="https://www.fastcase.com/Yahoo/images/box_corner_tl.gif" width="9"></TD>
+									<TD background="https://www.fastcase.com/Yahoo/images/border_t.gif" bgColor="#f7f7f7" height="8"><IMG height="8" src="https://www.fastcase.com/Yahoo/images/border_t.gif" width="40"></TD>
+									<TD width="9" height="8"><IMG height="8" src="https://www.fastcase.com/Yahoo/images/box_corner_tr.gif" width="8"></TD>
+								</TR>
+								<TR>
+									<TD width="9" background="https://www.fastcase.com/Yahoo/images/border_l.gif" bgColor="#f7f7f7"><IMG height="50" src="https://www.fastcase.com/Yahoo/images/spacer.gif" width="9"></TD>
+									<TD bgColor="#f7f7f7"><!-- Begin Contents of Rounded Box //-->
+										<TABLE cellSpacing="5" cellPadding="0" border="0">
+											<TR>
+												<TD colSpan="2"><IMG height="15" alt="Subscribe" src="https://www.fastcase.com/Yahoo/images/caption_subscribe.gif" width="98"><BR>
+													<IMG height="10" src="https://www.fastcase.com/Yahoo/images/spacer.gif" width="10"></TD>
+											</TR>
+											<TR align="center">
+												<TD colSpan="2">
+													<TABLE id="tblRegisterFields" cellSpacing="0" cellPadding="0" border="0">
+														<TR>
+															<TD>
+																<table class="Label" cellspacing="0" rules="all" bordercolor="#F7F7F7" border="0" id="dgPackages" style="border-color:#F7F7F7;border-width:0px;border-style:None;height:100%;width:100%;border-collapse:collapse;">
+		<tr>
+			<td valign="top">
+																				<span id="dgPackages__ctl2_lblPackageID" class="form_caption"><input type=radio name='rdgPackages' value='3'></span>
+																			</td><td valign="top">
+																				<span id="dgPackages__ctl2_lblPackageDesc" class="form_caption">$95: Monthly National Premium</span>
+																			</td>
+		</tr><tr>
+			<td valign="top">
+																				<span id="dgPackages__ctl3_lblPackageID" class="form_caption"><input type=radio name='rdgPackages' value='4' Checked ></span>
+																			</td><td valign="top">
+																				<span id="dgPackages__ctl3_lblPackageDesc" class="form_caption">$995: Annual National Premium</span>
+																			</td>
+		</tr><tr>
+			<td valign="top">
+																				<span id="dgPackages__ctl4_lblPackageID" class="form_caption"><input type=radio name='rdgPackages' value='9'></span>
+																			</td><td valign="top">
+																				<span id="dgPackages__ctl4_lblPackageDesc" class="form_caption">Purchase Document ...$4.99 (per document)</span>
+																			</td>
+		</tr>
+	</table></TD>
+														</TR>
+													</TABLE>
+												</TD>
+											</TR>
+											<TR>
+												<TD colSpan="2">
+													<span id="lblFirstName" class="form_caption">first name:</span><BR>
+													<input name="txtFirstName" type="text" id="txtFirstName" class="form_caption" style="width:233px;" />
+                                                    <span controltovalidate="txtFirstName" errormessage="Firstname is required" display="None" validationGroup="ValidateRegistration" id="rfvFirstName" class="form_caption" evaluationfunction="RequiredFieldValidatorEvaluateIsValid" initialvalue="" style="color:Red;display:none;"></span></TD>
+											</TR>
+											<TR>
+												<TD colSpan="2">
+													<span id="lblLastName" class="form_caption">last name:</span><BR>
+													<input name="txtLastName" type="text" id="txtLastName" class="form_caption" style="width:233px;" />
+                                                    <span controltovalidate="txtLastName" errormessage="Lastname is required" display="None" validationGroup="ValidateRegistration" id="rfvLastname" class="form_caption" evaluationfunction="RequiredFieldValidatorEvaluateIsValid" initialvalue="" style="color:Red;display:none;"></span></TD>
+											</TR>
+											<TR>
+												<TD colSpan="2">
+													<span id="lblEmail" class="form_caption">email: <span class="form_smallcaption">
+															(this will be your username)</span></span><BR>
+													<input name="txtEmail" type="text" id="txtEmail" class="form_caption" style="width:233px;" />
+													<span controltovalidate="txtEmail" errormessage="Email address is required." display="None" validationGroup="ValidateRegistration" id="rfvEmail" class="form_caption" evaluationfunction="RequiredFieldValidatorEvaluateIsValid" initialvalue="" style="color:Red;display:none;"></span>
+													<span controltovalidate="txtEmail" errormessage="Please enter a valid email address." display="Dynamic" validationGroup="ValidateRegistration" id="vldEmail" class="form_caption" evaluationfunction="RegularExpressionValidatorEvaluateIsValid" validationexpression="\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" style="color:Red;display:none;">Please enter a valid email address.</span></TD>
+											</TR>
+											<TR>
+												<TD colSpan="2">
+													<span id="Label4" class="form_caption">select a password:</span><BR>
+													<input name="txtPassword2" type="password" id="txtPassword2" class="form_caption" style="width:233px;" />
+													<span controltovalidate="txtPassword2" errormessage="Password is required." display="None" validationGroup="ValidateRegistration" id="rfvPassword2" class="form_caption" evaluationfunction="RequiredFieldValidatorEvaluateIsValid" initialvalue="" style="color:Red;display:none;"></span></TD>
+											</TR>
+											<TR>
+												<TD>
+													<span id="lblPaymentMethod" class="form_caption">credit card type:</span></TD>
+												<TD align="right">
+													<select name="cboCreditCardType" id="cboCreditCardType" class="form_caption">
+		<option selected="selected" value="Visa">Visa</option>
+		<option value="American Express">American Express</option>
+		<option value="MasterCard">MasterCard</option>
+
+	</select></TD>
+											</TR>
+											<TR>
+												<TD>
+													<span id="Label1" class="form_caption">credit card number:</span></TD>
+												<TD align="right">
+													<input name="txtCreditCardNumber" type="text" id="txtCreditCardNumber" class="form_caption" />
+													<span controltovalidate="txtCreditCardNumber" errormessage="Credit card number is required." display="None" validationGroup="ValidateRegistration" id="rfvCreditCardNumber" class="form_caption" evaluationfunction="RequiredFieldValidatorEvaluateIsValid" initialvalue="" style="color:Red;display:none;"></span></TD>
+											</TR>
+											<TR>
+												<TD colSpan="2">
+													<span controltovalidate="txtCreditCardNumber" errormessage="Please enter a valid credit card number without any spaces/hyphens." display="None" validationGroup="ValidateRegistration" id="vldCreditCardNumber" class="form_caption" evaluationfunction="RegularExpressionValidatorEvaluateIsValid" validationexpression="(\d){14,19}$" style="color:Red;display:none;"></span></TD>
+											</TR>
+											<TR>
+												<TD>
+													<span id="Label2" class="form_caption">expiration date:</span></TD>
+												<TD align="right">
+													<select name="cboExpirationDateMonth" id="cboExpirationDateMonth" class="form_caption" style="width:60px;">
+		<option selected="selected" value="01">Jan</option>
+		<option value="02">Feb</option>
+		<option value="03">Mar</option>
+		<option value="04">Apr</option>
+		<option value="05">May</option>
+		<option value="06">Jun</option>
+		<option value="07">Jul</option>
+		<option value="08">Aug</option>
+		<option value="09">Sep</option>
+		<option value="10">Oct</option>
+		<option value="11">Nov</option>
+		<option value="12">Dec</option>
+
+	</select>&nbsp;
+													<select name="cboExpirationDateYear" id="cboExpirationDateYear" class="form_caption" style="width:58px;">
+		<option value="2007">2007</option>
+		<option value="2008">2008</option>
+		<option value="2009">2009</option>
+		<option value="2010">2010</option>
+		<option value="2011">2011</option>
+		<option value="2012">2012</option>
+		<option value="2013">2013</option>
+		<option value="2014">2014</option>
+		<option value="2015">2015</option>
+		<option value="2016">2016</option>
+		<option value="2017">2017</option>
+		<option value="2018">2018</option>
+		<option value="2019">2019</option>
+		<option value="2020">2020</option>
+		<option value="2021">2021</option>
+		<option value="2022">2022</option>
+		<option value="2023">2023</option>
+		<option value="2024">2024</option>
+		<option value="2025">2025</option>
+		<option value="2026">2026</option>
+		<option value="2027">2027</option>
+		<option value="2028">2028</option>
+		<option value="2029">2029</option>
+		<option value="2030">2030</option>
+		<option value="2031">2031</option>
+		<option value="2032">2032</option>
+		<option value="2033">2033</option>
+		<option value="2034">2034</option>
+		<option value="2035">2035</option>
+		<option value="2036">2036</option>
+		<option value="2037">2037</option>
+		<option value="2038">2038</option>
+		<option value="2039">2039</option>
+		<option value="2040">2040</option>
+		<option value="2041">2041</option>
+		<option value="2042">2042</option>
+		<option value="2043">2043</option>
+		<option value="2044">2044</option>
+		<option value="2045">2045</option>
+		<option value="2046">2046</option>
+		<option value="2047">2047</option>
+		<option value="2048">2048</option>
+		<option value="2049">2049</option>
+		<option value="2050">2050</option>
+
+	</select>
+													<span errormessage="Please specify a valid expiration date in the future." display="None" validationGroup="ValidateRegistration" id="vldCreditCardExpirationDate" class="form_caption" evaluationfunction="CustomValidatorEvaluateIsValid" style="color:Red;display:none;"></span></TD>
+											</TR>
+											<TR>
+												<TD>
+													<span id="Label3" class="form_caption">credit card holder name:</span></TD>
+												<TD align="right">
+													<input name="txtCreditCardHolderName" type="text" maxlength="30" id="txtCreditCardHolderName" class="form_caption" />
+													<span controltovalidate="txtCreditCardHolderName" errormessage="Credit card holder name is required." display="None" validationGroup="ValidateRegistration" id="rfvCreditCardHolderName" class="form_caption" evaluationfunction="RequiredFieldValidatorEvaluateIsValid" initialvalue="" style="color:Red;display:none;"></span></TD>
+											</TR>
+											<TR style="PADDING-TOP: 5px" align="right">
+												<TD colSpan="2">
+													<input type="image" name="btnSubscribe" id="btnSubscribe" onmouseup="this.src='images/button_subscribe-over.gif';" onmousedown="this.src='images/button_subscribe-down.gif';" onmouseover="this.src='images/button_subscribe-over.gif';" onmouseout="this.src='images/button_subscribe.gif';" src="https://www.fastcase.com/Yahoo/images/button_subscribe.gif" border="0" onclick="if (typeof(Page_ClientValidate) == 'function') { if (Page_ClientValidate('ValidateRegistration') == false) { return false; } this.disabled = true; this.src='images/button_subscribe_disabled.gif';}__doPostBack('btnSubscribe','');WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;btnSubscribe&quot;, &quot;&quot;, true, &quot;ValidateRegistration&quot;, &quot;&quot;, false, false))" language="javascript" style="height:23px;width:100px;" />
+													<P class="form_caption">Please do not click twice as it may result in your credit 
+														card being charged more than once.
+													</P>
+												</TD>
+											</TR>
+											<TR style="PADDING-TOP: 5px" align="right">
+												<TD colSpan="2">
+													</TD>
+											<TR align="left">
+												<TD colSpan="2">
+													<div validationGroup="ValidateRegistration" id="vldSummaryRegistration" class="form_caption" style="color:Red;display:none;">
+
+	</div></TD>
+											</TR>
+										</TABLE> <!-- End Contents of Rounded Box //--></TD>
+									<TD width="8" background="https://www.fastcase.com/Yahoo/images/border_r.gif"><IMG height="50" src="https://www.fastcase.com/Yahoo/images/border_r.gif" width="8"></TD>
+								</TR>
+								<TR>
+									<TD width="9" height="8"><IMG height="8" src="https://www.fastcase.com/Yahoo/images/box_corner_bl.gif" width="9"></TD>
+									<TD background="https://www.fastcase.com/Yahoo/images/border_b.gif" bgColor="#f7f7f7" height="8"><IMG height="8" src="https://www.fastcase.com/Yahoo/images/border_b.gif" width="100%"></TD>
+									<TD width="9" height="8"><IMG height="8" src="https://www.fastcase.com/Yahoo/images/box_corner_br.gif" width="8"></TD>
+								</TR>
+							</TABLE>
+						</TD>
+					</TR>
+				</TABLE>
+			
+</div>
+			<!-- End Rounded Box //-->
+			<!--Panel for additional billing details -->
+			<!--Registration sucess panel-->
+			
+			<!--Error panel-->
+			
+			<p></p>
+			<!-- Contact Info //-->
+			<table width="100%">
+				<tr>
+					<td align="right"><IMG height="23" alt="Fastcase, Inc." src="https://www.fastcase.com/Yahoo/images/footer_logo.gif" width="70">
+						<br>
+						<span class="address">P.O. Box 26055<br>
+							Alexandria, VA 22313-6055<br>
+							Customer Service: 703-740-5920</span>
+					</td>
+				</tr>
+			</table>
+			
+<script type="text/javascript">
+<!--
+var Page_ValidationSummaries =  new Array(document.getElementById("vldSummaryLogin"), document.getElementById("vldSummaryRegistration"));
+var Page_Validators =  new Array(document.getElementById("rfvUsername"), document.getElementById("rfvPassword"), document.getElementById("rfvFirstName"), document.getElementById("rfvLastname"), document.getElementById("rfvEmail"), document.getElementById("vldEmail"), document.getElementById("rfvPassword2"), document.getElementById("rfvCreditCardNumber"), document.getElementById("vldCreditCardNumber"), document.getElementById("vldCreditCardExpirationDate"), document.getElementById("rfvCreditCardHolderName"));
+// -->
+</script>
+
+<script language='javascript' src='https://server.iad.liveperson.net/hc/13842831/x.js?cmd=file&amp;file=chatScript3&amp;site=13842831&amp;category=en;woman;1'></script>
+<script type="text/javascript">
+<!--
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+// -->
+</script>
+        </form>
+		
+	</BODY>
+</HTML>

@@ -1,0 +1,384 @@
+/* ANANOVA GENERIC STYLESHEET  */
+
+h1.blue {
+	color: #039;
+	font: lighter 30px arial-narrow, arial, helvetica, sans-serif;
+	}
+
+/* SECTION TD styles */
+
+td, th, div { font-family: arial, helvetica, sans-serif; /* border:0.01cm solid gray */ } 
+
+/* Although these align styles are valid, NS4.x's intepretation of them is buggy. Use with care. */
+.align-left { text-align: left }
+.align-right { text-align: right }
+.align-center { text-align: center }
+
+.vlightgrey-panel { background-color: #e9e9e9; color: #000; }
+.lightgrey-panel { background-color: #ccc; color: #000; }
+.midgrey-panel { background-color: #999; color: #fff; }
+.darkgrey-panel { background-color: #666; color: #fff; }
+.orange-panel { background-color: #f60; color: #fff; }
+.black-panel { color: #fff; background-color: #000; }
+.white-panel { background-color: #fff; color: #000; }
+
+.orange-head { background-color: #000; color: #fff }
+.news-head { background-color: #039; color: #fff }
+.news-content { background-color: #ccf; color: #000 }
+.sport-head { background-color: #393; color: #fff }
+.sport-content { background-color: #ffc; color: #000 }
+.entertainment-head { background-color: #f60; color: #fff  }
+.entertainment-content { background-color: #ff9; color: #000 }
+.charts-content { background-color: #ccf; color: #000 }
+.tv-head { background-color: #909; color: #fff }
+.tv-content { background-color: #fcf; color: #000 }
+.alerts-head { background-color: #f00; color: #fff }
+.alerts-content { background-color: #ffc; color: #000 }
+.alerts-divide { background-color: #999; color: #fff }
+.whatson-head { background-color: #c00; color: #fff }
+.goingout-head { background-color: #900; color: #fff }
+.goingout-content { background-color: #ffc; color: #000 }
+.business-head { background-color: #669; color: #fff }
+.business-content { background-color: #ccf; color: #000 }
+.video-head { background-color: #039; color: #fff }
+.weather-head { background-color: #399; color: #fff }
+.weather-content { background-color: #9cc; color: #000 }
+.weather-weekend-head { background-color: #600; color: #fff }
+.weather-weekend-time { background-color: #c66; color: #fff }
+.weather-weekend-detail { background-color: #fcc; color: #fff }
+.weather-forecast-head { background-color: #366; color: #fff } 
+.search-head { background-color: #039; color: #fff }
+.search-content { background-color: #ffc; color: #000 }
+.search-inverse { background-color: #fff; color: #993 }
+.about-head { background-color: #999; color: #fff }
+.about-content { background-color: #ccc; color: #000 }
+.desktop-title { background-color: #000; color: #f00 }
+.desktop-eye-head { background-color: #aaa; color: #000 }
+.desktop-text { background-color: #000; color: #ccc }
+.desktop-date { color: #999 }
+.desktop-white { color: #fff }
+.yournews-blue { background-color: #039; color: #fff }
+.lightgrey-bg { background-color: #ccc }
+.personal-welcome { font-size:14pt; font-weight:bold; color:#039 }
+
+/* INLINE COMPONENT styles - best applied to a TD */
+
+.panel-beige {background-color: #CCCC99; color: #000}
+.panel-yellow { background-color: #ffc; color: #000 }
+.panel-pink { background-color: #fcc; color: #000 }
+.panel-green { background-color: #9c9; color: #000 }
+.panel-olive { background-color: #cc9; color: #000 }
+.panel-aqua { background-color: #9cc; color: #000 }
+.panel-gray { background-color: #ccc; color: #000 }
+.panel-parma { background-color: #ccf; color: #000 }
+.panel-purple { background-color: #c9c; color: #000 }
+.panel-light-purple { background-color: #99c; color: #fff }
+.panel-white { background-color: #fff; color: #000 }
+.desktop-blank { color: #ccc }
+.quiz-heading { background-color: #fff; color: #6c0 }
+.happy-yellow { background-color: #fc3; color: #000 }
+.womble-purple { background-color: #609; color: #fff }
+.full-orange { background-color: #f60; color: #fff }
+.mid-orange { background-color: #f90; color: #000 }
+.pale-orange { background-color: #fc6; color: #000 }
+.panel-brightblue { background-color: #9cf; color: #000 }
+
+
+/* BORDER STYLES FOR INLINE COMPONENTS */
+
+.orange-border { border: solid #f60; border-width: 2px }
+.black-border { border: solid #000; border-width: 2px }
+.darkgrey-border { border: solid #999; border-width: 2px }
+.lightgrey-border { border: solid #ccc; border-width: 2px }
+.green-border { border: solid #090; border-width: 2px }
+.violet-border { border: solid #669; border-width: 2px }
+.calmgreen-border { border: solid #399; border-width: 2px }
+.red-border { border: solid #f60; border-width: 2px }
+.maroon-border { border: solid #fc3; border-width: 2px }
+.blue-border { border: solid #039; border-width: 2px }
+.purple-border { border: solid #969; border-width: 2px }
+.white-border { border: solid #fff; border-width: 2px }
+
+/* TABLE BG COLOURS (USED IN PERSONAL PAGE) */
+.personal-table { background-color: #cccc99 }
+.orange-table { background-color: #f60 }
+.black-table { background-color: #000}
+.darkgrey-table { background-color: #999 }
+.lightgrey-table { background-color: #ccc}
+.green-table { background-color: #090 }
+.violet-table { background-color: #669 }
+.calmgreen-table { background-color: #399 }
+.red-table { background-color: #f60 }
+.maroon-table { background-color: #fc3 }
+.blue-table { background-color: #039 }
+.purple-table { background-color: #969 }
+.white-table { background-color: #fff }
+
+
+/* COLOURED TEXT SPANS */
+.orange-text { color: #f60 }
+.orange-largetext { color: #f60; font-size: 140% }
+.exclusive { color: #f00 }
+.red { color: #c03 }
+.yournews { color: #039 }
+
+
+/* ANCHOR styles */
+
+A:link { color: #039 }
+A:visited { color: #909 }
+A:active { color: #c03 }
+A:hover { color: #999 }
+
+A.orange-nav:link { color: #f60; }
+A.orange-nav:visited { color: #f60; }
+A.orange-nav:active { color: #039; }
+A.orange-nav:hover { color: #999; }
+
+A.plainorange-nav:link { color: #f60; text-decoration: none }
+A.plainorange-nav:visited { color: #f60; text-decoration: none }
+A.plainorange-nav:active { color: #039; text-decoration: none }
+A.plainorange-nav:hover { color: #999; text-decoration: none }
+
+A.top-nav:link { color: #666; font-size: 8pt; text-decoration: none }
+A.top-nav:visited { color: #666; font-size: 8pt; text-decoration: none }
+A.top-nav:active { color: #666; font-size: 8pt; text-decoration: none }
+A.top-nav:hover { color: #666; font-size: 8pt; text-decoration: none }
+
+A.front-white:link { color: #fff; text-decoration: none; font-size: 8pt }
+A.front-white:active { color: #ffc; text-decoration: none; font-size: 8pt }
+A.front-white:hover { color: #ffc; text-decoration: none; font-size: 8pt }
+A.front-white:visited { color: #fff; text-decoration: none; font-size: 8pt }
+
+A.plain-nav:link { color: #000; text-decoration: none }
+A.plain-nav:visited { color: #000; text-decoration: none }
+A.plain-nav:active { color: #000; text-decoration: none }
+A.plain-nav:hover { color: #999; text-decoration: none }
+
+A.yournews-nav:link { color: #039; text-decoration: none }
+A.yournews-nav:visited { color: #039; text-decoration: none }
+A.yournews-nav:active { color: #039; text-decoration: none }
+A.yournews-nav:hover { color: #999; text-decoration: none }
+
+A.blank-nav:link { color: #039; text-decoration: none }
+A.blank-nav:visited { color: #039; text-decoration: none }
+A.blank-nav:active { color: #039; text-decoration: none }
+A.blank-nav:hover { color: #999; text-decoration: none }
+
+A.help-nav:link { color: #039; text-decoration: none }
+A.help-nav:visited { color: #039; text-decoration: none }
+A.help-nav:active { color: #039; text-decoration: none }
+A.help-nav:hover { color: #999; text-decoration: none }
+
+A.headline-text:link { color: #000; text-decoration: none }
+A.headline-text:visited { color: #000; text-decoration: none }
+A.headline-text:active { color: #c03; text-decoration: none }
+A.headline-text:hover { color: #999; text-decoration: none }
+
+A.home-nav:visited { color: #f03; text-decoration: none }
+A.home-nav:link { color: #f03; text-decoration: none }
+A.home-nav:hover { color: #999; text-decoration: none }
+A.home-nav:active { color: #f03; text-decoration: none }
+
+A.news-nav:visited { color: #039; text-decoration: none }
+A.news-nav:link { color: #039; text-decoration: none }
+A.news-nav:hover { color: #999; text-decoration: none }
+A.news-nav:active { color: #039; text-decoration: none }
+
+A.sport-nav:visited { color: #090; text-decoration: none }
+A.sport-nav:link { color: #090; text-decoration: none }
+A.sport-nav:hover { color: #999; text-decoration: none }
+A.sport-nav:active { color: #090; text-decoration: none }
+
+A.sport-links:visited { color: #090}
+A.sport-links:link { color: #090 }
+A.sport-links:hover { color: #999 }
+A.sport-links:active { color: #090 }
+
+A.weather-nav:visited { color: #399; text-decoration: none }
+A.weather-nav:link { color: #399; text-decoration: none }
+A.weather-nav:hover { color: #399; text-decoration: none }
+A.weather-nav:active { color: #399; text-decoration: none }
+
+A.entertainment-nav:link { color: #f60; text-decoration: none }
+A.entertainment-nav:visited { color: #f60; text-decoration: none }
+A.entertainment-nav:active { color: #f60; text-decoration: none }
+A.entertainment-nav:hover { color: #999; text-decoration: none }
+
+A.business-nav:link { color: #669; text-decoration: none }
+A.business-nav:visited { color: #669; text-decoration: none }
+A.business-nav:active { color: #669; text-decoration: none }
+A.business-nav:hover { color: #999; text-decoration: none }
+
+A.about-nav:link { color: #000; text-decoration: none }
+A.about-nav:visited { color: #000; text-decoration: none }
+A.about-nav:active { color: #000; text-decoration: none }
+A.about-nav:hover { color: #ccc; text-decoration: none }
+
+A.directory-nav:link { color: #000; text-decoration: none }
+A.directory-nav:visited { color: #000; text-decoration: none }
+A.directory-nav:active { color: #000; text-decoration: none }
+A.directory-nav:hover { color: #ccc; text-decoration: none }
+
+A.goingout-nav:link { color: #900; text-decoration: none }
+A.goingout-nav:visited { color: #900; text-decoration: none }
+A.goingout-nav:active { color: #900; text-decoration: none }
+A.goingout-nav:hover { color: #ccc; text-decoration: none }
+
+A.error-nav:link { color: #999; text-decoration: none }
+A.error-nav:visited { color: #999; text-decoration: none }
+A.error-nav:active { color: #999; text-decoration: none }
+A.error-nav:hover { color: #ccc; text-decoration: none }
+
+A.tv-nav:link { color: #909; text-decoration: none }
+A.tv-nav:visited { color: #909; text-decoration: none }
+A.tv-nav:active { color: #909; text-decoration: none }
+A.tv-nav:hover { color: #999; text-decoration: none }
+
+A.search-nav:link { color: #039; text-decoration: none }
+A.search-nav:visited { color: #039; text-decoration: none }
+A.search-nav:active { color: #039; text-decoration: none }
+A.search-nav:hover { color: #039; text-decoration: none }
+
+A.video-nav:link { color: #039; text-decoration: none }
+A.video-nav:visited { color: #039; text-decoration: none }
+A.video-nav:active { color: #039; text-decoration: none }
+A.video-nav:hover { color: #039; text-decoration: none }
+
+A.white:link { color: #fff; font-size: 10pt }
+A.white:active { color: #ffc; font-size: 10pt }
+A.white:hover { color: #ffc; font-size: 10pt }
+A.white:visited { color: #fff; font-size: 10pt }
+
+A.plainwhite:link { color: #fff; text-decoration: none; font-size: 10pt }
+A.plainwhite:active { color: #ffc; text-decoration: none; font-size: 10pt }
+A.plainwhite:hover { color: #ffc; text-decoration: none; font-size: 10pt }
+A.plainwhite:visited { color: #fff; text-decoration: none; font-size: 10pt }
+
+A.desk-nav:visited { color: #fff; text-decoration: none }
+A.desk-nav:link { color: #fff; text-decoration: none }
+A.desk-nav:hover { color: #ff3; text-decoration: none }
+A.desk-nav:active { color: #f03; text-decoration: none }
+
+A.desktop-eye:link { color: #039; text-decoration: none }
+A.desktop-eye:visited { color: #039; text-decoration: none }
+A.desktop-eye:active { color: #999; text-decoration: none }
+A.desktop-eye:hover { color: #039; text-decoration: none }
+
+/* CONTENT TITLE-HEADER styles */
+
+.content-header-news { background-color: #ccf; color:#fff }
+.content-header-entertainment { background-color: #ffc; color:#fff }
+.content-header-tv { background-color: #fcf; color:#fff }
+.content-header-goingout { background-color: #ffc; color:#fff }
+.content-header-weather { background-color: #9cc; color:#fff }
+
+/* SPORT specific */
+
+TH.darkcol { background-color: #090; font-size: smaller; color: #fff }
+TH.lightcol { background-color: #999; font-size: smaller; color: #fff }
+TD.teamname { font-weight: bold; font-size: smaller }
+TD.soccellnocoverage { font-size: smaller; background-color: #f7f7f7; color: silver }
+TD.soccell { font-size: smaller; background-color: #f7f7f7; color: #000 }
+TD.soccelldkgrey { font-size: smaller; background-color: #eaeaea; color: #000 }
+TR.soccell { background-color: #f7f7f7; font-size: smaller; color: #000 }
+TR.soccelldkgrey { background-color: #eaeaea; font-size: smaller; color: #000 }
+TH.cktcell { font-weight: bold; font-size: smaller; color: #000 }
+TD.cktcell { font-size: smaller; color: #000 }
+.ckttext { font-family: arial, helvetica, sans-serif; font-size: smaller; color: #000 }
+
+/* WEATHER specific*/
+
+.severe-weather { background-color: #ff9; color: #000; }
+.severe-weather-headline { background-color: #ff9; color: #000; }
+
+
+/* MISC styles */
+
+.menu { margin-bottom: 10px }
+.sub-header { color: #c03; font-family: arial, helvetica, sans-serif }
+.searchbox { width: 130 }
+.welcome { font-size:24pt; color:#039 }
+hr { color: #999; height: 1px }
+
+ul { margin-top: 1px }
+UL.disc {margin-top: 0px; list-style-type: disc; color: #000000 }
+UL.square {margin-top: 0px; list-style-type: square; color: #000000 }
+UL.circle {margin-top: 0px; list-style-type: circle; color: #000000 }
+
+li { color: #c03 }
+li.black { color: #000 }
+.list-text { font-family: arial, helvetica, sans-serif; color: #000 }
+
+.news { color: #30c }
+.copyright { font-size: smaller; font-style: italic; text-decoration: none; color: #000 }
+
+p { font-family: arial, helvetica, sans-serif; color: #000 }
+
+.nomargin { margin: 0px }
+
+.blue-text { color: #039 }
+
+/* NEW TV LISTINGS specific */
+.helvsmall { font-family: verdana, arial, helvetica, sans-serif; font-size: smaller; font-weight: bold }
+.helvsmallnobold { font-family: verdana, arial, helvetica, sans-serif; font-size: smaller }
+.helvnorm { font-family: verdana, arial, helvetica, sans-serif; font-weight: bold }
+.helv { font-family: verdana, arial, helvetica, sans-serif }
+.tahomasmall { font-family: tahoma; font-size: smaller; font-weight: bold }
+.tahomasmallnobold { font-family: tahoma; font-size: smaller }
+
+/* main tv listing colors */
+.tvlistprogramtitle { color: #909 }
+.tvlistprogramdescription { color: #000 }
+.tvlistprogramtime { color: #000 }
+.tvlistprogramseperatorline { background-color: #fff }
+.tvlistchannelbackgroundcolor { background-color: #ccc }
+.tvlistchannelbackgroundcolorB { background-color: #fff }
+.tvlistchannelbgcolor { background-color: #909 }
+.tvlistchannelbgcolor2 { background-color: #ccc }
+
+/* channel heading colors */
+.tvlistchannelname { font-family: verdana, arial, helvetica, sans-serif; font-weight: bold; background-color: #909; color: #fff }
+.tvlistchannelseperatorline { background-color: #fff }
+
+/* passion centre component text */
+.passioncentre { font-family: verdana, arial, helvetica, sans-serif; font-size: 8pt }
+
+/* ad css */
+#skyscraper {
+width: 100%;
+height: 1px;
+top: 0;
+left: 0;
+position: absolute;
+}
+#skyscraper div {
+width: 930px;
+position: relative;
+margin: 157px auto 0 auto;
+}
+#skyscraper div div {
+width: 120px;
+position: relative;
+float: right;
+margin-top: 0;
+}
+* html #skyscraper {
+left: 15px;
+top: 7px;
+}
+* html #skyscraper div {
+width: 300px;
+padding-left: 400px;
+}
+
+body table {
+  position: relative;
+  z-index: 2;
+}
+
+#skyscraper {
+  z-index: 1;
+}
+
+

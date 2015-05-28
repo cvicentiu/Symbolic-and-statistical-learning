@@ -1,0 +1,17 @@
+checkedCounter = 0;
+function count(box)
+{
+	if (box.checked) checkedCounter++;
+	if (!box.checked) checkedCounter--;
+}
+function checkCount()
+{
+	return checkedCounter>0 || checkBoxes();
+}
+function checkBoxes() {
+	var boxes = document.formReadCheckedResults.resultDocId;
+	for(var i=0; i<boxes.length; i++){
+		if (boxes[i].checked) return true;
+	}
+	return false;
+}

@@ -1,0 +1,99 @@
+/* Created by Rick Cecil | rick@hesketh.com */
+/* Version 1.9 */
+/* Last updated 07.21.2004 */
+
+	body {
+		color: #000000;
+		font: 90% arial, verdana, helvetica, sans-serif;
+		}
+
+	ul {
+		list-style: disc url("/us/assets/images/bullet.gif");	
+		}
+
+/* Composition Styles */ 
+
+	.button {
+		background: #000066;
+		}
+
+	#corporatePublishing ul {
+		list-style: disc url("/us/assets/images/bullet.gif");
+		}
+	#drillDown ul {
+		list-style: none;
+		}
+	#higherEd ul {
+		list-style: disc url("/us/assets/images/arrowRed.gif");
+		}
+	#isbnDetails ul {
+		list-style: disc url("/us/assets/images/bullet.gif");					
+		}
+	.textAdMulti ul {
+		list-style: disc url("/us/assets/images/arrowRed.gif");
+		}
+
+	#mailingListSubscribe .button {
+		width: 7em;
+		}
+		
+	#navUtility {
+		width: 23.1em;
+	}
+	
+	.results .navBrowse .sortSearch {
+		height: 5em;
+		}
+				
+	.searchBar .linkMore {	
+		margin-top: -5px;
+		}
+	.tabsContainer .clear {
+		margin-bottom: -2px;
+		}
+
+	.isbnProperties {}
+		.isbn .isbnProperties .cost {
+			display: block;
+			clear: right;
+			bordeR: 1px solid #fff;
+			}
+
+	.isbn .advertising .upsell .isbnAdvertisingDetails{
+		margin-left: 95px;
+		}
+		.isbn .advertising .upsell .description {
+			clear: both;
+			}
+	#announcement {
+	 		font-weight: bold;
+		color: 336699;
+		font-size: 12pt;
+
+	}
+
+
+/* Structural Styles */
+
+		 /* 213 Styles  */
+		
+			.layout213 .oneContainer {
+				float: right;
+				}
+		
+			.layout213 .twoContainer {
+				float: left; 
+				position: relative;
+				z-index: 100;
+				} 
+
+	/* Layout 21 */
+		.layout21{}
+			.layout21 .oneContainer {
+				float: right;
+				}
+			.layout21 .twoContainer {
+				float: left;
+				position: relative;
+				z-index: 100;
+				}

@@ -1,0 +1,170 @@
+.menu 
+{
+float: left;
+white-space:nowrap;
+width: 100%;
+}
+
+.menu ul li
+{
+z-index: 1;
+}
+
+.menu-child
+{
+min-width: 12em;
+z-index:1;
+}
+
+.menu ul 
+{
+list-style: none;
+margin: 0;
+padding: 0;
+float: left;
+}
+
+.menu a 
+{
+font: 11px/16px 'Verdana', 'Helvetica', sans-serif;
+display: block;
+margin: 0;
+/*padding: 2px 3px;*/
+}
+.eMenuLink
+{
+padding: 5px;
+}
+.eMenuImage
+{
+
+}
+.menu  a 
+{
+color: #000;
+text-decoration: none;
+}
+
+.menu  a:hover 
+{
+/*color: #a00;*/
+background: none;
+}
+.menu li 
+{
+position: relative;
+}
+
+.menu ul ul 
+{
+position: absolute;
+}
+
+.menu ul ul ul {
+top: 0;
+left: 100%;
+}
+
+div.menu ul ul,
+div.menu ul li:hover ul ul,
+div.menu ul ul li:hover ul ul
+{
+display: none;
+}
+
+.has-more-img
+{
+content: url(/shared/images/menu-downarrow.gif) center top no-repeat;
+}
+
+.has-more
+{
+background: url(/shared/images/menu-downarrow.gif) right center no-repeat;
+}
+
+.has-child
+{
+background: #FFFCED url(/shared/images/menu_arrow2.gif) right center no-repeat;
+}
+
+.no-child
+{
+background: #FFFCED;
+}
+
+.ul-child
+{
+border:1px solid #D9C98B;
+background: #FFFCED;
+}
+
+.menu-parent{}
+.menu-parent-link{padding: 2 12 3 10;}
+.menu-parent-img{padding:0;}
+
+#EasyMenuContext, .EasyMenuContext
+{
+	width: 150px;
+	height: 100px;
+	z-index:10001;
+}
+
+#EasyMenuContext ul, #EasyMenuContext ul li, .EasyMenuContext ul, .EasyMenuContext ul li
+{
+	list-style: none;
+	margin: 0;
+	padding:2;
+	font-size:11px;	
+}	
+
+#EasyMenuContext ul, .EasyMenuContext ul
+{	
+	background: #ffffff;
+	position:relative;
+	left:4px;
+	top:4px;
+	border: 1px solid #81b0bf;
+	width:140px;
+}
+
+.EasyMenuContext-del-hover
+{
+	background-color: #d2ecff;
+	cursor: pointer;
+	width:100%;
+}
+
+.EasyMenuContext-del-normal
+{
+	background-color: white;
+	cursor: auto;
+	width:100%;
+}
+
+.EasyMenuContext-edit-hover
+{
+	background-color: #d2ecff;
+	cursor: pointer;
+	width:100%;
+}
+
+.EasyMenuContext-edit-normal
+{
+	background-color: white;
+	cursor: auto;
+	width:100%;
+}	
+
+.EasyMenuContext-add-hover
+{
+	background-color: #d2ecff;
+	cursor: pointer;
+	width:100%;
+}
+
+.EasyMenuContext-add-normal
+{
+	background-color: white;
+	cursor: auto;
+	width:100%;
+}	

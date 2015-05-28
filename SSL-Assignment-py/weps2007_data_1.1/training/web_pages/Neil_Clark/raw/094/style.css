@@ -1,0 +1,229 @@
+body {
+	background: #eeeeee url(../images/bg.gif) repeat;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 62.5%;
+	font-weight: normal;
+}
+html>body {
+    font-size: 10px;
+	}
+.mainTABLE {
+	border-left: 1px solid #31396A;
+	border-right: 1px solid #31396A;
+	background: #EBE6C8 none;
+	font-size: 1.1em;
+	color: #862529;
+}
+.horBar {
+	background: #000000 url(images/Bible-mod_10.gif) repeat-x;
+}
+.vertBar {
+	background: #000000 url(images/Bible-mod_06.gif) repeat-y;
+}
+
+.left-column {
+	background: #31396A none;
+}
+a.footer-link {
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	font-weight: normal;
+	color: #862529;
+	text-decoration: none;
+}
+a.footer-link:hover {
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	font-weight: normal;
+	color: #862529;
+	text-decoration: underline;
+}
+.headerBG {
+	background: #000000 url(images/header_tile.jpg) repeat-x;
+}
+.searchBG {
+	background: #000000 url(images/search_tile.jpg) repeat-x;
+	background-position: top;
+}
+a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	color: #333399;
+	text-decoration: underline;
+}
+.tanLINK {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	font-weight: normal;
+	color: #DBB46E;
+	text-decoration: underline;
+}
+a.menuTEXT  {
+	font-size: 1em;
+	font-weight: bold;
+	color: #D3AD78;
+	text-decoration: none;
+	display:block;
+	padding-bottom: 5px;
+}
+a.menuTEXT:hover {
+	background: #EBE6C8 none;
+	color: #31396A;
+}
+form.nospace { 
+    padding-top:0; 
+	padding-bottom:0; 
+	margin-top:0; 
+	margin-bottom:0; 
+} 
+.flyoutMenu {
+	border: 1px solid #31396A;
+}
+
+.flyoutMenu td {
+	border-bottom: 1px solid #EBE6C8;
+	background: #EBE6C8 none;
+}
+.flyoutMenu a {
+	font-size: 1em;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 4px;
+	color:#31396A;
+	line-height: 11px;
+	display: block;
+}
+.flyoutMenu a:hover {
+    text-decoration: underline;
+	background: #EBE6C8 none;
+	color: #31396A;
+}
+.copyTEXT {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: .82em;
+	font-weight: normal;
+	color: #9E875F;
+	text-decoration: none;
+}
+.backcoverTEXT {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	text-decoration: none;
+}
+li {
+	list-style-image: url(images/li-dot.gif);
+	padding-bottom: 3px;
+}
+.searchTEXT {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	font-weight: normal;
+	color: #862529;
+	text-decoration: none;
+}
+.adspaceBG {
+	padding-top: 5px;
+}
+.tan-largeLINK {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.27em;
+	font-weight: bold;
+	color: #996533;
+	text-decoration: underline;
+}
+.titleTEXT {
+	font-size: 1.45em;
+}
+input {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: .91em;
+	color: #333333;
+	text-decoration: none;
+	border: 1px solid #31396A;
+	background-color: #FFFFFF;
+}
+select {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: .91em;
+	color: #333333;
+	text-decoration: none;
+	border: 1px solid #31396A;
+}
+hr {
+	color: #862529;
+	background-color: #862529;
+}
+textarea {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+input.check {
+   border: none;
+   background-color: transparent;
+}
+
+input.image {
+   border: none;
+   background-color: transparent;
+}
+.init {
+	font-family: "French Script MT";
+	font-size: medium;
+}
+
+.errorTEXT{
+	border: 2px solid red;
+	color: red;
+	padding: 5px 20px;
+	text-align: center;
+	margin: 0 0 2em 0;
+	font: normal 12px arial, sans-serif;
+}
+
+.successTEXT{
+	border: 2px solid olive;
+	color: maroon;
+	padding: 5px 20px;
+	text-align: center;
+	margin: 0 0 2em 0;
+	font: normal 12px arial, sans-serif;
+}
+
+.redtext{
+color : Red;
+}
+
+.incartTXT{
+color : #A0522D;
+border : thin dotted silver;
+background-color: #FFF8DC;
+width : 75%;
+text-align : center;
+}
+
+.formblock{
+border : thin solid #DBB46E;
+}
+
+.search_nav {
+  width: 100%;
+  margin: 1em 0;
+}
+.search_nav .criteria {
+  text-align: right;
+  font-style: italic;
+}
+.search_nav .pages {
+  text-align: right;
+}
+.marketplace_side {
+	margin-left : 5px;
+	margin-right : 5px;
+	margin-top : 5%;
+	margin-bottom : 5%;
+}

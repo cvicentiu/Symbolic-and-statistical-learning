@@ -1,0 +1,53 @@
+/* CSS Document */
+
+	body {
+		font: 10pt arial, verdana, helvetica, sans-serif;
+		}
+
+	#header,
+	#footerNav, 
+	.twoContainer, 
+	#purchase,
+	.right,
+	.searchBarContainer,
+	.advertising {
+		display: none;
+		visibility: hidden;
+		}
+	
+	
+	#isbnHeading {
+		clear: none;
+		margin: 0;
+		}
+	
+	#breadcrumbContainer {
+		background: #F7F7EF url(none);
+		border: 0;
+		padding-bottom: 0;
+		}
+
+	.leftRightContainer {
+		margin-right: 0  !important;
+		}
+	
+	.left {
+		width:auto  !important;
+		float: none  !important;
+		}
+	
+	.layout213 .middle {
+		margin-left: 0 !important;
+		min-height: auto !important;
+*		width: 60%;
+		}
+
+	.clear {
+		overflow: visible;
+		}
+	#announcement {
+	 		font-weight: bold;
+		color: 336699;
+		font-size: 12pt;
+
+	}

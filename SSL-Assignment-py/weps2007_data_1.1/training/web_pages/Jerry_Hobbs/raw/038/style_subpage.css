@@ -1,0 +1,136 @@
+/*A:link 		{color: #0000ff; TEXT-DECORATION: none}
+A:visited 	{COLOR: #800080; TEXT-DECORATION: none}
+A:hover 	{color: #0000ff; TEXT-DECORATION: underline}*/
+A.submenu:link 		{/*FONT-WEIGHT: bold;*/ COLOR: #000000; TEXT-DECORATION: none}
+A.submenu:visited	{/*FONT-WEIGHT: bold;*/ COLOR: #000000; TEXT-DECORATION: none}
+A.submenu:hover 	{/*FONT-WEIGHT: bold;*/ COLOR: #000000; TEXT-DECORATION: underline}
+
+body {
+	margin-left: 0;
+	margin-top: 0;
+	font-size: 13px;
+	font-family: "trebuchet ms", Helvetica, Arial, sans-serif;
+	line-height: 135%;
+	background-color: #dddddd;	
+}
+
+/* CONTAINER FOR OSU NAVIGATION MENU */
+#mastcontainer{
+	width: 753px;
+	background-color: #fff;
+	/*border: 1px solid gray;*/
+}
+
+/* CONTAINER FOR ALL FLOATING BOXES */
+#container{
+	width: 751px;
+	background-color: #fff;
+	border: 1px solid gray;
+}
+
+#container a:link{
+	color: #0000ff;
+	text-decoration: none;
+}
+
+#container a:visited{
+	color: #800080;
+	text-decoration: none;
+}
+
+#container a:hover{
+	color: #0000ff;
+	text-decoration: underline;
+}
+
+/* TOP BANNER - Welcome to CSE*/
+#top{
+	position: relative;
+	clear: both;	
+	height: 80px;
+	border-bottom: 1px solid #c9c9c3;
+}
+
+/* LEFT NAVIGATION MENU */
+#leftnav{ /* Left navigation menu container */
+	position: relative;
+	float: left;
+	width: 170px;
+	border-right: 1px solid #c9c9c3;
+	border-bottom: 1px solid #c9c9c3;
+	background-color: #f1f1f1;
+	line-height: 18px;
+	z-index: 10000;
+}
+#leftnavTOP{ /* top parts of menus... before submenus */
+	position: relative;
+	float: left;
+	padding-left: 15px;
+	padding-top: 10px;
+}
+#leftnavMID{ /* This is where submenus are contained */
+	position: relative;
+	float: left;
+	width: 150px;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	font-size: 13px;	
+}
+#leftnavBOTTOM{ /* rest of menus... after submenus */
+	position: relative;
+	float: left;
+	padding-left: 15px;
+	padding-bottom: 0px;
+}
+#leftnavSEARCH{ /* search input box below all menus */
+	position: relative;
+	float: left;
+	padding-left: 15px;
+	padding-top: 5px;
+}
+
+/* CONTENT PANE */
+#content{
+	position: relative;
+	width: 560px;
+	float: right;
+	padding-top: 10px;
+/*	padding-right: 10px;*/
+	z-index: 1;	
+}
+
+/* FOOTER FOR WWW.OSU.EDU */
+#osufooter{
+	position: relative;
+	height: 20px;
+	clear: both;
+	border-top: 1px solid gray;
+	background-color: #eee;
+	text-align: right; 
+	padding-top: 4px; padding-right: 10px;
+}
+
+/* FOOTER */
+#footer{
+	position: relative;
+	height: 100px;
+	clear: both;
+	font-size: 13px;
+	padding-top: 10px;
+	padding-left: 10px;
+	border-top: 1px solid gray;
+	line-height: 15px;
+/*	font-weight: bold;*/
+}
+
+/* FOR SEARCH INPUT FORM'S LABEL */
+.invisible {
+	display: none;
+}
+span.newWin{
+	font-size: 9px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	/*font-weight: bold;*/
+	font-style: italic;
+	line-height: 100%;
+}

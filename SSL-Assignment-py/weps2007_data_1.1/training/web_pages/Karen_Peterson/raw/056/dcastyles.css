@@ -1,0 +1,325 @@
+body { font-size: 100%; line-height: 125%; }
+table { font-size: 0.9em; }
+
+table table, table table table, table table table table {
+	font-size: 1em }
+
+a { color: #003366; }
+a:visited { color: #0099cc; }
+a:active{ color: #0099cc; }
+
+.clearfix:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+
+.clearfix {display: inline-table;}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+fpheadline {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: small;
+	font-weight: bold;
+	line-height: normal;
+	color: #003366;
+	font-style: normal;
+
+}
+.fpdeck {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: x-small;
+	color: #000000;
+	line-height: normal;
+	font-variant: normal;
+	text-transform: none;
+	font-weight: normal;
+}
+.fplink {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-transform: capitalize;
+	color: #003366;
+	text-decoration: underline;
+}
+.fpleftheader {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: large;
+	font-weight: normal;
+	text-transform: capitalize;
+	background-image: url(images/backgrounds/leftorangetop.gif);
+	padding: 4px 0px;
+
+
+
+}
+MenuList {
+	list-style-type: circle;
+}
+ul {
+	padding: -2px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+
+}
+li {
+	/*padding: 2px 0px;*/
+	margin-bottom: 0.25em;
+	list-style-position: outside;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+/*	font-size: 12px; 
+	color: #003366;
+	list-style-type: circle;*/
+
+
+
+
+
+}
+h1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: xx-large;
+	font-style: normal;
+	font-weight: normal;
+	text-transform: capitalize;
+	color: #003366;
+	letter-spacing: normal;
+
+}
+.HeadingOneStyled {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: xx-large;
+	font-style: normal;
+	font-weight: normal;
+	text-transform: capitalize;
+	color: #003366;
+	letter-spacing: normal;
+
+}
+h2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: x-large;
+	font-style: normal;
+	font-weight: bold;
+	text-transform: capitalize;
+	color: #003366;
+	letter-spacing: .2em;
+
+}
+.HeadingTwoStyled {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: x-large;
+	font-style: normal;
+	font-weight: normal;
+	text-transform: capitalize;
+	color: #003366;
+	letter-spacing: .2em;
+
+}
+h3 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: large;
+	font-style: normal;
+	font-weight: normal;
+	text-transform: none;
+	color: #003366;
+	letter-spacing: 0.2em;
+
+}
+.HeadingThreeStyled {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: large;
+	font-style: normal;
+	font-weight: normal;
+	text-transform: none;
+	color: #003366;
+	letter-spacing: .2em;
+
+}
+dt {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: medium;
+	font-weight: bold;
+	color: #003366;
+	padding-left: 10px;
+
+}
+dd {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: small;
+	font-weight: normal;
+}
+h4 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: medium;
+	font-weight: bold;
+	color: #003366;
+
+
+}
+.HeadingFourStyled {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: medium;
+	font-weight: bold;
+	color: #003366;
+
+
+}
+h5 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: medium;
+	color: #003366;
+	font-style: italic;
+
+
+}
+.HeadingFiveStyled {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: medium;
+	color: #003366;
+	font-style: italic;
+
+
+}
+.Breadcrumb {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-transform: capitalize;
+	color: #003366;
+	font-weight: bold;
+
+}
+.WhiteText {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+}
+
+.WhiteText A:link
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+}
+.WhiteText V:link
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+}
+h6 {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: small;
+	font-weight: bold;
+	color: #003366;
+}
+.HeadingSixStyled {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: small;
+	font-weight: bold;
+	color: #003366;
+}
+dl {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+th {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: capitalize;
+	color: #003366;
+	text-align: left;
+
+
+}
+td {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.WhiteText12 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	font-size: 12px;
+
+}
+.WhiteText12 A:link
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+}
+.WhiteText12 V:link
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+}
+.StandardText {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: small;
+}
+.searchbutton {
+	padding: 4px 0px 5px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.Copyright {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: x-small;
+	text-transform: capitalize;
+	color: #000000;
+	font-weight: bold;
+
+}
+.mmhide_picture {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #000000;
+	padding-left: 4px;
+}.fpheader {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: medium;
+	font-weight: normal;
+}
+.fpheadline {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #003366;
+}
+.padding {
+	padding-top: 0px;
+	padding-right: 5px;
+	padding-bottom: 0px;
+	padding-left: 5px;
+}
+.Indent {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	padding: 5px 15px;
+}
+.Bullets {
+	list-style-type: circle;
+	list-style-position: outside;
+}
+.SmallerText {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: x-small;
+}
+.SmallestText {
+
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: xx-small;
+}
+.LargerText {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: medium;
+}
+.LargestText {
+
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: large;
+}

@@ -1,0 +1,233 @@
+body {
+	background-color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+.mainTable {
+	background-color: #FFFFFF;
+}
+a:link, a:hover, a:visited, a:active {
+	color:#00529B;
+}
+#rightSide{
+	width:190px;
+	float:right;
+	padding-right:9px;
+	margin-top: -3px;
+}
+
+#content{
+	float:left;
+	width:625px;
+	margin-top: -3px;
+}
+.copyright{
+	color:#FFFFFF;
+}
+
+.clearer{/* used to clear floats without introducing space*/
+	height:1px;
+	overflow:hidden;
+	margin-top:-1px;
+	clear:both;
+}
+
+ul.menuItem{list-style:none;}
+ul.menuItem li{
+	height:16px;
+}
+ul.menuItem li a{
+	height:16px;
+	display:block;
+	padding-left:0px;
+}
+ul.menuItem li a:hover{background:transparent;text-decoration:none}.menuItemTitle {
+	padding: 5px 0px 3px 3px;
+	font-size:12px;
+	font-weight:bold;
+	color:#000000;
+}
+.menuItem {
+	padding: 2px 0px 2px 10px;
+	font-size:11px;
+	color:#000000;
+}
+#nav{
+	position:relative;
+	text-align:center;
+}
+#nav ul{
+	margin : 0;
+	white-space : nowrap;
+	color:#FFFFFF;
+	text-align:center;
+	width:100%;
+	padding-top:3px;
+	padding-bottom:3px;
+}
+#nav ul li{
+	display : inline;
+}
+#nav ul li a{
+	padding-left : 8px;
+	padding-right : 8px;
+	color : #FFFFFF;
+	font-weight : bold;
+	text-decoration : none;
+}
+#nav ul li a:hover{
+	color : #FFFFFF;
+	padding-bottom : 3px;
+	text-decoration:underline;
+}
+.box-left{
+	width:160px;
+
+}
+.boxStarTitle{
+	background-image:url(/images_web/boxBg.gif);
+	font-size:12px;
+	color:#FFFFFF;
+	font-weight:bold;
+}
+.boxContentWrapper{
+	width:100%;
+}
+.pageTitle{
+	font-weight:bold;
+	font-size:16px;
+	margin: 3px 5px;
+}
+.newsTitle {
+	float:none;
+	color: #000000;
+	font-size:12px;
+	font-weight:bold;
+	text-decoration:none;
+	padding-top:5px;
+	border-bottom: thin solid #CCCCCC;
+	overflow:hidden;
+}
+
+.newsByLine {
+	font-size:9px;
+	padding-left:15px;
+	padding-bottom:10px;
+	color:#999999;
+}
+.newsBody {
+	padding-bottom:10px;
+	padding-left:30px;
+	text-align:justify;
+}
+
+.articleDiv {
+	clear:both;
+	padding-left:5px;
+	padding-right:5px;
+}
+
+.newsPhoto {
+	padding:4px;
+	float:left;
+	border: 1px solid;
+	margin: 5px 5px 5px 0px;
+}
+.newsPhotoCaption {
+	text-align:center;
+	font-size:10px;
+}
+
+.newsReadMore{
+	font-weight:bold;
+	color:#BE1100;
+	text-align:right;
+}
+.pollQuestion{
+	text-align:center;
+	font-style:italic;
+	font-size:11px;
+	padding-bottom:5px;
+}
+.pollTotalVotes{
+	text-align:center;
+	font-style:italic;
+	font-size:11px;
+	padding-top:5px;
+}
+.pollBarBG{
+	background-color:#FD0007;
+}
+.pollEndDateMsg{
+	text-align:center;
+	font-style:italic;
+	font-size:11px;
+}
+.sbDate{
+	color:#002E86;
+	font-size:16px;
+	font-weight:bolder;
+	font-style:italic;
+	padding: 2px 0px;
+	text-indent:5px;
+	margin-top:3px;
+	text-align:right;
+}
+.sbSport{
+	font-size:14px;
+	font-weight:bolder;
+	font-style:italic;
+	border-top:2px solid #235DC9;
+	border-bottom: 1px solid #002E86;
+	padding: 2px 0px;
+	text-indent:5px;
+	margin-top:3px;
+}
+.sb {
+	font-size: 10pt;
+}
+.sbStatus{
+	font-size: 9pt;
+	text-align:right;
+}
+
+.sbEventO, .sbEventE, .sbEvent {
+	padding-top: 3px;
+	padding-bottom: 3px;
+	margin-left: 3px;
+	
+}
+
+.sbDhSecondGame{
+	text-align:center;
+}
+.sbStatus{
+	font-size: 11px;
+	text-align:right;
+}
+.sbScore {
+	text-align: right;
+	padding-right: 9px;
+	padding-left: 2pt;
+	white-space:nowrap;
+}
+.sbTime{
+	text-align: right;
+	padding-right:3px;
+}
+.sbTimeZone{
+	text-align: center;
+}
+.sbNote{
+	text-align: right;
+	font-style:italic;
+	font-size: 10px;
+	padding-right:4px;
+	
+}
+.sbWinner{
+	font-weight:bold;
+}
+.sbTeams{
+	text-align:left;
+}
