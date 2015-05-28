@@ -18,13 +18,13 @@ class Document:
     return 'Raw Doc: ' + str(self.rank)
 
 class ParsedDocument(Document):
-  def __init__(self, document, perform_tokenization=True):
+  def __init__(self, document, perform_tokenization=True, remove_stopwords=True):
     Document.__init__(self, document.rank, document.contents)
     self.title = ''
     self.paragraphs = []
     self.words = {}
     self.parse_document_()
-    self.perform_tokenization_(perform_tokenization)
+    self.perform_tokenization_(perform_tokenization, remove_stopwords)
 
   def parse_document_(self):
     soup = BeautifulSoup(self.contents)
@@ -33,7 +33,7 @@ class ParsedDocument(Document):
     if soup.title:
       self.title = soup.title.get_text()
 
-  def perform_tokenization_(self, perform_tokenization=True):
+  def perform_tokenization_(self, perform_tokenization=True, remove_stopwords=True):
 #    st = PorterStemmer()
     s_words = set(stopwords.words('english'))
     for i in range(len(self.paragraphs)):
@@ -46,7 +46,11 @@ class ParsedDocument(Document):
       self.paragraphs[i] = self.paragraphs[i].replace('\t', ' ')
       self.paragraphs[i] = ' '.join(self.paragraphs[i].split())
       if perform_tokenization == True:
+#        print 'TOKENIZING SENTENCE'
+#        print self.paragraphs[i]
         self.paragraphs[i] = nltk.sent_tokenize(self.paragraphs[i])
+#        print self.paragraphs[i]
+#        print '-------'
         for j in range(len(self.paragraphs[i])):
           sentence = self.paragraphs[i][j]
   #        words = sentence
@@ -59,9 +63,10 @@ class ParsedDocument(Document):
   #          stemmed_words.append(st.stem(word))
 
 
-          # Remove stop words
-          filtered_words = [w for w in words if not w.lower() in s_words]
-          self.paragraphs[i][j] = filtered_words
+          if remove_stopwords == True:
+            # Remove stop words
+            filtered_words = [w for w in words if not w.lower() in s_words]
+            self.paragraphs[i][j] = filtered_words
 
 
 

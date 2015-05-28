@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 from nltk.tag.stanford import NERTagger
 
 TRAINING_DATA_PATH = os.path.dirname(os.path.abspath(__file__)) + \
-                        '/weps2007_data_1.1/training2/'
+                        '/weps2007_data_1.1/training/'
 
 NER_CLASSIFIER = os.path.dirname(os.path.abspath(__file__)) + \
                         '/stanford-ner-2015-04-20/classifiers/english.all.3class.distsim.crf.ser.gz'
@@ -59,6 +59,7 @@ for ps in corpus.person_searches:
   for v in clusters_dict.values():
     clusters.append(v)
     attr = Attributes(ps, v, classifier)
+    print attr.extract_attributes()
 
 
 
